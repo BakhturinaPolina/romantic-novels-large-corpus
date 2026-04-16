@@ -1,0 +1,79 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cursor (plans and rules — local only)
+.cursor/
+.rules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# E-books and tabular exports (copyright / size; never commit full texts or bulk CSVs)
+*.epub
+*.csv
+
+# Data directories (excluded due to size and copyright)
+data/raw/
+data/interim/
+
+# Processed data (excluded)
+data/processed/
+
+# Large output files
+*.npz
+
+# Model files and directories (excluded due to size)
+models/
+
+# Environment files
+.env
+*.env
+
+# Logs
+logs/
+*.log
+
+# Cache directories
+cache/
+
+# Excluded folders (large files and development artifacts)
+**/archive/
+**/results/
+
+# Timestamped run outputs (generated directories)
+/stage03_modeling_20*/
+/pareto_20*/
+
+# Large files (any file over 10MB)
+*.npy
+*.tokens
+*.book.html
+**/embeddings_cache/
+**/booknlp_outputs/
+
+
+# Research article drafts
+drafts/
+reports/01_stage_reports/stage04_selection/drafts/
+reports/01_stage_reports/stage08_llm_labeling/drafts/
+reports/01_stage_reports/stage09_category_mapping/01_stage1_natural_clusters/drafts/
+reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/drafts/
+reports/01_stage_reports/stage09_category_mapping/03_stage3_radway_functions/drafts/
+reports/01_stage_reports/stage10_correlation_analysis/drafts/
+reports/01_stage_reports/stage11_power_analysis/drafts/
