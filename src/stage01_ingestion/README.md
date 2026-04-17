@@ -7,6 +7,18 @@ EPUB-based ingestion for the **romance subsample downloaded v2** cohort: resolve
 - **`parse_epub_corpus_to_sentence_csvs.py`** — primary implementation (v2 EPUB → sentence tables).
 - **`main.py`** — small CLI that prints paths from `configs/paths.yaml` (no corpus I/O).
 
+### Parse errors helpers
+
+After ingestion, `parse_errors.csv` may contain duplicate rows per `work_id` (append on each resume). Use:
+
+- **`parse_errors_report.py`** — dedupe (last row per `work_id`), optional `parse_errors_deduped.csv`, stdout split + error buckets; optional `--print-json`.
+- **`repair_failed_epubs.py`** — audit ZIP / disk (`audit`), re-try `ebooklib` read (`try-read-epub`, needs project deps), or Calibre `ebook-convert` EPUB→EPUB (`calibre-repair`; use `--dry-run` to print commands).
+
+```bash
+python3 -m src.stage01_ingestion.parse_errors_report
+python3 -m src.stage01_ingestion.repair_failed_epubs --mode audit --limit 50
+```
+
 ## v2 EPUB corpus → sentence CSVs
 
 **Corpus root:** `data/raw/romance_subdataset_downloaded_v2_full/` — EPUBs under `{corpus_root}/{split}/{md5}.epub` with cohort definitions and mirrors in `subsampling_metadata/` (see `SUBSAMPLING_V2.md` in that directory).
@@ -87,6 +99,8 @@ Sentence CSVs feed **Stage 02** (e.g. BookNLP character extraction on `sentences
 stage01_ingestion/
 ├── main.py
 ├── parse_epub_corpus_to_sentence_csvs.py
+├── parse_errors_report.py
+├── repair_failed_epubs.py
 └── README.md
 ```
 
