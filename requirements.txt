@@ -22,6 +22,9 @@ libsvm==3.23.0.4
 
 # NLP & Text Processing
 spacy==3.8.11
+booknlp==1.0.8  # Book-length NLP (entity, coref, .book); uses project torch/CUDA
+beautifulsoup4==4.14.2
+EbookLib==0.19
 
 # GPU Acceleration (RAPIDS)
 # Ensure these versions are compatible with your CUDA driver

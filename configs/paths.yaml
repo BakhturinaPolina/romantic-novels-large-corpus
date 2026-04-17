@@ -8,6 +8,16 @@ data:
 
 # Input files
 inputs:
+  # Downloaded romance subsample v2 (EPUBs + mirrored subsampling CSVs)
+  romance_v2_corpus_root: "data/raw/romance_subdataset_downloaded_v2_full"
+  romance_v2_subsampling_metadata_dir: "data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata"
+  romance_v2_sentences_dir: "data/processed/romance_subdataset_downloaded_v2_sentences"
+  # Explicit train sentences CSV (defaults under romance_v2_sentences_dir if unset)
+  sentences_train_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv"
+  # Timestamped BookNLP runs: data/interim/booknlp_character_runs/run_<UTC>/
+  booknlp_character_runs_parent: "data/interim/booknlp_character_runs"
+  # Optional: cache BookNLP downloaded models here instead of ~/.booknlp_models
+  booknlp_model_path: "data/interim/booknlp_models"
   chapters_csv: "data/processed/chapters.csv"
   chapters_subset_csv: "data/processed/chapters_subset_10000.csv"
   goodreads_csv: "data/processed/goodreads.csv"
