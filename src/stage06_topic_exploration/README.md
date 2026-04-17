@@ -78,4 +78,4 @@ Attaches four representations to topics:
 
 ## See Also
 
-- [Methodology Report](../../reports/01_stage_reports/stage06_topic_exploration/stage06_topic_exploration_and_representation_analysis.md) — Research rationale and results
+- [Methodology Report](../../results/reports/01_stage_reports/stage06_topic_exploration/stage06_topic_exploration_and_representation_analysis.md) — Research rationale and results

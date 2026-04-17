@@ -85,4 +85,4 @@ models/retrained/{embedding_model}/
 
 ## See Also
 
-- [Methodology Report](../../reports/01_stage_reports/stage05_retraining/stage05_retraining_methodology_and_results.md) — Research rationale and results
+- [Methodology Report](../../results/reports/01_stage_reports/stage05_retraining/stage05_retraining_methodology_and_results.md) — Research rationale and results

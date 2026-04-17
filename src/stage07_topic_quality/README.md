@@ -90,4 +90,4 @@ CSV columns:
 
 ## See Also
 
-- [Methodology Report](../../reports/01_stage_reports/stage07_topic_quality/stage07_topic_quality_analysis_research_report.md) — Research methodology and results
+- [Methodology Report](../../results/reports/01_stage_reports/stage07_topic_quality/stage07_topic_quality_analysis_research_report.md) — Research methodology and results

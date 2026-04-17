@@ -118,5 +118,5 @@ python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.a
 
 ## See Also
 
-- [Methodology Report](../../../reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/stage09_stage2_taxonomy_classification_methodology.md) — Research rationale and results
-- [Model Comparison](../../../reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/stage09_stage2_model_comparison.md) — Model comparison report
+- [Methodology Report](../../../results/reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/stage09_stage2_taxonomy_classification_methodology.md) — Research rationale and results
+- [Model Comparison](../../../results/reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/stage09_stage2_model_comparison.md) — Model comparison report

@@ -95,5 +95,5 @@ Located in `notebooks/07_analysis/`:
 
 ## Reports
 
-- **Main Report**: `reports/01_stage_reports/stage10_correlation_analysis/stage10_correlation_analysis_report.md`
-- **Drafts**: `reports/01_stage_reports/stage10_correlation_analysis/drafts/` (working documents, git-ignored)
+- **Main Report**: `results/reports/01_stage_reports/stage10_correlation_analysis/stage10_correlation_analysis_report.md`
+- **Drafts**: `results/reports/01_stage_reports/stage10_correlation_analysis/drafts/` (working documents, git-ignored)

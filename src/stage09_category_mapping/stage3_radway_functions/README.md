@@ -119,4 +119,4 @@ Post-LLM corrections for systematic errors:
 
 ## See Also
 
-- [Research Report](../../../reports/01_stage_reports/stage09_category_mapping/03_stage3_radway_functions/stage09_stage3_radway_narrative_functions_research_report.md) — Methodology and results
+- [Research Report](../../../results/reports/01_stage_reports/stage09_category_mapping/03_stage3_radway_functions/stage09_stage3_radway_narrative_functions_research_report.md) — Methodology and results

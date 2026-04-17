@@ -2,7 +2,7 @@
 
 **A Mixed-Methods Computational Analysis**
 
-This document provides an overview of the research methodology and findings. For implementation details, see the [`reports/`](reports/) directory and stage-specific documentation in [`src/`](src/).
+This document provides an overview of the research methodology and findings. For implementation details, see **`results/reports/`** (markdown reports) and stage-specific documentation in [`src/`](src/).
 
 ---
 
@@ -48,9 +48,9 @@ The main text corpus lives under **`data/raw/romance_subdataset_downloaded_v2_fu
 - **17,514** works (rows in `subsampling_metadata/romance_subdataset_downloaded_v2_full.csv`; matches manifest `cohort_n`)
 - **8,828** distinct authors (`author_id` in metadata)
 - **Publication years** in this export: 2000–2017 (time-based split; missing years sorted first in train)
-- **Genre mix** (metadata `genre_group`): e.g. other, paranormal, mystery, historical, young_adult — not a billionaire-only convenience sample
+- **Genre mix** (metadata `genre_group`): e.g. other, paranormal, mystery, historical, young_adult
 - **Train / val / test** (time strategy, seed 42): 12,259 / 2,627 / 2,628 EPUBs (`n_train_v2`, `n_val_v2`, `n_test_v2` in manifest)
-- After ingestion (Stage 01–02), text is organized **Author → Book → Chapter → Sentence**; sentence totals are produced by the pipeline from ingested EPUBs (not fixed to the older pilot corpus)
+- **Stage 01** flattens each EPUB to chapter-ordered text and spaCy sentence segments, writing one row per sentence under `data/processed/romance_subdataset_downloaded_v2_sentences/` (`work_id`, chapter fields, `sentence`). Totals and `parse_errors.csv` follow from running the ingestion script on the local EPUB tree.
 
 ### Goodreads-linked metadata (per work, v2 full table)
 
@@ -58,7 +58,19 @@ Each cohort row includes aggregated Goodreads-style fields from the design frame
 
 - **Mean rating** (unweighted mean of per-work `average_rating_weighted_mean`): **3.91**
 - **Range** of per-work mean rating: **1.27–5.00**
-- **`ratings_count_sum`**: median **254**, mean **~3.0k** (long-tailed; unlike the old pilot, not all works have very large vote counts)
+- **`ratings_count_sum`**: median **254**, mean **~3.0k** (long-tailed; vote counts vary strongly across works)
+
+### On-disk layout (Stages 01–02)
+
+| Location | Content |
+|----------|---------|
+| `data/raw/romance_subdataset_downloaded_v2_full/` | EPUBs and `subsampling_metadata/` (cohort CSVs, manifest, documentation) |
+| `data/processed/romance_subdataset_downloaded_v2_sentences/` | `sentences_{train,val,test}.csv` plus matching `.ckpt` resume files and `parse_errors.csv` from Stage 01 |
+| `data/interim/booknlp_character_runs/` | Timestamped BookNLP runs: `txt_input/`, `booknlp/w{id}/`, checkpoints, manifests (Stage 02) |
+| `data/interim/booknlp_models/` | Optional local cache for BookNLP weight files |
+| `data/processed/custom_stoplist.txt` | Stoplist updated when Stage 02 merges BookNLP-derived name lines (backup `*.bak_<timestamp>` alongside) |
+
+Stages 01–02 do not write pipeline outputs under `results/` except optional documentation in **`results/reports/`**. Modeling and analysis artifacts (topics, figures, experiments, selection) from Stage 03 onward populate the rest of `results/` per `configs/paths.yaml`.
 
 ## Methodology Overview
 
@@ -73,7 +85,7 @@ Each cohort row includes aggregated Goodreads-style fields from the design frame
 
 **Model Selection**: Pareto efficiency analysis balancing coherence (topic interpretability) and diversity (topic variety). Final model: N topics.
 
-**Character Name Exclusion**: N character names added to stopwords to ensure topics reflect thematic content rather than character co-occurrence.
+**Character name exclusion**: [BookNLP](https://github.com/booknlp/booknlp) is run on reconstructed book text from `sentences_train.csv` (Stage 02: `extract_character_names_booknlp.py`). Person-like surface strings from the `.book` JSON and `PER` / `PROP` rows in `.entities` are merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
 
 ### 2. LLM-Based Topic Labeling
 
@@ -127,8 +139,8 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 
 | Stage | Description |
 |-------|-------------|
-| 01 Ingestion | Load novels and Goodreads metadata |
-| 02 Preprocessing | Text cleaning, sentence segmentation, character name removal |
+| 01 Ingestion | v2 EPUBs → `sentences_{train,val,test}.csv` under `data/processed/romance_subdataset_downloaded_v2_sentences/` (resume via `.ckpt`) |
+| 02 Preprocessing | BookNLP on train sentences → name phrases → `custom_stoplist.txt`; optional lemma-side exports; broader cleaning CLI still a stub |
 | 03 Modeling | BERTopic training with OCTIS optimization |
 | 04 Selection | Pareto-efficient model selection |
 | 05 Retraining | Retrain selected models |
@@ -138,7 +150,7 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 | 09 Category Mapping | Theory-aligned classification |
 | 10 Correlation Analysis | Statistical hypothesis testing |
 
-See [`reports/01_stage_reports/`](reports/01_stage_reports/) for detailed methodology per stage.
+See **`results/reports/01_stage_reports/`** for detailed methodology per stage when those files are present in your checkout.
 
 ---
 
@@ -182,7 +194,7 @@ Higher-rated books demonstrate better pacing:
 
 Star ratings likely influenced by factors beyond theme indices (prose quality, pacing, editing, reader expectations).
 
-See [`reports/02_findings/hypothesis_testing/`](reports/02_findings/hypothesis_testing/) for detailed statistical results.
+See **`results/reports/02_findings/hypothesis_testing/`** for detailed statistical results when present.
 
 ---
 
@@ -221,7 +233,8 @@ Terragni, S., et al. (2021). OCTIS: Comparing and optimizing topic models is sim
 
 | Topic | Location |
 |-------|----------|
-| Stage methodology | [`reports/01_stage_reports/`](reports/01_stage_reports/) |
-| Hypothesis testing results | [`reports/02_findings/hypothesis_testing/`](reports/02_findings/hypothesis_testing/) |
-| LLM labeling methodology | [`reports/02_findings/methodology_llm_labeling_and_taxonomy/`](reports/02_findings/methodology_llm_labeling_and_taxonomy/) |
+| Stages 01–02 (ingestion, BookNLP stoplist) | [`src/stage01_ingestion/README.md`](src/stage01_ingestion/README.md), [`src/stage02_preprocessing/README.md`](src/stage02_preprocessing/README.md) |
+| Stage methodology | `results/reports/01_stage_reports/` |
+| Hypothesis testing results | `results/reports/02_findings/hypothesis_testing/` |
+| LLM labeling methodology | `results/reports/02_findings/methodology_llm_labeling_and_taxonomy/` |
 | Implementation details | [`src/`](src/) stage READMEs |

@@ -130,4 +130,4 @@ Stage 09: Taxonomy Mapping
 
 ## Algorithm Details
 
-See [reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md](../../reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md) for detailed methodology.
+See [results/reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md](../../results/reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md) for detailed methodology.

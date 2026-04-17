@@ -91,4 +91,4 @@ python -m src.common.check_gpu_setup
 
 ## See Also
 
-- [Methodology Report](../../reports/01_stage_reports/stage03_modeling/stage03_modeling_and_retraining_methodology.md) — Research rationale and character name exclusion
+- [Methodology Report](../../results/reports/01_stage_reports/stage03_modeling/stage03_modeling_and_retraining_methodology.md) — Research rationale and character name exclusion

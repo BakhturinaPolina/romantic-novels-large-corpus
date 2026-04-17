@@ -13,7 +13,7 @@ A computational research pipeline for analyzing romantic novels using neural top
 - **8,828** distinct authors; publication years **2000–2017** in the current export; time-based **train / val / test**: 12,259 / 2,627 / 2,628.
 - Subsample metadata and mirrors of the v2 CSVs: **`data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata/`**.
 
-Earlier documentation referred to a **retired smaller convenience-sample corpus**; this repository’s main corpus is the v2 full cohort above unless a notebook or report explicitly says otherwise. Downstream sentence counts, matched-book counts, and rating-tier summaries for the v2 run are **`[TBD]`** until stages are re-executed on the new texts.
+Sentence-level tables for modeling are produced by **Stage 01** into **`data/processed/romance_subdataset_downloaded_v2_sentences/`** (`sentences_{train,val,test}.csv`). Row counts and error rates depend on running `parse_epub_corpus_to_sentence_csvs.py` on your machine; see [`src/stage01_ingestion/README.md`](src/stage01_ingestion/README.md).
 
 ## Research Question
 
@@ -69,7 +69,8 @@ make all
 
 Or run stages directly:
 ```bash
-python -m src.stage01_ingestion.main --config configs/paths.yaml
+python -m src.stage01_ingestion.parse_epub_corpus_to_sentence_csvs --help
+python -m src.stage02_preprocessing.extract_character_names_booknlp --config configs/paths.yaml
 python -m src.stage03_modeling.main train --config configs/bertopic.yaml
 ```
 
@@ -78,7 +79,7 @@ python -m src.stage03_modeling.main train --config configs/bertopic.yaml
 | Resource | Description |
 |----------|-------------|
 | [SCIENTIFIC_README.md](SCIENTIFIC_README.md) | Full methodology, hypotheses, and results |
-| [reports/](reports/) | Stage-by-stage technical reports and findings |
+| [results/reports/](results/reports/) | Markdown reports (methodology notes, power analysis, subsampling lineage) |
 | [configs/](configs/) | YAML configuration files |
 
 ## Project Structure
@@ -89,18 +90,45 @@ romantic_novels_large_corpus/
 ├── configs/                # YAML configuration files
 ├── notebooks/              # Jupyter notebooks by stage
 ├── data/                   # Raw, interim, processed data
-├── results/                # Pipeline outputs
-├── reports/                # Technical reports and findings
+├── results/                # Pipeline outputs (topics, experiments, figures, …)
+│   └── reports/            # Markdown reports (tracked); heavier artifacts stay gitignored
 ├── models/                 # Trained BERTopic models
 └── scripts/                # Utility scripts
 ```
+
+### `data/` (Stages 01–02)
+
+| Path | Role |
+|------|------|
+| `data/raw/romance_subdataset_downloaded_v2_full/` | EPUBs by split; `subsampling_metadata/` with cohort CSVs and `SUBSAMPLING_V2.md` |
+| `data/processed/romance_subdataset_downloaded_v2_sentences/` | Sentence CSVs + `.ckpt` files from Stage 01 |
+| `data/processed/custom_stoplist.txt` | Stoplist augmented in Stage 02 (BookNLP-derived names + existing entries) |
+| `data/interim/booknlp_character_runs/` | Timestamped BookNLP runs, checkpoints, and manifests (Stage 02) |
+| `data/interim/booknlp_models/` | Optional cache for BookNLP model weights (`paths.yaml`: `booknlp_model_path`) |
+
+Other keys under `data/` and `configs/paths.yaml` (e.g. `chapters.csv`) exist for compatibility with older modeling scripts.
+
+### `results/`
+
+Stages **01** and **02** read and write under **`data/raw`**, **`data/processed`**, and **`data/interim`** only. The rest of **`results/`** holds outputs from **Stage 03 onward** (topics, experiments, figures, selection artifacts); layout follows `configs/paths.yaml` under `outputs`. Long-form write-ups live under **`results/reports/`** (for example power analysis and subsampling documentation).
+
+### `src/` — Stage 01 and Stage 02
+
+| Path | Purpose |
+|------|---------|
+| [`src/stage01_ingestion/parse_epub_corpus_to_sentence_csvs.py`](src/stage01_ingestion/parse_epub_corpus_to_sentence_csvs.py) | EPUB → `sentences_{train,val,test}.csv` with resume checkpoints |
+| [`src/stage01_ingestion/main.py`](src/stage01_ingestion/main.py) | Prints configured ingestion paths |
+| [`src/stage02_preprocessing/extract_character_names_booknlp.py`](src/stage02_preprocessing/extract_character_names_booknlp.py) | Sentence CSV → BookNLP → name phrases → `custom_stoplist.txt` |
+| [`src/stage02_preprocessing/main.py`](src/stage02_preprocessing/main.py) | Prints configured preprocessing paths |
+
+READMEs: [`src/stage01_ingestion/README.md`](src/stage01_ingestion/README.md), [`src/stage02_preprocessing/README.md`](src/stage02_preprocessing/README.md).
 
 ## Pipeline Overview
 
 | Stage | Name | Description |
 |-------|------|-------------|
-| 01 | Ingestion | Load novels and Goodreads metadata |
-| 02 | Preprocessing | Text cleaning, tokenization, character name removal |
+| 01 | Ingestion | v2 EPUB corpus → sentence CSVs (`parse_epub_corpus_to_sentence_csvs`) |
+| 02 | Preprocessing | BookNLP character names → custom stoplist; further text pipeline TBD in `main.py` |
 | 03 | Modeling | BERTopic training with OCTIS optimization |
 | 04 | Selection | Pareto-efficient model selection |
 | 05 | Retraining | Retrain top models |
@@ -139,7 +167,7 @@ All settings are in `configs/`:
 @software{romantic_novels_nlp,
   title = {Romantic Novels NLP Research Pipeline},
   author = {Polina},
-  year = {2025},
+  year = {2026},
   url = {https://github.com/YOUR_USERNAME/romantic_novels_large_corpus}
 }
 ```
