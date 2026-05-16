@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Wait for train_stage02_eta50/eta_estimate.json, print analysis, plan+run stratified stoplist sample.
 set -euo pipefail
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/../../.."
 PY=".venv/bin/python"
 TXT="data/interim/booknlp_character_runs/train_stage02_eta50/txt_input"
 ETA_DIR="data/interim/booknlp_character_runs/train_stage02_eta50"
@@ -24,7 +24,7 @@ while [[ ! -f "$ETA_FILE" ]]; do
 done
 
 echo "[$(date -Is)] ETA file found. Patching README ..."
-"$PY" scripts/patch_readme_from_eta.py
+"$PY" src/stage02_preprocessing/scripts/patch_readme_from_eta.py
 
 echo "[$(date -Is)] Analysis:"
 "$PY" - <<'PY'

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Copy project files for large-corpus replication (N=6k–12k books).
-# Run from project root: ./scripts/copy_for_large_corpus.sh [TARGET_DIR]
-# Example: ./scripts/copy_for_large_corpus.sh ../billionaire_large_corpus
+# Run from project root: ./src/common/scripts/copy_for_large_corpus.sh [TARGET_DIR]
+# Example: ./src/common/scripts/copy_for_large_corpus.sh ../billionaire_large_corpus
 
 set -euo pipefail
 
@@ -22,7 +22,7 @@ mkdir -p "$TARGET"
 cd "$PROJECT_ROOT"
 
 # --- Directories (full tree) ---
-for dir in src configs scripts; do
+for dir in src configs; do
   if [[ -d "$dir" ]]; then
     echo "Copying $dir/ ..."
     mkdir -p "$TARGET/$dir"

@@ -9,7 +9,7 @@ from typing import Any
 import pandas as pd
 
 from src.common.config import load_config, resolve_path
-from src.stage05_retraining.retrain_models import retrain_single_model
+from src.legacy.stage05_retraining.retrain_models import retrain_single_model
 
 
 def load_winner_config(path: Path) -> dict[str, Any]:

@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 ETA = ROOT / "data/interim/booknlp_character_runs/train_stage02_eta50/eta_estimate.json"
 README = ROOT / "src/stage02_preprocessing/README.md"
 

@@ -11,7 +11,7 @@ import math
 
 from src.common.config import load_config, resolve_path
 from src.common.logging import setup_logging
-from src.stage04_selection.pareto_analysis import (
+from src.legacy.stage04_selection.pareto_analysis import (
     clean_data,
     normalize_metrics,
     calculate_combined_score,

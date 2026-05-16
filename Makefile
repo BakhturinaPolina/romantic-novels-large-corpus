@@ -22,7 +22,7 @@ stage02:
 
 stage03:
 	@echo "Running Stage 03: Modeling"
-	python -m src.stage03_modeling.main train --config configs/bertopic.yaml
+	python -m src.legacy.stage03_modeling.main train --config configs/bertopic.yaml
 
 stage05:
 	@echo "Running Stage 05: Selection"
@@ -38,7 +38,7 @@ stage07:
 
 experiments:
 	@echo "Running hyperparameter optimization (Stage 03)"
-	python -m src.stage03_modeling.main optimize --config configs/octis.yaml
+	python -m src.legacy.stage03_modeling.main optimize --config configs/octis.yaml
 
 pareto:
 	@echo "Running Pareto selection (Stage 05)"

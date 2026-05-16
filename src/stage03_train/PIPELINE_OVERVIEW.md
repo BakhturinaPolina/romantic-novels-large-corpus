@@ -40,7 +40,7 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
   - label arrays for traceability (`work_id`-based)
 
 **Kept from legacy**
-- Text cleanup logic from old `src/stage03_modeling/bertopic_runner.py`.
+- Text cleanup logic from old `src/legacy/stage03_modeling/bertopic_runner.py`.
 
 **Added**
 - Correct handling of 5-column Stage 01 schema.
@@ -98,7 +98,7 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 - BERTopic + OCTIS wrapper used by tuning.
 
 **Kept from legacy**
-- Moved directly from old `src/stage03_modeling/bertopic_octis_model.py`.
+- Moved directly from old `src/legacy/stage03_modeling/bertopic_octis_model.py`.
 
 **Added**
 - Import path moved to new stage package.
@@ -163,7 +163,7 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 - Existing Pareto/data-cleaning utilities.
 
 **Kept from legacy**
-- Moved from `src/stage04_selection/pareto_analysis.py`.
+- Moved from `src/legacy/stage04_selection/pareto_analysis.py`.
 
 ---
 
@@ -217,7 +217,7 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 - `models/final/<run_id>/train_plus_val/...`
 
 **Kept from legacy**
-- Retraining internals from old `src/stage05_retraining/retrain_models.py`.
+- Retraining internals from old `src/legacy/stage05_retraining/retrain_models.py`.
 
 **Added**
 - Policy-aware output layout.

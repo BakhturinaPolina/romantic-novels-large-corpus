@@ -64,7 +64,7 @@ print("[STEP 2.2] ✓ SpaCy model loaded successfully")
 print("[STEP 3] Checking RAPIDS availability...")
 print("[STEP 3.1] Importing GPU utilities...")
 from src.common.gpu_models import print_gpu_status, check_rapids_availability
-from src.stage03_modeling.memory_utils import (
+from src.legacy.stage03_modeling.memory_utils import (
     get_gpu_memory_usage, print_gpu_memory_usage, cleanup_gpu_memory,
     check_memory_available, log_memory_usage, handle_oom_error, track_memory_peak,
     enforce_memory_limit, adjust_batch_size
@@ -202,7 +202,7 @@ from octis.dataset.dataset import Dataset
 from octis.models.model import AbstractModel
 
 # Import BERTopicOctisModelWithEmbeddings from stage03_modeling
-from src.stage03_modeling.bertopic_octis_model import (
+from src.legacy.stage03_modeling.bertopic_octis_model import (
     BERTopicOctisModelWithEmbeddings,
     load_embedding_model
 )
@@ -400,7 +400,7 @@ with torch.no_grad():
         print("[STEP 19.3] ✓ Training tracking initialized")
 
         print("[STEP 20] Using BERTopicOctisModelWithEmbeddings class...")
-        # Note: BERTopicOctisModelWithEmbeddings is imported from src.stage03_modeling.bertopic_octis_model
+        # Note: BERTopicOctisModelWithEmbeddings is imported from src.legacy.stage03_modeling.bertopic_octis_model
         # This removes code duplication and ensures consistency across the codebase.
         # The class is now located in the stage03_modeling module since it's specific to this stage.
         print("[STEP 20] ✓ Using shared BERTopicOctisModelWithEmbeddings class")

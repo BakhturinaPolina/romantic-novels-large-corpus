@@ -1,96 +1,44 @@
-# Python
-venv/
-.venv/
-__pycache__/
+# Python bytecode and binaries
 *.py[cod]
 *$py.class
 *.so
-.Python
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Python tooling caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# IDE
-.vscode/
-.idea/
+# Editor/OS temp files
 *.swp
 *.swo
-
-# Cursor (plans and rules — local only)
-.cursor/
-.rules/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# E-books and tabular exports (copyright / size; never commit full texts or bulk CSVs)
-*.epub
-*.csv
-
-# Data directories (excluded due to size and copyright)
-data/raw/
-data/interim/
-
-# Processed data (excluded)
-data/processed/
-
-# Large output files
-*.npz
-
-# Model files and directories (excluded due to size)
-models/
-
-# Environment files
+# Environment and local config files
 .env
 *.env
 .envrc
 .python-version
 
-# Logs
-logs/
+# Logs and coverage files
 *.log
-
-# Coverage artifacts
+*.out
+*.err
+*.pid
 .coverage
-htmlcov/
 
-# Cache directories
-cache/
+# Notebook checkpoints
+*.ipynb_checkpoints
 
-# Excluded folders (large files and development artifacts)
-**/archive/
-# Pipeline outputs under results/ (allow tracked markdown under results/reports/)
-results/**
-!results/reports/
-!results/reports/**
+# Local runtime/temp files
+*.tmp
+*.temp
+*.bak
+.python_history
+pyvenv.cfg
 
-# Timestamped run outputs (generated directories)
-/stage03_modeling_20*/
-/pareto_20*/
-
-# Large files (any file over 10MB)
+# Large or generated research artifacts
+*.epub
+*.csv
+*.npz
 *.npy
 *.tokens
 *.book.html
-/*.html
+*.html
 *.sqlite
 *.db
-**/embeddings_cache/
-**/booknlp_outputs/
-
-
-# Research article drafts
-drafts/
-results/reports/01_stage_reports/stage04_selection/drafts/
-results/reports/01_stage_reports/stage08_llm_labeling/drafts/
-results/reports/01_stage_reports/stage09_category_mapping/01_stage1_natural_clusters/drafts/
-results/reports/01_stage_reports/stage09_category_mapping/02_stage2_theory_driven_categories/drafts/
-results/reports/01_stage_reports/stage09_category_mapping/03_stage3_radway_functions/drafts/
-results/reports/01_stage_reports/stage10_correlation_analysis/drafts/
-results/reports/01_stage_reports/stage11_power_analysis/drafts/

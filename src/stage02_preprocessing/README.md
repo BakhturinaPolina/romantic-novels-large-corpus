@@ -198,7 +198,7 @@ When full-corpus BookNLP would take weeks on one GPU, sample by length then shar
   --txt-input-dir data/interim/booknlp_character_runs/train_stage02_eta50/txt_input
 
 # Or wait for ETA then auto-plan+run:
-bash scripts/wait_eta_then_stoplist_sample.sh 1500 2
+bash src/stage02_preprocessing/scripts/wait_eta_then_stoplist_sample.sh 1500 2
 ```
 
 Writes `stoplist_sample_manifest.json` with bin counts and selected `work_id`s.

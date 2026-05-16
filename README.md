@@ -126,14 +126,23 @@ python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <run_i
 
 ```
 romantic_novels_large_corpus/
-├── src/                    # Source code (stages 01-10)
+├── src/                    # Active pipeline code (stages 01-10)
+│   ├── legacy/             # Deprecated/superseded stage packages kept for reproducibility
+│   ├── stage01_ingestion/
+│   ├── stage02_preprocessing/
+│   ├── stage03_train/
+│   ├── stage04_eval_select/
+│   ├── stage05_final_fit/
+│   └── ...                 # stage05b-stage10
 ├── configs/                # YAML configuration files
 ├── notebooks/              # Jupyter notebooks by stage
-├── data/                   # Raw, interim, processed data
-├── results/                # Pipeline outputs (topics, experiments, figures, …)
-│   └── reports/            # Markdown reports (tracked); heavier artifacts stay gitignored
-├── models/                 # Trained BERTopic models
-└── scripts/                # Utility scripts
+├── data/                   # Raw/interim/processed directories (skeleton tracked)
+├── results/                # Pipeline outputs (subfolders tracked; heavy artifacts gitignored)
+│   ├── summary_statistics/
+│   └── reports/
+├── models/                 # Trained BERTopic models (skeleton tracked)
+├── logs/                   # Runtime logs (skeleton tracked)
+└── cache/                  # Local caches (skeleton tracked)
 ```
 
 ### `data/` (Stages 01–02)
@@ -150,7 +159,14 @@ Other keys under `data/` and `configs/paths.yaml` (e.g. `chapters.csv`) exist fo
 
 ### `results/`
 
-Stages **01** and **02** read and write under **`data/raw`**, **`data/processed`**, and **`data/interim`** only. The rest of **`results/`** holds outputs from **Stage 03 onward** (topics, experiments, figures, selection artifacts); layout follows `configs/paths.yaml` under `outputs`. Long-form write-ups live under **`results/reports/`** (for example power analysis and subsampling documentation).
+Stages **01** and **02** read and write under **`data/raw`**, **`data/processed`**, and **`data/interim`** only. The rest of **`results/`** holds outputs from **Stage 03 onward** (topics, experiments, figures, selection artifacts); layout follows `configs/paths.yaml` under `outputs`. Long-form write-ups live under **`results/reports/`** (for example power analysis and subsampling documentation). Repository-level summary tables live under **`results/summary_statistics/`** (for example `results/summary_statistics/full_dataset_summary_statistics.csv`).
+
+### Utility scripts (now under `src/`)
+
+- Stage 02 ops scripts: `src/stage02_preprocessing/scripts/`
+- Stage 08 labeling QA scripts: `src/stage08_llm_labeling/scripts/`
+- Stage 10 aggregation helpers: `src/stage10_correlation_analysis/scripts/`
+- Cross-project helper scripts: `src/common/scripts/`
 
 ### `src/` — Stage 01 and Stage 02
 

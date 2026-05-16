@@ -48,7 +48,7 @@ Identifies models that are not dominated by any other model in both coherence an
 ## Usage
 
 ```bash
-python -m src.stage04_selection.main analyze \
+python -m src.legacy.stage04_selection.main analyze \
   --config configs/selection.yaml \
   --paths-config configs/paths.yaml
 ```

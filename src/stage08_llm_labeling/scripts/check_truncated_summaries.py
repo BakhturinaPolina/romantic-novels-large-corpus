@@ -4,7 +4,7 @@ This script analyzes labels JSON files produced by the OpenRouter labeling pipel
 and identifies scene summaries that may be truncated, incomplete, or low-quality.
 
 Usage:
-    python scripts/check_truncated_summaries.py \
+    python src/stage08_llm_labeling/scripts/check_truncated_summaries.py \
       --labels-json results/stage06_labeling_openrouter/labels_pos_openrouter_mistralai_mistral-nemo_romance_aware_paraphrase-MiniLM-L6-v2.json \
       --max-examples 40
 """

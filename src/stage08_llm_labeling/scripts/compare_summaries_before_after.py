@@ -4,7 +4,7 @@ This script helps visualize the improvement in scene summaries by comparing
 truncated summaries (from max_tokens=16) with improved summaries (from max_tokens=60).
 
 Usage:
-    python scripts/compare_summaries_before_after.py \
+    python src/stage08_llm_labeling/scripts/compare_summaries_before_after.py \
       --before-json results/stage06_labeling_openrouter/labels_pos_openrouter_mistralai_mistral-nemo_romance_aware_paraphrase-MiniLM-L6-v2.json \
       --after-json results/stage06_labeling_openrouter/labels_pos_openrouter_mistralai_mistral-nemo_romance_aware_paraphrase-MiniLM-L6-v2.json \
       --limit-topics 15

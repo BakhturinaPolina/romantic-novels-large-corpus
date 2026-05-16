@@ -4,6 +4,8 @@
 
 This document provides an overview of the research methodology and findings. For implementation details, see **`results/reports/`** (markdown reports) and stage-specific documentation in [`src/`](src/).
 
+Repository structure note: active pipeline packages stay at the `src/` root, while superseded migration-era modules are archived under `src/legacy/` for reproducibility. Stage utility scripts are colocated inside their stage folders (for example `src/stage02_preprocessing/scripts/`, `src/stage08_llm_labeling/scripts/`, and `src/stage10_correlation_analysis/scripts/`).
+
 ---
 
 ## Research Objectives
@@ -59,6 +61,8 @@ Each cohort row includes aggregated Goodreads-style fields from the design frame
 - **Mean rating** (unweighted mean of per-work `average_rating_weighted_mean`): **3.91**
 - **Range** of per-work mean rating: **1.27–5.00**
 - **`ratings_count_sum`**: median **254**, mean **~3.0k** (long-tailed; vote counts vary strongly across works)
+
+A compact tracked snapshot of these aggregate corpus statistics is stored at `results/summary_statistics/full_dataset_summary_statistics.csv`.
 
 ### On-disk layout (Stages 01–02)
 

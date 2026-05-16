@@ -53,7 +53,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Import GPU utilities
 from src.common.gpu_models import print_gpu_status, check_rapids_availability
-from src.stage03_modeling.memory_utils import (
+from src.legacy.stage03_modeling.memory_utils import (
     print_gpu_memory_usage, cleanup_gpu_memory, track_memory_peak,
     log_memory_usage
 )
@@ -78,7 +78,7 @@ from bertopic.vectorizers import ClassTfidfTransformer
 from octis.dataset.dataset import Dataset
 
 # Import from stage03
-from src.stage03_modeling.bertopic_octis_model import (
+from src.legacy.stage03_modeling.bertopic_octis_model import (
     BERTopicOctisModelWithEmbeddings,
     load_embedding_model,
     create_representation_models

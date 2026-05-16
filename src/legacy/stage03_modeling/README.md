@@ -12,28 +12,28 @@ BERTopic model training with OCTIS hyperparameter optimization and GPU accelerat
 
 ```bash
 # Test with subset (10K rows)
-python -m src.stage03_modeling.test_octis_pipeline --subset
+python -m src.legacy.stage03_modeling.test_octis_pipeline --subset
 
 # Test with full dataset
-python -m src.stage03_modeling.test_octis_pipeline --full
+python -m src.legacy.stage03_modeling.test_octis_pipeline --full
 ```
 
 ### Train Models
 
 ```bash
-python -m src.stage03_modeling.main train --config configs/bertopic.yaml
+python -m src.legacy.stage03_modeling.main train --config configs/bertopic.yaml
 ```
 
 ### Optimize Hyperparameters
 
 ```bash
-python -m src.stage03_modeling.main optimize --config configs/octis.yaml
+python -m src.legacy.stage03_modeling.main optimize --config configs/octis.yaml
 ```
 
 ### Retrain Models
 
 ```bash
-python -m src.stage03_modeling.main retrain \
+python -m src.legacy.stage03_modeling.main retrain \
   --dataset_csv data/processed/chapters.csv \
   --out_dir models/retrained/
 ```

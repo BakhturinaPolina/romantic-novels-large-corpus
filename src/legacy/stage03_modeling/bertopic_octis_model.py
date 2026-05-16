@@ -23,7 +23,7 @@ import pprint
 import re
 
 # Import memory and thermal monitoring utilities
-from src.stage03_modeling.memory_utils import (
+from src.legacy.stage03_modeling.memory_utils import (
     print_gpu_memory_usage, cleanup_gpu_memory, track_memory_peak,
     log_memory_usage, enforce_memory_limit
 )

@@ -6,8 +6,8 @@ from pathlib import Path
 from datetime import datetime
 from src.common.config import load_config, resolve_path
 from src.common.logging import setup_logging
-from src.stage05_retraining.pareto_loader import load_top_models
-from src.stage05_retraining.retrain_models import retrain_single_model
+from src.legacy.stage05_retraining.pareto_loader import load_top_models
+from src.legacy.stage05_retraining.retrain_models import retrain_single_model
 
 
 class Tee:

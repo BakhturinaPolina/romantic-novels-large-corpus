@@ -48,9 +48,9 @@ This file is the implementation blueprint for the new train/eval/test pipeline.
 - legacy config files with deprecation comment
 
 ### Remove (after migration safety check)
-- `src/stage03_modeling/convert_topics.py`
-- `src/stage03_modeling/test_octis_pipeline.py`
-- `src/stage05_retraining/diagnose_data.py`
+- `src/legacy/stage03_modeling/convert_topics.py`
+- `src/legacy/stage03_modeling/test_octis_pipeline.py`
+- `src/legacy/stage05_retraining/diagnose_data.py`
 
 ---
 

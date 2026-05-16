@@ -10,13 +10,13 @@ Retrain top Pareto-efficient models with their optimal hyperparameters.
 
 ```bash
 # Retrain top 4 models (default)
-python -m src.stage05_retraining.main retrain
+python -m src.legacy.stage05_retraining.main retrain
 
 # Retrain top N models
-python -m src.stage05_retraining.main retrain --top_n 4
+python -m src.legacy.stage05_retraining.main retrain --top_n 4
 
 # Custom paths
-python -m src.stage05_retraining.main retrain \
+python -m src.legacy.stage05_retraining.main retrain \
   --pareto_csv results/stage04_selection/pareto.csv \
   --top_n 4 \
   --config configs/paths.yaml \

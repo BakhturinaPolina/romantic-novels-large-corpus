@@ -7,7 +7,7 @@ to create:
 - chapter_topic_probs.parquet: book_id, chapter_id, topic_id, prob
 
 Usage:
-    python scripts/generate_topic_probabilities.py \
+    python src/stage10_correlation_analysis/scripts/generate_topic_probabilities.py \
         --sentence-df data/processed/sentence_df_with_topics.parquet \
         --output-dir results/stage10_correlation_analysis
 """
