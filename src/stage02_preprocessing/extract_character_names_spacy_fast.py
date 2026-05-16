@@ -373,6 +373,12 @@ def _finalize_outputs(
 @click.option("--batch-size", type=int, default=512, help="spaCy nlp.pipe batch size")
 @click.option("--n-process", type=int, default=0, help="spaCy n_process for nlp.pipe (0 => os.cpu_count())")
 @click.option("--flush-every-chunks", type=int, default=5, help="Save state every N chunks")
+@click.option(
+    "--heartbeat-every-docs",
+    type=int,
+    default=0,
+    help="Log in-chunk progress every N docs (0 disables heartbeat logs)",
+)
 @click.option("--min-token-len", type=int, default=3, help="Minimum token length")
 @click.option("--min-global-freq", type=int, default=5, help="Minimum total mention count across corpus")
 @click.option("--min-book-freq", type=int, default=2, help="Minimum distinct books containing token")
@@ -396,6 +402,7 @@ def main(
     batch_size: int,
     n_process: int,
     flush_every_chunks: int,
+    heartbeat_every_docs: int,
     min_token_len: int,
     min_global_freq: int,
     min_book_freq: int,
@@ -492,6 +499,7 @@ def main(
         "batch_size": batch_size,
         "n_process": n_proc,
         "flush_every_chunks": flush_every_chunks,
+        "heartbeat_every_docs": heartbeat_every_docs,
         "max_chunks_per_run": max_chunks_per_run,
         "min_token_len": min_token_len,
         "min_global_freq": min_global_freq,
@@ -587,7 +595,12 @@ def main(
             doc_wids.append(wid)
 
         if docs:
-            for wid, doc in zip(doc_wids, nlp.pipe(docs, batch_size=batch_size, n_process=n_proc)):
+            total_docs = len(docs)
+            log(f"Chunk {chunk_idx}: starting PERSON extraction for {total_docs:,} docs")
+            for doc_idx, (wid, doc) in enumerate(
+                zip(doc_wids, nlp.pipe(docs, batch_size=batch_size, n_process=n_proc)),
+                start=1,
+            ):
                 for ent in doc.ents:
                     if ent.label_ != "PERSON":
                         continue
@@ -604,6 +617,14 @@ def main(
                         global_counts[token] += 1
                         book_presence[token].add(wid)
                         per_book_counts[wid][token] += 1
+                if heartbeat_every_docs > 0 and (
+                    doc_idx % heartbeat_every_docs == 0 or doc_idx == total_docs
+                ):
+                    pct = (doc_idx / total_docs) * 100
+                    log(
+                        f"Chunk {chunk_idx}: processed {doc_idx:,}/{total_docs:,} docs "
+                        f"({pct:.1f}%)"
+                    )
 
         rows_scanned += len(chunk)
         chunks_this_session += 1

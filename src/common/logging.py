@@ -50,7 +50,7 @@ def setup_logging(
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(log_level)
     console_formatter = logging.Formatter(
-        "%(levelname)s - %(message)s"
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
     console_handler.setFormatter(console_formatter)
     # Ensure immediate flushing for console output
