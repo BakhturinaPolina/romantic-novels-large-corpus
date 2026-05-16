@@ -4,6 +4,9 @@ Reads with ``csv.DictReader`` (quoted errors with commas). For each ``work_id``,
 keeps the **last** row in file order (most recent append). Writes a deduped CSV
 beside the input by default; never overwrites ``parse_errors.csv`` unless
 ``--overwrite-output`` is set explicitly to that path.
+
+Also prints deduped **recovery hints** (Calibre repair, ``--use-zip-fallback``,
+re-download, etc.). Optional ``--recovery-hints-csv`` writes those per row.
 """
 
 from __future__ import annotations
@@ -42,6 +45,30 @@ def split_from_epub_path(epub_path: str) -> str:
         if part in SPLIT_NAMES:
             return part
     return "unknown"
+
+
+def recovery_hint(error: str) -> str:
+    """Short suggested next step for triage (dedupe / repair / re-ingest)."""
+    coarse, fine = error_bucket(error)
+    if coarse == "epub_missing_on_disk":
+        return "restore_epub_at_path_or_fix_metadata_path"
+    if coarse == "no_sentences_extracted":
+        return "reingest_with_parse_epub_use_zip_fallback_or_inspect_epub_html"
+    if fine == "missing_archive_member":
+        return "calibre_ebook_convert_epub_to_epub_then_reingest_or_use_zip_fallback"
+    if fine in ("bad_zip_file", "bad_magic_header", "zip_decompress_error"):
+        return "replace_epub_redownload_or_skip"
+    if fine == "list_index_out_of_range":
+        return "try_calibre_repair_then_reingest_or_zip_fallback"
+    if fine in ("none_type_attribute", "container_related"):
+        return "try_calibre_repair_then_reingest_or_zip_fallback"
+    if coarse == "get_body_content_failed":
+        return "calibre_repair_or_zip_fallback_if_readable_zip"
+    if coarse == "read_epub_failed" and fine == "other":
+        return "try_calibre_repair_then_reingest_or_manual_inspect"
+    if coarse == "other":
+        return "inspect_parse_errors_row_manually"
+    return "see_parse_errors_repair_failed_epubs_modes"
 
 
 def error_bucket(error: str) -> Tuple[str, str]:
@@ -139,6 +166,12 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         action="store_true",
         help="Print a JSON summary to stdout after the text report",
     )
+    p.add_argument(
+        "--recovery-hints-csv",
+        type=Path,
+        default=None,
+        help="Write work_id, md5, epub_path, error, recovery_hint (deduped rows)",
+    )
     return p.parse_args(argv)
 
 
@@ -197,6 +230,14 @@ def main(argv: Optional[List[str]] = None) -> int:
     for k, v in fine.most_common():
         print(f"  {k}: {v}")
 
+    hint_counts: Counter[str] = Counter()
+    for row in deduped:
+        hint_counts[recovery_hint(row["error"])] += 1
+    print()
+    print("Deduped rows by recovery hint (see repair_failed_epubs + parse_epub --use-zip-fallback):")
+    for h, v in hint_counts.most_common():
+        print(f"  {v}\t{h}")
+
     if args.print_json:
         payload: Dict[str, Any] = {
             "input": str(err_path),
@@ -208,6 +249,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             "deduped_unique_work_id_by_split": dict(split_unique),
             "deduped_by_coarse_bucket": dict(coarse),
             "deduped_by_fine_bucket": dict(fine),
+            "deduped_by_recovery_hint": dict(hint_counts),
         }
         print()
         print(json.dumps(payload, indent=2))
@@ -233,6 +275,28 @@ def main(argv: Optional[List[str]] = None) -> int:
             for row in deduped:
                 w.writerow(row)
         print(f"\nWrote deduped CSV: {out_path}")
+
+    if args.recovery_hints_csv is not None:
+        hint_path = resolve_path(args.recovery_hints_csv, root)
+        if hint_path.exists() and not args.overwrite_output:
+            print(f"\nRefusing to overwrite {hint_path} without --overwrite-output.", file=sys.stderr)
+            return 1
+        hint_path.parent.mkdir(parents=True, exist_ok=True)
+        hf = ["work_id", "md5", "epub_path", "error", "recovery_hint"]
+        with open(hint_path, "w", newline="", encoding="utf-8") as fp:
+            hw = csv.DictWriter(fp, fieldnames=hf)
+            hw.writeheader()
+            for row in deduped:
+                hw.writerow(
+                    {
+                        "work_id": row["work_id"],
+                        "md5": row["md5"],
+                        "epub_path": row["epub_path"],
+                        "error": row["error"],
+                        "recovery_hint": recovery_hint(row["error"]),
+                    }
+                )
+        print(f"\nWrote recovery hints CSV: {hint_path}")
 
     return 0
 

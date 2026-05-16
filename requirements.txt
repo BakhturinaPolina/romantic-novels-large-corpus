@@ -1,3 +1,5 @@
+--extra-index-url https://pypi.nvidia.com
+
 # Core ML & Optimization
 bertopic==0.17.3
 sentence-transformers==5.1.2
@@ -13,8 +15,10 @@ gensim==4.4.0
 scipy==1.16.3
 
 # Hyperparameter Optimization
-octis==1.14.0
+# OCTIS is installed separately with --no-deps because its metadata pins
+# scikit-learn==1.1.0, which conflicts with the BERTopic stack on Python 3.12.
 scikit-optimize==0.10.2
+nltk>=3.9
 
 # Topic Modeling (OCTIS dependencies)
 tomotopy==0.13.0
@@ -43,6 +47,7 @@ typer==0.20.0
 rich==14.2.0
 tqdm==4.67.1
 tenacity==9.1.2
+PyYAML>=6.0
 
 # Monitoring & Visualization
 gputil==1.4.0

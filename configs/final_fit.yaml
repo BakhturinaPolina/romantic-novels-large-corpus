@@ -1,0 +1,7 @@
+# Stage05 final-fit configuration
+
+policy:
+  default: "both"  # one of: both, train_only, train_plus_val
+
+outputs:
+  final_models_root: "models/final"

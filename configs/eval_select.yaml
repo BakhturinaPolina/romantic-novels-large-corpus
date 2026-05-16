@@ -1,0 +1,11 @@
+# Stage04 eval-select configuration (Pareto then weighted)
+
+selection:
+  pareto_first: true
+  top_k: 10
+
+weights:
+  coherence: 0.4
+  diversity: 0.4
+  outlier: 0.1
+  stability: 0.1

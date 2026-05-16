@@ -24,7 +24,7 @@ from bertopic.representation import (
 from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
 
-from src.stage05_retraining.retrain_models import RetrainableBERTopicModel
+from src.stage05_final_fit.compat import RetrainableBERTopicModel
 
 LOGGER = logging.getLogger("stage06_topics_exploration")
 logging.basicConfig(

@@ -41,12 +41,16 @@ Sentence-level tables for modeling are produced by **Stage 01** into **`data/pro
 git clone https://github.com/YOUR_USERNAME/romantic_novels_large_corpus.git
 cd romantic_novels_large_corpus
 
-python -m venv venv
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 
-pip install -r requirements.txt
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -r requirements-venv.txt
+python -m pip install --no-deps octis==1.14.0
 python -m spacy download en_core_web_sm
 ```
+
+`octis` is installed with `--no-deps` so this single Python 3.12 environment can coexist with the newer BERTopic/scikit-learn stack used by Stage 03/04/05/05b.
 
 Copy `.env.example` to `.env` and set `OPENROUTER_API_KEY` (required for Stage 08 LLM labeling and Stage 09 taxonomy/Radway). Get a key at https://openrouter.ai/keys.
 
@@ -54,6 +58,42 @@ Verify GPU setup:
 ```bash
 python -m src.common.check_gpu_setup
 ```
+
+### Unified Stage03+ Verify Checklist
+
+Run these in the same activated `.venv` to confirm Stage 03/04/05/05b readiness:
+
+```bash
+# Stage 03 smoke test (lightweight plumbing check)
+python -m src.stage03_train.smoke_test --config configs/train.yaml --max-docs 1000
+
+# Stage 04 command surface
+python -m src.stage04_eval_select.cli --help
+
+# Stage 05 command surface
+python -m src.stage05_final_fit.cli --help
+
+# Stage 05b command surface
+python -m src.stage05b_test_holdout.cli --help
+```
+
+Example full sequence after tuning:
+
+```bash
+# 1) Tune
+python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <run_id>
+
+# 2) Select winner
+python -m src.stage04_eval_select.cli select --trials results/experiments/<run_id>/trials.csv --config configs/eval_select.yaml --run-id <run_id>
+
+# 3) Final fit
+python -m src.stage05_final_fit.cli fit --winner results/selection/<run_id>/winner_config.json --policy both
+
+# 4) Holdout test
+python -m src.stage05b_test_holdout.cli score --final-model models/final/<run_id>/train_only --policy train_only --run-id <run_id>
+```
+
+Note: Stage 05b is one-shot by default; if `results/evaluation/<run_id>/test_metrics.json` already exists, rerun requires `--allow-rerun`.
 
 ## Quick Start
 
@@ -71,7 +111,7 @@ Or run stages directly:
 ```bash
 python -m src.stage01_ingestion.parse_epub_corpus_to_sentence_csvs --help
 python -m src.stage02_preprocessing.extract_character_names_booknlp --config configs/paths.yaml
-python -m src.stage03_modeling.main train --config configs/bertopic.yaml
+python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <run_id>
 ```
 
 ## Documentation

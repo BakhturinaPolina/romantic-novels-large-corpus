@@ -10,6 +10,11 @@ Modes
 - ``try-read-epub``: ``ebooklib.epub.read_epub`` (same entry point as ingestion).
 - ``calibre-repair``: run Calibre's ``ebook-convert`` EPUB→EPUB (rewrite). Requires
   Calibre on ``PATH``; see https://manual.calibre-ebook.com/generated/en/ebook-convert.html
+- ``zip-fallback-probe``: ZIP+OPF spine HTML walk (case-insensitive paths), rough char
+  counts — no spaCy. Use to see whether ``--use-zip-fallback`` re-ingestion can recover text.
+
+``calibre-repair`` accepts ``--verify-repaired`` to run ``read_epub`` on each
+``.repaired.epub`` output (same check as ingestion after repair).
 
 Out of scope: automatic OPF/package surgery inside ZIPs. Use ``calibre-repair``
 or replace files from your download pipeline for ``bad_zip`` / ``missing``.
@@ -26,6 +31,8 @@ import sys
 import zipfile
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+from .epub_zip_fallback import zip_fallback_plain_stats
 
 FIELDNAMES = ("work_id", "md5", "epub_path", "error")
 
@@ -53,8 +60,13 @@ def read_error_rows(path: Path) -> List[Dict[str, str]]:
     rows: List[Dict[str, str]] = []
     with open(path, newline="", encoding="utf-8") as fp:
         reader = csv.DictReader(fp)
+        cols = set(reader.fieldnames or [])
+        err_src = "error" if "error" in cols else ("pipeline_error" if "pipeline_error" in cols else "error")
         for row in reader:
-            rows.append({k: (row.get(k) or "").strip() for k in FIELDNAMES})
+            rec = {k: (row.get(k) or "").strip() for k in FIELDNAMES}
+            if err_src != "error" and err_src in cols:
+                rec["error"] = (row.get(err_src) or "").strip()
+            rows.append(rec)
     return rows
 
 
@@ -103,14 +115,19 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     )
     p.add_argument(
         "--mode",
-        choices=("audit", "try-read-epub", "calibre-repair"),
+        choices=("audit", "try-read-epub", "calibre-repair", "zip-fallback-probe"),
         default="audit",
-        help="audit: zip/exists; try-read-epub: ebooklib; calibre-repair: ebook-convert EPUB→EPUB",
+        help="audit | try-read-epub | calibre-repair | zip-fallback-probe (ZIP+OPF text probe)",
     )
     p.add_argument(
         "--dry-run",
         action="store_true",
         help="For calibre-repair: print commands only, do not run or write outputs",
+    )
+    p.add_argument(
+        "--verify-repaired",
+        action="store_true",
+        help="After calibre-repair success, run ebooklib read_epub on the .repaired.epub output",
     )
     p.add_argument(
         "--repair-dir",
@@ -143,12 +160,15 @@ def main(argv: Optional[List[str]] = None) -> int:
     if args.limit is not None:
         rows = rows[: args.limit]
 
-    if args.mode == "try-read-epub":
+    need_ebooklib = args.mode == "try-read-epub" or (
+        args.mode == "calibre-repair" and args.verify_repaired and not args.dry_run
+    )
+    if need_ebooklib:
         try:
             import ebooklib  # noqa: F401
         except ImportError:
             print(
-                "Error: try-read-epub requires ebooklib (same venv as ingestion).",
+                "Error: ebooklib required (try-read-epub, or calibre-repair with --verify-repaired).",
                 file=sys.stderr,
             )
             return 1
@@ -177,6 +197,24 @@ def main(argv: Optional[List[str]] = None) -> int:
             rec["audit_status"] = status
             rec["audit_detail"] = detail
             key = status
+        elif args.mode == "zip-fallback-probe":
+            a_status, a_detail = audit_epub(epub_path)
+            rec["audit_status"] = a_status
+            rec["audit_detail"] = a_detail
+            if a_status != "readable_zip":
+                rec["fallback_status"] = "skipped_not_readable_zip"
+                rec["fallback_detail"] = ""
+                key = f"{a_status}_skip"
+            else:
+                n_docs, n_chars, ferr = zip_fallback_plain_stats(epub_path)
+                if ferr:
+                    rec["fallback_status"] = "probe_error"
+                    rec["fallback_detail"] = ferr
+                    key = "fallback_error"
+                else:
+                    rec["fallback_status"] = "ok"
+                    rec["fallback_detail"] = f"html_docs={n_docs} approx_plain_chars={n_chars}"
+                    key = "fallback_nonempty" if n_chars > 0 else "fallback_empty"
         elif args.mode == "try-read-epub":
             a_status, a_detail = audit_epub(epub_path)
             rec["audit_status"] = a_status
@@ -197,6 +235,9 @@ def main(argv: Optional[List[str]] = None) -> int:
             if a_status != "readable_zip":
                 rec["calibre_status"] = "skipped_not_readable_zip"
                 rec["calibre_detail"] = ""
+                if args.verify_repaired:
+                    rec["repaired_read_status"] = "skipped_not_readable_zip"
+                    rec["repaired_read_detail"] = ""
                 key = f"{a_status}_skip"
                 out_rows.append(rec)
                 summary[key] = summary.get(key, 0) + 1
@@ -214,16 +255,28 @@ def main(argv: Optional[List[str]] = None) -> int:
                 rec["calibre_detail"] = " ".join(cmd)
                 print(f"[dry-run] {' '.join(cmd)}")
                 key = "dry_run"
+                if args.verify_repaired:
+                    rec["repaired_read_status"] = "skipped_dry_run"
+                    rec["repaired_read_detail"] = ""
             else:
                 try:
                     subprocess.run(cmd, check=True, capture_output=True, text=True)
                     rec["calibre_status"] = "ok"
                     rec["calibre_detail"] = str(out_epub)
                     key = "calibre_ok"
+                    if args.verify_repaired:
+                        rr_status, rr_detail = try_read_epub(out_epub)
+                        rec["repaired_read_status"] = rr_status
+                        rec["repaired_read_detail"] = (rr_detail or "")[:2000]
+                        if rr_status != "read_ok":
+                            key = "calibre_ok_read_failed_after"
                 except subprocess.CalledProcessError as e:
                     rec["calibre_status"] = "failed"
                     rec["calibre_detail"] = (e.stderr or e.stdout or str(e))[:2000]
                     key = "calibre_failed"
+                    if args.verify_repaired:
+                        rec["repaired_read_status"] = "skipped_calibre_failed"
+                        rec["repaired_read_detail"] = ""
 
         out_rows.append(rec)
         summary[key] = summary.get(key, 0) + 1
@@ -240,9 +293,15 @@ def main(argv: Optional[List[str]] = None) -> int:
         if not out_rows:
             print("No rows written (--limit 0 or empty errors CSV).", file=sys.stderr)
         else:
-            fieldnames = list(out_rows[0].keys())
+            key_order: List[str] = []
+            seen_k: set[str] = set()
+            for r in out_rows:
+                for k in r:
+                    if k not in seen_k:
+                        seen_k.add(k)
+                        key_order.append(k)
             with open(outp, "w", newline="", encoding="utf-8") as fp:
-                w = csv.DictWriter(fp, fieldnames=fieldnames)
+                w = csv.DictWriter(fp, fieldnames=key_order)
                 w.writeheader()
                 for r in out_rows:
                     w.writerow(r)

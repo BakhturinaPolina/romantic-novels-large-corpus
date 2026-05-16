@@ -14,6 +14,10 @@ inputs:
   romance_v2_sentences_dir: "data/processed/romance_subdataset_downloaded_v2_sentences"
   # Explicit train sentences CSV (defaults under romance_v2_sentences_dir if unset)
   sentences_train_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv"
+  # Explicit eval (validation) split path used in new train/eval/test pipeline
+  sentences_val_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_val.csv"
+  # Explicit held-out test split path used by stage05b test holdout
+  sentences_test_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_test.csv"
   # Timestamped BookNLP runs: data/interim/booknlp_character_runs/run_<UTC>/
   booknlp_character_runs_parent: "data/interim/booknlp_character_runs"
   # Optional: cache BookNLP downloaded models here instead of ~/.booknlp_models
@@ -32,6 +36,9 @@ outputs:
   models: "models"
   results: "results"
   experiments: "results/experiments"
+  selection: "results/selection"
+  final_models: "models/final"
+  evaluation: "results/evaluation"
   pareto: "results/stage04_selection"
   topics: "results/topics"
   figures: "results/figures"

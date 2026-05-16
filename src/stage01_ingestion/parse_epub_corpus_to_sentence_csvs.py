@@ -28,6 +28,8 @@ import pandas as pd
 import spacy
 from tqdm import tqdm
 
+from .epub_zip_fallback import iter_spine_html_raw
+
 LOG = logging.getLogger(__name__)
 
 SPLIT_NAMES = ("train", "val", "test")
@@ -108,9 +110,46 @@ def iter_spine_chapters(book: epub.EpubBook) -> Iterator[Tuple[epub.EpubItem, in
         yield item, spine_pos
 
 
+def _extract_sentences_zip_fallback(
+    epub_path: Path,
+    nlp: spacy.Language,
+) -> Tuple[List[dict], Optional[str]]:
+    """Spine-ordered HTML via ZIP/OPF (case-insensitive member names)."""
+    chapters, zerr = iter_spine_html_raw(epub_path)
+    if zerr:
+        return [], f"zip_fallback_failed: {zerr}"
+
+    rows: List[dict] = []
+    chapter_index = 0
+    for _logical, raw in chapters:
+        plain, title = _html_body_to_plain(raw)
+        if not plain.strip():
+            continue
+        doc = nlp(plain)
+        sent_list = [s.text.strip() for s in doc.sents if s.text.strip()]
+        if not sent_list:
+            chapter_index += 1
+            continue
+        for sentence_index, sentence in enumerate(sent_list):
+            rows.append(
+                {
+                    "chapter_index": chapter_index,
+                    "chapter_title": title,
+                    "sentence_index": sentence_index,
+                    "sentence": sentence,
+                }
+            )
+        chapter_index += 1
+
+    if not rows:
+        return [], "zip_fallback_no_sentences"
+    return rows, None
+
+
 def extract_sentences_for_epub(
     epub_path: Path,
     nlp: spacy.Language,
+    use_zip_fallback: bool = False,
 ) -> Tuple[List[dict], Optional[str]]:
     """
     Returns (rows, error_message).
@@ -120,6 +159,8 @@ def extract_sentences_for_epub(
     try:
         book = epub.read_epub(str(epub_path))
     except Exception as e:
+        if use_zip_fallback:
+            return _extract_sentences_zip_fallback(epub_path, nlp)
         return [], f"read_epub_failed: {e}"
 
     rows: List[dict] = []
@@ -154,6 +195,8 @@ def extract_sentences_for_epub(
         chapter_index += 1
 
     if not rows:
+        if use_zip_fallback:
+            return _extract_sentences_zip_fallback(epub_path, nlp)
         return [], "no_sentences_extracted"
     return rows, None
 
@@ -317,6 +360,7 @@ def process_split(
     errors_fp: TextIO,
     nlp: spacy.Language,
     limit: Optional[int] = None,
+    use_zip_fallback: bool = False,
 ) -> int:
     meta_path = metadata_dir / METADATA_GLOB.format(split=split)
     if not meta_path.exists():
@@ -375,7 +419,7 @@ def process_split(
                 errors_fp.flush()
                 continue
 
-            chapter_rows, err = extract_sentences_for_epub(epub_path, nlp)
+            chapter_rows, err = extract_sentences_for_epub(epub_path, nlp, use_zip_fallback=use_zip_fallback)
             if err:
                 errors_writer.writerow(
                     {
@@ -423,6 +467,11 @@ def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
         "--overwrite",
         action="store_true",
         help="delete existing sentence CSVs, per-split .ckpt checkpoints, and parse_errors.csv before running",
+    )
+    p.add_argument(
+        "--use-zip-fallback",
+        action="store_true",
+        help="if ebooklib fails or yields no sentences, retry via ZIP+OPF spine HTML (case-insensitive paths)",
     )
     return p.parse_args(list(argv) if argv is not None else None)
 
@@ -474,6 +523,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
                 errors_fp=efp,
                 nlp=nlp,
                 limit=args.limit,
+                use_zip_fallback=args.use_zip_fallback,
             )
             total_rows += n
             LOG.info("Wrote %s sentence rows -> %s", n, out_csv)

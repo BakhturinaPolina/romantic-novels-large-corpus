@@ -20,6 +20,7 @@ from pathlib import Path
 import numpy as np
 import torch
 import pprint
+import re
 
 # Import memory and thermal monitoring utilities
 from src.stage03_modeling.memory_utils import (
@@ -29,13 +30,14 @@ from src.stage03_modeling.memory_utils import (
 from src.common.thermal_monitor import ThermalMonitor
 
 import gensim.corpora as corpora
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, ENGLISH_STOP_WORDS
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
 from bertopic.representation import KeyBERTInspired, MaximalMarginalRelevance, PartOfSpeech
 from bertopic.vectorizers import ClassTfidfTransformer
 from octis.models.model import AbstractModel
 from scipy.sparse import csr_matrix, issparse
+from src.common.config import load_config, resolve_path
 
 # Import GPU models (RAPIDS required)
 try:
@@ -124,6 +126,43 @@ def create_representation_models():
         "MMR": mmr_model,
         "POS": pos_model
     }
+
+
+def load_custom_stopwords_from_config(verbose: bool = True) -> List[str]:
+    """Load custom stopwords from paths.yaml and normalize to token-level entries."""
+    token_re = re.compile(r"[A-Za-z][A-Za-z'-]*")
+    try:
+        paths_cfg = load_config(Path("configs/paths.yaml"))
+        raw_path = paths_cfg.get("inputs", {}).get("custom_stoplist")
+        if not raw_path:
+            if verbose:
+                print("[STOPWORDS] No inputs.custom_stoplist in configs/paths.yaml, using English stopwords only")
+            return []
+
+        stoplist_path = resolve_path(Path(raw_path))
+        if not stoplist_path.exists():
+            if verbose:
+                print(f"[STOPWORDS] Custom stoplist not found at {stoplist_path}, using English stopwords only")
+            return []
+
+        tokens: set[str] = set()
+        with open(stoplist_path, "r", encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                s = line.strip()
+                if not s or s.startswith("#"):
+                    continue
+                for m in token_re.finditer(s.lower()):
+                    tok = m.group(0).strip("'-")
+                    if tok:
+                        tokens.add(tok)
+
+        if verbose:
+            print(f"[STOPWORDS] Loaded {len(tokens):,} custom stopword token(s) from {stoplist_path}")
+        return sorted(tokens)
+    except Exception as e:
+        if verbose:
+            print(f"[STOPWORDS] Failed to load custom stoplist: {e}. Falling back to English-only stopwords.")
+        return []
 
 
 class BERTopicOctisModelWithEmbeddings(AbstractModel):
@@ -314,7 +353,24 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
         
         if self.verbose:
             print("[TRAIN] Creating CountVectorizer...")
-        vectorizer_model = CountVectorizer(**self.hyperparameters['vectorizer'])
+        vectorizer_params = self.hyperparameters["vectorizer"].copy()
+        custom_stopwords = load_custom_stopwords_from_config(verbose=self.verbose)
+        base_stop_words = vectorizer_params.get("stop_words", "english")
+        if base_stop_words == "english" or base_stop_words is None:
+            merged_stop_words = sorted(set(ENGLISH_STOP_WORDS).union(custom_stopwords))
+        elif isinstance(base_stop_words, (list, set, tuple)):
+            merged_stop_words = sorted(set(base_stop_words).union(custom_stopwords))
+        else:
+            merged_stop_words = sorted(set(ENGLISH_STOP_WORDS).union(custom_stopwords))
+            if self.verbose:
+                print(
+                    f"[STOPWORDS] Unsupported stop_words={base_stop_words!r}; "
+                    "falling back to English + custom stopwords"
+                )
+        vectorizer_params["stop_words"] = merged_stop_words
+        if self.verbose:
+            print(f"[TRAIN] CountVectorizer stopwords: {len(merged_stop_words):,} total")
+        vectorizer_model = CountVectorizer(**vectorizer_params)
         
         if self.verbose:
             print("[TRAIN] Creating ClassTfidfTransformer...")

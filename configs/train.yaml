@@ -1,0 +1,31 @@
+# Stage03 train/eval BERTopic tuning configuration
+
+embedding_models:
+  - "paraphrase-MiniLM-L6-v2"
+  - "all-MiniLM-L12-v2"
+  - "paraphrase-mpnet-base-v2"
+  - "paraphrase-distilroberta-base-v1"
+  - "multi-qa-mpnet-base-cos-v1"
+  - "whaleloops/phrase-bert"
+
+device: "auto"
+embedding_batch_size: 256
+
+text:
+  sentence_column: "sentence"
+
+optimization:
+  number_of_calls: 120
+  model_runs: 1
+  seed: 42
+  default_stability_score: 0.0
+
+search_space:
+  umap__n_neighbors: [2, 50]
+  umap__n_components: [2, 10]
+  umap__min_dist: [0.0, 0.1]
+  hdbscan__min_cluster_size: [50, 500]
+  hdbscan__min_samples: [10, 100]
+  vectorizer__min_df: [0.001, 0.01]
+  bertopic__top_n_words: [10, 40]
+  bertopic__min_topic_size: [10, 250]
