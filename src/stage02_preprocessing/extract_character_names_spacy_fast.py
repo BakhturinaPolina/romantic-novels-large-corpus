@@ -215,13 +215,15 @@ def _restore_counters(state: dict[str, Any]) -> tuple[
     int,
 ]:
     global_counts = Counter(state.get("global_counts", {}))
-    book_presence = {k: set(v) for k, v in state.get("book_presence", {}).items()}
+    book_presence: defaultdict[str, set[int]] = defaultdict(set)
+    for k, v in state.get("book_presence", {}).items():
+        book_presence[k].update(v)
     per_book_person_mentions = Counter(
         {int(k): v for k, v in state.get("per_book_person_mentions", {}).items()}
     )
-    per_book_counts: dict[int, Counter[str]] = {}
+    per_book_counts: defaultdict[int, Counter[str]] = defaultdict(Counter)
     for wid_s, tok_map in state.get("per_book_token_counts", {}).items():
-        per_book_counts[int(wid_s)] = Counter(tok_map)
+        per_book_counts[int(wid_s)].update(tok_map)
     ordered_work_ids = [int(x) for x in state.get("ordered_work_ids", [])]
     rows_scanned = int(state.get("rows_scanned", 0))
     return (
