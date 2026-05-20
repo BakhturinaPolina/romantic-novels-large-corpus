@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import json
+import time
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -18,12 +20,13 @@ from octis.optimization.optimizer import Optimizer
 from skopt.space.space import Integer, Real
 
 from src.common.config import load_config, resolve_path
+from src.common.logging import setup_logging
 from src.stage03_train.bertopic_octis_model import (
     BERTopicOctisModelWithEmbeddings,
     load_embedding_model,
 )
 from src.stage03_train.data_io import load_train_eval
-from src.stage03_train.embeddings import load_or_compute_embeddings
+from src.stage03_train.embeddings import get_cache_file, load_or_compute_embeddings
 from src.stage03_train.octis_corpus import write_octis_corpus
 
 
@@ -51,6 +54,102 @@ def _build_paths(paths_cfg: dict[str, Any], run_id: str) -> TunePaths:
         octis_dir=octis_base / run_id,
         experiments_dir=exp_base / run_id,
     )
+
+
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+
+
+def _write_trials(trials_csv: Path, rows: list[dict[str, Any]]) -> None:
+    df = pd.DataFrame(rows)
+    df.to_csv(trials_csv, index=False)
+
+
+def _default_state(run_id: str) -> dict[str, Any]:
+    return {
+        "run_id": run_id,
+        "started_at": _utc_now(),
+        "updated_at": _utc_now(),
+        "completed": False,
+        "steps": {},
+        "models": {},
+    }
+
+
+def _load_state(run_state_json: Path, run_id: str) -> dict[str, Any]:
+    if not run_state_json.exists():
+        return _default_state(run_id)
+    with open(run_state_json, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+    if payload.get("run_id") != run_id:
+        return _default_state(run_id)
+    return payload
+
+
+def _save_state(run_state_json: Path, state: dict[str, Any]) -> None:
+    state["updated_at"] = _utc_now()
+    _write_json(run_state_json, state)
+
+
+def _step_completed(state: dict[str, Any], step_name: str) -> bool:
+    return state.get("steps", {}).get(step_name, {}).get("status") == "completed"
+
+
+def _mark_step(
+    state: dict[str, Any],
+    step_name: str,
+    *,
+    status: str,
+    duration_s: float | None = None,
+    details: dict[str, Any] | None = None,
+) -> None:
+    entry = state.setdefault("steps", {}).setdefault(step_name, {})
+    entry["status"] = status
+    if status == "running":
+        entry["started_at"] = _utc_now()
+    if status == "completed":
+        entry["completed_at"] = _utc_now()
+    if duration_s is not None:
+        entry["duration_s"] = round(float(duration_s), 3)
+    if details:
+        merged = dict(entry.get("details", {}))
+        merged.update(details)
+        entry["details"] = merged
+
+
+def _mark_model(
+    state: dict[str, Any],
+    model_name: str,
+    *,
+    status: str,
+    duration_s: float | None = None,
+    details: dict[str, Any] | None = None,
+) -> None:
+    entry = state.setdefault("models", {}).setdefault(model_name, {})
+    entry["status"] = status
+    if status == "running":
+        entry["started_at"] = _utc_now()
+    if status in {"completed", "skipped"}:
+        entry["completed_at"] = _utc_now()
+    if duration_s is not None:
+        entry["duration_s"] = round(float(duration_s), 3)
+    if details:
+        merged = dict(entry.get("details", {}))
+        merged.update(details)
+        entry["details"] = merged
+
+
+def _safe_outlier_rate(topic_document_matrix: Any) -> float:
+    matrix = np.asarray(topic_document_matrix)
+    if matrix.ndim != 2 or matrix.shape[0] == 0:
+        return 1.0
+    return float(np.mean(np.max(matrix, axis=1) == 0))
 
 
 def build_search_space(cfg: dict[str, Any]) -> dict[str, Any]:
@@ -102,33 +201,136 @@ def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> t
     return coherence, diversity
 
 
-def run_tuning(config_path: Path, run_id: str) -> Path:
+def run_tuning(
+    config_path: Path, run_id: str, embedding_models_override: list[str] | None = None
+) -> Path:
     """Execute tuning and return trials.csv path."""
+    started_at = time.perf_counter()
     cfg = load_config(config_path)
     paths_cfg = load_config(Path("configs/paths.yaml"))
     paths = _build_paths(paths_cfg, run_id)
+    logs_dir = resolve_path(Path(paths_cfg.get("outputs", {}).get("logs", "logs")))
+    logger = setup_logging(logs_dir=logs_dir, log_file=f"stage03_{run_id}.log")
+    logger.info("Stage03 run start: run_id=%s config=%s", run_id, config_path)
 
-    payload = load_train_eval(paths.train_csv, paths.eval_csv, sentence_column=cfg["text"]["sentence_column"])
+    paths.octis_dir.mkdir(parents=True, exist_ok=True)
+    paths.experiments_dir.mkdir(parents=True, exist_ok=True)
+    run_state_json = paths.experiments_dir / "run_state.json"
+    run_summary_json = paths.experiments_dir / "run_summary.json"
+    trials_csv = paths.experiments_dir / "trials.csv"
+    manifest_json = paths.experiments_dir / "run_manifest.json"
+    log_file = logs_dir / f"stage03_{run_id}.log"
+
+    state = _load_state(run_state_json, run_id)
+    _save_state(run_state_json, state)
+
+    step_start = time.perf_counter()
+    _mark_step(state, "data_load", status="running")
+    _save_state(run_state_json, state)
+    logger.info("Loading train/eval splits from %s and %s", paths.train_csv, paths.eval_csv)
+    payload = load_train_eval(
+        paths.train_csv, paths.eval_csv, sentence_column=cfg["text"]["sentence_column"]
+    )
     docs_train = payload["docs_train"]
     docs_eval = payload["docs_eval"]
     labels_train = payload["labels_train"]
     labels_eval = payload["labels_eval"]
     tokens_eval = payload["tokens_eval"]
+    data_duration = time.perf_counter() - step_start
+    _mark_step(
+        state,
+        "data_load",
+        status="completed",
+        duration_s=data_duration,
+        details={"n_train_docs": len(docs_train), "n_eval_docs": len(docs_eval)},
+    )
+    _save_state(run_state_json, state)
+    logger.info(
+        "Data loaded in %.2fs (train=%d, eval=%d)",
+        data_duration,
+        len(docs_train),
+        len(docs_eval),
+    )
 
-    paths.octis_dir.mkdir(parents=True, exist_ok=True)
-    paths.experiments_dir.mkdir(parents=True, exist_ok=True)
-    write_octis_corpus(docs_train, labels_train, docs_eval, labels_eval, paths.octis_dir)
+    corpus_tsv = paths.octis_dir / "corpus.tsv"
+    if _step_completed(state, "octis_corpus_written") and corpus_tsv.exists():
+        logger.info("Skipping OCTIS corpus write (already completed): %s", corpus_tsv)
+    else:
+        step_start = time.perf_counter()
+        _mark_step(state, "octis_corpus_written", status="running")
+        _save_state(run_state_json, state)
+        write_octis_corpus(docs_train, labels_train, docs_eval, labels_eval, paths.octis_dir)
+        corpus_duration = time.perf_counter() - step_start
+        _mark_step(
+            state,
+            "octis_corpus_written",
+            status="completed",
+            duration_s=corpus_duration,
+            details={"corpus_tsv": str(corpus_tsv)},
+        )
+        _save_state(run_state_json, state)
+        logger.info("OCTIS corpus ready in %.2fs: %s", corpus_duration, corpus_tsv)
 
+    step_start = time.perf_counter()
+    _mark_step(state, "octis_dataset_load", status="running")
+    _save_state(run_state_json, state)
     octis_dataset = Dataset()
     octis_dataset.load_custom_dataset_from_folder(str(paths.octis_dir))
+    dataset_duration = time.perf_counter() - step_start
+    _mark_step(
+        state,
+        "octis_dataset_load",
+        status="completed",
+        duration_s=dataset_duration,
+        details={"octis_dir": str(paths.octis_dir)},
+    )
+    _save_state(run_state_json, state)
+    logger.info("OCTIS dataset loaded in %.2fs", dataset_duration)
 
     docs_all = docs_train + docs_eval
     tokens_all = [d.split() for d in docs_all]
-    trials: list[dict[str, Any]] = []
-    search_space = build_search_space(cfg)
+    existing_rows: list[dict[str, Any]] = []
+    if trials_csv.exists():
+        try:
+            existing_rows = pd.read_csv(trials_csv).to_dict(orient="records")
+            logger.info("Loaded existing trials for resume: %d rows", len(existing_rows))
+        except Exception as ex:  # pragma: no cover
+            logger.warning("Could not read existing trials.csv (%s), starting fresh.", ex)
 
-    for idx, model_name in enumerate(cfg["embedding_models"], start=1):
+    trials_by_model: dict[str, dict[str, Any]] = {}
+    for row in existing_rows:
+        model_key = str(row.get("embedding_model", ""))
+        if model_key and model_key not in trials_by_model:
+            trials_by_model[model_key] = row
+
+    search_space = build_search_space(cfg)
+    selected_models = embedding_models_override or cfg["embedding_models"]
+    logger.info("Selected embedding models: %s", selected_models)
+
+    for idx, model_name in enumerate(selected_models, start=1):
+        model_step_start = time.perf_counter()
+        model_state = state.get("models", {}).get(model_name, {})
+        already_done = (
+            model_state.get("status") in {"completed", "skipped"} and model_name in trials_by_model
+        )
+        if already_done:
+            _mark_model(
+                state,
+                model_name,
+                status="skipped",
+                details={"reason": "existing_model_result"},
+            )
+            _save_state(run_state_json, state)
+            logger.info("Skipping model %s (already completed in prior run)", model_name)
+            continue
+
+        logger.info("Starting model %d/%d: %s", idx, len(selected_models), model_name)
+        _mark_model(state, model_name, status="running")
+        _save_state(run_state_json, state)
         cache_dir = paths.octis_dir / "embeddings_cache"
+        cache_file = get_cache_file(cache_dir, "train_eval", model_name)
+        cache_hit = cache_file.exists()
+        logger.info("Embedding cache %s for %s", "hit" if cache_hit else "miss", model_name)
         emb = load_or_compute_embeddings(
             docs_all,
             model_name=model_name,
@@ -136,7 +338,15 @@ def run_tuning(config_path: Path, run_id: str) -> Path:
             split="train_eval",
             device=cfg.get("device", "auto"),
             batch_size=int(cfg.get("embedding_batch_size", 256)),
+            logger=logger,
         )
+        _mark_model(
+            state,
+            model_name,
+            status="running",
+            details={"embedding_cache_file": str(cache_file), "embedding_cache_hit": cache_hit},
+        )
+        _save_state(run_state_json, state)
         model = BERTopicOctisModelWithEmbeddings(
             embedding_model=load_embedding_model(model_name),
             embedding_model_name=model_name,
@@ -151,6 +361,7 @@ def run_tuning(config_path: Path, run_id: str) -> Path:
         optimizer = Optimizer()
         npmi_metric = Coherence(texts=[t for t in tokens_eval if t], topk=10, measure="c_v")
         diversity_metric = TopicDiversity(topk=10)
+        optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
         result = optimizer.optimize(
             model,
             octis_dataset,
@@ -160,7 +371,7 @@ def run_tuning(config_path: Path, run_id: str) -> Path:
             model_runs=int(cfg["optimization"].get("model_runs", 1)),
             save_models=True,
             extra_metrics=[diversity_metric],
-            save_path=str(paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"),
+            save_path=str(optimization_dir),
         )
 
         best_params = {}
@@ -172,7 +383,7 @@ def run_tuning(config_path: Path, run_id: str) -> Path:
         output = model.train_model(dataset=octis_dataset, hyperparameters=best_params)
         topics = _topics_from_output(output.get("topics"))
         coherence, diversity = _compute_metrics(topics, tokens_eval)
-        outlier_rate = float(np.mean(np.max(output.get("topic-document-matrix", np.zeros((1, 1))), axis=1) == 0))
+        outlier_rate = _safe_outlier_rate(output.get("topic-document-matrix", np.zeros((1, 1))))
         stability_score = float(cfg["optimization"].get("default_stability_score", 0.0))
 
         row: dict[str, Any] = {
@@ -191,12 +402,95 @@ def run_tuning(config_path: Path, run_id: str) -> Path:
             "test_csv": str(paths.test_csv),
         }
         row.update(best_params)
-        trials.append(row)
+        trials_by_model[model_name] = row
+        _write_trials(trials_csv, list(trials_by_model.values()))
 
-    df = pd.DataFrame(trials)
-    trials_csv = paths.experiments_dir / "trials.csv"
-    df.to_csv(trials_csv, index=False)
-    with open(paths.experiments_dir / "run_manifest.json", "w", encoding="utf-8") as f:
-        json.dump({"run_id": run_id, "trials": len(df), "trials_csv": str(trials_csv)}, f, indent=2)
+        model_duration = time.perf_counter() - model_step_start
+        _mark_model(
+            state,
+            model_name,
+            status="completed",
+            duration_s=model_duration,
+            details={
+                "trial_id": row["trial_id"],
+                "optimization_dir": str(optimization_dir),
+                "coherence_c_v": coherence,
+                "topic_diversity": diversity,
+                "outlier_rate": outlier_rate,
+            },
+        )
+        _save_state(run_state_json, state)
+        logger.info(
+            "Completed %s in %.2fs (coherence=%.4f diversity=%.4f outlier=%.4f)",
+            model_name,
+            model_duration,
+            coherence,
+            diversity,
+            outlier_rate,
+        )
+
+        manifest_payload = {
+            "run_id": run_id,
+            "updated_at": _utc_now(),
+            "trials": len(trials_by_model),
+            "selected_models": selected_models,
+            "completed_models": [
+                name for name, meta in state.get("models", {}).items() if meta.get("status") == "completed"
+            ],
+            "skipped_models": [
+                name for name, meta in state.get("models", {}).items() if meta.get("status") == "skipped"
+            ],
+            "trials_csv": str(trials_csv),
+            "run_state_json": str(run_state_json),
+            "run_summary_json": str(run_summary_json),
+            "log_file": str(log_file),
+        }
+        _write_json(manifest_json, manifest_payload)
+
+    _mark_step(
+        state,
+        "manifest_write",
+        status="completed",
+        duration_s=time.perf_counter() - started_at,
+        details={"manifest_json": str(manifest_json)},
+    )
+    state["completed"] = True
+    _save_state(run_state_json, state)
+
+    final_manifest = {
+        "run_id": run_id,
+        "completed_at": _utc_now(),
+        "trials": len(trials_by_model),
+        "selected_models": selected_models,
+        "completed_models": [
+            name for name, meta in state.get("models", {}).items() if meta.get("status") == "completed"
+        ],
+        "skipped_models": [
+            name for name, meta in state.get("models", {}).items() if meta.get("status") == "skipped"
+        ],
+        "trials_csv": str(trials_csv),
+        "run_state_json": str(run_state_json),
+        "run_summary_json": str(run_summary_json),
+        "log_file": str(log_file),
+    }
+    _write_json(manifest_json, final_manifest)
+    _write_json(
+        run_summary_json,
+        {
+            "run_id": run_id,
+            "started_at": state.get("started_at"),
+            "finished_at": _utc_now(),
+            "elapsed_s": round(time.perf_counter() - started_at, 3),
+            "steps": state.get("steps", {}),
+            "models": state.get("models", {}),
+            "artifacts": {
+                "trials_csv": str(trials_csv),
+                "run_manifest_json": str(manifest_json),
+                "run_state_json": str(run_state_json),
+                "log_file": str(log_file),
+            },
+        },
+    )
+    logger.info("Stage03 run finished in %.2fs. trials.csv=%s", time.perf_counter() - started_at, trials_csv)
     return trials_csv
 

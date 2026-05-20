@@ -18,10 +18,17 @@ def cli() -> None:
 @cli.command("tune")
 @click.option("--config", default="configs/train.yaml", type=click.Path(exists=True, path_type=Path))
 @click.option("--run-id", default=None, type=str)
-def tune(config: Path, run_id: str | None) -> None:
+@click.option(
+    "--embedding-model",
+    default=None,
+    type=str,
+    help="Optional single-model run override (for quick perf/smoke runs).",
+)
+def tune(config: Path, run_id: str | None, embedding_model: str | None) -> None:
     """Run BERTopic tuning over embedding models."""
     rid = run_id or uuid.uuid4().hex[:12]
-    trials_csv = run_tuning(config, rid)
+    embedding_models = [embedding_model] if embedding_model else None
+    trials_csv = run_tuning(config, rid, embedding_models_override=embedding_models)
     click.echo(f"Stage03 tuning complete. trials.csv: {trials_csv}")
 
 

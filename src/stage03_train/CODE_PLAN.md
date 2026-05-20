@@ -131,7 +131,11 @@ def load_or_compute_embeddings(
 ```python
 def build_search_space(cfg: dict) -> dict: ...
 def run_embedding_optimization(...) -> pd.DataFrame: ...
-def run_tuning(config_path: Path, run_id: str) -> Path: ...
+def run_tuning(
+    config_path: Path,
+    run_id: str,
+    embedding_models_override: list[str] | None = None,
+) -> Path: ...
 ```
 
 ### Trials schema (`results/experiments/<run_id>/trials.csv`)
@@ -180,6 +184,17 @@ def apply_weighted_score(
 1. Keep Pareto-efficient rows on `(coherence_c_v, topic_diversity)`.
 2. Rank remaining rows by weighted score.
 3. Emit top-k and winner.
+
+### Pareto rationale and active model scope
+- Pareto filtering keeps only rows where improving coherence would reduce diversity (or vice versa), matching the required trade-off framing.
+- Active Stage03 embedding scope is limited to:
+  - `sentence-transformers/all-MiniLM-L12-v2`
+  - `sentence-transformers/paraphrase-mpnet-base-v2`
+  - `sentence-transformers/paraphrase-MiniLM-L6-v2`
+- Rationale from the pretest on a smaller corpus of 100 "billionaire" romance novels:
+  - `all-MiniLM-L12-v2` produced the strongest coherence and top combined Pareto score.
+  - `paraphrase-mpnet-base-v2` and `paraphrase-MiniLM-L6-v2` provided the best coherence/diversity balance.
+  - low-coherence models (`whaleloops/phrase-bert`, `paraphrase-distilroberta-base-v1`, `multi-qa-mpnet-base-cos-v1`) were excluded from active tuning.
 
 ## `cli.py`
 
@@ -250,6 +265,7 @@ def run_holdout_score(...) -> Path: ...
 ## 7) CLI Surface
 
 - `python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <id>`
+- `python -m src.stage03_train.cli tune --config configs/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
 - `python -m src.stage03_train.smoke_test --config configs/train.yaml --max-docs 10000`
 - `python -m src.stage04_eval_select.cli select --trials <path> --config configs/eval_select.yaml --run-id <id>`
 - `python -m src.stage05_final_fit.cli fit --winner <path> --policy both`
@@ -273,7 +289,11 @@ def run_holdout_score(...) -> Path: ...
 ## 9) Validation Checklist
 
 - Stage03 smoke test completes.
-- `trials.csv` generated with required columns.
+- Stage03 tuning logs stream to terminal with timestamps and persist to `logs/stage03_<run_id>.log`.
+- `results/experiments/<run_id>/run_state.json` updates after each boundary step and each model.
+- `trials.csv` is written incrementally after each model and includes required columns.
+- `run_manifest.json` and `run_summary.json` are updated with artifact paths and per-step/model durations.
+- Re-run with same `run_id` auto-skips already completed corpus/model work and resumes remaining steps.
 - Stage04 emits winner config.
 - Stage05 emits both artifact trees.
 - Stage05b writes test metrics once; second run fails without `--allow-rerun`.

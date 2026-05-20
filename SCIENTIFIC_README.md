@@ -83,11 +83,14 @@ Stages 01–02 do not write pipeline outputs under `results/` except optional do
 **Why BERTopic?** Unlike traditional LDA, BERTopic uses BERT embeddings to capture contextual word meanings, producing more interpretable topics for literary analysis.
 
 **Optimization**: Bayesian hyperparameter optimization via OCTIS framework across:
-- 6 embedding models (SentenceTransformers)
+- 3 Pareto-selected embedding models (SentenceTransformers):
+  - `all-MiniLM-L12-v2` (Wang et al., 2020)
+  - `paraphrase-mpnet-base-v2` (Yang et al., 2020)
+  - `paraphrase-MiniLM-L6-v2` (Wang et al., 2020)
 - UMAP, HDBSCAN, and vectorizer parameters
 - 300+ configurations evaluated
 
-**Model Selection**: Pareto efficiency analysis balancing coherence (topic interpretability) and diversity (topic variety). Final model: N topics.
+**Model Selection**: Pareto efficiency analysis balancing coherence (topic interpretability) and diversity (topic variety). Pretest evidence on a smaller corpus of 100 "billionaire" romance novels showed `all-MiniLM-L12-v2` as the strongest coherence-focused option and `paraphrase-mpnet-base-v2` / `paraphrase-MiniLM-L6-v2` as the best balance options; lower-coherence candidates were removed from active Stage03 tuning.
 
 **Character name exclusion**: [BookNLP](https://github.com/booknlp/booknlp) is run on reconstructed book text from `sentences_train.csv` (Stage 02: `extract_character_names_booknlp.py`). Person-like surface strings from the `.book` JSON and `PER` / `PROP` rows in `.entities` are merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
 

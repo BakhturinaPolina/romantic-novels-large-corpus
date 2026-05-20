@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 
 import numpy as np
@@ -32,13 +33,24 @@ def load_or_compute_embeddings(
     split: str,
     device: str = "auto",
     batch_size: int = 256,
+    logger: logging.Logger | None = None,
 ) -> np.ndarray:
     """Load embedding cache or compute and persist it."""
     cache_file = get_cache_file(cache_dir, split, model_name)
     if cache_file.exists():
+        if logger:
+            logger.info("Loading cached embeddings: %s", cache_file)
         return np.load(cache_file, mmap_mode=None)
 
     resolved_device = _resolve_device(device)
+    if logger:
+        logger.info(
+            "Computing embeddings model=%s split=%s device=%s batch_size=%d",
+            model_name,
+            split,
+            resolved_device,
+            batch_size,
+        )
     model = load_embedding_model(model_name, device=resolved_device)
     embeddings = model.encode(
         docs,
@@ -49,5 +61,7 @@ def load_or_compute_embeddings(
         device=resolved_device,
     )
     np.save(cache_file, embeddings)
+    if logger:
+        logger.info("Saved embeddings cache: %s", cache_file)
     return embeddings
 

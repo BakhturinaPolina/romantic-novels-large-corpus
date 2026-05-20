@@ -10,6 +10,13 @@ The idea is:
 
 We keep `sentences_val.csv` filename, but treat it as the **eval** split by role.
 
+Active embedding models in Stage03 are restricted to:
+- `sentence-transformers/all-MiniLM-L12-v2`
+- `sentence-transformers/paraphrase-mpnet-base-v2`
+- `sentence-transformers/paraphrase-MiniLM-L6-v2`
+
+This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" romance novels: `all-MiniLM-L12-v2` led coherence, while `paraphrase-mpnet-base-v2` and `paraphrase-MiniLM-L6-v2` provided the strongest coherence/diversity trade-off.
+
 ## Folder Structure
 
 - `src/stage03_train/` → build candidates on train, score candidates on eval.
@@ -120,6 +127,10 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 **Outputs**
 - `results/experiments/<run_id>/trials.csv`
 - optional per-trial artifacts in `results/experiments/<run_id>/artifacts/`
+- `results/experiments/<run_id>/run_state.json` (incremental checkpoint state)
+- `results/experiments/<run_id>/run_summary.json` (step/model timing summary)
+- `results/experiments/<run_id>/run_manifest.json` (artifact pointers for downstream stages)
+- `logs/stage03_<run_id>.log` (timestamped terminal + file logs)
 
 **Kept from legacy**
 - Existing OCTIS optimizer usage.
@@ -129,6 +140,10 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 - Stable machine-readable trial schema.
 - `outlier_rate` and `stability_score` columns.
 - Explicit run IDs.
+- Auto-resume behavior for repeated runs with the same `run_id`:
+  - skip OCTIS corpus rewrite if already present
+  - skip completed embedding-model trials already recorded in state + `trials.csv`
+  - continue remaining models without recomputing completed work
 
 ---
 
@@ -139,6 +154,8 @@ We keep `sentences_val.csv` filename, but treat it as the **eval** split by role
 
 **Command**
 - `python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <id>`
+- Quick single-model perf run:
+  - `python -m src.stage03_train.cli tune --config configs/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
 
 ---
 

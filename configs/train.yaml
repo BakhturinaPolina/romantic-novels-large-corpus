@@ -1,12 +1,9 @@
 # Stage03 train/eval BERTopic tuning configuration
 
 embedding_models:
-  - "paraphrase-MiniLM-L6-v2"
-  - "all-MiniLM-L12-v2"
-  - "paraphrase-mpnet-base-v2"
-  - "paraphrase-distilroberta-base-v1"
-  - "multi-qa-mpnet-base-cos-v1"
-  - "whaleloops/phrase-bert"
+  - "sentence-transformers/all-MiniLM-L12-v2"
+  - "sentence-transformers/paraphrase-mpnet-base-v2"
+  - "sentence-transformers/paraphrase-MiniLM-L6-v2"
 
 device: "auto"
 embedding_batch_size: 256

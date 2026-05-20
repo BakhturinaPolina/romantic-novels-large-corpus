@@ -410,6 +410,10 @@ with torch.no_grad():
 
 
         print("[STEP 21] Setting up embedding models...")
+        print(
+            "[STEP 21] DEPRECATED LEGACY PATH: active stage03_train pipeline supports only "
+            "all-MiniLM-L12-v2, paraphrase-mpnet-base-v2, paraphrase-MiniLM-L6-v2."
+        )
         # SANITY CHECK: Using smaller model for full dataset test
         # Changed from all-MiniLM-L12-v2 and multi-qa-mpnet-base-cos-v1 to smaller paraphrase-MiniLM-L6-v2
         embedding_model_names = [
