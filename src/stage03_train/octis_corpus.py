@@ -83,7 +83,7 @@ def write_octis_corpus_from_csvs(
                 logger.info("corpus.tsv val rows written: %d", n_eval)
 
     np.save(offsets_path, np.asarray(offsets, dtype=np.uint64))
-    write_corpus_metadata(output_dir, n_train=n_train, n_eval=n_eval)
+    write_corpus_metadata(output_dir, n_train=n_train, n_val=n_eval)
     if logger:
         logger.info(
             "Wrote corpus.tsv (%d train + %d val rows), offsets: %s",
