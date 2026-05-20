@@ -88,6 +88,34 @@ When the CSV is fully scanned, the script writes `names_per_book.csv` and merges
   --merge-stoplist-only
 ```
 
+**Val and test splits** (merge new tokens into the same `custom_stoplist.txt`):
+
+Train is already in `spacy_fast_full/`. Run val then test with separate run dirs (~18M sentences each, ~6–10 h per split at typical speed):
+
+```bash
+# Validation split
+PYTHONUNBUFFERED=1 .venv/bin/python -m src.stage02_preprocessing.extract_character_names_spacy_fast \
+  --config configs/paths.yaml \
+  --split val \
+  --run-id spacy_fast_val \
+  --n-process 4 \
+  --max-chunks-per-run 200 \
+  --heartbeat-every-docs 5000 \
+  --flush-every-chunks 1
+
+# Held-out test split (add --resume on later nights if batched)
+PYTHONUNBUFFERED=1 .venv/bin/python -m src.stage02_preprocessing.extract_character_names_spacy_fast \
+  --config configs/paths.yaml \
+  --split test \
+  --run-id spacy_fast_test \
+  --n-process 4 \
+  --max-chunks-per-run 200 \
+  --heartbeat-every-docs 5000 \
+  --flush-every-chunks 1
+```
+
+Artifacts: `data/interim/booknlp_character_runs/spacy_fast_val/` and `spacy_fast_test/`. Each completed run appends deduplicated tokens to `data/processed/custom_stoplist.txt`.
+
 Common options:
 
 - `--dry-run` — only writes `txt_input/` and `manifest.json` under the run folder (no PyTorch import).

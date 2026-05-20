@@ -80,6 +80,30 @@ def _book_id(work_id: int) -> str:
     return f"w{work_id}"
 
 
+SPLIT_CONFIG_KEYS = {
+    "train": "sentences_train_csv",
+    "val": "sentences_val_csv",
+    "test": "sentences_test_csv",
+}
+
+
+def resolve_sentences_path(
+    cfg: dict[str, Any],
+    project_root: Path,
+    split: str,
+    sentences_csv: Optional[Path],
+) -> Path:
+    if sentences_csv is not None:
+        return resolve_path(sentences_csv, project_root)
+    key = SPLIT_CONFIG_KEYS.get(split)
+    if key:
+        p = cfg.get("inputs", {}).get(key)
+        if p:
+            return resolve_path(Path(p), project_root)
+    base = get_path(cfg, "inputs", "romance_v2_sentences_dir")
+    return resolve_path(base, project_root) / f"sentences_{split}.csv"
+
+
 def parse_work_ids_csv(work_ids_csv: str) -> set[int]:
     return {int(x.strip()) for x in work_ids_csv.split(",") if x.strip()}
 
@@ -347,7 +371,13 @@ def _finalize_outputs(
 
 @click.command(context_settings={"show_default": True})
 @click.option("--config", type=click.Path(exists=True, path_type=Path), default="configs/paths.yaml")
-@click.option("--sentences-csv", type=click.Path(path_type=Path), default=None, help="Override sentences_train.csv path")
+@click.option(
+    "--split",
+    type=click.Choice(["train", "val", "test"]),
+    default="train",
+    help="Sentence split from configs/paths.yaml (ignored if --sentences-csv is set)",
+)
+@click.option("--sentences-csv", type=click.Path(path_type=Path), default=None, help="Override split CSV path")
 @click.option(
     "--run-id",
     type=str,
@@ -390,6 +420,7 @@ def _finalize_outputs(
 @click.option("--no-progress", is_flag=True, help="Disable tqdm progress output")
 def main(
     config: Path,
+    split: str,
     sentences_csv: Optional[Path],
     run_id: Optional[str],
     overwrite_run: bool,
@@ -416,21 +447,14 @@ def main(
     project_root = Path(__file__).resolve().parents[2]
     cfg = load_config(config)
 
-    sentences_path = sentences_csv
-    if sentences_path is None:
-        p = cfg.get("inputs", {}).get("sentences_train_csv")
-        if p:
-            sentences_path = resolve_path(Path(p), project_root)
-        else:
-            base = get_path(cfg, "inputs", "romance_v2_sentences_dir")
-            sentences_path = resolve_path(base, project_root) / "sentences_train.csv"
+    sentences_path = resolve_sentences_path(cfg, project_root, split, sentences_csv)
 
     runs_parent = resolve_path(get_path(cfg, "inputs", "booknlp_character_runs_parent"), project_root)
     stoplist_path = resolve_path(get_path(cfg, "inputs", "custom_stoplist"), project_root)
     logs_dir = resolve_path(Path(cfg.get("outputs", {}).get("logs", "logs")), project_root)
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S_%f")
-    run_name = run_id if run_id else f"spacy_fast_{stamp}"
+    run_name = run_id if run_id else f"spacy_fast_{split}"
     run_dir = runs_parent / run_name
     logfile_name = log_file if log_file else f"stage02_spacy_fast_{run_name}.log"
     log_path = configure_stage_logger(logs_dir=logs_dir, log_file=logfile_name)
@@ -495,6 +519,7 @@ def main(
 
     manifest: dict[str, Any] = {
         "created_utc": _ts(),
+        "split": split,
         "sentences_csv": str(sentences_path),
         "run_name": run_name,
         "chunk_size": chunk_size,
