@@ -213,9 +213,14 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
         self.embeddings = embeddings
         self.dataset_as_list_of_strings = dataset_as_list_of_strings
         
-        # Auto-generate tokenized list if not provided
+        # Auto-generate tokenized list if not provided (skip for disk-backed doc stores).
         if dataset_as_list_of_lists is None:
-            self.dataset_as_list_of_lists = [sentence.split() for sentence in dataset_as_list_of_strings]
+            if isinstance(dataset_as_list_of_strings, list):
+                self.dataset_as_list_of_lists = [
+                    sentence.split() for sentence in dataset_as_list_of_strings
+                ]
+            else:
+                self.dataset_as_list_of_lists = []
         else:
             self.dataset_as_list_of_lists = dataset_as_list_of_lists
         
@@ -466,14 +471,19 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             output_dict = {}
             output_dict['topics'] = []
             
-            # Create dictionary for topic words
-            dictionary = corpora.Dictionary(self.dataset_as_list_of_lists)
-            
+            # Create dictionary for topic words (skipped for large disk-backed corpora).
+            dictionary = (
+                corpora.Dictionary(self.dataset_as_list_of_lists)
+                if self.dataset_as_list_of_lists
+                else None
+            )
+
             # Extract topic words
             num_topics = len(set(topics)) - (1 if -1 in topics else 0)
             for topic in range(num_topics):
                 words = list(zip(*topic_model.get_topic(topic)))[0]
-                words = [word for word in words if word in dictionary.token2id]
+                if dictionary is not None:
+                    words = [word for word in words if word in dictionary.token2id]
                 words = [word for word in words if word.lower() != "mr"]
                 words = [word for word in words if word.lower() != "ms"]
                 output_dict['topics'].append(words)

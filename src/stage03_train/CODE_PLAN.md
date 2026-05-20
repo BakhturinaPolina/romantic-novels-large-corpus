@@ -76,6 +76,7 @@ def load_train_eval(
 - Uses Stage 01 schema (`sentence` lowercase column).
 - Never assumes 4-column legacy shape.
 - Returns labels as `work_id` strings.
+- Full-corpus tuning uses chunked CSV iteration (`csv_chunk_size` in `configs/train.yaml`), not in-memory `read_csv` of entire splits.
 
 ---
 

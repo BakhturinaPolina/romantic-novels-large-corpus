@@ -13,7 +13,6 @@ import numpy as np
 import pandas as pd
 from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
-from octis.dataset.dataset import Dataset
 from octis.evaluation_metrics.coherence_metrics import Coherence
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
 from octis.optimization.optimizer import Optimizer
@@ -25,9 +24,15 @@ from src.stage03_train.bertopic_octis_model import (
     BERTopicOctisModelWithEmbeddings,
     load_embedding_model,
 )
+from src.stage03_train.corpus_store import (
+    CorpusDocStore,
+    corpus_offsets_path,
+    load_octis_dataset_metadata_only,
+)
 from src.stage03_train.data_io import load_train_eval
-from src.stage03_train.embeddings import get_cache_file, load_or_compute_embeddings
-from src.stage03_train.octis_corpus import write_octis_corpus
+from src.stage03_train.embeddings import compute_embeddings_from_csvs, get_cache_file
+from src.stage03_train.embeddings_hub import load_project_dotenv
+from src.stage03_train.octis_corpus import write_octis_corpus_from_csvs
 
 
 @dataclass
@@ -210,8 +215,10 @@ def run_tuning(
     paths_cfg = load_config(Path("configs/paths.yaml"))
     paths = _build_paths(paths_cfg, run_id)
     logs_dir = resolve_path(Path(paths_cfg.get("outputs", {}).get("logs", "logs")))
+    load_project_dotenv()
     logger = setup_logging(logs_dir=logs_dir, log_file=f"stage03_{run_id}.log")
     logger.info("Stage03 run start: run_id=%s config=%s", run_id, config_path)
+    hub_cfg = cfg.get("embeddings_hub")
 
     paths.octis_dir.mkdir(parents=True, exist_ok=True)
     paths.experiments_dir.mkdir(parents=True, exist_ok=True)
@@ -224,17 +231,37 @@ def run_tuning(
     state = _load_state(run_state_json, run_id)
     _save_state(run_state_json, state)
 
+    text_cfg = cfg.get("text", {})
+    sentence_column = text_cfg.get("sentence_column", "sentence")
+    chunk_size = int(text_cfg.get("csv_chunk_size", 50_000))
+    coherence_eval_max_docs = text_cfg.get("coherence_eval_max_docs")
+    if coherence_eval_max_docs is not None:
+        coherence_eval_max_docs = int(coherence_eval_max_docs)
+
     step_start = time.perf_counter()
     _mark_step(state, "data_load", status="running")
     _save_state(run_state_json, state)
-    logger.info("Loading train/eval splits from %s and %s", paths.train_csv, paths.eval_csv)
-    payload = load_train_eval(
-        paths.train_csv, paths.eval_csv, sentence_column=cfg["text"]["sentence_column"]
+    logger.info(
+        "Scanning train/eval splits (chunk_size=%d) from %s and %s",
+        chunk_size,
+        paths.train_csv,
+        paths.eval_csv,
     )
-    docs_train = payload["docs_train"]
-    docs_eval = payload["docs_eval"]
-    labels_train = payload["labels_train"]
-    labels_eval = payload["labels_eval"]
+    try:
+        payload = load_train_eval(
+            paths.train_csv,
+            paths.eval_csv,
+            sentence_column=sentence_column,
+            chunk_size=chunk_size,
+            coherence_eval_max_docs=coherence_eval_max_docs,
+            logger=logger,
+        )
+    except Exception as ex:
+        _mark_step(state, "data_load", status="failed", details={"error": str(ex)})
+        _save_state(run_state_json, state)
+        raise
+    n_train_docs = int(payload["n_train_docs"])
+    n_eval_docs = int(payload["n_eval_docs"])
     tokens_eval = payload["tokens_eval"]
     data_duration = time.perf_counter() - step_start
     _mark_step(
@@ -242,53 +269,84 @@ def run_tuning(
         "data_load",
         status="completed",
         duration_s=data_duration,
-        details={"n_train_docs": len(docs_train), "n_eval_docs": len(docs_eval)},
+        details={
+            "n_train_docs": n_train_docs,
+            "n_eval_docs": n_eval_docs,
+            "coherence_eval_docs": len(tokens_eval),
+            "csv_chunk_size": chunk_size,
+        },
     )
     _save_state(run_state_json, state)
     logger.info(
-        "Data loaded in %.2fs (train=%d, eval=%d)",
+        "Data scan completed in %.2fs (train=%d, eval=%d, coherence_tokens=%d)",
         data_duration,
-        len(docs_train),
-        len(docs_eval),
+        n_train_docs,
+        n_eval_docs,
+        len(tokens_eval),
     )
 
     corpus_tsv = paths.octis_dir / "corpus.tsv"
-    if _step_completed(state, "octis_corpus_written") and corpus_tsv.exists():
+    offsets_file = corpus_offsets_path(paths.octis_dir)
+    if _step_completed(state, "octis_corpus_written") and corpus_tsv.exists() and offsets_file.exists():
         logger.info("Skipping OCTIS corpus write (already completed): %s", corpus_tsv)
+        n_train_docs = int(
+            state.get("steps", {})
+            .get("octis_corpus_written", {})
+            .get("details", {})
+            .get("n_train_docs", n_train_docs)
+        )
+        n_eval_docs = int(
+            state.get("steps", {})
+            .get("octis_corpus_written", {})
+            .get("details", {})
+            .get("n_eval_docs", n_eval_docs)
+        )
     else:
         step_start = time.perf_counter()
         _mark_step(state, "octis_corpus_written", status="running")
         _save_state(run_state_json, state)
-        write_octis_corpus(docs_train, labels_train, docs_eval, labels_eval, paths.octis_dir)
+        _corpus_path, _offsets, n_train_docs, n_eval_docs = write_octis_corpus_from_csvs(
+            paths.train_csv,
+            paths.eval_csv,
+            paths.octis_dir,
+            sentence_column=sentence_column,
+            chunk_size=chunk_size,
+            logger=logger,
+        )
         corpus_duration = time.perf_counter() - step_start
         _mark_step(
             state,
             "octis_corpus_written",
             status="completed",
             duration_s=corpus_duration,
-            details={"corpus_tsv": str(corpus_tsv)},
+            details={
+                "corpus_tsv": str(corpus_tsv),
+                "corpus_offsets": str(offsets_file),
+                "n_train_docs": n_train_docs,
+                "n_eval_docs": n_eval_docs,
+            },
         )
         _save_state(run_state_json, state)
         logger.info("OCTIS corpus ready in %.2fs: %s", corpus_duration, corpus_tsv)
 
+    doc_store = CorpusDocStore(corpus_tsv, offsets_file)
+    n_docs_total = len(doc_store)
+    logger.info("Disk-backed document store: %d documents", n_docs_total)
+
     step_start = time.perf_counter()
     _mark_step(state, "octis_dataset_load", status="running")
     _save_state(run_state_json, state)
-    octis_dataset = Dataset()
-    octis_dataset.load_custom_dataset_from_folder(str(paths.octis_dir))
+    octis_dataset = load_octis_dataset_metadata_only(paths.octis_dir)
     dataset_duration = time.perf_counter() - step_start
     _mark_step(
         state,
         "octis_dataset_load",
         status="completed",
         duration_s=dataset_duration,
-        details={"octis_dir": str(paths.octis_dir)},
+        details={"octis_dir": str(paths.octis_dir), "metadata_only": True},
     )
     _save_state(run_state_json, state)
-    logger.info("OCTIS dataset loaded in %.2fs", dataset_duration)
-
-    docs_all = docs_train + docs_eval
-    tokens_all = [d.split() for d in docs_all]
+    logger.info("OCTIS metadata loaded in %.2fs (corpus not loaded into RAM)", dataset_duration)
     existing_rows: list[dict[str, Any]] = []
     if trials_csv.exists():
         try:
@@ -331,14 +389,18 @@ def run_tuning(
         cache_file = get_cache_file(cache_dir, "train_eval", model_name)
         cache_hit = cache_file.exists()
         logger.info("Embedding cache %s for %s", "hit" if cache_hit else "miss", model_name)
-        emb = load_or_compute_embeddings(
-            docs_all,
+        emb = compute_embeddings_from_csvs(
+            paths.train_csv,
+            paths.eval_csv,
             model_name=model_name,
-            cache_dir=cache_dir,
-            split="train_eval",
+            cache_file=cache_file,
+            sentence_column=sentence_column,
+            chunk_size=chunk_size,
             device=cfg.get("device", "auto"),
             batch_size=int(cfg.get("embedding_batch_size", 256)),
             logger=logger,
+            hub_cfg=hub_cfg,
+            run_id=run_id,
         )
         _mark_model(
             state,
@@ -351,8 +413,8 @@ def run_tuning(
             embedding_model=load_embedding_model(model_name),
             embedding_model_name=model_name,
             embeddings=emb,
-            dataset_as_list_of_strings=docs_all,
-            dataset_as_list_of_lists=tokens_all,
+            dataset_as_list_of_strings=doc_store,
+            dataset_as_list_of_lists=[],
             optimization_results_dir=str(paths.experiments_dir / "optimization"),
             verbose=True,
         )

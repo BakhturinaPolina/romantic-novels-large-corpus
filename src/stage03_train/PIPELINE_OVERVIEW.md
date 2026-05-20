@@ -52,6 +52,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 **Added**
 - Correct handling of 5-column Stage 01 schema.
 - Explicit split-aware loading (train and val separately).
+- Chunked CSV streaming (`csv_chunk_size` in `configs/train.yaml`) for row counts, OCTIS corpus writes, and embedding caches without loading full splits into RAM.
 
 ---
 
@@ -88,7 +89,8 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - embedding model name
 
 **Outputs**
-- `data/interim/octis/<run_id>/embeddings_cache/{split}_{embedding}.npy`
+- `data/interim/octis/<run_id>/embeddings_cache/train_eval_{embedding}.npy` (memory-mapped; built in CSV chunks)
+- `data/interim/octis/<run_id>/corpus.offsets.npy` (byte offsets for disk-backed document access)
 
 **Kept from legacy**
 - Embedding model caching strategy from Stage 03/05.
@@ -131,6 +133,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - `results/experiments/<run_id>/run_summary.json` (step/model timing summary)
 - `results/experiments/<run_id>/run_manifest.json` (artifact pointers for downstream stages)
 - `logs/stage03_<run_id>.log` (timestamped terminal + file logs)
+- Optional Hub mirror: `RuthonField/romance-v2-train-eval-embeddings` (set `HF_TOKEN` in `.env`, `embeddings_hub` in `configs/train.yaml`)
 
 **Kept from legacy**
 - Existing OCTIS optimizer usage.

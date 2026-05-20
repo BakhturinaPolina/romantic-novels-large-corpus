@@ -8,8 +8,22 @@ embedding_models:
 device: "auto"
 embedding_batch_size: 256
 
+# Optional Hub cache for large embedding .npy files (private dataset).
+# Authenticate with: export HF_TOKEN="hf_..."  (never commit tokens to git)
+embeddings_hub:
+  enabled: true
+  repo_id: "RuthonField/romance-v2-train-eval-embeddings"
+  # Upload local .npy + manifest after encoding completes.
+  upload_after_compute: true
+  # Download from Hub when local .npy is missing (skips re-encoding).
+  download_if_missing: true
+
 text:
   sentence_column: "sentence"
+  # Stream CSV rows in batches (avoids loading full train/val into RAM).
+  csv_chunk_size: 50000
+  # Cap eval sentences used for OCTIS coherence during tuning (None = all eval rows).
+  coherence_eval_max_docs: 100000
 
 optimization:
   number_of_calls: 120
