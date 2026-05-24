@@ -295,6 +295,7 @@ def run_holdout_score(...) -> Path: ...
 - `trials.csv` is written incrementally after each model and includes required columns.
 - `run_manifest.json` and `run_summary.json` are updated with artifact paths and per-step/model durations.
 - Re-run with same `run_id` auto-skips already completed corpus/model work and resumes remaining steps.
+- `tests/test_stage03_embeddings_resume.py` passes (guards mmap row alignment on embedding resume).
 - Stage04 emits winner config.
 - Stage05 emits both artifact trees.
 - Stage05b writes test metrics once; second run fails without `--allow-rerun`.

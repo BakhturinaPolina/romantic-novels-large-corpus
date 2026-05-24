@@ -11,6 +11,10 @@ import torch
 
 from src.stage03_train.bertopic_octis_model import load_embedding_model
 from src.stage03_train.data_io import iter_split_csv_chunks
+from src.stage03_train.embeddings_resume import (
+    assert_resume_stream_aligned,
+    should_skip_embedding_chunk,
+)
 
 
 def safe_embedding_name(model_name: str) -> str:
@@ -159,19 +163,32 @@ def compute_embeddings_from_csvs(
         mmap = np.lib.format.open_memmap(
             cache_file, mode="w+", dtype=np.float32, shape=(n_total, dim)
         )
-    write_idx = rows_done
+    # Linear index in train+eval CSV order; must start at 0 so resume can fast-forward
+    # already-written rows via rows_done without re-encoding or misaligned mmap writes.
+    write_idx = 0
+    chunks_skipped = 0
+    resume_guard_checked = rows_done == 0
 
     def _encode_split(csv_path: Path) -> None:
-        nonlocal write_idx
+        nonlocal write_idx, chunks_skipped, resume_guard_checked
         for docs, _labels in iter_split_csv_chunks(
             csv_path, sentence_column=sentence_column, chunk_size=chunk_size
         ):
             chunk_len = len(docs)
-            if write_idx + chunk_len <= rows_done:
+            if should_skip_embedding_chunk(write_idx, chunk_len, rows_done):
                 write_idx += chunk_len
+                chunks_skipped += 1
                 continue
             if write_idx >= n_total:
                 break
+
+            if not resume_guard_checked:
+                assert_resume_stream_aligned(
+                    rows_done=rows_done,
+                    write_idx=write_idx,
+                    chunks_skipped=chunks_skipped,
+                )
+                resume_guard_checked = True
 
             emb = model.encode(
                 docs,
