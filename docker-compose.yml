@@ -1,0 +1,40 @@
+services:
+  stage03:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: romance-stage03:latest
+    container_name: romance-stage03
+    env_file:
+      - .env
+    environment:
+      RUN_ID: mpnet_first
+      EMBEDDING_MODEL: sentence-transformers/paraphrase-mpnet-base-v2
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+    gpus: all
+    working_dir: /app
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+      - ./models:/app/models
+    command:
+      - python3
+      - -m
+      - src.stage03_train.cli
+      - tune
+      - --config
+      - configs/train.yaml
+      - --run-id
+      - ${RUN_ID}
+      - --embedding-model
+      - ${EMBEDDING_MODEL}
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
