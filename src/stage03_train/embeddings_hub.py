@@ -88,14 +88,31 @@ def try_download_from_hub(
     if logger:
         logger.info("Downloading Hub artifact %s:%s -> %s", repo_id, hub_path, local_file)
 
-    cached = Path(
-        hf_hub_download(
-            repo_id=repo_id,
-            filename=hub_path,
-            repo_type="dataset",
-            token=token,
+    try:
+        cached = Path(
+            hf_hub_download(
+                repo_id=repo_id,
+                filename=hub_path,
+                repo_type="dataset",
+                token=token,
+            )
         )
-    )
+    except Exception as ex:
+        # Brand-new run_ids may not have an artifact yet. Treat missing files as cache miss
+        # and allow the pipeline to continue with local embedding computation.
+        ex_name = ex.__class__.__name__
+        ex_text = str(ex)
+        if ex_name in {"EntryNotFoundError", "LocalEntryNotFoundError", "RemoteEntryNotFoundError"} or (
+            ex_name == "HfHubHTTPError" and "Entry Not Found" in ex_text
+        ):
+            if logger:
+                logger.warning(
+                    "Hub artifact not found (%s:%s). Proceeding with local compute.",
+                    repo_id,
+                    hub_path,
+                )
+            return False
+        raise
     if cached.resolve() != local_file.resolve():
         shutil.copy2(cached, local_file)
 
@@ -191,4 +208,11 @@ def sync_embeddings_with_hub(
             n_docs=n_docs,
             dim=dim,
         )
-        upload_to_hub(repo_id, cache_file, hub_path, manifest, logger=logger)
+        try:
+            upload_to_hub(repo_id, cache_file, hub_path, manifest, logger=logger)
+        except Exception as ex:
+            if logger:
+                logger.warning(
+                    "Hub upload failed (%s). Local embeddings are saved; continuing pipeline.",
+                    ex,
+                )

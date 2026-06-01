@@ -491,33 +491,8 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             # Filter empty topic lists
             output_dict['topics'] = [words for words in output_dict['topics'] if len(words) > 0]
             
-            if not output_dict['topics']:
+            if len(output_dict['topics']) == 0:
                 output_dict['topics'] = None
-            else:
-                # Fix for OCTIS save_model_output: pad all topic word lists to same length
-                # This prevents "inhomogeneous shape" error when saving with np.savez_compressed
-                # OCTIS expects topics to be numpy-compatible (same shape for all arrays)
-                max_topic_length = max(len(words) for words in output_dict['topics'])
-                if self.verbose:
-                    print(f"[TRAIN] Padding topic word lists to length {max_topic_length} for numpy compatibility")
-                
-                # Pad each topic's word list to max_topic_length with empty strings
-                padded_topics = []
-                for words in output_dict['topics']:
-                    padded_words = words + [''] * (max_topic_length - len(words))
-                    padded_topics.append(padded_words)
-                
-                # Convert to numpy array (numpy will infer string dtype automatically)
-                # All lists are now the same length, so numpy can create a homogeneous 2D array
-                try:
-                    output_dict['topics'] = np.array(padded_topics)
-                    if self.verbose:
-                        print(f"[TRAIN] ✓ Topics converted to numpy array (shape: {output_dict['topics'].shape}, dtype: {output_dict['topics'].dtype})")
-                except Exception as e:
-                    if self.verbose:
-                        print(f"[TRAIN] ⚠️ Warning: Could not convert topics to numpy array: {e}")
-                        print(f"[TRAIN] Keeping topics as list (may cause save issues)")
-                    # Keep as list if conversion fails (fallback)
             
             # Add matrices
             # Extract topic-word matrix (c-TF-IDF matrix)
@@ -585,7 +560,9 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             
             if self.verbose:
                 print(f"[TRAIN] ✓ Output created:")
-                print(f"   Topics: {len(output_dict['topics']) if output_dict['topics'] else 0}")
+                topics_out = output_dict["topics"]
+                n_topics_out = len(topics_out) if topics_out is not None else 0
+                print(f"   Topics: {n_topics_out}")
                 print(f"   Topic-word matrix shape: {output_dict['topic-word-matrix'].shape}")
                 print(f"   Topic-document matrix shape: {output_dict['topic-document-matrix'].shape}")
             

@@ -81,6 +81,8 @@ docker run -d --name romance-stage03-mpnet --gpus all --env-file .env \
     --embedding-model sentence-transformers/paraphrase-mpnet-base-v2
 ```
 
+On a brand-new `run-id`, the Hub cache path may not exist yet. That is expected: Stage03 will fall back to local embedding compute, then upload the generated `.npy` when finished.
+
 Logs:
 
 ```bash

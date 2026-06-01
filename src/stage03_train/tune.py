@@ -157,6 +157,38 @@ def _safe_outlier_rate(topic_document_matrix: Any) -> float:
     return float(np.mean(np.max(matrix, axis=1) == 0))
 
 
+def _prepare_bertopic_fit_data(
+    doc_store: CorpusDocStore,
+    embeddings: np.ndarray,
+    *,
+    fit_max_docs: int | None,
+    seed: int,
+    logger: Any,
+) -> tuple[Any, np.ndarray, int]:
+    """Subsample docs/embeddings when the full corpus exceeds GPU UMAP capacity."""
+    n_total = len(doc_store)
+    if fit_max_docs is None or n_total <= fit_max_docs:
+        return doc_store, embeddings, n_total
+
+    rng = np.random.default_rng(seed)
+    fit_indices = np.sort(rng.choice(n_total, size=fit_max_docs, replace=False))
+    logger.info(
+        "BERTopic fit subsample: %d / %d docs (bertopic_fit_max_docs=%d)",
+        fit_max_docs,
+        n_total,
+        fit_max_docs,
+    )
+    step_start = time.perf_counter()
+    fit_docs = doc_store.fetch_documents(fit_indices)
+    fit_embeddings = np.asarray(embeddings[fit_indices], dtype=np.float32)
+    logger.info(
+        "BERTopic fit subsample materialized in %.2fs (embeddings shape=%s)",
+        time.perf_counter() - step_start,
+        fit_embeddings.shape,
+    )
+    return fit_docs, fit_embeddings, n_total
+
+
 def build_search_space(cfg: dict[str, Any]) -> dict[str, Any]:
     """Build skopt search space from config."""
     s = cfg["search_space"]
@@ -237,6 +269,9 @@ def run_tuning(
     coherence_eval_max_docs = text_cfg.get("coherence_eval_max_docs")
     if coherence_eval_max_docs is not None:
         coherence_eval_max_docs = int(coherence_eval_max_docs)
+    bertopic_fit_max_docs = text_cfg.get("bertopic_fit_max_docs")
+    if bertopic_fit_max_docs is not None:
+        bertopic_fit_max_docs = int(bertopic_fit_max_docs)
 
     step_start = time.perf_counter()
     _mark_step(state, "data_load", status="running")
@@ -409,11 +444,18 @@ def run_tuning(
             details={"embedding_cache_file": str(cache_file), "embedding_cache_hit": cache_hit},
         )
         _save_state(run_state_json, state)
+        fit_docs, fit_embeddings, n_docs_total = _prepare_bertopic_fit_data(
+            doc_store,
+            emb,
+            fit_max_docs=bertopic_fit_max_docs,
+            seed=int(cfg["optimization"].get("seed", 42)),
+            logger=logger,
+        )
         model = BERTopicOctisModelWithEmbeddings(
             embedding_model=load_embedding_model(model_name),
             embedding_model_name=model_name,
-            embeddings=emb,
-            dataset_as_list_of_strings=doc_store,
+            embeddings=fit_embeddings,
+            dataset_as_list_of_strings=fit_docs,
             dataset_as_list_of_lists=[],
             optimization_results_dir=str(paths.experiments_dir / "optimization"),
             verbose=True,
@@ -431,7 +473,7 @@ def run_tuning(
             search_space,
             number_of_call=int(cfg["optimization"]["number_of_calls"]),
             model_runs=int(cfg["optimization"].get("model_runs", 1)),
-            save_models=True,
+            save_models=bool(cfg["optimization"].get("save_models", False)),
             extra_metrics=[diversity_metric],
             save_path=str(optimization_dir),
         )

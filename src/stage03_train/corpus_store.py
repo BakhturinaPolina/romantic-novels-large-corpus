@@ -45,6 +45,18 @@ class CorpusDocStore:
                 line = f.read(end - start)
                 yield line.decode("utf-8").split("\t", 1)[0]
 
+    def fetch_documents(self, indices: np.ndarray) -> list[str]:
+        """Load document texts for the given row indices (single file handle)."""
+        docs: list[str] = []
+        with open(self.corpus_path, "rb") as f:
+            for index in indices:
+                start = int(self._offsets[int(index)])
+                end = int(self._offsets[int(index) + 1])
+                f.seek(start)
+                line = f.read(end - start)
+                docs.append(line.decode("utf-8").split("\t", 1)[0])
+        return docs
+
 
 def corpus_offsets_path(octis_dir: Path) -> Path:
     return Path(octis_dir) / "corpus.offsets.npy"

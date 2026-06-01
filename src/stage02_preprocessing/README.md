@@ -116,6 +116,27 @@ PYTHONUNBUFFERED=1 .venv/bin/python -m src.stage02_preprocessing.extract_charact
 
 Artifacts: `data/interim/booknlp_character_runs/spacy_fast_val/` and `spacy_fast_test/`. Each completed run appends deduplicated tokens to `data/processed/custom_stoplist.txt`.
 
+### Audit likely non-name stoplist entries
+
+Use this helper after a merge to review likely lexical words (non-names) that slipped into the stoplist.
+By default it audits only the newest additions: `custom_stoplist.txt - custom_stoplist.txt.bak_20260520_080905`.
+
+```bash
+.venv/bin/python src/stage02_preprocessing/scripts/audit_stoplist_non_names.py \
+  --target-delta new \
+  --zipf-threshold 4.0 \
+  --top-n 100
+```
+
+Output:
+- Writes CSV to `data/processed/stoplist_non_name_audit_<timestamp>.csv`.
+- Prints top `likely_non_name` suspects to stdout.
+
+Interpretation:
+- `looks_like_common_word=true` means high common-word frequency (`wordfreq` Zipf >= threshold).
+- `spacy_person_in_context=false` (when `--enable-spacy-probe`) means spaCy does not recognize the token as a person in a simple context.
+- Start manual review with rows where `likely_non_name=true`.
+
 Common options:
 
 - `--dry-run` — only writes `txt_input/` and `manifest.json` under the run folder (no PyTorch import).

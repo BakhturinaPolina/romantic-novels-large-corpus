@@ -14,7 +14,7 @@ embeddings_hub:
   enabled: true
   repo_id: "RuthonField/romance-v2-train-eval-embeddings"
   # Upload local .npy + manifest after encoding completes.
-  upload_after_compute: true
+  upload_after_compute: false
   # Download from Hub when local .npy is missing (skips re-encoding).
   download_if_missing: true
 
@@ -24,10 +24,13 @@ text:
   csv_chunk_size: 50000
   # Cap eval sentences used for OCTIS coherence during tuning (None = all eval rows).
   coherence_eval_max_docs: 100000
+  # Cap documents passed to GPU UMAP/HDBSCAN during BERTopic fit (full corpus ~100M rows).
+  bertopic_fit_max_docs: 500000
 
 optimization:
   number_of_calls: 120
   model_runs: 1
+  save_models: false
   seed: 42
   default_stability_score: 0.0
 
