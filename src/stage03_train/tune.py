@@ -29,7 +29,15 @@ from src.stage03_train.corpus_store import (
     corpus_offsets_path,
     load_octis_dataset_metadata_only,
 )
-from src.stage03_train.data_io import load_train_eval
+from src.stage03_train.bo_resume import (
+    best_params_from_bo,
+    bo_calls_done,
+    is_bo_complete,
+    load_bo_checkpoint,
+    restore_optimizer_skopt_state,
+    sync_trials_partial_from_checkpoint,
+)
+from src.stage03_train.data_io import load_eval_tokens_chunked, load_train_eval
 from src.stage03_train.embeddings import compute_embeddings_from_csvs, get_cache_file
 from src.stage03_train.embeddings_hub import load_project_dotenv
 from src.stage03_train.octis_corpus import write_octis_corpus_from_csvs
@@ -221,6 +229,125 @@ def _topics_from_output(output_topics: Any) -> list[list[str]]:
     return [list(t) for t in output_topics if t]
 
 
+def _data_load_cache_valid(
+    state: dict[str, Any],
+    *,
+    train_csv: Path,
+    eval_csv: Path,
+    chunk_size: int,
+) -> bool:
+    """True when prior data_load counts can be reused for the same CSV inputs."""
+    if not _step_completed(state, "data_load"):
+        return False
+    details = state.get("steps", {}).get("data_load", {}).get("details", {})
+    return (
+        str(details.get("train_csv", "")) == str(train_csv)
+        and str(details.get("eval_csv", "")) == str(eval_csv)
+        and int(details.get("csv_chunk_size", -1)) == chunk_size
+        and "n_train_docs" in details
+        and "n_eval_docs" in details
+    )
+
+
+def _optimize_with_resume(
+    optimizer: Optimizer,
+    *,
+    model: Any,
+    octis_dataset: Any,
+    npmi_metric: Coherence,
+    search_space: dict[str, Any],
+    optimization_dir: Path,
+    number_of_calls: int,
+    model_runs: int,
+    save_models: bool,
+    diversity_metric: TopicDiversity,
+    random_state: int | bool,
+    logger: Any,
+) -> Any:
+    """
+    Run OCTIS BO, resuming from ``optimization_dir/result.json`` when present.
+
+    Uses ``_restore_parameters`` + in-memory model injection so embeddings are
+    preserved. ``optimize(x0=, y0=)`` is avoided because OCTIS rejects it when
+    ``number_of_calls <= len(search_space)`` (smoke configs hit this).
+    """
+    optimization_dir.mkdir(parents=True, exist_ok=True)
+    result_json = optimization_dir / "result.json"
+    checkpoint = load_bo_checkpoint(result_json)
+    stability_seed = random_state if isinstance(random_state, int) else False
+
+    optimize_kwargs: dict[str, Any] = {
+        "number_of_call": number_of_calls,
+        "model_runs": model_runs,
+        "save_models": save_models,
+        "extra_metrics": [diversity_metric],
+        "save_path": str(optimization_dir),
+        "save_step": 1,
+        "random_state": stability_seed,
+    }
+
+    if checkpoint is None:
+        logger.info("Starting BO optimization (%d calls): %s", number_of_calls, optimization_dir)
+        return optimizer.optimize(
+            model,
+            octis_dataset,
+            npmi_metric,
+            search_space,
+            **optimize_kwargs,
+        )
+
+    done = bo_calls_done(checkpoint)
+    if is_bo_complete(checkpoint, number_of_calls=number_of_calls):
+        logger.info(
+            "BO checkpoint complete (%d/%d calls); skipping optimize: %s",
+            done,
+            number_of_calls,
+            result_json,
+        )
+        return checkpoint
+
+    logger.info(
+        "Resuming BO from checkpoint (%d/%d calls done): %s",
+        done,
+        number_of_calls,
+        result_json,
+    )
+    res, opt = restore_optimizer_skopt_state(optimizer, checkpoint)
+    optimizer.model = model
+    optimizer.dataset = octis_dataset
+    optimizer.metric = npmi_metric
+    optimizer.extra_metrics = [diversity_metric]
+    optimizer.number_of_call = number_of_calls
+
+    if optimizer.number_of_previous_calls >= optimizer.number_of_call:
+        from octis.optimization.optimizer_evaluation import OptimizerEvaluation
+
+        return OptimizerEvaluation(optimizer, BO_results=res)
+
+    return optimizer._optimization_loop(opt)
+
+
+def _best_params_from_optimize_result(result: Any, optimization_dir: Path) -> dict[str, Any]:
+    """Extract best hyperparameters from OptimizerEvaluation or checkpoint JSON."""
+    if isinstance(result, dict):
+        params = best_params_from_bo(result)
+        if params:
+            return params
+        return result.get("best_params", {}) or result.get("x", {}) or {}
+
+    if hasattr(result, "func_vals") and hasattr(result, "x_iters"):
+        f_vals = list(result.func_vals)
+        if not f_vals:
+            return {}
+        best_idx = int(np.argmax(f_vals))
+        return {name: result.x_iters[name][best_idx] for name in sorted(result.x_iters.keys())}
+
+    checkpoint = load_bo_checkpoint(optimization_dir / "result.json")
+    if checkpoint:
+        return best_params_from_bo(checkpoint)
+    return {}
+
+
 def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> tuple[float, float]:
     if not topics:
         return 0.0, 0.0
@@ -234,17 +361,26 @@ def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> t
             topics=topics_in_vocab, texts=eval_tokens, dictionary=dictionary, coherence="c_v"
         )
         coherence = float(cm.get_coherence())
-    diversity = float(TopicDiversity(topk=10).score({"topics": topics}))
+    min_topic_len = min((len(t) for t in topics if t), default=0)
+    if min_topic_len == 0:
+        diversity = 0.0
+    else:
+        diversity_topk = max(1, min(10, min_topic_len))
+        diversity = float(TopicDiversity(topk=diversity_topk).score({"topics": topics}))
     return coherence, diversity
 
 
 def run_tuning(
-    config_path: Path, run_id: str, embedding_models_override: list[str] | None = None
+    config_path: Path,
+    run_id: str,
+    embedding_models_override: list[str] | None = None,
+    paths_config: Path | None = None,
 ) -> Path:
     """Execute tuning and return trials.csv path."""
     started_at = time.perf_counter()
     cfg = load_config(config_path)
-    paths_cfg = load_config(Path("configs/paths.yaml"))
+    paths_cfg_path = paths_config or Path(cfg.get("paths_config", "configs/paths.yaml"))
+    paths_cfg = load_config(paths_cfg_path)
     paths = _build_paths(paths_cfg, run_id)
     logs_dir = resolve_path(Path(paths_cfg.get("outputs", {}).get("logs", "logs")))
     load_project_dotenv()
@@ -274,51 +410,99 @@ def run_tuning(
         bertopic_fit_max_docs = int(bertopic_fit_max_docs)
 
     step_start = time.perf_counter()
-    _mark_step(state, "data_load", status="running")
-    _save_state(run_state_json, state)
-    logger.info(
-        "Scanning train/eval splits (chunk_size=%d) from %s and %s",
-        chunk_size,
-        paths.train_csv,
-        paths.eval_csv,
-    )
-    try:
-        payload = load_train_eval(
-            paths.train_csv,
+    if _data_load_cache_valid(
+        state,
+        train_csv=paths.train_csv,
+        eval_csv=paths.eval_csv,
+        chunk_size=chunk_size,
+    ):
+        details = state["steps"]["data_load"]["details"]
+        n_train_docs = int(details["n_train_docs"])
+        n_eval_docs = int(details["n_eval_docs"])
+        logger.info(
+            "Reusing cached data_load counts (train=%d, eval=%d); loading eval tokens only",
+            n_train_docs,
+            n_eval_docs,
+        )
+        tokens_eval = load_eval_tokens_chunked(
             paths.eval_csv,
             sentence_column=sentence_column,
             chunk_size=chunk_size,
-            coherence_eval_max_docs=coherence_eval_max_docs,
+            max_docs=coherence_eval_max_docs,
             logger=logger,
         )
-    except Exception as ex:
-        _mark_step(state, "data_load", status="failed", details={"error": str(ex)})
+        data_duration = time.perf_counter() - step_start
+        _mark_step(
+            state,
+            "data_load",
+            status="completed",
+            duration_s=data_duration,
+            details={
+                "n_train_docs": n_train_docs,
+                "n_eval_docs": n_eval_docs,
+                "coherence_eval_docs": len(tokens_eval),
+                "csv_chunk_size": chunk_size,
+                "train_csv": str(paths.train_csv),
+                "eval_csv": str(paths.eval_csv),
+                "reused_counts": True,
+            },
+        )
         _save_state(run_state_json, state)
-        raise
-    n_train_docs = int(payload["n_train_docs"])
-    n_eval_docs = int(payload["n_eval_docs"])
-    tokens_eval = payload["tokens_eval"]
-    data_duration = time.perf_counter() - step_start
-    _mark_step(
-        state,
-        "data_load",
-        status="completed",
-        duration_s=data_duration,
-        details={
-            "n_train_docs": n_train_docs,
-            "n_eval_docs": n_eval_docs,
-            "coherence_eval_docs": len(tokens_eval),
-            "csv_chunk_size": chunk_size,
-        },
-    )
-    _save_state(run_state_json, state)
-    logger.info(
-        "Data scan completed in %.2fs (train=%d, eval=%d, coherence_tokens=%d)",
-        data_duration,
-        n_train_docs,
-        n_eval_docs,
-        len(tokens_eval),
-    )
+        logger.info(
+            "Data scan completed in %.2fs (train=%d, eval=%d, coherence_tokens=%d, reused counts)",
+            data_duration,
+            n_train_docs,
+            n_eval_docs,
+            len(tokens_eval),
+        )
+    else:
+        _mark_step(state, "data_load", status="running")
+        _save_state(run_state_json, state)
+        logger.info(
+            "Scanning train/eval splits (chunk_size=%d) from %s and %s",
+            chunk_size,
+            paths.train_csv,
+            paths.eval_csv,
+        )
+        try:
+            payload = load_train_eval(
+                paths.train_csv,
+                paths.eval_csv,
+                sentence_column=sentence_column,
+                chunk_size=chunk_size,
+                coherence_eval_max_docs=coherence_eval_max_docs,
+                logger=logger,
+            )
+        except Exception as ex:
+            _mark_step(state, "data_load", status="failed", details={"error": str(ex)})
+            _save_state(run_state_json, state)
+            raise
+        n_train_docs = int(payload["n_train_docs"])
+        n_eval_docs = int(payload["n_eval_docs"])
+        tokens_eval = payload["tokens_eval"]
+        data_duration = time.perf_counter() - step_start
+        _mark_step(
+            state,
+            "data_load",
+            status="completed",
+            duration_s=data_duration,
+            details={
+                "n_train_docs": n_train_docs,
+                "n_eval_docs": n_eval_docs,
+                "coherence_eval_docs": len(tokens_eval),
+                "csv_chunk_size": chunk_size,
+                "train_csv": str(paths.train_csv),
+                "eval_csv": str(paths.eval_csv),
+            },
+        )
+        _save_state(run_state_json, state)
+        logger.info(
+            "Data scan completed in %.2fs (train=%d, eval=%d, coherence_tokens=%d)",
+            data_duration,
+            n_train_docs,
+            n_eval_docs,
+            len(tokens_eval),
+        )
 
     corpus_tsv = paths.octis_dir / "corpus.tsv"
     offsets_file = corpus_offsets_path(paths.octis_dir)
@@ -437,13 +621,6 @@ def run_tuning(
             hub_cfg=hub_cfg,
             run_id=run_id,
         )
-        _mark_model(
-            state,
-            model_name,
-            status="running",
-            details={"embedding_cache_file": str(cache_file), "embedding_cache_hit": cache_hit},
-        )
-        _save_state(run_state_json, state)
         fit_docs, fit_embeddings, n_docs_total = _prepare_bertopic_fit_data(
             doc_store,
             emb,
@@ -456,31 +633,88 @@ def run_tuning(
             embedding_model_name=model_name,
             embeddings=fit_embeddings,
             dataset_as_list_of_strings=fit_docs,
-            dataset_as_list_of_lists=[],
+            dataset_as_list_of_lists=tokens_eval,
             optimization_results_dir=str(paths.experiments_dir / "optimization"),
             verbose=True,
         )
         model.use_partitions = True
 
         optimizer = Optimizer()
-        npmi_metric = Coherence(texts=[t for t in tokens_eval if t], topk=10, measure="c_v")
-        diversity_metric = TopicDiversity(topk=10)
+        # Some topic-word lists are shorter after vocabulary filtering.
+        # Use topk=1 for OCTIS optimizer metrics to avoid hard failures.
+        npmi_metric = Coherence(texts=[t for t in tokens_eval if t], topk=1, measure="c_v")
+        diversity_metric = TopicDiversity(topk=1)
         optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
-        result = optimizer.optimize(
-            model,
-            octis_dataset,
-            npmi_metric,
-            search_space,
-            number_of_call=int(cfg["optimization"]["number_of_calls"]),
+        result_json = optimization_dir / "result.json"
+        trials_partial_csv = optimization_dir / "trials_partial.csv"
+        opt_seed = int(cfg["optimization"].get("seed", 42))
+        stability_score = float(cfg["optimization"].get("default_stability_score", 0.0))
+        number_of_calls = int(cfg["optimization"]["number_of_calls"])
+
+        partial_rows, bo_done, bo_total = sync_trials_partial_from_checkpoint(
+            result_json,
+            trials_partial_csv,
+            run_id=run_id,
+            model_idx=idx,
+            model_name=model_name,
+            train_csv=paths.train_csv,
+            eval_csv=paths.eval_csv,
+            test_csv=paths.test_csv,
+            seed=opt_seed,
+            stability_score=stability_score,
+        )
+        if partial_rows:
+            logger.info(
+                "Recovered %d partial BO trial(s) from checkpoint (%d/%d calls): %s",
+                len(partial_rows),
+                bo_done,
+                number_of_calls,
+                trials_partial_csv,
+            )
+        _mark_model(
+            state,
+            model_name,
+            status="running",
+            details={
+                "embedding_cache_file": str(cache_file),
+                "embedding_cache_hit": cache_hit,
+                "optimization_dir": str(optimization_dir),
+                "bo_calls_done": bo_done,
+                "bo_calls_total": number_of_calls,
+                "trials_partial_csv": str(trials_partial_csv),
+            },
+        )
+        _save_state(run_state_json, state)
+
+        result = _optimize_with_resume(
+            optimizer,
+            model=model,
+            octis_dataset=octis_dataset,
+            npmi_metric=npmi_metric,
+            search_space=search_space,
+            optimization_dir=optimization_dir,
+            number_of_calls=number_of_calls,
             model_runs=int(cfg["optimization"].get("model_runs", 1)),
             save_models=bool(cfg["optimization"].get("save_models", False)),
-            extra_metrics=[diversity_metric],
-            save_path=str(optimization_dir),
+            diversity_metric=diversity_metric,
+            random_state=opt_seed,
+            logger=logger,
         )
 
-        best_params = {}
-        if isinstance(result, dict):
-            best_params = result.get("best_params", {}) or result.get("x", {}) or {}
+        _, bo_done, bo_total = sync_trials_partial_from_checkpoint(
+            result_json,
+            trials_partial_csv,
+            run_id=run_id,
+            model_idx=idx,
+            model_name=model_name,
+            train_csv=paths.train_csv,
+            eval_csv=paths.eval_csv,
+            test_csv=paths.test_csv,
+            seed=opt_seed,
+            stability_score=stability_score,
+        )
+
+        best_params = _best_params_from_optimize_result(result, optimization_dir)
         if not best_params:
             best_params = {}
 
@@ -493,7 +727,7 @@ def run_tuning(
         row: dict[str, Any] = {
             "run_id": run_id,
             "trial_id": f"{run_id}_{idx}",
-            "seed": int(cfg["optimization"].get("seed", 42)),
+            "seed": opt_seed,
             "embedding_model": model_name,
             "coherence_c_v": coherence,
             "coherence_c_npmi": np.nan,
@@ -521,6 +755,9 @@ def run_tuning(
                 "coherence_c_v": coherence,
                 "topic_diversity": diversity,
                 "outlier_rate": outlier_rate,
+                "bo_calls_done": bo_done,
+                "bo_calls_total": bo_total,
+                "trials_partial_csv": str(trials_partial_csv),
             },
         )
         _save_state(run_state_json, state)

@@ -2,7 +2,7 @@ services:
   stage03:
     build:
       context: .
-      dockerfile: docker/Dockerfile
+      dockerfile: Dockerfile
     image: romance-stage03:latest
     container_name: romance-stage03
     env_file:

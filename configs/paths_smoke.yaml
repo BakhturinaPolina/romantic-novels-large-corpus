@@ -1,0 +1,25 @@
+# Smoke-test paths (tiny fixtures under tests/fixtures/stage03_smoke)
+
+data:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+
+inputs:
+  sentences_train_csv: "tests/fixtures/stage03_smoke/sentences_train.csv"
+  sentences_val_csv: "tests/fixtures/stage03_smoke/sentences_val.csv"
+  sentences_test_csv: "tests/fixtures/stage03_smoke/sentences_test.csv"
+  octis_dataset: "data/interim/octis"
+  custom_stoplist: "data/processed/custom_stoplist.txt"
+
+outputs:
+  models: "models"
+  results: "results"
+  experiments: "results/experiments"
+  selection: "results/selection"
+  final_models: "models/final"
+  evaluation: "results/evaluation"
+  pareto: "results/pareto"
+  topics: "results/topics"
+  figures: "results/figures"
+  logs: "logs"

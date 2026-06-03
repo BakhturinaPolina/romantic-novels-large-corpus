@@ -32,6 +32,16 @@ Copy `.env.example` → `.env` and set `OPENROUTER_API_KEY` ([get one here](http
 
 Verify GPU: `python -m src.common.check_gpu_setup`
 
+## Run on another GPU machine (Docker)
+
+To run Stage03 on a second NVIDIA/CUDA-12.x box (e.g. to tune a different embedding model in parallel) without recreating the venv, build a self-contained transfer bundle:
+
+```bash
+bash scripts/make_transfer_bundle.sh   # → transfer_bundle/ (Dockerfile, code, configs, deps)
+```
+
+Ship `transfer_bundle/` to the target machine (plus the data CSVs and a private `.env`), then `cd transfer_bundle && docker build -t romance-stage03:latest .` and launch detached. Docker assets live in [docker/](docker/); build from the repo root with `docker build -f docker/Dockerfile -t romance-stage03:latest .` if you are not using the bundle. Runs are **resumable**: `data/`, `results/`, `logs/`, and `models/` are bind-mounted, and re-running `tune` with the **same `--run-id`** continues from disk — skipping completed data loads, the OCTIS corpus, cached embeddings, and finished models, and re-seeding the Bayesian-optimization loop instead of restarting at call 0. Full instructions and copy-paste run blocks per model: [docker/README.md](docker/README.md).
+
 ## Pipeline
 
 | Stage | Name | Description |

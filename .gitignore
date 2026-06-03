@@ -32,6 +32,9 @@ Thumbs.db
 .python_history
 pyvenv.cfg
 
+# Generated Docker transfer bundle (regenerate with scripts/make_transfer_bundle.sh)
+transfer_bundle/
+
 # Large or generated research artifacts
 *.epub
 *.csv

@@ -1,0 +1,35 @@
+# Stage03 smoke tuning (tiny fixtures, CPU-friendly caps)
+
+paths_config: "configs/paths_smoke.yaml"
+
+embedding_models:
+  - "sentence-transformers/all-MiniLM-L12-v2"
+
+device: "cpu"
+embedding_batch_size: 64
+
+embeddings_hub:
+  enabled: false
+
+text:
+  sentence_column: "sentence"
+  csv_chunk_size: 500
+  coherence_eval_max_docs: 200
+  bertopic_fit_max_docs: 800
+
+optimization:
+  number_of_calls: 3
+  model_runs: 1
+  save_models: false
+  seed: 42
+  default_stability_score: 0.0
+
+search_space:
+  umap__n_neighbors: [2, 10]
+  umap__n_components: [2, 5]
+  umap__min_dist: [0.0, 0.1]
+  hdbscan__min_cluster_size: [50, 100]
+  hdbscan__min_samples: [10, 30]
+  vectorizer__min_df: [0.001, 0.01]
+  bertopic__top_n_words: [10, 20]
+  bertopic__min_topic_size: [10, 50]
