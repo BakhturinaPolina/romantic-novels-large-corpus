@@ -13,8 +13,8 @@ import numpy as np
 import pandas as pd
 from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
-from octis.evaluation_metrics.coherence_metrics import Coherence
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
+from octis.evaluation_metrics.metrics import AbstractMetric
 from octis.optimization.optimizer import Optimizer
 from skopt.space.space import Integer, Real
 
@@ -34,6 +34,7 @@ from src.stage03_train.bo_resume import (
     bo_calls_done,
     is_bo_complete,
     load_bo_checkpoint,
+    make_resumable_optimizer_class,
     restore_optimizer_skopt_state,
     sync_trials_partial_from_checkpoint,
 )
@@ -348,25 +349,81 @@ def _best_params_from_optimize_result(result: Any, optimization_dir: Path) -> di
     return {}
 
 
-def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> tuple[float, float]:
+def _coherence_cv(
+    topics: list[list[str]],
+    eval_tokens: list[list[str]],
+    dictionary: Dictionary | None = None,
+) -> float:
+    """Vocabulary-filtered gensim ``c_v`` coherence (robust to short topics).
+
+    Unlike OCTIS ``Coherence(topk=...)`` this never raises on topics shorter than
+    a fixed ``topk`` and never collapses to a constant: it drops out-of-vocabulary
+    words, drops empty topics, then lets gensim use each topic's available words.
+    """
     if not topics:
-        return 0.0, 0.0
-    dictionary = Dictionary(eval_tokens)
+        return 0.0
+    dictionary = dictionary if dictionary is not None else Dictionary(eval_tokens)
     topics_in_vocab = [[w for w in topic if w in dictionary.token2id] for topic in topics]
     topics_in_vocab = [t for t in topics_in_vocab if t]
     if not topics_in_vocab:
-        coherence = 0.0
-    else:
-        cm = CoherenceModel(
-            topics=topics_in_vocab, texts=eval_tokens, dictionary=dictionary, coherence="c_v"
-        )
-        coherence = float(cm.get_coherence())
+        return 0.0
+    cm = CoherenceModel(
+        topics=topics_in_vocab, texts=eval_tokens, dictionary=dictionary, coherence="c_v"
+    )
+    return float(cm.get_coherence())
+
+
+def _diversity_adaptive(topics: list[list[str]]) -> float:
+    """TopicDiversity with an adaptive ``topk`` capped by the shortest topic."""
     min_topic_len = min((len(t) for t in topics if t), default=0)
     if min_topic_len == 0:
-        diversity = 0.0
-    else:
-        diversity_topk = max(1, min(10, min_topic_len))
-        diversity = float(TopicDiversity(topk=diversity_topk).score({"topics": topics}))
+        return 0.0
+    diversity_topk = max(1, min(10, min_topic_len))
+    return float(TopicDiversity(topk=diversity_topk).score({"topics": topics}))
+
+
+class AdaptiveCVCoherence(AbstractMetric):
+    """OCTIS-compatible optimized metric: vocab-filtered ``c_v`` coherence.
+
+    Replaces ``Coherence(topk=1, measure='c_v')`` which is degenerate (always 1.0
+    for single-word topics). Builds the gensim ``Dictionary`` once and reuses it
+    for every BO call, and shares ``_coherence_cv`` with the final trials.csv
+    computation so BO optimizes exactly the reported metric.
+    """
+
+    def __init__(self, texts: list[list[str]]):
+        super().__init__()
+        self._texts = [t for t in texts if t]
+        self._dictionary = Dictionary(self._texts) if self._texts else Dictionary([[""]])
+
+    def info(self) -> dict[str, str]:
+        return {"name": "Coherence"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        topics = model_output.get("topics")
+        if not topics:
+            return 0.0
+        return _coherence_cv(topics, self._texts, self._dictionary)
+
+
+class AdaptiveTopicDiversity(AbstractMetric):
+    """OCTIS-compatible extra metric: adaptive-``topk`` topic diversity."""
+
+    def info(self) -> dict[str, str]:
+        return {"name": "TopicDiversity"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        topics = model_output.get("topics")
+        if not topics:
+            return 0.0
+        return _diversity_adaptive(topics)
+
+
+def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> tuple[float, float]:
+    if not topics:
+        return 0.0, 0.0
+    coherence = _coherence_cv(topics, eval_tokens)
+    diversity = _diversity_adaptive(topics)
     return coherence, diversity
 
 
@@ -639,17 +696,52 @@ def run_tuning(
         )
         model.use_partitions = True
 
-        optimizer = Optimizer()
-        # Some topic-word lists are shorter after vocabulary filtering.
-        # Use topk=1 for OCTIS optimizer metrics to avoid hard failures.
-        npmi_metric = Coherence(texts=[t for t in tokens_eval if t], topk=1, measure="c_v")
-        diversity_metric = TopicDiversity(topk=1)
+        optimizer = make_resumable_optimizer_class()()
+        # Vocab-filtered c_v coherence (shared with trials.csv via _coherence_cv).
+        # Replaces Coherence(topk=1, measure="c_v"), which was degenerate (always
+        # 1.0 for single-word topics) and turned the BO objective into a constant.
+        npmi_metric = AdaptiveCVCoherence(texts=tokens_eval)
+        diversity_metric = AdaptiveTopicDiversity()
         optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
         result_json = optimization_dir / "result.json"
         trials_partial_csv = optimization_dir / "trials_partial.csv"
         opt_seed = int(cfg["optimization"].get("seed", 42))
         stability_score = float(cfg["optimization"].get("default_stability_score", 0.0))
         number_of_calls = int(cfg["optimization"]["number_of_calls"])
+
+        def _on_bo_call_complete(current_call: int, _res: Any) -> None:
+            """Persist ``trials_partial.csv`` and log progress after each BO call."""
+            rows, done, total = sync_trials_partial_from_checkpoint(
+                result_json,
+                trials_partial_csv,
+                run_id=run_id,
+                model_idx=idx,
+                model_name=model_name,
+                train_csv=paths.train_csv,
+                eval_csv=paths.eval_csv,
+                test_csv=paths.test_csv,
+                seed=opt_seed,
+                stability_score=stability_score,
+            )
+            latest = rows[-1] if rows else {}
+            logger.info(
+                "BO call %d/%d complete: coherence=%s diversity=%s "
+                "(partial trials=%d) -> %s",
+                done,
+                total or number_of_calls,
+                latest.get("coherence_c_v"),
+                latest.get("topic_diversity"),
+                len(rows),
+                trials_partial_csv,
+            )
+            model_state = state.get("models", {}).get(model_name, {})
+            details = dict(model_state.get("details", {}))
+            details["bo_calls_done"] = done
+            details["bo_calls_total"] = total or number_of_calls
+            _mark_model(state, model_name, status="running", details=details)
+            _save_state(run_state_json, state)
+
+        optimizer.on_call_complete = _on_bo_call_complete
 
         partial_rows, bo_done, bo_total = sync_trials_partial_from_checkpoint(
             result_json,

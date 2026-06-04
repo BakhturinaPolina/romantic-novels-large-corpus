@@ -200,6 +200,98 @@ def restore_optimizer_skopt_state(
     return res, opt
 
 
+def make_resumable_optimizer_class() -> type:
+    """Build an OCTIS ``Optimizer`` subclass that fires a callback after each BO call.
+
+    Imported lazily so that ``bo_resume`` stays import-light for unit tests that
+    do not need OCTIS installed.
+
+    The override mirrors ``octis.optimization.optimizer.Optimizer._optimization_loop``
+    exactly (same point proposal, ``opt.tell``, timing, save_step, early-stop), and
+    only adds a fail-safe ``on_call_complete(current_call, res)`` hook right after the
+    per-call ``result.json`` is written.
+    """
+    import time
+
+    from octis.optimization.optimizer import Optimizer
+    from octis.optimization.optimizer_evaluation import OptimizerEvaluation
+    from octis.optimization.optimizer_tool import (
+        early_condition,
+        plot_bayesian_optimization,
+    )
+
+    class ResumableOptimizer(Optimizer):
+        on_call_complete = None  # type: ignore[assignment]
+
+        def _fire_call_complete(self, res: Any) -> None:
+            cb = getattr(self, "on_call_complete", None)
+            if cb is None:
+                return
+            try:
+                cb(self.current_call, res)
+            except Exception:  # pragma: no cover - never let a hook break BO
+                pass
+
+        def _optimization_loop(self, opt: Any) -> Any:
+            results = None
+            for i in range(self.number_of_previous_calls, self.number_of_call):
+                print("Current call: ", self.current_call)
+                start_time = time.time()
+
+                if i < self.lenx0:
+                    next_x = [self.x0[name][i] for name in self.hyperparameters]
+                    if len(self.y0) == 0:
+                        f_val = self._objective_function(next_x)
+                    else:
+                        self.dict_model_runs[self.name_optimized_metric][
+                            "iteration_" + str(i)
+                        ] = self.y0[i]
+                        f_val = (
+                            -self.y0[i]
+                            if (self.optimization_type == "Maximize")
+                            else self.y0[i]
+                        )
+                else:
+                    next_x = opt.ask()
+                    f_val = self._objective_function(next_x)
+
+                res = opt.tell(next_x, f_val)
+
+                end_time = time.time()
+                total_time_function = end_time - start_time
+                self.time_eval.append(total_time_function)
+
+                if self.plot_best_seen:
+                    plot_bayesian_optimization(
+                        res.func_vals,
+                        self.save_path + self.plot_name + "_best_seen",
+                        self.log_scale_plot,
+                        conv_max=self.optimization_type == "Maximize",
+                    )
+
+                results = OptimizerEvaluation(self, BO_results=res)
+
+                if i % self.save_step == 0:
+                    name_json = self.save_path + self.save_name + ".json"
+                    results.save(name_json)
+
+                self._fire_call_complete(res)
+
+                if (
+                    i >= len(self.x0)
+                    and self.early_stop
+                    and early_condition(res.func_vals, self.early_step, self.n_random_starts)
+                ):
+                    print("Stop because of early stopping condition")
+                    break
+
+                self.current_call = self.current_call + 1
+
+            return results
+
+    return ResumableOptimizer
+
+
 def write_trials_partial_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     """Write per-call partial trials (overwrites file with full projection)."""
     path.parent.mkdir(parents=True, exist_ok=True)
