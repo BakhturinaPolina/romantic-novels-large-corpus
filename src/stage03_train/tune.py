@@ -26,6 +26,7 @@ from src.stage03_train.bertopic_octis_model import (
 )
 from src.stage03_train.corpus_store import (
     CorpusDocStore,
+    corpus_metadata_path,
     corpus_offsets_path,
     load_octis_dataset_metadata_only,
 )
@@ -159,11 +160,59 @@ def _mark_model(
         entry["details"] = merged
 
 
+def _safe_outlier_rate_from_topics(topics: Any) -> float:
+    """Outlier rate from hard topic labels (-1), independent of probabilities."""
+    arr = np.asarray(topics)
+    if arr.size == 0:
+        return 1.0
+    return float(np.mean(arr == -1))
+
+
 def _safe_outlier_rate(topic_document_matrix: Any) -> float:
+    """Legacy fallback: outlier rate from a document-by-topic probability matrix."""
     matrix = np.asarray(topic_document_matrix)
     if matrix.ndim != 2 or matrix.shape[0] == 0:
         return 1.0
     return float(np.mean(np.max(matrix, axis=1) == 0))
+
+
+def _outlier_rate_from_output(output: dict[str, Any]) -> float:
+    """Prefer hard topic labels; fall back to the probability matrix for old runs."""
+    topics = output.get("document-topics")
+    if topics is not None and np.asarray(topics).size:
+        return _safe_outlier_rate_from_topics(topics)
+    return _safe_outlier_rate(output.get("topic-document-matrix", np.zeros((1, 1))))
+
+
+def _load_fit_indices(
+    fit_indices_path: Path | None,
+    *,
+    n_train: int,
+    logger: Any,
+) -> np.ndarray | None:
+    """Load precomputed stratified fit indices, restricted to the train partition.
+
+    Indices must fall in ``[0, n_train)`` so the fit uses train-only rows (the
+    val partition is reserved for coherence evaluation). Returns sorted unique
+    indices, or ``None`` when no file is configured/present.
+    """
+    if fit_indices_path is None or not fit_indices_path.exists():
+        return None
+    idx = np.asarray(np.load(fit_indices_path), dtype=np.int64)
+    in_train = idx[(idx >= 0) & (idx < n_train)]
+    dropped = idx.size - in_train.size
+    if dropped:
+        logger.warning(
+            "Dropped %d/%d fit indices outside train partition [0, %d): %s",
+            dropped,
+            idx.size,
+            n_train,
+            fit_indices_path,
+        )
+    if in_train.size == 0:
+        logger.warning("No usable fit indices in %s; falling back to random.", fit_indices_path)
+        return None
+    return np.unique(in_train)
 
 
 def _prepare_bertopic_fit_data(
@@ -173,20 +222,49 @@ def _prepare_bertopic_fit_data(
     fit_max_docs: int | None,
     seed: int,
     logger: Any,
+    n_train: int | None = None,
+    fit_indices_path: Path | None = None,
 ) -> tuple[Any, np.ndarray, int]:
-    """Subsample docs/embeddings when the full corpus exceeds GPU UMAP capacity."""
-    n_total = len(doc_store)
-    if fit_max_docs is None or n_total <= fit_max_docs:
-        return doc_store, embeddings, n_total
+    """Select the BERTopic fit documents (train partition only).
 
-    rng = np.random.default_rng(seed)
-    fit_indices = np.sort(rng.choice(n_total, size=fit_max_docs, replace=False))
-    logger.info(
-        "BERTopic fit subsample: %d / %d docs (bertopic_fit_max_docs=%d)",
-        fit_max_docs,
-        n_total,
-        fit_max_docs,
-    )
+    Preference order:
+    1. Precomputed stratified ``fit_indices`` (book-balanced/year-aware/author-capped)
+       from ``make_fit_sample.py``, restricted to ``[0, n_train)``.
+    2. Random subsample within the train partition (legacy behavior, now train-only).
+
+    Either way, embeddings are gathered from the (full) per-model cache by index,
+    so no re-encoding is needed. ``n_total`` (full corpus length) is returned for
+    bookkeeping/transform downstream.
+    """
+    n_total = len(doc_store)
+    boundary = int(n_train) if n_train else n_total
+
+    stratified = _load_fit_indices(fit_indices_path, n_train=boundary, logger=logger)
+    if stratified is not None:
+        fit_indices = stratified
+        if fit_max_docs is not None and fit_indices.size > fit_max_docs:
+            rng = np.random.default_rng(seed)
+            keep = rng.choice(fit_indices.size, size=fit_max_docs, replace=False)
+            fit_indices = np.sort(fit_indices[keep])
+        logger.info(
+            "BERTopic fit: %d stratified train docs (partition [0, %d) of %d total)",
+            fit_indices.size,
+            boundary,
+            n_total,
+        )
+    else:
+        if fit_max_docs is None or boundary <= fit_max_docs:
+            fit_indices = np.arange(boundary, dtype=np.int64)
+        else:
+            rng = np.random.default_rng(seed)
+            fit_indices = np.sort(rng.choice(boundary, size=fit_max_docs, replace=False))
+        logger.info(
+            "BERTopic fit: %d random train docs (partition [0, %d) of %d total)",
+            fit_indices.size,
+            boundary,
+            n_total,
+        )
+
     step_start = time.perf_counter()
     fit_docs = doc_store.fetch_documents(fit_indices)
     fit_embeddings = np.asarray(embeddings[fit_indices], dtype=np.float32)
@@ -255,13 +333,13 @@ def _optimize_with_resume(
     *,
     model: Any,
     octis_dataset: Any,
-    npmi_metric: Coherence,
+    npmi_metric: AbstractMetric,
     search_space: dict[str, Any],
     optimization_dir: Path,
     number_of_calls: int,
     model_runs: int,
     save_models: bool,
-    diversity_metric: TopicDiversity,
+    extra_metrics: list[AbstractMetric],
     random_state: int | bool,
     logger: Any,
 ) -> Any:
@@ -281,7 +359,7 @@ def _optimize_with_resume(
         "number_of_call": number_of_calls,
         "model_runs": model_runs,
         "save_models": save_models,
-        "extra_metrics": [diversity_metric],
+        "extra_metrics": extra_metrics,
         "save_path": str(optimization_dir),
         "save_step": 1,
         "random_state": stability_seed,
@@ -317,7 +395,7 @@ def _optimize_with_resume(
     optimizer.model = model
     optimizer.dataset = octis_dataset
     optimizer.metric = npmi_metric
-    optimizer.extra_metrics = [diversity_metric]
+    optimizer.extra_metrics = extra_metrics
     optimizer.number_of_call = number_of_calls
 
     if optimizer.number_of_previous_calls >= optimizer.number_of_call:
@@ -419,6 +497,84 @@ class AdaptiveTopicDiversity(AbstractMetric):
         return _diversity_adaptive(topics)
 
 
+class TopicCountMetric(AbstractMetric):
+    """OCTIS extra metric: number of non-empty topics returned by the model."""
+
+    def info(self) -> dict[str, str]:
+        return {"name": "TopicCount"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        topics = model_output.get("topics")
+        if topics is None:
+            return 0.0
+        return float(len(topics))
+
+
+class RawCoherenceMetric(AbstractMetric):
+    """OCTIS extra metric: unpenalized vocab-filtered c_v coherence."""
+
+    def __init__(self, texts: list[list[str]]):
+        super().__init__()
+        self._coherence = AdaptiveCVCoherence(texts=texts)
+
+    def info(self) -> dict[str, str]:
+        return {"name": "RawCoherence"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        return self._coherence.score(model_output)
+
+
+class CoherenceWithTopicPenalty(AbstractMetric):
+    """Primary BO metric: c_v coherence minus linear shortfall below a topic floor."""
+
+    def __init__(
+        self,
+        texts: list[list[str]],
+        *,
+        min_n_topics: int = 20,
+        penalty_weight: float = 0.15,
+    ):
+        super().__init__()
+        self._coherence = AdaptiveCVCoherence(texts=texts)
+        self._min_n_topics = max(1, int(min_n_topics))
+        self._penalty_weight = float(penalty_weight)
+
+    def info(self) -> dict[str, str]:
+        return {"name": "CoherenceWithTopicPenalty"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        topics = model_output.get("topics") or []
+        n_topics = len(topics)
+        coherence = self._coherence.score(model_output)
+        if n_topics >= self._min_n_topics:
+            return coherence
+        shortfall = (self._min_n_topics - n_topics) / self._min_n_topics
+        return coherence - self._penalty_weight * shortfall
+
+
+def _build_bo_metrics(
+    cfg: dict[str, Any],
+    tokens_eval: list[list[str]],
+) -> tuple[AbstractMetric, list[AbstractMetric]]:
+    """Build primary BO metric and extra metrics from optimization config."""
+    penalty_cfg = cfg.get("optimization", {}).get("topic_count_penalty", {})
+    if penalty_cfg.get("enabled"):
+        primary = CoherenceWithTopicPenalty(
+            texts=tokens_eval,
+            min_n_topics=int(penalty_cfg.get("min_n_topics", 20)),
+            penalty_weight=float(penalty_cfg.get("weight", 0.15)),
+        )
+        extras: list[AbstractMetric] = [
+            AdaptiveTopicDiversity(),
+            TopicCountMetric(),
+            RawCoherenceMetric(texts=tokens_eval),
+        ]
+    else:
+        primary = AdaptiveCVCoherence(texts=tokens_eval)
+        extras = [AdaptiveTopicDiversity()]
+    return primary, extras
+
+
 def _compute_metrics(topics: list[list[str]], eval_tokens: list[list[str]]) -> tuple[float, float]:
     if not topics:
         return 0.0, 0.0
@@ -465,6 +621,32 @@ def run_tuning(
     bertopic_fit_max_docs = text_cfg.get("bertopic_fit_max_docs")
     if bertopic_fit_max_docs is not None:
         bertopic_fit_max_docs = int(bertopic_fit_max_docs)
+    calculate_probabilities = bool(cfg.get("bertopic", {}).get("calculate_probabilities", False))
+    inputs_cfg = paths_cfg.get("inputs", {})
+
+    def _resolve_opt(key: str) -> Path | None:
+        val = inputs_cfg.get(key)
+        return resolve_path(Path(val)) if val else None
+
+    fit_sample_manifest = _resolve_opt("fit_sample_manifest")
+    fit_indices_file = _resolve_opt("fit_indices_file")
+    eval_indices_file = _resolve_opt("eval_indices_file")
+    # Reuse a prebuilt full-corpus corpus.tsv (read-only) to skip a 100M-row rewrite.
+    corpus_dir_override = _resolve_opt("octis_corpus_dir")
+    # Per-model full-corpus embedding .npy overrides (skip re-encoding); see train.yaml.
+    embeddings_overrides = cfg.get("embeddings_cache", {}).get("overrides", {}) or {}
+    logger.info(
+        "BERTopic fit cap=%s, coherence eval cap=%s, calculate_probabilities=%s",
+        "off (pre-sampled corpus)" if bertopic_fit_max_docs is None else bertopic_fit_max_docs,
+        "off (pre-sampled eval)" if coherence_eval_max_docs is None else coherence_eval_max_docs,
+        calculate_probabilities,
+    )
+    if fit_sample_manifest and fit_sample_manifest.exists():
+        logger.info("Using stratified fit-sample manifest: %s", fit_sample_manifest)
+    if fit_indices_file:
+        logger.info("Stratified fit indices: %s", fit_indices_file)
+    if corpus_dir_override:
+        logger.info("Reusing prebuilt OCTIS corpus dir: %s", corpus_dir_override)
 
     step_start = time.perf_counter()
     if _data_load_cache_valid(
@@ -561,9 +743,18 @@ def run_tuning(
             len(tokens_eval),
         )
 
-    corpus_tsv = paths.octis_dir / "corpus.tsv"
-    offsets_file = corpus_offsets_path(paths.octis_dir)
-    if _step_completed(state, "octis_corpus_written") and corpus_tsv.exists() and offsets_file.exists():
+    corpus_root = corpus_dir_override or paths.octis_dir
+    corpus_tsv = corpus_root / "corpus.tsv"
+    offsets_file = corpus_offsets_path(corpus_root)
+    if corpus_dir_override is not None and corpus_tsv.exists() and offsets_file.exists():
+        logger.info("Using prebuilt full corpus (skip write): %s", corpus_tsv)
+        meta_path = corpus_metadata_path(corpus_root)
+        if meta_path.exists():
+            with open(meta_path, "r", encoding="utf-8") as f:
+                _meta = json.load(f)
+            n_train_docs = int(_meta.get("last-training-doc", n_train_docs))
+            n_eval_docs = int(_meta.get("last-validation-doc", n_train_docs + n_eval_docs)) - n_train_docs
+    elif _step_completed(state, "octis_corpus_written") and corpus_tsv.exists() and offsets_file.exists():
         logger.info("Skipping OCTIS corpus write (already completed): %s", corpus_tsv)
         n_train_docs = int(
             state.get("steps", {})
@@ -584,7 +775,7 @@ def run_tuning(
         _corpus_path, _offsets, n_train_docs, n_eval_docs = write_octis_corpus_from_csvs(
             paths.train_csv,
             paths.eval_csv,
-            paths.octis_dir,
+            corpus_root,
             sentence_column=sentence_column,
             chunk_size=chunk_size,
             logger=logger,
@@ -612,7 +803,7 @@ def run_tuning(
     step_start = time.perf_counter()
     _mark_step(state, "octis_dataset_load", status="running")
     _save_state(run_state_json, state)
-    octis_dataset = load_octis_dataset_metadata_only(paths.octis_dir)
+    octis_dataset = load_octis_dataset_metadata_only(corpus_root)
     dataset_duration = time.perf_counter() - step_start
     _mark_step(
         state,
@@ -623,6 +814,28 @@ def run_tuning(
     )
     _save_state(run_state_json, state)
     logger.info("OCTIS metadata loaded in %.2fs (corpus not loaded into RAM)", dataset_duration)
+
+    # Stratified coherence eval: gather val-partition docs by precomputed indices
+    # instead of the sequential head of the val CSV. Reuses the disk-backed store.
+    if eval_indices_file and eval_indices_file.exists():
+        eval_idx = np.asarray(np.load(eval_indices_file), dtype=np.int64)
+        in_val = eval_idx[(eval_idx >= n_train_docs) & (eval_idx < n_docs_total)]
+        if in_val.size:
+            eval_docs = doc_store.fetch_documents(np.unique(in_val))
+            tokens_eval = [d.split() for d in eval_docs if d]
+            logger.info(
+                "Coherence eval: %d stratified val docs (partition [%d, %d))",
+                len(tokens_eval),
+                n_train_docs,
+                n_docs_total,
+            )
+        else:
+            logger.warning(
+                "No eval indices in val partition [%d, %d); using sequential eval tokens.",
+                n_train_docs,
+                n_docs_total,
+            )
+
     existing_rows: list[dict[str, Any]] = []
     if trials_csv.exists():
         try:
@@ -661,10 +874,25 @@ def run_tuning(
         logger.info("Starting model %d/%d: %s", idx, len(selected_models), model_name)
         _mark_model(state, model_name, status="running")
         _save_state(run_state_json, state)
-        cache_dir = paths.octis_dir / "embeddings_cache"
-        cache_file = get_cache_file(cache_dir, "train_eval", model_name)
+        # Prefer a precomputed full-corpus .npy for this model (skip re-encoding).
+        override_path = embeddings_overrides.get(model_name)
+        if override_path:
+            cache_file = resolve_path(Path(override_path))
+        else:
+            cache_dir = paths.octis_dir / "embeddings_cache"
+            cache_file = get_cache_file(cache_dir, "train_eval", model_name)
         cache_hit = cache_file.exists()
-        logger.info("Embedding cache %s for %s", "hit" if cache_hit else "miss", model_name)
+        logger.info(
+            "Embedding cache %s for %s (%s)",
+            "hit" if cache_hit else "miss",
+            model_name,
+            "override" if override_path else "run-local",
+        )
+        if override_path and not cache_hit:
+            raise FileNotFoundError(
+                f"Configured embeddings override for {model_name} not found: {cache_file}. "
+                "Copy the full-corpus train_eval .npy to this path or remove the override."
+            )
         emb = compute_embeddings_from_csvs(
             paths.train_csv,
             paths.eval_csv,
@@ -675,15 +903,33 @@ def run_tuning(
             device=cfg.get("device", "auto"),
             batch_size=int(cfg.get("embedding_batch_size", 256)),
             logger=logger,
-            hub_cfg=hub_cfg,
+            hub_cfg=None if override_path else hub_cfg,
             run_id=run_id,
         )
-        fit_docs, fit_embeddings, n_docs_total = _prepare_bertopic_fit_data(
+        if int(emb.shape[0]) != n_docs_total:
+            raise RuntimeError(
+                f"Embedding/corpus misalignment for {model_name}: embeddings have "
+                f"{emb.shape[0]} rows but corpus has {n_docs_total}. The .npy must be the "
+                "full train+eval cache aligned to this corpus (same CSVs, same order)."
+            )
+        fit_docs, fit_embeddings, _ = _prepare_bertopic_fit_data(
             doc_store,
             emb,
             fit_max_docs=bertopic_fit_max_docs,
             seed=int(cfg["optimization"].get("seed", 42)),
             logger=logger,
+            n_train=n_train_docs,
+            fit_indices_path=fit_indices_file,
+        )
+        # Build the topic-word filter dictionary once from the FIT corpus (not the
+        # smaller eval token set). Filtering against eval vocab dropped whole topics
+        # in the first stratified run; using fit vocab keeps the topic count honest.
+        # Coherence/diversity are still computed against tokens_eval separately.
+        fit_filter_dictionary = Dictionary(doc.split() for doc in fit_docs)
+        logger.info(
+            "Built fit-corpus topic filter dictionary: %d docs -> %d tokens",
+            len(fit_docs),
+            len(fit_filter_dictionary),
         )
         model = BERTopicOctisModelWithEmbeddings(
             embedding_model=load_embedding_model(model_name),
@@ -693,6 +939,8 @@ def run_tuning(
             dataset_as_list_of_lists=tokens_eval,
             optimization_results_dir=str(paths.experiments_dir / "optimization"),
             verbose=True,
+            calculate_probabilities=calculate_probabilities,
+            topic_filter_dictionary=fit_filter_dictionary,
         )
         model.use_partitions = True
 
@@ -700,8 +948,7 @@ def run_tuning(
         # Vocab-filtered c_v coherence (shared with trials.csv via _coherence_cv).
         # Replaces Coherence(topk=1, measure="c_v"), which was degenerate (always
         # 1.0 for single-word topics) and turned the BO objective into a constant.
-        npmi_metric = AdaptiveCVCoherence(texts=tokens_eval)
-        diversity_metric = AdaptiveTopicDiversity()
+        npmi_metric, extra_metrics = _build_bo_metrics(cfg, tokens_eval)
         optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
         result_json = optimization_dir / "result.json"
         trials_partial_csv = optimization_dir / "trials_partial.csv"
@@ -725,11 +972,13 @@ def run_tuning(
             )
             latest = rows[-1] if rows else {}
             logger.info(
-                "BO call %d/%d complete: coherence=%s diversity=%s "
-                "(partial trials=%d) -> %s",
+                "BO call %d/%d complete: coherence=%s bo_objective=%s "
+                "n_topics=%s diversity=%s (partial trials=%d) -> %s",
                 done,
                 total or number_of_calls,
                 latest.get("coherence_c_v"),
+                latest.get("bo_objective"),
+                latest.get("n_topics"),
                 latest.get("topic_diversity"),
                 len(rows),
                 trials_partial_csv,
@@ -788,7 +1037,7 @@ def run_tuning(
             number_of_calls=number_of_calls,
             model_runs=int(cfg["optimization"].get("model_runs", 1)),
             save_models=bool(cfg["optimization"].get("save_models", False)),
-            diversity_metric=diversity_metric,
+            extra_metrics=extra_metrics,
             random_state=opt_seed,
             logger=logger,
         )
@@ -813,7 +1062,7 @@ def run_tuning(
         output = model.train_model(dataset=octis_dataset, hyperparameters=best_params)
         topics = _topics_from_output(output.get("topics"))
         coherence, diversity = _compute_metrics(topics, tokens_eval)
-        outlier_rate = _safe_outlier_rate(output.get("topic-document-matrix", np.zeros((1, 1))))
+        outlier_rate = _outlier_rate_from_output(output)
         stability_score = float(cfg["optimization"].get("default_stability_score", 0.0))
 
         row: dict[str, Any] = {
@@ -905,6 +1154,16 @@ def run_tuning(
         "run_state_json": str(run_state_json),
         "run_summary_json": str(run_summary_json),
         "log_file": str(log_file),
+        "calculate_probabilities": calculate_probabilities,
+        "bertopic_fit_max_docs": bertopic_fit_max_docs,
+        "coherence_eval_max_docs": coherence_eval_max_docs,
+        "fit_sample_manifest": str(fit_sample_manifest) if fit_sample_manifest else None,
+        "fit_indices_file": str(fit_indices_file) if fit_indices_file else None,
+        "eval_indices_file": str(eval_indices_file) if eval_indices_file else None,
+        "octis_corpus_dir": str(corpus_dir_override) if corpus_dir_override else None,
+        "embeddings_overrides": {k: str(v) for k, v in embeddings_overrides.items()},
+        "n_train_docs": int(n_train_docs),
+        "n_eval_docs": int(n_eval_docs),
     }
     _write_json(manifest_json, final_manifest)
     _write_json(

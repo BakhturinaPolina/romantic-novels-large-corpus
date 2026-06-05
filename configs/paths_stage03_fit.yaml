@@ -1,0 +1,50 @@
+# Stage 03 paths for stratified-fit tuning that REUSES the full-corpus embeddings.
+#
+# Inputs are the FULL train/val/test sentence splits (same files the full-corpus
+# embedding .npy caches and corpus.tsv were built from), so the stratified fit
+# selection is expressed as row indices into that corpus and embeddings are
+# gathered by index -- no re-encoding.
+#
+# 1) Build the stratified fit/eval indices once:
+#      python -m src.stage03_train.make_fit_sample \
+#        --train-csv data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv \
+#        --val-csv data/processed/romance_subdataset_downloaded_v2_sentences/sentences_val.csv \
+#        --metadata-train data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata/romance_subdataset_downloaded_v2_train.csv \
+#        --metadata-val data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata/romance_subdataset_downloaded_v2_val.csv \
+#        --out-dir data/stage03_samples --train-target 500000 --val-target 100000 --seed 42
+# 2) Point octis_corpus_dir at a prebuilt full corpus.tsv to skip the ~100M-row rewrite.
+# 3) Set per-model embeddings_cache.overrides in configs/train.yaml.
+
+data:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+
+inputs:
+  # FULL splits (must match the corpus the .npy caches were built from).
+  sentences_train_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv"
+  sentences_val_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_val.csv"
+  sentences_test_csv: "data/processed/romance_subdataset_downloaded_v2_sentences/sentences_test.csv"
+  # Book-level metadata for the sampler (author / publication_year / genre_group).
+  romance_v2_subsampling_metadata_dir: "data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata"
+  # Stratified fit/eval indices (train partition for fit; val partition for coherence).
+  fit_indices_file: "data/stage03_samples/fit_indices_seed42.npy"
+  eval_indices_file: "data/stage03_samples/eval_indices_seed42.npy"
+  fit_sample_manifest: "data/stage03_samples/sample_manifest_seed42.json"
+  # Reuse a prebuilt full-corpus corpus.tsv + offsets (read-only) to skip rewriting.
+  # Leave unset to build a fresh corpus under results/experiments/<run_id>'s octis dir.
+  octis_corpus_dir: "data/interim/octis/minilm12v2_first"
+  octis_dataset: "data/interim/octis"
+  custom_stoplist: "data/processed/custom_stoplist.txt"
+
+outputs:
+  models: "models"
+  results: "results"
+  experiments: "results/experiments"
+  selection: "results/selection"
+  final_models: "models/final"
+  evaluation: "results/evaluation"
+  pareto: "results/stage04_selection"
+  topics: "results/topics"
+  figures: "results/figures"
+  logs: "logs"

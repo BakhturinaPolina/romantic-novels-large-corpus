@@ -77,12 +77,39 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 
 ---
 
+### `make_fit_sample.py`
+
+**What it does**
+- Selects a stratified BERTopic *fit* sample as **row indices into the full corpus**
+  (book-balanced, year-aware, author-capped, narrative-position-spread).
+- Emits `fit_indices` (train partition) and `eval_indices` (val partition) plus a manifest.
+
+**Why indices, not new CSVs**
+- The full-corpus embedding `.npy` and `corpus.tsv` are built in the same train->eval
+  cleaned order, so a global index selects the same row in both. Stage 03 therefore
+  **reuses the existing full-corpus embeddings** by gathering `embeddings[fit_indices]`
+  instead of re-encoding the fit sample.
+
+**Command**
+- `python -m src.stage03_train.cli sample --train-csv ... --val-csv ... --metadata-train ... --metadata-val ... --out-dir data/stage03_samples --train-target 500000 --val-target 100000 --seed 42`
+
+**Outputs**
+- `data/stage03_samples/fit_indices_seed42.npy`, `eval_indices_seed42.npy`, `sample_manifest_seed42.json`
+
+**Rationale**
+- See `results/reports/stage03_stratified_fit_sample_design.md`.
+
+---
+
 ### `embeddings.py`
 
 **What it does**
 - Loads embedding models.
 - Computes and caches embeddings to `.npy`.
 - Reuses cached arrays for speed.
+- For stratified runs, the full-corpus `.npy` is reused directly via
+  `configs/train.yaml -> embeddings_cache.overrides` (one path per model), so the fit
+  sample is gathered by index with no re-encoding.
 
 **Inputs**
 - doc lists for train and val
@@ -141,7 +168,13 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 
 **Added**
 - Stable machine-readable trial schema.
-- `outlier_rate` and `stability_score` columns.
+- `outlier_rate` and `stability_score` columns (outlier rate from hard topic labels `-1`).
+- Stratified, train-only fit: fits on `fit_indices` restricted to the train partition
+  `[0, n_train)`; coherence on stratified `eval_indices` from the val partition.
+- Full-corpus embedding reuse via `embeddings_cache.overrides`; prebuilt corpus reuse
+  via `inputs.octis_corpus_dir`; runtime `embeddings.shape[0] == len(doc_store)` assertion.
+- `bertopic.calculate_probabilities = false` during tuning (probability matrices are
+  unnecessary for coherence/diversity selection and expensive at scale).
 - Explicit run IDs.
 - Auto-resume behavior for repeated runs with the same `run_id`:
   - skip OCTIS corpus rewrite if already present

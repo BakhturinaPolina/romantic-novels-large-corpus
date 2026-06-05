@@ -92,6 +92,8 @@ Stages 01–02 do not write pipeline outputs under `results/` except optional do
 
 **Model Selection**: Pareto efficiency analysis balancing coherence (topic interpretability) and diversity (topic variety). Pretest evidence on a smaller corpus of 100 "billionaire" romance novels showed `all-MiniLM-L12-v2` as the strongest coherence-focused option and `paraphrase-mpnet-base-v2` / `paraphrase-MiniLM-L6-v2` as the best balance options; lower-coherence candidates were removed from active Stage03 tuning.
 
+**Fit sampling and search space**: BERTopic is fit on a stratified, train-only ~500k-sentence subsample (book-balanced, year-aware, author-capped, narrative-position-spread) selected as row indices into the full corpus, so the full-corpus embedding caches are reused by index rather than re-encoded; topics are then assigned to all books via `.transform()`. The OCTIS search space is a pretest-informed prior, shifted/widened for the larger corpus. See `results/reports/stage03_stratified_fit_sample_design.md` and `results/reports/stage03_bertopic_search_space_prior.md`.
+
 **Character name exclusion**: [BookNLP](https://github.com/booknlp/booknlp) is run on reconstructed book text from `sentences_train.csv` (Stage 02: `extract_character_names_booknlp.py`). Person-like surface strings from the `.book` JSON and `PER` / `PROP` rows in `.entities` are merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
 
 ### 2. LLM-Based Topic Labeling

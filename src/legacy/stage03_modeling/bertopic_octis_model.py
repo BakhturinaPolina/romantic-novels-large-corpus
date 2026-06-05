@@ -192,7 +192,9 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
         dataset_as_list_of_strings: List[str],
         dataset_as_list_of_lists: Optional[List[List[str]]] = None,
         optimization_results_dir: Optional[str] = None,
-        verbose: bool = True
+        verbose: bool = True,
+        calculate_probabilities: bool = False,
+        topic_filter_dictionary: Optional[Any] = None
     ):
         """
         Initialize BERTopicOctisModelWithEmbeddings.
@@ -205,12 +207,23 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             dataset_as_list_of_lists: Dataset as list of tokenized sentences (auto-generated if None)
             optimization_results_dir: Directory for optimization results (optional)
             verbose: Enable verbose logging
+            calculate_probabilities: Compute full document-by-topic probability matrices.
+                Defaults to False: it is expensive at large document counts and is not
+                needed for OCTIS coherence/diversity selection (outlier rate is read from
+                hard topic labels). Enable only for a dedicated probability run.
+            topic_filter_dictionary: Optional precomputed gensim ``Dictionary`` used to
+                filter topic words when building the model output. Pass a dictionary built
+                from the *fit* corpus so topics are not dropped because their words are
+                absent from the (smaller) eval token set. When None, the filter dictionary
+                is rebuilt from ``dataset_as_list_of_lists`` on every call (legacy behavior).
         """
         super().__init__()
         
         self.embedding_model = embedding_model
         self.embedding_model_name = embedding_model_name
         self.embeddings = embeddings
+        self.calculate_probabilities = bool(calculate_probabilities)
+        self.topic_filter_dictionary = topic_filter_dictionary
         self.dataset_as_list_of_strings = dataset_as_list_of_strings
         
         # Auto-generate tokenized list if not provided (skip for disk-backed doc stores).
@@ -270,7 +283,7 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
                 'min_topic_size': 127,
                 'nr_topics': None,
                 'low_memory': False,
-                'calculate_probabilities': True,
+                'calculate_probabilities': self.calculate_probabilities,
                 'verbose': True
             }
         }
@@ -471,12 +484,17 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             output_dict = {}
             output_dict['topics'] = []
             
-            # Create dictionary for topic words (skipped for large disk-backed corpora).
-            dictionary = (
-                corpora.Dictionary(self.dataset_as_list_of_lists)
-                if self.dataset_as_list_of_lists
-                else None
-            )
+            # Dictionary used to filter topic words. Prefer a precomputed dictionary
+            # (built from the fit corpus) so topics are not dropped when their words
+            # are absent from the smaller eval token set. Fall back to rebuilding from
+            # the tokenized dataset for backward compatibility.
+            dictionary = self.topic_filter_dictionary
+            if dictionary is None:
+                dictionary = (
+                    corpora.Dictionary(self.dataset_as_list_of_lists)
+                    if self.dataset_as_list_of_lists
+                    else None
+                )
 
             # Extract topic words
             num_topics = len(set(topics)) - (1 if -1 in topics else 0)
@@ -556,12 +574,21 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
                     print(f"[TRAIN] ✓ c-TF-IDF matrix extracted successfully, shape: {topic_word_matrix.shape}")
             
             output_dict['topic-word-matrix'] = topic_word_matrix
-            output_dict['topic-document-matrix'] = np.array(probabilities)
+            # Hard topic assignment per document; -1 marks outliers. Used for the
+            # outlier rate so it does not depend on calculate_probabilities.
+            output_dict['document-topics'] = np.asarray(topics)
+            # Full probability matrix only exists when calculate_probabilities=True;
+            # otherwise BERTopic returns None (kept for backward compatibility).
+            output_dict['topic-document-matrix'] = (
+                np.array(probabilities) if probabilities is not None else None
+            )
             
+            topics_out = output_dict["topics"]
+            output_dict["n_topics"] = len(topics_out) if topics_out else 0
+
             if self.verbose:
                 print(f"[TRAIN] ✓ Output created:")
-                topics_out = output_dict["topics"]
-                n_topics_out = len(topics_out) if topics_out is not None else 0
+                n_topics_out = output_dict["n_topics"]
                 print(f"   Topics: {n_topics_out}")
                 print(f"   Topic-word matrix shape: {output_dict['topic-word-matrix'].shape}")
                 print(f"   Topic-document matrix shape: {output_dict['topic-document-matrix'].shape}")

@@ -144,6 +144,49 @@ class BoResumeTests(unittest.TestCase):
     def test_bo_calls_done_from_f_val(self) -> None:
         self.assertEqual(bo_calls_done(_sample_payload(n_calls=4)), 4)
 
+    def test_project_result_with_topic_penalty_extras(self) -> None:
+        payload = {
+            "metric_name": "CoherenceWithTopicPenalty",
+            "extra_metric_names": [
+                "0_TopicDiversity",
+                "1_TopicCount",
+                "2_RawCoherence",
+            ],
+            "number_of_call": 3,
+            "current_call": 1,
+            "f_val": [0.33, 0.41],
+            "x_iters": {"umap__n_neighbors": [11, 24]},
+            "dict_model_runs": {
+                "CoherenceWithTopicPenalty": {
+                    "iteration_0": [0.33],
+                    "iteration_1": [0.41],
+                },
+                "0_TopicDiversity": {"iteration_0": [0.9], "iteration_1": [0.85]},
+                "1_TopicCount": {"iteration_0": [2.0], "iteration_1": [25.0]},
+                "2_RawCoherence": {"iteration_0": [0.48], "iteration_1": [0.44]},
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rows = project_result_to_trials(
+                payload,
+                run_id="v2_run",
+                model_idx=1,
+                model_name="sentence-transformers/all-MiniLM-L12-v2",
+                train_csv=root / "train.csv",
+                eval_csv=root / "eval.csv",
+                test_csv=root / "test.csv",
+                seed=42,
+                stability_score=0.0,
+            )
+        self.assertEqual(len(rows), 2)
+        self.assertAlmostEqual(rows[0]["coherence_c_v"], 0.48)
+        self.assertAlmostEqual(rows[0]["bo_objective"], 0.33)
+        self.assertAlmostEqual(rows[0]["n_topics"], 2.0)
+        self.assertAlmostEqual(rows[1]["coherence_c_v"], 0.44)
+        self.assertAlmostEqual(rows[1]["bo_objective"], 0.41)
+        self.assertAlmostEqual(rows[1]["n_topics"], 25.0)
+
 
 if __name__ == "__main__":
     unittest.main()

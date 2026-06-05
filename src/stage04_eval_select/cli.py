@@ -43,6 +43,21 @@ def select_cmd(trials_csv: Path, config: Path, run_id: str) -> None:
     selection_dir.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_csv(trials_csv)
+
+    min_n_topics = int(cfg["selection"].get("min_n_topics", 0))
+    if min_n_topics > 0 and "n_topics" in df.columns:
+        before = len(df)
+        df = df[df["n_topics"].fillna(0) >= min_n_topics].copy()
+        click.echo(
+            f"Topic-count floor: kept {len(df)}/{before} trials "
+            f"(min_n_topics={min_n_topics})"
+        )
+        if df.empty:
+            raise ValueError(
+                f"No trials meet min_n_topics={min_n_topics}. "
+                "Lower the floor in eval_select.yaml or revisit the Stage 03 search space."
+            )
+
     df = _normalize_for_pareto(df)
     df_p = df.rename(
         columns={

@@ -3,6 +3,11 @@
 selection:
   pareto_first: true
   top_k: 10
+  # Drop trials with fewer than this many topics before Pareto/weighting. Guards
+  # against degenerate 2-3 topic solutions being selected on coherence alone.
+  # Set to 0 to disable. Applies to rows in trials.csv that carry an n_topics value.
+  # Keep aligned with optimization.topic_count_penalty.min_n_topics in train.yaml.
+  min_n_topics: 20
 
 weights:
   coherence: 0.4

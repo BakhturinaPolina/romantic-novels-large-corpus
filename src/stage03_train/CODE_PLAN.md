@@ -197,6 +197,17 @@ def apply_weighted_score(
   - `paraphrase-mpnet-base-v2` and `paraphrase-MiniLM-L6-v2` provided the best coherence/diversity balance.
   - low-coherence models (`whaleloops/phrase-bert`, `paraphrase-distilroberta-base-v1`, `multi-qa-mpnet-base-cos-v1`) were excluded from active tuning.
 
+### Stratified fit sample and search-space prior
+- `make_fit_sample.py` selects the BERTopic fit/eval rows as stratified **indices into the
+  full corpus** (`fit_indices` train partition, `eval_indices` val partition). Tuning fits
+  on the train partition only and reuses the full-corpus embedding `.npy` per model via
+  `configs/train.yaml -> embeddings_cache.overrides` (no re-encoding).
+- The OCTIS search space in `configs/train.yaml` is shifted/widened from the 100-novel
+  pretest prior (e.g. `hdbscan__min_cluster_size [300, 3000]`, `bertopic__min_topic_size
+  [100, 1500]`, `umap__n_components [5, 15]`, `umap__n_neighbors [10, 75]`).
+- Reports: `results/reports/stage03_stratified_fit_sample_design.md`,
+  `results/reports/stage03_bertopic_search_space_prior.md`.
+
 ## `cli.py`
 
 ### Outputs

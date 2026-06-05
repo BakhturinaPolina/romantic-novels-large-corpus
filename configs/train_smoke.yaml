@@ -17,6 +17,11 @@ text:
   coherence_eval_max_docs: 200
   bertopic_fit_max_docs: 800
 
+# Smoke fixtures are tiny, so the search space stays small (the production ranges
+# in train.yaml are scaled for the 500k-sentence fit corpus). Match the runtime flag.
+bertopic:
+  calculate_probabilities: false
+
 optimization:
   number_of_calls: 3
   model_runs: 1

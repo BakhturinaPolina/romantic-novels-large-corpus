@@ -81,6 +81,35 @@ Do not copy model-specific caches from MiniLM-L12 when the second machine runs M
 - `data/interim/octis/minilm12v2_first/embeddings_cache/*.npy`
 - `data/interim/octis/minilm12v2_first/embeddings_cache/*.progress.json`
 
+## 3b) Stratified fit-sample run that reuses full `.npy` caches
+
+The default `configs/train.yaml` now tunes on a **stratified, train-only** fit sample and
+**reuses precomputed full-corpus embeddings** (no re-encoding). To use it:
+
+1. Build the fit/eval indices once on the host (CPU-only, streams the full CSVs):
+
+```bash
+python -m src.stage03_train.make_fit_sample \
+  --train-csv data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv \
+  --val-csv data/processed/romance_subdataset_downloaded_v2_sentences/sentences_val.csv \
+  --metadata-train data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata/romance_subdataset_downloaded_v2_train.csv \
+  --metadata-val data/raw/romance_subdataset_downloaded_v2_full/subsampling_metadata/romance_subdataset_downloaded_v2_val.csv \
+  --out-dir data/stage03_samples --train-target 500000 --val-target 100000 --seed 42
+```
+
+2. Place each model's **full** `train_eval_*.npy` under its run-id cache dir
+   (`data/interim/octis/<run_id>/embeddings_cache/`) and point
+   `configs/train.yaml -> embeddings_cache.overrides` at them. The three caches share
+   the same full train->eval row order, so indices gathered for one are valid for all.
+
+3. Reuse a prebuilt full `corpus.tsv` by setting
+   `configs/paths_stage03_fit.yaml -> inputs.octis_corpus_dir` (e.g.
+   `data/interim/octis/minilm12v2_first`) to skip the ~100M-row corpus rewrite.
+
+Mount `data/stage03_samples` (it lives under the already-mounted `data/`). The run will
+fail fast with a clear error if a configured override `.npy` is missing or its row count
+does not match the corpus.
+
 ## 4) Run detached with `docker run` (resumable)
 
 Run **detached** (`-d`) so the job survives terminal/SSH disconnects. All four host

@@ -80,6 +80,14 @@ def _median_metric(
     return float(np.median(runs))
 
 
+def _metric_key_by_substring(extra_names: list[str], substring: str) -> str | None:
+    """Find an OCTIS extra-metric key whose name contains ``substring``."""
+    for name in extra_names:
+        if substring in name:
+            return name
+    return None
+
+
 def project_result_to_trials(
     payload: dict[str, Any],
     *,
@@ -98,26 +106,43 @@ def project_result_to_trials(
         return []
 
     metric_name = str(payload.get("metric_name", "Coherence"))
-    extra_names = payload.get("extra_metric_names") or []
-    diversity_key = extra_names[0] if extra_names else None
+    extra_names = list(payload.get("extra_metric_names") or [])
+    diversity_key = (
+        _metric_key_by_substring(extra_names, "TopicDiversity")
+        or (extra_names[0] if extra_names else None)
+    )
+    n_topics_key = _metric_key_by_substring(extra_names, "TopicCount")
+    raw_coh_key = _metric_key_by_substring(extra_names, "RawCoherence")
     dict_model_runs = payload.get("dict_model_runs") or {}
     x_iters = payload.get("x_iters") or {}
 
     rows: list[dict[str, Any]] = []
     for i in range(k):
+        bo_objective = _median_metric(dict_model_runs, metric_name, i)
+        raw_coherence = (
+            _median_metric(dict_model_runs, raw_coh_key, i) if raw_coh_key else np.nan
+        )
+        if raw_coh_key:
+            coherence_c_v = raw_coherence
+        else:
+            coherence_c_v = bo_objective
+
         row: dict[str, Any] = {
             "run_id": run_id,
             "trial_id": f"{run_id}_{model_idx}_call_{i}",
             "bo_call": i,
             "seed": seed,
             "embedding_model": model_name,
-            "coherence_c_v": _median_metric(dict_model_runs, metric_name, i),
+            "coherence_c_v": coherence_c_v,
+            "bo_objective": bo_objective if raw_coh_key else np.nan,
             "coherence_c_npmi": np.nan,
             "topic_diversity": (
                 _median_metric(dict_model_runs, diversity_key, i) if diversity_key else np.nan
             ),
             "outlier_rate": np.nan,
-            "n_topics": np.nan,
+            "n_topics": (
+                _median_metric(dict_model_runs, n_topics_key, i) if n_topics_key else np.nan
+            ),
             "stability_score": stability_score,
             "train_csv": str(train_csv),
             "eval_csv": str(eval_csv),
