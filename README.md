@@ -40,7 +40,22 @@ To run Stage03 on a second NVIDIA/CUDA-12.x box (e.g. to tune a different embedd
 bash scripts/make_transfer_bundle.sh   # → transfer_bundle/ (Dockerfile, code, configs, deps)
 ```
 
-Ship `transfer_bundle/` to the target machine (plus the data CSVs and a private `.env`), then `cd transfer_bundle && docker build -t romance-stage03:latest .` and launch detached. Docker assets live in [docker/](docker/); build from the repo root with `docker build -f docker/Dockerfile -t romance-stage03:latest .` if you are not using the bundle. Runs are **resumable**: `data/`, `results/`, `logs/`, and `models/` are bind-mounted, and re-running `tune` with the **same `--run-id`** continues from disk — skipping completed data loads, the OCTIS corpus, cached embeddings, and finished models, and re-seeding the Bayesian-optimization loop instead of restarting at call 0. Full instructions and copy-paste run blocks per model: [docker/README.md](docker/README.md).
+Ship `transfer_bundle/` to the target machine (plus the data CSVs and a private `.env`), then `cd transfer_bundle && docker build -t romance-stage03:latest .` and launch detached. Docker assets live in [docker/](docker/); build from the repo root with `docker build -f docker/Dockerfile -t romance-stage03:latest .` if you are not using the bundle. Runs are **resumable**: `data/`, `results/`, `logs/`, and `models/` are bind-mounted, and re-running `tune` with the **same `--run-id`** continues from disk — skipping completed data loads, the OCTIS corpus, cached embeddings, and finished models, and resuming the Bayesian-optimization loop from the last completed call. Full instructions and copy-paste run blocks per model: [docker/README.md](docker/README.md).
+
+### Stage03 stratified tuning (large corpus)
+
+For the v2 sentence corpus (~100M rows), BERTopic fits on a **stratified 500k train subsample** and reuses precomputed full-corpus embeddings by index (no re-encoding):
+
+```bash
+# 1) Build fit/eval indices once (see docker/README.md for full args)
+python -m src.stage03_train.cli sample --train-csv ... --val-csv ... \
+  --out-dir data/stage03_samples --train-target 500000 --val-target 100000 --seed 42
+
+# 2) Tune (uses configs/train.yaml + configs/paths_stage03_fit.yaml)
+python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <run_id>
+```
+
+BO optimizes a **topic-count-penalized coherence** objective (`bo_objective` in `trials_partial.csv`); raw `coherence_c_v` and `n_topics` are logged per call. Stage 04 applies a `min_n_topics` floor before Pareto ranking. Design notes: [stage03_stratified_fit_sample_design.md](results/reports/stage03_stratified_fit_sample_design.md), [stage03_bertopic_search_space_prior.md](results/reports/stage03_bertopic_search_space_prior.md).
 
 ## Pipeline
 

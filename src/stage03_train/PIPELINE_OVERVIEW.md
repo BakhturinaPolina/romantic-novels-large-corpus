@@ -173,12 +173,19 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
   `[0, n_train)`; coherence on stratified `eval_indices` from the val partition.
 - Full-corpus embedding reuse via `embeddings_cache.overrides`; prebuilt corpus reuse
   via `inputs.octis_corpus_dir`; runtime `embeddings.shape[0] == len(doc_store)` assertion.
+- Fit-corpus topic-word filter dictionary (built once per model, passed as
+  `topic_filter_dictionary`) so topics are not dropped when words are absent from the
+  smaller eval token set.
+- `CoherenceWithTopicPenalty` BO objective (`topic_count_penalty` in `configs/train.yaml`);
+  per-call `trials_partial.csv` logs `coherence_c_v`, `bo_objective`, `n_topics`, and
+  `topic_diversity`.
 - `bertopic.calculate_probabilities = false` during tuning (probability matrices are
   unnecessary for coherence/diversity selection and expensive at scale).
 - Explicit run IDs.
 - Auto-resume behavior for repeated runs with the same `run_id`:
   - skip OCTIS corpus rewrite if already present
   - skip completed embedding-model trials already recorded in state + `trials.csv`
+  - resume BO from `result.json` checkpoint (last completed call)
   - continue remaining models without recomputing completed work
 
 ---
@@ -239,11 +246,12 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 ### `cli.py`
 
 **What it does**
-- Applies Pareto-then-weighted ranking.
+- Applies topic-count floor, then Pareto-then-weighted ranking.
 - Emits winner config used by Stage 05.
 
 **Inputs**
 - `results/experiments/<run_id>/trials.csv`
+- `configs/eval_select.yaml` (`selection.min_n_topics`, default 20)
 
 **Outputs**
 - `results/selection/<run_id>/winner_config.json`

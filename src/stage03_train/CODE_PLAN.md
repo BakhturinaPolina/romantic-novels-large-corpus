@@ -152,6 +152,9 @@ Required columns:
 - `outlier_rate`
 - `n_topics`
 - `stability_score`
+
+`trials_partial.csv` (per BO call) additionally includes `bo_objective` and populates
+`n_topics` from the `TopicCount` extra metric; `coherence_c_v` is raw (unpenalized).
 - hyperparameter columns:
   - `umap__n_neighbors`
   - `umap__n_components`
@@ -182,9 +185,10 @@ def apply_weighted_score(
 ```
 
 ### Ranking policy
-1. Keep Pareto-efficient rows on `(coherence_c_v, topic_diversity)`.
-2. Rank remaining rows by weighted score.
-3. Emit top-k and winner.
+1. Drop rows with `n_topics < selection.min_n_topics` (default 20; 0 disables).
+2. Keep Pareto-efficient rows on `(coherence_c_v, topic_diversity)`.
+3. Rank remaining rows by weighted score.
+4. Emit top-k and winner.
 
 ### Pareto rationale and active model scope
 - Pareto filtering keeps only rows where improving coherence would reduce diversity (or vice versa), matching the required trade-off framing.
@@ -202,9 +206,20 @@ def apply_weighted_score(
   full corpus** (`fit_indices` train partition, `eval_indices` val partition). Tuning fits
   on the train partition only and reuses the full-corpus embedding `.npy` per model via
   `configs/train.yaml -> embeddings_cache.overrides` (no re-encoding).
-- The OCTIS search space in `configs/train.yaml` is shifted/widened from the 100-novel
-  pretest prior (e.g. `hdbscan__min_cluster_size [300, 3000]`, `bertopic__min_topic_size
-  [100, 1500]`, `umap__n_components [5, 15]`, `umap__n_neighbors [10, 75]`).
+- Topic-word filtering uses a **precomputed fit-corpus** gensim `Dictionary` injected into
+  `BERTopicOctisModelWithEmbeddings` (`topic_filter_dictionary`); coherence/diversity are
+  still computed on stratified eval tokens separately.
+- Current search space in `configs/train.yaml` (post v1 collapse fix):
+  `hdbscan__min_cluster_size [50, 800]`, `hdbscan__min_samples [5, 50]`,
+  `bertopic__min_topic_size [50, 500]`, `umap__n_components [5, 15]`,
+  `umap__n_neighbors [10, 75]`. Empirically, `min_cluster_size` ≲ 165 favors many topics;
+  the upper tail (≳ 180) often collapses to &lt; 20 topics.
+- BO primary metric: `CoherenceWithTopicPenalty` (`optimization.topic_count_penalty`:
+  `min_n_topics=20`, `weight=0.15`). Extra metrics: `TopicDiversity`, `TopicCount`,
+  `RawCoherence`. `trials_partial.csv` stores `coherence_c_v` (raw), `bo_objective`
+  (penalized), and `n_topics` per call.
+- Stage 04: `configs/eval_select.yaml -> selection.min_n_topics` (default 20) filters
+  degenerate winners before Pareto/weighting.
 - Reports: `results/reports/stage03_stratified_fit_sample_design.md`,
   `results/reports/stage03_bertopic_search_space_prior.md`.
 
