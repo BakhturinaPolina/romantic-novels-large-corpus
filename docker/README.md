@@ -10,6 +10,17 @@ bash scripts/make_transfer_bundle.sh
 
 Ship `transfer_bundle/` to the target machine; carry the data CSVs and a filled-in `.env` separately (see step 3).
 
+## v3 English-Only Corpus (Recommended)
+
+The v3 corpus removes 460 non-English books (Spanish, Portuguese, French, etc.) for cleaner topic modeling. Statistics:
+
+| Split | v2 Sentences | v3 Sentences | Removed |
+|-------|-------------|-------------|---------|
+| Train | 82,114,042 | 80,230,272 | 2.3% |
+| Val | 17,709,782 | 17,198,034 | 2.9% |
+| Test | 18,238,772 | 17,475,960 | 4.2% |
+| **Total** | **118,062,596** | **114,904,266** | **2.7%** |
+
 ## 1) Prerequisites on the target machine
 
 - Linux + NVIDIA GPU
@@ -38,7 +49,7 @@ cd transfer_bundle
 docker build -t romance-stage03:latest .
 ```
 
-## Second laptop: exact startup (stratified tuning)
+## Second laptop: exact startup (v3 English-only corpus)
 
 Run these on the second laptop after copying `transfer_bundle/` from the flash drive:
 
@@ -46,19 +57,149 @@ Run these on the second laptop after copying `transfer_bundle/` from the flash d
 cd ~/romance_parallel
 rsync -a /media/$USER/<FLASH_DRIVE>/transfer_bundle/ ./
 
-# Large files (not inside the bundle) — copy from flash drive or rsync from source:
-#   data/processed/romance_subdataset_downloaded_v2_sentences/sentences_{train,val,test}.csv
-#   data/interim/octis/minilm12v2_first/corpus.{tsv,offsets.npy}   # optional, saves ~10 min
-#   data/interim/octis/mpnet_first/embeddings_cache/train_eval_sentence-transformers__paraphrase-mpnet-base-v2.npy
-#   data/interim/octis/minilm6_first/embeddings_cache/train_eval_sentence-transformers__paraphrase-MiniLM-L6-v2.npy
+# Copy v3 sentence CSVs from flash drive (~9 GB total):
+cp /media/$USER/<FLASH_DRIVE>/sentences_train.csv data/raw/romance_subdataset_filtered_v3/
+cp /media/$USER/<FLASH_DRIVE>/sentences_val.csv data/raw/romance_subdataset_filtered_v3/
+cp /media/$USER/<FLASH_DRIVE>/sentences_test.csv data/raw/romance_subdataset_filtered_v3/
 
 cp .env.example .env   # then edit .env and paste your HF_TOKEN
 docker build -t romance-stage03:latest .
-
-# MPNet (uses pre-placed .npy under data/interim/octis/mpnet_first/embeddings_cache/)
-RUN_ID=mpnet_first EMBEDDING_MODEL=sentence-transformers/paraphrase-mpnet-base-v2 docker compose up -d
-docker compose logs -f stage03
 ```
+
+### Step 1: Build v3 OCTIS corpus (~15 minutes)
+
+```bash
+docker run --rm --gpus all \
+  -v "$(pwd)/data:/app/data" \
+  -v "$(pwd)/logs:/app/logs" \
+  romance-stage03:latest \
+  python3 -c "
+from pathlib import Path
+from src.stage03_train.octis_corpus import write_octis_corpus_from_csvs
+import logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+logger = logging.getLogger('v3_corpus')
+
+print('Building v3 OCTIS corpus from English-only sentences...')
+corpus_path, offsets_path, n_train, n_eval = write_octis_corpus_from_csvs(
+    Path('data/raw/romance_subdataset_filtered_v3/sentences_train.csv'),
+    Path('data/raw/romance_subdataset_filtered_v3/sentences_val.csv'),
+    Path('data/interim/octis/v3_english_only'),
+    logger=logger,
+)
+print(f'Done! {n_train:,} train + {n_eval:,} eval = {n_train + n_eval:,} total rows')
+"
+```
+
+### Step 2: Build v3 embeddings (~4 days per model)
+
+```bash
+# MiniLM-L12 embeddings (384 dim, ~140 GB output)
+docker run -d --name romance-v3-embeddings --gpus all --env-file .env \
+  -v "$(pwd)/data:/app/data" \
+  -v "$(pwd)/results:/app/results" \
+  -v "$(pwd)/logs:/app/logs" \
+  romance-stage03:latest \
+  python3 -c "
+from pathlib import Path
+import numpy as np
+from sentence_transformers import SentenceTransformer
+from src.stage03_train.corpus_store import CorpusDocStore, corpus_offsets_path
+import torch
+
+# Load v3 corpus
+corpus_dir = Path('data/interim/octis/v3_english_only')
+corpus_tsv = corpus_dir / 'corpus.tsv'
+offsets_file = corpus_offsets_path(corpus_dir)
+doc_store = CorpusDocStore(corpus_tsv, offsets_file)
+n_docs = len(doc_store)
+print(f'Loaded corpus: {n_docs:,} documents')
+
+# Load embedding model
+model_name = 'sentence-transformers/all-MiniLM-L12-v2'
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model = SentenceTransformer(model_name, device=device)
+dim = model.get_sentence_embedding_dimension()
+print(f'Model: {model_name} ({dim} dim) on {device}')
+
+# Output path
+out_path = corpus_dir / 'embeddings_cache' / f'train_eval_{model_name.replace(\"/\", \"__\")}.npy'
+out_path.parent.mkdir(parents=True, exist_ok=True)
+
+# Check for resume
+start_idx = 0
+if out_path.exists():
+    existing = np.load(out_path, mmap_mode='r')
+    start_idx = existing.shape[0]
+    print(f'Resuming from row {start_idx:,}')
+
+# Preallocate or open existing
+if start_idx == 0:
+    embeddings = np.memmap(out_path, dtype='float32', mode='w+', shape=(n_docs, dim))
+else:
+    embeddings = np.memmap(out_path, dtype='float32', mode='r+', shape=(n_docs, dim))
+
+# Encode in batches
+batch_size = 512
+for i in range(start_idx, n_docs, batch_size):
+    end = min(i + batch_size, n_docs)
+    docs = doc_store.fetch_documents(list(range(i, end)))
+    emb = model.encode(docs, show_progress_bar=False, convert_to_numpy=True)
+    embeddings[i:end] = emb
+    if (i // batch_size) % 100 == 0:
+        embeddings.flush()
+        pct = 100 * end / n_docs
+        print(f'Progress: {end:,}/{n_docs:,} ({pct:.2f}%)')
+
+embeddings.flush()
+print(f'Done! Saved to {out_path}')
+"
+
+# Monitor progress
+docker logs -f romance-v3-embeddings
+```
+
+### Step 3: Generate v3 fit/eval indices
+
+```bash
+docker run --rm --gpus all \
+  -v "$(pwd)/data:/app/data" \
+  romance-stage03:latest \
+  python3 -m src.stage03_train.make_fit_sample \
+    --train-csv data/raw/romance_subdataset_filtered_v3/sentences_train.csv \
+    --val-csv data/raw/romance_subdataset_filtered_v3/sentences_val.csv \
+    --metadata-train data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_train.csv \
+    --metadata-val data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_val.csv \
+    --out-dir data/stage03_samples_v3 --train-target 500000 --val-target 100000 --seed 42
+```
+
+### Step 4: Run BO tuning on v3
+
+After embeddings complete (~4 days), start the BO optimization:
+
+```bash
+# Update configs/paths_stage03_fit.yaml to point to v3:
+#   sentences_train_csv: data/raw/romance_subdataset_filtered_v3/sentences_train.csv
+#   sentences_val_csv: data/raw/romance_subdataset_filtered_v3/sentences_val.csv
+#   octis_corpus_dir: data/interim/octis/v3_english_only
+#   fit_indices_file: data/stage03_samples_v3/fit_indices_seed42.npy
+#   eval_indices_file: data/stage03_samples_v3/eval_indices_seed42.npy
+
+docker run -d --name romance-stage03-v3 --gpus all --env-file .env \
+  -v "$(pwd)/data:/app/data" \
+  -v "$(pwd)/results:/app/results" \
+  -v "$(pwd)/logs:/app/logs" \
+  -v "$(pwd)/models:/app/models" \
+  romance-stage03:latest \
+  python3 -m src.stage03_train.cli tune \
+    --config configs/train.yaml \
+    --run-id v3_minilm12v2_first \
+    --embedding-model sentence-transformers/all-MiniLM-L12-v2
+
+docker logs -f romance-stage03-v3
+```
+
+## Legacy v2 workflow (alternative)
 
 For MiniLM-L6, change `RUN_ID=minilm6_first` and `EMBEDDING_MODEL=sentence-transformers/paraphrase-MiniLM-L6-v2`.
 
