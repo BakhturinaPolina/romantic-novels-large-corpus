@@ -386,8 +386,26 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
                     "falling back to English + custom stopwords"
                 )
         vectorizer_params["stop_words"] = merged_stop_words
+
+        # Fix for empty topic representations: proportional min_df is too high for small
+        # clusters on large corpora. Override to absolute value if it looks like a proportion.
+        orig_min_df = vectorizer_params.get("min_df", 1)
+        if isinstance(orig_min_df, float) and orig_min_df < 1.0:
+            vectorizer_params["min_df"] = 5
+            if self.verbose:
+                print(
+                    f"[TRAIN] Overriding min_df from {orig_min_df:.4f} (proportional) "
+                    f"to {vectorizer_params['min_df']} (absolute) for small-cluster support"
+                )
+
+        # Fix for garbage tokens: enforce alphabetic tokens of 2+ characters only.
+        if "token_pattern" not in vectorizer_params:
+            vectorizer_params["token_pattern"] = r"(?u)\b[a-zA-Z]{2,}\b"
+            if self.verbose:
+                print("[TRAIN] Set token_pattern to enforce 2+ char alphabetic tokens only")
+
         if self.verbose:
-            print(f"[TRAIN] CountVectorizer stopwords: {len(merged_stop_words):,} total")
+            print(f"[TRAIN] CountVectorizer stopwords: {len(merged_stop_words):,} total, min_df={vectorizer_params.get('min_df')}")
         vectorizer_model = CountVectorizer(**vectorizer_params)
         
         if self.verbose:
@@ -436,6 +454,23 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
                     f"Embeddings first dimension ({embeddings_numpy.shape[0]}) must match "
                     f"number of documents ({len(self.dataset_as_list_of_strings)})"
                 )
+
+            # Filter short documents that cause empty-representation clusters.
+            # Sentences with < MIN_WORDS words (e.g., "yes.", "no.") cluster together
+            # but c-TF-IDF can't extract keywords from them.
+            MIN_WORDS_FIT = 4
+            orig_len = len(self.dataset_as_list_of_strings)
+            keep_mask = np.array([len(doc.split()) >= MIN_WORDS_FIT for doc in self.dataset_as_list_of_strings])
+            fit_docs = [doc for doc, keep in zip(self.dataset_as_list_of_strings, keep_mask) if keep]
+            embeddings_numpy = embeddings_numpy[keep_mask]
+            if self.verbose:
+                removed = orig_len - len(fit_docs)
+                print(
+                    f"[TRAIN] Filtered short docs (<{MIN_WORDS_FIT} words): "
+                    f"{orig_len:,} -> {len(fit_docs):,} (removed {removed:,} / {100.0 * removed / orig_len:.2f}%)"
+                )
+            # Update instance variable for coherence evaluation compatibility
+            self._filtered_docs = fit_docs
             
             if self.verbose:
                 print(f"[TRAIN] Final embeddings shape: {embeddings_numpy.shape}, dtype: {embeddings_numpy.dtype}")
@@ -448,14 +483,38 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             # RAPIDS cuML automatically transfers NumPy arrays to GPU during operations
             with track_memory_peak(f"BERTopic Training: {self.embedding_model_name}"):
                 topics, probabilities = topic_model.fit_transform(
-                    self.dataset_as_list_of_strings,
+                    fit_docs,
                     embeddings=embeddings_numpy
                 )
             
             if self.verbose:
                 print(f"[TRAIN] ✓ fit_transform completed")
-                print(f"[TRAIN] Topics found: {len(set(topics)) - (1 if -1 in topics else 0)}")
-                print(f"[TRAIN] Outliers: {sum(1 for t in topics if t == -1)}")
+                n_topics_real = len(set(topics)) - (1 if -1 in topics else 0)
+                outlier_count = sum(1 for t in topics if t == -1)
+                print(f"[TRAIN] Topics found: {n_topics_real}")
+                print(f"[TRAIN] Outliers: {outlier_count} ({100.0 * outlier_count / len(fit_docs):.2f}%)")
+
+                # Check for empty-representation topics (a red flag for preprocessing issues)
+                empty_repr_topics = []
+                for tid in range(n_topics_real):
+                    pairs = topic_model.get_topic(tid)
+                    if not pairs or all(w == "" for (w, _) in pairs[:10]):
+                        empty_repr_topics.append(tid)
+                if empty_repr_topics:
+                    print(
+                        f"[TRAIN] ⚠️ WARNING: {len(empty_repr_topics)}/{n_topics_real} topics have "
+                        f"empty representations: {empty_repr_topics[:10]}"
+                    )
+
+                # Print top-5 topics by size with their top words
+                topic_info = topic_model.get_topic_info()
+                top5 = topic_info[topic_info["Topic"] != -1].nlargest(5, "Count")
+                print("[TRAIN] Top-5 topics by document count:")
+                for _, row in top5.iterrows():
+                    tid = int(row["Topic"])
+                    pairs = topic_model.get_topic(tid)
+                    words = [w for (w, _) in pairs[:8] if w] if pairs else []
+                    print(f"  Topic {tid} ({int(row['Count'])} docs): {', '.join(words) if words else '(empty)'}")
             
             # Enhanced GPU memory cleanup
             if self.verbose:
