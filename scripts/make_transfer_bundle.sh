@@ -100,6 +100,11 @@ copy_if_exists "$ROOT/data/stage03_samples/fit_indices_seed42.npy" "$SAMPLES_DIR
 copy_if_exists "$ROOT/data/stage03_samples/eval_indices_seed42.npy" "$SAMPLES_DIR/eval_indices_seed42.npy"
 copy_if_exists "$ROOT/data/stage03_samples/sample_manifest_seed42.json" "$SAMPLES_DIR/sample_manifest_seed42.json"
 copy_if_exists "$ROOT/data/interim/octis/minilm12v2_first/metadata.json" "$OCTIS_SHARED/metadata.json"
+
+# v3 OCTIS corpus (pre-built, saves ~15 min on target machine)
+echo "Copying v3 OCTIS corpus (~8 GB)..."
+copy_if_exists "$ROOT/data/interim/octis/v3_english_only/corpus.tsv" "$OCTIS_V3/corpus.tsv"
+copy_if_exists "$ROOT/data/interim/octis/v3_english_only/corpus.offsets.npy" "$OCTIS_V3/corpus.offsets.npy"
 copy_if_exists "$ROOT/data/interim/octis/v3_english_only/metadata.json" "$OCTIS_V3/metadata.json"
 
 # README files for large payloads and .npy drop zones.
@@ -132,7 +137,8 @@ The v3 corpus has 460 non-English books removed (2.8% of corpus). Use v3 for cle
 
 | Priority | Path | Size (approx.) | Notes |
 |----------|------|----------------|-------|
-| **Build on target** | `interim/octis/v3_english_only/corpus.tsv` | ~7.3 GB | Build with script below |
+| **Included** | `interim/octis/v3_english_only/corpus.tsv` | 7.3 GB | Pre-built v3 corpus |
+| **Included** | `interim/octis/v3_english_only/corpus.offsets.npy` | 744 MB | Byte offsets index |
 | **Build on target** | `interim/octis/v3_english_only/embeddings_cache/*.npy` | ~50-140 GB | ~4 days to compute |
 | Legacy | `interim/octis/minilm12v2_first/corpus.tsv` | ~7.5 GB | v2 corpus (optional) |
 | Legacy | `interim/octis/minilm12v2_first/embeddings_cache/*.npy` | ~143 GB | v2 embeddings |
@@ -143,6 +149,7 @@ The v3 corpus has 460 non-English books removed (2.8% of corpus). Use v3 for cle
 - `raw/romance_subdataset_filtered_v3/v3_filtering_manifest.json`
 - `raw/romance_subdataset_filtered_v3/language_analysis.csv`
 - `raw/romance_subdataset_filtered_v3/subsampling_metadata/*.csv`
+- `interim/octis/v3_english_only/corpus.tsv`, `corpus.offsets.npy`, `metadata.json`
 - `stage03_samples/fit_indices_seed42.npy`, `eval_indices_seed42.npy` (v2 indices)
 
 ## v3 Row Counts
@@ -185,12 +192,19 @@ See `language_analysis.csv` and `v3_filtering_manifest.json` for details.
 EOF
 
 cat > "$OCTIS_V3/README.md" <<'EOF'
-# v3 English-Only OCTIS Corpus (build on target)
+# v3 English-Only OCTIS Corpus (pre-built)
 
-This folder is for the v3 English-only corpus. Build it on the target machine:
+This folder contains the pre-built v3 English-only corpus:
+
+- `corpus.tsv` (7.3 GB, 97,428,306 rows)
+- `corpus.offsets.npy` (744 MB)
+- `metadata.json`
+
+Row breakdown: 80,230,272 train + 17,198,034 eval
+
+If files are missing, rebuild with:
 
 ```bash
-# Inside Docker container or with venv activated
 python -c "
 from pathlib import Path
 from src.stage03_train.octis_corpus import write_octis_corpus_from_csvs
@@ -206,11 +220,6 @@ write_octis_corpus_from_csvs(
 )
 "
 ```
-
-Expected output:
-- `corpus.tsv` (~7.3 GB, 97.4M rows)
-- `corpus.offsets.npy` (~750 MB)
-- `metadata.json`
 
 Build time: ~10-15 minutes on SSD.
 EOF
