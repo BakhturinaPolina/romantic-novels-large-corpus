@@ -14,6 +14,18 @@ from src.stage04_eval_select.pareto_analysis import analyze_pareto_efficiency
 from src.stage04_eval_select.weighted_score import apply_weighted_score
 
 
+def _json_safe(value: object) -> object:
+    """Convert pandas/numpy missing values to JSON-null."""
+    if value is None:
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    return value
+
+
 def _normalize_for_pareto(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
     for col in ("coherence_c_v", "topic_diversity"):
@@ -93,17 +105,20 @@ def select_cmd(trials_csv: Path, config: Path, run_id: str) -> None:
         raise ValueError("No candidates remained after selection.")
     winner = top_k_df.iloc[0].to_dict()
     hyper = {k: v for k, v in winner.items() if "__" in k}
+    embedding_model = winner.get("embedding_model") or winner.get("Embeddings_Model")
     winner_payload = {
         "run_id": run_id,
         "selected_at": datetime.utcnow().isoformat() + "Z",
         "trial_id": winner["trial_id"],
-        "embedding_model": winner["embedding_model"],
+        "embedding_model": embedding_model,
         "selection_metrics": {
-            "coherence_c_v": winner.get("coherence_c_v"),
-            "topic_diversity": winner.get("topic_diversity"),
-            "outlier_rate": winner.get("outlier_rate"),
-            "stability_score": winner.get("stability_score"),
-            "weighted_score": winner.get("weighted_score"),
+            "coherence_c_v": _json_safe(winner.get("coherence_c_v")),
+            "topic_diversity": _json_safe(winner.get("topic_diversity")),
+            "outlier_rate": _json_safe(winner.get("outlier_rate")),
+            "stability_score": _json_safe(winner.get("stability_score")),
+            "weighted_score": _json_safe(winner.get("weighted_score")),
+            "n_topics": _json_safe(winner.get("n_topics")),
+            "bo_call": _json_safe(winner.get("bo_call")),
         },
         "hyperparameters": hyper,
         "train_csv": winner.get("train_csv"),

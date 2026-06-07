@@ -38,48 +38,83 @@ cd transfer_bundle
 docker build -t romance-stage03:latest .
 ```
 
-## Second laptop: exact 5-command startup
+## Second laptop: exact startup (stratified tuning)
 
 Run these on the second laptop after copying `transfer_bundle/` from the flash drive:
 
 ```bash
-cd ~/romance_parallel && rsync -a /media/$USER/<FLASH_DRIVE>/transfer_bundle/ ./ && mkdir -p data/interim/octis/minilm12v2_first && rsync -av --ignore-missing-args /media/$USER/<FLASH_DRIVE>/data/interim/octis/minilm12v2_first/corpus.tsv /media/$USER/<FLASH_DRIVE>/data/interim/octis/minilm12v2_first/corpus.offsets.npy /media/$USER/<FLASH_DRIVE>/data/interim/octis/minilm12v2_first/metadata.json data/interim/octis/minilm12v2_first/
+cd ~/romance_parallel
+rsync -a /media/$USER/<FLASH_DRIVE>/transfer_bundle/ ./
+
+# Large files (not inside the bundle) — copy from flash drive or rsync from source:
+#   data/processed/romance_subdataset_downloaded_v2_sentences/sentences_{train,val,test}.csv
+#   data/interim/octis/minilm12v2_first/corpus.{tsv,offsets.npy}   # optional, saves ~10 min
+#   data/interim/octis/mpnet_first/embeddings_cache/train_eval_sentence-transformers__paraphrase-mpnet-base-v2.npy
+#   data/interim/octis/minilm6_first/embeddings_cache/train_eval_sentence-transformers__paraphrase-MiniLM-L6-v2.npy
+
 cp .env.example .env   # then edit .env and paste your HF_TOKEN
 docker build -t romance-stage03:latest .
+
+# MPNet (uses pre-placed .npy under data/interim/octis/mpnet_first/embeddings_cache/)
 RUN_ID=mpnet_first EMBEDDING_MODEL=sentence-transformers/paraphrase-mpnet-base-v2 docker compose up -d
 docker compose logs -f stage03
 ```
 
+For MiniLM-L6, change `RUN_ID=minilm6_first` and `EMBEDDING_MODEL=sentence-transformers/paraphrase-MiniLM-L6-v2`.
+
 ## 3) What to copy on flash drive
 
-The `transfer_bundle/` folder already contains all code/config. Alongside it, copy the **data** (which is intentionally *not* baked into the image):
+The `transfer_bundle/` folder contains all code/config **plus a `data/` skeleton** with small
+artifacts already filled in (fit/eval indices, stoplist, subsampling metadata, OCTIS
+`metadata.json`) and **drop folders** for large payloads. See `data/README.md` inside the
+bundle for the full checklist.
 
-### Required data payload
+### Already inside the bundle (no copy needed)
 
-Copy these files to the target machine under the same relative paths:
+- `configs/train.yaml`, `configs/paths_stage03_fit.yaml` (stratified fit + embedding overrides)
+- `data/stage03_samples/fit_indices_seed42.npy`, `eval_indices_seed42.npy`, `sample_manifest_seed42.json`
+- `data/processed/custom_stoplist.txt`
+- `data/raw/.../subsampling_metadata/*.csv` (book metadata)
+- `data/interim/octis/minilm12v2_first/metadata.json`
+- Empty drop folders with READMEs:
+  - `data/interim/octis/mpnet_first/embeddings_cache/` → MPNet `.npy`
+  - `data/interim/octis/minilm6_first/embeddings_cache/` → MiniLM-L6 `.npy`
+  - `data/interim/octis/minilm12v2_first/embeddings_cache/` → MiniLM-L12 `.npy` (if running L12)
+
+Also create `.env` from `.env.example` (contains `HF_TOKEN`). Keep it private; never bake it into the image.
+
+### Required large payload (copy separately)
+
+Copy these files to the target machine under the same relative paths inside `data/`:
 
 - `data/processed/romance_subdataset_downloaded_v2_sentences/sentences_train.csv`
 - `data/processed/romance_subdataset_downloaded_v2_sentences/sentences_val.csv`
 - `data/processed/romance_subdataset_downloaded_v2_sentences/sentences_test.csv`
 
-Also copy:
-
-- `.env` (contains `HF_TOKEN` and optional API keys). Keep it private; never bake it into the image.
-
-### Optional payload (saves about 10 minutes)
+### Recommended payload (saves ~10 minutes)
 
 If you want to skip re-building the OCTIS corpus metadata on the second machine, also copy:
 
 - `data/interim/octis/minilm12v2_first/corpus.tsv`
 - `data/interim/octis/minilm12v2_first/corpus.offsets.npy`
-- `data/interim/octis/minilm12v2_first/metadata.json`
 
-### Do not copy for parallel different-model run
+This corpus is shared by all three embedding models.
 
-Do not copy model-specific caches from MiniLM-L12 when the second machine runs MPNet/L6:
+### Per-model embedding `.npy` (drop into bundle folders)
 
-- `data/interim/octis/minilm12v2_first/embeddings_cache/*.npy`
-- `data/interim/octis/minilm12v2_first/embeddings_cache/*.progress.json`
+Place each model's **full** `train_eval_*.npy` in its drop folder (exact filenames matter):
+
+| Model | Drop folder | Filename |
+|-------|-------------|----------|
+| MPNet | `data/interim/octis/mpnet_first/embeddings_cache/` | `train_eval_sentence-transformers__paraphrase-mpnet-base-v2.npy` |
+| MiniLM-L6 | `data/interim/octis/minilm6_first/embeddings_cache/` | `train_eval_sentence-transformers__paraphrase-MiniLM-L6-v2.npy` |
+| MiniLM-L12 | `data/interim/octis/minilm12v2_first/embeddings_cache/` | `train_eval_sentence-transformers__all-MiniLM-L12-v2.npy` |
+
+All three caches share the same full train→eval row order (~99.8M rows), so the bundled
+`fit_indices_seed42.npy` / `eval_indices_seed42.npy` work for every model.
+
+Do **not** copy another model's in-progress `.progress.json` partial caches unless you intend
+to resume that exact encoding job on the same machine.
 
 ## 3b) Stratified fit-sample run that reuses full `.npy` caches
 
