@@ -175,7 +175,28 @@ def _fit_bertopic(
     else:
         merged = sorted(set(ENGLISH_STOP_WORDS).union(custom_stopwords))
     vectorizer_params["stop_words"] = merged
-    LOGGER.info("CountVectorizer stopwords: %d total", len(merged))
+
+    # Fix for empty topic representations: proportional min_df is too high for small
+    # clusters on 500K docs. Override to absolute value if it looks like a proportion.
+    orig_min_df = vectorizer_params.get("min_df", 1)
+    if isinstance(orig_min_df, float) and orig_min_df < 1.0:
+        # Proportional: 0.01 on 500K = 5000 docs minimum - way too high for small topics
+        # Use absolute value: 5 docs minimum (still filters noise, allows small clusters)
+        vectorizer_params["min_df"] = 5
+        LOGGER.info(
+            "Overriding min_df from %.4f (proportional) to %d (absolute) for small-cluster support",
+            orig_min_df,
+            vectorizer_params["min_df"],
+        )
+
+    # Fix for garbage tokens: enforce alphabetic tokens of 2+ characters only.
+    # This matches legacy retrain_models.py behavior and filters numbers, single chars,
+    # and special patterns like "â€™" that slip through without proper mojibake cleanup.
+    if "token_pattern" not in vectorizer_params:
+        vectorizer_params["token_pattern"] = r"(?u)\b[a-zA-Z]{2,}\b"
+        LOGGER.info("Set token_pattern to enforce 2+ char alphabetic tokens only")
+
+    LOGGER.info("CountVectorizer stopwords: %d total, min_df=%s", len(merged), vectorizer_params["min_df"])
     vectorizer_model = CountVectorizer(**vectorizer_params)
 
     tfdf_model = ClassTfidfTransformer(**hp["tfdf_vectorizer"])
@@ -197,6 +218,45 @@ def _fit_bertopic(
         embeddings_numpy.shape,
     )
     topic_model.fit_transform(fit_docs, embeddings=embeddings_numpy)
+
+    # Early diagnostic: print topic counts and check for empty representations
+    info = topic_model.get_topic_info()
+    n_topics_real = len([t for t in info["Topic"] if int(t) != -1])
+    outlier_count = int(info[info["Topic"] == -1]["Count"].sum()) if -1 in info["Topic"].values else 0
+    LOGGER.info(
+        "Post-fit snapshot: %d topics (excl. outliers), outlier docs=%d (%.2f%%)",
+        n_topics_real,
+        outlier_count,
+        100.0 * outlier_count / len(fit_docs),
+    )
+    # Check for empty-representation topics (a red flag)
+    empty_repr_topics = []
+    for tid in info["Topic"].tolist():
+        if int(tid) == -1:
+            continue
+        pairs = topic_model.get_topic(int(tid))
+        if not pairs or all(w == "" for (w, _) in pairs[:10]):
+            empty_repr_topics.append(int(tid))
+    if empty_repr_topics:
+        LOGGER.warning(
+            "DIAGNOSTIC: %d/%d topics have empty representations: %s",
+            len(empty_repr_topics),
+            n_topics_real,
+            empty_repr_topics[:10],
+        )
+    # Print top-5 topics by count with their top words
+    top5 = info[info["Topic"] != -1].nlargest(5, "Count")
+    for _, row in top5.iterrows():
+        tid = int(row["Topic"])
+        pairs = topic_model.get_topic(tid)
+        words = [w for (w, _) in pairs[:8] if w] if pairs else []
+        LOGGER.info(
+            "  Topic %d (%d docs): %s",
+            tid,
+            int(row["Count"]),
+            ", ".join(words) if words else "(empty)",
+        )
+
     return topic_model
 
 
@@ -398,6 +458,24 @@ def run_compare_fit(
             n_train=n_train_docs,
             fit_indices_path=fit_indices_path,
         )
+    # --- Filter short documents that cause empty-representation clusters ----------
+    # Sentences with < MIN_WORDS_FIT words (e.g., "yes.", "no.", "what?") cluster
+    # together by embedding similarity but c-TF-IDF can't extract keywords from them.
+    # Filter before fitting to prevent these degenerate single-word-utterance topics.
+    MIN_WORDS_FIT = 4
+    orig_len = len(fit_docs)
+    keep_mask = np.array([len(doc.split()) >= MIN_WORDS_FIT for doc in fit_docs])
+    fit_docs = [doc for doc, keep in zip(fit_docs, keep_mask) if keep]
+    fit_embeddings = fit_embeddings[keep_mask]
+    LOGGER.info(
+        "Filtered short docs (<=%d words): %d -> %d (removed %d / %.2f%%)",
+        MIN_WORDS_FIT - 1,
+        orig_len,
+        len(fit_docs),
+        orig_len - len(fit_docs),
+        100.0 * (orig_len - len(fit_docs)) / orig_len,
+    )
+
     fit_dictionary = Dictionary(doc.split() for doc in fit_docs)
     LOGGER.info(
         "Fit-corpus topic filter dictionary: %d docs -> %d tokens",
