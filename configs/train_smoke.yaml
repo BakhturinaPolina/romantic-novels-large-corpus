@@ -35,6 +35,6 @@ search_space:
   umap__min_dist: [0.0, 0.1]
   hdbscan__min_cluster_size: [50, 100]
   hdbscan__min_samples: [10, 30]
-  vectorizer__min_df: [0.001, 0.01]
+  hdbscan__cluster_selection_method: ["eom", "leaf"]
+  vectorizer__min_df: [3, 10]
   bertopic__top_n_words: [10, 20]
-  bertopic__min_topic_size: [10, 50]

@@ -43,38 +43,45 @@ Repository structure note: active pipeline packages stay at the `src/` root, whi
 
 ## Dataset
 
-### Corpus (primary): `romance_subdataset_downloaded_v2_full`
+### Corpus (primary): `romance_subdataset_filtered_v3`
 
-The main text corpus lives under **`data/raw/romance_subdataset_downloaded_v2_full/`** (EPUBs plus mirrored subsampling tables). It is the **downloaded subsample v2** cohort: works from the ~20k romance design frame that have a resolvable MD5 and at least one **EPUB** on disk (see **`SUBSAMPLING_V2.md`** and **`subsampling_metadata/romance_subdataset_downloaded_v2_manifest.json`** in that folder).
+The active modeling corpus lives under **`data/raw/romance_subdataset_filtered_v3/`**. It is the **English-only v3** cohort: the downloaded subsample v2 sentence tables with **460 non-English books removed** (language detection, `min_confidence` 0.6; see **`v3_filtering_manifest.json`** and **`language_analysis.csv`**). Upstream EPUBs and the full v2 cohort remain under **`data/raw/romance_subdataset_downloaded_v2_full/`** (see **`SUBSAMPLING_V2.md`**).
 
-- **17,514** works (rows in `subsampling_metadata/romance_subdataset_downloaded_v2_full.csv`; matches manifest `cohort_n`)
-- **8,828** distinct authors (`author_id` in metadata)
-- **Publication years** in this export: 2000–2017 (time-based split; missing years sorted first in train)
-- **Genre mix** (metadata `genre_group`): e.g. other, paranormal, mystery, historical, young_adult
-- **Train / val / test** (time strategy, seed 42): 12,259 / 2,627 / 2,628 EPUBs (`n_train_v2`, `n_val_v2`, `n_test_v2` in manifest)
-- **Stage 01** flattens each EPUB to chapter-ordered text and spaCy sentence segments, writing one row per sentence under `data/processed/romance_subdataset_downloaded_v2_sentences/` (`work_id`, chapter fields, `sentence`). Totals and `parse_errors.csv` follow from running the ingestion script on the local EPUB tree.
+- **16,000** works kept (16,460 analyzed; 460 excluded)
+- **8,264** distinct authors (`author_id` in metadata)
+- **Publication years**: 2000–2017 (time-based split; missing years sorted first in train)
+- **Genre mix** (metadata `genre_group`): other (5,756), paranormal (4,522), mystery (2,601), historical (1,765), young_adult (1,356)
+- **Train / val / test** (time strategy, seed 42): **11,158 / 2,429 / 2,413** works (`subsampling_metadata/romance_subdataset_filtered_v3_{train,val,test}.csv`)
+- **Sentence rows** (Stage 01 schema: `work_id`, chapter fields, `sentence_index`, `sentence`): **80,766,376 / 17,276,277 / 17,547,796** in `sentences_{train,val,test}.csv` (~**115.6M** total)
 
-### Goodreads-linked metadata (per work, v2 full table)
+### Goodreads-linked metadata (per work, v3 full table)
 
-Each cohort row includes aggregated Goodreads-style fields from the design frame (e.g. `average_rating_weighted_mean`, `ratings_count_sum`). Corpus-wide summaries on the **17,514** works:
+Each cohort row includes aggregated Goodreads-style fields from the design frame (e.g. `average_rating_weighted_mean`, `ratings_count_sum`). Corpus-wide summaries on the **16,000** works:
 
 - **Mean rating** (unweighted mean of per-work `average_rating_weighted_mean`): **3.91**
 - **Range** of per-work mean rating: **1.27–5.00**
-- **`ratings_count_sum`**: median **254**, mean **~3.0k** (long-tailed; vote counts vary strongly across works)
+- **`ratings_count_sum`**: median **263**, mean **~3.0k** (long-tailed; vote counts vary strongly across works)
 
-A compact tracked snapshot of these aggregate corpus statistics is stored at `results/summary_statistics/full_dataset_summary_statistics.csv`.
+Metadata tables: `data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_full.csv`.
 
-### On-disk layout (Stages 01–02)
+### On-disk layout (Stages 01–05b)
 
 | Location | Content |
 |----------|---------|
-| `data/raw/romance_subdataset_downloaded_v2_full/` | EPUBs and `subsampling_metadata/` (cohort CSVs, manifest, documentation) |
-| `data/processed/romance_subdataset_downloaded_v2_sentences/` | `sentences_{train,val,test}.csv` plus matching `.ckpt` resume files and `parse_errors.csv` from Stage 01 |
-| `data/interim/booknlp_character_runs/` | Timestamped BookNLP runs: `txt_input/`, `booknlp/w{id}/`, checkpoints, manifests (Stage 02) |
+| `data/raw/romance_subdataset_downloaded_v2_full/` | Source EPUBs and v2 `subsampling_metadata/` (Stage 01 ingestion input) |
+| `data/raw/romance_subdataset_filtered_v3/` | v3 `sentences_{train,val,test}.csv`, `v3_filtering_manifest.json`, `subsampling_metadata/` |
+| `data/processed/romance_subdataset_downloaded_v2_sentences/` | Original v2 sentence CSVs from Stage 01 (superseded for modeling by v3 paths in `configs/paths.yaml`) |
+| `data/interim/booknlp_character_runs/` | Stage 02 name-extraction runs (`spacy_fast_*`, BookNLP `run_*` / shard dirs): checkpoints, manifests, per-split token lists |
 | `data/interim/booknlp_models/` | Optional local cache for BookNLP weight files |
-| `data/processed/custom_stoplist.txt` | Stoplist updated when Stage 02 merges BookNLP-derived name lines (backup `*.bak_<timestamp>` alongside) |
+| `data/processed/custom_stoplist.txt` | Merged character-name stoplist (timestamped `*.bak_<timestamp>` backups alongside) |
+| `data/interim/octis/v3_english_only/` | Pre-built OCTIS `corpus.tsv`, `corpus.offsets.npy`, `metadata.json` for v3 train+eval |
+| `data/stage03_samples/` | Stratified fit/eval row indices (`fit_indices_seed42.npy`, `eval_indices_seed42.npy`, manifest) |
+| `results/experiments/<run_id>/` | Stage 03 BO trials (`trials.csv`, `run_state.json`, per-model artifacts) |
+| `results/selection/<run_id>/` | Stage 04 winner config, `top_k.csv`, `selection_report.md` |
+| `models/final/<run_id>/` | Stage 05 refit artifacts (`train_only/`, `train_plus_val/`) |
+| `results/evaluation/<run_id>/` | Stage 05b one-shot test holdout metrics |
 
-Stages 01–02 do not write pipeline outputs under `results/` except optional documentation in **`results/reports/`**. Modeling and analysis artifacts (topics, figures, experiments, selection) from Stage 03 onward populate the rest of `results/` per `configs/paths.yaml`.
+Stages 01–02 do not write pipeline outputs under `results/` except optional documentation in **`results/reports/`**. Modeling artifacts from Stage 03 onward populate `results/` and `models/` per `configs/paths.yaml`.
 
 ## Methodology Overview
 
@@ -98,7 +105,14 @@ Stages 01–02 do not write pipeline outputs under `results/` except optional do
 
 See `results/reports/stage03_stratified_fit_sample_design.md` and `results/reports/stage03_bertopic_search_space_prior.md`.
 
-**Character name exclusion**: [BookNLP](https://github.com/booknlp/booknlp) is run on reconstructed book text from `sentences_train.csv` (Stage 02: `extract_character_names_booknlp.py`). Person-like surface strings from the `.book` JSON and `PER` / `PROP` rows in `.entities` are merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
+**Character name exclusion** (Stage 02): Person-like tokens are extracted from sentence CSVs and merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
+
+Two extractors are implemented in [`src/stage02_preprocessing/`](src/stage02_preprocessing/):
+
+- **Production path — spaCy fast** (`extract_character_names_spacy_fast.py`): scans `sentences_{train,val,test}.csv` in resumable chunks (`--run-id`, `--resume`, `--max-chunks-per-run`); filters by global/book frequency; merges per split into the shared stoplist. Completed runs on the v2 sentence tables (`spacy_fast_full`, `spacy_fast_val`, `spacy_fast_test`) appended **~72.7k** deduplicated tokens total (**69,528** train + **1,254** val + **1,963** test new lines).
+- **BookNLP path** (`extract_character_names_booknlp.py`): reconstructs per-work `.txt` from sentence CSVs, runs [BookNLP](https://github.com/booknlp/booknlp) (`entity` pipeline, `small` model by default), and merges `PER` / `PROP` surface forms from `.entities` (optional richer `--pipeline entity,quote,coref`). Supports sharding, ETA probes, and stratified `--stoplist-sample-books` for single-GPU runs.
+
+Post-merge audit: `scripts/audit_stoplist_non_names.py` flags likely non-name entries (Zipf frequency + optional spaCy person probe).
 
 ### 2. LLM-Based Topic Labeling
 
@@ -150,18 +164,19 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 
 ## Pipeline Overview
 
-| Stage | Description |
-|-------|-------------|
-| 01 Ingestion | v2 EPUBs → `sentences_{train,val,test}.csv` under `data/processed/romance_subdataset_downloaded_v2_sentences/` (resume via `.ckpt`) |
-| 02 Preprocessing | BookNLP on train sentences → name phrases → `custom_stoplist.txt`; optional lemma-side exports; broader cleaning CLI still a stub |
-| 03 Modeling | BERTopic training with OCTIS optimization |
-| 04 Selection | Pareto-efficient model selection |
-| 05 Retraining | Retrain selected models |
-| 06 Topic Exploration | Multi-representation analysis |
-| 07 Topic Quality | Noisy topic detection |
-| 08 LLM Labeling | Automated topic labeling |
-| 09 Category Mapping | Theory-aligned classification |
-| 10 Correlation Analysis | Statistical hypothesis testing |
+| Stage | Package | Description |
+|-------|---------|-------------|
+| 01 Ingestion | `stage01_ingestion` | v2 EPUBs → `sentences_{train,val,test}.csv` under `data/processed/romance_subdataset_downloaded_v2_sentences/` (resume via `.ckpt`); v3 English-only splits derived downstream |
+| 02 Preprocessing | `stage02_preprocessing` | Character-name extraction (spaCy fast or BookNLP) on train/val/test → `custom_stoplist.txt`; resumable run dirs under `data/interim/booknlp_character_runs/`; `main.py` cleaning CLI still a stub |
+| 03 Modeling | `stage03_train` | Stratified ~500k train fit sample + ~100k eval indices; BERTopic + OCTIS Bayesian optimization (3 embedding models, 120 calls/model); fit on train indices, score coherence/diversity on eval; outputs `results/experiments/<run_id>/trials.csv`; auto-resume via `run_state.json` — `python -m src.stage03_train.cli tune` |
+| 04 Selection | `stage04_eval_select` | Drop trials with `n_topics < 20`, then Pareto frontier → weighted score (`0.4×coherence + 0.4×diversity − 0.1×outlier − 0.1×stability`); emits `winner_config.json` — e.g. run `stratified_minilm12v2_seed42_v2` → `all-MiniLM-L12-v2` |
+| 05 Final fit | `stage05_final_fit` | Refit winner hyperparameters under two policies: **train-only** and **train+val** → `models/final/<run_id>/{train_only,train_plus_val}/` — `python -m src.stage05_final_fit.cli fit --policy both` |
+| 05b Test holdout | `stage05b_test_holdout` | One-shot `.transform()` on `sentences_test.csv` (no refit); `test_metrics.json` + `final_topic_report.md`; refuses rerun unless `--allow-rerun` |
+| 06 Topic Exploration | — | Multi-representation analysis |
+| 07 Topic Quality | — | Noisy topic detection |
+| 08 LLM Labeling | `stage08_llm_labeling` | Automated topic labeling |
+| 09 Category Mapping | — | Theory-aligned classification |
+| 10 Correlation Analysis | `stage10_correlation_analysis` | Statistical hypothesis testing |
 
 See **`results/reports/01_stage_reports/`** for detailed methodology per stage when those files are present in your checkout.
 
@@ -246,7 +261,8 @@ Terragni, S., et al. (2021). OCTIS: Comparing and optimizing topic models is sim
 
 | Topic | Location |
 |-------|----------|
-| Stages 01–02 (ingestion, BookNLP stoplist) | [`src/stage01_ingestion/README.md`](src/stage01_ingestion/README.md), [`src/stage02_preprocessing/README.md`](src/stage02_preprocessing/README.md) |
+| Stages 01–02 (ingestion, stoplist) | [`src/stage01_ingestion/README.md`](src/stage01_ingestion/README.md), [`src/stage02_preprocessing/README.md`](src/stage02_preprocessing/README.md) |
+| Stages 03–05b (train / select / fit / test) | [`src/stage03_train/PIPELINE_OVERVIEW.md`](src/stage03_train/PIPELINE_OVERVIEW.md) |
 | Stage methodology | `results/reports/01_stage_reports/` |
 | Hypothesis testing results | `results/reports/02_findings/hypothesis_testing/` |
 | LLM labeling methodology | `results/reports/02_findings/methodology_llm_labeling_and_taxonomy/` |

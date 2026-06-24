@@ -13,7 +13,8 @@ Why this exists (and why the legacy Stage05 path is not used here):
   reusing the Stage03 building blocks.
 
 This module fits each requested BO call on the shared 500k sample and writes topic
-tables + metrics per config (no heavy model artifacts), incrementally and resumably.
+tables + metrics per config. Optional ``save_model`` writes a BERTopic artifact for
+Stage05b holdout scoring. Runs are incremental and resumable.
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ from __future__ import annotations
 import csv
 import json
 import logging
+import shutil
 import time
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -32,7 +34,7 @@ import pandas as pd
 from gensim.corpora import Dictionary
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, CountVectorizer
 
-from bertopic import BERTopic
+from bertopic import BERTopic  # noqa: F401 — re-exported type for annotations
 from bertopic.vectorizers import ClassTfidfTransformer
 
 from src.common.config import load_config, resolve_path
@@ -40,6 +42,11 @@ from src.stage03_train.corpus_store import (
     CorpusDocStore,
     corpus_metadata_path,
     corpus_offsets_path,
+)
+from src.stage03_train.topic_stability import (
+    refit_collapse_flag,
+    stability_pass,
+    topic_run_stats,
 )
 from src.stage03_train.tune import (
     _build_paths,
@@ -50,6 +57,8 @@ from src.stage03_train.tune import (
 )
 from src.legacy.stage03_modeling.bertopic_octis_model import (
     BERTopicOctisModelWithEmbeddings,
+    BERTopicWithSafeVectorizer,
+    SafeClassTfidfTransformer,
     create_representation_models,
     load_custom_stopwords_from_config,
     load_embedding_model,
@@ -152,6 +161,8 @@ def _fit_bertopic(
     flat_hp: dict[str, Any],
     fit_docs: list[str],
     fit_embeddings: np.ndarray,
+    *,
+    umap_random_state: int | None = None,
 ) -> BERTopic:
     """Fit a BERTopic model mirroring the Stage03 base ``train_model`` path.
 
@@ -160,7 +171,15 @@ def _fit_bertopic(
     representation models exactly like the base wrapper, and returns the fitted
     BERTopic instance (so topic tables / representative docs are available).
     """
-    wrapper.set_hyperparameters(flat_hp)
+    hp_input = dict(flat_hp)
+    if umap_random_state is not None:
+        hp_input["umap__random_state"] = int(umap_random_state)
+        LOGGER.info(
+            "[COMPARE-FIT] umap_random_state=%d docs=%d",
+            umap_random_state,
+            len(fit_docs),
+        )
+    wrapper.set_hyperparameters(hp_input)
     hp = wrapper.hyperparameters
     LOGGER.info("Resolved hyperparameters: %s", json.dumps(_jsonable(hp), default=str))
 
@@ -176,19 +195,6 @@ def _fit_bertopic(
         merged = sorted(set(ENGLISH_STOP_WORDS).union(custom_stopwords))
     vectorizer_params["stop_words"] = merged
 
-    # Fix for empty topic representations: proportional min_df is too high for small
-    # clusters on 500K docs. Override to absolute value if it looks like a proportion.
-    orig_min_df = vectorizer_params.get("min_df", 1)
-    if isinstance(orig_min_df, float) and orig_min_df < 1.0:
-        # Proportional: 0.01 on 500K = 5000 docs minimum - way too high for small topics
-        # Use absolute value: 5 docs minimum (still filters noise, allows small clusters)
-        vectorizer_params["min_df"] = 5
-        LOGGER.info(
-            "Overriding min_df from %.4f (proportional) to %d (absolute) for small-cluster support",
-            orig_min_df,
-            vectorizer_params["min_df"],
-        )
-
     # Fix for garbage tokens: enforce alphabetic tokens of 2+ characters only.
     # This matches legacy retrain_models.py behavior and filters numbers, single chars,
     # and special patterns like "â€™" that slip through without proper mojibake cleanup.
@@ -199,10 +205,10 @@ def _fit_bertopic(
     LOGGER.info("CountVectorizer stopwords: %d total, min_df=%s", len(merged), vectorizer_params["min_df"])
     vectorizer_model = CountVectorizer(**vectorizer_params)
 
-    tfdf_model = ClassTfidfTransformer(**hp["tfdf_vectorizer"])
+    tfdf_model = SafeClassTfidfTransformer(**hp["tfdf_vectorizer"])
     representation_model = create_representation_models()
 
-    topic_model = BERTopic(
+    topic_model = BERTopicWithSafeVectorizer(
         embedding_model=wrapper.embedding_model,
         umap_model=umap_model,
         hdbscan_model=hdbscan_model,
@@ -260,6 +266,138 @@ def _fit_bertopic(
     return topic_model
 
 
+def _count_topics(topic_model: BERTopic) -> int:
+    info = topic_model.get_topic_info()
+    return len([t for t in info["Topic"] if int(t) != -1])
+
+
+def _compute_fit_metrics(
+    topic_model: BERTopic,
+    fit_dictionary: Dictionary,
+    tokens_eval: list[list[str]],
+    eval_dictionary: Dictionary,
+) -> dict[str, float]:
+    topics_words = _topics_words_for_coherence(topic_model, fit_dictionary)
+    doc_topics = topic_model.topics_
+    return {
+        "n_topics": float(len(topics_words)),
+        "coherence_c_v": float(_coherence_cv(topics_words, tokens_eval, eval_dictionary)),
+        "topic_diversity": float(_diversity_adaptive(topics_words)),
+        "outlier_rate": float(_safe_outlier_rate_from_topics(np.asarray(doc_topics))),
+    }
+
+
+def _run_stability_check(
+    wrapper: BERTopicOctisModelWithEmbeddings,
+    flat_hp: dict[str, Any],
+    fit_docs: list[str],
+    fit_embeddings: np.ndarray,
+    *,
+    bo_call: int,
+    reported_n_topics: float | None,
+    n_runs: int,
+    seed: int,
+    max_std: float,
+    collapse_ratio: float,
+) -> tuple[dict[str, Any], BERTopic | None]:
+    """Refit ``n_runs`` times with varying UMAP seeds; return stability report."""
+    run_results: list[dict[str, Any]] = []
+    topic_counts: list[float] = []
+    fitted_models: list[BERTopic] = []
+    for run_i in range(n_runs):
+        umap_seed = seed + run_i
+        LOGGER.info(
+            "[COMPARE-FIT][STABILITY] call_%d run %d/%d umap_random_state=%d",
+            bo_call,
+            run_i + 1,
+            n_runs,
+            umap_seed,
+        )
+        topic_model = _fit_bertopic(
+            wrapper,
+            flat_hp,
+            fit_docs,
+            fit_embeddings,
+            umap_random_state=umap_seed,
+        )
+        n_topics = _count_topics(topic_model)
+        topic_counts.append(float(n_topics))
+        fitted_models.append(topic_model)
+        run_results.append({"run": run_i, "umap_random_state": umap_seed, "n_topics": n_topics})
+        LOGGER.info(
+            "[COMPARE-FIT][STABILITY] call_%d run %d/%d n_topics=%d",
+            bo_call,
+            run_i + 1,
+            n_runs,
+            n_topics,
+        )
+
+    stats = topic_run_stats(topic_counts)
+    passed = stability_pass(topic_counts, max_std=max_std, collapse_ratio=collapse_ratio)
+    refit_collapse = refit_collapse_flag(
+        stats["median"],
+        reported_n_topics or float("nan"),
+        collapse_ratio=collapse_ratio,
+    )
+    report = {
+        "bo_call": bo_call,
+        "n_runs": n_runs,
+        "seed": seed,
+        "runs": run_results,
+        "stats": stats,
+        "stability_pass": passed and not refit_collapse,
+        "topic_stability_pass": passed,
+        "refit_collapse": refit_collapse,
+        "reported_n_topics": reported_n_topics,
+        "max_std": max_std,
+        "collapse_ratio": collapse_ratio,
+    }
+    LOGGER.info(
+        "[COMPARE-FIT][STABILITY] call_%d summary counts=%s std=%.2f pass=%s refit_collapse=%s",
+        bo_call,
+        topic_counts,
+        stats["std"],
+        report["stability_pass"],
+        refit_collapse,
+    )
+    best_model: BERTopic | None = None
+    if fitted_models and topic_counts:
+        median_n = float(np.median(topic_counts))
+        best_idx = int(np.argmin([abs(c - median_n) for c in topic_counts]))
+        best_model = fitted_models[best_idx]
+    return report, best_model
+
+
+def _apply_reduce_outliers(
+    topic_model: BERTopic,
+    fit_docs: list[str],
+    *,
+    threshold: float = 0.05,
+) -> BERTopic:
+    """Reassign outlier (-1) docs and refresh topic assignments."""
+    topics = np.asarray(topic_model.topics_)
+    before_rate = _safe_outlier_rate_from_topics(topics)
+    LOGGER.info(
+        "[COMPARE-FIT] reduce_outliers start: outlier_rate=%.4f threshold=%.3f",
+        before_rate,
+        threshold,
+    )
+    new_topics = topic_model.reduce_outliers(
+        fit_docs,
+        topics,
+        strategy="embeddings",
+        threshold=threshold,
+    )
+    topic_model.update_topics(fit_docs, topics=new_topics)
+    after_rate = _safe_outlier_rate_from_topics(np.asarray(topic_model.topics_))
+    LOGGER.info(
+        "[COMPARE-FIT] reduce_outliers done: outlier_rate %.4f -> %.4f",
+        before_rate,
+        after_rate,
+    )
+    return topic_model
+
+
 def _topics_words_for_coherence(
     topic_model: BERTopic, fit_dictionary: Dictionary
 ) -> list[list[str]]:
@@ -277,6 +415,39 @@ def _topics_words_for_coherence(
         if words:
             topics.append(words)
     return topics
+
+
+def compare_model_dir(out_dir: Path) -> Path:
+    """Directory where compare-fit stores the BERTopic native artifact."""
+    return out_dir / "model_compare"
+
+
+def _model_is_saved(out_dir: Path) -> bool:
+    model_dir = compare_model_dir(out_dir)
+    return model_dir.is_dir() and any(model_dir.iterdir())
+
+
+def _save_compare_model(
+    topic_model: BERTopic,
+    out_dir: Path,
+    embedding_model_name: str,
+) -> Path:
+    """Persist BERTopic in native format for Stage05b holdout scoring."""
+    model_dir = compare_model_dir(out_dir)
+    if model_dir.exists():
+        shutil.rmtree(model_dir)
+    model_dir.mkdir(parents=True, exist_ok=True)
+    embedding_model_path = embedding_model_name
+    if not embedding_model_path.startswith("sentence-transformers/"):
+        embedding_model_path = f"sentence-transformers/{embedding_model_name}"
+    topic_model.save(
+        str(model_dir),
+        serialization="safetensors",
+        save_embedding_model=embedding_model_path,
+        save_ctfidf=True,
+    )
+    LOGGER.info("Saved compare-fit model: %s", model_dir)
+    return model_dir
 
 
 def _write_topic_tables(
@@ -363,6 +534,12 @@ def run_compare_fit(
     fit_max_docs: int = 500_000,
     embedding_cache: Path | None = None,
     seed: int = 42,
+    stability_runs: int = 0,
+    stability_tolerance: float = 3.0,
+    stability_collapse_ratio: float = 0.5,
+    reduce_outliers: bool = False,
+    save_model: bool = False,
+    force_refit: bool = False,
 ) -> Path:
     """Refit each requested BO call on the shared stratified sample; write tables.
 
@@ -388,6 +565,16 @@ def run_compare_fit(
     LOGGER.info("Stage05 compare-fit start: run_id=%s", run_id)
     LOGGER.info("Trials source: %s", trials_csv)
     LOGGER.info("BO calls to refit: %s", bo_calls)
+    if stability_runs > 0:
+        LOGGER.info(
+            "[COMPARE-FIT] stability gate: %d runs, max_std=%.1f (umap_random_state=seed+i)",
+            stability_runs,
+            stability_tolerance,
+        )
+    if reduce_outliers:
+        LOGGER.info("[COMPARE-FIT] reduce_outliers enabled (post-fit export)")
+    if save_model:
+        LOGGER.info("[COMPARE-FIT] save_model enabled (BERTopic native artifact for holdout)")
 
     inputs_cfg = paths_cfg.get("inputs", {})
 
@@ -499,9 +686,13 @@ def run_compare_fit(
     LOGGER.info("Coherence eval tokens: %d docs", len(tokens_eval))
 
     # --- Resume status + time estimate ------------------------------------------
-    pending = [
-        c for c in bo_calls if not (compare_root / f"call_{c}" / "metrics.json").exists()
-    ]
+    pending = []
+    for c in bo_calls:
+        out_dir = compare_root / f"call_{c}"
+        metrics_exist = (out_dir / "metrics.json").exists()
+        needs_model = save_model and not _model_is_saved(out_dir)
+        if force_refit or not metrics_exist or needs_model:
+            pending.append(c)
     done_already = [c for c in bo_calls if c not in pending]
     if done_already:
         LOGGER.info("Resume: %s already complete, skipping.", done_already)
@@ -526,9 +717,13 @@ def run_compare_fit(
         topic_filter_dictionary=fit_dictionary,
     )
 
+    stability_summary_rows: list[dict[str, Any]] = []
+
     for call in bo_calls:
         out_dir = compare_root / f"call_{call}"
-        if (out_dir / "metrics.json").exists():
+        metrics_exist = (out_dir / "metrics.json").exists()
+        needs_model = save_model and not _model_is_saved(out_dir)
+        if metrics_exist and not reduce_outliers and not force_refit and not needs_model:
             LOGGER.info("call_%d already done (metrics.json present); skipping.", call)
             continue
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -536,43 +731,139 @@ def run_compare_fit(
         LOGGER.info("=== Fitting call_%d (reported coh=%s n=%s) ===",
                     call, reported.get("coherence_c_v"), reported.get("n_topics"))
         config_start = time.perf_counter()
-        with stage_timer(f"call_{call} BERTopic fit (UMAP+HDBSCAN+repr)"):
-            topic_model = _fit_bertopic(wrapper, flat_hp, fit_docs, fit_embeddings)
 
-        with stage_timer(f"call_{call} metrics (coherence + diversity)"):
-            topics_words = _topics_words_for_coherence(topic_model, fit_dictionary)
-            coherence = _coherence_cv(topics_words, tokens_eval, eval_dictionary)
-            diversity = _diversity_adaptive(topics_words)
-            doc_topics = topic_model.topics_
-            outlier_rate = _safe_outlier_rate_from_topics(np.asarray(doc_topics))
-            n_topics = len(topics_words)
+        stability_report: dict[str, Any] | None = None
+        topic_model: BERTopic | None = None
+        if stability_runs > 0:
+            with stage_timer(f"call_{call} stability check ({stability_runs} runs)"):
+                stability_report, topic_model = _run_stability_check(
+                    wrapper,
+                    flat_hp,
+                    fit_docs,
+                    fit_embeddings,
+                    bo_call=call,
+                    reported_n_topics=reported.get("n_topics"),
+                    n_runs=stability_runs,
+                    seed=seed,
+                    max_std=stability_tolerance,
+                    collapse_ratio=stability_collapse_ratio,
+                )
+                with open(out_dir / "stability.json", "w", encoding="utf-8") as f:
+                    json.dump(_jsonable(stability_report), f, indent=2)
+                stability_summary_rows.append(
+                    {
+                        "bo_call": call,
+                        "n_topics_median": stability_report["stats"]["median"],
+                        "n_topics_std": stability_report["stats"]["std"],
+                        "stability_pass": stability_report["stability_pass"],
+                        "refit_collapse": stability_report["refit_collapse"],
+                        "reported_n_topics": reported.get("n_topics"),
+                    }
+                )
 
-        with stage_timer(f"call_{call} write topic tables"):
-            _write_topic_tables(topic_model, out_dir)
+        refit_for_metrics = force_refit or not metrics_exist
+        if topic_model is None:
+            if metrics_exist and reduce_outliers and not refit_for_metrics:
+                LOGGER.info("call_%d metrics exist; running reduce_outliers export only.", call)
+            elif metrics_exist and needs_model and not refit_for_metrics:
+                LOGGER.info("call_%d metrics exist; refitting to save holdout model.", call)
+            if topic_model is None:
+                with stage_timer(f"call_{call} BERTopic fit (UMAP+HDBSCAN+repr)"):
+                    topic_model = _fit_bertopic(
+                        wrapper,
+                        flat_hp,
+                        fit_docs,
+                        fit_embeddings,
+                        umap_random_state=seed,
+                    )
+
+        if refit_for_metrics or not metrics_exist:
+            with stage_timer(f"call_{call} metrics (coherence + diversity)"):
+                fit_metrics = _compute_fit_metrics(
+                    topic_model, fit_dictionary, tokens_eval, eval_dictionary
+                )
+                coherence = fit_metrics["coherence_c_v"]
+                diversity = fit_metrics["topic_diversity"]
+                outlier_rate = fit_metrics["outlier_rate"]
+                n_topics = int(fit_metrics["n_topics"])
+
+            with stage_timer(f"call_{call} write topic tables"):
+                _write_topic_tables(topic_model, out_dir)
+        else:
+            with open(out_dir / "metrics.json", "r", encoding="utf-8") as f:
+                existing = json.load(f)
+            coherence = float(existing["coherence_c_v"])
+            diversity = float(existing["topic_diversity"])
+            outlier_rate = float(existing["outlier_rate"])
+            n_topics = int(existing["n_topics"])
+
+        if reduce_outliers:
+            reduced_dir = out_dir / "outliers_reduced"
+            reduced_dir.mkdir(parents=True, exist_ok=True)
+            with stage_timer(f"call_{call} reduce_outliers + re-export"):
+                topic_model = _apply_reduce_outliers(topic_model, fit_docs)
+                reduced_metrics = _compute_fit_metrics(
+                    topic_model, fit_dictionary, tokens_eval, eval_dictionary
+                )
+                _write_topic_tables(topic_model, reduced_dir)
+                with open(reduced_dir / "metrics.json", "w", encoding="utf-8") as f:
+                    json.dump(
+                        {
+                            "run_id": run_id,
+                            "bo_call": call,
+                            "embedding_model": embedding_model_name,
+                            **reduced_metrics,
+                            "reported": reported,
+                            "parent_outlier_rate": outlier_rate,
+                        },
+                        f,
+                        indent=2,
+                    )
+                LOGGER.info(
+                    "call_%d outliers_reduced: n_topics=%d outlier %.4f -> %.4f",
+                    call,
+                    int(reduced_metrics["n_topics"]),
+                    outlier_rate,
+                    reduced_metrics["outlier_rate"],
+                )
+
+        if save_model:
+            with stage_timer(f"call_{call} save BERTopic model"):
+                _save_compare_model(topic_model, out_dir, embedding_model_name)
 
         elapsed = time.perf_counter() - config_start
-        metrics = {
-            "run_id": run_id,
-            "bo_call": call,
-            "embedding_model": embedding_model_name,
-            "n_topics": n_topics,
-            "coherence_c_v": coherence,
-            "topic_diversity": diversity,
-            "outlier_rate": outlier_rate,
-            "elapsed_s": round(elapsed, 1),
-            "fit_docs": len(fit_docs),
-            "fit_max_docs": fit_max_docs,
-            "hyperparameters": _jsonable(flat_hp),
-            "reported": reported,
-            "fit_started_at": _utc_now(),
-        }
-        with open(out_dir / "metrics.json", "w", encoding="utf-8") as f:
-            json.dump(metrics, f, indent=2)
+        if refit_for_metrics or not metrics_exist:
+            metrics = {
+                "run_id": run_id,
+                "bo_call": call,
+                "embedding_model": embedding_model_name,
+                "n_topics": n_topics,
+                "coherence_c_v": coherence,
+                "topic_diversity": diversity,
+                "outlier_rate": outlier_rate,
+                "elapsed_s": round(elapsed, 1),
+                "fit_docs": len(fit_docs),
+                "fit_max_docs": fit_max_docs,
+                "hyperparameters": _jsonable(flat_hp),
+                "reported": reported,
+                "fit_started_at": _utc_now(),
+            }
+            if stability_report is not None:
+                metrics["stability"] = _jsonable(stability_report)
+            with open(out_dir / "metrics.json", "w", encoding="utf-8") as f:
+                json.dump(metrics, f, indent=2)
         LOGGER.info(
             "call_%d done: n_topics=%d coherence=%.4f diversity=%.4f outlier=%.4f (%.1fs)",
             call, n_topics, coherence, diversity, outlier_rate, elapsed,
         )
         _rebuild_summary(compare_root, bo_calls)
+
+    if stability_summary_rows:
+        pd.DataFrame(stability_summary_rows).to_csv(
+            compare_root / "stability_summary.csv",
+            index=False,
+        )
+        LOGGER.info("Stability summary: %s", compare_root / "stability_summary.csv")
 
     _rebuild_summary(compare_root, bo_calls)
     LOGGER.info("Compare-fit complete. Outputs under: %s", compare_root)

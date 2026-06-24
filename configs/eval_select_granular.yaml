@@ -1,0 +1,18 @@
+# Stage04 eval-select for granular v4 BERTopic models (Pareto then weighted)
+
+selection:
+  pareto_first: true
+  top_k: 30
+  min_n_topics: 50
+  max_n_topics: 800
+  require_topic_stability: false
+  max_n_topics_std: 75
+  max_outlier_rate: 0.85
+  max_largest_topic_share: 0.25
+
+weights:
+  coherence: 0.45
+  diversity: 0.20
+  topic_count_floor: 0.15
+  outlier: 0.10
+  stability: 0.10

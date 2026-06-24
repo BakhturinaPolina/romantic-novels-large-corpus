@@ -6,15 +6,17 @@ Supports **single-run** (one embedding) or **multi-run compare** (e.g. L12 vs L6
 
 ## Run order
 
-1. **`04_pareto_efficiency_analysis_v3.ipynb`** — load BO trials per run, apply Stage04 filters, run three selection strategies, save per-run top-k CSVs and figures; optional cross-model comparison tables/figures.
-2. **`04_hyperparameter_correlation_analysis_v3.ipynb`** — hyperparameter correlation and ML importance on top-k sets from Notebook 1 (per run + compare).
+1. `**04_pareto_efficiency_analysis_v3.ipynb`** — load BO trials per run, apply Stage04 filters, run three selection strategies, save per-run top-k CSVs and figures; optional cross-model comparison tables/figures.
+2. `**04_hyperparameter_correlation_analysis_v3.ipynb**` — hyperparameter correlation and ML importance on top-k sets from Notebook 1 (per run + compare).
 
 ## Configuration modes
 
-| Mode | YAML | Outputs |
-|------|------|---------|
-| **Single** (default) | Top-level `run_id` / `inputs` / `outputs` only, or `runs` with one entry | `results/selection/{run_id}/notebook_analysis/` |
-| **Compare** | `runs:` (2+) + `comparison:` block | Per-run dirs **plus** `results/selection/_compare/{comparison.id}/` |
+
+| Mode                 | YAML                                                                     | Outputs                                                             |
+| -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| **Single** (default) | Top-level `run_id` / `inputs` / `outputs` only, or `runs` with one entry | `results/selection/{run_id}/notebook_analysis/`                     |
+| **Compare**          | `runs:` (2+) + `comparison:` block                                       | Per-run dirs **plus** `results/selection/_compare/{comparison.id}/` |
+
 
 Set `comparison.id` and `comparison.base_dir` for cross-model artifacts. The top-level `run_id` remains the **primary** run for Stage05 `pareto` CLI.
 
@@ -31,22 +33,26 @@ Comparison outputs: `results/selection/_compare/l12_vs_l6/`
 
 ## Input data
 
-| Run | trials_partial_csv |
-|-----|-------------------|
-| `v3_minilm12v2_first` | `results/experiments/v3_minilm12v2_first/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv` |
-| `v3_minilm6_first` | `results/experiments/v3_minilm6_first/opt_1_sentence-transformers__paraphrase-MiniLM-L6-v2/trials_partial.csv` |
+
+| Run                   | trials_partial_csv                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `v3_minilm12v2_first` | `results/experiments/v3_minilm12v2_first/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv`    |
+| `v3_minilm6_first`    | `results/experiments/v3_minilm6_first/opt_1_sentence-transformers__paraphrase-MiniLM-L6-v2/trials_partial.csv` |
+
 
 Optional CLI reference: `results/selection/{run_id}/top_k.csv`
 
-Configure paths in [`configs/selection_notebooks.yaml`](../../configs/selection_notebooks.yaml).
+Configure paths in `[configs/selection_notebooks.yaml](../../configs/selection_notebooks.yaml)`.
 
 ## Selection strategies compared
 
-| Strategy | Pre-filter | Pareto | Ranking | Output CSV |
-|----------|------------|--------|---------|------------|
-| **A — Equal weights (legacy)** | Stage04 gates (shared filtered set per run) | global + per-model | 0.5×Coherence_norm + 0.5×Topic_Diversity_norm | `top_10_equal_weights.csv` |
-| **B — Coherence priority (legacy)** | same | global only | 0.7×Coherence_norm + 0.3×Topic_Diversity_norm | `top_10_coherence_priority.csv` |
-| **C — eval_select (current)** | `min_n_topics`, stability gates | global only | 0.4×c_v + 0.4×diversity − 0.1×outlier − 0.1×stability | `top_10_eval_select.csv` |
+
+| Strategy                            | Pre-filter                                  | Pareto             | Ranking                                               | Output CSV                      |
+| ----------------------------------- | ------------------------------------------- | ------------------ | ----------------------------------------------------- | ------------------------------- |
+| **A — Equal weights (legacy)**      | Stage04 gates (shared filtered set per run) | global + per-model | 0.5×Coherence_norm + 0.5×Topic_Diversity_norm         | `top_10_equal_weights.csv`      |
+| **B — Coherence priority (legacy)** | same                                        | global only        | 0.7×Coherence_norm + 0.3×Topic_Diversity_norm         | `top_10_coherence_priority.csv` |
+| **C — eval_select (current)**       | `min_n_topics`, stability gates             | global only        | 0.4×c_v + 0.4×diversity − 0.1×outlier − 0.1×stability | `top_10_eval_select.csv`        |
+
 
 Filters are applied **per run** before ranking (important when `model_runs` or stability differ).
 
@@ -129,3 +135,4 @@ Manual compare-fit for explicit BO calls:
   --config configs/train_v3.yaml \
   --save-model
 ```
+

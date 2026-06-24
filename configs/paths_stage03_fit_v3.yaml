@@ -1,0 +1,38 @@
+# Stage 03 paths for v3 English-only stratified-fit tuning.
+#
+# Build indices once (see docker/README.md):
+#   python -m src.stage03_train.cli sample \
+#     --train-csv data/raw/romance_subdataset_filtered_v3/sentences_train.csv \
+#     --val-csv data/raw/romance_subdataset_filtered_v3/sentences_val.csv \
+#     --metadata-train data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_train.csv \
+#     --metadata-val data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_val.csv \
+#     --out-dir data/stage03_samples_v3 --train-target 500000 --val-target 100000 --seed 42
+
+data:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+
+inputs:
+  sentences_train_csv: "data/raw/romance_subdataset_filtered_v3/sentences_train.csv"
+  sentences_val_csv: "data/raw/romance_subdataset_filtered_v3/sentences_val.csv"
+  sentences_test_csv: "data/raw/romance_subdataset_filtered_v3/sentences_test.csv"
+  romance_v2_subsampling_metadata_dir: "data/raw/romance_subdataset_filtered_v3/subsampling_metadata"
+  fit_indices_file: "data/stage03_samples_v3/fit_indices_seed42.npy"
+  eval_indices_file: "data/stage03_samples_v3/eval_indices_seed42.npy"
+  fit_sample_manifest: "data/stage03_samples_v3/sample_manifest_seed42.json"
+  octis_corpus_dir: "data/interim/octis/v3_english_only"
+  octis_dataset: "data/interim/octis"
+  custom_stoplist: "data/processed/custom_stoplist.txt"
+
+outputs:
+  models: "models"
+  results: "results"
+  experiments: "results/experiments"
+  selection: "results/selection"
+  final_models: "models/final"
+  evaluation: "results/evaluation"
+  pareto: "results/stage04_selection"
+  topics: "results/topics"
+  figures: "results/figures"
+  logs: "logs"

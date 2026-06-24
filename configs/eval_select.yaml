@@ -8,6 +8,9 @@ selection:
   # Set to 0 to disable. Applies to rows in trials.csv that carry an n_topics value.
   # Keep aligned with optimization.topic_count_penalty.min_n_topics in train.yaml.
   min_n_topics: 20
+  # Drop trials with high topic-count variance across model_runs (when column present).
+  max_n_topics_std: 3.0
+  require_topic_stability: true
 
 weights:
   coherence: 0.4

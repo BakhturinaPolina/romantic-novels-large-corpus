@@ -70,6 +70,53 @@ def select_cmd(trials_csv: Path, config: Path, run_id: str) -> None:
                 "Lower the floor in eval_select.yaml or revisit the Stage 03 search space."
             )
 
+    max_n_topics = int(cfg["selection"].get("max_n_topics", 0))
+    if max_n_topics > 0 and "n_topics" in df.columns:
+        before = len(df)
+        df = df[df["n_topics"].fillna(0) <= max_n_topics].copy()
+        click.echo(
+            f"Topic-count ceiling: kept {len(df)}/{before} trials "
+            f"(max_n_topics={max_n_topics})"
+        )
+
+    max_outlier_rate = float(cfg["selection"].get("max_outlier_rate", 0))
+    if max_outlier_rate > 0 and "outlier_rate" in df.columns:
+        before = len(df)
+        df = df[df["outlier_rate"].fillna(1.0) <= max_outlier_rate].copy()
+        click.echo(
+            f"Outlier-rate filter (max={max_outlier_rate}): kept {len(df)}/{before} trials"
+        )
+
+    max_largest_share = float(cfg["selection"].get("max_largest_topic_share", 0))
+    if max_largest_share > 0 and "largest_topic_share" in df.columns:
+        before = len(df)
+        df = df[df["largest_topic_share"].fillna(1.0) <= max_largest_share].copy()
+        click.echo(
+            f"Largest-topic-share filter (max={max_largest_share}): "
+            f"kept {len(df)}/{before} trials"
+        )
+
+    max_n_topics_std = float(cfg["selection"].get("max_n_topics_std", 0))
+    require_stability = bool(cfg["selection"].get("require_topic_stability", False))
+    if require_stability and "topic_stability_pass" in df.columns:
+        before = len(df)
+        df = df[df["topic_stability_pass"].fillna(True).astype(bool)].copy()
+        click.echo(
+            f"Topic stability pass filter: kept {len(df)}/{before} trials"
+        )
+    if max_n_topics_std > 0 and "n_topics_std" in df.columns:
+        before = len(df)
+        std_ok = df["n_topics_std"].isna() | (df["n_topics_std"] <= max_n_topics_std)
+        df = df[std_ok].copy()
+        click.echo(
+            f"Topic-count std filter (max={max_n_topics_std}): kept {len(df)}/{before} trials"
+        )
+    if df.empty:
+        raise ValueError(
+            "No trials remained after topic stability filters. "
+            "Relax eval_select.yaml selection.max_n_topics_std or require_topic_stability."
+        )
+
     df = _normalize_for_pareto(df)
     df_p = df.rename(
         columns={
@@ -93,6 +140,7 @@ def select_cmd(trials_csv: Path, config: Path, run_id: str) -> None:
         w_diversity=float(w["diversity"]),
         w_outlier=float(w["outlier"]),
         w_stability=float(w["stability"]),
+        w_topic_count_floor=float(w.get("topic_count_floor", 0.0)),
     )
     candidates = candidates.sort_values("weighted_score", ascending=False).reset_index(drop=True)
 

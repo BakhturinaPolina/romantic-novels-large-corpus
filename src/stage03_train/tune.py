@@ -16,7 +16,7 @@ from gensim.models import CoherenceModel
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
 from octis.evaluation_metrics.metrics import AbstractMetric
 from octis.optimization.optimizer import Optimizer
-from skopt.space.space import Integer, Real
+from skopt.space.space import Categorical, Integer, Real
 
 from src.common.config import load_config, resolve_path
 from src.common.logging import setup_logging
@@ -43,6 +43,7 @@ from src.stage03_train.data_io import load_eval_tokens_chunked, load_train_eval
 from src.stage03_train.embeddings import compute_embeddings_from_csvs, get_cache_file
 from src.stage03_train.embeddings_hub import load_project_dotenv
 from src.stage03_train.octis_corpus import write_octis_corpus_from_csvs
+from src.stage03_train.topic_stability import stability_config_from_cfg
 
 
 @dataclass
@@ -279,7 +280,13 @@ def _prepare_bertopic_fit_data(
 def build_search_space(cfg: dict[str, Any]) -> dict[str, Any]:
     """Build skopt search space from config."""
     s = cfg["search_space"]
-    return {
+    min_df_bounds = s["vectorizer__min_df"]
+    if all(isinstance(v, float) and v < 1.0 for v in min_df_bounds):
+        min_df_dim: Integer | Real = Real(min_df_bounds[0], min_df_bounds[1])
+    else:
+        min_df_dim = Integer(int(min_df_bounds[0]), int(min_df_bounds[1]))
+
+    space: dict[str, Any] = {
         "umap__n_neighbors": Integer(s["umap__n_neighbors"][0], s["umap__n_neighbors"][1]),
         "umap__n_components": Integer(s["umap__n_components"][0], s["umap__n_components"][1]),
         "umap__min_dist": Real(s["umap__min_dist"][0], s["umap__min_dist"][1]),
@@ -287,12 +294,14 @@ def build_search_space(cfg: dict[str, Any]) -> dict[str, Any]:
             s["hdbscan__min_cluster_size"][0], s["hdbscan__min_cluster_size"][1]
         ),
         "hdbscan__min_samples": Integer(s["hdbscan__min_samples"][0], s["hdbscan__min_samples"][1]),
-        "vectorizer__min_df": Real(s["vectorizer__min_df"][0], s["vectorizer__min_df"][1]),
+        "vectorizer__min_df": min_df_dim,
         "bertopic__top_n_words": Integer(s["bertopic__top_n_words"][0], s["bertopic__top_n_words"][1]),
-        "bertopic__min_topic_size": Integer(
-            s["bertopic__min_topic_size"][0], s["bertopic__min_topic_size"][1]
-        ),
     }
+    if "hdbscan__cluster_selection_method" in s:
+        space["hdbscan__cluster_selection_method"] = Categorical(
+            list(s["hdbscan__cluster_selection_method"])
+        )
+    return space
 
 
 def _topics_from_output(output_topics: Any) -> list[list[str]]:
@@ -397,6 +406,16 @@ def _optimize_with_resume(
     optimizer.metric = npmi_metric
     optimizer.extra_metrics = extra_metrics
     optimizer.number_of_call = number_of_calls
+    optimizer.model_runs = model_runs
+
+    stability_cfg = getattr(optimizer, "topic_stability_enabled", False)
+    logger.info(
+        "[RESUME] BO %d/%d complete; continuing with model_runs=%d stability=%s",
+        done,
+        number_of_calls,
+        model_runs,
+        stability_cfg,
+    )
 
     if optimizer.number_of_previous_calls >= optimizer.number_of_call:
         from octis.optimization.optimizer_evaluation import OptimizerEvaluation
@@ -524,6 +543,75 @@ class RawCoherenceMetric(AbstractMetric):
         return self._coherence.score(model_output)
 
 
+class OutlierRateMetric(AbstractMetric):
+    """OCTIS extra metric: fraction of documents assigned topic -1."""
+
+    def info(self) -> dict[str, str]:
+        return {"name": "OutlierRate"}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        return _outlier_rate_from_output(model_output)
+
+
+class _TopicSizeStatMetric(AbstractMetric):
+    """Base class for scalar metrics from ``topic_size_stats``."""
+
+    def __init__(self, stat_key: str, metric_name: str):
+        super().__init__()
+        self._stat_key = stat_key
+        self._metric_name = metric_name
+
+    def info(self) -> dict[str, str]:
+        return {"name": self._metric_name}
+
+    def score(self, model_output: dict[str, Any]) -> float:
+        stats = model_output.get("topic_size_stats") or {}
+        value = stats.get(self._stat_key, float("nan"))
+        return float(value) if value is not None else float("nan")
+
+
+class LargestTopicShareMetric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("largest_topic_share", "LargestTopicShare")
+
+
+class MedianTopicSizeMetric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("median_topic_size", "MedianTopicSize")
+
+
+class P10TopicSizeMetric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("p10_topic_size", "P10TopicSize")
+
+
+class P90TopicSizeMetric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("p90_topic_size", "P90TopicSize")
+
+
+class TinyTopicsLt25Metric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("n_tiny_topics_lt25", "TinyTopicsLt25")
+
+
+class TinyTopicsLt50Metric(_TopicSizeStatMetric):
+    def __init__(self) -> None:
+        super().__init__("n_tiny_topics_lt50", "TinyTopicsLt50")
+
+
+def _granular_diagnostic_metrics() -> list[AbstractMetric]:
+    return [
+        OutlierRateMetric(),
+        LargestTopicShareMetric(),
+        MedianTopicSizeMetric(),
+        P10TopicSizeMetric(),
+        P90TopicSizeMetric(),
+        TinyTopicsLt25Metric(),
+        TinyTopicsLt50Metric(),
+    ]
+
+
 class CoherenceWithTopicPenalty(AbstractMetric):
     """Primary BO metric: c_v coherence minus linear shortfall below a topic floor."""
 
@@ -568,10 +656,11 @@ def _build_bo_metrics(
             AdaptiveTopicDiversity(),
             TopicCountMetric(),
             RawCoherenceMetric(texts=tokens_eval),
+            *_granular_diagnostic_metrics(),
         ]
     else:
         primary = AdaptiveCVCoherence(texts=tokens_eval)
-        extras = [AdaptiveTopicDiversity()]
+        extras = [AdaptiveTopicDiversity(), *_granular_diagnostic_metrics()]
     return primary, extras
 
 
@@ -857,8 +946,19 @@ def run_tuning(
     for idx, model_name in enumerate(selected_models, start=1):
         model_step_start = time.perf_counter()
         model_state = state.get("models", {}).get(model_name, {})
+        number_of_calls = int(cfg["optimization"]["number_of_calls"])
+        optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
+        result_json = optimization_dir / "result.json"
+        checkpoint = load_bo_checkpoint(result_json)
+        bo_complete = (
+            is_bo_complete(checkpoint, number_of_calls=number_of_calls)
+            if checkpoint is not None
+            else False
+        )
         already_done = (
-            model_state.get("status") in {"completed", "skipped"} and model_name in trials_by_model
+            model_state.get("status") == "completed"
+            and bo_complete
+            and model_name in trials_by_model
         )
         if already_done:
             _mark_model(
@@ -944,17 +1044,28 @@ def run_tuning(
         )
         model.use_partitions = True
 
-        optimizer = make_resumable_optimizer_class()()
-        # Vocab-filtered c_v coherence (shared with trials.csv via _coherence_cv).
-        # Replaces Coherence(topk=1, measure="c_v"), which was degenerate (always
-        # 1.0 for single-word topics) and turned the BO objective into a constant.
         npmi_metric, extra_metrics = _build_bo_metrics(cfg, tokens_eval)
-        optimization_dir = paths.experiments_dir / f"opt_{idx}_{model_name.replace('/', '__')}"
-        result_json = optimization_dir / "result.json"
         trials_partial_csv = optimization_dir / "trials_partial.csv"
         opt_seed = int(cfg["optimization"].get("seed", 42))
         stability_score = float(cfg["optimization"].get("default_stability_score", 0.0))
-        number_of_calls = int(cfg["optimization"]["number_of_calls"])
+        topic_stability_cfg = stability_config_from_cfg(cfg)
+        model_runs = int(cfg["optimization"].get("model_runs", 1))
+
+        optimizer = make_resumable_optimizer_class()()
+        optimizer.topic_stability_enabled = topic_stability_cfg["enabled"]
+        optimizer.topic_stability_max_std = topic_stability_cfg["max_n_topics_std"]
+        optimizer.topic_stability_collapse_ratio = topic_stability_cfg["collapse_ratio"]
+        optimizer.topic_stability_penalty_weight = topic_stability_cfg["penalty_weight"]
+        optimizer.topic_stability_base_seed = topic_stability_cfg["base_seed"]
+        if topic_stability_cfg["enabled"]:
+            logger.info(
+                "[STABILITY] enabled: model_runs=%d max_std=%.1f collapse_ratio=%.2f weight=%.2f base_seed=%d",
+                model_runs,
+                topic_stability_cfg["max_n_topics_std"],
+                topic_stability_cfg["collapse_ratio"],
+                topic_stability_cfg["penalty_weight"],
+                topic_stability_cfg["base_seed"],
+            )
 
         def _on_bo_call_complete(current_call: int, _res: Any) -> None:
             """Persist ``trials_partial.csv`` and log progress after each BO call."""
@@ -969,16 +1080,20 @@ def run_tuning(
                 test_csv=paths.test_csv,
                 seed=opt_seed,
                 stability_score=stability_score,
+                topic_stability_cfg=topic_stability_cfg,
             )
             latest = rows[-1] if rows else {}
             logger.info(
                 "BO call %d/%d complete: coherence=%s bo_objective=%s "
-                "n_topics=%s diversity=%s (partial trials=%d) -> %s",
+                "n_topics=%s n_topics_std=%s topic_stability_pass=%s diversity=%s "
+                "(partial trials=%d) -> %s",
                 done,
                 total or number_of_calls,
                 latest.get("coherence_c_v"),
                 latest.get("bo_objective"),
                 latest.get("n_topics"),
+                latest.get("n_topics_std"),
+                latest.get("topic_stability_pass"),
                 latest.get("topic_diversity"),
                 len(rows),
                 trials_partial_csv,
@@ -1003,7 +1118,16 @@ def run_tuning(
             test_csv=paths.test_csv,
             seed=opt_seed,
             stability_score=stability_score,
+            topic_stability_cfg=topic_stability_cfg,
         )
+        if checkpoint is not None and not bo_complete:
+            logger.info(
+                "[RESUME] BO %d/%d complete; continuing with model_runs=%d stability=%s",
+                bo_done,
+                number_of_calls,
+                model_runs,
+                topic_stability_cfg["enabled"],
+            )
         if partial_rows:
             logger.info(
                 "Recovered %d partial BO trial(s) from checkpoint (%d/%d calls): %s",
@@ -1035,7 +1159,7 @@ def run_tuning(
             search_space=search_space,
             optimization_dir=optimization_dir,
             number_of_calls=number_of_calls,
-            model_runs=int(cfg["optimization"].get("model_runs", 1)),
+            model_runs=model_runs,
             save_models=bool(cfg["optimization"].get("save_models", False)),
             extra_metrics=extra_metrics,
             random_state=opt_seed,
@@ -1071,7 +1195,6 @@ def run_tuning(
             "seed": opt_seed,
             "embedding_model": model_name,
             "coherence_c_v": coherence,
-            "coherence_c_npmi": np.nan,
             "topic_diversity": diversity,
             "outlier_rate": outlier_rate,
             "n_topics": len(topics),

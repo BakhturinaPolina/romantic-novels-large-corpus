@@ -1,0 +1,55 @@
+# Stage03 v4 granular Phase 3 — all-MiniLM-L12-v2 (narrowed BO, model_runs=3)
+# Tighten search_space ranges after Phase 2 stability review.
+
+paths_config: "configs/paths_stage03_fit_v3.yaml"
+
+embedding_models:
+  - "sentence-transformers/all-MiniLM-L12-v2"
+
+device: "auto"
+embedding_batch_size: 256
+
+embeddings_cache:
+  overrides:
+    "sentence-transformers/all-MiniLM-L12-v2": "data/interim/octis/v3_english_only/embeddings_cache/train_eval_sentence-transformers__all-MiniLM-L12-v2.npy"
+
+embeddings_hub:
+  enabled: true
+  repo_id: "RuthonField/romance-v2-train-eval-embeddings"
+  upload_after_compute: false
+  download_if_missing: true
+
+text:
+  sentence_column: "sentence"
+  csv_chunk_size: 50000
+  coherence_eval_max_docs: 100000
+  bertopic_fit_max_docs: 500000
+
+bertopic:
+  calculate_probabilities: false
+
+optimization:
+  number_of_calls: 100
+  model_runs: 3
+  save_models: false
+  seed: 42
+  default_stability_score: 0.0
+  topic_stability:
+    enabled: true
+    max_n_topics_std: 75.0
+    collapse_ratio: 0.5
+    penalty_weight: 0.2
+  topic_count_penalty:
+    enabled: true
+    min_n_topics: 50
+    weight: 0.35
+
+search_space:
+  umap__n_neighbors: [5, 30]
+  umap__n_components: [8, 20]
+  umap__min_dist: [0.0, 0.08]
+  hdbscan__min_cluster_size: [25, 220]
+  hdbscan__min_samples: [5, 35]
+  hdbscan__cluster_selection_method: ["eom", "leaf"]
+  vectorizer__min_df: [3, 15]
+  bertopic__top_n_words: [25, 50]

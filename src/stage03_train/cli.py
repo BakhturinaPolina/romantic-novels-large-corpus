@@ -135,6 +135,49 @@ def sample(
     click.echo(f"Stage03 sampling complete. manifest: {manifest_path}")
 
 
+@cli.command("encode")
+@click.option(
+    "--train-csv",
+    default=Path("data/raw/romance_subdataset_filtered_v3/sentences_train.csv"),
+    type=click.Path(exists=True, path_type=Path),
+)
+@click.option(
+    "--val-csv",
+    default=Path("data/raw/romance_subdataset_filtered_v3/sentences_val.csv"),
+    type=click.Path(exists=True, path_type=Path),
+)
+@click.option("--model-name", required=True, type=str)
+@click.option("--cache-file", required=True, type=click.Path(path_type=Path))
+@click.option("--batch-size", default=256, type=int)
+@click.option("--device", default="auto", type=str)
+def encode(
+    train_csv: Path,
+    val_csv: Path,
+    model_name: str,
+    cache_file: Path,
+    batch_size: int,
+    device: str,
+) -> None:
+    """Encode train+val CSV rows and persist a resumable embedding cache (.npy)."""
+    import logging
+
+    from src.stage03_train.embeddings import compute_embeddings_from_csvs
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+    logger = logging.getLogger("embed")
+    cache_file.parent.mkdir(parents=True, exist_ok=True)
+    compute_embeddings_from_csvs(
+        train_csv,
+        val_csv,
+        model_name=model_name,
+        cache_file=cache_file,
+        batch_size=batch_size,
+        device=device,
+        logger=logger,
+    )
+    click.echo(f"Stage03 encode complete. cache: {cache_file}")
+
+
 if __name__ == "__main__":
     cli()
 

@@ -15,6 +15,7 @@ import os
 import json
 import traceback
 import gc
+from numbers import Integral
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 import numpy as np
@@ -50,6 +51,99 @@ except ImportError:
         "RAPIDS (cuML) is required for BERTopicOctisModelWithEmbeddings. "
         "Install with: pip install cuml-cu12 --extra-index-url=https://pypi.nvidia.com"
     )
+
+
+def _cap_vectorizer_min_df(vectorizer: CountVectorizer, n_docs: int) -> float | int:
+    """Ensure CountVectorizer min_df is valid for n_docs topic-level documents.
+
+    BERTopic refits the vectorizer on one joined-document per topic (not per
+    sentence). Absolute min_df values (e.g. 5) raise sklearn's
+    ``max_df corresponds to < documents than min_df`` when HDBSCAN finds
+    fewer topics than min_df. Using min_df == n_docs is also too harsh: every
+    surviving term must appear in all topics, often leaving a 1-feature matrix
+    that breaks ClassTfidfTransformer (scipy ``diags`` on a scalar).
+    """
+    if n_docs <= 0:
+        return vectorizer.min_df
+    min_df = vectorizer.min_df
+    max_df = vectorizer.max_df if vectorizer.max_df is not None else 1.0
+    max_count = max_df if isinstance(max_df, Integral) else float(max_df) * n_docs
+    min_count = min_df if isinstance(min_df, Integral) else float(min_df) * n_docs
+
+    def _floor_for_few_topics(value: float | int) -> float | int:
+        if n_docs <= 5:
+            return 1 if isinstance(value, Integral) else 1.0 / n_docs
+        if isinstance(value, Integral) and int(value) >= n_docs:
+            return 1
+        return value
+
+    if max_count >= min_count:
+        return _floor_for_few_topics(min_df)
+    target = max(1.0, max_count)
+    if isinstance(min_df, Integral):
+        capped = max(1, int(target))
+        return _floor_for_few_topics(capped)
+    return max(1.0 / n_docs, target / n_docs)
+
+
+class SafeClassTfidfTransformer(ClassTfidfTransformer):
+    """ClassTfidfTransformer that handles single-feature c-TF-IDF matrices."""
+
+    def fit(self, X, multiplier=None):
+        import scipy.sparse as sp
+        from sklearn.utils.validation import check_array
+
+        X = check_array(X, accept_sparse=("csr", "csc"))
+        if not sp.issparse(X):
+            X = sp.csr_matrix(X)
+        if X.shape[1] == 0:
+            self._idf_diag = sp.csr_matrix((0, 0), dtype=np.float64)
+            return self
+
+        if not self.use_idf:
+            return self
+
+        _, n_features = X.shape
+        df = np.atleast_1d(np.squeeze(np.asarray(X.sum(axis=0))))
+        avg_nr_samples = int(X.sum(axis=1).mean())
+        if self.bm25_weighting:
+            idf = np.log(1 + ((avg_nr_samples - df + 0.5) / (df + 0.5)))
+        else:
+            idf = np.log((avg_nr_samples / df) + 1)
+        if multiplier is not None:
+            idf = idf * multiplier
+        idf = np.atleast_1d(idf)
+        self._idf_diag = sp.diags(
+            idf,
+            offsets=0,
+            shape=(n_features, n_features),
+            format="csr",
+            dtype=np.float64,
+        )
+        return self
+
+
+class BERTopicWithSafeVectorizer(BERTopic):
+    """BERTopic that caps vectorizer min_df before c-TF-IDF extraction."""
+
+    def _c_tf_idf(self, documents_per_topic, fit=True, partial_fit=False):
+        n_docs = len(documents_per_topic)
+        vectorizer = self.vectorizer_model
+        orig_min_df = vectorizer.min_df
+        capped = _cap_vectorizer_min_df(vectorizer, n_docs)
+        if capped != orig_min_df:
+            vectorizer.min_df = capped
+            if self.verbose:
+                print(
+                    f"[TRAIN] Capped vectorizer min_df {orig_min_df!r} -> {capped!r} "
+                    f"for {n_docs} topic document(s)"
+                )
+        try:
+            return super()._c_tf_idf(
+                documents_per_topic, fit=fit, partial_fit=partial_fit
+            )
+        finally:
+            vectorizer.min_df = orig_min_df
 
 
 def get_embedding_model_cache_dir() -> str:
@@ -387,17 +481,6 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
                 )
         vectorizer_params["stop_words"] = merged_stop_words
 
-        # Fix for empty topic representations: proportional min_df is too high for small
-        # clusters on large corpora. Override to absolute value if it looks like a proportion.
-        orig_min_df = vectorizer_params.get("min_df", 1)
-        if isinstance(orig_min_df, float) and orig_min_df < 1.0:
-            vectorizer_params["min_df"] = 5
-            if self.verbose:
-                print(
-                    f"[TRAIN] Overriding min_df from {orig_min_df:.4f} (proportional) "
-                    f"to {vectorizer_params['min_df']} (absolute) for small-cluster support"
-                )
-
         # Fix for garbage tokens: enforce alphabetic tokens of 2+ characters only.
         if "token_pattern" not in vectorizer_params:
             vectorizer_params["token_pattern"] = r"(?u)\b[a-zA-Z]{2,}\b"
@@ -410,15 +493,16 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
         
         if self.verbose:
             print("[TRAIN] Creating ClassTfidfTransformer...")
-        tfdf_model = ClassTfidfTransformer(**self.hyperparameters['tfdf_vectorizer'])
+        tfdf_model = SafeClassTfidfTransformer(**self.hyperparameters['tfdf_vectorizer'])
         
         if self.verbose:
             print("[TRAIN] Creating BERTopic model instance...")
-        topic_model = BERTopic(
+        topic_model = BERTopicWithSafeVectorizer(
             embedding_model=self.embedding_model,
             umap_model=umap_model,
             hdbscan_model=hdbscan_model,
             vectorizer_model=vectorizer_model,
+            ctfidf_model=tfdf_model,
             representation_model=representation_model,
             **self.hyperparameters['bertopic']
         )
@@ -645,6 +729,13 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             topics_out = output_dict["topics"]
             output_dict["n_topics"] = len(topics_out) if topics_out else 0
 
+            from src.stage03_train.topic_size_metrics import topic_size_stats_from_topic_info
+
+            output_dict["topic_size_stats"] = topic_size_stats_from_topic_info(
+                topic_model.get_topic_info(),
+                len(fit_docs),
+            )
+
             if self.verbose:
                 print(f"[TRAIN] ✓ Output created:")
                 n_topics_out = output_dict["n_topics"]
@@ -680,4 +771,10 @@ class BERTopicOctisModelWithEmbeddings(AbstractModel):
             else:
                 if self.verbose:
                     print(f"⚠️  Warning: Parameter '{key}' does not match format 'section__hyperparameter'.")
+
+        # Custom cuML HDBSCAN controls clustering; keep bertopic.min_topic_size aligned
+        # for stored hyperparameter blobs and downstream tooling.
+        mcs = self.hyperparameters.get("hdbscan", {}).get("min_cluster_size")
+        if mcs is not None:
+            self.hyperparameters["bertopic"]["min_topic_size"] = mcs
 

@@ -27,7 +27,7 @@ def ensure_one_shot(output_metrics_json: Path, allow_rerun: bool = False) -> Non
 
 
 def _load_model(final_model_dir: Path) -> BERTopic:
-    # final fit stores a nested embedding folder; locate first model_* directory.
+    """Load a BERTopic native artifact from a final-fit or compare-fit directory."""
     candidates = sorted([p for p in final_model_dir.rglob("model_*") if p.is_dir()])
     if not candidates:
         raise FileNotFoundError(f"No BERTopic native model directory found under {final_model_dir}")
@@ -112,11 +112,15 @@ def run_holdout_score(
     policy: str,
     run_id: str,
     allow_rerun: bool = False,
+    *,
+    bo_call: int | None = None,
 ) -> Path:
     """Main holdout scoring workflow."""
     paths_cfg = load_config(Path("configs/paths.yaml"))
     test_csv = resolve_path(Path(paths_cfg["inputs"]["sentences_test_csv"]))
     evaluation_root = resolve_path(Path(paths_cfg["outputs"]["evaluation"])) / run_id
+    if bo_call is not None:
+        evaluation_root = evaluation_root / f"call_{bo_call}"
     evaluation_root.mkdir(parents=True, exist_ok=True)
 
     metrics_json = evaluation_root / "test_metrics.json"
@@ -125,6 +129,9 @@ def run_holdout_score(
     metrics = infer_on_test(final_model_dir, test_csv)
     metrics["run_id"] = run_id
     metrics["model_policy"] = policy
+    if bo_call is not None:
+        metrics["bo_call"] = bo_call
+    metrics["final_model_dir"] = str(final_model_dir)
     metrics["scored_at"] = datetime.utcnow().isoformat() + "Z"
 
     with open(metrics_json, "w", encoding="utf-8") as f:

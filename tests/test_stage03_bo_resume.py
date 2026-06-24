@@ -187,6 +187,138 @@ class BoResumeTests(unittest.TestCase):
         self.assertAlmostEqual(rows[1]["bo_objective"], 0.41)
         self.assertAlmostEqual(rows[1]["n_topics"], 25.0)
 
+    def test_project_result_with_multi_run_topic_stability(self) -> None:
+        payload = {
+            "metric_name": "CoherenceWithTopicPenalty",
+            "extra_metric_names": [
+                "0_TopicDiversity",
+                "1_TopicCount",
+                "2_RawCoherence",
+            ],
+            "number_of_call": 3,
+            "current_call": 0,
+            "f_val": [0.55],
+            "x_iters": {"umap__n_neighbors": [18]},
+            "dict_model_runs": {
+                "CoherenceWithTopicPenalty": {"iteration_0": [0.55, 0.54, 0.56]},
+                "0_TopicDiversity": {"iteration_0": [0.9, 0.88, 0.91]},
+                "1_TopicCount": {"iteration_0": [36.0, 37.0, 35.0]},
+                "2_RawCoherence": {"iteration_0": [0.62, 0.61, 0.63]},
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rows = project_result_to_trials(
+                payload,
+                run_id="v3_run",
+                model_idx=1,
+                model_name="sentence-transformers/all-MiniLM-L12-v2",
+                train_csv=root / "train.csv",
+                eval_csv=root / "eval.csv",
+                test_csv=root / "test.csv",
+                seed=42,
+                stability_score=0.0,
+                topic_stability_cfg={
+                    "max_n_topics_std": 3.0,
+                    "collapse_ratio": 0.5,
+                },
+            )
+        self.assertEqual(len(rows), 1)
+        self.assertAlmostEqual(rows[0]["n_topics"], 36.0)
+        self.assertAlmostEqual(rows[0]["n_topics_min"], 35.0)
+        self.assertAlmostEqual(rows[0]["n_topics_max"], 37.0)
+        self.assertAlmostEqual(rows[0]["n_topics_std"], 0.816496580927726, places=5)
+        self.assertEqual(rows[0]["n_topics_runs"], 3)
+        self.assertTrue(rows[0]["topic_stability_pass"])
+
+    def test_project_result_with_granular_extra_metrics(self) -> None:
+        payload = {
+            "metric_name": "CoherenceWithTopicPenalty",
+            "extra_metric_names": [
+                "0_TopicDiversity",
+                "1_TopicCount",
+                "2_RawCoherence",
+                "3_OutlierRate",
+                "4_LargestTopicShare",
+                "5_MedianTopicSize",
+                "6_P10TopicSize",
+                "7_P90TopicSize",
+                "8_TinyTopicsLt25",
+                "9_TinyTopicsLt50",
+            ],
+            "number_of_call": 2,
+            "current_call": 1,
+            "f_val": [0.5, 0.55],
+            "x_iters": {
+                "vectorizer__min_df": [5, 8],
+                "hdbscan__cluster_selection_method": ["eom", "leaf"],
+            },
+            "dict_model_runs": {
+                "CoherenceWithTopicPenalty": {"iteration_0": [0.5], "iteration_1": [0.55]},
+                "0_TopicDiversity": {"iteration_0": [0.9], "iteration_1": [0.88]},
+                "1_TopicCount": {"iteration_0": [120.0], "iteration_1": [250.0]},
+                "2_RawCoherence": {"iteration_0": [0.6], "iteration_1": [0.62]},
+                "3_OutlierRate": {"iteration_0": [0.12], "iteration_1": [0.15]},
+                "4_LargestTopicShare": {"iteration_0": [0.08], "iteration_1": [0.06]},
+                "5_MedianTopicSize": {"iteration_0": [80.0], "iteration_1": [95.0]},
+                "6_P10TopicSize": {"iteration_0": [30.0], "iteration_1": [35.0]},
+                "7_P90TopicSize": {"iteration_0": [200.0], "iteration_1": [220.0]},
+                "8_TinyTopicsLt25": {"iteration_0": [5.0], "iteration_1": [3.0]},
+                "9_TinyTopicsLt50": {"iteration_0": [10.0], "iteration_1": [8.0]},
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rows = project_result_to_trials(
+                payload,
+                run_id="v4_run",
+                model_idx=1,
+                model_name="sentence-transformers/all-MiniLM-L12-v2",
+                train_csv=root / "train.csv",
+                eval_csv=root / "eval.csv",
+                test_csv=root / "test.csv",
+                seed=42,
+                stability_score=0.0,
+            )
+        self.assertEqual(len(rows), 2)
+        self.assertAlmostEqual(rows[0]["outlier_rate"], 0.12)
+        self.assertAlmostEqual(rows[0]["largest_topic_share"], 0.08)
+        self.assertAlmostEqual(rows[0]["median_topic_size"], 80.0)
+        self.assertAlmostEqual(rows[0]["n_tiny_topics_lt25"], 5.0)
+        self.assertEqual(rows[0]["vectorizer__min_df"], 5)
+        self.assertEqual(rows[1]["hdbscan__cluster_selection_method"], "leaf")
+
+    def test_project_result_single_run_topic_std_is_zero(self) -> None:
+        payload = {
+            "metric_name": "Coherence",
+            "extra_metric_names": ["0_TopicCount"],
+            "number_of_call": 1,
+            "current_call": 0,
+            "f_val": [0.5],
+            "x_iters": {"umap__n_neighbors": [12]},
+            "dict_model_runs": {
+                "Coherence": {"iteration_0": [0.5]},
+                "0_TopicCount": {"iteration_0": [42.0]},
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rows = project_result_to_trials(
+                payload,
+                run_id="single_run",
+                model_idx=1,
+                model_name="sentence-transformers/all-MiniLM-L12-v2",
+                train_csv=root / "train.csv",
+                eval_csv=root / "eval.csv",
+                test_csv=root / "test.csv",
+                seed=42,
+                stability_score=0.0,
+            )
+        self.assertEqual(rows[0]["n_topics_runs"], 1)
+        self.assertAlmostEqual(rows[0]["n_topics_std"], 0.0)
+        self.assertNotIn("coherence_c_npmi", rows[0])
+        self.assertNotIn("outlier_rate", rows[0])
+
 
 if __name__ == "__main__":
     unittest.main()

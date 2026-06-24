@@ -22,14 +22,16 @@ def cli() -> None:
     required=True,
 )
 @click.option("--run-id", type=str, required=True)
+@click.option("--bo-call", type=int, default=None, help="Optional BO call id for per-call evaluation output.")
 @click.option("--allow-rerun", is_flag=True, default=False)
-def score_cmd(final_model_dir: Path, policy: str, run_id: str, allow_rerun: bool) -> None:
+def score_cmd(final_model_dir: Path, policy: str, run_id: str, bo_call: int | None, allow_rerun: bool) -> None:
     """Run one-shot final test scoring."""
     metrics_json = run_holdout_score(
         final_model_dir=final_model_dir,
         policy=policy,
         run_id=run_id,
         allow_rerun=allow_rerun,
+        bo_call=bo_call,
     )
     click.echo(f"Holdout scoring complete: {metrics_json}")
 
