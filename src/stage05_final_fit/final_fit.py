@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any
 
@@ -10,6 +11,8 @@ import pandas as pd
 
 from src.common.config import load_config, resolve_path
 from src.legacy.stage05_retraining.retrain_models import retrain_single_model
+
+LOGGER = logging.getLogger("stage05_final_fit")
 
 
 def load_winner_config(path: Path) -> dict[str, Any]:
@@ -39,9 +42,14 @@ def _merge_train_eval(train_csv: Path, eval_csv: Path, out_csv: Path) -> Path:
 
 
 def run_final_fit(winner_config: Path, policy: str = "both") -> dict[str, Path]:
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s",
+    )
     winner = load_winner_config(winner_config)
     model_config = _to_model_config(winner)
     run_id = winner["run_id"]
+    LOGGER.info("[FINAL-FIT] start run_id=%s policy=%s", run_id, policy)
 
     paths_cfg = load_config(Path("configs/paths.yaml"))
     output_root = resolve_path(Path(paths_cfg["outputs"]["final_models"])) / run_id
@@ -65,6 +73,7 @@ def run_final_fit(winner_config: Path, policy: str = "both") -> dict[str, Path]:
         if not ok:
             raise RuntimeError("Final fit train_only failed.")
         outputs["train_only"] = train_only_dir
+        LOGGER.info("[FINAL-FIT] train_only complete: %s", train_only_dir)
 
     if policy in {"both", "train_plus_val"}:
         merged_csv = output_root / "tmp_train_plus_val.csv"
@@ -80,6 +89,7 @@ def run_final_fit(winner_config: Path, policy: str = "both") -> dict[str, Path]:
         if not ok:
             raise RuntimeError("Final fit train_plus_val failed.")
         outputs["train_plus_val"] = train_plus_val_dir
+        LOGGER.info("[FINAL-FIT] train_plus_val complete: %s", train_plus_val_dir)
 
     manifest = output_root / "final_fit_manifest.json"
     with open(manifest, "w", encoding="utf-8") as f:
@@ -93,5 +103,6 @@ def run_final_fit(winner_config: Path, policy: str = "both") -> dict[str, Path]:
             f,
             indent=2,
         )
+    LOGGER.info("[FINAL-FIT] manifest: %s", manifest)
     return outputs
 

@@ -126,6 +126,12 @@ def parse_args() -> argparse.Namespace:
         help="Directory to save output files",
     )
     parser.add_argument(
+        "--rules-config",
+        type=Path,
+        default=Path("configs/topic_posthoc_rules.yaml"),
+        help="YAML config for post-hoc topic classification rules",
+    )
+    parser.add_argument(
         "--apply-labels",
         action="store_true",
         help="Apply inspection labels to noisy topics in the model (optional)",
@@ -140,6 +146,10 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     """Entrypoint for topic quality analysis and noisy topic detection."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s",
+    )
     args = parse_args()
     logger.info("=== Stage 07: Topic Quality Analysis ===")
     logger.info("Configuration: %s", vars(args))
@@ -216,6 +226,7 @@ def main() -> None:
             min_pos_words=args.min_pos_words,
             min_pos_coherence=args.min_pos_coherence,
             top_k=args.top_k,
+            rules_config=args.rules_config,
         )
 
     logger.info("Total topics (excl. -1): %d", len(quality_df))

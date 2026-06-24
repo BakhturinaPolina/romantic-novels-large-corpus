@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Any
 
 import pandas as pd
 from bertopic import BERTopic
 from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
+
+from src.common.topic_posthoc.rules import (
+    NOISE_ACTION,
+    classify_topics_from_info,
+)
 
 from src.stage06_topic_exploration.explore_retrained_model import (
     LOGGER,
@@ -19,6 +23,72 @@ from src.stage06_topic_exploration.explore_retrained_model import (
 
 # Use the same logger as stage06_topic_exploration for consistency
 logger = LOGGER
+
+
+def merge_posthoc_flags(
+    quality_df: pd.DataFrame,
+    *,
+    topic_info_path: Path | None = None,
+    topic_info_df: pd.DataFrame | None = None,
+    rules_config: Path | None = None,
+) -> pd.DataFrame:
+    """Merge rule-based post-hoc flags into a topic quality table."""
+    if topic_info_df is not None:
+        info_df = topic_info_df
+    elif topic_info_path is not None:
+        info_df = pd.read_csv(topic_info_path)
+    else:
+        logger.warning("No topic_info source for post-hoc merge; skipping rules")
+        return quality_df
+
+    classified = classify_topics_from_info(
+        info_df, config_path=rules_config, logger=logger
+    )
+    posthoc_cols = [
+        "Topic",
+        "content_type",
+        "posthoc_flags",
+        "posthoc_reason",
+        "exclude_from_axes",
+        "suggested_action",
+    ]
+    posthoc_cols = [c for c in posthoc_cols if c in classified.columns]
+    posthoc_subset = classified[posthoc_cols].copy()
+    posthoc_subset = posthoc_subset[posthoc_subset["Topic"] != -1]
+
+    merged = quality_df.merge(posthoc_subset, on="Topic", how="left")
+    merged["posthoc_reason"] = merged["posthoc_reason"].fillna("")
+    merged["exclude_from_axes"] = merged["exclude_from_axes"].fillna(False)
+
+    def _combined_reason(row: pd.Series) -> str:
+        parts = [p for p in (row.get("noise_reason", ""), row.get("posthoc_reason", "")) if p]
+        return ";".join(parts)
+
+    merged["noise_reason"] = merged.apply(_combined_reason, axis=1)
+    merged["noise_candidate"] = (
+        merged["noise_candidate"].astype(bool)
+        | merged["exclude_from_axes"].astype(bool)
+    )
+
+    def _inspection_label(row: pd.Series) -> str:
+        base_name = str(row.get("Name", "") or "").strip()
+        posthoc_flags = row.get("posthoc_flags")
+        if isinstance(posthoc_flags, list):
+            noise_rules = [f for f in posthoc_flags if f]
+        else:
+            noise_rules = []
+        if noise_rules and row.get("suggested_action") == NOISE_ACTION:
+            rule_tag = noise_rules[0]
+            return f"[NOISE:{rule_tag}] {base_name}"
+        reasons = row.get("noise_reason", "")
+        if reasons:
+            return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
+        return base_name
+
+    merged["inspection_label"] = merged.apply(_inspection_label, axis=1)
+    n_posthoc = int(merged["exclude_from_axes"].sum())
+    logger.info("[POSTHOC] merged into quality table: %d topics exclude_from_axes", n_posthoc)
+    return merged
 
 
 def get_topic_distribution(topic_model: BERTopic, min_size: int = 30) -> pd.DataFrame:
@@ -139,6 +209,9 @@ def build_topic_quality_table(
     min_pos_words: int = 3,
     min_pos_coherence: float = 0.0,
     top_k: int = 10,
+    *,
+    topic_info_path: Path | None = None,
+    rules_config: Path | None = None,
 ) -> pd.DataFrame:
     """
     Combine size, POS stats, and POS coherence; flag candidate noisy topics.
@@ -154,6 +227,8 @@ def build_topic_quality_table(
         min_pos_words: Minimum number of POS words per topic
         min_pos_coherence: Minimum per-topic POS coherence threshold
         top_k: Number of top words per topic to consider
+        topic_info_path: Optional path to topic_info.csv for post-hoc rule merge
+        rules_config: Optional path to topic_posthoc_rules.yaml
         
     Returns:
         DataFrame with topic quality metrics and noise candidate flags
@@ -210,6 +285,24 @@ def build_topic_quality_table(
             return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
 
         df["inspection_label"] = df.apply(_inspection_label, axis=1)
+
+        info_source = topic_info_path
+        if info_source is None:
+            try:
+                full_info = topic_model.get_topic_info()
+                df = merge_posthoc_flags(
+                    df,
+                    topic_info_df=full_info,
+                    rules_config=rules_config,
+                )
+            except Exception as ex:
+                logger.warning("Could not merge post-hoc flags from model: %s", ex)
+        else:
+            df = merge_posthoc_flags(
+                df,
+                topic_info_path=info_source,
+                rules_config=rules_config,
+            )
 
         # Sort for easier EDA
         df.sort_values(

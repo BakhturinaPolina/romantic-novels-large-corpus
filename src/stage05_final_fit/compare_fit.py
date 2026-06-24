@@ -38,6 +38,7 @@ from bertopic import BERTopic  # noqa: F401 — re-exported type for annotations
 from bertopic.vectorizers import ClassTfidfTransformer
 
 from src.common.config import load_config, resolve_path
+from src.common.topic_posthoc.rules import write_posthoc_artifacts
 from src.stage03_train.corpus_store import (
     CorpusDocStore,
     corpus_metadata_path,
@@ -483,6 +484,18 @@ def _write_topic_tables(
                 writer.writerow([int(tid), rank, doc])
 
 
+def _write_posthoc_for_dir(out_dir: Path) -> None:
+    """Run post-hoc rule classifier on exported topic_info.csv (metadata only)."""
+    topic_info_path = out_dir / "topic_info.csv"
+    if not topic_info_path.exists():
+        LOGGER.warning("[POSTHOC] skip: %s not found", topic_info_path)
+        return
+    try:
+        write_posthoc_artifacts(topic_info_path, out_dir, logger=LOGGER)
+    except Exception as ex:
+        LOGGER.warning("[POSTHOC] classification failed for %s: %s", out_dir, ex)
+
+
 def _jsonable(obj: Any) -> Any:
     """Make numpy / tuple values JSON-serializable for metrics dumps."""
     if isinstance(obj, dict):
@@ -789,6 +802,7 @@ def run_compare_fit(
 
             with stage_timer(f"call_{call} write topic tables"):
                 _write_topic_tables(topic_model, out_dir)
+                _write_posthoc_for_dir(out_dir)
         else:
             with open(out_dir / "metrics.json", "r", encoding="utf-8") as f:
                 existing = json.load(f)
@@ -796,6 +810,7 @@ def run_compare_fit(
             diversity = float(existing["topic_diversity"])
             outlier_rate = float(existing["outlier_rate"])
             n_topics = int(existing["n_topics"])
+            _write_posthoc_for_dir(out_dir)
 
         if reduce_outliers:
             reduced_dir = out_dir / "outliers_reduced"
@@ -806,6 +821,7 @@ def run_compare_fit(
                     topic_model, fit_dictionary, tokens_eval, eval_dictionary
                 )
                 _write_topic_tables(topic_model, reduced_dir)
+                _write_posthoc_for_dir(reduced_dir)
                 with open(reduced_dir / "metrics.json", "w", encoding="utf-8") as f:
                     json.dump(
                         {

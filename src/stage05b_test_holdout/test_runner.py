@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -11,10 +12,11 @@ import numpy as np
 import pandas as pd
 from bertopic import BERTopic
 from gensim.corpora import Dictionary
-from gensim.models import CoherenceModel
-from octis.evaluation_metrics.diversity_metrics import TopicDiversity
 
 from src.common.config import load_config, resolve_path
+from src.stage03_train.tune import _coherence_cv, _diversity_adaptive
+
+LOGGER = logging.getLogger("stage05b_holdout")
 
 
 def ensure_one_shot(output_metrics_json: Path, allow_rerun: bool = False) -> None:
@@ -55,13 +57,16 @@ def _extract_topics(topic_model: BERTopic, top_k: int = 10) -> list[list[str]]:
 
 def infer_on_test(final_model_dir: Path, test_csv: Path) -> dict[str, Any]:
     """Run transform on test split and compute final metrics."""
+    LOGGER.info("[HOLDOUT] loading model from %s", final_model_dir)
     topic_model = _load_model(final_model_dir)
+    LOGGER.info("[HOLDOUT] reading test CSV: %s", test_csv)
     df = pd.read_csv(test_csv)
     if "sentence" not in df.columns:
         raise ValueError(f"Expected `sentence` column in {test_csv}")
     docs = [" ".join(str(s).replace("\n", " ").split()).strip().lower() for s in df["sentence"].tolist()]
     docs = [d for d in docs if d]
     tokens = [d.split() for d in docs]
+    LOGGER.info("[HOLDOUT] transforming %d test documents", len(docs))
     topics_pred, probs = topic_model.transform(docs)
 
     outlier_rate = float(np.mean(np.array(topics_pred) == -1)) if len(topics_pred) else 0.0
@@ -69,16 +74,28 @@ def infer_on_test(final_model_dir: Path, test_csv: Path) -> dict[str, Any]:
     dictionary = Dictionary(tokens)
     topics_in_vocab = [[w for w in t if w in dictionary.token2id] for t in topic_words]
     topics_in_vocab = [t for t in topics_in_vocab if t]
-    coherence_c_v = 0.0
+    coherence_c_v = _coherence_cv(topics_in_vocab, tokens, dictionary=dictionary) if topics_in_vocab else 0.0
     coherence_c_npmi = 0.0
     if topics_in_vocab:
-        coherence_c_v = float(
-            CoherenceModel(topics=topics_in_vocab, texts=tokens, dictionary=dictionary, coherence="c_v").get_coherence()
-        )
+        from gensim.models import CoherenceModel
+
         coherence_c_npmi = float(
-            CoherenceModel(topics=topics_in_vocab, texts=tokens, dictionary=dictionary, coherence="c_npmi").get_coherence()
+            CoherenceModel(
+                topics=topics_in_vocab,
+                texts=tokens,
+                dictionary=dictionary,
+                coherence="c_npmi",
+            ).get_coherence()
         )
-    topic_diversity = float(TopicDiversity(topk=10).score({"topics": topic_words})) if topic_words else 0.0
+    topic_diversity = _diversity_adaptive(topic_words) if topic_words else 0.0
+
+    LOGGER.info(
+        "[HOLDOUT] done: n_topics=%d outlier=%.4f coherence=%.4f diversity=%.4f",
+        len(topic_words),
+        outlier_rate,
+        coherence_c_v,
+        topic_diversity,
+    )
 
     return {
         "n_docs_test": len(docs),
@@ -116,6 +133,11 @@ def run_holdout_score(
     bo_call: int | None = None,
 ) -> Path:
     """Main holdout scoring workflow."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s",
+    )
+    LOGGER.info("[HOLDOUT] start run_id=%s policy=%s bo_call=%s", run_id, policy, bo_call)
     paths_cfg = load_config(Path("configs/paths.yaml"))
     test_csv = resolve_path(Path(paths_cfg["inputs"]["sentences_test_csv"]))
     evaluation_root = resolve_path(Path(paths_cfg["outputs"]["evaluation"])) / run_id
@@ -137,5 +159,6 @@ def run_holdout_score(
     with open(metrics_json, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)
     write_test_report(metrics, evaluation_root / "final_topic_report.md")
+    LOGGER.info("[HOLDOUT] wrote metrics to %s", metrics_json)
     return metrics_json
 

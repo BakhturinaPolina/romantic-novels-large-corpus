@@ -1,0 +1,61 @@
+# Post-hoc topic classification thresholds (see stage03_posthoc_cleaning_limitations_memo.md)
+
+tiny_topic:
+  min_size: 200
+
+multilingual_artifact:
+  short_token_max_len: 2
+  short_token_ratio: 0.50
+  non_ascii_ratio: 0.50
+
+publisher_boilerplate:
+  # Matched in representative docs only, with word-boundary regex (see rules.py).
+  keywords:
+    - copyright
+    - copyrighted
+    - publisher
+    - harpercollins
+    - penguin
+    - trademark
+    - isbn
+    - acknowledgments
+    - document outline
+    - dedication page
+    - chapter one
+    - table of contents
+    - unauthorized reproduction
+    - published by
+
+procedural_transition:
+  keywords:
+    - elevator
+    - parked
+    - doorway
+    - staircase
+    - ignition
+    - meal
+    - meals
+    - raining
+    - temperature
+    - windshield
+
+subgenre_marker:
+  keywords:
+    - werewolves
+    - werewolf
+    - vampire
+    - vampires
+    - shifter
+    - paranormal
+    - medieval
+    - regency
+    - investigator
+    - detectives
+    - supernatural
+    - immortal
+    - fairies
+
+noise_actions:
+  - multilingual_artifact
+  - publisher_boilerplate
+  - tiny_topic

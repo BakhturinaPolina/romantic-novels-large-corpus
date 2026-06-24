@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,8 @@ from src.stage05_final_fit.pareto_selection import (
     load_pareto_selection_config,
 )
 from src.stage05b_test_holdout.test_runner import run_holdout_score
+
+LOGGER = logging.getLogger("stage05_pareto_pipeline")
 
 
 def run_pareto_stage05(
@@ -30,9 +33,14 @@ def run_pareto_stage05(
     allow_rerun: bool = False,
 ) -> dict[str, Any]:
     """Compare-fit pareto top-k trials, save models, and score test holdout."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s",
+    )
     sel = load_pareto_selection_config(selection_config)
     run_id = sel["run_id"]
     bo_calls = collect_bo_calls_from_pareto(sel["top_models_dir"], strategies=strategies)
+    LOGGER.info("[PARETO] run_id=%s bo_calls=%s", run_id, bo_calls)
 
     compare_root = run_compare_fit(
         trials_csv=sel["trials_partial_csv"],
@@ -95,6 +103,7 @@ def run_pareto_stage05(
 
     summary_path = compare_root / "pareto_holdout_summary.csv"
     pd.DataFrame(summary_rows).to_csv(summary_path, index=False)
+    LOGGER.info("[PARETO] holdout summary: %s", summary_path)
 
     return {
         "run_id": run_id,

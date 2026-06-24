@@ -25,26 +25,38 @@ from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
 
 from src.stage05_final_fit.compat import RetrainableBERTopicModel
+from src.common.config import load_config, resolve_path
 
 LOGGER = logging.getLogger("stage06_topics_exploration")
-logging.basicConfig(
-    level=logging.INFO,
-    format="[%(asctime)s] [%(levelname)s] %(message)s",
-)
 
-DEFAULT_BASE_DIR = Path(
-    "/home/polina/Documents/goodreads_romance_research_cursor/billionaire_novels_rating_predictor/models/retrained"
-)
+
+def _default_repo_paths() -> dict[str, Path]:
+    """Resolve repo-relative defaults from configs/paths.yaml when available."""
+    repo_root = Path(__file__).resolve().parents[2]
+    defaults = {
+        "base_dir": repo_root / "models" / "final",
+        "corpus_path": repo_root / "data" / "interim" / "octis" / "v3_english_only" / "corpus.tsv",
+        "chapters_csv": repo_root / "data" / "processed" / "chapters.csv",
+        "chapters_subset_csv": repo_root / "data" / "processed" / "chapters_subset_10000.csv",
+    }
+    paths_cfg_path = repo_root / "configs" / "paths.yaml"
+    if paths_cfg_path.exists():
+        paths_cfg = load_config(paths_cfg_path)
+        inputs = paths_cfg.get("inputs", {})
+        outputs = paths_cfg.get("outputs", {})
+        if octis := inputs.get("octis_dataset"):
+            defaults["corpus_path"] = resolve_path(Path(octis)) / "corpus.tsv"
+        if final := outputs.get("final_models"):
+            defaults["base_dir"] = resolve_path(Path(final))
+    return defaults
+
+
+_repo_defaults = _default_repo_paths()
+DEFAULT_BASE_DIR = _repo_defaults["base_dir"]
 DEFAULT_EMBEDDING_MODEL = "paraphrase-MiniLM-L6-v2"
-DEFAULT_CORPUS_PATH = Path(
-    "/home/polina/Documents/goodreads_romance_research_cursor/billionaire_novels_rating_predictor/data/interim/octis/corpus.tsv"
-)
-DEFAULT_CHAPTERS_CSV = Path(
-    "/home/polina/Documents/goodreads_romance_research_cursor/billionaire_novels_rating_predictor/data/processed/chapters.csv"
-)
-DEFAULT_CHAPTERS_SUBSET_CSV = Path(
-    "/home/polina/Documents/goodreads_romance_research_cursor/billionaire_novels_rating_predictor/data/processed/chapters_subset_10000.csv"
-)
+DEFAULT_CORPUS_PATH = _repo_defaults["corpus_path"]
+DEFAULT_CHAPTERS_CSV = _repo_defaults["chapters_csv"]
+DEFAULT_CHAPTERS_SUBSET_CSV = _repo_defaults["chapters_subset_csv"]
 DEFAULT_BATCH_SIZE = 50_000
 WHITESPACE_PATTERN = re.compile(r"\s+")
 
@@ -822,6 +834,10 @@ def resolve_dataset_path(args: argparse.Namespace) -> Path | None:
 
 def main() -> None:
     """Entrypoint that ties together loading, instrumentation, and metric reporting."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s",
+    )
     args = parse_args()
     LOGGER.info("=== Stage 06 BERTopic Topics Exploration ===")
     LOGGER.info("Configuration: %s", vars(args))
