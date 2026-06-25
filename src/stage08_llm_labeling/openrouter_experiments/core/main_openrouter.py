@@ -23,6 +23,11 @@ from src.stage08_llm_labeling.generate_labels import (
     integrate_labels_to_bertopic,
     load_bertopic_model,
 )
+from src.stage08_llm_labeling.openrouter_experiments.core.labeling_runners import (
+    estimate_openrouter_cost,
+    get_token_usage,
+    reset_token_usage,
+)
 from src.stage08_llm_labeling.openrouter_experiments.core.generate_labels_openrouter import (
     DEFAULT_OPENROUTER_API_KEY,
     DEFAULT_OPENROUTER_MODEL,
@@ -575,6 +580,7 @@ def main() -> None:
         
         # Use streaming mode if JSON file is provided (more memory-efficient)
         use_streaming = args.topics_json and args.topics_json.exists()
+        reset_token_usage()
         
         if use_streaming:
             print(f"[LABELING_CMD] Step 4: Generating labels using STREAMING mode (memory-efficient, batch_size={args.batch_size})...")
@@ -740,6 +746,17 @@ def main() -> None:
             print("[LABELING_CMD] Labels integrated into BERTopic: Yes")
         else:
             print("[LABELING_CMD] Labels integrated into BERTopic: No")
+        usage = get_token_usage()
+        if usage["requests"]:
+            cost_usd = estimate_openrouter_cost(model_name, usage)
+            per_topic = cost_usd / max(topics_count, 1)
+            print(
+                f"[LABELING_CMD] API usage: {usage['prompt_tokens']} prompt + "
+                f"{usage['completion_tokens']} completion ({usage['requests']} requests)"
+            )
+            print(f"[LABELING_CMD] Est. API cost (OpenRouter list price): ${cost_usd:.4f}")
+            print(f"[LABELING_CMD] Est. per topic: ${per_topic:.4f}")
+            print(f"[LABELING_CMD] Est. full 330-topic run: ${per_topic * 330:.2f}")
         print(f"[LABELING_CMD] Log file: {log_path}")
         print("[LABELING_CMD] ========== labeling command completed ==========")
         sys.stdout.flush()

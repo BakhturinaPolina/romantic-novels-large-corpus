@@ -70,6 +70,48 @@ def _select_snippets(
     return "\n\n" + block if block else ""
 
 
+# Cumulative token usage for the current labeling run (reset in main_openrouter).
+_run_token_usage: dict[str, int] = {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "requests": 0,
+}
+
+# OpenRouter list prices per 1M tokens (input, output) — Jun 2026.
+OPENROUTER_PRICE_PER_1M: dict[str, tuple[float, float]] = {
+    "anthropic/claude-opus-4.6": (5.0, 25.0),
+    "anthropic/claude-sonnet-4.6": (3.0, 15.0),
+    "mistralai/mistral-nemo": (0.02, 0.03),
+}
+
+
+def reset_token_usage() -> None:
+    _run_token_usage["prompt_tokens"] = 0
+    _run_token_usage["completion_tokens"] = 0
+    _run_token_usage["requests"] = 0
+
+
+def get_token_usage() -> dict[str, int]:
+    return dict(_run_token_usage)
+
+
+def estimate_openrouter_cost(model_name: str, usage: dict[str, int]) -> float:
+    """Estimate USD cost from OpenRouter list prices (no prompt-cache discount)."""
+    in_per_m, out_per_m = OPENROUTER_PRICE_PER_1M.get(model_name, (0.0, 0.0))
+    prompt = usage.get("prompt_tokens", 0)
+    completion = usage.get("completion_tokens", 0)
+    return (prompt / 1_000_000) * in_per_m + (completion / 1_000_000) * out_per_m
+
+
+def _record_token_usage(response: Any) -> None:
+    usage = getattr(response, "usage", None)
+    if not usage:
+        return
+    _run_token_usage["prompt_tokens"] += int(getattr(usage, "prompt_tokens", 0) or 0)
+    _run_token_usage["completion_tokens"] += int(getattr(usage, "completion_tokens", 0) or 0)
+    _run_token_usage["requests"] += 1
+
+
 def generate_label_from_keywords_openrouter(
     keywords: list[str],
     client: OpenAI,
@@ -158,6 +200,7 @@ def generate_label_from_keywords_openrouter(
             response = client.chat.completions.create(**kwargs)
         if not response.choices:
             raise ValueError("Empty API response")
+        _record_token_usage(response)
         return response.choices[0].message.content.strip()
 
     try:
