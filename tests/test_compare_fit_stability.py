@@ -10,6 +10,17 @@ import numpy as np
 from src.stage05_final_fit import compare_fit
 
 
+class CompareFitMinDfCoercionTests(unittest.TestCase):
+    def test_coerce_integer_min_df_from_float_whole_number(self) -> None:
+        self.assertEqual(compare_fit._coerce_vectorizer_min_df(19.0), 19)
+        self.assertIsInstance(compare_fit._coerce_vectorizer_min_df(19.0), int)
+
+    def test_coerce_legacy_proportional_min_df(self) -> None:
+        self.assertAlmostEqual(
+            compare_fit._coerce_vectorizer_min_df(0.01485), 0.01485
+        )
+
+
 class CompareFitStabilityTests(unittest.TestCase):
     def test_run_stability_check_pass(self) -> None:
         with patch.object(compare_fit, "_fit_bertopic", return_value=MagicMock()):

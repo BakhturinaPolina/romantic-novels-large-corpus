@@ -82,7 +82,15 @@ _INT_PARAMS = {
     "bertopic__top_n_words",
     "bertopic__min_topic_size",
 }
-_FLOAT_PARAMS = {"umap__min_dist", "vectorizer__min_df"}
+_FLOAT_PARAMS = {"umap__min_dist"}
+
+
+def _coerce_vectorizer_min_df(value: Any) -> int | float:
+    """v4 BO uses integer absolute min_df; legacy trials use float proportions."""
+    v = float(value)
+    if v >= 1.0 and v == int(v):
+        return int(v)
+    return v
 
 
 def _utc_now() -> str:
@@ -141,7 +149,9 @@ def _read_trial_hyperparameters(
         value = row[col]
         if pd.isna(value):
             continue
-        if col in _INT_PARAMS:
+        if col == "vectorizer__min_df":
+            flat_hp[col] = _coerce_vectorizer_min_df(value)
+        elif col in _INT_PARAMS:
             flat_hp[col] = int(value)
         elif col in _FLOAT_PARAMS:
             flat_hp[col] = float(value)
