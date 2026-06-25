@@ -78,6 +78,14 @@ _MMR_EMBEDDING_MODEL: SentenceTransformer | None = None
 # Module-level cache for spaCy NLP model (loaded once, reused for all topics)
 _SPACY_NLP = None
 
+try:
+    import spacy
+
+    SPACY_AVAILABLE = True
+except ImportError:
+    spacy = None  # type: ignore[assignment]
+    SPACY_AVAILABLE = False
+
 
 def _get_embedding_model() -> SentenceTransformer:
     """Load (or reuse) a sentence embedding model for snippet centrality."""
