@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Stage07 topic quality for v4 placeholder compare-fit models (calls 55, 73, 68).
+# Stage07 topic quality for v4 placeholder compare-fit models (top-5: 55, 73, 49, 19, 68).
 #
 # Uses stratified 100k eval tokens once for dictionary + POS coherence (v3-aligned).
-# Outputs: results/stage07_topic_quality/placeholder_v4_call{55,73,68}/
+# Outputs: results/stage07_topic_quality/placeholder_v4_call{55,73,49,19,68}/
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -36,7 +36,9 @@ logger = logging.getLogger("stage07_placeholder_v4")
 
 ROOT = Path(".")
 COMPARE_ROOT = ROOT / "results/experiments/placeholder_v4_models/final_compare"
-CALLS = [55, 73, 68]
+_default_calls = [55, 73, 49, 19, 68]
+_env_calls = __import__("os").environ.get("CALLS", "")
+CALLS = [int(c.strip()) for c in _env_calls.split(",") if c.strip()] if _env_calls else _default_calls
 RULES_CONFIG = ROOT / "configs/topic_posthoc_rules.yaml"
 OUT_ROOT = ROOT / "results/stage07_topic_quality"
 
@@ -70,7 +72,8 @@ logger.info(
 summary_rows = []
 for call in CALLS:
     call_dir = COMPARE_ROOT / f"call_{call}"
-    model_dir = call_dir / "model_compare"
+    enriched = call_dir / "model_compare_enriched"
+    model_dir = enriched if enriched.is_dir() else call_dir / "model_compare"
     topic_info_path = call_dir / "topic_info.csv"
     out_dir = OUT_ROOT / f"placeholder_v4_call{call}"
     out_dir.mkdir(parents=True, exist_ok=True)

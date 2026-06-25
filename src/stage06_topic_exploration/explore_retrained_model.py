@@ -485,7 +485,7 @@ def evaluate_representations(
             
             words: list[str] = []
             for item in topic_content[:top_k]:
-                if isinstance(item, tuple) and len(item) > 0:
+                if isinstance(item, (tuple, list)) and len(item) > 0:
                     words.append(str(item[0]))
                 elif isinstance(item, str):
                     words.append(item)
@@ -604,10 +604,10 @@ def extract_all_topics(
             for item in topic_content[:top_k]:
                 word = None
                 score = 0.0
-                
-                if isinstance(item, tuple) and len(item) >= 2:
+
+                if isinstance(item, (tuple, list)) and len(item) >= 2:
                     word, score = item[0], item[1]
-                elif isinstance(item, tuple) and len(item) == 1:
+                elif isinstance(item, (tuple, list)) and len(item) == 1:
                     word = item[0]
                 elif isinstance(item, str):
                     word = item
