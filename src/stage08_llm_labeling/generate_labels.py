@@ -336,7 +336,7 @@ def extract_pos_topics(
             keywords: list[str] = []
             for item in topic_content[:top_k]:
                 word = None
-                if isinstance(item, tuple) and len(item) > 0:
+                if isinstance(item, (list, tuple)) and len(item) > 0:
                     word = str(item[0]).strip()
                 elif isinstance(item, str):
                     word = item.strip()

@@ -48,6 +48,8 @@ from src.stage06_topic_exploration.explore_retrained_model import (
     save_topics,
     stage_timer,
 )
+from src.common.topic_posthoc.rules import write_posthoc_artifacts
+from src.common.topic_posthoc.topic_info_sync import sync_topic_info_csv
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] [%(levelname)s] %(message)s")
 logger = logging.getLogger("stage06_placeholder_v4")
@@ -126,6 +128,11 @@ if model_out.exists():
     shutil.rmtree(model_out)
 with stage_timer("save model_compare_enriched"):
     topic_model.save(str(model_out), serialization="safetensors")
+
+topic_info_path = call_dir / "topic_info.csv"
+with stage_timer("sync topic_info.csv from enriched model"):
+    sync_topic_info_csv(topic_model, topic_info_path)
+    write_posthoc_artifacts(topic_info_path, call_dir)
 
 elapsed = time.perf_counter() - t0
 logger.info("Stage06 call_%d done in %.1fs", call, elapsed)

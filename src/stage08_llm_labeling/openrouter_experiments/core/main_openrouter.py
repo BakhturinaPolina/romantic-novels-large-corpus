@@ -144,6 +144,13 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
+        "--representative-docs-csv",
+        type=Path,
+        default=None,
+        help="Fallback representative_docs.csv from compare-fit when model has no rep docs",
+    )
+
+    parser.add_argument(
         "--prompt-version",
         type=str,
         default=DEFAULT_PROMPT_VERSION,
@@ -295,6 +302,11 @@ def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
         args.topics_json = Path(paths["topics_json"])
     if args.quality_csv is None and paths.get("quality_csv"):
         args.quality_csv = Path(paths["quality_csv"])
+    if args.representative_docs_csv is None:
+        if paths.get("representative_docs_csv"):
+            args.representative_docs_csv = Path(paths["representative_docs_csv"])
+        elif paths.get("compare_fit_dir"):
+            args.representative_docs_csv = Path(paths["compare_fit_dir"]) / "representative_docs.csv"
     if args.output_dir == DEFAULT_OUTPUT_DIR and paths.get("output_dir"):
         args.output_dir = Path(paths["output_dir"])
     if args.model_name == DEFAULT_OPENROUTER_MODEL and openrouter.get("model"):
@@ -309,7 +321,8 @@ def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
         args.num_keywords = int(labeling["num_keywords"])
     if cfg.get("prompt_version"):
         args.prompt_version = str(cfg["prompt_version"])
-    if labeling.get("resume") is not None:
+    # YAML resume default must not override explicit --no-resume / --resume on CLI.
+    if labeling.get("resume") is not None and "--no-resume" not in sys.argv and "--resume" not in sys.argv:
         args.resume = bool(labeling["resume"])
 
 
@@ -385,6 +398,7 @@ def main() -> None:
         print(f"[LABELING_CMD]   Use improved prompts: {args.use_improved_prompts}")
         print(f"[LABELING_CMD]   Prompt version: {args.prompt_version}")
         print(f"[LABELING_CMD]   Quality CSV: {args.quality_csv}")
+        print(f"[LABELING_CMD]   Representative docs CSV: {args.representative_docs_csv}")
         print(f"[LABELING_CMD]   Model dir: {args.model_dir}")
         print(f"[LABELING_CMD]   Resume: {args.resume}")
         print(f"[LABELING_CMD]   Rate limit delay: {args.rate_limit_delay}s")
@@ -521,16 +535,27 @@ def main() -> None:
         print()
         
         # Step 3b: Extract representative documents for snippets
-        # Use fast get_representative_docs() method (pre-computed, typically 3-5 docs per topic)
         print("[LABELING_CMD] Step 3b: Extracting representative documents for snippets...")
         sys.stdout.flush()
+        max_snippets = 6
+        if args.stage08_config and Path(args.stage08_config).is_file():
+            labeling_cfg = load_config(Path(args.stage08_config)).get("labeling", {})
+            if labeling_cfg.get("max_snippets") is not None:
+                max_snippets = int(labeling_cfg["max_snippets"])
         topic_to_snippets = extract_representative_docs_per_topic(
             topic_model,
-            max_docs_per_topic=5,  # BERTopic typically provides 3-5 docs, cap at 5
+            max_docs_per_topic=max_snippets,
+            fallback_csv=args.representative_docs_csv,
         )
         snippets_count = len([tid for tid, docs in topic_to_snippets.items() if docs])
         avg_snippets = sum(len(docs) for docs in topic_to_snippets.values()) / max(snippets_count, 1)
         print(f"[LABELING_CMD] ✓ Extracted representative docs for {snippets_count} topics")
+        if snippets_count and args.representative_docs_csv and not getattr(
+            topic_model, "representative_docs_", None
+        ):
+            print(
+                f"[LABELING_CMD]   Source: compare-fit CSV fallback ({args.representative_docs_csv})"
+            )
         print(f"[LABELING_CMD]   Average snippets per topic: {avg_snippets:.1f}")
         print(f"[LABELING_CMD]   Snippets will be included in prompts for better label precision")
         sys.stdout.flush()

@@ -115,7 +115,11 @@ def normalize_label_text(raw: str, keywords: list[str] | None = None) -> str:
         label = " ".join(words[:6])
 
     def smart_tc(w: str) -> str:
-        return w if w.lower() in {"and", "or", "in", "on", "of", "at", "to"} else w.capitalize()
+        if w.lower() in {"and", "or", "in", "on", "of", "at", "to"}:
+            return w.lower()
+        if "-" in w:
+            return "-".join(smart_tc(part) for part in w.split("-"))
+        return w.capitalize()
 
     label = " ".join(smart_tc(w) for w in label.split())
 
@@ -192,6 +196,16 @@ def format_stage07_hints_block(hints: TopicHints | None) -> str:
     )
 
 
+_NO_SNIPPETS_BLOCK = """
+(NO REPRESENTATIVE SNIPPETS AVAILABLE for this topic — keywords and POS cues only.)
+
+Because snippets are missing:
+- Do NOT invent specific settings, body parts, or actions beyond what top keywords support.
+- Prefer broad but natural scene names over literal keyword chains.
+- Keep scene_summary generic but grammatical; avoid stuffing multiple keywords into one sentence.
+""".strip()
+
+
 def build_user_prompt(
     *,
     user_template: str,
@@ -203,11 +217,14 @@ def build_user_prompt(
     topic_hints: TopicHints | None,
 ) -> str:
     stage07 = format_stage07_hints_block(topic_hints)
+    snippet_text = snippets_block.strip()
+    if not snippet_text:
+        snippet_text = _NO_SNIPPETS_BLOCK
     format_kwargs = {
         "kw": ", ".join(keywords),
         "hints": hints_str,
         "pos": pos_str,
-        "snippets": snippets_block,
+        "snippets": snippet_text,
         "existing_labels": existing_labels_str,
     }
     if "{stage07_hints}" in user_template:

@@ -79,6 +79,8 @@ def merge_posthoc_flags(
             noise_rules = []
         if noise_rules and row.get("suggested_action") == NOISE_ACTION:
             rule_tag = noise_rules[0]
+            if rule_tag == "character_name_cluster":
+                return f"[CHARACTER_NAME] {base_name}"
             return f"[NOISE:{rule_tag}] {base_name}"
         reasons = row.get("noise_reason", "")
         if reasons:

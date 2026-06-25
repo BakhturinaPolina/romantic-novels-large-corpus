@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# Stage07 topic quality for v4 placeholder compare-fit models (top-5: 55, 73, 49, 19, 68).
+# Stage07 topic quality for v4 placeholder compare-fit models.
 #
+# Frozen analysis default: call 73 only (override with CALLS= env).
 # Uses stratified 100k eval tokens once for dictionary + POS coherence (v3-aligned).
-# Outputs: results/stage07_topic_quality/placeholder_v4_call{55,73,49,19,68}/
+# Outputs: results/stage07_topic_quality/placeholder_v4_call{73,...}/
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -30,13 +31,14 @@ from src.stage03_train.corpus_store import (
     corpus_offsets_path,
 )
 from src.stage07_topic_quality.topic_quality_analysis import build_topic_quality_table
+from src.common.topic_posthoc.topic_info_sync import sync_topic_info_csv
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] [%(levelname)s] %(message)s")
 logger = logging.getLogger("stage07_placeholder_v4")
 
 ROOT = Path(".")
 COMPARE_ROOT = ROOT / "results/experiments/placeholder_v4_models/final_compare"
-_default_calls = [55, 73, 49, 19, 68]
+_default_calls = [73]
 _env_calls = __import__("os").environ.get("CALLS", "")
 CALLS = [int(c.strip()) for c in _env_calls.split(",") if c.strip()] if _env_calls else _default_calls
 RULES_CONFIG = ROOT / "configs/topic_posthoc_rules.yaml"
@@ -84,6 +86,8 @@ for call in CALLS:
     logger.info("=== Stage07 call_%d ===", call)
     t_call = time.perf_counter()
     topic_model = BERTopic.load(str(model_dir))
+    topic_info_path = call_dir / "topic_info.csv"
+    sync_topic_info_csv(topic_model, topic_info_path)
     quality_df = build_topic_quality_table(
         topic_model,
         docs_tokens=tokens,

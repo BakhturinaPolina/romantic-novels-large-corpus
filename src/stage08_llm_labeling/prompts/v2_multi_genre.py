@@ -57,6 +57,26 @@ prefer content_type discourse and primary_categories narrative_style even if sni
 
 INTIMACY discriminability: For large kiss/intimacy topics, label must reflect central action
 (kissed vs kiss vs explicit body-part keywords). Use merge_group_hint when topics likely merge in Stage09.
+
+NATURAL LABEL VOICE (CRITICAL)
+
+Write labels the way a romance scholar would name a theme in a book index — fluent English, not a keyword bag.
+
+GOOD labels (natural):
+- "Hesitant Bedroom Entrance", "Tender Forearm Caress", "Argument About Feelings"
+- "Whispered Dialogue", "Publisher Copyright Page", "Text Message Buzz"
+
+BAD labels (unnatural — NEVER do this):
+- Keyword chains: "Plump Squeeze With Fingertips", "Damp Lungs And Rear", "Smirk And Appreciative Nod"
+- Academic jargon: "Statistical Possibility Speech", "Fear-driven Decision Making", "Abstract Choice And Possibility Speech"
+- Over-literal POS dumps: stacking 3+ bare keywords with "And"
+
+Rules:
+- Use 2–5 words; prefer one central action or relationship beat + optional setting.
+- Paraphrase keywords into readable prose ("rear" + "doorway" → "Doorway Hesitation", NOT "Rear And Doorway").
+- scene_summary must be one natural sentence a human would write; do not echo keyword lists.
+- If snippets are missing, stay conservative — do not invent body parts or settings absent from top keywords.
+- Use Title Case; hyphens only for established compounds (e.g., "Slow-Burn Tension").
 """.strip()
 
 _FEW_SHOTS = """
@@ -65,27 +85,27 @@ FEW-SHOT EXAMPLES (follow these patterns):
 Example A — generic dialogue (T3/T5 style):
 Keywords: wanted, need, tell, know, don | POS: Verbs→wanted, tell
 → content_type: discourse, primary_categories: [narrative_style], NOT romance_core
-→ label: "Future-Tense Promise Speech", exclude_from_axes: true
+→ label: "Promises About the Future", exclude_from_axes: true
 
 Example B — whispered delivery (T10 style):
 Keywords: whispered, murmured, breathlessly, softly
 → content_type: discourse, primary_categories: [narrative_style]
-→ label: "Whispered Dialogue Delivery", exclude_from_axes: true
+→ label: "Whispered Dialogue", exclude_from_axes: true
 
 Example C — intimacy overlap (T1/T2 style):
 Keywords: kissed, lips, mouth, tongue (no explicit genital terms)
 → content_type: scene, primary_categories: [physical_affection]
-→ label: "Deep Kissing And Mouth Play", merge_group_hint: "intimacy_kiss_cluster"
+→ label: "Deep Kissing", merge_group_hint: "intimacy_kiss_cluster"
 
 Example D — subgenre:
 Keywords: werewolf, pack, shifted, alpha
 → content_type: subgenre_marker, primary_categories: [subgenre_paranormal]
-→ subgenre_hints: [paranormal], label: "Paranormal Shifter Pack Scene"
+→ subgenre_hints: [paranormal], label: "Shifter Pack Scene"
 
 Example E — publisher noise:
 Keywords: chapter, copyright, published, author, book
 → is_noise: true, content_type: noise, exclude_from_axes: true
-→ label: "Publisher Boilerplate Text"
+→ label: "Publisher Copyright Page"
 
 Example F — phone medium:
 Keywords: texted, phone, buzzed, message, screen

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import json
 import logging
 import os
@@ -376,83 +377,118 @@ def format_snippets(
     return "Representative snippets (short excerpts for this topic):\n" + "\n".join(snippets)
 
 
+def _topic_ids_from_model(topic_model: BERTopic) -> set[int]:
+    """Collect non-outlier topic IDs from the best available model attribute."""
+    aspects = getattr(topic_model, "topic_aspects_", None)
+    if isinstance(aspects, dict) and aspects.get("POS"):
+        ids = {int(k) for k in aspects["POS"].keys() if int(k) != -1}
+        if ids:
+            return ids
+
+    representations = getattr(topic_model, "topic_representations_", None)
+    if isinstance(representations, dict) and representations:
+        return {int(k) for k in representations.keys() if int(k) != -1}
+
+    topics = getattr(topic_model, "topics_", None)
+    if topics is not None:
+        return {int(t) for t in topics if int(t) != -1}
+
+    return set()
+
+
+def load_representative_docs_from_csv(
+    csv_path: Path | str,
+    max_docs_per_topic: int = 10,
+) -> dict[int, list[str]]:
+    """Load per-topic representative sentences exported by stage05 compare-fit."""
+    path = Path(csv_path)
+    if not path.is_file():
+        LOGGER.warning("Representative docs CSV not found: %s", path)
+        return {}
+
+    topic_to_docs: dict[int, list[str]] = {}
+    with path.open(newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                topic_id = int(row["topic"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if topic_id == -1:
+                continue
+            sentence = (row.get("sentence") or "").strip()
+            if not sentence:
+                continue
+            docs = topic_to_docs.setdefault(topic_id, [])
+            if len(docs) < max_docs_per_topic:
+                docs.append(sentence)
+
+    LOGGER.info(
+        "Loaded representative docs from CSV for %d topics (%s)",
+        len(topic_to_docs),
+        path,
+    )
+    return topic_to_docs
+
+
 def extract_representative_docs_per_topic(
     topic_model: BERTopic,
     max_docs_per_topic: int = 10,
+    fallback_csv: Path | str | None = None,
 ) -> dict[int, list[str]]:
     """
     Extract representative documents for each topic from BERTopic model.
     
     Tries get_representative_docs() method first, falls back to representative_docs_
-    attribute. Handles both dict and method return formats.
+    attribute. When the saved model has no rep docs (common for enriched exports),
+    falls back to compare-fit ``representative_docs.csv``.
     
     Args:
         topic_model: BERTopic model instance
         max_docs_per_topic: Maximum number of representative docs to extract per topic
+        fallback_csv: Optional CSV from stage05 compare-fit with topic/sentence columns
         
     Returns:
         Dictionary mapping topic_id to list of representative document strings
     """
+    topic_ids = _topic_ids_from_model(topic_model)
     topic_to_docs: dict[int, list[str]] = {}
-    
-    # Get all topic IDs (excluding outlier topic -1)
-    if hasattr(topic_model, "topics_"):
-        topic_ids = set(topic_model.topics_)
-        topic_ids.discard(-1)  # Skip outlier topic
-    elif hasattr(topic_model, "topic_representations_"):
-        topic_ids = set(topic_model.topic_representations_.keys())
-        topic_ids.discard(-1)
-    else:
+    if not topic_ids:
         LOGGER.warning("Cannot determine topic IDs from BERTopic model")
-        return topic_to_docs
-    
-    LOGGER.info("Extracting representative documents for %d topics", len(topic_ids))
+    else:
+        LOGGER.info("Extracting representative documents for %d topics", len(topic_ids))
     
     # Try get_representative_docs() method first (newer BERTopic versions)
-    # According to official BERTopic docs: get_representative_docs(topic=None)
-    # Only accepts 'topic' parameter, returns all representative docs for that topic
-    if hasattr(topic_model, "get_representative_docs"):
+    if topic_ids and hasattr(topic_model, "get_representative_docs"):
         try:
             for topic_id in topic_ids:
                 try:
-                    # Call with only topic parameter (official API)
                     rep_docs = topic_model.get_representative_docs(topic=topic_id)
-                    
-                    # Handle both list and dict return types
+
                     if isinstance(rep_docs, dict):
-                        # If dict, extract the list value (usually {topic_id: [docs]})
-                        # Handle case where key might be different or multiple keys exist
                         if topic_id in rep_docs:
                             rep_docs = rep_docs[topic_id]
                         elif len(rep_docs) == 1:
-                            # Single key, extract its value
                             rep_docs = list(rep_docs.values())[0]
                         else:
-                            # Multiple topics in dict, try to find matching one
                             rep_docs = rep_docs.get(topic_id, [])
-                    elif isinstance(rep_docs, list):
-                        # Already a list - this is the expected format
-                        pass
-                    else:
+                    elif rep_docs is None:
+                        rep_docs = []
+                    elif not isinstance(rep_docs, list):
                         LOGGER.warning(
                             "Unexpected return type from get_representative_docs for topic %d: %s",
                             topic_id,
                             type(rep_docs),
                         )
                         rep_docs = []
-                    
-                    # Ensure rep_docs is a list
+
                     if not isinstance(rep_docs, list):
                         rep_docs = [rep_docs] if rep_docs else []
-                    
-                    # Limit to max_docs_per_topic (BERTopic doesn't have limit parameter)
+
                     if len(rep_docs) > max_docs_per_topic:
                         rep_docs = rep_docs[:max_docs_per_topic]
-                    
-                    # Ensure all items are strings
-                    rep_docs = [str(doc) for doc in rep_docs if doc]
-                    topic_to_docs[topic_id] = rep_docs
-                    
+
+                    topic_to_docs[topic_id] = [str(doc) for doc in rep_docs if doc]
                 except Exception as e:
                     LOGGER.warning(
                         "Error getting representative docs for topic %d via method: %s",
@@ -460,57 +496,70 @@ def extract_representative_docs_per_topic(
                         e,
                     )
                     topic_to_docs[topic_id] = []
-            
+
+            model_nonempty = len([tid for tid, docs in topic_to_docs.items() if docs])
             LOGGER.info(
                 "Extracted representative docs via get_representative_docs() for %d topics",
-                len([tid for tid, docs in topic_to_docs.items() if docs]),
+                model_nonempty,
             )
-            return topic_to_docs
-            
+            if model_nonempty:
+                return topic_to_docs
         except Exception as e:
             LOGGER.warning(
                 "get_representative_docs() method failed, falling back to attribute: %s",
                 e,
             )
-    
+
     # Fallback to representative_docs_ attribute
-    if hasattr(topic_model, "representative_docs_"):
+    if topic_ids and hasattr(topic_model, "representative_docs_"):
         try:
             rep_docs_attr = topic_model.representative_docs_
-            
-            if isinstance(rep_docs_attr, dict):
-                # Dict format: {topic_id: [doc1, doc2, ...]}
+
+            if isinstance(rep_docs_attr, dict) and rep_docs_attr:
                 for topic_id in topic_ids:
                     if topic_id in rep_docs_attr:
                         docs = rep_docs_attr[topic_id]
-                        # Ensure it's a list and convert to strings
                         if isinstance(docs, list):
                             docs = [str(doc) for doc in docs[:max_docs_per_topic] if doc]
                         else:
                             docs = [str(docs)] if docs else []
                         topic_to_docs[topic_id] = docs
                     else:
-                        topic_to_docs[topic_id] = []
-            else:
-                LOGGER.warning(
-                    "representative_docs_ is not a dict, got type: %s",
-                    type(rep_docs_attr),
+                        topic_to_docs.setdefault(topic_id, [])
+
+                model_nonempty = len([tid for tid, docs in topic_to_docs.items() if docs])
+                LOGGER.info(
+                    "Extracted representative docs via representative_docs_ for %d topics",
+                    model_nonempty,
                 )
-            
+                if model_nonempty:
+                    return topic_to_docs
+        except Exception as e:
+            LOGGER.warning("Error accessing representative_docs_ attribute: %s", e)
+
+    # Compare-fit CSV fallback (enriched models often omit representative_docs_)
+    if fallback_csv:
+        csv_docs = load_representative_docs_from_csv(
+            fallback_csv,
+            max_docs_per_topic=max_docs_per_topic,
+        )
+        if csv_docs:
+            if not topic_to_docs:
+                return csv_docs
+            for topic_id, docs in csv_docs.items():
+                if not topic_to_docs.get(topic_id):
+                    topic_to_docs[topic_id] = docs
             LOGGER.info(
-                "Extracted representative docs via representative_docs_ for %d topics",
+                "Filled %d topics from representative docs CSV fallback",
                 len([tid for tid, docs in topic_to_docs.items() if docs]),
             )
             return topic_to_docs
-            
-        except Exception as e:
-            LOGGER.warning("Error accessing representative_docs_ attribute: %s", e)
-    
-    # If both methods failed, log warning and return empty dict
-    LOGGER.warning(
-        "Could not extract representative docs from BERTopic model. "
-        "Labels will be generated from keywords only."
-    )
+
+    if not any(topic_to_docs.values()):
+        LOGGER.warning(
+            "Could not extract representative docs from BERTopic model. "
+            "Labels will be generated from keywords only."
+        )
     return topic_to_docs
 
 

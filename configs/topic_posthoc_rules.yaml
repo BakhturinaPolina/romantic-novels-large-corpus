@@ -9,7 +9,7 @@ multilingual_artifact:
   non_ascii_ratio: 0.50
 
 publisher_boilerplate:
-  # Matched in representative docs only, with word-boundary regex (see rules.py).
+  # Matched in representative docs (regex) or >=3 name_keywords in Main top words.
   keywords:
     - copyright
     - copyrighted
@@ -25,6 +25,55 @@ publisher_boilerplate:
     - table of contents
     - unauthorized reproduction
     - published by
+  name_keywords:
+    - chapter
+    - book
+    - books
+    - author
+    - reading
+    - www
+    - com
+    - series
+
+character_name_cluster:
+  # BERTopic Name label (first 4 tokens after topic id); see rules.py.
+  min_hits: 3
+  min_top5_hits: 2
+  min_token_len: 4
+  top_n: 10
+  exclude_english: true
+  stoplist_path: data/processed/custom_stoplist.txt
+  scene_token_blocklist:
+    - door
+    - car
+    - room
+    - open
+    - opened
+    - coffee
+    - phone
+    - cell
+    - hand
+    - hands
+    - eyes
+    - hair
+    - know
+    - kiss
+    - kissed
+    - lips
+    - love
+    - bed
+    - voice
+    - look
+    - looked
+    - doctor
+    - hospital
+    - nurse
+    - money
+    - school
+    - police
+    - wolf
+    - demon
+    - vampire
 
 procedural_transition:
   keywords:
@@ -59,3 +108,4 @@ noise_actions:
   - multilingual_artifact
   - publisher_boilerplate
   - tiny_topic
+  - character_name_cluster
