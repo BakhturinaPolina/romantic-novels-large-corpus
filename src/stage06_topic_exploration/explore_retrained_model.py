@@ -409,6 +409,9 @@ def apply_representations_and_update(
         else:
             LOGGER.warning("topic_representations_ not available before update")
         
+        # Assign aspects on the model, then update_topics(docs) without overriding
+        # vectorizer/ctfidf/representation kwargs — passing representation_model into
+        # update_topics() recomputes Main from POS-heavy aspects and loses c-TF-IDF labels.
         topic_model.representation_model = representations
         LOGGER.info(
             "Topic representations set: %s",
