@@ -1,5 +1,4 @@
-"""CLI entry point for generating topic labels from POS representation using OpenRouter API.
-Supports mistralai/mistral-nemo and google/gemini-2.5-flash (with reasoning)."""
+"""CLI entry point for Stage 08 topic labeling via OpenRouter API."""
 
 from __future__ import annotations
 
@@ -8,6 +7,8 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+
+from bertopic import BERTopic
 
 from src.common.config import load_config, resolve_path
 from src.common.logging import setup_logging
@@ -25,6 +26,7 @@ from src.stage08_llm_labeling.generate_labels import (
 from src.stage08_llm_labeling.openrouter_experiments.core.generate_labels_openrouter import (
     DEFAULT_OPENROUTER_API_KEY,
     DEFAULT_OPENROUTER_MODEL,
+    DEFAULT_RATE_LIMIT_DELAY_S,
     extract_representative_docs_per_topic,
     generate_all_labels,
     generate_labels_streaming,
@@ -32,12 +34,15 @@ from src.stage08_llm_labeling.openrouter_experiments.core.generate_labels_openro
     save_labels_openrouter,
     test_openrouter_authentication,
 )
+from src.stage08_llm_labeling.prompts.loader import DEFAULT_PROMPT_VERSION
+from src.stage08_llm_labeling.topic_quality_hints import load_topic_quality_hints
 
 DEFAULT_OUTPUT_DIR = Path("results/stage08_llm_labeling")
+DEFAULT_STAGE08_CONFIG = Path("configs/stage08_labeling.yaml")
 DEFAULT_NUM_KEYWORDS = 15
-DEFAULT_MAX_TOKENS = 100  # Need tokens for label (2–6 words, ~10 tokens) + scene summary (12–25 words, ~50 tokens) + formatting (~10 tokens) = ~70 tokens, using 100 for safety
+DEFAULT_MAX_TOKENS = 256
 DEFAULT_BATCH_SIZE = 50
-DEFAULT_TEMPERATURE = 0.35  # Balanced for natural phrasing variation without excessive randomness
+DEFAULT_TEMPERATURE = 0.35
 
 
 class Tee:
@@ -111,10 +116,59 @@ def parse_args() -> argparse.Namespace:
     )
     
     parser.add_argument(
+        "--model-dir",
+        type=Path,
+        default=None,
+        help="Path to enriched BERTopic model directory (e.g. call_73/model_compare_enriched)",
+    )
+
+    parser.add_argument(
         "--model-stage",
         type=str,
-        default="stage07_topic_quality",
-        help="Stage subfolder to load model from (default: 'stage07_topic_quality' to use model from stage07)",
+        default=None,
+        help="Legacy stage subfolder when loading via --base-dir (ignored if --model-dir set)",
+    )
+
+    parser.add_argument(
+        "--stage08-config",
+        type=Path,
+        default=DEFAULT_STAGE08_CONFIG,
+        help="Stage08 labeling YAML (call_73 defaults)",
+    )
+
+    parser.add_argument(
+        "--quality-csv",
+        type=Path,
+        default=None,
+        help="Stage07 quality CSV for advisory post-hoc hints (all topics still labeled)",
+    )
+
+    parser.add_argument(
+        "--prompt-version",
+        type=str,
+        default=DEFAULT_PROMPT_VERSION,
+        help="Prompt version: v1 or v2 (default v2 multi-genre)",
+    )
+
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        default=True,
+        help="Resume from partial labels JSON if present (default: True)",
+    )
+
+    parser.add_argument(
+        "--no-resume",
+        action="store_false",
+        dest="resume",
+        help="Do not resume from existing labels JSON",
+    )
+
+    parser.add_argument(
+        "--rate-limit-delay",
+        type=float,
+        default=DEFAULT_RATE_LIMIT_DELAY_S,
+        help="Seconds between OpenRouter API calls",
     )
     
     parser.add_argument(
@@ -200,7 +254,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--use-improved-prompts",
         action="store_true",
-        help="Use romance-aware prompt with JSON output (includes label, scene_summary, categories, is_noise, rationale)",
+        default=True,
+        help="Use full JSON schema (v2 by default): label, scene_summary, categories, is_noise, rationale",
+    )
+
+    parser.add_argument(
+        "--label-only",
+        action="store_false",
+        dest="use_improved_prompts",
+        help="Legacy v1-style minimal JSON output",
     )
     
     parser.add_argument(
@@ -218,9 +280,43 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
+    """Merge call_73 defaults from configs/stage08_labeling.yaml when paths unset."""
+    if not args.stage08_config or not Path(args.stage08_config).is_file():
+        return
+    cfg = load_config(Path(args.stage08_config))
+    paths = cfg.get("paths", {})
+    labeling = cfg.get("labeling", {})
+    openrouter = cfg.get("openrouter", {})
+
+    if args.model_dir is None and paths.get("enriched_model"):
+        args.model_dir = Path(paths["enriched_model"])
+    if args.topics_json is None and paths.get("topics_json"):
+        args.topics_json = Path(paths["topics_json"])
+    if args.quality_csv is None and paths.get("quality_csv"):
+        args.quality_csv = Path(paths["quality_csv"])
+    if args.output_dir == DEFAULT_OUTPUT_DIR and paths.get("output_dir"):
+        args.output_dir = Path(paths["output_dir"])
+    if args.model_name == DEFAULT_OPENROUTER_MODEL and openrouter.get("model"):
+        args.model_name = openrouter["model"]
+    if args.temperature == DEFAULT_TEMPERATURE and openrouter.get("temperature") is not None:
+        args.temperature = float(openrouter["temperature"])
+    if args.max_tokens == DEFAULT_MAX_TOKENS and openrouter.get("max_tokens") is not None:
+        args.max_tokens = int(openrouter["max_tokens"])
+    if args.rate_limit_delay == DEFAULT_RATE_LIMIT_DELAY_S and openrouter.get("rate_limit_delay_s") is not None:
+        args.rate_limit_delay = float(openrouter["rate_limit_delay_s"])
+    if args.num_keywords == DEFAULT_NUM_KEYWORDS and labeling.get("num_keywords") is not None:
+        args.num_keywords = int(labeling["num_keywords"])
+    if cfg.get("prompt_version"):
+        args.prompt_version = str(cfg["prompt_version"])
+    if labeling.get("resume") is not None:
+        args.resume = bool(labeling["resume"])
+
+
 def main() -> None:
     """Main entry point for topic labeling with OpenRouter API."""
     args = parse_args()
+    _apply_stage08_config_defaults(args)
     
     # Load configuration first to get logs directory
     try:
@@ -241,7 +337,7 @@ def main() -> None:
     logger = setup_logging(logs_dir, log_file=log_file)
     logger.info("=" * 80)
     # logger.info("Stage 06: POS Topic Labeling with OpenRouter API (mistralai/mistral-nemo)")
-    logger.info("Stage 06: POS Topic Labeling with OpenRouter API")
+    logger.info("Stage 08: POS Topic Labeling with OpenRouter API")
     logger.info("=" * 80)
     
     # Set up Tee to capture all print output to log file
@@ -268,7 +364,7 @@ def main() -> None:
         print("[LABELING_CMD] ========== Starting labeling command ==========")
         print("=" * 80)
         # print("Stage 06: POS Topic Labeling with OpenRouter API (mistralai/mistral-nemo)")
-        print("Stage 06: POS Topic Labeling with OpenRouter API")
+        print("Stage 08: POS Topic Labeling with OpenRouter API")
         print("=" * 80)
         print(f"[LABELING_CMD] Arguments:")
         print(f"[LABELING_CMD]   Embedding model: {args.embedding_model}")
@@ -287,24 +383,46 @@ def main() -> None:
         print(f"[LABELING_CMD]   Topics JSON: {args.topics_json} (for inspection/comparison)")
         print(f"[LABELING_CMD]   Limit topics: {args.limit_topics}")
         print(f"[LABELING_CMD]   Use improved prompts: {args.use_improved_prompts}")
-        print(f"[LABELING_CMD]   Reasoning effort: {args.reasoning_effort}")
+        print(f"[LABELING_CMD]   Prompt version: {args.prompt_version}")
+        print(f"[LABELING_CMD]   Quality CSV: {args.quality_csv}")
+        print(f"[LABELING_CMD]   Model dir: {args.model_dir}")
+        print(f"[LABELING_CMD]   Resume: {args.resume}")
+        print(f"[LABELING_CMD]   Rate limit delay: {args.rate_limit_delay}s")
         print()
-        
-        # Step 1: Always load BERTopic model (primary source for topics and integration)
+
+        quality_hints = None
+        if args.quality_csv and Path(args.quality_csv).is_file():
+            quality_hints = load_topic_quality_hints(args.quality_csv)
+            print(
+                f"[LABELING_CMD] Loaded Stage07 hints for {len(quality_hints)} topics "
+                "(advisory flags only — all topics still LLM-labeled)"
+            )
+            sys.stdout.flush()
+        print()
+
+        # Step 1: Load BERTopic model
         print("[LABELING_CMD] Step 1: Loading BERTopic model...")
         sys.stdout.flush()
-        wrapper, topic_model = load_bertopic_model(
-            base_dir=args.base_dir,
-            embedding_model=args.embedding_model,
-            pareto_rank=args.pareto_rank,
-            use_native=args.use_native,
-            model_suffix=args.model_suffix,
-            stage_subfolder=args.model_stage,
-        )
-        print(f"[LABELING_CMD] ✓ Loaded BERTopic model (use_native={args.use_native})")
+        wrapper = None
+        if args.model_dir:
+            model_dir = Path(args.model_dir)
+            if not model_dir.is_dir():
+                raise FileNotFoundError(f"Model directory not found: {model_dir}")
+            topic_model = BERTopic.load(str(model_dir))
+            print(f"[LABELING_CMD] ✓ Loaded BERTopic model from {model_dir}")
+        else:
+            wrapper, topic_model = load_bertopic_model(
+                base_dir=args.base_dir,
+                embedding_model=args.embedding_model,
+                pareto_rank=args.pareto_rank,
+                use_native=args.use_native,
+                model_suffix=args.model_suffix,
+                stage_subfolder=args.model_stage,
+            )
+            print(f"[LABELING_CMD] ✓ Loaded BERTopic model (use_native={args.use_native})")
         sys.stdout.flush()
         print()
-        
+
         # Step 2: Extract POS topics from BERTopic model (primary source)
         print("[LABELING_CMD] Step 2: Extracting POS representation topics from BERTopic model...")
         sys.stdout.flush()
@@ -458,6 +576,10 @@ def main() -> None:
                 topic_model=topic_model,
                 topic_to_snippets=topic_to_snippets,
                 reasoning_effort=args.reasoning_effort,
+                prompt_version=args.prompt_version,
+                quality_hints=quality_hints,
+                resume=args.resume,
+                rate_limit_delay_s=args.rate_limit_delay,
             )
             print(f"[LABELING_CMD] ✓ Generated {len(topic_labels)} labels (streaming mode)")
             json_display_path = str(labels_path.parent) + "/" + labels_path.name + ".json"
@@ -469,7 +591,7 @@ def main() -> None:
             print(f"[LABELING_CMD]   Total topics to process: {len(pos_topics_dict)}")
             print(f"[LABELING_CMD]   Temperature: {args.temperature}")
             print(f"[LABELING_CMD]   Max tokens per label: {args.max_tokens}")
-            print(f"[LABELING_CMD]   Rate limit delay: 4.0s between API calls")
+            print(f"[LABELING_CMD]   Rate limit delay: {args.rate_limit_delay}s between API calls")
             sys.stdout.flush()
             topic_labels = generate_all_labels(
                 pos_topics=pos_topics_dict,
@@ -482,6 +604,9 @@ def main() -> None:
                 topic_model=topic_model,
                 topic_to_snippets=topic_to_snippets,
                 reasoning_effort=args.reasoning_effort,
+                prompt_version=args.prompt_version,
+                quality_hints=quality_hints,
+                rate_limit_delay_s=args.rate_limit_delay,
             )
             print(f"[LABELING_CMD] ✓ Generated {len(topic_labels)} labels")
             sys.stdout.flush()

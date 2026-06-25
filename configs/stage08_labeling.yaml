@@ -1,0 +1,31 @@
+# Stage 08 LLM labeling defaults — frozen call 73 (placeholder v4)
+# See configs/placeholder_v4_frozen_call73.yaml and results/reports/placeholder_v4_call73_analysis_strategy.md
+
+frozen_call: 73
+prompt_version: v2
+
+openrouter:
+  model: mistralai/Mistral-Nemo-Instruct-2407
+  temperature: 0.35
+  max_tokens: 256
+  rate_limit_delay_s: 4.0
+
+labeling:
+  num_keywords: 15
+  max_snippets: 6
+  max_chars_per_snippet: 1200
+  # All topics are LLM-labeled; Stage07 flags are prompt hints only (no exclusion / no synthetic labels).
+  label_all_topics: true
+  use_full_schema: true
+  resume: true
+
+paths:
+  compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_73
+  enriched_model: results/experiments/placeholder_v4_models/final_compare/call_73/model_compare_enriched
+  topics_json: results/stage06_topic_exploration/placeholder_v4_call73/topics_all_representations_placeholder_v4_call.json
+  quality_csv: results/stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv
+  output_dir: results/stage08_llm_labeling/placeholder_v4_call73
+
+tiers:
+  core_min_docs: 800
+  mid_min_docs: 200

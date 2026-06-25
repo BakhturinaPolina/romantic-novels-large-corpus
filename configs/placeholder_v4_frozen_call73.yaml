@@ -1,0 +1,29 @@
+# Frozen v4 placeholder analysis — BO call 73 (MiniLM-L12 granular phase1)
+
+run_id: placeholder_v4_models
+bo_call: 73
+embedding_model: sentence-transformers/all-MiniLM-L12-v2
+
+paths:
+  compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_73
+  enriched_model: results/experiments/placeholder_v4_models/final_compare/call_73/model_compare_enriched
+  stage06_dir: results/stage06_topic_exploration/placeholder_v4_call73
+  stage07_dir: results/stage07_topic_quality/placeholder_v4_call73
+
+posthoc_rules: configs/topic_posthoc_rules.yaml
+strategy_memo: results/reports/placeholder_v4_call73_analysis_strategy.md
+
+metrics:
+  n_topics: 329
+  outlier_rate: 0.705
+  coherence_c_v: 0.657
+  topic_diversity: 0.669
+
+posthoc_stage07:
+  excluded_from_axes: 179
+  usable_for_stage08: 151
+  core_topics_gte_800: 23
+  mid_topics_200_799: 128
+  tiny_topic: 159
+  character_name_cluster: 44
+  publisher_boilerplate: 1

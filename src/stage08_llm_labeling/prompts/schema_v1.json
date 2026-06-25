@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "label",
+    "scene_summary",
+    "primary_categories",
+    "secondary_categories",
+    "is_noise",
+    "rationale"
+  ],
+  "properties": {
+    "label": { "type": "string", "minLength": 1 },
+    "scene_summary": { "type": "string" },
+    "primary_categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "secondary_categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "is_noise": { "type": "boolean" },
+    "rationale": { "type": "string" }
+  },
+  "additionalProperties": true
+}
