@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import logging
 import re
-from typing import Iterable
+from functools import lru_cache
+from typing import Any, Iterable
 
 from src.common.character_name_cleaning.lexicon import CleaningLexicon
 
@@ -18,6 +19,14 @@ TITLE_NAME_PATTERN = re.compile(
 )
 
 _TOKEN_SPLIT = re.compile(r"[\s\-']+")
+
+# Apostrophe-stripped contraction tails (not person names).
+_CONTRACTION_FRAGMENT = re.compile(
+    r"^(doesn|didn|isn|wasn|couldn|wouldn|haven|hadn|hasn|aren|"
+    r"mightn|mustn|shouldn|needn|daren|mayn|wont|"
+    r"shes|hes|thats|whats|whos|wheres|theres|heres|lets)$",
+    re.IGNORECASE,
+)
 
 
 def get_spacy_nlp():
@@ -85,22 +94,78 @@ def extract_person_tokens_from_snippets(
     return names
 
 
+def _probe_eligible(word: str, lexicon: CleaningLexicon) -> bool:
+    lower = word.lower().strip()
+    if len(lower) < 4:
+        return False
+    if not lower.isalpha():
+        return False
+    if _is_contraction_fragment(lower):
+        return False
+    if lower in lexicon.never_remove_topic_words:
+        return False
+    return True
+
+
+@lru_cache(maxsize=1)
+def _wordnet_available() -> bool:
+    try:
+        import nltk
+        from nltk.corpus import wordnet as wn  # noqa: F401
+
+        return True
+    except Exception:
+        return False
+
+
+@lru_cache(maxsize=4096)
+def _is_common_verb(word: str) -> bool:
+    """True when WordNet has a verb sense."""
+    if not _wordnet_available():
+        return False
+    try:
+        from nltk.corpus import wordnet as wn
+
+        return bool(wn.synsets(word.lower(), pos="v"))
+    except Exception:
+        return False
+
+
+@lru_cache(maxsize=4096)
+def _is_verb_only_homograph(word: str) -> bool:
+    """True for tokens like kissed/kissed that are verbs but not nouns."""
+    return _is_common_verb(word) and not _is_common_noun(word)
+
+
+def _is_contraction_fragment(word: str) -> bool:
+    return bool(_CONTRACTION_FRAGMENT.match(word.strip()))
+
+
+@lru_cache(maxsize=4096)
+def _is_common_noun(word: str) -> bool:
+    """True when WordNet has a noun sense (filters kiss/rose/hope homographs)."""
+    if not _wordnet_available():
+        return False
+    try:
+        from nltk.corpus import wordnet as wn
+
+        return bool(wn.synsets(word.lower(), pos="n"))
+    except Exception:
+        return False
+
+
 def probe_topic_word_is_person(
     word: str,
     nlp,
     lexicon: CleaningLexicon,
 ) -> bool:
-    """Run NER on a minimal probe sentence for a single topic keyword."""
+    """Run NER probe on one keyword; require PERSON + PROPN."""
     w = word.strip()
-    if not w or len(w) < 2:
-        return False
-    lower = w.lower()
-    if lower in lexicon.never_remove_topic_words:
-        return False
-    if nlp is None:
+    if not _probe_eligible(w, lexicon) or nlp is None:
         return False
 
     token = w.title() if w.islower() else w
+    lower = w.lower()
     sentence = lexicon.ner_probe_template.format(token=token)
     try:
         doc = nlp(sentence)
@@ -108,13 +173,65 @@ def probe_topic_word_is_person(
         LOGGER.warning("NER probe failed for %r: %s", word, exc)
         return False
 
+    person_match = False
     for ent in doc.ents:
         if ent.label_ != "PERSON":
             continue
         ent_tokens = _tokenize_entity(ent.text)
         if lower in ent_tokens or token.lower() in ent_tokens:
+            person_match = True
+            break
+    if not person_match:
+        return False
+
+    for tok in doc:
+        if tok.text.lower() == lower and tok.pos_ == "PROPN":
             return True
     return False
+
+
+def extract_person_tokens_from_topic_words(
+    words: list[dict[str, Any]] | list[str],
+    nlp,
+    lexicon: CleaningLexicon,
+    *,
+    snippet_persons: set[str] | None = None,
+    max_words: int = 15,
+) -> set[str]:
+    """
+    Detect PERSON tokens in topic keywords via snippet NER + per-word NER probes.
+    """
+    snippet_persons = snippet_persons or set()
+    names: set[str] = set(snippet_persons)
+
+    raw: list[str] = []
+    for item in words:
+        if isinstance(item, dict):
+            w = str(item.get("word", "")).strip()
+        else:
+            w = str(item).strip()
+        if w:
+            raw.append(w)
+
+    for w in raw[:max_words]:
+        lower = w.lower()
+        if lower in lexicon.never_remove_topic_words:
+            continue
+        if lower in snippet_persons:
+            names.add(lower)
+            continue
+        if not probe_topic_word_is_person(w, nlp, lexicon):
+            continue
+        if lower not in snippet_persons:
+            if _is_common_noun(lower):
+                continue
+            if _is_verb_only_homograph(lower):
+                continue
+            if _is_contraction_fragment(lower):
+                continue
+        names.add(lower)
+
+    return names
 
 
 def build_topic_person_lexicon(
@@ -138,13 +255,11 @@ def is_person_topic_word(
     nlp,
     lexicon: CleaningLexicon,
 ) -> bool:
-    """True if word is a PERSON via snippet context or NER probe."""
+    """True if word was tagged PERSON by NER (snippet or synthetic keyword sentence)."""
     lower = word.lower().strip()
     if not lower or lower in lexicon.never_remove_topic_words:
         return False
-    if lower in topic_person_tokens:
-        return True
-    return probe_topic_word_is_person(word, nlp, lexicon)
+    return lower in topic_person_tokens
 
 
 def apply_title_name_pattern(text: str, lexicon: CleaningLexicon) -> str:

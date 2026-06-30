@@ -56,7 +56,7 @@ class CharacterNameCleaningCall73Tests(unittest.TestCase):
         import pandas as pd
 
         audit = pd.read_csv(self.paths["cleaned_topics"].parent / "removed_topic_words_audit.csv")
-        scene = {"hand", "eyes", "face", "knew", "said", "looked", "about", "door"}
+        scene = {"hand", "eyes", "face", "knew", "said", "looked", "about", "door", "kiss", "kissed", "don", "doesn", "fingers"}
         removed = set(audit["word"].str.lower())
         overlap = scene & removed
         self.assertFalse(

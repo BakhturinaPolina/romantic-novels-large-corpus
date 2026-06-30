@@ -170,7 +170,7 @@ def aggregate_to_book_level(
     # Join to taxonomy main categories (+ axis exclusion flags)
     lookup_cols = [
         'topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group',
-        'taxonomy_exclude_from_axes', 'label_exclude_from_axes',
+        'taxonomy_exclude_from_axes', 'taxonomy_use_in_macro_axes', 'label_exclude_from_axes',
     ]
     present_cols = [c for c in lookup_cols if c in topic_lookup.columns]
     book_topic = book_topic.merge(
@@ -180,7 +180,9 @@ def aggregate_to_book_level(
 
     # Honor respect_exclude_from_axes: drop topics flagged for axis exclusion or noise
     exclude_mask = pd.Series(False, index=book_topic.index)
-    if 'taxonomy_exclude_from_axes' in book_topic.columns:
+    if 'taxonomy_use_in_macro_axes' in book_topic.columns:
+        exclude_mask = exclude_mask | (~book_topic['taxonomy_use_in_macro_axes'].fillna(True))
+    elif 'taxonomy_exclude_from_axes' in book_topic.columns:
         exclude_mask = exclude_mask | book_topic['taxonomy_exclude_from_axes'].fillna(False)
     if 'label_exclude_from_axes' in book_topic.columns:
         exclude_mask = exclude_mask | book_topic['label_exclude_from_axes'].fillna(False)

@@ -16,6 +16,7 @@ from src.common.character_name_cleaning.ner_pass import (
     build_topic_person_lexicon,
     clean_snippet_text,
     extract_person_tokens_from_snippets,
+    extract_person_tokens_from_topic_words,
     get_spacy_nlp,
 )
 from src.common.character_name_cleaning.seed_pass import (
@@ -84,7 +85,14 @@ def run_cleaning_pipeline(
     for aspect in REPRESENTATIONS:
         cleaned_topics[aspect] = {}
         for topic_id, word_list in topics.get(aspect, {}).items():
-            person_tokens = topic_person_lexicon.get(topic_id, set()) | global_person_tokens
+            snippet_persons = topic_person_lexicon.get(topic_id, set())
+            keyword_persons = extract_person_tokens_from_topic_words(
+                word_list,
+                nlp,
+                lexicon,
+                snippet_persons=snippet_persons,
+            )
+            person_tokens = snippet_persons | keyword_persons
             original = [dict(w) for w in word_list]
             cleaned, removed, audits = clean_topic_words(
                 original,
@@ -118,9 +126,16 @@ def run_cleaning_pipeline(
         set(pos_topics.keys()) | set(main_topics.keys()),
         key=lambda x: int(x) if str(x).lstrip("-").isdigit() else x,
     ):
-        person_tokens = topic_person_lexicon.get(topic_id, set()) | global_person_tokens
-        pos_original = pos_topics.get(topic_id, [])
+        snippet_persons = topic_person_lexicon.get(topic_id, set())
         main_original = main_topics.get(topic_id, [])
+        keyword_persons = extract_person_tokens_from_topic_words(
+            main_original,
+            nlp,
+            lexicon,
+            snippet_persons=snippet_persons,
+        )
+        person_tokens = snippet_persons | keyword_persons
+        pos_original = pos_topics.get(topic_id, [])
         ratio_pos = character_name_ratio(
             pos_original,
             lexicon,

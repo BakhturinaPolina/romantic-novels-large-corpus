@@ -8,8 +8,8 @@ from src.common.character_name_cleaning.lexicon import load_lexicon
 from src.common.character_name_cleaning.ner_pass import (
     clean_snippet_text,
     extract_person_tokens_from_text,
+    extract_person_tokens_from_topic_words,
     get_spacy_nlp,
-    probe_topic_word_is_person,
 )
 from src.common.character_name_cleaning.seed_pass import (
     character_name_ratio,
@@ -52,34 +52,49 @@ class CharacterNameCleaningTests(unittest.TestCase):
             {"word": "eyes", "score": 0.08},
             {"word": "door", "score": 0.05},
         ]
+        persons = extract_person_tokens_from_topic_words(
+            words, self.nlp, self.lexicon, snippet_persons=set()
+        )
         cleaned, removed, _ = clean_topic_words(
             words,
             self.lexicon,
-            topic_person_tokens=set(),
+            topic_person_tokens=persons,
             nlp=self.nlp,
         )
         self.assertEqual(len(cleaned), 3)
         self.assertEqual(removed, [])
 
-    def test_topic_word_removed_when_in_snippet_person_context(self) -> None:
+    def test_verb_and_contraction_fragments_not_person_probe_hits(self) -> None:
+        words = [
+            {"word": "kissed", "score": 0.1},
+            {"word": "doesn", "score": 0.09},
+            {"word": "said", "score": 0.08},
+        ]
+        persons = extract_person_tokens_from_topic_words(
+            words, self.nlp, self.lexicon, snippet_persons=set()
+        )
+        self.assertEqual(persons, set())
+
+    def test_topic_words_ner_detects_names_in_synthetic_sentence(self) -> None:
         words = [
             {"word": "kate", "score": 0.1},
+            {"word": "maggie", "score": 0.09},
             {"word": "door", "score": 0.05},
         ]
-        cleaned, removed, audits = clean_topic_words(
+        snippet_persons = {"kate", "maggie"}
+        persons = extract_person_tokens_from_topic_words(
+            words, self.nlp, self.lexicon, snippet_persons=snippet_persons
+        )
+        cleaned, removed, _ = clean_topic_words(
             words,
             self.lexicon,
-            topic_person_tokens={"kate"},
+            topic_person_tokens=persons,
             nlp=self.nlp,
         )
-        kept = [w["word"] for w in cleaned]
+        kept = {w["word"] for w in cleaned}
+        self.assertIn("door", kept)
         self.assertNotIn("kate", kept)
-        self.assertIn("kate", removed)
-        self.assertEqual(audits[0]["reason"], "ner_snippet_context")
-
-    def test_topic_word_probe_ner_for_name(self) -> None:
-        self.assertTrue(probe_topic_word_is_person("Elizabeth", self.nlp, self.lexicon))
-        self.assertFalse(probe_topic_word_is_person("door", self.nlp, self.lexicon))
+        self.assertNotIn("maggie", kept)
 
     def test_ratio_thresholds(self) -> None:
         person_tokens = {"kate", "emma"}

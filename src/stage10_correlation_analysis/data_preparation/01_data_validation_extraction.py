@@ -222,8 +222,15 @@ def extract_all_fields(
             "taxonomy_secondary_name": tax.get("secondary_category_name"),
             "taxonomy_secondary_group": tax.get("secondary_category_group"),
             "taxonomy_confidence": tax.get("confidence"),
+            "taxonomy_confidence_band": tax.get("confidence_band"),
             "taxonomy_is_noise": bool(tax.get("is_noise", False)),
             "taxonomy_exclude_from_axes": bool(tax.get("exclude_from_axes", False)),
+            "taxonomy_content_type": tax.get("content_type"),
+            "taxonomy_use_in_macro_axes": tax.get("use_in_macro_axes"),
+            "taxonomy_use_in_theory_watchlist": tax.get("use_in_theory_watchlist"),
+            "taxonomy_noise_reason": tax.get("noise_reason"),
+            "taxonomy_evidence_quality": tax.get("evidence_quality"),
+            "taxonomy_mechanic_tags": ", ".join(tax.get("mechanic_tags", []) or []) or None,
         })
 
         # Stage 08 v3 sexual-precision fields (from labels metadata when present)

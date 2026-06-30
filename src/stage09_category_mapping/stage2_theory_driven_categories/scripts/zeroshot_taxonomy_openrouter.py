@@ -64,6 +64,20 @@ from src.stage06_topic_exploration.explore_retrained_model import (
     DEFAULT_EMBEDDING_MODEL,
     load_native_bertopic_model,
 )
+from src.stage08_llm_labeling.openrouter_experiments.core.structured_json_call import (
+    chat_completions_json_schema,
+    parse_json_object_content,
+)
+from src.stage09_category_mapping.stage2_theory_driven_categories.prompts import (
+    DEFAULT_PROMPT_VERSION,
+    load_taxonomy_prompts,
+)
+from src.stage09_category_mapping.stage2_theory_driven_categories.prompts.taxonomy_mapping_schema import (
+    build_taxonomy_mapping_schema,
+    normalize_taxonomy_mapping_result,
+    validate_taxonomy_mapping_json,
+)
+
 from src.stage09_category_mapping.taxonomy_v2 import (
     DEFAULT_TAXONOMY_PATH,
     apply_domain_heuristics,
@@ -81,6 +95,9 @@ logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s] [%(levelname)s] %(message)s",
 )
+
+# Production default for taxonomy mapping (Stage08 labels use the same model family).
+STAGE09_DEFAULT_MODEL = "anthropic/claude-sonnet-4.6"
 
 
 # ---------------------------------------------------------------------------
@@ -106,427 +123,60 @@ def reload_taxonomy(config_path: Optional[Path] = None) -> None:
 
 
 # ---------------------------------------------------------------------------
-# 3. System + user prompts for zero-shot taxonomy mapping
-#    Optimized for Mistral-Nemo, JSON-only output, similar style to Stage 08.
+# Prompts (v1 legacy + v2 default via prompts package)
 # ---------------------------------------------------------------------------
 
-TAXONOMY_ZEROSHOT_SYSTEM_PROMPT = f"""
-You are RomanceTaxonomyMapper, an expert assistant for assigning topics from modern English romance fiction (2000–2017) to a fixed analytic taxonomy.
-
-CORPUS CONTEXT (IMPORTANT)
-
-The corpus is multi-genre: contemporary, paranormal, historical, young-adult, and mystery.
-It is NOT a billionaire-only or CEO-romance subset. Do NOT default to 6.1 for generic negotiation,
-social scenes, or fashion unless elite professional work is clearly central.
-
-You will receive, for each topic:
-
-- A topic_id
-
-- TOPIC KEYWORDS from BERTopic
-
-- An LLM-generated label and scene_summary from a previous stage
-
-- Primary and secondary categories from the earlier labeler (e.g., "romance_core", "narrative_style", "appearance_presentation", "activity:dressing")
-
-- Optional Stage 08 fields: content_type, exclude_from_axes, subgenre_hints, register,
-  sexual_explicitness, sexual_function, consent_status, axis_hint (v3 sexual-precision labels)
-
-- Optional representative snippets from the corpus
-
-Your task is to map this topic to one or two nodes in a fixed Romance Corpus Topic Taxonomy.
-
-IMPORTANT: This is ZERO-SHOT classification.
-
-- The taxonomy is fixed and must NOT be modified.
-
-- You must select IDs only from the taxonomy list shown below.
-
-AVAILABLE TAXONOMY NODES
-
-(Use these IDs exactly; do NOT invent new ones):
-
-{TAXONOMY_TEXT_BLOCK}
-
-OUTPUT CONSTRAINTS
-
-- Think through the mapping internally.
-
-- In your final answer, output only a valid JSON object.
-
-- Do NOT include markdown, backticks, or any explanation outside the JSON.
-
-- Never wrap JSON in ```json or any other formatting.
-
-- Use only taxonomy IDs listed above, or "noise" for junk topics.
-
-JSON SCHEMA (MANDATORY)
-
-Return exactly these keys and types:
-
-{{
-  "topic_id": 0,
-  "main_category_id": "4.2",
-  "secondary_category_id": "5.1",
-  "other_plausible_ids": ["3.2", "6.4"],
-  "is_noise": false,
-  "confidence": "medium",
-  "rationale": "1–3 short sentences explaining why these IDs fit this topic."
-}}
-
-FIELD RULES
-
-1) "topic_id"
-
-- Echo the integer topic id from the input.
-
-2) "main_category_id"
-
-- REQUIRED.
-
-- One taxonomy ID that best captures the central function of the topic.
-
-- Use:
-
-  - 4.x for dynamics BETWEEN the main romantic couple (interactions, dialogue,
-    arguments, dates, bonding, conflicts, reconciliations). NOT for family
-    members or friends - those go to 5.x.
-
-  - 5.x for social world outside the main couple (family, friends, community).
-    Use 5.1 for family/kinship scenes even if they affect the couple indirectly.
-
-  - 6.x for work, money, institutional scenes, material glamour (6.6), aristocracy (6.7).
-    Use 6.1 ONLY for elite professional/business power — NOT generic social bargaining.
-    Use 6.2 for a character's job or professional identity (any lead or supporting character).
-    Use 6.6 for fashion, jewelry, modeling, upscale consumption.
-    Use 6.7 for titled nobility, court formality, period status markers.
-    Use 6.4 for economic precarity (rent, debt) — NOT luxury glamour.
-
-  - 1.6 for hair, grooming, clothes, mirror checks, body cataloguing, beauty evaluation
-    (neutral register, not explicit sex).
-
-  - 1.7 for gaze, eye color, smirk/wink, facial expression, self-conscious awareness.
-
-  - 9.x for dialogue delivery and discourse patterns (included in Stage09 analysis).
-
-  - 10.x for subgenre plot furniture ONLY when genre markers dominate the topic
-    (see rule 8 below). Scene beats (kiss, argument, dinner, phone) → 2.x–8.x first.
-
-  - 2.x for sexual attraction/acts/intimacy.
-
-  - 1.5 for any non-violent sport or physical training, workouts, exercise.
-
-  - 7.x for risk, harm, violence, coercion, and antagonistic non-couple conflict (7.1).
-    Use 7.1 for bosses, rivals, antagonists outside the main couple (see rule 2b).
-    Use 7.2 ONLY for actual violence/threats, NOT for verbal arguments or
-    emotional conflict between the main couple (those belong in 4.4).
-
-  - 8.x when the topic is primarily about spaces, time, or objects.
-
-  - 3.x when the topic is mostly ONE character's inner feelings, beliefs,
-    cognitive states, or internal monologue WITHOUT much interaction.
-    Use 3.1 for standalone happiness/gratitude/relief (any character).
-    Use 4.5 when commitment/HEA is central; 4.6 when reassurance/protection
-    is central; 2.2 when affection is physical, not purely internal.
-    Use 4.1 for early romantic approach (first dates, flirtation, invitations);
-    4.2 for ongoing bonding and everyday intimacy; 4.6 for emotional safety
-    and repair. Do NOT map courtship/affection/reassurance to 8.1 alone.
-
-  - "noise" only if the topic is mostly boilerplate or paratext.
-
-3) "secondary_category_id"
-
-- OPTIONAL but recommended.
-
-- A second taxonomy ID when the topic clearly blends two dimensions
-  (e.g., argument in kitchen → 4.4 + 8.1; pregnancy conflict → 5.1 + 3.2).
-
-- Use null if there is no meaningful second dimension.
-
-4) "other_plausible_ids"
-
-- OPTIONAL list (0–3 items) of other taxonomy IDs that are plausible,
-  but clearly less central than main_category_id and secondary_category_id.
-
-5) "is_noise"
-
-- true only if the topic is mostly boilerplate, technical artefacts, or paratext.
-
-- If true, main_category_id MUST be "noise" and secondary_category_id MUST be null.
-
-- If false, main_category_id MUST NOT be "noise".
-
-6) "confidence"
-
-- REQUIRED.
-
-- One of: "low", "medium", "high".
-
-- "high" = strong, unambiguous match to one taxonomy node.
-
-- "medium" = reasonably clear, a couple of plausible alternatives.
-
-- "low" = noisy or ambiguous topic, mapping is uncertain.
-
-7) "rationale"
-
-- 1–3 short sentences.
-
-- Refer to:
-
-  - specific high-weight keywords,
-
-  - the label and scene_summary,
-
-  - and any primary/secondary categories in the input.
-
-- Explain why these support the chosen taxonomy IDs.
-
-- Do NOT quote long snippets verbatim; summarize them instead.
-
-CRITICAL BOUNDARY RULES
-
-1) 4.x (Relationship Trajectory) vs. 3.x (Inner Life) vs. 5.x (Social World)
-
-- Use 4.x ONLY when the interaction is BETWEEN the main romantic couple
-  (dialogue, arguments, dates, separations, reconciliations, bonding moments).
-
-- Use 3.x when the focus is on ONE character's internal feelings, reflections,
-  or monologue about the relationship, without much interaction in the scene.
-
-- Use 3.1 (Positive Emotions & Contentment) for standalone happiness, gratitude,
-  relief, or contentment (any character). Use 4.5 when commitment/HEA is central;
-  4.6 when reassurance/protection is central; 2.2 when affection is physical,
-  not purely internal.
-
-- Use 5.1 (Family & Kinship) when the emotional core of the topic is about
-  parents, children, or siblings, even if it indirectly affects the main couple.
-  If a topic mentions "mother", "sister", "father" etc. and the scene is about
-  family dynamics rather than the main couple's direct interaction, prefer 5.1
-  over 4.x.
-
-- Use 5.2 (Friends & Social Circles) for friend interactions, colleague social
-  support, found family.
-
-- Use 5.3 (Community, Norms & Social Events) for parties, weddings, holidays,
-  community judgment, public rituals.
-
-2) 7.2 (Violence, Threats & Coercion) - USE SPARINGLY
-
-- Use 7.2 ONLY when there is clear physical violence, explicit threats,
-  coercion, or danger (weapons, beating, assault, explicit harm).
-
-- Teasing, snarky banter, or verbal arguments WITHOUT explicit threats belong
-  in 4.4 (Conflict, Distance & Breakup Threats), NOT 7.2.
-
-- Emotional conflict, relationship struggles, or heated discussions between
-  the main couple should use 4.4, not 7.2.
-
-- Only use 7.2 when violence or coercion is the PRIMARY function of the scene.
-
-2b) 7.1 (Interpersonal Non-Romantic Conflict / Antagonistic Conflict, Non-Couple)
-
-- Arguments, hostility, or power struggles with bosses, rivals, antagonists, or
-  institutional gatekeepers — NOT main-couple conflict (→ 4.4), NOT family/kinship
-  dynamics (→ 5.1), NOT friend support circles (→ 5.2), NOT violence/threats (→ 7.2),
-  NOT accidents/disasters (→ 7.3).
-
-- Shared-workplace spats between the main couple → 6.3 or 4.4, NOT 7.1.
-
-3) 4.3 (Secrets, Misunderstandings) vs. 4.4 (Conflict, Distance)
-
-- Use 4.3 when the topic is about concealed facts, misunderstandings, or
-  withheld truths BETWEEN the main couple that create tension.
-
-- Use 4.4 for arguments, distancing, threats of breakup, or serious relational
-  strain - even if it involves emotional intensity.
-
-- Do NOT use 4.3 for any emotionally tense talk; reserve it for topics where
-  hidden information or misunderstandings are the core issue.
-
-4) LUXURY & STATUS (COMPOSITE — NO SINGLE "BILLIONAIRE" NODE)
-
-- Luxury appears indirectly: fashion/gowns (6.6), aristocratic formality (6.7),
-  weddings/parties (5.3), hotels/restaurants (8.2), jewelry/clothes as objects (8.3).
-- Do NOT collapse all wealth signals into 6.1. Prefer the most specific node.
-- Generic "negotiating terms" without business context → 4.x or 5.x, NOT 6.1.
-
-5) APPEARANCE vs ATTRACTION vs EXPLICIT vs NEGOTIATION vs COERCION
-
-- Cataloguing hair, clothes, mirror, grooming → 1.6 (or 1.7 if gaze/expression dominates).
-- Charged desire/longing with flirtation → 2.1.
-- Explicit sexual body focus or intercourse → 2.3, NOT 1.6/1.7.
-- Condom/lube preparation, negotiating when to stop, sex-without-commitment talk → 2.5, NOT 2.3.
-- Aftercare and emotional processing after sex → 2.4.
-- Unwanted touch, coercion signals, nonconsent, threatening sexual contact → 7.4 (watchlist).
-  Forceful consensual intensity without boundary-risk evidence → 2.3 with unclear consent in
-  Stage 08 metadata, NOT 7.4 automatically.
-- Physical violence/threats outside sexual contact → 7.2.
-
-5b) STAGE 08 v3 SEXUAL-FUNCTION HINTS (when present)
-
-- sexual_function contraception_preparation | sexual_negotiation | sex_without_commitment → 2.5
-- sexual_function explicit_contact | orgasm_climax | postsex_arousal → 2.3
-- sexual_function postsex_aftercare → 2.4
-- sexual_function sexual_tension | presex_escalation → 2.1
-- sexual_function nonsexual_affection → 2.2 or 4.1/4.2/4.6 by relational beat
-- consent_status coercion_watchlist | nonconsent_explicit → prefer 7.4 over 2.3
-- axis_hint consent_control_risk → 7.4, 7.2, or 4.7 by dominant beat
-
-6) STAGE 08 ROUTING HINTS
-
-- If primary includes narrative_style → prefer 9.1–9.4 (discourse is included in analysis).
-- Reserve exclude_from_axes for is_noise / paratext / publisher boilerplate only.
-- If primary includes appearance_presentation or secondary includes activity:dressing → 1.6.
-
-7) PROTECTIVE CARE vs JEALOUSY (H4)
-
-- Use 4.6 for non-coercive protection, reassurance, vows to keep someone safe, caretaking.
-- Use 4.7 for jealousy, possessive claiming, rivalry with exes — NOT generic 4.4 unless jealousy is absent.
-- Do NOT use 7.2 for protective vows unless actual violence/coercion is central.
-
-8) SUBGENRE & 10.x ROUTING
-
-- Default rule: If the topic is a scene beat (kiss, argument, dinner, phone), map to the
-  scene category (2.x–8.x). Subgenre is incidental.
-
-- Use 10.x as main ONLY when genre furniture dominates:
-  supernatural systems (10.1), period social furniture beyond generic conflict (10.2),
-  investigation/clues (10.3), combat set-pieces (10.4).
-
-- Subgenre hint routing:
-  - subgenre_hints [contemporary] or [young_adult] → do NOT use 10.x unless keywords
-    clearly show paranormal/historical/mystery/action.
-  - subgenre_paranormal / hints [paranormal] → 10.1
-  - subgenre_historical / hints [historical] → 10.2
-  - subgenre_suspense / hints [mystery] → 10.3
-  - Armed combat / gunfight keywords without couple-conflict center → 10.4
-
-- Blended topics: werewolf kiss → main 2.1 or 2.2, secondary 10.1; Regency ball
-  etiquette → main 5.3 or 6.7, secondary 10.2.
-
-- Negative rule: Never assign 10.x solely because Stage08 listed a contemporary hint.
-  If content_type is subgenre_marker → prefer 10.x matching subgenre_hints.
-
-9) EVERYDAY INTIMACY & EMOTIONAL SAFETY (composite axis — H1 / Goodreads hypothesis)
-
-Use taxonomy IDs 4.1, 4.2, 4.6, and 2.2 (plus 8.1 or 8.2 as secondary) for non-explicit
-scenes that create romantic closeness, comfort, trust, or low-threat bonding. This axis
-replaces the overly narrow "domestic care" framing — domestic routines are only one subpart.
-
-Include when the topic's central function is:
-- Courtship / romantic approach: first-date planning, dinner dates, flirtation, winks,
-  invitations, dance-floor approach, goodnight farewells, negotiating relationship terms.
-- Non-sexual affection: gentle kisses, hugs, reassuring touch, cautious physical approach,
-  flirtatious but non-explicit touch, physical closeness with anticipation.
-- Everyday companionship: shared meals, coffee/tea/kitchen moments, offers to drive home,
-  practical help, seasonal outing plans, invitation to sit together.
-- Emotional safety: reassurance, apologies, forgiveness, worry for wellbeing, trust-building,
-  medical/recovery care, vows to protect, respecting limits and negotiating when to stop.
-
-Do NOT restrict this axis to domestic settings. A restaurant, doorway, car, dance floor,
-phone call, or public social event can count if the function is courtship, affection, care,
-or emotional safety.
-
-Routing preferences:
-- Early approach / first-date / flirtation → 4.1 main (4.2 secondary if bonding dominates).
-- Ongoing dates, meals, goodnight scenes, ordinary closeness → 4.2 main.
-- Reassurance, apology, protection vow, medical care, limit negotiation → 4.6 main.
-- Kiss/hug/touch as the central beat → 2.2 main (4.2 or 4.6 secondary if relational).
-- Kitchen/chore routine with weak relational beat → 8.1 main; if care/bonding is clear → 4.2 or 4.6 main, 8.1 secondary.
-
-Do NOT use this axis for:
-- Explicit sex, coercive control, armed danger, jealousy/possessive claiming (4.7),
-  forceful intensity with boundary-risk signals, or stalker threat — unless the topic clearly
-  emphasizes aftercare or repair (→ 2.4 or 4.6) rather than threat or domination.
-- Forceful explicit sexual contact with unclear consent → 7.4 watchlist or 2.3, NOT 4.2/4.6.
-- Condom/boundary/sex-without-commitment negotiation → 2.5, NOT 4.2/4.6 alone.
-- Pure setting description without a relational function → 8.x only.
-
-Stage 08 hints: intimacy:courtship_ritual, intimacy:nonsexual_affection,
-intimacy:everyday_companionship, intimacy:domestic_care, intimacy:emotional_safety,
-intimacy:consent_negotiation, sexual:contraception, sexual:negotiation, risk:coercive_control
-support routing but do not override explicit sex or violence keywords.
-
-SPECIAL RULES ABOUT VIOLENCE VS EXERCISE
-
-- Any physical activity that is NOT clearly harmful or coercive
-  (e.g., workouts, sport, training, running, dance practice) should use 1.5.
-
-- Only use 7.2 (Violence, Threats & Coercion) when the language or scenes clearly
-  indicate harm, threat, assault, or coercion.
-
-NO REASONING OUTSIDE JSON
-
-- You may think step-by-step internally.
-
-- The final answer must be only the JSON object described above.
-""".strip()
-
-
-TAXONOMY_ZEROSHOT_USER_PROMPT = """
-### TOPIC DATA
-
-topic_id: {topic_id}
-
-TOPIC KEYWORDS (most important first):
-
-{keywords}
-
-PREVIOUS LLM LABEL:
-
-{label}
-
-PREVIOUS SCENE SUMMARY:
-
-{scene_summary}
-
-PREVIOUS PRIMARY CATEGORIES:
-
-{primary_categories}
-
-PREVIOUS SECONDARY CATEGORIES:
-
-{secondary_categories}
-
-STAGE 08 CONTENT TYPE: {content_type}
-STAGE 08 EXCLUDE FROM AXES: {exclude_from_axes}
-STAGE 08 SUBGENRE HINTS: {subgenre_hints}
-STAGE 08 REGISTER: {register}
-STAGE 08 SEXUAL EXPLICITNESS: {sexual_explicitness}
-STAGE 08 SEXUAL FUNCTION: {sexual_function}
-STAGE 08 CONSENT STATUS: {consent_status}
-STAGE 08 AXIS HINT: {axis_hint}
-
-REPRESENTATIVE SNIPPETS (optional):
-
-{snippets}
-
-### TASK
-
-Using ONLY the information above and the taxonomy defined in the system message:
-
-- Decide whether this topic is noise or meaningful.
-
-- If meaningful, choose:
-
-  - one main_category_id (required),
-
-  - an optional secondary_category_id,
-
-  - optional other_plausible_ids (0–3).
-
-- If noise, set main_category_id to "noise", secondary_category_id to null, and is_noise to true.
-
-Return a SINGLE JSON object following the schema in the system message.
-
-Do NOT include explanations outside the JSON.
-""".strip()
+def get_taxonomy_prompts(prompt_version: str = DEFAULT_PROMPT_VERSION) -> tuple[str, str]:
+    return load_taxonomy_prompts(prompt_version, taxonomy_path=TAXONOMY_CONFIG_PATH)
+
+
+def build_user_prompt(
+    *,
+    topic_id: int,
+    topic_metadata: Dict[str, Any],
+    snippets_block: str,
+    prompt_version: str = DEFAULT_PROMPT_VERSION,
+) -> str:
+    _, user_template = get_taxonomy_prompts(prompt_version)
+    keywords = topic_metadata.get("keywords", [])
+    primary_categories = topic_metadata.get("primary_categories", [])
+    secondary_categories = topic_metadata.get("secondary_categories", [])
+    subgenre_hints = topic_metadata.get("subgenre_hints", []) or []
+
+    format_kwargs = {
+        "topic_id": topic_id,
+        "keywords": ", ".join(keywords) if keywords else "(no keywords)",
+        "label": topic_metadata.get("label") or "(no label)",
+        "scene_summary": topic_metadata.get("scene_summary") or "(no scene summary)",
+        "primary_categories": ", ".join(primary_categories) if primary_categories else "(none)",
+        "secondary_categories": ", ".join(secondary_categories) if secondary_categories else "(none)",
+        "content_type": topic_metadata.get("content_type", "(unknown)"),
+        "exclude_from_axes": topic_metadata.get("exclude_from_axes", False),
+        "subgenre_hints": ", ".join(subgenre_hints) if subgenre_hints else "(none)",
+        "register": topic_metadata.get("register", "neutral"),
+        "sexual_explicitness": topic_metadata.get("sexual_explicitness", "(none)"),
+        "sexual_function": topic_metadata.get("sexual_function", "(none)"),
+        "consent_status": topic_metadata.get("consent_status", "(not_applicable)"),
+        "axis_hint": topic_metadata.get("axis_hint", "(none)"),
+        "snippets": snippets_block,
+    }
+    if prompt_version.lower().startswith("v2"):
+        format_kwargs.update({
+            "stage07_exclude_from_axes": topic_metadata.get("stage07_exclude_from_axes", "(none)"),
+            "stage07_posthoc_reason": topic_metadata.get("stage07_posthoc_reason", "(none)"),
+            "stage07_content_type": topic_metadata.get("stage07_content_type", "(none)"),
+        })
+    return user_template.format(**format_kwargs)
+
+
+# Backward-compatible names for dry-run / external imports
+TAXONOMY_ZEROSHOT_SYSTEM_PROMPT, TAXONOMY_ZEROSHOT_USER_PROMPT = get_taxonomy_prompts("v1")
 
 
 # ---------------------------------------------------------------------------
-# 4. Core function: classify a single topic into the taxonomy
+# Core function: classify a single topic into the taxonomy
 # ---------------------------------------------------------------------------
+
 
 def _finalize_taxonomy_result(
     result: Dict[str, Any],
@@ -547,80 +197,28 @@ def classify_topic_to_taxonomy_openrouter(
     topic_metadata: Dict[str, Any],
     client: OpenAI,
     model_name: str,
-    temperature: float = 0.25,
-    max_new_tokens: int = 220,
+    temperature: float = 0.0,
+    max_new_tokens: int = 700,
     representative_docs: Optional[List[str]] = None,
     max_snippets: int = 8,
     max_chars_per_snippet: int = 400,
+    prompt_version: str = DEFAULT_PROMPT_VERSION,
 ) -> Dict[str, Any]:
-    """
-    Classify a single BERTopic topic into the Romance Corpus Topic Taxonomy
-    using Mistral-Nemo via OpenRouter.
+    """Classify a single BERTopic topic into the Romance Corpus Topic Taxonomy."""
+    taxonomy_path = str(TAXONOMY_CONFIG_PATH)
+    valid_ids = VALID_TAXONOMY_IDS
+    use_v2 = prompt_version.lower().startswith("v2")
 
-    Parameters
-    ----------
-    topic_id:
-        Integer topic id.
-    topic_metadata:
-        Dict with at least:
-        - "keywords": List[str]
-        - "label": str (from Stage 08)
-        - "scene_summary": str (optional but recommended)
-        - "primary_categories": List[str] (optional)
-        - "secondary_categories": List[str] (optional)
-        - "is_noise": bool (optional hint)
-    client:
-        OpenRouter OpenAI-compatible client.
-    model_name:
-        Model name (e.g., "mistralai/Mistral-Nemo-Instruct-2407").
-    temperature:
-        Sampling temperature (low-ish for stable classification).
-    max_new_tokens:
-        Max tokens for JSON output.
-    representative_docs:
-        Optional list of representative doc snippets for this topic.
-    max_snippets:
-        Max snippets to include.
-    max_chars_per_snippet:
-        Max characters per snippet.
-
-    Returns
-    -------
-    Dict with keys:
-        "topic_id",
-        "main_category_id",
-        "secondary_category_id",
-        "other_plausible_ids",
-        "is_noise",
-        "confidence",
-        "rationale",
-        "main_category_name",
-        "main_category_group",
-        "secondary_category_name",
-        "secondary_category_group",
-        "other_plausible_categories" (list of {id, name, group})
-    """
-    keywords = topic_metadata.get("keywords", [])
-    label = topic_metadata.get("label", "")
-    scene_summary = topic_metadata.get("scene_summary", "")
-    primary_categories = topic_metadata.get("primary_categories", [])
-    secondary_categories = topic_metadata.get("secondary_categories", [])
-    prev_is_noise = topic_metadata.get("is_noise", False)
-    content_type = topic_metadata.get("content_type", "(unknown)")
-    exclude_from_axes = topic_metadata.get("exclude_from_axes", False)
-    subgenre_hints = topic_metadata.get("subgenre_hints", []) or []
-    register = topic_metadata.get("register", "neutral")
-    sexual_explicitness = topic_metadata.get("sexual_explicitness", "(none)")
-    sexual_function = topic_metadata.get("sexual_function", "(none)")
-    consent_status = topic_metadata.get("consent_status", "(not_applicable)")
-    axis_hint = topic_metadata.get("axis_hint", "(none)")
-
-    pre_routed = try_pre_route_taxonomy(
-        topic_id,
-        topic_metadata,
-        str(TAXONOMY_CONFIG_PATH),
-    )
+    pre_routed = try_pre_route_taxonomy(topic_id, topic_metadata, taxonomy_path)
     if pre_routed is not None:
+        if use_v2:
+            pre_routed = normalize_taxonomy_mapping_result(
+                pre_routed,
+                topic_id=topic_id,
+                topic_metadata=topic_metadata,
+                valid_ids=valid_ids,
+                prompt_version=prompt_version,
+            )
         result = _finalize_taxonomy_result(pre_routed, topic_metadata)
         LOGGER.info(
             "Topic %d pre-routed → main=%s (%s), secondary=%s, noise=%s",
@@ -632,17 +230,9 @@ def classify_topic_to_taxonomy_openrouter(
         )
         return result
 
-    kw_str = ", ".join(keywords) if keywords else "(no keywords)"
-    primary_str = ", ".join(primary_categories) if primary_categories else "(none)"
-    secondary_str = ", ".join(secondary_categories) if secondary_categories else "(none)"
-
-    # Format representative snippets using same helper as Stage 08
     snippets_block = "(none)"
     if representative_docs:
-        central_docs = rerank_snippets_centrality(
-            representative_docs,
-            top_k=max_snippets,
-        )
+        central_docs = rerank_snippets_centrality(representative_docs, top_k=max_snippets)
         formatted = format_snippets(
             central_docs,
             max_snippets=max_snippets,
@@ -651,162 +241,92 @@ def classify_topic_to_taxonomy_openrouter(
         )
         snippets_block = formatted if formatted else "(none)"
 
-    user_prompt = TAXONOMY_ZEROSHOT_USER_PROMPT.format(
+    system_prompt, _ = get_taxonomy_prompts(prompt_version)
+    user_prompt = build_user_prompt(
         topic_id=topic_id,
-        keywords=kw_str,
-        label=label or "(no label)",
-        scene_summary=scene_summary or "(no scene summary)",
-        primary_categories=primary_str,
-        secondary_categories=secondary_str,
-        content_type=content_type,
-        exclude_from_axes=exclude_from_axes,
-        subgenre_hints=", ".join(subgenre_hints) if subgenre_hints else "(none)",
-        register=register,
-        sexual_explicitness=sexual_explicitness,
-        sexual_function=sexual_function,
-        consent_status=consent_status,
-        axis_hint=axis_hint,
-        snippets=snippets_block,
+        topic_metadata=topic_metadata,
+        snippets_block=snippets_block,
+        prompt_version=prompt_version,
     )
-
     messages = [
-        {"role": "system", "content": TAXONOMY_ZEROSHOT_SYSTEM_PROMPT},
+        {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
 
-    LOGGER.info("Classifying topic %d into taxonomy (Mistral-Nemo)...", topic_id)
+    LOGGER.info("Classifying topic %d into taxonomy (%s)...", topic_id, model_name)
 
-    # Retry logic with exponential backoff for rate limits
-    max_retries = 6
-    base_delay = 15.0  # Start with 15 seconds (Mistral-Nemo has strict rate limits)
-    
-    for attempt in range(max_retries):
-        try:
-            response = client.chat.completions.create(
+    schema = None
+    if use_v2:
+        schema = build_taxonomy_mapping_schema(taxonomy_path)
+
+    def _call_api() -> Dict[str, Any]:
+        if use_v2 and schema is not None:
+            return chat_completions_json_schema(
+                client,
                 model=model_name,
                 messages=messages,
+                schema=schema,
+                schema_name="romance_taxonomy_mapping",
                 max_tokens=max_new_tokens,
                 temperature=temperature,
-                top_p=0.9,
-                frequency_penalty=0.3,
-                presence_penalty=0.0,
+                validate_fn=lambda parsed: validate_taxonomy_mapping_json(parsed, schema),
             )
-            break  # Success, exit retry loop
+        max_retries = 6
+        base_delay = 15.0
+        response = None
+        for attempt in range(max_retries):
+            try:
+                response = client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    max_tokens=max_new_tokens,
+                    temperature=temperature,
+                    response_format={"type": "json_object"},
+                )
+                break
+            except Exception as e:
+                error_str = str(e).lower()
+                is_rate_limit = "429" in error_str or "rate limit" in error_str
+                if is_rate_limit and attempt < max_retries - 1:
+                    delay = 300.0 if attempt == max_retries - 2 else base_delay * (2 ** attempt)
+                    LOGGER.warning("Rate limit for topic %d; waiting %.1fs", topic_id, delay)
+                    time.sleep(delay)
+                else:
+                    raise
+        if not response or not response.choices:
+            raise ValueError("Empty API response for taxonomy classification")
+        return parse_json_object_content(response.choices[0].message.content.strip())
+
+    max_retries = 6
+    base_delay = 15.0
+    for attempt in range(max_retries):
+        try:
+            raw = _call_api()
+            break
         except Exception as e:
             error_str = str(e).lower()
-            is_rate_limit = "429" in error_str or "rate limit" in error_str or "rate-limited" in error_str
-            
+            is_rate_limit = "429" in error_str or "rate limit" in error_str
             if is_rate_limit and attempt < max_retries - 1:
-                # Calculate delay with exponential backoff
-                if attempt == max_retries - 2:
-                    # Second-to-last attempt: wait 5 minutes for rate limit window to reset
-                    delay = 300.0
-                    LOGGER.warning(
-                        "Rate limit hit for topic %d (attempt %d/%d). Waiting %.1f seconds (5 minutes) for rate limit window to reset...",
-                        topic_id, attempt + 1, max_retries, delay
-                    )
-                else:
-                    delay = base_delay * (2 ** attempt)  # Exponential backoff: 15s, 30s, 60s, 120s, 240s
-                    LOGGER.warning(
-                        "Rate limit hit for topic %d (attempt %d/%d). Waiting %.1f seconds before retry...",
-                        topic_id, attempt + 1, max_retries, delay
-                    )
+                delay = 300.0 if attempt == max_retries - 2 else base_delay * (2 ** attempt)
+                LOGGER.warning("Rate limit for topic %d; waiting %.1fs", topic_id, delay)
                 time.sleep(delay)
             else:
-                # Not a rate limit, or we've exhausted retries
                 raise
 
-    if not response.choices:
-        raise ValueError("Empty API response for taxonomy classification")
-
-    content = response.choices[0].message.content.strip()
-    LOGGER.debug("Raw taxonomy response for topic %d: %s", topic_id, content[:300])
-
-    # Extract JSON (strip optional code fences defensively)
-    json_content = content
-    if "```json" in json_content:
-        json_content = json_content.split("```json", 1)[1].split("```", 1)[0].strip()
-    elif "```" in json_content:
-        # Any fenced code block
-        json_content = json_content.split("```", 1)[1].split("```", 1)[0].strip()
-
-    # Fallback: try to grab the first {...} span
-    if not json_content.strip().startswith("{"):
-        first_brace = json_content.find("{")
-        last_brace = json_content.rfind("}")
-        if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
-            json_content = json_content[first_brace : last_brace + 1]
-
-    try:
-        result = json.loads(json_content)
-    except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Failed to parse taxonomy JSON for topic {topic_id}: {e}\nContent:\n{content}"
-        ) from e
-
-    # Minimal sanity checks + gentle corrections
-    result_topic_id = result.get("topic_id", topic_id)
-    if result_topic_id != topic_id:
-        LOGGER.warning(
-            "Model echoed different topic_id (%s) than input (%s); overriding with input.",
-            result_topic_id,
-            topic_id,
+    if use_v2:
+        result = normalize_taxonomy_mapping_result(
+            raw,
+            topic_id=topic_id,
+            topic_metadata=topic_metadata,
+            valid_ids=valid_ids,
+            prompt_version=prompt_version,
         )
-        result["topic_id"] = topic_id
-
-    main_id = result.get("main_category_id")
-    sec_id = result.get("secondary_category_id", None)
-    is_noise = bool(result.get("is_noise", False))
-
-    # If model says noise, enforce noise semantics
-    if is_noise:
-        result["main_category_id"] = "noise"
-        result["secondary_category_id"] = None
     else:
-        # Fix missing or invalid main_category_id
-        if not main_id or main_id not in VALID_TAXONOMY_IDS or main_id == "noise":
-            # If previous stage already marked this topic as noise, keep it noise
-            if prev_is_noise:
-                result["main_category_id"] = "noise"
-                result["secondary_category_id"] = None
-                result["is_noise"] = True
-            else:
-                result["main_category_id"] = fallback_main_category(primary_categories)
-                result["is_noise"] = False
-
-        # Validate secondary ID
-        if sec_id is not None and sec_id not in VALID_TAXONOMY_IDS:
-            result["secondary_category_id"] = None
-
-    # Normalize other_plausible_ids
-    other_ids = result.get("other_plausible_ids", [])
-    if not isinstance(other_ids, list):
-        other_ids = []
-    filtered_other = []
-    for cid in other_ids:
-        if (
-            isinstance(cid, str)
-            and cid in VALID_TAXONOMY_IDS
-            and cid not in {result["main_category_id"], result.get("secondary_category_id")}
-        ):
-            filtered_other.append(cid)
-    result["other_plausible_ids"] = filtered_other
-
-    # Normalize confidence
-    confidence = result.get("confidence", None)
-    valid_conf = {"low", "medium", "high"}
-    if not isinstance(confidence, str) or confidence.lower() not in valid_conf:
-        # Simple heuristic: if we had to fall back or fix IDs, treat as low confidence
-        if is_noise:
-            confidence = "medium"
-        else:
-            confidence = "low"
-    else:
-        confidence = confidence.lower()
-    result["confidence"] = confidence
+        result = _normalize_v1_result(raw, topic_id, topic_metadata, valid_ids)
 
     result = _finalize_taxonomy_result(result, topic_metadata)
 
+    conf_display = result.get("confidence_band", result.get("confidence"))
     LOGGER.info(
         "Topic %d → main=%s (%s), secondary=%s (%s), noise=%s, confidence=%s",
         topic_id,
@@ -815,9 +335,45 @@ def classify_topic_to_taxonomy_openrouter(
         result.get("secondary_category_id"),
         result.get("secondary_category_name"),
         result.get("is_noise"),
-        result.get("confidence"),
+        conf_display,
     )
+    return result
 
+
+def _normalize_v1_result(
+    raw: Dict[str, Any],
+    topic_id: int,
+    topic_metadata: Dict[str, Any],
+    valid_ids: Set[str],
+) -> Dict[str, Any]:
+    """Legacy v1 post-parse normalization (string confidence)."""
+    result = dict(raw)
+    result["topic_id"] = topic_id
+    primary_categories = topic_metadata.get("primary_categories", []) or []
+    prev_is_noise = topic_metadata.get("is_noise", False)
+
+    is_noise = bool(result.get("is_noise", False))
+    if is_noise:
+        result["main_category_id"] = "noise"
+        result["secondary_category_id"] = None
+    else:
+        main_id = result.get("main_category_id")
+        if not main_id or main_id not in valid_ids or main_id == "noise":
+            if prev_is_noise:
+                result["main_category_id"] = "noise"
+                result["secondary_category_id"] = None
+                result["is_noise"] = True
+            else:
+                result["main_category_id"] = fallback_main_category(primary_categories)
+                result["is_noise"] = False
+        sec_id = result.get("secondary_category_id")
+        if sec_id is not None and sec_id not in valid_ids:
+            result["secondary_category_id"] = None
+
+    confidence = result.get("confidence", "medium")
+    if not isinstance(confidence, str) or confidence.lower() not in {"low", "medium", "high"}:
+        confidence = "medium" if is_noise else "low"
+    result["confidence"] = confidence.lower()
     return result
 
 
@@ -920,10 +476,11 @@ def map_all_topics_to_taxonomy(
     labels_json_path: Path,
     output_path: Path,
     client: Optional[OpenAI] = None,
-    model_name: str = DEFAULT_OPENROUTER_MODEL,
+    model_name: str = STAGE09_DEFAULT_MODEL,
     api_key: Optional[str] = None,
-    temperature: float = 0.25,
-    max_new_tokens: int = 220,
+    temperature: float = 0.0,
+    max_new_tokens: int = 700,
+    prompt_version: str = DEFAULT_PROMPT_VERSION,
     topic_to_snippets: Optional[Dict[int, List[str]]] = None,
     # Model loading parameters for snippet extraction
     load_model_for_snippets: bool = True,
@@ -1049,6 +606,7 @@ def map_all_topics_to_taxonomy(
                 temperature=temperature,
                 max_new_tokens=max_new_tokens,
                 representative_docs=snippets,
+                prompt_version=prompt_version,
             )
         except Exception as e:
             LOGGER.error(
@@ -1239,7 +797,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model-name",
         type=str,
-        default=DEFAULT_OPENROUTER_MODEL,
+        default=STAGE09_DEFAULT_MODEL,
         help="OpenRouter model name to use.",
     )
     parser.add_argument(
@@ -1249,15 +807,21 @@ if __name__ == "__main__":
         help="OpenRouter API key (optional; otherwise environment variable is used).",
     )
     parser.add_argument(
+        "--prompt-version",
+        type=str,
+        default=DEFAULT_PROMPT_VERSION,
+        help="Taxonomy prompt version (v2 default; v1 for legacy).",
+    )
+    parser.add_argument(
         "--temperature",
         type=float,
-        default=0.25,
-        help="Sampling temperature (low for stable classification).",
+        default=0.0,
+        help="Sampling temperature (0.0 recommended for classification).",
     )
     parser.add_argument(
         "--max-tokens",
         type=int,
-        default=220,
+        default=700,
         help="Maximum new tokens for JSON output.",
     )
     parser.add_argument(
@@ -1347,25 +911,15 @@ if __name__ == "__main__":
         meta = load_topic_metadata(args.labels_json)
         first_tid = sorted(meta.keys())[0]
         tm = meta[first_tid]
-        user_prompt = TAXONOMY_ZEROSHOT_USER_PROMPT.format(
+        system_prompt, _ = get_taxonomy_prompts(args.prompt_version)
+        user_prompt = build_user_prompt(
             topic_id=first_tid,
-            keywords=", ".join(tm.get("keywords", [])),
-            label=tm.get("label", "(no label)"),
-            scene_summary=tm.get("scene_summary", "(no scene summary)"),
-            primary_categories=", ".join(tm.get("primary_categories", [])),
-            secondary_categories=", ".join(tm.get("secondary_categories", [])),
-            content_type=tm.get("content_type", "(unknown)"),
-            exclude_from_axes=tm.get("exclude_from_axes", False),
-            subgenre_hints=", ".join(tm.get("subgenre_hints", [])) or "(none)",
-            register=tm.get("register", "neutral"),
-            sexual_explicitness=tm.get("sexual_explicitness", "(none)"),
-            sexual_function=tm.get("sexual_function", "(none)"),
-            consent_status=tm.get("consent_status", "(not_applicable)"),
-            axis_hint=tm.get("axis_hint", "(none)"),
-            snippets="(none)",
+            topic_metadata=tm,
+            snippets_block="(none)",
+            prompt_version=args.prompt_version,
         )
         print("=== SYSTEM PROMPT ===")
-        print(TAXONOMY_ZEROSHOT_SYSTEM_PROMPT)
+        print(system_prompt)
         print("\n=== USER PROMPT (topic", first_tid, ") ===")
         print(user_prompt)
         raise SystemExit(0)
@@ -1382,6 +936,7 @@ if __name__ == "__main__":
         model_name=args.model_name,
         temperature=args.temperature,
         max_new_tokens=args.max_tokens,
+        prompt_version=args.prompt_version,
         load_model_for_snippets=not args.no_snippets,
         base_dir=args.base_dir,
         embedding_model=args.embedding_model,

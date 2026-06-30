@@ -113,7 +113,33 @@ SUBGENRE_PRIMARY_TO_TAXONOMY = {
 CONTENT_TYPE_TO_TAXONOMY = {
     "noise": "noise",
     "paratext": "noise",
+    "paratext_or_boilerplate": "noise",
+    "character_name_cluster": "noise",
     "discourse": "9.1",
+}
+
+MECHANIC_TAG_ENUM = [
+    "protective_care",
+    "possessive_control",
+    "external_threat",
+    "sex_without_commitment",
+    "post_sex_bonding",
+    "pregnancy_future",
+    "paternity_secret",
+    "trust_repair",
+    "secret_misunderstanding",
+    "economic_power",
+    "professional_hierarchy",
+    "domestic_care",
+    "paranormal_instinct",
+    "forceful_intensity",
+    "ambiguous_consent_watchlist",
+    "reputation_risk",
+    "series_world",
+]
+
+FORCEFUL_INTENSITY_TERMS = {
+    "forceful", "pounded", "pinned", "thrust", "grip", "gripped",
 }
 
 
@@ -189,11 +215,15 @@ def try_pre_route_taxonomy(
 
     if topic_metadata.get("is_noise"):
         return _make_result(
-            topic_id, "noise", None, True, "high",
+            topic_id, "noise", None, True, 0.9,
             "Stage 08 marked topic as noise (is_noise=true).",
             by_id,
             exclude_from_axes=True,
             pre_routed=True,
+            content_type="noise",
+            use_in_macro_axes=False,
+            use_in_theory_watchlist=False,
+            noise_reason="stage08_is_noise",
         )
 
     if topic_metadata.get("exclude_from_axes"):
@@ -205,28 +235,43 @@ def try_pre_route_taxonomy(
             pass
         elif content_type in CONTENT_TYPE_TO_TAXONOMY:
             main_id = CONTENT_TYPE_TO_TAXONOMY[content_type]
+            is_noise = main_id == "noise"
+            ct_out = content_type
+            if content_type == "paratext":
+                ct_out = "paratext_or_boilerplate"
             return _make_result(
-                topic_id, main_id, None, main_id == "noise", "high",
+                topic_id, main_id, None, is_noise, 0.9,
                 f"exclude_from_axes with content_type={content_type}.",
                 by_id,
                 exclude_from_axes=True,
                 pre_routed=True,
+                content_type=ct_out,
+                use_in_macro_axes=False,
+                use_in_theory_watchlist=not is_noise,
+                noise_reason=f"stage08_{content_type}" if is_noise else None,
             )
         elif "narrative_style" in primary:
             return _make_result(
-                topic_id, "9.1", None, False, "high",
+                topic_id, "9.1", None, False, 0.85,
                 "Stage 08 primary narrative_style → dialogue delivery discourse.",
                 by_id,
                 exclude_from_axes=False,
                 pre_routed=True,
+                content_type="discourse",
+                use_in_macro_axes=False,
+                use_in_theory_watchlist=True,
             )
         elif "nonfiction_or_technical" in primary:
             return _make_result(
-                topic_id, "noise", None, True, "high",
+                topic_id, "noise", None, True, 0.9,
                 "Nonfiction/technical primary category.",
                 by_id,
                 exclude_from_axes=True,
                 pre_routed=True,
+                content_type="paratext_or_boilerplate",
+                use_in_macro_axes=False,
+                use_in_theory_watchlist=False,
+                noise_reason="nonfiction_or_technical",
             )
 
     content_type = topic_metadata.get("content_type", "")
@@ -237,31 +282,41 @@ def try_pre_route_taxonomy(
         for tag, tid in SUBGENRE_PRIMARY_TO_TAXONOMY.items():
             if tag in primary:
                 return _make_result(
-                    topic_id, tid, None, False, "high",
+                    topic_id, tid, None, False, 0.85,
                     f"Subgenre marker ({tag}).",
                     by_id,
                     exclude_from_axes=False,
                     pre_routed=True,
+                    content_type="subgenre_marker",
+                    use_in_macro_axes=True,
+                    use_in_theory_watchlist=True,
+                    mechanic_tags=["paranormal_instinct"] if tid == "10.1" else [],
                 )
 
     for tag, tid in SUBGENRE_PRIMARY_TO_TAXONOMY.items():
         if tag in primary and content_type != "scene":
             return _make_result(
-                topic_id, tid, None, False, "medium",
+                topic_id, tid, None, False, 0.6,
                 f"Primary {tag} without clear scene beat.",
                 by_id,
                 exclude_from_axes=False,
                 pre_routed=True,
+                content_type="subgenre_marker",
+                use_in_macro_axes=True,
+                use_in_theory_watchlist=True,
             )
 
     if "appearance_presentation" in primary or "activity:dressing" in secondary:
         sec_id = "8.3" if any(t in _text_blob(topic_metadata) for t in ("dress", "outfit", "gown", "clothes")) else None
         return _make_result(
-            topic_id, "1.6", sec_id, False, "high",
+            topic_id, "1.6", sec_id, False, 0.85,
             "Appearance/grooming or activity:dressing from Stage 08.",
             by_id,
             exclude_from_axes=False,
             pre_routed=True,
+            content_type="scene",
+            use_in_macro_axes=True,
+            use_in_theory_watchlist=True,
         )
 
     return None
@@ -517,6 +572,21 @@ def apply_domain_heuristics(
             result["secondary_category_id"] = main_id if main_id != "4.6" else secondary_id
             result["main_category_id"] = "4.6"
         main_id = result["main_category_id"]
+        _append_mechanic_tag(result, "protective_care")
+
+  # Forceful explicit sex without coercion evidence → mechanic tag, not 7.2/7.4
+    if main_id == "2.3" and consent_status not in {"coercion_watchlist", "nonconsent_explicit"}:
+        if FORCEFUL_INTENSITY_TERMS.intersection(tokens) or FORCEFUL_INTENSITY_TERMS.intersection(blob_tokens):
+            _append_mechanic_tag(result, "forceful_intensity")
+    if main_id in {"7.3", "7.2"} and protective_hit and not has_violence and not jealousy_hit:
+        _append_mechanic_tag(result, "external_threat")
+
+    if "pregnant" in blob or "pregnancy" in blob or "baby" in blob:
+        if main_id == "5.1":
+            _append_mechanic_tag(result, "pregnancy_future")
+
+    if ELITE_WORK_TERMS.intersection(tokens) and main_id in {"6.1", "6.4"}:
+        _append_mechanic_tag(result, "economic_power")
 
     if result.get("main_category_id") not in valid_ids:
         result["main_category_id"] = "4.2"
@@ -525,12 +595,25 @@ def apply_domain_heuristics(
 
     cfg = load_taxonomy_config(path)
     exclude_ids = set(cfg.get("exclude_from_axes_ids", []))
-    if result.get("main_category_id") in exclude_ids or topic_metadata.get("exclude_from_axes"):
+    if result.get("use_in_macro_axes") is not None:
+        result["exclude_from_axes"] = not bool(result.get("use_in_macro_axes"))
+    elif result.get("main_category_id") in exclude_ids or topic_metadata.get("exclude_from_axes"):
         result["exclude_from_axes"] = True
     else:
         result.setdefault("exclude_from_axes", False)
 
     return result
+
+
+def _append_mechanic_tag(result: Dict[str, Any], tag: str) -> None:
+    if tag not in MECHANIC_TAG_ENUM:
+        return
+    tags = result.get("mechanic_tags")
+    if not isinstance(tags, list):
+        tags = []
+    if tag not in tags and len(tags) < 5:
+        tags.append(tag)
+    result["mechanic_tags"] = tags
 
 
 def enrich_with_category_names(
@@ -608,22 +691,54 @@ def _make_result(
     main_id: str,
     secondary_id: Optional[str],
     is_noise: bool,
-    confidence: str,
+    confidence: Any,
     rationale: str,
     by_id: Dict[str, Dict[str, str]],
     *,
     exclude_from_axes: bool,
     pre_routed: bool,
+    content_type: str = "scene",
+    use_in_macro_axes: Optional[bool] = None,
+    use_in_theory_watchlist: Optional[bool] = None,
+    noise_reason: Optional[str] = None,
+    mechanic_tags: Optional[List[str]] = None,
+    evidence_quality: str = "medium",
 ) -> Dict[str, Any]:
+    from src.stage09_category_mapping.stage2_theory_driven_categories.prompts.taxonomy_mapping_schema import (
+        band_to_confidence,
+        confidence_to_band,
+    )
+
+    if isinstance(confidence, str):
+        conf_num = band_to_confidence(confidence.lower())
+        conf_band = confidence.lower() if confidence.lower() in {"low", "medium", "high"} else confidence_to_band(conf_num)
+    else:
+        try:
+            conf_num = max(0.0, min(1.0, float(confidence)))
+        except (TypeError, ValueError):
+            conf_num = 0.6
+        conf_band = confidence_to_band(conf_num)
+
+    macro = use_in_macro_axes if use_in_macro_axes is not None else (not exclude_from_axes and not is_noise)
+    watchlist = use_in_theory_watchlist if use_in_theory_watchlist is not None else (not is_noise)
+
     result: Dict[str, Any] = {
         "topic_id": topic_id,
+        "content_type": content_type,
         "main_category_id": main_id,
         "secondary_category_id": secondary_id,
         "other_plausible_ids": [],
+        "mechanic_tags": list(mechanic_tags or []),
         "is_noise": is_noise,
-        "confidence": confidence,
+        "use_in_macro_axes": macro,
+        "use_in_theory_watchlist": watchlist,
+        "noise_reason": noise_reason,
+        "confidence": conf_num,
+        "confidence_band": conf_band,
+        "evidence_quality": evidence_quality,
+        "uncertainty_reason": None,
         "rationale": rationale,
-        "exclude_from_axes": exclude_from_axes,
+        "exclude_from_axes": not macro,
         "pre_routed": pre_routed,
     }
     main_node = by_id.get(main_id, {})

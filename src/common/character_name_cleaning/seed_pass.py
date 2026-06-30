@@ -33,19 +33,9 @@ def clean_topic_words(
         if not w_lower:
             continue
 
-        if is_person_topic_word(
-            word,
-            topic_person_tokens=topic_person_tokens,
-            nlp=nlp,
-            lexicon=lexicon,
-        ):
+        if w_lower in topic_person_tokens:
             removed.append(w_lower)
-            reason = (
-                "ner_snippet_context"
-                if w_lower in topic_person_tokens
-                else "ner_probe"
-            )
-            audit.append({"word": w_lower, "reason": reason})
+            audit.append({"word": w_lower, "reason": "ner_person"})
             continue
 
         cleaned.append(dict(item))

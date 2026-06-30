@@ -4,17 +4,20 @@ Zero-shot classification of BERTopic topics to the Romance Corpus Topic Taxonomy
 
 ## Status
 
-✅ **Implemented** — Zero-shot taxonomy classification module ready.
+✅ **Implemented** — Zero-shot taxonomy classification with v2 prompts (default), strict JSON schema, and expanded output fields.
 
 ## Usage
 
-### Basic Classification
+### Basic Classification (v2 default)
 
 ```bash
 python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
   --labels-json results/stage08_llm_labeling/labels_pos_openrouter_*.json \
   --output-json results/stage09_category_mapping/stage2_theory_driven_categories/taxonomy_mappings.json \
-  --model-name mistralai/Mistral-Nemo-Instruct-2407
+  --model-name anthropic/claude-sonnet-4.6 \
+  --prompt-version v2 \
+  --temperature 0.0 \
+  --max-tokens 700
 ```
 
 ### With Snippet Extraction (Recommended)
