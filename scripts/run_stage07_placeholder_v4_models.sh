@@ -43,6 +43,7 @@ _env_calls = __import__("os").environ.get("CALLS", "")
 CALLS = [int(c.strip()) for c in _env_calls.split(",") if c.strip()] if _env_calls else _default_calls
 RULES_CONFIG = ROOT / "configs/topic_posthoc_rules.yaml"
 OUT_ROOT = ROOT / "results/stage07_topic_quality"
+NAME_CLEANING_ROOT = ROOT / "results/stage06_name_cleaning"
 
 paths_cfg = load_config(ROOT / "configs/paths_stage03_fit_v3.yaml")
 inputs = paths_cfg["inputs"]
@@ -88,6 +89,11 @@ for call in CALLS:
     topic_model = BERTopic.load(str(model_dir))
     topic_info_path = call_dir / "topic_info.csv"
     sync_topic_info_csv(topic_model, topic_info_path)
+    name_cleaning_csv = (
+        NAME_CLEANING_ROOT
+        / f"placeholder_v4_call{call}"
+        / "character_name_ratio_by_topic.csv"
+    )
     quality_df = build_topic_quality_table(
         topic_model,
         docs_tokens=tokens,
@@ -98,6 +104,7 @@ for call in CALLS:
         top_k=10,
         topic_info_path=topic_info_path,
         rules_config=RULES_CONFIG,
+        name_cleaning_csv=name_cleaning_csv if name_cleaning_csv.is_file() else None,
     )
 
     model_tag = f"placeholder_v4_call{call}"

@@ -5,7 +5,6 @@ from src.common.topic_posthoc.rules import (
     classify_topic_row,
     classify_topics_from_info,
     load_rules_config,
-    rule_character_name_cluster,
     write_posthoc_artifacts,
 )
 from src.common.topic_posthoc.topic_info_sync import sync_topic_info_csv
@@ -14,7 +13,6 @@ __all__ = [
     "PosthocRulesConfig",
     "classify_topics_from_info",
     "load_rules_config",
-    "rule_character_name_cluster",
     "sync_topic_info_csv",
     "write_posthoc_artifacts",
 ]

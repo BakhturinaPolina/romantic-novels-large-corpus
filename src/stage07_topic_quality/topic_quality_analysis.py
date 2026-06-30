@@ -25,6 +25,124 @@ from src.stage06_topic_exploration.explore_retrained_model import (
 logger = LOGGER
 
 
+def merge_name_cleaning_flags(
+    quality_df: pd.DataFrame,
+    ratio_csv: Path,
+) -> pd.DataFrame:
+    """Merge character-name cleaning flags from ratio CSV into quality table."""
+    if not Path(ratio_csv).is_file():
+        logger.warning("Name cleaning ratio CSV not found: %s", ratio_csv)
+        return quality_df
+
+    ratio_df = pd.read_csv(ratio_csv)
+    if "Topic" not in ratio_df.columns:
+        logger.warning("Name cleaning CSV missing Topic column: %s", ratio_csv)
+        return quality_df
+
+    merge_cols = [
+        "Topic",
+        "character_name_ratio",
+        "content_type",
+        "posthoc_flags",
+        "posthoc_reason",
+        "exclude_from_axes",
+        "name_cleaned",
+        "suggested_action",
+    ]
+    merge_cols = [c for c in merge_cols if c in ratio_df.columns]
+    name_subset = ratio_df[merge_cols].copy()
+    name_subset = name_subset[name_subset["Topic"] != -1]
+
+    merged = quality_df.merge(name_subset, on="Topic", how="left", suffixes=("_old", ""))
+
+    for col in ("content_type", "posthoc_flags", "posthoc_reason", "exclude_from_axes", "suggested_action"):
+        old_col = f"{col}_old"
+        if old_col in merged.columns:
+            if col == "posthoc_flags":
+                def _combine_flags(row: pd.Series) -> list:
+                    old = row.get(old_col)
+                    new = row.get(col)
+                    old_list = old if isinstance(old, list) else []
+                    new_list = new if isinstance(new, list) else []
+                    if isinstance(old, str) and old:
+                        old_list = [p for p in old.split("|") if p]
+                    if isinstance(new, str) and new:
+                        new_list = [p for p in new.split("|") if p]
+                    combined: list[str] = []
+                    for f in list(old_list) + list(new_list):
+                        if f and f not in combined:
+                            combined.append(f)
+                    return combined
+
+                merged[col] = merged.apply(_combine_flags, axis=1)
+            elif col == "posthoc_reason":
+                merged[col] = merged.apply(
+                    lambda r: ";".join(
+                        p
+                        for p in (str(r.get(f"{col}_old", "") or ""), str(r.get(col, "") or ""))
+                        if p
+                    ),
+                    axis=1,
+                )
+            elif col == "exclude_from_axes":
+                merged[col] = merged[old_col].fillna(False) | merged[col].fillna(False)
+            else:
+                merged[col] = merged[col].fillna(merged[old_col])
+            merged.drop(columns=[old_col], inplace=True)
+
+    if "name_cleaned" in merged.columns:
+        merged["name_cleaned"] = merged["name_cleaned"].fillna(False)
+    if "character_name_ratio" in merged.columns:
+        merged["character_name_ratio"] = merged["character_name_ratio"].fillna(0.0)
+
+    def _combined_reason(row: pd.Series) -> str:
+        parts = []
+        for key in ("noise_reason", "posthoc_reason"):
+            val = str(row.get(key, "") or "").strip()
+            if val:
+                parts.extend(p for p in val.split(";") if p)
+        seen: set[str] = set()
+        deduped = []
+        for p in parts:
+            if p not in seen:
+                seen.add(p)
+                deduped.append(p)
+        return ";".join(deduped)
+
+    merged["noise_reason"] = merged.apply(_combined_reason, axis=1)
+    merged["noise_candidate"] = (
+        merged["noise_candidate"].astype(bool)
+        | merged["exclude_from_axes"].astype(bool)
+    )
+
+    def _inspection_label(row: pd.Series) -> str:
+        base_name = str(row.get("Name", "") or "").strip()
+        posthoc_flags = row.get("posthoc_flags")
+        if isinstance(posthoc_flags, list):
+            noise_rules = [f for f in posthoc_flags if f]
+        elif isinstance(posthoc_flags, str) and posthoc_flags:
+            noise_rules = [p for p in posthoc_flags.split("|") if p]
+        else:
+            noise_rules = []
+        if noise_rules and row.get("suggested_action") == NOISE_ACTION:
+            rule_tag = noise_rules[0]
+            return f"[NOISE:{rule_tag}] {base_name}"
+        if row.get("name_cleaned"):
+            return f"[NAME_CLEANED] {base_name}"
+        reasons = row.get("noise_reason", "")
+        if reasons:
+            return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
+        return base_name
+
+    merged["inspection_label"] = merged.apply(_inspection_label, axis=1)
+    n_exclude = int(merged["exclude_from_axes"].sum())
+    logger.info(
+        "[NAME_CLEANING] merged into quality table: %d topics exclude_from_axes",
+        n_exclude,
+    )
+    return merged
+
+
 def merge_posthoc_flags(
     quality_df: pd.DataFrame,
     *,
@@ -79,8 +197,6 @@ def merge_posthoc_flags(
             noise_rules = []
         if noise_rules and row.get("suggested_action") == NOISE_ACTION:
             rule_tag = noise_rules[0]
-            if rule_tag == "character_name_cluster":
-                return f"[CHARACTER_NAME] {base_name}"
             return f"[NOISE:{rule_tag}] {base_name}"
         reasons = row.get("noise_reason", "")
         if reasons:
@@ -214,6 +330,7 @@ def build_topic_quality_table(
     *,
     topic_info_path: Path | None = None,
     rules_config: Path | None = None,
+    name_cleaning_csv: Path | None = None,
 ) -> pd.DataFrame:
     """
     Combine size, POS stats, and POS coherence; flag candidate noisy topics.
@@ -231,6 +348,7 @@ def build_topic_quality_table(
         top_k: Number of top words per topic to consider
         topic_info_path: Optional path to topic_info.csv for post-hoc rule merge
         rules_config: Optional path to topic_posthoc_rules.yaml
+        name_cleaning_csv: Optional path to character_name_ratio_by_topic.csv
         
     Returns:
         DataFrame with topic quality metrics and noise candidate flags
@@ -305,6 +423,9 @@ def build_topic_quality_table(
                 topic_info_path=info_source,
                 rules_config=rules_config,
             )
+
+        if name_cleaning_csv is not None:
+            df = merge_name_cleaning_flags(df, name_cleaning_csv)
 
         # Sort for easier EDA
         df.sort_values(

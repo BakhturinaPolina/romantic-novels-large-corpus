@@ -2,7 +2,7 @@
 # See configs/placeholder_v4_frozen_call73.yaml and results/reports/placeholder_v4_call73_analysis_strategy.md
 
 frozen_call: 73
-prompt_version: v2_c8_character_names
+prompt_version: v2_s1_snippets_first
 
 openrouter:
   model: anthropic/claude-sonnet-4.6
@@ -22,7 +22,9 @@ labeling:
 paths:
   compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_73
   enriched_model: results/experiments/placeholder_v4_models/final_compare/call_73/model_compare_enriched
-  topics_json: results/stage06_topic_exploration/placeholder_v4_call73/topics_all_representations_placeholder_v4_call.json
+  name_cleaning_dir: results/stage06_name_cleaning/placeholder_v4_call73
+  topics_json: results/stage06_name_cleaning/placeholder_v4_call73/cleaned_topics_all_representations.json
+  representative_docs_csv: results/stage06_name_cleaning/placeholder_v4_call73/cleaned_representative_docs.csv
   quality_csv: results/stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv
   output_dir: results/stage08_llm_labeling/placeholder_v4_call73
 

@@ -7,7 +7,6 @@ import json
 import logging
 import re
 from dataclasses import dataclass, field
-from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -78,36 +77,7 @@ class PosthocRulesConfig:
         "multilingual_artifact",
         "publisher_boilerplate",
         "tiny_topic",
-        "character_name_cluster",
     )
-    character_name_min_hits: int = 3
-    character_name_top_n: int = 10
-    character_name_min_top5_hits: int = 2
-    character_name_min_token_len: int = 4
-    character_name_exclude_english: bool = True
-    character_name_scene_blocklist: tuple[str, ...] = (
-        "door",
-        "car",
-        "room",
-        "open",
-        "opened",
-        "coffee",
-        "phone",
-        "hand",
-        "hands",
-        "eyes",
-        "hair",
-        "know",
-        "kiss",
-        "kissed",
-        "lips",
-        "love",
-        "bed",
-        "voice",
-        "look",
-        "looked",
-    )
-    character_name_stoplist_path: Path | None = None
     publisher_name_keywords: tuple[str, ...] = (
         "chapter",
         "book",
@@ -166,24 +136,6 @@ def load_rules_config(config_path: Path | None = None) -> PosthocRulesConfig:
     if sub := raw.get("subgenre_marker", {}):
         if kws := sub.get("keywords"):
             cfg.subgenre_keywords = tuple(str(k).lower() for k in kws)
-    if char := raw.get("character_name_cluster", {}):
-        cfg.character_name_min_hits = int(
-            char.get("min_hits", cfg.character_name_min_hits)
-        )
-        cfg.character_name_top_n = int(char.get("top_n", cfg.character_name_top_n))
-        cfg.character_name_min_top5_hits = int(
-            char.get("min_top5_hits", cfg.character_name_min_top5_hits)
-        )
-        cfg.character_name_min_token_len = int(
-            char.get("min_token_len", cfg.character_name_min_token_len)
-        )
-        cfg.character_name_exclude_english = bool(
-            char.get("exclude_english", cfg.character_name_exclude_english)
-        )
-        if block := char.get("scene_token_blocklist"):
-            cfg.character_name_scene_blocklist = tuple(str(w).lower() for w in block)
-        if path := char.get("stoplist_path"):
-            cfg.character_name_stoplist_path = resolve_path(Path(str(path)))
     if noise := raw.get("noise_actions"):
         cfg.noise_rule_ids = tuple(str(n) for n in noise)
     return _finalize_config(cfg)
@@ -258,113 +210,6 @@ def _repr_docs_text(row: pd.Series) -> str:
     return text
 
 
-_TOKEN_RE = re.compile(r"[A-Za-z][A-Za-z'-]*")
-
-
-@lru_cache(maxsize=4)
-def _load_character_name_stoplist_cached(stoplist_path: str) -> frozenset[str]:
-    """Load token-level entries from the Stage02 character-name stoplist."""
-    path = Path(stoplist_path)
-    if not path.exists():
-        LOGGER.warning("Character-name stoplist not found at %s", path)
-        return frozenset()
-    tokens: set[str] = set()
-    with open(path, "r", encoding="utf-8", errors="ignore") as f:
-        for line in f:
-            s = line.strip()
-            if not s or s.startswith("#"):
-                continue
-            for match in _TOKEN_RE.finditer(s.lower()):
-                tok = match.group(0).strip("'-")
-                if len(tok) >= 2:
-                    tokens.add(tok)
-    return frozenset(tokens)
-
-
-def _character_name_stoplist(cfg: PosthocRulesConfig) -> frozenset[str]:
-    if cfg.character_name_stoplist_path is not None:
-        path = cfg.character_name_stoplist_path
-    else:
-        try:
-            paths_cfg = yaml.safe_load(
-                open(resolve_path(Path("configs/paths.yaml")), encoding="utf-8")
-            ) or {}
-            raw_path = paths_cfg.get("inputs", {}).get("custom_stoplist")
-            if not raw_path:
-                return frozenset()
-            path = resolve_path(Path(raw_path))
-        except OSError:
-            return frozenset()
-    return _load_character_name_stoplist_cached(str(path))
-
-
-def _stoplist_hits(words: list[str], stoplist: frozenset[str]) -> list[str]:
-    return [w for w in words if w in stoplist]
-
-
-@lru_cache(maxsize=1)
-def _english_stopwords() -> frozenset[str]:
-    try:
-        from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
-
-        return frozenset(w.lower() for w in ENGLISH_STOP_WORDS)
-    except ImportError:
-        return frozenset()
-
-
-def _filtered_name_stoplist_hits(
-    words: list[str],
-    stoplist: frozenset[str],
-    cfg: PosthocRulesConfig,
-) -> list[str]:
-    """Stoplist hits that pass length / English / scene-blocklist filters."""
-    block = set(cfg.character_name_scene_blocklist)
-    english = _english_stopwords() if cfg.character_name_exclude_english else frozenset()
-    hits: list[str] = []
-    for w in words:
-        if w in block or len(w) < cfg.character_name_min_token_len:
-            continue
-        if english and w in english:
-            continue
-        if w in stoplist:
-            hits.append(w)
-    return hits
-
-
-_NAME_MORPH_SUFFIXES = ("ed", "ing", "ly", "ness", "ment", "tion", "ship")
-
-
-def _name_label_tokens(row: pd.Series) -> list[str]:
-    name = str(row.get("Name", "") or "")
-    if "_" not in name:
-        return []
-    raw = name.split("_", 1)[1].split("_")[:4]
-    shaped: list[str] = []
-    for t in raw:
-        if any(t.endswith(s) for s in _NAME_MORPH_SUFFIXES):
-            continue
-        shaped.append(t)
-    return shaped
-
-
-def rule_character_name_cluster(row: pd.Series, cfg: PosthocRulesConfig) -> bool:
-    """Flag topics whose BERTopic Name label is dominated by character-name tokens."""
-    stoplist = _character_name_stoplist(cfg)
-    if not stoplist:
-        return False
-    label_tokens = _name_label_tokens(row)
-    if len(label_tokens) < 4:
-        return False
-    block = set(cfg.character_name_scene_blocklist)
-    if any(t in block for t in label_tokens):
-        return False
-    hits = _filtered_name_stoplist_hits(label_tokens, stoplist, cfg)
-    if len(hits) != 4:
-        return False
-    long_hits = [h for h in hits if len(h) >= cfg.character_name_min_token_len + 1]
-    return len(long_hits) >= 2
-
-
 def _keyword_hit_ratio(words: list[str], keywords: tuple[str, ...]) -> float:
     if not words:
         return 0.0
@@ -422,8 +267,6 @@ def rule_subgenre_marker(row: pd.Series, cfg: PosthocRulesConfig) -> bool:
 def _content_type_for_flags(flags: list[str]) -> str:
     if not flags:
         return "scene"
-    if "character_name_cluster" in flags:
-        return "character_name"
     if "subgenre_marker" in flags:
         return "subgenre_marker"
     if "procedural_transition" in flags:
@@ -472,8 +315,6 @@ def classify_topic_row(row: pd.Series, cfg: PosthocRulesConfig) -> dict[str, Any
         flags.append("procedural_transition")
     if rule_subgenre_marker(row, cfg):
         flags.append("subgenre_marker")
-    if rule_character_name_cluster(row, cfg):
-        flags.append("character_name_cluster")
 
     action = _suggested_action(flags, cfg)
     exclude = action == NOISE_ACTION

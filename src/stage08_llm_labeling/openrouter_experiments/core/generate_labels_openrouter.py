@@ -47,6 +47,11 @@ from src.stage08_llm_labeling.prompts.v1_scene_only import (
     ROMANCE_AWARE_USER_PROMPT,
 )
 
+from src.common.character_name_cleaning import clean_snippet_text, load_lexicon
+from src.common.character_name_cleaning.ner_pass import get_spacy_nlp
+
+_CLEANING_LEXICON = None
+
 DEFAULT_RATE_LIMIT_DELAY_S = 4.0
 
 
@@ -282,48 +287,22 @@ def extract_pos_cues(keywords: list[str]) -> str:
     return ""
 
 
+def _get_cleaning_lexicon():
+    global _CLEANING_LEXICON
+    if _CLEANING_LEXICON is None:
+        _CLEANING_LEXICON = load_lexicon()
+    return _CLEANING_LEXICON
+
+
 def anonymize_names(text: str, nlp) -> str:
     """
-    Anonymize person and pet names in text by replacing them with generic role tokens.
-    
-    Uses spaCy NER to detect PERSON entities and replaces them with "[NAME]".
-    This helps prevent the model from overfitting on specific character names in snippets.
-    
-    Args:
-        text: Input text string
-        nlp: spaCy language model (must have NER enabled)
-        
-    Returns:
-        Text with person/pet names replaced by generic tokens
+    Anonymize person names via seed lexicon + spaCy NER (replaces with [person]).
     """
-    if not text or not nlp:
+    if not text:
         return text
-    
-    try:
-        # Check if NER is enabled
-        if "ner" not in nlp.pipe_names:
-            LOGGER.debug("NER not enabled in spaCy model, skipping anonymization")
-            return text
-        
-        doc = nlp(text)
-        if not doc.ents:
-            return text
-        
-        result = text
-        # Process entities in reverse order to preserve character indices
-        # (process from end to start to avoid index shifting issues)
-        entities = sorted(doc.ents, key=lambda e: e.start_char, reverse=True)
-        
-        for ent in entities:
-            if ent.label_ in {"PERSON"}:
-                # Replace with generic token
-                # Could be fancier (e.g., detect role from context), but [NAME] is sufficient
-                result = result[:ent.start_char] + "[NAME]" + result[ent.end_char:]
-        
-        return result
-    except Exception as e:
-        LOGGER.warning("Error anonymizing names in text: %s", e)
-        return text  # Return original text on error
+    lexicon = _get_cleaning_lexicon()
+    nlp = nlp or get_spacy_nlp()
+    return clean_snippet_text(text, lexicon, nlp=nlp, run_ner=nlp is not None)
 
 
 def format_snippets(

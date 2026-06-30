@@ -132,6 +132,12 @@ def parse_args() -> argparse.Namespace:
         help="YAML config for post-hoc topic classification rules",
     )
     parser.add_argument(
+        "--name-cleaning-csv",
+        type=Path,
+        default=None,
+        help="character_name_ratio_by_topic.csv from name cleaning pipeline",
+    )
+    parser.add_argument(
         "--apply-labels",
         action="store_true",
         help="Apply inspection labels to noisy topics in the model (optional)",
@@ -227,6 +233,7 @@ def main() -> None:
             min_pos_coherence=args.min_pos_coherence,
             top_k=args.top_k,
             rules_config=args.rules_config,
+            name_cleaning_csv=args.name_cleaning_csv,
         )
 
     logger.info("Total topics (excl. -1): %d", len(quality_df))
