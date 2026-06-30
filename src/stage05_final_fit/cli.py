@@ -143,6 +143,64 @@ def compare(
     click.echo(f"compare outputs: {out}")
 
 
+@cli.command("infer-corpus")
+@click.option(
+    "--model-dir",
+    type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="Compare-fit call directory containing model_compare/ (or model_compare itself).",
+)
+@click.option("--run-id", type=str, required=True)
+@click.option(
+    "--paths-config",
+    type=click.Path(exists=True, path_type=Path),
+    default="configs/paths_stage03_fit_v3.yaml",
+    show_default=True,
+)
+@click.option(
+    "--config",
+    "config_path",
+    type=click.Path(exists=True, path_type=Path),
+    default="configs/train_v4_l12_final_call73.yaml",
+    show_default=True,
+)
+@click.option(
+    "--splits",
+    type=str,
+    default="train,val,test",
+    show_default=True,
+    help="Comma-separated splits to transform.",
+)
+@click.option("--batch-size", type=int, default=8192, show_default=True)
+@click.option("--chunk-size", type=int, default=50_000, show_default=True)
+@click.option("--output-dir", type=click.Path(path_type=Path), default=None)
+def infer_corpus(
+    model_dir: Path,
+    run_id: str,
+    paths_config: Path,
+    config_path: Path,
+    splits: str,
+    batch_size: int,
+    chunk_size: int,
+    output_dir: Path | None,
+) -> None:
+    """Chunked full-corpus transform (train + val + test) to parquet."""
+    from src.stage05_final_fit.full_corpus_infer import run_full_corpus_infer
+
+    split_tuple = tuple(s.strip() for s in splits.split(",") if s.strip())
+    out = run_full_corpus_infer(
+        model_dir=model_dir,
+        run_id=run_id,
+        paths_config=paths_config,
+        train_config=config_path,
+        splits=split_tuple,
+        batch_size=batch_size,
+        chunk_size=chunk_size,
+        output_dir=output_dir,
+    )
+    click.echo(f"full-corpus infer outputs: {out}")
+
+
 @cli.command("pareto")
 @click.option(
     "--selection-config",

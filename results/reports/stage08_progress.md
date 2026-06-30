@@ -16,7 +16,7 @@
 | Representative snippets | Done | CSV fallback from compare-fit `representative_docs.csv` (enriched model omits `representative_docs_`) |
 | Model shootout (5-topic pilots) | **Done** | 14 models; **7 top picks re-run with snippets** (2026-06-25) |
 | Model shootout (20-topic pilots) | **Done** | opus-4.6, sonnet-4.6, mistral-nemo (snippet-aware, 2026-06-25) |
-| Full 330-topic production run | **Not started** | Model locked: **claude-sonnet-4.6** (~$6.11 est.) |
+| Full production run (322 topics) | **Done** | `v2_s1_snippets_first` @ temp=0 — 2026-06-25, ~62 min, $7.22 API |
 | Stage09 pre-router | Not started | |
 
 ## Design decisions (locked)
@@ -111,12 +111,13 @@ JSONs: `labels_pos_openrouter_{opus-4.6,claude-sonnet-4.6,mistral-nemo}_*_limit2
 | Per-run API usage + cost estimate in CLI summary | Done |
 | v2 prompts + natural-label voice | Done (uncommitted prompt tweaks) |
 
-**Production model (locked 2026-06-25):** `anthropic/claude-sonnet-4.6` — [`stage08_production_model_decision_call73.md`](stage08_production_model_decision_call73.md).
+**Production (2026-06-25):** Sonnet + `v2_s1_snippets_first` @ temp=0. Output: `labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v2_s1_snippets_first.json` (322 topics). Content mix: scene 240, discourse 60, noise 12, subgenre_marker 6, character_name 4. Labels JSON-only (`--no-integrate`).
 
 ## Next actions
 
-1. Run full 330: `bash scripts/run_stage08_placeholder_v4_call.sh 73`
-2. Stage09 pre-router (minimal)
+1. Manual QA: discourse/noise/paratext tail (~22% non-scene); spot-check `character_name` topics (4)
+2. Optional: integrate labels into enriched BERTopic model (re-run without `--no-integrate`)
+3. Stage09 pre-router (minimal)
 
 ## Logs
 

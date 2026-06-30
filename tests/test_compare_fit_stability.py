@@ -21,6 +21,17 @@ class CompareFitMinDfCoercionTests(unittest.TestCase):
         )
 
 
+class CompareFitProbabilitiesFlagTests(unittest.TestCase):
+    def test_read_calculate_probabilities_default_false(self) -> None:
+        self.assertFalse(compare_fit._read_calculate_probabilities({}))
+
+    def test_read_calculate_probabilities_from_config(self) -> None:
+        cfg = {"bertopic": {"calculate_probabilities": True}}
+        self.assertTrue(compare_fit._read_calculate_probabilities(cfg))
+        cfg_false = {"bertopic": {"calculate_probabilities": False}}
+        self.assertFalse(compare_fit._read_calculate_probabilities(cfg_false))
+
+
 class CompareFitStabilityTests(unittest.TestCase):
     def test_run_stability_check_pass(self) -> None:
         with patch.object(compare_fit, "_fit_bertopic", return_value=MagicMock()):

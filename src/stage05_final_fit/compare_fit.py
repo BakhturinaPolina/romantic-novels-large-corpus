@@ -130,6 +130,11 @@ def stage_timer(name: str):
         LOGGER.info("< %s | done in %.1fs", name, time.perf_counter() - start)
 
 
+def _read_calculate_probabilities(train_cfg: dict[str, Any]) -> bool:
+    """Read BERTopic soft-assignment flag from train config (default false)."""
+    return bool((train_cfg.get("bertopic") or {}).get("calculate_probabilities", False))
+
+
 def _read_trial_hyperparameters(
     trials_csv: Path, bo_call: int
 ) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -598,6 +603,8 @@ def run_compare_fit(
         LOGGER.info("[COMPARE-FIT] reduce_outliers enabled (post-fit export)")
     if save_model:
         LOGGER.info("[COMPARE-FIT] save_model enabled (BERTopic native artifact for holdout)")
+    calculate_probabilities = _read_calculate_probabilities(train_cfg)
+    LOGGER.info("[COMPARE-FIT] calculate_probabilities=%s", calculate_probabilities)
 
     inputs_cfg = paths_cfg.get("inputs", {})
 
@@ -736,7 +743,7 @@ def run_compare_fit(
         dataset_as_list_of_strings=fit_docs,
         dataset_as_list_of_lists=None,
         verbose=False,
-        calculate_probabilities=False,
+        calculate_probabilities=calculate_probabilities,
         topic_filter_dictionary=fit_dictionary,
     )
 
