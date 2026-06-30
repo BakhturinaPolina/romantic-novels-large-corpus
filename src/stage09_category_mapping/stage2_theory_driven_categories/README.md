@@ -120,8 +120,10 @@ python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.a
 
 ## Notes
 
-- Taxonomy definition: `configs/romance_corpus_taxonomy_v2.yaml` (loaded via `src/stage09_category_mapping/taxonomy_v2.py`)
-- **Everyday Intimacy & Emotional Safety**: composite axis for courtship (4.1), bonding (4.2), reassurance (4.6), non-explicit affection (2.2), and setting beats (8.1/8.2). Stage 08 `intimacy:*` secondary subtags help pre-route mappings; see Stage 08 v2 prompts.
+- Taxonomy definition: `configs/romance_corpus_taxonomy_v2.yaml` v2.1 (leaves **2.5**, **7.4**)
+- **Three intimacy axes** (Stage 10): `everyday_intimacy_emotional_safety`, `sexual_tension_explicit_intimacy`, `consent_control_risk_watchlist` — see `configs/theory_aligned_index_schema.yaml`
+- **Everyday Intimacy & Emotional Safety**: 4.1+4.2+4.6+2.2+8.1+8.2. Stage 08 `intimacy:*` subtags and v3 `axis_hint` help routing.
+- Stage 08 v3 fields (`sexual_function`, `consent_status`) passed into taxonomy zero-shot prompts.
 - Uses same API pattern as Stage 08 LLM labeling
 - JSON-only output with defensive parsing
 - Validates taxonomy IDs against fixed taxonomy list

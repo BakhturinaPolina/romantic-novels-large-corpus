@@ -47,8 +47,7 @@ from src.stage08_llm_labeling.prompts.v1_scene_only import (
     ROMANCE_AWARE_USER_PROMPT,
 )
 
-from src.common.character_name_cleaning import clean_snippet_text, load_lexicon
-from src.common.character_name_cleaning.ner_pass import get_spacy_nlp
+from src.common.character_name_cleaning import clean_snippet_text, get_spacy_nlp
 
 _CLEANING_LEXICON = None
 
@@ -290,19 +289,19 @@ def extract_pos_cues(keywords: list[str]) -> str:
 def _get_cleaning_lexicon():
     global _CLEANING_LEXICON
     if _CLEANING_LEXICON is None:
+        from src.common.character_name_cleaning import load_lexicon
+
         _CLEANING_LEXICON = load_lexicon()
     return _CLEANING_LEXICON
 
 
 def anonymize_names(text: str, nlp) -> str:
-    """
-    Anonymize person names via seed lexicon + spaCy NER (replaces with [person]).
-    """
+    """Anonymize person names via spaCy NER (replaces with [person])."""
     if not text:
         return text
     lexicon = _get_cleaning_lexicon()
     nlp = nlp or get_spacy_nlp()
-    return clean_snippet_text(text, lexicon, nlp=nlp, run_ner=nlp is not None)
+    return clean_snippet_text(text, lexicon, nlp=nlp)
 
 
 def format_snippets(

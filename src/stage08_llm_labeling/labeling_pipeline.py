@@ -11,8 +11,10 @@ from typing import Any
 import numpy as np
 
 from src.stage08_llm_labeling.lexicon import (
+    boundary_risk_terms,
     explicit_sexual_terms,
     family_relation_terms,
+    forbidden_genre_cliche_phrases,
     forbidden_neutral_words,
 )
 from src.stage08_llm_labeling.prompts.loader import DEFAULT_PROMPT_VERSION, load_prompts, load_schema
@@ -32,6 +34,32 @@ V2_RESULT_DEFAULTS: dict[str, Any] = {
     "rationale": "",
     "scene_summary": "",
 }
+
+V3_RESULT_DEFAULTS: dict[str, Any] = {
+    **V2_RESULT_DEFAULTS,
+    "sexual_explicitness": "none",
+    "sexual_function": "none",
+    "consent_status": "not_applicable",
+    "axis_hint": "everyday_intimacy_emotional_safety",
+}
+
+
+def validate_v3_consistency(result: dict[str, Any]) -> list[str]:
+    """Soft checks for v3 sexual-field coherence (logged as warnings, not schema errors)."""
+    warnings: list[str] = []
+    sexual_fn = str(result.get("sexual_function", "none"))
+    consent = str(result.get("consent_status", "not_applicable"))
+    axis_hint = str(result.get("axis_hint", ""))
+
+    if sexual_fn == "consent_boundary" and consent == "not_applicable":
+        warnings.append("sexual_function=consent_boundary but consent_status=not_applicable")
+    if axis_hint == "consent_control_risk" and consent == "not_applicable":
+        warnings.append("axis_hint=consent_control_risk but consent_status=not_applicable")
+    if consent == "coercion_watchlist":
+        kw_lower = {k.lower() for k in result.get("keywords", [])}
+        if not boundary_risk_terms().intersection(kw_lower):
+            warnings.append("coercion_watchlist without boundary_risk keywords in topic")
+    return warnings
 
 
 def validate_label_json(result: dict[str, Any], prompt_version: str) -> list[str]:
@@ -75,7 +103,8 @@ def normalize_parsed_result(
     prompt_version: str,
 ) -> dict[str, Any]:
     """Merge defaults, normalize label, apply post-hoc safety nets."""
-    result = {**V2_RESULT_DEFAULTS, **raw}
+    defaults = V3_RESULT_DEFAULTS if prompt_version.startswith("v3") else V2_RESULT_DEFAULTS
+    result = {**defaults, **raw}
     label_text = str(result.get("label", "")).strip()
     result["label"] = normalize_label_text(label_text, keywords=keywords)
 
@@ -100,6 +129,20 @@ def normalize_parsed_result(
             result["exclude_from_axes"] = True
         elif ct == "discourse":
             result["exclude_from_axes"] = False
+
+    if prompt_version.startswith("v3"):
+        ct = result.get("content_type", "scene")
+        if result.get("is_noise") or ct in ("noise", "paratext"):
+            result["exclude_from_axes"] = True
+            result["axis_hint"] = "exclude_from_axes"
+        elif ct == "discourse":
+            result["exclude_from_axes"] = False
+        for warn in validate_v3_consistency({**result, "keywords": keywords}):
+            LOGGER.warning("v3 consistency: %s", warn)
+        label_lower = str(result.get("label", "")).lower()
+        for phrase in forbidden_genre_cliche_phrases():
+            if phrase in label_lower:
+                LOGGER.warning("v3 label contains genre cliché phrase: %r in %r", phrase, result.get("label"))
 
     return result
 

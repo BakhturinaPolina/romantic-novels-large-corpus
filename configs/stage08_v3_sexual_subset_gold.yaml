@@ -1,0 +1,126 @@
+# Gold-standard expectations for v3 sexual-precision subset validation (~30 topics).
+# label_match: token overlap threshold; enums must match exactly.
+
+version: "1.0"
+pass_criteria:
+  sexual_function_agreement_min: 0.85
+  axis_hint_agreement_min: 0.85
+  zero_genre_cliches: true
+
+topics:
+  "1":
+    label: "Tender Kissing With Possible Sexual Escalation"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+  "2":
+    label: "Charged Physical Nearness Before a Kiss"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "7":
+    label: "Flirtatious Smile or Wink"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+  "26":
+    label: "Suggestive Bed Positioning or Pre-Intimacy Movement"
+    sexual_function: presex_escalation
+    axis_hint: sexual_tension_explicit_intimacy
+  "40":
+    label: "Negotiating Private Lodging With Sexual Subtext"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "56":
+    label: "Explicit Sexual Contact and Post-Sex Arousal"
+    sexual_function: postsex_arousal
+    axis_hint: sexual_tension_explicit_intimacy
+  "66":
+    label: "Verbal Physical Admiration / Attraction"
+    sexual_function: sexual_tension
+    axis_hint: everyday_intimacy_emotional_safety
+  "70":
+    label: "Protective Threat Around Unwanted Touch"
+    sexual_function: consent_boundary
+    axis_hint: consent_control_risk
+    consent_status: coercion_watchlist
+  "72":
+    label: "Cautious Romantic Approach"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+  "78":
+    label: "Undressing and Clothing Fastenings in Sexual Tension"
+    sexual_function: presex_escalation
+    axis_hint: sexual_tension_explicit_intimacy
+  "84":
+    label: "Flirtatious Hair Touching and Physical Charge"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+  "108":
+    label: "Post-Shower Body Display / Bathroom Intimacy"
+    sexual_function: presex_escalation
+    axis_hint: sexual_tension_explicit_intimacy
+  "118":
+    label: "Forceful Sexual Positioning in Bed"
+    sexual_function: explicit_contact
+    axis_hint: consent_control_risk
+    consent_status: unclear_from_topic
+  "123":
+    label: "Reassuring Hug or Comfort Touch"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+  "138":
+    label: "Condom and Lube Preparation Before Sex"
+    sexual_function: contraception_preparation
+    axis_hint: sexual_tension_explicit_intimacy
+  "140":
+    label: "Negotiating When to Stop"
+    sexual_function: sexual_negotiation
+    axis_hint: consent_control_risk
+  "152":
+    label: "Visual Attraction to a Stranger"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "161":
+    label: "Urgent or Possessive Kissing"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "174":
+    label: "Playful Sexual Innuendo and Body-Size Banter"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "210":
+    label: "Negotiating Sex Without Emotional Commitment"
+    sexual_function: sex_without_commitment
+    axis_hint: sexual_tension_explicit_intimacy
+  "218":
+    label: "Sweat, Heat, and Physical Arousal or Exertion"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "248":
+    label: "Overheard Sexual or Ambiguous Noises Through Walls"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "257":
+    label: "Flushed Skin and Embarrassed Arousal"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "277":
+    label: "Explicit Male Arousal Through Clothing"
+    sexual_function: explicit_contact
+    axis_hint: sexual_tension_explicit_intimacy
+  "284":
+    label: "Approaching Orgasm or Overwhelming Sexual Sensation"
+    sexual_function: orgasm_climax
+    axis_hint: sexual_tension_explicit_intimacy
+  "292":
+    label: "Sexual Longing During Reunion or Separation"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "303":
+    label: "Sensual Taste Description During Kissing or Intimacy"
+    sexual_function: sexual_tension
+    axis_hint: sexual_tension_explicit_intimacy
+  "326":
+    label: "Goodnight Kiss and Promise to Reconnect"
+    sexual_function: nonsexual_affection
+    axis_hint: everyday_intimacy_emotional_safety
+
+manual_review_topics: [56, 118, 284]

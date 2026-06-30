@@ -1,7 +1,7 @@
 # Romance Corpus Topic Taxonomy v2 — multi-genre v3 corpus (2000–2017)
 # Used by Stage 09 zero-shot mapping and Stage 10 macro-axis construction.
 
-version: "2.0"
+version: "2.1"
 
 exclude_from_axes_ids:
   - noise
@@ -49,8 +49,37 @@ composite_indices:
       - "8.2"
     exclude_taxonomy_ids:
       - "2.3"
+      - "2.5"
       - "4.7"
       - "7.2"
+      - "7.4"
+
+  sexual_tension_explicit_intimacy:
+    description: >
+      Desire, sexual tension, undressing/pre-sex escalation, explicit sexual acts,
+      post-sex reflection, and sexual negotiation or safety preparation (condoms,
+      boundaries, sex-without-commitment talk). Distinct from everyday courtship
+      and non-explicit affection (everyday_intimacy composite).
+    taxonomy_ids:
+      - "2.1"
+      - "2.3"
+      - "2.4"
+      - "2.5"
+    exclude_taxonomy_ids:
+      - "4.1"
+      - "4.2"
+      - "4.6"
+      - "7.4"
+
+  consent_control_risk_watchlist:
+    description: >
+      Coercive or unwanted sexual contact, threats, possessive claiming, and
+      explicit boundary-risk sexual control — descriptive watchlist axis, not a
+      quality predictor.
+    taxonomy_ids:
+      - "7.4"
+      - "7.2"
+      - "4.7"
 
   status_dominance:
     description: Reach / visibility axis — elite work and economic power signals.
@@ -107,12 +136,25 @@ nodes:
   - id: "2.3"
     name: Explicit Sexual Acts
     group: Sexuality, Attraction & Intimacy
-    description: Clearly sexual behavior, oral/vaginal/anal sex, explicit stimulation, orgasms.
+    description: >
+      Clearly sexual behavior: oral/vaginal/anal sex, explicit stimulation, orgasms,
+      explicit arousal through clothing, forceful consensual intercourse. Distinct from
+      negotiation/safety talk (2.5) and coercion watchlist (7.4).
 
   - id: "2.4"
     name: Aftercare & Post-Sex Reflection
     group: Sexuality, Attraction & Intimacy
-    description: Aftercare, cuddling, emotional processing immediately after sex.
+    description: >
+      Aftercare, cuddling, emotional processing immediately after sex. Distinct from
+      post-sex arousal or between-round desire without clear emotional care (→ 2.3).
+
+  - id: "2.5"
+    name: Sexual Negotiation, Safety Preparation & Boundaries
+    group: Sexuality, Attraction & Intimacy
+    description: >
+      Condom/lube preparation, negotiating when to stop, discussing whether sex should
+      happen, sex framed without emotional commitment, and other sexual boundary or
+      safety talk — not the explicit act itself (2.3).
 
   # --- 3. Emotions, Cognition & Inner Life ---
   - id: "3.1"
@@ -267,6 +309,15 @@ nodes:
     name: Risk, Danger & External Crises
     group: Conflict, Risk & Harm
     description: Accidents, crime, disasters, illness as external threats.
+
+  - id: "7.4"
+    name: Unwanted or Coercive Sexual Contact
+    group: Conflict, Risk & Harm
+    description: >
+      Unwanted touch, coercive sexual positioning, nonconsent signals, threatening
+      sexual contact, or explicit boundary-risk sexual control. Watchlist leaf — use
+      when consent is unclear or coercion is visible; do not conflate with consensual
+      intensity (2.3) or boundary negotiation (2.5).
 
   # --- 8. Spaces, Time, Activities & Objects ---
   - id: "8.1"

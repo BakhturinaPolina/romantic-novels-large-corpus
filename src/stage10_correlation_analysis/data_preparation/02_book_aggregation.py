@@ -167,11 +167,26 @@ def aggregate_to_book_level(
     Returns:
         DataFrame with book-level category proportions (long format)
     """
-    # Join to taxonomy main categories
+    # Join to taxonomy main categories (+ axis exclusion flags)
+    lookup_cols = [
+        'topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group',
+        'taxonomy_exclude_from_axes', 'label_exclude_from_axes',
+    ]
+    present_cols = [c for c in lookup_cols if c in topic_lookup.columns]
     book_topic = book_topic.merge(
-        topic_lookup[['topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group']],
+        topic_lookup[present_cols],
         on='topic_id', how='left'
     )
+
+    # Honor respect_exclude_from_axes: drop topics flagged for axis exclusion or noise
+    exclude_mask = pd.Series(False, index=book_topic.index)
+    if 'taxonomy_exclude_from_axes' in book_topic.columns:
+        exclude_mask = exclude_mask | book_topic['taxonomy_exclude_from_axes'].fillna(False)
+    if 'label_exclude_from_axes' in book_topic.columns:
+        exclude_mask = exclude_mask | book_topic['label_exclude_from_axes'].fillna(False)
+    if 'taxonomy_main_id' in book_topic.columns:
+        exclude_mask = exclude_mask | (book_topic['taxonomy_main_id'] == 'noise')
+    book_topic = book_topic.loc[~exclude_mask].copy()
 
     # Track unmapped probability mass per book
     book_topic['is_mapped'] = book_topic['taxonomy_main_id'].notna()
@@ -377,10 +392,26 @@ def compute_indices(
         ei_spec = composite_index_spec("everyday_intimacy_emotional_safety")
         ei_ids = ei_spec.get("taxonomy_ids", [])
         indices['everyday_intimacy_emotional_safety'] = sum_taxonomy_ids(wide_id, ei_ids)
+        sti_spec = composite_index_spec("sexual_tension_explicit_intimacy")
+        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_ids(
+            wide_id, sti_spec.get("taxonomy_ids", [])
+        )
+        ccr_spec = composite_index_spec("consent_control_risk_watchlist")
+        indices['consent_control_risk_watchlist'] = sum_taxonomy_ids(
+            wide_id, ccr_spec.get("taxonomy_ids", [])
+        )
     else:
         indices['everyday_intimacy_emotional_safety'] = (
             sum_taxonomy_ids(wide_id, ["4.1", "4.2", "4.6", "2.2", "8.1", "8.2"])
         )
+        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_ids(
+            wide_id, ["2.1", "2.3", "2.4", "2.5"]
+        )
+        indices['consent_control_risk_watchlist'] = sum_taxonomy_ids(
+            wide_id, ["7.4", "7.2", "4.7"]
+        )
+
+    indices['attraction'] = sum_taxonomy_ids(wide_id, ["2.1"])
 
     # Attach unmapped mass
     unmapped = (book_cat_long[['book_id', 'unmapped_topic_mass']].drop_duplicates('book_id')

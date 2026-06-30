@@ -36,6 +36,9 @@ global:
     AX_violence_coercion: violence_coercion
     AX_external_crisis: external_crisis
     AX_everyday_intimacy_emotional_safety: everyday_intimacy_emotional_safety
+    AX_sexual_tension_explicit_intimacy: sexual_tension_explicit_intimacy
+    AX_consent_control_risk_watchlist: consent_control_risk_watchlist
+    AX_attraction: attraction
 
 # ------------------------------------------------------------
 # PAYOFF / SAFETY (CONFIRMATORY, CORE) — H2 partial, H3 factor
@@ -427,8 +430,53 @@ AX_everyday_intimacy_emotional_safety:
   excludes:
     taxonomy:
       - 2.3
+      - 2.5
       - 4.7
       - 7.2
+      - 7.4
+
+# ------------------------------------------------------------
+# SEXUAL TENSION & EXPLICIT INTIMACY (EXPLORATORY) — H1
+# ------------------------------------------------------------
+AX_sexual_tension_explicit_intimacy:
+  type: evaluative
+  hypothesis_role: exploratory
+  hypothesis: [H1]
+  description: >
+    Desire, sexual tension, undressing/pre-sex escalation, explicit sexual acts,
+    post-sex reflection, and sexual negotiation or safety preparation (2.1+2.3+2.4+2.5).
+    Distinct from everyday courtship and non-explicit affection.
+
+  composite_ref: sexual_tension_explicit_intimacy
+
+  construction:
+    method: weighted_sum_from_composite
+
+  excludes:
+    taxonomy:
+      - 4.1
+      - 4.2
+      - 4.6
+      - 7.4
+
+# ------------------------------------------------------------
+# CONSENT / CONTROL / RISK WATCHLIST (CONTEXTUAL)
+# ------------------------------------------------------------
+AX_consent_control_risk_watchlist:
+  type: contextual
+  hypothesis_role: exploratory
+  description: >
+    Coercive or unwanted sexual contact, threats, possessive claiming, and
+    boundary-risk sexual control — descriptive watchlist, not a quality predictor.
+
+  composite_ref: consent_control_risk_watchlist
+
+  construction:
+    method: weighted_sum_from_composite
+
+  usage:
+    allowed_as_predictor: false
+    allowed_as_control: true
 
 # ------------------------------------------------------------
 # NARRATIVE ARC REPAIR (CONFIRMATORY) — H6, segment-level only

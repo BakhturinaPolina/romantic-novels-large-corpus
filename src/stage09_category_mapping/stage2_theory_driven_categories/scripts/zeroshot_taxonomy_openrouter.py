@@ -129,7 +129,8 @@ You will receive, for each topic:
 
 - Primary and secondary categories from the earlier labeler (e.g., "romance_core", "narrative_style", "appearance_presentation", "activity:dressing")
 
-- Optional Stage 08 fields: content_type, exclude_from_axes, subgenre_hints, register
+- Optional Stage 08 fields: content_type, exclude_from_axes, subgenre_hints, register,
+  sexual_explicitness, sexual_function, consent_status, axis_hint (v3 sexual-precision labels)
 
 - Optional representative snippets from the corpus
 
@@ -350,11 +351,27 @@ CRITICAL BOUNDARY RULES
 - Do NOT collapse all wealth signals into 6.1. Prefer the most specific node.
 - Generic "negotiating terms" without business context → 4.x or 5.x, NOT 6.1.
 
-5) APPEARANCE vs ATTRACTION vs EXPLICIT
+5) APPEARANCE vs ATTRACTION vs EXPLICIT vs NEGOTIATION vs COERCION
 
 - Cataloguing hair, clothes, mirror, grooming → 1.6 (or 1.7 if gaze/expression dominates).
 - Charged desire/longing with flirtation → 2.1.
-- Explicit sexual body focus → 2.3, NOT 1.6/1.7.
+- Explicit sexual body focus or intercourse → 2.3, NOT 1.6/1.7.
+- Condom/lube preparation, negotiating when to stop, sex-without-commitment talk → 2.5, NOT 2.3.
+- Aftercare and emotional processing after sex → 2.4.
+- Unwanted touch, coercion signals, nonconsent, threatening sexual contact → 7.4 (watchlist).
+  Forceful consensual intensity without boundary-risk evidence → 2.3 with unclear consent in
+  Stage 08 metadata, NOT 7.4 automatically.
+- Physical violence/threats outside sexual contact → 7.2.
+
+5b) STAGE 08 v3 SEXUAL-FUNCTION HINTS (when present)
+
+- sexual_function contraception_preparation | sexual_negotiation | sex_without_commitment → 2.5
+- sexual_function explicit_contact | orgasm_climax | postsex_arousal → 2.3
+- sexual_function postsex_aftercare → 2.4
+- sexual_function sexual_tension | presex_escalation → 2.1
+- sexual_function nonsexual_affection → 2.2 or 4.1/4.2/4.6 by relational beat
+- consent_status coercion_watchlist | nonconsent_explicit → prefer 7.4 over 2.3
+- axis_hint consent_control_risk → 7.4, 7.2, or 4.7 by dominant beat
 
 6) STAGE 08 ROUTING HINTS
 
@@ -420,13 +437,15 @@ Routing preferences:
 
 Do NOT use this axis for:
 - Explicit sex, coercive control, armed danger, jealousy/possessive claiming (4.7),
-  forceful intensity, or stalker threat — unless the topic clearly emphasizes aftercare
-  or repair (→ 2.4 or 4.6) rather than threat or domination.
-- "Claiming her mouth" or forceful bedroom encounters → 2.1, 2.3, or 4.7, NOT 4.2/4.6.
+  forceful intensity with boundary-risk signals, or stalker threat — unless the topic clearly
+  emphasizes aftercare or repair (→ 2.4 or 4.6) rather than threat or domination.
+- Forceful explicit sexual contact with unclear consent → 7.4 watchlist or 2.3, NOT 4.2/4.6.
+- Condom/boundary/sex-without-commitment negotiation → 2.5, NOT 4.2/4.6 alone.
 - Pure setting description without a relational function → 8.x only.
 
 Stage 08 hints: intimacy:courtship_ritual, intimacy:nonsexual_affection,
-intimacy:everyday_companionship, intimacy:domestic_care, intimacy:emotional_safety
+intimacy:everyday_companionship, intimacy:domestic_care, intimacy:emotional_safety,
+intimacy:consent_negotiation, sexual:contraception, sexual:negotiation, risk:coercive_control
 support routing but do not override explicit sex or violence keywords.
 
 SPECIAL RULES ABOUT VIOLENCE VS EXERCISE
@@ -474,6 +493,10 @@ STAGE 08 CONTENT TYPE: {content_type}
 STAGE 08 EXCLUDE FROM AXES: {exclude_from_axes}
 STAGE 08 SUBGENRE HINTS: {subgenre_hints}
 STAGE 08 REGISTER: {register}
+STAGE 08 SEXUAL EXPLICITNESS: {sexual_explicitness}
+STAGE 08 SEXUAL FUNCTION: {sexual_function}
+STAGE 08 CONSENT STATUS: {consent_status}
+STAGE 08 AXIS HINT: {axis_hint}
 
 REPRESENTATIVE SNIPPETS (optional):
 
@@ -587,6 +610,10 @@ def classify_topic_to_taxonomy_openrouter(
     exclude_from_axes = topic_metadata.get("exclude_from_axes", False)
     subgenre_hints = topic_metadata.get("subgenre_hints", []) or []
     register = topic_metadata.get("register", "neutral")
+    sexual_explicitness = topic_metadata.get("sexual_explicitness", "(none)")
+    sexual_function = topic_metadata.get("sexual_function", "(none)")
+    consent_status = topic_metadata.get("consent_status", "(not_applicable)")
+    axis_hint = topic_metadata.get("axis_hint", "(none)")
 
     pre_routed = try_pre_route_taxonomy(
         topic_id,
@@ -635,6 +662,10 @@ def classify_topic_to_taxonomy_openrouter(
         exclude_from_axes=exclude_from_axes,
         subgenre_hints=", ".join(subgenre_hints) if subgenre_hints else "(none)",
         register=register,
+        sexual_explicitness=sexual_explicitness,
+        sexual_function=sexual_function,
+        consent_status=consent_status,
+        axis_hint=axis_hint,
         snippets=snippets_block,
     )
 
@@ -1327,6 +1358,10 @@ if __name__ == "__main__":
             exclude_from_axes=tm.get("exclude_from_axes", False),
             subgenre_hints=", ".join(tm.get("subgenre_hints", [])) or "(none)",
             register=tm.get("register", "neutral"),
+            sexual_explicitness=tm.get("sexual_explicitness", "(none)"),
+            sexual_function=tm.get("sexual_function", "(none)"),
+            consent_status=tm.get("consent_status", "(not_applicable)"),
+            axis_hint=tm.get("axis_hint", "(none)"),
             snippets="(none)",
         )
         print("=== SYSTEM PROMPT ===")

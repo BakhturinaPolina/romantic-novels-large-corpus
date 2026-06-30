@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "label",
+    "scene_summary",
+    "primary_categories",
+    "secondary_categories",
+    "is_noise",
+    "rationale",
+    "content_type",
+    "register",
+    "exclude_from_axes",
+    "sexual_explicitness",
+    "sexual_function",
+    "consent_status",
+    "axis_hint"
+  ],
+  "properties": {
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "scene",
+        "discourse",
+        "paratext",
+        "subgenre_marker",
+        "procedural_transition",
+        "noise"
+      ]
+    },
+    "register": {
+      "type": "string",
+      "enum": ["explicit", "suggestive", "neutral"]
+    },
+    "exclude_from_axes": { "type": "boolean" },
+    "subgenre_hints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "merge_group_hint": {
+      "type": ["string", "null"]
+    },
+    "sexual_explicitness": {
+      "type": "string",
+      "enum": ["none", "affection_only", "suggestive", "explicit"]
+    },
+    "sexual_function": {
+      "type": "string",
+      "enum": [
+        "none",
+        "nonsexual_affection",
+        "sexual_tension",
+        "presex_escalation",
+        "contraception_preparation",
+        "sexual_negotiation",
+        "explicit_contact",
+        "orgasm_climax",
+        "postsex_aftercare",
+        "postsex_arousal",
+        "sex_without_commitment",
+        "consent_boundary"
+      ]
+    },
+    "consent_status": {
+      "type": "string",
+      "enum": [
+        "not_applicable",
+        "consensual_implied",
+        "unclear_from_topic",
+        "coercion_watchlist",
+        "nonconsent_explicit"
+      ]
+    },
+    "axis_hint": {
+      "type": "string",
+      "enum": [
+        "everyday_intimacy_emotional_safety",
+        "sexual_tension_explicit_intimacy",
+        "consent_control_risk",
+        "exclude_from_axes"
+      ]
+    },
+    "label": { "type": "string", "minLength": 1 },
+    "scene_summary": { "type": "string" },
+    "primary_categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "secondary_categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "is_noise": { "type": "boolean" },
+    "rationale": { "type": "string" }
+  },
+  "additionalProperties": true
+}

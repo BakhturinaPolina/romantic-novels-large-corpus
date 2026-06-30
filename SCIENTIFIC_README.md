@@ -39,7 +39,7 @@ Repository structure note: active pipeline packages stay at the `src/` root, whi
 | H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(3.2+4.4+7.2+7.3) − (3.1+2.2)` (`AX_dark_vs_tender`) |
 | H6 | **Narrative Arc**: Successful romances progress from conflict to resolution | `AX_narrative_arc_repair` — tertile Δ only (begin→end) |
 
-Macro-axis notes (v2.1): Full schema in `configs/theory_aligned_index_schema.yaml`. Taxonomy leaves in `configs/romance_corpus_taxonomy_v2.yaml`. `AX_status_dominance` (6.1+6.4) → reach; `AX_luxury_composite` → indirect glamour; `AX_appearance_presentation` (1.6+1.7) distinct from 2.1/2.3; **`AX_everyday_intimacy_emotional_safety`** (exploratory, H1) composites courtship, bonding, reassurance, and non-explicit affection (4.1+4.2+4.6+2.2+8.1+8.2); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas (`AX_narrative_arc_repair`).
+Macro-axis notes (v2.2): Full schema in `configs/theory_aligned_index_schema.yaml`. Taxonomy v2.1 in `configs/romance_corpus_taxonomy_v2.yaml` (leaves **2.5** negotiation/safety prep, **7.4** coercive sexual contact watchlist). Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (courtship, bonding, reassurance, non-explicit affection: 4.1+4.2+4.6+2.2+8.1+8.2); **`AX_sexual_tension_explicit_intimacy`** (desire through explicit sex and negotiation: 2.1+2.3+2.4+2.5); **`AX_consent_control_risk_watchlist`** (7.4+7.2+4.7, contextual only). Also: `AX_love_over_sex`, `AX_attraction` (2.1), `AX_explicitness` (2.3); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas.
 
 ---
 

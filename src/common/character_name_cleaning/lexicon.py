@@ -1,8 +1,9 @@
-"""Load and resolve character-name cleaning lexicons from YAML config."""
+"""Cleaning configuration (role tokens + thresholds; names from NER only)."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 
 import yaml
@@ -12,27 +13,28 @@ from src.common.config import resolve_path
 DEFAULT_CONFIG = Path("configs/character_name_cleaning.yaml")
 
 
+@lru_cache(maxsize=1)
+def _english_stopwords() -> frozenset[str]:
+    try:
+        from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+        return frozenset(w.lower() for w in ENGLISH_STOP_WORDS)
+    except ImportError:
+        return frozenset()
+
+
 @dataclass
 class CleaningLexicon:
     keep_role_tokens: frozenset[str] = field(default_factory=frozenset)
-    high_confidence_names: frozenset[str] = field(default_factory=frozenset)
-    ambiguous_review: frozenset[str] = field(default_factory=frozenset)
-    surname_review: frozenset[str] = field(default_factory=frozenset)
-    flower_co_words: frozenset[str] = field(default_factory=frozenset)
     ratio_character_name_cluster: float = 0.50
     ratio_name_contaminated_review: float = 0.20
     person_placeholder: str = "[person]"
-    extend_lexicon_from_topics: bool = True
-    topic_derived_names: frozenset[str] = field(default_factory=frozenset)
+    ner_probe_template: str = "{token} walked into the room and looked around."
 
     @property
-    def auto_replace_names(self) -> frozenset[str]:
-        """High-confidence names minus ambiguous words (ambiguous wins)."""
-        return self.high_confidence_names | self.topic_derived_names - self.ambiguous_review
-
-    @property
-    def full_seed_lexicon(self) -> frozenset[str]:
-        return self.auto_replace_names | self.surname_review
+    def never_remove_topic_words(self) -> frozenset[str]:
+        """Function words and role/status tokens never stripped from topic keywords."""
+        return _english_stopwords() | self.keep_role_tokens
 
 
 def load_lexicon(config_path: Path | None = None) -> CleaningLexicon:
@@ -50,10 +52,6 @@ def load_lexicon(config_path: Path | None = None) -> CleaningLexicon:
     thresholds = raw.get("ratio_thresholds") or {}
     return CleaningLexicon(
         keep_role_tokens=_lower_set("keep_role_tokens"),
-        high_confidence_names=_lower_set("high_confidence_names"),
-        ambiguous_review=_lower_set("ambiguous_review"),
-        surname_review=_lower_set("surname_review"),
-        flower_co_words=_lower_set("flower_co_words"),
         ratio_character_name_cluster=float(
             thresholds.get("character_name_cluster", 0.50)
         ),
@@ -61,5 +59,10 @@ def load_lexicon(config_path: Path | None = None) -> CleaningLexicon:
             thresholds.get("name_contaminated_review", 0.20)
         ),
         person_placeholder=str(raw.get("person_placeholder", "[person]")),
-        extend_lexicon_from_topics=bool(raw.get("extend_lexicon_from_topics", True)),
+        ner_probe_template=str(
+            raw.get(
+                "ner_probe_template",
+                "{token} walked into the room and looked around.",
+            )
+        ),
     )

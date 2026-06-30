@@ -20,7 +20,7 @@ Stage 08 generates interpretable labels for BERTopic topics using Large Language
 ### Key Features
 
 - **Romance-aware prompts** optimized for modern romantic and erotic fiction
-- **Stage 09 alignment (v2)**: `intimacy:*` secondary subtags (`courtship_ritual`, `nonsexual_affection`, `everyday_companionship`, `domestic_care`, `emotional_safety`) tag the **Everyday Intimacy & Emotional Safety** axis; `domestic_life` is for home/family setting only
+- **Stage 09 alignment (v2/v3)**: `intimacy:*` secondary subtags tag the **Everyday Intimacy & Emotional Safety** axis; v3 adds `sexual_explicitness`, `sexual_function`, `consent_status`, `axis_hint` for sexual-topic precision
 - **Representative document snippets** for scene-level disambiguation
 - **Anti-hallucination constraints** based on empirical testing
 - **Structured JSON output** for programmatic analysis
@@ -81,6 +81,29 @@ python -m src.stage08_llm_labeling.openrouter_experiments.tools.compare_models_o
 | Temperature | 0.35 | Balanced for consistency + natural phrasing |
 | Max tokens | 40 | Sufficient for 2-6 word labels |
 | Rate limit delay | 4.0s | Conservative API rate limiting |
+
+### v3 sexual-precision prompt (call 73 validation)
+
+Frozen production uses `v2_c8_character_names` via `configs/stage08_labeling.yaml` (Sonnet 4.6, `temperature: 0.0`, `max_tokens: 256`).
+
+For sexual-topic relabeling, use `v3_sexual_precision` with the **same OpenRouter params**:
+
+```bash
+# Subset validation (~28 sexual/suggestive topics)
+python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
+  --stage08-config configs/stage08_labeling_v3_sexual.yaml \
+  --topic-ids 1,2,7,26,40,56,66,70,72,78,84,108,118,123,138,140,152,161,174,210,218,248,257,277,284,292,303,326 \
+  --output-suffix v3_sexual_subset \
+  --no-integrate
+
+# Compare against gold expectations
+python -m src.stage08_llm_labeling.openrouter_experiments.tools.validate_label_quality \
+  --labels-json results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_*_v3_sexual_subset_topics.json \
+  --gold-yaml configs/stage08_v3_sexual_subset_gold.yaml \
+  --show-only-issues
+```
+
+v3 extends v2/c8 with JSON fields `sexual_explicitness`, `sexual_function`, `consent_status`, `axis_hint`. Labels stay **natural romance-index style**; analytic function lives in JSON, not clinical label wording.
 
 ## Outputs
 

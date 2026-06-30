@@ -62,13 +62,36 @@ GAZE_TERMS = {
 }
 
 NON_OVERRIDABLE_CATEGORIES = {
-    "2.1", "2.2", "2.3", "2.4",
+    "2.1", "2.2", "2.3", "2.4", "2.5",
     "3.1", "3.2", "3.3", "3.4",
     "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7",
-    "7.1", "7.2", "7.3",
+    "7.1", "7.2", "7.3", "7.4",
     "1.6", "1.7",
     "9.1", "9.2", "9.3", "9.4",
     "10.1", "10.2", "10.3", "10.4",
+}
+
+CONTRACEPTION_TERMS = {
+    "condom", "condoms", "lube", "lubricant", "nightstand", "drawer", "bedside",
+}
+
+BOUNDARY_RISK_TERMS = {
+    "pinned", "forceful", "coercion", "coercive", "blackmail", "threat", "captivity",
+    "refusal", "refuse", "cannot move", "unwanted", "nonconsent",
+}
+
+SEXUAL_FUNCTION_TO_TAXONOMY = {
+    "nonsexual_affection": "2.2",
+    "sexual_tension": "2.1",
+    "presex_escalation": "2.1",
+    "contraception_preparation": "2.5",
+    "sexual_negotiation": "2.5",
+    "sex_without_commitment": "2.5",
+    "explicit_contact": "2.3",
+    "orgasm_climax": "2.3",
+    "postsex_aftercare": "2.4",
+    "postsex_arousal": "2.3",
+    "consent_boundary": "7.4",
 }
 
 PROTECTIVE_CARE_TERMS = {
@@ -263,6 +286,49 @@ def apply_domain_heuristics(
     gaze_hit = GAZE_TERMS.intersection(tokens) or GAZE_TERMS.intersection(blob_tokens)
 
     register = str(topic_metadata.get("register", "neutral")).lower()
+    consent_status = str(topic_metadata.get("consent_status", "not_applicable")).lower()
+    sexual_function = str(topic_metadata.get("sexual_function", "none")).lower()
+    axis_hint = str(topic_metadata.get("axis_hint", "")).lower()
+
+    # Stage 08 v3 sexual-function routing (when present)
+    if consent_status in {"coercion_watchlist", "nonconsent_explicit"}:
+        if main_id in {"2.3", "2.2", "2.1", "4.4"}:
+            result["secondary_category_id"] = main_id if main_id != "7.4" else secondary_id
+        result["main_category_id"] = "7.4"
+        main_id = "7.4"
+    elif axis_hint == "consent_control_risk" and sexual_function == "consent_boundary":
+        if main_id not in {"7.4", "7.2", "noise"}:
+            result["secondary_category_id"] = main_id
+        result["main_category_id"] = "7.4"
+        main_id = "7.4"
+    elif sexual_function in SEXUAL_FUNCTION_TO_TAXONOMY:
+        target = SEXUAL_FUNCTION_TO_TAXONOMY[sexual_function]
+        if main_id in {"8.1", "8.2", "8.3", "4.2", "4.1"} and target in valid_ids:
+            result["secondary_category_id"] = main_id
+            result["main_category_id"] = target
+            main_id = target
+        elif main_id not in {"7.4", "noise"} and target != main_id:
+            if target in {"2.3", "2.5", "2.4", "2.1", "2.2"} and main_id in {"8.1", "8.2", "1.6", "1.7"}:
+                result["secondary_category_id"] = main_id
+                result["main_category_id"] = target
+                main_id = target
+
+    if (
+        "sexual:contraception" in secondary_cats
+        or CONTRACEPTION_TERMS.intersection(tokens)
+    ) and main_id in {"2.3", "8.1", "8.2", "4.2"}:
+        result["secondary_category_id"] = main_id if main_id != "2.5" else secondary_id
+        result["main_category_id"] = "2.5"
+        main_id = "2.5"
+
+    if (
+        "sexual:negotiation" in secondary_cats
+        or "intimacy:consent_negotiation" in secondary_cats
+        or sexual_function in {"sexual_negotiation", "sex_without_commitment"}
+    ) and main_id in {"2.3", "4.4", "4.6", "8.1"}:
+        result["secondary_category_id"] = main_id if main_id != "2.5" else secondary_id
+        result["main_category_id"] = "2.5"
+        main_id = "2.5"
 
     if topic_metadata.get("exclude_from_axes") and "narrative_style" in primary_cats:
         if main_id not in {"noise", "9.1", "9.2", "9.3", "9.4"}:
@@ -398,7 +464,7 @@ def apply_domain_heuristics(
     for subtag, preferred_id in intimacy_subtag_map.items():
         if subtag not in secondary_cats:
             continue
-        if main_id in {"2.3", "4.7", "7.2", "noise"}:
+        if main_id in {"2.3", "2.5", "4.7", "7.2", "7.4", "noise"}:
             break
         if main_id in {"8.1", "8.2", "8.3", "8.5"} and preferred_id in valid_ids:
             result["secondary_category_id"] = main_id
@@ -506,6 +572,8 @@ def enrich_with_category_names(
 def fallback_main_category(primary_categories: List[str]) -> str:
     if "sexual_content" in primary_categories:
         return "2.3"
+    if "sexual_tension" in primary_categories:
+        return "2.1"
     if "physical_affection" in primary_categories:
         return "2.2"
     if "appearance_presentation" in primary_categories:

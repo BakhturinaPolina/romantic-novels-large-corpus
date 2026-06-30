@@ -32,3 +32,13 @@ def forbidden_neutral_words(path: str | None = None) -> set[str]:
 def family_relation_terms(path: str | None = None) -> set[str]:
     lex = load_labeling_lexicon(path)
     return {str(t).lower() for t in lex.get("family_relation_terms", [])}
+
+
+def boundary_risk_terms(path: str | None = None) -> set[str]:
+    lex = load_labeling_lexicon(path)
+    return {str(t).lower() for t in lex.get("boundary_risk_terms", [])}
+
+
+def forbidden_genre_cliche_phrases(path: str | None = None) -> list[str]:
+    lex = load_labeling_lexicon(path)
+    return [str(t).lower() for t in lex.get("forbidden_genre_cliche_phrases", [])]

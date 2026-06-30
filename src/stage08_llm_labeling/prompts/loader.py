@@ -29,7 +29,15 @@ def load_prompts(version: str | None = None) -> tuple[str, str]:
         from src.stage08_llm_labeling.prompts.v2_variants import load_variant
 
         return load_variant(ver)
-    raise ValueError(f"Unknown prompt version: {version!r} (use v1, v2, or v2_* sweep variant)")
+    if ver in ("v3", "v3_sexual_precision"):
+        from src.stage08_llm_labeling.prompts.v3_sexual_precision import (
+            SYSTEM_PROMPT,
+            USER_PROMPT_TEMPLATE,
+        )
+        return SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
+    raise ValueError(
+        f"Unknown prompt version: {version!r} (use v1, v2, v2_*, or v3_sexual_precision)"
+    )
 
 
 def load_schema(version: str | None = None) -> dict:
@@ -37,6 +45,8 @@ def load_schema(version: str | None = None) -> dict:
     ver = (version or DEFAULT_PROMPT_VERSION).lower()
     if ver.startswith("v1"):
         path = _PROMPTS_DIR / "schema_v1.json"
+    elif ver.startswith("v3"):
+        path = _PROMPTS_DIR / "schema_v3.json"
     else:
         path = _PROMPTS_DIR / "schema_v2.json"
     if not path.exists():

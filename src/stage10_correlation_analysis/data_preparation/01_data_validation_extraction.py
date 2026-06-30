@@ -223,7 +223,17 @@ def extract_all_fields(
             "taxonomy_secondary_group": tax.get("secondary_category_group"),
             "taxonomy_confidence": tax.get("confidence"),
             "taxonomy_is_noise": bool(tax.get("is_noise", False)),
+            "taxonomy_exclude_from_axes": bool(tax.get("exclude_from_axes", False)),
         })
+
+        # Stage 08 v3 sexual-precision fields (from labels metadata when present)
+        if labels_metadata and topic_id in labels_metadata:
+            meta = labels_metadata[topic_id]
+            row["sexual_explicitness"] = meta.get("sexual_explicitness")
+            row["sexual_function"] = meta.get("sexual_function")
+            row["consent_status"] = meta.get("consent_status")
+            row["axis_hint"] = meta.get("axis_hint")
+            row["label_exclude_from_axes"] = bool(meta.get("exclude_from_axes", False))
 
         # Radway (Stage 3)
         rad = getattr(model, "topic_radway_", {}).get(topic_id, {})
@@ -770,14 +780,23 @@ def main() -> None:
         json.dump(summary, f, indent=2, ensure_ascii=False)
     logger.info(f"✓ Wrote: {summary_path}")
     
+    optional_v3_cols = [
+        "sexual_explicitness", "sexual_function", "consent_status", "axis_hint",
+        "label_exclude_from_axes", "taxonomy_exclude_from_axes",
+    ]
+    for col in optional_v3_cols:
+        if col not in df_topics.columns:
+            df_topics[col] = None
+
     # Topic lookup (for merging with book_topic_probs.parquet later)
     topic_lookup = df_topics[[
         "topic_id",
         "taxonomy_main_id", "taxonomy_main_name", "taxonomy_main_group",
         "taxonomy_secondary_id", "taxonomy_secondary_name", "taxonomy_secondary_group",
-        "taxonomy_confidence", "taxonomy_is_noise",
+        "taxonomy_confidence", "taxonomy_is_noise", "taxonomy_exclude_from_axes",
         "radway_main_id", "radway_main_name", "radway_phase", "radway_phase_name", "radway_is_none", "radway_confidence",
         "label", "scene_summary", "primary_categories", "secondary_categories", "label_is_noise",
+        "sexual_explicitness", "sexual_function", "consent_status", "axis_hint", "label_exclude_from_axes",
     ]].copy()
     
     topic_lookup_path = output_dir / "topic_lookup.parquet"
