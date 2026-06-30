@@ -20,6 +20,7 @@ Stage 08 generates interpretable labels for BERTopic topics using Large Language
 ### Key Features
 
 - **Romance-aware prompts** optimized for modern romantic and erotic fiction
+- **Stage 09 alignment (v2)**: `intimacy:*` secondary subtags (`courtship_ritual`, `nonsexual_affection`, `everyday_companionship`, `domestic_care`, `emotional_safety`) tag the **Everyday Intimacy & Emotional Safety** axis; `domestic_life` is for home/family setting only
 - **Representative document snippets** for scene-level disambiguation
 - **Anti-hallucination constraints** based on empirical testing
 - **Structured JSON output** for programmatic analysis

@@ -25,7 +25,11 @@ def load_prompts(version: str | None = None) -> tuple[str, str]:
             USER_PROMPT_TEMPLATE,
         )
         return SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
-    raise ValueError(f"Unknown prompt version: {version!r} (use v1 or v2)")
+    if ver.startswith("v2_"):
+        from src.stage08_llm_labeling.prompts.v2_variants import load_variant
+
+        return load_variant(ver)
+    raise ValueError(f"Unknown prompt version: {version!r} (use v1, v2, or v2_* sweep variant)")
 
 
 def load_schema(version: str | None = None) -> dict:

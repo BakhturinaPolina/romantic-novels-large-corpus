@@ -95,11 +95,11 @@ def normalize_parsed_result(
             result[key] = [str(val)]
 
     if prompt_version.startswith("v2"):
-        if result.get("is_noise"):
-            result["exclude_from_axes"] = bool(result.get("exclude_from_axes", True))
         ct = result.get("content_type", "scene")
-        if ct in ("noise", "paratext", "discourse") and result.get("is_noise"):
+        if result.get("is_noise") or ct in ("noise", "paratext"):
             result["exclude_from_axes"] = True
+        elif ct == "discourse":
+            result["exclude_from_axes"] = False
 
     return result
 

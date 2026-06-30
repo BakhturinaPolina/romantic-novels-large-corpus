@@ -46,6 +46,8 @@ Before starting, ensure you have:
 
 **Output**: Topic-to-category mappings with confidence scores.
 
+**Taxonomy v2**: Fixed leaf nodes and composite indices live in `configs/romance_corpus_taxonomy_v2.yaml`. Stage 2 zero-shot mapping reads this file at runtime (`--taxonomy-config`).
+
 **Status**: See `stage2_theory_driven_categories/README.md`
 
 ---

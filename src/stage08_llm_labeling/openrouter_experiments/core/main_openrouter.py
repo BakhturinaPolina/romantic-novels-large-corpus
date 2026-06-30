@@ -262,6 +262,27 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Limit number of topics to process (useful for testing)",
     )
+
+    parser.add_argument(
+        "--topic-ids",
+        type=str,
+        default=None,
+        help="Comma-separated topic IDs to label only (e.g. '0,1,12,31'). Ignores stream order.",
+    )
+
+    parser.add_argument(
+        "--max-snippets",
+        type=int,
+        default=None,
+        help="Max representative snippets per topic (default: from stage08 yaml or 6)",
+    )
+
+    parser.add_argument(
+        "--output-suffix",
+        type=str,
+        default=None,
+        help="Suffix for labels JSON filename (prompt sweeps), e.g. prompt_sweep_S1",
+    )
     
     parser.add_argument(
         "--use-improved-prompts",
@@ -324,7 +345,11 @@ def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
         args.rate_limit_delay = float(openrouter["rate_limit_delay_s"])
     if args.num_keywords == DEFAULT_NUM_KEYWORDS and labeling.get("num_keywords") is not None:
         args.num_keywords = int(labeling["num_keywords"])
-    if cfg.get("prompt_version"):
+    if args.max_snippets is None and labeling.get("max_snippets") is not None:
+        args.max_snippets = int(labeling["max_snippets"])
+    if args.max_snippets is None:
+        args.max_snippets = 6
+    if cfg.get("prompt_version") and "--prompt-version" not in sys.argv:
         args.prompt_version = str(cfg["prompt_version"])
     # YAML resume default must not override explicit --no-resume / --resume on CLI.
     if labeling.get("resume") is not None and "--no-resume" not in sys.argv and "--resume" not in sys.argv:
@@ -542,11 +567,7 @@ def main() -> None:
         # Step 3b: Extract representative documents for snippets
         print("[LABELING_CMD] Step 3b: Extracting representative documents for snippets...")
         sys.stdout.flush()
-        max_snippets = 6
-        if args.stage08_config and Path(args.stage08_config).is_file():
-            labeling_cfg = load_config(Path(args.stage08_config)).get("labeling", {})
-            if labeling_cfg.get("max_snippets") is not None:
-                max_snippets = int(labeling_cfg["max_snippets"])
+        max_snippets = args.max_snippets
         topic_to_snippets = extract_representative_docs_per_topic(
             topic_model,
             max_docs_per_topic=max_snippets,
@@ -572,8 +593,28 @@ def main() -> None:
         model_name_file = model_name.replace("/", "_").replace(":", "_")
         reasoning_suffix = f"_reasoning_{args.reasoning_effort}" if args.reasoning_effort != "none" else ""
         limit_suffix = f"_limit{args.limit_topics}" if args.limit_topics else ""
-        labels_filename = f"labels_pos_openrouter_{model_name_file}_romance_aware_{model_name_safe}{reasoning_suffix}{limit_suffix}"
+        topic_ids_suffix = ""
+        if args.topic_ids:
+            topic_ids_suffix = "_topics"
+        output_suffix = f"_{args.output_suffix}" if args.output_suffix else ""
+        prompt_suffix = ""
+        if args.prompt_version and args.prompt_version not in ("v2", "v2_multi_genre"):
+            prompt_suffix = f"_{args.prompt_version.replace('/', '_')}"
+        labels_filename = (
+            f"labels_pos_openrouter_{model_name_file}_romance_aware_{model_name_safe}"
+            f"{prompt_suffix}{output_suffix}{topic_ids_suffix}{reasoning_suffix}{limit_suffix}"
+        )
         labels_path = args.output_dir / labels_filename
+
+        topic_id_filter: set[int] | None = None
+        if args.topic_ids:
+            topic_id_filter = {int(x.strip()) for x in args.topic_ids.split(",") if x.strip()}
+
+        max_chars_per_snippet = 1200
+        if args.stage08_config and Path(args.stage08_config).is_file():
+            labeling_cfg = load_config(Path(args.stage08_config)).get("labeling", {})
+            if labeling_cfg.get("max_chars_per_snippet") is not None:
+                max_chars_per_snippet = int(labeling_cfg["max_chars_per_snippet"])
         # Debug: Log the full filename to verify it's not being truncated
         logger.info(f"[LABELING_CMD] Generated filename: {labels_filename} (length: {len(labels_filename)})")
         logger.info(f"[LABELING_CMD] Full path: {labels_path} (path length: {len(str(labels_path))})")
@@ -606,11 +647,14 @@ def main() -> None:
                 use_improved_prompts=args.use_improved_prompts,
                 topic_model=topic_model,
                 topic_to_snippets=topic_to_snippets,
+                max_snippets=max_snippets,
+                max_chars_per_snippet=max_chars_per_snippet,
                 reasoning_effort=args.reasoning_effort,
                 prompt_version=args.prompt_version,
                 quality_hints=quality_hints,
                 resume=args.resume,
                 rate_limit_delay_s=args.rate_limit_delay,
+                topic_id_filter=topic_id_filter,
             )
             print(f"[LABELING_CMD] ✓ Generated {len(topic_labels)} labels (streaming mode)")
             json_display_path = str(labels_path.parent) + "/" + labels_path.name + ".json"

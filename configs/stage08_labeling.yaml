@@ -2,11 +2,11 @@
 # See configs/placeholder_v4_frozen_call73.yaml and results/reports/placeholder_v4_call73_analysis_strategy.md
 
 frozen_call: 73
-prompt_version: v2
+prompt_version: v2_c8_character_names
 
 openrouter:
   model: anthropic/claude-sonnet-4.6
-  temperature: 0.35
+  temperature: 0.0
   max_tokens: 256
   rate_limit_delay_s: 4.0
 

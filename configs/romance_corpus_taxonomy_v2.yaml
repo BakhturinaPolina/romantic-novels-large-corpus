@@ -1,0 +1,347 @@
+# Romance Corpus Topic Taxonomy v2 — multi-genre v3 corpus (2000–2017)
+# Used by Stage 09 zero-shot mapping and Stage 10 macro-axis construction.
+
+version: "2.0"
+
+exclude_from_axes_ids:
+  - noise
+
+# Composite index building blocks (not single taxonomy leaves)
+composite_indices:
+  luxury_composite:
+    description: >
+      Indirect luxury/status signals across subgenres — fashion, aristocracy,
+      formal rituals, elite spaces, and status objects — not billionaire-CEO work alone.
+    taxonomy_ids:
+      - "6.1"   # elite profession (down-weighted at aggregation)
+      - "6.6"   # material glamour
+      - "6.7"   # aristocracy / period status
+      - "5.3"   # weddings / formal social ritual
+      - "8.2"   # hotels, restaurants, leisure
+      - "8.3"   # jewelry, clothes, symbolic objects
+    weights:
+      "6.1": 0.5
+      default: 1.0
+    exclude_taxonomy_ids:
+      - "6.4"   # economic precarity ≠ luxury
+
+  appearance_presentation:
+    description: >
+      Character appearance cataloguing, grooming, gaze, and self-presentation
+      (distinct from sexual tension 2.1 and explicit 2.3).
+    taxonomy_ids:
+      - "1.6"
+      - "1.7"
+
+  everyday_intimacy_emotional_safety:
+    description: >
+      Non-explicit relational scenes that build romantic closeness through courtship,
+      affection, reassurance, ordinary companionship, practical help, trust, care,
+      and low-threat shared routines. Not restricted to domestic settings.
+      Stage 08 intimacy subtags (courtship_ritual, nonsexual_affection,
+      everyday_companionship, domestic_care, emotional_safety) refine this composite.
+    taxonomy_ids:
+      - "4.1"
+      - "4.2"
+      - "4.6"
+      - "2.2"
+      - "8.1"
+      - "8.2"
+    exclude_taxonomy_ids:
+      - "2.3"
+      - "4.7"
+      - "7.2"
+
+  status_dominance:
+    description: Reach / visibility axis — elite work and economic power signals.
+    taxonomy_ids:
+      - "6.1"
+      - "6.4"
+
+nodes:
+  # --- 1. Embodied & Sensory Experience ---
+  - id: "1.1"
+    name: Body Parts & Physical Reactions
+    group: Embodied & Sensory Experience
+    description: Body sensations and autonomic reactions (heartbeat, breath, trembling, blushing, sweating).
+
+  - id: "1.2"
+    name: Pain, Injury & Vulnerability
+    group: Embodied & Sensory Experience
+    description: Non-lethal pain, minor injuries, physical vulnerability not framed as deliberate violence.
+
+  - id: "1.5"
+    name: Exercise & Physical Activity
+    group: Embodied & Sensory Experience
+    description: Sport and non-violent physical activity, workouts, training, running, dancing, practice.
+
+  - id: "1.6"
+    name: Character Appearance & Self-Presentation
+    group: Embodied & Sensory Experience
+    description: >
+      Hair, grooming, clothes, shoes, mirror checks, body-shape cataloguing,
+      beauty evaluation, and deliberate self-presentation (not explicit sex).
+
+  - id: "1.7"
+    name: Gaze, Expression & Nonverbal Evaluation
+    group: Embodied & Sensory Experience
+    description: >
+      Eye contact, stares, smirks, winks, raised eyebrows, facial expression,
+      and self-conscious mutual awareness without explicit sexual acts.
+
+  # --- 2. Sexuality, Attraction & Intimacy ---
+  - id: "2.1"
+    name: Attraction & Sexual Tension
+    group: Sexuality, Attraction & Intimacy
+    description: Desire, longing, flirtation, charged gaze — sexual tension without explicit acts.
+
+  - id: "2.2"
+    name: Kissing & Non-Explicit Affection
+    group: Sexuality, Attraction & Intimacy
+    description: >
+      Gentle kisses, hugs, cuddling, flirtatious but non-explicit touch, and tender
+      physical closeness — affection without explicit sex. Distinct from courtship
+      planning (4.1/4.2) when touch is central; distinct from possessive claiming (4.7)
+      and explicit acts (2.3).
+
+  - id: "2.3"
+    name: Explicit Sexual Acts
+    group: Sexuality, Attraction & Intimacy
+    description: Clearly sexual behavior, oral/vaginal/anal sex, explicit stimulation, orgasms.
+
+  - id: "2.4"
+    name: Aftercare & Post-Sex Reflection
+    group: Sexuality, Attraction & Intimacy
+    description: Aftercare, cuddling, emotional processing immediately after sex.
+
+  # --- 3. Emotions, Cognition & Inner Life ---
+  - id: "3.1"
+    name: Positive Emotions & Contentment
+    group: Emotions, Cognition & Inner Life
+    description: >
+      Joy, relief, gratitude, contentment, happiness, calm — a character's internal
+      positive affect without a central relational beat. Not commitment/HEA (4.5),
+      reassurance/protection (4.6), or physical affection (2.2).
+
+  - id: "3.2"
+    name: Negative Emotions & Distress
+    group: Emotions, Cognition & Inner Life
+    description: Sadness, fear, shame, anxiety, emotional turmoil.
+
+  - id: "3.3"
+    name: Ambivalence & Internal Conflict
+    group: Emotions, Cognition & Inner Life
+    description: Mixed feelings, indecision, cognitive dissonance about relationship or life choices.
+
+  - id: "3.4"
+    name: Beliefs, Values & Moral Reflection
+    group: Emotions, Cognition & Inner Life
+    description: Characters reflecting on norms, values, ethics, promises, duties.
+
+  # --- 4. Relationship Trajectory (Main Couple) ---
+  - id: "4.1"
+    name: Meeting, First Impressions & Setup
+    group: Relationship Trajectory (Main Couple)
+    description: >
+      First encounters, meet-cutes, and early romantic approach: invitations, first-date
+      planning, flirtation, social greetings, dance-floor approach, and negotiating
+      whether an outing counts as a date.
+
+  - id: "4.2"
+    name: Bonding, Everyday Intimacy & Growth
+    group: Relationship Trajectory (Main Couple)
+    description: >
+      Non-explicit couple bonding beyond first meeting: courtship rituals, goodnight
+      farewells, shared meals or outings, everyday companionship, practical help,
+      and deepening trust — in any setting (home, restaurant, doorway, car, phone).
+      Prefer over 8.1 when the relational function dominates the setting.
+
+  - id: "4.3"
+    name: Secrets, Misunderstandings & Hidden Information
+    group: Relationship Trajectory (Main Couple)
+    description: Concealed facts, misunderstandings, withheld truths between the main couple.
+
+  - id: "4.4"
+    name: Conflict, Distance & Breakup Threats
+    group: Relationship Trajectory (Main Couple)
+    description: Arguments, distancing, threats of breakup, serious relational strain.
+
+  - id: "4.5"
+    name: Reconciliation, Commitments & HEA
+    group: Relationship Trajectory (Main Couple)
+    description: Apologies, reunions, proposals, explicit commitments, happily-ever-after moves.
+
+  - id: "4.6"
+    name: Protective Caretaking & Reassurance
+    group: Relationship Trajectory (Main Couple)
+    description: >
+      Emotional safety between the main couple: non-coercive protection, medical or
+      recovery caretaking, verbal reassurance, apologies and forgiveness, worry for
+      wellbeing, offers to help or drive someone home, trust-building, and respecting
+      limits — distinct from jealousy (4.7), violence (7.2), and pure domestic setting (8.1).
+
+  - id: "4.7"
+    name: Jealousy & Possessive Conflict
+    group: Relationship Trajectory (Main Couple)
+    description: >
+      Jealousy toward exes or rivals, possessive claiming, controlling jealousy
+      as relational conflict — not protective caretaking (4.6).
+
+  # --- 5. Social World Outside Main Couple ---
+  - id: "5.1"
+    name: Family & Kinship
+    group: Social World Outside Couple
+    description: Parents, children, siblings, in-laws, family obligations, pregnancy, parenthood.
+
+  - id: "5.2"
+    name: Friends & Social Circles
+    group: Social World Outside Couple
+    description: Friends, colleagues as social figures, found family, everyday social support.
+
+  - id: "5.3"
+    name: Community, Norms & Social Events
+    group: Social World Outside Couple
+    description: >
+      Parties, weddings, holidays, community judgment, gossip, public rituals,
+      and formal social display (including status-marked ceremonies).
+
+  # --- 6. Work, Wealth, Status & Institutions ---
+  - id: "6.1"
+    name: High-Status Profession & Institutional Power
+    group: Work, Wealth, Status & Institutions
+    description: >
+      Elite or high-status work — executive, surgeon, royalty, athlete, military rank,
+      deals and negotiations in professional contexts. NOT generic social bargaining.
+
+  - id: "6.2"
+    name: Work & Professional Identity
+    group: Work, Wealth, Status & Institutions
+    description: >
+      A character's job, career, or professional role (teacher, nurse, assistant, etc.).
+      Any lead or supporting character — not gender- or status-specific.
+
+  - id: "6.3"
+    name: Shared Workplaces & Professional Interaction
+    group: Work, Wealth, Status & Institutions
+    description: Scenes where main couple interacts within a shared work or institutional setting.
+
+  - id: "6.4"
+    name: Money, Housing & Economic Security
+    group: Work, Wealth, Status & Institutions
+    description: Financial worries, rent, housing stability, debts, economic dependency (precarity).
+
+  - id: "6.5"
+    name: Law, Medicine, Education & Formal Institutions
+    group: Work, Wealth, Status & Institutions
+    description: Courts, hospitals, schools, universities, state bureaucracy as institutions.
+
+  - id: "6.6"
+    name: Material Glamour & Consumption
+    group: Work, Wealth, Status & Institutions
+    description: >
+      Fashion, jewelry, designer clothes, modeling, alcohol at upscale gatherings,
+      luxury shopping, glamour without a single CEO/billionaire frame.
+
+  - id: "6.7"
+    name: Aristocracy & Period Status
+    group: Work, Wealth, Status & Institutions
+    description: Titled nobility, court formality, Regency/medieval status markers, aristocratic constraint.
+
+  # --- 7. Conflict, Risk & Harm ---
+  - id: "7.1"
+    name: Interpersonal Non-Romantic Conflict
+    group: Conflict, Risk & Harm
+    description: >
+      Antagonistic conflict (non-couple): arguments, hostility, or power struggles with
+      bosses, rivals, antagonists, or institutional gatekeepers — not main-couple conflict
+      (4.4), not family/kinship dynamics (5.1), not friend support circles (5.2), not
+      violence/threats (7.2), not accidents/disasters (7.3). Shared-workplace spats between
+      leads → 6.3 or 4.4, not 7.1.
+
+  - id: "7.2"
+    name: Violence, Threats & Coercion
+    group: Conflict, Risk & Harm
+    description: Physical violence, threats, coercive control, clear harm or menace.
+
+  - id: "7.3"
+    name: Risk, Danger & External Crises
+    group: Conflict, Risk & Harm
+    description: Accidents, crime, disasters, illness as external threats.
+
+  # --- 8. Spaces, Time, Activities & Objects ---
+  - id: "8.1"
+    name: Domestic Spaces & Routines
+    group: Spaces, Time, Activities & Objects
+    description: >
+      Home, kitchen, bedroom as setting; chores and domestic routines when the spatial
+      or routine frame dominates. Use as secondary when a topic is primarily courtship,
+      affection, or reassurance (→ 4.1, 4.2, 4.6, or 2.2 as main). "Domestic care" is
+      only a subpart of the broader everyday-intimacy axis, not a synonym for it.
+
+  - id: "8.2"
+    name: Public & Leisure Spaces
+    group: Spaces, Time, Activities & Objects
+    description: Restaurants, bars, hotels, parks, travel, holidays, public outings.
+
+  - id: "8.3"
+    name: Objects, Technology & Everyday Artefacts
+    group: Spaces, Time, Activities & Objects
+    description: Phones, cars, clothes, jewelry, gifts, symbolic objects.
+
+  - id: "8.4"
+    name: Time, Seasons & Temporal Framing
+    group: Spaces, Time, Activities & Objects
+    description: Passage of time, schedules, delays, seasons, holidays as temporal structure.
+
+  - id: "8.5"
+    name: Movement & Transit
+    group: Spaces, Time, Activities & Objects
+    description: Vehicles, elevators, driving, walking between locations, chase/transit beats.
+
+  # --- 9. Narrative Style & Discourse (included in Stage09 analysis) ---
+  - id: "9.1"
+    name: Dialogue Delivery & Speech Tags
+    group: Narrative Style & Discourse
+    description: Adverbs of saying, volume, tone (mumbled, hoarsely, whispered delivery patterns).
+
+  - id: "9.2"
+    name: Future-Tense Commitment & Promise Speech Acts
+    group: Narrative Style & Discourse
+    description: I'll/we'll vows, promises, threats of leaving as speech-act patterns.
+
+  - id: "9.3"
+    name: Humor Register
+    group: Narrative Style & Discourse
+    description: Chuckles, snorts, banter tone without a distinct plot event.
+
+  - id: "9.4"
+    name: Interior Monologue Particles
+    group: Narrative Style & Discourse
+    description: Hesitation fillers, rhetorical self-talk, discourse particles.
+
+  # --- 10. Subgenre & Plot Engine ---
+  - id: "10.1"
+    name: Paranormal & Immortal Beings
+    group: Subgenre & Plot Engine
+    description: Shifters, vampires, magic systems, supernatural creature appearance.
+
+  - id: "10.2"
+    name: Historical & Period Setting
+    group: Subgenre & Plot Engine
+    description: Regency, medieval, period-specific social furniture beyond couple conflict.
+
+  - id: "10.3"
+    name: Mystery, Suspense & Investigation
+    group: Subgenre & Plot Engine
+    description: Detectives, clues, crime procedural danger distinct from couple conflict.
+
+  - id: "10.4"
+    name: Action & Weaponized Conflict
+    group: Subgenre & Plot Engine
+    description: Gunfights, combat set-pieces, battle scenes (non-couple romantic conflict).
+
+  # --- Special ---
+  - id: noise
+    name: Noise / Technical / Paratext
+    group: Special
+    description: Boilerplate, front/back matter, artefacts, non-story material, encoding garbage.

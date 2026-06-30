@@ -39,7 +39,6 @@ from __future__ import annotations
 
 import json
 import logging
-import re
 import shutil
 import time
 from pathlib import Path
@@ -65,6 +64,17 @@ from src.stage06_topic_exploration.explore_retrained_model import (
     DEFAULT_EMBEDDING_MODEL,
     load_native_bertopic_model,
 )
+from src.stage09_category_mapping.taxonomy_v2 import (
+    DEFAULT_TAXONOMY_PATH,
+    apply_domain_heuristics,
+    enrich_with_category_names,
+    fallback_main_category,
+    load_taxonomy_nodes,
+    taxonomy_block_for_prompt,
+    taxonomy_by_id,
+    try_pre_route_taxonomy,
+    valid_taxonomy_ids,
+)
 
 LOGGER = logging.getLogger("stage09_zeroshot_taxonomy")
 logging.basicConfig(
@@ -74,424 +84,25 @@ logging.basicConfig(
 
 
 # ---------------------------------------------------------------------------
-# 1. Romance Corpus Topic Taxonomy
-#    (reconstructed from our earlier design with your adjustments)
+# 1. Romance Corpus Topic Taxonomy v2 (configs/romance_corpus_taxonomy_v2.yaml)
 # ---------------------------------------------------------------------------
 
-TAXONOMY_NODES: List[Dict[str, str]] = [
-    # 1. Embodied & Sensory Experience
-    {
-        "id": "1.1",
-        "name": "Body Parts & Physical Reactions",
-        "group": "Embodied & Sensory Experience",
-        "description": "Body sensations and reactions (heartbeat, breath, trembling, blushing, sweating, etc.).",
-    },
-    {
-        "id": "1.2",
-        "name": "Pain, Injury & Vulnerability",
-        "group": "Embodied & Sensory Experience",
-        "description": "Non-lethal pain, minor injuries, physical vulnerability not framed as deliberate violence.",
-    },
-    {
-        "id": "1.5",
-        "name": "Exercise & Physical Activity",
-        "group": "Embodied & Sensory Experience",
-        "description": "Sport and non-violent physical activity, workouts, training, running, dancing, hiking, practice.",
-    },
-    # 2. Sexuality, Attraction & Intimacy
-    {
-        "id": "2.1",
-        "name": "Attraction & Sexual Tension",
-        "group": "Sexuality, Attraction & Intimacy",
-        "description": "Desire, longing, flirtation, sexual tension without explicit acts.",
-    },
-    {
-        "id": "2.2",
-        "name": "Kissing & Non-Explicit Affection",
-        "group": "Sexuality, Attraction & Intimacy",
-        "description": "Kissing, cuddling, touching that is affectionate but not clearly explicit.",
-    },
-    {
-        "id": "2.3",
-        "name": "Explicit Sexual Acts",
-        "group": "Sexuality, Attraction & Intimacy",
-        "description": "Clearly sexual behavior, oral/vaginal/anal sex, explicit stimulation, orgasms.",
-    },
-    {
-        "id": "2.4",
-        "name": "Aftercare & Post-Sex Reflection",
-        "group": "Sexuality, Attraction & Intimacy",
-        "description": "Aftercare, cuddling, emotional processing immediately after sex.",
-    },
-    # 3. Emotions, Cognition & Inner Life
-    {
-        "id": "3.1",
-        "name": "Positive Emotions & Security",
-        "group": "Emotions, Cognition & Inner Life",
-        "description": "Joy, comfort, emotional safety, feeling loved and accepted.",
-    },
-    {
-        "id": "3.2",
-        "name": "Negative Emotions & Distress",
-        "group": "Emotions, Cognition & Inner Life",
-        "description": "Sadness, fear, shame, anxiety, emotional turmoil.",
-    },
-    {
-        "id": "3.3",
-        "name": "Ambivalence & Internal Conflict",
-        "group": "Emotions, Cognition & Inner Life",
-        "description": "Mixed feelings, indecision, cognitive dissonance about relationship or life choices.",
-    },
-    {
-        "id": "3.4",
-        "name": "Beliefs, Values & Moral Reflection",
-        "group": "Emotions, Cognition & Inner Life",
-        "description": "Characters reflecting on norms, values, ethics, promises, duties.",
-    },
-    # 4. Relationship Trajectory (Main Couple Only)
-    {
-        "id": "4.1",
-        "name": "Meeting, First Impressions & Setup",
-        "group": "Relationship Trajectory (Main Couple)",
-        "description": "First encounters, initial attraction or dislike, meet-cutes.",
-    },
-    {
-        "id": "4.2",
-        "name": "Bonding, Everyday Intimacy & Growth",
-        "group": "Relationship Trajectory (Main Couple)",
-        "description": "Dates, everyday closeness, trust building, deepening connection.",
-    },
-    {
-        "id": "4.3",
-        "name": "Secrets, Misunderstandings & Hidden Information",
-        "group": "Relationship Trajectory (Main Couple)",
-        "description": "Concealed facts, misunderstandings, withheld truths between the main couple.",
-    },
-    {
-        "id": "4.4",
-        "name": "Conflict, Distance & Breakup Threats",
-        "group": "Relationship Trajectory (Main Couple)",
-        "description": "Arguments, distancing, threats of breakup, serious relational strain.",
-    },
-    {
-        "id": "4.5",
-        "name": "Reconciliation, Commitments & HEA",
-        "group": "Relationship Trajectory (Main Couple)",
-        "description": "Apologies, reunions, proposals, explicit commitments, 'happily ever after' moves.",
-    },
-    # 5. Social World Outside Main Couple
-    {
-        "id": "5.1",
-        "name": "Family & Kinship",
-        "group": "Social World Outside Couple",
-        "description": "Parents, children, siblings, in-laws, family obligations, pregnancy, parenthood.",
-    },
-    {
-        "id": "5.2",
-        "name": "Friends & Social Circles",
-        "group": "Social World Outside Couple",
-        "description": "Friends, colleagues as social figures, found family, everyday social support.",
-    },
-    {
-        "id": "5.3",
-        "name": "Community, Norms & Social Events",
-        "group": "Social World Outside Couple",
-        "description": "Parties, weddings, holidays, community judgment, gossip, public rituals.",
-    },
-    # 6. Work, Wealth, Status & Institutions
-    {
-        "id": "6.1",
-        "name": "Hero's Elite Work & Business World",
-        "group": "Work, Wealth, Status & Institutions",
-        "description": "Billionaire/CEO work, deals, negotiations, high-status professional life of the hero.",
-    },
-    {
-        "id": "6.2",
-        "name": "Heroine's Work & Professional Identity",
-        "group": "Work, Wealth, Status & Institutions",
-        "description": "Heroine's job (e.g., teacher, doctor, assistant), often lower-paid or less prestigious.",
-    },
-    {
-        "id": "6.3",
-        "name": "Shared Workplaces & Professional Interaction",
-        "group": "Work, Wealth, Status & Institutions",
-        "description": "Scenes where main couple interacts within a shared work or institutional setting.",
-    },
-    {
-        "id": "6.4",
-        "name": "Money, Housing & Economic Security",
-        "group": "Work, Wealth, Status & Institutions",
-        "description": "Financial worries, rent, housing stability, debts, economic dependency.",
-    },
-    {
-        "id": "6.5",
-        "name": "Law, Medicine, Education & Formal Institutions",
-        "group": "Work, Wealth, Status & Institutions",
-        "description": "Courts, hospitals, schools, universities, state bureaucracy as institutions.",
-    },
-    # 7. Conflict, Risk & Harm (Non-sexual)
-    {
-        "id": "7.1",
-        "name": "Interpersonal Non-Romantic Conflict",
-        "group": "Conflict, Risk & Harm",
-        "description": "Conflicts with bosses, family, friends or antagonists outside the main couple.",
-    },
-    {
-        "id": "7.2",
-        "name": "Violence, Threats & Coercion",
-        "group": "Conflict, Risk & Harm",
-        "description": "Physical violence, threats, coercive control, clear harm or menace.",
-    },
-    {
-        "id": "7.3",
-        "name": "Risk, Danger & External Crises",
-        "group": "Conflict, Risk & Harm",
-        "description": "Accidents, crime, disasters, illness as external threats.",
-    },
-    # 8. Spaces, Time, Activities & Objects
-    {
-        "id": "8.1",
-        "name": "Domestic Spaces & Routines",
-        "group": "Spaces, Time, Activities & Objects",
-        "description": "Home, kitchen, bedroom as setting; chores, domestic routines.",
-    },
-    {
-        "id": "8.2",
-        "name": "Public & Leisure Spaces",
-        "group": "Spaces, Time, Activities & Objects",
-        "description": "Restaurants, bars, hotels, parks, travel, holidays, public outings.",
-    },
-    {
-        "id": "8.3",
-        "name": "Objects, Technology & Everyday Artefacts",
-        "group": "Spaces, Time, Activities & Objects",
-        "description": "Phones, cars, clothes, jewelry, gifts, symbolic objects.",
-    },
-    {
-        "id": "8.4",
-        "name": "Time, Seasons & Temporal Framing",
-        "group": "Spaces, Time, Activities & Objects",
-        "description": "Passage of time, schedules, delays, seasons, holidays as temporal structure.",
-    },
-    # Special "noise" category for junk topics
-    {
-        "id": "noise",
-        "name": "Noise / Technical / Paratext",
-        "group": "Special",
-        "description": "Boilerplate, front/back matter, artefacts, non-story material.",
-    },
-]
+TAXONOMY_CONFIG_PATH = DEFAULT_TAXONOMY_PATH
+TAXONOMY_NODES: List[Dict[str, str]] = load_taxonomy_nodes(str(TAXONOMY_CONFIG_PATH))
+TAXONOMY_BY_ID: Dict[str, Dict[str, str]] = taxonomy_by_id(str(TAXONOMY_CONFIG_PATH))
+VALID_TAXONOMY_IDS = valid_taxonomy_ids(str(TAXONOMY_CONFIG_PATH))
+TAXONOMY_TEXT_BLOCK = taxonomy_block_for_prompt(str(TAXONOMY_CONFIG_PATH))
 
 
-def _taxonomy_block_for_prompt() -> str:
-    """Render taxonomy into a compact text block for the system prompt."""
-    lines = []
-    for node in TAXONOMY_NODES:
-        lines.append(
-            f"- {node['id']} — {node['name']} "
-            f"({node['group']}): {node['description']}"
-        )
-    return "\n".join(lines)
-
-
-TAXONOMY_TEXT_BLOCK = _taxonomy_block_for_prompt()
-
-# Map from taxonomy id → full node info for quick lookup
-TAXONOMY_BY_ID: Dict[str, Dict[str, str]] = {
-    node["id"]: node for node in TAXONOMY_NODES
-}
-
-VALID_TAXONOMY_IDS = set(TAXONOMY_BY_ID.keys())
-
-
-def enrich_with_category_names(result: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Add human-readable names and groups for the chosen taxonomy ids
-    to the result JSON, for better readability and downstream analysis.
-
-    Adds:
-      - main_category_name
-      - main_category_group
-      - secondary_category_name
-      - secondary_category_group
-      - other_plausible_categories: list[{id, name, group}]
-    """
-    def _info(cid: Optional[str]) -> tuple[Optional[str], Optional[str]]:
-        if cid is None:
-            return None, None
-        node = TAXONOMY_BY_ID.get(cid)
-        if not node:
-            return None, None
-        return node.get("name"), node.get("group")
-
-    main_id = result.get("main_category_id")
-    sec_id = result.get("secondary_category_id")
-
-    main_name, main_group = _info(main_id)
-    sec_name, sec_group = _info(sec_id)
-
-    result["main_category_name"] = main_name
-    result["main_category_group"] = main_group
-    result["secondary_category_name"] = sec_name
-    result["secondary_category_group"] = sec_group
-
-    # Expand other_plausible_ids into rich objects, but keep ids for backwards compatibility
-    other_ids = result.get("other_plausible_ids", [])
-    if not isinstance(other_ids, list):
-        other_ids = []
-
-    other_categories = []
-    for cid in other_ids:
-        if not isinstance(cid, str):
-            continue
-        node = TAXONOMY_BY_ID.get(cid)
-        if not node:
-            continue
-        other_categories.append(
-            {
-                "id": cid,
-                "name": node.get("name"),
-                "group": node.get("group"),
-            }
-        )
-
-    result["other_plausible_categories"] = other_categories
-    return result
-
-
-# ---------------------------------------------------------------------------
-# 2. Domain heuristics for romance-specific corrections
-# ---------------------------------------------------------------------------
-
-EXPLICIT_EROGENOUS_TERMS = {
-    "breast", "breasts", "boob", "boobs",
-    "nipple", "nipples",
-    "clit", "clitoris",
-    "pussy", "cunt",
-    "cock", "dick", "penis",
-}
-
-VIOLENCE_TERMS = {
-    "punch", "punches", "hit", "hits", "kick", "kicks",
-    "gun", "guns", "knife", "stab", "stabbed",
-    "blood", "bleeding", "fight", "fighting",
-    "attack", "attacked", "assault",
-}
-
-FAMILY_TERMS = {
-    "mother", "mom", "mum", "father", "dad", "parents",
-    "sister", "brother", "daughter", "son",
-    "niece", "nephew", "in-law", "stepmother", "stepfather",
-    "sibling", "siblings", "parent", "child", "children",
-}
-
-# Categories that should not be overridden by work_or_school heuristic
-NON_OVERRIDABLE_CATEGORIES = {
-    "2.1", "2.2", "2.3", "2.4",  # Sexuality, Attraction & Intimacy
-    "3.1", "3.2", "3.3", "3.4",  # Emotions, Cognition & Inner Life
-    "4.1", "4.2", "4.3", "4.4", "4.5",  # Relationship Trajectory
-    "7.1", "7.2", "7.3",  # Conflict, Risk & Harm
-}
-
-
-def _token_set(keywords: List[str]) -> Set[str]:
-    """
-    Extract whole-word tokens from keywords list for exact matching.
-    
-    This prevents substring false positives like "sidekick" matching "kick"
-    or "burgundy" matching "gun".
-    """
-    joined = " ".join(str(k) for k in keywords).lower()
-    return set(re.findall(r"\b\w+\b", joined))
-
-
-def apply_domain_heuristics(
-    result: Dict[str, Any],
-    topic_metadata: Dict[str, Any],
-) -> Dict[str, Any]:
-    """
-    Post-hoc domain-specific fixes for common borderline cases.
-    Operates in-place on result and returns it.
-    
-    Fixes:
-    - Token-level matching for violence/sexuality terms (prevents substring false positives)
-    - Conservative work_or_school override (doesn't override relationship/conflict categories)
-    - Demotes spurious 7.2 (violence) back to 4.4 (relationship conflict) when appropriate
-    - Better separation of family vs. main-couple trajectory
-    """
-    main_id = result.get("main_category_id")
-    secondary_id = result.get("secondary_category_id")
-    primary_cats = topic_metadata.get("primary_categories", []) or []
-    keywords = topic_metadata.get("keywords", []) or []
-    
-    # Extract tokens for exact matching (prevents substring false positives)
-    tokens = _token_set(keywords)
-
-    # 1) If sexual_content + explicit erogenous terms, prefer 2.3 over 2.2
-    if (
-        "sexual_content" in primary_cats
-        and main_id == "2.2"
-        and EXPLICIT_EROGENOUS_TERMS.intersection(tokens)
-    ):
-        if secondary_id == "2.3":
-            secondary_id = None
-        result["secondary_category_id"] = secondary_id
-        result["main_category_id"] = "2.3"
-        main_id = "2.3"  # keep in sync
-
-    # 2) Safeguard: demote spurious 7.2 back to relationship conflict
-    # Catches cases where LLM chose 7.2 for non-violent romantic conflict
-    if main_id == "7.2":
-        has_real_violence = bool(VIOLENCE_TERMS.intersection(tokens))
-        if (
-            not has_real_violence
-            and ("relationship_conflict" in primary_cats or "romance_core" in primary_cats)
-        ):
-            # Treat as relationship conflict, not violence
-            result["secondary_category_id"] = "7.2"
-            result["main_category_id"] = "4.4"
-            main_id = "4.4"  # keep in sync
-
-    # 3) Violence heuristic: only if NOT a sexual_content topic
-    # Prevents "intense foreplay with blood/veins/heart racing" from being hijacked into violence
-    # Uses token-level matching to avoid false positives (e.g., "sidekick" matching "kick")
-    if (
-        "sexual_content" not in primary_cats
-        and VIOLENCE_TERMS.intersection(tokens)
-    ):
-        if main_id != "7.2":
-            # if main is non-7.x, demote it to secondary
-            if main_id not in {"noise", "7.1", "7.3"}:
-                result["secondary_category_id"] = main_id
-            result["main_category_id"] = "7.2"
-            main_id = "7.2"  # keep in sync
-
-    # 4) Better separation of "family & kinship" vs. "relationship trajectory"
-    # For topics about mother/sister/etc., prefer 5.1 Family & Kinship over 4.x
-    # unless the interaction is clearly between the main couple
-    if main_id in {"4.2", "4.3", "4.4"}:
-        # Lots of family talk, but no explicit couple signal
-        if FAMILY_TERMS.intersection(tokens) and "romance_core" not in primary_cats:
-            # Flip: family as main, trajectory as secondary
-            result["secondary_category_id"] = main_id
-            result["main_category_id"] = "5.1"
-            main_id = "5.1"  # keep in sync
-
-    # 5) If work_or_school primary but mapped somewhere vague, nudge to 6.x
-    # BUT: don't override relationship/conflict/emotion categories (2.x, 3.x, 4.x, 7.x)
-    # Only override setting/space categories (8.x) or if already in a non-work category
-    if (
-        "work_or_school" in primary_cats
-        and main_id not in NON_OVERRIDABLE_CATEGORIES
-        and main_id not in {"6.1", "6.2", "6.3", "6.4", "6.5", "noise"}
-    ):
-        # Only override if it's a setting/space category (8.x) or other non-critical category
-        # Keep original as secondary
-        result["secondary_category_id"] = main_id
-        result["main_category_id"] = "6.1"  # generic work anchor
-        main_id = "6.1"  # keep in sync
-
-    return result
+def reload_taxonomy(config_path: Optional[Path] = None) -> None:
+    """Reload taxonomy globals from YAML (for CLI --taxonomy-config)."""
+    global TAXONOMY_CONFIG_PATH, TAXONOMY_NODES, TAXONOMY_BY_ID, VALID_TAXONOMY_IDS, TAXONOMY_TEXT_BLOCK
+    path = config_path or DEFAULT_TAXONOMY_PATH
+    TAXONOMY_CONFIG_PATH = path
+    TAXONOMY_NODES = load_taxonomy_nodes(str(path))
+    TAXONOMY_BY_ID = taxonomy_by_id(str(path))
+    VALID_TAXONOMY_IDS = valid_taxonomy_ids(str(path))
+    TAXONOMY_TEXT_BLOCK = taxonomy_block_for_prompt(str(path))
 
 
 # ---------------------------------------------------------------------------
@@ -500,7 +111,13 @@ def apply_domain_heuristics(
 # ---------------------------------------------------------------------------
 
 TAXONOMY_ZEROSHOT_SYSTEM_PROMPT = f"""
-You are RomanceTaxonomyMapper, an expert assistant for assigning topics from modern heterosexual romantic and erotic fiction to a fixed analytic taxonomy.
+You are RomanceTaxonomyMapper, an expert assistant for assigning topics from modern English romance fiction (2000–2017) to a fixed analytic taxonomy.
+
+CORPUS CONTEXT (IMPORTANT)
+
+The corpus is multi-genre: contemporary, paranormal, historical, young-adult, and mystery.
+It is NOT a billionaire-only or CEO-romance subset. Do NOT default to 6.1 for generic negotiation,
+social scenes, or fashion unless elite professional work is clearly central.
 
 You will receive, for each topic:
 
@@ -510,7 +127,9 @@ You will receive, for each topic:
 
 - An LLM-generated label and scene_summary from a previous stage
 
-- Primary and secondary categories from the earlier labeler (e.g., "romance_core", "sexual_content", "setting:bedroom", "activity:kissing")
+- Primary and secondary categories from the earlier labeler (e.g., "romance_core", "narrative_style", "appearance_presentation", "activity:dressing")
+
+- Optional Stage 08 fields: content_type, exclude_from_axes, subgenre_hints, register
 
 - Optional representative snippets from the corpus
 
@@ -575,13 +194,29 @@ FIELD RULES
   - 5.x for social world outside the main couple (family, friends, community).
     Use 5.1 for family/kinship scenes even if they affect the couple indirectly.
 
-  - 6.x for work, money, heroine/hero jobs, institutional scenes.
+  - 6.x for work, money, institutional scenes, material glamour (6.6), aristocracy (6.7).
+    Use 6.1 ONLY for elite professional/business power — NOT generic social bargaining.
+    Use 6.2 for a character's job or professional identity (any lead or supporting character).
+    Use 6.6 for fashion, jewelry, modeling, upscale consumption.
+    Use 6.7 for titled nobility, court formality, period status markers.
+    Use 6.4 for economic precarity (rent, debt) — NOT luxury glamour.
+
+  - 1.6 for hair, grooming, clothes, mirror checks, body cataloguing, beauty evaluation
+    (neutral register, not explicit sex).
+
+  - 1.7 for gaze, eye color, smirk/wink, facial expression, self-conscious awareness.
+
+  - 9.x for dialogue delivery and discourse patterns (included in Stage09 analysis).
+
+  - 10.x for subgenre plot furniture ONLY when genre markers dominate the topic
+    (see rule 8 below). Scene beats (kiss, argument, dinner, phone) → 2.x–8.x first.
 
   - 2.x for sexual attraction/acts/intimacy.
 
   - 1.5 for any non-violent sport or physical training, workouts, exercise.
 
-  - 7.x for risk, harm, violence, coercion, non-romantic conflicts.
+  - 7.x for risk, harm, violence, coercion, and antagonistic non-couple conflict (7.1).
+    Use 7.1 for bosses, rivals, antagonists outside the main couple (see rule 2b).
     Use 7.2 ONLY for actual violence/threats, NOT for verbal arguments or
     emotional conflict between the main couple (those belong in 4.4).
 
@@ -589,6 +224,12 @@ FIELD RULES
 
   - 3.x when the topic is mostly ONE character's inner feelings, beliefs,
     cognitive states, or internal monologue WITHOUT much interaction.
+    Use 3.1 for standalone happiness/gratitude/relief (any character).
+    Use 4.5 when commitment/HEA is central; 4.6 when reassurance/protection
+    is central; 2.2 when affection is physical, not purely internal.
+    Use 4.1 for early romantic approach (first dates, flirtation, invitations);
+    4.2 for ongoing bonding and everyday intimacy; 4.6 for emotional safety
+    and repair. Do NOT map courtship/affection/reassurance to 8.1 alone.
 
   - "noise" only if the topic is mostly boilerplate or paratext.
 
@@ -652,6 +293,11 @@ CRITICAL BOUNDARY RULES
 - Use 3.x when the focus is on ONE character's internal feelings, reflections,
   or monologue about the relationship, without much interaction in the scene.
 
+- Use 3.1 (Positive Emotions & Contentment) for standalone happiness, gratitude,
+  relief, or contentment (any character). Use 4.5 when commitment/HEA is central;
+  4.6 when reassurance/protection is central; 2.2 when affection is physical,
+  not purely internal.
+
 - Use 5.1 (Family & Kinship) when the emotional core of the topic is about
   parents, children, or siblings, even if it indirectly affects the main couple.
   If a topic mentions "mother", "sister", "father" etc. and the scene is about
@@ -677,6 +323,15 @@ CRITICAL BOUNDARY RULES
 
 - Only use 7.2 when violence or coercion is the PRIMARY function of the scene.
 
+2b) 7.1 (Interpersonal Non-Romantic Conflict / Antagonistic Conflict, Non-Couple)
+
+- Arguments, hostility, or power struggles with bosses, rivals, antagonists, or
+  institutional gatekeepers — NOT main-couple conflict (→ 4.4), NOT family/kinship
+  dynamics (→ 5.1), NOT friend support circles (→ 5.2), NOT violence/threats (→ 7.2),
+  NOT accidents/disasters (→ 7.3).
+
+- Shared-workplace spats between the main couple → 6.3 or 4.4, NOT 7.1.
+
 3) 4.3 (Secrets, Misunderstandings) vs. 4.4 (Conflict, Distance)
 
 - Use 4.3 when the topic is about concealed facts, misunderstandings, or
@@ -687,6 +342,92 @@ CRITICAL BOUNDARY RULES
 
 - Do NOT use 4.3 for any emotionally tense talk; reserve it for topics where
   hidden information or misunderstandings are the core issue.
+
+4) LUXURY & STATUS (COMPOSITE — NO SINGLE "BILLIONAIRE" NODE)
+
+- Luxury appears indirectly: fashion/gowns (6.6), aristocratic formality (6.7),
+  weddings/parties (5.3), hotels/restaurants (8.2), jewelry/clothes as objects (8.3).
+- Do NOT collapse all wealth signals into 6.1. Prefer the most specific node.
+- Generic "negotiating terms" without business context → 4.x or 5.x, NOT 6.1.
+
+5) APPEARANCE vs ATTRACTION vs EXPLICIT
+
+- Cataloguing hair, clothes, mirror, grooming → 1.6 (or 1.7 if gaze/expression dominates).
+- Charged desire/longing with flirtation → 2.1.
+- Explicit sexual body focus → 2.3, NOT 1.6/1.7.
+
+6) STAGE 08 ROUTING HINTS
+
+- If primary includes narrative_style → prefer 9.1–9.4 (discourse is included in analysis).
+- Reserve exclude_from_axes for is_noise / paratext / publisher boilerplate only.
+- If primary includes appearance_presentation or secondary includes activity:dressing → 1.6.
+
+7) PROTECTIVE CARE vs JEALOUSY (H4)
+
+- Use 4.6 for non-coercive protection, reassurance, vows to keep someone safe, caretaking.
+- Use 4.7 for jealousy, possessive claiming, rivalry with exes — NOT generic 4.4 unless jealousy is absent.
+- Do NOT use 7.2 for protective vows unless actual violence/coercion is central.
+
+8) SUBGENRE & 10.x ROUTING
+
+- Default rule: If the topic is a scene beat (kiss, argument, dinner, phone), map to the
+  scene category (2.x–8.x). Subgenre is incidental.
+
+- Use 10.x as main ONLY when genre furniture dominates:
+  supernatural systems (10.1), period social furniture beyond generic conflict (10.2),
+  investigation/clues (10.3), combat set-pieces (10.4).
+
+- Subgenre hint routing:
+  - subgenre_hints [contemporary] or [young_adult] → do NOT use 10.x unless keywords
+    clearly show paranormal/historical/mystery/action.
+  - subgenre_paranormal / hints [paranormal] → 10.1
+  - subgenre_historical / hints [historical] → 10.2
+  - subgenre_suspense / hints [mystery] → 10.3
+  - Armed combat / gunfight keywords without couple-conflict center → 10.4
+
+- Blended topics: werewolf kiss → main 2.1 or 2.2, secondary 10.1; Regency ball
+  etiquette → main 5.3 or 6.7, secondary 10.2.
+
+- Negative rule: Never assign 10.x solely because Stage08 listed a contemporary hint.
+  If content_type is subgenre_marker → prefer 10.x matching subgenre_hints.
+
+9) EVERYDAY INTIMACY & EMOTIONAL SAFETY (composite axis — H1 / Goodreads hypothesis)
+
+Use taxonomy IDs 4.1, 4.2, 4.6, and 2.2 (plus 8.1 or 8.2 as secondary) for non-explicit
+scenes that create romantic closeness, comfort, trust, or low-threat bonding. This axis
+replaces the overly narrow "domestic care" framing — domestic routines are only one subpart.
+
+Include when the topic's central function is:
+- Courtship / romantic approach: first-date planning, dinner dates, flirtation, winks,
+  invitations, dance-floor approach, goodnight farewells, negotiating relationship terms.
+- Non-sexual affection: gentle kisses, hugs, reassuring touch, cautious physical approach,
+  flirtatious but non-explicit touch, physical closeness with anticipation.
+- Everyday companionship: shared meals, coffee/tea/kitchen moments, offers to drive home,
+  practical help, seasonal outing plans, invitation to sit together.
+- Emotional safety: reassurance, apologies, forgiveness, worry for wellbeing, trust-building,
+  medical/recovery care, vows to protect, respecting limits and negotiating when to stop.
+
+Do NOT restrict this axis to domestic settings. A restaurant, doorway, car, dance floor,
+phone call, or public social event can count if the function is courtship, affection, care,
+or emotional safety.
+
+Routing preferences:
+- Early approach / first-date / flirtation → 4.1 main (4.2 secondary if bonding dominates).
+- Ongoing dates, meals, goodnight scenes, ordinary closeness → 4.2 main.
+- Reassurance, apology, protection vow, medical care, limit negotiation → 4.6 main.
+- Kiss/hug/touch as the central beat → 2.2 main (4.2 or 4.6 secondary if relational).
+- Kitchen/chore routine with weak relational beat → 8.1 main; if care/bonding is clear → 4.2 or 4.6 main, 8.1 secondary.
+
+Do NOT use this axis for:
+- Explicit sex, coercive control, armed danger, jealousy/possessive claiming (4.7),
+  forceful intensity, or stalker threat — unless the topic clearly emphasizes aftercare
+  or repair (→ 2.4 or 4.6) rather than threat or domination.
+- "Claiming her mouth" or forceful bedroom encounters → 2.1, 2.3, or 4.7, NOT 4.2/4.6.
+- Pure setting description without a relational function → 8.x only.
+
+Stage 08 hints: intimacy:courtship_ritual, intimacy:nonsexual_affection,
+intimacy:everyday_companionship, intimacy:domestic_care, intimacy:emotional_safety
+support routing but do not override explicit sex or violence keywords.
 
 SPECIAL RULES ABOUT VIOLENCE VS EXERCISE
 
@@ -729,6 +470,11 @@ PREVIOUS SECONDARY CATEGORIES:
 
 {secondary_categories}
 
+STAGE 08 CONTENT TYPE: {content_type}
+STAGE 08 EXCLUDE FROM AXES: {exclude_from_axes}
+STAGE 08 SUBGENRE HINTS: {subgenre_hints}
+STAGE 08 REGISTER: {register}
+
 REPRESENTATIVE SNIPPETS (optional):
 
 {snippets}
@@ -758,6 +504,19 @@ Do NOT include explanations outside the JSON.
 # ---------------------------------------------------------------------------
 # 4. Core function: classify a single topic into the taxonomy
 # ---------------------------------------------------------------------------
+
+def _finalize_taxonomy_result(
+    result: Dict[str, Any],
+    topic_metadata: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Apply heuristics, enrich names, and propagate Stage 08 axis flags."""
+    taxonomy_path = str(TAXONOMY_CONFIG_PATH)
+    result = apply_domain_heuristics(result, topic_metadata, taxonomy_path)
+    result = enrich_with_category_names(result, taxonomy_path)
+    if "exclude_from_axes" not in result:
+        result["exclude_from_axes"] = bool(topic_metadata.get("exclude_from_axes", False))
+    return result
+
 
 def classify_topic_to_taxonomy_openrouter(
     *,
@@ -824,6 +583,27 @@ def classify_topic_to_taxonomy_openrouter(
     primary_categories = topic_metadata.get("primary_categories", [])
     secondary_categories = topic_metadata.get("secondary_categories", [])
     prev_is_noise = topic_metadata.get("is_noise", False)
+    content_type = topic_metadata.get("content_type", "(unknown)")
+    exclude_from_axes = topic_metadata.get("exclude_from_axes", False)
+    subgenre_hints = topic_metadata.get("subgenre_hints", []) or []
+    register = topic_metadata.get("register", "neutral")
+
+    pre_routed = try_pre_route_taxonomy(
+        topic_id,
+        topic_metadata,
+        str(TAXONOMY_CONFIG_PATH),
+    )
+    if pre_routed is not None:
+        result = _finalize_taxonomy_result(pre_routed, topic_metadata)
+        LOGGER.info(
+            "Topic %d pre-routed → main=%s (%s), secondary=%s, noise=%s",
+            topic_id,
+            result.get("main_category_id"),
+            result.get("main_category_name"),
+            result.get("secondary_category_id"),
+            result.get("is_noise"),
+        )
+        return result
 
     kw_str = ", ".join(keywords) if keywords else "(no keywords)"
     primary_str = ", ".join(primary_categories) if primary_categories else "(none)"
@@ -851,6 +631,10 @@ def classify_topic_to_taxonomy_openrouter(
         scene_summary=scene_summary or "(no scene summary)",
         primary_categories=primary_str,
         secondary_categories=secondary_str,
+        content_type=content_type,
+        exclude_from_axes=exclude_from_axes,
+        subgenre_hints=", ".join(subgenre_hints) if subgenre_hints else "(none)",
+        register=register,
         snippets=snippets_block,
     )
 
@@ -956,20 +740,7 @@ def classify_topic_to_taxonomy_openrouter(
                 result["secondary_category_id"] = None
                 result["is_noise"] = True
             else:
-                # Fallback: guess from previous categories
-                # Very lightweight heuristics
-                fallback = "4.2"  # generic romantic bonding
-                if "sexual_content" in primary_categories:
-                    fallback = "2.3"
-                elif "physical_affection" in primary_categories:
-                    fallback = "2.2"
-                elif "work_or_school" in primary_categories:
-                    fallback = "6.1"
-                elif "domestic_life" in primary_categories:
-                    fallback = "8.1"
-                elif "relationship_conflict" in primary_categories:
-                    fallback = "4.4"
-                result["main_category_id"] = fallback
+                result["main_category_id"] = fallback_main_category(primary_categories)
                 result["is_noise"] = False
 
         # Validate secondary ID
@@ -1003,11 +774,7 @@ def classify_topic_to_taxonomy_openrouter(
         confidence = confidence.lower()
     result["confidence"] = confidence
 
-    # Apply domain-specific adjustments
-    result = apply_domain_heuristics(result, topic_metadata)
-
-    # Add human-readable names/groups for the chosen taxonomy ids
-    result = enrich_with_category_names(result)
+    result = _finalize_taxonomy_result(result, topic_metadata)
 
     LOGGER.info(
         "Topic %d → main=%s (%s), secondary=%s (%s), noise=%s, confidence=%s",
@@ -1416,6 +1183,11 @@ def update_model_with_taxonomy_mappings(
 
 if __name__ == "__main__":
     import argparse
+    import os
+
+    from src.stage03_train.embeddings_hub import load_project_dotenv
+
+    load_project_dotenv()
 
     parser = argparse.ArgumentParser(
         description="Stage 09: Zero-shot taxonomy mapping of BERTopic topics using Mistral via OpenRouter.",
@@ -1499,6 +1271,12 @@ if __name__ == "__main__":
         help="Limit processing to first N topics (for testing, default: process all).",
     )
     parser.add_argument(
+        "--taxonomy-config",
+        type=Path,
+        default=DEFAULT_TAXONOMY_PATH,
+        help="Path to romance_corpus_taxonomy_v2.yaml.",
+    )
+    parser.add_argument(
         "--include-source-metadata",
         action="store_true",
         help="Include original metadata from labels JSON (keywords, label, categories, scene_summary, label_rationale) in output. Useful for manual evaluation of first N topics.",
@@ -1531,6 +1309,7 @@ if __name__ == "__main__":
 
     # Set log level
     logging.getLogger().setLevel(args.log_level)
+    reload_taxonomy(args.taxonomy_config)
 
     # Handle dry-run mode
     if args.dry_run:
@@ -1544,6 +1323,10 @@ if __name__ == "__main__":
             scene_summary=tm.get("scene_summary", "(no scene summary)"),
             primary_categories=", ".join(tm.get("primary_categories", [])),
             secondary_categories=", ".join(tm.get("secondary_categories", [])),
+            content_type=tm.get("content_type", "(unknown)"),
+            exclude_from_axes=tm.get("exclude_from_axes", False),
+            subgenre_hints=", ".join(tm.get("subgenre_hints", [])) or "(none)",
+            register=tm.get("register", "neutral"),
             snippets="(none)",
         )
         print("=== SYSTEM PROMPT ===")
@@ -1553,7 +1336,7 @@ if __name__ == "__main__":
         raise SystemExit(0)
 
     client, _ = load_openrouter_client(
-        api_key=args.api_key or "",
+        api_key=args.api_key or os.environ.get("OPENROUTER_API_KEY", ""),
         model_name=args.model_name,
     )
 

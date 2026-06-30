@@ -43,6 +43,11 @@ except ImportError:
     DEFAULT_BASE_DIR = None
     DEFAULT_EMBEDDING_MODEL = None
 
+try:
+    from src.stage09_category_mapping.taxonomy_v2 import composite_index_spec
+except ImportError:
+    composite_index_spec = None
+
 
 def setup_logging(output_dir: Path, log_file: str = "02_book_aggregation.log") -> logging.Logger:
     """Set up logging to both file and console."""
@@ -224,19 +229,43 @@ def compute_indices(
         fill_value=0.0
     ))
 
-    # Component sets
+    wide_id = (book_cat_long
+        .dropna(subset=['taxonomy_main_id'])
+        .groupby(['book_id', 'taxonomy_main_id'], as_index=False)['category_prop']
+        .sum()
+        .pivot_table(
+            index='book_id',
+            columns='taxonomy_main_id',
+            values='category_prop',
+            aggfunc='sum',
+            fill_value=0.0,
+        ))
+
+    # Component sets (taxonomy leaf names — v2)
     COMPONENTS = {
         "commitment_hea": ["Reconciliation, Commitments & HEA"],
         "bonding_growth": ["Bonding, Everyday Intimacy & Growth"],
-        "positive_emotions": ["Positive Emotions & Security"],
+        "positive_emotions": ["Positive Emotions & Contentment"],
         "nonexplicit_affection": ["Kissing & Non-Explicit Affection"],
         "explicit": ["Explicit Sexual Acts"],
         "miscommunication": ["Secrets, Misunderstandings & Hidden Information"],
         "neg_affect": ["Negative Emotions & Distress"],
         "breakup_conflict": ["Conflict, Distance & Breakup Threats"],
+        "protective_care": ["Protective Caretaking & Reassurance"],
+        "possessiveness": ["Jealousy & Possessive Conflict"],
         "violence_threat": ["Violence, Threats & Coercion"],
-        "elite_work": ["Hero's Elite Work & Business World"],
+        "external_crisis": ["Risk, Danger & External Crises"],
+        "elite_work": ["High-Status Profession & Institutional Power"],
+        "material_glamour": ["Material Glamour & Consumption"],
+        "aristocracy_status": ["Aristocracy & Period Status"],
+        "community_ritual": ["Community, Norms & Social Events"],
+        "economic_precarity": ["Money, Housing & Economic Security"],
         "public_leisure": ["Public & Leisure Spaces"],
+        "status_objects": ["Objects, Technology & Everyday Artefacts"],
+        "appearance_presentation": [
+            "Character Appearance & Self-Presentation",
+            "Gaze, Expression & Nonverbal Evaluation",
+        ],
         "domestic": ["Domestic Spaces & Routines"],
     }
 
@@ -246,41 +275,112 @@ def compute_indices(
             return pd.Series(0.0, index=wide.index)
         return wide[present].sum(axis=1)
 
+    def sum_taxonomy_ids(wide: pd.DataFrame, ids: list, weights: Optional[Dict[str, float]] = None) -> pd.Series:
+        if wide.empty:
+            return pd.Series(dtype=float)
+        default_w = (weights or {}).get("default", 1.0)
+        total = pd.Series(0.0, index=wide.index)
+        for cid in ids:
+            if cid not in wide.columns:
+                continue
+            w = (weights or {}).get(cid, default_w)
+            total = total + wide[cid] * w
+        return total
+
     # Build component columns
     components_df = pd.DataFrame(index=wide_name.index)
     for comp, names in COMPONENTS.items():
         components_df[comp] = sum_components(wide_name, names)
 
-    # Indices aligned to hypotheses
+    # Indices aligned to configs/theory_aligned_index_schema.yaml (v2.1)
     indices = pd.DataFrame(index=wide_name.index)
-    indices['love_over_sex'] = (
-        components_df['commitment_hea']
-        + components_df['bonding_growth']
-        + components_df['positive_emotions']
-        + components_df['nonexplicit_affection']
-        - components_df['explicit']
+
+    indices['payoff_safety'] = (
+        components_df['commitment_hea'] + components_df['positive_emotions']
     )
 
-    indices['hea_index'] = components_df['commitment_hea']
+    # H1: AX_love_over_sex — payoff minus explicit (difference, not log-ratio)
+    indices['love_over_sex'] = indices['payoff_safety'] - components_df['explicit']
 
+    # H2: AX_hea_index — commitment + rituals + symbolic objects (weighted)
+    if composite_index_spec is not None:
+        indices['hea_index'] = sum_taxonomy_ids(
+            wide_id, ["4.5", "5.3", "8.3"], {"default": 1.0, "8.3": 0.5}
+        )
+    else:
+        indices['hea_index'] = (
+            components_df['commitment_hea']
+            + components_df['community_ritual']
+            + 0.5 * components_df['status_objects']
+        )
+
+    indices['explicitness'] = components_df['explicit']
     indices['explicitness_ratio'] = (
         components_df['explicit']
-        / (components_df['explicit'] + components_df['commitment_hea'] + components_df['positive_emotions'] + components_df['nonexplicit_affection'] + 1e-9)
+        / (indices['payoff_safety'] + components_df['explicit'] + components_df['nonexplicit_affection'] + 1e-9)
     )
 
+    # H5: AX_dark_vs_tender
     indices['dark_vs_tender'] = (
-        (components_df['neg_affect'] + components_df['breakup_conflict'] + components_df['violence_threat'])
+        (
+            components_df['neg_affect']
+            + components_df['breakup_conflict']
+            + components_df['violence_threat']
+            + components_df['external_crisis']
+        )
         - (components_df['positive_emotions'] + components_df['nonexplicit_affection'])
     )
 
-    indices['miscommunication_balance'] = (
-        (components_df['commitment_hea'] + components_df['bonding_growth'] + components_df['positive_emotions'])
-        - components_df['miscommunication']
+    indices['miscommunication'] = components_df['miscommunication']
+    indices['miscommunication_balance'] = indices['payoff_safety'] - components_df['miscommunication']
+
+    # H4: protective vs possessive
+    indices['protective_care'] = components_df['protective_care']
+    indices['possessiveness'] = components_df['possessiveness']
+    indices['protective_vs_possessive'] = (
+        components_df['protective_care'] - components_df['possessiveness']
     )
 
+    indices['violence_coercion'] = components_df['violence_threat']
+    indices['external_crisis'] = components_df['external_crisis']
+
+    # Legacy proxy (6.1 + 8.2) — kept for backward compatibility
     indices['luxury_saturation_proxy'] = (
         components_df['elite_work'] + components_df['public_leisure']
     )
+
+    # v2 composite luxury index (multi-leaf, de-biased from billionaire 6.1)
+    if composite_index_spec is not None:
+        lux_spec = composite_index_spec("luxury_composite")
+        lux_ids = lux_spec.get("taxonomy_ids", [])
+        lux_weights = lux_spec.get("weights", {})
+        indices['luxury_composite'] = sum_taxonomy_ids(wide_id, lux_ids, lux_weights)
+    else:
+        indices['luxury_composite'] = (
+            components_df['material_glamour']
+            + components_df['aristocracy_status']
+            + components_df['community_ritual']
+            + components_df['public_leisure']
+            + components_df['status_objects']
+            + 0.5 * components_df['elite_work']
+        )
+
+    indices['status_dominance'] = (
+        components_df['elite_work'] + components_df['economic_precarity']
+    )
+
+    indices['appearance_presentation'] = components_df['appearance_presentation']
+
+    indices['luxury_x_love'] = indices['luxury_composite'] * indices['payoff_safety']
+
+    if composite_index_spec is not None:
+        ei_spec = composite_index_spec("everyday_intimacy_emotional_safety")
+        ei_ids = ei_spec.get("taxonomy_ids", [])
+        indices['everyday_intimacy_emotional_safety'] = sum_taxonomy_ids(wide_id, ei_ids)
+    else:
+        indices['everyday_intimacy_emotional_safety'] = (
+            sum_taxonomy_ids(wide_id, ["4.1", "4.2", "4.6", "2.2", "8.1", "8.2"])
+        )
 
     # Attach unmapped mass
     unmapped = (book_cat_long[['book_id', 'unmapped_topic_mass']].drop_duplicates('book_id')

@@ -182,12 +182,13 @@ def generate_label_from_keywords_openrouter(
         extra_body = {"reasoning": {"effort": reasoning_effort.lower(), "exclude": True}}
 
     def _api_call(temp: float) -> str:
+        top_p = 1.0 if temp <= 0.0 else 0.9
         kwargs: dict[str, Any] = {
             "model": model_name,
             "messages": messages,
             "max_tokens": max_new_tokens,
             "temperature": temp,
-            "top_p": 0.9,
+            "top_p": top_p,
             "frequency_penalty": 0.3,
         }
         if extra_body:
@@ -265,6 +266,7 @@ def generate_labels_streaming(
     quality_hints: dict[int, TopicHints] | None = None,
     resume: bool = True,
     rate_limit_delay_s: float = DEFAULT_RATE_LIMIT_DELAY_S,
+    topic_id_filter: set[int] | None = None,
 ) -> dict[int, dict[str, Any]]:
     """Stream labels for all topics; writes full metadata per topic."""
     json_path = Path(str(output_path.parent) + "/" + output_path.name + ".json")
@@ -286,6 +288,8 @@ def generate_labels_streaming(
 
     with stage_timer_local("Generating labels (streaming)"):
         for topic_id, keywords in pos_topics_iter:
+            if topic_id_filter is not None and topic_id not in topic_id_filter:
+                continue
             if limit is not None and processed_count >= limit:
                 break
 

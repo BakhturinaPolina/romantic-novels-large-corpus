@@ -28,6 +28,15 @@ python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.z
   --max-docs-per-topic 10
 ```
 
+### Dry-run (inspect prompts)
+
+```bash
+python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
+  --labels-json results/stage08_llm_labeling/labels_pos_openrouter_*.json \
+  --output-json /tmp/taxonomy_dry_run.json \
+  --dry-run
+```
+
 ## Inputs
 
 | Source | Path | Description |
@@ -111,6 +120,8 @@ python -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.a
 
 ## Notes
 
+- Taxonomy definition: `configs/romance_corpus_taxonomy_v2.yaml` (loaded via `src/stage09_category_mapping/taxonomy_v2.py`)
+- **Everyday Intimacy & Emotional Safety**: composite axis for courtship (4.1), bonding (4.2), reassurance (4.6), non-explicit affection (2.2), and setting beats (8.1/8.2). Stage 08 `intimacy:*` secondary subtags help pre-route mappings; see Stage 08 v2 prompts.
 - Uses same API pattern as Stage 08 LLM labeling
 - JSON-only output with defensive parsing
 - Validates taxonomy IDs against fixed taxonomy list

@@ -88,7 +88,8 @@ Use a small set of high-level categories. Choose at least one, typically two:
 ROMANCE-FOCUSED CATEGORIES
 - "romance_core" (general romantic relationship, emotions, bonding, conflict not explicitly sexual).
 - "relationship_conflict" (arguments, breakups, jealousy, misunderstandings, long-term tension).
-- "domestic_life" (home routines, family scenes, chores, shared living).
+- "domestic_life" (home settings, family/kinship scenes, chores, shared living — NOT the full
+  "everyday intimacy" axis; pair with intimacy:domestic_care when care-oriented).
 - "social_setting" (restaurants, bars, parties, public events).
 - "work_or_school" (workplaces, offices, classrooms, school life).
 
@@ -116,6 +117,13 @@ Use fine-grained tags in the form "type:value". Examples:
 
 - Relationship stage:
   - "relationship:first_meeting", "relationship:first_date", "relationship:long_term", "relationship:breakup", "relationship:reunion"
+
+- Everyday intimacy axis subtags (use with romance_core or physical_affection when justified):
+  - "intimacy:courtship_ritual" (dates, flirtation, invitations, goodnight farewells)
+  - "intimacy:nonsexual_affection" (gentle kisses, hugs, reassuring touch, physical closeness)
+  - "intimacy:everyday_companionship" (shared meals, coffee/tea, practical help, outing plans)
+  - "intimacy:domestic_care" (kitchen/chore/recovery routines at home — subtag only, not the full axis)
+  - "intimacy:emotional_safety" (reassurance, apologies, trust-building, respecting limits)
 
 Use 1–4 secondary categories per topic. Omit ones that are not clearly supported by keywords or snippets.
 

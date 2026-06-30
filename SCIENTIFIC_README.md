@@ -32,12 +32,14 @@ Repository structure note: active pipeline packages stay at the `src/` root, whi
 
 | # | Hypothesis | Operationalization |
 |---|------------|-------------------|
-| H1 | **Love-over-Sex**: Higher-rated novels emphasize emotional connection over explicit content | `(commitment + tenderness) − explicit` |
-| H2 | **HEA Index**: Stronger "Happily Ever After" signals predict appreciation | `commitment + symbolic_gifts + rituals` |
-| H3 | **Luxury × Love**: Wealth appeals only when paired with emotional depth | `luxury × (commitment + tenderness)` |
-| H4 | **Protectiveness vs Possessiveness**: Caring protection valued over jealousy | `protectiveness − jealousy` |
-| H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(negative_affect + threat) − tenderness` |
-| H6 | **Narrative Arc**: Successful romances progress from conflict to resolution | `begin→end: miscomm↓, repair↑`
+| H1 | **Love-over-Sex**: Higher-rated novels emphasize emotional connection over explicit content | `AX_payoff_safety − AX_explicitness` (4.5+3.1 minus 2.3) |
+| H2 | **HEA Index**: Stronger "Happily Ever After" signals predict appreciation | `4.5 + 5.3 + 0.5×8.3` (`AX_hea_index`) |
+| H3 | **Luxury × Love**: Wealth/glamour appeals mainly when paired with emotional depth | `AX_luxury_composite × AX_payoff_safety` |
+| H4 | **Protectiveness vs Possessiveness**: Caring protection valued over jealousy | `AX_protective_care − AX_possessiveness` (4.6 − 4.7) |
+| H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(3.2+4.4+7.2+7.3) − (3.1+2.2)` (`AX_dark_vs_tender`) |
+| H6 | **Narrative Arc**: Successful romances progress from conflict to resolution | `AX_narrative_arc_repair` — tertile Δ only (begin→end) |
+
+Macro-axis notes (v2.1): Full schema in `configs/theory_aligned_index_schema.yaml`. Taxonomy leaves in `configs/romance_corpus_taxonomy_v2.yaml`. `AX_status_dominance` (6.1+6.4) → reach; `AX_luxury_composite` → indirect glamour; `AX_appearance_presentation` (1.6+1.7) distinct from 2.1/2.3; **`AX_everyday_intimacy_emotional_safety`** (exploratory, H1) composites courtship, bonding, reassurance, and non-explicit affection (4.1+4.2+4.6+2.2+8.1+8.2); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas (`AX_narrative_arc_repair`).
 
 ---
 
@@ -97,7 +99,7 @@ Stages 01–02 do not write pipeline outputs under `results/` except optional do
 - UMAP, HDBSCAN, and vectorizer parameters
 - 300+ configurations evaluated
 
-**Model Selection**: Pareto efficiency analysis balancing coherence (topic interpretability) and diversity (topic variety). Pretest evidence on a smaller corpus of 100 "billionaire" romance novels showed `all-MiniLM-L12-v2` as the strongest coherence-focused option and `paraphrase-mpnet-base-v2` / `paraphrase-MiniLM-L6-v2` as the best balance options; lower-coherence candidates were removed from active Stage03 tuning.
+**Model Selection**: Pareto efficiency analysis balancing coherence and diversity. Embedding priors were informed by a **100-book billionaire pretest**; taxonomy v2 and composite luxury indices were recalibrated for the **multi-genre v3 corpus** (no single billionaire-lifestyle topic expected).
 
 **Fit sampling and search space**: BERTopic is fit on a stratified, train-only ~500k-sentence subsample (book-balanced, year-aware, author-capped, narrative-position-spread) selected as row indices into the full corpus, so the full-corpus embedding caches are reused by index rather than re-encoded; topics are then assigned to all books via `.transform()`. The OCTIS search space is a pretest-informed prior, adjusted for the 500k fit corpus. After an initial stratified run collapsed to 2–3 topics every trial, clustering bounds were narrowed (`hdbscan__min_cluster_size` 50–800, `bertopic__min_topic_size` 50–500) and topic words are filtered against a **fit-corpus** dictionary (not the smaller eval token set), so HDBSCAN clusters are not dropped artificially.
 
@@ -131,15 +133,20 @@ Post-merge audit: `scripts/audit_stoplist_non_names.py` flags likely non-name en
 
 Topics are mapped to two theoretical frameworks via zero-shot classification:
 
-**Romance Corpus Taxonomy** (8 groups, 30+ categories):
-1. Embodied & Sensory Experience
+**Romance Corpus Taxonomy v2** (10 groups, 40+ leaf categories; config: `configs/romance_corpus_taxonomy_v2.yaml`):
+
+1. Embodied & Sensory Experience — incl. **1.6 appearance**, **1.7 gaze/expression**
 2. Sexuality, Attraction & Intimacy
 3. Emotions, Cognition & Inner Life
 4. Relationship Trajectory (Main Couple)
 5. Social World Outside Couple
-6. Work, Wealth, Status & Institutions
+6. Work, Wealth, Status & Institutions — **6.1 de-biased** from billionaire CEO; **6.6 material glamour**, **6.7 aristocracy**
 7. Conflict, Risk & Harm
-8. Spaces, Time, Activities & Objects
+8. Spaces, Time, Activities & Objects — incl. **8.5 movement/transit**
+9. Narrative Style & Discourse — **excluded from macro-axes**
+10. Subgenre & Plot Engine
+
+**Composite indices** (Stage 10): `luxury_composite` (6.1×0.5 + 6.6 + 6.7 + 5.3 + 8.2 + 8.3), `appearance_presentation` (1.6 + 1.7), `luxury_x_love` for H3.
 
 **Radway's 13 Narrative Functions** (Radway, 1984):
 - Phase I (R1–R7): Initial Conflict & Isolation
@@ -188,7 +195,8 @@ See **`results/reports/01_stage_reports/`** for detailed methodology per stage w
 ### Mass Appeal (Popularity)
 
 Books with higher rating counts emphasize:
-- **Status/dominance themes** (wealth, power, alpha behavior)
+- **Status/dominance themes** (elite profession 6.1, economic security 6.4 — reach axis)
+- **Material luxury composite** (fashion, weddings, hotels, historical glamour — not CEO/billionaire topics alone)
 - **Emotional safety** (protective care, repair after conflict)
 - **Social support** (family, friends, community)
 

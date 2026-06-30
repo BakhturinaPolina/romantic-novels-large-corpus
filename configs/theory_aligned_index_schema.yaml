@@ -1,6 +1,8 @@
 # ============================================================
-# FROZEN MEASUREMENT SCHEMA — DATA-FAITHFUL VERSION
+# FROZEN MEASUREMENT SCHEMA — v2.1 (multi-genre corpus)
 # ============================================================
+# Taxonomy: configs/romance_corpus_taxonomy_v2.yaml
+# Book-level aggregation: src/stage10_correlation_analysis/data_preparation/02_book_aggregation.py
 
 global:
   normalization: zscore_global
@@ -10,21 +12,45 @@ global:
     cronbach_alpha: 0.60
     mcdonald_omega: 0.65
   sign_stability_threshold: 0.90
+  taxonomy_config: configs/romance_corpus_taxonomy_v2.yaml
+  exclude_from_axes_ids:
+    - noise
+  aggregation:
+    respect_exclude_from_axes: true
+    min_topic_mass_docs: null
+  schema_code_aliases:
+    AX_payoff_safety: payoff_safety
+    AX_love_over_sex: love_over_sex
+    AX_hea_index: hea_index
+    AX_explicitness: explicitness_ratio
+    AX_dark_vs_tender: dark_vs_tender
+    AX_miscommunication: miscommunication
+    AX_miscommunication_balance: miscommunication_balance
+    AX_protective_care: protective_care
+    AX_possessiveness: possessiveness
+    AX_protective_vs_possessive: protective_vs_possessive
+    AX_status_dominance: status_dominance
+    AX_luxury_composite: luxury_composite
+    AX_luxury_x_love: luxury_x_love
+    AX_appearance_presentation: appearance_presentation
+    AX_violence_coercion: violence_coercion
+    AX_external_crisis: external_crisis
+    AX_everyday_intimacy_emotional_safety: everyday_intimacy_emotional_safety
 
 # ------------------------------------------------------------
-# PAYOFF / SAFETY (CONFIRMATORY, CORE)
+# PAYOFF / SAFETY (CONFIRMATORY, CORE) — H2 partial, H3 factor
 # ------------------------------------------------------------
 AX_payoff_safety:
   type: evaluative
   hypothesis_role: confirmatory
+  hypothesis: [H2, H3]
   description: >
-    Secure relational payoff expressed through reconciliation,
-    commitment, and positive emotional resolution.
+    Secure relational payoff: reconciliation, commitment, positive emotional resolution.
 
   anchors:
     taxonomy:
-      - 4.5   # Reconciliation / commitment / HEA
-      - 3.1   # Positive emotions & security
+      - 4.5
+      - 3.1
 
   radway_weights:
     I: 0.0
@@ -36,32 +62,75 @@ AX_payoff_safety:
     weights: equal
 
 # ------------------------------------------------------------
-# LOVE OVER SEX (CONFIRMATORY, SIMPLIFIED)
+# LOVE OVER SEX (CONFIRMATORY) — H1
 # ------------------------------------------------------------
 AX_love_over_sex:
   type: evaluative
   hypothesis_role: confirmatory
+  hypothesis: [H1]
   description: >
-    Relative emphasis on emotional commitment and care
-    over explicit sexual content.
+    Emotional commitment and care minus explicit sexual content.
+    Difference form preferred when 2.3 mass is sparse.
 
   construction:
-    method: log_ratio
-    epsilon: 1e-6
-
-  numerator:
-    taxonomy:
-      - 4.5   # Commitment / HEA
-      - 3.1   # Positive emotions
-
-  denominator:
-    taxonomy:
-      - 2.3   # Explicit sexual acts
+    method: difference
+    minuend:
+      ref: AX_payoff_safety
+    subtrahend:
+      taxonomy:
+        - 2.3
 
   radway_weights:
     I: 0.2
     II: 0.7
     III: 1.0
+
+# ------------------------------------------------------------
+# HEA INDEX (CONFIRMATORY) — H2
+# ------------------------------------------------------------
+AX_hea_index:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H2]
+  description: >
+    Happily-ever-after signals: commitment, social rituals (weddings), symbolic gifts/objects.
+
+  anchors:
+    taxonomy:
+      - 4.5
+      - 5.3
+      - 8.3
+
+  construction:
+    method: weighted_sum
+    weights:
+      "4.5": 1.0
+      "5.3": 1.0
+      "8.3": 0.5
+
+# ------------------------------------------------------------
+# EXPLICITNESS (CONFIRMATORY / Stage 11 reach-quality split)
+# ------------------------------------------------------------
+AX_explicitness:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H1]
+  description: >
+    Explicit sexual content (quality-negative in pilot; reach-positive in some models).
+
+  anchors:
+    taxonomy:
+      - 2.3
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+  derived:
+    explicitness_ratio:
+      method: ratio
+      numerator_ref: AX_explicitness
+      denominator_refs: [AX_payoff_safety, AX_explicitness]
 
 # ------------------------------------------------------------
 # ATTRACTION / CHEMISTRY (EXPLORATORY)
@@ -70,11 +139,16 @@ AX_attraction:
   type: evaluative
   hypothesis_role: exploratory
   description: >
-    Non-explicit romantic chemistry and desire cues.
+    Non-explicit romantic chemistry and desire cues. Excludes 1.6, 1.7, 9.x.
 
   anchors:
     taxonomy:
-      - 2.1   # Attraction & sexual tension
+      - 2.1
+
+  excludes:
+    taxonomy:
+      - 1.6
+      - 1.7
 
   radway_weights:
     I: 0.7
@@ -86,17 +160,35 @@ AX_attraction:
     weights: equal
 
 # ------------------------------------------------------------
-# DYSREGULATED NEGATIVE AFFECT (EXPLORATORY)
+# APPEARANCE & SELF-PRESENTATION (EXPLORATORY)
+# ------------------------------------------------------------
+AX_appearance_presentation:
+  type: evaluative
+  hypothesis_role: exploratory
+  description: >
+    Hair, grooming, clothes, gaze, mirror checks — distinct from 2.1 and 2.3.
+
+  anchors:
+    taxonomy:
+      - 1.6
+      - 1.7
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+# ------------------------------------------------------------
+# BASELINE NEGATIVITY (EXPLORATORY)
 # ------------------------------------------------------------
 AX_dysregulated_negative_affect:
   type: evaluative
   hypothesis_role: exploratory
   description: >
-    Negative emotional states not followed by narrative repair.
+    Baseline negative emotional states (3.2). Distinct from couple conflict (4.4) and H5 composite.
 
   anchors:
     taxonomy:
-      - 3.2   # Negative emotions & distress
+      - 3.2
 
   radway_weights:
     I: 1.0
@@ -108,36 +200,183 @@ AX_dysregulated_negative_affect:
     weights: equal
 
 # ------------------------------------------------------------
-# STATUS / DOMINANCE (VISIBILITY)
+# DARK VS TENDER (CONFIRMATORY) — H5
 # ------------------------------------------------------------
-AX_status_dominance:
-  type: visibility
+AX_dark_vs_tender:
+  type: evaluative
   hypothesis_role: confirmatory
+  hypothesis: [H5]
   description: >
-    Status, wealth, and dominance fantasy signals
-    driving reach rather than quality.
+    Darkness (distress, couple conflict, external crisis/violence) minus tenderness.
+
+  construction:
+    method: difference
+    minuend:
+      taxonomy:
+        - 3.2
+        - 4.4
+        - 7.2
+        - 7.3
+    subtrahend:
+      taxonomy:
+        - 3.1
+        - 2.2
+
+# ------------------------------------------------------------
+# MISCOMMUNICATION (CONFIRMATORY) — RQ5 / Stage 11 drama obstacle
+# ------------------------------------------------------------
+AX_miscommunication:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H6]
+  description: >
+    Secrets, misunderstandings, and withheld information between the main couple.
 
   anchors:
     taxonomy:
-      - 6.1   # Hero's elite work
-      - 6.4   # Money / housing
+      - 4.3
 
   construction:
     method: weighted_sum
     weights: equal
 
 # ------------------------------------------------------------
-# CONTEXTUAL OBSTACLE (DESCRIPTIVE ONLY)
+# MISCOMMUNICATION BALANCE (EXPLORATORY)
 # ------------------------------------------------------------
-AX_external_obstacle:
-  type: contextual
-  hypothesis_role: descriptive
+AX_miscommunication_balance:
+  type: evaluative
+  hypothesis_role: exploratory
   description: >
-    External plot-driving obstacles (not evaluative).
+    Payoff/safety minus miscommunication — static book-level proxy for repair dominance.
+
+  construction:
+    method: difference
+    minuend:
+      ref: AX_payoff_safety
+    subtrahend:
+      ref: AX_miscommunication
+
+# ------------------------------------------------------------
+# PROTECTIVE CARE (CONFIRMATORY) — H4 positive leg
+# ------------------------------------------------------------
+AX_protective_care:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H4]
+  description: >
+    Non-coercive protective caretaking and reassurance (4.6).
 
   anchors:
     taxonomy:
-      - 7.2   # Violence / coercion
+      - 4.6
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+# ------------------------------------------------------------
+# POSSESSIVENESS (CONFIRMATORY) — H4 negative leg
+# ------------------------------------------------------------
+AX_possessiveness:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H4]
+  description: >
+    Jealous and possessive relational conflict (4.7).
+
+  anchors:
+    taxonomy:
+      - 4.7
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+# ------------------------------------------------------------
+# PROTECTIVE VS POSSESSIVE (CONFIRMATORY) — H4
+# ------------------------------------------------------------
+AX_protective_vs_possessive:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H4]
+  description: >
+    Caring protection valued over jealousy/possessiveness.
+
+  construction:
+    method: difference
+    minuend:
+      ref: AX_protective_care
+    subtrahend:
+      ref: AX_possessiveness
+
+# ------------------------------------------------------------
+# STATUS / DOMINANCE (VISIBILITY — reach, not quality)
+# ------------------------------------------------------------
+AX_status_dominance:
+  type: visibility
+  hypothesis_role: confirmatory
+  description: >
+    Elite professional power plus economic stakes (6.1 + 6.4 precarity).
+    Primary outcome: log_rating_count — not star quality.
+
+  anchors:
+    taxonomy:
+      - 6.1
+      - 6.4
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+  usage:
+    primary_outcome: log_rating_count
+
+# ------------------------------------------------------------
+# LUXURY COMPOSITE (VISIBILITY / H3)
+# ------------------------------------------------------------
+AX_luxury_composite:
+  type: visibility
+  hypothesis_role: confirmatory
+  hypothesis: [H3]
+  description: >
+    Indirect luxury/status display: fashion, aristocracy, rituals, elite spaces, objects.
+
+  composite_ref: luxury_composite
+
+  construction:
+    method: weighted_sum_from_composite
+
+  usage:
+    primary_outcome: log_rating_count
+
+# ------------------------------------------------------------
+# LUXURY × LOVE (H3 interaction)
+# ------------------------------------------------------------
+AX_luxury_x_love:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H3]
+  description: >
+    Wealth/glamour appeal paired with emotional depth (payoff/safety).
+
+  construction:
+    method: product
+    factors:
+      - AX_luxury_composite
+      - AX_payoff_safety
+
+# ------------------------------------------------------------
+# VIOLENCE / COERCION (CONTROL)
+# ------------------------------------------------------------
+AX_violence_coercion:
+  type: contextual
+  hypothesis_role: descriptive
+  description: >
+    Physical violence, threats, and coercive control (7.2). Control variable only.
+
+  anchors:
+    taxonomy:
+      - 7.2
 
   construction:
     method: weighted_sum
@@ -146,3 +385,80 @@ AX_external_obstacle:
   usage:
     allowed_as_predictor: false
     allowed_as_control: true
+
+# ------------------------------------------------------------
+# EXTERNAL CRISIS (CONTROL / H5 minuend component)
+# ------------------------------------------------------------
+AX_external_crisis:
+  type: contextual
+  hypothesis_role: descriptive
+  description: >
+    Accidents, crime, disasters, illness as external threats (7.3).
+
+  anchors:
+    taxonomy:
+      - 7.3
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+  usage:
+    allowed_as_predictor: false
+    allowed_as_control: true
+
+# ------------------------------------------------------------
+# EVERYDAY INTIMACY & EMOTIONAL SAFETY (EXPLORATORY) — H1 / Goodreads
+# ------------------------------------------------------------
+AX_everyday_intimacy_emotional_safety:
+  type: evaluative
+  hypothesis_role: exploratory
+  hypothesis: [H1]
+  description: >
+    Non-explicit relational closeness: courtship, non-sexual affection, everyday
+    companionship, practical care, reassurance, trust, and low-threat bonding.
+    Broader than domestic routines alone (8.1 is one subpart).
+
+  composite_ref: everyday_intimacy_emotional_safety
+
+  construction:
+    method: weighted_sum_from_composite
+
+  excludes:
+    taxonomy:
+      - 2.3
+      - 4.7
+      - 7.2
+
+# ------------------------------------------------------------
+# NARRATIVE ARC REPAIR (CONFIRMATORY) — H6, segment-level only
+# ------------------------------------------------------------
+AX_narrative_arc_repair:
+  type: evaluative
+  hypothesis_role: confirmatory
+  hypothesis: [H6]
+  description: >
+    Rising repair/payoff and falling miscommunication/negativity from begin to end.
+    NOT a book-level static proportion — requires tertile segment topic mixtures.
+
+  construction:
+    method: tertile_delta
+    level: segment
+    segments: [begin, middle, end]
+    rising:
+      taxonomy:
+        - 4.5
+        - 3.1
+    falling:
+      taxonomy:
+        - 4.3
+        - 3.2
+
+  usage:
+    book_level: false
+    segment_level: true
+
+# Legacy alias (deprecated — use AX_violence_coercion)
+AX_external_obstacle:
+  deprecated: true
+  alias_of: AX_violence_coercion
