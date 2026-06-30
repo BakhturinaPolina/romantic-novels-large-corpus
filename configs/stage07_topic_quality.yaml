@@ -1,0 +1,33 @@
+# Stage 07 deterministic topic-quality audit (non-LLM)
+
+representations:
+  - Main
+  - KeyBERT
+  - MMR
+  - POS
+
+top_k: 10
+snippets_per_topic: 6
+
+thresholds:
+  ultra_tiny_docs: 10
+  small_docs: 30
+  low_support_docs: 50
+  min_content_pos_per_rep: 3
+  min_coherence_c_v: 0.0
+  min_representation_diversity: 0.5
+  min_snippets: 2
+
+hard_exclude_rules:
+  - publisher_boilerplate
+  - multilingual_artifact
+  - empty_all_representations
+
+soft_review_rules:
+  - ultra_tiny_topic
+  - small_topic
+  - few_words_all_representations
+  - low_coherence_all_representations
+  - low_diversity_all_representations
+  - possible_character_residue
+  - missing_or_too_few_snippets

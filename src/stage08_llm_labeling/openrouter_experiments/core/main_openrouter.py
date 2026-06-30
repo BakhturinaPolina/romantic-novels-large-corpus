@@ -21,6 +21,7 @@ from src.stage08_llm_labeling.generate_labels import (
     extract_pos_topics,
     extract_pos_topics_from_json,
     integrate_labels_to_bertopic,
+    load_all_representations_from_json,
     load_bertopic_model,
 )
 from src.stage08_llm_labeling.openrouter_experiments.core.labeling_runners import (
@@ -40,7 +41,12 @@ from src.stage08_llm_labeling.openrouter_experiments.core.generate_labels_openro
     test_openrouter_authentication,
 )
 from src.stage08_llm_labeling.prompts.loader import DEFAULT_PROMPT_VERSION
-from src.stage08_llm_labeling.topic_quality_hints import load_topic_quality_hints
+from src.stage08_llm_labeling.topic_quality_hints import (
+    filter_topics_dict,
+    load_quality_adjudication_results,
+    load_topic_quality_hints,
+    topic_ids_for_labeling,
+)
 
 DEFAULT_OUTPUT_DIR = Path("results/stage08_llm_labeling")
 DEFAULT_STAGE08_CONFIG = Path("configs/stage08_labeling.yaml")
@@ -145,7 +151,35 @@ def parse_args() -> argparse.Namespace:
         "--quality-csv",
         type=Path,
         default=None,
-        help="Stage07 quality CSV for advisory post-hoc hints (all topics still labeled)",
+        help="Stage07 quality audit CSV for routing hints",
+    )
+
+    parser.add_argument(
+        "--quality-adjudication-jsonl",
+        type=Path,
+        default=None,
+        help="Stage08A adjudication results JSONL",
+    )
+
+    parser.add_argument(
+        "--label-all-topics",
+        action="store_true",
+        default=False,
+        help="Label every topic (ignore Stage07/08A routing filters)",
+    )
+
+    parser.add_argument(
+        "--skip-hard-exclude",
+        action="store_true",
+        default=True,
+        help="Skip topics with hard_exclude_candidate (default: True)",
+    )
+
+    parser.add_argument(
+        "--require-08a-pass",
+        action="store_true",
+        default=True,
+        help="Require Stage08A pass_to_labeling for soft-review topics (default: True)",
     )
 
     parser.add_argument(
@@ -354,6 +388,14 @@ def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
     # YAML resume default must not override explicit --no-resume / --resume on CLI.
     if labeling.get("resume") is not None and "--no-resume" not in sys.argv and "--resume" not in sys.argv:
         args.resume = bool(labeling["resume"])
+    if "--label-all-topics" not in sys.argv:
+        args.label_all_topics = bool(labeling.get("label_all_topics", args.label_all_topics))
+    if paths.get("quality_adjudication_jsonl") and args.quality_adjudication_jsonl is None:
+        args.quality_adjudication_jsonl = Path(paths["quality_adjudication_jsonl"])
+    if "skip_hard_exclude" in labeling and "--skip-hard-exclude" not in sys.argv:
+        args.skip_hard_exclude = bool(labeling["skip_hard_exclude"])
+    if "require_08a_pass" in labeling and "--require-08a-pass" not in sys.argv:
+        args.require_08a_pass = bool(labeling["require_08a_pass"])
 
 
 def main() -> None:
@@ -435,11 +477,19 @@ def main() -> None:
         print()
 
         quality_hints = None
+        adjudication_results = None
         if args.quality_csv and Path(args.quality_csv).is_file():
             quality_hints = load_topic_quality_hints(args.quality_csv)
             print(
-                f"[LABELING_CMD] Loaded Stage07 hints for {len(quality_hints)} topics "
-                "(advisory flags only — all topics still LLM-labeled)"
+                f"[LABELING_CMD] Loaded Stage07 hints for {len(quality_hints)} topics"
+            )
+            sys.stdout.flush()
+        if args.quality_adjudication_jsonl and Path(args.quality_adjudication_jsonl).is_file():
+            adjudication_results = load_quality_adjudication_results(
+                args.quality_adjudication_jsonl
+            )
+            print(
+                f"[LABELING_CMD] Loaded Stage08A adjudication for {len(adjudication_results)} topics"
             )
             sys.stdout.flush()
         print()
@@ -478,6 +528,19 @@ def main() -> None:
             )
             limit_msg = f" (limited to {args.limit_topics})" if args.limit_topics else ""
             print(f"[LABELING_CMD] ✓ Extracted {len(pos_topics_dict)} topics from BERTopic model{limit_msg}")
+            if quality_hints and not args.label_all_topics:
+                before = len(pos_topics_dict)
+                pos_topics_dict = filter_topics_dict(
+                    pos_topics_dict,
+                    quality_hints,
+                    adjudication_results,
+                    skip_hard_exclude=args.skip_hard_exclude,
+                    require_08a_pass=args.require_08a_pass,
+                    label_all_topics=False,
+                )
+                print(
+                    f"[LABELING_CMD] Stage07/08A filter: {before} -> {len(pos_topics_dict)} topics for labeling"
+                )
             sys.stdout.flush()
         except ValueError as e:
             print(f"[LABELING_CMD] ✗ Error: {e}")
@@ -609,6 +672,31 @@ def main() -> None:
         topic_id_filter: set[int] | None = None
         if args.topic_ids:
             topic_id_filter = {int(x.strip()) for x in args.topic_ids.split(",") if x.strip()}
+        if quality_hints and not args.label_all_topics:
+            routing_ids = topic_ids_for_labeling(
+                quality_hints,
+                adjudication_results,
+                skip_hard_exclude=args.skip_hard_exclude,
+                require_08a_pass=args.require_08a_pass,
+                label_all_topics=False,
+            )
+            topic_id_filter = (
+                routing_ids
+                if topic_id_filter is None
+                else topic_id_filter & routing_ids
+            )
+
+        topic_to_representations = None
+        if args.topics_json and args.topics_json.exists():
+            topic_to_representations = load_all_representations_from_json(
+                args.topics_json,
+                top_k=args.num_keywords,
+            )
+            print(
+                f"[LABELING_CMD] Loaded all keyword representations for "
+                f"{len(topic_to_representations)} topics"
+            )
+            sys.stdout.flush()
 
         max_chars_per_snippet = 1200
         if args.stage08_config and Path(args.stage08_config).is_file():
@@ -655,8 +743,8 @@ def main() -> None:
                 resume=args.resume,
                 rate_limit_delay_s=args.rate_limit_delay,
                 topic_id_filter=topic_id_filter,
+                topic_to_representations=topic_to_representations,
             )
-            print(f"[LABELING_CMD] ✓ Generated {len(topic_labels)} labels (streaming mode)")
             json_display_path = str(labels_path.parent) + "/" + labels_path.name + ".json"
             print(f"[LABELING_CMD] ✓ Labels already saved to {json_display_path}")
             sys.stdout.flush()
@@ -682,8 +770,8 @@ def main() -> None:
                 prompt_version=args.prompt_version,
                 quality_hints=quality_hints,
                 rate_limit_delay_s=args.rate_limit_delay,
+                topic_to_representations=topic_to_representations,
             )
-            print(f"[LABELING_CMD] ✓ Generated {len(topic_labels)} labels")
             sys.stdout.flush()
             print()
             

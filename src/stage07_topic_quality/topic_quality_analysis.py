@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 from bertopic import BERTopic
@@ -11,25 +12,427 @@ from gensim.corpora import Dictionary
 from gensim.models import CoherenceModel
 
 from src.common.topic_posthoc.rules import (
-    NOISE_ACTION,
+    HARD_EXCLUDE_ACTION,
+    SOFT_REVIEW_ACTION,
     classify_topics_from_info,
 )
-
 from src.stage06_topic_exploration.explore_retrained_model import (
     LOGGER,
     extract_all_topics,
     stage_timer,
 )
+from src.stage07_topic_quality.config import Stage07Config, load_stage07_config
 
-# Use the same logger as stage06_topic_exploration for consistency
 logger = LOGGER
+
+_CONTENT_POS_TAGS = frozenset({"NOUN", "VERB", "ADJ"})
+_SPACY_NLP = None
+
+
+def _get_spacy_nlp():
+    global _SPACY_NLP
+    if _SPACY_NLP is not None:
+        return _SPACY_NLP
+    try:
+        import spacy
+
+        _SPACY_NLP = spacy.load("en_core_web_sm", disable=["ner", "parser", "lemmatizer"])
+        return _SPACY_NLP
+    except OSError:
+        logger.warning("spaCy en_core_web_sm unavailable; content POS counts use word length")
+        return None
+
+
+def count_content_pos_words(words: list[str]) -> int:
+    """Count NOUN/VERB/ADJ among topic keywords via spaCy."""
+    if not words:
+        return 0
+    nlp = _get_spacy_nlp()
+    if nlp is None:
+        return len(words)
+    doc = nlp(" ".join(words))
+    return sum(1 for tok in doc if tok.pos_ in _CONTENT_POS_TAGS)
+
+
+def load_topic_snippets(csv_path: Path, *, max_per_topic: int = 6) -> dict[int, list[str]]:
+    """Load representative snippets grouped by topic from cleaned CSV."""
+    if not Path(csv_path).is_file():
+        logger.warning("Representative docs CSV not found: %s", csv_path)
+        return {}
+
+    df = pd.read_csv(csv_path)
+    if "topic" not in df.columns or "sentence" not in df.columns:
+        logger.warning("Representative docs CSV missing topic/sentence columns")
+        return {}
+
+    sort_cols = ["topic"]
+    if "doc_rank" in df.columns:
+        sort_cols.append("doc_rank")
+    df = df.sort_values(sort_cols)
+
+    grouped: dict[int, list[str]] = {}
+    for topic, group in df.groupby("topic"):
+        tid = int(topic)
+        if tid == -1:
+            continue
+        sentences = [
+            str(s).strip()
+            for s in group["sentence"].tolist()
+            if str(s).strip()
+        ]
+        grouped[tid] = sentences[:max_per_topic]
+    return grouped
+
+
+def attach_snippet_columns(
+    df: pd.DataFrame,
+    snippets_by_topic: dict[int, list[str]],
+    *,
+    snippets_per_topic: int = 6,
+) -> pd.DataFrame:
+    """Add n_snippets_available and snippet_1..snippet_N columns."""
+    out = df.copy()
+    n_cols = snippets_per_topic
+
+    def _snippet_list(topic_id: int) -> list[str]:
+        return snippets_by_topic.get(int(topic_id), [])
+
+    out["n_snippets_available"] = out["Topic"].apply(
+        lambda t: len(snippets_by_topic.get(int(t), []))
+    )
+    for i in range(1, n_cols + 1):
+        col = f"snippet_{i}"
+        out[col] = out["Topic"].apply(
+            lambda t, idx=i: _snippet_list(int(t))[idx - 1]
+            if len(_snippet_list(int(t))) >= idx
+            else ""
+        )
+    return out
+
+
+def get_representation_stats(
+    topic_model: BERTopic,
+    *,
+    representations: tuple[str, ...],
+    top_k: int = 10,
+) -> pd.DataFrame:
+    """Per-topic stats for each BERTopic representation aspect."""
+    all_topics = extract_all_topics(topic_model, top_k=top_k)
+    topic_ids = sorted(
+        {
+            tid
+            for rep in representations
+            for tid in all_topics.get(rep, {}).keys()
+        }
+    )
+
+    rows: list[dict[str, Any]] = []
+    for topic_id in topic_ids:
+        row: dict[str, Any] = {"Topic": topic_id}
+        for rep_name in representations:
+            word_list = all_topics.get(rep_name, {}).get(topic_id, [])
+            words = [str(w.get("word", "")).strip() for w in word_list if w.get("word")]
+            n_words = len(words)
+            n_unique = len(set(words))
+            row[f"{rep_name}_words"] = words
+            row[f"{rep_name}_n_words"] = n_words
+            row[f"{rep_name}_n_unique_words"] = n_unique
+            row[f"{rep_name}_n_content_pos"] = (
+                count_content_pos_words(words) if words else 0
+            )
+            row[f"{rep_name}_diversity_simple"] = (
+                n_unique / n_words if n_words else None
+            )
+        rows.append(row)
+
+    if not rows:
+        return pd.DataFrame(columns=["Topic"])
+    return pd.DataFrame(rows).sort_values("Topic").reset_index(drop=True)
+
+
+def compute_coherence_per_representation(
+    topic_model: BERTopic,
+    docs_tokens: list[list[str]],
+    dictionary: Dictionary,
+    *,
+    representations: tuple[str, ...],
+    top_k: int = 10,
+) -> pd.DataFrame:
+    """Per-topic c_v coherence for each representation aspect."""
+    all_topics = extract_all_topics(topic_model, top_k=top_k)
+    topic_ids = sorted(
+        {
+            tid
+            for rep in representations
+            for tid in all_topics.get(rep, {}).keys()
+        }
+    )
+
+    out = pd.DataFrame({"Topic": topic_ids})
+    for rep_name in representations:
+        rep_topics = all_topics.get(rep_name, {})
+        coh_topic_ids: list[int] = []
+        topics_as_ids: list[list[int]] = []
+
+        for topic_id in topic_ids:
+            word_dicts = rep_topics.get(topic_id, [])
+            words = [w["word"] for w in word_dicts]
+            ids = [dictionary.token2id[w] for w in words if w in dictionary.token2id]
+            if len(ids) >= 2:
+                coh_topic_ids.append(topic_id)
+                topics_as_ids.append(ids)
+
+        col = f"{rep_name}_coherence_c_v"
+        if not topics_as_ids:
+            out[col] = None
+            continue
+
+        with stage_timer(f"Computing per-topic {rep_name} coherence (c_v)"):
+            cm = CoherenceModel(
+                topics=topics_as_ids,
+                texts=docs_tokens,
+                dictionary=dictionary,
+                coherence="c_v",
+            )
+            scores = cm.get_coherence_per_topic()
+
+        coh_df = pd.DataFrame({"Topic": coh_topic_ids, col: scores})
+        out = out.merge(coh_df, on="Topic", how="left")
+
+    return out.sort_values("Topic").reset_index(drop=True)
+
+
+def get_topic_distribution(topic_model: BERTopic, min_size: int = 30) -> pd.DataFrame:
+    """Topic counts from get_topic_info (excludes topic -1)."""
+    info = topic_model.get_topic_info()
+    info = info[info["Topic"] != -1].copy()
+    info["keep_by_size"] = info["Count"] >= min_size
+    return info
+
+
+def _parse_flags_list(value: Any) -> list[str]:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return []
+    if isinstance(value, list):
+        return [str(x) for x in value if str(x)]
+    text = str(value).strip()
+    if not text or text == "[]":
+        return []
+    if text.startswith("[") and text.endswith("]"):
+        inner = text[1:-1].strip()
+        if not inner:
+            return []
+        return [p.strip().strip("'\"") for p in inner.split(",") if p.strip()]
+    return [p for p in text.replace("|", ";").split(";") if p]
+
+
+def _all_reps_weak_content_pos(row: pd.Series, reps: tuple[str, ...], min_pos: int) -> bool:
+    for rep in reps:
+        val = row.get(f"{rep}_n_content_pos")
+        if pd.isna(val) or int(val) >= min_pos:
+            return False
+    return True
+
+
+def _all_reps_low_coherence(
+    row: pd.Series, reps: tuple[str, ...], min_coh: float
+) -> bool:
+    for rep in reps:
+        val = row.get(f"{rep}_coherence_c_v")
+        if pd.isna(val):
+            continue
+        if float(val) >= min_coh:
+            return False
+    return True
+
+
+def _all_reps_low_diversity(
+    row: pd.Series, reps: tuple[str, ...], min_div: float
+) -> bool:
+    for rep in reps:
+        val = row.get(f"{rep}_diversity_simple")
+        if pd.isna(val):
+            continue
+        if float(val) >= min_div:
+            return False
+    return True
+
+
+def _all_reps_empty(row: pd.Series, reps: tuple[str, ...]) -> bool:
+    return all(int(row.get(f"{rep}_n_words", 0) or 0) == 0 for rep in reps)
+
+
+def _all_reps_low_info(
+    row: pd.Series,
+    reps: tuple[str, ...],
+    cfg: Stage07Config,
+) -> bool:
+    th = cfg.thresholds
+    return _all_reps_weak_content_pos(row, reps, th.min_content_pos_per_rep) and (
+        _all_reps_low_coherence(row, reps, th.min_coherence_c_v)
+        or _all_reps_low_diversity(row, reps, th.min_representation_diversity)
+    )
+
+
+def apply_stage07_routing_flags(
+    df: pd.DataFrame,
+    cfg: Stage07Config,
+) -> pd.DataFrame:
+    """Compute stage07_flags, hard/soft candidates, and recommended_next_step."""
+    reps = cfg.representations
+    th = cfg.thresholds
+    out = df.copy()
+
+    out["flag_ultra_tiny_docs"] = out["Count"] < th.ultra_tiny_docs
+    out["flag_small_docs"] = out["Count"] < th.small_docs
+    out["flag_low_support_docs"] = out["Count"] < th.low_support_docs
+    out["flag_empty_all_representations"] = out.apply(
+        lambda r: _all_reps_empty(r, reps), axis=1
+    )
+    out["flag_few_words_all_representations"] = out.apply(
+        lambda r: _all_reps_weak_content_pos(r, reps, th.min_content_pos_per_rep),
+        axis=1,
+    )
+    out["flag_low_coherence_all_representations"] = out.apply(
+        lambda r: _all_reps_low_coherence(r, reps, th.min_coherence_c_v),
+        axis=1,
+    )
+    out["flag_low_diversity_all_representations"] = out.apply(
+        lambda r: _all_reps_low_diversity(r, reps, th.min_representation_diversity),
+        axis=1,
+    )
+    if "n_snippets_available" in out.columns:
+        out["flag_missing_or_too_few_snippets"] = (
+            out["n_snippets_available"].fillna(0) < th.min_snippets
+        )
+    else:
+        out["flag_missing_or_too_few_snippets"] = False
+
+    posthoc_flags_col = out.get("posthoc_flags")
+    if posthoc_flags_col is not None:
+        out["flag_publisher_boilerplate"] = posthoc_flags_col.apply(
+            lambda f: "publisher_boilerplate" in _parse_flags_list(f)
+        )
+        out["flag_multilingual_artifact"] = posthoc_flags_col.apply(
+            lambda f: "multilingual_artifact" in _parse_flags_list(f)
+        )
+        out["flag_tiny_topic_posthoc"] = posthoc_flags_col.apply(
+            lambda f: "tiny_topic" in _parse_flags_list(f)
+        )
+    else:
+        out["flag_publisher_boilerplate"] = False
+        out["flag_multilingual_artifact"] = False
+        out["flag_tiny_topic_posthoc"] = False
+
+    out["flag_possible_character_residue"] = False
+    if "posthoc_flags" in out.columns:
+        out["flag_possible_character_residue"] = out["posthoc_flags"].apply(
+            lambda f: "possible_character_residue" in _parse_flags_list(f)
+            or "name_contaminated_review" in _parse_flags_list(f)
+        )
+
+    def _collect_flags(row: pd.Series) -> list[str]:
+        flags: list[str] = []
+        mapping = {
+            "flag_publisher_boilerplate": "publisher_boilerplate",
+            "flag_multilingual_artifact": "multilingual_artifact",
+            "flag_empty_all_representations": "empty_all_representations",
+            "flag_ultra_tiny_docs": "ultra_tiny_topic",
+            "flag_small_docs": "small_topic",
+            "flag_few_words_all_representations": "few_words_all_representations",
+            "flag_low_coherence_all_representations": "low_coherence_all_representations",
+            "flag_low_diversity_all_representations": "low_diversity_all_representations",
+            "flag_possible_character_residue": "possible_character_residue",
+            "flag_missing_or_too_few_snippets": "missing_or_too_few_snippets",
+        }
+        for col, name in mapping.items():
+            if bool(row.get(col)):
+                flags.append(name)
+        if bool(row.get("flag_tiny_topic_posthoc")) and "small_topic" not in flags:
+            flags.append("tiny_topic")
+        return flags
+
+    out["stage07_flags"] = out.apply(_collect_flags, axis=1)
+    out["stage07_reason"] = out["stage07_flags"].apply(
+        lambda flags: ";".join(flags) if flags else ""
+    )
+
+    def _hard_exclude(row: pd.Series) -> bool:
+        if bool(row.get("hard_exclude_candidate_posthoc")):
+            return True
+        flags = row.get("stage07_flags") or []
+        hard_hits = set(flags) & set(cfg.hard_exclude_rules)
+        if hard_hits:
+            return True
+        if bool(row.get("flag_ultra_tiny_docs")) and bool(
+            row.get("flag_missing_or_too_few_snippets")
+        ):
+            return True
+        return False
+
+    def _soft_review(row: pd.Series) -> bool:
+        if bool(row.get("soft_review_candidate_posthoc")):
+            return True
+        if bool(row.get("hard_exclude_candidate")):
+            return False
+        flags = row.get("stage07_flags") or []
+        soft_hits = set(flags) & set(cfg.soft_review_rules)
+        return bool(soft_hits)
+
+    if "hard_exclude_candidate_posthoc" not in out.columns:
+        out["hard_exclude_candidate_posthoc"] = False
+    if "soft_review_candidate_posthoc" not in out.columns:
+        out["soft_review_candidate_posthoc"] = False
+
+    out["hard_exclude_candidate"] = out.apply(_hard_exclude, axis=1)
+    out["soft_review_candidate"] = out.apply(_soft_review, axis=1)
+
+    def _next_step(row: pd.Series) -> str:
+        if bool(row.get("hard_exclude_candidate")):
+            return "exclude_before_llm"
+        if bool(row.get("soft_review_candidate")):
+            return "stage08_quality_adjudication"
+        return "stage08_labeling"
+
+    out["recommended_next_step"] = out.apply(_next_step, axis=1)
+
+    # Legacy aliases
+    out["exclude_from_axes"] = out["hard_exclude_candidate"]
+    out["noise_candidate"] = out["hard_exclude_candidate"] | out["soft_review_candidate"]
+    out["noise_reason"] = out["stage07_reason"]
+
+    # Legacy POS columns for downstream notebooks
+    if "POS_n_words" in out.columns:
+        out["n_pos_words"] = out["POS_n_words"]
+    if "POS_words" in out.columns:
+        out["pos_words"] = out["POS_words"]
+    if "POS_coherence_c_v" in out.columns:
+        out["coherence_c_v_pos"] = out["POS_coherence_c_v"]
+    out["flag_small"] = out["flag_small_docs"]
+    out["flag_few_pos"] = out["flag_few_words_all_representations"]
+    out["flag_low_coh"] = out["flag_low_coherence_all_representations"]
+
+    def _inspection_label(row: pd.Series) -> str:
+        base_name = str(row.get("Name", "") or "").strip()
+        if bool(row.get("hard_exclude_candidate")):
+            flags = row.get("stage07_flags") or []
+            tag = flags[0] if flags else "hard_exclude"
+            return f"[HARD_EXCLUDE:{tag}] {base_name}"
+        if bool(row.get("soft_review_candidate")):
+            flags = row.get("stage07_flags") or []
+            tag = flags[0] if flags else "soft_review"
+            return f"[SOFT_REVIEW:{tag}] {base_name}"
+        return base_name
+
+    out["inspection_label"] = out.apply(_inspection_label, axis=1)
+    return out
 
 
 def merge_name_cleaning_flags(
     quality_df: pd.DataFrame,
     ratio_csv: Path,
 ) -> pd.DataFrame:
-    """Merge character-name cleaning flags from ratio CSV into quality table."""
+    """Merge character-name cleaning flags into quality table (soft review only)."""
     if not Path(ratio_csv).is_file():
         logger.warning("Name cleaning ratio CSV not found: %s", ratio_csv)
         return quality_df
@@ -42,10 +445,8 @@ def merge_name_cleaning_flags(
     merge_cols = [
         "Topic",
         "character_name_ratio",
-        "content_type",
         "posthoc_flags",
         "posthoc_reason",
-        "exclude_from_axes",
         "name_cleaned",
         "suggested_action",
     ]
@@ -55,21 +456,15 @@ def merge_name_cleaning_flags(
 
     merged = quality_df.merge(name_subset, on="Topic", how="left", suffixes=("_old", ""))
 
-    for col in ("content_type", "posthoc_flags", "posthoc_reason", "exclude_from_axes", "suggested_action"):
+    for col in ("posthoc_flags", "posthoc_reason", "suggested_action"):
         old_col = f"{col}_old"
         if old_col in merged.columns:
             if col == "posthoc_flags":
                 def _combine_flags(row: pd.Series) -> list:
-                    old = row.get(old_col)
-                    new = row.get(col)
-                    old_list = old if isinstance(old, list) else []
-                    new_list = new if isinstance(new, list) else []
-                    if isinstance(old, str) and old:
-                        old_list = [p for p in old.split("|") if p]
-                    if isinstance(new, str) and new:
-                        new_list = [p for p in new.split("|") if p]
+                    old = _parse_flags_list(row.get(old_col))
+                    new = _parse_flags_list(row.get(col))
                     combined: list[str] = []
-                    for f in list(old_list) + list(new_list):
+                    for f in old + new:
                         if f and f not in combined:
                             combined.append(f)
                     return combined
@@ -79,13 +474,14 @@ def merge_name_cleaning_flags(
                 merged[col] = merged.apply(
                     lambda r: ";".join(
                         p
-                        for p in (str(r.get(f"{col}_old", "") or ""), str(r.get(col, "") or ""))
+                        for p in (
+                            str(r.get(f"{col}_old", "") or ""),
+                            str(r.get(col, "") or ""),
+                        )
                         if p
                     ),
                     axis=1,
                 )
-            elif col == "exclude_from_axes":
-                merged[col] = merged[old_col].fillna(False) | merged[col].fillna(False)
             else:
                 merged[col] = merged[col].fillna(merged[old_col])
             merged.drop(columns=[old_col], inplace=True)
@@ -95,51 +491,7 @@ def merge_name_cleaning_flags(
     if "character_name_ratio" in merged.columns:
         merged["character_name_ratio"] = merged["character_name_ratio"].fillna(0.0)
 
-    def _combined_reason(row: pd.Series) -> str:
-        parts = []
-        for key in ("noise_reason", "posthoc_reason"):
-            val = str(row.get(key, "") or "").strip()
-            if val:
-                parts.extend(p for p in val.split(";") if p)
-        seen: set[str] = set()
-        deduped = []
-        for p in parts:
-            if p not in seen:
-                seen.add(p)
-                deduped.append(p)
-        return ";".join(deduped)
-
-    merged["noise_reason"] = merged.apply(_combined_reason, axis=1)
-    merged["noise_candidate"] = (
-        merged["noise_candidate"].astype(bool)
-        | merged["exclude_from_axes"].astype(bool)
-    )
-
-    def _inspection_label(row: pd.Series) -> str:
-        base_name = str(row.get("Name", "") or "").strip()
-        posthoc_flags = row.get("posthoc_flags")
-        if isinstance(posthoc_flags, list):
-            noise_rules = [f for f in posthoc_flags if f]
-        elif isinstance(posthoc_flags, str) and posthoc_flags:
-            noise_rules = [p for p in posthoc_flags.split("|") if p]
-        else:
-            noise_rules = []
-        if noise_rules and row.get("suggested_action") == NOISE_ACTION:
-            rule_tag = noise_rules[0]
-            return f"[NOISE:{rule_tag}] {base_name}"
-        if row.get("name_cleaned"):
-            return f"[NAME_CLEANED] {base_name}"
-        reasons = row.get("noise_reason", "")
-        if reasons:
-            return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
-        return base_name
-
-    merged["inspection_label"] = merged.apply(_inspection_label, axis=1)
-    n_exclude = int(merged["exclude_from_axes"].sum())
-    logger.info(
-        "[NAME_CLEANING] merged into quality table: %d topics exclude_from_axes",
-        n_exclude,
-    )
+    logger.info("[NAME_CLEANING] merged character-name flags into quality table")
     return merged
 
 
@@ -164,247 +516,96 @@ def merge_posthoc_flags(
     )
     posthoc_cols = [
         "Topic",
-        "content_type",
         "posthoc_flags",
         "posthoc_reason",
         "exclude_from_axes",
+        "hard_exclude_candidate",
+        "soft_review_candidate",
         "suggested_action",
     ]
     posthoc_cols = [c for c in posthoc_cols if c in classified.columns]
     posthoc_subset = classified[posthoc_cols].copy()
     posthoc_subset = posthoc_subset[posthoc_subset["Topic"] != -1]
+    posthoc_subset = posthoc_subset.rename(
+        columns={
+            "hard_exclude_candidate": "hard_exclude_candidate_posthoc",
+            "soft_review_candidate": "soft_review_candidate_posthoc",
+        }
+    )
 
     merged = quality_df.merge(posthoc_subset, on="Topic", how="left")
     merged["posthoc_reason"] = merged["posthoc_reason"].fillna("")
-    merged["exclude_from_axes"] = merged["exclude_from_axes"].fillna(False)
-
-    def _combined_reason(row: pd.Series) -> str:
-        parts = [p for p in (row.get("noise_reason", ""), row.get("posthoc_reason", "")) if p]
-        return ";".join(parts)
-
-    merged["noise_reason"] = merged.apply(_combined_reason, axis=1)
-    merged["noise_candidate"] = (
-        merged["noise_candidate"].astype(bool)
-        | merged["exclude_from_axes"].astype(bool)
+    merged["posthoc_flags"] = merged["posthoc_flags"].apply(
+        lambda x: _parse_flags_list(x) if not isinstance(x, list) else x
     )
-
-    def _inspection_label(row: pd.Series) -> str:
-        base_name = str(row.get("Name", "") or "").strip()
-        posthoc_flags = row.get("posthoc_flags")
-        if isinstance(posthoc_flags, list):
-            noise_rules = [f for f in posthoc_flags if f]
-        else:
-            noise_rules = []
-        if noise_rules and row.get("suggested_action") == NOISE_ACTION:
-            rule_tag = noise_rules[0]
-            return f"[NOISE:{rule_tag}] {base_name}"
-        reasons = row.get("noise_reason", "")
-        if reasons:
-            return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
-        return base_name
-
-    merged["inspection_label"] = merged.apply(_inspection_label, axis=1)
-    n_posthoc = int(merged["exclude_from_axes"].sum())
-    logger.info("[POSTHOC] merged into quality table: %d topics exclude_from_axes", n_posthoc)
+    merged["hard_exclude_candidate_posthoc"] = merged[
+        "hard_exclude_candidate_posthoc"
+    ].fillna(False)
+    merged["soft_review_candidate_posthoc"] = merged[
+        "soft_review_candidate_posthoc"
+    ].fillna(False)
+    n_hard = int(merged["hard_exclude_candidate_posthoc"].sum())
+    logger.info("[POSTHOC] merged into quality table: %d hard-exclude topics", n_hard)
     return merged
-
-
-def get_topic_distribution(topic_model: BERTopic, min_size: int = 30) -> pd.DataFrame:
-    """
-    Get topic counts and a 'keep_by_size' flag.
-    
-    Args:
-        topic_model: BERTopic model instance
-        min_size: Minimum number of documents per topic to be considered valid
-        
-    Returns:
-        DataFrame with columns: Topic, Count, Name, Representation, keep_by_size
-    """
-    info = topic_model.get_topic_info()
-    # Exclude outlier topic -1
-    info = info[info["Topic"] != -1].copy()
-    info["keep_by_size"] = info["Count"] >= min_size
-    return info
-
-
-def get_pos_representation_stats(
-    topic_model: BERTopic, top_k: int = 10
-) -> pd.DataFrame:
-    """
-    Extract POS representation topics and basic stats.
-    
-    Args:
-        topic_model: BERTopic model instance
-        top_k: Number of top words per topic to consider
-        
-    Returns:
-        DataFrame with columns: Topic, n_pos_words, pos_words
-    """
-    all_topics = extract_all_topics(topic_model, top_k=top_k)
-    pos_topics = all_topics.get("POS", {})
-
-    rows = []
-    for topic_id, word_list in pos_topics.items():
-        n_words = len(word_list)
-        rows.append(
-            {
-                "Topic": topic_id,
-                "n_pos_words": n_words,
-                "pos_words": [w["word"] for w in word_list],
-            }
-        )
-
-    if not rows:
-        logger.warning("No POS topics found in extracted aspects.")
-        return pd.DataFrame(columns=["Topic", "n_pos_words", "pos_words"])
-
-    df = pd.DataFrame(rows).sort_values("Topic").reset_index(drop=True)
-    return df
-
-
-def compute_pos_coherence_per_topic(
-    topic_model: BERTopic,
-    docs_tokens: list[list[str]],
-    dictionary: Dictionary,
-    top_k: int = 10,
-) -> pd.DataFrame:
-    """
-    Compute c_v coherence per topic, using POS representation words.
-    
-    We convert words to ids to align with Stage 06's dictionary usage.
-    
-    Args:
-        topic_model: BERTopic model instance
-        docs_tokens: List of tokenized documents
-        dictionary: Gensim dictionary for coherence computation
-        top_k: Number of top words per topic to consider
-        
-    Returns:
-        DataFrame with columns: Topic, coherence_c_v_pos
-    """
-    all_topics = extract_all_topics(topic_model, top_k=top_k)
-    pos_topics = all_topics.get("POS", {})
-
-    topic_ids = []
-    topic_ids_lists = []
-
-    for topic_id, word_dicts in pos_topics.items():
-        words = [w["word"] for w in word_dicts]
-        ids = [dictionary.token2id[w] for w in words if w in dictionary.token2id]
-        if not ids:
-            continue
-        topic_ids.append(topic_id)
-        topic_ids_lists.append(ids)
-
-    if not topic_ids_lists:
-        logger.warning("No POS topics with valid dictionary tokens for coherence.")
-        return pd.DataFrame(columns=["Topic", "coherence_c_v_pos"])
-
-    with stage_timer("Computing per-topic POS coherence (c_v)"):
-        cm = CoherenceModel(
-            topics=topic_ids_lists,
-            texts=docs_tokens,
-            dictionary=dictionary,
-            coherence="c_v",
-        )
-        scores = cm.get_coherence_per_topic()
-
-    df = pd.DataFrame(
-        {
-            "Topic": topic_ids,
-            "coherence_c_v_pos": scores,
-        }
-    ).sort_values("Topic").reset_index(drop=True)
-
-    return df
 
 
 def build_topic_quality_table(
     topic_model: BERTopic,
     docs_tokens: list[list[str]],
     dictionary: Dictionary,
-    min_size: int = 30,
-    min_pos_words: int = 3,
-    min_pos_coherence: float = 0.0,
-    top_k: int = 10,
     *,
+    stage07_config: Stage07Config | None = None,
+    stage07_config_path: Path | None = None,
     topic_info_path: Path | None = None,
     rules_config: Path | None = None,
     name_cleaning_csv: Path | None = None,
+    representative_docs_csv: Path | None = None,
+    # Legacy CLI overrides
+    min_size: int | None = None,
+    min_pos_words: int | None = None,
+    min_pos_coherence: float | None = None,
+    top_k: int | None = None,
 ) -> pd.DataFrame:
-    """
-    Combine size, POS stats, and POS coherence; flag candidate noisy topics.
-    
-    This function does NOT remove topics from the model; it only flags them
-    for manual inspection.
-    
-    Args:
-        topic_model: BERTopic model instance
-        docs_tokens: List of tokenized documents
-        dictionary: Gensim dictionary for coherence computation
-        min_size: Minimum number of documents per topic
-        min_pos_words: Minimum number of POS words per topic
-        min_pos_coherence: Minimum per-topic POS coherence threshold
-        top_k: Number of top words per topic to consider
-        topic_info_path: Optional path to topic_info.csv for post-hoc rule merge
-        rules_config: Optional path to topic_posthoc_rules.yaml
-        name_cleaning_csv: Optional path to character_name_ratio_by_topic.csv
-        
-    Returns:
-        DataFrame with topic quality metrics and noise candidate flags
-    """
+    """Build enriched Stage 07 audit table with multi-representation metrics."""
+    cfg = stage07_config or load_stage07_config(stage07_config_path)
+    if min_size is not None:
+        cfg.thresholds.small_docs = min_size
+    if min_pos_words is not None:
+        cfg.thresholds.min_content_pos_per_rep = min_pos_words
+    if min_pos_coherence is not None:
+        cfg.thresholds.min_coherence_c_v = min_pos_coherence
+    if top_k is not None:
+        cfg.top_k = top_k
+
+    reps = cfg.representations
+    th = cfg.thresholds
+
     with stage_timer("Building topic quality table"):
-        topic_info = get_topic_distribution(topic_model, min_size=min_size)
-        pos_stats = get_pos_representation_stats(topic_model, top_k=top_k)
-        pos_coh = compute_pos_coherence_per_topic(
+        topic_info = get_topic_distribution(topic_model, min_size=th.small_docs)
+        rep_stats = get_representation_stats(
+            topic_model, representations=reps, top_k=cfg.top_k
+        )
+        rep_coh = compute_coherence_per_representation(
             topic_model,
             docs_tokens=docs_tokens,
             dictionary=dictionary,
-            top_k=top_k,
+            representations=reps,
+            top_k=cfg.top_k,
         )
 
-        df = (
-            topic_info[["Topic", "Count", "Name", "Representation"]]
-            .merge(
-                pos_stats[["Topic", "n_pos_words", "pos_words"]],
-                on="Topic",
-                how="left",
-            )
-            .merge(
-                pos_coh[["Topic", "coherence_c_v_pos"]],
-                on="Topic",
-                how="left",
-            )
+        df = topic_info[["Topic", "Count", "Name", "Representation"]].merge(
+            rep_stats, on="Topic", how="left"
         )
+        df = df.merge(rep_coh, on="Topic", how="left")
 
-        # Flag conditions
-        df["flag_small"] = df["Count"] < min_size
-        df["flag_few_pos"] = df["n_pos_words"].fillna(0) < min_pos_words
-        df["flag_low_coh"] = df["coherence_c_v_pos"].fillna(-1.0) < min_pos_coherence
-
-        # Aggregate into noise_candidate + reason
-        def _noise_reason(row) -> str:
-            reasons = []
-            if row["flag_small"]:
-                reasons.append(f"small<{min_size}")
-            if row["flag_few_pos"]:
-                reasons.append(f"few_pos<{min_pos_words}")
-            if row["flag_low_coh"]:
-                reasons.append(f"low_coh<{min_pos_coherence:.2f}")
-            return ";".join(reasons)
-
-        df["noise_reason"] = df.apply(_noise_reason, axis=1)
-        df["noise_candidate"] = df["noise_reason"].str.len() > 0
-
-        # Label for manual inspection: prepend reason to topic name
-        def _inspection_label(row) -> str:
-            base_name = str(row.get("Name", "") or "").strip()
-            reasons = row["noise_reason"]
-            if not reasons:
-                return base_name
-            return f"[NOISE_CANDIDATE:{reasons}] {base_name}"
-
-        df["inspection_label"] = df.apply(_inspection_label, axis=1)
+        if representative_docs_csv is not None:
+            snippets = load_topic_snippets(
+                representative_docs_csv,
+                max_per_topic=cfg.snippets_per_topic,
+            )
+            df = attach_snippet_columns(
+                df, snippets, snippets_per_topic=cfg.snippets_per_topic
+            )
 
         info_source = topic_info_path
         if info_source is None:
@@ -427,10 +628,12 @@ def build_topic_quality_table(
         if name_cleaning_csv is not None:
             df = merge_name_cleaning_flags(df, name_cleaning_csv)
 
-        # Sort for easier EDA
+        df = apply_stage07_routing_flags(df, cfg)
+
+        sort_col = "POS_coherence_c_v" if "POS_coherence_c_v" in df.columns else "Count"
         df.sort_values(
-            ["noise_candidate", "coherence_c_v_pos", "Count"],
-            ascending=[False, True, True],
+            ["hard_exclude_candidate", "soft_review_candidate", sort_col, "Count"],
+            ascending=[False, False, True, True],
             inplace=True,
         )
         df.reset_index(drop=True, inplace=True)
@@ -438,22 +641,55 @@ def build_topic_quality_table(
     return df
 
 
+# Backward-compatible wrappers for legacy imports
+
+
+def get_pos_representation_stats(
+    topic_model: BERTopic, top_k: int = 10
+) -> pd.DataFrame:
+    """Legacy: POS-only representation stats."""
+    df = get_representation_stats(
+        topic_model, representations=("POS",), top_k=top_k
+    )
+    if df.empty:
+        return pd.DataFrame(columns=["Topic", "n_pos_words", "pos_words"])
+    out = pd.DataFrame(
+        {
+            "Topic": df["Topic"],
+            "n_pos_words": df["POS_n_words"],
+            "pos_words": df["POS_words"],
+        }
+    )
+    return out
+
+
+def compute_pos_coherence_per_topic(
+    topic_model: BERTopic,
+    docs_tokens: list[list[str]],
+    dictionary: Dictionary,
+    top_k: int = 10,
+) -> pd.DataFrame:
+    """Legacy: POS-only per-topic coherence."""
+    df = compute_coherence_per_representation(
+        topic_model,
+        docs_tokens,
+        dictionary,
+        representations=("POS",),
+        top_k=top_k,
+    )
+    if df.empty:
+        return pd.DataFrame(columns=["Topic", "coherence_c_v_pos"])
+    return df.rename(columns={"POS_coherence_c_v": "coherence_c_v_pos"})[
+        ["Topic", "coherence_c_v_pos"]
+    ]
+
+
 def apply_noise_labels_to_model(
     topic_model: BERTopic,
     quality_df: pd.DataFrame,
     only_noise_candidates: bool = True,
 ) -> dict[int, str]:
-    """
-    Build a label dictionary for topics based on quality analysis.
-    
-    Args:
-        topic_model: BERTopic model instance
-        quality_df: DataFrame from build_topic_quality_table
-        only_noise_candidates: If True, only label noisy topics; if False, label all
-        
-    Returns:
-        Dictionary mapping topic_id -> label string
-    """
+    """Build a label dictionary for topics based on quality analysis."""
     if only_noise_candidates:
         candidates_df = quality_df[quality_df["noise_candidate"]]
     else:
@@ -469,6 +705,4 @@ def apply_noise_labels_to_model(
         len(labels),
         "noise candidates" if only_noise_candidates else "all topics",
     )
-
     return labels
-

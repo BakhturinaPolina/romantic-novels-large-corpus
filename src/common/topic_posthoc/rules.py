@@ -19,8 +19,11 @@ LOGGER = logging.getLogger("topic_posthoc")
 
 DEFAULT_RULES_CONFIG = Path("configs/topic_posthoc_rules.yaml")
 
-NOISE_ACTION = "flag_noise"
+HARD_EXCLUDE_ACTION = "hard_exclude"
+SOFT_REVIEW_ACTION = "soft_review"
 KEEP_ACTION = "keep"
+# Backward-compatible alias
+NOISE_ACTION = HARD_EXCLUDE_ACTION
 
 
 @dataclass
@@ -46,38 +49,11 @@ class PosthocRulesConfig:
         "published by",
     )
     publisher_keyword_patterns: tuple[re.Pattern[str], ...] = field(default_factory=tuple)
-    procedural_keywords: tuple[str, ...] = (
-        "elevator",
-        "parked",
-        "doorway",
-        "staircase",
-        "ignition",
-        "meal",
-        "meals",
-        "raining",
-        "temperature",
-        "windshield",
-    )
-    subgenre_keywords: tuple[str, ...] = (
-        "werewolves",
-        "werewolf",
-        "vampire",
-        "vampires",
-        "shifter",
-        "paranormal",
-        "medieval",
-        "regency",
-        "investigator",
-        "detectives",
-        "supernatural",
-        "immortal",
-        "fairies",
-    )
-    noise_rule_ids: tuple[str, ...] = (
+    hard_exclude_rule_ids: tuple[str, ...] = (
         "multilingual_artifact",
         "publisher_boilerplate",
-        "tiny_topic",
     )
+    soft_review_rule_ids: tuple[str, ...] = ("tiny_topic",)
     publisher_name_keywords: tuple[str, ...] = (
         "chapter",
         "book",
@@ -130,14 +106,12 @@ def load_rules_config(config_path: Path | None = None) -> PosthocRulesConfig:
             cfg.publisher_keywords = tuple(str(k).lower() for k in kws)
         if name_kws := pub.get("name_keywords"):
             cfg.publisher_name_keywords = tuple(str(k).lower() for k in name_kws)
-    if proc := raw.get("procedural_transition", {}):
-        if kws := proc.get("keywords"):
-            cfg.procedural_keywords = tuple(str(k).lower() for k in kws)
-    if sub := raw.get("subgenre_marker", {}):
-        if kws := sub.get("keywords"):
-            cfg.subgenre_keywords = tuple(str(k).lower() for k in kws)
-    if noise := raw.get("noise_actions"):
-        cfg.noise_rule_ids = tuple(str(n) for n in noise)
+    if hard := raw.get("hard_exclude_actions"):
+        cfg.hard_exclude_rule_ids = tuple(str(n) for n in hard)
+    elif noise := raw.get("noise_actions"):
+        cfg.hard_exclude_rule_ids = tuple(str(n) for n in noise)
+    if soft := raw.get("soft_review_actions"):
+        cfg.soft_review_rule_ids = tuple(str(n) for n in soft)
     return _finalize_config(cfg)
 
 
@@ -210,13 +184,6 @@ def _repr_docs_text(row: pd.Series) -> str:
     return text
 
 
-def _keyword_hit_ratio(words: list[str], keywords: tuple[str, ...]) -> float:
-    if not words:
-        return 0.0
-    hits = sum(1 for w in words if any(kw in w or w in kw for kw in keywords))
-    return hits / len(words)
-
-
 def _text_has_publisher_keywords(text: str, patterns: tuple[re.Pattern[str], ...]) -> bool:
     if not text.strip():
         return False
@@ -253,37 +220,11 @@ def rule_tiny_topic(count: int, cfg: PosthocRulesConfig) -> bool:
     return count < cfg.tiny_topic_min_size
 
 
-def rule_procedural_transition(words: list[str], cfg: PosthocRulesConfig) -> bool:
-    return _keyword_hit_ratio(words, cfg.procedural_keywords) >= 0.20
-
-
-def rule_subgenre_marker(row: pd.Series, cfg: PosthocRulesConfig) -> bool:
-    words = _representation_words(row, max_words=15)
-    name = str(row.get("Name", "") or "").lower()
-    blob = " ".join(words) + " " + name
-    return any(kw in blob for kw in cfg.subgenre_keywords)
-
-
-def _content_type_for_flags(flags: list[str]) -> str:
-    if not flags:
-        return "scene"
-    if "subgenre_marker" in flags:
-        return "subgenre_marker"
-    if "procedural_transition" in flags:
-        return "procedural_transition"
-    noise = {
-        "multilingual_artifact",
-        "publisher_boilerplate",
-        "tiny_topic",
-    }
-    if any(f in noise for f in flags):
-        return "noise"
-    return "scene"
-
-
 def _suggested_action(flags: list[str], cfg: PosthocRulesConfig) -> str:
-    if any(f in cfg.noise_rule_ids for f in flags):
-        return NOISE_ACTION
+    if any(f in cfg.hard_exclude_rule_ids for f in flags):
+        return HARD_EXCLUDE_ACTION
+    if any(f in cfg.soft_review_rule_ids for f in flags):
+        return SOFT_REVIEW_ACTION
     return KEEP_ACTION
 
 
@@ -293,10 +234,11 @@ def classify_topic_row(row: pd.Series, cfg: PosthocRulesConfig) -> dict[str, Any
     if topic_id == -1:
         return {
             "Topic": topic_id,
-            "content_type": "outlier",
             "posthoc_flags": [],
             "posthoc_reason": "",
             "exclude_from_axes": False,
+            "hard_exclude_candidate": False,
+            "soft_review_candidate": False,
             "suggested_action": KEEP_ACTION,
         }
 
@@ -311,21 +253,19 @@ def classify_topic_row(row: pd.Series, cfg: PosthocRulesConfig) -> dict[str, Any
         flags.append("publisher_boilerplate")
     if rule_tiny_topic(count, cfg):
         flags.append("tiny_topic")
-    if rule_procedural_transition(words, cfg):
-        flags.append("procedural_transition")
-    if rule_subgenre_marker(row, cfg):
-        flags.append("subgenre_marker")
 
     action = _suggested_action(flags, cfg)
-    exclude = action == NOISE_ACTION
+    hard_exclude = action == HARD_EXCLUDE_ACTION
+    soft_review = action == SOFT_REVIEW_ACTION
     reason = ";".join(flags)
 
     return {
         "Topic": topic_id,
-        "content_type": _content_type_for_flags(flags),
         "posthoc_flags": flags,
         "posthoc_reason": reason,
-        "exclude_from_axes": exclude,
+        "exclude_from_axes": hard_exclude,
+        "hard_exclude_candidate": hard_exclude,
+        "soft_review_candidate": soft_review and not hard_exclude,
         "suggested_action": action,
     }
 
@@ -350,7 +290,8 @@ def classify_topics_from_info(
     merged = work.merge(flags_df, on="Topic", how="left", suffixes=("", "_posthoc"))
 
     non_outlier = flags_df[flags_df["Topic"] != -1]
-    n_flagged = int((non_outlier["suggested_action"] == NOISE_ACTION).sum())
+    n_hard = int(non_outlier["hard_exclude_candidate"].sum())
+    n_soft = int(non_outlier["soft_review_candidate"].sum())
     n_total = len(non_outlier)
     rule_counts: dict[str, int] = {}
     for flags in non_outlier["posthoc_flags"]:
@@ -358,10 +299,11 @@ def classify_topics_from_info(
             rule_counts[rule_id] = rule_counts.get(rule_id, 0) + 1
 
     log.info(
-        "[POSTHOC] classified %d topics (%d outlier rows); flagged %d/%d as noise",
+        "[POSTHOC] classified %d topics (%d outlier rows); hard=%d soft=%d / %d",
         len(flags_df),
         int((flags_df["Topic"] == -1).sum()),
-        n_flagged,
+        n_hard,
+        n_soft,
         n_total,
     )
     for rule_id, count in sorted(rule_counts.items(), key=lambda x: -x[1]):
@@ -374,7 +316,8 @@ def build_posthoc_summary(classified_df: pd.DataFrame) -> dict[str, Any]:
     """Build JSON-serializable summary for posthoc_summary.json."""
     non_outlier = classified_df[classified_df["Topic"] != -1]
     n_total = len(non_outlier)
-    n_flagged = int((non_outlier["suggested_action"] == NOISE_ACTION).sum())
+    n_hard = int(non_outlier.get("hard_exclude_candidate", pd.Series(dtype=bool)).sum())
+    n_soft = int(non_outlier.get("soft_review_candidate", pd.Series(dtype=bool)).sum())
     rule_counts: dict[str, int] = {}
     for flags in non_outlier["posthoc_flags"]:
         if not isinstance(flags, list):
@@ -384,12 +327,10 @@ def build_posthoc_summary(classified_df: pd.DataFrame) -> dict[str, Any]:
 
     return {
         "n_topics": n_total,
-        "n_flagged_noise": n_flagged,
-        "flagged_fraction": round(n_flagged / n_total, 4) if n_total else 0.0,
+        "n_hard_exclude": n_hard,
+        "n_soft_review": n_soft,
+        "flagged_fraction": round((n_hard + n_soft) / n_total, 4) if n_total else 0.0,
         "rule_hits": rule_counts,
-        "content_type_counts": (
-            non_outlier["content_type"].value_counts().to_dict() if n_total else {}
-        ),
     }
 
 
@@ -416,10 +357,11 @@ def write_posthoc_artifacts(
         "Topic",
         "Count",
         "Name",
-        "content_type",
         "posthoc_flags",
         "posthoc_reason",
         "exclude_from_axes",
+        "hard_exclude_candidate",
+        "soft_review_candidate",
         "suggested_action",
     ]
     export_cols = [c for c in export_cols if c in classified.columns]

@@ -2,7 +2,7 @@
 # Stage07 topic quality for v4 placeholder compare-fit models.
 #
 # Frozen analysis default: call 73 only (override with CALLS= env).
-# Uses stratified 100k eval tokens once for dictionary + POS coherence (v3-aligned).
+# Uses stratified 100k eval tokens once for dictionary + coherence (v3-aligned).
 # Outputs: results/stage07_topic_quality/placeholder_v4_call{73,...}/
 set -euo pipefail
 
@@ -31,6 +31,7 @@ from src.stage03_train.corpus_store import (
     corpus_offsets_path,
 )
 from src.stage07_topic_quality.topic_quality_analysis import build_topic_quality_table
+from src.stage07_topic_quality.export_audit import write_stage07_audit_artifacts
 from src.common.topic_posthoc.topic_info_sync import sync_topic_info_csv
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] [%(levelname)s] %(message)s")
@@ -42,6 +43,7 @@ _default_calls = [73]
 _env_calls = __import__("os").environ.get("CALLS", "")
 CALLS = [int(c.strip()) for c in _env_calls.split(",") if c.strip()] if _env_calls else _default_calls
 RULES_CONFIG = ROOT / "configs/topic_posthoc_rules.yaml"
+STAGE07_CONFIG = ROOT / "configs/stage07_topic_quality.yaml"
 OUT_ROOT = ROOT / "results/stage07_topic_quality"
 NAME_CLEANING_ROOT = ROOT / "results/stage06_name_cleaning"
 
@@ -87,48 +89,50 @@ for call in CALLS:
     logger.info("=== Stage07 call_%d ===", call)
     t_call = time.perf_counter()
     topic_model = BERTopic.load(str(model_dir))
-    topic_info_path = call_dir / "topic_info.csv"
     sync_topic_info_csv(topic_model, topic_info_path)
-    name_cleaning_csv = (
-        NAME_CLEANING_ROOT
-        / f"placeholder_v4_call{call}"
-        / "character_name_ratio_by_topic.csv"
-    )
+    name_cleaning_dir = NAME_CLEANING_ROOT / f"placeholder_v4_call{call}"
+    name_cleaning_csv = name_cleaning_dir / "character_name_ratio_by_topic.csv"
+    rep_docs_csv = name_cleaning_dir / "cleaned_representative_docs.csv"
+
     quality_df = build_topic_quality_table(
         topic_model,
         docs_tokens=tokens,
         dictionary=dictionary,
-        min_size=200,
-        min_pos_words=3,
-        min_pos_coherence=0.0,
+        stage07_config_path=STAGE07_CONFIG,
         top_k=10,
         topic_info_path=topic_info_path,
         rules_config=RULES_CONFIG,
         name_cleaning_csv=name_cleaning_csv if name_cleaning_csv.is_file() else None,
+        representative_docs_csv=rep_docs_csv if rep_docs_csv.is_file() else None,
     )
 
     model_tag = f"placeholder_v4_call{call}"
-    quality_path = out_dir / f"topic_quality_{model_tag}.csv"
-    noise_path = out_dir / f"topic_noise_candidates_{model_tag}.csv"
-    quality_df.to_csv(quality_path, index=False)
-    quality_df[quality_df["noise_candidate"]].to_csv(noise_path, index=False)
+    artifact_paths = write_stage07_audit_artifacts(
+        quality_df, out_dir, model_tag=model_tag
+    )
 
     elapsed = time.perf_counter() - t_call
-    n_noise = int(quality_df["noise_candidate"].sum())
+    n_hard = int(quality_df["hard_exclude_candidate"].sum())
+    n_soft = int(quality_df["soft_review_candidate"].sum())
     summary_rows.append(
         {
             "call": call,
             "n_topics": len(quality_df),
-            "noise_candidates": n_noise,
+            "hard_exclude_candidates": n_hard,
+            "soft_review_candidates": n_soft,
+            "noise_candidates": int(quality_df["noise_candidate"].sum()),
             "elapsed_s": round(elapsed, 1),
-            "quality_csv": str(quality_path),
+            "audit_csv": str(artifact_paths["audit_csv"]),
+            "quality_csv": str(artifact_paths["legacy_quality_csv"]),
+            "manual_review_packet": str(artifact_paths["manual_review_packet"]),
         }
     )
     logger.info(
-        "call_%d done: %d topics, %d noise candidates (%.1fs)",
+        "call_%d done: %d topics, hard=%d soft=%d (%.1fs)",
         call,
         len(quality_df),
-        n_noise,
+        n_hard,
+        n_soft,
         elapsed,
     )
 

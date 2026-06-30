@@ -1,4 +1,4 @@
-# Post-hoc topic classification thresholds (see stage03_posthoc_cleaning_limitations_memo.md)
+# Post-hoc topic classification thresholds (Stage 07 hard/soft routing)
 
 tiny_topic:
   min_size: 200
@@ -9,7 +9,6 @@ multilingual_artifact:
   non_ascii_ratio: 0.50
 
 publisher_boilerplate:
-  # Matched in representative docs (regex) or >=3 name_keywords in Main top words.
   keywords:
     - copyright
     - copyrighted
@@ -35,36 +34,9 @@ publisher_boilerplate:
     - com
     - series
 
-procedural_transition:
-  keywords:
-    - elevator
-    - parked
-    - doorway
-    - staircase
-    - ignition
-    - meal
-    - meals
-    - raining
-    - temperature
-    - windshield
-
-subgenre_marker:
-  keywords:
-    - werewolves
-    - werewolf
-    - vampire
-    - vampires
-    - shifter
-    - paranormal
-    - medieval
-    - regency
-    - investigator
-    - detectives
-    - supernatural
-    - immortal
-    - fairies
-
-noise_actions:
+hard_exclude_actions:
   - multilingual_artifact
   - publisher_boilerplate
+
+soft_review_actions:
   - tiny_topic

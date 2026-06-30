@@ -10,6 +10,8 @@ paths:
   stage06_dir: results/stage06_topic_exploration/placeholder_v4_call73
   name_cleaning_dir: results/stage06_name_cleaning/placeholder_v4_call73
   stage07_dir: results/stage07_topic_quality/placeholder_v4_call73
+  stage07_audit_csv: results/stage07_topic_quality/placeholder_v4_call73/stage07_topic_quality_audit.csv
+  stage08a_adjudication_jsonl: results/stage08a_quality_adjudication/placeholder_v4_call73/adjudication_results.jsonl
 
 posthoc_rules: configs/topic_posthoc_rules.yaml
 strategy_memo: results/reports/placeholder_v4_call73_analysis_strategy.md

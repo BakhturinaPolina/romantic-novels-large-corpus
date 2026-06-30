@@ -125,10 +125,10 @@ class CharacterNameCleaningTests(unittest.TestCase):
             ),
             0.2,
         )
-        self.assertEqual(
-            classify_topic_by_ratio(0.6, self.lexicon, names_removed=2)["content_type"],
-            "character_name",
-        )
+        result = classify_topic_by_ratio(0.6, self.lexicon, names_removed=2)
+        self.assertIn("possible_character_residue", result["posthoc_flags"])
+        self.assertEqual(result["suggested_action"], "soft_review")
+        self.assertFalse(result["exclude_from_axes"])
 
     def test_extract_person_from_snippet(self) -> None:
         tokens = extract_person_tokens_from_text(

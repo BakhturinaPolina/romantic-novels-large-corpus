@@ -92,32 +92,29 @@ def classify_topic_by_ratio(
     name_cleaned = names_removed > 0
 
     if ratio >= lexicon.ratio_character_name_cluster:
-        flags.append("character_name_cluster")
+        flags.append("possible_character_residue")
         return {
             "character_name_ratio": ratio,
-            "content_type": "character_name",
             "posthoc_flags": flags,
             "posthoc_reason": ";".join(flags),
-            "exclude_from_axes": True,
+            "exclude_from_axes": False,
             "name_cleaned": name_cleaned,
-            "suggested_action": "flag_noise",
+            "suggested_action": "soft_review",
         }
 
     if ratio >= lexicon.ratio_name_contaminated_review:
         flags.append("name_contaminated_review")
         return {
             "character_name_ratio": ratio,
-            "content_type": "scene",
             "posthoc_flags": flags,
             "posthoc_reason": ";".join(flags),
             "exclude_from_axes": False,
             "name_cleaned": name_cleaned,
-            "suggested_action": "keep",
+            "suggested_action": "soft_review",
         }
 
     return {
         "character_name_ratio": ratio,
-        "content_type": "scene",
         "posthoc_flags": flags,
         "posthoc_reason": "",
         "exclude_from_axes": False,

@@ -1,93 +1,65 @@
 # Stage 07: Topic Quality Analysis
 
-Exploratory data analysis to identify candidate noisy topics before LLM labeling.
+Deterministic, non-LLM audit to flag technically weak/noisy topics before expensive labeling.
 
-## Status
+## Philosophy
 
-✅ **Active** — Full implementation.
+Stage 07 answers only: **is this topic too weak/noisy to spend LLM money on?**
+
+It does **not** assign romance themes, subgenre labels, or axis categories. Those belong to Stage 08B+.
+
+## Pipeline hierarchy
+
+```text
+Stage 07A — Deterministic multi-representation audit
+Stage 07B — Manual review artifacts (CSV + JSONL)
+Stage 08A — LLM quality adjudication (soft-review topics only)
+Stage 08B — Descriptive topic labeling
+```
 
 ## Usage
 
-### Basic Usage
-
 ```bash
-python -m src.stage07_topic_quality.main \
-  --embedding-model paraphrase-MiniLM-L6-v2 \
-  --pareto-rank 1 \
-  --output-dir results/stage07_topic_quality
+bash scripts/run_stage07_placeholder_v4_models.sh
+bash scripts/run_stage08a_quality_adjudication.sh
+# then Stage 08B labeling with configs/stage08_labeling.yaml
 ```
 
-### Custom Thresholds
+## Config
 
-```bash
-python -m src.stage07_topic_quality.main \
-  --embedding-model paraphrase-MiniLM-L6-v2 \
-  --pareto-rank 1 \
-  --min-topic-size 50 \
-  --min-pos-words 5 \
-  --min-pos-coherence 0.1 \
-  --output-dir results/stage07_topic_quality
-```
+- [`configs/stage07_topic_quality.yaml`](../../configs/stage07_topic_quality.yaml) — thresholds, representation list
+- [`configs/topic_posthoc_rules.yaml`](../../configs/topic_posthoc_rules.yaml) — hard/soft posthoc rules
 
-### Apply Labels to Model
+## Outputs (per call)
 
-```bash
-python -m src.stage07_topic_quality.main \
-  --embedding-model paraphrase-MiniLM-L6-v2 \
-  --pareto-rank 1 \
-  --apply-labels \
-  --save-model-with-labels models/retrained/paraphrase-MiniLM-L6-v2/model_1_with_noise_labels
-```
+| File | Description |
+|------|-------------|
+| `stage07_topic_quality_audit.csv` | Full metrics + snippets + routing |
+| `stage07_noise_candidates.csv` | Hard-exclude + soft-review topics |
+| `stage07_manual_review_packet.jsonl` | One JSON object per review topic |
+| `stage07_manual_decisions.csv` | Hand-editable decision template |
+| `topic_quality_placeholder_v4_call{N}.csv` | Legacy alias of audit CSV |
 
-## Inputs
+## Key columns
 
-| Source | Path | Description |
-|--------|------|-------------|
-| Model | `models/retrained/{embedding_model}/model_{rank}.pkl` | Pickle wrapper (default) |
-| Model (native) | `models/retrained/{embedding_model}/model_{rank}/` | BERTopic native format (`--use-native`) |
-| Dictionary | `data/interim/octis/corpus.tsv` | OCTIS corpus for Gensim dictionary |
-| Documents | `data/processed/chapters.csv` | Full corpus (optional fallback) |
+Per representation (`Main`, `KeyBERT`, `MMR`, `POS`):
 
-## Outputs
+- `{Rep}_words`, `{Rep}_n_words`, `{Rep}_n_unique_words`
+- `{Rep}_n_content_pos` — NOUN/VERB/ADJ keyword count
+- `{Rep}_coherence_c_v` — Gensim c_v per topic
+- `{Rep}_diversity_simple` — `n_unique / n_words` (redundancy flag)
 
-| Output | Description |
-|--------|-------------|
-| `topic_quality_{model}.csv` | Full quality table with all metrics |
-| `topic_noise_candidates_{model}.csv` | Filtered view of candidate noisy topics |
-| Model with labels | Optional (if `--apply-labels` used) |
+Routing:
 
-## Module Structure
+- `hard_exclude_candidate` — obvious garbage (publisher, multilingual, empty reps, etc.)
+- `soft_review_candidate` — uncertain; send to Stage 08A
+- `recommended_next_step` — `exclude_before_llm` | `stage08_quality_adjudication` | `stage08_labeling`
+
+## Module structure
 
 | File | Purpose |
 |------|---------|
 | `main.py` | CLI entrypoint |
-| `topic_quality_analysis.py` | Analysis functions |
-
-## Configuration Parameters
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `--min-topic-size` | 30 | Minimum documents per topic |
-| `--min-pos-words` | 3 | Minimum POS words per topic |
-| `--min-pos-coherence` | 0.0 | Minimum per-topic POS coherence |
-
-## Output Format
-
-CSV columns:
-- `Topic`: Topic ID
-- `Count`: Number of documents
-- `n_pos_words`: Number of POS words
-- `coherence_c_v_pos`: Per-topic POS coherence score
-- `noise_candidate`: Boolean flag
-- `noise_reason`: Semicolon-separated reasons
-- `inspection_label`: Human-readable label
-
-## Notes
-
-- **Non-destructive**: Does not remove topics, only flags them
-- Reuses Stage 06 infrastructure (loading & batching logic)
-- Topics flagged for manual inspection before Stage 08 labeling
-
-## See Also
-
-- [Methodology Report](../../results/reports/01_stage_reports/stage07_topic_quality/stage07_topic_quality_analysis_research_report.md) — Research methodology and results
+| `config.py` | Load stage07_topic_quality.yaml |
+| `topic_quality_analysis.py` | Metrics, flags, routing |
+| `export_audit.py` | Write 07B artifacts |

@@ -7,7 +7,7 @@ import unittest
 import pandas as pd
 
 from src.common.topic_posthoc.rules import (
-    NOISE_ACTION,
+    HARD_EXCLUDE_ACTION,
     classify_topic_row,
     load_rules_config,
     rule_publisher_boilerplate,
@@ -32,7 +32,7 @@ class PublisherPosthocRuleTests(unittest.TestCase):
         self.assertTrue(rule_publisher_boilerplate(words, "", self.cfg))
         result = classify_topic_row(row, self.cfg)
         self.assertIn("publisher_boilerplate", result["posthoc_flags"])
-        self.assertEqual(result["suggested_action"], NOISE_ACTION)
+        self.assertEqual(result["suggested_action"], HARD_EXCLUDE_ACTION)
 
     def test_door_car_topic_not_character_name(self) -> None:
         row = pd.Series(

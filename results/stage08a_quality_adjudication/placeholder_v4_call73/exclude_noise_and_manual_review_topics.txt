@@ -1,0 +1,331 @@
+EXCLUDE_NOISE — 22 topics
+================================================================================
+
+--- Topic 178 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely short, fragmentary exclamations ('oh no, this can't be good', 'oh...my...gosh...', 'oh, it is far worse than that') with no coherent shared theme beyond generic expressions of dismay. KeyBERT/MMR/POS keywords are sparse and generic (worst, appropriate, feared, usual) without revealing a substantive narrative theme. The combined evidence does not support an interpretable topic worth labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 194
+  Main: bad, worse, better, good, wasn, it, worst, not, than, that
+  KeyBERT: worst, uh, um, appropriate, ah, feared
+  MMR: assure, appropriate, feared, worst, replaced, suggested, honestly, rushed, surely, usual
+  POS: appropriate, worst, usual
+  snippets:
+    1. oh no, this can’t be good.”
+    2. oh...my...gosh...” “it gets worse.
+    3. oh, it is far worse than that.” “
+
+--- Topic 179 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: The snippets are generic conversational fragments about things 'making sense' or 'having a point' with no thematic content. KeyBERT/MMR keywords (precisely, framed, ma, insisted, sir) are sparse and do not cohere into an interpretable theme. Main keywords are entirely generic discourse words (sense, point, makes, doesn). There is insufficient semantic signal across all evidence layers to support a labelable topic.
+stage07_flags: tiny_topic
+n_assigned_docs: 194
+  Main: sense, point, makes, make, any, made, doesn, making, does, no
+  KeyBERT: precisely, involved
+  MMR: precisely, framed, ma, insisted, involved, sir
+  POS: sir
+  snippets:
+    1. we’ve been discussing it all week, but it doesn’t make any sense.
+    2. well, what you’ve said all makes perfect sense.
+    3. all right, you've got a point.
+
+--- Topic 183 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely generic filler phrases ('make it work', 'work out') with no distinctive thematic content. KeyBERT yields only 2 weak words (appreciate, attempt). MMR/POS keywords (dump, partners, disappointment, mumbled) do not cohere with the snippets into any interpretable theme. Main is dominated by function words and 'work' variants. Collectively, there is insufficient semantic signal to support a meaningful descriptive label.
+stage07_flags: tiny_topic
+n_assigned_docs: 192
+  Main: work, working, happen, works, worked, going, it, won, not, gonna
+  KeyBERT: appreciate, attempt
+  MMR: dump, partners, utter, sadly, laying, disappointment, mumbled, appreciate, attempt
+  POS: dump, partners, utter, disappointment, attempt
+  snippets:
+    1. i’ll make it work, though.
+    2. i think it'll work out how you want it to.
+    3. if it doesn’t work out, or if you want something different, i’ll help you with whatever you need.
+
+--- Topic 189 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are extremely short, near-identical exclamations about 'fun' with no narrative or thematic content beyond that single word. KeyBERT and POS yield only 'amusement' and 'ok/comfortable' as meaningful terms. The topic appears to have clustered around a single filler exclamation phrase rather than a coherent narrative theme, making it not worth descriptive labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 189
+  Main: fun, have, having, be, entertaining, much, going, some, definition, we
+  KeyBERT: amusement
+  MMR: guarantee, declared, actual, amusement, ok, repeated, ye, comfortable, admit
+  POS: amusement, ok, comfortable
+  snippets:
+    1. no, it’ll be fun!
+    2. oh, we’ll have such fun!”
+    3. that’s why it’ll be so much fun!”
+
+--- Topic 191 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are nearly identical filler phrases ('we'll figure it out/something out') with no substantive thematic content. KeyBERT and MMR keywords are sparse filler words (uh, um, ya, ok, honestly) with no coherent semantic theme. Main keywords are dominated by the verb 'figure' and function words. There is no interpretable romance or narrative theme across any evidence layer—this appears to be a cluster of generic reassurance/filler dialogue fragments rather than a meaningful topic.
+stage07_flags: tiny_topic
+n_assigned_docs: 187
+  Main: try, figure, ll, figured, out, trying, we, it, figuring, something
+  KeyBERT: uh, willing, um, answers
+  MMR: promising, ya, uh, ok, difference, answers, honestly, surely, throw, willing
+  POS: difference, answers, willing
+  snippets:
+    1. we don’t know yet, marta, but we’ll figure it out,” keiran said. “
+    2. we’ll figure out something here, too.”
+    3. we’ll figure something out.”
+
+--- Topic 193 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are extremely short, fragmentary sentence fragments centered on the word 'mattered' with no thematic content beyond that single word. The keyword lists are sparse and dominated by function-word-adjacent terms ('mattered', 'um', 'doesn', 'none', 'it'). There is no coherent narrative theme discernible from any evidence tier; the topic appears to be a cluster of sentences sharing a common word ('matter/mattered') rather than a meaningful thematic grouping.
+stage07_flags: tiny_topic
+n_assigned_docs: 187
+  Main: matter, mattered, matters, doesn, does, none, it, didn, why, anymore
+  KeyBERT: mattered, insisted, importantly, related, experience, um
+  MMR: mattered, importantly, related, um, responded, insisted, experience, ended
+  POS: experience
+  snippets:
+    1. none of that mattered.
+    2. but the people who mattered were cool about it.
+    3. not that it mattered,” [person] said. “
+
+--- Topic 220 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are nearly identical fragments of a single dialogue phrase ('what's that supposed to mean?') with no surrounding context. KeyBERT and POS yield nothing, MMR yields only 'ah', and Main keywords are generic dialogue filler. There is no coherent thematic content to label — this topic appears to be a cluster of repeated dialogue fragments rather than a meaningful narrative theme.
+stage07_flags: tiny_topic
+n_assigned_docs: 157
+  Main: mean, do, what, supposed, you, think, that, hell, is, just
+  KeyBERT: 
+  MMR: ah
+  POS: 
+  snippets:
+    1. and what is that supposed to mean?” “
+    2. what's that supposed to mean?” “
+    3. what’s that supposed to mean?” “
+
+--- Topic 228 | content_status=character_residue | decision=exclude_noise ---
+reason: Snippets are extremely generic dialogue fragments with no thematic content beyond character name placeholders. KeyBERT is empty. MMR and POS keywords are scattered past-tense verbs and adjectives with no coherent theme. Main is dominated by character/proper names (david, bennets, davidian, kilador, coronet) with no interpretable semantic cluster. Across all evidence layers there is insufficient thematic signal to support meaningful labeling.
+stage07_flags: possible_character_residue, tiny_topic
+n_assigned_docs: 150
+  Main: david, tirade, bennets, davidian, rupture, indoctrinated, nier, kilador, coronet, gabbled
+  KeyBERT: 
+  MMR: uttered, described, counted, introduced, strained, answering, flashed, caused, aside, hated
+  POS: address, object, strained, opposite, excited, experience, unable
+  snippets:
+    1. but if you give [person] a message from me, i’ll give you something you won’t soon forget.” “
+    2. we’ll look after her, [person].”
+    3. after you hear the story, you'll have to hustle them over to [person]'s shop, though, okay?"
+
+--- Topic 239 | content_status=publisher_or_paratext_noise | decision=exclude_noise ---
+reason: The Main keywords are almost entirely chapter numbers and ordinal words (chapter, fourteen, twenty, 16, thirteen, 17, three, seventeen, weeks, nine), strongly suggesting this topic is a residue of chapter headings/paratext rather than narrative content. The snippets themselves are chapter title fragments ('chapter twenty-one i'll be here for you', 'chapter fifteen – the good girl') confirming this is chapter-heading noise. The keyword lists (KeyBERT/MMR/POS) show generic, scattered terms with no coherent thematic signal that would survive the chapter-heading interpretation. The topic appears to cluster documents by their chapter header text rather than any shared narrative theme.
+stage07_flags: tiny_topic
+n_assigned_docs: 144
+  Main: chapter, fourteen, twenty, 16, thirteen, 17, three, seventeen, weeks, nine
+  KeyBERT: stalked, heading, desperation, ended, screaming, success, circled, guarded, flew, manage
+  MMR: guarded, percent, messed, stalked, treatment, items, success, circled, manage, curled
+  POS: percent, desperation, treatment, items, success, confusion, lack, usual, huge, lady
+  snippets:
+    1. chapter twenty-one i’ll be here for you.
+    2. as i pulled up alongside the twelfth, i realized that i could've called [person] instead of sitting outside 89 among the living [a psy cop novel] by jordan castillo price saverplus twiddling my thumbs.
+    3. chapter fifteen – the good girl waking up was the hardest thing i’ve ever had to do.
+
+--- Topic 247 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely fragmentary and generic exclamations of amazement/interest with no coherent shared theme beyond vague enthusiasm. KeyBERT/MMR keywords (amazed, um, repeated, opportunity) are sparse and do not cohere into an interpretable topic. Main keywords are entirely generic positive adjectives and filler words. There is insufficient semantic content across all evidence layers to support meaningful labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 137
+  Main: interesting, amazing, cool, awesome, pretty, great, nice, really, yeah, isn
+  KeyBERT: amazed, repeated, opportunity, um
+  MMR: amazed, um, repeated, opportunity, fully, admit
+  POS: opportunity
+  snippets:
+    1. it was unbelievably amazing, i’ll give you that.”
+    2. but this is the part you’ll find really interesting.”
+    3. [person], “mostly the finale, but i’ll say that was spectacular.
+
+--- Topic 256 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely fragmentary dialogue fragments ('i'll go tell him now', 'i'll let him tell you') with no coherent shared theme beyond generic speech acts. KeyBERT/MMR keywords are sparse and disconnected (uh, um, dangerously, launched, suggest) with no interpretable thematic cluster. Main keywords are pure dialogue glue (tell, told, him, say, what). Together, the evidence does not support a coherent or even weakly interpretable topic.
+stage07_flags: tiny_topic
+n_assigned_docs: 133
+  Main: tell, told, him, did, say, what, you, happened, me, didn
+  KeyBERT: willing, recently, uh, suggest, um, dangerously, mentioned
+  MMR: dangerously, launched, suggest, recently, current, uh, opportunity, mentioned, willing
+  POS: current, opportunity, willing
+  snippets:
+    1. i wonder if i’ll ever have the courage to tell him about it.
+    2. i’ll go tell him now.”
+    3. i’ll let him tell you.”
+
+--- Topic 260 | content_status=character_residue | decision=exclude_noise ---
+reason: All three snippets revolve entirely around a single character name (Jared) with no discernible shared thematic content beyond that name. The Main keywords are almost entirely character names (jared, kyle, dan, hobart, barnett). While KeyBERT/MMR/POS contain some thematic words (privacy, glimpse, upset, willing), these are too sparse and generic to establish a coherent interpretable theme independent of the character-name residue. The topic appears to be a character-name cluster rather than a meaningful narrative theme.
+stage07_flags: possible_character_residue, tiny_topic
+n_assigned_docs: 131
+  Main: jared, kyle, dan, us, demand, wrathfully, hobart, hall, barnett, manicures
+  KeyBERT: trailing, worrying, heading, privacy, willing
+  MMR: explaining, privacy, glimpse, occurred, collapsed, warned, fingertips, upset, stretched, swallowed
+  POS: slightest, privacy, glimpse, disappointed, fingertips, wound, upset, pressure, willing, unable
+  snippets:
+    1. but i guess i’ll just have to leave that to jared.”
+    2. jared was just heading off to work but is going to need his shirt so i’ll be right back.”
+    3. you can’t come because if jared catches one glimpse of you, he’ll know.
+
+--- Topic 273 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are nearly identical fragments ('I've been expecting you') with no additional context. KeyBERT/MMR keywords cluster around 'expect/expecting' variants but provide no coherent thematic signal beyond this single repeated phrase. The topic appears to be a residual cluster of a common dialogue phrase rather than a meaningful thematic grouping.
+stage07_flags: tiny_topic
+n_assigned_docs: 127
+  Main: expect, expecting, expected, less, expectations, what, wasn, unexpected, you, do
+  KeyBERT: expect, approached, surely, honestly
+  MMR: trained, expect, ms, manage, honestly, ty, approached, admitted, surely, fully
+  POS: 
+  snippets:
+    1. i've been expecting you."
+    2. i’ve been expecting you.”
+    3. i've told her to expect you." * * *
+
+--- Topic 280 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are extremely short, near-identical dialogue fragments expressing agreement or disagreement with an idea ('good idea', 'great idea'). The keyword representations are sparse and generic (notion, um, annoying, evidence) with no coherent thematic content. The Main keywords (idea, good, bad, sounds, think) confirm this is dialogue filler/agreement-expression residue rather than a meaningful topic. There is no interpretable theme worth labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 125
+  Main: idea, bad, good, works, sounds, think, such, that, how, splendid
+  KeyBERT: um, notion
+  MMR: annoying, notion, evidence, um
+  POS: annoying, notion, evidence
+  snippets:
+    1. oh, i don't think that's such a good idea," said samantha.
+    2. oh, well, that sounds like a good idea.”
+    3. oh, that’s a great idea.
+
+--- Topic 293 | content_status=character_residue | decision=exclude_noise ---
+reason: All three snippets are identical sentence fragments ('she shook her head. "') with no semantic content beyond a gesture. All keyword representations are empty except Main, which contains only 'shook, head, she, her' — purely a repeated dialogue/action fragment with no thematic signal. This is a residue cluster of a single repeated phrase, not a coherent topic worth labeling.
+stage07_flags: few_words_all_representations, tiny_topic
+n_assigned_docs: 118
+  Main: shook, head, she, her
+  KeyBERT: 
+  MMR: 
+  POS: 
+  snippets:
+    1. she shook her head. “
+    2. she shook her head. “
+    3. she shook her head. “
+
+--- Topic 294 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are extremely short sentence fragments expressing being wrong or mistaken, with no narrative context or thematic content beyond this. KeyBERT/MMR keywords (appears, terribly, occasionally, surely) are generic adverbs/verbs with no coherent theme. The Main keywords (wrong, right, mistaken) suggest this topic has clustered around a linguistic pattern (admitting error) rather than a meaningful narrative or thematic content. There is insufficient substance to label meaningfully.
+stage07_flags: tiny_topic
+n_assigned_docs: 118
+  Main: wrong, right, mistaken, was, guess, course, appears, wouldn, unluckily, darwin
+  KeyBERT: appears, terribly, occasionally
+  MMR: appears, terribly, occasionally, surely
+  POS: 
+  snippets:
+    1. i was terribly wrong."
+    2. so did i, but it appears i was wrong.”
+    3. but it appears i was mistaken.”
+
+--- Topic 308 | content_status=character_residue | decision=exclude_noise ---
+reason: All three snippets are dominated by a single character name 'rory' with minimal thematic content beyond generic dialogue fragments. The Main keywords are almost entirely character/proper names (rory, yamane, kingman, darlington, eric, bautista, damballah). While KeyBERT/MMR/POS show some general words (willing, embarrassed, meantime, features), these are too sparse and generic to establish a coherent interpretable theme. The snippets themselves are short dialogue fragments that do not cohere around any discernible narrative or thematic pattern beyond being associated with a single character. The combination of tiny topic size, character-name-dominated Main, and fragmentary snippets with no clear shared theme justifies exclusion.
+stage07_flags: possible_character_residue, tiny_topic
+n_assigned_docs: 112
+  Main: rory, chance, yamane, kingman, darlington, eric, survived, cellfoam, bautista, damballah
+  KeyBERT: answering, willing, expect, sir, pretending, embarrassed, wondering, meantime, introduce
+  MMR: meantime, framed, tearing, crouched, answering, embarrassed, features, studied, tugged, willing
+  POS: addition, meantime, framed, suggestion, horrified, issue, features, willing, sir
+  snippets:
+    1. come on, i’ll get you a drink,’ rory said. ‘
+    2. they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.
+    3. and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room.
+
+--- Topic 312 | content_status=character_residue | decision=exclude_noise ---
+reason: Snippets consist almost entirely of a character name (Tyler) with no thematic content beyond visiting/handling that character. KeyBERT/MMR/POS keywords (success, heading, limits, movies, fault, comfortable) are generic and disconnected, providing no coherent shared theme. Main representation is dominated by character names and garbled tokens (trainhim, modeland, himto). Across all evidence layers there is insufficient semantic content to form an interpretable topic beyond name residue.
+stage07_flags: tiny_topic
+n_assigned_docs: 110
+  Main: tyler, mark, sorts, wanted, cooper, trainhim, modeland, tylers, himto, idolizes
+  KeyBERT: ty, success, heading
+  MMR: instructed, scratched, limits, success, movies, fired, spending, assured, heading, fault
+  POS: limits, success, movies, pleased, fault, comfortable
+  snippets:
+    1. just promise you’ll take time to consider visiting tyler once in a while.” “
+    2. i’ll have to ask tyler.
+    3. if i have to, i’ll handle tyler.” “
+
+--- Topic 318 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: All three snippets are extremely short, generic dialogue fragments ('what are you going to do?', 'what do you suggest we do?') with no thematic content. KeyBERT/MMR yield only two words ('suggest', 'asks') and POS is empty. The Main keywords are entirely function words and dialogue filler. There is no coherent or interpretable theme across any evidence layer — this appears to be a cluster of generic question-asking dialogue fragments rather than a meaningful topic.
+stage07_flags: few_words_all_representations, tiny_topic
+n_assigned_docs: 109
+  Main: do, what, going, are, we, should, gonna, so, shall, you
+  KeyBERT: suggest, asks
+  MMR: suggest, asks
+  POS: 
+  snippets:
+    1. he just asks, “so what are you going to do?”
+    2. what do you suggest we do then?”
+    3. what do you suggest we do?”
+
+--- Topic 319 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely short dialogue fragments ('I'll check it for you', 'they'll find it', 'I'll check it out') with no coherent thematic content. KeyBERT yields only 'searched, ok' and POS yields only 'unlikely, equipment, bigger' — sparse and unrelated. The combined keyword evidence does not cohere into any interpretable theme. This appears to be a residual cluster of generic investigative/checking dialogue fragments without sufficient semantic substance to label.
+stage07_flags: tiny_topic
+n_assigned_docs: 109
+  Main: check, find, did, haven, anything, looking, found, them, ll, checked
+  KeyBERT: searched, ok
+  MMR: unlikely, equipment, genuinely, urged, closely, searched, ok, bigger
+  POS: unlikely, equipment, bigger
+  snippets:
+    1. i’ll check it for you.” “
+    2. if there’s anything to find, they’ll find it.”
+    3. i’ll check it out.”
+
+--- Topic 322 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: Snippets are extremely short dialogue fragments with no coherent shared theme beyond generic holding/keeping actions. KeyBERT and MMR keywords (holds, lets, gotta, uh, ya, begged, willing, dreamed) are scattered and do not cohere into an interpretable topic. The Main keywords (hold, holding, onto, let, me, you, please) suggest this is likely a cluster of generic dialogue glue phrases rather than a meaningful thematic topic. No clear narrative or thematic signal emerges from any evidence layer.
+stage07_flags: tiny_topic
+n_assigned_docs: 107
+  Main: hold, holding, onto, let, me, you, please, held, can, won
+  KeyBERT: holds, uh, lets, willing, begged, gotta
+  MMR: unlikely, ya, lets, gotta, dreamed, begged, holds, uh, willing
+  POS: unlikely, willing
+  snippets:
+    1. we’ll keep you to that.” “
+    2. i’ll hold your drink for you.”
+    3. i'll hold him if you want to go over there."
+
+--- Topic 323 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
+reason: The snippets do not cohere into a shared narrative theme: one references a meta-authorial acknowledgment ('thanks to callie who came up with the concept'), another is a character exclamation about someone grown up, and the third is about attaching as a suitor with a cover story. The keyword lists are extremely sparse in meaningful thematic content (only 'concept' and 'framed' in KeyBERT), and the Main representation is dominated by character names with no thematic signal. Together, the evidence suggests this is a small, incoherent cluster mixing paratext/acknowledgments with unrelated narrative fragments rather than a coherent topic worth labeling.
+stage07_flags: possible_character_residue, tiny_topic
+n_assigned_docs: 107
+  Main: callie, libby, aron, munchkins, leslea, lindylee, reanne, whispers, jenner, repugnance
+  KeyBERT: framed, concept
+  MMR: concept, framed, gasping, tracks, shouted, repeated, pregnant, widened, blinked, speaking
+  POS: concept, potential, tracks, explanation, features, pregnant, crowd
+  snippets:
+    1. thanks to callie who came up with the concept of an and then that happened , way back in 2005 in canada.
+    2. [person] all grown up in a power suit… i’ve been waiting for this for thirty years!’
+    3. i can attach myself to callie as a potential suitor, even with the distant cousin story you’ve decided to run with.
+
+
+MANUAL_REVIEW_NEEDED — 3 topics
+================================================================================
+
+--- Topic 240 | content_status=weak_but_interpretable | decision=manual_review_needed ---
+reason: The Main keywords strongly suggest an age-related theme (age, older, younger, years, old, thirty, eighteen, twenty), and snippets reference age explicitly ('twelve years old', 'victoria's age', 'aging woman'). However, the KeyBERT/MMR/POS keywords (appropriate, pregnant, anxious, instructions, limits, quality) don't cohere tightly with each other or with the age theme. The topic may be a loose cluster around age-related observations or comparisons, but the signal is thin and mixed enough to warrant manual review before labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 143
+  Main: age, older, younger, years, old, thirty, eighteen, than, twenty, year
+  KeyBERT: appropriate, exact, pregnant, curled, lined, anxious, bothering, pictured, considered, quality
+  MMR: appropriate, remaining, instructions, declared, limits, bothering, treated, lined, pregnant, curled
+  POS: appropriate, instructions, limits, difference, quality, exact, anxious, spending, features, pregnant
+  snippets:
+    1. she purposely gave no instructions except to tell her a little about sun—how old he was and how long she’d owned him.
+    2. the cold dampness and the bleakness of it all seemed appropriate to her at twelve years old.
+    3. it was a coiffure more appropriate for a girl victoria’s age than for an aging woman.
+
+--- Topic 302 | content_status=weak_but_interpretable | decision=manual_review_needed ---
+reason: The Main keywords are dominated by character names (rose, rosemarie, calvert, hyacinth, violet, etc.) suggesting possible character residue, but the snippets and KeyBERT/MMR/POS keywords show some thematic content (hesitate, pleased, council, member, exchange, screen). However, the snippets themselves are fragmented and don't clearly cohere into a single interpretable theme beyond revolving around a character named Rose. The signal is thin and ambiguous enough to warrant manual review before labeling.
+stage07_flags: tiny_topic
+n_assigned_docs: 114
+  Main: rose, rosemarie, calvert, rosemere, roses, hyacinth, mrs, ellen, damien, violet
+  KeyBERT: pleased, hesitate, landed, poked, engaged, winked, flowing, praying
+  MMR: hesitate, flowing, directed, poked, member, winked, peered, screen, wondering, brushed
+  POS: exchange, member, council, pleased, screen
+  snippets:
+    1. rose had a feeling that if it meant a lot to him, the big man wouldn’t hesitate to 54 male of the species let the others know what it was he really wanted.
+    2. that way we’ll be ready for mrs. rose in the morning.”
+    3. okay, you have rose call us and let us know…we’ll…” “i will.” “
+
+--- Topic 313 | content_status=incoherent_mixed_topic | decision=manual_review_needed ---
+reason: The snippets suggest interpersonal social dynamics (pressure, backing off, meeting for a meal) while the Main keywords include 'corinthians', 'apostle', 'secular', 'values', 'prudhomme' — suggesting possible religious or philosophical text contamination. The KeyBERT/MMR/POS keywords are thin but interpretable, yet the Main representation is strikingly inconsistent with the snippets, raising concern about topic coherence. Manual review is warranted to determine if this is a genuine mixed topic or a small coherent cluster with misleading Main tokens.
+stage07_flags: possible_character_residue, tiny_topic
+n_assigned_docs: 110
+  Main: paul, paulson, corinthians, values, someone, affair, substantiated, secular, prudhomme, apostle
+  KeyBERT: introduce, concerned, uncertain, incredibly, sounding
+  MMR: longest, hauled, uncertain, brings, spending, sounding, meal, opportunity, opposite, pressure
+  POS: longest, uncertain, cost, meal, opportunity, concerned, opposite, pressure
+  snippets:
+    1. i’ve known [person] a long time and he’s not a bad person, he was under a lot of pressure, it’s understandable that he went off the rails.” “
+    2. i’ll have a hard enough time getting [person] to back off after this .”
+    3. i’ll meet [person] and [person] for a meal.
