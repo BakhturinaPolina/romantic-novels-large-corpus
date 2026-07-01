@@ -42,10 +42,6 @@ from src.stage08_llm_labeling.labeling_pipeline import (
     clean_scene_summary_text,
     normalize_label_text,
 )
-from src.stage08_llm_labeling.prompts.v1_scene_only import (
-    ROMANCE_AWARE_SYSTEM_PROMPT,
-    ROMANCE_AWARE_USER_PROMPT,
-)
 
 from src.common.character_name_cleaning import clean_snippet_text, get_spacy_nlp
 

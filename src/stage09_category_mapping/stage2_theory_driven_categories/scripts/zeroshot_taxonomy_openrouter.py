@@ -137,7 +137,10 @@ def build_user_prompt(
     snippets_block: str,
     prompt_version: str = DEFAULT_PROMPT_VERSION,
 ) -> str:
+    from src.stage08_llm_labeling.v3_derived_fields import enrich_v3_metadata_for_stage09
+
     _, user_template = get_taxonomy_prompts(prompt_version)
+    topic_metadata = enrich_v3_metadata_for_stage09(topic_metadata)
     keywords = topic_metadata.get("keywords", [])
     primary_categories = topic_metadata.get("primary_categories", [])
     secondary_categories = topic_metadata.get("secondary_categories", [])
@@ -596,6 +599,10 @@ def map_all_topics_to_taxonomy(
     for idx, tid in enumerate(remaining_topics, start=1):
         tm = topic_meta[tid]
         snippets = topic_to_snippets.get(tid, []) if topic_to_snippets else None
+        if not snippets:
+            embedded = tm.get("snippets")
+            if isinstance(embedded, list) and embedded:
+                snippets = embedded
         
         try:
             result = classify_topic_to_taxonomy_openrouter(

@@ -1,0 +1,140 @@
+# Gold-standard expectations for v3 topic labeling regression (30 topics).
+# Labeling-only: gold_label + gold_scene_summary + selection_reasoning.
+# Categorization enums: golden/call73_gold_30_categorization.yaml
+# Run: scripts/run_stage08_gold_regression.sh
+
+version: "3.0"
+description: Natural-voice gold labels for 30-topic labeling regression panel.
+
+pass_criteria:
+  label_agreement_min: 0.80
+  label_overlap_min: 0.35
+  zero_genre_cliches: true
+
+selection_notes: >
+  28 intimacy/sexual topics from stage08_v3_sexual_subset_gold.yaml
+  + T14 publisher noise. Character names are ignored; no "Character Name Artifact" labels.
+
+topics:
+  "1":
+    gold_label: "Tender Kiss With Rising Desire"
+    gold_scene_summary: "He leans in for a soft kiss on her lips or temple while hands and bodies hint at growing physical pull."
+    selection_reasoning: "Core intimacy pilot; borderline affection vs presex — tests over-reading Main explicit tokens."
+  "2":
+    gold_label: "Close Breath And Neck Touch"
+    gold_scene_summary: "He leans forehead to forehead and massages her neck and throat until sweat and hot breath raise charged awareness."
+    selection_reasoning: "Physical-proximity stratum; sexual_tension without explicit acts."
+  "7":
+    gold_label: "Playful Wink And Smile"
+    gold_scene_summary: "A character winks or smirks at another in a casual social moment with no further romantic escalation."
+    selection_reasoning: "Gesture pattern; tests nonsexual_affection vs sexual_tension."
+  "14":
+    gold_label: "Publisher Copyright Page"
+    gold_scene_summary: "Characters mention books, publishers, and reading in paratext boilerplate rather than a shared narrative scene."
+    selection_reasoning: "Routing case — publisher noise must exclude_from_axes."
+  "26":
+    gold_label: "Crawling Onto The Bed"
+    gold_scene_summary: "A character crawls or is flipped into position on a mattress as bodies are held or groped on the bed."
+    selection_reasoning: "Pre-intimacy movement; tests presex_escalation labeling."
+  "40":
+    gold_label: "Hotel Room Leads To Bed"
+    gold_scene_summary: "She says sharing a hotel room will probably end in bed while they plan where to stay the night."
+    selection_reasoning: "Lodging beat with innuendo; mid-tier sexual_tension."
+  "56":
+    gold_label: "Worn Out But Still Hard"
+    gold_scene_summary: "After sex he jokes he is worn out, then pulls her close while his erection still will not subside."
+    selection_reasoning: "Post-sex cluster; MANUAL_REVIEW — snippets mix aftermath and continued arousal."
+  "66":
+    gold_label: "Complimenting A Woman's Appearance"
+    gold_scene_summary: "Characters praise her looks from a tender you are beautiful to a blunt remark about her body."
+    selection_reasoning: "Verbal attraction; axis_hint borderline everyday_intimacy vs sexual_tension."
+  "70":
+    gold_label: "Break Your Hands If You Touch Her"
+    gold_scene_summary: "A man threatens to break another's hands if he touches her again and vows to touch her himself unless they obey."
+    selection_reasoning: "Consent-boundary / coercion_watchlist; label must echo the threat line."
+  "72":
+    gold_label: "Cautious Step Closer"
+    gold_scene_summary: "A character takes one or two deliberate steps closer in a hesitant, charged moment."
+    selection_reasoning: "Minimal-action affection beat; tests concrete motion vs abstract approach."
+  "78":
+    gold_label: "Fumbling With Buttons And Zippers"
+    gold_scene_summary: "Hands fumble with a trouser zipper, jeans button, or shirt while clothing comes off under nerves."
+    selection_reasoning: "Classic presex undressing escalation."
+  "84":
+    gold_label: "Fingers Threading Through Hair"
+    gold_scene_summary: "Fingers twist in hair from nervous self-touching to a partner tugging hair in a charged moment."
+    selection_reasoning: "Hair-touching flirtation; snippets range from light to explicitly sexual."
+  "108":
+    gold_label: "Towel-Clad Exit From Shower"
+    gold_scene_summary: "A man steps from the shower with a towel at his waist and wet hair while another watches."
+    selection_reasoning: "Bathroom body-display presex escalation."
+  "118":
+    gold_label: "Pounding Into The Mattress"
+    gold_scene_summary: "Bodies move forcefully on a bed with pounding rhythm against the mattress during sex."
+    selection_reasoning: "Explicit + consent ambiguity; MANUAL_REVIEW — forceful language vs consensual kink."
+  "122":
+    gold_label: "Discussing A Romantic Rival"
+    gold_scene_summary: "Friends talk about her growing time with Dylan and question her sudden interest in someone new."
+    selection_reasoning: "Coherent dialogue scene; name-heavy Main but snippets share one beat."
+  "123":
+    gold_label: "Warm Greeting Hug"
+    gold_scene_summary: "Characters share a reassuring hug or comforting embrace without sexual escalation."
+    selection_reasoning: "Platonic affection / emotional safety."
+  "138":
+    gold_label: "Condom Availability Discussion"
+    gold_scene_summary: "Partners joke about buying condoms, offer to get them, or apologize for not having any on hand."
+    selection_reasoning: "Contraception preparation; sparse keywords but coherent snippets."
+  "140":
+    gold_label: "Agreeing To Stop When Asked"
+    gold_scene_summary: "One partner promises to stop the encounter when the other says they have had enough."
+    selection_reasoning: "Sexual negotiation / consent boundary-setting."
+  "152":
+    gold_label: "Stolen Glances And Admiration"
+    gold_scene_summary: "She tries not to stare at his handsome features but keeps stealing glances when he looks away."
+    selection_reasoning: "Visual attraction; tests axis_hint everyday vs sexual_tension."
+  "161":
+    gold_label: "Longing To Claim Her Mouth"
+    gold_scene_summary: "He wants to feel her lips and gives in to the urge to claim her mouth in a possessive kiss."
+    selection_reasoning: "Possessive kissing desire; tests nonsexual_affection vs sexual_tension."
+  "174":
+    gold_label: "Playful Dominance Banter"
+    gold_scene_summary: "They trade teasing threats and innuendo about size, knees, and showing a leg in charged banter."
+    selection_reasoning: "Innuendo/banter sexual_tension."
+  "210":
+    gold_label: "Choosing Sex Without Commitment"
+    gold_scene_summary: "Characters weigh having sex without love against going home alone and accept desire on its own terms."
+    selection_reasoning: "Sex-without-commitment negotiation."
+  "218":
+    gold_label: "Sweat-Soaked Bodies"
+    gold_scene_summary: "Sweat soaks skin and clothing with clammy dampness, goose bumps, and heat rash after strenuous effort."
+    selection_reasoning: "Sweat/heat cluster; categorization often sexual_tension though exertion reads neutral."
+  "248":
+    gold_label: "Overheard Pleasure Sounds"
+    gold_scene_summary: "Characters notice muffled noises through walls, including humming compared to a vibrator."
+    selection_reasoning: "Overheard sounds / auditory sexual tension."
+  "257":
+    gold_label: "Flushed Skin And Rising Heat"
+    gold_scene_summary: "Her neck glows hot and waves of heat from his body flood her skin until she flushes."
+    selection_reasoning: "Embarrassed or charged bodily heat response."
+  "277":
+    gold_label: "Straining Erection Against Clothing"
+    gold_scene_summary: "His engorged cock strains painfully against trousers or leather pants, barely contained by the fabric."
+    selection_reasoning: "Explicit male arousal through clothing."
+  "284":
+    gold_label: "Eyes Closed Near Climax"
+    gold_scene_summary: "She closes her eyes, throws her head back, and nears orgasm from overwhelming sensation."
+    selection_reasoning: "Orgasm/climax; MANUAL_REVIEW — snippet-dependent sensory beat."
+  "292":
+    gold_label: "Frantic Longing After Separation"
+    gold_scene_summary: "She resists giving in too quickly though weeks apart left her frantic to feel him again."
+    selection_reasoning: "Mixed snippets; label anchors dominant sexual-longing beat — never name-artifact meta labels."
+  "303":
+    gold_label: "Tasting Her With Desire"
+    gold_scene_summary: "A partner praises how she tastes during kissing, calling it ambrosia and impossible to resist."
+    selection_reasoning: "Gustatory sensuality during kissing."
+  "326":
+    gold_label: "Goodnight Kiss At The Door"
+    gold_scene_summary: "He says goodnight at the door with a longer kiss and a promise to call next week."
+    selection_reasoning: "Parting affection / everyday intimacy."
+
+manual_review_topics: [56, 118, 284]

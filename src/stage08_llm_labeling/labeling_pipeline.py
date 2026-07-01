@@ -10,13 +10,7 @@ from typing import Any
 
 import numpy as np
 
-from src.stage08_llm_labeling.lexicon import (
-    boundary_risk_terms,
-    explicit_sexual_terms,
-    family_relation_terms,
-    forbidden_genre_cliche_phrases,
-    forbidden_neutral_words,
-)
+from src.stage08_llm_labeling.lexicon import forbidden_genre_cliche_phrases
 from src.stage08_llm_labeling.prompts.loader import DEFAULT_PROMPT_VERSION, load_prompts, load_schema
 from src.stage08_llm_labeling.topic_quality_hints import TopicHints
 
@@ -36,11 +30,14 @@ V2_RESULT_DEFAULTS: dict[str, Any] = {
 }
 
 V3_RESULT_DEFAULTS: dict[str, Any] = {
-    **V2_RESULT_DEFAULTS,
+    "content_type": "scene",
+    "exclude_from_axes": False,
     "sexual_explicitness": "none",
     "sexual_function": "none",
     "consent_status": "not_applicable",
-    "axis_hint": "everyday_intimacy_emotional_safety",
+    "is_noise": False,
+    "rationale": "",
+    "scene_summary": "",
 }
 
 
@@ -49,16 +46,9 @@ def validate_v3_consistency(result: dict[str, Any]) -> list[str]:
     warnings: list[str] = []
     sexual_fn = str(result.get("sexual_function", "none"))
     consent = str(result.get("consent_status", "not_applicable"))
-    axis_hint = str(result.get("axis_hint", ""))
 
     if sexual_fn == "consent_boundary" and consent == "not_applicable":
         warnings.append("sexual_function=consent_boundary but consent_status=not_applicable")
-    if axis_hint == "consent_control_risk" and consent == "not_applicable":
-        warnings.append("axis_hint=consent_control_risk but consent_status=not_applicable")
-    if consent == "coercion_watchlist":
-        kw_lower = {k.lower() for k in result.get("keywords", [])}
-        if not boundary_risk_terms().intersection(kw_lower):
-            warnings.append("coercion_watchlist without boundary_risk keywords in topic")
     return warnings
 
 
@@ -106,24 +96,23 @@ def normalize_parsed_result(
     defaults = V3_RESULT_DEFAULTS if prompt_version.startswith("v3") else V2_RESULT_DEFAULTS
     result = {**defaults, **raw}
     label_text = str(result.get("label", "")).strip()
-    result["label"] = normalize_label_text(label_text, keywords=keywords)
+    result["label"] = normalize_label_text(label_text)
 
     scene = str(result.get("scene_summary", "") or "")
     if scene:
-        result["scene_summary"] = clean_scene_summary_text(scene, keywords)
+        result["scene_summary"] = clean_scene_summary_text(scene)
 
     if prompt_version.startswith("v1"):
         for key in ("content_type", "register", "exclude_from_axes", "subgenre_hints", "merge_group_hint"):
             result.pop(key, None)
 
-    for key in ("primary_categories", "secondary_categories", "subgenre_hints"):
-        val = result.get(key)
-        if val is None:
-            result[key] = []
-        elif not isinstance(val, list):
-            result[key] = [str(val)]
-
     if prompt_version.startswith("v2"):
+        for key in ("primary_categories", "secondary_categories", "subgenre_hints"):
+            val = result.get(key)
+            if val is None:
+                result[key] = []
+            elif not isinstance(val, list):
+                result[key] = [str(val)]
         ct = result.get("content_type", "scene")
         if result.get("is_noise") or ct in ("noise", "paratext"):
             result["exclude_from_axes"] = True
@@ -134,10 +123,11 @@ def normalize_parsed_result(
         ct = result.get("content_type", "scene")
         if result.get("is_noise") or ct in ("noise", "paratext"):
             result["exclude_from_axes"] = True
-            result["axis_hint"] = "exclude_from_axes"
         elif ct == "discourse":
             result["exclude_from_axes"] = False
-        for warn in validate_v3_consistency({**result, "keywords": keywords}):
+        for key in ("register", "subgenre_hints", "axis_hint"):
+            result.pop(key, None)
+        for warn in validate_v3_consistency(result):
             LOGGER.warning("v3 consistency: %s", warn)
         label_lower = str(result.get("label", "")).lower()
         for phrase in forbidden_genre_cliche_phrases():
@@ -147,7 +137,8 @@ def normalize_parsed_result(
     return result
 
 
-def normalize_label_text(raw: str, keywords: list[str] | None = None) -> str:
+def normalize_label_text(raw: str) -> str:
+    """Format label text (Title Case, length cap) without keyword-based rewriting."""
     label = raw.strip().strip('"').strip("'")
     label = re.sub(r"<s>|</s>|\[.*?\]", "", label)
     label = re.sub(r"<[^>]+>", "", label)
@@ -165,87 +156,45 @@ def normalize_label_text(raw: str, keywords: list[str] | None = None) -> str:
         return w.capitalize()
 
     label = " ".join(smart_tc(w) for w in label.split())
-
-    low = label.lower()
-    if low in {"time units passing", "time passing units"} or ("units" in low and "time" in low):
-        label = "Waiting And Watching Clock"
-
-    if keywords:
-        kw_lower = [k.lower() for k in keywords]
-        sexual = explicit_sexual_terms()
-        forbidden = forbidden_neutral_words()
-        family = family_relation_terms()
-
-        if not sexual.intersection(kw_lower):
-            label_lower = label.lower()
-            for word in forbidden:
-                if word in label_lower:
-                    label = re.sub(rf"\b{re.escape(word)}\b", "", label, flags=re.IGNORECASE)
-                    label = re.sub(r"\s+", " ", label).strip()
-
-        if not family.intersection(kw_lower):
-            for pat, repl in [
-                (r"\bwith\s+son\b", ""),
-                (r"\bson\b", "player"),
-                (r"\bwith\s+(?:father|dad)\b", ""),
-                (r"\b(?:father|dad)\b", "goalie"),
-            ]:
-                if re.search(pat, label, re.IGNORECASE):
-                    snippets_text = " ".join(kw_lower)
-                    if not re.search(pat.replace(r"\b", ""), snippets_text):
-                        label = re.sub(pat, repl, label, flags=re.IGNORECASE)
-                        label = re.sub(r"\s+", " ", label).strip()
-
-    return label or (keywords[0] if keywords else "Topic")
+    return label or "Topic"
 
 
-def clean_scene_summary_text(summary: str, keywords: list[str]) -> str:
-    if not summary:
-        return summary
-    keywords_lower = [kw.lower() for kw in keywords]
-    repair_kw = {"repair", "fix", "mechanic", "garage", "engine", "broken"}
-    family_kw = family_relation_terms()
-
-    if not repair_kw.intersection(keywords_lower):
-        summary = re.sub(
-            r"discuss(?:ing)?\s+car\s+repairs?\s+(?:and\s+)?(?:other\s+)?topics?",
-            "discuss various topics",
-            summary,
-            flags=re.IGNORECASE,
-        )
-        summary = re.sub(r"car\s+repairs?", "their cars", summary, flags=re.IGNORECASE)
-
-    if not family_kw.intersection(keywords_lower):
-        for pat, repl in [
-            (r"\bhis\s+son\b", "the player"),
-            (r"\bher\s+son\b", "the player"),
-            (r"\bthe\s+son\b", "the player"),
-        ]:
-            summary = re.sub(pat, repl, summary, flags=re.IGNORECASE)
-
-    return summary.strip()
+def clean_scene_summary_text(summary: str) -> str:
+    """Light whitespace cleanup for scene summaries."""
+    return re.sub(r"\s+", " ", summary).strip()
 
 
 def format_stage07_hints_block(hints: TopicHints | None) -> str:
     if hints is None:
         return "(no Stage07 quality hints for this topic)"
-    flags = ", ".join(hints.posthoc_flags) if hints.posthoc_flags else "(none)"
-    return (
-        f"doc_count={hints.doc_count}, tier={hints.tier}, "
-        f"stage07_content_type={hints.content_type}, posthoc_flags=[{flags}], "
-        f"stage07_exclude_from_axes={hints.exclude_from_axes} (advisory flag only — "
-        f"label all topics; you may agree or override with rationale), "
-        f"posthoc_reason={hints.posthoc_reason or '(none)'}"
-    )
+    return hints.format_for_prompt()
+
+
+def format_keyword_list(words: list[str]) -> str:
+    return ", ".join(words) if words else "(none)"
+
+
+def format_all_keywords_union(reps: dict[str, list[str]]) -> str:
+    """Union KeyBERT, MMR, POS (Main excluded), preserving first-seen order."""
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for rep in ("KeyBERT", "MMR", "POS"):
+        for word in reps.get(rep, []):
+            key = word.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            ordered.append(word)
+    return format_keyword_list(ordered)
 
 
 _NO_SNIPPETS_BLOCK = """
-(NO REPRESENTATIVE SNIPPETS AVAILABLE for this topic — keywords and POS cues only.)
+(NO REPRESENTATIVE SNIPPETS AVAILABLE for this topic.)
 
 Because snippets are missing:
-- Do NOT invent specific settings, body parts, or actions beyond what top keywords support.
+- Do NOT invent specific settings, body parts, or actions beyond what keyword evidence supports.
 - Prefer broad but natural scene names over literal keyword chains.
-- Keep scene_summary generic but grammatical; avoid stuffing multiple keywords into one sentence.
+- Keep scene_summary generic but grammatical.
 """.strip()
 
 
@@ -258,20 +207,32 @@ def build_user_prompt(
     snippets_block: str,
     existing_labels_str: str,
     topic_hints: TopicHints | None,
+    representations: dict[str, list[str]] | None = None,
 ) -> str:
     stage07 = format_stage07_hints_block(topic_hints)
     snippet_text = snippets_block.strip()
     if not snippet_text:
         snippet_text = _NO_SNIPPETS_BLOCK
-    format_kwargs = {
-        "kw": ", ".join(keywords),
+
+    reps = representations or {"POS": keywords}
+    format_kwargs: dict[str, str] = {
+        "kw": format_keyword_list(keywords),
         "hints": hints_str,
-        "pos": pos_str,
+        "pos": format_keyword_list(reps.get("POS", keywords)),
+        "pos_cues": pos_str or "(none)",
         "snippets": snippet_text,
-        "existing_labels": existing_labels_str,
+        "existing_labels": existing_labels_str or "(none)",
+        "stage07_hints": stage07,
+        "keybert": format_keyword_list(reps.get("KeyBERT", [])),
+        "mmr": format_keyword_list(reps.get("MMR", [])),
+        "main": format_keyword_list(reps.get("Main", [])),
+        "all_keywords": format_all_keywords_union(reps),
     }
-    if "{stage07_hints}" in user_template:
-        format_kwargs["stage07_hints"] = stage07
+
+    # Legacy v1/v2 templates use {kw}{hints} inline — hints_str kept empty for v3
+    if "{kw}" in user_template and "keybert" not in user_template:
+        format_kwargs["kw"] = ", ".join(keywords) + (hints_str or "")
+
     return user_template.format(**format_kwargs)
 
 

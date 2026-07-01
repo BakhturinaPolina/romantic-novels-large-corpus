@@ -1,6 +1,6 @@
 """Stage 08 v2 prompts — multi-genre corpus, discourse/subgenre routing (call_73 calibrated)."""
 
-from src.stage08_llm_labeling.prompts.v1_scene_only import USER_PROMPT_TEMPLATE as _V1_USER
+from src.stage08_llm_labeling.prompts.legacy.v1_scene_only import USER_PROMPT_TEMPLATE as _V1_USER
 
 _CORPUS_CONTEXT = """
 CORPUS CONTEXT (IMPORTANT)
@@ -182,7 +182,7 @@ Keywords: date, dinner, tomorrow, call, door, kiss
 → label: "Goodnight Farewell at Door", NOT domestic_life alone
 """.strip()
 
-from src.stage08_llm_labeling.prompts.v1_scene_only import SYSTEM_PROMPT as _V1_SYSTEM
+from src.stage08_llm_labeling.prompts.legacy.v1_scene_only import SYSTEM_PROMPT as _V1_SYSTEM
 
 SYSTEM_PROMPT = "\n\n".join([
     _V1_SYSTEM.replace(

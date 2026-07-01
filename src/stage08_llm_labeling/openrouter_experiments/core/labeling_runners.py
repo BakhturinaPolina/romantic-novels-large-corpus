@@ -12,9 +12,7 @@ from bertopic import BERTopic
 from openai import OpenAI
 
 from src.stage08_llm_labeling.generate_labels import (
-    detect_domains,
     log_batch_progress,
-    make_context_hints,
     rerank_keywords_mmr,
     stage_timer_local,
 )
@@ -130,6 +128,7 @@ def generate_label_from_keywords_openrouter(
     prompt_version: str | None = None,
     topic_hints: TopicHints | None = None,
     rate_limit_delay_s: float = DEFAULT_RATE_LIMIT_DELAY_S,
+    representations: dict[str, list[str]] | None = None,
 ) -> dict[str, Any]:
     """Label one topic via OpenRouter (all topics; Stage07 flags are advisory hints)."""
     if use_mmr_reranking and len(keywords) > 1:
@@ -146,10 +145,9 @@ def generate_label_from_keywords_openrouter(
 
     system_prompt, user_template = load_prompts(version)
 
-    domains = detect_domains(keywords)
-    hints_str = make_context_hints(domains) or ""
     gl = _openrouter_helpers()
-    pos_str = gl.extract_pos_cues(keywords) or ""
+    pos_keywords = (representations or {}).get("POS") or keywords
+    pos_str = gl.extract_pos_cues(pos_keywords) or ""
     snippets_block = _select_snippets(
         representative_docs,
         max_snippets=max_snippets,
@@ -165,11 +163,12 @@ def generate_label_from_keywords_openrouter(
     user_prompt = build_user_prompt(
         user_template=user_template,
         keywords=keywords,
-        hints_str=hints_str,
+        hints_str="",
         pos_str=pos_str,
         snippets_block=snippets_block,
         existing_labels_str=existing_labels_str,
         topic_hints=topic_hints,
+        representations=representations,
     )
     messages = [
         {"role": "system", "content": system_prompt},
@@ -267,6 +266,7 @@ def generate_labels_streaming(
     resume: bool = True,
     rate_limit_delay_s: float = DEFAULT_RATE_LIMIT_DELAY_S,
     topic_id_filter: set[int] | None = None,
+    topic_to_representations: dict[int, dict[str, list[str]]] | None = None,
 ) -> dict[int, dict[str, Any]]:
     """Stream labels for all topics; writes full metadata per topic."""
     json_path = Path(str(output_path.parent) + "/" + output_path.name + ".json")
@@ -300,6 +300,7 @@ def generate_labels_streaming(
             processed_count += 1
             hints = quality_hints.get(topic_id) if quality_hints else None
             rep_docs = topic_to_snippets.get(topic_id, [])
+            reps = (topic_to_representations or {}).get(topic_id)
 
             LOGGER.info(
                 "topic %d | tier=%s | exclude_flag=%s | snippets=%d",
@@ -325,6 +326,7 @@ def generate_labels_streaming(
                 prompt_version=prompt_version,
                 topic_hints=hints,
                 rate_limit_delay_s=rate_limit_delay_s,
+                representations=reps,
             )
             elapsed = time.perf_counter() - t0
 
@@ -369,6 +371,7 @@ def generate_all_labels(
     prompt_version: str | None = None,
     quality_hints: dict[int, TopicHints] | None = None,
     rate_limit_delay_s: float = DEFAULT_RATE_LIMIT_DELAY_S,
+    topic_to_representations: dict[int, dict[str, list[str]]] | None = None,
 ) -> dict[int, dict[str, Any]]:
     """Generate labels for all topics (batch mode, keeps all in memory)."""
     if topic_to_snippets is None and topic_model is not None:
@@ -385,6 +388,7 @@ def generate_all_labels(
         for idx, (topic_id, keywords) in enumerate(items, start=1):
             hints = quality_hints.get(topic_id) if quality_hints else None
             rep_docs = topic_to_snippets.get(topic_id, [])
+            reps = (topic_to_representations or {}).get(topic_id)
             result = generate_label_from_keywords_openrouter(
                 keywords=keywords,
                 client=client,
@@ -400,6 +404,7 @@ def generate_all_labels(
                 prompt_version=prompt_version,
                 topic_hints=hints,
                 rate_limit_delay_s=rate_limit_delay_s,
+                representations=reps,
             )
             entry = merge_topic_entry(keywords, result)
             topic_data[topic_id] = entry

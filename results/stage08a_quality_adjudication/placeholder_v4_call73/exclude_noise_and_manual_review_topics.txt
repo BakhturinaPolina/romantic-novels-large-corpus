@@ -1,4 +1,4 @@
-EXCLUDE_NOISE — 22 topics
+EXCLUDE_NOISE — 20 topics
 ================================================================================
 
 --- Topic 178 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
@@ -144,19 +144,6 @@ n_assigned_docs: 133
     2. i’ll go tell him now.”
     3. i’ll let him tell you.”
 
---- Topic 260 | content_status=character_residue | decision=exclude_noise ---
-reason: All three snippets revolve entirely around a single character name (Jared) with no discernible shared thematic content beyond that name. The Main keywords are almost entirely character names (jared, kyle, dan, hobart, barnett). While KeyBERT/MMR/POS contain some thematic words (privacy, glimpse, upset, willing), these are too sparse and generic to establish a coherent interpretable theme independent of the character-name residue. The topic appears to be a character-name cluster rather than a meaningful narrative theme.
-stage07_flags: possible_character_residue, tiny_topic
-n_assigned_docs: 131
-  Main: jared, kyle, dan, us, demand, wrathfully, hobart, hall, barnett, manicures
-  KeyBERT: trailing, worrying, heading, privacy, willing
-  MMR: explaining, privacy, glimpse, occurred, collapsed, warned, fingertips, upset, stretched, swallowed
-  POS: slightest, privacy, glimpse, disappointed, fingertips, wound, upset, pressure, willing, unable
-  snippets:
-    1. but i guess i’ll just have to leave that to jared.”
-    2. jared was just heading off to work but is going to need his shirt so i’ll be right back.”
-    3. you can’t come because if jared catches one glimpse of you, he’ll know.
-
 --- Topic 273 | content_status=incoherent_mixed_topic | decision=exclude_noise ---
 reason: All three snippets are nearly identical fragments ('I've been expecting you') with no additional context. KeyBERT/MMR keywords cluster around 'expect/expecting' variants but provide no coherent thematic signal beyond this single repeated phrase. The topic appears to be a residual cluster of a common dialogue phrase rather than a meaningful thematic grouping.
 stage07_flags: tiny_topic
@@ -208,19 +195,6 @@ n_assigned_docs: 118
     1. i was terribly wrong."
     2. so did i, but it appears i was wrong.”
     3. but it appears i was mistaken.”
-
---- Topic 308 | content_status=character_residue | decision=exclude_noise ---
-reason: All three snippets are dominated by a single character name 'rory' with minimal thematic content beyond generic dialogue fragments. The Main keywords are almost entirely character/proper names (rory, yamane, kingman, darlington, eric, bautista, damballah). While KeyBERT/MMR/POS show some general words (willing, embarrassed, meantime, features), these are too sparse and generic to establish a coherent interpretable theme. The snippets themselves are short dialogue fragments that do not cohere around any discernible narrative or thematic pattern beyond being associated with a single character. The combination of tiny topic size, character-name-dominated Main, and fragmentary snippets with no clear shared theme justifies exclusion.
-stage07_flags: possible_character_residue, tiny_topic
-n_assigned_docs: 112
-  Main: rory, chance, yamane, kingman, darlington, eric, survived, cellfoam, bautista, damballah
-  KeyBERT: answering, willing, expect, sir, pretending, embarrassed, wondering, meantime, introduce
-  MMR: meantime, framed, tearing, crouched, answering, embarrassed, features, studied, tugged, willing
-  POS: addition, meantime, framed, suggestion, horrified, issue, features, willing, sir
-  snippets:
-    1. come on, i’ll get you a drink,’ rory said. ‘
-    2. they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.
-    3. and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room.
 
 --- Topic 312 | content_status=character_residue | decision=exclude_noise ---
 reason: Snippets consist almost entirely of a character name (Tyler) with no thematic content beyond visiting/handling that character. KeyBERT/MMR/POS keywords (success, heading, limits, movies, fault, comfortable) are generic and disconnected, providing no coherent shared theme. Main representation is dominated by character names and garbled tokens (trainhim, modeland, himto). Across all evidence layers there is insufficient semantic content to form an interpretable topic beyond name residue.
@@ -288,44 +262,5 @@ n_assigned_docs: 107
     3. i can attach myself to callie as a potential suitor, even with the distant cousin story you’ve decided to run with.
 
 
-MANUAL_REVIEW_NEEDED — 3 topics
+MANUAL_REVIEW_NEEDED — 0 topics
 ================================================================================
-
---- Topic 240 | content_status=weak_but_interpretable | decision=manual_review_needed ---
-reason: The Main keywords strongly suggest an age-related theme (age, older, younger, years, old, thirty, eighteen, twenty), and snippets reference age explicitly ('twelve years old', 'victoria's age', 'aging woman'). However, the KeyBERT/MMR/POS keywords (appropriate, pregnant, anxious, instructions, limits, quality) don't cohere tightly with each other or with the age theme. The topic may be a loose cluster around age-related observations or comparisons, but the signal is thin and mixed enough to warrant manual review before labeling.
-stage07_flags: tiny_topic
-n_assigned_docs: 143
-  Main: age, older, younger, years, old, thirty, eighteen, than, twenty, year
-  KeyBERT: appropriate, exact, pregnant, curled, lined, anxious, bothering, pictured, considered, quality
-  MMR: appropriate, remaining, instructions, declared, limits, bothering, treated, lined, pregnant, curled
-  POS: appropriate, instructions, limits, difference, quality, exact, anxious, spending, features, pregnant
-  snippets:
-    1. she purposely gave no instructions except to tell her a little about sun—how old he was and how long she’d owned him.
-    2. the cold dampness and the bleakness of it all seemed appropriate to her at twelve years old.
-    3. it was a coiffure more appropriate for a girl victoria’s age than for an aging woman.
-
---- Topic 302 | content_status=weak_but_interpretable | decision=manual_review_needed ---
-reason: The Main keywords are dominated by character names (rose, rosemarie, calvert, hyacinth, violet, etc.) suggesting possible character residue, but the snippets and KeyBERT/MMR/POS keywords show some thematic content (hesitate, pleased, council, member, exchange, screen). However, the snippets themselves are fragmented and don't clearly cohere into a single interpretable theme beyond revolving around a character named Rose. The signal is thin and ambiguous enough to warrant manual review before labeling.
-stage07_flags: tiny_topic
-n_assigned_docs: 114
-  Main: rose, rosemarie, calvert, rosemere, roses, hyacinth, mrs, ellen, damien, violet
-  KeyBERT: pleased, hesitate, landed, poked, engaged, winked, flowing, praying
-  MMR: hesitate, flowing, directed, poked, member, winked, peered, screen, wondering, brushed
-  POS: exchange, member, council, pleased, screen
-  snippets:
-    1. rose had a feeling that if it meant a lot to him, the big man wouldn’t hesitate to 54 male of the species let the others know what it was he really wanted.
-    2. that way we’ll be ready for mrs. rose in the morning.”
-    3. okay, you have rose call us and let us know…we’ll…” “i will.” “
-
---- Topic 313 | content_status=incoherent_mixed_topic | decision=manual_review_needed ---
-reason: The snippets suggest interpersonal social dynamics (pressure, backing off, meeting for a meal) while the Main keywords include 'corinthians', 'apostle', 'secular', 'values', 'prudhomme' — suggesting possible religious or philosophical text contamination. The KeyBERT/MMR/POS keywords are thin but interpretable, yet the Main representation is strikingly inconsistent with the snippets, raising concern about topic coherence. Manual review is warranted to determine if this is a genuine mixed topic or a small coherent cluster with misleading Main tokens.
-stage07_flags: possible_character_residue, tiny_topic
-n_assigned_docs: 110
-  Main: paul, paulson, corinthians, values, someone, affair, substantiated, secular, prudhomme, apostle
-  KeyBERT: introduce, concerned, uncertain, incredibly, sounding
-  MMR: longest, hauled, uncertain, brings, spending, sounding, meal, opportunity, opposite, pressure
-  POS: longest, uncertain, cost, meal, opportunity, concerned, opposite, pressure
-  snippets:
-    1. i’ve known [person] a long time and he’s not a bad person, he was under a lot of pressure, it’s understandable that he went off the rails.” “
-    2. i’ll have a hard enough time getting [person] to back off after this .”
-    3. i’ll meet [person] and [person] for a meal.

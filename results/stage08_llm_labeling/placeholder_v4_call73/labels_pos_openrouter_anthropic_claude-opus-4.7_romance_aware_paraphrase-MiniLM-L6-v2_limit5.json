@@ -1,0 +1,171 @@
+{
+  "0": {
+    "label": "Hesitating Near Doorway",
+    "keywords": [
+      "rear",
+      "nearest",
+      "doorway",
+      "hovering",
+      "entrance",
+      "tracks",
+      "narrow",
+      "hesitation",
+      "muffled",
+      "voices"
+    ],
+    "content_type": "scene",
+    "register": "neutral",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "romance_core",
+      "procedural_transition"
+    ],
+    "secondary_categories": [
+      "setting:doorway",
+      "activity:eavesdropping",
+      "relationship:tension"
+    ],
+    "is_noise": false,
+    "rationale": "Top keywords (doorway, entrance, hovering, hesitation, muffled, voices, narrow) describe a character pausing at a threshold and overhearing nearby sound. Snippets about rides and transit suggest transitional",
+    "scene_summary": "A character hovers near a doorway or entrance, hesitating while muffled voices and movement filter through the narrow opening nearby.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "1": {
+    "label": "Tentative Lean-in Kiss",
+    "keywords": [
+      "plump",
+      "fingertips",
+      "sweep",
+      "elbows",
+      "combined",
+      "squeeze",
+      "hesitation",
+      "bodies",
+      "handful",
+      "loose"
+    ],
+    "content_type": "scene",
+    "register": "suggestive",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_kiss_cluster",
+    "primary_categories": [
+      "physical_affection",
+      "romance_core"
+    ],
+    "secondary_categories": [
+      "activity:kissing",
+      "relationship:long_term"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like hesitation, bodies, sweep, and squeeze combine with snippets showing a partner leaning in and brushing or pressing a gentle kiss to lips or temple. This points to a",
+    "scene_summary": "He leans in with slight hesitation and presses a soft kiss to her lips or temple in a tender bonding moment.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "2": {
+    "label": "Anticipatory Touch at Waist",
+    "keywords": [
+      "moves",
+      "grasp",
+      "insides",
+      "flush",
+      "fingertips",
+      "anticipation",
+      "damp",
+      "forehead",
+      "waist"
+    ],
+    "content_type": "scene",
+    "register": "suggestive",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_anticipation_cluster",
+    "primary_categories": [
+      "physical_affection",
+      "sexual_tension"
+    ],
+    "secondary_categories": [
+      "activity:touching",
+      "relationship:long_term"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like grasp, fingertips, waist, forehead, flush, and anticipation point to a close-contact",
+    "scene_summary": "He grasps her waist and leans close, fingertips brushing damp skin as anticipation flushes through her body during a charged moment.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "3": {
+    "label": "Inner Conflict Over Choices",
+    "keywords": [
+      "choices",
+      "unaware",
+      "dump",
+      "fears",
+      "spite",
+      "guarantee",
+      "notion",
+      "exchange",
+      "affection",
+      "instructions"
+    ],
+    "content_type": "discourse",
+    "register": "neutral",
+    "exclude_from_axes": true,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "narrative_style",
+      "relationship_conflict"
+    ],
+    "secondary_categories": [
+      "relationship:long_term"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like choices, fears, spite, notion, and affection point to abstract inner-conflict reflection rather than a concrete scene. Snippets show oscillating emotions (loved him, hated him) typical of introspective passages, so this reads as discourse about relational amb",
+    "scene_summary": "She wrestles internally with conflicting feelings of love and resentment, weighing fears and choices made out of spite toward him.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "4": {
+    "label": "Phone Call Follow-Up Plans",
+    "keywords": [
+      "purse",
+      "address",
+      "instructions",
+      "unusual",
+      "meantime",
+      "grasp",
+      "unhappy",
+      "screen",
+      "latest",
+      "actual"
+    ],
+    "content_type": "scene",
+    "register": "neutral",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "communication_medium",
+      "romance_core"
+    ],
+    "secondary_categories": [
+      "activity:phone_call",
+      "relationship:long_term"
+    ],
+    "is_noise": false,
+    "rationale": "Snippets repeatedly feature characters promising to call back with instructions or updates, while keywords like 'instructions', 'address', 'meantime', and 'latest' suggest informational follow-up via phone. This fits a communication-medium scene rather than an intimate or noise topic.",
+    "scene_summary": "A character promises to call back later to share instructions or updates after returning home or conducting further investigation.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  }
+}

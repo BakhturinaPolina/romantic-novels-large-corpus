@@ -1,13 +1,13 @@
 """Stage 08 v3 prompts — v2/c8 base + sexual-function JSON fields, natural label voice."""
 
-from src.stage08_llm_labeling.prompts.v1_scene_only import SYSTEM_PROMPT as _V1_SYSTEM
-from src.stage08_llm_labeling.prompts.v2_multi_genre import (
+from src.stage08_llm_labeling.prompts.legacy.v1_scene_only import SYSTEM_PROMPT as _V1_SYSTEM
+from src.stage08_llm_labeling.prompts.legacy.v2_multi_genre_full import (
     _CORPUS_CONTEXT,
     _FEW_SHOTS,
     _TAXONOMY_ALIGNMENT,
     _V2_SCHEMA_EXTENSION,
 )
-from src.stage08_llm_labeling.prompts.v2_variants import (
+from src.stage08_llm_labeling.prompts.legacy.v2_variants_sweeps import (
     _C8_CHARACTER_NAMES,
     _C8_FEW_SHOT_APPEND,
     _STAGE07_EMPHASIZE,

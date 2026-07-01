@@ -193,7 +193,7 @@ def parse_args() -> argparse.Namespace:
         "--prompt-version",
         type=str,
         default=DEFAULT_PROMPT_VERSION,
-        help="Prompt version: v1 or v2 (default v2 multi-genre)",
+        help="Prompt version: v3_topic_labeling (default), v3_rep_first, v1, v2, v2_*",
     )
 
     parser.add_argument(

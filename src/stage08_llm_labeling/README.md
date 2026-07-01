@@ -2,156 +2,91 @@
 
 ## Overview
 
-Stage 08 generates interpretable labels for BERTopic topics using Large Language Models (LLMs) via the OpenRouter API. It transforms keyword clusters into descriptive, scene-level labels suitable for computational literary analysis.
+Stage 08 generates interpretable labels for BERTopic topics via OpenRouter. Production uses **`v3_topic_labeling`**: snippets-first evidence, all keyword representations (KeyBERT, MMR, POS, Main), character-name rules, and v3 sexual-precision JSON fields — without Stage09 category taxonomy.
 
-## Status
+**A/B variant:** **`v3_rep_first`** — keyword thread (ALL KEYWORDS + KeyBERT + MMR + POS) defines the label; snippets and Main ground/polish the beat. Use when snippets surface bland "I'll…" glue but alt-reps show a richer shared theme. Config: [`configs/stage08_labeling_rep_first.yaml`](../../configs/stage08_labeling_rep_first.yaml).
 
-✅ **Fully Implemented**
+## Production defaults
 
-## Functionality
+See [`configs/stage08_labeling.yaml`](../../configs/stage08_labeling.yaml):
 
-### LLM-Based Label Generation
+| Setting | Value |
+|---------|-------|
+| Prompt | `v3_topic_labeling` |
+| Model | `anthropic/claude-sonnet-4.6` |
+| Temperature | 0.05 |
+| Max tokens | 350 |
+| Pipeline | Stage07 → Stage08A (adjudication) → Stage08B (labeling) |
 
-- **Input**: BERTopic topics (keywords + representative document snippets)
-- **Output**: Descriptive labels (2-6 words) + scene summaries + metadata
-- **Model**: `mistralai/Mistral-Nemo-Instruct-2407` via OpenRouter API
-- **Coverage**: 368/368 topics (100%)
+## Run labeling
 
-### Key Features
+```bash
+scripts/run_stage08_placeholder_v4_call.sh
+```
 
-- **Romance-aware prompts** optimized for modern romantic and erotic fiction
-- **Stage 09 alignment (v2/v3)**: `intimacy:*` secondary subtags tag the **Everyday Intimacy & Emotional Safety** axis; v3 adds `sexual_explicitness`, `sexual_function`, `consent_status`, `axis_hint` for sexual-topic precision
-- **Representative document snippets** for scene-level disambiguation
-- **Anti-hallucination constraints** based on empirical testing
-- **Structured JSON output** for programmatic analysis
-- **Streaming and batch processing** options
-- **Automatic retry logic** for API failures
-
-## Key Files
-
-- **`generate_labels.py`**: Main labeling module (local inference)
-- **`openrouter_experiments/`**: OpenRouter API implementation
-  - **`core/generate_labels_openrouter.py`**: Main labeling logic
-  - **`core/main_openrouter.py`**: CLI entry point
-  - **`tools/compare_models_openrouter.py`**: Multi-model comparison
-  - **`tools/validate_label_quality.py`**: Quality validation
-
-## Usage
-
-### Basic Usage
+Or directly:
 
 ```bash
 python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
-    --embedding-model paraphrase-MiniLM-L6-v2 \
-    --pareto-rank 1 \
-    --num-keywords 15 \
-    --max-tokens 40
+  --stage08-config configs/stage08_labeling.yaml
 ```
 
-### With Topics JSON (Streaming Mode)
+## Gold regression (30 topics)
+
+Before a full-corpus relabel, run the golden panel:
+
+```bash
+scripts/run_stage08_gold_regression.sh
+```
+
+Gold expectations:
+- Labeling: [`golden/call73_gold_30.yaml`](golden/call73_gold_30.yaml)
+- Categorization: [`golden/call73_gold_30_categorization.yaml`](golden/call73_gold_30_categorization.yaml)
+
+28 intimacy/sexual topics + T14 publisher noise. Character names are ignored in labeling.
+
+## Prompt layout
+
+```
+prompts/
+  v3_topic_labeling.py      # production (snippets-first)
+  v3_rep_first.py           # A/B (keyword-thread-first)
+  blocks/                   # composable sections
+  adjudication/             # Stage08A
+  legacy/                   # v1, v2 sweeps, full taxonomy (repro only)
+  schema_v3.json
+```
+
+Run rep-first labeling:
 
 ```bash
 python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
-    --embedding-model paraphrase-MiniLM-L6-v2 \
-    --topics-json results/stage06_topic_exploration/topics_all_representations_paraphrase-MiniLM-L6-v2.json \
-    --num-keywords 15
+  --stage08-config configs/stage08_labeling_rep_first.yaml
 ```
 
-### Model Comparison
-
-```bash
-python -m src.stage08_llm_labeling.openrouter_experiments.tools.compare_models_openrouter \
-    --embedding-model paraphrase-MiniLM-L6-v2 \
-    --topics-json results/stage06_topic_exploration/topics_all_representations_paraphrase-MiniLM-L6-v2.json \
-    --limit-topics 30
-```
-
-## Configuration
-
-### API Configuration
-
-- **API Key**: Set via `--api-key` argument or modify `DEFAULT_OPENROUTER_API_KEY`
-- **Model**: Default `mistralai/mistral-nemo`, configurable via `--model-name`
-- **Base URL**: `https://openrouter.ai/api/v1`
-
-### Model Parameters
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| Temperature | 0.35 | Balanced for consistency + natural phrasing |
-| Max tokens | 40 | Sufficient for 2-6 word labels |
-| Rate limit delay | 4.0s | Conservative API rate limiting |
-
-### v3 sexual-precision prompt (call 73 validation)
-
-Frozen production uses `v2_c8_character_names` via `configs/stage08_labeling.yaml` (Sonnet 4.6, `temperature: 0.0`, `max_tokens: 256`).
-
-For sexual-topic relabeling, use `v3_sexual_precision` with the **same OpenRouter params**:
-
-```bash
-# Subset validation (~28 sexual/suggestive topics)
-python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
-  --stage08-config configs/stage08_labeling_v3_sexual.yaml \
-  --topic-ids 1,2,7,26,40,56,66,70,72,78,84,108,118,123,138,140,152,161,174,210,218,248,257,277,284,292,303,326 \
-  --output-suffix v3_sexual_subset \
-  --no-integrate
-
-# Compare against gold expectations
-python -m src.stage08_llm_labeling.openrouter_experiments.tools.validate_label_quality \
-  --labels-json results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_*_v3_sexual_subset_topics.json \
-  --gold-yaml configs/stage08_v3_sexual_subset_gold.yaml \
-  --show-only-issues
-```
-
-v3 extends v2/c8 with JSON fields `sexual_explicitness`, `sexual_function`, `consent_status`, `axis_hint`. Labels stay **natural romance-index style**; analytic function lives in JSON, not clinical label wording.
-
-## Outputs
-
-### Files
-
-- `results/stage08_llm_labeling/labels_pos_openrouter_{model_name}.json`
-- `logs/stage08_llm_labeling_{timestamp}.log`
-
-### JSON Output Format
+## JSON output (v3 slim)
 
 ```json
 {
-  "label": "Makeout In Parked Car",
-  "scene_summary": "In a parked car, they kiss and touch...",
-  "primary_categories": ["romance_core", "sexual_content"],
-  "secondary_categories": ["setting:car", "activity:kissing"],
+  "label": "Condom And Lube Preparation",
+  "scene_summary": "A couple prepares condoms and lubricant from a bedside drawer before sex.",
+  "content_type": "scene",
+  "exclude_from_axes": false,
+  "sexual_explicitness": "explicit",
+  "sexual_function": "contraception_preparation",
+  "consent_status": "consensual_implied",
   "is_noise": false,
-  "rationale": "Keywords indicate car setting and physical intimacy..."
+  "rationale": "..."
 }
 ```
 
-### Integration with BERTopic
+Stage09 derives `register`, `subgenre_hints`, and `axis_hint` from these fields via [`v3_derived_fields.py`](v3_derived_fields.py).
 
-Labels are integrated into the BERTopic model's `topic_metadata_` attribute (unless `--no-integrate` is set).
+## Key modules
 
-## Data Flow
+- [`labeling_pipeline.py`](labeling_pipeline.py) — prompt build, validation, normalization
+- [`generate_labels.py`](generate_labels.py) — topic/representation extraction
+- [`openrouter_experiments/core/main_openrouter.py`](openrouter_experiments/core/main_openrouter.py) — CLI
+- [`openrouter_experiments/tools/validate_label_quality.py`](openrouter_experiments/tools/validate_label_quality.py) — gold + hallucination checks
 
-```
-BERTopic Model (topics + keywords)
-    ↓
-POS-Filtered Keywords (nouns, verbs, adjectives)
-    ↓
-Representative Document Snippets (6 per topic)
-    ↓
-LLM Labeling (OpenRouter API)
-    ↓
-JSON Output + BERTopic Integration
-    ↓
-Stage 09: Taxonomy Mapping
-```
-
-## Dependencies
-
-- `openai` (OpenAI-compatible API client)
-- `tenacity` (retry logic)
-- `spacy` (POS tagging)
-- `bertopic` (topic model loading)
-
-## Algorithm Details
-
-See [results/reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md](../../results/reports/01_stage_reports/stage08_llm_labeling/stage08_llm_labeling_report.md) for detailed methodology.
+Legacy prompts (`v1`, `v2_*` sweeps) remain importable via `prompts/loader.py` for sweep reproducibility.

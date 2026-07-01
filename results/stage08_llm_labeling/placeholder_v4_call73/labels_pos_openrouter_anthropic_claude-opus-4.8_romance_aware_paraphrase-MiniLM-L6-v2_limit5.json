@@ -1,0 +1,164 @@
+{
+  "0": {
+    "label": "Hesitation in Doorway",
+    "keywords": [
+      "rear",
+      "nearest",
+      "doorway",
+      "hovering",
+      "entrance",
+      "tracks",
+      "narrow",
+      "hesitation",
+      "muffled",
+      "voices"
+    ],
+    "content_type": "scene",
+    "register": "neutral",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "romance_core"
+    ],
+    "secondary_categories": [
+      "setting:doorway",
+      "activity:argument"
+    ],
+    "is_noise": false,
+    "rationale": "Top keywords like doorway, entrance, hovering, hesitation, and muffled voices describe lingering uncertainly at a threshold. The snippets about rides and transit suggest arrival",
+    "scene_summary": "A character hovers hesitantly near a narrow doorway or entrance, catching muffled voices while deciding whether to enter or leave.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "1": {
+    "label": "Tentative Touch Before Kiss",
+    "keywords": [
+      "plump",
+      "fingertips",
+      "sweep",
+      "elbows",
+      "combined",
+      "squeeze",
+      "hesitation",
+      "bodies",
+      "handful",
+      "loose"
+    ],
+    "content_type": "scene",
+    "register": "suggestive",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_kiss_cluster",
+    "primary_categories": [
+      "physical_affection",
+      "romance_core"
+    ],
+    "secondary_categories": [
+      "activity:kissing",
+      "relationship:first_meeting"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like fingertips, sweep, squeeze, hesitation, and bodies combine with snippets showing leaning in",
+    "scene_summary": "He leans in and sweeps his fingertips over her body with hesitation before pressing a soft kiss to her lips.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "2": {
+    "label": "Anticipatory Skin Caress",
+    "keywords": [
+      "moves",
+      "grasp",
+      "insides",
+      "flush",
+      "fingertips",
+      "anticipation",
+      "damp",
+      "forehead",
+      "waist"
+    ],
+    "content_type": "scene",
+    "register": "suggestive",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_touch_cluster",
+    "primary_categories": [
+      "physical_affection",
+      "sexual_tension"
+    ],
+    "secondary_categories": [
+      "activity:kissing",
+      "relationship:long_term"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like grasp, fingertips, waist, forehead, and anticipation plus snippets of neck massaging and close",
+    "scene_summary": "He leans close, grasping her waist and brushing his fingertips over damp skin while anticipation builds before any explicit contact.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "3": {
+    "label": "Conflicted Feelings and Choices",
+    "keywords": [
+      "choices",
+      "unaware",
+      "dump",
+      "fears",
+      "spite",
+      "guarantee",
+      "notion",
+      "exchange",
+      "affection",
+      "instructions"
+    ],
+    "content_type": "discourse",
+    "register": "neutral",
+    "exclude_from_axes": true,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "narrative_style"
+    ],
+    "secondary_categories": [],
+    "is_noise": false,
+    "rationale": "Keywords are abstract emotional and decision nouns (choices, fears, notion, affection) with no setting or scene action. Snippets show interior emotional commentary rather than a concrete scene, so this reads as discourse about feelings.",
+    "scene_summary": "She wrestles with abstract emotions of love, hatred, and fear while weighing choices and notions she cannot fully control.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "4": {
+    "label": "Phone Call Follow-Up",
+    "keywords": [
+      "purse",
+      "address",
+      "instructions",
+      "unusual",
+      "meantime",
+      "grasp",
+      "unhappy",
+      "screen",
+      "latest",
+      "actual"
+    ],
+    "content_type": "discourse",
+    "register": "neutral",
+    "exclude_from_axes": true,
+    "subgenre_hints": [],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "communication_medium"
+    ],
+    "secondary_categories": [
+      "activity:texting"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like address, instructions, screen and snippets about calling back and conducting investigations point to coordination via phone rather than a romantic or sexual beat. The scattered abstract terms (unusual, latest, actual) su",
+    "scene_summary": "She agrees to call someone back later, exchanging instructions and addresses while checking a phone screen between meetings or activities.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  }
+}

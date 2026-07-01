@@ -1,0 +1,83 @@
+# Categorization gold for call73 30-topic panel (separate from labeling gold).
+# Pair with golden/call73_gold_30.yaml in regression runs.
+# axis_hint / register / subgenre_hints are derived in Stage09 — not Stage08 LLM output.
+
+version: "1.0"
+pass_criteria:
+  sexual_function_agreement_min: 0.85
+  routing_agreement_min: 1.0
+
+topics:
+  "1":
+    sexual_function: nonsexual_affection
+  "2":
+    sexual_function: sexual_tension
+  "7":
+    sexual_function: nonsexual_affection
+  "14":
+    content_type: noise
+    is_noise: true
+    exclude_from_axes: true
+    sexual_function: none
+  "26":
+    sexual_function: presex_escalation
+  "40":
+    sexual_function: sexual_tension
+  "56":
+    sexual_function: postsex_arousal
+  "66":
+    sexual_function: sexual_tension
+  "70":
+    sexual_function: consent_boundary
+    consent_status: coercion_watchlist
+  "72":
+    sexual_function: nonsexual_affection
+  "78":
+    sexual_function: presex_escalation
+  "84":
+    sexual_function: nonsexual_affection
+  "108":
+    sexual_function: presex_escalation
+  "118":
+    sexual_function: explicit_contact
+    consent_status: unclear_from_topic
+  "122":
+    sexual_function: none
+    content_type: scene
+    is_noise: false
+    exclude_from_axes: false
+  "123":
+    sexual_function: nonsexual_affection
+  "138":
+    sexual_function: contraception_preparation
+  "140":
+    sexual_function: sexual_negotiation
+  "152":
+    sexual_function: sexual_tension
+  "161":
+    sexual_function: sexual_tension
+  "174":
+    sexual_function: sexual_tension
+  "210":
+    sexual_function: sex_without_commitment
+  "218":
+    sexual_function: sexual_tension
+  "248":
+    sexual_function: sexual_tension
+  "257":
+    sexual_function: sexual_tension
+  "277":
+    sexual_function: explicit_contact
+  "284":
+    sexual_function: orgasm_climax
+  "292":
+    sexual_function: sexual_tension
+    content_type: scene
+    is_noise: false
+    exclude_from_axes: false
+  "303":
+    sexual_function: sexual_tension
+  "326":
+    sexual_function: nonsexual_affection
+
+manual_review_topics: [56, 118, 284]

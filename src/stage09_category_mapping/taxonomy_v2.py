@@ -328,6 +328,9 @@ def apply_domain_heuristics(
     path: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Post-hoc domain-specific fixes for borderline taxonomy mappings."""
+    from src.stage08_llm_labeling.v3_derived_fields import enrich_v3_metadata_for_stage09
+
+    topic_metadata = enrich_v3_metadata_for_stage09(topic_metadata)
     valid_ids = valid_taxonomy_ids(path)
     main_id = result.get("main_category_id")
     secondary_id = result.get("secondary_category_id")

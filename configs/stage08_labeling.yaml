@@ -6,7 +6,7 @@ prompt_version: v3_topic_labeling
 
 openrouter:
   model: anthropic/claude-sonnet-4.6
-  temperature: 0.0
+  temperature: 0.05
   max_tokens: 350
   rate_limit_delay_s: 4.0
 

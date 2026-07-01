@@ -1,0 +1,135 @@
+{
+  "0": {
+    "label": "rear",
+    "keywords": [
+      "rear",
+      "nearest",
+      "doorway",
+      "hovering",
+      "entrance",
+      "tracks",
+      "narrow",
+      "hesitation",
+      "muffled",
+      "voices"
+    ],
+    "scene_summary": ""
+  },
+  "1": {
+    "label": "Hesitant Body Touch",
+    "keywords": [
+      "plump",
+      "fingertips",
+      "sweep",
+      "elbows",
+      "combined",
+      "squeeze",
+      "hesitation",
+      "bodies",
+      "handful",
+      "loose"
+    ],
+    "content_type": "scene",
+    "register": "neutral",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_touch_cluster",
+    "primary_categories": [
+      "physical_affection"
+    ],
+    "secondary_categories": [
+      "activity:touching"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords describe tactile exploration — fingertips, sweep, squeeze, handful — applied to plump, loose",
+    "scene_summary": "Hands explore plump skin with fingertips and gentle squeezes.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "2": {
+    "label": "Tentative Physical Intimacy",
+    "keywords": [
+      "moves",
+      "grasp",
+      "insides",
+      "flush",
+      "fingertips",
+      "anticipation",
+      "damp",
+      "forehead",
+      "waist"
+    ],
+    "content_type": "scene",
+    "register": "suggestive",
+    "exclude_from_axes": false,
+    "subgenre_hints": [],
+    "merge_group_hint": "intimacy_kiss_cluster",
+    "primary_categories": [
+      "physical_affection",
+      "sexual_tension"
+    ],
+    "secondary_categories": [
+      "activity:touching",
+      "activity:kissing"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like",
+    "scene_summary": "A character feels a flush of anticipation as fingertips graze skin and hands grasp at waist.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "3": {
+    "label": "Emotional Choices and Fears",
+    "keywords": [
+      "choices",
+      "unaware",
+      "dump",
+      "fears",
+      "spite",
+      "guarantee",
+      "notion",
+      "exchange",
+      "affection",
+      "instructions"
+    ],
+    "content_type": "scene",
+    "register": "neutral",
+    "exclude_from_axes": false,
+    "subgenre_hints": [
+      "contemporary"
+    ],
+    "merge_group_hint": null,
+    "primary_categories": [
+      "romance_core",
+      "relationship_conflict"
+    ],
+    "secondary_categories": [
+      "relationship:long_term",
+      "activity:argument"
+    ],
+    "is_noise": false,
+    "rationale": "Keywords like choices, fears, spite, guarantee",
+    "scene_summary": "A character weighs difficult choices while confronting deep fears and unspoken affection.",
+    "stage07_exclude_from_axes": false,
+    "stage07_posthoc_reason": "nan",
+    "stage07_content_type": "scene"
+  },
+  "4": {
+    "label": "purse",
+    "keywords": [
+      "purse",
+      "address",
+      "instructions",
+      "unusual",
+      "meantime",
+      "grasp",
+      "unhappy",
+      "screen",
+      "latest",
+      "actual"
+    ],
+    "scene_summary": ""
+  }
+}

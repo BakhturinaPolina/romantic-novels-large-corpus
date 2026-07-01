@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-from src.stage08_llm_labeling.prompts.v1_scene_only import (
+from src.stage08_llm_labeling.prompts.legacy.v1_scene_only import (
     SYSTEM_PROMPT as _V1_SYSTEM,
     USER_PROMPT_TEMPLATE as _V1_USER,
 )
-from src.stage08_llm_labeling.prompts.v2_multi_genre import (
+from src.stage08_llm_labeling.prompts.legacy.v2_multi_genre_full import (
     SYSTEM_PROMPT as V2_SYSTEM,
     USER_PROMPT_TEMPLATE as V2_USER,
     _CORPUS_CONTEXT,

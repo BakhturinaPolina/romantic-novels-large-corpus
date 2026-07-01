@@ -33,7 +33,6 @@ from src.stage06_topic_exploration.explore_retrained_model import (
     DEFAULT_EMBEDDING_MODEL,
 )
 from src.stage08_llm_labeling.lexicon import (
-    boundary_risk_terms,
     explicit_sexual_terms,
     forbidden_genre_cliche_phrases,
 )
@@ -104,6 +103,7 @@ def check_genre_cliche_labels(label: str) -> list[str]:
 def check_v3_explicitness_keywords(
     entry: dict[str, Any], keywords: list[str]
 ) -> list[str]:
+    """Soft advisory checks for v3 sexual fields (warnings only in gold compare)."""
     issues = []
     kw_lower = {k.lower() for k in keywords}
     explicitness = str(entry.get("sexual_explicitness", "none"))
@@ -111,24 +111,36 @@ def check_v3_explicitness_keywords(
         issues.append(
             f"sexual_explicitness={explicitness} but explicit sexual keywords present"
         )
-    consent = str(entry.get("consent_status", ""))
-    if consent == "coercion_watchlist" and not boundary_risk_terms().intersection(kw_lower):
-        issues.append("coercion_watchlist without boundary_risk keywords")
     return issues
 
 
 def compare_against_gold_yaml(
     labels_data: dict[str, Any],
     gold_path: Path,
+    categorization_path: Path | None = None,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
     gold = load_config(gold_path)
-    gold_topics = gold.get("topics", {})
-    criteria = gold.get("pass_criteria", {})
+    gold_topics = dict(gold.get("topics", {}))
+    criteria = dict(gold.get("pass_criteria", {}))
     manual_review = set(gold.get("manual_review_topics", []))
+
+    if categorization_path is not None:
+        cat = load_config(categorization_path)
+        criteria.update(cat.get("pass_criteria", {}))
+        manual_review |= set(cat.get("manual_review_topics", []))
+        for tid_str, cat_expected in cat.get("topics", {}).items():
+            merged = dict(gold_topics.get(tid_str, {}))
+            merged.update(cat_expected)
+            gold_topics[tid_str] = merged
+
+    label_overlap_min = criteria.get("label_overlap_min", 0.35)
+    label_agreement_min = criteria.get("label_agreement_min")
 
     rows = []
     fn_match = 0
-    axis_match = 0
+    routing_match = 0
+    routing_n = 0
+    label_pass = 0
     n = 0
 
     for tid_str, expected in gold_topics.items():
@@ -145,27 +157,42 @@ def compare_against_gold_yaml(
         n += 1
         issues: list[str] = []
         exp_fn = expected.get("sexual_function")
-        exp_axis = expected.get("axis_hint")
         act_fn = entry.get("sexual_function")
-        act_axis = entry.get("axis_hint")
         if exp_fn and act_fn == exp_fn:
             fn_match += 1
         elif exp_fn:
             issues.append(f"sexual_function: expected {exp_fn}, got {act_fn}")
-        if exp_axis and act_axis == exp_axis:
-            axis_match += 1
-        elif exp_axis:
-            issues.append(f"axis_hint: expected {exp_axis}, got {act_axis}")
         exp_consent = expected.get("consent_status")
         if exp_consent and entry.get("consent_status") != exp_consent:
             issues.append(
                 f"consent_status: expected {exp_consent}, got {entry.get('consent_status')}"
             )
-        exp_label = expected.get("label", "")
+        routing_fields = ("content_type", "is_noise", "exclude_from_axes")
+        if any(f in expected for f in routing_fields):
+            routing_n += 1
+            routing_ok = True
+            for field in routing_fields:
+                if field not in expected:
+                    continue
+                if entry.get(field) != expected[field]:
+                    routing_ok = False
+                    issues.append(
+                        f"{field}: expected {expected[field]!r}, got {entry.get(field)!r}"
+                    )
+            if routing_ok:
+                routing_match += 1
+        exp_label = expected.get("gold_label") or expected.get("label", "")
         act_label = entry.get("label", "")
         overlap = _label_token_overlap(act_label, exp_label) if exp_label else 1.0
-        if exp_label and overlap < 0.35:
+        if exp_label and overlap < label_overlap_min:
             issues.append(f"label overlap {overlap:.2f} vs gold {exp_label!r}")
+        elif exp_label:
+            label_pass += 1
+        exp_summary = expected.get("gold_scene_summary", "")
+        act_summary = entry.get("scene_summary", "")
+        summary_overlap = (
+            _label_token_overlap(act_summary, exp_summary) if exp_summary else None
+        )
         issues.extend(check_genre_cliche_labels(act_label))
         issues.extend(check_v3_explicitness_keywords(entry, entry.get("keywords", [])))
         if tid in manual_review:
@@ -176,31 +203,55 @@ def compare_against_gold_yaml(
             "label": act_label,
             "expected_label": exp_label,
             "label_overlap": overlap,
+            "scene_summary": act_summary,
+            "expected_scene_summary": exp_summary,
+            "scene_summary_overlap": summary_overlap,
             "sexual_function": act_fn,
             "expected_sexual_function": exp_fn,
-            "axis_hint": act_axis,
-            "expected_axis_hint": exp_axis,
             "num_issues": len(issues),
             "issues": "; ".join(issues),
             "has_issues": len(issues) > 0,
         })
 
     fn_rate = fn_match / n if n else 0.0
-    axis_rate = axis_match / n if n else 0.0
+    routing_rate = routing_match / routing_n if routing_n else 1.0
+    label_rate = label_pass / n if n else 0.0
     cliche_count = sum(
         1 for r in rows if "Genre cliché" in str(r.get("issues", ""))
     )
+    pass_label = (
+        label_rate >= label_agreement_min
+        if label_agreement_min is not None
+        else True
+    )
+    has_cat_criteria = any(
+        expected.get("sexual_function")
+        for expected in gold_topics.values()
+    )
+    pass_fn = (
+        fn_rate >= criteria.get("sexual_function_agreement_min", 0.85)
+        if has_cat_criteria
+        else True
+    )
+    pass_routing = (
+        routing_rate >= criteria.get("routing_agreement_min", 1.0)
+        if routing_n
+        else True
+    )
     summary = {
         "topics_compared": n,
+        "label_agreement": label_rate,
         "sexual_function_agreement": fn_rate,
-        "axis_hint_agreement": axis_rate,
+        "routing_agreement": routing_rate,
         "genre_cliche_count": cliche_count,
-        "pass_fn": fn_rate >= criteria.get("sexual_function_agreement_min", 0.85),
-        "pass_axis": axis_rate >= criteria.get("axis_hint_agreement_min", 0.85),
+        "pass_label": pass_label,
+        "pass_fn": pass_fn,
+        "pass_routing": pass_routing,
         "pass_cliches": cliche_count == 0 if criteria.get("zero_genre_cliches") else True,
         "overall_pass": (
-            fn_rate >= criteria.get("sexual_function_agreement_min", 0.85)
-            and axis_rate >= criteria.get("axis_hint_agreement_min", 0.85)
+            pass_label
+            and pass_fn
+            and pass_routing
             and (cliche_count == 0 if criteria.get("zero_genre_cliches") else True)
         ),
     }
@@ -493,7 +544,14 @@ def main():
         "--gold-yaml",
         type=str,
         default=None,
-        help="Path to v3 sexual subset gold YAML for enum/label comparison.",
+        help="Path to labeling gold YAML (gold_label, gold_scene_summary).",
+    )
+
+    parser.add_argument(
+        "--gold-categorization-yaml",
+        type=str,
+        default=None,
+        help="Optional path to categorization gold YAML (sexual_function, consent, routing).",
     )
 
     parser.add_argument(
@@ -515,7 +573,16 @@ def main():
         gold_path = Path(args.gold_yaml)
         if not gold_path.is_file():
             raise FileNotFoundError(f"Gold YAML not found: {gold_path}")
-        df, summary = compare_against_gold_yaml(labels_data, gold_path)
+        cat_path = None
+        if args.gold_categorization_yaml:
+            cat_path = Path(args.gold_categorization_yaml)
+            if not cat_path.is_file():
+                raise FileNotFoundError(
+                    f"Gold categorization YAML not found: {cat_path}"
+                )
+        df, summary = compare_against_gold_yaml(
+            labels_data, gold_path, categorization_path=cat_path
+        )
         print("\n" + "=" * 80)
         print("V3 GOLD COMPARISON SUMMARY")
         print("=" * 80)

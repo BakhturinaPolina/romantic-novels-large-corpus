@@ -218,6 +218,75 @@ def load_bertopic_model(
         return wrapper, topic_model
 
 
+REPRESENTATION_NAMES = ("KeyBERT", "MMR", "POS", "Main")
+
+
+def _words_from_topic_content(topic_content: list, top_k: int) -> list[str]:
+    """Extract keyword strings from a BERTopic representation topic list."""
+    keywords: list[str] = []
+    for item in topic_content[:top_k]:
+        word = None
+        if isinstance(item, dict) and "word" in item:
+            word = str(item["word"]).strip()
+        elif isinstance(item, str):
+            word = item.strip()
+        if word:
+            keywords.append(word)
+    return keywords
+
+
+def load_all_representations_from_json(
+    json_path: Path,
+    top_k: int = 15,
+) -> dict[int, dict[str, list[str]]]:
+    """Load per-topic keywords for all BERTopic representations from topics JSON."""
+    if not json_path.exists():
+        raise FileNotFoundError(f"Topics JSON file not found: {json_path}")
+
+    with stage_timer_local(f"Loading all representations from JSON: {json_path.name}"):
+        with json_path.open(encoding="utf-8") as f:
+            data = json.load(f)
+
+    topic_to_reps: dict[int, dict[str, list[str]]] = {}
+    for rep_name in REPRESENTATION_NAMES:
+        rep_data = data.get(rep_name)
+        if not isinstance(rep_data, dict):
+            continue
+        for topic_id_str, topic_content in rep_data.items():
+            try:
+                topic_id = int(topic_id_str)
+            except ValueError:
+                continue
+            if topic_id == -1:
+                continue
+            if not isinstance(topic_content, list):
+                continue
+            words = _words_from_topic_content(topic_content, top_k)
+            if words:
+                topic_to_reps.setdefault(topic_id, {})[rep_name] = words
+
+    LOGGER.info(
+        "Loaded all representations for %d topics from %s",
+        len(topic_to_reps),
+        json_path.name,
+    )
+    return topic_to_reps
+
+
+def union_keywords_excluding_main(reps: dict[str, list[str]]) -> list[str]:
+    """Union KeyBERT, MMR, POS preserving first-seen order (Main excluded)."""
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for rep in ("KeyBERT", "MMR", "POS"):
+        for word in reps.get(rep, []):
+            key = word.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            ordered.append(word)
+    return ordered
+
+
 def extract_pos_topics_from_json(
     json_path: Path,
     top_k: int = 8,
@@ -275,12 +344,11 @@ def extract_pos_topics_from_json(
                 # Filter out empty keywords
                 if word:
                     keywords.append(word)
-            
-            # Skip topics with no valid keywords
+
             if keywords:
                 topic_count += 1
                 yield (topic_id, keywords)
-        
+
         LOGGER.info(
             "Streamed POS keywords for %d topics (top_k=%d)",
             topic_count,

@@ -2,12 +2,12 @@
 # Base paths mirror placeholder_v4 call73; prompt_version overrides frozen v2_c8.
 
 frozen_call: 73
-prompt_version: v3_sexual_precision
+prompt_version: v3_topic_labeling
 
 openrouter:
   model: anthropic/claude-sonnet-4.6
   temperature: 0.0
-  max_tokens: 256
+  max_tokens: 350
   rate_limit_delay_s: 4.0
 
 labeling:
