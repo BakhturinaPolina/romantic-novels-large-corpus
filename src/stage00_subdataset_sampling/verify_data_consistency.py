@@ -21,7 +21,9 @@ import sys
 
 # Project paths
 _THIS_DIR = Path(__file__).parent
-_PROJECT_ROOT = _THIS_DIR.parent
+# This file is at: src/stage00_subdataset_sampling/verify_data_consistency.py
+# Project root is 2 levels up
+_PROJECT_ROOT = _THIS_DIR.parent.parent
 
 # File paths
 SUBSAMPLING_DIR = _PROJECT_ROOT / "results" / "subsampling"

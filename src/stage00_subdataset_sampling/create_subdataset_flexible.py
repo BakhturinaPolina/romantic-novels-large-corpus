@@ -75,10 +75,10 @@ import pandas as pd
 RANDOM_SEED_DEFAULT = 42
 
 # Compute project root relative to this file's location
-# This file is at: src/01_data_integration/subdataset_sampling/create_subdataset_flexible.py
-# Project root is 4 levels up
+# This file is at: src/stage00_subdataset_sampling/create_subdataset_flexible.py
+# Project root is 2 levels up
 _THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(_THIS_DIR)))
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(_THIS_DIR))
 
 # Default output directory: <project_root>/results/subsampling/
 DEFAULT_OUTDIR = os.path.join(_PROJECT_ROOT, "results", "subsampling")

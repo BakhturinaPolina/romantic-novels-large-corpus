@@ -33,9 +33,9 @@ from download_parallel_direct import build_downloaded_md5_cache, is_already_down
 
 # Project paths
 _THIS_DIR = Path(__file__).parent
-# This file is at: subdataset_sampling/prepare_download_list.py
-# Project root is 1 level up
-_PROJECT_ROOT = _THIS_DIR.parent
+# This file is at: src/stage00_subdataset_sampling/prepare_download_list.py
+# Project root is 2 levels up
+_PROJECT_ROOT = _THIS_DIR.parent.parent
 
 # Default paths
 DEFAULT_SUBSAMPLING_DIR = _PROJECT_ROOT / "results" / "subsampling"

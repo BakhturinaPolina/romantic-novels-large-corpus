@@ -2,7 +2,7 @@
 
 This note ties together three artifacts:
 
-1. **`src/subdataset_sampling/`** — Python utilities used to define subsamples, reconcile MD5s, prepare download lists, and (optionally) drive EPUB retrieval.
+1. **`src/stage00_subdataset_sampling/`** — Python utilities used to define subsamples, reconcile MD5s, prepare download lists, and (optionally) drive EPUB retrieval.
 2. **`data/raw/subsampling_V1/`** — On-disk archive of the **~20k-book stratified design** (train / val / test + full cohort CSVs) produced for the romance pipeline.
 3. **`data/raw/romance_subdataset_downloaded_v2_full/`** — **Primary text corpus**: EPUBs laid out by split, plus **`subsampling_metadata/`** mirroring the **downloaded v2** cohort tables and a machine-readable manifest.
 
@@ -10,7 +10,7 @@ Pipeline configuration references the v2 corpus root in `configs/paths.yaml` (`r
 
 ---
 
-## 1. Code: `src/subdataset_sampling/`
+## 1. Code: `src/stage00_subdataset_sampling/`
 
 | Module | Role |
 |--------|------|
