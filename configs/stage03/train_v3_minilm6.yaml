@@ -1,0 +1,54 @@
+# Stage03 tuning for v3 English-only corpus — MiniLM-L6 embedding model.
+
+paths_config: "configs/stage03/paths_stage03_fit_v3.yaml"
+
+embedding_models:
+  - "sentence-transformers/paraphrase-MiniLM-L6-v2"
+
+device: "auto"
+embedding_batch_size: 256
+
+embeddings_cache:
+  overrides:
+    "sentence-transformers/paraphrase-MiniLM-L6-v2": "data/interim/octis/v3_english_only/embeddings_cache/train_eval_sentence-transformers__paraphrase-MiniLM-L6-v2.npy"
+
+embeddings_hub:
+  enabled: true
+  repo_id: "RuthonField/romance-v2-train-eval-embeddings"
+  upload_after_compute: false
+  download_if_missing: true
+
+text:
+  sentence_column: "sentence"
+  csv_chunk_size: 50000
+  coherence_eval_max_docs: 100000
+  bertopic_fit_max_docs: 500000
+
+bertopic:
+  calculate_probabilities: false
+
+optimization:
+  number_of_calls: 130
+  model_runs: 3
+  save_models: false
+  seed: 42
+  default_stability_score: 0.0
+  topic_stability:
+    enabled: true
+    max_n_topics_std: 3.0
+    collapse_ratio: 0.5
+    penalty_weight: 0.2
+  topic_count_penalty:
+    enabled: true
+    min_n_topics: 20
+    weight: 0.15
+
+search_space:
+  umap__n_neighbors: [10, 75]
+  umap__n_components: [5, 15]
+  umap__min_dist: [0.02, 0.15]
+  hdbscan__min_cluster_size: [50, 800]
+  hdbscan__min_samples: [5, 50]
+  vectorizer__min_df: [0.002, 0.015]
+  bertopic__top_n_words: [20, 50]
+  bertopic__min_topic_size: [50, 500]

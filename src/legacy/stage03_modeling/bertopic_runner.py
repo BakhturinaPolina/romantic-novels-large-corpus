@@ -28,7 +28,7 @@ try:
     paths_cfg = load_config(Path("configs/paths.yaml"))
     print(f"[STEP 1.3] paths_cfg loaded: {list(paths_cfg.keys())}")
     print("[STEP 1.4] Loading octis.yaml config...")
-    octis_cfg = load_config(Path("configs/octis.yaml"))
+    octis_cfg = load_config(Path("configs/legacy/octis.yaml"))
     print(f"[STEP 1.5] octis_cfg loaded: {list(octis_cfg.keys())}")
     
     print("[STEP 1.6] Resolving dataset path...")

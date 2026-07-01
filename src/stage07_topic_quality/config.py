@@ -9,7 +9,7 @@ import yaml
 
 from src.common.config import resolve_path
 
-DEFAULT_STAGE07_CONFIG = Path("configs/stage07_topic_quality.yaml")
+DEFAULT_STAGE07_CONFIG = Path("configs/stage07/stage07_topic_quality.yaml")
 
 REPRESENTATIONS_DEFAULT = ("Main", "KeyBERT", "MMR", "POS")
 

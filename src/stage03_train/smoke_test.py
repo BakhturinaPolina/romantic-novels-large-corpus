@@ -12,7 +12,7 @@ from src.stage03_train.octis_corpus import write_octis_corpus, write_octis_corpu
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", default="configs/train.yaml")
+    parser.add_argument("--config", default="configs/stage03/train_smoke.yaml")
     parser.add_argument("--max-docs", type=int, default=10000)
     parser.add_argument("--run-id", default="smoke_test")
     parser.add_argument(

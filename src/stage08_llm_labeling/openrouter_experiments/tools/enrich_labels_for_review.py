@@ -7,7 +7,7 @@ Adds per-topic:
 
 Usage:
     python -m src.stage08_llm_labeling.openrouter_experiments.tools.enrich_labels_for_review \
-        --labels-json results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_topic_labeling.json
+        --labels-json results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_topic_labeling.json
 """
 
 from __future__ import annotations

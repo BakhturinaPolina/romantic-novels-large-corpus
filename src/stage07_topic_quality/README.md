@@ -20,15 +20,15 @@ Stage 08B — Descriptive topic labeling
 ## Usage
 
 ```bash
-bash scripts/run_stage07_placeholder_v4_models.sh
-bash scripts/run_stage08a_quality_adjudication.sh
-# then Stage 08B labeling with configs/stage08_labeling.yaml
+bash scripts/stage07/run_stage07_placeholder_v4_models.sh
+bash scripts/stage08/run_stage08a_quality_adjudication.sh
+# then Stage 08B labeling with configs/stage08/stage08_labeling.yaml
 ```
 
 ## Config
 
-- [`configs/stage07_topic_quality.yaml`](../../configs/stage07_topic_quality.yaml) — thresholds, representation list
-- [`configs/topic_posthoc_rules.yaml`](../../configs/topic_posthoc_rules.yaml) — hard/soft posthoc rules
+- [`configs/stage07/stage07_topic_quality.yaml`](../../configs/stage07/stage07_topic_quality.yaml) — thresholds, representation list
+- [`configs/call73/topic_posthoc_rules.yaml`](../../configs/call73/topic_posthoc_rules.yaml) — hard/soft posthoc rules
 
 ## Outputs (per call)
 

@@ -1,0 +1,144 @@
+version: '3.0'
+description: Gold panel for topic labeling only (no categorization enums).
+selection_notes: 28 topics from stage08_v3_sexual_subset_gold.yaml + T14 publisher noise + T122 name artifact.
+topics:
+  '1':
+    gold_label: Tender Kissing With Possible Sexual Escalation
+    gold_scene_summary: A gentle kiss on lips or temple begins as affection but keyword/sibling-topic
+      context shows escalation potential.
+    selection_reasoning: Core intimacy pilot; borderline affection vs presex escalation — tests whether
+      model over-reads Main explicit tokens.
+  '2':
+    gold_label: Charged Physical Nearness Before a Kiss
+    gold_scene_summary: A man leans forehead-to-forehead and touches neck/throat while breath and sweat
+      signal charged nearness before kissing.
+    selection_reasoning: Physical-proximity stratum; clear sexual_tension without explicit acts.
+  '7':
+    gold_label: Flirtatious Smile or Wink
+    gold_scene_summary: Characters exchange brief playful winks or smiles in casual social settings without
+      romantic escalation.
+    selection_reasoning: Discourse/gesture pattern; tests nonsexual_affection vs sexual_tension confusion.
+  '14':
+    gold_label: Publisher Copyright Page
+    gold_scene_summary: References to books, publishers, and reading material indicate paratext/publisher
+      boilerplate, not narrative scene.
+    selection_reasoning: 'Added routing case: publisher noise must be excluded from axes.'
+  '26':
+    gold_label: Suggestive Bed Positioning or Pre-Intimacy Movement
+    gold_scene_summary: Characters crawl, scoot, or are flipped into position on a bed as intimacy begins.
+    selection_reasoning: Pre-intimacy movement; tests presex_escalation labeling.
+  '40':
+    gold_label: Negotiating Private Lodging With Sexual Subtext
+    gold_scene_summary: Characters plan or discuss hotel stays with acknowledged sexual subtext about
+      sharing a room.
+    selection_reasoning: Lodging negotiation with innuendo; mid-tier sexual_tension scene.
+  '56':
+    gold_label: Explicit Sexual Contact and Post-Sex Arousal
+    gold_scene_summary: After sex, exhaustion is voiced but bodies show lingering arousal and continued
+      physical contact.
+    selection_reasoning: Post-sex cluster; MANUAL_REVIEW — snippets mix explicit aftermath with affection.
+  '66':
+    gold_label: Verbal Physical Admiration / Attraction
+    gold_scene_summary: Characters verbally admire a woman's beauty or body, from tender to blunt compliments.
+    selection_reasoning: Verbal attraction; axis_hint borderline everyday_intimacy vs sexual_tension.
+  '70':
+    gold_label: Protective Threat Around Unwanted Touch
+    gold_scene_summary: Violent threats are issued to stop unwanted touching or assert control over another's
+      body.
+    selection_reasoning: Consent-boundary / coercion_watchlist case.
+  '72':
+    gold_label: Cautious Romantic Approach
+    gold_scene_summary: A character takes one or two deliberate steps closer in a hesitant romantic approach.
+    selection_reasoning: Minimal-action affection beat; tests label specificity without over-reading.
+  '78':
+    gold_label: Undressing and Clothing Fastenings in Sexual Tension
+    gold_scene_summary: Characters fumble with zippers, buttons, and clothing fasteners while undressing
+      under tension.
+    selection_reasoning: Classic presex undressing escalation.
+  '84':
+    gold_label: Flirtatious Hair Touching and Physical Charge
+    gold_scene_summary: Fingers thread through, twist, or tug hair in contexts from nervous self-touch
+      to charged pulling.
+    selection_reasoning: Hair-touching flirtation; gold treats as nonsexual_affection though snippets
+      can escalate.
+  '108':
+    gold_label: Post-Shower Body Display / Bathroom Intimacy
+    gold_scene_summary: A man emerges from shower/bathroom towel-clad with wet hair, observed with charged
+      attention.
+    selection_reasoning: Bathroom/body-display presex escalation.
+  '118':
+    gold_label: Forceful Sexual Positioning in Bed
+    gold_scene_summary: Forceful positioning and pounding on a mattress during bed sex.
+    selection_reasoning: Explicit + consent ambiguity; MANUAL_REVIEW — forceful language vs consensual
+      kink.
+  '122':
+    gold_label: Character Name Artifact
+    gold_scene_summary: Snippets share no scene beat; co-occurrence is character-name driven (rival discussion
+      artifact).
+    selection_reasoning: 'Added routing case: character-name artifact must route to noise.'
+  '123':
+    gold_label: Reassuring Hug or Comfort Touch
+    gold_scene_summary: Characters share a reassuring hug or comfort touch without sexual escalation.
+    selection_reasoning: Platonic affection / emotional safety.
+  '138':
+    gold_label: Condom and Lube Preparation Before Sex
+    gold_scene_summary: Partners discuss, offer, or apologize about condom availability before anticipated
+      sex.
+    selection_reasoning: Contraception preparation; sparse keywords but coherent snippets.
+  '140':
+    gold_label: Negotiating When to Stop
+    gold_scene_summary: A partner explicitly agrees to stop the encounter when the other signals enough.
+    selection_reasoning: Sexual negotiation / consent boundary-setting.
+  '152':
+    gold_label: Visual Attraction to a Stranger
+    gold_scene_summary: A character steals glances at a stranger's attractive features while trying not
+      to stare.
+    selection_reasoning: Visual attraction; tests axis_hint (everyday vs sexual_tension dispute in regression).
+  '161':
+    gold_label: Urgent or Possessive Kissing
+    gold_scene_summary: A man longs to kiss or claim a woman's mouth with urgent, possessive desire.
+    selection_reasoning: Possessive kissing tension; tests nonsexual_affection vs sexual_tension.
+  '174':
+    gold_label: Playful Sexual Innuendo and Body-Size Banter
+    gold_scene_summary: Playful banter about body size, dominance, and sexual innuendo escalates suggestively.
+    selection_reasoning: Innuendo/banter sexual_tension.
+  '210':
+    gold_label: Negotiating Sex Without Emotional Commitment
+    gold_scene_summary: Characters openly choose sex without emotional commitment or love.
+    selection_reasoning: Sex-without-commitment negotiation.
+  '218':
+    gold_label: Sweat, Heat, and Physical Arousal or Exertion
+    gold_scene_summary: Characters are drenched in sweat with clammy skin during intense physical exertion
+      or heat.
+    selection_reasoning: Sweat/heat cluster; gold reads as sexual_tension though LLM often calls exertion-only.
+  '248':
+    gold_label: Overheard Sexual or Ambiguous Noises Through Walls
+    gold_scene_summary: Characters react to muffled pleasure sounds or noises suggesting nearby sexual
+      activity.
+    selection_reasoning: Overheard sounds / auditory sexual tension.
+  '257':
+    gold_label: Flushed Skin and Embarrassed Arousal
+    gold_scene_summary: Skin flushes and heat rises in another's presence, signaling embarrassed or charged
+      arousal.
+    selection_reasoning: Embarrassed arousal bodily response.
+  '277':
+    gold_label: Explicit Male Arousal Through Clothing
+    gold_scene_summary: A man's erection strains painfully against trousers or pants fabric.
+    selection_reasoning: Explicit male arousal through clothing.
+  '284':
+    gold_label: Approaching Orgasm or Overwhelming Sexual Sensation
+    gold_scene_summary: Eyes close and head falls back as sensation builds toward orgasm.
+    selection_reasoning: Orgasm/climax; MANUAL_REVIEW — snippet mix of sensory immersion.
+  '292':
+    gold_label: Sexual Longing During Reunion or Separation
+    gold_scene_summary: Separated partners express sexual longing during reunion or absence.
+    selection_reasoning: Longing/reunion sexual_tension; distinct from T122 name artifact.
+  '303':
+    gold_label: Sensual Taste Description During Kissing or Intimacy
+    gold_scene_summary: Characters describe tasting a partner during kissing or intimacy as irresistible
+      sensory pleasure.
+    selection_reasoning: Gustatory sensuality during kissing.
+  '326':
+    gold_label: Goodnight Kiss and Promise to Reconnect
+    gold_scene_summary: A goodnight kiss at the door ends an evening with promise to reconnect.
+    selection_reasoning: Parting affection / everyday intimacy.

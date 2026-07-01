@@ -44,7 +44,7 @@ except ImportError:
     DEFAULT_EMBEDDING_MODEL = None
 
 try:
-    from src.stage09_category_mapping.taxonomy_v2 import composite_index_spec
+    from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import composite_index_spec
 except ImportError:
     composite_index_spec = None
 
@@ -129,8 +129,8 @@ def find_inputs(project_root: Path) -> Dict[str, Optional[Path]]:
 
     # 4) If Stage09 already computed category proportions, use those directly
     candidates['stage09_book_category_props'] = first_existing([
-        project_root / "results" / "stage09_category_mapping" / "stage2_theory_driven_categories" / "book_category_proportions.parquet",
-        project_root / "results" / "stage09_category_mapping" / "stage2_theory_driven_categories" / "book_category_proportions.csv",
+        project_root / "results" / "stage09_category_mapping" / "stage1_theory_driven_categories" / "book_category_proportions.parquet",
+        project_root / "results" / "stage09_category_mapping" / "stage1_theory_driven_categories" / "book_category_proportions.csv",
     ])
 
     # 5) Sentence dataframe with topics
@@ -309,7 +309,7 @@ def compute_indices(
     for comp, names in COMPONENTS.items():
         components_df[comp] = sum_components(wide_name, names)
 
-    # Indices aligned to configs/theory_aligned_index_schema.yaml (v2.1)
+    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.1)
     indices = pd.DataFrame(index=wide_name.index)
 
     indices['payoff_safety'] = (

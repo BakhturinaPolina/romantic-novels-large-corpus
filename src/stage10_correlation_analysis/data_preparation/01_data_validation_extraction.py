@@ -433,7 +433,7 @@ def check_id_alignment(
             results_dir / "stage10_correlation_analysis" / "chapter_topic_probs.csv",
         ],
         "book_category_props": [
-            results_dir / "stage09_category_mapping" / "stage2_theory_driven_categories" / "book_category_proportions.parquet",
+            results_dir / "stage09_category_mapping" / "stage1_theory_driven_categories" / "book_category_proportions.parquet",
         ],
     }
     

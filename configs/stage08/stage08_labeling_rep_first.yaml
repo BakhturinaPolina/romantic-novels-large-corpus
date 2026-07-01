@@ -1,0 +1,35 @@
+# Stage 08 LLM labeling — rep-first prompt variant (A/B vs stage08_labeling.yaml)
+# Keyword thread (KeyBERT + MMR + POS + ALL KEYWORDS) defines the label; snippets ground the beat.
+
+frozen_call: 73
+prompt_version: v3_rep_first
+
+openrouter:
+  model: anthropic/claude-sonnet-4.6
+  temperature: 0.05
+  max_tokens: 350
+  rate_limit_delay_s: 4.0
+
+labeling:
+  num_keywords: 15
+  max_snippets: 6
+  max_chars_per_snippet: 1200
+  label_all_topics: false
+  skip_hard_exclude: true
+  require_08a_pass: true
+  use_full_schema: true
+  resume: true
+
+paths:
+  compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_73
+  enriched_model: results/experiments/placeholder_v4_models/final_compare/call_73/model_compare_enriched
+  name_cleaning_dir: results/stage06_name_cleaning/placeholder_v4_call73
+  topics_json: results/stage06_name_cleaning/placeholder_v4_call73/cleaned_topics_all_representations.json
+  representative_docs_csv: results/stage06_name_cleaning/placeholder_v4_call73/cleaned_representative_docs.csv
+  quality_csv: results/stage07_topic_quality/placeholder_v4_call73/stage07_topic_quality_audit.csv
+  quality_adjudication_jsonl: results/stage08a_quality_adjudication/placeholder_v4_call73/adjudication_results.jsonl
+  output_dir: results/stage08_llm_labeling/placeholder_v4_call73/production
+
+tiers:
+  core_min_docs: 800
+  mid_min_docs: 200

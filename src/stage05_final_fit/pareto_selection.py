@@ -37,7 +37,7 @@ def collect_bo_calls_from_pareto(
 
 
 def load_pareto_selection_config(config_path: Path) -> dict:
-    """Load ``configs/selection_notebooks.yaml`` and resolve key paths."""
+    """Load ``configs/stage04/selection_notebooks.yaml`` and resolve key paths."""
     cfg = load_config(config_path)
     run_id = cfg["run_id"]
     base = resolve_path(Path(cfg["outputs"]["base_dir"]))

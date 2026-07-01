@@ -557,7 +557,7 @@ def run_compare_fit(
     run_id: str,
     *,
     paths_config: Path,
-    config_path: Path = Path("configs/train.yaml"),
+    config_path: Path = Path("configs/stage03/train_v3.yaml"),
     fit_indices: Path | None = None,
     fit_max_docs: int = 500_000,
     embedding_cache: Path | None = None,

@@ -25,7 +25,7 @@ services:
       - src.stage03_train.cli
       - tune
       - --config
-      - configs/train.yaml
+      - configs/stage03/train_v3.yaml
       - --run-id
       - ${RUN_ID}
       - --embedding-model

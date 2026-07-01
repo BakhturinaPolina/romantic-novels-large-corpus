@@ -10,7 +10,7 @@ import yaml
 
 from src.common.config import resolve_path
 
-DEFAULT_CONFIG = Path("configs/character_name_cleaning.yaml")
+DEFAULT_CONFIG = Path("configs/stage06/character_name_cleaning.yaml")
 
 
 @lru_cache(maxsize=1)

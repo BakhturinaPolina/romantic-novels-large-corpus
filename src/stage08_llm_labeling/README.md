@@ -4,11 +4,11 @@
 
 Stage 08 generates interpretable labels for BERTopic topics via OpenRouter. Production uses **`v3_topic_labeling`**: snippets-first evidence, all keyword representations (KeyBERT, MMR, POS, Main), character-name rules, and v3 sexual-precision JSON fields — without Stage09 category taxonomy.
 
-**A/B variant:** **`v3_rep_first`** — keyword thread (ALL KEYWORDS + KeyBERT + MMR + POS) defines the label; snippets and Main ground/polish the beat. Use when snippets surface bland "I'll…" glue but alt-reps show a richer shared theme. Config: [`configs/stage08_labeling_rep_first.yaml`](../../configs/stage08_labeling_rep_first.yaml).
+**A/B variant:** **`v3_rep_first`** — keyword thread (ALL KEYWORDS + KeyBERT + MMR + POS) defines the label; snippets and Main ground/polish the beat. Use when snippets surface bland "I'll…" glue but alt-reps show a richer shared theme. Config: [`configs/stage08/stage08_labeling_rep_first.yaml`](../../configs/stage08/stage08_labeling_rep_first.yaml).
 
 ## Production defaults
 
-See [`configs/stage08_labeling.yaml`](../../configs/stage08_labeling.yaml):
+See [`configs/stage08/stage08_labeling.yaml`](../../configs/stage08/stage08_labeling.yaml):
 
 | Setting | Value |
 |---------|-------|
@@ -21,14 +21,14 @@ See [`configs/stage08_labeling.yaml`](../../configs/stage08_labeling.yaml):
 ## Run labeling
 
 ```bash
-scripts/run_stage08_placeholder_v4_call.sh
+scripts/stage08/run_stage08_placeholder_v4_call.sh
 ```
 
 Or directly:
 
 ```bash
 python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
-  --stage08-config configs/stage08_labeling.yaml
+  --stage08-config configs/stage08/stage08_labeling.yaml
 ```
 
 ## Gold regression (30 topics)
@@ -36,7 +36,7 @@ python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
 Before a full-corpus relabel, run the golden panel:
 
 ```bash
-scripts/run_stage08_gold_regression.sh
+scripts/stage08/run_stage08_gold_regression.sh
 ```
 
 Gold expectations:
@@ -61,7 +61,7 @@ Run rep-first labeling:
 
 ```bash
 python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
-  --stage08-config configs/stage08_labeling_rep_first.yaml
+  --stage08-config configs/stage08/stage08_labeling_rep_first.yaml
 ```
 
 ## JSON output (v3 slim)

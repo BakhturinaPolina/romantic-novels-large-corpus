@@ -22,6 +22,7 @@ from src.stage03_train.corpus_store import corpus_metadata_path
 from src.stage03_train.data_io import clean_sentence
 from src.stage05_final_fit.chunked_transform import transform_docs_batched
 from src.stage05_final_fit.compare_fit import compare_model_dir
+from src.stage05_final_fit.embedding_cache import load_test_embeddings_mmap, resolve_embeddings_cache_path
 
 LOGGER = logging.getLogger("stage05_full_corpus_infer")
 
@@ -43,16 +44,16 @@ def _load_model(model_root: Path) -> BERTopic:
 
 
 def _resolve_embeddings_cache(train_cfg: dict[str, Any], embedding_model_name: str) -> Path:
-    overrides = (train_cfg.get("embeddings_cache", {}) or {}).get("overrides", {}) or {}
-    override_path = overrides.get(embedding_model_name)
-    if not override_path:
+    cache_path = resolve_embeddings_cache_path(
+        train_cfg, embedding_model_name, split="train_eval"
+    )
+    if cache_path is None:
         raise ValueError(
             f"No embeddings cache override for {embedding_model_name} in train config."
         )
-    cache_file = resolve_path(Path(override_path))
-    if not cache_file.exists():
-        raise FileNotFoundError(f"Embeddings cache not found: {cache_file}")
-    return cache_file
+    if not cache_path.exists():
+        raise FileNotFoundError(f"Embeddings cache not found: {cache_path}")
+    return cache_path
 
 
 def _iter_sentence_rows(
@@ -180,10 +181,10 @@ def run_full_corpus_infer(
     *,
     model_dir: Path,
     run_id: str,
-    paths_config: Path = Path("configs/paths_stage03_fit_v3.yaml"),
-    train_config: Path = Path("configs/train_v4_l12_final_call73.yaml"),
+    paths_config: Path = Path("configs/stage03/paths_stage03_fit_v3.yaml"),
+    train_config: Path = Path("configs/stage03/train_v4_l12_final_call73.yaml"),
     splits: tuple[str, ...] = ("train", "val", "test"),
-    batch_size: int = 8192,
+    batch_size: int = 16_384,
     chunk_size: int = 50_000,
     output_dir: Path | None = None,
 ) -> Path:
@@ -206,6 +207,7 @@ def run_full_corpus_infer(
     embedding_model_name = train_cfg.get("embedding_models", ["sentence-transformers/all-MiniLM-L12-v2"])[0]
 
     embeddings_mmap = None
+    test_embeddings_mmap = None
     n_train_docs = 0
     if any(s in splits for s in ("train", "val")):
         cache_file = _resolve_embeddings_cache(train_cfg, embedding_model_name)
@@ -222,6 +224,8 @@ def run_full_corpus_infer(
             embeddings_mmap.shape,
             n_train_docs,
         )
+    if "test" in splits:
+        test_embeddings_mmap = load_test_embeddings_mmap(train_config, embedding_model_name, logger=LOGGER)
 
     split_csv = {
         "train": resolve_path(Path(inputs["sentences_train_csv"])),
@@ -235,7 +239,10 @@ def run_full_corpus_infer(
     for split in splits:
         if split not in split_csv:
             raise ValueError(f"Unknown split {split!r}; expected train|val|test")
-        mmap = embeddings_mmap if split in ("train", "val") else None
+        if split == "test":
+            mmap = test_embeddings_mmap
+        else:
+            mmap = embeddings_mmap
         stats = infer_split_to_parquet(
             topic_model,
             split_csv[split],

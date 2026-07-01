@@ -38,9 +38,9 @@ This file is the implementation blueprint for the new train/eval/test pipeline.
 - `src/stage05b_test_holdout/test_runner.py`
 - `src/stage05b_test_holdout/cli.py`
 
-- `configs/train.yaml`
-- `configs/eval_select.yaml`
-- `configs/final_fit.yaml`
+- `configs/legacy/train.yaml`
+- `configs/stage04/eval_select.yaml`
+- `configs/legacy/final_fit.yaml`
 
 ### Modify
 - `configs/paths.yaml`
@@ -76,7 +76,7 @@ def load_train_eval(
 - Uses Stage 01 schema (`sentence` lowercase column).
 - Never assumes 4-column legacy shape.
 - Returns labels as `work_id` strings.
-- Full-corpus tuning uses chunked CSV iteration (`csv_chunk_size` in `configs/train.yaml`), not in-memory `read_csv` of entire splits.
+- Full-corpus tuning uses chunked CSV iteration (`csv_chunk_size` in `configs/legacy/train.yaml`), not in-memory `read_csv` of entire splits.
 
 ---
 
@@ -205,11 +205,11 @@ def apply_weighted_score(
 - `make_fit_sample.py` selects the BERTopic fit/eval rows as stratified **indices into the
   full corpus** (`fit_indices` train partition, `eval_indices` val partition). Tuning fits
   on the train partition only and reuses the full-corpus embedding `.npy` per model via
-  `configs/train.yaml -> embeddings_cache.overrides` (no re-encoding).
+  `configs/legacy/train.yaml -> embeddings_cache.overrides` (no re-encoding).
 - Topic-word filtering uses a **precomputed fit-corpus** gensim `Dictionary` injected into
   `BERTopicOctisModelWithEmbeddings` (`topic_filter_dictionary`); coherence/diversity are
   still computed on stratified eval tokens separately.
-- Current search space in `configs/train.yaml` (post v1 collapse fix):
+- Current search space in `configs/legacy/train.yaml` (post v1 collapse fix):
   `hdbscan__min_cluster_size [50, 800]`, `hdbscan__min_samples [5, 50]`,
   `bertopic__min_topic_size [50, 500]`, `umap__n_components [5, 15]`,
   `umap__n_neighbors [10, 75]`. Empirically, `min_cluster_size` ≲ 165 favors many topics;
@@ -218,7 +218,7 @@ def apply_weighted_score(
   `min_n_topics=20`, `weight=0.15`). Extra metrics: `TopicDiversity`, `TopicCount`,
   `RawCoherence`. `trials_partial.csv` stores `coherence_c_v` (raw), `bo_objective`
   (penalized), and `n_topics` per call.
-- Stage 04: `configs/eval_select.yaml -> selection.min_n_topics` (default 20) filters
+- Stage 04: `configs/stage04/eval_select.yaml -> selection.min_n_topics` (default 20) filters
   degenerate winners before Pareto/weighting.
 - Reports: `results/reports/stage03_stratified_fit_sample_design.md`,
   `results/reports/stage03_bertopic_search_space_prior.md`.
@@ -291,10 +291,10 @@ def run_holdout_score(...) -> Path: ...
 
 ## 7) CLI Surface
 
-- `python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <id>`
-- `python -m src.stage03_train.cli tune --config configs/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
-- `python -m src.stage03_train.smoke_test --config configs/train.yaml --max-docs 10000`
-- `python -m src.stage04_eval_select.cli select --trials <path> --config configs/eval_select.yaml --run-id <id>`
+- `python -m src.stage03_train.cli tune --config configs/legacy/train.yaml --run-id <id>`
+- `python -m src.stage03_train.cli tune --config configs/legacy/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
+- `python -m src.stage03_train.smoke_test --config configs/legacy/train.yaml --max-docs 10000`
+- `python -m src.stage04_eval_select.cli select --trials <path> --config configs/stage04/eval_select.yaml --run-id <id>`
 - `python -m src.stage05_final_fit.cli fit --winner <path> --policy both`
 - `python -m src.stage05b_test_holdout.cli score --final-model <path> --policy train_only`
 
@@ -321,7 +321,7 @@ def run_holdout_score(...) -> Path: ...
 - `trials.csv` is written incrementally after each model and includes required columns.
 - `run_manifest.json` and `run_summary.json` are updated with artifact paths and per-step/model durations.
 - Re-run with same `run_id` auto-skips already completed corpus/model work and resumes remaining steps.
-- `tests/test_stage03_embeddings_resume.py` passes (guards mmap row alignment on embedding resume).
+- `tests/stage03/test_stage03_embeddings_resume.py` passes (guards mmap row alignment on embedding resume).
 - Stage04 emits winner config.
 - Stage05 emits both artifact trees.
 - Stage05b writes test metrics once; second run fails without `--allow-rerun`.

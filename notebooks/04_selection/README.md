@@ -2,7 +2,7 @@
 
 Exploratory analysis of Bayesian optimization trial results for the v3 corpus. Mirrors the 100-book pretest workflow in `src/legacy/100_novels_script_legacy_pareto/04_selection/`, adapted for Stage03/Stage04 pipeline outputs.
 
-Supports **single-run** (one embedding) or **multi-run compare** (e.g. L12 vs L6) via `configs/selection_notebooks.yaml`.
+Supports **single-run** (one embedding) or **multi-run compare** (e.g. L12 vs L6) via `configs/stage04/selection_notebooks.yaml`.
 
 ## Run order
 
@@ -22,7 +22,7 @@ Set `comparison.id` and `comparison.base_dir` for cross-model artifacts. The top
 
 ### L12 vs L6 example
 
-`configs/selection_notebooks.yaml` ships with both:
+`configs/stage04/selection_notebooks.yaml` ships with both:
 
 - `v3_minilm12v2_first` (L12, `all-MiniLM-L12-v2`)
 - `v3_minilm6_first` (L6, `paraphrase-MiniLM-L6-v2`)
@@ -42,7 +42,7 @@ Comparison outputs: `results/selection/_compare/l12_vs_l6/`
 
 Optional CLI reference: `results/selection/{run_id}/top_k.csv`
 
-Configure paths in `[configs/selection_notebooks.yaml](../../configs/selection_notebooks.yaml)`.
+Configure paths in `[configs/stage04/selection_notebooks.yaml](../../configs/stage04/selection_notebooks.yaml)`.
 
 ## Selection strategies compared
 
@@ -99,7 +99,7 @@ do
   trials="${spec#*:}"
   .venv/bin/python -m src.stage04_eval_select.cli select \
     --trials "$trials" \
-    --config configs/eval_select.yaml \
+    --config configs/stage04/eval_select.yaml \
     --run-id "$run_id"
 done
 ```
@@ -117,9 +117,9 @@ After Notebook 1 writes `notebook_analysis/top_models/top_10_*.csv`, refit selec
 ```bash
 # L12 (primary run_id in selection_notebooks.yaml)
 .venv/bin/python -m src.stage05_final_fit.cli pareto \
-  --selection-config configs/selection_notebooks.yaml \
-  --paths-config configs/paths_stage03_fit_v3.yaml \
-  --config configs/train_v3.yaml
+  --selection-config configs/stage04/selection_notebooks.yaml \
+  --paths-config configs/stage03/paths_stage03_fit_v3.yaml \
+  --config configs/stage03/train_v3.yaml
 ```
 
 For L6, temporarily set top-level `run_id` and `outputs.top_models_dir` to the L6 paths (or add a `selection_notebooks_minilm6.yaml`), then rerun `pareto`.
@@ -131,8 +131,8 @@ Manual compare-fit for explicit BO calls:
   --trials results/experiments/v3_minilm12v2_first/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv \
   --bo-calls 36,105,117 \
   --run-id v3_minilm12v2_first \
-  --paths-config configs/paths_stage03_fit_v3.yaml \
-  --config configs/train_v3.yaml \
+  --paths-config configs/stage03/paths_stage03_fit_v3.yaml \
+  --config configs/stage03/train_v3.yaml \
   --save-model
 ```
 

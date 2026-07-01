@@ -4,7 +4,7 @@ Labeling gold: `call73_gold_30.yaml` (natural labels + scene summaries).
 Categorization gold: `call73_gold_30_categorization.yaml` (sexual_function, consent, routing).
 
 ```bash
-scripts/run_stage08_gold_regression.sh
+scripts/stage08/run_stage08_gold_regression.sh
 ```
 
 Pass criteria:

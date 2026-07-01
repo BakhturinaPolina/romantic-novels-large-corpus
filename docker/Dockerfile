@@ -36,4 +36,4 @@ COPY Makefile ./
 COPY .env.example ./
 COPY README.md ./
 
-CMD ["python", "-m", "src.stage03_train.cli", "tune", "--config", "configs/train.yaml"]
+CMD ["python", "-m", "src.stage03_train.cli", "tune", "--config", "configs/stage03/train_v3.yaml"]

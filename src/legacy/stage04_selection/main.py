@@ -34,7 +34,7 @@ def cli():
 @click.option(
     "--config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/selection.yaml",
+    default="configs/legacy/selection.yaml",
     help="Path to selection configuration file"
 )
 @click.option(

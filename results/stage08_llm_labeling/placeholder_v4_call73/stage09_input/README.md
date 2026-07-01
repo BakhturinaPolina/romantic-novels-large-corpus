@@ -15,7 +15,7 @@ Regenerate merge after a new snippet-trap run:
 ```bash
 python3 -m src.stage08_llm_labeling.openrouter_experiments.tools.merge_snippet_trap_into_stage09 \
   --panel-json data/stage08_benchmark/call73_snippet_trap_panel.json \
-  --overrides-json results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_*_snippet_trap_rep_first_topics.json \
+  --overrides-json results/stage08_llm_labeling/placeholder_v4_call73/snippet_trap/labels_pos_*_snippet_trap_rep_first_topics.json \
   --slim-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
   --review-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3_review_enriched.json
 ```
@@ -35,9 +35,9 @@ Adds `representations` (KeyBERT, MMR, POS, Main), `all_keywords`, and `rationale
 ## Run Stage09
 
 ```bash
-python3 -m src.stage09_category_mapping.stage2_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
+python3 -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
   --labels-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
-  --output-json results/stage09_category_mapping/stage2_theory_driven_categories/placeholder_v4_call73/taxonomy_mappings.json \
+  --output-json results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call73/taxonomy_mappings.json \
   --prompt-version v2 \
   --no-snippets
 ```

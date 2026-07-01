@@ -1,0 +1,30 @@
+# Stage 08 v3 sexual-precision labeling — subset validation then full re-run
+# Base paths mirror placeholder_v4 call73; prompt_version overrides frozen v2_c8.
+
+frozen_call: 73
+prompt_version: v3_topic_labeling
+
+openrouter:
+  model: anthropic/claude-sonnet-4.6
+  temperature: 0.0
+  max_tokens: 350
+  rate_limit_delay_s: 4.0
+
+labeling:
+  num_keywords: 15
+  max_snippets: 6
+  max_chars_per_snippet: 1200
+  label_all_topics: true
+  use_full_schema: true
+  resume: true
+
+paths:
+  compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_73
+  enriched_model: results/experiments/placeholder_v4_models/final_compare/call_73/model_compare_enriched
+  topics_json: results/stage06_topic_exploration/placeholder_v4_call73/topics_all_representations_placeholder_v4_call.json
+  quality_csv: results/stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv
+  output_dir: results/stage08_llm_labeling/placeholder_v4_call73/sexual_precision
+
+tiers:
+  core_min_docs: 800
+  mid_min_docs: 200

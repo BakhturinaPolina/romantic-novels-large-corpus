@@ -39,7 +39,7 @@ Repository structure note: active pipeline packages stay at the `src/` root, whi
 | H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(3.2+4.4+7.2+7.3) − (3.1+2.2)` (`AX_dark_vs_tender`) |
 | H6 | **Narrative Arc**: Successful romances progress from conflict to resolution | `AX_narrative_arc_repair` — tertile Δ only (begin→end) |
 
-Macro-axis notes (v2.2): Full schema in `configs/theory_aligned_index_schema.yaml`. Taxonomy v2.1 in `configs/romance_corpus_taxonomy_v2.yaml` (leaves **2.5** negotiation/safety prep, **7.4** coercive sexual contact watchlist). Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (courtship, bonding, reassurance, non-explicit affection: 4.1+4.2+4.6+2.2+8.1+8.2); **`AX_sexual_tension_explicit_intimacy`** (desire through explicit sex and negotiation: 2.1+2.3+2.4+2.5); **`AX_consent_control_risk_watchlist`** (7.4+7.2+4.7, contextual only). Also: `AX_love_over_sex`, `AX_attraction` (2.1), `AX_explicitness` (2.3); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas.
+Macro-axis notes (v2.2): Full schema in `configs/stage09/theory_aligned_index_schema.yaml`. Taxonomy v2.1 in `configs/stage09/romance_corpus_taxonomy_v2.yaml` (leaves **2.5** negotiation/safety prep, **7.4** coercive sexual contact watchlist). Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (courtship, bonding, reassurance, non-explicit affection: 4.1+4.2+4.6+2.2+8.1+8.2); **`AX_sexual_tension_explicit_intimacy`** (desire through explicit sex and negotiation: 2.1+2.3+2.4+2.5); **`AX_consent_control_risk_watchlist`** (7.4+7.2+4.7, contextual only). Also: `AX_love_over_sex`, `AX_attraction` (2.1), `AX_explicitness` (2.3); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas.
 
 ---
 
@@ -133,7 +133,7 @@ Post-merge audit: `scripts/audit_stoplist_non_names.py` flags likely non-name en
 
 Topics are mapped to two theoretical frameworks via zero-shot classification:
 
-**Romance Corpus Taxonomy v2** (10 groups, 40+ leaf categories; config: `configs/romance_corpus_taxonomy_v2.yaml`):
+**Romance Corpus Taxonomy v2** (10 groups, 40+ leaf categories; config: `configs/stage09/romance_corpus_taxonomy_v2.yaml`):
 
 1. Embodied & Sensory Experience — incl. **1.6 appearance**, **1.7 gaze/expression**
 2. Sexuality, Attraction & Intimacy

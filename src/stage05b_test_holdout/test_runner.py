@@ -17,6 +17,7 @@ from src.common.config import load_config, resolve_path
 from src.stage03_train.data_io import iter_split_csv_chunks
 from src.stage03_train.tune import _coherence_cv, _diversity_adaptive
 from src.stage05_final_fit.chunked_transform import streaming_transform_metrics
+from src.stage05_final_fit.embedding_cache import load_test_embeddings_mmap
 
 LOGGER = logging.getLogger("stage05b_holdout")
 
@@ -62,38 +63,56 @@ def _iter_test_doc_batches(
     *,
     chunk_size: int = 50_000,
     sentence_column: str = "sentence",
-) -> Iterator[tuple[list[str], None]]:
-    """Yield cleaned test docs in CSV chunks (no precomputed embeddings)."""
+    embeddings_mmap: np.ndarray | None = None,
+) -> Iterator[tuple[list[str], np.ndarray | None]]:
+    """Yield (docs, embeddings_chunk) batches; mmap rows align with cleaned docs."""
+    row_offset = 0
     for docs, _labels in iter_split_csv_chunks(
         test_csv,
         sentence_column=sentence_column,
         chunk_size=chunk_size,
     ):
-        yield docs, None
+        emb = None
+        if embeddings_mmap is not None:
+            end = row_offset + len(docs)
+            emb = np.asarray(embeddings_mmap[row_offset:end], dtype=np.float32)
+            row_offset = end
+        yield docs, emb
 
 
 def infer_on_test(
     final_model_dir: Path,
     test_csv: Path,
     *,
-    batch_size: int = 8192,
+    batch_size: int = 16_384,
     chunk_size: int = 50_000,
     coherence_max_docs: int = 100_000,
+    train_config: Path | None = None,
 ) -> dict[str, Any]:
     """Run chunked transform on test split and compute final metrics."""
     LOGGER.info("[HOLDOUT] loading model from %s", final_model_dir)
     topic_model = _load_model(final_model_dir)
+
+    embeddings_mmap = None
+    if train_config is not None:
+        embeddings_mmap = load_test_embeddings_mmap(train_config, logger=LOGGER)
+
     LOGGER.info(
-        "[HOLDOUT] chunked test inference: csv=%s batch_size=%d chunk_size=%d coherence_cap=%d",
+        "[HOLDOUT] chunked test inference: csv=%s batch_size=%d chunk_size=%d coherence_cap=%d embeddings_cache=%s",
         test_csv,
         batch_size,
         chunk_size,
         coherence_max_docs,
+        "yes" if embeddings_mmap is not None else "no (on-the-fly encode)",
     )
 
     partial, coherence_tokens = streaming_transform_metrics(
         topic_model,
-        _iter_test_doc_batches(test_csv, chunk_size=chunk_size),
+        _iter_test_doc_batches(
+            test_csv,
+            chunk_size=chunk_size,
+            embeddings_mmap=embeddings_mmap,
+        ),
         batch_size=batch_size,
         coherence_max_docs=coherence_max_docs,
         logger=LOGGER,
@@ -167,9 +186,10 @@ def run_holdout_score(
     allow_rerun: bool = False,
     *,
     bo_call: int | None = None,
-    batch_size: int = 8192,
+    batch_size: int = 16_384,
     chunk_size: int = 50_000,
     coherence_max_docs: int = 100_000,
+    train_config: Path | None = Path("configs/stage03/train_v4_l12_final_call73.yaml"),
 ) -> Path:
     """Main holdout scoring workflow."""
     logging.basicConfig(
@@ -193,6 +213,7 @@ def run_holdout_score(
         batch_size=batch_size,
         chunk_size=chunk_size,
         coherence_max_docs=coherence_max_docs,
+        train_config=train_config,
     )
     metrics["run_id"] = run_id
     metrics["model_policy"] = policy
@@ -202,6 +223,8 @@ def run_holdout_score(
     metrics["scored_at"] = datetime.utcnow().isoformat() + "Z"
     metrics["batch_size"] = batch_size
     metrics["chunk_size"] = chunk_size
+    if train_config is not None:
+        metrics["train_config"] = str(train_config)
 
     with open(metrics_json, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)

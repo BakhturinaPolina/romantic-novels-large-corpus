@@ -20,7 +20,7 @@
 | Best BO objective trial | call **117** (c_v 0.647) | call **11** (c_v 0.649, 38 topics) |
 | Recommended L6 exploratory pick | — | call **11** (see §5) |
 
-**Headline:** L6 reaches slightly higher coherence at comparable topic counts (~38 topics), but its BO surface is far less stable across random seeds. Production Stage04 gates leave only **7** L6 trials; the default winner (call 128) trades coherence for extreme diversity (502 topics). For exploration, use `configs/eval_select_exploratory_l6.yaml`, which widens the pool to **17** trials and selects call **11** with coherence-biased weights.
+**Headline:** L6 reaches slightly higher coherence at comparable topic counts (~38 topics), but its BO surface is far less stable across random seeds. Production Stage04 gates leave only **7** L6 trials; the default winner (call 128) trades coherence for extreme diversity (502 topics). For exploration, use `configs/legacy/eval_select_exploratory_l6.yaml`, which widens the pool to **17** trials and selects call **11** with coherence-biased weights.
 
 **Fair comparison caveat:** L12 was tuned with `model_runs: 1` (stability gate effectively off); L6 used the standard `model_runs: 3`. Funnel counts and winner quality are not directly comparable until L12 is rerun with three fits per call.
 
@@ -48,7 +48,7 @@ Artifacts:
 - Trials: `results/experiments/{run_id}/opt_1_*/trials_partial.csv`
 - Run summaries: `results/experiments/{run_id}/run_summary.json`
 
-### 2.3 Stage04 production selection (`configs/eval_select.yaml`)
+### 2.3 Stage04 production selection (`configs/stage04/eval_select.yaml`)
 
 | Gate | Value |
 |------|-------|
@@ -133,7 +133,7 @@ Outputs: `results/selection/v3_minilm6_first/`
 
 ## 5. Exploratory L6 selection
 
-**Config:** `configs/eval_select_exploratory_l6.yaml`
+**Config:** `configs/legacy/eval_select_exploratory_l6.yaml`
 
 | Setting | Production | Exploratory moderate |
 |---------|------------|----------------------|
@@ -154,7 +154,7 @@ Top trials in the 17-trial exploratory pool:
 ```bash
 .venv/bin/python -m src.stage04_eval_select.cli select \
   --trials results/experiments/v3_minilm6_first/opt_1_sentence-transformers__paraphrase-MiniLM-L6-v2/trials_partial.csv \
-  --config configs/eval_select_exploratory_l6.yaml \
+  --config configs/legacy/eval_select_exploratory_l6.yaml \
   --run-id v3_minilm6_first
 ```
 
@@ -168,7 +168,7 @@ Multi-run comparison support added for L12 vs L6:
 
 | Asset | Path |
 |-------|------|
-| Notebook config | `configs/selection_notebooks.yaml` |
+| Notebook config | `configs/stage04/selection_notebooks.yaml` |
 | Shared helpers | `src/stage04_eval_select/notebook_io.py` |
 | Pareto notebook | `notebooks/04_selection/04_pareto_efficiency_analysis_v3.ipynb` |
 | Hyperparameter notebook | `notebooks/04_selection/04_hyperparameter_correlation_analysis_v3.ipynb` |
@@ -182,7 +182,7 @@ Per-run notebook outputs exist for L12 (`results/selection/v3_minilm12v2_first/n
 
 1. **Stage05 L12:** Proceed with call **117** (production winner, aligned with BO and all notebook strategies).
 2. **Stage05 L6:** Use call **11** (BO-best, ~38 topics), not call 128. Optionally compare-fit calls 11, 24, 74.
-3. **Fair embedding comparison:** Rerun L12 with `model_runs: 3` (`configs/train_v3.yaml`) before drawing conclusions about embedding quality from Stage04 funnels.
+3. **Fair embedding comparison:** Rerun L12 with `model_runs: 3` (`configs/stage03/train_v3.yaml`) before drawing conclusions about embedding quality from Stage04 funnels.
 4. **MPNet (`v3_mpnet`):** Still pending; use same production Stage04 gates once BO completes.
 5. **Selection notebooks:** Run pareto → hyperparameter notebooks with `runs:` in `selection_notebooks.yaml` to populate `_compare/l12_vs_l6/`.
 
@@ -197,8 +197,8 @@ Per-run notebook outputs exist for L12 (`results/selection/v3_minilm12v2_first/n
 | L12 winner | `results/selection/v3_minilm12v2_first/winner_config.json` |
 | L6 winner (production) | `results/selection/v3_minilm6_first/winner_config.json` |
 | L12 notebook analysis | `results/selection/v3_minilm12v2_first/notebook_analysis/` |
-| Production eval-select | `configs/eval_select.yaml` |
-| Exploratory L6 eval-select | `configs/eval_select_exploratory_l6.yaml` |
+| Production eval-select | `configs/stage04/eval_select.yaml` |
+| Exploratory L6 eval-select | `configs/legacy/eval_select_exploratory_l6.yaml` |
 
 ---
 

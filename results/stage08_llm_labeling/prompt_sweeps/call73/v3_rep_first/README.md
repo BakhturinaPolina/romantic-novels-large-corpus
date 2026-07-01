@@ -10,4 +10,4 @@ Archive copy of the 2026-06-30 prompt experiment. Production corpus still uses `
 
 Panel definition: [`data/stage08_benchmark/call73_snippet_trap_panel.json`](../../../../data/stage08_benchmark/call73_snippet_trap_panel.json)
 
-Comparison CSV (local): `results/reports/stage08_snippet_trap_rep_first_comparison_call73.csv`
+Comparison CSV (local): `results/stage08_llm_labeling/placeholder_v4_call73/snippet_trap/comparison_call73.csv`

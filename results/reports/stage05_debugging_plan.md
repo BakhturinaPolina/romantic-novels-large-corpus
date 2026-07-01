@@ -59,7 +59,7 @@ cat results/experiments/stratified_minilm12v2_seed42_v2/final_compare/call_59/me
 pip install langdetect
 
 # Run language analysis on train split
-python scripts/detect_non_english_books.py --analyze --split train
+python scripts/data/detect_non_english_books.py --analyze --split train
 
 # Expected output: language distribution report
 # Look for: French (fr), Spanish (es), Portuguese (pt), Chinese (zh-cn), Arabic (ar)
@@ -69,7 +69,7 @@ python scripts/detect_non_english_books.py --analyze --split train
 
 ```bash
 # Create v3 splits excluding non-English books
-python scripts/detect_non_english_books.py --create-v3 --min-confidence 0.6
+python scripts/data/detect_non_english_books.py --create-v3 --min-confidence 0.6
 
 # Outputs:
 # - data/raw/romance_subdataset_filtered_v3/sentences_{train,val,test}.csv
@@ -81,7 +81,7 @@ python scripts/detect_non_english_books.py --create-v3 --min-confidence 0.6
 
 With v3 corpus, rebuild the full pipeline:
 
-1. Update `configs/paths_stage03_fit.yaml` to point to v3 sentence CSVs
+1. Update `configs/legacy/paths_stage03_fit.yaml` to point to v3 sentence CSVs
 2. Re-run stratified sampling: `python -m src.stage03_train.cli sample ...`
 3. Re-run BO tuning: `python -m src.stage03_train.cli tune ...`
 4. Re-run compare-fit on new top trials

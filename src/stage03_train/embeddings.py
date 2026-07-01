@@ -76,6 +76,139 @@ def load_or_compute_embeddings(
     return embeddings
 
 
+def compute_embeddings_from_csv(
+    csv_path: Path,
+    model_name: str,
+    cache_file: Path,
+    *,
+    sentence_column: str = "sentence",
+    chunk_size: int = 50_000,
+    device: str = "auto",
+    batch_size: int = 256,
+    logger: logging.Logger | None = None,
+) -> np.ndarray:
+    """Encode one split CSV in chunks and persist a resumable memmap cache."""
+    if cache_file.exists() and not _progress_path(cache_file).exists():
+        if logger:
+            logger.info("Loading cached embeddings (mmap): %s", cache_file)
+        return np.load(cache_file, mmap_mode="r")
+
+    resolved_device = _resolve_device(device)
+    if logger:
+        logger.info(
+            "Embedding encode: model=%s csv=%s device=%s batch_size=%d -> %s",
+            model_name,
+            csv_path,
+            resolved_device,
+            batch_size,
+            cache_file,
+        )
+
+    progress_path = _progress_path(cache_file)
+    rows_done = 0
+    if progress_path.exists():
+        with open(progress_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        rows_done = int(payload.get("rows_done", 0))
+        if logger:
+            logger.info("Resuming embedding cache from row %d (%s)", rows_done, progress_path)
+
+    model = load_embedding_model(model_name, device=resolved_device)
+
+    probe_docs: list[str] = []
+    for docs, _labels in iter_split_csv_chunks(
+        csv_path, sentence_column=sentence_column, chunk_size=min(chunk_size, 1024)
+    ):
+        probe_docs = docs[: min(32, len(docs))]
+        if probe_docs:
+            break
+    if not probe_docs:
+        raise ValueError(f"No documents found in {csv_path}")
+    probe_emb = model.encode(
+        probe_docs,
+        batch_size=min(batch_size, len(probe_docs)),
+        convert_to_numpy=True,
+        show_progress_bar=False,
+        device=resolved_device,
+    )
+    dim = int(probe_emb.shape[1])
+
+    from src.stage03_train.data_io import count_split_rows
+
+    n_total = count_split_rows(csv_path, sentence_column)
+    cache_file.parent.mkdir(parents=True, exist_ok=True)
+    if logger:
+        logger.info(
+            "Embedding %d documents (dim=%d) in chunks of %d",
+            n_total,
+            dim,
+            chunk_size,
+        )
+
+    if rows_done > 0 and cache_file.exists():
+        mmap = np.lib.format.open_memmap(cache_file, mode="r+", dtype=np.float32)
+        if mmap.shape != (n_total, dim):
+            raise RuntimeError(
+                f"Partial cache shape {mmap.shape} != expected {(n_total, dim)}; delete cache and retry."
+            )
+    else:
+        mmap = np.lib.format.open_memmap(
+            cache_file, mode="w+", dtype=np.float32, shape=(n_total, dim)
+        )
+
+    write_idx = 0
+    chunks_skipped = 0
+    resume_guard_checked = rows_done == 0
+
+    for docs, _labels in iter_split_csv_chunks(
+        csv_path, sentence_column=sentence_column, chunk_size=chunk_size
+    ):
+        chunk_len = len(docs)
+        if should_skip_embedding_chunk(write_idx, chunk_len, rows_done):
+            write_idx += chunk_len
+            chunks_skipped += 1
+            continue
+        if write_idx >= n_total:
+            break
+
+        if not resume_guard_checked:
+            assert_resume_stream_aligned(
+                rows_done=rows_done,
+                write_idx=write_idx,
+                chunks_skipped=chunks_skipped,
+            )
+            resume_guard_checked = True
+
+        emb = model.encode(
+            docs,
+            batch_size=batch_size,
+            convert_to_numpy=True,
+            show_progress_bar=True,
+            normalize_embeddings=False,
+            device=resolved_device,
+        )
+        end_idx = write_idx + len(docs)
+        mmap[write_idx:end_idx] = emb.astype(np.float32, copy=False)
+        write_idx = end_idx
+        mmap.flush()
+        with open(progress_path, "w", encoding="utf-8") as f:
+            json.dump({"rows_done": write_idx, "n_total": n_total}, f)
+        if logger:
+            logger.info("Embeddings progress: %d / %d", write_idx, n_total)
+
+    if write_idx != n_total:
+        raise RuntimeError(
+            f"Embedding row count mismatch: wrote {write_idx}, expected {n_total}"
+        )
+
+    del mmap
+    if progress_path.exists():
+        progress_path.unlink()
+    if logger:
+        logger.info("Saved embeddings cache: %s", cache_file)
+    return np.load(cache_file, mmap_mode="r")
+
+
 def compute_embeddings_from_csvs(
     train_csv: Path,
     eval_csv: Path,

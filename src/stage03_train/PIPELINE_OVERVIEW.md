@@ -52,7 +52,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 **Added**
 - Correct handling of 5-column Stage 01 schema.
 - Explicit split-aware loading (train and val separately).
-- Chunked CSV streaming (`csv_chunk_size` in `configs/train.yaml`) for row counts, OCTIS corpus writes, and embedding caches without loading full splits into RAM.
+- Chunked CSV streaming (`csv_chunk_size` in `configs/legacy/train.yaml`) for row counts, OCTIS corpus writes, and embedding caches without loading full splits into RAM.
 
 ---
 
@@ -108,7 +108,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - Computes and caches embeddings to `.npy`.
 - Reuses cached arrays for speed.
 - For stratified runs, the full-corpus `.npy` is reused directly via
-  `configs/train.yaml -> embeddings_cache.overrides` (one path per model), so the fit
+  `configs/legacy/train.yaml -> embeddings_cache.overrides` (one path per model), so the fit
   sample is gathered by index with no re-encoding.
 
 **Inputs**
@@ -149,7 +149,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - Produces one row per trial in a trials table.
 
 **Inputs**
-- `configs/train.yaml`
+- `configs/legacy/train.yaml`
 - split CSVs
 - octis corpus/embeddings cache
 
@@ -160,7 +160,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - `results/experiments/<run_id>/run_summary.json` (step/model timing summary)
 - `results/experiments/<run_id>/run_manifest.json` (artifact pointers for downstream stages)
 - `logs/stage03_<run_id>.log` (timestamped terminal + file logs)
-- Optional Hub mirror: `RuthonField/romance-v2-train-eval-embeddings` (set `HF_TOKEN` in `.env`, `embeddings_hub` in `configs/train.yaml`)
+- Optional Hub mirror: `RuthonField/romance-v2-train-eval-embeddings` (set `HF_TOKEN` in `.env`, `embeddings_hub` in `configs/legacy/train.yaml`)
 
 **Kept from legacy**
 - Existing OCTIS optimizer usage.
@@ -176,7 +176,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - Fit-corpus topic-word filter dictionary (built once per model, passed as
   `topic_filter_dictionary`) so topics are not dropped when words are absent from the
   smaller eval token set.
-- `CoherenceWithTopicPenalty` BO objective (`topic_count_penalty` in `configs/train.yaml`);
+- `CoherenceWithTopicPenalty` BO objective (`topic_count_penalty` in `configs/legacy/train.yaml`);
   per-call `trials_partial.csv` logs `coherence_c_v`, `bo_objective`, `n_topics`, and
   `topic_diversity`.
 - `bertopic.calculate_probabilities = false` during tuning (probability matrices are
@@ -196,9 +196,9 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - User entrypoint for Stage 03.
 
 **Command**
-- `python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <id>`
+- `python -m src.stage03_train.cli tune --config configs/legacy/train.yaml --run-id <id>`
 - Quick single-model perf run:
-  - `python -m src.stage03_train.cli tune --config configs/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
+  - `python -m src.stage03_train.cli tune --config configs/legacy/train.yaml --embedding-model sentence-transformers/all-MiniLM-L12-v2`
 
 ---
 
@@ -236,7 +236,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 
 **Inputs**
 - `trials.csv`
-- `configs/eval_select.yaml`
+- `configs/stage04/eval_select.yaml`
 
 **Outputs**
 - weighted columns in ranked table
@@ -251,7 +251,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 
 **Inputs**
 - `results/experiments/<run_id>/trials.csv`
-- `configs/eval_select.yaml` (`selection.min_n_topics`, default 20)
+- `configs/stage04/eval_select.yaml` (`selection.min_n_topics`, default 20)
 
 **Outputs**
 - `results/selection/<run_id>/winner_config.json`
@@ -324,14 +324,14 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 
 ## Configuration Map
 
-- `configs/train.yaml`:
+- `configs/legacy/train.yaml`:
   - embedding models
   - tuning search space
   - trial count and seeds
-- `configs/eval_select.yaml`:
+- `configs/stage04/eval_select.yaml`:
   - Pareto controls
   - weighted ranking coefficients
-- `configs/final_fit.yaml`:
+- `configs/legacy/final_fit.yaml`:
   - default fit policy
   - output paths
 - `configs/paths.yaml`:

@@ -16,7 +16,7 @@ def cli() -> None:
 
 
 @cli.command("tune")
-@click.option("--config", default="configs/train.yaml", type=click.Path(exists=True, path_type=Path))
+@click.option("--config", default="configs/stage03/train_v3.yaml", type=click.Path(exists=True, path_type=Path))
 @click.option("--run-id", default=None, type=str)
 @click.option(
     "--embedding-model",
@@ -176,6 +176,41 @@ def encode(
         logger=logger,
     )
     click.echo(f"Stage03 encode complete. cache: {cache_file}")
+
+
+@cli.command("encode-split")
+@click.option("--csv", "csv_path", required=True, type=click.Path(exists=True, path_type=Path))
+@click.option("--model-name", required=True, type=str)
+@click.option("--cache-file", required=True, type=click.Path(path_type=Path))
+@click.option("--batch-size", default=512, show_default=True, type=int)
+@click.option("--device", default="cuda", show_default=True, type=str)
+@click.option("--chunk-size", default=50_000, show_default=True, type=int)
+def encode_split(
+    csv_path: Path,
+    model_name: str,
+    cache_file: Path,
+    batch_size: int,
+    device: str,
+    chunk_size: int,
+) -> None:
+    """Encode one sentence CSV (e.g. test split) to a resumable embedding cache on GPU."""
+    import logging
+
+    from src.stage03_train.embeddings import compute_embeddings_from_csv
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+    logger = logging.getLogger("embed")
+    cache_file.parent.mkdir(parents=True, exist_ok=True)
+    compute_embeddings_from_csv(
+        csv_path,
+        model_name=model_name,
+        cache_file=cache_file,
+        batch_size=batch_size,
+        device=device,
+        chunk_size=chunk_size,
+        logger=logger,
+    )
+    click.echo(f"Stage03 encode-split complete. cache: {cache_file}")
 
 
 if __name__ == "__main__":

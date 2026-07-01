@@ -3,7 +3,7 @@
 Usage:
     python3 -m src.stage08_llm_labeling.openrouter_experiments.tools.merge_snippet_trap_into_stage09 \
         --panel-json data/stage08_benchmark/call73_snippet_trap_panel.json \
-        --overrides-json results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_rep_first_snippet_trap_rep_first_topics.json \
+        --overrides-json results/stage08_llm_labeling/placeholder_v4_call73/snippet_trap/labels_pos_*_snippet_trap_rep_first_topics.json \
         --slim-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
         --review-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3_review_enriched.json
 """

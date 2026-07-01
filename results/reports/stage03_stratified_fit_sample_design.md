@@ -1,7 +1,7 @@
 # Stage 03 Stratified Fit Sample: Design and Rationale
 
 **Component:** `src/stage03_train/make_fit_sample.py` (selector), `src/stage03_train/tune.py` (consumer)
-**Configuration:** `configs/train.yaml`, `configs/paths_stage03_fit.yaml`
+**Configuration:** `configs/legacy/train.yaml`, `configs/legacy/paths_stage03_fit.yaml`
 **Artifacts:** `data/stage03_samples/fit_indices_seed42.npy`, `eval_indices_seed42.npy`, `sample_manifest_seed42.json`
 **Status:** Draft for the methods section of the topic-modeling paper. Index selection completed 2026-06-04 (see `data/stage03_samples/sample_manifest_seed42.json`).
 
@@ -113,8 +113,8 @@ The fit uses the **train partition only**: `_prepare_bertopic_fit_data` restrict
 
 Because the fit set is expressed as indices into the full corpus, Stage 03 reuses the existing **full-corpus** embedding `.npy` for each model and gathers `embeddings[fit_indices]`. No sentences are re-encoded for tuning.
 
-- `configs/train.yaml -> embeddings_cache.overrides` maps each model to its full `train_eval_*.npy` (run-id path convention `data/interim/octis/<run_id>/embeddings_cache/`).
-- `configs/paths_stage03_fit.yaml -> inputs.octis_corpus_dir` points at a prebuilt full `corpus.tsv` so a fresh run skips the ~100M-row corpus rewrite.
+- `configs/legacy/train.yaml -> embeddings_cache.overrides` maps each model to its full `train_eval_*.npy` (run-id path convention `data/interim/octis/<run_id>/embeddings_cache/`).
+- `configs/legacy/paths_stage03_fit.yaml -> inputs.octis_corpus_dir` points at a prebuilt full `corpus.tsv` so a fresh run skips the ~100M-row corpus rewrite.
 
 This matters because the full embeddings are the expensive artifact (the MiniLM-L12 cache alone is ~143 GB / ~99.8M rows, days of GPU time). They are not made redundant by the fit sample; they are exactly what the eventual full-corpus `.transform()` consumes downstream.
 
@@ -149,7 +149,7 @@ The Stage 01 subsampling (`subdataset_sampling_v1_design_and_v2_downloaded_corpu
 ## 8. Operational notes and downstream
 
 - Build indices once with `python -m src.stage03_train.make_fit_sample ...` (or `python -m src.stage03_train.cli sample ...`). Use `--progress-every 5000000` (default) for `tail -f` visibility; after pass 1 completes, `--resume` skips the stats scan on restart (pass 2 still re-streams from the start).
-- Tuning consumes the indices via `configs/paths_stage03_fit.yaml`; `run_manifest.json` records `fit_indices_file`, `eval_indices_file`, `octis_corpus_dir`, and the `embeddings_overrides` actually used.
+- Tuning consumes the indices via `configs/legacy/paths_stage03_fit.yaml`; `run_manifest.json` records `fit_indices_file`, `eval_indices_file`, `octis_corpus_dir`, and the `embeddings_overrides` actually used.
 - **Stage 05 / full-corpus transform (future):** after a winner is selected, build full-corpus embeddings only for the winning model (or reuse the existing cache if MiniLM-L12 wins) and `.transform()` all sentences to produce the book-level topic features for the power-justified inference. This keeps a single coherent topic space and pays for at most one full-corpus embedding pass.
 
 See also: [`stage03_bertopic_search_space_prior.md`](stage03_bertopic_search_space_prior.md) for the hyperparameter search-space justification.

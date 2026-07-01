@@ -128,7 +128,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--rules-config",
         type=Path,
-        default=Path("configs/topic_posthoc_rules.yaml"),
+        default=Path("configs/call73/topic_posthoc_rules.yaml"),
         help="YAML config for post-hoc topic classification rules",
     )
     parser.add_argument(

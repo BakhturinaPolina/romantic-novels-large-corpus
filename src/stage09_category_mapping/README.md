@@ -1,123 +1,75 @@
-# Category Mapping: Three-Stage Plan for Topics-to-Categories Mapping
+# Stage 09: Category mapping
 
-## Overview
-
-This directory contains the implementation plan and code for mapping BERTopic topics to interpretable categories using a three-stage approach. The goal is to transform ~300 fine-grained topics into meaningful groups that can be analyzed for their relationship to book quality (bad/mid/good ratings).
+Map Stage08 topic labels to theory-driven taxonomy categories, then optionally to Radway narrative functions for book-level analysis.
 
 ## Prerequisites
 
-Before starting, ensure you have:
+- **Stage08 topic metadata** — e.g. `results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json`
+- **Taxonomy config** — `configs/stage09/romance_corpus_taxonomy_v2.yaml` (v2.1 leaves **2.5**, **7.4**)
+- **OpenRouter API key** — for zero-shot classification (`OPENROUTER_API_KEY`)
 
-- **Trained BERTopic model**: Located at `models/retrained/paraphrase-MiniLM-L6-v2/model_1_with_categories/`
-- **LLM labels/descriptions**: Topic labels and descriptions generated in previous stages
-- **Sentence-level corpus**: With book metadata (ratings, chapters, etc.)
-- **Data files**:
-  - `data/processed/chapters.csv`: Sentence-level data with book/chapter metadata
-  - `data/processed/goodreads.csv`: Book-level ratings and metadata
+## Two-stage pipeline
 
-## Three-Stage Approach
+### Stage 1: Theory-driven taxonomy mapping
 
-### Stage 1: Natural Clusters (Hierarchical Topics)
-**Goal**: Discover data-driven topic groupings without theoretical priors.
+Map each topic to Romance Corpus Taxonomy v2 leaf categories using zero-shot LLM classification, pre-routing from Stage08 metadata, and domain heuristics.
 
-**Method**: Use BERTopic's hierarchical topics to build a tree structure over existing topics, then reduce to interpretable meta-topics (40-80 topics). Test which natural clusters are associated with book quality.
+| Component | Path |
+|-----------|------|
+| Runner | `stage1_theory_driven_categories/scripts/zeroshot_taxonomy_openrouter.py` |
+| Taxonomy loader / heuristics | `stage1_theory_driven_categories/taxonomy_v2.py` |
+| Prompts | `stage1_theory_driven_categories/prompts/` |
+| Book aggregation | `stage1_theory_driven_categories/scripts/aggregate_taxonomy_by_book.py` |
 
-**Key Tools**: 
-- Hierarchical topics
-- Topic reduction
-- Topics per class analysis
-- ANOVA testing
+```bash
+python -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
+  --labels-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
+  --output-json results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call73/taxonomy_mappings.json \
+  --prompt-version v2 \
+  --no-snippets
+```
 
-**Output**: Meta-topics with statistical significance for quality differences.
+Details: [`stage1_theory_driven_categories/README.md`](stage1_theory_driven_categories/README.md)
 
-**Status**: Detailed plan in `stage1_natural_clusters/README.md`
+### Stage 2: Radway narrative functions
 
----
+Map topics to Radway's 13 narrative functions (R1–R13), merging into the Stage 1 taxonomy JSON.
 
-### Stage 2: Theory-Driven Categories 
-**Goal**: Map topics to predefined theoretical categories (luxury lifestyle, emotional depth, erotic content).
+| Component | Path |
+|-----------|------|
+| Runner | `stage2_radway_functions/scripts/zeroshot_radway_openrouter.py` |
+| Model attach | `stage2_radway_functions/scripts/update_model_with_radway.py` |
 
-**Method**: Use zero-shot classification to map existing topics to theory categories. If results are unsatisfactory, optionally retrain with semi-supervised or guided BERTopic.
+```bash
+python -m src.stage09_category_mapping.stage2_radway_functions.scripts.zeroshot_radway_openrouter \
+  --taxonomy-json results/stage09_category_mapping/stage1_theory_driven_categories/taxonomy_mappings.json \
+  --output-json results/stage09_category_mapping/stage2_radway_functions/taxonomy_with_radway.json
+```
 
-**Key Tools**:
-- Zero-shot topic classification (primary)
-- Semi-supervised BERTopic (optional, if zero-shot insufficient)
-- Guided topics (optional, if strong priors needed)
+Details: [`stage2_radway_functions/README.md`](stage2_radway_functions/README.md)
 
-**Output**: Topic-to-category mappings with confidence scores.
-
-**Taxonomy v2**: Fixed leaf nodes and composite indices live in `configs/romance_corpus_taxonomy_v2.yaml`. Stage 2 zero-shot mapping reads this file at runtime (`--taxonomy-config`).
-
-**Status**: See `stage2_theory_driven_categories/README.md`
-
----
-
-### Stage 3: Radway Narrative Functions
-**Goal**: Map BERTopic topics to Radway's 13 narrative functions to analyze story structure.
-
-**Method**: Zero-shot classification to Radway functions using Mistral-Nemo via OpenRouter. Uses taxonomy JSON from Stage 2 as single source of truth and merges Radway mappings back into the taxonomy structure.
-
-**Key Tools**:
-- Zero-shot topic classification (Radway's 13 functions: R1-R13)
-- Taxonomy JSON integration (reuses Stage 2 mappings)
-- Optional representative document snippets
-- Model attachment for BERTopic integration
-
-**Output**: Merged JSON with taxonomy + Radway function mappings, optional BERTopic model with Radway attachments.
-
-**Status**: ✅ **Implemented** - See `stage3_radway_functions/README.md`
-
----
-
-## Decision Logic
-
-### When to Skip Stage 2
-
-If Stage 1 naturally produces interpretable clusters that align with your research questions (e.g., clear "luxury", "emotion", "erotica" meta-topics), you may skip Stage 2 and proceed directly to Stage 3.
-
-### When to Use Each Stage
-
-- **Stage 1**: Always run first to understand natural structure
-- **Stage 2**: Run if Stage 1 doesn't yield theory-aligned clusters OR if you need explicit theory-driven categories
-- **Stage 3**: Run for narrative structure analysis (independent of Stages 1-2)
-
-## BERTopic Features Used by Stage
-
-| Feature | Stage 1 | Stage 2 | Stage 3 |
-|---------|---------|---------|---------|
-| **Hierarchical Topics** | ✅ Core | 🔶 Helpful | 🔶 Optional |
-| **Topics Over Time** | ❌ Not needed | ❌ Not needed | 🔶 Optional (future) |
-| **Semi-Supervised** | ❌ Not needed | 🔶 Optional | 🔶 Optional |
-| **Guided Topics** | ❌ Not appropriate | 🔶 Optional | ❌ Less ideal |
-| **Zero-Shot** | ❌ Not needed | ✅ Excellent | ✅ Excellent |
-
-## Directory Structure
+## Directory layout
 
 ```
-category_mapping/
-├── README.md (this file)
-├── stage1_natural_clusters/
-│   ├── README.md (detailed implementation plan)
-│   └── [code files to be created]
-├── stage2_theory_driven_categories/
-│   ├── README.md (short plan)
-│   └── [code files to be created]
-└── stage3_radway_functions/
-    ├── README.md
+stage09_category_mapping/
+├── README.md
+├── stage1_theory_driven_categories/
+│   ├── taxonomy_v2.py
+│   ├── prompts/
+│   └── scripts/
+└── stage2_radway_functions/
     └── scripts/
-        ├── zeroshot_radway_openrouter.py (main classification module)
-        └── update_model_with_radway.py (model attachment script)
 ```
 
-## Next Steps
+## Downstream
 
-1. **Start with Stage 1**: Read `stage1_natural_clusters/README.md` for detailed implementation steps
-2. **Evaluate results**: After Stage 1, decide if Stage 2 is needed
-3. **Proceed to Stage 3**: For narrative structure analysis
+Stage 10 book aggregation reads Stage 1 book-level proportions (`book_category_proportions.parquet`) and composite indices from `configs/stage09/theory_aligned_index_schema.yaml`.
+
+## Legacy
+
+Hierarchical “natural cluster” experiments (`BERTopic.reduce_topics`, ANOVA on meta-topics) were **not reliable** on this corpus (~300 fine-grained topics, high outlier rate, discourse-heavy clusters). Code archived under [`src/legacy/stage09_natural_clusters/`](../../legacy/stage09_natural_clusters/README.md) — **not used** in the active pipeline.
 
 ## References
 
-- BERTopic Documentation: https://maartengr.github.io/BERTopic/
-- Radway, J. (1984). *Reading the Romance: Women, Patriarchy, and Popular Literature*
-- Project-specific data contracts: `docs/DATA_CONTRACTS.md`
-
+- Radway, J. (1984). *Reading the Romance*
+- BERTopic: https://maartengr.github.io/BERTopic/

@@ -16,7 +16,7 @@
 | Preprocessing gap analysis | [`stage05_preprocessing_analysis.md`](stage05_preprocessing_analysis.md) |
 | call_59 taxonomy review | [`stage08_stage09_taxonomy_improvement_notes_call59.md`](stage08_stage09_taxonomy_improvement_notes_call59.md) |
 | Debugging plan | [`stage05_debugging_plan.md`](stage05_debugging_plan.md) |
-| Post-hoc rule config | [`configs/topic_posthoc_rules.yaml`](../../configs/topic_posthoc_rules.yaml) |
+| Post-hoc rule config | [`configs/call73/topic_posthoc_rules.yaml`](../../configs/call73/topic_posthoc_rules.yaml) |
 | Rule implementation | [`src/common/topic_posthoc/rules.py`](../../src/common/topic_posthoc/rules.py) |
 
 ---
@@ -77,7 +77,7 @@ Multilingual artifact, publisher boilerplate, dialogue-delivery adverbs, speech-
 Run on existing CSV (no GPU):
 
 ```bash
-./scripts/run_topic_posthoc_call59.sh
+./scripts/legacy/run_topic_posthoc_call59.sh
 ```
 
 ### P1 — Pre-fit normalization (follow-up PR)

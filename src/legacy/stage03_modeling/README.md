@@ -21,13 +21,13 @@ python -m src.legacy.stage03_modeling.test_octis_pipeline --full
 ### Train Models
 
 ```bash
-python -m src.legacy.stage03_modeling.main train --config configs/bertopic.yaml
+python -m src.legacy.stage03_modeling.main train --config configs/legacy/bertopic.yaml
 ```
 
 ### Optimize Hyperparameters
 
 ```bash
-python -m src.legacy.stage03_modeling.main optimize --config configs/octis.yaml
+python -m src.legacy.stage03_modeling.main optimize --config configs/legacy/octis.yaml
 ```
 
 ### Retrain Models
@@ -71,8 +71,8 @@ python -m src.common.check_gpu_setup
 
 | File | Purpose |
 |------|---------|
-| `configs/bertopic.yaml` | BERTopic model parameters |
-| `configs/octis.yaml` | OCTIS optimization settings |
+| `configs/legacy/bertopic.yaml` | BERTopic model parameters |
+| `configs/legacy/octis.yaml` | OCTIS optimization settings |
 | `configs/paths.yaml` | Data and output paths |
 
 ## Outputs

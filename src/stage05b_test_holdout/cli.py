@@ -24,7 +24,7 @@ def cli() -> None:
 @click.option("--run-id", type=str, required=True)
 @click.option("--bo-call", type=int, default=None, help="Optional BO call id for per-call evaluation output.")
 @click.option("--allow-rerun", is_flag=True, default=False)
-@click.option("--batch-size", type=int, default=8192, show_default=True)
+@click.option("--batch-size", type=int, default=16_384, show_default=True)
 @click.option("--chunk-size", type=int, default=50_000, show_default=True)
 @click.option(
     "--coherence-max-docs",
@@ -32,6 +32,13 @@ def cli() -> None:
     default=100_000,
     show_default=True,
     help="Cap documents used for holdout coherence metrics (full corpus still scored).",
+)
+@click.option(
+    "--train-config",
+    type=click.Path(exists=True, path_type=Path),
+    default="configs/stage03/train_v4_l12_final_call73.yaml",
+    show_default=True,
+    help="Train config with embeddings_cache.test_overrides for precomputed test embeddings.",
 )
 def score_cmd(
     final_model_dir: Path,
@@ -42,6 +49,7 @@ def score_cmd(
     batch_size: int,
     chunk_size: int,
     coherence_max_docs: int,
+    train_config: Path,
 ) -> None:
     """Run one-shot final test scoring."""
     metrics_json = run_holdout_score(
@@ -53,6 +61,7 @@ def score_cmd(
         batch_size=batch_size,
         chunk_size=chunk_size,
         coherence_max_docs=coherence_max_docs,
+        train_config=train_config,
     )
     click.echo(f"Holdout scoring complete: {metrics_json}")
 

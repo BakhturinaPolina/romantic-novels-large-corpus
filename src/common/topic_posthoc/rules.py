@@ -17,7 +17,7 @@ from src.common.config import resolve_path
 
 LOGGER = logging.getLogger("topic_posthoc")
 
-DEFAULT_RULES_CONFIG = Path("configs/topic_posthoc_rules.yaml")
+DEFAULT_RULES_CONFIG = Path("configs/call73/topic_posthoc_rules.yaml")
 
 HARD_EXCLUDE_ACTION = "hard_exclude"
 SOFT_REVIEW_ACTION = "soft_review"

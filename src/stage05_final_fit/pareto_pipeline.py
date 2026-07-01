@@ -20,10 +20,10 @@ LOGGER = logging.getLogger("stage05_pareto_pipeline")
 
 
 def run_pareto_stage05(
-    selection_config: Path = Path("configs/selection_notebooks.yaml"),
+    selection_config: Path = Path("configs/stage04/selection_notebooks.yaml"),
     *,
-    paths_config: Path = Path("configs/paths_stage03_fit_v3.yaml"),
-    train_config: Path = Path("configs/train_v3.yaml"),
+    paths_config: Path = Path("configs/stage03/paths_stage03_fit_v3.yaml"),
+    train_config: Path = Path("configs/stage03/train_v3.yaml"),
     strategies: tuple[str, ...] = ("equal_weights", "coherence_priority", "eval_select"),
     stability_runs: int = 0,
     stability_tolerance: float = 3.0,

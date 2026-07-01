@@ -22,23 +22,23 @@ stage02:
 
 stage03:
 	@echo "Running Stage 03: Modeling"
-	python -m src.legacy.stage03_modeling.main train --config configs/bertopic.yaml
+	python -m src.legacy.stage03_modeling.main train --config configs/legacy/bertopic.yaml
 
 stage05:
 	@echo "Running Stage 05: Selection"
-	python -m src.stage05_selection.main --config configs/selection.yaml
+	python -m src.stage05_selection.main --config configs/legacy/selection.yaml
 
 stage06:
 	@echo "Running Stage 06: Labeling"
-	python -m src.stage06_labeling.main --config configs/labeling.yaml
+	python -m src.stage06_labeling.main --config configs/legacy/labeling.yaml
 
 stage07:
 	@echo "Running Stage 07: Analysis"
-	python -m src.stage07_analysis.main --config configs/scoring.yaml
+	python -m src.stage07_analysis.main --config configs/legacy/scoring.yaml
 
 experiments:
 	@echo "Running hyperparameter optimization (Stage 03)"
-	python -m src.legacy.stage03_modeling.main optimize --config configs/octis.yaml
+	python -m src.legacy.stage03_modeling.main optimize --config configs/legacy/octis.yaml
 
 pareto:
 	@echo "Running Pareto selection (Stage 05)"

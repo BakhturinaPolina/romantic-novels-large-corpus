@@ -49,7 +49,7 @@ from src.stage08_llm_labeling.topic_quality_hints import (
 )
 
 DEFAULT_OUTPUT_DIR = Path("results/stage08_llm_labeling")
-DEFAULT_STAGE08_CONFIG = Path("configs/stage08_labeling.yaml")
+DEFAULT_STAGE08_CONFIG = Path("configs/stage08/stage08_labeling.yaml")
 DEFAULT_NUM_KEYWORDS = 15
 DEFAULT_MAX_TOKENS = 256
 DEFAULT_BATCH_SIZE = 50
@@ -348,7 +348,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def _apply_stage08_config_defaults(args: argparse.Namespace) -> None:
-    """Merge call_73 defaults from configs/stage08_labeling.yaml when paths unset."""
+    """Merge call_73 defaults from configs/stage08/stage08_labeling.yaml when paths unset."""
     if not args.stage08_config or not Path(args.stage08_config).is_file():
         return
     cfg = load_config(Path(args.stage08_config))

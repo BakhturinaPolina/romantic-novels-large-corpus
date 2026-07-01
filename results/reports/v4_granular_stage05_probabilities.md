@@ -34,7 +34,7 @@ Set `calculate_probabilities: true` in the train config used by compare-fit, or 
 ```bash
 .venv/bin/python -m src.stage04_eval_select.cli select \
   --trials results/experiments/v4_l12_granular_phase3/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv \
-  --config configs/eval_select_granular.yaml \
+  --config configs/stage04/eval_select_granular.yaml \
   --run-id v4_l12_granular_phase3
 ```
 

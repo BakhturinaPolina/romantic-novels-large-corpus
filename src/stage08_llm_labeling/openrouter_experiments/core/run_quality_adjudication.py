@@ -26,7 +26,7 @@ from src.stage08_llm_labeling.prompts.adjudication.stage08a_quality_adjudication
 )
 
 LOGGER = logging.getLogger("stage08a.quality_adjudication")
-DEFAULT_CONFIG = Path("configs/stage08a_quality_adjudication.yaml")
+DEFAULT_CONFIG = Path("configs/stage08/stage08a_quality_adjudication.yaml")
 
 
 def load_review_packets(path: Path) -> list[dict[str, Any]]:

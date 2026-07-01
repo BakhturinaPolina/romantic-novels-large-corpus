@@ -47,14 +47,14 @@ def fit(winner_config: Path, policy: str) -> None:
 @click.option(
     "--paths-config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/paths_stage03_fit.yaml",
+    default="configs/stage03/paths_stage03_fit_v3.yaml",
     show_default=True,
 )
 @click.option(
     "--config",
     "config_path",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/train.yaml",
+    default="configs/stage03/train_v3.yaml",
     show_default=True,
     help="Train config providing embeddings_cache.overrides.",
 )
@@ -154,14 +154,14 @@ def compare(
 @click.option(
     "--paths-config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/paths_stage03_fit_v3.yaml",
+    default="configs/stage03/paths_stage03_fit_v3.yaml",
     show_default=True,
 )
 @click.option(
     "--config",
     "config_path",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/train_v4_l12_final_call73.yaml",
+    default="configs/stage03/train_v4_l12_final_call73.yaml",
     show_default=True,
 )
 @click.option(
@@ -171,7 +171,7 @@ def compare(
     show_default=True,
     help="Comma-separated splits to transform.",
 )
-@click.option("--batch-size", type=int, default=8192, show_default=True)
+@click.option("--batch-size", type=int, default=16_384, show_default=True)
 @click.option("--chunk-size", type=int, default=50_000, show_default=True)
 @click.option("--output-dir", type=click.Path(path_type=Path), default=None)
 def infer_corpus(
@@ -205,20 +205,20 @@ def infer_corpus(
 @click.option(
     "--selection-config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/selection_notebooks.yaml",
+    default="configs/stage04/selection_notebooks.yaml",
     show_default=True,
 )
 @click.option(
     "--paths-config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/paths_stage03_fit_v3.yaml",
+    default="configs/stage03/paths_stage03_fit_v3.yaml",
     show_default=True,
 )
 @click.option(
     "--config",
     "config_path",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/train_v3.yaml",
+    default="configs/stage03/train_v3.yaml",
     show_default=True,
 )
 @click.option("--stability-runs", type=int, default=0, show_default=True)

@@ -1,7 +1,7 @@
 # Stage 03 BERTopic Search Space: A Pretest-Informed Prior
 
 **Component:** `src/stage03_train/tune.py` (`build_search_space`)
-**Configuration:** `configs/train.yaml` (`search_space`)
+**Configuration:** `configs/legacy/train.yaml` (`search_space`)
 **Status:** Draft for the methods section of the topic-modeling paper.
 
 This note justifies the Bayesian-optimization search space used for Stage 03 BERTopic tuning on the large romance corpus. The ranges are derived from a smaller pretest, then **shifted and widened** for the larger, more heterogeneous corpus. The previous best configuration is used as a **prior**, not as a fixed answer.
@@ -52,7 +52,7 @@ So the corpus optimum may shift, especially for the scale-sensitive clustering p
 
 ## 3. Revised search space
 
-The space keeps the pretest optimum inside each range but expands upward for scale-sensitive parameters. This is implemented in `configs/train.yaml`; `build_search_space` maps count parameters to skopt `Integer` and continuous parameters to `Real` with no logic change.
+The space keeps the pretest optimum inside each range but expands upward for scale-sensitive parameters. This is implemented in `configs/legacy/train.yaml`; `build_search_space` maps count parameters to skopt `Integer` and continuous parameters to `Real` with no logic change.
 
 | Parameter | Old range | New range | Pretest anchor | Reason |
 |-----------|-----------|-----------|----------------|--------|
@@ -93,7 +93,7 @@ The chosen range **[0.002, 0.015]** keeps the pretest center (0.007 ~ 3,500 docs
 
 These ranges are searched while fitting on the **stratified 500k train sample** (train partition only) and scoring coherence/diversity on a **stratified 100k val sample**; see [`stage03_stratified_fit_sample_design.md`](stage03_stratified_fit_sample_design.md). During tuning, `bertopic.calculate_probabilities = false` (full document-by-topic probability matrices are unnecessary for OCTIS coherence/diversity selection and expensive at this scale); the outlier rate is computed from hard topic labels (`-1`). Probability matrices, if ever needed, are a Stage 05 concern.
 
-The optimizer runs 120 BO calls per model (`configs/train.yaml -> optimization.number_of_calls`).
+The optimizer runs 120 BO calls per model (`configs/legacy/train.yaml -> optimization.number_of_calls`).
 
 ---
 

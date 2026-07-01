@@ -37,7 +37,7 @@ Verify GPU: `python -m src.common.check_gpu_setup`
 To run Stage03 on a second NVIDIA/CUDA-12.x box (e.g. to tune a different embedding model in parallel) without recreating the venv, build a self-contained transfer bundle:
 
 ```bash
-bash scripts/make_transfer_bundle.sh   # → transfer_bundle/ (Dockerfile, code, configs, deps)
+bash scripts/bundle/make_transfer_bundle.sh   # → transfer_bundle/ (Dockerfile, code, configs, deps)
 ```
 
 Ship `transfer_bundle/` to the target machine (plus the three sentence CSVs), then `cd transfer_bundle && docker build -t romance-stage03:latest .` and launch with `./scripts/run_v3_remote_model.sh` — **no `.env` setup required**. Docker assets live in [docker/](docker/); build from the repo root with `docker build -f docker/Dockerfile -t romance-stage03:latest .` if you are not using the bundle. Runs are **resumable**: `data/`, `results/`, `logs/`, and `models/` are bind-mounted, and re-running `tune` with the **same `--run-id`** continues from disk — skipping completed data loads, the OCTIS corpus, cached embeddings, and finished models, and resuming the Bayesian-optimization loop from the last completed call. Full instructions and copy-paste run blocks per model: [docker/README.md](docker/README.md).
@@ -51,8 +51,8 @@ For the v2 sentence corpus (~100M rows), BERTopic fits on a **stratified 500k tr
 python -m src.stage03_train.cli sample --train-csv ... --val-csv ... \
   --out-dir data/stage03_samples --train-target 500000 --val-target 100000 --seed 42
 
-# 2) Tune (uses configs/train.yaml + configs/paths_stage03_fit.yaml)
-python -m src.stage03_train.cli tune --config configs/train.yaml --run-id <run_id>
+# 2) Tune (uses configs/stage03/train_v3.yaml + configs/stage03/paths_stage03_fit_v3.yaml)
+python -m src.stage03_train.cli tune --config configs/stage03/train_v3.yaml --run-id <run_id>
 ```
 
 BO optimizes a **topic-count-penalized coherence** objective (`bo_objective` in `trials_partial.csv`); raw `coherence_c_v` and `n_topics` are logged per call. Stage 04 applies a `min_n_topics` floor before Pareto ranking. Design notes: [stage03_stratified_fit_sample_design.md](results/reports/stage03_stratified_fit_sample_design.md), [stage03_bertopic_search_space_prior.md](results/reports/stage03_bertopic_search_space_prior.md).

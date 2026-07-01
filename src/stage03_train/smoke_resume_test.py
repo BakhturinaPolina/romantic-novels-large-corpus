@@ -2,7 +2,7 @@
 Opt-in Stage03 smoke + resume harness.
 
 Run:
-  STAGE03_SMOKE=1 python -m pytest tests/test_stage03_smoke_e2e.py -v -s
+  STAGE03_SMOKE=1 python -m pytest tests/stage03/test_stage03_smoke_e2e.py -v -s
   python -m src.stage03_train.smoke_resume_test
 """
 

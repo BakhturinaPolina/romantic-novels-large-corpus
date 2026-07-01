@@ -1,7 +1,7 @@
 # Gold-standard expectations for v3 topic labeling regression (30 topics).
 # Labeling-only: gold_label + gold_scene_summary + selection_reasoning.
 # Categorization enums: golden/call73_gold_30_categorization.yaml
-# Run: scripts/run_stage08_gold_regression.sh
+# Run: scripts/stage08/run_stage08_gold_regression.sh
 
 version: "3.0"
 description: Natural-voice gold labels for 30-topic labeling regression panel.

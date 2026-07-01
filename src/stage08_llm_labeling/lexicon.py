@@ -8,7 +8,7 @@ from typing import Any
 
 from src.common.config import load_config
 
-DEFAULT_LEXICON_PATH = Path("configs/stage08_labeling_lexicon.yaml")
+DEFAULT_LEXICON_PATH = Path("configs/stage08/stage08_labeling_lexicon.yaml")
 
 
 @lru_cache(maxsize=1)

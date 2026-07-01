@@ -2,7 +2,7 @@
 
 **Status:** Active strategy memo (frozen BO call for taxonomy / Stage08–09).  
 **Date:** 2026-06-25  
-**Frozen model:** `placeholder_v4_models` / compare-fit **call 73** (`configs/placeholder_v4_frozen_call73.yaml`)
+**Frozen model:** `placeholder_v4_models` / compare-fit **call 73** (`configs/call73/placeholder_v4_frozen_call73.yaml`)
 
 ## Related artifacts
 
@@ -12,9 +12,9 @@
 | Enriched model (Stage06) | `.../call_73/model_compare_enriched/` |
 | Stage06 topics JSON | `results/stage06_topic_exploration/placeholder_v4_call73/` |
 | Stage07 quality table | `results/stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv` |
-| Post-hoc rules | `configs/topic_posthoc_rules.yaml` |
+| Post-hoc rules | `configs/call73/topic_posthoc_rules.yaml` |
 | Outlier / collapse evidence | `results/experiments/v3_minilm12v2_first/final_compare/call_*/outliers_reduced/`, `.../call_59/metrics.json` (`refit_collapse`) |
-| Prior taxonomy memo (call_59) | `results/reports/stage08_stage09_taxonomy_improvement_notes_call59.md` |
+| Prior taxonomy memo (call_59) | `results/reports/stage08/stage08_stage09_taxonomy_improvement_notes_call59.md` |
 | Post-hoc limitations | `results/reports/stage03_posthoc_cleaning_limitations_memo.md` |
 
 ---
@@ -50,7 +50,7 @@
 
 ## 3. Post-hoc cleaning (metadata only)
 
-Rules in `configs/topic_posthoc_rules.yaml` set `exclude_from_axes` without mutating the model:
+Rules in `configs/call73/topic_posthoc_rules.yaml` set `exclude_from_axes` without mutating the model:
 
 | Rule | Purpose |
 |------|---------|
@@ -89,13 +89,13 @@ Top usable by size: T1 kissed (5632), T2 kiss (4504), T3 wanted (3707), T5 know/
 
 ```bash
 # Optional: re-sync after rule tweaks
-bash scripts/run_stage06_placeholder_v4_call.sh 73
-bash scripts/run_stage07_placeholder_v4_models.sh   # default CALLS=73
+bash scripts/stage06/run_stage06_placeholder_v4_call.sh 73
+bash scripts/stage07/run_stage07_placeholder_v4_models.sh   # default CALLS=73
 ```
 
-1. **Review character-name queue** — spot-check the 44 flagged topics in [`topic_quality_placeholder_v4_call73.csv`](../stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv); un-flag scene topics (allowlist or rule tweak in `configs/topic_posthoc_rules.yaml`).
+1. **Review character-name queue** — spot-check the 44 flagged topics in [`topic_quality_placeholder_v4_call73.csv`](../stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv); un-flag scene topics (allowlist or rule tweak in `configs/call73/topic_posthoc_rules.yaml`).
 2. **Stage04 dry-run** (~30 min, CPU) — validate granular gates on partial v4 trials (independent of frozen call).
-3. **Stage08 LLM** — model pilots done (**Sonnet** locked). **Prompt OVAT sweep** before production ([`stage08_prompting_research_design_call73.md`](stage08_prompting_research_design_call73.md)).
+3. **Stage08 LLM** — model pilots done (**Sonnet** locked). **Prompt OVAT sweep** before production ([`stage08_prompting_research_design_call73.md`](stage08/stage08_prompting_research_design_call73.md)).
 4. **Stage05b holdout** on call_73 (overnight GPU) — full test transform; unblocks inference validation.
 5. **Stage09 mixtures** — soft probabilities on full corpus after final fit; **do not** run `compare --reduce-outliers` on call 73.
 
@@ -109,9 +109,9 @@ bash scripts/run_stage07_placeholder_v4_models.sh   # default CALLS=73
 
 | Topic | Primary doc | Also update |
 |-------|-------------|-------------|
-| **Frozen call, paths, metrics** | [`configs/placeholder_v4_frozen_call73.yaml`](../../configs/placeholder_v4_frozen_call73.yaml) | This file §1 |
+| **Frozen call, paths, metrics** | [`configs/call73/placeholder_v4_frozen_call73.yaml`](../../configs/call73/placeholder_v4_frozen_call73.yaml) | This file §1 |
 | **Outlier / mixture / no-reduce-outliers policy** | **This file** §2 | [`v4_granular_stage05_probabilities.md`](v4_granular_stage05_probabilities.md) |
-| **Post-hoc rules + limitations** | [`stage03_posthoc_cleaning_limitations_memo.md`](stage03_posthoc_cleaning_limitations_memo.md) | `configs/topic_posthoc_rules.yaml` |
-| **Stage08 LLM model + prompt sweep** | [`stage08_production_model_decision_call73.md`](stage08_production_model_decision_call73.md), [`stage08_prompting_research_design_call73.md`](stage08_prompting_research_design_call73.md), [`stage08_progress.md`](stage08_progress.md) | `configs/stage08_labeling.yaml` |
+| **Post-hoc rules + limitations** | [`stage03_posthoc_cleaning_limitations_memo.md`](stage03_posthoc_cleaning_limitations_memo.md) | `configs/call73/topic_posthoc_rules.yaml` |
+| **Stage08 LLM model + prompt sweep** | [`stage08/stage08_production_model_decision_call73.md`](stage08/stage08_production_model_decision_call73.md), [`stage08/stage08_prompting_research_design_call73.md`](stage08/stage08_prompting_research_design_call73.md), [`stage08/stage08_progress.md`](stage08/stage08_progress.md) | `configs/stage08/stage08_labeling.yaml` |
 | **Weekly execution checklist** | [`week_day_work_checklist_2026-06-24.md`](week_day_work_checklist_2026-06-24.md) | Point all downstream tasks at call 73 |
 | **BO selection / Phase 1–3** | [`stage04_v3_l12_l6_bo_selection_report.md`](stage04_v3_l12_l6_bo_selection_report.md) | Dry-run output under `results/selection/` |

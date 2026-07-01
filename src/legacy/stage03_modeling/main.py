@@ -17,7 +17,7 @@ def cli():
 @click.option(
     "--config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/bertopic.yaml",
+    default="configs/legacy/bertopic.yaml",
     help="Path to BERTopic configuration file"
 )
 def train(config: Path):
@@ -64,7 +64,7 @@ def train(config: Path):
 @click.option("--dataset_csv", type=Path, required=True)
 @click.option("--out_dir", type=Path, required=True)
 @click.option("--text_column", default="Sentence")
-@click.option("--config", type=Path, default="configs/bertopic.yaml")
+@click.option("--config", type=Path, default="configs/legacy/bertopic.yaml")
 def retrain(dataset_csv: Path, out_dir: Path, text_column: str, config: Path):
     """Retrain BERTopic models from topic tables."""
     print("[RETRAIN_CMD] ========== Starting retrain command ==========")
@@ -84,7 +84,7 @@ def retrain(dataset_csv: Path, out_dir: Path, text_column: str, config: Path):
 @click.option(
     "--config",
     type=click.Path(exists=True, path_type=Path),
-    default="configs/octis.yaml",
+    default="configs/legacy/octis.yaml",
     help="Path to OCTIS configuration file"
 )
 def optimize(config: Path):

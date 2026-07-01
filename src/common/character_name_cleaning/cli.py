@@ -44,7 +44,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--config",
         type=Path,
-        default=Path("configs/character_name_cleaning.yaml"),
+        default=Path("configs/stage06/character_name_cleaning.yaml"),
         help="Lexicon YAML config",
     )
     parser.add_argument(

@@ -45,7 +45,7 @@ def cli() -> None:
 
 @cli.command("select")
 @click.option("--trials", "trials_csv", type=click.Path(exists=True, path_type=Path), required=True)
-@click.option("--config", type=click.Path(exists=True, path_type=Path), default="configs/eval_select.yaml")
+@click.option("--config", type=click.Path(exists=True, path_type=Path), default="configs/stage04/eval_select.yaml")
 @click.option("--run-id", type=str, required=True)
 def select_cmd(trials_csv: Path, config: Path, run_id: str) -> None:
     """Select one winning trial from trials.csv."""

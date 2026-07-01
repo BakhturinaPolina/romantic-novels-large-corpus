@@ -49,13 +49,13 @@ Identifies models that are not dominated by any other model in both coherence an
 
 ```bash
 python -m src.legacy.stage04_selection.main analyze \
-  --config configs/selection.yaml \
+  --config configs/legacy/selection.yaml \
   --paths-config configs/paths.yaml
 ```
 
 ## Configuration
 
-See `configs/selection.yaml` for:
+See `configs/legacy/selection.yaml` for:
 - Input/output paths
 - Cleaning thresholds
 - Weighting strategy parameters
