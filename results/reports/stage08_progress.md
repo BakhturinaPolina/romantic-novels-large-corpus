@@ -1,6 +1,6 @@
 # Stage08 labeling progress (call 73)
 
-**Last updated:** 2026-06-25  
+**Last updated:** 2026-06-30  
 **Production LLM:** **`anthropic/claude-sonnet-4.6`** — see [`stage08_production_model_decision_call73.md`](stage08_production_model_decision_call73.md)  
 **Frozen model:** `placeholder_v4_models/final_compare/call_73`  
 **Config:** [`configs/stage08_labeling.yaml`](../../configs/stage08_labeling.yaml)  
@@ -16,8 +16,10 @@
 | Representative snippets | Done | CSV fallback from compare-fit `representative_docs.csv` (enriched model omits `representative_docs_`) |
 | Model shootout (5-topic pilots) | **Done** | 14 models; **7 top picks re-run with snippets** (2026-06-25) |
 | Model shootout (20-topic pilots) | **Done** | opus-4.6, sonnet-4.6, mistral-nemo (snippet-aware, 2026-06-25) |
-| Full production run (322 topics) | **Done** | `v2_s1_snippets_first` @ temp=0 — 2026-06-25, ~62 min, $7.22 API |
-| Stage09 pre-router | Not started | |
+| Full production run (322 topics) | **Done** | `v3_topic_labeling` @ temp=0.05 — Sonnet, 148 pass-to-labeling topics |
+| `v3_rep_first` gold-30 A/B | **Done** | 2026-06-30 — see [`stage08_snippet_trap_rep_first_decision_call73.md`](stage08_snippet_trap_rep_first_decision_call73.md) |
+| Snippet-trap panel relabel (79 topics) | **Done** | `v3_rep_first` only; production prompt **unchanged** |
+| Stage09 pre-router | In progress | `stage09_input/topic_metadata_v3.json` |
 
 ## Design decisions (locked)
 
@@ -113,11 +115,20 @@ JSONs: `labels_pos_openrouter_{opus-4.6,claude-sonnet-4.6,mistral-nemo}_*_limit2
 
 **Production (2026-06-25):** Sonnet + `v2_s1_snippets_first` @ temp=0. Output: `labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v2_s1_snippets_first.json` (322 topics). Content mix: scene 240, discourse 60, noise 12, subgenre_marker 6, character_name 4. Labels JSON-only (`--no-integrate`).
 
+## Snippet-trap relabel (2026-06-30)
+
+**Decision:** keep production `v3_topic_labeling`; relabel 79-topic panel with `v3_rep_first` only.
+
+- Panel: [`data/stage08_benchmark/call73_snippet_trap_panel.json`](../../data/stage08_benchmark/call73_snippet_trap_panel.json)
+- Run: `scripts/run_stage08_snippet_trap_relabel.sh`
+- Report: [`stage08_snippet_trap_rep_first_decision_call73.md`](stage08_snippet_trap_rep_first_decision_call73.md)
+- Diff CSV: [`stage08_snippet_trap_rep_first_comparison_call73.csv`](stage08_snippet_trap_rep_first_comparison_call73.csv)
+
 ## Next actions
 
-1. Manual QA: discourse/noise/paratext tail (~22% non-scene); spot-check `character_name` topics (4)
-2. Optional: integrate labels into enriched BERTopic model (re-run without `--no-integrate`)
-3. Stage09 pre-router (minimal)
+1. Merge snippet-trap rep-first labels into Stage09 input for panel topics
+2. Manual QA: discourse/noise/paratext tail; spot-check relabel diff CSV
+3. Stage09 taxonomy mapping on merged metadata
 
 ## Logs
 
