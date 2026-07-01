@@ -53,18 +53,18 @@ Rationale:
 - **Unchanged:** Topics 20, 113, 302 (both prompts agreed)
 - **Key fixes:** T6 → Resigned Promise to Return; T0 → Hesitant Arrival at The Entrance; T149 → Cleaning Up After A Mess; T30 → Drinking With Reluctant Enthusiasm (cites `threats` in rationale)
 
-Output: `results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_rep_first_snippet_trap_rep_first_topics.json`
+Output: `results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_rep_first_snippet_trap_rep_first_topics.json`
 
 
 | Artifact | Path |
 |----------|------|
-| Production labels | `results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_*_v3_topic_labeling.json` |
-| Snippet-trap relabel | `results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_*_snippet_trap_rep_first*.json` |
+| Production labels | `results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_*_v3_topic_labeling.json` |
+| Snippet-trap relabel | `results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_*_snippet_trap_rep_first*.json` |
 | Gold rep-first run | `results/stage08_llm_labeling/gold_regression/gold30_rep_first_report_20260630_221424.csv` |
 | A/B script | `scripts/run_stage08_gold_regression_rep_first.sh` |
 
 ## Next steps
 
-- [ ] Merge snippet-trap rep-first labels into `stage09_input/topic_metadata_v3.json` for the 79 panel topics
+- [x] Merge snippet-trap rep-first labels into `stage09_input/topic_metadata_v3.json` for the 79 panel topics (2026-06-30)
 - [ ] Spot-check relabel diff CSV for over-keyworded labels (POS dumps, missed sexual snippets)
 - [ ] Optional: add automatic snippet-trap detector to Stage08 QA for future runs

@@ -1,6 +1,6 @@
 {
   "0": {
-    "label": "Offering A Ride Home",
+    "label": "Hesitant Arrival at The Entrance",
     "keywords": [
       "rear",
       "nearest",
@@ -24,8 +24,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets consistently depict characters arranging practical transportation — a ride home, a taxi to a hotel, driving through. Keywords like suitcase, doorway, sidewalk, and entrance reinforce a departure or arrival transit scene with no romantic or sexual content.",
-    "scene_summary": "A character offers another a ride home or to a hotel, navigating doorways, sidewalks, and suitcases along the way.",
+    "rationale": "KeyBERT and MMR converge on movement verbs (strolled, stalked, darted, peered, guided) and threshold nouns (doorway, entrance, suitcase, sidewalk), while POS anchors hesitation, hovering, and narrow — all pointing to a scene of cautious, uncertain arrival at a physical threshold. The snippets show transit logistics (ride home, taxi to hotel, driving through) which are narrower than the keyword thread; the keyword field of awkward, hesitant approach to an entrance is broader and better supported. No romantic or sexual content is present.",
+    "scene_summary": "A character pauses awkwardly at a doorway or entrance, hovering with muffled voices nearby before moving forward.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -108,7 +108,8 @@
       "listen i’ll give you a ride home instead of to your van.",
       "i’ll grab a taxi back to the hotel and meet you tomorrow.”",
       "do you think we’ll be driving straight through?”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "1": {
     "label": "Soft Kiss Turning Urgent",
@@ -442,7 +443,7 @@
     ]
   },
   "4": {
-    "label": "Returning A Missed Call",
+    "label": "Frantic Phone Call Back",
     "keywords": [
       "purse",
       "address",
@@ -466,8 +467,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on phone calls — returning one, promising to call later, or calling after an investigation — confirming a mundane communication scene. Main keywords (phone, call, cell, number) align perfectly with snippets. No romantic or sexual content is present; the scene is everyday interpersonal communication.",
-    "scene_summary": "A character sighs and calls someone back, knowing they will keep calling if ignored for too long.",
+    "rationale": "KeyBERT/MMR/POS converge on urgent phone-related action: frantic, fumbled, snatched, digging, purse, screen, address, instructions, answering. Main keywords (phone, call, cell, number) confirm the medium. Snippets show characters calling back or promising to call, grounding the frantic-retrieval thread in a concrete phone-communication beat.",
+    "scene_summary": "A character frantically digs through her purse for her phone and calls back, following instructions or checking in with someone.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -552,7 +553,8 @@
       "i sigh and call him back to make sure it wasn’t anything important—knowing it’s not, but i also know he’ll keep calling me if i ignore him for too long.",
       "i’ll call you tonight,” [person] says when we make it back to the dorms. “",
       "i’ll call you once we’ve conducted more investigations.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "5": {
     "label": "Difficult Confession Received Badly",
@@ -667,7 +669,7 @@
     ]
   },
   "6": {
-    "label": "Plans to Meet Tomorrow",
+    "label": "Resigned Promise to Return",
     "keywords": [
       "ye",
       "inevitable",
@@ -686,8 +688,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters making casual plans to meet at a barn the next morning and inviting someone to return later, with no romantic or sexual content. Keywords like 'invite', 'suggest', 'resigned', and 'inevitable' reinforce a low-stakes social arrangement scene. No physical or emotional intimacy is present, placing this in everyday interpersonal exchange.",
-    "scene_summary": "A character arranges to return or meet someone the following morning, extending a tentative invitation to come.",
+    "rationale": "KeyBERT/MMR/POS cohere on resigned, confessed, inevitable, pathetic, session, and realization — a cluster of reluctant acceptance and departure rather than mere scheduling. The snippets ('I'll come back later tonight', 'I just hope you'll come') are bland scheduling lines that exemplify only the surface beat; the keyword thread of resigned/confessed/inevitable/explanation points to a heavier emotional undercurrent of reluctant commitment. Label anchors the keyword thread; the barn/return snippet grounds the scene_summary.",
+    "scene_summary": "A character reluctantly agrees to come back later, accepting the inevitable parting with a quiet, resigned acknowledgment.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -767,7 +769,8 @@
       "i’ll see you tomorrow morning at the barn.”",
       "i just hope you’ll come.",
       "i’ll come back later tonight, okay?”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "7": {
     "label": "Playful Wink Across The Room",
@@ -1096,7 +1099,7 @@
     ]
   },
   "10": {
-    "label": "Reassuring Words Between Characters",
+    "label": "Mumbled Reassurances and Hesitation",
     "keywords": [
       "hesitation",
       "enthusiasm",
@@ -1118,8 +1121,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show short spoken exchanges — reassurances, agreements, and whispered comfort — with no shared scene setting or physical action. Keywords reinforce a pattern of hedged, softened verbal delivery (mumbled, breathlessly, assured, hesitation) rather than a concrete scene beat. Routed as discourse because the topic captures a register of spoken reassurance rather than a single visible narrative moment.",
-    "scene_summary": "Characters exchange brief reassurances and acknowledgments, one whispering that everything will be fine.",
+    "rationale": "KeyBERT and MMR converge on speech-delivery terms — mumbled, nods, giggled, awkwardly, breathlessly, grunted, hesitation, assured — signalling a discourse topic about how characters vocally respond rather than a specific scene action. POS nouns (hesitation, enthusiasm, threats, lack) and adjective (unhappy) add emotional texture of reluctant or hollow reassurance. Snippets confirm the pattern: brief, softly delivered lines ('you'll be fine', 'okay, I'll give you that') that exemplify mumbled, hesitant verbal exchange.",
+    "scene_summary": "A character offers a halting, softly spoken reassurance to another, masking uncertainty beneath words like 'you'll be fine.'",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -1205,7 +1208,8 @@
       "i’ll tell you what’s fine,” [person] said. “",
       "okay, i’ll give you that,” she said agreeably. “",
       "you’ll be fine,” he whispered. “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "11": {
     "label": "Coffee Mug in The Kitchen",
@@ -1983,7 +1987,7 @@
     ]
   },
   "18": {
-    "label": "Promising to Keep Her Safe",
+    "label": "Vowing to Keep Her Safe",
     "keywords": [
       "inevitable",
       "percent",
@@ -2005,8 +2009,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show direct protective pledges — 'I'll protect you,' 'I'll be safe,' 'I'll banish the jerk' — with no romantic or sexual content. Keywords (protect, threat, guarded, promises, assured) reinforce a safety-and-protection scene. No intimacy signals are present; axis_hint is everyday_intimacy_emotional_safety for its emotional-bond function.",
-    "scene_summary": "A character vows to protect someone from danger, offering reassurance against threats and promising to keep them safe.",
+    "rationale": "KeyBERT and MMR converge on protect/threat/threats/guarded/dangerously/assured/assure, with POS anchoring nouns like threats, sentence, and adjectives like inevitable and horrified — a clear field of protective vows under danger. The council/sentence/banish terms suggest an authority-level threat context. Snippet 3 ('come on, I'll protect you') best exemplifies the keyword thread; snippet 1 ('I'll banish the jerk') and snippet 2 ('I'll do everything I can to be safe') confirm the protective-promise beat.",
+    "scene_summary": "A character makes an urgent promise of protection to another who faces a serious threat, swearing to keep them safe.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -2086,10 +2090,11 @@
       "i’ll banish the jerk.",
       "i’ll do everything i can to be safe [person].\" \"",
       "come on, i’ll protect you.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "19": {
-    "label": "Agreeing to Marry Again",
+    "label": "Reluctant Agreement to Marry",
     "keywords": [
       "engaged",
       "unhappy",
@@ -2114,8 +2119,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on marriage acceptance ('of course i'll marry you'), remarrying despite complications (sleeping with a wife, facing disapproval), and confident commitment to the choice. Keywords like 'engaged', 'promises', 'guarantee', and 'arranged' reinforce a marriage-decision scene. No romantic physical contact is described, so sexual_explicitness is none.",
-    "scene_summary": "A character accepts a marriage proposal and defends the decision to remarry despite others' likely objections.",
+    "rationale": "KeyBERT/MMR/POS converge on a marriage-negotiation field: engaged, promises, guarantee, intend, arranged, confessed, unhappy, pretending, instincts. Snippets confirm the beat — a marriage acceptance voiced with hesitation and complicated history. No romantic physical contact is present, so sexual fields are none.",
+    "scene_summary": "A character confesses or confirms a marriage proposal, wrestling with second thoughts, past arrangements, and the instinct to forgive or move forward.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -2197,7 +2202,8 @@
       "of course i'll marry you.”",
       "and don’t think that i’ll have second thoughts about it just because i’ve slept with your wife.”",
       "he’ll likely have a few things to say about me marrying again but he will see i’ve made the right choice.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "20": {
     "label": "Deferring A Difficult Conversation",
@@ -2222,8 +2228,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets share the same verbal beat: a character postponing a conversation with 'we'll talk about it tomorrow/later.' Keywords like 'arguing,' 'anxious,' and 'hesitate' confirm a charged but non-sexual deferral pattern. This is a discourse topic — a recurring speech act without a shared physical scene.",
-    "scene_summary": "A character repeatedly deflects a tense discussion by promising to talk about it later or tomorrow.",
+    "rationale": "KeyBERT/MMR/POS converge on a discourse field of stalled or deferred speech: conversations, hesitate, anxious, arguing, limits, appropriate, ability, task — signalling a charged but unresolved exchange rather than a physical scene. All three snippets show the same deferral beat ('we'll talk about it tomorrow/later'), grounding the label in that postponement pattern. No romantic or physical content is present, so sexual fields are none.",
+    "scene_summary": "A character deflects an anxious or tense exchange by insisting the discussion be postponed until tomorrow.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -2306,7 +2312,8 @@
       "we'll talk about it tomorrow,\" he replied.",
       "i said we’ll talk about it later.”",
       "we’ll talk tomorrow.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "21": {
     "label": "Voice Cracking With Emotion",
@@ -2631,7 +2638,7 @@
     ]
   },
   "24": {
-    "label": "Going to Bed Alone Tonight",
+    "label": "Anxious Wait Before Sleep",
     "keywords": [
       "longest",
       "anxious",
@@ -2653,8 +2660,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets consistently depict characters settling in for sleep — alone in bed, in a field, or waiting for morning — with an undercurrent of anxiety or unresolved tension. Keywords like anxious, worrying, uncertain, and realization reinforce a mood of restless waiting rather than any romantic or sexual content. The topic is a coherent low-key scene of solitary bedtime and anticipation, with no sexual or affectionate physical content.",
-    "scene_summary": "A character resigns themselves to sleeping alone, waiting for morning to bring relief from worry.",
+    "rationale": "KeyBERT and MMR converge on rested, relaxing, anxious, session, worrying, drifted, safely, and ought, pointing to a pre-sleep state of restless anxiety and the need to settle down. POS keywords (anxious, uncertain, unable, realization, instructions) reinforce an emotionally unsettled character trying to wind down. Snippets confirm the sleep/bed setting and the hope that morning will resolve the tension, grounding the keyword thread in a bedtime scene.",
+    "scene_summary": "A character lies awake, anxious and uncertain, telling themselves that sleep will bring relief and that everything will be resolved by morning.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -2737,7 +2744,8 @@
       "then i guess i’ll have to go to bed by myself.",
       "we’ll sleep in the field.”",
       "in the morning, when i’ve had some sleep , it’ll all be over.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "25": {
     "label": "Tears Spilling Down Her Cheeks",
@@ -3177,7 +3185,7 @@
     ]
   },
   "29": {
-    "label": "Leading Her Past The Horses",
+    "label": "Horses at The Stable",
     "keywords": [
       "appreciative",
       "tracks",
@@ -3201,8 +3209,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets consistently reference horses and movement around a rural property — leading someone upstairs away from a horse, tending horses before coming up the back way, and reassuring someone the horse will be gone. Main keywords (horse, stables, barn, saddle) confirm a ranch or farm setting. No romantic or sexual content is present; this is a grounded rural scene transition.",
-    "scene_summary": "A character leads someone away from the horses and toward the house, while another tends to the animals.",
+    "rationale": "Main keywords (horse, horses, mare, stables, barn, stallion) and all three snippets converge on a rural stable setting. KeyBERT/MMR terms like graceful, eagerly, appreciative, and guarded suggest attentive, physical movement around animals, while POS nouns tracks and ribs add bodily/terrain texture consistent with a working ranch scene. The label reflects the dominant setting thread rather than any single scheduling line in the snippets.",
+    "scene_summary": "A character leads someone away from the horses and toward the house, with others tending to the animals at the barn.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -3285,10 +3293,11 @@
       "i’ll show you upstairs,” i say as i lead her away from the horse.",
       "i’ll take care of the horses and come up the back way.",
       "besides you’ll be long gone before anyone sees that horse.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "30": {
-    "label": "Fetching Drinks at A Party",
+    "label": "Drinking With Reluctant Enthusiasm",
     "keywords": [
       "threats",
       "meantime",
@@ -3312,8 +3321,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets consistently depict casual social drinking scenes — fetching beers, getting drinks, and pledging to stop drinking — confirming a social gathering context. Main keywords (drink, wine, beer, alcohol) align with and reinforce the snippet evidence. No romantic or sexual content is present; the scene is everyday social interaction.",
-    "scene_summary": "A character offers to grab drinks for others and promises to cut back on their own alcohol consumption.",
+    "rationale": "KeyBERT anchors on invitation, enjoying, chuckle, thrilled, and repeat, while MMR adds enthusiasm, grumbled, mumbled, and threats, and POS supplies limits, appropriate, and period — together suggesting a social scene with mixed eagerness and mild resistance. Main keywords (drink, beer, alcohol, whiskey) confirm the drinking-social setting as the concrete backdrop. Snippets show characters fetching drinks and making light promises to stop, grounding the keyword thread of enthusiastic-yet-reluctant social participation.",
+    "scene_summary": "Characters share drinks at a social gathering while one makes a half-hearted promise to stop drinking soon.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -3389,7 +3398,8 @@
       "i’ll get us a drink and meet you out there.”",
       "you set it up and i’ll go get you another beer.” “",
       "i’ll stop drinking . . ."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "31": {
     "label": "Wolf Pack Instincts and Threats",
@@ -4224,7 +4234,7 @@
     ]
   },
   "39": {
-    "label": "Deciding What You Deserve",
+    "label": "Deciding What She Deserves",
     "keywords": [
       "instincts",
       "worries",
@@ -4237,7 +4247,7 @@
       "sentence",
       "terrified"
     ],
-    "content_type": "discourse",
+    "content_type": "scene",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -4246,8 +4256,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on a character's defiant claim over her own worth and her fear of trusting after betrayal. Keywords like 'deserve', 'decide', 'trust', and 'terrified' reinforce an emotionally charged but non-physical dialogue about self-determination. No romantic or sexual physical content is present; this is an emotional-discourse beat about agency and wounded trust.",
-    "scene_summary": "A character asserts her right to decide what she deserves and whether she can ever trust or love again.",
+    "rationale": "KeyBERT and MMR converge on deserve/deserved/decide/willingly/protect/admit, signaling a scene of self-determination and moral reckoning after a breach of trust. POS keywords (worries, options, sentence, terrified, separate) reinforce an emotionally charged confrontation over agency and consequences. Snippet 2 ('I'll decide what I deserve') best anchors the keyword thread, with snippet 1 adding the trust-betrayal context.",
+    "scene_summary": "A character asserts her right to determine her own worth after feeling betrayed, declaring she alone will decide what she deserves.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -4329,10 +4339,11 @@
       "i’ll want to know why or i don’t think i’ll ever be able to trust a man or fall in love ever again.’",
       "i’ll decide what i deserve.",
       "i think you deserve it, so i guess you’ll just have to deal."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "40": {
-    "label": "Hotel Room Might Lead to Bed",
+    "label": "Suggesting A Hotel For The Night",
     "keywords": [
       "privacy",
       "address",
@@ -4354,8 +4365,8 @@
     "consent_status": "consensual_implied",
     "axis_hint": "sexual_tension_explicit_intimacy",
     "is_noise": false,
-    "rationale": "All three snippets center on hotel accommodation as a prelude to sex, with snippet 1 explicitly naming the bed as the likely outcome. Keywords like privacy, suitcase, and conversations reinforce a deliberate, consensual decision to seek private lodging. The tone is wry and mutually understood, placing this firmly in sexual_tension with implied consent.",
-    "scene_summary": "Characters discuss staying at a hotel for the night, with one openly acknowledging they will likely end up in bed together.",
+    "rationale": "KeyBERT/MMR/POS converge on deliberate planning around privacy, lodging logistics, and implicit sexual expectation (planned, privacy, suitcase, secure, guarantee, eyeing). Snippet 1 makes the sexual subtext explicit — she notes a hotel room will 'probably end up in bed' — grounding the keyword thread in a charged, consensual negotiation over where to spend the night. The label names the visible beat (suggesting a hotel) without importing analytic language.",
+    "scene_summary": "A couple weighs the privacy and cost of booking a hotel room, both aware they will likely end up in bed together.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -4435,10 +4446,11 @@
       "if we go back to a hotel room,” she said with a wry twist of her mouth, “we’ll probably end up in bed.” “",
       "i'm sure if we ask the hotel, they'll have an idea.",
       "we’ll go and stay at a hotel for the night.’"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "41": {
-    "label": "Talking About School Plans",
+    "label": "Pursuing School and Education",
     "keywords": [
       "session",
       "repeat",
@@ -4463,8 +4475,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters discussing education: a study invitation, a speech about educational programs for schoolchildren, and a plan to attend auto mechanic school. Main keywords (school, college, class, teacher, scholarship) align with this reading. No romantic or sexual content is present; this is a neutral scene about educational choices and aspirations.",
-    "scene_summary": "A character discusses educational goals and future plans, from auto mechanic school to community programs for schoolchildren.",
+    "rationale": "KeyBERT anchors on studying/studied/taught/opportunity/acknowledge, MMR adds session/council/choices/determination/terms, and POS nouns (session, council, limits, choices, percent) all cohere around an educational-planning theme. Main keywords (school, college, class, teacher, scholarship, grades) reinforce this strongly. Snippets confirm the thread: characters discuss continuing education programs and vocational school enrollment, grounding the label in a visible decision-making beat about schooling.",
+    "scene_summary": "A character discusses plans to continue schooling, weighing choices and opportunities like enrolling in auto mechanic school or supporting district educational programs.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -4541,7 +4553,8 @@
       "come into the study and i’ll show you.",
       "thanks to all of you,” [person] said, “we’ll be able to continue our educational programs for schoolchildren throughout the district.",
       "i’ll go to auto mechanic school.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "42": {
     "label": "Asking For Help With Tasks",
@@ -4652,7 +4665,7 @@
     ]
   },
   "43": {
-    "label": "Locked Up By A Vampire",
+    "label": "Vampire Captivity and Feeding Urge",
     "keywords": [
       "feeding",
       "weapons",
@@ -4676,8 +4689,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on vampire identity and captivity: a human locked in a room by a vampire, the threat of reverting to vampiric feeding, and a question about being with a vampire. Keywords like feeding, weapons, council, and century reinforce a paranormal world-building context with no romantic or sexual content.",
-    "scene_summary": "A human character confronts a vampire about being kept confined, questioning what it means to live among them.",
+    "rationale": "KeyBERT/MMR/POS converge on a vampire-subgenre field: instincts, terrified, attracted, feeding, weapons, threats, council, century, and uncertain all point to a paranormal captivity scene involving vampire nature and power dynamics. Snippets confirm the setting — a locked room, feeding urges, and questions about being with a vampire. Main keywords (vampire, blood, wraith) reinforce the subgenre marker classification.",
+    "scene_summary": "A newly turned or captive vampire struggles with feeding instincts and the threat of losing control while confined by others of her kind.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -4761,10 +4774,11 @@
       "you’ve kept me locked up—” “in the best room money can buy…” “i haven’t seen the outside world in two weeks—” “you’re a vampire,” he said, frowning a bit. “",
       "they can turn me back into a vampire, and i’d binge until i’ve made up for every day i haven’t fed.",
       "and you’ve never even considered being with a vampire?"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "44": {
-    "label": "Promising Not to Cause Harm",
+    "label": "Promising Never to Cause Pain",
     "keywords": [
       "painful",
       "ye",
@@ -4781,8 +4795,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on declarations about not wanting to cause hurt — one character restraining themselves, another offering to leave in peace, a third promising protection. Keywords like protect, heal, threatened, and deserve reinforce a scene of emotional reassurance rather than any romantic or sexual beat. No sexual content is present; the dominant function is verbal comfort and protective pledging.",
-    "scene_summary": "A character vows they never meant to hurt the other and offers to leave or protect them from further pain.",
+    "rationale": "KeyBERT and MMR converge on painful, heal, threatened, protect, insisted, deserve, and caused, pointing to a scene of emotional reassurance and protective vowing. POS nouns (purpose, process, pieces) reinforce a theme of working through damage and intent. All three snippets confirm the beat: a character confronting the pain they may cause and pledging protection or withdrawal.",
+    "scene_summary": "A character insists they never meant to hurt someone and vows to protect them from further harm, even offering to leave if that is what they need.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -4857,7 +4871,8 @@
       "that i’ll only hurt you if i act and do the things i want to do with you.”",
       "i did not mean to hurt you, but if this is what you want, i’ll leave you in peace.”",
       "we’ll make sure no one ever hurts you again.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "45": {
     "label": "Talking About Family Members",
@@ -5180,7 +5195,7 @@
     ]
   },
   "48": {
-    "label": "Starting A War to Protect Her",
+    "label": "Vowing to Fight For Her",
     "keywords": [
       "awhile",
       "worries",
@@ -5201,12 +5216,12 @@
       "historical"
     ],
     "sexual_explicitness": "none",
-    "sexual_function": "consent_boundary",
-    "consent_status": "coercion_watchlist",
+    "sexual_function": "none",
+    "consent_status": "not_applicable",
     "axis_hint": "consent_control_risk",
     "is_noise": false,
-    "rationale": "Snippet 1 anchors the label: a possessive threat to wage war before surrendering the woman to another. Snippet 2 adds a defiant fighting stance, and snippet 3 reinforces a war-haunted context. The coercive, threatening register around possession of a person warrants consent_boundary and coercion_watchlist.",
-    "scene_summary": "A man vows to start a war rather than let a rival take the woman he is guarding.",
+    "rationale": "KeyBERT/MMR anchor on fought, attacked, guarded, worries, contained, council — a field of conflict, protection, and high-stakes confrontation. POS nouns (council, century, measure) and adjectives (enormous, exciting) suggest a broader political or epic-scale struggle. All three snippets converge on a fierce protective vow against an enemy, with snippet 1 ('start a war before I let him have you') best exemplifying the guarded/fought/attacked thread.",
+    "scene_summary": "A character swears he will start a war rather than let a rival take the person he is protecting.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -5278,7 +5293,8 @@
       "i’ll start a war before i let him have you,” he murmured.",
       "i’ll fight you off.” “",
       "i do not believe i’ll ever be free of the war.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "49": {
     "label": "Reassuring Everything Will Be Fine",
@@ -5368,7 +5384,7 @@
     ]
   },
   "50": {
-    "label": "Talking About Having Babies",
+    "label": "Worrying About Pregnancy and Babies",
     "keywords": [
       "pregnant",
       "promising",
@@ -5392,8 +5408,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on pregnancy and infant care: avoiding pregnancy, ante-natal classes and newborns, and remembering how to care for babies. Keywords confirm the theme (pregnant, babies, pregnancy, worries). No romantic or sexual content is present; this is a domestic planning conversation.",
-    "scene_summary": "A couple discusses pregnancy, infant care, and the practical worries of starting or expanding a family together.",
+    "rationale": "KeyBERT, MMR, and POS all converge on pregnancy-related worry: 'pregnant', 'period', 'worries', 'conversations', 'promising', 'notion', 'distraction'. The snippets confirm a shared beat of characters discussing pregnancy prospects and infant care with a mix of anxiety and reassurance. No romantic or sexual content is present; this is a domestic/relational conversation scene.",
+    "scene_summary": "A character voices concerns about pregnancy and the realities of having children, while another offers reassuring promises about managing.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -5466,7 +5482,8 @@
       "i'll try not to get you pregnant.\" \"",
       "you’ll have different priorities, and all these new friends, nice young couples that you met at ante-natal classes who’ll have babies too and understand, or you’ll be too tired because you’ve been up all night—’ ‘actually, we’re going to have one of those babies that aren’t too much trouble.",
       "it’s been a while since i’ve taken care of babies, but i’m sure i’ll remember how.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "51": {
     "label": "Shaking Her Head in Disbelief",
@@ -7287,7 +7304,7 @@
     ]
   },
   "68": {
-    "label": "Threats Hurled Under Pressure",
+    "label": "Hissed Threats Under Pressure",
     "keywords": [
       "poised",
       "threats",
@@ -7311,8 +7328,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters issuing threats and ultimatums — a lawsuit threat dismissed, a man told to 'set others straight,' and a woman screaming threats during labor. Keywords (threats, hissed, glared, tensed, emotionally) confirm a scene of heated verbal conflict under pressure, with no romantic or sexual content.",
-    "scene_summary": "Characters exchange sharp threats and angry words during a high-stakes, emotionally charged confrontation.",
+    "rationale": "KeyBERT and ALL KEYWORDS cohere on emotional volatility and confrontation: cried, glared, hissed, stumbled, tensed, threats, embarrassment. MMR adds poised, hovered, mumbled, reinforcing a tense standoff beat. Snippet 3 best exemplifies the thread — a character hissing a threat under duress — while snippet 1 (forgotten threats, lawsuit) and snippet 2 (setting someone straight) confirm a broader confrontation-under-pressure field.",
+    "scene_summary": "A character hisses threats and curses at someone while under extreme stress, demanding they act before the situation worsens.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -7392,7 +7409,8 @@
       "i’ve forgotten jack and his threats, the lawsuit.",
       "i’ll ask him about it,” [person] said, an edge of roughness to his voice, “and set him and the others straight.",
       "[person] i swear to god i’ll find your gun and shoot you if you don’t move and help me,” i hissed and then another contraction hit, and i screamed, “i hate you, i can’t believe you talked me into doing this again.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "69": {
     "label": "Nodding Eagerly in Agreement",
@@ -8099,7 +8117,7 @@
     ]
   },
   "76": {
-    "label": "Defending His Mother's Honor",
+    "label": "Defending Mother From Insult",
     "keywords": [
       "folks",
       "problems",
@@ -8123,8 +8141,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on a character defending his mother against an insult and threatening physical retaliation, plus a secondary beat of informing her about something. Main keywords (mother, mom, mama) align with snippets. No romantic or sexual content; the emotional core is filial loyalty and confrontation.",
-    "scene_summary": "A son confronts someone who insulted his mother, threatening to fight back while planning to tell her the news.",
+    "rationale": "KeyBERT/MMR/POS converge on affection, disappointment, folks, and admit — a charged family-loyalty register. Snippet 3 is the dominant beat: a son defending his mother's honour with a physical threat. The Main keywords (mother, mom, mama) confirm the family axis without defining the label alone.",
+    "scene_summary": "A character angrily warns someone never to call his mother a name again, threatening to prove what she raised him to be.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -8203,10 +8221,11 @@
       "and once it’s identified, one way or the other, i’ll tell my mother.",
       "then we’ll have a livid mom on our hands.” “",
       "and if you ever call my mother a bitch again, i’ll show you just how much of a man my mother raised me to be all on her own because i will knock you the hell out!”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "77": {
-    "label": "Offering to Help Bury The Body",
+    "label": "Reassuring Promises Under Royal Threat",
     "keywords": [
       "scenario",
       "threats",
@@ -8230,8 +8249,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show darkly humorous loyalty offers ('help you bury the body'), crude royal banter, and a character weighing whether to reveal information to a prince — all set in a historical royal court context. Main keywords (queen, king, prince, throne) confirm the historical/royal setting. No romantic or sexual content is present; the dominant beat is conspiratorial reassurance between characters.",
-    "scene_summary": "A character offers to be an alibi and help cover up a secret while navigating royal court dangers.",
+    "rationale": "KeyBERT and MMR converge on bury, promises, reassuring, threats, resigned, and scenario, pointing to a scene of tense reassurance amid danger. POS keywords (threats, scenario, members, treatment) reinforce a court-politics context, while Main (queen, king, prince, throne, kingdom) confirms a historical/royal setting. Snippet 2 ('help you bury the body') and snippet 3 (informing the prince to avoid worse consequences) ground the keyword thread in a scene of protective promises under pressure.",
+    "scene_summary": "A character offers to cover for another, promising to help bury the truth while navigating threats within a royal court.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -8310,7 +8329,8 @@
       "i’ll call it the queen’s poontang if i want to.” “",
       "i ’ ll happily be your alibi and help you bury the body.",
       "if i let the prince know what is happening, instead of waiting for them to find out, they’ll know i’ve been out on my own."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "78": {
     "label": "Fumbling With Zippers and Buttons",
@@ -9010,7 +9030,7 @@
     ]
   },
   "85": {
-    "label": "Gripped By Sudden Terror",
+    "label": "Overwhelmed By Fear and Dread",
     "keywords": [
       "terrified",
       "fears",
@@ -9034,8 +9054,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on a character experiencing intense fear or terror — of motorcycles, of failure, of justified dread. Keywords reinforce an emotional-fear cluster (terrified, anxious, frantic, desperation) with no romantic or sexual content. Routed to everyday_intimacy_emotional_safety as an emotional-safety scene rather than a romantic or explicit one.",
-    "scene_summary": "A woman is overwhelmed by fear, dreading that something will go terribly wrong around her.",
+    "rationale": "KeyBERT, MMR, and POS all cohere on a fear/anxiety semantic field: terrified, feared, fears, anxiety, anxious, frantic, desperation, tense, emotional. Snippets confirm a character experiencing acute dread — of a sound, of failure, of justified terror — grounding the keyword thread in a concrete emotional scene rather than a physical confrontation.",
+    "scene_summary": "A character is gripped by terror and anxiety, convinced that something she dreads will go terribly wrong.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -9114,7 +9134,8 @@
       "karli was terrified of the sound of motorcycles.",
       "was she right to feel terrified that it would all go wrong?",
       "she had every right to be terrified."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "86": {
     "label": "Talking About Cops Gone Wrong",
@@ -9757,7 +9778,7 @@
     ]
   },
   "92": {
-    "label": "Drawing Blood From A Vein",
+    "label": "Bleeding Wound Needs Attention",
     "keywords": [
       "veins",
       "ribs",
@@ -9781,8 +9802,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show wound assessment, blood-drawing from a vein, and a paranormal blood-sharing context ('she's taken blood from me'). Keywords confirm veins, wound, dripping, heal, and pressure. No sexual content; the paranormal blood-taking detail suggests a vampire or similar subgenre.",
-    "scene_summary": "A character offers to examine injuries while another draws blood from a willing donor's arm.",
+    "rationale": "KeyBERT, MMR, and POS all cohere on a medical-injury field: veins, ribs, wound, dripping, soaked, cracked, heal, pressure. Snippets confirm blood-drawing and wound assessment as the dominant beat. No romantic or sexual content is present; this is a physical injury/triage scene.",
+    "scene_summary": "A character examines another's injury, pressing on veins and assessing cracked ribs while blood drips from the wound.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -9863,10 +9884,11 @@
       "if someone’s bleeding, i’ll take a look at it.",
       "they’ll know she’s taken blood from me.”",
       "i’ll just need to get some of your blood,” he chirped, catching adin’s good arm by the elbow and thumping the veins. “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "93": {
-    "label": "Calling Out Before The Shower",
+    "label": "Announcing A Quick Shower",
     "keywords": [
       "privacy",
       "curtain",
@@ -9887,8 +9909,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets show characters casually announcing their intention to shower before rejoining others, a mundane domestic transition. Keywords like curtain, dripping, and privacy reinforce the shower-routine setting without any romantic or sexual content. This is a procedural everyday-life beat with no intimacy signals.",
-    "scene_summary": "A character announces they are heading to the shower before the group moves on to the next activity.",
+    "rationale": "KeyBERT anchors on curtain, soaked, washed, cleaned, dripping — a bathing/hygiene semantic field confirmed by Main (shower, bath, tub, bathe) and POS nouns (curtain, privacy). All three snippets show a character announcing a shower break before resuming activity, grounding the keyword thread in a mundane transitional beat with no romantic or sexual content.",
+    "scene_summary": "A character tells others they are stepping away to shower before rejoining the group or heading out.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -9955,7 +9977,8 @@
       "i’m gonna shower, then we’ll go.",
       "i’ll grab my shower in the spare bathroom.”",
       "i’ll go down and see what’s going on when i’ve had my shower.’ ‘"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "94": {
     "label": "Demons Witches and Dark Accusations",
@@ -10069,7 +10092,7 @@
     ]
   },
   "95": {
-    "label": "Reminding Someone What They Owe",
+    "label": "Reminding Her What She Will Miss",
     "keywords": [
       "movies",
       "moves",
@@ -10077,7 +10100,7 @@
       "memories",
       "sir"
     ],
-    "content_type": "discourse",
+    "content_type": "scene",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -10086,8 +10109,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets consistently show characters invoking memory and gratitude — one threatens absence as a reminder of their value, another expresses deep thanks for past deeds. Keywords like 'reminding', 'forgetting', and 'memories' reinforce a discourse pattern of recalling obligations and emotional debts. No romantic or physical content is present; this is interpersonal dialogue about remembered contributions.",
-    "scene_summary": "A character reminds another of everything done for them, warning they will be missed once gone.",
+    "rationale": "KeyBERT and MMR converge on memories, forgetting, reminding, repeated, and emotional, pointing to a discourse beat about recalling past contributions or experiences. Snippet 3 best exemplifies the thread — a pointed reminder that absence will trigger appreciation. No romantic or sexual content is present; this is an emotionally charged interpersonal exchange.",
+    "scene_summary": "A character warns someone that after time apart they will remember and appreciate everything that was done for them.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -10153,7 +10176,8 @@
       "i’ll have to remember that.”",
       "i’ll never forget everything you’ve done for me.",
       "after you’ve been on your own for a week or so, maybe you’ll remember all the things i do for you."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "96": {
     "label": "Defending A Man's Worth",
@@ -10364,7 +10388,7 @@
     ]
   },
   "98": {
-    "label": "Knife Threat and Blade Training",
+    "label": "Weapons Training and Combat Threats",
     "keywords": [
       "sized",
       "blows",
@@ -10387,8 +10411,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "consent_control_risk",
     "is_noise": false,
-    "rationale": "Snippets show a direct knife-threat to protect Mrs. Miller, a reference to carrying a sword into battle, and an offer to teach knife use — all centering on bladed weapons and physical threat. Keywords (weapons, knife, sword, blade, dagger) confirm a historical combat/threat register with no romantic or sexual content. axis_hint is consent_control_risk due to the coercive threat in snippet 1.",
-    "scene_summary": "A character issues a deadly knife threat to protect someone, then teaches another how to wield a blade.",
+    "rationale": "KeyBERT/MMR/POS all cohere on a combat-and-weapons field: weapons, pinned, gripped, snatched, smacked, ribs, blows, equipment, crushed. Snippets confirm blade-focused threats and sword/knife instruction, grounding the label in armed confrontation and combat preparation rather than any romantic or sexual content. Main keywords (sword, knife, blade, dagger) reinforce the same field.",
+    "scene_summary": "A character issues a deadly threat with a blade while another is shown how to wield a knife in preparation for battle.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -10469,7 +10493,8 @@
       "if you so much as lay one finger on mrs miller again, i’ll hunt you down and put a knife between your shoulder blades.",
       "honor that you’ll carry into battle along with your sword.",
       "draw your face, then i’ll show you how to use the knife.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "99": {
     "label": "Confessing How Much You Worried",
@@ -10995,7 +11020,7 @@
     ]
   },
   "104": {
-    "label": "Final Honest Conversation",
+    "label": "Blunt Final Honesty",
     "keywords": [
       "dump",
       "promising",
@@ -11017,8 +11042,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets anchor this as a farewell scene where a character requests total honesty, framing it as a final encounter. Keywords like 'realization,' 'options,' and 'promising' support a moment of candid reckoning. No romantic or sexual content is present; the tone is emotionally weighted but non-intimate.",
-    "scene_summary": "A character tells someone this is their last meeting and asks for complete honesty between them.",
+    "rationale": "MMR/POS keywords — fooled, realization, stares, flush, amusement, dump, options — point to a scene of unvarnished confrontation and dawning awareness. The snippet 'this is probably the last time we'll ever meet, so just for once let's be totally honest' anchors the thread as a blunt, final reckoning. Weapons and options in POS suggest stakes are real, reinforcing a tense, no-illusions exchange rather than casual dialogue.",
+    "scene_summary": "A character insists on total honesty in what may be a last meeting, laying out hard truths with grim amusement.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -11084,7 +11109,8 @@
       "jake, this is probably the last time we’ll ever meet, so just for once let’s be totally honest.",
       "jake, you’ll get a copy?” “",
       "we’ll do whatever you advice, jake."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "105": {
     "label": "Confessing Anger Over Lost Time",
@@ -11196,7 +11222,7 @@
     ]
   },
   "106": {
-    "label": "Holding Back Tears",
+    "label": "Tears Spilling Down Her Cheeks",
     "keywords": [
       "utter",
       "dripping",
@@ -11220,8 +11246,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on crying, shedding tears, and emotional distress ('you'll make me cry,' 'shed tears fer my clan'). Keywords confirm sadness, whimpering, and frantic emotion. The historical dialect in snippet 3 suggests a paranormal or historical subgenre context, but the dominant beat is emotional weeping.",
-    "scene_summary": "A character struggles to suppress tears while others around them weep or warn against crying.",
+    "rationale": "KeyBERT and MMR converge on cried, sadness, whimpered, screaming, dripping, frantic, tracks, and shed — a clear field of uncontrolled emotional weeping. POS keywords (inevitable, horrified, frantic, mixture, sadness) reinforce the intensity and involuntary nature of the breakdown. Snippets illustrate the theme lightly (crying, shedding tears, crying foul), but the keyword thread defines the dominant beat of tears spilling in distress.",
+    "scene_summary": "A character breaks down in frantic, uncontrollable sobbing, tears streaming down their face as overwhelming sadness escapes them.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -11303,7 +11329,8 @@
       "you’ll make me cry.” “",
       "they'll also cry foul.",
       "i’ll no’ allow ye to shed tears fer my clan."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "107": {
     "label": "Growl Rising From Partial Shift",
@@ -11932,8 +11959,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on spoken assumptions about survival and uncertain futures ('you assume he'll survive until summer'), supported by keywords like doubted, concerned, and disappointment. The stage07 character_residue flag is overridden because the snippets share a coherent discourse beat of voiced doubt or pessimistic assumption. No romantic or physical content is present.",
-    "scene_summary": "A character voices skeptical doubt about whether someone will live long enough to see a future event.",
+    "rationale": "KeyBERT/MMR cluster around doubt, assumption, concern, and declaration (assume, doubted, concerned, declared, shouted), while POS nouns anchor emotional stakes: disappointment, happiness, distraction, painful. Snippet 2 ('you assume he'll survive until summer') best exemplifies the thread of skeptical assumption about survival or endurance. The stage07 character_residue flag is overridden because the keyword field coheres on a distinct discourse beat of voiced doubt and emotional consequence, not a name artifact.",
+    "scene_summary": "A character voices skeptical doubt about whether someone will last long enough to see a future outcome, met with disappointment or concern.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "name_contaminated_review",
     "stage07_content_type": "",
@@ -11998,10 +12025,11 @@
       "that’ll be it,’ [person] said. ‘",
       "you assume he'll survive until summer,\" [person] said. \"",
       "i’ll assume ian was.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "114": {
-    "label": "Engagement Ring As A Bargaining Chip",
+    "label": "Engagement Ring Used As Leverage",
     "keywords": [
       "sized",
       "scenario",
@@ -12023,8 +12051,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show a ring being used instrumentally — as a bribe, a signal, or a promise — rather than a purely romantic gesture. Snippet 2 explicitly ties an engagement ring to a financial offer, and snippet 3 uses 'ring' as a coded communication signal. Main keywords (ring, engagement, diamond) confirm jewelry is central, but the snippets frame it as transactional or strategic rather than romantic.",
-    "scene_summary": "A character uses the promise of an engagement ring to leverage a deal or signal a commitment to another party.",
+    "rationale": "KeyBERT/MMR/POS converge on promises, threats, scenario, engaged, reminder, and magical — a field of coercive bargaining around a commitment token. The Main keywords (ring, engagement, diamond) confirm the physical object, while snippets 2 and 3 show the ring used instrumentally as leverage or signal rather than romantic gift. The label reflects the shared thread of promises-plus-threats around an engagement ring, not a romantic proposal scene.",
+    "scene_summary": "A character dangles the promise of an engagement ring as bait, offering doubled money to whoever brings the target in.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -12105,7 +12133,8 @@
       "next time we’ll put a ring on him.”",
       "bring her in with an engagement ring, and i’ll double the money i promised.” “",
       "i’ll give you a ring when they’ve gone to let you know the coast’s clear.’"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "115": {
     "label": "Question Asked With Disbelief",
@@ -12731,7 +12760,7 @@
     ]
   },
   "121": {
-    "label": "Voice Breaking Under Strain",
+    "label": "Voice Breaking With Emotion",
     "keywords": [
       "muffled",
       "pathetic",
@@ -12744,7 +12773,7 @@
       "crushed",
       "voices"
     ],
-    "content_type": "discourse",
+    "content_type": "scene",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -12753,8 +12782,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets focus on vocal quality under emotional strain — a cracked voice, muffled authority, and a voice that held steady. Keywords reinforce this: cracked, muffled, trembled, strained, desperation, sadness. No romantic or sexual content is present; this is a discourse-level pattern describing how characters sound when emotionally compromised.",
-    "scene_summary": "A character's voice cracks, trembles, or goes muffled as emotion or distress overtakes their usual composure.",
+    "rationale": "KeyBERT and MMR converge on vocal distress signals — cracked, trembled, muffled, breathlessly, strained, desperation — while POS adds sadness, pathetic, and crushed, all pointing to a scene of emotional vocal breakdown. Snippets confirm the thread: a cracked, low voice lacking authority, a stuttered thank-you, and a voice that hasn't cracked once — all foregrounding the quality of speech under emotional strain. No sexual content is present; this is a discourse-grounded emotional scene.",
+    "scene_summary": "A character's voice cracks and trembles with barely contained desperation as she struggles to speak through sadness.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -12833,7 +12862,8 @@
       "her voice hadn’t cracked once in our conversation.",
       "th-th-thank you,” she got out in a low cracked voice.",
       "his voice was muffled but nonetheless she could detect it was lacking it's usual authority."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "122": {
     "label": "Talking About A Close Friend",
@@ -13262,7 +13292,7 @@
     ]
   },
   "126": {
-    "label": "Planning The Wedding Reception",
+    "label": "Planning An Official Wedding",
     "keywords": [
       "longest",
       "official",
@@ -13286,8 +13316,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on wedding logistics — bands, moving the date up, and planning a reception. Keywords like invitation, planning, announced, and official reinforce a scene of wedding preparation and coordination. No romantic physical content is present; this is practical courtship-milestone planning.",
-    "scene_summary": "Characters discuss moving up the wedding date and planning a reception guests will never forget.",
+    "rationale": "KeyBERT/MMR/POS converge on invitation, planned, announced, official, planning, and resigned, pointing to the formal organization of a wedding event. Main keywords (wedding, bride, ceremony, bridal) confirm the setting. Snippet 3 best exemplifies the thread: a modest ceremony paired with an elaborate planned reception, capturing the official/planning/announced field across all keyword layers.",
+    "scene_summary": "Characters discuss moving up or formalizing their wedding, with one having already planned a reception no one will forget.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -13368,7 +13398,8 @@
       "we’ll only get our wedding bands from here.”",
       "we’ll move the wedding up.",
       "the ‘ceremony’ in boorowa might just be signing a few papers, but carley’s planned a wedding reception they’ll never forget.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "127": {
     "label": "Checking Her Reflection in A Mirror",
@@ -13479,7 +13510,7 @@
     ]
   },
   "128": {
-    "label": "Urge to Run Away",
+    "label": "Urged to Run Before It's Too",
     "keywords": [
       "scenario",
       "instincts",
@@ -13500,8 +13531,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets 1 and 2 anchor the topic in the impulse to flee — one character begging another not to run off, another warning they must escape before being 'claimed.' Snippet 3 and keywords (runs, urge, instincts, movement, poised) reinforce a physical readiness-to-bolt theme. No romantic or sexual content is present; the dominant beat is the tension between staying and running.",
-    "scene_summary": "A character pleads with someone not to flee again, while another warns they will run before being claimed.",
+    "rationale": "KeyBERT/MMR/POS converge on a field of instinctive flight under threat: runs, poised, urge, warned, threatened, instincts, scenario, sidewalk, movement. Snippet 2 best exemplifies this — a charged warning that the window to escape is closing. The topic is a tense flight-or-stay beat with no romantic or sexual content.",
+    "scene_summary": "A character warns another that if they do not flee immediately, something irreversible will happen to them.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -13570,17 +13601,18 @@
       "promise me you’ll never run off like that again.",
       "you didn’t mean to, but...if you don’t run right now, i’ll lay claim to you.",
       "i’ll also push a car and run a zillion quick starts."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "129": {
-    "label": "Threatening to Ruin Your Name",
+    "label": "Threatening to Ruin A Name",
     "keywords": [
       "official",
       "pathetic",
       "curtain",
       "actual"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -13589,8 +13621,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on reputation and naming: running names past others, becoming a household name, and threatening to blacken someone's name. The dominant beat is a social or reputational threat involving a person's name and standing. No romantic or sexual content is present; the scene is a tense verbal exchange about reputation.",
-    "scene_summary": "A character threatens to blacken someone's name while others discuss running names past the group first.",
+    "rationale": "MMR keywords official, pathetic, address, responded, repeated, concerned, admit point to a discourse of reputation and social standing. The Main cluster (name, names, real, last, first) anchors the topic to naming and identity. Snippet 3 ('I'll blacken your name') is the clearest exemplar of the threat-to-reputation thread, supported by snippet 2's 'household name' framing.",
+    "scene_summary": "A character warns another that they will blacken or destroy their reputation by spreading their name in a damaging way.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -13643,10 +13675,11 @@
       "but i'll run the names past you guys first.” “",
       "then you’ll definitely be a household name, won’t you?”",
       "i’ll blacken your name."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "130": {
-    "label": "Cold House and The Thermostat",
+    "label": "Longing For Warmth in The Cold",
     "keywords": [
       "welcoming",
       "result",
@@ -13668,8 +13701,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets centre on physical cold and warmth in a domestic setting — a thermostat on a landing, wondering when warmth will return, and reassurance that it will warm up quickly. Keywords (warmth, heated, warming, damp, welcoming) reinforce a practical, non-romantic exchange about temperature in a shared or unfamiliar dwelling. No sexual or romantic content is present.",
-    "scene_summary": "A character warns a newcomer about the thermostat on the landing and how quickly the place turns freezing cold.",
+    "rationale": "KeyBERT, MMR, and POS all cohere around physical temperature sensation — warmth, heated, warming, warmed, damp — with nerves and screaming adding an edge of discomfort. Snippets confirm a literal cold-environment scene involving a malfunctioning thermostat and a character longing for warmth. No romantic or sexual content is present; this is a grounded environmental/comfort scene.",
+    "scene_summary": "A character shivers in a cold space and wonders aloud when they will feel warm again, while another explains the temperamental heating system.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -13744,7 +13777,8 @@
       "as for the heating, turn it down if you wish, the thermostat is on the landing i’ll tell you now though, as soon as you do the place turns into an ice cube.",
       "i wonder when i’ll be warm again.",
       "it'll warm up quickly.\""
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "131": {
     "label": "Mumbled Apology With Awkward Pause",
@@ -14248,7 +14282,7 @@
     ]
   },
   "136": {
-    "label": "Offering A Ride Home",
+    "label": "Offering to Take Her Home",
     "keywords": [
       "meantime",
       "slightest",
@@ -14258,7 +14292,7 @@
       "upset",
       "usual"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [
@@ -14269,8 +14303,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around the act of taking someone home — offering a ride, confirming the offer, and promising a quick return. Keywords like 'shortly,' 'meantime,' and 'upset' reinforce a low-stakes, caring domestic exchange with no romantic or sexual content. The label 'Offering A Ride Home' already exists in the dataset, so the closest distinct variant capturing the same beat is used.",
-    "scene_summary": "A character offers to drive someone home, reassuring them they will return soon.",
+    "rationale": "MMR/POS keywords (meantime, shortly, properly, upset, decent, usual) suggest a transitional, reassuring exchange rather than a dramatic scene beat. All three snippets converge on the same discourse pattern: offering or promising a return home, with mild emotional reassurance. The label anchors to the dominant visible action across snippets while the keyword thread confirms a low-stakes, transitional tone.",
+    "scene_summary": "A character offers to escort someone home, reassuring them they want to help and will return soon.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -14334,10 +14368,11 @@
       "i'll take you home if you really want me to, but i'd feel a lot better knowing i could help.",
       "so you’ll take me home?”",
       "i’ll be home soon, stinker."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "137": {
-    "label": "Claiming You As Mine",
+    "label": "Claiming Her As His Own",
     "keywords": [
       "limits",
       "quality",
@@ -14351,12 +14386,12 @@
       "paranormal"
     ],
     "sexual_explicitness": "none",
-    "sexual_function": "nonsexual_affection",
-    "consent_status": "consensual_implied",
+    "sexual_function": "none",
+    "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippet 3 anchors the label with an explicit possessive declaration across supernatural beings, signaling a paranormal subgenre context. Snippet 2 reinforces the emotional commitment — sharing a home and a future — while snippet 1 adds a quiet certainty. The tone is romantic and declarative rather than sexual, placing this in nonsexual_affection territory.",
-    "scene_summary": "A man declares his partner is his and vows to tell every person, shifter, and witch that she belongs to him.",
+    "rationale": "MMR/POS keywords (limits, willing, worried, intend, prove) suggest a character asserting boundaries and intent; snippets 2 and 3 anchor the thread in a possessive declaration of belonging and shared future. The 'mine/yours/share' cluster in Main reinforces the claiming-commitment beat visible in snippet 3's explicit 'you're mine' declaration across supernatural and human witnesses.",
+    "scene_summary": "A man declares possessive commitment, telling anyone who will listen that she belongs to him and he wants to share his life with her.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -14409,10 +14444,11 @@
       "i’ll always know,” he said.",
       "because i can go home, and no one can take it from me, but i only really want that now if you’ll share it with me.”",
       "and i’ll tell any man, woman, shifter, hybrid, or witch that you’re mine."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "138": {
-    "label": "Offering to Buy Condoms",
+    "label": "Scrambling to Find A Condom",
     "keywords": [
       "inevitable",
       "shout",
@@ -14430,13 +14466,13 @@
     "subgenre_hints": [
       "contemporary"
     ],
-    "sexual_explicitness": "suggestive",
+    "sexual_explicitness": "explicit",
     "sexual_function": "contraception_preparation",
     "consent_status": "consensual_implied",
     "axis_hint": "sexual_tension_explicit_intimacy",
     "is_noise": false,
-    "rationale": "All three snippets centre on condoms being absent, offered, or negotiated before sex, confirming contraception preparation as the dominant function. The winking aside and casual offer ('I'll buy them for you') signal a consensual, lightly humorous exchange. Main keywords (condom, lube, drawer) align with the snippets and reinforce the contraception-preparation classification.",
-    "scene_summary": "A character offers to buy condoms for another, acknowledging neither has any on hand right now.",
+    "rationale": "KeyBERT anchors on 'popped' and 'purse', while MMR adds 'fumbled', 'dug', 'scooted', and 'strained' — all physical searching/rummaging actions; POS supplies 'purse' as the container noun. Main keywords (condom, lube, drawer, nightstand) confirm contraception preparation. All three snippets show characters negotiating condom availability, grounding the label in that beat.",
+    "scene_summary": "A character admits they have no condoms on hand and offers to buy some, prompting a wry exchange about being prepared.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -14505,7 +14541,8 @@
       "it only takes a condom, hon, and i'll buy them for you if you need me to—\" \"i am!",
       "well then we’ll just have to get in condoms now, won’t we?’",
       "i don’t have any condoms on me, sorry,” i say giving her a wink, hoping it’ll lower the blow."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "139": {
     "label": "Desperate Vow to Save Him",
@@ -14799,7 +14836,7 @@
     ]
   },
   "142": {
-    "label": "Giving Blessing to A Union",
+    "label": "Grudging Forgiveness After Annoyance",
     "keywords": [
       "session",
       "annoying",
@@ -14812,7 +14849,7 @@
       "ability",
       "bigger"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [
@@ -14824,8 +14861,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippet 2 anchors the topic clearly: a parental or authority figure offers a blessing for a union with a named suitor, conditional on love. Snippet 1 adds a secrecy beat, and snippet 3 suggests someone is expected to explain themselves. Keywords like 'forgive', 'instincts', 'annoyance', and 'disappointment' reinforce a charged but non-sexual interpersonal negotiation around a relationship decision.",
-    "scene_summary": "A figure grants approval for a marriage, urging others to forgive and keep the matter quiet.",
+    "rationale": "KeyBERT/MMR/POS converge on an internal emotional register: annoyance, disappointment, instincts, forgive, dealt, session, distraction — signalling a character processing irritation and deciding whether to let something go. Snippets are thin scheduling/blessing lines that do not override this broader keyword thread. The label reflects the dominant field of grudging tolerance and forgiveness rather than any single snippet's literal content.",
+    "scene_summary": "A character reflects on frustration and disappointment, weighing whether to forgive or overlook an irritating situation before moving on.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -14904,7 +14941,8 @@
       "and we’ll never mention it to nick.",
       "if love is your aim for a marriage partner, i’ll give my blessing to your union with simon should it come to that.",
       "she’ll be back,” [person] to explain."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "143": {
     "label": "Joking Around With The Director",
@@ -15121,7 +15159,7 @@
     ]
   },
   "145": {
-    "label": "Mulling Over A Decision",
+    "label": "Weighing Uncertain Instincts",
     "keywords": [
       "unlikely",
       "suffering",
@@ -15143,8 +15181,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters deferring judgment ('I'll think on it', 'I'll definitely give it some thought') and reflecting on an instinctive pull toward another person. Keywords like instincts, unsure, decide, and guarded reinforce a theme of cautious deliberation rather than any romantic or physical action. No sexual content is present; the dominant beat is internal weighing of a choice.",
-    "scene_summary": "A character pauses to consider a suggestion, admitting uncertainty while trusting their instincts about someone.",
+    "rationale": "KeyBERT and MMR converge on internal deliberation: instincts, assume, realise, decide, unsure, admit, guarded, fears, warned — all pointing to a character wrestling with doubt and self-persuasion. POS keywords (unlikely, direct, percent) reinforce a rationalising, hedging register rather than any physical scene. Snippet 3 best exemplifies this thread — a character acknowledging they are finding excuses to trust an instinct they cannot explain.",
+    "scene_summary": "A character mulls over an unlikely situation, admitting to themselves that something unexplained draws them toward a decision they cannot fully justify.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -15226,10 +15264,11 @@
       "i’ll think on it, [person].",
       "i’ll definitely give it some thought,” [person] said. “",
       "i know they say if you want something bad enough you’ll find any excuse to believe it’s true… but there was something in alex that called to me."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "146": {
-    "label": "Keeping Them Apart Tonight",
+    "label": "Issuing Instructions With Authority",
     "keywords": [
       "unlikely",
       "instructions",
@@ -15241,7 +15280,7 @@
       "practice",
       "threat"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [
@@ -15252,8 +15291,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippet 2 anchors the topic: a third party humorously threatens to keep two people apart in separate sleeping arrangements, anticipating mutual crankiness. Snippets 1 and 3 add light workplace-adjacent dialogue about being informed first and setting someone up in an office. No romantic or sexual content is present; the dominant beat is a playful logistical standoff over sleeping arrangements.",
-    "scene_summary": "A host jokes about separating two people for the night, predicting they will both wake up cranky and blame her.",
+    "rationale": "KeyBERT/MMR/POS cohere around authority and instruction: 'sir', 'instructed', 'instructions', 'reminding', 'practice', 'threat', 'focused', 'dealing' — a discourse pattern of directive speech and compliance. Snippets are thin scheduling glue ('I'll set you up', 'you'll be the first to know') that confirm a directive register without adding a concrete scene beat. Stage07 character_residue flag is overridden because the keyword thread is clearly a discourse pattern of authoritative instruction, not a name cluster.",
+    "scene_summary": "A figure in a position of authority gives directions to others, reminding them of expectations while they worry about unlikely outcomes.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "name_contaminated_review",
     "stage07_content_type": "",
@@ -15322,7 +15361,8 @@
       "when you’re through, i’ll set you up in lydia’s office.”",
       "because then [person] will have to suffer in that big bed all alone, and you’ll both wake up cranky because i kept you a whole ten feet apart for a few hours, and i’ll have no one to blame but myself.",
       "and trust me, [person], you’ll be the first to know.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "147": {
     "label": "Formal Introduction Under Difficult Circumstances",
@@ -15532,7 +15572,7 @@
     ]
   },
   "149": {
-    "label": "Offering to Clean Up",
+    "label": "Cleaning Up After A Mess",
     "keywords": [
       "dump",
       "meantime",
@@ -15554,8 +15594,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets share the same beat: someone offering to get something or someone cleaned up, whether paying for cleaning, helping a person tidy up, or cleaning oneself. Keywords like 'cleaned', 'wipe', and 'dump' reinforce a practical tidying-up scene with no romantic or sexual content.",
-    "scene_summary": "A character offers to pay or help clean up a mess, while others prepare to freshen themselves.",
+    "rationale": "KeyBERT anchors on cleaned/wipe/dump/paying, MMR adds suitcase/limits/session/tables, and POS supplies nouns like items and suitcase alongside adjectives pathetic/horrified — together pointing to a practical tidying-up scene with some emotional weight. All three snippets confirm a character arranging to clean up a person or space. No romantic or sexual content is present; this is a mundane transitional scene beat.",
+    "scene_summary": "A character promises to get cleaned up or have something cleaned, managing a messy situation before moving on.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -15625,7 +15665,8 @@
       "i’ll pay to have it cleaned.” “",
       "i'll get her cleaned up,\" said a handsome groom, taking her arm. \"",
       "i’ll get cleaned up here as soon as i can."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "150": {
     "label": "Heart Skips A Beat",
@@ -16373,7 +16414,7 @@
     ]
   },
   "159": {
-    "label": "Tea and Coffee Rituals",
+    "label": "Tea and Coffee Ritual",
     "keywords": [
       "success",
       "upset",
@@ -16393,8 +16434,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on tea invitations and a grief-laden memory of a father drinking coffee in the kitchen, establishing a domestic comfort-and-loss theme. Main keywords (coffee, tea, cup, pot) reinforce the beverage-ritual setting. No romantic or sexual content is present; the emotional register is quiet grief and everyday domesticity.",
-    "scene_summary": "A character reflects on everyday domestic rituals — tea, coffee, the kitchen — tinged with grief over a lost family member.",
+    "rationale": "POS nouns (sir, lady, success) and MMR terms (warming, drifted, mentioned, upset, lowered) suggest a gentle domestic scene with emotional undercurrent. Main keywords (tea, coffee, cup, pot) anchor the setting firmly in a kitchen or sitting-room ritual. Snippet 3 — missing a father's coffee-and-newspaper habit — best captures the nostalgic, emotionally warm tone that the keyword thread (warming, drifted, upset, usual) collectively signals.",
+    "scene_summary": "A character reflects on the familiar domestic routine of tea and coffee, tinged with loss or nostalgia for a loved one.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -16455,10 +16496,11 @@
       "you’ll be back for tea?” “",
       "maybe just a quick spell , and then we’ll have some tea.”",
       "i’ll never again walk into the kitchen and see my dad drinking coffee and reading the paper."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "160": {
-    "label": "Plotting Around A Troublesome Person",
+    "label": "Weighing An Inevitable Scenario",
     "keywords": [
       "longest",
       "balanced",
@@ -16483,8 +16525,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show tactical discussion about using a problematic individual as bait to expose accomplices, alongside casual domestic asides about handling chores and frustration with a third party. Keywords like scenario, inevitable, partners, and exchange reinforce a planning or strategy conversation. The stage07 character-residue flag is overridden because snippets clearly show a shared narrative beat of scheming around a difficult person.",
-    "scene_summary": "Characters discuss a plan to use a known thorn-in-the-side figure to draw out hidden accomplices.",
+    "rationale": "KeyBERT/MMR/POS converge on deliberative, strategic discourse: scenario, inevitable, balanced, equal, partners, realization, explaining, exchange — suggesting characters reasoning through a difficult situation together. Snippet 1 best exemplifies this thread, with characters calculating likely outcomes involving accomplices. The stage07 character_residue flag is overridden because the keyword field coheres on strategic deliberation rather than name-sharing alone.",
+    "scene_summary": "Characters debate a tense, unavoidable situation, reasoning through who is involved and what the likely outcome will be.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "name_contaminated_review",
     "stage07_content_type": "",
@@ -16566,7 +16608,8 @@
       "but we have a gut feeling that since [person]’s been such a thorn in the side of these people, if they think they’re going to get him, he’ll pull in the other accomplices.",
       "i think maybe we’ll let connor handle the stuffing.”",
       "i’ll be stuck with fucking patrick."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "161": {
     "label": "Longing to Kiss Her Plump Mouth",
@@ -17171,7 +17214,7 @@
     ]
   },
   "167": {
-    "label": "Joking About A Missing Cat",
+    "label": "Worried About A Missing Cat",
     "keywords": [
       "unlikely",
       "addition",
@@ -17196,8 +17239,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around cats and kittens — a missing 'kitty,' a cat named Callie having kittens, and a 'cat lady kit' — framed with light humour and reassurance. Main keywords (cat, kitten, kitty, shifters) confirm the feline thread; 'shifters' hints at a paranormal context where cats may be shapeshifters, but the visible scene beat is the comedic concern over a missing cat. No romantic or sexual content is present.",
-    "scene_summary": "Characters joke and reassure one another that a missing cat will turn up safe, lightening a worried moment.",
+    "rationale": "KeyBERT/MMR keywords (concerned, shock, unhappy, curiosity, glimpse, wound, pathetic, unusual) point to an emotionally charged but lighthearted worry scene; POS adjectives (unlikely, pathetic, unhappy, unusual) reinforce anxious uncertainty. Main keywords (cat, kitten, kitty, feline, shifters) and all three snippets converge on concern over a missing or distressed cat. The dominant beat is characters reassuring each other about a missing feline, with a touch of wry humor.",
+    "scene_summary": "Characters express concern and dark humor about a missing cat, reassuring each other it will turn up safe.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -17267,10 +17310,11 @@
       "that kitty will turn up safe and well and we’ll all look back on this and have a good laugh.",
       "i’ll bet he was upset when callie had kittens.",
       "but just in case, i’ll send you a cat lady [person]-up kit.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "168": {
-    "label": "Settling Near The Ranch Land",
+    "label": "Negotiating Ranch Land and Settlement",
     "keywords": [
       "regular",
       "suggestion",
@@ -17295,8 +17339,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on deciding where to settle — near a land grant, at Rancho Diablo, or staying at the ranch longer. Main keywords (ranch, cattle, land, farmer) reinforce a rural land-and-home planning scene. No romantic or sexual content is present; this is a practical domestic negotiation about property and residence.",
-    "scene_summary": "Characters discuss where to live, weighing cattle land, a land grant, and the family ranch as their future home.",
+    "rationale": "KeyBERT/MMR/POS keywords — invitation, permission, guarantee, equipment, folks, suggestion, assured, willing — point to a practical negotiation about living arrangements and land use. Main keywords (ranch, farm, cattle, land, farmers) confirm a rural settlement context. All three snippets anchor the scene at a ranch or land grant, with characters deciding where to live and how long to stay.",
+    "scene_summary": "Characters discuss where they will live and work, weighing land grants, cattle ranches, and permission to stay on the property.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -17376,17 +17420,18 @@
       "we’ll find some good cattle land near my land grant.” “",
       "it means we’ll all live here, or at rancho diablo, wherever you want to be.",
       "that means we’ll have to stay at the ranch longer.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "169": {
-    "label": "Making Plans to Meet Up",
+    "label": "Scheduling A Time and Place",
     "keywords": [
       "scenario",
       "uncertain",
       "address",
       "worst"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [
@@ -17397,8 +17442,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets show characters coordinating meeting times and locations — Westport at noon, a pickup at seven, offering a hand in a moment. Main keywords (minutes, five, twenty, thirty) reinforce time-scheduling discourse. No romantic or sexual content is present; this is practical logistical coordination.",
-    "scene_summary": "A character arranges a specific time and place to meet someone, confirming pickup or arrival details.",
+    "rationale": "KeyBERT/MMR/POS cohere around uncertainty and scenario-planning (scenario, uncertain, address, worst, ticked, ok), suggesting tentative logistical coordination rather than a charged scene. Snippets confirm this: all three show characters proposing specific times and pickup points in casual shorthand. Main keywords (minutes, five, twenty, thirty) reinforce a time-scheduling discourse pattern.",
+    "scene_summary": "A character proposes a specific time and location to meet, navigating uncertain logistics with brief, casual exchanges.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -17458,10 +17503,11 @@
       "i’ll see you in westport around twelve.” “",
       "i’ll give you a hand in just a sec.” “",
       "aspen, i’ll pick you up tonight at seven."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "170": {
-    "label": "Joking About A Dirty Secret",
+    "label": "Guarding A Hidden Secret",
     "keywords": [
       "ability",
       "curiosity",
@@ -17485,8 +17531,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around secrets — joking about being a 'dirty little secret,' probing for at least one secret to uncover, and leaving a secret for someone else to reveal. Keywords like guarded, confessed, hiding, and reveal reinforce a theme of withheld personal information rather than any romantic or sexual content.",
-    "scene_summary": "A character jokes about being someone's dirty secret while others guard or slowly reveal hidden truths.",
+    "rationale": "KeyBERT/MMR/POS converge on a field of concealment and guarded disclosure: reveal, hiding, confessed, guarded, bury, memories, protect, nerves. The snippets confirm a scene where secrets are acknowledged but deliberately withheld or only partially shared. No romantic-physical or sexual content is present; the topic is about emotional guardedness and the negotiation of what to reveal.",
+    "scene_summary": "A character playfully offers to be someone's dirty little secret while hinting that deeper truths remain carefully buried.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "nan",
     "stage07_content_type": "",
@@ -17564,10 +17610,11 @@
       "i’ll be your dirty little secret,” i joked.",
       "only tonight and as such i don’t expect to uncover all your secrets, but i’ll be happy if we unearth at least one.",
       "i’ll leave that secret for him to reveal."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "171": {
-    "label": "Flowers Offered As A Gift",
+    "label": "Flowers Presented As A Gift",
     "keywords": [
       "stunning",
       "sized",
@@ -17591,8 +17638,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets centre on flowers as a social and romantic gesture — holding them guiltily, managing flower budgets, and being urged to 'snap up this flowers girl.' Main keywords (roses, bouquet, daisies) confirm the floral theme. No sexual content is present; the scene functions as light courtship encouragement.",
-    "scene_summary": "A character holds a bouquet guiltily while another urges someone to pursue the flower girl before losing her.",
+    "rationale": "KeyBERT/MMR/POS converge on a scene of arranged or presented flowers — 'stunning,' 'delicate,' 'tables,' 'presented,' 'draped,' 'scattered' — suggesting a floral display or gift moment. Main keywords (flowers, roses, bouquet, vase) reinforce this directly. Snippet 1 best grounds the beat: a character holding flowers and feeling the weight of a romantic invitation.",
+    "scene_summary": "A character holds a bouquet of flowers, guiltily weighing whether to accept them as part of a romantic offer.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -17674,7 +17721,8 @@
       "then i look at the flowers i’m holding guiltily, as if i’ve already accepted his offer to go to new york.",
       "i’m sure i’ll find some more – and with owen’s research the flowers are now coming in under budget so there’s still a bit of cash to play with.’",
       "if you don’t snap up this flowers girl as fast as you can, i’ll call you seven times a fool, sir.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "172": {
     "label": "Told to Come Back Home",
@@ -18744,7 +18792,7 @@
     ]
   },
   "183": {
-    "label": "Promising to Make It Work",
+    "label": "Disappointed Attempt to Make It Work",
     "keywords": [
       "dump",
       "partners",
@@ -18761,8 +18809,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on verbal reassurance about a plan or situation working out, with an offer of support if it does not. Keywords like 'disappointment', 'partners', and 'attempt' reinforce a tone of cautious optimism and mutual support. No romantic or sexual content is present; this is supportive dialogue discourse.",
-    "scene_summary": "A character reassures another that things will work out and offers help if plans change.",
+    "rationale": "KeyBERT/MMR/POS cohere around disappointment, failed or strained partnerships, and a reluctant attempt to persist (dump, partners, disappointment, attempt, appreciate, sadly, mumbled). Snippets show resigned, accommodating speech ('I'll make it work', 'I'll help you with whatever you need') that grounds the keyword thread in a discourse beat of low-affect perseverance. No romantic or physical content is present, so sexual fields are none.",
+    "scene_summary": "A character mumbles a resigned offer to help make things work despite underlying disappointment about the partnership.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -18817,10 +18865,11 @@
       "i’ll make it work, though.",
       "i think it'll work out how you want it to.",
       "if it doesn’t work out, or if you want something different, i’ll help you with whatever you need."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "184": {
-    "label": "Snapping Photos at An Event",
+    "label": "Official Photographer at The Event",
     "keywords": [
       "official",
       "arguing",
@@ -18844,8 +18893,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around photography: sending an after photo, waiting for someone to get the picture, and being the official photographer too busy to sit down. Main keywords (photo, camera, photographer) confirm the shared thread. No romantic or sexual content is present.",
-    "scene_summary": "A character jokes about being the official photographer and promises to send someone an after photo.",
+    "rationale": "KeyBERT/MMR/POS converge on equipment, official, screen, gathered, task, folks, and tv — pointing to an event or gathering where photography is a focal activity. Main keywords (pictures, photographer, photo, camera) confirm the photographic thread. Snippet 3 anchors the label with the 'official photographer' line, while snippets 1 and 2 reinforce the photo-sharing and picture-taking beat.",
+    "scene_summary": "A character jokes about being the official photographer and never getting to sit down while capturing images at a gathering.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -18928,7 +18977,8 @@
       "i’ll send you an after photo.",
       "he ’ll get the picture soon enough,” i say hopeful. “",
       "since i’m the official photographer, i’ll probably never get to sit down.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "186": {
     "label": "Joking About A Run of Bad",
@@ -19015,7 +19065,7 @@
     ]
   },
   "187": {
-    "label": "Trading Forgiveness For Past Wrongs",
+    "label": "Asking For Forgiveness",
     "keywords": [
       "spite",
       "treatment",
@@ -19037,8 +19087,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on the act of forgiving or being forgiven, with the third showing an explicit reciprocal exchange ('I'll forgive you for summer if you forgive me for kabir'). Keywords confirm the theme: forgive, confessed, fault, spite, emotions. No romantic or sexual content is present; this is an emotional reconciliation exchange.",
-    "scene_summary": "Two characters negotiate mutual forgiveness, each offering to pardon the other's past mistakes in exchange for their own.",
+    "rationale": "KeyBERT, MMR, and ALL KEYWORDS cohere strongly around forgive, confessed, hesitate, spite, fault, and emotions — a scene of emotional reckoning and plea for pardon. POS nouns (treatment, permission, purpose, emotions) reinforce the interpersonal negotiation of blame and absolution. All three snippets confirm the mutual-forgiveness beat, with snippet 3 most vividly exemplifying the exchange of conditional pardons.",
+    "scene_summary": "Two characters negotiate mutual forgiveness, each confessing past wrongs and hesitating before offering pardon.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -19112,7 +19162,8 @@
       "i suppose i’ll have to forgive her, though.",
       "whatever happens, you’ll never forgive me for it.",
       "okay, how’s this — i’ll forgive you for summer if you forgive me for kabir.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "188": {
     "label": "Eyes Grow Deadly Serious",
@@ -19435,13 +19486,13 @@
     ]
   },
   "192": {
-    "label": "Running Terribly Late Again",
+    "label": "Shouted Warning About Being Late",
     "keywords": [
       "threats",
       "reaction",
       "sir"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -19450,8 +19501,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around lateness — being late, making others late, or threatening to act before someone arrives too late. The MMR keyword 'terribly' reinforces the comedic exasperation register. No romantic or sexual content is present; this is light banter around tardiness.",
-    "scene_summary": "A character jokes and frets about being late, trading barbs with someone waiting on them.",
+    "rationale": "MMR/POS keywords — terribly, threats, shouted, reaction, sir — point to a scene of vocal urgency or mild threat around lateness. The snippets all converge on the 'late' theme, with snippet 3 ('you'll make us terribly late!') best exemplifying the shouted-warning beat. The topic is discourse-adjacent but has a visible scene beat grounded in the snippets.",
+    "scene_summary": "A character shouts or threatens with urgency as someone risks making them terribly late.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -19503,7 +19554,8 @@
       "i’ll need to be late?”",
       "or maybe i’ll just finish myself off right now, and you’ll be too late to the game, pal.”",
       "you’ll make us terribly late!” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "193": {
     "label": "Shrugging Off What Matters",
@@ -21237,7 +21289,7 @@
     ]
   },
   "210": {
-    "label": "Choosing Sex Over Going Home Alone",
+    "label": "Choosing Sex Without Love",
     "keywords": [
       "inevitable",
       "issue",
@@ -21258,8 +21310,8 @@
     "consent_status": "consensual_implied",
     "axis_hint": "sexual_tension_explicit_intimacy",
     "is_noise": false,
-    "rationale": "Snippet 2 is the anchor: the speaker explicitly weighs sex without emotional attachment against going home alone and chooses sex. Snippet 1 reinforces a post-sex reflection on quality without deeper commitment, and snippet 3 adds a conditional willingness to make love. Together these define a sex-without-commitment deliberation, not a coercive or explicit-contact scene.",
-    "scene_summary": "A character admits they would rather have sex without love or commitment than spend the night alone.",
+    "rationale": "KeyBERT/MMR/POS keywords — willing, inevitable, possibility, ability, difference, concerned, involved — cohere around a deliberate weighing of options regarding sexual willingness without emotional prerequisites. Snippet 2 is the clearest anchor: a character explicitly chooses sex without love or friendship over going home alone, matching the sex_without_commitment function. Snippet 3 adds the 'willing but conditional' nuance that aligns with the inevitable/willing/issue keyword thread.",
+    "scene_summary": "A character openly weighs the possibility of sex without love or commitment, deciding the physical connection is worth having even without emotional depth.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -21320,7 +21372,8 @@
       "it wasn’t just the sex, though you’re still the best i’ve ever had.”",
       "i’d rather there was love and friendship and commitment behind it, but if it’s a choice between sex without that stuff, or going home alone, i’ll take the sex, thank you.",
       "i want very much to make love to you, but i'll be damned if i'll do it in a horror of a room like this."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "211": {
     "label": "Heartfelt Thanks For Everything Done",
@@ -21497,7 +21550,7 @@
     ]
   },
   "213": {
-    "label": "Weighing A Slim Menu of Options",
+    "label": "Weighing A Disappointing Set of Options",
     "keywords": [
       "suitcase",
       "reassuring",
@@ -21521,8 +21574,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show a character humorously cataloguing her limited romantic prospects and concluding that one man is the best available option. Keywords like choices, options, decision, and disappointment reinforce the deliberation beat. No romantic physical contact is present; the scene is comedic internal monologue about courtship choices.",
-    "scene_summary": "A woman mentally reviews her unappealing romantic options and settles reluctantly on the least bad choice.",
+    "rationale": "KeyBERT/MMR/POS converge on deliberation and emotional disappointment: choices, options, decision, hesitate, begging, disappointment, reassuring, cracked. Snippet 1 literalizes this as a sardonic internal inventory of romantic options, while snippet 2 adds the emotional stakes of hoping someone will stay. The suitcase and partners nouns suggest a departure or relationship crossroads framing the decision.",
+    "scene_summary": "A character surveys her limited romantic choices and reluctantly concludes that one imperfect option is still the best available.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -21604,7 +21657,8 @@
       "because my only other options for action of any kind appeared to be as follows: 1) hold out hope for a performance from [person] 2) order up a sample of wolf’s french fry 3) issue a catfight throw-down versus [person] for the highly desirable vic burrows 4) pretend i had a chance in hell with sexy sebastian from north carolina (who thought i was a closed-off bitch) looking at my menu of choices, it appeared that hunter was easily the best option [person] had to offer.",
       "i’ll fully support hunter in his decision, but i’ll secretly hope, pray, light candles at church, and offer up a virgin sacrifice, if only he’ll stay here with me.",
       "i tell hunter i’ll see him later."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "214": {
     "label": "Heaving A Heavy Sigh",
@@ -21695,7 +21749,7 @@
     ]
   },
   "215": {
-    "label": "Stepping in to Stop A Mistake",
+    "label": "Guarded Reaction to Embarrassing Reveal",
     "keywords": [
       "unlikely",
       "potential",
@@ -21717,8 +21771,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show reassurance ('i'll be okay'), a candid comparison between two people, and an urgent attempt to stop someone from a regrettable action. Keywords like 'concerned', 'guarded', 'planning', and 'embarrassment' reinforce a scene of interpersonal intervention and worry. No romantic or sexual content is present; the dominant beat is protective intervention.",
-    "scene_summary": "A character reassures a worried friend while another tries to prevent someone from doing something he will regret.",
+    "rationale": "KeyBERT and MMR converge on embarrassment, guarded, shock, concerned, reveal, and acknowledge, pointing to a scene of defensive emotional reaction to an uncomfortable disclosure. POS keywords (problems, answers, screen, potential) reinforce a context of confronting difficult information. Snippet 3 ('stop him from doing something he'll regret') best exemplifies the guarded, concerned tone, while snippet 2 hints at an ex-related awkwardness that aligns with the 'reveal/ex' thread.",
+    "scene_summary": "A character reacts with shock and guarded concern as an awkward truth about an ex or past situation is reluctantly acknowledged.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -21790,7 +21844,8 @@
       "ryan, i’ll be okay.",
       "i really like ryan, but i’ll have to say, he and i are like night and day.",
       "i have to stop [person] from doing something he’ll regret."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "216": {
     "label": "Confessing A Shattered Heart",
@@ -22573,7 +22628,7 @@
     ]
   },
   "225": {
-    "label": "Calling Ahead Before Arriving",
+    "label": "Weighing Plans and Promises",
     "keywords": [
       "longest",
       "partners",
@@ -22598,8 +22653,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show logistical coordination — calling Nathan to announce arrival and arranging a child's whereabouts — with no romantic or sexual content. Keywords like 'invitation', 'planned', and 'promising' support a scene of practical social arrangement. Stage07 character-residue flag is overridden because snippets reveal a coherent coordination beat, not mere name clustering.",
-    "scene_summary": "A character phones to say they are heading over, while another arranges for her son to be elsewhere for the evening.",
+    "rationale": "KeyBERT/MMR/POS converge on a field of deliberation and emotional reckoning: dared, planned, promising, curiosity, invitation, realization, emotional, partners. The keywords suggest a moment of weighing commitments and expectations rather than any single action. Snippet 1 best grounds this — one character recognising another's broken plans and promises — while the pregnancy and meal terms hint at domestic stakes without shifting the dominant thread.",
+    "scene_summary": "A character reflects on another's intentions and promises while quietly considering the emotional weight of their shared arrangements.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -22675,7 +22730,8 @@
       "he had no doubts that kale had planned on enjoying the full moon tonight before taking that ever elusive break he was always promising himself and probably needed desperately, but logan didn’t care.",
       "i’ll call nathan, and let him know we’re heading over.”",
       "i have a son, nathan, but i’ve arranged for him to go to his friend’s in the village after school.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "226": {
     "label": "Confronting Mismatched Expectations",
@@ -23387,7 +23443,7 @@
     ]
   },
   "233": {
-    "label": "Desperate Fear of Losing Everything",
+    "label": "Admitting They Cannot Afford to Lose",
     "keywords": [
       "pathetic",
       "difference",
@@ -23402,8 +23458,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on the fear of loss — financial, relational, or of a person's life — with keywords like 'assure', 'unable', and 'pretending' reinforcing a scene of anxious reassurance. No romantic or sexual content is present. The topic is a small but coherent emotional-stakes scene.",
-    "scene_summary": "A character voices dread that they will lose someone or everything they have, while another tries to offer reassurance.",
+    "rationale": "KeyBERT and MMR converge on assure, tries, pathetic, afford, pretending, unable, admit — a field of reluctant emotional honesty and desperate reassurance. POS anchors pathetic and unable reinforce vulnerability and incapacity. Snippets about losing everything and fearful loss ground the keyword thread in a scene of anguished admission rather than scheduling or action.",
+    "scene_summary": "A character confesses fear and helplessness, unable to pretend that losing someone or something would not be devastating.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -23457,7 +23513,8 @@
       "if i don’t we’ll lose everything.",
       "you’ll never lose me, mama.”",
       "i am fearful we’ll still lose him."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "234": {
     "label": "Promising to Find A Lawyer",
@@ -23563,7 +23620,7 @@
     ]
   },
   "235": {
-    "label": "Hoping Memory Will Return",
+    "label": "Precious Memories Facing Erasure",
     "keywords": [
       "forgetting",
       "memories",
@@ -23585,8 +23642,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters discussing amnesia or memory loss with emotional care — asking to be notified if memory clears, vowing to restore it, and treasuring memories before a farewell. Keywords confirm the theme: memories, forgetting, wipe, precious, painful. No romantic or sexual content is present; the dominant beat is emotional support around memory loss.",
-    "scene_summary": "Characters speak tenderly about lost memories, promising to recover them while cherishing what remains before parting.",
+    "rationale": "KeyBERT, MMR, and POS all cohere around memory loss and its emotional weight — forgetting, wipe, memories, precious, painful, suffering, conversations. Snippet 3 grounds the 'precious memories' thread concretely, while snippets 1 and 2 confirm the amnesia/recovery framing. No sexual or romantic physical content is present.",
+    "scene_summary": "A character fears losing cherished memories to amnesia while another promises to help restore what has been forgotten.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -23661,7 +23718,8 @@
       "you’ll be sure and let us know if you have any clearing of your memory, won’t you?” “",
       "we’ll get your memory back.”",
       "i’ll be taking these memories with me and pulling them out when i’m missing everyone so much."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "236": {
     "label": "Haircut and Grooming Offered",
@@ -23833,7 +23891,7 @@
     ]
   },
   "238": {
-    "label": "Reporting An Injury to Authority",
+    "label": "Awkward Desperation Under Social Pressure",
     "keywords": [
       "graceful",
       "distraction",
@@ -23857,8 +23915,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show a bruise being assessed, a warning about conflict before arriving at a noble estate, and a duty to report to a lord — pointing to a historical-register scene of injury disclosure under social hierarchy. Keywords like embarrassment, desperation, and awkwardly reinforce the uncomfortable obligation. No romantic or sexual content is present.",
-    "scene_summary": "A character reports a bruise or altercation to a lord, navigating social pressure and embarrassment at court.",
+    "rationale": "KeyBERT and MMR converge on embarrassment, desperation, awkwardly, graceful, and distraction, pointing to a scene of social discomfort and strained composure under pressure. POS keywords reinforce this with nouns like desperation, embarrassment, and pressure alongside the adjective graceful, suggesting a contrast between desired poise and actual awkwardness. Snippet 2 grounds this in a formal social context with a lord and a court arrival, consistent with the keyword thread of social pressure and desperate attempts at grace.",
+    "scene_summary": "A character struggles with embarrassment and desperation while navigating a tense social situation, trying to manage appearances before arriving at a formal gathering.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -23936,7 +23994,8 @@
       "i’m sure it’ll just be bruised,” [person] said. “",
       "i'll not have you and his grace at each other's throats before we arrive at champney court.\"",
       "i’ll have to report this to lord [person].” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "239": {
     "label": "Chapter Heading Fragments",
@@ -24231,7 +24290,7 @@
     ]
   },
   "242": {
-    "label": "Insisting on Being Left Alone",
+    "label": "Choosing to Be Alone",
     "keywords": [
       "terms",
       "invitation",
@@ -24247,8 +24306,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on a character asserting a need to be alone, whether as a plea, a condition, or a resigned acceptance. Keywords like 'upset', 'fault', 'invitation', and 'attempt' reinforce a scene of emotional withdrawal or refusal of company. No romantic or sexual content is present; the dominant beat is a character claiming solitude.",
-    "scene_summary": "A character pushes others away, insisting they need solitude and will manage better on their own.",
+    "rationale": "KeyBERT/MMR keywords (upset, invitation, praying, terribly, deserved, fault, chose, planned) point to a moment of emotional withdrawal and self-blame following some rupture or unwanted offer. All three snippets converge on a character asserting a preference for solitude and rejecting company. The Main keywords (alone, solitude, destined) reinforce this as a scene of deliberate emotional retreat rather than romantic or sexual content.",
+    "scene_summary": "A character insists on solitude, deflecting an invitation or concern by declaring they need to be alone and will manage on their own.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -24307,7 +24366,8 @@
       "i’ll be alright, i just need to be alone!”",
       "before you say no, i want you to know i’ll be alone mostly.",
       "if we make it through this alone, we’ll just be better at being alone.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "243": {
     "label": "Laughing Off A Crazy Decision",
@@ -24395,13 +24455,13 @@
     ]
   },
   "244": {
-    "label": "Deciding to Tell Her The Truth",
+    "label": "Promising to Tell Her The Truth",
     "keywords": [
       "promises",
       "president",
       "behavior"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -24410,8 +24470,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on a character's stated intention to tell a woman something — the truth, another chance, or a direct disclosure. Keywords like 'promises' and 'behavior' reinforce a scene of moral reckoning or honest disclosure. No romantic or sexual content is present.",
-    "scene_summary": "A character resolves to go and tell a woman the truth, despite uncertainty about how she will receive it.",
+    "rationale": "KeyBERT/MMR/POS cohere around promises, behavior, threatened, deserve, and sir — a discourse field of obligation, accountability, and vowed disclosure. The snippets all show a character committing to tell a woman the truth, grounding the keyword thread in a concrete promise beat. Main's tell/told/telling cluster reinforces the disclosure function without overriding the broader obligation field.",
+    "scene_summary": "A character vows to reveal the truth to someone, navigating obligations, threatened consequences, and what others deserve to know.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -24467,7 +24527,8 @@
       "well, maybe you’ll get another chance to tell her.”",
       "i’ll tell her the truth.",
       "i’ll go tell her.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "245": {
     "label": "Pausing to Gather Thoughts",
@@ -24737,7 +24798,7 @@
     ]
   },
   "248": {
-    "label": "Overheard Pleasure Sounds",
+    "label": "Muffled Noises Creeping Through Walls",
     "keywords": [
       "noises",
       "muffled",
@@ -24756,11 +24817,11 @@
     "subgenre_hints": [],
     "sexual_explicitness": "suggestive",
     "sexual_function": "sexual_tension",
-    "consent_status": "consensual_implied",
+    "consent_status": "not_applicable",
     "axis_hint": "sexual_tension_explicit_intimacy",
     "is_noise": false,
-    "rationale": "Snippet 1 ('I wonder what they thought of all the noises') and snippet 3 ('those little humming noises were like a mini vibrator') anchor this as a scene where audible sexual pleasure is overheard or remarked upon. Snippet 2 ('noises began to creep in') reinforces the gradual awareness of ambient sound. The humming-vibrator comparison confirms suggestive rather than explicit content, with sexual_function classified as sexual_tension.",
-    "scene_summary": "A character notices the sounds of pleasure drifting through the walls, wondering what others nearby must think.",
+    "rationale": "KeyBERT, MMR, and POS all converge on auditory disturbance: noises, screaming, muffled, frantic, shout, crowd. Snippet 1 ('I wonder what they thought of all the noises') and snippet 3 (humming noises compared to a vibrator) together suggest overheard sounds with a sexual undertone, placing this in sexual_tension territory. The weapons/pathetic/promising POS terms are secondary noise in a small topic and do not override the dominant auditory-embarrassment thread.",
+    "scene_summary": "A character wonders what others heard as muffled, frantic noises — possibly sexual — seep through from a nearby room.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -24836,7 +24897,8 @@
       "i wonder what they thought of all the noises.",
       "slowly, noises began to creep in.",
       "those little humming noises were like a mini vibrator. \""
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "249": {
     "label": "Calling Something A Mistake",
@@ -25918,7 +25980,7 @@
     ]
   },
   "260": {
-    "label": "Keeping Someone Hidden From Him",
+    "label": "Hiding Someone From A Jealous Man",
     "keywords": [
       "slightest",
       "privacy",
@@ -25942,8 +26004,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around concealing someone's presence from a man named Jared — fetching his shirt before he notices, and warning that even a glimpse would give the secret away. Keywords like 'privacy,' 'glimpse,' and 'warned' reinforce a scene of deliberate concealment. No romantic or sexual content is present; the dominant beat is hiding someone from a returning figure.",
-    "scene_summary": "A character rushes to retrieve a shirt before a man returns, warning that he must not catch a glimpse of the visitor.",
+    "rationale": "KeyBERT/MMR/POS converge on concealment and tension: privacy, glimpse, warned, unable, willing, fingertips, pressure, upset — a scene of hiding or shielding someone from discovery. Snippet 3 anchors the beat most clearly: 'if jared catches one glimpse of you, he'll know,' confirming a hide-from-jealous-figure scenario. The stage07 character_residue flag is overridden because the keyword thread and snippets cohere on a concrete narrative action beyond mere name co-occurrence.",
+    "scene_summary": "A character warns another to stay out of sight because one glimpse of them would reveal everything to a suspicious, possessive man.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -26015,10 +26077,11 @@
       "but i guess i’ll just have to leave that to jared.”",
       "jared was just heading off to work but is going to need his shirt so i’ll be right back.”",
       "you can’t come because if jared catches one glimpse of you, he’ll know."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "261": {
-    "label": "Security Detail Arranged and Ready",
+    "label": "Issuing Orders From The Doorway",
     "keywords": [
       "notion",
       "dripping",
@@ -26042,8 +26105,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on logistical security coordination — moving locations, contacting a manager about cameras, and arranging a protective detail by evening. Keywords like 'assure,' 'doorway,' 'nearby,' and 'gesture' support a scene of professional protective planning. The stage07 character-residue flag is overridden by the coherent operational-security thread across snippets.",
-    "scene_summary": "A security operative arranges cameras, a protective detail, and relocation plans to keep someone safe.",
+    "rationale": "KeyBERT and MMR converge on approached, gripped, doorway, assure, gesture, and contain, pointing to a tense authority-and-instruction scene at a threshold. POS keywords — disbelief, disappointment, terms, notion — reinforce an emotional reaction to directives being issued. Snippet 2 best grounds the thread: a character relaying security arrangements and logistics in a clipped, commanding tone.",
+    "scene_summary": "A figure approaches and grips the doorway, issuing terse instructions about security and logistics while others react with disbelief or disappointment.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -26122,10 +26185,11 @@
       "i’ll talk to rafe about packing us up and moving up there.",
       "rafe will contact your manager about the cameras, and i’ll have your security detail ready and in place by early evening.",
       "i’ll be taking care of you fine gentlemen tonight,” she purred, and rafe could basically see the innuendo written out on her forehead. “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "262": {
-    "label": "Stalker Ex Sends A Message",
+    "label": "Confronting A Creepy Ex",
     "keywords": [
       "rear",
       "sidewalk",
@@ -26150,8 +26214,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets consistently reference Jesse as an ex-boyfriend turned creepy stalker who sends threatening or possessive messages. Keywords like 'ex', 'painful', 'emotional', and 'struggling' reinforce a scene of menace and distress rather than romance. The stage07 character_residue flag is overridden because the snippets show a coherent stalker-threat narrative.",
-    "scene_summary": "A character receives a message from an ex-boyfriend who has become a delusional, threatening stalker.",
+    "rationale": "KeyBERT/MMR/POS converge on emotional, painful, struggling, conscious, ex, doorway, and stilled — signaling a tense, emotionally charged confrontation or reckoning. POS confirms 'ex' as a noun anchor alongside 'painful' and 'amusement,' suggesting a fraught encounter with a former partner. Snippet 3 grounds the thread most clearly, naming the ex-boyfriend turned stalker, while snippets 1–2 add a threatening undercurrent consistent with the 'tied,' 'cocked,' and 'reveal' keywords.",
+    "scene_summary": "A character reflects on a former boyfriend who has become a delusional stalker, stirring painful and emotional memories.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -26229,7 +26293,8 @@
       "i’ll make sure jesse comes up to see you.”",
       "if he gets off on a technicality, we’ll let jesse kill him.",
       "it’ll be a night to remember for sure… all my love, jesse” [person] was my ex-boyfriend turned delusional creepy stalker."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "263": {
     "label": "Teaching Someone to Cook",
@@ -26434,7 +26499,7 @@
     ]
   },
   "265": {
-    "label": "Plotting Around A Secret Suitor",
+    "label": "Scheming With Curious Determination",
     "keywords": [
       "percent",
       "annoyance",
@@ -26458,8 +26523,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show a character scheming to pursue someone named Luke while threatening to reveal a secret about 'babsie' if her plan is exposed prematurely. Keywords like planning, determination, annoyance, and curiosity support a conspiratorial social scene with no romantic physical content. The stage07 character_residue flag is overridden because the snippets show a coherent scheming-and-secrecy beat.",
-    "scene_summary": "A character warns a friend that she will expose a secret if her plan to catch a man is revealed too soon.",
+    "rationale": "KeyBERT/MMR/POS converge on curiosity, annoyance, determination, planning, suitcase, and memories — a field of calculated scheming with emotional undercurrents. Snippet 2 best exemplifies this: a character threatens to reveal a secret if their plan to catch someone is exposed prematurely, showing deliberate manipulation and determination. The stage07 character_residue flag is overridden because the keyword thread coheres around a planning/scheming beat independent of any specific name.",
+    "scene_summary": "A character plots to catch someone's attention while carefully managing what others know, balancing curiosity and annoyance with deliberate planning.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -26530,10 +26595,11 @@
       "[person], guess we’ll get together soon.”",
       "because i swear to you, [person], if luke gets a hint that he’s the one i’m trying to catch before i’m ready to tell him, i’ll...i’ll tell him about you and babsie.” “",
       "you’ll have to ask luke for more details."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "266": {
-    "label": "Arranging Care After Hospital Release",
+    "label": "Fumbling Through An Embarrassing Admission",
     "keywords": [
       "mixture",
       "embarrassment",
@@ -26555,8 +26621,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on post-hospital care arrangements and a domestic standoff about ignoring each other and staying at someone's home. Keywords like embarrassment, confusion, and admitted suggest an awkward interpersonal negotiation around caregiving logistics. No romantic or sexual content is present; the dominant beat is practical care planning after a medical release.",
-    "scene_summary": "A character arranges for a nurse to come to the house after someone is discharged, while others negotiate staying together.",
+    "rationale": "KeyBERT and MMR converge on embarrassment, admitted, fumbled, fooled, and escaped — a shared field of awkward disclosure and social stumbling. POS keywords (embarrassment, confusion, explanation, unable) reinforce a scene of flustered admission rather than any romantic or physical beat. Snippets are thin and name-heavy (Caleb), but the keyword thread clearly anchors the label in an embarrassed, fumbled explanation moment.",
+    "scene_summary": "A character stumbles through an awkward explanation, caught off guard and unable to hide their embarrassment or confusion.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -26629,7 +26695,8 @@
       "i'll arrange for a nurse to come to the house when they release caleb.",
       "twenty-three caleb y ou ignore me, and i’ll ignore you .",
       "and you’ll both stay here, at caleb’s?” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "267": {
     "label": "Gift Box Reveals A Watch",
@@ -26719,7 +26786,7 @@
     ]
   },
   "268": {
-    "label": "Stumbling Over What to Say",
+    "label": "Mumbled Words and Emotional Hesitation",
     "keywords": [
       "appropriate",
       "stares",
@@ -26741,8 +26808,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets show halting, self-correcting speech — apologising mid-sentence, whispering a need for a moment, and promising to zip one's lip. Keywords like mumbled, hesitate, rushed, disbelief, and amusement reinforce a pattern of awkward, emotionally charged verbal stumbling rather than any romantic or physical beat.",
-    "scene_summary": "A character hesitates, mumbles an apology, and promises to stay quiet while another reassures them.",
+    "rationale": "KeyBERT and MMR converge on mumbled, hesitate, emotional, breathed, and stares, pointing to a discourse pattern of halting, emotionally loaded speech delivery. POS keywords reinforce this with disbelief, amusement, disappointed, and chuckle — reactions that frame the hesitant utterance. Snippets show a character (Aiden) stumbling through words and asking for a moment, grounding the keyword thread in a scene of emotional verbal difficulty.",
+    "scene_summary": "A character struggles to speak clearly, mumbling and hesitating while trying to manage an emotionally charged moment.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -26824,7 +26891,8 @@
       "aiden, i’ll let you know what transpires.",
       "i’ll be okay, i just need a minute,” aiden whispered.",
       "aiden asked, then quickly added, “god, sorry, lip zipped, swear, i’ll shut up.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "269": {
     "label": "Talking About Painting Dreams",
@@ -27013,14 +27081,14 @@
     ]
   },
   "271": {
-    "label": "Testing The Rules Together",
+    "label": "Laying Down Unusual Rules",
     "keywords": [
       "affection",
       "unusual",
       "spite",
       "entire"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [
@@ -27031,8 +27099,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around rules being stated, tested, and applied — a playful verbal exchange rather than a romantic or sexual scene. The MMR keyword 'affection' and the banter tone suggest light courtship discourse, but no physical or sexual content is present. The tornado-season reference hints at a contemporary setting with a newcomer learning local customs or relationship ground rules.",
-    "scene_summary": "Two characters banter about a set of rules, with one promising the other will be eager to learn them.",
+    "rationale": "MMR/POS keywords (affection, unusual, spite, entire) combined with Main (rules, rule, break, game) point to a discourse beat about establishing or enforcing unconventional rules. Snippets confirm this: all three show characters invoking, testing, or threatening to apply rules. The keyword 'affection' alongside 'spite' and 'unusual' suggests the rules carry emotional weight rather than being purely procedural, but no romantic or physical content is present.",
+    "scene_summary": "A character insists on enforcing a set of unusual rules, warning that everyone will learn them whether they like it or not.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -27077,7 +27145,8 @@
       "we'll be testing all those rules of yours.\"",
       "i’ll make sure this rule goes for everything you do.",
       "if you don’t know the rules already, you’ll be eager to learn after the first tornado season.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "272": {
     "label": "Remarking on Eye Color",
@@ -27275,7 +27344,7 @@
     ]
   },
   "275": {
-    "label": "Gym Talk Before Later Exercise",
+    "label": "Gym Talk Hinting at Later",
     "keywords": [
       "relaxing",
       "addition",
@@ -27298,8 +27367,8 @@
     "consent_status": "consensual_implied",
     "axis_hint": "sexual_tension_explicit_intimacy",
     "is_noise": false,
-    "rationale": "Snippet 1 establishes a gym at a lake house; snippet 2 ('plenty of exercise, later') is a clear double entendre signaling anticipated sexual activity. Keywords like 'session,' 'stamina,' and 'comfortable' reinforce the suggestive framing. The third snippet is thin but does not contradict the dominant thread.",
-    "scene_summary": "A character notes the lake house gym will do for now, hinting that more physical activity is planned for later.",
+    "rationale": "KeyBERT/MMR/POS cohere around a fitness/practice session framed by anxiety and comfort (comfortable, relaxing, session, movements, practice, anxiety), while the suggestive snippet 'plenty of exercise, later' signals the gym talk is a double-entendre for anticipated sex. The label captures the visible scene beat — gym conversation with an implied sexual promise — without reducing it to either the literal workout setting or the explicit subtext.",
+    "scene_summary": "A character downplays the small gym while another hints they will be getting plenty of exercise later that night.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -27369,7 +27438,8 @@
       "the gym in the lake house is nowhere near the size of the one that was in my main home, but it’ll do for tonight.",
       "i suspect we’ll be getting plenty of exercise, later.",
       "i'll call him a douche… messy.\" \""
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "276": {
     "label": "Dividing Up Who Watches Whom",
@@ -28296,13 +28366,13 @@
     ]
   },
   "286": {
-    "label": "Reluctant Farewell Before Leaving",
+    "label": "Breathless Goodbye Exchange",
     "keywords": [
       "exchange",
       "disappointed",
       "crowd"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -28311,8 +28381,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on departure and farewell: going with someone tonight, being told to go with him, and giving oneself a proper goodbye. Keywords like 'heading,' 'gotta,' 'breathlessly,' and 'disappointed' reinforce an emotionally charged but non-romantic leave-taking. No sexual content is present; the scene is a tense, reluctant goodbye.",
-    "scene_summary": "A character insists on going with someone tonight, while another gives herself a proper goodbye before departing.",
+    "rationale": "KeyBERT and MMR converge on speech-delivery terms (grunted, mumbled, breathlessly, demanded, shout) combined with departure-action words (heading, dealing, struggling), signaling a tense, emotionally loaded leave-taking discourse. POS anchors 'exchange' and 'disappointed' confirm a charged farewell interaction rather than a physical scene. Snippets 1–3 all enact goodbye moments, with snippet 3 providing the most emotionally resonant beat.",
+    "scene_summary": "Characters exchange hurried, emotionally charged farewells, with one insisting on giving herself a proper goodbye before heading off.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -28381,7 +28451,8 @@
       "you'll go with him,\" catherine says. \"",
       "i’ll go with you tonight,” he said. “",
       "if he doesn’t want to give me a proper good-bye, then i’ll give myself one."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "287": {
     "label": "Announcing A Career Change",
@@ -28642,7 +28713,7 @@
     ]
   },
   "290": {
-    "label": "Killer Targets Someone Alone",
+    "label": "Reacting to A Pregnant Wife",
     "keywords": [
       "longing",
       "ribs",
@@ -28667,8 +28738,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippet 3 anchors the topic: a killer targeted someone while alone, and the pregnant wife is mentioned as a reason the killer held back. Snippets 1 and 2 add peripheral character movement and observation. Keywords like 'pregnant,' 'reaction,' and 'dealing' support a tense, plot-driven scene rather than any romantic or intimate content.",
-    "scene_summary": "Characters discuss how a killer struck when the victim was alone, sparing his pregnant wife from danger.",
+    "rationale": "KeyBERT/MMR/POS converge on 'pregnant', 'reaction', 'dealing', 'upset', 'pressure', and 'longing', pointing to an emotionally charged scene involving a pregnancy and its consequences. Snippet 3 is the dominant anchor, explicitly naming a pregnant wife and the anticipated violent reaction to her husband's death. The topic reflects a tense, emotionally loaded discussion rather than any romantic or sexual content.",
+    "scene_summary": "A character warns that the killer avoided targeting a man's pregnant wife because she would react with furious, unstoppable rage.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -28744,10 +28815,11 @@
       "i’ll hang around while you take a look at it tonight,” [person] said, his own gaze also glued to camilla’s limbs. “",
       "i’ll try,” derek replied and turned to make the hour walk back home.",
       "he knows that the killer got derek while he was alone, and he wouldn’t do that to his pregnant wife, because she’ll go shit wild and start a rampage."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "291": {
-    "label": "Courtroom Threats and Legal Warnings",
+    "label": "Courtroom Proceedings and Legal Threats",
     "keywords": [
       "session",
       "members",
@@ -28767,8 +28839,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on legal proceedings — a trial, a state ethics complaint, and a court schedule. Main keywords (court, judge, trial, jury) confirm a courtroom or legal-dispute setting. No romantic or sexual content is present.",
-    "scene_summary": "A character warns another about filing ethics complaints and reminds them of an upcoming court appearance.",
+    "rationale": "KeyBERT/MMR/POS keywords — admitted, instructed, session, decision, members, confusion, fault — cohere around formal procedural discourse; Main keywords (court, judge, trial, jury, courtroom) reinforce a legal-setting thread. Snippets confirm courtroom and legal-ethics contexts: a fair-trial offer, an ethics complaint threat, and a court appearance reminder. The label reflects the shared legal-proceedings field rather than any single snippet beat.",
+    "scene_summary": "A character threatens to file a legal ethics complaint while another is reminded they will be in court for a trial.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -28833,7 +28905,8 @@
       "i’ll certify the extreme excellence of your health, and you can have the benefit of a fair trial, how does that sound?",
       "come near us again and i’ll file a complaint with the state committee of legal ethics.”",
       "no, i’ll be in court, so wake up, [person]."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "292": {
     "label": "Frantic Longing After Separation",
@@ -29127,7 +29200,7 @@
     ]
   },
   "297": {
-    "label": "Offering Work to A Pregnant Model",
+    "label": "Presenting Gifts to A Pregnant Model",
     "keywords": [
       "treatment",
       "regular",
@@ -29147,8 +29220,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets center on a pregnant model being offered fashion work at clubs and a friend presenting a memorable gift. Keywords like 'pregnant,' 'reveal,' 'introduce,' and 'models' support a contemporary scene involving professional opportunity and a gift exchange. No romantic or sexual content is present.",
-    "scene_summary": "A designer is offered club modeling work while someone presents her with an unexpected and delightful gift.",
+    "rationale": "KeyBERT and MMR converge on present/introduce/reveal/pregnant/pretending/behavior, pointing to a scene of formal introduction or gifting involving a pregnant woman in a modeling context. POS keywords (treatment, behavior, opportunity, excited) reinforce a social-interaction beat with positive affect. Snippet 1 anchors the pregnant-model thread; snippet 2 grounds the gift-presentation moment; snippet 3 adds the professional modeling opportunity dimension.",
+    "scene_summary": "A character presents an exciting gift or professional opportunity to a pregnant model, prompting laughter and delight.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -29215,7 +29288,8 @@
       "i’ve got loads of work for a pregnant model.’",
       "about thirty minutes later, rachel presents me with a gift so awesome that i’m sure we’ll laugh about it for years to come.",
       "i'll have models at all of my clubs, wearing your designs."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "298": {
     "label": "Glaring Back in Defiance",
@@ -29598,8 +29672,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters passing information through a third party named Rose and making arrangements for the next day. Keywords like 'hesitate', 'directed', 'exchange', and 'member' support a coordination or relay scene. No romantic or sexual content is present; the topic reflects everyday interpersonal communication.",
-    "scene_summary": "Characters relay a message through a mutual contact, coordinating plans for the following morning.",
+    "rationale": "KeyBERT/MMR keywords (hesitate, winked, pleased, poked, peered, wondering, brushed, flowing) suggest a social relay or communication beat with mild physical gesture cues. POS nouns (exchange, member, council, screen) point toward a group or intermediary communication context. Snippet 1 anchors the label: a character hesitates before letting others know what someone truly wants, fitting a message-passing or relay scene.",
+    "scene_summary": "A character relays information to others, hesitating before making clear what someone really wants them to know.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -29667,7 +29741,8 @@
       "rose had a feeling that if it meant a lot to him, the big man wouldn’t hesitate to 54 male of the species let the others know what it was he really wanted.",
       "that way we’ll be ready for mrs. rose in the morning.”",
       "okay, you have rose call us and let us know…we’ll…” “i will.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "303": {
     "label": "Savoring Her Taste",
@@ -30042,7 +30117,7 @@
     ]
   },
   "308": {
-    "label": "Keeping Her Close Under False Pretenses",
+    "label": "Pretending Willingness While Horrified",
     "keywords": [
       "addition",
       "meantime",
@@ -30065,8 +30140,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show a character named Rory offering a drink as a social cover while internally acknowledging a duty to keep someone close so she does not discover 'what we are' — a paranormal secret. Keywords like pretending, expect, willing, and introduce reinforce a scene of social maneuvering under false pretenses. No romantic or sexual content is present; the dominant beat is covert social management in a paranormal context.",
-    "scene_summary": "A character steers a woman toward drinks while privately planning to keep her close and hide a dangerous secret from her.",
+    "rationale": "KeyBERT/MMR/POS converge on a field of reluctant compliance under social pressure: pretending, embarrassed, willing, horrified, answering, sir, wondering. Snippet 2 and 3 anchor this — a character must keep someone close against her wishes while concealing her true feelings. Stage07 character_residue flag is overridden because the keyword thread coheres on a distinct emotional beat independent of the shared character name.",
+    "scene_summary": "A character masks her embarrassment and dread, outwardly agreeing to keep someone close while privately dreading what she must do.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -30140,7 +30215,8 @@
       "come on, i’ll get you a drink,’ rory said. ‘",
       "they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.",
       "and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "309": {
     "label": "Struggling to Make Ends Meet",
@@ -30462,7 +30538,7 @@
     ]
   },
   "312": {
-    "label": "Promising to Visit Someone",
+    "label": "Setting Limits on Someone's Behavior",
     "keywords": [
       "limits",
       "success",
@@ -30482,8 +30558,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets revolve around a person named Tyler — visiting him, asking him, or handling him — suggesting a scene about managing obligations or promises around a third party. Keywords like 'assured', 'limits', 'fault', and 'comfortable' reinforce a low-stakes interpersonal negotiation. No romantic or sexual content is present.",
-    "scene_summary": "A character asks another to promise they will visit Tyler occasionally, while others discuss how to handle him.",
+    "rationale": "KeyBERT/MMR/POS converge on limits, fault, success, comfortable, assured, and instructed — a field of boundary-setting and accountability talk. Snippets show characters negotiating how to handle a third party, grounding the keyword thread in a practical interpersonal discussion. No romantic or sexual content is present.",
+    "scene_summary": "A character discusses boundaries and expectations around another person, weighing fault, comfort, and what success looks like going forward.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -30545,7 +30621,8 @@
       "just promise you’ll take time to consider visiting tyler once in a while.” “",
       "i’ll have to ask tyler.",
       "if i have to, i’ll handle tyler.” “"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "313": {
     "label": "Arranging A Meal With Someone",
@@ -30748,7 +30825,7 @@
     ]
   },
   "315": {
-    "label": "Giving Someone A Heads-Up",
+    "label": "Smoothly Taking Practical Advantage",
     "keywords": [
       "meantime",
       "recent",
@@ -30760,7 +30837,7 @@
       "crowd",
       "sir"
     ],
-    "content_type": "scene",
+    "content_type": "discourse",
     "register": "neutral",
     "exclude_from_axes": false,
     "subgenre_hints": [],
@@ -30769,8 +30846,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "Snippets show characters coordinating a quiet check-in to inform someone of developments and offer assistance after a crisis. Keywords like 'acknowledge,' 'meantime,' 'smoothly,' and 'possibility' reinforce a practical, low-stakes coordination beat. No romantic or sexual content is present; the stage07 character-residue flag is overridden by the coherent procedural scene in the snippets.",
-    "scene_summary": "A character arranges a brief conversation to warn someone and offer help as a crisis settles.",
+    "rationale": "KeyBERT/MMR keywords (practically, acknowledge, smoothly, assume, proved, officially, fired, reflected) and POS nouns (possibility, advantage, movement, bodies, crowd) converge on a discourse field of pragmatic maneuvering and social positioning. The snippets show characters coordinating and managing situations with measured composure, grounding the keyword thread in interpersonal strategy rather than any romantic or physical beat. No sexual or romantic content is present; the topic reflects procedural social discourse.",
+    "scene_summary": "A character calmly acknowledges a situation and maneuvers to gain the upper hand while others are occupied nearby.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;name_contaminated_review",
     "stage07_content_type": "",
@@ -30842,7 +30919,8 @@
       "you’ve brought john and your homework.”",
       "we'll go and have a little chat with [person] and give him a heads-up on things.\" \"",
       "i’ll see if there’s anything i can do to help [person], but i think the crisis is past now."
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "316": {
     "label": "Climbing The Chute Before The Bull",
@@ -31172,7 +31250,7 @@
     ]
   },
   "321": {
-    "label": "Threatening to Leave on Foot",
+    "label": "Anxious Glimpse Before Walking Away",
     "keywords": [
       "anxious",
       "glimpse",
@@ -31188,8 +31266,8 @@
     "consent_status": "not_applicable",
     "axis_hint": "everyday_intimacy_emotional_safety",
     "is_noise": false,
-    "rationale": "All three snippets center on the same beat: one character threatens to walk if not given information or a ride, and another calls the bluff. No romantic or sexual content is present; the scene is a minor power-struggle over transportation. Keywords like 'anxious,' 'injured,' and 'sir' suggest mild stakes but no intimacy.",
-    "scene_summary": "A character threatens to walk rather than comply, forcing a tense standoff over who controls the ride.",
+    "rationale": "MMR/POS keywords — anxious, injured, glimpse, encouraged, shout, suggested — point to a tense moment of coaxed or pressured movement. The snippets all revolve around walking as a reluctant or forced option ('unless you wish to be left to walk', 'I'll walk if I have to', 'not driving, we'll walk'), grounding the keyword thread in a scene of anxious departure on foot. No romantic or sexual content is present.",
+    "scene_summary": "A character, anxious and possibly injured, is urged or pressured to move on foot rather than wait for a ride.",
     "stage07_exclude_from_axes": false,
     "stage07_posthoc_reason": "tiny_topic;nan",
     "stage07_content_type": "",
@@ -31240,7 +31318,8 @@
       "unless you wish to be left to walk, you’ll tell me.",
       "fine, i’ll walk if i have to.’ ‘",
       "not driving, we’ll walk.”"
-    ]
+    ],
+    "label_source": "v3_rep_first_snippet_trap"
   },
   "322": {
     "label": "Offering to Hold Something",

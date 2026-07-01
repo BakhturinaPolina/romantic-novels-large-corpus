@@ -6,6 +6,19 @@ Two JSON bundles for Stage09 and human review.
 |------|---------|
 | `topic_metadata_v3.json` | Slim Stage09 input (`--labels-json`, use `--no-snippets`) |
 | `topic_metadata_v3_review_enriched.json` | Full human review: representations, snippets, rationale |
+| `snippet_trap_merge_log.json` | 79-topic merge log (production → `v3_rep_first` snippet-trap overrides) |
+
+**Label sources:** 79 panel topics use `v3_rep_first` relabels (see `data/stage08_benchmark/call73_snippet_trap_panel.json`); all others remain `v3_topic_labeling`. Review bundle includes `label_source: v3_rep_first_snippet_trap` on merged topics.
+
+Regenerate merge after a new snippet-trap run:
+
+```bash
+python3 -m src.stage08_llm_labeling.openrouter_experiments.tools.merge_snippet_trap_into_stage09 \
+  --panel-json data/stage08_benchmark/call73_snippet_trap_panel.json \
+  --overrides-json results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_*_snippet_trap_rep_first_topics.json \
+  --slim-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
+  --review-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3_review_enriched.json
+```
 
 ## Slim bundle (`topic_metadata_v3.json`)
 
