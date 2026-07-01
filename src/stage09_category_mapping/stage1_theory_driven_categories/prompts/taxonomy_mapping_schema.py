@@ -96,12 +96,10 @@ def build_taxonomy_mapping_schema(taxonomy_path: Optional[str] = None) -> Dict[s
             "other_plausible_ids": {
                 "type": "array",
                 "items": {"type": "string", "enum": sec_enum},
-                "maxItems": 4,
             },
             "mechanic_tags": {
                 "type": "array",
                 "items": {"type": "string", "enum": MECHANIC_TAG_ENUM},
-                "maxItems": 5,
             },
             "is_noise": {"type": "boolean"},
             "use_in_macro_axes": {"type": "boolean"},
@@ -109,20 +107,13 @@ def build_taxonomy_mapping_schema(taxonomy_path: Optional[str] = None) -> Dict[s
             "noise_reason": {
                 "anyOf": [{"type": "string"}, {"type": "null"}],
             },
-            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "confidence": {"type": "number"},
             "evidence_quality": {"type": "string", "enum": EVIDENCE_QUALITY_ENUM},
             "uncertainty_reason": {
                 "anyOf": [{"type": "string"}, {"type": "null"}],
             },
-            "rationale": {"type": "string", "maxLength": 600},
-            "mapping_reasoning": {
-                "type": "string",
-                "maxLength": 1200,
-                "description": (
-                    "Structured debug reasoning: cite strongest evidence (snippets first), "
-                    "explain main vs rejected alternatives, secondary choice, and macro_axes decision."
-                ),
-            },
+            "rationale": {"type": "string"},
+            "mapping_reasoning": {"type": "string"},
         },
     }
 
@@ -241,6 +232,11 @@ def normalize_taxonomy_mapping_result(
     result["mechanic_tags"] = _normalize_mechanic_tags(result.get("mechanic_tags"))
     result["confidence"] = _coerce_confidence(result.get("confidence"))
     result["confidence_band"] = confidence_to_band(result["confidence"])
+
+    for text_field, max_len in (("rationale", 600), ("mapping_reasoning", 1200)):
+        val = result.get(text_field)
+        if isinstance(val, str) and len(val) > max_len:
+            result[text_field] = val[: max_len - 3] + "..."
 
     eq = result.get("evidence_quality")
     if not isinstance(eq, str) or eq not in EVIDENCE_QUALITY_ENUM:
