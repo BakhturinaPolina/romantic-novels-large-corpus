@@ -33,7 +33,7 @@ echo "Log: $LOG" | tee -a "$LOG"
   --no-resume \
   2>&1 | tee -a "$LOG"
 
-LABELS_JSON=$(ls -t results/stage08_llm_labeling/placeholder_v4_call73/*"${OUTPUT_SUFFIX}"*.json 2>/dev/null | head -1)
+LABELS_JSON=$(ls -t results/stage08_llm_labeling/placeholder_v4_call73/production/*"${OUTPUT_SUFFIX}"*.json 2>/dev/null | head -1)
 echo "Labels: $LABELS_JSON" | tee -a "$LOG"
 
 "$PY" - <<'PY' | tee -a "$LOG"
@@ -42,8 +42,8 @@ import json
 from pathlib import Path
 
 panel = json.loads(Path("data/stage08_benchmark/call73_snippet_trap_panel.json").read_text())
-prod_path = Path("results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_topic_labeling.json")
-rep_paths = sorted(Path("results/stage08_llm_labeling/placeholder_v4_call73").glob("*snippet_trap_rep_first*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
+prod_path = Path("results/stage08_llm_labeling/placeholder_v4_call73/production/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_topic_labeling.json")
+rep_paths = sorted(Path("results/stage08_llm_labeling/placeholder_v4_call73/production").glob("*snippet_trap_rep_first*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
 if not rep_paths:
     raise SystemExit("No snippet_trap_rep_first labels JSON found")
 rep_path = rep_paths[0]
@@ -75,3 +75,19 @@ with out_csv.open("w", newline="", encoding="utf-8") as f:
 print(f"Comparison CSV: {out_csv}")
 print(f"Labels changed: {changed}/{len(rows)}")
 PY
+
+ARCHIVE_DIR="results/stage08_llm_labeling/prompt_sweeps/call73/v3_rep_first"
+mkdir -p "$ARCHIVE_DIR"
+cp "$LABELS_JSON" "$ARCHIVE_DIR/"
+cp results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/snippet_trap_merge_log.json "$ARCHIVE_DIR/" 2>/dev/null || true
+
+echo "Merging into stage09_input..." | tee -a "$LOG"
+"$PY" -m src.stage08_llm_labeling.openrouter_experiments.tools.merge_snippet_trap_into_stage09 \
+  --panel-json "$PANEL_JSON" \
+  --overrides-json "$LABELS_JSON" \
+  --slim-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \
+  --review-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3_review_enriched.json \
+  2>&1 | tee -a "$LOG"
+
+cp results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/snippet_trap_merge_log.json "$ARCHIVE_DIR/"
+echo "Archived to $ARCHIVE_DIR" | tee -a "$LOG"
