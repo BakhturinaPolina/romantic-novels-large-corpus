@@ -174,6 +174,12 @@ def enrich_labels(
 
 
 def default_output_path(labels_path: Path) -> Path:
+    """Write review enriched JSON under sibling stage09_input/ for Stage08 result dirs."""
+    if "stage08_llm_labeling" in labels_path.parts:
+        stage09_dir = labels_path.parent / "stage09_input"
+        stage09_dir.mkdir(parents=True, exist_ok=True)
+        return stage09_dir / "topic_metadata_v3_review_enriched.json"
+
     stem = labels_path.stem
     if stem.endswith("_review"):
         return labels_path.with_name(f"{stem}_enriched.json")

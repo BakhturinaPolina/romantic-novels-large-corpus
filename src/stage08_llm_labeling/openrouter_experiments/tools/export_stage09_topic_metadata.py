@@ -4,7 +4,7 @@ Strips deprecated / review-only fields and writes to a dedicated subfolder.
 
 Usage:
     python3 -m src.stage08_llm_labeling.openrouter_experiments.tools.export_stage09_topic_metadata \
-        --input-json results/stage08_llm_labeling/placeholder_v4_call73/labels_pos_openrouter_anthropic_claude-sonnet-4.6_romance_aware_paraphrase-MiniLM-L6-v2_v3_topic_labeling_review_enriched.json
+        --input-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3_review_enriched.json
 """
 
 from __future__ import annotations

@@ -48,3 +48,7 @@ transfer_bundle/
 
 # Archived legacy 100-novel pareto pretest scripts
 src/legacy/100_novels_script_legacy_pareto/
+
+# Stage09 input bundles (always track — human review + taxonomy mapping)
+!results/stage08_llm_labeling/**/stage09_input/
+!results/stage08_llm_labeling/**/stage09_input/**
