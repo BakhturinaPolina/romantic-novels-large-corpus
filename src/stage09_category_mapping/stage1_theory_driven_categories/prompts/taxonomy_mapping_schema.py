@@ -42,6 +42,7 @@ TAXONOMY_MAPPING_DEFAULTS: Dict[str, Any] = {
     "evidence_quality": "medium",
     "uncertainty_reason": None,
     "other_plausible_ids": [],
+    "mapping_reasoning": None,
 }
 
 
@@ -79,6 +80,7 @@ def build_taxonomy_mapping_schema(taxonomy_path: Optional[str] = None) -> Dict[s
             "evidence_quality",
             "uncertainty_reason",
             "rationale",
+            "mapping_reasoning",
             "noise_reason",
         ],
         "properties": {
@@ -113,6 +115,14 @@ def build_taxonomy_mapping_schema(taxonomy_path: Optional[str] = None) -> Dict[s
                 "anyOf": [{"type": "string"}, {"type": "null"}],
             },
             "rationale": {"type": "string", "maxLength": 600},
+            "mapping_reasoning": {
+                "type": "string",
+                "maxLength": 1200,
+                "description": (
+                    "Structured debug reasoning: cite strongest evidence (snippets first), "
+                    "explain main vs rejected alternatives, secondary choice, and macro_axes decision."
+                ),
+            },
         },
     }
 
@@ -275,6 +285,10 @@ def normalize_taxonomy_mapping_result(
             result["secondary_category_id"] = None
 
     _apply_quality_flag_consistency(result)
+
+    rationale = result.get("rationale")
+    if not result.get("mapping_reasoning") and isinstance(rationale, str) and rationale.strip():
+        result["mapping_reasoning"] = rationale.strip()
 
     if prompt_version.startswith("v1") and "confidence_band" not in result:
         result["confidence"] = result.get("confidence_band", confidence_to_band(result["confidence"]))

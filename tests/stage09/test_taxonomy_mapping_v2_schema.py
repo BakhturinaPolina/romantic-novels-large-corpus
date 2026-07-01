@@ -87,6 +87,7 @@ def test_discourse_normalization_macro_off_watchlist_on():
         "evidence_quality": "medium",
         "uncertainty_reason": None,
         "rationale": "Discourse topic.",
+        "mapping_reasoning": "Evidence: speech-tag keywords dominate; no scene beat. Main 9.1 over 4.3 because content is delivery mechanics. macro_axes=false for discourse.",
     }
     meta = {"content_type": "discourse", "primary_categories": ["narrative_style"]}
     result = normalize_taxonomy_mapping_result(
@@ -114,6 +115,7 @@ def test_noise_flags():
         "evidence_quality": "high",
         "uncertainty_reason": None,
         "rationale": "Publisher boilerplate.",
+        "mapping_reasoning": "Evidence: incoherent paratext fragments. Classified as noise; excluded from macro axes.",
     }
     result = normalize_taxonomy_mapping_result(
         raw, topic_id=0, topic_metadata={}, valid_ids=valid_ids,
@@ -122,6 +124,81 @@ def test_noise_flags():
     assert result["use_in_macro_axes"] is False
     assert result["use_in_theory_watchlist"] is False
     assert result["exclude_from_axes"] is True
+
+
+def test_schema_includes_mapping_reasoning():
+    schema = build_taxonomy_mapping_schema(str(DEFAULT_TAXONOMY_PATH))
+    assert "mapping_reasoning" in schema["properties"]
+    assert "mapping_reasoning" in schema["required"]
+
+
+def test_mapping_reasoning_defaults_from_rationale():
+    valid_ids = valid_taxonomy_ids(str(DEFAULT_TAXONOMY_PATH))
+    raw = {
+        "topic_id": 1,
+        "content_type": "scene",
+        "main_category_id": "4.2",
+        "secondary_category_id": None,
+        "other_plausible_ids": [],
+        "mechanic_tags": [],
+        "is_noise": False,
+        "use_in_macro_axes": True,
+        "use_in_theory_watchlist": True,
+        "noise_reason": None,
+        "confidence": 0.8,
+        "evidence_quality": "high",
+        "uncertainty_reason": None,
+        "rationale": "Courtship bonding dominates.",
+    }
+    result = normalize_taxonomy_mapping_result(
+        raw, topic_id=1, topic_metadata={}, valid_ids=valid_ids,
+    )
+    assert result["mapping_reasoning"] == "Courtship bonding dominates."
+
+
+def test_mapping_debug_block_from_classifier():
+    from src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter import (
+        _attach_mapping_debug,
+        _finalize_taxonomy_result,
+        _snapshot_mapping_fields,
+    )
+
+    raw = {
+        "topic_id": 118,
+        "content_type": "scene",
+        "main_category_id": "2.3",
+        "secondary_category_id": "8.1",
+        "other_plausible_ids": [],
+        "mechanic_tags": [],
+        "is_noise": False,
+        "use_in_macro_axes": True,
+        "use_in_theory_watchlist": True,
+        "noise_reason": None,
+        "confidence": 0.9,
+        "evidence_quality": "high",
+        "uncertainty_reason": None,
+        "rationale": "Explicit sex is central.",
+        "mapping_reasoning": "Snippets show explicit intercourse; main 2.3 over 8.1 setting.",
+    }
+    meta = {"rationale": "Stage08 says explicit bedroom scene."}
+    valid_ids = valid_taxonomy_ids(str(DEFAULT_TAXONOMY_PATH))
+    result = normalize_taxonomy_mapping_result(
+        raw, topic_id=118, topic_metadata=meta, valid_ids=valid_ids,
+    )
+    snapshot = _snapshot_mapping_fields(result)
+    result = _finalize_taxonomy_result(result, meta)
+    result = _attach_mapping_debug(
+        result,
+        topic_metadata=meta,
+        model_name="test-model",
+        prompt_version="v2",
+        classification_source="llm",
+        llm_snapshot=snapshot,
+    )
+    assert "mapping_debug" in result
+    assert result["mapping_debug"]["classification_source"] == "llm"
+    assert result["mapping_debug"]["stage08_label_rationale"] == "Stage08 says explicit bedroom scene."
+    assert result["mapping_reasoning"]
 
 
 def test_mechanic_tags_capped():
@@ -208,7 +285,9 @@ if __name__ == "__main__":
     test_schema_id_count_matches_yaml()
     test_taxonomy_block_includes_primary_or_secondary()
     test_secondary_context_macro_off()
-    test_discourse_normalization_macro_off_watchlist_on()
+    test_schema_includes_mapping_reasoning()
+    test_mapping_reasoning_defaults_from_rationale()
+    test_mapping_debug_block_from_classifier()
     test_noise_flags()
     test_mechanic_tags_capped()
     test_pre_router_subgenre_macro_off()

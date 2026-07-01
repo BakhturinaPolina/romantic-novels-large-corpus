@@ -127,7 +127,8 @@ python -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.a
 - **Three intimacy axes** (Stage 10): `everyday_intimacy_emotional_safety`, `sexual_tension_explicit_intimacy`, `coercion_risk_watchlist` — see `configs/stage09/theory_aligned_index_schema.yaml`
 - **Status axis**: `status_power` (6.1+6.6+6.7; 6.4 precarity separate)
 - **Everyday Intimacy & Emotional Safety**: 4.1+4.2+4.6+2.2+8.1+8.2. Stage 08 `intimacy:*` subtags and v3 `axis_hint` help routing.
-- Stage 08 v3 fields (`sexual_function`, `consent_status`) passed into taxonomy zero-shot prompts.
+- Stage 08 v3 fields (`sexual_function`, `consent_status`) plus full review bundle (`representations`, `all_keywords`, `snippets`, Stage 08 `rationale`) passed into taxonomy prompts when using the enriched JSON.
+- Each mapping JSON entry includes **`mapping_reasoning`** (LLM structured debug) and **`mapping_debug`** (classifier source, heuristic overrides, Stage 08 rationale reference).
 - Uses same API pattern as Stage 08 LLM labeling
 - JSON-only output with defensive parsing
 - Validates taxonomy IDs against fixed taxonomy list

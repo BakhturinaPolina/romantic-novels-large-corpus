@@ -142,6 +142,7 @@ The corpus spans contemporary, paranormal, historical, YA, and mystery — not b
 5. Choose main_category_id from the fixed taxonomy (dominant semantic center, not setting alone).
 6. Choose secondary_category_id only if a second category is genuinely important.
 7. Add romance mechanic_tags if applicable; report confidence (0–1), evidence_quality, uncertainty_reason.
+8. Write mapping_reasoning: structured debug text citing snippet evidence, rejected alternatives, and macro_axes rationale.
 </decision_steps>
 
 <priority_rules>
@@ -181,7 +182,7 @@ noise_reason: short string when is_noise=true, else null.
 </few_shot_examples>
 
 <output_schema>
-Return only JSON matching the enforced schema: topic_id, content_type, main_category_id, secondary_category_id, other_plausible_ids, mechanic_tags, is_noise, use_in_macro_axes, use_in_theory_watchlist, noise_reason, confidence (0–1), evidence_quality (high|medium|low), uncertainty_reason, rationale (max 600 chars).
+Return only JSON matching the enforced schema: topic_id, content_type, main_category_id, secondary_category_id, other_plausible_ids, mechanic_tags, is_noise, use_in_macro_axes, use_in_theory_watchlist, noise_reason, confidence (0–1), evidence_quality (high|medium|low), uncertainty_reason, rationale (max 600 chars), mapping_reasoning (max 1200 chars — structured debug: evidence used, why main over alternatives, secondary/macro_axes decision).
 No markdown or text outside JSON.
 </output_schema>
 """.strip()

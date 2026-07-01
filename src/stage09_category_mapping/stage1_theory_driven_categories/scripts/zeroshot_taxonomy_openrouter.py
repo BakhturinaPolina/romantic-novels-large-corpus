@@ -209,6 +209,54 @@ def _finalize_taxonomy_result(
     return result
 
 
+def _snapshot_mapping_fields(result: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "main_category_id": result.get("main_category_id"),
+        "secondary_category_id": result.get("secondary_category_id"),
+        "rationale": result.get("rationale"),
+        "mapping_reasoning": result.get("mapping_reasoning"),
+        "use_in_macro_axes": result.get("use_in_macro_axes"),
+        "mechanic_tags": list(result.get("mechanic_tags") or []),
+    }
+
+
+def _attach_mapping_debug(
+    result: Dict[str, Any],
+    *,
+    topic_metadata: Dict[str, Any],
+    model_name: str,
+    prompt_version: str,
+    classification_source: str,
+    llm_snapshot: Optional[Dict[str, Any]] = None,
+) -> Dict[str, Any]:
+    """Attach structured debug trace for taxonomy mapping review."""
+    from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
+        load_taxonomy_config,
+    )
+
+    adjustments = result.pop("heuristic_adjustments", [])
+    debug: Dict[str, Any] = {
+        "classification_source": classification_source,
+        "model_name": model_name,
+        "prompt_version": prompt_version,
+        "taxonomy_version": load_taxonomy_config(str(TAXONOMY_CONFIG_PATH)).get("version"),
+        "stage08_label_rationale": topic_metadata.get("rationale"),
+        "llm_rationale": (llm_snapshot or {}).get("rationale", result.get("rationale")),
+        "llm_mapping_reasoning": (llm_snapshot or {}).get(
+            "mapping_reasoning", result.get("mapping_reasoning")
+        ),
+        "heuristic_adjustments": adjustments,
+    }
+    if llm_snapshot and (
+        llm_snapshot.get("main_category_id") != result.get("main_category_id")
+        or llm_snapshot.get("secondary_category_id") != result.get("secondary_category_id")
+        or llm_snapshot.get("use_in_macro_axes") != result.get("use_in_macro_axes")
+    ):
+        debug["before_heuristics"] = llm_snapshot
+    result["mapping_debug"] = debug
+    return result
+
+
 def classify_topic_to_taxonomy_openrouter(
     *,
     topic_id: int,
@@ -238,6 +286,13 @@ def classify_topic_to_taxonomy_openrouter(
                 prompt_version=prompt_version,
             )
         result = _finalize_taxonomy_result(pre_routed, topic_metadata)
+        result = _attach_mapping_debug(
+            result,
+            topic_metadata=topic_metadata,
+            model_name=model_name,
+            prompt_version=prompt_version,
+            classification_source="pre_router",
+        )
         LOGGER.info(
             "Topic %d pre-routed → main=%s (%s), secondary=%s, noise=%s",
             topic_id,
@@ -342,7 +397,16 @@ def classify_topic_to_taxonomy_openrouter(
     else:
         result = _normalize_v1_result(raw, topic_id, topic_metadata, valid_ids)
 
+    llm_snapshot = _snapshot_mapping_fields(result) if use_v2 else None
     result = _finalize_taxonomy_result(result, topic_metadata)
+    result = _attach_mapping_debug(
+        result,
+        topic_metadata=topic_metadata,
+        model_name=model_name,
+        prompt_version=prompt_version,
+        classification_source="llm",
+        llm_snapshot=llm_snapshot,
+    )
 
     conf_display = result.get("confidence_band", result.get("confidence"))
     LOGGER.info(
@@ -846,7 +910,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max-tokens",
         type=int,
-        default=700,
+        default=900,
         help="Maximum new tokens for JSON output.",
     )
     parser.add_argument(

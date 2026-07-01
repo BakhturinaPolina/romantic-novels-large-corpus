@@ -398,6 +398,10 @@ def apply_domain_heuristics(
 
     topic_metadata = enrich_v3_metadata_for_stage09(topic_metadata)
     valid_ids = valid_taxonomy_ids(path)
+    before_main = result.get("main_category_id")
+    before_secondary = result.get("secondary_category_id")
+    before_macro = result.get("use_in_macro_axes")
+    before_tags = list(result.get("mechanic_tags") or [])
     main_id = result.get("main_category_id")
     secondary_id = result.get("secondary_category_id")
     primary_cats = topic_metadata.get("primary_categories", []) or []
@@ -676,6 +680,25 @@ def apply_domain_heuristics(
     else:
         result.setdefault("exclude_from_axes", False)
 
+    adjustments: List[str] = []
+    if result.get("main_category_id") != before_main:
+        adjustments.append(
+            f"main_category_id {before_main!r} -> {result.get('main_category_id')!r} (domain heuristic)"
+        )
+    if result.get("secondary_category_id") != before_secondary:
+        adjustments.append(
+            f"secondary_category_id {before_secondary!r} -> {result.get('secondary_category_id')!r} (domain heuristic)"
+        )
+    if result.get("use_in_macro_axes") != before_macro:
+        adjustments.append(
+            f"use_in_macro_axes {before_macro!r} -> {result.get('use_in_macro_axes')!r} (domain heuristic)"
+        )
+    after_tags = list(result.get("mechanic_tags") or [])
+    if after_tags != before_tags:
+        adjustments.append(f"mechanic_tags {before_tags!r} -> {after_tags!r} (domain heuristic)")
+    if adjustments:
+        result["heuristic_adjustments"] = adjustments
+
     return result
 
 
@@ -812,6 +835,7 @@ def _make_result(
         "evidence_quality": evidence_quality,
         "uncertainty_reason": None,
         "rationale": rationale,
+        "mapping_reasoning": rationale,
         "exclude_from_axes": not macro,
         "pre_routed": pre_routed,
     }
