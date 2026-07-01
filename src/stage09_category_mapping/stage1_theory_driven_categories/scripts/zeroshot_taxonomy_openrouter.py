@@ -130,6 +130,17 @@ def get_taxonomy_prompts(prompt_version: str = DEFAULT_PROMPT_VERSION) -> tuple[
     return load_taxonomy_prompts(prompt_version, taxonomy_path=TAXONOMY_CONFIG_PATH)
 
 
+def _format_representations(representations: Any) -> str:
+    if not isinstance(representations, dict):
+        return "(none)"
+    lines = []
+    for name in ("KeyBERT", "MMR", "POS", "Main"):
+        words = representations.get(name)
+        if isinstance(words, list) and words:
+            lines.append(f"{name}: {', '.join(str(w) for w in words)}")
+    return "\n".join(lines) if lines else "(none)"
+
+
 def build_user_prompt(
     *,
     topic_id: int,
@@ -142,6 +153,7 @@ def build_user_prompt(
     _, user_template = get_taxonomy_prompts(prompt_version)
     topic_metadata = enrich_v3_metadata_for_stage09(topic_metadata)
     keywords = topic_metadata.get("keywords", [])
+    all_keywords = topic_metadata.get("all_keywords", []) or keywords
     primary_categories = topic_metadata.get("primary_categories", [])
     secondary_categories = topic_metadata.get("secondary_categories", [])
     subgenre_hints = topic_metadata.get("subgenre_hints", []) or []
@@ -165,6 +177,9 @@ def build_user_prompt(
     }
     if prompt_version.lower().startswith("v2"):
         format_kwargs.update({
+            "all_keywords": ", ".join(all_keywords) if all_keywords else "(no keywords)",
+            "representations": _format_representations(topic_metadata.get("representations")),
+            "label_rationale": topic_metadata.get("rationale") or "(no Stage 08 rationale)",
             "stage07_exclude_from_axes": topic_metadata.get("stage07_exclude_from_axes", "(none)"),
             "stage07_posthoc_reason": topic_metadata.get("stage07_posthoc_reason", "(none)"),
             "stage07_content_type": topic_metadata.get("stage07_content_type", "(none)"),
@@ -633,10 +648,13 @@ def map_all_topics_to_taxonomy(
             result["source_metadata"] = {
                 "label": tm.get("label", ""),
                 "keywords": tm.get("keywords", []),
+                "all_keywords": tm.get("all_keywords", []),
+                "representations": tm.get("representations", {}),
+                "snippets": tm.get("snippets", []),
                 "primary_categories": tm.get("primary_categories", []),
                 "secondary_categories": tm.get("secondary_categories", []),
                 "scene_summary": tm.get("scene_summary", ""),
-                "label_rationale": tm.get("rationale", ""),  # Original rationale from labeling stage
+                "label_rationale": tm.get("rationale", ""),
             }
         
         taxonomy_map[tid] = result

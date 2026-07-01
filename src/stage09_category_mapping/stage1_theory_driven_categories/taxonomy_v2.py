@@ -7,6 +7,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
+import pandas as pd
 import yaml
 
 DEFAULT_TAXONOMY_PATH = (
@@ -166,11 +167,76 @@ def valid_taxonomy_ids(path: Optional[str] = None) -> Set[str]:
 def taxonomy_block_for_prompt(path: Optional[str] = None) -> str:
     lines = []
     for node in load_taxonomy_nodes(path):
-        lines.append(
+        role = node.get("primary_or_secondary", "primary")
+        desc = str(node.get("description", "")).strip().replace("\n", " ")
+        boundary = node.get("boundary_notes")
+        line = (
             f"- {node['id']} — {node['name']} "
-            f"({node['group']}): {node['description']}"
+            f"({node['group']}; {role}): {desc}"
         )
+        if boundary:
+            boundary_text = str(boundary).strip().replace("\n", " ")
+            if len(boundary_text) > 220:
+                boundary_text = boundary_text[:217] + "..."
+            line += f" [Boundary: {boundary_text}]"
+        lines.append(line)
     return "\n".join(lines)
+
+
+def exclude_from_axes_ids(path: Optional[str] = None) -> Set[str]:
+    cfg = load_taxonomy_config(path)
+    return set(cfg.get("exclude_from_axes_ids", []))
+
+
+def secondary_context_ids(path: Optional[str] = None) -> Set[str]:
+    cfg = load_taxonomy_config(path)
+    return set(cfg.get("secondary_context_ids", []))
+
+
+def is_secondary_context(category_id: Optional[str], path: Optional[str] = None) -> bool:
+    if not category_id:
+        return False
+    return category_id in secondary_context_ids(path)
+
+
+def composite_index_ids(spec: Dict[str, Any]) -> List[str]:
+    """Collect all taxonomy IDs referenced by a composite spec."""
+    ids: List[str] = []
+    for key in ("taxonomy_ids", "core_taxonomy_ids", "optional_low_weight_context"):
+        for cid in spec.get(key, []) or []:
+            if cid not in ids:
+                ids.append(cid)
+    return ids
+
+
+def build_composite_series(
+    wide_id: pd.DataFrame,
+    spec: Dict[str, Any],
+) -> pd.Series:
+    """Build a weighted composite index from a book-level wide taxonomy-id table."""
+    if wide_id.empty:
+        return pd.Series(dtype=float)
+
+    weights = spec.get("weights") or {}
+    default_w = weights.get("default", 1.0)
+    total = pd.Series(0.0, index=wide_id.index)
+
+    if spec.get("core_taxonomy_ids"):
+        id_lists = [
+            spec.get("core_taxonomy_ids") or [],
+            spec.get("optional_low_weight_context") or [],
+        ]
+    else:
+        id_lists = [spec.get("taxonomy_ids") or []]
+
+    for ids in id_lists:
+        for cid in ids:
+            if cid not in wide_id.columns:
+                continue
+            w = weights.get(cid, default_w)
+            total = total + wide_id[cid] * w
+
+    return total
 
 
 def composite_index_spec(name: str, path: Optional[str] = None) -> Dict[str, Any]:
@@ -285,10 +351,10 @@ def try_pre_route_taxonomy(
                     topic_id, tid, None, False, 0.85,
                     f"Subgenre marker ({tag}).",
                     by_id,
-                    exclude_from_axes=False,
+                    exclude_from_axes=True,
                     pre_routed=True,
                     content_type="subgenre_marker",
-                    use_in_macro_axes=True,
+                    use_in_macro_axes=False,
                     use_in_theory_watchlist=True,
                     mechanic_tags=["paranormal_instinct"] if tid == "10.1" else [],
                 )
@@ -299,10 +365,10 @@ def try_pre_route_taxonomy(
                 topic_id, tid, None, False, 0.6,
                 f"Primary {tag} without clear scene beat.",
                 by_id,
-                exclude_from_axes=False,
+                exclude_from_axes=True,
                 pre_routed=True,
                 content_type="subgenre_marker",
-                use_in_macro_axes=True,
+                use_in_macro_axes=False,
                 use_in_theory_watchlist=True,
             )
 
@@ -597,10 +663,15 @@ def apply_domain_heuristics(
         result["secondary_category_id"] = None
 
     cfg = load_taxonomy_config(path)
-    exclude_ids = set(cfg.get("exclude_from_axes_ids", []))
-    if result.get("use_in_macro_axes") is not None:
+    exclude_ids = exclude_from_axes_ids(path)
+    secondary_ids = secondary_context_ids(path)
+    main_id = result.get("main_category_id")
+    if main_id in exclude_ids or main_id in secondary_ids:
+        result["use_in_macro_axes"] = False
+        result["exclude_from_axes"] = True
+    elif result.get("use_in_macro_axes") is not None:
         result["exclude_from_axes"] = not bool(result.get("use_in_macro_axes"))
-    elif result.get("main_category_id") in exclude_ids or topic_metadata.get("exclude_from_axes"):
+    elif topic_metadata.get("exclude_from_axes"):
         result["exclude_from_axes"] = True
     else:
         result.setdefault("exclude_from_axes", False)

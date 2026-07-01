@@ -14,7 +14,7 @@ import argparse
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 import numpy as np
 import pandas as pd
@@ -44,9 +44,57 @@ except ImportError:
     DEFAULT_EMBEDDING_MODEL = None
 
 try:
-    from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import composite_index_spec
+    from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
+        build_composite_series,
+        composite_index_spec,
+    )
 except ImportError:
+    build_composite_series = None
     composite_index_spec = None
+
+
+# Leaf taxonomy IDs for book-level component sums (stable across taxonomy renames).
+COMPONENT_TAXONOMY_IDS: Dict[str, List[str]] = {
+    "commitment_hea": ["4.5"],
+    "bonding_growth": ["4.2"],
+    "positive_emotions": ["3.1"],
+    "nonexplicit_affection": ["2.2"],
+    "explicit": ["2.3"],
+    "miscommunication": ["4.3"],
+    "neg_affect": ["3.2"],
+    "breakup_conflict": ["4.4"],
+    "protective_care": ["4.6"],
+    "possessiveness": ["4.7"],
+    "violence_threat": ["7.2"],
+    "external_crisis": ["7.3"],
+    "elite_work": ["6.1"],
+    "material_glamour": ["6.6"],
+    "aristocracy_status": ["6.7"],
+    "community_ritual": ["5.3"],
+    "economic_precarity": ["6.4"],
+    "public_leisure": ["8.2"],
+    "status_objects": ["8.3"],
+    "appearance_presentation": ["1.6", "1.7"],
+    "domestic": ["8.1"],
+}
+
+
+def sum_taxonomy_id_columns(
+    wide_id: pd.DataFrame,
+    ids: List[str],
+    weights: Optional[Dict[str, float]] = None,
+) -> pd.Series:
+    """Sum weighted taxonomy-id columns from a book-level wide table."""
+    if wide_id.empty:
+        return pd.Series(dtype=float)
+    default_w = (weights or {}).get("default", 1.0)
+    total = pd.Series(0.0, index=wide_id.index)
+    for cid in ids:
+        if cid not in wide_id.columns:
+            continue
+        w = (weights or {}).get(cid, default_w)
+        total = total + wide_id[cid] * w
+    return total
 
 
 def setup_logging(output_dir: Path, log_file: str = "02_book_aggregation.log") -> logging.Logger:
@@ -230,22 +278,7 @@ def compute_indices(
     Returns:
         DataFrame with computed indices
     """
-    # Build per-book lookup from long table
-    book_cat_by_name = (book_cat_long
-        .dropna(subset=['taxonomy_main_name'])
-        .groupby(['book_id', 'taxonomy_main_name'], as_index=False)['category_prop']
-        .sum()
-    )
-
-    # Convert to wide-by-name for easy index computation
-    wide_name = (book_cat_by_name.pivot_table(
-        index='book_id',
-        columns='taxonomy_main_name',
-        values='category_prop',
-        aggfunc='sum',
-        fill_value=0.0
-    ))
-
+    # Build per-book wide table keyed by taxonomy leaf id
     wide_id = (book_cat_long
         .dropna(subset=['taxonomy_main_id'])
         .groupby(['book_id', 'taxonomy_main_id'], as_index=False)['category_prop']
@@ -258,59 +291,13 @@ def compute_indices(
             fill_value=0.0,
         ))
 
-    # Component sets (taxonomy leaf names — v2)
-    COMPONENTS = {
-        "commitment_hea": ["Reconciliation, Commitments & HEA"],
-        "bonding_growth": ["Bonding, Everyday Intimacy & Growth"],
-        "positive_emotions": ["Positive Emotions & Contentment"],
-        "nonexplicit_affection": ["Kissing & Non-Explicit Affection"],
-        "explicit": ["Explicit Sexual Acts"],
-        "miscommunication": ["Secrets, Misunderstandings & Hidden Information"],
-        "neg_affect": ["Negative Emotions & Distress"],
-        "breakup_conflict": ["Conflict, Distance & Breakup Threats"],
-        "protective_care": ["Protective Caretaking & Reassurance"],
-        "possessiveness": ["Jealousy & Possessive Conflict"],
-        "violence_threat": ["Violence, Threats & Coercion"],
-        "external_crisis": ["Risk, Danger & External Crises"],
-        "elite_work": ["High-Status Profession & Institutional Power"],
-        "material_glamour": ["Material Glamour & Consumption"],
-        "aristocracy_status": ["Aristocracy & Period Status"],
-        "community_ritual": ["Community, Norms & Social Events"],
-        "economic_precarity": ["Money, Housing & Economic Security"],
-        "public_leisure": ["Public & Leisure Spaces"],
-        "status_objects": ["Objects, Technology & Everyday Artefacts"],
-        "appearance_presentation": [
-            "Character Appearance & Self-Presentation",
-            "Gaze, Expression & Nonverbal Evaluation",
-        ],
-        "domestic": ["Domestic Spaces & Routines"],
-    }
+    # Build component columns from stable taxonomy IDs
+    components_df = pd.DataFrame(index=wide_id.index)
+    for comp, ids in COMPONENT_TAXONOMY_IDS.items():
+        components_df[comp] = sum_taxonomy_id_columns(wide_id, ids)
 
-    def sum_components(wide: pd.DataFrame, names: list) -> pd.Series:
-        present = [c for c in names if c in wide.columns]
-        if not present:
-            return pd.Series(0.0, index=wide.index)
-        return wide[present].sum(axis=1)
-
-    def sum_taxonomy_ids(wide: pd.DataFrame, ids: list, weights: Optional[Dict[str, float]] = None) -> pd.Series:
-        if wide.empty:
-            return pd.Series(dtype=float)
-        default_w = (weights or {}).get("default", 1.0)
-        total = pd.Series(0.0, index=wide.index)
-        for cid in ids:
-            if cid not in wide.columns:
-                continue
-            w = (weights or {}).get(cid, default_w)
-            total = total + wide[cid] * w
-        return total
-
-    # Build component columns
-    components_df = pd.DataFrame(index=wide_name.index)
-    for comp, names in COMPONENTS.items():
-        components_df[comp] = sum_components(wide_name, names)
-
-    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.1)
-    indices = pd.DataFrame(index=wide_name.index)
+    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.2)
+    indices = pd.DataFrame(index=wide_id.index)
 
     indices['payoff_safety'] = (
         components_df['commitment_hea'] + components_df['positive_emotions']
@@ -321,7 +308,7 @@ def compute_indices(
 
     # H2: AX_hea_index — commitment + rituals + symbolic objects (weighted)
     if composite_index_spec is not None:
-        indices['hea_index'] = sum_taxonomy_ids(
+        indices['hea_index'] = sum_taxonomy_id_columns(
             wide_id, ["4.5", "5.3", "8.3"], {"default": 1.0, "8.3": 0.5}
         )
     else:
@@ -366,12 +353,9 @@ def compute_indices(
         components_df['elite_work'] + components_df['public_leisure']
     )
 
-    # v2 composite luxury index (multi-leaf, de-biased from billionaire 6.1)
-    if composite_index_spec is not None:
+    if composite_index_spec is not None and build_composite_series is not None:
         lux_spec = composite_index_spec("luxury_composite")
-        lux_ids = lux_spec.get("taxonomy_ids", [])
-        lux_weights = lux_spec.get("weights", {})
-        indices['luxury_composite'] = sum_taxonomy_ids(wide_id, lux_ids, lux_weights)
+        indices['luxury_composite'] = build_composite_series(wide_id, lux_spec)
     else:
         indices['luxury_composite'] = (
             components_df['material_glamour']
@@ -382,38 +366,45 @@ def compute_indices(
             + 0.5 * components_df['elite_work']
         )
 
-    indices['status_dominance'] = (
-        components_df['elite_work'] + components_df['economic_precarity']
-    )
+    if composite_index_spec is not None and build_composite_series is not None:
+        sp_spec = composite_index_spec("status_power")
+        indices['status_power'] = build_composite_series(wide_id, sp_spec)
+    else:
+        indices['status_power'] = (
+            components_df['elite_work']
+            + components_df['material_glamour']
+            + components_df['aristocracy_status']
+        )
 
-    indices['appearance_presentation'] = components_df['appearance_presentation']
+    if composite_index_spec is not None and build_composite_series is not None:
+        ap_spec = composite_index_spec("appearance_presentation")
+        indices['appearance_presentation'] = build_composite_series(wide_id, ap_spec)
+    else:
+        indices['appearance_presentation'] = components_df['appearance_presentation']
 
     indices['luxury_x_love'] = indices['luxury_composite'] * indices['payoff_safety']
 
-    if composite_index_spec is not None:
+    if composite_index_spec is not None and build_composite_series is not None:
         ei_spec = composite_index_spec("everyday_intimacy_emotional_safety")
-        ei_ids = ei_spec.get("taxonomy_ids", [])
-        indices['everyday_intimacy_emotional_safety'] = sum_taxonomy_ids(wide_id, ei_ids)
+        indices['everyday_intimacy_emotional_safety'] = build_composite_series(wide_id, ei_spec)
         sti_spec = composite_index_spec("sexual_tension_explicit_intimacy")
-        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_ids(
-            wide_id, sti_spec.get("taxonomy_ids", [])
-        )
-        ccr_spec = composite_index_spec("consent_control_risk_watchlist")
-        indices['consent_control_risk_watchlist'] = sum_taxonomy_ids(
-            wide_id, ccr_spec.get("taxonomy_ids", [])
-        )
+        indices['sexual_tension_explicit_intimacy'] = build_composite_series(wide_id, sti_spec)
+        ccr_spec = composite_index_spec("coercion_risk_watchlist")
+        indices['coercion_risk_watchlist'] = build_composite_series(wide_id, ccr_spec)
     else:
-        indices['everyday_intimacy_emotional_safety'] = (
-            sum_taxonomy_ids(wide_id, ["4.1", "4.2", "4.6", "2.2", "8.1", "8.2"])
+        indices['everyday_intimacy_emotional_safety'] = sum_taxonomy_id_columns(
+            wide_id,
+            ["4.2", "4.6", "2.2", "4.1", "8.1", "8.2"],
+            {"4.2": 1.0, "4.6": 1.0, "2.2": 1.0, "4.1": 0.5, "8.1": 0.3, "8.2": 0.3, "default": 1.0},
         )
-        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_ids(
+        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_id_columns(
             wide_id, ["2.1", "2.3", "2.4", "2.5"]
         )
-        indices['consent_control_risk_watchlist'] = sum_taxonomy_ids(
-            wide_id, ["7.4", "7.2", "4.7"]
+        indices['coercion_risk_watchlist'] = sum_taxonomy_id_columns(
+            wide_id, ["7.4", "7.2"], {"7.4": 1.0, "7.2": 0.8, "default": 1.0}
         )
 
-    indices['attraction'] = sum_taxonomy_ids(wide_id, ["2.1"])
+    indices['attraction'] = sum_taxonomy_id_columns(wide_id, ["2.1"])
 
     # Attach unmapped mass
     unmapped = (book_cat_long[['book_id', 'unmapped_topic_mass']].drop_duplicates('book_id')

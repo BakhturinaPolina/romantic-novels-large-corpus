@@ -8,52 +8,57 @@ from typing import Optional
 from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
     DEFAULT_TAXONOMY_PATH,
     MECHANIC_TAG_ENUM,
+    load_taxonomy_config,
     taxonomy_block_for_prompt,
 )
 
 _BOUNDARY_RULES = """
+PRIMARY vs SECONDARY (v2.2)
+- Primary labels (1–7.x): what the topic is thematically doing — attraction, sex, bonding, conflict, family, work, danger, care.
+- Secondary/context (8.x, 9.x, 10.x): where, when, objects, discourse style, or subgenre machinery — use as main ONLY when that context truly dominates.
+- When a restaurant outing is mainly couple bonding → 4.2 main, 8.2 secondary (not 8.2 main).
+
 SEXUALITY BOUNDARIES
 - 2.1: desire, anticipation, arousal, longing, sexual tension without clear physical act.
 - 2.2: kissing, hugging, stroking, cuddling, non-explicit affection.
 - 2.3: explicit sexual acts, penetration, genital terms, orgasm, undressing in explicitly sexual context.
 - 2.4: post-sex, aftercare, reflection after intimacy, emotional processing after sex.
 - 2.5: condom/lube preparation, sexual boundary talk, sex-without-commitment negotiation.
-- Forceful sex without refusal/fear/pressure/blackmail/captivity → 2.3 + mechanic tag forceful_intensity or ambiguous_consent_watchlist, NOT 7.2 automatically.
-- Unwanted touch, coercion, nonconsent → 7.4.
+- Forceful consensual sex without coercion evidence → 2.3 + forceful_intensity tag, NOT 7.4.
+- Unwanted touch, coercion, unclear consent → 7.4 (overrides 2.1/2.3).
 
 WORK / STATUS BOUNDARIES
-- 6.1: elite hero work, wealth, business authority, CEO/tycoon/security power, male-coded professional dominance.
-- 6.2: heroine's or any character's job, career, competence, professional identity.
-- 6.3: workplace interaction between protagonists.
-- 6.4: money, debt, housing, economic security, contracts, pay, property.
-- 6.5: law, police, medicine, education, custody, court, formal institutions.
-- 6.6: fashion, jewelry, glamour consumption. 6.7: aristocracy, period status.
+- 6.1: elite roles, authority, high-power work (CEO, surgeon, royalty as power).
+- 6.2: any character's job, career, professional identity.
+- 6.3: main couple interacting through shared workplace.
+- 6.4: economic precarity, debt, housing insecurity — NOT status/luxury (6.6/6.7).
+- 6.5: courts, hospitals, schools, formal institutions and procedures.
+- 6.6: material glamour and luxury consumption. 6.7: aristocracy and period status.
 
 CONFLICT / RISK BOUNDARIES
-- 7.1: non-romantic interpersonal conflict without violence or external danger.
-- 7.2: direct threats, physical violence, coercion, captivity, stalking, blackmail, non-consensual pressure.
-- 7.3: accidents, illness crises, war, supernatural danger, external enemies, rescue danger, environmental risk.
-- Protective rather than harmful → relationship or work/status as main + mechanic tag protective_care or external_threat.
+- 4.7: jealousy/possessive main-couple conflict — distinct from 7.4 coercion watchlist.
+- 7.1: non-romantic interpersonal conflict without violence.
+- 7.2: violence, threats, non-sexual coercion.
+- 7.3: accidents, illness crises, external danger, disasters.
+- 7.4: unwanted/coercive sexual contact — watchlist; manual review recommended.
 
 RELATIONSHIP vs INNER LIFE vs SOCIAL WORLD
-- 4.x: main couple bond trajectory (meeting, bonding, secrets, conflict, reconciliation, commitment, HEA).
-- 3.x: internal affective/cognitive state when relationship action is not the main focus.
-- 5.1: pregnancy, children, parents, siblings, kinship, paternity, family secrets.
-- Do not map every emotional scene to 3.x; reconciliation/confession → 4.x main, 3.x secondary.
+- 4.x: main couple bond trajectory (setup, bonding, secrets, conflict, reconciliation, care, jealousy).
+- 3.x: internal affect when no clearer scene function dominates.
+- 5.1: family, kinship, pregnancy, parenthood.
 
 DOMINANT SEMANTIC CENTER (not setting alone)
-- Pregnancy/baby future → 5.1 or 4.5 (commitment), not 8.1 domestic alone.
-- Bedroom explicit sex → 2.x, not 8.1.
-- Security/protection logistics → 6.5 or 6.1 + protective_care, not 7.3 unless danger is central.
-- Phone/message carrying secrets → 4.3 main, 8.3 secondary.
+- Pregnancy/baby future → 5.1 or 4.5, not 8.1 alone.
+- Bedroom explicit sex → 2.x main, 8.1 secondary at most.
+- Phone/message secrets → 4.3 main, 8.3 secondary.
 
-SUBGENRE & DISCOURSE
-- 10.x main only when genre furniture dominates (werewolf identity → 10.1; investigation → 10.3).
-- Discourse (explanation, reassurance, apology patterns) → 9.x; use_in_macro_axes=false, use_in_theory_watchlist=true.
-- narrative_style primary → 9.1–9.4.
+SUBGENRE, DISCOURSE & MACRO AXES
+- 8.x / 9.x / 10.x as main → use_in_macro_axes=false (context tags for watchlist/analysis).
+- 10.x main only when genre furniture dominates AND no stronger primary theme applies.
+- 9.x discourse → use_in_macro_axes=false, use_in_theory_watchlist=true.
 
 NOISE
-- is_noise=true only for boilerplate, author notes, web fragments, character-name clusters with no coherent scene, incoherent topics.
+- is_noise=true only for boilerplate, paratext, encoding garbage, character-name clusters without coherent scene.
 """.strip()
 
 _FEW_SHOT_EXAMPLES = """
@@ -75,23 +80,45 @@ Output:
 EXAMPLE 4 — Topic 31 (Werewolf Identity and Instincts)
 Input: content_type subgenre_marker; growl, instincts, paranormal; werewolf identity.
 Output:
-{"topic_id":31,"content_type":"subgenre_marker","main_category_id":"10.1","secondary_category_id":null,"other_plausible_ids":["3.3"],"mechanic_tags":["paranormal_instinct"],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.86,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Paranormal shifter identity dominates; useful as subgenre control even if small."}
+{"topic_id":31,"content_type":"subgenre_marker","main_category_id":"10.1","secondary_category_id":null,"other_plausible_ids":["3.3"],"mechanic_tags":["paranormal_instinct"],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.86,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Paranormal shifter identity as subgenre context flag; excluded from macro axes per v2.2 policy."}
 
 EXAMPLE 5 — Topic 5 (Discourse: Explaining Unlikely Behavior)
 Input: content_type discourse; keywords explanation, unlikely, behavior; narrative_style.
 Output:
 {"topic_id":5,"content_type":"discourse","main_category_id":"9.1","secondary_category_id":null,"other_plausible_ids":["4.3"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.8,"evidence_quality":"medium","uncertainty_reason":null,"rationale":"Abstract explanation/justification speech pattern; meaningful for qualitative analysis but weak macro axis."}
+
+EXAMPLE 6 — Topic 72 (Restaurant Date and Conversation)
+Input: dinner date at restaurant, couple talking, shared meal, deepening connection.
+Output:
+{"topic_id":72,"content_type":"scene","main_category_id":"4.2","secondary_category_id":"8.2","other_plausible_ids":["2.1"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.87,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Relational courtship and bonding dominate; restaurant is secondary setting context."}
 """.strip()
+
+
+def _priority_rules_block(taxonomy_path: str) -> str:
+    cfg = load_taxonomy_config(taxonomy_path)
+    rules = cfg.get("priority_rules", {})
+    ordered = rules.get("ordered_priority", [])
+    desc = str(rules.get("description", "")).strip().replace("\n", " ")
+    lines = [desc] if desc else []
+    lines.append("Priority order (higher wins when multiple labels fit):")
+    for item in ordered:
+        lines.append(f"  - {item}")
+    notes = cfg.get("labeling_notes", {})
+    primary_note = str(notes.get("primary_vs_secondary", "")).strip().replace("\n", " ")
+    if primary_note:
+        lines.append(f"Primary vs secondary: {primary_note}")
+    return "\n".join(lines)
 
 
 def build_system_prompt(taxonomy_path: Optional[str | Path] = None) -> str:
     path = str(taxonomy_path or DEFAULT_TAXONOMY_PATH)
     taxonomy_text = taxonomy_block_for_prompt(path)
     mechanic_list = ", ".join(MECHANIC_TAG_ENUM)
+    priority_text = _priority_rules_block(path)
 
     return f"""
 <task>
-Map one BERTopic topic from a romance-fiction corpus to a fixed analytic taxonomy.
+Map one BERTopic topic from a romance-fiction corpus to a fixed analytic taxonomy (v2.2).
 </task>
 
 <role>
@@ -110,18 +137,23 @@ The corpus spans contemporary, paranormal, historical, YA, and mystery — not b
 <decision_steps>
 1. Decide whether the topic is coherent.
 2. Decide content_type: scene | discourse | subgenre_marker | paratext_or_boilerplate | character_name_cluster | noise.
-3. Decide use_in_macro_axes (coherent + stable enough for quantitative aggregation).
+3. Decide use_in_macro_axes (primary thematic label, coherent, stable for book-level aggregation).
 4. Decide use_in_theory_watchlist (meaningful for interpretation even if discourse-like or small).
 5. Choose main_category_id from the fixed taxonomy (dominant semantic center, not setting alone).
 6. Choose secondary_category_id only if a second category is genuinely important.
 7. Add romance mechanic_tags if applicable; report confidence (0–1), evidence_quality, uncertainty_reason.
 </decision_steps>
 
+<priority_rules>
+{priority_text}
+</priority_rules>
+
 <category_principles>
 A taxonomy category describes the topic's dominant observable evidence.
 A mechanic tag describes what that evidence does in romance structure.
 Choose main by semantic center; use secondary for non-dominant functions.
 Do not use 8.x just because a scene happens in a room. Do not use 3.x for every emotional beat.
+Secondary/context labels (8.x, 9.x, 10.x) should not override stronger primary themes.
 </category_principles>
 
 <mechanic_tags>
@@ -131,7 +163,7 @@ Apply when romance mechanics are clear: protective_care, possessive_control, eco
 
 <quality_flags>
 is_noise: true only for boilerplate, paratext, web fragments, character-name clusters without coherent scene, incoherent topics.
-use_in_macro_axes: true only if coherent and stable enough for book-level quantitative aggregation.
+use_in_macro_axes: true only for primary thematic labels (not 8.x/9.x/10.x as main) that are coherent and stable for aggregation.
 use_in_theory_watchlist: true if meaningful for interpretation (discourse, subgenre markers, small but theory-relevant topics).
 noise_reason: short string when is_noise=true, else null.
 </quality_flags>
@@ -164,17 +196,29 @@ REPRESENTATIVE SNIPPETS (read first — primary evidence; keywords are secondary
 
 topic_id: {topic_id}
 
-TOPIC KEYWORDS:
-
-{keywords}
-
-PREVIOUS LLM LABEL:
+TOPIC LABEL (Stage 08):
 
 {label}
 
-PREVIOUS SCENE SUMMARY:
+SCENE SUMMARY (Stage 08):
 
 {scene_summary}
+
+STAGE 08 LABELING RATIONALE:
+
+{label_rationale}
+
+TOPIC KEYWORDS (c-TF-IDF / merged):
+
+{keywords}
+
+ALL KEYWORDS (union across representations):
+
+{all_keywords}
+
+REPRESENTATION KEYWORDS (KeyBERT / MMR / POS / Main):
+
+{representations}
 
 PREVIOUS PRIMARY CATEGORIES:
 

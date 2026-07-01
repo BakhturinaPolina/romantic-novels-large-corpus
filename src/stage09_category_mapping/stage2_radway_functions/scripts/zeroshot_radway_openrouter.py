@@ -1,6 +1,6 @@
 """Stage 2: Zero-shot mapping of BERTopic topics to Radway's 13 narrative functions using Mistral-Nemo via OpenRouter.
 
-This module uses the taxonomy JSON (from Stage 2) as the single source of truth, which already contains:
+This module uses the taxonomy JSON (from Stage 1) as the single source of truth, which already contains:
 - Taxonomy mappings (main_category_id, secondary_category_id, etc.)
 - Source metadata (label, keywords, scene_summary, primary/secondary categories)
 
@@ -51,7 +51,7 @@ from src.stage08_llm_labeling.openrouter_experiments.core.generate_labels_openro
     extract_representative_docs_per_topic,
 )
 
-# Reuse taxonomy structure from Stage 2 for taxonomy name/group lookups
+# Reuse taxonomy structure from Stage 1 for taxonomy name/group lookups
 from src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter import (
     TAXONOMY_BY_ID,
 )
@@ -935,7 +935,7 @@ def classify_topic_to_radway_openrouter(
 
 
 # ---------------------------------------------------------------------------
-# 5. Helpers: Load snippets from BERTopic model (reuse from Stage 2)
+# 5. Helpers: Load snippets from BERTopic model (reuse from Stage 1)
 # ---------------------------------------------------------------------------
 
 def load_bertopic_model_for_snippets(

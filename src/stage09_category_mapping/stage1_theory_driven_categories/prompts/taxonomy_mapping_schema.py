@@ -185,11 +185,21 @@ def _apply_quality_flag_consistency(result: Dict[str, Any]) -> None:
         result["use_in_macro_axes"] = False
         result["use_in_theory_watchlist"] = True
     elif content_type == "subgenre_marker":
-        result.setdefault("use_in_macro_axes", True)
+        result["use_in_macro_axes"] = False
         result["use_in_theory_watchlist"] = True
 
     if content_type in WATCHLIST_CONTENT_TYPES and not is_noise:
         result["use_in_theory_watchlist"] = True
+
+    main_id = result.get("main_category_id")
+    if main_id:
+        from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
+            exclude_from_axes_ids,
+            secondary_context_ids,
+        )
+
+        if main_id in exclude_from_axes_ids() or main_id in secondary_context_ids():
+            result["use_in_macro_axes"] = False
 
     result["exclude_from_axes"] = not bool(result.get("use_in_macro_axes", True))
 

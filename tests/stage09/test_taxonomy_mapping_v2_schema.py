@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import pandas as pd
+
 from src.stage09_category_mapping.stage1_theory_driven_categories.prompts.taxonomy_mapping_schema import (
     build_taxonomy_mapping_schema,
     normalize_taxonomy_mapping_result,
@@ -9,9 +11,18 @@ from src.stage09_category_mapping.stage1_theory_driven_categories.prompts.taxono
 )
 from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
     DEFAULT_TAXONOMY_PATH,
+    build_composite_series,
+    composite_index_spec,
+    load_taxonomy_config,
+    taxonomy_block_for_prompt,
     try_pre_route_taxonomy,
     valid_taxonomy_ids,
 )
+
+
+def test_v22_version():
+    cfg = load_taxonomy_config(str(DEFAULT_TAXONOMY_PATH))
+    assert cfg["version"] == "2.2"
 
 
 def test_schema_includes_extended_yaml_ids():
@@ -25,6 +36,38 @@ def test_schema_id_count_matches_yaml():
     valid_ids = valid_taxonomy_ids(str(DEFAULT_TAXONOMY_PATH))
     enum_ids = set(taxonomy_id_enum(str(DEFAULT_TAXONOMY_PATH), include_noise=True))
     assert enum_ids == valid_ids
+
+
+def test_taxonomy_block_includes_primary_or_secondary():
+    block = taxonomy_block_for_prompt(str(DEFAULT_TAXONOMY_PATH))
+    assert "primary" in block
+    assert "secondary" in block
+    assert "Boundary:" in block
+
+
+def test_secondary_context_macro_off():
+    valid_ids = valid_taxonomy_ids(str(DEFAULT_TAXONOMY_PATH))
+    raw = {
+        "topic_id": 99,
+        "content_type": "scene",
+        "main_category_id": "8.2",
+        "secondary_category_id": None,
+        "other_plausible_ids": [],
+        "mechanic_tags": [],
+        "is_noise": False,
+        "use_in_macro_axes": True,
+        "use_in_theory_watchlist": True,
+        "noise_reason": None,
+        "confidence": 0.7,
+        "evidence_quality": "medium",
+        "uncertainty_reason": None,
+        "rationale": "Restaurant setting topic.",
+    }
+    result = normalize_taxonomy_mapping_result(
+        raw, topic_id=99, topic_metadata={}, valid_ids=valid_ids,
+    )
+    assert result["use_in_macro_axes"] is False
+    assert result["exclude_from_axes"] is True
 
 
 def test_discourse_normalization_macro_off_watchlist_on():
@@ -115,7 +158,7 @@ def test_mechanic_tags_capped():
     assert "economic_power" in result["mechanic_tags"]
 
 
-def test_pre_router_populates_v2_fields():
+def test_pre_router_subgenre_macro_off():
     meta = {
         "is_noise": False,
         "content_type": "subgenre_marker",
@@ -127,15 +170,49 @@ def test_pre_router_populates_v2_fields():
     assert result is not None
     assert result["main_category_id"] == "10.1"
     assert result["content_type"] == "subgenre_marker"
+    assert result["use_in_macro_axes"] is False
     assert result["use_in_theory_watchlist"] is True
+    assert result["exclude_from_axes"] is True
     assert "confidence_band" in result
 
 
+def test_composite_spec_shapes():
+    wide = pd.DataFrame(
+        {"4.2": [0.5], "4.6": [0.3], "2.2": [0.2], "4.1": [0.1], "8.1": [0.4], "8.2": [0.2]},
+        index=[1],
+    )
+    ei_spec = composite_index_spec("everyday_intimacy_emotional_safety", str(DEFAULT_TAXONOMY_PATH))
+    series = build_composite_series(wide, ei_spec)
+    expected = 0.5 * 1.0 + 0.3 * 1.0 + 0.2 * 1.0 + 0.1 * 0.5 + 0.4 * 0.3 + 0.2 * 0.3
+    assert abs(float(series.iloc[0]) - expected) < 1e-9
+
+
+def test_coercion_watchlist_spec():
+    spec = composite_index_spec("coercion_risk_watchlist", str(DEFAULT_TAXONOMY_PATH))
+    assert spec is not None
+    core_ids = set(spec.get("taxonomy_ids", []))
+    assert core_ids == {"7.4", "7.2"}
+    assert "4.7" in (spec.get("optional_low_weight_context") or [])
+
+
+def test_status_power_excludes_precarity():
+    spec = composite_index_spec("status_power", str(DEFAULT_TAXONOMY_PATH))
+    ids = set(spec.get("taxonomy_ids", []))
+    assert ids == {"6.1", "6.6", "6.7"}
+    assert "6.4" in (spec.get("exclude_taxonomy_ids") or [])
+
+
 if __name__ == "__main__":
+    test_v22_version()
     test_schema_includes_extended_yaml_ids()
     test_schema_id_count_matches_yaml()
+    test_taxonomy_block_includes_primary_or_secondary()
+    test_secondary_context_macro_off()
     test_discourse_normalization_macro_off_watchlist_on()
     test_noise_flags()
     test_mechanic_tags_capped()
-    test_pre_router_populates_v2_fields()
+    test_pre_router_subgenre_macro_off()
+    test_composite_spec_shapes()
+    test_coercion_watchlist_spec()
+    test_status_power_excludes_precarity()
     print("All taxonomy_mapping_v2_schema tests passed.")

@@ -1,5 +1,5 @@
 # ============================================================
-# FROZEN MEASUREMENT SCHEMA — v2.1 (multi-genre corpus)
+# FROZEN MEASUREMENT SCHEMA — v2.2 (multi-genre corpus)
 # ============================================================
 # Taxonomy: configs/stage09/romance_corpus_taxonomy_v2.yaml
 # Book-level aggregation: src/stage10_correlation_analysis/data_preparation/02_book_aggregation.py
@@ -15,6 +15,14 @@ global:
   taxonomy_config: configs/stage09/romance_corpus_taxonomy_v2.yaml
   exclude_from_axes_ids:
     - noise
+    - "9.1"
+    - "9.2"
+    - "9.3"
+    - "9.4"
+    - "10.1"
+    - "10.2"
+    - "10.3"
+    - "10.4"
   aggregation:
     respect_exclude_from_axes: true
     min_topic_mass_docs: null
@@ -29,7 +37,7 @@ global:
     AX_protective_care: protective_care
     AX_possessiveness: possessiveness
     AX_protective_vs_possessive: protective_vs_possessive
-    AX_status_dominance: status_dominance
+    AX_status_power: status_power
     AX_luxury_composite: luxury_composite
     AX_luxury_x_love: luxury_x_love
     AX_appearance_presentation: appearance_presentation
@@ -37,7 +45,7 @@ global:
     AX_external_crisis: external_crisis
     AX_everyday_intimacy_emotional_safety: everyday_intimacy_emotional_safety
     AX_sexual_tension_explicit_intimacy: sexual_tension_explicit_intimacy
-    AX_consent_control_risk_watchlist: consent_control_risk_watchlist
+    AX_coercion_risk_watchlist: coercion_risk_watchlist
     AX_attraction: attraction
 
 # ------------------------------------------------------------
@@ -169,16 +177,12 @@ AX_appearance_presentation:
   type: evaluative
   hypothesis_role: exploratory
   description: >
-    Hair, grooming, clothes, gaze, mirror checks — distinct from 2.1 and 2.3.
+    Hair, grooming, clothes, nonsexual gaze and expression — distinct from 2.1 and 2.3.
 
-  anchors:
-    taxonomy:
-      - 1.6
-      - 1.7
+  composite_ref: appearance_presentation
 
   construction:
-    method: weighted_sum
-    weights: equal
+    method: weighted_sum_from_composite
 
 # ------------------------------------------------------------
 # BASELINE NEGATIVITY (EXPLORATORY)
@@ -313,23 +317,19 @@ AX_protective_vs_possessive:
       ref: AX_possessiveness
 
 # ------------------------------------------------------------
-# STATUS / DOMINANCE (VISIBILITY — reach, not quality)
+# STATUS / POWER (VISIBILITY — reach, not quality)
 # ------------------------------------------------------------
-AX_status_dominance:
+AX_status_power:
   type: visibility
   hypothesis_role: confirmatory
   description: >
-    Elite professional power plus economic stakes (6.1 + 6.4 precarity).
-    Primary outcome: log_rating_count — not star quality.
+    Elite authority, material glamour, and aristocratic rank (6.1 + 6.6 + 6.7).
+    Economic precarity (6.4) is excluded. Primary outcome: log_rating_count — not star quality.
 
-  anchors:
-    taxonomy:
-      - 6.1
-      - 6.4
+  composite_ref: status_power
 
   construction:
-    method: weighted_sum
-    weights: equal
+    method: weighted_sum_from_composite
 
   usage:
     primary_outcome: log_rating_count
@@ -418,9 +418,9 @@ AX_everyday_intimacy_emotional_safety:
   hypothesis_role: exploratory
   hypothesis: [H1]
   description: >
-    Non-explicit relational closeness: courtship, non-sexual affection, everyday
-    companionship, practical care, reassurance, trust, and low-threat bonding.
-    Broader than domestic routines alone (8.1 is one subpart).
+    Non-explicit relational closeness: ongoing courtship (4.2), reassurance/care (4.6),
+    and non-explicit affection (2.2) as core; first contact (4.1) and domestic/public
+    settings (8.1, 8.2) as low-weight context only.
 
   composite_ref: everyday_intimacy_emotional_safety
 
@@ -460,16 +460,17 @@ AX_sexual_tension_explicit_intimacy:
       - 7.4
 
 # ------------------------------------------------------------
-# CONSENT / CONTROL / RISK WATCHLIST (CONTEXTUAL)
+# COERCION RISK WATCHLIST (CONTEXTUAL)
 # ------------------------------------------------------------
-AX_consent_control_risk_watchlist:
+AX_coercion_risk_watchlist:
   type: contextual
   hypothesis_role: exploratory
   description: >
-    Coercive or unwanted sexual contact, threats, possessive claiming, and
-    boundary-risk sexual control — descriptive watchlist, not a quality predictor.
+    Coercive or unwanted sexual contact (7.4) and non-sexual violence/threats (7.2).
+    Possessive conflict (4.7) is optional low-weight context only. Descriptive watchlist
+    requiring manual review — not a quality predictor.
 
-  composite_ref: consent_control_risk_watchlist
+  composite_ref: coercion_risk_watchlist
 
   construction:
     method: weighted_sum_from_composite

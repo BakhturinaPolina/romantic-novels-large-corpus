@@ -1,52 +1,140 @@
-# Romance Corpus Topic Taxonomy v2 — multi-genre v3 corpus (2000–2017)
-# Used by Stage 09 zero-shot mapping and Stage 10 macro-axis construction.
+# Romance Corpus Topic Taxonomy v2.2
+# Revised taxonomy for Stage 09 zero-shot mapping and Stage 10 macro-axis construction.
+#
+# Main design principles:
+# 1. Separate primary thematic labels from secondary context/style/subgenre flags.
+# 2. Avoid double-counting the same topic by object, place, emotion, and relationship function.
+# 3. Preserve stable IDs where possible for compatibility with previous outputs.
+# 4. Use priority rules when multiple labels seem possible.
+# 5. Do not use generic procedural_transition or generic subgenre_marker categories.
 
-version: "2.1"
+version: "2.2"
 
 exclude_from_axes_ids:
   - noise
+  - "9.1"
+  - "9.2"
+  - "9.3"
+  - "9.4"
+  - "10.1"
+  - "10.2"
+  - "10.3"
+  - "10.4"
 
-# Composite index building blocks (not single taxonomy leaves)
+secondary_context_ids:
+  # These may be useful as context tags, but should not override stronger thematic labels.
+  - "8.1"
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+  - "9.1"
+  - "9.2"
+  - "9.3"
+  - "9.4"
+  - "10.1"
+  - "10.2"
+  - "10.3"
+  - "10.4"
+
+priority_rules:
+  description: >
+    When a topic plausibly fits several categories, assign the category that best captures
+    the dominant semantic function of the topic, not just the setting or object vocabulary.
+  ordered_priority:
+    - "noise"
+    - "7.4"   # sexual coercion / consent-risk overrides sexual tension or explicit sex
+    - "2.3"   # explicit sex overrides general body, gaze, or affection labels
+    - "2.5"   # sexual negotiation/boundaries overrides general relationship talk
+    - "2.1"   # charged erotic attraction overrides nonsexual gaze
+    - "2.2"   # physical affection overrides generic bonding
+    - "4.7"   # jealousy/possessive conflict overrides generic conflict or intimacy
+    - "4.4"   # main-couple conflict overrides generic negative emotion
+    - "4.5"   # reconciliation/commitment overrides generic positive emotion
+    - "4.6"   # reassurance/care overrides generic distress or domestic setting
+    - "4.2"   # ongoing courtship/bonding overrides restaurant/home/travel setting
+    - "4.1"   # first contact/setup overrides generic social setting
+    - "5.1"   # family/kinship overrides generic social world
+    - "6.1"   # elite authority overrides generic work
+    - "6.3"   # couple interaction at work overrides generic workplace setting
+    - "7.2"   # violence/threat overrides danger/context
+    - "7.3"   # external crisis overrides setting/time
+    - "8.x"   # setting/object/time/movement only if no stronger theme dominates
+    - "9.x"   # discourse/style only if topic is mainly language form
+    - "10.x"  # subgenre/plot-engine only if topic is mainly genre machinery
+
+labeling_notes:
+  primary_vs_secondary: >
+    Primary labels describe what the topic is thematically doing: attraction, sex, bonding,
+    conflict, family, work, money, danger, care, etc. Secondary/context labels describe
+    where, when, through what objects, in what style, or in what genre register this happens.
+  multi_label_allowed: true
+  preferred_output_fields:
+    - primary_taxonomy_id
+    - primary_taxonomy_name
+    - secondary_taxonomy_ids
+    - confidence
+    - rationale_short
+    - needs_manual_review
+
 composite_indices:
+
   luxury_composite:
     description: >
-      Indirect luxury/status signals across subgenres — fashion, aristocracy,
-      formal rituals, elite spaces, and status objects — not billionaire-CEO work alone.
+      Indirect luxury/status signals across subgenres: material glamour, aristocratic status,
+      formal ceremonies, elite leisure, and status objects. This is not limited to billionaire
+      CEO work and should not include economic precarity.
     taxonomy_ids:
-      - "6.1"   # elite profession (down-weighted at aggregation)
-      - "6.6"   # material glamour
-      - "6.7"   # aristocracy / period status
-      - "5.3"   # weddings / formal social ritual
-      - "8.2"   # hotels, restaurants, leisure
-      - "8.3"   # jewelry, clothes, symbolic objects
+      - "6.1"   # elite roles, authority, high-power work
+      - "6.6"   # material glamour and consumption
+      - "6.7"   # aristocracy and period status
+      - "5.3"   # formal social rituals and public display
+      - "8.2"   # hotels, restaurants, leisure spaces
+      - "8.3"   # symbolic props/status objects, only if object function dominates
     weights:
-      "6.1": 0.5
+      "6.1": 0.7
+      "6.6": 1.0
+      "6.7": 1.0
+      "5.3": 0.6
+      "8.2": 0.4
+      "8.3": 0.4
       default: 1.0
     exclude_taxonomy_ids:
-      - "6.4"   # economic precarity ≠ luxury
+      - "6.4"   # economic insecurity/precarity is not luxury
 
   appearance_presentation:
     description: >
-      Character appearance cataloguing, grooming, gaze, and self-presentation
-      (distinct from sexual tension 2.1 and explicit 2.3).
+      Character appearance, grooming, bodily presentation, beauty evaluation, and nonsexual
+      facial or expressive cues. Erotic gaze and desire belong to 2.1.
     taxonomy_ids:
       - "1.6"
       - "1.7"
+    exclude_taxonomy_ids:
+      - "2.1"
+      - "2.3"
 
   everyday_intimacy_emotional_safety:
     description: >
-      Non-explicit relational scenes that build romantic closeness through courtship,
-      affection, reassurance, ordinary companionship, practical help, trust, care,
-      and low-threat shared routines. Not restricted to domestic settings.
-      Stage 08 intimacy subtags (courtship_ritual, nonsexual_affection,
-      everyday_companionship, domestic_care, emotional_safety) refine this composite.
-    taxonomy_ids:
-      - "4.1"
-      - "4.2"
-      - "4.6"
-      - "2.2"
-      - "8.1"
-      - "8.2"
+      Non-explicit relational closeness: ongoing courtship, tenderness, affection,
+      ordinary companionship, trust, emotional reassurance, and practical care.
+      Domestic/public settings count only as low-weight context unless the relational
+      function is explicit.
+    core_taxonomy_ids:
+      - "4.2"   # ongoing courtship and everyday relational bonding
+      - "4.6"   # emotional safety, reassurance, caretaking
+      - "2.2"   # kissing and non-explicit affection
+    optional_low_weight_context:
+      - "4.1"   # first contact / early setup
+      - "8.1"   # domestic spaces and routines
+      - "8.2"   # public/leisure outings
+    weights:
+      "4.2": 1.0
+      "4.6": 1.0
+      "2.2": 1.0
+      "4.1": 0.5
+      "8.1": 0.3
+      "8.2": 0.3
+      default: 1.0
     exclude_taxonomy_ids:
       - "2.3"
       - "2.5"
@@ -56,10 +144,9 @@ composite_indices:
 
   sexual_tension_explicit_intimacy:
     description: >
-      Desire, sexual tension, undressing/pre-sex escalation, explicit sexual acts,
-      post-sex reflection, and sexual negotiation or safety preparation (condoms,
-      boundaries, sex-without-commitment talk). Distinct from everyday courtship
-      and non-explicit affection (everyday_intimacy composite).
+      Desire, sexual tension, erotic escalation, explicit sexual acts, post-sex processing,
+      and consensual sexual boundary/safety negotiation. Coercive or unclear-consent content
+      is excluded and belongs to the consent/control watchlist.
     taxonomy_ids:
       - "2.1"
       - "2.3"
@@ -71,328 +158,672 @@ composite_indices:
       - "4.6"
       - "7.4"
 
-  consent_control_risk_watchlist:
+  coercion_risk_watchlist:
     description: >
-      Coercive or unwanted sexual contact, threats, possessive claiming, and
-      explicit boundary-risk sexual control — descriptive watchlist axis, not a
-      quality predictor.
+      Descriptive watchlist for coercion, threats, unwanted sexual contact, and visible
+      consent/boundary risk. This is not a romance-quality predictor and should be manually
+      reviewed before interpretation.
     taxonomy_ids:
       - "7.4"
       - "7.2"
+    optional_low_weight_context:
       - "4.7"
+    weights:
+      "7.4": 1.0
+      "7.2": 0.8
+      "4.7": 0.3
+      default: 1.0
 
-  status_dominance:
-    description: Reach / visibility axis — elite work and economic power signals.
+  possessive_romance_conflict:
+    description: >
+      Jealousy, possessiveness, rival/ex conflict, and controlling romantic tension
+      when it is framed as main-couple conflict rather than explicit coercion.
+    taxonomy_ids:
+      - "4.7"
+    exclude_taxonomy_ids:
+      - "7.4"
+
+  status_power:
+    description: >
+      Elite roles, institutional authority, status display, aristocratic rank, and material
+      power. This replaces the earlier status_dominance axis.
     taxonomy_ids:
       - "6.1"
+      - "6.6"
+      - "6.7"
+    exclude_taxonomy_ids:
       - "6.4"
 
+  economic_precarity_dependency:
+    description: >
+      Financial insecurity, housing instability, rent, debt, dependence, and economic
+      vulnerability. This should not be merged with luxury/status dominance.
+    taxonomy_ids:
+      - "6.4"
+
+  work_institutions:
+    description: >
+      Work identity, workplace interaction, formal institutions, and professional settings.
+      Use for career/institutional texture, not necessarily luxury or dominance.
+    taxonomy_ids:
+      - "6.1"
+      - "6.2"
+      - "6.3"
+      - "6.5"
+
+  family_social_world:
+    description: >
+      Family, friends, social circles, community judgment, weddings, parties, and social rituals
+      outside the main couple.
+    taxonomy_ids:
+      - "5.1"
+      - "5.2"
+      - "5.3"
+
+  external_risk_danger:
+    description: >
+      Non-romantic external danger: accidents, illness as crisis, crime, disasters, violence,
+      threats, action, investigation, and suspense machinery.
+    taxonomy_ids:
+      - "7.2"
+      - "7.3"
+      - "10.3"
+      - "10.4"
+    exclude_taxonomy_ids:
+      - "7.4"
+
 nodes:
-  # --- 1. Embodied & Sensory Experience ---
+
+  # ---------------------------------------------------------------------------
+  # 1. Embodied & Sensory Experience
+  # ---------------------------------------------------------------------------
+
   - id: "1.1"
     name: Body Parts & Physical Reactions
     group: Embodied & Sensory Experience
-    description: Body sensations and autonomic reactions (heartbeat, breath, trembling, blushing, sweating).
+    primary_or_secondary: primary
+    description: >
+      Body sensations and autonomic reactions: heartbeat, breath, trembling, blushing,
+      sweating, heat, shivers, physical awareness, bodily reaction. Use only when the
+      bodily reaction itself is central.
+    boundary_notes: >
+      If the reaction is clearly erotic, prefer 2.1 or 2.3. If it is injury or pain,
+      prefer 1.2. If it is fear during danger, prefer 7.3 or 7.2.
 
   - id: "1.2"
-    name: Pain, Injury & Vulnerability
+    name: Pain, Injury & Physical Vulnerability
     group: Embodied & Sensory Experience
-    description: Non-lethal pain, minor injuries, physical vulnerability not framed as deliberate violence.
+    primary_or_secondary: primary
+    description: >
+      Non-lethal pain, minor injuries, illness symptoms, exhaustion, bodily weakness,
+      physical vulnerability, and recovery when the body state itself dominates.
+    boundary_notes: >
+      If injury/illness functions as an external crisis, use 7.3. If the focus is partner
+      care, protection, or reassurance, use 4.6.
 
   - id: "1.5"
-    name: Exercise & Physical Activity
+    name: Exercise, Movement & Physical Activity
     group: Embodied & Sensory Experience
-    description: Sport and non-violent physical activity, workouts, training, running, dancing, practice.
+    primary_or_secondary: primary
+    description: >
+      Sport and non-violent physical activity: workouts, running, dancing, training,
+      practice, athletic movement, exercise routines.
+    boundary_notes: >
+      If dancing functions as courtship or flirtation, prefer 4.2 or 2.1. If movement is
+      mainly transit between locations, use 8.5.
 
   - id: "1.6"
     name: Character Appearance & Self-Presentation
     group: Embodied & Sensory Experience
+    primary_or_secondary: primary
     description: >
-      Hair, grooming, clothes, shoes, mirror checks, body-shape cataloguing,
-      beauty evaluation, and deliberate self-presentation (not explicit sex).
+      Hair, face, body description, grooming, beauty evaluation, mirror checks, deliberate
+      self-presentation, clothing as personal appearance, and general attractiveness.
+    boundary_notes: >
+      Use 6.6 when clothes/jewelry signal luxury or consumption. Use 8.3 when an object is
+      a plot prop or symbolic item. Use 2.1 when appearance is framed through erotic desire.
 
   - id: "1.7"
-    name: Gaze, Expression & Nonverbal Evaluation
+    name: Facial Expression & Non-Sexual Nonverbal Cues
     group: Embodied & Sensory Experience
+    primary_or_secondary: primary
     description: >
-      Eye contact, stares, smirks, winks, raised eyebrows, facial expression,
-      and self-conscious mutual awareness without explicit sexual acts.
+      Eye contact, glances, smiles, smirks, winks, raised eyebrows, facial expression,
+      posture, and nonverbal evaluation when not primarily erotic.
+    boundary_notes: >
+      Charged gaze, longing, seductive staring, and bodily desire belong to 2.1.
 
-  # --- 2. Sexuality, Attraction & Intimacy ---
+  # ---------------------------------------------------------------------------
+  # 2. Sexuality, Attraction & Intimacy
+  # ---------------------------------------------------------------------------
+
   - id: "2.1"
     name: Attraction & Sexual Tension
     group: Sexuality, Attraction & Intimacy
-    description: Desire, longing, flirtation, charged gaze — sexual tension without explicit acts.
+    primary_or_secondary: primary
+    description: >
+      Desire, longing, erotic awareness, flirtation, charged gaze, sensual anticipation,
+      attraction, and pre-explicit sexual tension.
+    boundary_notes: >
+      Use 1.7 for nonsexual facial/nonverbal cues. Use 2.3 for explicit sexual acts.
+      Use 7.4 for unwanted, coercive, or unclear-consent sexual contact.
 
   - id: "2.2"
     name: Kissing & Non-Explicit Affection
     group: Sexuality, Attraction & Intimacy
+    primary_or_secondary: primary
     description: >
-      Gentle kisses, hugs, cuddling, flirtatious but non-explicit touch, and tender
-      physical closeness — affection without explicit sex. Distinct from courtship
-      planning (4.1/4.2) when touch is central; distinct from possessive claiming (4.7)
-      and explicit acts (2.3).
+      Gentle kisses, hugs, cuddling, hand-holding, tender touch, comforting embraces,
+      flirtatious but non-explicit touch, and physical closeness without explicit sex.
+    boundary_notes: >
+      Use 4.2 when bonding/courtship dominates without central touch. Use 4.6 when touch
+      is mainly reassurance or caretaking. Use 4.7 for possessive claiming. Use 2.3 for
+      explicit sexual acts.
 
   - id: "2.3"
     name: Explicit Sexual Acts
     group: Sexuality, Attraction & Intimacy
+    primary_or_secondary: primary
     description: >
-      Clearly sexual behavior: oral/vaginal/anal sex, explicit stimulation, orgasms,
-      explicit arousal through clothing, forceful consensual intercourse. Distinct from
-      negotiation/safety talk (2.5) and coercion watchlist (7.4).
+      Clearly sexual behavior: oral, vaginal, or anal sex; explicit stimulation; orgasm;
+      explicit arousal through clothing; explicit consensual intercourse; and between-round
+      sexual escalation.
+    boundary_notes: >
+      Use 2.5 for negotiation/safety talk. Use 2.4 for emotional processing immediately
+      after sex. Use 7.4 for coercive, unwanted, or unclear-consent sexual contact.
 
   - id: "2.4"
     name: Aftercare & Post-Sex Reflection
     group: Sexuality, Attraction & Intimacy
+    primary_or_secondary: primary
     description: >
-      Aftercare, cuddling, emotional processing immediately after sex. Distinct from
-      post-sex arousal or between-round desire without clear emotional care (→ 2.3).
+      Aftercare, cuddling, emotional processing, reassurance, vulnerability, or relational
+      reflection immediately after sex.
+    boundary_notes: >
+      Use 2.3 if the focus remains sexual action/arousal. Use 4.6 if care/reassurance is
+      not specifically post-sex.
 
   - id: "2.5"
     name: Sexual Negotiation, Safety Preparation & Boundaries
     group: Sexuality, Attraction & Intimacy
+    primary_or_secondary: primary
     description: >
-      Condom/lube preparation, negotiating when to stop, discussing whether sex should
-      happen, sex framed without emotional commitment, and other sexual boundary or
-      safety talk — not the explicit act itself (2.3).
+      Condom/lube preparation, explicit consent discussion, deciding whether sex should
+      happen, negotiating stopping/continuing, sexual boundaries, and sex framed as casual
+      or without emotional commitment.
+    boundary_notes: >
+      Use 7.4 if boundary crossing, coercion, or unwanted sexual contact is visible.
+      Use 2.3 for the explicit act itself.
 
-  # --- 3. Emotions, Cognition & Inner Life ---
+  # ---------------------------------------------------------------------------
+  # 3. Emotions, Cognition & Inner Life
+  # ---------------------------------------------------------------------------
+
   - id: "3.1"
     name: Positive Emotions & Contentment
     group: Emotions, Cognition & Inner Life
+    primary_or_secondary: primary
     description: >
-      Joy, relief, gratitude, contentment, happiness, calm — a character's internal
-      positive affect without a central relational beat. Not commitment/HEA (4.5),
-      reassurance/protection (4.6), or physical affection (2.2).
+      Joy, relief, gratitude, contentment, calm, hope, happiness, emotional ease, and
+      positive internal affect when no clearer scene function dominates.
+    boundary_notes: >
+      Use 4.5 for commitment/HEA. Use 4.6 for reassurance/protection. Use 2.2 for physical
+      affection. Use 4.2 for relational bonding.
 
   - id: "3.2"
     name: Negative Emotions & Distress
     group: Emotions, Cognition & Inner Life
-    description: Sadness, fear, shame, anxiety, emotional turmoil.
+    primary_or_secondary: primary
+    description: >
+      Sadness, fear, shame, anxiety, grief, embarrassment, insecurity, emotional turmoil,
+      distress, and internal suffering when no clearer scene function dominates.
+    boundary_notes: >
+      Use 4.4 for main-couple conflict or breakup threat. Use 7.3 for external danger.
+      Use 4.6 for comfort/reassurance. Use 5.1 for family-driven distress.
 
   - id: "3.3"
     name: Ambivalence & Internal Conflict
     group: Emotions, Cognition & Inner Life
-    description: Mixed feelings, indecision, cognitive dissonance about relationship or life choices.
+    primary_or_secondary: primary
+    description: >
+      Mixed feelings, indecision, hesitation, cognitive dissonance, competing desires,
+      uncertainty about relationship choices or life choices.
+    boundary_notes: >
+      Use 4.3 if the uncertainty is caused by secrets or withheld information. Use 4.4 if
+      it is active couple conflict. Use 2.5 if it is sexual boundary negotiation.
 
   - id: "3.4"
     name: Beliefs, Values & Moral Reflection
     group: Emotions, Cognition & Inner Life
-    description: Characters reflecting on norms, values, ethics, promises, duties.
-
-  # --- 4. Relationship Trajectory (Main Couple) ---
-  - id: "4.1"
-    name: Meeting, First Impressions & Setup
-    group: Relationship Trajectory (Main Couple)
+    primary_or_secondary: primary
     description: >
-      First encounters, meet-cutes, and early romantic approach: invitations, first-date
-      planning, flirtation, social greetings, dance-floor approach, and negotiating
-      whether an outing counts as a date.
+      Reflection on norms, values, ethics, duties, promises, obligations, personal principles,
+      moral evaluation, or life philosophy.
+    boundary_notes: >
+      Use 4.5 for concrete commitment/proposal/HEA. Use 9.2 only when the topic is mainly
+      future-tense promise wording rather than moral content.
+
+  # ---------------------------------------------------------------------------
+  # 4. Relationship Trajectory: Main Couple
+  # ---------------------------------------------------------------------------
+
+  - id: "4.1"
+    name: First Contact & Relationship Setup
+    group: Relationship Trajectory (Main Couple)
+    primary_or_secondary: primary
+    description: >
+      First encounters, meet-cutes, initial introductions, early approach, first-date setup,
+      invitation into romantic contact, and early uncertainty about whether an encounter
+      counts as romantic.
+    boundary_notes: >
+      Generic flirtation belongs to 2.1 if erotic. Ongoing courtship after the initial setup
+      belongs to 4.2.
 
   - id: "4.2"
-    name: Bonding, Everyday Intimacy & Growth
+    name: Ongoing Courtship & Everyday Relational Bonding
     group: Relationship Trajectory (Main Couple)
+    primary_or_secondary: primary
     description: >
-      Non-explicit couple bonding beyond first meeting: courtship rituals, goodnight
-      farewells, shared meals or outings, everyday companionship, practical help,
-      and deepening trust — in any setting (home, restaurant, doorway, car, phone).
-      Prefer over 8.1 when the relational function dominates the setting.
+      Non-explicit couple bonding beyond first contact: courtship rituals, shared meals,
+      outings, goodnight farewells, ordinary companionship, practical help, phone contact,
+      small routines, emotional closeness, and deepening trust.
+    boundary_notes: >
+      Prefer this over 8.1 or 8.2 when the relational function dominates the setting.
+      Use 2.2 when physical affection is central. Use 4.6 when reassurance/care dominates.
 
   - id: "4.3"
     name: Secrets, Misunderstandings & Hidden Information
     group: Relationship Trajectory (Main Couple)
-    description: Concealed facts, misunderstandings, withheld truths between the main couple.
+    primary_or_secondary: primary
+    description: >
+      Concealed facts, mistaken assumptions, withheld truths, identity secrets, unspoken
+      motives, misread signals, and information asymmetry between the main couple.
+    boundary_notes: >
+      Use 4.4 if the misunderstanding has become active conflict. Use 3.3 if the focus is
+      internal indecision rather than hidden information.
 
   - id: "4.4"
     name: Conflict, Distance & Breakup Threats
     group: Relationship Trajectory (Main Couple)
-    description: Arguments, distancing, threats of breakup, serious relational strain.
+    primary_or_secondary: primary
+    description: >
+      Arguments, distancing, refusal, emotional withdrawal, serious relational strain,
+      breakup threats, separation, rejection, and unresolved main-couple conflict.
+    boundary_notes: >
+      Use 4.7 for jealousy/possessive conflict. Use 7.4 for sexual coercion. Use 7.2 for
+      physical threats or violence.
 
   - id: "4.5"
     name: Reconciliation, Commitments & HEA
     group: Relationship Trajectory (Main Couple)
-    description: Apologies, reunions, proposals, explicit commitments, happily-ever-after moves.
+    primary_or_secondary: primary
+    description: >
+      Apologies that repair the relationship, reunions, forgiveness as major relational
+      repair, proposals, marriage commitments, explicit future plans, declarations of love,
+      and happily-ever-after movement.
+    boundary_notes: >
+      Use 4.6 for local reassurance/care that does not mark major relationship repair.
+      Use 9.2 only when the topic is mainly promise wording.
 
   - id: "4.6"
-    name: Protective Caretaking & Reassurance
+    name: Emotional Safety, Reassurance & Caretaking
     group: Relationship Trajectory (Main Couple)
+    primary_or_secondary: primary
     description: >
-      Emotional safety between the main couple: non-coercive protection, medical or
-      recovery caretaking, verbal reassurance, apologies and forgiveness, worry for
-      wellbeing, offers to help or drive someone home, trust-building, and respecting
-      limits — distinct from jealousy (4.7), violence (7.2), and pure domestic setting (8.1).
+      Non-coercive protection, comfort, medical or recovery caretaking, worry for wellbeing,
+      offers to help, driving someone home, verbal reassurance, respecting limits, trust-building,
+      and emotional safety between the main couple.
+    boundary_notes: >
+      Use 4.5 for major apology/reconciliation/commitment. Use 1.2 when the injury/body state
+      dominates. Use 7.3 when illness/accident is primarily external crisis. Use 4.7 for jealousy.
 
   - id: "4.7"
-    name: Jealousy & Possessive Conflict
+    name: Jealousy & Possessive Romance Conflict
     group: Relationship Trajectory (Main Couple)
+    primary_or_secondary: primary
     description: >
-      Jealousy toward exes or rivals, possessive claiming, controlling jealousy
-      as relational conflict — not protective caretaking (4.6).
+      Jealousy toward exes or rivals, possessive claiming, controlling romantic jealousy,
+      territorial language, and rival-triggered conflict between romantic partners.
+    boundary_notes: >
+      Use 7.4 if possessiveness becomes sexual coercion or boundary-risk sexual control.
+      Use 4.6 for non-coercive protection/caretaking.
 
-  # --- 5. Social World Outside Main Couple ---
+  # ---------------------------------------------------------------------------
+  # 5. Social World Outside the Main Couple
+  # ---------------------------------------------------------------------------
+
   - id: "5.1"
-    name: Family & Kinship
+    name: Family, Kinship & Parenthood
     group: Social World Outside Couple
-    description: Parents, children, siblings, in-laws, family obligations, pregnancy, parenthood.
+    primary_or_secondary: primary
+    description: >
+      Parents, children, siblings, in-laws, family obligations, pregnancy, parenthood,
+      guardianship, inheritance through family, and kinship pressure.
+    boundary_notes: >
+      Use 4.x if family pressure is secondary to main-couple relationship movement.
+      Use 3.2 if the topic is primarily internal distress and family is only background.
 
   - id: "5.2"
-    name: Friends & Social Circles
+    name: Friends, Allies & Social Circles
     group: Social World Outside Couple
-    description: Friends, colleagues as social figures, found family, everyday social support.
+    primary_or_secondary: primary
+    description: >
+      Friends, colleagues as social figures, found family, confidants, social support,
+      peer advice, group belonging, and everyday non-family social ties.
+    boundary_notes: >
+      Use 6.2 or 6.3 if the interaction is primarily professional/workplace. Use 7.1 if the
+      social relation is antagonistic.
 
   - id: "5.3"
-    name: Community, Norms & Social Events
+    name: Community, Public Norms & Social Events
     group: Social World Outside Couple
+    primary_or_secondary: primary
     description: >
-      Parties, weddings, holidays, community judgment, gossip, public rituals,
-      and formal social display (including status-marked ceremonies).
+      Parties, weddings, balls, ceremonies, public rituals, community judgment, gossip,
+      reputation, formal social display, and collective social pressure.
+    boundary_notes: >
+      Use 8.2 for public/leisure location when no social ritual or public judgment dominates.
+      Use 8.4 when holiday/season is mainly temporal framing.
 
-  # --- 6. Work, Wealth, Status & Institutions ---
+  # ---------------------------------------------------------------------------
+  # 6. Work, Wealth, Status & Institutions
+  # ---------------------------------------------------------------------------
+
   - id: "6.1"
-    name: High-Status Profession & Institutional Power
+    name: Elite Roles, Authority & High-Power Work
     group: Work, Wealth, Status & Institutions
+    primary_or_secondary: primary
     description: >
-      Elite or high-status work — executive, surgeon, royalty, athlete, military rank,
-      deals and negotiations in professional contexts. NOT generic social bargaining.
+      Elite or high-authority roles: executives, CEOs, billionaires as business figures,
+      surgeons, royalty as authority, high-ranking military officers, powerful athletes,
+      major deals, negotiations, institutional command, and professional dominance.
+    boundary_notes: >
+      Use 6.2 for ordinary work identity. Use 6.6 for luxury consumption. Use 6.7 for
+      aristocratic/period rank. Use 6.4 for economic insecurity.
 
   - id: "6.2"
     name: Work & Professional Identity
     group: Work, Wealth, Status & Institutions
+    primary_or_secondary: primary
     description: >
-      A character's job, career, or professional role (teacher, nurse, assistant, etc.).
-      Any lead or supporting character — not gender- or status-specific.
+      A character's job, career, duties, employment, professional self-concept, workplace
+      competence, career goals, and ordinary occupational role.
+    boundary_notes: >
+      Use 6.1 if elite authority/status is central. Use 6.3 if the main couple interacts
+      inside a shared workplace.
 
   - id: "6.3"
     name: Shared Workplaces & Professional Interaction
     group: Work, Wealth, Status & Institutions
-    description: Scenes where main couple interacts within a shared work or institutional setting.
+    primary_or_secondary: primary
+    description: >
+      Scenes where the main couple interacts through work, office hierarchy, professional
+      collaboration, boss/employee tension, client/service relations, or shared institutional
+      duties.
+    boundary_notes: >
+      Use 4.4 if the workplace scene is mainly main-couple conflict. Use 2.1 if the workplace
+      scene is mainly sexual tension. Use 6.5 if the institution/procedure dominates.
 
   - id: "6.4"
-    name: Money, Housing & Economic Security
+    name: Economic Precarity, Security & Dependency
     group: Work, Wealth, Status & Institutions
-    description: Financial worries, rent, housing stability, debts, economic dependency (precarity).
+    primary_or_secondary: primary
+    description: >
+      Financial worries, rent, debt, housing instability, economic dependence, lack of money,
+      job insecurity, material vulnerability, and practical economic survival.
+    boundary_notes: >
+      Do not merge with luxury/status. Use 6.6 for consumption and glamour. Use 6.1 for elite
+      economic power.
 
   - id: "6.5"
-    name: Law, Medicine, Education & Formal Institutions
+    name: Institutional Settings & Procedures
     group: Work, Wealth, Status & Institutions
-    description: Courts, hospitals, schools, universities, state bureaucracy as institutions.
+    primary_or_secondary: primary
+    description: >
+      Courts, hospitals, schools, universities, state bureaucracy, legal procedures, medical
+      procedures, administrative systems, formal offices, and institutional rules.
+    boundary_notes: >
+      Use 6.2 if the focus is someone's job. Use 6.3 if the main couple interacts at work.
+      Use 7.3 if the institution appears mainly because of crisis/danger.
 
   - id: "6.6"
     name: Material Glamour & Consumption
     group: Work, Wealth, Status & Institutions
+    primary_or_secondary: primary
     description: >
-      Fashion, jewelry, designer clothes, modeling, alcohol at upscale gatherings,
-      luxury shopping, glamour without a single CEO/billionaire frame.
+      Fashion as luxury, jewelry as status display, designer clothes, expensive gifts,
+      modeling, upscale alcohol, elite shopping, glamour, wealth-coded consumption,
+      and material display.
+    boundary_notes: >
+      Use 1.6 when clothing/grooming is mainly personal appearance. Use 8.3 when an object
+      functions as a plot prop. Use 6.4 for economic insecurity.
 
   - id: "6.7"
     name: Aristocracy & Period Status
     group: Work, Wealth, Status & Institutions
-    description: Titled nobility, court formality, Regency/medieval status markers, aristocratic constraint.
+    primary_or_secondary: primary
+    description: >
+      Titled nobility, aristocratic rank, court formality, dukes, lords, ladies, Regency or
+      medieval hierarchy, inheritance status, class constraint, and period-specific social rank.
+    boundary_notes: >
+      Use 10.2 when the topic is mainly historical setting/background rather than status.
+      Use 6.1 when authority is modern institutional/professional power.
 
-  # --- 7. Conflict, Risk & Harm ---
+  # ---------------------------------------------------------------------------
+  # 7. Conflict, Risk & Harm
+  # ---------------------------------------------------------------------------
+
   - id: "7.1"
     name: Interpersonal Non-Romantic Conflict
     group: Conflict, Risk & Harm
+    primary_or_secondary: primary
     description: >
-      Antagonistic conflict (non-couple): arguments, hostility, or power struggles with
-      bosses, rivals, antagonists, or institutional gatekeepers — not main-couple conflict
-      (4.4), not family/kinship dynamics (5.1), not friend support circles (5.2), not
-      violence/threats (7.2), not accidents/disasters (7.3). Shared-workplace spats between
-      leads → 6.3 or 4.4, not 7.1.
+      Antagonistic conflict outside the main couple: hostility, arguments, rivalry, power
+      struggles with bosses, rivals, antagonists, gatekeepers, enemies, or hostile social figures.
+    boundary_notes: >
+      Main-couple conflict belongs to 4.4. Family conflict belongs to 5.1 when kinship dominates.
+      Violence/threats belong to 7.2. Workplace interaction between leads usually belongs to 6.3
+      or 4.4.
 
   - id: "7.2"
-    name: Violence, Threats & Coercion
+    name: Violence, Threats & Non-Sexual Coercion
     group: Conflict, Risk & Harm
-    description: Physical violence, threats, coercive control, clear harm or menace.
+    primary_or_secondary: primary
+    description: >
+      Physical violence, threats, intimidation, coercive control, menace, captivity,
+      blackmail, forced action, aggressive pursuit, and deliberate harm when not specifically
+      sexual.
+    boundary_notes: >
+      Use 7.4 for sexual coercion or unwanted sexual contact. Use 7.3 for accidents/disasters/
+      illness as external crisis. Use 10.4 if the topic is mainly action/combat genre machinery.
 
   - id: "7.3"
     name: Risk, Danger & External Crises
     group: Conflict, Risk & Harm
-    description: Accidents, crime, disasters, illness as external threats.
+    primary_or_secondary: primary
+    description: >
+      Accidents, crime, disasters, illness as crisis, emergencies, rescue situations, external
+      danger, suspenseful threat environments, and non-romantic crisis events.
+    boundary_notes: >
+      Use 1.2 if the body state/injury itself dominates. Use 4.6 if romantic protection or
+      caretaking dominates. Use 7.2 for deliberate violence/threats.
 
   - id: "7.4"
     name: Unwanted or Coercive Sexual Contact
     group: Conflict, Risk & Harm
+    primary_or_secondary: primary
     description: >
-      Unwanted touch, coercive sexual positioning, nonconsent signals, threatening
-      sexual contact, or explicit boundary-risk sexual control. Watchlist leaf — use
-      when consent is unclear or coercion is visible; do not conflate with consensual
-      intensity (2.3) or boundary negotiation (2.5).
+      Unwanted touch, coercive sexual positioning, nonconsent signals, threatening sexual
+      contact, sexual boundary violation, explicit sexual control, forced sexual proximity,
+      and unclear-consent sexual danger.
+    boundary_notes: >
+      Watchlist category requiring manual review. Do not conflate with consensual intensity
+      in 2.3 or consensual boundary negotiation in 2.5.
 
-  # --- 8. Spaces, Time, Activities & Objects ---
+  # ---------------------------------------------------------------------------
+  # 8. Spaces, Time, Activities & Objects
+  # ---------------------------------------------------------------------------
+
   - id: "8.1"
     name: Domestic Spaces & Routines
     group: Spaces, Time, Activities & Objects
+    primary_or_secondary: secondary
     description: >
-      Home, kitchen, bedroom as setting; chores and domestic routines when the spatial
-      or routine frame dominates. Use as secondary when a topic is primarily courtship,
-      affection, or reassurance (→ 4.1, 4.2, 4.6, or 2.2 as main). "Domestic care" is
-      only a subpart of the broader everyday-intimacy axis, not a synonym for it.
+      Home, kitchen, bedroom, bathroom, household routines, chores, cooking, cleaning,
+      domestic organization, and private living space when setting/routine dominates.
+    boundary_notes: >
+      Use as secondary when the topic is primarily courtship, affection, reassurance, sex,
+      or conflict. Domestic space is not automatically intimacy.
 
   - id: "8.2"
-    name: Public & Leisure Spaces
+    name: Public, Travel & Leisure Spaces
     group: Spaces, Time, Activities & Objects
-    description: Restaurants, bars, hotels, parks, travel, holidays, public outings.
+    primary_or_secondary: secondary
+    description: >
+      Restaurants, bars, hotels, parks, beaches, travel, vacation locations, public outings,
+      leisure sites, and recreational spaces when location dominates.
+    boundary_notes: >
+      Use 4.2 if the outing is mainly relational bonding. Use 5.3 if it is a public ritual,
+      wedding, party, gossip event, or community judgment scene.
 
   - id: "8.3"
-    name: Objects, Technology & Everyday Artefacts
+    name: Everyday Objects & Symbolic Props
     group: Spaces, Time, Activities & Objects
-    description: Phones, cars, clothes, jewelry, gifts, symbolic objects.
+    primary_or_secondary: secondary
+    description: >
+      Phones, cars, keys, letters, gifts, rings, clothing items, jewelry, photographs,
+      documents, bags, drinks, household items, and other objects when the object functions
+      as a prop, tool, symbol, or plot device.
+    boundary_notes: >
+      Use 1.6 for appearance/grooming. Use 6.6 for luxury/status consumption. Use 2.5 for
+      condoms/lube/sexual safety preparation.
 
   - id: "8.4"
     name: Time, Seasons & Temporal Framing
     group: Spaces, Time, Activities & Objects
-    description: Passage of time, schedules, delays, seasons, holidays as temporal structure.
+    primary_or_secondary: secondary
+    description: >
+      Passage of time, schedules, deadlines, waiting, delays, seasons, holidays as temporal
+      markers, night/day framing, anniversaries, and temporal structure.
+    boundary_notes: >
+      Use 5.3 if the holiday is primarily a social ritual or public event. Use 4.5 if the
+      time frame is tied to commitment/HEA.
 
   - id: "8.5"
-    name: Movement & Transit
+    name: Movement, Transit & Spatial Transition
     group: Spaces, Time, Activities & Objects
-    description: Vehicles, elevators, driving, walking between locations, chase/transit beats.
+    primary_or_secondary: secondary
+    description: >
+      Vehicles, elevators, walking between locations, driving, arriving, leaving, entering,
+      exiting, chase/transit beats, and movement across space when transit dominates.
+    boundary_notes: >
+      This is not a generic procedural transition category. Use only when movement/transit
+      vocabulary forms a coherent topic. Use 4.4 for leaving as relational conflict.
 
-  # --- 9. Narrative Style & Discourse (included in Stage09 analysis) ---
+  # ---------------------------------------------------------------------------
+  # 9. Auxiliary Style & Discourse Flags
+  # ---------------------------------------------------------------------------
+
   - id: "9.1"
     name: Dialogue Delivery & Speech Tags
-    group: Narrative Style & Discourse
-    description: Adverbs of saying, volume, tone (mumbled, hoarsely, whispered delivery patterns).
+    group: Auxiliary Style & Discourse Flags
+    primary_or_secondary: secondary
+    description: >
+      Speech tags, adverbs of saying, voice quality, volume, tone of delivery, whispering,
+      mumbling, shouting, hoarse speech, and repeated dialogue mechanics.
+    boundary_notes: >
+      Use only when the topic is mainly discourse mechanics, not the content of dialogue.
 
   - id: "9.2"
-    name: Future-Tense Commitment & Promise Speech Acts
-    group: Narrative Style & Discourse
-    description: I'll/we'll vows, promises, threats of leaving as speech-act patterns.
+    name: Promise, Vow & Future-Tense Speech Acts
+    group: Auxiliary Style & Discourse Flags
+    primary_or_secondary: secondary
+    description: >
+      Future-tense promises, vows, threats of leaving, "I'll/we'll" speech-act patterns,
+      and repeated commitment/threat wording as language form.
+    boundary_notes: >
+      Use 4.5 for real commitment/reconciliation. Use 4.4 for breakup threat as relationship
+      conflict. Use this only when the pattern is mainly formal/discourse-level.
 
   - id: "9.3"
-    name: Humor Register
-    group: Narrative Style & Discourse
-    description: Chuckles, snorts, banter tone without a distinct plot event.
+    name: Humor, Banter & Light Register
+    group: Auxiliary Style & Discourse Flags
+    primary_or_secondary: secondary
+    description: >
+      Chuckles, snorts, teasing, banter tone, jokes, comic reactions, light conversational
+      register, and repeated humor markers without a distinct plot event.
+    boundary_notes: >
+      Use 4.2 if banter functions as courtship/bonding. Use 2.1 if banter is mainly sexual
+      flirtation.
 
   - id: "9.4"
-    name: Interior Monologue Particles
-    group: Narrative Style & Discourse
-    description: Hesitation fillers, rhetorical self-talk, discourse particles.
+    name: Interior Monologue Particles & Self-Talk
+    group: Auxiliary Style & Discourse Flags
+    primary_or_secondary: secondary
+    description: >
+      Hesitation fillers, rhetorical self-talk, repeated discourse particles, fragmented
+      inner monologue, and stylistic markers of internal narration.
+    boundary_notes: >
+      Use 3.x when the topic has clear emotional/cognitive content.
 
-  # --- 10. Subgenre & Plot Engine ---
+  # ---------------------------------------------------------------------------
+  # 10. Auxiliary Subgenre & Plot-Engine Flags
+  # ---------------------------------------------------------------------------
+
   - id: "10.1"
     name: Paranormal & Immortal Beings
-    group: Subgenre & Plot Engine
-    description: Shifters, vampires, magic systems, supernatural creature appearance.
+    group: Auxiliary Subgenre & Plot-Engine Flags
+    primary_or_secondary: secondary
+    description: >
+      Shifters, vampires, immortals, magic systems, supernatural beings, supernatural
+      powers, creature bodies, and paranormal worldbuilding.
+    boundary_notes: >
+      Use as a context flag. If the topic is mainly desire, danger, violence, or care, assign
+      the appropriate primary thematic label first.
 
   - id: "10.2"
     name: Historical & Period Setting
-    group: Subgenre & Plot Engine
-    description: Regency, medieval, period-specific social furniture beyond couple conflict.
+    group: Auxiliary Subgenre & Plot-Engine Flags
+    primary_or_secondary: secondary
+    description: >
+      Regency, medieval, Victorian, or other period-specific setting details, historical
+      furniture, old-fashioned transport, period manners, and historical background.
+    boundary_notes: >
+      Use 6.7 when period content is mainly aristocratic rank or class/status constraint.
 
   - id: "10.3"
     name: Mystery, Suspense & Investigation
-    group: Subgenre & Plot Engine
-    description: Detectives, clues, crime procedural danger distinct from couple conflict.
+    group: Auxiliary Subgenre & Plot-Engine Flags
+    primary_or_secondary: secondary
+    description: >
+      Detectives, clues, investigation, procedural mystery, crime discovery, suspects,
+      surveillance, case-solving, and suspense machinery.
+    boundary_notes: >
+      Use 7.3 if danger/crisis dominates. Use 7.2 if threats or violence dominate.
 
   - id: "10.4"
     name: Action & Weaponized Conflict
-    group: Subgenre & Plot Engine
-    description: Gunfights, combat set-pieces, battle scenes (non-couple romantic conflict).
+    group: Auxiliary Subgenre & Plot-Engine Flags
+    primary_or_secondary: secondary
+    description: >
+      Gunfights, combat set-pieces, weapons, battles, tactical movement, physical pursuit,
+      and action-scene machinery.
+    boundary_notes: >
+      Use 7.2 if violence/threat/harm is the thematic center. Use 7.3 if crisis/danger is
+      broader than action mechanics.
 
-  # --- Special ---
+  # ---------------------------------------------------------------------------
+  # Special
+  # ---------------------------------------------------------------------------
+
   - id: noise
     name: Noise / Technical / Paratext
     group: Special
-    description: Boilerplate, front/back matter, artefacts, non-story material, encoding garbage.
+    primary_or_secondary: special
+    description: >
+      Boilerplate, front matter, back matter, copyright pages, advertisements, previews,
+      table of contents, encoding garbage, OCR artefacts, navigation fragments, non-story
+      material, and incoherent technical residue.
+    boundary_notes: >
+      Assign noise only when the topic is not meaningfully interpretable as narrative,
+      thematic, stylistic, or contextual story content.
