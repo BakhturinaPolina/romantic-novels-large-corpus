@@ -97,7 +97,7 @@ This follows pretest Pareto analysis on a smaller corpus of 100 "billionaire" ro
 - `data/stage03_samples/fit_indices_seed42.npy`, `eval_indices_seed42.npy`, `sample_manifest_seed42.json`
 
 **Rationale**
-- See `results/reports/stage03_stratified_fit_sample_design.md`.
+- See `results/reports/stage03/stage03_stratified_fit_sample_design.md`.
 
 ---
 

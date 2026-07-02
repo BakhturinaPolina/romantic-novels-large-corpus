@@ -72,6 +72,6 @@ Row counts in `subsampling_metadata/` CSVs (including header) match **n + 1** fo
 ## 4. Downstream pointers
 
 - **Sentence extraction:** `data/processed/romance_subdataset_downloaded_v2_sentences/` (`sentences_{train,val,test}.csv`) — produced from the v2 EPUB tree; see `src/stage01_ingestion/README.md`.
-- **Power analysis write-up:** [`stage11_power_analysis_report.md`](stage11_power_analysis_report.md) (this folder).
+- **Power analysis write-up:** [`stage11_power_analysis_report.md`](../stage11/stage11_power_analysis_report.md).
 
 For methodology and hypotheses tied to the v2 scale, see **`SCIENTIFIC_README.md`** at the repository root.

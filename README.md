@@ -55,7 +55,7 @@ python -m src.stage03_train.cli sample --train-csv ... --val-csv ... \
 python -m src.stage03_train.cli tune --config configs/stage03/train_v3.yaml --run-id <run_id>
 ```
 
-BO optimizes a **topic-count-penalized coherence** objective (`bo_objective` in `trials_partial.csv`); raw `coherence_c_v` and `n_topics` are logged per call. Stage 04 applies a `min_n_topics` floor before Pareto ranking. Design notes: [stage03_stratified_fit_sample_design.md](results/reports/stage03_stratified_fit_sample_design.md), [stage03_bertopic_search_space_prior.md](results/reports/stage03_bertopic_search_space_prior.md).
+BO optimizes a **topic-count-penalized coherence** objective (`bo_objective` in `trials_partial.csv`); raw `coherence_c_v` and `n_topics` are logged per call. Stage 04 applies a `min_n_topics` floor before Pareto ranking. Design notes: [stage03_stratified_fit_sample_design.md](results/reports/stage03/stage03_stratified_fit_sample_design.md), [stage03_bertopic_search_space_prior.md](results/reports/stage03/stage03_bertopic_search_space_prior.md).
 
 ## Pipeline
 
@@ -81,6 +81,7 @@ See `data/raw/romance_subdataset_downloaded_v2_full/SUBSAMPLING_V2.md` for cohor
 ## Documentation
 
 - [SCIENTIFIC_README.md](SCIENTIFIC_README.md) — Methodology, hypotheses, results
+- [Taxonomy v2.4 heuristic hardening](results/reports/stage09/taxonomy_v24_heuristic_hardening.md) — 6.1 split, sexual-function lock fix
 - [configs/](configs/) — YAML configuration files
 - [results/reports/](results/reports/) — Analysis reports
 

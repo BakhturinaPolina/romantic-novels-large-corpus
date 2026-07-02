@@ -1,31 +1,67 @@
-# Romance Corpus Topic Taxonomy v2.2
-# Revised taxonomy for Stage 09 zero-shot mapping and Stage 10 macro-axis construction.
+# Romance Corpus Topic Taxonomy v2.4
+# Stage 09: full leaf taxonomy for zero-shot classification (context + axis labels).
+# Stage 10: only axis_bearing_ids contribute to hypothesis macro-axes.
+#
+# ID migration from v2.2:
+#   8.3  -> 8.3b (default: everyday props) or 8.3a (commitment symbols only)
+#   5.3  -> 5.3b (default: gossip/parties) or 5.3a (wedding/proposal/ceremony)
+# ID migration from v2.3:
+#   6.1  -> 6.1b (default: generic business/deal) or 6.1a (elite romantic status/power)
 #
 # Main design principles:
-# 1. Separate primary thematic labels from secondary context/style/subgenre flags.
+# 1. Separate axis-bearing thematic labels from context/style/subgenre flags.
 # 2. Avoid double-counting the same topic by object, place, emotion, and relationship function.
-# 3. Preserve stable IDs where possible for compatibility with previous outputs.
-# 4. Use priority rules when multiple labels seem possible.
-# 5. Do not use generic procedural_transition or generic subgenre_marker categories.
+# 3. Use priority rules when multiple labels seem possible.
+# 4. Do not use generic procedural_transition or generic subgenre_marker categories.
+# 5. Use uncertain_interpretable instead of forcing weak topics into 4.2.
 
-version: "2.2"
+version: "2.4"
+
+# Narrow allowlist for Stage10 hypothesis macro-axis construction (H1–H6).
+axis_bearing_ids:
+  - "2.1"
+  - "2.2"
+  - "2.3"
+  - "2.4"
+  - "2.5"
+  - "3.1"
+  - "3.2"
+  - "4.2"
+  - "4.3"
+  - "4.4"
+  - "4.5"
+  - "4.6"
+  - "4.7"
+  - "5.3a"
+  - "6.1a"
+  - "6.4"
+  - "6.6"
+  - "6.7"
+  - "7.2"
+  - "7.3"
+  - "7.4"
+  - "8.3a"
 
 exclude_from_axes_ids:
   - noise
-  - "9.1"
-  - "9.2"
-  - "9.3"
-  - "9.4"
-  - "10.1"
-  - "10.2"
-  - "10.3"
-  - "10.4"
-
-secondary_context_ids:
-  # These may be useful as context tags, but should not override stronger thematic labels.
+  - uncertain_interpretable
+  - "1.1"
+  - "1.2"
+  - "1.5"
+  - "1.6"
+  - "1.7"
+  - "4.1"
+  - "5.1"
+  - "5.2"
+  - "5.3b"
+  - "6.1b"
+  - "6.2"
+  - "6.3"
+  - "6.5"
+  - "7.1"
   - "8.1"
   - "8.2"
-  - "8.3"
+  - "8.3b"
   - "8.4"
   - "8.5"
   - "9.1"
@@ -36,6 +72,41 @@ secondary_context_ids:
   - "10.2"
   - "10.3"
   - "10.4"
+
+# Exploratory-only: meaningful for H5/H6 interpretation but not confirmatory macro axes.
+exploratory_only_ids:
+  - "3.3"
+
+secondary_context_ids:
+  # Context-only labels: mappable but excluded from macro axes unless paired as secondary.
+  - "1.1"
+  - "1.2"
+  - "1.5"
+  - "1.6"
+  - "1.7"
+  - "4.1"
+  - "5.1"
+  - "5.2"
+  - "5.3b"
+  - "6.1b"
+  - "6.2"
+  - "6.3"
+  - "6.5"
+  - "7.1"
+  - "8.1"
+  - "8.2"
+  - "8.3b"
+  - "8.4"
+  - "8.5"
+  - "9.1"
+  - "9.2"
+  - "9.3"
+  - "9.4"
+  - "10.1"
+  - "10.2"
+  - "10.3"
+  - "10.4"
+  - uncertain_interpretable
 
 priority_rules:
   description: >
@@ -55,7 +126,7 @@ priority_rules:
     - "4.2"   # ongoing courtship/bonding overrides restaurant/home/travel setting
     - "4.1"   # first contact/setup overrides generic social setting
     - "5.1"   # family/kinship overrides generic social world
-    - "6.1"   # elite authority overrides generic work
+    - "6.1a"  # elite romantic status/power overrides generic business
     - "6.3"   # couple interaction at work overrides generic workplace setting
     - "7.2"   # violence/threat overrides danger/context
     - "7.3"   # external crisis overrides setting/time
@@ -85,19 +156,17 @@ composite_indices:
       formal ceremonies, elite leisure, and status objects. This is not limited to billionaire
       CEO work and should not include economic precarity.
     taxonomy_ids:
-      - "6.1"   # elite roles, authority, high-power work
+      - "6.1a"  # elite romantic status/power display
       - "6.6"   # material glamour and consumption
       - "6.7"   # aristocracy and period status
-      - "5.3"   # formal social rituals and public display
-      - "8.2"   # hotels, restaurants, leisure spaces
-      - "8.3"   # symbolic props/status objects, only if object function dominates
+      - "5.3a"  # romantic social rituals only (not gossip/parties)
+      - "8.2"   # hotels, restaurants, leisure spaces (low-weight context)
     weights:
-      "6.1": 0.7
+      "6.1a": 0.7
       "6.6": 1.0
       "6.7": 1.0
-      "5.3": 0.6
-      "8.2": 0.4
-      "8.3": 0.4
+      "5.3a": 0.3
+      "8.2": 0.3
       default: 1.0
     exclude_taxonomy_ids:
       - "6.4"   # economic insecurity/precarity is not luxury
@@ -123,17 +192,10 @@ composite_indices:
       - "4.2"   # ongoing courtship and everyday relational bonding
       - "4.6"   # emotional safety, reassurance, caretaking
       - "2.2"   # kissing and non-explicit affection
-    optional_low_weight_context:
-      - "4.1"   # first contact / early setup
-      - "8.1"   # domestic spaces and routines
-      - "8.2"   # public/leisure outings
     weights:
       "4.2": 1.0
       "4.6": 1.0
       "2.2": 1.0
-      "4.1": 0.5
-      "8.1": 0.3
-      "8.2": 0.3
       default: 1.0
     exclude_taxonomy_ids:
       - "2.3"
@@ -188,7 +250,7 @@ composite_indices:
       Elite roles, institutional authority, status display, aristocratic rank, and material
       power. This replaces the earlier status_dominance axis.
     taxonomy_ids:
-      - "6.1"
+      - "6.1a"
       - "6.6"
       - "6.7"
     exclude_taxonomy_ids:
@@ -206,7 +268,8 @@ composite_indices:
       Work identity, workplace interaction, formal institutions, and professional settings.
       Use for career/institutional texture, not necessarily luxury or dominance.
     taxonomy_ids:
-      - "6.1"
+      - "6.1a"
+      - "6.1b"
       - "6.2"
       - "6.3"
       - "6.5"
@@ -218,7 +281,8 @@ composite_indices:
     taxonomy_ids:
       - "5.1"
       - "5.2"
-      - "5.3"
+      - "5.3a"
+      - "5.3b"
 
   external_risk_danger:
     description: >
@@ -241,7 +305,7 @@ nodes:
   - id: "1.1"
     name: Body Parts & Physical Reactions
     group: Embodied & Sensory Experience
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Body sensations and autonomic reactions: heartbeat, breath, trembling, blushing,
       sweating, heat, shivers, physical awareness, bodily reaction. Use only when the
@@ -253,7 +317,7 @@ nodes:
   - id: "1.2"
     name: Pain, Injury & Physical Vulnerability
     group: Embodied & Sensory Experience
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Non-lethal pain, minor injuries, illness symptoms, exhaustion, bodily weakness,
       physical vulnerability, and recovery when the body state itself dominates.
@@ -264,7 +328,7 @@ nodes:
   - id: "1.5"
     name: Exercise, Movement & Physical Activity
     group: Embodied & Sensory Experience
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Sport and non-violent physical activity: workouts, running, dancing, training,
       practice, athletic movement, exercise routines.
@@ -275,23 +339,24 @@ nodes:
   - id: "1.6"
     name: Character Appearance & Self-Presentation
     group: Embodied & Sensory Experience
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Hair, face, body description, grooming, beauty evaluation, mirror checks, deliberate
       self-presentation, clothing as personal appearance, and general attractiveness.
     boundary_notes: >
-      Use 6.6 when clothes/jewelry signal luxury or consumption. Use 8.3 when an object is
-      a plot prop or symbolic item. Use 2.1 when appearance is framed through erotic desire.
+      Context/exploratory only — do not override 2.1 sexual tension. Use 6.6 when clothes/jewelry
+      signal luxury or consumption. Use 8.3a for commitment-symbol objects. Use 8.3b for ordinary props.
 
   - id: "1.7"
     name: Facial Expression & Non-Sexual Nonverbal Cues
     group: Embodied & Sensory Experience
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Eye contact, glances, smiles, smirks, winks, raised eyebrows, facial expression,
       posture, and nonverbal evaluation when not primarily erotic.
     boundary_notes: >
-      Charged gaze, longing, seductive staring, and bodily desire belong to 2.1.
+      Context only — smiles/winks/eyes are not automatically intimacy. Charged gaze, longing,
+      seductive staring, and bodily desire belong to 2.1.
 
   # ---------------------------------------------------------------------------
   # 2. Sexuality, Attraction & Intimacy
@@ -360,15 +425,16 @@ nodes:
   # ---------------------------------------------------------------------------
 
   - id: "3.1"
-    name: Positive Emotions & Contentment
+    name: Positive Resolution, Relief & Emotional Payoff
     group: Emotions, Cognition & Inner Life
     primary_or_secondary: primary
     description: >
-      Joy, relief, gratitude, contentment, calm, hope, happiness, emotional ease, and
-      positive internal affect when no clearer scene function dominates.
+      Relief after repair, emotional security, resolved happiness, felt safety, gratitude after
+      conflict resolution, and positive payoff when no clearer scene function dominates.
     boundary_notes: >
-      Use 4.5 for commitment/HEA. Use 4.6 for reassurance/protection. Use 2.2 for physical
-      affection. Use 4.2 for relational bonding.
+      Do NOT use for generic amusement, jokes, smiles, casual good mood, or shared laughter
+      without resolution/payoff function — route to 9.3 or 1.7. Use 4.5 for commitment/HEA.
+      Use 4.6 for reassurance/protection. Use 2.2 for physical affection. Use 4.2 for bonding.
 
   - id: "3.2"
     name: Negative Emotions & Distress
@@ -389,8 +455,9 @@ nodes:
       Mixed feelings, indecision, hesitation, cognitive dissonance, competing desires,
       uncertainty about relationship choices or life choices.
     boundary_notes: >
-      Use 4.3 if the uncertainty is caused by secrets or withheld information. Use 4.4 if
-      it is active couple conflict. Use 2.5 if it is sexual boundary negotiation.
+      Exploratory-only for H5/H6 (not in axis_bearing_ids). Use 4.3 if the uncertainty is
+      caused by secrets or withheld information. Use 4.4 if it is active couple conflict.
+      Use 2.5 if it is sexual boundary negotiation.
 
   - id: "3.4"
     name: Beliefs, Values & Moral Reflection
@@ -495,7 +562,7 @@ nodes:
   - id: "5.1"
     name: Family, Kinship & Parenthood
     group: Social World Outside Couple
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Parents, children, siblings, in-laws, family obligations, pregnancy, parenthood,
       guardianship, inheritance through family, and kinship pressure.
@@ -506,7 +573,7 @@ nodes:
   - id: "5.2"
     name: Friends, Allies & Social Circles
     group: Social World Outside Couple
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Friends, colleagues as social figures, found family, confidants, social support,
       peer advice, group belonging, and everyday non-family social ties.
@@ -514,48 +581,70 @@ nodes:
       Use 6.2 or 6.3 if the interaction is primarily professional/workplace. Use 7.1 if the
       social relation is antagonistic.
 
-  - id: "5.3"
-    name: Community, Public Norms & Social Events
+  - id: "5.3a"
+    name: Romantic Social Rituals & Public Couple Recognition
     group: Social World Outside Couple
     primary_or_secondary: primary
     description: >
-      Parties, weddings, balls, ceremonies, public rituals, community judgment, gossip,
-      reputation, formal social display, and collective social pressure.
+      Weddings, proposals, engagement announcements, formal couple recognition, public
+      commitment ceremonies, and rituals that visibly mark the main couple's relationship.
     boundary_notes: >
-      Use 8.2 for public/leisure location when no social ritual or public judgment dominates.
-      Use 8.4 when holiday/season is mainly temporal framing.
+      Use 5.3b for generic parties, balls, gossip, or community judgment without couple recognition.
+      Use 8.2 for public/leisure location when no ritual dominates.
+
+  - id: "5.3b"
+    name: Community Judgment, Gossip & Social Events
+    group: Social World Outside Couple
+    primary_or_secondary: secondary
+    description: >
+      Parties, balls, gossip, public reputation pressure, community judgment, and collective
+      social events without visible couple commitment or recognition.
+    boundary_notes: >
+      Use 5.3a for weddings, proposals, and formal couple recognition. Use 8.2 for location-only topics.
 
   # ---------------------------------------------------------------------------
   # 6. Work, Wealth, Status & Institutions
   # ---------------------------------------------------------------------------
 
-  - id: "6.1"
-    name: Elite Roles, Authority & High-Power Work
+  - id: "6.1a"
+    name: Elite Romantic Status / Power Display
     group: Work, Wealth, Status & Institutions
     primary_or_secondary: primary
     description: >
-      Elite or high-authority roles: executives, CEOs, billionaires as business figures,
-      surgeons, royalty as authority, high-ranking military officers, powerful athletes,
-      major deals, negotiations, institutional command, and professional dominance.
+      Elite or high-authority roles when tied to romantic hero appeal or status display:
+      billionaire identity, CEO power, aristocratic authority, elite lifestyle, surgeons,
+      royalty as authority, high-ranking officers, powerful athletes as romantic figures.
     boundary_notes: >
+      Use 6.1b for generic business deal/contract/payment without romantic status function.
       Use 6.2 for ordinary work identity. Use 6.6 for luxury consumption. Use 6.7 for
       aristocratic/period rank. Use 6.4 for economic insecurity.
+
+  - id: "6.1b"
+    name: Generic Business / Institutional Negotiation
+    group: Work, Wealth, Status & Institutions
+    primary_or_secondary: secondary
+    description: >
+      Generic business negotiation, deal terms, contracts, payment, percent, partners,
+      institutional logistics without visible romantic status or hero-power framing.
+    boundary_notes: >
+      Use 6.1a when billionaire/CEO/aristocratic authority is central to romantic appeal.
+      Use 8.3b for communication-medium props. Use uncertain_interpretable when weak evidence.
 
   - id: "6.2"
     name: Work & Professional Identity
     group: Work, Wealth, Status & Institutions
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       A character's job, career, duties, employment, professional self-concept, workplace
       competence, career goals, and ordinary occupational role.
     boundary_notes: >
-      Use 6.1 if elite authority/status is central. Use 6.3 if the main couple interacts
+      Use 6.1a if elite authority/status is central. Use 6.3 if the main couple interacts
       inside a shared workplace.
 
   - id: "6.3"
     name: Shared Workplaces & Professional Interaction
     group: Work, Wealth, Status & Institutions
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Scenes where the main couple interacts through work, office hierarchy, professional
       collaboration, boss/employee tension, client/service relations, or shared institutional
@@ -572,13 +661,14 @@ nodes:
       Financial worries, rent, debt, housing instability, economic dependence, lack of money,
       job insecurity, material vulnerability, and practical economic survival.
     boundary_notes: >
-      Do not merge with luxury/status. Use 6.6 for consumption and glamour. Use 6.1 for elite
-      economic power.
+      Require precarity/vulnerability vocabulary (rent, debt, can't afford, dependence, eviction).
+      Generic business deal, contract, payment, or percent terms are NOT 6.4 — use 6.1b, 8.3b,
+      or uncertain_interpretable. Do not merge with luxury/status. Use 6.6 for consumption and glamour.
 
   - id: "6.5"
     name: Institutional Settings & Procedures
     group: Work, Wealth, Status & Institutions
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Courts, hospitals, schools, universities, state bureaucracy, legal procedures, medical
       procedures, administrative systems, formal offices, and institutional rules.
@@ -595,8 +685,8 @@ nodes:
       modeling, upscale alcohol, elite shopping, glamour, wealth-coded consumption,
       and material display.
     boundary_notes: >
-      Use 1.6 when clothing/grooming is mainly personal appearance. Use 8.3 when an object
-      functions as a plot prop. Use 6.4 for economic insecurity.
+      Use 1.6 when clothing/grooming is mainly personal appearance. Use 8.3a for commitment-symbol
+      objects. Use 8.3b for ordinary props. Use 6.4 for economic insecurity.
 
   - id: "6.7"
     name: Aristocracy & Period Status
@@ -607,7 +697,7 @@ nodes:
       medieval hierarchy, inheritance status, class constraint, and period-specific social rank.
     boundary_notes: >
       Use 10.2 when the topic is mainly historical setting/background rather than status.
-      Use 6.1 when authority is modern institutional/professional power.
+      Use 6.1a when authority is modern institutional/professional power.
 
   # ---------------------------------------------------------------------------
   # 7. Conflict, Risk & Harm
@@ -616,7 +706,7 @@ nodes:
   - id: "7.1"
     name: Interpersonal Non-Romantic Conflict
     group: Conflict, Risk & Harm
-    primary_or_secondary: primary
+    primary_or_secondary: secondary
     description: >
       Antagonistic conflict outside the main couple: hostility, arguments, rivalry, power
       struggles with bosses, rivals, antagonists, gatekeepers, enemies, or hostile social figures.
@@ -683,20 +773,29 @@ nodes:
       Restaurants, bars, hotels, parks, beaches, travel, vacation locations, public outings,
       leisure sites, and recreational spaces when location dominates.
     boundary_notes: >
-      Use 4.2 if the outing is mainly relational bonding. Use 5.3 if it is a public ritual,
-      wedding, party, gossip event, or community judgment scene.
+      Use 4.2 if the outing is mainly relational bonding. Use 5.3a if it is a wedding or formal
+      couple recognition. Use 5.3b for parties, gossip, or community judgment.
 
-  - id: "8.3"
-    name: Everyday Objects & Symbolic Props
+  - id: "8.3a"
+    name: Commitment Symbols & Love Tokens
+    group: Spaces, Time, Activities & Objects
+    primary_or_secondary: primary
+    description: >
+      Rings, wedding bands, love letters, meaningful gifts, proposal objects, family heirlooms,
+      and symbolic objects that visibly mark commitment, reconciliation, or couple recognition.
+    boundary_notes: >
+      Axis low-weight for HEA index only. Use 8.3b for phones, cars, coffee mugs, and ordinary props.
+
+  - id: "8.3b"
+    name: Everyday Props & Communication Media
     group: Spaces, Time, Activities & Objects
     primary_or_secondary: secondary
     description: >
-      Phones, cars, keys, letters, gifts, rings, clothing items, jewelry, photographs,
-      documents, bags, drinks, household items, and other objects when the object functions
-      as a prop, tool, symbol, or plot device.
+      Phones, cars, keys, bags, documents, coffee mugs, drinks, doors, furniture, and ordinary
+      props when they serve as scene mechanics only.
     boundary_notes: >
-      Use 1.6 for appearance/grooming. Use 6.6 for luxury/status consumption. Use 2.5 for
-      condoms/lube/sexual safety preparation.
+      Use 8.3a for commitment-symbol objects. Use 1.6 for appearance/grooming. Use 6.6 for
+      luxury/status consumption. Use 2.5 for condoms/lube/sexual safety preparation.
 
   - id: "8.4"
     name: Time, Seasons & Temporal Framing
@@ -706,8 +805,8 @@ nodes:
       Passage of time, schedules, deadlines, waiting, delays, seasons, holidays as temporal
       markers, night/day framing, anniversaries, and temporal structure.
     boundary_notes: >
-      Use 5.3 if the holiday is primarily a social ritual or public event. Use 4.5 if the
-      time frame is tied to commitment/HEA.
+      Use 5.3a if the holiday is primarily a wedding or couple-recognition ritual. Use 5.3b for
+      generic social events. Use 4.5 if the time frame is tied to commitment/HEA.
 
   - id: "8.5"
     name: Movement, Transit & Spatial Transition
@@ -827,3 +926,14 @@ nodes:
     boundary_notes: >
       Assign noise only when the topic is not meaningfully interpretable as narrative,
       thematic, stylistic, or contextual story content.
+
+  - id: uncertain_interpretable
+    name: Interpretable but Not Axis-Safe
+    group: Special
+    primary_or_secondary: special
+    description: >
+      Coherent topic with no reliable hypothesis-relevant semantic center. Use instead of
+      forcing weak object, movement, gesture, or discourse topics into 4.2 or 3.x.
+    boundary_notes: >
+      Always exclude from macro axes. Prefer over 4.2 when bonding/courtship function is not
+      visible in snippets. May still be useful for qualitative review.

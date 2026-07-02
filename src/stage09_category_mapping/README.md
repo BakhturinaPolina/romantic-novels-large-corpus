@@ -5,7 +5,7 @@ Map Stage08 topic labels to theory-driven taxonomy categories, then optionally t
 ## Prerequisites
 
 - **Stage08 topic metadata** — e.g. `results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json`
-- **Taxonomy config** — `configs/stage09/romance_corpus_taxonomy_v2.yaml` (v2.2; secondary context 8.x/9.x/10.x excluded from macro axes)
+- **Taxonomy config** — `configs/stage09/romance_corpus_taxonomy_v2.yaml` (v2.4; axis-bearing vs context-only; 6.1a/6.1b split)
 - **OpenRouter API key** — for zero-shot classification (`OPENROUTER_API_KEY`)
 
 ## Two-stage pipeline

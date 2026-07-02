@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 SEXUAL_FUNCTION_TO_AXIS: dict[str, str] = {
-    "none": "everyday_intimacy_emotional_safety",
+    "none": "no_hypothesis_signal",
     "nonsexual_affection": "everyday_intimacy_emotional_safety",
     "sexual_tension": "sexual_tension_explicit_intimacy",
     "presex_escalation": "sexual_tension_explicit_intimacy",
@@ -70,7 +70,7 @@ def infer_axis_hint_v3(
     fn = str(sexual_function).lower()
     if fn == "consent_boundary":
         return "consent_control_risk"
-    return SEXUAL_FUNCTION_TO_AXIS.get(fn, "everyday_intimacy_emotional_safety")
+    return SEXUAL_FUNCTION_TO_AXIS.get(fn, "no_hypothesis_signal")
 
 
 def infer_subgenre_hints_v3(

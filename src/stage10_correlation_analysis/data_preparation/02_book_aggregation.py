@@ -67,13 +67,17 @@ COMPONENT_TAXONOMY_IDS: Dict[str, List[str]] = {
     "possessiveness": ["4.7"],
     "violence_threat": ["7.2"],
     "external_crisis": ["7.3"],
-    "elite_work": ["6.1"],
+    "elite_work": ["6.1a"],
+    "generic_business": ["6.1b"],
+    "internal_ambivalence": ["3.3"],
     "material_glamour": ["6.6"],
     "aristocracy_status": ["6.7"],
-    "community_ritual": ["5.3"],
+    "community_ritual": ["5.3a"],
+    "community_social": ["5.3b"],
     "economic_precarity": ["6.4"],
     "public_leisure": ["8.2"],
-    "status_objects": ["8.3"],
+    "commitment_symbols": ["8.3a"],
+    "everyday_props": ["8.3b"],
     "appearance_presentation": ["1.6", "1.7"],
     "domestic": ["8.1"],
 }
@@ -296,7 +300,7 @@ def compute_indices(
     for comp, ids in COMPONENT_TAXONOMY_IDS.items():
         components_df[comp] = sum_taxonomy_id_columns(wide_id, ids)
 
-    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.2)
+    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.3)
     indices = pd.DataFrame(index=wide_id.index)
 
     indices['payoff_safety'] = (
@@ -309,13 +313,13 @@ def compute_indices(
     # H2: AX_hea_index — commitment + rituals + symbolic objects (weighted)
     if composite_index_spec is not None:
         indices['hea_index'] = sum_taxonomy_id_columns(
-            wide_id, ["4.5", "5.3", "8.3"], {"default": 1.0, "8.3": 0.5}
+            wide_id, ["4.5", "5.3a", "8.3a"], {"default": 1.0, "5.3a": 0.8, "8.3a": 0.5}
         )
     else:
         indices['hea_index'] = (
             components_df['commitment_hea']
-            + components_df['community_ritual']
-            + 0.5 * components_df['status_objects']
+            + 0.8 * components_df['community_ritual']
+            + 0.5 * components_df['commitment_symbols']
         )
 
     indices['explicitness'] = components_df['explicit']
@@ -332,7 +336,7 @@ def compute_indices(
             + components_df['violence_threat']
             + components_df['external_crisis']
         )
-        - (components_df['positive_emotions'] + components_df['nonexplicit_affection'])
+        - (components_df['positive_emotions'] + components_df['nonexplicit_affection'] + components_df['protective_care'])
     )
 
     indices['miscommunication'] = components_df['miscommunication']
@@ -405,6 +409,8 @@ def compute_indices(
         )
 
     indices['attraction'] = sum_taxonomy_id_columns(wide_id, ["2.1"])
+
+    indices['internal_ambivalence'] = components_df['internal_ambivalence']
 
     # Attach unmapped mass
     unmapped = (book_cat_long[['book_id', 'unmapped_topic_mass']].drop_duplicates('book_id')

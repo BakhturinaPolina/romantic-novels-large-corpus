@@ -4,6 +4,8 @@ Exploratory analysis of Bayesian optimization trial results for the v3 corpus. M
 
 Supports **single-run** (one embedding) or **multi-run compare** (e.g. L12 vs L6) via `configs/stage04/selection_notebooks.yaml`.
 
+**v4 granular three-way compare (L12 / L6 / MPNet Pareto dry-runs):** use [`configs/stage04/selection_notebooks_v4_granular.yaml`](../../configs/stage04/selection_notebooks_v4_granular.yaml) — set that path in the notebook config load cell (notebooks default to the v3 yaml).
+
 ## Run order
 
 1. `**04_pareto_efficiency_analysis_v3.ipynb`** — load BO trials per run, apply Stage04 filters, run three selection strategies, save per-run top-k CSVs and figures; optional cross-model comparison tables/figures.
@@ -28,6 +30,10 @@ Set `comparison.id` and `comparison.base_dir` for cross-model artifacts. The top
 - `v3_minilm6_first` (L6, `paraphrase-MiniLM-L6-v2`)
 
 Comparison outputs: `results/selection/_compare/l12_vs_l6/`
+
+### v4 L12 / L6 / MPNet Pareto compare
+
+[`configs/stage04/selection_notebooks_v4_granular.yaml`](../../configs/stage04/selection_notebooks_v4_granular.yaml) — run IDs `v4_*_granular_phase1_dryrun`, comparison output: `results/selection/_compare/v4_l12_l6_mpnet_pareto/`. Requires Phase 1 BO + [`run_v4_granular_phase1_dryrun.sh`](../../scripts/stage04/run_v4_granular_phase1_dryrun.sh) per embedding.
 
 **Caveat:** L12 was tuned with `model_runs: 1`; L6 uses `model_runs: 3`. Stability-filter funnel counts are not directly comparable until L12 is rerun with the standard config.
 

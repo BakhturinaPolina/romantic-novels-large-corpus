@@ -220,8 +220,8 @@ def apply_weighted_score(
   (penalized), and `n_topics` per call.
 - Stage 04: `configs/stage04/eval_select.yaml -> selection.min_n_topics` (default 20) filters
   degenerate winners before Pareto/weighting.
-- Reports: `results/reports/stage03_stratified_fit_sample_design.md`,
-  `results/reports/stage03_bertopic_search_space_prior.md`.
+- Reports: `results/reports/stage03/stage03_stratified_fit_sample_design.md`,
+  `results/reports/stage03/stage03_bertopic_search_space_prior.md`.
 
 ## `cli.py`
 

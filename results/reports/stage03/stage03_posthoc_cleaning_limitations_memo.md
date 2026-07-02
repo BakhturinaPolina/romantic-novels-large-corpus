@@ -13,9 +13,9 @@
 | Artifact | Path |
 |----------|------|
 | Toy topic tables | `results/experiments/stratified_minilm12v2_seed42_v2/final_compare/call_59/` |
-| Preprocessing gap analysis | [`stage05_preprocessing_analysis.md`](stage05_preprocessing_analysis.md) |
+| Preprocessing gap analysis | [`stage05_preprocessing_analysis.md`](../stage05/stage05_preprocessing_analysis.md) |
 | call_59 taxonomy review | [`stage08_stage09_taxonomy_improvement_notes_call59.md`](stage08_stage09_taxonomy_improvement_notes_call59.md) |
-| Debugging plan | [`stage05_debugging_plan.md`](stage05_debugging_plan.md) |
+| Debugging plan | [`stage05_debugging_plan.md`](../stage05/stage05_debugging_plan.md) |
 | Post-hoc rule config | [`configs/call73/topic_posthoc_rules.yaml`](../../configs/call73/topic_posthoc_rules.yaml) |
 | Rule implementation | [`src/common/topic_posthoc/rules.py`](../../src/common/topic_posthoc/rules.py) |
 

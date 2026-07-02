@@ -33,13 +33,13 @@ Repository structure note: active pipeline packages stay at the `src/` root, whi
 | # | Hypothesis | Operationalization |
 |---|------------|-------------------|
 | H1 | **Love-over-Sex**: Higher-rated novels emphasize emotional connection over explicit content | `AX_payoff_safety − AX_explicitness` (4.5+3.1 minus 2.3) |
-| H2 | **HEA Index**: Stronger "Happily Ever After" signals predict appreciation | `4.5 + 5.3 + 0.5×8.3` (`AX_hea_index`) |
+| H2 | **HEA Index**: Stronger "Happily Ever After" signals predict appreciation | `4.5 + 0.8×5.3a + 0.5×8.3a` (`AX_hea_index`) |
 | H3 | **Luxury × Love**: Wealth/glamour appeals mainly when paired with emotional depth | `AX_luxury_composite × AX_payoff_safety` |
 | H4 | **Protectiveness vs Possessiveness**: Caring protection valued over jealousy | `AX_protective_care − AX_possessiveness` (4.6 − 4.7) |
-| H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(3.2+4.4+7.2+7.3) − (3.1+2.2)` (`AX_dark_vs_tender`) |
+| H5 | **Darkness vs Tenderness**: Top-rated novels favor tenderness over dark themes | `(3.2+4.4+7.2+7.3) − (3.1+2.2+4.6)` (`AX_dark_vs_tender`) |
 | H6 | **Narrative Arc**: Successful romances progress from conflict to resolution | `AX_narrative_arc_repair` — tertile Δ only (begin→end) |
 
-Macro-axis notes (v2.2): Full schema in `configs/stage09/theory_aligned_index_schema.yaml`. Taxonomy v2.2 in `configs/stage09/romance_corpus_taxonomy_v2.yaml`. Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (core 4.2+4.6+2.2; low-weight 4.1/8.1/8.2); **`AX_sexual_tension_explicit_intimacy`** (2.1+2.3+2.4+2.5); **`AX_coercion_risk_watchlist`** (7.4+7.2; 4.7 optional context, manual review). Also: `AX_status_power` (6.1+6.6+6.7), `AX_love_over_sex`, `AX_attraction` (2.1), `AX_explicitness` (2.3); H4 uses **4.6/4.7**; H6 requires segment-level tertile deltas.
+Macro-axis notes (v2.4): Full schema in `configs/stage09/theory_aligned_index_schema.yaml`. Taxonomy v2.4 in `configs/stage09/romance_corpus_taxonomy_v2.yaml`. **Axis-bearing IDs** (narrow allowlist for Stage10 hypotheses) are separate from the full leaf taxonomy used in Stage09 classification — context labels (1.x, 6.1b, 8.x, 9.x, 10.x, `uncertain_interpretable`) are mappable but excluded from macro axes. **`3.3`** is exploratory-only (`AX_internal_ambivalence` for H5/H6). Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (core 4.2+4.6+2.2 only); **`AX_sexual_tension_explicit_intimacy`** (2.1+2.3+2.4+2.5); **`AX_coercion_risk_watchlist`** (7.4+7.2; manual review). Also: `AX_status_power` (6.1a+6.6+6.7), `AX_economic_dependency` (6.4), `AX_love_over_sex`, `AX_attraction` (2.1). Stage08 `axis_hint=no_hypothesis_signal` is a weak routing hint only. Design memos: `results/reports/stage09/taxonomy_v23_axis_context_design.md`, `taxonomy_v24_heuristic_hardening.md`.
 
 ---
 
@@ -105,7 +105,7 @@ Stages 01–02 do not write pipeline outputs under `results/` except optional do
 
 **BO objective and selection guards**: Bayesian optimization maximizes `CoherenceWithTopicPenalty` — vocab-filtered c_v coherence minus a linear shortfall when `n_topics < 20` (weight 0.15, aligned with Stage 04). Per-call checkpoints log raw `coherence_c_v`, `bo_objective`, `n_topics`, and `topic_diversity` in `trials_partial.csv`. Stage 04 drops trials with `n_topics < min_n_topics` (default 20) before Pareto-then-weighted ranking. Empirical pattern from the v2 run: `hdbscan__min_cluster_size` ≈ 65–165 yields many stable topics (often 100–500); values ≳ 180 tend to collapse to &lt; 20 topics despite high coherence.
 
-See `results/reports/stage03_stratified_fit_sample_design.md` and `results/reports/stage03_bertopic_search_space_prior.md`.
+See `results/reports/stage03/stage03_stratified_fit_sample_design.md` and `results/reports/stage03/stage03_bertopic_search_space_prior.md`.
 
 **Character name exclusion** (Stage 02): Person-like tokens are extracted from sentence CSVs and merged (deduplicated) into `data/processed/custom_stoplist.txt` with a timestamped backup, so topic models can down-weight named-entity co-occurrence alongside generic English stopwords.
 
@@ -140,13 +140,13 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 3. Emotions, Cognition & Inner Life
 4. Relationship Trajectory (Main Couple)
 5. Social World Outside Couple
-6. Work, Wealth, Status & Institutions — **6.1 de-biased** from billionaire CEO; **6.6 material glamour**, **6.7 aristocracy**
+6. Work, Wealth, Status & Institutions — **6.1a** elite romantic status (axis) vs **6.1b** generic business (context); **6.6 material glamour**, **6.7 aristocracy**
 7. Conflict, Risk & Harm
 8. Spaces, Time, Activities & Objects — incl. **8.5 movement/transit**
 9. Narrative Style & Discourse — **excluded from macro-axes**
 10. Subgenre & Plot Engine
 
-**Composite indices** (Stage 10): `luxury_composite` (6.1×0.5 + 6.6 + 6.7 + 5.3 + 8.2 + 8.3), `appearance_presentation` (1.6 + 1.7), `luxury_x_love` for H3.
+**Composite indices** (Stage 10): `luxury_composite` (6.1a + 6.6 + 6.7 + 5.3a + 8.2), `appearance_presentation` (1.6 + 1.7), `luxury_x_love` for H3, `internal_ambivalence` (3.3 exploratory).
 
 **Radway's 13 Narrative Functions** (Radway, 1984):
 - Phase I (R1–R7): Initial Conflict & Isolation
@@ -195,7 +195,7 @@ See **`results/reports/01_stage_reports/`** for detailed methodology per stage w
 ### Mass Appeal (Popularity)
 
 Books with higher rating counts emphasize:
-- **Status/dominance themes** (elite profession 6.1, economic security 6.4 — reach axis)
+- **Status/dominance themes** (elite romantic status 6.1a, economic security 6.4 — reach axis)
 - **Material luxury composite** (fashion, weddings, hotels, historical glamour — not CEO/billionaire topics alone)
 - **Emotional safety** (protective care, repair after conflict)
 - **Social support** (family, friends, community)

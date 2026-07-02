@@ -179,4 +179,4 @@ bash scripts/stage08/run_stage08_placeholder_v4_call.sh 73
 |-----|------|
 | [`stage08_progress.md`](stage08_progress.md) | Pipeline status |
 | [`stage08_production_model_decision_call73.md`](stage08_production_model_decision_call73.md) | Model locked; prompt pending |
-| [`placeholder_v4_call73_analysis_strategy.md`](placeholder_v4_call73_analysis_strategy.md) | Frozen call strategy |
+| [`placeholder_v4_call73_analysis_strategy.md`](../call73/placeholder_v4_call73_analysis_strategy.md) | Frozen call strategy |

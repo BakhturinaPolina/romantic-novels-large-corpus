@@ -9,4 +9,6 @@
 | [`stage08_v3_sexual_model_comparison.md`](stage08_v3_sexual_model_comparison.md) | Sexual-subset model pilots |
 | [`stage08_stage09_taxonomy_improvement_notes_call59.md`](stage08_stage09_taxonomy_improvement_notes_call59.md) | Prior taxonomy memo (call 59) |
 
+Cross-stage strategy: [`call73/placeholder_v4_call73_analysis_strategy.md`](../call73/placeholder_v4_call73_analysis_strategy.md)
+
 Artifact paths (labels, CSVs): [`results/stage08_llm_labeling/placeholder_v4_call73/`](../../stage08_llm_labeling/placeholder_v4_call73/README.md)

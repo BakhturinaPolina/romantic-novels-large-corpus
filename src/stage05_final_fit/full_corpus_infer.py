@@ -12,7 +12,6 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-import pyarrow as pa
 import pyarrow.parquet as pq
 from bertopic import BERTopic
 from tqdm import tqdm
@@ -23,6 +22,7 @@ from src.stage03_train.data_io import clean_sentence
 from src.stage05_final_fit.chunked_transform import transform_docs_batched
 from src.stage05_final_fit.compare_fit import compare_model_dir
 from src.stage05_final_fit.embedding_cache import load_test_embeddings_mmap, resolve_embeddings_cache_path
+from src.stage05_final_fit.infer_resume import assert_infer_stream_aligned, should_skip_infer_chunk
 
 LOGGER = logging.getLogger("stage05_full_corpus_infer")
 
@@ -90,6 +90,51 @@ def _prepare_chunk_frame(
     return meta, docs, np.asarray(keep_rows, dtype=np.int64)
 
 
+def _infer_progress_path(output_parquet: Path) -> Path:
+    return output_parquet.with_suffix(output_parquet.suffix + ".progress.json")
+
+
+def _infer_stats_path(output_parquet: Path) -> Path:
+    return output_parquet.with_suffix(output_parquet.suffix + ".stats.json")
+
+
+def _infer_partial_dir(output_parquet: Path) -> Path:
+    return output_parquet.parent / f"{output_parquet.stem}.partial"
+
+
+def _count_parquet_rows(parquet_path: Path) -> int:
+    return int(pq.ParquetFile(parquet_path).metadata.num_rows)
+
+
+def _load_split_stats(output_parquet: Path) -> dict[str, Any] | None:
+    stats_path = _infer_stats_path(output_parquet)
+    if not stats_path.exists():
+        return None
+    with open(stats_path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _merge_chunk_parquets(chunk_dir: Path, output_parquet: Path) -> None:
+    chunk_files = sorted(chunk_dir.glob("chunk_*.parquet"))
+    if not chunk_files:
+        raise RuntimeError(f"No chunk shards to merge in {chunk_dir}")
+    writer: pq.ParquetWriter | None = None
+    for chunk_file in chunk_files:
+        table = pq.read_table(chunk_file)
+        if writer is None:
+            writer = pq.ParquetWriter(output_parquet, table.schema, compression="snappy")
+        writer.write_table(table)
+    if writer is not None:
+        writer.close()
+
+
+def _write_chunk_shard(partial_dir: Path, chunk_idx: int, frame: pd.DataFrame) -> Path:
+    partial_dir.mkdir(parents=True, exist_ok=True)
+    shard = partial_dir / f"chunk_{chunk_idx:06d}.parquet"
+    frame.to_parquet(shard, index=False, compression="snappy")
+    return shard
+
+
 def infer_split_to_parquet(
     topic_model: BERTopic,
     csv_path: Path,
@@ -101,27 +146,119 @@ def infer_split_to_parquet(
     batch_size: int = 8192,
     chunk_size: int = 50_000,
     sentence_column: str = "sentence",
+    resume: bool = True,
 ) -> dict[str, Any]:
-    """Transform one split CSV to parquet with topic assignments."""
+    """Transform one split CSV to parquet with topic assignments (resumable)."""
     output_parquet.parent.mkdir(parents=True, exist_ok=True)
-    if output_parquet.exists():
-        output_parquet.unlink()
+    stats_path = _infer_stats_path(output_parquet)
+    progress_path = _infer_progress_path(output_parquet)
+    partial_dir = _infer_partial_dir(output_parquet)
 
-    n_docs = 0
+    if resume and output_parquet.exists() and not progress_path.exists():
+        cached = _load_split_stats(output_parquet)
+        if cached is not None:
+            LOGGER.info("[%s] resume skip — output exists: %s (%d docs)", split, output_parquet, cached["n_docs"])
+            return cached
+
+    rows_done = 0
+    chunks_done = 0
+    if resume and progress_path.exists():
+        with open(progress_path, encoding="utf-8") as f:
+            payload = json.load(f)
+        rows_done = int(payload.get("rows_done", 0))
+        chunks_done = int(payload.get("chunks_done", 0))
+        LOGGER.info(
+            "[%s] resuming infer from row %d chunk %d (%s)",
+            split,
+            rows_done,
+            chunks_done,
+            progress_path,
+        )
+    elif (
+        resume
+        and output_parquet.exists()
+        and not stats_path.exists()
+        and not progress_path.exists()
+    ):
+        try:
+            legacy_rows = _count_parquet_rows(output_parquet)
+        except Exception as exc:
+            LOGGER.warning(
+                "[%s] corrupt partial parquet (%s); deleting and restarting split (%s)",
+                split,
+                output_parquet,
+                exc,
+            )
+            output_parquet.unlink(missing_ok=True)
+            legacy_rows = 0
+        if legacy_rows > 0:
+            import shutil
+
+            partial_dir.mkdir(parents=True, exist_ok=True)
+            legacy_shard = partial_dir / "chunk_000000_legacy.parquet"
+            shutil.move(output_parquet, legacy_shard)
+            rows_done = legacy_rows
+            chunks_done = 1
+            with open(progress_path, "w", encoding="utf-8") as f:
+                json.dump(
+                    {
+                        "rows_done": rows_done,
+                        "chunks_done": chunks_done,
+                        "n_docs": rows_done,
+                        "n_outliers": 0,
+                        "legacy_parquet_import": True,
+                    },
+                    f,
+                )
+            LOGGER.info(
+                "[%s] imported legacy partial parquet (%d rows) for resume -> %s",
+                split,
+                legacy_rows,
+                legacy_shard,
+            )
+    elif output_parquet.exists():
+        output_parquet.unlink()
+    if partial_dir.exists() and not resume:
+        import shutil
+
+        shutil.rmtree(partial_dir)
+
+    n_docs = rows_done
     n_outliers = 0
-    row_offset = embedding_row_offset
-    writer: pq.ParquetWriter | None = None
+    if rows_done > 0 and stats_path.exists():
+        with open(stats_path, encoding="utf-8") as f:
+            partial_stats = json.load(f)
+        n_outliers = int(partial_stats.get("n_outliers", 0))
+
+    row_offset = embedding_row_offset + rows_done
+    stream_idx = 0
+    chunks_skipped = 0
+    resume_guard_checked = rows_done == 0
     split_start = time.perf_counter()
 
-    chunks = list(_iter_sentence_rows(csv_path, chunk_size=chunk_size, sentence_column=sentence_column))
-    pbar = tqdm(chunks, desc=f"{split} csv chunks", unit="chunk", ncols=100)
-    for chunk in pbar:
+    chunk_iter = _iter_sentence_rows(csv_path, chunk_size=chunk_size, sentence_column=sentence_column)
+    pbar = tqdm(chunk_iter, desc=f"{split} csv chunks", unit="chunk", ncols=100)
+    for chunk_idx, chunk in enumerate(pbar):
         meta, docs, _keep = _prepare_chunk_frame(chunk, sentence_column=sentence_column)
-        if not docs:
+        chunk_len = len(docs)
+        if chunk_len == 0:
             continue
+        if resume and should_skip_infer_chunk(stream_idx, chunk_len, rows_done):
+            stream_idx += chunk_len
+            chunks_skipped += 1
+            continue
+
+        if not resume_guard_checked:
+            assert_infer_stream_aligned(
+                rows_done=rows_done,
+                stream_idx=stream_idx,
+                chunks_skipped=chunks_skipped,
+            )
+            resume_guard_checked = True
+
         emb = None
         if embeddings_mmap is not None:
-            end = row_offset + len(docs)
+            end = row_offset + chunk_len
             emb = np.asarray(embeddings_mmap[row_offset:end], dtype=np.float32)
             row_offset = end
 
@@ -134,6 +271,7 @@ def infer_split_to_parquet(
         )
         n_docs += len(topics)
         n_outliers += int(np.sum(topics == -1))
+        stream_idx += chunk_len
 
         out = meta.copy()
         out["split"] = split
@@ -147,14 +285,41 @@ def infer_split_to_parquet(
         else:
             out["max_topic_prob"] = np.nan
 
-        table = pa.Table.from_pandas(out, preserve_index=False)
-        if writer is None:
-            writer = pq.ParquetWriter(output_parquet, table.schema, compression="snappy")
-        writer.write_table(table)
+        _write_chunk_shard(partial_dir, chunk_idx, out)
+        chunks_done = chunk_idx + 1
+        with open(progress_path, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "rows_done": stream_idx,
+                    "chunks_done": chunks_done,
+                    "n_docs": n_docs,
+                    "n_outliers": n_outliers,
+                },
+                f,
+            )
+        partial_stats = {
+            "split": split,
+            "n_docs": n_docs,
+            "n_outliers": n_outliers,
+            "outlier_rate": float(n_outliers / n_docs) if n_docs else 0.0,
+            "output_parquet": str(output_parquet),
+            "embedding_row_offset_start": embedding_row_offset,
+            "embedding_row_offset_end": row_offset,
+        }
+        with open(stats_path, "w", encoding="utf-8") as f:
+            json.dump(partial_stats, f, indent=2)
         pbar.set_postfix({"docs": f"{n_docs:,}", "outlier": f"{100.0 * n_outliers / n_docs:.1f}%"})
 
-    if writer is not None:
-        writer.close()
+    if n_docs == 0:
+        raise RuntimeError(f"No documents scored for split {split!r} from {csv_path}")
+
+    if partial_dir.exists():
+        _merge_chunk_parquets(partial_dir, output_parquet)
+        import shutil
+
+        shutil.rmtree(partial_dir)
+    if progress_path.exists():
+        progress_path.unlink()
 
     elapsed = time.perf_counter() - split_start
     stats = {
@@ -165,7 +330,10 @@ def infer_split_to_parquet(
         "output_parquet": str(output_parquet),
         "embedding_row_offset_start": embedding_row_offset,
         "embedding_row_offset_end": row_offset,
+        "resumed_from_rows": rows_done,
     }
+    with open(stats_path, "w", encoding="utf-8") as f:
+        json.dump(stats, f, indent=2)
     LOGGER.info(
         "[%s] wrote %s (%d docs, outlier=%.4f) in %.1fs",
         split,
@@ -187,6 +355,7 @@ def run_full_corpus_infer(
     batch_size: int = 16_384,
     chunk_size: int = 50_000,
     output_dir: Path | None = None,
+    resume: bool = True,
 ) -> Path:
     """Transform train/val/test sentence CSVs and write per-split parquet files."""
     logging.basicConfig(
@@ -252,6 +421,7 @@ def run_full_corpus_infer(
             embedding_row_offset=split_offsets[split],
             batch_size=batch_size,
             chunk_size=chunk_size,
+            resume=resume,
         )
         summary_rows.append(stats)
 

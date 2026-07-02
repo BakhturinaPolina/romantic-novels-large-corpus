@@ -12,50 +12,76 @@ from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 im
     taxonomy_block_for_prompt,
 )
 
+_RWA_PURPOSE = """
+ROMANCE GENRE PURPOSE (Stage09)
+Stage09 is not to classify every topic into a romance-relevant axis. Many coherent topics are context-only.
+Use macro-axis categories only when snippets show direct evidence for project hypotheses: love/commitment/tenderness,
+HEA/repair, sexual explicitness, protection/care, possessiveness/control, conflict/darkness, luxury/status as romantic
+appeal, or narrative repair. Object, setting, transit, speech style, facial gesture, subgenre furniture, or ordinary
+business logistics → context category + use_in_macro_axes=false.
+""".strip()
+
 _BOUNDARY_RULES = """
-PRIMARY vs SECONDARY (v2.2)
-- Primary labels (1–7.x): what the topic is thematically doing — attraction, sex, bonding, conflict, family, work, danger, care.
-- Secondary/context (8.x, 9.x, 10.x): where, when, objects, discourse style, or subgenre machinery — use as main ONLY when that context truly dominates.
-- When a restaurant outing is mainly couple bonding → 4.2 main, 8.2 secondary (not 8.2 main).
+AXIS vs CONTEXT (v2.4)
+- axis_bearing_ids: narrow set for Stage10 hypotheses (2.x, 3.1/3.2, 4.2–4.7, 5.3a, 6.1a/6.4/6.6/6.7, 7.x, 8.3a).
+- Context-only labels (1.x, 5.1/5.2, 6.1b/6.2/6.3/6.5, 7.1, 8.x except 8.3a, 9.x, 10.x, uncertain_interpretable): mappable but use_in_macro_axes=false.
+- 3.3 ambivalence is exploratory-only (H5/H6) — use_in_macro_axes=false even when main.
+- Stage08 axis_hint and sexual_function are WEAK hints only. Do NOT promote wink/gesture to 2.2 without kiss/hug/embrace evidence.
+- Never assign macro-axis category only because axis_hint says everyday_intimacy_emotional_safety or no_hypothesis_signal.
+
+HYPOTHESIS-RELEVANCE GATE (apply before choosing main)
+1. Is this narrative story content, discourse mechanics, subgenre furniture, paratext, or noise?
+2. Does visible evidence support a project hypothesis?
+   H1: love/tenderness/care vs explicit sex | H2: HEA/commitment/wedding/recognition
+   H3: luxury/status paired with love | H4: protective care vs possessiveness
+   H5: darkness/conflict/threat vs tenderness | H6: conflict/miscommunication vs repair
+3. If no hypothesis-relevant evidence, assign context-only category and use_in_macro_axes=false.
+   Prefer uncertain_interpretable over forcing 4.2 when bonding function is not visible.
+
+NEGATIVE EXAMPLES — DO NOT COUNT AS EVERYDAY INTIMACY
+- Taxi, car, doorway, arrival, stairs, hotel transit → 8.5 or 8.2 context; macro false unless snippets show care/courtship.
+- Coffee mug, cup, kitchen object → 8.3b or 8.1 context only unless meaningful gift/care act.
+- Smile, wink, eyes opening, gaze without desire → 1.7 context only — NOT 2.2 unless kiss/hug/embrace in snippets.
+- Love confession / admitting love after denial → 4.5 main — NOT 2.2 (verbal commitment is not physical affection).
+- Shared chuckles/laughter without courtship function → 9.3 or 1.7 context only.
+- Generic "I'll call / I'll come back" → 9.2 or 8.3b unless it repairs, commits, reassures, or threatens the relationship.
+- Paranormal creature vocabulary alone → 10.1 context; map to 2.x/4.x/7.x only when desire, care, conflict, or danger is visible.
+
+POSITIVE AXIS EXAMPLES
+- "Soft Kiss Turning Urgent" → 2.2 main, 2.1 secondary if tender kisses but escalation keywords.
+- "Hot Breath Against Her Neck" → 2.1 main. Do NOT route to 1.6/1.7 because hair, neck, breath, forehead, or gaze appears.
+- "Reluctant Agreement to Marry" → 4.5 main.
+- "Vowing to Keep Her Safe" → 4.6 main.
+- "Crawling Onto The King-Sized Bed" → 7.4 only if refusal, fear, restraint, or unclear consent; else 2.1/2.3 + forceful_intensity if consensual.
+
+PRIMARY vs SECONDARY
+- Primary axis labels: what the topic is thematically doing — attraction, sex, bonding, conflict, danger, care.
+- Secondary/context: where, when, objects, discourse style, subgenre — use as main ONLY when that context truly dominates.
+- When couple bonding dominates a restaurant outing → 4.2 main, 8.2 secondary (not 8.2 or 4.2 from object/setting alone).
 
 SEXUALITY BOUNDARIES
 - 2.1: desire, anticipation, arousal, longing, sexual tension without clear physical act.
 - 2.2: kissing, hugging, stroking, cuddling, non-explicit affection.
-- 2.3: explicit sexual acts, penetration, genital terms, orgasm, undressing in explicitly sexual context.
-- 2.4: post-sex, aftercare, reflection after intimacy, emotional processing after sex.
-- 2.5: condom/lube preparation, sexual boundary talk, sex-without-commitment negotiation.
-- Forceful consensual sex without coercion evidence → 2.3 + forceful_intensity tag, NOT 7.4.
+- 2.3: explicit sexual acts. 2.4: post-sex aftercare. 2.5: condom/lube/boundary negotiation.
+- Forceful consensual sex → 2.3 + forceful_intensity, NOT 7.4.
 - Unwanted touch, coercion, unclear consent → 7.4 (overrides 2.1/2.3).
 
 WORK / STATUS BOUNDARIES
-- 6.1: elite roles, authority, high-power work (CEO, surgeon, royalty as power).
-- 6.2: any character's job, career, professional identity.
-- 6.3: main couple interacting through shared workplace.
-- 6.4: economic precarity, debt, housing insecurity — NOT status/luxury (6.6/6.7).
-- 6.5: courts, hospitals, schools, formal institutions and procedures.
-- 6.6: material glamour and luxury consumption. 6.7: aristocracy and period status.
+- 6.4: economic precarity ONLY with rent, debt, can't afford, dependence — NOT generic deal/contract/payment.
+- 6.1a: billionaire/CEO/aristocratic authority tied to romantic hero appeal or status display — axis-bearing for H3.
+- 6.1b: generic business deal/contract/payment/percent — context-only, use_in_macro_axes=false.
+- Generic business negotiation → 6.1b, 8.3b, or uncertain_interpretable — NOT 6.4 or 6.1a.
+- 8.3a: rings, wedding bands, love letters, meaningful gifts (HEA low-weight).
+- 8.3b: phones, cars, coffee mugs, ordinary props.
 
-CONFLICT / RISK BOUNDARIES
-- 4.7: jealousy/possessive main-couple conflict — distinct from 7.4 coercion watchlist.
-- 7.1: non-romantic interpersonal conflict without violence.
-- 7.2: violence, threats, non-sexual coercion.
-- 7.3: accidents, illness crises, external danger, disasters.
-- 7.4: unwanted/coercive sexual contact — watchlist; manual review recommended.
-
-RELATIONSHIP vs INNER LIFE vs SOCIAL WORLD
-- 4.x: main couple bond trajectory (setup, bonding, secrets, conflict, reconciliation, care, jealousy).
-- 3.x: internal affect when no clearer scene function dominates.
-- 5.1: family, kinship, pregnancy, parenthood.
-
-DOMINANT SEMANTIC CENTER (not setting alone)
-- Pregnancy/baby future → 5.1 or 4.5, not 8.1 alone.
-- Bedroom explicit sex → 2.x main, 8.1 secondary at most.
-- Phone/message secrets → 4.3 main, 8.3 secondary.
+SOCIAL / HEA
+- 5.3a: weddings, proposals, formal couple recognition (HEA axis).
+- 5.3b: parties, gossip, community judgment (context only).
+- 3.1: resolution/relief/payoff only — NOT generic amusement or laughter (use 9.3/1.7).
 
 SUBGENRE, DISCOURSE & MACRO AXES
-- 8.x / 9.x / 10.x as main → use_in_macro_axes=false (context tags for watchlist/analysis).
-- 10.x main only when genre furniture dominates AND no stronger primary theme applies.
-- 9.x discourse → use_in_macro_axes=false, use_in_theory_watchlist=true.
+- Context mains (8.x, 9.x, 10.x, 1.x, uncertain_interpretable) → use_in_macro_axes=false.
+- 9.x discourse → use_in_theory_watchlist=true.
 
 NOISE
 - is_noise=true only for boilerplate, paratext, encoding garbage, character-name clusters without coherent scene.
@@ -65,27 +91,42 @@ _FEW_SHOT_EXAMPLES = """
 EXAMPLE 1 — Topic 50 (Pregnancy Worries and Baby Talk)
 Input: keywords pregnant, worries, conversations; label "Pregnancy Worries and Baby Talk"; scene about baby/family future.
 Output:
-{"topic_id":50,"content_type":"scene","main_category_id":"5.1","secondary_category_id":"4.5","other_plausible_ids":["3.2"],"mechanic_tags":["pregnancy_future"],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.88,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Pregnancy and baby talk center family/kinship and future commitment, not domestic routine alone."}
+{"topic_id":50,"content_type":"scene","main_category_id":"5.1","secondary_category_id":"4.5","other_plausible_ids":["3.2"],"mechanic_tags":["pregnancy_future"],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.88,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Pregnancy and baby talk center family/kinship context; future commitment is secondary. 5.1 is context-only per v2.3."}
 
 EXAMPLE 2 — Topic 118 (Forceful Bedroom Encounter)
-Input: explicit sexual_content; forceful intercourse on mattress; register explicit.
+Input: explicit sexual_content; forceful intercourse on mattress; register explicit; consent consensual_implied.
 Output:
 {"topic_id":118,"content_type":"scene","main_category_id":"2.3","secondary_category_id":"8.1","other_plausible_ids":[],"mechanic_tags":["forceful_intensity"],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.9,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Explicit forceful sexual act is central; bedroom is secondary setting. Not coercion without consent evidence."}
 
-EXAMPLE 3 — Topic 9 (Negotiating Terms and Deals)
-Input: keywords terms, partners, percent, scenario; business deal negotiation.
+EXAMPLE 3 — Topic 9 (Generic Business Deal Negotiation)
+Input: keywords terms, partners, percent, deal, contract; business negotiation without precarity vocabulary.
 Output:
-{"topic_id":9,"content_type":"scene","main_category_id":"6.4","secondary_category_id":"6.1","other_plausible_ids":["4.3"],"mechanic_tags":["economic_power","professional_hierarchy"],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.82,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Money, contracts, and deal terms dominate; elite business power may be secondary."}
+{"topic_id":9,"content_type":"scene","main_category_id":"6.1b","secondary_category_id":"8.3b","other_plausible_ids":["uncertain_interpretable"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.78,"evidence_quality":"medium","uncertainty_reason":null,"rationale":"Generic deal/contract/payment terms — business logistics (6.1b), not elite romantic status (6.1a) or precarity (6.4)."}
 
-EXAMPLE 4 — Topic 31 (Werewolf Identity and Instincts)
-Input: content_type subgenre_marker; growl, instincts, paranormal; werewolf identity.
+EXAMPLE 3b — Topic 88 (Rent Due and Can't Afford It)
+Input: snippets about rent, debt, eviction fear, can't afford groceries.
 Output:
-{"topic_id":31,"content_type":"subgenre_marker","main_category_id":"10.1","secondary_category_id":null,"other_plausible_ids":["3.3"],"mechanic_tags":["paranormal_instinct"],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.86,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Paranormal shifter identity as subgenre context flag; excluded from macro axes per v2.2 policy."}
+{"topic_id":88,"content_type":"scene","main_category_id":"6.4","secondary_category_id":null,"other_plausible_ids":["3.2"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.85,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Rent, debt, and can't-afford vocabulary dominate — true economic precarity, not generic business deal."}
 
-EXAMPLE 5 — Topic 5 (Discourse: Explaining Unlikely Behavior)
-Input: content_type discourse; keywords explanation, unlikely, behavior; narrative_style.
+EXAMPLE 4 — Topic 0 (Hesitant Arrival at Entrance)
+Input: snippets taxi, ride home, driving through; keywords doorway, hesitation.
 Output:
-{"topic_id":5,"content_type":"discourse","main_category_id":"9.1","secondary_category_id":null,"other_plausible_ids":["4.3"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.8,"evidence_quality":"medium","uncertainty_reason":null,"rationale":"Abstract explanation/justification speech pattern; meaningful for qualitative analysis but weak macro axis."}
+{"topic_id":0,"content_type":"scene","main_category_id":"8.5","secondary_category_id":null,"other_plausible_ids":["8.2"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":false,"noise_reason":null,"confidence":0.72,"evidence_quality":"medium","uncertainty_reason":null,"rationale":"Transit/threshold vocabulary dominates; no courtship or care function visible."}
+
+EXAMPLE 5 — Topic 2 (Hot Breath Against Her Neck)
+Input: sexual_function sexual_tension; snippets charged proximity, hot breath on neck, fingers at throat.
+Output:
+{"topic_id":2,"content_type":"scene","main_category_id":"2.1","secondary_category_id":"1.1","other_plausible_ids":[],"mechanic_tags":["forceful_intensity"],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.88,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Charged erotic proximity and sexual tension dominate; hair/neck/forehead vocabulary does not make this appearance (1.6)."}
+
+EXAMPLE 7 — Topic 7 (Playful Wink Across The Room)
+Input: snippets show single wink gesture; sexual_function nonsexual_affection; no kiss/hug/embrace.
+Output:
+{"topic_id":7,"content_type":"scene","main_category_id":"1.7","secondary_category_id":null,"other_plausible_ids":[],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":false,"use_in_theory_watchlist":false,"noise_reason":null,"confidence":0.82,"evidence_quality":"medium","uncertainty_reason":null,"rationale":"Wink is nonverbal facial cue (1.7). sexual_function alone does not make this 2.2 without physical affection in snippets."}
+
+EXAMPLE 8 — Topic 23 (Admitting Love After Denial)
+Input: snippets 'loved you the whole damn time'; love confession resolving prior denial.
+Output:
+{"topic_id":23,"content_type":"scene","main_category_id":"4.5","secondary_category_id":"3.3","other_plausible_ids":["4.4"],"mechanic_tags":[],"is_noise":false,"use_in_macro_axes":true,"use_in_theory_watchlist":true,"noise_reason":null,"confidence":0.88,"evidence_quality":"high","uncertainty_reason":null,"rationale":"Verbal love confession after denial is relationship turning point (4.5), not physical affection (2.2)."}
 
 EXAMPLE 6 — Topic 72 (Restaurant Date and Conversation)
 Input: dinner date at restaurant, couple talking, shared meal, deepening connection.
@@ -118,7 +159,7 @@ def build_system_prompt(taxonomy_path: Optional[str | Path] = None) -> str:
 
     return f"""
 <task>
-Map one BERTopic topic from a romance-fiction corpus to a fixed analytic taxonomy (v2.2).
+Map one BERTopic topic from a romance-fiction corpus to a fixed analytic taxonomy (v2.4).
 </task>
 
 <role>
@@ -150,6 +191,8 @@ The corpus spans contemporary, paranormal, historical, YA, and mystery — not b
 </priority_rules>
 
 <category_principles>
+{_RWA_PURPOSE}
+
 A taxonomy category describes the topic's dominant observable evidence.
 A mechanic tag describes what that evidence does in romance structure.
 Choose main by semantic center; use secondary for non-dominant functions.
@@ -164,7 +207,7 @@ Apply when romance mechanics are clear: protective_care, possessive_control, eco
 
 <quality_flags>
 is_noise: true only for boilerplate, paratext, web fragments, character-name clusters without coherent scene, incoherent topics.
-use_in_macro_axes: true only for primary thematic labels (not 8.x/9.x/10.x as main) that are coherent and stable for aggregation.
+use_in_macro_axes: true only when main_category_id is axis-bearing (see boundary_rules) AND hypothesis-relevant evidence is visible in snippets.
 use_in_theory_watchlist: true if meaningful for interpretation (discourse, subgenre markers, small but theory-relevant topics).
 noise_reason: short string when is_noise=true, else null.
 </quality_flags>

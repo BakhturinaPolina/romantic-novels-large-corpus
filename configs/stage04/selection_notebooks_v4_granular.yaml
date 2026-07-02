@@ -1,0 +1,122 @@
+# v4 granular Phase 1 dry-run — three-way embedding comparison (L12 / L6 / MPNet)
+#
+# Use with notebooks/04_selection/ by setting the config path in the notebook load cell to:
+#   configs/stage04/selection_notebooks_v4_granular.yaml
+
+run_id: v4_l12_granular_phase1_dryrun
+
+comparison:
+  id: v4_l12_l6_mpnet_pareto
+  base_dir: results/selection/_compare/v4_l12_l6_mpnet_pareto
+
+runs:
+  - run_id: v4_l12_granular_phase1_dryrun
+    label: v4_L12
+    embedding_model: sentence-transformers/all-MiniLM-L12-v2
+    inputs:
+      trials_partial_csv: results/experiments/v4_l12_granular_phase1/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv
+      trials_summary_csv: results/experiments/v4_l12_granular_phase1/trials.csv
+      eval_select_top_k: results/selection/v4_l12_granular_phase1_dryrun/top_k.csv
+      winner_config: results/selection/v4_l12_granular_phase1_dryrun/winner_config.json
+    outputs:
+      base_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis
+      figures_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/figures
+      tables_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/tables
+      top_models_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/top_models
+
+  - run_id: v4_l6_granular_phase1_dryrun
+    label: v4_L6
+    embedding_model: sentence-transformers/paraphrase-MiniLM-L6-v2
+    inputs:
+      trials_partial_csv: results/experiments/v4_l6_granular_phase1/opt_1_sentence-transformers__paraphrase-MiniLM-L6-v2/trials_partial.csv
+      trials_summary_csv: results/experiments/v4_l6_granular_phase1/trials.csv
+      eval_select_top_k: results/selection/v4_l6_granular_phase1_dryrun/top_k.csv
+      winner_config: results/selection/v4_l6_granular_phase1_dryrun/winner_config.json
+    outputs:
+      base_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis
+      figures_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis/figures
+      tables_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis/tables
+      top_models_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis/top_models
+
+  - run_id: v4_mpnet_granular_phase1_dryrun
+    label: v4_MPNet
+    embedding_model: sentence-transformers/paraphrase-mpnet-base-v2
+    inputs:
+      trials_partial_csv: results/experiments/v4_mpnet_granular_phase1/opt_1_sentence-transformers__paraphrase-mpnet-base-v2/trials_partial.csv
+      trials_summary_csv: results/experiments/v4_mpnet_granular_phase1/trials.csv
+      eval_select_top_k: results/selection/v4_mpnet_granular_phase1_dryrun/top_k.csv
+      winner_config: results/selection/v4_mpnet_granular_phase1_dryrun/winner_config.json
+    outputs:
+      base_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis
+      figures_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis/figures
+      tables_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis/tables
+      top_models_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis/top_models
+
+inputs:
+  trials_partial_csv: results/experiments/v4_l12_granular_phase1/opt_1_sentence-transformers__all-MiniLM-L12-v2/trials_partial.csv
+  trials_summary_csv: results/experiments/v4_l12_granular_phase1/trials.csv
+  eval_select_top_k: results/selection/v4_l12_granular_phase1_dryrun/top_k.csv
+  winner_config: results/selection/v4_l12_granular_phase1_dryrun/winner_config.json
+
+outputs:
+  base_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis
+  figures_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/figures
+  tables_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/tables
+  top_models_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/top_models
+
+legacy_cleaning:
+  remove_failed_runs: true
+  outlier_std_dev: 2.0
+  prefilter_min_n_topics: 50
+
+legacy_normalization:
+  method: zscore
+
+weighting_strategies:
+  equal_weights:
+    weight_coherence: 0.5
+    weight_topic_diversity: 0.5
+  coherence_priority:
+    weight_coherence: 0.7
+    weight_topic_diversity: 0.3
+
+pareto:
+  metrics:
+    - Coherence_norm
+    - Topic_Diversity_norm
+  analyze_per_model: true
+
+selection:
+  top_k: 30
+
+hyperparameters:
+  - bertopic__top_n_words
+  - hdbscan__min_cluster_size
+  - hdbscan__min_samples
+  - hdbscan__cluster_selection_method
+  - umap__min_dist
+  - umap__n_components
+  - umap__n_neighbors
+  - vectorizer__min_df
+
+performance_metrics_legacy:
+  - Coherence_norm
+  - Topic_Diversity_norm
+  - Combined_Score
+
+performance_metrics_v3:
+  - coherence_c_v
+  - topic_diversity
+  - n_topics
+  - bo_objective
+  - weighted_score
+  - outlier_rate
+  - largest_topic_share
+  - median_topic_size
+
+eval_select_config: configs/stage04/eval_select_granular.yaml
+eval_select_config_granular: configs/stage04/eval_select_granular.yaml
+
+plotting:
+  style: whitegrid
+  figure_dpi: 100

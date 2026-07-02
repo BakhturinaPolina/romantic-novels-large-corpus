@@ -1,7 +1,8 @@
 # ============================================================
-# FROZEN MEASUREMENT SCHEMA — v2.2 (multi-genre corpus)
+# FROZEN MEASUREMENT SCHEMA — v2.4 (multi-genre corpus)
 # ============================================================
-# Taxonomy: configs/stage09/romance_corpus_taxonomy_v2.yaml
+# Taxonomy: configs/stage09/romance_corpus_taxonomy_v2.yaml (version 2.4)
+# axis_bearing_ids in taxonomy YAML defines Stage10 macro-axis eligibility.
 # Book-level aggregation: src/stage10_correlation_analysis/data_preparation/02_book_aggregation.py
 
 global:
@@ -15,6 +16,26 @@ global:
   taxonomy_config: configs/stage09/romance_corpus_taxonomy_v2.yaml
   exclude_from_axes_ids:
     - noise
+    - uncertain_interpretable
+    - "1.1"
+    - "1.2"
+    - "1.5"
+    - "1.6"
+    - "1.7"
+    - "4.1"
+    - "5.1"
+    - "5.2"
+    - "5.3b"
+    - "6.1b"
+    - "6.2"
+    - "6.3"
+    - "6.5"
+    - "7.1"
+    - "8.1"
+    - "8.2"
+    - "8.3b"
+    - "8.4"
+    - "8.5"
     - "9.1"
     - "9.2"
     - "9.3"
@@ -46,7 +67,9 @@ global:
     AX_everyday_intimacy_emotional_safety: everyday_intimacy_emotional_safety
     AX_sexual_tension_explicit_intimacy: sexual_tension_explicit_intimacy
     AX_coercion_risk_watchlist: coercion_risk_watchlist
+    AX_economic_dependency: economic_precarity_dependency
     AX_attraction: attraction
+    AX_internal_ambivalence: internal_ambivalence
 
 # ------------------------------------------------------------
 # PAYOFF / SAFETY (CONFIRMATORY, CORE) — H2 partial, H3 factor
@@ -57,6 +80,7 @@ AX_payoff_safety:
   hypothesis: [H2, H3]
   description: >
     Secure relational payoff: reconciliation, commitment, positive emotional resolution.
+    3.1 counts only when mapping shows resolution/relief/payoff — not generic amusement.
 
   anchors:
     taxonomy:
@@ -104,20 +128,20 @@ AX_hea_index:
   hypothesis_role: confirmatory
   hypothesis: [H2]
   description: >
-    Happily-ever-after signals: commitment, social rituals (weddings), symbolic gifts/objects.
+    Happily-ever-after signals: commitment, romantic social rituals (5.3a), commitment-symbol objects (8.3a).
 
   anchors:
     taxonomy:
       - 4.5
-      - 5.3
-      - 8.3
+      - 5.3a
+      - 8.3a
 
   construction:
     method: weighted_sum
     weights:
       "4.5": 1.0
-      "5.3": 1.0
-      "8.3": 0.5
+      "5.3a": 0.8
+      "8.3a": 0.5
 
 # ------------------------------------------------------------
 # EXPLICITNESS (CONFIRMATORY / Stage 11 reach-quality split)
@@ -214,7 +238,7 @@ AX_dark_vs_tender:
   hypothesis_role: confirmatory
   hypothesis: [H5]
   description: >
-    Darkness (distress, couple conflict, external crisis/violence) minus tenderness.
+    Darkness (distress, couple conflict, external crisis/violence) minus tenderness and care.
 
   construction:
     method: difference
@@ -228,6 +252,7 @@ AX_dark_vs_tender:
       taxonomy:
         - 3.1
         - 2.2
+        - 4.6
 
 # ------------------------------------------------------------
 # MISCOMMUNICATION (CONFIRMATORY) — RQ5 / Stage 11 drama obstacle
@@ -323,7 +348,7 @@ AX_status_power:
   type: visibility
   hypothesis_role: confirmatory
   description: >
-    Elite authority, material glamour, and aristocratic rank (6.1 + 6.6 + 6.7).
+    Elite authority, material glamour, and aristocratic rank (6.1a + 6.6 + 6.7).
     Economic precarity (6.4) is excluded. Primary outcome: log_rating_count — not star quality.
 
   composite_ref: status_power
@@ -419,8 +444,7 @@ AX_everyday_intimacy_emotional_safety:
   hypothesis: [H1]
   description: >
     Non-explicit relational closeness: ongoing courtship (4.2), reassurance/care (4.6),
-    and non-explicit affection (2.2) as core; first contact (4.1) and domestic/public
-    settings (8.1, 8.2) as low-weight context only.
+    and non-explicit affection (2.2) as core only — no domestic/public setting low-weight mass.
 
   composite_ref: everyday_intimacy_emotional_safety
 
@@ -480,6 +504,43 @@ AX_coercion_risk_watchlist:
     allowed_as_control: true
 
 # ------------------------------------------------------------
+# ECONOMIC DEPENDENCY (EXPLORATORY) — separate from luxury/status
+# ------------------------------------------------------------
+AX_economic_dependency:
+  type: evaluative
+  hypothesis_role: exploratory
+  description: >
+    Financial precarity, housing insecurity, debt, and economic dependence (6.4).
+    Separate from AX_luxury_composite and AX_status_power.
+
+  composite_ref: economic_precarity_dependency
+
+  construction:
+    method: weighted_sum_from_composite
+
+  usage:
+    allowed_as_predictor: true
+
+# ------------------------------------------------------------
+# INTERNAL AMBIVALENCE (EXPLORATORY) — H5/H6 modifier, not confirmatory
+# ------------------------------------------------------------
+AX_internal_ambivalence:
+  type: evaluative
+  hypothesis_role: exploratory
+  hypothesis: [H5, H6]
+  description: >
+    Love-hate ambivalence, mixed feelings, and internal conflict (3.3).
+    Exploratory interpretive signal — not in axis_bearing_ids for confirmatory axes.
+
+  anchors:
+    taxonomy:
+      - 3.3
+
+  construction:
+    method: weighted_sum
+    weights: equal
+
+# ------------------------------------------------------------
 # NARRATIVE ARC REPAIR (CONFIRMATORY) — H6, segment-level only
 # ------------------------------------------------------------
 AX_narrative_arc_repair:
@@ -498,9 +559,11 @@ AX_narrative_arc_repair:
       taxonomy:
         - 4.5
         - 3.1
+        - 4.6
     falling:
       taxonomy:
         - 4.3
+        - 4.4
         - 3.2
 
   usage:

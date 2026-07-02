@@ -11,7 +11,7 @@ This note documents how Stage 03 chooses the documents on which BERTopic is *fit
 
 ## 1. Problem: what should the fit corpus be?
 
-The operational corpus is the v2 cohort of **17,514 romance works** (see [`subdataset_sampling_v1_design_and_v2_downloaded_corpus.md`](subdataset_sampling_v1_design_and_v2_downloaded_corpus.md)), parsed to sentence splits of roughly **82M train** and **17.7M val** rows (`data/processed/romance_subdataset_downloaded_v2_sentences/`). BERTopic cannot fit UMAP + HDBSCAN on ~100M points on a single GPU, so the model is **fit on a bounded subsample and then `.transform()`-ed onto the rest**. The subsample size cap is therefore a *clustering* constraint (GPU memory), not an *embedding* constraint.
+The operational corpus is the v2 cohort of **17,514 romance works** (see [`subdataset_sampling_v1_design_and_v2_downloaded_corpus.md`](../stage00/subdataset_sampling_v1_design_and_v2_downloaded_corpus.md)), parsed to sentence splits of roughly **82M train** and **17.7M val** rows (`data/processed/romance_subdataset_downloaded_v2_sentences/`). BERTopic cannot fit UMAP + HDBSCAN on ~100M points on a single GPU, so the model is **fit on a bounded subsample and then `.transform()`-ed onto the rest**. The subsample size cap is therefore a *clustering* constraint (GPU memory), not an *embedding* constraint.
 
 The question this report answers is **which** ~500,000 sentence rows become the fit corpus.
 
@@ -28,7 +28,7 @@ For a heterogeneous literary corpus this distorts the learned topic space toward
 
 ### 1.2 Why the fit size does not limit the study
 
-The downstream inference (see [`stage11_power_analysis_report.md`](stage11_power_analysis_report.md)) needs **6,000-12,000 books** with topic features to detect quality/reach effects. That requirement is satisfied independently of the fit-sample size: **every** book is assigned topics at `.transform()` time. The 500k fit sample only determines what the model is *trained on*, not how many books enter the analysis.
+The downstream inference (see [`stage11_power_analysis_report.md`](../stage11/stage11_power_analysis_report.md)) needs **6,000-12,000 books** with topic features to detect quality/reach effects. That requirement is satisfied independently of the fit-sample size: **every** book is assigned topics at `.transform()` time. The 500k fit sample only determines what the model is *trained on*, not how many books enter the analysis.
 
 ```mermaid
 flowchart LR
@@ -142,7 +142,7 @@ Re-running with the same seed and the same input CSVs reproduces the index files
 
 ## 7. Relationship to the Stage 01 corpus design
 
-The Stage 01 subsampling (`subdataset_sampling_v1_design_and_v2_downloaded_corpus.md`) is a **book-level, time-stratified** design (year bin x genre group x engagement tier x rating tier; 70/15/15 time split). This Stage 03 fit sample is a **sentence-level** design *within* the train split, addressing a different failure mode (per-sentence dominance) at a different stage (model fitting). They are complementary: Stage 01 fixes which books are studied; Stage 03 fixes which sentences train the topic model.
+The Stage 01 subsampling ([`subdataset_sampling_v1_design_and_v2_downloaded_corpus.md`](../stage00/subdataset_sampling_v1_design_and_v2_downloaded_corpus.md)) is a **book-level, time-stratified** design (year bin x genre group x engagement tier x rating tier; 70/15/15 time split). This Stage 03 fit sample is a **sentence-level** design *within* the train split, addressing a different failure mode (per-sentence dominance) at a different stage (model fitting). They are complementary: Stage 01 fixes which books are studied; Stage 03 fixes which sentences train the topic model.
 
 ---
 

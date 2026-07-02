@@ -18,19 +18,19 @@ class TaxonomyV2IntimacyTests(unittest.TestCase):
     def test_composite_index_spec(self) -> None:
         spec = composite_index_spec("everyday_intimacy_emotional_safety")
         self.assertEqual(
-            spec["taxonomy_ids"],
-            ["4.1", "4.2", "4.6", "2.2", "8.1", "8.2"],
+            spec["core_taxonomy_ids"],
+            ["4.2", "4.6", "2.2"],
         )
+        self.assertNotIn("optional_low_weight_context", spec)
         self.assertIn("2.3", spec["exclude_taxonomy_ids"])
 
     def test_prompt_block_includes_enriched_nodes(self) -> None:
         block = taxonomy_block_for_prompt()
         self.assertIn("4.2", block)
-        self.assertIn("Everyday Intimacy", block)
         self.assertIn("courtship", block.lower())
 
-    def test_fallback_domestic_life_routes_to_bonding(self) -> None:
-        self.assertEqual(fallback_main_category(["domestic_life"]), "4.2")
+    def test_fallback_domestic_life_routes_to_context(self) -> None:
+        self.assertEqual(fallback_main_category(["domestic_life"]), "8.1")
 
     def test_intimacy_subtag_reroutes_setting_only_mapping(self) -> None:
         result = {

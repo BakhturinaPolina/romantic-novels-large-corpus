@@ -13,7 +13,7 @@
 | Pilot analysis corpus | ~368 topics on `paraphrase-MiniLM-L6-v2` (SCIENTIFIC_README, notebooks) |
 | Stage 09 taxonomy (frozen in code) | `src/stage09_category_mapping/stage1_theory_driven_categories/scripts/zeroshot_taxonomy_openrouter.py` → `TAXONOMY_NODES` |
 | Stage 08 labeling prompts | `src/stage08_llm_labeling/openrouter_experiments/core/generate_labels_openrouter.py` |
-| Macro-axis schema | `configs/stage09/theory_aligned_index_schema.yaml`, `results/reports/stage11_power_analysis_report.md` |
+| Macro-axis schema | `configs/stage09/theory_aligned_index_schema.yaml`, `results/reports/stage11/stage11_power_analysis_report.md` |
 | Theory notebook structure | `notebooks/07_analysis/topic_analysis_all_STRUCTURE.md` |
 
 ---
@@ -80,11 +80,11 @@ Automated keyword heuristics over `Representation` + snippet text — **provisio
 
 ### 3.1 Pretest (100 billionaire novels)
 
-Evidence in repo (`stage03_bertopic_search_space_prior.md`, SCIENTIFIC_README):
+Evidence in repo ([`stage03_bertopic_search_space_prior.md`](../stage03/stage03_bertopic_search_space_prior.md), SCIENTIFIC_README):
 
 - Embedding shortlist and HDBSCAN priors tuned on **homogeneous billionaire subgenre**.
 - Pareto winner emphasized **coherence**; taxonomy and hypotheses built around **status/dominance** as backbone (`AX_status_dominance` = 6.1 + 6.4).
-- Pilot power analysis (`stage11_power_analysis_report.md`) confirms status/dominance predicts **reach**, not quality — sensible for billionaire pilot, but **6.1 category naming and examples remain CEO/billionaire-centric** in Stage 09 code.
+- Pilot power analysis ([`stage11_power_analysis_report.md`](../stage11/stage11_power_analysis_report.md)) confirms status/dominance predicts **reach**, not quality — sensible for billionaire pilot, but **6.1 category naming and examples remain CEO/billionaire-centric** in Stage 09 code.
 
 ### 3.2 Pilot labeling & mapping (~368 topics, MiniLM-L6-v2)
 
@@ -123,7 +123,7 @@ From SCIENTIFIC_README / notebooks:
 
 ## 4. Macro-axis ↔ taxonomy alignment stress test
 
-From `configs/stage09/theory_aligned_index_schema.yaml` and `stage11_power_analysis_report.md`:
+From `configs/stage09/theory_aligned_index_schema.yaml` and [`stage11_power_analysis_report.md`](../stage11/stage11_power_analysis_report.md):
 
 | Macro-axis | Taxonomy anchors | call_59 stress |
 |------------|-------------------|----------------|
@@ -298,6 +298,19 @@ With 294 micro-topics, zero-shot mapping is expensive and noisy. Recommended pip
 - [ ] Update `theory_aligned_index_schema.yaml` with `exclude_categories: [9.1, 9.2, …, noise]`
 - [ ] Run Stage 08 on call_59 `topic_info.csv` subset (pilot n=50) before full 294-topic spend
 - [ ] Compare axis stability vs pilot 368-topic mappings
+
+---
+
+## 11. Addendum: taxonomy v2.3 axis/context split (2026-07-01)
+
+Pilot review on call73 (`taxonomy_mappings_v22_pilot30.json`) confirmed **4.2 inflation** and **sexual-tension → appearance** heuristic bugs. v2.3 introduces:
+
+- `axis_bearing_ids` allowlist for Stage10 only
+- `uncertain_interpretable` fallback (replaces default 4.2)
+- Split **8.3a/8.3b**, **5.3a/5.3b**
+- `axis_hint=no_hypothesis_signal` for `sexual_function=none`
+
+See **[taxonomy_v23_axis_context_design.md](../stage09/taxonomy_v23_axis_context_design.md)**.
 
 ---
 

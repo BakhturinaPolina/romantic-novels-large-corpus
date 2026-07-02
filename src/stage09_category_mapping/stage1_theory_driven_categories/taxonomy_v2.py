@@ -95,6 +95,43 @@ SEXUAL_FUNCTION_TO_TAXONOMY = {
     "consent_boundary": "7.4",
 }
 
+SEXUAL_LOCK_FUNCTIONS = frozenset({
+    "sexual_tension",
+    "presex_escalation",
+    "explicit_contact",
+    "orgasm_climax",
+    "postsex_arousal",
+    "postsex_aftercare",
+    "sexual_negotiation",
+    "sex_without_commitment",
+    "contraception_preparation",
+})
+
+PHYSICAL_AFFECTION_TERMS = {
+    "kiss", "kissed", "kissing", "hug", "hugged", "hugging", "embrace", "embraced",
+    "cuddle", "cuddled", "cuddling", "stroke", "stroked", "stroking", "hold", "held",
+    "holding", "cheek", "lips", "lip", "snuggle", "caress", "caressed", "nuzzle",
+}
+
+COMMITMENT_LOVE_TERMS = {
+    "love", "loved", "loving", "marry", "marriage", "married", "forever", "confession",
+    "confess", "confessed", "commit", "commitment", "proposal", "propose", "proposed",
+    "wedding", "soulmate", "devotion", "admitting",
+}
+
+GENERIC_BUSINESS_TERMS = {
+    "deal", "contract", "payment", "percent", "terms", "partners", "scenario",
+    "negotiation", "negotiate", "negotiating", "cost", "price",
+}
+
+PROTECTED_MAIN_IDS = frozenset({"4.3", "4.4", "4.5", "4.6", "7.4", "2.3", "2.5", "1.7"})
+
+PRECARITY_TERMS = {
+    "rent", "debt", "broke", "eviction", "homeless", "afford", "unpaid",
+    "owe", "owed", "jobless", "fired", "salary", "wages", "depend", "dependent",
+    "precarity", "precarious", "insecure", "homelessness", "bankrupt", "bankruptcy",
+}
+
 PROTECTIVE_CARE_TERMS = {
     "protect", "protection", "protective", "reassure", "reassurance",
     "caretaking", "safe", "safety", "comfort", "shield", "guard",
@@ -191,6 +228,65 @@ def exclude_from_axes_ids(path: Optional[str] = None) -> Set[str]:
 def secondary_context_ids(path: Optional[str] = None) -> Set[str]:
     cfg = load_taxonomy_config(path)
     return set(cfg.get("secondary_context_ids", []))
+
+
+def axis_bearing_ids(path: Optional[str] = None) -> Set[str]:
+    cfg = load_taxonomy_config(path)
+    return set(cfg.get("axis_bearing_ids", []))
+
+
+def exploratory_only_ids(path: Optional[str] = None) -> Set[str]:
+    cfg = load_taxonomy_config(path)
+    return set(cfg.get("exploratory_only_ids", []))
+
+
+def _has_physical_affection_evidence(blob: str, tokens: Set[str], blob_tokens: Set[str]) -> bool:
+    return bool(PHYSICAL_AFFECTION_TERMS.intersection(tokens)) or bool(
+        PHYSICAL_AFFECTION_TERMS.intersection(blob_tokens)
+    )
+
+
+def _has_commitment_love_evidence(blob: str, tokens: Set[str], blob_tokens: Set[str]) -> bool:
+    return bool(COMMITMENT_LOVE_TERMS.intersection(tokens)) or bool(
+        COMMITMENT_LOVE_TERMS.intersection(blob_tokens)
+    )
+
+
+def _should_block_promotion_to_2_2(
+    before_main: Optional[str],
+    evidence_quality: Any,
+    blob: str,
+    tokens: Set[str],
+    blob_tokens: Set[str],
+) -> bool:
+    eq = str(evidence_quality or "").lower()
+    if before_main not in PROTECTED_MAIN_IDS or eq not in {"medium", "high"}:
+        return False
+    if before_main == "1.7":
+        return not _has_physical_affection_evidence(blob, tokens, blob_tokens)
+    if before_main == "4.5":
+        return _has_commitment_love_evidence(blob, tokens, blob_tokens)
+    return True
+
+
+def _route_6_1_split(blob: str, tokens: Set[str], blob_tokens: Set[str]) -> str:
+    has_elite = bool(ELITE_WORK_TERMS.intersection(tokens)) or bool(
+        ARISTOCRACY_TERMS.intersection(tokens)
+    ) or any(
+        w in blob for w in ("ceo", "executive", "billionaire", "aristocrat", "elite", "surgeon")
+    )
+    has_generic_business = bool(GENERIC_BUSINESS_TERMS.intersection(tokens)) or bool(
+        GENERIC_BUSINESS_TERMS.intersection(blob_tokens)
+    )
+    if has_elite and not (has_generic_business and not any(
+        w in blob for w in ("billionaire", "ceo", "executive", "aristocrat", "duke", "lord")
+    )):
+        return "6.1a"
+    if has_generic_business:
+        return "6.1b"
+    if has_elite:
+        return "6.1a"
+    return "6.1b"
 
 
 def is_secondary_context(category_id: Optional[str], path: Optional[str] = None) -> bool:
@@ -402,6 +498,7 @@ def apply_domain_heuristics(
     before_secondary = result.get("secondary_category_id")
     before_macro = result.get("use_in_macro_axes")
     before_tags = list(result.get("mechanic_tags") or [])
+    evidence_quality = result.get("evidence_quality")
     main_id = result.get("main_category_id")
     secondary_id = result.get("secondary_category_id")
     primary_cats = topic_metadata.get("primary_categories", []) or []
@@ -418,6 +515,8 @@ def apply_domain_heuristics(
     sexual_function = str(topic_metadata.get("sexual_function", "none")).lower()
     axis_hint = str(topic_metadata.get("axis_hint", "")).lower()
 
+    sexual_locked = False
+
     # Stage 08 v3 sexual-function routing (when present)
     if consent_status in {"coercion_watchlist", "nonconsent_explicit"}:
         if main_id in {"2.3", "2.2", "2.1", "4.4"}:
@@ -429,9 +528,32 @@ def apply_domain_heuristics(
             result["secondary_category_id"] = main_id
         result["main_category_id"] = "7.4"
         main_id = "7.4"
+    elif (
+        sexual_function in SEXUAL_LOCK_FUNCTIONS
+        and consent_status not in {"coercion_watchlist", "nonconsent_explicit"}
+    ):
+        target = SEXUAL_FUNCTION_TO_TAXONOMY.get(sexual_function)
+        if target and target in valid_ids and main_id not in {"7.4", "noise"}:
+            locked_from = result.get("main_category_id")
+            result["main_category_id"] = target
+            if locked_from not in {target, "noise", "7.4", None}:
+                sec = result.get("secondary_category_id")
+                if not sec or sec == target:
+                    result["secondary_category_id"] = locked_from
+            main_id = target
+            secondary_id = result.get("secondary_category_id")
+            sexual_locked = True
     elif sexual_function in SEXUAL_FUNCTION_TO_TAXONOMY:
         target = SEXUAL_FUNCTION_TO_TAXONOMY[sexual_function]
-        if main_id in {"8.1", "8.2", "8.3", "4.2", "4.1"} and target in valid_ids:
+        block_2_2 = target == "2.2" and _should_block_promotion_to_2_2(
+            before_main, evidence_quality, blob, tokens, blob_tokens
+        )
+        needs_physical = target == "2.2" and not _has_physical_affection_evidence(
+            blob, tokens, blob_tokens
+        )
+        if block_2_2 or (target == "2.2" and needs_physical):
+            pass
+        elif main_id in {"8.1", "8.2", "8.3b", "8.3a", "4.2", "4.1"} and target in valid_ids:
             result["secondary_category_id"] = main_id
             result["main_category_id"] = target
             main_id = target
@@ -502,50 +624,66 @@ def apply_domain_heuristics(
             result["main_category_id"] = "5.1"
             main_id = "5.1"
 
-    # Appearance routing
-    if (
-        main_id in {"2.1", "4.1", "4.2", "8.3"}
-        and ("appearance_presentation" in primary_cats or "activity:dressing" in secondary_cats)
-        and register != "explicit"
-        and "sexual_content" not in primary_cats
-    ):
-        result["secondary_category_id"] = main_id if main_id != "1.6" else secondary_id
-        result["main_category_id"] = "1.6"
-        main_id = "1.6"
+    # Appearance routing — never override sexual-function lock or 2.x categories
+    _SEXUAL_APPEARANCE_BLOCK = {"2.1", "2.2", "2.3", "2.4", "2.5"}
 
-    if (
-        main_id not in {"1.6", "1.7", "2.1", "2.3", "10.1"}
-        and gaze_hit
-        and "sexual_content" not in primary_cats
-        and register != "explicit"
-        and any(w in blob for w in ("gaze", "stare", "smirk", "wink", "eye color", "eyes"))
-    ):
-        if appearance_hit:
-            result["secondary_category_id"] = main_id
-            result["main_category_id"] = "1.7"
-            main_id = "1.7"
-        elif main_id not in NON_OVERRIDABLE_CATEGORIES:
-            result["secondary_category_id"] = main_id
-            result["main_category_id"] = "1.7"
-            main_id = "1.7"
+    if not sexual_locked:
+        if (
+            main_id in {"2.1", "4.1", "4.2", "8.3b", "8.3a"}
+            and ("appearance_presentation" in primary_cats or "activity:dressing" in secondary_cats)
+            and register != "explicit"
+            and "sexual_content" not in primary_cats
+        ):
+            result["secondary_category_id"] = main_id if main_id != "1.6" else secondary_id
+            result["main_category_id"] = "1.6"
+            main_id = "1.6"
 
-    if (
-        appearance_hit
-        and main_id not in {"1.6", "1.7", "2.3", "10.1"}
-        and "sexual_content" not in primary_cats
-        and register != "explicit"
-    ):
-        if main_id in {"8.3", "4.2", "4.1", "2.1"}:
-            result["secondary_category_id"] = main_id
-        result["main_category_id"] = "1.6"
-        main_id = "1.6"
+        if (
+            main_id not in {"1.6", "1.7", "2.3", "10.1", *_SEXUAL_APPEARANCE_BLOCK}
+            and gaze_hit
+            and "sexual_content" not in primary_cats
+            and register != "explicit"
+            and any(w in blob for w in ("gaze", "stare", "smirk", "wink", "eye color", "eyes"))
+        ):
+            if appearance_hit:
+                result["secondary_category_id"] = main_id
+                result["main_category_id"] = "1.7"
+                main_id = "1.7"
+            elif main_id not in NON_OVERRIDABLE_CATEGORIES:
+                result["secondary_category_id"] = main_id
+                result["main_category_id"] = "1.7"
+                main_id = "1.7"
 
-    # Luxury / status de-bias: do not leave generic negotiation on 6.1
-    if main_id == "6.1":
+        if (
+            appearance_hit
+            and main_id not in {"1.6", "1.7", "2.3", "10.1", *_SEXUAL_APPEARANCE_BLOCK}
+            and "sexual_content" not in primary_cats
+            and register != "explicit"
+        ):
+            if main_id in {"8.3b", "8.3a", "4.2", "4.1"}:
+                result["secondary_category_id"] = main_id
+            result["main_category_id"] = "1.6"
+            main_id = "1.6"
+
+    # Luxury / status de-bias: split generic business (6.1b) from elite romantic status (6.1a)
+    if main_id in {"6.1", "6.1a", "6.1b"}:
+        split_id = _route_6_1_split(blob, tokens, blob_tokens)
         has_elite_work = bool(ELITE_WORK_TERMS.intersection(tokens)) or any(
-            w in blob for w in ("ceo", "executive", "business terms", "professional")
+            w in blob for w in ("ceo", "executive", "business terms", "professional", "billionaire")
         )
-        if not has_elite_work:
+        if split_id != main_id:
+            result["secondary_category_id"] = main_id if main_id not in {split_id, "6.1"} else secondary_id
+            result["main_category_id"] = split_id
+            main_id = split_id
+            if split_id == "6.1a" and str(evidence_quality or "").lower() in {"medium", "high"}:
+                result["use_in_macro_axes"] = True
+        if not has_elite_work and main_id == "6.1a" and (
+            GENERIC_BUSINESS_TERMS.intersection(tokens) or GENERIC_BUSINESS_TERMS.intersection(blob_tokens)
+        ):
+            result["secondary_category_id"] = "6.1a"
+            result["main_category_id"] = "6.1b"
+            main_id = "6.1b"
+        elif main_id == "6.1a":
             if LUXURY_FASHION_TERMS.intersection(tokens) or "fashion" in blob:
                 result["main_category_id"] = "6.6"
                 main_id = "6.6"
@@ -553,20 +691,24 @@ def apply_domain_heuristics(
                 result["main_category_id"] = "6.7"
                 main_id = "6.7"
             elif any(w in blob for w in ("hotel", "restaurant", "wedding", "party")):
-                result["secondary_category_id"] = "6.1" if has_elite_work else secondary_id
-                result["main_category_id"] = "8.2" if "hotel" in blob or "restaurant" in blob else "5.3"
+                if "wedding" in blob or "ceremony" in blob or "proposal" in blob:
+                    result["main_category_id"] = "5.3a"
+                elif "hotel" in blob or "restaurant" in blob:
+                    result["main_category_id"] = "8.2"
+                else:
+                    result["main_category_id"] = "5.3b"
                 main_id = result["main_category_id"]
 
-    if LUXURY_FASHION_TERMS.intersection(tokens) and main_id in {"8.3", "5.3", "4.2", "8.2"}:
+    if LUXURY_FASHION_TERMS.intersection(tokens) and main_id in {"8.3b", "8.3a", "5.3a", "5.3b", "4.2", "8.2"}:
         result["secondary_category_id"] = main_id if main_id != "6.6" else secondary_id
         result["main_category_id"] = "6.6"
         main_id = "6.6"
 
-    if main_id in {"4.1", "4.2", "8.1", "8.3"}:
-        if "wedding" in blob or "ceremony" in blob:
+    if main_id in {"4.1", "4.2", "8.1", "8.3b", "8.3a"}:
+        if "wedding" in blob or "ceremony" in blob or "proposal" in blob:
             result["secondary_category_id"] = main_id
-            result["main_category_id"] = "5.3"
-            main_id = "5.3"
+            result["main_category_id"] = "5.3a"
+            main_id = "5.3a"
         elif "hotel" in blob or "restaurant" in blob:
             result["secondary_category_id"] = main_id
             result["main_category_id"] = "8.2"
@@ -576,7 +718,7 @@ def apply_domain_heuristics(
             result["main_category_id"] = "6.6"
             main_id = "6.6"
 
-    if ARISTOCRACY_TERMS.intersection(tokens) and main_id in {"5.3", "4.4", "7.1"}:
+    if ARISTOCRACY_TERMS.intersection(tokens) and main_id in {"5.3a", "5.3b", "4.4", "7.1"}:
         result["secondary_category_id"] = main_id
         result["main_category_id"] = "6.7"
         main_id = "6.7"
@@ -592,9 +734,16 @@ def apply_domain_heuristics(
     for subtag, preferred_id in intimacy_subtag_map.items():
         if subtag not in secondary_cats:
             continue
+        if preferred_id == "2.2" and (
+            _should_block_promotion_to_2_2(before_main, evidence_quality, blob, tokens, blob_tokens)
+            or not _has_physical_affection_evidence(blob, tokens, blob_tokens)
+        ):
+            continue
         if main_id in {"2.3", "2.5", "4.7", "7.2", "7.4", "noise"}:
             break
-        if main_id in {"8.1", "8.2", "8.3", "8.5"} and preferred_id in valid_ids:
+        if before_main in PROTECTED_MAIN_IDS and preferred_id == "2.2":
+            continue
+        if main_id in {"8.1", "8.2", "8.3b", "8.3a", "8.5"} and preferred_id in valid_ids:
             result["secondary_category_id"] = main_id
             result["main_category_id"] = preferred_id
             main_id = preferred_id
@@ -608,14 +757,14 @@ def apply_domain_heuristics(
     # Work/social setting nudges (replaces obsolete work_or_school → 6.1 default)
     if (
         main_id not in NON_OVERRIDABLE_CATEGORIES
-        and main_id not in {"6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7", "noise"}
+        and main_id not in {"6.1a", "6.1b", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7", "noise"}
     ):
         if "social_setting" in primary_cats and ELITE_WORK_TERMS.intersection(tokens):
             result["secondary_category_id"] = main_id
-            result["main_category_id"] = "6.1"
+            result["main_category_id"] = "6.1a"
         elif "communication_medium" in primary_cats:
             result["secondary_category_id"] = main_id
-            result["main_category_id"] = "8.3"
+            result["main_category_id"] = "8.3b"
         elif "procedural_transition" in primary_cats:
             result["secondary_category_id"] = main_id
             result["main_category_id"] = "8.5"
@@ -658,19 +807,35 @@ def apply_domain_heuristics(
         if main_id == "5.1":
             _append_mechanic_tag(result, "pregnancy_future")
 
-    if ELITE_WORK_TERMS.intersection(tokens) and main_id in {"6.1", "6.4"}:
+    if ELITE_WORK_TERMS.intersection(tokens) and main_id in {"6.1a", "6.1b", "6.4"}:
         _append_mechanic_tag(result, "economic_power")
 
+    if main_id == "6.4":
+        has_precarity = bool(PRECARITY_TERMS.intersection(tokens)) or bool(
+            PRECARITY_TERMS.intersection(blob_tokens)
+        ) or any(w in blob for w in ("can't afford", "could not afford", "cannot afford"))
+        if not has_precarity:
+            if ELITE_WORK_TERMS.intersection(tokens) or any(
+                w in blob for w in ("ceo", "executive", "deal", "contract", "business")
+            ):
+                result["secondary_category_id"] = "6.4" if secondary_id not in {"6.1a", "6.1b"} else secondary_id
+                result["main_category_id"] = _route_6_1_split(blob, tokens, blob_tokens)
+            else:
+                result["secondary_category_id"] = main_id if main_id != "8.3b" else secondary_id
+                result["main_category_id"] = "8.3b"
+            main_id = result["main_category_id"]
+
     if result.get("main_category_id") not in valid_ids:
-        result["main_category_id"] = "4.2"
+        result["main_category_id"] = "uncertain_interpretable"
     if result.get("secondary_category_id") not in valid_ids:
         result["secondary_category_id"] = None
 
     cfg = load_taxonomy_config(path)
     exclude_ids = exclude_from_axes_ids(path)
     secondary_ids = secondary_context_ids(path)
+    axis_ids = axis_bearing_ids(path)
     main_id = result.get("main_category_id")
-    if main_id in exclude_ids or main_id in secondary_ids:
+    if main_id in exclude_ids or main_id in secondary_ids or main_id not in axis_ids:
         result["use_in_macro_axes"] = False
         result["exclude_from_axes"] = True
     elif result.get("use_in_macro_axes") is not None:
@@ -698,6 +863,17 @@ def apply_domain_heuristics(
         adjustments.append(f"mechanic_tags {before_tags!r} -> {after_tags!r} (domain heuristic)")
     if adjustments:
         result["heuristic_adjustments"] = adjustments
+        note = (
+            f"Post-heuristic: main {before_main!r} -> {result.get('main_category_id')!r}."
+        )
+        for field in ("rationale", "mapping_reasoning"):
+            val = result.get(field)
+            if isinstance(val, str) and note not in val:
+                combined = f"{val.rstrip()} {note}"
+                max_len = 600 if field == "rationale" else 1200
+                if len(combined) > max_len:
+                    combined = combined[: max_len - 3] + "..."
+                result[field] = combined
 
     return result
 
@@ -769,7 +945,7 @@ def fallback_main_category(primary_categories: List[str]) -> str:
     if "social_setting" in primary_categories:
         return "8.2"
     if "domestic_life" in primary_categories:
-        return "4.2"
+        return "8.1"
     if "relationship_conflict" in primary_categories:
         return "4.4"
     if any(w in " ".join(primary_categories).lower() for w in ("jealous", "possess")):
@@ -779,8 +955,8 @@ def fallback_main_category(primary_categories: List[str]) -> str:
     if "procedural_transition" in primary_categories:
         return "8.5"
     if "communication_medium" in primary_categories:
-        return "8.3"
-    return "4.2"
+        return "8.3b"
+    return "uncertain_interpretable"
 
 
 def _make_result(

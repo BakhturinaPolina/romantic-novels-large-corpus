@@ -183,7 +183,7 @@ echo "[$(ts)] Step D (manual / next night): book-level + tertile aggregation"
 echo "  Sentence parquet: results/experiments/${RUN_ID}/full_corpus_infer/sentence_topics_{train,val,test}.parquet"
 echo "  Book probs: src/stage10_correlation_analysis/data_preparation/03_generate_topic_probabilities_final.py"
 echo "  Tertile probs: src/stage10_correlation_analysis/data_preparation/04_generate_tertile_topic_probs_patched_v3.py"
-echo "  Strategy memo: results/reports/placeholder_v4_call73_analysis_strategy.md"
+echo "  Strategy memo: results/reports/call73/placeholder_v4_call73_analysis_strategy.md"
 
 total_secs=$(elapsed_since "$pipeline_start")
 echo "================================================================"

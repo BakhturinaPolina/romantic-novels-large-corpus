@@ -234,7 +234,9 @@ def _attach_mapping_debug(
         load_taxonomy_config,
     )
 
-    adjustments = result.pop("heuristic_adjustments", [])
+    adjustments = result.pop("heuristic_adjustments", []) or []
+    if adjustments:
+        result["heuristic_adjustments"] = adjustments
     debug: Dict[str, Any] = {
         "classification_source": classification_source,
         "model_name": model_name,
@@ -617,7 +619,7 @@ def map_all_topics_to_taxonomy(
 
     # Load topic metadata
     topic_meta = load_topic_metadata(labels_json_path)
-    topic_ids = sorted(topic_meta.keys())
+    topic_ids = sorted(topic_meta.keys(), key=lambda x: int(x))
     total = len(topic_ids)
     LOGGER.info("Loaded metadata for %d topics from %s", total, labels_json_path)
     

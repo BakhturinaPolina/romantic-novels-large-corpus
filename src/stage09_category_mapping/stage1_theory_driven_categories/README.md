@@ -123,10 +123,13 @@ python -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.a
 
 ## Notes
 
-- Taxonomy definition: `configs/stage09/romance_corpus_taxonomy_v2.yaml` v2.2 (primary vs secondary leaves; **2.5**, **7.4** watchlist)
-- **Three intimacy axes** (Stage 10): `everyday_intimacy_emotional_safety`, `sexual_tension_explicit_intimacy`, `coercion_risk_watchlist` — see `configs/stage09/theory_aligned_index_schema.yaml`
-- **Status axis**: `status_power` (6.1+6.6+6.7; 6.4 precarity separate)
-- **Everyday Intimacy & Emotional Safety**: 4.1+4.2+4.6+2.2+8.1+8.2. Stage 08 `intimacy:*` subtags and v3 `axis_hint` help routing.
+- Taxonomy definition: `configs/stage09/romance_corpus_taxonomy_v2.yaml` **v2.4** (axis-bearing allowlist + context-only leaves; **6.1a/6.1b**, **8.3a/8.3b**, **5.3a/5.3b**, `uncertain_interpretable`; nonsexual_affection lock removed)
+- **Axis-bearing vs context**: only IDs in `axis_bearing_ids` may use `use_in_macro_axes=true`; full leaf taxonomy remains for classification
+- **Three intimacy axes** (Stage 10): `everyday_intimacy_emotional_safety` (core 4.2+4.6+2.2 only), `sexual_tension_explicit_intimacy`, `coercion_risk_watchlist`
+- **Heuristic locks**: `sexual_function` locks prevent appearance/gaze overrides (e.g. topic 2 → 2.1 not 1.6); 6.4 requires precarity vocabulary
+- **Fallback**: weak topics → `uncertain_interpretable` (not 4.2)
+- Stage 08 `axis_hint=no_hypothesis_signal` for `sexual_function=none` — weak hint only
+- Design memo: `results/reports/stage09/taxonomy_v23_axis_context_design.md`
 - Stage 08 v3 fields (`sexual_function`, `consent_status`) plus full review bundle (`representations`, `all_keywords`, `snippets`, Stage 08 `rationale`) passed into taxonomy prompts when using the enriched JSON.
 - Each mapping JSON entry includes **`mapping_reasoning`** (LLM structured debug) and **`mapping_debug`** (classifier source, heuristic overrides, Stage 08 rationale reference).
 - Uses same API pattern as Stage 08 LLM labeling

@@ -15,7 +15,7 @@
 | Post-hoc rules | `configs/call73/topic_posthoc_rules.yaml` |
 | Outlier / collapse evidence | `results/experiments/v3_minilm12v2_first/final_compare/call_*/outliers_reduced/`, `.../call_59/metrics.json` (`refit_collapse`) |
 | Prior taxonomy memo (call_59) | `results/reports/stage08/stage08_stage09_taxonomy_improvement_notes_call59.md` |
-| Post-hoc limitations | `results/reports/stage03_posthoc_cleaning_limitations_memo.md` |
+| Post-hoc limitations | `results/reports/stage03/stage03_posthoc_cleaning_limitations_memo.md` |
 
 ---
 
@@ -43,7 +43,7 @@
 1. **Accept ~70% outliers at compare-fit** — structural for sentence-level HDBSCAN on this corpus.
 2. **Treat `-1` as explicit background** in book-level mixtures (K+1), not a failure to fix.
 3. **Do not default `reduce_outliers`** — only if stability passes and topic count stays within tolerance.
-4. **Soft assignment at inference** — final fit with `calculate_probabilities: true`; Stage09 mixtures via `transform()` on full corpus (see `results/reports/v4_granular_stage05_probabilities.md`).
+4. **Soft assignment at inference** — final fit with `calculate_probabilities: true`; Stage09 mixtures via `transform()` on full corpus (see `results/reports/stage05/v4_granular_stage05_probabilities.md`).
 5. **BO selection** — penalize topic count / reward coherence; **ignore outlier_rate** as a target metric.
 
 ---
@@ -63,7 +63,7 @@ Rules in `configs/call73/topic_posthoc_rules.yaml` set `exclude_from_axes` witho
 
 **Known limitation (2026-06-25):** The BookNLP/spaCy name stoplist (~72k tokens) includes common scene nouns (`horse`, `dinner`, `dream`). The tightened `character_name_cluster` rule (morphology filter + scene blocklist + 4/4 stoplist hits + ≥2 long tokens) removes verb false positives (T7 smile, T13 laughed) but still flags some scene topics (e.g. T29 horses, T52 dinner). Treat flagged topics as **review queue**, not auto-delete; tune rule or add allowlist before Stage08 spend.
 
-**Pre-fit (future):** Port `preprocess_character_name` + stoplist into `clean_sentence` — requires refit (`stage03_posthoc_cleaning_limitations_memo.md`).
+**Pre-fit (future):** Port `preprocess_character_name` + stoplist into `clean_sentence` — requires refit ([`stage03_posthoc_cleaning_limitations_memo.md`](../stage03/stage03_posthoc_cleaning_limitations_memo.md)).
 
 ---
 
@@ -93,9 +93,9 @@ bash scripts/stage06/run_stage06_placeholder_v4_call.sh 73
 bash scripts/stage07/run_stage07_placeholder_v4_models.sh   # default CALLS=73
 ```
 
-1. **Review character-name queue** — spot-check the 44 flagged topics in [`topic_quality_placeholder_v4_call73.csv`](../stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv); un-flag scene topics (allowlist or rule tweak in `configs/call73/topic_posthoc_rules.yaml`).
+1. **Review character-name queue** — spot-check the 44 flagged topics in [`topic_quality_placeholder_v4_call73.csv`](../../stage07_topic_quality/placeholder_v4_call73/topic_quality_placeholder_v4_call73.csv); un-flag scene topics (allowlist or rule tweak in `configs/call73/topic_posthoc_rules.yaml`).
 2. **Stage04 dry-run** (~30 min, CPU) — validate granular gates on partial v4 trials (independent of frozen call).
-3. **Stage08 LLM** — model pilots done (**Sonnet** locked). **Prompt OVAT sweep** before production ([`stage08_prompting_research_design_call73.md`](stage08/stage08_prompting_research_design_call73.md)).
+3. **Stage08 LLM** — model pilots done (**Sonnet** locked). **Prompt OVAT sweep** before production ([`stage08_prompting_research_design_call73.md`](../stage08/stage08_prompting_research_design_call73.md)).
 4. **Stage05b holdout** on call_73 (overnight GPU) — full test transform; unblocks inference validation.
 5. **Stage09 mixtures** — soft probabilities on full corpus after final fit; **do not** run `compare --reduce-outliers` on call 73.
 
@@ -109,9 +109,9 @@ bash scripts/stage07/run_stage07_placeholder_v4_models.sh   # default CALLS=73
 
 | Topic | Primary doc | Also update |
 |-------|-------------|-------------|
-| **Frozen call, paths, metrics** | [`configs/call73/placeholder_v4_frozen_call73.yaml`](../../configs/call73/placeholder_v4_frozen_call73.yaml) | This file §1 |
-| **Outlier / mixture / no-reduce-outliers policy** | **This file** §2 | [`v4_granular_stage05_probabilities.md`](v4_granular_stage05_probabilities.md) |
-| **Post-hoc rules + limitations** | [`stage03_posthoc_cleaning_limitations_memo.md`](stage03_posthoc_cleaning_limitations_memo.md) | `configs/call73/topic_posthoc_rules.yaml` |
-| **Stage08 LLM model + prompt sweep** | [`stage08/stage08_production_model_decision_call73.md`](stage08/stage08_production_model_decision_call73.md), [`stage08/stage08_prompting_research_design_call73.md`](stage08/stage08_prompting_research_design_call73.md), [`stage08/stage08_progress.md`](stage08/stage08_progress.md) | `configs/stage08/stage08_labeling.yaml` |
-| **Weekly execution checklist** | [`week_day_work_checklist_2026-06-24.md`](week_day_work_checklist_2026-06-24.md) | Point all downstream tasks at call 73 |
-| **BO selection / Phase 1–3** | [`stage04_v3_l12_l6_bo_selection_report.md`](stage04_v3_l12_l6_bo_selection_report.md) | Dry-run output under `results/selection/` |
+| **Frozen call, paths, metrics** | [`configs/call73/placeholder_v4_frozen_call73.yaml`](../../../configs/call73/placeholder_v4_frozen_call73.yaml) | This file §1 |
+| **Outlier / mixture / no-reduce-outliers policy** | **This file** §2 | [`v4_granular_stage05_probabilities.md`](../stage05/v4_granular_stage05_probabilities.md) |
+| **Post-hoc rules + limitations** | [`stage03_posthoc_cleaning_limitations_memo.md`](../stage03/stage03_posthoc_cleaning_limitations_memo.md) | `configs/call73/topic_posthoc_rules.yaml` |
+| **Stage08 LLM model + prompt sweep** | [`stage08_production_model_decision_call73.md`](../stage08/stage08_production_model_decision_call73.md), [`stage08_prompting_research_design_call73.md`](../stage08/stage08_prompting_research_design_call73.md), [`stage08_progress.md`](../stage08/stage08_progress.md) | `configs/stage08/stage08_labeling.yaml` |
+| **Weekly execution checklist** | [`week_day_work_checklist_2026-06-24.md`](../project/week_day_work_checklist_2026-06-24.md) | Point all downstream tasks at call 73 |
+| **BO selection / Phase 1–3** | [`stage04_v3_l12_l6_bo_selection_report.md`](../stage04/stage04_v3_l12_l6_bo_selection_report.md) | Dry-run output under `results/selection/` |

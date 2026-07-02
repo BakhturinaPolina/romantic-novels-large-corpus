@@ -76,7 +76,7 @@ optimization:
 # (seed42) collapsed to 2-3 topics every trial, so min_cluster_size/min_topic_size
 # were narrowed back down and min_samples capped at 50 to allow finer clustering
 # (target 20-100+ topics). See
-# results/reports/stage03_bertopic_search_space_prior.md for the justification.
+# results/reports/stage03/stage03_bertopic_search_space_prior.md for the justification.
 search_space:
   umap__n_neighbors: [10, 75]
   umap__n_components: [5, 15]
