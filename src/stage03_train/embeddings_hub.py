@@ -98,13 +98,16 @@ def try_download_from_hub(
             )
         )
     except Exception as ex:
-        # Brand-new run_ids may not have an artifact yet. Treat missing files as cache miss
-        # and allow the pipeline to continue with local embedding computation.
+        # Brand-new run_ids may not have an artifact yet. Treat missing files/repos as cache
+        # miss and allow the pipeline to continue with local embedding computation.
         ex_name = ex.__class__.__name__
         ex_text = str(ex)
-        if ex_name in {"EntryNotFoundError", "LocalEntryNotFoundError", "RemoteEntryNotFoundError"} or (
-            ex_name == "HfHubHTTPError" and "Entry Not Found" in ex_text
-        ):
+        if ex_name in {
+            "EntryNotFoundError",
+            "LocalEntryNotFoundError",
+            "RemoteEntryNotFoundError",
+            "RepositoryNotFoundError",
+        } or (ex_name == "HfHubHTTPError" and "Entry Not Found" in ex_text):
             if logger:
                 logger.warning(
                     "Hub artifact not found (%s:%s). Proceeding with local compute.",
@@ -195,7 +198,8 @@ def sync_embeddings_with_hub(
 
     load_project_dotenv()
     repo_id = str(hub_cfg["repo_id"])
-    hub_path = hub_relpath(run_id, cache_file.name)
+    hub_run_id = str(hub_cfg.get("hub_run_id") or run_id)
+    hub_path = hub_relpath(hub_run_id, cache_file.name)
 
     if hub_cfg.get("download_if_missing", True) and not cache_file.exists():
         try_download_from_hub(repo_id, hub_path, cache_file, logger=logger)

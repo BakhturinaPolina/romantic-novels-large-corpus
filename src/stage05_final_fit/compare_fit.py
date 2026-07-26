@@ -64,6 +64,7 @@ from src.legacy.stage03_modeling.bertopic_octis_model import (
     load_custom_stopwords_from_config,
     load_embedding_model,
 )
+from src.legacy.stage03_modeling.memory_utils import cleanup_gpu_memory
 
 # cuML UMAP/HDBSCAN (GPU). Imported via the model module which requires RAPIDS; we
 # import directly too so the fit here mirrors the Stage03 base train_model path.
@@ -303,6 +304,22 @@ def _compute_fit_metrics(
     }
 
 
+def _is_gpu_oom(exc: BaseException) -> bool:
+    """True for CUDA/RMM allocation failures (often raised as MemoryError)."""
+    if isinstance(exc, MemoryError):
+        return True
+    msg = str(exc).lower()
+    return any(
+        token in msg
+        for token in (
+            "out of memory",
+            "out_of_memory",
+            "std::bad_alloc",
+            "cudaerrormemoryallocation",
+        )
+    )
+
+
 def _run_stability_check(
     wrapper: BERTopicOctisModelWithEmbeddings,
     flat_hp: dict[str, Any],
@@ -316,10 +333,14 @@ def _run_stability_check(
     max_std: float,
     collapse_ratio: float,
 ) -> tuple[dict[str, Any], BERTopic | None]:
-    """Refit ``n_runs`` times with varying UMAP seeds; return stability report."""
+    """Refit ``n_runs`` times with varying UMAP seeds; return stability report.
+
+    Each stability fit is freed before the next run so cuML UMAP graphs do not
+    stack in VRAM (8 GB cards otherwise OOM by run 3). After the gate, the seed
+    closest to the median topic count is refit once for metrics/export.
+    """
     run_results: list[dict[str, Any]] = []
     topic_counts: list[float] = []
-    fitted_models: list[BERTopic] = []
     for run_i in range(n_runs):
         umap_seed = seed + run_i
         LOGGER.info(
@@ -329,16 +350,40 @@ def _run_stability_check(
             n_runs,
             umap_seed,
         )
-        topic_model = _fit_bertopic(
-            wrapper,
-            flat_hp,
-            fit_docs,
-            fit_embeddings,
-            umap_random_state=umap_seed,
-        )
+        cleanup_gpu_memory(verbose=False)
+        topic_model: BERTopic | None = None
+        try:
+            topic_model = _fit_bertopic(
+                wrapper,
+                flat_hp,
+                fit_docs,
+                fit_embeddings,
+                umap_random_state=umap_seed,
+            )
+        except (ValueError, MemoryError, RuntimeError) as exc:
+            if isinstance(exc, RuntimeError) and not _is_gpu_oom(exc):
+                raise
+            LOGGER.warning(
+                "[COMPARE-FIT][STABILITY] call_%d run %d/%d fit failed: %s",
+                bo_call,
+                run_i + 1,
+                n_runs,
+                exc,
+            )
+            topic_counts.append(0.0)
+            run_results.append(
+                {
+                    "run": run_i,
+                    "umap_random_state": umap_seed,
+                    "n_topics": 0,
+                    "fit_failed": True,
+                    "error": str(exc),
+                }
+            )
+            cleanup_gpu_memory(verbose=False)
+            continue
         n_topics = _count_topics(topic_model)
         topic_counts.append(float(n_topics))
-        fitted_models.append(topic_model)
         run_results.append({"run": run_i, "umap_random_state": umap_seed, "n_topics": n_topics})
         LOGGER.info(
             "[COMPARE-FIT][STABILITY] call_%d run %d/%d n_topics=%d",
@@ -347,6 +392,9 @@ def _run_stability_check(
             n_runs,
             n_topics,
         )
+        # Drop GPU-resident cuML state before the next seed (do not stack models).
+        del topic_model
+        cleanup_gpu_memory(verbose=False)
 
     stats = topic_run_stats(topic_counts)
     passed = stability_pass(topic_counts, max_std=max_std, collapse_ratio=collapse_ratio)
@@ -377,10 +425,40 @@ def _run_stability_check(
         refit_collapse,
     )
     best_model: BERTopic | None = None
-    if fitted_models and topic_counts:
-        median_n = float(np.median(topic_counts))
-        best_idx = int(np.argmin([abs(c - median_n) for c in topic_counts]))
-        best_model = fitted_models[best_idx]
+    valid_runs = [
+        (int(r["umap_random_state"]), float(r["n_topics"]))
+        for r in run_results
+        if not r.get("fit_failed") and float(r.get("n_topics", 0)) > 0
+    ]
+    if valid_runs:
+        median_n = float(np.median([c for _, c in valid_runs]))
+        best_seed = min(valid_runs, key=lambda pair: abs(pair[1] - median_n))[0]
+        LOGGER.info(
+            "[COMPARE-FIT][STABILITY] call_%d refitting median-seed umap_random_state=%d "
+            "(median_n=%.1f) for export",
+            bo_call,
+            best_seed,
+            median_n,
+        )
+        cleanup_gpu_memory(verbose=False)
+        try:
+            best_model = _fit_bertopic(
+                wrapper,
+                flat_hp,
+                fit_docs,
+                fit_embeddings,
+                umap_random_state=best_seed,
+            )
+        except (ValueError, MemoryError, RuntimeError) as exc:
+            if isinstance(exc, RuntimeError) and not _is_gpu_oom(exc):
+                raise
+            LOGGER.warning(
+                "[COMPARE-FIT][STABILITY] call_%d median-seed refit failed: %s",
+                bo_call,
+                exc,
+            )
+            cleanup_gpu_memory(verbose=False)
+            best_model = None
     return report, best_model
 
 
@@ -720,18 +798,21 @@ def run_compare_fit(
     for c in bo_calls:
         out_dir = compare_root / f"call_{c}"
         metrics_exist = (out_dir / "metrics.json").exists()
+        reduced_ok = (not reduce_outliers) or (out_dir / "outliers_reduced" / "metrics.json").exists()
         needs_model = save_model and not _model_is_saved(out_dir)
-        if force_refit or not metrics_exist or needs_model:
+        if force_refit or not metrics_exist or needs_model or not reduced_ok:
             pending.append(c)
     done_already = [c for c in bo_calls if c not in pending]
     if done_already:
         LOGGER.info("Resume: %s already complete, skipping.", done_already)
+    # Stability path: n_runs probe fits + 1 median-seed export fit (~16-28 min/call).
     LOGGER.info(
-        "Configs to fit now: %s (%d). Estimated ~12-20 min each on GPU => ~%.1f-%.1f h total.",
+        "Configs to fit now: %s (%d). Estimated ~16-28 min each on GPU "
+        "(stability probes + median refit) => ~%.1f-%.1f h total.",
         pending,
         len(pending),
-        len(pending) * 12 / 60,
-        len(pending) * 20 / 60,
+        len(pending) * 16 / 60,
+        len(pending) * 28 / 60,
     )
 
     # Build the wrapper once; reuse across configs (docs + embeddings are shared).
@@ -752,9 +833,26 @@ def run_compare_fit(
     for call in bo_calls:
         out_dir = compare_root / f"call_{call}"
         metrics_exist = (out_dir / "metrics.json").exists()
+        reduced_ok = (not reduce_outliers) or (out_dir / "outliers_reduced" / "metrics.json").exists()
         needs_model = save_model and not _model_is_saved(out_dir)
-        if metrics_exist and not reduce_outliers and not force_refit and not needs_model:
+        if metrics_exist and reduced_ok and not force_refit and not needs_model:
             LOGGER.info("call_%d already done (metrics.json present); skipping.", call)
+            stab_path = out_dir / "stability.json"
+            if stab_path.exists():
+                try:
+                    prev = json.loads(stab_path.read_text(encoding="utf-8"))
+                    stability_summary_rows.append(
+                        {
+                            "bo_call": call,
+                            "n_topics_median": prev.get("stats", {}).get("median"),
+                            "n_topics_std": prev.get("stats", {}).get("std"),
+                            "stability_pass": prev.get("stability_pass"),
+                            "refit_collapse": prev.get("refit_collapse"),
+                            "reported_n_topics": prev.get("reported_n_topics"),
+                        }
+                    )
+                except (json.JSONDecodeError, OSError) as exc:
+                    LOGGER.warning("Could not reload stability.json for call_%d: %s", call, exc)
             continue
         out_dir.mkdir(parents=True, exist_ok=True)
         flat_hp, reported = _read_trial_hyperparameters(trials_csv, call)
@@ -764,7 +862,10 @@ def run_compare_fit(
 
         stability_report: dict[str, Any] | None = None
         topic_model: BERTopic | None = None
-        if stability_runs > 0:
+        # Skip expensive stability probes when base metrics already exist and we only
+        # still need reduce_outliers / model export.
+        run_stability = stability_runs > 0 and (force_refit or not metrics_exist)
+        if run_stability:
             with stage_timer(f"call_{call} stability check ({stability_runs} runs)"):
                 stability_report, topic_model = _run_stability_check(
                     wrapper,
@@ -890,6 +991,9 @@ def run_compare_fit(
             call, n_topics, coherence, diversity, outlier_rate, elapsed,
         )
         _rebuild_summary(compare_root, bo_calls)
+        # Free BERTopic/cuML state before the next BO call.
+        del topic_model
+        cleanup_gpu_memory(verbose=False)
 
     if stability_summary_rows:
         pd.DataFrame(stability_summary_rows).to_csv(

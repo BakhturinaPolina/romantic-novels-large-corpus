@@ -89,6 +89,32 @@ class CompareFitStabilityTests(unittest.TestCase):
         self.assertTrue(report["refit_collapse"])
         self.assertFalse(report["stability_pass"])
 
+    def test_run_stability_check_fit_failure_does_not_abort(self) -> None:
+        mock_model = MagicMock()
+        with patch.object(
+            compare_fit,
+            "_fit_bertopic",
+            side_effect=[mock_model, ValueError("After pruning, no terms remain.")],
+        ):
+            with patch.object(compare_fit, "_count_topics", return_value=6):
+                report, model = compare_fit._run_stability_check(
+                    MagicMock(),
+                    {"umap__n_neighbors": 14},
+                    ["doc one", "doc two"],
+                    np.zeros((2, 8), dtype=np.float32),
+                    bo_call=79,
+                    reported_n_topics=309.0,
+                    n_runs=2,
+                    seed=42,
+                    max_std=75.0,
+                    collapse_ratio=0.5,
+                )
+        self.assertFalse(report["stability_pass"])
+        self.assertTrue(report["refit_collapse"])
+        self.assertEqual(len(report["runs"]), 2)
+        self.assertTrue(report["runs"][1]["fit_failed"])
+        self.assertIs(model, mock_model)
+
 
 if __name__ == "__main__":
     unittest.main()

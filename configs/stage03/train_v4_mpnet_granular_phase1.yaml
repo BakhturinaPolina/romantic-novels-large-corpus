@@ -15,6 +15,7 @@ embeddings_cache:
 embeddings_hub:
   enabled: true
   repo_id: "RuthonField/romance-v2-train-eval-embeddings"
+  hub_run_id: "v3_mpnet_first"
   upload_after_compute: false
   download_if_missing: true
 

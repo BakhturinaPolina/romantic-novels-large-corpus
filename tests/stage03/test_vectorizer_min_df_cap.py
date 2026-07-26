@@ -3,7 +3,10 @@
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 
-from src.legacy.stage03_modeling.bertopic_octis_model import _cap_vectorizer_min_df
+from src.legacy.stage03_modeling.bertopic_octis_model import (
+    _cap_vectorizer_min_df,
+    _prune_fallback_min_df,
+)
 
 
 def _doc_counts(vectorizer: CountVectorizer, n_docs: int) -> tuple[float, float]:
@@ -34,3 +37,14 @@ def test_safe_ctfidf_single_feature():
     model.fit(X)
     out = model.transform(X)
     assert out.shape == (3, 1)
+
+
+def test_cap_min_df_for_six_topic_documents():
+    vectorizer = CountVectorizer(min_df=11, max_df=1.0)
+    assert _cap_vectorizer_min_df(vectorizer, 6) == 1
+
+
+def test_prune_fallback_min_df_is_proportional():
+    assert _prune_fallback_min_df(12) == 1.0 / 12
+    assert _prune_fallback_min_df(1) == 1.0
+    assert _prune_fallback_min_df(0) == 1.0

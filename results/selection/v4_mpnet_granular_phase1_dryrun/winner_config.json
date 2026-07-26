@@ -1,0 +1,28 @@
+{
+  "run_id": "v4_mpnet_granular_phase1_dryrun",
+  "selected_at": "2026-07-26T03:43:33.782041Z",
+  "trial_id": "v4_mpnet_granular_phase1_1_call_33",
+  "embedding_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "selection_metrics": {
+    "coherence_c_v": 0.5932494109695173,
+    "topic_diversity": 0.8989637305699482,
+    "outlier_rate": 0.7257587152460401,
+    "stability_score": 0.0,
+    "weighted_score": 0.5241791095256685,
+    "n_topics": 386.0,
+    "bo_call": 33
+  },
+  "hyperparameters": {
+    "bertopic__top_n_words": 42,
+    "hdbscan__cluster_selection_method": "eom",
+    "hdbscan__min_cluster_size": 75,
+    "hdbscan__min_samples": 28,
+    "umap__min_dist": 0.0666575831506171,
+    "umap__n_components": 13,
+    "umap__n_neighbors": 21,
+    "vectorizer__min_df": 7
+  },
+  "train_csv": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/data/raw/romance_subdataset_filtered_v3/sentences_train.csv",
+  "eval_csv": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/data/raw/romance_subdataset_filtered_v3/sentences_val.csv",
+  "test_csv": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/data/raw/romance_subdataset_filtered_v3/sentences_test.csv"
+}

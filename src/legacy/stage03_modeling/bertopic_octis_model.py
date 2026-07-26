@@ -86,6 +86,14 @@ def _cap_vectorizer_min_df(vectorizer: CountVectorizer, n_docs: int) -> float | 
     return max(1.0 / n_docs, target / n_docs)
 
 
+def _prune_fallback_min_df(n_docs: int) -> float:
+    """Proportional min_df when capped absolute min_df still prunes all terms.
+
+    sklearn rejects integer ``min_df=0``; ``1.0 / n_docs`` keeps one doc-count.
+    """
+    return 1.0 / max(n_docs, 1)
+
+
 class SafeClassTfidfTransformer(ClassTfidfTransformer):
     """ClassTfidfTransformer that handles single-feature c-TF-IDF matrices."""
 
@@ -138,12 +146,31 @@ class BERTopicWithSafeVectorizer(BERTopic):
                     f"[TRAIN] Capped vectorizer min_df {orig_min_df!r} -> {capped!r} "
                     f"for {n_docs} topic document(s)"
                 )
+        orig_max_df = vectorizer.max_df
         try:
-            return super()._c_tf_idf(
-                documents_per_topic, fit=fit, partial_fit=partial_fit
-            )
+            try:
+                return super()._c_tf_idf(
+                    documents_per_topic, fit=fit, partial_fit=partial_fit
+                )
+            except ValueError as exc:
+                if "no terms remain" not in str(exc).lower():
+                    raise
+                # Degenerate topic collapse: even min_df=1 can leave zero vocabulary
+                # when few topic-level documents share only stopwords / empty text.
+                fallback = _prune_fallback_min_df(n_docs)
+                vectorizer.min_df = fallback
+                vectorizer.max_df = 1.0
+                if self.verbose:
+                    print(
+                        f"[TRAIN] Retrying c-TF-IDF with min_df={fallback!r} for {n_docs} "
+                        f"topic document(s) after pruning failure"
+                    )
+                return super()._c_tf_idf(
+                    documents_per_topic, fit=fit, partial_fit=partial_fit
+                )
         finally:
             vectorizer.min_df = orig_min_df
+            vectorizer.max_df = orig_max_df
 
 
 def get_embedding_model_cache_dir() -> str:
