@@ -1,0 +1,42 @@
+# Post-hoc topic classification thresholds (Stage 07 hard/soft routing)
+
+tiny_topic:
+  min_size: 200
+
+multilingual_artifact:
+  short_token_max_len: 2
+  short_token_ratio: 0.50
+  non_ascii_ratio: 0.50
+
+publisher_boilerplate:
+  keywords:
+    - copyright
+    - copyrighted
+    - publisher
+    - harpercollins
+    - penguin
+    - trademark
+    - isbn
+    - acknowledgments
+    - document outline
+    - dedication page
+    - chapter one
+    - table of contents
+    - unauthorized reproduction
+    - published by
+  name_keywords:
+    - chapter
+    - book
+    - books
+    - author
+    - reading
+    - www
+    - com
+    - series
+
+hard_exclude_actions:
+  - multilingual_artifact
+  - publisher_boilerplate
+
+soft_review_actions:
+  - tiny_topic

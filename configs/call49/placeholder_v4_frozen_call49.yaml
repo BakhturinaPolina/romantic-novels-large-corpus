@@ -1,0 +1,32 @@
+# Frozen v4 placeholder analysis — BO call 49 (MiniLM-L12 granular)
+
+run_id: placeholder_v4_models
+bo_call: 49
+embedding_model: sentence-transformers/all-MiniLM-L12-v2
+full_corpus_run_id: v4_l12_granular_final_call49
+
+paths:
+  compare_fit_dir: results/experiments/placeholder_v4_models/final_compare/call_49
+  enriched_model: results/experiments/placeholder_v4_models/final_compare/call_49/model_compare_enriched
+  stage06_dir: results/stage06_topic_exploration/placeholder_v4_call49
+  name_cleaning_dir: results/stage06_name_cleaning/placeholder_v4_call49
+  stage07_dir: results/stage07_topic_quality/placeholder_v4_call49
+  stage07_audit_csv: results/stage07_topic_quality/placeholder_v4_call49/stage07_topic_quality_audit.csv
+  stage08a_adjudication_jsonl: results/stage08a_quality_adjudication/placeholder_v4_call49/adjudication_results.jsonl
+  full_corpus_compare_dir: results/experiments/v4_l12_granular_final_call49/final_compare/call_49
+  evaluation_dir: results/evaluation/v4_l12_granular_final_call49/call_49
+
+posthoc_rules: configs/call49/topic_posthoc_rules.yaml
+strategy_memo: results/reports/call49/placeholder_v4_call49_analysis_strategy.md
+
+metrics:
+  n_topics: 373
+  outlier_rate: 0.693
+  coherence_c_v: 0.654
+  topic_diversity: 0.686
+  n_topics_std: 3.56
+
+posthoc_stage07:
+  soft_review_tiny_topic: 160
+  hard_exclude: 0
+  usable_estimate: 213
