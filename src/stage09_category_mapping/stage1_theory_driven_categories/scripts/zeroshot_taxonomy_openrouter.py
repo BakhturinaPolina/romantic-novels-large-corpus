@@ -575,6 +575,7 @@ def map_all_topics_to_taxonomy(
     max_docs_per_topic: int = 10,
     limit_topics: Optional[int] = None,
     include_source_metadata: bool = False,
+    request_delay_s: float = 10.0,
 ) -> Dict[int, Dict[str, Any]]:
     """
     Run zero-shot taxonomy mapping for all topics that have LLM labels.
@@ -725,10 +726,10 @@ def map_all_topics_to_taxonomy(
         
         taxonomy_map[tid] = result
 
-        # Delay to avoid rate limits (10 seconds between requests for Mistral-Nemo)
-        # Mistral-Nemo has very strict rate limits, so we need longer delays
-        if idx < len(remaining_topics):
-            time.sleep(10.0)
+        # Delay to avoid rate limits. The 10s default suits Mistral-Nemo's strict limits;
+        # higher-throughput models can lower it via --request-delay.
+        if idx < len(remaining_topics) and request_delay_s > 0:
+            time.sleep(request_delay_s)
 
         # Save checkpoint every 10 topics
         if idx % 10 == 0 or idx == len(remaining_topics):
@@ -901,7 +902,13 @@ if __name__ == "__main__":
         "--prompt-version",
         type=str,
         default=DEFAULT_PROMPT_VERSION,
-        help="Taxonomy prompt version (v2 default; v1 for legacy).",
+        help="Taxonomy prompt version (v2 default; v2.5 evidence-hardened; v1 legacy).",
+    )
+    parser.add_argument(
+        "--request-delay",
+        type=float,
+        default=10.0,
+        help="Seconds to sleep between topics (default 10 for strict-rate-limit models).",
     )
     parser.add_argument(
         "--temperature",
@@ -1036,6 +1043,7 @@ if __name__ == "__main__":
         max_docs_per_topic=args.max_docs_per_topic,
         limit_topics=args.limit_topics,
         include_source_metadata=args.include_source_metadata,
+        request_delay_s=args.request_delay,
     )
     
     # Update and save model if requested

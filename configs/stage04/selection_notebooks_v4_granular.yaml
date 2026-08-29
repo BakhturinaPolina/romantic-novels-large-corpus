@@ -18,6 +18,7 @@ runs:
       trials_summary_csv: results/experiments/v4_l12_granular_phase1/trials.csv
       eval_select_top_k: results/selection/v4_l12_granular_phase1_dryrun/top_k.csv
       winner_config: results/selection/v4_l12_granular_phase1_dryrun/winner_config.json
+      phase2_compare_dir: results/experiments/v4_l12_granular_phase2_pareto/final_compare
     outputs:
       base_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis
       figures_dir: results/selection/v4_l12_granular_phase1_dryrun/notebook_analysis/figures
@@ -32,6 +33,7 @@ runs:
       trials_summary_csv: results/experiments/v4_l6_granular_phase1/trials.csv
       eval_select_top_k: results/selection/v4_l6_granular_phase1_dryrun/top_k.csv
       winner_config: results/selection/v4_l6_granular_phase1_dryrun/winner_config.json
+      phase2_compare_dir: results/experiments/v4_l6_granular_phase2_pareto/final_compare
     outputs:
       base_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis
       figures_dir: results/selection/v4_l6_granular_phase1_dryrun/notebook_analysis/figures
@@ -46,6 +48,7 @@ runs:
       trials_summary_csv: results/experiments/v4_mpnet_granular_phase1/trials.csv
       eval_select_top_k: results/selection/v4_mpnet_granular_phase1_dryrun/top_k.csv
       winner_config: results/selection/v4_mpnet_granular_phase1_dryrun/winner_config.json
+      phase2_compare_dir: results/experiments/v4_mpnet_granular_phase2_pareto/final_compare
     outputs:
       base_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis
       figures_dir: results/selection/v4_mpnet_granular_phase1_dryrun/notebook_analysis/figures

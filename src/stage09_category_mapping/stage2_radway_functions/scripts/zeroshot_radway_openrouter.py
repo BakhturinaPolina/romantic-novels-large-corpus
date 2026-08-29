@@ -32,8 +32,10 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import shutil
+import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -1282,6 +1284,7 @@ def map_all_topics_to_radway(
     stage_subfolder: Optional[str] = "stage09_category_mapping",
     max_docs_per_topic: int = 10,
     limit_topics: Optional[int] = None,
+    request_delay_s: float = 0.0,
 ) -> Dict[int, Dict[str, Any]]:
     """
     Run zero-shot Radway function mapping for all topics with taxonomy mappings.
@@ -1360,21 +1363,51 @@ def map_all_topics_to_radway(
     # Process each topic
     radway_results: Dict[int, Dict[str, Any]] = {}
 
-    for idx, tid in enumerate(topic_ids, start=1):
+    # Resume from a partially written output so a long run survives an API failure.
+    checkpoint_path = output_path.with_suffix(".radway_checkpoint.json")
+    if checkpoint_path.exists():
+        try:
+            with open(checkpoint_path, "r", encoding="utf-8") as f:
+                for k, v in json.load(f).items():
+                    radway_results[int(k)] = v
+            LOGGER.info("Resuming: loaded %d topics from %s", len(radway_results), checkpoint_path)
+        except Exception as exc:
+            LOGGER.warning("Ignoring unreadable Radway checkpoint %s: %s", checkpoint_path, exc)
+            radway_results = {}
+
+    def _save_checkpoint() -> None:
+        checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(checkpoint_path, "w", encoding="utf-8") as f:
+            json.dump({str(k): v for k, v in radway_results.items()}, f, ensure_ascii=False)
+
+    remaining = [tid for tid in topic_ids if tid not in radway_results]
+
+    for idx, tid in enumerate(remaining, start=1):
         topic_entry = topics[tid]
         snippets = topic_to_snippets.get(tid, []) if topic_to_snippets else None
+        if not snippets:
+            # Stage 1 exports snippets into source_metadata, so --no-snippets does not
+            # have to mean classifying from labels alone.
+            embedded = (topic_entry.get("source_metadata") or {}).get("snippets")
+            if isinstance(embedded, list) and embedded:
+                snippets = embedded
 
-        result = classify_topic_to_radway_openrouter(
-            topic_id=tid,
-            topic_entry=topic_entry,
-            client=client,
-            model_name=model_name,
-            temperature=temperature,
-            max_new_tokens=max_new_tokens,
-            representative_docs=snippets,
-            max_snippets=8,
-            max_chars_per_snippet=400,
-        )
+        try:
+            result = classify_topic_to_radway_openrouter(
+                topic_id=tid,
+                topic_entry=topic_entry,
+                client=client,
+                model_name=model_name,
+                temperature=temperature,
+                max_new_tokens=max_new_tokens,
+                representative_docs=snippets,
+                max_snippets=8,
+                max_chars_per_snippet=400,
+            )
+        except Exception:
+            LOGGER.error("Failed on topic %d; saving checkpoint before re-raising", tid)
+            _save_checkpoint()
+            raise
 
         # NEW: fix some overcautious "none" outputs
         result = apply_radway_fallback_heuristics(result, topic_entry)
@@ -1384,12 +1417,16 @@ def map_all_topics_to_radway(
 
         radway_results[tid] = result
 
-        if idx % 10 == 0 or idx == total:
+        if idx < len(remaining) and request_delay_s > 0:
+            time.sleep(request_delay_s)
+
+        if idx % 10 == 0 or idx == len(remaining):
+            _save_checkpoint()
             LOGGER.info(
-                "Processed %d/%d topics for Radway mapping (%.1f%%)",
+                "Processed %d/%d remaining topics for Radway mapping (%.1f%%). Checkpoint saved.",
                 idx,
-                total,
-                idx / total * 100.0,
+                len(remaining),
+                idx / max(len(remaining), 1) * 100.0,
             )
 
     # Merge Radway results into taxonomy data
@@ -1619,6 +1656,13 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "--request-delay",
+        type=float,
+        default=0.0,
+        help="Seconds to sleep between topics (raise for strict-rate-limit models).",
+    )
+
+    parser.add_argument(
         "--log-level",
         type=str,
         default="INFO",
@@ -1631,7 +1675,7 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(args.log_level)
 
     client, _ = load_openrouter_client(
-        api_key=args.api_key or "",
+        api_key=args.api_key or os.environ.get("OPENROUTER_API_KEY", "") or DEFAULT_OPENROUTER_API_KEY,
         model_name=args.model_name,
     )
 
@@ -1644,5 +1688,6 @@ if __name__ == "__main__":
         max_new_tokens=args.max_tokens,
         load_model_for_snippets=not args.no_snippets,
         limit_topics=args.limit_topics,
+        request_delay_s=args.request_delay,
     )
 

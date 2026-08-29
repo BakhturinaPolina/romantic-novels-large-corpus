@@ -95,6 +95,17 @@ SEXUAL_FUNCTION_TO_TAXONOMY = {
     "consent_boundary": "7.4",
 }
 
+# Sexual-contact vocabulary used to decide 7.4 (sexual coercion) vs 7.2 (non-sexual coercion)
+# when Stage08 flags coercion_watchlist. Kept narrow: contact and undressing, not attraction.
+SEXUAL_CONTACT_TERMS = {
+    "sex", "sexual", "sexually", "intercourse", "fuck", "fucked", "fucking",
+    "thrust", "thrusting", "penetrate", "penetration", "aroused", "arousal",
+    "erection", "orgasm", "climax", "naked", "nude", "undress", "undressed",
+    "undressing", "strip", "stripped", "rape", "molest", "molested", "grope",
+    "groped", "groping", "fondle", "fondled", "fondling", "seduce", "seduced",
+    "seduction",
+}
+
 SEXUAL_LOCK_FUNCTIONS = frozenset({
     "sexual_tension",
     "presex_escalation",
@@ -130,6 +141,8 @@ PRECARITY_TERMS = {
     "rent", "debt", "broke", "eviction", "homeless", "afford", "unpaid",
     "owe", "owed", "jobless", "fired", "salary", "wages", "depend", "dependent",
     "precarity", "precarious", "insecure", "homelessness", "bankrupt", "bankruptcy",
+    # employment / livelihood (Stage09 call49 T112 false demotion)
+    "job", "jobs", "unemployed", "unemployment", "employment", "paycheck", "laid",
 }
 
 PROTECTIVE_CARE_TERMS = {
@@ -250,6 +263,24 @@ def _has_commitment_love_evidence(blob: str, tokens: Set[str], blob_tokens: Set[
     return bool(COMMITMENT_LOVE_TERMS.intersection(tokens)) or bool(
         COMMITMENT_LOVE_TERMS.intersection(blob_tokens)
     )
+
+
+def _has_sexual_context(
+    topic_metadata: Dict[str, Any],
+    tokens: Set[str],
+    blob_tokens: Set[str],
+) -> bool:
+    """True when a coercion topic is sexual (7.4) rather than non-sexual (7.2)."""
+    explicitness = str(topic_metadata.get("sexual_explicitness", "none")).lower()
+    if explicitness in {"explicit", "suggestive"}:
+        return True
+    sexual_function = str(topic_metadata.get("sexual_function", "none")).lower()
+    if sexual_function in SEXUAL_LOCK_FUNCTIONS:
+        return True
+    for terms in (SEXUAL_CONTACT_TERMS, EXPLICIT_EROGENOUS_TERMS):
+        if terms.intersection(tokens) or terms.intersection(blob_tokens):
+            return True
+    return False
 
 
 def _should_block_promotion_to_2_2(
@@ -519,10 +550,18 @@ def apply_domain_heuristics(
 
     # Stage 08 v3 sexual-function routing (when present)
     if consent_status in {"coercion_watchlist", "nonconsent_explicit"}:
+        coercion_target = (
+            "7.4" if _has_sexual_context(topic_metadata, tokens, blob_tokens) else "7.2"
+        )
         if main_id in {"2.3", "2.2", "2.1", "4.4"}:
-            result["secondary_category_id"] = main_id if main_id != "7.4" else secondary_id
-        result["main_category_id"] = "7.4"
-        main_id = "7.4"
+            result["secondary_category_id"] = (
+                main_id if main_id != coercion_target else secondary_id
+            )
+        result["main_category_id"] = coercion_target
+        main_id = coercion_target
+        if result.get("secondary_category_id") == coercion_target:
+            result["secondary_category_id"] = None
+        secondary_id = result.get("secondary_category_id")
     elif axis_hint == "consent_control_risk" and sexual_function == "consent_boundary":
         if main_id not in {"7.4", "7.2", "noise"}:
             result["secondary_category_id"] = main_id

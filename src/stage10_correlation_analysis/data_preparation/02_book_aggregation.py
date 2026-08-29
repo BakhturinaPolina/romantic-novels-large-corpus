@@ -1,11 +1,34 @@
 #!/usr/bin/env python3
-"""Book-level aggregation and derived indices.
+"""Roll hard topic counts up to taxonomy leaves and main groups, then build the theory axes.
 
-This script takes the topic-level lookup table produced in script 01 and joins it to
-book topic mixture data to produce:
-- book-level taxonomy proportions (long + wide)
-- optional segment-level taxonomy proportions (if chapter/segment topic probs are available)
-- derived taxonomy-proxy indices aligned to hypotheses
+Replaces the soft-probability version (now `src/legacy/stage10_correlation_analysis/`), which
+had three problems this script fixes:
+
+1. It pivoted a hardcoded 15-entry dict of taxonomy IDs, covering only 20% of topic mass.
+   `3.2`, `7.3` and `6.6` had topics in the lookup table and were dropped anyway. Here every
+   leaf present in `topic_lookup.parquet` gets a column.
+2. It kept its own copy of the axis definitions, which drifted from the frozen schema and
+   emitted four axes that were exactly 0.0 for all 16,000 books. Axes now come from
+   `configs/stage09/theory_aligned_index_schema.yaml` via `analysis/axes.py`, and an empty
+   component raises instead of silently zeroing.
+3. It gave no way to see how thin an axis was. `axis_coverage.parquet` reports topics and mass
+   per component, so "AX_hea_index is really just leaf 4.5" is visible in a table.
+
+Outputs (under `outputs.book_features_dir`):
+  book_leaf_shares_abs.parquet     leaf_<id>: share of all assigned sentences
+  book_leaf_shares_cond.parquet    leaf_<id>: share of *interpretable* mass (excludes noise
+                                   and context-only leaves), so leaves are comparable across
+                                   books with different amounts of unmappable text
+  book_group_shares.parquet        one column per taxonomy main group
+  book_axes_strict.parquet         axes from primary topic mapping only
+  book_axes_generous.parquet       axes with secondary mappings at half weight
+  axis_coverage.parquet            per-component topic count, mass, verdict
+  axis_definitions.parquet         the signed leaf weights actually used
+  leaf_topic_inventory.parquet     per leaf: topics, mass, prevalence, confidence, evidence
+  mapping_coverage.parquet         how much corpus mass is mapped, axis-bearing, noise
+
+Usage:
+  .venv/bin/python src/stage10_correlation_analysis/data_preparation/02_book_aggregation.py
 """
 
 from __future__ import annotations
@@ -13,819 +36,406 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
+import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
 
-# Add scripts directory to path for imports
-SCRIPT_DIR = Path(__file__).parent
-sys.path.insert(0, str(SCRIPT_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
-# Import shared utilities
-from utils import (
-    assert_overlap,
-    first_existing,
-    glob_first,
-    load_table,
-    normalize_id,
-    safe_project_root,
+from src.stage10_correlation_analysis.analysis import axes as axes_mod  # noqa: E402
+from src.stage10_correlation_analysis.analysis.config import (  # noqa: E402
+    DEFAULT_CONFIG_PATH,
+    load_analysis_config,
 )
 
-# Try to import project defaults
-try:
-    from src.stage06_topic_exploration.explore_retrained_model import (
-        DEFAULT_BASE_DIR,
-        DEFAULT_EMBEDDING_MODEL,
-    )
-except ImportError:
-    DEFAULT_BASE_DIR = None
-    DEFAULT_EMBEDDING_MODEL = None
+LOGGER = logging.getLogger("stage10.book_aggregation")
 
-try:
-    from src.stage09_category_mapping.stage1_theory_driven_categories.taxonomy_v2 import (
-        build_composite_series,
-        composite_index_spec,
-    )
-except ImportError:
-    build_composite_series = None
-    composite_index_spec = None
+# Leaves that carry no interpretable narrative content. Excluded from the conditional
+# denominator so that `cond_share` answers "of the text we can interpret, how much is this?"
+NON_INTERPRETABLE_LEAVES = {"noise", "uncertain_interpretable", "unmapped"}
 
 
-# Leaf taxonomy IDs for book-level component sums (stable across taxonomy renames).
-COMPONENT_TAXONOMY_IDS: Dict[str, List[str]] = {
-    "commitment_hea": ["4.5"],
-    "bonding_growth": ["4.2"],
-    "positive_emotions": ["3.1"],
-    "nonexplicit_affection": ["2.2"],
-    "explicit": ["2.3"],
-    "miscommunication": ["4.3"],
-    "neg_affect": ["3.2"],
-    "breakup_conflict": ["4.4"],
-    "protective_care": ["4.6"],
-    "possessiveness": ["4.7"],
-    "violence_threat": ["7.2"],
-    "external_crisis": ["7.3"],
-    "elite_work": ["6.1a"],
-    "generic_business": ["6.1b"],
-    "internal_ambivalence": ["3.3"],
-    "material_glamour": ["6.6"],
-    "aristocracy_status": ["6.7"],
-    "community_ritual": ["5.3a"],
-    "community_social": ["5.3b"],
-    "economic_precarity": ["6.4"],
-    "public_leisure": ["8.2"],
-    "commitment_symbols": ["8.3a"],
-    "everyday_props": ["8.3b"],
-    "appearance_presentation": ["1.6", "1.7"],
-    "domestic": ["8.1"],
-}
-
-
-def sum_taxonomy_id_columns(
-    wide_id: pd.DataFrame,
-    ids: List[str],
-    weights: Optional[Dict[str, float]] = None,
-) -> pd.Series:
-    """Sum weighted taxonomy-id columns from a book-level wide table."""
-    if wide_id.empty:
-        return pd.Series(dtype=float)
-    default_w = (weights or {}).get("default", 1.0)
-    total = pd.Series(0.0, index=wide_id.index)
-    for cid in ids:
-        if cid not in wide_id.columns:
-            continue
-        w = (weights or {}).get(cid, default_w)
-        total = total + wide_id[cid] * w
-    return total
-
-
-def setup_logging(output_dir: Path, log_file: str = "02_book_aggregation.log") -> logging.Logger:
-    """Set up logging to both file and console."""
+def setup_logging(output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    logger = logging.getLogger("book_aggregation")
-    logger.setLevel(logging.INFO)
-    logger.handlers.clear()
-
     fmt = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
-
-    fh = logging.FileHandler(output_dir / log_file, mode="w", encoding="utf-8")
-    fh.setLevel(logging.INFO)
-    fh.setFormatter(fmt)
-
-    sh = logging.StreamHandler()
-    sh.setLevel(logging.INFO)
-    sh.setFormatter(fmt)
-
-    logger.addHandler(fh)
-    logger.addHandler(sh)
-    return logger
+    for logger in (LOGGER, axes_mod.LOGGER):
+        logger.setLevel(logging.INFO)
+        logger.handlers.clear()
+        for handler in (
+            logging.FileHandler(output_dir / "02_book_aggregation.log", mode="w", encoding="utf-8"),
+            logging.StreamHandler(),
+        ):
+            handler.setFormatter(fmt)
+            logger.addHandler(handler)
 
 
-def find_inputs(project_root: Path) -> Dict[str, Optional[Path]]:
-    """Best-effort discovery of required inputs.
-    
-    We prefer pipeline outputs if they exist; otherwise fall back to raw contracts.
-    """
-    candidates = {}
-
-    # 1) Book topic mixtures (check organized structure first)
-    candidates['book_topic_probs'] = first_existing([
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "topic_probabilities" / "book_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "topic_probabilities" / "book_topic_probs.csv",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "book_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "book_topic_probs.csv",
-        project_root / "results" / "stage10_correlation_analysis" / "book_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "book_topic_probs.csv",
-        project_root / "book_topic_probs.csv",
-        project_root / "data" / "book_topic_probs.csv",
-        project_root / "results" / "book_topic_probs.csv",
-    ]) or glob_first(project_root / "results", [
-        "**/book_topic_probs.csv",
-        "**/book_topic_probs.parquet",
-        "**/book_topic_proportions*.parquet",
-        "**/book_topic_proportions*.csv",
-    ])
-
-    # 2) Book metadata
-    candidates['books_meta'] = first_existing([
-        project_root / "books_meta.csv",
-        project_root / "data" / "books_meta.csv",
-        project_root / "results" / "books_meta.csv",
-        project_root / "data" / "processed" / "goodreads.csv",
-    ]) or glob_first(project_root / "results", [
-        "**/books_meta.csv",
-        "**/books_meta.parquet",
-        "**/books_metadata*.csv",
-        "**/books_metadata*.parquet",
-    ])
-
-    # 3) Optional: chapter/segment topic probs (check organized structure first)
-    candidates['chapter_topic_probs'] = first_existing([
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "topic_probabilities" / "chapter_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "topic_probabilities" / "chapter_topic_probs.csv",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "chapter_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "chapter_topic_probs.csv",
-        project_root / "results" / "stage10_correlation_analysis" / "chapter_topic_probs.parquet",
-        project_root / "results" / "stage10_correlation_analysis" / "chapter_topic_probs.csv",
-        project_root / "chapter_topic_probs.csv",
-        project_root / "data" / "chapter_topic_probs.csv",
-        project_root / "results" / "chapter_topic_probs.csv",
-    ]) or glob_first(project_root / "results", [
-        "**/chapter_topic_probs.csv",
-        "**/chapter_topic_probs.parquet",
-        "**/segment_topic_probs*.csv",
-        "**/segment_topic_probs*.parquet",
-    ])
-
-    # 4) If Stage09 already computed category proportions, use those directly
-    candidates['stage09_book_category_props'] = first_existing([
-        project_root / "results" / "stage09_category_mapping" / "stage1_theory_driven_categories" / "book_category_proportions.parquet",
-        project_root / "results" / "stage09_category_mapping" / "stage1_theory_driven_categories" / "book_category_proportions.csv",
-    ])
-
-    # 5) Sentence dataframe with topics
-    candidates['sentence_df_with_topics'] = first_existing([
-        project_root / "data" / "processed" / "sentence_df_with_topics.parquet",
-        project_root / "data" / "processed" / "sentence_df_with_topics.csv",
-        project_root / "data" / "sentence_df_with_topics.parquet",
-    ]) or glob_first(project_root / "data", [
-        "**/sentence_df_with_topics.parquet",
-        "**/sentence_df_with_topics.csv",
-    ])
-
-    # 6) Goodreads metadata
-    candidates['goodreads_csv'] = first_existing([
-        project_root / "data" / "processed" / "goodreads.csv",
-        project_root / "data" / "goodreads.csv",
-    ])
-
-    return candidates
+def write(frame: pd.DataFrame, path: Path, label: str, *, index: bool = False) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    frame.to_parquet(path, index=index)
+    LOGGER.info("Wrote %-28s %6s rows x %3d cols -> %s",
+                label, f"{len(frame):,}", frame.shape[1], path.name)
 
 
-def aggregate_to_book_level(
-    book_topic: pd.DataFrame,
+# ---------------------------------------------------------------------------
+# Topic -> leaf mapping
+# ---------------------------------------------------------------------------
+
+def build_topic_leaf_map(
     topic_lookup: pd.DataFrame,
-    logger: logging.Logger,
+    *,
+    secondary_weight: float,
+    drop_noise_topics: bool,
 ) -> pd.DataFrame:
-    """Aggregate topic probabilities to book-level taxonomy proportions.
-    
-    Args:
-        book_topic: DataFrame with columns book_id, topic_id, prob
-        topic_lookup: Topic lookup table with taxonomy mappings
-        logger: Logger instance
-        
-    Returns:
-        DataFrame with book-level category proportions (long format)
+    """Long topic -> leaf table with weights: primary at 1.0, optionally secondary at 0.5.
+
+    239 of 348 topics carry a secondary taxonomy ID. Ignoring them throws away real signal
+    (a kiss scene in a hotel is both `2.2` and `8.2`); counting them at full weight would
+    double-count mass. Both variants are produced so the notebooks can show that conclusions
+    do not hinge on the choice.
     """
-    # Join to taxonomy main categories (+ axis exclusion flags)
-    lookup_cols = [
-        'topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group',
-        'taxonomy_exclude_from_axes', 'taxonomy_use_in_macro_axes', 'label_exclude_from_axes',
-    ]
-    present_cols = [c for c in lookup_cols if c in topic_lookup.columns]
-    book_topic = book_topic.merge(
-        topic_lookup[present_cols],
-        on='topic_id', how='left'
-    )
+    lookup = topic_lookup.copy()
+    if drop_noise_topics:
+        noise_mask = lookup.get("taxonomy_is_noise", pd.Series(False, index=lookup.index)).fillna(False)
+        n_noise = int(noise_mask.sum())
+        if n_noise:
+            LOGGER.info("Excluding %d topics flagged as noise by Stage09", n_noise)
+        lookup = lookup[~noise_mask.astype(bool)]
 
-    # Honor respect_exclude_from_axes: drop topics flagged for axis exclusion or noise
-    exclude_mask = pd.Series(False, index=book_topic.index)
-    if 'taxonomy_use_in_macro_axes' in book_topic.columns:
-        exclude_mask = exclude_mask | (~book_topic['taxonomy_use_in_macro_axes'].fillna(True))
-    elif 'taxonomy_exclude_from_axes' in book_topic.columns:
-        exclude_mask = exclude_mask | book_topic['taxonomy_exclude_from_axes'].fillna(False)
-    if 'label_exclude_from_axes' in book_topic.columns:
-        exclude_mask = exclude_mask | book_topic['label_exclude_from_axes'].fillna(False)
-    if 'taxonomy_main_id' in book_topic.columns:
-        exclude_mask = exclude_mask | (book_topic['taxonomy_main_id'] == 'noise')
-    book_topic = book_topic.loc[~exclude_mask].copy()
+    primary = lookup[["topic_id", "taxonomy_main_id"]].rename(columns={"taxonomy_main_id": "leaf_id"})
+    primary = primary.dropna(subset=["leaf_id"]).assign(weight=1.0, role="primary")
 
-    # Track unmapped probability mass per book
-    book_topic['is_mapped'] = book_topic['taxonomy_main_id'].notna()
-    unmapped_mass = (book_topic
-                     .assign(unmapped_prob=lambda d: np.where(d['is_mapped'], 0.0, d['prob']))
-                     .groupby('book_id', as_index=False)['unmapped_prob'].sum()
-                     .rename(columns={'unmapped_prob': 'unmapped_topic_mass'}))
+    parts = [primary]
+    if secondary_weight > 0 and "taxonomy_secondary_id" in lookup.columns:
+        secondary = (
+            lookup[["topic_id", "taxonomy_secondary_id"]]
+            .rename(columns={"taxonomy_secondary_id": "leaf_id"})
+            .dropna(subset=["leaf_id"])
+            .assign(weight=float(secondary_weight), role="secondary")
+        )
+        # A topic whose secondary repeats its primary would otherwise get 1.5x weight.
+        secondary = secondary.merge(
+            primary[["topic_id", "leaf_id"]].assign(_dupe=True),
+            on=["topic_id", "leaf_id"], how="left",
+        )
+        secondary = secondary[secondary["_dupe"].isna()].drop(columns=["_dupe"])
+        LOGGER.info("Adding %d secondary mappings at weight %.2f", len(secondary), secondary_weight)
+        parts.append(secondary)
 
-    # Aggregate to book x taxonomy_main_id (long format)
-    book_cat_long = (book_topic[book_topic['is_mapped']]
-        .groupby(['book_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group'], as_index=False)['prob']
-        .sum()
-        .rename(columns={'prob': 'category_prop_raw'})
-    )
-
-    # Normalize within book across mapped categories
-    totals = book_cat_long.groupby('book_id', as_index=False)['category_prop_raw'].sum().rename(columns={'category_prop_raw': 'mapped_mass'})
-    book_cat_long = book_cat_long.merge(totals, on='book_id', how='left')
-    book_cat_long['category_prop'] = book_cat_long['category_prop_raw'] / book_cat_long['mapped_mass']
-
-    # Attach unmapped mass
-    book_cat_long = book_cat_long.merge(unmapped_mass, on='book_id', how='left')
-    
-    return book_cat_long
+    out = pd.concat(parts, ignore_index=True)
+    out["leaf_id"] = out["leaf_id"].astype(str)
+    out["topic_id"] = out["topic_id"].astype(int)
+    return out
 
 
-def compute_indices(
-    book_cat_long: pd.DataFrame,
-    books_meta: Optional[pd.DataFrame],
-    logger: logging.Logger,
+def leaf_inventory(
+    topic_lookup: pd.DataFrame,
+    book_topic_counts: pd.DataFrame,
+    topic_leaf: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Compute taxonomy-proxy indices aligned to hypotheses.
-    
-    Args:
-        book_cat_long: Long format category proportions
-        books_meta: Optional book metadata
-        logger: Logger instance
-        
-    Returns:
-        DataFrame with computed indices
+    """Per leaf: how many topics, how much mass, how prevalent, how well evidenced.
+
+    This is the table to read before trusting any leaf-level result. A leaf resting on one
+    topic is a single cluster's idiosyncrasies, not a theme.
     """
-    # Build per-book wide table keyed by taxonomy leaf id
-    wide_id = (book_cat_long
-        .dropna(subset=['taxonomy_main_id'])
-        .groupby(['book_id', 'taxonomy_main_id'], as_index=False)['category_prop']
-        .sum()
-        .pivot_table(
-            index='book_id',
-            columns='taxonomy_main_id',
-            values='category_prop',
-            aggfunc='sum',
-            fill_value=0.0,
-        ))
+    corpus_mass = book_topic_counts.groupby("topic_id")["n_sentences"].sum()
+    total = float(corpus_mass.sum())
+    prevalence = (
+        book_topic_counts[book_topic_counts["n_sentences"] > 0]
+        .groupby("topic_id")["book_id"].nunique()
+    )
+    n_books = book_topic_counts["book_id"].nunique()
 
-    # Build component columns from stable taxonomy IDs
-    components_df = pd.DataFrame(index=wide_id.index)
-    for comp, ids in COMPONENT_TAXONOMY_IDS.items():
-        components_df[comp] = sum_taxonomy_id_columns(wide_id, ids)
+    primary = topic_leaf[topic_leaf["role"] == "primary"]
+    merged = primary.merge(
+        topic_lookup[[c for c in [
+            "topic_id", "taxonomy_main_name", "taxonomy_main_group", "taxonomy_confidence",
+            "taxonomy_evidence_quality", "taxonomy_use_in_macro_axes",
+        ] if c in topic_lookup.columns]],
+        on="topic_id", how="left",
+    )
+    merged["mass"] = merged["topic_id"].map(corpus_mass).fillna(0.0)
+    merged["prevalence"] = merged["topic_id"].map(prevalence).fillna(0) / max(n_books, 1)
 
-    # Indices aligned to configs/stage09/theory_aligned_index_schema.yaml (v2.3)
-    indices = pd.DataFrame(index=wide_id.index)
+    agg = merged.groupby("leaf_id").agg(
+        leaf_name=("taxonomy_main_name", "first"),
+        main_group=("taxonomy_main_group", "first"),
+        n_topics=("topic_id", "size"),
+        mass_sentences=("mass", "sum"),
+        mean_prevalence=("prevalence", "mean"),
+        mean_confidence=("taxonomy_confidence", "mean"),
+        n_low_evidence=("taxonomy_evidence_quality", lambda s: int((s == "low").sum())),
+        n_axis_bearing=("taxonomy_use_in_macro_axes", lambda s: int(s.fillna(False).sum())),
+    ).reset_index()
+    agg["mass_share"] = agg["mass_sentences"] / total
+    return agg.sort_values("mass_share", ascending=False).reset_index(drop=True)
 
-    indices['payoff_safety'] = (
-        components_df['commitment_hea'] + components_df['positive_emotions']
+
+# ---------------------------------------------------------------------------
+# Book-level pivots
+# ---------------------------------------------------------------------------
+
+def pivot_leaf_shares(
+    book_topic_counts: pd.DataFrame,
+    topic_leaf: pd.DataFrame,
+    *,
+    prefix: str = "leaf_",
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Absolute and conditional leaf shares, one row per book.
+
+    Absolute: share of the book's assigned sentences. Comparable to "3.3% of this book".
+    Conditional: share of the book's *interpretable* sentences. Two books can differ in how
+    much of their text the taxonomy can speak about at all; the conditional form removes that
+    nuisance so leaf comparisons are not driven by mapping coverage.
+    """
+    joined = book_topic_counts.merge(topic_leaf, on="topic_id", how="left")
+    joined["leaf_id"] = joined["leaf_id"].fillna("unmapped")
+    joined["weight"] = joined["weight"].fillna(1.0)
+    joined["weighted"] = joined["n_sentences"] * joined["weight"]
+
+    leaf_counts = joined.groupby(["book_id", "leaf_id"])["weighted"].sum().unstack(fill_value=0.0)
+
+    denom_abs = leaf_counts.sum(axis=1)
+    interpretable = [c for c in leaf_counts.columns if c not in NON_INTERPRETABLE_LEAVES]
+    denom_cond = leaf_counts[interpretable].sum(axis=1)
+
+    abs_shares = leaf_counts.div(denom_abs.replace(0.0, np.nan), axis=0).fillna(0.0)
+    cond_shares = (
+        leaf_counts[interpretable].div(denom_cond.replace(0.0, np.nan), axis=0).fillna(0.0)
     )
 
-    # H1: AX_love_over_sex — payoff minus explicit (difference, not log-ratio)
-    indices['love_over_sex'] = indices['payoff_safety'] - components_df['explicit']
+    abs_shares.columns = [f"{prefix}{c}" for c in abs_shares.columns]
+    cond_shares.columns = [f"{prefix}{c}" for c in cond_shares.columns]
 
-    # H2: AX_hea_index — commitment + rituals + symbolic objects (weighted)
-    if composite_index_spec is not None:
-        indices['hea_index'] = sum_taxonomy_id_columns(
-            wide_id, ["4.5", "5.3a", "8.3a"], {"default": 1.0, "5.3a": 0.8, "8.3a": 0.5}
+    abs_shares["interpretable_mass"] = (denom_cond / denom_abs.replace(0.0, np.nan)).fillna(0.0)
+
+    # A book with no interpretable sentence at all has undefined conditional shares. In this
+    # corpus that is one single-sentence book whose only topic was the outlier; it is flagged
+    # rather than dropped here, and excluded downstream by `analysable`.
+    degenerate = int((denom_cond <= 0).sum())
+    if degenerate:
+        LOGGER.warning(
+            "%d book(s) have zero interpretable mass; their conditional leaf shares are all "
+            "zero and they are flagged as not analysable in the frame", degenerate,
         )
-    else:
-        indices['hea_index'] = (
-            components_df['commitment_hea']
-            + 0.8 * components_df['community_ritual']
-            + 0.5 * components_df['commitment_symbols']
+    return abs_shares, cond_shares
+
+
+def pivot_group_shares(
+    book_topic_counts: pd.DataFrame,
+    topic_lookup: pd.DataFrame,
+    *,
+    prefix: str = "group_",
+) -> pd.DataFrame:
+    """Main-group shares — the coarse level that Chapter 2 of the report opens with."""
+    groups = topic_lookup[["topic_id", "taxonomy_main_group"]].dropna()
+    joined = book_topic_counts.merge(groups, on="topic_id", how="left")
+    joined["taxonomy_main_group"] = joined["taxonomy_main_group"].fillna("Unmapped")
+
+    counts = joined.groupby(["book_id", "taxonomy_main_group"])["n_sentences"].sum().unstack(fill_value=0)
+    shares = counts.div(counts.sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)
+    shares.columns = [f"{prefix}{c.replace(' ', '_').replace(',', '').replace('&', 'and').lower()}"
+                      for c in shares.columns]
+    return shares
+
+
+def mapping_coverage(
+    book_topic_counts: pd.DataFrame,
+    topic_lookup: pd.DataFrame,
+    id_sets: Dict[str, set],
+) -> pd.DataFrame:
+    """How much of each book the taxonomy can actually speak about.
+
+    The old pipeline's `mapped_mass` averaged 0.2004, which meant every leaf-level statement
+    was about a fifth of the text. This table is how that number gets checked rather than
+    assumed.
+    """
+    flags = topic_lookup[["topic_id", "taxonomy_main_id"]].copy()
+    flags["is_axis_bearing"] = flags["taxonomy_main_id"].astype(str).isin(id_sets["axis_bearing"])
+    flags["is_context"] = flags["taxonomy_main_id"].astype(str).isin(id_sets["secondary_context"])
+    flags["is_noise_leaf"] = flags["taxonomy_main_id"].astype(str).isin(NON_INTERPRETABLE_LEAVES)
+
+    joined = book_topic_counts.merge(flags, on="topic_id", how="left")
+    joined["is_mapped"] = joined["taxonomy_main_id"].notna()
+    for col in ("is_axis_bearing", "is_context", "is_noise_leaf"):
+        joined[col] = joined[col].fillna(False)
+
+    total = joined.groupby("book_id")["n_sentences"].sum()
+    out = pd.DataFrame({
+        "mapped_mass": joined[joined["is_mapped"]].groupby("book_id")["n_sentences"].sum() / total,
+        "axis_bearing_mass": joined[joined["is_axis_bearing"]].groupby("book_id")["n_sentences"].sum() / total,
+        "context_mass": joined[joined["is_context"]].groupby("book_id")["n_sentences"].sum() / total,
+        "noise_leaf_mass": joined[joined["is_noise_leaf"]].groupby("book_id")["n_sentences"].sum() / total,
+    }).fillna(0.0)
+
+    LOGGER.info(
+        "Corpus mapping coverage: mapped %.3f, axis-bearing %.3f, context %.3f, non-interpretable %.3f",
+        out["mapped_mass"].mean(), out["axis_bearing_mass"].mean(),
+        out["context_mass"].mean(), out["noise_leaf_mass"].mean(),
+    )
+    return out.reset_index()
+
+
+# ---------------------------------------------------------------------------
+# Axis construction
+# ---------------------------------------------------------------------------
+
+def build_variant(
+    variant: str,
+    book_topic_counts: pd.DataFrame,
+    topic_lookup: pd.DataFrame,
+    specs: Dict[str, axes_mod.AxisSpec],
+    weights: Dict[str, float],
+    *,
+    out_dir: Path,
+    fail_on_empty: bool,
+    allow_empty: Sequence[str],
+    write_shares: bool,
+) -> pd.DataFrame:
+    LOGGER.info("-" * 70)
+    LOGGER.info("Variant %r: primary weight %.2f, secondary weight %.2f",
+                variant, weights["primary_weight"], weights["secondary_weight"])
+
+    topic_leaf = build_topic_leaf_map(
+        topic_lookup,
+        secondary_weight=weights["secondary_weight"],
+        drop_noise_topics=True,
+    )
+    abs_shares, cond_shares = pivot_leaf_shares(book_topic_counts, topic_leaf)
+
+    if write_shares:
+        write(abs_shares.reset_index(), out_dir / "book_leaf_shares_abs.parquet", "leaf_shares_abs")
+        write(cond_shares.reset_index(), out_dir / "book_leaf_shares_cond.parquet", "leaf_shares_cond")
+
+    # Axes use conditional shares: a book with more unmappable text should not appear to have
+    # weaker themes purely because of that.
+    axis_values = axes_mod.build_axis_values(
+        cond_shares, specs,
+        fail_on_empty_component=fail_on_empty,
+        allow_empty_axes=allow_empty,
+    )
+    skipped = axis_values.attrs.get("skipped_axes", {})
+    if skipped:
+        LOGGER.warning("Variant %r skipped %d axes: %s", variant, len(skipped), ", ".join(skipped))
+
+    write(axis_values.reset_index(), out_dir / f"book_axes_{variant}.parquet", f"axes_{variant}")
+    return axis_values
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--config", type=str, default=DEFAULT_CONFIG_PATH)
+    ap.add_argument("--allow-empty-axes", action="store_true",
+                    help="Warn instead of raising when an axis has no measurable component.")
+    args = ap.parse_args()
+
+    cfg = load_analysis_config(args.config)
+    out_dir = cfg.output_path("book_features_dir")
+    setup_logging(out_dir)
+
+    LOGGER.info("=" * 78)
+    LOGGER.info("Stage10 book aggregation (hard assignments) — run %s", cfg.run_id)
+    LOGGER.info("=" * 78)
+    started = time.perf_counter()
+
+    counts_dir = cfg.output_path("hard_counts_dir")
+    book_topic_counts = pd.read_parquet(counts_dir / "book_topic_counts.parquet")
+    LOGGER.info("Loaded %s book x topic rows over %s books",
+                f"{len(book_topic_counts):,}", f"{book_topic_counts['book_id'].nunique():,}")
+
+    topic_lookup = pd.read_parquet(cfg.input_path("topic_lookup", required=True))
+    LOGGER.info("Loaded %d topics from the Stage09 lookup", len(topic_lookup))
+
+    excluded = cfg.excluded_book_ids()
+    if excluded:
+        before = book_topic_counts["book_id"].nunique()
+        book_topic_counts = book_topic_counts[~book_topic_counts["book_id"].isin(excluded)]
+        LOGGER.info("Excluded %d books (%d -> %d)", len(excluded), before,
+                    book_topic_counts["book_id"].nunique())
+
+    # ---- inventory and coverage, before any axis maths ----
+    strict_map = build_topic_leaf_map(topic_lookup, secondary_weight=0.0, drop_noise_topics=True)
+    inventory = leaf_inventory(topic_lookup, book_topic_counts, strict_map)
+    write(inventory, out_dir / "leaf_topic_inventory.parquet", "leaf_topic_inventory")
+    LOGGER.info("Leaves present: %d; mass covered by top 10: %.3f",
+                len(inventory), inventory["mass_share"].head(10).sum())
+
+    id_sets = axes_mod.taxonomy_id_sets(cfg.input_path("taxonomy_config", required=True))
+    coverage_by_book = mapping_coverage(book_topic_counts, topic_lookup, id_sets)
+    write(coverage_by_book, out_dir / "mapping_coverage.parquet", "mapping_coverage")
+
+    group_shares = pivot_group_shares(book_topic_counts, topic_lookup)
+    write(group_shares.reset_index(), out_dir / "book_group_shares.parquet", "group_shares")
+
+    # ---- resolve the axis schema and audit it ----
+    schema = axes_mod.load_axis_schema(cfg.input_path("axis_schema", required=True))
+    composites = axes_mod.load_composites(cfg.input_path("taxonomy_config", required=True))
+    additional = cfg.section("axes", "additional", default={}) or {}
+    specs = axes_mod.resolve_axes(schema, composites, additional=additional)
+
+    leaf_topic_counts = dict(zip(inventory["leaf_id"], inventory["n_topics"]))
+    leaf_mass = dict(zip(inventory["leaf_id"], inventory["mass_share"]))
+    verdicts = cfg.section("axes", "coverage_verdicts")
+    coverage = axes_mod.audit_coverage(
+        specs, leaf_topic_counts, leaf_mass,
+        viable_min_topics=int(verdicts["viable_min_topics"]),
+        weak_min_topics=int(verdicts["weak_min_topics"]),
+    )
+    write(coverage, out_dir / "axis_coverage.parquet", "axis_coverage")
+    summary = axes_mod.summarise_coverage(coverage)
+    write(summary, out_dir / "axis_coverage_summary.parquet", "axis_coverage_summary")
+    write(axes_mod.leaf_weight_table(specs), out_dir / "axis_definitions.parquet", "axis_definitions")
+
+    empty_axes = summary.loc[summary["axis_verdict"] == "empty", "axis"].tolist()
+    weak_axes = summary.loc[summary["axis_verdict"] == "weak", "axis"].tolist()
+    LOGGER.info("Axis verdicts: %d viable, %d weak, %d empty",
+                int((summary["axis_verdict"] == "viable").sum()), len(weak_axes), len(empty_axes))
+    for axis in weak_axes:
+        row = summary[summary["axis"] == axis].iloc[0]
+        LOGGER.warning("  WEAK  %-42s %d viable / %d weak / %d empty components%s",
+                       axis, row["n_viable"], row["n_weak"], row["n_empty"],
+                       f" (empty: {row['empty_leaves']})" if row["empty_leaves"] else "")
+    for axis in empty_axes:
+        LOGGER.warning("  EMPTY %-42s no component has any topic", axis)
+
+    # ---- build both mapping variants ----
+    fail_on_empty = bool(cfg.section("axes", "fail_on_empty_component")) and not args.allow_empty_axes
+    allow_empty = list(empty_axes)  # documented above; skipped rather than emitted as zeros
+    variants = cfg.section("axes", "variants")
+    primary_variant = cfg.section("axes", "primary_variant")
+
+    axis_frames: Dict[str, pd.DataFrame] = {}
+    for variant, weights in variants.items():
+        axis_frames[variant] = build_variant(
+            variant, book_topic_counts, topic_lookup, specs, weights,
+            out_dir=out_dir, fail_on_empty=fail_on_empty, allow_empty=allow_empty,
+            write_shares=(variant == primary_variant),
         )
 
-    indices['explicitness'] = components_df['explicit']
-    indices['explicitness_ratio'] = (
-        components_df['explicit']
-        / (indices['payoff_safety'] + components_df['explicit'] + components_df['nonexplicit_affection'] + 1e-9)
-    )
+    # ---- how much does the mapping choice matter? ----
+    if len(axis_frames) == 2:
+        (a_name, a), (b_name, b) = list(axis_frames.items())
+        shared = sorted(set(a.columns) & set(b.columns))
+        rows = [{
+            "axis": col,
+            "pearson_r": float(a[col].corr(b[col])),
+            "spearman_r": float(a[col].corr(b[col], method="spearman")),
+            f"mean_{a_name}": float(a[col].mean()),
+            f"mean_{b_name}": float(b[col].mean()),
+        } for col in shared]
+        stability = pd.DataFrame(rows).sort_values("spearman_r")
+        write(stability, out_dir / "axis_mapping_stability.parquet", "axis_mapping_stability")
+        LOGGER.info("Strict vs generous mapping: median Spearman %.3f, minimum %.3f (%s)",
+                    stability["spearman_r"].median(), stability["spearman_r"].min(),
+                    stability.iloc[0]["axis"])
 
-    # H5: AX_dark_vs_tender
-    indices['dark_vs_tender'] = (
-        (
-            components_df['neg_affect']
-            + components_df['breakup_conflict']
-            + components_df['violence_threat']
-            + components_df['external_crisis']
-        )
-        - (components_df['positive_emotions'] + components_df['nonexplicit_affection'] + components_df['protective_care'])
-    )
-
-    indices['miscommunication'] = components_df['miscommunication']
-    indices['miscommunication_balance'] = indices['payoff_safety'] - components_df['miscommunication']
-
-    # H4: protective vs possessive
-    indices['protective_care'] = components_df['protective_care']
-    indices['possessiveness'] = components_df['possessiveness']
-    indices['protective_vs_possessive'] = (
-        components_df['protective_care'] - components_df['possessiveness']
-    )
-
-    indices['violence_coercion'] = components_df['violence_threat']
-    indices['external_crisis'] = components_df['external_crisis']
-
-    # Legacy proxy (6.1 + 8.2) — kept for backward compatibility
-    indices['luxury_saturation_proxy'] = (
-        components_df['elite_work'] + components_df['public_leisure']
-    )
-
-    if composite_index_spec is not None and build_composite_series is not None:
-        lux_spec = composite_index_spec("luxury_composite")
-        indices['luxury_composite'] = build_composite_series(wide_id, lux_spec)
-    else:
-        indices['luxury_composite'] = (
-            components_df['material_glamour']
-            + components_df['aristocracy_status']
-            + components_df['community_ritual']
-            + components_df['public_leisure']
-            + components_df['status_objects']
-            + 0.5 * components_df['elite_work']
-        )
-
-    if composite_index_spec is not None and build_composite_series is not None:
-        sp_spec = composite_index_spec("status_power")
-        indices['status_power'] = build_composite_series(wide_id, sp_spec)
-    else:
-        indices['status_power'] = (
-            components_df['elite_work']
-            + components_df['material_glamour']
-            + components_df['aristocracy_status']
-        )
-
-    if composite_index_spec is not None and build_composite_series is not None:
-        ap_spec = composite_index_spec("appearance_presentation")
-        indices['appearance_presentation'] = build_composite_series(wide_id, ap_spec)
-    else:
-        indices['appearance_presentation'] = components_df['appearance_presentation']
-
-    indices['luxury_x_love'] = indices['luxury_composite'] * indices['payoff_safety']
-
-    if composite_index_spec is not None and build_composite_series is not None:
-        ei_spec = composite_index_spec("everyday_intimacy_emotional_safety")
-        indices['everyday_intimacy_emotional_safety'] = build_composite_series(wide_id, ei_spec)
-        sti_spec = composite_index_spec("sexual_tension_explicit_intimacy")
-        indices['sexual_tension_explicit_intimacy'] = build_composite_series(wide_id, sti_spec)
-        ccr_spec = composite_index_spec("coercion_risk_watchlist")
-        indices['coercion_risk_watchlist'] = build_composite_series(wide_id, ccr_spec)
-    else:
-        indices['everyday_intimacy_emotional_safety'] = sum_taxonomy_id_columns(
-            wide_id,
-            ["4.2", "4.6", "2.2", "4.1", "8.1", "8.2"],
-            {"4.2": 1.0, "4.6": 1.0, "2.2": 1.0, "4.1": 0.5, "8.1": 0.3, "8.2": 0.3, "default": 1.0},
-        )
-        indices['sexual_tension_explicit_intimacy'] = sum_taxonomy_id_columns(
-            wide_id, ["2.1", "2.3", "2.4", "2.5"]
-        )
-        indices['coercion_risk_watchlist'] = sum_taxonomy_id_columns(
-            wide_id, ["7.4", "7.2"], {"7.4": 1.0, "7.2": 0.8, "default": 1.0}
-        )
-
-    indices['attraction'] = sum_taxonomy_id_columns(wide_id, ["2.1"])
-
-    indices['internal_ambivalence'] = components_df['internal_ambivalence']
-
-    # Attach unmapped mass
-    unmapped = (book_cat_long[['book_id', 'unmapped_topic_mass']].drop_duplicates('book_id')
-                .set_index('book_id'))
-    indices = indices.join(unmapped, how='left')
-
-    # Join metadata fields if available
-    if books_meta is not None:
-        meta_cols = [c for c in ['rating_class', 'avg_rating', 'n_ratings', 'author_id', 'length_tokens', 'length_words', 'year'] if c in books_meta.columns]
-        meta = books_meta[['book_id'] + meta_cols].drop_duplicates('book_id').set_index('book_id')
-        indices = indices.join(meta, how='left')
-
-    indices = indices.reset_index()
-    return indices
-
-
-def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(
-        description="Book-level aggregation and derived indices"
-    )
-    
-    parser.add_argument(
-        "--topic-lookup",
-        type=Path,
-        help="Path to topic_lookup.parquet from script 01 (auto-detected if not provided)",
-    )
-    
-    parser.add_argument(
-        "--book-topic-probs",
-        type=Path,
-        help="Path to book_topic_probs.parquet (auto-discovered if not provided)",
-    )
-    
-    parser.add_argument(
-        "--chapter-topic-probs",
-        type=Path,
-        help="Path to chapter_topic_probs.parquet (optional)",
-    )
-    
-    parser.add_argument(
-        "--goodreads-path",
-        type=Path,
-        help="Path to goodreads.csv (auto-detected if not provided)",
-    )
-    
-    parser.add_argument(
-        "--output-dir",
-        type=Path,
-        help="Output directory for book features (default: results/stage10_correlation_analysis/data_preparation/book_features)",
-    )
-    
-    parser.add_argument(
-        "--excluded-book-ids",
-        type=Path,
-        help="CSV file with excluded book IDs (default: excluded_book_ids.csv in script directory)",
-    )
-    
-    parser.add_argument(
-        "--project-root",
-        type=Path,
-        help="Project root path (auto-detected if not provided)",
-    )
-    
-    return parser.parse_args()
-
-
-def main() -> None:
-    """Main entry point."""
-    args = parse_args()
-    
-    # Determine project root
-    project_root = args.project_root or safe_project_root()
-    
-    # Set up output directory
-    if args.output_dir:
-        output_dir = Path(args.output_dir)
-    else:
-        # Use organized structure: data_preparation/book_features/
-        base_dir = project_root / "results" / "stage10_correlation_analysis" / "data_preparation"
-        output_dir = base_dir / "book_features"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Set up logging
-    logger = setup_logging(output_dir)
-    logger.info("="*80)
-    logger.info("Book-level Aggregation and Derived Indices")
-    logger.info("="*80)
-    logger.info(f"Project root: {project_root}")
-    logger.info(f"Output directory: {output_dir}")
-    
-    # Load excluded book IDs
-    if args.excluded_book_ids:
-        excluded_df = pd.read_csv(args.excluded_book_ids)
-        excluded_book_ids = excluded_df["book_id"].astype(str).tolist()
-    else:
-        # Try default location
-        default_excluded = SCRIPT_DIR.parent / "excluded_book_ids.csv"
-        if default_excluded.exists():
-            excluded_df = pd.read_csv(default_excluded)
-            excluded_book_ids = excluded_df["book_id"].astype(str).tolist()
-        else:
-            excluded_book_ids = ['19561986', '19619918', '25781538', '52061964', '53491034']
-    logger.info(f"Excluded book IDs: {excluded_book_ids}")
-    
-    # Load topic lookup
-    logger.info("\n" + "="*80)
-    logger.info("Loading topic lookup")
-    logger.info("="*80)
-    
-    if args.topic_lookup:
-        topic_lookup_path = Path(args.topic_lookup)
-    else:
-        # Look in organized structure first, then fallback to old location
-        eda_dir = project_root / "results" / "stage10_correlation_analysis" / "data_preparation" / "taxonomy_radway_eda"
-        topic_lookup_path = eda_dir / "topic_lookup.parquet"
-        if not topic_lookup_path.exists():
-            # Fallback to old location (for backward compatibility)
-            old_eda_dir = project_root / "results" / "stage10_correlation_analysis" / "taxonomy_radway_eda"
-            if old_eda_dir.exists():
-                topic_lookup_path = old_eda_dir / "topic_lookup.parquet"
-    
-    if not topic_lookup_path.exists():
-        raise FileNotFoundError(
-            f"topic_lookup.parquet not found. Run script 01 first.\n"
-            f"Expected: {topic_lookup_path}"
-        )
-    
-    topic_lookup = pd.read_parquet(topic_lookup_path)
-    logger.info(f"✓ Loaded topic lookup: {topic_lookup_path} (shape: {topic_lookup.shape})")
-    
-    # Basic QA: required columns
-    required_cols = {'topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group'}
-    missing = required_cols - set(topic_lookup.columns)
-    if missing:
-        raise ValueError(f"topic_lookup missing required columns: {missing}")
-    
-    # Discover inputs
-    logger.info("\n" + "="*80)
-    logger.info("Discovering input files")
-    logger.info("="*80)
-    inputs = find_inputs(project_root)
-    
-    for k, v in inputs.items():
-        if v:
-            logger.info(f"  {k}: {v}")
-    
-    # Load Goodreads metadata and apply cohort exclusion
-    logger.info("\n" + "="*80)
-    logger.info("Loading Goodreads metadata")
-    logger.info("="*80)
-    
-    if args.goodreads_path:
-        goodreads_path = Path(args.goodreads_path)
-    else:
-        data_dir = project_root / "data" / "processed"
-        results_dir = project_root / "results"
-        goodreads_path = first_existing([
-            data_dir / "goodreads.csv",
-            data_dir / "books_meta.csv",
-            results_dir / "books_meta.csv",
-        ])
-    
-    if goodreads_path is None or not goodreads_path.exists():
-        raise FileNotFoundError("Could not find goodreads.csv / books_meta.csv")
-    
-    meta = pd.read_csv(goodreads_path)
-    
-    # Choose id column
-    id_col = None
-    for c in ["goodreads_book_id", "ID", "book_id", "goodreads_id", "work_id", "id"]:
-        if c in meta.columns:
-            id_col = c
-            break
-    if id_col is None:
-        raise ValueError(f"No suitable Goodreads id column found. Columns: {meta.columns.tolist()}")
-    
-    meta["book_id"] = normalize_id(meta[id_col])
-    
-    # Apply cohort exclusion
-    before = meta["book_id"].nunique()
-    meta = meta[~meta["book_id"].isin(excluded_book_ids)].copy()
-    after = meta["book_id"].nunique()
-    logger.info(f"✓ Cohort meta unique book_id: {before} → {after} (excluded {before-after})")
-    
-    # Load book category proportions
-    logger.info("\n" + "="*80)
-    logger.info("Loading book category proportions")
-    logger.info("="*80)
-    
-    book_cat_long = None
-    source_used = None
-    
-    if inputs.get('stage09_book_category_props') is not None:
-        p = inputs['stage09_book_category_props']
-        book_cat_long = load_table(p)
-        source_used = f"stage09_book_category_props: {p}"
-        logger.info(f"✓ Using Stage09 book category proportions: {p}")
-        
-        # Normalize column names
-        if 'prop' in book_cat_long.columns:
-            book_cat_long = book_cat_long.rename(columns={'prop': 'category_prop'})
-        if 'main_category_id' in book_cat_long.columns:
-            book_cat_long = book_cat_long.rename(columns={'main_category_id': 'taxonomy_main_id'})
-        
-        # Join with topic_lookup to get taxonomy_main_name and taxonomy_main_group if missing
-        if 'taxonomy_main_name' not in book_cat_long.columns or 'taxonomy_main_group' not in book_cat_long.columns:
-            book_cat_long = book_cat_long.merge(
-                topic_lookup[['taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group']].drop_duplicates(),
-                on='taxonomy_main_id',
-                how='left'
-            )
-        
-        # Add unmapped_topic_mass column if missing
-        if 'unmapped_topic_mass' not in book_cat_long.columns:
-            book_cat_long['unmapped_topic_mass'] = 0.0
-    else:
-        # Use book_topic_probs and aggregate
-        p = args.book_topic_probs or inputs.get('book_topic_probs')
-        if p is None or not Path(p).exists():
-            raise FileNotFoundError(
-                "Could not find book_topic_probs.csv/parquet.\n"
-                "Looked under project_root and results/**.\n"
-                "If your file name differs, edit the discovery patterns in find_inputs()."
-            )
-        
-        book_topic = load_table(Path(p))
-        source_used = f"book_topic_probs: {p}"
-        logger.info(f"✓ Using book topic probs: {p}")
-        
-        # Normalize column names
-        col_map = {c.lower(): c for c in book_topic.columns}
-        
-        def pick(name_options):
-            for opt in name_options:
-                if opt in col_map:
-                    return col_map[opt]
-            return None
-        
-        c_book = pick(['book_id', 'book', 'bookid'])
-        c_topic = pick(['topic_id', 'topic', 'topicid'])
-        c_prob = pick(['prob', 'probability', 'topic_prob', 'weight'])
-        
-        if not (c_book and c_topic and c_prob):
-            raise ValueError(
-                f"book_topic_probs columns not recognized. Found: {list(book_topic.columns)}\n"
-                "Need columns like: book_id, topic_id, prob"
-            )
-        
-        book_topic = book_topic.rename(columns={c_book: 'book_id', c_topic: 'topic_id', c_prob: 'prob'})
-        book_topic['topic_id'] = book_topic['topic_id'].astype(int, errors='ignore')
-        book_topic['prob'] = pd.to_numeric(book_topic['prob'], errors='coerce')
-        
-        # Aggregate to book level
-        book_cat_long = aggregate_to_book_level(book_topic, topic_lookup, logger)
-    
-    logger.info(f"Source used: {source_used}")
-    logger.info(f"book_cat_long shape: {book_cat_long.shape}")
-    
-    # Normalize + filter to cohort
-    logger.info("\n" + "="*80)
-    logger.info("Applying cohort filter")
-    logger.info("="*80)
-    
-    if "goodreads_book_id" in book_cat_long.columns:
-        book_cat_long["book_id"] = normalize_id(book_cat_long["goodreads_book_id"])
-    elif "book_id" in book_cat_long.columns:
-        book_cat_long["book_id"] = normalize_id(book_cat_long["book_id"])
-    else:
-        raise ValueError(f"book_cat_long has no book_id column. Columns: {book_cat_long.columns.tolist()}")
-    
-    # Restrict to cohort
-    book_cat_long = book_cat_long[book_cat_long["book_id"].isin(set(meta["book_id"]))].copy()
-    
-    # Overlap check
-    assert_overlap(book_cat_long["book_id"], meta["book_id"], "book_cat_long(cohort)", "meta(cohort)", logger=logger)
-    logger.info(f"✓ book_cat_long rows after cohort filter: {len(book_cat_long)}")
-    
-    # Load and merge books_meta
-    logger.info("\n" + "="*80)
-    logger.info("Loading books metadata")
-    logger.info("="*80)
-    
-    books_meta = None
-    if inputs.get('books_meta') is not None:
-        meta_path = Path(inputs['books_meta'])
-        books_meta = load_table(meta_path)
-        logger.info(f"✓ Loaded books_meta: {meta_path}  shape={books_meta.shape}")
-        
-        # Standardize common columns
-        if 'rating_class' not in books_meta.columns and 'group' in books_meta.columns:
-            books_meta = books_meta.rename(columns={'group': 'rating_class'})
-        
-        # author_id normalization
-        if 'author_id' not in books_meta.columns:
-            for alt in ['author', 'authorid', 'author_id']:
-                if alt in books_meta.columns:
-                    books_meta = books_meta.rename(columns={alt: 'author_id'})
-                    break
-        
-        # book_id normalization
-        if 'book_id' not in books_meta.columns:
-            for alt in ['ID', 'id', 'book_id', 'bookid']:
-                if alt in books_meta.columns:
-                    books_meta = books_meta.rename(columns={alt: 'book_id'})
-                    break
-        
-        # Ensure book_id types match
-        if 'book_id' in books_meta.columns:
-            books_meta['book_id'] = pd.to_numeric(books_meta['book_id'], errors='coerce')
-        
-        if 'book_id' in book_cat_long.columns:
-            book_cat_long['book_id'] = pd.to_numeric(book_cat_long['book_id'], errors='coerce')
-        
-        # Merge
-        book_cat_long = book_cat_long.merge(
-            books_meta,
-            on='book_id', how='left', suffixes=('', '_meta')
-        )
-        
-        if 'rating_class' in book_cat_long.columns:
-            logger.info("rating_class distribution:")
-            logger.info(book_cat_long['rating_class'].value_counts(dropna=False).head(10).to_string())
-    else:
-        logger.warning("⚠ No books_meta found. book_cat_long will not include rating_class/controls unless already present.")
-    
-    # Save long and wide formats
-    logger.info("\n" + "="*80)
-    logger.info("Saving book category proportions")
-    logger.info("="*80)
-    
-    book_cat_long_out = output_dir / "book_taxonomy_main_props_long.parquet"
-    book_cat_long.to_parquet(book_cat_long_out, index=False)
-    logger.info(f"✓ Saved: {book_cat_long_out}")
-    
-    # Wide format
-    book_cat_wide = (book_cat_long
-                     .pivot_table(
-                         index='book_id',
-                         columns='taxonomy_main_id',
-                         values='category_prop',
-                         aggfunc='sum',
-                         fill_value=0.0
-                     )
-                     .reset_index())
-    book_cat_wide_out = output_dir / "book_taxonomy_main_props_wide.parquet"
-    book_cat_wide.to_parquet(book_cat_wide_out, index=False)
-    logger.info(f"✓ Saved: {book_cat_wide_out}")
-    
-    # Compute indices
-    logger.info("\n" + "="*80)
-    logger.info("Computing derived indices")
-    logger.info("="*80)
-    
-    indices = compute_indices(book_cat_long, books_meta, logger)
-    
-    indices_out = output_dir / "indices_book_taxonomy_proxy.parquet"
-    indices.to_parquet(indices_out, index=False)
-    logger.info(f"✓ Saved indices: {indices_out}")
-    
-    # Optional segment-level processing
-    if args.chapter_topic_probs or inputs.get('chapter_topic_probs'):
-        logger.info("\n" + "="*80)
-        logger.info("Processing chapter/segment topic probabilities")
-        logger.info("="*80)
-        
-        seg_path = args.chapter_topic_probs or inputs.get('chapter_topic_probs')
-        if seg_path:
-            seg = load_table(Path(seg_path))
-            logger.info(f"✓ Loaded segment/chapter topic probs: {seg_path}  shape={seg.shape}")
-            
-            # Normalize columns
-            col_map = {c.lower(): c for c in seg.columns}
-            
-            def pick(name_options):
-                for opt in name_options:
-                    if opt in col_map:
-                        return col_map[opt]
-                return None
-            
-            c_book = pick(['book_id', 'book', 'bookid'])
-            c_topic = pick(['topic_id', 'topic', 'topicid'])
-            c_prob = pick(['prob', 'probability', 'topic_prob', 'weight'])
-            c_seg = pick(['segment', 'tert', 'tertile', 'chapter_segment', 'part', 'section'])
-            
-            if c_seg is None:
-                logger.info("⚠ No explicit segment column found (begin/middle/end). Segment analysis deferred to Notebook 6.")
-            else:
-                seg = seg.rename(columns={c_book: 'book_id', c_topic: 'topic_id', c_prob: 'prob', c_seg: 'segment'})
-                seg['prob'] = pd.to_numeric(seg['prob'], errors='coerce')
-                
-                seg = seg.merge(
-                    topic_lookup[['topic_id', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group']],
-                    on='topic_id', how='left'
-                )
-                seg['is_mapped'] = seg['taxonomy_main_id'].notna()
-                
-                seg_cat_long = (seg[seg['is_mapped']]
-                    .groupby(['book_id', 'segment', 'taxonomy_main_id', 'taxonomy_main_name', 'taxonomy_main_group'], as_index=False)['prob']
-                    .sum()
-                    .rename(columns={'prob': 'category_prop_raw'})
-                )
-                totals = seg_cat_long.groupby(['book_id', 'segment'], as_index=False)['category_prop_raw'].sum().rename(columns={'category_prop_raw': 'mapped_mass'})
-                seg_cat_long = seg_cat_long.merge(totals, on=['book_id', 'segment'], how='left')
-                seg_cat_long['category_prop'] = seg_cat_long['category_prop_raw'] / seg_cat_long['mapped_mass']
-                
-                seg_out = output_dir / "segment_taxonomy_main_props_long.parquet"
-                seg_cat_long.to_parquet(seg_out, index=False)
-                logger.info(f"✓ Saved segment taxonomy proportions: {seg_out}")
-    
-    logger.info("\n" + "="*80)
-    logger.info("✓ Book aggregation complete!")
-    logger.info("="*80)
+    LOGGER.info("=" * 78)
+    LOGGER.info("Done in %.1fs", time.perf_counter() - started)
+    LOGGER.info("=" * 78)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
-
+    raise SystemExit(main())

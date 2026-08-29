@@ -29,7 +29,12 @@ OUTPUT_DIR_KEYS = ("figures_dir", "tables_dir", "top_models_dir")
 
 
 def normalize_trials_partial_df(df: pd.DataFrame) -> pd.DataFrame:
-    drop = [c for c in _DEPRECATED_TRIALS_COLS if c in df.columns]
+    """Drop deprecated columns only when entirely null.
+
+    v4 granular runs populate ``outlier_rate`` during BO; it must be kept
+    for the ``max_outlier_rate`` gate and the weighted-score outlier penalty.
+    """
+    drop = [c for c in _DEPRECATED_TRIALS_COLS if c in df.columns and df[c].isna().all()]
     if drop:
         df = df.drop(columns=drop)
     return df
@@ -83,8 +88,8 @@ def load_trials_for_runs(runs: list[dict[str, Any]], project_root: Path) -> pd.D
         df = normalize_trials_partial_df(pd.read_csv(path))
         df["run_id"] = run["run_id"]
         df["model_label"] = run.get("label", run["run_id"])
-        if "embedding_model" in df.columns:
-            df["Embeddings_Model"] = df["embedding_model"]
+        # Note: no Embeddings_Model alias here — LEGACY_RENAME creates it later,
+        # and pre-creating it produces duplicate columns after the rename.
         frames.append(df)
     if not frames:
         return pd.DataFrame()
@@ -94,7 +99,7 @@ def load_trials_for_runs(runs: list[dict[str, Any]], project_root: Path) -> pd.D
 def apply_selection_filters(
     df: pd.DataFrame, sel: dict[str, Any]
 ) -> tuple[pd.DataFrame, list[tuple[str, int, int]]]:
-    """Same row filters as ``src.stage04_eval_select.cli select``."""
+    """Same row filters, in the same order, as ``src.stage04_eval_select.cli select``."""
     out = df.copy()
     steps: list[tuple[str, int, int]] = [("loaded", 0, len(out))]
 
@@ -103,6 +108,26 @@ def apply_selection_filters(
         before = len(out)
         out = out[out["n_topics"].fillna(0) >= min_n_topics].copy()
         steps.append((f"n_topics >= {min_n_topics}", before - len(out), len(out)))
+
+    max_n_topics = int(sel.get("max_n_topics", 0))
+    if max_n_topics > 0 and "n_topics" in out.columns:
+        before = len(out)
+        out = out[out["n_topics"].fillna(0) <= max_n_topics].copy()
+        steps.append((f"n_topics <= {max_n_topics}", before - len(out), len(out)))
+
+    max_outlier_rate = float(sel.get("max_outlier_rate", 0))
+    if max_outlier_rate > 0 and "outlier_rate" in out.columns:
+        before = len(out)
+        out = out[out["outlier_rate"].fillna(1.0) <= max_outlier_rate].copy()
+        steps.append((f"outlier_rate <= {max_outlier_rate}", before - len(out), len(out)))
+
+    max_largest_share = float(sel.get("max_largest_topic_share", 0))
+    if max_largest_share > 0 and "largest_topic_share" in out.columns:
+        before = len(out)
+        out = out[out["largest_topic_share"].fillna(1.0) <= max_largest_share].copy()
+        steps.append(
+            (f"largest_topic_share <= {max_largest_share}", before - len(out), len(out))
+        )
 
     if bool(sel.get("require_topic_stability", False)) and "topic_stability_pass" in out.columns:
         before = len(out)
@@ -201,6 +226,62 @@ def normalize_for_pareto(df: pd.DataFrame) -> pd.DataFrame:
         lo, hi = float(out[col].min()), float(out[col].max())
         out[f"{col}_norm"] = (out[col] - lo) / (hi - lo) if hi > lo else 0.0
     return out
+
+
+def normalize_for_pareto_pooled(df: pd.DataFrame) -> pd.DataFrame:
+    """Min-max normalize coherence/diversity over the pooled (multi-run) trial set.
+
+    Same math as :func:`normalize_for_pareto`; the separate name makes explicit
+    that the normalization range spans all embeddings, so Pareto fronts computed
+    on the ``*_norm`` columns are comparable across runs.
+    """
+    return normalize_for_pareto(df)
+
+
+def load_phase2_results(
+    runs: list[dict[str, Any]], project_root: Path
+) -> pd.DataFrame:
+    """Load Phase 2 Pareto refit results (compare-fit + stability) for each run.
+
+    Reads ``comparison_summary.csv`` and ``stability_summary.csv`` from each
+    run's ``inputs.phase2_compare_dir`` and merges them on ``bo_call``.
+    Runs without a configured/existing directory are skipped, so the notebook
+    degrades gracefully when Phase 2 has not been run yet.
+    """
+    frames: list[pd.DataFrame] = []
+    for run in runs:
+        compare_dir = run.get("inputs", {}).get("phase2_compare_dir")
+        if not compare_dir:
+            continue
+        base = resolve_path(Path(compare_dir), project_root)
+        comparison_path = base / "comparison_summary.csv"
+        stability_path = base / "stability_summary.csv"
+        if not comparison_path.exists() or not stability_path.exists():
+            continue
+        comparison = pd.read_csv(comparison_path)
+        stability = pd.read_csv(stability_path)
+        stability_cols = [
+            c
+            for c in ("bo_call", "n_topics_median", "n_topics_std", "stability_pass", "refit_collapse")
+            if c in stability.columns
+        ]
+        merged = comparison.merge(stability[stability_cols], on="bo_call", how="outer")
+        merged = merged.rename(
+            columns={
+                "coherence_c_v": "refit_coherence_c_v",
+                "n_topics": "refit_n_topics",
+                "topic_diversity": "refit_topic_diversity",
+                "outlier_rate": "refit_outlier_rate",
+                "n_topics_std": "refit_n_topics_std",
+                "n_topics_median": "refit_n_topics_median",
+            }
+        )
+        merged["run_id"] = run["run_id"]
+        merged["model_label"] = run.get("label", run["run_id"])
+        frames.append(merged)
+    if not frames:
+        return pd.DataFrame()
+    return pd.concat(frames, ignore_index=True)
 
 
 def load_top_k_sets(

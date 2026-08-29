@@ -20,6 +20,12 @@ def load_taxonomy_prompts(
             build_system_prompt_v1,
         )
         return build_system_prompt_v1(taxonomy_path), TAXONOMY_ZEROSHOT_USER_PROMPT
+    if ver in ("v2.5", "v25", "2.5"):
+        from src.stage09_category_mapping.stage1_theory_driven_categories.prompts.taxonomy_mapping_v25 import (
+            build_system_prompt as build_system_prompt_v25,
+            TAXONOMY_ZEROSHOT_USER_PROMPT_V25,
+        )
+        return build_system_prompt_v25(taxonomy_path), TAXONOMY_ZEROSHOT_USER_PROMPT_V25
     if ver in ("v2", "2", DEFAULT_PROMPT_VERSION):
         from src.stage09_category_mapping.stage1_theory_driven_categories.prompts.taxonomy_mapping_v2 import (
             build_system_prompt,

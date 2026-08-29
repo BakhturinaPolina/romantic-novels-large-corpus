@@ -21,6 +21,10 @@ Relative to frozen call 73 (329 topics): call 49 has similar coherence (0.654 vs
 | Stage07 quality | **done** | 373 topics; hard=1; soft=170 |
 | Stage08a adjudication | **done** | 170 packets: 147 pass / 21 exclude_noise / 2 manual_review |
 | Stage08 production | **done** | **348 Sonnet labels** (`v3_topic_labeling`) |
+| Stage08 label QC | **done** | pass; 1 gap (topic 149, empty POS rep) — [QC report](../stage08/stage08_label_qc_call49.md) |
+| Stage09 taxonomy map | **done** | 348/348; T112 remapped to 6.4; [review](../stage09/stage09_mapping_review_call49.md) |
+| Stage10 book aggregation | **done** | 16k books; props + indices; economic_precarity_dependency included |
+| Manual review packet | **done** | Stage09 taxonomy badges in HTML/JSON under `production/manual_review/` |
 
 ### Stage08 label snapshot
 
@@ -53,6 +57,8 @@ tail -f logs/v4_call49_full_corpus_console.log
 | Stage07 | `results/stage07_topic_quality/placeholder_v4_call49/` |
 | Stage08a | `results/stage08a_quality_adjudication/placeholder_v4_call49/` |
 | Stage08 production | `results/stage08_llm_labeling/placeholder_v4_call49/production/` |
+| Stage09 input bundle | `results/stage08_llm_labeling/placeholder_v4_call49/stage09_input/` |
+| Stage09 mappings | `results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49/` |
 
 ## Run book
 
@@ -70,6 +76,13 @@ CALLS=49 bash scripts/stage07/run_stage07_placeholder_v4_models.sh
 .venv/bin/python -m src.stage08_llm_labeling.openrouter_experiments.core.main_openrouter \
   --stage08-config configs/stage08/stage08_labeling_call49.yaml \
   --no-integrate
+
+# Stage09 taxonomy mapping (resumes from existing output JSON; needs OpenRouter credits)
+set -a && . ./.env && set +a
+.venv/bin/python -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \
+  --labels-json results/stage08_llm_labeling/placeholder_v4_call49/stage09_input/topic_metadata_v3.json \
+  --output-json results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49/taxonomy_mappings.json \
+  --prompt-version v2 --no-snippets --include-source-metadata
 ```
 
 ## Policy

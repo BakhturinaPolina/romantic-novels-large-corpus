@@ -1,0 +1,320 @@
+# Stage10 final statistical analysis — call_49 (v4 L12 granular final model)
+#
+# Single source of truth for the analysis notebooks in notebooks/07_analysis/ and the
+# data_preparation scripts. Notebooks load it via:
+#   from src.stage10_correlation_analysis.analysis.notebook_helpers import load_analysis_config
+
+run_id: v4_l12_granular_final_call49
+model_label: "BERTopic call_49 — MiniLM-L12, 374 topics (348 mapped + outliers)"
+
+# ---------------------------------------------------------------------------
+# Measurement decision
+# ---------------------------------------------------------------------------
+# Hard topic assignments are the primary measure. Averaging soft probabilities over
+# ~6,000 sentences per book flattens between-book variance almost to zero (median
+# per-topic CV 0.087 vs 0.898 for hard counts), so the soft tables are kept only as a
+# robustness comparison in notebook 08.
+measurement:
+  primary: hard_assignment
+  robustness_comparison: soft_probability
+  # Sentences whose hard assignment is the outlier topic (-1). ~0.74% of the corpus.
+  outlier_topic_id: -1
+  drop_outlier_from_shares: true
+
+# ---------------------------------------------------------------------------
+# Inputs
+# ---------------------------------------------------------------------------
+inputs:
+  sentence_topics_glob: results/experiments/v4_l12_granular_final_call49/full_corpus_infer/sentence_topics_*.parquet
+  books_meta: results/stage10_correlation_analysis/v4_l12_granular_final_call49/books_meta.csv
+  topic_lookup: results/stage10_correlation_analysis/v4_l12_granular_final_call49/taxonomy_radway_eda/topic_lookup.parquet
+  taxonomy_config: configs/stage09/romance_corpus_taxonomy_v2.yaml
+  axis_schema: configs/stage09/theory_aligned_index_schema.yaml
+
+  # Stage09 re-run (prompt v2.5 + Radway stage 2). NOT YET USED by anything: the
+  # analysis reads taxonomy assignments from `topic_lookup` above, which was built from
+  # the original, complete `placeholder_v4_call49` mapping. The re-run stalled at 258 of
+  # 348 topics on exhausted OpenRouter credits and Radway stage 2 has not started, so
+  # these paths are hooks for a future rebuild rather than live inputs. Do not point
+  # `topic_lookup` at a partial mapping — see
+  # results/reports/stage09/call49_rerun2_mapping_stability.md.
+  taxonomy_mappings: results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49_rerun2/taxonomy_mappings.json
+  taxonomy_mappings_fallback: results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49/taxonomy_mappings.json
+  taxonomy_with_radway: results/stage09_category_mapping/stage2_radway_functions/placeholder_v4_call49_rerun2/taxonomy_with_radway.json
+
+  # Soft-probability tables from the earlier pipeline, robustness only.
+  soft_book_topic_probs: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_probabilities/book_topic_probs.parquet
+  soft_tertile_topic_probs: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_probabilities/tertile_topic_probs.parquet
+  soft_book_taxonomy_wide: results/stage10_correlation_analysis/v4_l12_granular_final_call49/book_features/book_taxonomy_main_props_wide.parquet
+
+  # No exclusion file exists for this run; the five ids the older script hardcoded are
+  # not present in the 16,000-book call_49 cohort. Kept as a hook if one is added later.
+  excluded_book_ids: null
+
+# ---------------------------------------------------------------------------
+# Outputs
+# ---------------------------------------------------------------------------
+outputs:
+  base_dir: results/stage10_correlation_analysis/v4_l12_granular_final_call49
+  hard_counts_dir: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_counts_hard
+  book_features_dir: results/stage10_correlation_analysis/v4_l12_granular_final_call49/book_features_hard
+  analysis_frame: results/stage10_correlation_analysis/v4_l12_granular_final_call49/book_features_hard/book_analysis_frame.parquet
+  notebook_dir: results/stage10_correlation_analysis/v4_l12_granular_final_call49/notebook_analysis
+  reports_dir: results/reports/stage10
+
+# ---------------------------------------------------------------------------
+# Tiers (the grouping variable for all tier comparisons)
+# ---------------------------------------------------------------------------
+tiers:
+  column: rating_class
+  order: [low_rate, mid_rate, high_rate]
+  labels:
+    low_rate: "Low rated"
+    mid_rate: "Mid rated"
+    high_rate: "High rated"
+  # Pairwise contrasts run within the Kruskal-Wallis family.
+  contrasts:
+    - [high_rate, low_rate]
+    - [high_rate, mid_rate]
+    - [mid_rate, low_rate]
+  headline_contrast: [high_rate, low_rate]
+
+# ---------------------------------------------------------------------------
+# Outcomes — two channels, analysed separately
+# ---------------------------------------------------------------------------
+# Quality and reach correlate at only r = 0.124, which is why they are not collapsed
+# into one "success" variable.
+outcomes:
+  quality:
+    raw: average_rating_weighted_mean
+    shrunk: rating_shrunk
+    # Bayesian shrinkage toward the corpus mean: (v*R + m*C) / (v + m)
+    shrinkage:
+      count_column: ratings_count_sum
+      m_prior_count: 263      # corpus median rating count
+      c_prior_mean: 3.910     # corpus mean rating
+    weight: reliability       # v / (v + m)
+    sensitivity_min_ratings: 30
+  reach:
+    raw: ratings_count_sum
+    transformed: log_n_ratings   # log1p(ratings_count_sum)
+
+# ---------------------------------------------------------------------------
+# Controls
+# ---------------------------------------------------------------------------
+controls:
+  numeric: [log_pages, n_sentences, publication_year]
+  categorical: [genre_group]
+  cluster: author_id
+  cluster_alternative: series_id
+
+# ---------------------------------------------------------------------------
+# Compositional handling
+# ---------------------------------------------------------------------------
+compositional:
+  # CLR: log(s + eps) minus the row mean of log(s + eps).
+  # eps = 1 / (2 * median sentences per book) — half a sentence, the smallest
+  # observable non-zero share.
+  epsilon_mode: half_min_observable
+  epsilon_fallback: 1.0e-5
+  clr_on: [topic_share, leaf_share, group_share]
+  log_ratio_axes: true   # balance hypotheses also get an explicit log-ratio form
+
+# ---------------------------------------------------------------------------
+# Screening gates
+# ---------------------------------------------------------------------------
+# With ~5,000 books per tier, p-values are near-uninformative, so interpretation is
+# gated on effect size and bootstrap CI. Reported as a funnel, not a single cut.
+screening:
+  min_prevalence_books: 0.05      # topic present in >= 5% of books
+  min_mean_share: 0.0005          # >= 0.05% of sentences on average
+  min_books_per_tier: 100
+  effect_gates:
+    cliffs_delta_small: 0.11
+    cliffs_delta_medium: 0.28
+    cliffs_delta_large: 0.43
+  headline_gate:
+    min_abs_cliffs_delta: 0.11
+    require_ci_excludes_zero: true
+  author_dominance_max: 0.25      # flag a topic if one author holds >25% of its mass
+
+# ---------------------------------------------------------------------------
+# Inference
+# ---------------------------------------------------------------------------
+inference:
+  fdr_alpha: 0.05
+  fdr_method: fdr_bh
+  within_family_method: holm
+  # Families are corrected independently; multiplicity is not pooled across levels.
+  families: [topic, leaf, main_group, axis, hypothesis]
+  bootstrap:
+    n_replicates: 2000
+    cluster_column: author_id
+    ci_level: 0.95
+    seed: 42
+  # Headline effect sizes get the full budget. Wide screens over all 374 topics only need
+  # the interval to establish whether it excludes zero, so they use fewer replicates.
+  effect_ci_replicates: 2000
+  screening_ci_replicates: 600
+
+# ---------------------------------------------------------------------------
+# Predictive check
+# ---------------------------------------------------------------------------
+predictive:
+  cv: group_kfold
+  n_splits: 5
+  n_repeats: 20
+  group_column: author_id
+  seed: 42
+  compare: [controls_only, controls_plus_themes]
+
+# ---------------------------------------------------------------------------
+# Axes
+# ---------------------------------------------------------------------------
+axes:
+  schema: configs/stage09/theory_aligned_index_schema.yaml
+  # Secondary-category mapping variants. 239 of 348 topics carry a secondary ID.
+  variants:
+    strict:
+      primary_weight: 1.0
+      secondary_weight: 0.0
+    generous:
+      primary_weight: 1.0
+      secondary_weight: 0.5
+  primary_variant: strict
+  # Fail the build rather than silently emitting a column of zeros.
+  fail_on_empty_component: true
+  coverage_verdicts:
+    viable_min_topics: 3
+    weak_min_topics: 1
+
+  # H3 reframe. 6.1a / 6.6 / 6.7 are unpopulated in this model because the corpus has
+  # essentially no luxury vocabulary, so the original luxury axis is not measurable.
+  # This replacement is built only from leaves that actually carry topics.
+  additional:
+    AX_material_social_display:
+      description: >
+        Material and social display: appearance and self-presentation, leisure and public
+        spaces, formal couple ritual, and commitment-symbol objects. Replaces the
+        unmeasurable AX_luxury_composite. Deliberately does not claim "luxury".
+      hypothesis: [H3]
+      hypothesis_role: confirmatory
+      construction:
+        method: weighted_sum
+        weights:
+          "1.6": 1.0
+          "8.2": 1.0
+          "5.3a": 0.5
+          "8.3a": 0.5
+    AX_material_display_x_payoff:
+      description: Material/social display paired with relational payoff — the H3 interaction.
+      hypothesis: [H3]
+      hypothesis_role: confirmatory
+      construction:
+        method: product
+        factors: [AX_material_social_display, AX_payoff_safety]
+
+# ---------------------------------------------------------------------------
+# Hypotheses as actually tested
+# ---------------------------------------------------------------------------
+hypotheses:
+  H1:
+    name: Love over sex
+    claim: Emotional intimacy predicts higher ratings than explicit sexual content.
+    primary_axis: AX_love_over_sex
+    log_ratio:
+      numerator: ["4.5", "4.6", "2.2", "4.2"]
+      denominator: ["2.3"]
+    sub_axes: [AX_everyday_intimacy_emotional_safety, AX_sexual_tension_explicit_intimacy]
+    power_note: Well populated — 30 topics on 4.6, 18 on 2.1, 7 on 2.3.
+  H2:
+    name: Happily-ever-after
+    claim: Explicit HEA/commitment signals predict higher ratings.
+    primary_axis: AX_hea_index
+    primary_test_leaf: "4.5"
+    power_note: 5.3a and 8.3a rest on one topic each; 4.5 alone is the primary test.
+  H3:
+    name: Material and social display
+    claim: >
+      Visible material/social display interacts with relational payoff. Reframed from the
+      original luxury hypothesis, which is not measurable in this model.
+    primary_axis: AX_material_social_display
+    interaction_axis: AX_material_display_x_payoff
+    unmeasurable_components: ["6.1a", "6.6", "6.7"]
+  H4:
+    name: Protective versus possessive
+    claim: Protective care is rated above possessive control.
+    primary_axis: AX_protective_vs_possessive
+    log_ratio:
+      numerator: ["4.6"]
+      denominator: ["4.7"]
+    power_note: 4.7 has 2 topics; the negative leg is underpowered.
+    # 4.6 also carries the H2/payoff leg, so residualise when both are in play.
+    residualise_on: ["4.5"]
+  H5:
+    name: Dark versus tender
+    claim: Moderate darkness helps and extreme darkness hurts — an inverted U.
+    primary_axis: AX_dark_vs_tender
+    dark_leaves: ["3.2", "4.4", "7.2", "7.3"]
+    tender_leaves: ["2.2", "4.6", "3.1"]
+    include_quadratic: true
+  H6:
+    name: Narrative arc
+    claim: Repair rises and conflict falls from beginning to end in better-rated books.
+    level: tertile
+    rising_leaves: ["4.5", "4.6", "3.1"]
+    falling_leaves: ["4.3", "4.4", "3.2"]
+    contrasts: [[end, begin], [middle, begin]]
+
+# Guard for the 3.1 problem: if the Stage09 re-run still leaves 3.1 nearly empty,
+# AX_payoff_safety falls back to 4.5 + 4.6 and H4 residualises 4.6 on 4.5 so the shared
+# component is stated rather than double-counted.
+guards:
+  payoff_safety_fallback:
+    trigger_leaf: "3.1"
+    min_topics: 3
+    fallback_leaves: ["4.5", "4.6"]
+    residualise_h4_on: ["4.5"]
+
+# ---------------------------------------------------------------------------
+# Qualitative triangulation sampling
+# ---------------------------------------------------------------------------
+qualitative:
+  design: 2x2                # high/low index x high/low tier
+  books_per_cell: 5
+  sentences_per_book: 8
+  index_quantiles: [0.1, 0.9]
+  seed: 42
+
+# ---------------------------------------------------------------------------
+# Robustness checks run in notebook 08
+# ---------------------------------------------------------------------------
+robustness:
+  checks:
+    - hard_vs_soft_aggregation
+    - strict_vs_generous_mapping
+    - drop_low_confidence_topics
+    - drop_low_evidence_topics
+    - leave_one_author_out
+    - cluster_bootstrap_author
+    - cluster_bootstrap_series
+    - presence_threshold_shares
+    - genre_subgroups
+    - era_subgroups
+  low_confidence_below: 0.6
+  low_evidence_quality: [low]
+  presence_threshold: 0.001
+
+# ---------------------------------------------------------------------------
+# Plotting
+# ---------------------------------------------------------------------------
+plotting:
+  style: whitegrid
+  context: notebook
+  figure_dpi: 120
+  save_formats: [png]
+  palette_tiers:
+    low_rate: "#c0504d"
+    mid_rate: "#9e9e9e"
+    high_rate: "#4f81bd"
+  max_bars: 25

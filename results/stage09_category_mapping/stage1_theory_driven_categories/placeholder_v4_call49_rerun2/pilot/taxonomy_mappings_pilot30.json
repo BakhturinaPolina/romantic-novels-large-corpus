@@ -1,0 +1,1520 @@
+{
+  "6": {
+    "topic_id": 6,
+    "content_type": "scene",
+    "main_category_id": "4.6",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "3.1",
+      "9.2"
+    ],
+    "mechanic_tags": [
+      "protective_care"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.82,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets consistently show one character whispering reassurance to another — 'you'll be fine,' 'I'll make sure of it,' 'you'll be safe' — which is the core pattern of emotional safety and caretaking (4.6). No commitment act or major repair occurs, so 4.5 does not apply. The scene is not post-sex, so 2.4 does not apply. The dominant function is active verbal reassurance and protective care between characters.",
+    "mapping_reasoning": "EVIDENCE: \"you'll be safe\" — Three snippets independently show whispered promises of safety and wellbeing directed at a vulnerable character. Shortlist: 4.6 (reassurance/caretaking), 9.2 (promise/vow speech act), 3.1 (emotional payoff/relief). Runner-up 9.2 lost because the topic is not primarily about the formal wording of promises as a discourse pattern — it is about the relational act of reassuring someone. Runner-up 3.1 lost because the beat is active caretaking rather than the felt resolution that follows strain. Keywords (hesitation, unsure, delicate) are weak and do not override the clear snippet evidence. The protective_care mechanic is directly visible. use_in_macro_axes=true because caretaking/reassurance is hypothesis-relevant for H4 (protective care).",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "3.1",
+        "name": "Positive Resolution, Relief & Emotional Payoff",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "9.2",
+        "name": "Promise, Vow & Future-Tense Speech Acts",
+        "group": "Auxiliary Style & Discourse Flags"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets consistently show one character whispering reassurance to another — 'you'll be fine,' 'I'll make sure of it,' 'you'll be safe' — which is the core pattern of emotional safety and caretaking (4.6). No commitment act or major repair occurs, so 4.5 does not apply. The scene is not post-sex, so 2.4 does not apply. The dominant function is active verbal reassurance and protective care between characters.",
+      "llm_mapping_reasoning": "EVIDENCE: \"you'll be safe\" — Three snippets independently show whispered promises of safety and wellbeing directed at a vulnerable character. Shortlist: 4.6 (reassurance/caretaking), 9.2 (promise/vow speech act), 3.1 (emotional payoff/relief). Runner-up 9.2 lost because the topic is not primarily about the formal wording of promises as a discourse pattern — it is about the relational act of reassuring someone. Runner-up 3.1 lost because the beat is active caretaking rather than the felt resolution that follows strain. Keywords (hesitation, unsure, delicate) are weak and do not override the clear snippet evidence. The protective_care mechanic is directly visible. use_in_macro_axes=true because caretaking/reassurance is hypothesis-relevant for H4 (protective care).",
+      "heuristic_adjustments": []
+    }
+  },
+  "28": {
+    "topic_id": 28,
+    "content_type": "scene",
+    "main_category_id": "1.7",
+    "secondary_category_id": "3.2",
+    "other_plausible_ids": [
+      "3.3",
+      "4.4"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.85,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets consistently show women overwhelmed by emotion, tears filling and spilling from their eyes. This is negative emotional distress (3.2) with a secondary bodily-reaction component (1.1). No specific relational conflict, danger, or family context dominates — the topic centers the emotional state itself. Keywords 'sadness', 'panicked', 'nerves' reinforce distress as the dominant function. Post-heuristic: main '3.2' -> '1.7'.",
+    "mapping_reasoning": "EVIDENCE: \"overwhelmed by it all, sumi wrapped her arms around her chest as tears filled her eyes\" — Three independent snippets show emotional overwhelm and crying as the scene's center. Shortlist: 3.2 (negative emotions/distress), 3.3 (ambivalence/internal conflict), 4.4 (couple conflict). Runner-up 3.3 lost because the snippets show distress/overwhelm rather than indecision or competing desires. Runner-up 4.4 lost because no couple conflict or relational strain is visible — the distress appears free-standing. 1.1 is secondary because the bodily reaction (tears, flushed) is the vehicle for the emotional state, not the dominant subject. Axis-bearing because negative emotional distress is hypothesis-relevant for H5 (darkness/conflict vs tenderness). Post-heuristic: main '3.2' -> '1.7'.",
+    "confidence_band": "high",
+    "exclude_from_axes": true,
+    "main_category_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "main_category_group": "Embodied & Sensory Experience",
+    "secondary_category_name": "Negative Emotions & Distress",
+    "secondary_category_group": "Emotions, Cognition & Inner Life",
+    "other_plausible_categories": [
+      {
+        "id": "3.3",
+        "name": "Ambivalence & Internal Conflict",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "heuristic_adjustments": [
+      "main_category_id '3.2' -> '1.7' (domain heuristic)",
+      "secondary_category_id '1.1' -> '3.2' (domain heuristic)",
+      "use_in_macro_axes True -> False (domain heuristic)"
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets consistently show women overwhelmed by emotion, tears filling and spilling from their eyes. This is negative emotional distress (3.2) with a secondary bodily-reaction component (1.1). No specific relational conflict, danger, or family context dominates — the topic centers the emotional state itself. Keywords 'sadness', 'panicked', 'nerves' reinforce distress as the dominant function.",
+      "llm_mapping_reasoning": "EVIDENCE: \"overwhelmed by it all, sumi wrapped her arms around her chest as tears filled her eyes\" — Three independent snippets show emotional overwhelm and crying as the scene's center. Shortlist: 3.2 (negative emotions/distress), 3.3 (ambivalence/internal conflict), 4.4 (couple conflict). Runner-up 3.3 lost because the snippets show distress/overwhelm rather than indecision or competing desires. Runner-up 4.4 lost because no couple conflict or relational strain is visible — the distress appears free-standing. 1.1 is secondary because the bodily reaction (tears, flushed) is the vehicle for the emotional state, not the dominant subject. Axis-bearing because negative emotional distress is hypothesis-relevant for H5 (darkness/conflict vs tenderness).",
+      "heuristic_adjustments": [
+        "main_category_id '3.2' -> '1.7' (domain heuristic)",
+        "secondary_category_id '1.1' -> '3.2' (domain heuristic)",
+        "use_in_macro_axes True -> False (domain heuristic)"
+      ],
+      "before_heuristics": {
+        "main_category_id": "3.2",
+        "secondary_category_id": "1.1",
+        "rationale": "Three snippets consistently show women overwhelmed by emotion, tears filling and spilling from their eyes. This is negative emotional distress (3.2) with a secondary bodily-reaction component (1.1). No specific relational conflict, danger, or family context dominates — the topic centers the emotional state itself. Keywords 'sadness', 'panicked', 'nerves' reinforce distress as the dominant function.",
+        "mapping_reasoning": "EVIDENCE: \"overwhelmed by it all, sumi wrapped her arms around her chest as tears filled her eyes\" — Three independent snippets show emotional overwhelm and crying as the scene's center. Shortlist: 3.2 (negative emotions/distress), 3.3 (ambivalence/internal conflict), 4.4 (couple conflict). Runner-up 3.3 lost because the snippets show distress/overwhelm rather than indecision or competing desires. Runner-up 4.4 lost because no couple conflict or relational strain is visible — the distress appears free-standing. 1.1 is secondary because the bodily reaction (tears, flushed) is the vehicle for the emotional state, not the dominant subject. Axis-bearing because negative emotional distress is hypothesis-relevant for H5 (darkness/conflict vs tenderness).",
+        "use_in_macro_axes": true,
+        "mechanic_tags": []
+      }
+    }
+  },
+  "32": {
+    "topic_id": 32,
+    "content_type": "scene",
+    "main_category_id": "8.3b",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "4.2",
+      "8.2"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.78,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "All three snippets center on offering or requesting a drink — an ordinary prop/social lubricant act. No courtship, bonding, or care function is visible in the snippets. The keywords (dismay, threats, atmosphere, parties) are generic and do not elevate this to a relational axis topic. 8.3b covers everyday props and communication media as scene mechanics.",
+    "mapping_reasoning": "EVIDENCE: \"i'll just get you something to drink so you can take one of these\" — Snippets show drink-offering as a social/practical prop act. Shortlist: 8.3b (everyday prop/scene mechanic), 4.2 (courtship bonding), 8.2 (public/leisure space). Runner-up 4.2 lost because no bonding, deepening connection, or relational function is visible — the drink is purely instrumental. Runner-up 8.2 lost because no location vocabulary appears; the prop itself dominates. Stage08 axis_hint is no_hypothesis_signal, consistent with context-only assignment. use_in_macro_axes=false because no hypothesis-relevant evidence is present.",
+    "confidence_band": "high",
+    "exclude_from_axes": true,
+    "main_category_name": "Everyday Props & Communication Media",
+    "main_category_group": "Spaces, Time, Activities & Objects",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "8.2",
+        "name": "Public, Travel & Leisure Spaces",
+        "group": "Spaces, Time, Activities & Objects"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "All three snippets center on offering or requesting a drink — an ordinary prop/social lubricant act. No courtship, bonding, or care function is visible in the snippets. The keywords (dismay, threats, atmosphere, parties) are generic and do not elevate this to a relational axis topic. 8.3b covers everyday props and communication media as scene mechanics.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll just get you something to drink so you can take one of these\" — Snippets show drink-offering as a social/practical prop act. Shortlist: 8.3b (everyday prop/scene mechanic), 4.2 (courtship bonding), 8.2 (public/leisure space). Runner-up 4.2 lost because no bonding, deepening connection, or relational function is visible — the drink is purely instrumental. Runner-up 8.2 lost because no location vocabulary appears; the prop itself dominates. Stage08 axis_hint is no_hypothesis_signal, consistent with context-only assignment. use_in_macro_axes=false because no hypothesis-relevant evidence is present.",
+      "heuristic_adjustments": []
+    }
+  },
+  "34": {
+    "topic_id": 34,
+    "content_type": "scene",
+    "main_category_id": "3.3",
+    "secondary_category_id": "6.2",
+    "other_plausible_ids": [
+      "4.4",
+      "3.2"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "A student expresses willingness to abandon academic ambitions (valedictorian, trade school instead), signaling internal conflict and competing life choices. 3.3 ambivalence/internal conflict fits best as the dominant beat — she is weighing sacrificing her future. 6.2 is secondary as professional/educational identity is at stake. Keywords are generic and weak; snippets carry the evidence.",
+    "mapping_reasoning": "EVIDENCE: \"i'll give up being valedictorian\" — Snippets show a character declaring willingness to sacrifice academic goals, suggesting internal conflict between competing priorities. Shortlist: 3.3 (ambivalence/competing desires about life choices), 4.4 (couple conflict/distance), 6.2 (work/professional identity). 4.4 lost because no explicit main-couple argument or breakup threat is visible — the sacrifice framing suggests internal conflict rather than relational rupture. 6.2 lost as primary because the scene is about abandoning an identity, not performing it. 3.3 wins as the dominant beat is competing desires and hesitation about life choices. Runner-up 4.4 placed in other_plausible_ids. Axis hint is no_hypothesis_signal and 3.3 is exploratory-only, so use_in_macro_axes=false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Ambivalence & Internal Conflict",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Work & Professional Identity",
+    "secondary_category_group": "Work, Wealth, Status & Institutions",
+    "other_plausible_categories": [
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.2",
+        "name": "Negative Emotions & Distress",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "A student expresses willingness to abandon academic ambitions (valedictorian, trade school instead), signaling internal conflict and competing life choices. 3.3 ambivalence/internal conflict fits best as the dominant beat — she is weighing sacrificing her future. 6.2 is secondary as professional/educational identity is at stake. Keywords are generic and weak; snippets carry the evidence.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll give up being valedictorian\" — Snippets show a character declaring willingness to sacrifice academic goals, suggesting internal conflict between competing priorities. Shortlist: 3.3 (ambivalence/competing desires about life choices), 4.4 (couple conflict/distance), 6.2 (work/professional identity). 4.4 lost because no explicit main-couple argument or breakup threat is visible — the sacrifice framing suggests internal conflict rather than relational rupture. 6.2 lost as primary because the scene is about abandoning an identity, not performing it. 3.3 wins as the dominant beat is competing desires and hesitation about life choices. Runner-up 4.4 placed in other_plausible_ids. Axis hint is no_hypothesis_signal and 3.3 is exploratory-only, so use_in_macro_axes=false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "40": {
+    "topic_id": 40,
+    "content_type": "discourse",
+    "main_category_id": "uncertain_interpretable",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "3.2",
+      "9.4",
+      "3.3"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.45,
+    "evidence_quality": "low",
+    "uncertainty_reason": "Snippets are fragmentary exclamations and a foraging reference ('find some morels') with no identifiable narrative or thematic domain; the Stage08 label 'Resigned Acknowledgment of Disappointment' is not supported by the visible text, and no setting, relationship function, or emotional content can be reliably named.",
+    "rationale": "Three snippets are too fragmentary to anchor any category: an exclamation of surprise, a mild interjection, and a line about finding mushrooms. Keywords like 'disappointment', 'worst', 'unlikely' suggest mild negative affect but no coherent scene function is visible. Checked in order: not a setting (8.x), not an object (8.3x), not a discourse pattern (9.x), not a subgenre marker (10.x). Falls to uncertain_interpretable.",
+    "mapping_reasoning": "EVIDENCE: \"i'll see if i can find some morels\" — Shortlist: 3.2 (negative emotion/distress), 9.4 (self-talk/interior monologue), 3.3 (ambivalence). 3.2 lost because no distress or sadness is visible in snippets; the mushroom line and exclamations carry no emotional weight. 9.4 lost because these are not filler particles or fragmented inner monologue. 3.3 lost because no relationship indecision appears. The snippets are too fragmentary and thematically incoherent to name a dominant function; uncertain_interpretable is the only honest assignment.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Interpretable but Not Axis-Safe",
+    "main_category_group": "Special",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "3.2",
+        "name": "Negative Emotions & Distress",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "9.4",
+        "name": "Interior Monologue Particles & Self-Talk",
+        "group": "Auxiliary Style & Discourse Flags"
+      },
+      {
+        "id": "3.3",
+        "name": "Ambivalence & Internal Conflict",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets are too fragmentary to anchor any category: an exclamation of surprise, a mild interjection, and a line about finding mushrooms. Keywords like 'disappointment', 'worst', 'unlikely' suggest mild negative affect but no coherent scene function is visible. Checked in order: not a setting (8.x), not an object (8.3x), not a discourse pattern (9.x), not a subgenre marker (10.x). Falls to uncertain_interpretable.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll see if i can find some morels\" — Shortlist: 3.2 (negative emotion/distress), 9.4 (self-talk/interior monologue), 3.3 (ambivalence). 3.2 lost because no distress or sadness is visible in snippets; the mushroom line and exclamations carry no emotional weight. 9.4 lost because these are not filler particles or fragmented inner monologue. 3.3 lost because no relationship indecision appears. The snippets are too fragmentary and thematically incoherent to name a dominant function; uncertain_interpretable is the only honest assignment.",
+      "heuristic_adjustments": []
+    }
+  },
+  "52": {
+    "topic_id": 52,
+    "content_type": "scene",
+    "main_category_id": "4.2",
+    "secondary_category_id": "8.2",
+    "other_plausible_ids": [
+      "5.2",
+      "9.3"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.62,
+    "evidence_quality": "low",
+    "uncertainty_reason": null,
+    "rationale": "Characters discuss pets, a dog walk, and a bear sighting in what appears to be a shared outdoor/camping context. The snippets suggest companionable everyday interaction rather than any axis-bearing romance mechanic. 4.2 captures the everyday relational bonding function, with 8.2 as the outdoor/leisure setting. No hypothesis-relevant evidence is visible, so macro axes is false.",
+    "mapping_reasoning": "EVIDENCE: \"i'll be taking the dogs out for their afternoon walk, so there'll be some peace and quiet for you\" — Keywords source used as secondary. Shortlist: (1) 4.2 everyday relational bonding — characters sharing domestic/outdoor routines; (2) 8.2 public/leisure/outdoor space — camping/bear context; (3) 9.3 humor/banter — the dog intelligence claim has a light register. Runner-up 8.2 lost because the relational interaction between characters (offering peace and quiet, discussing the dog's intelligence) suggests a bonding function rather than pure location description. 9.3 lost because humor is incidental, not dominant. No kiss, desire, conflict, or commitment visible, so use_in_macro_axes=false. The axis_hint no_hypothesis_signal is confirmed by snippets.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": "Public, Travel & Leisure Spaces",
+    "secondary_category_group": "Spaces, Time, Activities & Objects",
+    "other_plausible_categories": [
+      {
+        "id": "5.2",
+        "name": "Friends, Allies & Social Circles",
+        "group": "Social World Outside Couple"
+      },
+      {
+        "id": "9.3",
+        "name": "Humor, Banter & Light Register",
+        "group": "Auxiliary Style & Discourse Flags"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Characters discuss pets, a dog walk, and a bear sighting in what appears to be a shared outdoor/camping context. The snippets suggest companionable everyday interaction rather than any axis-bearing romance mechanic. 4.2 captures the everyday relational bonding function, with 8.2 as the outdoor/leisure setting. No hypothesis-relevant evidence is visible, so macro axes is false.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll be taking the dogs out for their afternoon walk, so there'll be some peace and quiet for you\" — Keywords source used as secondary. Shortlist: (1) 4.2 everyday relational bonding — characters sharing domestic/outdoor routines; (2) 8.2 public/leisure/outdoor space — camping/bear context; (3) 9.3 humor/banter — the dog intelligence claim has a light register. Runner-up 8.2 lost because the relational interaction between characters (offering peace and quiet, discussing the dog's intelligence) suggests a bonding function rather than pure location description. 9.3 lost because humor is incidental, not dominant. No kiss, desire, conflict, or commitment visible, so use_in_macro_axes=false. The axis_hint no_hypothesis_signal is confirmed by snippets.",
+      "heuristic_adjustments": []
+    }
+  },
+  "56": {
+    "topic_id": 56,
+    "content_type": "scene",
+    "main_category_id": "4.6",
+    "secondary_category_id": "9.2",
+    "other_plausible_ids": [
+      "4.5",
+      "3.1"
+    ],
+    "mechanic_tags": [
+      "protective_care",
+      "trust_repair"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.82,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets show a character offering verbal reassurance that they will not cause harm — 'I'll make sure you aren't hurt,' 'you know I'll never hurt you.' This is emotional safety and reassurance (4.6), with a secondary discourse pattern of future-tense promise wording (9.2). Not a major commitment/HEA act (4.5), and not yet resolved relief (3.1).",
+    "mapping_reasoning": "EVIDENCE: \"you know i'll never hurt you\" — All three snippets center on a character verbally reassuring another of their safety and non-harm intent. Shortlist: 4.6 (emotional safety/reassurance), 4.5 (commitment/HEA), 9.2 (promise speech-act). 4.5 lost because no proposal, reconciliation, or love declaration occurs — this is local reassurance, not a major relational turning point. 9.2 is secondary because the wording is future-tense promise form, but the dominant function is caretaking/reassurance rather than discourse mechanics alone. 4.6 wins as the primary: non-coercive protection and verbal reassurance are its core definition. Mechanic tags protective_care and trust_repair apply. use_in_macro_axes=true because protective care vs possessiveness is directly hypothesis-relevant (H4).",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": "Promise, Vow & Future-Tense Speech Acts",
+    "secondary_category_group": "Auxiliary Style & Discourse Flags",
+    "other_plausible_categories": [
+      {
+        "id": "4.5",
+        "name": "Reconciliation, Commitments & HEA",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.1",
+        "name": "Positive Resolution, Relief & Emotional Payoff",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets show a character offering verbal reassurance that they will not cause harm — 'I'll make sure you aren't hurt,' 'you know I'll never hurt you.' This is emotional safety and reassurance (4.6), with a secondary discourse pattern of future-tense promise wording (9.2). Not a major commitment/HEA act (4.5), and not yet resolved relief (3.1).",
+      "llm_mapping_reasoning": "EVIDENCE: \"you know i'll never hurt you\" — All three snippets center on a character verbally reassuring another of their safety and non-harm intent. Shortlist: 4.6 (emotional safety/reassurance), 4.5 (commitment/HEA), 9.2 (promise speech-act). 4.5 lost because no proposal, reconciliation, or love declaration occurs — this is local reassurance, not a major relational turning point. 9.2 is secondary because the wording is future-tense promise form, but the dominant function is caretaking/reassurance rather than discourse mechanics alone. 4.6 wins as the primary: non-coercive protection and verbal reassurance are its core definition. Mechanic tags protective_care and trust_repair apply. use_in_macro_axes=true because protective care vs possessiveness is directly hypothesis-relevant (H4).",
+      "heuristic_adjustments": []
+    }
+  },
+  "63": {
+    "topic_id": 63,
+    "content_type": "scene",
+    "main_category_id": "2.3",
+    "secondary_category_id": "2.1",
+    "other_plausible_ids": [
+      "1.1"
+    ],
+    "mechanic_tags": [
+      "forceful_intensity"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.92,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets consistently show explicit erotic breast/nipple stimulation with arousal response ('waves of desire shot to her belly and settled between her legs'). This is explicit sexual contact (2.3), with desire/arousal as a secondary function (2.1). The physical intensity of cupping and pinching warrants forceful_intensity tag. Consent is implied throughout.",
+    "mapping_reasoning": "EVIDENCE: \"cupped her taut breasts, and waves of desire shot to her belly and settled between her legs\" — Three independent snippets all show explicit erotic stimulation of breasts/nipples with clear arousal response. Shortlist: 2.3 (explicit sexual acts/contact), 2.1 (desire/arousal/tension), 1.1 (body reactions). 2.3 wins because the dominant function is explicit physical sexual contact, not merely anticipation or bodily sensation alone. Runner-up 2.1 is assigned as secondary because arousal/desire is explicitly named as a response. 1.1 lost because the bodily reaction is embedded within an explicit sexual act rather than being the topic's center. The forceful_intensity tag applies due to the pulling/pinching vocabulary. Stage08 explicit_contact and consensual_implied align with snippet evidence. use_in_macro_axes=true as this is axis-bearing explicit sexuality content directly relevant to H1.",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Explicit Sexual Acts",
+    "main_category_group": "Sexuality, Attraction & Intimacy",
+    "secondary_category_name": "Attraction & Sexual Tension",
+    "secondary_category_group": "Sexuality, Attraction & Intimacy",
+    "other_plausible_categories": [
+      {
+        "id": "1.1",
+        "name": "Body Parts & Physical Reactions",
+        "group": "Embodied & Sensory Experience"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets consistently show explicit erotic breast/nipple stimulation with arousal response ('waves of desire shot to her belly and settled between her legs'). This is explicit sexual contact (2.3), with desire/arousal as a secondary function (2.1). The physical intensity of cupping and pinching warrants forceful_intensity tag. Consent is implied throughout.",
+      "llm_mapping_reasoning": "EVIDENCE: \"cupped her taut breasts, and waves of desire shot to her belly and settled between her legs\" — Three independent snippets all show explicit erotic stimulation of breasts/nipples with clear arousal response. Shortlist: 2.3 (explicit sexual acts/contact), 2.1 (desire/arousal/tension), 1.1 (body reactions). 2.3 wins because the dominant function is explicit physical sexual contact, not merely anticipation or bodily sensation alone. Runner-up 2.1 is assigned as secondary because arousal/desire is explicitly named as a response. 1.1 lost because the bodily reaction is embedded within an explicit sexual act rather than being the topic's center. The forceful_intensity tag applies due to the pulling/pinching vocabulary. Stage08 explicit_contact and consensual_implied align with snippet evidence. use_in_macro_axes=true as this is axis-bearing explicit sexuality content directly relevant to H1.",
+      "heuristic_adjustments": []
+    }
+  },
+  "64": {
+    "topic_id": 64,
+    "content_type": "scene",
+    "main_category_id": "3.2",
+    "secondary_category_id": "3.3",
+    "other_plausible_ids": [
+      "4.6",
+      "3.1"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.78,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "The topic centers on deep-seated fears rooted in a troubled childhood — negative emotional distress (3.2) with some ambivalence about facing them (3.3). The character is confronting lifelong anxieties, which is primarily an emotional distress/vulnerability beat. No active caretaking or commitment act is visible, so 4.6 and 4.5 are secondary at best. The axis hint says no_hypothesis_signal but snippets show clear emotional content relevant to H5 darkness/conflict.",
+    "mapping_reasoning": "EVIDENCE: \"fears i've had my entire life come rushing forward, radiating from those four little words\" — This snippet shows deep-seated fear and emotional distress as the dominant beat. Shortlist: 3.2 (negative emotions/distress), 3.3 (ambivalence/internal conflict), 4.6 (reassurance/caretaking). 3.2 wins because the topic is primarily about fear and emotional suffering rooted in childhood trauma. 3.3 is secondary because snippet 1 ('you've faced one of your fears') suggests some movement toward confronting rather than pure distress — ambivalence is present. 4.6 lost because no partner caretaking act is visible; the reassurance in snippet 1 is minimal and the emotional content dominates. Macro axes true because distress/darkness is hypothesis-relevant for H5.",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Negative Emotions & Distress",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Ambivalence & Internal Conflict",
+    "secondary_category_group": "Emotions, Cognition & Inner Life",
+    "other_plausible_categories": [
+      {
+        "id": "4.6",
+        "name": "Emotional Safety, Reassurance & Caretaking",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.1",
+        "name": "Positive Resolution, Relief & Emotional Payoff",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "The topic centers on deep-seated fears rooted in a troubled childhood — negative emotional distress (3.2) with some ambivalence about facing them (3.3). The character is confronting lifelong anxieties, which is primarily an emotional distress/vulnerability beat. No active caretaking or commitment act is visible, so 4.6 and 4.5 are secondary at best. The axis hint says no_hypothesis_signal but snippets show clear emotional content relevant to H5 darkness/conflict.",
+      "llm_mapping_reasoning": "EVIDENCE: \"fears i've had my entire life come rushing forward, radiating from those four little words\" — This snippet shows deep-seated fear and emotional distress as the dominant beat. Shortlist: 3.2 (negative emotions/distress), 3.3 (ambivalence/internal conflict), 4.6 (reassurance/caretaking). 3.2 wins because the topic is primarily about fear and emotional suffering rooted in childhood trauma. 3.3 is secondary because snippet 1 ('you've faced one of your fears') suggests some movement toward confronting rather than pure distress — ambivalence is present. 4.6 lost because no partner caretaking act is visible; the reassurance in snippet 1 is minimal and the emotional content dominates. Macro axes true because distress/darkness is hypothesis-relevant for H5.",
+      "heuristic_adjustments": []
+    }
+  },
+  "82": {
+    "topic_id": 82,
+    "content_type": "scene",
+    "main_category_id": "7.2",
+    "secondary_category_id": "7.4",
+    "other_plausible_ids": [
+      "4.4",
+      "7.3"
+    ],
+    "mechanic_tags": [
+      "external_threat",
+      "possessive_control",
+      "ambiguous_consent_watchlist",
+      "forceful_intensity"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.88,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "A threatening figure coerces compliance by threatening family harm while also threatening unwanted sexual contact ('i'll touch her alright'). The dominant function is non-sexual coercive threat/intimidation (7.2), with a secondary sexual-coercion dimension (7.4) given the forced-touch framing and consent_boundary/coercion_watchlist flags.",
+    "mapping_reasoning": "EVIDENCE: \"oh, i'll touch her alright and you both will do as i say or your family will suffer\" — Three snippets converge on a coercive threat scenario: a threatening figure demands compliance under threat of family harm and unwanted sexual contact. Shortlist: 7.2 (violence/threats/coercion), 7.4 (unwanted/coercive sexual contact), 4.4 (couple conflict). 7.2 wins as main because the dominant beat is explicit non-sexual coercive control and family threat, not primarily a sexual act. 7.4 is assigned as secondary because the 'touch her' framing and coercion_watchlist flag indicate a sexual-boundary violation dimension. 4.4 lost because this is not main-couple relational conflict but an external antagonist threatening both parties. Stage08 consent_boundary and coercion_watchlist flags corroborate the 7.4 secondary. use_in_macro_axes=true because external threat and coercive control are hypothesis-relevant (H4/H5).",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Violence, Threats & Non-Sexual Coercion",
+    "main_category_group": "Conflict, Risk & Harm",
+    "secondary_category_name": "Unwanted or Coercive Sexual Contact",
+    "secondary_category_group": "Conflict, Risk & Harm",
+    "other_plausible_categories": [
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "7.3",
+        "name": "Risk, Danger & External Crises",
+        "group": "Conflict, Risk & Harm"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "A threatening figure coerces compliance by threatening family harm while also threatening unwanted sexual contact ('i'll touch her alright'). The dominant function is non-sexual coercive threat/intimidation (7.2), with a secondary sexual-coercion dimension (7.4) given the forced-touch framing and consent_boundary/coercion_watchlist flags.",
+      "llm_mapping_reasoning": "EVIDENCE: \"oh, i'll touch her alright and you both will do as i say or your family will suffer\" — Three snippets converge on a coercive threat scenario: a threatening figure demands compliance under threat of family harm and unwanted sexual contact. Shortlist: 7.2 (violence/threats/coercion), 7.4 (unwanted/coercive sexual contact), 4.4 (couple conflict). 7.2 wins as main because the dominant beat is explicit non-sexual coercive control and family threat, not primarily a sexual act. 7.4 is assigned as secondary because the 'touch her' framing and coercion_watchlist flag indicate a sexual-boundary violation dimension. 4.4 lost because this is not main-couple relational conflict but an external antagonist threatening both parties. Stage08 consent_boundary and coercion_watchlist flags corroborate the 7.4 secondary. use_in_macro_axes=true because external threat and coercive control are hypothesis-relevant (H4/H5).",
+      "heuristic_adjustments": []
+    }
+  },
+  "83": {
+    "topic_id": 83,
+    "content_type": "scene",
+    "main_category_id": "4.6",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "4.2",
+      "3.1"
+    ],
+    "mechanic_tags": [
+      "protective_care",
+      "domestic_care"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "One character reassures another about eating regularly and not needing to skip meals or return late — this is a caretaking/wellbeing reassurance act between characters, fitting 4.6 (emotional safety, reassurance, caretaking). The concern for the other's eating habits and schedule signals protective care. Runner-up 4.2 (ongoing courtship/bonding) is plausible but the dominant beat is reassurance about physical wellbeing, not general companionship.",
+    "mapping_reasoning": "EVIDENCE: \"you won't need to do that—be late—because you've eaten\" — One character reassures another about eating and not needing to be late, a direct caretaking/wellbeing act. Runner-up 4.2 lost because the scene centers on reassurance about physical care rather than general relational bonding or shared activity. The keywords 'meal', 'regular', 'unable' support a domestic care/wellbeing frame. 4.6 is axis-bearing when protective care is visible; the snippet shows one partner monitoring and reassuring the other about basic needs, which qualifies as caretaking under H4.",
+    "confidence_band": "medium",
+    "exclude_from_axes": false,
+    "main_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.1",
+        "name": "Positive Resolution, Relief & Emotional Payoff",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "One character reassures another about eating regularly and not needing to skip meals or return late — this is a caretaking/wellbeing reassurance act between characters, fitting 4.6 (emotional safety, reassurance, caretaking). The concern for the other's eating habits and schedule signals protective care. Runner-up 4.2 (ongoing courtship/bonding) is plausible but the dominant beat is reassurance about physical wellbeing, not general companionship.",
+      "llm_mapping_reasoning": "EVIDENCE: \"you won't need to do that—be late—because you've eaten\" — One character reassures another about eating and not needing to be late, a direct caretaking/wellbeing act. Runner-up 4.2 lost because the scene centers on reassurance about physical care rather than general relational bonding or shared activity. The keywords 'meal', 'regular', 'unable' support a domestic care/wellbeing frame. 4.6 is axis-bearing when protective care is visible; the snippet shows one partner monitoring and reassuring the other about basic needs, which qualifies as caretaking under H4.",
+      "heuristic_adjustments": []
+    }
+  },
+  "90": {
+    "topic_id": 90,
+    "content_type": "scene",
+    "main_category_id": "1.7",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "9.1",
+      "4.4"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.78,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets consistently show a nonverbal silencing gesture — a head shake stopping someone from speaking. This is a facial/nonverbal cue (1.7) functioning as a communication act. No romantic tension, conflict, or affection is visible; the gesture is purely a nonverbal signal to stop. Keywords like dismay, disbelief, and worried add emotional color but do not shift the dominant function away from nonverbal cue.",
+    "mapping_reasoning": "EVIDENCE: \"she opened her mouth to protest, but he shook his head again\" — Three snippets independently show the same nonverbal gesture: a head shake silencing a verbal objection. Shortlist: 1.7 (nonverbal cue), 4.4 (conflict/distance), 9.1 (speech mechanics). Runner-up 4.4 lost because no main-couple conflict or relational strain is visible — the gesture is a communication act, not a breakup threat or argument. Runner-up 9.1 lost because the topic is about the nonverbal gesture itself, not speech-tag mechanics. 1.7 fits best as a facial/nonverbal cue topic. No hypothesis-relevant evidence visible, so use_in_macro_axes=false.",
+    "confidence_band": "high",
+    "exclude_from_axes": true,
+    "main_category_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "main_category_group": "Embodied & Sensory Experience",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "9.1",
+        "name": "Dialogue Delivery & Speech Tags",
+        "group": "Auxiliary Style & Discourse Flags"
+      },
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets consistently show a nonverbal silencing gesture — a head shake stopping someone from speaking. This is a facial/nonverbal cue (1.7) functioning as a communication act. No romantic tension, conflict, or affection is visible; the gesture is purely a nonverbal signal to stop. Keywords like dismay, disbelief, and worried add emotional color but do not shift the dominant function away from nonverbal cue.",
+      "llm_mapping_reasoning": "EVIDENCE: \"she opened her mouth to protest, but he shook his head again\" — Three snippets independently show the same nonverbal gesture: a head shake silencing a verbal objection. Shortlist: 1.7 (nonverbal cue), 4.4 (conflict/distance), 9.1 (speech mechanics). Runner-up 4.4 lost because no main-couple conflict or relational strain is visible — the gesture is a communication act, not a breakup threat or argument. Runner-up 9.1 lost because the topic is about the nonverbal gesture itself, not speech-tag mechanics. 1.7 fits best as a facial/nonverbal cue topic. No hypothesis-relevant evidence visible, so use_in_macro_axes=false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "97": {
+    "topic_id": 97,
+    "content_type": "scene",
+    "main_category_id": "9.3",
+    "secondary_category_id": "1.1",
+    "other_plausible_ids": [
+      "4.4",
+      "8.2"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.62,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets show uncomfortable silence falling over a group — tense atmosphere, uneasy shuffling, people stopping conversation. This is a social register/atmosphere beat rather than a primary thematic axis. The silence functions as a discourse/tonal marker. Keywords 'tense, breaths, atmosphere' reinforce the uneasy register. No romantic conflict, care, or desire is visible.",
+    "mapping_reasoning": "EVIDENCE: \"the other guests in the group, two couples it would seem, had stopped talking and began to shuffle uncomfortably\" — Snippets show a group social scene with tense silence and physical discomfort. Shortlist: (1) 9.3 humor/banter/light register — this is the inverse of light register, but 9.3 covers register tone broadly; (2) 4.4 conflict/distance — no main-couple conflict is visible, just ambient group tension; (3) 1.1 body reactions — shuffling and breath are bodily but secondary to the social atmosphere. Runner-up 4.4 lost because no main-couple relational strain is shown; the silence is a group social atmosphere beat. 9.3 is imperfect as it covers light register, but as a discourse/register flag it is the closest fit for a tonal atmosphere marker. Secondary 1.1 captures the physical discomfort signals. No hypothesis-relevant evidence visible, so macro false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Humor, Banter & Light Register",
+    "main_category_group": "Auxiliary Style & Discourse Flags",
+    "secondary_category_name": "Body Parts & Physical Reactions",
+    "secondary_category_group": "Embodied & Sensory Experience",
+    "other_plausible_categories": [
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "8.2",
+        "name": "Public, Travel & Leisure Spaces",
+        "group": "Spaces, Time, Activities & Objects"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets show uncomfortable silence falling over a group — tense atmosphere, uneasy shuffling, people stopping conversation. This is a social register/atmosphere beat rather than a primary thematic axis. The silence functions as a discourse/tonal marker. Keywords 'tense, breaths, atmosphere' reinforce the uneasy register. No romantic conflict, care, or desire is visible.",
+      "llm_mapping_reasoning": "EVIDENCE: \"the other guests in the group, two couples it would seem, had stopped talking and began to shuffle uncomfortably\" — Snippets show a group social scene with tense silence and physical discomfort. Shortlist: (1) 9.3 humor/banter/light register — this is the inverse of light register, but 9.3 covers register tone broadly; (2) 4.4 conflict/distance — no main-couple conflict is visible, just ambient group tension; (3) 1.1 body reactions — shuffling and breath are bodily but secondary to the social atmosphere. Runner-up 4.4 lost because no main-couple relational strain is shown; the silence is a group social atmosphere beat. 9.3 is imperfect as it covers light register, but as a discourse/register flag it is the closest fit for a tonal atmosphere marker. Secondary 1.1 captures the physical discomfort signals. No hypothesis-relevant evidence visible, so macro false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "102": {
+    "topic_id": 102,
+    "content_type": "scene",
+    "main_category_id": "3.2",
+    "secondary_category_id": "4.2",
+    "other_plausible_ids": [
+      "7.3",
+      "4.6"
+    ],
+    "mechanic_tags": [
+      "external_threat"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.68,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Snippet 2 shows grief and loss as the dominant emotional beat ('we've lost adam', fingers tracing grief on his face). Snippet 3 introduces external danger/adrenaline (WWII sabotage, capture). Snippet 1 is ambiguous but suggests interpersonal awareness. Grief/distress is the semantic center; the couple processing loss together is secondary bonding. 3.2 captures the negative emotional dominant; 4.2 secondary for shared experience under duress.",
+    "mapping_reasoning": "EVIDENCE: \"we've lost adam, she whispered and her fingers traced the contours of grief still etched on his face\" — Grief and loss dominate the emotional register. Shortlist: 3.2 (negative emotions/distress), 7.3 (external danger/crisis from snippet 3), 4.6 (caretaking via the tender gesture). 7.3 lost because the danger in snippet 3 appears to be a game/simulation context ('almost as if she really was helping adam sabotage a bridge'), not a real external crisis. 4.6 lost because the gesture is more about shared grief than active reassurance or caretaking. 3.2 wins as the dominant emotional beat is distress and loss. Secondary 4.2 captures the relational bonding dimension of processing grief together. external_threat tagged for the WWII/capture framing even if simulated.",
+    "confidence_band": "medium",
+    "exclude_from_axes": false,
+    "main_category_name": "Negative Emotions & Distress",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "secondary_category_group": "Relationship Trajectory (Main Couple)",
+    "other_plausible_categories": [
+      {
+        "id": "7.3",
+        "name": "Risk, Danger & External Crises",
+        "group": "Conflict, Risk & Harm"
+      },
+      {
+        "id": "4.6",
+        "name": "Emotional Safety, Reassurance & Caretaking",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Snippet 2 shows grief and loss as the dominant emotional beat ('we've lost adam', fingers tracing grief on his face). Snippet 3 introduces external danger/adrenaline (WWII sabotage, capture). Snippet 1 is ambiguous but suggests interpersonal awareness. Grief/distress is the semantic center; the couple processing loss together is secondary bonding. 3.2 captures the negative emotional dominant; 4.2 secondary for shared experience under duress.",
+      "llm_mapping_reasoning": "EVIDENCE: \"we've lost adam, she whispered and her fingers traced the contours of grief still etched on his face\" — Grief and loss dominate the emotional register. Shortlist: 3.2 (negative emotions/distress), 7.3 (external danger/crisis from snippet 3), 4.6 (caretaking via the tender gesture). 7.3 lost because the danger in snippet 3 appears to be a game/simulation context ('almost as if she really was helping adam sabotage a bridge'), not a real external crisis. 4.6 lost because the gesture is more about shared grief than active reassurance or caretaking. 3.2 wins as the dominant emotional beat is distress and loss. Secondary 4.2 captures the relational bonding dimension of processing grief together. external_threat tagged for the WWII/capture framing even if simulated.",
+      "heuristic_adjustments": []
+    }
+  },
+  "112": {
+    "topic_id": 112,
+    "content_type": "scene",
+    "main_category_id": "6.4",
+    "secondary_category_id": "6.2",
+    "other_plausible_ids": [
+      "3.2",
+      "6.1b"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.82,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets converge on job loss, desperate job-seeking, and economic vulnerability in a difficult market — classic economic precarity (6.4). The character's professional identity and career prospects are secondary (6.2). No billionaire/elite framing, no generic business deal — this is genuine material vulnerability with precarity vocabulary.",
+    "mapping_reasoning": "EVIDENCE: \"i've lost my job, and i'm not going to find another one in elliot or prestonsburg\" — Two snippets show job loss and inability to find replacement work in a constrained market, plus a third showing desperate desire for employment. Runner-up 3.2 lost because the distress has a concrete material/economic cause (job loss, unemployment) rather than being free-floating emotional suffering. Runner-up 6.2 is assigned as secondary because professional identity and career are present, but the dominant function is precarity/vulnerability, not ordinary work identity. The precarity vocabulary (lost job, can't find another) satisfies the 6.4 boundary requirement. Axis-bearing because economic precarity is hypothesis-relevant for H3/material conditions framing.",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Economic Precarity, Security & Dependency",
+    "main_category_group": "Work, Wealth, Status & Institutions",
+    "secondary_category_name": "Work & Professional Identity",
+    "secondary_category_group": "Work, Wealth, Status & Institutions",
+    "other_plausible_categories": [
+      {
+        "id": "3.2",
+        "name": "Negative Emotions & Distress",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "6.1b",
+        "name": "Generic Business / Institutional Negotiation",
+        "group": "Work, Wealth, Status & Institutions"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets converge on job loss, desperate job-seeking, and economic vulnerability in a difficult market — classic economic precarity (6.4). The character's professional identity and career prospects are secondary (6.2). No billionaire/elite framing, no generic business deal — this is genuine material vulnerability with precarity vocabulary.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i've lost my job, and i'm not going to find another one in elliot or prestonsburg\" — Two snippets show job loss and inability to find replacement work in a constrained market, plus a third showing desperate desire for employment. Runner-up 3.2 lost because the distress has a concrete material/economic cause (job loss, unemployment) rather than being free-floating emotional suffering. Runner-up 6.2 is assigned as secondary because professional identity and career are present, but the dominant function is precarity/vulnerability, not ordinary work identity. The precarity vocabulary (lost job, can't find another) satisfies the 6.4 boundary requirement. Axis-bearing because economic precarity is hypothesis-relevant for H3/material conditions framing.",
+      "heuristic_adjustments": []
+    }
+  },
+  "134": {
+    "topic_id": 134,
+    "content_type": "discourse",
+    "main_category_id": "9.2",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "8.5",
+      "4.2"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets show farewell speech acts — 'I'll be home soon', 'on my way home now', 'see you at home' — which are future-tense departure announcements. This is a discourse-level pattern of leave-taking speech acts rather than a scene with relational content. No bonding, courtship, or commitment function is visible. Keywords (meantime, decent, regular) are generic and do not add thematic content.",
+    "mapping_reasoning": "EVIDENCE: \"i'll be home soon\" — All three snippets are future-tense departure speech acts. Shortlist: 9.2 (promise/future-tense speech acts), 8.5 (transit/movement), 4.2 (courtship/bonding). 8.5 lost because the topic is the verbal announcement of departure, not the physical movement itself. 4.2 lost because no relational bonding or courtship function is visible in the snippets — these are bare farewell formulae. 9.2 fits as a discourse-level pattern of future-tense speech acts marking departure, though the content is departure rather than commitment. No hypothesis-relevant evidence visible, so macro false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Promise, Vow & Future-Tense Speech Acts",
+    "main_category_group": "Auxiliary Style & Discourse Flags",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "8.5",
+        "name": "Movement, Transit & Spatial Transition",
+        "group": "Spaces, Time, Activities & Objects"
+      },
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets show farewell speech acts — 'I'll be home soon', 'on my way home now', 'see you at home' — which are future-tense departure announcements. This is a discourse-level pattern of leave-taking speech acts rather than a scene with relational content. No bonding, courtship, or commitment function is visible. Keywords (meantime, decent, regular) are generic and do not add thematic content.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll be home soon\" — All three snippets are future-tense departure speech acts. Shortlist: 9.2 (promise/future-tense speech acts), 8.5 (transit/movement), 4.2 (courtship/bonding). 8.5 lost because the topic is the verbal announcement of departure, not the physical movement itself. 4.2 lost because no relational bonding or courtship function is visible in the snippets — these are bare farewell formulae. 9.2 fits as a discourse-level pattern of future-tense speech acts marking departure, though the content is departure rather than commitment. No hypothesis-relevant evidence visible, so macro false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "146": {
+    "topic_id": 146,
+    "content_type": "scene",
+    "main_category_id": "9.2",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "4.2",
+      "8.4"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Three snippets show future-tense farewell speech acts arranging next-morning contact or departure. No bonding, courtship, or relational repair is visible — just the speech-act pattern of 'I'll see/pick you up/be gone by morning.' This is discourse-level promise/arrangement wording (9.2), not meaningful courtship (4.2) or temporal framing (8.4).",
+    "mapping_reasoning": "EVIDENCE: \"i'll pick you up in the morning\" — All three snippets are future-tense speech acts about next-morning plans: seeing someone, picking them up, or being gone. Runner-up 4.2 lost because no bonding, shared activity, or emotional closeness accompanies these farewells; they are purely logistical arrangements. Runner-up 8.4 lost because the temporal marker 'morning' is incidental to the speech-act pattern rather than being the topic's subject. The axis hint is no_hypothesis_signal and no hypothesis-relevant evidence appears, so use_in_macro_axes=false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Promise, Vow & Future-Tense Speech Acts",
+    "main_category_group": "Auxiliary Style & Discourse Flags",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "8.4",
+        "name": "Time, Seasons & Temporal Framing",
+        "group": "Spaces, Time, Activities & Objects"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets show future-tense farewell speech acts arranging next-morning contact or departure. No bonding, courtship, or relational repair is visible — just the speech-act pattern of 'I'll see/pick you up/be gone by morning.' This is discourse-level promise/arrangement wording (9.2), not meaningful courtship (4.2) or temporal framing (8.4).",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll pick you up in the morning\" — All three snippets are future-tense speech acts about next-morning plans: seeing someone, picking them up, or being gone. Runner-up 4.2 lost because no bonding, shared activity, or emotional closeness accompanies these farewells; they are purely logistical arrangements. Runner-up 8.4 lost because the temporal marker 'morning' is incidental to the speech-act pattern rather than being the topic's subject. The axis hint is no_hypothesis_signal and no hypothesis-relevant evidence appears, so use_in_macro_axes=false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "147": {
+    "topic_id": 147,
+    "content_type": "scene",
+    "main_category_id": "6.1b",
+    "secondary_category_id": "8.2",
+    "other_plausible_ids": [
+      "8.3b",
+      "6.2"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "The dominant function is a practical real-estate/property transaction plan — painting a house to sell it. This is generic institutional/business logistics (6.1b), not elite status display (6.1a) or economic precarity (6.4). The public/property location is secondary (8.2). No romantic or hypothesis-relevant content is visible.",
+    "mapping_reasoning": "EVIDENCE: \"slap on some paint and get it listed with a real-estate agent\" — Snippet 3 clearly shows a property-sale plan. Shortlist: 6.1b (generic business/institutional logistics), 6.4 (economic precarity), 8.2 (public/leisure space). 6.4 lost because no rent, debt, or can't-afford vocabulary appears; this is a sale plan, not financial distress. 8.2 lost because the property is an object of transaction, not a leisure or public setting being visited. Snippet 1 ('paint yourself black… I will do anything for you') is ambiguous but snippet 3 anchors the topic in property logistics. No romantic mechanics, no axis-bearing content, so use_in_macro_axes=false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Generic Business / Institutional Negotiation",
+    "main_category_group": "Work, Wealth, Status & Institutions",
+    "secondary_category_name": "Public, Travel & Leisure Spaces",
+    "secondary_category_group": "Spaces, Time, Activities & Objects",
+    "other_plausible_categories": [
+      {
+        "id": "8.3b",
+        "name": "Everyday Props & Communication Media",
+        "group": "Spaces, Time, Activities & Objects"
+      },
+      {
+        "id": "6.2",
+        "name": "Work & Professional Identity",
+        "group": "Work, Wealth, Status & Institutions"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "The dominant function is a practical real-estate/property transaction plan — painting a house to sell it. This is generic institutional/business logistics (6.1b), not elite status display (6.1a) or economic precarity (6.4). The public/property location is secondary (8.2). No romantic or hypothesis-relevant content is visible.",
+      "llm_mapping_reasoning": "EVIDENCE: \"slap on some paint and get it listed with a real-estate agent\" — Snippet 3 clearly shows a property-sale plan. Shortlist: 6.1b (generic business/institutional logistics), 6.4 (economic precarity), 8.2 (public/leisure space). 6.4 lost because no rent, debt, or can't-afford vocabulary appears; this is a sale plan, not financial distress. 8.2 lost because the property is an object of transaction, not a leisure or public setting being visited. Snippet 1 ('paint yourself black… I will do anything for you') is ambiguous but snippet 3 anchors the topic in property logistics. No romantic mechanics, no axis-bearing content, so use_in_macro_axes=false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "150": {
+    "topic_id": 150,
+    "content_type": "discourse",
+    "main_category_id": "9.1",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "9.4",
+      "uncertain_interpretable"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.62,
+    "evidence_quality": "low",
+    "uncertainty_reason": null,
+    "rationale": "Snippets show deflection speech acts and dialogue mechanics — characters redirecting questions, excusing themselves, and deferring to others. This is discourse-level dialogue delivery and speech-act patterning rather than any thematic content. Keywords like 'annoyance' and 'replies' support a speech/dialogue mechanics reading. No romantic, emotional, or plot-thematic content is visible.",
+    "mapping_reasoning": "EVIDENCE: \"if you'll excuse me, that's something i have to see for myself\" — Snippet shows a deflection speech act. Shortlist: 9.1 (dialogue delivery/speech tags), 9.4 (self-talk/discourse particles), uncertain_interpretable. 9.1 wins because the topic centers on how characters respond and redirect in dialogue rather than what they are discussing. 9.4 lost because these are not internal monologue particles but outward speech acts. uncertain_interpretable lost because the discourse function — deflection and redirection — is nameable even if the subject matter is opaque. No hypothesis-relevant content visible; macro axes false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Dialogue Delivery & Speech Tags",
+    "main_category_group": "Auxiliary Style & Discourse Flags",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "9.4",
+        "name": "Interior Monologue Particles & Self-Talk",
+        "group": "Auxiliary Style & Discourse Flags"
+      },
+      {
+        "id": "uncertain_interpretable",
+        "name": "Interpretable but Not Axis-Safe",
+        "group": "Special"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Snippets show deflection speech acts and dialogue mechanics — characters redirecting questions, excusing themselves, and deferring to others. This is discourse-level dialogue delivery and speech-act patterning rather than any thematic content. Keywords like 'annoyance' and 'replies' support a speech/dialogue mechanics reading. No romantic, emotional, or plot-thematic content is visible.",
+      "llm_mapping_reasoning": "EVIDENCE: \"if you'll excuse me, that's something i have to see for myself\" — Snippet shows a deflection speech act. Shortlist: 9.1 (dialogue delivery/speech tags), 9.4 (self-talk/discourse particles), uncertain_interpretable. 9.1 wins because the topic centers on how characters respond and redirect in dialogue rather than what they are discussing. 9.4 lost because these are not internal monologue particles but outward speech acts. uncertain_interpretable lost because the discourse function — deflection and redirection — is nameable even if the subject matter is opaque. No hypothesis-relevant content visible; macro axes false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "160": {
+    "topic_id": 160,
+    "content_type": "scene",
+    "main_category_id": "4.2",
+    "secondary_category_id": "8.2",
+    "other_plausible_ids": [
+      "8.1",
+      "uncertain_interpretable"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.55,
+    "evidence_quality": "low",
+    "uncertainty_reason": null,
+    "rationale": "Snippets show watching movies together as a shared leisure activity, suggesting everyday companionship (4.2), but the surveillance-like 'watching closely for any reaction' fragment introduces ambiguity. The dominant readable function is shared leisure/bonding, with 4.2 as the best fit, though evidence is thin. No hypothesis-relevant evidence visible, so macro axes false.",
+    "mapping_reasoning": "EVIDENCE: \"we've been watching movies\" — This snippet from the keyword source confirms shared leisure activity. Runner-up 8.2 (public/leisure space) lost because the relational companionship function, however weak, edges out pure location framing. Runner-up uncertain_interpretable was considered because snippet 2 ('watching him closely for any reaction') suggests surveillance rather than bonding, creating thematic tension; however, snippet 3 anchors the topic in shared movie-watching as a leisure activity. The axis hint is no_hypothesis_signal and no courtship, care, or commitment evidence is visible, so use_in_macro_axes=false. Evidence quality is low because only one snippet clearly supports the bonding/leisure reading and the other two introduce ambiguity.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": "Public, Travel & Leisure Spaces",
+    "secondary_category_group": "Spaces, Time, Activities & Objects",
+    "other_plausible_categories": [
+      {
+        "id": "8.1",
+        "name": "Domestic Spaces & Routines",
+        "group": "Spaces, Time, Activities & Objects"
+      },
+      {
+        "id": "uncertain_interpretable",
+        "name": "Interpretable but Not Axis-Safe",
+        "group": "Special"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Snippets show watching movies together as a shared leisure activity, suggesting everyday companionship (4.2), but the surveillance-like 'watching closely for any reaction' fragment introduces ambiguity. The dominant readable function is shared leisure/bonding, with 4.2 as the best fit, though evidence is thin. No hypothesis-relevant evidence visible, so macro axes false.",
+      "llm_mapping_reasoning": "EVIDENCE: \"we've been watching movies\" — This snippet from the keyword source confirms shared leisure activity. Runner-up 8.2 (public/leisure space) lost because the relational companionship function, however weak, edges out pure location framing. Runner-up uncertain_interpretable was considered because snippet 2 ('watching him closely for any reaction') suggests surveillance rather than bonding, creating thematic tension; however, snippet 3 anchors the topic in shared movie-watching as a leisure activity. The axis hint is no_hypothesis_signal and no courtship, care, or commitment evidence is visible, so use_in_macro_axes=false. Evidence quality is low because only one snippet clearly supports the bonding/leisure reading and the other two introduce ambiguity.",
+      "heuristic_adjustments": []
+    }
+  },
+  "180": {
+    "topic_id": 180,
+    "content_type": "scene",
+    "main_category_id": "uncertain_interpretable",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "8.1",
+      "8.2",
+      "1.6"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.62,
+    "evidence_quality": "low",
+    "uncertainty_reason": "The topic clusters size-comparison language across heterogeneous referents (rooms, bodies, crowds) with no dominant thematic function — not a setting, not appearance, not a social event, not a relationship beat. No single context ID captures the cross-domain size-comparison register.",
+    "rationale": "Three snippets each compare sizes in different domains: a walk-in closet vs. a castle, a person's hips, and a crowd of students. The unifying feature is comparative size language, not any single thematic or narrative function. No romance mechanic, relationship beat, or hypothesis-relevant content is visible. Every specific context ID was checked and none fits the cross-domain pattern.",
+    "mapping_reasoning": "EVIDENCE: \"large enough for her to hold both arms out and twirl around, but it fit barely two percent\" — Shortlist checked in order: 8.1 (domestic space) fits snippet 1 but not snippets 2-3; 1.6 (appearance) fits snippet 2 but not 1 or 3; 8.2 (public space) fits snippet 3 but not 1-2. No single category captures all three. Runner-up 8.1 lost because the topic is not coherently about domestic space — it spans closets, bodies, and crowds. The axis hint is no_hypothesis_signal and no romance mechanic is visible, so macro false. Falls to uncertain_interpretable with stated reason.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Interpretable but Not Axis-Safe",
+    "main_category_group": "Special",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "8.1",
+        "name": "Domestic Spaces & Routines",
+        "group": "Spaces, Time, Activities & Objects"
+      },
+      {
+        "id": "8.2",
+        "name": "Public, Travel & Leisure Spaces",
+        "group": "Spaces, Time, Activities & Objects"
+      },
+      {
+        "id": "1.6",
+        "name": "Character Appearance & Self-Presentation",
+        "group": "Embodied & Sensory Experience"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets each compare sizes in different domains: a walk-in closet vs. a castle, a person's hips, and a crowd of students. The unifying feature is comparative size language, not any single thematic or narrative function. No romance mechanic, relationship beat, or hypothesis-relevant content is visible. Every specific context ID was checked and none fits the cross-domain pattern.",
+      "llm_mapping_reasoning": "EVIDENCE: \"large enough for her to hold both arms out and twirl around, but it fit barely two percent\" — Shortlist checked in order: 8.1 (domestic space) fits snippet 1 but not snippets 2-3; 1.6 (appearance) fits snippet 2 but not 1 or 3; 8.2 (public space) fits snippet 3 but not 1-2. No single category captures all three. Runner-up 8.1 lost because the topic is not coherently about domestic space — it spans closets, bodies, and crowds. The axis hint is no_hypothesis_signal and no romance mechanic is visible, so macro false. Falls to uncertain_interpretable with stated reason.",
+      "heuristic_adjustments": []
+    }
+  },
+  "187": {
+    "topic_id": 187,
+    "content_type": "scene",
+    "main_category_id": "uncertain_interpretable",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "4.4",
+      "3.2",
+      "4.3"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.48,
+    "evidence_quality": "low",
+    "uncertainty_reason": "Snippets show acknowledgment of failure ('we've messed up everything') and claims of competence ('I've got things handled'), but no subject matter is visible — the domain could be romantic conflict, workplace crisis, family trouble, or something else entirely. Keywords like 'pregnant' and 'emotional' hint at possible relationship stakes but do not appear in any snippet, making the thematic center unnameable.",
+    "rationale": "Three short snippets show a character admitting things have gone wrong and another asserting control, but no context reveals whether this is main-couple conflict, external crisis, workplace failure, or family trouble. Keywords diverge from snippets. No hypothesis-relevant evidence is visible. Checked 4.4 (couple conflict), 3.2 (distress), 4.3 (secrets/misunderstanding) — none can be confirmed without knowing the subject matter.",
+    "mapping_reasoning": "EVIDENCE: \"we've messed up everything\" — This fragment shows acknowledged failure but reveals no domain. Shortlist: 4.4 (couple conflict) lost because no relational vocabulary appears in snippets; 3.2 (distress) lost because the tone is declarative rather than emotionally expressive; 4.3 (secrets/misunderstanding) lost because no hidden information is signaled. The keyword 'pregnant' is intriguing but absent from all snippets and cannot anchor a category assignment per evidence discipline rules. Falls back to uncertain_interpretable with stated reason.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Interpretable but Not Axis-Safe",
+    "main_category_group": "Special",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.2",
+        "name": "Negative Emotions & Distress",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "4.3",
+        "name": "Secrets, Misunderstandings & Hidden Information",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three short snippets show a character admitting things have gone wrong and another asserting control, but no context reveals whether this is main-couple conflict, external crisis, workplace failure, or family trouble. Keywords diverge from snippets. No hypothesis-relevant evidence is visible. Checked 4.4 (couple conflict), 3.2 (distress), 4.3 (secrets/misunderstanding) — none can be confirmed without knowing the subject matter.",
+      "llm_mapping_reasoning": "EVIDENCE: \"we've messed up everything\" — This fragment shows acknowledged failure but reveals no domain. Shortlist: 4.4 (couple conflict) lost because no relational vocabulary appears in snippets; 3.2 (distress) lost because the tone is declarative rather than emotionally expressive; 4.3 (secrets/misunderstanding) lost because no hidden information is signaled. The keyword 'pregnant' is intriguing but absent from all snippets and cannot anchor a category assignment per evidence discipline rules. Falls back to uncertain_interpretable with stated reason.",
+      "heuristic_adjustments": []
+    }
+  },
+  "190": {
+    "topic_id": 190,
+    "content_type": "scene",
+    "main_category_id": "4.6",
+    "secondary_category_id": "8.3b",
+    "other_plausible_ids": [
+      "4.2",
+      "uncertain_interpretable"
+    ],
+    "mechanic_tags": [
+      "domestic_care"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.55,
+    "evidence_quality": "low",
+    "uncertainty_reason": null,
+    "rationale": "Snippets show offers to clean/freshen someone up and pay for cleaning — a minor caretaking gesture. 4.6 (emotional safety/caretaking) fits better than any other primary category, though the evidence is thin and the keywords (sweeping, dump, suitcase) diverge from the snippets. The groom taking her arm adds a light relational touch but no major repair or commitment act.",
+    "mapping_reasoning": "EVIDENCE: \"i'll get her cleaned up, said a handsome groom, taking her arm\" — Three snippets converge on offers to clean/freshen someone up, with one involving a groom assisting a woman. Shortlist: 4.6 (caretaking/reassurance), 4.2 (everyday relational bonding), uncertain_interpretable. 4.6 wins narrowly because the act is one character attending to another's physical state — a minor caretaking gesture. 4.2 lost because there is no broader courtship or bonding context visible. Keywords (sweeping, dump, suitcase, parties) diverge from snippets and are not used as primary evidence. No hypothesis-relevant axis signal is present, so use_in_macro_axes=false. Evidence quality is low because snippets are very short and the keywords do not corroborate the caretaking reading.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": "Everyday Props & Communication Media",
+    "secondary_category_group": "Spaces, Time, Activities & Objects",
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "uncertain_interpretable",
+        "name": "Interpretable but Not Axis-Safe",
+        "group": "Special"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Snippets show offers to clean/freshen someone up and pay for cleaning — a minor caretaking gesture. 4.6 (emotional safety/caretaking) fits better than any other primary category, though the evidence is thin and the keywords (sweeping, dump, suitcase) diverge from the snippets. The groom taking her arm adds a light relational touch but no major repair or commitment act.",
+      "llm_mapping_reasoning": "EVIDENCE: \"i'll get her cleaned up, said a handsome groom, taking her arm\" — Three snippets converge on offers to clean/freshen someone up, with one involving a groom assisting a woman. Shortlist: 4.6 (caretaking/reassurance), 4.2 (everyday relational bonding), uncertain_interpretable. 4.6 wins narrowly because the act is one character attending to another's physical state — a minor caretaking gesture. 4.2 lost because there is no broader courtship or bonding context visible. Keywords (sweeping, dump, suitcase, parties) diverge from snippets and are not used as primary evidence. No hypothesis-relevant axis signal is present, so use_in_macro_axes=false. Evidence quality is low because snippets are very short and the keywords do not corroborate the caretaking reading.",
+      "heuristic_adjustments": []
+    }
+  },
+  "221": {
+    "topic_id": 221,
+    "content_type": "scene",
+    "main_category_id": "uncertain_interpretable",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "9.4",
+      "3.3",
+      "1.7"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": false,
+    "noise_reason": null,
+    "confidence": 0.48,
+    "evidence_quality": "low",
+    "uncertainty_reason": "Snippets show surprise/unexpectedness as a surface register but reveal no coherent thematic domain — one snippet is about money, one about avoiding surprises, one is a historical/formal register comment. No setting, relationship function, emotional arc, or genre context can be reliably named from this evidence.",
+    "rationale": "Three snippets share only the lexical field of 'surprise' but point to entirely different contexts (financial, social, historical-formal). Keywords (flush, confusion, faces, sir) suggest a reaction scene but no dominant thematic function emerges. Checked 8.x, 9.x, 1.7, 3.3 in order — none fits as a dominant category. Falls back to uncertain_interpretable.",
+    "mapping_reasoning": "EVIDENCE: \"surprising what you'll do for money\" — Shortlist: 9.4 (self-talk/discourse particles), 3.3 (ambivalence/reaction), 1.7 (facial expression). 3.3 lost because no relationship indecision is visible. 1.7 lost because 'flush/confusion/faces' keywords suggest reaction but snippets show no coherent facial-cue scene. 9.4 lost because fragments are not filler particles. The three snippets share only surface surprise vocabulary with no common subject matter, making any specific category assignment unreliable. uncertain_interpretable with stated reason.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Interpretable but Not Axis-Safe",
+    "main_category_group": "Special",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "9.4",
+        "name": "Interior Monologue Particles & Self-Talk",
+        "group": "Auxiliary Style & Discourse Flags"
+      },
+      {
+        "id": "3.3",
+        "name": "Ambivalence & Internal Conflict",
+        "group": "Emotions, Cognition & Inner Life"
+      },
+      {
+        "id": "1.7",
+        "name": "Facial Expression & Non-Sexual Nonverbal Cues",
+        "group": "Embodied & Sensory Experience"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Three snippets share only the lexical field of 'surprise' but point to entirely different contexts (financial, social, historical-formal). Keywords (flush, confusion, faces, sir) suggest a reaction scene but no dominant thematic function emerges. Checked 8.x, 9.x, 1.7, 3.3 in order — none fits as a dominant category. Falls back to uncertain_interpretable.",
+      "llm_mapping_reasoning": "EVIDENCE: \"surprising what you'll do for money\" — Shortlist: 9.4 (self-talk/discourse particles), 3.3 (ambivalence/reaction), 1.7 (facial expression). 3.3 lost because no relationship indecision is visible. 1.7 lost because 'flush/confusion/faces' keywords suggest reaction but snippets show no coherent facial-cue scene. 9.4 lost because fragments are not filler particles. The three snippets share only surface surprise vocabulary with no common subject matter, making any specific category assignment unreliable. uncertain_interpretable with stated reason.",
+      "heuristic_adjustments": []
+    }
+  },
+  "230": {
+    "topic_id": 230,
+    "content_type": "scene",
+    "main_category_id": "2.3",
+    "secondary_category_id": "2.4",
+    "other_plausible_ids": [
+      "2.2"
+    ],
+    "mechanic_tags": [
+      "post_sex_bonding",
+      "forceful_intensity"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.82,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "Two men continue kissing, groping, and marking each other shortly after climax — the scene sits in the immediate post-sex window with continued physical intensity. The dominant beat is post-climax continuation of intimacy (2.4), with explicit sexual acts still present as secondary (2.3). The third snippet about 'choices' is an outlier fragment that does not shift the dominant function. Post-heuristic: main '2.4' -> '2.3'.",
+    "mapping_reasoning": "EVIDENCE: \"his hardened cock had ridden to an exquisite climax not so very long ago\" — This phrase explicitly places the scene after climax, anchoring it in the post-sex window. A second snippet shows 'nips and sucks and marks him, leaving a dark bruise,' confirming continued physical intimacy. Shortlist: 2.4 (post-sex aftermath with continued touch), 2.3 (explicit sexual acts), 2.2 (non-explicit affection). 2.3 lost because the climax has already occurred and the scene is framed as continuation after the peak rather than the act itself; the Stage08 label 'postsex_arousal' supports 2.4 as dominant. 2.2 lost because the contact is explicitly sexual in register. 2.4 wins as the scene's semantic center is the intimate, charged aftermath. use_in_macro_axes=true because post-sex bonding is hypothesis-relevant for H1. Post-heuristic: main '2.4' -> '2.3'.",
+    "confidence_band": "high",
+    "exclude_from_axes": false,
+    "main_category_name": "Explicit Sexual Acts",
+    "main_category_group": "Sexuality, Attraction & Intimacy",
+    "secondary_category_name": "Aftercare & Post-Sex Reflection",
+    "secondary_category_group": "Sexuality, Attraction & Intimacy",
+    "other_plausible_categories": [
+      {
+        "id": "2.2",
+        "name": "Kissing & Non-Explicit Affection",
+        "group": "Sexuality, Attraction & Intimacy"
+      }
+    ],
+    "heuristic_adjustments": [
+      "main_category_id '2.4' -> '2.3' (domain heuristic)",
+      "secondary_category_id '2.3' -> '2.4' (domain heuristic)"
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Two men continue kissing, groping, and marking each other shortly after climax — the scene sits in the immediate post-sex window with continued physical intensity. The dominant beat is post-climax continuation of intimacy (2.4), with explicit sexual acts still present as secondary (2.3). The third snippet about 'choices' is an outlier fragment that does not shift the dominant function.",
+      "llm_mapping_reasoning": "EVIDENCE: \"his hardened cock had ridden to an exquisite climax not so very long ago\" — This phrase explicitly places the scene after climax, anchoring it in the post-sex window. A second snippet shows 'nips and sucks and marks him, leaving a dark bruise,' confirming continued physical intimacy. Shortlist: 2.4 (post-sex aftermath with continued touch), 2.3 (explicit sexual acts), 2.2 (non-explicit affection). 2.3 lost because the climax has already occurred and the scene is framed as continuation after the peak rather than the act itself; the Stage08 label 'postsex_arousal' supports 2.4 as dominant. 2.2 lost because the contact is explicitly sexual in register. 2.4 wins as the scene's semantic center is the intimate, charged aftermath. use_in_macro_axes=true because post-sex bonding is hypothesis-relevant for H1.",
+      "heuristic_adjustments": [
+        "main_category_id '2.4' -> '2.3' (domain heuristic)",
+        "secondary_category_id '2.3' -> '2.4' (domain heuristic)"
+      ],
+      "before_heuristics": {
+        "main_category_id": "2.4",
+        "secondary_category_id": "2.3",
+        "rationale": "Two men continue kissing, groping, and marking each other shortly after climax — the scene sits in the immediate post-sex window with continued physical intensity. The dominant beat is post-climax continuation of intimacy (2.4), with explicit sexual acts still present as secondary (2.3). The third snippet about 'choices' is an outlier fragment that does not shift the dominant function.",
+        "mapping_reasoning": "EVIDENCE: \"his hardened cock had ridden to an exquisite climax not so very long ago\" — This phrase explicitly places the scene after climax, anchoring it in the post-sex window. A second snippet shows 'nips and sucks and marks him, leaving a dark bruise,' confirming continued physical intimacy. Shortlist: 2.4 (post-sex aftermath with continued touch), 2.3 (explicit sexual acts), 2.2 (non-explicit affection). 2.3 lost because the climax has already occurred and the scene is framed as continuation after the peak rather than the act itself; the Stage08 label 'postsex_arousal' supports 2.4 as dominant. 2.2 lost because the contact is explicitly sexual in register. 2.4 wins as the scene's semantic center is the intimate, charged aftermath. use_in_macro_axes=true because post-sex bonding is hypothesis-relevant for H1.",
+        "use_in_macro_axes": true,
+        "mechanic_tags": [
+          "post_sex_bonding",
+          "forceful_intensity"
+        ]
+      }
+    }
+  },
+  "251": {
+    "topic_id": 251,
+    "content_type": "scene",
+    "main_category_id": "3.3",
+    "secondary_category_id": "4.2",
+    "other_plausible_ids": [
+      "5.1",
+      "4.4"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.62,
+    "evidence_quality": "low",
+    "uncertainty_reason": null,
+    "rationale": "The topic mixes two distinct uses of 'age': physical aging of a structure and an interpersonal age-gap question ('but why now, your grace?'). The relational snippet shows ambivalence or questioning about an age difference between people, pointing toward 3.3 (internal conflict/hesitation about a relationship choice). The structural aging snippets are context. No commitment act, no explicit conflict, no clear courtship — ambivalence about the age gap is the dominant interpretable function.",
+    "mapping_reasoning": "EVIDENCE: \"their age difference was outrageous, which prompted her to ask, 'but why now, your grace?'\" — This snippet shows a character questioning/challenging an age-gap relationship, suggesting hesitation or ambivalence (3.3). Runner-up 4.4 lost because no active conflict or breakup threat is visible; the question is more uncertain than combative. Runner-up 4.2 lost because no bonding or courtship act is present. The structural-aging snippets (metal stained with weather, bone structure) are thematically incoherent with the relational snippet, lowering confidence. 3.3 is exploratory-only, so use_in_macro_axes=false. use_in_theory_watchlist=true because age-gap dynamics are theory-relevant for H5/H6.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Ambivalence & Internal Conflict",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "secondary_category_group": "Relationship Trajectory (Main Couple)",
+    "other_plausible_categories": [
+      {
+        "id": "5.1",
+        "name": "Family, Kinship & Parenthood",
+        "group": "Social World Outside Couple"
+      },
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "The topic mixes two distinct uses of 'age': physical aging of a structure and an interpersonal age-gap question ('but why now, your grace?'). The relational snippet shows ambivalence or questioning about an age difference between people, pointing toward 3.3 (internal conflict/hesitation about a relationship choice). The structural aging snippets are context. No commitment act, no explicit conflict, no clear courtship — ambivalence about the age gap is the dominant interpretable function.",
+      "llm_mapping_reasoning": "EVIDENCE: \"their age difference was outrageous, which prompted her to ask, 'but why now, your grace?'\" — This snippet shows a character questioning/challenging an age-gap relationship, suggesting hesitation or ambivalence (3.3). Runner-up 4.4 lost because no active conflict or breakup threat is visible; the question is more uncertain than combative. Runner-up 4.2 lost because no bonding or courtship act is present. The structural-aging snippets (metal stained with weather, bone structure) are thematically incoherent with the relational snippet, lowering confidence. 3.3 is exploratory-only, so use_in_macro_axes=false. use_in_theory_watchlist=true because age-gap dynamics are theory-relevant for H5/H6.",
+      "heuristic_adjustments": []
+    }
+  },
+  "282": {
+    "topic_id": 282,
+    "content_type": "scene",
+    "main_category_id": "3.3",
+    "secondary_category_id": "4.6",
+    "other_plausible_ids": [
+      "4.3",
+      "4.4"
+    ],
+    "mechanic_tags": [
+      "trust_repair",
+      "protective_care"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.78,
+    "evidence_quality": "high",
+    "uncertainty_reason": null,
+    "rationale": "The dominant beat is internal ambivalence about vulnerability and trust — a woman wrestling with letting her guard down, and a man fearing he is taking advantage of her. Both characters are caught in competing desires and hesitations. 3.3 (ambivalence/internal conflict) best captures this mutual indecision. 4.6 is secondary because his concern for her safety and wellbeing is explicit. No concrete commitment act or active conflict makes 4.5 or 4.4 the center.",
+    "mapping_reasoning": "EVIDENCE: \"trusting someone meant allowing herself to be vulnerable to them, letting them into the inner sanctum of her most private emotional places\" — Two snippets independently show the same function: internal conflict about surrendering control and trusting another person. Snippet 3 adds the male POV: he fears he is taking advantage, showing mutual ambivalence. Runner-up 4.6 lost as primary because the dominant beat is the internal wrestling with trust rather than active caretaking or reassurance; his protective concern is real but secondary to the ambivalence theme. 4.3 (secrets/hidden information) was considered but no withheld facts drive the scene — the barrier is emotional guardedness, not concealed information. 3.3 is exploratory-only (H5/H6), so use_in_macro_axes=false, but the topic is theory-relevant for watchlist purposes.",
+    "confidence_band": "high",
+    "exclude_from_axes": true,
+    "main_category_name": "Ambivalence & Internal Conflict",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "secondary_category_group": "Relationship Trajectory (Main Couple)",
+    "other_plausible_categories": [
+      {
+        "id": "4.3",
+        "name": "Secrets, Misunderstandings & Hidden Information",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "4.4",
+        "name": "Conflict, Distance & Breakup Threats",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "The dominant beat is internal ambivalence about vulnerability and trust — a woman wrestling with letting her guard down, and a man fearing he is taking advantage of her. Both characters are caught in competing desires and hesitations. 3.3 (ambivalence/internal conflict) best captures this mutual indecision. 4.6 is secondary because his concern for her safety and wellbeing is explicit. No concrete commitment act or active conflict makes 4.5 or 4.4 the center.",
+      "llm_mapping_reasoning": "EVIDENCE: \"trusting someone meant allowing herself to be vulnerable to them, letting them into the inner sanctum of her most private emotional places\" — Two snippets independently show the same function: internal conflict about surrendering control and trusting another person. Snippet 3 adds the male POV: he fears he is taking advantage, showing mutual ambivalence. Runner-up 4.6 lost as primary because the dominant beat is the internal wrestling with trust rather than active caretaking or reassurance; his protective concern is real but secondary to the ambivalence theme. 4.3 (secrets/hidden information) was considered but no withheld facts drive the scene — the barrier is emotional guardedness, not concealed information. 3.3 is exploratory-only (H5/H6), so use_in_macro_axes=false, but the topic is theory-relevant for watchlist purposes.",
+      "heuristic_adjustments": []
+    }
+  },
+  "291": {
+    "topic_id": 291,
+    "content_type": "scene",
+    "main_category_id": "3.3",
+    "secondary_category_id": "3.2",
+    "other_plausible_ids": [
+      "4.2",
+      "9.4"
+    ],
+    "mechanic_tags": [],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.65,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "A man closes his eyes and imagines being home with his wife and children — a moment of private longing and internal conflict between present reality and desired domestic life. The dominant beat is ambivalence/internal conflict (3.3) with an undercurrent of distress (3.2). No active couple interaction, no commitment act, no external danger. Keywords like 'failure', 'distance', 'happiness' reinforce the sense of longing and unresolved tension.",
+    "mapping_reasoning": "EVIDENCE: \"he closed his eyes and imagined that he was in his own house, with his wife and children in another room\" — This snippet shows private internal longing for an absent domestic life, suggesting the character is separated from or yearning for his family. Shortlist: 3.3 (ambivalence/internal conflict about life situation), 3.2 (distress/longing), 4.2 (ongoing relational bonding). Runner-up 3.2 lost because the beat is more wistful longing and internal conflict than active suffering or distress. Runner-up 4.2 lost because no actual couple interaction occurs — the family is imagined, not present. 3.3 wins as the dominant beat is internal conflict between present circumstances and desired domestic reality. Context-only per boundary rules (3.3 is exploratory-only), so use_in_macro_axes=false.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Ambivalence & Internal Conflict",
+    "main_category_group": "Emotions, Cognition & Inner Life",
+    "secondary_category_name": "Negative Emotions & Distress",
+    "secondary_category_group": "Emotions, Cognition & Inner Life",
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "9.4",
+        "name": "Interior Monologue Particles & Self-Talk",
+        "group": "Auxiliary Style & Discourse Flags"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "A man closes his eyes and imagines being home with his wife and children — a moment of private longing and internal conflict between present reality and desired domestic life. The dominant beat is ambivalence/internal conflict (3.3) with an undercurrent of distress (3.2). No active couple interaction, no commitment act, no external danger. Keywords like 'failure', 'distance', 'happiness' reinforce the sense of longing and unresolved tension.",
+      "llm_mapping_reasoning": "EVIDENCE: \"he closed his eyes and imagined that he was in his own house, with his wife and children in another room\" — This snippet shows private internal longing for an absent domestic life, suggesting the character is separated from or yearning for his family. Shortlist: 3.3 (ambivalence/internal conflict about life situation), 3.2 (distress/longing), 4.2 (ongoing relational bonding). Runner-up 3.2 lost because the beat is more wistful longing and internal conflict than active suffering or distress. Runner-up 4.2 lost because no actual couple interaction occurs — the family is imagined, not present. 3.3 wins as the dominant beat is internal conflict between present circumstances and desired domestic reality. Context-only per boundary rules (3.3 is exploratory-only), so use_in_macro_axes=false.",
+      "heuristic_adjustments": []
+    }
+  },
+  "327": {
+    "topic_id": 327,
+    "content_type": "scene",
+    "main_category_id": "7.3",
+    "secondary_category_id": "10.1",
+    "other_plausible_ids": [
+      "7.2",
+      "4.6"
+    ],
+    "mechanic_tags": [
+      "external_threat",
+      "paranormal_instinct"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": false,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.65,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "Snippets show tense physical crouching over a fallen figure, with wings spreading — suggesting paranormal creature context and a danger/crisis moment. The dominant function is external threat or crisis (7.3), with paranormal subgenre furniture (10.1) as secondary. No clear romantic care or violence-as-harm framing dominates.",
+    "mapping_reasoning": "EVIDENCE: \"the wings lifted and spread behind her\" — Paranormal creature vocabulary (wings) combined with crouching over a fallen figure signals a danger/crisis scene in a paranormal setting. Shortlist: 7.3 (risk/danger/crisis), 7.2 (violence/threats), 4.6 (caretaking over fallen person). 7.2 lost because no deliberate harm or threat act is visible — the crouching is ambiguous protective or predatory posture. 4.6 lost because no reassurance or care language appears; the scene is tense and watchful rather than nurturing. 7.3 wins as the best fit for a tense physical crisis moment. Keywords 'growl' and 'squeeze' reinforce creature/tension register. Runner-up 4.6 placed in other_plausible_ids. Not axis-bearing because no hypothesis-relevant romantic function is visible in snippets.",
+    "confidence_band": "medium",
+    "exclude_from_axes": true,
+    "main_category_name": "Risk, Danger & External Crises",
+    "main_category_group": "Conflict, Risk & Harm",
+    "secondary_category_name": "Paranormal & Immortal Beings",
+    "secondary_category_group": "Auxiliary Subgenre & Plot-Engine Flags",
+    "other_plausible_categories": [
+      {
+        "id": "7.2",
+        "name": "Violence, Threats & Non-Sexual Coercion",
+        "group": "Conflict, Risk & Harm"
+      },
+      {
+        "id": "4.6",
+        "name": "Emotional Safety, Reassurance & Caretaking",
+        "group": "Relationship Trajectory (Main Couple)"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "Snippets show tense physical crouching over a fallen figure, with wings spreading — suggesting paranormal creature context and a danger/crisis moment. The dominant function is external threat or crisis (7.3), with paranormal subgenre furniture (10.1) as secondary. No clear romantic care or violence-as-harm framing dominates.",
+      "llm_mapping_reasoning": "EVIDENCE: \"the wings lifted and spread behind her\" — Paranormal creature vocabulary (wings) combined with crouching over a fallen figure signals a danger/crisis scene in a paranormal setting. Shortlist: 7.3 (risk/danger/crisis), 7.2 (violence/threats), 4.6 (caretaking over fallen person). 7.2 lost because no deliberate harm or threat act is visible — the crouching is ambiguous protective or predatory posture. 4.6 lost because no reassurance or care language appears; the scene is tense and watchful rather than nurturing. 7.3 wins as the best fit for a tense physical crisis moment. Keywords 'growl' and 'squeeze' reinforce creature/tension register. Runner-up 4.6 placed in other_plausible_ids. Not axis-bearing because no hypothesis-relevant romantic function is visible in snippets.",
+      "heuristic_adjustments": []
+    }
+  },
+  "372": {
+    "topic_id": 372,
+    "content_type": "scene",
+    "main_category_id": "4.6",
+    "secondary_category_id": null,
+    "other_plausible_ids": [
+      "4.2",
+      "3.4"
+    ],
+    "mechanic_tags": [
+      "protective_care",
+      "domestic_care"
+    ],
+    "is_noise": false,
+    "use_in_macro_axes": true,
+    "use_in_theory_watchlist": true,
+    "noise_reason": null,
+    "confidence": 0.72,
+    "evidence_quality": "medium",
+    "uncertainty_reason": null,
+    "rationale": "A character urges another to eat and rest to maintain strength for a coming challenge — this is caretaking/reassurance directed at another's wellbeing, fitting 4.6 (emotional safety, reassurance, caretaking). The concern for the other person's physical readiness is a protective care act. Runner-up 4.2 would apply if this were general companionship bonding, but the directive care function is more specific.",
+    "mapping_reasoning": "EVIDENCE: \"you'll need your strength, cassia\" — Three snippets all show the same directive: one person urging another to maintain physical strength, framed as care for their wellbeing. Shortlist: 4.6 (caretaking/reassurance), 4.2 (everyday bonding), 3.4 (moral/duty reflection). 4.6 wins because the speech act is a protective directive aimed at the other person's welfare, not generic companionship or moral reflection. 4.2 lost because no shared activity or bonding ritual is visible — only the care directive. 3.4 lost because no values or ethical reflection appears. The keyword 'feeding' supports a caretaking read. Stage08 axis_hint is no_hypothesis_signal but snippet evidence shows protective_care function, so use_in_macro_axes=true per evidence-over-hint rule.",
+    "confidence_band": "medium",
+    "exclude_from_axes": false,
+    "main_category_name": "Emotional Safety, Reassurance & Caretaking",
+    "main_category_group": "Relationship Trajectory (Main Couple)",
+    "secondary_category_name": null,
+    "secondary_category_group": null,
+    "other_plausible_categories": [
+      {
+        "id": "4.2",
+        "name": "Ongoing Courtship & Everyday Relational Bonding",
+        "group": "Relationship Trajectory (Main Couple)"
+      },
+      {
+        "id": "3.4",
+        "name": "Beliefs, Values & Moral Reflection",
+        "group": "Emotions, Cognition & Inner Life"
+      }
+    ],
+    "mapping_debug": {
+      "classification_source": "llm",
+      "model_name": "anthropic/claude-sonnet-4.6",
+      "prompt_version": "v2.5",
+      "taxonomy_version": "2.4",
+      "stage08_label_rationale": null,
+      "llm_rationale": "A character urges another to eat and rest to maintain strength for a coming challenge — this is caretaking/reassurance directed at another's wellbeing, fitting 4.6 (emotional safety, reassurance, caretaking). The concern for the other person's physical readiness is a protective care act. Runner-up 4.2 would apply if this were general companionship bonding, but the directive care function is more specific.",
+      "llm_mapping_reasoning": "EVIDENCE: \"you'll need your strength, cassia\" — Three snippets all show the same directive: one person urging another to maintain physical strength, framed as care for their wellbeing. Shortlist: 4.6 (caretaking/reassurance), 4.2 (everyday bonding), 3.4 (moral/duty reflection). 4.6 wins because the speech act is a protective directive aimed at the other person's welfare, not generic companionship or moral reflection. 4.2 lost because no shared activity or bonding ritual is visible — only the care directive. 3.4 lost because no values or ethical reflection appears. The keyword 'feeding' supports a caretaking read. Stage08 axis_hint is no_hypothesis_signal but snippet evidence shows protective_care function, so use_in_macro_axes=true per evidence-over-hint rule.",
+      "heuristic_adjustments": []
+    }
+  }
+}

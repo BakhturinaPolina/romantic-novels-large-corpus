@@ -56,10 +56,17 @@ def default_output_dir(input_path: Path) -> Path:
     return input_path.parent / DEFAULT_OUTPUT_SUBDIR
 
 
-def write_readme(output_dir: Path) -> None:
+def _run_slug(output_dir: Path) -> str:
+    """Run directory name (e.g. `placeholder_v4_call49`) for README paths."""
+    parent = output_dir.parent.name
+    return parent or "placeholder_v4_call73"
+
+
+def write_readme(output_dir: Path, output_name: str = DEFAULT_OUTPUT_NAME) -> None:
     readme = output_dir / "README.md"
+    run_slug = _run_slug(output_dir)
     readme.write_text(
-        """# Stage09 topic metadata input (call 73)
+        f"""# Stage09 topic metadata input ({run_slug})
 
 Slim export from Stage08 v3 labels — ready for `--labels-json` in Stage09 taxonomy mapping.
 
@@ -79,8 +86,8 @@ Slim export from Stage08 v3 labels — ready for `--labels-json` in Stage09 taxo
 
 ```bash
 python3 -m src.stage09_category_mapping.stage1_theory_driven_categories.scripts.zeroshot_taxonomy_openrouter \\
-  --labels-json results/stage08_llm_labeling/placeholder_v4_call73/stage09_input/topic_metadata_v3.json \\
-  --output-json results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call73/taxonomy_mappings.json \\
+  --labels-json results/stage08_llm_labeling/{run_slug}/stage09_input/{output_name} \\
+  --output-json results/stage09_category_mapping/stage1_theory_driven_categories/{run_slug}/taxonomy_mappings.json \\
   --prompt-version v2 \\
   --no-snippets
 ```
@@ -120,7 +127,7 @@ def main() -> None:
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(slim, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    write_readme(output_dir)
+    write_readme(output_dir, args.output_name)
 
     LOGGER.info(
         "Wrote %d topics to %s (dropped fields: %s)",

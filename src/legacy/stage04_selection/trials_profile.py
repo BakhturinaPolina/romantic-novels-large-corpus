@@ -22,6 +22,13 @@ TRIALS_PARTIAL_COLUMNS: tuple[str, ...] = (
     "train_csv",
     "eval_csv",
     "test_csv",
+    "outlier_rate",
+    "largest_topic_share",
+    "median_topic_size",
+    "p10_topic_size",
+    "p90_topic_size",
+    "n_tiny_topics_lt25",
+    "n_tiny_topics_lt50",
     "n_topics_min",
     "n_topics_max",
     "n_topics_std",
@@ -31,13 +38,16 @@ TRIALS_PARTIAL_COLUMNS: tuple[str, ...] = (
     "bertopic__top_n_words",
     "hdbscan__min_cluster_size",
     "hdbscan__min_samples",
+    "hdbscan__cluster_selection_method",
     "umap__min_dist",
     "umap__n_components",
     "umap__n_neighbors",
     "vectorizer__min_df",
 )
 
-# Deprecated columns that may appear in older CSVs; never populated during BO.
+# Columns from older pipeline versions that were never populated during BO.
+# They are only dropped when entirely null: v4 granular runs populate
+# ``outlier_rate`` during BO, in which case it is kept as a metric.
 DEPRECATED_TRIALS_PARTIAL_COLUMNS: frozenset[str] = frozenset(
     {"coherence_c_npmi", "outlier_rate"}
 )
@@ -53,6 +63,13 @@ TRIALS_COLUMN_ROLES: dict[str, str] = {
     "bo_objective": "metric_continuous",
     "topic_diversity": "metric_continuous",
     "n_topics": "metric_continuous",
+    "outlier_rate": "metric_continuous",
+    "largest_topic_share": "metric_continuous",
+    "median_topic_size": "metric_continuous",
+    "p10_topic_size": "metric_continuous",
+    "p90_topic_size": "metric_continuous",
+    "n_tiny_topics_lt25": "metric_continuous",
+    "n_tiny_topics_lt50": "metric_continuous",
     "stability_score": "run_constant",
     "train_csv": "path",
     "eval_csv": "path",
@@ -66,6 +83,7 @@ TRIALS_COLUMN_ROLES: dict[str, str] = {
     "bertopic__top_n_words": "hyperparameter",
     "hdbscan__min_cluster_size": "hyperparameter",
     "hdbscan__min_samples": "hyperparameter",
+    "hdbscan__cluster_selection_method": "categorical",
     "umap__min_dist": "hyperparameter",
     "umap__n_components": "hyperparameter",
     "umap__n_neighbors": "hyperparameter",
@@ -100,8 +118,12 @@ ROLE_ORDER = [
 
 
 def normalize_trials_partial_df(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop deprecated empty columns from older ``trials_partial.csv`` files."""
-    drop = [c for c in DEPRECATED_TRIALS_PARTIAL_COLUMNS if c in df.columns]
+    """Drop deprecated columns only when they are entirely null (older CSVs)."""
+    drop = [
+        c
+        for c in DEPRECATED_TRIALS_PARTIAL_COLUMNS
+        if c in df.columns and df[c].isna().all()
+    ]
     if drop:
         df = df.drop(columns=drop)
     unknown = [c for c in df.columns if c not in TRIALS_COLUMN_ROLES]

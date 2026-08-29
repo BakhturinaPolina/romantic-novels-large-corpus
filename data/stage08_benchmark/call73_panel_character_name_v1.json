@@ -1,0 +1,34 @@
+{
+  "version": "call73_panel_character_name_v1",
+  "date": "2026-06-27",
+  "description": "Character-name cluster gold panel for C8 prompt A/B vs v2_s1_snippets_first (call 73).",
+  "strata": {
+    "regression_scene": "Concrete scenes that must not regress",
+    "regression_discourse": "Discourse topics that must not regress",
+    "name_artifact": "Proper-name clusters → noise",
+    "stage07_override": "Stage07 character_name flags that are real scenes"
+  },
+  "topics": {
+    "0": {"stratum": "regression_scene", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Doorway/taxi departure"},
+    "1": {"stratum": "regression_scene", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Tender kiss cluster"},
+    "2": {"stratum": "regression_scene", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Physical proximity"},
+    "4": {"stratum": "regression_scene", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Phone follow-up"},
+    "5": {"stratum": "regression_discourse", "expected_content_type": "discourse", "expected_exclude_from_axes": true, "snippet_grounding_pass": true, "notes": "Evaluative explanation speech"},
+    "12": {"stratum": "regression_scene", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Scent/sensory — NOT noise"},
+    "13": {"stratum": "regression_discourse", "expected_content_type": "discourse", "expected_exclude_from_axes": true, "snippet_grounding_pass": true, "notes": "Chuckle speech-tag pattern"},
+    "29": {"stratum": "stage07_override", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Horse/stable scene; not character-name noise"},
+    "52": {"stratum": "stage07_override", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Meal/dinner scene"},
+    "93": {"stratum": "stage07_override", "expected_content_type": "scene", "expected_exclude_from_axes": false, "snippet_grounding_pass": true, "notes": "Quick shower before leaving"},
+    "122": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Dylan mutual-friend name cluster"},
+    "124": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Cole name cluster — not a reusable theme"},
+    "132": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Noah name cluster"},
+    "160": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Scattered unrelated named characters"},
+    "175": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Aunt title token cluster"},
+    "180": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Character_name flag; snippets unrelated"},
+    "215": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Ryan tiny name cluster"},
+    "226": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Shane name cluster"},
+    "266": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Caleb name cluster"},
+    "302": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Rose name cluster"},
+    "316": {"stratum": "name_artifact", "expected_content_type": "noise", "expected_exclude_from_axes": true, "snippet_grounding_pass": false, "notes": "Travis name cluster"}
+  }
+}
