@@ -76,9 +76,12 @@ Two consequences are visible in that table and reported rather than hidden:
 
 Every axis is produced in **strict** (primary mapping only) and **generous** (primary 1.0 + secondary 0.5) variants; their agreement is checked in notebook 04 and again in notebook 08.
 
-## Known caveat: Radway is mapped but not yet in the analysis frame
+## Known caveat: Radway is in topic_lookup; notebooks still emphasise taxonomy leaves
 
-Radway stage 2 finished for call_49: `results/stage09_category_mapping/stage2_radway_functions/placeholder_v4_call49_rerun2/taxonomy_with_radway.json` (182 of 348 topics on R1–R13). The current `topic_lookup.parquet` and `book_analysis_frame.parquet` still come from the original taxonomy-only mapping, so `radway_*` columns and the schema's `radway_weights` are unused until a rebuild. Details: `results/reports/stage09/call49_rerun2_mapping_stability.md`.
+`topic_lookup.parquet` was rebuilt from `placeholder_v4_call49_rerun2/taxonomy_with_radway.json`
+(182 of 348 topics on R1–R13). Book-level axes and the H1–H6 notebooks still analyse taxonomy
+leaves and theory axes; Radway phase shares are available for a follow-on chapter. Rebuild helper:
+`scripts/stage10/rebuild_topic_lookup_from_mappings.py`.
 
 ## Dependencies
 

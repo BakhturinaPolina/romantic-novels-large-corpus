@@ -38,12 +38,12 @@ Each hypothesis was pre-registered in `configs/stage09/theory_aligned_index_sche
 
 | # | Hypothesis | As actually tested | Result |
 |---|------------|--------------------|--------|
-| H1 | **Love-over-Sex**: emotional connection beats explicit content | `AX_love_over_sex`, log-ratio `log((4.5+4.6+2.2+4.2)/2.3)` and difference form | **Contradicted** (δ = −0.050). Emotional safety *and* explicit content are both higher in well-rated books, so the trade-off does not exist as framed |
-| H2 | **HEA Index**: explicit happily-ever-after signals predict appreciation | `4.5` alone (primary); `4.5 + 0.8×5.3a + 0.5×8.3a` as the composite | **No reliable effect** (δ = +0.006, CI spans zero). HEA is near-universal in the genre, so it cannot discriminate |
-| H3 | **Material and social display** (reframed from Luxury × Love) | `AX_material_social_display` (1.6 + 8.2 + 5.3a + 8.3a) plus its interaction with relational payoff | **Contradicted, reliably** (δ = −0.139, the largest hypothesis-level effect). Display is *lower* in well-rated books, and display × payoff is a substitute rather than a complement |
-| H4 | **Protectiveness vs Possessiveness** | `4.6 − 4.7`, log-ratio and difference; `4.6` residualised on `4.5` | **Directionally consistent, below threshold** (δ = +0.093). Protective care carries it; `4.7` has 2 topics and contributes nothing measurable |
-| H5 | **Darkness vs Tenderness**, inverted U | `(3.2+4.4+7.2+7.3) − (3.1+2.2+4.6)`, with `3.1` empty, plus a quadratic darkness term | **Inverted U contradicted** (quadratic is convex, p ≈ 0.06). The linear component holds and is much larger in the components than in the composite |
-| H6 | **Narrative Arc**: repair rises, conflict falls | Within-book tertile Δ (end − begin) for rising (`4.5`, `4.6`) vs falling (`4.3`, `4.4`, `3.2`) leaves | **Partly supported** (arc index δ = +0.039). Repair rises in 73% of books, but nothing falls — every relational category rises. Renormalising within the relationship group leaves repair rising in 71% while misunderstanding falls |
+| H1 | **Love-over-Sex**: emotional connection beats explicit content | `AX_love_over_sex`, log-ratio `log((4.5+4.6+2.2+4.2)/2.3)` and difference form | **Contradicted** (δ = −0.029). Emotional safety *and* explicit content are both higher in well-rated books, so the trade-off does not exist as framed |
+| H2 | **HEA Index**: explicit happily-ever-after signals predict appreciation | `4.5` alone (primary); `4.5 + 0.8×5.3a + 0.5×8.3a` as the composite | **Directionally consistent, below threshold** (δ = +0.027). HEA is near-universal in the genre, so it barely discriminates |
+| H3 | **Material and social display** (reframed from Luxury × Love) | `AX_material_social_display` (1.6 + 8.2 + 5.3a + 8.3a) plus its interaction with relational payoff | **Contradicted, reliably** (δ = −0.146, the largest hypothesis-level effect). Display is *lower* in well-rated books, and display × payoff is a substitute rather than a complement |
+| H4 | **Protectiveness vs Possessiveness** | `4.6 − 4.7`, log-ratio and difference; `4.6` residualised on `4.5` | **Directionally consistent, below threshold** (δ = +0.090). Protective care carries it; `4.7` has 2 topics and contributes nothing measurable |
+| H5 | **Darkness vs Tenderness**, inverted U | `(3.2+4.4+7.2+7.3) − (3.1+2.2+4.6)`, with `3.1` thin, plus a quadratic darkness term | **No reliable effect on the composite** (δ = +0.012, CI spans zero). The inverted-U is still contradicted; component leaves (esp. `7.2`) remain informative |
+| H6 | **Narrative Arc**: repair rises, conflict falls | Within-book tertile Δ (end − begin) for rising (`4.5`, `4.6`) vs falling (`4.3`, `4.4`, `3.2`) leaves | **Partly supported** (arc index δ = +0.044). Repair rises strongly; renormalising within the relationship group leaves repair rising while misunderstanding falls |
 
 Full tests, effect sizes and models: [`notebooks/07_analysis/05_hypothesis_tests.ipynb`](notebooks/07_analysis/05_hypothesis_tests.ipynb).
 
@@ -161,7 +161,7 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 - Phase II (R8–R10): Turning Point & Recognition
 - Phase III (R11–R13): Commitment & Restoration
 
-**Coverage**: Radway stage 2 is complete for call_49 (`placeholder_v4_call49_rerun2`): 182 of 348 topics mapped to R1–R13, 166 background. The Stage 10 notebooks still use the original taxonomy mapping without Radway columns; folding Radway in is a separate rebuild of `topic_lookup` and the analysis frame. See `results/reports/stage09/call49_rerun2_mapping_stability.md`.
+**Coverage**: Radway stage 2 is complete for call_49 and folded into `topic_lookup.parquet` (182 of 348 topics on R1–R13, 166 background). The Stage 10 hypothesis notebooks still test taxonomy leaves and theory axes; Radway phase analysis is available as a follow-on. See `results/reports/stage09/call49_rerun2_mapping_stability.md`.
 
 ### 4. Statistical Analysis
 
@@ -212,21 +212,21 @@ See **`results/reports/01_stage_reports/`** for detailed methodology per stage w
 
 ## Key Findings
 
-From the final model (call_49, 348 mapped topics, 16,000 books). Effects are Cliff's δ for the high-rated vs low-rated contrast, ~5,000 books per tier.
+From the final model (call_49, 348 mapped topics, 16,000 books), after folding in the Stage09 v2.5 + Radway re-run. Effects are Cliff's δ for the high-rated vs low-rated contrast, ~5,000 books per tier.
 
 ### No hypothesis clears the bar; three unpredicted findings do
 
-Two hypotheses came back reliably in the *opposite* direction (H1, H3), one showed no effect (H2), and three were directionally consistent but below the effect threshold (H4, H5, H6). In each case the composite axis cancelled out, and the leaves beneath it were more informative — so the strongest results are ones the hypothesis frame obscured.
+Two hypotheses came back reliably in the *opposite* direction (H1, H3), one has no reliable composite effect (H5), and three were directionally consistent but below the effect threshold (H2, H4, H6). In each case the composite axis cancelled out, and the leaves beneath it were more informative — so the strongest results are ones the hypothesis frame obscured.
 
 | Finding | Effect | Robustness |
 |---|---|---|
-| **External violence and threat is the strongest theme signal** (`7.2`, 13 topics). Danger, weapons, captivity and coercion from *outside* the couple | δ = **+0.163** | Holds in every genre and era, under every specification, and among singleton authors (+0.122). The most attacked and least moved result |
-| **Character appearance description is a negative marker** (`1.6`, 15 topics). Clothing, hair, physique, self-presentation | δ = **−0.145** | Negative in all nine genre and era subgroups; −0.156 word-weighted; −0.108 among singleton authors. Robust, and the mechanism is unexplained |
+| **External violence and threat is the strongest theme signal** (`7.2`, 12 topics). Danger, weapons, captivity and coercion from *outside* the couple | δ = **+0.152** | Holds in every genre and era, under every specification, and among singleton authors. The most attacked and least moved result |
+| **Character appearance description is a negative marker** (`1.6`, 15 topics). Clothing, hair, physique, self-presentation | δ = **−0.147** | Negative in all nine genre and era subgroups; robust, and the mechanism is unexplained |
 | **Moral and value reflection** (`3.4`) | δ = **+0.130** | Stable across every check, but rests on a single topic |
-| Family, kinship and parenthood (`5.1`) | δ = +0.101 | — |
-| Emotional safety and caretaking (`4.6`, 30 topics) | δ = +0.095 | Halves to +0.042 among singleton authors, so partly an *authorial* rather than book-level effect. H1 and H4 both rest on this leaf |
-| Risk, danger and external crisis (`7.3`) | δ = +0.093 | — |
-| Couple conflict and breakup threats (`4.4`) | δ = −0.039 | Small, and the only leaf with perfect sign agreement across all twelve specifications |
+| Interpersonal non-romantic conflict (`7.1`) | δ = +0.104 | — |
+| Family, kinship and parenthood (`5.1`) | δ = +0.097 | — |
+| Emotional safety and caretaking (`4.6`, 30 topics) | δ = +0.092 | Partly an *authorial* rather than book-level effect. H1 and H4 both rest on this leaf |
+| Couple conflict and breakup threats (`4.4`) | δ = −0.031 | Small, and robust across specifications |
 
 The distinction between `7.2` and `4.4` is the substantive result: *external* threat is markedly more present in well-rated romance, while the couple quarrelling internally is slightly less present.
 
@@ -267,7 +267,7 @@ Stated plainly because several of them bound what the findings can mean.
 - **Author effects cannot be fully removed.** With 5,353 single-book authors, author fixed effects are infeasible. The `4.6` result in particular halves once multi-book authors are excluded.
 - **Ratings are noisy for the 1,909 books with under 30 ratings**, hence shrinkage and weighting; unweighted and `n ≥ 30` fits are reported as sensitivity checks.
 - **Shares are compositional.** All effects are relative reallocations of narrative attention. Nothing here says a book contains *more* violence in absolute terms, only that a larger fraction of its sentences do.
-- **Radway functions are mapped for call_49 but not yet wired into Stage 10.** The re-run produced `taxonomy_with_radway.json` (182 of 348 topics on R1–R13); the analysis frame still has null `radway_*` columns until `topic_lookup` is rebuilt from it.
+- **Radway functions are mapped into `topic_lookup` for call_49** (182 of 348 topics on R1–R13) but the H1–H6 notebooks still analyse taxonomy leaves; a Radway-phase chapter has not been run.
 - **Associational, not causal.** Ratings are observational and confounded by prose quality, editing, cover, marketing and platform dynamics that no theme measure here captures.
 
 ---

@@ -31,10 +31,8 @@ inputs:
   taxonomy_config: configs/stage09/romance_corpus_taxonomy_v2.yaml
   axis_schema: configs/stage09/theory_aligned_index_schema.yaml
 
-  # Stage09 re-run (prompt v2.5 + Radway stage 2) is COMPLETE under
-  # placeholder_v4_call49_rerun2. The analysis still reads taxonomy assignments from
-  # `topic_lookup` above, which was built from the original `placeholder_v4_call49`
-  # mapping. Pointing `topic_lookup` at the re-run requires rebuilding steps 01 → 02 → 06.
+  # Stage09 re-run (prompt v2.5 + Radway stage 2) under placeholder_v4_call49_rerun2.
+  # After rebuild_topic_lookup_from_mappings.py, topic_lookup above carries these mappings.
   # See results/reports/stage09/call49_rerun2_mapping_stability.md.
   taxonomy_mappings: results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49_rerun2/taxonomy_mappings.json
   taxonomy_mappings_fallback: results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49/taxonomy_mappings.json

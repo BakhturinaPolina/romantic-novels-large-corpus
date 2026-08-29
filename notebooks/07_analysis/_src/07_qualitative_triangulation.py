@@ -602,14 +602,15 @@ ctx.save_table(audit_export, "label_audit_sentences")
 #        and insults.
 #   2.3  keep only the four topics describing explicit acts; kissing, undressing and embracing
 #        are physical intimacy but not what the leaf name claims.
-#   7.2  all thirteen topics describe threat, weapons, captivity or coercion.
-#   4.4  keep everything except institutional expulsion, which is pressure from outside the
-#        couple rather than conflict within it.
+#   7.2  all twelve topics remaining after the Stage09 re-run describe threat, weapons,
+#        captivity or coercion (topic 91 moved out of the leaf).
+#   4.4  keep the adjudicated couple-conflict topics; topic 103 left the leaf in the re-run
+#        and topic 43 joined it without adjudication, so it stays out of the on-label set.
 ON_LABEL = {
     "1.6": {18, 218, 364, 77, 253, 171},
     "2.3": {208, 292, 63, 230},
-    "7.2": {87, 78, 91, 113, 82, 249, 114, 117, 294, 51, 269, 148, 329},
-    "4.4": {3, 85, 24, 256, 103, 129, 316},
+    "7.2": {87, 78, 113, 82, 249, 114, 117, 294, 51, 269, 148, 329},
+    "4.4": {3, 85, 24, 256, 129, 316},
 }
 
 fidelity_rows = []
