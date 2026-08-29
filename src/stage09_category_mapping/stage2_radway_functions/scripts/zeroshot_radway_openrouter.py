@@ -817,44 +817,60 @@ def classify_topic_to_radway_openrouter(
         {"role": "user", "content": user_prompt},
     ]
 
-    LOGGER.info("Classifying topic %d into Radway function (Mistral-Nemo)...", topic_id)
+    LOGGER.info("Classifying topic %d into Radway function (%s)...", topic_id, model_name)
 
-    response = client.chat.completions.create(
-        model=model_name,
-        messages=messages,
-        max_tokens=max_new_tokens,
-        temperature=0.0,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0,
-    )
+    # The token budget is sized for a terse Mistral-Nemo answer. Chattier models spend it on
+    # `radway_rationale` and get cut off mid-string, which yields unparseable JSON rather than
+    # an API error. Retry with a larger budget instead of aborting the whole 348-topic run.
+    budget = max_new_tokens
+    for attempt in range(3):
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=messages,
+            max_tokens=budget,
+            temperature=0.0,
+            top_p=1.0,
+            frequency_penalty=0.0,
+            presence_penalty=0.0,
+        )
 
-    if not response.choices:
-        raise ValueError("Empty API response for Radway classification")
+        if not response.choices:
+            raise ValueError("Empty API response for Radway classification")
 
-    content = response.choices[0].message.content.strip()
-    LOGGER.debug("Raw Radway response for topic %d: %s", topic_id, content[:300])
+        choice = response.choices[0]
+        content = (choice.message.content or "").strip()
+        LOGGER.debug("Raw Radway response for topic %d: %s", topic_id, content[:300])
 
-    # Extract JSON (strip optional code fences defensively)
-    json_content = content
-    if "```json" in json_content:
-        json_content = json_content.split("```json", 1)[1].split("```", 1)[0].strip()
-    elif "```" in json_content:
-        json_content = json_content.split("```", 1)[1].split("```", 1)[0].strip()
+        truncated = getattr(choice, "finish_reason", None) == "length"
 
-    # Fallback: try to grab the first {...} span
-    if not json_content.strip().startswith("{"):
-        first_brace = json_content.find("{")
-        last_brace = json_content.rfind("}")
-        if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
-            json_content = json_content[first_brace : last_brace + 1]
+        # Extract JSON (strip optional code fences defensively)
+        json_content = content
+        if "```json" in json_content:
+            json_content = json_content.split("```json", 1)[1].split("```", 1)[0].strip()
+        elif "```" in json_content:
+            json_content = json_content.split("```", 1)[1].split("```", 1)[0].strip()
 
-    try:
-        result = json.loads(json_content)
-    except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Failed to parse Radway JSON for topic {topic_id}: {e}\nContent:\n{content}"
-        ) from e
+        # Fallback: try to grab the first {...} span
+        if not json_content.strip().startswith("{"):
+            first_brace = json_content.find("{")
+            last_brace = json_content.rfind("}")
+            if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
+                json_content = json_content[first_brace : last_brace + 1]
+
+        try:
+            result = json.loads(json_content)
+            break
+        except json.JSONDecodeError as exc:
+            if attempt == 2:
+                raise ValueError(
+                    f"Failed to parse Radway JSON for topic {topic_id} after 3 attempts "
+                    f"(final budget {budget} tokens): {exc}\nContent:\n{content}"
+                ) from exc
+            budget *= 3
+            LOGGER.warning(
+                "Topic %d returned unparseable JSON (%s%s); retrying with max_tokens=%d",
+                topic_id, "truncated, " if truncated else "", exc, budget,
+            )
 
     # --- sanity checks + normalisation -----------------------------------
     result_topic_id = result.get("topic_id", topic_id)

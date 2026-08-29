@@ -161,7 +161,7 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 - Phase II (R8–R10): Turning Point & Recognition
 - Phase III (R11–R13): Commitment & Restoration
 
-**Coverage**: mapped for earlier models only. Radway stage 2 has **not** been run for the final call_49 model — all `radway_*` columns are null — so R1–R13 phases and the schema's `radway_weights` are unused in the Stage 10 analysis. The re-run is scripted (`scripts/stage09/run_call49_rerun2.sh radway`) and pending; see `results/reports/stage09/call49_rerun2_mapping_stability.md`.
+**Coverage**: Radway stage 2 is complete for call_49 (`placeholder_v4_call49_rerun2`): 182 of 348 topics mapped to R1–R13, 166 background. The Stage 10 notebooks still use the original taxonomy mapping without Radway columns; folding Radway in is a separate rebuild of `topic_lookup` and the analysis frame. See `results/reports/stage09/call49_rerun2_mapping_stability.md`.
 
 ### 4. Statistical Analysis
 
@@ -202,7 +202,7 @@ They correlate at only r = 0.21 shrunk (0.12 raw), under 5% shared variance, whi
 | 06 Topic Exploration | — | Multi-representation analysis |
 | 07 Topic Quality | — | Noisy topic detection |
 | 08 LLM Labeling | `stage08_llm_labeling` | Automated topic labeling |
-| 09 Category Mapping | `stage09_category_mapping` | Zero-shot mapping of topics to taxonomy v2.4 leaves (stage 1) and Radway R1–R13 (stage 2, pending for call_49) |
+| 09 Category Mapping | `stage09_category_mapping` | Zero-shot mapping of topics to taxonomy v2.4 leaves (stage 1) and Radway R1–R13 (stage 2; complete for call_49 under `placeholder_v4_call49_rerun2`) |
 | 10 Correlation Analysis | `stage10_correlation_analysis` | Hard-assignment aggregation to book/tertile/chapter, the book analysis frame, and the statistics library behind `notebooks/07_analysis/` |
 
 See **`results/reports/01_stage_reports/`** for detailed methodology per stage when those files are present in your checkout.
@@ -267,7 +267,7 @@ Stated plainly because several of them bound what the findings can mean.
 - **Author effects cannot be fully removed.** With 5,353 single-book authors, author fixed effects are infeasible. The `4.6` result in particular halves once multi-book authors are excluded.
 - **Ratings are noisy for the 1,909 books with under 30 ratings**, hence shrinkage and weighting; unweighted and `n ≥ 30` fits are reported as sensitivity checks.
 - **Shares are compositional.** All effects are relative reallocations of narrative attention. Nothing here says a book contains *more* violence in absolute terms, only that a larger fraction of its sentences do.
-- **Radway functions are unmapped for the final model**, so no Radway-phase analysis is included.
+- **Radway functions are mapped for call_49 but not yet wired into Stage 10.** The re-run produced `taxonomy_with_radway.json` (182 of 348 topics on R1–R13); the analysis frame still has null `radway_*` columns until `topic_lookup` is rebuilt from it.
 - **Associational, not causal.** Ratings are observational and confounded by prose quality, editing, cover, marketing and platform dynamics that no theme measure here captures.
 
 ---

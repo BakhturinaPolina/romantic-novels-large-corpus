@@ -1,39 +1,52 @@
-# Stage09 v2.5 re-run stability (call_49, PARTIAL: 258 of 348 topics)
+# Stage09 v2.5 full re-run stability (call_49, 348 topics)
 
 - Previous mapping: `results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49/taxonomy_mappings.json`
 - New mapping: `results/stage09_category_mapping/stage1_theory_driven_categories/placeholder_v4_call49_rerun2/taxonomy_mappings.json`
 
-All before/after counts below cover the **same 258 topics** present in both runs, so the two columns are directly comparable.
+All before/after counts below cover the **same 348 topics** present in both runs, so the two columns are directly comparable.
 
-## Status: incomplete, blocked on OpenRouter credits
+## Status: complete
 
-The re-run stopped at topic 268 (258 of 348 mapped) with an OpenRouter `402 Payment Required`:
-`Prompt tokens limit exceeded: 12070 > 6624`. That is not a rate limit — the remaining account
-balance caps the allowed prompt size below what the v2.5 prompt needs. Radway stage 2 has not
-started (0 of 348).
+Taxonomy stage 1 finished for all 348 topics (Claude Sonnet 4.6, prompt v2.5). Radway stage 2 finished for all 348 topics and is written to
+`results/stage09_category_mapping/stage2_radway_functions/placeholder_v4_call49_rerun2/taxonomy_with_radway.json`.
 
-Resume with `scripts/stage09/run_call49_rerun2.sh full` once credits are topped up; the runner
-checkpoints after every topic and skips what is already mapped, so no completed work is repeated.
-Rough remaining cost at Claude Sonnet 4.6 pricing: ~90 taxonomy calls at ~12k prompt tokens
-(about $4), then 348 Radway calls (about $6-10).
+**Stage10 analysis still reads the original `placeholder_v4_call49` mapping** via `topic_lookup.parquet`. Folding this re-run into the notebooks means rebuilding `topic_lookup` and the book analysis frame — a deliberate second pass, not automatic.
 
-**Nothing in the Stage10 analysis depends on this re-run.** All Stage10 tables and the nine
-notebooks in `notebooks/07_analysis/` are built from the original, complete
-`placeholder_v4_call49` mapping. The re-run is a mapping-quality improvement to be folded in on a
-later pass, at which point `topic_lookup.parquet` and everything downstream would be rebuilt.
+Payoff guard still applies: `3.1` has **1** topic after the re-run (below the 3-topic floor), so `AX_payoff_safety_fallback = 4.5 + 4.6` remains the correct H2/H3 construction.
+
+## Radway stage 2 coverage
+
+182 of 348 topics (52.3%) mapped to an R1–R13 function; 166 (47.7%) are background/`none`. Phase split among mapped topics: I = 73, II = 72, III = 37. Confidence: high 157, medium 146, low 45.
+
+| Function | n | Name |
+|---|---|---|
+| none | 166 | None of the above |
+| R8 | 43 | Hero treats heroine tenderly |
+| R11 | 19 | Hero declares love and demonstrates commitment |
+| R9 | 17 | Heroine responds warmly to hero's tenderness |
+| R12 | 16 | Heroine responds sexually and emotionally |
+| R1 | 16 | Heroine's social identity is destroyed |
+| R3 | 15 | Hero responds ambiguously to heroine |
+| R4 | 13 | Heroine interprets hero's behaviour as purely sexual interest |
+| R2 | 12 | Heroine reacts antagonistically to the hero |
+| R10 | 12 | Heroine reinterprets hero's behaviour as result of previous hurt |
+| R7 | 8 | Hero and heroine are physically or emotionally separated |
+| R6 | 8 | Hero retaliates or punishes heroine |
+| R13 | 2 | Heroine's identity is restored |
+| R5 | 1 | Heroine responds with anger or coldness |
 
 ## Headline numbers
 
 | Metric | Before | After |
 |---|---|---|
-| Topics compared | 258 | 258 |
-| `uncertain_interpretable` | 23 | 5 |
-| Low `evidence_quality` | 119 (46.1%) | 61 (23.6%) |
-| `use_in_macro_axes=true` | 57 | 86 |
-| Topics on axis-bearing IDs | 108 | 114 |
-| Flagged noise | 1 | 2 |
+| Topics compared | 348 | 348 |
+| `uncertain_interpretable` | 30 | 7 |
+| Low `evidence_quality` | 163 (46.8%) | 77 (22.1%) |
+| `use_in_macro_axes=true` | 75 | 115 |
+| Topics on axis-bearing IDs | 152 | 159 |
+| Flagged noise | 1 | 3 |
 
-Main category changed for **37 of 258** comparable topics (14.3%).
+Main category changed for **47 of 348** comparable topics (13.5%).
 
 Evidence-quote compliance: **100.0%** of new mappings open `mapping_reasoning` with `EVIDENCE:`.
 
@@ -43,63 +56,70 @@ Evidence-quote compliance: **100.0%** of new mappings open `mapping_reasoning` w
 
 | axis_id   |   n_topics_old |   n_topics_new |   delta | was_empty   | still_empty   |
 |:----------|---------------:|---------------:|--------:|:------------|:--------------|
-| 2.1       |             12 |             12 |       0 | False       | False         |
+| 2.1       |             18 |             18 |       0 | False       | False         |
 | 2.2       |              4 |              4 |       0 | False       | False         |
-| 2.3       |              6 |              6 |       0 | False       | False         |
+| 2.3       |              7 |              7 |       0 | False       | False         |
 | 2.4       |              0 |              0 |       0 | True        | True          |
 | 2.5       |              6 |              7 |       1 | False       | False         |
 | 3.1       |              0 |              1 |       1 | True        | False         |
-| 3.2       |             10 |             10 |       0 | False       | False         |
-| 4.2       |              7 |             10 |       3 | False       | False         |
-| 4.3       |             10 |             12 |       2 | False       | False         |
-| 4.4       |              7 |              7 |       0 | False       | False         |
-| 4.5       |              6 |              7 |       1 | False       | False         |
-| 4.6       |             19 |             20 |       1 | False       | False         |
-| 4.7       |              0 |              0 |       0 | True        | True          |
+| 3.2       |             12 |             14 |       2 | False       | False         |
+| 4.2       |             11 |             14 |       3 | False       | False         |
+| 4.3       |             17 |             20 |       3 | False       | False         |
+| 4.4       |              8 |              8 |       0 | False       | False         |
+| 4.5       |              9 |              8 |      -1 | False       | False         |
+| 4.6       |             30 |             30 |       0 | False       | False         |
+| 4.7       |              2 |              2 |       0 | False       | False         |
 | 5.3a      |              1 |              1 |       0 | False       | False         |
 | 6.1a      |              0 |              0 |       0 | True        | True          |
 | 6.4       |              1 |              1 |       0 | False       | False         |
 | 6.6       |              1 |              1 |       0 | False       | False         |
 | 6.7       |              0 |              0 |       0 | True        | True          |
-| 7.2       |             10 |              9 |      -1 | False       | False         |
-| 7.3       |              6 |              4 |      -2 | False       | False         |
-| 7.4       |              1 |              1 |       0 | False       | False         |
+| 7.2       |             13 |             12 |      -1 | False       | False         |
+| 7.3       |              9 |              8 |      -1 | False       | False         |
+| 7.4       |              2 |              2 |       0 | False       | False         |
 | 8.3a      |              1 |              1 |       0 | False       | False         |
 
 ## Main-category churn
 
 | old_main                | new_main   |   n |
 |:------------------------|:-----------|----:|
+| uncertain_interpretable | 8.5        |   4 |
 | uncertain_interpretable | 9.2        |   3 |
-| uncertain_interpretable | 8.5        |   3 |
 | uncertain_interpretable | 3.3        |   3 |
 | uncertain_interpretable | 4.2        |   2 |
+| uncertain_interpretable | 9.4        |   2 |
+| uncertain_interpretable | 4.6        |   2 |
 | 1.1                     | 3.2        |   1 |
-| 10.2                    | 4.3        |   1 |
-| uncertain_interpretable | 9.3        |   1 |
-| uncertain_interpretable | 8.4        |   1 |
-| uncertain_interpretable | 8.3b       |   1 |
-| uncertain_interpretable | 6.1b       |   1 |
-| uncertain_interpretable | 4.6        |   1 |
-| uncertain_interpretable | 3.1        |   1 |
-| 9.4                     | 9.3        |   1 |
-| 9.4                     | 9.2        |   1 |
 | 9.2                     | 9.1        |   1 |
-| 9.2                     | 4.6        |   1 |
+| 9.4                     | 9.2        |   1 |
+| 9.4                     | 9.3        |   1 |
+| uncertain_interpretable | 3.1        |   1 |
+| uncertain_interpretable | 6.1b       |   1 |
 | 8.3b                    | 8.1        |   1 |
+| uncertain_interpretable | 7.3        |   1 |
+| uncertain_interpretable | 8.3b       |   1 |
+| uncertain_interpretable | 8.4        |   1 |
+| uncertain_interpretable | 9.3        |   1 |
+| 9.2                     | 4.6        |   1 |
 | 8.2                     | 4.2        |   1 |
+| 10.2                    | 4.3        |   1 |
 | 7.3                     | 9.1        |   1 |
-| 7.3                     | 10.3       |   1 |
-| 7.3                     | 10.1       |   1 |
-| 7.2                     | 7.1        |   1 |
-| 7.1                     | 7.3        |   1 |
-| 6.5                     | 4.6        |   1 |
-| 5.1                     | 4.5        |   1 |
-| 4.6                     | 4.3        |   1 |
-| 4.6                     | 2.5        |   1 |
-| 4.4                     | 1.7        |   1 |
 | 3.2                     | 4.4        |   1 |
-| uncertain_interpretable | 9.4        |   1 |
+| 4.4                     | 1.7        |   1 |
+| 4.5                     | 4.1        |   1 |
+| 4.5                     | 4.3        |   1 |
+| 4.6                     | 2.5        |   1 |
+| 4.6                     | 3.2        |   1 |
+| 4.6                     | 3.3        |   1 |
+| 4.6                     | 4.3        |   1 |
+| 5.1                     | 4.5        |   1 |
+| 6.5                     | 4.6        |   1 |
+| 7.1                     | 3.2        |   1 |
+| 7.1                     | 7.3        |   1 |
+| 7.2                     | 7.1        |   1 |
+| 7.3                     | 10.1       |   1 |
+| 7.3                     | 10.3       |   1 |
+| uncertain_interpretable | noise      |   1 |
 
 ## Changed topics (first 80)
 
@@ -142,6 +162,16 @@ Evidence-quote compliance: **100.0%** of new mappings open `mapping_reasoning` w
 |        252 | Declaring Deadly Seriousness            | 9.2                     | 9.1        | low            | low            |             0.62 |
 |        258 | Shouting Above The Crowd                | 7.3                     | 9.1        | low            | low            |             0.62 |
 |        259 | Chained to The Forest Gate              | 7.1                     | 7.3        | low            | low            |             0.62 |
+|        270 | Told to Expect Your Arrival             | uncertain_interpretable | 8.5        | low            | low            |             0.62 |
+|        281 | Told to Calm Down First                 | 4.6                     | 3.2        | low            | low            |             0.62 |
+|        285 | Confessing Years of Hatred              | 7.1                     | 3.2        | medium         | high           |             0.78 |
+|        312 | Travis Brags Before The Rodeo           | uncertain_interpretable | noise      | low            | low            |             0.62 |
+|        319 | Confessing A Costly Mistake             | 4.5                     | 4.3        | medium         | medium         |             0.72 |
+|        327 | Crouching Over A Fallen Figure          | uncertain_interpretable | 7.3        | low            | medium         |             0.65 |
+|        334 | Confessing Feelings After Three Hours   | 4.5                     | 4.1        | medium         | medium         |             0.78 |
+|        336 | Called Out For Being Distracted         | uncertain_interpretable | 9.4        | low            | medium         |             0.72 |
+|        340 | Patience Tested Through Small Trials    | uncertain_interpretable | 4.6        | low            | medium         |             0.62 |
+|        344 | Fighting His Instincts to Keep Her      | 4.6                     | 3.3        | medium         | low            |             0.65 |
 
 ### Reasoning for changed topics
 
@@ -330,10 +360,60 @@ Evidence-quote compliance: **100.0%** of new mappings open `mapping_reasoning` w
 
 > EVIDENCE: "miss [person], it appears you've chained yourself to the door of white pines" — This snippet directly describes a protest action: chaining to a door after living in a tree. Shortlist: 7.3 (external crisis/risk), 7.1 (interpersonal conflict with authority), 5.3b (community/social event). 7.3 wins because the protest creates an external crisis situation involving risk and confrontation with institutional authority. 7.1 lost because the conflict is not clearly between named interpersonal antagonists but rather a person vs. institution. 5.3b lost because this is not a social gathering or gossip event. No romantic mechanics are visible; axis false. The 'surprise in the woods' snippet adds an outdoor/public setting dimension but no romantic function.
 
+**Topic 270 — Told to Expect Your Arrival**  
+`uncertain_interpretable` -> `8.5` (evidence low -> low, confidence 0.62)
+
+> EVIDENCE: "i've been expecting you" — from snippets (source: snippet text). Shortlist: (1) 8.5 movement/arrival — fits the threshold greeting; (2) 4.1 first contact — possible if this is a meet-cute, but no romantic framing is visible; (3) uncertain_interpretable — possible given sparse evidence. Runner-up 4.1 lost because no romantic or introductory courtship function is visible; the phrasing is purely logistical announcement of arrival. Keywords 'meantime' and 'worst' provide no thematic signal. Stage08 axis_hint is no_hypothesis_signal, consistent with context-only. 8.5 is the most specific nameable context ID for an arrival/threshold scene. macro_axes false because transit context is not axis-bearing.
+
+**Topic 281 — Told to Calm Down First**  
+`4.6` -> `3.2` (evidence low -> low, confidence 0.62)
+
+> EVIDENCE: "i've really helped relax, comfort and ease anger and rage with these guys" — Keywords and snippets converge on emotional distress and calming. Shortlist: 3.2 (negative emotions/distress), 4.6 (reassurance/caretaking), 9.1 (speech delivery). 4.6 lost as main because the focus is on the emotional state itself rather than a partner actively caretaking; the distress is the center. 9.1 lost because the topic is about emotional content, not speech mechanics. Runner-up 3.3 considered for ambivalence but no competing desires are visible — this is anger/urgency being managed. Third snippet 'not been relieved of my post' suggests a professional/institutional context but is too isolated to redirect the mapping. Evidence quality is low given short, decontextualized snippets.
+
+**Topic 285 — Confessing Years of Hatred**  
+`7.1` -> `3.2` (evidence medium -> high, confidence 0.78)
+
+> EVIDENCE: "i've hated him for living instead of you" — Three snippets independently show sustained hatred, resentment, and emotional destabilization. Shortlist: 3.2 (negative emotions/distress), 7.1 (interpersonal non-romantic conflict), 4.4 (couple conflict/distance). 4.4 lost because no main-couple romantic relationship is indicated; the hatred is directed at a third party. 7.1 is a strong secondary because the confession is addressed to an antagonistic interpersonal dynamic. 3.2 wins as main because the dominant beat is the character's internal emotional state — years of hatred, imbalance, and buried reasons to despise — rather than an active confrontation scene. Stage08 axis_hint is no_hypothesis_signal and no romantic hypothesis is visible, so use_in_macro_axes=false. Theory watchlist true because the emotional confession pattern is interpretively interesting.
+
+**Topic 312 — Travis Brags Before The Rodeo**  
+`uncertain_interpretable` -> `noise` (evidence low -> low, confidence 0.62)
+
+> EVIDENCE: "you'll never find travis" — The three snippets share only the character name Travis; their contexts are unrelated (reunion anticipation, rodeo brag, threat). Keywords like 'elevator', 'wrists', 'tv', 'screen' contradict the rodeo label entirely, confirming this is a name-anchored residual cluster. Runner-up uncertain_interpretable lost because the incoherence stems from topic-model noise around a character name rather than a coherent-but-unnameable semantic domain. Runner-up 9.3 (banter/humor) lost because the snippets do not share a consistent register. is_noise=true is warranted.
+
+**Topic 319 — Confessing A Costly Mistake**  
+`4.5` -> `4.3` (evidence medium -> medium, confidence 0.72)
+
+> EVIDENCE: "i've made many mistakes and maybe i should have come back a year ago" — Three snippets converge on a character admitting a costly error with relational consequences. Shortlist: 4.3 (secrets/misunderstandings — past error withheld or unaddressed), 4.5 (reconciliation — confession as repair act), 4.4 (conflict — the mistake caused distance). 4.5 lost because no forgiveness, proposal, or explicit repair resolution occurs; the scene is the admission itself, not the outcome. 4.4 lost because no active argument or breakup threat is visible. 4.3 wins because the dominant function is disclosure of a hidden/unaddressed error that has shaped the relationship. trust_repair and secret_misunderstanding tags apply. Axis-bearing because the confession is hypothesis-relevant for H6 (conflict/miscommunication vs repair).
+
+**Topic 327 — Crouching Over A Fallen Figure**  
+`uncertain_interpretable` -> `7.3` (evidence low -> medium, confidence 0.65)
+
+> EVIDENCE: "the wings lifted and spread behind her" — This paranormal detail anchors the scene in a crisis/danger moment with supernatural elements. Shortlist: 7.3 (external crisis/danger), 7.2 (deliberate violence/threat), 4.6 (caretaking over fallen person). 7.2 lost because no deliberate aggressor or explicit threat act is visible — the crouching posture is ambiguous between protective and predatory. 4.6 lost because the scene reads as tense/dangerous rather than reassuring or caretaking. 10.1 is secondary for the paranormal creature vocabulary. No hypothesis-relevant romantic function is clearly visible, so use_in_macro_axes=false despite 7.3 being axis-bearing.
+
+**Topic 334 — Confessing Feelings After Three Hours**  
+`4.5` -> `4.1` (evidence medium -> medium, confidence 0.78)
+
+> EVIDENCE: "i've never felt this way before" — This is a direct early-relationship confession after a very short acquaintance, anchoring the scene in first-contact romantic setup (4.1). Runner-up 4.5 lost because this is not a reconciliation, proposal, or HEA commitment — it is an initial declaration of feeling at the very start of a relationship, not a repair or formal commitment act. Runner-up 2.1 lost because the snippet is verbal confession rather than erotic tension or charged physical desire. The third snippet about Caroline's cars adds relational context suggesting ongoing courtship logistics (4.2 secondary). The axis hint says no_hypothesis_signal but the snippet evidence clearly shows early romantic confession relevant to H1/H2, so use_in_macro_axes=true.
+
+**Topic 336 — Called Out For Being Distracted**  
+`uncertain_interpretable` -> `9.4` (evidence low -> medium, confidence 0.72)
+
+> EVIDENCE: "hey, man, you've been distracted all morning" — Snippets show characters observing or apologizing for preoccupation, with no visible subject matter for the distraction. Shortlist: 3.3 (ambivalence/internal conflict) lost because no relationship choice or competing desires are visible; uncertain_interpretable lost because the discourse pattern is nameable as a self-talk/interior-state register even if the cause is unknown. 9.4 covers fragmented inner monologue and stylistic markers of internal narration, which fits the repeated distraction-observation pattern. No hypothesis-relevant evidence visible, so macro false and watchlist false.
+
+**Topic 340 — Patience Tested Through Small Trials**  
+`uncertain_interpretable` -> `4.6` (evidence low -> medium, confidence 0.62)
+
+> EVIDENCE: "her patience throughout the meal with the girls never wavered, not with spilled drinks, sloppy faces" — This snippet shows active caretaking and emotional steadiness toward children, pointing to 4.6 (caretaking/emotional safety). Runner-up 3.1 lost because the beat is not resolved relief after strain but ongoing patient endurance. Runner-up 4.2 lost because the relational bonding function is not clearly courtship. Snippet 3 hints at restrained romantic longing toward a coworker ('christmas elf'), which adds a faint 2.1 undertone, but the dominant observable function across all three snippets is patient caretaking and resilience. 5.1 is secondary because snippet 2 centers children. Stage08 axis_hint is no_hypothesis_signal and no explicit romantic commitment or explicit sex is present, so use_in_macro_axes=false.
+
+**Topic 344 — Fighting His Instincts to Keep Her**  
+`4.6` -> `3.3` (evidence medium -> low, confidence 0.65)
+
+> EVIDENCE: "it goes against all of josh's instincts, but if it means he can keep his mate" — This fragment shows internal conflict between instinct and relational choice, pointing to 3.3 ambivalence. Shortlist: 3.3 (internal conflict suppressing instincts), 4.6 (caretaking/reassurance), 4.2 (ongoing bonding). Runner-up 4.6 lost because no active caretaking or reassurance act is visible; the focus is on Josh's internal suppression of instinct, not on comforting a partner. Runner-up 4.2 lost because the relational bonding is framed through internal conflict rather than shared activity. The 'mate' keyword flags paranormal_instinct. Snippets 2 and 3 show banter/humor (9.3 register) but do not override the dominant internal-conflict beat. 3.3 is exploratory-only, so use_in_macro_axes=false per boundary rules.
+
 
 ## Still-low evidence quality after re-run
 
-42 topics kept the same category and still report low evidence quality.
+54 topics kept the same category and still report low evidence quality.
 
 |   topic_id | label                                     | new_main                | new_uncertainty_reason                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------:|:------------------------------------------|:------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -379,3 +459,15 @@ Evidence-quote compliance: **100.0%** of new mappings open `mapping_reasoning` w
 |        240 | Unsure How to Offer Comfort               | 4.6                     |                                                                                                                                                                                                                                                                                                                                                                                           |
 |        241 | Calling Someone A Stubborn Idiot          | 1.6                     |                                                                                                                                                                                                                                                                                                                                                                                           |
 |        257 | Withholding An Answer                     | 9.4                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        268 | Vivid Colors Remarked Upon                | 1.6                     | Snippets show a character remarking on vivid colors and preserved bodies (possibly museum or archaeological context), but no romance-relevant thematic function — no desire, care, conflict, bonding, or danger — is visible. The topic is coherent as sensory observation but cannot be assigned to any specific taxonomy category.                                                      |
+|        276 | Asking For A Moment                       | 9.4                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        278 | Irritation Fading Into Distraction        | 3.3                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        295 | Comparing Sizes of Things                 | uncertain_interpretable | Snippets show size-comparison vocabulary (smaller, bigger, huge) applied to unspecified objects or spaces, but no thematic domain — character appearance, setting, object, or relationship function — can be reliably identified from the fragments alone.                                                                                                                                |
+|        317 | Putting on A Brave Face                   | 3.3                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        323 | Polite Address Under Distress             | 1.6                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        325 | Pouting and Pleading Remarks              | 9.3                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        330 | Curious About Her Cooking Skills          | 4.2                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        332 | First Time Inside A Grocery Store         | 4.2                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        351 | Warm Greeting Upon Return                 | 4.2                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        357 | Arguing Over The Local Club               | 7.1                     |                                                                                                                                                                                                                                                                                                                                                                                           |
+|        367 | Sorting Out Concert Tickets               | 4.2                     |                                                                                                                                                                                                                                                                                                                                                                                           |

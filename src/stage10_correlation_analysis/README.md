@@ -76,9 +76,9 @@ Two consequences are visible in that table and reported rather than hidden:
 
 Every axis is produced in **strict** (primary mapping only) and **generous** (primary 1.0 + secondary 0.5) variants; their agreement is checked in notebook 04 and again in notebook 08.
 
-## Known caveat: Radway functions are unmapped
+## Known caveat: Radway is mapped but not yet in the analysis frame
 
-All `radway_*` columns are null for call_49 — Stage09 stage 2 has not been run for this model — so the schema's `radway_weights` and any R1–R13 phase analysis are unavailable. `scripts/stage09/run_call49_rerun2.sh radway` is ready; see `results/reports/stage09/call49_rerun2_mapping_stability.md` for status.
+Radway stage 2 finished for call_49: `results/stage09_category_mapping/stage2_radway_functions/placeholder_v4_call49_rerun2/taxonomy_with_radway.json` (182 of 348 topics on R1–R13). The current `topic_lookup.parquet` and `book_analysis_frame.parquet` still come from the original taxonomy-only mapping, so `radway_*` columns and the schema's `radway_weights` are unused until a rebuild. Details: `results/reports/stage09/call49_rerun2_mapping_stability.md`.
 
 ## Dependencies
 

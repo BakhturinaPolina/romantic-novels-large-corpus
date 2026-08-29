@@ -98,11 +98,14 @@ run_radway() {
   echo "=== Stage09 stage 2: Radway R1-R13 ==="
   mkdir -p "$RADWAY_DIR"
   # --model-name is required: it otherwise defaults to Mistral-Nemo, not the stage-1 model.
+  # The runner's 220-token default is sized for Mistral-Nemo's terse answers; Claude spends
+  # that budget on the rationale and gets truncated mid-JSON, so raise it up front.
   "$PY" src/stage09_category_mapping/stage2_radway_functions/scripts/zeroshot_radway_openrouter.py \
     --taxonomy-json "$NEW_MAPPINGS" \
     --output-json "$RADWAY_DIR/taxonomy_with_radway.json" \
     --model-name "$MODEL" \
     --temperature 0.0 \
+    --max-tokens "${STAGE09_RADWAY_MAX_TOKENS:-900}" \
     --request-delay "$REQUEST_DELAY" \
     --no-snippets
 }
