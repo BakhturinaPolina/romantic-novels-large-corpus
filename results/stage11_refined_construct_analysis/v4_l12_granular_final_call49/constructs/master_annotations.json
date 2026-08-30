@@ -1523,7 +1523,7 @@
     "hea_code":null,
     "security_code":"S0",
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D0",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -1534,10 +1534,11 @@
     "secondary_id":"8.5",
     "secondary_name":"Movement, Transit & Spatial Transition",
     "proposed_constructs":[
-
+      "movement_transit_spatial_transition"
     ],
     "adjudication_actions":[
-      "H3:EXCLUDE_FROM_HYPOTHESIS"
+      "H3:EXCLUDE_FROM_HYPOTHESIS",
+      "H5:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -3832,24 +3833,26 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "individual_distress",
+      "internal_conflict",
+      "negative_emotions"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.9,
     "manual_review_required":false
   },
   {
@@ -3986,9 +3989,9 @@
       "cradled",
       "hovered"
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
@@ -3997,20 +4000,20 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -5495,24 +5498,25 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"1.1",
     "secondary_name":"Body Parts & Physical Reactions",
     "proposed_constructs":[
-
+      "individual_distress",
+      "physical_distress_response"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.7,
     "manual_review_required":false
   },
   {
@@ -6162,7 +6166,7 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -6173,13 +6177,13 @@
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.05,
     "manual_review_required":false
   },
   {
@@ -7941,31 +7945,31 @@
       "choked",
       "sidewalk"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -8588,24 +8592,24 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.9,
     "manual_review_required":false
   },
   {
@@ -8898,25 +8902,26 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"audited",
+    "lexical_context_agreement":"H5",
+    "review_status":"manual_review",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"9.1",
     "secondary_name":"Dialogue Delivery & Speech Tags",
     "proposed_constructs":[
-
+      "emotional_expression_speech",
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.05,
+    "manual_review_required":true
   },
   {
     "topic_id":153,
@@ -10560,14 +10565,14 @@
       "warmth",
       "admit"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -10578,13 +10583,13 @@
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.55,
     "manual_review_required":false
   },
   {
@@ -10806,14 +10811,14 @@
       "warmed",
       "hissed"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -10824,13 +10829,14 @@
     "secondary_id":"10.3",
     "secondary_name":"Mystery, Suspense & Investigation",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "mystery_suspense_investigation"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.1,
     "manual_review_required":false
   },
   {
@@ -12771,31 +12777,31 @@
       "caused",
       "memories"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -12932,32 +12938,33 @@
       "occurred",
       "ability"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"7.3",
     "current_taxonomy_name":"Risk, Danger & External Crises",
     "secondary_id":"10.3",
     "secondary_name":"Mystery, Suspense & Investigation",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "suspense_investigation"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
+    "manual_review_required":true
   },
   {
     "topic_id":224,
@@ -14109,10 +14116,10 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H5",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
@@ -14120,13 +14127,15 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-
+      "emotional_turmoil",
+      "individual_distress",
+      "reconciliation_hope"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.35,
     "manual_review_required":false
   },
   {
@@ -14877,31 +14886,31 @@
       "climbing",
       "surrounding"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D0",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"7.3",
     "current_taxonomy_name":"Risk, Danger & External Crises",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -16021,14 +16030,14 @@
       "damp",
       "focused"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -16039,13 +16048,14 @@
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-
+      "emotional_safety_reassurance",
+      "individual_distress"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.35,
     "manual_review_required":false
   },
   {
@@ -16128,14 +16138,14 @@
       "escaped",
       "expect"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -16146,13 +16156,14 @@
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "social_circle_risk"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.05,
     "manual_review_required":false
   },
   {
@@ -16193,32 +16204,33 @@
       "admit",
       "shock"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"MIXED",
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H5",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "individual_distress",
+      "relational_darkness"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":286,
@@ -17885,24 +17897,26 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "individual_distress",
+      "internal_conflict",
+      "negative_emotions"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -18025,14 +18039,14 @@
       "sending",
       "screen"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
@@ -18043,13 +18057,14 @@
     "secondary_id":"10.3",
     "secondary_name":"Mystery, Suspense & Investigation",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "risk_suspense"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -18182,17 +18197,17 @@
       "amusement",
       "growl"
     ],
-    "main_couple_prob":0.1,
-    "non_couple_prob":0.8,
-    "unclear_prob":0.1,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H5",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"7.3",
@@ -18200,13 +18215,14 @@
     "secondary_id":"10.1",
     "secondary_name":"Paranormal & Immortal Beings",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "paranormal_threat"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.25,
     "manual_review_required":false
   },
   {
@@ -18579,32 +18595,33 @@
       "ribs",
       "upset"
     ],
-    "main_couple_prob":0.33,
-    "non_couple_prob":0.33,
-    "unclear_prob":0.34,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"7.3",
     "current_taxonomy_name":"Risk, Danger & External Crises",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-
+      "external_danger_crisis",
+      "family_kinship_risk"
     ],
     "adjudication_actions":[
-
+      "H5:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.15,
+    "manual_review_required":true
   },
   {
     "topic_id":336,
@@ -20324,24 +20341,26 @@
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
-    "darkness_code":"UNKNOWN",
+    "darkness_code":"D4",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "individual_distress",
+      "internal_conflict",
+      "negative_emotions"
     ],
     "adjudication_actions":[
-
+      "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.8,
     "manual_review_required":false
   },
   {
