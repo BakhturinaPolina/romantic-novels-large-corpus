@@ -520,35 +520,6 @@
 
 ---
 
-## Topic 45 — Reassured Everything Will Be Fine
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
-
-> we’ll be ok.” “
-
-> nadines : you’ll be ok?
-
-> ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great.
-
-> *(CELL_D, tertile=middle)* I'm fine," Amber replied quietly. "
-
-> *(CELL_D, tertile=begin)* Your wound…'" "I'm fine."
-
-> *(CELL_B, tertile=middle)* Is everything okay?” “
-
-### Pass A/B/C
-
-- **A lexical:** `S1`
-  - Main keywords ('fine, okay, everything, right, honey, alright') are classic reassurance utterances. KeyBERT reinforces with 'assured, assure, smoothly, incredibly' — all signalling that a worried party is being calmed. POS 'problems, sir, lord' indicate a concern being addressed. MMR 'assure, assured, acknowledged, smoothly, problems' confirm the pattern of one party reassuring another that difficulties are under control. No material provision or status display is present; the entire cluster functions as verbal emotional reassurance.
-- **B contextual:** `S1`
-  - The overwhelming majority of sentences are reassurances of wellbeing ('I'm fine', 'Are you okay?', 'It's going to be all right') — verbal exchanges that function to provide or seek emotional reassurance about safety and welfare, coding as S1 (emotional_reassurance). One sentence ('Your wound…I'm fine') has a slight illness/injury connotation (S6), but the response still functions as emotional reassurance rather than practical care. S1 accounts for ~95% of the topic, well above the 70% threshold.
-- **C adjudicate:** `S1`
-  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code; no material or status/appearance function is present.
-- **Action:** KEEP
-
----
-
 ## Topic 52 — Talking About Dogs and Animals
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
@@ -993,43 +964,6 @@
 
 ---
 
-## Topic 173 — Waiting For Him to Wake
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S0 (norm: S0)
-
-> it’s after him so you’ll just have to wait until he wakes up to get your answer.”
-
-> it'll put him to sleep."
-
-> yeah, i guess i’ll have to wait and see when he wakes up.
-
-> *(CELL_A, tertile=end)* Could he count on not waking him when he lifted him from that warm bed?
-
-> *(CELL_A, tertile=middle)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
-
-> *(CELL_A, tertile=end)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
-
-> *(CELL_A, tertile=end)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
-
-> *(CELL_D, tertile=middle)* He looked fresh, rejuvenated, as though their little fling from last night hadn't permanently affected his energy.
-
-> *(CELL_D, tertile=middle)* He used to jog the property's perimeter every morning, before breakfast.
-
-> *(CELL_B, tertile=middle)* He's sleeping for longer periods of time at night now,” Jacob said. “
-
-### Pass A/B/C
-
-- **A lexical:** `S0`
-  - All four keyword lists describe sleep states and physical/temporal context (sleep, asleep, wake, night, bedside, departure, temperature, panting, drifted). There is no lexical signal of a security-provision function — no one is reassuring, protecting, providing, or displaying status. The words describe a scene of rest/waking, not a security behavior.
-- **B contextual:** `S0`
-  - All sentences in Topic 173 describe sleep states, wakefulness, fatigue, and monitoring of sleep patterns. None of these sentences perform a security function — they do not provide emotional reassurance, material provision, protection, status display, or any other security-relevant act. The topic is purely descriptive of physical sleep/rest states and characters observing or waiting for others to sleep. All sentences are off-target (S0).
-- **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy metadata places this under Temporal Framing as secondary, with Emotional Safety as primary — but the topic itself does not perform a security function; it frames time/seasons narratively. No security work is being done, so S0 is confirmed. The S1 (emotional_reassurance) signal from the taxonomy label is insufficient to override S0 when the topic content is primarily temporal/structural rather than reassurance-delivering.
-- **Action:** KEEP
-
----
-
 ## Topic 175 — Gentleman Offers Steadying Support
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
@@ -1120,39 +1054,6 @@
 - **C adjudicate:** `S0`
   - Pass A/B lexical consensus landed on S2 (belonging), but the contextual dominant is S0 (off_target). The taxonomy placement under 4.5 Reconciliation/Commitments/HEA and 5.1 Family/Kinship confirms this topic is primarily about narrative resolution and relational repair rather than a discrete security-provision function. Reconciliation and HEA arcs describe plot outcomes, not a character performing emotional reassurance (S1), belonging-conferral (S2), or commitment-security (S4) as a functional act. The S2 lexical signal likely arose from surface co-occurrence of family/togetherness vocabulary, but function-over-object adjudication finds no single security function being enacted. S0 is the correct resolution.
 - **Action:** REINTERPRET
-
----
-
-## Topic 224 — Encouraging Words From An Angel
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S0 (norm: S0)
-
-> you’ve got this, angel, take it to the house.”
-
-> i’ll come back, angel.
-
-> because i’m thinking i’ll have a hard time finding another angel to handle it.”
-
-> *(CELL_A, tertile=middle)* I most certainly do think the great evil knows about Gabriel."
-
-> *(CELL_A, tertile=begin)* By the gods,” Val hissed as he and Gabriel came upon the creature. “
-
-> *(CELL_B, tertile=begin)* Once, as I stood on the cliffs trying to understand the power I held, trying to comprehend why I would ever want to send my voice a thousand miles away on the wind, he’d told me that I looked like an angel blessed by the Almighty.
-
-> *(CELL_B, tertile=middle)* I took a pleasant interlude of imagining myself nibbling on Evangeline’s ass.
-
-> *(CELL_B, tertile=end)* With Evangeline beneath me I now knew what I’d felt wasn’t even close.
-
-### Pass A/B/C
-
-- **A lexical:** `S0`
-  - Main keywords are supernatural/mythological labels (angel, archangel, fallen, wings, guardian) with no security function attached. KeyBERT, POS, and MMR lists contain abstract behavioral/structural terms (behavior, ability, practice, structure, task, tv, dislike, heal) that do not map to any S1–S16 security provision. No emotional reassurance, material provision, or status display is signaled by any of the four keyword sets.
-- **B contextual:** `S0`
-  - The topic clusters around the word 'angel' used as a metaphor or name, with most sentences being narrative/plot references to supernatural entities or character names (S0 — no security function). A handful of sentences use 'angel' to describe a character's physical appearance/beauty (S13 — appearance/grooming). One sentence expresses faith/trust in named characters (S3). No single non-S0 code reaches 70%, but S0 dominates at 75%.
-- **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant agree on S0. The taxonomy flags Emotional Safety/Reassurance (which would map to S1) and Promise/Vow speech acts (which could touch S4), but the adjudication instruction is to resolve to the consensus code when passes align. The topic does not perform a clear security function in the romance-novel security-provision sense — promise/vow speech acts and general emotional safety framing are not themselves security-provision behaviors unless anchored to a specific reassurance or commitment act. S0 is the correct resolution; no reinterpretation or split is warranted.
-- **Action:** KEEP
 
 ---
 
@@ -1624,31 +1525,37 @@
 
 ---
 
-## Topic 160 — Watching Movies Together
+## Topic 193 — Nurse Arranged After Hospital Release
 
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** S0 (norm: S0)
 
-> fine, but i’ll be watching.” “
+> and you’ll both stay here, at caleb’s?” “
 
-> we’ll watch him closely for any reaction.” “
+> i'll arrange for a nurse to come to the house when they release caleb.
 
-> we’ve been watching movies.”
+> twenty-three caleb y ou ignore me, and i’ll ignore you .
 
-> *(CELL_B, tertile=begin)* We need to record it in the next fortnight if we're going to make our launch date.
+> *(CELL_B, tertile=begin)* Kayla points to me, like she can't figure out who Gavin's talking about.
 
-> *(CELL_D, tertile=begin)* But you also may have reason to keep me from watching too closely.” “
+> *(CELL_A, tertile=begin)* In any case, I’m going to need to return myself to help out because Ramsey will be busy with Chloe and the baby,” he continued. “
 
-> *(CELL_D, tertile=begin)* You will watch them for seven days, Arthur, and then come to me.
+> *(CELL_A, tertile=middle)* After numerous brushes with the law and butting heads with the parents of a young lady who didn’t want him to be a part of their daughter’s life, Dillon had convinced Bane to get his life together.
+
+> *(CELL_A, tertile=end)* This was September, and Chloe was due to deliver in November, which meant Callum would be leaving Denver a few months after that.
+
+> *(CELL_A, tertile=middle)* Dillon and Ramsey did an awesome job and I know for sure we were a handful at times, some of us more than others.”
+
+> *(CELL_A, tertile=middle)* From what Callum had heard, Bane had been only eight when his parents had been killed.
 
 ### Pass A/B/C
 
 - **A lexical:** `S0`
-  - All keyword lists center on media consumption (movies, film, TV, Disney, Hollywood, watching) and generic descriptors (quality, surroundings, temperature, various). No security function—emotional, material, or status—is performed by these cues. The topic describes leisure viewing activity, not a security-provision behavior.
+  - All four keyword lists are dominated by character names (caleb, gage, jeremiah, conrad, mica), dialogue/interaction verbs (said, texting, ignore, went, fooled, admitted, speaking, prodded, acknowledge), and social-reaction nouns (embarrassment, stares, explanation, evidence). None of these cues point to a security-provision function — no emotional reassurance, no material provision, no status display. The cluster appears to describe a conversational or interpersonal scene without performing any identifiable security work.
 - **B contextual:** `S0`
-  - Topic 160 clusters around watching, television, entertainment, theater, and performance. None of the sentences perform a security function (emotional reassurance, material provision, protection, status display, etc.). The content is entirely about observation, media, and spectacle — off-target for security coding.
+  - The large majority of sentences are conversational fragments, character name references, or narrative scene-setting with no security function (S0). Two sentences reference care during illness/pregnancy (S6: Chloe and the baby). Three sentences carry emotional reassurance or emotional support themes (S1: Dillon convincing Bane, Katelyn's presence for support, Brody's emotional necessity). One sentence references practical everyday care (S5: Dillon and Ramsey doing an awesome job raising them). S0 dominates at ~70%.
 - **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy placement (4.2 Ongoing Courtship & Everyday Relational Bonding; secondary 8.2 Public, Travel & Leisure Spaces) describes romantic interaction and social bonding in leisure contexts, but does not perform a discrete security function (emotional reassurance, material provision, status display, etc.). Courtship and everyday bonding are relational processes rather than security-provision acts, so S0 is the correct and most specific code. No free-form labels were introduced in prior passes requiring remapping.
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy flags Emotional Safety / Family-Kinship, which could suggest S1 or S2, but without topic content showing a clear security function being performed, the convergent S0 verdict from Pass A/B holds. Taxonomy metadata alone is insufficient to override a double-S0 consensus; no security-provision signal is present to warrant reinterpretation toward S1 or S2.
 - **Action:** KEEP
 
 ---
@@ -1682,32 +1589,36 @@
 
 ---
 
-## Topic 260 — Crowd Goes Wild For Him
+## Topic 224 — Encouraging Words From An Angel
 
-- **Taxonomy:** 8.2 — Public, Travel & Leisure Spaces
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** S0 (norm: S0)
 
-> he played crazier than i’ve ever seen him, and from the way the crowd was going insane with cheering around me, cam played even crazier than anyone had ever seen him play, ever!
+> you’ve got this, angel, take it to the house.”
 
-> but it's a madness i've had all my life.
+> i’ll come back, angel.
 
-> you see, i’ve gone and done something a little crazy.
+> because i’m thinking i’ll have a hard time finding another angel to handle it.”
 
-> *(CELL_B, tertile=end)* He was going to drive himself insane if he didn't get out of the apartment.
+> *(CELL_A, tertile=middle)* I most certainly do think the great evil knows about Gabriel."
 
-> *(CELL_D, tertile=middle)* Terri swallowed thickly wondering if she really was as crazy as Joel accused her of being.
+> *(CELL_A, tertile=begin)* By the gods,” Val hissed as he and Gabriel came upon the creature. “
 
-> *(CELL_C, tertile=middle)* He has just enough training to make him totally freak out every single day.” “
+> *(CELL_B, tertile=begin)* Once, as I stood on the cliffs trying to understand the power I held, trying to comprehend why I would ever want to send my voice a thousand miles away on the wind, he’d told me that I looked like an angel blessed by the Almighty.
+
+> *(CELL_B, tertile=middle)* I took a pleasant interlude of imagining myself nibbling on Evangeline’s ass.
+
+> *(CELL_B, tertile=end)* With Evangeline beneath me I now knew what I’d felt wasn’t even close.
 
 ### Pass A/B/C
 
 - **A lexical:** `S0`
-  - Main keywords (crazy, insane, madness, craziness, going, think) describe mental/emotional states or colloquial expressions of disbelief, not a security-provision function. POS and MMR terms (indication, equal, result, chuckle, fault, crowd, officially, proved, tasted, appreciate) are generic cognitive/social/evaluative words with no identifiable security function. No keyword cluster points to emotional reassurance, material provision, status display, or any other S1–S16 category.
+  - Main keywords are supernatural/mythological labels (angel, archangel, fallen, wings, guardian) with no security function attached. KeyBERT, POS, and MMR lists contain abstract behavioral/structural terms (behavior, ability, practice, structure, task, tv, dislike, heal) that do not map to any S1–S16 security provision. No emotional reassurance, material provision, or status display is signaled by any of the four keyword sets.
 - **B contextual:** `S0`
-  - All sentences in this topic cluster around colloquial uses of 'crazy,' 'nuts,' 'freak,' and related terms describing mental states, erratic behavior, or informal exclamations. None of the sentences perform a security function (emotional reassurance, material provision, status display, etc.). They are off-target for the security-function coding scheme.
+  - The topic clusters around the word 'angel' used as a metaphor or name, with most sentences being narrative/plot references to supernatural entities or character names (S0 — no security function). A handful of sentences use 'angel' to describe a character's physical appearance/beauty (S13 — appearance/grooming). One sentence expresses faith/trust in named characters (S3). No single non-S0 code reaches 70%, but S0 dominates at 75%.
 - **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy places this topic in Public/Travel/Leisure Spaces with a secondary tag of Exercise/Movement/Physical Activity. Neither category performs a security function (emotional, material, or status/appearance) as defined by the codebook. No security construct is present, so the topic should be excluded from the hypothesis-testing corpus.
-- **Action:** EXCLUDE_FROM_HYPOTHESIS
+  - Both lexical consensus and contextual dominant agree on S0. The taxonomy flags Emotional Safety/Reassurance (which would map to S1) and Promise/Vow speech acts (which could touch S4), but the adjudication instruction is to resolve to the consensus code when passes align. The topic does not perform a clear security function in the romance-novel security-provision sense — promise/vow speech acts and general emotional safety framing are not themselves security-provision behaviors unless anchored to a specific reassurance or commitment act. S0 is the correct resolution; no reinterpretation or split is warranted.
+- **Action:** KEEP
 
 ---
 
@@ -1740,44 +1651,29 @@
 
 ---
 
-## Topic 293 — Admitting Jealousy Out Loud
+## Topic 305 — Confessing A Lifelong Regret
 
-- **Taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **Code:** S1 (norm: S1)
-- **Evidence:** exhaustive packet
 
-> the concept of jealousy is foreign to them.
+> i know that now, and i’ll go to my grave regretting what i did to you.” “
 
-> but this jealousy of yours is gonna ruin what you’ve got with j.d.” “i know.” “
+> come on in, you’ll no doubt regret it.
 
-> we’ve been around the markets and —’ as she enthused away, i couldn’t help but feel jealous.
+> you’ll regret that.’ ‘
 
-> should i be jealous of this cayden?”
+> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
 
-> *(CELL_B, tertile=middle)* I've always maintained that a little bit of jealousy looks good on a man. "
-
-> *(CELL_B, tertile=end)* Well, of course I'm jealous," I frowned, poking him in the chest. "
-
-> *(CELL_B, tertile=end)* She was also extremely irate over the fact that her boyfriend was using me to make her jealous—without my permission, as I've told you a couple of times.
-
-> *(CELL_B, tertile=end)* I'm flattered that you're jealous, but you should know by now that no other woman could begin to compare with you.
-
-> *(CELL_B, tertile=end)* This is not arrogance talking, this is not jealousy, it is simply a matter of facts."
-
-> *(CELL_B, tertile=middle)* I debated staying where I was, standing firm for ethical reasons, but the thought that she'd be in the closed, womb-like confines of the trailer alone with Raphael was enough to spike my jealousy count off the chart.
-
-> *(CELL_B, tertile=begin)* Not to mention you repeatedly batted your eyelashes at me in an obvious attempt to make him jealous.
-
-> *(CELL_B, tertile=middle)* I didn't mind a little bit of a possessive attitude, but he was taking things a bit too far. "
+> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
 
 ### Pass A/B/C
 
 - **A lexical:** `S1`
-  - All four keyword lists converge on internal affective states: 'jealous/jealousy/jealously', 'irrational', 'twinge', 'pang', 'emotion' (Main); 'attracted', 'upset', 'emotional', 'assured' (KeyBERT); 'emotional', 'upset', 'reaction', 'wound' (POS); 'stirred', 'emotional', 'upset', 'wound' (MMR). The dominant semantic field is the experience and management of jealousy as an emotional threat to relational security, which maps directly to S1 (emotional reassurance) — the need to soothe or resolve destabilising feelings within a relationship. No material or status cues are present.
+  - All four keyword lists centre on internal emotional states (regret, fears, upset, embarrassing) and communicative acts aimed at managing those states (assure, admit, handled, fumbled). The cluster signals a character seeking or providing reassurance about a past decision or remark — classic emotional-reassurance security function. No material, housing, money, or status/appearance cues are present.
 - **B contextual:** `S1`
-  - The overwhelming majority of sentences revolve around jealousy as an emotional state within romantic relationships — expressing, detecting, managing, or reacting to jealousy between partners or rivals. This is squarely emotional reassurance/insecurity territory (S1). BOOK_001_12 references feeling superior to women, which is more of a general attitude/power dynamic not clearly doing security work, coded S0. BOOK_008_7 references people being envious of the couple's appearance/status while walking together, which edges toward S12 (status display), but the primary topic remains S1 jealousy. The dominant code is S1 at well above 70%.
+  - The overwhelming majority of sentences express emotional states of regret, remorse, or reassurance about past actions and feelings — all functioning as emotional reassurance or processing of emotional distress (S1). A smaller subset references regret about commitment decisions such as marriage or a life choice, pointing to commitment security (S4). A few sentences are too vague or off-topic to carry a security function (S0). S1 exceeds 70% and is the dominant code.
 - **C adjudicate:** `S1`
-  - Lexical and contextual passes both converge on S1. Jealousy and possessive conflict (Taxonomy 4.7) functions primarily as a demand for emotional reassurance — the jealous/possessive partner is seeking confirmation of exclusive emotional attachment and fidelity. The secondary taxonomy (4.4 Conflict, Distance & Breakup Threats) reinforces this: threats of distance or breakup are leverage to extract reassurance of commitment and emotional priority. No material or status/appearance security function is primary here. S1 is the most specific applicable code; no split or reinterpretation is warranted.
+  - Lexical consensus and contextual dominant both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA with a secondary of Negative Emotions & Distress is fully consistent with S1: these narrative moments centre on soothing distress, reaffirming emotional bonds, and restoring felt security after conflict or rupture. No material or status/appearance function is implicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
 - **Action:** KEEP
 
 ---
