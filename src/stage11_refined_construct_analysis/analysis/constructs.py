@@ -51,10 +51,10 @@ _CODE_ALIASES: Dict[str, str] = {
     "PROTECTION": "H4_5",
     "EXTERNAL_PROTECTION": "H4_5",
     "REASSURANCE": "H4_1",
-    "JEALOUSY": "H4_7",
-    "CLAIMING": "H4_8",
+    "JEALOUSY": "H4_8",
+    "CLAIMING": "H4_7",
     "CONTROL": "H4_9",
-    "COERCIVE_CONTROL": "H4_10",
+    "COERCIVE_CONTROL": "H4_9",
     "4.6.1": "H4_1",
     "H4.6.1": "H4_1",
     "P4.6.1": "H4_1",
@@ -67,24 +67,27 @@ _CODE_ALIASES: Dict[str, str] = {
     "EXTERNAL_DANGER": "D3",
     "INDIVIDUAL_DISTRESS": "D4",
     "TENDERNESS": "D5",
-    # H6
+    # H6 — frozen h6_arc.yaml: ARC_1–4 falling, ARC_5–8 rising, ARC_9 external
     **{f"ARC_{i}": f"ARC_{i}" for i in range(11)},
     "CONFLICT": "ARC_2",
     "MAIN_COUPLE_CONFLICT": "ARC_2",
-    "OBSTACLE": "ARC_8",
-    "EXTERNAL_PLOT_CONFLICT": "ARC_8",
+    "OBSTACLE": "ARC_9",
+    "EXTERNAL_PLOT_CONFLICT": "ARC_9",
     "HIDDEN INFORMATION": "ARC_1",
     "HIDDEN_INFORMATION": "ARC_1",
     "SECRET": "ARC_1",
     "MISUNDERSTANDING": "ARC_1",
     "SEPARATION": "ARC_3",
     "BREAKUP": "ARC_3",
-    "DISCLOSURE": "ARC_4",
-    "REVELATION": "ARC_4",
-    "CONFLICT RESOLUTION": "ARC_5",
-    "CONFLICT_RESOLUTION": "ARC_5",
-    "REASSURANCE_ARC": "ARC_6",
-    "RESTORED_TRUST": "ARC_6",
+    "RELATIONSHIP_CAUSED_DISTRESS": "ARC_4",
+    "DISCLOSURE": "ARC_5",
+    "REVELATION": "ARC_5",
+    "CONFLICT RESOLUTION": "ARC_6",
+    "CONFLICT_RESOLUTION": "ARC_6",
+    "REPAIR_ARC": "ARC_6",
+    "REASSURANCE_ARC": "ARC_7",
+    "RESTORED_TRUST": "ARC_7",
+    "MUTUAL_COMMITMENT_FINAL_PAYOFF": "ARC_8",
     "FALLING": "ARC_2",
     "REFINED_FALLING": "ARC_2",
     "RISING": "ARC_5",
@@ -92,7 +95,7 @@ _CODE_ALIASES: Dict[str, str] = {
     "INNER_CONFLICT": "ARC_2",
     "INTERNAL STRUGGLE": "ARC_2",
     "INTERNAL_STRUGGLE": "ARC_2",
-    "ANTAGONIST": "ARC_8",
+    "ANTAGONIST": "ARC_9",
     "INSTIGATOR": "ARC_2",
     "CATALYST": "ARC_2",
     "COMPLICATING FACTOR": "ARC_2",
@@ -174,19 +177,19 @@ CODE_TO_RAX: Dict[str, List[str]] = {
     "S7": ["RAX_physical_protection"],
     "S8": ["RAX_material_provision"],
     "S9": ["RAX_housing_security"],
-    "S10": ["RAX_economic_security"],
-    "S11": ["RAX_institutional_support"],
+    "S10": ["RAX_economic_dependency"],
+    "S11": ["RAX_practical_care"],
     "S12": ["RAX_status_display"],
-    "S13": ["RAX_status_display"],  # appearance as display comparator
-    "S14": ["RAX_material_provision"],
-    "S15": ["RAX_status_display"],
+    "S13": ["RAX_appearance_grooming"],
+    "S14": ["RAX_gift_romance_token"],
+    "S15": ["RAX_workplace_status"],
     # H4 protection / possession
     "H4_1": ["RAX_emotional_reassurance", "RAX_emotional_security"],
     "H4_2": ["RAX_practical_care"],
     "H4_3": ["RAX_material_provision"],
-    "H4_4": ["RAX_medical_care"],
-    "H4_5": ["RAX_external_protection", "RAX_physical_protection"],
-    "H4_6": ["RAX_external_protection", "RAX_physical_protection"],
+    "H4_4": ["RAX_emotional_reassurance"],
+    "H4_5": ["RAX_external_protection"],
+    "H4_6": ["RAX_external_protection"],
     "H4_7": ["RAX_possessive_claiming"],
     "H4_8": ["RAX_possessive_claiming"],
     "H4_9": ["RAX_coercive_control"],
@@ -199,17 +202,29 @@ CODE_TO_RAX: Dict[str, List[str]] = {
     "D3": ["RAX_external_danger_crisis"],
     "D4": ["RAX_individual_distress"],
     "D5": ["RAX_tenderness_core"],
-    # H6 arc (also used in W_tkr)
+    # H6 arc (also used in W_tkr): ARC_1–4 falling, ARC_5–8 rising, ARC_9 external
     "ARC_1": ["RAX_arc_falling"],
     "ARC_2": ["RAX_arc_falling"],
     "ARC_3": ["RAX_arc_falling"],
-    "ARC_4": ["RAX_arc_rising"],
+    "ARC_4": ["RAX_arc_falling"],
     "ARC_5": ["RAX_arc_rising"],
     "ARC_6": ["RAX_arc_rising"],
     "ARC_7": ["RAX_arc_rising"],
-    "ARC_8": ["RAX_external_plot_conflict"],
+    "ARC_8": ["RAX_arc_rising"],
     "ARC_9": ["RAX_external_plot_conflict"],
 }
+
+# Codes treated as off-target / non-construct for W_tk inclusion
+OFF_TARGET_CODES: Set[str] = {
+    "I0", "H2_0", "H2_7", "H2_8", "S0", "S16", "H4_0", "H4_13", "D0", "D6",
+    "ARC_0", "ARC_10", "MIXED", "UNKNOWN",
+}
+
+# H5 tenderness bridge: H1/H4 codes reused into RAX_tenderness_core
+H5_TENDERNESS_H1_CODES: Set[str] = {"I1", "I2", "I3", "I7"}
+H5_TENDERNESS_H4_CODES: Set[str] = {"H4_1", "H4_2", "H4_4", "H4_12"}
+# Stage 09 leaves kept as relational-darkness anchors (skip_full_relabel)
+H5_DARKNESS_ANCHOR_LEAVES: Set[str] = {"7.2", "4.4"}
 
 # Composite definitions (sums of atoms; built after atom columns exist)
 COMPOSITE_DEFS: Dict[str, List[str]] = {
@@ -229,10 +244,15 @@ COMPOSITE_DEFS: Dict[str, List[str]] = {
         "RAX_emotional_security",
         "RAX_commitment_security",
     ],
+    # Material side = mutual provision only (S8/S9); exclude S10 dependency & S14 gifts
     "RAX_h3_material_side": [
         "RAX_material_provision",
-        "RAX_economic_security",
         "RAX_housing_security",
+    ],
+    "RAX_social_presentation": [
+        "RAX_status_display",
+        "RAX_appearance_grooming",
+        "RAX_workplace_status",
     ],
     "RAX_h4_protection_side": ["RAX_external_protection"],
     "RAX_h4_possession_side": [

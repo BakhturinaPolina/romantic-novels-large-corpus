@@ -38,6 +38,18 @@ assert freeze.get("frozen") is True, "Dictionary must be frozen via 07_build_mas
 
 dominance = float(cfg.section("weights", "strict_dominance"))
 print(f"Strict dominance threshold: {dominance}")
+print(f"Weight design: {freeze.get('weight_design', 'legacy')}")
+cov = freeze.get("construct_coverage") or nh.load_construct_coverage(cfg)
+if cov:
+    ratios = pd.DataFrame(
+        [
+            {"ratio": k, **{kk: vv for kk, vv in v.items() if kk != "topic_ids"}}
+            for k, v in (cov.get("ratios") or {}).items()
+        ]
+    )
+    if not ratios.empty:
+        display(ratios)
+        ctx.save_table(ratios, "construct_ratio_gates")
 
 # %% [markdown]
 # ## Weight matrices

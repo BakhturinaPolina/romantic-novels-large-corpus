@@ -127,6 +127,43 @@ def load_freeze(cfg: Stage11Config) -> Dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def load_construct_coverage(cfg: Stage11Config) -> Dict[str, Any]:
+    """Measurement gates written by pipeline 07 (`construct_coverage.json`)."""
+    path = cfg.output_path("constructs_dir") / "construct_coverage.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    freeze = load_freeze(cfg)
+    return freeze.get("construct_coverage") or {}
+
+
+def gate_for_feature(coverage: Dict[str, Any], feature: str) -> str:
+    """Return unmeasurable | thin | viable | unknown for a RAX/RLR/composite name."""
+    if not coverage:
+        return "unknown"
+    ratios = coverage.get("ratios") or {}
+    if feature in ratios:
+        return str(ratios[feature].get("gate") or "unknown")
+    composites = coverage.get("composites") or {}
+    if feature in composites:
+        return str(composites[feature].get("gate") or "unknown")
+    atoms = coverage.get("atoms") or {}
+    if feature in atoms:
+        return str(atoms[feature].get("gate") or "unknown")
+    # H6 deltas / RARC: use rising+falling composite atoms if present
+    if feature in ("RARC", "DELTA_rising", "DELTA_falling"):
+        rising = (atoms.get("RAX_arc_rising") or {}).get("n_topics", 0)
+        falling = (atoms.get("RAX_arc_falling") or {}).get("n_topics", 0)
+        if rising <= 0 or falling <= 0:
+            return "unmeasurable"
+        if rising <= 2 or falling <= 2:
+            return "thin"
+        return "viable"
+    # Known RAX_* with no coverage entry ⇒ no mapped topics
+    if feature.startswith("RAX_") or feature.startswith("RLR_"):
+        return "unmeasurable"
+    return "unknown"
+
+
 def load_frozen_inputs(cfg: Stage11Config) -> Dict[str, Any]:
     path = cfg.output_path("frozen_inputs")
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -219,3 +256,246 @@ def verdict(delta: float, lo: float, hi: float, gate: float = 0.11) -> str:
     if not (lo <= 0 <= hi):
         return "directional_only"
     return "null"
+
+
+def gated_verdict(
+    delta: float,
+    lo: float,
+    hi: float,
+    *,
+    measurement_gate: str = "viable",
+    effect_gate: float = 0.11,
+) -> str:
+    """Respect measurement gates before ordinary effect verdicts."""
+    if measurement_gate == "unmeasurable":
+        return "unmeasurable"
+    base = verdict(delta, lo, hi, effect_gate)
+    if measurement_gate == "thin":
+        return f"thin:{base}"
+    return base
+
+
+def test_axis(
+    frame: pd.DataFrame,
+    axis_name: str,
+    hypothesis: str,
+    *,
+    label: str = "",
+    tier_col: str = "rating_class",
+    tiers: Sequence[str] = ("low_rate", "mid_rate", "high_rate"),
+    high: str = "high_rate",
+    low: str = "low_rate",
+    quality: str = "rating_shrunk",
+    reach: str = "log_n_ratings",
+    controls: Optional[Sequence[str]] = None,
+    categorical: Optional[Sequence[str]] = None,
+    cluster: str = "author_id",
+    weight: Optional[str] = "reliability",
+    n_replicates: int = 400,
+    seed: int = 42,
+    measurement_gate: str = "viable",
+    effect_gate: float = 0.11,
+) -> Dict[str, Any]:
+    """Stage 10-style test_axis for refined constructs (no CLR required)."""
+    from src.stage10_correlation_analysis.analysis import effects as eff
+    from src.stage10_correlation_analysis.analysis import models as mdl
+    from src.stage10_correlation_analysis.analysis import tests as tst
+
+    controls = list(controls or ["log_pages", "n_sentences", "publication_year"])
+    categorical = list(categorical or ["genre_group"])
+    controls = [c for c in controls if c in frame.columns]
+    categorical = [c for c in categorical if c in frame.columns]
+
+    if axis_name not in frame.columns:
+        return {
+            "hypothesis": hypothesis,
+            "feature": axis_name,
+            "label": label or axis_name,
+            "status": "absent",
+            "measurement_gate": measurement_gate,
+            "verdict": "unmeasurable" if measurement_gate == "unmeasurable" else "absent",
+            "note": "column not present",
+        }
+
+    if measurement_gate == "unmeasurable":
+        return {
+            "hypothesis": hypothesis,
+            "feature": axis_name,
+            "label": label or axis_name,
+            "status": "unmeasurable",
+            "measurement_gate": measurement_gate,
+            "verdict": "unmeasurable",
+            "cliffs_delta": float("nan"),
+            "ci_low": float("nan"),
+            "ci_high": float("nan"),
+            "note": "zero or missing mapped topics",
+        }
+
+    tier_effect = eff.two_group_effects(
+        frame,
+        [axis_name],
+        tier_col,
+        high,
+        low,
+        n_replicates=n_replicates,
+        seed=seed,
+    )
+    trend = tst.compare_tier_trend(frame, [axis_name], tier_col, list(tiers))
+    omnibus = tst.kruskal_wallis(frame, [axis_name], tier_col, list(tiers))
+
+    predictor = axis_name
+    wcol = weight if weight and weight in frame.columns else None
+    quality_fit = mdl.fit_ols(
+        frame,
+        quality,
+        [predictor, *controls],
+        categorical=categorical,
+        cluster=cluster if cluster in frame.columns else None,
+        weights=wcol,
+        name=f"{axis_name}->quality",
+    )
+    reach_fit = mdl.fit_ols(
+        frame,
+        reach,
+        [predictor, *controls],
+        categorical=categorical,
+        cluster=cluster if cluster in frame.columns else None,
+        name=f"{axis_name}->reach",
+    )
+
+    def coefficient(fit):
+        row = fit.coefficients[fit.coefficients["term"] == predictor]
+        if row.empty:
+            return {}
+        row = row.iloc[0]
+        return {
+            "beta": float(row["coefficient"]),
+            "se": float(row["std_error"]),
+            "p": float(row["p_value"]),
+            "lo": float(row["ci_low"]),
+            "hi": float(row["ci_high"]),
+        }
+
+    q = coefficient(quality_fit)
+    r = coefficient(reach_fit)
+    te = tier_effect.iloc[0]
+    delta = float(te["cliffs_delta"])
+    lo = float(te["ci_low"])
+    hi = float(te["ci_high"])
+    return {
+        "hypothesis": hypothesis,
+        "feature": axis_name,
+        "label": label or axis_name,
+        "status": "tested",
+        "measurement_gate": measurement_gate,
+        "verdict": gated_verdict(
+            delta, lo, hi, measurement_gate=measurement_gate, effect_gate=effect_gate
+        ),
+        "cliffs_delta": delta,
+        "ci_low": lo,
+        "ci_high": hi,
+        "magnitude": te.get("magnitude"),
+        "epsilon_squared": float(omnibus.iloc[0]["epsilon_squared"]) if len(omnibus) else float("nan"),
+        "kw_p_value": float(omnibus.iloc[0]["p_value"]) if len(omnibus) else float("nan"),
+        "spearman_rho": float(trend.iloc[0]["spearman_rho"]) if len(trend) else float("nan"),
+        "quality_beta": q.get("beta", float("nan")),
+        "quality_se": q.get("se", float("nan")),
+        "quality_p": q.get("p", float("nan")),
+        "quality_ci_low": q.get("lo", float("nan")),
+        "quality_ci_high": q.get("hi", float("nan")),
+        "reach_beta": r.get("beta", float("nan")),
+        "reach_p": r.get("p", float("nan")),
+        "n_clusters": getattr(quality_fit, "n_clusters", float("nan")),
+        "note": "",
+    }
+
+
+def cell_code_stability(
+    cfg: Stage11Config,
+    *,
+    hypotheses: Sequence[str] = ("H1", "H2", "H3", "H4", "H5", "H6"),
+) -> pd.DataFrame:
+    """Per-topic cell code proportions from Pass B sentence_codes × packet cells."""
+    from collections import Counter
+
+    from src.stage11_refined_construct_analysis.audits.runner import load_evidence_packet
+    from src.stage11_refined_construct_analysis.evidence.blinding import unblind_cell
+
+    cell_key = load_cell_key(cfg)
+    meanings = (cell_key.get("meanings") if isinstance(cell_key, dict) else None) or {}
+    # Also accept flat {CELL_A: meaning} shape
+    if meanings and isinstance(next(iter(meanings.values()), None), dict):
+        meanings = cell_key.get("meanings") or {}
+    if not meanings:
+        meanings = cfg.section("evidence", "cell_meanings") or {}
+
+    rows: List[Dict[str, Any]] = []
+    for hyp in hypotheses:
+        b = load_audit_jsonl(cfg, hyp, "B")
+        if b.empty:
+            continue
+        for _, r in b.iterrows():
+            tid = int(r["topic_id"])
+            resp = r.get("response") or {}
+            if not isinstance(resp, dict):
+                resp = {}
+            sc = resp.get("sentence_codes") or []
+            if not isinstance(sc, list) or not sc:
+                continue
+            packet = load_evidence_packet(cfg, tid) or {}
+            sid_to_cell = {
+                str(s.get("sid")): str(s.get("cell"))
+                for s in (packet.get("contextual") or {}).get("sentences") or []
+                if s.get("sid") and s.get("cell")
+            }
+            by_cell: Dict[str, Counter] = {}
+            for item in sc:
+                if not isinstance(item, dict):
+                    continue
+                sid = str(item.get("sid") or "")
+                code = str(item.get("code") or "")
+                cell = sid_to_cell.get(sid)
+                if not cell or not code:
+                    continue
+                by_cell.setdefault(cell, Counter())[code] += 1
+
+            # Dominant per cell + high-prev high vs low comparison
+            cell_dom: Dict[str, str] = {}
+            cell_props: Dict[str, Dict[str, float]] = {}
+            for cell, ctr in by_cell.items():
+                total = sum(ctr.values()) or 1
+                props = {k: v / total for k, v in ctr.items()}
+                cell_props[cell] = props
+                cell_dom[cell] = max(props, key=props.get)
+
+            # Map CELL_* → meaning
+            meaning_dom: Dict[str, str] = {}
+            for cell, dom in cell_dom.items():
+                try:
+                    meaning = unblind_cell(cell, meanings)
+                except Exception:
+                    meaning = meanings.get(cell, cell)
+                meaning_dom[str(meaning)] = dom
+
+            hi_hi = meaning_dom.get("high_prevalence_high_tier")
+            hi_lo = meaning_dom.get("high_prevalence_low_tier")
+            differs = (
+                bool(hi_hi and hi_lo and hi_hi != hi_lo)
+                if (hi_hi and hi_lo)
+                else None
+            )
+            rows.append(
+                {
+                    "hypothesis": hyp,
+                    "topic_id": tid,
+                    "n_coded_sentences": sum(sum(c.values()) for c in by_cell.values()),
+                    "n_cells_with_codes": len(by_cell),
+                    "dominant_by_cell": json.dumps(cell_dom),
+                    "dominant_by_meaning": json.dumps(meaning_dom),
+                    "high_prev_high_tier_code": hi_hi,
+                    "high_prev_low_tier_code": hi_lo,
+                    "meaning_differs_high_prevalence": differs,
+                    "pass_b_dominant": resp.get("dominant_code") or r.get("code"),
+                }
+            )
+    return pd.DataFrame(rows)

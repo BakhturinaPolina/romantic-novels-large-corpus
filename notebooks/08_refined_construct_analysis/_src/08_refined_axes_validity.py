@@ -2,9 +2,10 @@
 # # 08 — Refined axes validity
 #
 # Build atomic constructs and test coverage / coherence **before** seeing outcomes.
-# Prefer components when composites disagree (same rule as Stage 10 NB05).
+# Measurement gates: ≥3 topics → viable; 1–2 → thin; 0 → unmeasurable.
 
 # %%
+import json
 import sys
 from pathlib import Path
 
@@ -33,6 +34,68 @@ display(manifest.sort_values("nonzero_books", ascending=False).head(40))
 ctx.save_table(manifest, "construct_coverage")
 
 # %% [markdown]
+# ## Measurement testability gates
+#
+# Ported from Stage 10 NB04: zero mapped topics → unmeasurable; one–two → thin;
+# three or more → viable. Primary ratios and headline atoms are gated before NB09.
+
+# %%
+coverage = nh.load_construct_coverage(cfg)
+assert coverage, "Run pipeline 07 first so construct_coverage.json exists"
+
+gate_rows = []
+for section, blob in (
+    ("ratio", coverage.get("ratios") or {}),
+    ("composite", coverage.get("composites") or {}),
+    ("atom", coverage.get("atoms") or {}),
+):
+    for name, info in blob.items():
+        gate_rows.append(
+            {
+                "level": section,
+                "feature": name,
+                "n_topics": info.get("n_topics")
+                if "n_topics" in info
+                else info.get("numerator_topics"),
+                "n_topics_den": info.get("denominator_topics"),
+                "gate": info.get("gate"),
+            }
+        )
+gates = pd.DataFrame(gate_rows).sort_values(["gate", "feature"])
+display(gates)
+ctx.save_table(gates, "measurement_gates")
+
+headline = [
+    "RLR_emotional_vs_explicit",
+    "RAX_h2_strict",
+    "RAX_h2_broad",
+    "RLR_emotional_vs_material_security",
+    "RAX_appearance_grooming",
+    "RAX_status_display",
+    "RAX_h4_protection_side",
+    "RLR_protection_vs_control",
+    "RLR_darkness_vs_tenderness",
+    "RAX_external_danger_crisis",
+    "RAX_relational_darkness",
+    "RAX_tenderness_core",
+    "RARC",
+]
+headline_gates = pd.DataFrame(
+    [
+        {
+            "feature": f,
+            "measurement_gate": nh.gate_for_feature(coverage, f),
+        }
+        for f in headline
+    ]
+)
+display(headline_gates)
+ctx.save_table(headline_gates, "headline_measurement_gates")
+print(
+    "Unmeasurable/thin axes must not be reported as ordinary null results in notebook 09."
+)
+
+# %% [markdown]
 # ## Atomic construct distributions (no outcome conditioning)
 
 # %%
@@ -52,6 +115,7 @@ summary = pd.DataFrame(
         "mean": [usable[c].mean() for c in atoms],
         "median": [usable[c].median() for c in atoms],
         "p90": [usable[c].quantile(0.9) for c in atoms],
+        "measurement_gate": [nh.gate_for_feature(coverage, c) for c in atoms],
     }
 ).sort_values("mean", ascending=False)
 display(summary.round(4))

@@ -266,6 +266,7 @@ def build_refined_frame(
                 "abs_leaf_4.5",
                 "abs_leaf_4.6",
                 "abs_leaf_4.7",
+                "abs_leaf_4.4",
                 "abs_leaf_7.2",
             )
         )

@@ -1,8 +1,12 @@
 # %% [markdown]
 # # 10 — Contextual validation (unblind)
 #
-# After annotations and axes are frozen, **unblind** sampling cells and inspect whether
-# the same construct means the same thing in high- vs low-rated books.
+# After annotations and axes are frozen, **unblind** sampling cells and test whether
+# the same topic performs the same function in high- vs low-rated books.
+#
+# Method: join Pass B `sentence_codes` to evidence-packet `sid→cell`, aggregate
+# per-cell code proportions, then compare high-prevalence/high-tier vs
+# high-prevalence/low-tier. No re-prompting; Pass B never saw ratings.
 
 # %%
 import json
@@ -32,45 +36,63 @@ cell_key = nh.load_cell_key(cfg)
 print(json.dumps(cell_key, indent=2)[:2000])
 ctx.save_markdown(json.dumps(cell_key, indent=2), "cell_key_unblinded")
 
-meanings = cfg.section("evidence", "cell_meanings")
-cell_tbl = pd.DataFrame(
-    [{"cell": k, "meaning": v} for k, v in meanings.items()]
-)
+meanings = cell_key.get("meanings") or cfg.section("evidence", "cell_meanings")
+cell_tbl = pd.DataFrame([{"cell": k, "meaning": v} for k, v in meanings.items()])
 display(cell_tbl)
 ctx.save_table(cell_tbl, "cell_meanings")
 
 # %% [markdown]
-# ## Construct × rating: code distributions from Pass B (now interpretable)
+# ## Cell-level code stability from stored sentence codes
 
 # %%
-# For each hypothesis, summarise Pass B dominant codes — cells were blinded during coding.
-rows = []
-for hyp in ("H1", "H2", "H3", "H4", "H5", "H6"):
-    b = nh.load_audit_jsonl(cfg, hyp, "B")
-    if b.empty:
-        continue
-    for _, r in b.iterrows():
-        resp = r.get("response") or {}
-        if not isinstance(resp, dict):
-            resp = {}
-        rows.append(
-            {
-                "hypothesis": hyp,
-                "topic_id": r.get("topic_id"),
-                "dominant_code": resp.get("dominant_code") or r.get("code"),
-                "mixed": resp.get("mixed_topic") or (str(r.get("code")) == "MIXED"),
-                "meaning_differs_across_cells": resp.get("meaning_differs_across_cells"),
-            }
+stability = nh.cell_code_stability(cfg)
+display(stability.head(20))
+ctx.save_table(stability, "pass_b_cell_stability_flags")
+
+if not stability.empty:
+    by_hyp = (
+        stability.groupby("hypothesis")
+        .agg(
+            n_topics=("topic_id", "nunique"),
+            n_with_both_high_prev=(
+                "meaning_differs_high_prevalence",
+                lambda s: int(s.notna().sum()),
+            ),
+            n_differs=(
+                "meaning_differs_high_prevalence",
+                lambda s: int((s == True).sum()),  # noqa: E712
+            ),
+            pct_differs=(
+                "meaning_differs_high_prevalence",
+                lambda s: float((s == True).mean()) if s.notna().any() else float("nan"),  # noqa: E712
+            ),
         )
-summary = pd.DataFrame(rows)
-if not summary.empty:
-    display(
-        summary.groupby(["hypothesis", "meaning_differs_across_cells"], dropna=False)
-        .size()
-        .rename("n")
         .reset_index()
     )
-    ctx.save_table(summary, "pass_b_cell_stability_flags")
+    display(by_hyp.round(4))
+    ctx.save_table(by_hyp, "cell_stability_by_hypothesis")
+
+    drifted = stability[stability["meaning_differs_high_prevalence"] == True]  # noqa: E712
+    if not drifted.empty:
+        show = drifted[
+            [
+                "hypothesis",
+                "topic_id",
+                "high_prev_high_tier_code",
+                "high_prev_low_tier_code",
+                "pass_b_dominant",
+            ]
+        ]
+        display(show)
+        ctx.save_table(show, "topics_with_high_prev_code_drift")
+    print(
+        f"Topics with comparable high-prevalence cells: "
+        f"{int(stability['meaning_differs_high_prevalence'].notna().sum())}; "
+        f"dominant-code drift: "
+        f"{int((stability['meaning_differs_high_prevalence'] == True).sum())}"  # noqa: E712
+    )
+else:
+    print("No sentence_codes × cell joins available.")
 
 # %% [markdown]
 # ## High vs low construct × high vs low rating (book-level)
@@ -85,8 +107,10 @@ constructs = [
         "RAX_explicit_sex",
         "RAX_h2_strict",
         "RAX_emotional_security",
+        "RAX_appearance_grooming",
         "RAX_status_display",
         "RAX_external_protection",
+        "RAX_external_danger_crisis",
         "RAX_relational_darkness",
         "RARC",
     )
@@ -116,7 +140,7 @@ ctx.save_table(cells, "construct_x_rating_cells")
 
 print(
     "Interpretive questions for close reading (use human_review packets):\n"
-    "- Is material provision in low-rated books mostly status expenditure?\n"
-    "- Does high-rated explicit content co-occur with more aftercare/negotiation?\n"
+    "- When a topic is strongly present, does its function match in high- vs low-rated books?\n"
+    "- Is appearance/grooming distinct from status display in both rating tiers?\n"
     "- Does 'protection' in low-rated books look more like control?"
 )

@@ -1,22 +1,458 @@
 {
   "run_id": "v4_l12_granular_final_call49",
   "n_topics": 348,
-  "n_audited": 135,
-  "n_manual_review": 38,
+  "n_audited": 53,
+  "n_manual_review": 14,
   "code_coverage": {
-    "intimacy_code": 98,
+    "intimacy_code": 3,
     "hea_code": 10,
-    "security_code": 82,
-    "care_protection_code": 32,
+    "security_code": 4,
+    "care_protection_code": 4,
     "darkness_code": 22,
     "arc_role": 29
+  },
+  "construct_coverage": {
+    "atoms": {
+      "RAX_appearance_grooming": {
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          18
+        ]
+      },
+      "RAX_arc_falling": {
+        "n_topics": 6,
+        "gate": "viable",
+        "topic_ids": [
+          129,
+          214,
+          265,
+          272,
+          285,
+          303
+        ]
+      },
+      "RAX_arc_rising": {
+        "n_topics": 4,
+        "gate": "viable",
+        "topic_ids": [
+          3,
+          85,
+          194,
+          237
+        ]
+      },
+      "RAX_coercive_control": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_coercive_sexuality": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_commitment_security": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_commitment_symbols": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_economic_dependency": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_emotional_intimacy": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_emotional_reassurance": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          1,
+          6
+        ]
+      },
+      "RAX_emotional_security": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          1,
+          6
+        ]
+      },
+      "RAX_erotic_escalation": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_explicit_sex": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_external_danger_crisis": {
+        "n_topics": 5,
+        "gate": "viable",
+        "topic_ids": [
+          184,
+          223,
+          284,
+          324,
+          335
+        ]
+      },
+      "RAX_external_plot_conflict": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_external_protection": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_final_relational_payoff": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_generic_confession_apology": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          29,
+          62
+        ]
+      },
+      "RAX_gift_romance_token": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_housing_security": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_individual_distress": {
+        "n_topics": 9,
+        "gate": "viable",
+        "topic_ids": [
+          64,
+          66,
+          92,
+          102,
+          133,
+          145,
+          220,
+          322,
+          366
+        ]
+      },
+      "RAX_material_provision": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_medical_care": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_mutual_commitment": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_nonexplicit_affection": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          1,
+          7
+        ]
+      },
+      "RAX_partner_harm_control": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_physical_protection": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_possessive_claiming": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          293,
+          315
+        ]
+      },
+      "RAX_postsex_aftercare": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_practical_care": {
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          1
+        ]
+      },
+      "RAX_public_union": {
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          167
+        ]
+      },
+      "RAX_reciprocal_support": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_relational_darkness": {
+        "n_topics": 20,
+        "gate": "viable",
+        "topic_ids": [
+          3,
+          24,
+          43,
+          51,
+          78,
+          82,
+          85,
+          87,
+          113,
+          114,
+          117,
+          129,
+          148,
+          210,
+          249,
+          256,
+          269,
+          294,
+          316,
+          329
+        ]
+      },
+      "RAX_repair": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_sexual_negotiation": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_sexual_tension": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_status_display": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": []
+      },
+      "RAX_tenderness_core": {
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          1,
+          6,
+          7
+        ]
+      },
+      "RAX_workplace_status": {
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          17
+        ]
+      }
+    },
+    "composites": {
+      "RAX_h1_emotional_side": {
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          1,
+          6,
+          7
+        ],
+        "parts": [
+          "RAX_emotional_intimacy",
+          "RAX_emotional_reassurance",
+          "RAX_nonexplicit_affection"
+        ]
+      },
+      "RAX_h1_explicit_side": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": [],
+        "parts": [
+          "RAX_explicit_sex"
+        ]
+      },
+      "RAX_h2_strict": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": [],
+        "parts": [
+          "RAX_final_relational_payoff"
+        ]
+      },
+      "RAX_h2_broad": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": [],
+        "parts": [
+          "RAX_repair",
+          "RAX_mutual_commitment",
+          "RAX_final_relational_payoff"
+        ]
+      },
+      "RAX_h3_emotional_side": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          1,
+          6
+        ],
+        "parts": [
+          "RAX_emotional_security",
+          "RAX_commitment_security"
+        ]
+      },
+      "RAX_h3_material_side": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": [],
+        "parts": [
+          "RAX_material_provision",
+          "RAX_housing_security"
+        ]
+      },
+      "RAX_social_presentation": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          17,
+          18
+        ],
+        "parts": [
+          "RAX_status_display",
+          "RAX_appearance_grooming",
+          "RAX_workplace_status"
+        ]
+      },
+      "RAX_h4_protection_side": {
+        "n_topics": 0,
+        "gate": "unmeasurable",
+        "topic_ids": [],
+        "parts": [
+          "RAX_external_protection"
+        ]
+      },
+      "RAX_h4_possession_side": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          293,
+          315
+        ],
+        "parts": [
+          "RAX_possessive_claiming",
+          "RAX_coercive_control"
+        ]
+      },
+      "RAX_h5_relational_darkness_side": {
+        "n_topics": 20,
+        "gate": "viable",
+        "topic_ids": [
+          3,
+          24,
+          43,
+          51,
+          78,
+          82,
+          85,
+          87,
+          113,
+          114,
+          117,
+          129,
+          148,
+          210,
+          249,
+          256,
+          269,
+          294,
+          316,
+          329
+        ],
+        "parts": [
+          "RAX_relational_darkness"
+        ]
+      },
+      "RAX_h5_tenderness_side": {
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          1,
+          6,
+          7
+        ],
+        "parts": [
+          "RAX_tenderness_core"
+        ]
+      }
+    },
+    "ratios": {
+      "RLR_emotional_vs_explicit": {
+        "gate": "unmeasurable",
+        "numerator_topics": 3,
+        "denominator_topics": 0
+      },
+      "RLR_emotional_vs_material_security": {
+        "gate": "unmeasurable",
+        "numerator_topics": 2,
+        "denominator_topics": 0
+      },
+      "RLR_protection_vs_control": {
+        "gate": "unmeasurable",
+        "numerator_topics": 0,
+        "denominator_topics": 2
+      },
+      "RLR_darkness_vs_tenderness": {
+        "gate": "viable",
+        "numerator_topics": 20,
+        "denominator_topics": 3
+      }
+    }
   },
   "paths": {
     "master": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/master_annotations.parquet",
     "W_tk_strict": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_strict.parquet",
     "W_tk_weighted": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_weighted.parquet",
     "W_tk_inclusive": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_inclusive.parquet",
-    "W_tkr": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tkr.parquet"
+    "W_tkr": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tkr.parquet",
+    "coverage": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/construct_coverage.json"
   },
-  "frozen": true
+  "frozen": true,
+  "weight_design": "family_specific_v2"
 }

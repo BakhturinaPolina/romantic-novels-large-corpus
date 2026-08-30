@@ -2,7 +2,8 @@
 # # 11 — Refined robustness
 #
 # Attack the new findings: strict / weighted / inclusive coding, author concentration,
-# and OLD TAXONOMY | REFINED STRICT | REFINED WEIGHTED effect panels.
+# headline components, and OLD TAXONOMY | REFINED STRICT | REFINED WEIGHTED panels.
+# Thin single-topic effects (e.g. H4 protection) are flagged explicitly.
 
 # %%
 import sys
@@ -26,15 +27,27 @@ ctx = nh.setup("11_refined_robustness")
 cfg = ctx.cfg
 GATE = nh.effect_gate(cfg)
 delta_freeze = cfg.section("stage10_delta_freeze")
+coverage = nh.load_construct_coverage(cfg)
 
 # %%
 features = [
+    # Primary ratios / composites
     "RLR_emotional_vs_explicit",
     "RAX_h2_strict",
     "RLR_emotional_vs_material_security",
     "RLR_protection_vs_control",
     "RLR_darkness_vs_tenderness",
     "RARC",
+    # Headline components
+    "RAX_explicit_sex",
+    "RAX_nonexplicit_affection",
+    "RAX_appearance_grooming",
+    "RAX_status_display",
+    "RAX_external_danger_crisis",
+    "RAX_h4_protection_side",
+    "RAX_external_protection",
+    "RAX_relational_darkness",
+    "RAX_tenderness_core",
 ]
 
 panels = []
@@ -44,9 +57,11 @@ for mode in ("strict", "weighted", "inclusive"):
     cols = [c for c in features if c in usable.columns]
     eff = nh.cliffs_delta_table(usable, cols, n_boot=300, seed=42)
     eff["mode"] = mode
+    eff["measurement_gate"] = eff["feature"].map(
+        lambda f: nh.gate_for_feature(coverage, f)
+    )
     panels.append(eff)
 
-    # Singleton-author subset
     if "author_id" in usable.columns:
         counts = usable.groupby("author_id").size()
         singletons = counts[counts == 1].index
@@ -54,11 +69,41 @@ for mode in ("strict", "weighted", "inclusive"):
         if len(sub) > 200:
             eff_s = nh.cliffs_delta_table(sub, cols, n_boot=200, seed=42)
             eff_s["mode"] = f"{mode}_singleton"
+            eff_s["measurement_gate"] = eff_s["feature"].map(
+                lambda f: nh.gate_for_feature(coverage, f)
+            )
             panels.append(eff_s)
 
 panel = pd.concat(panels, ignore_index=True)
+panel["verdict"] = [
+    nh.gated_verdict(
+        r.cliffs_delta,
+        r.ci_low,
+        r.ci_high,
+        measurement_gate=r.measurement_gate,
+        effect_gate=GATE,
+    )
+    for r in panel.itertuples()
+]
 display(panel.round(4))
 ctx.save_table(panel, "robustness_panel")
+
+# %% [markdown]
+# ## Thin-effect flags (single-topic / weak coverage)
+
+# %%
+thin = panel[
+    (panel["mode"] == "strict")
+    & (panel["measurement_gate"].isin(["thin", "unmeasurable"]))
+][
+    ["feature", "measurement_gate", "cliffs_delta", "ci_low", "ci_high", "verdict"]
+]
+display(thin)
+ctx.save_table(thin, "thin_or_unmeasurable_effects")
+print(
+    "Do not generalise thin effects (e.g. single-topic external protection) "
+    "as construct-level findings."
+)
 
 # %% [markdown]
 # ## OLD | REFINED STRICT | REFINED WEIGHTED
@@ -82,13 +127,36 @@ for hyp, (feat, freeze_key) in hyp_map.items():
                 "hypothesis": hyp,
                 "spec": f"refined_{mode}",
                 "cliffs_delta": float(sub.iloc[0]["cliffs_delta"]) if len(sub) else np.nan,
+                "measurement_gate": sub.iloc[0]["measurement_gate"] if len(sub) else "missing",
             }
         )
-    rows.append({"hypothesis": hyp, "spec": "old_taxonomy", "cliffs_delta": old})
+    rows.append(
+        {
+            "hypothesis": hyp,
+            "spec": "old_taxonomy",
+            "cliffs_delta": old,
+            "measurement_gate": "stage10",
+        }
+    )
 compare = pd.DataFrame(rows)
 wide = compare.pivot(index="hypothesis", columns="spec", values="cliffs_delta")
 display(wide)
 ctx.save_table(wide.reset_index(), "old_vs_refined_panel")
+
+# Component headline panel
+comp_feats = [
+    "RAX_explicit_sex",
+    "RAX_appearance_grooming",
+    "RAX_external_danger_crisis",
+    "RAX_h4_protection_side",
+]
+comp_panel = panel[
+    (panel["mode"] == "strict") & (panel["feature"].isin(comp_feats))
+][
+    ["feature", "cliffs_delta", "ci_low", "ci_high", "measurement_gate", "verdict"]
+]
+display(comp_panel.round(4))
+ctx.save_table(comp_panel, "headline_component_effects")
 
 # %%
 fig, ax = plt.subplots(figsize=(9, 4.5))
@@ -122,13 +190,15 @@ for feat in features:
     stab.append(
         {
             "feature": feat,
+            "measurement_gate": nh.gate_for_feature(coverage, feat),
             "n_specs": len(sub),
-            "sign_stable": bool(len(set(signs)) <= 1),
+            "sign_stable": bool(len(set(signs)) <= 1) if len(signs) else False,
             "min_abs_delta": float(sub["cliffs_delta"].abs().min()),
             "max_abs_delta": float(sub["cliffs_delta"].abs().max()),
             "any_clears_gate": bool(
                 (
-                    (sub["cliffs_delta"].abs() >= GATE)
+                    (sub["measurement_gate"] != "unmeasurable")
+                    & (sub["cliffs_delta"].abs() >= GATE)
                     & ~((sub["ci_low"] <= 0) & (sub["ci_high"] >= 0))
                 ).any()
             ),
