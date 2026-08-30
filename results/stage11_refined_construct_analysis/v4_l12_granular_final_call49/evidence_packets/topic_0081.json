@@ -1,0 +1,857 @@
+{
+  "topic_id": 81,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "5.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "brother",
+        "brothers",
+        "your",
+        "my",
+        "older",
+        "bish",
+        "siblings",
+        "am",
+        "sibling",
+        "you"
+      ],
+      "KeyBERT": [
+        "related",
+        "introduce",
+        "hi",
+        "closely",
+        "reminds",
+        "worst",
+        "mumbled",
+        "chuckle",
+        "admitted",
+        "follows"
+      ],
+      "POS": [
+        "extent",
+        "annoying",
+        "task",
+        "appropriate",
+        "treatment",
+        "repeat",
+        "backs",
+        "exact",
+        "affection",
+        "bigger"
+      ],
+      "MMR": [
+        "madam",
+        "extent",
+        "follows",
+        "replies",
+        "dismissed",
+        "annoying",
+        "appropriate",
+        "separated",
+        "repeat",
+        "affection"
+      ]
+    },
+    "stage08_snippets": [
+      "i have a brother, in case you’ve forgotten.",
+      "i’m sure you’ve deduced by now that i’m not like my brothers.",
+      "i’ve brought my brother with me."
+    ],
+    "label_public": "Mentioning A Brother"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He’s my brother.” “",
+        "max_topic_prob": 0.827584981918335,
+        "normalized_position": 0.8740567541715379,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1066
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Which brother?”",
+        "max_topic_prob": 0.767255425453186,
+        "normalized_position": 0.5200340099904347,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "And do you know which brother I am?” “",
+        "max_topic_prob": 0.7253902554512024,
+        "normalized_position": 0.11775959188011478,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1108
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "You, not someone’s son, not someone’s brother.",
+        "max_topic_prob": 0.70066237449646,
+        "normalized_position": 0.6364119460091402,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1120
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Do you have any brothers or sisters?”",
+        "max_topic_prob": 0.7004923820495605,
+        "normalized_position": 0.55170581358274,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "It was your brother, actually.",
+        "max_topic_prob": 0.6975695490837097,
+        "normalized_position": 0.11733446699968116,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1104
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Are you brothers?",
+        "max_topic_prob": 0.6893467307090759,
+        "normalized_position": 0.19070870535714285,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "They were my brothers.",
+        "max_topic_prob": 0.6876209378242493,
+        "normalized_position": 0.43289620535714285,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I thought maybe your brother could take a look at him.”",
+        "max_topic_prob": 0.6853927373886108,
+        "normalized_position": 0.4213169642857143,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He’s closer to me than a brother and he loves you as much as I do.” “",
+        "max_topic_prob": 0.6679480075836182,
+        "normalized_position": 0.48646763392857145,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Hara is your brother?",
+        "max_topic_prob": 0.6329087018966675,
+        "normalized_position": 0.1611328125,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I hear ya, brother.”",
+        "max_topic_prob": 0.6150751113891602,
+        "normalized_position": 0.43233816964285715,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It was your mother who passed that fatal weakness to your brother.",
+        "max_topic_prob": 0.6503359079360962,
+        "normalized_position": 0.4565972222222222,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was my only brother, and he’d died of a bee sting.",
+        "max_topic_prob": 0.5466205477714539,
+        "normalized_position": 0.0642361111111111,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That was only for my brother, a terrible trap that had been laid for him in his very making--a trap that I had somehow escaped.",
+        "max_topic_prob": 0.5219548940658569,
+        "normalized_position": 0.23958333333333334,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It was the same thing that happened to your brother, Gary.",
+        "max_topic_prob": 0.5145180225372314,
+        "normalized_position": 0.4114583333333333,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A terrible idea came to me: that this was the very bee that had killed my brother.",
+        "max_topic_prob": 0.473307728767395,
+        "normalized_position": 0.22743055555555555,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He’s my brother.” “",
+        "max_topic_prob": 0.827584981918335,
+        "normalized_position": 0.4092018124782154,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You’re going to talk to your brother.” “",
+        "max_topic_prob": 0.8109877109527588,
+        "normalized_position": 0.6718949692111073,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why not my brother?” “",
+        "max_topic_prob": 0.7764744758605957,
+        "normalized_position": 0.5899848960148716,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Your brother should’ve told you.”",
+        "max_topic_prob": 0.7556709051132202,
+        "normalized_position": 0.7983037062855814,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He let my brother stay.” “",
+        "max_topic_prob": 0.733707070350647,
+        "normalized_position": 0.5691878703380969,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It’s a whole other thing to suspect my brother, the one who I’ve trusted more than my father since I was a child. “",
+        "max_topic_prob": 0.7314661741256714,
+        "normalized_position": 0.6569071685837109,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "How is your brother-in-law coping?’ ‘",
+        "max_topic_prob": 0.5928817987442017,
+        "normalized_position": 0.8235875473562839,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It had taken a couple of days, and a good few hours hacking into his brother’s old laptop before he worked out what to do.",
+        "max_topic_prob": 0.41711509227752686,
+        "normalized_position": 0.45626750123538135,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "His grandfather called his name weakly up the stairs. ‘",
+        "max_topic_prob": 0.40411633253097534,
+        "normalized_position": 0.697908087629715,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "You’re fine with your nephew coming up here?”",
+        "max_topic_prob": 0.5489912033081055,
+        "normalized_position": 0.7065799540933435,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Glad you agreed to send Cali’s nephew.",
+        "max_topic_prob": 0.4648684859275818,
+        "normalized_position": 0.40742157612853863,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I’m talking about sending Cali’s nephew.",
+        "max_topic_prob": 0.4011445641517639,
+        "normalized_position": 0.3959449120122418,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "But he was like a brother to me.",
+        "max_topic_prob": 0.7475011944770813,
+        "normalized_position": 0.151739757051678,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Your brother and I will be there for you in all that you do.",
+        "max_topic_prob": 0.7250896692276001,
+        "normalized_position": 0.9793467819404419,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 611
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You are his brother, Tom.",
+        "max_topic_prob": 0.7205216884613037,
+        "normalized_position": 0.8932116554594941,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Well, I dare say I could not have chosen a better brother for myself.",
+        "max_topic_prob": 0.7161009311676025,
+        "normalized_position": 0.6759526096701889,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1387
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He sought you out and deceived you only to hurt your brother.",
+        "max_topic_prob": 0.6994624137878418,
+        "normalized_position": 0.9771053474223503,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 597
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "So you see, we will indeed be brothers.” “",
+        "max_topic_prob": 0.6929601430892944,
+        "normalized_position": 0.6757925072046109,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1386
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He is your brother’s best friend, is he not?",
+        "max_topic_prob": 0.6838854551315308,
+        "normalized_position": 0.5883765609990393,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 840
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Your brother is here.” “",
+        "max_topic_prob": 0.7889100313186646,
+        "normalized_position": 0.291601866251944,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 750
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Isn’t my little brother treating you right?” “",
+        "max_topic_prob": 0.7057808041572571,
+        "normalized_position": 0.36702954898911355,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 944
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He needed to talk to his brothers. * * * *",
+        "max_topic_prob": 0.6684781312942505,
+        "normalized_position": 0.20800933125972007,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 535
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He glanced at his brothers.",
+        "max_topic_prob": 0.6439540982246399,
+        "normalized_position": 0.11780715396578538,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "If she knew what his brother was up to, she’d probably be completely embarrassed. “",
+        "max_topic_prob": 0.6420029401779175,
+        "normalized_position": 0.2943234836702955,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 757
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "His brothers did the same.",
+        "max_topic_prob": 0.6393126845359802,
+        "normalized_position": 0.994945567651633,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1303
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I won’t listen to the Al…your brother–n- law the way he has.",
+        "max_topic_prob": 0.5572683215141296,
+        "normalized_position": 0.6551005212211467,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "To kill a sibling would not ignite an inner-pack war.",
+        "max_topic_prob": 0.3846992254257202,
+        "normalized_position": 0.11511541325390916,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "He had truly been more than a best friend to Mitchell; he was more like a brother.",
+        "max_topic_prob": 0.536310613155365,
+        "normalized_position": 0.9585131098572851,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2858
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "This is my brother we are talking about.\"",
+        "max_topic_prob": 0.7925294637680054,
+        "normalized_position": 0.8858021724502547,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Now, let's go get my brother.\" ***",
+        "max_topic_prob": 0.7896689176559448,
+        "normalized_position": 0.8913774872632895,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My brother?",
+        "max_topic_prob": 0.7825796604156494,
+        "normalized_position": 0.20080745938671538,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Is your brother okay with this?\" \"",
+        "max_topic_prob": 0.75798499584198,
+        "normalized_position": 0.2561761030471979,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My brother was the same way. \"",
+        "max_topic_prob": 0.7543157339096069,
+        "normalized_position": 0.10852638661924445,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He's my big brother.",
+        "max_topic_prob": 0.7214283347129822,
+        "normalized_position": 0.20446025185042777,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He’s not my brother.”",
+        "max_topic_prob": 0.8187336921691895,
+        "normalized_position": 0.3936639486699639,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He’s my big brother.” “",
+        "max_topic_prob": 0.7946101427078247,
+        "normalized_position": 0.12725571447667425,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "And keep in mind that I’m your brother too, so there’s that.” “",
+        "max_topic_prob": 0.782513439655304,
+        "normalized_position": 0.7152787060553402,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You’re her brother. ”",
+        "max_topic_prob": 0.7564875483512878,
+        "normalized_position": 0.28686004544846944,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "My brothers let you live. ” “",
+        "max_topic_prob": 0.7136514186859131,
+        "normalized_position": 0.9050929020184467,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I had three older brothers, you know.”",
+        "max_topic_prob": 0.6973093152046204,
+        "normalized_position": 0.5035423071781847,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "One of his brothers?",
+        "max_topic_prob": 0.6670297384262085,
+        "normalized_position": 0.9036597428288823,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "To think that my idiot younger brother inherited Archer Hall just because he was a male and then drove it even deeper into the ground than Papa did—it’s offensive, I tell you.",
+        "max_topic_prob": 0.4817456305027008,
+        "normalized_position": 0.5291790306627102,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It wasn’t like he advertised himself like his older brothers, Truman and Del, did.",
+        "max_topic_prob": 0.46535438299179077,
+        "normalized_position": 0.5758654797230465,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Tell me about your brother.”",
+        "max_topic_prob": 0.8238406181335449,
+        "normalized_position": 0.32908822443706165,
+        "tertile": "begin",
+        "chapter_index": 38,
+        "sentence_index": 18
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.004832214765100671,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0035978218591987553,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.003769520732364028,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.0032262589423481553,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.00560878709978967,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.008741258741258742,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0060985395602632005,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.01211410707307542,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0003012501882813677,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0005967774020290431,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00018583906337112061,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00020703933747412008,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.00016661112962345885,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0005764796310530361,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0004952947003467063,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 61
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "5.1",
+    "taxonomy_main_name": "Family, Kinship & Parenthood",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

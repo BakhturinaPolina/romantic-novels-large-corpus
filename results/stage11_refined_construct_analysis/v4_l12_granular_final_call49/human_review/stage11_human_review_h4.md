@@ -63,7 +63,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_5 — external protection physical**
 - **Normalised category:** H4_5 — external protection physical
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Provide external protection`
 
 **Stage-08 snippets**
@@ -98,7 +98,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -129,7 +129,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -211,7 +211,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Reassure`
 
 **Stage-08 snippets**
@@ -329,7 +329,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Distinguish`
 
 **Stage-08 snippets**
@@ -362,7 +362,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Provide external protection`
 
 **Stage-08 snippets**
@@ -607,7 +607,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_5 — external protection physical**
 - **Normalised category:** H4_5 — external protection physical
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Provide external protection`
 
 **Stage-08 snippets**
@@ -705,7 +705,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -815,7 +815,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Distinguish`
 
 **Stage-08 snippets**
@@ -874,7 +874,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -914,7 +914,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -1111,7 +1111,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -1156,7 +1156,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**
@@ -1328,7 +1328,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_1 — reassurance tenderness**
 - **Normalised category:** H4_1 — reassurance tenderness
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `Protect`
 
 **Stage-08 snippets**

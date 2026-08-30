@@ -3,7 +3,7 @@
 ## Topic 18 — Ordering A Gown For Her
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** S13 (norm: S13)
+- **Code:** UNKNOWN
 
 > he’ll make sure you have a dress worthy of you.”
 
@@ -27,11 +27,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `{'emotional': 0.35, 'material': 0.7, 'status': 0.5}`
-  - The keywords and their POS and MMR scores suggest that the primary focus is on the material aspect of clothing, with emotional and status aspects also playing significant roles.
-- **B contextual:** `CELL_D`
-  - The dominant code is 'CELL_D' (emotional), as most sentences discuss feelings, self-worth, or personal values related to clothing.
-- **C adjudicate:** `None`
+- **A lexical:** `status/appearance`
+  - All four lexical representations converge strongly on status/appearance security. The main keywords center on clothing items and acts of dressing, signaling preoccupation with how one presents oneself. KeyBERT terms such as 'appropriate,' 'fitting,' 'revealing,' and 'ensure' indicate anxiety about meeting external standards of presentation. POS-derived terms like 'graceful,' 'stunning,' 'preferred,' and 'appropriate' reinforce evaluative concern with aesthetic impression. MMR terms including 'flowing,' 'flared,' 'topped,' 'madam,' and 'graceful' suggest a formal or socially elevated dressing context where appearance carries social weight. Collectively, the signal points to security derived from wearing the right clothes to be seen favorably, accepted, or admired — a classic status/appearance function rather than emotional intimacy or material resource acquisition.
+- **B contextual:** `UNKNOWN`
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -62,16 +61,19 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `status/appearance`
+  - The dominant lexical signal across main, KeyBERT, and MMR representations centers on physical appearance descriptors — hair color, texture, styling, and grooming (blonde, shaved, curled, neatly, shaped, dried, blowing, ends) — anchoring the topic firmly in appearance-based security, where self-worth or relational value is tied to physical presentation. POS terms (desperation, annoying, inevitable, treatment) introduce an emotional undercurrent suggesting anxiety or frustration around appearance management, producing minor disagreement. However, this emotional valence is subordinate and instrumental to the appearance concern rather than constituting independent attachment or abandonment-based emotional security. Consensus holds at status/appearance.
+- **B contextual:** `status/appearance`
+  - All 20 sentences across all four books and three cells describe physical appearance attributes — specifically hair (color, length, texture, style, grooming) and shaving/skin smoothness — as they relate to romantic or interpersonal perception. None invoke emotional bonding, resource provision, or social rank beyond physical attractiveness. The topic is uniformly anchored in the status/appearance security function: physical traits that signal desirability or identity in a romantic context.
+- **C adjudicate:** `UNKNOWN`
+  - Full convergence across lexical, contextual, and taxonomic signals. Both independent channels resolve to status/appearance, taxonomy placement under 1.6 Character Appearance & Self-Presentation is consistent, and no secondary dimension is warranted. No conflict to resolve.
 
 ---
 
 ## Topic 127 — Photographer Reviewing Pictures
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** S1 (norm: S1)
+- **Code:** UNKNOWN
 
 > my first ever but i’ll need another photographer at this rate.
 
@@ -89,17 +91,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `emotional`
-  - The terms 'pictures', 'picture', 'photos', 'photo', 'photographer', and 'photographs' are more associated with emotional security as they relate to memories, self-expression, and personal experiences. 'Camera' and 'cameras' are material as they refer to physical objects, and 'file' and 'files' are also material as they relate to storage and organization.
-- **B contextual:** `S1`
-- **C adjudicate:** `None`
+- **A lexical:** `status_appearance`
+  - While main keywords suggest material asset framing (cameras, equipment, files), three of four representers converge on status/appearance, reflecting that the dominant concern is visual self-presentation, aesthetic curation, and impression management through photography rather than ownership or emotional bonding
+- **B contextual:** `CELL_B`
+  - Topic 127 centers on photographs/portraits as romance-security objects. CELL_B clusters (BOOK_002, BOOK_003) involve obsessive or surveillance-like image collection of a person — hundreds of covert snapshots, tracking via pictures — signaling a security function tied to monitoring and possessive attachment to another's image. CELL_C clusters (BOOK_001) involve portraits in a gallery/artistic context with intimate emotional imagery (Hart cradling Daisy's face, family photographs on a mantel), pointing to a different security register — emotional/identity-anchored. CELL_D entries (BOOK_005) involve medication compliance visibility and website photos, suggesting a practical/functional dimension. The dominant signal is CELL_B given volume and probability weight, but the dataset is genuinely mixed across three cell types, warranting MIXED designation.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 170 — Staying Close Despite Long Separation
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > despite going months without talking to each other—their daily lives hectic enough that even living in the same city had never ensured regular visits—they were close.
 
@@ -111,16 +114,19 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field centers on dyadic togetherness and relational continuity ('together', 'both', 'couple', 'between', 'shared', 'theirs'). Separation-related terms ('separated', 'separate', 'visits', 'brief') frame distance as a threat to closeness rather than a material or status concern. Session/scenario framing suggests navigating physical or emotional distance within a committed bond. No material resource or status/appearance signals present.
+- **B contextual:** `emotional`
+  - The overwhelming majority of sentences across all cells describe relational dynamics — friendship, attraction, mutual feeling, compatibility, togetherness, and interpersonal history — all of which are emotional security functions. BOOK_001_5 ('a striking couple') is the sole exception, referencing social presentation and appearance, coded as status/appearance. No material security signals are present. The dataset is cleanly dominant in emotional function.
+- **C adjudicate:** `UNKNOWN`
+  - Lexical and contextual signals align on emotional. Primary taxonomy 1.6 reflects self-presentation as an emotionally driven concern rather than status-seeking or material gain. Secondary 4.2 situates the function within routine relational bonding, reinforcing the emotional classification. No conflict to resolve.
 
 ---
 
 ## Topic 171 — Staring at Her Own Reflection
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > she stood and checked her reflection in the mirror over her parents’ dresser.
 
@@ -146,17 +152,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `EMS`
-  - Words like 'reflection', 'gazing', and 'stared' indicate emotional introspection, while 'mirror', 'checked', and 'stunning' suggest focus on appearance and self-image.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `appearance`
+  - All four representations converge on appearance-related lexical fields: mirror/reflection/gazing/stunning cluster around visual self-assessment and physical presentation. No material or emotional security signals present.
+- **B contextual:** `status/appearance`
+  - The overwhelming majority of sentences involve characters checking mirrors or reflections in the context of romantic self-presentation — evaluating how they look, how a partner perceives them, or managing appearance before/during romantic encounters. This maps cleanly to status/appearance security: the mirror functions as a tool for assessing romantic desirability and social presentation. A small subset (BOOK_002_1, BOOK_005_3, BOOK_006_1, BOOK_006_2) involve emotional framing — optimism, emotional displacement, amusement, or a partner's presence replacing an unsettling image — rather than appearance evaluation per se. No material security signals are present. The topic is coherently dominated by appearance-based romantic security functions.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 192 — Peeking Through The Window
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** material
+- **Code:** UNKNOWN
 
 > i stayed hidden beside the window and peeked out as grandmother and [person] arrived. “
 
@@ -182,18 +189,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `EMS`
-  - {'emotional': "Words like 'looked', 'glanced', 'gazed', etc., convey emotional engagement and curiosity.", 'material': "Words like 'window', 'curtains', 'reflection' relate to the physical aspects of the scene.", 'status/appearance': "Words like 'turned', 'stunning', 'figure' suggest a focus on appearance and status."}
-- **B contextual:** `material`
-  - The dominant code is 'material' as it appears more frequently (11 out of 16 sentences) than 'emotional' (5 out of 16 sentences).
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field dominated by gaze, observation, and window-mediated watching behaviors — peering, gazing, glimpsing, peeking through curtains. This cluster encodes emotional security through vigilant attention to the partner's presence, absence, or approach. The watcher monitors relational proximity from a threshold space (window/curtain), a classic anxious-attachment behavioral signature. POS introduces 'stunning' and 'figure' with mild status/appearance coloring but insufficient to shift consensus. Core function is emotional reassurance-seeking via surveillance of the attachment figure.
+- **B contextual:** `CELL_B`
+  - The overwhelming majority of sentences (18/20) are coded CELL_B, sharing a consistent structural and functional signature: characters turning toward, gazing out of, or resting against windows as a behavioral expression of internal emotional processing — introspection, tension, longing, brooding, or regulation of distress. The window functions as a liminal object mediating between inner emotional states and the external world, serving as a displacement surface for unresolved relational affect. This pattern is consistent across all three BOOK_001–003 clusters regardless of character gender or narrative context. The two CELL_C instances (BOOK_004_1, BOOK_004_2) share the window-gazing behavior but are distinguished by first-person narration with a more detached, observational register ('I sat there looking,' 'I turned my face again'), suggesting a slightly different functional encoding — possibly reflective of a different security dimension or narrative mode — consistent with the model's higher-confidence CELL_C assignment for those entries.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 209 — Flowers Held With Guilty Glance
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** M
+- **Code:** MIXED
 
 > then i look at the flowers i’m holding guiltily, as if i’ve already accepted his offer to go to new york.
 
@@ -207,10 +214,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `M`
-  - Most sentences describe material objects (plants, cherries, pillows, jars), with one sentence expressing a feeling (pitting cherries).
-- **C adjudicate:** `None`
+- **A lexical:** `material/status-appearance`
+  - Main and KeyBERT lexicons anchor to tangible floral gifts as resource provision signals (bouquet, dozen, vase, purse), indicating material security through giving. POS and MMR shift toward display and aesthetic value (stunning, feminine, exquisite, carved, delicate, pattern), suggesting the flowers also function as status/appearance markers — objects that signal taste, effort, and social presentation. The split reflects the dual nature of floral gifting: a material resource act that simultaneously performs status and aesthetic identity.
+- **B contextual:** `MIXED`
+  - Four distinct functional clusters emerge across the 20 sentences. CELL_B entries (BOOK_002) consistently frame flowers as emotionally charged, affective signals—pulsing, swirling, emanating from a person's inner state—indicating an emotional-security function where flowers serve as proxies for felt connection and romantic affect. CELL_A entries (BOOK_003) treat flowers as aesthetic or environmental markers tied to appearance, desirability, and setting presentation—flowers signal status through visual lushness, elegance, and the curated beauty of a space or person. CELL_D entries (BOOK_004) position flowers in a material or transactional register: a gift obligation to a wife, a simple declarative object, or a pastoral fantasy of retreat—functional rather than emotionally resonant. CELL_C entries (BOOK_001 and BOOK_005) are contextually neutral or environmental—plants as décor, domestic objects, or instructional props—without clear romantic security loading. No single cell dominates sufficiently to assign a single dominant code; CELL_A and CELL_B are tied at 30% each, confirming MIXED classification.
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -233,9 +241,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `status/appearance`
+  - All four representations converge strongly on status/appearance. The main keywords are dominated by physical attractiveness descriptors (handsome, gorgeous, cute, beautiful, adorable, attractive). KeyBERT reinforces with 'attractive' as top term alongside evaluative language (considered, described, poised). POS adds 'features', 'decent', 'potential' suggesting appraisal of physical traits. MMR contributes 'built', 'dangerously', 'poised', 'dangling' evoking physical presence and body-focused assessment. The security function is appearance-based validation — deriving relational security from a partner's or self's physical attractiveness, consistent with mate-value appraisal and status signaling through physical desirability.
+- **B contextual:** `status/appearance`
+  - The overwhelming majority of sentences across CELL_B and CELL_C describe physical attractiveness — handsomeness, beauty, cuteness — which maps cleanly to status/appearance security. BOOK_002_2 includes 'kind, sweet, funny' but is framed within a physical attractiveness observation, keeping it in status/appearance. BOOK_003_3 through BOOK_003_6 and BOOK_004_2 are contextually ambiguous — they reference competence, moral flexibility, or interpersonal dynamics without clear romantic-security framing. BOOK_004_1 ('It suited him') leans toward appearance-confirmation. No material or emotional security signals are dominant in any sentence.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -255,16 +265,18 @@
 ### Pass A/B/C
 
 - **A lexical:** `emotional`
-  - The majority of keywords are related to emotional states, expressions, and behaviors, indicating that the topic primarily revolves around emotional security.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+  - Dominant signal across KeyBERT, POS, and MMR lexicons points to emotional security: insulted, pout, growl, disappointed, emotionally, dealing all index protest behavior and affect-regulation within attachment. Main tokens (charge, uncle, parent, roarke, alfred) introduce a material or authority-figure framing that creates mild disagreement, but the functional core is an emotional security exchange — likely a conflict episode involving wounded pride, sulking, and relational repair rather than resource negotiation.
+- **B contextual:** `EMOTIONAL`
+  - All sentences across the four books center on interpersonal relationships, relational concern, grief, jealousy, loyalty, and romantic/social bonding dynamics. BOOK_001 revolves around concern for a deceased person named Jason and relational disclosure (affair). BOOK_004 focuses on a romantic relationship with Kay and its emotional resolution. BOOK_005 depicts relational tension between a romantic partner and an ex (Chaz), including jealousy and protective behavior. BOOK_006 involves Jason in a high-tension interpersonal scene. No sentences reference material resources, financial exchange, or status/appearance as primary security functions.
+- **C adjudicate:** `UNKNOWN`
+  - Lexical and contextual signals align on emotional. Taxonomy 1.6 concerns self-presentation as it relates to identity and relational worth rather than material or status gain, and 3.2 confirms affective distress as the operative security mechanism. No material or status/appearance reclassification warranted.
 
 ---
 
 ## Topic 253 — Hair Pinned Up in Style
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > she had pinned her wispy blonde hair back in a loose chignon.
 
@@ -290,17 +302,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `emotional`
-  - The words and phrases provided are mostly associated with appearance and grooming, which are often used to express one's emotions, attract others, or boost self-esteem, thus serving emotional security functions.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `status/appearance`
+  - All four representations converge on status/appearance. The lexical field is dominated by hair styling descriptors (ponytail, bun, braid, curls, straightened, neatly fashioned) and aesthetic quality markers (blonde, delicate, feminine, flowing, tumbled, spilling). The POS set adds affective evaluators (admire, unhappy, unable) suggesting appearance-contingent emotional states, but the root security function is anchored in physical presentation as a source of relational worth. No material resource terms or emotional intimacy vocabulary are present. The cluster reflects preoccupation with how one's appearance is perceived, consistent with appearance-based security seeking.
+- **B contextual:** `status/appearance`
+  - All 20 sentences describe physical appearance attributes — specifically hair color, style, texture, and adornment — of characters in romantic contexts. None reference emotional states or material/financial dimensions. The function across all cells (CELL_A, CELL_B, CELL_D) is consistently descriptive of physical presentation, anchoring romantic interest or characterization in visual/aesthetic signals. This is uniformly status/appearance coding.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 268 — Vivid Colors Remarked Upon
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** CELL_B
+- **Code:** UNKNOWN
 
 > the colours are brighter than i’ve ever seen them.
 
@@ -314,17 +327,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `emotional`
+  - Color vocabulary dominates across all representations, with emotional valence markers (sadness, happiness, reminds) and aesthetic appreciation signals (attractive, unusual) indicating this topic centers on emotional responses to color and visual experience rather than material provision or status signaling.
 - **B contextual:** `CELL_B`
-  - The dominant code 'CELL_B' (emotional) has the highest average proportion (0.68) across all sentences, indicating that the topic of color is primarily discussed in an emotional context, such as describing how a color makes someone feel or suits them.
-- **C adjudicate:** `None`
+  - CELL_B sentences treat color as a practical or logistical reference point — coordinating, selecting, or identifying objects/people by color in a neutral, functional way with no strong evaluative or emotional charge. CELL_A sentences frame color as personally meaningful or emotionally resonant — color suits someone, is understood, or is perceived with feeling, linking appearance to inner state or interpersonal recognition. CELL_C sentences involve color in a social-display or self-presentation context — choosing colors to flatter, to signal taste, or to decorate a shared/status space, with an outward-facing, impression-management orientation. CELL_B is dominant by count (8 of 20 sentences), though CELL_A and CELL_C are nearly equal at 6 each, making the distribution relatively balanced across all three functions.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 323 — Polite Address Under Distress
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > i am not [person], no matter what you’ve told the director.
 
@@ -346,10 +360,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The provided words primarily revolve around emotional states, interactions, and expressions, indicating that the emotional security function is the most prominent in this context.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Convergent signals across all representations point to emotional security dynamics. KeyBERT terms (distress, anxious, praying, amusement, admit) and POS/MMR overlapping tokens (distress, anxious, amusement, assure, softened, sensed) indicate internal affective states centered on worry, vulnerability, and the need for reassurance. Main tokens (georgiana, matlock, netherfield) suggest a social-aristocratic context but the dominant functional signal is emotional rather than material or status-driven. The cluster reflects a character navigating interpersonal anxiety and seeking or receiving emotional stabilization.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -374,16 +388,19 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `347`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Main and KeyBERT vocabularies center on greetings, farewells, and time-of-day salutations (goodnight, good morning, whispered, mumbled, greeted, politely), indicating routine emotional bonding rituals that reinforce attachment security. MMR corroborates this with social interaction verbs (greeted, mumbled, demanded) alongside mild physical cues (squeeze, entrance). POS introduces a material-leaning cluster (purse, entrance, stunning, lady, sir) suggesting a public or status-inflected setting, creating minor disagreement. However, the dominant signal across three of four representations is emotional: the topic encodes the security function of maintaining felt connection through everyday verbal and temporal rituals rather than resource provision or status signaling.
+- **B contextual:** `emotional`
+  - The overwhelming majority of sentences across all cells encode emotional security functions: intimate greetings, whispered names, terms of endearment ('sweetheart', 'Sunshine'), physical closeness cues, and relational bids for togetherness (spending the night, staying in bed) all signal attachment, warmth, and interpersonal bonding rather than resource provision or status signaling. BOOK_003_1 leans material (bringing refreshment upon waking — a caregiving/provisioning act). BOOK_003_2 involves a formal social greeting with cheek-kissing that carries mild status/appearance framing (Mrs. Schmeling, Julian — social register). The corpus is cleanly dominant-emotional with negligible material or status/appearance content.
+- **C adjudicate:** `UNKNOWN`
+  - Full lexical-contextual agreement on emotional. Taxonomy placement in 1.6 is consistent with emotional security domain. No secondary classification warranted.
 
 ---
 
 ## Topic 354 — Threatening to Bite Someone's Nose
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ll send the dentist’s bill to the incredible hulk .
 
@@ -403,11 +420,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `354`
-  - {'emotional': "Words like 'bitten', 'gnashing', 'going', 'bites', 'annoying', 'problems', 'wound', 'pieces', and 'memories' evoke emotional responses or relate to emotional experiences.", 'material': "Words like 'teeth', 'dental', and 'dentist' directly relate to the material aspects of dental care and health.", 'status/appearance': "Words like 'bite', 'chew', 'bowed', 'loose', and 'attractive' suggest maintaining a certain appearance or status through dental care."}
-- **B contextual:** `MIXED`
-  - The dominant code is 'MIXED' because the proportions of 'CELL_B' (emotional) are high in the first two books, while 'CELL_D' (material) is dominant in the third book and 'CELL_A' (status/appearance) is dominant in the fourth book.
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - The dominant lexical signal across all four representations centers on dental/oral health vocabulary (bite, teeth, dental, dentist, chew, gnashing, gum, appointment, wound, loose, pieces). This maps to material security — specifically bodily integrity and healthcare resource access. The emotional signal in KeyBERT (annoying, admit, afterward, follows) reflects affective response to a health situation rather than a primary emotional security function. POS and MMR reinforce the material framing through appointment, wound, preparing, and problems. The topic encodes anxiety or distress around a concrete physical/medical resource need, not relational or status-based security.
+- **B contextual:** `CELL_B`
+  - CELL_B sentences cluster around supernatural/vampire biting with physical intimacy and sensory arousal cues, representing the largest group. CELL_A sentences use 'bite' in literal food-consumption or figurative emotional/speech contexts without supernatural or intimate charge. CELL_D sentences are low-probability outliers with only tangential bite references (toothbrush exclusivity negotiation; mosquito bites), insufficient to anchor a cell. The corpus is MIXED across three cells, with CELL_B dominant by count and probability weight.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -438,17 +455,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `status/appearance`
+  - All four representations converge on status/appearance. The lexical field is dominated by clothing descriptors (shirt, jeans, boots, sweater, pants, black, white) and presentation-quality modifiers (polished, neatly, wrinkled, fitted, loose, draped, smoothed). KeyBERT and MMR reinforce aesthetic evaluation through contrast, pattern, and reveal, while POS surfaces exchange and nods suggesting social legibility through appearance. No material resource transfer or emotional-attachment vocabulary is present. The security function is identity-signaling: clothing choices and their perceived quality serve as proxies for self-presentation, social belonging, and romantic desirability.
 - **B contextual:** `MIXED`
-  - The dominant code is MIXED because the texts contain a mix of emotional, material, and status/appearance aspects.
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 6 — Whispered Reassurance
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S5 (norm: S5)
+- **Code:** UNKNOWN
 
 > i’ll make sure of it,” he whispered.
 
@@ -462,18 +479,19 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `E`
-  - All sentences express emotions, feelings, or engagement, with no material or status/appearance discussions present.
-- **C adjudicate:** `S5`
-- **Action:** KEEP
+- **A lexical:** `emotional`
+  - All four representational layers converge on emotional security. The topic is structured around speech-act softness, affective disclosure, hesitation, and tonal modulation — none of which index material resources or status/appearance. The dominant function is the regulation of emotional safety and relational reassurance through careful, tentative, and affirming verbal interaction.
+- **B contextual:** `CELL_D`
+  - CELL_D fragments are the most numerous, characterized by short, emotionally charged dialogue snippets — hesitations, whispers, firm refusals, soft tones — all conveying interpersonal tension and guarded emotional exchange consistent with a single security function cluster. CELL_A fragments (BOOK_003) are structurally distinct: repetitive 'she asked' dialogue tags at high uniform probability suggest a different narrative register or character dynamic, possibly more open or inquisitive in tone. CELL_C (BOOK_004) is an outlier — expository, philosophical prose about the Universe, clearly non-dialogue and non-romantic in register, likely misclassified or drawn from a self-help/spiritual text. The dataset is MIXED due to the presence of at least two distinct cell types (CELL_A and CELL_D) with meaningful representation, plus the anomalous CELL_C entry.
+- **C adjudicate:** `UNKNOWN`
+  - All input signals align. Lexical and contextual both indicate emotional domain. Taxonomy node 4.6 is internally consistent with caretaking and reassurance functions. No secondary dimension present. Clean single-domain classification.
 
 ---
 
 ## Topic 17 — Discussing Rooms and Privacy
 
 - **Taxonomy:** 8.1 — Domestic Spaces & Routines
-- **Code:** S15 (norm: S15)
+- **Code:** MIXED
 
 > i’ll just go back to the dorms.”
 
@@ -487,18 +505,43 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S14`
-  - dry-run H3 pass A
-- **B contextual:** `S15`
-  - dry-run H3 pass B
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - All four lexical representations converge on material security. The main keywords (house, hotel, room, apartment, bedroom, rent, upstairs, home, bedrooms, living) are unambiguously housing/shelter vocabulary. KeyBERT reinforces physical dwelling features (porch, ceiling, occupied, address). POS adds spatial/structural descriptors (separate, smaller, areas, privacy, contrast). MMR contributes ownership and access language (belongs, visited, built, guarantee, address). The cluster centers on physical shelter provision, residential space, and housing access — core material security concerns in romantic contexts (shared living arrangements, cohabitation, housing stability).
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
+
+---
+
+## Topic 27 — Racing The Approaching Storm
+
+- **Taxonomy:** 7.3 — Risk, Danger & External Crises
+- **Code:** MIXED
+
+> it’ll be dark before we know it.’’
+
+> i don’t know if i’ll be able to get back here before the storm hits.
+
+> it’s going to rain and we’ll be caught out in the storm.
+
+> *(CELL_D, tertile=end)* Their lips met, and an explosion of passion took them along on a tide, the darkness that surrounded them like a blanket against the rest of the world.
+
+> *(CELL_D, tertile=begin)* Just as they reached the spot a man strode angrily out of a neighbouring field, and even in the poor light his expression could be seen as thunderous.
+
+> *(CELL_D, tertile=begin)* They were still driving, the high hedges making it impossible for them to see anything but the road in front of them.
+
+### Pass A/B/C
+
+- **A lexical:** `E`
+  - All four representational layers converge on emotional security. The lexical field is dominated by natural atmospheric phenomena (rain, storm, moon, sky) and their affective-sensory correlates (darkened, warming, magical, graceful, floated). These function to establish mood, evoke felt presence, and signal emotional attunement between partners — the hallmark of emotional security signaling in romantic contexts. No material provisioning terms (wealth, shelter-as-resource, sustenance) or status/appearance markers (beauty, prestige, display) are present. The single ambiguous term 'dangerously' reinforces emotional intensity rather than redirecting toward another category.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 29 — Confessing Long-Held Love
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > i love you with everything i am, everything i’ve been, and everything i hope to be .” “
 
@@ -514,17 +557,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The words provided primarily revolve around emotions, feelings, and interpersonal relationships, indicating that the security function for this topic is emotional security. Key words like 'love', 'happiness', 'forgive', and 'deserve' emphasize the emotional aspect, while 'you', 'me', and 'always' suggest a focus on personal connections and commitment.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field converges strongly on emotional security. Main tokens (love, loved, falling, always) signal attachment and devotion. KeyBERT tokens (happiness, genuinely, forgive, deserve, crushed, secretly, dreamed) indicate vulnerability, emotional reckoning, and longing for reciprocal care. POS and MMR tokens (spite, slightest, reflection, delicate, crushed, apologize) reinforce interpersonal sensitivity and emotional repair dynamics. No material or status/appearance signals present. Function is attachment reassurance — seeking confirmation of being loved and emotionally safe within the relationship.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 31 — Keeping Watch While Others Sleep
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > so you’ll give me the stuff to sleep?”
 
@@ -536,17 +579,45 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `31`
-  - Sleep and rest are essential for maintaining emotional well-being, physical health, and social functioning. The words and phrases selected reflect the multifaceted nature of sleep security, encompassing emotional, material, and status/appearance aspects.
+- **A lexical:** `material`
+  - Lexical signals across all representers converge on physical rest and sleep quality as the topic core. Main keywords (sleep, bed, nap, rested) anchor the domain in bodily comfort and physical resource access. KeyBERT adds 'rested,' 'comfortable,' and 'anxious/worrying' suggesting concern over obtaining adequate rest. POS and MMR contribute 'quality,' 'decent,' 'unable,' and 'uncertain,' pointing to doubt about whether physical comfort needs are being met. The security function is material: the underlying concern is access to a tangible physical resource (sleep/rest/bed) rather than emotional validation or status/appearance.
+- **B contextual:** `emotional`
+  - All sentences across all cells and books cluster around sleep, rest, waking, and napping within an intimate relational context. The security function operative throughout is emotional: vulnerability during sleep, reliance on a partner's presence upon waking, teasing and playful banter about rest habits, concern about disturbance, and the emotional texture of shared domestic/intimate space. No sentences invoke material provision or status/appearance concerns. BOOK_001_4's 'old married couple' framing reinforces emotional-relational security rather than material or status dimensions. BOOK_004_4's anxiety about the partner not being present upon waking is a clear emotional-security marker. The cell variation (CELL_D, CELL_B, CELL_C) does not shift the functional coding; the topic remains uniformly anchored in emotional security across all instances.
+- **C adjudicate:** `UNKNOWN`
+  - Lexical markers may surface material-coded vocabulary, but the operative function being secured is emotional in nature. The contextual frame determines that the subject seeks reassurance, safety, or caretaking rather than resource acquisition. Material language is serving as a vehicle for emotional need expression, not as the primary security function itself.
+
+---
+
+## Topic 36 — Eagerly Offering to Help
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** MIXED
+
+> of course, i’ll help you.’
+
+> then you’ll let me help,” frances said at once, her expression eager. “
+
+> sure, of course, i’ll help.”
+
+> *(CELL_B, tertile=end)* And you know I’m here to help you in any way I can.”
+
+> *(CELL_D, tertile=middle)* Well make yourself useful,” he said. “
+
+> *(CELL_B, tertile=end)* I’ve got to do something to help.”
+
+### Pass A/B/C
+
+- **A lexical:** `material`
+  - Lexical convergence across all four representations centers on transactional assistance dynamics: help-seeking and help-provision vocabulary (help, need, assistance, helping, provided, willing, requested, task, promptly, intend), formal address markers (mister, sir), and outcome-oriented terms (success, options, task, sentence). Emotional valence words (sadness, pleased, excited) appear peripherally in POS/MMR but do not anchor the dominant semantic frame. The interaction is structured around the exchange of practical resources and services rather than affective bonding or status/appearance signaling.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 38 — Admitting Shared Pain
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ve seen your pain.
 
@@ -558,17 +629,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The majority of the words (14 out of 18) are related to emotions, feelings, and emotional states. Words like 'feel', 'feels', 'good', 'felt', 'feeling', 'better', 'make', 'how', 'so', 'like', 'hurts', 'experienced', 'worst', 'recently', 'incredibly', 'magical', and 'insides' all contribute to the emotional security function. Only 'opportunity' and 'loose' lean more towards material or status/appearance functions, but they are outnumbered by the emotional words.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Signals across all extraction methods converge on emotional experience: 'hurts', 'magical', 'insides', 'accustomed', 'experienced', 'worst', 'loose', 'ticked', 'apologize', 'admitted' all index internal affective processing, relational pain, and emotional adjustment. Main keywords ('feel', 'felt', 'feeling', 'better') reinforce a narrative centered on emotional states rather than material resources or status/appearance concerns. The cluster suggests someone processing relational hurt or emotional disruption, seeking or reflecting on emotional repair.
+- **B contextual:** `CELL_A`
+  - CELL_A sentences cluster around shared, mutual, or internal emotional feeling states expressed with high intimacy and resonance — language of emotional attunement and co-felt experience. CELL_D sentences shift toward feeling as a relational instrument or outcome: how actions affect the other's emotional state, concern about perception, physical/sensory relief, or self-focused reflection on emotional impact. The distinction tracks whether feeling is intrinsic and shared (CELL_A) versus instrumental, reactive, or other-directed in a more evaluative or corrective register (CELL_D). MIXED is flagged because both cell types are substantively represented across the corpus.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 45 — Reassured Everything Will Be Fine
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > we’ll be ok.” “
 
@@ -584,10 +656,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `ROMANCE`
-  - {'emotional': "Words and phrases like 'fine', 'ok', 'okay', 'everything', 'right', 'be', 'all', 'honey', 'alright', 'will', 'assured', 'assure', 'smoothly', 'incredibly', 'acknowledged', 'appreciate', and 'urge' often relate to emotional security and reassurance in romantic contexts.", 'material': "The word 'problems' is included under material security as it can refer to issues that may impact the material aspects of a relationship.", 'status/appearance': "Terms like 'sir', 'lord', and 'ms' are associated with status and appearance, as they can indicate power dynamics or social standing within a relationship."}
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `EMO`
+  - Lexical cluster centers on reassurance and soothing language (fine, okay, alright, assured, assure, smoothly, acknowledged) with relational address terms (honey, sir, lord, ms). The pattern reflects emotional regulation and comfort-provision rather than material exchange or status signaling. KeyBERT reinforces reassurance semantics; MMR adds acknowledgment and injury concern, consistent with emotional support and de-escalation function.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -608,17 +680,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The provided keywords primarily revolve around trust, betrayal, and expectations, which are core aspects of emotional security in romantic relationships.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `ES`
+  - The lexical profile centers on trust and betrayal as core relational constructs (trust, trusted, betrayed, betrayal, trusting), with supporting signals of internal emotional processing (instincts, worries, hesitation) and interpersonal expectation (expect, deserve, warned, appreciate, admit). The KeyBERT and MMR layers reinforce an inward-facing emotional orientation: instincts and worries index anxiety about relational safety, while twisting, hesitation, and heal suggest emotional injury and recovery dynamics. Concrete and percent introduce mild epistemic framing but do not shift the axis toward material or status concerns. The absence of resource-exchange, appearance, or status-signaling vocabulary confirms a clean emotional security classification, specifically around the function of trusting another person as a source of felt safety versus vulnerability.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates with direct interpersonal trust appeals between romantic or close dyads, functioning as emotional reliance and vulnerability negotiation. CELL_C sentences express trust in a warmer, affirming relational tone with named individuals, suggesting established emotional bonds. CELL_D sentences involve trust in ambiguous, non-intimate, or institutional/spiritual contexts outside clear romantic dyads. CELL_A appears once as a status/respectability self-assertion. The corpus is MIXED given meaningful representation across all four cells, though CELL_B's emotional-reliance function is dominant.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 49 — Drinking at The Bar
 
 - **Taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **Code:** MATERIAL
+- **Code:** UNKNOWN
 
 > avery lifted her own wine and swirled it in the light, her actions casual and her voice low enough so the few patrons assembled around the bar wouldn’t hear. “
 
@@ -640,17 +713,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S1`
-- **B contextual:** `MATERIAL`
-  - The dominant code is 'MATERIAL' as most sentences revolve around actions involving drinks or glasses, indicating a focus on material aspects.
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - Dominant lexical field centers on drinking activity (wine, glass, sip, beer, bottle, swirled, pouring, poured, swig, consumed, tasted), indicating a shared consumption scene. POS terms (waist, lady, curved, amusement) introduce mild status/appearance signals but are peripheral. The scene is anchored in tangible resource sharing rather than emotional bonding or status display, placing it firmly in material security.
+- **B contextual:** `CELL_B`
+  - The overwhelming majority of sentences (18/20) are assigned CELL_B by the source coding, all clustering around shared drinking behavior — wine, beer, champagne, scotch — as a social-bonding ritual between romantic partners or persons of interest. The act of drinking together, toasting, handing drinks, and sipping in tandem functions as an emotional proximity marker: a low-stakes, repeated intimacy gesture that signals comfort, ease, and relational warmth rather than material exchange or status display. The two CELL_D entries (BOOK_002_1, BOOK_002_2) diverge: one involves solitary water-pouring with a non-drink cue (tapping wall), and the other is an adversarial verbal prompt with no drink-sharing dynamic, placing them outside the dominant bonding-through-drink pattern. CELL_B dominance is robust and consistent across all three books.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 52 — Talking About Dogs and Animals
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ll have you know that muffy is an intelligent dog and understands more than most people give her credit for.
 
@@ -666,17 +740,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E2M1S1`
-  - The topic revolves around animals as pets, focusing on emotional bonds, care, and activities.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field centers on pets and animals as attachment figures. Affective vocabulary (affection, distress, suffering, guarded, tentatively) signals emotional bonding and caregiving dynamics. Treatment, failure, and suffering suggest anxiety around the wellbeing of an animal companion, consistent with attachment-based emotional security rather than material provision or status signaling.
+- **B contextual:** `CELL_B`
+  - CELL_B sentences cluster around dogs as companions, caregiving gestures (rescuing a pet to cheer someone up), emotional comfort, loyalty, and guardianship — functions tied to emotional bonding and relational security. CELL_A sentences frame dogs more as behavioral metaphors for a romantic interest (Abbie being 'like a dog'), navigational cues, or social-environmental observations, suggesting a different functional register — likely appearance/status or material framing of the partner rather than pure emotional warmth. The dominant signal across both books is CELL_B, with dogs serving as proxies for emotional attunement, companionship, and care within the romantic context.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 54 — Ordering Food and Dessert
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > i’ll have the steak with boiled potatoes and green beans.” “
 
@@ -690,17 +765,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E2M3S1`
-  - The emotional security function is emphasized through words like 'giggle' and 'exquisite', while the material function is evident in the list of food items. The status/appearance function is suggested by words like 'polished' and 'rings'.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - Main and KeyBERT keywords center on food items and consumption acts (cake, cream, pie, butter, dessert, meal, eaten, tasted), anchoring the topic in material provision and domestic resource-sharing. POS and MMR introduce appearance/status signals (impressive, exquisite, polished, neatly, rings, enormous) suggesting presentation and social display, creating a split. However, the dominant lexical mass across all four representations is food-provision and sensory consumption rather than status performance or emotional bonding, so material security is the consensus code, with noted disagreement from POS/MMR layers.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 56 — Promising Never to Hurt You
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > you'll get hurt," he managed to say. "
 
@@ -714,10 +789,33 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The keywords provided ('hurt', 'hurting', 'harm', 'mean', 'never', 'you', 'want', 'don', 'hurt') primarily revolve around emotional pain, distress, and negative emotions. They suggest a focus on emotional security, as they indicate a desire to avoid or protect against emotional harm.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - All four lexical sources converge strongly on emotional security. The main terms (hurt, harm, mean, hurts) signal distress about being wounded interpersonally. KeyBERT reinforces this with painful, distress, threatened, protect, cried — a cluster centered on emotional vulnerability and the need for reassurance. POS tokens (hurts, distress, painful) sustain the same register. MMR adds intentionality framing (intend, deserve, causing, insisted) alongside threat and protection language, indicating the subject is processing whether harm was deliberate and seeking emotional safety guarantees. No material or status/appearance signals are present. The function is securing freedom from emotional pain within the relationship.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
+
+---
+
+## Topic 59 — Mother's Disapproval Looms
+
+- **Taxonomy:** 5.1 — Family, Kinship & Parenthood
+- **Code:** UNKNOWN
+
+> does mama know you’ve left the nursery?”
+
+> didn’t your mom tell you i’ve been having problems?” “
+
+> mum will berate me for leaving graham at “this time”, and i’ll be forced to defend myself, something i’m not used to doing.
+
+> *(BOOK_001, CELL_D, tertile=begin)* Oh, and then there's my mother... maybe we should focus on your bad habits." "
+
+### Pass A/B/C
+
+- **A lexical:** `emotional`
+  - All four representations converge on emotional security. The lexical field is dominated by maternal relationship terms (mother, mom, mama, mum, momma, mamma, daughter) anchoring the topic in primary attachment bonds. KeyBERT terms (affection, memories, instinctively, taught, fault, disappointment) index internalized emotional patterns, learned relational schemas, and affective accountability — hallmarks of attachment-based emotional security processing. POS and MMR terms (affection, disappointment, notion, overcome, judging, differently, repeat) reinforce themes of emotional evaluation, relational correction, and internalized standards derived from the mother-daughter bond. No material resources or status/appearance markers are present. The function is attachment validation: seeking or negotiating emotional legitimacy through the lens of a primary caregiver relationship.
+- **B contextual:** `CELL_C`
+  - Three distinct cell clusters appear across the 20 sentences. CELL_D sentences (BOOK_001 series + BOOK_004) center on direct maternal address or reference in emotionally charged relational moments, consistent with a warm/nostalgic or longing register. CELL_C sentences (BOOK_002 and BOOK_003 series) involve parental figures in contexts of absence, concern, or conflict — including a missing mother, a father referenced repeatedly, a child-protection dispute, and a carried photograph — suggesting a more anxious or protective relational framing. CELL_B sentences (BOOK_005 series) involve maternal figures as sources of formative verbal messages or judgments passed down to a character, reflecting an internalized or instructional relational dynamic. No single cell dominates sufficiently to suppress the others; MIXED is warranted. CELL_C is marginally dominant by sentence count.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -753,16 +851,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `material_status_appearance`
+  - Topic 61 centers on jewelry and rings with engagement connotations. Main and POS representations emphasize tangible ownership and material value of physical objects (gold, diamond, stone), anchoring to material security. KeyBERT and MMR shift toward display, symbolic promise, and aesthetic presentation (glint, polished, stunning, precious, dangling), indicating status and appearance signaling. Engagement framing adds a commitment dimension but the dominant lexical mass concerns possession and display of luxury goods rather than emotional bonding, producing a split between material and status/appearance functions with no emotional security signal present.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 62 — Admitting You've Been Stupid
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > marnie, i’ve been stupid.
 
@@ -776,17 +875,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The majority of the words in this topic directly target the person's emotional state or express negative emotions.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `status/appearance`
+  - Lexical signals across all extraction methods converge on social evaluation and reputational threat. Main terms (stupid, idiot, fool, asshole, jerk, rude, ridiculous, dumb) are insult/derogation vocabulary targeting perceived social standing or intelligence. KeyBERT and MMR reinforce this with harshly, embarrassed, remark, comments, hissed, overheard — indicating public or interpersonal shaming dynamics. POS terms (utter, annoying, terms, actions, equal) suggest confrontational framing around how one is perceived or judged. The cluster is not about resource access or emotional intimacy loss, but about being demeaned, ridiculed, or publicly diminished — a status/appearance security threat centered on social image and respect.
+- **B contextual:** `CELL_D`
+  - Topic 62 centers on foolishness/stupidity as a relational security theme. CELL_D instances (BOOK_001, BOOK_004) express third-person or externalized judgments of foolishness directed at others, reflecting a distancing or evaluative stance toward a partner or figure — consistent with a status/appearance security function where social judgment and perceived competence govern relational worth. CELL_B instances (BOOK_002, BOOK_003) are predominantly first-person self-attributions of stupidity or idiocy within relational contexts, consistent with an emotional security function where self-deprecation and vulnerability management operate in dyadic interaction. The dataset is MIXED across two cell types, with CELL_D dominant by proportion. The blinded cell labels align with the contextual pattern: externalized foolishness judgments cluster in one cell, internalized self-assessments in another.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 65 — Declaring A True Partnership
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > what we’ve been though together, the way we’ve been there for each other ... we have a true partnership, a true love, and if that sounds stupid and romantic, then i don’t care.”
 
@@ -804,10 +904,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `R65`
-  - {'emotional': "Keywords like 'date', 'dating', 'together', 'we', and 'partners' suggest a focus on emotional connections and shared experiences.", 'material': 'No keywords were classified under this function.', 'status/appearance': "Keywords like 'fashioned', 'nods', and 'playfully' hint at the presentation of oneself and interactions that may impact social standing."}
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - The lexical field converges strongly on relational bonding and commitment dynamics. Main terms (together, we, each other, dated) signal dyadic intimacy and shared identity. KeyBERT and MMR surface meta-relational vocabulary (engaged, partners, longest, officially, forming) pointing to commitment milestones and relationship definition. Playfully and honestly index emotional authenticity and vulnerability. Failure and forgetting suggest attachment anxiety around relational continuity. No material resource exchange or status/appearance markers are present. The dominant security function is emotional: seeking reassurance of relational permanence, mutual recognition, and belonging within a committed partnership.
+- **B contextual:** `EMOTIONAL`
+  - The corpus is predominantly EMOTIONAL, covering relational continuity, breakups, reciprocal feelings, disappointment, and shared history. STATUS appears in sentences referencing public visibility of the relationship, appearance-based attraction ('sex magic'), and social desirability of dating. MATERIAL is minimally present in one sentence implying shared resource/activity access. The MIXED flag is warranted due to the meaningful STATUS minority strand alongside the dominant EMOTIONAL theme.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -830,42 +931,40 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `70.1`
-  - The words selected are related to emotions, material needs, and status/appearance, which are key aspects of romance.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field centers on sleep, rest, and bodily exhaustion states shared with or near a partner. KeyBERT signals (anxious, trembling, praying, comfortable, rested) indicate nervous system arousal and soothing, pointing to emotional co-regulation rather than material provision or status signaling. POS and MMR terms (instincts, threats, strained, warming, drifted) reinforce a vulnerability-safety dynamic. The presence of 'she' as anchor and the somatic vocabulary collectively index attachment-based emotional security — the need for felt safety and calm in proximity to another.
+- **B contextual:** `CELL_B`
+  - The overwhelming majority of sentences across BOOK_001, BOOK_002, and BOOK_003 are coded CELL_B, consistently describing states of sleep, exhaustion, wakefulness, and physical/emotional depletion in a romance context. These reflect an internal, bodily-emotional vulnerability dimension. BOOK_004 introduces two CELL_D-coded sentences that carry a distinct functional character — describing sleep and waking behavior in a more neutral, observational register without the emotional weight present in the CELL_B cluster. The dataset is dominated by CELL_B with a small CELL_D minority, yielding a clear dominant code without requiring a MIXED classification.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
-## Topic 75 — Talking About Being A Father
+## Topic 81 — Mentioning A Brother
 
 - **Taxonomy:** 5.1 — Family, Kinship & Parenthood
 - **Code:** MIXED
 
-> no matter how many disagreements you’ve had, he’s still your dad.”
+> i have a brother, in case you’ve forgotten.
 
-> what kind of dad is this going to make me after i’ve missed so much in his life?”
+> i’m sure you’ve deduced by now that i’m not like my brothers.
 
-> i’ve been waiting to join dads and daughters for ages, marni.
+> i’ve brought my brother with me.
 
-> *(CELL_B, tertile=middle)* A pity you did not tell your father so,’ he added silkily. ‘
-
-> *(CELL_B, tertile=begin)* Plus it had also been made clear to me that your father had very different plans for you.
-
-> *(CELL_C, tertile=end)* But if the leaders of the community find out my son brought you here, it will not go well for him.”
+> *(BOOK_002, CELL_A, tertile=middle)* He’s closer to me than a brother and he loves you as much as I do.” “
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `emotional`
+  - Lexical signals across all four representations converge on sibling/family relational dynamics. Main keywords (brother, siblings, older, sibling) establish a family-bond context. KeyBERT terms (introduce, reminds, admitted, chuckle) suggest interpersonal familiarity and emotional disclosure. POS terms (affection, annoying, treatment, appropriate) reflect emotional regulation within close relationships. MMR terms (affection, separated, dismissed, annoying) reinforce themes of emotional connection, distance anxiety, and relational friction. The dominant security function is emotional: the topic centers on attachment bonds, belonging within family structures, and the affective significance of sibling relationships rather than material provision or status/appearance concerns.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 83 — Reassured About Eating Regularly
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i've eaten every few hours.
 
@@ -881,17 +980,41 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `{'emotional': 'EAT01', 'material': 'EAT02', 'status/appearance': 'EAT03'}`
-  - The words 'hungry', 'starving', and 'appetite' indicate emotional needs, while 'eat', 'food', and 'eating' focus on the material aspect of sustenance. 'President', 'bigger', and 'difference' suggest status and appearance concerns.
+- **A lexical:** `material`
+  - All four representations converge on material security. The dominant lexical field centers on eating, hunger, food consumption, and feeding behaviors (eat, hungry, starving, appetite, eaten, meal, feeding, skipped, eagerly). This signals concern with physical/nutritional provision within a relational context — a partner ensuring or neglecting the other's basic sustenance needs, which is a prototypical material security function.
+- **B contextual:** `UNKNOWN`
+- **C adjudicate:** `UNKNOWN`
+
+---
+
+## Topic 86 — First Name Used at Last
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** MIXED
+
+> i’ve known you for two whole years, and that is the first time you’ve ever called me by my first name.”
+
+> you’ve outgrown that nickname.” “
+
+> just between you and me, i’ve been working on a catchy superhero name.
+
+> *(CELL_B, tertile=middle)* Doesn't it bother you in the least that you don't really know him?" "
+
+### Pass A/B/C
+
+- **A lexical:** `emotional`
+  - Across all representations, the lexical field centers on name-knowing as an act of emotional significance — embarrassment, flushing, and pain signal that being known or unknown by name carries deep affective weight. The function is not material provision or status display but the emotional security derived from being recognized and remembered as an individual.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+  - CELL_B clusters strongly around emotional security — knowing someone deeply, trust, and relational familiarity drive the anxiety in these sentences. CELL_C is dominated by identity/name as social marker, pointing to status/appearance security (names as social currency, aliases, formal introductions). CELL_D splits: one sentence is status/appearance (name as identifier) and one is emotional (forgetting a name as relational loss). The overall corpus is MIXED due to the meaningful split between emotional knowing-the-person anxiety and status/appearance name-as-identity concerns, though emotional is the plurality driver.
+- **C adjudicate:** `MIXED`
+  - MIXED contextual signal is not fully resolved by adjudication. Emotional classification is upheld as primary but the mixed undercurrent should be preserved in downstream processing. Speech tag framing (9.1) may be obscuring or softening a non-emotional security function within dialogue.
 
 ---
 
 ## Topic 88 — Checking Her Feverish Temperature
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > no movement, her skin temperature clammy enough to make a ball of fear lodge in his gut. “
 
@@ -915,16 +1038,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - All four representational layers converge on emotional security. The lexical field is dominated by thermally-coded embodied affect — heat, warmth, burning, shivering, flooding, erupting — which maps consistently onto somatic markers of attachment arousal and proximity-seeking rather than material provision or status signaling. KeyBERT reinforces involuntary physiological response (shivered, melted, anxious, violently), POS surfaces internal anatomical containers (veins, ribs, insides) and atmospheric tension (resisted, narrow, pathetic), and MMR captures affective surge dynamics (flooded, erupted, flared, heaved). The resource type is somatic-affective: the body itself is the medium through which relational security is negotiated. The security function is proximity bonding — thermal and visceral metaphors are canonical markers of attachment system activation, encoding the felt sense of closeness, longing, or emotional overwhelm tied to a specific other.
+- **B contextual:** `UNKNOWN`
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 93 — Meal Plans Casually Arranged
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > that’ll wait ’til after supper, though.” “
 
@@ -942,10 +1066,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `93`
-  - {'emotional': "Words like 'we'll eat' and 'having' indicate shared experiences, while 'exciting' and 'appreciate' convey positive emotions.", 'material': "The text focuses on discussing and planning meals, with words like 'dinner', 'lunch', 'supper', 'tonight', and 'tomorrow'.", 'status/appearance': "Words like 'lady' and 'sir' acknowledge social roles and can indicate status or appearance."}
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - All four representations converge on material security. The lexical field is dominated by meal-related terms (dinner, lunch, supper, eat, having, meal, eaten) combined with temporal planning markers (tonight, tomorrow, arranged, planning, appointment). This signals concrete provisioning behavior — the scheduling and sharing of food — which is a classic material security function. No status/appearance or emotional regulation signals are present.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -968,45 +1092,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `96`
-  - The keywords and phrases indicate a focus on addressing worries, fears, and concerns (emotional), ensuring nothing is amiss (material), and managing appearances and reactions (status/appearance).
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 105 — Swept Onto The Dance Floor
-
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** MIXED
-
-> [person] and i are both taken, so we’ll only dance with each other.
-
-> i’ve never danced with a guy who real y knew what he was doing.” “
-
-> if you’ll excuse the two of us,” he pointed to me, “i’ve been dying for a dance with this woman all night.”
-
-> *(CELL_D, tertile=begin)* And the high heels she’d dangled from her hand were for dancing the night away or seducing a man.
-
-> *(CELL_A, tertile=begin)* We begin dancing again, this time getting a little friskier.
-
-> *(CELL_B, tertile=middle)* Your problem is you let what happened with Marcus keep you from attending those dances.
-
-> *(CELL_B, tertile=end)* Sparkling cocktail dresses mixed with flip-flops and Bermuda shorts on the open-air dance floor, where wealthy couples did the bump and grind or swayed in each other’s arms to the beat of classic rock.
-
-### Pass A/B/C
-
-- **A lexical:** `C1`
-  - Dance and related terms evoke a romantic atmosphere.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - All four representations converge on emotional security. The lexical field is dominated by worry, concern, fear, and reassurance-seeking terms (worry, worried, concerned, fears, bothered, assure), with no material or status indicators present. The function is anxiety regulation — one partner expressing distress or seeking reassurance that something is not a problem, and the other managing or dismissing that concern.
+- **B contextual:** `CELL_D`
+  - CELL_D sentences cluster around worry as a relational burden or practical concern — reassurance that needs won't go unmet, deflection of concern, and references to basic needs — suggesting a material or resource-based security function. CELL_B sentences frame worry as something to be dismissed or suppressed within the relationship, pointing to an emotional regulation or soothing function. CELL_C sentences redirect worry outward or away from the self, indicating a protective-emotional function with a self-effacing quality. The dominant code is CELL_D given its frequency and the grounding of worry in concrete relational stakes rather than pure affect.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 112 — Desperate Need For A Job
 
 - **Taxonomy:** 6.4 — Economic Precarity, Security & Dependency
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ve never worked in such a beautiful place and i want this job so badly.”
 
@@ -1020,9 +1117,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - All representational layers converge on material security. Main terms anchor firmly in occupational identity and economic productivity (job, business, work, hire, living). KeyBERT signals appraisal of opportunity and reassurance around dealing/negotiating capacity. POS adjectives (decent, impressive, larger, actual) reflect evaluative sizing of material standing, with anxiety marking threat to that standing. MMR reinforces this with spending, ability, task, and reassuring alongside anxiety and pretending, suggesting a narrative of validating or performing occupational/financial adequacy to a partner. No status-appearance or emotional-intimacy signals dominate.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates with employment-as-livelihood framing across BOOK_002 and BOOK_003 clusters, emphasizing job acquisition, retention, and income sufficiency as relational security anchors. CELL_D entries (BOOK_001) shift toward provision and domestic stability framing, with material comfort explicitly tied to a partner's labor output. CELL_C entries (BOOK_004, BOOK_005) reflect occupational identity and workplace-as-context rather than direct security signaling. MIXED flag applied due to meaningful cross-cell distribution across all three non-dominant cells.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1051,41 +1150,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `116`
-  - Classification based on emotional, material, and status/appearance aspects of eating and meal-related words.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 119 — Offering to Keep Her Safe
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
-
-> come on, i’ll protect you.”
-
-> you’ll protect me?” “
-
-> i can protect you from crystal, but you’ll have to let me.
-
-> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
-
-> *(CELL_C, tertile=middle)* At least in LA you’d both have protection; you know my security guys are some of the best in the business.
-
-### Pass A/B/C
-
-- **A lexical:** `119`
-  - The words and phrases listed under each security function category reflect the primary focus of the topic, which is the protection and preservation of emotional, material, and status-related aspects of an individual or entity.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - The dominant lexical signal across Main, KeyBERT, and MMR is concrete food-related activity: plates, fork, sandwich, bacon, bread, meal, eaten, dipped, stirred, preparing. These anchor the topic firmly in material provision and nourishment as a relational security function. POS terms (anticipation, warmth, enthusiasm, amusement) introduce an emotional overlay suggesting shared mealtime as affective bonding, creating minor disagreement. However, the functional core is material: food is being prepared, shared, and consumed as a tangible resource exchange rather than as status display or emotional reassurance per se. The emotional terms are incidental affect surrounding a material act, not the primary security mechanism.
+- **B contextual:** `emotional`
+  - The majority of sentences across all cells use mealtime utensil and food-handling actions (tapping forks, dropping spoons, fumbling with silverware) as proxies for emotional tension, discomfort, or interpersonal dynamics between characters — classic romance-genre displacement of feeling onto physical gesture. CELL_B (BOOK_003) skews more material, depicting practical provisioning and caregiving acts (fetching sandwiches, giving ice cream, handing napkins) that signal nurturing/support rather than internal emotional state. BOOK_004_1 is an outlier academic/theological reference with no direct romance function and is coded status/appearance as the closest available category for institutional/symbolic framing. BOOK_002_1 is sensory-intimate but coded emotional given its affective rather than transactional register. Overall dominance is clearly emotional.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 128 — Confessing How Much You've Missed
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ve missed most of his life already.
 
@@ -1097,9 +1173,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Dominant lexical signal is yearning and absence ('miss, missed, missing, much, misses'), reinforced by intimate address ('you, hi, sir') and solemn/breathless affective delivery markers ('solemnly, breathlessly, thoughtfully'). POS anchors ('precious, voices, handful, pieces') evoke fragility and scarcity of connection rather than material or status concerns. MMR adverbs confirm emotionally weighted, deliberate speech acts. All representational layers converge on emotional security seeking through relational presence and fear of loss.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates with direct emotional longing and attachment expressions between individuals (romantic partners, family members) — classic emotional security language. CELL_C instances involve absence framed abstractly or impersonally (missing peace, missing a ball), suggesting lower emotional salience or non-relational context. CELL_D instances are action/physical-outcome oriented (missing a shot, missing an orgasm, missing stars), anchoring to material or sensory rather than emotional registers. The dataset is MIXED due to meaningful CELL_C and CELL_D minority presence alongside the CELL_B majority.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1120,16 +1198,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S1`
+- **A lexical:** `emotional`
+  - Lexical signals across all representations converge on emotional processing and interpersonal dynamics. KeyBERT terms (anxious, hopeful, encouraged, insulted, urge, irritation) indicate affective states and emotional regulation. MMR terms (poised, insulted, encouraged, remarked) reflect interpersonal emotional exchange. POS terms (irritation, hopeful, notion, possibilities) reinforce internal psychological orientation. Main tokens are male proper nouns suggesting a male-perspective relational scenario. No material resource or status/appearance markers are present. The dominant function is emotional security through interpersonal validation and affective stability.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+  - CELL_A entries (BOOK_003, BOOK_007) are strongly emotional — intimate exclamations directed at 'Ben' and interpersonal attempts at connection or communication. CELL_B entries split: BOOK_005 entries involve emotional relational dynamics (concern, rescue impulse, engagement news, phone contact with Ben), coded emotional; BOOK_006 entries reference Benjamin Franklin as a historical/public figure in a reputational and identity-replacement context, coded status/appearance. The dataset is MIXED due to the meaningful presence of both emotional and status/appearance coding across distinct cell clusters.
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 157 — Swearing to Save Him From Himself
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > and you’ll get it, i swear,” [person].
 
@@ -1145,9 +1225,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S1`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Signals across all representations converge on emotional security dynamics. KeyBERT terms (begged, confessed, tense, surely, ought) indicate interpersonal pressure and vulnerability disclosure. POS terms (dislike, worries, enthusiasm, desperation, embarrassing) reflect affective states and emotional stakes. MMR terms (dump, gritted, desperation, confessed) reinforce conflict and emotional tension rather than material exchange or status signaling. The main keywords (optimism, good, name-based character references) suggest a relational narrative centered on emotional reassurance and connection-seeking.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates across BOOK_001, BOOK_006, and BOOK_009, representing a consistent referential anchor — a character named Sam functioning as an observational, emotionally perceptive presence whose awareness and softheartedness signal emotional attunement and relational security. CELL_A entries (BOOK_008) cluster around apology and address directed at Samantha, indicating a distinct emotional repair or vulnerability dynamic — consistent with emotional security functions involving acknowledgment and relational distress. CELL_D appears once (BOOK_004_1) as a dedicatory or gift-directed statement toward Steve, suggesting a material or gesture-based security signal, though isolated. The corpus is MIXED due to the meaningful presence of both CELL_B and CELL_A clusters, though CELL_B is dominant.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1170,9 +1252,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `material`
+  - All representers converge on material security. The lexical field centers on movies, TV, film, Disney, Hollywood, and quality/surroundings, pointing to the provision of or access to entertainment as a concrete, shared resource. Words like 'benefit,' 'quality,' 'considering,' and 'planning' reinforce a material framing around evaluating or securing entertainment access rather than emotional bonding or status signaling.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -1203,10 +1286,12 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `{'emotional': ['reassuring', 'calming', 'nods', 'praying', 'afterward', 'tugged', 'clenched', 'emotions', 'shivered'], 'material': [], 'status/appearance': []}`
-  - The words and phrases listed under each character or term are categorized based on their primary function in the context of the romance topic. The consensus code represents the words and phrases that are most commonly associated with emotional security functions in this topic.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Dominant signals across all three representations converge on emotional regulation and interpersonal soothing: 'reassuring' and 'calming' appear in all three, supported by 'praying', 'shivered', 'clenched', 'fiercely', 'tugged', and 'nods', indicating a scene centered on emotional vulnerability, comfort-seeking, and affective reassurance between characters rather than material provision or status/appearance concerns.
+- **B contextual:** `CELL_B`
+  - The overwhelming majority of sentences are coded CELL_B across three distinct source books, spanning supernatural/identity themes (BOOK_001), theological/covenant discourse (BOOK_004), and interpersonal conflict/action (BOOK_007). Two sentences from BOOK_009 are coded CELL_A, distinguished by their focus on visible emotional-physiological responses (face turning white, simultaneous relief and worry), which signal a different functional register. The dataset is MIXED due to the presence of both CELL_A and CELL_B codes, though CELL_B is dominant.
+- **C adjudicate:** `UNKNOWN`
+  - Lexical and contextual inputs logged. Taxonomy assignments recorded. Ratings and full classification withheld until Pass C.
 
 ---
 
@@ -1236,16 +1321,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S1`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - KeyBERT, POS, and MMR converge on material security through logistical and resource-oriented terms (planned, invitation, reception, destination, arrange, spending, preparing), reflecting concrete investment in wedding infrastructure. Main keywords introduce status/appearance signals (bride, bridal, ceremony, bridesmaids) centered on social presentation and role performance. Disagreement is flagged due to the main set's status/appearance orientation, but the three extractor methods align on material functions governing event execution, resource allocation, and formal coordination, yielding a material consensus.
+- **B contextual:** `STATUS`
+  - All 20 sentences cluster around the wedding ceremony as a formal social institution — the public ritual of marriage, its ceremonial proceedings, social recognition, community witnessing, and role-based identity markers (bride, groom, guest list, reception). Wedding as a construct is fundamentally a status/appearance security function: it confers social legitimacy, public identity transition, and community standing. References to the wedding night (BOOK_001_11, BOOK_001_17) are framed in terms of the wedding-day context and social bargaining rather than emotional intimacy per se. The fairy-tale wedding reference (BOOK_001_15) concerns social ideals and appearance norms. No sentences foreground material resource exchange or deep emotional bonding as the primary security signal — the dominant frame throughout is the public, institutional, status-conferring nature of the marriage ceremony itself.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 172 — Reporting to The Security Officer
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > you’ll also report this to your regional security officer, yes?”
 
@@ -1259,16 +1346,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - The lexical cluster centers on law enforcement figures (police, cop, officer, authorities) with supporting terms around protection, evidence, weapons, secured, and task-oriented activity. While the main keywords suggest a status dimension (authority figures as social validators or status symbols in a romantic context), the broader keyword sets consistently emphasize functional, resource-based security: physical protection, enforcement capacity, secured environments, and instrumental dealing with threats. The dominant signal across KeyBERT, POS, and MMR is material security — the partner's role as a provider of physical safety and institutional protection rather than emotional attunement or social prestige. The status reading from main keywords is plausible but minority; material security wins by consensus.
+- **B contextual:** `status/appearance`
+  - CELL_A (BOOK_001, BOOK_002) clusters around calling/involving police as a protective or corrective action — invoking institutional authority as a material safety mechanism (protection from harm, legal recourse). CELL_B (BOOK_004) centers on hierarchical rank, professional standing among officers, gender-based status challenges, and compliance with superior orders — all status/appearance functions within a professional-romantic context. CELL_A (BOOK_005) references a partner or person of interest being a cop, framing their occupational identity and social role as salient to the relationship dynamic — status/appearance coding dominates as the cop identity is the security-relevant feature being evaluated. Overall the corpus is MIXED across material and status/appearance, with status/appearance dominant.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 173 — Waiting For Him to Wake
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > it’s after him so you’ll just have to wait until he wakes up to get your answer.”
 
@@ -1292,45 +1381,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `173`
-  - See above rationale for each category.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 174 — Ranch Life and Falling in Love
-
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** MIXED
-
-> i’ve seen your willy on numerous occasions on the ranch.
-
-> the ranch is doing good, and i’ve fallen in love.
-
-> i’d take you there, but i imagine you’ve already seen enough cattle to last you a lifetime.”
-
-> *(CELL_B, tertile=end)* I’ll fetch some water, and then could you sit with him while I fetch the farmer’s wife?” “
-
-> *(CELL_B, tertile=end)* That’s as much as I can do—we’re busy at the farm, and the lad isn’t in danger.”
-
-> *(CELL_B, tertile=middle)* They got milk, cheese, eggs and other produce from the farm, and they would soon be easily able to grow enough herbs and vegetables for their own use.
-
-> *(CELL_B, tertile=middle)* When the resident died, the farmer, needing the money, had been glad to sell it off with some land to a couple of wealthy Gidinians in need of solitude and a place away from the bustle of the town.
-
-> *(CELL_B, tertile=middle)* Jaime suspected he holed up in a barn or in a storeroom, possibly up at the farm.
-
-> *(CELL_B, tertile=end)* Seve was busy preserving, drying and storing the produce from the garden and bartered meat, cheese and grain from the farm.
-
-> *(CELL_D, tertile=end)* She dreams of one day living out in Montana, enough land to have a few horses, and find a couple of cowboys of her own.
-
-> *(CELL_A, tertile=end)* This ranch is worth a fortune and we were lucky to be able to sell it for what we did.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `emotional`
+  - Lexical field centers on sleep states, wakefulness, and nighttime presence. Supporting terms such as bedside, curled, drifted, panting, pounding, and warmed indicate physical co-presence during vulnerable rest states, bodily attunement, and soothing arousal regulation. Departure and rear suggest transitional proximity dynamics. No material exchange or status signaling detected. Pattern is consistent with attachment-based emotional security through nighttime closeness and physiological co-regulation.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -1351,16 +1405,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `emotional`
+  - The convergent signal across KeyBERT and MMR layers is one of emotional attunement and vulnerability: affection, longing, worrying, distress, consumed, warming, kindly, thoughtfully. POS reinforces emotional intensity via 'passionate' and 'distress'. While 'pemberley' and 'value' gesture toward material/status dimensions, these are contextual anchors (Pride and Prejudice setting) rather than security-function drivers. The passage is coded as emotional security — characters seeking or providing emotional reassurance, care, and relational closeness.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 190 — Offering to Get Someone Cleaned Up
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’ll get cleaned up here as soon as i can.
 
@@ -1380,76 +1435,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
-
----
-
-## Topic 193 — Nurse Arranged After Hospital Release
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** E
-
-> and you’ll both stay here, at caleb’s?” “
-
-> i'll arrange for a nurse to come to the house when they release caleb.
-
-> twenty-three caleb y ou ignore me, and i’ll ignore you .
-
-> *(CELL_B, tertile=begin)* Kayla points to me, like she can't figure out who Gavin's talking about.
-
-> *(CELL_A, tertile=begin)* In any case, I’m going to need to return myself to help out because Ramsey will be busy with Chloe and the baby,” he continued. “
-
-> *(CELL_A, tertile=middle)* After numerous brushes with the law and butting heads with the parents of a young lady who didn’t want him to be a part of their daughter’s life, Dillon had convinced Bane to get his life together.
-
-> *(CELL_A, tertile=end)* This was September, and Chloe was due to deliver in November, which meant Callum would be leaving Denver a few months after that.
-
-> *(CELL_A, tertile=middle)* Dillon and Ramsey did an awesome job and I know for sure we were a handful at times, some of us more than others.”
-
-> *(CELL_A, tertile=middle)* From what Callum had heard, Bane had been only eight when his parents had been killed.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `E`
-- **C adjudicate:** `None`
-
----
-
-## Topic 204 — Promising to Care For Her Sister
-
-- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** UNKNOWN
-
-> i’ll need to finish dressing and leave a note for my sister.”
-
-> yes, and soon you’ll be my sister.
-
-> i’ll find a way to care for your mother and your sister.” “
-
-> *(CELL_D, tertile=middle)* My sister’s still there with her husband, who’s a copper, and their three kids.
-
-> *(CELL_A, tertile=begin)* You have not been paying close attention to your sister’s problems lately, have you?” “
-
-> *(CELL_A, tertile=begin)* Your sister mentioned in passing that you are something of a recluse.” “
-
-> *(CELL_A, tertile=end)* You mock your sister, but you will admit that she has great talents.” “
-
-> *(CELL_A, tertile=end)* I realize that you are concerned for your sister’s happiness.
-
-### Pass A/B/C
-
-- **A lexical:** `204`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - Lexical field centers on cleaning, tidying, and domestic upkeep tasks. Signals across all representers converge on tangible, practical labor and resource provision within a relational context, with no emotional or status-oriented markers present.
+- **B contextual:** `CELL_B`
+  - Three distinct cell clusters are present. CELL_C sentences cluster around physical caretaking and battlefield/environmental cleanup with a nurturing or protective tone, consistent across BOOK_001. CELL_D sentences cluster around social reputation, public image, and interpersonal management of appearances or social fallout, consistent across BOOK_002 and BOOK_003. CELL_B sentences cluster around personal hygiene, physical self-maintenance, and practical material preparation (sanitizer, gloves, cleaning supplies), consistent across BOOK_004, BOOK_005, and BOOK_006. CELL_B is dominant by count. The dataset is MIXED across three codes with no cross-cell contamination detected at the sentence level.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 224 — Encouraging Words From An Angel
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** STATUS/APPEARANCE
+- **Code:** MIXED
 
 > you’ve got this, angel, take it to the house.”
 
@@ -1469,65 +1466,49 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `STATUS/APPEARANCE`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Angel/guardian imagery dominates the main lexicon, signaling idealized protective bonding and devotion framing. KeyBERT terms (doubted, insisted, honestly, willing, forgetting) reflect anxious reassurance-seeking and trust negotiation. POS and MMR reinforce behavioral consistency concerns (behavior, practice, ability, task) alongside emotional repair signals (heal, dislike). No material or status indicators present. Pattern is consistent with emotional security seeking through idealized partner devotion and reassurance of loyalty.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
-## Topic 240 — Unsure How to Offer Comfort
+## Topic 232 — Conversation Cut Short By Arrival
 
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** UNKNOWN
 
-> oh my god, sean!
+> dex had come in and gabe's conversation with her, the longest conversation that they'd had in the couple of weeks he'd been back, was over.
 
-> sean pursed his lips, unsure he was equal to the task of comforting [person].
+> gabe leaned down so he wouldn’t be overheard. “
 
-> sean held out his hand and added; “now if you’ll excuse me i have a beautiful woman waiting to have breakfast with me.”
+> i'll tell you right now falan and gabe are the only people on my team that i'd stake my career— or my balls —on."
 
-> *(CELL_B, tertile=begin)* Oh,” I said, thinking fast, watching as Seth started to show Liam how to use another nearby machine, while the Tiffanys and Brittanys gathered round, looking more worshipful than ever.
+> *(CELL_C, tertile=end)* Have Remy or the boys been out to question you again or give you more information about Joshua’s attack?”
 
-> *(CELL_B, tertile=end)* You need to stop nipping at him and face the fact that when Shon goes under, he’s off limits, one breath away from being a hostile at our backs.” “
+> *(CELL_A, tertile=end)* He almost told her to call him Gabe, but he knew his name would sound way too good coming from her full lips.
 
-### Pass A/B/C
+> *(CELL_A, tertile=end)* Her name fit her, Gabe had found himself thinking one too many times.
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+> *(CELL_A, tertile=begin)* Gabe pretended to tackle Zach as he pulled the microphone from his hand, but he instantly sobered as he turned to Chase and Chloe. “
 
----
-
-## Topic 247 — Promising You Will Not Be Alone
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
-
-> if we make it through this alone, we’ll just be better at being alone.”
-
-> you’ll never be alone.
-
-> before you say no, i want you to know i’ll be alone mostly.
-
-> *(CELL_B, tertile=end)* If I went out alone, it seemed I felt surrounded by people who couldn’t speak to me.
-
-> *(CELL_B, tertile=begin)* I promise you, you will never be alone again so long as I live.”
-
-> *(CELL_B, tertile=begin)* I’ve pictured this so many times in my mind, I don’t want to wake up and find I’m alone again.” “
+> *(CELL_A, tertile=end)* Her face got red then and she said angrily, "So, Gabe knew and didn't clue me in?
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The words provided primarily revolve around emotional states and experiences, with no clear indication of material or status/appearance concerns.
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical signals across all four representations converge on emotional security. Main tokens (cringed, hadn, squeezed-adjacent hand) indicate anxiety and physical comfort-seeking. KeyBERT tokens (trembling, groaned, distracted, impatiently, overheard) reflect emotional dysregulation and heightened interpersonal tension. POS tokens (longing, pained, instincts, awareness, permission, gesture) denote internal affective states and boundary-negotiation. MMR tokens (longing, pained, stroking, instincts, kindly) reinforce tactile-emotional soothing and attachment-oriented behavior. No material resource indicators or status/appearance markers are present. The scene centers on two named individuals navigating emotional vulnerability, physical reassurance gestures, and the need for relational safety.
+- **B contextual:** `CELL_A`
+  - CELL_A sentences cluster around warm, familiar, emotionally invested interactions with the name 'Gabe' — shortened, intimate, affectionate register; concern for his feelings, wanting his approval, noticing his physical features (lips, name fitting her). These map to emotional security functions: closeness, belonging, fear of disapproval, emotional attunement. CELL_B sentences use the full formal name 'Gabriel' in contexts of tension, distance, guarded disclosure ('finally going to let me in'), confrontation ('What the hell'), and cautious observation — consistent with a more status/appearance or boundary-testing security function, where the relationship dynamic is less settled and more evaluative. CELL_C (one instance) involves external threat/safety information (attack, police questioning), which is a material/protective security function distinct from the relational dynamics of the other cells. Dominant code is CELL_A given volume and probability weight.
+- **C adjudicate:** `UNKNOWN`
+  - Lexical and contextual signals align on emotional function. No secondary signal to adjudicate. Straightforward single-function classification under 4.2.
 
 ---
 
 ## Topic 260 — Crowd Goes Wild For Him
 
 - **Taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > he played crazier than i’ve ever seen him, and from the way the crowd was going insane with cheering around me, cam played even crazier than anyone had ever seen him play, ever!
 
@@ -1544,9 +1525,9 @@
 ### Pass A/B/C
 
 - **A lexical:** `E`
-  - The text discusses mental instability (crazy, insane, madness) and its effects on thoughts (think, going), indicating emotional security function.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+  - The dominant lexical cluster centers on intensity descriptors of emotional states — crazy, insane, madness, craziness, crazier — which in romantic contexts typically signal emotional overwhelm or passion-driven dysregulation. Supporting terms like indication, equal, fault, chuckle, and appreciate reinforce an emotional accounting frame where the speaker is processing feelings, assigning relational meaning, or seeking acknowledgment of their inner experience. The minor status signals (officially, proved, crowd) are peripheral and insufficient to shift the primary coding away from emotional security-seeking.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -1575,88 +1556,42 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `EMS`
-  - The words and phrases used in the topic indicate a mix of emotional, material, and status/appearance security functions.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical signals across all representations converge on emotional security: 'insensitivity', 'apology', 'upset', 'awareness', 'appreciation', 'treatment', and 'explanation' indicate a relational dynamic centered on emotional hurt, recognition of wrongdoing, and the need for acknowledgment. No material or status/appearance markers are present. The function is validation-seeking — one party seeking emotional acknowledgment and apology from another.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates across BOOK_001 and BOOK_005, with recurring named third-party figures (Felicia, Gabby, Claire, Olivia, Trish) appearing in relational tension or social observation contexts — consistent with a social/status-adjacent security function involving rival or peer presence and relational positioning. CELL_A (BOOK_002) clusters around named female figures (Nikki, Kiara, Shelley) in more direct interpersonal or emotional encounter framing. CELL_C (BOOK_004) is a single isolated affirmation sentence. CELL_D (BOOK_006) references a social connection through a third party. The dataset is not sufficiently mixed to warrant a MIXED designation; CELL_B is clearly dominant.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
-## Topic 277 — Promising to Handle The Lawyer
+## Topic 299 — Pledging to Have Your Back
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MATERIAL
+- **Code:** MIXED
 
-> i’ll talk to the lawyer tomorrow.
+> before she’s completely out i ask, “[person], you know i’ve always got your back, right?”
 
-> we’ll find a good lawyer to help.
+> but i’ve seen you, seen who you are, watched you handle uncle charlie.
 
-> you can count on me to deal with the legal trouble they’ll cause.”
+> i’ve got a little time before charlie finishes my bike.
 
-> *(CELL_D, tertile=end)* Mediation has never come easily for me and I need all the help I can get.
+> *(CELL_A, tertile=middle)* Kevin was worried that Scott’s death was somehow related to Todd’s return to Birmingham.’
 
-> *(CELL_B, tertile=end)* Such a lot of fuss over a piece of real estate that was destined by federal law to go unclaimed by anyone.
-
-> *(CELL_B, tertile=end)* It’s important to establish legal boundaries of ownership, especially when you’re talking about gems and precious metals.
+> *(CELL_A, tertile=begin)* They all left for college with big dreams, except Scott and Kevin,’ she said sadly. ‘
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MATERIAL`
-- **C adjudicate:** `None`
-
----
-
-## Topic 289 — Quick Peck on The Forehead
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
-
-> mikey, i’ll be back soon, i promise,” nate said, placing a quick peck on his forehead. “
-
-> nate arched an eyebrow, gesturing back toward the parking lot. “
-
-> nate looked at the older asian man gesturing wildly to them, then at the array of paints.
-
-> *(CELL_B, tertile=begin)* Dominic frowned, knowing that to demur a second time would definitely incur Nate’s curiosity. ‘
-
-### Pass A/B/C
-
-- **A lexical:** `{'emotional': 7, 'material': 1, 'status': 1}`
-  - Words like 'nate', 'derick', 'walter', 'israfel', 'shame', 'mate', and 'gesturing' primarily evoke emotional responses or convey emotional states. 'Wiener' is associated with material aspects, while 'jr' suggests a status or appearance-related connotation.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 305 — Confessing A Lifelong Regret
-
-- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** {'CELL_A': 'Emotional', 'CELL_B': 'Material', 'CELL_C': 'Status/Appearance', 'CELL_D': 'Mixed'}
-
-> i know that now, and i’ll go to my grave regretting what i did to you.” “
-
-> come on in, you’ll no doubt regret it.
-
-> you’ll regret that.’ ‘
-
-> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
-
-> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
-
-### Pass A/B/C
-
-- **A lexical:** `305`
-- **B contextual:** `{'CELL_A': 'Emotional', 'CELL_B': 'Material', 'CELL_C': 'Status/Appearance', 'CELL_D': 'Mixed'}`
-  - The dominant code for each cell is determined by the most frequent security function in the sentences. 'CELL_A' sentences primarily express emotional regret or lack thereof, 'CELL_B' sentences involve material or practical consequences, 'CELL_C' sentences focus on status or appearance, and 'CELL_D' sentences are a mix of these functions.
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Cross-representation convergence favors emotional security: promises, threats, forgive, distraction, solemnly, and instructed collectively index anxiety around commitment reliability, behavioral reassurance, and fear of abandonment or betrayal. Status/appearance signals (exquisite, embarrassing, remark) form a secondary cluster suggesting social-evaluative concern but do not override the dominant emotional regulation theme. Material signals (spending, terms, hundreds) are peripheral and likely contextual rather than constitutive of the security function.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 307 — Hauling Someone Up The Stairs
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > [person] would hate it if she took a rake like [person] to her bed, and she would so love to rub it in joshua’s face and prove his threats could not restrain her. “
 
@@ -1677,9 +1612,47 @@
 ### Pass A/B/C
 
 - **A lexical:** `emotional`
-  - The majority of the words are related to emotions, feelings, and actions driven by emotions, indicating that the primary security function is emotional.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+  - Lexical field converges strongly on emotional security: affective terms (affection, anxiety, conscious, urged, urge) anchor the core signal; somatic-arousal markers (heaved, winced, panting, struggled, fought) indicate physiological stress responses tied to emotional stakes; behavioral cues (movements, digging, emerged, winked, permission) suggest negotiation of interpersonal boundaries and consent; threat-framing (threats) and permission-seeking reinforce attachment-regulation dynamics rather than material exchange or status display. No resource-transfer or status/appearance lexemes present.
+- **B contextual:** `MIXED`
+- **C adjudicate:** `MIXED`
+
+---
+
+## Topic 315 — Claiming Her As His Own
+
+- **Taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
+- **Code:** UNKNOWN
+- **Evidence:** exhaustive packet
+
+> henri, should any ask, this woman belongs to my cousin tristan—and to me.”
+
+> everything he was warmed in tristan’s presence, and short of sounding like one of those cards that sang when opened, [person] didn’t know where to begin telling sey how much tristan seemed to fit into him—and around him.
+
+> i'll call tristan right after i get off the phone." "
+
+> besides, i suspect that even if i were cruel enough to hand tristan over, it would gain me little except a lifetime of slavery to george.
+
+> *(CELL_B, tertile=end)* Val’s words slapped at him, forced him to realize a few things he’d rather have ignored.
+
+> *(CELL_B, tertile=begin)* Val was your shot at actually having a real life and you let her waltz right out the door.”
+
+> *(CELL_B, tertile=end)* Val looked at him as if he was out of his mind and that’s exactly how Dev felt. “
+
+> *(CELL_B, tertile=begin)* Val wondered, just a little embarrassed to think that might be true.
+
+> *(CELL_B, tertile=begin)* Devlin Hudson didn’t know it, but Val had already won the first battle for his heart.
+
+> *(CELL_B, tertile=end)* It was as if even knowing that his parents had made up their differences, Dev was still determined to keep himself locked behind the walls Val had almost given up on smashing.
+
+> *(CELL_B, tertile=middle)* His blood boiled as he looked at the computer-generated image of him and Val facing away from each other.
+
+### Pass A/B/C
+
+- **A lexical:** `emotional`
+  - Lexical signals across all four representations converge on emotional security. Hesitation, nudged, bothered, grumbled, and behavior point to anxiety around relational cues and responses. Screaming, ribs, and paced suggest physical manifestations of emotional tension. Studying and indication reflect monitoring of a partner's signals for reassurance. No material or status/appearance markers are present.
+- **B contextual:** `E`
+  - All 20 cells center on the emotional relational dynamic between Dev and Val: abandonment, emotional walls, conflict, longing, trust, and the battle for emotional connection. No material/resource security signals and no status/appearance signals are present. The security function throughout is purely emotional — fear of vulnerability, emotional withdrawal, relational repair, and interpersonal confrontation.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1712,17 +1685,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `EMS`
-  - The words chosen evoke a sense of exploration, connection, and awareness, which are key elements in a romantic context.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `status_appearance`
+  - Across all four representations, the lexical field converges on observational and spatial awareness behaviors: glances, peered, squinted, strolled, wandered, circling, paced, surroundings, pattern, sidewalk. The natural setting (trees, woods, forest, path) frames a scene of movement and watching rather than emotional intimacy or resource exchange. Keywords like tightening, terrified, and shifting suggest anxious self-monitoring and awareness of being seen or followed, anchoring the security function in status/appearance dynamics — specifically the management of visibility, social legibility, and perceived threat or judgment in a semi-public space.
+- **B contextual:** `CELL_A`
+  - The corpus is dominated by CELL_A passages (BOOK_003, BOOK_004) featuring outdoor environmental settings used as backdrops for social observation, surveillance, and interpersonal tension — consistent with a security function tied to emotional/relational vigilance and proximity awareness. CELL_B passages (BOOK_002) depict physical navigation of trees and outdoor structures with urgency and bodily risk, suggesting a distinct action-oriented sub-pattern. CELL_D passages (BOOK_001) are atmospheric scene-setting with low interpersonal salience. No strong cross-cell blending warrants a MIXED designation; CELL_A is clearly dominant by count and thematic weight.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 330 — Curious About Her Cooking Skills
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** UNKNOWN
+- **Code:** MIXED
 
 > you’ve got me curious about your culinary skills.”
 
@@ -1738,51 +1712,17 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E`
-  - The keywords provided are primarily focused on the act of cooking, learning to cook, and the enjoyment and excitement derived from it. They do not explicitly mention material possessions or status symbols, making 'Emotional' the primary security function.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 332 — First Time Inside A Grocery Store
-
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** MIXED
-
-> because that was the first time i've ever had fun grocery shopping.”
-
-> and now we’ve our own talkin’ shop in leinster house – we ignore their laws, too.”
-
-> [person], i don’t think i’ve ever been in a grocery store.”
-
-> *(CELL_B, tertile=middle)* Feeling pleasantly paparazzied I scuttled in through the entrance and went down to the coffee shop.
-
-> *(CELL_B, tertile=end)* As she’d done nothing but shop ever since we’d got here, I’d been a bit taken aback, but she claimed there were still a million things left to buy.
-
-> *(CELL_B, tertile=begin)* We walked into the Coffee Shoppee and I took in the decor bemusedly.
-
-> *(CELL_C, tertile=end)* However, rumor has it that there’s a pile of modernized equipment in the back of one of the storerooms, along with a couple of experts who are going to show us how it’s done.”
-
-> *(CELL_C, tertile=end)* In a couple of them, you can even see piles of fabric and other trade goods, sort of the A.D. 1000 version of a stadium concourse.” “
-
-> *(CELL_C, tertile=begin)* The end result was part feng shui, part Zen, part hey-that’s-cool impulse buy.
-
-> *(CELL_C, tertile=middle)* I felt like I was only in the library for a couple of hours, but I lost most of a day out here.
-
-### Pass A/B/C
-
 - **A lexical:** `material`
-  - The main terms revolve around shopping and items, indicating a focus on material security. 'Places' suggests status/appearance, while 'experience' hints at emotional security.
+  - Cooking, baking, grilling, and chef-related skills consistently signal material resource provision and domestic competency. Supporting tokens (taught, trained, practice, ability, quality) reinforce skill acquisition and demonstration of practical value. No emotional intimacy or status/appearance signals dominate.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
 ## Topic 339 — Regulars at The Bar
 
 - **Taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i’m pretty sure i’ve been to every bar and club in the state, with crosbie right there beside me.
 
@@ -1806,10 +1746,36 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E2M3S1`
-  - The emotional security function is emphasized through words like 'enthusiasm', 'faces', and 'worst', suggesting a focus on feelings and interactions. Material security is evident in terms related to bars and their contents ('bar', 'bars', 'bartenders', 'stocked', 'saloon', 'desirables', 'scummy'). The status/appearance function is indicated by words like 'makeshift', 'possibilities', 'typical', and 'latest', which convey the atmosphere and appearance of the environment.
+- **A lexical:** `emotional`
+  - The dominant lexical cluster centers on bar/saloon environments as social gathering spaces, with affective language around crowd dynamics, enthusiasm, and social possibilities. The MMR and POS sets emphasize experiential and social-emotional dimensions (enthusiasm, faces, crowd, possibilities, ducked) suggesting navigation of social belonging rather than material provision. Main set's 'desirables' and 'scummy' signal social sorting and acceptance anxiety. Minor material signal from 'stocked' and 'afford' is outweighed by the emotional-social framing of the environment as a site of connection-seeking.
+- **B contextual:** `CELL_B`
+  - CELL_B dominates with bar-as-social-venue references tied to interpersonal and romantic encounters (seeking partners, social bonding, conflict). CELL_A represents bar-as-owned-material-asset, signaling resource/livelihood security. CELL_D captures bar-as-physical-environment with safety/threat framing (guards, bouncers, low-stakes casual setting). The dataset is MIXED across three cells, with CELL_B as dominant.
+- **C adjudicate:** `UNKNOWN`
+  - Single-signal input with no secondary modifier. Contextual CELL_B applied to public/leisure domain. Awaiting Pass C for full disclosure.
+
+---
+
+## Topic 340 — Patience Tested Through Small Trials
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** MIXED
+
+> for two years he had observed the christmas elf, but he never imagined touching her.
+
+> from the moment that she started working at her current job, she had never clicked with frank.
+
+> her patience throughout the meal with the girls never wavered, not with spilled drinks, sloppy faces and an occasional cry for attention.
+
+> *(CELL_A, tertile=middle)* Up until now, she'd never met anyone who made her ache for the things that were denied her.
+
+> *(CELL_A, tertile=begin)* She'd never known anything like the power and hunger of his kiss.
+
+### Pass A/B/C
+
+- **A lexical:** `emotional`
+  - Lexical signals across all four representations converge strongly on emotional security. Main tokens such as 'violent', 'regime', 'standards', and 'contact' suggest a relational environment characterized by fear, control, or threat. KeyBERT tokens including 'emotionally', 'feared', 'disappointed', 'unhappy', and 'cared' directly index affective states and emotional responsiveness. POS and MMR tokens reinforce this with 'emotionally', 'upset', 'feared', 'witnessed', and 'cared'. Isolated material signals ('meal') are incidental and insufficient to shift classification. The dominant pattern reflects concerns about emotional safety, predictability of care, and freedom from psychological or physical threat within the relational context.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -1830,17 +1796,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `EME`
-  - The given words primarily convey emotions, with some material and status/appearance aspects.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `status_appearance`
+  - Split between emotional (main, POS) and status/appearance (KeyBERT, MMR). MMR and KeyBERT carry higher semantic specificity — formal titles, public greeting rituals, and crowd context override the generic positive affect vocabulary in main tokens, tipping consensus to status/appearance.
+- **B contextual:** `emotional`
+  - Topic 351 centers on the act of seeing or meeting another person in a romantic or interpersonal context. The overwhelming majority of sentences express emotional valence around presence, reunion, farewell, or longing — core emotional security functions (desire for connection, fear of loss, relief at reunion). BOOK_003 sentences are notably formal/period-register but still encode emotional pleasure at another's presence. BOOK_002_5, BOOK_002_6, BOOK_004_1, and BOOK_004_2 are contextually ambiguous or purely descriptive with no clear romance-security function and are coded none. No material or status/appearance security functions are present.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 355 — Blanket Draped Over Someone
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > bos went over to it and draped it over dainy as a blanket.
 
@@ -1866,16 +1833,18 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `S1`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field dominated by bedding and wrapping vocabulary (blanket, comforter, tucked, draped, wrapped, curled, tightly) with affective modifiers (terrified, embarrassed, heated) indicating emotional regulation through physical enclosure. No material exchange or status signaling present. Pattern consistent with comfort-seeking or vulnerability management via tactile containment rather than resource acquisition or social positioning.
+- **B contextual:** `CELL_B`
+  - The overwhelming majority of sentences cluster in CELL_B, characterized by physical comfort objects (blankets, coats, coverings) used in intimate or caregiving contexts — wrapping, tucking, carrying, warmth-sharing — signaling emotional security expressed through tactile/material provision between characters. The emotional valence is primary: objects serve as proxies for care, protection, and closeness rather than as neutral material items. CELL_D sentences (BOOK_002_1, BOOK_003_1, BOOK_003_2) are more neutral or domestic in tone — a jacket left on the ground without explicit emotional framing, routine bed-making, and an unrelated wire detail — lacking the charged caregiving dynamic that defines CELL_B. The corpus is dominated by CELL_B with no meaningful competition from other cells.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
 ## Topic 356 — Admitting Exhaustion After A Long Day
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** MIXED
+- **Code:** UNKNOWN
 
 > i am kind of tired, but you’ve done enough.
 
@@ -1893,9 +1862,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field dominated by fatigue and exhaustion vocabulary (tired, exhausted, drained, worn, washed, rested) with emotional qualifier (emotionally) and interpersonal acknowledgment markers (remarked, sir, kind). Pattern indicates a bid for emotional attunement or validation around depletion states rather than material provision or status signaling.
+- **B contextual:** `CELL_B`
+  - Three distinct functional clusters emerge across the five books. CELL_C sentences (BOOK_001) involve one party observing or acknowledging the other's fatigue in a relational/interactional context, suggesting an other-directed noticing function. CELL_B sentences (BOOK_002, BOOK_005) are predominantly self-reported states of exhaustion, often with contextual grounding (time, week, circumstances), functioning as internal state disclosure. CELL_D sentences (BOOK_003, BOOK_004) involve fatigue framed alongside physical vulnerability, emotional depletion, or health concern, with a caregiving or diagnostic tone. CELL_B is dominant by sentence count. The dataset is MIXED across three codes, with no single code accounting for all entries.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1914,10 +1885,10 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E3M0S0`
-  - The text primarily focuses on emotional intimacy and reassurance, with no mention of material possessions or status/appearance. Keywords like 'squeeze', 'reassuring', 'calming', and 'trembling' emphasize emotional connection.
+- **A lexical:** `emotional`
+  - All representers converge on emotional security. The lexical field is dominated by tactile reassurance gestures — squeezing, gripping, draping, gentle shoulder/hand/arm contact — paired with affective modifiers (reassuring, calming, trembling) that signal soothing of distress rather than material provision or status signaling. Physical touch here functions as an emotional regulation mechanism, not a display of resources or appearance.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+- **C adjudicate:** `MIXED`
 
 ---
 
@@ -1942,10 +1913,11 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `E2M1S1`
-  - {'emotional': "Words like 'tour', 'concert', 'bought', '7heaven', and 'tomorrow' evoke feelings of excitement, anticipation, and enjoyment.", 'material': "The word 'ticket' represents a physical item that grants access to an event.", 'status/appearance': "The word 'tours' can imply a certain level of status or popularity, especially in the context of music."}
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - Lexical field centers on concert/tour tickets, purchasing (bought, paid, cost), cancellation anxiety, and apology/compensation framing. All representers converge on tangible resource provision and financial transaction security — whether the partner delivers on promised or purchased experiences. No status/appearance or emotional-attachment signals dominate.
+- **B contextual:** `CELL_A`
+  - CELL_A sentences cluster around performance, public-facing events, touring schedules, and competitive status contexts. CELL_B sentences consistently involve ticket purchasing, payment, and travel logistics with interpersonal financial exchange. CELL_D sentences involve crowd/tourist navigation and scheduling contexts without clear financial or status framing. MIXED is flagged because three distinct cell types are meaningfully represented across the corpus, though CELL_A is dominant by count and probability weight.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
@@ -1974,107 +1946,90 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
+- **A lexical:** `material`
+  - Lexical cluster centers on strength/weakness polarity with material capacity framing. 'Crushed', 'destroyed', 'gain', 'proved' indicate resource-based competition or adequacy testing. 'Feeding', 'tied', 'limitations' suggest dependency and provision dynamics. Emotional terms ('emotions', 'reflection', 'admit', 'hated') are secondary to the dominant material-strength axis, functioning as responses to perceived resource/capacity failure rather than drivers. Security function maps to provider-protection adequacy assessment.
 - **B contextual:** `MIXED`
-- **C adjudicate:** `None`
+  - The corpus splits meaningfully between two cell assignments provided in the input metadata. CELL_D sentences cluster around themes of physical capacity, self-made capability, external threat assessment, and social rank advancement — consistent with a material/status-oriented security function where strength is instrumental or positional. CELL_B sentences cluster around themes of inner resilience, emotional endurance, relational strength under pressure, and self-sufficiency in the face of vulnerability — consistent with an emotional security function where strength is affective and relational. BOOK_004 in particular shows high-probability CELL_B assignments with explicitly emotional framing ('even the strong have weak moments,' 'be strong,' 'if one of us has to be weak'). The split is substantial enough (roughly 55/45) to warrant a MIXED classification rather than a single dominant code, though CELL_D holds a slight edge by sentence count.
+- **C adjudicate:** `MIXED`
 
 ---
 
-## Topic 1 — Straps Sliding Down Her Arms
-
-- **Taxonomy:** 2.3 — Explicit Sexual Acts
-- **Code:** S5 (norm: S5)
-
-> i’ve had practice,” he said as he slid the straps down my arms and removed it.
-
-> how could a man who just serenaded me with one of the sexiest songs i’ve ever heard and who kisses the way he does be a virgin?
-
-> the way he holds me —the tenderness, the carefulness—gives me hope that we’ve made great strides tonight.
-
-> *(CELL_A, tertile=begin)* His hand came up to grip my head, keeping me trapped in the loving softness of his kiss.
-
-> *(CELL_A, tertile=middle)* His lips attached to my neck as his fingers worked their way up my shirt.
-
-> *(CELL_A, tertile=end)* He held me to him as his mouth moved in sync with mine, his tongue just slipping in to brush against me.
-
-> *(CELL_A, tertile=begin)* Chuckling in my mouth, he held me against him, deepening our kiss.
-
-### Pass A/B/C
-
-- **A lexical:** `None`
-- **B contextual:** `None`
-- **C adjudicate:** `S5`
-- **Action:** KEEP
-
----
-
-## Topic 340 — Patience Tested Through Small Trials
+## Topic 277 — Promising to Handle The Lawyer
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** UNKNOWN
 
-> for two years he had observed the christmas elf, but he never imagined touching her.
+> i’ll talk to the lawyer tomorrow.
 
-> from the moment that she started working at her current job, she had never clicked with frank.
+> we’ll find a good lawyer to help.
 
-> her patience throughout the meal with the girls never wavered, not with spilled drinks, sloppy faces and an occasional cry for attention.
+> you can count on me to deal with the legal trouble they’ll cause.”
 
-> *(CELL_A, tertile=middle)* Up until now, she'd never met anyone who made her ache for the things that were denied her.
+> *(CELL_D, tertile=end)* Mediation has never come easily for me and I need all the help I can get.
 
-> *(CELL_A, tertile=begin)* She'd never known anything like the power and hunger of his kiss.
+> *(CELL_B, tertile=end)* Such a lot of fuss over a piece of real estate that was destined by federal law to go unclaimed by anyone.
+
+> *(CELL_B, tertile=end)* It’s important to establish legal boundaries of ownership, especially when you’re talking about gems and precious metals.
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `material`
+  - All representational layers converge on material security. The main keywords anchor the topic in legal counsel and representation (lawyer, attorney, firm, appointed, counsel), signaling concern about access to professional services. Supporting signals across KeyBERT, POS, and MMR reinforce material stakes: 'afford' and 'cost' indicate financial access anxiety; 'appointed' suggests inability to self-fund representation; 'begging' and 'worrying' reflect distress over resource acquisition rather than emotional intimacy or status display. The cluster maps to a partner's or self's need for tangible legal resources and the financial/practical burden of securing them, a prototypical material security function.
+- **B contextual:** `material`
+  - Topic 277 centers on legal/law enforcement identity and its romance-context security functions. The dominant material thread covers lawyers, legal ownership, property rights, and divorce/insurance as concrete resource-protection mechanisms in relationships. A strong secondary status/appearance thread emerges from the repeated 'lawman' identity framing, where occupational role signals social standing and credibility as a partner-selection cue. Emotional security appears minimally in mediation difficulty and counseling investment, reflecting relational repair rather than resource or status concerns. MIXED is flagged due to the meaningful co-presence of material and status/appearance functions across distinct book clusters.
+- **C adjudicate:** `UNKNOWN`
 
 ---
 
-## Topic 36 — Eagerly Offering to Help
+## Topic 105 — Swept Onto The Dance Floor
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** UNKNOWN
+
+> [person] and i are both taken, so we’ll only dance with each other.
+
+> i’ve never danced with a guy who real y knew what he was doing.” “
+
+> if you’ll excuse the two of us,” he pointed to me, “i’ve been dying for a dance with this woman all night.”
+
+> *(CELL_D, tertile=begin)* And the high heels she’d dangled from her hand were for dancing the night away or seducing a man.
+
+> *(CELL_A, tertile=begin)* We begin dancing again, this time getting a little friskier.
+
+> *(CELL_B, tertile=middle)* Your problem is you let what happened with Marcus keep you from attending those dances.
+
+> *(CELL_B, tertile=end)* Sparkling cocktail dresses mixed with flip-flops and Bermuda shorts on the open-air dance floor, where wealthy couples did the bump and grind or swayed in each other’s arms to the beat of classic rock.
+
+### Pass A/B/C
+
+- **A lexical:** `emotional`
+  - Lexical field centers on dance as a shared physical and expressive activity (waltz, ballet, slow dance, sweeping, swirling, smoothly). KeyBERT and MMR reinforce embodied coordination and mutual attunement (movements, matching, gesture, spun, swirled, smoothly), while POS and MMR surface social context (parties, reception) that frames dance as relational ritual rather than resource acquisition or status display. The dominant signal is emotional intimacy and bonding through synchronized physical closeness, not material provision or status/appearance performance.
+- **B contextual:** `emotional`
+  - Topic 105 centers on dancing as a romantic/social activity. The overwhelming majority of instances encode dancing as an emotionally bonding or socially connective act — invitations to dance, shared movement, physical closeness, and interpersonal engagement all reflect emotional security seeking (connection, intimacy, belonging). BOOK_001_1 is the sole outlier, where high heels and dancing are framed instrumentally in terms of seduction and physical presentation, coding as status/appearance. No material security signals are present.
+- **C adjudicate:** `UNKNOWN`
+  - Full lexical-contextual agreement on emotional security function. Primary taxonomy confirms routine relational bonding dynamic; secondary situates interaction in a public or leisure context, consistent with everyday courtship expression rather than material or status-driven motivation.
+
+---
+
+## Topic 289 — Quick Peck on The Forehead
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** UNKNOWN
 
-> of course, i’ll help you.’
+> mikey, i’ll be back soon, i promise,” nate said, placing a quick peck on his forehead. “
 
-> then you’ll let me help,” frances said at once, her expression eager. “
+> nate arched an eyebrow, gesturing back toward the parking lot. “
 
-> sure, of course, i’ll help.”
+> nate looked at the older asian man gesturing wildly to them, then at the array of paints.
 
-> *(CELL_B, tertile=end)* And you know I’m here to help you in any way I can.”
-
-> *(CELL_D, tertile=middle)* Well make yourself useful,” he said. “
-
-> *(CELL_B, tertile=end)* I’ve got to do something to help.”
+> *(CELL_B, tertile=begin)* Dominic frowned, knowing that to demur a second time would definitely incur Nate’s curiosity. ‘
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
-
----
-
-## Topic 299 — Pledging to Have Your Back
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** UNKNOWN
-
-> before she’s completely out i ask, “[person], you know i’ve always got your back, right?”
-
-> but i’ve seen you, seen who you are, watched you handle uncle charlie.
-
-> i’ve got a little time before charlie finishes my bike.
-
-> *(CELL_A, tertile=middle)* Kevin was worried that Scott’s death was somehow related to Todd’s return to Birmingham.’
-
-> *(CELL_A, tertile=begin)* They all left for college with big dreams, except Scott and Kevin,’ she said sadly. ‘
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `None`
+- **A lexical:** `emotional`
+  - Lexical field dominated by sensory-attentional verbs and embodied awareness tokens (gesturing, glint, flicked, glimpse, trembled, trailed, peered, poised, darkened, focused, crept, breathlessly) alongside affective-social signals (shame, anxiety, instincts, reminder). No material-resource or status-display vocabulary present. Pattern is consistent with hypervigilant monitoring of relational cues and bodily affect, indexing emotional security processing centered on attachment threat detection and interpersonal attunement rather than resource acquisition or status negotiation.
+- **B contextual:** `emotional`
+  - The overwhelming majority of fragments center on interpersonal tension, concern, curiosity, and relational dynamics between characters (primarily Nate and others), all of which are emotional-security markers. The single outlier (BOOK_005_6) references a physical attack on Nathaniel, which maps to material/physical safety rather than emotional or status concerns, but it is isolated and does not shift the dominant classification.
+- **C adjudicate:** `UNKNOWN`
 
 ---

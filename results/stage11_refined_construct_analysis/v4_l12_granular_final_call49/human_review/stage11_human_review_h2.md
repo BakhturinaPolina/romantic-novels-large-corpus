@@ -21,7 +21,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `CONFIRM`
 
 **Stage-08 snippets**
@@ -61,7 +61,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 
 **Stage-08 snippets**
 
@@ -104,7 +104,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `PASS_C`
 
 **Stage-08 snippets**
@@ -168,7 +168,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 
 **Stage-08 snippets**
 
@@ -211,7 +211,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact.`
 
 **Stage-08 snippets**

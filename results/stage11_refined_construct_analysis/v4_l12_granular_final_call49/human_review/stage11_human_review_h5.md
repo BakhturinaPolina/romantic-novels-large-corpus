@@ -729,7 +729,7 @@ Run: `v4_l12_granular_final_call49` — 22 topics.
 - **Old taxonomy:** 7.3 — Risk, Danger & External Crises
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
