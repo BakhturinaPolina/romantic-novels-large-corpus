@@ -213,31 +213,31 @@
       "sorts",
       "crowded"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"UNKNOWN",
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "disclosure"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -1313,17 +1313,17 @@
       "eyeing",
       "described"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"UNKNOWN",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
@@ -1331,13 +1331,16 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
+      "ARC_2 escalation_conflict",
+      "ARC_3 separation_breakup_threat",
       "Breakup Threats",
       "Conflict & Distance",
       "HEA Resolution",
       "Reconciliation & Commitment"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -2091,15 +2094,15 @@
       "ensure",
       "equally"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I1",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
@@ -2112,10 +2115,13 @@
       "Courtship complicated by undisclosed knowledge",
       "Misunderstanding and its relational consequences",
       "Revelation of concealed truths",
-      "Secret-keeping and hidden information dynamics"
+      "Secret-keeping and hidden information dynamics",
+      "hidden_information_driving_tension",
+      "misunderstanding_between_main_couple"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -2413,32 +2419,33 @@
       "spilling",
       "grumbled"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "ARC_2 escalation_conflict",
+      "ARC_4 relationship_caused_distress"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":44,
@@ -5081,18 +5088,18 @@
       "circumstances",
       "forgive"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_6",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
@@ -5100,11 +5107,15 @@
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
       "caretaking amid relational distance",
+      "conflict_resolution_initiation",
       "emotional reassurance during conflict",
+      "reconciliation_attempt",
+      "repair",
       "vulnerability and support in tension moments"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -5640,32 +5651,33 @@
       "pounding",
       "built"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.4",
     "secondary_name":"Conflict, Distance & Breakup Threats",
     "proposed_constructs":[
-
+      "ARC_1",
+      "ARC_5"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":95,
@@ -6553,31 +6565,32 @@
       "thinks",
       "loose"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.2,
     "manual_review_required":false
   },
   {
@@ -7158,32 +7171,32 @@
       "twisting",
       "dealing"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.2",
     "secondary_name":"Historical & Period Setting",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.6,
+    "manual_review_required":true
   },
   {
     "topic_id":122,
@@ -7706,31 +7719,32 @@
       "experience",
       "expect"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "conflict_distance_breakup_threat",
+      "relationship_caused_distress"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.15,
     "manual_review_required":false
   },
   {
@@ -7783,31 +7797,31 @@
       "veins",
       "considering"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -10452,31 +10466,33 @@
       "conscious",
       "terms"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "misunderstanding_driven_conflict",
+      "secrets_and_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -11377,31 +11393,32 @@
       "hiding",
       "discovered"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-
+      "disclosure_of_secret_or_hidden_information",
+      "vow_or_promise_speech_act_secondary"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -12281,32 +12298,33 @@
       "tense",
       "forgive"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-
+      "ARC_3 separation_breakup_threat",
+      "ARC_6 repair"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":211,
@@ -12495,31 +12513,33 @@
       "caused",
       "expect"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "distress from undisclosed truth",
+      "hidden information driving misunderstanding",
+      "secret-based relational tension"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13669,32 +13689,33 @@
       "fingertips",
       "wound"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "disclosure_revelation",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
+    "manual_review_required":true
   },
   {
     "topic_id":238,
@@ -14379,32 +14400,32 @@
       "behavior",
       "problems"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.45,
+    "manual_review_required":true
   },
   {
     "topic_id":249,
@@ -14730,32 +14751,32 @@
       "sending",
       "ended"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.45,
+    "manual_review_required":true
   },
   {
     "topic_id":257,
@@ -15109,32 +15130,33 @@
       "cleared",
       "protect"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "ARC_5",
+      "ARC_9"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":265,
@@ -15187,31 +15209,32 @@
       "embarrassment",
       "voices"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.4",
     "secondary_name":"Conflict, Distance & Breakup Threats",
     "proposed_constructs":[
-
+      "relationship_caused_distress",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -15500,31 +15523,32 @@
       "willing",
       "shock"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"8.5",
     "secondary_name":"Movement, Transit & Spatial Transition",
     "proposed_constructs":[
-
+      "misunderstanding_between_main_couple",
+      "secrets_and_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.05,
     "manual_review_required":false
   },
   {
@@ -16212,7 +16236,7 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"MIXED",
-    "arc_role":null,
+    "arc_role":"ARC_2",
     "mixed_topic":true,
     "mixed_hypotheses":"H5",
     "lexical_context_agreement":"",
@@ -16222,14 +16246,17 @@
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
+      "escalating conflict between main couple",
       "individual_distress",
+      "negative emotional distress tied to relational tension",
       "relational_darkness"
     ],
     "adjudication_actions":[
-      "H5:REINTERPRET"
+      "H5:REINTERPRET",
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":true
   },
   {
@@ -16280,31 +16307,31 @@
       "pregnant",
       "stretched"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -16874,31 +16901,33 @@
       "afford",
       "ex"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "hidden information driving relational tension",
+      "internal ambivalence amplifying misread signals",
+      "misunderstanding rooted in undisclosed secret"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.45,
     "manual_review_required":false
   },
   {
@@ -16951,31 +16980,32 @@
       "circled",
       "tipped"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-
+      "misunderstanding_between_main_couple",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -17437,32 +17467,34 @@
       "causing",
       "emotions"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "secrets_hidden_information",
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "manual_review_required":true
   },
   {
     "topic_id":315,
@@ -17594,31 +17626,31 @@
       "glared",
       "focused"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -17696,31 +17728,33 @@
       "surely",
       "pressing"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "hidden_information_driving_conflict",
+      "misunderstanding_between_main_couple",
+      "negative_emotional_distress_secondary"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.6,
     "manual_review_required":false
   },
   {
@@ -19191,31 +19225,31 @@
       "threatened",
       "planning"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -20060,32 +20094,32 @@
       "tugged",
       "willing"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.1",
     "secondary_name":"Paranormal & Immortal Beings",
     "proposed_constructs":[
-
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "weighted_weight":0.45,
+    "manual_review_required":true
   },
   {
     "topic_id":363,

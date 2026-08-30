@@ -1,242 +1,9 @@
 # H6 arc semantics — close-reading pack
 
-## Topic 37 — Defending A Close Friendship
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
-
-> i've told you -- we're just good friends.
-
-> and i’ll grant ye i’ve been a bad friend to you.
-
-> but we’ve been friends for a long time.
-
-> *(CELL_D, tertile=middle)* Good, then get out of my face and give me a minute with my friend.”
-
-> *(CELL_D, tertile=middle)* He didn’t have any life-long friends, with the exception of Butch.
-
-> *(CELL_D, tertile=end)* A friend once told me it’s okay to lean on someone,” he said. “
-
-### Pass A/B/C
-
-- **A lexical:** `37`
-  - The main-couple filter focuses on the relationship dynamics between the main characters, excluding external conflicts related to fidelity. The narrative arc roles are coded based on the given keywords, with a high conflict-label fidelity to maintain the integrity of the story's tension and development.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Obstacle`
-
----
-
-## Topic 43 — Pissed Off and Grumbling
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> this isn’t the first time i’ve pissed him off.”
-
-> we’ve irritated you, have we?” “
-
-> i’ve been pissed at him ever since. “
-
-> *(CELL_B, tertile=begin)* She doesn’t look mad so much as really disappointed. “
-
-> *(CELL_D, tertile=middle)* Tarquin is also pissed, but not as much as me.
-
-> *(CELL_B, tertile=end)* Now I know where his rage comes from.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CELL_D`
-  - The main couple is involved in 76.92% of the sentences, with 'CELL_D' being the dominant code (42.86% of sentences). The narrative arcs are distributed fairly evenly across the tertiles.
-- **C adjudicate:** `Conflict`
-  - The topic's taxonomy of 4.4/Conflict, Distance & Breakup Threats and secondary taxonomy of 3.2/Negative Emotions & Distress suggest that the main couple is facing significant challenges that could lead to a breakup, indicating a refined falling arc role.
-
----
-
-## Topic 64 — Confronting A Lifelong Fear
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** {'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]}
-
-> from what you’ve told me, ella, your childhood was full of worry.” “
-
-> but now you can say you’ve faced one of your fears.” “
-
-> fears i’ve had my entire life come rushing forward, radiating from those four little words.
-
-> *(CELL_D, tertile=middle)* You shouldn’t have to live your life in fear,” Mrs. Pearson said, her kind gaze a little sad as she looked at Drea. “
-
-> *(CELL_A, tertile=middle)* Right now, I think you need to decide which of us scares you more.” “
-
-> *(CELL_D, tertile=end)* I was going to tell you that I wanted to wait, and I was afraid… I was so afraid that you wouldn’t want to.”
-
-> *(CELL_D, tertile=end)* I was so afraid that if we started up again, I’d end up messing around on you.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `C`
-  - The dominant arc code is 'C' (Conflict) as most sentences involve the main couple experiencing fear or anxiety, often due to their relationship. The main couple is present in 75% of the sentences, making the main_couple_prob_estimate 0.75.
-- **C adjudicate:** `{'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]}`
-
----
-
-## Topic 66 — Paralyzed By Deep-Seated Fear
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
-
-> at times, she was terrified.
-
-> the idea terrified her.
-
-> even though she was in the body of a woman now, she was still a terrified little girl.
-
-> *(CELL_A, tertile=middle)* She'd approached him cautiously that day as if terrified of him. "
-
-> *(CELL_A, tertile=middle)* His cold demeanor was such that she was afraid to even move. "
-
-> *(CELL_B, tertile=end)* And then all the self-control she’d employed, holding tightly on to her panic, her fears, dissolved.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `Fear`
-  - Based on the provided data, the dominant code is 'Fear', which appears in 12 out of 21 sentences. The main couple is involved in 14 out of 21 sentences, leading to an estimated main couple probability of 0.65.
-- **C adjudicate:** `Conflict`
-
----
-
-## Topic 85 — Offering and Refusing An Apology
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> he said he wanted to apologize.
-
-> i need to apologize to you, ruby.
-
-> oh, i'm so not gonna apologize for that."
-
-> *(CELL_D, tertile=end)* He tried to get back in my good graces with a box of chocolates a couple of days later, but he never did apologize.” “
-
-> *(CELL_D, tertile=begin)* And you made it quite clear that you thought I was overreacting to the situation.”
-
-> *(CELL_D, tertile=end)* Between Cornelia, Emily Taylor and Helen Washburn, I’ve been apologized to every day this week.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Conflict`
-
----
-
-## Topic 92 — Heart Pounding With Dread
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
-
-> her heart pounded, not knowing what to say.
-
-> verses the preacher read trailed into a muffled slow motion speech, the whipping sounds of the makeshift paper fans faded to tiny flutters, the anxious pounding of her heart slowed to a steady beat as she stood hand in hand with her best friend.
-
-> lizzie’s heart pounded wildly as she braced herself for the assault.
-
-> *(CELL_B, tertile=middle)* The realization constricted her throat and made her chest tighten.
-
-> *(CELL_B, tertile=end)* A strong desire to surround herself with memories of her love swelled within her until she thought her heart would burst.
-
-> *(CELL_B, tertile=end)* The sight that met her sent her heart plummeting to her knees.
-
-> *(CELL_B, tertile=end)* Aiden’s harsh inhale ruffled her hair and she felt the rapid thud of his heartbeat against her shoulder blade.
-
-> *(CELL_B, tertile=middle)* Her heart pumped, expanded to fill her chest when the next thought came.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIDDLE`
-  - The dominant code is 'MIDDLE' as it appears in 36.36% of the main couple's emotional journey sentences. The main couple probability estimate is 94.44% as only 6 out of 61 sentences were not related to the main couple.
-- **C adjudicate:** `Conflict`
-  - The topic of 'Negative Emotions & Distress' in the middle of the narrative suggests a decline in the main couple's relationship, indicating a falling arc.
-
----
-
-## Topic 94 — Caught in A Lie
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** REFINED_FALLING (norm: ARC_2)
-
-> i’ve known him for a long time, and i’m confident that i could tell if he was lying.”
-
-> i’ve lied, therefore i’m a liar.
-
-> i never meant to—” “how can i believe a single thing you say when you’ve already been proven a liar?”
-
-> *(CELL_B, tertile=middle)* I have no reason to lie to you about something like that,’ she said. ‘
-
-> *(CELL_D, tertile=middle)* Why don’t you stop being such a baby about it and lie still and I’ll go get something for you?”
-
-> *(CELL_D, tertile=middle)* The sinking sensation that swept over him gave the lie to his efforts to convince himself it wasn’t.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CONFLICT`
-  - All sentences involve the main couple.
-- **C adjudicate:** `REFINED_FALLING`
-
----
-
-## Topic 102 — Grief Etched on His Face
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** DISCLOSURE (norm: ARC_4)
-
-> we’ve lost adam,’ she whispered and her fingers traced the contours of grief still etched on his face. ‘
-
-> not only did she have a cool and savvy partner actually in the game with her, the surroundings, the actions were so real that her heart pounded and adrenaline flooded her, almost as if she really was helping adam sabotage a bridge while avoiding capture by nazi soldiers.
-
-> holy hell, adam—i’ve known her long enough to realize she’s thinking about a lot more than a blowjob.” “
-
-> *(CELL_B, tertile=end)* And on that thought, he said, “I talked to Adam a minute ago.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `DISCLOSURE`
-  - The dominant code is 'DISCLOSURE' as it appears most frequently (10 times). The main couple probability estimate is based on the proportion of sentences involving Cain and Eve (12 out of 21).
-- **C adjudicate:** `DISCLOSURE`
-
----
-
-## Topic 109 — Seeing Past A Guarded Identity
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** OBSTACLE (norm: ARC_8)
-
-> i’ve hardly heard a thing about you.”
-
-> anyone could’ve walked by.
-
-> even people who are close to you, who’ve known you far longer than i have, don’t know any more than what you’ve allowed them to see.
-
-> *(CELL_D, tertile=middle)* But if you really knew me, you would realize how very much I resented your taking control of my life by calling that inspector.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `IDENTIFICATION`
-  - Out of 17 sentences, 14 (82.35%) involve the main couple, either directly or indirectly. The dominant arc code is 'IDENTIFICATION', with 12 out of 17 sentences (70.59%) falling into this category.
-- **C adjudicate:** `OBSTACLE`
-
----
-
 ## Topic 121 — Revealing Plans to The Prince
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** INTRO (norm: ARC_0)
+- **Code:** ARC_0 (norm: ARC_0)
 
 > she’ll be queen of the roost.” “
 
@@ -252,43 +19,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `INTRO`
-  - Based on the given sentences, the main couple is present in 65% of the cases, with the dominant narrative arc code being 'INTRO'.
-- **C adjudicate:** `INTRO`
-
----
-
-## Topic 129 — Accused of Not Caring
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> like they care when they see that smoking-hot bod you’ve got.”
-
-> at the moment, i could’ve cared less.
-
-> you’ve never cared for anyone but yourself.”
-
-> *(CELL_D, tertile=end)* I don’t care about that kind of stuff,” Zander assured him. “
-
-> *(CELL_A, tertile=begin)* I don’t expect you to understand what it is to care about someone else.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-  - The narrative arc follows a typical romance pattern: the couple meets and cares for each other (B), faces conflicts and unhappy circumstances (M), and ultimately finds resolution and understanding (E). Keywords were grouped based on their frequency and part-of-speech tags.
-- **B contextual:** `CELL_D`
-  - Out of 19 sentences, 13 (68.42%) mention or relate to the main couple, making the main_couple_prob_estimate 0.68. The dominant code is CELL_D, which appears 7 times, indicating a focus on disinterest or lack of caring. However, most of these sentences (5 out of 7) are related to the main couple, showing a tension between disinterest and caring within the relationship.
-- **C adjudicate:** `Conflict`
-  - The topic of 'Conflict, Distance & Breakup Threats' is a high conflict-label topic that directly threatens the main couple's relationship. This is a clear sign of a falling arc, as it suggests potential distress and distance between the main couple.
+- **A lexical:** `ARC_9`
+  - Main keywords (king, prince, queen, throne, servant, royal, crown, kingdom, regent) are densely royal/political — no main-couple romantic arc signal, pointing to external political/power-structure conflict (ARC_9). MMR reinforces this with 'threats', 'declared', 'resigned', 'dealing', 'commander' — language of political negotiation and power struggle rather than romantic arc. KeyBERT ('promises', 'reassuring', 'assured', 'resigned', 'reveal', 'planned', 'decision') and POS ('threats', 'reassuring', 'commander', 'promises', 'magical') are more ambiguous — they could belong to any arc stage and lack clear romantic-couple anchoring, hence ARC_10 for those reps. However, the dominant signal across Main and MMR is an external political/institutional conflict context (royal court, power, threats, commanders), making ARC_9 the consensus. Disagreement flagged because KeyBERT and POS lean ARC_10 rather than ARC_9.
+- **B contextual:** `ARC_0`
+  - Topic 121 clusters around royalty/nobility vocabulary — kings, queens, nobles, rulers — but this is overwhelmingly world-building or external-political context rather than main-couple romantic arc content. BOOK_001 sentences are off-target (pop-culture references, fairy-tale tropes with no couple dynamic). BOOK_002 sentences revolve around a king's treachery/political machinations with no identifiable romantic couple, coded ARC_9 (external plot conflict). BOOK_003 sentences use 'queen' as a title/power dynamic but lack a clear romantic-couple frame; most are off-target social/political framing (ARC_0). BOOK_004 similarly references the king's commands and noble status as background world-building. No sentence clearly depicts a main-couple romantic arc event. ARC_0 is dominant at ~60%; ARC_9 accounts for ~40% (external political conflict). Main-couple probability is very low (~0.10) as the couple, if present, is peripheral to the topic's core signal.
+- **C adjudicate:** `ARC_0`
+  - Adjudication resolves the conflict between lexical consensus (ARC_9: external_plot_conflict) and contextual dominant (ARC_0: off_target) in favor of ARC_0. The taxonomy placement under 4.3 Secrets, Misunderstandings & Hidden Information with a secondary tag of 10.2 Historical & Period Setting suggests the topic's surface signal is period/setting detail or background intrigue rather than a main-couple dynamic. ARC_9 was likely assigned because conflict-label vocabulary is present, but high conflict-label fidelity is explicitly not equivalent to main-couple conflict. The secondary taxonomy tag (Historical & Period Setting) further supports that the dominant content is world/context material, not a relationship arc beat. ARC_0 (off_target) is therefore the correct single arc_role. Manual review is flagged because the lexical and contextual passes disagreed, and the taxonomy straddles two categories that could, in a different topic, support ARC_1 or ARC_5 — a human reviewer should confirm no main-couple secret/misunderstanding is embedded in the cluster.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 130 — Revealing A Secret Plan
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
+- **Code:** ARC_0 (norm: ARC_0)
 
 > you’ve rumbled my clever plan.’ ‘
 
@@ -304,104 +48,343 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `PLANS`
-  - The dominant code is 'PLANS' as the majority of sentences (65%) discuss plans. The main couple is involved in 75% of these plan-related sentences, indicating that their plans are a significant part of the narrative arc.
-- **C adjudicate:** `Obstacle`
+- **A lexical:** `ARC_10`
+  - All four keyword lists center on planning and logistics vocabulary: 'plan, plans, planned, planning, tentatively, considering, scenario, urgency, according, part.' Supporting terms like 'madam, sir, reception, results, pumping, veins, forming, hiding, opposite' add situational texture but do not anchor to any specific narrative-arc role for the main couple. There is no clear signal of conflict, misunderstanding, separation, disclosure, repair, commitment, or external plot threat. The dominant semantic field is neutral logistical/procedural planning, making the arc role genuinely unclear across all representations.
+- **B contextual:** `ARC_0`
+  - Topic 130 is entirely about the word 'plan(s)' and logistical planning language. None of the sentences carry any identifiable romantic-arc function — there is no conflict, disclosure, repair, commitment, or other arc-relevant content. The sentences are decontextualised fragments about making or changing plans, with no clear main-couple relationship dynamic visible. The topic is off-target (ARC_0) across all tertiles and books. Main-couple probability is very low; most sentences are ambiguous as to who is speaking or to whom, and none signal a romantic dyad.
+- **C adjudicate:** `ARC_0`
+  - Adjudication resolves the Pass A/B tension as follows: the lexical consensus of ARC_10 (unclear arc role) reflects genuine ambiguity in surface tokens, but the contextual dominant of ARC_0 (off_target) is better supported by the taxonomy signal. Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) with secondary 4.2 (Ongoing Courtship & Everyday Relational Bonding) describes content that, while thematically adjacent to romance mechanics, does not map onto a main-couple narrative-arc beat — it is background relational texture or a non-main-couple dynamic. The absence of a clear main-couple anchor (main_couple: false) means no ARC_1–ARC_9 code is warranted. ARC_0 is therefore the correct resolution over ARC_10: the topic is not unclear so much as it is simply off-target for the main-couple arc hypothesis. No construct bucket applies because the topic does not contribute to REFINED_FALLING, REFINED_RISING, or EXTERNAL_PLOT_CONFLICT trajectories. No free-form labels were carried forward.
+- **Action:** REINTERPRET
 
 ---
 
-## Topic 133 — Holding Back Tears
+## Topic 248 — Arranging A Cover Story
 
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_10 (norm: ARC_10)
 
-> we’ll leave all our tears out to dry on the patio while we swan off to the acropolis!
+> i can attach myself to callie as a potential suitor, even with the distant cousin story you’ve decided to run with.
 
-> they'll also cry foul.
+> i'll just let hannah know she won't have to watch him after today.
 
-> they’ll tell you that i don’t do crying.
+> it means you’ll probably bump into him too if you see more of hannah.’
 
-> *(CELL_C, tertile=begin)* A lot of people are going to die before this is over, so dry the tears and deal.
+> *(CELL_B, tertile=begin)* That Hannah’s boyfriend was sleeping with apparently the whole time they were going out?
 
-> *(CELL_B, tertile=end)* I rub at my grimy eyes, stuck shut at the corners from the excess tears I cried last night.
+> *(CELL_B, tertile=begin)* On Hannah’s behalf, and on yours too, even though I didn’t know your name.”
 
-> *(CELL_B, tertile=middle)* And then I weep again, silent tears tracing themselves down my face, plunking hollowly against my robe.
+> *(CELL_B, tertile=begin)* Hannah took me to that party as a pity thing, unfortunately.
+
+> *(CELL_B, tertile=begin)* Including that hot guy Hannah had started to introduce me to.
+
+> *(CELL_C, tertile=end)* I would confirm the girl was there, make the deal and skedaddle then Hawk and the boys would swoop in and recover the girl.
+
+> *(CELL_A, tertile=middle)* Anyway, I was totally pissed about that, and about Jess pinching my arm, when Cassie dropped another bomb on me… She said that she is “Falling in love with Jimmy!!!!”
+
+> *(CELL_A, tertile=end)* I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “
+
+> *(CELL_A, tertile=middle)* Getting all mad because of her relationship with Jimmy… Wishing that they had never started dating… Now I will never see Cassie again!
+
+> *(CELL_A, tertile=middle)* Jess and I rode together, but Cassie said she would meet us there; she was still trying to find the perfect gift for Jimmy.
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CELL_B`
-  - The majority of sentences (17 out of 20) involve the main couple, with 'CELL_B' being the dominant code. The proportions by tertile show a clear narrative arc, with 'begin', 'middle', and 'end' tertiles represented.
-- **C adjudicate:** `Conflict`
-  - Jealousy is a common source of conflict in romance narratives, often leading to tension and distress between the main couple, thus driving the plot forward.
+- **A lexical:** `ARC_10`
+  - Main and POS are dominated by character names (callie, hanna, leslea), a pickpocketing incident, and abstract nouns (concept, notion, options, treatment) with no clear romantic-arc signal — coded ARC_0 (off-target). KeyBERT and MMR carry emotionally loaded cues (crushed, upset, pregnant, admit, overheard, apologize, problems, wasting) that suggest distress and possible disclosure, but the named characters (callie, hanna, sister) point toward a sibling or secondary-character dynamic rather than a confirmed main couple. 'Pregnant' and 'admit' could indicate ARC_5 (disclosure) or ARC_4 (relationship-caused distress), but without clear main-couple anchoring the signal is ambiguous. The split between off-target and distress/disclosure readings across representers, combined with the absence of a confirmed main-couple frame, yields ARC_10 (unclear arc role) as the consensus.
+- **B contextual:** `ARC_10`
+  - Topic 248 clusters around the name 'Hannah' and secondary character names (Cassie, Jimmy, Jess, Amy). No single main couple is clearly established across sentences. BOOK_001 sentences reference Hannah's cheating boyfriend — a third-party relationship conflict, coded ARC_9. BOOK_003 sentences involve an external rescue/intel operation with no romantic couple visible, coded ARC_9. BOOK_004 sentences reference Cassie and Jimmy as a couple causing distress to a narrator/friend — coded ARC_4 where relationship-caused distress is explicit, and ARC_10 where the role is ambiguous. BOOK_006 sentences reference Hannah in a context suggesting she was a deceased or missing person significant to Ryker, with external threat framing — coded ARC_9 for threat sentences and ARC_10 for descriptive/unclear ones. No code reaches 70%; ARC_10 is the plurality at ~45%, making it the dominant code. Main couple probability is very low (~0.10) as most sentences reference secondary or unclear characters.
+- **C adjudicate:** `ARC_10`
+  - Both lexical consensus and contextual dominant converge on ARC_10 (unclear_arc_role). The taxonomy placement under 4.3 Secrets, Misunderstandings & Hidden Information suggests latent ARC_1 or ARC_5 signal, but without sufficient topic-word or passage evidence to override the double ARC_10 signal, reinterpretation would be speculative. The secondary taxonomy tag (5.2 Friends, Allies & Social Circles) further muddies main-couple attribution — the topic may center on a social/ally dynamic rather than the protagonist pair, keeping main_couple false. No free-form labels from prior passes require remapping. Manual review is flagged so a human auditor can inspect the raw top-words and representative documents to determine whether the hidden-information theme is clearly tied to the main couple (which would warrant REINTERPRET to ARC_1 or ARC_5) or remains genuinely ambiguous.
+- **Action:** KEEP
 
 ---
 
-## Topic 145 — Confessing How Much It Hurts
+## Topic 256 — Refusing to Let It End
 
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Catalyst (norm: ARC_2)
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** ARC_0 (norm: ARC_0)
 
-> it still hurts so much.”
+> no, i’ll get over it.
 
-> it hurts too much." "
+> i’ll give you some time, but goddamn it, nat, this is not over.”
 
-> but the rest of me hurts.” “
+> it’ll never be over—unless it ends right here right now.
 
-> *(CELL_B, tertile=end)* It’s quite painful, but it’ll be over before long.
+> *(CELL_D, tertile=begin)* I no longer cared which side won or lost, I only wanted it to be over.
 
-> *(CELL_B, tertile=middle)* The pain—it hasn’t always been this bad has it?
+> *(CELL_D, tertile=middle)* Perhaps when this is over, you might see another attractive alternative.
 
-> *(CELL_B, tertile=end)* The pain was still there but it didn’t matter.
+> *(CELL_D, tertile=end)* If there are consequences to our lovemaking, then this treasure hunt ends.
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `Pain`
-  - The dominant code is 'Pain', as it appears in 14 out of 18 sentences. The main couple's conflict or romance arc is only explicitly mentioned in 3 sentences ('Conflict' code), hence the estimated probability of 0.15 for main couple-related content.
-- **C adjudicate:** `Catalyst`
-  - The topic of 'Pain' in a romance narrative typically serves as a catalyst for the main couple to grow closer or overcome challenges together, thus driving the plot forward and creating a rising arc.
+- **A lexical:** `ARC_4`
+  - Main keywords ('end', 'over', 'ends', 'ended') strongly suggest termination or breakup language pointing toward ARC_3 (separation/breakup threat). However, KeyBERT, POS, and MMR all add affective-distress cues — 'hurts', 'anxious', 'shouted', 'repeated', 'sending' — that shift the dominant signal toward ongoing emotional suffering within or caused by the relationship (ARC_4: relationship_caused_distress). The pattern of repeated painful interactions ('repeated', 'thursday' as a recurring marker, 'hurts', 'anxious', 'shouted') suggests cyclical distress rather than a clean breakup event. ARC_4 wins by weight of three representers; Main's ARC_3 reading creates mild disagreement.
+- **B contextual:** `ARC_0`
+  - Topic 256 is dominated by the word 'over' used in highly varied, mostly non-romantic-arc senses: completion of events, wars, tasks, emotional recovery, and social pleasantries. The largest single cluster (ARC_0, ~45%) consists of sentences where 'over' has no clear romantic-arc meaning. A secondary cluster from BOOK_004 uses 'I'm over it / get over it' language that loosely implies emotional recovery/repair (ARC_6, ~25%), but without clear main-couple context. A smaller cluster references external plot events ending (ARC_9, ~20%). Only BOOK_001_1 ('We're over') clearly signals a main-couple breakup threat (ARC_3). Main-couple probability is low (~0.15) because most sentences lack identifiable couple context. No single code reaches 70%, but ARC_0 is dominant at ~45%, so dominant_code is ARC_0.
+- **C adjudicate:** `ARC_0`
+  - Lexical consensus (ARC_4) reflects surface conflict-label fidelity to taxonomy 4.4 (Conflict, Distance & Breakup Threats), but the contextual dominant code (ARC_0) indicates the topic content does not actually center on the main couple's relationship-caused distress. The taxonomy placement in 4.4 is a label match, not a content match. Because high conflict-label fidelity ≠ main-couple conflict, and the dominant contextual read is off-target, ARC_0 prevails in adjudication. main_couple is set to false accordingly. Manual review is flagged to verify whether any main-couple signal is genuinely present or whether the topic should be excluded from the hypothesis corpus entirely.
+- **Action:** REINTERPRET
 
 ---
 
-## Topic 152 — Awkward Apology and Embarrassment
+## Topic 286 — Trying to Regain Good Graces
 
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_0 (norm: ARC_0)
 
-> one of the girls goes, “oh my god, i’m so sorry!”
+> oh ms. [person], you really should drop by our office more, we miss your good taste around here' blah blah blah.
 
-> oh, charlotte," [person] said, feeling genuinely sorry for the woman.
+> i'll not have you and his grace at each other's throats before we arrive at champney court."
 
-> i apologize that my sister bothered you with details from my personal life,” she said, searching the conversation for the nearest exit. “
+> if what you’ve said is to be believed, how am i supposed to get back into her good graces?
 
-> *(CELL_B, tertile=end)* Then softly and in a broken voice, she added, “I’m sorry, Ben.”
+> *(CELL_A, tertile=begin)* Widow of a respected insurance agent and former daughter-in-law of a well-known Baptist minister, she’d seemingly shunned the social position and privilege of her past to be with Colton, but this wasn’t the first time Eric had seen her slip on her high-and-mighty act like an expensive fur coat.
 
-> *(CELL_B, tertile=end)* I’m sorry he hit you,” she said softly without moving from the grate. “
-
-> *(CELL_B, tertile=end)* I’m sorry, Your Grace,” she said, while every particle of her wanted to spit disgust into the woman’s exquisite face. “
-
-> *(CELL_B, tertile=middle)* Softly, she said, “Kylemore, I’m sorry I left without telling you.
-
-> *(CELL_D, tertile=begin)* Oh, honey, I am so sorry…’ She held me and allowed me to just cry all over her bare, tanned shoulder. ‘
-
-> *(CELL_D, tertile=begin)* Sorry, honey – I’ve had an absolute bastard of a day,’ she said as she kissed me and dumped her coat on the floor.
-
-> *(CELL_B, tertile=begin)* She mouthed the word sorry to me as she handed me the phone. “
+> *(CELL_A, tertile=begin)* Eric needed a mentor to teach him how to be an honorable man.
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Conflict`
+- **A lexical:** `ARC_0`
+  - Main keywords are dominated by proper nouns and names (graceclemens, ruttery, champney, oracle, grâce) with no clear romantic-arc signal; 'blah' and 'tape' add noise. KeyBERT offers 'thrilled', 'embarrassment', 'awkwardly', 'deserve' — mild emotional texture but no identifiable main-couple dynamic; 'dr' and 'continues' are generic. POS and MMR introduce 'desperation', 'embarrassment', 'pregnant', 'pressure', 'decision', 'unable', 'rushing' — these could hint at a distress or stakes situation, but 'pregnant' and 'desperation' without any relational anchoring (no conflict, repair, disclosure, or commitment cues tied to a couple) remain ambiguous. 'Graceful'/'gracefully' across reps likely refers to a character named Grace rather than a quality. The cluster of proper-name noise in Main and the absence of any clear main-couple interaction pattern across all four reps points primarily to off-target content, with POS/MMR being merely unclear rather than arc-relevant. Consensus lands on ARC_0 (off_target) given the name-heavy Main rep and lack of coherent romantic-arc signal, with noted disagreement from POS/MMR which lean ARC_10.
+- **B contextual:** `ARC_0`
+  - Topic 286 clusters around proper-noun name references (Mrs. Darden, His Grace, Reed, Eric, Dee, Cynda) and brief honorific/address fragments. None of the sentences establish a clear main-couple romantic arc dynamic. BOOK_001–003 sentences involve secondary or peripheral characters (Eric, Dee, Cynda, Colton) with no identifiable main-couple romantic conflict or progression. BOOK_004 sentences are purely honorific address fragments ('Your Grace', 'His Grace') with no arc content. BOOK_005 sentences mention Reed in passing but lack sufficient context to assign a romantic arc role — they read as name-reference fragments rather than arc-bearing narrative moments. The topic appears to be a name/address cluster with no coherent narrative-arc signal, making ARC_0 (off_target) the appropriate dominant code across all tertiles.
+- **C adjudicate:** `ARC_0`
+  - Both lexical consensus and contextual dominant agree on ARC_0 (off_target). The taxonomy tag 4.3 Secrets/Misunderstandings and secondary 3.2 Negative Emotions might superficially suggest ARC_1 or ARC_4, but the main-couple filter is not satisfied — the topic does not pertain to the primary romantic dyad. Without a main-couple anchor, secrets or distress signals cannot be coded as relationship-arc events. ARC_0 is therefore confirmed. No construct bucket applies, and no manual review is needed.
+- **Action:** KEEP
+
+---
+
+## Topic 316 — Snapping Over Money and Control
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** ARC_0 (norm: ARC_0)
+
+> you’ll have to find another way to obtain the tallmadge money,” lucas snapped. “
+
+> stop that, you little fool, otherwise we’ll both be—’ lucas began, and then stopped as one of suzy’s flailing hands caught the side of his mouth.
+
+> they didn’t like it much when they found out, but lucas paid them well, and they’ll get over it.
+
+> *(CELL_B, tertile=middle)* Perhaps you should show Eva to her room,” Lucas finally suggested to Michael. “
+
+> *(CELL_B, tertile=middle)* Unlike Ethan and Jason, who were dark-haired, Aaron and Lucas were more dirty-blonde.
+
+> *(CELL_B, tertile=end)* He watched Lucas Mason as he spoke and was rewarded by an expression of guilt upon his uncle’s face. “
+
+> *(CELL_B, tertile=end)* You have brought this upon us,” Lucas Mason harshly accused his grief stricken nephew. “
+
+> *(CELL_B, tertile=end)* Lucas Mason was not so wise, however, and questioned Rork angrily. “
+
+> *(CELL_B, tertile=end)* The look upon Lucas Mason’s traitorous face mirrored the truth of Rork’s words.
+
+> *(CELL_B, tertile=end)* But as Lucas continued his tirade, Rork reached out to touch his beloved father’s body , only to find it frozen.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - All four keyword lists converge on emotional distress and negative affect within a relationship context. Main keywords (stared, thoughtful, shout, named characters lucas/fallon) suggest interpersonal tension between identifiable parties. KeyBERT supplies the emotional valence: annoyance, groaned, disappointment, failure, pathetic — these are feelings generated by the relationship dynamic rather than an external plot threat or a discrete misunderstanding/escalation event. POS and MMR reinforce this with overlapping terms (shout, failure, annoyance, disappointment, comments, bothered, glared, worries). The cluster describes ongoing relational distress — characters experiencing negative emotional states caused by their relationship — which maps to ARC_4 (relationship_caused_distress). There is no clear repair, commitment, disclosure, or external-plot framing; the dominant signal is sustained emotional suffering/frustration within the couple dynamic.
+- **B contextual:** `ARC_0`
+  - Topic 316 clusters around the name 'Lucas' (and associated characters Aaron, Kia, Sampson, Rork, Eva, Michael, Ethan, Jason) across multiple books. The sentences are character-identification fragments, spatial/logistical dialogue, and brief action tags with no romantic-couple framing. None of the sentences establish or imply a main romantic couple; they reference male characters (Lucas, Aaron) in what appear to be ensemble or family/group contexts, conflict between non-romantic parties (Lucas Mason vs. Rork), or simple descriptive statements. There is no romantic arc content detectable. All sentences are coded ARC_0 (off_target).
+- **C adjudicate:** `ARC_0`
+  - Lexical consensus (ARC_4) reflects surface conflict-label fidelity — the topic's tokens map onto distress/conflict vocabulary — but contextual dominant (ARC_0) correctly identifies that the content does not involve the main romantic couple. Taxonomy 4.4 (Conflict, Distance & Breakup Threats) with secondary 7.1 (Interpersonal Non-Romantic Conflict) confirms the conflict is interpersonal but non-romantic, i.e., outside the main-couple dyad. Per the main-couple filter, ARC_4 requires the distress to be caused by the romantic relationship itself; here the distress is either peripheral or involves non-romantic parties. The contextual dominant therefore overrides the lexical consensus. ARC_0 (off_target) is the correct arc_role. No construct bucket applies because the topic does not contribute to the REFINED_FALLING, REFINED_RISING, or EXTERNAL_PLOT_CONFLICT arcs in a main-couple context.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 346 — Delivering Urgent News in Secret
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_0 (norm: ARC_0)
+
+> let’s go [person] i’ll drive you to it.”
+
+> i hardly think leaving a note telling my father where to find me would’ve been a good idea, but i’m not going to tell james that. “
+
+> i know this is bad, me coming here, especially after the celeb weekly article, but i’ve got some important information about [person].”
+
+> *(CELL_B, tertile=end)* She pointed to James Stevens from The Scoop , who sat in the front row with Scott’s parents. “
+
+### Pass A/B/C
+
+- **A lexical:** `MIXED`
+  - Main and KeyBERT point strongly toward ARC_5 (disclosure): 'admit' appears in both, supported by 'willingly', 'chose', 'begged', 'planning', and 'hiding' — all cues of a character being pressed or choosing to reveal something. POS and MMR lean toward ARC_4 (relationship-caused distress): 'suffering', 'strained', 'threatened', 'opposite', 'advantage' suggest emotional or relational pain tied to the couple dynamic rather than a clean disclosure moment. The split between disclosure-pressure cues and distress/strain cues across the four reps prevents a single consensus code, yielding MIXED.
+- **B contextual:** `ARC_0`
+  - Topic 346 is dominated by name fragments and attribution tags — 'James said.', 'James?', 'Jonathan.', 'James Stevens from The Scoop' — with no narrative content conveying relationship dynamics, conflict, repair, or any romance-arc function. The sentences are essentially decontextualized speaker labels or proper-noun fragments. 'James Stevens from The Scoop' appears to be a journalist character, not a romantic lead. No sentence establishes a main-couple interaction with sufficient context. All sentences are coded ARC_0 (off_target). Main-couple probability is very low (~0.05) given the absence of any relational content.
+- **C adjudicate:** `ARC_0`
+  - Lexical consensus was MIXED, but contextual dominant is ARC_0 (off_target). Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) with secondary 7.1 (Interpersonal Non-Romantic Conflict) signals that any secret or misunderstanding present is not anchored to the main romantic couple — it is either peripheral character conflict or non-romantic interpersonal tension. Because the main-couple filter fails (main_couple=false), the content does not qualify for ARC_1 through ARC_8. ARC_9 would require an external plot threat bearing on the couple, which is not indicated. The dominant contextual read of off-target content therefore prevails, resolving to ARC_0. No construct bucket applies.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 24 — Confronting An Unwanted Marriage
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** MIXED
+
+> we’ll be married… to each other.”
+
+> you’re already married to me; he’ll understand.” “
+
+> i’ll give you a divorce and you can just walk away.
+
+> *(CELL_D, tertile=begin)* So that whole getting married and settling down part doesn't appeal to you?"
+
+### Pass A/B/C
+
+- **A lexical:** `MIXED`
+  - Main keywords (marry, married, marriage, husband, wife, divorce, marrying) anchor strongly to formal commitment structures; the presence of 'divorce' pulls toward ARC_3 (separation/breakup threat) but 'marry/marriage/husband/wife' collectively suggest ARC_8 (mutual commitment/final payoff), so Main is coded ARC_8. KeyBERT (engaged, promises, intend, willingly, decide) suggests deliberate commitment-making but 'instincts, suggest, chuckle, uh, remarked' introduce ambiguity and possible misunderstanding framing, coded ARC_1. POS (unhappy, threats, divorce implied via 'ends', 'previous', 'issue', 'concept') signals distress and threat to the relationship, coded ARC_3. MMR (unhappy, threats, arranged, faltered, chased, eyeing) reinforces coercive or contested marriage framing with 'threats', 'arranged', 'faltered', pointing to ARC_3. Two reps land on ARC_3, one on ARC_8, one on ARC_1 — genuine disagreement across commitment-threat-misunderstanding axis yields MIXED.
+- **B contextual:** `MIXED`
+  - Topic 24 clusters around marriage/wedding language. No single ARC code reaches 70%. ARC_5 (disclosure/revelation of intentions about marriage) is most frequent (~30%), covering sentences where characters express or question desire to marry. ARC_8 (mutual commitment/final payoff) applies to affirmative marriage declarations. ARC_2 (escalation conflict) covers refusals or contested marriages. ARC_4 (relationship-caused distress) applies where marriage is unwanted or coerced. ARC_0 covers third-party references. The spread across codes yields MIXED as dominant. Most sentences involve the main couple or plausible main-couple dyads, giving a moderate-to-high main_couple_prob of 0.65.
+- **C adjudicate:** `MIXED`
+  - Both Pass A/B converged on MIXED, and the taxonomy anchor (4.4 Conflict, Distance & Breakup Threats with secondary 4.5 Reconciliation) confirms the topic straddles escalating conflict and breakup-threat territory without cleanly resolving into repair or commitment. The dominant signal sits in the falling arc (conflict intensification and relational distance/threat), with only a secondary trace of reconciliation momentum insufficient to shift the bucket to REFINED_RISING. Mapping any free-form labels: 'Conflict' → ARC_2; 'Obstacle' or distance language → ARC_3. MIXED is retained as the arc_role because neither ARC_2 nor ARC_3 alone captures the full topic, and the secondary 4.5 signal prevents a clean single-code assignment. Construct bucket is REFINED_FALLING given the dominant 4.4 taxonomy weight.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 37 — Defending A Close Friendship
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_1 (norm: ARC_1)
+
+> i've told you -- we're just good friends.
+
+> and i’ll grant ye i’ve been a bad friend to you.
+
+> but we’ve been friends for a long time.
+
+> *(CELL_D, tertile=middle)* Good, then get out of my face and give me a minute with my friend.”
+
+> *(CELL_D, tertile=middle)* He didn’t have any life-long friends, with the exception of Butch.
+
+> *(CELL_D, tertile=end)* A friend once told me it’s okay to lean on someone,” he said. “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_0`
+  - All four keyword lists point away from main-couple romantic arc dynamics. Main is dominated by 'friends/friendship/friendly/friendships/best friend' vocabulary — social relationship framing, not romantic-couple conflict or progression. KeyBERT adds casual social-interaction words ('playfully', 'parties', 'stalked' in a light sense, 'engaged', 'honestly') with no romantic-arc signal. POS yields ambient social/contextual nouns and adjectives ('parties', 'anxiety', 'suggestion', 'fashioned', 'annoying') that do not map to any specific arc stage. MMR similarly offers social-texture words ('pout', 'admire', 'playfully', 'shout') without a coherent arc trajectory. No cues for misunderstanding, escalation, separation, disclosure, repair, commitment, or external plot conflict between a main couple are present. The topic appears to describe friendship dynamics or a friend-group social context, making it off-target for romance narrative-arc coding.
+- **B contextual:** `ARC_1`
+  - Topic 37 clusters around the word 'friend' and its variants, predominantly functioning as a misunderstanding or deflection device in romance narratives — one partner insisting the relationship is 'just friendship' when the other perceives or desires more (ARC_1: misunderstanding). Several sentences (BOOK_001_1–6, BOOK_002_1–3, BOOK_003_6) reflect this friend-zone ambiguity between potential main-couple members. BOOK_003_1, BOOK_003_2, and BOOK_003_5 shift toward a separation/breakup-threat register ('We're still friends, right?', 'I'd like to stay friends with you'), coded ARC_3. Several sentences (BOOK_002_4–6, BOOK_003_3–4, BOOK_004_1–2) are clearly off-target, referring to third-party friendships with no main-couple relevance (ARC_0). ARC_1 is the plurality code at ~40%, below the 70% threshold for a single dominant code, but no other code comes close; ARC_1 is returned as dominant given its plurality. Main-couple probability is moderate (~0.50) because roughly half the sentences plausibly involve the main couple's friend-zone dynamic, while the rest are off-target or unclear.
+- **C adjudicate:** `ARC_1`
+  - Lexical consensus (ARC_0 / off_target) was overridden by contextual dominant (ARC_1 / misunderstanding). The taxonomy placement in 4.3 Secrets, Misunderstandings & Hidden Information directly corroborates ARC_1: the topic captures concealed information or false impressions that generate relational tension between the main couple, not mere off-target noise. The secondary taxonomy (4.2 Ongoing Courtship) suggests the misunderstanding is embedded in an active courtship phase, consistent with a falling/tension arc rather than a repair or resolution arc. ARC_1 is therefore the correct single code. Construct bucket is REFINED_FALLING because misunderstandings typically drive the couple apart or impede bonding, placing this in the falling/conflict segment of the narrative arc. No free-form labels were carried forward; all prior Pass A/B language has been mapped to ARC_1.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 43 — Pissed Off and Grumbling
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** MIXED
+
+> this isn’t the first time i’ve pissed him off.”
+
+> we’ve irritated you, have we?” “
+
+> i’ve been pissed at him ever since. “
+
+> *(CELL_B, tertile=begin)* She doesn’t look mad so much as really disappointed. “
+
+> *(CELL_D, tertile=middle)* Tarquin is also pissed, but not as much as me.
+
+> *(CELL_B, tertile=end)* Now I know where his rage comes from.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_2`
+  - Main is dominated by anger/temper vocabulary (mad, angry, pissed, offend, temper) pointing to active interpersonal conflict escalation — ARC_2. KeyBERT reinforces this with arguing, attacked, insulted, grumbled, suggesting heated confrontation between parties — ARC_2. POS shifts toward emotional suffering and embarrassment (embarrassing, sadness, distress, emotional) with no clear aggressor, leaning toward relationship-caused distress — ARC_4. MMR similarly foregrounds distress, insulted, terribly, wasting, grumbled — still emotionally charged but more suffering-oriented than combative — ARC_4. Disagreement exists between the active-conflict framing (Main, KeyBERT) and the distress/suffering framing (POS, MMR). The preponderance of explicit anger and conflict-action cues across the two most lexically direct representations (Main, KeyBERT) tips consensus to ARC_2 escalation_conflict, as the distress appears to be a product of the conflict rather than a standalone relational wound.
+- **B contextual:** `ARC_4`
+  - Topic 43 is dominated by expressions of anger, moodiness, and emotional volatility (e.g., 'pissed,' 'angry,' 'rage,' 'temper,' 'moody'). These sentences describe characters experiencing or managing anger/frustration, which maps most closely to ARC_4 (relationship_caused_distress) — emotional distress states that arise within interpersonal dynamics. A minority of sentences (BOOK_002_5, BOOK_003_1, BOOK_003_4, BOOK_004_2) show more active interpersonal conflict or confrontation, coded ARC_2 (escalation_conflict). The main couple cannot be reliably identified from these short, decontextualized snippets — characters named (Louis, Tarquin) are not clearly established as part of a main romantic couple, so main_couple is 'unclear' throughout. Main couple probability is low (~0.25) given the ambiguity. ARC_4 exceeds 70% threshold, making it the dominant code.
+- **C adjudicate:** `MIXED`
+  - Lexical consensus (ARC_2) and contextual dominant (ARC_4) diverge but are not mutually exclusive: escalating conflict between the main couple (ARC_2) is the surface signal, while the deeper emotional register — relationship-caused distress — is what the contextual read captures (ARC_4). Taxonomy 4.4 'Conflict, Distance & Breakup Threats' anchors the primary signal in ARC_2, but the secondary taxonomy 3.2 'Negative Emotions & Distress' confirms that ARC_4 is a genuine co-present signal rather than noise. Because both codes are substantively supported and neither fully subsumes the other, MIXED is the correct resolution rather than forcing a single code. The construct bucket is REFINED_FALLING: both escalation conflict and relationship-caused distress are falling-arc phenomena occurring before any repair or restoration. Manual review is flagged to verify whether the topic's representative documents lean more heavily toward active conflict dynamics (ARC_2) or toward the emotional suffering the relationship itself generates (ARC_4), which would inform downstream weighting in the hypothesis model.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 94 — Caught in A Lie
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** MIXED
+
+> i’ve known him for a long time, and i’m confident that i could tell if he was lying.”
+
+> i’ve lied, therefore i’m a liar.
+
+> i never meant to—” “how can i believe a single thing you say when you’ve already been proven a liar?”
+
+> *(CELL_B, tertile=middle)* I have no reason to lie to you about something like that,’ she said. ‘
+
+> *(CELL_D, tertile=middle)* Why don’t you stop being such a baby about it and lie still and I’ll go get something for you?”
+
+> *(CELL_D, tertile=middle)* The sinking sensation that swept over him gave the lie to his efforts to convince himself it wasn’t.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_5`
+  - Main rep is dominated by deception/truth vocabulary (lie, lied, lying, liar, honest, lies, honesty, truth), which strongly signals a disclosure or confrontation about hidden truths between the main couple — ARC_5 (disclosure). KeyBERT reinforces this with 'apologize' and 'hesitate', consistent with a character revealing or confessing something difficult. POS and MMR introduce formal/authority-register words (president, sir, direct, terms, sentence, threatened) that lack clear romantic-arc anchoring, pointing to ARC_10 (unclear arc role) in isolation. However, the Main rep carries the heaviest semantic weight for topic identity, and the deception-to-truth cluster is the defining signal. Consensus lands on ARC_5 (disclosure) as the dominant arc role, with disagreement flagged because POS/MMR pull toward an unclear or external register.
+- **B contextual:** `ARC_1`
+  - Topic 94 is overwhelmingly about lying and accusations of lying between characters. The recurring pattern — direct accusations ('You lied to me,' 'Liar'), denials ('I did not lie to you'), and meta-commentary on lying ('You are not a very convincing liar') — maps squarely onto ARC_1 (misunderstanding), where deception or perceived deception creates interpersonal conflict rooted in a breakdown of honest communication. BOOK_001 clearly involves a named dyad (Emma and a male partner), strongly suggesting a main couple. BOOK_002–004 lack sufficient context to confirm main-couple status, so those are coded 'unclear.' Two sentences (BOOK_002_3, BOOK_002_6) are off-topic (literal instruction to lie still; an exclamation unrelated to deception conflict), coded ARC_0. BOOK_003_6 references a philosophical statement about lying and consequences, edging toward ARC_5 (disclosure/truth-telling theme) rather than pure accusation. ARC_1 exceeds 70% and is the clear dominant code.
+- **C adjudicate:** `MIXED`
+  - Lexical consensus (ARC_5 disclosure) and contextual dominant (ARC_1 misunderstanding) point to overlapping but distinct mechanisms within Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information). Both codes are plausible: the topic likely captures moments where hidden information is either revealed (ARC_5) or withheld/misread in a way that generates misunderstanding (ARC_1). Because neither code fully subsumes the other and the secondary taxonomy flag (4.4 Conflict, Distance & Breakup Threats) adds further ambiguity, a single ARC_# cannot be assigned without loss of fidelity. MIXED is therefore the correct arc_role. The construct bucket is REFINED_FALLING because both disclosure and misunderstanding typically drive relational deterioration in the narrative arc. Manual review is required to inspect representative documents and determine whether disclosure precedes or follows the misunderstanding, which would allow a future SPLIT into two cleaner topic clusters.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 109 — Seeing Past A Guarded Identity
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_5 (norm: ARC_5)
+
+> i’ve hardly heard a thing about you.”
+
+> anyone could’ve walked by.
+
+> even people who are close to you, who’ve known you far longer than i have, don’t know any more than what you’ve allowed them to see.
+
+> *(CELL_D, tertile=middle)* But if you really knew me, you would realize how very much I resented your taking control of my life by calling that inspector.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_5`
+  - All four keyword lists converge on identity disclosure. Main keywords ('who, know, am, don, you, are, about, me, anyone, is') form a classic 'who are you / do you know who I am' interrogative cluster signaling identity revelation. KeyBERT ('recognize, hi, fitting') reinforces recognition/identification of a person. POS ('identity, muffled, current, loose') anchors the topic explicitly to 'identity' with 'muffled' suggesting concealment or disguise. MMR ('dealing, identity, playfully, doubted, fitting, muffled, recognize, hi, thinks, loose') adds 'doubted' and 'playfully' alongside 'identity/recognize/muffled', consistent with a scene where a character's identity is hidden or uncertain and then revealed or questioned — a disclosure dynamic. No cues point to external plot threat, breakup, or repair; the dominant signal is identity-based disclosure (ARC_5).
+- **B contextual:** `ARC_10`
+  - Topic 109 clusters around the theme of knowing/not knowing someone's true identity. The largest single code is ARC_10 (unclear arc role), assigned to sentences that are too fragmentary or context-free ('It's me.', 'That would be me.', 'Who is it that wants to know?') to map to a specific narrative arc function. Among the interpretable sentences, ARC_1 (misunderstanding) is the next most common, covering lines where one partner challenges the other's claim to know them ('You don't even know me, not really'; 'You haven't got a clue who I am'). ARC_5 (disclosure) applies where a character reveals or invites revelation of their true self. ARC_2 and ARC_8 each appear once. No single code reaches 70%, but ARC_10 is dominant at ~45%. Main-couple probability is moderate (~0.60) because many sentences are clearly between romantic partners but several are too decontextualised to confirm.
+- **C adjudicate:** `ARC_5`
+  - Lexical consensus (ARC_5 disclosure) and taxonomy placement (4.3 Secrets, Misunderstandings & Hidden Information) are mutually reinforcing: the topic centers on hidden information that is surfacing or at risk of surfacing between the main couple, which is the definitional core of ARC_5. The contextual dominant ARC_10 (unclear_arc_role) reflects annotator uncertainty about narrative timing rather than a genuine absence of arc signal — the taxonomy anchor resolves that ambiguity in favor of ARC_5. Secondary taxonomy 3.3 (Ambivalence & Internal Conflict) is consistent with ARC_5: a character wrestling internally with whether/how to disclose is a standard precursor to the disclosure event itself, not a competing code. Because disclosure typically destabilizes the relationship before repair, this sits in the REFINED_FALLING construct bucket. No free-form labels were carried forward; ARC_10 is retired as the dominant in light of the stronger lexical and taxonomic evidence.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 129 — Accused of Not Caring
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** ARC_4 (norm: ARC_4)
+
+> like they care when they see that smoking-hot bod you’ve got.”
+
+> at the moment, i could’ve cared less.
+
+> you’ve never cared for anyone but yourself.”
+
+> *(CELL_D, tertile=end)* I don’t care about that kind of stuff,” Zander assured him. “
+
+> *(CELL_A, tertile=begin)* I don’t expect you to understand what it is to care about someone else.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - All four keyword lists converge on emotional distress and hurt within a relationship context. Main: 'care/cared/cares/caring' paired with negations ('don', 'less', 'didn') signals felt neglect or emotional withdrawal — a partner not caring enough, causing distress. KeyBERT: 'cared', 'mattered', 'sadly', 'unhappy', 'wondering' reinforce emotional pain and feeling unimportant to the other person. POS: 'unhappy', 'upset', 'worst', 'circumstances' describe a state of relationship-caused suffering. MMR: 'cared', 'treated', 'fault', 'smacked', 'circumstances', 'veins' suggest grievance over how one was treated, with blame attribution. No keywords indicate external antagonists (ruling out ARC_9), no clear misunderstanding frame (ARC_1), no separation/breakup threat (ARC_3), and no repair or commitment signals. The dominant signal is ongoing emotional distress caused by the relationship dynamic itself — fitting ARC_4 (relationship_caused_distress).
+- **B contextual:** `ARC_10`
+  - Topic 129 clusters around the word 'care' and its negations ('don't care', 'didn't care', 'cared too much'). The vast majority of sentences are decontextualised fragments — short rhetorical dismissals or ambiguous emotional statements — that cannot be reliably assigned to a specific narrative-arc function or confirmed as main-couple interactions. Three sentences (BOOK_002_5, BOOK_004_6, BOOK_005_4) carry enough relational context to suggest emotional distress tied to a romantic relationship (ARC_4: relationship_caused_distress): Lukas not caring while she cares too much, Jade being told she will always be cared for (implying prior hurt), and a character dying believing they were not cared for. All other sentences lack sufficient context to determine arc role or couple identity, coded ARC_10. ARC_10 dominates at 85%, well above the 70% threshold, making it the dominant code.
+- **C adjudicate:** `ARC_4`
+  - Lexical consensus (ARC_4: relationship_caused_distress) and taxonomy placement in 4.4 Conflict, Distance & Breakup Threats with secondary 3.2 Negative Emotions & Distress both point to emotionally driven distress arising from within the main-couple relationship. The contextual dominant ARC_10 (unclear_arc_role) reflects Pass B uncertainty, but the taxonomy metadata resolves that ambiguity: the content is not merely unclear — it is distress generated by the relationship dynamic itself, consistent with ARC_4. ARC_3 (separation/breakup threat) was considered but the taxonomy secondary tag (Negative Emotions & Distress) tips the balance toward ARC_4 as the primary signal, with breakup-threat elements as a contributing but not dominant feature. This sits firmly in the REFINED_FALLING construct bucket, representing deterioration of the main-couple bond through internally generated emotional suffering.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 177 — Seeing Past A Hidden Identity
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Hidden Information (norm: ARC_1)
+- **Code:** ARC_1 (norm: ARC_1)
 
 > you’ll no longer be alex.
 
@@ -419,42 +402,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `B`
-  - The dominant code 'B' represents conflict and tension, with a focus on the main couple (Alex and Eve) in the middle and end tertiles. The main couple is present in 6 out of 11 'B' coded sentences, indicating a probability of 0.6 for main couple conflict.
-- **C adjudicate:** `Hidden Information`
-
----
-
-## Topic 194 — Promising to Keep A Secret
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
-
-> i’ll keep it a secret,” said lucas.
-
-> i’ll be your dirty little secret,” i joked.
-
-> i’ll leave that secret for him to reveal.
-
-> *(CELL_C, tertile=middle)* Perhaps secret information that he has uncovered, information that would be dangerous to the French.’ ‘
-
-> *(CELL_C, tertile=begin)* For reasons I cannot disclose I would rather you did not mention the break-in to anyone.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `S`
-  - The dominant code is 'S' (Secret Keeping) as it appears most frequently in the sentences related to the main couple. The main couple probability estimate is 0.65, as 10 out of 16 sentences directly involve the main couple or their secrets.
-- **C adjudicate:** `Obstacle`
-  - The topic of secrets and misunderstandings (taxonomy 4.3) typically creates tension and conflict in a relationship, which can lead to a falling action in the narrative arc of the main couple. The promise or vow (secondary 9.2) adds an additional layer of tension as it is likely to be threatened or broken due to the hidden information, further driving the falling action.
+- **A lexical:** `ARC_10`
+  - Main keywords (sullivan, alexx, alexi, eliminate, woo, wanted, wasn, tell) suggest character names and vague action verbs with no clear romantic-arc signal; 'eliminate' and 'woo' are ambiguous without context. KeyBERT (instincts, realise, suffering, unsure) hints at internal emotional uncertainty but does not anchor to a specific arc stage. POS and MMR (dislike, guarded, fears, instincts, percent, movies, sidewalk, reminds, conscious) add hedged negative affect and mundane/observational terms that do not cohere into a recognizable arc role. No single arc stage — misunderstanding, escalation, separation, disclosure, repair, commitment, or external conflict — is clearly dominant across all four lists. All four reps independently land on ARC_10 (unclear arc role).
+- **B contextual:** `ARC_2`
+  - Topic 177 clusters around a named third-party figure ('Alex'/'Alejandro') who generates tension, jealousy, and friction between protagonists and their partners. The dominant signal is escalating interpersonal conflict (ARC_2): snapping, jealousy over Alejandro, complaints about Alex, and suspicion. One sentence shows a separation/withdrawal threat (ARC_3: Eve moving toward Alejandro). One shows relationship-caused distress (ARC_4: letting Alex run one's life). A few sentences from BOOK_005 shift to resolution/payoff (ARC_8, ARC_7) and off-target content (ARC_0), diluting but not overriding the dominant ARC_2 signal. ARC_2 reaches ~45%, well above the 70% threshold for a clean dominant code, so MIXED is not triggered; ARC_2 is dominant. Main-couple probability is moderate (~0.50) because many sentences involve a third party ('Alex'/'Alejandro') whose relationship to the main couple is unclear or indirect.
+- **C adjudicate:** `ARC_1`
+  - Lexical consensus was ARC_10 (unclear) and contextual dominant was ARC_2 (escalation_conflict), but the taxonomy metadata resolves the ambiguity: the primary taxonomy is 4.3 Secrets, Misunderstandings & Hidden Information. Hidden information and secrets are the structural driver here, making ARC_1 (misunderstanding) the most precise fit — misunderstandings in romance arcs are canonically rooted in withheld or distorted information between the main couple. ARC_2 may describe a surface symptom (conflict escalates because of the secret/misunderstanding), but the generative mechanism is ARC_1. The secondary taxonomy (3.3 Ambivalence & Internal Conflict) is consistent with ARC_1, as internal ambivalence often underlies why information is withheld. This places the topic firmly in the REFINED_FALLING construct bucket — the relationship is destabilised by the information asymmetry, not yet in repair. No free-form labels were carried forward; ARC_2 from Pass B is superseded by ARC_1 upon taxonomy reveal.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 210 — Expelled For Pursuing A Relationship
 
 - **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
+- **Code:** MIXED
 
 > she’ll be back,” [person] to explain.
 
@@ -484,17 +445,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `END`
-  - Based on the main-couple filter, the main couple is present in 11 out of 19 sentences. The dominant arc code is 'END', present in 6 out of 19 sentences.
-- **C adjudicate:** `Conflict`
+- **A lexical:** `ARC_6`
+  - KeyBERT and MMR both surface 'forgive,' 'afterward,' and 'instincts,' pointing toward a repair attempt following friction. MMR adds 'unwilling' and 'annoyance,' suggesting resistance to reconciliation but still within a repair arc. POS keywords ('disappointment,' 'annoyance,' 'unwilling,' 'distraction') lean toward ongoing relational distress (ARC_4), and Main keywords ('didn,' 'decided,' named characters) suggest a tense interpersonal moment that could read as misunderstanding (ARC_1). However, the convergence of 'forgive' and 'afterward' across two representors, combined with 'possibility' (of resolution) and 'proved,' tips the balance toward ARC_6 (repair) as the dominant arc role — a post-conflict moment where forgiveness and reconciliation are being negotiated, even if reluctantly.
+- **B contextual:** `MIXED`
+  - Topic 210 spans multiple books and narrative threads. BOOK_008 sentences dominate numerically and consistently reference a past relationship with 'Nick' that has ended or is being discussed as over, coding as ARC_3 (separation/breakup threat). BOOK_009 shows a couple in active conflict (Drake slamming out), coding as ARC_2. BOOK_006 involves emotional distress around Nathaniel and a bride-to-be, coding as ARC_4 or ARC_10 where context is insufficient. BOOK_002 sentences involve celebrity gossip and publicity concerns around Zeke, largely external/off-couple (ARC_9). BOOK_004_1 is entirely off-target (ARC_0). No single code reaches 70%, so dominant_code is MIXED. Main couple probability is moderate (~0.60) given that roughly half the sentences clearly reference a named romantic pair.
+- **C adjudicate:** `MIXED`
+  - Lexical consensus (ARC_6 repair) and contextual dominant (MIXED) diverge. Taxonomy 4.4 (Conflict, Distance & Breakup Threats) with secondary 5.1 (Family, Kinship & Parenthood) suggests the topic straddles active repair attempts and ongoing separation/breakup threat pressures — likely a moment where the couple is trying to reconcile but family-related conflict is simultaneously threatening the relationship. ARC_6 alone undersells the destabilising breakup-threat dimension; MIXED (ARC_6 + ARC_3) is the most defensible resolution. The family secondary axis does not redirect this to ARC_9 (external plot conflict) because the distress is relational and couple-facing rather than purely external. Construct bucket is REFINED_FALLING because repair is incomplete and breakup threat remains active, placing this in the descending/trough zone of the arc rather than the recovery upswing. Manual review is flagged to confirm whether family pressure is an external driver (ARC_9 component) or purely a relational stressor absorbed into the couple dynamic.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 214 — Demanding to Know What Happened
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
+- **Code:** ARC_1 (norm: ARC_1)
 
 > oh my god, how did this happen?”
 
@@ -510,48 +474,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Obstacle`
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' often leads to negative emotions and distress, which can cause a falling action in the romance plot. This topic directly affects the main couple, making it a main-couple conflict.
-
----
-
-## Topic 220 — Called Out For Being Embarrassing
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Complicating Factor (norm: ARC_2)
-
-> you two are so ignorant it’s embarrassing.”
-
-> this is so embarrassing.”
-
-> [person] you are embarrassing her.”
-
-> *(CELL_B, tertile=begin)* This was every bit as embarrassing as I’d thought it would be. “
-
-> *(CELL_B, tertile=end)* Fifteen T here’s something particularly humiliating about almost being arrested by your little brother. “
-
-> *(CELL_B, tertile=begin)* That was undoubtedly a good thing, but it made me uncomfortable.
-
-> *(CELL_D, tertile=begin)* But it’s kind of embarrassing how hardcore old-school this place is.
-
-> *(CELL_D, tertile=middle)* It was even more humiliating to be in this situation when you were twenty-eight years old.
-
-> *(CELL_C, tertile=end)* She’d thought on it all day long and the more she replayed the conversation in her head, the more embarrassed she became.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Complicating Factor`
+- **A lexical:** `ARC_2`
+  - KeyBERT, POS, and MMR all converge on escalation cues: 'caused/causing' (active harm in progress), 'worst' (peak negative intensity), 'extent' (measuring severity of damage), and 'precisely/honestly' (confrontational demand for truth). Main keywords ('hell, fuck, what happened, going, happening') are emotionally charged interrogatives signaling a heated confrontation or crisis moment — consistent with escalating conflict rather than a calm disclosure or repair scene. The combination of ongoing causation language ('causing', 'caused'), superlative severity ('worst'), and agitated interrogatives points to ARC_2 escalation_conflict as the dominant arc role. Main alone was coded ARC_10 because bare interrogatives without relational context are ambiguous, creating minor disagreement, but the three keyword-extraction methods override toward ARC_2.
+- **B contextual:** `ARC_10`
+  - All sentences in Topic 214 are short, decontextualized interrogative fragments ('What happened?', 'What's going on?', 'What the hell happened?'). They express reactive surprise or demand for information but carry no identifiable narrative arc role on their own — there is no indication of who is speaking, to whom, or in what relational context. No sentence can be reliably linked to a main couple, nor to a specific arc stage such as conflict, disclosure, repair, or commitment. The topic appears to be a BERTopic cluster of generic inquiry/reaction dialogue tags that are off-context for arc coding. ARC_10 (unclear_arc_role) is the appropriate code for all sentences. Main-couple probability is very low (~0.10) because the fragments are generic enough to appear in any character interaction.
+- **C adjudicate:** `ARC_1`
+  - Lexical consensus (ARC_2 escalation_conflict) and contextual dominant (ARC_10 unclear) diverge, but the taxonomy anchor — 4.3 Secrets, Misunderstandings & Hidden Information — is the decisive tie-breaker. Hidden information and secrets are the structural engine of ARC_1 (misunderstanding), not ARC_2 (escalation) or ARC_10 (unclear). ARC_2 would require evidence that conflict is actively intensifying beyond the misunderstanding stage; the secondary taxonomy tag (3.2 Negative Emotions & Distress) is consistent with the emotional fallout of a secret-driven misunderstanding rather than an independent escalation dynamic. ARC_10 is inappropriate because the taxonomy provides sufficient specificity to resolve ambiguity. The topic is main-couple focused (secrets/misunderstandings in romance BERTopic clusters are overwhelmingly dyadic). Construct bucket is REFINED_FALLING because secret-based misunderstandings typically appear in the falling/complication arc phase before disclosure or repair.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 237 — Hiding Someone Before He Arrives
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Conflict (norm: ARC_2)
+- **Code:** ARC_5 (norm: ARC_5)
 
 > i’ll call jared now.
 
@@ -567,110 +503,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `High Conflict`
-  - The text contains strong emotional words (wrathfully, distress, disappointed, wound) and actions that escalate conflict (knew, heading, trailing, occurred, collapsed), with minimal mitigation or resolution attempts.
-- **B contextual:** `end`
-  - Out of 16 sentences, 15 mention the main couple, with 13 sentences having an 'end' arc code, indicating a high probability of the main couple being together or resolving their conflict.
-- **C adjudicate:** `Conflict`
-  - The high conflict label and the contextual placement at the end of the story arc suggest a climax or turning point in the relationship. The topic's taxonomy of 'Secrets, Misunderstandings & Hidden Information' indicates a revelation or confrontation that could lead to a falling action in the romance plot.
-
----
-
-## Topic 244 — Confessing A Shattered Heart
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict Resolution (norm: ARC_5)
-
-> i’ve been heartbroken, truly shattered since leaving you behind in cleveland .
-
-> and actually it’s pretty handy you love me since i’ve already had my heart smashed around like day old potatoes once this year.”
-
-> it’s always been the way i’ve protected my heart, though i never thought about the hearts of the women i used.
-
-> *(CELL_C, tertile=end)* Your soft heart would weep over some of the things I’ve done and the choices I’ve made.
-
-> *(CELL_C, tertile=end)* You saved a child who would otherwise be dead right now and you risked your own life to do it because your heart is too soft for you to say no even though it might have meant your own death. “
-
-> *(CELL_C, tertile=begin)* Dear Author SWEET SURRENDER “This story ran my heart through the wringer more than once.” —
-
-> *(CELL_C, tertile=middle)* There’s not another group of men who have more heart, determination and courage.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Conflict Resolution`
-
----
-
-## Topic 248 — Arranging A Cover Story
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
-
-> i can attach myself to callie as a potential suitor, even with the distant cousin story you’ve decided to run with.
-
-> i'll just let hannah know she won't have to watch him after today.
-
-> it means you’ll probably bump into him too if you see more of hannah.’
-
-> *(CELL_B, tertile=begin)* That Hannah’s boyfriend was sleeping with apparently the whole time they were going out?
-
-> *(CELL_B, tertile=begin)* On Hannah’s behalf, and on yours too, even though I didn’t know your name.”
-
-> *(CELL_B, tertile=begin)* Hannah took me to that party as a pity thing, unfortunately.
-
-> *(CELL_B, tertile=begin)* Including that hot guy Hannah had started to introduce me to.
-
-> *(CELL_C, tertile=end)* I would confirm the girl was there, make the deal and skedaddle then Hawk and the boys would swoop in and recover the girl.
-
-> *(CELL_A, tertile=middle)* Anyway, I was totally pissed about that, and about Jess pinching my arm, when Cassie dropped another bomb on me… She said that she is “Falling in love with Jimmy!!!!”
-
-> *(CELL_A, tertile=end)* I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “
-
-> *(CELL_A, tertile=middle)* Getting all mad because of her relationship with Jimmy… Wishing that they had never started dating… Now I will never see Cassie again!
-
-> *(CELL_A, tertile=middle)* Jess and I rode together, but Cassie said she would meet us there; she was still trying to find the perfect gift for Jimmy.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `MIDDLE`
-  - Out of 17 sentences, 9 mention the main couple or their relationship, while 8 do not. The dominant arc code is 'MIDDLE', indicating that the narrative is primarily focused on the middle stage of the story.
-- **C adjudicate:** `Obstacle`
-
----
-
-## Topic 256 — Refusing to Let It End
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> no, i’ll get over it.
-
-> i’ll give you some time, but goddamn it, nat, this is not over.”
-
-> it’ll never be over—unless it ends right here right now.
-
-> *(CELL_D, tertile=begin)* I no longer cared which side won or lost, I only wanted it to be over.
-
-> *(CELL_D, tertile=middle)* Perhaps when this is over, you might see another attractive alternative.
-
-> *(CELL_D, tertile=end)* If there are consequences to our lovemaking, then this treasure hunt ends.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `end`
-  - The dominant ARC code is 'end', indicating that the main couple's narrative arc is primarily focused on resolution or conclusion. The main couple is present in 89.47% of the sentences, suggesting that the topic is indeed centered around the main couple's relationship.
-- **C adjudicate:** `Conflict`
+- **A lexical:** `ARC_4`
+  - Main rep leans toward interpersonal conflict via 'wrathfully', 'eyed', and named male characters in apparent confrontation, suggesting ARC_2 escalation. However, KeyBERT, POS, and MMR converge strongly on ARC_4 (relationship-caused distress): POS offers 'distress', 'disbelief', 'disappointed', 'wound', 'fingertips' (physical/emotional hurt); MMR reinforces with 'distress', 'collapsed', 'ripping', 'wound', 'warned'; KeyBERT adds 'worrying', 'distracted', 'privacy' — all pointing to emotional suffering and vulnerability experienced by a character within or because of a relationship dynamic. The physical injury cues ('wound', 'fingertips', 'ripping', 'collapsed') combined with emotional distress markers ('disbelief', 'disappointed', 'worrying') indicate a character in pain — likely relational in origin — rather than a direct escalating confrontation. Consensus falls to ARC_4 by 3-to-1 majority.
+- **B contextual:** `ARC_10`
+  - Topic 237 is dominated by fragmentary dialogue tags and brief action snippets (e.g., 'Jared queried', 'Jared shrugged', 'Garrett feels his face flush', 'Keep him coming') that provide no discernible narrative-arc signal. The sentences are almost entirely decontextualised speech-attribution fragments or minor physical actions. No clear main couple is identifiable across the books — BOOK_001 references a side character's boyfriend, BOOK_002 involves Garrett in unclear social interactions, BOOK_003 is pure dialogue attribution for Jared, BOOK_004 involves a trio (narrator, Daniel, Gabriel) in what appears to be a crisis/care scene but without enough context to assign a specific arc role or confirm a main couple. BOOK_005 is a single dialogue fragment. The overwhelming majority of sentences are too fragmentary to assign a meaningful arc role, making ARC_10 (unclear_arc_role) the dominant code at ~95%. One sentence (BOOK_001_1) clearly involves a side character's relationship, coded ARC_0 (off_target).
+- **C adjudicate:** `ARC_5`
+  - Lexical consensus (ARC_4: relationship_caused_distress) and contextual dominant (ARC_10: unclear_arc_role) are in tension. The taxonomy anchor — 4.3 Secrets, Misunderstandings & Hidden Information — provides the decisive tiebreaker. Hidden information and secrets are the structural engine of ARC_5 (disclosure), not merely ambient distress (ARC_4) or an unresolved arc role (ARC_10). The secondary taxonomy tag (7.1 Interpersonal Non-Romantic Conflict) does not override the main-couple filter; the secrets/hidden-information frame is most plausibly directed at the main couple's dynamic. ARC_5 sits in the REFINED_FALLING construct bucket because disclosure events typically precede or precipitate conflict escalation rather than resolving it. Manual review is flagged because the ARC_10 contextual read suggests the topic's token distribution may be ambiguous enough that some passages could belong to non-romantic interpersonal conflict (ARC_9 or ARC_0), warranting human verification before finalising the main_couple=true assignment.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 264 — Accused of Hiding Something
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
+- **Code:** MIXED
 
 > i’ve been hiding out in here, avoiding contact with the human leech.” “
 
@@ -684,16 +530,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Obstacle`
+- **A lexical:** `ARC_5`
+  - Main is dominated by concealment vocabulary ('hide', 'hiding', 'hidden', 'concealing', 'keep from') pointing strongly to ARC_5 (disclosure/secrets being kept). KeyBERT reinforces this with 'hiding' and 'revealing' as the core tension — something is being concealed and potentially exposed. POS adds 'identity', 'activities', 'choices', and 'secure places', consistent with a character hiding their identity or secrets (ARC_5). MMR introduces 'weapons', 'remote', 'blows', and 'cleared', which shift toward external/action-plot concealment (ARC_9 — external plot conflict involving hiding weapons or fugitive activity). Despite MMR's external-plot lean, the dominant signal across three of four representations is secret-keeping and potential revelation centered on a person's identity or activities, which maps to ARC_5. Disagreement flagged due to MMR's divergent external-threat framing.
+- **B contextual:** `ARC_9`
+  - Topic 264 is dominated by the semantic field of hiding, concealment, disguise, and cover — physical actions associated with evasion, surveillance, and tactical positioning. These are external-plot/action-thriller elements (shots from a hide, covering positions, hiding from a pursuer, disguises, scars). None of the sentences clearly depict a main-couple romantic dynamic; most are ambiguous or clearly non-romantic in context. The topic maps cleanly to ARC_9 (external_plot_conflict) across all tertiles, with no evidence of relationship arc content.
+- **C adjudicate:** `MIXED`
+  - Lexical consensus (ARC_5 disclosure) and contextual dominant (ARC_9 external_plot_conflict) diverge, indicating the topic captures two distinct narrative functions that co-occur in the text. Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) aligns primarily with ARC_5, suggesting a revelation or hidden-information moment involving the main couple. However, the contextual signal for ARC_9 indicates the disclosure is embedded within or triggered by an external plot pressure rather than arising purely from interpersonal dynamics. Because neither code alone is sufficient and the taxonomy secondary is None, a MIXED designation is warranted. The construct bucket is REFINED_FALLING: a disclosure event that introduces or deepens tension places this in the falling/complicating arc phase rather than repair or resolution. Manual review is required to determine whether the external element is the primary driver (favoring ARC_9 as dominant) or merely the context for a couple-centered secret reveal (favoring ARC_5 as dominant), which would affect downstream hypothesis assignment.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 265 — Mismatched Expectations About Seriousness
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Conflict Initiator
+- **Code:** ARC_4 (norm: ARC_4)
 
 > shit,” shane cursed, but in a way that said he was thrilled with the news, not unhappy. “
 
@@ -705,18 +555,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `END`
-  - The main couple (Shane and Axel) is predominantly present in the 'END' tertile, with a total of 7 out of 11 sentences mentioning them. The 'BEGIN' tertile has 3 mentions, and the 'MIDDLE' tertile has none. Therefore, the dominant code is 'END', and the estimated main couple probability is 0.65.
-- **C adjudicate:** `Conflict Initiator`
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' with a secondary 'Conflict, Distance & Breakup Threats' suggests a high conflict situation that could lead to a falling action in the main couple's relationship.
+- **A lexical:** `ARC_4`
+  - KeyBERT and MMR both surface emotional-distress vocabulary ('emotionally', 'unhappy', 'trembled', 'embarrassment', 'shock') pointing to relationship-caused distress (ARC_4). POS reinforces tension with 'arguing', 'heated', 'embarrassment', 'unsure' which edges toward ARC_2 escalation, but the dominant emotional register is distress rather than pure conflict escalation. Main keywords are character names and neutral action verbs (burrowed, nod, play) offering no clear arc signal on their own (ARC_10). The weight of emotionally charged distress cues across KeyBERT and MMR tips consensus to ARC_4; disagreement is flagged because POS leans ARC_2 and Main is ambiguous.
+- **B contextual:** `ARC_0`
+  - All sentences in this topic are fragments — name utterances ('Shane said.', 'Shane.', 'Crikey.'), a brief third-person observation about a character named Tuck/Axel, and minimal dialogue tags ('Keith thought so.'). None contain sufficient narrative content to assign a romance arc role. The topic appears to be a BERTopic cluster anchored on character-name tokens or short dialogue punctuation fragments rather than any meaningful arc event. All sentences are coded ARC_0 (off_target). Main-couple probability is very low because no romantic dyad interaction is discernible from the fragments.
+- **C adjudicate:** `ARC_4`
+  - Adjudication resolves the lexical–contextual split in favour of ARC_4 (relationship_caused_distress). The contextual read of ARC_0 (off_target) is overridden by the taxonomy placement in 4.3 Secrets, Misunderstandings & Hidden Information with a secondary tag of 4.4 Conflict, Distance & Breakup Threats: both subcategories describe distress that originates within the main-couple dynamic (hidden information causing emotional harm), which is the defining feature of ARC_4 rather than off-target content. ARC_1 (misunderstanding) was considered but the taxonomy secondary tag signals the distress has escalated beyond a simple misunderstanding into sustained relational harm, keeping ARC_4 as the better fit. The construct bucket is REFINED_FALLING because relationship-caused distress sits on the descending arc of the narrative (trust eroding, emotional damage accumulating) prior to any repair phase.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 272 — Silence Held Until Arrival
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
+- **Code:** ARC_1 (norm: ARC_1)
 
 > she didn’t speak a word until they got to their destination.
 
@@ -728,44 +580,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `Conflict`
-  - Out of the 16 sentences, 10 involve the main couple, either in conflict or avoidance. The dominant code is 'Conflict', with 8 out of 16 sentences showing conflict between the main couple.
-- **C adjudicate:** `Obstacle`
-
----
-
-## Topic 281 — Told to Calm Down First
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
-
-> you’ve got to calm, down first.
-
-> i've not been relieved of my post.
-
-> i've really helped relax, comfort and ease anger and rage with these guys.
-
-> *(CELL_B, tertile=middle)* Steady , he warned himself, before you have a goddamn panic attack .
-
-> *(CELL_B, tertile=begin)* He still sounded as calm as if this kind of thing happened every day of the week.
-
-> *(CELL_D, tertile=end)* Nor have I ever seen you as stirred up as you are after a mere few minutes in the presence of Miss Crane.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `R`
-  - The dominant code is 'R' (Reaction) as most sentences imply a reaction or escalation in the narrative.
-- **C adjudicate:** `Conflict`
-  - The topic of 'Negative Emotions & Distress' and 'Emotional Safety, Reassurance & Caretaking' suggests a conflict or distress in the relationship, which typically causes the relationship arc to fall.
+- **A lexical:** `ARC_1`
+  - All four keyword lists converge on a scene of failed or withheld communication between characters. Main keywords (answer, didn, respond, question, reply, say, word, speak) directly signal someone not answering or refusing to speak. KeyBERT reinforces this with 'refused', 'lack', 'answers', 'answering', plus emotional fallout ('annoying', 'embarrassment'). POS and MMR add 'departure' and 'destination', suggesting one party leaves or withdraws rather than engaging, and 'upset', 'shock', 'rushed' indicate the emotional charge of the non-response. The dominant pattern is a breakdown in communication — one character not answering the other's questions, likely concealing something or stonewalling — which is the hallmark of ARC_1 (misunderstanding/withheld information driving relational tension), rather than an overt escalating fight (ARC_2) or a formal separation threat (ARC_3).
+- **B contextual:** `ARC_10`
+  - Topic 272 is dominated by short, decontextualized sentences expressing silence, withholding, or emotional withdrawal (e.g., 'She didn't want to hear it,' 'Jane didn't say anything,' 'He didn't speak'). These fragments lack sufficient context to assign a specific arc role — they could belong to many arc stages. No clear main-couple dyad is identifiable across books; most sentences are ambiguous about who the characters are relative to each other. One sentence (BOOK_001_6) hints at a post-fight avoidance, coded ARC_1 (misunderstanding/avoidance). Two sentences (BOOK_002_4, BOOK_004_2) suggest external plot action or third-party dynamics, coded ARC_9. The overwhelming majority (80%) are ARC_10 (unclear arc role). ARC_10 exceeds 70%, making it the dominant code. Main-couple probability is low (~0.15) given the lack of identifiable romantic dyad context.
+- **C adjudicate:** `ARC_1`
+  - Lexical consensus (ARC_1 misunderstanding) and taxonomy placement in 4.3 Secrets, Misunderstandings & Hidden Information both point to a hidden-information-driven misunderstanding between the main couple. The contextual dominant ARC_10 (unclear_arc_role) reflects ambiguity in surface signals, but the taxonomy anchor resolves that ambiguity: the topic encodes a classic falling-arc beat where concealed information creates relational distance. The secondary taxonomy tag (8.5 Movement/Transit) is likely incidental framing rather than the core arc function. ARC_1 is therefore the correct resolution. Construct bucket is REFINED_FALLING because misunderstandings driven by secrets are a canonical early-to-mid narrative descent mechanism. No free-form labels were carried forward; ARC_10 is superseded by the stronger lexical and taxonomic evidence for ARC_1.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 285 — Confessing Years of Hatred
 
 - **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** EXTERNAL_PLOT_CONFLICT (norm: ARC_8)
+- **Code:** ARC_2 (norm: ARC_2)
 
 > i’ve hated him for years.
 
@@ -781,42 +609,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `MIXED`
-- **B contextual:** `HATE`
-  - The dominant code is 'HATE', indicating high conflict between the main couple. The main couple probability estimate is 0.75, as most hate-related sentences involve the main couple.
-- **C adjudicate:** `EXTERNAL_PLOT_CONFLICT`
-
----
-
-## Topic 286 — Trying to Regain Good Graces
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Instigator (norm: ARC_2)
-
-> oh ms. [person], you really should drop by our office more, we miss your good taste around here' blah blah blah.
-
-> i'll not have you and his grace at each other's throats before we arrive at champney court."
-
-> if what you’ve said is to be believed, how am i supposed to get back into her good graces?
-
-> *(CELL_A, tertile=begin)* Widow of a respected insurance agent and former daughter-in-law of a well-known Baptist minister, she’d seemingly shunned the social position and privilege of her past to be with Colton, but this wasn’t the first time Eric had seen her slip on her high-and-mighty act like an expensive fur coat.
-
-> *(CELL_A, tertile=begin)* Eric needed a mentor to teach him how to be an honorable man.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CELL_B`
-  - The dominant code (CELL_B) appears more frequently and is associated with the main couple in most instances. The main couple probability estimate is calculated based on the frequency of 'yes' main_couple responses.
-- **C adjudicate:** `Instigator`
-  - The topic of secrets and misunderstandings often leads to a decline in the relationship's harmony, as it can cause distress and negative emotions.
+- **A lexical:** `ARC_5`
+  - Main keywords ('hate', 'hated', 'hates', 'hating', 'hateful', 'myself') point strongly to internalized negative emotion directed at self or partner, suggesting relationship-caused distress (ARC_4). However, KeyBERT and MMR both surface 'admit', 'dislike', 'treated', 'deserve', and 'planning', which collectively signal a moment of confession or acknowledgment — a character admitting feelings (even negative ones like dislike or hatred) to another, consistent with disclosure (ARC_5). POS yields only 'purpose' and 'shock', which are too sparse to anchor a specific arc role (ARC_10). The convergence of 'admit' and 'dislike'/'hated' across KeyBERT and MMR tips the consensus toward ARC_5: a character disclosing previously hidden negative feelings (e.g., 'I hated you' or 'I have to admit I disliked how you treated me'), which is a classic romance-arc disclosure beat. Disagreement is flagged because Main leans ARC_4 and POS is unclear.
+- **B contextual:** `ARC_2`
+  - Topic 285 is saturated with hatred, loathing, and disdain language ('I hate you', 'hated him', 'loathed him', 'dislike'). All sentences express intense interpersonal hostility, which maps cleanly to ARC_2 (escalation_conflict) — the emotional peak of antagonism between characters. The topic is not about misunderstanding (ARC_1), separation (ARC_3), or external plot (ARC_9); it is the raw expression of conflict-level negative affect. Main-couple attribution is uncertain for roughly half the sentences (many use 'him/her' without clear dyadic context), but several BOOK_003 sentences and BOOK_002_2/3 plausibly involve the main couple, yielding a moderate main_couple_prob of ~0.45. No sentence reaches a repair, disclosure, or commitment register, so ARC_2 dominates at 100%.
+- **C adjudicate:** `ARC_2`
+  - Lexical consensus flagged ARC_5 (disclosure), but the contextual dominant signal is ARC_2 (escalation_conflict), which better captures the taxonomy metadata: Negative Emotions & Distress (3.2) as primary and Interpersonal Non-Romantic Conflict (7.1) as secondary. The secondary taxonomy tag initially pulled toward ARC_5 (a disclosure event can surface distress), but disclosure is not the defining arc function here — the dominant pattern is escalating relational conflict generating distress within the main couple. ARC_2 is therefore the correct resolution. The construct bucket is REFINED_FALLING, consistent with a conflict-escalation phase in the narrative arc. No free-form labels were carried forward; all prior Pass A/B terms are mapped to ARC_2. Manual review is not required given clear contextual dominance.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 301 — Confessing A Thin Relationship History
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** REFINED_FALLING (norm: ARC_2)
+- **Code:** ARC_1 (norm: ARC_1)
 
 > you know that because you’ve been with one other guy and had a long-term relationship?
 
@@ -832,265 +638,20 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `B`
-  - The majority of sentences (16 out of 18) are related to the main couple's relationship status or dynamics, with 12 sentences explicitly mentioning a boyfriend or lover. The dominant ARC code is 'B' (Conflict), as most sentences discuss or hint at relationship issues or uncertainty.
-- **C adjudicate:** `REFINED_FALLING`
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' typically creates tension and misunderstanding between the main couple, leading to a falling action in the narrative arc. The secondary topic of 'Ambivalence & Internal Conflict' further emphasizes the internal struggle of the characters, contributing to the falling action. Although the conflict label is high, the low fidelity indicates that the conflict is not directly between the main couple, but rather an external factor causing tension.
-
----
-
-## Topic 314 — Fiancé Becoming A Stranger
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Hidden Information (norm: ARC_1)
-
-> macie had spent far more time praying for blake and far less time being driven by her constantly-shifting emotions.
-
-> she peeked out and verified that it was indeed blake, then promptly shut the door in his face to remove the chain. “
-
-> the blake i am engaged to is slowly disappearing in my mind, and being replaced by a complete and utter stranger.
-
-> *(CELL_A, tertile=middle)* I wondered about that when you first told me you’d be staying with Brant.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Hidden Information`
-
----
-
-## Topic 316 — Snapping Over Money and Control
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> you’ll have to find another way to obtain the tallmadge money,” lucas snapped. “
-
-> stop that, you little fool, otherwise we’ll both be—’ lucas began, and then stopped as one of suzy’s flailing hands caught the side of his mouth.
-
-> they didn’t like it much when they found out, but lucas paid them well, and they’ll get over it.
-
-> *(CELL_B, tertile=middle)* Perhaps you should show Eva to her room,” Lucas finally suggested to Michael. “
-
-> *(CELL_B, tertile=middle)* Unlike Ethan and Jason, who were dark-haired, Aaron and Lucas were more dirty-blonde.
-
-> *(CELL_B, tertile=end)* He watched Lucas Mason as he spoke and was rewarded by an expression of guilt upon his uncle’s face. “
-
-> *(CELL_B, tertile=end)* You have brought this upon us,” Lucas Mason harshly accused his grief stricken nephew. “
-
-> *(CELL_B, tertile=end)* Lucas Mason was not so wise, however, and questioned Rork angrily. “
-
-> *(CELL_B, tertile=end)* The look upon Lucas Mason’s traitorous face mirrored the truth of Rork’s words.
-
-> *(CELL_B, tertile=end)* But as Lucas continued his tirade, Rork reached out to touch his beloved father’s body , only to find it frozen.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `C`
-  - The main couple (Lucas and Aaron) is present in 9 out of 18 sentences, with a higher concentration in the 'end' tertile (6 out of 9 sentences). The dominant ARC code is 'Consequence' (6 out of 18 sentences), indicating that the narrative is reaching its climax or resolution.
-- **C adjudicate:** `Conflict`
-
----
-
-## Topic 319 — Confessing A Costly Mistake
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** FALLING (norm: ARC_2)
-
-> but you have a way of letting me know when you think i’ve made the wrong one.” “
-
-> i’ve made many mistakes and maybe i should have come back a year ago.
-
-> it was a mistake for which i’ve paid dearly.” “
-
-> *(CELL_D, tertile=middle)* They’re fundamental y flawed, I can’t—” “ ‘Flawed’ being the key word,” Josh points out.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CONFLICT`
-  - The dominant code is 'CONFLICT' as most sentences involve disagreements or mistakes between the main couple. The main couple probability estimate is high (0.846) as most sentences (16 out of 18) involve the main couple in some way.
-- **C adjudicate:** `FALLING`
-
----
-
-## Topic 322 — Consumed By Guilt After The Act
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Internal Struggle (norm: ARC_2)
-
-> before i fell asleep i was thinking i would wake up this morning consumed with guilt because of what we did, but it wasn’t like that at all.
-
-> he’s consumed with his guilt.
-
-> the only way victor could bury the guilt was to remind himself his actions were all to a higher purpose.
-
-> *(CELL_D, tertile=end)* Also because I feel tremendously guilty about what I wrote Belinda—a note you must have read.” “
-
-> *(CELL_D, tertile=middle)* article about how guys who cheat on their wives often say corny stuff like this to ease their guilty feelings. “
-
-> *(CELL_A, tertile=begin)* Even though his grief had finally eased, the guilt had become part of him.
-
-> *(CELL_B, tertile=end)* I felt a combination of guilt, validation, and frustration over the events of that afternoon.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `CELL_B`
-  - The dominant code (CELL_B) and the majority of sentences (13 out of 16) involve the main couple, indicating a strong narrative focus on their conflict and guilt. The main couple's probability estimate is calculated as the sum of 'yes' occurrences divided by the total number of sentences.
-- **C adjudicate:** `Internal Struggle`
-  - The topic of ambivalence and internal conflict suggests that the main couple is experiencing a rising tension due to their mixed feelings, rather than a falling action or an external plot conflict.
-
----
-
-## Topic 346 — Delivering Urgent News in Secret
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** Obstacle (norm: ARC_8)
-
-> let’s go [person] i’ll drive you to it.”
-
-> i hardly think leaving a note telling my father where to find me would’ve been a good idea, but i’m not going to tell james that. “
-
-> i know this is bad, me coming here, especially after the celeb weekly article, but i’ve got some important information about [person].”
-
-> *(CELL_B, tertile=end)* She pointed to James Stevens from The Scoop , who sat in the front row with Scott’s parents. “
-
-### Pass A/B/C
-
-- **A lexical:** `{'initiator': 'admit, planning', 'responder': 'feminine, suffering, exact, strained, terms, ability'}`
-  - The consensus codes for both initiator and responder focus on conflict, with 'admit' and 'planning' being common in the initiator's role. The responder's consensus code revolves around 'feminine', 'suffering', 'exact', 'strained', 'terms', and 'ability', indicating a struggle or challenge. Disagreements in roles primarily concern the attraction arc for initiators and minor variations in conflict codes for responders.
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `Obstacle`
-
----
-
-## Topic 362 — Keeping Someone Watched and Close
-
-- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** OBSTACLE (norm: ARC_8)
-
-> come on, i’ll get you a drink,’ rory said. ‘
-
-> they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.
-
-> and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room.
-
-> *(CELL_B, tertile=begin)* For we have seen how far Kelsey is willing to go for what he wants.”
-
-> *(CELL_B, tertile=begin)* He would go slowly, wisely, even though he was more resolved than ever to see Kelsey repaid for his ills against others.
-
-> *(CELL_B, tertile=begin)* Yet he’d had no time to grieve their loss, for he had immediately become embroiled in this conflict with the Earl of Kelsey.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `middle`
-  - The dominant code is 'middle' as it appears in 6 out of 18 sentences. The main couple is present in 17 out of 18 sentences, making the main couple probability estimate very high.
-- **C adjudicate:** `OBSTACLE`
-
----
-
-## Topic 366 — Paralyzed By Irrational Fear
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** INNER_CONFLICT (norm: ARC_2)
-
-> it's like a person who is irrationally terrified of insects throwing a bowl over a cricket in her living room, and then, in sheer terror, stacking a heavy dictionary on top of the bowl so the cricket can't escape.
-
-> for some reason, he was fucking terrified.
-
-> and he was terrified of what that meant.
-
-> *(CELL_A, tertile=middle)* Nightmares and prophesies notwithstanding, he simply wasn't capable of it.
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `UNKNOWN`
-- **C adjudicate:** `INNER_CONFLICT`
-
----
-
-## Topic 3 — Demanding An Explanation
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** Conflict (norm: ARC_2)
-
-> and you have no idea what we’ve seen, what we’ve done— you’ve been in your cosy little world and you just have no—damned— clue! ’
-
-> sophia, i’ve something to tell you.” “
-
-> i’ve told them that already.’ ‘
-
-> *(CELL_B, tertile=middle)* I’ll tell you whatever you want to know.”
-
-> *(CELL_B, tertile=middle)* Well, you know what I mean.” “
-
-> *(CELL_D, tertile=end)* No—no, I don’t admit that.’
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `D`
-  - The dominant code 'D' (Tell me!) appears 3 times, indicating high conflict and main-couple interaction. The main-couple probability estimate is 0.85, as 17 out of 20 sentences involve the main couple.
-- **C adjudicate:** `Conflict`
-
----
-
-## Topic 24 — Confronting An Unwanted Marriage
-
-- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **Code:** ANTAGONIST (norm: ARC_8)
-
-> we’ll be married… to each other.”
-
-> you’re already married to me; he’ll understand.” “
-
-> i’ll give you a divorce and you can just walk away.
-
-> *(CELL_D, tertile=begin)* So that whole getting married and settling down part doesn't appeal to you?"
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `B`
-  - The dominant ARC code is B, indicating a focus on marriage and commitment. The main couple is mentioned in 19 out of 20 sentences, giving an estimated main couple probability of 0.95.
-- **C adjudicate:** `ANTAGONIST`
-
----
-
-## Topic 179 — Dreading What You Stand to Lose
-
-- **Taxonomy:** 3.2 — Negative Emotions & Distress
-- **Code:** Conflict (norm: ARC_2)
-
-> you’ll lose your reason, wishing yourself dead.
-
-> i am fearful we’ll still lose him.
-
-> but you’ll lose me?
-
-> *(CELL_B, tertile=middle)* I will not risk losing Seti because you two imbeciles were impatient.” “
-
-> *(CELL_C, tertile=end)* I was under the impression you’d rather I get and stay lost.”
-
-### Pass A/B/C
-
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `conflict`
-  - Out of 13 sentences, 11 were related to the main couple, with 8 expressing conflict and 3 expressing romance.
-- **C adjudicate:** `Conflict`
+- **A lexical:** `ARC_4`
+  - Main keywords (boyfriend, mate, relationship, partner, status, don, mean) signal interrogation or anxiety about the relationship itself — not a discrete external threat or a repair moment, but ongoing relational distress tied to the couple's dynamic. KeyBERT reinforces this: 'emotionally', 'admit', 'worrying', 'ex' point to emotional strain and unresolved feelings causing distress within the relationship. MMR adds 'arrange', 'ripping', 'intend', 'afford', 'emotionally' — 'ripping' especially suggests pain or rupture, and 'ex' raises the spectre of a prior relationship complicating the current one, consistent with relationship-caused distress (ARC_4). POS keywords (partners, success, potential, secure) are more neutral/aspirational and lack clear conflict valence, warranting ARC_10 for that rep alone. Three of four reps converge on ARC_4, yielding consensus there despite POS dissent.
+- **B contextual:** `ARC_1`
+  - Topic 301 clusters around relationship-status ambiguity and questioning — 'do you have a boyfriend/girlfriend?', denials of being in a relationship, and challenges about who someone is with. These are predominantly misunderstanding or definitional-confusion signals (ARC_1), where characters are unclear or in dispute about the nature of their romantic connection. A substantial minority of sentences are too fragmentary or context-free to assign a specific arc role (ARC_10). Two sentences (BOOK_003_6, BOOK_005_1) reflect distress caused by relationship dynamics (ARC_4). Two sentences are off-target (ARC_0). ARC_1 reaches ~45%, above the 70% threshold is not met, but it is clearly dominant over all other codes. Main-couple probability is moderate (~0.55): several sentences plausibly involve the main couple negotiating relationship labels, but many are ambiguous or involve third parties.
+- **C adjudicate:** `ARC_1`
+  - Lexical consensus landed on ARC_4 (relationship-caused distress), but the taxonomy placement in 4.3 Secrets, Misunderstandings & Hidden Information — with a secondary anchor in 3.3 Ambivalence & Internal Conflict — points to the distress being a downstream symptom rather than the primary arc mechanism. The contextual dominant ARC_1 (misunderstanding) better captures the generative engine: a hidden piece of information or a secret creates a misread between the main couple, producing the felt distress. ARC_4 describes the emotional register; ARC_1 describes the narrative function. In adjudication, narrative function takes precedence for arc_role assignment. The construct bucket is REFINED_FALLING because the misunderstanding is actively widening the relational gap rather than initiating repair. No free-form labels were carried forward from Pass A/B.
+- **Action:** REINTERPRET
 
 ---
 
 ## Topic 303 — Confessing Long-Hidden Secrets
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **Code:** REFINED_FALLING (norm: ARC_2)
+- **Code:** ARC_1 (norm: ARC_1)
 
 > normally, tate would’ve finished the sentence she was working on, but the excitement in mabel’s voice jarred her completely out of the story, derailing her train of thought.
 
@@ -1108,9 +669,176 @@
 
 ### Pass A/B/C
 
-- **A lexical:** `UNKNOWN`
-- **B contextual:** `meet`
-  - Based on the given sentences, the main couple is present in 65% of the cases. The dominant arc code is 'meet', indicating that the narrative focuses on introductions and initial interactions between characters.
-- **C adjudicate:** `REFINED_FALLING`
+- **A lexical:** `ARC_10`
+  - Main rep offers a cluster of character names (tate, logan, kenzie, ang, chace, kent, sophia) with no relational-arc signal beyond 'agreed'; KeyBERT yields procedural/observational terms (nods, sentence, speaking, planned, anticipation, muffled, worrying, judging, winked) that suggest scene-level narration without a clear arc function; POS rep mixes physical/situational nouns and adjectives (rear, period, panicked, tracks, decent, television, sentence, current, wrists, ex) — 'ex' is the only faint relational hint but is too isolated to anchor an arc code; MMR rep contains action verbs (drawled, fumbled, hauled, circled, tipped) and modifiers (judging, occupied, bothering, muffled) that read as moment-to-moment scene texture rather than any identifiable arc beat. No representation supplies enough directional relational signal to assign a specific ARC_1–ARC_9 code, so ARC_10 (unclear_arc_role) is the unanimous consensus.
+- **B contextual:** `ARC_0`
+  - Topic 303 clusters around proper names — Joshua Tate (BOOK_003), Tana/Dotty/Laurel Mayfield (BOOK_004/005), and Tyrese Moore (BOOK_007). None of these sentences depict a romantic main-couple dynamic; they reference supporting characters, investigative dialogue, and third-party interactions. BOOK_005_5 hints at external plot manipulation (a staged accident, time travel), but the subject is a villain's scheme rather than main-couple arc content. All sentences are off-target for romance narrative-arc coding, yielding a unanimous ARC_0 classification and a main_couple_prob of 0.0.
+- **C adjudicate:** `ARC_1`
+  - Adjudication resolves the tension between lexical consensus (ARC_10 unclear) and contextual dominant (ARC_0 off_target) by applying taxonomy metadata. Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) is a strong signal that the topic content centers on hidden information or misunderstanding dynamics between the main couple — a classic REFINED_FALLING beat. ARC_0 (off_target) is overridden because the taxonomy assignment confirms main-couple relevance; ARC_10 (unclear) is overridden because the taxonomy provides sufficient semantic grounding. ARC_1 (misunderstanding) is the nearest valid code to the primary taxonomy category 4.3, capturing the secrets/hidden-information driver of conflict. The secondary taxonomy 4.5 (Reconciliation/HEA) is noted but does not dominate; it may indicate downstream repair potential but does not shift the arc_role to ARC_6/ARC_7/ARC_8 without stronger contextual evidence. No free-form labels were carried forward.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 314 — Fiancé Becoming A Stranger
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_10 (norm: ARC_10)
+
+> macie had spent far more time praying for blake and far less time being driven by her constantly-shifting emotions.
+
+> she peeked out and verified that it was indeed blake, then promptly shut the door in his face to remove the chain. “
+
+> the blake i am engaged to is slowly disappearing in my mind, and being replaced by a complete and utter stranger.
+
+> *(CELL_A, tertile=middle)* I wondered about that when you first told me you’d be staying with Brant.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - Main rep is dominated by character names (blake, dion, macie, breydan, hewitt) and social/group terms (mates, grog, evite, addressing, motioned) with no clear arc signal. KeyBERT adds 'engaged', 'attracted', 'overheard', 'emotions', 'causing' — suggestive of some interpersonal dynamic but not pinpointing a specific arc stage (no clear conflict, repair, disclosure, or commitment cue). POS rep echoes 'engaged', 'embarrassed', 'emotions', 'amusement', 'reminder' — mild social awkwardness but insufficient to anchor a specific arc role. MMR adds 'overheard', 'chased', 'praying', 'amusement', 'causing' — again evocative but ambiguous across multiple possible arcs (misunderstanding, escalation, or simply external social scene). No single arc stage is clearly dominant across all four reps; the cluster reads as a social gathering scene with emotional undercurrents that cannot be reliably coded beyond unclear arc role.
+- **B contextual:** `ARC_10`
+  - Topic 314 appears to be a character-name topic — sentences are almost entirely name invocations or very short address fragments (Brant, Blake, Phoenix) with no surrounding narrative context that reveals a relationship dynamic, conflict, repair, or arc event. The sentences are drawn from multiple books with different named characters, confirming this is a BERTopic cluster anchored on proper-name tokens rather than any coherent narrative-arc function. No sentence provides enough context to identify a main-couple interaction or assign a meaningful arc code. All sentences are coded ARC_10 (unclear arc role). Main-couple probability is very low (0.10) because the fragments are name-only utterances with no relational content visible.
+- **C adjudicate:** `ARC_10`
+  - Both lexical consensus and contextual dominant converge on ARC_10 (unclear_arc_role), indicating the topic does not resolve cleanly into a single narrative-arc function. The taxonomy metadata (4.3 Secrets, Misunderstandings & Hidden Information; secondary 3.3 Ambivalence & Internal Conflict) suggests content that could plausibly map to ARC_1 (misunderstanding) or ARC_5 (disclosure), but neither is sufficiently dominant to override the dual-pass ARC_10 verdict without additional evidence. The secondary taxonomy (ambivalence/internal conflict) further muddies the signal — internal conflict is not inherently a main-couple arc beat. No construct bucket is assigned because the topic lacks the directional clarity required for REFINED_FALLING or REFINED_RISING, and there is no indication of external-plot primacy. Manual review is flagged to inspect raw token weights and representative documents, which may allow a future reclassification to ARC_1 or ARC_5 if secrets/misunderstandings between the main couple are confirmed as the dominant signal.
+- **Action:** KEEP
+
+---
+
+## Topic 362 — Keeping Someone Watched and Close
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_10 (norm: ARC_10)
+
+> come on, i’ll get you a drink,’ rory said. ‘
+
+> they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.
+
+> and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room.
+
+> *(CELL_B, tertile=begin)* For we have seen how far Kelsey is willing to go for what he wants.”
+
+> *(CELL_B, tertile=begin)* He would go slowly, wisely, even though he was more resolved than ever to see Kelsey repaid for his ills against others.
+
+> *(CELL_B, tertile=begin)* Yet he’d had no time to grieve their loss, for he had immediately become embroiled in this conflict with the Earl of Kelsey.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - Main keywords are dominated by proper nouns (rory, yamane, kingman, darlington, ayida, damballah) and a survival cue ('survived'), offering no clear relational arc signal between a main couple. KeyBERT yields procedural/social interaction words (answering, willing, sir, expect, pretending, embarrassed, introduce, issue, wondering) that suggest a scene of social navigation or awkward introduction but do not point to a specific arc stage. POS mirrors this with neutral framing terms (addition, meantime, framed, suggestion, issue, features, willing, sir). MMR adds physical/emotional texture (tearing, crouched, struggled, tugged, embarrassed) consistent with tension but not diagnosable as a specific arc beat without clearer relational context. No keyword cluster reliably maps to a defined ARC_1–ARC_9 stage; the aggregate signal is ambiguous.
+- **B contextual:** `ARC_10`
+  - Topic 362 clusters around the name 'Kelsey' across two very different books. In BOOK_001, Kelsey is an antagonist (Earl of Kelsey) and all sentences describe external conflict/rivalry with no main-couple involvement — coded ARC_9. In BOOK_002, Kelsey appears to be a character whose identity relative to the main couple is unclear from fragments alone; 'Kelsey's heart sank' suggests emotional distress (ARC_4) but context is insufficient to confirm main-couple status. In BOOK_007, Rick and Dorian appear to be a main couple (mates), with one intimate scene (ARC_0 — off-target for arc coding) and concern for Dorian's wellbeing (ARC_4). BOOK_008 sentences are too fragmentary (ARC_10). No single code reaches 70%; ARC_10 is the plurality at ~45%, making it the dominant code, but the topic is heterogeneous across books and character roles. Main-couple probability is low (~0.20) given that most sentences involve an antagonist named Kelsey or unclear characters.
+- **C adjudicate:** `ARC_10`
+  - Both lexical consensus and contextual dominant converge on ARC_10 (unclear_arc_role). The taxonomy tag 4.3 (Secrets, Misunderstandings & Hidden Information) suggests the topic could plausibly map to ARC_1 (misunderstanding) or ARC_5 (disclosure), but neither signal is strong enough to override the double ARC_10 signal from Passes A and B without additional textual evidence. The secondary taxonomy tag 10.1 (Paranormal & Immortal Beings) raises the possibility that the hidden-information element is tied to a supernatural identity reveal, which could be external-plot-adjacent (ARC_9) rather than a pure interpersonal misunderstanding — further blurring the picture. Because the topic sits at the intersection of at least three plausible arc roles (ARC_1, ARC_5, ARC_9) without a dominant signal, ARC_10 is the most defensible single code. No construct bucket is assigned because the ambiguity prevents reliable placement in REFINED_FALLING, REFINED_RISING, or EXTERNAL_PLOT_CONFLICT. Manual review is required to inspect representative documents and determine whether a more specific arc role can be assigned.
+- **Action:** KEEP
+
+---
+
+## Topic 319 — Confessing A Costly Mistake
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_1 (norm: ARC_1)
+
+> but you have a way of letting me know when you think i’ve made the wrong one.” “
+
+> i’ve made many mistakes and maybe i should have come back a year ago.
+
+> it was a mistake for which i’ve paid dearly.” “
+
+> *(CELL_D, tertile=middle)* They’re fundamental y flawed, I can’t—” “ ‘Flawed’ being the key word,” Josh points out.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_1`
+  - Main keywords ('mistake', 'mistakes', 'flaw', 'error', 'errors', 'biggest', 'terrible', 'made') strongly signal a misunderstanding or misjudgment frame — the vocabulary of recognizing a wrong belief or wrong action that drove a rift, which is the lexical signature of ARC_1 (misunderstanding). KeyBERT ('occurred', 'thinks') and POS ('latest', 'bigger') are too sparse and neutral to anchor any specific arc role, yielding ARC_10. MMR adds 'proved', 'shifting', 'paid', 'surely', 'pressing' alongside 'occurred'/'bigger'/'thinks' — these hint at consequence and acknowledgment but still lack directional arc cues, so ARC_10 is the safest call there. The Main list dominates in volume and specificity; 'mistake/error/flaw' as a cluster is the canonical lexical marker for a misunderstanding-driven conflict beat, so ARC_1 carries the consensus despite disagreement from the sparser reps.
+- **B contextual:** `ARC_1`
+  - Topic 319 clusters around language of mistakes, wrongness, accidents, and being flawed — all hallmarks of misunderstanding or misjudgment rather than escalating conflict or external plot. The majority of sentences (12/20) express that something was wrong, mistaken, or accidental, fitting ARC_1 (misunderstanding). A minority show interpersonal friction/disagreement (ARC_2) or acknowledgment/repair language (ARC_6). One sentence ('I feel so cheated') suggests relational distress (ARC_4). Crucially, none of the sentences clearly identify a main romantic couple; speakers and addressees are unnamed or ambiguous, so main_couple_prob is low (~0.25). ARC_1 exceeds 70% threshold when combining direct mistake/wrong language, making it the dominant code.
+- **C adjudicate:** `ARC_1`
+  - Both lexical consensus and contextual dominant converge on ARC_1 (misunderstanding). Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) directly corroborates this classification, with 3.2 (Negative Emotions & Distress) as a secondary signal consistent with the emotional fallout of a misunderstanding rather than an independent arc role. The topic concerns the main couple and represents a falling-arc dynamic (trust/understanding deteriorating due to hidden information), placing it in the REFINED_FALLING construct bucket. No conflict between passes or taxonomy signals; KEEP is appropriate with no manual review needed.
+- **Action:** KEEP
+
+---
+
+## Topic 3 — Demanding An Explanation
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** ARC_5 (norm: ARC_5)
+
+> and you have no idea what we’ve seen, what we’ve done— you’ve been in your cosy little world and you just have no—damned— clue! ’
+
+> sophia, i’ve something to tell you.” “
+
+> i’ve told them that already.’ ‘
+
+> *(CELL_B, tertile=middle)* I’ll tell you whatever you want to know.”
+
+> *(CELL_B, tertile=middle)* Well, you know what I mean.” “
+
+> *(CELL_D, tertile=end)* No—no, I don’t admit that.’
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_5`
+  - All four keyword lists converge on disclosure/revelation dynamics. Main keywords ('know, tell, don, understand, ask, explain, say, wrong, mean') signal a scene structured around communicating or withholding information and seeking clarification. KeyBERT keywords ('admit, reveal, realise, assure, speaking') are direct disclosure-act verbs — 'admit' and 'reveal' are canonical ARC_5 markers. POS and MMR keywords ('explanation, answers, results, difference, remark, extent, percent') point to a scene where facts or truths are being laid out or demanded, consistent with a disclosure moment. The presence of 'commander, sir, mister' suggests a formal or authority-inflected context for the disclosure, but the dominant arc function across all reps is the surfacing of hidden or unclear information to one or both parties — ARC_5 disclosure.
+- **B contextual:** `ARC_5`
+  - All sentences in this topic cluster around the act of demanding, withholding, or offering information — 'Tell me,' 'I demanded to know,' 'I'll tell you whatever you want to know,' 'I'm just not supposed to tell you,' etc. This is a strong disclosure/revelation pattern (ARC_5). The sentences are highly decontextualized fragments with no clear identification of who the speakers are or whether they constitute a main couple; 'unclear' is assigned throughout. The topic does not show escalating conflict, repair, or commitment — it is specifically about the act of disclosure or the resistance to it. ARC_5 accounts for 100% of sentences, well above the 70% threshold, making it the dominant code. Main couple probability is low-to-moderate (0.35) because the fragments could involve any dyad, including secondary characters or non-romantic pairs.
+- **C adjudicate:** `ARC_5`
+  - Both lexical consensus and contextual dominant independently converge on ARC_5 (disclosure). Although the taxonomy tag is 4.4 Conflict, Distance & Breakup Threats, disclosure events frequently appear within that zone of the narrative arc — a character revealing a secret or truth is a classic falling-arc beat that precipitates conflict or distance. The taxonomy label describes the broader thematic cluster, not the specific arc mechanism; the mechanism here is disclosure. No free-form labels were carried over from Pass A/B that require remapping. Main-couple filter passes. Construct bucket is REFINED_FALLING because disclosure at this position typically drives the couple apart before repair begins.
+- **Action:** KEEP
+
+---
+
+## Topic 194 — Promising to Keep A Secret
+
+- **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
+- **Code:** ARC_5 (norm: ARC_5)
+
+> i’ll keep it a secret,” said lucas.
+
+> i’ll be your dirty little secret,” i joked.
+
+> i’ll leave that secret for him to reveal.
+
+> *(CELL_C, tertile=middle)* Perhaps secret information that he has uncovered, information that would be dangerous to the French.’ ‘
+
+> *(CELL_C, tertile=begin)* For reasons I cannot disclose I would rather you did not mention the break-in to anyone.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_5`
+  - All four keyword lists converge on disclosure dynamics. Main is dominated by secret/secrets/keep/keeping/kept/reveal/secrecy — the core lexicon of hidden information being held or released. KeyBERT reinforces with reveal/revealing/hiding/confessed/identity, pointing to an active moment of disclosure or near-disclosure. POS adds identity/embarrassing/curiosity/ability/pressure, consistent with a character revealing a personal truth (identity, ability) under social or emotional pressure. MMR echoes with guarded/reveal/confessed/hiding/discovered/bury, all signalling information that was concealed and is now surfacing. The cluster is squarely about the act of revealing a kept secret — the defining feature of ARC_5 (disclosure) — rather than the conflict that follows (ARC_2) or the repair that results (ARC_6). No cues strongly indicate external plot threat (ARC_9) or misunderstanding (ARC_1) as the primary frame.
+- **B contextual:** `ARC_5`
+  - Topic 194 is overwhelmingly about secrets, secrecy, and the act of keeping or revealing hidden information — the defining features of ARC_5 (disclosure). The vast majority of sentences (17/20) directly reference secrets, secret-keeping, or the threat/promise of disclosure. A meaningful subset (BOOK_006 sentences) clearly involves the main couple, where one or both partners are concealing truths from each other, which is a classic disclosure-tension dynamic. Two sentences (BOOK_005_2, BOOK_005_3) reference dangerous political/external secrets with no romantic-couple framing, coded ARC_9. Main-couple probability is moderate (~0.45) because while BOOK_006 strongly anchors the couple context, many other sentences are ambiguous or clearly non-couple. ARC_5 exceeds 70% threshold, making it the dominant code.
+- **C adjudicate:** `ARC_5`
+  - Both lexical consensus and contextual dominant converge on ARC_5 (disclosure). Taxonomy 4.3 (Secrets, Misunderstandings & Hidden Information) directly supports a disclosure event — a character reveals or is confronted with concealed information, which is the canonical ARC_5 trigger. The secondary taxonomy 9.2 (Promise, Vow & Future-Tense Speech Acts) suggests a commitment or pledge may accompany or frame the disclosure, but it does not displace the primary arc role; it is a supporting speech-act layer. Because disclosure typically destabilizes the relationship before repair can occur, this sits in the REFINED_FALLING construct bucket. No conflict between passes; no free-form labels to remap. Main-couple filter passes — the disclosure pertains to the central romantic dyad. No manual review needed.
+- **Action:** KEEP
+
+---
+
+## Topic 85 — Offering and Refusing An Apology
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** ARC_6 (norm: ARC_6)
+
+> he said he wanted to apologize.
+
+> i need to apologize to you, ruby.
+
+> oh, i'm so not gonna apologize for that."
+
+> *(CELL_D, tertile=end)* He tried to get back in my good graces with a box of chocolates a couple of days later, but he never did apologize.” “
+
+> *(CELL_D, tertile=begin)* And you made it quite clear that you thought I was overreacting to the situation.”
+
+> *(CELL_D, tertile=end)* Between Cornelia, Emily Taylor and Helen Washburn, I’ve been apologized to every day this week.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_6`
+  - All four keyword lists converge on repair behavior between the main couple. Main is saturated with apology-act vocabulary ('sorry', 'apologize', 'apology', 'apologizing', 'apologized', 'owe', 'apologise'), which is the canonical lexical signature of ARC_6 (repair). KeyBERT reinforces this with 'apology', 'apologize', 'forgive', 'fault', and 'embarrassed', indicating acknowledgment of wrongdoing and a bid for reconciliation. POS adds 'apology', 'behalf', 'distress', and 'circumstances', consistent with a formal or emotionally charged repair scene. MMR echoes 'apology', 'forgive', 'behalf', 'distress', and 'circumstances', with 'overheard' and 'snorted' suggesting interpersonal tension being addressed rather than escalating. The presence of 'forgive' across KeyBERT and MMR confirms the repair frame rather than mere escalation or disclosure. No cues point to final restored trust (ARC_7) or commitment payoff (ARC_8); the focus is on the act of apologizing itself, placing this squarely in ARC_6.
+- **B contextual:** `ARC_6`
+  - Topic 85 is overwhelmingly characterized by apology and sorry expressions ('I'm sorry', 'I am sorry', 'Did you just apologize?', 'No harm was done'). These are canonical repair gestures following conflict, mapping clearly to ARC_6 (repair). One sentence (BOOK_001_4) references a prior accusation of overreacting, suggesting a misunderstanding context (ARC_1), and two 'Excuse me?' fragments are too ambiguous to code beyond ARC_10. BOOK_001_5 references multiple third-party apologies, suggesting non-main-couple interaction (coded ARC_6 but main_couple=no). BOOK_002 sentences cluster around a clear dyadic apology exchange likely involving the main couple. Overall ARC_6 exceeds 70%, making it the dominant code. Main couple probability is moderate (~0.55) because several sentences are ambiguous or clearly involve secondary characters.
+- **C adjudicate:** `ARC_6`
+  - Both lexical consensus and contextual dominant converge on ARC_6 (repair). The primary taxonomy tag 4.4 (Conflict, Distance & Breakup Threats) might suggest a falling-arc code such as ARC_2 or ARC_3, but the secondary tag 4.5 (Reconciliation, Commitments & HEA) and the consistent Pass A/B signal indicate the topic captures the turn toward repair rather than the conflict itself. ARC_6 sits in the REFINED_RISING construct bucket: the couple is actively moving from rupture back toward connection. No free-form labels require remapping. No split is warranted because the dominant signal is repair-initiation, with the conflict/distance framing serving as contextual backdrop rather than the topic's core content. Main-couple filter confirmed positive.
+- **Action:** KEEP
 
 ---

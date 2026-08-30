@@ -3049,7 +3049,7 @@ Run: `v4_l12_granular_final_call49` — 98 topics.
 
 - **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
 - **New category:** **I0 — off target**
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
