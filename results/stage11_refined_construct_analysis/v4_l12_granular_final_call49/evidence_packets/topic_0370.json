@@ -1,0 +1,754 @@
+{
+  "topic_id": 370,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tattoo",
+        "tattoos",
+        "tattooed",
+        "parlor",
+        "sleeve",
+        "ink",
+        "tracing",
+        "covered",
+        "neck",
+        "shirt"
+      ],
+      "KeyBERT": [
+        "reveal",
+        "revealing",
+        "fingertips",
+        "worn",
+        "evidence",
+        "absently"
+      ],
+      "POS": [
+        "sleeve",
+        "visits",
+        "contrast",
+        "pattern",
+        "percent",
+        "sized",
+        "lighting",
+        "elbows",
+        "anxious",
+        "issue"
+      ],
+      "MMR": [
+        "sleeve",
+        "absently",
+        "contrast",
+        "elbows",
+        "revealing",
+        "distracted",
+        "evidence",
+        "worn",
+        "emotions",
+        "stretched"
+      ]
+    },
+    "stage08_snippets": [
+      "if she says she’s disgusted by the tattoos, my dick will deflate so fast it’ll be some sort of record.",
+      "whatever crucial moments we’ll have from now on, all of them will go into this one tattoo.",
+      "you can tell your boss he’ll never win, and i’ve got the tattoo to prove it.”"
+    ],
+    "label_public": "Tattoos Revealed and Judged"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "T�as.",
+        "max_topic_prob": 0.4019164443016052,
+        "normalized_position": 0.8031366075113495,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And he had a tattoo on his right forearm.” “",
+        "max_topic_prob": 0.7389391660690308,
+        "normalized_position": 0.661761931710998,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "On his forearm, under the partially rolled-up sleeve, she spotted a tattoo of a snake.",
+        "max_topic_prob": 0.7366021871566772,
+        "normalized_position": 0.4987738162610828,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 502
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He had a snake tattooed on his forearm.",
+        "max_topic_prob": 0.7263127565383911,
+        "normalized_position": 0.5046217694774571,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 533
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He had a snake tattoo on his right forearm.",
+        "max_topic_prob": 0.7133883237838745,
+        "normalized_position": 0.6240332012827768,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "When I peeked out the window, I noticed the guy had this really nasty-looking snake tattooed on his forearm.”",
+        "max_topic_prob": 0.6859267950057983,
+        "normalized_position": 0.39935861158272024,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 406
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "We’re also trying to ID the man with the snake tattooed on his arm.",
+        "max_topic_prob": 0.6421262621879578,
+        "normalized_position": 0.5685719675532919,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Scarred, tattooed and dangerous.",
+        "max_topic_prob": 0.6277326941490173,
+        "normalized_position": 0.3436598753372407,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 420
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Trademarks indicated with ® are registered in the United States Patent and Trademark Office, the Canadian Trade Marks Office and in other countries.",
+        "max_topic_prob": 0.11177046597003937,
+        "normalized_position": 0.9999069680900549,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His eyes swept over her, mapping her tattoos like constellations.",
+        "max_topic_prob": 0.6774352788925171,
+        "normalized_position": 0.619538784067086,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7388
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The veins in his neck protruded and he reminded her of every drunken biker badass that had rolled into the tattoo shop, looking to give her a hard time.",
+        "max_topic_prob": 0.6548935174942017,
+        "normalized_position": 0.5258700209643606,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 6271
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Tattoos were unusual on a woman and the animal on the back of her shoulder was not one Diem was familiar with.",
+        "max_topic_prob": 0.6520536541938782,
+        "normalized_position": 0.3316561844863732,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 3955
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "They didn't view her scorpion tattoo, her septum piercing, or her buckled shitkickers as a symbol of her strength.",
+        "max_topic_prob": 0.5418252348899841,
+        "normalized_position": 0.030356394129979036,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I've got some new ones on there...\" When her bumper was full, she'd started tattooing the back panels of her decrepit Dodge Ram and slowly, the stickers had consumed her ride’s whole tailgate.",
+        "max_topic_prob": 0.5275479555130005,
+        "normalized_position": 0.021551362683438154,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Tattooed and pierced, you were the hellion, the take-no-garbage daughter of one of the richest men in the United States.",
+        "max_topic_prob": 0.5186405777931213,
+        "normalized_position": 0.4365618448637317,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5206
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He glanced down to the tattoo on the inside of my forearm. “",
+        "max_topic_prob": 0.7462236881256104,
+        "normalized_position": 0.030609298296274907,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I want a tattoo right here.”",
+        "max_topic_prob": 0.7315126061439514,
+        "normalized_position": 0.021368755414380596,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He picked up my hand and traced the tattoos up my arm. “",
+        "max_topic_prob": 0.7069664597511292,
+        "normalized_position": 0.3085475021657522,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Tattoos started at her shoulders and continued down to her wrists.",
+        "max_topic_prob": 0.7023143172264099,
+        "normalized_position": 0.01963615362402541,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I gestured to my tattoos.",
+        "max_topic_prob": 0.6944570541381836,
+        "normalized_position": 0.10626624314178458,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I looked down at the tattoos covering my arms.",
+        "max_topic_prob": 0.6800482273101807,
+        "normalized_position": 0.4075945711810569,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "His arms are covered in tattoos.",
+        "max_topic_prob": 0.7543648481369019,
+        "normalized_position": 0.8197016718390229,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The girl you got the tattoo for?”",
+        "max_topic_prob": 0.7344768047332764,
+        "normalized_position": 0.6118730603664031,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "All I can think about right now is how it felt to have Tat on top of me.",
+        "max_topic_prob": 0.5823805332183838,
+        "normalized_position": 0.3681049154069476,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He has a pierced tongue and more tattoos than I can count.",
+        "max_topic_prob": 0.5692534446716309,
+        "normalized_position": 0.01141255380919011,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The bullet left a two inch streak across his left bicep, right under the Confederate flag tattoo. “",
+        "max_topic_prob": 0.5354431867599487,
+        "normalized_position": 0.815697266993693,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It’s Tat. “",
+        "max_topic_prob": 0.5239906907081604,
+        "normalized_position": 0.8199018920812894,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "The sleeveless top she wore revealed tattoos on each shoulder and a larger one down her left arm.",
+        "max_topic_prob": 0.7239648103713989,
+        "normalized_position": 0.4632795188350744,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 584
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "What’s with the Mallory Knox tattoo?” “",
+        "max_topic_prob": 0.6408231258392334,
+        "normalized_position": 0.9290914846470402,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 486
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "But, honestly, your tattoos won’t be an issue here.” †",
+        "max_topic_prob": 0.6192189455032349,
+        "normalized_position": 0.682494460272238,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Should I cover up my tats?” “",
+        "max_topic_prob": 0.5932347178459167,
+        "normalized_position": 0.6821779044001266,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She decided to ask Tina about the large tat on her left bicep. “",
+        "max_topic_prob": 0.5683106184005737,
+        "normalized_position": 0.9289332067109844,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 485
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I would have thrown her out for having a Mallory Knox tattoo.",
+        "max_topic_prob": 0.5644685626029968,
+        "normalized_position": 0.5930674264007597,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 695
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Both his arms were covered in tattoos.",
+        "max_topic_prob": 0.7521867752075195,
+        "normalized_position": 0.7700362199539019,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You have a tattoo?”",
+        "max_topic_prob": 0.741112232208252,
+        "normalized_position": 0.6671715508725716,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 490
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "When did you get a tattoo?” “",
+        "max_topic_prob": 0.7301254272460938,
+        "normalized_position": 0.6674349687191308,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 494
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I found the energy to lazily trace the tattoo on his chest. “",
+        "max_topic_prob": 0.7254332304000854,
+        "normalized_position": 0.9079354626275931,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I like seeing your tattoo peeking out.” “",
+        "max_topic_prob": 0.708820104598999,
+        "normalized_position": 0.7656239710240369,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His tattoo shocked me when I first saw it too.”",
+        "max_topic_prob": 0.6974635124206543,
+        "normalized_position": 0.38682910767204476,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He’s had my name tattooed on his arm since our freshman year of college.",
+        "max_topic_prob": 0.5896410346031189,
+        "normalized_position": 0.8737166324435318,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "And had her subconscious seriously neglected to add the thickness of his inked neck to her many dreams, and that gorgeous tattoo of the Grim Reaper holding up a royal flush?",
+        "max_topic_prob": 0.608392059803009,
+        "normalized_position": 0.13646937193073144,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He stood there with his hand on the knob, his body stiff as a board, the tattoos all over his broad back rippling as though alive. “",
+        "max_topic_prob": 0.5953367352485657,
+        "normalized_position": 0.5657792711294908,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "His rolling muscles and tattoos were on full display.",
+        "max_topic_prob": 0.5749989151954651,
+        "normalized_position": 0.9738950633238563,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Tish’s pussy drenched at the sight of those muscles and all that ink.",
+        "max_topic_prob": 0.5710597038269043,
+        "normalized_position": 0.3608167485138279,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "They were full-patch members who owned a busy, by-appointment-only tattoo shop off the beaten path, where they both worked as artists. “",
+        "max_topic_prob": 0.5167524814605713,
+        "normalized_position": 0.8356164383561644,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Have you considered getting some ink?",
+        "max_topic_prob": 0.4085707664489746,
+        "normalized_position": 0.8345825794779013,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Yet you think he’s got a tattoo on his neck that matches the one on your arm?”",
+        "max_topic_prob": 0.7181851267814636,
+        "normalized_position": 0.7505466110117273,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Instead he was sitting in a cold gray room with his hand dotted with blood and wondering about the only inheritance he was ever going to have—a shitty, blown-out tattoo he didn’t know the meaning of.",
+        "max_topic_prob": 0.6498829126358032,
+        "normalized_position": 0.7594911548399921,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He held on to Con’s tattoo because he’d risen from the ashes of his own tragedies and found the man beneath the ink to love him.",
+        "max_topic_prob": 0.6394702196121216,
+        "normalized_position": 0.9355992844364938,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The tattoo on the man’s muscular forearm was as familiar to Forest as his own face.",
+        "max_topic_prob": 0.5913139581680298,
+        "normalized_position": 0.47942754919499103,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "His messy crop of hair was more wiry silver than black, and as Miki tugged at the sweatshirt’s hood, he pulled apart the top’s zipper, exposing a patchwork quilt of mottled blue tattoos running down his crepe-like wattle and spotted neck.",
+        "max_topic_prob": 0.5840573310852051,
+        "normalized_position": 0.7447823494335122,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The way his SFPD tattoo rode his skin when Forest dug his fingers into Con’s upper arm to the soft brush of Connor’s silken chest hair on his nipples, every inch of Connor’s body on his was a unique kiss.",
+        "max_topic_prob": 0.5363844037055969,
+        "normalized_position": 0.9314251639833036,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 162
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.001668335001668335,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.002109492717227524,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0024154589371980675,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.006988934187536401,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0024635209399279895,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.001116249402009249,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0009296822177146721,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0015641293013555788,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.000171939477303989,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0001383508577753182,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0001870207593042828,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 52
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "1.6",
+    "taxonomy_secondary_name": "Character Appearance & Self-Presentation",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

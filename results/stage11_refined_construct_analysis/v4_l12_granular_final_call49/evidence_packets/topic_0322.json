@@ -1,0 +1,743 @@
+{
+  "topic_id": 322,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "guilt",
+        "guilty",
+        "feel",
+        "felt",
+        "remorse",
+        "pang",
+        "weight",
+        "washed",
+        "heartburn",
+        "consumed"
+      ],
+      "KeyBERT": [
+        "embarrassment",
+        "overcome",
+        "anxiety",
+        "experience",
+        "bury",
+        "consumed",
+        "actions",
+        "washed",
+        "purpose",
+        "draped"
+      ],
+      "POS": [
+        "actions",
+        "embarrassment",
+        "anxiety",
+        "drawer",
+        "purpose",
+        "meal"
+      ],
+      "MMR": [
+        "bury",
+        "washed",
+        "actions",
+        "draped",
+        "embarrassment",
+        "drawer",
+        "eaten",
+        "dug",
+        "tugged",
+        "fought"
+      ]
+    },
+    "stage08_snippets": [
+      "before i fell asleep i was thinking i would wake up this morning consumed with guilt because of what we did, but it wasn’t like that at all.",
+      "he’s consumed with his guilt.",
+      "the only way victor could bury the guilt was to remind himself his actions were all to a higher purpose."
+    ],
+    "label_public": "Consumed By Guilt After The Act"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "And no holding on to a grudge here and there.",
+        "max_topic_prob": 0.49974632263183594,
+        "normalized_position": 0.7008424080542428,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Also because I feel tremendously guilty about what I wrote Belinda—a note you must have read.” “",
+        "max_topic_prob": 0.4789397120475769,
+        "normalized_position": 0.9226422847750154,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "article about how guys who cheat on their wives often say corny stuff like this to ease their guilty feelings. “",
+        "max_topic_prob": 0.4114379286766052,
+        "normalized_position": 0.4006574892130676,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Feeling guilty.",
+        "max_topic_prob": 0.7306163311004639,
+        "normalized_position": 0.7655317655317655,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Oddly enough, his guilt had disappeared with the anger.",
+        "max_topic_prob": 0.7138900756835938,
+        "normalized_position": 0.9613899613899614,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She immediately felt guilty. “",
+        "max_topic_prob": 0.7100620269775391,
+        "normalized_position": 0.6842751842751843,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Even though his grief had finally eased, the guilt had become part of him.",
+        "max_topic_prob": 0.6574526429176331,
+        "normalized_position": 0.3094068094068094,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "How he felt about Kari added a different guilt.",
+        "max_topic_prob": 0.6432474255561829,
+        "normalized_position": 0.7976482976482977,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Second, you, little nun, have guilt added into the mix.",
+        "max_topic_prob": 0.6415777802467346,
+        "normalized_position": 0.6470691470691471,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I mean can’t-get-out-of-bed kind of guilt.",
+        "max_topic_prob": 0.7564944624900818,
+        "normalized_position": 0.30307262569832405,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Except that she’s feeling insanely guilty about it.",
+        "max_topic_prob": 0.6350300312042236,
+        "normalized_position": 0.30291744258224707,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I felt a combination of guilt, validation, and frustration over the events of that afternoon.",
+        "max_topic_prob": 0.5903559923171997,
+        "normalized_position": 0.8057107386716326,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It was innocent.",
+        "max_topic_prob": 0.5432932376861572,
+        "normalized_position": 0.7599317194289261,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But then I reminded myself how wasted he was and how disturbed he’d made me, and I knew nothing good would come of it.",
+        "max_topic_prob": 0.4900784492492676,
+        "normalized_position": 0.9230291744258224,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I was pleased that he didn’t feel I’d corrupted the place.",
+        "max_topic_prob": 0.4830048084259033,
+        "normalized_position": 0.8701117318435754,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He needed to rid himself of the guilt he felt.",
+        "max_topic_prob": 0.8383880853652954,
+        "normalized_position": 0.4878533568904594,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Another guilt trip.",
+        "max_topic_prob": 0.7414911389350891,
+        "normalized_position": 0.6329505300353356,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why did she suddenly feel guilty?",
+        "max_topic_prob": 0.7217608690261841,
+        "normalized_position": 0.210136925795053,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Then why did she feel just a pinch of guilt?",
+        "max_topic_prob": 0.690873384475708,
+        "normalized_position": 0.4866386925795053,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Could she live with the guilt?",
+        "max_topic_prob": 0.6503844857215881,
+        "normalized_position": 0.6531581272084805,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "A little niggle of guilt stabbed her.",
+        "max_topic_prob": 0.6362794637680054,
+        "normalized_position": 0.3652826855123675,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Something like guilt crossed his face.",
+        "max_topic_prob": 0.7819873094558716,
+        "normalized_position": 0.03157049852849371,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Guilty for not knowing how he felt.",
+        "max_topic_prob": 0.770595908164978,
+        "normalized_position": 0.7742798537411932,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "That doesn’t explain the guilt.”",
+        "max_topic_prob": 0.7555701732635498,
+        "normalized_position": 0.41862124319985733,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 458
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "That lessened some of his guilt.",
+        "max_topic_prob": 0.717921257019043,
+        "normalized_position": 0.9715508784446625,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You’re one to talk about guilt.",
+        "max_topic_prob": 0.7133448123931885,
+        "normalized_position": 0.37126549540711673,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "That would have been one less guilt to carry to his grave.” “",
+        "max_topic_prob": 0.6997171640396118,
+        "normalized_position": 0.455631855881566,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Guilt floods through me.",
+        "max_topic_prob": 0.7732890844345093,
+        "normalized_position": 0.3198458574181118,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The guilt twists deeper.",
+        "max_topic_prob": 0.772589921951294,
+        "normalized_position": 0.3840719332048812,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "This is the first time I actually feel nervous about strategizing for an obviously guilty man.",
+        "max_topic_prob": 0.5987173318862915,
+        "normalized_position": 0.06053943125183231,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "He’s sweet and funny and very creative in bed, but I don’t need any added guilt on top of the dirty thoughts I’m thinking right now. “",
+        "max_topic_prob": 0.5787893533706665,
+        "normalized_position": 0.3431545001465846,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But then again…guilt is all I ever seem to feel anymore nowadays.",
+        "max_topic_prob": 0.7527981996536255,
+        "normalized_position": 0.9907472311790271,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Another stab of guilt.",
+        "max_topic_prob": 0.7418369054794312,
+        "normalized_position": 0.8254591336043741,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "So I think I’ll just suffer with the guilt for now.",
+        "max_topic_prob": 0.7313194274902344,
+        "normalized_position": 0.7811579980372915,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Guilt gnaws at me and I feel incredibly selfish.",
+        "max_topic_prob": 0.7199482917785645,
+        "normalized_position": 0.7801766437684003,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Total guilt overwhelms me, crashing hard and sucking my breath away. “",
+        "max_topic_prob": 0.7186712026596069,
+        "normalized_position": 0.9247161082293565,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Guilt suffuses through my body, and it’s not lost on me that I’m actually feeling an emotion.",
+        "max_topic_prob": 0.6635489463806152,
+        "normalized_position": 0.9906070377120426,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I don’t have to feel guilty.”",
+        "max_topic_prob": 0.7188260555267334,
+        "normalized_position": 0.890469114837614,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The sudden guilty conscience that rose within her didn’t surprise her, but what did was the pang of regret.",
+        "max_topic_prob": 0.6598883271217346,
+        "normalized_position": 0.0638930163447251,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You’re trying to ease my guilt?”",
+        "max_topic_prob": 0.656505823135376,
+        "normalized_position": 0.5060496709828062,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 395
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Although, disappointed at the same time, it helped to ease her guilt.",
+        "max_topic_prob": 0.6558445692062378,
+        "normalized_position": 0.6283167055826788,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I suppose he feels guilty about me and Erin.”",
+        "max_topic_prob": 0.6228522062301636,
+        "normalized_position": 0.5444703884525578,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 576
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I simply feel guilty, Mum.",
+        "max_topic_prob": 0.5636093020439148,
+        "normalized_position": 0.559329229462959,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m working to let go of the guilt.",
+        "max_topic_prob": 0.7368441820144653,
+        "normalized_position": 0.19574799066632098,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Think you’re up to letting go of the guilt?” “",
+        "max_topic_prob": 0.7221065759658813,
+        "normalized_position": 0.7801400051853772,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "For the rest of his life, he’d have to live with the guilt of knowing he hadn’t done more. “",
+        "max_topic_prob": 0.6977212429046631,
+        "normalized_position": 0.16463572724915737,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Russ certainly wasn’t complaining about any of it, but it did make him realize how heavy the burden of carrying the guilt had been.",
+        "max_topic_prob": 0.5802277326583862,
+        "normalized_position": 0.20482240082966036,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And I’ve been carrying the guilt for Jeremy’s accident for fifteen years.”",
+        "max_topic_prob": 0.5605120658874512,
+        "normalized_position": 0.19471091521908218,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Between wanting to leave you and my interest in that guy, I felt so guilty, and I couldn’t let you pay.",
+        "max_topic_prob": 0.5540357828140259,
+        "normalized_position": 0.7746953590873736,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "This time, however, Wesley realized he felt a little guilty for it.",
+        "max_topic_prob": 0.6810517311096191,
+        "normalized_position": 0.3533685601056803,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "I was a selfish bastard.” “",
+        "max_topic_prob": 0.5130789279937744,
+        "normalized_position": 0.6360634081902246,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 115
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.002426312005751258,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.0015906680805938495,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.003102086858432036,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0015641293013555788,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.0019197952218430034,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.001288659793814433,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0012233096085409252,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0014102162331557505,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.00029403116730373417,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00031107424305267526,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.00026535756932466497,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 51
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

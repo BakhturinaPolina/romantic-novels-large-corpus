@@ -1,0 +1,872 @@
+{
+  "topic_id": 190,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "clean",
+        "cleaning",
+        "cleaned",
+        "mess",
+        "up",
+        "cleaners",
+        "messes",
+        "freshen",
+        "ll",
+        "cleaner"
+      ],
+      "KeyBERT": [
+        "cleaned",
+        "wipe",
+        "sweeping",
+        "dump",
+        "ok"
+      ],
+      "POS": [
+        "sweeping",
+        "dump",
+        "session",
+        "parties",
+        "suitcase",
+        "ok",
+        "places",
+        "entire"
+      ],
+      "MMR": [
+        "cleaned",
+        "sweeping",
+        "dump",
+        "provide",
+        "parties",
+        "suitcase",
+        "paying",
+        "including",
+        "assured",
+        "planned"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll get cleaned up here as soon as i can.",
+      "i’ll pay to have it cleaned.” “",
+      "i'll get her cleaned up,\" said a handsome groom, taking her arm. \""
+    ],
+    "label_public": "Offering to Get Someone Cleaned Up"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Just sit there for a minute, Solange, while I clean you up.",
+        "max_topic_prob": 0.6168846487998962,
+        "normalized_position": 0.6080162443718549,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 515
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "She couldn’t help with the cleanup.",
+        "max_topic_prob": 0.6098673939704895,
+        "normalized_position": 0.2094994261499073,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 492
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I will clean up the battlefield while you drink plenty of fluids.",
+        "max_topic_prob": 0.5534718632698059,
+        "normalized_position": 0.43824490156263796,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I know you would prefer to burn it yourselves out of respect, but my way will be faster, cleaner and will ensure no parasites escape.",
+        "max_topic_prob": 0.4906028211116791,
+        "normalized_position": 0.43356581619140105,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "He was grateful for the rich dirt floor.",
+        "max_topic_prob": 0.41146981716156006,
+        "normalized_position": 0.25417144875077247,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "It would be best to incinerate it.",
+        "max_topic_prob": 0.406330943107605,
+        "normalized_position": 0.42871016156087227,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "May I know why you gave Mr. Thesiger the brush off just now?”",
+        "max_topic_prob": 0.5410060882568359,
+        "normalized_position": 0.3684589880351737,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Don’t you see that if you go ahead with this annulment, if you air the Roxtons’ dirty laundry in public, I will be utterly, utterly ruined.",
+        "max_topic_prob": 0.45300328731536865,
+        "normalized_position": 0.5861323338619,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "A lackey came out from behind the butler with pan and brush and quickly set to sweeping up the shards of broken glass from Deb’s smashed wine glass.",
+        "max_topic_prob": 0.41069644689559937,
+        "normalized_position": 0.16678679544471672,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Do try your very best not to make a mess of things.\"",
+        "max_topic_prob": 0.5678440928459167,
+        "normalized_position": 0.9765494137353434,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Wipe more on.",
+        "max_topic_prob": 0.5928733348846436,
+        "normalized_position": 0.8028495102404274,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Wipe on, wipe off.",
+        "max_topic_prob": 0.5801428556442261,
+        "normalized_position": 0.8026714158504007,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I scrubbed my tongue and teeth with a clean corner of the washcloth.",
+        "max_topic_prob": 0.5593140125274658,
+        "normalized_position": 0.07889581478183437,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "This time I let him clean up with my shemagh.",
+        "max_topic_prob": 0.5146011114120483,
+        "normalized_position": 0.6626892252894034,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I washed, then cleaned my hands with a wipe as they had.",
+        "max_topic_prob": 0.5128636956214905,
+        "normalized_position": 0.2904719501335708,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Oscar offered me another, black and clean but used. “",
+        "max_topic_prob": 0.4770994186401367,
+        "normalized_position": 0.0894033837934105,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Pro-tip: Bring hand sanitizer and even gloves.",
+        "max_topic_prob": 0.43823155760765076,
+        "normalized_position": 0.7025089605734767,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I suggest not going immediately, but a day or two after to allow them to sort through all the junk.",
+        "max_topic_prob": 0.3787047266960144,
+        "normalized_position": 0.6941457586618877,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Hopefully it hasn’t been disposed of yet.",
+        "max_topic_prob": 0.3226149082183838,
+        "normalized_position": 0.6379928315412187,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m cleaning the place out.”",
+        "max_topic_prob": 0.8197706341743469,
+        "normalized_position": 0.5210573476702509,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Let me clean up a wee bit, first.”",
+        "max_topic_prob": 0.776861846446991,
+        "normalized_position": 0.43425179211469533,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’ll pay to have it cleaned.” “",
+        "max_topic_prob": 0.774603009223938,
+        "normalized_position": 0.04592293906810036,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m going home to clean up, then I’ll get myself to the hospital.”",
+        "max_topic_prob": 0.7115905284881592,
+        "normalized_position": 0.607078853046595,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You shouldnae be helping with the washing up.” “",
+        "max_topic_prob": 0.7115812301635742,
+        "normalized_position": 0.3730958781362007,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Can I help you tidy up?”",
+        "max_topic_prob": 0.7102413177490234,
+        "normalized_position": 0.6963485663082437,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Or clean houses, or whatever it might be.",
+        "max_topic_prob": 0.6169865727424622,
+        "normalized_position": 0.31652989449003516,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 544
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Either way, I want to freshen up.”",
+        "max_topic_prob": 0.6155232191085815,
+        "normalized_position": 0.414126611957796,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1210
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Or I clean and organize.",
+        "max_topic_prob": 0.6142884492874146,
+        "normalized_position": 0.3103751465416178,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 502
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Or I write lists in between cleaning and organizing.",
+        "max_topic_prob": 0.5430297255516052,
+        "normalized_position": 0.31052168815943726,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I quickly remove my file and my purse and hand over my carry-on, and in the process my hand brushes his.",
+        "max_topic_prob": 0.5079962611198425,
+        "normalized_position": 0.046014067995310666,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I can’t even clean up without him hovering.",
+        "max_topic_prob": 0.492570698261261,
+        "normalized_position": 0.8455451348182884,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 798
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Better, many think, to simply wipe the world clean and focus on our next victory.” “",
+        "max_topic_prob": 0.4610741138458252,
+        "normalized_position": 0.8106626047220107,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I just need to go and clean myself a little; then I will come to you shortly.",
+        "max_topic_prob": 0.5640863180160522,
+        "normalized_position": 0.7876337292561705,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 663
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Cleaning.” “",
+        "max_topic_prob": 0.7791942358016968,
+        "normalized_position": 0.8959858061654469,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You think about cleaning during sex?”",
+        "max_topic_prob": 0.7201554775238037,
+        "normalized_position": 0.8960966954978931,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "But you’re clearing up the mess when they go.”",
+        "max_topic_prob": 0.6416459679603577,
+        "normalized_position": 0.9590818363273453,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "The cleaner does.”",
+        "max_topic_prob": 0.6400975584983826,
+        "normalized_position": 0.16256376136615658,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 377
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He always seemed to have something better to do than clean.",
+        "max_topic_prob": 0.6227558851242065,
+        "normalized_position": 0.4737192282102462,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Cleaning does involve a lot of polishing.”",
+        "max_topic_prob": 0.6183780431747437,
+        "normalized_position": 0.8979818141494789,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m clean.”",
+        "max_topic_prob": 0.7934771776199341,
+        "normalized_position": 0.6065266686384699,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I-I was cleaning up.”",
+        "max_topic_prob": 0.740733802318573,
+        "normalized_position": 0.12984324164448388,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 555
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Well, if there’s nothing else, I’ll clean up and head over there.” “",
+        "max_topic_prob": 0.7270534038543701,
+        "normalized_position": 0.41930395346544413,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I guess she figured it was time to come clean.",
+        "max_topic_prob": 0.6447020769119263,
+        "normalized_position": 0.6586808636498077,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "If I hadn’t brought it up first would you have come clean?",
+        "max_topic_prob": 0.634688675403595,
+        "normalized_position": 0.7363699102829537,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But no matter how hard I scrubbed, I couldn’t seem to get the stench of death off me.”",
+        "max_topic_prob": 0.6209961175918579,
+        "normalized_position": 0.17923691215616683,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Uh, yeah, I guess I’d better get home and clean these off.",
+        "max_topic_prob": 0.6400583982467651,
+        "normalized_position": 0.12418458564870742,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I asked as I took both our plates and rinsed them in the sink. “",
+        "max_topic_prob": 0.5807465314865112,
+        "normalized_position": 0.741483450108722,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1028
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You want me to drop by and feed him and clean the litter?” “",
+        "max_topic_prob": 0.5399395227432251,
+        "normalized_position": 0.5167914955303213,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "We finished eating and cleaned up.",
+        "max_topic_prob": 0.5360597968101501,
+        "normalized_position": 0.3459772892002899,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1417
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I was going to go to Ohio to help take care of my nieces while Sarah’s husband, Terry, continued to run their dry cleaning establishment.",
+        "max_topic_prob": 0.5111334919929504,
+        "normalized_position": 0.5138922445035032,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I fully expected to be appalled by the concoction, but I figured I should try it rather than just dumping it down the sink.",
+        "max_topic_prob": 0.46469682455062866,
+        "normalized_position": 0.1055810582266248,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "We’ll clean this up.” “",
+        "max_topic_prob": 0.7829290628433228,
+        "normalized_position": 0.5813418110063583,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "You know I love to clean.”",
+        "max_topic_prob": 0.7745704650878906,
+        "normalized_position": 0.023788642841482133,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Would you like me to clean off the table?” “",
+        "max_topic_prob": 0.7015400528907776,
+        "normalized_position": 0.08802894102170576,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Really, I want to clean the attic.”",
+        "max_topic_prob": 0.6898387670516968,
+        "normalized_position": 0.02883139662354747,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "You want to clean the attic?”",
+        "max_topic_prob": 0.6750903725624084,
+        "normalized_position": 0.026090769568077175,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I know you’re doing all of this cleaning to distract yourself, but you need to slow down.",
+        "max_topic_prob": 0.6369274854660034,
+        "normalized_position": 0.02324051743038807,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I'm clean.\"",
+        "max_topic_prob": 0.8048864603042603,
+        "normalized_position": 0.3669201520912547,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I'm still clean.",
+        "max_topic_prob": 0.7382491230964661,
+        "normalized_position": 0.5645199619771863,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You're clean, right?",
+        "max_topic_prob": 0.7303075790405273,
+        "normalized_position": 0.3666825095057034,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I'd have the furniture covered and hire someone to clean until I was ready. \"",
+        "max_topic_prob": 0.6601098775863647,
+        "normalized_position": 0.12404942965779468,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Then it turned out my only job was to clean up after the crew had lunch.\"",
+        "max_topic_prob": 0.5994378328323364,
+        "normalized_position": 0.9256178707224335,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Rinse and repeat.",
+        "max_topic_prob": 0.5875901579856873,
+        "normalized_position": 0.1747861216730038,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 168
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0024366471734892786,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0024205083067444164,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.002374356944994064,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0022803648583773406,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0031545741324921135,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003941239699032604,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.003579952267303103,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0031386615850241004,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0007966716827476321,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 8.460952703274389e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0008837825894829872,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.00015304560759106213,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00043750911477322444,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0008396305625524769,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 63
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "8.3b",
+    "taxonomy_secondary_name": "Everyday Props & Communication Media",
+    "taxonomy_confidence": 0.52,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

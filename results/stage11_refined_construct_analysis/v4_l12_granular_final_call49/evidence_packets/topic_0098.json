@@ -1,0 +1,967 @@
+{
+  "topic_id": 98,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "shower",
+        "towel",
+        "tub",
+        "bath",
+        "water",
+        "showered",
+        "bathroom",
+        "stepped",
+        "towels",
+        "wrapped"
+      ],
+      "KeyBERT": [
+        "curtain",
+        "washed",
+        "dried",
+        "damp",
+        "wiping",
+        "flushed",
+        "spilled",
+        "cleaned",
+        "flush",
+        "dripping"
+      ],
+      "POS": [
+        "temperature",
+        "unlikely",
+        "longing",
+        "pathetic",
+        "curtain",
+        "stool",
+        "flush",
+        "task",
+        "breaths",
+        "brief"
+      ],
+      "MMR": [
+        "prompted",
+        "calming",
+        "noting",
+        "shed",
+        "draped",
+        "longing",
+        "washed",
+        "rushing",
+        "neatly",
+        "curtain"
+      ]
+    },
+    "stage08_snippets": [
+      "he opened the shower door and stepped in. “",
+      "he walked to the seat and stepped down beside where she was sitting, and reached for the towel on the floor, then dried his hair and handed it to her. \"",
+      "in the shower, he dried himself off and then stepped out of the shower with the towel wrapped around his waist."
+    ],
+    "label_public": "Stepping Out of The Shower"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Showered and dressed, Stefan waltzed out of his room.",
+        "max_topic_prob": 0.5711422562599182,
+        "normalized_position": 0.8117724577201845,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Maybe he was taking a shower.” “",
+        "max_topic_prob": 0.7145392894744873,
+        "normalized_position": 0.009367088607594937,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He stepped from the tub with her.",
+        "max_topic_prob": 0.7221528887748718,
+        "normalized_position": 0.6567766853932584,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shuddering, she flushed the toilet and moved to the shower to wash the feeling of disgust off.",
+        "max_topic_prob": 0.7126637697219849,
+        "normalized_position": 0.8016151685393258,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Popping a couple of painkillers for her head, she went in to her private bath to take a hot shower.",
+        "max_topic_prob": 0.6700934171676636,
+        "normalized_position": 0.45259831460674155,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She supposed it wouldВ’ve been more accurate to say it was a small shower squeezed beside the toilet and lavatory, but the entire room was about the size of a small shower and when she turned on the shower head, the spray covered the room as if she was standing in a dishwasher.",
+        "max_topic_prob": 0.6098852753639221,
+        "normalized_position": 0.453125,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "After glaring at the woman through the opaque material surrounding the shower for several moments, Sybil left and returned to their sleeping quarters.",
+        "max_topic_prob": 0.6052583456039429,
+        "normalized_position": 0.33339185393258425,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Feeling pleasantly tired, Sybil headed back to her quarters and a hot bath.",
+        "max_topic_prob": 0.5925105810165405,
+        "normalized_position": 0.5212429775280899,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Was someone else in the room, perhaps already bathing?",
+        "max_topic_prob": 0.7213271260261536,
+        "normalized_position": 0.2206060606060606,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Had she given herself some relief in the shower?",
+        "max_topic_prob": 0.7210094928741455,
+        "normalized_position": 0.6347474747474747,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Snagging a towel she wrapped it around her shoulders and scurried back into the other room.",
+        "max_topic_prob": 0.6707536578178406,
+        "normalized_position": 0.22707070707070706,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She became conscious of her nudity, the sticky wetness coating her inner thighs. “",
+        "max_topic_prob": 0.5994848012924194,
+        "normalized_position": 0.46585858585858586,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Every day he’d be rousted from his mat and dragged into the bathing room to have the process begun again because the mistress liked her men smooth.",
+        "max_topic_prob": 0.5870158076286316,
+        "normalized_position": 0.3090909090909091,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She had discarded him after several of the new “recruits” had attacked him in the bathing chamber.",
+        "max_topic_prob": 0.5842084288597107,
+        "normalized_position": 0.8828282828282829,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He turned off the shower, grabbed some towels, scooped her up in his arms and headed for her bed.",
+        "max_topic_prob": 0.7957930564880371,
+        "normalized_position": 0.46386476426799006,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She rushed to the bathroom for a towel, which she whipped around her body. “",
+        "max_topic_prob": 0.7927857637405396,
+        "normalized_position": 0.3159119106699752,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She took the shower gel from him and began washing him starting with his back.",
+        "max_topic_prob": 0.7865151166915894,
+        "normalized_position": 0.46231389578163773,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He grabbed a towel and snapped it at her. “",
+        "max_topic_prob": 0.742986261844635,
+        "normalized_position": 0.7495347394540943,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 398
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Finally, she slipped out of the shower, rubbed some baby oil into her skin, and dotted off the moisture with a soft towel.",
+        "max_topic_prob": 0.7069838047027588,
+        "normalized_position": 0.31358560794044665,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She turned to the shower and began running hot water until the room was warm and steamy.",
+        "max_topic_prob": 0.686369776725769,
+        "normalized_position": 0.11274813895781638,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "She must have just showered.",
+        "max_topic_prob": 0.6960335969924927,
+        "normalized_position": 0.3113296510844672,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "As she turned and left, she was already wringing the handkerchief like a washrag.",
+        "max_topic_prob": 0.6402015686035156,
+        "normalized_position": 0.11382978723404255,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She must have seen the shock on his face, because she explained, “Because they’re wet.",
+        "max_topic_prob": 0.5882692337036133,
+        "normalized_position": 0.9570478723404255,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He finally managed to free it and found a man standing before him bathed in moonlight.",
+        "max_topic_prob": 0.5269548296928406,
+        "normalized_position": 0.6340425531914894,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "But she was too weak to hold it, and water spilled onto the sheet.",
+        "max_topic_prob": 0.48064735531806946,
+        "normalized_position": 0.6809840425531914,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He spent the morning in the study with his new steward, going over renovation plans for the Abbey and discussing long overdue repairs he planned to make on his tenants’ homes.",
+        "max_topic_prob": 0.34785065054893494,
+        "normalized_position": 0.6035904255319149,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "her mother said, bursting into the bedroom where Emma moped while her maid unpacked and the servants drew a hot bath. “",
+        "max_topic_prob": 0.6700876355171204,
+        "normalized_position": 0.8904525386313465,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "A hot bath was awaiting, steam rising. “",
+        "max_topic_prob": 0.6439323425292969,
+        "normalized_position": 0.8962472406181016,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "After a bath, a shave, and donning formal evening attire, he went to collect Emma.",
+        "max_topic_prob": 0.5883611440658569,
+        "normalized_position": 0.16804635761589404,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "At the gazebo After a mad dash through a sudden deluge, Blake and Emma arrived breathless and wet under the cover of the gazebo.",
+        "max_topic_prob": 0.4565218687057495,
+        "normalized_position": 0.7033664459161147,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Leaving her en suite door open, enabling her to listen to her music, she stepped under the shower’s cascading waters and contemplated the day ahead.",
+        "max_topic_prob": 0.6484520435333252,
+        "normalized_position": 0.9267064528161134,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "she wailed, seized from the freezing bath by her long hair and then dragged along the stone floors, shivering.",
+        "max_topic_prob": 0.6205840110778809,
+        "normalized_position": 0.6221559119731443,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "It was more like a steam room as she opened the door, and she saw Beth lying lost in a bath full of foaming bubbles. “",
+        "max_topic_prob": 0.6030203104019165,
+        "normalized_position": 0.33532264080566954,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Heather and her towel danced around her bedroom, almost childlike, as she dried off.",
+        "max_topic_prob": 0.6020455956459045,
+        "normalized_position": 0.6471465870943678,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Still wet, she dithered as she drove home, trying to retrace their earlier journey.",
+        "max_topic_prob": 0.57499098777771,
+        "normalized_position": 0.08187243565833645,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You’re so wrong,” Beth laughed, lowering herself onto the side of the bath to be face-to-face with Heather.",
+        "max_topic_prob": 0.5603989362716675,
+        "normalized_position": 0.33830660201417384,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Just as I was about to go in and get a shower, Bradley pulled up.",
+        "max_topic_prob": 0.6416614055633545,
+        "normalized_position": 0.20660513732903368,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Quickly, I attempted to dry him off with towels.",
+        "max_topic_prob": 0.5519205927848816,
+        "normalized_position": 0.20616034693650617,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The water line came up to his back so it had to be about two or three feet deep.",
+        "max_topic_prob": 0.42275503277778625,
+        "normalized_position": 0.668186367174469,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "The sight of her all wet and soaped up had me hard again in seconds.",
+        "max_topic_prob": 0.5648293495178223,
+        "normalized_position": 0.07733249843456481,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I would have tidied up a bit,” he mumbles, his expression embarrassed as he glances around the mess of a room. “",
+        "max_topic_prob": 0.5143054127693176,
+        "normalized_position": 0.7620538509705698,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "With a new plan in mind, she exited the shower and toweled dry.",
+        "max_topic_prob": 0.7461633086204529,
+        "normalized_position": 0.23561946902654868,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He raced to the shower to hurry and wash up so he had time to join her before they had to part for the day. *****",
+        "max_topic_prob": 0.7183964252471924,
+        "normalized_position": 0.5550331858407079,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Kayla exited the shower and wrapped one towel around her head and dried off with the other before she headed to the bedroom.",
+        "max_topic_prob": 0.696549117565155,
+        "normalized_position": 0.588495575221239,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She decided on jeans and a simple blouse then headed for the shower.",
+        "max_topic_prob": 0.6920879483222961,
+        "normalized_position": 0.6426991150442478,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She needed a cold shower.",
+        "max_topic_prob": 0.6634889841079712,
+        "normalized_position": 0.35508849557522126,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She turned on the water then stripped and stepped into the warm spray and let it cascade over her.",
+        "max_topic_prob": 0.6500691175460815,
+        "normalized_position": 0.5857300884955752,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She could only imagine he had taken a shower, ran a towel over his head, and left.",
+        "max_topic_prob": 0.7785520553588867,
+        "normalized_position": 0.979705943259474,
+        "tertile": "end",
+        "chapter_index": 54,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He then sat on the edge of bed, his clothing drenched from their shower. “",
+        "max_topic_prob": 0.7668420076370239,
+        "normalized_position": 0.1255953613584593,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She quickly exited the shower, grabbing a towel to dry herself off, before she stormed out of her room and back over to the conference room. “",
+        "max_topic_prob": 0.7476439476013184,
+        "normalized_position": 0.7504659349761855,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She continued on to the showers.",
+        "max_topic_prob": 0.7474762201309204,
+        "normalized_position": 0.38703665355145994,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She turned off the water, grabbed a towel from the bar, and stepped out.",
+        "max_topic_prob": 0.731408953666687,
+        "normalized_position": 0.1856492027334852,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She heard his deep sigh as he came into the shower with her.",
+        "max_topic_prob": 0.7190617322921753,
+        "normalized_position": 0.1214537171256989,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He stepped under the shower with her, turning her so the spray didn’t catch her in the face.",
+        "max_topic_prob": 0.7409714460372925,
+        "normalized_position": 0.4114781549703151,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Alan turned off the water, and left the shower, heading toward the hidden dryer.",
+        "max_topic_prob": 0.6557775735855103,
+        "normalized_position": 0.43172476784898767,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She heard him pad into the bathroom, and heard the water run, heard the sound of him washing his hands.",
+        "max_topic_prob": 0.6542243361473083,
+        "normalized_position": 0.6583954939869082,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "After Duncan used one of the shower wands to rinse her, Alan reached up and tugged gently at her arms.",
+        "max_topic_prob": 0.6453260183334351,
+        "normalized_position": 0.4149794489267773,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Duncan took the time to gently bathe her pussy.",
+        "max_topic_prob": 0.6390774250030518,
+        "normalized_position": 0.414522758410717,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "His grin flashed, quick and devilish, as he scrubbed his hands on the bar of soap he held between them. “",
+        "max_topic_prob": 0.6172757148742676,
+        "normalized_position": 0.4119348454863754,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She showered and is drying her hair.” “",
+        "max_topic_prob": 0.7459807395935059,
+        "normalized_position": 0.6745827265598745,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He wiped his brow with a small towel. “",
+        "max_topic_prob": 0.6998994946479797,
+        "normalized_position": 0.7122213509577686,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She’d taken a shower and washed her hair before Carlo arrived.",
+        "max_topic_prob": 0.6811693906784058,
+        "normalized_position": 0.49815167469474625,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Upstairs she took a long sip of wine, stripped out of her clothes, and got into the shower.",
+        "max_topic_prob": 0.6750962734222412,
+        "normalized_position": 0.24991598521339756,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She shivered, shut off the water, and wrapped her body in a large towel.",
+        "max_topic_prob": 0.6537832021713257,
+        "normalized_position": 0.25103618236809677,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He sidled up to Dia and drew her away by one wet soapy hand.",
+        "max_topic_prob": 0.6271070241928101,
+        "normalized_position": 0.4198498935812703,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He reached for the towel. “",
+        "max_topic_prob": 0.7364909648895264,
+        "normalized_position": 0.49511571112920105,
+        "tertile": "middle",
+        "chapter_index": 48,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He took the towel and covered the bleeding. “",
+        "max_topic_prob": 0.7003254890441895,
+        "normalized_position": 0.1337074078381207,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I shivered, still wet and soapy from the shower. “",
+        "max_topic_prob": 0.6760072708129883,
+        "normalized_position": 0.06398999883707408,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She was probably wet too. “",
+        "max_topic_prob": 0.649010181427002,
+        "normalized_position": 0.31797302011861844,
+        "tertile": "begin",
+        "chapter_index": 30,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I ducked out of the shower and stole his only towel.",
+        "max_topic_prob": 0.6446008682250977,
+        "normalized_position": 0.21351319920921039,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I obeyed as he slipped from the shower only to return within seconds.",
+        "max_topic_prob": 0.632803201675415,
+        "normalized_position": 0.9840679148738225,
+        "tertile": "end",
+        "chapter_index": 90,
+        "sentence_index": 137
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0032218471923903037,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.006233766233766234,
+        "n_sentences": 60
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0028146813780680026,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.004995836802664446,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0040633888663145065,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.002813434148056972,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0032679738562091504,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0028137310073157004,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00067330999192028,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0007030288827699338,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.00013570362328674176,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.00033515808289576583,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0005563282336578582,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00022163120567375886,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0006289308176100629,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0002541942043721403,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "1.1",
+    "taxonomy_secondary_name": "Body Parts & Physical Reactions",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

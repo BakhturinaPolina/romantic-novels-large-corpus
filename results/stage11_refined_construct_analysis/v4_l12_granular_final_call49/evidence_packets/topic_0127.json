@@ -1,0 +1,846 @@
+{
+  "topic_id": 127,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "pictures",
+        "camera",
+        "picture",
+        "photos",
+        "photo",
+        "photographer",
+        "cameras",
+        "file",
+        "files",
+        "photographs"
+      ],
+      "KeyBERT": [
+        "stunning",
+        "include",
+        "capture",
+        "framed",
+        "assume",
+        "provided",
+        "latest",
+        "snaps",
+        "nearby",
+        "places"
+      ],
+      "POS": [
+        "snaps",
+        "hopeful",
+        "official",
+        "fashioned",
+        "stunning",
+        "appointment",
+        "arguing",
+        "equipment",
+        "recent",
+        "folks"
+      ],
+      "MMR": [
+        "capture",
+        "snaps",
+        "dangling",
+        "framed",
+        "fashioned",
+        "handled",
+        "stunning",
+        "recent",
+        "provided",
+        "lingering"
+      ]
+    },
+    "stage08_snippets": [
+      "my first ever but i’ll need another photographer at this rate.",
+      "i’ll bring the pictures down.’",
+      "let me look over the file and i’ll get back to you.”"
+    ],
+    "label_public": "Photographer Reviewing Pictures"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "My portrait?\" \"",
+        "max_topic_prob": 0.5691576600074768,
+        "normalized_position": 0.7803975561483522,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Are you the gallery owner?\" \"",
+        "max_topic_prob": 0.5599567890167236,
+        "normalized_position": 0.3349969882109973,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "More graphic images assailed her. \"",
+        "max_topic_prob": 0.5437147617340088,
+        "normalized_position": 0.6510627312623698,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 441
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Have you seen some of the portraits here?",
+        "max_topic_prob": 0.4792712330818176,
+        "normalized_position": 0.6006367782462783,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Other images followed, a tormenting and teasing kaleidoscope—Hart and Daisy, Hart in his office, Hart on his knees, cradling her face in his hands.",
+        "max_topic_prob": 0.4390856623649597,
+        "normalized_position": 0.9606746407365976,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "She walked over to the mantel where he kept a dozen family photographs.",
+        "max_topic_prob": 0.43860381841659546,
+        "normalized_position": 0.305481455984855,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He’s got photographs of her.’",
+        "max_topic_prob": 0.7019328474998474,
+        "normalized_position": 0.9165782962177448,
+        "tertile": "end",
+        "chapter_index": 71,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Looking at photos.’ ‘",
+        "max_topic_prob": 0.7009528875350952,
+        "normalized_position": 0.13485330505478968,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I am amazed at the number of photos inside – there must be literally hundreds – some of them posed, most snapshots of me I wasn’t even aware he was taking.",
+        "max_topic_prob": 0.6376763582229614,
+        "normalized_position": 0.8137150936726758,
+        "tertile": "end",
+        "chapter_index": 62,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He must’ve got off behind us and taken the photographs.",
+        "max_topic_prob": 0.6369707584381104,
+        "normalized_position": 0.8168964298338636,
+        "tertile": "end",
+        "chapter_index": 62,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He takes photographs himself, all the time, of the docks, the city, people, things, but mostly of me.",
+        "max_topic_prob": 0.6231144666671753,
+        "normalized_position": 0.280311063980205,
+        "tertile": "begin",
+        "chapter_index": 28,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He must have hundreds of pictures of me.",
+        "max_topic_prob": 0.6209383010864258,
+        "normalized_position": 0.28066454577589256,
+        "tertile": "begin",
+        "chapter_index": 28,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "So many pictures—so little time!",
+        "max_topic_prob": 0.6297149658203125,
+        "normalized_position": 0.0060189165950128975,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "And then you saw my picture in that article last year?” “",
+        "max_topic_prob": 0.6057575941085815,
+        "normalized_position": 0.6377901977644024,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "she asked bluntly, holding up the picture.",
+        "max_topic_prob": 0.5868866443634033,
+        "normalized_position": 0.5197764402407566,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "They made the association from pictures just like you did.”",
+        "max_topic_prob": 0.5866764187812805,
+        "normalized_position": 0.869518486672399,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The pictures might even be said to be doing what she’d wanted them to.",
+        "max_topic_prob": 0.5845586061477661,
+        "normalized_position": 0.678847807394669,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "These pictures were going to change his life. “",
+        "max_topic_prob": 0.5840457677841187,
+        "normalized_position": 0.6702493551160791,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I don’t forget to take them, and I wouldn’t not take them on purpose, but I feel better if they’re where you can see them.”",
+        "max_topic_prob": 0.5009525418281555,
+        "normalized_position": 0.17469618055555555,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Something about new photos for the site and whatnot.",
+        "max_topic_prob": 0.48690909147262573,
+        "normalized_position": 0.5891927083333334,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Photographs?’ ‘",
+        "max_topic_prob": 0.7788262367248535,
+        "normalized_position": 0.9064293915040184,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 496
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Photographs?’",
+        "max_topic_prob": 0.7663161158561707,
+        "normalized_position": 0.9083429008802143,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 506
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Photographers?’",
+        "max_topic_prob": 0.7094728946685791,
+        "normalized_position": 0.3652889399158056,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 493
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I made sure those photographs won’t be used.’ ‘",
+        "max_topic_prob": 0.69080650806427,
+        "normalized_position": 0.9529276693455798,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Can we get a picture of you together?’ ‘",
+        "max_topic_prob": 0.6772487163543701,
+        "normalized_position": 0.4845005740528129,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 387
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You’re photographed all the time.",
+        "max_topic_prob": 0.6749590635299683,
+        "normalized_position": 0.3685419058553387,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 510
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "In a voice barely above a whisper, I ask Linda for his picture.",
+        "max_topic_prob": 0.5397225022315979,
+        "normalized_position": 0.12442601096133907,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "It’s a picture perfect scene, really.",
+        "max_topic_prob": 0.43872886896133423,
+        "normalized_position": 0.8706858243223227,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "The shiny new black shutters are the perfect finishing touch. “",
+        "max_topic_prob": 0.41565290093421936,
+        "normalized_position": 0.8983854243815731,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I have the pictures.” “",
+        "max_topic_prob": 0.7690238952636719,
+        "normalized_position": 0.832781848262822,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "So, where are the pictures?”",
+        "max_topic_prob": 0.739617109298706,
+        "normalized_position": 0.7266603639801466,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "What are you going to do with those pictures?” “",
+        "max_topic_prob": 0.7364967465400696,
+        "normalized_position": 0.8770976128574804,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You planning to take any more prying pictures while you’re here?”",
+        "max_topic_prob": 0.6948896646499634,
+        "normalized_position": 0.7771212479319309,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I have some pictures I thought you might be interested in.” “",
+        "max_topic_prob": 0.6629066467285156,
+        "normalized_position": 0.7689671472465138,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It doesn’t matter who has the pictures because I’m going to the police.",
+        "max_topic_prob": 0.6423848271369934,
+        "normalized_position": 0.8340817773575987,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I took photos.\" \"",
+        "max_topic_prob": 0.822735607624054,
+        "normalized_position": 0.9304635761589404,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 972
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I wanted photos.\" \"",
+        "max_topic_prob": 0.7748664617538452,
+        "normalized_position": 0.8262417218543047,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1593
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She got photos.\"",
+        "max_topic_prob": 0.7463436126708984,
+        "normalized_position": 0.8264072847682119,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1595
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Pictures,\" I said. \"",
+        "max_topic_prob": 0.7294166088104248,
+        "normalized_position": 0.610182119205298,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1022
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I took a bunch of pictures.",
+        "max_topic_prob": 0.7137119174003601,
+        "normalized_position": 0.3554635761589404,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2437
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Bring my camera.\" \"",
+        "max_topic_prob": 0.7091829776763916,
+        "normalized_position": 0.9759933774834437,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I took a picture, see.\"",
+        "max_topic_prob": 0.7138124704360962,
+        "normalized_position": 0.24204565881718498,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Then I remembered the pictures. \"",
+        "max_topic_prob": 0.6805055141448975,
+        "normalized_position": 0.10030559050871832,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Some pictures fell out, so I gathered them up to put them back in the book when one caught my eye—it was me.",
+        "max_topic_prob": 0.6563208103179932,
+        "normalized_position": 0.08259931691533345,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Did ya take any pictures?\" \"",
+        "max_topic_prob": 0.6530773639678955,
+        "normalized_position": 0.12403379471508179,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I picked up the pictures and started to put them back in the book. \"",
+        "max_topic_prob": 0.6457821130752563,
+        "normalized_position": 0.08430702858170053,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "After I went through the ones from town, I got to some that I had taken at my old school and started to put my camera up. \"",
+        "max_topic_prob": 0.6440651416778564,
+        "normalized_position": 0.12448319252202049,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The.",
+        "max_topic_prob": 0.29617032408714294,
+        "normalized_position": 0.13567557465894226,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I wasn’t able to grab too much before Leopold destroyed your trunk, but I got the photographs of Mom and Dad, your blanket and sketchbook.”",
+        "max_topic_prob": 0.5586584210395813,
+        "normalized_position": 0.8497942386831275,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Images flew at me, of Jiyama as a child.",
+        "max_topic_prob": 0.45916301012039185,
+        "normalized_position": 0.14534947115908844,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I wish I had thought to take pictures of it with my cell phone,” she said. “",
+        "max_topic_prob": 0.6300967931747437,
+        "normalized_position": 0.7684630738522954,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Take a pic with me?\"",
+        "max_topic_prob": 0.6710497140884399,
+        "normalized_position": 0.42851108764519535,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "At my gallery.' '",
+        "max_topic_prob": 0.651046872138977,
+        "normalized_position": 0.5600844772967265,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The next break you have, come see me at the gallery.' '",
+        "max_topic_prob": 0.5461905002593994,
+        "normalized_position": 0.6559662090813094,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I pull out my phone and call the local taxi service to have them take me to my gallery.",
+        "max_topic_prob": 0.5418985486030579,
+        "normalized_position": 0.5444561774023231,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "My client, Mr. Clayton, I was supposed to be meeting with him at my gallery!",
+        "max_topic_prob": 0.510777473449707,
+        "normalized_position": 0.13220696937697993,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I was there, sketching and taking photos to get ideas for my next piece, when he jogged by and I caught him in my snapshot.",
+        "max_topic_prob": 0.5018346905708313,
+        "normalized_position": 0.05744456177402323,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He would show Todd the envelope of photographs that was currently being carried in his hip pocket, and he would say they needed to talk.",
+        "max_topic_prob": 0.5660117864608765,
+        "normalized_position": 0.8093023255813954,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The photographs were still getting a work-out, as he thumbed through them at night, while throughout the day he was now carrying them with him as he prowled the streets looking for the man who had become his . . .",
+        "max_topic_prob": 0.528180718421936,
+        "normalized_position": 0.7604651162790698,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 327
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The interior light of the car wasn’t very bright, but as he flicked through the first few it wasn’t difficult to see what the photographs were of.",
+        "max_topic_prob": 0.4911944568157196,
+        "normalized_position": 0.43023255813953487,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 185
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0026322955432513387,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.003181336161187699,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.005342683028633442,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.007042253521126761,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.005864581482139684,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.010767160161507403,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.004107220060527454,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.008821075217546787,
+        "n_sentences": 74
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0001884303749764462,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00011031439602868175,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00044662795891022776,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0006080611535788742,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.00034423407917383823,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00025025025025025025,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00043687199650502403,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 60
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.65,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

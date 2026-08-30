@@ -1,0 +1,968 @@
+{
+  "topic_id": 213,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sex",
+        "love",
+        "make",
+        "intimate",
+        "want",
+        "intimacy",
+        "just",
+        "relationship",
+        "than",
+        "meaningless"
+      ],
+      "KeyBERT": [
+        "willing"
+      ],
+      "POS": [
+        "inevitable",
+        "swimming",
+        "issue",
+        "possibility",
+        "plastic",
+        "ability",
+        "difference",
+        "usual",
+        "willing"
+      ],
+      "MMR": [
+        "inevitable",
+        "strangely",
+        "swimming",
+        "gazing",
+        "blowing",
+        "issue",
+        "ability",
+        "plastic",
+        "concerned",
+        "willing"
+      ]
+    },
+    "stage08_snippets": [
+      "i want very much to make love to you, but i'll be damned if i'll do it in a horror of a room like this.",
+      "yeah, but in a couple of hours, i’ll want sex again.",
+      "i’d rather there was love and friendship and commitment behind it, but if it’s a choice between sex without that stuff, or going home alone, i’ll take the sex, thank you."
+    ],
+    "label_public": "Choosing Sex Without Commitment"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It was more than just sex.",
+        "max_topic_prob": 0.7685768604278564,
+        "normalized_position": 0.5077137076378351,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I just forgot about sex for a while.”",
+        "max_topic_prob": 0.7065540552139282,
+        "normalized_position": 0.4834344967121902,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I'm not going to have sex with you.”",
+        "max_topic_prob": 0.695334792137146,
+        "normalized_position": 0.4137582195245321,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 471
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I don't want to talk about sex.”",
+        "max_topic_prob": 0.6821815967559814,
+        "normalized_position": 0.3933990895295903,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Well, it was good sex.” “",
+        "max_topic_prob": 0.681085467338562,
+        "normalized_position": 0.48406676783004554,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sex was a big part of our past, Daisy, but you don't seem to want to talk about that.” “",
+        "max_topic_prob": 0.6748439073562622,
+        "normalized_position": 0.3956752655538695,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Was it full sex?’ ‘",
+        "max_topic_prob": 0.7055082321166992,
+        "normalized_position": 0.574272886980285,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "They weren’t “having sex”.’ ‘",
+        "max_topic_prob": 0.6776735186576843,
+        "normalized_position": 0.9541284403669725,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Although we brought each other to perfunctory orgasm in bed that night, we gave each other little pleasure.",
+        "max_topic_prob": 0.6346151828765869,
+        "normalized_position": 0.37497560023423776,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Did they force you to have sex?’ ‘",
+        "max_topic_prob": 0.6173076629638672,
+        "normalized_position": 0.5791528401327347,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Can’t speak for the others, but with me it’s not just the sex.",
+        "max_topic_prob": 0.6108250021934509,
+        "normalized_position": 0.9420261565488971,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "To have him sexually, feeling as I did, would be to take advantage of him; the bedroom door remained closed.",
+        "max_topic_prob": 0.6074817180633545,
+        "normalized_position": 0.8165137614678899,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Suddenly it felt more intimate than when they were lying together.",
+        "max_topic_prob": 0.638845682144165,
+        "normalized_position": 0.7756686798964625,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Not rude exactly, but a guy never wants to think he is putting a pretty girl to sleep.”",
+        "max_topic_prob": 0.452653169631958,
+        "normalized_position": 0.4820247339660627,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Hardly the kind of thing to excite a man's interest.\"",
+        "max_topic_prob": 0.44427740573883057,
+        "normalized_position": 0.5143312101910829,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’d had great sex, but this was more - just more .",
+        "max_topic_prob": 0.6901490688323975,
+        "normalized_position": 0.535811648079306,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "This is not about sex.",
+        "max_topic_prob": 0.6848519444465637,
+        "normalized_position": 0.6602230483271375,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "and I definitely think you want to have sex with me again, but I don’t think that you want to truly hurt me beyond the point of a really— good— hard — fuck. ” “",
+        "max_topic_prob": 0.6461799144744873,
+        "normalized_position": 0.7345724907063197,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I mean, we just had sex for the first…” The words caught in my throat as the horrible thought settled in, but he cut me off before it could fully form. “",
+        "max_topic_prob": 0.6377229690551758,
+        "normalized_position": 0.6599752168525402,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It was obvious, inevitable really, that we were going to have sex sooner or later.",
+        "max_topic_prob": 0.6313412189483643,
+        "normalized_position": 0.530359355638166,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Don’t lie again, telling me how you were planning my seduction.",
+        "max_topic_prob": 0.5941057205200195,
+        "normalized_position": 0.34349442379182155,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "For this guy?",
+        "max_topic_prob": 0.35058167576789856,
+        "normalized_position": 0.5261592537515208,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "God, I wanted to believe that he only wanted me for sex, I WANTED that to be it.",
+        "max_topic_prob": 0.6580007076263428,
+        "normalized_position": 0.42503047541649736,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Although she really didn’t care for sex, this guy at least tried to make it enjoyable for her.",
+        "max_topic_prob": 0.6480699777603149,
+        "normalized_position": 0.18427468508736286,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Finally, he took me to his room to make love to me, there is no other word for how it was for me.",
+        "max_topic_prob": 0.6205953359603882,
+        "normalized_position": 0.42726533929297034,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I want to look at you as we have sex, not fuck your back.”",
+        "max_topic_prob": 0.6197142004966736,
+        "normalized_position": 0.2673709874034945,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "And not for sex, although that was pretty mind blowing and I wouldn’t mind if it happened again.”",
+        "max_topic_prob": 0.608120322227478,
+        "normalized_position": 0.27996749288906947,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She convinced herself it was just the environment, not the actual man that made the sex so amazing and yet conflicting.",
+        "max_topic_prob": 0.5949631929397583,
+        "normalized_position": 0.33015034538805366,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "More than just sex?”",
+        "max_topic_prob": 0.7291271090507507,
+        "normalized_position": 0.09981033665244192,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "At that moment, I realize it’s much more than sex that he’s after.",
+        "max_topic_prob": 0.6614063382148743,
+        "normalized_position": 0.7093409198672357,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "We’re just talking about sex, right?",
+        "max_topic_prob": 0.6094459295272827,
+        "normalized_position": 0.09649122807017543,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 398
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Evan asks and it occurs to me that in all the time Evan and I have spent together over the years, we’ve never actually just spent time together without it involving sex. “",
+        "max_topic_prob": 0.609225332736969,
+        "normalized_position": 0.3871503082029398,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 540
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Just to get laid.”",
+        "max_topic_prob": 0.5967497229576111,
+        "normalized_position": 0.09767662399241346,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 403
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’m not one for post-coital cuddling or anything like that and I can feel myself getting restless. “",
+        "max_topic_prob": 0.5743582248687744,
+        "normalized_position": 0.2287814129919393,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 500
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "If I had known about all this, I would not have tried to make love to you.",
+        "max_topic_prob": 0.5780545473098755,
+        "normalized_position": 0.229110891926166,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I couldn't think of any reason such an important man would be interested in me other than a wish to have a quick sexual encounter. \"",
+        "max_topic_prob": 0.550967276096344,
+        "normalized_position": 0.31294913343666336,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I had vowed to myself that I would never jump into sex like that again.",
+        "max_topic_prob": 0.5337916612625122,
+        "normalized_position": 0.2285472734958433,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Yes, that one had enough sex and violence for a wide au dience.",
+        "max_topic_prob": 0.4109610319137573,
+        "normalized_position": 0.8972805410736931,
+        "tertile": "end",
+        "chapter_index": 54,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Morning sex is for relationships.",
+        "max_topic_prob": 0.5994405746459961,
+        "normalized_position": 0.23239180506728088,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Morning sex is for love.",
+        "max_topic_prob": 0.5404598116874695,
+        "normalized_position": 0.23251303188265243,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "A life where I could not make you scream with pleasure the way you deserve?",
+        "max_topic_prob": 0.49819427728652954,
+        "normalized_position": 0.9312643956843254,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 590
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "And morning sex, though quite enjoyable, is not something one does after a one-night stand.",
+        "max_topic_prob": 0.4981248378753662,
+        "normalized_position": 0.23227057825190933,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "The brain isn’t made to sustain that feeling of intoxication you get from a new romance.",
+        "max_topic_prob": 0.45838409662246704,
+        "normalized_position": 0.27021457146320765,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Guys do now and then.” “",
+        "max_topic_prob": 0.410152405500412,
+        "normalized_position": 0.7146320766153473,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It couldn’t be just sex.”",
+        "max_topic_prob": 0.769008994102478,
+        "normalized_position": 0.4238230289279637,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 854
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You do not want to have sex with me.",
+        "max_topic_prob": 0.6815952658653259,
+        "normalized_position": 0.1187748156551333,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Sex had always been about a quick release more than building a connection, more even than chasing pleasure.",
+        "max_topic_prob": 0.6788899898529053,
+        "normalized_position": 0.4446965399886557,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Despite the fact that you’ve decided what went down, we didn’t have sex.” “",
+        "max_topic_prob": 0.647687554359436,
+        "normalized_position": 0.26409529211571187,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It’s not fucking intercourse.",
+        "max_topic_prob": 0.6454038619995117,
+        "normalized_position": 0.12047646057855928,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "After all the hot sex. “",
+        "max_topic_prob": 0.6437264680862427,
+        "normalized_position": 0.15087918321043675,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 466
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "This wasn’t just a man looking to get laid.",
+        "max_topic_prob": 0.5701899528503418,
+        "normalized_position": 0.6825823806321453,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Is that why you slept with me last night, because you thought it would make things easier for you and your family?”",
+        "max_topic_prob": 0.5671957731246948,
+        "normalized_position": 0.7157587984756781,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "You just want to get all the pomp over with, but you go through it because it’s important to women.",
+        "max_topic_prob": 0.49175119400024414,
+        "normalized_position": 0.9197489352163192,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I know it’s not the most romantic place to confess my feelings.",
+        "max_topic_prob": 0.47439342737197876,
+        "normalized_position": 0.887917507285362,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Something more than just sex.”",
+        "max_topic_prob": 0.6937605738639832,
+        "normalized_position": 0.7167460608281422,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Sex was great.",
+        "max_topic_prob": 0.6908239722251892,
+        "normalized_position": 0.7237083180652254,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Not while we’re…” “Having all the sex?”",
+        "max_topic_prob": 0.6841006278991699,
+        "normalized_position": 0.8305240014657383,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "It’s always been more than sex, Rainey.",
+        "max_topic_prob": 0.6517808437347412,
+        "normalized_position": 0.9934041773543423,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "That sounds like sex.” “",
+        "max_topic_prob": 0.6383721828460693,
+        "normalized_position": 0.9932209600586296,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "This isn’t just sex for me, Rainey.”",
+        "max_topic_prob": 0.6347521543502808,
+        "normalized_position": 0.7222425796995237,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "and take advantage of girls.",
+        "max_topic_prob": 0.3552156090736389,
+        "normalized_position": 0.49277483080299983,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "So, you seriously were looking for sex with no strings attached that night in the bar?” “",
+        "max_topic_prob": 0.6413363218307495,
+        "normalized_position": 0.5314849624060151,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Did you have sex?",
+        "max_topic_prob": 0.6168473958969116,
+        "normalized_position": 0.29887218045112784,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "So, before last night, you were a total virgin, am I right?” “",
+        "max_topic_prob": 0.6149833798408508,
+        "normalized_position": 0.4600563909774436,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m all sex and no thought.",
+        "max_topic_prob": 0.6125737428665161,
+        "normalized_position": 0.8416353383458647,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It was supposed to be a one-night thing, a fuckable evening with a hot guy.",
+        "max_topic_prob": 0.5859774351119995,
+        "normalized_position": 0.5671992481203008,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Not one of us would sell sex if there’d been another way to survive.",
+        "max_topic_prob": 0.5677840113639832,
+        "normalized_position": 0.9365601503759399,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Is sex okay?",
+        "max_topic_prob": 0.6522794365882874,
+        "normalized_position": 0.39431590974007424,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Aren’t you guys going to find out the sex?”",
+        "max_topic_prob": 0.6103880405426025,
+        "normalized_position": 0.18180519851471008,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Oh, and making love to me.",
+        "max_topic_prob": 0.6019109487533569,
+        "normalized_position": 0.17580691231076837,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "As long as it feels okay, then sex is always a good thing.”",
+        "max_topic_prob": 0.6013143062591553,
+        "normalized_position": 0.3951728077692088,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Umm…Karrie…umm…we are…Should we…what about sex?",
+        "max_topic_prob": 0.5941641330718994,
+        "normalized_position": 0.39417309340188517,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 215
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.006493506493506494,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004814814814814815,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.01017259115327466,
+        "n_sentences": 89
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.006129184347006129,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.006678452170496956,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.004479739360619018,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005978122615110659,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.005719733079122974,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0009006980409817609,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00018484288354898336,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0007187005893344833,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00012406947890818859,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0007309941520467836,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.000566491998300524,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00013555645926528398,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0005773672055427252,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 72
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.5",
+    "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.87,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

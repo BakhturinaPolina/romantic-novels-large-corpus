@@ -1,0 +1,1011 @@
+{
+  "topic_id": 227,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "memory",
+        "memories",
+        "remember",
+        "forgotten",
+        "forget",
+        "wipe",
+        "lane",
+        "remembered",
+        "baddest",
+        "replace"
+      ],
+      "KeyBERT": [
+        "memories",
+        "forgetting",
+        "reminding",
+        "wipe",
+        "previous",
+        "experience",
+        "suffering",
+        "precious",
+        "evidence",
+        "witnessed"
+      ],
+      "POS": [
+        "forgetting",
+        "memories",
+        "reminding",
+        "precious",
+        "bedside",
+        "nearest",
+        "ability",
+        "painful",
+        "behavior",
+        "previous"
+      ],
+      "MMR": [
+        "forgetting",
+        "wipe",
+        "memories",
+        "bedside",
+        "suffering",
+        "ability",
+        "attempted",
+        "softened",
+        "previous",
+        "ms"
+      ]
+    },
+    "stage08_snippets": [
+      "we’ll get your memory back.”",
+      "you’ll be sure and let us know if you have any clearing of your memory, won’t you?” “",
+      "i’ll be taking these memories with me and pulling them out when i’m missing everyone so much."
+    ],
+    "label_public": "Cherishing Memories Before Parting"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "People have history and long memories.” “",
+        "max_topic_prob": 0.6030889749526978,
+        "normalized_position": 0.12923121055651177,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Thinking of Quincy helped her remember.",
+        "max_topic_prob": 0.5366286039352417,
+        "normalized_position": 0.2567412507171543,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "This key drive has a gig of memory.”",
+        "max_topic_prob": 0.37978410720825195,
+        "normalized_position": 0.03370625358577166,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "The memory of their first night under the stars surged through her, merging past with present sensation until she couldn't remember exactly where she was.",
+        "max_topic_prob": 0.5562787652015686,
+        "normalized_position": 0.7054305349683331,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Hearing him call her his wife brought memories of the weekend's activities back to vivid life. “",
+        "max_topic_prob": 0.5211740732192993,
+        "normalized_position": 0.4150384045276917,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She remembered all too vividly coming back to whatever bedroom had been hers temporarily only to find her suitcases neatly packed.",
+        "max_topic_prob": 0.51468825340271,
+        "normalized_position": 0.831963347257782,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "It may be something he doesn't want to share with anyone else in the world, especially his wonderful little girl whom he's just meeting again.",
+        "max_topic_prob": 0.4259847402572632,
+        "normalized_position": 0.5732381080716884,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Whatever they were, they're in your past.",
+        "max_topic_prob": 0.42450597882270813,
+        "normalized_position": 0.8444953510308584,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "He couldn't remember talking about it. \"",
+        "max_topic_prob": 0.6872429847717285,
+        "normalized_position": 0.3214405923931336,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Because in about two seconds, he was going to forget about everything but getting off.",
+        "max_topic_prob": 0.5721461772918701,
+        "normalized_position": 0.8907775159878829,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He remembered something that had been really bothering him. “",
+        "max_topic_prob": 0.7125426530838013,
+        "normalized_position": 0.9426649583600256,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2943
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Nothing but memories.”",
+        "max_topic_prob": 0.7124854326248169,
+        "normalized_position": 0.8139013452914798,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2541
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He didn’t have one good memory of his father.",
+        "max_topic_prob": 0.6905239820480347,
+        "normalized_position": 0.8180653427290199,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2554
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Past memories of his father assaulted him.",
+        "max_topic_prob": 0.5918237566947937,
+        "normalized_position": 0.05541319666880205,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "One thing he’d learned in his years undercover was remember every detail in the most innocent of locations.",
+        "max_topic_prob": 0.5443065166473389,
+        "normalized_position": 0.23542600896860988,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 735
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Flashes of that night so many years ago played in his head.",
+        "max_topic_prob": 0.5384272933006287,
+        "normalized_position": 0.028187059577194105,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He remembered too .",
+        "max_topic_prob": 0.7229303121566772,
+        "normalized_position": 0.252387448840382,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Suddenly she once again relived a bad memory from the past.",
+        "max_topic_prob": 0.6413893103599548,
+        "normalized_position": 0.63656207366985,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He might remember what Randall purchased.\" \"",
+        "max_topic_prob": 0.6037468314170837,
+        "normalized_position": 0.5497953615279673,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Funny how some things triggered certain memories.",
+        "max_topic_prob": 0.5811877846717834,
+        "normalized_position": 0.6051841746248294,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He remembered Randall.",
+        "max_topic_prob": 0.5795437097549438,
+        "normalized_position": 0.5552523874488404,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "After all those years, that was her only memory about the book.",
+        "max_topic_prob": 0.551710844039917,
+        "normalized_position": 0.6038199181446112,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "And that’s what it came down to … memories.",
+        "max_topic_prob": 0.6971085667610168,
+        "normalized_position": 0.1492376405359618,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It’s crazy that after being gone for so long, I remember everything.",
+        "max_topic_prob": 0.6451983451843262,
+        "normalized_position": 0.36192823040197136,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "And the best thing about memories is that you can take them anywhere.”",
+        "max_topic_prob": 0.6332213878631592,
+        "normalized_position": 0.1493916525488988,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I rack my brain, digging up long buried memories. “",
+        "max_topic_prob": 0.6139336824417114,
+        "normalized_position": 0.49453257354073615,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It’s been a while, but my memory of that time in my life is fairly clear.",
+        "max_topic_prob": 0.5781269073486328,
+        "normalized_position": 0.07854612659787463,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Maybe it’s because Washington doesn’t hold life-shattering memories for me. “",
+        "max_topic_prob": 0.573631763458252,
+        "normalized_position": 0.12290158632373326,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He would’ve remembered that. “",
+        "max_topic_prob": 0.7367544174194336,
+        "normalized_position": 0.7944697833523375,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was better than he remembered, better than he imagined.",
+        "max_topic_prob": 0.6404606103897095,
+        "normalized_position": 0.5285062713797035,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He could still remember the last time he’d heard it.",
+        "max_topic_prob": 0.6102333068847656,
+        "normalized_position": 0.17445838084378562,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I didn’t want my memories of this place to change.”",
+        "max_topic_prob": 0.597175657749176,
+        "normalized_position": 0.3403648802736602,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Trying to shake off the painful memories?",
+        "max_topic_prob": 0.5827189683914185,
+        "normalized_position": 0.3933865450399088,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Six years of jerking off to one memory was pretty telling.",
+        "max_topic_prob": 0.5525455474853516,
+        "normalized_position": 0.11858608893956671,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "And he remembered something else.",
+        "max_topic_prob": 0.7344315648078918,
+        "normalized_position": 0.23793984108967084,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He had not come here to be reminded of it, but to forget.",
+        "max_topic_prob": 0.7120957374572754,
+        "normalized_position": 0.1662883087400681,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1172
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Had never been able to remember, even then.",
+        "max_topic_prob": 0.70472252368927,
+        "normalized_position": 0.16898410896708285,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1191
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "there were too many memories, you know?",
+        "max_topic_prob": 0.6929957270622253,
+        "normalized_position": 0.48354143019296253,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "And him, and his memories.’",
+        "max_topic_prob": 0.6724937558174133,
+        "normalized_position": 0.9101872871736663,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "To his shame, Mark couldn’t remember.",
+        "max_topic_prob": 0.6694439649581909,
+        "normalized_position": 0.4788592508513053,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I was barely able to move as memories poured over me.",
+        "max_topic_prob": 0.6032326221466064,
+        "normalized_position": 0.8063057972652277,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I wanted to make sure they had some for their own memories. “",
+        "max_topic_prob": 0.5716040730476379,
+        "normalized_position": 0.9058650694993785,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "It reminded me too much of what I myself had, not twelve hours ago, but would never have again. “",
+        "max_topic_prob": 0.5167273879051208,
+        "normalized_position": 0.4559837269747994,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Time blurred and faded as I held his life in my hands.",
+        "max_topic_prob": 0.48073264956474304,
+        "normalized_position": 0.7361283760876935,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Then find out what happened in the past, and, once you do, you leave it there.",
+        "max_topic_prob": 0.45911961793899536,
+        "normalized_position": 0.2828568199796587,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The stuff with Tripp…that was the past.",
+        "max_topic_prob": 0.33902624249458313,
+        "normalized_position": 0.281839755904622,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He’s not remembering enough.” “",
+        "max_topic_prob": 0.7994415760040283,
+        "normalized_position": 0.7029702970297029,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "There was a real memory to make.",
+        "max_topic_prob": 0.7475888133049011,
+        "normalized_position": 0.3222065063649222,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He talked slower as memories started to return. “",
+        "max_topic_prob": 0.7226946353912354,
+        "normalized_position": 0.7779349363507779,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He had forgotten what he had witnessed until now. “",
+        "max_topic_prob": 0.6973741054534912,
+        "normalized_position": 0.8025459688826025,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Going back to the place where events took place is another great way of reactivating memories.” “",
+        "max_topic_prob": 0.6440466642379761,
+        "normalized_position": 0.7083451202263084,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Like Nahla told me, you need motivation to remember.",
+        "max_topic_prob": 0.5622285604476929,
+        "normalized_position": 0.7145685997171146,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He couldn’t remember the details of it anymore. “",
+        "max_topic_prob": 0.7806713581085205,
+        "normalized_position": 0.3511600471883602,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 403
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He couldn’t remember now.",
+        "max_topic_prob": 0.7584173679351807,
+        "normalized_position": 0.7455760912308297,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "How could he have forgotten?",
+        "max_topic_prob": 0.7325635552406311,
+        "normalized_position": 0.006553938917289291,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He’d completely forgotten.",
+        "max_topic_prob": 0.6694187521934509,
+        "normalized_position": 0.3750163848472932,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "What was that thing he’d told himself not to forget this morning?",
+        "max_topic_prob": 0.6595337986946106,
+        "normalized_position": 0.745445012452484,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He remembered all right.",
+        "max_topic_prob": 0.6586973667144775,
+        "normalized_position": 0.12858828155721588,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "But now those memories were fading.",
+        "max_topic_prob": 0.697629988193512,
+        "normalized_position": 0.5698021143941447,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Instead I only had my memories, and I loved my memories.",
+        "max_topic_prob": 0.6381969451904297,
+        "normalized_position": 0.581458389807536,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I grin at the memory.",
+        "max_topic_prob": 0.6310423612594604,
+        "normalized_position": 0.06665468918433345,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I think about it a minute, trying to push past the heavy fog of alcohol to remember my childhood. “",
+        "max_topic_prob": 0.5907633304595947,
+        "normalized_position": 0.7362558390226375,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "To make people see a hero and forget all of the destructive things you’ve done in the past.",
+        "max_topic_prob": 0.40768003463745117,
+        "normalized_position": 0.16996047430830039,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 917
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "My performance was driven purely by the desire to show Bo what he was missing, what he would never have again.",
+        "max_topic_prob": 0.37014222145080566,
+        "normalized_position": 0.5718648939992813,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I couldn’t begin to think that our entire situation was a mistake, but rather a memory that I would hold close and cherish.",
+        "max_topic_prob": 0.6474274396896362,
+        "normalized_position": 0.5350598582946494,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Also to commit the way she felt to memory.",
+        "max_topic_prob": 0.6149751543998718,
+        "normalized_position": 0.9648179819203518,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And now Hawaii was all but a memory.",
+        "max_topic_prob": 0.5774190425872803,
+        "normalized_position": 0.4026386513559736,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "So that if and when he chose to leave, I was embedded so deeply into his heart that he wouldn’t ever be able to forget me.",
+        "max_topic_prob": 0.5715205073356628,
+        "normalized_position": 0.5607134131443928,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "As far as I was concerned, Holden Reed was all but a fleeting memory.",
+        "max_topic_prob": 0.5659571886062622,
+        "normalized_position": 0.8216467139017836,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Maybe with a window and without my slip of memory I would’ve finally had my kiss. “",
+        "max_topic_prob": 0.5615300536155701,
+        "normalized_position": 0.28487661861715124,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The man appears to get choked up on the memories. “",
+        "max_topic_prob": 0.6734656095504761,
+        "normalized_position": 0.6785550983081847,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "They remember everything—especially when they’re halted on the brink of an orgasm.",
+        "max_topic_prob": 0.62091064453125,
+        "normalized_position": 0.13595488492607835,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It doesn’t escape me that I’ll also be leaving behind the memory of the handsome man who ended our night in the worst way possible. * * *",
+        "max_topic_prob": 0.5232222080230713,
+        "normalized_position": 0.11766499009297363,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Exactly what I wanted to do; take a stroll down memory lane with this asshole.",
+        "max_topic_prob": 0.4779914319515228,
+        "normalized_position": 0.66026520347508,
+        "tertile": "middle",
+        "chapter_index": 43,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’d rather not take a stroll down that memory lane, thank you very much.",
+        "max_topic_prob": 0.465874046087265,
+        "normalized_position": 0.5787227556774882,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 3
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0021971985718209283,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.004573388595112191,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.002631578947368421,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.002226069750185506,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.003432343234323432,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0029013539651837525,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.003125,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0028760425654299686,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.000677323218639935,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0005480953685941354,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0006832934745473181,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0007692307692307692,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00043446777697320784,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00033961623365596876,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0007234581298607343,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 75
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.5",
+    "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

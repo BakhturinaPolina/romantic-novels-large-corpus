@@ -1,0 +1,712 @@
+{
+  "topic_id": 140,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "6.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "benjamin",
+        "himself",
+        "hutton",
+        "his",
+        "spencer",
+        "morrison",
+        "jim",
+        "had"
+      ],
+      "KeyBERT": [
+        "scenario",
+        "strolled",
+        "thinks",
+        "asks",
+        "anxious",
+        "possibilities",
+        "remarked",
+        "poised",
+        "growl",
+        "urge"
+      ],
+      "POS": [
+        "scenario",
+        "extent",
+        "behalf",
+        "possibilities",
+        "irritation",
+        "hopeful",
+        "enormous",
+        "session",
+        "fashioned",
+        "notion"
+      ],
+      "MMR": [
+        "poised",
+        "insulted",
+        "scenario",
+        "extent",
+        "remarked",
+        "encouraged",
+        "heaved",
+        "fashioned",
+        "framed",
+        "strolled"
+      ]
+    },
+    "stage08_snippets": [
+      "before [person] could growl—david at least knew him well enough to know he would—[person] touched [person] leg and said, “right now i’ll settle for some answers.”",
+      "it’s kind of amazing that a few simple words from [person] can have this effect, and [person] doesn’t think he’ll tire of it, ever.",
+      "who knows what you'll be walking into on benezet , much less how long you'll be gone.\""
+    ],
+    "label_public": "Demanding Answers Before Departure"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Ben.”",
+        "max_topic_prob": 0.8527948260307312,
+        "normalized_position": 0.3766769865841073,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1078
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ben.”",
+        "max_topic_prob": 0.8396527767181396,
+        "normalized_position": 0.38586171310629513,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1167
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ben.”",
+        "max_topic_prob": 0.8396527767181396,
+        "normalized_position": 0.8697626418988648,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1088
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ben.”",
+        "max_topic_prob": 0.8396527767181396,
+        "normalized_position": 0.8706914344685243,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1097
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Ben asked.",
+        "max_topic_prob": 0.8257139921188354,
+        "normalized_position": 0.5298245614035088,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Ben asked. “",
+        "max_topic_prob": 0.8204436302185059,
+        "normalized_position": 0.5327141382868937,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I better go up and call Ben back.” “",
+        "max_topic_prob": 0.7046703100204468,
+        "normalized_position": 0.8385387926277453,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Maybe later, Ben.",
+        "max_topic_prob": 0.6901654005050659,
+        "normalized_position": 0.8442776735459663,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Ben’s doleful expression said that’s exactly what he feared.",
+        "max_topic_prob": 0.6660486459732056,
+        "normalized_position": 0.07791634477430748,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ll tell Ben there was no story.",
+        "max_topic_prob": 0.6641838550567627,
+        "normalized_position": 0.4798587352389361,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "A short time later, she was on the phone with Ben. “",
+        "max_topic_prob": 0.6638760566711426,
+        "normalized_position": 0.8395320604789759,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She’d told Ben about her engagement, and he’d been apoplectic at first, wanting to come immediately and “rescue” her.",
+        "max_topic_prob": 0.6604693531990051,
+        "normalized_position": 0.8343449950336608,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Franklin, Benjamin.",
+        "max_topic_prob": 0.5710427761077881,
+        "normalized_position": 0.9550163576881134,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Franklin was taken aback.",
+        "max_topic_prob": 0.5531624555587769,
+        "normalized_position": 0.6300436205016358,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It was not Benjamin Franklin.",
+        "max_topic_prob": 0.49047157168388367,
+        "normalized_position": 0.41194111232279174,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Morgan, Edmund S. Benjamin Franklin .",
+        "max_topic_prob": 0.45801615715026855,
+        "normalized_position": 0.9790076335877863,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Is it you, sir,” a Frenchman supposedly asked him, “who will replace Franklin?” “",
+        "max_topic_prob": 0.4536275863647461,
+        "normalized_position": 0.37350054525627047,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Benjamin Franklin .",
+        "max_topic_prob": 0.4509008526802063,
+        "normalized_position": 0.9929116684841875,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Ben tried again. “",
+        "max_topic_prob": 0.7870417833328247,
+        "normalized_position": 0.4218275297966815,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "But the guy had shaken his head at Ben’s suggestion. “",
+        "max_topic_prob": 0.7315207123756409,
+        "normalized_position": 0.4365505959336293,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My name is Ben.”",
+        "max_topic_prob": 0.6921541690826416,
+        "normalized_position": 0.41084365505959336,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It was only then that Ben had realized what a lowlife the guy was, how truly base the mind housed in that beautiful body was.",
+        "max_topic_prob": 0.6855074763298035,
+        "normalized_position": 0.4374853937835943,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Ben stared at him, then spoke in a harsh whisper, “You’re sure?",
+        "max_topic_prob": 0.6804839968681335,
+        "normalized_position": 0.4208927319467165,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Okay, Ben, hang on a minute.”",
+        "max_topic_prob": 0.6709127426147461,
+        "normalized_position": 0.41131105398457585,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Ben snorted. “",
+        "max_topic_prob": 0.7645843625068665,
+        "normalized_position": 0.7938364779874214,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "And Ben had a gun.” “",
+        "max_topic_prob": 0.7345247268676758,
+        "normalized_position": 0.7983647798742138,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Ben’s former employee admitted he’d just been trying to cause trouble for Ben.",
+        "max_topic_prob": 0.7197774648666382,
+        "normalized_position": 0.830440251572327,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She went in the house,” Ben said. “",
+        "max_topic_prob": 0.6764172315597534,
+        "normalized_position": 0.7934591194968553,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I guess one of Ben’s employees called Dad.",
+        "max_topic_prob": 0.6286798715591431,
+        "normalized_position": 0.8044025157232705,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Sonja and Ben were charged with first-degree murder, at which point Ben sang like a bird and pointed fingers at Sonja, swearing she was the mastermind, and he’d just been the cleanup guy.",
+        "max_topic_prob": 0.6153115034103394,
+        "normalized_position": 0.9964779874213836,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "said Ben. ‘",
+        "max_topic_prob": 0.8438715934753418,
+        "normalized_position": 0.6248053969901401,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I don’t know Ben.",
+        "max_topic_prob": 0.816237211227417,
+        "normalized_position": 0.7285936689154126,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Yes Ben.",
+        "max_topic_prob": 0.7951179146766663,
+        "normalized_position": 0.9927348209652309,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "That’s what you said wasn’t it Ben?’",
+        "max_topic_prob": 0.7943210601806641,
+        "normalized_position": 0.9782044628956927,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Aw, come on Ben.",
+        "max_topic_prob": 0.7778826355934143,
+        "normalized_position": 0.18889465490399585,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Certainly, Ben.",
+        "max_topic_prob": 0.76418137550354,
+        "normalized_position": 0.9766476388168137,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ben said. “",
+        "max_topic_prob": 0.8604922294616699,
+        "normalized_position": 0.8837913628715648,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ben.",
+        "max_topic_prob": 0.8307576179504395,
+        "normalized_position": 0.5342680874929894,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ben.",
+        "max_topic_prob": 0.8307576179504395,
+        "normalized_position": 0.5853056646102075,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "he asked Ben.",
+        "max_topic_prob": 0.8290907144546509,
+        "normalized_position": 0.23724060572069547,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ben was there.",
+        "max_topic_prob": 0.828906238079071,
+        "normalized_position": 0.42501402131239485,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ben asked.",
+        "max_topic_prob": 0.8257139325141907,
+        "normalized_position": 0.8089736399326977,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "A combination of not liking where the club was heading, and wanting to settle down and get married and have kids led Ben to choose his current path.",
+        "max_topic_prob": 0.6546453833580017,
+        "normalized_position": 0.1279241306638567,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Take your time Ben.",
+        "max_topic_prob": 0.649080753326416,
+        "normalized_position": 0.11970495258166491,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Watch it Ben.",
+        "max_topic_prob": 0.6348294615745544,
+        "normalized_position": 0.1220231822971549,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "If you don’t stop thinking about touching her you’re going to give Ben a scare.”",
+        "max_topic_prob": 0.6288578510284424,
+        "normalized_position": 0.12518440463645944,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "According to Ben he’d left the club when he’d met the woman that would later become his wife.",
+        "max_topic_prob": 0.6111941337585449,
+        "normalized_position": 0.12771338250790307,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Usually he only left a fifty but the information Ben had provided today was worth the extra.",
+        "max_topic_prob": 0.5819521546363831,
+        "normalized_position": 0.13677555321390938,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 108
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.00354295837023915,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.008515057113187955,
+        "n_sentences": 82
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.004700352526439483,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.08466741826381059,
+        "n_sentences": 751
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.00234375,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.06990088680229525,
+        "n_sentences": 134
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.006825006825006825,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.0019023462270133164,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "6.6",
+    "taxonomy_main_name": "Material Glamour & Consumption",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.65,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

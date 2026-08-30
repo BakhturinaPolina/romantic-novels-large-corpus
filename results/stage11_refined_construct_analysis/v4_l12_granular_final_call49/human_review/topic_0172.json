@@ -1,0 +1,164 @@
+{
+  "topic_id": 172,
+  "label": "Reporting to The Security Officer",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "7.3",
+  "taxonomy_secondary_name": "Risk, Danger & External Crises",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "police",
+      "cop",
+      "cops",
+      "officer",
+      "authorities",
+      "officers",
+      "enforcement",
+      "policeman",
+      "local",
+      "call"
+    ],
+    "KeyBERT": [
+      "protect",
+      "evidence",
+      "weapons",
+      "dared",
+      "appropriate",
+      "sir",
+      "secured",
+      "mentioned",
+      "task",
+      "involved"
+    ],
+    "POS": [
+      "activity",
+      "unwilling",
+      "partners",
+      "typical",
+      "leads",
+      "annoying",
+      "appropriate",
+      "weapons",
+      "decent",
+      "task"
+    ],
+    "MMR": [
+      "activity",
+      "unwilling",
+      "partners",
+      "secured",
+      "leads",
+      "dared",
+      "weapons",
+      "dealing",
+      "stops",
+      "task"
+    ]
+  },
+  "stage08_snippets": [
+    "you’ll also report this to your regional security officer, yes?”",
+    "i’ll have an armed officer [person] the room with you at all times, and i’ll watch through the glass.” “",
+    "i’ve called the police, i’ll have you know.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.177672147995889,
+      "max_topic_prob": 0.7751778364181519,
+      "sentence": "The police?”"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.3870760534429599,
+      "max_topic_prob": 0.7751777172088623,
+      "sentence": "The police?”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.38257965056526205,
+      "max_topic_prob": 0.6903681755065918,
+      "sentence": "The woman called the police.”"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.39812435765673176,
+      "max_topic_prob": 0.6730687618255615,
+      "sentence": "Did you call the police?”"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.007965056526207605,
+      "max_topic_prob": 0.6683098077774048,
+      "sentence": "They’d decided to call the police."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.6485097636176773,
+      "max_topic_prob": 0.659182608127594,
+      "sentence": "Then I told the police exactly what he told me to say.” “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6662390029325513,
+      "max_topic_prob": 0.6276510953903198,
+      "sentence": "Call the police?” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.6667888563049853,
+      "max_topic_prob": 0.6034306287765503,
+      "sentence": "There’s no reason to call the police.”"
+    },
+    {
+      "sid": "BOOK_004_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8859397417503587,
+      "max_topic_prob": 0.6034238338470459,
+      "sentence": "Do you think being worried over another officer’s absence justifies a breach in regulations?”"
+    },
+    {
+      "sid": "BOOK_004_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.11119081779053085,
+      "max_topic_prob": 0.6027629375457764,
+      "sentence": "Some of her fellow officers, I take it."
+    },
+    {
+      "sid": "BOOK_004_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.0703012912482066,
+      "max_topic_prob": 0.5658814907073975,
+      "sentence": "The other officers are my colleagues.”"
+    },
+    {
+      "sid": "BOOK_004_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8884505021520803,
+      "max_topic_prob": 0.549286961555481,
+      "sentence": "I give an order, and because I’m your superior officer, you are supposed to obey it.” “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

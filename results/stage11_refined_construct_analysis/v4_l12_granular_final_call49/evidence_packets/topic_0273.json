@@ -1,0 +1,843 @@
+{
+  "topic_id": 273,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "charlotte",
+        "amelia",
+        "says",
+        "lady",
+        "said",
+        "zillions",
+        "ferquhar",
+        "insensitivity",
+        "fitter"
+      ],
+      "KeyBERT": [
+        "madam",
+        "engaged",
+        "speaking",
+        "asks",
+        "ma",
+        "awareness",
+        "apology",
+        "appreciate",
+        "ed",
+        "upset"
+      ],
+      "POS": [
+        "awareness",
+        "choices",
+        "treatment",
+        "apology",
+        "movies",
+        "explanation",
+        "upset",
+        "screen"
+      ],
+      "MMR": [
+        "importantly",
+        "awareness",
+        "choices",
+        "treatment",
+        "ed",
+        "repeated",
+        "upset",
+        "focused",
+        "speaking",
+        "screen"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve known you since you did your training here, [person],’ tom said sternly. ‘",
+      "i’ve asked allen to keep an eye on him during the day while [person] is otherwise engaged.",
+      "charlotte, if it’s okay with you, we’ll go back to my place after we’ve bought you a phone."
+    ],
+    "label_public": "Mentor Gives Firm Instructions"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "For Luke’s sake, she hoped this apparent twosome meant Felicia was coming to her senses.",
+        "max_topic_prob": 0.6039830446243286,
+        "normalized_position": 0.6546731022378236,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Brenda is expecting me.”",
+        "max_topic_prob": 0.5878533124923706,
+        "normalized_position": 0.022817025010969723,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "That being so, I found it extremely gratifying to witness Felicia being sent on her way after being rather heatedly reminded that any free time Marcus has available will be spent with you.” “",
+        "max_topic_prob": 0.5685279369354248,
+        "normalized_position": 0.663668275559456,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I thought I saw Felicia yesterday,” she mentioned casually. “",
+        "max_topic_prob": 0.5662217140197754,
+        "normalized_position": 0.660377358490566,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We barely know each other and if that isn’t enough, there’s Felicia to consider.” “",
+        "max_topic_prob": 0.5642708539962769,
+        "normalized_position": 0.2060114085125055,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 495
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Brenda asked me to take you around the house before she meets with you.",
+        "max_topic_prob": 0.5572437047958374,
+        "normalized_position": 0.025230364194822292,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I point to Nikki. “",
+        "max_topic_prob": 0.5847291946411133,
+        "normalized_position": 0.6556244041944709,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Nikki asks.",
+        "max_topic_prob": 0.584067702293396,
+        "normalized_position": 0.5651811248808389,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I know what will get your mind off of Nikki.” “",
+        "max_topic_prob": 0.5833529233932495,
+        "normalized_position": 0.7743088655862727,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Shelley will be with us, I promise.",
+        "max_topic_prob": 0.5720568895339966,
+        "normalized_position": 0.10927073403241182,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Shit, the first time I met Kiara, she thought I was an asshole.” “",
+        "max_topic_prob": 0.5699059367179871,
+        "normalized_position": 0.47902764537654907,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Kiara chimes in. “",
+        "max_topic_prob": 0.5604349374771118,
+        "normalized_position": 0.6375119161105816,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Gabby was right.",
+        "max_topic_prob": 0.5759716033935547,
+        "normalized_position": 0.906236512731981,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "And Gabby,’ Trish says after a pause. ‘",
+        "max_topic_prob": 0.6426175236701965,
+        "normalized_position": 0.9000256673511293,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Gabby peers at Claire. ‘",
+        "max_topic_prob": 0.6342185139656067,
+        "normalized_position": 0.10074435318275154,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Jesus, Claire …’ Gabby fights to keep her voice low enough that it doesn’t project to everyone in the room. ‘",
+        "max_topic_prob": 0.6220535039901733,
+        "normalized_position": 0.5038501026694046,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Gabby finds herself saying. ‘",
+        "max_topic_prob": 0.6190398931503296,
+        "normalized_position": 0.3343172484599589,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Gabby can’t make sense of what Claire has said.",
+        "max_topic_prob": 0.6108690500259399,
+        "normalized_position": 0.9812628336755647,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Olivia turns to Gabby. ‘",
+        "max_topic_prob": 0.6106767654418945,
+        "normalized_position": 0.8466375770020534,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "She was Celia’s friend.”",
+        "max_topic_prob": 0.5553697347640991,
+        "normalized_position": 0.9793541556379036,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Tell me about Celia and her climbing.”",
+        "max_topic_prob": 0.47785353660583496,
+        "normalized_position": 0.3006881948120699,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "We all spoke of Celia as though we knew her personally.",
+        "max_topic_prob": 0.45433416962623596,
+        "normalized_position": 0.6971942826892535,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 474
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Carlos’s out of town, Craggs would throw a fit, Rosalie only has a learner’s permit….",
+        "max_topic_prob": 0.4034203886985779,
+        "normalized_position": 0.9340391741662255,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Celia Azurri.",
+        "max_topic_prob": 0.4009722173213959,
+        "normalized_position": 0.5373213340391741,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Tch.",
+        "max_topic_prob": 0.29527413845062256,
+        "normalized_position": 0.5654843832715722,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 585
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Lauren,” Jenn said in a warning tone. “",
+        "max_topic_prob": 0.6165623664855957,
+        "normalized_position": 0.0932226456178552,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I guess,” Lauren said. “",
+        "max_topic_prob": 0.6107518076896667,
+        "normalized_position": 0.054980947196516056,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Wait,” Lauren said. “",
+        "max_topic_prob": 0.5918352007865906,
+        "normalized_position": 0.6762384322264562,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Lauren said.",
+        "max_topic_prob": 0.5880976319313049,
+        "normalized_position": 0.008029395753946652,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Lauren asked.",
+        "max_topic_prob": 0.5856913328170776,
+        "normalized_position": 0.6618127381600436,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Lauren asked.",
+        "max_topic_prob": 0.5856913328170776,
+        "normalized_position": 0.8077027762656506,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Princess moves out of the way and Casey, I still have a hard time remembering to call her Angel, hugs the both of us at the same time. “",
+        "max_topic_prob": 0.6107912063598633,
+        "normalized_position": 0.7709613966068355,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She’ll shit that you’re Sylvie’s niece.” “",
+        "max_topic_prob": 0.5942428708076477,
+        "normalized_position": 0.8796410130317187,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 427
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Sylvia is Ma’s best friend, well Sylvie to me.”",
+        "max_topic_prob": 0.5887885093688965,
+        "normalized_position": 0.8765674944676666,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 402
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I came to see how Casey is doing and if Princess needed me.”",
+        "max_topic_prob": 0.5852670073509216,
+        "normalized_position": 0.13646422424391444,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 599
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "My eyes question Princess without words, asking if she told her about the guy at X. I really don’t think she has because Casey being Casey would have asked about it flat out.",
+        "max_topic_prob": 0.5632845163345337,
+        "normalized_position": 0.5012294074256208,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Princess’s eyes flick back and forth, telling me no, Casey doesn’t know.",
+        "max_topic_prob": 0.5600380897521973,
+        "normalized_position": 0.501352348168183,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Sandy hadn’t given Asshole her real name.",
+        "max_topic_prob": 0.4171486496925354,
+        "normalized_position": 0.9574155653450808,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Abby, hey.” “",
+        "max_topic_prob": 0.6076289415359497,
+        "normalized_position": 0.3982122260668973,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Abby needs me… “Yeah.",
+        "max_topic_prob": 0.6007676720619202,
+        "normalized_position": 0.2645136485966936,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Abby, what do you mean?”",
+        "max_topic_prob": 0.5966229438781738,
+        "normalized_position": 0.8412149173394848,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Abby?” “",
+        "max_topic_prob": 0.5953179597854614,
+        "normalized_position": 0.7727797001153403,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Abby?”",
+        "max_topic_prob": 0.5939818620681763,
+        "normalized_position": 0.840157631680123,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Where the hell is Abby anyway? “",
+        "max_topic_prob": 0.572515606880188,
+        "normalized_position": 0.7411572472126106,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Hey, Jody.",
+        "max_topic_prob": 0.426539808511734,
+        "normalized_position": 0.8834791559444158,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Valerie?”",
+        "max_topic_prob": 0.6208467483520508,
+        "normalized_position": 0.3553686681009192,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 537
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Valerie knows a lot about injuries.",
+        "max_topic_prob": 0.4722593426704407,
+        "normalized_position": 0.3500880109524741,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 510
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Lyla would love to hear from you.",
+        "max_topic_prob": 0.4411284029483795,
+        "normalized_position": 0.9998044201056131,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Valerie asked.",
+        "max_topic_prob": 0.6572082042694092,
+        "normalized_position": 0.9027063296801611,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Valerie snickered. “",
+        "max_topic_prob": 0.6105200052261353,
+        "normalized_position": 0.22847237754417357,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t want to see anyone, not really, but Valerie wasn’t the kind of woman who’d leave you alone in your misery.",
+        "max_topic_prob": 0.5955824851989746,
+        "normalized_position": 0.9561619324535898,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Garrett, no more mooning over her.",
+        "max_topic_prob": 0.5869501829147339,
+        "normalized_position": 0.6746812793558488,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Angie and I have been working hard to move beyond her past with Garrett.”",
+        "max_topic_prob": 0.5830821990966797,
+        "normalized_position": 0.503690449563856,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m just glad you and Valerie weren’t there to see it.” “",
+        "max_topic_prob": 0.5822650790214539,
+        "normalized_position": 0.05535674345783941,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Sheila introduced Allie. “",
+        "max_topic_prob": 0.6213170289993286,
+        "normalized_position": 0.46837505554732634,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "And how is Miss Allie feeling?”",
+        "max_topic_prob": 0.619907796382904,
+        "normalized_position": 0.8712783291364242,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Allie guessed. “",
+        "max_topic_prob": 0.596096396446228,
+        "normalized_position": 0.2687009331950822,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Allie guessed. “",
+        "max_topic_prob": 0.596096396446228,
+        "normalized_position": 0.6290919863723893,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Allie guessed. “",
+        "max_topic_prob": 0.596096396446228,
+        "normalized_position": 0.9789660790993927,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "She could use this time to get to know Bradley better.",
+        "max_topic_prob": 0.586452841758728,
+        "normalized_position": 0.23803880906532365,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 9
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.005122257659224896,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.005729693292888439,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004693096208472274,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.003951622560172435,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005064963664391103,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.00846878841688294,
+        "n_sentences": 62
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.021753204713194356,
+        "n_sentences": 168
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.017133492252681765,
+        "n_sentences": 115
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00010323113451016826,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.00011326311020500623,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00010855405992184108,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0006406149903907751,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0005902026362384419,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 60
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "5.2",
+    "taxonomy_secondary_name": "Friends, Allies & Social Circles",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

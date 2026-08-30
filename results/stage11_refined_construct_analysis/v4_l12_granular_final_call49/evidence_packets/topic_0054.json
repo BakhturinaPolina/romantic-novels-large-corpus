@@ -1,0 +1,1110 @@
+{
+  "topic_id": 54,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "cake",
+        "cream",
+        "pie",
+        "butter",
+        "ice",
+        "dessert",
+        "soup",
+        "salad",
+        "bread",
+        "chicken"
+      ],
+      "KeyBERT": [
+        "meal",
+        "eaten",
+        "exquisite",
+        "parties",
+        "pieces",
+        "melted",
+        "tasted",
+        "giggled",
+        "decide",
+        "carved"
+      ],
+      "POS": [
+        "dump",
+        "melted",
+        "enormous",
+        "temperature",
+        "accustomed",
+        "comments",
+        "impressive",
+        "rings",
+        "parties",
+        "exquisite"
+      ],
+      "MMR": [
+        "dump",
+        "melted",
+        "polished",
+        "neatly",
+        "rings",
+        "exquisite",
+        "parties",
+        "eaten",
+        "carved",
+        "sticking"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll have the steak with boiled potatoes and green beans.” “",
+      "we’ll need a hazmat crew to clean up the mess he’ll make with the cake—it’s a two-person job.”",
+      "but i’ll get us some pie anyway.”"
+    ],
+    "label_public": "Ordering Food and Dessert"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I’ll see what I can find for breakfast in your cupboards.",
+        "max_topic_prob": 0.5935359001159668,
+        "normalized_position": 0.4993788819875776,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "You gonna make me, buttercup?”",
+        "max_topic_prob": 0.522933840751648,
+        "normalized_position": 0.2572557876905703,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Of course, she won’t be needing those for a good long while now that she’s got a bun in the oven.",
+        "max_topic_prob": 0.49821749329566956,
+        "normalized_position": 0.17684923771880293,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 402
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Cereal’s fine and I’ve got plenty of it.",
+        "max_topic_prob": 0.4659796357154846,
+        "normalized_position": 0.4997176736307171,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Did you know the cafeteria was serving goulash today?",
+        "max_topic_prob": 0.45936548709869385,
+        "normalized_position": 0.2574816487859966,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Delicious, sinfully sweet, incredibly tempting trouble, but trouble nonetheless.",
+        "max_topic_prob": 0.45183929800987244,
+        "normalized_position": 0.6015810276679842,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 651
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Baby, that was just the appetizer.”",
+        "max_topic_prob": 0.6028167009353638,
+        "normalized_position": 0.03920118343195266,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Now how about a biscuit?”",
+        "max_topic_prob": 0.5932464599609375,
+        "normalized_position": 0.2015532544378698,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It kind of makes me want pie.”",
+        "max_topic_prob": 0.5751910209655762,
+        "normalized_position": 0.3293269230769231,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Butter, egg, milk.",
+        "max_topic_prob": 0.5656953454017639,
+        "normalized_position": 0.603180473372781,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The usual Béchamel ingredients.”",
+        "max_topic_prob": 0.5524739027023315,
+        "normalized_position": 0.6033653846153846,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Gloria’s got a big spread planned for brunch.”",
+        "max_topic_prob": 0.5051044225692749,
+        "normalized_position": 0.8221153846153846,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Delicious.",
+        "max_topic_prob": 0.6001019477844238,
+        "normalized_position": 0.7964731814842028,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Here’s your sandwich.",
+        "max_topic_prob": 0.5152687430381775,
+        "normalized_position": 0.3100661278471712,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "No, baby, make your sandwich.",
+        "max_topic_prob": 0.4907763600349426,
+        "normalized_position": 0.29720793534166057,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "If I had to guess, I would say powder.",
+        "max_topic_prob": 0.4038526713848114,
+        "normalized_position": 0.659808963997061,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "I brought soup and fresh croissants.”",
+        "max_topic_prob": 0.6228621006011963,
+        "normalized_position": 0.656054279749478,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "It tastes even better.”",
+        "max_topic_prob": 0.5051835775375366,
+        "normalized_position": 0.6581419624217119,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "I only delivered the food.",
+        "max_topic_prob": 0.4773920178413391,
+        "normalized_position": 0.37995824634655534,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "If you know so much about croissants, perhaps you should be the one folding the dough.”",
+        "max_topic_prob": 0.4581368565559387,
+        "normalized_position": 0.48851774530271397,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "I only mentioned adding the fruit compote as a suggestion.” “",
+        "max_topic_prob": 0.4572291374206543,
+        "normalized_position": 0.48930062630480164,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Sounds delicious!’",
+        "max_topic_prob": 0.6535470485687256,
+        "normalized_position": 0.8467088793992048,
+        "tertile": "end",
+        "chapter_index": 74,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "There’s some carrot cake here – will you have a slice?’",
+        "max_topic_prob": 0.6409292817115784,
+        "normalized_position": 0.06552790457959064,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ve a vegetable soup and some of Donnelly’s brown bread and some cheese which comes from a farm about ten miles out the road.’ ‘",
+        "max_topic_prob": 0.6342236995697021,
+        "normalized_position": 0.6415844500073626,
+        "tertile": "middle",
+        "chapter_index": 56,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ve made stuffed peppers and salad.’ ‘",
+        "max_topic_prob": 0.627932608127594,
+        "normalized_position": 0.8465616256810484,
+        "tertile": "end",
+        "chapter_index": 74,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What kind of food were you thinking about?’ ‘",
+        "max_topic_prob": 0.625331461429596,
+        "normalized_position": 0.5028714475040494,
+        "tertile": "middle",
+        "chapter_index": 46,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’m making us toast and hot chocolate.’ ‘",
+        "max_topic_prob": 0.6077349185943604,
+        "normalized_position": 0.14460315122956854,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I order a Stoli and tonic and popovers with extra butter and give the waiter a look that says, “You want to make something of it?”",
+        "max_topic_prob": 0.6752050518989563,
+        "normalized_position": 0.07477185752134236,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I am having the casado —the house meal—a plate of chicken, rice, and beans.",
+        "max_topic_prob": 0.6261624693870544,
+        "normalized_position": 0.2346187812775979,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Then, after the children have eaten, the grown-ups sit together outside at the big picnic bench, munching on crackers and the Rice Krispie treats I’ve brought. “",
+        "max_topic_prob": 0.5896608829498291,
+        "normalized_position": 0.38460406240800704,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My dessert is a sweet jewel of mochi ice cream.",
+        "max_topic_prob": 0.5867978930473328,
+        "normalized_position": 0.7722990874300854,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "How about some big chocolate chip cookies?”",
+        "max_topic_prob": 0.5847379565238953,
+        "normalized_position": 0.34324403885781574,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It’s cheap and simple and so delicious I could weep. “",
+        "max_topic_prob": 0.5590360164642334,
+        "normalized_position": 0.23476596997350604,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "When the guards brought them food, they would share with each other.",
+        "max_topic_prob": 0.4293901324272156,
+        "normalized_position": 0.287303664921466,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "You tempt me like no other has.",
+        "max_topic_prob": 0.42421260476112366,
+        "normalized_position": 0.5916230366492147,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 904
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Sounds delicious.”",
+        "max_topic_prob": 0.694900393486023,
+        "normalized_position": 0.8297992330250394,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "This is delicious.” “",
+        "max_topic_prob": 0.6077755689620972,
+        "normalized_position": 0.06124520640649673,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "For dessert, ah, dessert was a memorable experience.",
+        "max_topic_prob": 0.6071140766143799,
+        "normalized_position": 0.41800135348522444,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "But I would have your word that only I relieve you of this delicious confection.” “",
+        "max_topic_prob": 0.540877640247345,
+        "normalized_position": 0.8224678547259192,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "There is chicken, cheese, bread, grapes, and white wine.” “",
+        "max_topic_prob": 0.5336796045303345,
+        "normalized_position": 0.8296864425896684,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Now I must pass the evening with a bunch of witless chits and their marriage-minded mamas, while eating stale cakes and drinking ratafia.”",
+        "max_topic_prob": 0.5298736691474915,
+        "normalized_position": 0.2740807579517257,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I’ll stick with chicken broth for now.”",
+        "max_topic_prob": 0.5798225402832031,
+        "normalized_position": 0.580517921454296,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Doesn’t Papa always bring you candy?”",
+        "max_topic_prob": 0.48484593629837036,
+        "normalized_position": 0.990053164122792,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Okay, now assemble the toppings, sprinkle with cheese, and put it in the oven.”",
+        "max_topic_prob": 0.681618332862854,
+        "normalized_position": 0.5369035358736698,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’m sure I still had a bit of pie there anyway. “",
+        "max_topic_prob": 0.6116504073143005,
+        "normalized_position": 0.4358050120151047,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It coincides with dessert.",
+        "max_topic_prob": 0.5984154343605042,
+        "normalized_position": 0.9828355647099211,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It was yummy. “",
+        "max_topic_prob": 0.5912339091300964,
+        "normalized_position": 0.5367318915207689,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Fetch these ingredients.”",
+        "max_topic_prob": 0.5886878967285156,
+        "normalized_position": 0.13474081702711982,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 495
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The turkey had been put in the oven at daybreak, Mom and Olivia were attending to the vegetables requiring roasting, and I was stirring the cranberry sauce Mom had put together.",
+        "max_topic_prob": 0.5824309587478638,
+        "normalized_position": 0.21301064194987984,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Pizza, cookies, ice cream.",
+        "max_topic_prob": 0.6615599989891052,
+        "normalized_position": 0.12120464082942484,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Dessert for brekkie sounds great!",
+        "max_topic_prob": 0.5978875160217285,
+        "normalized_position": 0.6353986669958035,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 396
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "They went through cake, brownies, and Rice Krispies treats like gluttons.",
+        "max_topic_prob": 0.5945852398872375,
+        "normalized_position": 0.8173290545544311,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I made Rice Krispies treats.”",
+        "max_topic_prob": 0.5924838781356812,
+        "normalized_position": 0.8318933596642805,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "See if I bake you anything else all month.”",
+        "max_topic_prob": 0.5886663794517517,
+        "normalized_position": 0.822759812392002,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Be good tonight and maybe I’ll feed you your cake.”",
+        "max_topic_prob": 0.581179141998291,
+        "normalized_position": 0.6084917304369292,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Some bread and butter.’ ‘",
+        "max_topic_prob": 0.6436209678649902,
+        "normalized_position": 0.12763078773301262,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Steak, onions, ale, bread and butter, and a pot of tea.’",
+        "max_topic_prob": 0.6280581951141357,
+        "normalized_position": 0.15694527961515334,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "And just one or two little sandwiches and cakes, since you looked close to fainting.",
+        "max_topic_prob": 0.5931640863418579,
+        "normalized_position": 0.6617558628983764,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "We would only need to purchase a bit of bread, some cheese, and an apple or two.’ ‘",
+        "max_topic_prob": 0.5881465673446655,
+        "normalized_position": 0.3257666867107637,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "The bread she’d ordered.",
+        "max_topic_prob": 0.5835742950439453,
+        "normalized_position": 0.20640408899579074,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "And with the bread,’ he added. ‘",
+        "max_topic_prob": 0.5766035318374634,
+        "normalized_position": 0.39266386049308477,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And ice cream.",
+        "max_topic_prob": 0.627142071723938,
+        "normalized_position": 0.2743049076320209,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Once this gets in the oven, I can help with the plates and stuff.”",
+        "max_topic_prob": 0.6011242866516113,
+        "normalized_position": 0.4825527150587796,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m making you some chicken cacciatore, and while it cooks, I got you that ice cream you like—” “That’s so nice of you, Kiki.”",
+        "max_topic_prob": 0.5985966920852661,
+        "normalized_position": 0.715245381601045,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Do we have any mayo? “",
+        "max_topic_prob": 0.5889996290206909,
+        "normalized_position": 0.452323194625863,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Peanut butter and strawberry jelly.",
+        "max_topic_prob": 0.5848684906959534,
+        "normalized_position": 0.4519499906699011,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "No sour cream and add some extra avocado, please.” “",
+        "max_topic_prob": 0.5793094635009766,
+        "normalized_position": 0.05280835976861355,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Are we doing dessert?”",
+        "max_topic_prob": 0.6526682376861572,
+        "normalized_position": 0.816609663278578,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1505
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "With cupcakes.",
+        "max_topic_prob": 0.645567774772644,
+        "normalized_position": 0.11464906787417506,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2380
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "We gotta have some cake first.”",
+        "max_topic_prob": 0.6413308382034302,
+        "normalized_position": 0.2381135892865745,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 2389
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I don’t want dessert.",
+        "max_topic_prob": 0.6378530263900757,
+        "normalized_position": 0.23556047979189748,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 2336
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Truffle fudge cheese cake, oven-warm cookie with ice cream… Oh!",
+        "max_topic_prob": 0.6295872926712036,
+        "normalized_position": 0.8169950382966424,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1513
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Anyone want a cream pie?”",
+        "max_topic_prob": 0.6253291964530945,
+        "normalized_position": 0.8171877258056747,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1517
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Pancakes and blueberry muffins, sliced ham, fried potatoes, scrambled eggs and a variety of other items for the morning meal.",
+        "max_topic_prob": 0.6160796880722046,
+        "normalized_position": 0.7325127589312519,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I delayed an answer by scooping up the crispy potatoes into a bowl.",
+        "max_topic_prob": 0.6155779361724854,
+        "normalized_position": 0.7433203242269588,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Don’t forget the butter, Connor,” I called over my shoulder. “",
+        "max_topic_prob": 0.5588147640228271,
+        "normalized_position": 0.7349144401080756,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Lemons and cinnamon.",
+        "max_topic_prob": 0.5185648202896118,
+        "normalized_position": 0.44881416991894324,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It was silly really, but I was making pancakes.",
+        "max_topic_prob": 0.5169457197189331,
+        "normalized_position": 0.7322125487841489,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Probably with ulterior motives for the appetizer and here’s-your-life-plan for dessert.",
+        "max_topic_prob": 0.6030313372612,
+        "normalized_position": 0.1191464986395532,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Honestly, I don’t know how you can make a meal without a clove of garlic in the house.”",
+        "max_topic_prob": 0.5560075044631958,
+        "normalized_position": 0.08692539023342404,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "And how do those taste?”",
+        "max_topic_prob": 0.5222445130348206,
+        "normalized_position": 0.19991407704425032,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You couldn’t use some pizza?",
+        "max_topic_prob": 0.5147062540054321,
+        "normalized_position": 0.7206071888872977,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I brought it for you to mix with this ground and these seeds.” “",
+        "max_topic_prob": 0.5077309012413025,
+        "normalized_position": 0.0025776886724903337,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I could stock it with protein bars and maybe some acai berries.",
+        "max_topic_prob": 0.4511604309082031,
+        "normalized_position": 0.3837892023485608,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 74
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.008445106805762544,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.008814703675918979,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.009543640465035572,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.005632708555890065,
+        "n_sentences": 116
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.005824647455548743,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.005432746346946422,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.011011904761904763,
+        "n_sentences": 74
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0056146572104018916,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.001294591484464902,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.001514692517418964,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0013095861707700367,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0014787851211466273,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0013192612137203166,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0014760147601476014,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0009074410163339383,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0003446493193175943,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 84
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

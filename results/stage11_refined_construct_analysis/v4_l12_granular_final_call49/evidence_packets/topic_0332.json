@@ -1,0 +1,916 @@
+{
+  "topic_id": 332,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "store",
+        "shopping",
+        "shop",
+        "hardware",
+        "shops",
+        "mall",
+        "grocery",
+        "groceries",
+        "shopped",
+        "street"
+      ],
+      "KeyBERT": [
+        "places",
+        "experience",
+        "items"
+      ],
+      "POS": [
+        "testing",
+        "inevitable",
+        "rings",
+        "appropriate",
+        "items",
+        "exact",
+        "problems",
+        "places",
+        "experience",
+        "entire"
+      ],
+      "MMR": [
+        "testing",
+        "rings",
+        "arranged",
+        "items",
+        "wandered",
+        "provide",
+        "afford",
+        "problems",
+        "places",
+        "experience"
+      ]
+    },
+    "stage08_snippets": [
+      "because that was the first time i've ever had fun grocery shopping.”",
+      "and now we’ve our own talkin’ shop in leinster house – we ignore their laws, too.”",
+      "[person], i don’t think i’ve ever been in a grocery store.”"
+    ],
+    "label_public": "First Time Inside A Grocery Store"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Why can’t we go to the malls instead?’",
+        "max_topic_prob": 0.6364052295684814,
+        "normalized_position": 0.4113433991482772,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Feeling pleasantly paparazzied I scuttled in through the entrance and went down to the coffee shop.",
+        "max_topic_prob": 0.5535173416137695,
+        "normalized_position": 0.6321138211382114,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "As she’d done nothing but shop ever since we’d got here, I’d been a bit taken aback, but she claimed there were still a million things left to buy.",
+        "max_topic_prob": 0.5425730347633362,
+        "normalized_position": 0.8363337204800619,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 457
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We walked into the Coffee Shoppee and I took in the decor bemusedly.",
+        "max_topic_prob": 0.5364590883255005,
+        "normalized_position": 0.048586914440572976,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "This is the famous all-night Monday cart-market.",
+        "max_topic_prob": 0.5196777582168579,
+        "normalized_position": 0.35549748354626404,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You spot peanut sellers and machine- ka -cold-water carts.",
+        "max_topic_prob": 0.4883870482444763,
+        "normalized_position": 0.3549167634533488,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "He parked the truck at the fairgrounds.",
+        "max_topic_prob": 0.2927584946155548,
+        "normalized_position": 0.558541859746679,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "However, rumor has it that there’s a pile of modernized equipment in the back of one of the storerooms, along with a couple of experts who are going to show us how it’s done.”",
+        "max_topic_prob": 0.43760019540786743,
+        "normalized_position": 0.8013508623808949,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "In a couple of them, you can even see piles of fabric and other trade goods, sort of the A.D. 1000 version of a stadium concourse.” “",
+        "max_topic_prob": 0.39953941106796265,
+        "normalized_position": 0.7944759377638403,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "The end result was part feng shui, part Zen, part hey-that’s-cool impulse buy.",
+        "max_topic_prob": 0.3728000819683075,
+        "normalized_position": 0.26800144735255094,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I felt like I was only in the library for a couple of hours, but I lost most of a day out here.",
+        "max_topic_prob": 0.363785058259964,
+        "normalized_position": 0.3649740682667953,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "What about the store?” “",
+        "max_topic_prob": 0.7721823453903198,
+        "normalized_position": 0.9588764742396028,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 377
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ve been spending a lot of time in the store.",
+        "max_topic_prob": 0.7364399433135986,
+        "normalized_position": 0.43947858472998136,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "We’ve got to get the store on the market.” “",
+        "max_topic_prob": 0.7337112426757812,
+        "normalized_position": 0.2042209807572936,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "What’s going on with the store?”",
+        "max_topic_prob": 0.7213402986526489,
+        "normalized_position": 0.027777777777777776,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Do you ever think about what you would do with the store if it were yours?”",
+        "max_topic_prob": 0.7177640199661255,
+        "normalized_position": 0.6320608317815022,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I loved making that store work, though.",
+        "max_topic_prob": 0.7163078784942627,
+        "normalized_position": 0.5775915580384854,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I wandered through the streets until I found a small market where I bought some groceries.",
+        "max_topic_prob": 0.6322104930877686,
+        "normalized_position": 0.9856115107913669,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "There, along with old grocery bags and a pair of snow boots, was exactly what I was looking for.",
+        "max_topic_prob": 0.5445180535316467,
+        "normalized_position": 0.16223021582733813,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "People were starting to populate the square and the sidewalk outside the bank, their daily routines just beginning.",
+        "max_topic_prob": 0.24152863025665283,
+        "normalized_position": 0.6325539568345324,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "And those damned chaps you bought at the store that make me want to curl up in a ball of frustrated desire every time I see you in them.",
+        "max_topic_prob": 0.41960465908050537,
+        "normalized_position": 0.2992884672398458,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "These brochures and those package discount cards have the website address on them.\" \"",
+        "max_topic_prob": 0.3107389807701111,
+        "normalized_position": 0.593536910761933,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I thought I’d come by and see how the store was doing.",
+        "max_topic_prob": 0.721409022808075,
+        "normalized_position": 0.22370967741935485,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Maybe a dress shop?",
+        "max_topic_prob": 0.6090438365936279,
+        "normalized_position": 0.25451612903225806,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "At the coffee shop.",
+        "max_topic_prob": 0.5918489694595337,
+        "normalized_position": 0.5275806451612903,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 372
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I can stop at the store and get some.” “",
+        "max_topic_prob": 0.564545750617981,
+        "normalized_position": 0.327741935483871,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He’d asked at the drugstore, and they’d dug up some cards in the storeroom.",
+        "max_topic_prob": 0.5554476976394653,
+        "normalized_position": 0.8064516129032258,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "His store has had a rough time since the mega home- improvement store opened up not twenty miles from here.”",
+        "max_topic_prob": 0.5551972985267639,
+        "normalized_position": 0.14403225806451614,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "We should get to shopping.",
+        "max_topic_prob": 0.6633937358856201,
+        "normalized_position": 0.3182396799418076,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I think that we should shop often.”",
+        "max_topic_prob": 0.6333279609680176,
+        "normalized_position": 0.35661029278050554,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "So we should shop quickly so that we can find food and then get to where you need for us to be for the reveal of whatever it is that I’m so very obviously missing.”",
+        "max_topic_prob": 0.6192521452903748,
+        "normalized_position": 0.3198763411529369,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "First stop will be a shop to get you a new outfit and, if I remember correctly, a bag from the place next door to carry it all in.”",
+        "max_topic_prob": 0.6042758226394653,
+        "normalized_position": 0.24458992544098926,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Pulling into a spot on the street, he peered at the store. “",
+        "max_topic_prob": 0.5984514951705933,
+        "normalized_position": 0.298236042916894,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Will it be as fun as clothing shopping was?",
+        "max_topic_prob": 0.5599058866500854,
+        "normalized_position": 0.3507910529187125,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’m going to check out the shops,” he said.",
+        "max_topic_prob": 0.7271461486816406,
+        "normalized_position": 0.8713166317183534,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Time for some shopping.” “",
+        "max_topic_prob": 0.6888630390167236,
+        "normalized_position": 0.6235514843836221,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Let’s go shopping.”",
+        "max_topic_prob": 0.6683540344238281,
+        "normalized_position": 0.6697936210131332,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "No more shops.",
+        "max_topic_prob": 0.6515730619430542,
+        "normalized_position": 0.4198212117867785,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "In a men’s clothing store?",
+        "max_topic_prob": 0.6447629332542419,
+        "normalized_position": 0.364970753779936,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Of shopping at everything from exclusive shops to tag sales.",
+        "max_topic_prob": 0.6396771669387817,
+        "normalized_position": 0.0047456130669903986,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I just need to get some water, and I have no idea where our waitress has run off to.",
+        "max_topic_prob": 0.3949600160121918,
+        "normalized_position": 0.07264185037947235,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 344
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "What in the world were they closed for?",
+        "max_topic_prob": 0.3501901924610138,
+        "normalized_position": 0.5204192265992049,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Weren’t you going to say something about the store?",
+        "max_topic_prob": 0.7642704844474792,
+        "normalized_position": 0.23972708947123586,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Come by my shop and see for yourself.” “",
+        "max_topic_prob": 0.6833048462867737,
+        "normalized_position": 0.27500387657001085,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 672
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Come by the shop, okay?",
+        "max_topic_prob": 0.6783686876296997,
+        "normalized_position": 0.10296169948829276,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Good thing the shop is closed.",
+        "max_topic_prob": 0.6704045534133911,
+        "normalized_position": 0.8846332764769732,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Oh, what a shop!",
+        "max_topic_prob": 0.6562935709953308,
+        "normalized_position": 0.2438362536827415,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The shop is gorgeous.",
+        "max_topic_prob": 0.6527757048606873,
+        "normalized_position": 0.2605830361296325,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 486
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "All the stores were an odd marriage of uninviting and begging me to enter, like they wanted my business but were too cool to as for it.",
+        "max_topic_prob": 0.7243684530258179,
+        "normalized_position": 0.09780834693401726,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I picked a place and stood in line, even though I didn’t have anything to buy.",
+        "max_topic_prob": 0.6333719491958618,
+        "normalized_position": 0.09897411984145489,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "In the near distance I could see a shopping center.",
+        "max_topic_prob": 0.5979517698287964,
+        "normalized_position": 0.09804150151550478,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The last time we spoke was the day at the supermarket.",
+        "max_topic_prob": 0.539207398891449,
+        "normalized_position": 0.6256703194217766,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I didn’t want to bother them, but I knew I needed to get an application; it was the reason I’d crossed the street, entered the shopping center, and chosen the store.",
+        "max_topic_prob": 0.537667989730835,
+        "normalized_position": 0.0986243879692236,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "If I kept looking, I might land a job at a place like the one I’d just left: a nice, big retail giant with loud music and cold air.",
+        "max_topic_prob": 0.5368984937667847,
+        "normalized_position": 0.10282117043599907,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "We were able to get a hold of Millicent Waters computer,” he explained.",
+        "max_topic_prob": 0.2842877507209778,
+        "normalized_position": 0.5986651189785258,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 468
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I wanted to get into stores, and I still do.",
+        "max_topic_prob": 0.7298183441162109,
+        "normalized_position": 0.09116331096196868,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Back to the store.”",
+        "max_topic_prob": 0.7040547728538513,
+        "normalized_position": 0.14821029082774048,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I’m done with the store.",
+        "max_topic_prob": 0.7021799087524414,
+        "normalized_position": 0.2934377330350485,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I wanted to know what people thought of the store.”",
+        "max_topic_prob": 0.7014032602310181,
+        "normalized_position": 0.38105891126025354,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I was so worried about the store.",
+        "max_topic_prob": 0.6833961009979248,
+        "normalized_position": 0.7136465324384788,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "A store may be more work than I was anticipating.” “",
+        "max_topic_prob": 0.6828135251998901,
+        "normalized_position": 0.14914243102162567,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "No doubt they’re talking shop.",
+        "max_topic_prob": 0.5856626629829407,
+        "normalized_position": 0.46997953149874916,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Whose bright idea was it to go to a bookstore to find a birthday present for a toddler?",
+        "max_topic_prob": 0.5110950469970703,
+        "normalized_position": 0.36570388901523765,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It has all kinds of food trucks, if you’re into that kind of thing.”",
+        "max_topic_prob": 0.4818841814994812,
+        "normalized_position": 0.26768251080282013,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’m sure it was the Marketing Department’s genius idea.",
+        "max_topic_prob": 0.4302713871002197,
+        "normalized_position": 0.3257903115760746,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The toy closet still has a few things left, but most of it is gone.",
+        "max_topic_prob": 0.3759971261024475,
+        "normalized_position": 0.9822606322492609,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "How many markets are there?” “",
+        "max_topic_prob": 0.3269599974155426,
+        "normalized_position": 0.29213099840800544,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 180
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.004061078622482131,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.004134810422842877,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0037576326914044154,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.003285271034860376,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.003880266075388027,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0036532385466034756,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.006013907160308213,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.038075838295205264,
+        "n_sentences": 243
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0008006405124099279,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0004885794552339074,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00014736221632773356,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00030998140111593303,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0005436752446538601,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00029846291598268916,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.000362844702467344,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 67
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

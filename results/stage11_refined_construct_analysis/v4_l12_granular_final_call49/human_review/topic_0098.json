@@ -1,0 +1,164 @@
+{
+  "topic_id": 98,
+  "label": "Stepping Out of The Shower",
+  "taxonomy_main_id": "2.1",
+  "taxonomy_main_name": "Attraction & Sexual Tension",
+  "taxonomy_secondary_id": "1.1",
+  "taxonomy_secondary_name": "Body Parts & Physical Reactions",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "shower",
+      "towel",
+      "tub",
+      "bath",
+      "water",
+      "showered",
+      "bathroom",
+      "stepped",
+      "towels",
+      "wrapped"
+    ],
+    "KeyBERT": [
+      "curtain",
+      "washed",
+      "dried",
+      "damp",
+      "wiping",
+      "flushed",
+      "spilled",
+      "cleaned",
+      "flush",
+      "dripping"
+    ],
+    "POS": [
+      "temperature",
+      "unlikely",
+      "longing",
+      "pathetic",
+      "curtain",
+      "stool",
+      "flush",
+      "task",
+      "breaths",
+      "brief"
+    ],
+    "MMR": [
+      "prompted",
+      "calming",
+      "noting",
+      "shed",
+      "draped",
+      "longing",
+      "washed",
+      "rushing",
+      "neatly",
+      "curtain"
+    ]
+  },
+  "stage08_snippets": [
+    "he opened the shower door and stepped in. “",
+    "he walked to the seat and stepped down beside where she was sitting, and reached for the towel on the floor, then dried his hair and handed it to her. \"",
+    "in the shower, he dried himself off and then stepped out of the shower with the towel wrapped around his waist."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8117724577201845,
+      "max_topic_prob": 0.5711422562599182,
+      "sentence": "Showered and dressed, Stefan waltzed out of his room."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.009367088607594937,
+      "max_topic_prob": 0.7145392894744873,
+      "sentence": "Maybe he was taking a shower.” “"
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6567766853932584,
+      "max_topic_prob": 0.7221528887748718,
+      "sentence": "He stepped from the tub with her."
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8016151685393258,
+      "max_topic_prob": 0.7126637697219849,
+      "sentence": "Shuddering, she flushed the toilet and moved to the shower to wash the feeling of disgust off."
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.45259831460674155,
+      "max_topic_prob": 0.6700934171676636,
+      "sentence": "Popping a couple of painkillers for her head, she went in to her private bath to take a hot shower."
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.453125,
+      "max_topic_prob": 0.6098852753639221,
+      "sentence": "She supposed it wouldВ’ve been more accurate to say it was a small shower squeezed beside the toilet and lavatory, but the entire room was about the size of a small shower and when she turned on the shower head, the spray covered the room as if she was standing in a dishwasher."
+    },
+    {
+      "sid": "BOOK_003_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.33339185393258425,
+      "max_topic_prob": 0.6052583456039429,
+      "sentence": "After glaring at the woman through the opaque material surrounding the shower for several moments, Sybil left and returned to their sleeping quarters."
+    },
+    {
+      "sid": "BOOK_003_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5212429775280899,
+      "max_topic_prob": 0.5925105810165405,
+      "sentence": "Feeling pleasantly tired, Sybil headed back to her quarters and a hot bath."
+    },
+    {
+      "sid": "BOOK_004_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2206060606060606,
+      "max_topic_prob": 0.7213271260261536,
+      "sentence": "Was someone else in the room, perhaps already bathing?"
+    },
+    {
+      "sid": "BOOK_004_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6347474747474747,
+      "max_topic_prob": 0.7210094928741455,
+      "sentence": "Had she given herself some relief in the shower?"
+    },
+    {
+      "sid": "BOOK_004_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.22707070707070706,
+      "max_topic_prob": 0.6707536578178406,
+      "sentence": "Snagging a towel she wrapped it around her shoulders and scurried back into the other room."
+    },
+    {
+      "sid": "BOOK_004_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.46585858585858586,
+      "max_topic_prob": 0.5994848012924194,
+      "sentence": "She became conscious of her nudity, the sticky wetness coating her inner thighs. “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

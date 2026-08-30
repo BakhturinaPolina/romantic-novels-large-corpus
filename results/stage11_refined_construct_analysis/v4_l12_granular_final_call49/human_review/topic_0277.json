@@ -1,0 +1,162 @@
+{
+  "topic_id": 277,
+  "label": "Promising to Handle The Lawyer",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "9.2",
+  "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "lawyer",
+      "attorney",
+      "law",
+      "lawyers",
+      "legal",
+      "firm",
+      "defense",
+      "counsel",
+      "appointed",
+      "advice"
+    ],
+    "KeyBERT": [
+      "involved",
+      "expect",
+      "impatiently",
+      "official",
+      "warned",
+      "begging",
+      "afford",
+      "stumbled",
+      "cost",
+      "worrying"
+    ],
+    "POS": [
+      "official",
+      "worrying",
+      "member",
+      "current",
+      "cost",
+      "process",
+      "worst",
+      "experience"
+    ],
+    "MMR": [
+      "impatiently",
+      "presented",
+      "worrying",
+      "afford",
+      "warned",
+      "begging",
+      "mumbled",
+      "process",
+      "expect",
+      "ended"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll talk to the lawyer tomorrow.",
+    "we’ll find a good lawyer to help.",
+    "you can count on me to deal with the legal trouble they’ll cause.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.013598326359832637,
+      "max_topic_prob": 0.8001534938812256,
+      "sentence": "Your lawyer."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.013448894202032277,
+      "max_topic_prob": 0.787873387336731,
+      "sentence": "Jesus, you sound like a lawyer.” “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.48438433950986254,
+      "max_topic_prob": 0.7825349569320679,
+      "sentence": "A lawyer?"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.013523610280932456,
+      "max_topic_prob": 0.7798463106155396,
+      "sentence": "I am a lawyer."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.008293484757919904,
+      "max_topic_prob": 0.7435104846954346,
+      "sentence": "You’d think a sharp lawyer like you would know that."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.013897190675433354,
+      "max_topic_prob": 0.7234610319137573,
+      "sentence": "Right now you need a lawyer.” “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.6880260137719969,
+      "max_topic_prob": 0.399969220161438,
+      "sentence": "Mediation has never come easily for me and I need all the help I can get."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.3277843836702338,
+      "max_topic_prob": 0.5004234313964844,
+      "sentence": "Somebody taking the law and using it for his own ends?"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.3265953230281411,
+      "max_topic_prob": 0.4540565609931946,
+      "sentence": "The law is a funny thing,” Claudia said. “"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8156956004756243,
+      "max_topic_prob": 0.3690727949142456,
+      "sentence": "Such a lot of fuss over a piece of real estate that was destined by federal law to go unclaimed by anyone."
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6916369401506144,
+      "max_topic_prob": 0.3583284020423889,
+      "sentence": "It’s important to establish legal boundaries of ownership, especially when you’re talking about gems and precious metals."
+    },
+    {
+      "sid": "BOOK_003_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7066983749504558,
+      "max_topic_prob": 0.3263050317764282,
+      "sentence": "The company property is fenced off, of course."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

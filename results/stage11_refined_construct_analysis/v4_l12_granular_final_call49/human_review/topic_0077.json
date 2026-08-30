@@ -1,0 +1,164 @@
+{
+  "topic_id": 77,
+  "label": "Haircut and Grooming Offered",
+  "taxonomy_main_id": "1.6",
+  "taxonomy_main_name": "Character Appearance & Self-Presentation",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "hair",
+      "blonde",
+      "blond",
+      "shave",
+      "shaved",
+      "brown",
+      "black",
+      "dark",
+      "haircut",
+      "short"
+    ],
+    "KeyBERT": [
+      "curled",
+      "patted",
+      "wrinkled",
+      "blowing",
+      "delicate",
+      "attractive",
+      "willing",
+      "insisted",
+      "bothering",
+      "lined"
+    ],
+    "POS": [
+      "extent",
+      "ends",
+      "contrast",
+      "overheard",
+      "inevitable",
+      "typical",
+      "annoying",
+      "slightest",
+      "desperation",
+      "treatment"
+    ],
+    "MMR": [
+      "neatly",
+      "wrinkled",
+      "ends",
+      "contrast",
+      "blowing",
+      "described",
+      "bothering",
+      "slightest",
+      "shaped",
+      "dried"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll send [person] in to help you finish dressing and repair your hair.",
+    "it’ll be good for the librarian to take down her hair and have some fun for a change.",
+    "iffen you want a haircut and shave, megan’ll do that for an extra two bits."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3737217229625039,
+      "max_topic_prob": 0.6225223541259766,
+      "sentence": "While he liked them both, the longer hair was more erotic."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.25668835864063627,
+      "max_topic_prob": 0.5923281908035278,
+      "sentence": "Nic was simply one of those guys who had to shave in the evening before going out on a date."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.08129325482904659,
+      "max_topic_prob": 0.5331666469573975,
+      "sentence": "The way he brushed his hair back and the single lock that flopped forward."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.2290052680508212,
+      "max_topic_prob": 0.5301011800765991,
+      "sentence": "Her eyes were light brown, and while her hair was darker than Katie’s, it wasn’t as dark as Brenna’s, even without the blond streaks she painted in every couple of months."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.06042764177254416,
+      "max_topic_prob": 0.5216320753097534,
+      "sentence": "Katie was mostly Irish with pale skin and reddish-brown hair."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.06053093688668526,
+      "max_topic_prob": 0.47877824306488037,
+      "sentence": "Francesca had the thick, dark hair from the Marcelli side of the family, but had also inherited hazel eyes and a tall, thin body from the O’Sheas."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.47579425113464446,
+      "max_topic_prob": 0.6600936651229858,
+      "sentence": "Tiny blonde hair still covered one hand while the other was smooth."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4508320726172466,
+      "max_topic_prob": 0.5921931266784668,
+      "sentence": "Hair removal” was written on it. “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.38855269793242564,
+      "max_topic_prob": 0.5638654232025146,
+      "sentence": "One was light-haired, while the other was dark like Dyne."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9069591527987897,
+      "max_topic_prob": 0.5448170900344849,
+      "sentence": "My hair was as short as yours when I was sent here."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9125063035804337,
+      "max_topic_prob": 0.5422822833061218,
+      "sentence": "I’ll let my hair grow."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9268784669692385,
+      "max_topic_prob": 0.5299364924430847,
+      "sentence": "The rumor is they liked to drag their mates about by the hair.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

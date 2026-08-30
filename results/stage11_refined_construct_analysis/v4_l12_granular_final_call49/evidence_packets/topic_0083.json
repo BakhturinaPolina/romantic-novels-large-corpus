@@ -1,0 +1,1143 @@
+{
+  "topic_id": 83,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "eat",
+        "hungry",
+        "food",
+        "eating",
+        "eaten",
+        "starving",
+        "something",
+        "appetite",
+        "you",
+        "ate"
+      ],
+      "KeyBERT": [
+        "eaten",
+        "meal",
+        "feeding",
+        "tasted",
+        "constantly",
+        "eagerly",
+        "admit",
+        "ye",
+        "previous",
+        "gotta"
+      ],
+      "POS": [
+        "regular",
+        "president",
+        "result",
+        "meal",
+        "latest",
+        "current",
+        "previous",
+        "bigger",
+        "difference",
+        "unable"
+      ],
+      "MMR": [
+        "eaten",
+        "feeding",
+        "skipped",
+        "regular",
+        "eagerly",
+        "president",
+        "meal",
+        "latest",
+        "warned",
+        "tasted"
+      ]
+    },
+    "stage08_snippets": [
+      "i've eaten every few hours.",
+      "of course, i’ve never eaten one.”",
+      "and then you'll return late again… you won't need to do that—be late—because you've eaten.\""
+    ],
+    "label_public": "Reassured About Eating Regularly"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m not very hungry now.",
+        "max_topic_prob": 0.7757102251052856,
+        "normalized_position": 0.7844890321239214,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Oh, I really was starving. “",
+        "max_topic_prob": 0.7561399936676025,
+        "normalized_position": 0.9047718058010188,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I really was starving.”",
+        "max_topic_prob": 0.7549786567687988,
+        "normalized_position": 0.9106975777107807,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Say, are you hungry?",
+        "max_topic_prob": 0.7447203993797302,
+        "normalized_position": 0.9060193367293897,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Wow, you really must have been hungry.”",
+        "max_topic_prob": 0.7267926931381226,
+        "normalized_position": 0.7271026094188585,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You look hungry,” he said.",
+        "max_topic_prob": 0.7241597175598145,
+        "normalized_position": 0.9061232976400874,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’m not hungry.”",
+        "max_topic_prob": 0.7969628572463989,
+        "normalized_position": 0.5530564121168148,
+        "tertile": "middle",
+        "chapter_index": 74,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Then I’ll go hungry because I’m not eating with you.’ ‘",
+        "max_topic_prob": 0.7854684591293335,
+        "normalized_position": 0.034796541507950904,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I don’t think I’m hungry.’ ‘",
+        "max_topic_prob": 0.7797862887382507,
+        "normalized_position": 0.061642179091843524,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’m starving.’ ‘",
+        "max_topic_prob": 0.7756340503692627,
+        "normalized_position": 0.2478082108954592,
+        "tertile": "begin",
+        "chapter_index": 31,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’m not hungry.’",
+        "max_topic_prob": 0.7596950531005859,
+        "normalized_position": 0.36534857004655663,
+        "tertile": "middle",
+        "chapter_index": 45,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Are you hungry?’ ‘",
+        "max_topic_prob": 0.7549547553062439,
+        "normalized_position": 0.29076727734445856,
+        "tertile": "begin",
+        "chapter_index": 37,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Go ahead, eat what you want.”",
+        "max_topic_prob": 0.7438876032829285,
+        "normalized_position": 0.19341126461211477,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You should eat if you plan on allowing me to feed from you again,” he suggested. “",
+        "max_topic_prob": 0.6993046998977661,
+        "normalized_position": 0.30782855118668084,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sven is eating with me.",
+        "max_topic_prob": 0.6192033886909485,
+        "normalized_position": 0.4991144172865746,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But you don’t feed from me.”",
+        "max_topic_prob": 0.6147656440734863,
+        "normalized_position": 0.11335458731845555,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It explained why he’d been told to eat the other food.",
+        "max_topic_prob": 0.5820425748825073,
+        "normalized_position": 0.19482819695359546,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "My body immediately tells me when the person I feed from is sick.”",
+        "max_topic_prob": 0.5807397961616516,
+        "normalized_position": 0.31172511512575274,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Lady gave me food.",
+        "max_topic_prob": 0.6331599950790405,
+        "normalized_position": 0.6361101429069362,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Good food.”",
+        "max_topic_prob": 0.6304534673690796,
+        "normalized_position": 0.6364586964098989,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I have to feed the teenager I look after, don’t I?”",
+        "max_topic_prob": 0.6187134385108948,
+        "normalized_position": 0.9762983617985361,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Dagan asks, and I think back to the bad, almost stale, food that was served yesterday morning and decide my stomach can wait. “",
+        "max_topic_prob": 0.6133943796157837,
+        "normalized_position": 0.41199024050191707,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I will find us some food and take some to the others.",
+        "max_topic_prob": 0.6118232011795044,
+        "normalized_position": 0.19518996165911467,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m starving, and you promised me Chinese tonight.",
+        "max_topic_prob": 0.603602409362793,
+        "normalized_position": 0.951551063088184,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You have to eat.’",
+        "max_topic_prob": 0.7523083686828613,
+        "normalized_position": 0.1656998363825673,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You’re not starving yourself, are ya?’",
+        "max_topic_prob": 0.7251121997833252,
+        "normalized_position": 0.37111408597352374,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "If it’s okay, I might eat in tonight.’ ‘",
+        "max_topic_prob": 0.7129316329956055,
+        "normalized_position": 0.5231295552580694,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m starving to death out here.’ ‘",
+        "max_topic_prob": 0.7080612778663635,
+        "normalized_position": 0.8195745946749963,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m bloody starving.’ ‘",
+        "max_topic_prob": 0.6962295770645142,
+        "normalized_position": 0.07794139521047151,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Anyway, they’re all waiting for me to eat, so I better go.’",
+        "max_topic_prob": 0.6532036066055298,
+        "normalized_position": 0.41543953592146365,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He’s hungry.”",
+        "max_topic_prob": 0.7518328428268433,
+        "normalized_position": 0.023282442748091603,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I didn’t want to eat, my stomach could barely hold down its own acid, so I went to the dining hall to help with the injured.",
+        "max_topic_prob": 0.5704155564308167,
+        "normalized_position": 0.6971374045801527,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Damn it, I knew I should have eaten something before I came tonight, but Mila forbade it, she said the last thing a woman in an exquisite gown wants is to look bloated.",
+        "max_topic_prob": 0.5274063348770142,
+        "normalized_position": 0.16927480916030535,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "But he refuses to eat and drink until he sees you.",
+        "max_topic_prob": 0.48720210790634155,
+        "normalized_position": 0.9125954198473283,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Come to think of it, I’m pretty hungry myself.”",
+        "max_topic_prob": 0.8168902397155762,
+        "normalized_position": 0.8074558032282859,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m hungry.”",
+        "max_topic_prob": 0.7879453897476196,
+        "normalized_position": 0.1799897514732257,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m hungry.”",
+        "max_topic_prob": 0.7879453897476196,
+        "normalized_position": 0.5557263643351268,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m hungry.” “",
+        "max_topic_prob": 0.7848809957504272,
+        "normalized_position": 0.7176530873686907,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m not hungry per se.” “",
+        "max_topic_prob": 0.7745399475097656,
+        "normalized_position": 0.9090443248782988,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What are you eating?” “",
+        "max_topic_prob": 0.7614603042602539,
+        "normalized_position": 0.5627722264924417,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "He’s hungry.”",
+        "max_topic_prob": 0.7518330216407776,
+        "normalized_position": 0.5594964701879731,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Thanks for thinking of me, but I’ve already eaten.”",
+        "max_topic_prob": 0.7316849827766418,
+        "normalized_position": 0.4050352981202688,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I don’t want any delay in my meals.”",
+        "max_topic_prob": 0.6800570487976074,
+        "normalized_position": 0.9701454452666497,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "What are you feeding him?” “",
+        "max_topic_prob": 0.6437034606933594,
+        "normalized_position": 0.7264608318448584,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Don’t you fall face-first into your food with all that weight on your chest, Young?” “",
+        "max_topic_prob": 0.5822488069534302,
+        "normalized_position": 0.40537552096623286,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m not going to choke down any more of this hospital crap you call food.",
+        "max_topic_prob": 0.5556644201278687,
+        "normalized_position": 0.4048651866972867,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Will you not eat?’",
+        "max_topic_prob": 0.7304861545562744,
+        "normalized_position": 0.8435777287761852,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Hungry?’",
+        "max_topic_prob": 0.719975471496582,
+        "normalized_position": 0.48111907386990077,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Hungry?",
+        "max_topic_prob": 0.7100474834442139,
+        "normalized_position": 0.4815325248070562,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "You eat so little when we are at table.’ ‘",
+        "max_topic_prob": 0.6599277853965759,
+        "normalized_position": 0.45948180815876516,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I have not eaten for two days straight.’",
+        "max_topic_prob": 0.6347385048866272,
+        "normalized_position": 0.8472987872105844,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Best eat before it spoils.’",
+        "max_topic_prob": 0.6049641966819763,
+        "normalized_position": 0.17130650496141125,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Something to eat.",
+        "max_topic_prob": 0.632623016834259,
+        "normalized_position": 0.2874238925047239,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Only more hunger.",
+        "max_topic_prob": 0.6246956586837769,
+        "normalized_position": 0.6663867310518581,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Food’s good,” Sage mused. “",
+        "max_topic_prob": 0.5894660949707031,
+        "normalized_position": 0.32857442788158725,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "It’s just a meal with a grieving man.” “",
+        "max_topic_prob": 0.5695773363113403,
+        "normalized_position": 0.3205962628595423,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 368
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I still can’t cook to save my life but I eat well on Thursdays.”",
+        "max_topic_prob": 0.6237745881080627,
+        "normalized_position": 0.17071853052404107,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Besides, if what this guy says is true and he can make homemade spaghetti, then I don’t want to overload my stomach with real food until then.",
+        "max_topic_prob": 0.5276148319244385,
+        "normalized_position": 0.04862236628849271,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I’m going to head home and eat my frozen processed meat byproduct pizza.”",
+        "max_topic_prob": 0.5216739177703857,
+        "normalized_position": 0.046461372231226365,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Do you always eat processed food?",
+        "max_topic_prob": 0.4933350384235382,
+        "normalized_position": 0.012695840086439762,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m starving.”",
+        "max_topic_prob": 0.8016140460968018,
+        "normalized_position": 0.22296593782537558,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But I got hungry.”",
+        "max_topic_prob": 0.7677817344665527,
+        "normalized_position": 0.21805741484456345,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Are you hungry?",
+        "max_topic_prob": 0.7377270460128784,
+        "normalized_position": 0.4484605087014726,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m starving.",
+        "max_topic_prob": 0.7267163395881653,
+        "normalized_position": 0.2106202588130299,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Yeah, I could eat.”",
+        "max_topic_prob": 0.7251623868942261,
+        "normalized_position": 0.2110664881749219,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I could use something to eat myself.”",
+        "max_topic_prob": 0.7250401973724365,
+        "normalized_position": 0.42555406812434926,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I'm not really hungry.\" \"",
+        "max_topic_prob": 0.8166971802711487,
+        "normalized_position": 0.5346670900815074,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You're not going to eat?\" \"",
+        "max_topic_prob": 0.7685284614562988,
+        "normalized_position": 0.4590875410183127,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You hungry?\" \"",
+        "max_topic_prob": 0.7635557651519775,
+        "normalized_position": 0.3317455276807452,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You sure you're not hungry?\"",
+        "max_topic_prob": 0.7634605169296265,
+        "normalized_position": 0.5379485550968561,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I'm hungry.",
+        "max_topic_prob": 0.7576331496238708,
+        "normalized_position": 0.5039695141314703,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Are you hungry?\" \"",
+        "max_topic_prob": 0.749393880367279,
+        "normalized_position": 0.26643378850428706,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 459
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I’ll have some food brought up to you.”",
+        "max_topic_prob": 0.7071082592010498,
+        "normalized_position": 0.8368376787216149,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Come sit and have a bite to eat.”",
+        "max_topic_prob": 0.6925909519195557,
+        "normalized_position": 0.14816372301654052,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "That one might be too strong if you haven’t eaten today.”",
+        "max_topic_prob": 0.6396543979644775,
+        "normalized_position": 0.8361368096439585,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I’ve heard her say she thinks I need meat on my bones.",
+        "max_topic_prob": 0.4972918629646301,
+        "normalized_position": 0.07401177460050462,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It would be foolish to forgo a beautifully placed meal in order to prove a point, but he was going to.",
+        "max_topic_prob": 0.482217013835907,
+        "normalized_position": 0.14872441827866553,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Not unless they wished to feast on bugs, worms, and other sort of small creatures.",
+        "max_topic_prob": 0.39576804637908936,
+        "normalized_position": 0.23479114101485843,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’ll eat.”",
+        "max_topic_prob": 0.7636018991470337,
+        "normalized_position": 0.2912117035937666,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Are you hungry?”",
+        "max_topic_prob": 0.7570508718490601,
+        "normalized_position": 0.5666277960351956,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Go ahead and eat.",
+        "max_topic_prob": 0.7474006414413452,
+        "normalized_position": 0.41959079826142265,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m really not hungry.",
+        "max_topic_prob": 0.7325351238250732,
+        "normalized_position": 0.5673698717269161,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m starving.",
+        "max_topic_prob": 0.7267162799835205,
+        "normalized_position": 0.21732216686101982,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Eat.”",
+        "max_topic_prob": 0.7212026119232178,
+        "normalized_position": 0.2833669034241493,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You hungry?” “",
+        "max_topic_prob": 0.7609232068061829,
+        "normalized_position": 0.33541147132169574,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Weren’t you guys just saying you were hungry or something?”",
+        "max_topic_prob": 0.6860910058021545,
+        "normalized_position": 0.8937655860349127,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "We were eating hot dogs in front of the TV then , he thought.",
+        "max_topic_prob": 0.47435057163238525,
+        "normalized_position": 0.5122194513715711,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 135
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.005385996409335727,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004177234074295092,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.00510258318273626,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.00448239060832444,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.008547008547008548,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.004703668861712135,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.004767426877979642,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003848845346396081,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0007541478129713424,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0007671653241273494,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0008456659619450317,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0013771733516956446,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0015538831845464795,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0010884353741496598,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.000847637211273575,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.001524390243902439,
+        "n_sentences": 11
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 87
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

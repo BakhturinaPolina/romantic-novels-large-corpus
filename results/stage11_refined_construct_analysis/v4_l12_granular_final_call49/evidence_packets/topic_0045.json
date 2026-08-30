@@ -1,0 +1,1121 @@
+{
+  "topic_id": 45,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fine",
+        "okay",
+        "everything",
+        "right",
+        "be",
+        "all",
+        "honey",
+        "ok",
+        "will",
+        "alright"
+      ],
+      "KeyBERT": [
+        "ok",
+        "assured",
+        "assure",
+        "smoothly",
+        "uh",
+        "incredibly"
+      ],
+      "POS": [
+        "problems",
+        "sir",
+        "lord"
+      ],
+      "MMR": [
+        "smoothly",
+        "assure",
+        "acknowledged",
+        "injured",
+        "ms",
+        "appreciate",
+        "assured",
+        "problems",
+        "repeated",
+        "urge"
+      ]
+    },
+    "stage08_snippets": [
+      "we’ll be ok.” “",
+      "nadines : you’ll be ok?",
+      "ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great."
+    ],
+    "label_public": "Reassured Everything Will Be Fine"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I'm fine.\"",
+        "max_topic_prob": 0.8199071884155273,
+        "normalized_position": 0.32374001652437345,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I'll be fine.\" \"",
+        "max_topic_prob": 0.8073031306266785,
+        "normalized_position": 0.5391076838336546,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "You are well.\"",
+        "max_topic_prob": 0.7085508108139038,
+        "normalized_position": 0.25048196089231617,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I'm fine,\" Amber replied quietly. \"",
+        "max_topic_prob": 0.6507164239883423,
+        "normalized_position": 0.557422197741669,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I'm okay now.",
+        "max_topic_prob": 0.6502516269683838,
+        "normalized_position": 0.9836133296612504,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Your wound…'\" \"I'm fine.\"",
+        "max_topic_prob": 0.6497110724449158,
+        "normalized_position": 0.1027265216193886,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Is everything okay?” “",
+        "max_topic_prob": 0.7827494144439697,
+        "normalized_position": 0.423247453565009,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Are you okay?” “",
+        "max_topic_prob": 0.7522211670875549,
+        "normalized_position": 0.865787896944278,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Just fine.”",
+        "max_topic_prob": 0.7400708198547363,
+        "normalized_position": 0.6353505092869982,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Are you okay now?”",
+        "max_topic_prob": 0.7264650464057922,
+        "normalized_position": 0.5440383463151588,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 376
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Are you okay now?”",
+        "max_topic_prob": 0.7264650464057922,
+        "normalized_position": 0.7984421809466746,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Fine.”",
+        "max_topic_prob": 0.7149267196655273,
+        "normalized_position": 0.9020970641102457,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Everyone’s all right.” “",
+        "max_topic_prob": 0.7957503795623779,
+        "normalized_position": 0.7991387559808613,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "You’re doing fine.” “",
+        "max_topic_prob": 0.771308183670044,
+        "normalized_position": 0.1570334928229665,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "It’s going to be all right.’",
+        "max_topic_prob": 0.7641473412513733,
+        "normalized_position": 0.35492822966507176,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 416
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Are you okay?”",
+        "max_topic_prob": 0.7631165385246277,
+        "normalized_position": 0.5595215311004784,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "We’ll be fine.”",
+        "max_topic_prob": 0.7567699551582336,
+        "normalized_position": 0.7166507177033493,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "He’s fine.” “",
+        "max_topic_prob": 0.7384381294250488,
+        "normalized_position": 0.7371291866028709,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Are you okay?\"",
+        "max_topic_prob": 0.7496550679206848,
+        "normalized_position": 0.5673776662484317,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "He's okay.\" \"",
+        "max_topic_prob": 0.7217544317245483,
+        "normalized_position": 0.9036386449184441,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You're going to be okay.",
+        "max_topic_prob": 0.6639891862869263,
+        "normalized_position": 0.4923462986198243,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Are you okay, Hideki?\"",
+        "max_topic_prob": 0.5801354646682739,
+        "normalized_position": 0.49159347553324967,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "The water is fine.\"",
+        "max_topic_prob": 0.569003164768219,
+        "normalized_position": 0.9284818067754078,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 491
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "It's okay.",
+        "max_topic_prob": 0.5513718128204346,
+        "normalized_position": 0.23814303638644918,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Are you okay?”",
+        "max_topic_prob": 0.7631165385246277,
+        "normalized_position": 0.1372451516658379,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Are you okay?”",
+        "max_topic_prob": 0.7631165385246277,
+        "normalized_position": 0.29835902536051717,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Are you sure you’re okay?”",
+        "max_topic_prob": 0.7527886033058167,
+        "normalized_position": 0.3030830432620587,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Everything all right?” “",
+        "max_topic_prob": 0.7289191484451294,
+        "normalized_position": 0.20363003480855296,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You sure you’re okay?”",
+        "max_topic_prob": 0.7281123399734497,
+        "normalized_position": 0.25236200895077077,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Are you guys okay?”",
+        "max_topic_prob": 0.7265156507492065,
+        "normalized_position": 0.5914967677772253,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m fine.” “",
+        "max_topic_prob": 0.8424674272537231,
+        "normalized_position": 0.8363838047698281,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Everything’s just fine.” “",
+        "max_topic_prob": 0.8063307404518127,
+        "normalized_position": 0.6193843594009983,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m okay.” “",
+        "max_topic_prob": 0.799829363822937,
+        "normalized_position": 0.9912645590682196,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It’ll be fine.”",
+        "max_topic_prob": 0.7865979671478271,
+        "normalized_position": 0.48765945646145314,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Everything is going to be fine.",
+        "max_topic_prob": 0.7649240493774414,
+        "normalized_position": 0.5433998890737659,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Everything okay?”",
+        "max_topic_prob": 0.7552235126495361,
+        "normalized_position": 0.31045479755962285,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Are you going to be okay?\" \"",
+        "max_topic_prob": 0.7844774723052979,
+        "normalized_position": 0.8145435521841485,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1186
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Are you alright?\" \"",
+        "max_topic_prob": 0.7775598764419556,
+        "normalized_position": 0.6790478681663615,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 668
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You're going to be okay.\" ***",
+        "max_topic_prob": 0.7653314471244812,
+        "normalized_position": 0.5357049437614438,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I'm fine.",
+        "max_topic_prob": 0.7399376630783081,
+        "normalized_position": 0.2879937222076903,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1101
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I'm fine.",
+        "max_topic_prob": 0.7399376630783081,
+        "normalized_position": 0.9019094951608684,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1520
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You going to be alright?",
+        "max_topic_prob": 0.7331357002258301,
+        "normalized_position": 0.8574417996337954,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1350
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Will you be all right?”",
+        "max_topic_prob": 0.7912806272506714,
+        "normalized_position": 0.30204879707557597,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 487
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’ll be fine.",
+        "max_topic_prob": 0.7095137238502502,
+        "normalized_position": 0.3030689449970246,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Are you all right?”",
+        "max_topic_prob": 0.6968164443969727,
+        "normalized_position": 0.07192042846212701,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Are you all right?”",
+        "max_topic_prob": 0.6968164443969727,
+        "normalized_position": 0.2960129218736717,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 416
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "We’ll be okay.",
+        "max_topic_prob": 0.6810792684555054,
+        "normalized_position": 0.7434327977556746,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 452
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Are you all right?” “",
+        "max_topic_prob": 0.6642268300056458,
+        "normalized_position": 0.23973476154042336,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I am so very, very sorry, but all shall be well.",
+        "max_topic_prob": 0.6141352653503418,
+        "normalized_position": 0.2641509433962264,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "And, unbelievably enough, am in fine health even now, despite my near-endless wait outside your gates.” “",
+        "max_topic_prob": 0.5986102223396301,
+        "normalized_position": 0.03650866697346219,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Yes, well, just don’t expect that I shall call you ‘my darling’ and I’m sure we will be fine henceforth.”",
+        "max_topic_prob": 0.588564395904541,
+        "normalized_position": 0.6758705322902285,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "All right, then.”",
+        "max_topic_prob": 0.5453794598579407,
+        "normalized_position": 0.7211228716060746,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Fine, fine.",
+        "max_topic_prob": 0.5385739207267761,
+        "normalized_position": 0.08620954134069643,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Well, well.”",
+        "max_topic_prob": 0.5276796221733093,
+        "normalized_position": 0.9700874367234238,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Everything is okay.” “",
+        "max_topic_prob": 0.8287034034729004,
+        "normalized_position": 0.749023691746941,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Okay.”",
+        "max_topic_prob": 0.6833864450454712,
+        "normalized_position": 0.25618328560270764,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You are doing okay.",
+        "max_topic_prob": 0.6677146553993225,
+        "normalized_position": 0.2986201510023431,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Okay.” “",
+        "max_topic_prob": 0.6532278656959534,
+        "normalized_position": 0.8396250976308253,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Kait, are you okay?”",
+        "max_topic_prob": 0.6381075382232666,
+        "normalized_position": 0.4696693569382973,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I need to know you made it okay.”",
+        "max_topic_prob": 0.6374357342720032,
+        "normalized_position": 0.20958083832335328,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I’m fine.” “",
+        "max_topic_prob": 0.8424674272537231,
+        "normalized_position": 0.15595385249278945,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Everything’s going fine.”",
+        "max_topic_prob": 0.798816442489624,
+        "normalized_position": 0.3273588792748249,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It’ll be fine.”",
+        "max_topic_prob": 0.7865979671478271,
+        "normalized_position": 0.6407086938607334,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Is everything okay?” “",
+        "max_topic_prob": 0.7827494144439697,
+        "normalized_position": 0.11557478368355995,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Are you okay?”",
+        "max_topic_prob": 0.7631165981292725,
+        "normalized_position": 0.21590440873506386,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Are you okay?”",
+        "max_topic_prob": 0.7631165981292725,
+        "normalized_position": 0.3757725587144623,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It will be okay.",
+        "max_topic_prob": 0.710462749004364,
+        "normalized_position": 0.4378639397812811,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Okay, okay.”",
+        "max_topic_prob": 0.6731453537940979,
+        "normalized_position": 0.373952563556313,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It will be okay,” he finally managed. “",
+        "max_topic_prob": 0.6608894467353821,
+        "normalized_position": 0.34668370970032664,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I wanted to make sure you were okay.” “",
+        "max_topic_prob": 0.6386752724647522,
+        "normalized_position": 0.9434739383610282,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Everything okay up there, Justin?”",
+        "max_topic_prob": 0.5886427164077759,
+        "normalized_position": 0.29427638119585287,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It’s okay.",
+        "max_topic_prob": 0.5652129054069519,
+        "normalized_position": 0.33887231927283057,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Fine, fine,\" I say. \"",
+        "max_topic_prob": 0.6586356163024902,
+        "normalized_position": 0.42885973763874874,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 839
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "It's alright, dear.",
+        "max_topic_prob": 0.6023778915405273,
+        "normalized_position": 0.822401614530777,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1619
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "It's fine.",
+        "max_topic_prob": 0.5865457057952881,
+        "normalized_position": 0.16448032290615539,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "It's fine.",
+        "max_topic_prob": 0.5865457057952881,
+        "normalized_position": 0.45610494450050454,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 893
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Is that all I'm good for now?",
+        "max_topic_prob": 0.551001787185669,
+        "normalized_position": 0.6024217961654894,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1183
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Um... I don't think this is fine.",
+        "max_topic_prob": 0.49114322662353516,
+        "normalized_position": 0.35872855701311807,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 700
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’ll be fine.”",
+        "max_topic_prob": 0.7865979671478271,
+        "normalized_position": 0.8326639892904953,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s going to be fine.” “",
+        "max_topic_prob": 0.7846642136573792,
+        "normalized_position": 0.29852744310575635,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Fine.”",
+        "max_topic_prob": 0.7149266004562378,
+        "normalized_position": 0.05488621151271754,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s going to be fine.",
+        "max_topic_prob": 0.7112422585487366,
+        "normalized_position": 0.3068942436412316,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s going to be fine,” he tried to reassure me. “",
+        "max_topic_prob": 0.6923447847366333,
+        "normalized_position": 0.46251673360107093,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s all going to be fine, bro,” he tried to reassure me. “",
+        "max_topic_prob": 0.6910300254821777,
+        "normalized_position": 0.29116465863453816,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Are you all right, my lady?”",
+        "max_topic_prob": 0.6142208576202393,
+        "normalized_position": 0.6556329849012776,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Are you unwell milady?",
+        "max_topic_prob": 0.517644464969635,
+        "normalized_position": 0.5185830429732868,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 11
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.009780775716694773,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.010465724751439037,
+        "n_sentences": 40
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.01078167115902965,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.00918939833623525,
+        "n_sentences": 95
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.009111894059045073,
+        "n_sentences": 75
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.010037641154328732,
+        "n_sentences": 40
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.013689062718256739,
+        "n_sentences": 98
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.011009174311926606,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0035460992907801418,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0030737704918032786,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.002863278453829635,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0005839416058394161,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0012406947890818859,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0036322995250069852,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.003041825095057034,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 86
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "9.2",
+    "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

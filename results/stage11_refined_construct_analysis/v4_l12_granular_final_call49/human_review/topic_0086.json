@@ -1,0 +1,159 @@
+{
+  "topic_id": 86,
+  "label": "First Name Used at Last",
+  "taxonomy_main_id": "4.2",
+  "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+  "taxonomy_secondary_id": "9.1",
+  "taxonomy_secondary_name": "Dialogue Delivery & Speech Tags",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "name",
+      "know",
+      "names",
+      "your",
+      "nickname",
+      "what",
+      "don",
+      "is",
+      "real",
+      "knew"
+    ],
+    "KeyBERT": [
+      "embarrassment",
+      "shout",
+      "painful",
+      "concerned",
+      "dr",
+      "repeated",
+      "flushed",
+      "introduced",
+      "example"
+    ],
+    "POS": [
+      "official",
+      "example",
+      "curtain",
+      "actual",
+      "embarrassment",
+      "painful"
+    ],
+    "MMR": [
+      "prodded",
+      "example",
+      "curtain",
+      "shout",
+      "embarrassment",
+      "flushed",
+      "repeated",
+      "asks",
+      "dr",
+      "admit"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ve known you for two whole years, and that is the first time you’ve ever called me by my first name.”",
+    "you’ve outgrown that nickname.” “",
+    "just between you and me, i’ve been working on a catchy superhero name."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6620263763868537,
+      "max_topic_prob": 0.7188297510147095,
+      "sentence": "Your name?\""
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7755913753401716,
+      "max_topic_prob": 0.6360101103782654,
+      "sentence": "I know him."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.14779150094201382,
+      "max_topic_prob": 0.6200201511383057,
+      "sentence": "I was named for my great-grandfather.\" \""
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7813481264391878,
+      "max_topic_prob": 0.6096669435501099,
+      "sentence": "I may not have known him for long, Rox, but I do know him."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.712162445049194,
+      "max_topic_prob": 0.590460479259491,
+      "sentence": "Maybe I didn't know him at all."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5773498011304166,
+      "max_topic_prob": 0.5895673036575317,
+      "sentence": "Doesn't it bother you in the least that you don't really know him?\" \""
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.3275504431453894,
+      "max_topic_prob": 0.7013905644416809,
+      "sentence": "I lost the name.” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.49632283613049216,
+      "max_topic_prob": 0.5263246297836304,
+      "sentence": "One day, I’ll tell you about mine.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.1229492739958514,
+      "max_topic_prob": 0.49763554334640503,
+      "sentence": "Have you met this Booke character?” “"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.3065246087120498,
+      "max_topic_prob": 0.48273685574531555,
+      "sentence": "Dennis.” “"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5936262492928531,
+      "max_topic_prob": 0.4816673994064331,
+      "sentence": "In this particular area, I’m Darren.” “"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.25391287950216856,
+      "max_topic_prob": 0.4742165803909302,
+      "sentence": "Mr. Remington, I’m Harding, Jonathan Q. Harding."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

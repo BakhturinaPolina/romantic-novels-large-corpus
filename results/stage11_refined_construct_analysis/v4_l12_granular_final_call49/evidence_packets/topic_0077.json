@@ -1,0 +1,1033 @@
+{
+  "topic_id": 77,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "hair",
+        "blonde",
+        "blond",
+        "shave",
+        "shaved",
+        "brown",
+        "black",
+        "dark",
+        "haircut",
+        "short"
+      ],
+      "KeyBERT": [
+        "curled",
+        "patted",
+        "wrinkled",
+        "blowing",
+        "delicate",
+        "attractive",
+        "willing",
+        "insisted",
+        "bothering",
+        "lined"
+      ],
+      "POS": [
+        "extent",
+        "ends",
+        "contrast",
+        "overheard",
+        "inevitable",
+        "typical",
+        "annoying",
+        "slightest",
+        "desperation",
+        "treatment"
+      ],
+      "MMR": [
+        "neatly",
+        "wrinkled",
+        "ends",
+        "contrast",
+        "blowing",
+        "described",
+        "bothering",
+        "slightest",
+        "shaped",
+        "dried"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll send [person] in to help you finish dressing and repair your hair.",
+      "it’ll be good for the librarian to take down her hair and have some fun for a change.",
+      "iffen you want a haircut and shave, megan’ll do that for an extra two bits."
+    ],
+    "label_public": "Haircut and Grooming Offered"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "While he liked them both, the longer hair was more erotic.",
+        "max_topic_prob": 0.6225223541259766,
+        "normalized_position": 0.3737217229625039,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Nic was simply one of those guys who had to shave in the evening before going out on a date.",
+        "max_topic_prob": 0.5923281908035278,
+        "normalized_position": 0.25668835864063627,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "The way he brushed his hair back and the single lock that flopped forward.",
+        "max_topic_prob": 0.5331666469573975,
+        "normalized_position": 0.08129325482904659,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Her eyes were light brown, and while her hair was darker than Katie’s, it wasn’t as dark as Brenna’s, even without the blond streaks she painted in every couple of months.",
+        "max_topic_prob": 0.5301011800765991,
+        "normalized_position": 0.2290052680508212,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Katie was mostly Irish with pale skin and reddish-brown hair.",
+        "max_topic_prob": 0.5216320753097534,
+        "normalized_position": 0.06042764177254416,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Francesca had the thick, dark hair from the Marcelli side of the family, but had also inherited hazel eyes and a tall, thin body from the O’Sheas.",
+        "max_topic_prob": 0.47877824306488037,
+        "normalized_position": 0.06053093688668526,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Tiny blonde hair still covered one hand while the other was smooth.",
+        "max_topic_prob": 0.6600936651229858,
+        "normalized_position": 0.47579425113464446,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Hair removal” was written on it. “",
+        "max_topic_prob": 0.5921931266784668,
+        "normalized_position": 0.4508320726172466,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "One was light-haired, while the other was dark like Dyne.",
+        "max_topic_prob": 0.5638654232025146,
+        "normalized_position": 0.38855269793242564,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "My hair was as short as yours when I was sent here.",
+        "max_topic_prob": 0.5448170900344849,
+        "normalized_position": 0.9069591527987897,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll let my hair grow.",
+        "max_topic_prob": 0.5422822833061218,
+        "normalized_position": 0.9125063035804337,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The rumor is they liked to drag their mates about by the hair.”",
+        "max_topic_prob": 0.5299364924430847,
+        "normalized_position": 0.9268784669692385,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "It also seemed, from the smoothness of his skin against hers, that he’d had the promised shave—presumably while she’d been preparing dinner.",
+        "max_topic_prob": 0.567344069480896,
+        "normalized_position": 0.5093087952065054,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "And, whatever your doctor friend may say,mio caro ,’ she whispered huskily, ‘tonight you will most definitely need to shave.",
+        "max_topic_prob": 0.4431874454021454,
+        "normalized_position": 0.9965760753263428,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1240
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "His hair had a wet, shiny look, short and cut close to his head.",
+        "max_topic_prob": 0.7040688991546631,
+        "normalized_position": 0.16310599835661463,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "His hair was the darkest brown, fine and cut short to frame his almost pretty features.",
+        "max_topic_prob": 0.7036360502243042,
+        "normalized_position": 0.30608052588331963,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He had long blond hair, pale enough it was almost white, neatly pulled back by a red silk ribbon.",
+        "max_topic_prob": 0.6617969274520874,
+        "normalized_position": 0.9880854560394412,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "His hair was a mess, tumbling about everywhere.",
+        "max_topic_prob": 0.6273895502090454,
+        "normalized_position": 0.6150369761709121,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "His short hair was a brown so dark it could almost be mistaken for black, save where the sun struck it and drew out hints of red. \"",
+        "max_topic_prob": 0.6259111166000366,
+        "normalized_position": 0.04991783073130649,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "His hair was the color of beeswax, cropped extremely short and seemingly fine, delicate wisps of it clinging to his cheeks and forehead.",
+        "max_topic_prob": 0.6102770566940308,
+        "normalized_position": 0.05587510271158587,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His face has a weeks’ worth of scruff, and his hair is all over the place.",
+        "max_topic_prob": 0.6711585521697998,
+        "normalized_position": 0.9042669584245077,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His hair is a dismantled mess, but he always has this calm, cool, and collected attitude.",
+        "max_topic_prob": 0.6162834167480469,
+        "normalized_position": 0.04266958424507659,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "My hands grab her hair, and all I can picture is Kennedy’s sunshine blonde hair, and her blue eyes pleading with me to pump into her mouth faster.",
+        "max_topic_prob": 0.5810338258743286,
+        "normalized_position": 0.3952407002188184,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You want to know why I call you Blondie?”",
+        "max_topic_prob": 0.5286336541175842,
+        "normalized_position": 0.2584792122538293,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s called blonde, Ryder.”",
+        "max_topic_prob": 0.5273354053497314,
+        "normalized_position": 0.263129102844639,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You call me Blondie one more God damn time, and I will cut you.”",
+        "max_topic_prob": 0.49711084365844727,
+        "normalized_position": 0.25601750547045954,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "His sharp jaw was shadowed in stubble at least two shades lighter.",
+        "max_topic_prob": 0.6677480936050415,
+        "normalized_position": 0.9706055261610818,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "And her bed head hair above that T-shirt of his was almost more than he could handle.",
+        "max_topic_prob": 0.6286669969558716,
+        "normalized_position": 0.7713109935332157,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "His almost-black hair and warm brown skin were just like she remembered.",
+        "max_topic_prob": 0.5942827463150024,
+        "normalized_position": 0.21763668430335098,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He was tall, his skin a light brown, his hair shades darker.",
+        "max_topic_prob": 0.592184841632843,
+        "normalized_position": 0.8951205173427396,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He was backlit, his hair shining gold like a halo.",
+        "max_topic_prob": 0.5893248319625854,
+        "normalized_position": 0.10146972369194592,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 516
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "No clue,” Bridge replied, “but it felt like every hair on my body stood on end.” “",
+        "max_topic_prob": 0.5450167655944824,
+        "normalized_position": 0.11804820693709582,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Your hair looks like warm caramel and feels like silk.”",
+        "max_topic_prob": 0.5464029312133789,
+        "normalized_position": 0.014243323442136498,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "One thing I know, if you touch one hair on her body, there will be no place on earth for you to hide.",
+        "max_topic_prob": 0.5416601300239563,
+        "normalized_position": 0.8827893175074184,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "We usually like our girls to wear their hair up, but in your case, wear it down.",
+        "max_topic_prob": 0.5399383902549744,
+        "normalized_position": 0.04347181008902077,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "We prefer that you wear makeup, and your hair should be neat.",
+        "max_topic_prob": 0.5127690434455872,
+        "normalized_position": 0.03130563798219584,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "A man of medium build and height, with graying hair and green eyes entered the room.",
+        "max_topic_prob": 0.35579532384872437,
+        "normalized_position": 0.6501483679525223,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Not a hair out of place. “",
+        "max_topic_prob": 0.5614895820617676,
+        "normalized_position": 0.4482758620689655,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Do you think I knew Jeremy had been getting it on with my hairdresser those weeks before he dumped me?",
+        "max_topic_prob": 0.5377412438392639,
+        "normalized_position": 0.04741379310344827,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Tucking a piece of hair behind my ear, he said, “It was for a good cause.”",
+        "max_topic_prob": 0.5360252261161804,
+        "normalized_position": 0.9665948275862069,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "A hairstyle.",
+        "max_topic_prob": 0.7033233642578125,
+        "normalized_position": 0.9072238977452247,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1475
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Hairy?”",
+        "max_topic_prob": 0.6728129386901855,
+        "normalized_position": 0.9977021398822347,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2105
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I peer at her hair.",
+        "max_topic_prob": 0.6688103079795837,
+        "normalized_position": 0.2889559098089904,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 600
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He used to have me wear my hair like this.",
+        "max_topic_prob": 0.6657306551933289,
+        "normalized_position": 0.5105557949159845,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 504
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Full head of hair, with just the slightest grey around the temples.",
+        "max_topic_prob": 0.6611359119415283,
+        "normalized_position": 0.08128680166594858,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 566
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Why is your hair down?”",
+        "max_topic_prob": 0.6426430940628052,
+        "normalized_position": 0.6141031164727847,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1225
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "A hair.",
+        "max_topic_prob": 0.7128067016601562,
+        "normalized_position": 0.8532090658758738,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 625
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "A black hair.”",
+        "max_topic_prob": 0.7013378143310547,
+        "normalized_position": 0.8555390807032408,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 636
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Howard’s hair, what was left of it, was short and light brown. “",
+        "max_topic_prob": 0.6645202040672302,
+        "normalized_position": 0.8538445244651557,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 628
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "A greasy black hair.”",
+        "max_topic_prob": 0.6474007368087769,
+        "normalized_position": 0.8534208854056344,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 626
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Her hair was light brown, not dark like her father’s but nowhere near as blonde as her sister’s. “",
+        "max_topic_prob": 0.6162625551223755,
+        "normalized_position": 0.5905528489726752,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Blond curly hair, about twenty-five.",
+        "max_topic_prob": 0.6097482442855835,
+        "normalized_position": 0.3342512179622961,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "His hair was in wild disarray, giving him a deliciously rumpled appearance.",
+        "max_topic_prob": 0.6506671905517578,
+        "normalized_position": 0.7725618631732168,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "At Keeley’s insistence I’d left my hair down, the dark tresses spilling over my shoulders and midway down my back in waves.",
+        "max_topic_prob": 0.6112446784973145,
+        "normalized_position": 0.8011280931586608,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "My body felt like heavy, like it had leaden weights attached, and though he didn't show it, I knew Braeden couldn’t be fairing much better He smiled, brushing a wet lock of hair from my forehead. “",
+        "max_topic_prob": 0.5761164426803589,
+        "normalized_position": 0.490174672489083,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Twenty minutes later I was dressed, hair braided, teeth brushed and hurrying alongside Braeden down the hallway.",
+        "max_topic_prob": 0.4959115982055664,
+        "normalized_position": 0.7086972343522562,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The weight of my hair being down wasn’t something I was used to, and I was debating pulling it up when a knock sounded on my door.",
+        "max_topic_prob": 0.48652970790863037,
+        "normalized_position": 0.8013100436681223,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her hair was the color of coffee and, unless she had extensions, long.",
+        "max_topic_prob": 0.6293984055519104,
+        "normalized_position": 0.2735714285714286,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The other was a shorter redhead, though her hair was more auburn than mine.",
+        "max_topic_prob": 0.5539284348487854,
+        "normalized_position": 0.78,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Reed's previously flawless hair was a wild mess and his face was flushed.",
+        "max_topic_prob": 0.5280674695968628,
+        "normalized_position": 0.08285714285714285,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I'd seen this guy with his hands all over one of Britni's bridesmaids, some tiny little brunette with fake nails and awful pink lipstick. “",
+        "max_topic_prob": 0.5035163760185242,
+        "normalized_position": 0.3435714285714286,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Where’s my hair?” “",
+        "max_topic_prob": 0.6800098419189453,
+        "normalized_position": 0.7137351086194814,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Your hair was a casualty,” Dr. Matthews said. “",
+        "max_topic_prob": 0.5914473533630371,
+        "normalized_position": 0.7140854940434478,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Rhett could tell Kaden missed his hair as much as he did.",
+        "max_topic_prob": 0.5833454132080078,
+        "normalized_position": 0.7771548703573932,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "He even uses a real scalpel.” “",
+        "max_topic_prob": 0.4740608334541321,
+        "normalized_position": 0.2168885774351787,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Hair.",
+        "max_topic_prob": 0.6842130422592163,
+        "normalized_position": 0.2256444041834802,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2740
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "His tie is badly knotted, his jaw is shadowed with stubble.",
+        "max_topic_prob": 0.6509674191474915,
+        "normalized_position": 0.21609157539323068,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2624
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "When I return he’s a little less dark looking, but his hair is messed up.",
+        "max_topic_prob": 0.6467330455780029,
+        "normalized_position": 0.16017458618133903,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1945
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "His hair is still a little damp.",
+        "max_topic_prob": 0.6458128690719604,
+        "normalized_position": 0.5552169974470889,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 557
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She gifted me with this particular genetic burden: huge hair.",
+        "max_topic_prob": 0.6417773962020874,
+        "normalized_position": 0.9938236020752697,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2942
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Hair up or down?”",
+        "max_topic_prob": 0.6105006337165833,
+        "normalized_position": 0.7298855307584616,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 2678
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Well, that, and he’d brushed her hair and called her beautiful.",
+        "max_topic_prob": 0.6574967503547668,
+        "normalized_position": 0.4555371444352389,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He’d always loved her hair.",
+        "max_topic_prob": 0.657425045967102,
+        "normalized_position": 0.27395747031206846,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He can do his own hair and back,” Lucy explained not daring to look at his sandy hair or broad shoulders. “",
+        "max_topic_prob": 0.6476134061813354,
+        "normalized_position": 0.6703949185307926,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "For a moment, he wondered if he might be bald before his wedding.",
+        "max_topic_prob": 0.6356587409973145,
+        "normalized_position": 0.2127865230599282,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "We fixed your hair.” “",
+        "max_topic_prob": 0.6318788528442383,
+        "normalized_position": 0.27823805578569455,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Bald by morning, or at least well before Lucy ever let him in the big bedroom.",
+        "max_topic_prob": 0.631293535232544,
+        "normalized_position": 0.24371720519193593,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 229
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.005660377358490566,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.004158580537843083,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.003970880211780278,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0028776978417266188,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003748438150770512,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.003568487510293714,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.00511727078891258,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0032869785082174463,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0008308235538477516,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0009500059375371097,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0007062146892655367,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0009179364787956673,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0010826416456153013,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0007446016381236039,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00043346337234503684,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 77
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

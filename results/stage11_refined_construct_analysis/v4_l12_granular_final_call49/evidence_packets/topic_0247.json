@@ -1,0 +1,987 @@
+{
+  "topic_id": 247,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "alone",
+        "solitude",
+        "want",
+        "be",
+        "being",
+        "don",
+        "live",
+        "here",
+        "rather",
+        "prefer"
+      ],
+      "KeyBERT": [
+        "upset",
+        "praying"
+      ],
+      "POS": [
+        "options",
+        "terms",
+        "circumstances",
+        "attempt",
+        "fault"
+      ],
+      "MMR": [
+        "praying",
+        "preferred",
+        "options",
+        "circumstances",
+        "chose",
+        "appreciate",
+        "attempt",
+        "insisted",
+        "planned",
+        "fault"
+      ]
+    },
+    "stage08_snippets": [
+      "if we make it through this alone, we’ll just be better at being alone.”",
+      "you’ll never be alone.",
+      "before you say no, i want you to know i’ll be alone mostly."
+    ],
+    "label_public": "Promising You Will Not Be Alone"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Alone. “",
+        "max_topic_prob": 0.7918678522109985,
+        "normalized_position": 0.2940884868013385,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Not alone. “",
+        "max_topic_prob": 0.764545202255249,
+        "normalized_position": 0.5512455074978312,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Alone?”",
+        "max_topic_prob": 0.7633583545684814,
+        "normalized_position": 0.6248605775188995,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Alone.",
+        "max_topic_prob": 0.7400990724563599,
+        "normalized_position": 0.6611723881521874,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Only childs are so lonely.” “",
+        "max_topic_prob": 0.5386701226234436,
+        "normalized_position": 0.9806667492873962,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Luc says Lena is a basket case and is alone at the house.",
+        "max_topic_prob": 0.4380719065666199,
+        "normalized_position": 0.761928367827488,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We get so little alone time now.” “",
+        "max_topic_prob": 0.7026103734970093,
+        "normalized_position": 0.26728723404255317,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "If I went out alone, it seemed I felt surrounded by people who couldn’t speak to me.",
+        "max_topic_prob": 0.6680712699890137,
+        "normalized_position": 0.7219636524822695,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I promise you, you will never be alone again so long as I live.”",
+        "max_topic_prob": 0.6592910289764404,
+        "normalized_position": 0.21786347517730498,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I don’t like you being out there in a hotel by yourself.” “",
+        "max_topic_prob": 0.6437375545501709,
+        "normalized_position": 0.5227171985815603,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’ve pictured this so many times in my mind, I don’t want to wake up and find I’m alone again.” “",
+        "max_topic_prob": 0.637413740158081,
+        "normalized_position": 0.21775265957446807,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’m so lonely sometimes.",
+        "max_topic_prob": 0.6327444314956665,
+        "normalized_position": 0.3130540780141844,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 553
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Alone, I hoped.",
+        "max_topic_prob": 0.7056691646575928,
+        "normalized_position": 0.8006700167504187,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1123
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Alone, set up, with nowhere to go but here. “",
+        "max_topic_prob": 0.6776203513145447,
+        "normalized_position": 0.6275823562255723,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It’s never quite the same without you.”",
+        "max_topic_prob": 0.6095130443572998,
+        "normalized_position": 0.7685650474595198,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1008
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "So much I wanted to say once we were alone in two days, three hours and forty minutes.",
+        "max_topic_prob": 0.5587410926818848,
+        "normalized_position": 0.08040201005025126,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Alone with Luke Emerson.",
+        "max_topic_prob": 0.5574191212654114,
+        "normalized_position": 0.2169179229480737,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 777
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I was going to get it anyway, and I honestly couldn’t imagine anyone but you doing it, so I figured that would also get us in the same room.” “",
+        "max_topic_prob": 0.5216045379638672,
+        "normalized_position": 0.8618090452261307,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1342
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "May I speak with you … alone?”",
+        "max_topic_prob": 0.7214908599853516,
+        "normalized_position": 0.35760376005735683,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 480
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "When the time comes, please believe that you will not be alone, that Madame Endelle, for all her eccentricity, is not alone.",
+        "max_topic_prob": 0.5594888925552368,
+        "normalized_position": 0.9556281367003904,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Of course, Sister Quena didn’t call it solitary.",
+        "max_topic_prob": 0.46283259987831116,
+        "normalized_position": 0.078865609814387,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I will not have another man inside your head.",
+        "max_topic_prob": 0.4264450669288635,
+        "normalized_position": 0.16139568230701823,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "We are the only ones up here now.",
+        "max_topic_prob": 0.35537853837013245,
+        "normalized_position": 0.07113837329721978,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I think better when I'm alone.” “",
+        "max_topic_prob": 0.7331720590591431,
+        "normalized_position": 0.49847216686594925,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "But this is good; at least she's not alone.” “",
+        "max_topic_prob": 0.6493625640869141,
+        "normalized_position": 0.8003188521323237,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Despite being surrounded by my family I felt utterly alone.",
+        "max_topic_prob": 0.6363914012908936,
+        "normalized_position": 0.9031486648066959,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I need to do this alone, I think.",
+        "max_topic_prob": 0.626045823097229,
+        "normalized_position": 0.9722332934768168,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I couldn't do this alone.",
+        "max_topic_prob": 0.6156217455863953,
+        "normalized_position": 0.7782649129799389,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Nothing is the same without you.” “",
+        "max_topic_prob": 0.5962200164794922,
+        "normalized_position": 0.4368274212833798,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "You need to get used to people seeing you.",
+        "max_topic_prob": 0.4106608033180237,
+        "normalized_position": 0.28685897435897434,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You’re lonely and I’m alone.",
+        "max_topic_prob": 0.7059719562530518,
+        "normalized_position": 0.8685999093792478,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I like to say it out loud when no one’s around.",
+        "max_topic_prob": 0.5628805160522461,
+        "normalized_position": 0.7199818758495695,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Without you, well, there’s nothing.",
+        "max_topic_prob": 0.5349278450012207,
+        "normalized_position": 0.8808337109198007,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "No one will mess with me while the two of them are there.",
+        "max_topic_prob": 0.48874974250793457,
+        "normalized_position": 0.41005890348889895,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I’ve had to pretend day in and day out that I’m fine, that I’m not falling apart.",
+        "max_topic_prob": 0.48501551151275635,
+        "normalized_position": 0.42637063887630267,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Ask me why I don’t want to share you with Black or anyone else.",
+        "max_topic_prob": 0.4278673827648163,
+        "normalized_position": 0.39465337562301767,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "You’re not alone.",
+        "max_topic_prob": 0.47095346450805664,
+        "normalized_position": 0.9084220716360116,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Single females.",
+        "max_topic_prob": 0.4367872476577759,
+        "normalized_position": 0.6592449177153921,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "They appeared to be alone.",
+        "max_topic_prob": 0.6153301000595093,
+        "normalized_position": 0.8633993743482794,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1417
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I don’t really want to go into it, and forgive me for being rude, but I would really prefer to be by myself right now.”",
+        "max_topic_prob": 0.6030579805374146,
+        "normalized_position": 0.20855057351407716,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 800
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He doesn’t want other people around you.",
+        "max_topic_prob": 0.5099185705184937,
+        "normalized_position": 0.7075078206465067,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 819
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m fine being alone.",
+        "max_topic_prob": 0.8037175536155701,
+        "normalized_position": 0.3037669732807709,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Alone. “",
+        "max_topic_prob": 0.7918679714202881,
+        "normalized_position": 0.7066360052562418,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s tough being alone at my age.",
+        "max_topic_prob": 0.7168128490447998,
+        "normalized_position": 0.4771134472185721,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s hard enough being alone in a small town where you know everybody; I can’t imagine being single in a place like this.” “",
+        "max_topic_prob": 0.6978405714035034,
+        "normalized_position": 0.4525843188786684,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "What’s even worse is when you’re with someone, and you still feel alone.”",
+        "max_topic_prob": 0.6798110008239746,
+        "normalized_position": 0.30409548839246603,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m not spending all weekend alone.",
+        "max_topic_prob": 0.6177542209625244,
+        "normalized_position": 0.05398598335523434,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Lonesome.” “",
+        "max_topic_prob": 0.6414321064949036,
+        "normalized_position": 0.8204760855190655,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "So you bore it alone.”",
+        "max_topic_prob": 0.5934051871299744,
+        "normalized_position": 0.7816839321137315,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "In the strangest way, it made him not feel so alone.",
+        "max_topic_prob": 0.5398145318031311,
+        "normalized_position": 0.4428036147233855,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 401
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "How nice not to be the only girl with all of these boys.”",
+        "max_topic_prob": 0.4740521311759949,
+        "normalized_position": 0.6232091690544412,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He lived quiet and alone, loving his family and avoiding anything more than an occasional short-lived fling.",
+        "max_topic_prob": 0.43482595682144165,
+        "normalized_position": 0.05929027992065242,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "And between you and me?",
+        "max_topic_prob": 0.4132035970687866,
+        "normalized_position": 0.25534494159135995,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I wish to go today…alone.” “",
+        "max_topic_prob": 0.7716432809829712,
+        "normalized_position": 0.32462224424077285,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I shall go alone.",
+        "max_topic_prob": 0.7333065271377563,
+        "normalized_position": 0.955907852365618,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You must not wander about alone.",
+        "max_topic_prob": 0.6910752058029175,
+        "normalized_position": 0.6616299232103047,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Still, I counsel you not to be alone with him.”",
+        "max_topic_prob": 0.682192325592041,
+        "normalized_position": 0.6187763190487986,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We are quite alone.”",
+        "max_topic_prob": 0.6806272268295288,
+        "normalized_position": 0.8491454050037156,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I longed to be alone with my thoughts, to avoid my family’s questions as to why I suffered such discomposure and what had become of my former lively self.",
+        "max_topic_prob": 0.6732207536697388,
+        "normalized_position": 0.502724795640327,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’m alone.",
+        "max_topic_prob": 0.703097939491272,
+        "normalized_position": 0.9206871721016356,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Unless, you reckon there’s someone else out to get you?”",
+        "max_topic_prob": 0.5528303384780884,
+        "normalized_position": 0.49963995473716694,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I know you’re not like ‘all the other girls around.’",
+        "max_topic_prob": 0.4108012318611145,
+        "normalized_position": 0.5452113980043205,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I’m never alone.”",
+        "max_topic_prob": 0.8133411407470703,
+        "normalized_position": 0.47924354243542433,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "You don’t need to be alone.",
+        "max_topic_prob": 0.8066660165786743,
+        "normalized_position": 0.47755227552275525,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I never want you to be alone like me.”",
+        "max_topic_prob": 0.7826187610626221,
+        "normalized_position": 0.8789975399753998,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I guess I wanted to be alone or I wouldn’t have ended up like I have.",
+        "max_topic_prob": 0.7584244012832642,
+        "normalized_position": 0.4770910209102091,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He said simply, “You shouldn’t be alone, man.",
+        "max_topic_prob": 0.7228966951370239,
+        "normalized_position": 0.9881611316113161,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Alone,” I add.",
+        "max_topic_prob": 0.717115044593811,
+        "normalized_position": 0.44434194341943417,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "At this rate, I was going to end up single and lonely. “",
+        "max_topic_prob": 0.6189298033714294,
+        "normalized_position": 0.06652360515021459,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Gideon, I think they want to be alone.”",
+        "max_topic_prob": 0.6172545552253723,
+        "normalized_position": 0.7034334763948498,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I never want any child of ours to ever feel alone.”",
+        "max_topic_prob": 0.609004557132721,
+        "normalized_position": 0.7253218884120172,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Clark continued, “Tonight, I want to focus on your pleasure alone.” “",
+        "max_topic_prob": 0.544636607170105,
+        "normalized_position": 0.3240343347639485,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I never felt so comfortable with anyone else in my entire life.",
+        "max_topic_prob": 0.5442754030227661,
+        "normalized_position": 0.23218884120171673,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "There was no one else I wanted to spend the rest of my life with but him.",
+        "max_topic_prob": 0.5304023027420044,
+        "normalized_position": 0.8978540772532189,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 40
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0038893690579083835,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0027309968138370506,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003488227233088327,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.002270602377454254,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0024298652529268832,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.002241524236480807,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.003096934035305048,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0036768802228412255,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0008867213478164486,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0007523510971786833,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.000390015600624025,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0004017354973485457,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0005356186395286556,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0007869884575026233,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0003108164111065064,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 74
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "9.2",
+    "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

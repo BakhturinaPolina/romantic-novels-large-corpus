@@ -1,0 +1,828 @@
+{
+  "topic_id": 160,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "movie",
+        "watch",
+        "watching",
+        "movies",
+        "film",
+        "disney",
+        "films",
+        "show",
+        "hollywood",
+        "we"
+      ],
+      "KeyBERT": [
+        "movies",
+        "tv",
+        "asks"
+      ],
+      "POS": [
+        "movies",
+        "decent",
+        "surroundings",
+        "temperature",
+        "benefit",
+        "recent",
+        "spite",
+        "quality",
+        "tv",
+        "various"
+      ],
+      "MMR": [
+        "movies",
+        "circling",
+        "surroundings",
+        "quality",
+        "tv",
+        "various",
+        "difference",
+        "considering",
+        "planning",
+        "bodies"
+      ]
+    },
+    "stage08_snippets": [
+      "fine, but i’ll be watching.” “",
+      "we’ll watch him closely for any reaction.” “",
+      "we’ve been watching movies.”"
+    ],
+    "label_public": "Watching Movies Together"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Watch it, mate.\"",
+        "max_topic_prob": 0.5470303297042847,
+        "normalized_position": 0.06217858812529219,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Is that the television?\" \"",
+        "max_topic_prob": 0.42267653346061707,
+        "normalized_position": 0.008882655446470314,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Turn on that entertainment network we both hate.\" \"",
+        "max_topic_prob": 0.40012332797050476,
+        "normalized_position": 0.02664796633941094,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "God, that sounds like a Telemundo soap opera.\"",
+        "max_topic_prob": 0.38486379384994507,
+        "normalized_position": 0.8270219728845255,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1759
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We need to record it in the next fortnight if we're going to make our launch date.",
+        "max_topic_prob": 0.3623993694782257,
+        "normalized_position": 0.2061711079943899,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I could use a good show.”",
+        "max_topic_prob": 0.5939157009124756,
+        "normalized_position": 0.32192648922686945,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1084
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Maybe one can watch over you while you fuck the other.”",
+        "max_topic_prob": 0.5084145069122314,
+        "normalized_position": 0.07252499647936911,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 515
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I'm enjoying watching you.\"",
+        "max_topic_prob": 0.6251697540283203,
+        "normalized_position": 0.07065217391304347,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "But you also may have reason to keep me from watching too closely.” “",
+        "max_topic_prob": 0.5975730419158936,
+        "normalized_position": 0.2742300724637681,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You will watch them for seven days, Arthur, and then come to me.",
+        "max_topic_prob": 0.5814917087554932,
+        "normalized_position": 0.020153985507246376,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "While I watch.”",
+        "max_topic_prob": 0.7030138969421387,
+        "normalized_position": 0.4752407854882075,
+        "tertile": "middle",
+        "chapter_index": 50,
+        "sentence_index": 361
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I just want you to know that I am watching you.” “",
+        "max_topic_prob": 0.6939694881439209,
+        "normalized_position": 0.5122689990811014,
+        "tertile": "middle",
+        "chapter_index": 53,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Watching you.”",
+        "max_topic_prob": 0.6841378211975098,
+        "normalized_position": 0.51002280230065,
+        "tertile": "middle",
+        "chapter_index": 53,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why don’t you go see to our other guests.”",
+        "max_topic_prob": 0.6316925287246704,
+        "normalized_position": 0.6296497975019569,
+        "tertile": "middle",
+        "chapter_index": 65,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You’re being watched .",
+        "max_topic_prob": 0.6053498983383179,
+        "normalized_position": 0.09862845863254263,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "For watching, for sharing this hour with us.”",
+        "max_topic_prob": 0.5994205474853516,
+        "normalized_position": 0.9841404893986319,
+        "tertile": "end",
+        "chapter_index": 101,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I feel like I’m in some made-for-TV movie right now.",
+        "max_topic_prob": 0.6082565188407898,
+        "normalized_position": 0.5363191569439217,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Then don’t judge our show if you haven’t seen it,” he snapped.",
+        "max_topic_prob": 0.5131330490112305,
+        "normalized_position": 0.3300715092209259,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s all theater.",
+        "max_topic_prob": 0.5098678469657898,
+        "normalized_position": 0.46443357169740307,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "And besides, this was theater. “",
+        "max_topic_prob": 0.504106342792511,
+        "normalized_position": 0.9337598795634174,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "But we’re gonna keep a close watch on you for a while.",
+        "max_topic_prob": 0.49311643838882446,
+        "normalized_position": 0.3421151674821227,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "And there were plenty of people watching.",
+        "max_topic_prob": 0.4673466980457306,
+        "normalized_position": 0.9190816710575838,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "We don’t engage … we just go have a look-see.” * * *",
+        "max_topic_prob": 0.4871521592140198,
+        "normalized_position": 0.36160990712074303,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Ah, but ye just showed me ye don’t have the knack yet of watching out for yerself, now do ye?",
+        "max_topic_prob": 0.45703983306884766,
+        "normalized_position": 0.2690402476780186,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I thought you said we were to observe—not engage?” “",
+        "max_topic_prob": 0.38517141342163086,
+        "normalized_position": 0.39055727554179565,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I can’t watch movies with you tonight, Mercy.",
+        "max_topic_prob": 0.61946040391922,
+        "normalized_position": 0.297300821489112,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "We can watch movies until we pass out,” Daphne nodded encouragingly, but I wasn’t up for it. “",
+        "max_topic_prob": 0.6025608777999878,
+        "normalized_position": 0.04276959186334594,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Of course I want to watch it, but come on, tell me, did you find out?” “",
+        "max_topic_prob": 0.586377739906311,
+        "normalized_position": 0.5430955796062068,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I watch TV.”",
+        "max_topic_prob": 0.5857762098312378,
+        "normalized_position": 0.27239535793454167,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Feel like an impromptu movie night?” “",
+        "max_topic_prob": 0.5578613877296448,
+        "normalized_position": 0.5427043943147738,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry guys, we’ll do the movie night another time, okay?",
+        "max_topic_prob": 0.5528795719146729,
+        "normalized_position": 0.042899986960490286,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "His love of writing first manifested in a career in cinema, producing short films which have shown at international festivals and garnered a number of awards.",
+        "max_topic_prob": 0.28016772866249084,
+        "normalized_position": 0.9973787680209698,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’ll watch the kids.” “",
+        "max_topic_prob": 0.6605055332183838,
+        "normalized_position": 0.8416418650793651,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Watch this.”",
+        "max_topic_prob": 0.618330180644989,
+        "normalized_position": 0.007192460317460317,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’ll do whatever I need to do to reenact that scene with you guys, only I get a starring role.",
+        "max_topic_prob": 0.5749675035476685,
+        "normalized_position": 0.9231770833333334,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Patrick was excited to have you sit on his lap while he shared the movie with me.” “",
+        "max_topic_prob": 0.553686797618866,
+        "normalized_position": 0.007750496031746032,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’ve seen the action, and it was a good show.” “",
+        "max_topic_prob": 0.5345891714096069,
+        "normalized_position": 0.6897941468253969,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Marcus isn’t even pretending to watch the movie, more interested in what his boys are doing– Whitt, Dalton, Cortez, and me.",
+        "max_topic_prob": 0.5110775232315063,
+        "normalized_position": 0.00638640873015873,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "So, watchya watchin’?”",
+        "max_topic_prob": 0.639566957950592,
+        "normalized_position": 0.257168458781362,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I thought we could do some bird watching.” “",
+        "max_topic_prob": 0.5650087594985962,
+        "normalized_position": 0.8458781362007168,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "What was he watching?",
+        "max_topic_prob": 0.5265170335769653,
+        "normalized_position": 0.12813620071684587,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m totally into bird watching, too.”",
+        "max_topic_prob": 0.523152768611908,
+        "normalized_position": 0.26881720430107525,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Bird watching!",
+        "max_topic_prob": 0.48587876558303833,
+        "normalized_position": 0.5528673835125448,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He wanted to eat dim sum and go home and watch some movies on Netflix. “",
+        "max_topic_prob": 0.47214651107788086,
+        "normalized_position": 0.0492831541218638,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The audience is going to love watching you two.” “",
+        "max_topic_prob": 0.6497976183891296,
+        "normalized_position": 0.9362549800796812,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Movie people.",
+        "max_topic_prob": 0.5726487636566162,
+        "normalized_position": 0.6237273129703409,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "For a show.” “",
+        "max_topic_prob": 0.5596485137939453,
+        "normalized_position": 0.4262948207171315,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Watching your figure there?”",
+        "max_topic_prob": 0.5516233444213867,
+        "normalized_position": 0.46805371108159954,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’ll probably just hang back and watch you guys be awesome.”",
+        "max_topic_prob": 0.532902717590332,
+        "normalized_position": 0.053268407850081155,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Harlow asks, watching me.",
+        "max_topic_prob": 0.5320999622344971,
+        "normalized_position": 0.08396045447838277,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "We’ll find some old movies to watch.”",
+        "max_topic_prob": 0.6799155473709106,
+        "normalized_position": 0.1316755558634065,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 732
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Watch it.”",
+        "max_topic_prob": 0.6532349586486816,
+        "normalized_position": 0.15917434370021472,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You’ve been watching!”",
+        "max_topic_prob": 0.6471327543258667,
+        "normalized_position": 0.7905382004571587,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "At the cinema?” “",
+        "max_topic_prob": 0.6412640810012817,
+        "normalized_position": 0.12911269654360324,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 695
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You’re all I want to watch.",
+        "max_topic_prob": 0.6393110752105713,
+        "normalized_position": 0.5913278381935305,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 605
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "And right now I want to watch you on top of me.”",
+        "max_topic_prob": 0.6296094655990601,
+        "normalized_position": 0.5913971046616333,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 606
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "But she supposed they watched Star Wars in Italy, too. “",
+        "max_topic_prob": 0.4518468379974365,
+        "normalized_position": 0.5742648436036711,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 654
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Guilty Pleasures “ The Bossman was an absolute smash!",
+        "max_topic_prob": 0.3761736750602722,
+        "normalized_position": 0.003371417868514703,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "There are some who enjoy celebrity.”",
+        "max_topic_prob": 0.3660880923271179,
+        "normalized_position": 0.03144316044074174,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 231
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.002441576560865016,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0033003300330033004,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.005349977708426215,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.002191746508860918,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0027774920275691803,
+        "n_sentences": 81
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.003779289493575208,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0072007200720072,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0023618327822390174,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00037629350893697084,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00013520822065981613,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.00047051442910915934,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.000282845424975251,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0006825938566552901,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0003312355084465055,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 59
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.55,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

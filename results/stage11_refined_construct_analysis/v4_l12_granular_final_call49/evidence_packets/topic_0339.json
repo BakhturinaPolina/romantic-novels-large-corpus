@@ -1,0 +1,706 @@
+{
+  "topic_id": 339,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "8.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "bar",
+        "bars",
+        "bartenders",
+        "bartender",
+        "stocked",
+        "saloon",
+        "joe",
+        "dive",
+        "desirables",
+        "scummy"
+      ],
+      "KeyBERT": [
+        "gotta",
+        "la"
+      ],
+      "POS": [
+        "makeshift",
+        "possibilities",
+        "typical",
+        "enthusiasm",
+        "crowded",
+        "actual",
+        "latest",
+        "faces",
+        "worst",
+        "crowd"
+      ],
+      "MMR": [
+        "makeshift",
+        "possibilities",
+        "enthusiasm",
+        "ducked",
+        "provided",
+        "la",
+        "afford",
+        "faces",
+        "throw",
+        "crowd"
+      ]
+    },
+    "stage08_snippets": [
+      "i’m pretty sure i’ve been to every bar and club in the state, with crosbie right there beside me.",
+      "i’ve seen that the couple of times i’ve worked in the wild rose’s bar.",
+      "but i’ve seen you at the bar for months."
+    ],
+    "label_public": "Regulars at The Bar"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Guards were prominent at the bar, as well as on the walls behind it.",
+        "max_topic_prob": 0.5234960317611694,
+        "normalized_position": 0.40242130750605326,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "It was what you got when a bar, catering to male wolves, didn‘t have enough bouncers in place.",
+        "max_topic_prob": 0.5691400766372681,
+        "normalized_position": 0.10285913528591353,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It wasn’t a big deal, just to the Pizza and Beer Joint—which, by the way, is the actual name of the place.",
+        "max_topic_prob": 0.42917972803115845,
+        "normalized_position": 0.4218080548414739,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You wanna stop in that bar over there and grab a beer?”",
+        "max_topic_prob": 0.7237428426742554,
+        "normalized_position": 0.5707964601769911,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "When he couldn’t find her there, he’d set out for the bar.",
+        "max_topic_prob": 0.6826000809669495,
+        "normalized_position": 0.7957615277130881,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I know you need to deal with things at the bar, and I’m not sure how long we’ll be gone.",
+        "max_topic_prob": 0.6588507890701294,
+        "normalized_position": 0.4743828598043782,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "After a fleeting glance to the center of the bar, he grinned. “",
+        "max_topic_prob": 0.6061064004898071,
+        "normalized_position": 0.04750815090824406,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You can take my little brother behind the bar and rough him up a bit.",
+        "max_topic_prob": 0.599141001701355,
+        "normalized_position": 0.04820680018630647,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He slammed the beer down on the bar. “",
+        "max_topic_prob": 0.5851934552192688,
+        "normalized_position": 0.01071262226362366,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "As Travis said, they hit up a bar where the guy served teens.",
+        "max_topic_prob": 0.6168478727340698,
+        "normalized_position": 0.6371937639198219,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 550
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Brent, you were great back in that bar bathroom.” “",
+        "max_topic_prob": 0.616611123085022,
+        "normalized_position": 0.6797327394209354,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 741
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Dennis walked up to the bar, “Yo bartender.”",
+        "max_topic_prob": 0.5650718212127686,
+        "normalized_position": 0.6565701559020044,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 637
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Miranda pulled over into the parking lot of the rundown bar with cheap beer. “",
+        "max_topic_prob": 0.5369187593460083,
+        "normalized_position": 0.6534521158129176,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 623
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I mostly perform at low end bars and old folk homes.” “",
+        "max_topic_prob": 0.5276267528533936,
+        "normalized_position": 0.6728285077951002,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 710
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’ve been here for a couple of days with my man doing shows at any bar that would let us get on stage.",
+        "max_topic_prob": 0.524620771408081,
+        "normalized_position": 0.9064587973273942,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1759
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "But you work in a bar.” “",
+        "max_topic_prob": 0.7799617052078247,
+        "normalized_position": 0.11802232854864433,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It was my bar, after all.",
+        "max_topic_prob": 0.7699681520462036,
+        "normalized_position": 0.23912052859421282,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "But I don’t just own the bar.",
+        "max_topic_prob": 0.7478106617927551,
+        "normalized_position": 0.05377079061289588,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Something like that would ruin the bar.",
+        "max_topic_prob": 0.7388176918029785,
+        "normalized_position": 0.06345408976987925,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’d done that with my bar, I was going to do it with my girl.",
+        "max_topic_prob": 0.7235243320465088,
+        "normalized_position": 0.8123718386876282,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Makes me wonder about what kind of man I have managing my bar.",
+        "max_topic_prob": 0.6939106583595276,
+        "normalized_position": 0.11187058555479608,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I put it behind the bar.”",
+        "max_topic_prob": 0.7261475324630737,
+        "normalized_position": 0.23667975322490184,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "All the credit goes to my granddad,” Justin answered, hooking a thumb over his shoulder to the bar, at the white-haired man standing behind it, still chatting with the customers. “",
+        "max_topic_prob": 0.48542171716690063,
+        "normalized_position": 0.18844643858665172,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Music was playing and the small bar area was full, mainly with older men in their 60s, laughing and joking with the short, white-haired man of the same age serving up the drinks.",
+        "max_topic_prob": 0.48491233587265015,
+        "normalized_position": 0.142456533931576,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "So instead I sit at the bar, trying to make myself disappear.",
+        "max_topic_prob": 0.6890019178390503,
+        "normalized_position": 0.11704076958314247,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "This entire bar reeks of desperation.",
+        "max_topic_prob": 0.6518580913543701,
+        "normalized_position": 0.11475034356390289,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I decide to go for it, knowing I'm not being any more indecent than anyone else in this bar.",
+        "max_topic_prob": 0.5991650819778442,
+        "normalized_position": 0.173843334860284,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "When at last my gaze lands on something that isn't the ceiling or the wall, I find myself suddenly arrested by a man sitting across the bar.",
+        "max_topic_prob": 0.5943715572357178,
+        "normalized_position": 0.1310123683005039,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "This isn't like the frantic, probing kiss from the bar.",
+        "max_topic_prob": 0.5919772386550903,
+        "normalized_position": 0.7393495190105359,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He'll tell me the stranger I just happened to pick up in a bar is the one person in the world who fits me like nobody else.",
+        "max_topic_prob": 0.5461158752441406,
+        "normalized_position": 0.24141090242785157,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m going to the bar.",
+        "max_topic_prob": 0.8060333728790283,
+        "normalized_position": 0.8636062971292499,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Did you see the bar?",
+        "max_topic_prob": 0.7503582835197449,
+        "normalized_position": 0.8449530361158883,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And here I thought I’d have one bar buddy for a long time.” “",
+        "max_topic_prob": 0.740569531917572,
+        "normalized_position": 0.4496626537901839,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Honey, I was only in a bar twice.",
+        "max_topic_prob": 0.7275092601776123,
+        "normalized_position": 0.513030824183093,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You going to be the bartender, too?” “",
+        "max_topic_prob": 0.7093047499656677,
+        "normalized_position": 0.6408255060193148,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I mean an old country bar like this one.” “",
+        "max_topic_prob": 0.7013348937034607,
+        "normalized_position": 0.5102526789257839,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Tell me, how did it go with the man from the bar?” “",
+        "max_topic_prob": 0.672209620475769,
+        "normalized_position": 0.4043018820734071,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I pace toward the end of the bar and busy myself.",
+        "max_topic_prob": 0.671576976776123,
+        "normalized_position": 0.4196836115800663,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m not trying to sound like a pig here, but maybe you should go to one of the topless bars?",
+        "max_topic_prob": 0.6647992134094238,
+        "normalized_position": 0.8435565559932471,
+        "tertile": "end",
+        "chapter_index": 56,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You could go in there and sit on the bar stool and you’d still get paid.”",
+        "max_topic_prob": 0.6532074213027954,
+        "normalized_position": 0.48921403113862316,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I follow him to the bar right off the entry area.",
+        "max_topic_prob": 0.6358057260513306,
+        "normalized_position": 0.31451259926217723,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I scan the floor again to see if anyone goes to the bar, but they don’t.",
+        "max_topic_prob": 0.6356750130653381,
+        "normalized_position": 0.06540361408116051,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I haven’t seen you at the bar lately.",
+        "max_topic_prob": 0.7793657779693604,
+        "normalized_position": 0.8384380897082305,
+        "tertile": "end",
+        "chapter_index": 80,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "There’s an open bar.” “",
+        "max_topic_prob": 0.7528862357139587,
+        "normalized_position": 0.4202351574974597,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Let’s go and take full advantage of that open bar.”",
+        "max_topic_prob": 0.7001082897186279,
+        "normalized_position": 0.4299608070837567,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The bartender.” “",
+        "max_topic_prob": 0.682948112487793,
+        "normalized_position": 0.08099869356945856,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s that bartender, isn’t it?”",
+        "max_topic_prob": 0.6716299057006836,
+        "normalized_position": 0.020177093917840033,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "What brings you to an Aussie-themed bar, anyway?”",
+        "max_topic_prob": 0.6235178112983704,
+        "normalized_position": 0.025547975032660764,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 346
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0025573578839690196,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0033306687982946974,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.00506795669200645,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0030173497611264773,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.0025206232813932174,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.004219409282700422,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0031362007168458782,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0016910935738444193,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00012186205215695832,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00035310734463276836,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00021519259737465033,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "8.2",
+    "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

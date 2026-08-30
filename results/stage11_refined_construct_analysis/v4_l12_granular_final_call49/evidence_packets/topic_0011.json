@@ -1,0 +1,1230 @@
+{
+  "topic_id": 11,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "gaze",
+        "eyes",
+        "looked",
+        "met",
+        "glanced",
+        "stared",
+        "at",
+        "narrowed",
+        "face",
+        "her"
+      ],
+      "KeyBERT": [
+        "glances",
+        "gazing",
+        "peered",
+        "intently",
+        "stares",
+        "squinted",
+        "blinking",
+        "shivered",
+        "affection",
+        "sharply"
+      ],
+      "POS": [
+        "puzzled",
+        "sideways",
+        "glances",
+        "dismay",
+        "behalf",
+        "destination",
+        "taut",
+        "widened",
+        "irritation"
+      ],
+      "MMR": [
+        "puzzled",
+        "intently",
+        "peered",
+        "tentatively",
+        "gazing",
+        "fluttered",
+        "glances",
+        "dismay",
+        "flicked",
+        "dangerously"
+      ]
+    },
+    "stage08_snippets": [
+      "she opened her eyes, her heart skipping at how intensely he stared into her.",
+      "he opened his eyes to find her there before him, attired in the loathsome uniform all the maids on his staff wore.",
+      "when he was close, she lifted her head and faced him squarely and opened her eyes."
+    ],
+    "label_public": "Eyes Meeting Across The Room"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He glanced at her. “",
+        "max_topic_prob": 0.8850716352462769,
+        "normalized_position": 0.998806885972388,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 591
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His gaze dipped over her. “",
+        "max_topic_prob": 0.8817566633224487,
+        "normalized_position": 0.2742457814896881,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Her gaze sought his. “",
+        "max_topic_prob": 0.8787738084793091,
+        "normalized_position": 0.811914095790012,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 493
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She met his probing gaze. “",
+        "max_topic_prob": 0.8781869411468506,
+        "normalized_position": 0.4700869268791546,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 442
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His gaze warmed as he looked at her. “",
+        "max_topic_prob": 0.8716498017311096,
+        "normalized_position": 0.6480313618544401,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She looked up at him. “",
+        "max_topic_prob": 0.8694372177124023,
+        "normalized_position": 0.3755752514061701,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He looked up at her, his gaze narrowed. “",
+        "max_topic_prob": 0.9101034998893738,
+        "normalized_position": 0.4701972080655883,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He looked up and fixed his gaze on her. “",
+        "max_topic_prob": 0.9056359529495239,
+        "normalized_position": 0.8838909816086861,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He held her gaze. “",
+        "max_topic_prob": 0.9027086496353149,
+        "normalized_position": 0.33348105473077777,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He held her gaze. “",
+        "max_topic_prob": 0.9027086496353149,
+        "normalized_position": 0.8874362951473521,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He held her gaze. “",
+        "max_topic_prob": 0.9027083516120911,
+        "normalized_position": 0.3485486372701086,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He stared into her eyes. “",
+        "max_topic_prob": 0.8804532289505005,
+        "normalized_position": 0.2311101263017948,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her gaze snapped to his. “",
+        "max_topic_prob": 0.8919771909713745,
+        "normalized_position": 0.211490215755143,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She turned to look at him. “",
+        "max_topic_prob": 0.8737373352050781,
+        "normalized_position": 0.5900652282990466,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He turned his head to look at her. “",
+        "max_topic_prob": 0.8660052418708801,
+        "normalized_position": 0.9759157049673859,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She looked up and her gaze slammed into his.",
+        "max_topic_prob": 0.8390413522720337,
+        "normalized_position": 0.022579026593075764,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Anna’s eyes narrowed on him. “",
+        "max_topic_prob": 0.8123698234558105,
+        "normalized_position": 0.558705469141997,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He saw it in her eyes. “",
+        "max_topic_prob": 0.8077443242073059,
+        "normalized_position": 0.4872052182639237,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She gives me a quick glance before going back to her reading. “",
+        "max_topic_prob": 0.6755039691925049,
+        "normalized_position": 0.8510424516453152,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I shoot her a look. “",
+        "max_topic_prob": 0.636197566986084,
+        "normalized_position": 0.15837729213765386,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Mom raises her head and blinks at me. “",
+        "max_topic_prob": 0.6359515190124512,
+        "normalized_position": 0.616553629741271,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Ginnie rolls her eyes. “",
+        "max_topic_prob": 0.613837718963623,
+        "normalized_position": 0.9036674202461693,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Oliver glances up and sees Jeremy approaching.",
+        "max_topic_prob": 0.5595659017562866,
+        "normalized_position": 0.4354433559407184,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Our waitress appears and Dad beams at her. “",
+        "max_topic_prob": 0.5483866930007935,
+        "normalized_position": 0.09721175584024115,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She flicked a glance over him.",
+        "max_topic_prob": 0.8471634984016418,
+        "normalized_position": 0.741514360313316,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She blinked at that and sat up to look at him directly. “",
+        "max_topic_prob": 0.8360433578491211,
+        "normalized_position": 0.9392017903767251,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She put her hand over his, making him look at her. “",
+        "max_topic_prob": 0.8095449209213257,
+        "normalized_position": 0.8914584110406565,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Wide-eyed, disbelief running through her veins, she just looked up at him.",
+        "max_topic_prob": 0.8007709980010986,
+        "normalized_position": 0.9030212607236106,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She sat back on her heels and looked him straight in the eye. “",
+        "max_topic_prob": 0.7896062135696411,
+        "normalized_position": 0.12122342409548675,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He looked at her, a worried expression on his face. “",
+        "max_topic_prob": 0.7534686326980591,
+        "normalized_position": 0.9220440134278255,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He glanced at me and turned to her. “",
+        "max_topic_prob": 0.8348836302757263,
+        "normalized_position": 0.8670756646216768,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Sweetie,” she answered as she stared into my eyes. “",
+        "max_topic_prob": 0.740943431854248,
+        "normalized_position": 0.7566462167689162,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "They glanced at each other.",
+        "max_topic_prob": 0.7356318235397339,
+        "normalized_position": 0.11619260085517755,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "She turned to me. “",
+        "max_topic_prob": 0.7204177379608154,
+        "normalized_position": 0.2007808142777468,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He turned to the girls. “",
+        "max_topic_prob": 0.6804516315460205,
+        "normalized_position": 0.2405651608105596,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "She quickly scanned our faces. “",
+        "max_topic_prob": 0.6650251150131226,
+        "normalized_position": 0.013013571295779885,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He squirmed beneath the intent gaze, hoping he was reading the emotions there correctly.",
+        "max_topic_prob": 0.611153244972229,
+        "normalized_position": 0.5956454121306376,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He pulled back and pressed in again, reveling in the way Alberto’s dark eyes flared to black. “",
+        "max_topic_prob": 0.6046332120895386,
+        "normalized_position": 0.7,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Alberto turned to face his friend. “",
+        "max_topic_prob": 0.5796763896942139,
+        "normalized_position": 0.05194401244167963,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He focused on Alberto’s legs, refusing to look up at his face, suddenly aware of the intimacy of what he was about to do.",
+        "max_topic_prob": 0.5631290674209595,
+        "normalized_position": 0.5925349922239502,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He saw several surprised looks, but everyone complied. “",
+        "max_topic_prob": 0.5568832159042358,
+        "normalized_position": 0.1629860031104199,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Dillon dropped to his knees and yanked her head back, forcing her to look into his eyes. “",
+        "max_topic_prob": 0.7641885876655579,
+        "normalized_position": 0.9858676207513417,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I forced my eyes to hers, though I really couldn’t see her. “",
+        "max_topic_prob": 0.7322012186050415,
+        "normalized_position": 0.9127906976744186,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Olivia’s jaw dropped open, her eyes wide. “",
+        "max_topic_prob": 0.7260841131210327,
+        "normalized_position": 0.9774597495527728,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I turned around to face her. “",
+        "max_topic_prob": 0.7247852087020874,
+        "normalized_position": 0.8170840787119857,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I know my wide-eyed expression at his contact was evident to her. “",
+        "max_topic_prob": 0.7169276475906372,
+        "normalized_position": 0.07683363148479427,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I looked at her incredulously. “",
+        "max_topic_prob": 0.716147243976593,
+        "normalized_position": 0.0967799642218247,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "As he came forward, her eyes narrowed. “",
+        "max_topic_prob": 0.8760077953338623,
+        "normalized_position": 0.8491399349139935,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Mesmerized, he stared into her eyes. “",
+        "max_topic_prob": 0.8001052141189575,
+        "normalized_position": 0.5332403533240353,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She stared up at him, trying to read his fathomless stare. “",
+        "max_topic_prob": 0.7780971527099609,
+        "normalized_position": 0.99488609948861,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Her eyes opened.",
+        "max_topic_prob": 0.7752532362937927,
+        "normalized_position": 0.9907019990702,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Long moments later, he stared down into her face. “",
+        "max_topic_prob": 0.7736167907714844,
+        "normalized_position": 0.10832171083217108,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She got a shrewd sidelong glance. “",
+        "max_topic_prob": 0.77080899477005,
+        "normalized_position": 0.30032543003254303,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "His gaze narrowed on her face. “",
+        "max_topic_prob": 0.9067879915237427,
+        "normalized_position": 0.2569686411149826,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She narrowed her gaze on him. “",
+        "max_topic_prob": 0.8779248595237732,
+        "normalized_position": 0.5470383275261324,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He turned swiftly to look at her.",
+        "max_topic_prob": 0.818111777305603,
+        "normalized_position": 0.3786295005807201,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "His eyes narrowed. “",
+        "max_topic_prob": 0.8102741241455078,
+        "normalized_position": 0.24767711962833913,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He caught her gaze and grinned. “",
+        "max_topic_prob": 0.8090400695800781,
+        "normalized_position": 0.4715447154471545,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "His gaze focused more on her face.",
+        "max_topic_prob": 0.7954908609390259,
+        "normalized_position": 0.2067363530778165,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He considered her for a moment. “",
+        "max_topic_prob": 0.8425066471099854,
+        "normalized_position": 0.21635771897552003,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 760
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She turned back and looked him straight in the eye. “",
+        "max_topic_prob": 0.8410211801528931,
+        "normalized_position": 0.051223998867977925,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She opened her eyes.",
+        "max_topic_prob": 0.770094633102417,
+        "normalized_position": 0.4734682326305363,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The man, on the other hand, narrowed his eyes as he ran his gaze up and down her body.",
+        "max_topic_prob": 0.7669471502304077,
+        "normalized_position": 0.020659402858355738,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "His gaze returned to Amy and lingered on her body. “",
+        "max_topic_prob": 0.7629967927932739,
+        "normalized_position": 0.778548181689543,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Amy fixed her gaze on him.",
+        "max_topic_prob": 0.7425453662872314,
+        "normalized_position": 0.014574784208292061,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He opened his eyes and met her gaze.",
+        "max_topic_prob": 0.867812991142273,
+        "normalized_position": 0.4645483193277311,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He turned to meet her gaze again. “",
+        "max_topic_prob": 0.8466053605079651,
+        "normalized_position": 0.29464285714285715,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She was staring again. “",
+        "max_topic_prob": 0.8315041065216064,
+        "normalized_position": 0.3399859943977591,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Narrowing her eyes, she studied his face.",
+        "max_topic_prob": 0.8204736709594727,
+        "normalized_position": 0.6593137254901961,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She looked over her shoulder to meet his gaze.",
+        "max_topic_prob": 0.8163814544677734,
+        "normalized_position": 0.03553921568627451,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her hand reached his face, and his eyes flickered open again. \"",
+        "max_topic_prob": 0.8113071322441101,
+        "normalized_position": 0.8890931372549019,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "She tried to figure out what was going on. “",
+        "max_topic_prob": 0.6499643921852112,
+        "normalized_position": 0.5750164365548981,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "The soldier and several others turned and stared at her.",
+        "max_topic_prob": 0.6128519177436829,
+        "normalized_position": 0.3495069033530572,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "They had observed the exchange with the girl.",
+        "max_topic_prob": 0.5817950963973999,
+        "normalized_position": 0.38803418803418804,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "With large dark eyes, she surveyed the strangers coming toward her.",
+        "max_topic_prob": 0.5783262848854065,
+        "normalized_position": 0.3868507560815253,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Chen took it and then examined her husband tenderly.",
+        "max_topic_prob": 0.4266626536846161,
+        "normalized_position": 0.5378040762656148,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Everyone looked around.",
+        "max_topic_prob": 0.4236580431461334,
+        "normalized_position": 0.4911242603550296,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She says, looking at me.",
+        "max_topic_prob": 0.7080890536308289,
+        "normalized_position": 0.559160881376396,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Harlow says, looking up at me with her big eyes. “",
+        "max_topic_prob": 0.6745733022689819,
+        "normalized_position": 0.9068819800784788,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I lean over her and she looks straight up at me. “",
+        "max_topic_prob": 0.6272621154785156,
+        "normalized_position": 0.17748264412918804,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Jash walks up beside me just as I’m about to give her a piece of my mind, he must have sensed his charm was needed. “",
+        "max_topic_prob": 0.590304970741272,
+        "normalized_position": 0.44068819800784786,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Ty says, looking around at everyone. “",
+        "max_topic_prob": 0.5555534362792969,
+        "normalized_position": 0.9495925143374585,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s not far to where we are going and once I pull up, Ruby looks around and I can tell she’s confused. “",
+        "max_topic_prob": 0.5493251085281372,
+        "normalized_position": 0.6625415031693329,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "He turned back to look at her. “",
+        "max_topic_prob": 0.831608772277832,
+        "normalized_position": 0.5498052309404563,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Mathias looked at him intently. “",
+        "max_topic_prob": 0.6602205038070679,
+        "normalized_position": 0.9740307920608422,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Mathias blinked a couple of times. “",
+        "max_topic_prob": 0.6587207317352295,
+        "normalized_position": 0.9497310332034873,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Her eyes were bright and alert, making him hopeful he would be able to tell them about Mathias over lunch. “",
+        "max_topic_prob": 0.6441230773925781,
+        "normalized_position": 0.6870710443331478,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Hélène looked up as he started across the room and met his smirk with one of her own.",
+        "max_topic_prob": 0.6318442821502686,
+        "normalized_position": 0.5271749211649045,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "She took the scene in with a single glance and grabbed Pascal’s arm. “",
+        "max_topic_prob": 0.6302306652069092,
+        "normalized_position": 0.8117232424411055,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Cal narrowed his eyes at her. “",
+        "max_topic_prob": 0.7787933349609375,
+        "normalized_position": 0.7527183872938302,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She looked over her shoulder. “",
+        "max_topic_prob": 0.7717335224151611,
+        "normalized_position": 0.9158216249236408,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I narrowed my eyes at her.",
+        "max_topic_prob": 0.7506527900695801,
+        "normalized_position": 0.624801466096518,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Breathing through the pain, I met her gaze.",
+        "max_topic_prob": 0.7231005430221558,
+        "normalized_position": 0.2255345143555284,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Jane whirled on her, eyes narrowed. “",
+        "max_topic_prob": 0.7153302431106567,
+        "normalized_position": 0.6410507025045815,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He blinked again. “",
+        "max_topic_prob": 0.714055061340332,
+        "normalized_position": 0.08491142333536958,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 329
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.016223841993886667,
+        "n_sentences": 69
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.019384853967433446,
+        "n_sentences": 225
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.021413464927740572,
+        "n_sentences": 243
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0159930212271009,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.015825491873396064,
+        "n_sentences": 111
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.020606968902210566,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.019701944935589796,
+        "n_sentences": 78
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.023772495001110863,
+        "n_sentences": 107
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.002435943702634428,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0009221446449743117,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0012152514051344372,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0020992837737713018,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0008835037233371198,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.002424016408726459,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0031793529081728072,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0007793017456359103,
+        "n_sentences": 5
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 95
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "1.7",
+    "taxonomy_secondary_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

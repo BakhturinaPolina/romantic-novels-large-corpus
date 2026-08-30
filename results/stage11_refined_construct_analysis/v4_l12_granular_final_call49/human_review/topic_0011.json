@@ -1,0 +1,163 @@
+{
+  "topic_id": 11,
+  "label": "Eyes Meeting Across The Room",
+  "taxonomy_main_id": "2.1",
+  "taxonomy_main_name": "Attraction & Sexual Tension",
+  "taxonomy_secondary_id": "1.7",
+  "taxonomy_secondary_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "gaze",
+      "eyes",
+      "looked",
+      "met",
+      "glanced",
+      "stared",
+      "at",
+      "narrowed",
+      "face",
+      "her"
+    ],
+    "KeyBERT": [
+      "glances",
+      "gazing",
+      "peered",
+      "intently",
+      "stares",
+      "squinted",
+      "blinking",
+      "shivered",
+      "affection",
+      "sharply"
+    ],
+    "POS": [
+      "puzzled",
+      "sideways",
+      "glances",
+      "dismay",
+      "behalf",
+      "destination",
+      "taut",
+      "widened",
+      "irritation"
+    ],
+    "MMR": [
+      "puzzled",
+      "intently",
+      "peered",
+      "tentatively",
+      "gazing",
+      "fluttered",
+      "glances",
+      "dismay",
+      "flicked",
+      "dangerously"
+    ]
+  },
+  "stage08_snippets": [
+    "she opened her eyes, her heart skipping at how intensely he stared into her.",
+    "he opened his eyes to find her there before him, attired in the loathsome uniform all the maids on his staff wore.",
+    "when he was close, she lifted her head and faced him squarely and opened her eyes."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.998806885972388,
+      "max_topic_prob": 0.8850716352462769,
+      "sentence": "He glanced at her. “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.2742457814896881,
+      "max_topic_prob": 0.8817566633224487,
+      "sentence": "His gaze dipped over her. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.811914095790012,
+      "max_topic_prob": 0.8787738084793091,
+      "sentence": "Her gaze sought his. “"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.4700869268791546,
+      "max_topic_prob": 0.8781869411468506,
+      "sentence": "She met his probing gaze. “"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.6480313618544401,
+      "max_topic_prob": 0.8716498017311096,
+      "sentence": "His gaze warmed as he looked at her. “"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.3755752514061701,
+      "max_topic_prob": 0.8694372177124023,
+      "sentence": "She looked up at him. “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4701972080655883,
+      "max_topic_prob": 0.9101034998893738,
+      "sentence": "He looked up at her, his gaze narrowed. “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8838909816086861,
+      "max_topic_prob": 0.9056359529495239,
+      "sentence": "He looked up and fixed his gaze on her. “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.33348105473077777,
+      "max_topic_prob": 0.9027086496353149,
+      "sentence": "He held her gaze. “"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8874362951473521,
+      "max_topic_prob": 0.9027086496353149,
+      "sentence": "He held her gaze. “"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3485486372701086,
+      "max_topic_prob": 0.9027083516120911,
+      "sentence": "He held her gaze. “"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2311101263017948,
+      "max_topic_prob": 0.8804532289505005,
+      "sentence": "He stared into her eyes. “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,780 @@
+{
+  "topic_id": 242,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "forgive",
+        "forgiveness",
+        "forgiven",
+        "forgiving",
+        "me",
+        "please",
+        "can",
+        "hope",
+        "ll",
+        "never"
+      ],
+      "KeyBERT": [
+        "forgive",
+        "apology",
+        "harshly",
+        "fault",
+        "spite",
+        "terribly",
+        "hurts",
+        "surely",
+        "assume",
+        "willing"
+      ],
+      "POS": [
+        "spite",
+        "treatment",
+        "apology",
+        "permission",
+        "hurts",
+        "actions",
+        "bigger",
+        "purpose",
+        "process",
+        "emotions"
+      ],
+      "MMR": [
+        "forgive",
+        "spite",
+        "harshly",
+        "treatment",
+        "apology",
+        "permission",
+        "process",
+        "thousand",
+        "emotions",
+        "fault"
+      ]
+    },
+    "stage08_snippets": [
+      "not if you’ll forgive him.” “",
+      "he’ll never forgive you.",
+      "okay, how’s this — i’ll forgive you for summer if you forgive me for kabir.” “"
+    ],
+    "label_public": "Trading Forgiveness For Old Wrongs"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I don’t deserve your forgiveness.” “",
+        "max_topic_prob": 0.7911475896835327,
+        "normalized_position": 0.9562097710245858,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "To forgive?”",
+        "max_topic_prob": 0.7875767946243286,
+        "normalized_position": 0.9241321093172945,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I came to tell you I forgive you.”",
+        "max_topic_prob": 0.775027871131897,
+        "normalized_position": 0.954099398543843,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "It helps me to forgive.” “",
+        "max_topic_prob": 0.7733230590820312,
+        "normalized_position": 0.9561042524005487,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "What does it mean to forgive?",
+        "max_topic_prob": 0.767000138759613,
+        "normalized_position": 0.963701593331223,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "You’re forgiven.”",
+        "max_topic_prob": 0.7603918313980103,
+        "normalized_position": 0.960747071858183,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 391
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You must forgive him,” Rico said with a laugh. “",
+        "max_topic_prob": 0.594333827495575,
+        "normalized_position": 0.5554664528201015,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I take it I’m forgiven?”",
+        "max_topic_prob": 0.7384156584739685,
+        "normalized_position": 0.11705814401232191,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Do forgive me for not having welcomed you more fittingly.”",
+        "max_topic_prob": 0.6687103509902954,
+        "normalized_position": 0.9168271082017713,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Forgive me if I’m intruding.”",
+        "max_topic_prob": 0.644347071647644,
+        "normalized_position": 0.2513156205878578,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What will you do if society here proves unforgiving?”",
+        "max_topic_prob": 0.6125073432922363,
+        "normalized_position": 0.3523296110897189,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Any man delivering such a speech to the lady he had planned to marry—a lady who had waited faithfully for him—should have had the grace to appear remorseful, or at least apologetic.",
+        "max_topic_prob": 0.5467497110366821,
+        "normalized_position": 0.261455525606469,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I don’t think he’s ever forgiven Ayersley for having thrashed him so badly.”",
+        "max_topic_prob": 0.5247099995613098,
+        "normalized_position": 0.8938518803747915,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Forgive him.",
+        "max_topic_prob": 0.7539980411529541,
+        "normalized_position": 0.3518614270941055,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’d try to forgive him.”",
+        "max_topic_prob": 0.7384766936302185,
+        "normalized_position": 0.3472078593588418,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "And forgive him.",
+        "max_topic_prob": 0.6902188062667847,
+        "normalized_position": 0.9369183040330921,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Forgive me, sweetheart, and maybe someday we’ll all get another shot.",
+        "max_topic_prob": 0.5617867708206177,
+        "normalized_position": 0.9524301964839711,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I let someone I love slip away, and I was too proud to fight to get him back.”",
+        "max_topic_prob": 0.509140133857727,
+        "normalized_position": 0.9744053774560496,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I would have forgiven you eventually.” “",
+        "max_topic_prob": 0.7865581512451172,
+        "normalized_position": 0.9095801937567277,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I don’t know how he’d ever forgive me for that.”",
+        "max_topic_prob": 0.7798746824264526,
+        "normalized_position": 0.7167630057803468,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You’ve forgiven me then?”",
+        "max_topic_prob": 0.7781267166137695,
+        "normalized_position": 0.8543352601156069,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’ve apologized over and over, but I can’t make you forgive me.",
+        "max_topic_prob": 0.759803295135498,
+        "normalized_position": 0.8424442609413708,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What I’m asking, though, here and now, is if you’ve forgiven me .",
+        "max_topic_prob": 0.732986330986023,
+        "normalized_position": 0.8548307184145334,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Maybe give ya a chance of bein ’ forgiven for stuff.”",
+        "max_topic_prob": 0.70537269115448,
+        "normalized_position": 0.7116432700247729,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But the question I asked was whether or not you’d forgive Irene.",
+        "max_topic_prob": 0.6151187419891357,
+        "normalized_position": 0.3679603633360859,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You’ll have to forgive me if I don’t believe you.” “",
+        "max_topic_prob": 0.7978876829147339,
+        "normalized_position": 0.9070003381805885,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Forgive me if I’m thankful it wasn’t you.”",
+        "max_topic_prob": 0.7333850860595703,
+        "normalized_position": 0.274940818397024,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "So you don’t think I should forgive her?”",
+        "max_topic_prob": 0.7322894930839539,
+        "normalized_position": 0.2756171795738925,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "So you do think I should forgive her?” “",
+        "max_topic_prob": 0.7176722288131714,
+        "normalized_position": 0.2773080825160636,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I think you should forgive her for you.",
+        "max_topic_prob": 0.6459348201751709,
+        "normalized_position": 0.2776462631044978,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "But forgiveness doesn’t require you to invite her back into your life, and it certainly doesn’t obligate you to take the blame for the attack.",
+        "max_topic_prob": 0.5987308025360107,
+        "normalized_position": 0.2786608048698005,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Forgive me.” “",
+        "max_topic_prob": 0.8063175678253174,
+        "normalized_position": 0.112891821824181,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Can you forgive me?",
+        "max_topic_prob": 0.7956651449203491,
+        "normalized_position": 0.8253594155078954,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Forgiven?”",
+        "max_topic_prob": 0.7173635363578796,
+        "normalized_position": 0.5760075418336082,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Now if he could forgive himself.",
+        "max_topic_prob": 0.702016294002533,
+        "normalized_position": 0.23002592505302852,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "If you can forgive us enough to take that step, I will swear on any promise you want that we still love you.",
+        "max_topic_prob": 0.6821796298027039,
+        "normalized_position": 0.7593683714353052,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He wasn’t forgiving anyone yet. “",
+        "max_topic_prob": 0.6784319877624512,
+        "normalized_position": 0.8050907376855998,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Forgive me.",
+        "max_topic_prob": 0.7267448902130127,
+        "normalized_position": 0.14297848244620612,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Forgive me.",
+        "max_topic_prob": 0.7267448902130127,
+        "normalized_position": 0.7718006795016987,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I hope you'll forgive my hasty arrival.\"",
+        "max_topic_prob": 0.7117185592651367,
+        "normalized_position": 0.42242355605889015,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Forgive my manners, madam.",
+        "max_topic_prob": 0.6110684871673584,
+        "normalized_position": 0.4249716874292186,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "By nature, he was quick to anger and equally quick to forgive ... except when it came to betrayal.",
+        "max_topic_prob": 0.5384371280670166,
+        "normalized_position": 0.08097395243488109,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I beg your pardon.\"",
+        "max_topic_prob": 0.5024753212928772,
+        "normalized_position": 0.0753114382785957,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "And she wasn’t just sorry, she was repentant.",
+        "max_topic_prob": 0.6222299337387085,
+        "normalized_position": 0.9133466135458167,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Forgive me!”",
+        "max_topic_prob": 0.7673603296279907,
+        "normalized_position": 0.29425682942568293,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Now, forgive me, but I must get back to work.” “",
+        "max_topic_prob": 0.6545109152793884,
+        "normalized_position": 0.10884061088406109,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I have saved you?",
+        "max_topic_prob": 0.512920618057251,
+        "normalized_position": 0.1804689180468918,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Pardon ?”",
+        "max_topic_prob": 0.496258020401001,
+        "normalized_position": 0.31877823187782317,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Do say you will forgive your clumsy chevalier and grant me the very great favor of your company for this waltz.”",
+        "max_topic_prob": 0.48533958196640015,
+        "normalized_position": 0.17251021725102172,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Perhaps unforgivable.",
+        "max_topic_prob": 0.44229766726493835,
+        "normalized_position": 0.8855667885566788,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 410
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You’re such a martyr to sacrifice yourself like that.",
+        "max_topic_prob": 0.4356152415275574,
+        "normalized_position": 0.23922214219569915,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Do you think you can ever forgive me?” “",
+        "max_topic_prob": 0.8269715309143066,
+        "normalized_position": 0.7640380484811292,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Besides, Pop would never forgive me if he found out I let you suffer down here on your own without lending a hand.”",
+        "max_topic_prob": 0.5907275676727295,
+        "normalized_position": 0.40497904855804784,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I won’t accost you again.” “",
+        "max_topic_prob": 0.5052030682563782,
+        "normalized_position": 0.38205570618683754,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 368
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0027183146449201497,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0013078733978550876,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0017177211565989122,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.005088519028940952,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0016548463356973995,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.001328462304882099,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.0013063357282821686,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0012983640612827837,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00030892801977139327,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00024755539051862855,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00010354110581901015,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.00033400133600534405,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0001811922449719152,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00026860059092130003,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 54
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "4.3",
+    "taxonomy_secondary_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

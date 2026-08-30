@@ -1,0 +1,747 @@
+{
+  "topic_id": 171,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "mirror",
+        "reflection",
+        "rearview",
+        "glanced",
+        "herself",
+        "checked",
+        "mirrors",
+        "stared",
+        "looked",
+        "in"
+      ],
+      "KeyBERT": [
+        "reflection",
+        "reflected",
+        "gazing",
+        "peered",
+        "glimpse",
+        "observed",
+        "studied",
+        "flipped",
+        "blinking",
+        "polished"
+      ],
+      "POS": [
+        "reflection",
+        "stares",
+        "glimpse",
+        "surroundings",
+        "unhappy",
+        "fitting",
+        "stunning",
+        "result",
+        "tracks",
+        "sidewalk"
+      ],
+      "MMR": [
+        "reflection",
+        "stares",
+        "glimpse",
+        "surroundings",
+        "stunning",
+        "blinking",
+        "gazing",
+        "shaped",
+        "twitched",
+        "sidewalk"
+      ]
+    },
+    "stage08_snippets": [
+      "she stood and checked her reflection in the mirror over her parents’ dresser.",
+      "esme stared at their reflection in the glass. \"",
+      "but then she stared at her surface-repaired reflection."
+    ],
+    "label_public": "Staring at Her Own Reflection"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She checked the mirror again, fluffed her hair, tried out a smile.",
+        "max_topic_prob": 0.78770911693573,
+        "normalized_position": 0.7663086489542115,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Lifting her head, she caught a look at her dripping face in the mirror.",
+        "max_topic_prob": 0.7874177694320679,
+        "normalized_position": 0.7650650084793669,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Stepping before the mirror that hung on the bathroom door, she held the hangers under her chin.",
+        "max_topic_prob": 0.6839844584465027,
+        "normalized_position": 0.7614471452798192,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "How was that for a Glass-Half-Full perspective?",
+        "max_topic_prob": 0.43325188755989075,
+        "normalized_position": 0.5039049788480312,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "A mirror stood in the corner of the bedroom, and she went to check how she looked.",
+        "max_topic_prob": 0.7677310109138489,
+        "normalized_position": 0.3535385591875595,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She glanced in the mirror and wondered what Richard saw in her.",
+        "max_topic_prob": 0.7671915292739868,
+        "normalized_position": 0.34274833386226594,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "The door clicked shut, and he looked in the mirror and stared at his reflection. “",
+        "max_topic_prob": 0.7630032300949097,
+        "normalized_position": 0.33322754681053635,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She went straight for the mirror above the sink.",
+        "max_topic_prob": 0.7019598484039307,
+        "normalized_position": 0.3395747381783561,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "When the other women left, giving her a disparaging look, she splashed water on her face and stared at her reflection.",
+        "max_topic_prob": 0.5787274241447449,
+        "normalized_position": 0.5715645826721676,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "On the mirror pictures of his friends and Opal were placed at odd angles.",
+        "max_topic_prob": 0.5046831965446472,
+        "normalized_position": 0.8841637575372897,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her reflection.",
+        "max_topic_prob": 0.7724350690841675,
+        "normalized_position": 0.6732356408960755,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I couldn’t see you in the mirror.”",
+        "max_topic_prob": 0.733481764793396,
+        "normalized_position": 0.6794677446521812,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He moved around her then, stepping in front of the mirror, replacing the haunting image with something more tangible. “",
+        "max_topic_prob": 0.7125053405761719,
+        "normalized_position": 0.8489135927235978,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 382
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her heart sped up at the thought of him, and she checked her reflection in the big rearview mirror.",
+        "max_topic_prob": 0.7050943970680237,
+        "normalized_position": 0.2735388243220482,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her reflection looked pretty good, even blurry, and she considered leaving her glasses behind.",
+        "max_topic_prob": 0.6920503377914429,
+        "normalized_position": 0.37847397675593736,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Singing to herself, Maggie swung around and faced her reflection in the mirror.",
+        "max_topic_prob": 0.6817395687103271,
+        "normalized_position": 0.04446690247599798,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nice to see it wasn't any reflection on me.\" \"",
+        "max_topic_prob": 0.7563259601593018,
+        "normalized_position": 0.2652109911678116,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "When I caught a look at her in the mirror, her face was a picture of amusement. \"",
+        "max_topic_prob": 0.7186572551727295,
+        "normalized_position": 0.12193326790971541,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "That's because you don't look in the mirror.",
+        "max_topic_prob": 0.6142385005950928,
+        "normalized_position": 0.04342492639842983,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Stopping to look in the mirror, I didn't notice any difference.",
+        "max_topic_prob": 0.5873528122901917,
+        "normalized_position": 0.03802747791952895,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The first day I walked into the gym, I put the old Doug Smith in my rearview mirror.",
+        "max_topic_prob": 0.47758767008781433,
+        "normalized_position": 0.9030912659470068,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Tuning his unwanted guest out, Mark faced forward looking at the mirror behind the bar, surprised at how quickly the bar and grill had filled up.",
+        "max_topic_prob": 0.5530768632888794,
+        "normalized_position": 0.8258713723202566,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I tried to let her enthusiasm rub off on me as I studied my own reflection.",
+        "max_topic_prob": 0.6049205660820007,
+        "normalized_position": 0.04982817869415808,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "After getting dressed, I go over to the tiny mirror and stare at my reflection.",
+        "max_topic_prob": 0.7560350894927979,
+        "normalized_position": 0.1804637906464568,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "And besides, haven’t you looked in the mirror and saw the same?” “",
+        "max_topic_prob": 0.7044005393981934,
+        "normalized_position": 0.5354320507837803,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Not able to bear the sight of myself any longer, I turn away from the mirror.",
+        "max_topic_prob": 0.6959999799728394,
+        "normalized_position": 0.1304573131234616,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "As I undress, I catch a glimpse of myself in the mirror, cringing by how visible my bones are.",
+        "max_topic_prob": 0.6375244855880737,
+        "normalized_position": 0.7782096126441249,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Whenever you look in the mirror, do you not see perfection staring back?” “",
+        "max_topic_prob": 0.6310595273971558,
+        "normalized_position": 0.535172949863972,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "As I wash my hands, I catch my reflection in the mirror above the sink.",
+        "max_topic_prob": 0.6276583671569824,
+        "normalized_position": 0.12968001036403679,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "She was standing in front of her closet, holding a black lace dress up against her body and looking in the mirror, turning from side to side, stretching the fabric across her belly.",
+        "max_topic_prob": 0.6707216501235962,
+        "normalized_position": 0.5238177723887061,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "After my eyes adjust, I hesitantly examine my back in the full length mirror on the back of the bathroom door.",
+        "max_topic_prob": 0.7245438098907471,
+        "normalized_position": 0.7474774121216118,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 582
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I pass by the mirror in the hallway.",
+        "max_topic_prob": 0.7018111348152161,
+        "normalized_position": 0.2860251929037789,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I make my way into the bathroom and catch a glimpse of myself in the mirror.",
+        "max_topic_prob": 0.6996792554855347,
+        "normalized_position": 0.0488030073204511,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 692
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I undress and take a look in the mirror.",
+        "max_topic_prob": 0.6659174561500549,
+        "normalized_position": 0.377300006595001,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I take a good long look at myself in the mirror.",
+        "max_topic_prob": 0.6575402021408081,
+        "normalized_position": 0.244476686671503,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "When I walk in, I notice a small mirror sitting on the counter.",
+        "max_topic_prob": 0.6440094709396362,
+        "normalized_position": 0.20820418123062717,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her eyes lifted to his in the mirror. “",
+        "max_topic_prob": 0.8117735385894775,
+        "normalized_position": 0.24615867042960177,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He pulled a first aid kit out from under the sink and turned her until she was facing the mirror again.",
+        "max_topic_prob": 0.6915091276168823,
+        "normalized_position": 0.27720288491690187,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "In the bedroom, the mirror must’ve been feeling extra generous.",
+        "max_topic_prob": 0.687618613243103,
+        "normalized_position": 0.7441204139228599,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Turning for the mirror over the dresser, she bared her teeth like she’d seen Brighton do and said, “Grrrr.”",
+        "max_topic_prob": 0.6529414653778076,
+        "normalized_position": 0.29633113828786456,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "In front of the single, large mirror over the sink, he set her on her feet.",
+        "max_topic_prob": 0.6388224363327026,
+        "normalized_position": 0.24176857949200375,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The cream-colored cardigan matched the flats she slipped onto her feet, and when she looked in the mirror again, she felt like a princess.",
+        "max_topic_prob": 0.5554510354995728,
+        "normalized_position": 0.7472561931640013,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "They were mirrored clearly on her face. “",
+        "max_topic_prob": 0.7329893112182617,
+        "normalized_position": 0.47964213985758625,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She went into the bathroom and stared at herself in the mirror.",
+        "max_topic_prob": 0.7902447581291199,
+        "normalized_position": 0.42917214191852826,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "It’s just…have you looked at yourself in the mirror?",
+        "max_topic_prob": 0.6273036003112793,
+        "normalized_position": 0.42762723066754793,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I glanced over at Maggie, who was looking at herself in a compact mirror. “",
+        "max_topic_prob": 0.7938909530639648,
+        "normalized_position": 0.19852507374631267,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I smirked when she looked at me in the mirror. “",
+        "max_topic_prob": 0.7738765478134155,
+        "normalized_position": 0.028023598820058997,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "She looked into the mirror with a mouthful of toothpaste and nodded.",
+        "max_topic_prob": 0.67137610912323,
+        "normalized_position": 0.48761061946902656,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Jenny continually glanced in the rearview mirror while she gave Mia instructions. “",
+        "max_topic_prob": 0.6146742105484009,
+        "normalized_position": 0.8935103244837758,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I’m as big as a house,” she said one night into the mirror above our dresser as she examined her naked body from every angle.",
+        "max_topic_prob": 0.6140648126602173,
+        "normalized_position": 0.7663716814159292,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I tightened my skinny tie in the long mirror nailed to our closet door, and then I turned toward Tyler.",
+        "max_topic_prob": 0.5789564251899719,
+        "normalized_position": 0.5365781710914455,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 36
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0013044612575006521,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0018844221105527637,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0017215122823280144,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004405286343612335,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0012373174956693887,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.0017825311942959,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0017421602787456446,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.001912655403251514,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00018406037180195104,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0001465845793022574,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0002641310089804543,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0001646090534979424,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.00033233632436025255,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00017397355601948505,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0003423875827436658,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 51
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.85,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

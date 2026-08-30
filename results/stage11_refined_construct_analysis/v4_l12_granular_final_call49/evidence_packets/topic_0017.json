@@ -1,0 +1,1187 @@
+{
+  "topic_id": 17,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "8.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "house",
+        "hotel",
+        "room",
+        "apartment",
+        "bedroom",
+        "rent",
+        "upstairs",
+        "home",
+        "bedrooms",
+        "living"
+      ],
+      "KeyBERT": [
+        "porch",
+        "lets",
+        "ceiling",
+        "address",
+        "assume",
+        "remarked",
+        "occupied",
+        "remark",
+        "folks",
+        "ok"
+      ],
+      "POS": [
+        "secure",
+        "concept",
+        "privacy",
+        "separate",
+        "remark",
+        "address",
+        "contrast",
+        "smaller",
+        "sucks",
+        "areas"
+      ],
+      "MMR": [
+        "belongs",
+        "visited",
+        "suggest",
+        "privacy",
+        "address",
+        "built",
+        "remarked",
+        "areas",
+        "guarantee",
+        "intend"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll just go back to the dorms.”",
+      "i think we’ll go back upstairs and discuss that – don’t you?”",
+      "but upstairs—” “we’ll add two more bedrooms and another bath.”"
+    ],
+    "label_public": "Discussing Rooms and Privacy"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I thought you’d want your old room.”",
+        "max_topic_prob": 0.7570504546165466,
+        "normalized_position": 0.07802124833997344,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Does that mean you’re living in the house?”",
+        "max_topic_prob": 0.6955715417861938,
+        "normalized_position": 0.05909694555112882,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Here is one that belongs in your room.”",
+        "max_topic_prob": 0.677054762840271,
+        "normalized_position": 0.6147078353253652,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Is that all guest rooms now?”",
+        "max_topic_prob": 0.6516860723495483,
+        "normalized_position": 0.07187915006640107,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Maybe it was the house itself. “",
+        "max_topic_prob": 0.6260404586791992,
+        "normalized_position": 0.36819389110225764,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We have the back stairway and the rooms on this side, so that’ll give us our privacy.",
+        "max_topic_prob": 0.6214120388031006,
+        "normalized_position": 0.07287516600265605,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "What was the point of a huge house with nobody to live in it?",
+        "max_topic_prob": 0.5478022694587708,
+        "normalized_position": 0.06744868035190615,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "My bedroom?’ ‘",
+        "max_topic_prob": 0.773364782333374,
+        "normalized_position": 0.8282303370786517,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Your bedroom.’ ‘",
+        "max_topic_prob": 0.755928099155426,
+        "normalized_position": 0.8335674157303371,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Your bedroom.’",
+        "max_topic_prob": 0.7524468898773193,
+        "normalized_position": 0.8279494382022472,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It’s my room. ‘",
+        "max_topic_prob": 0.7322505712509155,
+        "normalized_position": 0.7459269662921348,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "First I must find the room.",
+        "max_topic_prob": 0.7091960906982422,
+        "normalized_position": 0.8126404494382022,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "This is my room.’ ‘",
+        "max_topic_prob": 0.7043127417564392,
+        "normalized_position": 0.8367977528089887,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "On the house.”",
+        "max_topic_prob": 0.6417034864425659,
+        "normalized_position": 0.41974210760337927,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "We sat down in my front room.",
+        "max_topic_prob": 0.6245725154876709,
+        "normalized_position": 0.33007262487031275,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Her house.",
+        "max_topic_prob": 0.6189398169517517,
+        "normalized_position": 0.7662664888098414,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 383
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Whose house?",
+        "max_topic_prob": 0.5838214159011841,
+        "normalized_position": 0.7658959537572254,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "My fucking house!",
+        "max_topic_prob": 0.5788222551345825,
+        "normalized_position": 0.7602638209574626,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I didn’t feel comfortable wandering around a stranger’s home by myself, and after a cursory glance around the lower floor, I returned to the sitting room.",
+        "max_topic_prob": 0.57448810338974,
+        "normalized_position": 0.7504816955684007,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "We’ve got a spare bedroom.” “",
+        "max_topic_prob": 0.7478725910186768,
+        "normalized_position": 0.9678923527844391,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Let’s get you upstairs to what will be your room.”",
+        "max_topic_prob": 0.7100205421447754,
+        "normalized_position": 0.43605115907274183,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Our room,” he said. “",
+        "max_topic_prob": 0.7012046575546265,
+        "normalized_position": 0.5582200905941913,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What about at your house?” “",
+        "max_topic_prob": 0.6985458731651306,
+        "normalized_position": 0.4116706634692246,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You must live here in the building, then.” “",
+        "max_topic_prob": 0.6929556131362915,
+        "normalized_position": 0.1474820143884892,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "When we were back in the living room of our suite, I said, “Refresh my memory, Clancey, is there a decent hotel near your parents’ house?” “",
+        "max_topic_prob": 0.6920429468154907,
+        "normalized_position": 0.790833999467093,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "That still doesn’t tell me how you got into my house.”",
+        "max_topic_prob": 0.6375136971473694,
+        "normalized_position": 0.11832319134550372,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Almost as if the room had once belonged to a child.",
+        "max_topic_prob": 0.5398911237716675,
+        "normalized_position": 0.1896551724137931,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The one I couldn’t quite place when I went back to Ariana’s house.”",
+        "max_topic_prob": 0.5057427883148193,
+        "normalized_position": 0.29918864097363085,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "We could just as easily have gone back to my home or a hotel in Paris.”",
+        "max_topic_prob": 0.5038702487945557,
+        "normalized_position": 0.9469235970250169,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He belonged here, far away from the perfection of marble countertops and grenadine floors of the luxury hotels he’d stayed in around the world.",
+        "max_topic_prob": 0.48586106300354004,
+        "normalized_position": 0.30730223123732253,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "With over 11,000 square feet of living space— in case they decided to stay a while as Joaquin explained—the suite boasted everything from a private spa to a cinema.",
+        "max_topic_prob": 0.4732179045677185,
+        "normalized_position": 0.9445571331981069,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "There are two extra rooms upstairs, or you can have the couch.”",
+        "max_topic_prob": 0.6855946779251099,
+        "normalized_position": 0.17600964436407474,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "It’s a beautiful old house,” he said, taking the room in again. “",
+        "max_topic_prob": 0.6635901927947998,
+        "normalized_position": 0.15873015873015872,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "In her own house? “",
+        "max_topic_prob": 0.6629399061203003,
+        "normalized_position": 0.8599557966646574,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You got us a room?",
+        "max_topic_prob": 0.6575455665588379,
+        "normalized_position": 0.7617038376532047,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 423
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I reserved a room.",
+        "max_topic_prob": 0.6511072516441345,
+        "normalized_position": 0.7613019891500904,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 421
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Um, Ely, the bedroom is that way,” she said, gesturing at the stairs. “",
+        "max_topic_prob": 0.613149881362915,
+        "normalized_position": 0.617842073538276,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "How about a tour of the apartment?",
+        "max_topic_prob": 0.6560560464859009,
+        "normalized_position": 0.0929837797057714,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I’m going back to my room.",
+        "max_topic_prob": 0.6468615531921387,
+        "normalized_position": 0.43002640513013957,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I don’t remember any other home than this.”",
+        "max_topic_prob": 0.5882694125175476,
+        "normalized_position": 0.13334590720482836,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Here’s you,” she said, pointing into a small bedroom.",
+        "max_topic_prob": 0.577656626701355,
+        "normalized_position": 0.3525084873632591,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "So, this wasn’t about a home?",
+        "max_topic_prob": 0.570513129234314,
+        "normalized_position": 0.7180309317238778,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "So, my place or yours?”",
+        "max_topic_prob": 0.5413529276847839,
+        "normalized_position": 0.8936250471520181,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Most houses had hallways not unlike this one.",
+        "max_topic_prob": 0.6449230313301086,
+        "normalized_position": 0.8711187392728975,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "This would be the first night I spent at Logan's house as officially our place.",
+        "max_topic_prob": 0.6074115037918091,
+        "normalized_position": 0.9848650335465752,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "After leaving Logan's, I went into town to avoid going back to the apartment and answer for where I was the night before.",
+        "max_topic_prob": 0.598393440246582,
+        "normalized_position": 0.7146200655328444,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It was two bedrooms and two baths.",
+        "max_topic_prob": 0.5913385152816772,
+        "normalized_position": 0.04337650179435169,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "In this bedroom, I was someone else.",
+        "max_topic_prob": 0.5867167115211487,
+        "normalized_position": 0.652051802153222,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "The few nights you stayed here, it finally felt like a home.",
+        "max_topic_prob": 0.5861691832542419,
+        "normalized_position": 0.9750351068809486,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You can pick your room.”",
+        "max_topic_prob": 0.7639447450637817,
+        "normalized_position": 0.08623087621696801,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1302
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Okay… I get my own room?” “",
+        "max_topic_prob": 0.7238512635231018,
+        "normalized_position": 0.37558778727068015,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 509
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You can have your own room if you like.",
+        "max_topic_prob": 0.7080724835395813,
+        "normalized_position": 0.36605073183654546,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 365
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Thank God, the master bedroom is downstairs. “",
+        "max_topic_prob": 0.6937941312789917,
+        "normalized_position": 0.26915689780780183,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1432
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I return to the living room. “",
+        "max_topic_prob": 0.6807776093482971,
+        "normalized_position": 0.43400225180475527,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1391
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Then I head into the living room.",
+        "max_topic_prob": 0.6799267530441284,
+        "normalized_position": 0.7919729783429367,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 848
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "There’s room in the other houses.",
+        "max_topic_prob": 0.7575128078460693,
+        "normalized_position": 0.31088560885608857,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Not in that house.” “",
+        "max_topic_prob": 0.6607604622840881,
+        "normalized_position": 0.4303505535055351,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "In my bedroom?",
+        "max_topic_prob": 0.6551081538200378,
+        "normalized_position": 0.29866236162361626,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "We should probably get what we left in my room.” “",
+        "max_topic_prob": 0.6543824076652527,
+        "normalized_position": 0.47440036900369004,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Upstairs is bedrooms, right?",
+        "max_topic_prob": 0.6538985967636108,
+        "normalized_position": 0.8717712177121771,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You should really move to a hotel.” “",
+        "max_topic_prob": 0.6275861263275146,
+        "normalized_position": 0.4324261992619926,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "This room is lovely.”",
+        "max_topic_prob": 0.6705700159072876,
+        "normalized_position": 0.11930226636108988,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "This is your home, too.”",
+        "max_topic_prob": 0.6425703763961792,
+        "normalized_position": 0.7913165266106442,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Look you to your first home.”",
+        "max_topic_prob": 0.62413489818573,
+        "normalized_position": 0.6404379933791698,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "This was his room, and she liked it even more than the first time she had sneaked into it.",
+        "max_topic_prob": 0.5575656890869141,
+        "normalized_position": 0.5803412274000509,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Where are your belongings?”",
+        "max_topic_prob": 0.531684398651123,
+        "normalized_position": 0.07193786605551311,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Come bring them inside.",
+        "max_topic_prob": 0.5307668447494507,
+        "normalized_position": 0.8256939139292081,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My room is just down the hall.\"",
+        "max_topic_prob": 0.7678749561309814,
+        "normalized_position": 0.3591019091153536,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Where’s your roommate?”",
+        "max_topic_prob": 0.7084840536117554,
+        "normalized_position": 0.20408712019360042,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I should have requested a single room.",
+        "max_topic_prob": 0.6791266202926636,
+        "normalized_position": 0.07394460876579725,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Just to my room?",
+        "max_topic_prob": 0.6660221815109253,
+        "normalized_position": 0.4252487227749395,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Hers and Codie’s dorm room is next door to mine.”",
+        "max_topic_prob": 0.6488795876502991,
+        "normalized_position": 0.2000537778972842,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I'll have a room ready for you when you come back because like hell I'm gonna let you live with anyone else.\" \"",
+        "max_topic_prob": 0.6392977237701416,
+        "normalized_position": 0.9825221833826298,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I’ve got a room at the — ” “I don’t care, take me somewhere .”",
+        "max_topic_prob": 0.6378270387649536,
+        "normalized_position": 0.04641414526331834,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Probably Fen’s bedroom.",
+        "max_topic_prob": 0.6321053504943848,
+        "normalized_position": 0.3070650102888499,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 593
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "This is your house.",
+        "max_topic_prob": 0.627179741859436,
+        "normalized_position": 0.8822498285191678,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 608
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You know I don’t go in the good room .” “",
+        "max_topic_prob": 0.6091041564941406,
+        "normalized_position": 0.6241140157000229,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Firstly, we have houses up there.",
+        "max_topic_prob": 0.607871413230896,
+        "normalized_position": 0.9561009069430684,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "My house is a mess as well .”",
+        "max_topic_prob": 0.6069819927215576,
+        "normalized_position": 0.5453090465665726,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "The whole place is no bigger than my living room.",
+        "max_topic_prob": 0.608342170715332,
+        "normalized_position": 0.9331720592682189,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "As I follow her to the rear of the house, I peek left and right into the dining and living rooms.",
+        "max_topic_prob": 0.6053276062011719,
+        "normalized_position": 0.35772603568188693,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "In the hall. “",
+        "max_topic_prob": 0.5741169452667236,
+        "normalized_position": 0.5192016933776837,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "The room’s spinning again.",
+        "max_topic_prob": 0.49685749411582947,
+        "normalized_position": 0.2978530390081645,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "We get out of my car and lounge on the stucco balustrades lining the entrance steps. “",
+        "max_topic_prob": 0.49636024236679077,
+        "normalized_position": 0.18808587843967342,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Cozy and intimate.",
+        "max_topic_prob": 0.493741512298584,
+        "normalized_position": 0.9334744481403084,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Then…the realtor moved into the house nearest mine.",
+        "max_topic_prob": 0.6154845952987671,
+        "normalized_position": 0.3891028545536928,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 543
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Tell me about your landlord.",
+        "max_topic_prob": 0.6079493165016174,
+        "normalized_position": 0.18747168101495243,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You were living in a tent.”",
+        "max_topic_prob": 0.5958093404769897,
+        "normalized_position": 0.22315360217489805,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Since I’m here, why don’t I go apartment hunting with you?",
+        "max_topic_prob": 0.5864627361297607,
+        "normalized_position": 0.2724286361576801,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "But I like our cabin.”",
+        "max_topic_prob": 0.5732669830322266,
+        "normalized_position": 0.974626189397372,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "My tenancy here is done.",
+        "max_topic_prob": 0.5675894618034363,
+        "normalized_position": 0.26982328953330315,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 310
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.012562474672430097,
+        "n_sentences": 93
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.008013827781269642,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.016065192083818392,
+        "n_sentences": 69
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.011443779108449768,
+        "n_sentences": 172
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.019581363943281565,
+        "n_sentences": 145
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.013360053440213761,
+        "n_sentences": 80
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.013943661971830987,
+        "n_sentences": 99
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.008284501919579712,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0012818869375721062,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0028470561439471586,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0035074045206547155,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0014705882352941176,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.003029155622870125,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0027183146449201497,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0033444816053511705,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.002765114714894253,
+        "n_sentences": 37
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 91
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "8.1",
+    "taxonomy_main_name": "Domestic Spaces & Routines",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

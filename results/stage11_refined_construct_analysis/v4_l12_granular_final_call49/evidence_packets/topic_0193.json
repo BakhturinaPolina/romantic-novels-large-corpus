@@ -1,0 +1,735 @@
+{
+  "topic_id": 193,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "caleb",
+        "gage",
+        "jeremiah",
+        "conrad",
+        "mica",
+        "said",
+        "texting",
+        "ignore",
+        "went",
+        "fooled"
+      ],
+      "KeyBERT": [
+        "dr",
+        "willing",
+        "hi",
+        "uh",
+        "arrange",
+        "stares",
+        "embarrassment",
+        "nearby",
+        "speaking",
+        "admitted"
+      ],
+      "POS": [
+        "snaps",
+        "hopeful",
+        "stares",
+        "embarrassment",
+        "explanation",
+        "evidence",
+        "screen",
+        "bodies",
+        "huge"
+      ],
+      "MMR": [
+        "prodded",
+        "acknowledge",
+        "snaps",
+        "arrange",
+        "collected",
+        "hopeful",
+        "hovered",
+        "stares",
+        "embarrassment",
+        "climb"
+      ]
+    },
+    "stage08_snippets": [
+      "and you’ll both stay here, at caleb’s?” “",
+      "i'll arrange for a nurse to come to the house when they release caleb.",
+      "twenty-three caleb y ou ignore me, and i’ll ignore you ."
+    ],
+    "label_public": "Nurse Arranged After Hospital Release"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Kayla points to me, like she can't figure out who Gavin's talking about.",
+        "max_topic_prob": 0.5644353628158569,
+        "normalized_position": 0.24367473954809904,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gavin asks.",
+        "max_topic_prob": 0.5420408844947815,
+        "normalized_position": 0.4263293194425653,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gavin asks.",
+        "max_topic_prob": 0.5420408844947815,
+        "normalized_position": 0.4762549046137194,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gavin asks.",
+        "max_topic_prob": 0.5420408248901367,
+        "normalized_position": 0.9485861182519281,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gavin turns to me. \"",
+        "max_topic_prob": 0.5320802927017212,
+        "normalized_position": 0.3354079285617643,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "So Gavin, what about you?\"",
+        "max_topic_prob": 0.529509425163269,
+        "normalized_position": 0.7161412528751184,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Did he mention how Chloe is doing?” “",
+        "max_topic_prob": 0.5635859966278076,
+        "normalized_position": 0.2804945054945055,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "In any case, I’m going to need to return myself to help out because Ramsey will be busy with Chloe and the baby,” he continued. “",
+        "max_topic_prob": 0.5250139832496643,
+        "normalized_position": 0.1315934065934066,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "After numerous brushes with the law and butting heads with the parents of a young lady who didn’t want him to be a part of their daughter’s life, Dillon had convinced Bane to get his life together.",
+        "max_topic_prob": 0.43967053294181824,
+        "normalized_position": 0.5241758241758242,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "This was September, and Chloe was due to deliver in November, which meant Callum would be leaving Denver a few months after that.",
+        "max_topic_prob": 0.43066972494125366,
+        "normalized_position": 0.7085164835164836,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Dillon and Ramsey did an awesome job and I know for sure we were a handful at times, some of us more than others.”",
+        "max_topic_prob": 0.38300609588623047,
+        "normalized_position": 0.3354395604395604,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "From what Callum had heard, Bane had been only eight when his parents had been killed.",
+        "max_topic_prob": 0.32998937368392944,
+        "normalized_position": 0.5233516483516484,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "“Hey, Braxton.",
+        "max_topic_prob": 0.5168243050575256,
+        "normalized_position": 0.8926928972917731,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "“Braxton!”",
+        "max_topic_prob": 0.5011170506477356,
+        "normalized_position": 0.8513030148185999,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It was only his twin, Braxton.",
+        "max_topic_prob": 0.45608285069465637,
+        "normalized_position": 0.018395503321410323,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Braxton just studied him for a moment.",
+        "max_topic_prob": 0.430648535490036,
+        "normalized_position": 0.025038323965252938,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "In the end, they always did what Braxton wanted.",
+        "max_topic_prob": 0.40164315700531006,
+        "normalized_position": 0.08942258559018906,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "If it wasn’t because we were part-human, then it was because of Braxton’s handicaps.” “",
+        "max_topic_prob": 0.36080366373062134,
+        "normalized_position": 0.6683699540112417,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He wanted Katelyn to be there with him when it came time to have this discussion with Jenny.",
+        "max_topic_prob": 0.5661532878875732,
+        "normalized_position": 0.5678598629093679,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Subconsciously, I knew that without Brody in my life, I could never finish it,” Nellie added with a soft smirk. “",
+        "max_topic_prob": 0.5503700971603394,
+        "normalized_position": 0.5084539223153085,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Besides, you said yourself, Jenny could use a father figure in her life, now that Kevin lives in Montana.”",
+        "max_topic_prob": 0.5442134141921997,
+        "normalized_position": 0.0077684691546077685,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Brody thought that it was time for him to leave and he bid them both farewell and decided to exit, but not before asking Katelyn if she’d be alright. “",
+        "max_topic_prob": 0.5424296259880066,
+        "normalized_position": 0.5180502665651181,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 460
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Kevin assured her that Jenny would be fine at Brody’s ranch and that Patrick, Rosalina and their son were there too. “",
+        "max_topic_prob": 0.5227527618408203,
+        "normalized_position": 0.45133282559025134,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Kevin did what was expected of him and stood by Katelyn.",
+        "max_topic_prob": 0.5152044892311096,
+        "normalized_position": 0.3599390708301599,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 452
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "It was Tialin, of course.",
+        "max_topic_prob": 0.3950498104095459,
+        "normalized_position": 0.8551420568227291,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He had put Lily down and she was now dancing with Archie, who had been happy to team up with a little person, provided they weren’t one of his siblings.",
+        "max_topic_prob": 0.5265619158744812,
+        "normalized_position": 0.9298245614035088,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Elish…” Garrett whispered to him, once again he knew they were sharing the same thoughts. “",
+        "max_topic_prob": 0.5894919633865356,
+        "normalized_position": 0.9435841313269494,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 1021
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Elish’s voice wavered on dangerous, but I had a feeling that Garrett couldn’t care less. “",
+        "max_topic_prob": 0.5816517472267151,
+        "normalized_position": 0.7166073871409029,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1596
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Did he want to keep him from Garrett so once Silas killed me he could have him for himself?",
+        "max_topic_prob": 0.5736520290374756,
+        "normalized_position": 0.3382216142270862,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1611
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Garrett has the boy… he would not let him go. “",
+        "max_topic_prob": 0.5733355283737183,
+        "normalized_position": 0.9701778385772913,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 1507
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Elish… sometimes Silas’s games can be trying-” Garrett started to say but Elish abruptly cut him off. “",
+        "max_topic_prob": 0.5638551115989685,
+        "normalized_position": 0.7135978112175103,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1541
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Garrett was kind enough to distract Silas for a few moments as I took you and left, no one stopped me for obvious reasons,” Elish responded, but a moment later I felt the mood change around him.",
+        "max_topic_prob": 0.5633654594421387,
+        "normalized_position": 0.9948016415868673,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 1957
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Maya...erm...” “You know you can tell me, right?”",
+        "max_topic_prob": 0.5472908020019531,
+        "normalized_position": 0.7721868528035591,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don't know, I always saw Rohan with Katherine,\" I mused, pushing on with whatever I have to say, \"I know you would never adopt a kid so-\" \"Maya, it's not-\" he tried to interrupt but I threw in before he could, \"so you have a son with another woman who must be missing, or must be in prison or must be sick for ages, or must have left you after delivering the kid or-\" He managed to cut me in \"Wait wait!",
+        "max_topic_prob": 0.5470409393310547,
+        "normalized_position": 0.4816292091738897,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Maya, whose kid is he?\"",
+        "max_topic_prob": 0.5157269239425659,
+        "normalized_position": 0.5353225435299532,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m there for him, Maya.” “",
+        "max_topic_prob": 0.5047929286956787,
+        "normalized_position": 0.8985963028304058,
+        "tertile": "end",
+        "chapter_index": 57,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Maya...\" he tried to persuade me. \"",
+        "max_topic_prob": 0.4976286292076111,
+        "normalized_position": 0.8705990642018869,
+        "tertile": "end",
+        "chapter_index": 56,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Damn,Maya! \"",
+        "max_topic_prob": 0.47862017154693604,
+        "normalized_position": 0.04425864846206949,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Zach did the same thing he did every time Tessa asked him about the house.",
+        "max_topic_prob": 0.5910266041755676,
+        "normalized_position": 0.48267853686858914,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He was actually a little grateful that Tessa would be there.",
+        "max_topic_prob": 0.5539883971214294,
+        "normalized_position": 0.695955099670989,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "The last thing he needed was Tessa poking around in his head.",
+        "max_topic_prob": 0.5466320514678955,
+        "normalized_position": 0.6740855428682021,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Well, get to it, then,” Tessa commanded briskly, turning on her heels and walking out of Zach’s office.",
+        "max_topic_prob": 0.5374018549919128,
+        "normalized_position": 0.6827946584091349,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Tessa did a good job of distracting him.",
+        "max_topic_prob": 0.5363466143608093,
+        "normalized_position": 0.7151151538610412,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He wanted Zach to feel the sweet, innocent love of a child, to know how it felt that in that child’s worldview, the names “Mom” and “Uncle” were the names of God; that a teenage sister depended on him and respected him because he didn’t judge her; that a best friend with her own broken pieces felt safe and secure enough in his presence to be herself and to let herself heal.",
+        "max_topic_prob": 0.515967845916748,
+        "normalized_position": 0.5657054383588156,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You heard her mention Gideon.",
+        "max_topic_prob": 0.5479531288146973,
+        "normalized_position": 0.10281093569503273,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I can’t go to a doctor yet because of Gideon, but I think it’s a girl .” “",
+        "max_topic_prob": 0.5439410209655762,
+        "normalized_position": 0.9768964189449365,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Gideon doesn’t know yet,” Niva soothed. “",
+        "max_topic_prob": 0.5347363948822021,
+        "normalized_position": 0.9518675394686177,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I have to finish this ship before Gideon takes me in for testing.”",
+        "max_topic_prob": 0.5187204480171204,
+        "normalized_position": 0.9524451289949942,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "To Gideon.",
+        "max_topic_prob": 0.5021911859512329,
+        "normalized_position": 0.9077782056218714,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "How would Commander Gideon follow then?",
+        "max_topic_prob": 0.49216732382774353,
+        "normalized_position": 0.04582210242587601,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 200
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0023287405394915583,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.008068081343943413,
+        "n_sentences": 146
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.001652892561983471,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003183724180773412,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.002178352620830497,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0036138358286009293,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0025351014040561623,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.002449479485609308,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0002012477359629704,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00016963528413910093,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 50
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "5.1",
+    "taxonomy_secondary_name": "Family, Kinship & Parenthood",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "topic_id": 305,
+  "label": "Confessing A Lifelong Regret",
+  "taxonomy_main_id": "4.5",
+  "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+  "taxonomy_secondary_id": "3.2",
+  "taxonomy_secondary_name": "Negative Emotions & Distress",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "regret",
+      "regretted",
+      "regrets",
+      "regretting",
+      "regrettable",
+      "won",
+      "will",
+      "decision",
+      "promise",
+      "don"
+    ],
+    "KeyBERT": [
+      "embarrassing",
+      "fears",
+      "remark",
+      "admit",
+      "surely",
+      "instantly",
+      "decision"
+    ],
+    "POS": [
+      "fears",
+      "remark",
+      "decision",
+      "loose",
+      "upset",
+      "unable"
+    ],
+    "MMR": [
+      "handled",
+      "fears",
+      "remark",
+      "fumbled",
+      "drift",
+      "assure",
+      "acted",
+      "decision",
+      "upset",
+      "ended"
+    ]
+  },
+  "stage08_snippets": [
+    "i know that now, and i’ll go to my grave regretting what i did to you.” “",
+    "come on in, you’ll no doubt regret it.",
+    "you’ll regret that.’ ‘"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6006559031281534,
+      "max_topic_prob": 0.6633476614952087,
+      "sentence": "You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7759838546922301,
+      "max_topic_prob": 0.529068112373352,
+      "sentence": "I fear that my careless remarks must have been the cause of that outburst."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8607467204843592,
+      "max_topic_prob": 0.5260027647018433,
+      "sentence": "I’d really rather you didn’t!’"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4341574167507568,
+      "max_topic_prob": 0.5141103863716125,
+      "sentence": "At his words, a wave of regret washed over Helena. ‘"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4542403904820012,
+      "max_topic_prob": 0.7045595645904541,
+      "sentence": "Regret surged."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.023184868822452714,
+      "max_topic_prob": 0.6328611373901367,
+      "sentence": "There were no regrets."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.610738255033557,
+      "max_topic_prob": 0.6141446828842163,
+      "sentence": "Cringing, he regretted the admission."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6937156802928615,
+      "max_topic_prob": 0.5972819924354553,
+      "sentence": "Regret for her actions consumed her."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.4196206785703849,
+      "max_topic_prob": 0.8063786029815674,
+      "sentence": "You’ll never regret it, I promise.\""
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.6867237499634706,
+      "max_topic_prob": 0.7295703887939453,
+      "sentence": "You're going to regret this, Father.\""
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.31771822671615185,
+      "max_topic_prob": 0.5806866884231567,
+      "sentence": "I have been unkind to you, which I deeply regret."
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6278675589584733,
+      "max_topic_prob": 0.5557873249053955,
+      "sentence": "Now you don't, but you wish you still did.\""
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

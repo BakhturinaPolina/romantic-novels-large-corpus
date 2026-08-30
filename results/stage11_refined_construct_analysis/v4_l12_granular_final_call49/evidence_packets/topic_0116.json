@@ -1,0 +1,1110 @@
+{
+  "topic_id": 116,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "plate",
+        "fork",
+        "plates",
+        "sandwich",
+        "bowl",
+        "bread",
+        "piece",
+        "food",
+        "set",
+        "bacon"
+      ],
+      "KeyBERT": [
+        "meal",
+        "eaten",
+        "feeding",
+        "tasted",
+        "dipped",
+        "swallowed",
+        "eagerly",
+        "preparing",
+        "absently",
+        "stirred"
+      ],
+      "POS": [
+        "handful",
+        "irritation",
+        "enthusiasm",
+        "sized",
+        "anticipation",
+        "elbows",
+        "amusement",
+        "advantage",
+        "opposite",
+        "warmth"
+      ],
+      "MMR": [
+        "dipped",
+        "stirred",
+        "absently",
+        "bursting",
+        "plucked",
+        "eagerly",
+        "hovering",
+        "eyeing",
+        "preparing",
+        "enthusiasm"
+      ]
+    },
+    "stage08_snippets": [
+      "[person] dipped his spoon into the ice cream dish once again, and my mouth opened in anticipation.",
+      "i’ll finish the carrots up while you wash those,” he said, nodding to the potatoes she held as he reached for the bowl of veggies she had left unfinished.",
+      "i’ll get that,” clarissa said, whisking mandy’s empty plate away and depositing it on the counter along with her own before mandy could say a word. “"
+    ],
+    "label_public": "Sharing A Meal Together"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He picked up his fork and tapped it against his plate. “",
+        "max_topic_prob": 0.8118282556533813,
+        "normalized_position": 0.19187570198427556,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She dropped her fork onto her plate with a clatter. “",
+        "max_topic_prob": 0.7856110334396362,
+        "normalized_position": 0.9088356420816174,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Emily picked up her fork and forced another bite. “",
+        "max_topic_prob": 0.7718545198440552,
+        "normalized_position": 0.9095844253088731,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She set her spoon down with a sharp click. “",
+        "max_topic_prob": 0.7167232036590576,
+        "normalized_position": 0.17970797454137027,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She reached across the table and pulled the pie plate away from him before he could sink his fork in.",
+        "max_topic_prob": 0.6914551258087158,
+        "normalized_position": 0.21228004492699362,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She dropped a generous scoop of it on Jake’s pie and set it in front of him. “",
+        "max_topic_prob": 0.690101146697998,
+        "normalized_position": 0.25739423436915015,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Bacchus chased it with his forked tongue, catching the droplets before they hit the sheets. “",
+        "max_topic_prob": 0.49566641449928284,
+        "normalized_position": 0.8389494549058474,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 1693
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Finishing off his sandwich in a couple of bites, he reached for another and checked to see how she was doing. “",
+        "max_topic_prob": 0.7462248802185059,
+        "normalized_position": 0.6236559139784946,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 484
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Grabbing a couple of napkins, he moved on, snagging a bag of chips to round out the meal.",
+        "max_topic_prob": 0.6969956159591675,
+        "normalized_position": 0.6148582600195504,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She sat it on her napkin. “",
+        "max_topic_prob": 0.6737663745880127,
+        "normalized_position": 0.6212121212121212,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 474
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He gave her the ice cream and the napkin he‟d held at the ready.",
+        "max_topic_prob": 0.6643053293228149,
+        "normalized_position": 0.8391984359726296,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1366
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She held out a hand for the bowl. “",
+        "max_topic_prob": 0.6558793783187866,
+        "normalized_position": 0.8384652981427175,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1363
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She was sitting up and sipping her ice water when he finally showed with the pile of sandwiches.",
+        "max_topic_prob": 0.6551904678344727,
+        "normalized_position": 0.6185239491691105,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "For stories of women’s experiences regarding Communion, see (no author, transcripts of group conversation), “Setting the Table: Meanings of Communion,” in Setting the Table: Women in Theological Conversation , ed.",
+        "max_topic_prob": 0.2793728709220886,
+        "normalized_position": 0.7300139499946346,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 1282
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "A piece of food popped out of her mouth as she garbled the words. “",
+        "max_topic_prob": 0.7008316516876221,
+        "normalized_position": 0.08503508220756101,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "His lips quirked, and he set to cleaning his silverware with the napkin he’d used on his water glass. “",
+        "max_topic_prob": 0.6481788158416748,
+        "normalized_position": 0.43920829406220546,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I asked, as the man walked off with his food in hand . “",
+        "max_topic_prob": 0.6386100053787231,
+        "normalized_position": 0.10943554298879464,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I shrugged and sat back, as the waitress I’d come to know as Ronnie set our plates down.",
+        "max_topic_prob": 0.636015772819519,
+        "normalized_position": 0.5302125877055189,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Another forkful of food disappeared behind his fat lips, taunting my patience . “",
+        "max_topic_prob": 0.6265144348144531,
+        "normalized_position": 0.4416169232380354,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He swiped up the phone, but dropped it with a clang against the table, rattling his silverware, and I frowned at his fumbling, as he set his napkin on his food instead of beside his plate. “",
+        "max_topic_prob": 0.6147605180740356,
+        "normalized_position": 0.4461200125667609,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I pulled away abruptly as I pulled the dishes from the sink. “",
+        "max_topic_prob": 0.6754425764083862,
+        "normalized_position": 0.26124625124958345,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I reached down to pick them up, and on the way banged the back of my head on the counter. “",
+        "max_topic_prob": 0.578832745552063,
+        "normalized_position": 0.05931356214595135,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He didn’t look up; just looked at his plate, and cut his chicken into the perfectly even pieces he needed before he would take a bite.",
+        "max_topic_prob": 0.5305529832839966,
+        "normalized_position": 0.23992002665778073,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I opened my menu.",
+        "max_topic_prob": 0.4567086696624756,
+        "normalized_position": 0.4098633788737088,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She shook her head and pushed her food across her plate rather than lifting it to her mouth. “",
+        "max_topic_prob": 0.7963900566101074,
+        "normalized_position": 0.24698221092757305,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He rolled the stem of his fork between his thumb and forefinger and stared at his plate. “",
+        "max_topic_prob": 0.7761863470077515,
+        "normalized_position": 0.2501588310038119,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She set down the dish and wrung her hands some more. “",
+        "max_topic_prob": 0.7594335079193115,
+        "normalized_position": 0.5522554002541296,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He dropped the hair and picked up a plate from the stack. “",
+        "max_topic_prob": 0.7223328351974487,
+        "normalized_position": 0.105146124523507,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "That looks wonderful,” he said as she set a plate in front of him. “",
+        "max_topic_prob": 0.7221935987472534,
+        "normalized_position": 0.24666454891994918,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She plucked the last of the bacon out of the frying pan and carried the dish of scrambled eggs to the table, scraping more onto Curt’s plate without asking. “",
+        "max_topic_prob": 0.7220709919929504,
+        "normalized_position": 0.5516200762388819,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "When she’d had a few swallows, she handed the glass back and took the plate from him.",
+        "max_topic_prob": 0.7462998628616333,
+        "normalized_position": 0.45481191988275527,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Ty more or less inhaled the food, and when he was done, he stared at the plate as if he couldn’t understand how it was empty already. “",
+        "max_topic_prob": 0.6827312707901001,
+        "normalized_position": 0.3764859143461977,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He emptied his cup and put it in the sink, then he grabbed Ty’s empty plate and cup and placed them there too. “",
+        "max_topic_prob": 0.6757460236549377,
+        "normalized_position": 0.7560657873310536,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He grabbed a spoon and stirred.",
+        "max_topic_prob": 0.6697510480880737,
+        "normalized_position": 0.3776257938446507,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Alfred brought another spoonful to her mouth and the juice coated her tongue.",
+        "max_topic_prob": 0.6308761835098267,
+        "normalized_position": 0.0758834066113011,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Next, he put a plate with two boiled eggs and a bagel in front of him. “",
+        "max_topic_prob": 0.6297008991241455,
+        "normalized_position": 0.7288715192965315,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "she asked, holding her plate out.",
+        "max_topic_prob": 0.7935763597488403,
+        "normalized_position": 0.833091587235806,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She spooned some dip on the side. “",
+        "max_topic_prob": 0.7768865823745728,
+        "normalized_position": 0.21974720265230005,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She offered the cookie plate.",
+        "max_topic_prob": 0.6771587133407593,
+        "normalized_position": 0.6917737256527144,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She thrust the casserole dish at Sparky, who grabbed it before it dropped to the floor. “",
+        "max_topic_prob": 0.6762162446975708,
+        "normalized_position": 0.004765851636966432,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She took a bite of omelet. “",
+        "max_topic_prob": 0.6742516160011292,
+        "normalized_position": 0.7335267302113552,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She bit into another cookie. “",
+        "max_topic_prob": 0.6687136292457581,
+        "normalized_position": 0.7029631164525487,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He finished his food and put his fork down on his plate. “",
+        "max_topic_prob": 0.844643235206604,
+        "normalized_position": 0.599442119944212,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He sat back down at the desk and took one of the plates and began to help himself to some of the food.",
+        "max_topic_prob": 0.7087368965148926,
+        "normalized_position": 0.1815899581589958,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He started to slice the bread. “",
+        "max_topic_prob": 0.6760584115982056,
+        "normalized_position": 0.5559274755927476,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "When he handed me the plate, I raised my eyebrows in surprise. “",
+        "max_topic_prob": 0.6590328216552734,
+        "normalized_position": 0.9709902370990237,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I swept my hand over the food. “",
+        "max_topic_prob": 0.6470962762832642,
+        "normalized_position": 0.18688981868898186,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He put the bag of food on the table and started to take the containers out while I took plates and wine glasses out of the cabinets and brought them to the table. “",
+        "max_topic_prob": 0.6239283680915833,
+        "normalized_position": 0.2292887029288703,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "she replied, grinning and scraping the plates. “",
+        "max_topic_prob": 0.7271867990493774,
+        "normalized_position": 0.20793159905402947,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "she said, adding more to Patricia’s plate. “",
+        "max_topic_prob": 0.7029224634170532,
+        "normalized_position": 0.09441513552847007,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Renaldo asked, getting the frying pan out to start their dinner. “",
+        "max_topic_prob": 0.6930026412010193,
+        "normalized_position": 0.3329088593778425,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She cast her eyes to Patricia, who was staring at her plate, moving the food but not eating. “",
+        "max_topic_prob": 0.6728367805480957,
+        "normalized_position": 0.16663634709841732,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Well, she hadn’t quite made up her mind what she wanted to make for dinner tomorrow.” “",
+        "max_topic_prob": 0.6207523345947266,
+        "normalized_position": 0.9792614153174459,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Calandaría beamed, straightening her plate and cup with great care. “",
+        "max_topic_prob": 0.575020968914032,
+        "normalized_position": 0.8910314717118428,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "He finishes his toast and dusts his hands over the plate. ‘",
+        "max_topic_prob": 0.6692402362823486,
+        "normalized_position": 0.661198738170347,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She hurls the cutlery into the drawers. ‘",
+        "max_topic_prob": 0.6292779445648193,
+        "normalized_position": 0.24365930599369084,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "While she’s collapsed, laughing, I cut the muffin in half, slice off a juicy corner, and take a bite.",
+        "max_topic_prob": 0.5913510322570801,
+        "normalized_position": 0.07558359621451104,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "And she got up and walked away from her untouched plate of pasta marinara. ‘",
+        "max_topic_prob": 0.5666857361793518,
+        "normalized_position": 0.19861198738170346,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Two steps in, she slips on a mixture of sauce and flour and mustard, and she is down.",
+        "max_topic_prob": 0.5578341484069824,
+        "normalized_position": 0.2553943217665615,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She hurls a packet of flour and I put out a hand to block it.",
+        "max_topic_prob": 0.5416913628578186,
+        "normalized_position": 0.25173501577287066,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "She picked through the contents, pulling out two large potato chips.",
+        "max_topic_prob": 0.652702808380127,
+        "normalized_position": 0.23901372042155497,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Dosing them with a topping of cheese, he slid them into the oven, checked the temperature and smiled when he heard cooing over the baby monitor.",
+        "max_topic_prob": 0.6180856227874756,
+        "normalized_position": 0.959932392125671,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "He stretched his arm up, carrying the small bowl in his hand to the back of the top shelf in the corner cabinet. “",
+        "max_topic_prob": 0.6164608001708984,
+        "normalized_position": 0.9613243189500895,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "She had a hand up by her face, the other propped on the edge of the cabinet holding a cheesecake batter-crusted beater from the electric mixer.",
+        "max_topic_prob": 0.607208251953125,
+        "normalized_position": 0.9514814078345596,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "After the meal was eaten, and the table cleared, her voice would sound sweetly through the gloaming as her children prepared for bed.",
+        "max_topic_prob": 0.5956194400787354,
+        "normalized_position": 0.0417578047325512,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Surprisingly clean, she had cleared tools and implements away as she’d finished with them, the only things left on the countertop were the empty bowl and a crock filled with mashed potatoes, ready for baking.",
+        "max_topic_prob": 0.5916664600372314,
+        "normalized_position": 0.9598329687810698,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He ruffled the dog’s fur and filled her dishes.",
+        "max_topic_prob": 0.6261721849441528,
+        "normalized_position": 0.28285842160226765,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Javier” She began while they looked over the menu. “",
+        "max_topic_prob": 0.6245725750923157,
+        "normalized_position": 0.8172460092495898,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She paused the snack search and opened it carefully.",
+        "max_topic_prob": 0.6095380783081055,
+        "normalized_position": 0.1347157988960167,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She offered as sweetly as maple syrup. “",
+        "max_topic_prob": 0.5552626848220825,
+        "normalized_position": 0.7980008951215873,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She decided to eat alone and catch up on paper work.",
+        "max_topic_prob": 0.5241330862045288,
+        "normalized_position": 0.13337311651499328,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He went to the other tray and selected a small crop.",
+        "max_topic_prob": 0.5225754976272583,
+        "normalized_position": 0.24063852006564224,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Suddenly feeling lighthearted, she cut into her cheesecake and took a bite.",
+        "max_topic_prob": 0.6812905073165894,
+        "normalized_position": 0.360431654676259,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He dug his fork into his dessert.",
+        "max_topic_prob": 0.6428024768829346,
+        "normalized_position": 0.3601918465227818,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She grabbed her purse from the hall table and a plate of fudge she’d made and then followed him outside.",
+        "max_topic_prob": 0.5997646450996399,
+        "normalized_position": 0.4510791366906475,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Levi reached into the basket and pulled out a plate covered with plastic wrap that had a neat assortment of sandwiches that he’d cut diagonally into four small triangular sandwiches.",
+        "max_topic_prob": 0.5905416011810303,
+        "normalized_position": 0.6189448441247002,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She obviously had a lot on her plate.",
+        "max_topic_prob": 0.5801664590835571,
+        "normalized_position": 0.10719424460431655,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He walked over to get a better look at the desserts. “",
+        "max_topic_prob": 0.5641311407089233,
+        "normalized_position": 0.7474820143884892,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She pauses as she takes a bite of food from her plate. “",
+        "max_topic_prob": 0.7342163324356079,
+        "normalized_position": 0.8667804323094426,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The line attendant came by,” she says, taking the sandwich from my hand. “",
+        "max_topic_prob": 0.6375172138214111,
+        "normalized_position": 0.2564277588168373,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She grudgingly picks up my barely eaten plate – causing another cringe on my part – before making her way towards the kitchen.",
+        "max_topic_prob": 0.6299209594726562,
+        "normalized_position": 0.470193401592719,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She pulled the lid off, added a little extra whip, and next thing I knew, it was all over her apron!”",
+        "max_topic_prob": 0.6059499382972717,
+        "normalized_position": 0.40432309442548353,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Well,” Macy says, pushing her half-empty plate aside (God, there’s starving children in District 560, I think with a cringe).",
+        "max_topic_prob": 0.603885293006897,
+        "normalized_position": 0.4671217292377702,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Instead, her plate of food goes untouched.",
+        "max_topic_prob": 0.601604700088501,
+        "normalized_position": 0.4630261660978385,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 95
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.010584010584010584,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.008406010297362614,
+        "n_sentences": 80
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.005518763796909493,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.00529482551143201,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0053475935828877,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.006077083000159923,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.00771123872026251,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.008595284872298626,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.001477884513881558,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0012018027040560841,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0014992503748125937,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0012577178138577635,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0010153572788424927,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0013440860215053765,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00010737678513905293,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00049800796812749,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 84
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.1",
+    "taxonomy_secondary_name": "Domestic Spaces & Routines",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

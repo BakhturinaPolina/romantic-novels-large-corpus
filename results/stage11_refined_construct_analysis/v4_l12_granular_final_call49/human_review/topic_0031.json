@@ -1,0 +1,164 @@
+{
+  "topic_id": 31,
+  "label": "Keeping Watch While Others Sleep",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "5.1",
+  "taxonomy_secondary_name": "Family, Kinship & Parenthood",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "sleep",
+      "bed",
+      "asleep",
+      "wake",
+      "nap",
+      "sleeping",
+      "awake",
+      "go",
+      "woke",
+      "get"
+    ],
+    "KeyBERT": [
+      "rested",
+      "session",
+      "anxious",
+      "worrying",
+      "politely",
+      "afterward",
+      "comfortable",
+      "sir",
+      "uncertain",
+      "ok"
+    ],
+    "POS": [
+      "longest",
+      "instructions",
+      "session",
+      "remote",
+      "uncertain",
+      "backs",
+      "realization",
+      "decent",
+      "quality",
+      "unable"
+    ],
+    "MMR": [
+      "longest",
+      "gotta",
+      "nonetheless",
+      "wandered",
+      "realise",
+      "politely",
+      "uncertain",
+      "brings",
+      "suggest",
+      "ought"
+    ]
+  },
+  "stage08_snippets": [
+    "so you’ll give me the stuff to sleep?”",
+    "you’ll wake the baby.” “",
+    "you sleep and i’ll stand guard.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.783615489394824,
+      "max_topic_prob": 0.6504269242286682,
+      "sentence": "That’s because you snored most of the way.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.572874100019459,
+      "max_topic_prob": 0.6249070167541504,
+      "sentence": "Is it nap time, Ms. Gallagher?”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2039307258221444,
+      "max_topic_prob": 0.6036714315414429,
+      "sentence": "Who went to bed at ten, anyway?"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.056625802685347344,
+      "max_topic_prob": 0.5529165267944336,
+      "sentence": "I’m sick of lying in bed night after night like an old married couple."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.17513134851138354,
+      "max_topic_prob": 0.43651020526885986,
+      "sentence": "Classic restless-man stuff, really.”"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.18503118503118504,
+      "max_topic_prob": 0.7276984453201294,
+      "sentence": "I’m going to bed!” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.22624966103226973,
+      "max_topic_prob": 0.6995254755020142,
+      "sentence": "I trust you slept well.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6195426195426196,
+      "max_topic_prob": 0.6897759437561035,
+      "sentence": "Nap?"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6133056133056133,
+      "max_topic_prob": 0.6840810775756836,
+      "sentence": "So take a nap!"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.5297839645665733,
+      "max_topic_prob": 0.6563429832458496,
+      "sentence": "Do you want him waking up?”"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.619723402332098,
+      "max_topic_prob": 0.6389762163162231,
+      "sentence": "My body was definitely urging nap . . ."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.43735763097949887,
+      "max_topic_prob": 0.5958167314529419,
+      "sentence": "Iʼm sorry I fell asleep."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,700 @@
+{
+  "topic_id": 286,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "graces",
+        "blah",
+        "oracle",
+        "miss",
+        "tape",
+        "grâce",
+        "graceclemens",
+        "ruttery",
+        "champney"
+      ],
+      "KeyBERT": [
+        "graceful",
+        "blows",
+        "thrilled",
+        "dr",
+        "continues",
+        "deserve",
+        "awkwardly",
+        "embarrassment"
+      ],
+      "POS": [
+        "graceful",
+        "indication",
+        "distraction",
+        "slightest",
+        "desperation",
+        "embarrassment",
+        "pregnant",
+        "pressure",
+        "decision",
+        "unable"
+      ],
+      "MMR": [
+        "blows",
+        "graceful",
+        "drawled",
+        "slightest",
+        "desperation",
+        "tries",
+        "provided",
+        "rushing",
+        "pregnant",
+        "stretched"
+      ]
+    },
+    "stage08_snippets": [
+      "oh ms. [person], you really should drop by our office more, we miss your good taste around here' blah blah blah.",
+      "i'll not have you and his grace at each other's throats before we arrive at champney court.\"",
+      "if what you’ve said is to be believed, how am i supposed to get back into her good graces?"
+    ],
+    "label_public": "Trying to Regain Good Graces"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Mrs. Darden.",
+        "max_topic_prob": 0.45851075649261475,
+        "normalized_position": 0.8036951501154734,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "It shone in the moonlight with silver grace. “",
+        "max_topic_prob": 0.5819056630134583,
+        "normalized_position": 0.5153421294875729,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Widow of a respected insurance agent and former daughter-in-law of a well-known Baptist minister, she’d seemingly shunned the social position and privilege of her past to be with Colton, but this wasn’t the first time Eric had seen her slip on her high-and-mighty act like an expensive fur coat.",
+        "max_topic_prob": 0.5301171541213989,
+        "normalized_position": 0.21806981519507188,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Eric needed a mentor to teach him how to be an honorable man.",
+        "max_topic_prob": 0.48237165808677673,
+        "normalized_position": 0.004106776180698152,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Eric adored Cynda.",
+        "max_topic_prob": 0.4776837229728699,
+        "normalized_position": 0.2177618069815195,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Likely not, since Dee had already seen her with Eric.",
+        "max_topic_prob": 0.47559213638305664,
+        "normalized_position": 0.23449691991786448,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Damn Dee. “",
+        "max_topic_prob": 0.4358575642108917,
+        "normalized_position": 0.3929158110882957,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 476
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "That was another thing about Dee.",
+        "max_topic_prob": 0.42617568373680115,
+        "normalized_position": 0.08593429158110882,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Yes, Your Grace.”",
+        "max_topic_prob": 0.7454264163970947,
+        "normalized_position": 0.13746709564200058,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1410
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Is His Grace with you, my lady?” “",
+        "max_topic_prob": 0.7332150936126709,
+        "normalized_position": 0.5357316954275129,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Your Grace.”",
+        "max_topic_prob": 0.7266527414321899,
+        "normalized_position": 0.3692112703519548,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1103
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Has His Grace returned home?”",
+        "max_topic_prob": 0.710708498954773,
+        "normalized_position": 0.46924051867017647,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2129
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I believe His Grace had other plans for tonight.”",
+        "max_topic_prob": 0.7060964703559875,
+        "normalized_position": 0.5361216730038023,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Well, His Grace won’t like it,” he said. “",
+        "max_topic_prob": 0.7001885175704956,
+        "normalized_position": 0.3826654967339378,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1241
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Reed, please.",
+        "max_topic_prob": 0.45338642597198486,
+        "normalized_position": 0.7684056557776694,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’d better not be Reed.” “",
+        "max_topic_prob": 0.4444580078125,
+        "normalized_position": 0.6322525597269625,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 518
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I liked the thought of having a tradition with Reed.",
+        "max_topic_prob": 0.3945665955543518,
+        "normalized_position": 0.6735738664066309,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Are you sure it’s not life with Reed?”",
+        "max_topic_prob": 0.38525545597076416,
+        "normalized_position": 0.6990492442710873,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I loved Reed with everything I had.",
+        "max_topic_prob": 0.38339537382125854,
+        "normalized_position": 0.9642857142857143,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Working with Reed wasn’t an option.",
+        "max_topic_prob": 0.38184991478919983,
+        "normalized_position": 0.9138225255972696,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Aye, Your Grace.\"",
+        "max_topic_prob": 0.7460583448410034,
+        "normalized_position": 0.14223454833597465,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Aye, Your Grace.",
+        "max_topic_prob": 0.6859943866729736,
+        "normalized_position": 0.14520602218700476,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You wish to see me, Your Grace?”",
+        "max_topic_prob": 0.6766126155853271,
+        "normalized_position": 0.1580824088748019,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Your Grace, I have news of your niece.\" “",
+        "max_topic_prob": 0.6111565232276917,
+        "normalized_position": 0.13926307448494454,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The general sends a report, Your Grace.\"",
+        "max_topic_prob": 0.5145362615585327,
+        "normalized_position": 0.1527337559429477,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sing praise to the Goddess, Give thanks for her Grace.",
+        "max_topic_prob": 0.4935173988342285,
+        "normalized_position": 0.5897385103011094,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Grace.",
+        "max_topic_prob": 0.8616634011268616,
+        "normalized_position": 0.1982447083118224,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Grace?”",
+        "max_topic_prob": 0.842915415763855,
+        "normalized_position": 0.23355704697986576,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Seriously, Grace.",
+        "max_topic_prob": 0.8412799835205078,
+        "normalized_position": 0.1823438306659783,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "GRACE!”",
+        "max_topic_prob": 0.8340358734130859,
+        "normalized_position": 0.17305110996386164,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Grace needs to be aware of this. “",
+        "max_topic_prob": 0.8275134563446045,
+        "normalized_position": 0.17976251935983478,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Grace is here.",
+        "max_topic_prob": 0.827157199382782,
+        "normalized_position": 0.8017552916881776,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Your grace, really?",
+        "max_topic_prob": 0.7885556221008301,
+        "normalized_position": 0.3503480278422274,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Of course, your grace.”",
+        "max_topic_prob": 0.7191077470779419,
+        "normalized_position": 0.5406032482598608,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Yes, your grace.",
+        "max_topic_prob": 0.7102528810501099,
+        "normalized_position": 0.12451662799690642,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Your grace,” was all the woman said.",
+        "max_topic_prob": 0.7090266942977905,
+        "normalized_position": 0.05336426914153132,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I am available to all his grace's guests.”",
+        "max_topic_prob": 0.672771692276001,
+        "normalized_position": 0.5375096674400619,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Your grace, I beg your pardon.”",
+        "max_topic_prob": 0.6592617034912109,
+        "normalized_position": 0.39597834493426143,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I believe you have a clear shot now, Your Grace.”",
+        "max_topic_prob": 0.60075443983078,
+        "normalized_position": 0.5976749487121039,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Lily—rather, Her Grace—is in no hurry to travel with a baby.” “",
+        "max_topic_prob": 0.5299168825149536,
+        "normalized_position": 0.09277410531114658,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Virtues?",
+        "max_topic_prob": 0.3611852526664734,
+        "normalized_position": 0.43674492819694555,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your Grace,” she said. “",
+        "max_topic_prob": 0.7698968648910522,
+        "normalized_position": 0.24302227234282492,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your Grace.”",
+        "max_topic_prob": 0.7266525030136108,
+        "normalized_position": 0.40978291513955456,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your Grace.”",
+        "max_topic_prob": 0.7266524434089661,
+        "normalized_position": 0.5711869185226952,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your Grace.”",
+        "max_topic_prob": 0.7266524434089661,
+        "normalized_position": 0.6165773893431068,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "After all, I know who you are, Your Grace.” “",
+        "max_topic_prob": 0.7245544195175171,
+        "normalized_position": 0.0916267268113899,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Where to, Your Grace?”",
+        "max_topic_prob": 0.7100504040718079,
+        "normalized_position": 0.5066253171694389,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 156
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.0007219471947194719,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0025575447570332483,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.011188231637832799,
+        "n_sentences": 108
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.01634241245136187,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0032330753404526307,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0013941445927106153,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.000982921734856862,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0006872852233676976,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.000154273372415921,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 8.598452278589854e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 47
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

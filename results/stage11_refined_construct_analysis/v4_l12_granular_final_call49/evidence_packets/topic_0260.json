@@ -1,0 +1,853 @@
+{
+  "topic_id": 260,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "8.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "crazy",
+        "insane",
+        "madness",
+        "craziness",
+        "crazier",
+        "re",
+        "going",
+        "little",
+        "think",
+        "am"
+      ],
+      "KeyBERT": [],
+      "POS": [
+        "indication",
+        "equal",
+        "result",
+        "chuckle",
+        "fault",
+        "crowd"
+      ],
+      "MMR": [
+        "indication",
+        "equal",
+        "officially",
+        "result",
+        "proved",
+        "chuckle",
+        "tasted",
+        "appreciate",
+        "fault",
+        "crowd"
+      ]
+    },
+    "stage08_snippets": [
+      "he played crazier than i’ve ever seen him, and from the way the crowd was going insane with cheering around me, cam played even crazier than anyone had ever seen him play, ever!",
+      "but it's a madness i've had all my life.",
+      "you see, i’ve gone and done something a little crazy."
+    ],
+    "label_public": "Crowd Goes Wild For Him"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I was crazy about you.",
+        "max_topic_prob": 0.7449730634689331,
+        "normalized_position": 0.5372771474878444,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You're crazy, you know that?\" \"",
+        "max_topic_prob": 0.7890431880950928,
+        "normalized_position": 0.5880232880510119,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It does not make you a freak, Carl.\"",
+        "max_topic_prob": 0.5294299125671387,
+        "normalized_position": 0.28444690878846685,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He was going to drive himself insane if he didn't get out of the apartment.",
+        "max_topic_prob": 0.5290132761001587,
+        "normalized_position": 0.7998336567784863,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The crazy hours will be worth it then.\"",
+        "max_topic_prob": 0.5019906759262085,
+        "normalized_position": 0.8161907402273357,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He's nuts!\" \"",
+        "max_topic_prob": 0.4933580756187439,
+        "normalized_position": 0.8993623509841974,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "That boy keeps crazy hours these days.",
+        "max_topic_prob": 0.44411590695381165,
+        "normalized_position": 0.8148045467147214,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Are you fucking crazy?\"",
+        "max_topic_prob": 0.7417165040969849,
+        "normalized_position": 0.6345982804624963,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "The next few weeks were going to be crazy.",
+        "max_topic_prob": 0.5824301838874817,
+        "normalized_position": 0.13519122442929143,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Terri swallowed thickly wondering if she really was as crazy as Joel accused her of being.",
+        "max_topic_prob": 0.5234797596931458,
+        "normalized_position": 0.6528313074414468,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "It makes you crazy.",
+        "max_topic_prob": 0.6503087282180786,
+        "normalized_position": 0.8770703933747412,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He has just enough training to make him totally freak out every single day.” “",
+        "max_topic_prob": 0.4014924168586731,
+        "normalized_position": 0.3581780538302277,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You’re crazy.” “",
+        "max_topic_prob": 0.8206176161766052,
+        "normalized_position": 0.36472049689440994,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He’s crazy.",
+        "max_topic_prob": 0.7438015341758728,
+        "normalized_position": 0.7395031055900622,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You’re crazy.",
+        "max_topic_prob": 0.7368422746658325,
+        "normalized_position": 0.36447204968944097,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Lots of crazies out there.” “",
+        "max_topic_prob": 0.642616331577301,
+        "normalized_position": 0.6624844720496894,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Sounds crazy.",
+        "max_topic_prob": 0.6144071817398071,
+        "normalized_position": 0.5603726708074535,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Crazy,” Josh said, blue eyes twinkling. “",
+        "max_topic_prob": 0.5995686054229736,
+        "normalized_position": 0.4544099378881988,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 374
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Or crazy enough.",
+        "max_topic_prob": 0.7233795523643494,
+        "normalized_position": 0.7695288282703038,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "You must not do anything crazy.” “",
+        "max_topic_prob": 0.7137817144393921,
+        "normalized_position": 0.7600743955362679,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Crazy about beetles.",
+        "max_topic_prob": 0.500873327255249,
+        "normalized_position": 0.00976441413515189,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You know that’s the first sign of madness right?”",
+        "max_topic_prob": 0.6032537221908569,
+        "normalized_position": 0.16501789097032205,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "That’s…pretty crazy.” “",
+        "max_topic_prob": 0.7697762250900269,
+        "normalized_position": 0.6630490426947886,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 430
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And if I'm crazy...well, I don't want to think about that for right now either.",
+        "max_topic_prob": 0.731903076171875,
+        "normalized_position": 0.017917477219207535,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It’s really crazy.” “",
+        "max_topic_prob": 0.7304906845092773,
+        "normalized_position": 0.8207228422238149,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 434
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Just so that I would know I wasn’t crazy.",
+        "max_topic_prob": 0.7194827795028687,
+        "normalized_position": 0.21613596805569776,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Do you know how many times I wondered if I was crazy?",
+        "max_topic_prob": 0.7064366340637207,
+        "normalized_position": 0.25360909183986896,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I know that he thinks I'm crazy.",
+        "max_topic_prob": 0.6760832667350769,
+        "normalized_position": 0.003788266612061022,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Crazy?",
+        "max_topic_prob": 0.7767598032951355,
+        "normalized_position": 0.24403134681975577,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Are you crazy?’",
+        "max_topic_prob": 0.7720727920532227,
+        "normalized_position": 0.24384909786768727,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Clearly it wasn’t him who was crazy.",
+        "max_topic_prob": 0.7662018537521362,
+        "normalized_position": 0.8452706396938218,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Crazy.",
+        "max_topic_prob": 0.725307822227478,
+        "normalized_position": 0.28175687989794057,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He was insane.",
+        "max_topic_prob": 0.6941672563552856,
+        "normalized_position": 0.2442135957718243,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You are crazy , Luce.’ ‘",
+        "max_topic_prob": 0.6590976715087891,
+        "normalized_position": 0.9741206488062694,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "They’re a bit crazy.” “",
+        "max_topic_prob": 0.725149929523468,
+        "normalized_position": 0.48365061590145575,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Crazy bitches, the lot of them.",
+        "max_topic_prob": 0.5368241667747498,
+        "normalized_position": 0.5638297872340425,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "But to stay calm and cool while you’re being shot at, basically have people doing their very best to kill you, is pretty fucking insane, too.",
+        "max_topic_prob": 0.5115032196044922,
+        "normalized_position": 0.13784994400895856,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "THE FREAK CIRCLE PRESS",
+        "max_topic_prob": 0.3426596522331238,
+        "normalized_position": 0.00011198208286674133,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Crazy?” “",
+        "max_topic_prob": 0.8086479902267456,
+        "normalized_position": 0.16111236208061247,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "And a bit crazy too.” “",
+        "max_topic_prob": 0.7148957252502441,
+        "normalized_position": 0.16099977482548974,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I thought he was insane.",
+        "max_topic_prob": 0.6930739283561707,
+        "normalized_position": 0.7921639270434587,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He’s insane.",
+        "max_topic_prob": 0.6822201609611511,
+        "normalized_position": 0.21143886512046836,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He’s insane.",
+        "max_topic_prob": 0.6822201609611511,
+        "normalized_position": 0.8904526007655933,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You’re insane if you think I would want anything to do with you.",
+        "max_topic_prob": 0.5887216925621033,
+        "normalized_position": 0.8169331231704571,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You mean as crazy as you are.” “",
+        "max_topic_prob": 0.8536198139190674,
+        "normalized_position": 0.20333609043286463,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You are insane.",
+        "max_topic_prob": 0.7443084120750427,
+        "normalized_position": 0.6858285084091535,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "This is fucking crazy.”",
+        "max_topic_prob": 0.6815410852432251,
+        "normalized_position": 0.746622553074166,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "They were more insane than I thought.",
+        "max_topic_prob": 0.6642793416976929,
+        "normalized_position": 0.7445547284256961,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "That’s crazy,” I muttered on a shaky breath.",
+        "max_topic_prob": 0.6632044315338135,
+        "normalized_position": 0.43065894678797906,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The only thing I can figure is that the crazy in me is drawn to the crazy in you.” “",
+        "max_topic_prob": 0.6627150177955627,
+        "normalized_position": 0.6938240970499036,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But now I’m worried you’ll think it’s crazy.” “",
+        "max_topic_prob": 0.7566477656364441,
+        "normalized_position": 0.8303612783696156,
+        "tertile": "end",
+        "chapter_index": 61,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We’re both insane.”",
+        "max_topic_prob": 0.7550709247589111,
+        "normalized_position": 0.9265863825845299,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 421
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We won’t get crazy right now, but it’s not out of awkwardness.",
+        "max_topic_prob": 0.636340320110321,
+        "normalized_position": 0.032075034738304774,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You’re insane, Wes.",
+        "max_topic_prob": 0.580186128616333,
+        "normalized_position": 0.4468503937007874,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Is it stupid that I’m really touched by this madness?",
+        "max_topic_prob": 0.5557634830474854,
+        "normalized_position": 0.990968040759611,
+        "tertile": "end",
+        "chapter_index": 67,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Dude, that’s insane.",
+        "max_topic_prob": 0.5438517332077026,
+        "normalized_position": 0.9249652616952293,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 407
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You’re crazy.”",
+        "max_topic_prob": 0.8191369771957397,
+        "normalized_position": 0.5606354126307632,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You’re crazy.”",
+        "max_topic_prob": 0.8191369771957397,
+        "normalized_position": 0.7981402557148393,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Are you crazy?”",
+        "max_topic_prob": 0.8026836514472961,
+        "normalized_position": 0.15239571225623144,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But you’re crazy.”",
+        "max_topic_prob": 0.7735800743103027,
+        "normalized_position": 0.5909854061733179,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That’s crazy.”",
+        "max_topic_prob": 0.7547121047973633,
+        "normalized_position": 0.4716518145421671,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "If I wasn’t crazy, I would.",
+        "max_topic_prob": 0.7360631823539734,
+        "normalized_position": 0.10938912566188816,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 257
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.002151999093895118,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.003331945022907122,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0031136481577581734,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.00162809629026631,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0019962570180910794,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0019487750556792874,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0018365472910927456,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0026729721394057777,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00021110407430863416,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.00045029832263874815,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0005196154845414394,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00020412329046744235,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0004476943739740337,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0004672169444011836,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 62
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "8.2",
+    "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_secondary_id": "1.5",
+    "taxonomy_secondary_name": "Exercise, Movement & Physical Activity",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

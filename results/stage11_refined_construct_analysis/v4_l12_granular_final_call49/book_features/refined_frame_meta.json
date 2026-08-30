@@ -1,0 +1,17 @@
+{
+  "run_id": "v4_l12_granular_final_call49",
+  "n_books": 16000,
+  "n_rax_columns": 60,
+  "modes": [
+    "strict",
+    "weighted",
+    "inclusive"
+  ],
+  "paths": {
+    "strict": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features/book_refined_analysis_frame_strict.parquet",
+    "primary": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features/book_refined_analysis_frame.parquet",
+    "weighted": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features/book_refined_analysis_frame_weighted.parquet",
+    "inclusive": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features/book_refined_analysis_frame_inclusive.parquet",
+    "manifest": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features/refined_frame_manifest.parquet"
+  }
+}

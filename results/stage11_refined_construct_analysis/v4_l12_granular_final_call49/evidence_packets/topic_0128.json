@@ -1,0 +1,805 @@
+{
+  "topic_id": 128,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "miss",
+        "missed",
+        "missing",
+        "much",
+        "ve",
+        "you",
+        "too",
+        "misses",
+        "wouldn",
+        "ll"
+      ],
+      "KeyBERT": [
+        "hi",
+        "sir",
+        "escaped",
+        "honestly",
+        "repeated",
+        "solemnly"
+      ],
+      "POS": [
+        "handful",
+        "precious",
+        "voices",
+        "elevator",
+        "opportunity",
+        "pieces"
+      ],
+      "MMR": [
+        "solemnly",
+        "breathlessly",
+        "thoughtfully",
+        "handful",
+        "voices",
+        "sounding",
+        "elevator",
+        "repeated",
+        "considering",
+        "pressing"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve missed most of his life already.",
+      "and, god, how i’ve missed this.”",
+      "i’ve come to realize that you are the one thing in my life i don’t want to miss."
+    ],
+    "label_public": "Confessing How Much You've Missed"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "All are missing.",
+        "max_topic_prob": 0.427590012550354,
+        "normalized_position": 0.5860510171133355,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I sometimes miss the peace of you and me, though.\" \"",
+        "max_topic_prob": 0.6052380800247192,
+        "normalized_position": 0.2918483287092086,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2209
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Needless to say, I missed the ball.",
+        "max_topic_prob": 0.4485430419445038,
+        "normalized_position": 0.7995772228828115,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 447
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "He missed the ball even worse than I did.",
+        "max_topic_prob": 0.43944382667541504,
+        "normalized_position": 0.80036992997754,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 453
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We’ve missed you so.” “",
+        "max_topic_prob": 0.8175666332244873,
+        "normalized_position": 0.5164634146341464,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’ve missed you, Avery.” “",
+        "max_topic_prob": 0.6962206363677979,
+        "normalized_position": 0.9335365853658537,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I missed you, little bro,” he whispered in my ear. “",
+        "max_topic_prob": 0.666305422782898,
+        "normalized_position": 0.5661585365853659,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’ve missed you all so much!",
+        "max_topic_prob": 0.6485517024993896,
+        "normalized_position": 0.44390243902439025,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’d missed my family so much, and now that we’d seemed to get the tears and heartache out of the way, we were having fun. “",
+        "max_topic_prob": 0.6001084446907043,
+        "normalized_position": 0.5783536585365854,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But you were the missing piece, Avery.",
+        "max_topic_prob": 0.4743974506855011,
+        "normalized_position": 0.20914634146341463,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I missed you so much.” “",
+        "max_topic_prob": 0.8634253144264221,
+        "normalized_position": 0.9018155173817471,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ve missed you so much.”",
+        "max_topic_prob": 0.8428789377212524,
+        "normalized_position": 0.893999837173329,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ll miss you, too.”",
+        "max_topic_prob": 0.8334667682647705,
+        "normalized_position": 0.5868273223153953,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "And I miss you.” “",
+        "max_topic_prob": 0.8105924129486084,
+        "normalized_position": 0.9875437596678336,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 522
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Not as much as I missed you.”",
+        "max_topic_prob": 0.7498373985290527,
+        "normalized_position": 0.9018969307172515,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I didn’t count on missing him so much. “",
+        "max_topic_prob": 0.7450379133224487,
+        "normalized_position": 0.5918749491166653,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He didn’t miss.",
+        "max_topic_prob": 0.596705973148346,
+        "normalized_position": 0.43966421825813223,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Do you miss your own stars?”",
+        "max_topic_prob": 0.5447094440460205,
+        "normalized_position": 0.9680434989983784,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 517
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "If you do, you’ll miss your orgasm.”",
+        "max_topic_prob": 0.5156674385070801,
+        "normalized_position": 0.7605647238385959,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I missed you.”",
+        "max_topic_prob": 0.8873636722564697,
+        "normalized_position": 0.418697282099344,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 986
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I missed you, too.”",
+        "max_topic_prob": 0.8730645179748535,
+        "normalized_position": 0.4189315838800375,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 988
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I miss you, too.” “",
+        "max_topic_prob": 0.8425246477127075,
+        "normalized_position": 0.10262417994376757,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I miss you.”",
+        "max_topic_prob": 0.8202946186065674,
+        "normalized_position": 0.10238987816307404,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Sometimes I miss you.”",
+        "max_topic_prob": 0.780893087387085,
+        "normalized_position": 0.8242736644798501,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 497
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I miss you, too.",
+        "max_topic_prob": 0.7777060270309448,
+        "normalized_position": 0.3977272727272727,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 807
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Something was missing.",
+        "max_topic_prob": 0.5871145129203796,
+        "normalized_position": 0.8977835723598435,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 632
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I missed you.” “",
+        "max_topic_prob": 0.8893265128135681,
+        "normalized_position": 0.6626262626262627,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I missed you.",
+        "max_topic_prob": 0.792073130607605,
+        "normalized_position": 0.6646464646464646,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I'll miss you,” he says. “",
+        "max_topic_prob": 0.7697949409484863,
+        "normalized_position": 0.7146464646464646,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "But I missed you.",
+        "max_topic_prob": 0.7556401491165161,
+        "normalized_position": 0.6035353535353535,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I missed you more,” Mr. X says. “",
+        "max_topic_prob": 0.6712018251419067,
+        "normalized_position": 0.6631313131313131,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I'm going to miss you every second of the day.",
+        "max_topic_prob": 0.6428356170654297,
+        "normalized_position": 0.3414141414141414,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Vanished. “",
+        "max_topic_prob": 0.5941664576530457,
+        "normalized_position": 0.7207565953210553,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 344
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I missed you too.”",
+        "max_topic_prob": 0.862034797668457,
+        "normalized_position": 0.9273517076093469,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Miss me?”",
+        "max_topic_prob": 0.7616467475891113,
+        "normalized_position": 0.3199520671060515,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We miss you!",
+        "max_topic_prob": 0.7031426429748535,
+        "normalized_position": 0.21749550629119233,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "So what did I miss?”",
+        "max_topic_prob": 0.6841748952865601,
+        "normalized_position": 0.4231575793888556,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I missed you, Vinnie.” “",
+        "max_topic_prob": 0.6815197467803955,
+        "normalized_position": 0.927201917315758,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Are you sure it’s only him who misses me?” “",
+        "max_topic_prob": 0.6779014468193054,
+        "normalized_position": 0.9087777112043139,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I miss you too.” “",
+        "max_topic_prob": 0.8370233774185181,
+        "normalized_position": 0.9608524220803605,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I miss him.”",
+        "max_topic_prob": 0.7650284767150879,
+        "normalized_position": 0.6650394292151709,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I miss you.",
+        "max_topic_prob": 0.7378174066543579,
+        "normalized_position": 0.1215734134434848,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I miss him all the time.",
+        "max_topic_prob": 0.6501858234405518,
+        "normalized_position": 0.7758167480285393,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "We all miss him,” Bishop murmured.",
+        "max_topic_prob": 0.6272138357162476,
+        "normalized_position": 0.6653210664663913,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "We miss Elana.”",
+        "max_topic_prob": 0.6175352334976196,
+        "normalized_position": 0.5826135936913256,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I fucking miss you .",
+        "max_topic_prob": 0.7404500842094421,
+        "normalized_position": 0.48981334634622425,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I miss us.”",
+        "max_topic_prob": 0.7378284931182861,
+        "normalized_position": 0.4900573380505063,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I miss him, too.",
+        "max_topic_prob": 0.7047091722488403,
+        "normalized_position": 0.40575820422105646,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I miss him being this close. “",
+        "max_topic_prob": 0.6779307126998901,
+        "normalized_position": 0.5477613761132122,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I’ve missed you, Wil.",
+        "max_topic_prob": 0.6668383479118347,
+        "normalized_position": 0.48993534219836526,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I missed your shampoo.” “",
+        "max_topic_prob": 0.6065626740455627,
+        "normalized_position": 0.5533731853116994,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Don’t you miss me at all?” “",
+        "max_topic_prob": 0.810507595539093,
+        "normalized_position": 0.8660137528651802,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Miss you.",
+        "max_topic_prob": 0.7615357637405396,
+        "normalized_position": 0.6988956032506772,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Miss you too.",
+        "max_topic_prob": 0.7509768605232239,
+        "normalized_position": 0.6991039799958325,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I m-miss—I miss that.”",
+        "max_topic_prob": 0.7148218154907227,
+        "normalized_position": 0.2558866430506356,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Miss you like crazy.",
+        "max_topic_prob": 0.7049200534820557,
+        "normalized_position": 0.6613877891227339,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 484
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "God, I miss you so much.",
+        "max_topic_prob": 0.6409667730331421,
+        "normalized_position": 0.8647634923942488,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 200
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0018883759966428872,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.001991465149359886,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.007606490872210953,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0033062819356777877,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.002150537634408602,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0020892220720167137,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0033458462542843154,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0017757783828578194,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0002618486514794449,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0003266906239790918,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0003993078663649674,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0004995004995004995,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00028896166441918705,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "3.1",
+    "taxonomy_secondary_name": "Positive Resolution, Relief & Emotional Payoff",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

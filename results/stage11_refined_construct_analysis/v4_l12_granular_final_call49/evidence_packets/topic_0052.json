@@ -1,0 +1,1110 @@
+{
+  "topic_id": 52,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "dog",
+        "dogs",
+        "animal",
+        "animals",
+        "pet",
+        "bear",
+        "pets",
+        "lion",
+        "puppy",
+        "puppies"
+      ],
+      "KeyBERT": [
+        "creatures",
+        "appointment",
+        "distress",
+        "shed",
+        "mister",
+        "affection",
+        "tentatively",
+        "feeding",
+        "digging",
+        "properly"
+      ],
+      "POS": [
+        "creatures",
+        "example",
+        "visits",
+        "claims",
+        "behalf",
+        "treatment",
+        "failure",
+        "suffering",
+        "awhile",
+        "activities"
+      ],
+      "MMR": [
+        "described",
+        "creatures",
+        "behalf",
+        "treatment",
+        "suffering",
+        "guarded",
+        "activities",
+        "affect",
+        "distress",
+        "affection"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll have you know that muffy is an intelligent dog and understands more than most people give her credit for.",
+      "it’ll also notify the other campers that there’s a bear in the area.”",
+      "i'll be taking the dogs out for their afternoon walk, so there'll be some peace and quiet for you.\" \""
+    ],
+    "label_public": "Talking About Dogs and Animals"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "A dog as a sidekick?",
+        "max_topic_prob": 0.6959203481674194,
+        "normalized_position": 0.2570160139527509,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Dog = awesome.”",
+        "max_topic_prob": 0.676514744758606,
+        "normalized_position": 0.175439987315681,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 772
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You let the dog in here.” “",
+        "max_topic_prob": 0.6752614974975586,
+        "normalized_position": 0.21626763913112415,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1287
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What are you doing with that dog in here?”",
+        "max_topic_prob": 0.6702784299850464,
+        "normalized_position": 0.6748057713651499,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2100
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "That dog is a natural.”",
+        "max_topic_prob": 0.6669884324073792,
+        "normalized_position": 0.1755985413033138,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 774
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Have you seen that dog?”",
+        "max_topic_prob": 0.653261661529541,
+        "normalized_position": 0.2573331219280165,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Then he pointed to the dog. “",
+        "max_topic_prob": 0.6765207052230835,
+        "normalized_position": 0.6485346598896939,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’m not too versed on dog-speak but I had a feeling that meant “Hey, food’s this way.",
+        "max_topic_prob": 0.5736429691314697,
+        "normalized_position": 0.6471287985292528,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Abbie’s problem is that she’s a lot like a dog.",
+        "max_topic_prob": 0.5638852119445801,
+        "normalized_position": 0.5519627987455391,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "While I tripped over a crack in the sidewalk, stepped in dog crap or spilled mustard across my white button-down, she dabbed the corner of her mouth with a lacy napkin, made friends with stray dogs and levitated down sidewalks like Mary Poppins.",
+        "max_topic_prob": 0.5485790967941284,
+        "normalized_position": 0.08608197253163188,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The fence beyond them held a spray-painted sign that read “Forget Dog, Beware of Owner.”",
+        "max_topic_prob": 0.5413579344749451,
+        "normalized_position": 0.3774197036876825,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Hyenas always target the weak.” “",
+        "max_topic_prob": 0.5333107709884644,
+        "normalized_position": 0.6571861144154861,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Instead of just telling her to cheer up or have hope, he could have surprised her with a pet rescued from the local animal shelter.",
+        "max_topic_prob": 0.6689516305923462,
+        "normalized_position": 0.5900226757369614,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Maybe I’ll get a dog.",
+        "max_topic_prob": 0.6430200338363647,
+        "normalized_position": 0.5891156462585034,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That her animals would be in good hands, and they will be.",
+        "max_topic_prob": 0.6271842122077942,
+        "normalized_position": 0.5709750566893425,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The inquisitive note in his voice probably stemmed from wondering why the heck she was out stalking an ill-behaved puppy instead of comfortably drinking coffee in Winnie’s kitchen while the dogs cavorted in their own backyard.",
+        "max_topic_prob": 0.6240930557250977,
+        "normalized_position": 0.12290249433106576,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The dogs are out back.”",
+        "max_topic_prob": 0.622463047504425,
+        "normalized_position": 0.5689342403628118,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "My mom was dead set against pets and I never really thought much about it.",
+        "max_topic_prob": 0.6192213296890259,
+        "normalized_position": 0.5884353741496599,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I swear that dog must be related to you, for all she is stubborn and single-minded.",
+        "max_topic_prob": 0.646484375,
+        "normalized_position": 0.5107102593010147,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why would she need to have a dog, even a small one, on guard at the foot of her bed?",
+        "max_topic_prob": 0.6419655680656433,
+        "normalized_position": 0.27756482525366405,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "So there it is, the dog is not simply a token of his love for me, but a sweetener to lessen the pain of our separation. ‘",
+        "max_topic_prob": 0.5459931492805481,
+        "normalized_position": 0.38602029312288616,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "and the dog sleeping at the foot of her bed has of course been interpreted in several ways by many of my learned friends over the years,’ Signore Di Girolamo continues. ‘",
+        "max_topic_prob": 0.5359078645706177,
+        "normalized_position": 0.276662908680947,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "This morning he brought a beautiful little gift with him when he arrived at my casa : a small dog, so pretty and delicate, with her silky gold and silver coat, light brown ears and dusky, dark patch over one eye.",
+        "max_topic_prob": 0.5348954200744629,
+        "normalized_position": 0.3835400225479143,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I cannot hide my disappointment at his news and bury my crestfallen expression in the soft fur of my new pet.",
+        "max_topic_prob": 0.5323327779769897,
+        "normalized_position": 0.3875986471251409,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "She didn’t even seem canine.",
+        "max_topic_prob": 0.7211146354675293,
+        "normalized_position": 0.22812697965791512,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "We have a dog now?” “",
+        "max_topic_prob": 0.7190642356872559,
+        "normalized_position": 0.2650805940733441,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He’s still a canine.” “",
+        "max_topic_prob": 0.7172567248344421,
+        "normalized_position": 0.7579362286196946,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "A dog dog.” “",
+        "max_topic_prob": 0.7125060558319092,
+        "normalized_position": 0.16843809389737455,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The dog is doing well, though,” one of the wild dogs pointed out. “",
+        "max_topic_prob": 0.7118699550628662,
+        "normalized_position": 0.1250791863166045,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "it took a lot for a body to manage wild dog pups. “",
+        "max_topic_prob": 0.7083216309547424,
+        "normalized_position": 0.9928908284648412,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Pawing her.",
+        "max_topic_prob": 0.5416324138641357,
+        "normalized_position": 0.30899590453325804,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I've got more problems than a two-legged dog, no place to live, and a brand-new job I probably suck eggs at.",
+        "max_topic_prob": 0.5031768679618835,
+        "normalized_position": 0.9401214517723485,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 450
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "She thought Davies was an animal, selling drugs to kids, and was glad to help us put him away.",
+        "max_topic_prob": 0.4972814917564392,
+        "normalized_position": 0.5167349244456998,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "There were other ways to catch a fox than by staking out a defenseless chick.",
+        "max_topic_prob": 0.4363528788089752,
+        "normalized_position": 0.52775031775173,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "It wouldn' stop a determined squirrel.",
+        "max_topic_prob": 0.40738099813461304,
+        "normalized_position": 0.15026126253354047,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He would like to have fed him to the rats.",
+        "max_topic_prob": 0.5061473846435547,
+        "normalized_position": 0.8948497854077253,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I’m glad he likes him, but I warn you that breed of husky can get uh, pretty…large.”",
+        "max_topic_prob": 0.5052745342254639,
+        "normalized_position": 0.646065808297568,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He hadn’t yet had the time to get her a replacement coat after the white fur was pronounced unresponsive at the cleaners.",
+        "max_topic_prob": 0.4563997983932495,
+        "normalized_position": 0.386552217453505,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "The little pigeon was a hoot.",
+        "max_topic_prob": 0.393955796957016,
+        "normalized_position": 0.08884120171673819,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "You look like someone killed your dog.”",
+        "max_topic_prob": 0.6362615823745728,
+        "normalized_position": 0.16765023688803923,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "her companion barked.",
+        "max_topic_prob": 0.6014512777328491,
+        "normalized_position": 0.9175463386252182,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "You said the ground wasn’t very far, we could—” “Odds are there are dogs below,” he said. “",
+        "max_topic_prob": 0.5376070141792297,
+        "normalized_position": 0.9543678829689968,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Katie, dogs are cute and nice looking.",
+        "max_topic_prob": 0.5305413603782654,
+        "normalized_position": 0.028426564707838085,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "They’re cute and fluffy.” “",
+        "max_topic_prob": 0.5089001655578613,
+        "normalized_position": 0.9968414928102403,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I was making cookies—” Ashlee perked like a poodle offered a doggie treat. “",
+        "max_topic_prob": 0.5044973492622375,
+        "normalized_position": 0.3941484498379187,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "What’s good for the goose and all that,” I say, adding another animal to the imaginary menagerie I'm building as he just stares at me.",
+        "max_topic_prob": 0.5315879583358765,
+        "normalized_position": 0.8638530201923911,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I take no offense to the comment because I’m not too thrilled with the dog-and pony- show junket either. “",
+        "max_topic_prob": 0.5116303563117981,
+        "normalized_position": 0.08588265880925557,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "And that doesn’t include all of the dog-and-pony shows coming up for the sponsorship with you guys.”",
+        "max_topic_prob": 0.4711565375328064,
+        "normalized_position": 0.08579599618684461,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "From opening itself up after all this time to have it torn again with such cruelty.",
+        "max_topic_prob": 0.4501456022262573,
+        "normalized_position": 0.03492503683161453,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I understand the little boy inside because I have a backyard full of them right now with issues of their own.",
+        "max_topic_prob": 0.43327638506889343,
+        "normalized_position": 0.3271513996013519,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Hamster on a goddamn wheel.",
+        "max_topic_prob": 0.343983918428421,
+        "normalized_position": 0.3359043244648583,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Did you ever have a pet?’",
+        "max_topic_prob": 0.6181500554084778,
+        "normalized_position": 0.3899181905678537,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Did you have a pet as a child?’",
+        "max_topic_prob": 0.5856996774673462,
+        "normalized_position": 0.38871511068334935,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Like bitch pups.",
+        "max_topic_prob": 0.564585268497467,
+        "normalized_position": 0.006737247353224254,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The brooch would have to feed them, if Solay’s husband could not. ‘",
+        "max_topic_prob": 0.47940462827682495,
+        "normalized_position": 0.23484119345524543,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What will he think that we have no wild boar to serve him on Christmas Day?’",
+        "max_topic_prob": 0.4565220773220062,
+        "normalized_position": 0.8899181905678537,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "My pleasure would be that he leave us alone until pigs fly backwards!’",
+        "max_topic_prob": 0.4257076680660248,
+        "normalized_position": 0.41037054860442734,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Tomas is such a dog.”",
+        "max_topic_prob": 0.507289707660675,
+        "normalized_position": 0.43178372915613944,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 507
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "A monster of your making.”",
+        "max_topic_prob": 0.41539639234542847,
+        "normalized_position": 0.029307731177362305,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "A real pig.” “",
+        "max_topic_prob": 0.3660997152328491,
+        "normalized_position": 0.5300656897422941,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Savage, you dog!”",
+        "max_topic_prob": 0.5538215637207031,
+        "normalized_position": 0.522887323943662,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I wasn’t surprised Lawton was entertained; the man looked very silly, herding his little pack of dogs, and I remembered how enthusiastically Lawton had described to me every dog, large and small, that he’d encountered over the last month.",
+        "max_topic_prob": 0.5421333312988281,
+        "normalized_position": 0.81354033290653,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 462
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I asked him if he’d a pony at Thornbury House, his family’s country house, and that topic lasted us for three turns around the Square, followed by another two turns devoted to various dogs.",
+        "max_topic_prob": 0.5260498523712158,
+        "normalized_position": 0.7216709346991037,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "As I watched, Lawton laughed and pointed at a bustling stout man walking a half-dozen little dogs with curling tails, their leashes tangling together as they darted back and forth.",
+        "max_topic_prob": 0.4092646837234497,
+        "normalized_position": 0.8133802816901409,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 461
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "She wouldn’t allow dogs, too. “",
+        "max_topic_prob": 0.6846743822097778,
+        "normalized_position": 0.2566925193895422,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "A dog?”",
+        "max_topic_prob": 0.670885443687439,
+        "normalized_position": 0.7585689266950213,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "There was a reason dogs were supposed to stay outside.",
+        "max_topic_prob": 0.6588029265403748,
+        "normalized_position": 0.4572179134350763,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "A dog,” he said again. “",
+        "max_topic_prob": 0.6578537225723267,
+        "normalized_position": 0.7588191143357518,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "And Mrs. Vaughan said I could bring dogs here anytime and she would see that they are taken care of.” “",
+        "max_topic_prob": 0.6555154323577881,
+        "normalized_position": 0.5626720040030022,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Did he think that because she helped wounded dogs, she could help a dying plant?",
+        "max_topic_prob": 0.6501680612564087,
+        "normalized_position": 0.4697272954716037,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "From that day forward, they made sure the dog was sequestered whenever she came to visit.",
+        "max_topic_prob": 0.632897138595581,
+        "normalized_position": 0.08264043804502129,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What if it was just an animal?” “",
+        "max_topic_prob": 0.6323215365409851,
+        "normalized_position": 0.8089636990468465,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Some of those chicks were real dogs too.”",
+        "max_topic_prob": 0.6171387434005737,
+        "normalized_position": 0.8311701480429933,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Cindy’s dog brought it back through the trees.” “",
+        "max_topic_prob": 0.6085382103919983,
+        "normalized_position": 0.967755019265869,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 344
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "After all, I didn’t want to call the cops if it was just a dead dog, you know?",
+        "max_topic_prob": 0.6029689311981201,
+        "normalized_position": 0.4703914013384709,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "The image of the little vermin locked inside in a dog cage flashed though her mind and she almost laughed out loud.",
+        "max_topic_prob": 0.5729754567146301,
+        "normalized_position": 0.47170959237477184,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Talk about a gray fox.",
+        "max_topic_prob": 0.44122809171676636,
+        "normalized_position": 0.9023330651649236,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It’s possible with their help we can clean this baby up, tighten a few screws and she’ll be good enough for a little ride down the Forest Service road.",
+        "max_topic_prob": 0.3615805506706238,
+        "normalized_position": 0.17023330651649235,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Have you never had a dog?”",
+        "max_topic_prob": 0.642439603805542,
+        "normalized_position": 0.5771657364717302,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 598
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Because she is not as obedient as one of your dogs?”",
+        "max_topic_prob": 0.636115550994873,
+        "normalized_position": 0.6344333899538946,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Something hit me from the side—one of the other dogs, unable to restrain itself any longer.",
+        "max_topic_prob": 0.60822594165802,
+        "normalized_position": 0.5842028633826741,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 656
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "As if it matters when it is food for the dogs!”",
+        "max_topic_prob": 0.601706862449646,
+        "normalized_position": 0.535428294103373,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Where are my dogs?”",
+        "max_topic_prob": 0.5978745222091675,
+        "normalized_position": 0.5304537733559815,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "For one week, we were inseparable because of that dog.",
+        "max_topic_prob": 0.5905278921127319,
+        "normalized_position": 0.5782577044406697,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 607
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.003980810452179239,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.004140786749482402,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.005514030143364784,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.018989149057681325,
+        "n_sentences": 266
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.010075163921317767,
+        "n_sentences": 126
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.015715363339200403,
+        "n_sentences": 125
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003399818676337262,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.01029512697323267,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0006122627481850783,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00032331070158422246,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0007250755287009063,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0005747126436781609,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.000762582613116421,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0007526971648406791,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0006476683937823834,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00071285999429712,
+        "n_sentences": 5
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 84
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

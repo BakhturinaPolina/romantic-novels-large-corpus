@@ -1,0 +1,1168 @@
+{
+  "topic_id": 324,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "find",
+        "where",
+        "him",
+        "go",
+        "search",
+        "locate",
+        "know",
+        "finding",
+        "did",
+        "if"
+      ],
+      "KeyBERT": [
+        "address",
+        "hi",
+        "impatiently",
+        "intend",
+        "st",
+        "sits",
+        "sending",
+        "decide",
+        "wondering",
+        "panicked"
+      ],
+      "POS": [
+        "address",
+        "screen"
+      ],
+      "MMR": [
+        "impatiently",
+        "panicked",
+        "separated",
+        "sits",
+        "dreamed",
+        "hi",
+        "address",
+        "st",
+        "sending",
+        "screen"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll go for a drive to look for him.",
+      "i’ll go find him.”",
+      "when we’re done here, we’ll go search his office at marshall, and check his next of kin."
+    ],
+    "label_public": "Searching For A Missing Person"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Where is he?\"",
+        "max_topic_prob": 0.8114585876464844,
+        "normalized_position": 0.04189922776970716,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I need you to find him.\" \"",
+        "max_topic_prob": 0.7895748615264893,
+        "normalized_position": 0.8840889976297882,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I wish there were another way to find him.\"",
+        "max_topic_prob": 0.7392378449440002,
+        "normalized_position": 0.886000458750669,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "And how to find him?",
+        "max_topic_prob": 0.7231951951980591,
+        "normalized_position": 0.880724826057038,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Where is he?",
+        "max_topic_prob": 0.7067842483520508,
+        "normalized_position": 0.23816805566174784,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "And then where would he be? \"",
+        "max_topic_prob": 0.7021012306213379,
+        "normalized_position": 0.6791803654713663,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Where he was supposed to be.",
+        "max_topic_prob": 0.6524713039398193,
+        "normalized_position": 0.9760691336140039,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You could find out if you’d stop hiding away in your house and go see him.”",
+        "max_topic_prob": 0.6074739098548889,
+        "normalized_position": 0.9290937292266784,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What’s he doing over there?” “",
+        "max_topic_prob": 0.5813953876495361,
+        "normalized_position": 0.4606691779304232,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Where’d you go?” “",
+        "max_topic_prob": 0.5601940155029297,
+        "normalized_position": 0.15621537779747396,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Where’s everyone else?” “",
+        "max_topic_prob": 0.5221584439277649,
+        "normalized_position": 0.013738089962331043,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "At the office.",
+        "max_topic_prob": 0.45018470287323,
+        "normalized_position": 0.9428318191890095,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "You’d best go tell the others that we’ve found him.” “",
+        "max_topic_prob": 0.6957715153694153,
+        "normalized_position": 0.06443782412004855,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Is he here?”",
+        "max_topic_prob": 0.6857072114944458,
+        "normalized_position": 0.6742800397219464,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Where was he anyway?",
+        "max_topic_prob": 0.6580361127853394,
+        "normalized_position": 0.5205781749972416,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "And then there was an even greater worry: Where was he?",
+        "max_topic_prob": 0.6432259678840637,
+        "normalized_position": 0.7678472911839347,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "He’d finally found them. “",
+        "max_topic_prob": 0.6037142872810364,
+        "normalized_position": 0.8224649674500717,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Where am I?”",
+        "max_topic_prob": 0.5718430876731873,
+        "normalized_position": 0.034425686858656074,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Where is he? “",
+        "max_topic_prob": 0.7968833446502686,
+        "normalized_position": 0.32141779788838615,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2131
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Where the heck is he anyway? “",
+        "max_topic_prob": 0.773252546787262,
+        "normalized_position": 0.09607843137254903,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 637
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Where is he?",
+        "max_topic_prob": 0.7067842483520508,
+        "normalized_position": 0.35037707390648565,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2323
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "And he can’t find me?”",
+        "max_topic_prob": 0.7013316750526428,
+        "normalized_position": 0.7959276018099547,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Is he here?” “",
+        "max_topic_prob": 0.6934568881988525,
+        "normalized_position": 0.3505279034690799,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2324
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He is currently hiding in the forest.” “",
+        "max_topic_prob": 0.6797822713851929,
+        "normalized_position": 0.35082956259426845,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2326
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He then searched for a bishop who would adopt him into his diocese.",
+        "max_topic_prob": 0.4625992178916931,
+        "normalized_position": 0.10610079575596817,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "On Easter Sunday morn, Mary Magdelene, having seen the empty tomb, anxiously cried out: \"They have taken my Lord away, and I do not know where they have placed him.\"",
+        "max_topic_prob": 0.41574108600616455,
+        "normalized_position": 0.050397877984084884,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Not long after his arrival, in a place called Dragon Bone Hill in the Peking area, Teilhard discovered Peking Man (Sinanthropus,) or rather Peking Men .",
+        "max_topic_prob": 0.34022146463394165,
+        "normalized_position": 0.383289124668435,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Dr. M. Boule of Paris had been invited by Teilhard to visit China to see the new \"missing link.\"",
+        "max_topic_prob": 0.33051276206970215,
+        "normalized_position": 0.4217506631299735,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "April 6, 1927) \"A certain Mr. G..... claims to have discovered. . . .",
+        "max_topic_prob": 0.3294539153575897,
+        "normalized_position": 0.8567639257294429,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "First he discovered what is known as the Piltdown Man, and later, with improbable good fortune, he discovered Peking Man.",
+        "max_topic_prob": 0.3191828727722168,
+        "normalized_position": 0.29310344827586204,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Where is he?”",
+        "max_topic_prob": 0.8172005414962769,
+        "normalized_position": 0.9383303034540623,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "How did you find me?”",
+        "max_topic_prob": 0.6526117324829102,
+        "normalized_position": 0.4867850650258705,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I ask him, even though I know he can’t help me find her.",
+        "max_topic_prob": 0.6463276743888855,
+        "normalized_position": 0.5378268773598098,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Where’s your boyfriend, Nikolai?",
+        "max_topic_prob": 0.6260963678359985,
+        "normalized_position": 0.35771220808278564,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Where did you go?”",
+        "max_topic_prob": 0.5763444900512695,
+        "normalized_position": 0.12068242203887568,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I suddenly can’t remember a thing about why he came here or what it is he’s supposed to be doing. “",
+        "max_topic_prob": 0.5681522488594055,
+        "normalized_position": 0.06083065305551671,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Where’s Trent?” “",
+        "max_topic_prob": 0.6026667356491089,
+        "normalized_position": 0.7828158622809714,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "><>< “Is Mr. Hammond here?”",
+        "max_topic_prob": 0.5164179801940918,
+        "normalized_position": 0.5926836766062097,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He often dropped by the house when he was in town or home from college on break.",
+        "max_topic_prob": 0.4871761202812195,
+        "normalized_position": 0.008300030740854596,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Lex, Lex Jr., Ty corrected himself, sent him directions last night, so he wasn’t too worried about finding the place.",
+        "max_topic_prob": 0.48382341861724854,
+        "normalized_position": 0.9881647709806333,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 368
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Hart, there’s a man out there looking for you with a really ugly bull.” “",
+        "max_topic_prob": 0.4741244316101074,
+        "normalized_position": 0.31478635106055947,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Leaving everything he’s ever known behind in Portland, he resolves himself to this new adventure with an elusive boss, Lex Ryan, someone he has yet to speak with or meet.",
+        "max_topic_prob": 0.46315205097198486,
+        "normalized_position": 0.930833077159545,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Where did he go?",
+        "max_topic_prob": 0.6893259286880493,
+        "normalized_position": 0.6147241685581762,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "You had a right to find him.”",
+        "max_topic_prob": 0.6373943090438843,
+        "normalized_position": 0.09582552057633474,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Or I should say, he found me.”",
+        "max_topic_prob": 0.6301525235176086,
+        "normalized_position": 0.9613145169248989,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I know why he’s there.",
+        "max_topic_prob": 0.5623989105224609,
+        "normalized_position": 0.5937037402546136,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I have to find Jed .",
+        "max_topic_prob": 0.5486689805984497,
+        "normalized_position": 0.22135596565676502,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Where are we?”",
+        "max_topic_prob": 0.5461870431900024,
+        "normalized_position": 0.7977894009671371,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "If only he’d known … “Where is he?”",
+        "max_topic_prob": 0.7581834197044373,
+        "normalized_position": 0.9692162417374882,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I know you weren’t looking for him, but you found him.",
+        "max_topic_prob": 0.6729545593261719,
+        "normalized_position": 0.7067988668555241,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 475
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’m not seeing him.”",
+        "max_topic_prob": 0.6265267133712769,
+        "normalized_position": 0.06421152030217187,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 407
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’m not seeing him.”",
+        "max_topic_prob": 0.6265267133712769,
+        "normalized_position": 0.7466477809254013,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I checked at his place already, looked in his car.",
+        "max_topic_prob": 0.6264604330062866,
+        "normalized_position": 0.431728045325779,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Now here he is, but we can’t find the phone.",
+        "max_topic_prob": 0.6249309182167053,
+        "normalized_position": 0.432766761095373,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Where is he?”",
+        "max_topic_prob": 0.8172005414962769,
+        "normalized_position": 0.2927471370277741,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He’s in San Francisco.” “",
+        "max_topic_prob": 0.6421360373497009,
+        "normalized_position": 0.29314202974858494,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 358
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "You mean, just show up on his doorstep?” “",
+        "max_topic_prob": 0.6340053081512451,
+        "normalized_position": 0.40081611162300906,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I’ll just have to find my way over without him.”",
+        "max_topic_prob": 0.6030500531196594,
+        "normalized_position": 0.3288140055284981,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I didn’t know him, he was gone by the time I moved here.",
+        "max_topic_prob": 0.5968344807624817,
+        "normalized_position": 0.4753192049493221,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "When you find him, you can have him, because you are now a free woman!” “",
+        "max_topic_prob": 0.5753813982009888,
+        "normalized_position": 0.3922601026721074,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Where has he gone?” “",
+        "max_topic_prob": 0.7761306166648865,
+        "normalized_position": 0.6735150004298117,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I must see him.”",
+        "max_topic_prob": 0.634513795375824,
+        "normalized_position": 0.6652626149746411,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I have to see him.",
+        "max_topic_prob": 0.6043811440467834,
+        "normalized_position": 0.6655205020201151,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Anyone could catch him out here.",
+        "max_topic_prob": 0.5669716000556946,
+        "normalized_position": 0.3391214647984183,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Then he was hit, so I scrambled to get to him.",
+        "max_topic_prob": 0.5487033128738403,
+        "normalized_position": 0.9427490759047538,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 569
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "The last time I saw him, he was flying out over the Atlantic.",
+        "max_topic_prob": 0.5454933047294617,
+        "normalized_position": 0.9724920484827646,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Where is he now?” “",
+        "max_topic_prob": 0.8080644607543945,
+        "normalized_position": 0.5792986425339367,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I need to know where he’s been these last few months and what’s really brought him back here.” “",
+        "max_topic_prob": 0.69743412733078,
+        "normalized_position": 0.2703619909502262,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I think I know where he’s headed.”",
+        "max_topic_prob": 0.6932017803192139,
+        "normalized_position": 0.8618778280542987,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We believe this gentleman might know his whereabouts or why he’s hiding.” “",
+        "max_topic_prob": 0.6829123497009277,
+        "normalized_position": 0.38484162895927604,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Where’d he go?",
+        "max_topic_prob": 0.6691669225692749,
+        "normalized_position": 0.03190045248868778,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "When did you think he went missing?” “",
+        "max_topic_prob": 0.6643439531326294,
+        "normalized_position": 0.36515837104072396,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "See where he is.”",
+        "max_topic_prob": 0.7837569713592529,
+        "normalized_position": 0.15,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Why did you go to him?” “",
+        "max_topic_prob": 0.6290714144706726,
+        "normalized_position": 0.9487910189982729,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Why do you think he’s here?",
+        "max_topic_prob": 0.5923726558685303,
+        "normalized_position": 0.209153713298791,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Where did you go?”",
+        "max_topic_prob": 0.57634437084198,
+        "normalized_position": 0.7547495682210709,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "When did he find out?”",
+        "max_topic_prob": 0.5629357099533081,
+        "normalized_position": 0.48471502590673576,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Where have you been?”",
+        "max_topic_prob": 0.5366432666778564,
+        "normalized_position": 0.6124352331606218,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Where is he?” “",
+        "max_topic_prob": 0.8223598003387451,
+        "normalized_position": 0.5977814753189129,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I’ll drive to New York and find him myself.” “",
+        "max_topic_prob": 0.7379415035247803,
+        "normalized_position": 0.8073211314475873,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Where could he be? “",
+        "max_topic_prob": 0.7369602918624878,
+        "normalized_position": 0.8065446478092069,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I’ll find him.",
+        "max_topic_prob": 0.7234617471694946,
+        "normalized_position": 0.8478092068774266,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Where is he?",
+        "max_topic_prob": 0.7067842483520508,
+        "normalized_position": 0.26433721575152525,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I’ll find him, no matter what.”",
+        "max_topic_prob": 0.6961159706115723,
+        "normalized_position": 0.8386023294509152,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "His work met wi th a luke warm receptio n from the scient iﬁc commu nity , in pa rt b ecause ▲ First c lues Explo rers n oticed t hat the east coast of So uth America and the west coast of Afr ica a ppeared to fit toget her.",
+        "max_topic_prob": 0.4296395778656006,
+        "normalized_position": 0.21673138016237203,
+        "tertile": "begin",
+        "chapter_index": 88,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He ca me up wit h a ﬁ gure of about 40 ,000 km ( 25,00 0 mile s) – close to t he tru e val ue kn own today .",
+        "max_topic_prob": 0.36946460604667664,
+        "normalized_position": 0.041475467702082595,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Joel Bradshaw , Honolulu, Hawaii: (ca).",
+        "max_topic_prob": 0.3668351173400879,
+        "normalized_position": 0.9655841863748676,
+        "tertile": "end",
+        "chapter_index": 371,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "During his j ourn ey, he coll ected speci men s from acr oss th e globe.",
+        "max_topic_prob": 0.3230054974555969,
+        "normalized_position": 0.26985527709142254,
+        "tertile": "begin",
+        "chapter_index": 108,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "197 Robert Clark: (b).",
+        "max_topic_prob": 0.3198862671852112,
+        "normalized_position": 0.9611719025767738,
+        "tertile": "end",
+        "chapter_index": 371,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Proconsul was one of th e earl iest apes, found i n Afri ca.",
+        "max_topic_prob": 0.29079926013946533,
+        "normalized_position": 0.48429226967878575,
+        "tertile": "middle",
+        "chapter_index": 184,
+        "sentence_index": 19
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.026490066225165563,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.009597806215722121,
+        "n_sentences": 84
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0043934021889933715,
+        "n_sentences": 57
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.004907428061565916,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.004368042835000705,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.004689863842662632,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004456666034515456,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0050144862937374635,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0018252933507170795,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0018601767167880949,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0018508725542041248,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0017658484901995409,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0017829284599955428,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0018164518640256034,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.001997802417340925,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 90
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "10.3",
+    "taxonomy_secondary_name": "Mystery, Suspense & Investigation",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

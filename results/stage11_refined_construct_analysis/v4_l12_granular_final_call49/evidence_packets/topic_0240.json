@@ -1,0 +1,725 @@
+{
+  "topic_id": 240,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sean",
+        "jaime",
+        "brogue",
+        "answered",
+        "looked",
+        "said",
+        "bryan",
+        "yseult",
+        "morrissey",
+        "repressive"
+      ],
+      "KeyBERT": [
+        "mumbled",
+        "solemnly",
+        "absently",
+        "winced",
+        "patted",
+        "willing",
+        "shivered",
+        "assume",
+        "anxious",
+        "ed"
+      ],
+      "POS": [
+        "equal",
+        "anxious",
+        "stares",
+        "conscious",
+        "latest",
+        "unsure",
+        "curiosity",
+        "task",
+        "distracted",
+        "thigh"
+      ],
+      "MMR": [
+        "absently",
+        "solemnly",
+        "anxious",
+        "stares",
+        "ducked",
+        "conscious",
+        "studying",
+        "distracted",
+        "mumbled",
+        "shivered"
+      ]
+    },
+    "stage08_snippets": [
+      "oh my god, sean!",
+      "sean pursed his lips, unsure he was equal to the task of comforting [person].",
+      "sean held out his hand and added; “now if you’ll excuse me i have a beautiful woman waiting to have breakfast with me.”"
+    ],
+    "label_public": "Unsure How to Offer Comfort"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Liam wanted to know. “",
+        "max_topic_prob": 0.5963641405105591,
+        "normalized_position": 0.10767281939920377,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 595
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was hard to tell,” Liam said. “",
+        "max_topic_prob": 0.538445234298706,
+        "normalized_position": 0.17191458559536735,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 950
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Liam could barely contain his excitement. “",
+        "max_topic_prob": 0.5125995874404907,
+        "normalized_position": 0.6692001447701773,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1054
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Oh,” I said, thinking fast, watching as Seth started to show Liam how to use another nearby machine, while the Tiffanys and Brittanys gathered round, looking more worshipful than ever.",
+        "max_topic_prob": 0.5009881258010864,
+        "normalized_position": 0.11961635903003981,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 661
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "To Liam, I repeated,“What?” “",
+        "max_topic_prob": 0.48914027214050293,
+        "normalized_position": 0.07546145494028231,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shon peered around Grady.",
+        "max_topic_prob": 0.490536093711853,
+        "normalized_position": 0.5643429981492906,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You need to stop nipping at him and face the fact that when Shon goes under, he’s off limits, one breath away from being a hostile at our backs.” “",
+        "max_topic_prob": 0.4835383892059326,
+        "normalized_position": 0.7381863047501542,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 455
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shon…” “Yeah?” “",
+        "max_topic_prob": 0.4634532630443573,
+        "normalized_position": 0.2718075262183837,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 415
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shon!”",
+        "max_topic_prob": 0.44244295358657837,
+        "normalized_position": 0.9199259716224553,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shon!”",
+        "max_topic_prob": 0.44244295358657837,
+        "normalized_position": 0.9267119062307217,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 444
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shon!”",
+        "max_topic_prob": 0.4424428939819336,
+        "normalized_position": 0.6265268352868599,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 548
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I want Sean,’ she said. ‘",
+        "max_topic_prob": 0.7727736234664917,
+        "normalized_position": 0.07610602221789126,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Sean.",
+        "max_topic_prob": 0.7663722038269043,
+        "normalized_position": 0.8378483726369129,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Sean?’",
+        "max_topic_prob": 0.764128565788269,
+        "normalized_position": 0.8442798674722276,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "James gave this only a moment’s consideration before asking, ‘What’s Sean’s excuse?’",
+        "max_topic_prob": 0.7522568702697754,
+        "normalized_position": 0.6602026895342039,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Sean’s face was wary. ‘",
+        "max_topic_prob": 0.7423557639122009,
+        "normalized_position": 0.30159812901968425,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Whether or not Sean understood this was another matter.",
+        "max_topic_prob": 0.7407822608947754,
+        "normalized_position": 0.296043656207367,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Conner asked.",
+        "max_topic_prob": 0.5693731307983398,
+        "normalized_position": 0.4493102006688963,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Dammit, Conner just tell me.” “",
+        "max_topic_prob": 0.5531597137451172,
+        "normalized_position": 0.7612876254180602,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He shared a look with Conner. “",
+        "max_topic_prob": 0.5449643135070801,
+        "normalized_position": 0.7636914715719063,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Conner asked suspiciously.",
+        "max_topic_prob": 0.5436992049217224,
+        "normalized_position": 0.29943561872909696,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 520
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Yes, Conner?” “",
+        "max_topic_prob": 0.5363377332687378,
+        "normalized_position": 0.7843854515050167,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Hey, Conner.”",
+        "max_topic_prob": 0.5293402075767517,
+        "normalized_position": 0.1609531772575251,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "asked Sean. \"",
+        "max_topic_prob": 0.8381524682044983,
+        "normalized_position": 0.3777856384860276,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "asked Sean. \"",
+        "max_topic_prob": 0.8381524682044983,
+        "normalized_position": 0.9922178988326849,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Sean answered. \"",
+        "max_topic_prob": 0.8200721740722656,
+        "normalized_position": 0.7272727272727273,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Sean teased. \"",
+        "max_topic_prob": 0.7968447208404541,
+        "normalized_position": 0.38698266713830914,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 390
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Ty,\" began Sean. \"",
+        "max_topic_prob": 0.76642906665802,
+        "normalized_position": 0.3859214715245844,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Let me guess,\" said Sean. \"",
+        "max_topic_prob": 0.7664040923118591,
+        "normalized_position": 0.7278033250795897,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Nwoooo!”",
+        "max_topic_prob": 0.35784226655960083,
+        "normalized_position": 0.40855240098142304,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 423
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What about Sean?” “",
+        "max_topic_prob": 0.8055820465087891,
+        "normalized_position": 0.2694208592066912,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What’s going on between you and Sean?”",
+        "max_topic_prob": 0.7942596077919006,
+        "normalized_position": 0.5385882651121531,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Sean.",
+        "max_topic_prob": 0.7663722038269043,
+        "normalized_position": 0.9854264351793182,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Sean.",
+        "max_topic_prob": 0.7663720846176147,
+        "normalized_position": 0.5336459257381827,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Why aren’t you with Sean?”",
+        "max_topic_prob": 0.7607385516166687,
+        "normalized_position": 0.3614244075529084,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I’m tired and I miss Sean.” “",
+        "max_topic_prob": 0.7303467988967896,
+        "normalized_position": 0.18273983018628817,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Sean muttered. “",
+        "max_topic_prob": 0.8611790537834167,
+        "normalized_position": 0.9154347826086957,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Sean rolled his eyes. “",
+        "max_topic_prob": 0.8580000400543213,
+        "normalized_position": 0.3768478260869565,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Sean murmured. “",
+        "max_topic_prob": 0.8579009771347046,
+        "normalized_position": 0.8821739130434783,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Sean shook his head. “",
+        "max_topic_prob": 0.8446176648139954,
+        "normalized_position": 0.95,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Sean shrugged. “",
+        "max_topic_prob": 0.8380078077316284,
+        "normalized_position": 0.6479347826086956,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "“Sean?”",
+        "max_topic_prob": 0.8281720280647278,
+        "normalized_position": 0.9843478260869565,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "U.S. Pat. &",
+        "max_topic_prob": 0.2336406409740448,
+        "normalized_position": 0.002875530603861427,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Ryan,” Hudson said, softly.",
+        "max_topic_prob": 0.560997486114502,
+        "normalized_position": 0.8619220451317658,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What do you think, Ryan?” “",
+        "max_topic_prob": 0.5252176523208618,
+        "normalized_position": 0.7159539214139182,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Geesh, cut the guy some slack, Ryan,” said Shona. “",
+        "max_topic_prob": 0.48993679881095886,
+        "normalized_position": 0.9435063910367681,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Ryan’s body is shutting down.",
+        "max_topic_prob": 0.46826931834220886,
+        "normalized_position": 0.5343222344958182,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 492
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Ryan’s body is shutting down.",
+        "max_topic_prob": 0.46826931834220886,
+        "normalized_position": 0.5412655830834779,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 536
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "This blows, Ryan,” Shona, a close friend and fellow demon-butt kicker, said as she turned to head back to the group of teen girls who were currently giggling in the other room of the establishment.",
+        "max_topic_prob": 0.4384281039237976,
+        "normalized_position": 0.14659933722581664,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 34
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.04217196547580029,
+        "n_sentences": 386
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0011166055192215665,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0019943318988138972,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.005357142857142857,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.009563245588090309,
+        "n_sentences": 97
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.004111124953282671,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.00869873957038878,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0009199632014719411,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00013777900248002206,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 7.070635650144948e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 49
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.65,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

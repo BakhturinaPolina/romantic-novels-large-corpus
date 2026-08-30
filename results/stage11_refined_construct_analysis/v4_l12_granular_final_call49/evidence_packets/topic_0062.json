@@ -1,0 +1,81 @@
+{
+  "topic_id": 62,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "stupid",
+        "idiot",
+        "fool",
+        "asshole",
+        "jerk",
+        "rude",
+        "ridiculous",
+        "silly",
+        "dumb",
+        "fooling"
+      ],
+      "KeyBERT": [
+        "harshly",
+        "remark",
+        "embarrassed",
+        "acted",
+        "comments"
+      ],
+      "POS": [
+        "utter",
+        "notion",
+        "remark",
+        "equal",
+        "inevitable",
+        "comments",
+        "annoying",
+        "movies",
+        "terms",
+        "precious"
+      ],
+      "MMR": [
+        "utter",
+        "remark",
+        "harshly",
+        "overheard",
+        "comments",
+        "hissed",
+        "terms",
+        "actions",
+        "sounding",
+        "embarrassed"
+      ]
+    },
+    "stage08_snippets": [
+      "marnie, i’ve been stupid.",
+      "about what an asshole i’ve been?” “",
+      "you've done something dumb, but you'll get away with it this time."
+    ],
+    "label_public": "Admitting You've Been Stupid"
+  },
+  "contextual": {
+    "sentences": [],
+    "books_sampled": [],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

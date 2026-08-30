@@ -1,0 +1,957 @@
+{
+  "topic_id": 351,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "see",
+        "nice",
+        "good",
+        "glad",
+        "again",
+        "pleasure",
+        "you",
+        "happy",
+        "great",
+        "awfully"
+      ],
+      "KeyBERT": [
+        "greeted",
+        "mister",
+        "madam",
+        "replies",
+        "warmth",
+        "reminds",
+        "reaches"
+      ],
+      "POS": [
+        "lack",
+        "warmth",
+        "crowd"
+      ],
+      "MMR": [
+        "madam",
+        "reminds",
+        "replies",
+        "greeted",
+        "winced",
+        "reaches",
+        "ms",
+        "drifted",
+        "warmth",
+        "crowd"
+      ]
+    },
+    "stage08_snippets": [
+      "thank god you’ve come back—and will you look at me, just in time.”",
+      "it is a pleasure to see you again—so soon, madam. ”",
+      "so i’ll see you there,” he said, feeling upbeat for the first time in a long time. “"
+    ],
+    "label_public": "Warm Greeting Upon Return"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Thank you for seeing me.",
+        "max_topic_prob": 0.6121410131454468,
+        "normalized_position": 0.863969264017289,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1139
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I never want to see you again.”",
+        "max_topic_prob": 0.598064124584198,
+        "normalized_position": 0.8275903469804298,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 836
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I’ll give it to him when I see him again.” “",
+        "max_topic_prob": 0.5054076313972473,
+        "normalized_position": 0.24360667547124504,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2029
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Are you happy to see me?”",
+        "max_topic_prob": 0.7600431442260742,
+        "normalized_position": 0.8206316302889891,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "It was good seeing you again, Tuck.”",
+        "max_topic_prob": 0.7283428907394409,
+        "normalized_position": 0.04548225826118766,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Yes, but I was also relieved you didn’t show up.”",
+        "max_topic_prob": 0.6058869957923889,
+        "normalized_position": 0.11827825874893305,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’ll see you as often as I can,” he said, only making matters worse by reminding the children he wouldn’t be seeing them on a normal basis. “",
+        "max_topic_prob": 0.5247621536254883,
+        "normalized_position": 0.21899768320936472,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Whatever the reason, it was a pretty nice day.",
+        "max_topic_prob": 0.3780977725982666,
+        "normalized_position": 0.4422631386416291,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Amber had seen it as a splendid way to say goodbye to the hoards of tourists who crowded Harmony during that season.",
+        "max_topic_prob": 0.3708054721355438,
+        "normalized_position": 0.570052432630167,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 502
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A pleasure to see you again.’",
+        "max_topic_prob": 0.8409274816513062,
+        "normalized_position": 0.2709798406000938,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I am glad to see you.’",
+        "max_topic_prob": 0.8385077714920044,
+        "normalized_position": 0.0676277543366151,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It is a delight to see you again.’",
+        "max_topic_prob": 0.8224693536758423,
+        "normalized_position": 0.5652836380684482,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "How good to see you.’",
+        "max_topic_prob": 0.783747673034668,
+        "normalized_position": 0.5643459915611815,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "How delightful to see you.’",
+        "max_topic_prob": 0.7515746355056763,
+        "normalized_position": 0.6749882794186591,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It is a pleasure to see you again, Miss Vernon.’",
+        "max_topic_prob": 0.7206711769104004,
+        "normalized_position": 0.4914439756211908,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "As always.”",
+        "max_topic_prob": 0.5191795825958252,
+        "normalized_position": 0.6274509803921569,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Again. “",
+        "max_topic_prob": 0.4767915606498718,
+        "normalized_position": 0.22012138188608776,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Good to see you again, Rev,” she said.",
+        "max_topic_prob": 0.7752231359481812,
+        "normalized_position": 0.7412830375977169,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ll see you again.” “",
+        "max_topic_prob": 0.7543332576751709,
+        "normalized_position": 0.6178185879141332,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "See you.”",
+        "max_topic_prob": 0.7448253035545349,
+        "normalized_position": 0.10001240848740539,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Nice to have you back, General,” she added. “",
+        "max_topic_prob": 0.6879255175590515,
+        "normalized_position": 0.7940191090706042,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "How happy I am to see you,” he whispered.",
+        "max_topic_prob": 0.675780177116394,
+        "normalized_position": 0.6936344459610374,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 441
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "How kind of you to come and visit me.” “",
+        "max_topic_prob": 0.649716854095459,
+        "normalized_position": 0.5152003970715969,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nice to see you, too, Dad.\"",
+        "max_topic_prob": 0.7582994699478149,
+        "normalized_position": 0.4755622188905547,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "See you.\"",
+        "max_topic_prob": 0.7491626739501953,
+        "normalized_position": 0.41739130434782606,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I'm sure I'll see you again, Josh.",
+        "max_topic_prob": 0.6213997602462769,
+        "normalized_position": 0.8599700149925037,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I'm glad.\" \"",
+        "max_topic_prob": 0.6085950136184692,
+        "normalized_position": 0.5832083958020989,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Glad you're here.",
+        "max_topic_prob": 0.47861582040786743,
+        "normalized_position": 0.24587706146926536,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Me, too.\"",
+        "max_topic_prob": 0.4773169755935669,
+        "normalized_position": 0.5835082458770615,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Chiefwants to see you.",
+        "max_topic_prob": 0.45446303486824036,
+        "normalized_position": 0.8548534798534798,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1735
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It’s so good to see you and I’m so-o glad you came.",
+        "max_topic_prob": 0.71333909034729,
+        "normalized_position": 0.9835264301230991,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Nice to see you again, Taylor.",
+        "max_topic_prob": 0.7071139812469482,
+        "normalized_position": 0.11042722664735699,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "See you soon.”",
+        "max_topic_prob": 0.700074315071106,
+        "normalized_position": 0.035843591600289645,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’m glad I came, too.” “",
+        "max_topic_prob": 0.6950979828834534,
+        "normalized_position": 0.7996017378711079,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "To you and your family, if I don’t see you again.” “",
+        "max_topic_prob": 0.6697326898574829,
+        "normalized_position": 0.6270818247646633,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It’s been so very nice.” “",
+        "max_topic_prob": 0.5844939351081848,
+        "normalized_position": 0.7994207096307024,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "How wonderful to see you again.\"",
+        "max_topic_prob": 0.8634914755821228,
+        "normalized_position": 0.2574368869593182,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I am glad I waited though, it is such a pleasure to see you again.\"",
+        "max_topic_prob": 0.7605949640274048,
+        "normalized_position": 0.719408264994372,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I look forward to seeing you soon.\"",
+        "max_topic_prob": 0.7518301606178284,
+        "normalized_position": 0.6454413892908828,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "May I have the pleasure of seeing you safely back?\"",
+        "max_topic_prob": 0.7384334802627563,
+        "normalized_position": 0.5679369673580962,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Such a delight to see you again.",
+        "max_topic_prob": 0.7155951857566833,
+        "normalized_position": 0.1763949187972343,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Good afternoon Mr. Barstow, it is good to see you today.\"",
+        "max_topic_prob": 0.665723443031311,
+        "normalized_position": 0.7150667309856891,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It’s a pleasure to see you again.",
+        "max_topic_prob": 0.8102174401283264,
+        "normalized_position": 0.4859335038363171,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I hope to see you again, real soon.”",
+        "max_topic_prob": 0.7734671831130981,
+        "normalized_position": 0.12342933392638719,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "See ya . “",
+        "max_topic_prob": 0.713058590888977,
+        "normalized_position": 0.6635160680529301,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I have since the first time I saw you.”",
+        "max_topic_prob": 0.6478509306907654,
+        "normalized_position": 0.3245857889469587,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 526
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I gazed into his eyes, thanked him again for earlier and for walking me back to my cabin now. “",
+        "max_topic_prob": 0.6367264986038208,
+        "normalized_position": 0.11353274769264984,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Hope to see you later, Brad.”",
+        "max_topic_prob": 0.6172493696212769,
+        "normalized_position": 0.11186478372067163,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Good to see you.’",
+        "max_topic_prob": 0.7683961987495422,
+        "normalized_position": 0.14344494892167992,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1011
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Good to see you again.",
+        "max_topic_prob": 0.7512725591659546,
+        "normalized_position": 0.2017593643586833,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1422
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "See ya . . .’",
+        "max_topic_prob": 0.61037278175354,
+        "normalized_position": 0.7731271282633371,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m glad to see you’re okay.",
+        "max_topic_prob": 0.5570827722549438,
+        "normalized_position": 0.19752281616688397,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I went out looking for you.",
+        "max_topic_prob": 0.5175274014472961,
+        "normalized_position": 0.814341590612777,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "It was nice to laugh again, to remember the good times.",
+        "max_topic_prob": 0.49802106618881226,
+        "normalized_position": 0.6102998696219035,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m happy to see you, too.”",
+        "max_topic_prob": 0.8528425693511963,
+        "normalized_position": 0.3990426457789382,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It’s good to see you, too.",
+        "max_topic_prob": 0.8251971006393433,
+        "normalized_position": 0.9660574412532638,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It’s great to see you, Ashlynn.",
+        "max_topic_prob": 0.7287926077842712,
+        "normalized_position": 0.9643167972149695,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m so glad you’re here.”",
+        "max_topic_prob": 0.6903952360153198,
+        "normalized_position": 0.61792863359443,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m very glad I came in here today.”",
+        "max_topic_prob": 0.6517626047134399,
+        "normalized_position": 0.9830287206266318,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I was talking about seeing you here.” “",
+        "max_topic_prob": 0.6342609524726868,
+        "normalized_position": 0.39860748476936464,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "It was so good to see you, Coops.",
+        "max_topic_prob": 0.6919626593589783,
+        "normalized_position": 0.6263306199123356,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 834
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "It’s so good to see you, Coops!’",
+        "max_topic_prob": 0.6914975047111511,
+        "normalized_position": 0.573888541014402,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I’m glad I saw you,’ Ed said, panting slightly. ‘",
+        "max_topic_prob": 0.6614198684692383,
+        "normalized_position": 0.9674389480275517,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "See you soon, Thea.’",
+        "max_topic_prob": 0.5738123655319214,
+        "normalized_position": 0.1242955541640576,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 702
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Seeing you here made me think about things, about us.",
+        "max_topic_prob": 0.4950774908065796,
+        "normalized_position": 0.9690043832185348,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I’ll see you soon.” “",
+        "max_topic_prob": 0.7023947238922119,
+        "normalized_position": 0.400100150225338,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Nice to see you too, Anna,” Brayden laughs, climbing back in the driver’s side. “",
+        "max_topic_prob": 0.6695363521575928,
+        "normalized_position": 0.14621932899349024,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I knew you were going to be here, but it’s still a surprise to see you,” he says with a large smile.",
+        "max_topic_prob": 0.6174253821372986,
+        "normalized_position": 0.32966115840427307,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Thank you, Anna,” he says, smiling gratefully at me as we stand and go outside.",
+        "max_topic_prob": 0.6171610355377197,
+        "normalized_position": 0.29761308629611083,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I grin and say good-bye. “",
+        "max_topic_prob": 0.5766274929046631,
+        "normalized_position": 0.5813720580871307,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "It’ll be nice to see you spending time in the real world.”",
+        "max_topic_prob": 0.5765072107315063,
+        "normalized_position": 0.09798030378901686,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 224
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.00307152259763054,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0030164227460618923,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0027552674230145865,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.002369236376890833,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.002472042377869335,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0021148036253776435,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.002183406113537118,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0023770799449518328,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.00036288859320188704,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0004287551807917679,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0003923620193565263,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0004682744088035589,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0007883948281299275,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0008604794099569761,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.00023046784973496196,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

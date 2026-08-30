@@ -1,0 +1,86 @@
+# Frozen H3 emotional vs material/security prompts.
+
+hypothesis: H3
+name: security_material
+version: "1.0"
+frozen: true
+
+codes:
+  - id: S0
+    label: off_target
+  - id: S1
+    label: emotional_security_reassurance
+  - id: S2
+    label: emotional_security_belonging
+  - id: S3
+    label: emotional_security_trust
+  - id: S4
+    label: commitment_security
+  - id: S5
+    label: practical_care_everyday
+  - id: S6
+    label: practical_care_illness_crisis
+  - id: S7
+    label: physical_protection
+  - id: S8
+    label: material_provision_money
+  - id: S9
+    label: material_provision_housing
+  - id: S10
+    label: economic_dependency
+  - id: S11
+    label: practical_help_other
+  - id: S12
+    label: status_display
+  - id: S13
+    label: appearance_grooming
+  - id: S14
+    label: gift_romance_token
+  - id: S15
+    label: workplace_status
+  - id: S16
+    label: mixed_or_unclear_function
+
+guidance: |
+  Classify FUNCTION, not object. A gown may be appearance (S13), gift (S14), provision (S8),
+  or dependency (S10). Keep status display (S12) separate from financial security.
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+phrasing:
+  primary:
+    system: |
+      You classify romance-topic security functions (emotional vs material vs status/appearance).
+      Function over object. Ratings and taxonomy are hidden until Pass C. JSON only.
+    pass_a: |
+      Lexical security coding for topic {topic_id}.
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      JSON: per_rep, consensus_code, disagreement, resource_type, security_function, rationale.
+    pass_b: |
+      Contextual security coding for topic {topic_id} (cells blinded):
+      {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code, MIXED if needed, rationale.
+    pass_c: |
+      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+
+  alternate:
+    system: |
+      Security-function auditor for romance topics. Separate emotional security, material/economic
+      provision, practical care, physical protection, and status/appearance display. JSON only.
+    pass_a: |
+      Keywords for {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}. Assign S-codes.
+    pass_b: |
+      Sentences for {topic_id}:
+      {sentences_block}
+    pass_c: |
+      Adjudicate {topic_id} with tax={taxonomy_id}/{taxonomy_name}. Action + security_code.

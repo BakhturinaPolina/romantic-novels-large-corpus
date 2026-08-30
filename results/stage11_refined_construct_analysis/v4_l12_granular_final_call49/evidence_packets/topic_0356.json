@@ -1,0 +1,944 @@
+{
+  "topic_id": 356,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tired",
+        "exhausted",
+        "exhaustion",
+        "am",
+        "must",
+        "tiredness",
+        "kind",
+        "fatigue",
+        "getting",
+        "too"
+      ],
+      "KeyBERT": [
+        "rested",
+        "drained",
+        "worn",
+        "sir",
+        "remarked",
+        "session"
+      ],
+      "POS": [
+        "session",
+        "sir"
+      ],
+      "MMR": [
+        "remarked",
+        "drained",
+        "session",
+        "emotionally",
+        "studying",
+        "ok",
+        "washed",
+        "worn",
+        "rested",
+        "sir"
+      ]
+    },
+    "stage08_snippets": [
+      "i am kind of tired, but you’ve done enough.",
+      "i’ve been riding most of the day, i’m tired.” “",
+      "i’ve rested more than i ever expected to rest in the whole of my lifetime during the past six weeks,” he said, “and i’m feeling perfectly fresh."
+    ],
+    "label_public": "Admitting Exhaustion After A Long Day"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "You must be exhausted.” “",
+        "max_topic_prob": 0.8243615627288818,
+        "normalized_position": 0.6475716913016825,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "You look exhausted,” he commented. “",
+        "max_topic_prob": 0.7855126857757568,
+        "normalized_position": 0.6096996117430693,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 1659
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I thought you were tired.",
+        "max_topic_prob": 0.7148712873458862,
+        "normalized_position": 0.6477760370546966,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I was tired and cold and done with feeling under siege for the day. “",
+        "max_topic_prob": 0.6960947513580322,
+        "normalized_position": 0.15216947074449969,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 2222
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I was exhausted, too, but there was much yet to do.",
+        "max_topic_prob": 0.6802194714546204,
+        "normalized_position": 0.7740617124174103,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Aren’t you getting just a little tired of—” “I wasn’t kidding about the way it gets dark out here.",
+        "max_topic_prob": 0.552021861076355,
+        "normalized_position": 0.48722839043661875,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1730
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I was exhausted.",
+        "max_topic_prob": 0.8248835802078247,
+        "normalized_position": 0.08298647242455776,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "By 7 p.m., I was exhausted.",
+        "max_topic_prob": 0.720561146736145,
+        "normalized_position": 0.06997918834547347,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You must be exhausted with all of your commitments at the moment?’ ‘",
+        "max_topic_prob": 0.6906682252883911,
+        "normalized_position": 0.5349895941727367,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’m just tired, and I’ve got a big week.’ ‘",
+        "max_topic_prob": 0.6604507565498352,
+        "normalized_position": 0.3462539021852237,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I was exhausted at just the idea of it. ‘",
+        "max_topic_prob": 0.6331279277801514,
+        "normalized_position": 0.8480749219562955,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I was tired from a big week, my nervous energy had transformed into lethargy, and I was still drunkish.",
+        "max_topic_prob": 0.6014732122421265,
+        "normalized_position": 0.7761446409989594,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You’re exhausted and emotionally drained.",
+        "max_topic_prob": 0.6738395094871521,
+        "normalized_position": 0.46012163336229367,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 515
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You need to rest,” Randy insisted. “",
+        "max_topic_prob": 0.5789348483085632,
+        "normalized_position": 0.5442224152910513,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You’re tired, and I’m certain you’re feeling weak because of the smoke in your lungs.",
+        "max_topic_prob": 0.6221755743026733,
+        "normalized_position": 0.8894861857732217,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "He’s just resting.” “",
+        "max_topic_prob": 0.6156411170959473,
+        "normalized_position": 0.30191273909238653,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Holtzman looked tired.",
+        "max_topic_prob": 0.5413088798522949,
+        "normalized_position": 0.7923490436304538,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I think I’m sick or something.",
+        "max_topic_prob": 0.41375112533569336,
+        "normalized_position": 0.06100762595324415,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’m just a bit tired.",
+        "max_topic_prob": 0.766546368598938,
+        "normalized_position": 0.061785425568772374,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "But I’ve been exhausted before and it’s never been like this .” “",
+        "max_topic_prob": 0.7184724807739258,
+        "normalized_position": 0.5962582284328445,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Very tired.",
+        "max_topic_prob": 0.7174620628356934,
+        "normalized_position": 0.6103476151980598,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It could very well be exhaustion.” “",
+        "max_topic_prob": 0.7107822895050049,
+        "normalized_position": 0.5961427416560804,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Just rest for a second.”",
+        "max_topic_prob": 0.6782390475273132,
+        "normalized_position": 0.8725025984524772,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I rested for a few minutes, and then spoke again. “",
+        "max_topic_prob": 0.6160085797309875,
+        "normalized_position": 0.51137544751126,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You look tired.",
+        "max_topic_prob": 0.752618670463562,
+        "normalized_position": 0.6931456548347613,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I am a bit tired, but I’m good.” “",
+        "max_topic_prob": 0.7515689730644226,
+        "normalized_position": 0.8460220318237454,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Please, I’m tired.”",
+        "max_topic_prob": 0.7442909479141235,
+        "normalized_position": 0.9771113831089351,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Why don’t you rest?”",
+        "max_topic_prob": 0.7003491520881653,
+        "normalized_position": 0.9702570379436964,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You look tired,” she said finally. “",
+        "max_topic_prob": 0.6842008829116821,
+        "normalized_position": 0.8456548347613219,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Tired.",
+        "max_topic_prob": 0.6689730882644653,
+        "normalized_position": 0.45679314565483475,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Just tired.”",
+        "max_topic_prob": 0.7608841061592102,
+        "normalized_position": 0.0420773313115997,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "So tired. “",
+        "max_topic_prob": 0.7434545755386353,
+        "normalized_position": 0.8038286580742987,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m kind of tired,” I admit.",
+        "max_topic_prob": 0.7928657531738281,
+        "normalized_position": 0.7738077214231642,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I don’t suppose I could convince you I’m not feeling well today?”",
+        "max_topic_prob": 0.6086429357528687,
+        "normalized_position": 0.10204390613171839,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "You should get some rest,” he tells me, his voice completely devoid of emotion. “",
+        "max_topic_prob": 0.5767372846603394,
+        "normalized_position": 0.6719152157456473,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Babe, I’m tired.”",
+        "max_topic_prob": 0.720327615737915,
+        "normalized_position": 0.771900826446281,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Then I will be back home and sleeping because I will be exhausted.”",
+        "max_topic_prob": 0.6972379088401794,
+        "normalized_position": 0.3971664698937426,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I can help make you more tired.”",
+        "max_topic_prob": 0.6738755702972412,
+        "normalized_position": 0.7723730814639905,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I know, I am just tired.",
+        "max_topic_prob": 0.6183876395225525,
+        "normalized_position": 0.7881936245572609,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Tomorrow, maybe, I’m tired tonight.",
+        "max_topic_prob": 0.6103384494781494,
+        "normalized_position": 0.06257378984651712,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Then you need to rest so you will be able to perform!”",
+        "max_topic_prob": 0.508145272731781,
+        "normalized_position": 0.171900826446281,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Just kinda tired.",
+        "max_topic_prob": 0.7024155855178833,
+        "normalized_position": 0.22782410917361637,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "And I’m sure you’re pretty tired by now, too,” he said to me, making this assumption because, lately, I was always tired.",
+        "max_topic_prob": 0.6970577239990234,
+        "normalized_position": 0.9286075309577964,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’m kinda tired, babe.",
+        "max_topic_prob": 0.6650549173355103,
+        "normalized_position": 0.17311094263330806,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It’s too early to be tired,” he said with a smile.",
+        "max_topic_prob": 0.6369080543518066,
+        "normalized_position": 0.3539297447561284,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Get some rest.",
+        "max_topic_prob": 0.6241587400436401,
+        "normalized_position": 0.255117513267627,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You won’t be tired for long,” was the response that he returned.",
+        "max_topic_prob": 0.6186462640762329,
+        "normalized_position": 0.1734900176901693,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm too tired.”",
+        "max_topic_prob": 0.8139389157295227,
+        "normalized_position": 0.17184631523734592,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 406
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm sooo tired.”",
+        "max_topic_prob": 0.8066308498382568,
+        "normalized_position": 0.3465119328612641,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm tired.” “",
+        "max_topic_prob": 0.8010891079902649,
+        "normalized_position": 0.9182402307894046,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm not as tired as I thought.”",
+        "max_topic_prob": 0.7874233722686768,
+        "normalized_position": 0.3486100183582481,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm just tired, really tired.",
+        "max_topic_prob": 0.7780057191848755,
+        "normalized_position": 0.15984788880146866,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I'm too tired.",
+        "max_topic_prob": 0.7503232359886169,
+        "normalized_position": 0.5698269079464988,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I hadn’t realized how tired my shoulders had become until I was able to bring my arms down.",
+        "max_topic_prob": 0.5948745012283325,
+        "normalized_position": 0.5488599348534202,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "This time of the evening, with people having just gotten off work, there are a fair number of exercisers here.",
+        "max_topic_prob": 0.352064311504364,
+        "normalized_position": 0.6388436482084691,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m so tired.” “",
+        "max_topic_prob": 0.814300000667572,
+        "normalized_position": 0.428770220907984,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Caden was so fucking exhausted.",
+        "max_topic_prob": 0.5337538719177246,
+        "normalized_position": 0.33692816141937726,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m kinda nauseous.” “",
+        "max_topic_prob": 0.5083661079406738,
+        "normalized_position": 0.33953731083666727,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Suddenly, I felt so tired.",
+        "max_topic_prob": 0.7894114255905151,
+        "normalized_position": 0.884959924563885,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It’s ok, I’m sure you’re tired.",
+        "max_topic_prob": 0.6862295866012573,
+        "normalized_position": 0.10938236680810938,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Listen, you get some rest.",
+        "max_topic_prob": 0.6310678124427795,
+        "normalized_position": 0.33286185761433285,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I was dog tired and my eyes must be playing tricks on me.",
+        "max_topic_prob": 0.5932772755622864,
+        "normalized_position": 0.12164073550212164,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "My husband has to run some errands and I could use a nap, I’m a little tired,” she said, and started to yawn.",
+        "max_topic_prob": 0.5790199041366577,
+        "normalized_position": 0.02545968882602546,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I did as I was told, because I was exhausted and didn’t have the energy to disagree with her.",
+        "max_topic_prob": 0.5408801436424255,
+        "normalized_position": 0.3418198962753418,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I was tired.",
+        "max_topic_prob": 0.8048886060714722,
+        "normalized_position": 0.32273352698364166,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Exhausted.",
+        "max_topic_prob": 0.7787598967552185,
+        "normalized_position": 0.32288640880599295,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "In all honesty, he should be more exhausted, but instead of appearing tired, I saw how his shoulders tensed.",
+        "max_topic_prob": 0.6406353116035461,
+        "normalized_position": 0.23329766090811802,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m not tired,” Dante replied, even though I knew he was.",
+        "max_topic_prob": 0.6376070976257324,
+        "normalized_position": 0.24048310655863017,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Perhaps it was the fact that I was so close to a bed that made me feel exhausted beyond what I should feel at one-thirty a.m. When I opened my door, I realized that my bags were already inside.",
+        "max_topic_prob": 0.5666714310646057,
+        "normalized_position": 0.14401467665494572,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Lara and Dante had some sort of conversation going on, but I couldn’t focus—I was too tired.",
+        "max_topic_prob": 0.5227736234664917,
+        "normalized_position": 0.1417214493196759,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 97
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0020086526576019777,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0021683673469387755,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0033317467872441696,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0019094021595996839,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0020978104103841614,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0014214641080312722,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0015978367748279252,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0017494751574527643,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.000526685393258427,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.00041188988810324706,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00045571927692541396,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0003502626970227671,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0003807348181991243,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0005049229992426155,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0004083299305839118,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 70
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "3.1",
+    "taxonomy_secondary_name": "Positive Resolution, Relief & Emotional Payoff",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

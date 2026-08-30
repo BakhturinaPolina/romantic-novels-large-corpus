@@ -1,0 +1,1154 @@
+{
+  "topic_id": 170,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "together",
+        "each",
+        "they",
+        "other",
+        "relationship",
+        "their",
+        "them",
+        "both",
+        "couple",
+        "between"
+      ],
+      "KeyBERT": [
+        "closely",
+        "separated",
+        "scenario",
+        "shared",
+        "separate",
+        "seemingly",
+        "theirs",
+        "visits",
+        "problems",
+        "opportunity"
+      ],
+      "POS": [
+        "separate",
+        "session",
+        "visits",
+        "scenario",
+        "guarantee",
+        "creatures",
+        "stunning",
+        "exciting",
+        "exact",
+        "regular"
+      ],
+      "MMR": [
+        "session",
+        "visits",
+        "scenario",
+        "constantly",
+        "warming",
+        "separated",
+        "television",
+        "emotional",
+        "spending",
+        "brief"
+      ]
+    },
+    "stage08_snippets": [
+      "despite going months without talking to each other—their daily lives hectic enough that even living in the same city had never ensured regular visits—they were close.",
+      "my guess is they’ve been seeing each other the whole time.",
+      "they might've solved his problems together."
+    ],
+    "label_public": "Staying Close Despite Long Separation"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They were friends and lovers.",
+        "max_topic_prob": 0.816287100315094,
+        "normalized_position": 0.42161970163390955,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They’d mated with each other.",
+        "max_topic_prob": 0.7741230726242065,
+        "normalized_position": 0.498460809850817,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They were friends.",
+        "max_topic_prob": 0.7639011144638062,
+        "normalized_position": 0.2658062988396874,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They’d scaled the first hurdle: They liked each other.",
+        "max_topic_prob": 0.7133415937423706,
+        "normalized_position": 0.22034098981766517,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They were a striking couple.",
+        "max_topic_prob": 0.7103924751281738,
+        "normalized_position": 0.04191333175467677,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They’d taken an instant dislike to each other. “",
+        "max_topic_prob": 0.7068061828613281,
+        "normalized_position": 0.2383376746388823,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It seemed maybe they had something in common. “",
+        "max_topic_prob": 0.7275326251983643,
+        "normalized_position": 0.08352223190932868,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He wondered what they were doing together.",
+        "max_topic_prob": 0.6989536285400391,
+        "normalized_position": 0.024237140366172624,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "They’d just met. “",
+        "max_topic_prob": 0.6913021802902222,
+        "normalized_position": 0.5108979947689625,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It felt like a space they’d created to share as lovers.",
+        "max_topic_prob": 0.6743223667144775,
+        "normalized_position": 0.4223190932868352,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was strange how they’d met, almost as if it was fated to happen sooner or later. “",
+        "max_topic_prob": 0.6664785742759705,
+        "normalized_position": 0.7740191804707933,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was mutual.” “",
+        "max_topic_prob": 0.6639533638954163,
+        "normalized_position": 0.8442894507410637,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "How do you think they met?” “",
+        "max_topic_prob": 0.6830756664276123,
+        "normalized_position": 0.10641357492090883,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Which apparently, thank god, they both did. “",
+        "max_topic_prob": 0.6004796624183655,
+        "normalized_position": 0.0064710957722174285,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Too many things between them.",
+        "max_topic_prob": 0.571367621421814,
+        "normalized_position": 0.6479723899913719,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "And they both instantly stepped back and said, “No.”",
+        "max_topic_prob": 0.5489763021469116,
+        "normalized_position": 0.4496692551049756,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 523
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "So what happened to Pete and Riley?” “",
+        "max_topic_prob": 0.48092734813690186,
+        "normalized_position": 0.1984469370146678,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I can see how Coach, Diane, Pete and Riley love him even when they quarrel.",
+        "max_topic_prob": 0.43073099851608276,
+        "normalized_position": 0.5309174575783722,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "They formed a friendship while they were together.” “",
+        "max_topic_prob": 0.784328043460846,
+        "normalized_position": 0.7270435722002161,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "It didn’t seem to matter as long as they were together.",
+        "max_topic_prob": 0.7420740723609924,
+        "normalized_position": 0.2878405953667027,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "They liked each other too much for that.",
+        "max_topic_prob": 0.7374030351638794,
+        "normalized_position": 0.2813587804585284,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "They’d both needed each other, that was all.",
+        "max_topic_prob": 0.7270196676254272,
+        "normalized_position": 0.30776617452886806,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "They belonged together. “",
+        "max_topic_prob": 0.7211120128631592,
+        "normalized_position": 0.8858480374504861,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Since the shooting, they’d seen a great deal of each other, but somehow they’d become strangers.",
+        "max_topic_prob": 0.6878135800361633,
+        "normalized_position": 0.7302844796543032,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Seeing them together again was disconcerting.",
+        "max_topic_prob": 0.6962119340896606,
+        "normalized_position": 0.6008520257346548,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Both of them deserved the kind of love they shared, but I wanted to know what that felt like.",
+        "max_topic_prob": 0.6903294324874878,
+        "normalized_position": 0.3558511563206399,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I guess they are together.”",
+        "max_topic_prob": 0.669837474822998,
+        "normalized_position": 0.35324291427577814,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "They must’ve made up, but they fought so much I wondered how they had any time for anything other than arguing and makeup sex.",
+        "max_topic_prob": 0.650239109992981,
+        "normalized_position": 0.05825073900191271,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I glanced between the two, a bit concerned about them spending an immediate one-on-one time together.",
+        "max_topic_prob": 0.6445305347442627,
+        "normalized_position": 0.7157885585115632,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "God, they were adorable together.",
+        "max_topic_prob": 0.6369211077690125,
+        "normalized_position": 0.2696052860372109,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "They have been dating a few weeks but have not made their relationship public.",
+        "max_topic_prob": 0.5735328197479248,
+        "normalized_position": 0.9443683489621747,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Brynn and Rich sat next to each other and definitely had something going on.",
+        "max_topic_prob": 0.5281453132629395,
+        "normalized_position": 0.8386892845853967,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "That’s actually how Brynn and I met Harper.",
+        "max_topic_prob": 0.5248520374298096,
+        "normalized_position": 0.2654093351596249,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Kitty and Kiki were working there as well.",
+        "max_topic_prob": 0.4722575545310974,
+        "normalized_position": 0.37087767358550205,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "They both take stilted steps after me. “",
+        "max_topic_prob": 0.4711974561214447,
+        "normalized_position": 0.8242545569486882,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Everyone gets along flawlessly and Rich has been brought into the fold without as much as a hiccup.",
+        "max_topic_prob": 0.4339015483856201,
+        "normalized_position": 0.853334738173006,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "If only that maturity flowed into his romantic life, they would have been together a long time ago. \"",
+        "max_topic_prob": 0.7131537199020386,
+        "normalized_position": 0.9602981969486823,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "They got along great and there was a sense of something more there that she didn’t understand.",
+        "max_topic_prob": 0.6862636804580688,
+        "normalized_position": 0.7222607489597781,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "How had they gone three days without really saying anything to each other?",
+        "max_topic_prob": 0.6806645393371582,
+        "normalized_position": 0.9745145631067961,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She couldn’t help but think it was because they were friends first and that they could relate to one another in a way no one else had been able to do.",
+        "max_topic_prob": 0.6624536514282227,
+        "normalized_position": 0.8066920943134536,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What if it didn’t work out between them?",
+        "max_topic_prob": 0.6618756055831909,
+        "normalized_position": 0.7864077669902912,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Seeing the two of them still together and close after such a tragedy made Mackenzie realize that the pack was still a family and they still loved each other.",
+        "max_topic_prob": 0.658072829246521,
+        "normalized_position": 0.4826629680998613,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "They were friends.",
+        "max_topic_prob": 0.7639011144638062,
+        "normalized_position": 0.380461851935703,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Because they belonged together .",
+        "max_topic_prob": 0.7366241216659546,
+        "normalized_position": 0.47532261716096896,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And why did it have to cut short such an amazing time together?",
+        "max_topic_prob": 0.7222568392753601,
+        "normalized_position": 0.7291147837899027,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "They’d never been out of town together before, not like this.",
+        "max_topic_prob": 0.6805061101913452,
+        "normalized_position": 0.14580031695721077,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Thank goodness, or they’d have killed each other long ago.",
+        "max_topic_prob": 0.6770528554916382,
+        "normalized_position": 0.6082182476794205,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was like, lately, if they weren’t bleeding their hearts out to each other, they couldn’t communicate at all. “",
+        "max_topic_prob": 0.6656159162521362,
+        "normalized_position": 0.6850803712927326,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Together we’d just have kept reminding each other of what had happened.",
+        "max_topic_prob": 0.5652146339416504,
+        "normalized_position": 0.10046457607433217,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "We wanted the same things, we were both ambitious, we complemented one another.",
+        "max_topic_prob": 0.5246177911758423,
+        "normalized_position": 0.7171893147502904,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "The dream couple, on- and off-screen.",
+        "max_topic_prob": 0.49416592717170715,
+        "normalized_position": 0.5365853658536586,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "They worked very well on Lewis. ‘",
+        "max_topic_prob": 0.3159886598587036,
+        "normalized_position": 0.11614401858304298,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "They broke up a few days afterwards.",
+        "max_topic_prob": 0.7164004445075989,
+        "normalized_position": 0.04916806879790615,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It was bad enough they’d probably hated the idea of each other for several years beforehand.",
+        "max_topic_prob": 0.6975163221359253,
+        "normalized_position": 0.48981117965974946,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "They were touchy and all over each other.",
+        "max_topic_prob": 0.6939396858215332,
+        "normalized_position": 0.8756776967657506,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It had been a crap few weeks, but with the two of them together, they would make it.",
+        "max_topic_prob": 0.6687024235725403,
+        "normalized_position": 0.7605159842961301,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It took two people to make an affair.",
+        "max_topic_prob": 0.6590620875358582,
+        "normalized_position": 0.6130117779024117,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "People had expectations of couples.",
+        "max_topic_prob": 0.6568844318389893,
+        "normalized_position": 0.26154421387175175,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "They came together.",
+        "max_topic_prob": 0.663300633430481,
+        "normalized_position": 0.7456948338005607,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "And now here they were, giving themselves to each other.",
+        "max_topic_prob": 0.6461924314498901,
+        "normalized_position": 0.5202242691229475,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Coupled with a tension that had never been there before between them.",
+        "max_topic_prob": 0.6185067892074585,
+        "normalized_position": 0.15778934721666,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Their tongues met and mated.",
+        "max_topic_prob": 0.5944452881813049,
+        "normalized_position": 0.8966760112134562,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Friday afternoons in the Outback Skies, talking shit, giving each other shit, finding calm and peace in their friendship when their jobs flying high above the world left them raw and exhausted and drained.",
+        "max_topic_prob": 0.5515669584274292,
+        "normalized_position": 0.029635562675210253,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "After he and his ex-fiancée parted ways four and a half months ago, he’d been adamant any kind of connection with anyone was off-limits.",
+        "max_topic_prob": 0.5437972545623779,
+        "normalized_position": 0.031637965558670406,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Maybe they were lovers or had been once.",
+        "max_topic_prob": 0.7206514477729797,
+        "normalized_position": 0.07791279485346676,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Surely they were stronger together.",
+        "max_topic_prob": 0.6520537734031677,
+        "normalized_position": 0.5055039313795568,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She didn’t know what was going on out there, but she had a feeling it had to do with the three of them.",
+        "max_topic_prob": 0.5860604643821716,
+        "normalized_position": 0.4112937812723374,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "That was a big part of why he had shared all of this with them.",
+        "max_topic_prob": 0.567992091178894,
+        "normalized_position": 0.7376697641172266,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Their movements quickly became fast, frenzied, as if they had been apart for months instead of a couple of hours.",
+        "max_topic_prob": 0.4765734076499939,
+        "normalized_position": 0.8516082916368835,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "It wasn’t as if they were even the same worlds. “",
+        "max_topic_prob": 0.4551734924316406,
+        "normalized_position": 0.18155825589706934,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "They've been financially entangled for years.",
+        "max_topic_prob": 0.5620927810668945,
+        "normalized_position": 0.8888888888888888,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Now I see that the intimacies we shared were no different from those I share with Xander or with Terrence: a role that two people play when one person wants something from the other, when money changes hands.",
+        "max_topic_prob": 0.5191393494606018,
+        "normalized_position": 0.9146464646464646,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "As much as I loved spending time with Terrence and Mr. X., it was different.",
+        "max_topic_prob": 0.4517921805381775,
+        "normalized_position": 0.5343434343434343,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "But they'd shuffled up the names.",
+        "max_topic_prob": 0.4125678241252899,
+        "normalized_position": 0.10656565656565657,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "For all I know, one of them could be behind Rita's death.",
+        "max_topic_prob": 0.40525591373443604,
+        "normalized_position": 0.9313131313131313,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Everyone has a double life, I think.",
+        "max_topic_prob": 0.3992191255092621,
+        "normalized_position": 0.32474747474747473,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Since I’d been home so many consecutive days over the last year, I noticed a change in their relationship.",
+        "max_topic_prob": 0.6294763088226318,
+        "normalized_position": 0.28030178776447434,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "The fight that followed broke them up.",
+        "max_topic_prob": 0.615617036819458,
+        "normalized_position": 0.5602755453501722,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "They no longer welcomed one another home with a kiss, and they barely spoke when Alex managed to be home for dinner.",
+        "max_topic_prob": 0.6135474443435669,
+        "normalized_position": 0.2804658028538626,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "From the duration of their kiss, I assumed this little development sprung forth from a rich and rather sleezy history.",
+        "max_topic_prob": 0.6097694635391235,
+        "normalized_position": 0.2847301951779564,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "It didn’t mean they’d been in Canada together.",
+        "max_topic_prob": 0.6060739159584045,
+        "normalized_position": 0.5182876824667869,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "We were apart.",
+        "max_topic_prob": 0.5771381855010986,
+        "normalized_position": 0.9637526652452025,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "For the time being, they were stuck with each other.",
+        "max_topic_prob": 0.8050646781921387,
+        "normalized_position": 0.07310664605873261,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Something seemed off between them.",
+        "max_topic_prob": 0.7288413643836975,
+        "normalized_position": 0.7649149922720248,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 368
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "They were just married.",
+        "max_topic_prob": 0.7259248495101929,
+        "normalized_position": 0.09706336939721794,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "They stayed married but they began leading separate lives.",
+        "max_topic_prob": 0.7108644247055054,
+        "normalized_position": 0.7899536321483771,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It wasn’t easy knowing their first time together might have been their last.",
+        "max_topic_prob": 0.6936777830123901,
+        "normalized_position": 0.6506182380216383,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 372
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "They wanted to spend it together.",
+        "max_topic_prob": 0.6849225759506226,
+        "normalized_position": 0.1054095826893354,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 243
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.00903075126508369,
+        "n_sentences": 116
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.009610821072615093,
+        "n_sentences": 81
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.007712701855868884,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.011265490048817123,
+        "n_sentences": 60
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.009103322712790168,
+        "n_sentences": 80
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0074795616628978955,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.007610619469026548,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.007670569236980218,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0028117037167208507,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.001275103602167676,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0014501160092807424,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0030425963488843813,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0030255006483215674,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0023378141437755697,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0029781601588352085,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 88
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

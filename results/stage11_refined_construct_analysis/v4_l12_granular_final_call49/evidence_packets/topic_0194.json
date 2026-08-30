@@ -1,0 +1,822 @@
+{
+  "topic_id": 194,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "secret",
+        "secrets",
+        "keep",
+        "keeping",
+        "kept",
+        "reveal",
+        "secretive",
+        "dirty",
+        "secrecy",
+        "know"
+      ],
+      "KeyBERT": [
+        "reveal",
+        "revealing",
+        "hiding",
+        "confessed",
+        "curiosity",
+        "politely",
+        "planned",
+        "shared",
+        "embarrassing",
+        "identity"
+      ],
+      "POS": [
+        "identity",
+        "magical",
+        "embarrassing",
+        "ability",
+        "curiosity",
+        "previous",
+        "pressure",
+        "experience"
+      ],
+      "MMR": [
+        "guarded",
+        "reveal",
+        "politely",
+        "confessed",
+        "magical",
+        "bury",
+        "revealing",
+        "curiosity",
+        "hiding",
+        "discovered"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll keep it a secret,” said lucas.",
+      "i’ll be your dirty little secret,” i joked.",
+      "i’ll leave that secret for him to reveal."
+    ],
+    "label_public": "Promising to Keep A Secret"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Maybe you’ll be in charge of all my secrets from now on.”",
+        "max_topic_prob": 0.7526010274887085,
+        "normalized_position": 0.9732814526588845,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Trust me, he’s not hiding any deep dark secrets.” “",
+        "max_topic_prob": 0.7321638464927673,
+        "normalized_position": 0.35239948119325554,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Keeping God-only-knows-what horrific secret.",
+        "max_topic_prob": 0.7292589545249939,
+        "normalized_position": 0.7180285343709468,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "How else would I find out all of his secrets?”",
+        "max_topic_prob": 0.7264919281005859,
+        "normalized_position": 0.3477302204928664,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You are sworn to secrecy.",
+        "max_topic_prob": 0.6583369970321655,
+        "normalized_position": 0.9214007782101167,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Helen had a secret?",
+        "max_topic_prob": 0.6107280254364014,
+        "normalized_position": 0.6913099870298314,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "If I knew that, I’d unlock a giant mystery, wouldn’t I?”",
+        "max_topic_prob": 0.5907187461853027,
+        "normalized_position": 0.6915968813167773,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I’m a very private man,” he said. “",
+        "max_topic_prob": 0.5292870998382568,
+        "normalized_position": 0.34807073954983925,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Your secret’s safe with me.’ ‘",
+        "max_topic_prob": 0.7584478855133057,
+        "normalized_position": 0.6800511042160978,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Perhaps secret information that he has uncovered, information that would be dangerous to the French.’ ‘",
+        "max_topic_prob": 0.5153588056564331,
+        "normalized_position": 0.35754699762730424,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 368
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "For reasons I cannot disclose I would rather you did not mention the break-in to anyone.",
+        "max_topic_prob": 0.38345497846603394,
+        "normalized_position": 0.3093630224493521,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My secret needed to stay hidden.",
+        "max_topic_prob": 0.8415173292160034,
+        "normalized_position": 0.649135894566704,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 2124
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m not keeping any secrets from you.”",
+        "max_topic_prob": 0.789733350276947,
+        "normalized_position": 0.32811140121845084,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 1268
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Then he’s keeping a big secret from you, too.” “",
+        "max_topic_prob": 0.7885245084762573,
+        "normalized_position": 0.22118612458038045,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 408
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Secrets?”",
+        "max_topic_prob": 0.7717303037643433,
+        "normalized_position": 0.3277384060673878,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 1265
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He’d hidden the truth from me even when I spilled my darkest secret for him to mull over at his leisure.",
+        "max_topic_prob": 0.6853556632995605,
+        "normalized_position": 0.14273281114012185,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 1134
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I know it’s stupid because we just met and I’m keeping a big secret from him.” “",
+        "max_topic_prob": 0.6708468198776245,
+        "normalized_position": 0.2206887977122964,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Instead he finds a young man who has a very big secret and is in far greater need of rescuing.",
+        "max_topic_prob": 0.5008512735366821,
+        "normalized_position": 0.9958275382475661,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2148
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You must tell me your secrets.”",
+        "max_topic_prob": 0.7993310689926147,
+        "normalized_position": 0.9494169555625591,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "So, I open up and spill my best friend’s secrets.",
+        "max_topic_prob": 0.7060285806655884,
+        "normalized_position": 0.18263473053892215,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 317
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "It’s almost as if he can reach right in and pull out my secrets. “",
+        "max_topic_prob": 0.6827669143676758,
+        "normalized_position": 0.10242672549637567,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Want me to let you in on a little secret?",
+        "max_topic_prob": 0.6797322034835815,
+        "normalized_position": 0.16435549952726128,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I’ll keep your secret for now, Dee, but don’t you dare say a word about that to the girls.”",
+        "max_topic_prob": 0.6456877589225769,
+        "normalized_position": 0.2849038764576111,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "We’ve always been able to tell each other everything, but this . . .",
+        "max_topic_prob": 0.5429593324661255,
+        "normalized_position": 0.746769618657422,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "It’s the best kept secret, y’know.”",
+        "max_topic_prob": 0.7770739197731018,
+        "normalized_position": 0.06772908366533864,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I wouldn’t think of coveting any secrets except for you.”",
+        "max_topic_prob": 0.686767041683197,
+        "normalized_position": 0.8105758783049619,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She didn’t have the strength to keep the secret and she knew in her heart it was time to talk about it.",
+        "max_topic_prob": 0.6574207544326782,
+        "normalized_position": 0.34045635639261135,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "A man with many secrets.",
+        "max_topic_prob": 0.654024600982666,
+        "normalized_position": 0.9764578051430641,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I know your secret.",
+        "max_topic_prob": 0.6416219472885132,
+        "normalized_position": 0.46088373777616803,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Originally I was going to keep this a secret, but I feel the news is too incredible not to announce.”",
+        "max_topic_prob": 0.6157011389732361,
+        "normalized_position": 0.6968489677653025,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "They’re not exactly good at keeping secrets.”",
+        "max_topic_prob": 0.7103996872901917,
+        "normalized_position": 0.12796741115325186,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 911
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I just can’t believe you kept such a huge secret from me for so long.",
+        "max_topic_prob": 0.6930844783782959,
+        "normalized_position": 0.014889731703890996,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "What’s so secret your family felt they had to hide it in a magic book?",
+        "max_topic_prob": 0.6591407060623169,
+        "normalized_position": 0.12993397949150162,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 925
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You’ve already pointed out our secret is well-maintained.",
+        "max_topic_prob": 0.6420981287956238,
+        "normalized_position": 0.2306503722432926,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1642
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "It sounds like you’re a part of this super-secret society. ”",
+        "max_topic_prob": 0.6332820653915405,
+        "normalized_position": 0.1309172636606265,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 932
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "And that would be a good reason for secrecy. “",
+        "max_topic_prob": 0.6199896931648254,
+        "normalized_position": 0.5121505829470431,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3646
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Everybody’s got secrets.",
+        "max_topic_prob": 0.7991465330123901,
+        "normalized_position": 0.17388184644821814,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I have secrets, too,” he says. “",
+        "max_topic_prob": 0.7729253172874451,
+        "normalized_position": 0.5769752052937893,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Every secret I kept guarded comes spilling out, but not in some slobbery “oh, my gosh, and then this horrible thing happened next” kind of way.",
+        "max_topic_prob": 0.7483268976211548,
+        "normalized_position": 0.29642031411942915,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Shhhh…it’s a secret.",
+        "max_topic_prob": 0.7418273687362671,
+        "normalized_position": 0.9603763055090488,
+        "tertile": "end",
+        "chapter_index": 64,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "There’re no more secrets.",
+        "max_topic_prob": 0.7344319820404053,
+        "normalized_position": 0.2542453958383162,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "If he only knew the secrets I was keeping, I’m pretty sure he wouldn’t even talk to me.",
+        "max_topic_prob": 0.7206549644470215,
+        "normalized_position": 0.05166228175077733,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It wasn’t a secret, so…“Well, yes.” “",
+        "max_topic_prob": 0.772782564163208,
+        "normalized_position": 0.12730079562997268,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I'm not keeping some big secret,” he said, setting his mug down on the table. “",
+        "max_topic_prob": 0.6325681209564209,
+        "normalized_position": 0.3846336539603373,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I didn't tell anyone because I didn't want to worry anyone, get them thinking I had a brain tumor or something, which is what I've been secretly thinking and dreading.",
+        "max_topic_prob": 0.4974817633628845,
+        "normalized_position": 0.2656454102838143,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "On some level Wilson had always known that Abel’s apprentice had been trying to hide something from the rest of the coven, but he was convinced it was Lachlan’s sexuality, not any betrayal.",
+        "max_topic_prob": 0.45823362469673157,
+        "normalized_position": 0.3889496717724289,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Your secret’s safe.”",
+        "max_topic_prob": 0.7858288288116455,
+        "normalized_position": 0.18446977013714508,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "But finding the words to spill the secret he’d promised to keep. “",
+        "max_topic_prob": 0.7233632802963257,
+        "normalized_position": 0.866138690361213,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You want to know how committed I am to your secret?” “",
+        "max_topic_prob": 0.7063966989517212,
+        "normalized_position": 0.17674328761831176,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "How had he managed to keep that side of his life a secret for all these years?",
+        "max_topic_prob": 0.6527005434036255,
+        "normalized_position": 0.6691133861309638,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Exposing her secret would have only resulted in his skeletons getting a swift kick out of the closet.",
+        "max_topic_prob": 0.6235387325286865,
+        "normalized_position": 0.17075526366621596,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Since childhood, the importance of keeping their secret had been drilled into his head.",
+        "max_topic_prob": 0.572028636932373,
+        "normalized_position": 0.0712768012362372,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Damn it, why can’t this man just tell me things without trying to be so secretive?",
+        "max_topic_prob": 0.6518115997314453,
+        "normalized_position": 0.045838896306186025,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Yet harboring the secret and carrying it alone was too much. “",
+        "max_topic_prob": 0.6473900079727173,
+        "normalized_position": 0.44844978489838305,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Admitting that secret to someone other than my doctor brought me so much relief.",
+        "max_topic_prob": 0.5810531377792358,
+        "normalized_position": 0.45141670375315235,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "John huffed as if he knew some secret. “",
+        "max_topic_prob": 0.5779204368591309,
+        "normalized_position": 0.8733125649013499,
+        "tertile": "end",
+        "chapter_index": 68,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "T he secret inside me —well, besides our baby—was bursting to come out.",
+        "max_topic_prob": 0.5768405199050903,
+        "normalized_position": 0.912475893784305,
+        "tertile": "end",
+        "chapter_index": 72,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Unless he already knew and was spying on me.",
+        "max_topic_prob": 0.5323494672775269,
+        "normalized_position": 0.4883548434950304,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 156
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.00152,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0015689350853108452,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.001585791309863622,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0019510730901996097,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0015801948907031868,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0016357688113413304,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0033917467495760316,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0030109145652992097,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0005542213190467394,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00055005500550055,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0003589375448671931,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00026881720430107527,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0004657661853749418,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0002904443799012489,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 58
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "9.2",
+    "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

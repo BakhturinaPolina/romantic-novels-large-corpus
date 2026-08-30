@@ -1,0 +1,162 @@
+{
+  "topic_id": 96,
+  "label": "Confessing Long-Standing Worry",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "3.2",
+  "taxonomy_secondary_name": "Negative Emotions & Distress",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "worry",
+      "worried",
+      "about",
+      "bother",
+      "concern",
+      "worrying",
+      "concerned",
+      "don",
+      "does",
+      "nothing"
+    ],
+    "KeyBERT": [
+      "concerned",
+      "worrying",
+      "worries",
+      "fears",
+      "bothering",
+      "bothered",
+      "problems",
+      "assure"
+    ],
+    "POS": [
+      "annoying",
+      "slightest",
+      "fears",
+      "concerned",
+      "amusement",
+      "possibility",
+      "purpose",
+      "problems",
+      "reaction",
+      "worried"
+    ],
+    "MMR": [
+      "worrying",
+      "worries",
+      "bothered",
+      "assure",
+      "crashing",
+      "fears",
+      "concerned",
+      "amusement",
+      "sounding",
+      "repeated"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ve been worried about you, [person].",
+    "i’ve worried about you since i was twelve.",
+    "i’ve been worried about you.” “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.2837528604118993,
+      "max_topic_prob": 0.6165441274642944,
+      "sentence": "Careful.”"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.84850640113798,
+      "max_topic_prob": 0.6084598302841187,
+      "sentence": "Was he worried?"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.22024656235182552,
+      "max_topic_prob": 0.5631182193756104,
+      "sentence": "For all concerned."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2923186344238976,
+      "max_topic_prob": 0.5032976865768433,
+      "sentence": "Thanks, but don't bother.\""
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4521100047415837,
+      "max_topic_prob": 0.4999682307243347,
+      "sentence": "You grew up worrying about having your basic needs met."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.3930772878141299,
+      "max_topic_prob": 0.4762178063392639,
+      "sentence": "Don't beat yourself up about it."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2220783704470913,
+      "max_topic_prob": 0.7774323225021362,
+      "sentence": "Don’t worry so much.”"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5515277058518903,
+      "max_topic_prob": 0.7769653797149658,
+      "sentence": "Don’t worry about it.”"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2870706024512342,
+      "max_topic_prob": 0.7623759508132935,
+      "sentence": "Stop worrying.” “"
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.0236492318315208,
+      "max_topic_prob": 0.7422928810119629,
+      "sentence": "We didn’t want to worry you.”"
+    },
+    {
+      "sid": "BOOK_003_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.24244778180562748,
+      "max_topic_prob": 0.7338261008262634,
+      "sentence": "But then I worried."
+    },
+    {
+      "sid": "BOOK_003_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.499050578284136,
+      "max_topic_prob": 0.7330714464187622,
+      "sentence": "Then stop worrying.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,824 @@
+{
+  "topic_id": 92,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "heart",
+        "chest",
+        "panic",
+        "beat",
+        "beating",
+        "pulse",
+        "pounding",
+        "pounded",
+        "faster",
+        "her"
+      ],
+      "KeyBERT": [
+        "trembling",
+        "pounded",
+        "clenched",
+        "pounding",
+        "frantic",
+        "fiercely",
+        "pressure",
+        "stirred",
+        "distress",
+        "muffled"
+      ],
+      "POS": [
+        "frantic",
+        "pounding",
+        "desperation",
+        "makeshift",
+        "longest",
+        "increase",
+        "failure",
+        "realization",
+        "atmosphere",
+        "distress"
+      ],
+      "MMR": [
+        "frantic",
+        "pounding",
+        "tumbled",
+        "desperation",
+        "leapt",
+        "pumped",
+        "crushed",
+        "distress",
+        "feared",
+        "anxiety"
+      ]
+    },
+    "stage08_snippets": [
+      "her heart pounded, not knowing what to say.",
+      "verses the preacher read trailed into a muffled slow motion speech, the whipping sounds of the makeshift paper fans faded to tiny flutters, the anxious pounding of her heart slowed to a steady beat as she stood hand in hand with her best friend.",
+      "lizzie’s heart pounded wildly as she braced herself for the assault."
+    ],
+    "label_public": "Heart Pounding With Dread"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The realization constricted her throat and made her chest tighten.",
+        "max_topic_prob": 0.7381733059883118,
+        "normalized_position": 0.45284763313609466,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Heartbeat roaring in her ears, she considered her options.",
+        "max_topic_prob": 0.7275817394256592,
+        "normalized_position": 0.08228550295857988,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "A strong desire to surround herself with memories of her love swelled within her until she thought her heart would burst.",
+        "max_topic_prob": 0.7270467281341553,
+        "normalized_position": 0.8583579881656804,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The sight that met her sent her heart plummeting to her knees.",
+        "max_topic_prob": 0.7187267541885376,
+        "normalized_position": 0.7712647928994083,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Frustration welled inside her chest. “",
+        "max_topic_prob": 0.6883405447006226,
+        "normalized_position": 0.7363165680473372,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Aiden’s harsh inhale ruffled her hair and she felt the rapid thud of his heartbeat against her shoulder blade.",
+        "max_topic_prob": 0.6828874945640564,
+        "normalized_position": 0.9350961538461539,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She willed her heartbeat into submission. \"",
+        "max_topic_prob": 0.8233308792114258,
+        "normalized_position": 0.7416107382550335,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her heart pumped, expanded to fill her chest when the next thought came.",
+        "max_topic_prob": 0.7617425322532654,
+        "normalized_position": 0.5171513795674869,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "There was a skitter near her heart.",
+        "max_topic_prob": 0.7555843591690063,
+        "normalized_position": 0.7859806114839671,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her heart ached for him. \"",
+        "max_topic_prob": 0.7454677224159241,
+        "normalized_position": 0.7397464578672632,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A stitch of anger pulled in her chest. \"",
+        "max_topic_prob": 0.7291262745857239,
+        "normalized_position": 0.8044369873228934,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Finally her heart spoke.",
+        "max_topic_prob": 0.7262312769889832,
+        "normalized_position": 0.3232662192393736,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "My heart resumed beating as they bowed to each other and stepped away.",
+        "max_topic_prob": 0.616411566734314,
+        "normalized_position": 0.6651413821424381,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She sat in the back happily chewing on the seat belt, while I poured my worried heart out to her. “",
+        "max_topic_prob": 0.6045423746109009,
+        "normalized_position": 0.7371817435175407,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I stuck a reluctant hand in the air, truly hoping her enthusiasm was due to my in-depth reporting on Skinny Jeans, but she burst that bubble in a hurry. “",
+        "max_topic_prob": 0.5254472494125366,
+        "normalized_position": 0.0994954828112167,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "It was as though her heart had finally begun beating again.",
+        "max_topic_prob": 0.8044777512550354,
+        "normalized_position": 0.7469666761606379,
+        "tertile": "end",
+        "chapter_index": 69,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She tried to calm down, slow her heart rate.",
+        "max_topic_prob": 0.7913752794265747,
+        "normalized_position": 0.6514953004841926,
+        "tertile": "middle",
+        "chapter_index": 57,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Her jaw throbbed in time with her heartbeat.",
+        "max_topic_prob": 0.7734122276306152,
+        "normalized_position": 0.593563087439476,
+        "tertile": "middle",
+        "chapter_index": 52,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Cilla tried to calm the pounding of her heart. “",
+        "max_topic_prob": 0.7731524705886841,
+        "normalized_position": 0.046767302762745655,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Her heart was going to burst with happiness.",
+        "max_topic_prob": 0.7704769372940063,
+        "normalized_position": 0.7174594132725719,
+        "tertile": "end",
+        "chapter_index": 68,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "His simple command had her heart hammering in her chest. “",
+        "max_topic_prob": 0.759689211845398,
+        "normalized_position": 0.6084306465394475,
+        "tertile": "middle",
+        "chapter_index": 53,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her heart pumped hard, her adrenaline kicking in.",
+        "max_topic_prob": 0.8248259425163269,
+        "normalized_position": 0.5896414342629482,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her heart stopped.",
+        "max_topic_prob": 0.7608879804611206,
+        "normalized_position": 0.0398406374501992,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He could hear her heart beating hard against her breast and the sound invigorated him.",
+        "max_topic_prob": 0.7459436655044556,
+        "normalized_position": 0.3732343353857298,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The pain seared her heart.",
+        "max_topic_prob": 0.7420673370361328,
+        "normalized_position": 0.7781600869250271,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her heart hammering in her chest, her body tense, her sex screaming out its disappointment.",
+        "max_topic_prob": 0.7414588928222656,
+        "normalized_position": 0.035856573705179286,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her heart danced with excitement as she allowed herself to feel the rippling muscles.",
+        "max_topic_prob": 0.7350436449050903,
+        "normalized_position": 0.4239406012314379,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "My heart raced as she pretended to shoot into the air.",
+        "max_topic_prob": 0.6929821968078613,
+        "normalized_position": 0.5493312144086876,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Also she’d muttered something about the way to a man’s heart being through his stomach.",
+        "max_topic_prob": 0.6493375897407532,
+        "normalized_position": 0.6928883591577275,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "A pinch of guilt nipped my chest as it looked like she’d fallen harder than I thought.",
+        "max_topic_prob": 0.6355942487716675,
+        "normalized_position": 0.24606012448682293,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "My chest tightened, as the time to meet Monique and her friends approached.",
+        "max_topic_prob": 0.5802702903747559,
+        "normalized_position": 0.20712488412130844,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "A sinking feeling was just prevented by Cindy floating in with a soppy, loved-up expression on her face. ‘",
+        "max_topic_prob": 0.5408151745796204,
+        "normalized_position": 0.8281022381141571,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Her heart slammed in her chest.",
+        "max_topic_prob": 0.8681260347366333,
+        "normalized_position": 0.48214557058197843,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1697
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Her breath caught and her heart skipped a beat.",
+        "max_topic_prob": 0.8377627730369568,
+        "normalized_position": 0.3725877526211822,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 976
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The pounding of her heart was so hard she thought it might actually come right through her chest.",
+        "max_topic_prob": 0.8088018894195557,
+        "normalized_position": 0.06837866585625285,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 450
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Her heart began to race just thinking about it. “",
+        "max_topic_prob": 0.78049635887146,
+        "normalized_position": 0.1726181431393405,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1136
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He felt his heart start to pound in time with her increasingly rapid breaths.",
+        "max_topic_prob": 0.7788808345794678,
+        "normalized_position": 0.5892721470901079,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 614
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Amy’s heart was clearly not listening to her brain that was telling her not to react and began pounding loudly in her chest. “",
+        "max_topic_prob": 0.7374941110610962,
+        "normalized_position": 0.8869472724509952,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Her heart was racing, too.",
+        "max_topic_prob": 0.8657060861587524,
+        "normalized_position": 0.39943461417652604,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She felt the choking sensation of panic building in her.",
+        "max_topic_prob": 0.7508114576339722,
+        "normalized_position": 0.7023348340487907,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She couldn’t breathe; her heart was beating so rapidly, but she was determined to close the space between her and Rachel.",
+        "max_topic_prob": 0.7382751703262329,
+        "normalized_position": 0.43775520887865144,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Whatever it was, her mind associated it with the sound of the beating hearts. “",
+        "max_topic_prob": 0.7295588254928589,
+        "normalized_position": 0.36383624751334936,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Rachel could hear the woman’s heart beat increase, and smell the surge of blood that now rushed to her face. “",
+        "max_topic_prob": 0.7265232801437378,
+        "normalized_position": 0.7297665165951209,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Sara’s heart was racing, and she began to shake from the chill and her nerves.",
+        "max_topic_prob": 0.7263765335083008,
+        "normalized_position": 0.8588629462883468,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 387
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She heard her heart pounding.",
+        "max_topic_prob": 0.8711671829223633,
+        "normalized_position": 0.13370968989250637,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 470
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her heart pounded.",
+        "max_topic_prob": 0.8696264624595642,
+        "normalized_position": 0.11940298507462686,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her heart pounded.",
+        "max_topic_prob": 0.8696264624595642,
+        "normalized_position": 0.2535766762044699,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her heart pounded.",
+        "max_topic_prob": 0.8696264624595642,
+        "normalized_position": 0.6029696079189545,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her heart pounded.",
+        "max_topic_prob": 0.8696264624595642,
+        "normalized_position": 0.9812852834274225,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 465
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her heart thudded in her chest.",
+        "max_topic_prob": 0.8571872711181641,
+        "normalized_position": 0.576212203232542,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 582
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Shock overcame Tielle’s expression and her eyes dropped to my chest.",
+        "max_topic_prob": 0.6956836581230164,
+        "normalized_position": 0.31624581685427444,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She looked shocked, more so than when I had told her I’d gotten stabbed in the chest and didn’t die.",
+        "max_topic_prob": 0.5745800137519836,
+        "normalized_position": 0.3297839975661698,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her heart drops.",
+        "max_topic_prob": 0.7778733968734741,
+        "normalized_position": 0.8750195038227493,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5608
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Long fingers trail down her neck and tap against her pounding heart. “…",
+        "max_topic_prob": 0.7568657994270325,
+        "normalized_position": 0.8868778280542986,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5684
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her heart pounds at the realization.",
+        "max_topic_prob": 0.7351993322372437,
+        "normalized_position": 0.5320642845997816,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3410
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The pain in her chest throbs harder.",
+        "max_topic_prob": 0.7163244485855103,
+        "normalized_position": 0.7185208300826962,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 4605
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "An unexpected tenderness in her voice stirs his heart.",
+        "max_topic_prob": 0.7003751993179321,
+        "normalized_position": 0.1989389920424403,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1275
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her pulse races.",
+        "max_topic_prob": 0.6980137228965759,
+        "normalized_position": 0.22000312061163987,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1410
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.006292546193009553,
+        "n_sentences": 110
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.006831237385499146,
+        "n_sentences": 88
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.007818488425571056,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.007979971835393522,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.011450381679389313,
+        "n_sentences": 63
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0073061071562382915,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.006731881771326391,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005073280721533258,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0003075030750307503,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0003563368571089203,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0006691648822269807,
+        "n_sentences": 5
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 58
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "1.1",
+    "taxonomy_secondary_name": "Body Parts & Physical Reactions",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

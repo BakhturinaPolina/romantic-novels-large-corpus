@@ -1,0 +1,835 @@
+{
+  "topic_id": 245,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "lip",
+        "bit",
+        "bottom",
+        "lower",
+        "chewed",
+        "biting",
+        "teeth",
+        "her",
+        "she",
+        "trembling"
+      ],
+      "KeyBERT": [
+        "biting",
+        "trembling",
+        "tasted",
+        "trembled",
+        "absently",
+        "ducked",
+        "swallowed",
+        "tugged",
+        "panting",
+        "painful"
+      ],
+      "POS": [
+        "pout",
+        "uncertain",
+        "areas",
+        "distress",
+        "desperation",
+        "trembling",
+        "stool",
+        "tightening",
+        "handful",
+        "latest"
+      ],
+      "MMR": [
+        "pout",
+        "biting",
+        "absently",
+        "fumbled",
+        "distress",
+        "trembling",
+        "twisting",
+        "stool",
+        "cleaned",
+        "panting"
+      ]
+    },
+    "stage08_snippets": [
+      "she bit her lip as she cleaned more sensitive areas, areas her own lover had been hesitant to touch.",
+      "she pushed her lower lip out in an exaggerated pout. “",
+      "come on morgan, that’s hardly fair,” she protested, her lip falling into a pout."
+    ],
+    "label_public": "Lip Biting and Nervous Pout"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Her lips quivered, then her teeth started to chatter.",
+        "max_topic_prob": 0.7436028718948364,
+        "normalized_position": 0.18713890982165285,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 744
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Katie nibbled her upper lip, crossed and uncrossed her long arms.",
+        "max_topic_prob": 0.6171041131019592,
+        "normalized_position": 0.9469982416478272,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 953
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She bit her lip. “",
+        "max_topic_prob": 0.9540235996246338,
+        "normalized_position": 0.15612465288491206,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She thought about the kiss, absently touched her lip.",
+        "max_topic_prob": 0.7598221302032471,
+        "normalized_position": 0.6547361925331687,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She was biting her bottom lip and her face was pasty white.",
+        "max_topic_prob": 0.7113092541694641,
+        "normalized_position": 0.12455003599712024,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 489
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She winced when it went cleanly in. “",
+        "max_topic_prob": 0.6508797407150269,
+        "normalized_position": 0.5736912475573382,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She bit her bottom lip and lowered her gaze. ‘",
+        "max_topic_prob": 0.8952441215515137,
+        "normalized_position": 0.43253234750462105,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Rachel bit her lip. ‘",
+        "max_topic_prob": 0.8219364881515503,
+        "normalized_position": 0.7229997359387378,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She gnawed at her bottom lip again for a moment. ‘",
+        "max_topic_prob": 0.8177084922790527,
+        "normalized_position": 0.6511750726168472,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She curled her lip at him. ‘",
+        "max_topic_prob": 0.8031502962112427,
+        "normalized_position": 0.24399260628465805,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She moistened her lips nervously. ‘",
+        "max_topic_prob": 0.7828766107559204,
+        "normalized_position": 0.6411407446527594,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She moistened her mouth. ‘",
+        "max_topic_prob": 0.7653594017028809,
+        "normalized_position": 0.22603644045418536,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She bit her lip. “",
+        "max_topic_prob": 0.9540235996246338,
+        "normalized_position": 0.5124989187786524,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Laura bit her lip. “",
+        "max_topic_prob": 0.8473438024520874,
+        "normalized_position": 0.35221866620534553,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 593
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Laura bit her lip. “",
+        "max_topic_prob": 0.8473438024520874,
+        "normalized_position": 0.7136925871464406,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She bit her lip and blinked back the tears. “",
+        "max_topic_prob": 0.8240779638290405,
+        "normalized_position": 0.9127238128189603,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She moistened her lips. “",
+        "max_topic_prob": 0.8122000098228455,
+        "normalized_position": 0.34175244356024564,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 472
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She moistened her lips. “",
+        "max_topic_prob": 0.8121998906135559,
+        "normalized_position": 0.36372286134417436,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450653791427612,
+        "normalized_position": 0.04685258964143426,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450653791427612,
+        "normalized_position": 0.4873306772908367,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 580
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Then she cocked her head and bit her lip.",
+        "max_topic_prob": 0.8563737869262695,
+        "normalized_position": 0.1751394422310757,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He cut his gaze to hers and she bit her lip.",
+        "max_topic_prob": 0.8462520241737366,
+        "normalized_position": 0.512988047808765,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He bit her lower lip, hard, then harder still, plunging his tongue inside to do battle with hers.",
+        "max_topic_prob": 0.8062723875045776,
+        "normalized_position": 0.6948207171314741,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "In the shadowy dark he saw her bite her lip, worrying it between her teeth.",
+        "max_topic_prob": 0.7551162242889404,
+        "normalized_position": 0.6881274900398406,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Beth bit her lip. “",
+        "max_topic_prob": 0.8455691337585449,
+        "normalized_position": 0.4581211092246746,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1616
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She asked, dabbing at her lips with a tissue. “",
+        "max_topic_prob": 0.770318865776062,
+        "normalized_position": 0.6952461799660441,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 806
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Tina rubbed her lips with it then moistened them with her tongue. “",
+        "max_topic_prob": 0.7246562242507935,
+        "normalized_position": 0.7048670062252406,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 840
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She said, brushing Tina’s lips with her thumb. “",
+        "max_topic_prob": 0.7237412929534912,
+        "normalized_position": 0.7716468590831919,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1076
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She said, licking her lips, “ fancy pressing them against mine?”",
+        "max_topic_prob": 0.690484881401062,
+        "normalized_position": 0.411431805319751,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1451
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Sam groaned and Anna’s response was to kiss her.",
+        "max_topic_prob": 0.6480246782302856,
+        "normalized_position": 0.9468024900962083,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1695
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He nipped at her lower lip. “",
+        "max_topic_prob": 0.8142383098602295,
+        "normalized_position": 0.7096037609133646,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 440
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He glanced down, relieved to see she hadn’t spit up on him again.",
+        "max_topic_prob": 0.6196433305740356,
+        "normalized_position": 0.6795164539959705,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He noticed a bit of chocolate at the corner of her mouth and wiped it away.",
+        "max_topic_prob": 0.590984046459198,
+        "normalized_position": 0.22431161853593015,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The little boy giggled and curled against his side, but Sadie looked like she’d been caught doing something punishable with wide eyes and her mouth gaping open. “",
+        "max_topic_prob": 0.5826886892318726,
+        "normalized_position": 0.4719946272666219,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450653791427612,
+        "normalized_position": 0.14599285349668198,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 566
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450653791427612,
+        "normalized_position": 0.222052067381317,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 864
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip nervously. \"",
+        "max_topic_prob": 0.8946362733840942,
+        "normalized_position": 0.12838182746299132,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 497
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip nervously. \"",
+        "max_topic_prob": 0.8946361541748047,
+        "normalized_position": 0.7600816743236345,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 954
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "she asked, then bit her lip in anxiety. \"",
+        "max_topic_prob": 0.8125610947608948,
+        "normalized_position": 0.10719754977029096,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 414
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Her tongue darted out to lick her lower lip.",
+        "max_topic_prob": 0.794501781463623,
+        "normalized_position": 0.19576314446145993,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 761
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She bit down on her lip, closing her eyes tight in embarrassment. “",
+        "max_topic_prob": 0.8177825212478638,
+        "normalized_position": 0.577230468112869,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "he asked, leaning down and catching her lower lip between his teeth and biting down.",
+        "max_topic_prob": 0.7835169434547424,
+        "normalized_position": 0.8132441689773283,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Feeling dry mouthed, she licked her lipss and his breath hissed out of him. “",
+        "max_topic_prob": 0.7560244798660278,
+        "normalized_position": 0.1342358505953352,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His teeth suddenly dug into the flesh of her lower lip and a deep groan escaped her. “",
+        "max_topic_prob": 0.750921368598938,
+        "normalized_position": 0.31724025444462567,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She had just raised it to her lips when it was pulled away from her. “",
+        "max_topic_prob": 0.7334694266319275,
+        "normalized_position": 0.2213342032294895,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And then to his dismay, she licked her lips again.",
+        "max_topic_prob": 0.7258959412574768,
+        "normalized_position": 0.1480998205839178,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip. “",
+        "max_topic_prob": 0.9540238380432129,
+        "normalized_position": 0.42920299643865895,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450655579566956,
+        "normalized_position": 0.28576691636988827,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She bit her lip.",
+        "max_topic_prob": 0.9450655579566956,
+        "normalized_position": 0.5710426132874862,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Betsy bit her lip.",
+        "max_topic_prob": 0.8078653216362,
+        "normalized_position": 0.3394326415326047,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Betsy bit her lip.",
+        "max_topic_prob": 0.8078653216362,
+        "normalized_position": 0.8410905071840845,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Betsy bit her lip.",
+        "max_topic_prob": 0.8078653216362,
+        "normalized_position": 0.9112120839985264,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Savannah moaned in despair, but Lia kept her lips pressed close together as Quill’s knife rose seemingly of its own volition to settle in the soft spot at the base of her neck. “",
+        "max_topic_prob": 0.5959779620170593,
+        "normalized_position": 0.8754131706076786,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She stared at the turf and bit her lip. “",
+        "max_topic_prob": 0.815669059753418,
+        "normalized_position": 0.3753222404499649,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her lips pulled to the left. “",
+        "max_topic_prob": 0.7781003713607788,
+        "normalized_position": 0.19908600890555425,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She grazed her thumb across the bruise on his lip. “",
+        "max_topic_prob": 0.7732912302017212,
+        "normalized_position": 0.5175767518162644,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 344
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She dabbed a finger over the tender scab above her lip.",
+        "max_topic_prob": 0.7687227129936218,
+        "normalized_position": 0.6318256386219827,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her mouth quirked and crinkled the corners of her eyes. “",
+        "max_topic_prob": 0.7485763430595398,
+        "normalized_position": 0.0800328099367237,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Lips tight, she scampered toward the counter. “",
+        "max_topic_prob": 0.7401239275932312,
+        "normalized_position": 0.13323177876728381,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 48
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0024749412201460217,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0024578076355890547,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0027157869878379976,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.004878048780487805,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.003421727972626176,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0040089801154586276,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.004518872939925572,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.00270884306186648,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0005051780752715333,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0004131377814501136,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0005403214912873159,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0002598077422707197,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 59
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "1.7",
+    "taxonomy_secondary_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,1152 @@
+{
+  "topic_id": 119,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "safe",
+        "protect",
+        "protection",
+        "dangerous",
+        "protecting",
+        "keep",
+        "defend",
+        "you",
+        "safety",
+        "re"
+      ],
+      "KeyBERT": [
+        "protect",
+        "guarded",
+        "secure",
+        "threat",
+        "dangerously",
+        "assure",
+        "sir",
+        "precious"
+      ],
+      "POS": [
+        "meantime",
+        "testing",
+        "inevitable",
+        "distraction",
+        "threat",
+        "determination",
+        "protect",
+        "secure",
+        "terms",
+        "precious"
+      ],
+      "MMR": [
+        "guarded",
+        "dangerously",
+        "affect",
+        "inevitable",
+        "assure",
+        "president",
+        "threat",
+        "determination",
+        "terms",
+        "caressed"
+      ]
+    },
+    "stage08_snippets": [
+      "come on, i’ll protect you.”",
+      "you’ll protect me?” “",
+      "i can protect you from crystal, but you’ll have to let me."
+    ],
+    "label_public": "Offering to Keep Her Safe"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "But I’ll survive.” “",
+        "max_topic_prob": 0.6229932904243469,
+        "normalized_position": 0.9513413992635456,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1711
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Not to mention dangerous. “",
+        "max_topic_prob": 0.5908379554748535,
+        "normalized_position": 0.37269857969489745,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1417
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Viggo won’t feel threatened, and you’ll be okay.”",
+        "max_topic_prob": 0.4971998333930969,
+        "normalized_position": 0.7951078379800105,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1117
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I just wanted to check you got there safely.’ ‘",
+        "max_topic_prob": 0.6249142289161682,
+        "normalized_position": 0.14343234824887943,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Is it safe to come in?’",
+        "max_topic_prob": 0.6112320423126221,
+        "normalized_position": 0.8729013142900555,
+        "tertile": "end",
+        "chapter_index": 56,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I didn’t think security would leave you standing out here like this.’ ‘",
+        "max_topic_prob": 0.6090476512908936,
+        "normalized_position": 0.8619615589151409,
+        "tertile": "end",
+        "chapter_index": 56,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Wanted my boy to be safe.’",
+        "max_topic_prob": 0.5695624351501465,
+        "normalized_position": 0.5335409860973942,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "At least in LA you’d both have protection; you know my security guys are some of the best in the business.",
+        "max_topic_prob": 0.5585866570472717,
+        "normalized_position": 0.46250854668388663,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "You’ll need security, protection . . .",
+        "max_topic_prob": 0.5453329682350159,
+        "normalized_position": 0.7919927068297501,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’ll protect you.”",
+        "max_topic_prob": 0.8166646957397461,
+        "normalized_position": 0.4107516177202588,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 339
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I have to get you to safety.”",
+        "max_topic_prob": 0.7602307796478271,
+        "normalized_position": 0.40507715281234447,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’re safe here.”",
+        "max_topic_prob": 0.7538504600524902,
+        "normalized_position": 0.6,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’re perfectly safe.”",
+        "max_topic_prob": 0.7475544214248657,
+        "normalized_position": 0.2927824788451966,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’ll be safe there.” “",
+        "max_topic_prob": 0.7256907224655151,
+        "normalized_position": 0.7738178198108512,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’re safe with me.” “",
+        "max_topic_prob": 0.7092801332473755,
+        "normalized_position": 0.059034345445495275,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I will protect you from harm always.”",
+        "max_topic_prob": 0.8086255788803101,
+        "normalized_position": 0.9599857727191891,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I will protect you forever .”",
+        "max_topic_prob": 0.7502621412277222,
+        "normalized_position": 0.9960874977769874,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It’s safer this way.”",
+        "max_topic_prob": 0.6856651306152344,
+        "normalized_position": 0.2797439089454028,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Yes, I am safe at home.”",
+        "max_topic_prob": 0.6568230390548706,
+        "normalized_position": 0.8191356926907345,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You will be safe and it will be my on-going mission to hunt them down.”",
+        "max_topic_prob": 0.6419156789779663,
+        "normalized_position": 0.840476613907167,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "We’ll be safe where we’re going for a while.”",
+        "max_topic_prob": 0.6368484497070312,
+        "normalized_position": 0.3206473412768985,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "A pity you didn’t ask that man to assure the duke of your safety.”",
+        "max_topic_prob": 0.5789564847946167,
+        "normalized_position": 0.6072647821930902,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I threw myself into danger, you surrounded yourself with sterility.” “",
+        "max_topic_prob": 0.5763636827468872,
+        "normalized_position": 0.7955755837771405,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 430
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Surely she is not dangerous!”",
+        "max_topic_prob": 0.565118670463562,
+        "normalized_position": 0.12836269288542948,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I won’t survive it.",
+        "max_topic_prob": 0.5069867372512817,
+        "normalized_position": 0.3618735490919022,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "A man could suffocate if he wasn’t careful.”",
+        "max_topic_prob": 0.4980349838733673,
+        "normalized_position": 0.27079065956575177,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "But I wanted to come back to England and not be in danger every single day.” “",
+        "max_topic_prob": 0.48275214433670044,
+        "normalized_position": 0.9141062406117711,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You’ve got to protect yourself.”",
+        "max_topic_prob": 0.7494423389434814,
+        "normalized_position": 0.07425742574257425,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You’re not safe yet, kid.”",
+        "max_topic_prob": 0.7265654802322388,
+        "normalized_position": 0.24611032531824611,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The less you know, the safer you’ll be.”",
+        "max_topic_prob": 0.7200567126274109,
+        "normalized_position": 0.6652050919377652,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It’s not safe out here.”",
+        "max_topic_prob": 0.6771231889724731,
+        "normalized_position": 0.7769448373408769,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It’s not safe for us out here.”",
+        "max_topic_prob": 0.6589686274528503,
+        "normalized_position": 0.41796322489391796,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It ain’t safe.” “",
+        "max_topic_prob": 0.6569138765335083,
+        "normalized_position": 0.19688826025459688,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "It’s a safe area.” “",
+        "max_topic_prob": 0.6518021821975708,
+        "normalized_position": 0.7583075114862698,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You need to be warned so you don’t fall prey.” “",
+        "max_topic_prob": 0.6228164434432983,
+        "normalized_position": 0.2748156854364783,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You’re in the safest place in the world to start living life to the fullest.”",
+        "max_topic_prob": 0.5804184675216675,
+        "normalized_position": 0.8843893578373758,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "A safe area?",
+        "max_topic_prob": 0.5419146418571472,
+        "normalized_position": 0.7584143605086013,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Lord, keep him safe , I prayed silently.",
+        "max_topic_prob": 0.5174506902694702,
+        "normalized_position": 0.7133240730847312,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 478
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Deterrent.” “",
+        "max_topic_prob": 0.48502451181411743,
+        "normalized_position": 0.07992306870392137,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’ll keep you safe.” “",
+        "max_topic_prob": 0.8449876308441162,
+        "normalized_position": 0.40795407954079543,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Let me protect you.”",
+        "max_topic_prob": 0.8288816213607788,
+        "normalized_position": 0.5957359573595736,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’m trying to protect you.” “",
+        "max_topic_prob": 0.7918918132781982,
+        "normalized_position": 0.7246139128057947,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You will be safe?” “",
+        "max_topic_prob": 0.7851223945617676,
+        "normalized_position": 0.25447587809211425,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You’re protected.”",
+        "max_topic_prob": 0.782920241355896,
+        "normalized_position": 0.5954626212928796,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’ve done my best to protect you.”",
+        "max_topic_prob": 0.7453055381774902,
+        "normalized_position": 0.8159081590815909,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "You want to be a bit more careful on that fucking bike of yours,” I said. “",
+        "max_topic_prob": 0.5416803359985352,
+        "normalized_position": 0.883184369154022,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "We’ll risk it, I think.",
+        "max_topic_prob": 0.47573336958885193,
+        "normalized_position": 0.6686759509457493,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "If you had some clown like me waving a mallet around on the wrong side, it really would be dangerous.”",
+        "max_topic_prob": 0.4606224298477173,
+        "normalized_position": 0.7027644980253586,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "That way no one would get hurt.",
+        "max_topic_prob": 0.4469188451766968,
+        "normalized_position": 0.2429848264394097,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Or sign the register, or protect you from falling coconuts?”",
+        "max_topic_prob": 0.4241381883621216,
+        "normalized_position": 0.9765121596341717,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "And if you don’t wear sunblock you might get skin cancer and die.”",
+        "max_topic_prob": 0.34272459149360657,
+        "normalized_position": 0.8842236541259614,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "We hide for your safety.”",
+        "max_topic_prob": 0.7479277849197388,
+        "normalized_position": 0.2543539023865835,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’m not safe anywhere.”",
+        "max_topic_prob": 0.7474558353424072,
+        "normalized_position": 0.7114599010965383,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You must have quite the protection.\"",
+        "max_topic_prob": 0.7242215871810913,
+        "normalized_position": 0.7166200817028596,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I thought you had been lying about all that, now I know, now I can protect you.”",
+        "max_topic_prob": 0.7164750099182129,
+        "normalized_position": 0.5076327671468501,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He’s the only thing that can keep me safe.”",
+        "max_topic_prob": 0.6885663866996765,
+        "normalized_position": 0.7097398408944313,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Keeps you safe?",
+        "max_topic_prob": 0.6850719451904297,
+        "normalized_position": 0.332401634057192,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Always keeping us in sight.",
+        "max_topic_prob": 0.43578851222991943,
+        "normalized_position": 0.6980316850696111,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Protected.” “",
+        "max_topic_prob": 0.6558477878570557,
+        "normalized_position": 0.35172241637543683,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It was my duty to protect you.",
+        "max_topic_prob": 0.6544749736785889,
+        "normalized_position": 0.3432351472790814,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "A mode of protection. “",
+        "max_topic_prob": 0.5656577348709106,
+        "normalized_position": 0.17573639540688968,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It’s important to proceed cautiously and that I do this the right way, for you, for me.",
+        "max_topic_prob": 0.5129721164703369,
+        "normalized_position": 0.9740389415876186,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "My defenses must be down.” “",
+        "max_topic_prob": 0.4593760371208191,
+        "normalized_position": 0.2632301547678482,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I think it’s time you do some fence mending—and no barbed wire, please.",
+        "max_topic_prob": 0.40030163526535034,
+        "normalized_position": 0.7368946580129805,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You mean your safety, right?” “",
+        "max_topic_prob": 0.782156229019165,
+        "normalized_position": 0.14160839160839161,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My safety?”",
+        "max_topic_prob": 0.7517083883285522,
+        "normalized_position": 0.14129052765416403,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "They’re safe.”",
+        "max_topic_prob": 0.7075839042663574,
+        "normalized_position": 0.9008264462809917,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Keep safe, my brother.”",
+        "max_topic_prob": 0.7050622701644897,
+        "normalized_position": 0.7808328035600763,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I could’ve protected myself.”",
+        "max_topic_prob": 0.6691529750823975,
+        "normalized_position": 0.4278448823903369,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You are safe here.",
+        "max_topic_prob": 0.6545530557632446,
+        "normalized_position": 0.14367450731087095,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I will be safe.”",
+        "max_topic_prob": 0.8185346126556396,
+        "normalized_position": 0.5758048780487804,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I need to know that you’re safe and away, so that I can then deal with my people without any vulnerabilities or liabilities.”",
+        "max_topic_prob": 0.7435255646705627,
+        "normalized_position": 0.6259512195121951,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You’re the first man in my entire life who makes me feel safe and protected.” “",
+        "max_topic_prob": 0.7022386193275452,
+        "normalized_position": 0.488,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "This is to protect you all.",
+        "max_topic_prob": 0.6973744630813599,
+        "normalized_position": 0.5605853658536586,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "There are things you must learn to stay safe.”",
+        "max_topic_prob": 0.6908249855041504,
+        "normalized_position": 0.3662439024390244,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "For the present, you’re safe.",
+        "max_topic_prob": 0.6863802671432495,
+        "normalized_position": 0.44097560975609756,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Do you feel the need of protection from me, Harry?",
+        "max_topic_prob": 0.6186747550964355,
+        "normalized_position": 0.2509400032695766,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I’ll risk it, Mary.” “",
+        "max_topic_prob": 0.5553267002105713,
+        "normalized_position": 0.45512506130456104,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Safe, is he?",
+        "max_topic_prob": 0.5344520211219788,
+        "normalized_position": 0.043321889815268924,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Well, even if he kept me out until dark, he’d still be safe.",
+        "max_topic_prob": 0.5151835680007935,
+        "normalized_position": 0.04364884747425209,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I guard my life the way your beefeaters guard the Crown Jewels.",
+        "max_topic_prob": 0.5063180923461914,
+        "normalized_position": 0.43975805133235246,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "You’re more reasonable when I have you trapped.” “",
+        "max_topic_prob": 0.5044777989387512,
+        "normalized_position": 0.6759849599476868,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Like we’ve said before, we just want to protect you.”",
+        "max_topic_prob": 0.7462709546089172,
+        "normalized_position": 0.3895519467814518,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You better be safe.",
+        "max_topic_prob": 0.7209939360618591,
+        "normalized_position": 0.7863431813735081,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "They told us about you and that we would need to protect you.” “",
+        "max_topic_prob": 0.696915864944458,
+        "normalized_position": 0.10095871649383682,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "We only want to protect you,” I said urgently. “",
+        "max_topic_prob": 0.6942742466926575,
+        "normalized_position": 0.099784777929955,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I won’t risk you getting hurt in the process.",
+        "max_topic_prob": 0.6703498363494873,
+        "normalized_position": 0.8651927215809039,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You’re safe and sound in there for now.” “",
+        "max_topic_prob": 0.6493513584136963,
+        "normalized_position": 0.7026022304832714,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 124
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.008607198748043818,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004331087584215592,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.01024428684003152,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.010369410239792612,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.006740027510316369,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.007524077046548957,
+        "n_sentences": 75
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.009222474460839954,
+        "n_sentences": 65
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0055367029826754776,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.00024142926122646064,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0007526342197691922,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0008634646519158122,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0012237093690248566,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.001266357112705783,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0011011699931176876,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.001148105625717566,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0007942811755361397,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 88
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.88,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

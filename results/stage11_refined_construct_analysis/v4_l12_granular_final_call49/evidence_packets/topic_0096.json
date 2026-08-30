@@ -1,0 +1,1064 @@
+{
+  "topic_id": 96,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "worry",
+        "worried",
+        "about",
+        "bother",
+        "concern",
+        "worrying",
+        "concerned",
+        "don",
+        "does",
+        "nothing"
+      ],
+      "KeyBERT": [
+        "concerned",
+        "worrying",
+        "worries",
+        "fears",
+        "bothering",
+        "bothered",
+        "problems",
+        "assure"
+      ],
+      "POS": [
+        "annoying",
+        "slightest",
+        "fears",
+        "concerned",
+        "amusement",
+        "possibility",
+        "purpose",
+        "problems",
+        "reaction",
+        "worried"
+      ],
+      "MMR": [
+        "worrying",
+        "worries",
+        "bothered",
+        "assure",
+        "crashing",
+        "fears",
+        "concerned",
+        "amusement",
+        "sounding",
+        "repeated"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve been worried about you, [person].",
+      "i’ve worried about you since i was twelve.",
+      "i’ve been worried about you.” “"
+    ],
+    "label_public": "Confessing Long-Standing Worry"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Careful.”",
+        "max_topic_prob": 0.6165441274642944,
+        "normalized_position": 0.2837528604118993,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Was he worried?",
+        "max_topic_prob": 0.6084598302841187,
+        "normalized_position": 0.84850640113798,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "For all concerned.",
+        "max_topic_prob": 0.5631182193756104,
+        "normalized_position": 0.22024656235182552,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Thanks, but don't bother.\"",
+        "max_topic_prob": 0.5032976865768433,
+        "normalized_position": 0.2923186344238976,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You grew up worrying about having your basic needs met.",
+        "max_topic_prob": 0.4999682307243347,
+        "normalized_position": 0.4521100047415837,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Don't beat yourself up about it.",
+        "max_topic_prob": 0.4762178063392639,
+        "normalized_position": 0.3930772878141299,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Don’t worry so much.”",
+        "max_topic_prob": 0.7774323225021362,
+        "normalized_position": 0.2220783704470913,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 557
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Don’t worry about it.”",
+        "max_topic_prob": 0.7769653797149658,
+        "normalized_position": 0.5515277058518903,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 912
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Stop worrying.” “",
+        "max_topic_prob": 0.7623759508132935,
+        "normalized_position": 0.2870706024512342,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We didn’t want to worry you.”",
+        "max_topic_prob": 0.7422928810119629,
+        "normalized_position": 0.0236492318315208,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But then I worried.",
+        "max_topic_prob": 0.7338261008262634,
+        "normalized_position": 0.24244778180562748,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 793
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Then stop worrying.”",
+        "max_topic_prob": 0.7330714464187622,
+        "normalized_position": 0.499050578284136,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I don’t want to concern you,” she said. “",
+        "max_topic_prob": 0.7162632942199707,
+        "normalized_position": 0.5801324503311258,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 808
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I’m not concerned about that.",
+        "max_topic_prob": 0.7151902318000793,
+        "normalized_position": 0.8152317880794702,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 658
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You don’t know how worried I was about you,” he confessed, exaggerating his concern. “",
+        "max_topic_prob": 0.7048906683921814,
+        "normalized_position": 0.6107615894039735,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 993
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "But there’s no need to worry.",
+        "max_topic_prob": 0.6975899934768677,
+        "normalized_position": 0.6475165562913907,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1215
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Try not to bother me.”",
+        "max_topic_prob": 0.6589704155921936,
+        "normalized_position": 0.7630794701986755,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You don’t have to worry about that,” he answered. “",
+        "max_topic_prob": 0.6570805311203003,
+        "normalized_position": 0.21026490066225165,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 736
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It’s not my distress you should be worried about.",
+        "max_topic_prob": 0.6617112159729004,
+        "normalized_position": 0.48131318868567535,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Don’t worry about me, darling.",
+        "max_topic_prob": 0.6315003633499146,
+        "normalized_position": 0.6810178348290356,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Why are you so concerned with my actions in any case?”",
+        "max_topic_prob": 0.6043477058410645,
+        "normalized_position": 0.12700215835510623,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Doesn’t it bother you?”",
+        "max_topic_prob": 0.5676862001419067,
+        "normalized_position": 0.6260365784391685,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Then what is disturbing you?” “",
+        "max_topic_prob": 0.5094476342201233,
+        "normalized_position": 0.04861978870839487,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He’ll be no bother.” “",
+        "max_topic_prob": 0.47951000928878784,
+        "normalized_position": 0.4197432693399977,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I worry about you.",
+        "max_topic_prob": 0.7496448159217834,
+        "normalized_position": 0.2558795860771402,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I've been a little off lately, and she's worrying.\"",
+        "max_topic_prob": 0.5962676405906677,
+        "normalized_position": 0.3123236124176858,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Don’t worry about us.",
+        "max_topic_prob": 0.6771410703659058,
+        "normalized_position": 0.8197557864042282,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "And worried.",
+        "max_topic_prob": 0.62565016746521,
+        "normalized_position": 0.6491707672680882,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "One less thing to worry about right now.",
+        "max_topic_prob": 0.610907793045044,
+        "normalized_position": 0.9484235465646073,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Don’t worry.",
+        "max_topic_prob": 0.585999608039856,
+        "normalized_position": 0.6247494076909058,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Is that a threat?”",
+        "max_topic_prob": 0.5522722005844116,
+        "normalized_position": 0.49425915800984144,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "There’s something bothering you.",
+        "max_topic_prob": 0.5458940863609314,
+        "normalized_position": 0.37269910698013486,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Are you worried about him?”",
+        "max_topic_prob": 0.7215243577957153,
+        "normalized_position": 0.13721663413901816,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Should I be worried?” “",
+        "max_topic_prob": 0.7012010216712952,
+        "normalized_position": 0.6584596907371265,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "This is an entirely different situation, which is why I don’t want you to worry about what you call me.” “",
+        "max_topic_prob": 0.5990921258926392,
+        "normalized_position": 0.9021167992793875,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Well, sorry to bother you.”",
+        "max_topic_prob": 0.5930138826370239,
+        "normalized_position": 0.7866686683681129,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "No need to worry.",
+        "max_topic_prob": 0.5925776958465576,
+        "normalized_position": 0.1306110193664615,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Let’s not worry about supposed to .”",
+        "max_topic_prob": 0.5819797515869141,
+        "normalized_position": 0.9007656508031827,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 430
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I was worried.”",
+        "max_topic_prob": 0.8034130334854126,
+        "normalized_position": 0.19514398644833428,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I was worried.",
+        "max_topic_prob": 0.7523958683013916,
+        "normalized_position": 0.19130434782608696,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Why were you worried?”",
+        "max_topic_prob": 0.7519898414611816,
+        "normalized_position": 0.19548277809147374,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You don’t need to worry about any of this.”",
+        "max_topic_prob": 0.7367522716522217,
+        "normalized_position": 0.8600790513833992,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Worry.",
+        "max_topic_prob": 0.7260125875473022,
+        "normalized_position": 0.12569169960474308,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Don’t you think I’m just as worried about you as you are of me?",
+        "max_topic_prob": 0.7221773266792297,
+        "normalized_position": 0.8623376623376623,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I was starting to get worried.’ ‘",
+        "max_topic_prob": 0.7149249911308289,
+        "normalized_position": 0.2979377919562493,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 438
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Should I be worried?’",
+        "max_topic_prob": 0.7113674283027649,
+        "normalized_position": 0.19220690440925145,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Don’t worry about that.",
+        "max_topic_prob": 0.691802442073822,
+        "normalized_position": 0.06209410960464851,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I can tell she’s worried that I’m losing it. ‘",
+        "max_topic_prob": 0.6009664535522461,
+        "normalized_position": 0.7959439444001367,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I worry, you know, that we’ll drift apart.",
+        "max_topic_prob": 0.5785256624221802,
+        "normalized_position": 0.493562720747408,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He doesn’t seem at all concerned by this. ‘",
+        "max_topic_prob": 0.5634937286376953,
+        "normalized_position": 0.2826706163837302,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "That’s what you’re worried about?” “",
+        "max_topic_prob": 0.7908782958984375,
+        "normalized_position": 0.30089186176142696,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I’m worried about her.” “",
+        "max_topic_prob": 0.722737193107605,
+        "normalized_position": 0.5579710144927537,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "There’s nothing to doubt where I’m concerned.” “",
+        "max_topic_prob": 0.5992118716239929,
+        "normalized_position": 0.29843924191750276,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "If it makes you feel any better, I’m more nervous about this than you are.”",
+        "max_topic_prob": 0.5948469638824463,
+        "normalized_position": 0.08517279821627648,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He’s got enough on his mind and can’t worry about me, too.”",
+        "max_topic_prob": 0.5932943820953369,
+        "normalized_position": 0.45418060200668897,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Don’t worry.",
+        "max_topic_prob": 0.585999608039856,
+        "normalized_position": 0.7286510590858417,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "The only thing I'm worried about is you.\" \"",
+        "max_topic_prob": 0.8143536448478699,
+        "normalized_position": 0.8484230346775459,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Don't worry about it.\"",
+        "max_topic_prob": 0.7701566219329834,
+        "normalized_position": 0.11109367644751295,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Just worried about you, sis.",
+        "max_topic_prob": 0.6996417045593262,
+        "normalized_position": 0.8837282284638318,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He'll worry about you, both of you.",
+        "max_topic_prob": 0.6930676698684692,
+        "normalized_position": 0.912129295465244,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Don't worry about that.",
+        "max_topic_prob": 0.6688644289970398,
+        "normalized_position": 0.978346147811078,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Don't worry about it.",
+        "max_topic_prob": 0.6647733449935913,
+        "normalized_position": 0.9582614153459909,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Don’t you worry about me.",
+        "max_topic_prob": 0.7559276819229126,
+        "normalized_position": 0.9773426573426574,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Do you worry about everything?”",
+        "max_topic_prob": 0.7491936087608337,
+        "normalized_position": 0.4878321678321678,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I worry about her.",
+        "max_topic_prob": 0.721373975276947,
+        "normalized_position": 0.6380419580419581,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Don’t you worry about me, Steve.",
+        "max_topic_prob": 0.6490305662155151,
+        "normalized_position": 0.5720279720279721,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Don’t bother.”",
+        "max_topic_prob": 0.6376452445983887,
+        "normalized_position": 0.7837762237762238,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I worry about all of you,” he added, with a smile. “",
+        "max_topic_prob": 0.6360875964164734,
+        "normalized_position": 0.6388811188811189,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m worried about him, to be honest.”",
+        "max_topic_prob": 0.7414455413818359,
+        "normalized_position": 0.29258599424420995,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s not me I was worried about.",
+        "max_topic_prob": 0.7343542575836182,
+        "normalized_position": 0.24640263121830888,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Are you concerned?” “",
+        "max_topic_prob": 0.7110328674316406,
+        "normalized_position": 0.06043579553241058,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m worried.",
+        "max_topic_prob": 0.6714299917221069,
+        "normalized_position": 0.7094696450596135,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It was the first time I had voiced my concern so definitively. “",
+        "max_topic_prob": 0.6298487186431885,
+        "normalized_position": 0.7176922022749075,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I don’t know what her deal is, but she’s not my concern—you are.”",
+        "max_topic_prob": 0.6250410079956055,
+        "normalized_position": 0.15677675757160478,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Then I guess you don’t have anything to worry about, do you?”",
+        "max_topic_prob": 0.7143381834030151,
+        "normalized_position": 0.2676296986641814,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 467
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Are you worried?” “",
+        "max_topic_prob": 0.7089405655860901,
+        "normalized_position": 0.4788754271512892,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 799
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "This isn’t just you worrying about me coming home from the station, is it?” “",
+        "max_topic_prob": 0.6573987603187561,
+        "normalized_position": 0.7286424355389872,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 759
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Honestly, what a silly thing to worry about.",
+        "max_topic_prob": 0.6370459198951721,
+        "normalized_position": 0.33550792171481825,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 904
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Not that they ever worried anyway.",
+        "max_topic_prob": 0.6289821863174438,
+        "normalized_position": 0.22041006523765144,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "You worry about music.",
+        "max_topic_prob": 0.6115038394927979,
+        "normalized_position": 0.5529667598633116,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 1276
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0036438168982008655,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004115877790090232,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.003877042370534478,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.003018412315122246,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0032283395864235232,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.0062146892655367235,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.002965043695380774,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.002988505747126437,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0014622555291537195,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.00025614754098360657,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0009222965183306433,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0010111223458038423,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0013331111481419764,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0011941724385001193,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0009411764705882353,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 80
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

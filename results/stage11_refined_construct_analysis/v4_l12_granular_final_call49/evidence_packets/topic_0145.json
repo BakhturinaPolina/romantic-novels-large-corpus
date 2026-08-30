@@ -1,0 +1,1110 @@
+{
+  "topic_id": 145,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "pain",
+        "hurt",
+        "hurts",
+        "painful",
+        "hurting",
+        "much",
+        "it",
+        "agony",
+        "doesn",
+        "too"
+      ],
+      "KeyBERT": [
+        "hurts",
+        "painful",
+        "wound",
+        "stretched",
+        "squeezed",
+        "emotions",
+        "biting",
+        "pressure",
+        "treatment",
+        "extremely"
+      ],
+      "POS": [
+        "painful",
+        "remark",
+        "fashioned",
+        "notion",
+        "treatment",
+        "insides",
+        "possibility",
+        "wound",
+        "pressure",
+        "emotions"
+      ],
+      "MMR": [
+        "painful",
+        "accustomed",
+        "tumbled",
+        "treatment",
+        "insides",
+        "biting",
+        "wound",
+        "experienced",
+        "emotions",
+        "stretched"
+      ]
+    },
+    "stage08_snippets": [
+      "it still hurts so much.”",
+      "it hurts too much.\" \"",
+      "but the rest of me hurts.” “"
+    ],
+    "label_public": "Confessing How Much It Hurts"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Pain.",
+        "max_topic_prob": 0.7418078184127808,
+        "normalized_position": 0.5979575067496185,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The pain was still there but it didn’t matter.",
+        "max_topic_prob": 0.7340962886810303,
+        "normalized_position": 0.9336776616973823,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The pain—it hasn’t always been this bad has it?",
+        "max_topic_prob": 0.6958697438240051,
+        "normalized_position": 0.5969010447235591,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I swear that wasn’t normal pain.",
+        "max_topic_prob": 0.6847651600837708,
+        "normalized_position": 0.47141683296161524,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Just the pain from his shattered arm.",
+        "max_topic_prob": 0.6698430776596069,
+        "normalized_position": 0.7983331376922174,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It’s quite painful, but it’ll be over before long.",
+        "max_topic_prob": 0.6565113067626953,
+        "normalized_position": 0.7514966545369175,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "But it fucking hurts.”",
+        "max_topic_prob": 0.7631528377532959,
+        "normalized_position": 0.26744835287548857,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 958
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Oh, come on, it doesn’t hurt that bad.” “",
+        "max_topic_prob": 0.7611541748046875,
+        "normalized_position": 0.6373534338358459,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 538
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It definitely hurt.",
+        "max_topic_prob": 0.7312107086181641,
+        "normalized_position": 0.24232272473478503,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 868
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How’s the pain?”",
+        "max_topic_prob": 0.6981779336929321,
+        "normalized_position": 0.3026242322724735,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1084
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And those hurt more than you can imagine. “",
+        "max_topic_prob": 0.690158486366272,
+        "normalized_position": 0.6649916247906198,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 637
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Like how much it hurt when it was over.",
+        "max_topic_prob": 0.6863610744476318,
+        "normalized_position": 0.29955332216638747,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1073
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "They still hurt.",
+        "max_topic_prob": 0.6243295669555664,
+        "normalized_position": 0.2870267021550614,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "But not before I became an alcoholic in order to numb the pain.",
+        "max_topic_prob": 0.6117944717407227,
+        "normalized_position": 0.09633381986777712,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Before I could get used to the pain, Mitch concluded, “You got it, baby?",
+        "max_topic_prob": 0.5364335179328918,
+        "normalized_position": 0.2266678114535932,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 647
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Your feet hurt after you’re on those heels all day?”",
+        "max_topic_prob": 0.5098769664764404,
+        "normalized_position": 0.2865974070576114,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I’m sayin’ that you got a connection with two people who are bein’ serious pains in his ass.",
+        "max_topic_prob": 0.47863173484802246,
+        "normalized_position": 0.8955954323001631,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "She’s a pain in the ass.",
+        "max_topic_prob": 0.44171983003616333,
+        "normalized_position": 0.6417961706877308,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "What hurts?",
+        "max_topic_prob": 0.7516646385192871,
+        "normalized_position": 0.25640045854031335,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It would hurt too much now.",
+        "max_topic_prob": 0.7344776391983032,
+        "normalized_position": 0.7200038211692777,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "It already hurt too much, to be totally honest.",
+        "max_topic_prob": 0.7242816090583801,
+        "normalized_position": 0.7200993504012227,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "That hurt.”",
+        "max_topic_prob": 0.7096461057662964,
+        "normalized_position": 0.4177493312953764,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Anything to make the pain end.",
+        "max_topic_prob": 0.6885571479797363,
+        "normalized_position": 0.2930836836071838,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Obviously he was in a lot of pain, even if he wasn’t comfortable showing it. “",
+        "max_topic_prob": 0.6582614183425903,
+        "normalized_position": 0.4534772640427971,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It was a glorious thing for her when she pulled out a dagger, plunged it into her breast, pulled the dagger back out and offered it to her husband with the immortal, almost divine, words: ‘Paetus, it doesn’t hurt.’",
+        "max_topic_prob": 0.5472679138183594,
+        "normalized_position": 0.11822289156626506,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Apparently, it was not very painful: The prepuce around the glans is seized, stretched out until it actually covers the glans, and there tied.",
+        "max_topic_prob": 0.5155993700027466,
+        "normalized_position": 0.38949548192771083,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Paetus, it doesn’t hurt’ ( Paete , non dolet ); this came after she has bravely shielded the news of their son’s recent death from her husband to spare him additional grief: Whenever he asked how the boy was doing she responded: ‘He’s had a good rest and is ready to eat something’.",
+        "max_topic_prob": 0.47992920875549316,
+        "normalized_position": 0.11765813253012049,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "After Plato, Phaedo 83D—pain and pleasure are nails which fix the soul to the body.",
+        "max_topic_prob": 0.4547029733657837,
+        "normalized_position": 0.9188629518072289,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 579
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "There is inscriptional evidence for pain in childbirth in Egypt’s Dosithea, aged twenty-five who, by dying from some disease or other, died ‘in terrible pain, escaping the pangs of childbirth’ ( Peek , 1233).",
+        "max_topic_prob": 0.44144976139068604,
+        "normalized_position": 0.39759036144578314,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Arria, a shining example and comfort, does everything she possibly can to show her husband Aulus Caecina Paetus that his impending suicide, ordered by Emperor Claudius, will not be painful. ‘",
+        "max_topic_prob": 0.38481685519218445,
+        "normalized_position": 0.11746987951807229,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The pain eases.",
+        "max_topic_prob": 0.78084796667099,
+        "normalized_position": 0.22287833012908542,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The pain is etched into his psyche.",
+        "max_topic_prob": 0.6335405707359314,
+        "normalized_position": 0.4579785773139248,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "It’s when you age you feel the pain.",
+        "max_topic_prob": 0.6048719882965088,
+        "normalized_position": 0.3735237572095578,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Without the limitations of flesh we do not feel discomfort.",
+        "max_topic_prob": 0.5219690799713135,
+        "normalized_position": 0.8608898654215875,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "As he does, his leg cramps.",
+        "max_topic_prob": 0.47020888328552246,
+        "normalized_position": 0.9837956605328206,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Her suffering here is needless.",
+        "max_topic_prob": 0.44836127758026123,
+        "normalized_position": 0.4090909090909091,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It hurt at first, but it didn’t hurt badly and that little bit of pain was all mixed up with the incredible sensations building in my lower body.",
+        "max_topic_prob": 0.683457612991333,
+        "normalized_position": 0.8338958534233365,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 420
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "That hurt, hurt way more than I could have expected.",
+        "max_topic_prob": 0.6771289110183716,
+        "normalized_position": 0.42418032786885246,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Even talking hurt. “",
+        "max_topic_prob": 0.650877833366394,
+        "normalized_position": 0.16743008678881388,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "How badly was he hurt? “",
+        "max_topic_prob": 0.6339523792266846,
+        "normalized_position": 0.06376567020250723,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Chronic pain, you know?",
+        "max_topic_prob": 0.6267081499099731,
+        "normalized_position": 0.18261812921890067,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "This is a pain in the ass, you know that?” “",
+        "max_topic_prob": 0.6243624687194824,
+        "normalized_position": 0.758678881388621,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "That’s what really hurt.",
+        "max_topic_prob": 0.7549999952316284,
+        "normalized_position": 0.5877691033830139,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Let’s see exactly how much pain you can take.”",
+        "max_topic_prob": 0.7472543716430664,
+        "normalized_position": 0.9688904660515733,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "It hurt.",
+        "max_topic_prob": 0.7420663833618164,
+        "normalized_position": 0.9836763662171752,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "And why did it hurt so much?",
+        "max_topic_prob": 0.7200532555580139,
+        "normalized_position": 0.47977288857345635,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "All the pain.",
+        "max_topic_prob": 0.6949499845504761,
+        "normalized_position": 0.05819730305180979,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Also, there was a hell of a lot of pain involved.",
+        "max_topic_prob": 0.6640210151672363,
+        "normalized_position": 0.9717293588833689,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Their sting is very painful.",
+        "max_topic_prob": 0.5910184383392334,
+        "normalized_position": 0.34398958484015624,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Comfort?",
+        "max_topic_prob": 0.41739052534103394,
+        "normalized_position": 0.7840300882395487,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Maybe she could finally let go of the old hurts.",
+        "max_topic_prob": 0.630311131477356,
+        "normalized_position": 0.5835435056746532,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "The divorce, the final decree barely two months old, still hurt.",
+        "max_topic_prob": 0.4431114196777344,
+        "normalized_position": 0.8556116015132409,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The pain went away.",
+        "max_topic_prob": 0.7161233425140381,
+        "normalized_position": 0.9792566983578219,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "That hurt.” “",
+        "max_topic_prob": 0.7119972705841064,
+        "normalized_position": 0.9770959377700951,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Most of what happened was painful.",
+        "max_topic_prob": 0.6999600529670715,
+        "normalized_position": 0.28210526315789475,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Are you in pain?”",
+        "max_topic_prob": 0.6752651929855347,
+        "normalized_position": 0.05263157894736842,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Are you in pain?” “",
+        "max_topic_prob": 0.670452356338501,
+        "normalized_position": 0.06863157894736842,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 489
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "This was painless.",
+        "max_topic_prob": 0.6184836626052856,
+        "normalized_position": 0.21305263157894735,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1518
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I was beaten up, but while I know it hurt, I can’t recall the physical pain.",
+        "max_topic_prob": 0.6180606484413147,
+        "normalized_position": 0.28224561403508774,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "There are a lot of stitches, which is the discomfort you still feel.",
+        "max_topic_prob": 0.6161659359931946,
+        "normalized_position": 0.0607719298245614,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I need the pain, to feel.” “",
+        "max_topic_prob": 0.7212761640548706,
+        "normalized_position": 0.38022005501375344,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Perhaps pain could heal wounds. “",
+        "max_topic_prob": 0.7056406736373901,
+        "normalized_position": 0.5257564391097774,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Already the pain has faded.",
+        "max_topic_prob": 0.6838304996490479,
+        "normalized_position": 0.19367341835458865,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "D-d-did it hurt?”",
+        "max_topic_prob": 0.6600055694580078,
+        "normalized_position": 0.6742935733933484,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He didn’t want the pain distracting him from the day, and there’d still be a pleasant ache regardless.",
+        "max_topic_prob": 0.6396567225456238,
+        "normalized_position": 0.6207801950487621,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He wanted to lose himself in the pain.",
+        "max_topic_prob": 0.6361150741577148,
+        "normalized_position": 0.3642160540135034,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Just admit it, it was too painful, right?",
+        "max_topic_prob": 0.6833497285842896,
+        "normalized_position": 0.43606967117081935,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s like a physical pain when he’s gone.",
+        "max_topic_prob": 0.6459499597549438,
+        "normalized_position": 0.20838865890806843,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "That muscle pain is a common side-effect.",
+        "max_topic_prob": 0.6047356128692627,
+        "normalized_position": 0.4793407795048036,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Grateful for the break in my interrogation, and feeling wound up like a ball of wire, I stretched out my legs and immediately cried out as an intense pain shot through my calf.",
+        "max_topic_prob": 0.6039506793022156,
+        "normalized_position": 0.48629227524798874,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I’m in agony.",
+        "max_topic_prob": 0.5798047780990601,
+        "normalized_position": 0.3135983753807701,
+        "tertile": "begin",
+        "chapter_index": 26,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Scrunching my face in agony, I bent over, pulling on my foot to ease the cramp.",
+        "max_topic_prob": 0.5638049840927124,
+        "normalized_position": 0.48637038194173243,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "It hurt like crazy.",
+        "max_topic_prob": 0.7837455868721008,
+        "normalized_position": 0.3484982332155477,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "the pain’s too intense.",
+        "max_topic_prob": 0.7741491198539734,
+        "normalized_position": 0.6308892815076561,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I don’t want to feel that kind of pain again.”",
+        "max_topic_prob": 0.7362768650054932,
+        "normalized_position": 0.3574793875147232,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Damn that hurt! “",
+        "max_topic_prob": 0.7212818264961243,
+        "normalized_position": 0.60924617196702,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I thought this wasn’t supposed to hurt.",
+        "max_topic_prob": 0.7058908939361572,
+        "normalized_position": 0.32759128386336867,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Do you feel any pain anywhere?”",
+        "max_topic_prob": 0.6950118541717529,
+        "normalized_position": 0.059923439340400474,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I didn’t think that kind of thing could hurt so much anymore.”",
+        "max_topic_prob": 0.7301931381225586,
+        "normalized_position": 0.7551266586248492,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The need to numb the pain.",
+        "max_topic_prob": 0.6570807695388794,
+        "normalized_position": 0.9480096501809409,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I was nothing but a source of pain.",
+        "max_topic_prob": 0.6444786787033081,
+        "normalized_position": 0.6194209891435465,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "And she was starting to not care how much it would hurt.",
+        "max_topic_prob": 0.6441258788108826,
+        "normalized_position": 0.595416164053076,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She wanted to tell him it was okay, but that kind of pain couldn’t be brushed away with a platitude.",
+        "max_topic_prob": 0.5892435312271118,
+        "normalized_position": 0.6247285886610374,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It would end and it would hurt.",
+        "max_topic_prob": 0.5459995269775391,
+        "normalized_position": 0.5952955367913149,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 163
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003774059630142156,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0035731300619342545,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.003273124015032125,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.005510031082226617,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003753609239653513,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.004008961207404787,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.007845334827682824,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.004309704265121118,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0008703220191470844,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0010927634774162214,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0007114062129475931,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0006129597197898424,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.001131648434552999,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0011066537557061834,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0002913752913752914,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0006329113924050633,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 84
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

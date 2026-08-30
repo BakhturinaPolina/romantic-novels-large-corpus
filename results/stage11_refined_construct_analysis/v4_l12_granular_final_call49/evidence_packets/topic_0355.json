@@ -1,0 +1,867 @@
+{
+  "topic_id": 355,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "blanket",
+        "blankets",
+        "tucked",
+        "comforter",
+        "pulled",
+        "wrapped",
+        "lay",
+        "shoulders",
+        "sheet",
+        "draped"
+      ],
+      "KeyBERT": [
+        "draped",
+        "folded",
+        "rested",
+        "curled",
+        "tightly",
+        "worn",
+        "stretched",
+        "sticking",
+        "positioned",
+        "tugged"
+      ],
+      "POS": [
+        "sized",
+        "items",
+        "edges",
+        "task",
+        "movements",
+        "terrified",
+        "heated",
+        "embarrassed",
+        "worn"
+      ],
+      "MMR": [
+        "draped",
+        "plucked",
+        "sticking",
+        "shed",
+        "items",
+        "wipe",
+        "edges",
+        "movements",
+        "straightened",
+        "embarrassed"
+      ]
+    },
+    "stage08_snippets": [
+      "bos went over to it and draped it over dainy as a blanket.",
+      "still, he struggled not to groan as she got him to a sitting position, resting his back against her front with the blanket draped across his lap.",
+      "[person] plucked at the soft down comforter draped over the bed. \""
+    ],
+    "label_public": "Blanket Draped Over Someone"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The blanket was tucked around her as if pressed carefully there by someone else.",
+        "max_topic_prob": 0.815807580947876,
+        "normalized_position": 0.4864003920607694,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1984
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Once they had it blown up, he pulled the blanket out and spread it over the mattress before they sat down on it.",
+        "max_topic_prob": 0.7230532169342041,
+        "normalized_position": 0.4653271257044842,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1898
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Waiting for him to come out of the bathroom she pulled the light blanket over herself more to cover her bare legs than because she was cold.",
+        "max_topic_prob": 0.7139049172401428,
+        "normalized_position": 0.4797843665768194,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1957
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She sat up, groggy from sleep, the blanket falling to her waist. ‘",
+        "max_topic_prob": 0.7062358856201172,
+        "normalized_position": 0.4876255819652046,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1989
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He had laid his coat down on one side and she knew it was there for a buffer between her skin and the velour-covered plastic of the mattress.",
+        "max_topic_prob": 0.6571147441864014,
+        "normalized_position": 0.4788042146532713,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1953
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She snuggled down onto his coat pretending to herself that the scent of him was not having an impact on her emotions or physical comfort.",
+        "max_topic_prob": 0.5791746377944946,
+        "normalized_position": 0.47953932859593235,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1956
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "His jacket, she realised, was still on the ground from where he had folded it to put under her head. ‘",
+        "max_topic_prob": 0.5950653553009033,
+        "normalized_position": 0.18071216617210684,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "He shook out the comforter and sailed it over the top sheet, straightening it when it settled.",
+        "max_topic_prob": 0.6189978122711182,
+        "normalized_position": 0.5769968541394921,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 554
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "The insulation on the wire had been nibbled. “",
+        "max_topic_prob": 0.4934253394603729,
+        "normalized_position": 0.7019105347962864,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She clutched the blanket around her shoulders closed, anxiety creeping up on her.",
+        "max_topic_prob": 0.7520335912704468,
+        "normalized_position": 0.20253456221198157,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Val shifted his attention to Cord, who knelt beside the sofa, peeling the layers of blanket off the prone body. “",
+        "max_topic_prob": 0.7137718200683594,
+        "normalized_position": 0.15391705069124423,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "But instead of an empty seat, he saw a bundle under a blanket.",
+        "max_topic_prob": 0.7025589346885681,
+        "normalized_position": 0.11405529953917051,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "After unlocking and opening the door, he scooped up her petite body, blankets and all, and carried her close to his chest.",
+        "max_topic_prob": 0.6699107885360718,
+        "normalized_position": 0.12096774193548387,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "The blankets!” “",
+        "max_topic_prob": 0.600462794303894,
+        "normalized_position": 0.16129032258064516,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "When he placed it in her hand she noted the warmth and held it as if it were priceless.",
+        "max_topic_prob": 0.5850160717964172,
+        "normalized_position": 0.5059907834101383,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Rachel peeled away one of her mittens and stroked the frail neck that poked out from beneath the gray blanket.",
+        "max_topic_prob": 0.6837708950042725,
+        "normalized_position": 0.3794928949568125,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Rachel sat on the ground, her back propped against the side of the stall, a blanket thrown over her knees.",
+        "max_topic_prob": 0.6458945274353027,
+        "normalized_position": 0.3967679019225411,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Inside, a small blanket-covered bundle huddled on a bed a straw. “",
+        "max_topic_prob": 0.639153003692627,
+        "normalized_position": 0.37614934522151017,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He stood naked before her and bent to bury his face in her neck, breathing in the subtle floral fragrance. “",
+        "max_topic_prob": 0.6348261833190918,
+        "normalized_position": 0.6397325160211759,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "So, bring me more blankets.” “",
+        "max_topic_prob": 0.6207318305969238,
+        "normalized_position": 0.4095848425745333,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ve wrapped him in a blanket, and I’ve tried to feed him milk.”",
+        "max_topic_prob": 0.5847519636154175,
+        "normalized_position": 0.34076344385622737,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Eli grabbed a nearby wool blanket and wrapped it around her, urging her to sit. “",
+        "max_topic_prob": 0.8198496103286743,
+        "normalized_position": 0.8921587608906099,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He perched on the side of the bed and laid his arm across the blanket around her waist. “",
+        "max_topic_prob": 0.8024767637252808,
+        "normalized_position": 0.9355275895450145,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Eli suggested, reaching for a thick pile of blankets and nodding for her to start spreading them across the floor.",
+        "max_topic_prob": 0.7048841714859009,
+        "normalized_position": 0.7790900290416264,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She needed to get the woman to the shelter and wrapped in a blanket, but not until she knew what was going on. “",
+        "max_topic_prob": 0.688579797744751,
+        "normalized_position": 0.8559535333978703,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "As they reached Mary’s vehicle, he gently placed her on the open tailgate while he spread a blanket in the bed of the SUV.",
+        "max_topic_prob": 0.6584973931312561,
+        "normalized_position": 0.376379477250726,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 461
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She wrapped the towel around Bullet and rubbed his fur dry.",
+        "max_topic_prob": 0.6061159372329712,
+        "normalized_position": 0.2836398838334947,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 607
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Deciding to get up, I pulled the thin crocheted blanket off me and rose to my feet at the side of the little twin bed I'd had since I was five.",
+        "max_topic_prob": 0.6491670608520508,
+        "normalized_position": 0.19946808510638298,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The cub lay nearby, blankets wrapped around him as he softly snored.",
+        "max_topic_prob": 0.6321574449539185,
+        "normalized_position": 0.7891337386018237,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "As I was wrapped in a warm mist, she lay down next to her mate and licked the tawny wolf's face before putting a paw on Gavin's leg.",
+        "max_topic_prob": 0.5662629008293152,
+        "normalized_position": 0.8852583586626139,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He was a fuzzy, stout gelding with a heavy winter blanket on.",
+        "max_topic_prob": 0.5331589579582214,
+        "normalized_position": 0.1356382978723404,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I pulled the blanket across me and sat up. “",
+        "max_topic_prob": 0.8155317306518555,
+        "normalized_position": 0.03873587183144958,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Travis chuckled and then noticed the fol- ded sheets, blanket, and pillow on the couch. “",
+        "max_topic_prob": 0.6316961050033569,
+        "normalized_position": 0.7806430374190717,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 407
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I insist, pulling a blanket away from her as she fights to keep it on her side of the couch. “",
+        "max_topic_prob": 0.7227374315261841,
+        "normalized_position": 0.01659978110178767,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "she asks, wrapping herself over my huddled body. “",
+        "max_topic_prob": 0.6614738702774048,
+        "normalized_position": 0.6326158336373586,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She pleads, already three sheets to the wind. “",
+        "max_topic_prob": 0.5069037079811096,
+        "normalized_position": 0.3516964611455673,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I don’t want to freak her out, as I have no intentions of using it tonight, so I remove the holder and wrap my jacket around it, tucking it away on the seat of a dining room chair.",
+        "max_topic_prob": 0.4285435080528259,
+        "normalized_position": 0.3826158336373586,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 450
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Squeezes my foot through the blanket. “",
+        "max_topic_prob": 0.7086244821548462,
+        "normalized_position": 0.5433734939759036,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She tucked her feet under her butt, and leaned against his sturdy shoulder, pulling the blanket up to her chin.",
+        "max_topic_prob": 0.8231711387634277,
+        "normalized_position": 0.26143965747926146,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She snuggled the blanket up to her chin.",
+        "max_topic_prob": 0.801176905632019,
+        "normalized_position": 0.5472303987155472,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Reaching the blanket, she pointed.",
+        "max_topic_prob": 0.794723629951477,
+        "normalized_position": 0.6402640264026402,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Lying down, she pulled the blanket over her legs, and Breeze stretched out beside her. “",
+        "max_topic_prob": 0.7944554090499878,
+        "normalized_position": 0.5448220497725448,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Sitting beside her, he pulled a large blanket over them.",
+        "max_topic_prob": 0.790318489074707,
+        "normalized_position": 0.9388992953349389,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Instead of interrupting his sleep, she eased herself from the couch, pulled the blanket over him, and went to bed. ****",
+        "max_topic_prob": 0.768848180770874,
+        "normalized_position": 0.2632236196592632,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He started to pull the blanket back a little bit, but quickly decided that wasn't a good idea. \"",
+        "max_topic_prob": 0.7616008520126343,
+        "normalized_position": 0.5503759398496241,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Carson adjusted the blanket again and then reached around for my hard-on. \"",
+        "max_topic_prob": 0.7102097272872925,
+        "normalized_position": 0.5929824561403508,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "too cold for that, I guess,\" he said, wrappin' the blankets tight around us again. \"",
+        "max_topic_prob": 0.6951560974121094,
+        "normalized_position": 0.5513784461152882,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Oh my god, yes,\" I groaned, just as Artie came through the door with the blanket.",
+        "max_topic_prob": 0.6919832825660706,
+        "normalized_position": 0.6170426065162907,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He covered his head with the blanket again, and said, \"Artie, I already quit.",
+        "max_topic_prob": 0.667115330696106,
+        "normalized_position": 0.6706766917293233,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I want to blow you, but I need the blankets,\" he answered before he kissed my mouth hard again.",
+        "max_topic_prob": 0.6644144058227539,
+        "normalized_position": 0.5533834586466165,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He crawled up her body, covering her.",
+        "max_topic_prob": 0.6808006763458252,
+        "normalized_position": 0.7735697778616234,
+        "tertile": "end",
+        "chapter_index": 101,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She was curled up in a corner of the room, completely swaddled in a terry toweling robe with only her head peeking out.",
+        "max_topic_prob": 0.5775802135467529,
+        "normalized_position": 0.6503796632551997,
+        "tertile": "middle",
+        "chapter_index": 79,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She had barely whipped it on and tied a knot at the bottom when the tent started coming down.",
+        "max_topic_prob": 0.5479335188865662,
+        "normalized_position": 0.7482903362731689,
+        "tertile": "end",
+        "chapter_index": 96,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "With her chin tilted up, she crossed the village center to sit with a young male on a blanket in the shade of a huge oak.",
+        "max_topic_prob": 0.531667947769165,
+        "normalized_position": 0.7775314813941423,
+        "tertile": "end",
+        "chapter_index": 102,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Carefully lifting out the bed of soft cotton material the cross had nestled upon, she found a card of heavy, expensive stock beneath it.",
+        "max_topic_prob": 0.47900745272636414,
+        "normalized_position": 0.4166391548365797,
+        "tertile": "middle",
+        "chapter_index": 45,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Her father had left a neatly folded tarp to protect the car from Bella’s things.",
+        "max_topic_prob": 0.4184662401676178,
+        "normalized_position": 0.20822525114370607,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She lifted the massive blanket he’d gotten her which he called her coat and threw it on.",
+        "max_topic_prob": 0.7832673192024231,
+        "normalized_position": 0.8479863868406126,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She snuggled farther into the blankets and sighed.",
+        "max_topic_prob": 0.7081002593040466,
+        "normalized_position": 0.6435053885422575,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She wrapped her coat around her.",
+        "max_topic_prob": 0.6707015037536621,
+        "normalized_position": 0.19455473624503686,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She watched the snow fall in thick blankets.",
+        "max_topic_prob": 0.6227571964263916,
+        "normalized_position": 0.33238797504254114,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Lily refolded the cloth on her mate’s forehead. “",
+        "max_topic_prob": 0.5987504720687866,
+        "normalized_position": 0.9503686897334089,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She put on the lightest robe she had over her naked body and waddled to the living room.",
+        "max_topic_prob": 0.5930424928665161,
+        "normalized_position": 0.5527509926262053,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 44
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.005089058524173028,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.002277255906632508,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0017954933117874136,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0019500780031201249,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0036434977578475337,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0029462312791554137,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.001530221882172915,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0018488560203374163,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0002212878955521133,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.00036653532484193165,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0002847110183164088,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00029886431560071725,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.000154273372415921,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0002016942315449778,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 62
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "8.1",
+    "taxonomy_secondary_name": "Domestic Spaces & Routines",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

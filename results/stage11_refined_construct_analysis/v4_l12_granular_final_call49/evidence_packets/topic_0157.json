@@ -1,0 +1,690 @@
+{
+  "topic_id": 157,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "samantha",
+        "samara",
+        "sammi",
+        "good",
+        "optimism",
+        "jonathan",
+        "name",
+        "didn"
+      ],
+      "KeyBERT": [
+        "ms",
+        "begged",
+        "willing",
+        "deliberately",
+        "sharply",
+        "confessed",
+        "surely",
+        "ought",
+        "brief",
+        "tense"
+      ],
+      "POS": [
+        "dislike",
+        "worries",
+        "enthusiasm",
+        "embarrassing",
+        "desperation",
+        "handful",
+        "gritted",
+        "issue",
+        "ability",
+        "advantage"
+      ],
+      "MMR": [
+        "dislike",
+        "dump",
+        "worries",
+        "drawled",
+        "bo",
+        "confessed",
+        "enthusiasm",
+        "pouring",
+        "gritted",
+        "cleaned"
+      ]
+    },
+    "stage08_snippets": [
+      "and you’ll get it, i swear,” [person].",
+      "if [person] sees me like this, i'll die.\"",
+      "and i might be young but i guess that just makes me lucky… i do love him and whether i have your help or not, i have to save him from himself… i know [person], i know what he’ll do, now that he thinks he has lost me.”"
+    ],
+    "label_public": "Swearing to Save Him From Himself"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sam.",
+        "max_topic_prob": 0.8461495637893677,
+        "normalized_position": 0.6843363889996015,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 815
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What else had Sam witnessed?",
+        "max_topic_prob": 0.8246867060661316,
+        "normalized_position": 0.2538860103626943,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1262
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sam?",
+        "max_topic_prob": 0.8055578470230103,
+        "normalized_position": 0.6416899163013152,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 601
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sam!”",
+        "max_topic_prob": 0.7877917289733887,
+        "normalized_position": 0.5003985651654046,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2499
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sam!”",
+        "max_topic_prob": 0.7877917289733887,
+        "normalized_position": 0.667198086887206,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 729
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Sam, uh, Sam knows him.",
+        "max_topic_prob": 0.7877119779586792,
+        "normalized_position": 0.6267437225986449,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 526
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "This one’s for you, Steve.",
+        "max_topic_prob": 0.4266129434108734,
+        "normalized_position": 0.0035035035035035035,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sam.",
+        "max_topic_prob": 0.8461495637893677,
+        "normalized_position": 0.7271135567783892,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sam noticed stuff like that.",
+        "max_topic_prob": 0.8004990220069885,
+        "normalized_position": 0.02888944472236118,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sam knew then. “",
+        "max_topic_prob": 0.744029700756073,
+        "normalized_position": 0.9681090545272636,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 507
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Like Sam.",
+        "max_topic_prob": 0.7325793504714966,
+        "normalized_position": 0.022886443221610805,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sam couldn’t understand it, and that bothered him.",
+        "max_topic_prob": 0.732096254825592,
+        "normalized_position": 0.4374687343671836,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sam was pretty softhearted.",
+        "max_topic_prob": 0.7199017405509949,
+        "normalized_position": 0.26075537768884444,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry, Sam!”",
+        "max_topic_prob": 0.7652373909950256,
+        "normalized_position": 0.38370409372120573,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Sam, I’m so sorry.”",
+        "max_topic_prob": 0.7424790263175964,
+        "normalized_position": 0.3809398446755298,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Well, of course, Samantha.",
+        "max_topic_prob": 0.7142096161842346,
+        "normalized_position": 0.5974726865868106,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Samantha.”",
+        "max_topic_prob": 0.7072016000747681,
+        "normalized_position": 0.35540344872976176,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Samantha.”",
+        "max_topic_prob": 0.7072016000747681,
+        "normalized_position": 0.42450967487165986,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Samantha.”",
+        "max_topic_prob": 0.7072016000747681,
+        "normalized_position": 0.8624457022508885,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "said Sam. “",
+        "max_topic_prob": 0.8542037606239319,
+        "normalized_position": 0.145610484725836,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "What did you do with Sam?” “",
+        "max_topic_prob": 0.8352131843566895,
+        "normalized_position": 0.11544762455430278,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Sam.”",
+        "max_topic_prob": 0.8335455656051636,
+        "normalized_position": 0.04905078539076804,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Well, Sam.",
+        "max_topic_prob": 0.8327182531356812,
+        "normalized_position": 0.7209212681892647,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You know, Sam?",
+        "max_topic_prob": 0.8191149234771729,
+        "normalized_position": 0.6704249783174328,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You know, Sam?",
+        "max_topic_prob": 0.8191146850585938,
+        "normalized_position": 0.6443095306928784,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 490
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I wanted Karl.",
+        "max_topic_prob": 0.44065117835998535,
+        "normalized_position": 0.6210008203445447,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 742
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I have got to tell you that Karl and I had a good laugh about that.",
+        "max_topic_prob": 0.42722710967063904,
+        "normalized_position": 0.5537325676784249,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 660
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Karl and I, more him than me, have been devising strategy every day to get you intrigued with him.",
+        "max_topic_prob": 0.39747893810272217,
+        "normalized_position": 0.5283018867924528,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 629
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I hadn’t really been talking to Steven too much all day.",
+        "max_topic_prob": 0.5015748739242554,
+        "normalized_position": 0.8785989907984565,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1417
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "So I said, “Steven?",
+        "max_topic_prob": 0.5001305937767029,
+        "normalized_position": 0.8864648263579697,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1470
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Steven and I hooked up.",
+        "max_topic_prob": 0.4701712131500244,
+        "normalized_position": 0.8880973582665479,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1481
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Today, Steven did the cutest thing.",
+        "max_topic_prob": 0.4562489986419678,
+        "normalized_position": 0.9094686850697536,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1625
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I felt like such a dork, but in a good way, because Steven and I started to tango.",
+        "max_topic_prob": 0.4406927525997162,
+        "normalized_position": 0.896260017809439,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1536
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I cheated on Steven, and I feel so horrible.",
+        "max_topic_prob": 0.43987658619880676,
+        "normalized_position": 0.8769664588898783,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 1406
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "How did you all know what happened with Samantha?” “",
+        "max_topic_prob": 0.6978456974029541,
+        "normalized_position": 0.9387550200803213,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Why was she bringing up Samantha?",
+        "max_topic_prob": 0.696583092212677,
+        "normalized_position": 0.9317269076305221,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I was supposed to have seen Samantha that night.",
+        "max_topic_prob": 0.631005048751831,
+        "normalized_position": 0.5218373493975904,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I know something happened to him that completely changed him, just like the incident with Samantha for you.” “",
+        "max_topic_prob": 0.6260367035865784,
+        "normalized_position": 0.5235943775100401,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He felt it was his fault what happened to Samantha; that’s why he was trying so hard for me not to be with anyone.",
+        "max_topic_prob": 0.6206144094467163,
+        "normalized_position": 0.9362449799196787,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It was all because of our cousin, Samantha.",
+        "max_topic_prob": 0.604729175567627,
+        "normalized_position": 0.947289156626506,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Sam was there for me.",
+        "max_topic_prob": 0.8132396340370178,
+        "normalized_position": 0.2655148897476699,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Sam. “",
+        "max_topic_prob": 0.8017703294754028,
+        "normalized_position": 0.503068879290748,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "It was Sam, wasn’t it?",
+        "max_topic_prob": 0.7944138050079346,
+        "normalized_position": 0.1311661741304842,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 531
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Had Sam seen that?",
+        "max_topic_prob": 0.7808188199996948,
+        "normalized_position": 0.31041145714935214,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Sam, please.”",
+        "max_topic_prob": 0.7572002410888672,
+        "normalized_position": 0.51034325983178,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 512
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Sam could think whatever he wanted. “",
+        "max_topic_prob": 0.7461827397346497,
+        "normalized_position": 0.5152307342577859,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 555
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.002028397565922921,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.005026273703449852,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0020861272537624795,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.02908514013749339,
+        "n_sentences": 220
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0024650780608052587,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.005048592704783542,
+        "n_sentences": 40
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.02478017585931255,
+        "n_sentences": 124
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.10538051381483277,
+        "n_sentences": 1087
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00016801075268817206,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 46
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

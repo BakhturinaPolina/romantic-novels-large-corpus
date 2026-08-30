@@ -1,0 +1,954 @@
+{
+  "topic_id": 372,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "strength",
+        "stronger",
+        "strong",
+        "weak",
+        "limitations",
+        "weaker",
+        "than",
+        "weakling",
+        "need",
+        "re"
+      ],
+      "KeyBERT": [
+        "crushed",
+        "gain",
+        "uh",
+        "tied"
+      ],
+      "POS": [
+        "feeding",
+        "reflection",
+        "emotions"
+      ],
+      "MMR": [
+        "feeding",
+        "crushed",
+        "gain",
+        "proved",
+        "reflection",
+        "destroyed",
+        "tied",
+        "emotions",
+        "admit",
+        "hated"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll need to keep up your strength if you’re going to wrestle with that computer.”",
+      "you’ll need your strength, cassia.",
+      "you’ll need your strength."
+    ],
+    "label_public": "Told to Keep Up Strength"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He hadn’t the strength.",
+        "max_topic_prob": 0.6099079847335815,
+        "normalized_position": 0.7880952380952381,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "No, he was not yet strong enough to embark on whatever mission this was that he’d assigned himself.",
+        "max_topic_prob": 0.5027610063552856,
+        "normalized_position": 0.606728778467909,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1020
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "With hard work and perseverance, I made myself the man you see before you.",
+        "max_topic_prob": 0.46992766857147217,
+        "normalized_position": 0.1877846790890269,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1790
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Whoever is on the other side of this door is uncommonly strong.",
+        "max_topic_prob": 0.4223099946975708,
+        "normalized_position": 0.18188405797101448,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1733
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "But that was another thing about the violently deranged: they could have the strength of ten men.",
+        "max_topic_prob": 0.4176757335662842,
+        "normalized_position": 0.9803312629399586,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 2161
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "You’re generally made of much sturdier stuff than that,” Hurst was saying. “",
+        "max_topic_prob": 0.3785237967967987,
+        "normalized_position": 0.0453416149068323,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 414
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Even in the lower ranks, the invisible masses, you needed the D i p l o m a c y | 17 perfect background to push ahead.",
+        "max_topic_prob": 0.3492226302623749,
+        "normalized_position": 0.058898151504168175,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She must be strong on her own.",
+        "max_topic_prob": 0.6251779794692993,
+        "normalized_position": 0.5342131529333481,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It should be strong enough.",
+        "max_topic_prob": 0.5062747001647949,
+        "normalized_position": 0.34856382388821117,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He destroyed weakness.",
+        "max_topic_prob": 0.5043116807937622,
+        "normalized_position": 0.5769102805811246,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Yet also, being a part of it, he felt expansive, strong. “",
+        "max_topic_prob": 0.5024920105934143,
+        "normalized_position": 0.3154042364422757,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A slim woman’s hand, but definitely strong and able.",
+        "max_topic_prob": 0.49663108587265015,
+        "normalized_position": 0.40734168792281245,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was impossible to defeat, because every time he was thrown down, he rose up even stronger than before.",
+        "max_topic_prob": 0.4927503168582916,
+        "normalized_position": 0.5649329045136964,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m strong, but no one’s that strong.” “",
+        "max_topic_prob": 0.8175914287567139,
+        "normalized_position": 0.80975227651033,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m normally stronger.” “",
+        "max_topic_prob": 0.7528791427612305,
+        "normalized_position": 0.6120630568882797,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Even the strong have weak moments, and you’ve had to be stronger than most.” “",
+        "max_topic_prob": 0.7453739047050476,
+        "normalized_position": 0.6121609713110742,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Be strong!",
+        "max_topic_prob": 0.7096960544586182,
+        "normalized_position": 0.00988935670224224,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Strong.",
+        "max_topic_prob": 0.6716453433036804,
+        "normalized_position": 0.794183883286008,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "If one of us has to be weak and dizzy, it has to be me, not you.” “",
+        "max_topic_prob": 0.6144137382507324,
+        "normalized_position": 0.8717321061392344,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I’m stronger than I used to be.” “",
+        "max_topic_prob": 0.7557550668716431,
+        "normalized_position": 0.2891924329885123,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 399
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "A big, strong man like you?",
+        "max_topic_prob": 0.6585332155227661,
+        "normalized_position": 0.8256272503857804,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "She summoned all the strength she could gather from her rapidly weakening body.",
+        "max_topic_prob": 0.583323061466217,
+        "normalized_position": 0.621306509687375,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It’s far too strong for you, baby.”",
+        "max_topic_prob": 0.5572526454925537,
+        "normalized_position": 0.34480196605132307,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "All that toughness?",
+        "max_topic_prob": 0.5453172922134399,
+        "normalized_position": 0.2761044750528662,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I’d say you’ve overcome the gravitational force.”",
+        "max_topic_prob": 0.5314990282058716,
+        "normalized_position": 0.21826598845516373,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You’ll need your strength.”",
+        "max_topic_prob": 0.824586033821106,
+        "normalized_position": 0.17408852414906498,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m stronger than you think.",
+        "max_topic_prob": 0.7828989028930664,
+        "normalized_position": 0.28534911879456476,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "If you were going to use your strength against me, you wouldn’t allow me to do this.”",
+        "max_topic_prob": 0.7279213666915894,
+        "normalized_position": 0.48890084757164,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She was strong.",
+        "max_topic_prob": 0.6343463659286499,
+        "normalized_position": 0.6734831158347908,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Stronger.",
+        "max_topic_prob": 0.621895968914032,
+        "normalized_position": 0.6411946724068344,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "His strength.",
+        "max_topic_prob": 0.6107390522956848,
+        "normalized_position": 0.3183102381272703,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Then be strong for him.”",
+        "max_topic_prob": 0.6521400213241577,
+        "normalized_position": 0.3888888888888889,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Rey needs you to be strong now, when he can’t be.",
+        "max_topic_prob": 0.6404149532318115,
+        "normalized_position": 0.3871951219512195,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Your faith is stronger than mine, I fear.”",
+        "max_topic_prob": 0.6073943376541138,
+        "normalized_position": 0.6236449864498645,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m hardly formidable.",
+        "max_topic_prob": 0.5756714344024658,
+        "normalized_position": 0.2611788617886179,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Strong, yet caring.",
+        "max_topic_prob": 0.5224571824073792,
+        "normalized_position": 0.5643631436314364,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "All our combined power could do was make him more comfortable, not heal such dreadful damage.”",
+        "max_topic_prob": 0.4249252676963806,
+        "normalized_position": 0.7706639566395664,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "My body was so weak, yet every time I pushed myself and completed the workout, I felt my strength increasing.",
+        "max_topic_prob": 0.6384004354476929,
+        "normalized_position": 0.3760279373662273,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 435
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The stronger and healthier I am, the better my chances are of getting a good report next time.” “",
+        "max_topic_prob": 0.6255959868431091,
+        "normalized_position": 0.35766587811197476,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You have to be a strong woman to go through so much and still be so positive.",
+        "max_topic_prob": 0.6140704154968262,
+        "normalized_position": 0.14081333783936015,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I thought the weight was too heavy or that he was making me do too many reps.”",
+        "max_topic_prob": 0.5456499457359314,
+        "normalized_position": 0.37580263602568437,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You’ll see yourself building muscle faster.”",
+        "max_topic_prob": 0.5183760523796082,
+        "normalized_position": 0.43652134730201647,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You mean weight lifting?”",
+        "max_topic_prob": 0.5092506408691406,
+        "normalized_position": 0.22225977244564604,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 423
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It says you’re strong.",
+        "max_topic_prob": 0.7867065668106079,
+        "normalized_position": 0.9592281356987239,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "To know I’m strong.",
+        "max_topic_prob": 0.748867928981781,
+        "normalized_position": 0.3009648303765951,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Strong enough to endure.” “",
+        "max_topic_prob": 0.7043564319610596,
+        "normalized_position": 0.9593837535014006,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Strong.",
+        "max_topic_prob": 0.6716451644897461,
+        "normalized_position": 0.5989729225023342,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Strong.",
+        "max_topic_prob": 0.6716451644897461,
+        "normalized_position": 0.6450357920946156,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I tried,” I say, trying to sound strong.",
+        "max_topic_prob": 0.6291460990905762,
+        "normalized_position": 0.5043572984749455,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Still, I did not have the strength in me, not then, to say.",
+        "max_topic_prob": 0.7108536958694458,
+        "normalized_position": 0.30134969325153377,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I didn’t want to seem weak, because that would make me feel weak.",
+        "max_topic_prob": 0.7064570784568787,
+        "normalized_position": 0.8368098159509203,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Mercifully strong.",
+        "max_topic_prob": 0.6205288767814636,
+        "normalized_position": 0.7271165644171779,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I was not strong, but I was fast and my aim was good, and I was safe.",
+        "max_topic_prob": 0.5995736122131348,
+        "normalized_position": 0.44539877300613495,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I was gathering myself now, feeling stronger.",
+        "max_topic_prob": 0.5979354977607727,
+        "normalized_position": 0.6758282208588957,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Stronger, and I was glad of it.",
+        "max_topic_prob": 0.5943150520324707,
+        "normalized_position": 0.7214723926380369,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "A good man doesn’t overpower them and force them to his whims.",
+        "max_topic_prob": 0.3651112914085388,
+        "normalized_position": 0.9315068493150684,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Good Lord, give him strength.",
+        "max_topic_prob": 0.632912278175354,
+        "normalized_position": 0.18317099567099568,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 409
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "You need to have a little faith in your abilities.",
+        "max_topic_prob": 0.5370752215385437,
+        "normalized_position": 0.5148809523809523,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "If he had any hope of maintaining control over the situation, he was going to need some liquid strength. * * *",
+        "max_topic_prob": 0.520309329032898,
+        "normalized_position": 0.08288239538239538,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "The man radiated strength and confidence.",
+        "max_topic_prob": 0.5120247602462769,
+        "normalized_position": 0.2616341991341991,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It was so strong and steady, so sure of itself.",
+        "max_topic_prob": 0.4316610097885132,
+        "normalized_position": 0.494498556998557,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 602
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Best to stick with one’s strength, don’t you think, Farleigh?",
+        "max_topic_prob": 0.6283375024795532,
+        "normalized_position": 0.655820194565582,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You’d still be the one with all the power.” “",
+        "max_topic_prob": 0.4978067874908447,
+        "normalized_position": 0.4897750511247444,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 403
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "But I do feel my power getting stronger every time I use it.”",
+        "max_topic_prob": 0.5892502069473267,
+        "normalized_position": 0.6155630912011423,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I will stand by you and give you what is within my power to support you.",
+        "max_topic_prob": 0.513405978679657,
+        "normalized_position": 0.9427092628948778,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 506
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My strength .",
+        "max_topic_prob": 0.6741585731506348,
+        "normalized_position": 0.7555375159457265,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Strong in a way he’d never felt before. “",
+        "max_topic_prob": 0.6637108325958252,
+        "normalized_position": 0.4113417604082106,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m powerful .’",
+        "max_topic_prob": 0.636940062046051,
+        "normalized_position": 0.7622637133248289,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I was going to say weaker, but hell if she’s not stronger than all of us.",
+        "max_topic_prob": 0.635772705078125,
+        "normalized_position": 0.876377130928911,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "And strong.",
+        "max_topic_prob": 0.5722185969352722,
+        "normalized_position": 0.877652789052534,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Ellaine thinks I am powerful.",
+        "max_topic_prob": 0.5430811643600464,
+        "normalized_position": 0.6639220688855387,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 335
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0027195467422096316,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.00644361833952912,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0037488284910965324,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.002214710339200373,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0032406157169862274,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0026857654431512983,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.003060183611016661,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.002661409561360276,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0005319148936170213,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0003594536304816679,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00034328870580157915,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0004534324839031468,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0007455838495067676,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0007359125315391085,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0003386386725364037,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00018191740949608878,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

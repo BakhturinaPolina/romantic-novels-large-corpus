@@ -1,0 +1,713 @@
+{
+  "topic_id": 323,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "georgiana",
+        "lady",
+        "matlock",
+        "netherfield",
+        "helena",
+        "planned",
+        "exclaimed",
+        "redmayne",
+        "carradice"
+      ],
+      "KeyBERT": [
+        "sir",
+        "politely",
+        "speaking",
+        "praying",
+        "distress",
+        "motioned",
+        "anxious",
+        "insisted",
+        "amusement",
+        "admit"
+      ],
+      "POS": [
+        "worries",
+        "distress",
+        "anxious",
+        "stunning",
+        "realization",
+        "decent",
+        "unsure",
+        "curved",
+        "amusement",
+        "various"
+      ],
+      "MMR": [
+        "distress",
+        "politely",
+        "anxious",
+        "assure",
+        "praying",
+        "insides",
+        "softened",
+        "amusement",
+        "various",
+        "sensed"
+      ]
+    },
+    "stage08_snippets": [
+      "i am not [person], no matter what you’ve told the director.",
+      "lady [person],” he said politely, “lady [person], lady [person].”",
+      "i’ll keep praying for [person]."
+    ],
+    "label_public": "Polite Address Under Distress"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth?’",
+        "max_topic_prob": 0.7862274646759033,
+        "normalized_position": 0.04659763313609468,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth said, as she washed her hands. ‘",
+        "max_topic_prob": 0.7264081239700317,
+        "normalized_position": 0.04228303747534517,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Right behind them in walked Elizabeth, and I understood what had caused their reaction.",
+        "max_topic_prob": 0.720903754234314,
+        "normalized_position": 0.03242110453648915,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She has to be the centre of attention, and she couldn’t stand the threat that Elizabeth posed. ‘",
+        "max_topic_prob": 0.7147629857063293,
+        "normalized_position": 0.04869329388560158,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Apparently he remains in touch with Elizabeth.",
+        "max_topic_prob": 0.7043488025665283,
+        "normalized_position": 0.055226824457593686,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth saw it first.",
+        "max_topic_prob": 0.703276515007019,
+        "normalized_position": 0.04314595660749507,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She had her heart set on being a viscountess and I would have made sure she did not have to wait too long to be a duchess.” “",
+        "max_topic_prob": 0.5742183327674866,
+        "normalized_position": 0.8467959419545397,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Charles lusts after Lady Penelope?”",
+        "max_topic_prob": 0.5686410665512085,
+        "normalized_position": 0.28072428406318223,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She probably thinks it enhances her status—that of a future viscountess.” “",
+        "max_topic_prob": 0.5422140955924988,
+        "normalized_position": 0.23821754205727494,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "So that you may more openly pursue the fair Lady Penelope?”",
+        "max_topic_prob": 0.5305821895599365,
+        "normalized_position": 0.3094901759342494,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She would be an excellent hostess, which was also important now that he was a viscount.",
+        "max_topic_prob": 0.5025481581687927,
+        "normalized_position": 0.039681520482856045,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Penelope suddenly wondered if the madam was really married, and if so, where was her husband?",
+        "max_topic_prob": 0.4990153908729553,
+        "normalized_position": 0.060228586105046875,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He looked at Elizabeth. “",
+        "max_topic_prob": 0.8639295697212219,
+        "normalized_position": 0.7451612903225806,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth asked. “",
+        "max_topic_prob": 0.8363790512084961,
+        "normalized_position": 0.08093841642228738,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He looked over at Elizabeth.",
+        "max_topic_prob": 0.831244707107544,
+        "normalized_position": 0.8542521994134897,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth insisted. “",
+        "max_topic_prob": 0.8246272802352905,
+        "normalized_position": 0.1596774193548387,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "As much as I hate to admit it, Elizabeth had a good point.",
+        "max_topic_prob": 0.7788263559341431,
+        "normalized_position": 0.12697947214076247,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth sighed. “",
+        "max_topic_prob": 0.7782466411590576,
+        "normalized_position": 0.06158357771260997,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Then…then Aunt Elizabeth showed up.\"",
+        "max_topic_prob": 0.737284779548645,
+        "normalized_position": 0.29212026956972525,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Elizabeth was his birth mother's sister-in-law by a previous marriage but had always doted on him. \"",
+        "max_topic_prob": 0.6335618495941162,
+        "normalized_position": 0.16692586832555728,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Theresa suggested.",
+        "max_topic_prob": 0.585162878036499,
+        "normalized_position": 0.21241575946086055,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Looked like Theresa had redecorated again.",
+        "max_topic_prob": 0.5679675340652466,
+        "normalized_position": 0.13867288750648005,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It was difficult sometimes to keep up the everything-is-fine façade around people like Elizabeth and Theresa.",
+        "max_topic_prob": 0.5494564175605774,
+        "normalized_position": 0.16666666666666666,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "No doubt Theresa had waited up for him.",
+        "max_topic_prob": 0.5462090969085693,
+        "normalized_position": 0.13621047174701917,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Mrs Smith actually simpered as she spoke and then went even further, blighting Geraldine’s day completely. “",
+        "max_topic_prob": 0.566031277179718,
+        "normalized_position": 0.787618699780862,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Which was a very grudging admission of defeat, thought Geraldine, but who cared?",
+        "max_topic_prob": 0.5002450942993164,
+        "normalized_position": 0.05807158509861213,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Now she could talk to her acquaintances of “The Honourable Sebastian Deverills – my daughter-in-law, you know, and her husband”, but need not face the distressing reality of their presence.",
+        "max_topic_prob": 0.49634841084480286,
+        "normalized_position": 0.9746165084002922,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Geraldine stopped, undecided, then saw the wisdom of the older woman’s words.",
+        "max_topic_prob": 0.4761456847190857,
+        "normalized_position": 0.5518626734842951,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She was the colonial he labelled her as, and knew well the truth of his words. “",
+        "max_topic_prob": 0.4755175709724426,
+        "normalized_position": 0.0829072315558802,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You will give it to Geraldine on the day I said and not before?”",
+        "max_topic_prob": 0.4732751250267029,
+        "normalized_position": 0.9755295836376917,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Elizabeth, I know you did this for your sister.",
+        "max_topic_prob": 0.6832306981086731,
+        "normalized_position": 0.6753264055422329,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Elizabeth, it seems I’ve misjudged you, and it took someone other than my own family to show me how badly I had.” “",
+        "max_topic_prob": 0.6709160208702087,
+        "normalized_position": 0.9062083666400214,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "That, Elizabeth, makes you a stronger person than anyone I have ever known.",
+        "max_topic_prob": 0.6116807460784912,
+        "normalized_position": 0.9122035704769518,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Lizzie,” he warned. “",
+        "max_topic_prob": 0.5791453123092651,
+        "normalized_position": 0.21422861710631494,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Lizzie,” he warned.",
+        "max_topic_prob": 0.5750000476837158,
+        "normalized_position": 0.2753796962430056,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Lizzie,” he warned.",
+        "max_topic_prob": 0.5750000476837158,
+        "normalized_position": 0.3790301092459366,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "What are you going to do when Elizabeth and Rose come of age?” “",
+        "max_topic_prob": 0.6664741039276123,
+        "normalized_position": 0.9108785856034638,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Reverend Gilmore had sorely missed Harriet while she’d been in England.",
+        "max_topic_prob": 0.5419245958328247,
+        "normalized_position": 0.9960310301280895,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Susannah asked after Millie was once again settled. “",
+        "max_topic_prob": 0.5032960176467896,
+        "normalized_position": 0.8560346382825185,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She even went so far as to convince this Mr. Gilbert to spring a surprise proposal on me in the middle of a society ball.",
+        "max_topic_prob": 0.4908047914505005,
+        "normalized_position": 0.30813638823741657,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The mere sight of Harriet took Lucetta completely aback, especially since her very good friend—having only recently discovered she was the long-lost daughter of a duke, of all things—was supposed to be in London, becoming better acquainted with a family she’d never known she had.",
+        "max_topic_prob": 0.4815703332424164,
+        "normalized_position": 0.9289193577485116,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "While the claim had been made that Abigail had been so generous simply because of her friendship with Reverend Thomas Gilmore, a dear man who’d saved Lucetta from the streets when she’d been little more than a child, it was now becoming clear that the true reason behind Abigail’s generosity might have had more to do with her seeking redemption for a past wrong than for fulfilling any favors requested.",
+        "max_topic_prob": 0.45704925060272217,
+        "normalized_position": 0.3088580191232185,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And I mention it now,” Lord Richard said at last, “because she has asked to see me.”",
+        "max_topic_prob": 0.6025564670562744,
+        "normalized_position": 0.11346863468634687,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Every Elizabeth needs a Walsingham to effect the tasks beneath her dignity.",
+        "max_topic_prob": 0.5815373659133911,
+        "normalized_position": 0.7108592514496573,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Considering what he said about your wife—” Sir James began, and stopped dead as Richard and Philip turned on him together. “",
+        "max_topic_prob": 0.5573359727859497,
+        "normalized_position": 0.8894306800210859,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "That got Lord Richard’s attention. “",
+        "max_topic_prob": 0.5245428085327148,
+        "normalized_position": 0.143384290985767,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Richard would have said lady of pleasure if he had said anything. “",
+        "max_topic_prob": 0.5141808390617371,
+        "normalized_position": 0.4397733263046916,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And she sent the letter to Philip.”",
+        "max_topic_prob": 0.5080780982971191,
+        "normalized_position": 0.11702688455455983,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 147
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.003116073747078681,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0025424862839555735,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0024047354790972995,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.002792181890706023,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0027649769585253456,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.004219409282700422,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0013031013812874641,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.013956221536653445,
+        "n_sentences": 95
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

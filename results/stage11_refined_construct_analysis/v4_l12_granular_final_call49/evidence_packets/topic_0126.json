@@ -1,0 +1,943 @@
+{
+  "topic_id": 126,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "cheek",
+        "chin",
+        "lifted",
+        "cupped",
+        "stroked",
+        "caressed",
+        "thumb",
+        "touched",
+        "hand",
+        "face"
+      ],
+      "KeyBERT": [
+        "caressed",
+        "patted",
+        "stroking",
+        "tugged",
+        "gesture",
+        "blinked",
+        "grasp",
+        "pinched",
+        "propped",
+        "reaction"
+      ],
+      "POS": [
+        "backs",
+        "surroundings",
+        "instructions",
+        "annoyance",
+        "fingertips",
+        "leapt",
+        "gesture",
+        "reaction"
+      ],
+      "MMR": [
+        "caressed",
+        "cupped",
+        "swiped",
+        "cradled",
+        "hitched",
+        "instructions",
+        "stroking",
+        "fingertips",
+        "gesture",
+        "pinched"
+      ]
+    },
+    "stage08_snippets": [
+      "she lifted her chin. “",
+      "he lifted a hand and stroked a finger down her cheek. ‘",
+      "she lifted her hand and caressed his cheek. \""
+    ],
+    "label_public": "Fingertips Stroking Her Cheek"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He leaned forward and very gently touched her cheek. “",
+        "max_topic_prob": 0.8762366771697998,
+        "normalized_position": 0.49458153805979893,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He pressed his cheek against her forearm. “",
+        "max_topic_prob": 0.8685876131057739,
+        "normalized_position": 0.9838098968533752,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He reached out now, stroked his fingers down her cheek to tip her face to his.",
+        "max_topic_prob": 0.8228529691696167,
+        "normalized_position": 0.2872437655046351,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She leaned forward and brushed her lips to his cheek. “",
+        "max_topic_prob": 0.8118124008178711,
+        "normalized_position": 0.8322235278757018,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 457
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He kissed her chin. “",
+        "max_topic_prob": 0.8114780187606812,
+        "normalized_position": 0.6837707272489881,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He caught her back to him, spreading his fingers over her uninjured cheek. “",
+        "max_topic_prob": 0.8031705021858215,
+        "normalized_position": 0.8743961352657005,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The tip of his thumb slid over her chin. “",
+        "max_topic_prob": 0.8417983055114746,
+        "normalized_position": 0.8184213993938595,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 596
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His long fingers cradled her cheeks as he gave her a questioning stare. “",
+        "max_topic_prob": 0.8081498146057129,
+        "normalized_position": 0.5170641718276453,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His face lowered over hers, and his fingertips settled on her jaw, gently adjusting the angle of her head.",
+        "max_topic_prob": 0.7932203412055969,
+        "normalized_position": 0.5142970088285677,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His fingers slid over the hot surface of her cheek, and he gently pressed her head to his shoulder. “",
+        "max_topic_prob": 0.7906038761138916,
+        "normalized_position": 0.5952035841349321,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 800
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He bent his head, nuzzling his jaw against the pale silk of her palm. “",
+        "max_topic_prob": 0.78700852394104,
+        "normalized_position": 0.6215575174594808,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1000
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His mouth touched her burning forehead and followed the wing of her brow. “",
+        "max_topic_prob": 0.7853286266326904,
+        "normalized_position": 0.8272499670575834,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 663
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Her hands cupped his chin.",
+        "max_topic_prob": 0.8509440422058105,
+        "normalized_position": 0.7440625,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "He reached out and brushed the back of his fingers along her jaw.",
+        "max_topic_prob": 0.8364880084991455,
+        "normalized_position": 0.1575,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Cupping her chin, he tilted her face up.",
+        "max_topic_prob": 0.8353419303894043,
+        "normalized_position": 0.166875,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Cupping her chin, he leaned forward and brushed his lips against hers.",
+        "max_topic_prob": 0.811577558517456,
+        "normalized_position": 0.7409375,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "He kissed her cheek and the whiskers from his beard tickled her face. “",
+        "max_topic_prob": 0.805374026298523,
+        "normalized_position": 0.9759375,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "He leaned down and brushed his lips against hers. “",
+        "max_topic_prob": 0.797160804271698,
+        "normalized_position": 0.9959375,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He brushes something invisible off her shirt sleeve and she slaps his hand away, which makes him smile, and he looks me in the eye for a split second.",
+        "max_topic_prob": 0.6338484287261963,
+        "normalized_position": 0.42348966613672495,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Perry folds his fingers and puts his chin on top. “",
+        "max_topic_prob": 0.6321921348571777,
+        "normalized_position": 0.40252384737678853,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He pulls away and wipes his face. “",
+        "max_topic_prob": 0.6177414655685425,
+        "normalized_position": 0.9134538950715422,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He rubs his eye socket with the heel of his hand and then scrubs his whole face with his fingers.",
+        "max_topic_prob": 0.5901559591293335,
+        "normalized_position": 0.5993640699523053,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 396
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Perry shifts back another step, and his forehead presses against mine. “",
+        "max_topic_prob": 0.5831027030944824,
+        "normalized_position": 0.21174483306836248,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 597
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Perry puts the palm of his hand to his eye socket, and a silent guffaw animates him. “",
+        "max_topic_prob": 0.5813309550285339,
+        "normalized_position": 0.20528616852146264,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 532
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He felt her hand on his cheek.",
+        "max_topic_prob": 0.865416407585144,
+        "normalized_position": 0.16872543514879282,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He lifted her hand and kissed her palm. “",
+        "max_topic_prob": 0.8098776340484619,
+        "normalized_position": 0.9267265581134194,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Standing, she stepped close and reached for his face, cupping his chin in her hand as she stared again into his eyes. “",
+        "max_topic_prob": 0.7910060286521912,
+        "normalized_position": 0.4430095451993262,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She held his cheeks apart.",
+        "max_topic_prob": 0.7746908664703369,
+        "normalized_position": 0.19371139809096014,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Owen put a finger beneath her chin, gently lifting her face.",
+        "max_topic_prob": 0.7737233638763428,
+        "normalized_position": 0.8469960696238068,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Her touch was surprisingly gentle, her fingers cool against his heated forehead. “",
+        "max_topic_prob": 0.7597365975379944,
+        "normalized_position": 0.3571027512633352,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He leaned down, stroking the tears from her cheeks with the pads of his thumbs. “",
+        "max_topic_prob": 0.7730841636657715,
+        "normalized_position": 0.21946795646916567,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "His stare finally came to rest on Holly and he reached out his thumb, stroking her delicate jawbone. “",
+        "max_topic_prob": 0.7626914978027344,
+        "normalized_position": 0.8373639661426844,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Beau looked at her sadly, cupping her face with his huge hand and nodded. “",
+        "max_topic_prob": 0.7030667662620544,
+        "normalized_position": 0.27388149939540507,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He cradled her head, engulfed by the his huge palms and looking deeply into her eyes he answered, “If it pleases you.”",
+        "max_topic_prob": 0.6912579536437988,
+        "normalized_position": 0.7853688029020556,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Yeah,” she responded, slinging her arm around his neck as she moved her mouth to his and he bent down, cupping her round cheek and lifting her slightly off her feet until his mouth met hers, their height difference no longer awkward.",
+        "max_topic_prob": 0.6875523924827576,
+        "normalized_position": 0.5090689238210399,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Beau covered her small hands in his. “",
+        "max_topic_prob": 0.6807667016983032,
+        "normalized_position": 0.26360338573155984,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She lifted her chin haughtily. “",
+        "max_topic_prob": 0.8162165880203247,
+        "normalized_position": 0.9318337912087912,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Her expression softened as she lifted her hands to cradle the sides of his face. “",
+        "max_topic_prob": 0.7943578958511353,
+        "normalized_position": 0.8559409340659341,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "When the scowl deepened, he grinned and took her face in his hands. “",
+        "max_topic_prob": 0.7910392880439758,
+        "normalized_position": 0.5923763736263736,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His voice was rough as he slid his hand up to cup her cheek. “",
+        "max_topic_prob": 0.7814808487892151,
+        "normalized_position": 0.5130494505494505,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He traced his fingers along the edge of her jaw, expression solemn. “",
+        "max_topic_prob": 0.7722225189208984,
+        "normalized_position": 0.8583447802197802,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She inhaled another shaky breath, closing her eyes when his other hand reached up to cup her cheek. “",
+        "max_topic_prob": 0.7680318355560303,
+        "normalized_position": 0.5147664835164835,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She smiled and patted his hand. “",
+        "max_topic_prob": 0.7676804065704346,
+        "normalized_position": 0.6532625189681336,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Leaning closer, Luka gave his cheek a quick stroke with one thumb. “",
+        "max_topic_prob": 0.7280802726745605,
+        "normalized_position": 0.5534901365705615,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "His arms tightened and he rubbed his cheek against the top of her head.",
+        "max_topic_prob": 0.8360104560852051,
+        "normalized_position": 0.8236754966887417,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 421
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He stroked her cheek, rubbed her bottom lip. “",
+        "max_topic_prob": 0.833937406539917,
+        "normalized_position": 0.9711920529801324,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 505
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She tilted her head to the side, sighed and gently cupped his jaw. “",
+        "max_topic_prob": 0.821916937828064,
+        "normalized_position": 0.5428807947019868,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She turned her head and notched it under his chin. “",
+        "max_topic_prob": 0.79947829246521,
+        "normalized_position": 0.8283112582781457,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Squeezing lightly, he tilted her head back, his thumb stroking the skin underneath her jaw.",
+        "max_topic_prob": 0.7991416454315186,
+        "normalized_position": 0.3205298013245033,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "His brows formed a stern vee as he pinched her chin between his finger and thumb. “",
+        "max_topic_prob": 0.7920033931732178,
+        "normalized_position": 0.588907284768212,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He reached out and touched her cheek. “",
+        "max_topic_prob": 0.9041316509246826,
+        "normalized_position": 0.4360377358490566,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "His hand came around and cradled her jaw. “",
+        "max_topic_prob": 0.8370853066444397,
+        "normalized_position": 0.24358490566037735,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She lifted her chin. “",
+        "max_topic_prob": 0.8240106105804443,
+        "normalized_position": 0.1230188679245283,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She looked up reluctantly when he placed a gloved finger beneath her chin and lifted it.",
+        "max_topic_prob": 0.8038920760154724,
+        "normalized_position": 0.10207547169811321,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He leaned down until his forehead touched hers.",
+        "max_topic_prob": 0.7997008562088013,
+        "normalized_position": 0.29962264150943396,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He removed his glove and touched her jaw. “",
+        "max_topic_prob": 0.7888593077659607,
+        "normalized_position": 0.8073584905660377,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She pushes a mittened hand across one cheek, then the other. “",
+        "max_topic_prob": 0.8008903861045837,
+        "normalized_position": 0.577898859186106,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She taps her head. “",
+        "max_topic_prob": 0.7009980082511902,
+        "normalized_position": 0.7590669163970714,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Caro leaned across me and got in the girl’s face. “",
+        "max_topic_prob": 0.5993173122406006,
+        "normalized_position": 0.06095692150519326,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Her lilting accent makes her sound gentle, but she points a fierce finger at the front door. “",
+        "max_topic_prob": 0.5767863988876343,
+        "normalized_position": 0.2911629490890516,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She wrinkles her nose, then turns her back on them.",
+        "max_topic_prob": 0.5664709806442261,
+        "normalized_position": 0.5266473693172143,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 430
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Tory waves an arm over her head.",
+        "max_topic_prob": 0.566321849822998,
+        "normalized_position": 0.9223565469095862,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "She placed her hand on his knee and started to rub it. “",
+        "max_topic_prob": 0.7494755983352661,
+        "normalized_position": 0.6788375558867362,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Now get out of our faces, we’re talking here,” he rudely told her, moving his hand for her to move along.",
+        "max_topic_prob": 0.5965456962585449,
+        "normalized_position": 0.3554396423248882,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Her face winces a little. “",
+        "max_topic_prob": 0.6928820610046387,
+        "normalized_position": 0.5767593859249126,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He taps the side of his head. “",
+        "max_topic_prob": 0.6775691509246826,
+        "normalized_position": 0.3333333333333333,
+        "tertile": "begin",
+        "chapter_index": 29,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Emily lifts her hand and flickers her fingers slightly.",
+        "max_topic_prob": 0.6382825374603271,
+        "normalized_position": 0.8243654050767594,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Quintin lifts her hand and kisses the back of it.",
+        "max_topic_prob": 0.6186902523040771,
+        "normalized_position": 0.7587779297765618,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He sighs, taking my face in his hands. “",
+        "max_topic_prob": 0.6011961102485657,
+        "normalized_position": 0.9967320261437909,
+        "tertile": "end",
+        "chapter_index": 60,
+        "sentence_index": 109
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.006127450980392157,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.010664889185135812,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.007480630510285867,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.007549543881723813,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.005904828065300452,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.006278538812785388,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.007770314763598051,
+        "n_sentences": 59
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.008486562942008486,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00038255547054322876,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0007002801120448179,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.001199657240788346,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0007613247049866769,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0005011275369581559,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 69
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.2",
+    "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+    "taxonomy_secondary_id": "1.7",
+    "taxonomy_secondary_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

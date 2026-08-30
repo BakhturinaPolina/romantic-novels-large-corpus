@@ -1,0 +1,154 @@
+{
+  "topic_id": 351,
+  "label": "Warm Greeting Upon Return",
+  "taxonomy_main_id": "4.2",
+  "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "see",
+      "nice",
+      "good",
+      "glad",
+      "again",
+      "pleasure",
+      "you",
+      "happy",
+      "great",
+      "awfully"
+    ],
+    "KeyBERT": [
+      "greeted",
+      "mister",
+      "madam",
+      "replies",
+      "warmth",
+      "reminds",
+      "reaches"
+    ],
+    "POS": [
+      "lack",
+      "warmth",
+      "crowd"
+    ],
+    "MMR": [
+      "madam",
+      "reminds",
+      "replies",
+      "greeted",
+      "winced",
+      "reaches",
+      "ms",
+      "drifted",
+      "warmth",
+      "crowd"
+    ]
+  },
+  "stage08_snippets": [
+    "thank god you’ve come back—and will you look at me, just in time.”",
+    "it is a pleasure to see you again—so soon, madam. ”",
+    "so i’ll see you there,” he said, feeling upbeat for the first time in a long time. “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.863969264017289,
+      "max_topic_prob": 0.6121410131454468,
+      "sentence": "Thank you for seeing me."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.8275903469804298,
+      "max_topic_prob": 0.598064124584198,
+      "sentence": "I never want to see you again.”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.24360667547124504,
+      "max_topic_prob": 0.5054076313972473,
+      "sentence": "I’ll give it to him when I see him again.” “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8206316302889891,
+      "max_topic_prob": 0.7600431442260742,
+      "sentence": "Are you happy to see me?”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.04548225826118766,
+      "max_topic_prob": 0.7283428907394409,
+      "sentence": "It was good seeing you again, Tuck.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.11827825874893305,
+      "max_topic_prob": 0.6058869957923889,
+      "sentence": "Yes, but I was also relieved you didn’t show up.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.21899768320936472,
+      "max_topic_prob": 0.5247621536254883,
+      "sentence": "I’ll see you as often as I can,” he said, only making matters worse by reminding the children he wouldn’t be seeing them on a normal basis. “"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4422631386416291,
+      "max_topic_prob": 0.3780977725982666,
+      "sentence": "Whatever the reason, it was a pretty nice day."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.570052432630167,
+      "max_topic_prob": 0.3708054721355438,
+      "sentence": "Amber had seen it as a splendid way to say goodbye to the hoards of tourists who crowded Harmony during that season."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2709798406000938,
+      "max_topic_prob": 0.8409274816513062,
+      "sentence": "A pleasure to see you again.’"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.0676277543366151,
+      "max_topic_prob": 0.8385077714920044,
+      "sentence": "I am glad to see you.’"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5652836380684482,
+      "max_topic_prob": 0.8224693536758423,
+      "sentence": "It is a delight to see you again.’"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

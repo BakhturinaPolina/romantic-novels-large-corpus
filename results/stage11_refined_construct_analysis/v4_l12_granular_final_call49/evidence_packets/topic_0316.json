@@ -1,0 +1,670 @@
+{
+  "topic_id": 316,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "lucas",
+        "fallon",
+        "otherwise",
+        "stared",
+        "thoughtful",
+        "shout",
+        "lya",
+        "tallmadge",
+        "duchesne",
+        "recliners"
+      ],
+      "KeyBERT": [
+        "lets",
+        "annoyance",
+        "groaned",
+        "comments",
+        "pathetic",
+        "strongly",
+        "spending",
+        "chose",
+        "disappointment",
+        "failure"
+      ],
+      "POS": [
+        "shout",
+        "failure",
+        "indication",
+        "pathetic",
+        "comments",
+        "annoyance",
+        "extended",
+        "bothered",
+        "notes",
+        "disappointment"
+      ],
+      "MMR": [
+        "shout",
+        "failure",
+        "affect",
+        "worries",
+        "cradled",
+        "comments",
+        "annoyance",
+        "notes",
+        "glared",
+        "focused"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll have to find another way to obtain the tallmadge money,” lucas snapped. “",
+      "stop that, you little fool, otherwise we’ll both be—’ lucas began, and then stopped as one of suzy’s flailing hands caught the side of his mouth.",
+      "they didn’t like it much when they found out, but lucas paid them well, and they’ll get over it."
+    ],
+    "label_public": "Snapping Over Money and Control"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Kia, head tipped way back, was looking at Sampson.",
+        "max_topic_prob": 0.4719271659851074,
+        "normalized_position": 0.9972537399725374,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 671
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Where are Aaron and Lucas?” “",
+        "max_topic_prob": 0.6635634899139404,
+        "normalized_position": 0.8571428571428571,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "But what about Aaron and Lucas?",
+        "max_topic_prob": 0.6167811155319214,
+        "normalized_position": 0.7391555812608445,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lucas and Aaron share this floor.",
+        "max_topic_prob": 0.6116408109664917,
+        "normalized_position": 0.7232504337767496,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Perhaps you should show Eva to her room,” Lucas finally suggested to Michael. “",
+        "max_topic_prob": 0.5866990089416504,
+        "normalized_position": 0.6662810873337189,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Unlike Ethan and Jason, who were dark-haired, Aaron and Lucas were more dirty-blonde.",
+        "max_topic_prob": 0.49204543232917786,
+        "normalized_position": 0.6555812608444187,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Lucas shouted in panic.",
+        "max_topic_prob": 0.7266775369644165,
+        "normalized_position": 0.9619651347068146,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He watched Lucas Mason as he spoke and was rewarded by an expression of guilt upon his uncle’s face. “",
+        "max_topic_prob": 0.6428647041320801,
+        "normalized_position": 0.9615689381933439,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You have brought this upon us,” Lucas Mason harshly accused his grief stricken nephew. “",
+        "max_topic_prob": 0.5499363541603088,
+        "normalized_position": 0.9542393026941363,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Lucas Mason was not so wise, however, and questioned Rork angrily. “",
+        "max_topic_prob": 0.549437403678894,
+        "normalized_position": 0.9582012678288431,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The look upon Lucas Mason’s traitorous face mirrored the truth of Rork’s words.",
+        "max_topic_prob": 0.5142596960067749,
+        "normalized_position": 0.9659270998415214,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But as Lucas continued his tirade, Rork reached out to touch his beloved father’s body , only to find it frozen.",
+        "max_topic_prob": 0.5121268033981323,
+        "normalized_position": 0.9546354992076069,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lucas shook his head. “",
+        "max_topic_prob": 0.8330065608024597,
+        "normalized_position": 0.791478978978979,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lucas asked.",
+        "max_topic_prob": 0.8233200311660767,
+        "normalized_position": 0.7978603603603603,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "So,” Lucas had prompted. “",
+        "max_topic_prob": 0.8123981952667236,
+        "normalized_position": 0.7832207207207207,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lucas asked. “",
+        "max_topic_prob": 0.8040645122528076,
+        "normalized_position": 0.8969594594594594,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lucas waved his hands. “",
+        "max_topic_prob": 0.7758460640907288,
+        "normalized_position": 0.8113738738738738,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lucas was right.",
+        "max_topic_prob": 0.7703250646591187,
+        "normalized_position": 0.9003378378378378,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "J ESUS , THIS kid was insane!”",
+        "max_topic_prob": 0.4160124659538269,
+        "normalized_position": 0.8713080168776371,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Sey always tinkered with things.",
+        "max_topic_prob": 0.35782289505004883,
+        "normalized_position": 0.22930866601752678,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Sey’s so stubborn.",
+        "max_topic_prob": 0.35066908597946167,
+        "normalized_position": 0.7901655306718598,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Fuck, Sey.",
+        "max_topic_prob": 0.3339982032775879,
+        "normalized_position": 0.2672833495618306,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Oh, Sey.",
+        "max_topic_prob": 0.33147865533828735,
+        "normalized_position": 0.9737098344693281,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Fucking hell, Sey.",
+        "max_topic_prob": 0.3261025846004486,
+        "normalized_position": 0.3997078870496592,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "She glanced across to where Calisto stood in animated conversation with Leandros and two other Greek friends. ‘",
+        "max_topic_prob": 0.4305400252342224,
+        "normalized_position": 0.6600985221674877,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Dismay at those previously unknown close connections assailed Billie and her unease only increased when she saw Calisto climb with a tinkling girlish giggle into a limo with the three men.",
+        "max_topic_prob": 0.42260944843292236,
+        "normalized_position": 0.6622097114707952,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "At Lucas’s hesitation, he roared, “Now!”",
+        "max_topic_prob": 0.7457929253578186,
+        "normalized_position": 0.5227529532614278,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Squire Lucas called to El.",
+        "max_topic_prob": 0.6205728054046631,
+        "normalized_position": 0.35387776065742166,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Squire Lucas rose alongside him.",
+        "max_topic_prob": 0.6029913425445557,
+        "normalized_position": 0.2539291217257319,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Their eyes widened, and Squire Lucas spluttered as he had not been taught. “",
+        "max_topic_prob": 0.5578914284706116,
+        "normalized_position": 0.13538777606574218,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "By the quick-legged strides over the rushes, he knew it was Squire Lucas.",
+        "max_topic_prob": 0.5552096962928772,
+        "normalized_position": 0.13394966615305598,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "El watched as Squire Lucas stepped to his lord’s side to receive instructions.",
+        "max_topic_prob": 0.5433589816093445,
+        "normalized_position": 0.35305598356445816,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He stared down Lucas. “",
+        "max_topic_prob": 0.8204590082168579,
+        "normalized_position": 0.7409048938134811,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Lucas furrowed his brows.",
+        "max_topic_prob": 0.8177269697189331,
+        "normalized_position": 0.6956602031394276,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He turned to face Lucas. “",
+        "max_topic_prob": 0.8110088109970093,
+        "normalized_position": 0.7721144967682364,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Oh hell, Lucas.",
+        "max_topic_prob": 0.8096926212310791,
+        "normalized_position": 0.057987072945521696,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Damnit, Lucas.",
+        "max_topic_prob": 0.8093103170394897,
+        "normalized_position": 0.029178208679593722,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Lucas stood. “",
+        "max_topic_prob": 0.8081687688827515,
+        "normalized_position": 0.30064635272391504,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "It’s how I feel about Lucas.",
+        "max_topic_prob": 0.7794146537780762,
+        "normalized_position": 0.33418891170431214,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Except for Lucas; he jumped up next to me and laid his head right on my stomach. “",
+        "max_topic_prob": 0.7598682045936584,
+        "normalized_position": 0.41940451745379875,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 661
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He loves Lucas.",
+        "max_topic_prob": 0.7398935556411743,
+        "normalized_position": 0.8461670088980151,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "How is Lucas doing?",
+        "max_topic_prob": 0.7277738451957703,
+        "normalized_position": 0.3189596167008898,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Lucas is amazing.",
+        "max_topic_prob": 0.726811408996582,
+        "normalized_position": 0.3193018480492813,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Lucas crawled between us and pushed Daniel away, telling him with a scowley face ‘my mommy, daddy, you go away!’” “",
+        "max_topic_prob": 0.7124610543251038,
+        "normalized_position": 0.32118412046543465,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 87
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.000980392156862745,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003782668500687758,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0012507817385866166,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.02513030528667163,
+        "n_sentences": 135
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0014551804423748546,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.007206523800493078,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0007150518412584912,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0019916351324437364,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 7.358351729212656e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 44
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": "7.1",
+    "taxonomy_secondary_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

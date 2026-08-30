@@ -1,0 +1,164 @@
+{
+  "topic_id": 121,
+  "label": "Revealing Plans to The Prince",
+  "taxonomy_main_id": "4.3",
+  "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+  "taxonomy_secondary_id": "10.2",
+  "taxonomy_secondary_name": "Historical & Period Setting",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "king",
+      "prince",
+      "queen",
+      "throne",
+      "servant",
+      "servants",
+      "royal",
+      "crown",
+      "kingdom",
+      "regent"
+    ],
+    "KeyBERT": [
+      "promises",
+      "commander",
+      "reassuring",
+      "assured",
+      "resigned",
+      "expect",
+      "reveal",
+      "planned",
+      "surely",
+      "decision"
+    ],
+    "POS": [
+      "member",
+      "threats",
+      "reassuring",
+      "commander",
+      "enormous",
+      "magical",
+      "exquisite",
+      "crowded",
+      "century",
+      "promises"
+    ],
+    "MMR": [
+      "declared",
+      "member",
+      "threats",
+      "resigned",
+      "commander",
+      "playfully",
+      "magical",
+      "promises",
+      "twisting",
+      "dealing"
+    ]
+  },
+  "stage08_snippets": [
+    "she’ll be queen of the roost.” “",
+    "do you think he’ll really go to the king?”",
+    "if i let the prince know what is happening, instead of waiting for them to find out, they’ll know i’ve been out on my own."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.41975023126734506,
+      "max_topic_prob": 0.49025797843933105,
+      "sentence": "I am not Prince Charming or a shining Knight on a white horse."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3900323774283071,
+      "max_topic_prob": 0.39525777101516724,
+      "sentence": "Hot as a fever, rattling bones I could just taste it, taste it If it’s not forever, if it’s just tonight Oh it’s still the greatest, the greatest, the greatest Kings of Leon Chapter Ten “You two pieces of shit are worthless you know that?”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.9965309898242368,
+      "max_topic_prob": 0.37593603134155273,
+      "sentence": "I WILL one day go on a vacation to Disneyland and actually hang with Belle, Beast, Briar, Winter and Ashess."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.2864360668480373,
+      "max_topic_prob": 0.6913475394248962,
+      "sentence": "Why did he need her if the king was involved?"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.895452778857365,
+      "max_topic_prob": 0.6902768015861511,
+      "sentence": "If only I’d realized what the king intended.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.27331908278274386,
+      "max_topic_prob": 0.6626129746437073,
+      "sentence": "Didn’t you appeal to the king for help?”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.1150408083948698,
+      "max_topic_prob": 0.6612728238105774,
+      "sentence": "Why did you not appeal to the king?”"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.2740963855421687,
+      "max_topic_prob": 0.6589908599853516,
+      "sentence": "Then the king has done something about it?”"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.8958414302370773,
+      "max_topic_prob": 0.6536170244216919,
+      "sentence": "I should have suspected the king’s treachery."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.7566560654248069,
+      "max_topic_prob": 0.6713460683822632,
+      "sentence": "I’ve been a queen far too long."
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.15692866878691503,
+      "max_topic_prob": 0.6598061919212341,
+      "sentence": "Don’t make me order you as your queen.”"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.7174920490686052,
+      "max_topic_prob": 0.6498203277587891,
+      "sentence": "Meanwhile you must learn how best to serve your queen.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

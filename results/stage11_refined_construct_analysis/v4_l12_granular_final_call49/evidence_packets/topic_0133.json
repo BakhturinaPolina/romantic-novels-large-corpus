@@ -1,0 +1,912 @@
+{
+  "topic_id": 133,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tears",
+        "cry",
+        "crying",
+        "tear",
+        "cheeks",
+        "cried",
+        "my",
+        "shed",
+        "eyes",
+        "down"
+      ],
+      "KeyBERT": [
+        "cried",
+        "emotional",
+        "sadness",
+        "emotions",
+        "afterward",
+        "begged",
+        "frantic",
+        "harshly",
+        "dripping",
+        "pressure"
+      ],
+      "POS": [
+        "pout",
+        "dripping",
+        "inevitable",
+        "sadness",
+        "frantic",
+        "combination",
+        "current",
+        "tracks",
+        "sidewalk",
+        "confusion"
+      ],
+      "MMR": [
+        "shed",
+        "pout",
+        "wipe",
+        "dripping",
+        "bursting",
+        "tumbled",
+        "frantic",
+        "crashing",
+        "choked",
+        "sidewalk"
+      ]
+    },
+    "stage08_snippets": [
+      "we’ll leave all our tears out to dry on the patio while we swan off to the acropolis!",
+      "they'll also cry foul.",
+      "they’ll tell you that i don’t do crying."
+    ],
+    "label_public": "Holding Back Tears"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The tears had come back.",
+        "max_topic_prob": 0.7859132289886475,
+        "normalized_position": 0.9806369887803112,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2775
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I stared back through my tears.",
+        "max_topic_prob": 0.748323917388916,
+        "normalized_position": 0.8910604415490408,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2280
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The tears weren’t just gathering under my eyelashes now.",
+        "max_topic_prob": 0.7478270530700684,
+        "normalized_position": 0.9520448787549765,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2617
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The tears were flowing freely now.",
+        "max_topic_prob": 0.7292443513870239,
+        "normalized_position": 0.8876221498371335,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2261
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I cried. “",
+        "max_topic_prob": 0.7282578945159912,
+        "normalized_position": 0.31197973217517194,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1724
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I cried. “",
+        "max_topic_prob": 0.7282577753067017,
+        "normalized_position": 0.5622511762576909,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "A lot of people are going to die before this is over, so dry the tears and deal.",
+        "max_topic_prob": 0.5508537292480469,
+        "normalized_position": 0.25693474356415885,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Cheer up, dude.",
+        "max_topic_prob": 0.43205130100250244,
+        "normalized_position": 0.6705248453402515,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I stop at that, tears filling my eyes.",
+        "max_topic_prob": 0.7247849106788635,
+        "normalized_position": 0.762651319706291,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 3843
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I bite back tears.",
+        "max_topic_prob": 0.7109036445617676,
+        "normalized_position": 0.07064893828140505,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I rub at my grimy eyes, stuck shut at the corners from the excess tears I cried last night.",
+        "max_topic_prob": 0.7108604907989502,
+        "normalized_position": 0.7942051994443342,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 4002
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "And then I weep again, silent tears tracing themselves down my face, plunking hollowly against my robe.",
+        "max_topic_prob": 0.6963735818862915,
+        "normalized_position": 0.5062512403254614,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2551
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The first tear slides down my cheek.",
+        "max_topic_prob": 0.6913902163505554,
+        "normalized_position": 0.5024806509228021,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2532
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "These hadn’t been a few sad salty tears I’d shed.",
+        "max_topic_prob": 0.6797100305557251,
+        "normalized_position": 0.08890652907322881,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "My eyes fill with tears again.",
+        "max_topic_prob": 0.7234292030334473,
+        "normalized_position": 0.9382093316519546,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "There are tears rolling down his cheeks. “",
+        "max_topic_prob": 0.7225794792175293,
+        "normalized_position": 0.36368221941992435,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I start crying. “",
+        "max_topic_prob": 0.7173517942428589,
+        "normalized_position": 0.6264817150063051,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "When he joins me out front, I see his face is wet with tears.",
+        "max_topic_prob": 0.6887356042861938,
+        "normalized_position": 0.6204287515762925,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "A cry catches in my throat.",
+        "max_topic_prob": 0.6852954626083374,
+        "normalized_position": 0.7112232030264817,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "From the first line, I am crying.",
+        "max_topic_prob": 0.6791526079177856,
+        "normalized_position": 0.5866330390920554,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "More cries of the same were called out. “",
+        "max_topic_prob": 0.574754536151886,
+        "normalized_position": 0.9507287361322602,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It was sickening and so very sad.",
+        "max_topic_prob": 0.48443034291267395,
+        "normalized_position": 0.945072873613226,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It was a far cry from the shifter values and tenets Conor had mentioned during the reception.",
+        "max_topic_prob": 0.32329362630844116,
+        "normalized_position": 0.43898194474657387,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "It wasn’t long before I became unhinged, crying out as another orgasm overtook me.",
+        "max_topic_prob": 0.5621663331985474,
+        "normalized_position": 0.17255717255717257,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Fighting back tears, and determined that neither of them see it, I piv oted on my heel to leave.",
+        "max_topic_prob": 0.5418089628219604,
+        "normalized_position": 0.8613008613008613,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "So you tear me down to do it.”",
+        "max_topic_prob": 0.5693813562393188,
+        "normalized_position": 0.3540564373897707,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Truly, one would have thought that such a cry would come as a loud shout, but that wasn’t the case, and I soon found out why.",
+        "max_topic_prob": 0.65800940990448,
+        "normalized_position": 0.9514454111703621,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 459
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "he cried out as soon as he saw me.",
+        "max_topic_prob": 0.6379492878913879,
+        "normalized_position": 0.3567218635980915,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "With a choked cry, I came once again.",
+        "max_topic_prob": 0.6311348676681519,
+        "normalized_position": 0.4636542239685658,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "At this point, I was practically reduced to tears, but somehow, I managed to nod.",
+        "max_topic_prob": 0.6097091436386108,
+        "normalized_position": 0.6486107213022734,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "my mate cried out.",
+        "max_topic_prob": 0.6085618734359741,
+        "normalized_position": 0.8097109177659276,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Therefore, I wasn’t surprised in the slightest when my brother released an agonized cry.",
+        "max_topic_prob": 0.5894140005111694,
+        "normalized_position": 0.5307325287678922,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Please don’t let my mother cry.",
+        "max_topic_prob": 0.6605169177055359,
+        "normalized_position": 0.6918959526716124,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Babe, if you’re crying, he did something, and it was wrong.” * * *",
+        "max_topic_prob": 0.6147462129592896,
+        "normalized_position": 0.5721664006009954,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Salt tears pulled at him.",
+        "max_topic_prob": 0.6094149351119995,
+        "normalized_position": 0.4264250164334679,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Sorrow comes again .",
+        "max_topic_prob": 0.5573396682739258,
+        "normalized_position": 0.7573481078035497,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 638
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Spill.” “",
+        "max_topic_prob": 0.4609927833080292,
+        "normalized_position": 0.5696309512630294,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "This is cause for despair?”",
+        "max_topic_prob": 0.4044545888900757,
+        "normalized_position": 0.12001126866372429,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I wish I could stop, but the tears stream out of my eyes, down my face, soaking the neck of my shirt. “",
+        "max_topic_prob": 0.7356536388397217,
+        "normalized_position": 0.9458403126744835,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Don’t cry.”",
+        "max_topic_prob": 0.7341185808181763,
+        "normalized_position": 0.9457286432160804,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I release a hard shudder and swallow down the remaining tears that are threatening to stream down my face. “",
+        "max_topic_prob": 0.7126905918121338,
+        "normalized_position": 0.9465103294249023,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You want me to cry or something?”",
+        "max_topic_prob": 0.6657476425170898,
+        "normalized_position": 0.02680067001675042,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I let out a whimper. “",
+        "max_topic_prob": 0.647615373134613,
+        "normalized_position": 0.08676716917922948,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 437
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I swipe at a tear, blink hard.",
+        "max_topic_prob": 0.6410192251205444,
+        "normalized_position": 0.546286990508096,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 1475
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I couldn’t hold it in anymore and the tears began to silently roll from my eyes.",
+        "max_topic_prob": 0.7549649477005005,
+        "normalized_position": 0.7078624377202576,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I looked down at his face to see tears still flowing. “",
+        "max_topic_prob": 0.7509684562683105,
+        "normalized_position": 0.08858913598250091,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 654
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My throat tightened and sudden tears filled my own eyes. “",
+        "max_topic_prob": 0.7386000156402588,
+        "normalized_position": 0.975574188844331,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I could feel his body tense and I loved knowing, without even seeing his face, that he was on the verge of tears. “",
+        "max_topic_prob": 0.7010067701339722,
+        "normalized_position": 0.8282901932191031,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Nearly from the moment he’d wrapped his legs around me he’d begun crying and tears continued to slide down his cheeks.",
+        "max_topic_prob": 0.6931889057159424,
+        "normalized_position": 0.7037307084700449,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 725
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I miss us—” I broke off to swallow down the sudden emotion that threatened to bring me to tears. “",
+        "max_topic_prob": 0.6905364990234375,
+        "normalized_position": 0.9319479888200267,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 271
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "You seemed sad suddenly.",
+        "max_topic_prob": 0.5438553094863892,
+        "normalized_position": 0.718645377285604,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Dear God, I’m going to die—horrifically—they are going to tear me apart.",
+        "max_topic_prob": 0.5212863683700562,
+        "normalized_position": 0.00836981715168684,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "And how devastatingly sad was that?",
+        "max_topic_prob": 0.5144044160842896,
+        "normalized_position": 0.5958022147823847,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "The laments sung to mourn Khiann’s passing and to grieve for the great love so tragically lost would become a ritual to be performed every year on the anniversary of his death.",
+        "max_topic_prob": 0.35490745306015015,
+        "normalized_position": 0.3228174092196755,
+        "tertile": "begin",
+        "chapter_index": 25,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Tears escape from my eyes, wetting my cheeks.",
+        "max_topic_prob": 0.7612725496292114,
+        "normalized_position": 0.620126079850572,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Now I’m crying, too, our tears a mix of memories and heartache. “",
+        "max_topic_prob": 0.7582066059112549,
+        "normalized_position": 0.41314499182815784,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I let my emotions control me a moment, struggling to see through my tears.",
+        "max_topic_prob": 0.7410110235214233,
+        "normalized_position": 0.8206864347420033,
+        "tertile": "end",
+        "chapter_index": 54,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Push back my tears. “",
+        "max_topic_prob": 0.7263362407684326,
+        "normalized_position": 0.7952369834228344,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I wipe at my tears, tears that came on so quickly I had no idea they were there until I tasted them on my lips. “",
+        "max_topic_prob": 0.7244073152542114,
+        "normalized_position": 0.6735932757413028,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Fighting the tears . “",
+        "max_topic_prob": 0.7182763814926147,
+        "normalized_position": 0.7427037123511557,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Tears flood my cheeks.",
+        "max_topic_prob": 0.7609161138534546,
+        "normalized_position": 0.7114041892940264,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "If you need to cry, you can cry.”",
+        "max_topic_prob": 0.6873667240142822,
+        "normalized_position": 0.6058960434445306,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I blink away tears, not willing to let them flow for him. “",
+        "max_topic_prob": 0.6686279773712158,
+        "normalized_position": 0.7292474786656322,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "A tear fights its way from the corner of my eye and streams down my cheek like a tiny, traitorous river.",
+        "max_topic_prob": 0.6600334644317627,
+        "normalized_position": 0.23816912335143522,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "These are tears of joy.",
+        "max_topic_prob": 0.646293044090271,
+        "normalized_position": 0.31768813033359194,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I flip my head the other way so some of my hair falls to cover the humiliating tears. “",
+        "max_topic_prob": 0.6155147552490234,
+        "normalized_position": 0.23855702094647013,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 310
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004657433509008457,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0030378037803780377,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004807692307692308,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0037965072133637054,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.004388589666866148,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0031374786081003994,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.004599816007359705,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.0031116297160637884,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0002994908655286014,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00022271714922048998,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0002013693113169553,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.00032776138970829236,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0005672686016828969,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0005175983436853002,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 66
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,3196 @@
+{
+  "run_id": "v4_l12_granular_final_call49",
+  "integrity": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "h2_pool_size",
+        "ok": true,
+        "detail": "H2 pool leaves ['4.5', '5.3a', '8.3a'] yield 10 topics (expected 10); ids=[29, 61, 62, 65, 128, 157, 167, 204, 242, 305]",
+        "topic_ids": [
+          29,
+          61,
+          62,
+          65,
+          128,
+          157,
+          167,
+          204,
+          242,
+          305
+        ],
+        "by_leaf": {
+          "4.5": [
+            29,
+            62,
+            65,
+            128,
+            157,
+            204,
+            242,
+            305
+          ],
+          "5.3a": [
+            167
+          ],
+          "8.3a": [
+            61
+          ]
+        }
+      },
+      {
+        "name": "h2_leaf_4.5",
+        "ok": true,
+        "detail": "leaf 4.5: n=8, ids=[29, 62, 65, 128, 157, 204, 242, 305]",
+        "n_topics": 8,
+        "topic_ids": [
+          29,
+          62,
+          65,
+          128,
+          157,
+          204,
+          242,
+          305
+        ]
+      },
+      {
+        "name": "h2_leaf_5.3a",
+        "ok": true,
+        "detail": "leaf 5.3a: n=1, ids=[167]",
+        "n_topics": 1,
+        "topic_ids": [
+          167
+        ]
+      },
+      {
+        "name": "h2_leaf_8.3a",
+        "ok": true,
+        "detail": "leaf 8.3a: n=1, ids=[61]",
+        "n_topics": 1,
+        "topic_ids": [
+          61
+        ]
+      },
+      {
+        "name": "leaf_7_2_count",
+        "ok": true,
+        "detail": "leaf 7.2 has 12 topics (expected 12); ids=[51, 78, 82, 87, 113, 114, 117, 148, 249, 269, 294, 329]",
+        "n_topics": 12,
+        "topic_ids": [
+          51,
+          78,
+          82,
+          87,
+          113,
+          114,
+          117,
+          148,
+          249,
+          269,
+          294,
+          329
+        ]
+      },
+      {
+        "name": "empty_leaf_2.4",
+        "ok": true,
+        "detail": "leaf 2.4 should be empty; found 0 topics []",
+        "n_topics": 0,
+        "unmeasurable": true
+      },
+      {
+        "name": "empty_leaf_6.1a",
+        "ok": true,
+        "detail": "leaf 6.1a should be empty; found 0 topics []",
+        "n_topics": 0,
+        "unmeasurable": true
+      },
+      {
+        "name": "empty_leaf_6.7",
+        "ok": true,
+        "detail": "leaf 6.7 should be empty; found 0 topics []",
+        "n_topics": 0,
+        "unmeasurable": true
+      },
+      {
+        "name": "topic_91_leaf",
+        "ok": true,
+        "detail": "topic 91 taxonomy_main_id=7.1 (expected 7.1)"
+      }
+    ],
+    "h2_topic_ids": [
+      29,
+      61,
+      62,
+      65,
+      128,
+      157,
+      167,
+      204,
+      242,
+      305
+    ],
+    "empty_leaves": [
+      "2.4",
+      "6.1a",
+      "6.7"
+    ]
+  },
+  "hypotheses": {
+    "H1": {
+      "hypothesis": "H1",
+      "name": "intimacy",
+      "n_topics": 90,
+      "topic_ids": [
+        1,
+        6,
+        7,
+        11,
+        19,
+        25,
+        29,
+        31,
+        36,
+        38,
+        41,
+        45,
+        46,
+        52,
+        54,
+        55,
+        56,
+        62,
+        63,
+        65,
+        70,
+        72,
+        83,
+        86,
+        88,
+        93,
+        96,
+        98,
+        101,
+        104,
+        105,
+        116,
+        119,
+        124,
+        125,
+        126,
+        128,
+        135,
+        139,
+        151,
+        155,
+        156,
+        157,
+        160,
+        161,
+        165,
+        172,
+        173,
+        174,
+        175,
+        190,
+        193,
+        196,
+        197,
+        199,
+        203,
+        204,
+        208,
+        213,
+        224,
+        227,
+        230,
+        232,
+        240,
+        242,
+        245,
+        247,
+        273,
+        277,
+        279,
+        289,
+        292,
+        299,
+        305,
+        307,
+        330,
+        332,
+        337,
+        340,
+        345,
+        351,
+        352,
+        353,
+        355,
+        356,
+        358,
+        365,
+        367,
+        370,
+        372
+      ],
+      "entries": [
+        {
+          "topic_id": 11,
+          "label": "Eyes Meeting Across The Room",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 19,
+          "label": "Legs Wrapped Around His Waist",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 25,
+          "label": "Crawling Onto The Bed Together",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 72,
+          "label": "Complimenting Her Beauty Aloud",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 98,
+          "label": "Stepping Out of The Shower",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 104,
+          "label": "Stepping Out of Panties and Jeans",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 135,
+          "label": "Waiting As Long As It Takes",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 139,
+          "label": "Admiring Her Grace and Beauty",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 155,
+          "label": "Stop Running or Be Claimed",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 165,
+          "label": "Confessing Long-Simmering Desire",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 196,
+          "label": "Promising to Be A Good Team",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 245,
+          "label": "Lip Biting and Nervous Pout",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 279,
+          "label": "Blue Eyes Darkening With Invitation",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 337,
+          "label": "Adjusting to His Presence Inside Her",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 352,
+          "label": "Daring Someone to Try",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 353,
+          "label": "Joking About Being Naked",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 365,
+          "label": "Frantic Longing After Weeks Apart",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 370,
+          "label": "Tattoos Revealed and Judged",
+          "taxonomy_main_id": "2.1",
+          "taxonomy_main_name": "Attraction & Sexual Tension",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 101,
+          "label": "Smoothing Loose Strands of Hair",
+          "taxonomy_main_id": "2.2",
+          "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 124,
+          "label": "Scooped Up in A Tight Hug",
+          "taxonomy_main_id": "2.2",
+          "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 126,
+          "label": "Fingertips Stroking Her Cheek",
+          "taxonomy_main_id": "2.2",
+          "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 197,
+          "label": "Lingering Farewell Kiss",
+          "taxonomy_main_id": "2.2",
+          "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 1,
+          "label": "Straps Sliding Down Her Arms",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 7,
+          "label": "Kissing With Tongue and Urgency",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 41,
+          "label": "Gripping Her Neck and Pulling Close",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 63,
+          "label": "Cupping and Pinching Her Nipples",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 208,
+          "label": "Pounded Into The Mattress",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 230,
+          "label": "Tongue and Hands After Climax",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 292,
+          "label": "Erection Straining Against His Trousers",
+          "taxonomy_main_id": "2.3",
+          "taxonomy_main_name": "Explicit Sexual Acts",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": null,
+          "label": null,
+          "taxonomy_main_id": "2.4",
+          "taxonomy_main_name": null,
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": true
+        },
+        {
+          "topic_id": 55,
+          "label": "Worrying About An Unplanned Pregnancy",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 125,
+          "label": "Furnished Room Described in Detail",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 151,
+          "label": "Agreeing to Stop When Asked",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 156,
+          "label": "Reaching Into The Bedside Drawer",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 203,
+          "label": "Stepping Into The Bathroom",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 213,
+          "label": "Choosing Sex Without Commitment",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 227,
+          "label": "Cherishing Memories Before Parting",
+          "taxonomy_main_id": "2.5",
+          "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 199,
+          "label": "Shoved to His Knees",
+          "taxonomy_main_id": "7.4",
+          "taxonomy_main_name": "Unwanted or Coercive Sexual Contact",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 345,
+          "label": "Older Man Trading Shelter For Sex",
+          "taxonomy_main_id": "7.4",
+          "taxonomy_main_name": "Unwanted or Coercive Sexual Contact",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 38,
+          "label": "Admitting Shared Pain",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 52,
+          "label": "Talking About Dogs and Animals",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 54,
+          "label": "Ordering Food and Dessert",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 86,
+          "label": "First Name Used at Last",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 93,
+          "label": "Meal Plans Casually Arranged",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 105,
+          "label": "Swept Onto The Dance Floor",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 116,
+          "label": "Sharing A Meal Together",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 160,
+          "label": "Watching Movies Together",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 174,
+          "label": "Ranch Life and Falling in Love",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 232,
+          "label": "Conversation Cut Short By Arrival",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 330,
+          "label": "Curious About Her Cooking Skills",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 332,
+          "label": "First Time Inside A Grocery Store",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 351,
+          "label": "Warm Greeting Upon Return",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 367,
+          "label": "Sorting Out Concert Tickets",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 29,
+          "label": "Confessing Long-Held Love",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 62,
+          "label": "Admitting You've Been Stupid",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 65,
+          "label": "Declaring A True Partnership",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 128,
+          "label": "Confessing How Much You've Missed",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 157,
+          "label": "Swearing to Save Him From Himself",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 204,
+          "label": "Promising to Care For Her Sister",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 242,
+          "label": "Trading Forgiveness For Old Wrongs",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 305,
+          "label": "Confessing A Lifelong Regret",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 6,
+          "label": "Whispered Reassurance",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 31,
+          "label": "Keeping Watch While Others Sleep",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 36,
+          "label": "Eagerly Offering to Help",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 45,
+          "label": "Reassured Everything Will Be Fine",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 46,
+          "label": "Asking Someone to Trust You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 56,
+          "label": "Promising Never to Hurt You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 70,
+          "label": "Keeping Watch While She Sleeps",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 83,
+          "label": "Reassured About Eating Regularly",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 88,
+          "label": "Checking Her Feverish Temperature",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 96,
+          "label": "Confessing Long-Standing Worry",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 119,
+          "label": "Offering to Keep Her Safe",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 161,
+          "label": "Reassuring Squeeze on The Shoulder",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 172,
+          "label": "Reporting to The Security Officer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 173,
+          "label": "Waiting For Him to Wake",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 175,
+          "label": "Gentleman Offers Steadying Support",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 190,
+          "label": "Offering to Get Someone Cleaned Up",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 193,
+          "label": "Nurse Arranged After Hospital Release",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 224,
+          "label": "Encouraging Words From An Angel",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 240,
+          "label": "Unsure How to Offer Comfort",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 247,
+          "label": "Promising You Will Not Be Alone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 273,
+          "label": "Mentor Gives Firm Instructions",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 277,
+          "label": "Promising to Handle The Lawyer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 289,
+          "label": "Quick Peck on The Forehead",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 299,
+          "label": "Pledging to Have Your Back",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 307,
+          "label": "Hauling Someone Up The Stairs",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 340,
+          "label": "Patience Tested Through Small Trials",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 355,
+          "label": "Blanket Draped Over Someone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 356,
+          "label": "Admitting Exhaustion After A Long Day",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 358,
+          "label": "Reassuring Squeeze of The Hand",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 372,
+          "label": "Told to Keep Up Strength",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": false,
+      "skip_full_relabel_leaves": []
+    },
+    "H2": {
+      "hypothesis": "H2",
+      "name": "hea_payoff",
+      "n_topics": 10,
+      "topic_ids": [
+        29,
+        61,
+        62,
+        65,
+        128,
+        157,
+        167,
+        204,
+        242,
+        305
+      ],
+      "entries": [
+        {
+          "topic_id": 29,
+          "label": "Confessing Long-Held Love",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 62,
+          "label": "Admitting You've Been Stupid",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 65,
+          "label": "Declaring A True Partnership",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 128,
+          "label": "Confessing How Much You've Missed",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 157,
+          "label": "Swearing to Save Him From Himself",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 204,
+          "label": "Promising to Care For Her Sister",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 242,
+          "label": "Trading Forgiveness For Old Wrongs",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 305,
+          "label": "Confessing A Lifelong Regret",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 167,
+          "label": "Planning A Wedding Reception",
+          "taxonomy_main_id": "5.3a",
+          "taxonomy_main_name": "Romantic Social Rituals & Public Couple Recognition",
+          "role": "mandatory",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 61,
+          "label": "Planning to Exchange Rings",
+          "taxonomy_main_id": "8.3a",
+          "taxonomy_main_name": "Commitment Symbols & Love Tokens",
+          "role": "mandatory",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": true,
+      "skip_full_relabel_leaves": []
+    },
+    "H3": {
+      "hypothesis": "H3",
+      "name": "security_material",
+      "n_topics": 97,
+      "topic_ids": [
+        6,
+        10,
+        17,
+        18,
+        27,
+        29,
+        31,
+        36,
+        38,
+        45,
+        46,
+        49,
+        52,
+        54,
+        56,
+        59,
+        61,
+        62,
+        65,
+        70,
+        75,
+        77,
+        81,
+        83,
+        86,
+        88,
+        93,
+        96,
+        105,
+        112,
+        116,
+        119,
+        120,
+        127,
+        128,
+        140,
+        143,
+        153,
+        157,
+        160,
+        161,
+        167,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        184,
+        190,
+        192,
+        193,
+        204,
+        209,
+        218,
+        223,
+        224,
+        232,
+        235,
+        240,
+        241,
+        242,
+        243,
+        247,
+        253,
+        259,
+        260,
+        268,
+        273,
+        277,
+        284,
+        289,
+        293,
+        299,
+        305,
+        307,
+        315,
+        320,
+        321,
+        323,
+        324,
+        326,
+        327,
+        330,
+        332,
+        335,
+        339,
+        340,
+        347,
+        351,
+        354,
+        355,
+        356,
+        358,
+        364,
+        367,
+        372
+      ],
+      "entries": [
+        {
+          "topic_id": 18,
+          "label": "Ordering A Gown For Her",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 77,
+          "label": "Haircut and Grooming Offered",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 127,
+          "label": "Photographer Reviewing Pictures",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 170,
+          "label": "Staying Close Despite Long Separation",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 171,
+          "label": "Staring at Her Own Reflection",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 192,
+          "label": "Peeking Through The Window",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 209,
+          "label": "Flowers Held With Guilty Glance",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 218,
+          "label": "Resenting Someone More Attractive",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 241,
+          "label": "Calling Someone A Stubborn Idiot",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 253,
+          "label": "Hair Pinned Up in Style",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 268,
+          "label": "Vivid Colors Remarked Upon",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 323,
+          "label": "Polite Address Under Distress",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 347,
+          "label": "Saying Goodnight Before Bed",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 354,
+          "label": "Threatening to Bite Someone's Nose",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 364,
+          "label": "Noticing What He Wears",
+          "taxonomy_main_id": "1.6",
+          "taxonomy_main_name": "Character Appearance & Self-Presentation",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 6,
+          "label": "Whispered Reassurance",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 31,
+          "label": "Keeping Watch While Others Sleep",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 36,
+          "label": "Eagerly Offering to Help",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 45,
+          "label": "Reassured Everything Will Be Fine",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 46,
+          "label": "Asking Someone to Trust You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 56,
+          "label": "Promising Never to Hurt You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 70,
+          "label": "Keeping Watch While She Sleeps",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 83,
+          "label": "Reassured About Eating Regularly",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 88,
+          "label": "Checking Her Feverish Temperature",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 96,
+          "label": "Confessing Long-Standing Worry",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 119,
+          "label": "Offering to Keep Her Safe",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 161,
+          "label": "Reassuring Squeeze on The Shoulder",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 172,
+          "label": "Reporting to The Security Officer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 173,
+          "label": "Waiting For Him to Wake",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 175,
+          "label": "Gentleman Offers Steadying Support",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 190,
+          "label": "Offering to Get Someone Cleaned Up",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 193,
+          "label": "Nurse Arranged After Hospital Release",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 224,
+          "label": "Encouraging Words From An Angel",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 240,
+          "label": "Unsure How to Offer Comfort",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 247,
+          "label": "Promising You Will Not Be Alone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 273,
+          "label": "Mentor Gives Firm Instructions",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 277,
+          "label": "Promising to Handle The Lawyer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 289,
+          "label": "Quick Peck on The Forehead",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 299,
+          "label": "Pledging to Have Your Back",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 307,
+          "label": "Hauling Someone Up The Stairs",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 340,
+          "label": "Patience Tested Through Small Trials",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 355,
+          "label": "Blanket Draped Over Someone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 356,
+          "label": "Admitting Exhaustion After A Long Day",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 358,
+          "label": "Reassuring Squeeze of The Hand",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 372,
+          "label": "Told to Keep Up Strength",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 112,
+          "label": "Desperate Need For A Job",
+          "taxonomy_main_id": "6.4",
+          "taxonomy_main_name": "Economic Precarity, Security & Dependency",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 140,
+          "label": "Demanding Answers Before Departure",
+          "taxonomy_main_id": "6.6",
+          "taxonomy_main_name": "Material Glamour & Consumption",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 29,
+          "label": "Confessing Long-Held Love",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 62,
+          "label": "Admitting You've Been Stupid",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 65,
+          "label": "Declaring A True Partnership",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 128,
+          "label": "Confessing How Much You've Missed",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 157,
+          "label": "Swearing to Save Him From Himself",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 204,
+          "label": "Promising to Care For Her Sister",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 242,
+          "label": "Trading Forgiveness For Old Wrongs",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 305,
+          "label": "Confessing A Lifelong Regret",
+          "taxonomy_main_id": "4.5",
+          "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 38,
+          "label": "Admitting Shared Pain",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 52,
+          "label": "Talking About Dogs and Animals",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 54,
+          "label": "Ordering Food and Dessert",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 86,
+          "label": "First Name Used at Last",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 93,
+          "label": "Meal Plans Casually Arranged",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 105,
+          "label": "Swept Onto The Dance Floor",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 116,
+          "label": "Sharing A Meal Together",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 160,
+          "label": "Watching Movies Together",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 174,
+          "label": "Ranch Life and Falling in Love",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 232,
+          "label": "Conversation Cut Short By Arrival",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 330,
+          "label": "Curious About Her Cooking Skills",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 332,
+          "label": "First Time Inside A Grocery Store",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 351,
+          "label": "Warm Greeting Upon Return",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 367,
+          "label": "Sorting Out Concert Tickets",
+          "taxonomy_main_id": "4.2",
+          "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 293,
+          "label": "Admitting Jealousy Out Loud",
+          "taxonomy_main_id": "4.7",
+          "taxonomy_main_name": "Jealousy & Possessive Romance Conflict",
+          "role": "comparator",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 315,
+          "label": "Claiming Her As His Own",
+          "taxonomy_main_id": "4.7",
+          "taxonomy_main_name": "Jealousy & Possessive Romance Conflict",
+          "role": "comparator",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 167,
+          "label": "Planning A Wedding Reception",
+          "taxonomy_main_id": "5.3a",
+          "taxonomy_main_name": "Romantic Social Rituals & Public Couple Recognition",
+          "role": "comparator",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 61,
+          "label": "Planning to Exchange Rings",
+          "taxonomy_main_id": "8.3a",
+          "taxonomy_main_name": "Commitment Symbols & Love Tokens",
+          "role": "comparator",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 49,
+          "label": "Drinking at The Bar",
+          "taxonomy_main_id": "8.2",
+          "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 260,
+          "label": "Crowd Goes Wild For Him",
+          "taxonomy_main_id": "8.2",
+          "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 321,
+          "label": "Leaning Against Trees and Rails",
+          "taxonomy_main_id": "8.2",
+          "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 339,
+          "label": "Regulars at The Bar",
+          "taxonomy_main_id": "8.2",
+          "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+          "role": "comparator",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 10,
+          "label": "Doctor Gives Medical Instructions",
+          "taxonomy_main_id": "6.5",
+          "taxonomy_main_name": "Institutional Settings & Procedures",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 320,
+          "label": "Called Into Court Today",
+          "taxonomy_main_id": "6.5",
+          "taxonomy_main_name": "Institutional Settings & Procedures",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 17,
+          "label": "Discussing Rooms and Privacy",
+          "taxonomy_main_id": "8.1",
+          "taxonomy_main_name": "Domestic Spaces & Routines",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 120,
+          "label": "Suggesting Someone Take A Shower",
+          "taxonomy_main_id": "8.1",
+          "taxonomy_main_name": "Domestic Spaces & Routines",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 153,
+          "label": "Cold House and Freezing Warnings",
+          "taxonomy_main_id": "8.1",
+          "taxonomy_main_name": "Domestic Spaces & Routines",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 235,
+          "label": "Directed to Wash Up",
+          "taxonomy_main_id": "8.1",
+          "taxonomy_main_name": "Domestic Spaces & Routines",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 59,
+          "label": "Mother's Disapproval Looms",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 75,
+          "label": "Talking About Being A Father",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 81,
+          "label": "Mentioning A Brother",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 143,
+          "label": "Complaining About Family Pressure",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 243,
+          "label": "Talking About The Family Aunt",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 326,
+          "label": "Discovering She Is Pregnant",
+          "taxonomy_main_id": "5.1",
+          "taxonomy_main_name": "Family, Kinship & Parenthood",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 27,
+          "label": "Racing The Approaching Storm",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 184,
+          "label": "Racing to Stop A Spreading Fire",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 223,
+          "label": "Coordinating Security Against A Threat",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 259,
+          "label": "Chained to The Forest Gate",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 284,
+          "label": "Necks on The Line Together",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 324,
+          "label": "Searching For A Missing Person",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 327,
+          "label": "Crouching Over A Fallen Figure",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 335,
+          "label": "Killer Targets Someone Alone",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "spillover_discovery",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": false,
+      "skip_full_relabel_leaves": []
+    },
+    "H4": {
+      "hypothesis": "H4",
+      "name": "protection_possession",
+      "n_topics": 32,
+      "topic_ids": [
+        6,
+        31,
+        36,
+        45,
+        46,
+        56,
+        70,
+        83,
+        88,
+        96,
+        119,
+        161,
+        172,
+        173,
+        175,
+        190,
+        193,
+        224,
+        240,
+        247,
+        273,
+        277,
+        289,
+        293,
+        299,
+        307,
+        315,
+        340,
+        355,
+        356,
+        358,
+        372
+      ],
+      "entries": [
+        {
+          "topic_id": 6,
+          "label": "Whispered Reassurance",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 31,
+          "label": "Keeping Watch While Others Sleep",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 36,
+          "label": "Eagerly Offering to Help",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 45,
+          "label": "Reassured Everything Will Be Fine",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 46,
+          "label": "Asking Someone to Trust You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 56,
+          "label": "Promising Never to Hurt You",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 70,
+          "label": "Keeping Watch While She Sleeps",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 83,
+          "label": "Reassured About Eating Regularly",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 88,
+          "label": "Checking Her Feverish Temperature",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 96,
+          "label": "Confessing Long-Standing Worry",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 119,
+          "label": "Offering to Keep Her Safe",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 161,
+          "label": "Reassuring Squeeze on The Shoulder",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 172,
+          "label": "Reporting to The Security Officer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 173,
+          "label": "Waiting For Him to Wake",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 175,
+          "label": "Gentleman Offers Steadying Support",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 190,
+          "label": "Offering to Get Someone Cleaned Up",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 193,
+          "label": "Nurse Arranged After Hospital Release",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 224,
+          "label": "Encouraging Words From An Angel",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 240,
+          "label": "Unsure How to Offer Comfort",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 247,
+          "label": "Promising You Will Not Be Alone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 273,
+          "label": "Mentor Gives Firm Instructions",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 277,
+          "label": "Promising to Handle The Lawyer",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 289,
+          "label": "Quick Peck on The Forehead",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 299,
+          "label": "Pledging to Have Your Back",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 307,
+          "label": "Hauling Someone Up The Stairs",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 340,
+          "label": "Patience Tested Through Small Trials",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 355,
+          "label": "Blanket Draped Over Someone",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 356,
+          "label": "Admitting Exhaustion After A Long Day",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 358,
+          "label": "Reassuring Squeeze of The Hand",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 372,
+          "label": "Told to Keep Up Strength",
+          "taxonomy_main_id": "4.6",
+          "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 293,
+          "label": "Admitting Jealousy Out Loud",
+          "taxonomy_main_id": "4.7",
+          "taxonomy_main_name": "Jealousy & Possessive Romance Conflict",
+          "role": "mandatory",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 315,
+          "label": "Claiming Her As His Own",
+          "taxonomy_main_id": "4.7",
+          "taxonomy_main_name": "Jealousy & Possessive Romance Conflict",
+          "role": "mandatory",
+          "exhaustive": true,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": false,
+      "skip_full_relabel_leaves": []
+    },
+    "H5": {
+      "hypothesis": "H5",
+      "name": "darkness_tenderness",
+      "n_topics": 22,
+      "topic_ids": [
+        27,
+        64,
+        66,
+        92,
+        102,
+        133,
+        145,
+        152,
+        179,
+        184,
+        220,
+        223,
+        244,
+        259,
+        281,
+        284,
+        285,
+        322,
+        324,
+        327,
+        335,
+        366
+      ],
+      "entries": [
+        {
+          "topic_id": 27,
+          "label": "Racing The Approaching Storm",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 184,
+          "label": "Racing to Stop A Spreading Fire",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 223,
+          "label": "Coordinating Security Against A Threat",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 259,
+          "label": "Chained to The Forest Gate",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 284,
+          "label": "Necks on The Line Together",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 324,
+          "label": "Searching For A Missing Person",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 327,
+          "label": "Crouching Over A Fallen Figure",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 335,
+          "label": "Killer Targets Someone Alone",
+          "taxonomy_main_id": "7.3",
+          "taxonomy_main_name": "Risk, Danger & External Crises",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 64,
+          "label": "Confronting A Lifelong Fear",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 66,
+          "label": "Paralyzed By Deep-Seated Fear",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 92,
+          "label": "Heart Pounding With Dread",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 102,
+          "label": "Grief Etched on His Face",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 133,
+          "label": "Holding Back Tears",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 145,
+          "label": "Confessing How Much It Hurts",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 152,
+          "label": "Awkward Apology and Embarrassment",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 179,
+          "label": "Dreading What You Stand to Lose",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 220,
+          "label": "Called Out For Being Embarrassing",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 244,
+          "label": "Confessing A Shattered Heart",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 281,
+          "label": "Told to Calm Down First",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 285,
+          "label": "Confessing Years of Hatred",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 322,
+          "label": "Consumed By Guilt After The Act",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 366,
+          "label": "Paralyzed By Irrational Fear",
+          "taxonomy_main_id": "3.2",
+          "taxonomy_main_name": "Negative Emotions & Distress",
+          "role": "focus",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": false,
+      "skip_full_relabel_leaves": [
+        "7.2",
+        "4.4"
+      ]
+    },
+    "H6": {
+      "hypothesis": "H6",
+      "name": "arc_semantics",
+      "n_topics": 28,
+      "topic_ids": [
+        3,
+        24,
+        37,
+        43,
+        85,
+        94,
+        109,
+        121,
+        129,
+        130,
+        177,
+        194,
+        210,
+        214,
+        237,
+        248,
+        256,
+        264,
+        265,
+        272,
+        286,
+        301,
+        303,
+        314,
+        316,
+        319,
+        346,
+        362
+      ],
+      "entries": [
+        {
+          "topic_id": 37,
+          "label": "Defending A Close Friendship",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 94,
+          "label": "Caught in A Lie",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 109,
+          "label": "Seeing Past A Guarded Identity",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 121,
+          "label": "Revealing Plans to The Prince",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 130,
+          "label": "Revealing A Secret Plan",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 177,
+          "label": "Seeing Past A Hidden Identity",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 194,
+          "label": "Promising to Keep A Secret",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 214,
+          "label": "Demanding to Know What Happened",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 237,
+          "label": "Hiding Someone Before He Arrives",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 248,
+          "label": "Arranging A Cover Story",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 264,
+          "label": "Accused of Hiding Something",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 265,
+          "label": "Mismatched Expectations About Seriousness",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 272,
+          "label": "Silence Held Until Arrival",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 286,
+          "label": "Trying to Regain Good Graces",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 301,
+          "label": "Confessing A Thin Relationship History",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 303,
+          "label": "Confessing Long-Hidden Secrets",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 314,
+          "label": "Fianc\u00e9 Becoming A Stranger",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 319,
+          "label": "Confessing A Costly Mistake",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 346,
+          "label": "Delivering Urgent News in Secret",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 362,
+          "label": "Keeping Someone Watched and Close",
+          "taxonomy_main_id": "4.3",
+          "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 3,
+          "label": "Demanding An Explanation",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 24,
+          "label": "Confronting An Unwanted Marriage",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 43,
+          "label": "Pissed Off and Grumbling",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 85,
+          "label": "Offering and Refusing An Apology",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 129,
+          "label": "Accused of Not Caring",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 210,
+          "label": "Expelled For Pursuing A Relationship",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 256,
+          "label": "Refusing to Let It End",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        },
+        {
+          "topic_id": 316,
+          "label": "Snapping Over Money and Control",
+          "taxonomy_main_id": "4.4",
+          "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+          "role": "mandatory",
+          "exhaustive": false,
+          "unmeasurable_empty_leaf": false
+        }
+      ],
+      "position_visible_in_pass_b": true,
+      "skip_full_relabel_leaves": []
+    }
+  },
+  "audited_topic_ids": [
+    1,
+    3,
+    6,
+    7,
+    10,
+    11,
+    17,
+    18,
+    19,
+    24,
+    25,
+    27,
+    29,
+    31,
+    36,
+    37,
+    38,
+    41,
+    43,
+    45,
+    46,
+    49,
+    52,
+    54,
+    55,
+    56,
+    59,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    70,
+    72,
+    75,
+    77,
+    81,
+    83,
+    85,
+    86,
+    88,
+    92,
+    93,
+    94,
+    96,
+    98,
+    101,
+    102,
+    104,
+    105,
+    109,
+    112,
+    116,
+    119,
+    120,
+    121,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    133,
+    135,
+    139,
+    140,
+    143,
+    145,
+    151,
+    152,
+    153,
+    155,
+    156,
+    157,
+    160,
+    161,
+    165,
+    167,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    177,
+    179,
+    184,
+    190,
+    192,
+    193,
+    194,
+    196,
+    197,
+    199,
+    203,
+    204,
+    208,
+    209,
+    210,
+    213,
+    214,
+    218,
+    220,
+    223,
+    224,
+    227,
+    230,
+    232,
+    235,
+    237,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    247,
+    248,
+    253,
+    256,
+    259,
+    260,
+    264,
+    265,
+    268,
+    272,
+    273,
+    277,
+    279,
+    281,
+    284,
+    285,
+    286,
+    289,
+    292,
+    293,
+    299,
+    301,
+    303,
+    305,
+    307,
+    314,
+    315,
+    316,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    326,
+    327,
+    330,
+    332,
+    335,
+    337,
+    339,
+    340,
+    345,
+    346,
+    347,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    358,
+    362,
+    364,
+    365,
+    366,
+    367,
+    370,
+    372
+  ],
+  "exhaustive_topic_ids": [
+    61,
+    167,
+    293,
+    315
+  ],
+  "n_audited_topics": 177
+}

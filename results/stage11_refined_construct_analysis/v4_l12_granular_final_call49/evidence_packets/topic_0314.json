@@ -1,0 +1,714 @@
+{
+  "topic_id": 314,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "blake",
+        "dion",
+        "macie",
+        "motioned",
+        "addressing",
+        "mates",
+        "grog",
+        "breydan",
+        "evite",
+        "hewitt"
+      ],
+      "KeyBERT": [
+        "scenario",
+        "engaged",
+        "overheard",
+        "emotions",
+        "attracted",
+        "promptly",
+        "thinks",
+        "utter",
+        "causing",
+        "motioned"
+      ],
+      "POS": [
+        "scenario",
+        "utter",
+        "reminder",
+        "engaged",
+        "member",
+        "amusement",
+        "nearby",
+        "embarrassed",
+        "features",
+        "emotions"
+      ],
+      "MMR": [
+        "scenario",
+        "overheard",
+        "chased",
+        "motioned",
+        "reminder",
+        "praying",
+        "amusement",
+        "appreciate",
+        "causing",
+        "emotions"
+      ]
+    },
+    "stage08_snippets": [
+      "macie had spent far more time praying for blake and far less time being driven by her constantly-shifting emotions.",
+      "she peeked out and verified that it was indeed blake, then promptly shut the door in his face to remove the chain. “",
+      "the blake i am engaged to is slowly disappearing in my mind, and being replaced by a complete and utter stranger."
+    ],
+    "label_public": "Fiancé Becoming A Stranger"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Oh, Brant.”",
+        "max_topic_prob": 0.5176430940628052,
+        "normalized_position": 0.5433439265536724,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "What’s up, Brant?” “",
+        "max_topic_prob": 0.5174633264541626,
+        "normalized_position": 0.289989406779661,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "What are you saying, Brant?” “",
+        "max_topic_prob": 0.515553891658783,
+        "normalized_position": 0.6973870056497176,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "What’s Brant Kincaid doing here?",
+        "max_topic_prob": 0.4990207850933075,
+        "normalized_position": 0.0625882768361582,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 415
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I wondered about that when you first told me you’d be staying with Brant.",
+        "max_topic_prob": 0.49350932240486145,
+        "normalized_position": 0.6167902542372882,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Oh, come on, Brant.",
+        "max_topic_prob": 0.4907621741294861,
+        "normalized_position": 0.4182556497175141,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Blake.\" \"",
+        "max_topic_prob": 0.8413304090499878,
+        "normalized_position": 0.8521552996752289,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "It's Blake.",
+        "max_topic_prob": 0.7128614187240601,
+        "normalized_position": 0.9475937407735459,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Mr. Blake,\" she informed him. \"",
+        "max_topic_prob": 0.7022581696510315,
+        "normalized_position": 0.9515795689400649,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Ah, Noah Blake.\"",
+        "max_topic_prob": 0.7007627487182617,
+        "normalized_position": 0.15301151461470328,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You went over the truck, didn't you, Blake?\"",
+        "max_topic_prob": 0.6799683570861816,
+        "normalized_position": 0.8535577206967818,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "As stupid as Blake?\"",
+        "max_topic_prob": 0.6748488545417786,
+        "normalized_position": 0.6544139356362563,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Was Phoenix hiding and couldn’t speak?",
+        "max_topic_prob": 0.467446506023407,
+        "normalized_position": 0.7674065065369413,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "That was not going to be Phoenix’s fate.",
+        "max_topic_prob": 0.4434121251106262,
+        "normalized_position": 0.6539981757373061,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It didn’t help that Phoenix was sitting right next to him.",
+        "max_topic_prob": 0.442490816116333,
+        "normalized_position": 0.36546062633019155,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Phoenix understood now.",
+        "max_topic_prob": 0.3939056396484375,
+        "normalized_position": 0.9388871997567649,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Fate was not going to take Phoenix from him.",
+        "max_topic_prob": 0.3832128047943115,
+        "normalized_position": 0.9425357251444207,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Oh yeah, Phoenix was getting fucked tonight!",
+        "max_topic_prob": 0.30688124895095825,
+        "normalized_position": 0.15080571602310733,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Blake?”",
+        "max_topic_prob": 0.80808424949646,
+        "normalized_position": 0.9267229637700899,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She looked at Blake. “",
+        "max_topic_prob": 0.7819651961326599,
+        "normalized_position": 0.9338055025878507,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "How will this Blake guy find you?”",
+        "max_topic_prob": 0.7254036664962769,
+        "normalized_position": 0.9551893217107055,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Blake grinned. “",
+        "max_topic_prob": 0.7121176719665527,
+        "normalized_position": 0.9275401797875238,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Blake chuckled, “I almost did .",
+        "max_topic_prob": 0.7108035087585449,
+        "normalized_position": 0.9289022064832471,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "His plan was to find her through him,” Blake told them.",
+        "max_topic_prob": 0.7046986222267151,
+        "normalized_position": 0.9414328520839008,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 317
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The other guys chimed in with the same complaint as Blake.",
+        "max_topic_prob": 0.6729601621627808,
+        "normalized_position": 0.504306751875521,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Last year, she was much cooler,” I heard Blake say. “",
+        "max_topic_prob": 0.5971560478210449,
+        "normalized_position": 0.5037510419560989,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Either Dalton is blind or he’s just an asshole,” he ground out. “",
+        "max_topic_prob": 0.4581771790981293,
+        "normalized_position": 0.2650736315643234,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Well, we all know what a snob Dalton is; he never throws to the new guys at first.",
+        "max_topic_prob": 0.37853649258613586,
+        "normalized_position": 0.252292303417616,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Three hundred,” Dalton retorted.",
+        "max_topic_prob": 0.358489990234375,
+        "normalized_position": 0.9381772714642956,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Another reason I like Patterson so much: He gets straight to the point.",
+        "max_topic_prob": 0.288374125957489,
+        "normalized_position": 0.037788274520700195,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Blake.”",
+        "max_topic_prob": 0.8333871960639954,
+        "normalized_position": 0.0837468982630273,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Blake.”",
+        "max_topic_prob": 0.8333871960639954,
+        "normalized_position": 0.4688053881602269,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Eww, Blake.”",
+        "max_topic_prob": 0.7963074445724487,
+        "normalized_position": 0.29599432825239275,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Blake’s there.",
+        "max_topic_prob": 0.7701601982116699,
+        "normalized_position": 0.7833215171924849,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I swing my gaze to Blake. “",
+        "max_topic_prob": 0.7532833814620972,
+        "normalized_position": 0.8034384969868841,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m on the ticket with Blake.”",
+        "max_topic_prob": 0.7490677833557129,
+        "normalized_position": 0.41013824884792627,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Blake, please get off me!”",
+        "max_topic_prob": 0.738339364528656,
+        "normalized_position": 0.6835921107847251,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I’m Blake.",
+        "max_topic_prob": 0.6891050338745117,
+        "normalized_position": 0.6741502308015107,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Blake pulled me in closer, directly up against his firm body. “",
+        "max_topic_prob": 0.6743760108947754,
+        "normalized_position": 0.6766680654637012,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "His words brought back a faint memory of Blake being on top of me, and my insides shuddered.",
+        "max_topic_prob": 0.6569682359695435,
+        "normalized_position": 0.8013008812421317,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Blake leaned down, his hot breath washing over my ear. “",
+        "max_topic_prob": 0.649222731590271,
+        "normalized_position": 0.687788501888376,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Duke had saved me from Blake.",
+        "max_topic_prob": 0.649147093296051,
+        "normalized_position": 0.6934536298783046,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Blake said. “",
+        "max_topic_prob": 0.8368330001831055,
+        "normalized_position": 0.3611822201535955,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Blake.”",
+        "max_topic_prob": 0.8333876132965088,
+        "normalized_position": 0.14195950663253432,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "At some point, Blake got introduced. “",
+        "max_topic_prob": 0.8146711587905884,
+        "normalized_position": 0.9911566208983011,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Blake was the one to break the silence in the end. “",
+        "max_topic_prob": 0.8008856773376465,
+        "normalized_position": 0.6108913195252502,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Blake asked. “",
+        "max_topic_prob": 0.795093297958374,
+        "normalized_position": 0.11077495927391204,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Blake asked. “",
+        "max_topic_prob": 0.7950932383537292,
+        "normalized_position": 0.17616942052594833,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 154
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.006433166547533953,
+        "n_sentences": 72
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.003789004457652303,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0008386916410399776,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0026676151520540637,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0018326206475259622,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.0040194626613073835,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0019204389574759945,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.11160401587672192,
+        "n_sentences": 478
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

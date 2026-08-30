@@ -1,0 +1,153 @@
+{
+  "topic_id": 45,
+  "label": "Reassured Everything Will Be Fine",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "9.2",
+  "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "fine",
+      "okay",
+      "everything",
+      "right",
+      "be",
+      "all",
+      "honey",
+      "ok",
+      "will",
+      "alright"
+    ],
+    "KeyBERT": [
+      "ok",
+      "assured",
+      "assure",
+      "smoothly",
+      "uh",
+      "incredibly"
+    ],
+    "POS": [
+      "problems",
+      "sir",
+      "lord"
+    ],
+    "MMR": [
+      "smoothly",
+      "assure",
+      "acknowledged",
+      "injured",
+      "ms",
+      "appreciate",
+      "assured",
+      "problems",
+      "repeated",
+      "urge"
+    ]
+  },
+  "stage08_snippets": [
+    "we’ll be ok.” “",
+    "nadines : you’ll be ok?",
+    "ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.32374001652437345,
+      "max_topic_prob": 0.8199071884155273,
+      "sentence": "I'm fine.\""
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.5391076838336546,
+      "max_topic_prob": 0.8073031306266785,
+      "sentence": "I'll be fine.\" \""
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.25048196089231617,
+      "max_topic_prob": 0.7085508108139038,
+      "sentence": "You are well.\""
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.557422197741669,
+      "max_topic_prob": 0.6507164239883423,
+      "sentence": "I'm fine,\" Amber replied quietly. \""
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9836133296612504,
+      "max_topic_prob": 0.6502516269683838,
+      "sentence": "I'm okay now."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.1027265216193886,
+      "max_topic_prob": 0.6497110724449158,
+      "sentence": "Your wound…'\" \"I'm fine.\""
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.423247453565009,
+      "max_topic_prob": 0.7827494144439697,
+      "sentence": "Is everything okay?” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.865787896944278,
+      "max_topic_prob": 0.7522211670875549,
+      "sentence": "Are you okay?” “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6353505092869982,
+      "max_topic_prob": 0.7400708198547363,
+      "sentence": "Just fine.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5440383463151588,
+      "max_topic_prob": 0.7264650464057922,
+      "sentence": "Are you okay now?”"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7984421809466746,
+      "max_topic_prob": 0.7264650464057922,
+      "sentence": "Are you okay now?”"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9020970641102457,
+      "max_topic_prob": 0.7149267196655273,
+      "sentence": "Fine.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

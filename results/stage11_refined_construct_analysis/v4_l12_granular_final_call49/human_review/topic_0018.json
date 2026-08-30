@@ -1,0 +1,164 @@
+{
+  "topic_id": 18,
+  "label": "Ordering A Gown For Her",
+  "taxonomy_main_id": "1.6",
+  "taxonomy_main_name": "Character Appearance & Self-Presentation",
+  "taxonomy_secondary_id": "6.6",
+  "taxonomy_secondary_name": "Material Glamour & Consumption",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "dress",
+      "wear",
+      "clothes",
+      "wearing",
+      "dressed",
+      "gown",
+      "jeans",
+      "shirt",
+      "dresses",
+      "suit"
+    ],
+    "KeyBERT": [
+      "worn",
+      "fitting",
+      "matching",
+      "appropriate",
+      "fits",
+      "ensure",
+      "generous",
+      "arrange",
+      "madam",
+      "revealing"
+    ],
+    "POS": [
+      "fits",
+      "graceful",
+      "fitting",
+      "stunning",
+      "benefit",
+      "extent",
+      "unlikely",
+      "appropriate",
+      "preferred",
+      "decades"
+    ],
+    "MMR": [
+      "worn",
+      "arrange",
+      "matching",
+      "graceful",
+      "fitting",
+      "madam",
+      "topped",
+      "flowing",
+      "flared",
+      "exact"
+    ]
+  },
+  "stage08_snippets": [
+    "he’ll make sure you have a dress worthy of you.”",
+    "i’ll order a gown for you and have it sent to the house.” “",
+    "we’ll have to borrow their clothes.” “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.054014330332537205,
+      "max_topic_prob": 0.6577072143554688,
+      "sentence": "I am not some maid who needs these kinds of clothes.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.48061730663237184,
+      "max_topic_prob": 0.6288595199584961,
+      "sentence": "I did not mean to hurt your feelings about your attention to the womanly details of dress and appearance and wished to compensate you for the loss of the gown you’ve been wearing to work with Wilfrid.”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4563659746463347,
+      "max_topic_prob": 0.6284535527229309,
+      "sentence": "Here, who you are matters more than what you wear.”"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.47969869557229466,
+      "max_topic_prob": 0.6231424808502197,
+      "sentence": "My thanks for it…and the gowns.”"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9854859452507808,
+      "max_topic_prob": 0.5977779030799866,
+      "sentence": "Mayhap if you were clothed when you attempted it, Edmee might have accepted it?” “’"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4537938636781187,
+      "max_topic_prob": 0.5715668797492981,
+      "sentence": "Her gown should be clean and her hair always groomed and under a veil. “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5150090054032419,
+      "max_topic_prob": 0.707371711730957,
+      "sentence": "So get dressed."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5107064238543126,
+      "max_topic_prob": 0.6037479639053345,
+      "sentence": "You have the best clothes."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6498899339603762,
+      "max_topic_prob": 0.5514112710952759,
+      "sentence": "So she’d have to go out in a damn sports bra and bike pants."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.04952971783069842,
+      "max_topic_prob": 0.5359928607940674,
+      "sentence": "Then put your pants on so I don’t have to wonder what that is hanging between your legs.”"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.12217330398238943,
+      "max_topic_prob": 0.5288076400756836,
+      "sentence": "Add the crooked smile, the long, lean body in jeans and flannel, and a woman might be tempted to hang a SOLD!"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7325395237142286,
+      "max_topic_prob": 0.5184353590011597,
+      "sentence": "She wore fuzzy purple socks, black flannel pants, and a hot pink sweatshirt that announced: T.G.I.F. THANK GOD I’M FEMALE."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

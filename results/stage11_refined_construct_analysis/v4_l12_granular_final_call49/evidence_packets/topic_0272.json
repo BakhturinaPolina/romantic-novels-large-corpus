@@ -1,0 +1,1198 @@
+{
+  "topic_id": 272,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "answer",
+        "didn",
+        "respond",
+        "question",
+        "reply",
+        "questions",
+        "say",
+        "anything",
+        "word",
+        "speak"
+      ],
+      "KeyBERT": [
+        "answering",
+        "lack",
+        "answers",
+        "refused",
+        "annoying",
+        "embarrassment",
+        "rushed",
+        "departure",
+        "spoken",
+        "destination"
+      ],
+      "POS": [
+        "departure",
+        "destination",
+        "annoying",
+        "appropriate",
+        "answers",
+        "embarrassment",
+        "possibility",
+        "evidence",
+        "lack",
+        "opportunity"
+      ],
+      "MMR": [
+        "departure",
+        "destination",
+        "answering",
+        "annoying",
+        "embarrassment",
+        "opportunity",
+        "rushed",
+        "upset",
+        "willing",
+        "shock"
+      ]
+    },
+    "stage08_snippets": [
+      "she didn’t speak a word until they got to their destination.",
+      "the high priestess had said very little to her in the day and a half leading up to her departure.",
+      "he should’ve known better than to think brenna would be content with the noncommittal answer he’d given her."
+    ],
+    "label_public": "Silence Held Until Arrival"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She didn’t want to hear it.",
+        "max_topic_prob": 0.7496484518051147,
+        "normalized_position": 0.6215641071111899,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 473
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She wanted to ask more questions, but she didn’t.",
+        "max_topic_prob": 0.7419315576553345,
+        "normalized_position": 0.3351658095406987,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She didn’t want to hear this from him.",
+        "max_topic_prob": 0.7010194063186646,
+        "normalized_position": 0.6492285866288349,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She didn’t move. “",
+        "max_topic_prob": 0.6977375745773315,
+        "normalized_position": 0.30714665720872497,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She didn’t move.",
+        "max_topic_prob": 0.6745753288269043,
+        "normalized_position": 0.41053378258556483,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She didn’t want to talk about the fight. “",
+        "max_topic_prob": 0.6726139783859253,
+        "normalized_position": 0.11668735591416918,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jane didn’t say anything.",
+        "max_topic_prob": 0.7178831100463867,
+        "normalized_position": 0.572344403882112,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jane didn’t say anything more.",
+        "max_topic_prob": 0.711246132850647,
+        "normalized_position": 0.64028136408156,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Unfortunately, she had nothing promising to say to him.",
+        "max_topic_prob": 0.7041727304458618,
+        "normalized_position": 0.24405662897337727,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She was going to the hospital, and this time, she would not take no for an answer.",
+        "max_topic_prob": 0.6798896193504333,
+        "normalized_position": 0.7202386252337281,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Did she say anything else?”",
+        "max_topic_prob": 0.672987163066864,
+        "normalized_position": 0.40842311459353575,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She didn’t know anymore.",
+        "max_topic_prob": 0.6718940734863281,
+        "normalized_position": 0.44323746772326594,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "How did she not know, anyway?",
+        "max_topic_prob": 0.6340628266334534,
+        "normalized_position": 0.6702959240647682,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 656
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "He didn’t speak.",
+        "max_topic_prob": 0.6069434881210327,
+        "normalized_position": 0.8218872138470128,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1199
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Her concern wasn’t without merit.",
+        "max_topic_prob": 0.562883734703064,
+        "normalized_position": 0.08961474036850921,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I said nothing.",
+        "max_topic_prob": 0.49712175130844116,
+        "normalized_position": 0.12032384142936907,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I asked, and she whined, her head low.",
+        "max_topic_prob": 0.6192734241485596,
+        "normalized_position": 0.44756038255795105,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Jon was giving Silke the full charm offensive, sitting too damn close and asking her where she was from, what sort of music she liked, and a hundred and one other questions I’ll bet she couldn’t answer.",
+        "max_topic_prob": 0.5455182790756226,
+        "normalized_position": 0.3584049278651321,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Christoph didn’t speak.",
+        "max_topic_prob": 0.5373817682266235,
+        "normalized_position": 0.2115415788620522,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "The women didn’t seem to know much German—at least, they could only speak it in one-word sentences—but even so, we didn’t talk much.",
+        "max_topic_prob": 0.4826873540878296,
+        "normalized_position": 0.4608526503485168,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I didn’t bother going over to explain we weren’t exactly her target audience.",
+        "max_topic_prob": 0.46186965703964233,
+        "normalized_position": 0.4525855081860917,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I stared at her shadowed face for any understanding, But found nothing.",
+        "max_topic_prob": 0.5197358131408691,
+        "normalized_position": 0.3695042095416277,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "She could not outrun them.",
+        "max_topic_prob": 0.5049445629119873,
+        "normalized_position": 0.8787028375428749,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 390
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Unlike the banshee, she was of no individual thought.",
+        "max_topic_prob": 0.49440446496009827,
+        "normalized_position": 0.8325537885874649,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "No other words needed to be spoken.",
+        "max_topic_prob": 0.4218415319919586,
+        "normalized_position": 0.44808231992516373,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "My words meant nothing in return.",
+        "max_topic_prob": 0.4079785943031311,
+        "normalized_position": 0.7168693483005925,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She didn’t say anything.",
+        "max_topic_prob": 0.8349008560180664,
+        "normalized_position": 0.8186338089061824,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She couldn’t speak.",
+        "max_topic_prob": 0.7497491836547852,
+        "normalized_position": 0.44260700389105057,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He also hadn’t answered her question. “",
+        "max_topic_prob": 0.7415146827697754,
+        "normalized_position": 0.9283398184176395,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He didn’t know what she was trying to say.",
+        "max_topic_prob": 0.7339043021202087,
+        "normalized_position": 0.8252269779507133,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She didn’t need to wait for an answer. “",
+        "max_topic_prob": 0.7273252010345459,
+        "normalized_position": 0.03588413316039775,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She couldn’t offer any answers to the young man considering her with such a somber expression. “",
+        "max_topic_prob": 0.7140415906906128,
+        "normalized_position": 0.7336792044963251,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She didn’t do anything.”",
+        "max_topic_prob": 0.7499223947525024,
+        "normalized_position": 0.5761032377001959,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She hasn’t done anything.” “",
+        "max_topic_prob": 0.6379780769348145,
+        "normalized_position": 0.552943887544648,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No, she didn’t,” Casper says. “",
+        "max_topic_prob": 0.6103137731552124,
+        "normalized_position": 0.7390252333218112,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Megan didn’t do anything.” “",
+        "max_topic_prob": 0.574608325958252,
+        "normalized_position": 0.5765641202903561,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Saida exudes confidence as if she has nothing to worry about. “",
+        "max_topic_prob": 0.5123953223228455,
+        "normalized_position": 0.5160732803318354,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "The woman is emaciated and wears no shoes.",
+        "max_topic_prob": 0.3565978705883026,
+        "normalized_position": 0.6232284825440719,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "She didn’t inquire.",
+        "max_topic_prob": 0.7753183841705322,
+        "normalized_position": 0.05273518441773726,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Janet didn’t give her time to answer.",
+        "max_topic_prob": 0.7212383151054382,
+        "normalized_position": 0.4372150849564857,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "She had no idea what was going on. “",
+        "max_topic_prob": 0.7191938161849976,
+        "normalized_position": 0.8414836303356817,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "She didn’t know what to do.",
+        "max_topic_prob": 0.6914997100830078,
+        "normalized_position": 0.2883340240364691,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Cheryl didn’t respond.",
+        "max_topic_prob": 0.6858124732971191,
+        "normalized_position": 0.22876087857438873,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "She didn’t want closure.",
+        "max_topic_prob": 0.6660813093185425,
+        "normalized_position": 0.7698922503108164,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She didn’t need me to comment on the fact that it had been. “",
+        "max_topic_prob": 0.6882787942886353,
+        "normalized_position": 0.15132124659319823,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She didn’t make it.” “",
+        "max_topic_prob": 0.6301912665367126,
+        "normalized_position": 0.6144092902002607,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She doesn’t know what she’s talking about.”",
+        "max_topic_prob": 0.613328218460083,
+        "normalized_position": 0.16009005806375162,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She barely let him say two words.",
+        "max_topic_prob": 0.6014368534088135,
+        "normalized_position": 0.8901528617134732,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I didn’t say anything.” “",
+        "max_topic_prob": 0.5923980474472046,
+        "normalized_position": 0.7243749259390924,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "This woman was deluded.",
+        "max_topic_prob": 0.5440567135810852,
+        "normalized_position": 0.6967650195520796,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Elish hung up the phone and said nothing else.",
+        "max_topic_prob": 0.5680701732635498,
+        "normalized_position": 0.9054445964432285,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I wonder if Elish had talked to her.",
+        "max_topic_prob": 0.5573793053627014,
+        "normalized_position": 0.4644049247606019,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1410
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Elish still didn’t say anything.",
+        "max_topic_prob": 0.5504745841026306,
+        "normalized_position": 0.6940082079343365,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1183
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The little chimera slut still hasn’t said a word.”",
+        "max_topic_prob": 0.5207028985023499,
+        "normalized_position": 0.8993707250341997,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Sometimes they opened their eyes, but they never had good things to say.",
+        "max_topic_prob": 0.5112084150314331,
+        "normalized_position": 0.920656634746922,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 602
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Elish had made no move to discuss Kerres with him after the scene in the bedroom so many days ago.",
+        "max_topic_prob": 0.4796488583087921,
+        "normalized_position": 0.15354309165526675,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 730
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Maybe she didn’t think I’d respond.",
+        "max_topic_prob": 0.7197445631027222,
+        "normalized_position": 0.5519393669193045,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She would understand enough not to ask any questions. “",
+        "max_topic_prob": 0.6175357103347778,
+        "normalized_position": 0.058701144300787635,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "But she wasn’t about to admit to any weaknesses.",
+        "max_topic_prob": 0.5559778213500977,
+        "normalized_position": 0.1607965522365879,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "It didn’t feel like we had anything left to say.",
+        "max_topic_prob": 0.5486158132553101,
+        "normalized_position": 0.855699212364393,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She hadn’t even texted me to give me the heads-up.",
+        "max_topic_prob": 0.5316300392150879,
+        "normalized_position": 0.5517907564274038,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Though Rachel had run into me in Dakota’s apartment that one morning, Kai hadn’t said a word about it.",
+        "max_topic_prob": 0.5236454010009766,
+        "normalized_position": 0.7870411651062565,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She didn’t respond.",
+        "max_topic_prob": 0.8579513430595398,
+        "normalized_position": 0.23934970926782959,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She didn’t demand an explanation.",
+        "max_topic_prob": 0.7672296762466431,
+        "normalized_position": 0.42114631541473835,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 846
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Ashley hadn’t deigned to reply to that remark, mostly because she couldn’t think of anything to say.",
+        "max_topic_prob": 0.7502325177192688,
+        "normalized_position": 0.0798623472172778,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She had no idea what had happened.",
+        "max_topic_prob": 0.711884617805481,
+        "normalized_position": 0.4599501601993592,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She had no idea what to do.",
+        "max_topic_prob": 0.6974285840988159,
+        "normalized_position": 0.8536845852616589,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "There was no excuse for her reaction.",
+        "max_topic_prob": 0.6855376362800598,
+        "normalized_position": 0.1755072979708081,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 402
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She didn’t answer.",
+        "max_topic_prob": 0.8547273874282837,
+        "normalized_position": 0.47492579284486797,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She had no idea what to say.",
+        "max_topic_prob": 0.7897830009460449,
+        "normalized_position": 0.5917825339790658,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Really, there was nothing she could say.",
+        "max_topic_prob": 0.764427661895752,
+        "normalized_position": 0.04967973754100922,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She didn’t wait for anything else to be said.",
+        "max_topic_prob": 0.734217643737793,
+        "normalized_position": 0.043430713950945166,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You didn’t say anything,” she accused.",
+        "max_topic_prob": 0.7096068859100342,
+        "normalized_position": 0.9809404780503046,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She had no idea what to do.",
+        "max_topic_prob": 0.6974285840988159,
+        "normalized_position": 0.3211998125292923,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She can’t answer it.",
+        "max_topic_prob": 0.7607524394989014,
+        "normalized_position": 0.6421961752004935,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "But of course she doesn’t answer it.",
+        "max_topic_prob": 0.7413808107376099,
+        "normalized_position": 0.6421190623072177,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She doesn’t say a word.",
+        "max_topic_prob": 0.7406794428825378,
+        "normalized_position": 0.3170882171499075,
+        "tertile": "begin",
+        "chapter_index": 26,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She doesn’t know how to answer it.",
+        "max_topic_prob": 0.7303582429885864,
+        "normalized_position": 0.6422732880937693,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She doesn’t say anything, though.",
+        "max_topic_prob": 0.7134080529212952,
+        "normalized_position": 0.4727791486736582,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Claire doesn’t say anything.",
+        "max_topic_prob": 0.6731923818588257,
+        "normalized_position": 0.47863972856261566,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t ask.",
+        "max_topic_prob": 0.7585402727127075,
+        "normalized_position": 0.9163179916317992,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 3504
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t know.",
+        "max_topic_prob": 0.6995289325714111,
+        "normalized_position": 0.44534518828451886,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1703
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t argue.",
+        "max_topic_prob": 0.6626842021942139,
+        "normalized_position": 0.2659518828451883,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1017
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t want to understand, but she did.",
+        "max_topic_prob": 0.659235954284668,
+        "normalized_position": 0.3930439330543933,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1503
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She didn’t want to rush into anything.",
+        "max_topic_prob": 0.6544473171234131,
+        "normalized_position": 0.21731171548117154,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 831
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "From where she was sitting, she didn’t see any.",
+        "max_topic_prob": 0.6488028764724731,
+        "normalized_position": 0.8357740585774058,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 3196
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She wasn’t asking him, and since he didn’t know the answer, he didn’t respond.",
+        "max_topic_prob": 0.7516987919807434,
+        "normalized_position": 0.4883053522743579,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She opened her mouth to respond, but no words came out.",
+        "max_topic_prob": 0.708868682384491,
+        "normalized_position": 0.5123642799062514,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She had no idea what she would say to a relative she’d never met.",
+        "max_topic_prob": 0.6869477033615112,
+        "normalized_position": 0.49581479887119145,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Elle said, “Nothing.”",
+        "max_topic_prob": 0.6391347646713257,
+        "normalized_position": 0.4975845410628019,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Lyra didn’t answer Kirin’s knock or her cell phone when he called her.",
+        "max_topic_prob": 0.6309046745300293,
+        "normalized_position": 0.5234610417563496,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She didn’t say it straight out.",
+        "max_topic_prob": 0.620546817779541,
+        "normalized_position": 0.518869278232171,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 328
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.007670484396343385,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.007081038552321007,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.011148962527098173,
+        "n_sentences": 144
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.006624605678233439,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.00718132854578097,
+        "n_sentences": 80
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.008602853098116084,
+        "n_sentences": 79
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005516995906744973,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.007865570253843403,
+        "n_sentences": 66
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0005526083112290009,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0013521344407958276,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0006949270326615705,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0015546519971298732,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.001560549313358302,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0011207621182404036,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0008163265306122449,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0012026458208057728,
+        "n_sentences": 8
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 92
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "8.5",
+    "taxonomy_secondary_name": "Movement, Transit & Spatial Transition",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

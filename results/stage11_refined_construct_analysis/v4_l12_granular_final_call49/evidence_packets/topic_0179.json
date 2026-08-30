@@ -1,0 +1,982 @@
+{
+  "topic_id": 179,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "lose",
+        "lost",
+        "give",
+        "losing",
+        "up",
+        "giving",
+        "don",
+        "loss",
+        "want",
+        "won"
+      ],
+      "KeyBERT": [
+        "loose",
+        "dangerously",
+        "surely",
+        "ripping",
+        "tries",
+        "assure"
+      ],
+      "POS": [
+        "affection",
+        "bigger",
+        "difference",
+        "purpose",
+        "purse",
+        "loose",
+        "warmth"
+      ],
+      "MMR": [
+        "dangerously",
+        "ripping",
+        "afford",
+        "affection",
+        "purse",
+        "honestly",
+        "cared",
+        "loose",
+        "warmth",
+        "admit"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll lose your reason, wishing yourself dead.",
+      "i am fearful we’ll still lose him.",
+      "but you’ll lose me?"
+    ],
+    "label_public": "Dreading What You Stand to Lose"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I will not lose you.” “",
+        "max_topic_prob": 0.7315020561218262,
+        "normalized_position": 0.40381205673758863,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I lost him.",
+        "max_topic_prob": 0.6114113330841064,
+        "normalized_position": 0.4035904255319149,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I will not risk losing Seti because you two imbeciles were impatient.” “",
+        "max_topic_prob": 0.5473230481147766,
+        "normalized_position": 0.5540780141843972,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The only thing I don’t doubt is that I’ve lost my mind.” “",
+        "max_topic_prob": 0.5292931795120239,
+        "normalized_position": 0.24689716312056736,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Don’t let that bastard win. “",
+        "max_topic_prob": 0.5171678066253662,
+        "normalized_position": 0.5150709219858156,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You will not have him, Setekh!”",
+        "max_topic_prob": 0.4309670329093933,
+        "normalized_position": 0.8639184397163121,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Did I lose you already?”",
+        "max_topic_prob": 0.6447691321372986,
+        "normalized_position": 0.4308290584146947,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 588
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "God, he just didn’t give up. “",
+        "max_topic_prob": 0.5886330008506775,
+        "normalized_position": 0.469551547244746,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 461
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I was under the impression you’d rather I get and stay lost.”",
+        "max_topic_prob": 0.5879063606262207,
+        "normalized_position": 0.9892437531027636,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "losing interest in me.”",
+        "max_topic_prob": 0.5582919120788574,
+        "normalized_position": 0.6942743670362402,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’m not helpless.” “",
+        "max_topic_prob": 0.5379761457443237,
+        "normalized_position": 0.588283964918087,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 479
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "There wasn’t a moment to lose.",
+        "max_topic_prob": 0.5178107023239136,
+        "normalized_position": 0.9204037729604501,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I thought I was going to lose you.” “",
+        "max_topic_prob": 0.6918095946311951,
+        "normalized_position": 0.9167192429022082,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Don’t cave, Chris.",
+        "max_topic_prob": 0.3862287700176239,
+        "normalized_position": 0.8813880126182966,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You’ve come too far to give up now.”",
+        "max_topic_prob": 0.629548192024231,
+        "normalized_position": 0.02115219260533104,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "It’s almost impossible to keep those three still for long.”",
+        "max_topic_prob": 0.4500846266746521,
+        "normalized_position": 0.6899398108340499,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "If you hadn’t been close to losing yourself, too, you wouldn’t have heard me.”",
+        "max_topic_prob": 0.6547842025756836,
+        "normalized_position": 0.9672148885522615,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ll settle for not losing, frankly.” “",
+        "max_topic_prob": 0.643415093421936,
+        "normalized_position": 0.6750703310971651,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What’s to lose?",
+        "max_topic_prob": 0.6373381018638611,
+        "normalized_position": 0.6700930534516338,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’m losing track.”",
+        "max_topic_prob": 0.6296593546867371,
+        "normalized_position": 0.6995239125730361,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I won’t lose myself to you,” I whispered. “",
+        "max_topic_prob": 0.6253463625907898,
+        "normalized_position": 0.6699848517636875,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I needed you to keep me from losing myself.",
+        "max_topic_prob": 0.6174116134643555,
+        "normalized_position": 0.9671066868643151,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I don’t know what I’d do if I ever lost you.” “",
+        "max_topic_prob": 0.7402127385139465,
+        "normalized_position": 0.8718435264924829,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "You‘re too good for him.” “",
+        "max_topic_prob": 0.5040031671524048,
+        "normalized_position": 0.8169610275872136,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Yes, I knew I was taking a chance, but now that the mask has been ripped away from him, you can’t tell me you don’t want to take A.J. as far away from him as humanly possible.”",
+        "max_topic_prob": 0.45623916387557983,
+        "normalized_position": 0.8408991388118523,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I kept nothing from you!",
+        "max_topic_prob": 0.4490320086479187,
+        "normalized_position": 0.6984381842066851,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Save it.\"",
+        "max_topic_prob": 0.417133092880249,
+        "normalized_position": 0.4624142460954605,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I was losing him.",
+        "max_topic_prob": 0.6559527516365051,
+        "normalized_position": 0.9031037093111279,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I think you lost something.”",
+        "max_topic_prob": 0.6498253345489502,
+        "normalized_position": 0.9242997728993188,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I know that means I lose you.",
+        "max_topic_prob": 0.6062999367713928,
+        "normalized_position": 0.9583648750946253,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Lose, lose.",
+        "max_topic_prob": 0.570472240447998,
+        "normalized_position": 0.04958364875094625,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You never gave up.",
+        "max_topic_prob": 0.5455434322357178,
+        "normalized_position": 0.7613550340651022,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "First person to refuse to answer loses.”",
+        "max_topic_prob": 0.541229248046875,
+        "normalized_position": 0.25246025738077216,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I know you lost it all in a game of chance.”",
+        "max_topic_prob": 0.6738104820251465,
+        "normalized_position": 0.8911225760540828,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Then, softly, “I lost you.”",
+        "max_topic_prob": 0.6390011310577393,
+        "normalized_position": 0.9095356698096424,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "It seems you have lost your way.”",
+        "max_topic_prob": 0.6349155306816101,
+        "normalized_position": 0.41932040562177547,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "lost everything.”",
+        "max_topic_prob": 0.6212504506111145,
+        "normalized_position": 0.889254581035403,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You lost it.",
+        "max_topic_prob": 0.6166266202926636,
+        "normalized_position": 0.1337840241949831,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You lost it.",
+        "max_topic_prob": 0.6166266202926636,
+        "normalized_position": 0.14356876000711616,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 374
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "We were saving you from yourself!” “",
+        "max_topic_prob": 0.5114246606826782,
+        "normalized_position": 0.9188748471259682,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I risk losing the part if he finds out I was just recovering from being beaten up.",
+        "max_topic_prob": 0.4735739231109619,
+        "normalized_position": 0.4304932735426009,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I can’t lose you.",
+        "max_topic_prob": 0.7356573343276978,
+        "normalized_position": 0.8546537602382726,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I can’t lose what we all have.",
+        "max_topic_prob": 0.686825156211853,
+        "normalized_position": 0.2808637379002234,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What do you mean lose her?”",
+        "max_topic_prob": 0.6146306395530701,
+        "normalized_position": 0.6430379746835443,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I’m scared as hell to lose her, man.”",
+        "max_topic_prob": 0.6020445823669434,
+        "normalized_position": 0.6427401340282949,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You lose her.",
+        "max_topic_prob": 0.5779895186424255,
+        "normalized_position": 0.43633655994043186,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I’m on the verge of losing my shit.",
+        "max_topic_prob": 0.5745858550071716,
+        "normalized_position": 0.4345495160089352,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You won’t lose me.”",
+        "max_topic_prob": 0.762332558631897,
+        "normalized_position": 0.7900624349635796,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I’m not going to lose you again.”",
+        "max_topic_prob": 0.7487766146659851,
+        "normalized_position": 0.7814776274713839,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I lost you once.”",
+        "max_topic_prob": 0.7024075388908386,
+        "normalized_position": 0.7809573361082206,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I got lost.”",
+        "max_topic_prob": 0.6431304812431335,
+        "normalized_position": 0.4399063475546306,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 603
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You haven’t lost it yet.",
+        "max_topic_prob": 0.6213103532791138,
+        "normalized_position": 0.31165452653485953,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I had lost everyone I had ever loved.",
+        "max_topic_prob": 0.5526382923126221,
+        "normalized_position": 0.5,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I almost lost you,” he said. “",
+        "max_topic_prob": 0.6539919972419739,
+        "normalized_position": 0.9890925346446133,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You can’t give up.",
+        "max_topic_prob": 0.6293051242828369,
+        "normalized_position": 0.8770675011175681,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You just wouldn’t give up.",
+        "max_topic_prob": 0.610619843006134,
+        "normalized_position": 0.03880196691998212,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Lose the game, however, and we will have no need of you.” “",
+        "max_topic_prob": 0.6036076545715332,
+        "normalized_position": 0.34358515869468037,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I just kept running that stupid mantra through my head, ‘Never give up . . .’ ” “ ‘",
+        "max_topic_prob": 0.5933026075363159,
+        "normalized_position": 0.9713008493518105,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I almost lost you more than once this last year.",
+        "max_topic_prob": 0.5922349095344543,
+        "normalized_position": 0.4039338399642378,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "All is not lost, Will.” “",
+        "max_topic_prob": 0.6171496510505676,
+        "normalized_position": 0.23089983022071306,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Like, it doesn’t seem real, that I can really do this, because he’s just gonna lose it.” “",
+        "max_topic_prob": 0.5887883901596069,
+        "normalized_position": 0.5093378607809848,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’d like nothing more than to move past one more time I’ve failed someone for whom I care deeply.” “",
+        "max_topic_prob": 0.5633834600448608,
+        "normalized_position": 0.6747028862478778,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "And I know you know this, but the feeling that you’ve lost everything?",
+        "max_topic_prob": 0.5621951818466187,
+        "normalized_position": 0.1592529711375212,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "That you knew we were gonna fail the whole time?” “",
+        "max_topic_prob": 0.5117839574813843,
+        "normalized_position": 0.48488964346349744,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "More aptly: how do I know when to give up? “",
+        "max_topic_prob": 0.49237504601478577,
+        "normalized_position": 0.634974533106961,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I just figured I wouldn’t be able to keep up, and I didn’t want to delay the retreat.",
+        "max_topic_prob": 0.4313466548919678,
+        "normalized_position": 0.17492138364779874,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Lost a lot of men doing it, too.",
+        "max_topic_prob": 0.3907713294029236,
+        "normalized_position": 0.5778301886792453,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’m losing you.” “",
+        "max_topic_prob": 0.7560015916824341,
+        "normalized_position": 0.4116668399708849,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You will never lose me.”",
+        "max_topic_prob": 0.6901181936264038,
+        "normalized_position": 0.4118748050327545,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I hate being lost.”",
+        "max_topic_prob": 0.648430585861206,
+        "normalized_position": 0.7442029739003847,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You’re not going to fall.”",
+        "max_topic_prob": 0.5290379524230957,
+        "normalized_position": 0.06540501195799106,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "If he loses, he’ll be dead, and you’ll never see him again.",
+        "max_topic_prob": 0.5250728130340576,
+        "normalized_position": 0.15638972652594363,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You see, it’s useful to lose something you love.",
+        "max_topic_prob": 0.5131581425666809,
+        "normalized_position": 0.4024123947176874,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 206
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.004489942528735632,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0028362442155545602,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0031098825155494126,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0022494151520604643,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0020049008687903764,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.003427366200896388,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.002298598949211909,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.00345821325648415,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0007342143906020558,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.000836470096194061,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0003451251078515962,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0009175842509175843,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0007936507936507937,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00031720856463124506,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0008200082000820008,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 73
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

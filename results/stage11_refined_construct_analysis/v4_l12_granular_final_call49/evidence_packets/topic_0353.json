@@ -1,0 +1,835 @@
+{
+  "topic_id": 353,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "naked",
+        "nudity",
+        "nude",
+        "nakedness",
+        "clothes",
+        "completely",
+        "re",
+        "you",
+        "get",
+        "cover"
+      ],
+      "KeyBERT": [
+        "pictured",
+        "comfortable",
+        "uh",
+        "fully"
+      ],
+      "POS": [
+        "concept",
+        "impressive",
+        "plastic",
+        "excited",
+        "comfortable"
+      ],
+      "MMR": [
+        "concept",
+        "bursting",
+        "pictured",
+        "indicated",
+        "object",
+        "dreamed",
+        "plastic",
+        "demanded",
+        "excited",
+        "comfortable"
+      ]
+    },
+    "stage08_snippets": [
+      "so, i’ll be naked for this?” “",
+      "bring a t-shirt; she’ll be naked when you take her.” “",
+      "i'll try some logic first, and if that doesn't work, maybe i'll just strip naked and see what happens. \""
+    ],
+    "label_public": "Joking About Being Naked"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Naked. “",
+        "max_topic_prob": 0.8260297179222107,
+        "normalized_position": 0.09608884596813133,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "But you won’t be getting me naked, ever.” “",
+        "max_topic_prob": 0.7935233116149902,
+        "normalized_position": 0.2797800855222969,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You can sleep naked if you want.” “",
+        "max_topic_prob": 0.7885472774505615,
+        "normalized_position": 0.8488087965791081,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I can’t exactly go home naked, can I?” “",
+        "max_topic_prob": 0.7788888216018677,
+        "normalized_position": 0.5164935858277336,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You’re not going anywhere, so naked shouldn’t be a problem.",
+        "max_topic_prob": 0.7326472401618958,
+        "normalized_position": 0.5166463042150274,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I lifted my dress over my head, revealing my naked body underneath. “",
+        "max_topic_prob": 0.690510094165802,
+        "normalized_position": 0.9857971899816738,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I hope you have as much mouth when I have you alone and naked.” “",
+        "max_topic_prob": 0.6690415740013123,
+        "normalized_position": 0.2794746487477092,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "So you didn’t bust the girls?\"",
+        "max_topic_prob": 0.4253167510032654,
+        "normalized_position": 0.03440742763517204,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "You’re not dumping anything on me, babe.",
+        "max_topic_prob": 0.4142412543296814,
+        "normalized_position": 0.33500819224467504,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Ha!",
+        "max_topic_prob": 0.3429528474807739,
+        "normalized_position": 0.4610595303113053,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "HA!",
+        "max_topic_prob": 0.3429529070854187,
+        "normalized_position": 0.9958137100994244,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’m sitting here naked and I start feel self-conscious and fearful again.",
+        "max_topic_prob": 0.6353076100349426,
+        "normalized_position": 0.4942375886524823,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Then I start to undress. “",
+        "max_topic_prob": 0.6028783321380615,
+        "normalized_position": 0.844636524822695,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Undress for me, sweetheart.”",
+        "max_topic_prob": 0.5943629741668701,
+        "normalized_position": 0.56427304964539,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I love the idea of her being naked under her clothes.",
+        "max_topic_prob": 0.5875803232192993,
+        "normalized_position": 0.7244015957446809,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’ll concede she can wear something to bed, but no panties underneath.",
+        "max_topic_prob": 0.5824956893920898,
+        "normalized_position": 0.7252881205673759,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I know I’m grinning like a complete jerk, but he’s just so absolutely stunning right now, naked, bound and begging me.",
+        "max_topic_prob": 0.5763201117515564,
+        "normalized_position": 0.4790558510638298,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I like sleeping in men’s clothes anyway.",
+        "max_topic_prob": 0.5537556409835815,
+        "normalized_position": 0.39889633425305476,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Would she be naked?",
+        "max_topic_prob": 0.7355064749717712,
+        "normalized_position": 0.19061889250814332,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Naked again—a little easier this time.",
+        "max_topic_prob": 0.7236745357513428,
+        "normalized_position": 0.08599348534201955,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She was naked.",
+        "max_topic_prob": 0.705466628074646,
+        "normalized_position": 0.11661237785016286,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And what are they naked for?” “",
+        "max_topic_prob": 0.6924980878829956,
+        "normalized_position": 0.8278827361563518,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She felt naked.",
+        "max_topic_prob": 0.6911497116088867,
+        "normalized_position": 0.7786319218241042,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "But she’s naked,” said the young man.",
+        "max_topic_prob": 0.6906230449676514,
+        "normalized_position": 0.8479478827361564,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I feel a little naked,” he said, hoping she might have another gun for him. “",
+        "max_topic_prob": 0.6342644691467285,
+        "normalized_position": 0.16094117647058823,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "None of us would dare.”",
+        "max_topic_prob": 0.45821788907051086,
+        "normalized_position": 0.6564705882352941,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "When I tell you to strip naked, you strip naked.”",
+        "max_topic_prob": 0.7698497772216797,
+        "normalized_position": 0.3048690971372645,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Maybe I should keep you naked.",
+        "max_topic_prob": 0.7446777820587158,
+        "normalized_position": 0.37533643259114263,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Naked, on your knees, and sucking my cock.”",
+        "max_topic_prob": 0.7008439302444458,
+        "normalized_position": 0.9740641057010032,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I usually sleep naked, but left these on as a courtesy,” he said, smiling. “",
+        "max_topic_prob": 0.6727767586708069,
+        "normalized_position": 0.15023244433569855,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I’m barefoot and naked.",
+        "max_topic_prob": 0.6699077486991882,
+        "normalized_position": 0.6586738438952777,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I can’t examine you with your clothes on, obviously.",
+        "max_topic_prob": 0.6597868204116821,
+        "normalized_position": 0.5979936383655493,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Naked shoulders, naked chest, naked back. “",
+        "max_topic_prob": 0.7373040914535522,
+        "normalized_position": 0.08472714985639467,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I have never been so tightly wound up, so naked in my need.",
+        "max_topic_prob": 0.7371237874031067,
+        "normalized_position": 0.5894576786619361,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Caught naked under the covers. “",
+        "max_topic_prob": 0.7304544448852539,
+        "normalized_position": 0.9581855043081602,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I find it incredibly erotic to catch glimpses of you naked.”",
+        "max_topic_prob": 0.7129038572311401,
+        "normalized_position": 0.6065213718533536,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 565
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "One happens to be half-naked in front of me now.",
+        "max_topic_prob": 0.6892678737640381,
+        "normalized_position": 0.32716675114039534,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "There’s just too much naked.",
+        "max_topic_prob": 0.6602661609649658,
+        "normalized_position": 0.08464267612772428,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "And even more amazing if he was naked and wet.",
+        "max_topic_prob": 0.5450161695480347,
+        "normalized_position": 0.4482711306256861,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "If you didn’t have bottomless pockets. . .”",
+        "max_topic_prob": 0.5098791122436523,
+        "normalized_position": 0.8470087815587267,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Maggie had seen and felt enough of Noah Fox to know that he would look amazing naked.",
+        "max_topic_prob": 0.5083649754524231,
+        "normalized_position": 0.4481339187705818,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I asked, peeling off my jacket and shirt so I could get out of the Kevlar.",
+        "max_topic_prob": 0.485392689704895,
+        "normalized_position": 0.6488473767885533,
+        "tertile": "middle",
+        "chapter_index": 45,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He wouldn't notice me even if I went naked.",
+        "max_topic_prob": 0.7028751373291016,
+        "normalized_position": 0.13136314405075042,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Then I’m going to make love to you,” I said as I stripped off my clothes.",
+        "max_topic_prob": 0.7001641988754272,
+        "normalized_position": 0.9593068234565991,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I removed the towel from around her body, my gaze drinking in her nakedness and sizing up her perfect backside. “",
+        "max_topic_prob": 0.6635981798171997,
+        "normalized_position": 0.6038991180566301,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "No other boy had seen me completely naked.",
+        "max_topic_prob": 0.6446454524993896,
+        "normalized_position": 0.5783691784001238,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I still felt naked.",
+        "max_topic_prob": 0.6407617330551147,
+        "normalized_position": 0.14111093919232554,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Then she stepped out of the bottoms until she stood dripping wet and completely naked in front of me.",
+        "max_topic_prob": 0.6275072693824768,
+        "normalized_position": 0.09175305585641343,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Naked?”",
+        "max_topic_prob": 0.8378212451934814,
+        "normalized_position": 0.356085626911315,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Gonna get you naked now.”",
+        "max_topic_prob": 0.8152101039886475,
+        "normalized_position": 0.21688073394495413,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I want you totally naked inside and out.”",
+        "max_topic_prob": 0.7917541861534119,
+        "normalized_position": 0.5970642201834863,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "As soon as they departed, I asked, “You totally naked under this dress?",
+        "max_topic_prob": 0.7757483720779419,
+        "normalized_position": 0.4437920489296636,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Naked.",
+        "max_topic_prob": 0.7502825260162354,
+        "normalized_position": 0.2870948012232416,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I was already naked enough before her.",
+        "max_topic_prob": 0.727656364440918,
+        "normalized_position": 0.3565749235474006,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 401
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Are you naked?” “",
+        "max_topic_prob": 0.8371471166610718,
+        "normalized_position": 0.6805416963649323,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Am I naked?”",
+        "max_topic_prob": 0.8304007649421692,
+        "normalized_position": 0.680327868852459,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You can’t possibly think I’m going to strip naked and bathe in front of you.” “",
+        "max_topic_prob": 0.7819275856018066,
+        "normalized_position": 0.10320741268709907,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Naked.",
+        "max_topic_prob": 0.7502825856208801,
+        "normalized_position": 0.914183891660727,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’ve seen you naked.",
+        "max_topic_prob": 0.729849636554718,
+        "normalized_position": 0.985816108339273,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 430
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He nods, smoothing his hand down my naked body.",
+        "max_topic_prob": 0.7124971151351929,
+        "normalized_position": 0.8481824661439772,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 280
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0032158317872603586,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0023063124626291963,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.003222572328845603,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.002621838371375694,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.009185146306259022,
+        "n_sentences": 70
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.002214022140221402,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.001779953276226499,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.002819548872180451,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.00031496062992125983,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0003302146395156852,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00010116337885685381,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0004143074161027482,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00039840637450199205,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0002632964718272775,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00012116806009935781,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 60
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "9.3",
+    "taxonomy_secondary_name": "Humor, Banter & Light Register",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

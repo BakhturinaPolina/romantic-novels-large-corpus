@@ -1,0 +1,956 @@
+{
+  "topic_id": 55,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "baby",
+        "pregnant",
+        "babies",
+        "children",
+        "pregnancy",
+        "kids",
+        "child",
+        "have",
+        "having",
+        "want"
+      ],
+      "KeyBERT": [
+        "pregnant",
+        "tightly",
+        "worries",
+        "assume",
+        "period",
+        "willingly",
+        "awhile",
+        "squeezed",
+        "handled",
+        "introduce"
+      ],
+      "POS": [
+        "pregnant",
+        "promising",
+        "awhile",
+        "worries",
+        "fashioned",
+        "sorts",
+        "magical",
+        "notion",
+        "period",
+        "distraction"
+      ],
+      "MMR": [
+        "pregnant",
+        "promising",
+        "introduce",
+        "worries",
+        "fashioned",
+        "discussing",
+        "notion",
+        "assure",
+        "draped",
+        "ought"
+      ]
+    },
+    "stage08_snippets": [
+      "just a little while longer and you'll be holding a baby in your arms.”",
+      "it’s been a while since i’ve taken care of babies, but i’m sure i’ll remember how.”",
+      "just because we slipped up once doesn’t mean you’ll get pregnant.” “"
+    ],
+    "label_public": "Worrying About An Unplanned Pregnancy"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I don’t know that I can have children, anyway.",
+        "max_topic_prob": 0.6442630887031555,
+        "normalized_position": 0.7527614571092832,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I prefer not to seduce children.”",
+        "max_topic_prob": 0.52981036901474,
+        "normalized_position": 0.354406580493537,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I did not think your babysitters would allow you to carry one around the city.” “",
+        "max_topic_prob": 0.5282379984855652,
+        "normalized_position": 0.5237759498629064,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I fed him a few small children as reward.”",
+        "max_topic_prob": 0.47957900166511536,
+        "normalized_position": 0.6807677242459851,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "There can be no more selfish creature than a child.",
+        "max_topic_prob": 0.4660050570964813,
+        "normalized_position": 0.06016451233842538,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Though I’m certain such a thing didn’t exist when I was born.",
+        "max_topic_prob": 0.43439096212387085,
+        "normalized_position": 0.6835879357618488,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Hopes of being adopted.",
+        "max_topic_prob": 0.5372377634048462,
+        "normalized_position": 0.227,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You can help me with the babies.”",
+        "max_topic_prob": 0.7310166358947754,
+        "normalized_position": 0.3362339514978602,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I don’t think a baby’s in the cards for me.” “",
+        "max_topic_prob": 0.728604793548584,
+        "normalized_position": 0.2195435092724679,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You just gave birth.”",
+        "max_topic_prob": 0.7060691118240356,
+        "normalized_position": 0.3282453637660485,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You stay with the babies.",
+        "max_topic_prob": 0.6822510361671448,
+        "normalized_position": 0.32781740370898715,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We’re having a baby … well, actually,” she corrected herself, “two of them.",
+        "max_topic_prob": 0.657158613204956,
+        "normalized_position": 0.23751783166904422,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A baby at home won’t make much difference to him, but it’ll be great for both of you.”",
+        "max_topic_prob": 0.6565208435058594,
+        "normalized_position": 0.21840228245363766,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I wanted the baby.",
+        "max_topic_prob": 0.6978718638420105,
+        "normalized_position": 0.08711389961389962,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The baby.” “",
+        "max_topic_prob": 0.6630077362060547,
+        "normalized_position": 0.03885135135135135,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "A family doesn’t necessarily mean a baby.” “",
+        "max_topic_prob": 0.6407890319824219,
+        "normalized_position": 0.3202220077220077,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "They said they’d chop up the baby and send her back to us in pieces.”",
+        "max_topic_prob": 0.6177889108657837,
+        "normalized_position": 0.2039092664092664,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I want you to really understand, before you say ‘I do’ on Saturday, that it’s very possible I won’t want to try again to have a baby.” “",
+        "max_topic_prob": 0.6058834791183472,
+        "normalized_position": 0.30743243243243246,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It’s just, you know, you suffered a miscarriage a few weeks ago, and now you’ve totally changed direction on how you feel about having a baby.",
+        "max_topic_prob": 0.5961419343948364,
+        "normalized_position": 0.0834942084942085,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I am not your child!",
+        "max_topic_prob": 0.49322471022605896,
+        "normalized_position": 0.8081713244228432,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "But I prayed for both children.",
+        "max_topic_prob": 0.46867284178733826,
+        "normalized_position": 0.2981470230862697,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The poor child.",
+        "max_topic_prob": 0.4238666892051697,
+        "normalized_position": 0.47433171324422846,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "There’s still children there…Toby for one.",
+        "max_topic_prob": 0.39092200994491577,
+        "normalized_position": 0.9696233292831106,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I need to find my baby.”",
+        "max_topic_prob": 0.7217077016830444,
+        "normalized_position": 0.12775651540003646,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Cooperate or you’ll never see your babies again.",
+        "max_topic_prob": 0.6833077669143677,
+        "normalized_position": 0.04866047020229634,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Cooperate or you’ll never see your babies again.’",
+        "max_topic_prob": 0.6805746555328369,
+        "normalized_position": 0.08237652633497357,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Our babies, ” he emphasized. “",
+        "max_topic_prob": 0.678409218788147,
+        "normalized_position": 0.06998359759431383,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "They said cooperate or we’d never see our babies again.",
+        "max_topic_prob": 0.6289515495300293,
+        "normalized_position": 0.06980134864224531,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "A baby.",
+        "max_topic_prob": 0.6256705522537231,
+        "normalized_position": 0.021323127392017496,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "The off- spring follow the habits of the parents.”",
+        "max_topic_prob": 0.40218520164489746,
+        "normalized_position": 0.5673019297614766,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "But first you’ll have to prove my baby is yours, and guess what?",
+        "max_topic_prob": 0.7204698920249939,
+        "normalized_position": 0.8529918209212226,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Do you want to have kids?”",
+        "max_topic_prob": 0.6940104961395264,
+        "normalized_position": 0.26517434352130864,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "A baby?",
+        "max_topic_prob": 0.673113226890564,
+        "normalized_position": 0.8478260869565217,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The truth was, there’d never be a right time to have a baby.",
+        "max_topic_prob": 0.64835524559021,
+        "normalized_position": 0.8953938872148084,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "If you’re pregnant you have no right to keep me away from my kid, and this time I’ll take you to court if I have to.” “",
+        "max_topic_prob": 0.647616446018219,
+        "normalized_position": 0.8508394317692639,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’d like to have three kids.",
+        "max_topic_prob": 0.6398637890815735,
+        "normalized_position": 0.266250538097288,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "This is for the baby.”",
+        "max_topic_prob": 0.7427786588668823,
+        "normalized_position": 0.6980533525594809,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m not sure I want children with you right away.” “",
+        "max_topic_prob": 0.7273313999176025,
+        "normalized_position": 0.6177361211247296,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I wish I could just pop the baby out now.” “",
+        "max_topic_prob": 0.687604546546936,
+        "normalized_position": 0.2895457822638789,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Would you want to have a baby or travel the world?” “",
+        "max_topic_prob": 0.6835375428199768,
+        "normalized_position": 0.8112472963229993,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I don’t think I’d want to bring a baby into the picture now to interrupt our fun. “",
+        "max_topic_prob": 0.6829047203063965,
+        "normalized_position": 0.8095169430425379,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Maybe we’ll make a baby,” she grins. “",
+        "max_topic_prob": 0.670584499835968,
+        "normalized_position": 0.29228550829127614,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But, I thought we’d share the baby.”",
+        "max_topic_prob": 0.7413774728775024,
+        "normalized_position": 0.35337879727216365,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But what about having another child or children?",
+        "max_topic_prob": 0.675294041633606,
+        "normalized_position": 0.9960322380657161,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 536
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "My beautiful babies.”",
+        "max_topic_prob": 0.6689807176589966,
+        "normalized_position": 0.7093614383137011,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Somehow, she’d find the will to live without him in her life—baby or no baby. “",
+        "max_topic_prob": 0.6463070511817932,
+        "normalized_position": 0.9703657780533168,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’ve had the kids ever since.” “",
+        "max_topic_prob": 0.6349895000457764,
+        "normalized_position": 0.6086794792312461,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "How are our babies doing?”",
+        "max_topic_prob": 0.6264954805374146,
+        "normalized_position": 0.28257904525728456,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 487
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You lost the baby.”",
+        "max_topic_prob": 0.750758171081543,
+        "normalized_position": 0.2843016069221261,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What if she loses the baby?” “",
+        "max_topic_prob": 0.7293413877487183,
+        "normalized_position": 0.6355583024309848,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Don’t worry about a thing except you and the baby.",
+        "max_topic_prob": 0.7199118733406067,
+        "normalized_position": 0.11763494025545941,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She and the baby are doing okay, though, right?” “",
+        "max_topic_prob": 0.6488736271858215,
+        "normalized_position": 0.5358467243510506,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What a couple of babies.” “",
+        "max_topic_prob": 0.6432429552078247,
+        "normalized_position": 0.7222908941079522,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I can’t wait until the baby comes so you can stop carrying me up and down the stairs,” his wife added. “",
+        "max_topic_prob": 0.638654351234436,
+        "normalized_position": 0.3197362999587969,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "My baby is twenty-one, I need to talk to him.”",
+        "max_topic_prob": 0.6053109169006348,
+        "normalized_position": 0.09851331481784022,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "How come he’s your baby when we’re celebrating and my son when he’s being rebellious?” “",
+        "max_topic_prob": 0.5741516947746277,
+        "normalized_position": 0.09884005881391929,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "True, and if the child is born with the power, you and I will need to ensure that Symeon’s gaze remains elsewhere.”",
+        "max_topic_prob": 0.5227342844009399,
+        "normalized_position": 0.014540107825518706,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "History dictates that the next born will be unusually powerful and that power will be magnified even further in a male child.” “",
+        "max_topic_prob": 0.4463158845901489,
+        "normalized_position": 0.012579643849044274,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Well my firstborn’s already taken by the Dark Lord, so how about we just make one instead?” “",
+        "max_topic_prob": 0.5233614444732666,
+        "normalized_position": 0.4760649514972585,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "You know you can always come here if you need some mothering.",
+        "max_topic_prob": 0.5198116302490234,
+        "normalized_position": 0.5486081822016027,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Abort.",
+        "max_topic_prob": 0.5127503871917725,
+        "normalized_position": 0.3374103753690426,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "You’re born for it.”",
+        "max_topic_prob": 0.48855698108673096,
+        "normalized_position": 0.25875158161113454,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Like you know those Buzzfeed articles where people text the wrong number while going into labor and then these randos show up with diapers and baby formula and they become besties?” “",
+        "max_topic_prob": 0.48535698652267456,
+        "normalized_position": 0.5719105862505272,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I had more babysitters than I could name.",
+        "max_topic_prob": 0.4372568130493164,
+        "normalized_position": 0.8712568536482497,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "What about after the baby is born?” “",
+        "max_topic_prob": 0.7256855964660645,
+        "normalized_position": 0.3862928348909657,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "And you can vouch that they’re decent people and they’ll let me keep the baby?” “",
+        "max_topic_prob": 0.6684560775756836,
+        "normalized_position": 0.4292142609899619,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Rest assured, her baby will want for nothing and be thoroughly spoilt by its mother’s employers.”",
+        "max_topic_prob": 0.6140064597129822,
+        "normalized_position": 0.4963655244029076,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "If you went to work for them you could keep the baby – or give it up if you preferred.”",
+        "max_topic_prob": 0.6059943437576294,
+        "normalized_position": 0.42125302872966425,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "If we get married quickly enough, people won’t realise–” “But it’s not his baby, is it, Effie?”",
+        "max_topic_prob": 0.6012052297592163,
+        "normalized_position": 0.33402561439944617,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "And do look out for anything small for the baby, Euphemia.",
+        "max_topic_prob": 0.5516402125358582,
+        "normalized_position": 0.6621668397369332,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 27
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.005483458234326449,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0031203195207189214,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004976155919552146,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.003633720930232558,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.006209386281588448,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004752646359904947,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.004201680672268907,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005156115726152965,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.00020100502512562814,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.000744205826068467,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0001210800339024095,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0006574621959237344,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00047214353163361664,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0006121824303642485,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 70
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.5",
+    "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

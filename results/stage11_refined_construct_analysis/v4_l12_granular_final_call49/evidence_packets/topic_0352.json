@@ -1,0 +1,857 @@
+{
+  "topic_id": 352,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "try",
+        "trying",
+        "least",
+        "ll",
+        "tried",
+        "give",
+        "anyone",
+        "sometime",
+        "preziosa",
+        "want"
+      ],
+      "KeyBERT": [
+        "willing",
+        "uh",
+        "promising"
+      ],
+      "POS": [
+        "willing"
+      ],
+      "MMR": [
+        "promising",
+        "uh",
+        "honestly",
+        "willing"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll never know unless you give it a try.”",
+      "i’ll try anything once.”",
+      "i’ll do more than try."
+    ],
+    "label_public": "Daring Someone to Try"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Others have tried and they’ve all failed.",
+        "max_topic_prob": 0.6023157835006714,
+        "normalized_position": 0.7527106466361855,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1978
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "And if I fail?” “",
+        "max_topic_prob": 0.45347508788108826,
+        "normalized_position": 0.12749836708033965,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 968
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "A new one we’re trying out.",
+        "max_topic_prob": 0.44628942012786865,
+        "normalized_position": 0.46910516002612673,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 3583
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Any woman would do.",
+        "max_topic_prob": 0.37571895122528076,
+        "normalized_position": 0.40444154147615935,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 3088
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "But only once.",
+        "max_topic_prob": 0.3617748022079468,
+        "normalized_position": 0.6657086871325931,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1312
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Try.”",
+        "max_topic_prob": 0.801974892616272,
+        "normalized_position": 0.11179337231968811,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll try.”",
+        "max_topic_prob": 0.7626590132713318,
+        "normalized_position": 0.8369395711500974,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll try.”",
+        "max_topic_prob": 0.7626590132713318,
+        "normalized_position": 0.8751461988304093,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And I promise I’m going to try.”",
+        "max_topic_prob": 0.7582567930221558,
+        "normalized_position": 0.8008771929824562,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 416
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll try.” “",
+        "max_topic_prob": 0.7514631748199463,
+        "normalized_position": 0.7461013645224172,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Just try me.”",
+        "max_topic_prob": 0.7213883399963379,
+        "normalized_position": 0.11803118908382067,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Try, please.”",
+        "max_topic_prob": 0.7521924376487732,
+        "normalized_position": 0.013657056145675266,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’m trying.”",
+        "max_topic_prob": 0.7002161741256714,
+        "normalized_position": 0.8010875063227112,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 496
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "No, I think I’ll try again.”",
+        "max_topic_prob": 0.6805939674377441,
+        "normalized_position": 0.2847749114820435,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’ll let you try again if you like.”",
+        "max_topic_prob": 0.6614634394645691,
+        "normalized_position": 0.28072837632776937,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "We’ll have you try a lot of things when we get there.”",
+        "max_topic_prob": 0.6436900496482849,
+        "normalized_position": 0.5053110773899848,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "It’s a good thing you haven’t tried.",
+        "max_topic_prob": 0.6380894780158997,
+        "normalized_position": 0.5904147698533131,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 464
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Xu Yourong replied, \"I was just bored and wanted to try.",
+        "max_topic_prob": 0.4841964840888977,
+        "normalized_position": 0.9849501948895626,
+        "tertile": "end",
+        "chapter_index": 102,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I’ll try.”",
+        "max_topic_prob": 0.7626590132713318,
+        "normalized_position": 0.14865269461077843,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 391
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You should try it.”",
+        "max_topic_prob": 0.7604632377624512,
+        "normalized_position": 0.9796407185628743,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 398
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I should get to try again.",
+        "max_topic_prob": 0.65202796459198,
+        "normalized_position": 0.8991017964071857,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Mmm… try harder then.”",
+        "max_topic_prob": 0.6489479541778564,
+        "normalized_position": 0.5538922155688623,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "But… couldn’t we try?",
+        "max_topic_prob": 0.627586841583252,
+        "normalized_position": 0.7437125748502994,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 584
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I must not be trying near hard enough.” “",
+        "max_topic_prob": 0.6078877449035645,
+        "normalized_position": 0.5537425149700599,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I want to try with you, if you’ll let me.” “",
+        "max_topic_prob": 0.7138628959655762,
+        "normalized_position": 0.9952761627906976,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Still, I’ll try again.”",
+        "max_topic_prob": 0.7072494029998779,
+        "normalized_position": 0.608406007751938,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I want to try,” she admitted breathlessly. “",
+        "max_topic_prob": 0.6573396921157837,
+        "normalized_position": 0.6445009689922481,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I always try to.”",
+        "max_topic_prob": 0.6476296186447144,
+        "normalized_position": 0.30583817829457366,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He tried.”",
+        "max_topic_prob": 0.6274341344833374,
+        "normalized_position": 0.5145348837209303,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "One would think you’d be bored by now and stop trying.” “",
+        "max_topic_prob": 0.6226863861083984,
+        "normalized_position": 0.6483769379844961,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He tried again. “",
+        "max_topic_prob": 0.5749971270561218,
+        "normalized_position": 0.08922462941847206,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He tried another one. “",
+        "max_topic_prob": 0.571235179901123,
+        "normalized_position": 0.5185290763968073,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Go for it.”",
+        "max_topic_prob": 0.56141197681427,
+        "normalized_position": 0.3674458380843786,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Eventually I’d do it.” “",
+        "max_topic_prob": 0.5515482425689697,
+        "normalized_position": 0.411060433295325,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I tried that.",
+        "max_topic_prob": 0.4927923083305359,
+        "normalized_position": 0.2291904218928164,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 429
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Does forever work for you?”",
+        "max_topic_prob": 0.44438856840133667,
+        "normalized_position": 0.9957240592930444,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I had to try. \"",
+        "max_topic_prob": 0.7498096227645874,
+        "normalized_position": 0.6984321411073003,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Just…give it a try first.",
+        "max_topic_prob": 0.725229799747467,
+        "normalized_position": 0.5269475747182754,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "We can at least try.\" \"",
+        "max_topic_prob": 0.6890459060668945,
+        "normalized_position": 0.6168544830965214,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "We'll try.",
+        "max_topic_prob": 0.6655755043029785,
+        "normalized_position": 0.5516903478686919,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "If you ever want to give it another try.",
+        "max_topic_prob": 0.6420493125915527,
+        "normalized_position": 0.9262616364527193,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "But can we try?",
+        "max_topic_prob": 0.6348658800125122,
+        "normalized_position": 0.9377756001959824,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Or at least attempt to.",
+        "max_topic_prob": 0.6231263875961304,
+        "normalized_position": 0.028974158183241974,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He’d try it again.",
+        "max_topic_prob": 0.5433776378631592,
+        "normalized_position": 0.6448707909162099,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’ve also done it before.”",
+        "max_topic_prob": 0.4817429482936859,
+        "normalized_position": 0.2361002349256069,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Please, do it.",
+        "max_topic_prob": 0.4301225543022156,
+        "normalized_position": 0.7384494909945184,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I tried to strip the Silex company, as well.",
+        "max_topic_prob": 0.3322058320045471,
+        "normalized_position": 0.10023492560689115,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "But why not give it a try?” “",
+        "max_topic_prob": 0.762131929397583,
+        "normalized_position": 0.06136027599802858,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "If it were just up to me, I’d give you a shot, but it’s not.",
+        "max_topic_prob": 0.45619964599609375,
+        "normalized_position": 0.5724494825036964,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Yes—I don’t know that we can get all four done, but I’d like to try.",
+        "max_topic_prob": 0.45380380749702454,
+        "normalized_position": 0.3703794972893051,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I mean, I’ll try.” “",
+        "max_topic_prob": 0.8214062452316284,
+        "normalized_position": 0.7589232775999052,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "First I tried traveling.",
+        "max_topic_prob": 0.5207175612449646,
+        "normalized_position": 0.4091070793311989,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Try sixth.” “",
+        "max_topic_prob": 0.5065677762031555,
+        "normalized_position": 0.8687299893276414,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I better do it.",
+        "max_topic_prob": 0.45902204513549805,
+        "normalized_position": 0.35183208822483103,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "If I tried, they would simply ignore me.",
+        "max_topic_prob": 0.5333149433135986,
+        "normalized_position": 0.6886134779240899,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Try to behave.",
+        "max_topic_prob": 0.47666454315185547,
+        "normalized_position": 0.3983991737671056,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "If I'm allergic to something, I've yet to encounter it.",
+        "max_topic_prob": 0.28436192870140076,
+        "normalized_position": 0.5347276013426284,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Want to try?”",
+        "max_topic_prob": 0.7943308353424072,
+        "normalized_position": 0.5380059230009872,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Then I’ll try something else.” “",
+        "max_topic_prob": 0.7794941067695618,
+        "normalized_position": 0.6542722386750027,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 447
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You should try it.”",
+        "max_topic_prob": 0.760463297367096,
+        "normalized_position": 0.5405286826807064,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’ll try.” “",
+        "max_topic_prob": 0.7514631748199463,
+        "normalized_position": 0.11999561259186135,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Try it,” he said. “",
+        "max_topic_prob": 0.7275760769844055,
+        "normalized_position": 0.5650981682571021,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m trying.”",
+        "max_topic_prob": 0.7002161741256714,
+        "normalized_position": 0.8903147965339475,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 144
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0024111675126903555,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.001958421211208195,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0019869742797218237,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.001968503937007874,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0022575579112681585,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0025609756097560977,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.001725625539257981,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.004430223972434162,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0004772700155112755,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0006560818790185015,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0007826767545003914,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0007429420505200594,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00010887316276537834,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 63
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "topic_id": 29,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "love",
+        "loved",
+        "you",
+        "loves",
+        "too",
+        "falling",
+        "fall",
+        "always",
+        "me",
+        "know"
+      ],
+      "KeyBERT": [
+        "happiness",
+        "genuinely",
+        "hated",
+        "forgive",
+        "dreamed",
+        "uttered",
+        "instantly",
+        "deserve",
+        "crushed",
+        "secretly"
+      ],
+      "POS": [
+        "spite",
+        "slightest",
+        "reflection",
+        "issue",
+        "delicate",
+        "actions"
+      ],
+      "MMR": [
+        "responding",
+        "uttered",
+        "spite",
+        "blinking",
+        "slightest",
+        "crushed",
+        "reflection",
+        "fired",
+        "apologize",
+        "delicate"
+      ]
+    },
+    "stage08_snippets": [
+      "i love you with everything i am, everything i’ve been, and everything i hope to be .” “",
+      "tell her i’ve always loved her.",
+      "i’ve always been in love with you.”"
+    ],
+    "label_public": "Confessing Long-Held Love"
+  },
+  "contextual": {
+    "sentences": [],
+    "books_sampled": [],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "3.1",
+    "taxonomy_secondary_name": "Positive Resolution, Relief & Emotional Payoff",
+    "taxonomy_confidence": 0.93,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

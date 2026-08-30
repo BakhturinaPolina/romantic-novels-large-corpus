@@ -1,0 +1,1130 @@
+{
+  "topic_id": 109,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "who",
+        "know",
+        "am",
+        "don",
+        "you",
+        "are",
+        "about",
+        "me",
+        "anyone",
+        "is"
+      ],
+      "KeyBERT": [
+        "recognize",
+        "hi",
+        "fitting"
+      ],
+      "POS": [
+        "identity",
+        "muffled",
+        "current",
+        "loose"
+      ],
+      "MMR": [
+        "dealing",
+        "identity",
+        "playfully",
+        "doubted",
+        "fitting",
+        "muffled",
+        "recognize",
+        "hi",
+        "thinks",
+        "loose"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve hardly heard a thing about you.”",
+      "anyone could’ve walked by.",
+      "even people who are close to you, who’ve known you far longer than i have, don’t know any more than what you’ve allowed them to see."
+    ],
+    "label_public": "Seeing Past A Guarded Identity"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Hey, you know them better than I do.”",
+        "max_topic_prob": 0.6603512763977051,
+        "normalized_position": 0.7601515971846237,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "It’s me.”",
+        "max_topic_prob": 0.649253249168396,
+        "normalized_position": 0.13995668651867893,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "It’s me.”",
+        "max_topic_prob": 0.649253249168396,
+        "normalized_position": 0.9022739577693557,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "You have to know you’re important to me, too.”",
+        "max_topic_prob": 0.6070696115493774,
+        "normalized_position": 0.5332972387655658,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Just as I know I can depend on you to be mine.”",
+        "max_topic_prob": 0.570541501045227,
+        "normalized_position": 0.9905251759610179,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "But if you really knew me, you would realize how very much I resented your taking control of my life by calling that inspector.”",
+        "max_topic_prob": 0.5331052541732788,
+        "normalized_position": 0.6226312939902545,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You don’t even know me, not really.”",
+        "max_topic_prob": 0.7362924814224243,
+        "normalized_position": 0.6626768226332971,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I know not only who you are but what you are.",
+        "max_topic_prob": 0.6816033124923706,
+        "normalized_position": 0.7559459039328462,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Who is it that wants to know?”",
+        "max_topic_prob": 0.6203685402870178,
+        "normalized_position": 0.3831804756723146,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "That would be me.”",
+        "max_topic_prob": 0.6049760580062866,
+        "normalized_position": 0.38286957873464944,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I know what I’m about.” “",
+        "max_topic_prob": 0.6040666103363037,
+        "normalized_position": 0.4392973729208767,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Aye, you know her, then?”",
+        "max_topic_prob": 0.6017268896102905,
+        "normalized_position": 0.5352090781905798,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You haven’t got a clue who I am.” “",
+        "max_topic_prob": 0.8194395303726196,
+        "normalized_position": 0.48194945848375453,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I just want to know who you really are.” “",
+        "max_topic_prob": 0.76201331615448,
+        "normalized_position": 0.5070196550340955,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Isn’t it strange that after everything that has happened between us, I still don’t know who you really are?” “",
+        "max_topic_prob": 0.7355714440345764,
+        "normalized_position": 0.3702366626554352,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She knows who you are.” “",
+        "max_topic_prob": 0.7080690860748291,
+        "normalized_position": 0.12494985960689932,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You wouldn’t like who I really am.” “",
+        "max_topic_prob": 0.652564287185669,
+        "normalized_position": 0.5072202166064982,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We don’t know that person’s identity.",
+        "max_topic_prob": 0.6341345310211182,
+        "normalized_position": 0.5477336542318492,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Tell me you didn’t know who he was when you met.”",
+        "max_topic_prob": 0.7233949899673462,
+        "normalized_position": 0.5109860664523044,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You don’t know anything about me.",
+        "max_topic_prob": 0.6519068479537964,
+        "normalized_position": 0.05707395498392283,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "That’d be me.” “",
+        "max_topic_prob": 0.6141806840896606,
+        "normalized_position": 0.49490889603429794,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You don’t know anything about us.” “",
+        "max_topic_prob": 0.6096199750900269,
+        "normalized_position": 0.8745980707395499,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You know that better than anyone else.” “",
+        "max_topic_prob": 0.6079797148704529,
+        "normalized_position": 0.9236334405144695,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I knew you were special.”",
+        "max_topic_prob": 0.5990606546401978,
+        "normalized_position": 0.9740085744908896,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Who are you?”",
+        "max_topic_prob": 0.7761393785476685,
+        "normalized_position": 0.20142857142857143,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Who are you?”",
+        "max_topic_prob": 0.7761393785476685,
+        "normalized_position": 0.20412698412698413,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "What are you?” “",
+        "max_topic_prob": 0.6460488438606262,
+        "normalized_position": 0.20444444444444446,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Well, you know him better than I do, that’s for sure.”",
+        "max_topic_prob": 0.6248786449432373,
+        "normalized_position": 0.44603174603174606,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Knowing what you’ve just told me, I’m even more amazed you were able to find me.” “",
+        "max_topic_prob": 0.5791010856628418,
+        "normalized_position": 0.1365079365079365,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Something about you is prickling my volkaane senses, but I cannot identify it.”",
+        "max_topic_prob": 0.5520251393318176,
+        "normalized_position": 0.2311111111111111,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Who are you?”",
+        "max_topic_prob": 0.7761393785476685,
+        "normalized_position": 0.7063941444551858,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Who are you?”",
+        "max_topic_prob": 0.7761393785476685,
+        "normalized_position": 0.9142383648667312,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Do I know you?”",
+        "max_topic_prob": 0.7095162868499756,
+        "normalized_position": 0.004281176633061732,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Oh, if I’d known it was you!”",
+        "max_topic_prob": 0.7070834636688232,
+        "normalized_position": 0.5116696588868941,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "If not me, who?”",
+        "max_topic_prob": 0.6898609399795532,
+        "normalized_position": 0.45573815771302306,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 471
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You don’t know her.” “",
+        "max_topic_prob": 0.6771031022071838,
+        "normalized_position": 0.17318049993094875,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It’s not often someone has no clue who I am.",
+        "max_topic_prob": 0.7426625490188599,
+        "normalized_position": 0.07280201564779207,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I know who I am.",
+        "max_topic_prob": 0.6914428472518921,
+        "normalized_position": 0.8158069221588649,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I know you.”",
+        "max_topic_prob": 0.6719748377799988,
+        "normalized_position": 0.9957565309640631,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Told you it wasn’t me.”",
+        "max_topic_prob": 0.6577644348144531,
+        "normalized_position": 0.1361888343720992,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Shouldn’t it be me?” “",
+        "max_topic_prob": 0.6529080867767334,
+        "normalized_position": 0.6675507227158202,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Anyway, because you know that particular aspect of me I would say you know me more than anyone.",
+        "max_topic_prob": 0.6492165327072144,
+        "normalized_position": 0.3577774830924281,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "You barely even know me.” “",
+        "max_topic_prob": 0.7174188494682312,
+        "normalized_position": 0.7946812671098944,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I’m Eve, Alex’s—” “I know who you are.”",
+        "max_topic_prob": 0.6123127937316895,
+        "normalized_position": 0.7023856081345327,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I knew you could be anything you wanted to be.”",
+        "max_topic_prob": 0.6031144857406616,
+        "normalized_position": 0.1939773171685569,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I know that I like you.”",
+        "max_topic_prob": 0.5781182050704956,
+        "normalized_position": 0.7948768087602659,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "You’re strong and confident—” “You don’t even know me,” Eve said.",
+        "max_topic_prob": 0.5653825998306274,
+        "normalized_position": 0.4370355885803676,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I know you.",
+        "max_topic_prob": 0.5516378879547119,
+        "normalized_position": 0.4878764176769652,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I don’t know who you are,” Karl babbled. “",
+        "max_topic_prob": 0.6803693771362305,
+        "normalized_position": 0.8092896174863388,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1471
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I know who your guy is.”",
+        "max_topic_prob": 0.6721159219741821,
+        "normalized_position": 0.8038251366120218,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1461
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He could know exactly who you are.",
+        "max_topic_prob": 0.6139228343963623,
+        "normalized_position": 0.7136612021857923,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1296
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Who?”",
+        "max_topic_prob": 0.587817907333374,
+        "normalized_position": 0.15191256830601094,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I know your reputation, and you just confirmed it.”",
+        "max_topic_prob": 0.519849956035614,
+        "normalized_position": 0.9568306010928962,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1741
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Know you?",
+        "max_topic_prob": 0.5120605230331421,
+        "normalized_position": 0.8639344262295082,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1571
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "How could I, when I didn’t even know who I was at the moment?",
+        "max_topic_prob": 0.663368821144104,
+        "normalized_position": 0.7765679442508711,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You don’t know me, Anna,” I said evenly. “",
+        "max_topic_prob": 0.646095871925354,
+        "normalized_position": 0.9050522648083623,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s me, Anna.”",
+        "max_topic_prob": 0.6320319771766663,
+        "normalized_position": 0.029181184668989547,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I can see who you are and I’m telling you—I like you.”",
+        "max_topic_prob": 0.6193711757659912,
+        "normalized_position": 0.9094076655052264,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Believe me, if you really knew me, you would not be here right now.",
+        "max_topic_prob": 0.586679995059967,
+        "normalized_position": 0.9059233449477352,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m Alice, by the way.”",
+        "max_topic_prob": 0.5587224960327148,
+        "normalized_position": 0.8427700348432056,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m well aware of who you are.” “",
+        "max_topic_prob": 0.778573751449585,
+        "normalized_position": 0.6805484366991287,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Who are you ?”",
+        "max_topic_prob": 0.7761393785476685,
+        "normalized_position": 0.6747821629933367,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Then you really don’t know me.” “",
+        "max_topic_prob": 0.7550277709960938,
+        "normalized_position": 0.3009994874423373,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I told you, they know who you are.” “",
+        "max_topic_prob": 0.7466232776641846,
+        "normalized_position": 0.6373654536135315,
+        "tertile": "middle",
+        "chapter_index": 54,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You don’t know me yet.”",
+        "max_topic_prob": 0.7442654371261597,
+        "normalized_position": 0.31983598154792414,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I don’t even know myself. “",
+        "max_topic_prob": 0.7303045988082886,
+        "normalized_position": 0.04356740133264992,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don’t know who I am anymore.”",
+        "max_topic_prob": 0.744153618812561,
+        "normalized_position": 0.6820781696854147,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don’t really know who or what I am anymore.",
+        "max_topic_prob": 0.690910816192627,
+        "normalized_position": 0.9292183031458532,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "There’s still a lot I don’t know about you and about what I’ve become.",
+        "max_topic_prob": 0.6569424867630005,
+        "normalized_position": 0.4020495710200191,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "It’s who you are now.",
+        "max_topic_prob": 0.6461286544799805,
+        "normalized_position": 0.7902764537654909,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But I didn’t recognize whoever it was.",
+        "max_topic_prob": 0.6237118244171143,
+        "normalized_position": 0.8417540514775977,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m not me anymore.” “",
+        "max_topic_prob": 0.5851110219955444,
+        "normalized_position": 0.6837464251668256,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Not me.”",
+        "max_topic_prob": 0.5446348786354065,
+        "normalized_position": 0.26405716060888473,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Who could it be? * * *",
+        "max_topic_prob": 0.4844215512275696,
+        "normalized_position": 0.5396085740913327,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 376
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’ve always been yours.” “",
+        "max_topic_prob": 0.4816005527973175,
+        "normalized_position": 0.6598322460391426,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Now, I don’t really know who I am.",
+        "max_topic_prob": 0.7088436484336853,
+        "normalized_position": 0.1192566578870354,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "That’s not who I am.”",
+        "max_topic_prob": 0.6575202941894531,
+        "normalized_position": 0.6353526485220954,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It’s me.”",
+        "max_topic_prob": 0.6492530107498169,
+        "normalized_position": 0.6327187591454492,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I probably know them.” “",
+        "max_topic_prob": 0.6351945400238037,
+        "normalized_position": 0.20939420544337137,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Someone might recognize him.”",
+        "max_topic_prob": 0.6286485195159912,
+        "normalized_position": 0.453321627158326,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Who is this?”",
+        "max_topic_prob": 0.5955890417098999,
+        "normalized_position": 0.14427860696517414,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Do you have any idea who I am?”",
+        "max_topic_prob": 0.8015744686126709,
+        "normalized_position": 0.5680053250499223,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He knows that you have no idea who he is.",
+        "max_topic_prob": 0.7111585140228271,
+        "normalized_position": 0.30541380075438207,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m not the person you think I am.”",
+        "max_topic_prob": 0.6733192205429077,
+        "normalized_position": 0.5885289549589527,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "And you don’t know who that is?”",
+        "max_topic_prob": 0.6699193716049194,
+        "normalized_position": 0.23918349234524075,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I had no idea who you were.",
+        "max_topic_prob": 0.6693135499954224,
+        "normalized_position": 0.1789438650987353,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I have no idea what you saw, but it wasn’t me.” “",
+        "max_topic_prob": 0.6602720022201538,
+        "normalized_position": 0.7230974040381628,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 123
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.007876049063912201,
+        "n_sentences": 61
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.00913900913900914,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.006815642458100559,
+        "n_sentences": 61
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.009884678747940691,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.007253677211364095,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.007670850767085077,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.008818342151675485,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.006541182752636497,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0033359497645211933,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0019175455417066154,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0019123271550456017,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0037765538945712038,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0024193548387096775,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.003542234332425068,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00093603744149766,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 87
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

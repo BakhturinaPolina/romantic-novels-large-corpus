@@ -1,0 +1,663 @@
+{
+  "topic_id": 299,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "dane",
+        "eoin",
+        "dan",
+        "would",
+        "alicia",
+        "seen",
+        "handle",
+        "time"
+      ],
+      "KeyBERT": [
+        "promises",
+        "tries",
+        "willingly",
+        "exquisite",
+        "embarrassing"
+      ],
+      "POS": [
+        "remark",
+        "threats",
+        "hundreds",
+        "remote",
+        "exquisite",
+        "distraction",
+        "embarrassing",
+        "promises",
+        "spending",
+        "terms"
+      ],
+      "MMR": [
+        "remark",
+        "solemnly",
+        "instructed",
+        "discussing",
+        "distraction",
+        "promises",
+        "rapidly",
+        "terms",
+        "threat",
+        "forgive"
+      ]
+    },
+    "stage08_snippets": [
+      "before she’s completely out i ask, “[person], you know i’ve always got your back, right?”",
+      "but i’ve seen you, seen who you are, watched you handle uncle charlie.",
+      "i’ve got a little time before charlie finishes my bike."
+    ],
+    "label_public": "Pledging to Have Your Back"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Was Charlie all right?",
+        "max_topic_prob": 0.8372219204902649,
+        "normalized_position": 0.7407826852900465,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I understand you were the last one to see Charlie alive.” “",
+        "max_topic_prob": 0.7653625011444092,
+        "normalized_position": 0.8980747451868629,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You can’t even tell Charlie.",
+        "max_topic_prob": 0.7552021741867065,
+        "normalized_position": 0.7456901975588273,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Charlie will come home to you.",
+        "max_topic_prob": 0.7475469708442688,
+        "normalized_position": 0.7188876305524097,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How could I tell Charlie?",
+        "max_topic_prob": 0.7470722198486328,
+        "normalized_position": 0.73814017868378,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Afterwards, Charlie cried.",
+        "max_topic_prob": 0.7423505783081055,
+        "normalized_position": 0.6004781678620863,
+        "tertile": "middle",
+        "chapter_index": 43,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "More likely Scott messed with the wrong guy’s wife.’ ‘",
+        "max_topic_prob": 0.4951348602771759,
+        "normalized_position": 0.15338136184057635,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Kevin was worried that Scott’s death was somehow related to Todd’s return to Birmingham.’",
+        "max_topic_prob": 0.4912654161453247,
+        "normalized_position": 0.4825702997908436,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Part of him was probably glad Scott was dead.",
+        "max_topic_prob": 0.4865708649158478,
+        "normalized_position": 0.14513130374157565,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Scott was one of the popular boys.",
+        "max_topic_prob": 0.4526280164718628,
+        "normalized_position": 0.24831512897978156,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Not even for Scott . . .",
+        "max_topic_prob": 0.4515931010246277,
+        "normalized_position": 0.14943062979316757,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "They all left for college with big dreams, except Scott and Kevin,’ she said sadly. ‘",
+        "max_topic_prob": 0.44194042682647705,
+        "normalized_position": 0.2538926330467116,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Charlie, shh.",
+        "max_topic_prob": 0.795471727848053,
+        "normalized_position": 0.4706640876853643,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "How could Charlie have left this open?",
+        "max_topic_prob": 0.748466968536377,
+        "normalized_position": 0.43197936814958093,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What can I do, Charlie?\"",
+        "max_topic_prob": 0.6992139220237732,
+        "normalized_position": 0.4732430689877498,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I knew exactly what Charlie meant when she said that.",
+        "max_topic_prob": 0.6972752213478088,
+        "normalized_position": 0.15087040618955513,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Charlie keeps us locked in here so Alex can’t get out and hurt himself like he used to at the institution.",
+        "max_topic_prob": 0.6851041316986084,
+        "normalized_position": 0.4300451321727917,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Charlie said, ‘I think someone else should get to hold him first.’” “",
+        "max_topic_prob": 0.6782869100570679,
+        "normalized_position": 0.14970986460348162,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Pete makes me reconsider everything.",
+        "max_topic_prob": 0.40845370292663574,
+        "normalized_position": 0.9092636579572446,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Jesus, Pete!",
+        "max_topic_prob": 0.4046359658241272,
+        "normalized_position": 0.5553444180522565,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Charlie, at least, seems to be reserving judgment.",
+        "max_topic_prob": 0.7602412700653076,
+        "normalized_position": 0.48966432770718754,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Charlie sounds indulgent. “",
+        "max_topic_prob": 0.7465698719024658,
+        "normalized_position": 0.487578228712308,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Charlie, behave yourself.",
+        "max_topic_prob": 0.7182351350784302,
+        "normalized_position": 0.4733548264744927,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Charlie again, reading my mind: “A lot of people more or less understood that they were together.",
+        "max_topic_prob": 0.6908855438232422,
+        "normalized_position": 0.4878626967570643,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Charlie guffaws. “",
+        "max_topic_prob": 0.6835479736328125,
+        "normalized_position": 0.4778114925090082,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Nola looks at Charlie.",
+        "max_topic_prob": 0.64801025390625,
+        "normalized_position": 0.4852076616726721,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I needed to talk to Brad.",
+        "max_topic_prob": 0.5207737684249878,
+        "normalized_position": 0.41778774289985054,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Well, what if that happens again…with Brad?” “",
+        "max_topic_prob": 0.5196287035942078,
+        "normalized_position": 0.910762331838565,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "It was then that I realized Brad wasn’t in my room.",
+        "max_topic_prob": 0.5097987651824951,
+        "normalized_position": 0.1328849028400598,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "But Brad was such a consuming force that he was always there on my mind.",
+        "max_topic_prob": 0.5034176707267761,
+        "normalized_position": 0.4493273542600897,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Dammit, Brad. “",
+        "max_topic_prob": 0.5007270574569702,
+        "normalized_position": 0.13602391629297458,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Oh, Brad!”",
+        "max_topic_prob": 0.49324315786361694,
+        "normalized_position": 0.9219730941704036,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Charlie.",
+        "max_topic_prob": 0.8285329341888428,
+        "normalized_position": 0.3858640514034494,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Charlie.",
+        "max_topic_prob": 0.8285329341888428,
+        "normalized_position": 0.5911396685830234,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Charlie.",
+        "max_topic_prob": 0.8285329341888428,
+        "normalized_position": 0.6006087250591816,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Charlie,” he said.",
+        "max_topic_prob": 0.8254718780517578,
+        "normalized_position": 0.7872844098748731,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Charlie.”",
+        "max_topic_prob": 0.8152396082878113,
+        "normalized_position": 0.34900236726411904,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "But did Charlie?",
+        "max_topic_prob": 0.8002991080284119,
+        "normalized_position": 0.4004058167061211,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Charlie.",
+        "max_topic_prob": 0.8285329341888428,
+        "normalized_position": 0.6450607154578274,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 733
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "When Charlie pulled away, Brandon said, “I strongly suggest you guys start running unless you want to be the gooey part of s’mores.”",
+        "max_topic_prob": 0.6005577445030212,
+        "normalized_position": 0.6511322612405644,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 770
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Brandon backed Charlie’s bike into the line by the south wall and shut it down.",
+        "max_topic_prob": 0.5397015810012817,
+        "normalized_position": 0.652937315392189,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 781
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Brandon walked over to Charlie’s ride and swung a leg over.",
+        "max_topic_prob": 0.5265894532203674,
+        "normalized_position": 0.6473580571053495,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 747
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Brash was going to replenish his stash of peanuts at the H.E.B.” “Peanuts?",
+        "max_topic_prob": 0.4176546335220337,
+        "normalized_position": 0.8198227765014768,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 858
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "When Brash turned up at Brand’s office, the first thing Brash noticed - after Brandon’s shocked look, was a big bowl of peanuts on his desk.”",
+        "max_topic_prob": 0.369343638420105,
+        "normalized_position": 0.820971447325238,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 865
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0016476403436507003,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0009900990099009901,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0034879214571760754,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0009560229445506692,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.005738447598912715,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.03469387755102041,
+        "n_sentences": 102
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.006967316949581961,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0011409013120365088,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 44
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "5.2",
+    "taxonomy_secondary_name": "Friends, Allies & Social Circles",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

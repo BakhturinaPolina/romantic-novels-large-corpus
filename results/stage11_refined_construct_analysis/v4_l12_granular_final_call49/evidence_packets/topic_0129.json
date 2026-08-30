@@ -1,0 +1,1021 @@
+{
+  "topic_id": 129,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "care",
+        "cared",
+        "cares",
+        "caring",
+        "about",
+        "don",
+        "less",
+        "didn",
+        "anyone",
+        "do"
+      ],
+      "KeyBERT": [
+        "cared",
+        "mattered",
+        "sadly",
+        "unhappy",
+        "wondering",
+        "experience",
+        "involved",
+        "honestly",
+        "period",
+        "extremely"
+      ],
+      "POS": [
+        "unhappy",
+        "period",
+        "circumstances",
+        "veins",
+        "process",
+        "worst",
+        "upset",
+        "places",
+        "experience"
+      ],
+      "MMR": [
+        "cared",
+        "claims",
+        "smacked",
+        "treated",
+        "circumstances",
+        "veins",
+        "repeated",
+        "fault",
+        "experience",
+        "expect"
+      ]
+    },
+    "stage08_snippets": [
+      "like they care when they see that smoking-hot bod you’ve got.”",
+      "at the moment, i could’ve cared less.",
+      "you’ve never cared for anyone but yourself.”"
+    ],
+    "label_public": "Accused of Not Caring"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Did he care?",
+        "max_topic_prob": 0.6936802864074707,
+        "normalized_position": 0.8811349693251533,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Did she care?",
+        "max_topic_prob": 0.6383713483810425,
+        "normalized_position": 0.7216257668711656,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 442
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I don't care what any of you say.",
+        "max_topic_prob": 0.6187549233436584,
+        "normalized_position": 0.21595092024539878,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Like you care.”",
+        "max_topic_prob": 0.7282957434654236,
+        "normalized_position": 0.6537140149271413,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Hey, not caring didn’t mean not asking.",
+        "max_topic_prob": 0.7243624925613403,
+        "normalized_position": 0.1421632507996683,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "How—why—oh, I don’t care.”",
+        "max_topic_prob": 0.6972882151603699,
+        "normalized_position": 0.6123682028195712,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She wondered why she cared. “",
+        "max_topic_prob": 0.629932701587677,
+        "normalized_position": 0.9393436796588082,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Lukas didn’t care about her, and she… cared too much.",
+        "max_topic_prob": 0.5863685607910156,
+        "normalized_position": 0.07961142044781425,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Sir, I don’t think that’s—” “I don’t care what you think.",
+        "max_topic_prob": 0.6117395162582397,
+        "normalized_position": 0.3376146788990826,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I don’t care about that kind of stuff,” Zander assured him. “",
+        "max_topic_prob": 0.5655171871185303,
+        "normalized_position": 0.7761467889908257,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 361
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I don’t expect you to understand what it is to care about someone else.”",
+        "max_topic_prob": 0.7061275243759155,
+        "normalized_position": 0.06337622431342424,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He cares about you.",
+        "max_topic_prob": 0.687711238861084,
+        "normalized_position": 0.12886498943729593,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 669
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Don’t you care about hurting her feelings?” “",
+        "max_topic_prob": 0.6512290835380554,
+        "normalized_position": 0.31284808911081236,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I care nothing for this either, Jade thought.",
+        "max_topic_prob": 0.5907454490661621,
+        "normalized_position": 0.14864605338966774,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Don’t know and don’t care.”",
+        "max_topic_prob": 0.5829518437385559,
+        "normalized_position": 0.9266372191280968,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Jade, you know I’ll always care about you.” “",
+        "max_topic_prob": 0.574010968208313,
+        "normalized_position": 0.7265219896293451,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 601
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Its a good thing I dont care what you think then, isnt it.”",
+        "max_topic_prob": 0.5820826888084412,
+        "normalized_position": 0.46642302421196896,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Hope was all he cared about.",
+        "max_topic_prob": 0.5639930367469788,
+        "normalized_position": 0.44289629968021926,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "At this point in time, he couldnt care less about the other mans feelings; lost in his own misery. “",
+        "max_topic_prob": 0.5298992395401001,
+        "normalized_position": 0.03334856098675194,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She died thinking I didnt care!",
+        "max_topic_prob": 0.5163447856903076,
+        "normalized_position": 0.29419826404751026,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1288
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Why does everyone think that I care what the hell Ashdon Watts does, or who he talks to?” “",
+        "max_topic_prob": 0.504051923751831,
+        "normalized_position": 0.4419826404751028,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I have no interest in what he does outsideof taking care of Hope.” “",
+        "max_topic_prob": 0.502106785774231,
+        "normalized_position": 0.6148926450433988,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1095
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But much as I didn’t want to care what they thought, I did care.",
+        "max_topic_prob": 0.7554022073745728,
+        "normalized_position": 0.5854126679462572,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But I didn’t care.",
+        "max_topic_prob": 0.7343558073043823,
+        "normalized_position": 0.5235810255004113,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But the truth was, I really didn’t care.",
+        "max_topic_prob": 0.7094861268997192,
+        "normalized_position": 0.09185632026323005,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I didn’t have the time to care.",
+        "max_topic_prob": 0.692812979221344,
+        "normalized_position": 0.28434329585961066,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "And some of us really didn’t care.",
+        "max_topic_prob": 0.6892892718315125,
+        "normalized_position": 0.5230326295585412,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Of course I wished I didn’t care so much.",
+        "max_topic_prob": 0.687174916267395,
+        "normalized_position": 0.4315876062517137,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I care about you.” “",
+        "max_topic_prob": 0.7583296895027161,
+        "normalized_position": 0.8285016783643576,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Doesn’t he know how much I care?",
+        "max_topic_prob": 0.7275407314300537,
+        "normalized_position": 0.8875495880378395,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Why should I care about that?",
+        "max_topic_prob": 0.6796245574951172,
+        "normalized_position": 0.1821788220933781,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You should care what he says.",
+        "max_topic_prob": 0.666451096534729,
+        "normalized_position": 0.5138846505950565,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You care about everyone around you so much.",
+        "max_topic_prob": 0.6518235206604004,
+        "normalized_position": 0.829264571254196,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He cares too much about you.",
+        "max_topic_prob": 0.6071129441261292,
+        "normalized_position": 0.514494964906927,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Hit the lights, I don’t care.”",
+        "max_topic_prob": 0.5894317626953125,
+        "normalized_position": 0.6239759237585688,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 744
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "This is what normal life looks like with someone who cares about you.",
+        "max_topic_prob": 0.581135630607605,
+        "normalized_position": 0.9924761745527504,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 970
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I scared the crap out of the kid, and I don’t care.",
+        "max_topic_prob": 0.5579115748405457,
+        "normalized_position": 0.459454940645377,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "But maybe we’re both beyond caring.",
+        "max_topic_prob": 0.6338209509849548,
+        "normalized_position": 0.5742700729927007,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Nobody cares what I look like.",
+        "max_topic_prob": 0.5534238815307617,
+        "normalized_position": 0.38740875912408756,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Toe-curling, good-looking guys I am a pro at ignoring but caring and considerate?",
+        "max_topic_prob": 0.3933231234550476,
+        "normalized_position": 0.19963503649635037,
+        "tertile": "begin",
+        "chapter_index": 23,
+        "sentence_index": 598
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Have a care, sir.",
+        "max_topic_prob": 0.5639233589172363,
+        "normalized_position": 0.6345859347390741,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Do you think I care what you did in the dormitories when the candles were doused and the door locked?",
+        "max_topic_prob": 0.5338839888572693,
+        "normalized_position": 0.781010719754977,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Gossip might be entertaining to some, Nonie, but it’s nasty talk about people’s lives, and it serves no purpose.”",
+        "max_topic_prob": 0.3693048655986786,
+        "normalized_position": 0.3439745553068677,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "In my day, we were neither so mercenary about these things nor so sentimental.",
+        "max_topic_prob": 0.3674103915691376,
+        "normalized_position": 0.04511721050771587,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Who cared? “",
+        "max_topic_prob": 0.7618957757949829,
+        "normalized_position": 0.8305107894018028,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I don’t really care.”",
+        "max_topic_prob": 0.7299628853797913,
+        "normalized_position": 0.4449603933351543,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He didn’t care.",
+        "max_topic_prob": 0.7202095985412598,
+        "normalized_position": 0.6655285441136302,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Whatever the reason, who cared?",
+        "max_topic_prob": 0.6636508703231812,
+        "normalized_position": 0.1343895110625512,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It was repressed emotion but who cared? “",
+        "max_topic_prob": 0.6236996650695801,
+        "normalized_position": 0.7824364927615406,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I don’t need sympathy.”",
+        "max_topic_prob": 0.5783307552337646,
+        "normalized_position": 0.7510243102977329,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But I didn’t care.",
+        "max_topic_prob": 0.7343558073043823,
+        "normalized_position": 0.4053350683148991,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Does he care?” “",
+        "max_topic_prob": 0.7259387373924255,
+        "normalized_position": 0.3015614834092388,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Did I care?",
+        "max_topic_prob": 0.6259028911590576,
+        "normalized_position": 0.5671763175016266,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I knew she was upset with me, but I couldn’t find it inside me to care much.",
+        "max_topic_prob": 0.6139659881591797,
+        "normalized_position": 0.4120039037085231,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Besides, I don’t care what anybody else thinks about me, except you.” “",
+        "max_topic_prob": 0.6135375499725342,
+        "normalized_position": 0.679733246584255,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He couldn’t care less what I was trying to ask him, his only concern surely to rid me of my clothes.",
+        "max_topic_prob": 0.6050522923469543,
+        "normalized_position": 0.6772934287573195,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Don’t you care about me?”",
+        "max_topic_prob": 0.7675260305404663,
+        "normalized_position": 0.8402916500199761,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I could care less.",
+        "max_topic_prob": 0.7571383118629456,
+        "normalized_position": 0.13084298841390332,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don’t have time to care. “",
+        "max_topic_prob": 0.7517774105072021,
+        "normalized_position": 0.8197163403915302,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don’t care. “",
+        "max_topic_prob": 0.7487297654151917,
+        "normalized_position": 0.5825009988014382,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don’t care about anything.",
+        "max_topic_prob": 0.7483506798744202,
+        "normalized_position": 0.798341989612465,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You don’t have to care.",
+        "max_topic_prob": 0.730854868888855,
+        "normalized_position": 0.8046344386735917,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Care, I mean.” “",
+        "max_topic_prob": 0.7787141799926758,
+        "normalized_position": 0.4455281178667773,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What do you care?”",
+        "max_topic_prob": 0.7598896026611328,
+        "normalized_position": 0.9507159161651795,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You care.”",
+        "max_topic_prob": 0.7506613731384277,
+        "normalized_position": 0.8851421456733762,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I don’t care.” “",
+        "max_topic_prob": 0.7472975254058838,
+        "normalized_position": 0.44532060593484124,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "If I cared?”",
+        "max_topic_prob": 0.7393828630447388,
+        "normalized_position": 0.4456318738327454,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I care what I think.”",
+        "max_topic_prob": 0.7361143231391907,
+        "normalized_position": 0.40547831500311265,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "But I didn’t care. “",
+        "max_topic_prob": 0.8113909363746643,
+        "normalized_position": 0.05368121157594842,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I didn’t care what happened to me.",
+        "max_topic_prob": 0.751343309879303,
+        "normalized_position": 0.4898785425101215,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I didn’t have a care in the world.",
+        "max_topic_prob": 0.7076760530471802,
+        "normalized_position": 0.4255510571300045,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I’m doing this because I care.",
+        "max_topic_prob": 0.6837291717529297,
+        "normalized_position": 0.6437246963562753,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "This is what it was like to be normal, to live with someone who cared.",
+        "max_topic_prob": 0.531246542930603,
+        "normalized_position": 0.897585844954266,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I don’t care about money.",
+        "max_topic_prob": 0.6624255180358887,
+        "normalized_position": 0.7730870712401056,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I don’t care what they think.",
+        "max_topic_prob": 0.60675048828125,
+        "normalized_position": 0.11455584872471417,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’ve spent enough money today that they won’t care what the fuck I do.” “",
+        "max_topic_prob": 0.5948898196220398,
+        "normalized_position": 0.7719876868953386,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 275
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.001973684210526316,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0022981301577352973,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003406813627254509,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.002333722287047841,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.002142310635042081,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0020794824399260627,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.003456380478363058,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0020587427944002198,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0006641576267434137,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0007543753771876886,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0005046257359125315,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0005536076766931168,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00033523298692591353,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0005966587112171838,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0004624633883150917,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00047732696897374703,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 76
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

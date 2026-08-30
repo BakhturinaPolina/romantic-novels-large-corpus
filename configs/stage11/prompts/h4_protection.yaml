@@ -1,0 +1,85 @@
+# Frozen H4 protection vs possession prompts.
+
+hypothesis: H4
+name: protection_possession
+version: "1.0"
+frozen: true
+
+codes:
+  - id: H4_0
+    label: off_target
+  - id: H4_1
+    label: reassurance_tenderness
+  - id: H4_2
+    label: practical_care
+  - id: H4_3
+    label: material_care
+  - id: H4_4
+    label: emotional_support
+  - id: H4_5
+    label: external_protection_physical
+  - id: H4_6
+    label: external_protection_social_legal
+  - id: H4_7
+    label: possessive_claiming_language
+  - id: H4_8
+    label: jealous_possessiveness
+  - id: H4_9
+    label: coercive_control_restriction
+  - id: H4_10
+    label: partner_as_danger
+  - id: H4_11
+    label: for_your_own_good_control
+  - id: H4_12
+    label: mutual_care_balanced
+  - id: H4_13
+    label: mixed_unclear
+
+rule: |
+  Protection requires an EXTERNAL threat. Partner-as-danger or "for their own good" restriction
+  is control/coercion, not protection.
+
+constructs:
+  RAX_external_protection: [H4_5, H4_6]
+  RAX_possessive_claiming: [H4_7, H4_8]
+  RAX_coercive_control: [H4_9, H4_10, H4_11]
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+phrasing:
+  primary:
+    system: |
+      You distinguish external protection from possessive claiming and coercive control in romance topics.
+      Protection needs an external threat. JSON only. Ratings hidden.
+    pass_a: |
+      Lexical H4 coding for topic {topic_id}.
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      JSON: per_rep, consensus_code, disagreement, threat_source, autonomy_effect, rationale.
+    pass_b: |
+      Contextual H4 coding for topic {topic_id}:
+      {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code, threat_source, claiming_language, rationale.
+    pass_c: |
+      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+
+  alternate:
+    system: |
+      Protection-vs-possession auditor. External threat => protection; partner restriction => control.
+      JSON only.
+    pass_a: |
+      Keywords {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+    pass_b: |
+      Sentences {topic_id}:
+      {sentences_block}
+    pass_c: |
+      Adjudicate {topic_id} tax={taxonomy_id}/{taxonomy_name}. Action + care_protection_code.

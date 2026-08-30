@@ -1,0 +1,1204 @@
+{
+  "topic_id": 86,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "name",
+        "know",
+        "names",
+        "your",
+        "nickname",
+        "what",
+        "don",
+        "is",
+        "real",
+        "knew"
+      ],
+      "KeyBERT": [
+        "embarrassment",
+        "shout",
+        "painful",
+        "concerned",
+        "dr",
+        "repeated",
+        "flushed",
+        "introduced",
+        "example"
+      ],
+      "POS": [
+        "official",
+        "example",
+        "curtain",
+        "actual",
+        "embarrassment",
+        "painful"
+      ],
+      "MMR": [
+        "prodded",
+        "example",
+        "curtain",
+        "shout",
+        "embarrassment",
+        "flushed",
+        "repeated",
+        "asks",
+        "dr",
+        "admit"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve known you for two whole years, and that is the first time you’ve ever called me by my first name.”",
+      "you’ve outgrown that nickname.” “",
+      "just between you and me, i’ve been working on a catchy superhero name."
+    ],
+    "label_public": "First Name Used at Last"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Your name?\"",
+        "max_topic_prob": 0.7188297510147095,
+        "normalized_position": 0.6620263763868537,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I know him.",
+        "max_topic_prob": 0.6360101103782654,
+        "normalized_position": 0.7755913753401716,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I was named for my great-grandfather.\" \"",
+        "max_topic_prob": 0.6200201511383057,
+        "normalized_position": 0.14779150094201382,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 409
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I may not have known him for long, Rox, but I do know him.",
+        "max_topic_prob": 0.6096669435501099,
+        "normalized_position": 0.7813481264391878,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Maybe I didn't know him at all.",
+        "max_topic_prob": 0.590460479259491,
+        "normalized_position": 0.712162445049194,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Doesn't it bother you in the least that you don't really know him?\" \"",
+        "max_topic_prob": 0.5895673036575317,
+        "normalized_position": 0.5773498011304166,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I lost the name.” “",
+        "max_topic_prob": 0.7013905644416809,
+        "normalized_position": 0.3275504431453894,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 871
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "One day, I’ll tell you about mine.”",
+        "max_topic_prob": 0.5263246297836304,
+        "normalized_position": 0.49632283613049216,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Have you met this Booke character?” “",
+        "max_topic_prob": 0.49763554334640503,
+        "normalized_position": 0.1229492739958514,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1218
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Dennis.” “",
+        "max_topic_prob": 0.48273685574531555,
+        "normalized_position": 0.3065246087120498,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 648
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "In this particular area, I’m Darren.” “",
+        "max_topic_prob": 0.4816673994064331,
+        "normalized_position": 0.5936262492928531,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1110
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Mr. Remington, I’m Harding, Jonathan Q. Harding.",
+        "max_topic_prob": 0.4742165803909302,
+        "normalized_position": 0.25391287950216856,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I don’t know your name,” he said. “",
+        "max_topic_prob": 0.7979978322982788,
+        "normalized_position": 0.8738677536231884,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What is your name?”",
+        "max_topic_prob": 0.7826537489891052,
+        "normalized_position": 0.30480072463768115,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What’s your name?”",
+        "max_topic_prob": 0.775063157081604,
+        "normalized_position": 0.6256793478260869,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What is your name?\"",
+        "max_topic_prob": 0.7710902094841003,
+        "normalized_position": 0.08627717391304347,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "And you, mother, what is your name?” “",
+        "max_topic_prob": 0.6766394972801208,
+        "normalized_position": 0.12024456521739131,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What is her name?” “",
+        "max_topic_prob": 0.5718050003051758,
+        "normalized_position": 0.11820652173913043,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "What is your name?\"",
+        "max_topic_prob": 0.7710901498794556,
+        "normalized_position": 0.9971050454921423,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I don't even remember his name.\"",
+        "max_topic_prob": 0.7138029336929321,
+        "normalized_position": 0.7585814722911497,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Your name?\" \"",
+        "max_topic_prob": 0.7064963579177856,
+        "normalized_position": 0.12096774193548387,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Any names ring a bell?\" \"",
+        "max_topic_prob": 0.5710183382034302,
+        "normalized_position": 0.38244416873449133,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I am finally getting to know him — the real him.",
+        "max_topic_prob": 0.5445502996444702,
+        "normalized_position": 0.5783705541770058,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Monsieur? \" \"",
+        "max_topic_prob": 0.5060248374938965,
+        "normalized_position": 0.5349462365591398,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Your name.” “",
+        "max_topic_prob": 0.7224447727203369,
+        "normalized_position": 0.3984418475236505,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "My name is Chloe.” “",
+        "max_topic_prob": 0.649929940700531,
+        "normalized_position": 0.39593767390094603,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Thinking of whom, did he have a name?",
+        "max_topic_prob": 0.6049798727035522,
+        "normalized_position": 0.35948803561491377,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Seth?” “",
+        "max_topic_prob": 0.48768606781959534,
+        "normalized_position": 0.7943795214245966,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Maybe something nice and impersonal like his old name of X109GI.",
+        "max_topic_prob": 0.48710954189300537,
+        "normalized_position": 0.2159154145798553,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Hello, little one.",
+        "max_topic_prob": 0.37579572200775146,
+        "normalized_position": 0.16666666666666666,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What did you say his name was again?’ ‘",
+        "max_topic_prob": 0.6647472381591797,
+        "normalized_position": 0.4664713541666667,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Has someone even got a name?’ ‘",
+        "max_topic_prob": 0.6240090727806091,
+        "normalized_position": 0.3968098958333333,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Would a name mean anything to you?",
+        "max_topic_prob": 0.618480920791626,
+        "normalized_position": 0.3971354166666667,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The way I should address him.",
+        "max_topic_prob": 0.594054639339447,
+        "normalized_position": 0.7579752604166666,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My name is Dominik.",
+        "max_topic_prob": 0.5831652879714966,
+        "normalized_position": 0.20052083333333334,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 569
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Then Dominik called my name. ‘",
+        "max_topic_prob": 0.5654171705245972,
+        "normalized_position": 0.6678059895833334,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 441
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What is your name?’",
+        "max_topic_prob": 0.7610151171684265,
+        "normalized_position": 0.6256684491978609,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I can’t remember my name.",
+        "max_topic_prob": 0.7467718124389648,
+        "normalized_position": 0.6130286825473992,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I couldn’t remember the rest, but I’m sure my first name is Alex.’",
+        "max_topic_prob": 0.649882435798645,
+        "normalized_position": 0.690325717063685,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 677
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You very nearly said my name.’",
+        "max_topic_prob": 0.6495496034622192,
+        "normalized_position": 0.6614811213741695,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I was thinking how strange it is that you’re doing all this for me, as well as sleeping with me, and I still don’t know your name.’ ‘",
+        "max_topic_prob": 0.6459141969680786,
+        "normalized_position": 0.6214551936477071,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His name is Brian Holgate.",
+        "max_topic_prob": 0.5848605632781982,
+        "normalized_position": 0.1657754010695187,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 1008
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Do you know him?” “",
+        "max_topic_prob": 0.705618143081665,
+        "normalized_position": 0.31723551904829345,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Do I know him?” “",
+        "max_topic_prob": 0.6878335475921631,
+        "normalized_position": 0.918991644243025,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I’m going to make you beg me for it and when I’m done, you won’t remember your name.” “",
+        "max_topic_prob": 0.6075930595397949,
+        "normalized_position": 0.4503611386489166,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Why didn’t you call me and tell me about Brian?”",
+        "max_topic_prob": 0.551888644695282,
+        "normalized_position": 0.2950007081149979,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I’ve never met him.",
+        "max_topic_prob": 0.48959362506866455,
+        "normalized_position": 0.5180569324458292,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He seemed like a stranger, like some distant acquaintance.",
+        "max_topic_prob": 0.4705512225627899,
+        "normalized_position": 0.0849737997450786,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "My name is Brandon Dalton.",
+        "max_topic_prob": 0.6686868071556091,
+        "normalized_position": 0.4536050156739812,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 468
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "My name rolls off his tongue like silk. “",
+        "max_topic_prob": 0.6263216137886047,
+        "normalized_position": 0.588871473354232,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I blurt out her name. “",
+        "max_topic_prob": 0.6123207807540894,
+        "normalized_position": 0.3065830721003135,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She says it’s her special name for me.” “",
+        "max_topic_prob": 0.5944775938987732,
+        "normalized_position": 0.32601880877742945,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "That’s a pretty name.”",
+        "max_topic_prob": 0.5752578377723694,
+        "normalized_position": 0.05752351097178683,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I didn’t even ask your name and I hit you in the head with a ball.” “",
+        "max_topic_prob": 0.5665550827980042,
+        "normalized_position": 0.05376175548589342,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "What’s your name?” “",
+        "max_topic_prob": 0.7842488288879395,
+        "normalized_position": 0.4884564643799472,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "What is your name?”",
+        "max_topic_prob": 0.7826536893844604,
+        "normalized_position": 0.06975593667546175,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Name?”",
+        "max_topic_prob": 0.6594867706298828,
+        "normalized_position": 0.06868403693931398,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Every time I give my name, it’ll be paired with yours.”",
+        "max_topic_prob": 0.629611611366272,
+        "normalized_position": 0.5251484168865436,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I don’t want to go another hour without you bearing my last name.”",
+        "max_topic_prob": 0.6077737808227539,
+        "normalized_position": 0.8265171503957783,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "We haven’t met, but my name is Satori Macher.",
+        "max_topic_prob": 0.6033551692962646,
+        "normalized_position": 0.9869722955145118,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Don’t say his name.",
+        "max_topic_prob": 0.6300270557403564,
+        "normalized_position": 0.9050179211469535,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "The name didn’t ring a bell. “",
+        "max_topic_prob": 0.4998866319656372,
+        "normalized_position": 0.5185185185185185,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "You’re the only one who calls me that.”",
+        "max_topic_prob": 0.49414554238319397,
+        "normalized_position": 0.820041816009558,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "He’s mine.",
+        "max_topic_prob": 0.47133010625839233,
+        "normalized_position": 0.9136798088410991,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "This account is under Lauren’s name.” “",
+        "max_topic_prob": 0.46991395950317383,
+        "normalized_position": 0.8122759856630825,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I told you to call me Lauren.",
+        "max_topic_prob": 0.4384777843952179,
+        "normalized_position": 0.8197431302270012,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You said your name was—?” “",
+        "max_topic_prob": 0.6625909805297852,
+        "normalized_position": 0.06887437810945274,
+        "tertile": "begin",
+        "chapter_index": 34,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You are…I’m sorry, I didn’t catch your name.” “",
+        "max_topic_prob": 0.6587938070297241,
+        "normalized_position": 0.7075559701492538,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "So you…know him well?”",
+        "max_topic_prob": 0.6582211256027222,
+        "normalized_position": 0.17537313432835822,
+        "tertile": "begin",
+        "chapter_index": 38,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Can you tell me anything about him?” “",
+        "max_topic_prob": 0.6122477650642395,
+        "normalized_position": 0.06685323383084577,
+        "tertile": "begin",
+        "chapter_index": 34,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I hardly knew him.",
+        "max_topic_prob": 0.6121895909309387,
+        "normalized_position": 0.06716417910447761,
+        "tertile": "begin",
+        "chapter_index": 34,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "What was in a name?",
+        "max_topic_prob": 0.6098427772521973,
+        "normalized_position": 0.5558146766169154,
+        "tertile": "middle",
+        "chapter_index": 49,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "How did you know him?”",
+        "max_topic_prob": 0.7232500314712524,
+        "normalized_position": 0.5255895634721526,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry, what was your name?”",
+        "max_topic_prob": 0.7168198227882385,
+        "normalized_position": 0.8123432012042148,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What’s your name, kid?” “",
+        "max_topic_prob": 0.7036056518554688,
+        "normalized_position": 0.8260160561966884,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I wonder if I took your name?”",
+        "max_topic_prob": 0.6769387722015381,
+        "normalized_position": 0.9920973406924235,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I didn’t even recognize him.”",
+        "max_topic_prob": 0.6356937885284424,
+        "normalized_position": 0.18138484696437532,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Did you come up with a name yet?”",
+        "max_topic_prob": 0.6218020915985107,
+        "normalized_position": 0.6678374310085299,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You didn’t know him, then?” “",
+        "max_topic_prob": 0.7343677282333374,
+        "normalized_position": 0.35874113152628706,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I don’t know him .”",
+        "max_topic_prob": 0.7202351689338684,
+        "normalized_position": 0.15845006367109332,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Do you know him?”",
+        "max_topic_prob": 0.693026602268219,
+        "normalized_position": 0.46607240312897946,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Your name, I thought?” “",
+        "max_topic_prob": 0.6770055294036865,
+        "normalized_position": 0.5428415499363289,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It is the name I am giving you.”",
+        "max_topic_prob": 0.6250048875808716,
+        "normalized_position": 0.5457522284882663,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Burnett saw that and said, “When you’re like me, the name you make for yourself means more than a name you’ve been saddled with just by being born.” “",
+        "max_topic_prob": 0.5666425228118896,
+        "normalized_position": 0.3310896852828816,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "He’s yours.”",
+        "max_topic_prob": 0.5024232268333435,
+        "normalized_position": 0.1577889447236181,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Like the St. Claire name, the Manchester name carried a lot of weight and held status.",
+        "max_topic_prob": 0.31509536504745483,
+        "normalized_position": 0.5422110552763819,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Any trademarks, service marks, or product names are the property of their respective owners, and are used only for reference.",
+        "max_topic_prob": 0.17089203000068665,
+        "normalized_position": 0.004020100502512563,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’ve told you that everyone calls me Mac.”",
+        "max_topic_prob": 0.5076571702957153,
+        "normalized_position": 0.11190476190476191,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Hi, Mackenna.",
+        "max_topic_prob": 0.4726720154285431,
+        "normalized_position": 0.0170995670995671,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Mackenna?”",
+        "max_topic_prob": 0.47094911336898804,
+        "normalized_position": 0.10346320346320347,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He’s my hero.”",
+        "max_topic_prob": 0.458638459444046,
+        "normalized_position": 0.14112554112554113,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Hello?",
+        "max_topic_prob": 0.4442974627017975,
+        "normalized_position": 0.3906926406926407,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It took a second for his name to click.",
+        "max_topic_prob": 0.4321526288986206,
+        "normalized_position": 0.09545454545454546,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 119
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.006622516556291391,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004542586750788643,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.005465334166146159,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004890583554376658,
+        "n_sentences": 59
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.00477815699658703,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.006176853055916775,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.004434225652816554,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005533092147265376,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.001740265390472047,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0019074868860276585,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0007587253414264037,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.001736111111111111,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0016471997604073077,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.001983712674879933,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0015636105188343995,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0016764459346186086,
+        "n_sentences": 6
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 93
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "9.1",
+    "taxonomy_secondary_name": "Dialogue Delivery & Speech Tags",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

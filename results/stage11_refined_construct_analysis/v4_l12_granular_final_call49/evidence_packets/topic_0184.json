@@ -1,0 +1,934 @@
+{
+  "topic_id": 184,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fire",
+        "flames",
+        "fires",
+        "flame",
+        "burned",
+        "fireplace",
+        "campfire",
+        "bonfire",
+        "hoses",
+        "firefighters"
+      ],
+      "KeyBERT": [
+        "lighting",
+        "heated",
+        "erupted",
+        "hissed",
+        "magical",
+        "warmth",
+        "flared",
+        "trailed",
+        "causing",
+        "spreading"
+      ],
+      "POS": [
+        "structure",
+        "lighting",
+        "atmosphere",
+        "meantime",
+        "results",
+        "magical",
+        "temperature",
+        "frantic",
+        "period",
+        "concrete"
+      ],
+      "MMR": [
+        "structure",
+        "lighting",
+        "erupted",
+        "flared",
+        "atmosphere",
+        "spreading",
+        "concrete",
+        "shed",
+        "warmed",
+        "hissed"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ve got the fire.",
+      "it looks like we’ve got an arson and a murder on our hands.” “",
+      "we’ve got to get down to the fire station and get rolling before that fire starts to spread.”"
+    ],
+    "label_public": "Racing to Stop A Spreading Fire"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "You are playing with fire.”",
+        "max_topic_prob": 0.6660593152046204,
+        "normalized_position": 0.21280093951849677,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She looked innocent, but she played with fire. “",
+        "max_topic_prob": 0.5819461941719055,
+        "normalized_position": 0.22207868467410452,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He’d already called and checked in, and there were no raging fires that needed to be put out, but he still wanted to get there quickly.",
+        "max_topic_prob": 0.5631489753723145,
+        "normalized_position": 0.44063417498532004,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "The space between them sizzled, sparking with energy. “",
+        "max_topic_prob": 0.5098044872283936,
+        "normalized_position": 0.7342337052260717,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 536
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "It was a muffin explosion in there.",
+        "max_topic_prob": 0.506586492061615,
+        "normalized_position": 0.6138578978273634,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Her body was on fire, and Ransom had the equipment to put it out.",
+        "max_topic_prob": 0.5452286601066589,
+        "normalized_position": 0.513897391943186,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’m just trying to keep her from burning it up!",
+        "max_topic_prob": 0.5148511528968811,
+        "normalized_position": 0.09293498224562263,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "You’re still making sure the gas line to the stove is off when you leave, right?” “",
+        "max_topic_prob": 0.5058139562606812,
+        "normalized_position": 0.09256765029998776,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Phillip Burns?",
+        "max_topic_prob": 0.4393383264541626,
+        "normalized_position": 0.23839843271703196,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "This news trumped everything else on folks’ minds: what people got for Christmas, holiday vacation stories, the one-hundred-year-old Methodist church destroyed by arson fire, and even the first snowfall Sienna had seen in fifty years.",
+        "max_topic_prob": 0.43906301259994507,
+        "normalized_position": 0.7816823803110077,
+        "tertile": "end",
+        "chapter_index": 58,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "The redhead had the power to take the incident from the frying pan to the fire.",
+        "max_topic_prob": 0.5414028763771057,
+        "normalized_position": 0.08621279507355457,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Was this the precursor to another disaster? “",
+        "max_topic_prob": 0.43359827995300293,
+        "normalized_position": 0.21672938761546356,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "A fire burned next to it.",
+        "max_topic_prob": 0.780913233757019,
+        "normalized_position": 0.8665499124343258,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Get the fire really hot.",
+        "max_topic_prob": 0.738423228263855,
+        "normalized_position": 0.38992994746059545,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I started a small fire inside the building.",
+        "max_topic_prob": 0.69228595495224,
+        "normalized_position": 0.8655866900175131,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He tossed some wood on the fire.",
+        "max_topic_prob": 0.6899356842041016,
+        "normalized_position": 0.6636602451838879,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Ahote lay on his side by the burnt-out fire. “",
+        "max_topic_prob": 0.650714635848999,
+        "normalized_position": 0.9224168126094571,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He set the water closer to the flame. “",
+        "max_topic_prob": 0.6471405029296875,
+        "normalized_position": 0.3911558669001751,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He felt the hot embers of the fire on his back.",
+        "max_topic_prob": 0.6576109528541565,
+        "normalized_position": 0.6294967938267579,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5792
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Baker stared into the fire. “",
+        "max_topic_prob": 0.642662525177002,
+        "normalized_position": 0.5540702097598087,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5098
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Go through the fire escape.",
+        "max_topic_prob": 0.6387794017791748,
+        "normalized_position": 0.5828714270188023,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5363
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Then it didn’t burn down?” “",
+        "max_topic_prob": 0.6270365715026855,
+        "normalized_position": 0.9106618845777633,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 8379
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I even heard he makes fire come down from heaven—” “What?”",
+        "max_topic_prob": 0.6204893589019775,
+        "normalized_position": 0.4962504075643952,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 4566
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Torch flames lit the black sky with an indescribable eeriness and smell.",
+        "max_topic_prob": 0.6190780401229858,
+        "normalized_position": 0.9391370503206173,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 8641
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The burning building was obvious.",
+        "max_topic_prob": 0.6515172719955444,
+        "normalized_position": 0.2787682333873582,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Explosions, like fires, can tell a story.",
+        "max_topic_prob": 0.6422535181045532,
+        "normalized_position": 0.2901134521880065,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was the one in flames shooting up into the night sky.",
+        "max_topic_prob": 0.6032529473304749,
+        "normalized_position": 0.27903835764451645,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He had been so busy waiting for the next round of fire that he hadn’t realized there hadn’t been one until several minutes went by. “",
+        "max_topic_prob": 0.5890846252441406,
+        "normalized_position": 0.5672609400324149,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "42 Stormy Glenn Firemen were currently trying to put the blaze out.",
+        "max_topic_prob": 0.5564695596694946,
+        "normalized_position": 0.2801188546731497,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Frank glanced at the burning pile of rubble. “",
+        "max_topic_prob": 0.5479754209518433,
+        "normalized_position": 0.2893030794165316,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "The camera cut away to where flames and smoke mushroomed.",
+        "max_topic_prob": 0.5647578239440918,
+        "normalized_position": 0.6562966650074664,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Once she found a pack of matches, she couldn’t get the match ignited.",
+        "max_topic_prob": 0.4565449357032776,
+        "normalized_position": 0.26692384270781483,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "It resembled a crooked fireman’s pole, or a natural ladder if one were a monkey.",
+        "max_topic_prob": 0.42210137844085693,
+        "normalized_position": 0.15542558486809357,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Can you kill the lights?",
+        "max_topic_prob": 0.36654359102249146,
+        "normalized_position": 0.0037332005973120955,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Even that submissive had been barely a blip on the radar compared to the fire that this woman lit inside of him.",
+        "max_topic_prob": 0.5221330523490906,
+        "normalized_position": 0.16772554002541296,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Set it by the fire to dry, lad.",
+        "max_topic_prob": 0.5931582450866699,
+        "normalized_position": 0.3129161118508655,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The light in the trees glowed like lace before a candle flame.",
+        "max_topic_prob": 0.5802775025367737,
+        "normalized_position": 0.640479360852197,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 469
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "When they reached Old Mab’s hut, they found her awake, feeding a few sticks into her tiny fire. “",
+        "max_topic_prob": 0.5392740964889526,
+        "normalized_position": 0.6537949400798935,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 479
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Their jeers dying away, the warband pressed closer until the torches flared up with a sudden smoky burst, driving them back.",
+        "max_topic_prob": 0.5065378546714783,
+        "normalized_position": 0.440745672436751,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "They burned a church, you see, and a monastery, too.",
+        "max_topic_prob": 0.49699866771698,
+        "normalized_position": 0.09320905459387484,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The beams catch and burn like logs in a hearth as the roof gives way, crashing down in a spray of red cinders.",
+        "max_topic_prob": 0.4848334491252899,
+        "normalized_position": 0.7776298268974701,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I felt myself smile, but then remembered that someone had to have set the fire.",
+        "max_topic_prob": 0.6839985847473145,
+        "normalized_position": 0.2930744534474851,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "We made it to Ally’s house just as the fire department was putting out the last of the flames that had engulfed Mark’s truck.",
+        "max_topic_prob": 0.6660393476486206,
+        "normalized_position": 0.2927686898027824,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The accelerant lit immediately and the fire began to spread.",
+        "max_topic_prob": 0.6611043810844421,
+        "normalized_position": 0.9963308362635682,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I turned the pilot on the stove and waited as it clicked over into a flame.",
+        "max_topic_prob": 0.6317545771598816,
+        "normalized_position": 0.8650053508637823,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He worried that he had left the burners on. “",
+        "max_topic_prob": 0.6128525137901306,
+        "normalized_position": 0.9636141262803852,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "As we made our way back out of the house I pulled a match from the box and ran it against the striker, watching intently as the flame ignited.",
+        "max_topic_prob": 0.6049494743347168,
+        "normalized_position": 0.9958721907965143,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "One must have fallen free during the fire.",
+        "max_topic_prob": 0.7207053899765015,
+        "normalized_position": 0.7238472979672781,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Forget about the fire, the heat, the smoke.",
+        "max_topic_prob": 0.7077676057815552,
+        "normalized_position": 0.7253346554288548,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "It seemed mostly unharmed by the fire.",
+        "max_topic_prob": 0.6883279085159302,
+        "normalized_position": 0.8296975706494795,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don't remember anything but the fire.\" \"",
+        "max_topic_prob": 0.6859971880912781,
+        "normalized_position": 0.7736737729300942,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Then suddenly the fire exploded across the roof, as if someone had turned a temperature knob all the way to high.",
+        "max_topic_prob": 0.6793375015258789,
+        "normalized_position": 0.7372335151214675,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What about…the fire...and…the barn.",
+        "max_topic_prob": 0.6466119289398193,
+        "normalized_position": 0.7565691621219633,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Okay, asshat, so where’s the fire?”",
+        "max_topic_prob": 0.7283406257629395,
+        "normalized_position": 0.08791760864104496,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Ryan saw the fire in her eyes.",
+        "max_topic_prob": 0.6068406105041504,
+        "normalized_position": 0.17030896759608138,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Babe, your skin is on fire, but I’m in no rush to get to the end.",
+        "max_topic_prob": 0.47791510820388794,
+        "normalized_position": 0.6037427781964331,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Had the fire suddenly blazed?",
+        "max_topic_prob": 0.794106125831604,
+        "normalized_position": 0.7322853985017806,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Did you get the fire out?”",
+        "max_topic_prob": 0.7454816102981567,
+        "normalized_position": 0.4879037209873511,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Fire!”",
+        "max_topic_prob": 0.7204487323760986,
+        "normalized_position": 0.46739530885423064,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Flames engulfed the log cabin.",
+        "max_topic_prob": 0.7000823616981506,
+        "normalized_position": 0.47218469851406114,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The flames revived with the fresh fuel.",
+        "max_topic_prob": 0.6857283115386963,
+        "normalized_position": 0.4847107945474641,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The fire bell.”",
+        "max_topic_prob": 0.6719543933868408,
+        "normalized_position": 0.46714969912808546,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "There was a fire today.’",
+        "max_topic_prob": 0.827155351638794,
+        "normalized_position": 0.9655736215823417,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 980
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That’s why I set the fires.",
+        "max_topic_prob": 0.7281200885772705,
+        "normalized_position": 0.9672086474702516,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 998
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "One small fire.",
+        "max_topic_prob": 0.7233977913856506,
+        "normalized_position": 0.23998546643655191,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The kid liked to set fires.” “",
+        "max_topic_prob": 0.7193539142608643,
+        "normalized_position": 0.7482968480334272,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The fires calm me.",
+        "max_topic_prob": 0.7035380601882935,
+        "normalized_position": 0.9566718139703879,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 882
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But the fire told him you were upset about something.” “",
+        "max_topic_prob": 0.7030158042907715,
+        "normalized_position": 0.9571259878281406,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 887
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.007950310559006211,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.00417762648924648,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004949882440292043,
+        "n_sentences": 40
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.00393268703127858,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.002644569816643159,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.004625850340136055,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.005054945054945055,
+        "n_sentences": 46
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.01078167115902965,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0004248088360237893,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0003450060376056581,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0003787878787878788,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.000616827041697508,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0005019450370184465,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0005899008966493629,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 68
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "10.3",
+    "taxonomy_secondary_name": "Mystery, Suspense & Investigation",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

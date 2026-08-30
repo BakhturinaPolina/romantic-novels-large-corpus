@@ -1,0 +1,164 @@
+{
+  "topic_id": 133,
+  "label": "Holding Back Tears",
+  "taxonomy_main_id": "3.2",
+  "taxonomy_main_name": "Negative Emotions & Distress",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "tears",
+      "cry",
+      "crying",
+      "tear",
+      "cheeks",
+      "cried",
+      "my",
+      "shed",
+      "eyes",
+      "down"
+    ],
+    "KeyBERT": [
+      "cried",
+      "emotional",
+      "sadness",
+      "emotions",
+      "afterward",
+      "begged",
+      "frantic",
+      "harshly",
+      "dripping",
+      "pressure"
+    ],
+    "POS": [
+      "pout",
+      "dripping",
+      "inevitable",
+      "sadness",
+      "frantic",
+      "combination",
+      "current",
+      "tracks",
+      "sidewalk",
+      "confusion"
+    ],
+    "MMR": [
+      "shed",
+      "pout",
+      "wipe",
+      "dripping",
+      "bursting",
+      "tumbled",
+      "frantic",
+      "crashing",
+      "choked",
+      "sidewalk"
+    ]
+  },
+  "stage08_snippets": [
+    "we’ll leave all our tears out to dry on the patio while we swan off to the acropolis!",
+    "they'll also cry foul.",
+    "they’ll tell you that i don’t do crying."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9806369887803112,
+      "max_topic_prob": 0.7859132289886475,
+      "sentence": "The tears had come back."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8910604415490408,
+      "max_topic_prob": 0.748323917388916,
+      "sentence": "I stared back through my tears."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9520448787549765,
+      "max_topic_prob": 0.7478270530700684,
+      "sentence": "The tears weren’t just gathering under my eyelashes now."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8876221498371335,
+      "max_topic_prob": 0.7292443513870239,
+      "sentence": "The tears were flowing freely now."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.31197973217517194,
+      "max_topic_prob": 0.7282578945159912,
+      "sentence": "I cried. “"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5622511762576909,
+      "max_topic_prob": 0.7282577753067017,
+      "sentence": "I cried. “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.25693474356415885,
+      "max_topic_prob": 0.5508537292480469,
+      "sentence": "A lot of people are going to die before this is over, so dry the tears and deal."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.6705248453402515,
+      "max_topic_prob": 0.43205130100250244,
+      "sentence": "Cheer up, dude."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.762651319706291,
+      "max_topic_prob": 0.7247849106788635,
+      "sentence": "I stop at that, tears filling my eyes."
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.07064893828140505,
+      "max_topic_prob": 0.7109036445617676,
+      "sentence": "I bite back tears."
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7942051994443342,
+      "max_topic_prob": 0.7108604907989502,
+      "sentence": "I rub at my grimy eyes, stuck shut at the corners from the excess tears I cried last night."
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5062512403254614,
+      "max_topic_prob": 0.6963735818862915,
+      "sentence": "And then I weep again, silent tears tracing themselves down my face, plunking hollowly against my robe."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

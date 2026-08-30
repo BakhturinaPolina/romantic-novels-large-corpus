@@ -1,0 +1,157 @@
+{
+  "topic_id": 93,
+  "label": "Meal Plans Casually Arranged",
+  "taxonomy_main_id": "4.2",
+  "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+  "taxonomy_secondary_id": "8.3b",
+  "taxonomy_secondary_name": "Everyday Props & Communication Media",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "dinner",
+      "lunch",
+      "supper",
+      "tonight",
+      "tomorrow",
+      "we",
+      "ll",
+      "eat",
+      "having",
+      "lunches"
+    ],
+    "KeyBERT": [
+      "meal",
+      "eaten",
+      "sentence",
+      "appointment",
+      "sir",
+      "shortly"
+    ],
+    "POS": [
+      "appointment",
+      "exciting",
+      "regular",
+      "meal",
+      "sentence",
+      "movement",
+      "lady"
+    ],
+    "MMR": [
+      "discussing",
+      "appointment",
+      "exciting",
+      "arranged",
+      "meal",
+      "sentence",
+      "ex",
+      "appreciate",
+      "planning",
+      "sending"
+    ]
+  },
+  "stage08_snippets": [
+    "that’ll wait ’til after supper, though.” “",
+    "i’ll go get started on lunch,” clark offered.",
+    "i’ll show you over dinner.” “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7596976611523103,
+      "max_topic_prob": 0.6605901718139648,
+      "sentence": "What kind of host would I be to let you go all day without a proper meal?"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7632629777524245,
+      "max_topic_prob": 0.562265932559967,
+      "sentence": "I can call the waiter over if you— No."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5847119224187107,
+      "max_topic_prob": 0.5533260107040405,
+      "sentence": "What happened to Reichen finding you some dinner downstairs?"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7598402738163149,
+      "max_topic_prob": 0.5164583325386047,
+      "sentence": "It seemed only fitting that I treat you to one of the city‘s finest dinners."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.29791785510553337,
+      "max_topic_prob": 0.49637502431869507,
+      "sentence": "We‘ll save you a sandwich."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.07535321821036106,
+      "max_topic_prob": 0.5108610987663269,
+      "sentence": "He’d sat with her for hours going over the catering menu for the reception, listening to her gripe and moan about what they would serve their guests."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5867021276595744,
+      "max_topic_prob": 0.8350917100906372,
+      "sentence": "Let’s have dinner tomorrow night.”"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6377659574468085,
+      "max_topic_prob": 0.7900922298431396,
+      "sentence": "Can we have dinner again soon?” “"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7074468085106383,
+      "max_topic_prob": 0.7416759729385376,
+      "sentence": "Let’s have dinner,” she said. “"
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.438563829787234,
+      "max_topic_prob": 0.722058892250061,
+      "sentence": "I’d love to take you to dinner,” he said. “"
+    },
+    {
+      "sid": "BOOK_003_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4186170212765957,
+      "max_topic_prob": 0.7178895473480225,
+      "sentence": "We agreed to have dinner the following night. “"
+    },
+    {
+      "sid": "BOOK_003_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.42898936170212765,
+      "max_topic_prob": 0.708479106426239,
+      "sentence": "You must come to dinner tonight,” she said. “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

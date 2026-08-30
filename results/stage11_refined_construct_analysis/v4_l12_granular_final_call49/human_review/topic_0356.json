@@ -1,0 +1,152 @@
+{
+  "topic_id": 356,
+  "label": "Admitting Exhaustion After A Long Day",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "3.1",
+  "taxonomy_secondary_name": "Positive Resolution, Relief & Emotional Payoff",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "tired",
+      "exhausted",
+      "exhaustion",
+      "am",
+      "must",
+      "tiredness",
+      "kind",
+      "fatigue",
+      "getting",
+      "too"
+    ],
+    "KeyBERT": [
+      "rested",
+      "drained",
+      "worn",
+      "sir",
+      "remarked",
+      "session"
+    ],
+    "POS": [
+      "session",
+      "sir"
+    ],
+    "MMR": [
+      "remarked",
+      "drained",
+      "session",
+      "emotionally",
+      "studying",
+      "ok",
+      "washed",
+      "worn",
+      "rested",
+      "sir"
+    ]
+  },
+  "stage08_snippets": [
+    "i am kind of tired, but you’ve done enough.",
+    "i’ve been riding most of the day, i’m tired.” “",
+    "i’ve rested more than i ever expected to rest in the whole of my lifetime during the past six weeks,” he said, “and i’m feeling perfectly fresh."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6475716913016825,
+      "max_topic_prob": 0.8243615627288818,
+      "sentence": "You must be exhausted.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6096996117430693,
+      "max_topic_prob": 0.7855126857757568,
+      "sentence": "You look exhausted,” he commented. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6477760370546966,
+      "max_topic_prob": 0.7148712873458862,
+      "sentence": "I thought you were tired."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.15216947074449969,
+      "max_topic_prob": 0.6960947513580322,
+      "sentence": "I was tired and cold and done with feeling under siege for the day. “"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7740617124174103,
+      "max_topic_prob": 0.6802194714546204,
+      "sentence": "I was exhausted, too, but there was much yet to do."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.48722839043661875,
+      "max_topic_prob": 0.552021861076355,
+      "sentence": "Aren’t you getting just a little tired of—” “I wasn’t kidding about the way it gets dark out here."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.08298647242455776,
+      "max_topic_prob": 0.8248835802078247,
+      "sentence": "I was exhausted."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.06997918834547347,
+      "max_topic_prob": 0.720561146736145,
+      "sentence": "By 7 p.m., I was exhausted."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5349895941727367,
+      "max_topic_prob": 0.6906682252883911,
+      "sentence": "You must be exhausted with all of your commitments at the moment?’ ‘"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3462539021852237,
+      "max_topic_prob": 0.6604507565498352,
+      "sentence": "I’m just tired, and I’ve got a big week.’ ‘"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8480749219562955,
+      "max_topic_prob": 0.6331279277801514,
+      "sentence": "I was exhausted at just the idea of it. ‘"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7761446409989594,
+      "max_topic_prob": 0.6014732122421265,
+      "sentence": "I was tired from a big week, my nervous energy had transformed into lethargy, and I was still drunkish."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,1050 @@
+{
+  "topic_id": 327,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "jumped",
+        "dropped",
+        "feet",
+        "knees",
+        "leaped",
+        "jump",
+        "ground",
+        "jumping",
+        "fell",
+        "lurched"
+      ],
+      "KeyBERT": [
+        "stumbled",
+        "crouched",
+        "leapt",
+        "collapsed",
+        "landed",
+        "dropping",
+        "tumbled",
+        "climbed",
+        "pinched",
+        "hopped"
+      ],
+      "POS": [
+        "amusement",
+        "cracked",
+        "growl",
+        "squeeze",
+        "figure"
+      ],
+      "MMR": [
+        "crouched",
+        "dangling",
+        "leapt",
+        "hovered",
+        "instinctively",
+        "tumbled",
+        "runs",
+        "darted",
+        "amusement",
+        "growl"
+      ]
+    },
+    "stage08_snippets": [
+      "she jumps up and lands on top of me, crouched over me like a cave woman. “",
+      "[person] had fallen, and a figure crouched over her.",
+      "she dropped to the floor, crouched, watching, waiting, the wings lifted and spread behind her."
+    ],
+    "label_public": "Crouching Over A Fallen Figure"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She jumped.",
+        "max_topic_prob": 0.8838810920715332,
+        "normalized_position": 0.705411982848534,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2444
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She pulled her feet up, stood on the chair to stay out of the way…to jump on Robert’s attacker if necessary.",
+        "max_topic_prob": 0.7486006021499634,
+        "normalized_position": 0.5840769498203732,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1397
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She pushed herself into a more upright position. “",
+        "max_topic_prob": 0.7416979074478149,
+        "normalized_position": 0.9756634604241511,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 2126
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She dipped into a curtsy. “",
+        "max_topic_prob": 0.7072525024414062,
+        "normalized_position": 0.740062579673195,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "With a cough of pain he released her and stumbled away.",
+        "max_topic_prob": 0.6841203570365906,
+        "normalized_position": 0.2922702514775756,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1180
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She flinched as if he had hit her.",
+        "max_topic_prob": 0.6545166969299316,
+        "normalized_position": 0.6507127129447213,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1972
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Chad grabbed his junk and doubled over, dropping to his knees. “",
+        "max_topic_prob": 0.601657509803772,
+        "normalized_position": 0.13806660499537465,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Luckily my girls were jumping up and down in excitement for me.",
+        "max_topic_prob": 0.5036370754241943,
+        "normalized_position": 0.26861702127659576,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "The girls’ faces registered shock, but neither one said a word and quickly got up and moved to the opposite side of the bar.",
+        "max_topic_prob": 0.495503306388855,
+        "normalized_position": 0.2567067530064755,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Oh, he’s a good scientist,” Steven said, and Wallace jumped. “",
+        "max_topic_prob": 0.48312389850616455,
+        "normalized_position": 0.36475787147854905,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "she snapped.",
+        "max_topic_prob": 0.6846737861633301,
+        "normalized_position": 0.8460444249917934,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "you sure landed on your feet, Ella.\" \"",
+        "max_topic_prob": 0.656580924987793,
+        "normalized_position": 0.8751504540978225,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Ella, come put your legs in the water,\" she called. \"",
+        "max_topic_prob": 0.5563066005706787,
+        "normalized_position": 0.7627749206696575,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She sank down to her knees in front of him. “",
+        "max_topic_prob": 0.7432466745376587,
+        "normalized_position": 0.9612095674804808,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She sank down next to him, clearly in shock. “",
+        "max_topic_prob": 0.6713868975639343,
+        "normalized_position": 0.8744578014623869,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He bucked against her, at just the right spot.",
+        "max_topic_prob": 0.629997968673706,
+        "normalized_position": 0.8039410087991077,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He dropped the box and caught her by the upper arm, swinging her to face him.",
+        "max_topic_prob": 0.6221092939376831,
+        "normalized_position": 0.8999876068905689,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Lena tried, unsuccessfully, to slide her legs over the side, then flopped back down with weakness.",
+        "max_topic_prob": 0.5996408462524414,
+        "normalized_position": 0.1014995662411699,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Her head shot up, hitting one of the metal shelves. “",
+        "max_topic_prob": 0.5875792503356934,
+        "normalized_position": 0.8962696740612219,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She lunged forward.",
+        "max_topic_prob": 0.7801347970962524,
+        "normalized_position": 0.34291377601585726,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Stifling a startled gasp, she stumbled to her feet, pretending the movement had been graceful.",
+        "max_topic_prob": 0.7330176830291748,
+        "normalized_position": 0.9768334985133796,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She dragged her gaze away from the falls. “",
+        "max_topic_prob": 0.730073094367981,
+        "normalized_position": 0.7104806739345887,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Charlotte collapsed, but the Mystic caught her, easing her to her knees. “",
+        "max_topic_prob": 0.7234855890274048,
+        "normalized_position": 0.9241823587710605,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She sat up and swung her legs to the floor.",
+        "max_topic_prob": 0.713137686252594,
+        "normalized_position": 0.33089692765113976,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She yelped as her hip hit the molded plastic, but she landed safely, her legs draped over her own seat. “",
+        "max_topic_prob": 0.6938362121582031,
+        "normalized_position": 0.18260654112983152,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She stumbled backward, falling to the ground as her body spasmed from the shock.",
+        "max_topic_prob": 0.7460769414901733,
+        "normalized_position": 0.6565550906555091,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "she snapped. “",
+        "max_topic_prob": 0.7253401279449463,
+        "normalized_position": 0.7273361227336123,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "she snapped. “",
+        "max_topic_prob": 0.7253401279449463,
+        "normalized_position": 0.9128312412831241,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She suddenly dug her heel into the ground like it had done something to make her mad before finally expelling a frustrated breath and jumping to her feet again. “",
+        "max_topic_prob": 0.721775472164154,
+        "normalized_position": 0.36837517433751743,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He fell back to his elbows, pumping upward while she ground down.",
+        "max_topic_prob": 0.7182833552360535,
+        "normalized_position": 0.8343793584379359,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Taking advantage of his preoccupation with catching his own blood, she lifted both feet and planted them on his body, kicking him unceremoniously to the floor.",
+        "max_topic_prob": 0.6669600605964661,
+        "normalized_position": 0.40986750348675033,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Her eyes flew open, and she started to sit up. ‘",
+        "max_topic_prob": 0.6811245083808899,
+        "normalized_position": 0.2766856901289368,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She dropped her hand hastily back into her lap. ‘",
+        "max_topic_prob": 0.6605179905891418,
+        "normalized_position": 0.08687381103360811,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Jem was now strong enough to go up steps, and soon would be able to climb the stairs.",
+        "max_topic_prob": 0.4278126358985901,
+        "normalized_position": 0.9547664341576834,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She slipped on the wood and landed on her back. “",
+        "max_topic_prob": 0.7597783803939819,
+        "normalized_position": 0.5113753877973113,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Portia suddenly jumped up. “",
+        "max_topic_prob": 0.7460653781890869,
+        "normalized_position": 0.4316184074457084,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Hallie jumped up, her eyes blazing. “",
+        "max_topic_prob": 0.7184024453163147,
+        "normalized_position": 0.9512668045501551,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Portia jumped up and darted around the room. “",
+        "max_topic_prob": 0.7095017433166504,
+        "normalized_position": 0.5832471561530507,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Finally he climbed on top of her and pushed so deep she thought she would break.",
+        "max_topic_prob": 0.7014905214309692,
+        "normalized_position": 0.20243019648397104,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Hallie jumped up. “",
+        "max_topic_prob": 0.700093150138855,
+        "normalized_position": 0.8572905894519132,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He released her, and she climbed to her feet.",
+        "max_topic_prob": 0.7671060562133789,
+        "normalized_position": 0.14474678760393045,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Addison fell forward and clambered on all fours a few steps before regaining her footing. “",
+        "max_topic_prob": 0.7286169528961182,
+        "normalized_position": 0.4145880574452003,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He lunged and caught her before she could back up enough.",
+        "max_topic_prob": 0.7217912673950195,
+        "normalized_position": 0.36167800453514737,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She ducked beneath his arm, banishing the thought and started toward the elevators. “",
+        "max_topic_prob": 0.6567554473876953,
+        "normalized_position": 0.3633786848072562,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Tom whirled to catch her around the waist. “",
+        "max_topic_prob": 0.6494404077529907,
+        "normalized_position": 0.18858654572940287,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She landed with a quiet oomph .",
+        "max_topic_prob": 0.6426355838775635,
+        "normalized_position": 0.48450491307634164,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She stormed off with the rapid click of her heels beating steady against the marble floor and her coat slung over her shoulder.",
+        "max_topic_prob": 0.6294773817062378,
+        "normalized_position": 0.6225274725274725,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Brody dropped to his knees, the look of surprise still on his face, and fell forward.",
+        "max_topic_prob": 0.56868577003479,
+        "normalized_position": 0.9137362637362637,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She continued to file her nails and swing her crossed leg until I thought her shoe would fly off and hit some poor unsuspecting shmoe trying to withdraw from his checking account. “",
+        "max_topic_prob": 0.5670721530914307,
+        "normalized_position": 0.6177655677655678,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I had seen many a woman fall at his feet over the years.",
+        "max_topic_prob": 0.4765819311141968,
+        "normalized_position": 0.21904761904761905,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She jumped up.",
+        "max_topic_prob": 0.8853156566619873,
+        "normalized_position": 0.5220249835634451,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She instinctively grabbed it as she leaped to her feet, running to catch up to her friends.",
+        "max_topic_prob": 0.7140637636184692,
+        "normalized_position": 0.28205128205128205,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She climbed to her feet and staggered down the mountain.",
+        "max_topic_prob": 0.6831555366516113,
+        "normalized_position": 0.4504930966469428,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her eyes focused on the ground and each ensuing step.",
+        "max_topic_prob": 0.6465175747871399,
+        "normalized_position": 0.4412886259040105,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She caught it in the air.",
+        "max_topic_prob": 0.6442412734031677,
+        "normalized_position": 0.12215647600262985,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But she refused, struggling on and falling behind.",
+        "max_topic_prob": 0.6397388577461243,
+        "normalized_position": 0.3963182117028271,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "She throws her hands up in the air. “",
+        "max_topic_prob": 0.659156322479248,
+        "normalized_position": 0.7546528564492636,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "She stumbles a bit as she starts walking away so I jump up to steady her by the elbow.",
+        "max_topic_prob": 0.6446799039840698,
+        "normalized_position": 0.4220747693801586,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Devyn jumps when she sees me upon exiting. “",
+        "max_topic_prob": 0.6241074204444885,
+        "normalized_position": 0.7483411555267843,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Rainey jumps out of her chair and grabs my elbow. “",
+        "max_topic_prob": 0.591113805770874,
+        "normalized_position": 0.736850623078168,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "He bounces on his feet. “",
+        "max_topic_prob": 0.5641289353370667,
+        "normalized_position": 0.8226250202298107,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "I stand up tall when I see her approach her bike and notice right away what I’ve done.",
+        "max_topic_prob": 0.42388299107551575,
+        "normalized_position": 0.007120893348438259,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her stomach dropped as he pushed her backward.",
+        "max_topic_prob": 0.7206329703330994,
+        "normalized_position": 0.8326250408630271,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She stepped back, the water lapping her ankles now. “",
+        "max_topic_prob": 0.7001596689224243,
+        "normalized_position": 0.672441974501471,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He slammed down on all fours, shaking the ground beneath her feet.",
+        "max_topic_prob": 0.6979309916496277,
+        "normalized_position": 0.35861392611964693,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Chills rippled up her arms as she skidded to a stop. “",
+        "max_topic_prob": 0.6804853081703186,
+        "normalized_position": 0.5658711997384767,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She slid down an inch, teasing.",
+        "max_topic_prob": 0.6702750325202942,
+        "normalized_position": 0.6878064727034979,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He fell to his knees between her legs in the surf.",
+        "max_topic_prob": 0.5909485816955566,
+        "normalized_position": 0.6783262504086303,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 399
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She stops punching momentarily. “",
+        "max_topic_prob": 0.6004133820533752,
+        "normalized_position": 0.5756193950448396,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Serves you right,” she laughs, lifting herself and then suddenly plopping back down. “",
+        "max_topic_prob": 0.593383252620697,
+        "normalized_position": 0.5672594619243047,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Her finger slipped when she went to answer it.”",
+        "max_topic_prob": 0.5844280123710632,
+        "normalized_position": 0.45956832345341236,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Jump?”",
+        "max_topic_prob": 0.5814459323883057,
+        "normalized_position": 0.28051375588995286,
+        "tertile": "begin",
+        "chapter_index": 26,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "As soon as we get to a standing position, she tries to break free and run after them.",
+        "max_topic_prob": 0.5510939955711365,
+        "normalized_position": 0.7297461620307037,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She jumped to her feet. “",
+        "max_topic_prob": 0.929051399230957,
+        "normalized_position": 0.43953488372093025,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "His mother jumped to her feet. “",
+        "max_topic_prob": 0.7841606736183167,
+        "normalized_position": 0.5140591966173361,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The moment he dropped to his knees she ran.",
+        "max_topic_prob": 0.7836973667144775,
+        "normalized_position": 0.13298097251585625,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She pushed herself to her knees.",
+        "max_topic_prob": 0.7600188255310059,
+        "normalized_position": 0.12621564482029599,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Released, she fell to her knees and squirmed through his open legs.",
+        "max_topic_prob": 0.7382122278213501,
+        "normalized_position": 0.41723044397463,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She swallowed her uncertainty, until he veered aside and jumped on Stone, nearly sending him tumbling backward. “",
+        "max_topic_prob": 0.7320631146430969,
+        "normalized_position": 0.5252642706131079,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 42
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.008220348030319206,
+        "n_sentences": 77
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.005705591479650057,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.007377157159794493,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.007227332457293035,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.005885430290347895,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0049261083743842365,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.007719123505976096,
+        "n_sentences": 62
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005279831045406547,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.000350099194771852,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0011285266457680251,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00038255547054322876,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00033097969991173877,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0009775171065493646,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0006369426751592356,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0007384160974709249,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00018535681186283596,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 79
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "10.1",
+    "taxonomy_secondary_name": "Paranormal & Immortal Beings",
+    "taxonomy_confidence": 0.65,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

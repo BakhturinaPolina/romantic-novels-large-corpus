@@ -1,0 +1,845 @@
+{
+  "topic_id": 354,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "bite",
+        "teeth",
+        "dental",
+        "dentist",
+        "bitten",
+        "chew",
+        "gnashing",
+        "gum",
+        "going",
+        "bites"
+      ],
+      "KeyBERT": [
+        "biting",
+        "bowed",
+        "wound",
+        "loose",
+        "admit",
+        "afterward",
+        "tries",
+        "follows",
+        "annoying"
+      ],
+      "POS": [
+        "inevitable",
+        "annoying",
+        "attractive",
+        "appointment",
+        "spite",
+        "biting",
+        "problems",
+        "wound",
+        "pieces",
+        "memories"
+      ],
+      "MMR": [
+        "follows",
+        "attractive",
+        "preparing",
+        "afterward",
+        "appointment",
+        "tries",
+        "spite",
+        "biting",
+        "bowed",
+        "wound"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll send the dentist’s bill to the incredible hulk .",
+      "i’ll try not to rot your teeth.”",
+      "i’ll bite that fucking bloody nose you’ve got right off."
+    ],
+    "label_public": "Threatening to Bite Someone's Nose"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Come on, I won't bite.\"",
+        "max_topic_prob": 0.821746826171875,
+        "normalized_position": 0.08933870284018652,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Oh, please, don't bite me,\" I said, doing my best not to giggle as I feigned fear.",
+        "max_topic_prob": 0.6824109554290771,
+        "normalized_position": 0.7299703264094956,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You know, it looks like a bite, but then again it doesn't.",
+        "max_topic_prob": 0.6645170450210571,
+        "normalized_position": 0.07291225095379399,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I finished chewing the bite I'd just taken and looked up at Christopher. \"",
+        "max_topic_prob": 0.6481108069419861,
+        "normalized_position": 0.786244171259008,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 546
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Fangs nicked at my lip, stinging, and it only heightened the sensations.",
+        "max_topic_prob": 0.6316225528717041,
+        "normalized_position": 0.4264518863925392,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Lucien's hand came up around my throat, his thumb caressing the bite mark he'd just put there. \"",
+        "max_topic_prob": 0.6192567348480225,
+        "normalized_position": 0.5179101314116151,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I didn’t bite her.",
+        "max_topic_prob": 0.734488844871521,
+        "normalized_position": 0.5375954445451016,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He didn’t bite me, Father.”",
+        "max_topic_prob": 0.716185986995697,
+        "normalized_position": 0.5275009706224926,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Let me see your teeth.”",
+        "max_topic_prob": 0.6856080293655396,
+        "normalized_position": 0.7004011906302575,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 395
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "When he opened his mouth, fangs protruded from his gums.",
+        "max_topic_prob": 0.6592912077903748,
+        "normalized_position": 0.828911608645011,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 591
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "His kind bites.”",
+        "max_topic_prob": 0.6533598899841309,
+        "normalized_position": 0.5268538889607869,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was almost orgasmic and each bite caused a small shiver of pleasure to work over her limbs.",
+        "max_topic_prob": 0.6264952421188354,
+        "normalized_position": 0.7160605668435357,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Yes’ to the toothbrush, ‘no’ to seeing other people.”",
+        "max_topic_prob": 0.5120210647583008,
+        "normalized_position": 0.8381671947355593,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Mosquito bites.",
+        "max_topic_prob": 0.5078714489936829,
+        "normalized_position": 0.9337070436266147,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He took another bite.",
+        "max_topic_prob": 0.7036999464035034,
+        "normalized_position": 0.6575046769319326,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I bit my tongue.",
+        "max_topic_prob": 0.670319676399231,
+        "normalized_position": 0.9647431285076989,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I wasn’t ready to quit chewing on it yet. “",
+        "max_topic_prob": 0.6614013910293579,
+        "normalized_position": 0.7904734494171823,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I ran my tongue over my teeth. “",
+        "max_topic_prob": 0.6522687077522278,
+        "normalized_position": 0.3065189235861275,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The bite in my words revealed my disappointment.",
+        "max_topic_prob": 0.6509586572647095,
+        "normalized_position": 0.3083896963591884,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His disappeared before I’d finished my third bite. “",
+        "max_topic_prob": 0.6466599106788635,
+        "normalized_position": 0.11641962872355735,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "My teeth were chattering, and I knew that I was no temptation; I must by then have looked more like a bedraggled street beggar than a siren of the night.",
+        "max_topic_prob": 0.463655948638916,
+        "normalized_position": 0.6203328834907782,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Once, when I was stung by a wasp, Will ran home and came back with a small jug of vinegar, which he poured onto my clean handkerchief and pressed to my skin. ‘",
+        "max_topic_prob": 0.422582745552063,
+        "normalized_position": 0.01349527665317139,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The chewing.”",
+        "max_topic_prob": 0.6029561758041382,
+        "normalized_position": 0.5740077821011673,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He’ll soon be out of teeth to grind.”",
+        "max_topic_prob": 0.5583511590957642,
+        "normalized_position": 0.9435019455252919,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Even so, it would certainly put Charmaine’s nose out of joint.",
+        "max_topic_prob": 0.38144946098327637,
+        "normalized_position": 0.08591439688715953,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Don't bite the hand that feeds us, Jack.\" \"",
+        "max_topic_prob": 0.5867998600006104,
+        "normalized_position": 0.42771781033153433,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You could be a sport fisherman and I'd still want to suck on your rod.\"",
+        "max_topic_prob": 0.41839179396629333,
+        "normalized_position": 0.2862374710871241,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Bite me.”",
+        "max_topic_prob": 0.7627977132797241,
+        "normalized_position": 0.017374092808445128,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "His teeth pinched the sensitive nub, gifting me with the bite of pain.",
+        "max_topic_prob": 0.686821699142456,
+        "normalized_position": 0.226728304265602,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I scraped my teeth across the smooth delicate flesh and then I took her mouth.",
+        "max_topic_prob": 0.6624383926391602,
+        "normalized_position": 0.4635427610842614,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I shoved a bite of food in my mouth to keep from smiling.",
+        "max_topic_prob": 0.6383297443389893,
+        "normalized_position": 0.33977726413111997,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Archer,” Holding the pierced nipple to my mouth, I sucked and bit her molasses covered skin.",
+        "max_topic_prob": 0.5910385847091675,
+        "normalized_position": 0.463122504727884,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "My jaw hit my lap.",
+        "max_topic_prob": 0.5517693758010864,
+        "normalized_position": 0.34082790502206345,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "One finger tapped the corner of my mouth.",
+        "max_topic_prob": 0.5513900518417358,
+        "normalized_position": 0.4242487917629754,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "The people in this town were vicious, and he didn’t want their inevitable gnashing teeth to bite as deeply into Tom as they had chewed on him over the past few years.",
+        "max_topic_prob": 0.6050624847412109,
+        "normalized_position": 0.43268337975858867,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Unclench the jaw, doc.",
+        "max_topic_prob": 0.5646650791168213,
+        "normalized_position": 0.5874342308882698,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I’ll swallow it.”",
+        "max_topic_prob": 0.49021220207214355,
+        "normalized_position": 0.36521200866604764,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Lord only knows how much abuse your meat gets when you’re tenderizing it, you masochistic freak!” “",
+        "max_topic_prob": 0.47112005949020386,
+        "normalized_position": 0.20148560817084493,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "When we can put our mouths to better use.”",
+        "max_topic_prob": 0.4268515408039093,
+        "normalized_position": 0.45837202104611574,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Want a bite?”",
+        "max_topic_prob": 0.7517266273498535,
+        "normalized_position": 0.5758044896605109,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I take a few bites. “",
+        "max_topic_prob": 0.6674292087554932,
+        "normalized_position": 0.1921928563529802,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I bite my lip.",
+        "max_topic_prob": 0.6608888506889343,
+        "normalized_position": 0.5242729182793321,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Want to grab a bite to eat ?” “",
+        "max_topic_prob": 0.6594877243041992,
+        "normalized_position": 0.8951675328983745,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Biting back the fury that has taken residence in my body, I struggle to swallow .",
+        "max_topic_prob": 0.617374062538147,
+        "normalized_position": 0.7381399977883446,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I bite my lower lip until it stings, and my eyes dart back to my journal . “",
+        "max_topic_prob": 0.6171337366104126,
+        "normalized_position": 0.012385270374875594,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Patrick wanted to choke the damn elf who dreamed of becoming a dentist.",
+        "max_topic_prob": 0.4517325162887573,
+        "normalized_position": 0.4927027944337595,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Me and my big mouth.",
+        "max_topic_prob": 0.4168410897254944,
+        "normalized_position": 0.28623147414865935,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 479
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Are you about to chew your leg off?” “",
+        "max_topic_prob": 0.647911548614502,
+        "normalized_position": 0.6012347633370271,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I know she wants to bit off mine.",
+        "max_topic_prob": 0.5899437665939331,
+        "normalized_position": 0.002691150862751306,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Why else would he chew hot gum that burns your tongue?",
+        "max_topic_prob": 0.5855433940887451,
+        "normalized_position": 0.14500554060471743,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "The older woman took a small bite as if that wasn’t shocking news. “",
+        "max_topic_prob": 0.565237820148468,
+        "normalized_position": 0.16938420136140572,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "A rabid monkey to bite Henry",
+        "max_topic_prob": 0.5454800128936768,
+        "normalized_position": 0.015038784233022004,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "☹☺ To date, she has not bitten anyone’s head off—that I know of!!!",
+        "max_topic_prob": 0.532364010810852,
+        "normalized_position": 0.9949343042583505,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I bite out. “",
+        "max_topic_prob": 0.7097930908203125,
+        "normalized_position": 0.24307159353348728,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I suck my teeth and frown. “",
+        "max_topic_prob": 0.6376032829284668,
+        "normalized_position": 0.7222863741339491,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I laughed at her comment about her nephew and took another bite.",
+        "max_topic_prob": 0.6113301515579224,
+        "normalized_position": 0.6600131969646981,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It takes everything in me not to bite that apple, tempting though it is.",
+        "max_topic_prob": 0.5847269296646118,
+        "normalized_position": 0.6975420653249752,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "The corners of my mouth pulled downward.",
+        "max_topic_prob": 0.5788246393203735,
+        "normalized_position": 0.6580336522599802,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Do you know a spot where we could grab a bite to eat?”",
+        "max_topic_prob": 0.5768545866012573,
+        "normalized_position": 0.3559881227317717,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I think you have a mole.",
+        "max_topic_prob": 0.3682396411895752,
+        "normalized_position": 0.7169458025590346,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 197
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.003600932005930947,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0019096645632680172,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0027827248441674086,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0017467248908296944,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.0022310756972111555,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.00308839190628328,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0022103757638798596,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0015586034912718205,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00010450412791305256,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00022084805653710247,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00038677238445175013,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00030511060259344014,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.00022755717373990216,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0002458210422812193,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00047445832674363435,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 60
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": "7.1",
+    "taxonomy_secondary_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

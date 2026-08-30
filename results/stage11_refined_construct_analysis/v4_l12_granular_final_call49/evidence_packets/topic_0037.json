@@ -1,0 +1,1066 @@
+{
+  "topic_id": 37,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "friends",
+        "friend",
+        "friendship",
+        "best",
+        "we",
+        "re",
+        "friendly",
+        "be",
+        "your",
+        "friendships"
+      ],
+      "KeyBERT": [
+        "playfully",
+        "stalked",
+        "ya",
+        "ye",
+        "parties",
+        "um",
+        "lets",
+        "engaged",
+        "ah",
+        "honestly"
+      ],
+      "POS": [
+        "parties",
+        "addition",
+        "occasional",
+        "fashioned",
+        "annoying",
+        "suggestion",
+        "anxiety",
+        "shout",
+        "century",
+        "benefit"
+      ],
+      "MMR": [
+        "pout",
+        "parties",
+        "affect",
+        "addition",
+        "playfully",
+        "fashioned",
+        "admire",
+        "shout",
+        "ensure",
+        "equally"
+      ]
+    },
+    "stage08_snippets": [
+      "i've told you -- we're just good friends.",
+      "and i’ll grant ye i’ve been a bad friend to you.",
+      "but we’ve been friends for a long time."
+    ],
+    "label_public": "Defending A Close Friendship"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You said you were friends.” “",
+        "max_topic_prob": 0.8255120515823364,
+        "normalized_position": 0.6006281710558106,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You’re my best friend here.” “",
+        "max_topic_prob": 0.7493945956230164,
+        "normalized_position": 0.45059193041797535,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It was only friendship, nothing more, not to me.",
+        "max_topic_prob": 0.7461422681808472,
+        "normalized_position": 0.4055730047515503,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The way we’re friends?”",
+        "max_topic_prob": 0.7257516384124756,
+        "normalized_position": 0.4500281871627607,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He’s sort of just a friend.”",
+        "max_topic_prob": 0.7224390506744385,
+        "normalized_position": 0.44986711766127085,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He’s your friend the same way I am?”",
+        "max_topic_prob": 0.6995962858200073,
+        "normalized_position": 0.4506724651687203,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "A friend?” “",
+        "max_topic_prob": 0.6890263557434082,
+        "normalized_position": 0.5896111786148238,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 566
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "A friend.” “",
+        "max_topic_prob": 0.6767091751098633,
+        "normalized_position": 0.5895099230457675,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 565
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Good, then get out of my face and give me a minute with my friend.”",
+        "max_topic_prob": 0.6252566576004028,
+        "normalized_position": 0.4527136492507088,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 456
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’m here because I’m worried about a friend.” “",
+        "max_topic_prob": 0.6084067821502686,
+        "normalized_position": 0.7487849331713244,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "He didn’t have any life-long friends, with the exception of Butch.",
+        "max_topic_prob": 0.47331559658050537,
+        "normalized_position": 0.6229242608343459,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "A friend once told me it’s okay to lean on someone,” he said. “",
+        "max_topic_prob": 0.46439194679260254,
+        "normalized_position": 0.8266504657756176,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 402
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We’re still friends, right?”",
+        "max_topic_prob": 0.7537716627120972,
+        "normalized_position": 0.9396284829721362,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Friends.",
+        "max_topic_prob": 0.7020139694213867,
+        "normalized_position": 0.8885448916408669,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It’s just…I made friends there.” “",
+        "max_topic_prob": 0.6865826845169067,
+        "normalized_position": 0.7869582043343654,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That’s why I need my friends.",
+        "max_topic_prob": 0.6522901058197021,
+        "normalized_position": 0.5762383900928792,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 1037
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’d like to stay friends with you.",
+        "max_topic_prob": 0.6404145956039429,
+        "normalized_position": 0.4051857585139319,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Friend.",
+        "max_topic_prob": 0.6053773164749146,
+        "normalized_position": 0.3862229102167183,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "A friend, my lady,\" he said. \"",
+        "max_topic_prob": 0.6540266871452332,
+        "normalized_position": 0.018423836389280676,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Lud, I hope you aren't that friendly to all of them,\" Juliana said.",
+        "max_topic_prob": 0.5928688049316406,
+        "normalized_position": 0.17383638928067702,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "My good fortune in writing friends has extended to the very highest peaks.",
+        "max_topic_prob": 0.5237134695053101,
+        "normalized_position": 0.002909026798307475,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He let out the hoot that should identify him as a friend.",
+        "max_topic_prob": 0.5093957185745239,
+        "normalized_position": 0.7059238363892807,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Arthur wasn't sure whether or not he should be grateful to see his former enemy turned Highland Guard partner, and at one time, the closest thing he had to a friend.",
+        "max_topic_prob": 0.4815557599067688,
+        "normalized_position": 0.02353667136812412,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "But some people don't want that kind of closeness.",
+        "max_topic_prob": 0.4229028522968292,
+        "normalized_position": 0.7259344146685472,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You are friends already.”",
+        "max_topic_prob": 0.7789626121520996,
+        "normalized_position": 0.333999333999334,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "This was friendship.",
+        "max_topic_prob": 0.7658047676086426,
+        "normalized_position": 0.5675990675990676,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I didn’t know we were friends.” “",
+        "max_topic_prob": 0.7644288539886475,
+        "normalized_position": 0.1327006327006327,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Friendship, sure.”",
+        "max_topic_prob": 0.7596666812896729,
+        "normalized_position": 0.8856143856143857,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Hey, that’s what friends are for.”",
+        "max_topic_prob": 0.7579363584518433,
+        "normalized_position": 0.13236763236763235,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Then I guess we’re still friends.” “",
+        "max_topic_prob": 0.7467279434204102,
+        "normalized_position": 0.5647685647685647,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He's just a friend.\"",
+        "max_topic_prob": 0.7209901213645935,
+        "normalized_position": 0.2655038759689923,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "So how'd you become friends?\" \"",
+        "max_topic_prob": 0.7013264298439026,
+        "normalized_position": 0.7724252491694352,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Now you're friends.",
+        "max_topic_prob": 0.6803995966911316,
+        "normalized_position": 0.5888704318936877,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 463
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Some friend you turned out to be.",
+        "max_topic_prob": 0.666401743888855,
+        "normalized_position": 0.6054817275747508,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 523
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "To friendship!\"",
+        "max_topic_prob": 0.6590243577957153,
+        "normalized_position": 0.6658361018826136,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You always said I should bring home a friend.\"",
+        "max_topic_prob": 0.658719539642334,
+        "normalized_position": 0.6115725359911407,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 545
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Some just friends.",
+        "max_topic_prob": 0.5839328765869141,
+        "normalized_position": 0.7537478495944949,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He was everyone’s best friend, never lost his temper, and had such a natural confidence about him without being arrogant.",
+        "max_topic_prob": 0.5217546820640564,
+        "normalized_position": 0.11403293192430572,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I’ve always been yours.”",
+        "max_topic_prob": 0.5129718780517578,
+        "normalized_position": 0.8365691816171049,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Do you think we can be friends after this?\" \"",
+        "max_topic_prob": 0.6914929151535034,
+        "normalized_position": 0.8721778395276137,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Sounds like more than just an old friend.\"",
+        "max_topic_prob": 0.6625328660011292,
+        "normalized_position": 0.1194859326154915,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I didn't think you would have time to come back here for an old friend.\" \"",
+        "max_topic_prob": 0.6104608178138733,
+        "normalized_position": 0.25460229246266064,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I think you found another new friend.” “",
+        "max_topic_prob": 0.7037544846534729,
+        "normalized_position": 0.43975641583297087,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Our mothers were best friends.",
+        "max_topic_prob": 0.6165775060653687,
+        "normalized_position": 0.41438306510076844,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "You are irreplaceable as both a fan and a friend.",
+        "max_topic_prob": 0.48796898126602173,
+        "normalized_position": 0.0026098303610265334,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "We only thought we were helping his friend.",
+        "max_topic_prob": 0.487737774848938,
+        "normalized_position": 0.8268812527185733,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Acceptance, love, friendship, times three!",
+        "max_topic_prob": 0.4027103781700134,
+        "normalized_position": 0.9534580252283602,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Who’s your friend?”",
+        "max_topic_prob": 0.7685796022415161,
+        "normalized_position": 0.12588041360707328,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "We’re friends!”",
+        "max_topic_prob": 0.7381716966629028,
+        "normalized_position": 0.010340176832009591,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "From that day forward, the three of us were best friends.",
+        "max_topic_prob": 0.6884923577308655,
+        "normalized_position": 0.011988610819721265,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I don’t have friends.”",
+        "max_topic_prob": 0.6745567917823792,
+        "normalized_position": 0.010789749737749139,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I don’t want to hear about your friends’ sexual encounters, but thanks.”",
+        "max_topic_prob": 0.6264893412590027,
+        "normalized_position": 0.05919376592237374,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "What the hell was I thinking, being ‘friends’ with Deke?",
+        "max_topic_prob": 0.6221954822540283,
+        "normalized_position": 0.4416304510714821,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "A close friend.”",
+        "max_topic_prob": 0.6812990307807922,
+        "normalized_position": 0.742053343076361,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Her friends .",
+        "max_topic_prob": 0.5660874247550964,
+        "normalized_position": 0.6273291925465838,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I am very unhappy with you; you have placed both yourself and your friends in danger by actively going against my request.”",
+        "max_topic_prob": 0.4833281338214874,
+        "normalized_position": 0.7977103885032274,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We’re friends.” “",
+        "max_topic_prob": 0.8006982803344727,
+        "normalized_position": 0.6159391794468475,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We’re just friends.”",
+        "max_topic_prob": 0.7568641901016235,
+        "normalized_position": 0.7346965526281295,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Are we still friends?” “",
+        "max_topic_prob": 0.7259528636932373,
+        "normalized_position": 0.3780311967492463,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Not exactly a friend, mind you, but more like an old lover.",
+        "max_topic_prob": 0.7130719423294067,
+        "normalized_position": 0.6532966312753965,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "How ’bout we try being better friends to each other?” “",
+        "max_topic_prob": 0.7067965269088745,
+        "normalized_position": 0.23318914667715296,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Well, I don’t know what that says about your so-called friends.” “",
+        "max_topic_prob": 0.6945966482162476,
+        "normalized_position": 0.7737580285751737,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I thought you and her were bffs.\" \"",
+        "max_topic_prob": 0.6133387088775635,
+        "normalized_position": 0.8168767507002801,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Yes, she was my mother's best friend, why?\" \"",
+        "max_topic_prob": 0.5811244249343872,
+        "normalized_position": 0.8266806722689075,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Friendship, Ryver,\" Thorn replied as he made to leave. \"",
+        "max_topic_prob": 0.5422216653823853,
+        "normalized_position": 0.7138480392156863,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "And friend or not, Lena was definitely the scariest being he knew. \"",
+        "max_topic_prob": 0.5318840742111206,
+        "normalized_position": 0.6411064425770309,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "His friend was uptight at the best of times, but this was in a whole different class of tense. “",
+        "max_topic_prob": 0.4266590476036072,
+        "normalized_position": 0.9340861344537815,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Kaden’s not just another Guardian, he’s my friend and my fucking Keeper.",
+        "max_topic_prob": 0.4177889823913574,
+        "normalized_position": 0.11230742296918768,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It’s obvious you’ve been friends forever.” “",
+        "max_topic_prob": 0.7318482398986816,
+        "normalized_position": 0.011147540983606558,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "why you and your friends?” “",
+        "max_topic_prob": 0.7070835828781128,
+        "normalized_position": 0.9244262295081968,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 608
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "But you’re friends.",
+        "max_topic_prob": 0.6815310716629028,
+        "normalized_position": 0.6154098360655738,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Why can’t it just be us and a couple of friends?",
+        "max_topic_prob": 0.656308114528656,
+        "normalized_position": 0.8344262295081967,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Making Raymond’s friends like me enough to consider me an actual friend was my goal. “",
+        "max_topic_prob": 0.6420750617980957,
+        "normalized_position": 0.5326229508196721,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "No, but that doesn’t mean we have to pretend we’re just friends.",
+        "max_topic_prob": 0.6308392286300659,
+        "normalized_position": 0.43491803278688523,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 365
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "All the friends I had prior to dating him just kind of dropped off when I had started spending all my time with him.",
+        "max_topic_prob": 0.6236801147460938,
+        "normalized_position": 0.3657587548638132,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "New friends: hopeful.",
+        "max_topic_prob": 0.6216417551040649,
+        "normalized_position": 0.01670862897688258,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She and I were quickly becoming fast friends the more we found out we had in common.",
+        "max_topic_prob": 0.6124898195266724,
+        "normalized_position": 0.21309224078736552,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "It had been a long time since I had gone out with friends other than Jada.",
+        "max_topic_prob": 0.5947696566581726,
+        "normalized_position": 0.3653009842069123,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Looking back on it, I knew now that had been a colossal mistake, giving up my friends for a guy.",
+        "max_topic_prob": 0.5922541618347168,
+        "normalized_position": 0.3662165255207141,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Then my friends turned on me. “",
+        "max_topic_prob": 0.590828537940979,
+        "normalized_position": 0.8168917372396429,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 26
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.003933364183248496,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.004745951982132886,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004463547693833692,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.006376908877328411,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0034758954208855978,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0038948393378773127,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.004356435643564357,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0034834737524303307,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00036760200955765227,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0005313966876273138,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0007311010381634742,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0007049700387733521,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0008165765030111259,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0010463899546564353,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0007390983000739098,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 80
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

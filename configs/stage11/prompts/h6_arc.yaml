@@ -1,0 +1,85 @@
+# Frozen H6 narrative arc semantics prompts.
+
+hypothesis: H6
+name: arc_semantics
+version: "1.0"
+frozen: true
+
+codes:
+  - id: ARC_0
+    label: off_target
+  - id: ARC_1
+    label: misunderstanding
+  - id: ARC_2
+    label: escalation_conflict
+  - id: ARC_3
+    label: separation_breakup_threat
+  - id: ARC_4
+    label: relationship_caused_distress
+  - id: ARC_5
+    label: disclosure
+  - id: ARC_6
+    label: repair
+  - id: ARC_7
+    label: restored_trust
+  - id: ARC_8
+    label: mutual_commitment_final_payoff
+  - id: ARC_9
+    label: external_plot_conflict
+  - id: ARC_10
+    label: unclear_arc_role
+
+fields:
+  - main_couple
+  - arc_role
+  - relationship_state_change
+  - narrative_position
+
+constructs:
+  REFINED_FALLING: [ARC_1, ARC_2, ARC_3, ARC_4]
+  REFINED_RISING: [ARC_5, ARC_6, ARC_7, ARC_8]
+  EXTERNAL_PLOT_CONFLICT: [ARC_9]
+
+pass_b_shows_position: true
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+phrasing:
+  primary:
+    system: |
+      You code narrative-arc roles for romance topics with a main-couple filter.
+      High conflict-label fidelity is not the same as main-couple conflict.
+      Position/tertile is visible; ratings stay hidden. JSON only.
+    pass_a: |
+      Lexical arc coding for topic {topic_id}.
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      JSON: per_rep, consensus_code, disagreement, rationale.
+    pass_b: |
+      Contextual arc coding for topic {topic_id} (tertile visible; cells blinded):
+      {sentences_block}
+      For each sentence note main_couple (yes/no/unclear) and ARC code.
+      JSON: sentence_codes, proportions_by_tertile, dominant_code, main_couple_prob estimate, rationale.
+    pass_c: |
+      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Assign arc_role and whether topic enters REFINED_FALLING / REFINED_RISING / EXTERNAL_PLOT_CONFLICT.
+
+  alternate:
+    system: |
+      Arc-semantics auditor: main-couple rising/falling vs external plot conflict. JSON only.
+    pass_a: |
+      Keywords {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+    pass_b: |
+      Sentences {topic_id} with tertiles:
+      {sentences_block}
+    pass_c: |
+      Adjudicate {topic_id} tax={taxonomy_id}/{taxonomy_name}. Action + arc_role.

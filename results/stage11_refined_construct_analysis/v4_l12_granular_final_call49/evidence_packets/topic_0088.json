@@ -1,0 +1,934 @@
+{
+  "topic_id": 88,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "heat",
+        "cold",
+        "fire",
+        "skin",
+        "warm",
+        "cheeks",
+        "burned",
+        "warmth",
+        "felt",
+        "body"
+      ],
+      "KeyBERT": [
+        "temperature",
+        "heated",
+        "warmth",
+        "shivered",
+        "melted",
+        "warmed",
+        "warming",
+        "damp",
+        "violently",
+        "anxious"
+      ],
+      "POS": [
+        "temperature",
+        "veins",
+        "atmosphere",
+        "pathetic",
+        "resisted",
+        "lighting",
+        "ribs",
+        "combination",
+        "insides",
+        "narrow"
+      ],
+      "MMR": [
+        "flooded",
+        "crept",
+        "erupted",
+        "warming",
+        "heated",
+        "flowed",
+        "flared",
+        "atmosphere",
+        "shivered",
+        "heaved"
+      ]
+    },
+    "stage08_snippets": [
+      "no movement, her skin temperature clammy enough to make a ball of fear lodge in his gut. “",
+      "now, [person], how has her temperature been?",
+      "the nippiness that was still molesting her limbs, she hoped, was indeed because of the low temperature and not a foretoken of her entering his residence."
+    ],
+    "label_public": "Checking Her Feverish Temperature"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She felt a series of cold chills.",
+        "max_topic_prob": 0.7937343120574951,
+        "normalized_position": 0.4702084486257148,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Her entire body burned and her mind raced.",
+        "max_topic_prob": 0.7246740460395813,
+        "normalized_position": 0.8751152923814794,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Every time he opened her up she felt a surge of wind invade her body and send pricks through her skin.",
+        "max_topic_prob": 0.7160683870315552,
+        "normalized_position": 0.5878989116399188,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Her head hurt and her body ached.",
+        "max_topic_prob": 0.6936274766921997,
+        "normalized_position": 0.872348275225973,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Chills shot up her spine and into her chest, causing her to arch her back, which made her breasts bounce just enough to command attention.",
+        "max_topic_prob": 0.6826390027999878,
+        "normalized_position": 0.11695259177273566,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The rusted metal felt cold on the back of her thighs, and the persistent wind blew loose strands of her hair directly into the low O’s of smoke she eased from the center of her dry mouth.",
+        "max_topic_prob": 0.6774635910987854,
+        "normalized_position": 0.5958310274857037,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She seemed fidgety and hurried us along, as if the food might get cold.",
+        "max_topic_prob": 0.6010890007019043,
+        "normalized_position": 0.6938311253847184,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Lydia and Simon became visibly pale and shock emanated from them.",
+        "max_topic_prob": 0.5016782283782959,
+        "normalized_position": 0.8463803024220528,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "That would have heated me up instantly, I teased.",
+        "max_topic_prob": 0.47333306074142456,
+        "normalized_position": 0.8292519737722468,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Pure, fiery heat spread along her legs all the way up to her face. “",
+        "max_topic_prob": 0.7997373342514038,
+        "normalized_position": 0.584355179704017,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her body coiled from the heated friction and the way he seemed to keep hitting her newly found g-spot.",
+        "max_topic_prob": 0.7067147493362427,
+        "normalized_position": 0.6109936575052854,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A cold bit of what felt like metal touched her chest.",
+        "max_topic_prob": 0.7014155983924866,
+        "normalized_position": 0.5657505285412262,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Bren’s body tingled all over at the warmth from his breath on her skin.",
+        "max_topic_prob": 0.6852469444274902,
+        "normalized_position": 0.49682875264270615,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Like being tortured with pleasure and the adrenaline rushed through her body.",
+        "max_topic_prob": 0.6395522356033325,
+        "normalized_position": 0.5839323467230444,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her brain just whirled around in a dead heat for any sense to the wild situation.",
+        "max_topic_prob": 0.6382988095283508,
+        "normalized_position": 0.7547568710359408,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "He felt his face heating, flames licking up his collar.",
+        "max_topic_prob": 0.6187509298324585,
+        "normalized_position": 0.8114285714285714,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Marcus whirled on him, his temperature through the roof.",
+        "max_topic_prob": 0.5119529962539673,
+        "normalized_position": 0.4454135338345865,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Here the air was so clean and so fresh that she felt like she was on another planet.",
+        "max_topic_prob": 0.5534248352050781,
+        "normalized_position": 0.3045212765957447,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 1177
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "There was a small explosion and Danielle Wright fell in front of the president, blood gushing out of her neck.",
+        "max_topic_prob": 0.5082131624221802,
+        "normalized_position": 0.7264437689969605,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "She tampered with her NAST to make it explode,” Professor Reed explained. “",
+        "max_topic_prob": 0.4415707588195801,
+        "normalized_position": 0.727773556231003,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She felt her cheeks heating.",
+        "max_topic_prob": 0.8400365114212036,
+        "normalized_position": 0.8029739776951673,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Her face heated as she spoke rapidly. “",
+        "max_topic_prob": 0.7458622455596924,
+        "normalized_position": 0.37174721189591076,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Her face burned as she waited his response.",
+        "max_topic_prob": 0.6507289409637451,
+        "normalized_position": 0.7602230483271375,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 401
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Her insides contracted.",
+        "max_topic_prob": 0.6362606287002563,
+        "normalized_position": 0.9182156133828996,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "His skin was warm, but no pulse moved against her fingers.",
+        "max_topic_prob": 0.6278696060180664,
+        "normalized_position": 0.9460966542750929,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The crashing of underbrush and a man's curse goosed her even faster.",
+        "max_topic_prob": 0.5289629697799683,
+        "normalized_position": 0.9535315985130112,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Heat and panic erupted within her.",
+        "max_topic_prob": 0.7965877652168274,
+        "normalized_position": 0.5109731446722495,
+        "tertile": "middle",
+        "chapter_index": 41,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Instant heat jolted through her, re-igniting the savage awareness that she’d tried so hard to deny.",
+        "max_topic_prob": 0.7817211151123047,
+        "normalized_position": 0.6744152468957552,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Her heart twisted and heat spread through her limbs like wildfire.",
+        "max_topic_prob": 0.775922417640686,
+        "normalized_position": 0.8979208778515738,
+        "tertile": "end",
+        "chapter_index": 62,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "A dangerous heat sparked in her eyes. “",
+        "max_topic_prob": 0.770275354385376,
+        "normalized_position": 0.1040282991625758,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Shards of heat battered her insides, making her sex clench. “",
+        "max_topic_prob": 0.7669457793235779,
+        "normalized_position": 0.9258590817210511,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Heat licked over her skin. “",
+        "max_topic_prob": 0.7657773494720459,
+        "normalized_position": 0.025194917701414958,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She began to feel loose and free, and a strange warm sensation was creeping over her body.",
+        "max_topic_prob": 0.7609615325927734,
+        "normalized_position": 0.16970802919708028,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 651
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The air began to feel heavy and almost sticky against her skin.",
+        "max_topic_prob": 0.7161717414855957,
+        "normalized_position": 0.8868613138686131,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1507
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The ground beneath her was firm and smooth and the temperature wasn’t becoming warmer as she imagined.",
+        "max_topic_prob": 0.7150082588195801,
+        "normalized_position": 0.019030239833159542,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "His hand felt warm in her own hands. “",
+        "max_topic_prob": 0.7136237621307373,
+        "normalized_position": 0.6373826903023984,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 550
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She could feel her body starting to relax. “",
+        "max_topic_prob": 0.7039928436279297,
+        "normalized_position": 0.26277372262773724,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1008
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And she could feel a hot warm feeling sliding over her body, starting at her toes and slowly spreading upwards.",
+        "max_topic_prob": 0.7011150121688843,
+        "normalized_position": 0.2734619395203337,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1049
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Heat suffused her cheeks.",
+        "max_topic_prob": 0.8002955913543701,
+        "normalized_position": 0.7776910206358059,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Her skin was flushed, nipples on fire.",
+        "max_topic_prob": 0.7702442407608032,
+        "normalized_position": 0.8245398773006135,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Her breasts jiggled from the impact and heat blossomed on her skin.",
+        "max_topic_prob": 0.7393712997436523,
+        "normalized_position": 0.5081985499163413,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She felt slick and swollen and hot.",
+        "max_topic_prob": 0.739187479019165,
+        "normalized_position": 0.42398215281650864,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She felt snug and hot.",
+        "max_topic_prob": 0.7348875403404236,
+        "normalized_position": 0.8861126603457892,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Her cheeks heated again as she imagined that scenario.",
+        "max_topic_prob": 0.7315455675125122,
+        "normalized_position": 0.01974344673731177,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She’s flushed, and I enjoy the fire beneath her soft skin.",
+        "max_topic_prob": 0.6224976778030396,
+        "normalized_position": 0.18015244796247434,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Goosebumps scatter across her skin as she stares off into the distance. “",
+        "max_topic_prob": 0.6202633380889893,
+        "normalized_position": 0.8780416300205218,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Her nipples are hard against her thin sweater and her breathing is rapid and shallow. “",
+        "max_topic_prob": 0.5442554354667664,
+        "normalized_position": 0.6810319554382879,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "And the way she’s controlling the intensity of this moment is so hot – so hot, I may have to fuck her right now . . .",
+        "max_topic_prob": 0.5295794010162354,
+        "normalized_position": 0.2890647903840516,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "That immediate sense of urgency was so fucking hot.",
+        "max_topic_prob": 0.5107326507568359,
+        "normalized_position": 0.18601583113456466,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The car erupts in howls of laughter – all directed at Piggy’s recollection of a hot female.",
+        "max_topic_prob": 0.4092315435409546,
+        "normalized_position": 0.0168572266197596,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Heat crept up her face. “",
+        "max_topic_prob": 0.8370404839515686,
+        "normalized_position": 0.5627731596537835,
+        "tertile": "middle",
+        "chapter_index": 74,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her face flushed, and she felt the heat spread down her neck.",
+        "max_topic_prob": 0.8224519491195679,
+        "normalized_position": 0.27868711971891336,
+        "tertile": "begin",
+        "chapter_index": 41,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She felt hot, as though she had a fever.",
+        "max_topic_prob": 0.8072762489318848,
+        "normalized_position": 0.8613205930242523,
+        "tertile": "end",
+        "chapter_index": 115,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The heat in her face increased.",
+        "max_topic_prob": 0.8066545724868774,
+        "normalized_position": 0.6751006941468849,
+        "tertile": "end",
+        "chapter_index": 89,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her face heated.",
+        "max_topic_prob": 0.804645299911499,
+        "normalized_position": 0.6740937526780358,
+        "tertile": "end",
+        "chapter_index": 89,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Her face heated.",
+        "max_topic_prob": 0.8046451210975647,
+        "normalized_position": 0.7104721912760306,
+        "tertile": "end",
+        "chapter_index": 93,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Hot skin to skin contact.",
+        "max_topic_prob": 0.5144870281219482,
+        "normalized_position": 0.19478737997256515,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Her body was burning.",
+        "max_topic_prob": 0.7963848114013672,
+        "normalized_position": 0.7899699097291876,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "There was a sudden wild, reckless fire in her eyes.",
+        "max_topic_prob": 0.727622389793396,
+        "normalized_position": 0.7803410230692076,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Leticia seemed suddenly to melt: her legs fell wider open and I felt her body undulate like a wave of arousal had washed through her.",
+        "max_topic_prob": 0.72502201795578,
+        "normalized_position": 0.5881644934804413,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The heat of her was like the warm embers of a burned out fire – still smoldering.",
+        "max_topic_prob": 0.7157518267631531,
+        "normalized_position": 0.7362086258776329,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "A soft flush of heated color spread across her cheeks.",
+        "max_topic_prob": 0.7096919417381287,
+        "normalized_position": 0.11454363089267804,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I could sense the heat of her arousal.",
+        "max_topic_prob": 0.6987985372543335,
+        "normalized_position": 0.6860581745235708,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It felt light and warm. “",
+        "max_topic_prob": 0.64463210105896,
+        "normalized_position": 0.03599848427434634,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She felt that flash snake up between her thighs, taking residence in her womb.",
+        "max_topic_prob": 0.6248142123222351,
+        "normalized_position": 0.9928003031451307,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2585
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Something warm and heavy settled across Elena’s feet. “",
+        "max_topic_prob": 0.6372147798538208,
+        "normalized_position": 0.09440969507427678,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Wes kept hold of her hand, which was fine by Elena because each time their bodies brushed, the tiny flame in her stomach burned hotter.",
+        "max_topic_prob": 0.5934513807296753,
+        "normalized_position": 0.5433932759968726,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The temperature outside was in the mid-seventies but her grandfather looked a little frostbitten, his pale face turning blue around the mouth.",
+        "max_topic_prob": 0.48894405364990234,
+        "normalized_position": 0.20250195465207194,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 2
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.014842300556586271,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.009543931225411627,
+        "n_sentences": 131
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.00784229236238285,
+        "n_sentences": 364
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0061705310396409875,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.008479709267110842,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.010269576379974325,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.007869884575026232,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.007609668755595345,
+        "n_sentences": 68
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0008820935019112026,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0003837298541826554,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0005895067793279622,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0003495281370150297,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0006033182503770739,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0005721914934197979,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00040382285637367073,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 68
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "1.2",
+    "taxonomy_secondary_name": "Pain, Injury & Physical Vulnerability",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

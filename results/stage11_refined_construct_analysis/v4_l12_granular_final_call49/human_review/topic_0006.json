@@ -1,0 +1,164 @@
+{
+  "topic_id": 6,
+  "label": "Whispered Reassurance",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "whispered",
+      "yes",
+      "said",
+      "asked",
+      "softly",
+      "thank",
+      "fine",
+      "replied",
+      "yeah",
+      "thanks"
+    ],
+    "KeyBERT": [
+      "nods",
+      "mumbled",
+      "responding",
+      "uttered",
+      "blurted",
+      "kindly",
+      "solemnly",
+      "tentatively",
+      "replies",
+      "confessed"
+    ],
+    "POS": [
+      "hesitation",
+      "enthusiasm",
+      "uttered",
+      "puzzled",
+      "suggestion",
+      "blows",
+      "scenario",
+      "unsure",
+      "hundreds",
+      "delicate"
+    ],
+    "MMR": [
+      "drawled",
+      "tentatively",
+      "hesitation",
+      "eagerly",
+      "absently",
+      "solemnly",
+      "prodded",
+      "kindly",
+      "paced",
+      "dramatically"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll make sure of it,” he whispered.",
+    "you’ll be fine,” he whispered. “",
+    "quiet, subdued, she nodded and then, “you’ll be safe.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7192474674384949,
+      "max_topic_prob": 0.6716824173927307,
+      "sentence": "And…” he prompted. “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9908345393150024,
+      "max_topic_prob": 0.6669851541519165,
+      "sentence": "Later,” she said softly, with a sly smile."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8080077182826821,
+      "max_topic_prob": 0.6172078847885132,
+      "sentence": "Ian stared right back and asked slowly, clearly, enunciating every word, “Who asked you to?”"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.24409068982151472,
+      "max_topic_prob": 0.609651505947113,
+      "sentence": "Yes.”"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7563917028461168,
+      "max_topic_prob": 0.609651505947113,
+      "sentence": "Yes.”"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9633381572600096,
+      "max_topic_prob": 0.6066207885742188,
+      "sentence": "Jay whispered in his ear. “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.010679196924391286,
+      "max_topic_prob": 0.7747789621353149,
+      "sentence": "she muttered."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7996582656984195,
+      "max_topic_prob": 0.7553333044052124,
+      "sentence": "No,’ she said firmly. ‘"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2900469884664673,
+      "max_topic_prob": 0.7494795322418213,
+      "sentence": "Fine,’ she said. ‘"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7035454933788979,
+      "max_topic_prob": 0.7480494976043701,
+      "sentence": "Hey,’ she said softly. ‘"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6183255019222554,
+      "max_topic_prob": 0.7363107204437256,
+      "sentence": "Okay,’ she said, striving for a light tone in the heavy silence. ‘"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6578385305425032,
+      "max_topic_prob": 0.7360624074935913,
+      "sentence": "she whispered. ‘"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

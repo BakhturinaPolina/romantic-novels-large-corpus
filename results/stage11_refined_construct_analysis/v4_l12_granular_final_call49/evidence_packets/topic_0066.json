@@ -1,0 +1,967 @@
+{
+  "topic_id": 66,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fear",
+        "afraid",
+        "scared",
+        "nervous",
+        "terrified",
+        "thoughts",
+        "frightened",
+        "fears",
+        "anger",
+        "she"
+      ],
+      "KeyBERT": [
+        "terrified",
+        "feared",
+        "fears",
+        "panicked",
+        "flinched",
+        "anxiety",
+        "threatened",
+        "anxious",
+        "frantic",
+        "embarrassment"
+      ],
+      "POS": [
+        "fears",
+        "desperation",
+        "anxious",
+        "anxiety",
+        "equipment",
+        "destination",
+        "activity",
+        "equal",
+        "flush",
+        "curiosity"
+      ],
+      "MMR": [
+        "terrified",
+        "fears",
+        "scrambled",
+        "anxious",
+        "tumbled",
+        "glued",
+        "escaping",
+        "flinched",
+        "cradled",
+        "hovered"
+      ]
+    },
+    "stage08_snippets": [
+      "at times, she was terrified.",
+      "the idea terrified her.",
+      "even though she was in the body of a woman now, she was still a terrified little girl."
+    ],
+    "label_public": "Paralyzed By Deep-Seated Fear"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "But she was honestly scared. \"",
+        "max_topic_prob": 0.785394549369812,
+        "normalized_position": 0.41001651073197576,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She'd approached him cautiously that day as if terrified of him. \"",
+        "max_topic_prob": 0.7568466067314148,
+        "normalized_position": 0.37176664832140893,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 749
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She more than understood his fear.",
+        "max_topic_prob": 0.7471969127655029,
+        "normalized_position": 0.951935424692717,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 326
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He actually appeared to be afraid for her. \"",
+        "max_topic_prob": 0.7445616722106934,
+        "normalized_position": 0.7147312419739498,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "It made her angry and protective.",
+        "max_topic_prob": 0.7337965965270996,
+        "normalized_position": 0.3333333333333333,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His cold demeanor was such that she was afraid to even move. \"",
+        "max_topic_prob": 0.7318143844604492,
+        "normalized_position": 0.4074481746468538,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Panic began to form within her.",
+        "max_topic_prob": 0.8138370513916016,
+        "normalized_position": 0.15625694598799733,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Her panic intensified.",
+        "max_topic_prob": 0.7980579137802124,
+        "normalized_position": 0.45187819515447875,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "So why had she suddenly felt so vulnerable?",
+        "max_topic_prob": 0.7472445368766785,
+        "normalized_position": 0.32540564569904423,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And then all the self-control she’d employed, holding tightly on to her panic, her fears, dissolved.",
+        "max_topic_prob": 0.7273392081260681,
+        "normalized_position": 0.7746165814625472,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She was terrified of the delivery.",
+        "max_topic_prob": 0.7223271131515503,
+        "normalized_position": 0.04089797732829518,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Terror filled her.",
+        "max_topic_prob": 0.7093631029129028,
+        "normalized_position": 0.9157590575683485,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "For a moment, she had been afraid that they’d . . .",
+        "max_topic_prob": 0.7465885877609253,
+        "normalized_position": 0.22486772486772486,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She was so very tired of being afraid all of the time.",
+        "max_topic_prob": 0.7347646355628967,
+        "normalized_position": 0.9751984126984127,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "There was something big happening between them, at least on his part, and he was both anxious and terrified to know how she felt.",
+        "max_topic_prob": 0.7122848629951477,
+        "normalized_position": 0.41865079365079366,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Then she’d panicked.",
+        "max_topic_prob": 0.7108913660049438,
+        "normalized_position": 0.99619708994709,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "she’d freaked out.",
+        "max_topic_prob": 0.7051221132278442,
+        "normalized_position": 0.9950396825396826,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That was the only warning she received before someone almost knocked her off her feet. “",
+        "max_topic_prob": 0.6987494230270386,
+        "normalized_position": 0.38492063492063494,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I couldn’t even imagine her reaction if I gave her the full story of what had happened.",
+        "max_topic_prob": 0.5916330814361572,
+        "normalized_position": 0.49746192893401014,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You can imagine that Cynthia’s Armpit was not a raging success.",
+        "max_topic_prob": 0.4809856414794922,
+        "normalized_position": 0.08601941747572815,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 437
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Another awkward pause on her end indicates to me she’s getting scared off.",
+        "max_topic_prob": 0.6404091119766235,
+        "normalized_position": 0.6462633451957296,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "It’s almost as if he’s afraid to talk about her. “",
+        "max_topic_prob": 0.5449429750442505,
+        "normalized_position": 0.7180071174377224,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "If she gets upset, she won’t think rationally.",
+        "max_topic_prob": 0.49795952439308167,
+        "normalized_position": 0.11800711743772242,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I hate it when she gets so uptight she can’t see past the wall she’s built around herself.",
+        "max_topic_prob": 0.45837366580963135,
+        "normalized_position": 0.3308185053380783,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "But…I…” Kedi looked a little panicky.",
+        "max_topic_prob": 0.4800337255001068,
+        "normalized_position": 0.6785003317850034,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I was surprised she didn't scamper away in fear. \"",
+        "max_topic_prob": 0.7494689226150513,
+        "normalized_position": 0.5228690228690228,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She scared the crap out of us.\"",
+        "max_topic_prob": 0.7116689085960388,
+        "normalized_position": 0.11143451143451144,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Tiffany stepped out of the room, hands rubbing together in anxiety.",
+        "max_topic_prob": 0.48014402389526367,
+        "normalized_position": 0.3883575883575884,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She looked concerned as I sat reeling at the revelations of the last hour of my life. \"",
+        "max_topic_prob": 0.5881892442703247,
+        "normalized_position": 0.0011742996141586982,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She was genuinely upset at the news that Ivan had been kidnapped, and I noted, was the first member of his staff to express a modicum of emotion at the news.",
+        "max_topic_prob": 0.4994707703590393,
+        "normalized_position": 0.033719174635128336,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She was just reacting the same as all women do, except you that is.",
+        "max_topic_prob": 0.4923994243144989,
+        "normalized_position": 0.5296091259855729,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Lewis and I took her up to Retinski, noticing how intimidated she looked at the fancy offices.",
+        "max_topic_prob": 0.48861706256866455,
+        "normalized_position": 0.949672873678913,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "What was she afraid of?",
+        "max_topic_prob": 0.7661930918693542,
+        "normalized_position": 0.8755712811440366,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Those thoughts scared her to death as well but this was her only chance.",
+        "max_topic_prob": 0.7591085433959961,
+        "normalized_position": 0.8409258440218192,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "She already displayed a multitude of fear.",
+        "max_topic_prob": 0.7477660775184631,
+        "normalized_position": 0.6564941766180157,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I witnessed fear in her eyes.",
+        "max_topic_prob": 0.7432948350906372,
+        "normalized_position": 0.9152292495945746,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Then she stiffened and her expression froze in fear. “",
+        "max_topic_prob": 0.7235835790634155,
+        "normalized_position": 0.9287925696594427,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "She’d never been so frightened in her entire life.",
+        "max_topic_prob": 0.7233871817588806,
+        "normalized_position": 0.9040247678018576,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "No wonder the girl had seemed freaked out. “",
+        "max_topic_prob": 0.7009874582290649,
+        "normalized_position": 0.4366268732537465,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1706
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "At that moment, I knew I was lost, a despicable human being, only interested in saving her own skin.",
+        "max_topic_prob": 0.5209815502166748,
+        "normalized_position": 0.9893319786639573,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 3882
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "My guess was that Martha’s threats had finally broken him down.",
+        "max_topic_prob": 0.5188810229301453,
+        "normalized_position": 0.7274574549149099,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 2851
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She was letting fear affect her.",
+        "max_topic_prob": 0.866489052772522,
+        "normalized_position": 0.53309265944645,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Because she was afraid.",
+        "max_topic_prob": 0.7592505812644958,
+        "normalized_position": 0.7750793129854502,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "That helped diminish her fear, too.",
+        "max_topic_prob": 0.7472888231277466,
+        "normalized_position": 0.5373591510775626,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Letting fear distract her, too! “",
+        "max_topic_prob": 0.7290600538253784,
+        "normalized_position": 0.5336396455530029,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Breathing deeply and running through famous quotes about not letting fear stop her . . .",
+        "max_topic_prob": 0.7043124437332153,
+        "normalized_position": 0.45213871567662184,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She didn’t want to be safe.",
+        "max_topic_prob": 0.699627161026001,
+        "normalized_position": 0.9174050979105131,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Fear rippled through her.",
+        "max_topic_prob": 0.815191388130188,
+        "normalized_position": 0.535573665415255,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Her instincts fired on, and her skin prickled in sudden fear. \"",
+        "max_topic_prob": 0.7840043306350708,
+        "normalized_position": 0.15227543265268748,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Fear flickered through her, and she tried to shove it aside.",
+        "max_topic_prob": 0.7538345456123352,
+        "normalized_position": 0.035344748649391085,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "For a split second, fear ripped through her.",
+        "max_topic_prob": 0.7524755597114563,
+        "normalized_position": 0.4522479626407838,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She had to be a threat.",
+        "max_topic_prob": 0.7450792193412781,
+        "normalized_position": 0.961633550041205,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But she couldn't suppress the ripple of fear.",
+        "max_topic_prob": 0.7386566400527954,
+        "normalized_position": 0.7619265635015109,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She was scared herself.",
+        "max_topic_prob": 0.821519136428833,
+        "normalized_position": 0.5664934270865178,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 536
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She was scared to move, scared to breathe.",
+        "max_topic_prob": 0.7531238794326782,
+        "normalized_position": 0.9575053500458576,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 3094
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She was at once wary. “",
+        "max_topic_prob": 0.7367300391197205,
+        "normalized_position": 0.540660348517273,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He feared she was too much like her mother.",
+        "max_topic_prob": 0.692891001701355,
+        "normalized_position": 0.4579639254050749,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2996
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Fear had its own seduction and she couldn’t help saying, “You don’t like me because I ain’t got a handful of skin anywhere.”",
+        "max_topic_prob": 0.6865888833999634,
+        "normalized_position": 0.6577499235707734,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1133
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Her hostility thickened.",
+        "max_topic_prob": 0.6760027408599854,
+        "normalized_position": 0.3416386426169367,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2235
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I'm warning you right now, she's a little intense.\"",
+        "max_topic_prob": 0.618651270866394,
+        "normalized_position": 0.09894419306184012,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She was like that, always ejecting every single thought in her mind without concern for logic or structure.",
+        "max_topic_prob": 0.5997931957244873,
+        "normalized_position": 0.038813474107591756,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "And she was at my mercy when she was pinned, a little helpless. \"",
+        "max_topic_prob": 0.582134485244751,
+        "normalized_position": 0.6974358974358974,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 429
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She wasn't working so hard at being right anymore, and the brassy beat of intimidation was gone from her tone.",
+        "max_topic_prob": 0.5669293403625488,
+        "normalized_position": 0.11724484665661136,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She was always prowling for something.",
+        "max_topic_prob": 0.5465598106384277,
+        "normalized_position": 0.041025641025641026,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Her coat prevented me from getting in a good squeeze but the sentiment was there. \"",
+        "max_topic_prob": 0.5350549221038818,
+        "normalized_position": 0.8,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She tried to lift her head and he feared she would struggle, try to escape.",
+        "max_topic_prob": 0.7064774036407471,
+        "normalized_position": 0.8257088846880908,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The wild look in his eye worried her, and she forced herself to keep calm. “",
+        "max_topic_prob": 0.7018681168556213,
+        "normalized_position": 0.6680529300567107,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She tried to force her mind elsewhere.",
+        "max_topic_prob": 0.6835154294967651,
+        "normalized_position": 0.1727788279773157,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The ride twisted again, and she whined in fear.",
+        "max_topic_prob": 0.6486148834228516,
+        "normalized_position": 0.8378071833648393,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her distress was palpable, even talking mind to mind.",
+        "max_topic_prob": 0.6473448276519775,
+        "normalized_position": 0.768241965973535,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The idea of being claimed by this man, being owned by him, owning him in turn, frightened her.",
+        "max_topic_prob": 0.6375842094421387,
+        "normalized_position": 0.2945179584120983,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 56
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.011742892459826947,
+        "n_sentences": 76
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.01098901098901099,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.012506897185948133,
+        "n_sentences": 136
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.011544144809752493,
+        "n_sentences": 125
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.011702362552439833,
+        "n_sentences": 106
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.018800358102059087,
+        "n_sentences": 84
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.015124555160142349,
+        "n_sentences": 102
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.011239724878376111,
+        "n_sentences": 67
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0007656967840735069,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0006769334912844813,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.001421752818117193,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0005718370264474624,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0006285355122564425,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00033500837520938025,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00025673940949935817,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0001953506544246923,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

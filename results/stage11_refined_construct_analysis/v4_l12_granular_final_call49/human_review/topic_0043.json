@@ -1,0 +1,164 @@
+{
+  "topic_id": 43,
+  "label": "Pissed Off and Grumbling",
+  "taxonomy_main_id": "4.4",
+  "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+  "taxonomy_secondary_id": "3.2",
+  "taxonomy_secondary_name": "Negative Emotions & Distress",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "mad",
+      "angry",
+      "pissed",
+      "upset",
+      "anger",
+      "offend",
+      "temper",
+      "piss",
+      "emotions",
+      "emotion"
+    ],
+    "KeyBERT": [
+      "grumbled",
+      "upset",
+      "insulted",
+      "embarrassing",
+      "distress",
+      "emotional",
+      "arguing",
+      "fired",
+      "emotions",
+      "attacked"
+    ],
+    "POS": [
+      "upset",
+      "embarrassing",
+      "behalf",
+      "sadness",
+      "emotional",
+      "distress",
+      "hundreds",
+      "percent",
+      "sorts",
+      "fitting"
+    ],
+    "MMR": [
+      "insulted",
+      "upset",
+      "wasting",
+      "emotional",
+      "thoughtfully",
+      "distress",
+      "laced",
+      "terribly",
+      "spilling",
+      "grumbled"
+    ]
+  },
+  "stage08_snippets": [
+    "this isn’t the first time i’ve pissed him off.”",
+    "we’ve irritated you, have we?” “",
+    "i’ve been pissed at him ever since. “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9636566332218506,
+      "max_topic_prob": 0.6472854614257812,
+      "sentence": "I’m not mad."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.1503901895206243,
+      "max_topic_prob": 0.6225128173828125,
+      "sentence": "She doesn’t look mad so much as really disappointed. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5682274247491639,
+      "max_topic_prob": 0.6202247142791748,
+      "sentence": "He has a temper.” “"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9637681159420289,
+      "max_topic_prob": 0.6047073602676392,
+      "sentence": "I’m not angry at Louis anymore."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8536231884057971,
+      "max_topic_prob": 0.6038211584091187,
+      "sentence": "Now I know where his rage comes from.”"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5668896321070234,
+      "max_topic_prob": 0.5980820059776306,
+      "sentence": "He’s a little moody.” “"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8514946962391514,
+      "max_topic_prob": 0.7505629658699036,
+      "sentence": "I don’t care how angry he gets."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2888138862102218,
+      "max_topic_prob": 0.643665611743927,
+      "sentence": "Don’t get upset.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7711668273866924,
+      "max_topic_prob": 0.6198668479919434,
+      "sentence": "He sounds really angry."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.38486017357762775,
+      "max_topic_prob": 0.6097988486289978,
+      "sentence": "She’s really angry."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6142719382835101,
+      "max_topic_prob": 0.583601713180542,
+      "sentence": "Tarquin is also pissed, but not as much as me."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.18514946962391515,
+      "max_topic_prob": 0.5831627249717712,
+      "sentence": "I won’t go mad, I promise myself."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

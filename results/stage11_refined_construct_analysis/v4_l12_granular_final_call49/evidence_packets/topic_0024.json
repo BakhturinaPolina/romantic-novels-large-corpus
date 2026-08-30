@@ -1,0 +1,923 @@
+{
+  "topic_id": 24,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "marry",
+        "married",
+        "marriage",
+        "husband",
+        "wife",
+        "divorce",
+        "marrying",
+        "will",
+        "you",
+        "your"
+      ],
+      "KeyBERT": [
+        "engaged",
+        "promises",
+        "instincts",
+        "suggest",
+        "chuckle",
+        "decide",
+        "remarked",
+        "uh",
+        "intend",
+        "willingly"
+      ],
+      "POS": [
+        "unhappy",
+        "madam",
+        "concept",
+        "issue",
+        "threats",
+        "previous",
+        "value",
+        "sorts",
+        "ends",
+        "century"
+      ],
+      "MMR": [
+        "engaged",
+        "unhappy",
+        "madam",
+        "faltered",
+        "threats",
+        "arranged",
+        "intend",
+        "chased",
+        "eyeing",
+        "described"
+      ]
+    },
+    "stage08_snippets": [
+      "we’ll be married… to each other.”",
+      "you’re already married to me; he’ll understand.” “",
+      "i’ll give you a divorce and you can just walk away."
+    ],
+    "label_public": "Confronting An Unwanted Marriage"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "So that whole getting married and settling down part doesn't appeal to you?\"",
+        "max_topic_prob": 0.6106681227684021,
+        "normalized_position": 0.16905845292264612,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Just divorced and living in different places.",
+        "max_topic_prob": 0.45230892300605774,
+        "normalized_position": 0.41372068603430173,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’re still married to me.” “",
+        "max_topic_prob": 0.7925149202346802,
+        "normalized_position": 0.8309058614564832,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That’s a good man you’re marrying.”",
+        "max_topic_prob": 0.7622069120407104,
+        "normalized_position": 0.3578448786264062,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But that’s not the reason I want to marry you.” “",
+        "max_topic_prob": 0.7609976530075073,
+        "normalized_position": 0.3237418590882179,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We’re getting married.” “",
+        "max_topic_prob": 0.7397361993789673,
+        "normalized_position": 0.7128478389579633,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Have you been married long?”",
+        "max_topic_prob": 0.7309000492095947,
+        "normalized_position": 0.7005328596802842,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Got her to marry me.” “",
+        "max_topic_prob": 0.7232250571250916,
+        "normalized_position": 0.702072232089994,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’ve no wish to marry you.”",
+        "max_topic_prob": 0.7863541841506958,
+        "normalized_position": 0.6353307020691304,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Married?” “",
+        "max_topic_prob": 0.7620323896408081,
+        "normalized_position": 0.5378543236454969,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "You want to marry him?”",
+        "max_topic_prob": 0.7421949505805969,
+        "normalized_position": 0.9925846190647052,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Not that I want to marry again of course.”",
+        "max_topic_prob": 0.734393835067749,
+        "normalized_position": 0.6683411075230236,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "So, are you seriously considering marriage?”",
+        "max_topic_prob": 0.7232487201690674,
+        "normalized_position": 0.6227723956464538,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I take it you married for love and not for your husband’s title?”",
+        "max_topic_prob": 0.6903086304664612,
+        "normalized_position": 0.11039349360124387,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She must wed you to make things right.” “",
+        "max_topic_prob": 0.7410188317298889,
+        "normalized_position": 0.06370875995449374,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 671
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I know that wasn’t what you wanted, but you are my wife.”",
+        "max_topic_prob": 0.7067266702651978,
+        "normalized_position": 0.5134622677284794,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1063
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "We’re to be married.",
+        "max_topic_prob": 0.7055976390838623,
+        "normalized_position": 0.10115661736822146,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1066
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I want to wed the girl.",
+        "max_topic_prob": 0.6767182350158691,
+        "normalized_position": 0.051099734546833524,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 538
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "With this ring I claim you as my wife.”",
+        "max_topic_prob": 0.6723539233207703,
+        "normalized_position": 0.1924535456958665,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 607
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "We are to be wed.” His sickly sweet endearment made her nauseous, but she didn’t let on.",
+        "max_topic_prob": 0.6669407486915588,
+        "normalized_position": 0.17813803564656808,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 456
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He’s mated!”",
+        "max_topic_prob": 0.5047827959060669,
+        "normalized_position": 0.6913598357048555,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I met my now husband a few months after the move and was married to him in June of 2006.",
+        "max_topic_prob": 0.4706266522407532,
+        "normalized_position": 0.997628927089508,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "This week, you and your partner will be writing a persuasive essay.",
+        "max_topic_prob": 0.36480554938316345,
+        "normalized_position": 0.6120169756533392,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 473
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Marry me!’",
+        "max_topic_prob": 0.7239995002746582,
+        "normalized_position": 0.2986039827550811,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I know that I don’t want to get married.",
+        "max_topic_prob": 0.6688815951347351,
+        "normalized_position": 0.4251693697392733,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "No, I don’t remember, but I have no intention of marrying you, Adina.",
+        "max_topic_prob": 0.6672552824020386,
+        "normalized_position": 0.42506672141244095,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "At least he’s not trying to marry me off to any wealthy stranger.’",
+        "max_topic_prob": 0.6632801294326782,
+        "normalized_position": 0.623485937179224,
+        "tertile": "middle",
+        "chapter_index": 55,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Marry me instead …’ His words made no sense, the idea was ridiculous.",
+        "max_topic_prob": 0.6601951122283936,
+        "normalized_position": 0.8884212687333196,
+        "tertile": "end",
+        "chapter_index": 67,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Marry me, Lewin, let’s be together.",
+        "max_topic_prob": 0.6422402858734131,
+        "normalized_position": 0.29839868610141657,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Is that why you never married again?”",
+        "max_topic_prob": 0.7236195802688599,
+        "normalized_position": 0.9314035087719298,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Was he going to propose marriage?",
+        "max_topic_prob": 0.5937221050262451,
+        "normalized_position": 0.9852631578947368,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I’m sorry if that doesn’t live up to your idea of the perfect woman.”",
+        "max_topic_prob": 0.5451760292053223,
+        "normalized_position": 0.623859649122807,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Go after the woman you love.”",
+        "max_topic_prob": 0.5444831848144531,
+        "normalized_position": 0.9380701754385965,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Marry me ?”",
+        "max_topic_prob": 0.7678053379058838,
+        "normalized_position": 0.49878846619820694,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What marriage?” “",
+        "max_topic_prob": 0.7610532641410828,
+        "normalized_position": 0.32214683789677734,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I will run away before I allow you to impose that marriage on me.” “",
+        "max_topic_prob": 0.7524610757827759,
+        "normalized_position": 0.3993215410709959,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Only, I thought this marriage arrangement might serve both our needs.”",
+        "max_topic_prob": 0.7428870797157288,
+        "normalized_position": 0.4051369033196026,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I assure you, I am in no need of a husband and besides, Lady Faith loves you, sir, and you, her.” “",
+        "max_topic_prob": 0.7151769399642944,
+        "normalized_position": 0.6132784104676521,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Is it your upcoming marriage that concerns you?” “",
+        "max_topic_prob": 0.7149914503097534,
+        "normalized_position": 0.322025684516598,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You’re married?”",
+        "max_topic_prob": 0.7682265043258667,
+        "normalized_position": 0.7608695652173914,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Married?” “",
+        "max_topic_prob": 0.762032151222229,
+        "normalized_position": 0.4588037472976219,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You said if I marry you.",
+        "max_topic_prob": 0.7582594752311707,
+        "normalized_position": 0.4786211866442469,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "If you marry me, you’ll have it too.” “",
+        "max_topic_prob": 0.7452329397201538,
+        "normalized_position": 0.47814076387220755,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 331
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Will you marry me?”",
+        "max_topic_prob": 0.735141932964325,
+        "normalized_position": 0.4382656737929378,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You were married ?”",
+        "max_topic_prob": 0.7319250702857971,
+        "normalized_position": 0.10112899351429258,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m her wife.",
+        "max_topic_prob": 0.6177470684051514,
+        "normalized_position": 0.7865239294710328,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "How wonderful it must be to not only have a wife but one that you worked with every day.",
+        "max_topic_prob": 0.5568791627883911,
+        "normalized_position": 0.018052057094878254,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "A very wise, stubborn woman that we both know once asked me a question.”",
+        "max_topic_prob": 0.5196773409843445,
+        "normalized_position": 0.7601805205709488,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "How dare you question my wife and me like that?",
+        "max_topic_prob": 0.5191430449485779,
+        "normalized_position": 0.06591099916036944,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "What’s her husband say?”",
+        "max_topic_prob": 0.6124571561813354,
+        "normalized_position": 0.4135712447456464,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 476
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Prophets save us, Candy, I’ve already been married three times.",
+        "max_topic_prob": 0.593276858329773,
+        "normalized_position": 0.6799348031225873,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 556
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "This is coming from the woman who married three times.” “",
+        "max_topic_prob": 0.5781578421592712,
+        "normalized_position": 0.7806468216522261,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "And I’ll have you know that it’s the women who move on, not us.” “",
+        "max_topic_prob": 0.5386534333229065,
+        "normalized_position": 0.7376683537788453,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1229
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I told them to consider us engaged to be clanned.” “",
+        "max_topic_prob": 0.5357809066772461,
+        "normalized_position": 0.6656086471647937,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "My last marriage ended eight years ago, and I did a lot of soul searching after that.",
+        "max_topic_prob": 0.5208781957626343,
+        "normalized_position": 0.7809899631122931,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I do have to marry her,” I said. “",
+        "max_topic_prob": 0.7432302832603455,
+        "normalized_position": 0.23783912991514283,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m going to marry her.",
+        "max_topic_prob": 0.6943420171737671,
+        "normalized_position": 0.23795864706585396,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I dared a glance at him, and he said, “That’s why you have marriage, eh.",
+        "max_topic_prob": 0.6837159395217896,
+        "normalized_position": 0.3761204732879168,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And I’m going to marry you as soon as we can manage it.",
+        "max_topic_prob": 0.6812704801559448,
+        "normalized_position": 0.8246683399067766,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I will marry for love and love alone.” “",
+        "max_topic_prob": 0.6594078540802002,
+        "normalized_position": 0.9711963666786184,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Live and let live is one thing, but if she was married when she did all that, those weren’t the vows I took.",
+        "max_topic_prob": 0.6557216644287109,
+        "normalized_position": 0.3730130273694275,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But I don't want to marry you, and I or have a child.” “",
+        "max_topic_prob": 0.750080943107605,
+        "normalized_position": 0.792246386600027,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I wasn’t worried that our marriage would fail.” “",
+        "max_topic_prob": 0.7426759004592896,
+        "normalized_position": 0.8813994326624341,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "We should get married.”",
+        "max_topic_prob": 0.7269302606582642,
+        "normalized_position": 0.7884641361610158,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I mean we should get married, silly.” “",
+        "max_topic_prob": 0.7216286063194275,
+        "normalized_position": 0.5050655139808186,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Wouldn’t it be easier if we were married?” “",
+        "max_topic_prob": 0.7206655740737915,
+        "normalized_position": 0.790625422126165,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He’d be married if it wasn’t for me.",
+        "max_topic_prob": 0.720022439956665,
+        "normalized_position": 0.8963933540456571,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 82
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.012693762968387649,
+        "n_sentences": 104
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.005203291384317522,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.013298955082100692,
+        "n_sentences": 98
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.009518072289156626,
+        "n_sentences": 79
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.006802721088435374,
+        "n_sentences": 57
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.010295519542421354,
+        "n_sentences": 108
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.006510282112224863,
+        "n_sentences": 63
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.008095698405026584,
+        "n_sentences": 67
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00042198544150226817,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00022583559168925022,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0007815213615838833,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0001987281399046105,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0007039774727208729,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00014771048744460856,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0007047216349541931,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 67
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": "4.5",
+    "taxonomy_secondary_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

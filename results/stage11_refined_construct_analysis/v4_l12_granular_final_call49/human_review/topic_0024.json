@@ -1,0 +1,164 @@
+{
+  "topic_id": 24,
+  "label": "Confronting An Unwanted Marriage",
+  "taxonomy_main_id": "4.4",
+  "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+  "taxonomy_secondary_id": "4.5",
+  "taxonomy_secondary_name": "Reconciliation, Commitments & HEA",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "marry",
+      "married",
+      "marriage",
+      "husband",
+      "wife",
+      "divorce",
+      "marrying",
+      "will",
+      "you",
+      "your"
+    ],
+    "KeyBERT": [
+      "engaged",
+      "promises",
+      "instincts",
+      "suggest",
+      "chuckle",
+      "decide",
+      "remarked",
+      "uh",
+      "intend",
+      "willingly"
+    ],
+    "POS": [
+      "unhappy",
+      "madam",
+      "concept",
+      "issue",
+      "threats",
+      "previous",
+      "value",
+      "sorts",
+      "ends",
+      "century"
+    ],
+    "MMR": [
+      "engaged",
+      "unhappy",
+      "madam",
+      "faltered",
+      "threats",
+      "arranged",
+      "intend",
+      "chased",
+      "eyeing",
+      "described"
+    ]
+  },
+  "stage08_snippets": [
+    "we’ll be married… to each other.”",
+    "you’re already married to me; he’ll understand.” “",
+    "i’ll give you a divorce and you can just walk away."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.16905845292264612,
+      "max_topic_prob": 0.6106681227684021,
+      "sentence": "So that whole getting married and settling down part doesn't appeal to you?\""
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.41372068603430173,
+      "max_topic_prob": 0.45230892300605774,
+      "sentence": "Just divorced and living in different places."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8309058614564832,
+      "max_topic_prob": 0.7925149202346802,
+      "sentence": "You’re still married to me.” “"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3578448786264062,
+      "max_topic_prob": 0.7622069120407104,
+      "sentence": "That’s a good man you’re marrying.”"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.3237418590882179,
+      "max_topic_prob": 0.7609976530075073,
+      "sentence": "But that’s not the reason I want to marry you.” “"
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7128478389579633,
+      "max_topic_prob": 0.7397361993789673,
+      "sentence": "We’re getting married.” “"
+    },
+    {
+      "sid": "BOOK_003_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7005328596802842,
+      "max_topic_prob": 0.7309000492095947,
+      "sentence": "Have you been married long?”"
+    },
+    {
+      "sid": "BOOK_003_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.702072232089994,
+      "max_topic_prob": 0.7232250571250916,
+      "sentence": "Got her to marry me.” “"
+    },
+    {
+      "sid": "BOOK_004_1",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.6353307020691304,
+      "max_topic_prob": 0.7863541841506958,
+      "sentence": "I’ve no wish to marry you.”"
+    },
+    {
+      "sid": "BOOK_004_2",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5378543236454969,
+      "max_topic_prob": 0.7620323896408081,
+      "sentence": "Married?” “"
+    },
+    {
+      "sid": "BOOK_004_3",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9925846190647052,
+      "max_topic_prob": 0.7421949505805969,
+      "sentence": "You want to marry him?”"
+    },
+    {
+      "sid": "BOOK_004_4",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.6683411075230236,
+      "max_topic_prob": 0.734393835067749,
+      "sentence": "Not that I want to marry again of course.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

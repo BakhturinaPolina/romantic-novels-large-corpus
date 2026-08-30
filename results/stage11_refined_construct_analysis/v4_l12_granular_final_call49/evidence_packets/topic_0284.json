@@ -1,0 +1,690 @@
+{
+  "topic_id": 284,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "mr",
+        "moral",
+        "approaching",
+        "suckered",
+        "clerked",
+        "amstreet",
+        "turrel"
+      ],
+      "KeyBERT": [
+        "al",
+        "throw",
+        "stroking",
+        "gripped",
+        "judging"
+      ],
+      "POS": [
+        "fishing",
+        "reception",
+        "realization",
+        "paint",
+        "heated"
+      ],
+      "MMR": [
+        "observed",
+        "fading",
+        "fishing",
+        "judging",
+        "brings",
+        "twisting",
+        "heated",
+        "stroking",
+        "escaped",
+        "expect"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve seen [person]’s handiwork.",
+      "ever since i’ve known them,” [person] said, but it was obvious his mind was elsewhere. “",
+      "that’s twice today we’ve put our necks on the line,” [person] observed. “"
+    ],
+    "label_public": "Necks on The Line Together"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "With Finney?” “",
+        "max_topic_prob": 0.5595121383666992,
+        "normalized_position": 0.11751679902260233,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Get off… ” He ended up kicking his slipper off so Finney could have it.",
+        "max_topic_prob": 0.49077749252319336,
+        "normalized_position": 0.08888210140500916,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Finney sidled over.",
+        "max_topic_prob": 0.48789912462234497,
+        "normalized_position": 0.47831398900427613,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 474
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Finney went berserk—he must’ve had his ear to the door, listening for metal on metal.",
+        "max_topic_prob": 0.4785611629486084,
+        "normalized_position": 0.13805742211362249,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Don’t forget Finney.” “",
+        "max_topic_prob": 0.47348353266716003,
+        "normalized_position": 0.8971441661576054,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 644
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "And this must be Finnegan.”",
+        "max_topic_prob": 0.47052836418151855,
+        "normalized_position": 0.11049175320708614,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Another chuckle and Brock was appreciating his connection with the Donovans once more. “",
+        "max_topic_prob": 0.5839955806732178,
+        "normalized_position": 0.36878936319104266,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "That Brock was a good guy?",
+        "max_topic_prob": 0.5698087215423584,
+        "normalized_position": 0.602752507581059,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Brock obliged. “",
+        "max_topic_prob": 0.5693968534469604,
+        "normalized_position": 0.291345929554467,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Trent’s words couldn’t have been more true if Brock had said them himself. “",
+        "max_topic_prob": 0.5604268908500671,
+        "normalized_position": 0.6827618381152321,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Brock’s not like the rest of the Donovans,” she heard herself saying. “",
+        "max_topic_prob": 0.5555449724197388,
+        "normalized_position": 0.22416608350828085,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Brock had to agree. “",
+        "max_topic_prob": 0.5527154207229614,
+        "normalized_position": 0.7049218567763005,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It took Chris a split second to realise it was Alan Drake. “",
+        "max_topic_prob": 0.5198073387145996,
+        "normalized_position": 0.6025641025641025,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Not Chris Munroe – that was for sure.",
+        "max_topic_prob": 0.4084053337574005,
+        "normalized_position": 0.06891025641025642,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Kayden Owens,” he calls out. “",
+        "max_topic_prob": 0.5352402925491333,
+        "normalized_position": 0.8839183880370042,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Instinctively I whirl around just in time to see Mr. Owens smash his fist into Kayden’s face.",
+        "max_topic_prob": 0.5295766592025757,
+        "normalized_position": 0.008237232289950576,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Kayden Owens,” he says as he darts in front of me, panting and his eyes are full of anger.",
+        "max_topic_prob": 0.5202385783195496,
+        "normalized_position": 0.3961475098213154,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Oh, we’re going over to the Owens’ this year.”",
+        "max_topic_prob": 0.4790935814380646,
+        "normalized_position": 0.7997718920288936,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "That was Kayden Owens.” “",
+        "max_topic_prob": 0.4698074162006378,
+        "normalized_position": 0.05208465340261057,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "The Kayden Owens?",
+        "max_topic_prob": 0.4689350724220276,
+        "normalized_position": 0.05246483335445444,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Did Fallon encourage you to do that?",
+        "max_topic_prob": 0.4069996476173401,
+        "normalized_position": 0.4690939881456393,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 2762
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Did Veodue try to take Othrinia?”",
+        "max_topic_prob": 0.36169207096099854,
+        "normalized_position": 0.6477561388653683,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1799
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "In any other year Eliot would have had his winner right there.",
+        "max_topic_prob": 0.3887368440628052,
+        "normalized_position": 0.23062217587765033,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I told Taylor I’d be right back.",
+        "max_topic_prob": 0.6834378242492676,
+        "normalized_position": 0.42021346685992883,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 513
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Taylor came back just before you called.",
+        "max_topic_prob": 0.6792797446250916,
+        "normalized_position": 0.4154697588615101,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 477
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "That sounds like a great idea, Taylor.",
+        "max_topic_prob": 0.6645683646202087,
+        "normalized_position": 0.24074318091975228,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Thank you, Taylor.",
+        "max_topic_prob": 0.6275215744972229,
+        "normalized_position": 0.2450915799183028,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Taylor told me they were seen packing up a great big U-Haul truck last night.",
+        "max_topic_prob": 0.5220018625259399,
+        "normalized_position": 0.43418105152193964,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "With Taylor, whose enthusiasm often carried her off in several different directions, time became a relative thing. “",
+        "max_topic_prob": 0.48702311515808105,
+        "normalized_position": 0.2383713269205429,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I really felt important, too, when Vince would ask me, “Hey Gwinny , my boots are wearing out.",
+        "max_topic_prob": 0.3952968418598175,
+        "normalized_position": 0.10915492957746478,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Graham Taylor.” “",
+        "max_topic_prob": 0.654204249382019,
+        "normalized_position": 0.09426795580110497,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You are mine, Graham Taylor,” Hyden whispered in Graham’s ear when he loosened the bite. “",
+        "max_topic_prob": 0.5425130128860474,
+        "normalized_position": 0.5179558011049724,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 493
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Myrk, this is my fated mate, Graham Taylor, soon to be Graham Solfang.”",
+        "max_topic_prob": 0.5359621047973633,
+        "normalized_position": 0.7952348066298343,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Hyden quickly followed it up with a quick flick to Graham’s right cheek.",
+        "max_topic_prob": 0.44173717498779297,
+        "normalized_position": 0.736878453038674,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "First, what kind of shifter name is Taylor?",
+        "max_topic_prob": 0.44026294350624084,
+        "normalized_position": 0.8107734806629834,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "What’s Alden going to do?”",
+        "max_topic_prob": 0.4786282777786255,
+        "normalized_position": 0.6110022396416573,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "No doubt Elliott was anxious to get back to work, and had called only to make sure Alden had arrived at last. “",
+        "max_topic_prob": 0.4779256284236908,
+        "normalized_position": 0.14935610302351623,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I mean, Elliott would have wanted to phone home if he went up in the mother ship with E.T., wouldn’t he?”",
+        "max_topic_prob": 0.4759165644645691,
+        "normalized_position": 0.9797032474804032,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I won’t need to call Elliott every time I want to get up.” “",
+        "max_topic_prob": 0.4743269085884094,
+        "normalized_position": 0.9594064949608063,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Here’s Alden all torn up—his house is destroyed, along with the last few bits of your furniture that were too heavy for us to move—and I know he’s the sort of man who feels responsible for that, despite the fact that he tried for weeks to get you out of there, and had to resort to threats of physically removing you before you finally did.” “",
+        "max_topic_prob": 0.4491649866104126,
+        "normalized_position": 0.8069708846584547,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Especially if Alden was going to be around. “",
+        "max_topic_prob": 0.4432474970817566,
+        "normalized_position": 0.1082026875699888,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 466
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Right as Henry gets close enough, I say, “ Myself .”",
+        "max_topic_prob": 0.4555918574333191,
+        "normalized_position": 0.2575922565033273,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "11 Ivy T he second Henry and I were back in his truck, I was fighting a severe urge to jump on his lap and fuck him while he drove us to God only knows where.",
+        "max_topic_prob": 0.4549448788166046,
+        "normalized_position": 0.2911070780399274,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Honestly, Henry ?” “",
+        "max_topic_prob": 0.45442914962768555,
+        "normalized_position": 0.02867513611615245,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Tyrell is still lusting after me, though playfully, while Henry is fuming and possessive . “",
+        "max_topic_prob": 0.45010459423065186,
+        "normalized_position": 0.2544464609800363,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I keep replaying over and over again in my head what I could have said to Henry each time we were together when I came back as well as what I’m going to say to him now.",
+        "max_topic_prob": 0.4494794011116028,
+        "normalized_position": 0.8462189957652753,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Don’t you mean with Henry ?” “",
+        "max_topic_prob": 0.44737598299980164,
+        "normalized_position": 0.5212341197822141,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 224
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.001456953642384106,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0014016309887869521,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0039105462544299155,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.020911654135338346,
+        "n_sentences": 89
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.001740341106856944,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0035582123541132936,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0014670681800633156,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0032102728731942215,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00016999575010624734,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0001362769146906514,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.00017488632388947185,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 47
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "5.2",
+    "taxonomy_secondary_name": "Friends, Allies & Social Circles",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

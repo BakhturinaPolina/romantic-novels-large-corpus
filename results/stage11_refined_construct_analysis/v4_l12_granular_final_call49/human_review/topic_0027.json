@@ -1,0 +1,164 @@
+{
+  "topic_id": 27,
+  "label": "Racing The Approaching Storm",
+  "taxonomy_main_id": "7.3",
+  "taxonomy_main_name": "Risk, Danger & External Crises",
+  "taxonomy_secondary_id": "8.5",
+  "taxonomy_secondary_name": "Movement, Transit & Spatial Transition",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "rain",
+      "snow",
+      "lights",
+      "light",
+      "sun",
+      "sky",
+      "dark",
+      "storm",
+      "clouds",
+      "moon"
+    ],
+    "KeyBERT": [
+      "darkened",
+      "lighting",
+      "warming",
+      "damp",
+      "rapidly",
+      "dripping",
+      "fading",
+      "praying",
+      "magical",
+      "drift"
+    ],
+    "POS": [
+      "lighting",
+      "curtain",
+      "magical",
+      "temperature",
+      "reflection",
+      "graceful",
+      "indication",
+      "ceiling",
+      "sidewalk",
+      "various"
+    ],
+    "MMR": [
+      "lighting",
+      "curtain",
+      "magical",
+      "reflection",
+      "floated",
+      "dangerously",
+      "indication",
+      "ceiling",
+      "draped",
+      "sidewalk"
+    ]
+  },
+  "stage08_snippets": [
+    "it’ll be dark before we know it.’’",
+    "i don’t know if i’ll be able to get back here before the storm hits.",
+    "it’s going to rain and we’ll be caught out in the storm."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.24477398606396283,
+      "max_topic_prob": 0.5933315753936768,
+      "sentence": "It’s just starting to rain.’"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7402179739145971,
+      "max_topic_prob": 0.5246099233627319,
+      "sentence": "Their lips met, and an explosion of passion took them along on a tide, the darkness that surrounded them like a blanket against the rest of the world."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2345899589065571,
+      "max_topic_prob": 0.4630936086177826,
+      "sentence": "Just as they reached the spot a man strode angrily out of a neighbouring field, and even in the poor light his expression could be seen as thunderous."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.492049312131499,
+      "max_topic_prob": 0.45867300033569336,
+      "sentence": "It’s still pouring down out there.’"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.17616580310880828,
+      "max_topic_prob": 0.44217050075531006,
+      "sentence": "They were still driving, the high hedges making it impossible for them to see anything but the road in front of them."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.974271931391817,
+      "max_topic_prob": 0.38358816504478455,
+      "sentence": "Before morning, word had come that Leonidas was lost."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.4111399575171112,
+      "max_topic_prob": 0.7339704036712646,
+      "sentence": "It was broad daylight."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.23554401699315552,
+      "max_topic_prob": 0.6428098678588867,
+      "sentence": "There’s more sunlight there.” “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3471796082133585,
+      "max_topic_prob": 0.6262060403823853,
+      "sentence": "The scent of sunrise and a storm."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.4120840217134765,
+      "max_topic_prob": 0.6082842350006104,
+      "sentence": "Broad daylight."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.2436865706868067,
+      "max_topic_prob": 0.6061277985572815,
+      "sentence": "Like a storm coming in from the mountains."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.661552985603021,
+      "max_topic_prob": 0.6034029722213745,
+      "sentence": "They were deep in the mountains, and evening was coming on."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

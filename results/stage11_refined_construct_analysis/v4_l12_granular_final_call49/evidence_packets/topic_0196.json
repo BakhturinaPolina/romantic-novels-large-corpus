@@ -1,0 +1,919 @@
+{
+  "topic_id": 196,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "play",
+        "game",
+        "games",
+        "playing",
+        "team",
+        "player",
+        "played",
+        "video",
+        "want",
+        "don"
+      ],
+      "KeyBERT": [],
+      "POS": [
+        "reminder",
+        "president",
+        "moves",
+        "possibility",
+        "opportunity",
+        "pieces"
+      ],
+      "MMR": [
+        "maintain",
+        "reminder",
+        "continues",
+        "president",
+        "afford",
+        "opportunity",
+        "prove",
+        "considered",
+        "admit",
+        "aside"
+      ]
+    },
+    "stage08_snippets": [
+      "maybe you’ll find out we make a good team in every way.” “",
+      "we’ll nail that game, no problem.”",
+      "we’ll make a good team.”"
+    ],
+    "label_public": "Promising to Be A Good Team"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "For months now, we’d played that game of chicken with each other, an obvious magnetism between us each time we glanced at each other or ran into the other.",
+        "max_topic_prob": 0.45639216899871826,
+        "normalized_position": 0.04947158829836116,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Come on, I’m tired of playing his fucking game.",
+        "max_topic_prob": 0.5843193531036377,
+        "normalized_position": 0.7041206030150754,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Like you’d have been playing with maps,” Vendelia scoffed. “",
+        "max_topic_prob": 0.4295896589756012,
+        "normalized_position": 0.8512562814070351,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You wanna play games with us, big boy?”",
+        "max_topic_prob": 0.7402569055557251,
+        "normalized_position": 0.5470429005003691,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 479
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Let’s play.”",
+        "max_topic_prob": 0.7091853618621826,
+        "normalized_position": 0.5472069559511115,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "I think I’ll go play chaperone.” “",
+        "max_topic_prob": 0.5280632972717285,
+        "normalized_position": 0.7236485932245099,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Austin, I’m in the middle of a game.” “",
+        "max_topic_prob": 0.525827169418335,
+        "normalized_position": 0.6814863423837257,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You’re going to start playing things straight with Hailey, or I’ll kick your ass.” “",
+        "max_topic_prob": 0.5035516023635864,
+        "normalized_position": 0.35075055368714625,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "If you would kindly follow your guides to our play yard, we would like to get started.”",
+        "max_topic_prob": 0.4921298027038574,
+        "normalized_position": 0.6697563776556477,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Let’s play a game right now.”",
+        "max_topic_prob": 0.7088062763214111,
+        "normalized_position": 0.9118857419511014,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He wants to play a game.",
+        "max_topic_prob": 0.687440037727356,
+        "normalized_position": 0.9014766400387315,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "It’s our game, right?”",
+        "max_topic_prob": 0.678329348564148,
+        "normalized_position": 0.9077705156136529,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You want to play though.",
+        "max_topic_prob": 0.6667542457580566,
+        "normalized_position": 0.9097070927136287,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Let’s play the game.",
+        "max_topic_prob": 0.6608250737190247,
+        "normalized_position": 0.9100702009198741,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Is this a game?” “",
+        "max_topic_prob": 0.659127950668335,
+        "normalized_position": 0.39494069232631324,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Two could play this game. “",
+        "max_topic_prob": 0.6325935125350952,
+        "normalized_position": 0.36102536572272176,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Play dumb.",
+        "max_topic_prob": 0.503088116645813,
+        "normalized_position": 0.5440880418735741,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "If you walk out on the play, the children’s feelings will be hurt.” “",
+        "max_topic_prob": 0.4679413437843323,
+        "normalized_position": 0.4128304925513354,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Why not play recruiter?",
+        "max_topic_prob": 0.45045334100723267,
+        "normalized_position": 0.6856797745269091,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Who was playing for whom?",
+        "max_topic_prob": 0.42528367042541504,
+        "normalized_position": 0.9189370554288016,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And you’re sure he’ll be game?” “",
+        "max_topic_prob": 0.6045631170272827,
+        "normalized_position": 0.10524225575853852,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’m game if you are, Sergio.” “",
+        "max_topic_prob": 0.5808498859405518,
+        "normalized_position": 0.9201747418586179,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Do you want to throw the football around for a bit?”",
+        "max_topic_prob": 0.5331032276153564,
+        "normalized_position": 0.6056393963463066,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The play boy has retired?”",
+        "max_topic_prob": 0.5129109621047974,
+        "normalized_position": 0.10166799046862589,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Now, it’s just a matter of playing matchmaker. *****",
+        "max_topic_prob": 0.4185045063495636,
+        "normalized_position": 0.9948371723590151,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Is it tackle football?” “",
+        "max_topic_prob": 0.41539937257766724,
+        "normalized_position": 0.6064336775218427,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I didn't know you played.”",
+        "max_topic_prob": 0.7147025465965271,
+        "normalized_position": 0.753416149068323,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Who’s playing games now?”",
+        "max_topic_prob": 0.7047228813171387,
+        "normalized_position": 0.6433229813664596,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I don’t know what game you’re playing but if you want me to play along you’ll have to follow my rules,” I snip. “",
+        "max_topic_prob": 0.6740137338638306,
+        "normalized_position": 0.6327639751552795,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Two can play this game. “",
+        "max_topic_prob": 0.6518678665161133,
+        "normalized_position": 0.7085403726708075,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I don’t want to play games.",
+        "max_topic_prob": 0.6157275438308716,
+        "normalized_position": 0.622360248447205,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’m not playing games now, I’m just trying to make the most of this heinously boring evening,” I answer flippantly.",
+        "max_topic_prob": 0.612035870552063,
+        "normalized_position": 0.6440993788819875,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "And you plan on playing a game tonight?” “",
+        "max_topic_prob": 0.7045122385025024,
+        "normalized_position": 0.21916437327995997,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1752
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I hope you forgive me for leaving you while I go play, what seems like a mindless game now.",
+        "max_topic_prob": 0.5962939262390137,
+        "normalized_position": 0.9355766825118839,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1657
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry I called you, I know you have a game today.” “",
+        "max_topic_prob": 0.5923275947570801,
+        "normalized_position": 0.6039529647235427,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 921
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You better watch out because two people can play at this game.” “",
+        "max_topic_prob": 0.5859798192977905,
+        "normalized_position": 0.06517388041030774,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 521
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Don’t you have a game tonight?”",
+        "max_topic_prob": 0.5779733061790466,
+        "normalized_position": 0.9383287465599199,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1679
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I don’t go to a game without it.” “",
+        "max_topic_prob": 0.5718113780021667,
+        "normalized_position": 0.2521891418563923,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "If you’re game.” “",
+        "max_topic_prob": 0.737402081489563,
+        "normalized_position": 0.21029082774049218,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 665
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Like I could play innocent. “",
+        "max_topic_prob": 0.6197640895843506,
+        "normalized_position": 0.2713646532438479,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Why did I keep trying to play his game?",
+        "max_topic_prob": 0.5775752663612366,
+        "normalized_position": 0.23243847874720358,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Somehow, the determination to take my time was part of the game. “",
+        "max_topic_prob": 0.5336731672286987,
+        "normalized_position": 0.49977628635346755,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s part of the game.",
+        "max_topic_prob": 0.5312302708625793,
+        "normalized_position": 0.11923937360178971,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You switching teams?”",
+        "max_topic_prob": 0.4748497009277344,
+        "normalized_position": 0.08881431767337808,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Alright,” I coach myself. “",
+        "max_topic_prob": 0.5127922296524048,
+        "normalized_position": 0.958044509303174,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Time to stop playing around.",
+        "max_topic_prob": 0.5046327114105225,
+        "normalized_position": 0.5204304998175848,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Dungeons?” “",
+        "max_topic_prob": 0.44950389862060547,
+        "normalized_position": 0.12860269974461874,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Could you play for us?” “",
+        "max_topic_prob": 0.6476318836212158,
+        "normalized_position": 0.5136363636363637,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "We spend the whole day playing.",
+        "max_topic_prob": 0.5406389236450195,
+        "normalized_position": 0.5065656565656566,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My fingers start to play, as if they're playing of their own accord.",
+        "max_topic_prob": 0.5159547328948975,
+        "normalized_position": 0.5166666666666667,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Playing the part someone else wanted you to be.",
+        "max_topic_prob": 0.5106892585754395,
+        "normalized_position": 0.1707070707070707,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Of course, that could just be a game, too.",
+        "max_topic_prob": 0.4788770079612732,
+        "normalized_position": 0.6772727272727272,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But I'm not in the habit of playing favorites.",
+        "max_topic_prob": 0.4206174612045288,
+        "normalized_position": 0.11565656565656565,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You played great.” “",
+        "max_topic_prob": 0.6366742849349976,
+        "normalized_position": 0.45902517407605786,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 391
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You need to understand the playing field here.” “",
+        "max_topic_prob": 0.6041247844696045,
+        "normalized_position": 0.4496518478843064,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "We just go for the guys, but you actually know something about the game.”",
+        "max_topic_prob": 0.5745148658752441,
+        "normalized_position": 0.39930369576861274,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Despite my need for answers, I decided to play it casual.",
+        "max_topic_prob": 0.5518104434013367,
+        "normalized_position": 0.6081949651847884,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I’m done with hockey players, okay?”",
+        "max_topic_prob": 0.5325443744659424,
+        "normalized_position": 0.43867166577396893,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I think for now, I’m sticking with hockey.”",
+        "max_topic_prob": 0.5143660306930542,
+        "normalized_position": 0.6234600964113551,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Engage and play messages.”",
+        "max_topic_prob": 0.47430646419525146,
+        "normalized_position": 0.6151994497936726,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Now I had to play referee between humans and the dark world, with the humans as the aggressors. “",
+        "max_topic_prob": 0.44025132060050964,
+        "normalized_position": 0.1448876662081614,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Zerphor shrugged, A child plays when a child plays.",
+        "max_topic_prob": 0.41842514276504517,
+        "normalized_position": 0.7743007794589638,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m ready to play.",
+        "max_topic_prob": 0.6613856554031372,
+        "normalized_position": 0.07381889763779527,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’ll play, you sing.” “",
+        "max_topic_prob": 0.6320708990097046,
+        "normalized_position": 0.4899303452453059,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 387
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Some play.",
+        "max_topic_prob": 0.6061300039291382,
+        "normalized_position": 0.6254542701393095,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He keeps playing. “",
+        "max_topic_prob": 0.5777767896652222,
+        "normalized_position": 0.48977892186553607,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 385
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That’s not part of the game.”",
+        "max_topic_prob": 0.5698789358139038,
+        "normalized_position": 0.42004845548152636,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You know how the Games work,” I say mainly to Aetos. “",
+        "max_topic_prob": 0.5583986043930054,
+        "normalized_position": 0.693519079345851,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 204
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0032019516657772356,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.003533123028391167,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.004733009708737864,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0035496957403651115,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.002966432474629196,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0022593764121102574,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.002786624203821656,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.007814605227701428,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0005496518871381459,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0006600115502021285,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0006738544474393531,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00034706154558074965,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0004047763610605141,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0001541069502234551,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 68
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

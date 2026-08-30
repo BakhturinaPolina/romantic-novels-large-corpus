@@ -1,0 +1,96 @@
+# Frozen H2 HEA / final relational payoff prompts.
+
+hypothesis: H2
+name: hea_payoff
+version: "1.0"
+frozen: true
+
+codes:
+  - id: H2_0
+    label: off_target
+    definition: Not about couple relationship talk, repair, commitment, or payoff.
+  - id: H2_1
+    label: generic_confession_apology
+    definition: >-
+      Confession, apology, forgiveness, or missing-you talk without lasting resolution.
+  - id: H2_2
+    label: repair
+    definition: Active repair of a rupture; trust being rebuilt but not yet sealed.
+  - id: H2_3
+    label: mutual_commitment
+    definition: Mutual future-oriented commitment without a clear final payoff moment.
+  - id: H2_4
+    label: final_relational_payoff
+    definition: Lasting relational resolution / HEA-style closure for the main couple.
+  - id: H2_5
+    label: public_union
+    definition: Wedding, public acknowledgement, family/community recognition of the couple.
+  - id: H2_6
+    label: commitment_symbols
+    definition: Rings, proposals, shared home as symbols — without full narrative closure.
+  - id: H2_7
+    label: emotionally_intense_talk
+    definition: High-affect relationship talk that is neither repair nor payoff.
+  - id: H2_8
+    label: non_main_couple_resolution
+    definition: Resolution for secondary characters or plot, not the main couple.
+
+fields:
+  - main_couple
+  - mutuality
+  - future_orientation
+  - rupture_resolved
+  - position
+  - finality
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+pass_b_shows_position: true
+
+phrasing:
+  primary:
+    system: |
+      You audit romance topics for HEA / final relational payoff.
+      Confession, apology, forgiveness, or "I missed you" alone are NOT HEA.
+      Narrative position/tertile is visible because it is part of the construct; ratings stay hidden.
+      JSON only.
+    pass_a: |
+      Pass A lexical for topic {topic_id}.
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Consensus H2 code + disagreements.
+      JSON: per_rep, consensus_code, disagreement, rationale.
+    pass_b: |
+      Pass B contextual (position visible; rating cells blinded).
+      Topic {topic_id}
+      {sentences_block}
+      Code sentences with H2_*; estimate proportions; note position/finality patterns.
+      JSON: sentence_codes, proportions, dominant_code, main_couple, mutuality,
+      future_orientation, rupture_resolved, finality, rationale.
+    pass_c: |
+      Pass C adjudication for topic {topic_id}.
+      Lexical={lexical_consensus}; contextual={contextual_dominant}.
+      Taxonomy={taxonomy_id} {taxonomy_name}; secondary={secondary_id} {secondary_name}.
+      Action + hea_code. Ignore ratings.
+
+  alternate:
+    system: |
+      HEA auditor: distinguish lasting relational resolution from intense relationship talk.
+      Position may inform finality; never use ratings. JSON only.
+    pass_a: |
+      Keyword-only HEA coding for topic {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+    pass_b: |
+      Sentence HEA coding for topic {topic_id} with tertiles shown and cells blinded:
+      {sentences_block}
+    pass_c: |
+      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
+      tax={taxonomy_id}/{taxonomy_name}. Choose KEEP…EXCLUDE_FROM_HYPOTHESIS.

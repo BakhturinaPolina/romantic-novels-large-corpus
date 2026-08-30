@@ -1,0 +1,22 @@
+{
+  "hypothesis": "H1",
+  "n_topics": 3,
+  "topic_ids": [
+    1,
+    6,
+    7
+  ],
+  "n_newly_audited": 3,
+  "n_adjudicated_total": 96,
+  "dry_run": true,
+  "model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "outputs": {
+    "A": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h1/lexical.jsonl",
+    "B": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h1/contextual.jsonl",
+    "C": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h1/adjudication.jsonl"
+  },
+  "n_h3_priors_reused": 0,
+  "n_tenderness_priors": 0,
+  "exhaustive_topic_ids": [],
+  "n_exhaustive": 0
+}

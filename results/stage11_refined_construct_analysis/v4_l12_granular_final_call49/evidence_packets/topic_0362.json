@@ -1,0 +1,688 @@
+{
+  "topic_id": 362,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "rory",
+        "chance",
+        "yamane",
+        "kingman",
+        "darlington",
+        "survived",
+        "ayida",
+        "damballah"
+      ],
+      "KeyBERT": [
+        "answering",
+        "willing",
+        "sir",
+        "expect",
+        "pretending",
+        "embarrassed",
+        "introduce",
+        "issue",
+        "meantime",
+        "wondering"
+      ],
+      "POS": [
+        "addition",
+        "meantime",
+        "framed",
+        "suggestion",
+        "issue",
+        "features",
+        "willing",
+        "sir"
+      ],
+      "MMR": [
+        "framed",
+        "tearing",
+        "crouched",
+        "answering",
+        "embarrassed",
+        "features",
+        "struggled",
+        "studied",
+        "tugged",
+        "willing"
+      ]
+    },
+    "stage08_snippets": [
+      "come on, i’ll get you a drink,’ rory said. ‘",
+      "they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.",
+      "and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room."
+    ],
+    "label_public": "Keeping Someone Watched and Close"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It was Kelsey he wished to see brought low.",
+        "max_topic_prob": 0.5181164741516113,
+        "normalized_position": 0.18283995567516226,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "For we have seen how far Kelsey is willing to go for what he wants.”",
+        "max_topic_prob": 0.48732298612594604,
+        "normalized_position": 0.07250277030235872,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He would go slowly, wisely, even though he was more resolved than ever to see Kelsey repaid for his ills against others.",
+        "max_topic_prob": 0.4721408486366272,
+        "normalized_position": 0.27782175083109073,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Another of the men said, “Lord Kelsey must be told.”",
+        "max_topic_prob": 0.46966230869293213,
+        "normalized_position": 0.8543612474275764,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 434
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Kelsey has made many enemies.”",
+        "max_topic_prob": 0.4647640883922577,
+        "normalized_position": 0.06537913566566408,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yet he’d had no time to grieve their loss, for he had immediately become embroiled in this conflict with the Earl of Kelsey.",
+        "max_topic_prob": 0.4615572690963745,
+        "normalized_position": 0.01662181415228748,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The man pointed to Kelsey. “",
+        "max_topic_prob": 0.5501986742019653,
+        "normalized_position": 0.8072452014057854,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Okay, so maybe I get that, but what about Kelsey?” “",
+        "max_topic_prob": 0.5364627838134766,
+        "normalized_position": 0.36036766693701,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Kelsey . . .”",
+        "max_topic_prob": 0.5145795941352844,
+        "normalized_position": 0.8513111651797783,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Kelsey’s heart sank.",
+        "max_topic_prob": 0.51381516456604,
+        "normalized_position": 0.40200054068667207,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Kelsey’s heart sank.",
+        "max_topic_prob": 0.51381516456604,
+        "normalized_position": 0.6651797783184644,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He’d want a sure thing,” Kelsey insisted.",
+        "max_topic_prob": 0.4845593273639679,
+        "normalized_position": 0.9310624493106245,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Dorian asked the same question.",
+        "max_topic_prob": 0.4737439453601837,
+        "normalized_position": 0.6312825566661974,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Dorian quickly slid his boxer’s off, Rick tossing his own aside and then positioned Dorian into the sixty-nine position, placing the human on top.",
+        "max_topic_prob": 0.44368934631347656,
+        "normalized_position": 0.297339152470787,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His mate had been through enough in just a short time, and Rick was sick and tired of Dorian being hurt.",
+        "max_topic_prob": 0.4414013624191284,
+        "normalized_position": 0.9581866816837956,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Dorian could tell.",
+        "max_topic_prob": 0.42639094591140747,
+        "normalized_position": 0.34379839504434745,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Dorian could tell.",
+        "max_topic_prob": 0.42639094591140747,
+        "normalized_position": 0.7855835562438407,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "On the tail end of that thought, Rick wondered if he could subject Dorian to changeling life.",
+        "max_topic_prob": 0.42603614926338196,
+        "normalized_position": 0.22877657327889625,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Yes, Rory.” “",
+        "max_topic_prob": 0.8349544405937195,
+        "normalized_position": 0.5380590890439064,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 563
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Yes, Rory.” “",
+        "max_topic_prob": 0.8349543809890747,
+        "normalized_position": 0.5384694296265901,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 567
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Rory shook his head. “",
+        "max_topic_prob": 0.8330395817756653,
+        "normalized_position": 0.39331144850225686,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 361
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Rory stepped closer. “",
+        "max_topic_prob": 0.8276289701461792,
+        "normalized_position": 0.5366228970045137,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 549
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Yes, Rory.”",
+        "max_topic_prob": 0.8173487186431885,
+        "normalized_position": 0.5386745999179319,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 569
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Rory had taken care of the issue.",
+        "max_topic_prob": 0.7996495366096497,
+        "normalized_position": 0.41670086171522364,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 589
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Bethenny asked, pulling Addison back to reality. “",
+        "max_topic_prob": 0.5647211074829102,
+        "normalized_position": 0.7625263157894737,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Bethenny was on a roll and Addison kept trying to interject but Bethenny was pacing excitedly.",
+        "max_topic_prob": 0.5283037424087524,
+        "normalized_position": 0.8456842105263158,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Addison envied the fact that Bethenny could speak openly about her feelings for their fellow student.",
+        "max_topic_prob": 0.4819367527961731,
+        "normalized_position": 0.7665263157894737,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Maybe he’s just really serious about procedural codes… The rest of the day passed in a blur as Addison went through the motions expected of her.",
+        "max_topic_prob": 0.4572833180427551,
+        "normalized_position": 0.6456842105263157,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Don’t even joke about that, Addison!”",
+        "max_topic_prob": 0.4290623962879181,
+        "normalized_position": 0.5090526315789474,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Wow, Addison, what are the odds?”",
+        "max_topic_prob": 0.42440149188041687,
+        "normalized_position": 0.7743157894736842,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "asked Rory. “",
+        "max_topic_prob": 0.8659944534301758,
+        "normalized_position": 0.6196367990421073,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Where’s Rory?”",
+        "max_topic_prob": 0.7909851670265198,
+        "normalized_position": 0.5326282179205747,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2669
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Angus spoke before Rory could. “",
+        "max_topic_prob": 0.7480032444000244,
+        "normalized_position": 0.5426062662143285,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2719
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Looking behind him, he motioned for Angus and Rory. “",
+        "max_topic_prob": 0.7224796414375305,
+        "normalized_position": 0.6910796248253842,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 687
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Angu s looked from Rory to her. “",
+        "max_topic_prob": 0.709511399269104,
+        "normalized_position": 0.5384154859309519,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2698
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "After traveling awhile, Ian asked Rory how he knew Melanie.",
+        "max_topic_prob": 0.7092770338058472,
+        "normalized_position": 0.5424067052484534,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2718
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Callum looked to Wei, Xun, and Chen. “",
+        "max_topic_prob": 0.5257946252822876,
+        "normalized_position": 0.7102995238956187,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 458
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chen was surfing, keeping his eyes on things, and found it.” “",
+        "max_topic_prob": 0.47698014974594116,
+        "normalized_position": 0.7072259386488278,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 407
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chen went off to get your man.",
+        "max_topic_prob": 0.47178488969802856,
+        "normalized_position": 0.7753872114747182,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chen! ”",
+        "max_topic_prob": 0.4610033631324768,
+        "normalized_position": 0.027300668956789006,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chen! ”",
+        "max_topic_prob": 0.4610033631324768,
+        "normalized_position": 0.3413487615259447,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chen!”",
+        "max_topic_prob": 0.4610031843185425,
+        "normalized_position": 0.021695895859699874,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Mae looked at Forster. “",
+        "max_topic_prob": 0.5476051568984985,
+        "normalized_position": 0.6074803149606299,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Never mind Forster’s unerring aim, Mae had succeeded in gaining his undivided attention with that crazy little announcement. “",
+        "max_topic_prob": 0.4923456609249115,
+        "normalized_position": 0.4568241469816273,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Forster asked as he turned his attention back to them. “",
+        "max_topic_prob": 0.4766967296600342,
+        "normalized_position": 0.45511811023622045,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Took you long enough,” Forster complained, passing shallow bowls along to his crew.",
+        "max_topic_prob": 0.3663563132286072,
+        "normalized_position": 0.7488188976377953,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 211
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0007924896366739819,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.00690010298661174,
+        "n_sentences": 67
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0005296610169491525,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004611991177060357,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0030206677265500795,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0012684989429175475,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0035617609346060694,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0021724372029871012,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 46
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "10.1",
+    "taxonomy_secondary_name": "Paranormal & Immortal Beings",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,945 @@
+{
+  "topic_id": 244,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "heart",
+        "broken",
+        "broke",
+        "hearts",
+        "heartbroken",
+        "my",
+        "break",
+        "breaking",
+        "yer",
+        "shattered"
+      ],
+      "KeyBERT": [
+        "affection",
+        "emotional",
+        "heal",
+        "memories",
+        "engaged",
+        "glued",
+        "suffering",
+        "terrified",
+        "attached",
+        "pieces"
+      ],
+      "POS": [
+        "results",
+        "value",
+        "reminder",
+        "affection",
+        "edges",
+        "terrified",
+        "current",
+        "emotional",
+        "permission",
+        "pieces"
+      ],
+      "MMR": [
+        "glued",
+        "heal",
+        "shaped",
+        "suffering",
+        "affection",
+        "attached",
+        "emotional",
+        "pieces",
+        "sank",
+        "memories"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve been heartbroken, truly shattered since leaving you behind in cleveland .",
+      "and actually it’s pretty handy you love me since i’ve already had my heart smashed around like day old potatoes once this year.”",
+      "it’s always been the way i’ve protected my heart, though i never thought about the hearts of the women i used."
+    ],
+    "label_public": "Confessing A Shattered Heart"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Your soft heart would weep over some of the things I’ve done and the choices I’ve made.",
+        "max_topic_prob": 0.6520034074783325,
+        "normalized_position": 0.6834124200536414,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1974
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "You saved a child who would otherwise be dead right now and you risked your own life to do it because your heart is too soft for you to say no even though it might have meant your own death. “",
+        "max_topic_prob": 0.5897335410118103,
+        "normalized_position": 0.6825871673199917,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1966
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Not everything was hearts and roses.",
+        "max_topic_prob": 0.5629047155380249,
+        "normalized_position": 0.672890447699608,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1872
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Dear Author SWEET SURRENDER “This story ran my heart through the wringer more than once.” —",
+        "max_topic_prob": 0.5569819808006287,
+        "normalized_position": 0.0016505054672993605,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "There’s not another group of men who have more heart, determination and courage.",
+        "max_topic_prob": 0.34173035621643066,
+        "normalized_position": 0.4496595832473695,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2216
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It’s what my heart wants.",
+        "max_topic_prob": 0.6520613431930542,
+        "normalized_position": 0.8789625360230547,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It’s what my heart, and my head, demands.",
+        "max_topic_prob": 0.620053231716156,
+        "normalized_position": 0.9291066282420749,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Following your heart will pay off in the near future.",
+        "max_topic_prob": 0.5757019519805908,
+        "normalized_position": 0.9284149855907781,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 475
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Following your heart will pay off in the near future.",
+        "max_topic_prob": 0.5757017731666565,
+        "normalized_position": 0.4405763688760807,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 519
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Following your heart will pay off in the near future .",
+        "max_topic_prob": 0.5757017731666565,
+        "normalized_position": 0.687492795389049,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 603
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Following your heart will pay off in the near future .",
+        "max_topic_prob": 0.5757017731666565,
+        "normalized_position": 0.7264553314121037,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Not the best of moods for a heart to heart. “",
+        "max_topic_prob": 0.6249516010284424,
+        "normalized_position": 0.45830807862152567,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "He didn’t want to, not in his heart.",
+        "max_topic_prob": 0.6141934394836426,
+        "normalized_position": 0.4508615464542385,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "That sickening emotion was destined to bloom between you.",
+        "max_topic_prob": 0.552852213382721,
+        "normalized_position": 0.8808554853234046,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Nothing but one filled with heartache and misery.",
+        "max_topic_prob": 0.5066256523132324,
+        "normalized_position": 0.4521603602043467,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Sentimentality will be your failing.",
+        "max_topic_prob": 0.4636445641517639,
+        "normalized_position": 0.01575894016797991,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "My heart is yours for however long you want to keep it.\" \"",
+        "max_topic_prob": 0.7226433157920837,
+        "normalized_position": 0.9630222506803265,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "My heart is now involved as well.",
+        "max_topic_prob": 0.7037816047668457,
+        "normalized_position": 0.742756523131103,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "My heart is broken and I don't know how to fix it.",
+        "max_topic_prob": 0.6909109950065613,
+        "normalized_position": 0.8799423723387226,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I only know that my heart is hurting immensely for this man who has apparently suffered so much. \"",
+        "max_topic_prob": 0.6359138488769531,
+        "normalized_position": 0.7323515287337922,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He says his heart is a slave to me, and that thought cuts both ways.",
+        "max_topic_prob": 0.626508355140686,
+        "normalized_position": 0.9801504722266688,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Instead, I take in the beautifully, damaged man that I had fallen foolishly in love with.",
+        "max_topic_prob": 0.5312672853469849,
+        "normalized_position": 0.8879462141828077,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Emotionally dead?",
+        "max_topic_prob": 0.47288036346435547,
+        "normalized_position": 0.4639236029238387,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Like a broken toy, broken boy, here ends your fractured little life .'",
+        "max_topic_prob": 0.4685813784599304,
+        "normalized_position": 0.9125206319264324,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "A mourner. '",
+        "max_topic_prob": 0.4356876611709595,
+        "normalized_position": 0.35310068380099036,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Chris asked, getting right to the heart of the matter.",
+        "max_topic_prob": 0.5068404674530029,
+        "normalized_position": 0.8398938522777533,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "The last thing he wanted was to have his heart broken.",
+        "max_topic_prob": 0.6503515243530273,
+        "normalized_position": 0.6015317739598427,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Exposing his heart, to anyone, was one of them. “",
+        "max_topic_prob": 0.5619004964828491,
+        "normalized_position": 0.9443179465949079,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart was literally breaking when I met you.”",
+        "max_topic_prob": 0.7358505725860596,
+        "normalized_position": 0.9868804664723032,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Get heart broken.",
+        "max_topic_prob": 0.7073541879653931,
+        "normalized_position": 0.32626557116353033,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "How do you know my heart’s good?”",
+        "max_topic_prob": 0.7072771191596985,
+        "normalized_position": 0.4226080042406573,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "If only hearts could heal that way — through someone else’s beating.",
+        "max_topic_prob": 0.6961045265197754,
+        "normalized_position": 0.6793002915451894,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "With my whole heart.” “",
+        "max_topic_prob": 0.6877735257148743,
+        "normalized_position": 0.833289159819772,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "That’s how you can tell when someone has a good heart.” “",
+        "max_topic_prob": 0.6766136884689331,
+        "normalized_position": 0.42406573018817917,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "That broke my heart a little. “",
+        "max_topic_prob": 0.7180449962615967,
+        "normalized_position": 0.963604636669575,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It breaks my heart every fucking time.”",
+        "max_topic_prob": 0.6766219139099121,
+        "normalized_position": 0.8202667331422161,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Straight from my battered and broken heart.",
+        "max_topic_prob": 0.6731137037277222,
+        "normalized_position": 0.7196809173625826,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It was funny to think that someone so emotionally heavy on my heart could actually make things lighter.",
+        "max_topic_prob": 0.6498519778251648,
+        "normalized_position": 0.8511778636420292,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Mr. Dunn—” My heart twisted in my chest. “",
+        "max_topic_prob": 0.6450997591018677,
+        "normalized_position": 0.7230462420540945,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You broke my poor little hillbilly heart that day.”",
+        "max_topic_prob": 0.6226235628128052,
+        "normalized_position": 0.08500560887448586,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I know his heart. “",
+        "max_topic_prob": 0.7034305334091187,
+        "normalized_position": 0.5367118444313494,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I say my heart swelling with pain and love simultaneously. “",
+        "max_topic_prob": 0.6805664300918579,
+        "normalized_position": 0.8927519151443725,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "My heart’s already made its decision.",
+        "max_topic_prob": 0.6551400423049927,
+        "normalized_position": 0.6525633470830878,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "My heart isn’t in it and I wonder if it ever will be again.",
+        "max_topic_prob": 0.644149661064148,
+        "normalized_position": 0.6189746611667649,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "My heart surges with love for him.",
+        "max_topic_prob": 0.6385401487350464,
+        "normalized_position": 0.47648791985857397,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "And I have a huge, gaping hole in my heart.” “",
+        "max_topic_prob": 0.6290864944458008,
+        "normalized_position": 0.7111373011196228,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I just had my heart broken.",
+        "max_topic_prob": 0.7954283952713013,
+        "normalized_position": 0.868994771628687,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What is it, my heart?",
+        "max_topic_prob": 0.6994340419769287,
+        "normalized_position": 0.6591693795008385,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "That puts my heart at ease.” “",
+        "max_topic_prob": 0.6493179798126221,
+        "normalized_position": 0.9693203117293084,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Heartbroken too .",
+        "max_topic_prob": 0.6455389261245728,
+        "normalized_position": 0.8951366281937457,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 670
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Take heart.",
+        "max_topic_prob": 0.6417567729949951,
+        "normalized_position": 0.4976817598895137,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "How is it you are no’ aware my heart beats solely for you?” “",
+        "max_topic_prob": 0.6333470344543457,
+        "normalized_position": 0.610732958468975,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "But this feeling was horrible and heart wrenching.",
+        "max_topic_prob": 0.6353800892829895,
+        "normalized_position": 0.5472063433523879,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "So, you had a change of heart after you saw what we did in California?” “",
+        "max_topic_prob": 0.5946927666664124,
+        "normalized_position": 0.33975659229208927,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Sounds to me like you were just following your heart.” “",
+        "max_topic_prob": 0.6942486763000488,
+        "normalized_position": 0.6618803418803418,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "But that doesn’t mean that I’m heartless.",
+        "max_topic_prob": 0.6465519666671753,
+        "normalized_position": 0.2141880341880342,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Do you mind if I ask what brought about this change of heart?”",
+        "max_topic_prob": 0.5892187356948853,
+        "normalized_position": 0.45487179487179485,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "But then you showed me your patience, your generosity and your heart.",
+        "max_topic_prob": 0.5737717747688293,
+        "normalized_position": 0.8687179487179487,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Follow your heart.",
+        "max_topic_prob": 0.5731106400489807,
+        "normalized_position": 0.7594871794871795,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "It would never be Miss Follow-Your-Heart’s fault that something went wrong and everyone else had to pick up the pieces.",
+        "max_topic_prob": 0.5316880941390991,
+        "normalized_position": 0.9647863247863248,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "And what about emotionally?",
+        "max_topic_prob": 0.46658164262771606,
+        "normalized_position": 0.7261549925484352,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "My heart’s nowhere near it.” “",
+        "max_topic_prob": 0.7163981199264526,
+        "normalized_position": 0.09627540600991928,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Oh, and where is your heart?”",
+        "max_topic_prob": 0.7025011777877808,
+        "normalized_position": 0.09637265389477778,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And taking my heart down with it.",
+        "max_topic_prob": 0.6763674020767212,
+        "normalized_position": 0.527764271127103,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Stupid heart.",
+        "max_topic_prob": 0.6628715991973877,
+        "normalized_position": 0.0224642614023145,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "My heart almost fell right out of my chest when she said that.",
+        "max_topic_prob": 0.6418730020523071,
+        "normalized_position": 0.4283769328017116,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I refuse to believe someone else has her heart.",
+        "max_topic_prob": 0.6217973232269287,
+        "normalized_position": 0.10493046776232617,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "We don’t want any heart attacks.’",
+        "max_topic_prob": 0.4501957893371582,
+        "normalized_position": 0.7684784127427693,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’ve been going through some tough times and it’s only now that I’m coming back to life.",
+        "max_topic_prob": 0.44827866554260254,
+        "normalized_position": 0.8998183596478971,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 373
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0026429130775254502,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0023902001792650133,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.002008284172210368,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0019317450096587251,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.005868231528407575,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.003080568720379147,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0017371163867979154,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.00205726041488085,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.00043466921672607144,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00028121484814398203,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0005181347150259067,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0001249375312343828,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.00018646280067126608,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0004158868787689748,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00035536602700781805,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00044742729306487697,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 69
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "4.5",
+    "taxonomy_secondary_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

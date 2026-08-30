@@ -1,0 +1,813 @@
+{
+  "topic_id": 172,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "police",
+        "cop",
+        "cops",
+        "officer",
+        "authorities",
+        "officers",
+        "enforcement",
+        "policeman",
+        "local",
+        "call"
+      ],
+      "KeyBERT": [
+        "protect",
+        "evidence",
+        "weapons",
+        "dared",
+        "appropriate",
+        "sir",
+        "secured",
+        "mentioned",
+        "task",
+        "involved"
+      ],
+      "POS": [
+        "activity",
+        "unwilling",
+        "partners",
+        "typical",
+        "leads",
+        "annoying",
+        "appropriate",
+        "weapons",
+        "decent",
+        "task"
+      ],
+      "MMR": [
+        "activity",
+        "unwilling",
+        "partners",
+        "secured",
+        "leads",
+        "dared",
+        "weapons",
+        "dealing",
+        "stops",
+        "task"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll also report this to your regional security officer, yes?”",
+      "i’ll have an armed officer [person] the room with you at all times, and i’ll watch through the glass.” “",
+      "i’ve called the police, i’ll have you know.”"
+    ],
+    "label_public": "Reporting to The Security Officer"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The police?”",
+        "max_topic_prob": 0.7751778364181519,
+        "normalized_position": 0.177672147995889,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1383
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The police?”",
+        "max_topic_prob": 0.7751777172088623,
+        "normalized_position": 0.3870760534429599,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1518
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The woman called the police.”",
+        "max_topic_prob": 0.6903681755065918,
+        "normalized_position": 0.38257965056526205,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1483
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Did you call the police?”",
+        "max_topic_prob": 0.6730687618255615,
+        "normalized_position": 0.39812435765673176,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1604
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "They’d decided to call the police.",
+        "max_topic_prob": 0.6683098077774048,
+        "normalized_position": 0.007965056526207605,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Then I told the police exactly what he told me to say.” “",
+        "max_topic_prob": 0.659182608127594,
+        "normalized_position": 0.6485097636176773,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1150
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Call the police?” “",
+        "max_topic_prob": 0.6276510953903198,
+        "normalized_position": 0.6662390029325513,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "There’s no reason to call the police.”",
+        "max_topic_prob": 0.6034306287765503,
+        "normalized_position": 0.6667888563049853,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Do you think being worried over another officer’s absence justifies a breach in regulations?”",
+        "max_topic_prob": 0.6034238338470459,
+        "normalized_position": 0.8859397417503587,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2463
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Some of her fellow officers, I take it.",
+        "max_topic_prob": 0.6027629375457764,
+        "normalized_position": 0.11119081779053085,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "The other officers are my colleagues.”",
+        "max_topic_prob": 0.5658814907073975,
+        "normalized_position": 0.0703012912482066,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I give an order, and because I’m your superior officer, you are supposed to obey it.” “",
+        "max_topic_prob": 0.549286961555481,
+        "normalized_position": 0.8884505021520803,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2470
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "This isn’t supposed to be easy for a female officer, remember?",
+        "max_topic_prob": 0.5428459048271179,
+        "normalized_position": 0.16140602582496413,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 443
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She doesn’t want this to affect her status with the other officers she interacts with on a daily basis.” “",
+        "max_topic_prob": 0.5103918313980103,
+        "normalized_position": 0.11585365853658537,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The cops don’t know?”",
+        "max_topic_prob": 0.7477403879165649,
+        "normalized_position": 0.5607462344215919,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Cops talk.",
+        "max_topic_prob": 0.7240220308303833,
+        "normalized_position": 0.7817111399954125,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "But you’re a cop!”",
+        "max_topic_prob": 0.714102566242218,
+        "normalized_position": 0.9749216300940439,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Is he a cop too?”",
+        "max_topic_prob": 0.7117328643798828,
+        "normalized_position": 0.3406223717409588,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "What does your cop boyfriend think of that?” “",
+        "max_topic_prob": 0.7083075046539307,
+        "normalized_position": 0.9405917883630247,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You’re a cop,” I told him.",
+        "max_topic_prob": 0.7065517902374268,
+        "normalized_position": 0.8428778958635982,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I shal stand in the crowd wearing my fake col ar and looking innocent, and no one wil know what happened.",
+        "max_topic_prob": 0.4017207622528076,
+        "normalized_position": 0.7836564351103931,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 628
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The ones in the corner with the guards al round them?” “",
+        "max_topic_prob": 0.3474770486354828,
+        "normalized_position": 0.28836833602584816,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I spoke with one of the cops in the hallway.",
+        "max_topic_prob": 0.6778799891471863,
+        "normalized_position": 0.3684902682798527,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "None, my fellow officers know better.”",
+        "max_topic_prob": 0.6321618556976318,
+        "normalized_position": 0.2872172540768017,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "And I should have you on report, Sergeant Cusack, for not thoroughly investigating a crime scene the moment you walked into one.” “",
+        "max_topic_prob": 0.6273876428604126,
+        "normalized_position": 0.6609679116254603,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I ran to her, kneeled down to check for a pulse, and that’s when the cops barged in.",
+        "max_topic_prob": 0.6109194755554199,
+        "normalized_position": 0.9047869542346134,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 453
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Did you catch the name of any of the officers that responded to the call?",
+        "max_topic_prob": 0.6055107712745667,
+        "normalized_position": 0.20620725933719095,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The cops jerked me away from her and, the next thing I know, they were slapping cuffs on me.” “",
+        "max_topic_prob": 0.6055094003677368,
+        "normalized_position": 0.9055760126249343,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 456
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "We’re both cops.",
+        "max_topic_prob": 0.7333642244338989,
+        "normalized_position": 0.8587706803988167,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Police business.",
+        "max_topic_prob": 0.7199320793151855,
+        "normalized_position": 0.7520543442533143,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Once a cop, always a cop, and I’ve been there.",
+        "max_topic_prob": 0.6925861239433289,
+        "normalized_position": 0.8027829516818231,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "The man continued, “I’m also a cop.",
+        "max_topic_prob": 0.6830096244812012,
+        "normalized_position": 0.7423030568642489,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Yes, officer?",
+        "max_topic_prob": 0.6656240224838257,
+        "normalized_position": 0.3920236660457982,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He’s a detective, NYPD.",
+        "max_topic_prob": 0.663313627243042,
+        "normalized_position": 0.9557357291552536,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "the policeman prompted. ‘",
+        "max_topic_prob": 0.7469924688339233,
+        "normalized_position": 0.4984842493739291,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You’ve been helping police with their enquiries.’",
+        "max_topic_prob": 0.7066773176193237,
+        "normalized_position": 0.6998813760379596,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It’s sick, but the cops are on their way, okay?’ ‘",
+        "max_topic_prob": 0.7060863971710205,
+        "normalized_position": 0.7175431659417425,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "We should let the police know.’",
+        "max_topic_prob": 0.7007175087928772,
+        "normalized_position": 0.8912613681296956,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The police didn’t tell me directly.",
+        "max_topic_prob": 0.6961649656295776,
+        "normalized_position": 0.1970475813892184,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Wonder what the cops had read into that!",
+        "max_topic_prob": 0.6897901296615601,
+        "normalized_position": 0.2807433768287861,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Well, I’m no expert on traffic, but it looks like you had the green light, and he went ahead and plowed through anyhow.",
+        "max_topic_prob": 0.45887452363967896,
+        "normalized_position": 0.0035700119000396666,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Not a pimp.",
+        "max_topic_prob": 0.39068394899368286,
+        "normalized_position": 0.5573185243950813,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Officer?’ ‘",
+        "max_topic_prob": 0.6891797184944153,
+        "normalized_position": 0.21191994332270633,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Did an officer do something awful to a member of your family?’ ‘",
+        "max_topic_prob": 0.6685003042221069,
+        "normalized_position": 0.7761246900460503,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "But you hate officers.’ ‘",
+        "max_topic_prob": 0.6611770987510681,
+        "normalized_position": 0.991675522493801,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Warrant officer, I hope.’ ‘",
+        "max_topic_prob": 0.6578835248947144,
+        "normalized_position": 0.16126461211477153,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "No, an officer in my family did something awful to me.’",
+        "max_topic_prob": 0.6446660757064819,
+        "normalized_position": 0.7762132483173928,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Like I’d want to gatecrash the officers’ mess.’",
+        "max_topic_prob": 0.6438462734222412,
+        "normalized_position": 0.40488841657810837,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You never went to the police?”",
+        "max_topic_prob": 0.7118263244628906,
+        "normalized_position": 0.5543267901575891,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The police didn’t find anyone here, right?” “",
+        "max_topic_prob": 0.6795796751976013,
+        "normalized_position": 0.8024606027094277,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "When everything was in place, I went to the police.",
+        "max_topic_prob": 0.6794326901435852,
+        "normalized_position": 0.5568150400884712,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Did you notify the police?”",
+        "max_topic_prob": 0.6790316104888916,
+        "normalized_position": 0.7926458390931711,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You of all people should know better than to put faith in law enforcement.",
+        "max_topic_prob": 0.6490950584411621,
+        "normalized_position": 0.8460049764998617,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And you drove here instead of calling the police.”",
+        "max_topic_prob": 0.644158124923706,
+        "normalized_position": 0.6690627591927011,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I’m guessing they heard about what happened on our property the other night.",
+        "max_topic_prob": 0.4128860831260681,
+        "normalized_position": 0.10661401776900296,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Had it been the security guard on the twenty-third floor? “",
+        "max_topic_prob": 0.5013222694396973,
+        "normalized_position": 0.5639088432003964,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I don’t know how you stand dealing with these Massachusetts drivers.” “",
+        "max_topic_prob": 0.4384394884109497,
+        "normalized_position": 0.23371315333168194,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 113
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004666355576294913,
+        "n_sentences": 60
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.007046130133215898,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.005453578079276403,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0029785029785029784,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.00423841059602649,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0028922631959508315,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.004861111111111111,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.003396192689248369,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00024857071836937607,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.00036927621861152144,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00011038745998454576,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0003992015968063872,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.00027085590465872155,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "7.3",
+    "taxonomy_secondary_name": "Risk, Danger & External Crises",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

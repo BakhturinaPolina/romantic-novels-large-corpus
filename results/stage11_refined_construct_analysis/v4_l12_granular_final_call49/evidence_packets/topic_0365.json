@@ -1,0 +1,622 @@
+{
+  "topic_id": 365,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "zev",
+        "stall",
+        "relativity",
+        "aedin",
+        "204",
+        "untrusting"
+      ],
+      "KeyBERT": [
+        "stumbled",
+        "frantic",
+        "teased",
+        "willingly",
+        "spun",
+        "hesitation",
+        "reaction",
+        "pout",
+        "desperation",
+        "pregnant"
+      ],
+      "POS": [
+        "pout",
+        "addition",
+        "annoying",
+        "frantic",
+        "desperation",
+        "backs",
+        "ankle",
+        "stool",
+        "hesitation",
+        "embarrassment"
+      ],
+      "MMR": [
+        "pout",
+        "feeding",
+        "frantic",
+        "stool",
+        "shifting",
+        "embarrassment",
+        "braced",
+        "extended",
+        "stumbled",
+        "teased"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve kissed the guy who inspired einstein to think of relativity,” [person] murmured in wonder, shaking his head. “",
+      "[person] first impulse was to cross his arms and pout, which was admittedly not very mature, but it did make him feel a little better. “",
+      "even if weeks without jonah’s cock filling me had left me frantic to feel him inside me again, i couldn’t allow myself to cave so quickly and so willingly."
+    ],
+    "label_public": "Frantic Longing After Weeks Apart"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It tugged at Peter .",
+        "max_topic_prob": 0.46902573108673096,
+        "normalized_position": 0.23897841289145638,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 786
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Peter needs to be wanted for himself, you know.",
+        "max_topic_prob": 0.45643678307533264,
+        "normalized_position": 0.8911523259349347,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1340
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You did what you had to do, Peter.",
+        "max_topic_prob": 0.4399704337120056,
+        "normalized_position": 0.8543630282760718,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1219
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yesreverberated around in Peter ’s brain.",
+        "max_topic_prob": 0.43753567337989807,
+        "normalized_position": 0.19276375798114928,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 634
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Peter was so good at it.",
+        "max_topic_prob": 0.4254577159881592,
+        "normalized_position": 0.9714198844633627,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1604
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Peter sprang into action, catching snatches of the argument as he circled the Moreton Bay Fig to come around behind the threatening kidnapper. “",
+        "max_topic_prob": 0.4187575876712799,
+        "normalized_position": 0.032228640924293096,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "What whale?”",
+        "max_topic_prob": 0.4924682080745697,
+        "normalized_position": 0.8238341968911918,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Whale.”",
+        "max_topic_prob": 0.4649078845977783,
+        "normalized_position": 0.8293264248704664,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Rama fought his way back and retook control of his body.",
+        "max_topic_prob": 0.3753373920917511,
+        "normalized_position": 0.46,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Before Rama became ill, he was a different man.",
+        "max_topic_prob": 0.35270288586616516,
+        "normalized_position": 0.8703626943005182,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lachlan, I want to try to reason with Rama.",
+        "max_topic_prob": 0.3424924612045288,
+        "normalized_position": 0.8696373056994818,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Whalen…” Ah, yes.",
+        "max_topic_prob": 0.4954565763473511,
+        "normalized_position": 0.26711309523809523,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 1054
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Mr. Whalen? “",
+        "max_topic_prob": 0.4947669506072998,
+        "normalized_position": 0.27628968253968256,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 1091
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Mark Whalen?”",
+        "max_topic_prob": 0.4441691040992737,
+        "normalized_position": 0.26512896825396826,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 1046
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The lead Hawaiian boy was in the thick of the action.",
+        "max_topic_prob": 0.47819939255714417,
+        "normalized_position": 0.38274486185349693,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Say goodbye to Baby Whale!’",
+        "max_topic_prob": 0.4706519842147827,
+        "normalized_position": 0.5257848377625537,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 1245
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I sidled through the crowd until I was directly opposite the Hawaiian captain.",
+        "max_topic_prob": 0.42997846007347107,
+        "normalized_position": 0.3841752616125875,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The tense conversation with Salamasina.",
+        "max_topic_prob": 0.3914601802825928,
+        "normalized_position": 0.2581495144169239,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "In one quick movement, the Hawaiian had him in a chokehold that swiftly changed to a ground slam as he expertly maneuvered the heavier boy into a position face down in the dirt.",
+        "max_topic_prob": 0.3796660900115967,
+        "normalized_position": 0.38251900925995636,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Salamasina turned.",
+        "max_topic_prob": 0.3538973331451416,
+        "normalized_position": 0.7780621847474215,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 887
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Samson just stood there a moment. “",
+        "max_topic_prob": 0.5445195436477661,
+        "normalized_position": 0.3986522911051213,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "So, I knew instantly what Samson's reaction was all about. “",
+        "max_topic_prob": 0.5211957693099976,
+        "normalized_position": 0.05965858041329739,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Samson was soon beside me. “",
+        "max_topic_prob": 0.5198380351066589,
+        "normalized_position": 0.3897574123989218,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Samson's hand came down on my shoulder, but he didn't say anything, he didn't need to.",
+        "max_topic_prob": 0.515255331993103,
+        "normalized_position": 0.3909254267744834,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "What I had numbly watched from where I sat beside Samson.",
+        "max_topic_prob": 0.49642470479011536,
+        "normalized_position": 0.9459119496855346,
+        "tertile": "end",
+        "chapter_index": 75,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "When Samson's head spun back to look at me, he'd got it.",
+        "max_topic_prob": 0.48303067684173584,
+        "normalized_position": 0.35974842767295595,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "But I did have to drag Peter here kicking and screaming.” “",
+        "max_topic_prob": 0.46824079751968384,
+        "normalized_position": 0.8835078534031413,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "And Tarak, the Ark is waiting for its Commander to take control.” “",
+        "max_topic_prob": 0.5090383291244507,
+        "normalized_position": 0.696671160427253,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "With one sweeping long look around the Ark’s Command Centre he committed the serious faces before him to memory, and Tarak gave his men a quick smile before striding to the exit.",
+        "max_topic_prob": 0.4605363607406616,
+        "normalized_position": 0.6939749040754952,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Tarak paced to the viewing screen.",
+        "max_topic_prob": 0.40097323060035706,
+        "normalized_position": 0.7864772373742611,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Following the revelations by his brother, Tarak had reeled out of the Analysis Chamber a broken man.",
+        "max_topic_prob": 0.37637561559677124,
+        "normalized_position": 0.8127138857202115,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Lord Tarak, it is good to see you are undamaged.",
+        "max_topic_prob": 0.3760591447353363,
+        "normalized_position": 0.5252514777558851,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 474
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Well, Tarak?",
+        "max_topic_prob": 0.36858004331588745,
+        "normalized_position": 0.5334439489785336,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Raln Dodrescu, Ţărână’s media tech guy, was currently kneeling beneath it, fiddling with the TiVo.",
+        "max_topic_prob": 0.3361040949821472,
+        "normalized_position": 0.07850527676071506,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Peter wanted him.",
+        "max_topic_prob": 0.5217241048812866,
+        "normalized_position": 0.5341053165412898,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He wanted Peter to see him.",
+        "max_topic_prob": 0.5142545104026794,
+        "normalized_position": 0.40300904403685234,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But how could he hurt Peter?",
+        "max_topic_prob": 0.4982837438583374,
+        "normalized_position": 0.5288648465894683,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What was Peter thinking with?",
+        "max_topic_prob": 0.48931077122688293,
+        "normalized_position": 0.47181134308173445,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He just wanted Peter to be proud of him.",
+        "max_topic_prob": 0.4674978256225586,
+        "normalized_position": 0.11698081311807962,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I knew what Peter was doing.",
+        "max_topic_prob": 0.43384233117103577,
+        "normalized_position": 0.763164567661229,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 200
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0005308660700743213,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0023602033405954975,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0012553614394811173,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0011032843927692437,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0013123359580052493,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0005220296512841929,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0024645717806531116,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0007483162883512097,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00010883761427949499,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 40
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "3.3",
+    "taxonomy_secondary_name": "Ambivalence & Internal Conflict",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

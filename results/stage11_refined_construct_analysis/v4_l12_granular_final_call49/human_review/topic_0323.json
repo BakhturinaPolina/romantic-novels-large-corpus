@@ -1,0 +1,163 @@
+{
+  "topic_id": 323,
+  "label": "Polite Address Under Distress",
+  "taxonomy_main_id": "1.6",
+  "taxonomy_main_name": "Character Appearance & Self-Presentation",
+  "taxonomy_secondary_id": "3.2",
+  "taxonomy_secondary_name": "Negative Emotions & Distress",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "georgiana",
+      "lady",
+      "matlock",
+      "netherfield",
+      "helena",
+      "planned",
+      "exclaimed",
+      "redmayne",
+      "carradice"
+    ],
+    "KeyBERT": [
+      "sir",
+      "politely",
+      "speaking",
+      "praying",
+      "distress",
+      "motioned",
+      "anxious",
+      "insisted",
+      "amusement",
+      "admit"
+    ],
+    "POS": [
+      "worries",
+      "distress",
+      "anxious",
+      "stunning",
+      "realization",
+      "decent",
+      "unsure",
+      "curved",
+      "amusement",
+      "various"
+    ],
+    "MMR": [
+      "distress",
+      "politely",
+      "anxious",
+      "assure",
+      "praying",
+      "insides",
+      "softened",
+      "amusement",
+      "various",
+      "sensed"
+    ]
+  },
+  "stage08_snippets": [
+    "i am not [person], no matter what you’ve told the director.",
+    "lady [person],” he said politely, “lady [person], lady [person].”",
+    "i’ll keep praying for [person]."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.04659763313609468,
+      "max_topic_prob": 0.7862274646759033,
+      "sentence": "Elizabeth?’"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.04228303747534517,
+      "max_topic_prob": 0.7264081239700317,
+      "sentence": "Elizabeth said, as she washed her hands. ‘"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.03242110453648915,
+      "max_topic_prob": 0.720903754234314,
+      "sentence": "Right behind them in walked Elizabeth, and I understood what had caused their reaction."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.04869329388560158,
+      "max_topic_prob": 0.7147629857063293,
+      "sentence": "She has to be the centre of attention, and she couldn’t stand the threat that Elizabeth posed. ‘"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.055226824457593686,
+      "max_topic_prob": 0.7043488025665283,
+      "sentence": "Apparently he remains in touch with Elizabeth."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.04314595660749507,
+      "max_topic_prob": 0.703276515007019,
+      "sentence": "Elizabeth saw it first."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.8467959419545397,
+      "max_topic_prob": 0.5742183327674866,
+      "sentence": "She had her heart set on being a viscountess and I would have made sure she did not have to wait too long to be a duchess.” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.28072428406318223,
+      "max_topic_prob": 0.5686410665512085,
+      "sentence": "Charles lusts after Lady Penelope?”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.23821754205727494,
+      "max_topic_prob": 0.5422140955924988,
+      "sentence": "She probably thinks it enhances her status—that of a future viscountess.” “"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.3094901759342494,
+      "max_topic_prob": 0.5305821895599365,
+      "sentence": "So that you may more openly pursue the fair Lady Penelope?”"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.039681520482856045,
+      "max_topic_prob": 0.5025481581687927,
+      "sentence": "She would be an excellent hostess, which was also important now that he was a viscount."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.060228586105046875,
+      "max_topic_prob": 0.4990153908729553,
+      "sentence": "Penelope suddenly wondered if the madam was really married, and if so, where was her husband?"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

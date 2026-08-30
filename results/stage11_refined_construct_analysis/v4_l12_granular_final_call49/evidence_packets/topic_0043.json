@@ -1,0 +1,1165 @@
+{
+  "topic_id": 43,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "mad",
+        "angry",
+        "pissed",
+        "upset",
+        "anger",
+        "offend",
+        "temper",
+        "piss",
+        "emotions",
+        "emotion"
+      ],
+      "KeyBERT": [
+        "grumbled",
+        "upset",
+        "insulted",
+        "embarrassing",
+        "distress",
+        "emotional",
+        "arguing",
+        "fired",
+        "emotions",
+        "attacked"
+      ],
+      "POS": [
+        "upset",
+        "embarrassing",
+        "behalf",
+        "sadness",
+        "emotional",
+        "distress",
+        "hundreds",
+        "percent",
+        "sorts",
+        "fitting"
+      ],
+      "MMR": [
+        "insulted",
+        "upset",
+        "wasting",
+        "emotional",
+        "thoughtfully",
+        "distress",
+        "laced",
+        "terribly",
+        "spilling",
+        "grumbled"
+      ]
+    },
+    "stage08_snippets": [
+      "this isn’t the first time i’ve pissed him off.”",
+      "we’ve irritated you, have we?” “",
+      "i’ve been pissed at him ever since. “"
+    ],
+    "label_public": "Pissed Off and Grumbling"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m not mad.",
+        "max_topic_prob": 0.6472854614257812,
+        "normalized_position": 0.9636566332218506,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She doesn’t look mad so much as really disappointed. “",
+        "max_topic_prob": 0.6225128173828125,
+        "normalized_position": 0.1503901895206243,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 339
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He has a temper.” “",
+        "max_topic_prob": 0.6202247142791748,
+        "normalized_position": 0.5682274247491639,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m not angry at Louis anymore.",
+        "max_topic_prob": 0.6047073602676392,
+        "normalized_position": 0.9637681159420289,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Now I know where his rage comes from.”",
+        "max_topic_prob": 0.6038211584091187,
+        "normalized_position": 0.8536231884057971,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He’s a little moody.” “",
+        "max_topic_prob": 0.5980820059776306,
+        "normalized_position": 0.5668896321070234,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I don’t care how angry he gets.",
+        "max_topic_prob": 0.7505629658699036,
+        "normalized_position": 0.8514946962391514,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 2122
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Don’t get upset.”",
+        "max_topic_prob": 0.643665611743927,
+        "normalized_position": 0.2888138862102218,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 2982
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "He sounds really angry.",
+        "max_topic_prob": 0.6198668479919434,
+        "normalized_position": 0.7711668273866924,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1289
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She’s really angry.",
+        "max_topic_prob": 0.6097988486289978,
+        "normalized_position": 0.38486017357762775,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 893
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Tarquin is also pissed, but not as much as me.",
+        "max_topic_prob": 0.583601713180542,
+        "normalized_position": 0.6142719382835101,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 3272
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I won’t go mad, I promise myself.",
+        "max_topic_prob": 0.5831627249717712,
+        "normalized_position": 0.18514946962391515,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 1907
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "She felt as frustrated and angry as he looked.",
+        "max_topic_prob": 0.6292528510093689,
+        "normalized_position": 0.73359375,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "She was pissed now.",
+        "max_topic_prob": 0.6056634187698364,
+        "normalized_position": 0.461328125,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Don’t blame you for being pissed but I need to get to work.”",
+        "max_topic_prob": 0.5482176542282104,
+        "normalized_position": 0.10611979166666667,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "It’s almost like he’s being defiant.” “",
+        "max_topic_prob": 0.5197970271110535,
+        "normalized_position": 0.44361979166666665,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "136 Desert of the Damned Anger flashed across his face.",
+        "max_topic_prob": 0.507421612739563,
+        "normalized_position": 0.8079427083333334,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Probably in a tolerable mood now.",
+        "max_topic_prob": 0.5022628903388977,
+        "normalized_position": 0.389453125,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Oh, he’s pissed all right. “",
+        "max_topic_prob": 0.6870995759963989,
+        "normalized_position": 0.02650602409638554,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Don’t think I’m not pissed at you as well.”",
+        "max_topic_prob": 0.6710543632507324,
+        "normalized_position": 0.3244406196213425,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He glared at me like he wanted to rip my head off, but he wasn’t mad at you, sweetheart.",
+        "max_topic_prob": 0.6682688593864441,
+        "normalized_position": 0.5523235800344234,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’ve been pissed at you for a long time,” she said in a soft voice, lifting her fingertips to the fever-hot curve of his cheek, “but I’m… Well, I’m not so angry now.",
+        "max_topic_prob": 0.6566923260688782,
+        "normalized_position": 0.7041308089500861,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "You were mad,” he pointed out, his tone light and conversational. “",
+        "max_topic_prob": 0.6522470712661743,
+        "normalized_position": 0.3053356282271945,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "If he shifts out of anger, he’s liable to kill you!” “",
+        "max_topic_prob": 0.6190314292907715,
+        "normalized_position": 0.7593803786574871,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He’s angry at me, isn’t he?” “",
+        "max_topic_prob": 0.7511319518089294,
+        "normalized_position": 0.09427552233735349,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He’s angry for you, Leah.",
+        "max_topic_prob": 0.6385194063186646,
+        "normalized_position": 0.09444538814336674,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I was shocked, angry.",
+        "max_topic_prob": 0.6103772521018982,
+        "normalized_position": 0.6631561066757262,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He didn’t take kindly to Peeping Toms, and he was madder than old hell because he’d become one tonight.",
+        "max_topic_prob": 0.42325901985168457,
+        "normalized_position": 0.18957023951078647,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He wasn’t argumentative or troublesome, like some reporters were when they got into such moods.",
+        "max_topic_prob": 0.4885643720626831,
+        "normalized_position": 0.2902139937484972,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "When Edward brought a replacement to the table, it too, was sent away with increasing animosity and anger.",
+        "max_topic_prob": 0.46172454953193665,
+        "normalized_position": 0.19812454917047367,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "It’s no wonder you’ve been so fucking cranky lately.",
+        "max_topic_prob": 0.44987040758132935,
+        "normalized_position": 0.03101707141139697,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I shouldn’t have baited him quite so much.",
+        "max_topic_prob": 0.4312249422073364,
+        "normalized_position": 0.8550132243327723,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Some people will react badly.",
+        "max_topic_prob": 0.42501676082611084,
+        "normalized_position": 0.03342149555181534,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "he said, his tone turning angry.",
+        "max_topic_prob": 0.6931538581848145,
+        "normalized_position": 0.7364766081871345,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His anger made my stomach drop. “",
+        "max_topic_prob": 0.6833919286727905,
+        "normalized_position": 0.4762426900584795,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m not angry at you.",
+        "max_topic_prob": 0.6677398681640625,
+        "normalized_position": 0.7637061403508771,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Have you gone mad?”",
+        "max_topic_prob": 0.6612355709075928,
+        "normalized_position": 0.7172880116959064,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry if you were embarrassed by my temper, Sir.”",
+        "max_topic_prob": 0.65447998046875,
+        "normalized_position": 0.5484283625730995,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His anger hurt me like a whip strike. “",
+        "max_topic_prob": 0.6485304832458496,
+        "normalized_position": 0.4778874269005848,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He was supposed to be mad at the guy. “",
+        "max_topic_prob": 0.7304469347000122,
+        "normalized_position": 0.9432695535414569,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "But I’m not mad anymore.”",
+        "max_topic_prob": 0.7152177095413208,
+        "normalized_position": 0.5750251762336355,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You were mad.",
+        "max_topic_prob": 0.6978549957275391,
+        "normalized_position": 0.5740181268882175,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "That was the only reason he was getting mad.",
+        "max_topic_prob": 0.6603421568870544,
+        "normalized_position": 0.4937898623699228,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was easier to stay mad.",
+        "max_topic_prob": 0.657916784286499,
+        "normalized_position": 0.46995636119503187,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You have every right to be mad at me.” “",
+        "max_topic_prob": 0.6269140839576721,
+        "normalized_position": 0.4535078885532058,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You aren’t angry?” “",
+        "max_topic_prob": 0.7804893255233765,
+        "normalized_position": 0.9217166699781443,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You know he intended to make you mad.” “",
+        "max_topic_prob": 0.7401623725891113,
+        "normalized_position": 0.6181204053248559,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 414
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You’re not mad?”",
+        "max_topic_prob": 0.7389203906059265,
+        "normalized_position": 0.9244983111464335,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He got upset.",
+        "max_topic_prob": 0.724474310874939,
+        "normalized_position": 0.34611563679713886,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I don’t like getting mad.",
+        "max_topic_prob": 0.6874640583992004,
+        "normalized_position": 0.6544804291674945,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’d be angry with me if I were you.”",
+        "max_topic_prob": 0.6810252666473389,
+        "normalized_position": 0.22948539638386647,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He was furious.",
+        "max_topic_prob": 0.6991870999336243,
+        "normalized_position": 0.836528221512247,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Mad at me?”",
+        "max_topic_prob": 0.6797769069671631,
+        "normalized_position": 0.7855431309904153,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 350
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I’m mad at you.” “",
+        "max_topic_prob": 0.6682458519935608,
+        "normalized_position": 0.7854100106496272,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Pissed, too.",
+        "max_topic_prob": 0.6232655048370361,
+        "normalized_position": 0.571751863684771,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Someone they pissed off?",
+        "max_topic_prob": 0.5762145519256592,
+        "normalized_position": 0.5170394036208733,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "You punch me in my bad leg, take me out, knock me on my ass, and you’re mad at me?”",
+        "max_topic_prob": 0.5640031695365906,
+        "normalized_position": 0.7859424920127795,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "I didn’t mean to upset you.” “",
+        "max_topic_prob": 0.7009596228599548,
+        "normalized_position": 0.3543603133159269,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 396
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "I didn’t mean to upset you.”",
+        "max_topic_prob": 0.6645889282226562,
+        "normalized_position": 0.8981723237597912,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 547
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "I didn’t mean to anger you.",
+        "max_topic_prob": 0.6356254816055298,
+        "normalized_position": 0.20741514360313315,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Anger bit at the back of Cameron’s neck. “",
+        "max_topic_prob": 0.5981612205505371,
+        "normalized_position": 0.9698172323759792,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "He’s been so unhappy.",
+        "max_topic_prob": 0.5303593277931213,
+        "normalized_position": 0.4616187989556136,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "He wasn’t a madman.",
+        "max_topic_prob": 0.5024737119674683,
+        "normalized_position": 0.9708616187989556,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Since when have you known me to get angry over anything?”",
+        "max_topic_prob": 0.6255191564559937,
+        "normalized_position": 0.06400231682594845,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "A little road rage?”",
+        "max_topic_prob": 0.4740542769432068,
+        "normalized_position": 0.8233420214306401,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He was angry with me.",
+        "max_topic_prob": 0.7622170448303223,
+        "normalized_position": 0.9886969672848842,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 504
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He’s upset with me too,” I said. “",
+        "max_topic_prob": 0.7266441583633423,
+        "normalized_position": 0.9598025949215951,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He was furious. “",
+        "max_topic_prob": 0.708682656288147,
+        "normalized_position": 0.4222717503780944,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Anger permeated his words. “",
+        "max_topic_prob": 0.6975314617156982,
+        "normalized_position": 0.3441057072355329,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His condescension pissed me off. “",
+        "max_topic_prob": 0.6956121921539307,
+        "normalized_position": 0.41128711295072834,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Anger burst on his face. “",
+        "max_topic_prob": 0.6923449039459229,
+        "normalized_position": 0.7231552973015999,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He’d been too pissed off? “",
+        "max_topic_prob": 0.6917881369590759,
+        "normalized_position": 0.6582318025616994,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Anger bubbled up so easily within him, and there seemed to be only one way to dissipate it.",
+        "max_topic_prob": 0.643427848815918,
+        "normalized_position": 0.5959075288972197,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Yeah, and he was pissed.",
+        "max_topic_prob": 0.6256486177444458,
+        "normalized_position": 0.41815057794439237,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You’re not angry,” Arkley said as Calder stripped. “",
+        "max_topic_prob": 0.6196537017822266,
+        "normalized_position": 0.4250234301780694,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "When we arrived, X was leaving and anger rolled off him like it does you, usually.",
+        "max_topic_prob": 0.6043155789375305,
+        "normalized_position": 0.4208059981255858,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 401
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I’m gonna get angry if you keep asking me questions.”",
+        "max_topic_prob": 0.5977619886398315,
+        "normalized_position": 0.4267416432364886,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Maybe you’re not so angry with me after all?”",
+        "max_topic_prob": 0.7326520681381226,
+        "normalized_position": 0.9045051983057374,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 365
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Yes,” he said, doing his best to keep his voice, if not stern, at least even, “I am still angry with you . . .",
+        "max_topic_prob": 0.6392499208450317,
+        "normalized_position": 0.9048902579899885,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I think I’m going quite mad.” “",
+        "max_topic_prob": 0.6369001865386963,
+        "normalized_position": 0.5802849441663458,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I’m so relieved you didn’t take offense.” “",
+        "max_topic_prob": 0.6089354157447815,
+        "normalized_position": 0.06045437042741625,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "That’s why the past few months had proved so upsetting.",
+        "max_topic_prob": 0.5301109552383423,
+        "normalized_position": 0.23758182518290336,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "He gets delightfully frustrated, as you can see.",
+        "max_topic_prob": 0.4842914342880249,
+        "normalized_position": 0.1391990758567578,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He’d been furious at first, but had let his anger go.",
+        "max_topic_prob": 0.7157306671142578,
+        "normalized_position": 0.3330267997898056,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Some days I can’t blame him for being angry.",
+        "max_topic_prob": 0.7074551582336426,
+        "normalized_position": 0.34498160798738836,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Listen, I know you’re upset,” he said. “",
+        "max_topic_prob": 0.6960964202880859,
+        "normalized_position": 0.645691014188124,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Because you got angry with him, too, for losses that weren’t his fault.”",
+        "max_topic_prob": 0.6717880964279175,
+        "normalized_position": 0.9416710457172885,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You’ve been mad at me, too.",
+        "max_topic_prob": 0.662277102470398,
+        "normalized_position": 0.7073042564372044,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Then why is he so angry?",
+        "max_topic_prob": 0.6610992550849915,
+        "normalized_position": 0.3326326852338413,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 298
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.003777527728660987,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.005985634477254589,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0038082049506664357,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.003970880211780278,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.003814224814897913,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.004077152265955779,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.00423572744014733,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0063951531470885226,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.000839542449365096,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0014745308310991957,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.000584966364434045,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0006838775859121217,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0012100677637947724,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0014652730292077757,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.001554001554001554,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0015700641109511972,
+        "n_sentences": 12
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 89
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

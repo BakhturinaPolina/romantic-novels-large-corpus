@@ -1,0 +1,157 @@
+{
+  "topic_id": 190,
+  "label": "Offering to Get Someone Cleaned Up",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": "8.3b",
+  "taxonomy_secondary_name": "Everyday Props & Communication Media",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "clean",
+      "cleaning",
+      "cleaned",
+      "mess",
+      "up",
+      "cleaners",
+      "messes",
+      "freshen",
+      "ll",
+      "cleaner"
+    ],
+    "KeyBERT": [
+      "cleaned",
+      "wipe",
+      "sweeping",
+      "dump",
+      "ok"
+    ],
+    "POS": [
+      "sweeping",
+      "dump",
+      "session",
+      "parties",
+      "suitcase",
+      "ok",
+      "places",
+      "entire"
+    ],
+    "MMR": [
+      "cleaned",
+      "sweeping",
+      "dump",
+      "provide",
+      "parties",
+      "suitcase",
+      "paying",
+      "including",
+      "assured",
+      "planned"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll get cleaned up here as soon as i can.",
+    "i’ll pay to have it cleaned.” “",
+    "i'll get her cleaned up,\" said a handsome groom, taking her arm. \""
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6080162443718549,
+      "max_topic_prob": 0.6168846487998962,
+      "sentence": "Just sit there for a minute, Solange, while I clean you up."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.2094994261499073,
+      "max_topic_prob": 0.6098673939704895,
+      "sentence": "She couldn’t help with the cleanup."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.43824490156263796,
+      "max_topic_prob": 0.5534718632698059,
+      "sentence": "I will clean up the battlefield while you drink plenty of fluids."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.43356581619140105,
+      "max_topic_prob": 0.4906028211116791,
+      "sentence": "I know you would prefer to burn it yourselves out of respect, but my way will be faster, cleaner and will ensure no parasites escape."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.25417144875077247,
+      "max_topic_prob": 0.41146981716156006,
+      "sentence": "He was grateful for the rich dirt floor."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.42871016156087227,
+      "max_topic_prob": 0.406330943107605,
+      "sentence": "It would be best to incinerate it."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.3684589880351737,
+      "max_topic_prob": 0.5410060882568359,
+      "sentence": "May I know why you gave Mr. Thesiger the brush off just now?”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.5861323338619,
+      "max_topic_prob": 0.45300328731536865,
+      "sentence": "Don’t you see that if you go ahead with this annulment, if you air the Roxtons’ dirty laundry in public, I will be utterly, utterly ruined."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.16678679544471672,
+      "max_topic_prob": 0.41069644689559937,
+      "sentence": "A lackey came out from behind the butler with pan and brush and quickly set to sweeping up the shards of broken glass from Deb’s smashed wine glass."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9765494137353434,
+      "max_topic_prob": 0.5678440928459167,
+      "sentence": "Do try your very best not to make a mess of things.\""
+    },
+    {
+      "sid": "BOOK_004_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8028495102404274,
+      "max_topic_prob": 0.5928733348846436,
+      "sentence": "Wipe more on."
+    },
+    {
+      "sid": "BOOK_004_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8026714158504007,
+      "max_topic_prob": 0.5801428556442261,
+      "sentence": "Wipe on, wipe off."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,1099 @@
+{
+  "topic_id": 125,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "furniture",
+        "chairs",
+        "walls",
+        "tables",
+        "room",
+        "floors",
+        "wood",
+        "table",
+        "large",
+        "wall"
+      ],
+      "KeyBERT": [
+        "tables",
+        "drawer",
+        "bedside",
+        "pieces",
+        "arranged",
+        "stool",
+        "framed",
+        "items",
+        "surroundings",
+        "carved"
+      ],
+      "POS": [
+        "tables",
+        "matching",
+        "pattern",
+        "bedside",
+        "polished",
+        "separate",
+        "enormous",
+        "television",
+        "stunning",
+        "larger"
+      ],
+      "MMR": [
+        "tables",
+        "matching",
+        "bedside",
+        "draped",
+        "contained",
+        "television",
+        "stunning",
+        "visits",
+        "contrast",
+        "arranged"
+      ]
+    },
+    "stage08_snippets": [
+      "a large bed with end tables was on the wall to the right.",
+      "polished oak tables, whose tops featured the tree’s rings and matching chairs provided ample room for comfortable dining.",
+      "white carpet covered the floors, and red accent pieces lined white bookshelves and end tables. “"
+    ],
+    "label_public": "Furnished Room Described in Detail"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "And while he had taken refuge in the male safe zone of earth tones, dark tan leather sofa and two matching chairs, a solid coffee table with storage and a geometric patterned rug on the wood floor, there were some surprises there, too.",
+        "max_topic_prob": 0.6292697191238403,
+        "normalized_position": 0.41706074936340487,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It wasn’t the spaciousness of the great room design.",
+        "max_topic_prob": 0.6132460236549377,
+        "normalized_position": 0.41560567479083305,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The guest room was more than comfortable.",
+        "max_topic_prob": 0.592836856842041,
+        "normalized_position": 0.6667879228810476,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The furniture gleamed like polished metal, even in the dim light of the closed-up house. “",
+        "max_topic_prob": 0.5725932717323303,
+        "normalized_position": 0.7804656238632229,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The little house was clearly the office, and was surrounded with plants, trees and flowers that looked as happy and healthy as the dogs.",
+        "max_topic_prob": 0.5438528060913086,
+        "normalized_position": 0.14550745725718442,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Judging from the rooms we could see, the only windowless room is that one bathroom we could see into through the kitchen.",
+        "max_topic_prob": 0.5327519178390503,
+        "normalized_position": 0.7810112768279375,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Comfortable furniture was interspersed with potted plants.",
+        "max_topic_prob": 0.6974421739578247,
+        "normalized_position": 0.877233070211882,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The floor was clear, and the room tidy.",
+        "max_topic_prob": 0.6665898561477661,
+        "normalized_position": 0.07789779808890736,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The living and the dining rooms were all in one great room that was filled with fashionable furniture suitable for a beachside residence.",
+        "max_topic_prob": 0.6430389881134033,
+        "normalized_position": 0.5409223099293726,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The room was complicated.",
+        "max_topic_prob": 0.6336228251457214,
+        "normalized_position": 0.34680099709181555,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "It knocked the sofa and chairs around the room and the artwork hanging on the walls askew.",
+        "max_topic_prob": 0.6034931540489197,
+        "normalized_position": 0.5198379725799751,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 462
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The interior of the pub was the same throughout, bare brick walls and lots of wood—wooden bars, floors, stools, tables and chairs.",
+        "max_topic_prob": 0.5996415615081787,
+        "normalized_position": 0.656418778562526,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She turns around and takes it all in: the large brown leather couch in sections with large ottomans and the glass coffee table with children’s books covering it.",
+        "max_topic_prob": 0.6306196451187134,
+        "normalized_position": 0.28697236562405104,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 918
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "There are various dollhouses in different stages of remodeling with furniture inside and outside on the floor.",
+        "max_topic_prob": 0.5846902132034302,
+        "normalized_position": 0.3240206498633465,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 1040
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "On the blond hardwood floor are various children’s toys: American Girl dolls, Build-a-Bears, half-finished puzzles, LEGO castles, and space stations, and boats. “",
+        "max_topic_prob": 0.48346877098083496,
+        "normalized_position": 0.2872760400850288,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 919
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The doors rise like butterfly wings in a diagonal arc up to the ceiling, revealing all black leather interior. “",
+        "max_topic_prob": 0.4743470847606659,
+        "normalized_position": 0.3716975402368661,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1197
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A king-size four-post bed stands with white curtains in the center of the room.",
+        "max_topic_prob": 0.47224533557891846,
+        "normalized_position": 0.877315517764956,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 2862
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I know it doesn’t fit in with the French decor, but I really wanted a touch of modernism in our home.",
+        "max_topic_prob": 0.46631133556365967,
+        "normalized_position": 0.30610385666565443,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 981
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "There was still a lot that needed doing to the place but I had the furniture basics with the sofa, the TV, the bed Dave had let me take with me, the table and chairs that someone had left behind, and a battered dresser that Donny had for some reason stashed in the storeroom at the gym.",
+        "max_topic_prob": 0.5918816328048706,
+        "normalized_position": 0.7176100628930817,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "It took me a moment to realize Dave had rearranged the furniture to make space for the chair to move freely through the living room to the spare bedroom.",
+        "max_topic_prob": 0.5670789480209351,
+        "normalized_position": 0.1968553459119497,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "The room was in neat order, the bed made.",
+        "max_topic_prob": 0.6763719320297241,
+        "normalized_position": 0.89192434704293,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 998
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Though the furniture was all sleek, modern and expensive , none of it was his.",
+        "max_topic_prob": 0.5619494915008545,
+        "normalized_position": 0.06799759831882318,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 453
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "The light of the moon and the television cast an eerie glow about the living room that did little to ease the tension , and chill , that had taken up residence inside him.",
+        "max_topic_prob": 0.49941161274909973,
+        "normalized_position": 0.6224857400180126,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 792
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "T he worn floorboards , and sagging wood , were covered with a layer of dirt .",
+        "max_topic_prob": 0.48429572582244873,
+        "normalized_position": 0.006154308015610927,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "The room was large with a massive California King jutting into the middle of it.",
+        "max_topic_prob": 0.4654703140258789,
+        "normalized_position": 0.06889822876013209,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 459
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It was large with a big Jacuzzi tub, his and hers sinks, and a separate shower stall.",
+        "max_topic_prob": 0.46267586946487427,
+        "normalized_position": 0.06934854398078655,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 462
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The walls were a creamy white and his furniture black leather.",
+        "max_topic_prob": 0.622261643409729,
+        "normalized_position": 0.5804838709677419,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The room was masculine, uncluttered, and suited him fine. “",
+        "max_topic_prob": 0.5078707337379456,
+        "normalized_position": 0.5806451612903226,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The booth was a good size, allowing them elbowroom, while the high back offered a touch of privacy.",
+        "max_topic_prob": 0.4788753092288971,
+        "normalized_position": 0.19983870967741935,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Zach had a quick impression of clean curves and modern stylish furniture—sophisticated class. “",
+        "max_topic_prob": 0.4694446921348572,
+        "normalized_position": 0.115,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Lucky for us, they decided to set alight the panels of cotton wool we were using for insulation.",
+        "max_topic_prob": 0.4243239760398865,
+        "normalized_position": 0.6611290322580645,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "B right sunlight slashed through the wide windows of the sixth floor law office, and cut across the conference table around which Maddie sat on a high back soft leather chair between Lisa and Mark, another producer from Return To New .",
+        "max_topic_prob": 0.4114737808704376,
+        "normalized_position": 0.1414516129032258,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "With only a few tables, it boasted an intimate atmosphere.",
+        "max_topic_prob": 0.576312780380249,
+        "normalized_position": 0.8898770599006016,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Frederica lay in the only bed, and as her eyes scanned the rest of the room, she noticed a colorful rug on the floor and walls that were bare, with the exception of a couple of windows.",
+        "max_topic_prob": 0.5206851959228516,
+        "normalized_position": 0.05493068270991368,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Underneath it was a small, hollowed out grotto, not quite large enough to be considered a cave, but a spot that could serve as a potential bunker in case they needed to find shelter off the beach.",
+        "max_topic_prob": 0.3564302921295166,
+        "normalized_position": 0.5576772168454094,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It gave off a modern vibe, with blacks and whites mixing together, bright blues highlighting the furniture through small pillows and one large, abstract painting hanging above the couch.",
+        "max_topic_prob": 0.59161776304245,
+        "normalized_position": 0.8368856024358416,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Inside was a small room, big enough to fit a bunk bed and a cozy love seat next to a window that faced the parking lot.",
+        "max_topic_prob": 0.5801485180854797,
+        "normalized_position": 0.7538060026098303,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The room was a single, only having one bed in the center faced straight at an old television box hanging from the ceiling.",
+        "max_topic_prob": 0.5654615163803101,
+        "normalized_position": 0.6702914310569813,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The chair, the shreds of paper, the towel rack on the floor, the his-and-her key holder thrown underneath the couch.",
+        "max_topic_prob": 0.5624275207519531,
+        "normalized_position": 0.8225315354501957,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her room was a bit of a mess but I was able to salvage a light blue top and jeans from underneath a pile of sweaters that had fallen on top of my clothes.",
+        "max_topic_prob": 0.5601089000701904,
+        "normalized_position": 0.6642018268812527,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "They sit in a dark room all day and look at cool pictures,” Ryan said, leaning back on a bland wooden dresser that rested next to my small bed.",
+        "max_topic_prob": 0.5254455804824829,
+        "normalized_position": 0.19921705089169203,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "This room was furnished with couches and desks.",
+        "max_topic_prob": 0.8038851022720337,
+        "normalized_position": 0.8599875544492844,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "There was another bedroom on the same floor as well as multiple closets and another bathroom.",
+        "max_topic_prob": 0.6513227224349976,
+        "normalized_position": 0.5702551337896702,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "The room had piles as if different items belonged to different people, each claiming a different corner in the storage room.",
+        "max_topic_prob": 0.6251121759414673,
+        "normalized_position": 0.17423771001866833,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "There were a few odder-looking chairs sitting in the corner as well.",
+        "max_topic_prob": 0.6000639200210571,
+        "normalized_position": 0.12806471686372123,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "A comfortable working room.",
+        "max_topic_prob": 0.5906350612640381,
+        "normalized_position": 0.8601120099564405,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Chapter 24 S ari stepped out of the tiny quarters into a large circular room where all the walls were made from wood.",
+        "max_topic_prob": 0.5771360397338867,
+        "normalized_position": 0.8482887367766023,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The dated furniture, the wood paneling, the dampness . . .",
+        "max_topic_prob": 0.6927728652954102,
+        "normalized_position": 0.8378711780773637,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Rich walnut paneling and thick carpet along with expensive-looking oil paintings.",
+        "max_topic_prob": 0.5934782028198242,
+        "normalized_position": 0.5205744999559433,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The bed and lamp.",
+        "max_topic_prob": 0.5881351232528687,
+        "normalized_position": 0.8334655035685964,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 347
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "While the boardroom they’d been in earlier spoke quality, this room went a step further.",
+        "max_topic_prob": 0.5351512432098389,
+        "normalized_position": 0.520486386465768,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "It was impossible to tell what kind of room they were in.",
+        "max_topic_prob": 0.5304359197616577,
+        "normalized_position": 0.8243898140805357,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Built-in dresser.",
+        "max_topic_prob": 0.5201383829116821,
+        "normalized_position": 0.8322319147061416,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Upon my arrival the room had contained three pieces of furniture: a large four-poster bed: heavy, dark timbered, with netting on all sides; a dresser; and a small side vanity.",
+        "max_topic_prob": 0.7584450244903564,
+        "normalized_position": 0.018085698386199223,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "There were some other large, heavy furniture pieces scattered about, expensive looking but practical also.",
+        "max_topic_prob": 0.7257351279258728,
+        "normalized_position": 0.7072899276572064,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "When I stepped inside, I found it was light and airy and about twenty feet wide, a big room, outfitted with a round meeting table, a few couches, a kitchenette, and a wall filled with books – spell books by the look of their spines.",
+        "max_topic_prob": 0.6514778137207031,
+        "normalized_position": 0.6171396772398442,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It was all marbled floors, fancy artwork, and shelves filled with books, like a big recreation room slash library but completely decked out for the rich and famous.",
+        "max_topic_prob": 0.6494991779327393,
+        "normalized_position": 0.0447968836950473,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The bedroom’s décor was cozy and masculine.",
+        "max_topic_prob": 0.6158356070518494,
+        "normalized_position": 0.7070116861435726,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Noting that the large wooden table was ornately set. “",
+        "max_topic_prob": 0.6110369563102722,
+        "normalized_position": 0.08458542014468559,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "From the duvet to the window seat covering, the room spoke of elegance and class, and yet also of comfort.",
+        "max_topic_prob": 0.5955786108970642,
+        "normalized_position": 0.10466076696165191,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "He had always loved the way this particular suite of rooms had been decorated.",
+        "max_topic_prob": 0.5789111256599426,
+        "normalized_position": 0.10442477876106195,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I wish I could take credit for the fine furnishings you see, but much of what you see was here before I became mistress of the home.",
+        "max_topic_prob": 0.5360561609268188,
+        "normalized_position": 0.6836578171091445,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "As he stood in the room of Lady Exeter, he stared agape at the mess that had been made of the dressing room.",
+        "max_topic_prob": 0.4892406463623047,
+        "normalized_position": 0.036106194690265485,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "The best way to make up a bed?",
+        "max_topic_prob": 0.4676894247531891,
+        "normalized_position": 0.4071976401179941,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "The room went deathly still.",
+        "max_topic_prob": 0.44752758741378784,
+        "normalized_position": 0.058289085545722714,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Nursery furniture?”",
+        "max_topic_prob": 0.612829327583313,
+        "normalized_position": 0.876625789669268,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The bed, the wall, the sofa… Oh yeah, all of it sounds good.",
+        "max_topic_prob": 0.5861049294471741,
+        "normalized_position": 0.25204384986993683,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Whereas, my room is filled, almost floor to ceiling, with all of that and more.",
+        "max_topic_prob": 0.5282506346702576,
+        "normalized_position": 0.9465811965811965,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "They sat in a corner table, allowing us full view.",
+        "max_topic_prob": 0.5063132047653198,
+        "normalized_position": 0.03121516164994426,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "On paper, it looked like a nightmare, but we’d done this before, so Evie knew we’d have the floor covered at all times with adequate staff.",
+        "max_topic_prob": 0.489377498626709,
+        "normalized_position": 0.5624303232998885,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The warm colors of the walls and bedding reflect what she calls ‘my style’.",
+        "max_topic_prob": 0.4879298508167267,
+        "normalized_position": 0.07840951319212189,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Thick books with fantastical covers filled a floor-to-ceiling bookshelf; posters of Eowen, Frodo, and Bilbo hung on what little wall space remained next to the shelf; and a log-framed couch with red cushions—reminiscent of hobbit home decor—divided the living room from the dining area.",
+        "max_topic_prob": 0.6923623085021973,
+        "normalized_position": 0.4717906786590352,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "The floor and most of the walls were wood paneled.",
+        "max_topic_prob": 0.6922644376754761,
+        "normalized_position": 0.306486781139275,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Several chairs, a brown couch, and a vase of orange flowers in the middle of a heavy mahogany coffee table adorned the central living space.",
+        "max_topic_prob": 0.6431070566177368,
+        "normalized_position": 0.3063505042245844,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "She glanced between the living room and bedroom: mottled cream carpet and various shades of gray and teal fabrics.",
+        "max_topic_prob": 0.6377048492431641,
+        "normalized_position": 0.6632597437994003,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "A wide countertop divided the small living room, which contained a sofa and television, from a full, though compact, kitchen.",
+        "max_topic_prob": 0.6154467463493347,
+        "normalized_position": 0.6627146361406377,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Yeah, they’d have to change up the restaurant a little and get rid of the furniture, but—he looked up, down, and from one end of the room to the other— incredible !",
+        "max_topic_prob": 0.6090677976608276,
+        "normalized_position": 0.3011719814663396,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "It wasn’t anything fancy, just a double bed covered by a bright-checkered quilt my mother had made by hand, a chest of drawers, and a yellow fabric papasan chair in the corner . “",
+        "max_topic_prob": 0.6447479724884033,
+        "normalized_position": 0.3276797829036635,
+        "tertile": "begin",
+        "chapter_index": 23,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Besides the man’s desk and chair and the chair I was currently in, no other furnishings graced the room.",
+        "max_topic_prob": 0.6145135164260864,
+        "normalized_position": 0.4966078697421981,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "A king-size bed dominated the room, although it was housed behind two white floor-to-ceiling colonnades.",
+        "max_topic_prob": 0.5771721601486206,
+        "normalized_position": 0.6421302578018996,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The white and lavender duvet cover made the room appear bigger.",
+        "max_topic_prob": 0.5666896104812622,
+        "normalized_position": 0.6424694708276798,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The lines of the room were clean and modern .",
+        "max_topic_prob": 0.5666786432266235,
+        "normalized_position": 0.6438263229308006,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Silver colored nightstands stood on each side of the headboard with glass stemmed lamps resting on top.",
+        "max_topic_prob": 0.5338813662528992,
+        "normalized_position": 0.6434871099050203,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 5
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.004496276521006042,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0040885860306643955,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.0062650099195990395,
+        "n_sentences": 60
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.007007007007007007,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.004536706076436623,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005525879535826119,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.005699254712845244,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005808621216753286,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0010704091341579448,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0013277861379127202,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0008408857329720639,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0013548095739876562,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.000974025974025974,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0007940709370037057,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0012674271229404308,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 83
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.5",
+    "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+    "taxonomy_secondary_id": "8.1",
+    "taxonomy_secondary_name": "Domestic Spaces & Routines",
+    "taxonomy_confidence": 0.9,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

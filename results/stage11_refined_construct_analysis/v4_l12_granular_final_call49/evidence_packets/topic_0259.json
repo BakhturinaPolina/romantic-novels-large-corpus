@@ -1,0 +1,862 @@
+{
+  "topic_id": 259,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tree",
+        "trees",
+        "woods",
+        "forest",
+        "branches",
+        "pine",
+        "pines",
+        "oaks",
+        "birch",
+        "branch"
+      ],
+      "KeyBERT": [
+        "brings",
+        "begged",
+        "appears",
+        "nearby",
+        "surrounded",
+        "folks",
+        "dried"
+      ],
+      "POS": [
+        "snaps",
+        "concrete",
+        "crowded",
+        "folks",
+        "climbing",
+        "bigger",
+        "entire"
+      ],
+      "MMR": [
+        "snaps",
+        "concrete",
+        "scattered",
+        "crowded",
+        "crouched",
+        "appears",
+        "brings",
+        "circled",
+        "climbing",
+        "surrounding"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve lived in a tree for a week, which, let me tell you, is pretty uncomfortable.",
+      "i’ve got a special surprise waiting for you in the woods.”",
+      "miss [person], it appears you’ve chained yourself to the door of white pines."
+    ],
+    "label_public": "Chained to The Forest Gate"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Sully’s spending the night at his tree house.",
+        "max_topic_prob": 0.48670172691345215,
+        "normalized_position": 0.5773886943471735,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Some were taken outside. “",
+        "max_topic_prob": 0.4726502299308777,
+        "normalized_position": 0.4852426213106553,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "This was the Bat Cave, for heaven’s sakes.",
+        "max_topic_prob": 0.4004543423652649,
+        "normalized_position": 0.2988494247123562,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "The more wood he lost, the more the integrity of the site was compromised.",
+        "max_topic_prob": 0.3948701024055481,
+        "normalized_position": 0.9885942971485743,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "The SEED is one of the most important items that disappeared.”",
+        "max_topic_prob": 0.38281387090682983,
+        "normalized_position": 0.22111055527763882,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "As a result of being uncovered, much of the ancient wood had dissolved into the water.",
+        "max_topic_prob": 0.37211936712265015,
+        "normalized_position": 0.9883941970985493,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Beyond it, a long dock floated over a peaceful lake surrounded by tall redwood trees. “",
+        "max_topic_prob": 0.5044693946838379,
+        "normalized_position": 0.4649486393944855,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You’re a nature girl.",
+        "max_topic_prob": 0.43512898683547974,
+        "normalized_position": 0.5956028113173545,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 513
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "The kind that makes you want to rip each other’s clothes off and do it against a tree if you have to.",
+        "max_topic_prob": 0.4205189347267151,
+        "normalized_position": 0.030275725355919984,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Some trees?",
+        "max_topic_prob": 0.7764666676521301,
+        "normalized_position": 0.10763977806231327,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Will and I stopped near our favourite tree.",
+        "max_topic_prob": 0.6408649682998657,
+        "normalized_position": 0.8694835680751174,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Oh God, Treen.",
+        "max_topic_prob": 0.6189199686050415,
+        "normalized_position": 0.11233461374306444,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Treen?’ ‘",
+        "max_topic_prob": 0.6174062490463257,
+        "normalized_position": 0.9622705932565088,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "What do I do, Treen?’",
+        "max_topic_prob": 0.61403489112854,
+        "normalized_position": 0.9131882202304737,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I’d better go, Treen.’ ‘",
+        "max_topic_prob": 0.6046462059020996,
+        "normalized_position": 0.6925309432351686,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "We’ve all watched him pine over you for weeks.",
+        "max_topic_prob": 0.44437330961227417,
+        "normalized_position": 0.44899689177733826,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It would take a lot of fancy footwork and deep digging to prove it though.",
+        "max_topic_prob": 0.3634761571884155,
+        "normalized_position": 0.3578694546482057,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 471
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The Origin broke free of the trees, and I was only a few seconds behind him, clearing the forest, when I stopped, or tried to.",
+        "max_topic_prob": 0.6661535501480103,
+        "normalized_position": 0.8626402432630806,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The ancient tree rocked.",
+        "max_topic_prob": 0.593256413936615,
+        "normalized_position": 0.3039739960155185,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The great massive oaks and pines around us shook, branches rattled, and birds—thousands of them—took flight, their wings beating into the air as they circled high above the colony of homes, veering sharply to head in the direction of where we’d come from.",
+        "max_topic_prob": 0.5924924612045288,
+        "normalized_position": 0.8676732725175632,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I hit the edge of the forest as I heard my name yelled through my thoughts, but I didn’t stop.",
+        "max_topic_prob": 0.5908644199371338,
+        "normalized_position": 0.8607528572926497,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I chased the Origin, who stayed a yard or two ahead of me through the forest, darting around trees and large rocks.",
+        "max_topic_prob": 0.5805427432060242,
+        "normalized_position": 0.861486840725595,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "We turned, and there were more, swooping down among the trees, rushing forward, barely missing us as they swarmed the ground like an army of ants. “",
+        "max_topic_prob": 0.5470278263092041,
+        "normalized_position": 0.8688266750550487,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Do they go to this part of the forest often?",
+        "max_topic_prob": 0.6867378950119019,
+        "normalized_position": 0.45610494450050454,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "The forest floor is wild and untamed; I trip on broken branches, large rocks, and thick vines, but I catch myself before I fall.",
+        "max_topic_prob": 0.6461179852485657,
+        "normalized_position": 0.13471241170534815,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I jump over a fallen tree and make a sharp left, running blind through the forest.",
+        "max_topic_prob": 0.6018655300140381,
+        "normalized_position": 0.13773965691220988,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It’s almost pitch black out here on the island, but I can just barely make out the forest in the distance. “",
+        "max_topic_prob": 0.5864564776420593,
+        "normalized_position": 0.29717457114026236,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Heavy footsteps pound on the forest floor, following my every move.",
+        "max_topic_prob": 0.5854171514511108,
+        "normalized_position": 0.012108980827447022,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I tip my head back and scream to the canopy of trees overhead, rain pouring into my open mouth.",
+        "max_topic_prob": 0.581946611404419,
+        "normalized_position": 0.5358224016145308,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "They were in the trees!",
+        "max_topic_prob": 0.7399941086769104,
+        "normalized_position": 0.8818399212266141,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "A clump of trees nearby was where they’d make camp for the night.",
+        "max_topic_prob": 0.6916583776473999,
+        "normalized_position": 0.40329160219440147,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "When they found a cottonwood tree with a double trunk, they crept behind it. “",
+        "max_topic_prob": 0.6675344109535217,
+        "normalized_position": 0.454775636517091,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Go behind those trees and let me have some privacy.",
+        "max_topic_prob": 0.6647045612335205,
+        "normalized_position": 0.4121536081024054,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Just ahead was a break in the forest.",
+        "max_topic_prob": 0.6424001455307007,
+        "normalized_position": 0.1111267407511605,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Josie burst through the thicket of trees.",
+        "max_topic_prob": 0.6295223236083984,
+        "normalized_position": 0.42664228442818963,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Violent gusts of wind battered palm trees in the Nadels’ backyard.",
+        "max_topic_prob": 0.4765678942203522,
+        "normalized_position": 0.41119160629527857,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 374
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "In the mangroves in Placida.",
+        "max_topic_prob": 0.38827061653137207,
+        "normalized_position": 0.7317012240819385,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Off the enormous outcroppings of rock hang curtains of climbers, ivy and other plants I don’t even know.",
+        "max_topic_prob": 0.5903774499893188,
+        "normalized_position": 0.444360103233642,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The thin, spindly branches of the trees and bushes remind me of pointing fingers, accusing, aware. “",
+        "max_topic_prob": 0.5809611082077026,
+        "normalized_position": 0.13966904508881128,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "A fenced salvage yard, a few bare trees scattered around.",
+        "max_topic_prob": 0.5791017413139343,
+        "normalized_position": 0.08258691361773189,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "We park across the road under a tree.",
+        "max_topic_prob": 0.5770446062088013,
+        "normalized_position": 0.7303780173068165,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "We are deep in the vegetation now, tromping through, cutting our path.",
+        "max_topic_prob": 0.57681804895401,
+        "normalized_position": 0.9467132230150296,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Ceres asks as we go deeper, tall plants and thick bushes surrounding us on every side. \"",
+        "max_topic_prob": 0.5708600282669067,
+        "normalized_position": 0.9432214968878093,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The lake, the trees.",
+        "max_topic_prob": 0.6528635621070862,
+        "normalized_position": 0.9140382415427357,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I wanted to see how the little tree-hugger lived.",
+        "max_topic_prob": 0.6350164413452148,
+        "normalized_position": 0.9137113907501225,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Get back there and keep on those tree-huggers.”",
+        "max_topic_prob": 0.6203325986862183,
+        "normalized_position": 0.10116032031377677,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The tree-hugger?”",
+        "max_topic_prob": 0.6124616861343384,
+        "normalized_position": 0.6206896551724138,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The tree-huggers.",
+        "max_topic_prob": 0.6087362766265869,
+        "normalized_position": 0.04477855858800458,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Just the clear water, sprawling live oaks and towering cypress trees to keep her company.",
+        "max_topic_prob": 0.5808587670326233,
+        "normalized_position": 0.053603529988560224,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "There’s this tree between us.” “",
+        "max_topic_prob": 0.6738758087158203,
+        "normalized_position": 0.5064575645756457,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Without the trees, the sand is shifting.”",
+        "max_topic_prob": 0.6624573469161987,
+        "normalized_position": 0.9094915949159491,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I needed to get away from this place and back under the pines. “",
+        "max_topic_prob": 0.6449846029281616,
+        "normalized_position": 0.5260352603526035,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 454
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Narrator holds up a pine branch.)",
+        "max_topic_prob": 0.6423749327659607,
+        "normalized_position": 0.5750307503075031,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Narrator holds up a pine branch.)",
+        "max_topic_prob": 0.6423748135566711,
+        "normalized_position": 0.45387453874538747,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Miner: Damn, why does the script have pine trees in a cavern in a canyon?",
+        "max_topic_prob": 0.6404356360435486,
+        "normalized_position": 0.5751332513325134,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "They sat there for a very long time, listening to the waves lap against the shore and the nearby trees rustle as animals scurried in the woods around them.",
+        "max_topic_prob": 0.4574916958808899,
+        "normalized_position": 0.22470433639947437,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "West had wondered what was up there, and as it turned out, it was hundreds of miles of forests.",
+        "max_topic_prob": 0.5619218349456787,
+        "normalized_position": 0.5354091513195367,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He worked his way down the row, systematically digging, planting, watering, and ensuring each little tree was cared for.",
+        "max_topic_prob": 0.5606332421302795,
+        "normalized_position": 0.047655211695462316,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "The grass and clover don’t look too overgrown.",
+        "max_topic_prob": 0.5253748893737793,
+        "normalized_position": 0.3229542434023163,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "They found the men near the back of the park, erecting the structure between two copses of trees in an open grassy area. “",
+        "max_topic_prob": 0.5210033059120178,
+        "normalized_position": 0.7000189861401177,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "You didn’t want to do something related to flying rather than Christmas tree farming?",
+        "max_topic_prob": 0.5136193633079529,
+        "normalized_position": 0.4731346117334346,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "The driveway was lined with boxwoods, and a large evergreen took up most of the front yard. “",
+        "max_topic_prob": 0.5135164856910706,
+        "normalized_position": 0.14657300170875262,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 20
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0036932062183286096,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.007598784194528876,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.003074965539179302,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.00741839762611276,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.003674392312040701,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.005721914934197978,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.004727771846881196,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.012409513960703205,
+        "n_sentences": 120
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00021992522542335605,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0006049606775559589,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0002837281883955171,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0005439709882139619,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0005006257822277847,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 62
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

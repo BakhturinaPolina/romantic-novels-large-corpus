@@ -1,0 +1,86 @@
+{
+  "topic_id": 6,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "whispered",
+        "yes",
+        "said",
+        "asked",
+        "softly",
+        "thank",
+        "fine",
+        "replied",
+        "yeah",
+        "thanks"
+      ],
+      "KeyBERT": [
+        "nods",
+        "mumbled",
+        "responding",
+        "uttered",
+        "blurted",
+        "kindly",
+        "solemnly",
+        "tentatively",
+        "replies",
+        "confessed"
+      ],
+      "POS": [
+        "hesitation",
+        "enthusiasm",
+        "uttered",
+        "puzzled",
+        "suggestion",
+        "blows",
+        "scenario",
+        "unsure",
+        "hundreds",
+        "delicate"
+      ],
+      "MMR": [
+        "drawled",
+        "tentatively",
+        "hesitation",
+        "eagerly",
+        "absently",
+        "solemnly",
+        "prodded",
+        "kindly",
+        "paced",
+        "dramatically"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll make sure of it,” he whispered.",
+      "you’ll be fine,” he whispered. “",
+      "quiet, subdued, she nodded and then, “you’ll be safe.”"
+    ],
+    "label_public": "Whispered Reassurance"
+  },
+  "contextual": {
+    "sentences": [],
+    "books_sampled": [],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

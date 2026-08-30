@@ -1,0 +1,1198 @@
+{
+  "topic_id": 135,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "wait",
+        "hurry",
+        "waiting",
+        "quick",
+        "waited",
+        "can",
+        "for",
+        "ll",
+        "are",
+        "we"
+      ],
+      "KeyBERT": [
+        "anticipation",
+        "uh",
+        "um"
+      ],
+      "POS": [
+        "clinging",
+        "temperature",
+        "begging",
+        "anticipation",
+        "embarrassed",
+        "pieces"
+      ],
+      "MMR": [
+        "chased",
+        "clinging",
+        "temperature",
+        "dealing",
+        "begging",
+        "anticipation",
+        "embarrassed",
+        "planning",
+        "pieces",
+        "thinks"
+      ]
+    },
+    "stage08_snippets": [
+      "well, golly, i'll hurry as fast as i can.",
+      "i will wait for you, even if you find me stiff with rheumatics, making clothes for my grandchildren, i’ll be waiting for you.’",
+      "i’ve waited forever for you, and i’ll be damned if i’m not going to make sure you enjoy this.” “"
+    ],
+    "label_public": "Waiting As Long As It Takes"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Waiting. “",
+        "max_topic_prob": 0.7808240652084351,
+        "normalized_position": 0.09272439699485963,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 938
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Waiting.",
+        "max_topic_prob": 0.7047896385192871,
+        "normalized_position": 0.01907868722815342,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Just you wait and see.”",
+        "max_topic_prob": 0.685333251953125,
+        "normalized_position": 0.18584420719652037,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1880
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "They will be waitin’ by now, for we have been gone overlong.”",
+        "max_topic_prob": 0.6613814830780029,
+        "normalized_position": 0.6399762752075919,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1333
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Wait and see.” “",
+        "max_topic_prob": 0.6607083082199097,
+        "normalized_position": 0.990707789640174,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2400
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Luath waits but a short way back.” “",
+        "max_topic_prob": 0.5879004001617432,
+        "normalized_position": 0.43960063266113086,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2032
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "If you want to wait for a few minutes, I can pull up their itinerary.” “",
+        "max_topic_prob": 0.6463455557823181,
+        "normalized_position": 0.17726137891300173,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Just wait a minute.",
+        "max_topic_prob": 0.6293565034866333,
+        "normalized_position": 0.8532744382561935,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’ll wait while you look around your quarters.”",
+        "max_topic_prob": 0.6099758148193359,
+        "normalized_position": 0.5477242173996543,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’m in a hurry.",
+        "max_topic_prob": 0.6021548509597778,
+        "normalized_position": 0.9767620510850777,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’ll arrange it as soon as I can.” “",
+        "max_topic_prob": 0.597317099571228,
+        "normalized_position": 0.752064528519301,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 734
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "They were in a hurry.”",
+        "max_topic_prob": 0.5706693530082703,
+        "normalized_position": 0.17342039562127906,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Waiting. “",
+        "max_topic_prob": 0.7808240652084351,
+        "normalized_position": 0.9526462395543176,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Waiting for you.”",
+        "max_topic_prob": 0.7799713611602783,
+        "normalized_position": 0.48428173497811383,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Still waitin’ to see what in the hell you’ll do for me.” “",
+        "max_topic_prob": 0.6774627566337585,
+        "normalized_position": 0.10279877967900251,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I was waiting to come back to you.",
+        "max_topic_prob": 0.6139439344406128,
+        "normalized_position": 0.9982756333731264,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I was just waitin’ until I knew I could do the job well.”",
+        "max_topic_prob": 0.5935600996017456,
+        "normalized_position": 0.6812574612017509,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "And why wait so long to tell us this shit?” “",
+        "max_topic_prob": 0.5737830400466919,
+        "normalized_position": 0.9656453110492108,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Don’t wait.”",
+        "max_topic_prob": 0.7463513612747192,
+        "normalized_position": 0.5072170900692841,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "The rest could wait.",
+        "max_topic_prob": 0.6341142654418945,
+        "normalized_position": 0.5998845265588915,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Melania couldn’t wait.",
+        "max_topic_prob": 0.5068097710609436,
+        "normalized_position": 0.5842956120092379,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "How long would he make her wait?",
+        "max_topic_prob": 0.5036194920539856,
+        "normalized_position": 0.8816397228637414,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "The near future.”",
+        "max_topic_prob": 0.47062090039253235,
+        "normalized_position": 0.9890300230946882,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Delaying the inevitable would make it more gut-wrenching.",
+        "max_topic_prob": 0.4286591112613678,
+        "normalized_position": 0.9030023094688222,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "How 'bout waiting till tonight?",
+        "max_topic_prob": 0.641260027885437,
+        "normalized_position": 0.9586216636068352,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Just waitin' to be ravished.\"",
+        "max_topic_prob": 0.6280221939086914,
+        "normalized_position": 0.5699759920915125,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Wait.\"",
+        "max_topic_prob": 0.6157124042510986,
+        "normalized_position": 0.2465753424657534,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Wait!\"",
+        "max_topic_prob": 0.5852546691894531,
+        "normalized_position": 0.5709645530292332,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "We'll just have to wait him out to see what he wants.\"",
+        "max_topic_prob": 0.5683911442756653,
+        "normalized_position": 0.2553311679141364,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Fast.\"",
+        "max_topic_prob": 0.5492377877235413,
+        "normalized_position": 0.3647789860189239,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m waiting.”",
+        "max_topic_prob": 0.8109787702560425,
+        "normalized_position": 0.17906976744186046,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1771
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I can just wait here .” “",
+        "max_topic_prob": 0.7920485734939575,
+        "normalized_position": 0.5868554095045501,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 492
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I will wait .”",
+        "max_topic_prob": 0.7734084129333496,
+        "normalized_position": 0.5863498483316482,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 487
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "And I will wait for you.”",
+        "max_topic_prob": 0.7679762244224548,
+        "normalized_position": 0.051061678463094035,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 505
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Thanks for waiting.”",
+        "max_topic_prob": 0.7292465567588806,
+        "normalized_position": 0.2770475227502528,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You have someone waiting for you.”",
+        "max_topic_prob": 0.7212722897529602,
+        "normalized_position": 0.5088978766430738,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2491
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I had been waiting for this.",
+        "max_topic_prob": 0.6742652058601379,
+        "normalized_position": 0.5603843311160385,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Hurry!”",
+        "max_topic_prob": 0.6544834971427917,
+        "normalized_position": 0.5594974131559497,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "She’s been waiting for this, I can assure you.”",
+        "max_topic_prob": 0.6531471610069275,
+        "normalized_position": 0.8511456023651146,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "But it gives me something to do while I wait for you.",
+        "max_topic_prob": 0.6368144750595093,
+        "normalized_position": 0.6261640798226165,
+        "tertile": "middle",
+        "chapter_index": 40,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Now we wait.",
+        "max_topic_prob": 0.6354916095733643,
+        "normalized_position": 0.802660753880266,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Waiting until you answer my calls.",
+        "max_topic_prob": 0.6297528147697449,
+        "normalized_position": 0.13052475979305247,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Well, I could wait. ‘",
+        "max_topic_prob": 0.7696259021759033,
+        "normalized_position": 0.6722286597141753,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 572
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Waiting.’",
+        "max_topic_prob": 0.7211800217628479,
+        "normalized_position": 0.9137891077636153,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 460
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Come on, E. What are you waiting for?’",
+        "max_topic_prob": 0.6987584829330444,
+        "normalized_position": 0.6040942448821939,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Come on, guys, what are we waiting for?’",
+        "max_topic_prob": 0.6891080141067505,
+        "normalized_position": 0.29463113171108535,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I just didn’t know if I could wait that long.",
+        "max_topic_prob": 0.682576060295105,
+        "normalized_position": 0.11626110467361916,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Just be patient for a little while longer.’",
+        "max_topic_prob": 0.6732776761054993,
+        "normalized_position": 0.3653147933565083,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Wait up.",
+        "max_topic_prob": 0.649782657623291,
+        "normalized_position": 0.6224489795918368,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 547
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "For now. “",
+        "max_topic_prob": 0.4748597741127014,
+        "normalized_position": 0.9977324263038548,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 878
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Thankfully, another slow motion sequence.",
+        "max_topic_prob": 0.43889713287353516,
+        "normalized_position": 0.2743764172335601,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Well, wait!",
+        "max_topic_prob": 0.3953242897987366,
+        "normalized_position": 0.8503401360544217,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 748
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Waiting for you.”",
+        "max_topic_prob": 0.7799713611602783,
+        "normalized_position": 0.3506480148117671,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You’ve waited a long time for this.” “",
+        "max_topic_prob": 0.7486467361450195,
+        "normalized_position": 0.44959884797366795,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He’s waiting for you.”",
+        "max_topic_prob": 0.7344903945922852,
+        "normalized_position": 0.29458959061921414,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Just wait.”",
+        "max_topic_prob": 0.7213313579559326,
+        "normalized_position": 0.7605430981279572,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It was nice of you to wait.”",
+        "max_topic_prob": 0.7032750248908997,
+        "normalized_position": 0.3084756222999383,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You need to hurry up.”",
+        "max_topic_prob": 0.701207160949707,
+        "normalized_position": 0.46492491256943014,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I hurry back.” “",
+        "max_topic_prob": 0.6696856021881104,
+        "normalized_position": 0.696633743196936,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "No rush.”",
+        "max_topic_prob": 0.650626540184021,
+        "normalized_position": 0.6968353154605926,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Good, because it won’t be long now before Ashley arrives.”",
+        "max_topic_prob": 0.5859314203262329,
+        "normalized_position": 0.45353759322717196,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Don’t be hasty.",
+        "max_topic_prob": 0.5341306924819946,
+        "normalized_position": 0.748840959483975,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Would you like to hang for a while?”",
+        "max_topic_prob": 0.5297096967697144,
+        "normalized_position": 0.5777061076395887,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Yes, but—” “Patience, Harry, patience.” “",
+        "max_topic_prob": 0.5167205929756165,
+        "normalized_position": 0.10481757710139085,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I knew I couldn’t wait much longer.",
+        "max_topic_prob": 0.614295482635498,
+        "normalized_position": 0.4122938530734633,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I guess they got tired of waiting.”",
+        "max_topic_prob": 0.5969215631484985,
+        "normalized_position": 0.952023988005997,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 618
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Hurry the fuck up,” Cameron ordered in a husky, almost haggard voice.",
+        "max_topic_prob": 0.500577449798584,
+        "normalized_position": 0.4542728635682159,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Cameron said with some urgency.",
+        "max_topic_prob": 0.45857739448547363,
+        "normalized_position": 0.49325337331334335,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 312
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Fuck, wait.",
+        "max_topic_prob": 0.4264466166496277,
+        "normalized_position": 0.49025487256371814,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We don’t have to hurry.”",
+        "max_topic_prob": 0.6508954167366028,
+        "normalized_position": 0.603459747172322,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Hope you haven’t been waiting long,” he says, as he hastens up to me, takes me by the shoulders and kisses me on both cheeks.",
+        "max_topic_prob": 0.61421138048172,
+        "normalized_position": 0.39753825681969396,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I don’t want to make a mess so I wait quietly.",
+        "max_topic_prob": 0.6056340932846069,
+        "normalized_position": 0.25349301397205587,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Am I going to fast for you?” “",
+        "max_topic_prob": 0.5859649181365967,
+        "normalized_position": 0.9234863606121091,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "As to anything more, we’ll have to wait and see what turns up.”",
+        "max_topic_prob": 0.5832861661911011,
+        "normalized_position": 0.6526946107784432,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Just about to order it,” I say, pressing the bell for cabin service.",
+        "max_topic_prob": 0.5503981113433838,
+        "normalized_position": 0.1733200266134398,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I’ll wait with you.” “",
+        "max_topic_prob": 0.8079119920730591,
+        "normalized_position": 0.05948774442302396,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 326
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I’ll wait as long as it takes.”",
+        "max_topic_prob": 0.7956250309944153,
+        "normalized_position": 0.9762232626457358,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You’ll be waiting?” “",
+        "max_topic_prob": 0.794823944568634,
+        "normalized_position": 0.8772606260901497,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Your job is to wait for me.” “",
+        "max_topic_prob": 0.747103214263916,
+        "normalized_position": 0.9761314605710089,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Whatever you want to tell me can wait.” “",
+        "max_topic_prob": 0.7305991053581238,
+        "normalized_position": 0.9209584136601487,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And now I know I won’t be waiting long, because you’re all fired-up.” “",
+        "max_topic_prob": 0.7259620428085327,
+        "normalized_position": 0.29385844120077115,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 435
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Wait for me.” “",
+        "max_topic_prob": 0.7821205854415894,
+        "normalized_position": 0.34485738980121,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "You can’t wait, can you?”",
+        "max_topic_prob": 0.7089962363243103,
+        "normalized_position": 0.7292566983578219,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Waiting.",
+        "max_topic_prob": 0.7047896981239319,
+        "normalized_position": 0.742761452031115,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Can’t wait for what?”",
+        "max_topic_prob": 0.6946638822555542,
+        "normalized_position": 0.06601123595505617,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "As long as you don’t mind having to wait longer now for all the good things I have planned for you.”",
+        "max_topic_prob": 0.69339919090271,
+        "normalized_position": 0.179019014693172,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "How long must I wait?”",
+        "max_topic_prob": 0.6512290835380554,
+        "normalized_position": 0.18777009507346587,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’ll be waiting.”",
+        "max_topic_prob": 0.7972660064697266,
+        "normalized_position": 0.017104810010331765,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "If you tell me we have to wait even longer...” “No.",
+        "max_topic_prob": 0.7570779323577881,
+        "normalized_position": 0.21271954999426013,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I waited for it.",
+        "max_topic_prob": 0.6349213123321533,
+        "normalized_position": 0.2648375617035932,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Wait.”",
+        "max_topic_prob": 0.631057620048523,
+        "normalized_position": 0.6274824933991505,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Let me keep my illusions a little while longer.” “",
+        "max_topic_prob": 0.5785002708435059,
+        "normalized_position": 0.9913901963035243,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It’s an invitation for me to wonder how much longer I’m gonna have to wait for you to get on your knees and wrap your lips around it.” “",
+        "max_topic_prob": 0.5484853982925415,
+        "normalized_position": 0.6731718516817816,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 547
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.005380237972064149,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0038055887789496573,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.004765450483991065,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.007530120481927711,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.0040710584752035525,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0045662100456621,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.004009355162044771,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0037643707396479804,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0018724087200748963,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.001861619609059882,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0013871228759680962,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.001750291715285881,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0018534359851725122,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0016266775111834079,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0017441860465116279,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0018969648562300319,
+        "n_sentences": 19
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 93
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "4.5",
+    "taxonomy_secondary_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

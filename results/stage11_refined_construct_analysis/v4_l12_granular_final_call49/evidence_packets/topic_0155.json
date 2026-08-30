@@ -1,0 +1,945 @@
+{
+  "topic_id": 155,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "run",
+        "running",
+        "ran",
+        "away",
+        "race",
+        "you",
+        "runners",
+        "fast",
+        "runner",
+        "now"
+      ],
+      "KeyBERT": [
+        "chased",
+        "poised"
+      ],
+      "POS": [
+        "scenario",
+        "commander",
+        "instincts",
+        "folks",
+        "tracks",
+        "answers",
+        "worst"
+      ],
+      "MMR": [
+        "chased",
+        "scenario",
+        "poised",
+        "dump",
+        "commander",
+        "instincts",
+        "tracks",
+        "climb",
+        "warned",
+        "planning"
+      ]
+    },
+    "stage08_snippets": [
+      "if it gets triggered, i'll\"—he corrected himself—\"one of us will come running.",
+      "you didn’t mean to, but...if you don’t run right now, i’ll lay claim to you.",
+      "stop running and you’ll find out.” “"
+    ],
+    "label_public": "Stop Running or Be Claimed"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I’ve got to run.",
+        "max_topic_prob": 0.7520354986190796,
+        "normalized_position": 0.026185958254269448,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "You said she was running for her life.",
+        "max_topic_prob": 0.6190531849861145,
+        "normalized_position": 0.5802656546489564,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 515
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I don’t know who she was running from.",
+        "max_topic_prob": 0.588851809501648,
+        "normalized_position": 0.5819734345351044,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 524
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "No sense in running in circles when a straight line will get you there faster.”",
+        "max_topic_prob": 0.5874924659729004,
+        "normalized_position": 0.38444022770398484,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2026
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Stop running, Francesca, you're wearing me out.",
+        "max_topic_prob": 0.6506052017211914,
+        "normalized_position": 0.5652668597434837,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I'm going to have to be the one to run things around here.\" .",
+        "max_topic_prob": 0.5704613924026489,
+        "normalized_position": 0.8085436491518411,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "You retreated so that you would not become like them.",
+        "max_topic_prob": 0.48417991399765015,
+        "normalized_position": 0.4498345055854365,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Francesca ran as fast as she could along the sidewalk.",
+        "max_topic_prob": 0.4259518086910248,
+        "normalized_position": 0.08843607778237485,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I wondered if you had been set adrift as a punishment or were running away from someone.” “",
+        "max_topic_prob": 0.5560505986213684,
+        "normalized_position": 0.16729448260580546,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I knew running was out of the question.",
+        "max_topic_prob": 0.7275735139846802,
+        "normalized_position": 0.020076608109893014,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I would have run off like an idiot.” “",
+        "max_topic_prob": 0.6181272268295288,
+        "normalized_position": 0.5568617091533483,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "There was no way I could outrun whoever it was in my heels.",
+        "max_topic_prob": 0.5903692245483398,
+        "normalized_position": 0.020208691057984413,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You must be Chase.”",
+        "max_topic_prob": 0.5899553894996643,
+        "normalized_position": 0.6419231277242108,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 469
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He ran off before I could say anything. “",
+        "max_topic_prob": 0.5820044279098511,
+        "normalized_position": 0.28252542596750757,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "But …” I motioned to Chase. “",
+        "max_topic_prob": 0.5689314007759094,
+        "normalized_position": 0.6538105930524369,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Surely someone so young won’t run?”",
+        "max_topic_prob": 0.659171998500824,
+        "normalized_position": 0.32489146164978294,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Out in the open she could run if she chose.",
+        "max_topic_prob": 0.6243209838867188,
+        "normalized_position": 0.585383502170767,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "If our humans fear us too much, they may run.",
+        "max_topic_prob": 0.6074261665344238,
+        "normalized_position": 0.2626628075253256,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She doesn’t run and cower from me.",
+        "max_topic_prob": 0.5832037925720215,
+        "normalized_position": 0.5607814761215629,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She doesn’t run, she wanders,” Tavish explained. “",
+        "max_topic_prob": 0.5737833380699158,
+        "normalized_position": 0.3252532561505065,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You asked if I wanted to run the world.",
+        "max_topic_prob": 0.5555530786514282,
+        "normalized_position": 0.7727930535455861,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Is that why you’re running?",
+        "max_topic_prob": 0.6938941478729248,
+        "normalized_position": 0.7721135940409684,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sorry, I gotta run before those bozos leave me.",
+        "max_topic_prob": 0.6175321340560913,
+        "normalized_position": 0.5647113594040968,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I could have waited for you to come back instead of running away.",
+        "max_topic_prob": 0.5770413875579834,
+        "normalized_position": 0.9813780260707635,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’ll call you when I get done running around and see where you are.",
+        "max_topic_prob": 0.51959627866745,
+        "normalized_position": 0.7295158286778398,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Too bad we haven’t much room in here, sweet Brock, I’d love to see your ass bunching and flexing as you run.”",
+        "max_topic_prob": 0.49835824966430664,
+        "normalized_position": 0.7725791433891993,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I was running low on patience and time.",
+        "max_topic_prob": 0.4827849864959717,
+        "normalized_position": 0.3687150837988827,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "She wanted to run.",
+        "max_topic_prob": 0.7068279981613159,
+        "normalized_position": 0.791556459816887,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 393
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Some will likely having you running for the hills.",
+        "max_topic_prob": 0.5291208028793335,
+        "normalized_position": 0.2894201424211597,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Fun runs.",
+        "max_topic_prob": 0.6446700096130371,
+        "normalized_position": 0.22437582128777925,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I hate jogging.” “",
+        "max_topic_prob": 0.6276761889457703,
+        "normalized_position": 0.9579500657030223,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I’m guessing we’re not talking about jogging now.” “",
+        "max_topic_prob": 0.6196742057800293,
+        "normalized_position": 0.9577858081471747,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "If anyone should run, it ought to be him.",
+        "max_topic_prob": 0.5895525217056274,
+        "normalized_position": 0.24211563731931668,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Woman, watch where you’re running,” Alex scolded. “",
+        "max_topic_prob": 0.5849288702011108,
+        "normalized_position": 0.07063074901445467,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You run off to California and we’re still here.",
+        "max_topic_prob": 0.5547952651977539,
+        "normalized_position": 0.25459921156373194,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I couldn’t even run away.",
+        "max_topic_prob": 0.6296069622039795,
+        "normalized_position": 0.10023310023310024,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Let’s go, and don’t even think about running again.”",
+        "max_topic_prob": 0.7605467438697815,
+        "normalized_position": 0.4681088314005352,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Without giving it another thought he took off running.",
+        "max_topic_prob": 0.6161594390869141,
+        "normalized_position": 0.4636485280999108,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What are you running away from?",
+        "max_topic_prob": 0.5665966272354126,
+        "normalized_position": 0.7727475468331847,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I've been thinking... Remember when I told you to run away with me?",
+        "max_topic_prob": 0.6353933811187744,
+        "normalized_position": 0.3885328836424958,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You don’t run.’ ‘",
+        "max_topic_prob": 0.7980956435203552,
+        "normalized_position": 0.100532464436144,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I run.’ ‘",
+        "max_topic_prob": 0.7889657020568848,
+        "normalized_position": 0.4778669633632679,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I so scared and I run.’ ‘",
+        "max_topic_prob": 0.7411400079727173,
+        "normalized_position": 0.4772311849320512,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I won’t run off.",
+        "max_topic_prob": 0.7135353684425354,
+        "normalized_position": 0.9787014225542399,
+        "tertile": "end",
+        "chapter_index": 76,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Gotta run.",
+        "max_topic_prob": 0.701400876045227,
+        "normalized_position": 0.6134467138202336,
+        "tertile": "middle",
+        "chapter_index": 49,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I can’t trust you not to run off.’",
+        "max_topic_prob": 0.6964073181152344,
+        "normalized_position": 0.9785424779464357,
+        "tertile": "end",
+        "chapter_index": 76,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "But I won’t run again, no matter the outcome.",
+        "max_topic_prob": 0.7191578149795532,
+        "normalized_position": 0.7645966925413432,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "And then I ran and wasn’t there for her.",
+        "max_topic_prob": 0.6456965804100037,
+        "normalized_position": 0.7643435707053662,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’ll need to make a run for more tomorrow.",
+        "max_topic_prob": 0.5603650808334351,
+        "normalized_position": 0.06226797165035437,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "We were in town the other day and some fool ran off the road because he was eyeing him instead of watching the fucking road.” “",
+        "max_topic_prob": 0.5015308856964111,
+        "normalized_position": 0.7277252784340196,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I race after her and make it to the bathroom just as she starts puking her brains out again.",
+        "max_topic_prob": 0.4672074317932129,
+        "normalized_position": 0.6576949038137023,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Lord knows the only other thing, or rather person, that’s gotten my motor running lately wants nothing to do with me.",
+        "max_topic_prob": 0.43436649441719055,
+        "normalized_position": 0.022190347620654742,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m not running, though.",
+        "max_topic_prob": 0.7260514497756958,
+        "normalized_position": 0.04357411490079108,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Will you go for a run with me in the morning?”",
+        "max_topic_prob": 0.6823770999908447,
+        "normalized_position": 0.08247957463364025,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Stop running away .",
+        "max_topic_prob": 0.6640174388885498,
+        "normalized_position": 0.29632991829853456,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He wouldn’t expect me to run toward him. “",
+        "max_topic_prob": 0.6628901958465576,
+        "normalized_position": 0.7005576449228375,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Gone for a run.",
+        "max_topic_prob": 0.6358261704444885,
+        "normalized_position": 0.14498767993775127,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He jogs to the next street and sets me on my feet as he pushes out into the open. “",
+        "max_topic_prob": 0.6132724285125732,
+        "normalized_position": 0.9784723122811568,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m gearing up to run a marathon,” he deadpanned. “",
+        "max_topic_prob": 0.6049169898033142,
+        "normalized_position": 0.29269484485707303,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I needed a long run to clear my head, but that was absolutely out of the question.",
+        "max_topic_prob": 0.5853831171989441,
+        "normalized_position": 0.45321280234546785,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Being a running back was a position that I was thrust into and I have never looked back.",
+        "max_topic_prob": 0.48139989376068115,
+        "normalized_position": 0.3354507696066455,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I kicked my speed up another notch, going as fast as I could without tripping and falling flat on my face.",
+        "max_topic_prob": 0.44259339570999146,
+        "normalized_position": 0.4593207915954068,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The coaches were running out to the middle of the field and being that I was in such a state of shock, I didn’t realize that I had kicked off my shoes and was bringing up the rear only feet away from the coaches.",
+        "max_topic_prob": 0.43614333868026733,
+        "normalized_position": 0.8414365990715856,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "As the starting running back, more specifically, the halfback, I was virtually untouchable.",
+        "max_topic_prob": 0.42477479577064514,
+        "normalized_position": 0.007573906669924261,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I wasn’t thinking of running.",
+        "max_topic_prob": 0.7364124059677124,
+        "normalized_position": 0.8198730252473054,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I was a runner by nature.",
+        "max_topic_prob": 0.6600825786590576,
+        "normalized_position": 0.702347556474236,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I cursed and started running.",
+        "max_topic_prob": 0.6591500043869019,
+        "normalized_position": 0.3593680791377528,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Don’t run from me when you’re pissed.",
+        "max_topic_prob": 0.6135120391845703,
+        "normalized_position": 0.8209065406762144,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I hadn’t realized how run down I’d become until I was given the time to do nothing.",
+        "max_topic_prob": 0.5994719862937927,
+        "normalized_position": 0.5703528716964418,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I screamed and started running but I was no match for him.",
+        "max_topic_prob": 0.5695188045501709,
+        "normalized_position": 0.3115310792853979,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 2
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.002384856163362647,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.002226069750185506,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0029944017706027863,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.003125,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.00294314381270903,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.002570694087403599,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0026481297583581596,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.002191780821917808,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.00041498080713766987,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.000673551863493489,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0005068851905043508,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0007643798968087139,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0003912363067292645,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00020475020475020476,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00022217285047767163,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.00033921302578018993,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 70
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "4.7",
+    "taxonomy_secondary_name": "Jealousy & Possessive Romance Conflict",
+    "taxonomy_confidence": 0.85,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

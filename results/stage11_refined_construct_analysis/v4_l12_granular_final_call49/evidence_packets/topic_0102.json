@@ -1,0 +1,736 @@
+{
+  "topic_id": 102,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "adam",
+        "cain",
+        "penn",
+        "denver",
+        "had",
+        "didn",
+        "him",
+        "saya",
+        "himself",
+        "brother"
+      ],
+      "KeyBERT": [
+        "affection",
+        "instincts",
+        "emotional",
+        "stares",
+        "sentence",
+        "secretly",
+        "blurted",
+        "sadness",
+        "shivered",
+        "afterward"
+      ],
+      "POS": [
+        "concept",
+        "distraction",
+        "remark",
+        "capture",
+        "glint",
+        "surroundings",
+        "official",
+        "sweeping",
+        "instincts",
+        "period"
+      ],
+      "MMR": [
+        "distraction",
+        "glint",
+        "collected",
+        "surroundings",
+        "loosened",
+        "sweeping",
+        "pleading",
+        "reflected",
+        "instincts",
+        "blurted"
+      ]
+    },
+    "stage08_snippets": [
+      "we’ve lost adam,’ she whispered and her fingers traced the contours of grief still etched on his face. ‘",
+      "not only did she have a cool and savvy partner actually in the game with her, the surroundings, the actions were so real that her heart pounded and adrenaline flooded her, almost as if she really was helping adam sabotage a bridge while avoiding capture by nazi soldiers.",
+      "holy hell, adam—i’ve known her long enough to realize she’s thinking about a lot more than a blowjob.” “"
+    ],
+    "label_public": "Grief Etched on His Face"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Cain winced as the other man spoke bluntly. “",
+        "max_topic_prob": 0.6702468395233154,
+        "normalized_position": 0.8144515612489992,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Cain just shook his head and crossed back to the bed. “",
+        "max_topic_prob": 0.6559875011444092,
+        "normalized_position": 0.9353482786228983,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Cain questioned. “",
+        "max_topic_prob": 0.6461226940155029,
+        "normalized_position": 0.3498799039231385,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Cain asked.",
+        "max_topic_prob": 0.6443092823028564,
+        "normalized_position": 0.33466773418734985,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She wanted Cain here with her.",
+        "max_topic_prob": 0.6394568085670471,
+        "normalized_position": 0.36749399519615694,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Now, Cain.”",
+        "max_topic_prob": 0.6311317682266235,
+        "normalized_position": 0.9691753402722177,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Adam said. “",
+        "max_topic_prob": 0.8670885562896729,
+        "normalized_position": 0.6054530874097834,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Adam said. “",
+        "max_topic_prob": 0.8670885562896729,
+        "normalized_position": 0.607324244854317,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Adam asked. “",
+        "max_topic_prob": 0.8522027730941772,
+        "normalized_position": 0.6091954022988506,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "What did Adam have to say?”",
+        "max_topic_prob": 0.8435454368591309,
+        "normalized_position": 0.7944399893076718,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And on that thought, he said, “I talked to Adam a minute ago.",
+        "max_topic_prob": 0.7835688591003418,
+        "normalized_position": 0.7931034482758621,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Explain,” Adam said.",
+        "max_topic_prob": 0.7727819085121155,
+        "normalized_position": 0.21678695535952955,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I thought about this for a moment, idly kissing his Adam’s apple. “",
+        "max_topic_prob": 0.7329891920089722,
+        "normalized_position": 0.6214905564063298,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 2154
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "His Adam’s apple bobbed a couple of times, and when he spoke, his voice was hoarse. “",
+        "max_topic_prob": 0.681350827217102,
+        "normalized_position": 0.6749617151607963,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2573
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Eve . . .”",
+        "max_topic_prob": 0.5790071487426758,
+        "normalized_position": 0.5904798366513527,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1911
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "But he didn’t tell Eve where the village was.” “",
+        "max_topic_prob": 0.53632652759552,
+        "normalized_position": 0.5256508422664625,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1403
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "That night, Alec was upset, wasn’t he?",
+        "max_topic_prob": 0.5194743871688843,
+        "normalized_position": 0.3181470137825421,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 2355
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Eve.",
+        "max_topic_prob": 0.507015585899353,
+        "normalized_position": 0.5234813680449208,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1386
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "It’s an apple .",
+        "max_topic_prob": 0.2950938045978546,
+        "normalized_position": 0.8546961325966851,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Right,” Adam agreed. “",
+        "max_topic_prob": 0.7518322467803955,
+        "normalized_position": 0.8116470961599492,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Adam patted his flat belly. “",
+        "max_topic_prob": 0.7262957096099854,
+        "normalized_position": 0.816407489685814,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "when Adam said, “Keep that in mind, for, ah, for future reference.”",
+        "max_topic_prob": 0.6593947410583496,
+        "normalized_position": 0.8386226594731832,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Adam served in Iraq, you know.",
+        "max_topic_prob": 0.6379110813140869,
+        "normalized_position": 0.7384957156458267,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Adam has been going through some rough times since his separation, and I think being with Frank will help him deal with all that.”",
+        "max_topic_prob": 0.612662672996521,
+        "normalized_position": 0.7380196762932403,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Adam kept it all bottled up at first, which is precisely the reason he and Jessie separated.",
+        "max_topic_prob": 0.6091747283935547,
+        "normalized_position": 0.7402411932719771,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Fool , Nalea thought as Roden parried the blow.",
+        "max_topic_prob": 0.44643402099609375,
+        "normalized_position": 0.38493402884320344,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nalea thought the same thing.",
+        "max_topic_prob": 0.4355199337005615,
+        "normalized_position": 0.6161399202209267,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He needed Nalea.",
+        "max_topic_prob": 0.42632317543029785,
+        "normalized_position": 0.465480208652961,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "At that moment, Roden had a sudden sense of bothness , something nudging against his soul, but the sensation was gone too quick as to believe it could have been Nalea.",
+        "max_topic_prob": 0.411522775888443,
+        "normalized_position": 0.6207425590671986,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 322
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nalea turned around to face Otas.",
+        "max_topic_prob": 0.40523090958595276,
+        "normalized_position": 0.4822031297944155,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Our dear Nalea is wearing a neck-charge, courtesy of Otas Olnek, that’s primed to detonate if anything happens to him.” “",
+        "max_topic_prob": 0.36989372968673706,
+        "normalized_position": 0.8398281681497392,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He always was, even during my relationships with Matt and Adam, but not anymore.",
+        "max_topic_prob": 0.5338293313980103,
+        "normalized_position": 0.7778388177772895,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 591
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Ava, he’s obviously shocked.",
+        "max_topic_prob": 0.4824650287628174,
+        "normalized_position": 0.4361369005109048,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ava.’",
+        "max_topic_prob": 0.4647681713104248,
+        "normalized_position": 0.030654287754765697,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 556
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ava.’",
+        "max_topic_prob": 0.4647681713104248,
+        "normalized_position": 0.199142998406856,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Oh, Ava.’",
+        "max_topic_prob": 0.4647681713104248,
+        "normalized_position": 0.9101247047190023,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Fucking hell, Ava.’",
+        "max_topic_prob": 0.44684091210365295,
+        "normalized_position": 0.42048014063615885,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He made a pass at Ava.” “",
+        "max_topic_prob": 0.4922068417072296,
+        "normalized_position": 0.8925271638702047,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 1716
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Fuck, Ava.”",
+        "max_topic_prob": 0.4735562801361084,
+        "normalized_position": 0.7267351615049154,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 2703
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I think Ava learned a good lesson that night.",
+        "max_topic_prob": 0.45265230536460876,
+        "normalized_position": 0.6095794219824081,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 1118
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You thought Ava would fuck you?",
+        "max_topic_prob": 0.44756633043289185,
+        "normalized_position": 0.8848399733904945,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 1612
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You didn’t know you would have Ava and us at the time.”",
+        "max_topic_prob": 0.44699642062187195,
+        "normalized_position": 0.16667898588217903,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 2230
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "How am I going to explain this to Ava?",
+        "max_topic_prob": 0.4347701072692871,
+        "normalized_position": 0.19210584669968217,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 2574
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Adams just has a couple of questions.",
+        "max_topic_prob": 0.4983488917350769,
+        "normalized_position": 0.6654742547425474,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Fuck, Ava.”",
+        "max_topic_prob": 0.4735562801361084,
+        "normalized_position": 0.7828726287262873,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Shit, Ava.”",
+        "max_topic_prob": 0.4499398469924927,
+        "normalized_position": 0.26222222222222225,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Fuck, Ava.",
+        "max_topic_prob": 0.42866528034210205,
+        "normalized_position": 0.35956639566395665,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Knowing he was going out with Ava was one more thing in a long line of irritations under my skin.",
+        "max_topic_prob": 0.4208911657333374,
+        "normalized_position": 0.27327913279132793,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Ava drove me.",
+        "max_topic_prob": 0.4191485047340393,
+        "normalized_position": 0.5117615176151762,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Malster’s Adam’s apple worked, and he darted a glance toward Aquilla. “",
+        "max_topic_prob": 0.5731226205825806,
+        "normalized_position": 0.930798172534265,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 33
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.002624384909786769,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0012610340479192938,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.00181948503060043,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.0012990387113535984,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.020657841957480945,
+        "n_sentences": 103
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0012339966065093321,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0014509108495889087,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.012355627182379801,
+        "n_sentences": 46
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00013520822065981613,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00013885031935573453,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 50
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.68,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

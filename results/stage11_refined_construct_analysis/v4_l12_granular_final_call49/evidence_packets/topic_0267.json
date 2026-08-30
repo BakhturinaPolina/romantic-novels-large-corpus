@@ -1,0 +1,714 @@
+{
+  "topic_id": 267,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.7",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "hair",
+        "ran",
+        "through",
+        "hand",
+        "his",
+        "fingers",
+        "raked",
+        "damp",
+        "hands",
+        "shoved"
+      ],
+      "KeyBERT": [
+        "patted",
+        "plucked",
+        "blowing",
+        "breathed",
+        "tugged",
+        "grasp",
+        "gesture",
+        "lingering",
+        "runs",
+        "fiercely"
+      ],
+      "POS": [
+        "damp",
+        "awareness",
+        "distraction",
+        "backs",
+        "lid",
+        "sleeve",
+        "lingering",
+        "regular",
+        "breaths",
+        "gesture"
+      ],
+      "MMR": [
+        "fiercely",
+        "runs",
+        "damp",
+        "paced",
+        "plucked",
+        "wipe",
+        "lingering",
+        "patted",
+        "grasp",
+        "breaths"
+      ]
+    },
+    "stage08_snippets": [
+      "he runs his hand through his hair to move it to the side.",
+      "when the door opened, and cruz walked through, he looked absolutely edible, his hair a mess from his lid as he ran his hands through it fiercely.",
+      "stephen returned it fiercely, his hand tangling in crane’s hair and sending sparks running through his scalp."
+    ],
+    "label_public": "Hand Raking Through His Hair"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Cole ran his hands through his hair. \"",
+        "max_topic_prob": 0.7867534160614014,
+        "normalized_position": 0.5177707325212748,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He scrubbed a hand through his hair.",
+        "max_topic_prob": 0.8251874446868896,
+        "normalized_position": 0.3610954581314099,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1021
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He rubbed a hand through his tousled silver hair, messing it up even more. \"",
+        "max_topic_prob": 0.7510672807693481,
+        "normalized_position": 0.06570494759382396,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 578
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Fuck,\" Rhoan said, and thrust a hand through his short hair.",
+        "max_topic_prob": 0.7236673831939697,
+        "normalized_position": 0.727149780232165,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 884
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He pocketed it, then gently brushed the still-sweaty strands of hair away from my forehead.",
+        "max_topic_prob": 0.6956663131713867,
+        "normalized_position": 0.26676434126000226,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He scrubbed a hand across his chin. \"",
+        "max_topic_prob": 0.6789506673812866,
+        "normalized_position": 0.6337202749915474,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He scrubbed a hand across his face. \"",
+        "max_topic_prob": 0.6366833448410034,
+        "normalized_position": 0.3208610391074045,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 664
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I lifted my hand, brushed my hair off my face and looked up, thrusting out my chin to face the one ghost of my past that I regretted bitterly.",
+        "max_topic_prob": 0.5193634033203125,
+        "normalized_position": 0.07228915662650602,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He threaded his fingers through his hair. \"",
+        "max_topic_prob": 0.8731276988983154,
+        "normalized_position": 0.38516048353480614,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He ran his hands over his scalp, pushing his drenched hair from his face. \"",
+        "max_topic_prob": 0.837153434753418,
+        "normalized_position": 0.5165694039182993,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He paused and raked a hand through his brown hair, pushing it away from his face. \"",
+        "max_topic_prob": 0.8093334436416626,
+        "normalized_position": 0.9180908711963318,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I imagined him running an impatient hand through his hair. \"",
+        "max_topic_prob": 0.7619226574897766,
+        "normalized_position": 0.12484368486869529,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I raked my fingers through his damp hair. \"",
+        "max_topic_prob": 0.7475855350494385,
+        "normalized_position": 0.6489162150896207,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Ryan let go of my hand, then thrust his fingers through his short brown hair, brushing the bangs out of his face.",
+        "max_topic_prob": 0.7414180636405945,
+        "normalized_position": 0.3322217590662776,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Jax hissed again, his fingers tightening in Evan’s hair.",
+        "max_topic_prob": 0.6305036544799805,
+        "normalized_position": 0.8228643216080402,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My hands went to his hair. “",
+        "max_topic_prob": 0.8258718252182007,
+        "normalized_position": 0.9029126213592233,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I sat straight and faced my feet, moving my hands through my long hair. “",
+        "max_topic_prob": 0.6812344193458557,
+        "normalized_position": 0.11238789237668162,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 802
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "He ran a hand through his thinning hair. “",
+        "max_topic_prob": 0.9200465083122253,
+        "normalized_position": 0.2059159759931409,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Alex strode off a few paces, whipped around and raked a hand through his hair. “",
+        "max_topic_prob": 0.7716526389122009,
+        "normalized_position": 0.5687339239782795,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He drags a hand through his hair. “",
+        "max_topic_prob": 0.9043135643005371,
+        "normalized_position": 0.8507922535211268,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He lets out a breath and drags his hand through his hair. “",
+        "max_topic_prob": 0.8516852855682373,
+        "normalized_position": 0.04812206572769953,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He exhales heavily and drags a hand through his hair. “",
+        "max_topic_prob": 0.8294707536697388,
+        "normalized_position": 0.6453931924882629,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I slide my hands into his hair. “",
+        "max_topic_prob": 0.7368738055229187,
+        "normalized_position": 0.3550469483568075,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He drags a hand through his hair, looking like he wants to throw something. “",
+        "max_topic_prob": 0.7368019819259644,
+        "normalized_position": 0.7777288732394366,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "But…” His hands fall from my face, and he drags one through his hair. “",
+        "max_topic_prob": 0.7317190766334534,
+        "normalized_position": 0.47491197183098594,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He ran a hand through his hair. “",
+        "max_topic_prob": 0.9634380340576172,
+        "normalized_position": 0.9185131371836784,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1933
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He raked his fingers through his hair again. “",
+        "max_topic_prob": 0.8519987463951111,
+        "normalized_position": 0.9187552972514832,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1935
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "His hand raked though his hair. “",
+        "max_topic_prob": 0.8257687091827393,
+        "normalized_position": 0.2587480324494491,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2137
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "His mouth hardened, hands raked through his hair.",
+        "max_topic_prob": 0.7789791226387024,
+        "normalized_position": 0.2424022278726238,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2002
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He sighed again and his hand ran through his hair, making it stand up over the crown of his head. “",
+        "max_topic_prob": 0.7725977897644043,
+        "normalized_position": 0.6475360213100859,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1075
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Matthew ’s fingers ran through his messy hair. “",
+        "max_topic_prob": 0.7720495462417603,
+        "normalized_position": 0.08366630342656496,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 691
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Brendon thrust his hands through his hair. “",
+        "max_topic_prob": 0.7710773348808289,
+        "normalized_position": 0.7942122186495176,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Put your hands in the air where I can see them,” Z ordered, his deep baritone rough enough to make the hair on Cheyenne’s arms stand on end.",
+        "max_topic_prob": 0.6066425442695618,
+        "normalized_position": 0.8765552914860898,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Even before he answered that call, he’d known without a doubt that something was going on, but then again, the hair on the back of his neck had been prickling for the past two hours.",
+        "max_topic_prob": 0.5018550753593445,
+        "normalized_position": 0.8663497833077031,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "I ran a comb through my hair.",
+        "max_topic_prob": 0.5799049139022827,
+        "normalized_position": 0.8893735822718548,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He ran his hands through his hair.",
+        "max_topic_prob": 0.9080973863601685,
+        "normalized_position": 0.13797814207650272,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Kieran ran his hands through his hair. “",
+        "max_topic_prob": 0.8185780644416809,
+        "normalized_position": 0.8327868852459016,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I ran my hands through my hair. “",
+        "max_topic_prob": 0.8028673529624939,
+        "normalized_position": 0.9184426229508197,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He let go of my hair and dusted off his hands. “",
+        "max_topic_prob": 0.8005075454711914,
+        "normalized_position": 0.19959016393442622,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His large hand smoothed my hair as his eyes met mine. “",
+        "max_topic_prob": 0.7392373085021973,
+        "normalized_position": 0.303551912568306,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Kenna ran her fingers through my hair, further degrading my control. “",
+        "max_topic_prob": 0.7124043107032776,
+        "normalized_position": 0.4077868852459016,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He sat up, a shaking hand pushing away the hair plastered to his face.",
+        "max_topic_prob": 0.7424789667129517,
+        "normalized_position": 0.4680368991746237,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He runs his other hand through his hair. “",
+        "max_topic_prob": 0.8951277732849121,
+        "normalized_position": 0.5671566142929549,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He scrubs his fingers through his hair. “",
+        "max_topic_prob": 0.8201467990875244,
+        "normalized_position": 0.4485554992397364,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He closes his eyes and scrubs a hand through his hair. “",
+        "max_topic_prob": 0.7750453948974609,
+        "normalized_position": 0.40699442473390773,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He stands there, eyes closed, rubbing his hand through his hair.",
+        "max_topic_prob": 0.7509540915489197,
+        "normalized_position": 0.7090724784591992,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He pulls out his comb and wags it in front of him. “",
+        "max_topic_prob": 0.6723307967185974,
+        "normalized_position": 0.2995438418651799,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "The guy holds a tree upright with one hand and wipes his dark hair out of his eyes with the other. “",
+        "max_topic_prob": 0.5891101956367493,
+        "normalized_position": 0.14005744213549587,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 174
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0020718232044198894,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0017709563164108619,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.0013596193065941536,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.001991614255765199,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0016963528413910093,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.001349527665317139,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.001962949331370384,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0016313213703099511,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0001411631846414455,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00028768699654775604,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00016431153466973383,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0003154574132492114,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0004225947316523454,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0001757469244288225,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00016826518593303046,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.7",
+    "taxonomy_main_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_secondary_id": "2.1",
+    "taxonomy_secondary_name": "Attraction & Sexual Tension",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

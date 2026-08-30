@@ -1,0 +1,720 @@
+{
+  "topic_id": 210,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "bennett",
+        "nicks",
+        "nicki",
+        "though",
+        "about",
+        "said",
+        "nate",
+        "didn",
+        "decided"
+      ],
+      "KeyBERT": [
+        "afterward",
+        "disappointment",
+        "forgive",
+        "possibility",
+        "upset",
+        "instincts"
+      ],
+      "POS": [
+        "unwilling",
+        "session",
+        "annoyance",
+        "instincts",
+        "distraction",
+        "possibility",
+        "la",
+        "previous",
+        "disappointment",
+        "plastic"
+      ],
+      "MMR": [
+        "regardless",
+        "unwilling",
+        "annoyance",
+        "instincts",
+        "afterward",
+        "sinking",
+        "proved",
+        "occurred",
+        "tense",
+        "forgive"
+      ]
+    },
+    "stage08_snippets": [
+      "she’ll be back,” [person] to explain.",
+      "we’ll not last long like this,” [person] said quietly.",
+      "if you pursue a relationship with [person], you’ll be expelled from motherhouse ireland, removed from your triad, and cast out from our way of life."
+    ],
+    "label_public": "Expelled For Pursuing A Relationship"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And, she’d reasoned, if pop star Jessica Simpson could resist the delectable Nick Lachey until their wedding night, she could certainly resist John.",
+        "max_topic_prob": 0.5424849987030029,
+        "normalized_position": 0.26092055115801815,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Besides, if there was one thing she’d come to know about Zeke, it was that he was able to make every audience member feel connected to him.",
+        "max_topic_prob": 0.4915977120399475,
+        "normalized_position": 0.9270008795074758,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Patrick huffed, as though he couldn’t believe Zeke had the audacity to claim that he—the up-by-his-boot-straps, self-made founder of a publishing empire—had anything in common with a bad-boy rock star.",
+        "max_topic_prob": 0.47911372780799866,
+        "normalized_position": 0.7349750806215186,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "As a waiter moved away with their plates, John said, “By the way, I saw that Scarlet was linked to Zeke Woodlow in today’s gossip columns.",
+        "max_topic_prob": 0.4403892159461975,
+        "normalized_position": 0.3679272940486661,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Unfortunately, a celebrity of Zeke’s caliber has an image to maintain and a publicity machine that needs to be fed—with the right kind of publicity, of course.” “",
+        "max_topic_prob": 0.4044925272464752,
+        "normalized_position": 0.8147170917619466,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "The Hole was owned by a man named Peter Rabbit to the chagrin of his wife, Petra.",
+        "max_topic_prob": 0.34565800428390503,
+        "normalized_position": 0.3262885992720441,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nathaniel was obviously willing to do such a thing.",
+        "max_topic_prob": 0.5289313793182373,
+        "normalized_position": 0.27053291536050156,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Some would think that when swimming in the depths of one’s own grief, one could forget what it was that made them so unhappy, but tell that to Nathaniel.",
+        "max_topic_prob": 0.5074232816696167,
+        "normalized_position": 0.09153605015673981,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Either way, there was something exhilarating about being with Nathaniel, especially being with him in his lair.",
+        "max_topic_prob": 0.49718838930130005,
+        "normalized_position": 0.6595611285266457,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "For the life of him, Nathaniel didn’t know how Mr. Harrington was a part of his beauteous bride-to-be’s biological makeup.",
+        "max_topic_prob": 0.49587282538414,
+        "normalized_position": 0.522257053291536,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The expression didn’t go unnoticed by Nathaniel.",
+        "max_topic_prob": 0.4594116806983948,
+        "normalized_position": 0.893730407523511,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nathaniel had come to understand and grudgingly accept that fact.",
+        "max_topic_prob": 0.4243448078632355,
+        "normalized_position": 0.09059561128526646,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I never had to think about this when I was with Nick.",
+        "max_topic_prob": 0.7948564887046814,
+        "normalized_position": 0.3179946718333737,
+        "tertile": "begin",
+        "chapter_index": 28,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Since we’re on the topic of relationships, what happened with Nick?” “",
+        "max_topic_prob": 0.7918494343757629,
+        "normalized_position": 0.4570113829014289,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I thought you liked Nick?” “",
+        "max_topic_prob": 0.7651253938674927,
+        "normalized_position": 0.05025429886170986,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Whatever will you do without Nick?”",
+        "max_topic_prob": 0.7635942697525024,
+        "normalized_position": 0.04674255267619278,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Talking about Nick this way only makes me think she should’ve been able to.",
+        "max_topic_prob": 0.761229932308197,
+        "normalized_position": 0.458585613950109,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You were with Nick.",
+        "max_topic_prob": 0.757309079170227,
+        "normalized_position": 0.4898280455316057,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "After Drake slammed out the door, Penny decided that must have been the wrong thing to say. ***",
+        "max_topic_prob": 0.5239514708518982,
+        "normalized_position": 0.6974199648791031,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That’s right, Drake,” Penny told him. “",
+        "max_topic_prob": 0.5078055262565613,
+        "normalized_position": 0.7378089963528299,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Drake bit back a smart remark and settled on the sand beside Penny, wondering what he should do to get Penny away from Trevor Marx. “",
+        "max_topic_prob": 0.5074668526649475,
+        "normalized_position": 0.3233824125354586,
+        "tertile": "begin",
+        "chapter_index": 25,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "But Drake had all of his attention on Penny.",
+        "max_topic_prob": 0.49758675694465637,
+        "normalized_position": 0.9563690395785492,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That he’ll be right there,” Penny said at the same time Drake said, “That I’m not going.” “",
+        "max_topic_prob": 0.48522844910621643,
+        "normalized_position": 0.3489126029987843,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Drake looked for Penny.",
+        "max_topic_prob": 0.4798220694065094,
+        "normalized_position": 0.8997703633662029,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Jonas even had to acknowledge that.”",
+        "max_topic_prob": 0.5978597402572632,
+        "normalized_position": 0.8966777936735019,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I wished I’d brought Jonas, who was usually quiet and left me to it when he could see that I knew what I was doing. “",
+        "max_topic_prob": 0.5891722440719604,
+        "normalized_position": 0.9885550786838341,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Jonas was going to kick my ass . “",
+        "max_topic_prob": 0.5872715711593628,
+        "normalized_position": 0.44714671753298363,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 462
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Jonas would bitch if I seemed surprised by his presence.",
+        "max_topic_prob": 0.5759115219116211,
+        "normalized_position": 0.5126371006199333,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Thankfully, my guys didn’t mention Jonas’ statement was for me, not them. “",
+        "max_topic_prob": 0.5704643726348877,
+        "normalized_position": 0.14258464473056748,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You need to figure out—” “Shut up, Jonas.”",
+        "max_topic_prob": 0.5680146217346191,
+        "normalized_position": 0.5663646479097123,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Rhys demanded.",
+        "max_topic_prob": 0.5412143468856812,
+        "normalized_position": 0.9426515236703025,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "But, Rhys couldn’t be with him without Arial wanting to feed.",
+        "max_topic_prob": 0.5337289571762085,
+        "normalized_position": 0.9507477791521421,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 504
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Arial might not want to see him, but Rhys sure as hell wanted answers from the male.",
+        "max_topic_prob": 0.5260598063468933,
+        "normalized_position": 0.932193860339593,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The fucking bitch knew he’d never be able to kill Rhys, but there was no way in hell he’d take his shit either. “",
+        "max_topic_prob": 0.5092031955718994,
+        "normalized_position": 0.9501855391881255,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 494
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He’d lost everything because of Rhys, only to have it thrown back in his face.",
+        "max_topic_prob": 0.4938681721687317,
+        "normalized_position": 0.9461374114472056,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It devastated Rhys to see Arial so broken. “",
+        "max_topic_prob": 0.4889145791530609,
+        "normalized_position": 0.9445631395479591,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "If Silas was about to let his alter ego out to play, I wasn’t going to stop him.",
+        "max_topic_prob": 0.46933794021606445,
+        "normalized_position": 0.6861118544286862,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Team Silas.”",
+        "max_topic_prob": 0.45756611227989197,
+        "normalized_position": 0.5226117206315226,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jayden.",
+        "max_topic_prob": 0.45275601744651794,
+        "normalized_position": 0.7975648916242976,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "The only thing I knew for certain about him was that he was Silas —and at the end of the day, that didn’t mean anything reliable.",
+        "max_topic_prob": 0.44613397121429443,
+        "normalized_position": 0.017795022745517794,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jayden?",
+        "max_topic_prob": 0.4130750894546509,
+        "normalized_position": 0.17045758629917046,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "It was hard enough to deal with four boyfriends, but if I included all of Silas’s alter-egos, that kicked the number up to ten.",
+        "max_topic_prob": 0.4116688370704651,
+        "normalized_position": 0.4822049772544822,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What was Nick? “",
+        "max_topic_prob": 0.8183606266975403,
+        "normalized_position": 0.6927366104181951,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What about Nick?",
+        "max_topic_prob": 0.794189989566803,
+        "normalized_position": 0.7511371973587674,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "working with Nick? “",
+        "max_topic_prob": 0.7646352648735046,
+        "normalized_position": 0.6748349229640499,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 496
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Did Nick say anything at all?”",
+        "max_topic_prob": 0.7616633772850037,
+        "normalized_position": 0.7182685253118122,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Nick though, had vanished.",
+        "max_topic_prob": 0.7608036994934082,
+        "normalized_position": 0.9874541452677916,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Nick blurted. “",
+        "max_topic_prob": 0.7564265727996826,
+        "normalized_position": 0.6817314746881878,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 590
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I’d never know it by the way she acts during class, and I almost feel guilty about adopting Nando’s “Cranky Franklin” nickname. “",
+        "max_topic_prob": 0.4666430354118347,
+        "normalized_position": 0.702156862745098,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 15
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0009611035730438715,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004016064257028112,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.007128007128007128,
+        "n_sentences": 96
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0009458181326847723,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.002046105579047879,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.009600194434317658,
+        "n_sentences": 79
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0014753614635585719,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.00253324889170361,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00011828720132481665,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 9.86679822397632e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 49
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": "5.1",
+    "taxonomy_secondary_name": "Family, Kinship & Parenthood",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,977 @@
+{
+  "topic_id": 130,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "plan",
+        "plans",
+        "planned",
+        "planning",
+        "sounds",
+        "according",
+        "part",
+        "we",
+        "got",
+        "have"
+      ],
+      "KeyBERT": [
+        "planned",
+        "planning",
+        "urgency",
+        "tentatively",
+        "considering",
+        "sir",
+        "forgetting",
+        "madam",
+        "scenario"
+      ],
+      "POS": [
+        "planning",
+        "scenario",
+        "urgency",
+        "results",
+        "pumping",
+        "reception",
+        "bigger",
+        "veins",
+        "hiding",
+        "opposite"
+      ],
+      "MMR": [
+        "madam",
+        "planning",
+        "scenario",
+        "tentatively",
+        "urgency",
+        "forming",
+        "pumping",
+        "reception",
+        "veins",
+        "considering"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ve rumbled my clever plan.’ ‘",
+      "yes, i’ve got a little more planned for this evening.",
+      "we’ve had this planned for months, but i’d almost forgotten about it."
+    ],
+    "label_public": "Revealing A Secret Plan"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Plans.",
+        "max_topic_prob": 0.7719358205795288,
+        "normalized_position": 0.3715489522119969,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Change of plan,’ he said. ‘",
+        "max_topic_prob": 0.648327112197876,
+        "normalized_position": 0.2907195919725025,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He wants to make plans , she read.",
+        "max_topic_prob": 0.6013400554656982,
+        "normalized_position": 0.37165982924936247,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She would come out with mad plans and then challenge me into doing them.",
+        "max_topic_prob": 0.5411140322685242,
+        "normalized_position": 0.5176848874598071,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 483
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I’ve got somewhere special lined up.’",
+        "max_topic_prob": 0.5039592981338501,
+        "normalized_position": 0.33961636545071516,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "It’s not about my future, is it?’ ‘",
+        "max_topic_prob": 0.41777437925338745,
+        "normalized_position": 0.8508703847433197,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Go along with your plan.”",
+        "max_topic_prob": 0.7862040996551514,
+        "normalized_position": 0.18155825589706934,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I had a real and viable plan in place now to turn things around.",
+        "max_topic_prob": 0.6782963275909424,
+        "normalized_position": 0.02811532046700024,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And keeping with the Plan seemed like my only way there.",
+        "max_topic_prob": 0.6736955642700195,
+        "normalized_position": 0.8384560400285919,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "This plan—it's not going to get you into any trouble at school?” “",
+        "max_topic_prob": 0.6162338852882385,
+        "normalized_position": 0.6352156302120562,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I just didn't plan to be around to help make it happen. “",
+        "max_topic_prob": 0.5718550682067871,
+        "normalized_position": 0.4670002382654277,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Except I have plans with Becca.",
+        "max_topic_prob": 0.5494058132171631,
+        "normalized_position": 0.6771503454848702,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "What’re your plans?”",
+        "max_topic_prob": 0.7405247688293457,
+        "normalized_position": 0.347135955831608,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I was at a crossroads with my plans.",
+        "max_topic_prob": 0.7250462770462036,
+        "normalized_position": 0.3472509776857603,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Not planned exactly but planned, yeah.”",
+        "max_topic_prob": 0.7118031978607178,
+        "normalized_position": 0.7283758914193696,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 694
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "So, planned but not planned, exactly.” “",
+        "max_topic_prob": 0.6723332405090332,
+        "normalized_position": 0.7283183804922936,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 693
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Got big plans for the day,” I told him. “",
+        "max_topic_prob": 0.6619551181793213,
+        "normalized_position": 0.9874051069703244,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Right, then change of plans.",
+        "max_topic_prob": 0.6328495740890503,
+        "normalized_position": 0.4575569358178054,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 415
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "There’s a plan?”",
+        "max_topic_prob": 0.8030357360839844,
+        "normalized_position": 0.6366366366366366,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1022
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Change of plans?”",
+        "max_topic_prob": 0.7024317979812622,
+        "normalized_position": 0.9059059059059059,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1194
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Any plans?”",
+        "max_topic_prob": 0.6936332583427429,
+        "normalized_position": 0.8591091091091091,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 820
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You’ve discovered my insidious plan.” “",
+        "max_topic_prob": 0.6921916007995605,
+        "normalized_position": 0.6222472472472472,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 907
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I mean, unless you have other plans.”",
+        "max_topic_prob": 0.6833367943763733,
+        "normalized_position": 0.7696446446446447,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Are you saying that’s what you had planned next for me?",
+        "max_topic_prob": 0.6571091413497925,
+        "normalized_position": 0.4411911911911912,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1589
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "So what's the plan?\" \"",
+        "max_topic_prob": 0.8362244963645935,
+        "normalized_position": 0.741158181111543,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Let's wait until after we're done with our plan.\" \"",
+        "max_topic_prob": 0.69071364402771,
+        "normalized_position": 0.912164788184998,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Now I had to come up with Plan E. I had no idea what that was going to be.",
+        "max_topic_prob": 0.6846164464950562,
+        "normalized_position": 0.4601632335794792,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I realized I hadn't exactly thought Plan D all the way through.",
+        "max_topic_prob": 0.6841831207275391,
+        "normalized_position": 0.33696074621064903,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His plan was funny, so I decided to go along with him.",
+        "max_topic_prob": 0.6678577661514282,
+        "normalized_position": 0.916051301982122,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I wouldn't want to interfere with your plans.\" \"",
+        "max_topic_prob": 0.6357123255729675,
+        "normalized_position": 0.2914885347842985,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "So…what do you say we come up with a plan to make us all happy?”",
+        "max_topic_prob": 0.6417423486709595,
+        "normalized_position": 0.21490738674403034,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I’ll be keeping track of every step you take.",
+        "max_topic_prob": 0.48446786403656006,
+        "normalized_position": 0.2106672617719259,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "At the moment, Keefer was meeting with the front office manager to iron out some current problems and plan for the next trip he’d chaperone with another group of clients.",
+        "max_topic_prob": 0.3580878674983978,
+        "normalized_position": 0.2999330506583352,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Actually, that was exactly my plan,” he said, after giving it some thought. “",
+        "max_topic_prob": 0.683131992816925,
+        "normalized_position": 0.8758748629732692,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "So I began to plan something a little more devastating.”",
+        "max_topic_prob": 0.6483643054962158,
+        "normalized_position": 0.25061135002951346,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I’m actually planning a little event around it.",
+        "max_topic_prob": 0.5023309588432312,
+        "normalized_position": 0.18526013997807572,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Yes, but they have plans to, very soon.",
+        "max_topic_prob": 0.3910408616065979,
+        "normalized_position": 0.05944852011130787,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "What plan?”",
+        "max_topic_prob": 0.8622892498970032,
+        "normalized_position": 0.883156210718775,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The plan is in place.",
+        "max_topic_prob": 0.8140406012535095,
+        "normalized_position": 0.8843560735915895,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "That sounded like a plan. “",
+        "max_topic_prob": 0.7976551055908203,
+        "normalized_position": 0.17860815906753513,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 408
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The plan goes forward.",
+        "max_topic_prob": 0.7631502747535706,
+        "normalized_position": 0.8830419380642213,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Does that sound like a plan?”",
+        "max_topic_prob": 0.7479881644248962,
+        "normalized_position": 0.5359387498571592,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 446
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Therefore, I knew I needed to make a plan.",
+        "max_topic_prob": 0.7305243015289307,
+        "normalized_position": 0.45149125814192664,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "And have you developed a plan?” “",
+        "max_topic_prob": 0.7157818078994751,
+        "normalized_position": 0.5774542739828294,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 505
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You are agreeable to this plan?”",
+        "max_topic_prob": 0.6686627864837646,
+        "normalized_position": 0.5011198208286675,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I will explain to you what plans I have arranged for you.”",
+        "max_topic_prob": 0.6561861038208008,
+        "normalized_position": 0.39361702127659576,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 792
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Oh, Richard, yes, I approve of the plan greatly.” “",
+        "max_topic_prob": 0.6002589464187622,
+        "normalized_position": 0.44363568495707356,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1060
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "If not, I will send you a message to make you aware of our plans.” “",
+        "max_topic_prob": 0.587815523147583,
+        "normalized_position": 0.5985442329227324,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 618
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "As far as I know, dearest, what do you have planned for the day?” “",
+        "max_topic_prob": 0.5861703157424927,
+        "normalized_position": 0.5921985815602837,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 584
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "As it happens, I have a proposal for you.",
+        "max_topic_prob": 0.5255172252655029,
+        "normalized_position": 0.6696315120711563,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "We have plans.” “",
+        "max_topic_prob": 0.7794843316078186,
+        "normalized_position": 0.963392312385601,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "We have plans.”",
+        "max_topic_prob": 0.7771955728530884,
+        "normalized_position": 0.9582062233068944,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I have a plan.",
+        "max_topic_prob": 0.7587971091270447,
+        "normalized_position": 0.976967663209274,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "New plan.",
+        "max_topic_prob": 0.7246332168579102,
+        "normalized_position": 0.610738255033557,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It was part of my plan.",
+        "max_topic_prob": 0.7084121704101562,
+        "normalized_position": 0.922208663819402,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "And I have plans.",
+        "max_topic_prob": 0.7028415203094482,
+        "normalized_position": 0.8741610738255033,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "This is a set up. “",
+        "max_topic_prob": 0.4306454658508301,
+        "normalized_position": 0.9182091441227653,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I hadn’t planned on it.",
+        "max_topic_prob": 0.6218181848526001,
+        "normalized_position": 0.9536887452880991,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I have plans.” “",
+        "max_topic_prob": 0.7920883893966675,
+        "normalized_position": 0.1241780234442009,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I thought you didn’t have plans?” “",
+        "max_topic_prob": 0.748428463935852,
+        "normalized_position": 0.9803678642904794,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Tonight you have plans.”",
+        "max_topic_prob": 0.7397639751434326,
+        "normalized_position": 0.026875059563518537,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I needed to think, to plan.",
+        "max_topic_prob": 0.7320589423179626,
+        "normalized_position": 0.9400552749452016,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I have plans.",
+        "max_topic_prob": 0.7274215221405029,
+        "normalized_position": 0.12455922996283236,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I set a plan into motion, one I’d only toyed with in my head.",
+        "max_topic_prob": 0.7232856750488281,
+        "normalized_position": 0.708758219765558,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I had a plan, I was going to graduate and then go off to law school.",
+        "max_topic_prob": 0.602504312992096,
+        "normalized_position": 0.16804336602994321,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "My plan was to work with victims of abuse.",
+        "max_topic_prob": 0.5709843635559082,
+        "normalized_position": 0.16830149716055756,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Let’s do this, what’s the plan?” “",
+        "max_topic_prob": 0.7669185996055603,
+        "normalized_position": 0.24050632911392406,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Sound like a plan?”",
+        "max_topic_prob": 0.7505883574485779,
+        "normalized_position": 0.028481012658227847,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "So this is our plan?",
+        "max_topic_prob": 0.7372558116912842,
+        "normalized_position": 0.23022151898734178,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That was the plan.",
+        "max_topic_prob": 0.7065260410308838,
+        "normalized_position": 0.8439477848101266,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Everybody feel good about that plan now?”",
+        "max_topic_prob": 0.6675572395324707,
+        "normalized_position": 0.25969145569620256,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Seems to be a glitch in your plans, Ms. Planner.”",
+        "max_topic_prob": 0.6209133863449097,
+        "normalized_position": 0.6105617088607594,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 40
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.003648934127136547,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.003406813627254509,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.00267987183221672,
+        "n_sentences": 46
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.002305209774089442,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.003617072582589824,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.002812675792237015,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.005884660651235779,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0021486349848331646,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.000543773790103317,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00034080259009968474,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0006381620931716656,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0005235602094240838,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0001589067217543302,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0005208333333333333,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0006724195898240502,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0006749156355455568,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 72
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

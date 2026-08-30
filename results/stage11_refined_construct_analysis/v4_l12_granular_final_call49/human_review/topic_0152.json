@@ -1,0 +1,163 @@
+{
+  "topic_id": 152,
+  "label": "Awkward Apology and Embarrassment",
+  "taxonomy_main_id": "3.2",
+  "taxonomy_main_name": "Negative Emotions & Distress",
+  "taxonomy_secondary_id": "9.1",
+  "taxonomy_secondary_name": "Dialogue Delivery & Speech Tags",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "sorry",
+      "whispered",
+      "said",
+      "apologized",
+      "softly",
+      "mumbled",
+      "apologize",
+      "murmured",
+      "apologetically",
+      "stammered"
+    ],
+    "KeyBERT": [
+      "apology",
+      "apologize",
+      "forgive",
+      "cried",
+      "winced",
+      "kindly",
+      "politely",
+      "awkwardly",
+      "fault",
+      "mumbled"
+    ],
+    "POS": [
+      "nearest",
+      "graceful",
+      "direct",
+      "apology",
+      "unsure",
+      "painful",
+      "process",
+      "doorway",
+      "sir"
+    ],
+    "MMR": [
+      "mumbled",
+      "kindly",
+      "graceful",
+      "absently",
+      "wiping",
+      "gesturing",
+      "awkwardly",
+      "politely",
+      "apology",
+      "caressed"
+    ]
+  },
+  "stage08_snippets": [
+    "one of the girls goes, “oh my god, i’m so sorry!”",
+    "oh, charlotte,\" [person] said, feeling genuinely sorry for the woman.",
+    "i apologize that my sister bothered you with details from my personal life,” she said, searching the conversation for the nearest exit. “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8302416524616465,
+      "max_topic_prob": 0.7630956172943115,
+      "sentence": "Then softly and in a broken voice, she added, “I’m sorry, Ben.”"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8536047327785019,
+      "max_topic_prob": 0.7297108173370361,
+      "sentence": "I’m sorry I couldn’t save you from that,” he said softly. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8631304522209967,
+      "max_topic_prob": 0.7211096286773682,
+      "sentence": "I’m sorry he hit you,” she said softly without moving from the grate. “"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4833049232928908,
+      "max_topic_prob": 0.6987166404724121,
+      "sentence": "You’ll be sorry you did that,” he grated out. “"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8956181690564524,
+      "max_topic_prob": 0.6958233118057251,
+      "sentence": "I’m sorry, Your Grace,” she said, while every particle of her wanted to spit disgust into the woman’s exquisite face. “"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3794244460042114,
+      "max_topic_prob": 0.6846747398376465,
+      "sentence": "Softly, she said, “Kylemore, I’m sorry I left without telling you."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.0673777315296566,
+      "max_topic_prob": 0.6507948637008667,
+      "sentence": "Oh, honey, I am so sorry…’ She held me and allowed me to just cry all over her bare, tanned shoulder. ‘"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.274843912591051,
+      "max_topic_prob": 0.6151319742202759,
+      "sentence": "You’ll get over it,’ she said knowingly. ‘"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2885015608740895,
+      "max_topic_prob": 0.5830254554748535,
+      "sentence": "Sorry, honey – I’ve had an absolute bastard of a day,’ she said as she kissed me and dumped her coat on the floor."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.899390243902439,
+      "max_topic_prob": 0.8007776737213135,
+      "sentence": "Oh, sorry,” she said looking embarrassed. “"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.18999445676274945,
+      "max_topic_prob": 0.7998136878013611,
+      "sentence": "Sorry,” he said again. “"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2624722838137472,
+      "max_topic_prob": 0.757052481174469,
+      "sentence": "She mouthed the word sorry to me as she handed me the phone. “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,114 @@
+# Frozen H1 intimacy audit prompts (Pass A/B/C).
+# Alternate phrasing is meaning-equivalent for the stability pilot only.
+
+hypothesis: H1
+name: intimacy
+version: "1.1"
+frozen: true
+
+codes:
+  - id: I0
+    label: off_target
+    definition: Not about romantic intimacy, affection, sexual tension, or sexual contact.
+  - id: I1
+    label: emotional_intimacy
+    definition: Disclosure, vulnerability, emotional closeness without physical contact focus.
+  - id: I2
+    label: reassurance
+    definition: Comforting, soothing, affirming the partner's worth or the bond.
+  - id: I3
+    label: nonexplicit_affection
+    definition: >-
+      Kissing, holding, caressing, or undressing-as-prelude. Affectionate contact that is
+      NOT genital/oral/penetrative sex. Kissing and clothes-removal alone are I3, never I6.
+  - id: I4
+    label: sexual_tension
+    definition: Desire / anticipation without consummation.
+  - id: I5
+    label: erotic_escalation
+    definition: Building toward sex; heated but not yet full explicit act focus.
+  - id: I6
+    label: explicit_sex
+    definition: >-
+      Explicit sexual acts (genital contact, oral sex, penetration, orgasm-focused
+      intercourse). Do NOT code kissing, undressing, or non-genital caressing as I6 —
+      those are I3. When I6 applies, also set explicit_act_type.
+  - id: I7
+    label: aftercare
+    definition: Post-sex tenderness, checking in, bonding after intimacy.
+  - id: I8
+    label: negotiation
+    definition: Consent talk, boundaries, preferences about intimacy.
+  - id: I9
+    label: coercive_sexuality
+    definition: Pressure, force, non-consent, or ambiguous consent around sex.
+  - id: I10
+    label: eroticized_gaze
+    definition: Objectifying / erotic looking without mutual intimacy focus.
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+
+phrasing:
+  primary:
+    system: |
+      You are auditing BERTopic topics for a romance-novel research study.
+      Classify intimacy FUNCTION only. Do not invent plot. Do not use rating or taxonomy labels
+      (they are hidden). Prefer the most specific applicable code.
+      Critical boundary: kissing / undressing / non-genital caress = I3; only genital/oral/penetrative
+      sexual acts = I6. Respond with JSON only matching the schema.
+    pass_a: |
+      Pass A — lexical only.
+      Interpret each keyword list independently (Main, KeyBERT, POS, MMR), then give a consensus code
+      and note disagreements.
+      Topic {topic_id}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "I#", "KeyBERT": "I#", "POS": "I#", "MMR": "I#"}},
+      "consensus_code": "I#", "disagreement": bool, "rationale": "..."}}
+    pass_b: |
+      Pass B — contextual sentences (rating cells are blinded as CELL_*).
+      Code each sentence, estimate code proportions, mark MIXED if no code >= 70%.
+      Topic {topic_id}
+      Sentences:
+      {sentences_block}
+      Return JSON: {{"topic_id": int, "sentence_codes": [{{"sid": "...", "code": "I#"}}],
+      "proportions": {{"I#": float}}, "dominant_code": "I#|MIXED", "explicit_act_type": null|string,
+      "rationale": "..."}}
+    pass_c: |
+      Pass C — adjudication. Taxonomy metadata is now revealed. Still ignore rating effects.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Choose action and proposed construct labels.
+      Return JSON: {{"topic_id": int, "action": "KEEP|...", "intimacy_code": "I#|MIXED",
+      "proposed_constructs": ["..."], "manual_review_required": bool, "rationale": "..."}}
+
+  alternate:
+    system: |
+      Romance-corpus topic auditor. Your job is functional intimacy coding only.
+      Ignore popularity, ratings, and any desire to match the current taxonomy leaf.
+      Kissing and undressing are nonexplicit affection (I3), not explicit sex (I6).
+      JSON responses only.
+    pass_a: |
+      Lexical pass. Read four independent keyword representations for topic {topic_id}.
+      Assign one I-code per representation, then a single consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON schema: per_rep, consensus_code, disagreement, rationale.
+    pass_b: |
+      Contextual pass for topic {topic_id}. Sentences below carry blinded sampling cells.
+      Assign I-codes to sentences, report proportions, use MIXED when no code reaches 70%.
+      {sentences_block}
+    pass_c: |
+      Adjudicate topic {topic_id} given lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Pick KEEP/RENAME/REINTERPRET/RETAXONOMIZE/SPLIT/EXCLUDE_FROM_HYPOTHESIS. No rating reasoning.

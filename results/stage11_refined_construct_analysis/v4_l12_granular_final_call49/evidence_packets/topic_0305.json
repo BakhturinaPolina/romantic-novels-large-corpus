@@ -1,0 +1,784 @@
+{
+  "topic_id": 305,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "regret",
+        "regretted",
+        "regrets",
+        "regretting",
+        "regrettable",
+        "won",
+        "will",
+        "decision",
+        "promise",
+        "don"
+      ],
+      "KeyBERT": [
+        "embarrassing",
+        "fears",
+        "remark",
+        "admit",
+        "surely",
+        "instantly",
+        "decision"
+      ],
+      "POS": [
+        "fears",
+        "remark",
+        "decision",
+        "loose",
+        "upset",
+        "unable"
+      ],
+      "MMR": [
+        "handled",
+        "fears",
+        "remark",
+        "fumbled",
+        "drift",
+        "assure",
+        "acted",
+        "decision",
+        "upset",
+        "ended"
+      ]
+    },
+    "stage08_snippets": [
+      "i know that now, and i’ll go to my grave regretting what i did to you.” “",
+      "come on in, you’ll no doubt regret it.",
+      "you’ll regret that.’ ‘"
+    ],
+    "label_public": "Confessing A Lifelong Regret"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘",
+        "max_topic_prob": 0.6633476614952087,
+        "normalized_position": 0.6006559031281534,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I fear that my careless remarks must have been the cause of that outburst.",
+        "max_topic_prob": 0.529068112373352,
+        "normalized_position": 0.7759838546922301,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’d really rather you didn’t!’",
+        "max_topic_prob": 0.5260027647018433,
+        "normalized_position": 0.8607467204843592,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "At his words, a wave of regret washed over Helena. ‘",
+        "max_topic_prob": 0.5141103863716125,
+        "normalized_position": 0.4341574167507568,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Regret surged.",
+        "max_topic_prob": 0.7045595645904541,
+        "normalized_position": 0.4542403904820012,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "There were no regrets.",
+        "max_topic_prob": 0.6328611373901367,
+        "normalized_position": 0.023184868822452714,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Cringing, he regretted the admission.",
+        "max_topic_prob": 0.6141446828842163,
+        "normalized_position": 0.610738255033557,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Regret for her actions consumed her.",
+        "max_topic_prob": 0.5972819924354553,
+        "normalized_position": 0.6937156802928615,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "You’ll never regret it, I promise.\"",
+        "max_topic_prob": 0.8063786029815674,
+        "normalized_position": 0.4196206785703849,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "You're going to regret this, Father.\"",
+        "max_topic_prob": 0.7295703887939453,
+        "normalized_position": 0.6867237499634706,
+        "tertile": "end",
+        "chapter_index": 62,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I have been unkind to you, which I deeply regret.",
+        "max_topic_prob": 0.5806866884231567,
+        "normalized_position": 0.31771822671615185,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 1449
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Now you don't, but you wish you still did.\"",
+        "max_topic_prob": 0.5557873249053955,
+        "normalized_position": 0.6278675589584733,
+        "tertile": "middle",
+        "chapter_index": 53,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I would rather this belt cut into me forever; never know the love of a man, than to take that risk.\"",
+        "max_topic_prob": 0.4741849899291992,
+        "normalized_position": 0.05622607323416815,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 801
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Have I done what I said I'd never do?",
+        "max_topic_prob": 0.43826723098754883,
+        "normalized_position": 0.787603378240159,
+        "tertile": "end",
+        "chapter_index": 70,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "He had no regrets. “",
+        "max_topic_prob": 0.6812976002693176,
+        "normalized_position": 0.4470257850395711,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1297
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "At least you did it from the ground the second time. ” “",
+        "max_topic_prob": 0.44546979665756226,
+        "normalized_position": 0.24802144498340567,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1940
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Well, I regret it, nonetheless.” “",
+        "max_topic_prob": 0.8175585269927979,
+        "normalized_position": 0.4890588863191603,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Why regret it?”",
+        "max_topic_prob": 0.8086161613464355,
+        "normalized_position": 0.16011385874399572,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Never regret.” “",
+        "max_topic_prob": 0.8070745468139648,
+        "normalized_position": 0.488614125600427,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Regret? “",
+        "max_topic_prob": 0.7720073461532593,
+        "normalized_position": 0.6898238747553816,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Regret that he was not there.",
+        "max_topic_prob": 0.7282381057739258,
+        "normalized_position": 0.4025084504536559,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The memory brought with it a pang of regret.",
+        "max_topic_prob": 0.7141069173812866,
+        "normalized_position": 0.40241949830990925,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "In a way, he wanted to regret it.",
+        "max_topic_prob": 0.7240275144577026,
+        "normalized_position": 0.40783312047679865,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry for everything else that’s happening, but I won’t regret our baby.”",
+        "max_topic_prob": 0.6535271406173706,
+        "normalized_position": 0.7258407833120477,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I shouldn’t have done it in the first place.”",
+        "max_topic_prob": 0.602460503578186,
+        "normalized_position": 0.1781609195402299,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She didn’t regret last night, but she did hope it didn’t destroy the friendship they had.",
+        "max_topic_prob": 0.5931577682495117,
+        "normalized_position": 0.3790974882928906,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I won’t regret the baby, Jennie.",
+        "max_topic_prob": 0.5729691982269287,
+        "normalized_position": 0.7256279267773521,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You’ll regret it.” “",
+        "max_topic_prob": 0.8425174951553345,
+        "normalized_position": 0.7370162090638439,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "And I regret it.",
+        "max_topic_prob": 0.7998260855674744,
+        "normalized_position": 0.32748924909030763,
+        "tertile": "begin",
+        "chapter_index": 23,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "And regretted it a little. “",
+        "max_topic_prob": 0.7600115537643433,
+        "normalized_position": 0.03225272907707575,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I deeply regret putting you in danger.”",
+        "max_topic_prob": 0.712627649307251,
+        "normalized_position": 0.7853953026794575,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 373
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Convey my regrets that my obligations mean I cannot linger hereabouts.”",
+        "max_topic_prob": 0.6431466341018677,
+        "normalized_position": 0.2321369500496196,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "A snap judgment that I very much regret.” “",
+        "max_topic_prob": 0.6412179470062256,
+        "normalized_position": 0.1854945418458485,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I reminded him and immediately regret it.",
+        "max_topic_prob": 0.7068401575088501,
+        "normalized_position": 0.008239700374531835,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I never regretted doing it either.",
+        "max_topic_prob": 0.6780071258544922,
+        "normalized_position": 0.3295880149812734,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I sputter out and immediately regret my words.",
+        "max_topic_prob": 0.6561625003814697,
+        "normalized_position": 0.8632209737827715,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I replay the conversation in my head with Jacqueline, wishing that the outcomes I had practiced were the final result instead of how reality turned out to be.",
+        "max_topic_prob": 0.4514146149158478,
+        "normalized_position": 0.9009737827715356,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "That was a risky move on my behalf.",
+        "max_topic_prob": 0.4433097243309021,
+        "normalized_position": 0.21483146067415732,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I declare sadly.",
+        "max_topic_prob": 0.37912341952323914,
+        "normalized_position": 0.8876404494382022,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It’s my biggest regret.",
+        "max_topic_prob": 0.7994908690452576,
+        "normalized_position": 0.8515964240102171,
+        "tertile": "end",
+        "chapter_index": 102,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You mean, you’d regret.",
+        "max_topic_prob": 0.784396767616272,
+        "normalized_position": 0.8252022137079609,
+        "tertile": "end",
+        "chapter_index": 98,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It’s one of my biggest regrets.",
+        "max_topic_prob": 0.7262505292892456,
+        "normalized_position": 0.6310770540655598,
+        "tertile": "middle",
+        "chapter_index": 73,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I couldn’t trust myself to not say something we’d regret.” “",
+        "max_topic_prob": 0.7150759696960449,
+        "normalized_position": 0.8251170710940826,
+        "tertile": "end",
+        "chapter_index": 98,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "His voice is laced with regret. “",
+        "max_topic_prob": 0.7049426436424255,
+        "normalized_position": 0.019582801191996593,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "My regret is smothering me.",
+        "max_topic_prob": 0.6958366632461548,
+        "normalized_position": 0.8287782034908472,
+        "tertile": "end",
+        "chapter_index": 100,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "40 The ‘regrettable scene’ in Liverpool on Armistice Day 1921 was reported in just these tones.",
+        "max_topic_prob": 0.3834240138530731,
+        "normalized_position": 0.11276012260041943,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "28 Both competitions proved disappointing – a symbol perhaps of attitudes towards the League.",
+        "max_topic_prob": 0.27083641290664673,
+        "normalized_position": 0.5016938215841265,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "You regret it, don’t you?",
+        "max_topic_prob": 0.734198808670044,
+        "normalized_position": 0.2710014947683109,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I was right on the edge of doing something I knew I’d regret.",
+        "max_topic_prob": 0.6958893537521362,
+        "normalized_position": 0.6745889387144992,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "No regret whatsoever.",
+        "max_topic_prob": 0.6940439939498901,
+        "normalized_position": 0.2186846038863976,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I watched his eyes flicker with something then…regret?",
+        "max_topic_prob": 0.6566965579986572,
+        "normalized_position": 0.04155455904334828,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Judging by the look there, he instantly regretted it. “",
+        "max_topic_prob": 0.6452350616455078,
+        "normalized_position": 0.6110612855007473,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Better a short period of hurt than a lifetime of regret for her.",
+        "max_topic_prob": 0.5910309553146362,
+        "normalized_position": 0.14573991031390135,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "And, so far, he couldn’t bring himself to regret, despite his initial reluctance.",
+        "max_topic_prob": 0.6138465404510498,
+        "normalized_position": 0.5463728191000918,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I wish they would’ve let me know ahead of time.",
+        "max_topic_prob": 0.43096888065338135,
+        "normalized_position": 0.5107131925313744,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 386
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.001971203291052451,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0024245689655172415,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0012033694344163659,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0010695187165775401,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.001359106010268801,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.001228878648233487,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.001049042748492001,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0012557555462536626,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.00023674242424242425,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00030755036137167463,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0002565747273893522,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0003231539828728389,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 55
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

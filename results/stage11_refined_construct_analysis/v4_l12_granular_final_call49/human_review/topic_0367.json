@@ -1,0 +1,154 @@
+{
+  "topic_id": 367,
+  "label": "Sorting Out Concert Tickets",
+  "taxonomy_main_id": "4.2",
+  "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+  "taxonomy_secondary_id": "8.3b",
+  "taxonomy_secondary_name": "Everyday Props & Communication Media",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "tour",
+      "ticket",
+      "tickets",
+      "tours",
+      "concert",
+      "cancel",
+      "concerts",
+      "bought",
+      "7heaven",
+      "tomorrow"
+    ],
+    "KeyBERT": [
+      "guided",
+      "surely",
+      "announced",
+      "uh"
+    ],
+    "POS": [
+      "meantime",
+      "combination",
+      "apology",
+      "members",
+      "bigger",
+      "dozen"
+    ],
+    "MMR": [
+      "meantime",
+      "combination",
+      "apology",
+      "winked",
+      "cost",
+      "members",
+      "paid",
+      "spoken",
+      "worn",
+      "mentioned"
+    ]
+  },
+  "stage08_snippets": [
+    "i’m assuming since there are two tickets, you’ll go with me?” “",
+    "we’ll have to figure out how to get you a ticket.",
+    "[person]—” “sure, i’ll give her the five-cent tour.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.279045643153527,
+      "max_topic_prob": 0.7044106721878052,
+      "sentence": "You bought my ticket.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2551867219917012,
+      "max_topic_prob": 0.6726130843162537,
+      "sentence": "I’ll pay for his ticket.”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4224066390041494,
+      "max_topic_prob": 0.6719747185707092,
+      "sentence": "We’re taking our grand tour."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.495850622406639,
+      "max_topic_prob": 0.6385709047317505,
+      "sentence": "We can’t purchase tickets.”"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.312448132780083,
+      "max_topic_prob": 0.5951170921325684,
+      "sentence": "Something I learned when I took my grand tour.”"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2884854771784232,
+      "max_topic_prob": 0.516502857208252,
+      "sentence": "Mrs. Schmidt told me this is the coach I should take, and I was simply trying to find out—” “How much is the ticket?”"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.26504521359526034,
+      "max_topic_prob": 0.5873836874961853,
+      "sentence": "We’ve had one tour group after another this morning."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.6986799708969962,
+      "max_topic_prob": 0.4542618989944458,
+      "sentence": "They’re probably trying to cater to the tourists.”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.42511173474690783,
+      "max_topic_prob": 0.4346007704734802,
+      "sentence": "He took my hand and guided me through the crowd of tourists on the side walk."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.21972318339100347,
+      "max_topic_prob": 0.7239500284194946,
+      "sentence": "We’ll continue the tour later.”"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.08846597462514418,
+      "max_topic_prob": 0.6144017577171326,
+      "sentence": "All I have to do is take the public track tour and get conveniently separated from the tourists."
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5392156862745098,
+      "max_topic_prob": 0.5331385135650635,
+      "sentence": "I hop back in the limo and rush to my second event of the night, a Q & A event with racing fans."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

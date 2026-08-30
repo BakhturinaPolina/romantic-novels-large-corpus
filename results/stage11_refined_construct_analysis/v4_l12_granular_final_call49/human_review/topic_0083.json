@@ -1,0 +1,164 @@
+{
+  "topic_id": 83,
+  "label": "Reassured About Eating Regularly",
+  "taxonomy_main_id": "4.6",
+  "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "eat",
+      "hungry",
+      "food",
+      "eating",
+      "eaten",
+      "starving",
+      "something",
+      "appetite",
+      "you",
+      "ate"
+    ],
+    "KeyBERT": [
+      "eaten",
+      "meal",
+      "feeding",
+      "tasted",
+      "constantly",
+      "eagerly",
+      "admit",
+      "ye",
+      "previous",
+      "gotta"
+    ],
+    "POS": [
+      "regular",
+      "president",
+      "result",
+      "meal",
+      "latest",
+      "current",
+      "previous",
+      "bigger",
+      "difference",
+      "unable"
+    ],
+    "MMR": [
+      "eaten",
+      "feeding",
+      "skipped",
+      "regular",
+      "eagerly",
+      "president",
+      "meal",
+      "latest",
+      "warned",
+      "tasted"
+    ]
+  },
+  "stage08_snippets": [
+    "i've eaten every few hours.",
+    "of course, i’ve never eaten one.”",
+    "and then you'll return late again… you won't need to do that—be late—because you've eaten.\""
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7844890321239214,
+      "max_topic_prob": 0.7757102251052856,
+      "sentence": "I’m not very hungry now."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9047718058010188,
+      "max_topic_prob": 0.7561399936676025,
+      "sentence": "Oh, I really was starving. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9106975777107807,
+      "max_topic_prob": 0.7549786567687988,
+      "sentence": "I really was starving.”"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9060193367293897,
+      "max_topic_prob": 0.7447203993797302,
+      "sentence": "Say, are you hungry?"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7271026094188585,
+      "max_topic_prob": 0.7267926931381226,
+      "sentence": "Wow, you really must have been hungry.”"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.9061232976400874,
+      "max_topic_prob": 0.7241597175598145,
+      "sentence": "You look hungry,” he said."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.5530564121168148,
+      "max_topic_prob": 0.7969628572463989,
+      "sentence": "I’m not hungry.”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.034796541507950904,
+      "max_topic_prob": 0.7854684591293335,
+      "sentence": "Then I’ll go hungry because I’m not eating with you.’ ‘"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.061642179091843524,
+      "max_topic_prob": 0.7797862887382507,
+      "sentence": "I don’t think I’m hungry.’ ‘"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2478082108954592,
+      "max_topic_prob": 0.7756340503692627,
+      "sentence": "I’m starving.’ ‘"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.36534857004655663,
+      "max_topic_prob": 0.7596950531005859,
+      "sentence": "I’m not hungry.’"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.29076727734445856,
+      "max_topic_prob": 0.7549547553062439,
+      "sentence": "Are you hungry?’ ‘"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

@@ -1,0 +1,164 @@
+{
+  "topic_id": 125,
+  "label": "Furnished Room Described in Detail",
+  "taxonomy_main_id": "2.5",
+  "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+  "taxonomy_secondary_id": "8.1",
+  "taxonomy_secondary_name": "Domestic Spaces & Routines",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "furniture",
+      "chairs",
+      "walls",
+      "tables",
+      "room",
+      "floors",
+      "wood",
+      "table",
+      "large",
+      "wall"
+    ],
+    "KeyBERT": [
+      "tables",
+      "drawer",
+      "bedside",
+      "pieces",
+      "arranged",
+      "stool",
+      "framed",
+      "items",
+      "surroundings",
+      "carved"
+    ],
+    "POS": [
+      "tables",
+      "matching",
+      "pattern",
+      "bedside",
+      "polished",
+      "separate",
+      "enormous",
+      "television",
+      "stunning",
+      "larger"
+    ],
+    "MMR": [
+      "tables",
+      "matching",
+      "bedside",
+      "draped",
+      "contained",
+      "television",
+      "stunning",
+      "visits",
+      "contrast",
+      "arranged"
+    ]
+  },
+  "stage08_snippets": [
+    "a large bed with end tables was on the wall to the right.",
+    "polished oak tables, whose tops featured the tree’s rings and matching chairs provided ample room for comfortable dining.",
+    "white carpet covered the floors, and red accent pieces lined white bookshelves and end tables. “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.41706074936340487,
+      "max_topic_prob": 0.6292697191238403,
+      "sentence": "And while he had taken refuge in the male safe zone of earth tones, dark tan leather sofa and two matching chairs, a solid coffee table with storage and a geometric patterned rug on the wood floor, there were some surprises there, too."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.41560567479083305,
+      "max_topic_prob": 0.6132460236549377,
+      "sentence": "It wasn’t the spaciousness of the great room design."
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6667879228810476,
+      "max_topic_prob": 0.592836856842041,
+      "sentence": "The guest room was more than comfortable."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7804656238632229,
+      "max_topic_prob": 0.5725932717323303,
+      "sentence": "The furniture gleamed like polished metal, even in the dim light of the closed-up house. “"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.14550745725718442,
+      "max_topic_prob": 0.5438528060913086,
+      "sentence": "The little house was clearly the office, and was surrounded with plants, trees and flowers that looked as happy and healthy as the dogs."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7810112768279375,
+      "max_topic_prob": 0.5327519178390503,
+      "sentence": "Judging from the rooms we could see, the only windowless room is that one bathroom we could see into through the kitchen."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.877233070211882,
+      "max_topic_prob": 0.6974421739578247,
+      "sentence": "Comfortable furniture was interspersed with potted plants."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.07789779808890736,
+      "max_topic_prob": 0.6665898561477661,
+      "sentence": "The floor was clear, and the room tidy."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5409223099293726,
+      "max_topic_prob": 0.6430389881134033,
+      "sentence": "The living and the dining rooms were all in one great room that was filled with fashionable furniture suitable for a beachside residence."
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.34680099709181555,
+      "max_topic_prob": 0.6336228251457214,
+      "sentence": "The room was complicated."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5198379725799751,
+      "max_topic_prob": 0.6034931540489197,
+      "sentence": "It knocked the sofa and chairs around the room and the artwork hanging on the walls askew."
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.656418778562526,
+      "max_topic_prob": 0.5996415615081787,
+      "sentence": "The interior of the pub was the same throughout, bare brick walls and lots of wood—wooden bars, floors, stools, tables and chairs."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

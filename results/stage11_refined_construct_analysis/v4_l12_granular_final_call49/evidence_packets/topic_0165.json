@@ -1,0 +1,1129 @@
+{
+  "topic_id": 165,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "want",
+        "need",
+        "you",
+        "wanted",
+        "me",
+        "wanting",
+        "always",
+        "only",
+        "don",
+        "since"
+      ],
+      "KeyBERT": [
+        "sir"
+      ],
+      "POS": [
+        "unwilling",
+        "terms",
+        "usual",
+        "comfortable",
+        "sir"
+      ],
+      "MMR": [
+        "dislike",
+        "uttered",
+        "breathlessly",
+        "unwilling",
+        "terms",
+        "snatched",
+        "responded",
+        "usual",
+        "comfortable",
+        "sir"
+      ]
+    },
+    "stage08_snippets": [
+      "my god, i’ve been wanting you all day long, girl!” “",
+      "i’ve been interested in you for a long time.” “",
+      "i just want to be with you and hear more about what you’ve been doing all these years."
+    ],
+    "label_public": "Confessing Long-Simmering Desire"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "What would I be without you?",
+        "max_topic_prob": 0.5875322818756104,
+        "normalized_position": 0.19937694704049844,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Shyam, I want to push him away, but he’s in everyone, even you!” “",
+        "max_topic_prob": 0.44302457571029663,
+        "normalized_position": 0.6724521584334668,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 1511
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I begged.",
+        "max_topic_prob": 0.43598663806915283,
+        "normalized_position": 0.5785491766800178,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1300
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I…want…you.”",
+        "max_topic_prob": 0.8693072199821472,
+        "normalized_position": 0.8747112274757431,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I want you.",
+        "max_topic_prob": 0.8021799325942993,
+        "normalized_position": 0.6510857846912059,
+        "tertile": "middle",
+        "chapter_index": 41,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I want you.",
+        "max_topic_prob": 0.8021799325942993,
+        "normalized_position": 0.8730941013399045,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You are what I need, who I want.",
+        "max_topic_prob": 0.7535687685012817,
+        "normalized_position": 0.6511627906976745,
+        "tertile": "middle",
+        "chapter_index": 41,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I don’t want you.”",
+        "max_topic_prob": 0.7530558109283447,
+        "normalized_position": 0.3712459571846604,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I hate you more for saying no when I not only need you, but want you.”",
+        "max_topic_prob": 0.7485579252243042,
+        "normalized_position": 0.8734021253657785,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I thought you wanted to be with me, too.\" \"",
+        "max_topic_prob": 0.6684609651565552,
+        "normalized_position": 0.8832167832167832,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I want us to be together, like, forever.\"",
+        "max_topic_prob": 0.6399247646331787,
+        "normalized_position": 0.8736596736596737,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I demanded. \"",
+        "max_topic_prob": 0.6301058530807495,
+        "normalized_position": 0.5428904428904429,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 482
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You don't want anything to do with me!\"",
+        "max_topic_prob": 0.5335862636566162,
+        "normalized_position": 0.5475524475524476,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 502
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Don't you want pizza, Kelsey?\"",
+        "max_topic_prob": 0.5267046689987183,
+        "normalized_position": 0.6717948717948717,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Why would you want my autograph?\"",
+        "max_topic_prob": 0.5181486010551453,
+        "normalized_position": 0.6834498834498834,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You want me.”",
+        "max_topic_prob": 0.8701672554016113,
+        "normalized_position": 0.28117359413202936,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 542
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Because I need you. “",
+        "max_topic_prob": 0.7698405981063843,
+        "normalized_position": 0.8679706601466992,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You know I want to be here for you.”",
+        "max_topic_prob": 0.7594437599182129,
+        "normalized_position": 0.5956601466992665,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ve wanted you for so long.”",
+        "max_topic_prob": 0.7455573081970215,
+        "normalized_position": 0.2839242053789731,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 551
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "What do you want me to do to you?”",
+        "max_topic_prob": 0.7443543672561646,
+        "normalized_position": 0.7365525672371638,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Tell me you need me.”",
+        "max_topic_prob": 0.732617974281311,
+        "normalized_position": 0.7924816625916871,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Trouble is, you have to want me too,’ he said. ‘",
+        "max_topic_prob": 0.6794575452804565,
+        "normalized_position": 0.4600735771478035,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You going to judge me wanting again, Maddy?’ ‘",
+        "max_topic_prob": 0.6042183637619019,
+        "normalized_position": 0.2603332611988747,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I want to build a life with you.",
+        "max_topic_prob": 0.5943863391876221,
+        "normalized_position": 0.971001947630383,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I want a life with room for Delacourte in it, and all that goes with it, and room for my work as well, and Yun’s gruel, and I want you at my side, even when you can’t be there in person, and I want you in my heart, because that’s where you belong.’",
+        "max_topic_prob": 0.554129958152771,
+        "normalized_position": 0.9714347543821683,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Wanted you, in spite of all those very good reasons to stay away from you.",
+        "max_topic_prob": 0.531428873538971,
+        "normalized_position": 0.47175935944600733,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "He’s using me to get to you.",
+        "max_topic_prob": 0.5151491165161133,
+        "normalized_position": 0.2997186756113395,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 505
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "What do you want me to do to you?”",
+        "max_topic_prob": 0.7443544864654541,
+        "normalized_position": 0.6913902957033164,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "And I want you to be able to live.” “",
+        "max_topic_prob": 0.6883037686347961,
+        "normalized_position": 0.46103577846757066,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I want you to feel yourself come.” “",
+        "max_topic_prob": 0.6572968363761902,
+        "normalized_position": 0.1320045744159451,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I want you inside of me—now!”",
+        "max_topic_prob": 0.6541006565093994,
+        "normalized_position": 0.06763600718836792,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Your wish is my command.”",
+        "max_topic_prob": 0.6463539004325867,
+        "normalized_position": 0.22823068126123183,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "I can’t tell you how much I needed you to be here.” “",
+        "max_topic_prob": 0.6322731971740723,
+        "normalized_position": 0.6887763437346839,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "You wanted me since you first saw me.",
+        "max_topic_prob": 0.7044742107391357,
+        "normalized_position": 0.667637776159262,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Do you want a boy or girl?” “",
+        "max_topic_prob": 0.6112772822380066,
+        "normalized_position": 0.9556931294003399,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Let me rephrase, I want to free you.",
+        "max_topic_prob": 0.5779879093170166,
+        "normalized_position": 0.771546491866958,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Why were you sent to me?”",
+        "max_topic_prob": 0.564233124256134,
+        "normalized_position": 0.6989560572954601,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "But I’m serious; you need someone, Shay.”",
+        "max_topic_prob": 0.5455874800682068,
+        "normalized_position": 0.01917941247875698,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "So you’ll turn me into a slave.”",
+        "max_topic_prob": 0.5203096866607666,
+        "normalized_position": 0.6817188638018936,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "God, I want you.”",
+        "max_topic_prob": 0.808138906955719,
+        "normalized_position": 0.1417624521072797,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I wanna be in you.”",
+        "max_topic_prob": 0.7450879812240601,
+        "normalized_position": 0.8568691844553914,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I want to please you.” “",
+        "max_topic_prob": 0.7283151149749756,
+        "normalized_position": 0.8563218390804598,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You want me?",
+        "max_topic_prob": 0.7000553607940674,
+        "normalized_position": 0.14258347016967707,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Yes, Jayden, I need you.”",
+        "max_topic_prob": 0.6516245603561401,
+        "normalized_position": 0.5276409414340448,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I want you to come around my cock.”",
+        "max_topic_prob": 0.6419568061828613,
+        "normalized_position": 0.8492063492063492,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I want you more. ” “",
+        "max_topic_prob": 0.8083005547523499,
+        "normalized_position": 0.8272421646242273,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 560
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I want it and I want you! ”",
+        "max_topic_prob": 0.761866569519043,
+        "normalized_position": 0.6620756967790912,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I want you as long as you want me and I hope that ’ s a really long time. ”",
+        "max_topic_prob": 0.7037085294723511,
+        "normalized_position": 0.706430972779525,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I want you to fall in love and be happy.",
+        "max_topic_prob": 0.6953197717666626,
+        "normalized_position": 0.9686584969092289,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I want you too damn much!",
+        "max_topic_prob": 0.6875936985015869,
+        "normalized_position": 0.6629432816397354,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "If you need me, call me, okay? ” “",
+        "max_topic_prob": 0.6842329502105713,
+        "normalized_position": 0.8440516212992083,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I need you.”",
+        "max_topic_prob": 0.8071275949478149,
+        "normalized_position": 0.31438127090301005,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I want you to.” * * *",
+        "max_topic_prob": 0.7429234981536865,
+        "normalized_position": 0.5273132664437012,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You want to be taken over by me as much as I want to lose myself in you.”",
+        "max_topic_prob": 0.7196017503738403,
+        "normalized_position": 0.3409141583054627,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I just need to be with you.”",
+        "max_topic_prob": 0.6874474883079529,
+        "normalized_position": 0.624526198439242,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I want to own you.",
+        "max_topic_prob": 0.6731671094894409,
+        "normalized_position": 0.27959866220735785,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I’ve needed you for so long.",
+        "max_topic_prob": 0.6521899700164795,
+        "normalized_position": 0.4140468227424749,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I have someone I want you to meet.” “",
+        "max_topic_prob": 0.7065069675445557,
+        "normalized_position": 0.386547811993517,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I–I want to taste you.”",
+        "max_topic_prob": 0.6609190702438354,
+        "normalized_position": 0.9316585629389519,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I want to spend the rest of my life with you.” “",
+        "max_topic_prob": 0.6521639227867126,
+        "normalized_position": 0.8878984332793085,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "And he wants us?”",
+        "max_topic_prob": 0.6231011152267456,
+        "normalized_position": 0.27255537547271746,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I want you as low to the ground as you can get.”",
+        "max_topic_prob": 0.6194901466369629,
+        "normalized_position": 0.5167477039438142,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "And I’d love to suck your cock.”",
+        "max_topic_prob": 0.592865526676178,
+        "normalized_position": 0.1912479740680713,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I need you right now.”",
+        "max_topic_prob": 0.7551977038383484,
+        "normalized_position": 0.08051894563426688,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He only wants you.”",
+        "max_topic_prob": 0.7236126661300659,
+        "normalized_position": 0.7920098846787479,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I need you, Jess.”",
+        "max_topic_prob": 0.7019762992858887,
+        "normalized_position": 0.17051070840197693,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I want you to show me.”",
+        "max_topic_prob": 0.6955191493034363,
+        "normalized_position": 0.31280889621087316,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’ll always be yours, and I want you to always be mine.”",
+        "max_topic_prob": 0.6708025932312012,
+        "normalized_position": 0.036037891268533774,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You’re all I’ll ever need.”",
+        "max_topic_prob": 0.6667478084564209,
+        "normalized_position": 0.07537067545304778,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And I want you, darling.” “",
+        "max_topic_prob": 0.8178733587265015,
+        "normalized_position": 0.4835940744842863,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I want you so badly, Dess.” “",
+        "max_topic_prob": 0.7398933172225952,
+        "normalized_position": 0.4834556278554617,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "She wants you, babe.”",
+        "max_topic_prob": 0.7290397882461548,
+        "normalized_position": 0.6890488716599751,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I want you so much.",
+        "max_topic_prob": 0.7263169288635254,
+        "normalized_position": 0.28007753011214176,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And I want to be with you.",
+        "max_topic_prob": 0.7232897281646729,
+        "normalized_position": 0.9327149383912502,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Just like that, baby, I want you to do me.”",
+        "max_topic_prob": 0.712029218673706,
+        "normalized_position": 0.28049286999861556,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Because you have me.’ * ‘",
+        "max_topic_prob": 0.6014127731323242,
+        "normalized_position": 0.8119970738844184,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I thought you wouldn’t want anything to do with me after that.’ ‘",
+        "max_topic_prob": 0.5836067199707031,
+        "normalized_position": 0.9716329350564903,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "And I’m trying to enjoy you.’ ‘",
+        "max_topic_prob": 0.5817043781280518,
+        "normalized_position": 0.18434528163862474,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "You deserve someone better than me.’",
+        "max_topic_prob": 0.5728784799575806,
+        "normalized_position": 0.7450215394619198,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I need you to understand that.’ ‘",
+        "max_topic_prob": 0.5584297180175781,
+        "normalized_position": 0.708201251727221,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Why are you so nice to me?’ ‘",
+        "max_topic_prob": 0.5566281080245972,
+        "normalized_position": 0.5215801024140454,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "I want a girl too.”",
+        "max_topic_prob": 0.6631231307983398,
+        "normalized_position": 0.9882305737595293,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "I want to fuck you. .”",
+        "max_topic_prob": 0.6444905400276184,
+        "normalized_position": 0.6731309348669252,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "All I need is you.",
+        "max_topic_prob": 0.6411085724830627,
+        "normalized_position": 0.9724488431188979,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "Please,” I begged as the pull came for me. “",
+        "max_topic_prob": 0.6067246198654175,
+        "normalized_position": 0.7313093486692523,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "But he needs me.",
+        "max_topic_prob": 0.5948128700256348,
+        "normalized_position": 0.5599839507823994,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 393
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "As if I needed anything more to make me want her.",
+        "max_topic_prob": 0.5827618837356567,
+        "normalized_position": 0.6680486826267219,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 172
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.005297600498597694,
+        "n_sentences": 68
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.006475688727911316,
+        "n_sentences": 59
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.004693539480949751,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.008082901554404146,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0058309037900874635,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.006549609810479376,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.007355194606190622,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.004625850340136055,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.001392757660167131,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.001813087193011373,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0013404825737265416,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0017414018284719198,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0017498990442859066,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0018841262364578427,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0012195121951219512,
+        "n_sentences": 10
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 87
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.85,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

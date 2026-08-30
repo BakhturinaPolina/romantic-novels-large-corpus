@@ -1,0 +1,204 @@
+# Stage 11 — refined construct analysis (measurement correction for H1–H6)
+#
+# Stage 10 remains the confirmatory taxonomy baseline (no in-place edits).
+# This config is the single source of truth for Stage 11 paths, pools, and
+# evidence / stability settings.
+
+run_id: v4_l12_granular_final_call49
+model_label: "BERTopic call_49 — MiniLM-L12 (Stage 11 refined constructs)"
+
+# Locked primary LLM for spillover triage, Pass A/B/C, and adjudication.
+llm:
+  provider: openrouter
+  primary_model: mistralai/Mistral-Nemo-Instruct-2407
+  # Alternate model used only in the pre-batch stability pilot / NB11 robustness.
+  alternate_model: anthropic/claude-sonnet-4.6
+  temperature: 0.0
+  max_tokens: 2500
+  rate_limit_delay_s: 5.0
+  # Provider 504s are common on OpenRouter; retry aggressively with backoff.
+  max_retries: 10
+  retry_backoff_s: 5.0
+  request_timeout_s: 180.0
+  # Pass B packs many sentences; keep the prompt bounded.
+  pass_b_max_sentences: 20
+
+# ---------------------------------------------------------------------------
+# Inputs (frozen Stage 10 / Stage 08 artifacts — read-only)
+# ---------------------------------------------------------------------------
+inputs:
+  topic_lookup: results/stage10_correlation_analysis/v4_l12_granular_final_call49/taxonomy_radway_eda/topic_lookup.parquet
+  analysis_frame: results/stage10_correlation_analysis/v4_l12_granular_final_call49/book_features_hard/book_analysis_frame.parquet
+  book_topic_counts: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_counts_hard/book_topic_counts.parquet
+  sentence_topics_glob: results/experiments/v4_l12_granular_final_call49/full_corpus_infer/sentence_topics_*.parquet
+  topic_metadata: results/stage08_llm_labeling/placeholder_v4_call49/stage09_input/topic_metadata_v3_review_enriched.json
+  representative_docs: results/experiments/v4_l12_granular_final_call49/final_compare/call_49/representative_docs.csv
+  stage10_config: configs/stage10/final_analysis.yaml
+  taxonomy_config: configs/stage09/romance_corpus_taxonomy_v2.yaml
+
+# ---------------------------------------------------------------------------
+# Outputs
+# ---------------------------------------------------------------------------
+outputs:
+  base_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49
+  candidates_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/candidates
+  evidence_packets_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/evidence_packets
+  stability_pilot_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/stability_pilot
+  audits_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits
+  human_review_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/human_review
+  constructs_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs
+  book_features_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features
+  notebook_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis
+  cell_key: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/evidence_packets/cell_key.json
+  frozen_inputs: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/candidates/frozen_inputs.json
+
+# ---------------------------------------------------------------------------
+# Lookup integrity (derive pools — never hard-code topic counts in prompts)
+# ---------------------------------------------------------------------------
+integrity:
+  # After call49 rerun: 8 in 4.5 + 1 in 5.3a + 1 in 8.3a = 10 (not the older “11”).
+  h2_pool_leaves: ["4.5", "5.3a", "8.3a"]
+  h2_expected_n_topics: 10
+  leaf_7_2_expected_n: 12
+  empty_leaves: ["2.4", "6.1a", "6.7"]
+  # Topic 91 maps to 7.1 (not 7.2) in the live lookup.
+  topic_91_expected_leaf: "7.1"
+
+# ---------------------------------------------------------------------------
+# Hypothesis mandatory / comparator leaf pools (lookup-derived topic IDs)
+# ---------------------------------------------------------------------------
+hypotheses:
+  H1:
+    name: intimacy
+    mandatory_leaves: ["2.1", "2.2", "2.3", "2.4", "2.5", "7.4", "4.2", "4.5", "4.6"]
+    # Spillover: Nemo triage over secondary-in-mandatory + sexual flags (not keywords alone).
+    prompt: configs/stage11/prompts/h1_intimacy.yaml
+  H2:
+    name: hea_payoff
+    mandatory_leaves: ["4.5", "5.3a", "8.3a"]
+    prompt: configs/stage11/prompts/h2_hea.yaml
+    position_visible_in_pass_b: true
+  H3:
+    name: security_material
+    mandatory_leaves: ["1.6", "4.6", "6.4", "6.6"]
+    comparator_leaves: ["4.5", "4.2", "4.7", "5.3a", "8.3a", "8.2"]
+    # Discovery leaves are Nemo-triaged; only promoted IDs enter full Pass A/B/C.
+    spillover_discovery_leaves: ["6.5", "8.1", "5.1", "7.3"]
+    prompt: configs/stage11/prompts/h3_security.yaml
+  H4:
+    name: protection_possession
+    # One decomposition of 4.6 feeds H4 (reuse H3 priors); exhaustive coverage for both 4.7 topics.
+    mandatory_leaves: ["4.6", "4.7"]
+    prompt: configs/stage11/prompts/h4_protection.yaml
+    reuse_h3_for_leaves: ["4.6"]
+  H5:
+    name: darkness_tenderness
+    # Focused boundaries only — do not fully relabel 7.2 / 4.4.
+    focus_leaves: ["7.3", "3.2"]
+    skip_full_relabel_leaves: ["7.2", "4.4"]
+    prompt: configs/stage11/prompts/h5_darkness.yaml
+  H6:
+    name: arc_semantics
+    mandatory_leaves: ["4.3", "4.4"]
+    # Plus H5-flagged 3.2 topics (added after H5).
+    inherit_from: ["H5"]
+    prompt: configs/stage11/prompts/h6_arc.yaml
+    position_visible_in_pass_b: true
+
+# ---------------------------------------------------------------------------
+# Shared evidence layer
+# ---------------------------------------------------------------------------
+evidence:
+  representation_names: [Main, KeyBERT, POS, MMR]
+  # Thin critical leaves get exhaustive / high-coverage packets.
+  exhaustive_leaves: ["5.3a", "8.3a", "4.7"]
+  # 2×2 prevalence × rating design (rating blinded as CELL_A…CELL_D).
+  sampling:
+    design: prevalence_x_rating
+    books_per_cell: 4
+    sentences_per_book_topic: 6
+    prevalence_quantiles: [0.25, 0.75]
+    seed: 42
+    tier_high: high_rate
+    tier_low: low_rate
+    tier_column: rating_class
+  exhaustive:
+    books_per_cell: 8
+    sentences_per_book_topic: 20
+    # Cap total hard-assigned sentences per topic when the leaf is huge.
+    max_sentences_per_topic: 400
+    max_books_per_topic: 40
+  # Sealed until notebook 10.
+  cell_labels: [CELL_A, CELL_B, CELL_C, CELL_D]
+  cell_meanings:
+    CELL_A: high_prevalence_high_tier
+    CELL_B: high_prevalence_low_tier
+    CELL_C: low_prevalence_high_tier
+    CELL_D: low_prevalence_low_tier
+  # Hidden from Pass A/B (revealed only in Pass C / human review).
+  hidden_until_pass_c:
+    - taxonomy_main_id
+    - taxonomy_main_name
+    - taxonomy_secondary_id
+    - taxonomy_secondary_name
+    - label_rationale
+    - taxonomy_confidence
+    - rating_tier
+    - effect_sizes
+    - hypothesis_results
+
+# ---------------------------------------------------------------------------
+# Spillover triage (cheap Nemo; before full Pass A/B/C)
+# ---------------------------------------------------------------------------
+spillover:
+  prompt: configs/stage11/prompts/spillover_triage.yaml
+  max_tokens: 400
+  h1_max_candidates: 40
+  h1_sexual_explicitness: [explicit, suggestive]
+  h1_sexual_functions: [explicit_contact, erotic_tension, affection]
+
+# ---------------------------------------------------------------------------
+# Prompt stability pilot (before full batch)
+# ---------------------------------------------------------------------------
+stability_pilot:
+  n_topics: 12
+  # Difficult / ambiguous topics spanning H1–H6 measurement traps.
+  # IDs are validated against the live lookup at runtime; missing IDs are dropped.
+  hard_topic_ids:
+    - 1      # 2.3 explicit / kissing contamination
+    - 7      # 2.3
+    - 29     # 4.5 HEA vs confession
+    - 62     # 4.5
+    - 167    # 5.3a thin HEA leaf (exhaustive)
+    - 61     # 8.3a thin HEA leaf (exhaustive)
+    - 293    # 4.7 possessiveness
+    - 315    # 4.7
+    - 18     # 1.6 appearance vs provision
+    - 6      # 4.6 care / protection
+    - 27     # 7.3 external darkness
+    - 64     # 3.2 relational distress
+  compare:
+    - mode: two_phrasings   # primary vs alternate wording, same model
+    - mode: two_models      # primary phrasing on primary vs alternate model
+  agreement_threshold: 0.80
+  refine_if_below: true
+  hypotheses_to_pilot: [H1, H2, H3, H4]
+
+# ---------------------------------------------------------------------------
+# Stage 10 δ freeze (confirmatory baseline — notebook 00)
+# ---------------------------------------------------------------------------
+stage10_delta_freeze:
+  # Cliff's δ from re-run Stage 10 notebooks (confirmatory baseline — do not overwrite).
+  H1: -0.029
+  H2: 0.027
+  H3: -0.146
+  H4: 0.090
+  H5: 0.012
+  H6: 0.044
+
+# ---------------------------------------------------------------------------
+# Weights / dominance (used after audits — declared early for notebooks)
+# ---------------------------------------------------------------------------
+weights:
+  strict_dominance: 0.70
+  epsilon: 1.0e-6

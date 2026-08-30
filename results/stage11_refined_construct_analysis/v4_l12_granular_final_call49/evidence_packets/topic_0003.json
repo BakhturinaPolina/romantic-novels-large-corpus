@@ -1,0 +1,1242 @@
+{
+  "topic_id": 3,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "know",
+        "tell",
+        "don",
+        "understand",
+        "ask",
+        "you",
+        "explain",
+        "say",
+        "wrong",
+        "mean"
+      ],
+      "KeyBERT": [
+        "admit",
+        "reveal",
+        "brief",
+        "sir",
+        "realise",
+        "remark",
+        "harshly",
+        "mister",
+        "speaking",
+        "assure"
+      ],
+      "POS": [
+        "extent",
+        "answers",
+        "percent",
+        "remark",
+        "folks",
+        "explanation",
+        "commander",
+        "results",
+        "sorts",
+        "difference"
+      ],
+      "MMR": [
+        "extent",
+        "percent",
+        "prompted",
+        "remark",
+        "drawled",
+        "explanation",
+        "commander",
+        "results",
+        "sorts",
+        "crowded"
+      ]
+    },
+    "stage08_snippets": [
+      "and you have no idea what we’ve seen, what we’ve done— you’ve been in your cosy little world and you just have no—damned— clue! ’",
+      "sophia, i’ve something to tell you.” “",
+      "i’ve told them that already.’ ‘"
+    ],
+    "label_public": "Demanding An Explanation"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Tell me something.’",
+        "max_topic_prob": 0.6021373867988586,
+        "normalized_position": 0.6346408109299251,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 618
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I know that now.’",
+        "max_topic_prob": 0.5762536525726318,
+        "normalized_position": 0.8924636403702071,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "No—no, I don’t admit that.’",
+        "max_topic_prob": 0.5448830127716064,
+        "normalized_position": 0.8851917144116351,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Tell me!’",
+        "max_topic_prob": 0.5441159009933472,
+        "normalized_position": 0.7139709122961657,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Tell me!’",
+        "max_topic_prob": 0.5441159009933472,
+        "normalized_position": 0.9336712208021155,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 435
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Tell me!’",
+        "max_topic_prob": 0.5441159009933472,
+        "normalized_position": 0.9347730277655355,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 440
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Well, you know what I mean.” “",
+        "max_topic_prob": 0.6817474365234375,
+        "normalized_position": 0.3994840611756035,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I demanded to know. “",
+        "max_topic_prob": 0.6801749467849731,
+        "normalized_position": 0.8606965174129353,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You don’t know that.” “",
+        "max_topic_prob": 0.6659899950027466,
+        "normalized_position": 0.8022848719366132,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll tell you whatever you want to know.”",
+        "max_topic_prob": 0.6499048471450806,
+        "normalized_position": 0.4363368343467846,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’m not sure.” “",
+        "max_topic_prob": 0.6464869976043701,
+        "normalized_position": 0.48313985627418465,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How do you know that?” “",
+        "max_topic_prob": 0.6408753395080566,
+        "normalized_position": 0.10521466740372214,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Tell me.”",
+        "max_topic_prob": 0.664267897605896,
+        "normalized_position": 0.1892276663898446,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1595
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "You know what I mean?”",
+        "max_topic_prob": 0.6609768271446228,
+        "normalized_position": 0.02882904259105469,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Yes, I know.”",
+        "max_topic_prob": 0.6558696031570435,
+        "normalized_position": 0.22114129790010678,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1864
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I’ll tell you that much.”",
+        "max_topic_prob": 0.6372613906860352,
+        "normalized_position": 0.201921936172737,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1702
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "That’s what I want to know.”",
+        "max_topic_prob": 0.6318262815475464,
+        "normalized_position": 0.4813145094317238,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Do you understand?”",
+        "max_topic_prob": 0.6119599342346191,
+        "normalized_position": 0.29256139518329577,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 535
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m just not sure I’m supposed to tell you.”",
+        "max_topic_prob": 0.7033343315124512,
+        "normalized_position": 0.3937961036504634,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why don’t you know?”",
+        "max_topic_prob": 0.6985527873039246,
+        "normalized_position": 0.40287497635710234,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Right, you don’t know.” “",
+        "max_topic_prob": 0.6872795820236206,
+        "normalized_position": 0.4146018536031776,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Okay, tell me.” “",
+        "max_topic_prob": 0.651427149772644,
+        "normalized_position": 0.5509740873841498,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 476
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490113735198975,
+        "normalized_position": 0.33308114242481557,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490113735198975,
+        "normalized_position": 0.7223378097219595,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Why don’t you tell me?”",
+        "max_topic_prob": 0.6743439435958862,
+        "normalized_position": 0.14369704305723674,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Yes, but I don’t know what.”",
+        "max_topic_prob": 0.6644022464752197,
+        "normalized_position": 0.9348089227044787,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 403
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Tell me.”",
+        "max_topic_prob": 0.664267897605896,
+        "normalized_position": 0.5455645858550925,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.649011492729187,
+        "normalized_position": 0.694622168424693,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "You know what I mean.”",
+        "max_topic_prob": 0.6438571810722351,
+        "normalized_position": 0.6925471208715199,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I have no idea what you mean.”",
+        "max_topic_prob": 0.6387840509414673,
+        "normalized_position": 0.5163409994812381,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 473
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What do you mean you don’t know?” “",
+        "max_topic_prob": 0.6882141828536987,
+        "normalized_position": 0.3516228748068006,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I can’t tell you.” “",
+        "max_topic_prob": 0.674431562423706,
+        "normalized_position": 0.6581658938691396,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You asked me a question.” “",
+        "max_topic_prob": 0.6641668081283569,
+        "normalized_position": 0.48737764039155074,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’ll tell you what you want to know.” “",
+        "max_topic_prob": 0.6611000299453735,
+        "normalized_position": 0.8532972694487377,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I asked you a question.”",
+        "max_topic_prob": 0.6588946580886841,
+        "normalized_position": 0.6293147861926842,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You can’t know that.”",
+        "max_topic_prob": 0.658111035823822,
+        "normalized_position": 0.8272797527047914,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "no.",
+        "max_topic_prob": 0.42934101819992065,
+        "normalized_position": 0.7769138755980861,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 803
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No.",
+        "max_topic_prob": 0.42934101819992065,
+        "normalized_position": 0.8321371610845295,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No.",
+        "max_topic_prob": 0.42934101819992065,
+        "normalized_position": 0.8341307814992025,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No.",
+        "max_topic_prob": 0.42934101819992065,
+        "normalized_position": 0.8724082934609251,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No.",
+        "max_topic_prob": 0.4293409585952759,
+        "normalized_position": 0.840311004784689,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "No.",
+        "max_topic_prob": 0.4293409585952759,
+        "normalized_position": 0.842304625199362,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "How do you know that?” “",
+        "max_topic_prob": 0.6408756971359253,
+        "normalized_position": 0.7628500531726338,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "You should know that by now.”",
+        "max_topic_prob": 0.6234139800071716,
+        "normalized_position": 0.38780574264445233,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "No.”",
+        "max_topic_prob": 0.5861495733261108,
+        "normalized_position": 0.7926267281105991,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "No.”",
+        "max_topic_prob": 0.5861495733261108,
+        "normalized_position": 0.8231123714994683,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Nope.”",
+        "max_topic_prob": 0.5850788354873657,
+        "normalized_position": 0.7596596951435661,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Nope.”",
+        "max_topic_prob": 0.585078775882721,
+        "normalized_position": 0.8787663948954272,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I- I don’t know.”",
+        "max_topic_prob": 0.6123238205909729,
+        "normalized_position": 0.23512420566146736,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "You'll find out soon enough.”",
+        "max_topic_prob": 0.6035791635513306,
+        "normalized_position": 0.9234546504910457,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Am I supposed to know what that means?”",
+        "max_topic_prob": 0.5926370024681091,
+        "normalized_position": 0.4527729636048527,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "But I wanted to know.",
+        "max_topic_prob": 0.585628092288971,
+        "normalized_position": 0.7524552281917967,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Nope.”",
+        "max_topic_prob": 0.5850788354873657,
+        "normalized_position": 0.9308203350664356,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "What did you think I was going to say?”",
+        "max_topic_prob": 0.5751550793647766,
+        "normalized_position": 0.39067013287117275,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I asked you a question.”",
+        "max_topic_prob": 0.6588946580886841,
+        "normalized_position": 0.6027127769724581,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I didn’t know.”",
+        "max_topic_prob": 0.6533568501472473,
+        "normalized_position": 0.2737626837854628,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What do you know?”",
+        "max_topic_prob": 0.6463594436645508,
+        "normalized_position": 0.204079519569269,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What do you know?”",
+        "max_topic_prob": 0.6463592648506165,
+        "normalized_position": 0.20366535514599296,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Now, why don’t you tell me something?”",
+        "max_topic_prob": 0.6405042409896851,
+        "normalized_position": 0.2253054462621661,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "You can tell me anything.”",
+        "max_topic_prob": 0.6374632120132446,
+        "normalized_position": 0.5889418098985297,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You don’t know what you said, do you?” “",
+        "max_topic_prob": 0.68028724193573,
+        "normalized_position": 0.6082372911641204,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You don’t know that.” “",
+        "max_topic_prob": 0.6659899353981018,
+        "normalized_position": 0.24801215045117483,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Tell me.”",
+        "max_topic_prob": 0.6642680168151855,
+        "normalized_position": 0.3881890467256321,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490116119384766,
+        "normalized_position": 0.25256856964174035,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490113735198975,
+        "normalized_position": 0.37282229965156793,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I don’t know.”",
+        "max_topic_prob": 0.6413463354110718,
+        "normalized_position": 0.20423478960064326,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I mean, I don’t know.” “",
+        "max_topic_prob": 0.6776653528213501,
+        "normalized_position": 0.7659172816200446,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Oh, trust me, you most definitely don’t wanna know.” “",
+        "max_topic_prob": 0.6686034202575684,
+        "normalized_position": 0.3365368113952291,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Nope, I told you I don’t.” “",
+        "max_topic_prob": 0.6560162901878357,
+        "normalized_position": 0.39814655912133173,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I told you that.” “",
+        "max_topic_prob": 0.6511656045913696,
+        "normalized_position": 0.7412047365711344,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490117311477661,
+        "normalized_position": 0.6430410159601854,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490113735198975,
+        "normalized_position": 0.674961386648361,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Tell me.”",
+        "max_topic_prob": 0.664267897605896,
+        "normalized_position": 0.9943938332165382,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "How about you just tell me?” “",
+        "max_topic_prob": 0.653292715549469,
+        "normalized_position": 0.08531885073580939,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 482
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490118503570557,
+        "normalized_position": 0.04712683952347582,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I already told you that.” “",
+        "max_topic_prob": 0.6468080282211304,
+        "normalized_position": 0.6730903994393833,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I don’t know.”",
+        "max_topic_prob": 0.6413463354110718,
+        "normalized_position": 0.5544849334267694,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I don’t know.”",
+        "max_topic_prob": 0.6413462162017822,
+        "normalized_position": 0.31236860546601264,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 453
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Why don’t you want to tell me?”",
+        "max_topic_prob": 0.6564493179321289,
+        "normalized_position": 0.2695073853530276,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Tell me.” “",
+        "max_topic_prob": 0.6533593535423279,
+        "normalized_position": 0.26417137112365635,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I don’t know.” “",
+        "max_topic_prob": 0.6490118503570557,
+        "normalized_position": 0.25922202459206556,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I told you.”",
+        "max_topic_prob": 0.6420551538467407,
+        "normalized_position": 0.9526718737916634,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I don’t know what you mean.”",
+        "max_topic_prob": 0.6336923837661743,
+        "normalized_position": 0.07408553089474905,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You know I’m right.” “",
+        "max_topic_prob": 0.6257399320602417,
+        "normalized_position": 0.31157683087154897,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I mean surely you know that.” “",
+        "max_topic_prob": 0.6700599789619446,
+        "normalized_position": 0.15436370626682044,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 326
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I don't know.”",
+        "max_topic_prob": 0.655726432800293,
+        "normalized_position": 0.47183775470972705,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I just didn’t know.”",
+        "max_topic_prob": 0.6495754718780518,
+        "normalized_position": 0.4291618608227605,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "You know that, right?” “",
+        "max_topic_prob": 0.6338766813278198,
+        "normalized_position": 0.6633025759323338,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I mean, are you sure about this?”",
+        "max_topic_prob": 0.6284493207931519,
+        "normalized_position": 0.06314878892733564,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "There’s a lot that you obviously don’t know.”",
+        "max_topic_prob": 0.6249306201934814,
+        "normalized_position": 0.8779315647827759,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Do I want to know?”",
+        "max_topic_prob": 0.7024136781692505,
+        "normalized_position": 0.2506766986282516,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I had no idea,” I say. “",
+        "max_topic_prob": 0.6761512160301208,
+        "normalized_position": 0.7188603936321513,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Then you’ll know.” “",
+        "max_topic_prob": 0.6695135235786438,
+        "normalized_position": 0.12928384640088086,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Yeah, tell me.” “",
+        "max_topic_prob": 0.6595274209976196,
+        "normalized_position": 0.556819745836583,
+        "tertile": "middle",
+        "chapter_index": 42,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But how do you know ?” “",
+        "max_topic_prob": 0.6570626497268677,
+        "normalized_position": 0.8610359223746387,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You know, I have no idea.”",
+        "max_topic_prob": 0.6559380292892456,
+        "normalized_position": 0.03229802266366931,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 202
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.053463785588426224,
+        "n_sentences": 1153
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.041831640557755206,
+        "n_sentences": 243
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.04441453566621804,
+        "n_sentences": 495
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.04059147579008408,
+        "n_sentences": 420
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.06241159830268741,
+        "n_sentences": 353
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.05733333333333333,
+        "n_sentences": 301
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.05006485084306096,
+        "n_sentences": 386
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.04468755794548489,
+        "n_sentences": 241
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.014050613258810744,
+        "n_sentences": 181
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.01548051948051948,
+        "n_sentences": 149
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00877018138329679,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0203276336242975,
+        "n_sentences": 170
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.02294853963838665,
+        "n_sentences": 132
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.013898788310762652,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.013959672058497673,
+        "n_sentences": 63
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.015415939499709133,
+        "n_sentences": 106
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 96
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.4",
+    "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

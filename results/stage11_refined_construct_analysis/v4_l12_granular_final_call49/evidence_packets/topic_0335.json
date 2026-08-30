@@ -1,0 +1,712 @@
+{
+  "topic_id": 335,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "mason",
+        "jacks",
+        "jimmy",
+        "marcy",
+        "inclined",
+        "classes",
+        "bisexuals",
+        "cultivating",
+        "whisp"
+      ],
+      "KeyBERT": [
+        "ended",
+        "giggled",
+        "elevator",
+        "dealing",
+        "pregnant",
+        "speaking",
+        "behalf",
+        "reaction",
+        "intend"
+      ],
+      "POS": [
+        "behalf",
+        "longing",
+        "ribs",
+        "elevator",
+        "faces",
+        "upset",
+        "pregnant",
+        "pressure",
+        "pleased",
+        "usual"
+      ],
+      "MMR": [
+        "glued",
+        "promising",
+        "acknowledged",
+        "protested",
+        "pouring",
+        "dealing",
+        "giggled",
+        "pounded",
+        "ribs",
+        "upset"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll try,” derek replied and turned to make the hour walk back home.",
+      "i’ll hang around while you take a look at it tonight,” [person] said, his own gaze also glued to camilla’s limbs. “",
+      "he knows that the killer got derek while he was alone, and he wouldn’t do that to his pregnant wife, because she’ll go shit wild and start a rampage."
+    ],
+    "label_public": "Killer Targets Someone Alone"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Brett appeared relieved by her appearance. “",
+        "max_topic_prob": 0.5693200826644897,
+        "normalized_position": 0.4856825573094313,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Detective Warwick,” Brett said, extending his hand. “",
+        "max_topic_prob": 0.5540592670440674,
+        "normalized_position": 0.4752121837074641,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Brett was on the other end. “",
+        "max_topic_prob": 0.5443483591079712,
+        "normalized_position": 0.4935353375109066,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Brett looked frustrated. “",
+        "max_topic_prob": 0.5363141298294067,
+        "normalized_position": 0.19576425795193148,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Brett backed up. “",
+        "max_topic_prob": 0.5341506600379944,
+        "normalized_position": 0.815578646783533,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He watched Brett get in his car and drive off. “",
+        "max_topic_prob": 0.5211736559867859,
+        "normalized_position": 0.8173237090505275,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "That was when Jenna realized that Lars the Heartless was Baruk’s raider, the one who’d driven them here.",
+        "max_topic_prob": 0.4668467044830322,
+        "normalized_position": 0.20703697670630397,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lars failed me as a raider,” he said. “",
+        "max_topic_prob": 0.4623369872570038,
+        "normalized_position": 0.8286365857631536,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The raider, Lars, was waiting for them.",
+        "max_topic_prob": 0.4336947202682495,
+        "normalized_position": 0.3151979149698648,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Baruk could hope that, for his own, good, Lars would accept Stella into his life and make the best of it.",
+        "max_topic_prob": 0.42611271142959595,
+        "normalized_position": 0.9381006678612152,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lars was leading a party that was looking for Jenna in the woods, and the orcs that had stayed behind were turning every nook and cranny upside down for clues.",
+        "max_topic_prob": 0.4016517996788025,
+        "normalized_position": 0.7815605147418146,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Ted gave Derek a quick smile. “",
+        "max_topic_prob": 0.7329661846160889,
+        "normalized_position": 0.044690603514132926,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Derek asked as he set the highball glass in front of Ted.",
+        "max_topic_prob": 0.6360512971878052,
+        "normalized_position": 0.043926661573720396,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "One of the bartenders, Derek, winked at him and fixed the drink.",
+        "max_topic_prob": 0.5809674263000488,
+        "normalized_position": 0.04354469060351413,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Derek laughed and nodded toward the back wall where several young rent boys lounged. “",
+        "max_topic_prob": 0.52106773853302,
+        "normalized_position": 0.04507257448433919,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Scott had seen the hurt and devastation on Ted’s face when he’d talked about Douglas, and he didn’t want to be the one to make Ted feel that way again.",
+        "max_topic_prob": 0.5144164562225342,
+        "normalized_position": 0.5091673032849503,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Ted looked hopeful, and something about that cut right into Scott’s heart. “",
+        "max_topic_prob": 0.5100016593933105,
+        "normalized_position": 0.2840590781767252,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Gibson arched, trying to toss Liam. “",
+        "max_topic_prob": 0.5545929074287415,
+        "normalized_position": 0.9309083082221266,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Gibson yelled as Liam ran past him. “",
+        "max_topic_prob": 0.5236748456954956,
+        "normalized_position": 0.28497632371932846,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "There was a long awkward pause before Liam continued, “Can’t risk an injury during the season, you know?” “",
+        "max_topic_prob": 0.5231086015701294,
+        "normalized_position": 0.2292294446835988,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Right,” Liam echoed.",
+        "max_topic_prob": 0.5119794607162476,
+        "normalized_position": 0.5294877313818338,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "It’s no big deal,” Liam said as they got closer. “",
+        "max_topic_prob": 0.5065137147903442,
+        "normalized_position": 0.7953077916487301,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Gibson wiggled out of Liam’s headlock, then swiped his leg sideways to take Liam down.",
+        "max_topic_prob": 0.5047084093093872,
+        "normalized_position": 0.938441670253982,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Someone didn’t get the memo,” Dane whispers in my ear as Austin goes to help Ricky with something. “",
+        "max_topic_prob": 0.5440636277198792,
+        "normalized_position": 0.7931363203050524,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I glance over to see Becks passed out on the couch.",
+        "max_topic_prob": 0.4404854476451874,
+        "normalized_position": 0.7204263801022619,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Becks showed up an hour later.",
+        "max_topic_prob": 0.42089325189590454,
+        "normalized_position": 0.9391628390675102,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Fuck you, Becks.”",
+        "max_topic_prob": 0.3861151337623596,
+        "normalized_position": 0.283560100528642,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Fucking A, Becks!” “",
+        "max_topic_prob": 0.3733806312084198,
+        "normalized_position": 0.17904497790103127,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Becks…” “Don’t you Becks me.",
+        "max_topic_prob": 0.365288108587265,
+        "normalized_position": 0.8863853020192392,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’m just waiting for Dale to come back from lunch then we’re going to see Esther’s ex-boyfriend.",
+        "max_topic_prob": 0.5421237349510193,
+        "normalized_position": 0.3151586765698852,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Dale shouted back, “DC Taylor and DS McCoy.",
+        "max_topic_prob": 0.5108370184898376,
+        "normalized_position": 0.17808912896691426,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Dale.”",
+        "max_topic_prob": 0.507112979888916,
+        "normalized_position": 0.8980418636056718,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Dale cut in.",
+        "max_topic_prob": 0.4930209815502167,
+        "normalized_position": 0.612761647535449,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Don’t waste your time,” Dale said from the driver’s seat. “",
+        "max_topic_prob": 0.48959994316101074,
+        "normalized_position": 0.9753544902093181,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Dale, anything?” “",
+        "max_topic_prob": 0.48347407579421997,
+        "normalized_position": 0.8387913571910871,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "So tell me--what happened with Derek?”",
+        "max_topic_prob": 0.8231440186500549,
+        "normalized_position": 0.09299487429826703,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Derek is done.",
+        "max_topic_prob": 0.7549840211868286,
+        "normalized_position": 0.03502562850866488,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Tell me how your date with Derek went?” “",
+        "max_topic_prob": 0.7257715463638306,
+        "normalized_position": 0.034659506956309497,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Derek and I worked together before he left to take a job elsewhere.",
+        "max_topic_prob": 0.7117798328399658,
+        "normalized_position": 0.00488162069807176,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Um, Derek,” I begin, knowing I’ve got to get out of here and not caring what kind of excuse I use. “",
+        "max_topic_prob": 0.6703653931617737,
+        "normalized_position": 0.013058335367341958,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "All the women at my office used to lust after Derek but he never seemed to notice.",
+        "max_topic_prob": 0.6518357992172241,
+        "normalized_position": 0.005003661215523553,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Finn offered, almost pleasant now that he realized we weren’t going to be taking on passengers or trying to pull the van behind Bear’s Charger.",
+        "max_topic_prob": 0.4714677333831787,
+        "normalized_position": 0.6116619452313503,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Brett looked disappointed. “",
+        "max_topic_prob": 0.5600423812866211,
+        "normalized_position": 0.32275882660297084,
+        "tertile": "begin",
+        "chapter_index": 25,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He pointed at Brett. “",
+        "max_topic_prob": 0.5556704998016357,
+        "normalized_position": 0.9097559155034709,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Brett,” he said again. “",
+        "max_topic_prob": 0.5556421279907227,
+        "normalized_position": 0.7686049115473613,
+        "tertile": "end",
+        "chapter_index": 54,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Brett was supposed to tell Thomas about the plan; he got sidetracked with cleaning the wine.” “",
+        "max_topic_prob": 0.537421703338623,
+        "normalized_position": 0.4452489363290289,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Boss,” Brett said. “",
+        "max_topic_prob": 0.5169646739959717,
+        "normalized_position": 0.1350302306486527,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Brett, I’m hanging up.”",
+        "max_topic_prob": 0.5133788585662842,
+        "normalized_position": 0.41501828767634547,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 228
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0010365173018657312,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.001137059389486574,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0023829787234042553,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0014271764440772178,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.004328067517853278,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0008204791598293403,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0012242899118511264,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.00230385255343658,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.00011890606420927467,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "5.1",
+    "taxonomy_secondary_name": "Family, Kinship & Parenthood",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,25 @@
+# Frozen spillover triage prompt (cheap Nemo; lexical + secondary/heuristic flags only).
+# Used before full Pass A/B/C to promote out-of-pool candidates for H1/H3.
+
+name: spillover_triage
+version: "1.0"
+frozen: true
+
+phrasing:
+  primary:
+    system: |
+      You triage whether a BERTopic topic belongs in a romance-novel hypothesis audit pool.
+      Use only the four keyword lists and the brief flags provided. Do not invent plot.
+      Ratings and effect sizes are hidden. Respond with JSON only.
+    user: |
+      Hypothesis: {hypothesis} ({hypothesis_name})
+      Construct focus: {construct_focus}
+      Topic {topic_id}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Flags: secondary_leaf={secondary_leaf}; sexual_explicitness={sexual_explicitness};
+      sexual_function={sexual_function}; heuristic_notes={heuristic_notes}
+      Return JSON: {{"topic_id": int, "include": bool, "confidence": float,
+      "suggested_code_family": "string|null", "rationale": "..."}}

@@ -1,0 +1,756 @@
+{
+  "topic_id": 277,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "lawyer",
+        "attorney",
+        "law",
+        "lawyers",
+        "legal",
+        "firm",
+        "defense",
+        "counsel",
+        "appointed",
+        "advice"
+      ],
+      "KeyBERT": [
+        "involved",
+        "expect",
+        "impatiently",
+        "official",
+        "warned",
+        "begging",
+        "afford",
+        "stumbled",
+        "cost",
+        "worrying"
+      ],
+      "POS": [
+        "official",
+        "worrying",
+        "member",
+        "current",
+        "cost",
+        "process",
+        "worst",
+        "experience"
+      ],
+      "MMR": [
+        "impatiently",
+        "presented",
+        "worrying",
+        "afford",
+        "warned",
+        "begging",
+        "mumbled",
+        "process",
+        "expect",
+        "ended"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll talk to the lawyer tomorrow.",
+      "we’ll find a good lawyer to help.",
+      "you can count on me to deal with the legal trouble they’ll cause.”"
+    ],
+    "label_public": "Promising to Handle The Lawyer"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Your lawyer.",
+        "max_topic_prob": 0.8001534938812256,
+        "normalized_position": 0.013598326359832637,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jesus, you sound like a lawyer.” “",
+        "max_topic_prob": 0.787873387336731,
+        "normalized_position": 0.013448894202032277,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "A lawyer?",
+        "max_topic_prob": 0.7825349569320679,
+        "normalized_position": 0.48438433950986254,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I am a lawyer.",
+        "max_topic_prob": 0.7798463106155396,
+        "normalized_position": 0.013523610280932456,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You’d think a sharp lawyer like you would know that.",
+        "max_topic_prob": 0.7435104846954346,
+        "normalized_position": 0.008293484757919904,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Right now you need a lawyer.” “",
+        "max_topic_prob": 0.7234610319137573,
+        "normalized_position": 0.013897190675433354,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Mediation has never come easily for me and I need all the help I can get.",
+        "max_topic_prob": 0.399969220161438,
+        "normalized_position": 0.6880260137719969,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Somebody taking the law and using it for his own ends?",
+        "max_topic_prob": 0.5004234313964844,
+        "normalized_position": 0.3277843836702338,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The law is a funny thing,” Claudia said. “",
+        "max_topic_prob": 0.4540565609931946,
+        "normalized_position": 0.3265953230281411,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Such a lot of fuss over a piece of real estate that was destined by federal law to go unclaimed by anyone.",
+        "max_topic_prob": 0.3690727949142456,
+        "normalized_position": 0.8156956004756243,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It’s important to establish legal boundaries of ownership, especially when you’re talking about gems and precious metals.",
+        "max_topic_prob": 0.3583284020423889,
+        "normalized_position": 0.6916369401506144,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The company property is fenced off, of course.",
+        "max_topic_prob": 0.3263050317764282,
+        "normalized_position": 0.7066983749504558,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He’s a lawman.",
+        "max_topic_prob": 0.6538126468658447,
+        "normalized_position": 0.05395072217502124,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He’s a lawman.",
+        "max_topic_prob": 0.6538126468658447,
+        "normalized_position": 0.054056924384027184,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He’s a lawman .",
+        "max_topic_prob": 0.6538126468658447,
+        "normalized_position": 0.054163126593033135,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He was a lawman.",
+        "max_topic_prob": 0.634804368019104,
+        "normalized_position": 0.043118096856414614,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He’s a lawman !",
+        "max_topic_prob": 0.6133262515068054,
+        "normalized_position": 0.09356414613423959,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Just…, when you’ve been a lawman for a bit you get to recognize the look of a con and this somehow feels like one to me.” “",
+        "max_topic_prob": 0.5930291414260864,
+        "normalized_position": 0.5023364485981309,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Working primarily for private investigators, Uncle Jim handles mostly divorce cases, specifically, cheating spouses.",
+        "max_topic_prob": 0.4572053551673889,
+        "normalized_position": 0.9885020416935311,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 1358
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "If I were you, instead of life insurance, I would invest in counseling.",
+        "max_topic_prob": 0.3427649140357971,
+        "normalized_position": 0.5524392864818397,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He was going to be a lawyer.”",
+        "max_topic_prob": 0.7703653573989868,
+        "normalized_position": 0.6616655036054897,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "And if either my sister or I should suffer from any effects of dehydration, I shall be contacting my lawyer.”",
+        "max_topic_prob": 0.4455159902572632,
+        "normalized_position": 0.1872528494998837,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’m his attorney.”",
+        "max_topic_prob": 0.7954373359680176,
+        "normalized_position": 0.8819866987406254,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "This is the law firm; their address is here.”",
+        "max_topic_prob": 0.6178928017616272,
+        "normalized_position": 0.05334654025753502,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "But you need to hear it at our lawyers’ office, and you need to sign a confidential non-disclosure agreement before we go any further.” “",
+        "max_topic_prob": 0.5917969942092896,
+        "normalized_position": 0.04980897127493986,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "If you ever think about going to law school, drop by afterwards.”",
+        "max_topic_prob": 0.5652710795402527,
+        "normalized_position": 0.9047686429885383,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 610
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "So if anyone’s going to sue anyone, it’s Diego, suing you for sexual assault!”",
+        "max_topic_prob": 0.5001317262649536,
+        "normalized_position": 0.8911843780953729,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 514
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "A famous client, who, shall we say, has certain proclivities that if they were to come to light would destroy his career.",
+        "max_topic_prob": 0.479012668132782,
+        "normalized_position": 0.08023206452525825,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The little gray lawyer nodded. “",
+        "max_topic_prob": 0.6165477633476257,
+        "normalized_position": 0.881615302869288,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Well, except for your fiancé, the future Duke of Barrington,” the lawyer amended. “",
+        "max_topic_prob": 0.607309103012085,
+        "normalized_position": 0.8850159404888417,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The lawyer nodded and cleared his throat self-importantly. “",
+        "max_topic_prob": 0.6064192056655884,
+        "normalized_position": 0.8765143464399575,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He was a lawyer with a wealthy client in a far-distant system.",
+        "max_topic_prob": 0.5856627225875854,
+        "normalized_position": 0.8726886291179596,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The little gray lawyer looked surprised. “",
+        "max_topic_prob": 0.5820496082305908,
+        "normalized_position": 0.8748140276301807,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "And he has a lot of, um, legal documents that he needs to go through.",
+        "max_topic_prob": 0.5582835674285889,
+        "normalized_position": 0.34984059511158344,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Law libraries.",
+        "max_topic_prob": 0.569440484046936,
+        "normalized_position": 0.7701539264283851,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I might well see if they have any books of law on hand.",
+        "max_topic_prob": 0.5358251333236694,
+        "normalized_position": 0.5974432559352987,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Bring the law!”",
+        "max_topic_prob": 0.5307517051696777,
+        "normalized_position": 0.4894338638142447,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "But I shall arrange the paperwork so that it is legal.",
+        "max_topic_prob": 0.5100666284561157,
+        "normalized_position": 0.9689538220714845,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Was it on some business for the estate?” “",
+        "max_topic_prob": 0.4736576974391937,
+        "normalized_position": 0.5084789981737542,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "If Algernon went, at least the legal and bureaucratic paperwork that entailed would buy him time.",
+        "max_topic_prob": 0.47291308641433716,
+        "normalized_position": 0.49308635533524653,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "So you decided to become a lawyer?",
+        "max_topic_prob": 0.7303974032402039,
+        "normalized_position": 0.3255928045789043,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 1312
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Just think, you'll be a lawyer in a few years and you can get yourself off.\"",
+        "max_topic_prob": 0.7022983431816101,
+        "normalized_position": 0.7445625511038431,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 993
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "But you feel like you have to be a lawyer because of Alec.",
+        "max_topic_prob": 0.7006512880325317,
+        "normalized_position": 0.5363859362224039,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I'm not even sure if I want to be a lawyer anymore now that I let my sweet Alec go.",
+        "max_topic_prob": 0.6981760859489441,
+        "normalized_position": 0.9618152085036795,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 1167
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Um, I watched someone close to me convicted of a minor offense because he couldn't afford a private lawyer.",
+        "max_topic_prob": 0.6950317621231079,
+        "normalized_position": 0.3240392477514309,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 1293
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Be a lawyer.",
+        "max_topic_prob": 0.692415177822113,
+        "normalized_position": 0.28520032706459525,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 818
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "That’s where our lawyers come in.",
+        "max_topic_prob": 0.7288898229598999,
+        "normalized_position": 0.6839262566613856,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your lawyers did the trick.",
+        "max_topic_prob": 0.7057462334632874,
+        "normalized_position": 0.7436986893273801,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "As he walked out of the law office the next day, he’d retained his own lawyer.",
+        "max_topic_prob": 0.7044979333877563,
+        "normalized_position": 0.7978539536223535,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 494
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Zoe spoke up, “He has a lawyer.",
+        "max_topic_prob": 0.6961370706558228,
+        "normalized_position": 0.6376206250900187,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "They’re aware we need their help with the legal aspects of his case.",
+        "max_topic_prob": 0.6411728858947754,
+        "normalized_position": 0.6459023476883192,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He knew he needed to avoid his parents and their pastor providing their own lawyer, so he found what sounded like a good lawyer online and made an appointment.",
+        "max_topic_prob": 0.6243601441383362,
+        "normalized_position": 0.7977819386432378,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 493
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0023559648747055045,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0019202048218476637,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.002388600609504983,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.002387152777777778,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0026387213510253318,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.001986491855383393,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.00142571998859424,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.005787950539331755,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0002172260236776366,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00023438415563107934,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0001921598770176787,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 52
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "9.2",
+    "taxonomy_secondary_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

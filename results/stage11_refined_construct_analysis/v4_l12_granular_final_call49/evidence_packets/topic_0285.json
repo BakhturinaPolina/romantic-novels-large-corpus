@@ -1,0 +1,943 @@
+{
+  "topic_id": 285,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "hate",
+        "hated",
+        "hates",
+        "hating",
+        "me",
+        "myself",
+        "forever",
+        "liked",
+        "hateful",
+        "guy"
+      ],
+      "KeyBERT": [
+        "hated",
+        "dislike",
+        "admit",
+        "uh",
+        "treated"
+      ],
+      "POS": [
+        "purpose",
+        "shock"
+      ],
+      "MMR": [
+        "dislike",
+        "safely",
+        "treated",
+        "purpose",
+        "deserve",
+        "planning",
+        "breathed",
+        "hated",
+        "admit",
+        "shock"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve hated him for years.",
+      "heath has done a wonderful job with him, but i—well, i’ve hated him for living instead of you.",
+      "ever since this cunt came here, i’ve been, uh, less than balanced, i admit, and remembering things i’ve tried to forget, reasons to hate, reasons to hate, and you’ve become a liar."
+    ],
+    "label_public": "Confessing Years of Hatred"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "She hated him.",
+        "max_topic_prob": 0.6792516112327576,
+        "normalized_position": 0.8635644191199747,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Loathed him.",
+        "max_topic_prob": 0.590646505355835,
+        "normalized_position": 0.8636699377440118,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Looking back now, I can see all the hatred I had in me, but at the time it just seemed like everyone was out to get me.",
+        "max_topic_prob": 0.5740029811859131,
+        "normalized_position": 0.6083148675741268,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I’m not like you.”",
+        "max_topic_prob": 0.5735251903533936,
+        "normalized_position": 0.4781048855122929,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I hated it.",
+        "max_topic_prob": 0.5486335754394531,
+        "normalized_position": 0.6086314234462382,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 326
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "It had been a long time since his presence had evoked disdain.",
+        "max_topic_prob": 0.4777441620826721,
+        "normalized_position": 0.9335232668566001,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And you hate him for slighting you.”",
+        "max_topic_prob": 0.702637791633606,
+        "normalized_position": 0.49274106175514626,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I hate you!”",
+        "max_topic_prob": 0.6722899675369263,
+        "normalized_position": 0.4439869989165764,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And I hated submitting to your licentious thoughts and advances!” “",
+        "max_topic_prob": 0.6168564558029175,
+        "normalized_position": 0.4411700975081257,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I hate him!",
+        "max_topic_prob": 0.6079950332641602,
+        "normalized_position": 0.17681473456121344,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I hate his wife.",
+        "max_topic_prob": 0.5972782969474792,
+        "normalized_position": 0.8455037919826652,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You expressed a dislike of both Himins and myself.",
+        "max_topic_prob": 0.5966050624847412,
+        "normalized_position": 0.8628385698808234,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He’s going to hate me. “",
+        "max_topic_prob": 0.8008450269699097,
+        "normalized_position": 0.1903102126176368,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I hate you.” “",
+        "max_topic_prob": 0.7043793201446533,
+        "normalized_position": 0.32531660276519114,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was only like that because he hates you so much.",
+        "max_topic_prob": 0.6915112137794495,
+        "normalized_position": 0.6510979435343325,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I knew he hated me, but I didn’t know how much.",
+        "max_topic_prob": 0.6883784532546997,
+        "normalized_position": 0.11548739398164284,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I hate you!”",
+        "max_topic_prob": 0.6722900867462158,
+        "normalized_position": 0.41930986406413384,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I didn’t like him, but he definitely kicked you out of your grief funk.”",
+        "max_topic_prob": 0.6442717909812927,
+        "normalized_position": 0.8630184733356571,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You don’t even like her.”",
+        "max_topic_prob": 0.5437430739402771,
+        "normalized_position": 0.7378187737384699,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 485
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "I hate this,” Brooke said.",
+        "max_topic_prob": 0.5391843318939209,
+        "normalized_position": 0.8112859468258274,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "He didn’t like kidnapping you the way he did.",
+        "max_topic_prob": 0.5103187561035156,
+        "normalized_position": 0.8800868149755833,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Steph, you and Tricia were nicer, but you still didn’t treat me the way I wanted to be treated.",
+        "max_topic_prob": 0.44582289457321167,
+        "normalized_position": 0.9068909386869235,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He has as much reason to hate me as you do.”",
+        "max_topic_prob": 0.7244018316268921,
+        "normalized_position": 0.967551622418879,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I don’t hate you at all,” he said, and realized it was true.",
+        "max_topic_prob": 0.6588945388793945,
+        "normalized_position": 0.7964601769911505,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Oh, Greg, do you hate me that much?”",
+        "max_topic_prob": 0.6494231224060059,
+        "normalized_position": 0.7960063535284774,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Hey, I hate the guy, too.",
+        "max_topic_prob": 0.645453155040741,
+        "normalized_position": 0.6462446108463807,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He hated Greg Bennett with an intensity that had grown through the years.",
+        "max_topic_prob": 0.517886757850647,
+        "normalized_position": 0.6373950533242568,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "When you needed me…” He deserved every rotten thing that was happening to him.",
+        "max_topic_prob": 0.4856538772583008,
+        "normalized_position": 0.5184933061039255,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He probably didn’t hate me because he probably didn’t even remember me.",
+        "max_topic_prob": 0.6977250576019287,
+        "normalized_position": 0.47366139171905486,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2185
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He didn’t hate him, he loved him like a brother, he knew when he was hurting, and he was hurting flying out West alone, without me. “",
+        "max_topic_prob": 0.646735429763794,
+        "normalized_position": 0.8434858009971818,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1547
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I hated that bitch.",
+        "max_topic_prob": 0.6012002229690552,
+        "normalized_position": 0.6355950574463473,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 588
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I thought about my rock star and thought how much he probably hated me by now.",
+        "max_topic_prob": 0.6006706953048706,
+        "normalized_position": 0.47301105571211793,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2182
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I didn’t want him, I didn’t love him and I sure as hell didn’t like him.",
+        "max_topic_prob": 0.5753222703933716,
+        "normalized_position": 0.030349013657056147,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It’s complex, I tell you, I hate the prick!”",
+        "max_topic_prob": 0.49611684679985046,
+        "normalized_position": 0.8430522436592239,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1545
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I hate English.",
+        "max_topic_prob": 0.47179150581359863,
+        "normalized_position": 0.05717202654415518,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Fuck you!”",
+        "max_topic_prob": 0.42463418841362,
+        "normalized_position": 0.3836140888208269,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "He struggles with liking you, but he doesn’t hate you.”",
+        "max_topic_prob": 0.6749334335327148,
+        "normalized_position": 0.12733940313606473,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You should hate me.",
+        "max_topic_prob": 0.668872058391571,
+        "normalized_position": 0.7601163378856853,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I don’t hate you.",
+        "max_topic_prob": 0.6531025171279907,
+        "normalized_position": 0.7832574607991907,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Well, as we determined today, not only do I not hate you, but I even like more than a handful of things about you.”",
+        "max_topic_prob": 0.652528703212738,
+        "normalized_position": 0.12696004046535153,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "How could you dislike her so much?",
+        "max_topic_prob": 0.6275399327278137,
+        "normalized_position": 0.5326251896813353,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I hate the bastard.",
+        "max_topic_prob": 0.599676787853241,
+        "normalized_position": 0.5452706120384421,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Don’t become like him—everything you hate.” “",
+        "max_topic_prob": 0.7119628190994263,
+        "normalized_position": 0.9313848295059151,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I could not bear to see disdain from you and Landon.”",
+        "max_topic_prob": 0.5366285443305969,
+        "normalized_position": 0.9373695198329853,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I seek his praise, then his comments make me uncomfortable as though I haven’t deserved them. “",
+        "max_topic_prob": 0.5219563245773315,
+        "normalized_position": 0.37856645789839943,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 475
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "This isn’t like me.",
+        "max_topic_prob": 0.4466922879219055,
+        "normalized_position": 0.5245650661099512,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Mirhana hated watching humans die.",
+        "max_topic_prob": 0.42860954999923706,
+        "normalized_position": 0.14613778705636743,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Captain Del’mir doesn’t understand your aversion.",
+        "max_topic_prob": 0.4097245931625366,
+        "normalized_position": 0.8720946416144746,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I hated that you didn’t know me.”",
+        "max_topic_prob": 0.7619823813438416,
+        "normalized_position": 0.7078369220679855,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He probably hated me now.",
+        "max_topic_prob": 0.7452108860015869,
+        "normalized_position": 0.9049076401792545,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He must hate me!”",
+        "max_topic_prob": 0.7413865327835083,
+        "normalized_position": 0.9503770903923926,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 317
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "That man could never hate you and you know it.",
+        "max_topic_prob": 0.7180402874946594,
+        "normalized_position": 0.9505956935184173,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Why do you both hate me so much?”",
+        "max_topic_prob": 0.6976668238639832,
+        "normalized_position": 0.3665974423434255,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I hate that I love him, and I try not to love him, but I fail miserably.”",
+        "max_topic_prob": 0.6607410907745361,
+        "normalized_position": 0.5668379057820527,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He didn’t seem like he hated me when he invited me into his room.”",
+        "max_topic_prob": 0.6771517992019653,
+        "normalized_position": 0.2853846153846154,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He hates werewolves.",
+        "max_topic_prob": 0.5583031177520752,
+        "normalized_position": 0.2746153846153846,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Aris despised this man’s tone.",
+        "max_topic_prob": 0.548262357711792,
+        "normalized_position": 0.2857692307692308,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I didn’t think he deserved you.",
+        "max_topic_prob": 0.531937837600708,
+        "normalized_position": 0.8492307692307692,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Why would he hate alphas so damned much?",
+        "max_topic_prob": 0.47597402334213257,
+        "normalized_position": 0.285,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Garret hated the hell out of it though.",
+        "max_topic_prob": 0.40067291259765625,
+        "normalized_position": 0.4511538461538461,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Calls me back to remind me he hates them.",
+        "max_topic_prob": 0.5580018758773804,
+        "normalized_position": 0.8013585459886176,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He hates this kind of thing with a burning passion.",
+        "max_topic_prob": 0.47860628366470337,
+        "normalized_position": 0.09574468085106383,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 564
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "God, he hates this kind of thing.",
+        "max_topic_prob": 0.4162456691265106,
+        "normalized_position": 0.53125,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I thought you hated me?”",
+        "max_topic_prob": 0.7737954258918762,
+        "normalized_position": 0.7346588821295881,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I hate the both of you.” “",
+        "max_topic_prob": 0.7136099338531494,
+        "normalized_position": 0.8769852610950067,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 406
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I hated myself.",
+        "max_topic_prob": 0.7089999914169312,
+        "normalized_position": 0.5420324174253869,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I hate you so much.” “",
+        "max_topic_prob": 0.7089711427688599,
+        "normalized_position": 0.9878740864736864,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 1301
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He didn’t want me to try and put it into perspective; I knew he wanted me to hate myself.",
+        "max_topic_prob": 0.6860570311546326,
+        "normalized_position": 0.4842608092107949,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 549
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I will always hate you.",
+        "max_topic_prob": 0.6702132225036621,
+        "normalized_position": 0.4399216102559915,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 969
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "I hate when I do that.”",
+        "max_topic_prob": 0.5890507698059082,
+        "normalized_position": 0.0808,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 71
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0027491408934707906,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.005407194879717502,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004778578784757981,
+        "n_sentences": 116
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0034412439459597247,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.003707742639040349,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.002325581395348837,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.004089740593596635,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.003271537622682661,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0003351206434316354,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0004362050163576881,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0008397480755773268,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.000636064878617619,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.00018460402436773122,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0005121638924455825,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0008012820512820513,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 70
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "7.1",
+    "taxonomy_secondary_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

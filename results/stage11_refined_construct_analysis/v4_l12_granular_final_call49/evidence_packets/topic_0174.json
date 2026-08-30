@@ -1,0 +1,758 @@
+{
+  "topic_id": 174,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "ranch",
+        "farm",
+        "cattle",
+        "cows",
+        "cow",
+        "farmer",
+        "rancher",
+        "ranches",
+        "land",
+        "pa"
+      ],
+      "KeyBERT": [
+        "feeding",
+        "experience",
+        "porch",
+        "bo",
+        "folks",
+        "popped",
+        "owned",
+        "areas",
+        "surrounded",
+        "nearest"
+      ],
+      "POS": [
+        "areas",
+        "regular",
+        "suggestion",
+        "foreign",
+        "repeat",
+        "nearest",
+        "equipment",
+        "folks",
+        "sinking",
+        "larger"
+      ],
+      "MMR": [
+        "belongs",
+        "guarded",
+        "areas",
+        "guarantee",
+        "owned",
+        "described",
+        "nearest",
+        "equipment",
+        "sinking",
+        "provide"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve seen your willy on numerous occasions on the ranch.",
+      "the ranch is doing good, and i’ve fallen in love.",
+      "i’d take you there, but i imagine you’ve already seen enough cattle to last you a lifetime.”"
+    ],
+    "label_public": "Ranch Life and Falling in Love"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’ll fetch some water, and then could you sit with him while I fetch the farmer’s wife?” “",
+        "max_topic_prob": 0.5424798727035522,
+        "normalized_position": 0.6690019106541716,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1604
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "That’s as much as I can do—we’re busy at the farm, and the lad isn’t in danger.”",
+        "max_topic_prob": 0.5192076563835144,
+        "normalized_position": 0.6910199253935038,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 1846
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "They got milk, cheese, eggs and other produce from the farm, and they would soon be easily able to grow enough herbs and vegetables for their own use.",
+        "max_topic_prob": 0.5073692798614502,
+        "normalized_position": 0.436448002911473,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 699
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "When the resident died, the farmer, needing the money, had been glad to sell it off with some land to a couple of wealthy Gidinians in need of solitude and a place away from the bustle of the town.",
+        "max_topic_prob": 0.4747687876224518,
+        "normalized_position": 0.4362660358475116,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 697
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jaime suspected he holed up in a barn or in a storeroom, possibly up at the farm.",
+        "max_topic_prob": 0.4685463309288025,
+        "normalized_position": 0.386316076790101,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Seve was busy preserving, drying and storing the produce from the garden and bartered meat, cheese and grain from the farm.",
+        "max_topic_prob": 0.4664819836616516,
+        "normalized_position": 0.9919934491856974,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 1607
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "She dreams of one day living out in Montana, enough land to have a few horses, and find a couple of cowboys of her own.",
+        "max_topic_prob": 0.4990432858467102,
+        "normalized_position": 0.9989669421487604,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The ranch has already been sold.",
+        "max_topic_prob": 0.721696674823761,
+        "normalized_position": 0.9593342753964516,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "This ranch is worth a fortune and we were lucky to be able to sell it for what we did.",
+        "max_topic_prob": 0.662184476852417,
+        "normalized_position": 0.9682838750196263,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "There was a huge ranch on the other side of the mountain range.",
+        "max_topic_prob": 0.6515856981277466,
+        "normalized_position": 0.9792746113989638,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "She loved every aspect of ranch life from the cattle, to the horses, to the old cowpunchers that came and went each year. “",
+        "max_topic_prob": 0.6445461511611938,
+        "normalized_position": 0.959020254357042,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Anything she had ever wanted, the ranch had supplied. “",
+        "max_topic_prob": 0.6381605863571167,
+        "normalized_position": 0.9668707803422829,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Maybe we can find work on a ranch,” Indy said, suddenly excited.",
+        "max_topic_prob": 0.6333903670310974,
+        "normalized_position": 0.9855550321871566,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I will find you some vegan.”",
+        "max_topic_prob": 0.48400741815567017,
+        "normalized_position": 0.26356216994719156,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Why can't they just eat the damn cattle and the vegetables instead of this?",
+        "max_topic_prob": 0.5515064001083374,
+        "normalized_position": 0.7581873571972582,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The man must have been the butcher and this was his place of work.",
+        "max_topic_prob": 0.4966753423213959,
+        "normalized_position": 0.8537699923838538,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Well, that explains why the sheep don't run away, and why the meadow behind us is so long.",
+        "max_topic_prob": 0.4911293089389801,
+        "normalized_position": 0.0376999238385377,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He could just picture him now, seeing the pigs, smiling and helping to rear them.",
+        "max_topic_prob": 0.47727155685424805,
+        "normalized_position": 0.42472708809342474,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Go, just take one sheep, nobody will mind, there's plenty there.\"",
+        "max_topic_prob": 0.47235143184661865,
+        "normalized_position": 0.04036557501904037,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Even that was preferable to the dried dung of the animals that most people in the castle burned if they were lucky enough to gather it before their neighbors. \"",
+        "max_topic_prob": 0.4693949222564697,
+        "normalized_position": 0.3095963442498096,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "So Breccan, how’s that restaurant of yours down on Hickory doing?” “",
+        "max_topic_prob": 0.46556276082992554,
+        "normalized_position": 0.26477715730692236,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "They are creating something new in this land, the runholders and small farmers.",
+        "max_topic_prob": 0.4819067716598511,
+        "normalized_position": 0.9914170927684441,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "A petty saloon owner, you let me think!",
+        "max_topic_prob": 0.46113792061805725,
+        "normalized_position": 0.23484295105916728,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I’ve done it before, looking for stray sheep, and you can’t follow the riverbed all the way.",
+        "max_topic_prob": 0.45625266432762146,
+        "normalized_position": 0.7518261504747992,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Only the odd shepherd hunting for stray stock would meet them here.",
+        "max_topic_prob": 0.43321484327316284,
+        "normalized_position": 0.7390430971512053,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Some were shepherds and stockmen from nearby runs.",
+        "max_topic_prob": 0.4227052927017212,
+        "normalized_position": 0.7169466764061359,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Her parents had begun life in the colony working for Johnny Jones, the earliest farmer in this part of the colony, and their only other neighbours had been from the nearby whaling settlement.",
+        "max_topic_prob": 0.41240090131759644,
+        "normalized_position": 0.07359386413440468,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Grass and weeds grow thick in the dense junkyard since I can’t afford anyone to take care of it. “",
+        "max_topic_prob": 0.43309932947158813,
+        "normalized_position": 0.22581387323133556,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Go see the farm.”",
+        "max_topic_prob": 0.7042303681373596,
+        "normalized_position": 0.39435364041604754,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Well, as the ranchers tell me, it’s only plants and dirt,” he said. “",
+        "max_topic_prob": 0.6845418214797974,
+        "normalized_position": 0.0638930163447251,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I understand you’re a farmer?”",
+        "max_topic_prob": 0.671726405620575,
+        "normalized_position": 0.3836552748885587,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I could take you to see my farm.” “",
+        "max_topic_prob": 0.6328415870666504,
+        "normalized_position": 0.3191679049034175,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Family of farmers?” “",
+        "max_topic_prob": 0.617565393447876,
+        "normalized_position": 0.3863298662704309,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "It is, but I come from a long line of farmers, and I’ve got big plans for my place.”",
+        "max_topic_prob": 0.612727165222168,
+        "normalized_position": 0.475482912332838,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "So you shacked up with one of your lonely female ski instructors or ranch hands or river guides?”",
+        "max_topic_prob": 0.5560847520828247,
+        "normalized_position": 0.2044676341105495,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 511
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It had to do with a clay farm or something like that.” “",
+        "max_topic_prob": 0.5536125898361206,
+        "normalized_position": 0.26822109897277024,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Clay farm?” “",
+        "max_topic_prob": 0.5385898947715759,
+        "normalized_position": 0.2683841513125713,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I didn’t know I was going to be in a remote cabin in the Montana wilderness, remember?”",
+        "max_topic_prob": 0.5071420669555664,
+        "normalized_position": 0.6195988912440894,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Lotsa lonely female ski instructors and raft guides and ranch hands end up there to grab a drink or meet people.” “",
+        "max_topic_prob": 0.48911628127098083,
+        "normalized_position": 0.1428338496657427,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Geez, I don’t even have a clue if you’re in a city or the country or on a farm somewhere.",
+        "max_topic_prob": 0.4855944514274597,
+        "normalized_position": 0.3603456709603783,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Back to the ranch house.",
+        "max_topic_prob": 0.7437553405761719,
+        "normalized_position": 0.1400280679869016,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 898
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Ranching and farming were nothing if not hard work.",
+        "max_topic_prob": 0.6640112400054932,
+        "normalized_position": 0.39154841727740525,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2511
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Since that wasn’t happening, he was better off working at the myriad tasks that kept the ranch running smoothly.",
+        "max_topic_prob": 0.6611337065696716,
+        "normalized_position": 0.3913924840168408,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2510
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Maybe they should leave Breana’s ranch, at least for a little while.",
+        "max_topic_prob": 0.6389031410217285,
+        "normalized_position": 0.31155465460782783,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1998
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’ll start walking back this way once I have the herd secured in the paddock behind the barn.”",
+        "max_topic_prob": 0.6068600416183472,
+        "normalized_position": 0.06658350226103228,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 427
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Let’s bring them back to the barn.” “",
+        "max_topic_prob": 0.5679844617843628,
+        "normalized_position": 0.0642445033525651,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Is that why he left the ranch to me?\" \"",
+        "max_topic_prob": 0.8100714683532715,
+        "normalized_position": 0.983733539891557,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I worked on their ranch for a time.\" \"",
+        "max_topic_prob": 0.8096001148223877,
+        "normalized_position": 0.15427317325071005,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I found a way to keep you here at the ranch.\"",
+        "max_topic_prob": 0.7784522771835327,
+        "normalized_position": 0.26904208623805836,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I grew up on a ranch.\"",
+        "max_topic_prob": 0.7594106793403625,
+        "normalized_position": 0.15478956880970823,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The ranch is yours now, and I just know you can turn it around.\"",
+        "max_topic_prob": 0.727455198764801,
+        "normalized_position": 0.97714949651433,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Don't get me wrong, I love this ranch and the horses.",
+        "max_topic_prob": 0.7250586748123169,
+        "normalized_position": 0.3246837077201136,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 53
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.003789074834227976,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.01091901728844404,
+        "n_sentences": 84
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.002131496966715855,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0031441597233139444,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0023963133640552995,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.001828989483310471,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0033522434244455906,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.01733931240657698,
+        "n_sentences": 58
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.00010625863351397301,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00011564704521799469,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00026089225150013044,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00016199578810950914,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 52
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.2",
+    "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "topic_id": 203,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "bathroom",
+        "door",
+        "toilet",
+        "headed",
+        "walked",
+        "restroom",
+        "stall",
+        "into",
+        "room",
+        "bedroom"
+      ],
+      "KeyBERT": [
+        "flushed",
+        "curtain",
+        "exhaled",
+        "ended",
+        "giggled",
+        "bedside",
+        "breathed",
+        "washed",
+        "blurted",
+        "stumbled"
+      ],
+      "POS": [
+        "makeshift",
+        "rear",
+        "privacy",
+        "annoyance",
+        "curtain",
+        "reception",
+        "bedside",
+        "attached",
+        "wider",
+        "reflection"
+      ],
+      "MMR": [
+        "glued",
+        "noting",
+        "wandered",
+        "annoyance",
+        "blurted",
+        "curtain",
+        "emotionally",
+        "bedside",
+        "scrambled",
+        "snatched"
+      ]
+    },
+    "stage08_snippets": [
+      "don’t fall asleep on me,” he said as he closed the bathroom door.",
+      "when they stepped into the hallway, the bathroom door opened and shannon emerged, her skin pale.",
+      "franklin stepped obediently inside the bathroom, and closed the door behind him."
+    ],
+    "label_public": "Stepping Into The Bathroom"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She jumps up and disappears out of the room and I'm suddenly reminded of what it was like sharing a bathroom with six other people.",
+        "max_topic_prob": 0.6457757949829102,
+        "normalized_position": 0.6185368536853685,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Fortunately, before things get any more awkward, the door opens from the en-suite bathroom and Larry emerges from a cloud of steam, like a super-hero appearing from a swirl of dry ice.",
+        "max_topic_prob": 0.5470138788223267,
+        "normalized_position": 0.422992299229923,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She shut the door, and I heard her humming quietly as she headed to the bathroom.",
+        "max_topic_prob": 0.7536211013793945,
+        "normalized_position": 0.3889830508474576,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "And there’s a bathroom through that door right there.”",
+        "max_topic_prob": 0.6091098785400391,
+        "normalized_position": 0.0635593220338983,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She kicked off her shoes, walked to the bathroom and picked up the plastic bowl, holding it out to Cade. “",
+        "max_topic_prob": 0.7129289507865906,
+        "normalized_position": 0.4276238782676551,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Excuse me,” she said, with all the dignity she could muster, and marched the two steps to the bathroom.",
+        "max_topic_prob": 0.7054456472396851,
+        "normalized_position": 0.30725712056184157,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Maybe she’d gone to use the bathroom.",
+        "max_topic_prob": 0.6686184406280518,
+        "normalized_position": 0.759071400702302,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The best thing that could be said for the bathroom was that it had a door.",
+        "max_topic_prob": 0.6429175734519958,
+        "normalized_position": 0.30803745610612565,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He strode to the bathroom—a man on a mission—and dug out Joey’s first-aid kit from under the sink, grabbing one of the foil packs and hurrying back to the bed.",
+        "max_topic_prob": 0.6296907663345337,
+        "normalized_position": 0.6281701131486539,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Cade whirled her toward a cleaning closet and squeezed in there with her, placing himself in front.",
+        "max_topic_prob": 0.6148317456245422,
+        "normalized_position": 0.7147873585641826,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Luz finishes gathering things in the kitchen and makes her way to what I figure is the bathroom.",
+        "max_topic_prob": 0.6134594082832336,
+        "normalized_position": 0.6990434142752023,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Probably pulling out the drain plug,” Audrey says. “",
+        "max_topic_prob": 0.5151286721229553,
+        "normalized_position": 0.7377483443708609,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Mr. Peepers shifts to his other side.",
+        "max_topic_prob": 0.38875651359558105,
+        "normalized_position": 0.807505518763797,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She took it easily, a slight redness to her cheeks, and we moved toward the next stall, silent for a moment. “",
+        "max_topic_prob": 0.6055729389190674,
+        "normalized_position": 0.22104360870031073,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Without further prompting, the Frenchman strode inside, walking down the aisle with his head held high.",
+        "max_topic_prob": 0.4367862343788147,
+        "normalized_position": 0.36837029893924783,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Her head popped out of the bathroom. “",
+        "max_topic_prob": 0.7646362781524658,
+        "normalized_position": 0.3614457831325301,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She blinked like she had just come to and ducked back into the bathroom.",
+        "max_topic_prob": 0.7575176358222961,
+        "normalized_position": 0.36238704819277107,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She swallowed hard and slowly turned to the bathroom. “",
+        "max_topic_prob": 0.7512556314468384,
+        "normalized_position": 0.42620481927710846,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 563
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "With a quick laugh, she slipped into the bathroom and shut the door, plunging the bedroom back into darkness.",
+        "max_topic_prob": 0.7458236217498779,
+        "normalized_position": 0.019954819277108432,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She’s in the bathroom.”",
+        "max_topic_prob": 0.7266838550567627,
+        "normalized_position": 0.9753388554216867,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The bathroom door cracked open behind her.",
+        "max_topic_prob": 0.7197743654251099,
+        "normalized_position": 0.4307228915662651,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Finally making it into the room she headed straight for the bathroom.",
+        "max_topic_prob": 0.8197600245475769,
+        "normalized_position": 0.12656380316930776,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She made her way back to the bedroom, looking anywhere but at the bed as she entered the bathroom.",
+        "max_topic_prob": 0.7712499499320984,
+        "normalized_position": 0.311092577147623,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 482
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Her feet took her to the bathroom.",
+        "max_topic_prob": 0.7490619421005249,
+        "normalized_position": 0.8033778148457048,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She rushed into the bathroom and turned the shower on.",
+        "max_topic_prob": 0.7473186254501343,
+        "normalized_position": 0.5231442869057548,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She blanked out her mind and tried to see if she could visualise the direction of the bathroom.",
+        "max_topic_prob": 0.7014808654785156,
+        "normalized_position": 0.799207673060884,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He strode away from the enticing siren on the bed towards the open bathroom door, shedding clothes as he went.",
+        "max_topic_prob": 0.6865689754486084,
+        "normalized_position": 0.32714762301918265,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He pivoted on his feet and entered the bathroom.",
+        "max_topic_prob": 0.7999628782272339,
+        "normalized_position": 0.8019434349818296,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 437
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She pushed me toward the bathroom. “",
+        "max_topic_prob": 0.7452799677848816,
+        "normalized_position": 0.5241744351398325,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 474
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He headed for the restrooms and mirrors.",
+        "max_topic_prob": 0.7385228872299194,
+        "normalized_position": 0.6019118344130194,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "On to the next one,” Andris said, turning to re-enter the nurses’ bathroom. “",
+        "max_topic_prob": 0.6677113175392151,
+        "normalized_position": 0.624111234002212,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 582
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She’d asked to use our bathroom before. “",
+        "max_topic_prob": 0.6676959991455078,
+        "normalized_position": 0.4935218833939011,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She practically dragged me away from the bar, past tables, and into the hallway leading to the restrooms. “",
+        "max_topic_prob": 0.655500054359436,
+        "normalized_position": 0.5236214251856534,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 467
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He got up, left a tip then when there was still no Tessa, he walked down the hallway toward the ladies’ restroom.",
+        "max_topic_prob": 0.7535297870635986,
+        "normalized_position": 0.7119902617163725,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He gave the room a quick glance before he pushed past her to check the bathroom.",
+        "max_topic_prob": 0.7526774406433105,
+        "normalized_position": 0.720876445526476,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He moved into the bathroom, turned on the shower and while he waited for the water to warm, he relieved himself in the toilet.",
+        "max_topic_prob": 0.7480045557022095,
+        "normalized_position": 0.20486914181375532,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Let me wash out the blood,” she said, and hurried into the bathroom.",
+        "max_topic_prob": 0.710515558719635,
+        "normalized_position": 0.5891661594643944,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She came out of the bathroom and seemed surprised to see him sitting on the edge of the bed.",
+        "max_topic_prob": 0.7056961059570312,
+        "normalized_position": 0.6480827754108338,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He went into the bathroom and let the hot water run.",
+        "max_topic_prob": 0.6941683888435364,
+        "normalized_position": 0.8904443091905052,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He stalked off to the bathroom.",
+        "max_topic_prob": 0.8169618248939514,
+        "normalized_position": 0.15493827160493828,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Shedding his clothes down the hallway to the bathroom, Lucky stopped mid-motion and returned to pick up the offending garments. “",
+        "max_topic_prob": 0.6426624059677124,
+        "normalized_position": 0.0441358024691358,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Returning to her own room, she tested the bathroom door.",
+        "max_topic_prob": 0.7448183298110962,
+        "normalized_position": 0.3149974709155286,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He led her to the bathroom and lifted her onto the counter top.",
+        "max_topic_prob": 0.7411280274391174,
+        "normalized_position": 0.5393272635306019,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Ten minutes later, she heard her bathroom door open.",
+        "max_topic_prob": 0.7374058365821838,
+        "normalized_position": 0.6779210925644916,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She gathered her new nightgown and robe and followed him across to his room and into his bathroom. “",
+        "max_topic_prob": 0.7304369807243347,
+        "normalized_position": 0.18247344461305007,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "The knob turned and she walked inside to a neat and tidy bathroom.",
+        "max_topic_prob": 0.7167357206344604,
+        "normalized_position": 0.31512392513909965,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "The moment she entered Brendon’s bathroom, she had to rethink her plan.",
+        "max_topic_prob": 0.6723629236221313,
+        "normalized_position": 0.3146181082448154,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Andrew nodded and gestured toward the bathroom.",
+        "max_topic_prob": 0.6971797347068787,
+        "normalized_position": 0.6437810945273632,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He grabbed the remote and paused the movie, heading into the bathroom without a word, passing Andrew, who followed him with his eyes the entire time.",
+        "max_topic_prob": 0.6660503149032593,
+        "normalized_position": 0.8736318407960199,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "She came up to the stall door and stuck her head out, letting Greg run a hand down her nose.",
+        "max_topic_prob": 0.6487380266189575,
+        "normalized_position": 0.3251741293532338,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "She’s wiggling around like that because she has to use the bathroom.” “",
+        "max_topic_prob": 0.6369656920433044,
+        "normalized_position": 0.07661691542288557,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He shook his head and left the room, heading down the hallway to his bedroom.",
+        "max_topic_prob": 0.5773200392723083,
+        "normalized_position": 0.6216915422885572,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Brian pulled open every drawer and closet in the room before he headed out the door like a man on a mission.",
+        "max_topic_prob": 0.5587995052337646,
+        "normalized_position": 0.9198009950248757,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "At the last minute, she pivoted toward the bathroom, just out of his reach.",
+        "max_topic_prob": 0.7772217988967896,
+        "normalized_position": 0.34608266502159163,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He left, heading toward the bedroom, probably for the connected bathroom.",
+        "max_topic_prob": 0.7628856897354126,
+        "normalized_position": 0.3406847624922887,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He took her hand and led her to the bathroom and opened the medicine cabinet.",
+        "max_topic_prob": 0.7381900548934937,
+        "normalized_position": 0.8227945712523134,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m going to take a quick shower,” she said and slipped into the bathroom. “",
+        "max_topic_prob": 0.7194880247116089,
+        "normalized_position": 0.12723627390499692,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 339
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "she hollered back, running to the bathroom mirror and hurriedly wetting down her hair.",
+        "max_topic_prob": 0.7085145711898804,
+        "normalized_position": 0.6826033312769895,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She headed to the adjoining bathroom, pulled a small bag of toiletries from her purse, and inspected herself in the mirror.",
+        "max_topic_prob": 0.7061541080474854,
+        "normalized_position": 0.006477483035163479,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 17
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.002817246447819696,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0017562065937574839,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0022941626306398166,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0020198881292728403,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0026510130657072524,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.003199360127974405,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.002548020384163073,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.002301255230125523,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0002157497303128371,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0003108003108003108,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0004441812259401836,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00042872454448017146,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.000184314809694959,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 59
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.5",
+    "taxonomy_main_name": "Sexual Negotiation, Safety Preparation & Boundaries",
+    "taxonomy_secondary_id": "8.1",
+    "taxonomy_secondary_name": "Domestic Spaces & Routines",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

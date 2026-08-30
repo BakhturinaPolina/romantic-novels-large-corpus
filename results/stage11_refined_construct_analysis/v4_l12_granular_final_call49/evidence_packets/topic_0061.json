@@ -1,0 +1,89 @@
+{
+  "topic_id": 61,
+  "exhaustive": true,
+  "taxonomy_leaf_sealed": "8.3a",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "ring",
+        "necklace",
+        "finger",
+        "diamond",
+        "stone",
+        "jewelry",
+        "gold",
+        "engagement",
+        "rings",
+        "diamonds"
+      ],
+      "KeyBERT": [
+        "rings",
+        "promises",
+        "precious",
+        "engaged",
+        "glint",
+        "twisting",
+        "magical",
+        "gesturing",
+        "polished",
+        "dangling"
+      ],
+      "POS": [
+        "rings",
+        "sized",
+        "precious",
+        "scenario",
+        "threats",
+        "glint",
+        "matching",
+        "polished",
+        "commander",
+        "value"
+      ],
+      "MMR": [
+        "rings",
+        "collect",
+        "precious",
+        "claims",
+        "glint",
+        "presented",
+        "polished",
+        "commander",
+        "worn",
+        "stunning"
+      ]
+    },
+    "stage08_snippets": [
+      "in a few days, i’ll go to the stone.",
+      "next time we’ll put a ring on him.”",
+      "we’ll take care of the rings tomorrow.”",
+      "anna was admiring his ring.",
+      "no wedding ring, but he did have a gold ring on his pinky finger.",
+      "her ring finger was adorned with a sizeable diamond. “"
+    ],
+    "label_public": "Planning to Exchange Rings"
+  },
+  "contextual": {
+    "sentences": [],
+    "books_sampled": [],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": true,
+      "books_per_cell": 8,
+      "sentences_per_book_topic": 20
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "8.3a",
+    "taxonomy_main_name": "Commitment Symbols & Love Tokens",
+    "taxonomy_secondary_id": "4.5",
+    "taxonomy_secondary_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

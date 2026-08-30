@@ -1,0 +1,1026 @@
+{
+  "topic_id": 93,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "dinner",
+        "lunch",
+        "supper",
+        "tonight",
+        "tomorrow",
+        "we",
+        "ll",
+        "eat",
+        "having",
+        "lunches"
+      ],
+      "KeyBERT": [
+        "meal",
+        "eaten",
+        "sentence",
+        "appointment",
+        "sir",
+        "shortly"
+      ],
+      "POS": [
+        "appointment",
+        "exciting",
+        "regular",
+        "meal",
+        "sentence",
+        "movement",
+        "lady"
+      ],
+      "MMR": [
+        "discussing",
+        "appointment",
+        "exciting",
+        "arranged",
+        "meal",
+        "sentence",
+        "ex",
+        "appreciate",
+        "planning",
+        "sending"
+      ]
+    },
+    "stage08_snippets": [
+      "that’ll wait ’til after supper, though.” “",
+      "i’ll go get started on lunch,” clark offered.",
+      "i’ll show you over dinner.” “"
+    ],
+    "label_public": "Meal Plans Casually Arranged"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "What kind of host would I be to let you go all day without a proper meal?",
+        "max_topic_prob": 0.6605901718139648,
+        "normalized_position": 0.7596976611523103,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I can call the waiter over if you— No.",
+        "max_topic_prob": 0.562265932559967,
+        "normalized_position": 0.7632629777524245,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "What happened to Reichen finding you some dinner downstairs?",
+        "max_topic_prob": 0.5533260107040405,
+        "normalized_position": 0.5847119224187107,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "It seemed only fitting that I treat you to one of the city‘s finest dinners.",
+        "max_topic_prob": 0.5164583325386047,
+        "normalized_position": 0.7598402738163149,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "We‘ll save you a sandwich.",
+        "max_topic_prob": 0.49637502431869507,
+        "normalized_position": 0.29791785510553337,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "He’d sat with her for hours going over the catering menu for the reception, listening to her gripe and moan about what they would serve their guests.",
+        "max_topic_prob": 0.5108610987663269,
+        "normalized_position": 0.07535321821036106,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Let’s have dinner tomorrow night.”",
+        "max_topic_prob": 0.8350917100906372,
+        "normalized_position": 0.5867021276595744,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 425
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Can we have dinner again soon?” “",
+        "max_topic_prob": 0.7900922298431396,
+        "normalized_position": 0.6377659574468085,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Let’s have dinner,” she said. “",
+        "max_topic_prob": 0.7416759729385376,
+        "normalized_position": 0.7074468085106383,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’d love to take you to dinner,” he said. “",
+        "max_topic_prob": 0.722058892250061,
+        "normalized_position": 0.438563829787234,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "We agreed to have dinner the following night. “",
+        "max_topic_prob": 0.7178895473480225,
+        "normalized_position": 0.4186170212765957,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You must come to dinner tonight,” she said. “",
+        "max_topic_prob": 0.708479106426239,
+        "normalized_position": 0.42898936170212765,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Please say you’ll come to dinner.” “",
+        "max_topic_prob": 0.7789626121520996,
+        "normalized_position": 0.22645290581162325,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "How about lunch?”",
+        "max_topic_prob": 0.7560876607894897,
+        "normalized_position": 0.5843687374749499,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "We had made plans to meet for dinner tonight.",
+        "max_topic_prob": 0.722507655620575,
+        "normalized_position": 0.4755511022044088,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You missed dinner!”",
+        "max_topic_prob": 0.6951406598091125,
+        "normalized_position": 0.4779559118236473,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry about dinner.",
+        "max_topic_prob": 0.6800118684768677,
+        "normalized_position": 0.48236472945891784,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "But yes, I’d like some lunch.",
+        "max_topic_prob": 0.6788942813873291,
+        "normalized_position": 0.585370741482966,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Just lunch, right?”",
+        "max_topic_prob": 0.6595115065574646,
+        "normalized_position": 0.3989071038251366,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Celeste and I w ould enjoy our meal in the dining room immediately.” “",
+        "max_topic_prob": 0.6273520588874817,
+        "normalized_position": 0.10540696002300834,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Do you think we could maybe eat breakfast together?",
+        "max_topic_prob": 0.5968676805496216,
+        "normalized_position": 0.14912280701754385,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Perhaps we could skip dinner and get to know each other better now,” she said, her voice low and throaty.",
+        "max_topic_prob": 0.5563881397247314,
+        "normalized_position": 0.08714408973252805,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I’m just wondering how many Calices I’m going to have tonight.”",
+        "max_topic_prob": 0.3968406915664673,
+        "normalized_position": 0.8311763014092609,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "If you fancy dinner, we can go there now?’",
+        "max_topic_prob": 0.769140362739563,
+        "normalized_position": 0.5648613872967598,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m back in a fortnight, I’d like to take you for dinner.’ ‘",
+        "max_topic_prob": 0.7385039329528809,
+        "normalized_position": 0.985261434085858,
+        "tertile": "end",
+        "chapter_index": 58,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I like dinner.’ ‘",
+        "max_topic_prob": 0.7299259901046753,
+        "normalized_position": 0.9854953795765586,
+        "tertile": "end",
+        "chapter_index": 58,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m putting you next to him at dinner.’ ‘",
+        "max_topic_prob": 0.7127050161361694,
+        "normalized_position": 0.22552345303544274,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I thought he was taking you for dinner?’",
+        "max_topic_prob": 0.7062911987304688,
+        "normalized_position": 0.4885951573283425,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Fancy dinner this week?",
+        "max_topic_prob": 0.7025027275085449,
+        "normalized_position": 0.4613405076617148,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Dinner is on the table.\"",
+        "max_topic_prob": 0.7277917861938477,
+        "normalized_position": 0.5320972538044428,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Let's get a room and grab dinner.",
+        "max_topic_prob": 0.7083040475845337,
+        "normalized_position": 0.1570753891901347,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Go finish lunch.\"",
+        "max_topic_prob": 0.6757218837738037,
+        "normalized_position": 0.7357005422424349,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "We're going to have dinner with my brother tonight, if that's all right.",
+        "max_topic_prob": 0.6735175848007202,
+        "normalized_position": 0.4535595592093756,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Shut up and eat your dinner.\"",
+        "max_topic_prob": 0.6626779437065125,
+        "normalized_position": 0.556060871086234,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Here's your pass to get dinner in the restaurant.",
+        "max_topic_prob": 0.6537512540817261,
+        "normalized_position": 0.16267273045303482,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I really appreciate you bringing dinner, but I’m really tired.” “",
+        "max_topic_prob": 0.6681715250015259,
+        "normalized_position": 0.04438343628460307,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Ma says putting plates of food in front of each of us.",
+        "max_topic_prob": 0.6219667792320251,
+        "normalized_position": 0.8071379547014413,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "He even brought me dinner a couple of times.",
+        "max_topic_prob": 0.5575021505355835,
+        "normalized_position": 0.10455273392816289,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I shut the door and lock the deadbolt, clean up the remnants of dinner and head to bed.",
+        "max_topic_prob": 0.5414894819259644,
+        "normalized_position": 0.04667124227865477,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 399
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I move to the desk and bring my plate to G.T’s side table.",
+        "max_topic_prob": 0.4788956642150879,
+        "normalized_position": 0.41146190803019905,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 563
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "After we are done, I clear the plates setting them on the desk after G.T. refuses to let me leave to take them back to the kitchen.",
+        "max_topic_prob": 0.47055870294570923,
+        "normalized_position": 0.4132921528254404,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 579
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Dinner?”",
+        "max_topic_prob": 0.7882815599441528,
+        "normalized_position": 0.4698905109489051,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "What’s for dinner?”",
+        "max_topic_prob": 0.7674366235733032,
+        "normalized_position": 0.2771897810218978,
+        "tertile": "begin",
+        "chapter_index": 24,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Dinner tomorrow at 7 sharp.",
+        "max_topic_prob": 0.7231976985931396,
+        "normalized_position": 0.631021897810219,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "And look I’ve already finished my dinner.”",
+        "max_topic_prob": 0.6999621391296387,
+        "normalized_position": 0.28375912408759124,
+        "tertile": "begin",
+        "chapter_index": 24,
+        "sentence_index": 372
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You were invited to eat dinner, not come here and make it!”",
+        "max_topic_prob": 0.6698061227798462,
+        "normalized_position": 0.6735401459854015,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You’re invited for dinner at seven sharp, as per my Mom’s instructions.”",
+        "max_topic_prob": 0.665938138961792,
+        "normalized_position": 0.6594890510948905,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Do you want lunch?",
+        "max_topic_prob": 0.6739945411682129,
+        "normalized_position": 0.6053931949738811,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’ll have to let you know about lunch.",
+        "max_topic_prob": 0.6493083834648132,
+        "normalized_position": 0.8852181279119017,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "We cook meatloaf and mashed potatoes, a house favorite and since my appetite is back I decide to stay for dinner.",
+        "max_topic_prob": 0.6384003758430481,
+        "normalized_position": 0.1517718480869688,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Chapter Five On Wednesday afternoon I stop by The Freeway Station to see if I can help cook dinner.",
+        "max_topic_prob": 0.6340712308883667,
+        "normalized_position": 0.15064238317097275,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "We make plans to get together for lunch next week.",
+        "max_topic_prob": 0.631642758846283,
+        "normalized_position": 0.950303543696174,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "So, lunch?",
+        "max_topic_prob": 0.6164804100990295,
+        "normalized_position": 0.8839474798814062,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I can fix dinner.”",
+        "max_topic_prob": 0.7782589197158813,
+        "normalized_position": 0.17157094151586677,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Are you guys joining us for dinner tonight?” “",
+        "max_topic_prob": 0.77189040184021,
+        "normalized_position": 0.9743509047993706,
+        "tertile": "end",
+        "chapter_index": 86,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Hey, now that you’re out, ya know, are you free for dinner sometime?”",
+        "max_topic_prob": 0.7232420444488525,
+        "normalized_position": 0.8145292420666143,
+        "tertile": "end",
+        "chapter_index": 77,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "We can go right after you eat.” “",
+        "max_topic_prob": 0.719110369682312,
+        "normalized_position": 0.8391292945187516,
+        "tertile": "end",
+        "chapter_index": 78,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Check out for your lunch break, and let’s get in there and eat.”",
+        "max_topic_prob": 0.6686993837356567,
+        "normalized_position": 0.3675845790715972,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Maybe I’ll call down and order breakfast and see what he has next on the menu.” “",
+        "max_topic_prob": 0.6407145261764526,
+        "normalized_position": 0.45811696826645687,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Otherwise, lunch is on me.”",
+        "max_topic_prob": 0.6420363783836365,
+        "normalized_position": 0.12480739599383667,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Yeah, but it would have been a great meal.” “",
+        "max_topic_prob": 0.5778779983520508,
+        "normalized_position": 0.4965034965034965,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "We can wash him real quick and then see about dinner.",
+        "max_topic_prob": 0.5555602312088013,
+        "normalized_position": 0.27509778357235987,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Ty promised to look into it and now they were off for their afternoon of unplanned shopping and eventually dinner.",
+        "max_topic_prob": 0.494823157787323,
+        "normalized_position": 0.5864643830745526,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Now, restaurant, drive-thru, or delivery?”",
+        "max_topic_prob": 0.46841341257095337,
+        "normalized_position": 0.49828137963731184,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Take your time and after lunch, we can go to my house and you can explore there as well.",
+        "max_topic_prob": 0.4589046239852905,
+        "normalized_position": 0.12729643238117813,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Today we’re going out for dinner.",
+        "max_topic_prob": 0.7612044215202332,
+        "normalized_position": 0.9388172381251966,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Are you two going to lunch together?’",
+        "max_topic_prob": 0.7485647201538086,
+        "normalized_position": 0.1667190940547342,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Don’t worry about that, I’ll bring you a sandwich and a hot drink on my way home, if you like.’ ‘",
+        "max_topic_prob": 0.6341073513031006,
+        "normalized_position": 0.16561811890531614,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Our dinner’s getting ruined.’",
+        "max_topic_prob": 0.6234204769134521,
+        "normalized_position": 0.9591066373073294,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’m supposed to be collecting Ella from the café and cooking dinner tonight.’",
+        "max_topic_prob": 0.6192389726638794,
+        "normalized_position": 0.8416168606480026,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "So you can’t help with my lunch order then?’",
+        "max_topic_prob": 0.611424446105957,
+        "normalized_position": 0.09578483799937088,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Dinner?”",
+        "max_topic_prob": 0.7882813215255737,
+        "normalized_position": 0.26443287299071766,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Then I’ll make dinner.” “",
+        "max_topic_prob": 0.7711613178253174,
+        "normalized_position": 0.5680326013131084,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "We’re going out for dinner.",
+        "max_topic_prob": 0.7594654560089111,
+        "normalized_position": 0.25582974869821146,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Isn’t it a little early for dinner?” “",
+        "max_topic_prob": 0.7442646026611328,
+        "normalized_position": 0.26488566900611277,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Don't you want to grab some dinner?” “",
+        "max_topic_prob": 0.7153440713882446,
+        "normalized_position": 0.9814353633688023,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I’m going to clean up and then I’ll cook dinner.” “",
+        "max_topic_prob": 0.7137792110443115,
+        "normalized_position": 0.39189495132442836,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 161
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.004931313842902431,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0044288614135449345,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004675910996452757,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.004109977324263038,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.00623236124176858,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.009874566319722444,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.006872852233676976,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.004783599088838269,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0010021625613165252,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0007161271841879118,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0009199632014719411,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0007164179104477612,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0007861635220125787,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.000724112961622013,
+        "n_sentences": 5
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 77
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.3b",
+    "taxonomy_secondary_name": "Everyday Props & Communication Media",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

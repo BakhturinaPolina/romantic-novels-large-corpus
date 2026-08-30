@@ -1,0 +1,1172 @@
+{
+  "topic_id": 38,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "feel",
+        "feels",
+        "good",
+        "felt",
+        "feeling",
+        "better",
+        "make",
+        "how",
+        "so",
+        "like"
+      ],
+      "KeyBERT": [
+        "hurts",
+        "experienced",
+        "worst",
+        "recently",
+        "um",
+        "honestly",
+        "accustomed",
+        "incredibly",
+        "magical"
+      ],
+      "POS": [
+        "accustomed",
+        "magical",
+        "insides",
+        "problems",
+        "opportunity",
+        "worst",
+        "loose"
+      ],
+      "MMR": [
+        "hurts",
+        "ticked",
+        "accustomed",
+        "magical",
+        "insides",
+        "apologize",
+        "recently",
+        "admitted",
+        "experienced",
+        "loose"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ve seen your pain.",
+      "i've never felt that way before.\"",
+      "will it make you feel better to know that i’ve got one, too?”"
+    ],
+    "label_public": "Admitting Shared Pain"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "That’s how I feel, too.” “",
+        "max_topic_prob": 0.7048637866973877,
+        "normalized_position": 0.3308214016578749,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 457
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I feel it in my bones.”",
+        "max_topic_prob": 0.697561502456665,
+        "normalized_position": 0.3813112283345893,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 658
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I always want to be able to tell you what I’m feeling.",
+        "max_topic_prob": 0.6773815155029297,
+        "normalized_position": 0.8590806330067822,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 603
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "A feeling of relief swept through me.",
+        "max_topic_prob": 0.6601839065551758,
+        "normalized_position": 0.7322280833961317,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I still didn’t feel too good.",
+        "max_topic_prob": 0.6553743481636047,
+        "normalized_position": 0.7417734237628737,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "That’s what it felt like—that was the exact feeling—and I’m so happy that now you were there.",
+        "max_topic_prob": 0.6551677584648132,
+        "normalized_position": 0.5001255965837729,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I feel it.”",
+        "max_topic_prob": 0.7402437925338745,
+        "normalized_position": 0.6222963951935915,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I feel you.”",
+        "max_topic_prob": 0.7153213024139404,
+        "normalized_position": 0.06488651535380507,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 464
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I hadn’t noticed that feeling before.” “",
+        "max_topic_prob": 0.7129249572753906,
+        "normalized_position": 0.6795727636849133,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Couldn’t you feel it?”",
+        "max_topic_prob": 0.707379937171936,
+        "normalized_position": 0.5468624833110814,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The feeling was mutual.",
+        "max_topic_prob": 0.6933003664016724,
+        "normalized_position": 0.11281708945260348,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Felt it.",
+        "max_topic_prob": 0.6747992038726807,
+        "normalized_position": 0.40654205607476634,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "How do you think that makes me feel?’",
+        "max_topic_prob": 0.6991994380950928,
+        "normalized_position": 0.6409802184824328,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "But now I know exactly how he feels.",
+        "max_topic_prob": 0.6039410829544067,
+        "normalized_position": 0.9722468260997933,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Trust me—it will make you feel a whole lot better.’ ‘",
+        "max_topic_prob": 0.5913371443748474,
+        "normalized_position": 0.8305284912902273,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I thought only of myself, not how you were feeling.",
+        "max_topic_prob": 0.5368233323097229,
+        "normalized_position": 0.9474461175081192,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Good sign or bad?",
+        "max_topic_prob": 0.3687800467014313,
+        "normalized_position": 0.29081783289046353,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Feel better?\" \"",
+        "max_topic_prob": 0.7166556119918823,
+        "normalized_position": 0.8426966292134831,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 372
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Up to this point all I could think of was fucking you senseless.\" \"",
+        "max_topic_prob": 0.5014766454696655,
+        "normalized_position": 0.09337466098411469,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Same here.\"",
+        "max_topic_prob": 0.42255109548568726,
+        "normalized_position": 0.16079039132119333,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "But in my mind I feel... I feel good.'",
+        "max_topic_prob": 0.7482753992080688,
+        "normalized_position": 0.7298492462311558,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "But it doesn't feel great this feeling I'm getting, you know.",
+        "max_topic_prob": 0.7344509363174438,
+        "normalized_position": 0.3841206030150754,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It felt good.",
+        "max_topic_prob": 0.6934272050857544,
+        "normalized_position": 0.8755778894472361,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It feels, It feels so familiar to me now.'",
+        "max_topic_prob": 0.6901575326919556,
+        "normalized_position": 0.4190954773869347,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Something didn't feel quite right.",
+        "max_topic_prob": 0.6851855516433716,
+        "normalized_position": 0.07839195979899498,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It made me feel good.",
+        "max_topic_prob": 0.633826732635498,
+        "normalized_position": 0.9083417085427136,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Well, you make me feel that way.\"",
+        "max_topic_prob": 0.6083331108093262,
+        "normalized_position": 0.9725938009787928,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Okay, so you know, I'm not afraid to tell you how I feel.\"",
+        "max_topic_prob": 0.5860728025436401,
+        "normalized_position": 0.6887438825448613,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 514
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "But, those feelings shouldn't be there, not so fast! \"",
+        "max_topic_prob": 0.581996738910675,
+        "normalized_position": 0.48972267536704733,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "It felt good to be noticed.",
+        "max_topic_prob": 0.4994129240512848,
+        "normalized_position": 0.1393148450244698,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "That’s how I wanted you to feel.”",
+        "max_topic_prob": 0.7448337078094482,
+        "normalized_position": 0.4043114826220853,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 919
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I felt flustered. “",
+        "max_topic_prob": 0.6415719389915466,
+        "normalized_position": 0.35679718433787944,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 811
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I felt stricken.",
+        "max_topic_prob": 0.6368358135223389,
+        "normalized_position": 0.8218213814342279,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 1868
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I felt invincible. “",
+        "max_topic_prob": 0.6260803937911987,
+        "normalized_position": 0.3515178178618566,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 799
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I felt stupefied.",
+        "max_topic_prob": 0.585426926612854,
+        "normalized_position": 0.16234051913770348,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Both sensations I welcomed.",
+        "max_topic_prob": 0.5833897590637207,
+        "normalized_position": 0.6599208095028597,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1500
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I can feel it.” “",
+        "max_topic_prob": 0.7515153884887695,
+        "normalized_position": 0.7859839903337864,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Ya might feel better.”",
+        "max_topic_prob": 0.6919289827346802,
+        "normalized_position": 0.5331520918290289,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Feeling better?”",
+        "max_topic_prob": 0.6457011103630066,
+        "normalized_position": 0.77239087751095,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I knew how he felt.",
+        "max_topic_prob": 0.6324299573898315,
+        "normalized_position": 0.9216130493883099,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I felt like something was missing, like maybe I wasn’t doing something right.",
+        "max_topic_prob": 0.5724745392799377,
+        "normalized_position": 0.24316568494185167,
+        "tertile": "begin",
+        "chapter_index": 26,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Only then will I feel deserving of any form of pleasure. “",
+        "max_topic_prob": 0.5544477105140686,
+        "normalized_position": 0.5224286361576801,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Feel it?”",
+        "max_topic_prob": 0.7424125671386719,
+        "normalized_position": 0.6469161994241551,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That feels good.”",
+        "max_topic_prob": 0.7374000549316406,
+        "normalized_position": 0.22609486285800878,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Feel it,” he says.",
+        "max_topic_prob": 0.7147629261016846,
+        "normalized_position": 0.27382936808607367,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "But I’d felt the same way. “",
+        "max_topic_prob": 0.7010645866394043,
+        "normalized_position": 0.2580694044552205,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "But I feel so much.",
+        "max_topic_prob": 0.6749205589294434,
+        "normalized_position": 0.27398090619790877,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "This feels right.",
+        "max_topic_prob": 0.6682865023612976,
+        "normalized_position": 0.5914532504924989,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I don’t feel well.” “",
+        "max_topic_prob": 0.7478111982345581,
+        "normalized_position": 0.6571008094186902,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "How do you feel?”",
+        "max_topic_prob": 0.7111027240753174,
+        "normalized_position": 0.33995584988962474,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 596
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "How does it feel?”",
+        "max_topic_prob": 0.7046371698379517,
+        "normalized_position": 0.30500367917586463,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 501
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Was that what I felt?",
+        "max_topic_prob": 0.6487706899642944,
+        "normalized_position": 0.48969830757910227,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "The sensation was unlike what I’d felt seconds before and even as I surrendered to the feeling that spread inside me now, I wondered how such a swift and complete change of emotions was possible.",
+        "max_topic_prob": 0.6334666013717651,
+        "normalized_position": 0.5014716703458425,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I felt like I’d died and gone to heaven.",
+        "max_topic_prob": 0.6209481954574585,
+        "normalized_position": 0.1401766004415011,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Feels like it.” “",
+        "max_topic_prob": 0.6954473257064819,
+        "normalized_position": 0.6687382739212008,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "If this was how it would feel most of the time, it would be no issue.",
+        "max_topic_prob": 0.5776236057281494,
+        "normalized_position": 0.07446060037523453,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "But between feeling the click just now and hearing your symptoms . . .”",
+        "max_topic_prob": 0.5561596155166626,
+        "normalized_position": 0.6601782363977486,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "It feels good to have found that niche that was meant for me.”",
+        "max_topic_prob": 0.5261774063110352,
+        "normalized_position": 0.18069887429643527,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "It always felt better bent. “",
+        "max_topic_prob": 0.5105593204498291,
+        "normalized_position": 0.4513367729831144,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Just things to look out for so they can come tell me if they’re feeling any of it.” “",
+        "max_topic_prob": 0.46337592601776123,
+        "normalized_position": 0.5716463414634146,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "It was going to feel good.",
+        "max_topic_prob": 0.6678025126457214,
+        "normalized_position": 0.10214474586230536,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I never really felt…” “What you feel with this reporter.”",
+        "max_topic_prob": 0.6362357139587402,
+        "normalized_position": 0.39917735775144453,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 385
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "How am I supposed to feel about this?” “",
+        "max_topic_prob": 0.5706168413162231,
+        "normalized_position": 0.6071883263147586,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I’m trying to make you feel better.",
+        "max_topic_prob": 0.5418641567230225,
+        "normalized_position": 0.6768191166389188,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "So I’m still feeling my way along.",
+        "max_topic_prob": 0.539854109287262,
+        "normalized_position": 0.554989716971893,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "The thing is, I don’t know how I feel about the whole thing.",
+        "max_topic_prob": 0.5104583501815796,
+        "normalized_position": 0.6069924591127216,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 416
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "And I felt that, too. “",
+        "max_topic_prob": 0.7623618245124817,
+        "normalized_position": 0.09717146035277292,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I felt it.",
+        "max_topic_prob": 0.7493912577629089,
+        "normalized_position": 0.0630859685364691,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’ll feel that, babe, but you’re feelin’ it, too.” “",
+        "max_topic_prob": 0.7332517504692078,
+        "normalized_position": 0.6133799459717146,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You’re feelin’ it now.”",
+        "max_topic_prob": 0.7210865020751953,
+        "normalized_position": 0.055458445892261246,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Nothin’ feels this good, baby.”",
+        "max_topic_prob": 0.7188397645950317,
+        "normalized_position": 0.5340060384554267,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You’re feelin’ it, aren’t you?” “",
+        "max_topic_prob": 0.7149949073791504,
+        "normalized_position": 0.04886381693945654,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It felt right. “",
+        "max_topic_prob": 0.7480312585830688,
+        "normalized_position": 0.17551392141556077,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I don’t feel any different.”",
+        "max_topic_prob": 0.7316910028457642,
+        "normalized_position": 0.9482175383814728,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s understandable to feel a little unprepared.”",
+        "max_topic_prob": 0.6077466011047363,
+        "normalized_position": 0.12724434035909446,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The delicious feeling evoked a sensation like melting chocolate, sweet and satisfying. “",
+        "max_topic_prob": 0.5181822776794434,
+        "normalized_position": 0.0020817069997397866,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The delicious feeling evoked a sensation like melting chocolate, sweet and satisfying. “",
+        "max_topic_prob": 0.5181821584701538,
+        "normalized_position": 0.339448347645069,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Carman knew Maryann would feel one hundred percent better tomorrow.",
+        "max_topic_prob": 0.3560471832752228,
+        "normalized_position": 0.5347384855581577,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I felt special.”",
+        "max_topic_prob": 0.6737866401672363,
+        "normalized_position": 0.8180946570208315,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Thought I’d come by and see how you’re feeling.” “",
+        "max_topic_prob": 0.6679362058639526,
+        "normalized_position": 0.8170487230889916,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "The moment actually felt normal. “",
+        "max_topic_prob": 0.6520389318466187,
+        "normalized_position": 0.712542491065981,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Sometimes it feels like yesterday.”",
+        "max_topic_prob": 0.6485075354576111,
+        "normalized_position": 0.5459775124204654,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I was getting a feel for what he wanted.” “",
+        "max_topic_prob": 0.6107456684112549,
+        "normalized_position": 0.3297306720125512,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 658
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Ahh, don’t feel too bad.”",
+        "max_topic_prob": 0.6062659025192261,
+        "normalized_position": 0.5018739649612133,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I didn't feel good.\"",
+        "max_topic_prob": 0.7578242421150208,
+        "normalized_position": 0.5736685129953132,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 405
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I just had a feeling.\"",
+        "max_topic_prob": 0.7377667427062988,
+        "normalized_position": 0.9563698338304218,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "This felt right. \"",
+        "max_topic_prob": 0.7350338697433472,
+        "normalized_position": 0.4755858542820622,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I don't like this feeling.\"",
+        "max_topic_prob": 0.7212360501289368,
+        "normalized_position": 0.2847890924584576,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 327
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "It was the same thing I was feeling.",
+        "max_topic_prob": 0.7192503213882446,
+        "normalized_position": 0.4546229228802727,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I hadn't felt it before.",
+        "max_topic_prob": 0.716848611831665,
+        "normalized_position": 0.4798466126970601,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 315
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.009076305220883533,
+        "n_sentences": 113
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.004952482934011512,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.007993124194241513,
+        "n_sentences": 93
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.01035615054306643,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.008078036884621246,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.005688744412840309,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.005333333333333333,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.006305637982195846,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.000783289817232376,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0013101867016049786,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0009870693909781857,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.001049042748492001,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0013763572411683743,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.001066603460535672,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0014841199168892847,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0011668611435239206,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 90
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

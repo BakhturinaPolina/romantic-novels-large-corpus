@@ -1,0 +1,890 @@
+{
+  "topic_id": 124,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "hug",
+        "hugged",
+        "hugging",
+        "gave",
+        "tightly",
+        "tight",
+        "arms",
+        "hugs",
+        "quick",
+        "embrace"
+      ],
+      "KeyBERT": [
+        "hugged",
+        "affection",
+        "greeted",
+        "fiercely",
+        "tightly",
+        "cried",
+        "squeeze",
+        "patted",
+        "nods",
+        "welcoming"
+      ],
+      "POS": [
+        "reassuring",
+        "sweep",
+        "decades",
+        "affection",
+        "enormous",
+        "measure",
+        "promises",
+        "sideways",
+        "crowd",
+        "huge"
+      ],
+      "MMR": [
+        "hugged",
+        "reassuring",
+        "welcoming",
+        "bo",
+        "eagerly",
+        "heaved",
+        "fiercely",
+        "strolled",
+        "fluttered",
+        "draped"
+      ]
+    },
+    "stage08_snippets": [
+      "emma followed suit, and rebecca scooped her up in her arms and hugged her tight.",
+      "he hugged her back.",
+      "i stood up with her and hugged her. “"
+    ],
+    "label_public": "Scooped Up in A Tight Hug"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I removed my hand from hers and hugged her. “",
+        "max_topic_prob": 0.8264535069465637,
+        "normalized_position": 0.6947401377582968,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She wrapped her arms around me then, hugging me tightly. “",
+        "max_topic_prob": 0.7968701124191284,
+        "normalized_position": 0.04038822792736381,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I just turned in his arms and hugged him then. “",
+        "max_topic_prob": 0.761837363243103,
+        "normalized_position": 0.28459611772072635,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Dad stood and went over to give her a hug. “",
+        "max_topic_prob": 0.7522372007369995,
+        "normalized_position": 0.41828428303068255,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "my mom exclaimed as she rushed up to give me a hug. “",
+        "max_topic_prob": 0.7329927682876587,
+        "normalized_position": 0.2982154038822793,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He pulled me into his arms, wrapping me in a tender embrace. “",
+        "max_topic_prob": 0.7184566259384155,
+        "normalized_position": 0.03788353162179086,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "She put her arms around him and hugged him hard. “",
+        "max_topic_prob": 0.8727278709411621,
+        "normalized_position": 0.561629571781856,
+        "tertile": "middle",
+        "chapter_index": 86,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "He returned her embrace gently. “",
+        "max_topic_prob": 0.8214976191520691,
+        "normalized_position": 0.8915788103605362,
+        "tertile": "end",
+        "chapter_index": 139,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "At that, Tohr leaned in and gave her a quick hug. “",
+        "max_topic_prob": 0.8015245795249939,
+        "normalized_position": 0.8980216061434335,
+        "tertile": "end",
+        "chapter_index": 139,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Come here,” he said, pulling her into an embrace.",
+        "max_topic_prob": 0.7657358646392822,
+        "normalized_position": 0.8069113627489262,
+        "tertile": "end",
+        "chapter_index": 127,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Thank you … ” As he nodded solemnly, she wrapped her arms around him, and held him tightly.",
+        "max_topic_prob": 0.7445800304412842,
+        "normalized_position": 0.6578810360536249,
+        "tertile": "middle",
+        "chapter_index": 100,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "By manner of reply, she gave him a quick hug, and stepped into the darkness.",
+        "max_topic_prob": 0.7023477554321289,
+        "normalized_position": 0.23395808928803852,
+        "tertile": "begin",
+        "chapter_index": 40,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He went over and gave him a hug.",
+        "max_topic_prob": 0.7847930192947388,
+        "normalized_position": 0.39037208324574313,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1857
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "he asked softly as he hugged me. “",
+        "max_topic_prob": 0.7405192852020264,
+        "normalized_position": 0.8505360521336978,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1672
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I grabbed Leif and hugged him.",
+        "max_topic_prob": 0.6722129583358765,
+        "normalized_position": 0.46520916544040364,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2213
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Hell, he had been happy to see me and had even hugged me. “",
+        "max_topic_prob": 0.6710008978843689,
+        "normalized_position": 0.11015345806180366,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 524
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I… Úlfur hugged you because he hadn’t seen you in a while.” “",
+        "max_topic_prob": 0.6526880264282227,
+        "normalized_position": 0.6560857683413917,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 747
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Ikkyu’ma helped me up and kissed me, folding me in his arms and rocking me gently. “",
+        "max_topic_prob": 0.6431959271430969,
+        "normalized_position": 0.9840235442505781,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2307
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Then she hugs him, her laughing eyes meeting mine over his shoulder.",
+        "max_topic_prob": 0.7375808954238892,
+        "normalized_position": 0.7895212285456188,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "I pulled her in for a hug and then calmly—though I don’t know where that calm came from—told her to go hold her grandmother’s hand and just keep talking to her, letting her know she was there.",
+        "max_topic_prob": 0.6316137313842773,
+        "normalized_position": 0.4186088527551942,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "He gives a hug to Roxy and a friendly wave to Casey and me, and it’s only then that I realize Roxy may have taken more care than usual with her appearance.",
+        "max_topic_prob": 0.5721850395202637,
+        "normalized_position": 0.44173441734417346,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "She introduces her friend to Roxana and me and we murmur greetings.",
+        "max_topic_prob": 0.5530691146850586,
+        "normalized_position": 0.8043360433604336,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She hugged me. “",
+        "max_topic_prob": 0.8707064390182495,
+        "normalized_position": 0.9601749749384854,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 374
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I hugged her back. “",
+        "max_topic_prob": 0.8635269403457642,
+        "normalized_position": 0.23120386402989154,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 592
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I hugged him. “",
+        "max_topic_prob": 0.8279321789741516,
+        "normalized_position": 0.1298642121571129,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I hugged him tighter. “",
+        "max_topic_prob": 0.8191344738006592,
+        "normalized_position": 0.4602205413287159,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 490
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I hugged him back. “",
+        "max_topic_prob": 0.8110706806182861,
+        "normalized_position": 0.9925271120021872,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Megumi came forward to give her a hug. “",
+        "max_topic_prob": 0.8070356845855713,
+        "normalized_position": 0.5228287615055135,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "She pressed her lips together, hugged her legs tighter to her torso. “",
+        "max_topic_prob": 0.7863540649414062,
+        "normalized_position": 0.7029932546374368,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "That was wonderful,” she told him when all the speeches were done, the formal pictures taken, and there was only the mingling left to do.",
+        "max_topic_prob": 0.44939517974853516,
+        "normalized_position": 0.8256745362563238,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He gave her a brief hug. \"",
+        "max_topic_prob": 0.8909398317337036,
+        "normalized_position": 0.35185185185185186,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Wrapping his arms around her, Cole gave Kit a tight hug while kissing her face .",
+        "max_topic_prob": 0.7285360097885132,
+        "normalized_position": 0.8886205045625335,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Instead , she walked to her brother, desperately need ing a hug.",
+        "max_topic_prob": 0.7250277996063232,
+        "normalized_position": 0.3276972624798712,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She passively accepted his embrace, resting her head against his shoulder. “",
+        "max_topic_prob": 0.7110002636909485,
+        "normalized_position": 0.8548040794417606,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Without considering the total impropriety of his actions, Cole stepped behind Kit and wrapped his arms around her, giving her an affectionate hug, while pressing their bodies together.",
+        "max_topic_prob": 0.6916208863258362,
+        "normalized_position": 0.4906065485775631,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "R ewarding Kit with an exuberant hug, Cole breathed deeply. \"",
+        "max_topic_prob": 0.6354789733886719,
+        "normalized_position": 0.5402576489533011,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Instead, he hugged her as close as the restrictions of the car would allow them. “",
+        "max_topic_prob": 0.7363315224647522,
+        "normalized_position": 0.36190699859088776,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Storm spread her arms and, stooping, hugged them close, feeling very emotional all of a sudden.",
+        "max_topic_prob": 0.7173631191253662,
+        "normalized_position": 0.8201033348990137,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Karen hugged her, then both girls recollected themselves and sat in their respective seats. “",
+        "max_topic_prob": 0.6473749279975891,
+        "normalized_position": 0.1385627054955378,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Frightened, she ended up in Brad’s arms when the ride was over, and he cuddled and comforted her. “",
+        "max_topic_prob": 0.6377851963043213,
+        "normalized_position": 0.9109910756223579,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Spring hugged her sister once again, congratulating her.",
+        "max_topic_prob": 0.6274711489677429,
+        "normalized_position": 0.7519962423673086,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Michael turned to her twin sister, gave her a high five, and then they gave their new-found daddy a tight hug.",
+        "max_topic_prob": 0.6158928275108337,
+        "normalized_position": 0.9788633161108502,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I hug myself. “",
+        "max_topic_prob": 0.687502384185791,
+        "normalized_position": 0.8347010550996483,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 724
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She hugs me and then glances at Jared. “",
+        "max_topic_prob": 0.6760268211364746,
+        "normalized_position": 0.8024618991793669,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 504
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Chloe lets go of my arm, and for a moment I fight the urge to hug her, but that would make her seem important to me, and someone could be watching.",
+        "max_topic_prob": 0.6231698989868164,
+        "normalized_position": 0.016412661195779603,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I gave her a hug. “",
+        "max_topic_prob": 0.8742337226867676,
+        "normalized_position": 0.2013437849944009,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I gave him a hug. “",
+        "max_topic_prob": 0.8079110383987427,
+        "normalized_position": 0.6096304591265398,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I gave him a hug. “",
+        "max_topic_prob": 0.8079109191894531,
+        "normalized_position": 0.97491601343785,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He gave her a hug, or more like she was giving him one.",
+        "max_topic_prob": 0.7955164909362793,
+        "normalized_position": 0.07939529675251959,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "They were still hugging, and he reached out for me. “",
+        "max_topic_prob": 0.759047269821167,
+        "normalized_position": 0.5207166853303471,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He pulled Felix into a hug. “",
+        "max_topic_prob": 0.7102512121200562,
+        "normalized_position": 0.5182530795072788,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Matthew hugged her back.",
+        "max_topic_prob": 0.7722227573394775,
+        "normalized_position": 0.1833839918946302,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Nic pulled him into a hug.",
+        "max_topic_prob": 0.767799973487854,
+        "normalized_position": 0.31661600810536983,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Nic placed his hands on Matthew's shoulders, then hugged him, squeezing him hard. \"",
+        "max_topic_prob": 0.7622089385986328,
+        "normalized_position": 0.8766464032421479,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Matthew hugged his mom, giving her a kiss on the cheek before he turned to his father and hugged him too. \"",
+        "max_topic_prob": 0.7317174673080444,
+        "normalized_position": 0.9746707193515705,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Matthew pulled his friend into a hug.",
+        "max_topic_prob": 0.7195844650268555,
+        "normalized_position": 0.7674772036474165,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Nic raced up to him and they hugged.",
+        "max_topic_prob": 0.6912575960159302,
+        "normalized_position": 0.12537993920972645,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "He just nodded and smiled, acquiescing to his nephew’s clingy hug before leaving with a wave.",
+        "max_topic_prob": 0.6353368759155273,
+        "normalized_position": 0.25894897182025894,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Without hesitation, I stepped close and hugged him.",
+        "max_topic_prob": 0.7492057085037231,
+        "normalized_position": 0.5138888888888888,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He hugged me back as my senses took in details.",
+        "max_topic_prob": 0.7438804507255554,
+        "normalized_position": 0.8644822006472492,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Patty exclaimed, seconds before he lunged in from the side and hugged me as well.",
+        "max_topic_prob": 0.729539692401886,
+        "normalized_position": 0.8652912621359223,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I smiled as the truth of his words wound around me in an invisible hug. “",
+        "max_topic_prob": 0.7058542966842651,
+        "normalized_position": 0.926779935275081,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Wick reached out and slid his arm across my shoulders, pulling me in for a side-hug. “",
+        "max_topic_prob": 0.7054903507232666,
+        "normalized_position": 0.7869471413160734,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Strong hands gripped my arms and pulled me in for a hug.",
+        "max_topic_prob": 0.7042723894119263,
+        "normalized_position": 0.8588187702265372,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 36
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0029438822447102114,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.002583627957574109,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0040906230333543105,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0032646628391309242,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0032388663967611335,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004476908576814326,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.00276478094427903,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.003817765334690761,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0004418912947414936,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0007228282297279537,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0003846153846153846,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00042634832658281814,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0007328691828508611,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 64
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.2",
+    "taxonomy_main_name": "Kissing & Non-Explicit Affection",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.88,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

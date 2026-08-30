@@ -1,0 +1,236 @@
+{
+  "hypothesis": "H1",
+  "n_candidates": 8,
+  "n_promoted": 8,
+  "promoted_topic_ids": [
+    24,
+    37,
+    57,
+    58,
+    61,
+    82,
+    85,
+    100
+  ],
+  "rows": [
+    {
+      "hypothesis": "H1",
+      "topic_id": 24,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 24,
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_in_4.5",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 24,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 37,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 37,
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_in_4.2",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 37,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 57,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 57,
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "secondary_in_4.6",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 57,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 58,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 58,
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_in_4.6",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 58,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 61,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 61,
+        "taxonomy_main_id": "8.3a",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "secondary_in_4.5",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 61,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 82,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 82,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "7.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "consent_boundary",
+        "heuristic_notes": "secondary_in_7.4",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 82,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 85,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 85,
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_in_4.5",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 85,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    },
+    {
+      "hypothesis": "H1",
+      "topic_id": 100,
+      "include": true,
+      "confidence": 0.7,
+      "suggested_code_family": "intimacy",
+      "rationale": "dry-run spillover H1",
+      "candidate": {
+        "topic_id": 100,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_in_4.6",
+        "source": "h1_secondary_or_sexual_flags"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": true,
+      "response": {
+        "topic_id": 100,
+        "include": true,
+        "confidence": 0.7,
+        "suggested_code_family": "intimacy",
+        "rationale": "dry-run spillover H1",
+        "dry_run": true
+      }
+    }
+  ],
+  "dry_run": true,
+  "model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "prompt_version": "1.0"
+}

@@ -1,0 +1,878 @@
+{
+  "topic_id": 152,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sorry",
+        "whispered",
+        "said",
+        "apologized",
+        "softly",
+        "mumbled",
+        "apologize",
+        "murmured",
+        "apologetically",
+        "stammered"
+      ],
+      "KeyBERT": [
+        "apology",
+        "apologize",
+        "forgive",
+        "cried",
+        "winced",
+        "kindly",
+        "politely",
+        "awkwardly",
+        "fault",
+        "mumbled"
+      ],
+      "POS": [
+        "nearest",
+        "graceful",
+        "direct",
+        "apology",
+        "unsure",
+        "painful",
+        "process",
+        "doorway",
+        "sir"
+      ],
+      "MMR": [
+        "mumbled",
+        "kindly",
+        "graceful",
+        "absently",
+        "wiping",
+        "gesturing",
+        "awkwardly",
+        "politely",
+        "apology",
+        "caressed"
+      ]
+    },
+    "stage08_snippets": [
+      "one of the girls goes, “oh my god, i’m so sorry!”",
+      "oh, charlotte,\" [person] said, feeling genuinely sorry for the woman.",
+      "i apologize that my sister bothered you with details from my personal life,” she said, searching the conversation for the nearest exit. “"
+    ],
+    "label_public": "Awkward Apology and Embarrassment"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Then softly and in a broken voice, she added, “I’m sorry, Ben.”",
+        "max_topic_prob": 0.7630956172943115,
+        "normalized_position": 0.8302416524616465,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry I couldn’t save you from that,” he said softly. “",
+        "max_topic_prob": 0.7297108173370361,
+        "normalized_position": 0.8536047327785019,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry he hit you,” she said softly without moving from the grate. “",
+        "max_topic_prob": 0.7211096286773682,
+        "normalized_position": 0.8631304522209967,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You’ll be sorry you did that,” he grated out. “",
+        "max_topic_prob": 0.6987166404724121,
+        "normalized_position": 0.4833049232928908,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry, Your Grace,” she said, while every particle of her wanted to spit disgust into the woman’s exquisite face. “",
+        "max_topic_prob": 0.6958233118057251,
+        "normalized_position": 0.8956181690564524,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Softly, she said, “Kylemore, I’m sorry I left without telling you.",
+        "max_topic_prob": 0.6846747398376465,
+        "normalized_position": 0.3794244460042114,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 459
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Oh, honey, I am so sorry…’ She held me and allowed me to just cry all over her bare, tanned shoulder. ‘",
+        "max_topic_prob": 0.6507948637008667,
+        "normalized_position": 0.0673777315296566,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You’ll get over it,’ she said knowingly. ‘",
+        "max_topic_prob": 0.6151319742202759,
+        "normalized_position": 0.274843912591051,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Sorry, honey – I’ve had an absolute bastard of a day,’ she said as she kissed me and dumped her coat on the floor.",
+        "max_topic_prob": 0.5830254554748535,
+        "normalized_position": 0.2885015608740895,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Oh, sorry,” she said looking embarrassed. “",
+        "max_topic_prob": 0.8007776737213135,
+        "normalized_position": 0.899390243902439,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sorry,” he said again. “",
+        "max_topic_prob": 0.7998136878013611,
+        "normalized_position": 0.18999445676274945,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She mouthed the word sorry to me as she handed me the phone. “",
+        "max_topic_prob": 0.757052481174469,
+        "normalized_position": 0.2624722838137472,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry Josie,” he said quietly.",
+        "max_topic_prob": 0.7491775751113892,
+        "normalized_position": 0.8474223946784922,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Well, I’m sorry I brought it up,” she said. “",
+        "max_topic_prob": 0.725843071937561,
+        "normalized_position": 0.029517738359201774,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Okay, sorry,” I said but continued pouting. “",
+        "max_topic_prob": 0.7121015191078186,
+        "normalized_position": 0.6200110864745011,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I’m sorry Vane,” she whispered, pain filling her voice. “",
+        "max_topic_prob": 0.7869355082511902,
+        "normalized_position": 0.2869198312236287,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Look straight ahead, don't look down or I'll make you very sorry, Sarina.\"",
+        "max_topic_prob": 0.5473120212554932,
+        "normalized_position": 0.4219409282700422,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she said. “",
+        "max_topic_prob": 0.9336307048797607,
+        "normalized_position": 0.6017699115044248,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 447
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she said. “",
+        "max_topic_prob": 0.9336307048797607,
+        "normalized_position": 0.7252704031465094,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she said.",
+        "max_topic_prob": 0.8958660364151001,
+        "normalized_position": 0.832645034414946,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she said.",
+        "max_topic_prob": 0.8958660364151001,
+        "normalized_position": 0.9122910521140609,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she said again. “",
+        "max_topic_prob": 0.884696364402771,
+        "normalized_position": 0.05368731563421829,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” he finally said. “",
+        "max_topic_prob": 0.8463581800460815,
+        "normalized_position": 0.17227138643067846,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m so sorry,” he said, his voice strangled. “",
+        "max_topic_prob": 0.7858468294143677,
+        "normalized_position": 0.4931180033033584,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sorry,” Logan said with a sheepish grin. “",
+        "max_topic_prob": 0.7511535882949829,
+        "normalized_position": 0.2686731510368875,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "There’s no need for an apology,” Logan said with a quick glance over her shoulder. “",
+        "max_topic_prob": 0.7335153222084045,
+        "normalized_position": 0.6325931363552946,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sorry,” Logan said as she sat up a little straighter.",
+        "max_topic_prob": 0.7131195068359375,
+        "normalized_position": 0.5226647091209397,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I was an ass the other night, and I apologize,” she said, finally daring to meet Brooke’s gaze. “",
+        "max_topic_prob": 0.7047716379165649,
+        "normalized_position": 0.22554597173793356,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m so sorry, Logan,” he said, sounding as though he truly meant it.",
+        "max_topic_prob": 0.6954458951950073,
+        "normalized_position": 0.6274545788218021,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Oh God, I’m so sorry,” she said placing her hands over her mouth. “",
+        "max_topic_prob": 0.7912707328796387,
+        "normalized_position": 0.7533013792428837,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m so sorry,” he kept saying. “",
+        "max_topic_prob": 0.7865164279937744,
+        "normalized_position": 0.7055658808568913,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What she did was awful and I am sorry you were hurt,” he whispered coming back to hold her. “",
+        "max_topic_prob": 0.7684106826782227,
+        "normalized_position": 0.5643157585835861,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Sorry Elena,” he said as he sighed. “",
+        "max_topic_prob": 0.7479628920555115,
+        "normalized_position": 0.7925266555805537,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry too, ” she said, half laughing and half crying.",
+        "max_topic_prob": 0.7410939931869507,
+        "normalized_position": 0.705663699501125,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I’m sorry Elena,” Anya said, “I didn’t mean to gloat.” “",
+        "max_topic_prob": 0.7130813598632812,
+        "normalized_position": 0.9646874694316737,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m sorry,” she said. “",
+        "max_topic_prob": 0.9336307048797607,
+        "normalized_position": 0.8295253102225724,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m sorry,” she said, and she sounded honestly contrite. “",
+        "max_topic_prob": 0.8228738307952881,
+        "normalized_position": 0.7921016348237148,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 520
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Generally,” he continued as if he hadn’t noticed the heightening of her anxiety, “I want an apology, an admission of your mistake.”",
+        "max_topic_prob": 0.7042078971862793,
+        "normalized_position": 0.1665353555249163,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Not wanting to push on a sore issue, she said, “You’re welcome.",
+        "max_topic_prob": 0.5808174014091492,
+        "normalized_position": 0.7951546188694111,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I’m sorry,” he said, his gaze following Jamie’s tongue tip as he licked the taste from his lips. “",
+        "max_topic_prob": 0.6933773756027222,
+        "normalized_position": 0.03643935450286309,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Nothing to forgive,” Alec said, dressed now and finger-combing his hair. “",
+        "max_topic_prob": 0.6050784587860107,
+        "normalized_position": 0.6978136387298283,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I was in a bad place,” Alec admitted. “",
+        "max_topic_prob": 0.4886905550956726,
+        "normalized_position": 0.734903695991671,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Apologize to her,” Jack Rivers says to him, looking like he wants to get in his face, too. “",
+        "max_topic_prob": 0.6055892109870911,
+        "normalized_position": 0.4339960886571056,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” I whisper. “",
+        "max_topic_prob": 0.8118712306022644,
+        "normalized_position": 0.6921837228041902,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I don’t need your apology,” she quipped. “",
+        "max_topic_prob": 0.7833868265151978,
+        "normalized_position": 0.8756043513295729,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” I say, my voice husky. “",
+        "max_topic_prob": 0.7464371919631958,
+        "normalized_position": 0.5394842868654312,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m so sorry, Mama,” she whimpers after a moment.",
+        "max_topic_prob": 0.7149728536605835,
+        "normalized_position": 0.005338436744560838,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "There’s nothing to be sorry about,” I assure her. “",
+        "max_topic_prob": 0.7003948092460632,
+        "normalized_position": 0.19399677679290894,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” I croak out. “",
+        "max_topic_prob": 0.6986281275749207,
+        "normalized_position": 0.911563255439162,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Sorry , she mouthed. “",
+        "max_topic_prob": 0.8473588228225708,
+        "normalized_position": 0.4551672366335808,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 326
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Sorry,” he murmured in her ear.",
+        "max_topic_prob": 0.831104040145874,
+        "normalized_position": 0.4343981983484861,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” she quietly told the young woman.",
+        "max_topic_prob": 0.8004366159439087,
+        "normalized_position": 0.8319292684961215,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 541
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry,” Ellie began slowly. “",
+        "max_topic_prob": 0.7770594358444214,
+        "normalized_position": 0.42347151555592627,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry you feel that way,” she said without one ounce of remorse. “",
+        "max_topic_prob": 0.7544635534286499,
+        "normalized_position": 0.025606806239052465,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m so sorry,” Stacy apologized, bringing Blaise’s attention back to her. “",
+        "max_topic_prob": 0.7472760677337646,
+        "normalized_position": 0.09216782050212695,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Sorry,\" Emma bashfully. \"",
+        "max_topic_prob": 0.7606611251831055,
+        "normalized_position": 0.33891144064286305,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Clearing her throat, Emma answered, \"No, don't apologize.",
+        "max_topic_prob": 0.7470917701721191,
+        "normalized_position": 0.5422085991218624,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Emma smiled at him and quietly said, \"Sorry, lil'man.",
+        "max_topic_prob": 0.6939318180084229,
+        "normalized_position": 0.9161627040013255,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Uh, but before you go, I have to say it again…Regina, I'm so sorry.\"",
+        "max_topic_prob": 0.6845118999481201,
+        "normalized_position": 0.3153011349515367,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I'm sorry,\" Regina said with a laugh.",
+        "max_topic_prob": 0.6723814010620117,
+        "normalized_position": 0.6912434760997432,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Sorry to hear that,\" he said softly and then paused before adding, \"I get that you're scared.",
+        "max_topic_prob": 0.6636293530464172,
+        "normalized_position": 0.5830502858089637,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’m sorry,” I whisper miserably.",
+        "max_topic_prob": 0.7291568517684937,
+        "normalized_position": 0.20474406991260924,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You’re excused,” he says, his voice hard. “",
+        "max_topic_prob": 0.6343564987182617,
+        "normalized_position": 0.6284332084893882,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 108
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0022339561332250205,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004359889021006738,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.002253192022031211,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0021900269541778976,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0034274193548387098,
+        "n_sentences": 34
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.00374384236453202,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0031324857195503962,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0029354207436399216,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00031318509238960227,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.00039184952978056425,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00039541320680110717,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0003933394519470303,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0001636929120969062,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0005662514156285391,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 63
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.2",
+    "taxonomy_main_name": "Negative Emotions & Distress",
+    "taxonomy_secondary_id": "9.1",
+    "taxonomy_secondary_name": "Dialogue Delivery & Speech Tags",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

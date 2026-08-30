@@ -1,0 +1,86 @@
+{
+  "topic_id": 7,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "kissed",
+        "kiss",
+        "lips",
+        "clit",
+        "cock",
+        "tongue",
+        "mouth",
+        "her",
+        "pussy",
+        "hers"
+      ],
+      "KeyBERT": [
+        "caressed",
+        "licked",
+        "stroking",
+        "tasted",
+        "biting",
+        "cupped",
+        "clinging",
+        "eagerly",
+        "fiercely",
+        "breathlessly"
+      ],
+      "POS": [
+        "pumping",
+        "moaning",
+        "urgency",
+        "passionate",
+        "exquisite",
+        "wider",
+        "sweep",
+        "fingertips",
+        "combination",
+        "enthusiasm"
+      ],
+      "MMR": [
+        "pumping",
+        "moaning",
+        "urgency",
+        "planted",
+        "dipped",
+        "caressed",
+        "passionate",
+        "swirling",
+        "stroking",
+        "flicked"
+      ]
+    },
+    "stage08_snippets": [
+      "kissing her on the forehead, he leaned against the register and waited for her to finish.",
+      "he leaned down and pressed his lips to hers. “",
+      "turning to his mate, he leaned down and pressed a kiss to vee’s head. “"
+    ],
+    "label_public": "Kissing With Tongue and Urgency"
+  },
+  "contextual": {
+    "sentences": [],
+    "books_sampled": [],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.3",
+    "taxonomy_main_name": "Explicit Sexual Acts",
+    "taxonomy_secondary_id": "2.1",
+    "taxonomy_secondary_name": "Attraction & Sexual Tension",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

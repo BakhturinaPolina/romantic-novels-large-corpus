@@ -1,0 +1,967 @@
+{
+  "topic_id": 209,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "flowers",
+        "roses",
+        "vase",
+        "flower",
+        "bouquet",
+        "daisies",
+        "yellow",
+        "red",
+        "rose",
+        "vases"
+      ],
+      "KeyBERT": [
+        "planted",
+        "glances",
+        "purse",
+        "including",
+        "exquisite",
+        "various",
+        "porch",
+        "bedside",
+        "scattered",
+        "dozen"
+      ],
+      "POS": [
+        "stunning",
+        "sized",
+        "pattern",
+        "feminine",
+        "enormous",
+        "occasional",
+        "tables",
+        "exquisite",
+        "example",
+        "bedside"
+      ],
+      "MMR": [
+        "planted",
+        "pattern",
+        "feminine",
+        "tables",
+        "exquisite",
+        "bedside",
+        "carved",
+        "dozen",
+        "delicate",
+        "sidewalk"
+      ]
+    },
+    "stage08_snippets": [
+      "then i look at the flowers i’m holding guiltily, as if i’ve already accepted his offer to go to new york.",
+      "i’ll bet there are a thousand flowers then.”",
+      "i’m sure i’ll find some more – and with owen’s research the flowers are now coming in under budget so there’s still a bit of cash to play with.’"
+    ],
+    "label_public": "Flowers Held With Guilty Glance"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Four huge plants grew in wild profusion, one in each corner.",
+        "max_topic_prob": 0.4724707007408142,
+        "normalized_position": 0.3914537255744041,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Don pitted the cherries.” “",
+        "max_topic_prob": 0.4094822406768799,
+        "normalized_position": 0.4450289886192828,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Matching throw pillows.",
+        "max_topic_prob": 0.39582180976867676,
+        "normalized_position": 0.022331973373416362,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "On it were dozens of jars.",
+        "max_topic_prob": 0.3712296485900879,
+        "normalized_position": 0.37277217092548853,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The yellow roses.” “",
+        "max_topic_prob": 0.7243337631225586,
+        "normalized_position": 0.4759803921568627,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Flowers bloom from her when she’s happy.",
+        "max_topic_prob": 0.7015825510025024,
+        "normalized_position": 0.08611111111111111,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Pulsing hearts, roses bursting with fragrance.",
+        "max_topic_prob": 0.6672379970550537,
+        "normalized_position": 0.1843137254901961,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "And still the rose petals swirl toward me.",
+        "max_topic_prob": 0.6518182754516602,
+        "normalized_position": 0.057679738562091507,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "A faint imprint of thoughts drifts toward me—color and brightness, a swirling burst of rose petals.",
+        "max_topic_prob": 0.6398428678512573,
+        "normalized_position": 0.056372549019607844,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Bubbles and roses?",
+        "max_topic_prob": 0.6343403458595276,
+        "normalized_position": 0.4761437908496732,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Flowers.”",
+        "max_topic_prob": 0.785226583480835,
+        "normalized_position": 0.8580850024425989,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "It needs flowers,” she found herself saying. “",
+        "max_topic_prob": 0.6943976879119873,
+        "normalized_position": 0.857352222765022,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "The rose bushes weren’t visible from this angle, but she knew they were there, their leaves luxuriant and glossy against the elegant white of the house, hundreds of buds ready to bloom in a profusion of color as the weather grew warmer.",
+        "max_topic_prob": 0.6680347323417664,
+        "normalized_position": 0.020395701025891548,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "It was decorated with a pattern of sunflowers that seemed oddly familiar.",
+        "max_topic_prob": 0.6196463704109192,
+        "normalized_position": 0.027723497801660966,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "She reminds me of some gorgeous hothouse flower.” “",
+        "max_topic_prob": 0.6070667505264282,
+        "normalized_position": 0.6095505617977528,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "There was even a flower in a vase on the bedside table—a bit exotic for her taste, but vampires tended to go for the dark and lush.",
+        "max_topic_prob": 0.5962169170379639,
+        "normalized_position": 0.22496336101612116,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Flowers.",
+        "max_topic_prob": 0.8032101392745972,
+        "normalized_position": 0.4428608115048793,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You may need to send Ronny's wife some flowers if you interrupt their Sunday.",
+        "max_topic_prob": 0.5418514013290405,
+        "normalized_position": 0.770929635336415,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I mainly wanted to write poetry and sit in a field with wildflowers and hummingbirds.",
+        "max_topic_prob": 0.47507911920547485,
+        "normalized_position": 0.20672829994863892,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 516
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Now repeat the incantation while you picture one of those leaves growing right here,” he said. “",
+        "max_topic_prob": 0.545788049697876,
+        "normalized_position": 0.736984126984127,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It was only about four inches long, but it bore two leaves—and the whole thing was created by her magic! “",
+        "max_topic_prob": 0.47357237339019775,
+        "normalized_position": 0.8912698412698413,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "It can cause a plant to grow taller, make a flower bloom, or cause a branch to grow leaves.”",
+        "max_topic_prob": 0.4324861764907837,
+        "normalized_position": 0.7353968253968254,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Wreaths of red-berried holly and some grayish leaf he couldn’t identify dangled from every wooden post and whitewashed storefront.",
+        "max_topic_prob": 0.5761324167251587,
+        "normalized_position": 0.04228534538411879,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Daring her to make love in a field of wildflowers along the banks of the James River.",
+        "max_topic_prob": 0.5659365057945251,
+        "normalized_position": 0.23628147191736604,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "His arm circled the post, tangling in a strand of ivy garland, and knocking a holly wreath to the ground.",
+        "max_topic_prob": 0.5224897861480713,
+        "normalized_position": 0.2956746287927695,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 397
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "A beveled glass filled with liquid the color of spring roses hit the table before Kate could protest.",
+        "max_topic_prob": 0.4961376488208771,
+        "normalized_position": 0.45771465461588123,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 327
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Damn decorations.”",
+        "max_topic_prob": 0.4808986783027649,
+        "normalized_position": 0.29664299548095546,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 400
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Outside Palmer’s Antiques: willowy redhead.",
+        "max_topic_prob": 0.4747486710548401,
+        "normalized_position": 0.12717882504841835,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You want to put a phallic saint in your garden?”",
+        "max_topic_prob": 0.4834194481372833,
+        "normalized_position": 0.5784,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 365
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You’re the one who suggested I put a big phallic shrine in my garden.”",
+        "max_topic_prob": 0.478824257850647,
+        "normalized_position": 0.59,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Blue took another drink and looked out at the neatly trimmed hedges, intricate beds of flowers, sputtering fountains, and the statues in the parterre.",
+        "max_topic_prob": 0.4542950689792633,
+        "normalized_position": 0.0128,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "A beautiful, delicate Toussaint.",
+        "max_topic_prob": 0.44217079877853394,
+        "normalized_position": 0.3044,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "They loved sparkles and glitter and girl-­power songs.",
+        "max_topic_prob": 0.42651093006134033,
+        "normalized_position": 0.8156,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Restoring the gardens had been a monumental task and clearly cost a lot of money.",
+        "max_topic_prob": 0.2793164551258087,
+        "normalized_position": 0.5716,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Heaven knew her sex life was akin to a flower withering on the vine at this point.",
+        "max_topic_prob": 0.5658509731292725,
+        "normalized_position": 0.07204999387329984,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "“...I was a Flower of the mountain yes when I put the rose in my hair like the Andalusian girls used or shall I wear a red yes and how he kissed me under the Moorish wall and I thought well as well him as another and then I asked him with my eyes to ask again yes and then he asked me would I yes to say yes my mountain flower and first I put my arms around him yes and drew him down to me so he could feel my breasts all perfume yes and his heart was going like mad and yes I said yes I will Yes.” —",
+        "max_topic_prob": 0.5510225296020508,
+        "normalized_position": 0.007597108197524813,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Old-fashioned and beautiful, it lay sparkling in his palm.",
+        "max_topic_prob": 0.4792424440383911,
+        "normalized_position": 0.9939958338438917,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "The slide of the ointment was silken and lovely.",
+        "max_topic_prob": 0.40939319133758545,
+        "normalized_position": 0.509618919250092,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That flower you gave her was trembling along with the rest of you.",
+        "max_topic_prob": 0.6055372357368469,
+        "normalized_position": 0.17404033832140534,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I made her favorite dish and brought it to her along with a red rose.",
+        "max_topic_prob": 0.5879638195037842,
+        "normalized_position": 0.8851659076122316,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Delia giggled as he stopped and handed her the flowers.",
+        "max_topic_prob": 0.5848817825317383,
+        "normalized_position": 0.24886141834743006,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The creaking of the gate along with the faint smell of flowers told her that they were walking into the garden. “",
+        "max_topic_prob": 0.581364631652832,
+        "normalized_position": 0.9456733897202342,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She saw Andrew coming out of the car, a big bouquet of flowers in one hand and his bag in the other.",
+        "max_topic_prob": 0.5504046678543091,
+        "normalized_position": 0.24788549121665582,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’ve been thinking about recreating something here in the garden for a date with Delia.”",
+        "max_topic_prob": 0.5386916399002075,
+        "normalized_position": 0.8122966818477554,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "It might have been a bouquet of flowers or maybe a dove or two, but it was not a rabbit.",
+        "max_topic_prob": 0.5145441293716431,
+        "normalized_position": 0.28676876379690946,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 646
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "You see, glitter is a wondrous thing.",
+        "max_topic_prob": 0.43821823596954346,
+        "normalized_position": 0.4008002207505519,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "It is sparkly and beautiful, and it can be entrancing in the right light.",
+        "max_topic_prob": 0.42084819078445435,
+        "normalized_position": 0.40086920529801323,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I needed something spectacular to grab them by the balls and make them pay attention.",
+        "max_topic_prob": 0.4198717474937439,
+        "normalized_position": 0.7057809050772627,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 1806
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It had a smattering of small, delicate flowers decorating it.",
+        "max_topic_prob": 0.7375994920730591,
+        "normalized_position": 0.17243837848849053,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1693
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Now, don't you have some flowers to attend to?\" \"",
+        "max_topic_prob": 0.7161773443222046,
+        "normalized_position": 0.25758810348339783,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2529
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I, ah, got you some flowers.\"",
+        "max_topic_prob": 0.7138363718986511,
+        "normalized_position": 0.9566103075982889,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1686
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Yes, just the flowers.\" \"",
+        "max_topic_prob": 0.6963115334510803,
+        "normalized_position": 0.955082501527806,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1671
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Yes, but I just can't concentrate on the flowers right now, you know I can't.",
+        "max_topic_prob": 0.6815146207809448,
+        "normalized_position": 0.25768995722143,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2530
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Josie returned and put the flowers that were now in a large vase on a table by the windows. \"",
+        "max_topic_prob": 0.6675360798835754,
+        "normalized_position": 0.8624974536565492,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 762
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "And flowers.",
+        "max_topic_prob": 0.6825548410415649,
+        "normalized_position": 0.5056331680937359,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "The flowers Laura Mae brought are so beautiful, and she had Bubba’s grandpa’s guitar all fixed up for him.",
+        "max_topic_prob": 0.489520400762558,
+        "normalized_position": 0.9170797656602073,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "The daffodils coming into bloom, for instance.",
+        "max_topic_prob": 0.5042334198951721,
+        "normalized_position": 0.7233914612146722,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "She pictured the apple blossom, the rippling brook and the moss-covered pebbles about which she was singing.",
+        "max_topic_prob": 0.5036298632621765,
+        "normalized_position": 0.29058929645219483,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Very pretty, if you must know.",
+        "max_topic_prob": 0.4233797788619995,
+        "normalized_position": 0.4364101022248948,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The flowers for your wedding.”",
+        "max_topic_prob": 0.7534512877464294,
+        "normalized_position": 0.3679221435793731,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "What do you say we start with flowers?",
+        "max_topic_prob": 0.7047967910766602,
+        "normalized_position": 0.16114762386248735,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 526
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Judging from the dreaminess that had filled her eyes, her wish had something to do with receiving those flowers.",
+        "max_topic_prob": 0.6495356559753418,
+        "normalized_position": 0.3755055611729019,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Roses are red, violets are blue.",
+        "max_topic_prob": 0.6390247344970703,
+        "normalized_position": 0.16190596562184023,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 532
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The cake wasn’t going to be a surprise, but a certain flower delivery was.",
+        "max_topic_prob": 0.6320182085037231,
+        "normalized_position": 0.3646359959555106,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "A minute later, Josie from Peachtree Florist appeared at the top of the stairs holding a colorful display of carnations, daisies, lilies and baby’s breath. “",
+        "max_topic_prob": 0.6144170761108398,
+        "normalized_position": 0.36716380182002023,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The church was surprisingly humble – just a single-storey, white weatherboarded affair – but the flowers more than compensated, with Casablanca lilies cascading from Elena’s bouquet and mop-headed white roses braided round the door.",
+        "max_topic_prob": 0.6138940453529358,
+        "normalized_position": 0.23556174558960075,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Old-fashioned roses from the garden sat in a Lalique crystal bowl, black-and-white photos were arranged in dense clusters in silver frames and a large round tasselled ottoman was carefully stacked with coffee-table books on Richard Avedon, the Royal Gardens of England, Bulgari jewels, Delft stoneware, modern apartments of Paris . . .",
+        "max_topic_prob": 0.5773446559906006,
+        "normalized_position": 0.649025069637883,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She looked up to see Signora Dutti watering the profusion of flowerpots outside her door, giving the plants a drink now that the day’s heat no longer scorched the leaves.",
+        "max_topic_prob": 0.5737989544868469,
+        "normalized_position": 0.018291550603528318,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The send-off had been jubilant, rose petals showered on them like a scented rain as they ran, hand in hand, towards the new Bentley her father had presented to them as a wedding gift, her honeymoon trousseau already packed in the trunk.",
+        "max_topic_prob": 0.5455633401870728,
+        "normalized_position": 0.13073351903435468,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The flowers in her hands were not her favourite old-fashioned Blanche de Belgique roses, but pale-pink tulips bought from the market that morning; her plain white shift dress was enlivened only by the short white lace communion veil she had borrowed from Vito’s goddaughter, whose parents were officiating as their only witnesses.",
+        "max_topic_prob": 0.4976552724838257,
+        "normalized_position": 0.5144846796657382,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But it was the uppermost level that really delighted her – cascading terraces densely planted with cypress, plane, eucalyptus and monkey trees, ivy fringing the walls, jasmine bushes as thick as buses.",
+        "max_topic_prob": 0.47566312551498413,
+        "normalized_position": 0.2899721448467967,
+        "tertile": "begin",
+        "chapter_index": 20,
+        "sentence_index": 123
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.00236382322713258,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0024157660521296883,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.0038158542589857214,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0024422318241593085,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.00425531914893617,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0039011703511053317,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.002407704654895666,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.005949429846306396,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0004322922295471739,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0004542357483533954,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0002775079783543777,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.00047938638542665386,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0003878975950349108,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0004598405885959534,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0004927929037821855,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

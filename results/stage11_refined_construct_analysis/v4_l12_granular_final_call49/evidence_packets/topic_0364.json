@@ -1,0 +1,1165 @@
+{
+  "topic_id": 364,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "shirt",
+        "jeans",
+        "black",
+        "wore",
+        "wearing",
+        "boots",
+        "dressed",
+        "white",
+        "pants",
+        "sweater"
+      ],
+      "KeyBERT": [
+        "worn",
+        "draped",
+        "wrinkled",
+        "fitting",
+        "neatly",
+        "comfortable",
+        "loose",
+        "contrast",
+        "attached",
+        "smoothed"
+      ],
+      "POS": [
+        "fitting",
+        "contrast",
+        "pattern",
+        "polished",
+        "worn",
+        "exchange",
+        "nods",
+        "issue",
+        "loose",
+        "lack"
+      ],
+      "MMR": [
+        "wrinkled",
+        "contrast",
+        "pattern",
+        "polished",
+        "neatly",
+        "instincts",
+        "worn",
+        "draped",
+        "reveal",
+        "tied"
+      ]
+    },
+    "stage08_snippets": [
+      "if i had any nerve i’d go throw them open and see what he’s wearing, not that i’ve seen him in anything except shorts, t-shirts and a stupid beanie.",
+      "he was dressed as he was at the court: [person] t‐shirt, black [person] hoodie hanging open, loose‐fitting jeans and biker boots.",
+      "he wore a loose-fitting, blue jacket and white shirt, and the lack of a cravat exposed too much of his throat and even his chest."
+    ],
+    "label_public": "Noticing What He Wears"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He donned his shirt and folded the kilt and girdle around his waist.",
+        "max_topic_prob": 0.6355958580970764,
+        "normalized_position": 0.33532934131736525,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She made certain his clothing stayed mended and clean.",
+        "max_topic_prob": 0.5478832721710205,
+        "normalized_position": 0.22494142150481644,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "The black gelding had three white stockings and a blaze down his forehead.",
+        "max_topic_prob": 0.48380690813064575,
+        "normalized_position": 0.4675865659984379,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Slender arms slid around his neck and a supple body clothed in a deep green surcoat molded to his tall frame.",
+        "max_topic_prob": 0.4814755320549011,
+        "normalized_position": 0.48945587086696174,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Alexander’s large frame was covered from neck to calf in fur; his hands protected by leather gloves and his feet by knee high boots.",
+        "max_topic_prob": 0.4712345004081726,
+        "normalized_position": 0.766206717000781,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Duncan accepted from Mai, the bundled wool secured by a scrap of fabric.",
+        "max_topic_prob": 0.44936445355415344,
+        "normalized_position": 0.7820879979172091,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Maybe he does not have wardrobes full of clothes.",
+        "max_topic_prob": 0.6692782640457153,
+        "normalized_position": 0.8623669186853881,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He was wearing a creased suit.",
+        "max_topic_prob": 0.6685036420822144,
+        "normalized_position": 0.27310600216016045,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I picture him, dressed in his expensively modest suit and that waistcoat. ‘",
+        "max_topic_prob": 0.667926013469696,
+        "normalized_position": 0.42647739546366303,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jeremy has removed his beige corduroy jacket too, and his cream turtle-neck sweater.",
+        "max_topic_prob": 0.6653777360916138,
+        "normalized_position": 0.7452553618268786,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I hope he’ll be wearing that waistcoat and those boots. *",
+        "max_topic_prob": 0.6412496566772461,
+        "normalized_position": 0.4284832587563648,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He has aged but he is still wearing that waistcoat.",
+        "max_topic_prob": 0.6131622791290283,
+        "normalized_position": 0.861904027156303,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He wished he wore looser jeans.",
+        "max_topic_prob": 0.6216113567352295,
+        "normalized_position": 0.20049428483163423,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’d think he was meeting the president the way he couldn’t decide what to wear.",
+        "max_topic_prob": 0.6184343099594116,
+        "normalized_position": 0.18504788384306456,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He snatched up his long-sleeved shirt and his work Stetson.",
+        "max_topic_prob": 0.6135858297348022,
+        "normalized_position": 0.09978375038616003,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The pants barely stayed on his hips.",
+        "max_topic_prob": 0.576889157295227,
+        "normalized_position": 0.47420451034908867,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Tyler’s faded jeans showcased the man’s firm ass.",
+        "max_topic_prob": 0.5694250464439392,
+        "normalized_position": 0.27803521779425394,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Gonzo’s coat was almost grey.",
+        "max_topic_prob": 0.556556224822998,
+        "normalized_position": 0.057769539697250544,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Flat-front Calvin Klein khakis with polos or T-shirts that stretched just enough across his chest to let you know he had muscles.",
+        "max_topic_prob": 0.6862953901290894,
+        "normalized_position": 0.05245942885897597,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He wore his hair in one of those hip, urban Afros, and his skin shone out bright against the lightweight tan suit that he had on with a red T-shirt and very expensive-looking leather slip-ons.",
+        "max_topic_prob": 0.6832066178321838,
+        "normalized_position": 0.33425588124292366,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He also made it seem shabbier, even though he was still only wearing jeans and a polo.",
+        "max_topic_prob": 0.6705378293991089,
+        "normalized_position": 0.5570512014089822,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "It was James, standing there in checkered gray slacks, a short-sleeved blue shirt, and a white vest.",
+        "max_topic_prob": 0.6582520008087158,
+        "normalized_position": 0.3736319033840735,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Him with his checkered pants around his ankles.",
+        "max_topic_prob": 0.6446396708488464,
+        "normalized_position": 0.4277267580827777,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He was dressed in a beautiful smoking jacket and trousers, but he had gained at least thirty pounds since I last saw him.",
+        "max_topic_prob": 0.6179484128952026,
+        "normalized_position": 0.7881494527613536,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He unzipped it and pulled out jeans and a gray long-sleeved shirt. \"",
+        "max_topic_prob": 0.7161009311676025,
+        "normalized_position": 0.6999368288060644,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2309
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Far from a three-piece suit, he was dressed in a navy sweatshirt and checkered flannel pants.",
+        "max_topic_prob": 0.6957120895385742,
+        "normalized_position": 0.2127605811749842,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1684
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He wore a navy crewneck sweater, jeans, and a gun harness that made him appear even more dangerous than he had that first night in her store.",
+        "max_topic_prob": 0.6905878186225891,
+        "normalized_position": 0.22804801010739104,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1805
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "As in, Huxley wasn't wearing just a suit; he had this whole ensemble going: dark brown pants and jacket, crisp pinstriped shirt, V-neck vest, and tan silk tie.",
+        "max_topic_prob": 0.6712232828140259,
+        "normalized_position": 0.01996209728363866,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He stripped out of his clothes.",
+        "max_topic_prob": 0.654547393321991,
+        "normalized_position": 0.8082122552116235,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 805
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He wore a crisp black designer shirt with the top two buttons undone, charcoal gray pants, and a brand new Jaeger LeCoultre watch.",
+        "max_topic_prob": 0.6366695761680603,
+        "normalized_position": 0.30246367656348705,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2394
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "He slipped on a black designer suit jacket.",
+        "max_topic_prob": 0.6003930568695068,
+        "normalized_position": 0.9646153846153847,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Drying his hands, he hurried into his bedroom and got dressed in a pair of track pants and a Toronto Blue Jays jersey top.",
+        "max_topic_prob": 0.5796786546707153,
+        "normalized_position": 0.8912820512820513,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "The black clothing was back, even with the thick stockings and clunky shoes.",
+        "max_topic_prob": 0.6317464113235474,
+        "normalized_position": 0.5987249867186116,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He shucked off his suit jacket. “",
+        "max_topic_prob": 0.6236671209335327,
+        "normalized_position": 0.6830175314326191,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Even in his white, lab coat he couldn’t mask the disheveled air about him.",
+        "max_topic_prob": 0.5011805891990662,
+        "normalized_position": 0.5202762528776341,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He stood on the pier with his hands on his hips, wearing worn tight jeans and a low-buttoned white shirt.",
+        "max_topic_prob": 0.49617528915405273,
+        "normalized_position": 0.16451213033469098,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "He struggled to make out the images behind the fabric.",
+        "max_topic_prob": 0.44122686982154846,
+        "normalized_position": 0.9022489817602267,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Gone were the classic racks upon racks of clothes, the soft strains of elevator music, and stiff mannequins dressed in all-too-boring business attire.",
+        "max_topic_prob": 0.4297652840614319,
+        "normalized_position": 0.640162918363733,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Will tucked the flap of his shirt into the dress slacks he’d worn for the administrative meeting today and readjusted his tie with a scowl.",
+        "max_topic_prob": 0.5865831971168518,
+        "normalized_position": 0.0518579686209744,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He thought the fabric was very 1970s, but it was clean and had a sunny yellow and white pillow on it to brighten it up.",
+        "max_topic_prob": 0.4568555951118469,
+        "normalized_position": 0.4995871180842279,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Then he leaned forward, as if about to ask a personal question, when the electronic version of an old Prince tune, “Little Red Corvette,” blared from somewhere inside his clothing.",
+        "max_topic_prob": 0.3973000943660736,
+        "normalized_position": 0.9924029727497936,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 1190
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He claims to be athletic.",
+        "max_topic_prob": 0.37589317560195923,
+        "normalized_position": 0.02559867877786953,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He was wearing dark jeans and a button down shirt.",
+        "max_topic_prob": 0.7690136432647705,
+        "normalized_position": 0.4115370438628824,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He’d changed into jeans and a fitted shirt, unbuttoned at the neck.",
+        "max_topic_prob": 0.7682065367698669,
+        "normalized_position": 0.14762255805381497,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I was relieved to see he was dressed in jeans and a t-shirt. “",
+        "max_topic_prob": 0.7401545643806458,
+        "normalized_position": 0.5917803169922595,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "His dark hair was disheveled and though everyone else was in workout clothes, he wore jeans and a faded t-shirt with a logo for a band I’d never heard of.",
+        "max_topic_prob": 0.7066121101379395,
+        "normalized_position": 0.06081828234426834,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He wore dark jeans and a navy blue sweater that made the soft blue of his eyes stand out.",
+        "max_topic_prob": 0.6617416143417358,
+        "normalized_position": 0.9483966089200148,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He wore a button up shirt and plaid bow tie, and she was in a revealing cocktail dress. “",
+        "max_topic_prob": 0.6293870210647583,
+        "normalized_position": 0.014375230372281608,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Would he be wearing one of those fitted suits like he did at the office?",
+        "max_topic_prob": 0.6752098798751831,
+        "normalized_position": 0.7728804770547058,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "His charcoal suit had to be custom tailored.",
+        "max_topic_prob": 0.6580174565315247,
+        "normalized_position": 0.25252787140264454,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Jackson brushed at the black slacks that he’d paired with a lime green polo. “",
+        "max_topic_prob": 0.6215124130249023,
+        "normalized_position": 0.9583873476795437,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Most days he rode the Metro.",
+        "max_topic_prob": 0.38455888628959656,
+        "normalized_position": 0.45605392792325644,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The guy’s a linebacker.",
+        "max_topic_prob": 0.3506224751472473,
+        "normalized_position": 0.923126782473425,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "tell me, what did the suit of armor look like?” “",
+        "max_topic_prob": 0.5922040343284607,
+        "normalized_position": 0.43622587046725597,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "He’d been impeccably dressed, and had kept being impeccably dressed every time he paid Susannah a visit, even though Lucetta discovered he’d lost everything in the war.",
+        "max_topic_prob": 0.5321998000144958,
+        "normalized_position": 0.8212159480425762,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Lifting his head from his Remington Model 1 typewriter, Bram found Tilda marching into the dungeon, wearing, oddly enough, a black skirt and blouse over which was a perfectly pressed white apron, an outfit normally only required for late afternoon and evening service. “",
+        "max_topic_prob": 0.5042759776115417,
+        "normalized_position": 0.6085152444524625,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Mr. Nigel Wolfe shook himself out of Mr. Skukman’s hold and pulled his jacket over a stomach that was less than trim.",
+        "max_topic_prob": 0.49945563077926636,
+        "normalized_position": 0.006675085693667689,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Another time he’d come across her in the gentlemen’s suit section at Arnold Constable & Company, where she’d immediately sought his assistance in helping Mr. Kenton choose the perfect suit, even though, in Bram’s opinion, Mr. Kenton hadn’t been aware he was suit shopping until that very moment.",
+        "max_topic_prob": 0.4608045816421509,
+        "normalized_position": 0.2157676348547718,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "why would a suit of armor be walking through the tower?",
+        "max_topic_prob": 0.4494810998439789,
+        "normalized_position": 0.44741114919718566,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He wore well-worn blue jeans, a tool belt hanging low around his hips, his long muscular looking legs tapering up to those tight buns.",
+        "max_topic_prob": 0.7202752828598022,
+        "normalized_position": 0.1045860136957875,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He wore jeans falling tantalizingly low around his hips and that ever present t-shirt, cotton straining tight around his biceps and defining his broad shoulders.",
+        "max_topic_prob": 0.7073787450790405,
+        "normalized_position": 0.4557999584976136,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He wore a helmet, a pair of work pants and not a whole lot more.",
+        "max_topic_prob": 0.6857265830039978,
+        "normalized_position": 0.30338244449055823,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He’d remembered to wear a light cotton t-shirt, which now stuck to him like a second skin.",
+        "max_topic_prob": 0.6552283763885498,
+        "normalized_position": 0.07709068271425606,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He had on work boots, fireman pants and nothing else. “",
+        "max_topic_prob": 0.6442828178405762,
+        "normalized_position": 0.3081552189250882,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Like the others, he wore his fireman gear pants, khaki ones with the yellow stripes, and a plain brown t-shirt.",
+        "max_topic_prob": 0.6434684991836548,
+        "normalized_position": 0.319672131147541,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Today he’s got on another plain black long sleeve shirt and black cargo pants to match his boots. “",
+        "max_topic_prob": 0.7814069390296936,
+        "normalized_position": 0.8987682110923529,
+        "tertile": "end",
+        "chapter_index": 60,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His clothes fit as if they were made specifically for him.",
+        "max_topic_prob": 0.7800993323326111,
+        "normalized_position": 0.37203776652285375,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He’s wearing a light grey button up shirt and some black slacks that mold to his physique perfectly.",
+        "max_topic_prob": 0.7578510046005249,
+        "normalized_position": 0.26824235603076346,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He has on a pair of thin, grey sweatpants and a white, fitted tank top.",
+        "max_topic_prob": 0.7496817111968994,
+        "normalized_position": 0.21296817357593947,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He’s always dressed in a pair of jeans and plain t-shirt.",
+        "max_topic_prob": 0.7470077276229858,
+        "normalized_position": 0.14731445007190647,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He looks like his body was made specifically to be without clothes on.",
+        "max_topic_prob": 0.7100287675857544,
+        "normalized_position": 0.13162008378665666,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "His navy blue jeans and white shirt cling to him, and the Stetson on his head makes him look rugged. “",
+        "max_topic_prob": 0.7123407125473022,
+        "normalized_position": 0.1672100994900092,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The assured grin he wore, the tight jeans that made his butt look great, and the way his eyes would convey everything he wouldn’t say.",
+        "max_topic_prob": 0.6015026569366455,
+        "normalized_position": 0.23944486246969318,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "His tight jeans, hat, and the way he owns the world.",
+        "max_topic_prob": 0.5960304737091064,
+        "normalized_position": 0.6675863222138617,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He wears it on his face.",
+        "max_topic_prob": 0.5401061773300171,
+        "normalized_position": 0.18819496697600535,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I take a look at him, and he’s still in the same clothes from the bar, there’s dirt all over him, and he has something in his hand. “",
+        "max_topic_prob": 0.5369659662246704,
+        "normalized_position": 0.8276063874258005,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "His chest is broad and his abs are exactly like I remember.",
+        "max_topic_prob": 0.5046780109405518,
+        "normalized_position": 0.7301228994231251,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He was wearing a pair of loose-fitting pants, an overly large tunic, and sandals.",
+        "max_topic_prob": 0.7631648778915405,
+        "normalized_position": 0.30775510204081635,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He wanted to see Grant wearing tailor-made clothes similar to the jumpsuit that clung tightly to his body. “",
+        "max_topic_prob": 0.6400905847549438,
+        "normalized_position": 0.2565986394557823,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "His protruding belly was camouflaged beneath his overly large clothing.",
+        "max_topic_prob": 0.6353740692138672,
+        "normalized_position": 0.30857142857142855,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Right now, he needed to get Grant some clothing.",
+        "max_topic_prob": 0.6087894439697266,
+        "normalized_position": 0.25523809523809526,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "He got dressed, pulling on a pair of trousers and a shirt, before heading for the front door.",
+        "max_topic_prob": 0.6034252047538757,
+        "normalized_position": 0.9885714285714285,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "His shoulders were wide, tapering off to a trim waist, a nice meaty ass, and thick thighs.",
+        "max_topic_prob": 0.5931429266929626,
+        "normalized_position": 0.20217687074829932,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Only then did I realize he was dressed all in black, from that shirt to his jeans to the heavy tall boots laced up his calves.",
+        "max_topic_prob": 0.743925929069519,
+        "normalized_position": 0.11333170850597124,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He dressed, pulling clothes from the duffle bag he brought over weeks ago.",
+        "max_topic_prob": 0.6807291507720947,
+        "normalized_position": 0.7940531318547405,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I was wearing a pair of sweatpants and one of his shirts.",
+        "max_topic_prob": 0.6273940801620483,
+        "normalized_position": 0.2598098951986351,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The fitted black t-shirt he wore molded to his frame, moving with his muscles as if they were one.",
+        "max_topic_prob": 0.6177217960357666,
+        "normalized_position": 0.11320984645381428,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Let’s not forget his full sexy sleeves covered in black tribal and barbed wire accents that graced those strong muscular arms.",
+        "max_topic_prob": 0.5523267984390259,
+        "normalized_position": 0.48086765781135754,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The condition of his clothes wasn’t the reason I jumped to my feet and catapulted myself into his arms.",
+        "max_topic_prob": 0.5140544176101685,
+        "normalized_position": 0.783694857421399,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 2
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.004840764331210191,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0038345486547648982,
+        "n_sentences": 61
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0059773623298995295,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.003029353389741983,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004079362136102355,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0034097954122752636,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.004215456674473068,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.005474952094169176,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0012948575656677765,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0006510416666666666,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0005045408678102926,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0012277470841006752,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.001072769533345253,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0011790907899908293,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0006642311524410495,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0010346611484738748,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 89
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.87,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

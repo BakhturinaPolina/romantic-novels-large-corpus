@@ -1,0 +1,901 @@
+{
+  "topic_id": 70,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sleep",
+        "asleep",
+        "tired",
+        "wake",
+        "slept",
+        "exhausted",
+        "awake",
+        "sleeping",
+        "night",
+        "she"
+      ],
+      "KeyBERT": [
+        "rested",
+        "anxious",
+        "instantly",
+        "moaned",
+        "jo",
+        "comfortable",
+        "excited",
+        "trembling",
+        "instincts",
+        "praying"
+      ],
+      "POS": [
+        "destination",
+        "decades",
+        "activities",
+        "threats",
+        "activity",
+        "strained",
+        "previous",
+        "creatures",
+        "instincts",
+        "lack"
+      ],
+      "MMR": [
+        "warming",
+        "drifted",
+        "activities",
+        "threats",
+        "bursting",
+        "steadily",
+        "instincts",
+        "climb",
+        "counted",
+        "century"
+      ]
+    },
+    "stage08_snippets": [
+      "maybe she’ll get some sleep.” “",
+      "i’ll wait until she wakes up and then i’ll head back up to make sure shit doesn’t go down in the mc.” “",
+      "for her, it’s early, she’ll be awake.” “"
+    ],
+    "label_public": "Keeping Watch While She Sleeps"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "A moment later she was sound asleep.",
+        "max_topic_prob": 0.7941985726356506,
+        "normalized_position": 0.5204374327716027,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "An instant later she was once more sound asleep.",
+        "max_topic_prob": 0.7713043689727783,
+        "normalized_position": 0.5284152025815705,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "They wouldn’t be getting much sleep tonight, she knew.",
+        "max_topic_prob": 0.757881224155426,
+        "normalized_position": 0.8982610254571531,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It was months before she’d been able to sleep through the night.",
+        "max_topic_prob": 0.7480865716934204,
+        "normalized_position": 0.05494801003944066,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It couldn’t have been more than a few hours for she still felt drugged with exhaustion, her eyes grainy and her head stuffed full of cotton.",
+        "max_topic_prob": 0.7022294998168945,
+        "normalized_position": 0.41520258157045536,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "How long had she slept?",
+        "max_topic_prob": 0.7019558548927307,
+        "normalized_position": 0.415112943707422,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She was fast asleep.",
+        "max_topic_prob": 0.8036106824874878,
+        "normalized_position": 0.528396548264098,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 457
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She realized that he wouldn’t rest until he did.",
+        "max_topic_prob": 0.7456532120704651,
+        "normalized_position": 0.4912703190848886,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She’d be asleep.",
+        "max_topic_prob": 0.7455323934555054,
+        "normalized_position": 0.6042544651816175,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was as if she’d been awoken from a long trance.",
+        "max_topic_prob": 0.7394285202026367,
+        "normalized_position": 0.22255669275536824,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She just hoped that hers wouldn’t catch up with her before the night ended. “",
+        "max_topic_prob": 0.7165996432304382,
+        "normalized_position": 0.7688139674894642,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It had left her exhausted and vulnerable.",
+        "max_topic_prob": 0.6943860054016113,
+        "normalized_position": 0.5219747140276941,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 425
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She hadn’t slept.",
+        "max_topic_prob": 0.7849971055984497,
+        "normalized_position": 0.5786494925839188,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She just had to sleep. ‘",
+        "max_topic_prob": 0.7778553366661072,
+        "normalized_position": 0.15886026541764248,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 575
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She’s been awake virtually all night.",
+        "max_topic_prob": 0.7264620065689087,
+        "normalized_position": 0.3444574551131928,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She’d never felt so tired in her life.",
+        "max_topic_prob": 0.7215930223464966,
+        "normalized_position": 0.15846994535519127,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 573
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The woman did look tired. ‘",
+        "max_topic_prob": 0.7124790549278259,
+        "normalized_position": 0.34601873536299765,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She must have slept like the dead. ‘",
+        "max_topic_prob": 0.7124623656272888,
+        "normalized_position": 0.8583138173302107,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She was asleep.",
+        "max_topic_prob": 0.8412555456161499,
+        "normalized_position": 0.36741297883505336,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She gets up very early.",
+        "max_topic_prob": 0.7056676149368286,
+        "normalized_position": 0.2750568479972013,
+        "tertile": "begin",
+        "chapter_index": 26,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She had been distracted most of the morning. “",
+        "max_topic_prob": 0.658542811870575,
+        "normalized_position": 0.7821409830330593,
+        "tertile": "end",
+        "chapter_index": 85,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She put me in the dark.",
+        "max_topic_prob": 0.5760157704353333,
+        "normalized_position": 0.5087458457232814,
+        "tertile": "middle",
+        "chapter_index": 46,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "They had gone to bed right after eating tonight.",
+        "max_topic_prob": 0.5663036704063416,
+        "normalized_position": 0.4230365576351233,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She had been exhausted, immersed in a new case, and miserable.",
+        "max_topic_prob": 0.5608322620391846,
+        "normalized_position": 0.9723631275144307,
+        "tertile": "end",
+        "chapter_index": 114,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "In fact, I’m sure Maddy is in her bed right now.",
+        "max_topic_prob": 0.5859674215316772,
+        "normalized_position": 0.2143698468786808,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She wanted desperately to sleep.",
+        "max_topic_prob": 0.7793011665344238,
+        "normalized_position": 0.1806828482223789,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Three hours later, she’d finally found a place to sleep.",
+        "max_topic_prob": 0.7687033414840698,
+        "normalized_position": 0.4962231846107362,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The television was still on and she realized she must have fallen asleep.",
+        "max_topic_prob": 0.7391860485076904,
+        "normalized_position": 0.8083392083794944,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She was so tired and her back throbbed.",
+        "max_topic_prob": 0.7105475664138794,
+        "normalized_position": 0.498438916305771,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 444
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She lay down on the bed and drifted off to sleep almost immediately.",
+        "max_topic_prob": 0.7086524367332458,
+        "normalized_position": 0.498539631382818,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The left side of her body started to get weaker and she was taking longer and longer naps.",
+        "max_topic_prob": 0.6980797052383423,
+        "normalized_position": 0.2608520495518179,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "She could see why people liked sleeping like this.",
+        "max_topic_prob": 0.7350476980209351,
+        "normalized_position": 0.472399549380398,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Thanks to him, she’d been up half the night aching for him.",
+        "max_topic_prob": 0.6726386547088623,
+        "normalized_position": 0.5165227187382652,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He considered waking her up and sending her to her room but then decided against it.",
+        "max_topic_prob": 0.6703990697860718,
+        "normalized_position": 0.4701464513706346,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Even when she was exhausted and they had to travel late at night, she still had a smile on her face.",
+        "max_topic_prob": 0.6678289175033569,
+        "normalized_position": 0.2876455125797972,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "The poor thing was exhausted and probably wouldn’t have the energy to walk back to her room.",
+        "max_topic_prob": 0.6670998334884644,
+        "normalized_position": 0.4703342095381149,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It would probably be for the best if you stayed awake then,” Jamie agreed as she did this little twist and drop thing that had him sucking in a breath and struggling not to throw her on her back and fuck her until she couldn’t move.",
+        "max_topic_prob": 0.6518843173980713,
+        "normalized_position": 0.6404431092752535,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She wanted more than just sleep.",
+        "max_topic_prob": 0.8255232572555542,
+        "normalized_position": 0.863975628332064,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 596
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was hours before she gave up on sleep.",
+        "max_topic_prob": 0.8069248795509338,
+        "normalized_position": 0.7384615384615385,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It wasn’t as if she slept for a week.",
+        "max_topic_prob": 0.7189449071884155,
+        "normalized_position": 0.7445544554455445,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It wasn’t the first time that she had awakened to an empty bed this week and she was sure it wouldn’t be the last.",
+        "max_topic_prob": 0.7038994431495667,
+        "normalized_position": 0.6680883472962681,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It didn’t take long for Jenny to fall back to sleep and Katelyn hoped that it was for the night.",
+        "max_topic_prob": 0.6968199014663696,
+        "normalized_position": 0.6607768469154608,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She was in her nightgown and getting ready for bed when she’d heard the knock.",
+        "max_topic_prob": 0.6707378625869751,
+        "normalized_position": 0.1479055597867479,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "She’s probably sleeping, but I don’t know that I can go to bed until I get a response from her.",
+        "max_topic_prob": 0.6311963796615601,
+        "normalized_position": 0.276808841305474,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "The woman that loves to stay up late and sleep in, takes ten minutes every morning before the kids are up to sit and have a quiet cup of coffee.",
+        "max_topic_prob": 0.47365641593933105,
+        "normalized_position": 0.9989639095147643,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I wait watching the screen until she’s shut it down.",
+        "max_topic_prob": 0.4663815498352051,
+        "normalized_position": 0.9057157658435503,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "At four fucking a.m. Didn’t she ever sleep?",
+        "max_topic_prob": 0.7298516035079956,
+        "normalized_position": 0.03271604938271605,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Tonight, she lived in a hell created by her own mind.",
+        "max_topic_prob": 0.5256211161613464,
+        "normalized_position": 0.026080246913580248,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Their climaxes were small, pained, and their sleep afterward was coma deep.",
+        "max_topic_prob": 0.5461476445198059,
+        "normalized_position": 0.5254777070063694,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 574
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She clearly didn’t want to wake up my parents either. “",
+        "max_topic_prob": 0.6574475765228271,
+        "normalized_position": 0.7515484234234234,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Her body wasn’t all pillowy and mom-soft.",
+        "max_topic_prob": 0.5770039558410645,
+        "normalized_position": 0.9054054054054054,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "It was more like she saw the world from underneath, like life was a log that she would roll over and there it was, all different than I’d thought.",
+        "max_topic_prob": 0.5019001960754395,
+        "normalized_position": 0.5761542792792793,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Amelia grew tired during the journey.",
+        "max_topic_prob": 0.5521283149719238,
+        "normalized_position": 0.6417910447761194,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She was tired.",
+        "max_topic_prob": 0.8451576828956604,
+        "normalized_position": 0.4106139213143104,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She desperately needed the oblivion of sleep.",
+        "max_topic_prob": 0.7686973810195923,
+        "normalized_position": 0.6977950713359273,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "When she’d finished she put him down to sleep. ‘",
+        "max_topic_prob": 0.7596962451934814,
+        "normalized_position": 0.4727626459143969,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She was wide awake.",
+        "max_topic_prob": 0.7546895742416382,
+        "normalized_position": 0.696714223951578,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She wasn’t going to say any more about why she couldn’t sleep.",
+        "max_topic_prob": 0.7374342679977417,
+        "normalized_position": 0.6884997838305231,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She’d known she wouldn’t sleep a wink.",
+        "max_topic_prob": 0.7371286153793335,
+        "normalized_position": 0.4337440553393861,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "She’s awake.” “",
+        "max_topic_prob": 0.7321244478225708,
+        "normalized_position": 0.9513541666666666,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 9133
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "The nightmares had let up, and she was finally sleeping through the night, but the anxiety was always sizzling right under the surface.",
+        "max_topic_prob": 0.647282600402832,
+        "normalized_position": 0.9847916666666666,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 9454
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Lorraine was awake and sitting up in bed.",
+        "max_topic_prob": 0.6270025968551636,
+        "normalized_position": 0.9389583333333333,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 9014
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Hearing how she started her morning made me envious.",
+        "max_topic_prob": 0.5690111517906189,
+        "normalized_position": 0.8980208333333334,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 8621
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "If I didn’t say what she wanted now, she would keep this up all night.",
+        "max_topic_prob": 0.561500608921051,
+        "normalized_position": 0.3696875,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3549
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Waking up Lorraine was going to be a long process, so Levi suggested that we grab something to eat and maybe take a shower and a nap. “",
+        "max_topic_prob": 0.558489203453064,
+        "normalized_position": 0.9333333333333333,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 8960
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0056625141562853904,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.00778485491861288,
+        "n_sentences": 77
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.00793047256925584,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004975124378109453,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.006981593979508568,
+        "n_sentences": 77
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.005235602094240838,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.009815469179426776,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.007501530924678506,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0005184033177812338,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0004610419548178884,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0003108003108003108,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00105318588730911,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0007031112673580594,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0005906674542232723,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.00042510982003684286,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 65
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "10.1",
+    "taxonomy_secondary_name": "Paranormal & Immortal Beings",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

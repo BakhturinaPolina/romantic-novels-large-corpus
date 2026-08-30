@@ -1,0 +1,41 @@
+{
+  "hypothesis": "H5",
+  "n_topics": 22,
+  "topic_ids": [
+    27,
+    64,
+    66,
+    92,
+    102,
+    133,
+    145,
+    152,
+    179,
+    184,
+    220,
+    223,
+    244,
+    259,
+    281,
+    284,
+    285,
+    322,
+    324,
+    327,
+    335,
+    366
+  ],
+  "n_newly_audited": 22,
+  "n_adjudicated_total": 22,
+  "dry_run": false,
+  "model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "outputs": {
+    "A": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h5/lexical.jsonl",
+    "B": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h5/contextual.jsonl",
+    "C": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h5/adjudication.jsonl"
+  },
+  "n_h3_priors_reused": 0,
+  "n_tenderness_priors": 98,
+  "exhaustive_topic_ids": [],
+  "n_exhaustive": 0
+}

@@ -1,0 +1,810 @@
+{
+  "topic_id": 330,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "cook",
+        "cooking",
+        "chef",
+        "chefs",
+        "cooks",
+        "recipes",
+        "cooked",
+        "skills",
+        "bake",
+        "grill"
+      ],
+      "KeyBERT": [
+        "taught",
+        "trained",
+        "gotta",
+        "practice",
+        "suggest",
+        "places",
+        "squinted",
+        "tv"
+      ],
+      "POS": [
+        "parties",
+        "unusual",
+        "exciting",
+        "quality",
+        "practice",
+        "ability",
+        "tv",
+        "confusion",
+        "places"
+      ],
+      "MMR": [
+        "glued",
+        "theirs",
+        "parties",
+        "exciting",
+        "arranged",
+        "ability",
+        "taught",
+        "tv",
+        "chose",
+        "blinked"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ve got me curious about your culinary skills.”",
+      "now i’ve got to learn how to cook a whole new way.”",
+      "you’ve tried [person]’s cooking."
+    ],
+    "label_public": "Curious About Her Cooking Skills"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He's an even better cook than I am.\" \"",
+        "max_topic_prob": 0.7397916316986084,
+        "normalized_position": 0.3392282958199357,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Good thing I know how to cook, huh?",
+        "max_topic_prob": 0.7081689238548279,
+        "normalized_position": 0.5757413361914969,
+        "tertile": "middle",
+        "chapter_index": 38,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I'll even cook, you being the guest and all.\" \"",
+        "max_topic_prob": 0.6975110173225403,
+        "normalized_position": 0.017327617006073597,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "My cookin' then.\" \"",
+        "max_topic_prob": 0.6902174949645996,
+        "normalized_position": 0.3018935334047874,
+        "tertile": "begin",
+        "chapter_index": 23,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Can see why you like my cookin'.\"",
+        "max_topic_prob": 0.6891971826553345,
+        "normalized_position": 0.311718470882458,
+        "tertile": "begin",
+        "chapter_index": 24,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Man could cook like a dream. \"",
+        "max_topic_prob": 0.6875263452529907,
+        "normalized_position": 0.10146480886030725,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Officially, Granger was one of several cooks on staff at the Club Med in Punta Cana, a popular tourist area in the Dominican Republic.",
+        "max_topic_prob": 0.3713391125202179,
+        "normalized_position": 0.016838946315438478,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "The cooking.",
+        "max_topic_prob": 0.6783288717269897,
+        "normalized_position": 0.14691714836223507,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Shit, she couldn’t even boil live lobsters without crying. “",
+        "max_topic_prob": 0.5235624313354492,
+        "normalized_position": 0.2527938342967245,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Tis smooth as a warm knife through fresh butter when you master it.”",
+        "max_topic_prob": 0.44836872816085815,
+        "normalized_position": 0.203757225433526,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "She likes to cook.\"",
+        "max_topic_prob": 0.7071675062179565,
+        "normalized_position": 0.6181192660550459,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 710
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I want a job cooking,\" Darlene said. \"",
+        "max_topic_prob": 0.6719073057174683,
+        "normalized_position": 0.6068152031454783,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 641
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Maybe she'd cook something special for him and those kids. \"",
+        "max_topic_prob": 0.5904451608657837,
+        "normalized_position": 0.5445609436435125,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "And, oddly enough, she found cooking for large numbers easier than cooking for one or a few.",
+        "max_topic_prob": 0.578856348991394,
+        "normalized_position": 0.6032110091743119,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 619
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "But someone who was the chief cook for a down-time school or mine or whatever, where they had to feed lots of people had more of the sort of experience needed for working on a school lunch line.",
+        "max_topic_prob": 0.5741949081420898,
+        "normalized_position": 0.5876474442988204,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 524
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "The list of foods was surprisingly varied, and apparently Darlene had hired two support chefs, a baker and someone named Gretel. .",
+        "max_topic_prob": 0.5674479603767395,
+        "normalized_position": 0.6256553079947575,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 756
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s just as easy to cook for two.” “",
+        "max_topic_prob": 0.7267671823501587,
+        "normalized_position": 0.1856012658227848,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I feel like I’m hosting a cooking show.” “",
+        "max_topic_prob": 0.7049198150634766,
+        "normalized_position": 0.18686708860759493,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Nice to have the time and space to cook again.”",
+        "max_topic_prob": 0.6994834542274475,
+        "normalized_position": 0.2435126582278481,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I gather you don’t cook much, judging from what you think passes for staples in the pantry.” “",
+        "max_topic_prob": 0.6897129416465759,
+        "normalized_position": 0.18718354430379747,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s the only thing I know how to cook from scratch.",
+        "max_topic_prob": 0.6562578678131104,
+        "normalized_position": 0.5433544303797468,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Catering’s done, officially?” “",
+        "max_topic_prob": 0.619931161403656,
+        "normalized_position": 0.7395569620253165,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I don’t see the point in cooking a full blown meal for just me. “",
+        "max_topic_prob": 0.6812661290168762,
+        "normalized_position": 0.2933977455716586,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "We talk about yummy food that you cook and one day I will get to taste all this food you talk about!",
+        "max_topic_prob": 0.5626973509788513,
+        "normalized_position": 0.9984970477724101,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You seem like a pretty good cook yourself.”",
+        "max_topic_prob": 0.7431317567825317,
+        "normalized_position": 0.6367062107466853,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Don’t tell me you’re thinking of becoming a chef.”",
+        "max_topic_prob": 0.7325930595397949,
+        "normalized_position": 0.23838101884159107,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "So I take it becoming a chef isn’t on the short list of things you’ve come up with as you continue your quest to find yourself.” “",
+        "max_topic_prob": 0.7135642170906067,
+        "normalized_position": 0.637404047452896,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I don’t think becoming a professional cook is in my future.” “",
+        "max_topic_prob": 0.6944563388824463,
+        "normalized_position": 0.2390788555478018,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The guy was a regular Chef Ramsey, obviously comfortable in a kitchen. “",
+        "max_topic_prob": 0.6416239738464355,
+        "normalized_position": 0.6351709699930216,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "If you’re such a great cook, why do you eat at Pappy’s so much?”",
+        "max_topic_prob": 0.6343437433242798,
+        "normalized_position": 0.6353105373342638,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "My fault for cooking food outside.",
+        "max_topic_prob": 0.6063843369483948,
+        "normalized_position": 0.8652565609087348,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He cooked, on a sizzling iron skillet.",
+        "max_topic_prob": 0.5813359022140503,
+        "normalized_position": 0.30513121817469646,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He could cook, which was more than a lot of men in San Fran could do.",
+        "max_topic_prob": 0.5119560956954956,
+        "normalized_position": 0.5370152761457109,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Shouldn’t he want some local woman with aprons and recipe books and a sensible haircut?",
+        "max_topic_prob": 0.44680801033973694,
+        "normalized_position": 0.5801018409714062,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Steaks, not from a vacuum-sealed plastic tray but wrapped in paper, probably bought that morning from some small-town butcher.",
+        "max_topic_prob": 0.4015352129936218,
+        "normalized_position": 0.30552291421856637,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Bill Kurtz grilled the most heavenly burgers and we had an old-fashioned backyard barbecue surrounded by about a dozen Chicago members of the Great Wolves M.C. There was double cause to celebrate.",
+        "max_topic_prob": 0.3531985282897949,
+        "normalized_position": 0.9655762973111834,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "We’ve a new cook.”",
+        "max_topic_prob": 0.783621072769165,
+        "normalized_position": 0.17492081773682694,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I don’t suppose they taught you how to cook?”",
+        "max_topic_prob": 0.7401259541511536,
+        "normalized_position": 0.28678376043766196,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He’s young fer a cook.",
+        "max_topic_prob": 0.680344820022583,
+        "normalized_position": 0.17607255974661676,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Perhaps the Irishman was learning to cook.",
+        "max_topic_prob": 0.6515319347381592,
+        "normalized_position": 0.28404837316441117,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "It was better when his new cook relegated himself to simple stews.",
+        "max_topic_prob": 0.6229751110076904,
+        "normalized_position": 0.27886553412035703,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Perhaps you are new to the dish?” “",
+        "max_topic_prob": 0.6191123723983765,
+        "normalized_position": 0.2803052116325943,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Other women might take offense to that, but I liked to cook.",
+        "max_topic_prob": 0.708417534828186,
+        "normalized_position": 0.05419937627701903,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I didn’t want to cook in his house.",
+        "max_topic_prob": 0.6724022030830383,
+        "normalized_position": 0.7387891171093666,
+        "tertile": "end",
+        "chapter_index": 84,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Don’t come into my house and insult my cooking.",
+        "max_topic_prob": 0.6701077222824097,
+        "normalized_position": 0.3077750295730724,
+        "tertile": "begin",
+        "chapter_index": 41,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I was just about to grill some steaks.” “",
+        "max_topic_prob": 0.6337482929229736,
+        "normalized_position": 0.8699860200021508,
+        "tertile": "end",
+        "chapter_index": 100,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She’s an incredible cook,” Ben said. “",
+        "max_topic_prob": 0.6312461495399475,
+        "normalized_position": 0.29906441552855145,
+        "tertile": "begin",
+        "chapter_index": 41,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "If I’d been in my house, I’d have cooked.",
+        "max_topic_prob": 0.6207442283630371,
+        "normalized_position": 0.7382514248843962,
+        "tertile": "end",
+        "chapter_index": 84,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "The thought of not having to cook for one today though was welcomed greatly.",
+        "max_topic_prob": 0.5783747434616089,
+        "normalized_position": 0.7954626440194797,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "As always the food was amazing, the chef was excellent and nothing disappointed.",
+        "max_topic_prob": 0.5493694543838501,
+        "normalized_position": 0.5924694144197649,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Well, he’s quite a dish isn’t he?”",
+        "max_topic_prob": 0.5367087125778198,
+        "normalized_position": 0.807934434018292,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "The chef made an appearance tonight, I assume at Ethan’s request, and we all stood and applauded him – he seemed very humbled at our attention, but it was so well deserved.",
+        "max_topic_prob": 0.5312084555625916,
+        "normalized_position": 0.6771588074593182,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 197
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We could explore Rome together and I assure you that you would want to venture out – I’d want to sample that cuisine for a start.”",
+        "max_topic_prob": 0.5239065885543823,
+        "normalized_position": 0.8237320346834541,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We stopped at a small family-run restaurant – the food was simple but delicious and Ethan complimented the very happy owner, then explained who he was.",
+        "max_topic_prob": 0.5238783359527588,
+        "normalized_position": 0.47024587243140514,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I heated up the pizza you left out and was just about to eat it before you distracted me.\" \"",
+        "max_topic_prob": 0.5169327259063721,
+        "normalized_position": 0.9675098630772802,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Not homebrewed?”",
+        "max_topic_prob": 0.36617276072502136,
+        "normalized_position": 0.871859296482412,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It beats cooking and eating out.\"",
+        "max_topic_prob": 0.5833454132080078,
+        "normalized_position": 0.23031984810866074,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 114
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.001970831690973591,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.002488369576977172,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0016832655351381681,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.00246985326165916,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0021434460016488046,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005061460592913955,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0019163206643244969,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.0015529805280133796,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00019451468585878233,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0001465630954125751,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.00017295053614666206,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.00016758840288252054,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00023282887077997672,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0002158894645941278,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0002908949869097256,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,877 @@
+{
+  "topic_id": 347,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "goodnight",
+        "good",
+        "morning",
+        "sleep",
+        "whispered",
+        "night",
+        "evening",
+        "said",
+        "afternoon",
+        "ear"
+      ],
+      "KeyBERT": [
+        "politely",
+        "instantly",
+        "greeted",
+        "mumbled",
+        "assured",
+        "automatically",
+        "demanded",
+        "ty",
+        "grunted",
+        "cocked"
+      ],
+      "POS": [
+        "stunning",
+        "squeeze",
+        "purse",
+        "entrance",
+        "pressure",
+        "sir",
+        "shock",
+        "lady"
+      ],
+      "MMR": [
+        "greeted",
+        "politely",
+        "climbing",
+        "mumbled",
+        "demanded",
+        "squeeze",
+        "purse",
+        "entrance",
+        "sir",
+        "shock"
+      ]
+    },
+    "stage08_snippets": [
+      "no, i think i’ll get to bed,” i told him, smiling weakly. “",
+      "i’ll probably only sleep for an hour or so,” leigh said with a smile as she turned back into the room, then paused to add, “bastien asked me to have you call him when you woke up.” “",
+      "i’ll just say good night now,” [person] says. “"
+    ],
+    "label_public": "Saying Goodnight Before Bed"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Good morning, Delaney,” he murmured softly. “",
+        "max_topic_prob": 0.7662218809127808,
+        "normalized_position": 0.22246403095151734,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Good morning, Delaney,” he whispered huskily, close to her ear when he finally released her mouth.",
+        "max_topic_prob": 0.7452030777931213,
+        "normalized_position": 0.318462096481683,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He whispered her name and gently nudged her awake.",
+        "max_topic_prob": 0.6999942064285278,
+        "normalized_position": 0.26985854189336234,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Good morning, Prince,” she said smiling up at him.",
+        "max_topic_prob": 0.6924232244491577,
+        "normalized_position": 0.31870390521097813,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Breaking into their conversation he said, “Good morning, Shelly.",
+        "max_topic_prob": 0.6578896045684814,
+        "normalized_position": 0.5950912827953089,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "AJ and I are going to have to say good-night to everyone,” Shelly said smiling. “",
+        "max_topic_prob": 0.6544588804244995,
+        "normalized_position": 0.8989239511546366,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Spend the night with me,” he whispered. “",
+        "max_topic_prob": 0.742894172668457,
+        "normalized_position": 0.7207608255766896,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Morning,” she said, her voice sleepy and cute as hell.",
+        "max_topic_prob": 0.7373985052108765,
+        "normalized_position": 0.4451639012545528,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Morning, Sunshine,” she said with a big smile.",
+        "max_topic_prob": 0.6955124139785767,
+        "normalized_position": 0.0811412383650344,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Wrapping his arms around her middle, he said, “Plan on keeping you in bed this evening, too.” “",
+        "max_topic_prob": 0.6879816055297852,
+        "normalized_position": 0.45993524888709025,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Did you want to keep talking or say good night?”",
+        "max_topic_prob": 0.682824969291687,
+        "normalized_position": 0.31566167543504653,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Night, sweetheart,” he called out and her heart soared.",
+        "max_topic_prob": 0.6774305105209351,
+        "normalized_position": 0.6732092270335897,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "The sound of the door closing came and he added, “I thought you could use a little refreshment when you woke.",
+        "max_topic_prob": 0.6279705762863159,
+        "normalized_position": 0.2813150847961916,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Good evening, Mrs. Schmeling,” Julian replied, kissing both her cheeks.",
+        "max_topic_prob": 0.6156871318817139,
+        "normalized_position": 0.7437518595656055,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Before the sun sets,” Bruno whispered, and hung up.",
+        "max_topic_prob": 0.5056264400482178,
+        "normalized_position": 0.20388277298423088,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Thank you,” she whispered, yet again, this time almost reverently.",
+        "max_topic_prob": 0.5830755233764648,
+        "normalized_position": 0.8982713295626543,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "And a good evening to you, Sister Marguerite.” “",
+        "max_topic_prob": 0.5797141194343567,
+        "normalized_position": 0.3384051621126424,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "As she tasted his lips, she whispered against his mouth, “This evening’s just getting started.” **** “",
+        "max_topic_prob": 0.6367930173873901,
+        "normalized_position": 0.814808596373405,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Good morning, Chief,\" Kate said. \"",
+        "max_topic_prob": 0.6878483295440674,
+        "normalized_position": 0.028588900779697293,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Right now I'm going to sleep\" He took her elbow and steered her toward the hallway. \"",
+        "max_topic_prob": 0.6814520955085754,
+        "normalized_position": 0.36340009172909343,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Good night, Hart,\" she said, and rolled over to face the wall.",
+        "max_topic_prob": 0.6478087902069092,
+        "normalized_position": 0.8772358966518881,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Afternoon, Hart,\" she said. \"",
+        "max_topic_prob": 0.6444249749183655,
+        "normalized_position": 0.08393212047087602,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Mornin', Kate,\" he said. \"",
+        "max_topic_prob": 0.6369803547859192,
+        "normalized_position": 0.14233297660908117,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Good morning, Kate,\" Hart said.",
+        "max_topic_prob": 0.6184073090553284,
+        "normalized_position": 0.5048157774040667,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "This is lovely,” she thought, and for a moment, let herself dream.",
+        "max_topic_prob": 0.5888204574584961,
+        "normalized_position": 0.4646038443506798,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1982
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Breakfast, she told herself.",
+        "max_topic_prob": 0.5884944796562195,
+        "normalized_position": 0.916080637599625,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1838
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "he asked, his voice rough and uneven from sleeping. “",
+        "max_topic_prob": 0.699337363243103,
+        "normalized_position": 0.33817930079612324,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I would if you’d wake up,” came her calm voice.",
+        "max_topic_prob": 0.6204997897148132,
+        "normalized_position": 0.4039460020768432,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Night, fellas,” he called. “",
+        "max_topic_prob": 0.6203600168228149,
+        "normalized_position": 0.1559363101419176,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Good mornin’ again, Wes,” Gray greeted as he walked in a few moments later.",
+        "max_topic_prob": 0.6092166900634766,
+        "normalized_position": 0.20976116303219106,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Wes grunted his agreement, then led Midnight from his stall. “",
+        "max_topic_prob": 0.6049734354019165,
+        "normalized_position": 0.719626168224299,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Good morning, Mrs. Lewis, Sarah,” Allison greeted as she walked into Mrs. Lewis’ home. “",
+        "max_topic_prob": 0.5657713413238525,
+        "normalized_position": 0.2782969885773624,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Goodnight,” I say softly.",
+        "max_topic_prob": 0.7911965847015381,
+        "normalized_position": 0.6458074534161491,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Morning to you,” I say as a smile tugs on my lips. “",
+        "max_topic_prob": 0.7408688068389893,
+        "normalized_position": 0.7049689440993789,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He chuckles and wishes her a good morning.",
+        "max_topic_prob": 0.7272789478302002,
+        "normalized_position": 0.578416149068323,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You’re awake,” he states. “",
+        "max_topic_prob": 0.7142273187637329,
+        "normalized_position": 0.8375776397515527,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Good morning.”",
+        "max_topic_prob": 0.6938648819923401,
+        "normalized_position": 0.7046583850931677,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Morning, love,” I squeeze her to me. “",
+        "max_topic_prob": 0.6902023553848267,
+        "normalized_position": 0.5765527950310559,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You should get some sleep,” he said, running his hand down my back. “",
+        "max_topic_prob": 0.724690318107605,
+        "normalized_position": 0.43993952721275426,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Morning, baby,” I said softly, tipping her chin up to kiss her. “",
+        "max_topic_prob": 0.7233623266220093,
+        "normalized_position": 0.2724024189114898,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Then sleep,” I said, pressing a kiss to her forehead.",
+        "max_topic_prob": 0.7231429815292358,
+        "normalized_position": 0.8031885651456845,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Good night.”",
+        "max_topic_prob": 0.7002645134925842,
+        "normalized_position": 0.5276250687190764,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Good night, baby.” “",
+        "max_topic_prob": 0.6873340606689453,
+        "normalized_position": 0.5274876305662451,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I nodded, and he ran his nose along my neck and up to my ear, murmuring, “Good, because I don’t plan on us getting much sleep.”",
+        "max_topic_prob": 0.6750109791755676,
+        "normalized_position": 0.5354590434304562,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Good morning,” he said as casually as he could manage. “",
+        "max_topic_prob": 0.787072479724884,
+        "normalized_position": 0.20454904438477334,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Good morning,” he said with a hint of laughter in his voice. “",
+        "max_topic_prob": 0.7843980193138123,
+        "normalized_position": 0.3451271521086716,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Good morning,” she said, flashing him a quick smile.",
+        "max_topic_prob": 0.7653955817222595,
+        "normalized_position": 0.2032854209445585,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Good night,” she said, her voice ragged.",
+        "max_topic_prob": 0.7555344104766846,
+        "normalized_position": 0.3238035065550466,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Morning,” she said, trying to turn away to spare him her breath.",
+        "max_topic_prob": 0.7487596273422241,
+        "normalized_position": 0.8429947875533091,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "As soon as she made a quiet, contented noise, Ray’s deep voice growled in her ear, “Good morning, love.”",
+        "max_topic_prob": 0.7404746413230896,
+        "normalized_position": 0.8423629758332017,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Morning, Mr. Merit,” I reply, grinning as I join him.",
+        "max_topic_prob": 0.5818419456481934,
+        "normalized_position": 0.8348317492936039,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’ll call you tomorrow,” she promises.",
+        "max_topic_prob": 0.5722869634628296,
+        "normalized_position": 0.5689699460570254,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Well, good morning, sunshine,” she said. “",
+        "max_topic_prob": 0.7325956225395203,
+        "normalized_position": 0.42631865144100056,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I want to wake up every day to see your beautiful smile,” he said softly. “",
+        "max_topic_prob": 0.7078303098678589,
+        "normalized_position": 0.8754758020663403,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Piper felt his lips turn up in a smile as he said, “I get to sleep in this bed.”",
+        "max_topic_prob": 0.6955901384353638,
+        "normalized_position": 0.6074859525104224,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Good morning.” “",
+        "max_topic_prob": 0.6798578500747681,
+        "normalized_position": 0.6716512597426137,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He glanced over at the alarm clock and smiled as he looked back over at her. “",
+        "max_topic_prob": 0.6749632358551025,
+        "normalized_position": 0.6900489396411092,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I’m sleeping,” she muttered again as he kissed her nose. “",
+        "max_topic_prob": 0.6665953993797302,
+        "normalized_position": 0.671741888707631,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Sleep,” he says, his arms tightening around me. “",
+        "max_topic_prob": 0.6794238686561584,
+        "normalized_position": 0.9431931575196009,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 427
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I heard you were awake, Talia .”",
+        "max_topic_prob": 0.598569393157959,
+        "normalized_position": 0.35759087669280115,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Come greet the guests,” he says, starting for the door.",
+        "max_topic_prob": 0.5844394564628601,
+        "normalized_position": 0.8612259444048468,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I’ll still set aside some nightclothes for you,” Kaia promises cheerfully.",
+        "max_topic_prob": 0.5354509353637695,
+        "normalized_position": 0.6163934426229508,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "How to greet.",
+        "max_topic_prob": 0.4389563202857971,
+        "normalized_position": 0.5910905203136136,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 690
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0017348429510591673,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.002771362586605081,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0020696372047723397,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0029069767441860465,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0026519787841697267,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.005776736924277908,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0017424638438752395,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.005567928730512249,
+        "n_sentences": 35
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0003580635920939559,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0001606941989394183,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.00016871941960519654,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0005163955589981926,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0004715868898844612,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00022558087074216106,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 63
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

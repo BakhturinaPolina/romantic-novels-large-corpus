@@ -1,0 +1,164 @@
+{
+  "topic_id": 54,
+  "label": "Ordering Food and Dessert",
+  "taxonomy_main_id": "4.2",
+  "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+  "taxonomy_secondary_id": "8.2",
+  "taxonomy_secondary_name": "Public, Travel & Leisure Spaces",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "cake",
+      "cream",
+      "pie",
+      "butter",
+      "ice",
+      "dessert",
+      "soup",
+      "salad",
+      "bread",
+      "chicken"
+    ],
+    "KeyBERT": [
+      "meal",
+      "eaten",
+      "exquisite",
+      "parties",
+      "pieces",
+      "melted",
+      "tasted",
+      "giggled",
+      "decide",
+      "carved"
+    ],
+    "POS": [
+      "dump",
+      "melted",
+      "enormous",
+      "temperature",
+      "accustomed",
+      "comments",
+      "impressive",
+      "rings",
+      "parties",
+      "exquisite"
+    ],
+    "MMR": [
+      "dump",
+      "melted",
+      "polished",
+      "neatly",
+      "rings",
+      "exquisite",
+      "parties",
+      "eaten",
+      "carved",
+      "sticking"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll have the steak with boiled potatoes and green beans.” “",
+    "we’ll need a hazmat crew to clean up the mess he’ll make with the cake—it’s a two-person job.”",
+    "but i’ll get us some pie anyway.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4993788819875776,
+      "max_topic_prob": 0.5935359001159668,
+      "sentence": "I’ll see what I can find for breakfast in your cupboards."
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2572557876905703,
+      "max_topic_prob": 0.522933840751648,
+      "sentence": "You gonna make me, buttercup?”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.17684923771880293,
+      "max_topic_prob": 0.49821749329566956,
+      "sentence": "Of course, she won’t be needing those for a good long while now that she’s got a bun in the oven."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4997176736307171,
+      "max_topic_prob": 0.4659796357154846,
+      "sentence": "Cereal’s fine and I’ve got plenty of it."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.2574816487859966,
+      "max_topic_prob": 0.45936548709869385,
+      "sentence": "Did you know the cafeteria was serving goulash today?"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6015810276679842,
+      "max_topic_prob": 0.45183929800987244,
+      "sentence": "Delicious, sinfully sweet, incredibly tempting trouble, but trouble nonetheless."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.03920118343195266,
+      "max_topic_prob": 0.6028167009353638,
+      "sentence": "Baby, that was just the appetizer.”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2015532544378698,
+      "max_topic_prob": 0.5932464599609375,
+      "sentence": "Now how about a biscuit?”"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.3293269230769231,
+      "max_topic_prob": 0.5751910209655762,
+      "sentence": "It kind of makes me want pie.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.603180473372781,
+      "max_topic_prob": 0.5656953454017639,
+      "sentence": "Butter, egg, milk."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6033653846153846,
+      "max_topic_prob": 0.5524739027023315,
+      "sentence": "The usual Béchamel ingredients.”"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8221153846153846,
+      "max_topic_prob": 0.5051044225692749,
+      "sentence": "Gloria’s got a big spread planned for brunch.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

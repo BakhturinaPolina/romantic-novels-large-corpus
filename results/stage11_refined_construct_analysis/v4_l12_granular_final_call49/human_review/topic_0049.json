@@ -1,0 +1,162 @@
+{
+  "topic_id": 49,
+  "label": "Drinking at The Bar",
+  "taxonomy_main_id": "8.2",
+  "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "wine",
+      "glass",
+      "sip",
+      "drink",
+      "beer",
+      "bottle",
+      "sipped",
+      "took",
+      "poured",
+      "swig"
+    ],
+    "KeyBERT": [
+      "tasted",
+      "pouring",
+      "lid",
+      "snorted",
+      "consumed",
+      "spilling",
+      "tipped",
+      "remarked",
+      "dangling",
+      "giggled"
+    ],
+    "POS": [
+      "drawled",
+      "remote",
+      "curved",
+      "amusement",
+      "actions",
+      "decision",
+      "waist",
+      "lady"
+    ],
+    "MMR": [
+      "swirled",
+      "pouring",
+      "thoughtfully",
+      "plucked",
+      "drawled",
+      "glued",
+      "dangling",
+      "snorted",
+      "nudged",
+      "hauled"
+    ]
+  },
+  "stage08_snippets": [
+    "avery lifted her own wine and swirled it in the light, her actions casual and her voice low enough so the few patrons assembled around the bar wouldn’t hear. “",
+    "he leaned against the counter and opened it, taking a long drink of the weak ale as he watched thedr�s back.",
+    "he leaned back and drained the last of the wine in his glass."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6826889985086613,
+      "max_topic_prob": 0.7702305316925049,
+      "sentence": "He twisted so he could keep hold of her while gulping down the rest of the wine. “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.02122289778593553,
+      "max_topic_prob": 0.7545102834701538,
+      "sentence": "Nancy asked and handed him the drink. “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6776413903866009,
+      "max_topic_prob": 0.7408786416053772,
+      "sentence": "She handed him the wineglass. “"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.02030515085465183,
+      "max_topic_prob": 0.7276256084442139,
+      "sentence": "He smiled and raised his glass to her."
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8580933807502581,
+      "max_topic_prob": 0.7262420654296875,
+      "sentence": "The bartender plonked down glasses as soon as they walked in and sloshed amber liquor into them. “"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.20924630033268327,
+      "max_topic_prob": 0.7224290370941162,
+      "sentence": "Bailey tipped his drink toward her lips and she took a sip of the scotch."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4575770367243563,
+      "max_topic_prob": 0.6306692957878113,
+      "sentence": "She poured herself a glass of water and smiled when she heard a light tapping sound coming from the wall."
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.07091599831152386,
+      "max_topic_prob": 0.5366261601448059,
+      "sentence": "Give it to him with both barrels,” Lacey said under her breath. “"
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.27689873417721517,
+      "max_topic_prob": 0.7926214933395386,
+      "sentence": "She giggled and took a sip of her wine. “"
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.20119279454722494,
+      "max_topic_prob": 0.7869107723236084,
+      "sentence": "I asked him as he reached for his wine glass and took a huge gulp. “"
+    },
+    {
+      "sid": "BOOK_003_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5093719571567673,
+      "max_topic_prob": 0.774289608001709,
+      "sentence": "She took one last gulp to finish her glass of champagne. “"
+    },
+    {
+      "sid": "BOOK_003_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6056475170399221,
+      "max_topic_prob": 0.753747820854187,
+      "sentence": "He grinned at me, then took a huge gulp of beer. “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

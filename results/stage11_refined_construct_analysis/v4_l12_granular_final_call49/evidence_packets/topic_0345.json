@@ -1,0 +1,711 @@
+{
+  "topic_id": 345,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.4",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "ilsa",
+        "dash",
+        "uncle",
+        "italian",
+        "informant",
+        "confidential",
+        "follow",
+        "asking"
+      ],
+      "KeyBERT": [
+        "revealing",
+        "contrast",
+        "answering",
+        "flinched",
+        "winked",
+        "grumbled",
+        "handled",
+        "opposite",
+        "strangely",
+        "straightened"
+      ],
+      "POS": [
+        "claims",
+        "contrast",
+        "stool",
+        "exchange",
+        "answers",
+        "meal",
+        "porch",
+        "opposite",
+        "decision"
+      ],
+      "MMR": [
+        "claims",
+        "contrast",
+        "grumbled",
+        "stool",
+        "revealing",
+        "answering",
+        "pounded",
+        "straightened",
+        "meal",
+        "enjoying"
+      ]
+    },
+    "stage08_snippets": [
+      "[person] says and then adds, “right.",
+      "mom didn’t talk to me about it, but i’m pretty sure uncle tony would’ve rather handled it a different way, if you know what i mean.” “",
+      "[person] knew that nothing was something, but he had no claims on the boy; in fact, after hearing about jorge’s initiation into sex, it occurred to him that he might be just another older man trading off offers of shelter or a meal or booze in exchange for being fucked senseless."
+    ],
+    "label_public": "Older Man Trading Shelter For Sex"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Steve was a spontaneous kind of guy. “",
+        "max_topic_prob": 0.5201845169067383,
+        "normalized_position": 0.6869679109364768,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 617
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Man, Steve would love to see this.” “",
+        "max_topic_prob": 0.4929678738117218,
+        "normalized_position": 0.842174197773412,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1091
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Steve would laugh and that was all that mattered.",
+        "max_topic_prob": 0.4832969307899475,
+        "normalized_position": 0.7396856581532416,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 778
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Instead of a malfeasant, it was Steve with a loaded pizza and a six-pack of beer—my dream man.",
+        "max_topic_prob": 0.47764667868614197,
+        "normalized_position": 0.787819253438114,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 925
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Oh no Steve.",
+        "max_topic_prob": 0.4719196856021881,
+        "normalized_position": 0.6574983628028814,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 527
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Steve’s job was to close Stan McClousky’s operation and get his drugs off the street.",
+        "max_topic_prob": 0.45069992542266846,
+        "normalized_position": 0.28945645055664704,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 876
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "If Sinestro had been a member of the Soprano Mafia family, he would have been whacked a long time ago.",
+        "max_topic_prob": 0.3762880265712738,
+        "normalized_position": 0.6556206984450675,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Although I still want to know how Tony Stark fits those in-line roller skates inside his Iron Man boots, especially when the armor’s folded up and tucked away in his briefcase, which when you think about it is the source of yet another paradox, because even if you assume some ability to condense the volume of the armor into such a containment, how do you deal with the integral mass?",
+        "max_topic_prob": 0.3486694097518921,
+        "normalized_position": 0.04562834565383635,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The Villain in the Iron Mask: Dr. Doom 1.",
+        "max_topic_prob": 0.33277350664138794,
+        "normalized_position": 0.862095335202651,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Avengers #47–53.",
+        "max_topic_prob": 0.29589030146598816,
+        "normalized_position": 0.9686464440479226,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He contacted the rulers of the antimatter universe, the Weaponers of Qward, and made a deal to help them in their attempt to conquer the matter universe.",
+        "max_topic_prob": 0.2843615710735321,
+        "normalized_position": 0.6546010706092277,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The Villain in the Iron Mask: Dr. Doom Fantastic Four Comics #1–100 (and other issues).",
+        "max_topic_prob": 0.26017066836357117,
+        "normalized_position": 0.9321947489166454,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It seemed like he was just trying to goad Malcolm.",
+        "max_topic_prob": 0.5123700499534607,
+        "normalized_position": 0.3937768240343348,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Malcolm understood that.",
+        "max_topic_prob": 0.4956766963005066,
+        "normalized_position": 0.5831545064377682,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 263
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Malcolm didn’t let his guard down and continued to watch him through the rear window waiting for Peter to attack again.",
+        "max_topic_prob": 0.481927752494812,
+        "normalized_position": 0.1692596566523605,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Malcolm just didn’t understand why they couldn’t see the threat Peter and those like him posed to their entire race.",
+        "max_topic_prob": 0.4778521656990051,
+        "normalized_position": 0.3645386266094421,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Malcolm, please.”",
+        "max_topic_prob": 0.4777204096317291,
+        "normalized_position": 0.34200643776824036,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Malcolm?” “",
+        "max_topic_prob": 0.4770815968513489,
+        "normalized_position": 0.47545600858369097,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Tony?”",
+        "max_topic_prob": 0.8266516327857971,
+        "normalized_position": 0.7794117647058824,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Tony?”",
+        "max_topic_prob": 0.8266515731811523,
+        "normalized_position": 0.2914705882352941,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You think Tony is the father of the baby, don’t you?” “",
+        "max_topic_prob": 0.7353794574737549,
+        "normalized_position": 0.7802941176470588,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Anyway, I swear I was only with one of those guys—just Tony.",
+        "max_topic_prob": 0.7303751707077026,
+        "normalized_position": 0.6573529411764706,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I’m sorry, really, and I don’t mean to pry, but I just don’t understand why you’re here and Tony isn’t.” “",
+        "max_topic_prob": 0.7289077043533325,
+        "normalized_position": 0.779264705882353,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I mean, sure, we messed around some, but I was only with-with Tony.” “",
+        "max_topic_prob": 0.7213356494903564,
+        "normalized_position": 0.2867647058823529,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "And have him face Malcolm afterwards?”",
+        "max_topic_prob": 0.4741077423095703,
+        "normalized_position": 0.6482967448902347,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I thought you of all people would understand that, Malcolm.” “",
+        "max_topic_prob": 0.4631054401397705,
+        "normalized_position": 0.35034065102195305,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Malcolm thought you would at least enjoy the car, even if it didn’t go very fast.",
+        "max_topic_prob": 0.42971745133399963,
+        "normalized_position": 0.053444360333081,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 336
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Malcolm used to be extremely selfish and egotistical.",
+        "max_topic_prob": 0.424411803483963,
+        "normalized_position": 0.7009841029523088,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Malcolm is supposed to take over the Watchers, so I should be making the transition just in time.”",
+        "max_topic_prob": 0.42000752687454224,
+        "normalized_position": 0.8493565480696442,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Malcolm put a governor on the speed limit.”",
+        "max_topic_prob": 0.359993040561676,
+        "normalized_position": 0.05162755488266465,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Tony surveyed the curious beast with disapproval.",
+        "max_topic_prob": 0.6292349100112915,
+        "normalized_position": 0.6626168224299065,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It represents part of the process of Tony assuming the patriarch’s role as the “executive” of the family’s business.",
+        "max_topic_prob": 0.5610817670822144,
+        "normalized_position": 0.5889018691588785,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "The explanation of the hold-out device doesn’t come until the end of the story, leaving both Tony and the reader in suspense until the final scene.",
+        "max_topic_prob": 0.5529433488845825,
+        "normalized_position": 0.6621495327102803,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "A subplot related to the Executive Game involves one of Tony’s friends joining and losing more than he can afford.",
+        "max_topic_prob": 0.46391233801841736,
+        "normalized_position": 0.5893691588785047,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Kerr, Peter. “",
+        "max_topic_prob": 0.45595797896385193,
+        "normalized_position": 0.9216121495327103,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Another member of the crime family, Richie Aprile (David Proval), likewise hosts a regular game, as does Christopher Moltisanti (Michael Imperioli), Tony’s protégé.",
+        "max_topic_prob": 0.4345567524433136,
+        "normalized_position": 0.5892523364485981,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Stefano spoke up. “",
+        "max_topic_prob": 0.565483570098877,
+        "normalized_position": 0.18153846153846154,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Stefano gathered himself. “",
+        "max_topic_prob": 0.5466858148574829,
+        "normalized_position": 0.5076923076923077,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And there stood Stefano.",
+        "max_topic_prob": 0.532749354839325,
+        "normalized_position": 0.6114529914529915,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Stefano started the car. “",
+        "max_topic_prob": 0.5299313068389893,
+        "normalized_position": 0.5064957264957265,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Stefano held his place.",
+        "max_topic_prob": 0.5258870124816895,
+        "normalized_position": 0.0905982905982906,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "It was Stefano.",
+        "max_topic_prob": 0.5225236415863037,
+        "normalized_position": 0.785982905982906,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Anthony teased. “",
+        "max_topic_prob": 0.5561391711235046,
+        "normalized_position": 0.8688248187489462,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Anthony teased. “",
+        "max_topic_prob": 0.5561391115188599,
+        "normalized_position": 0.6310908784353397,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Anthony teased. “",
+        "max_topic_prob": 0.5561391115188599,
+        "normalized_position": 0.8674759736975215,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "What does Steve think of this?” “",
+        "max_topic_prob": 0.547026515007019,
+        "normalized_position": 0.5491485415612881,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Anthony quipped. “",
+        "max_topic_prob": 0.5401900410652161,
+        "normalized_position": 0.8755690440060698,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Anthony was beginning to understand that.",
+        "max_topic_prob": 0.5370107889175415,
+        "normalized_position": 0.9384589445287472,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 189
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0026906878802058962,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0009114385538508279,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.005248284214775939,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.003549770743972785,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.007714726555803189,
+        "n_sentences": 45
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.003215978334461747,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0017843487127198571,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003956478733926805,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 48
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.4",
+    "taxonomy_main_name": "Unwanted or Coercive Sexual Contact",
+    "taxonomy_secondary_id": "6.4",
+    "taxonomy_secondary_name": "Economic Precarity, Security & Dependency",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

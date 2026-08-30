@@ -1,0 +1,163 @@
+{
+  "topic_id": 129,
+  "label": "Accused of Not Caring",
+  "taxonomy_main_id": "4.4",
+  "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+  "taxonomy_secondary_id": "3.2",
+  "taxonomy_secondary_name": "Negative Emotions & Distress",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "care",
+      "cared",
+      "cares",
+      "caring",
+      "about",
+      "don",
+      "less",
+      "didn",
+      "anyone",
+      "do"
+    ],
+    "KeyBERT": [
+      "cared",
+      "mattered",
+      "sadly",
+      "unhappy",
+      "wondering",
+      "experience",
+      "involved",
+      "honestly",
+      "period",
+      "extremely"
+    ],
+    "POS": [
+      "unhappy",
+      "period",
+      "circumstances",
+      "veins",
+      "process",
+      "worst",
+      "upset",
+      "places",
+      "experience"
+    ],
+    "MMR": [
+      "cared",
+      "claims",
+      "smacked",
+      "treated",
+      "circumstances",
+      "veins",
+      "repeated",
+      "fault",
+      "experience",
+      "expect"
+    ]
+  },
+  "stage08_snippets": [
+    "like they care when they see that smoking-hot bod you’ve got.”",
+    "at the moment, i could’ve cared less.",
+    "you’ve never cared for anyone but yourself.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8811349693251533,
+      "max_topic_prob": 0.6936802864074707,
+      "sentence": "Did he care?"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7216257668711656,
+      "max_topic_prob": 0.6383713483810425,
+      "sentence": "Did she care?"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.21595092024539878,
+      "max_topic_prob": 0.6187549233436584,
+      "sentence": "I don't care what any of you say."
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6537140149271413,
+      "max_topic_prob": 0.7282957434654236,
+      "sentence": "Like you care.”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.1421632507996683,
+      "max_topic_prob": 0.7243624925613403,
+      "sentence": "Hey, not caring didn’t mean not asking."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6123682028195712,
+      "max_topic_prob": 0.6972882151603699,
+      "sentence": "How—why—oh, I don’t care.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9393436796588082,
+      "max_topic_prob": 0.629932701587677,
+      "sentence": "She wondered why she cared. “"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.07961142044781425,
+      "max_topic_prob": 0.5863685607910156,
+      "sentence": "Lukas didn’t care about her, and she… cared too much."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.3376146788990826,
+      "max_topic_prob": 0.6117395162582397,
+      "sentence": "Sir, I don’t think that’s—” “I don’t care what you think."
+    },
+    {
+      "sid": "BOOK_003_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7761467889908257,
+      "max_topic_prob": 0.5655171871185303,
+      "sentence": "I don’t care about that kind of stuff,” Zander assured him. “"
+    },
+    {
+      "sid": "BOOK_004_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.06337622431342424,
+      "max_topic_prob": 0.7061275243759155,
+      "sentence": "I don’t expect you to understand what it is to care about someone else.”"
+    },
+    {
+      "sid": "BOOK_004_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.12886498943729593,
+      "max_topic_prob": 0.687711238861084,
+      "sentence": "He cares about you."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

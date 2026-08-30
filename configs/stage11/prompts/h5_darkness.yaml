@@ -1,0 +1,82 @@
+# Frozen H5 darkness vs tenderness prompts (focused boundaries).
+
+hypothesis: H5
+name: darkness_tenderness
+version: "1.0"
+frozen: true
+
+dimensions:
+  - main_couple
+  - darkness_domain
+  - threat_source
+  - distress_source
+  - relational_function
+
+codes:
+  - id: D0
+    label: off_target
+  - id: D1
+    label: relational_darkness
+  - id: D2
+    label: partner_harm_control
+  - id: D3
+    label: external_danger_crisis
+  - id: D4
+    label: individual_distress
+  - id: D5
+    label: tenderness_comfort
+  - id: D6
+    label: mixed_or_unclear
+
+constructs:
+  RAX_relational_darkness: [D1, D2]
+  RAX_partner_harm_control: [D2]
+  RAX_external_danger_crisis: [D3]
+  RAX_individual_distress: [D4]
+  RAX_tenderness_core: [D5]
+
+guidance: |
+  Score dimensions independently. Do not force a single label first.
+  Tenderness must be valid emotional/comfort/affection — not every 4.6 care topic.
+  Analyze external danger separately from relational darkness.
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+phrasing:
+  primary:
+    system: |
+      You code darkness-domain and tenderness for romance topics.
+      Separate relational darkness, partner harm, external crisis, and individual distress.
+      JSON only. Ratings hidden.
+    pass_a: |
+      Lexical H5 coding for topic {topic_id}.
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      JSON: per_rep, consensus_code, darkness_domain, threat_source, distress_source, rationale.
+    pass_b: |
+      Contextual H5 coding for topic {topic_id}:
+      {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code, main_couple, dimensions, rationale.
+    pass_c: |
+      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+
+  alternate:
+    system: |
+      Darkness/tenderness auditor. Independent dimensions; external danger is not relational darkness.
+      JSON only.
+    pass_a: |
+      Keywords {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+    pass_b: |
+      Sentences {topic_id}:
+      {sentences_block}
+    pass_c: |
+      Adjudicate {topic_id} tax={taxonomy_id}/{taxonomy_name}. Action + darkness_code.

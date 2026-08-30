@@ -1,0 +1,164 @@
+{
+  "topic_id": 3,
+  "label": "Demanding An Explanation",
+  "taxonomy_main_id": "4.4",
+  "taxonomy_main_name": "Conflict, Distance & Breakup Threats",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "know",
+      "tell",
+      "don",
+      "understand",
+      "ask",
+      "you",
+      "explain",
+      "say",
+      "wrong",
+      "mean"
+    ],
+    "KeyBERT": [
+      "admit",
+      "reveal",
+      "brief",
+      "sir",
+      "realise",
+      "remark",
+      "harshly",
+      "mister",
+      "speaking",
+      "assure"
+    ],
+    "POS": [
+      "extent",
+      "answers",
+      "percent",
+      "remark",
+      "folks",
+      "explanation",
+      "commander",
+      "results",
+      "sorts",
+      "difference"
+    ],
+    "MMR": [
+      "extent",
+      "percent",
+      "prompted",
+      "remark",
+      "drawled",
+      "explanation",
+      "commander",
+      "results",
+      "sorts",
+      "crowded"
+    ]
+  },
+  "stage08_snippets": [
+    "and you have no idea what we’ve seen, what we’ve done— you’ve been in your cosy little world and you just have no—damned— clue! ’",
+    "sophia, i’ve something to tell you.” “",
+    "i’ve told them that already.’ ‘"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6346408109299251,
+      "max_topic_prob": 0.6021373867988586,
+      "sentence": "Tell me something.’"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8924636403702071,
+      "max_topic_prob": 0.5762536525726318,
+      "sentence": "I know that now.’"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8851917144116351,
+      "max_topic_prob": 0.5448830127716064,
+      "sentence": "No—no, I don’t admit that.’"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.7139709122961657,
+      "max_topic_prob": 0.5441159009933472,
+      "sentence": "Tell me!’"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9336712208021155,
+      "max_topic_prob": 0.5441159009933472,
+      "sentence": "Tell me!’"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9347730277655355,
+      "max_topic_prob": 0.5441159009933472,
+      "sentence": "Tell me!’"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3994840611756035,
+      "max_topic_prob": 0.6817474365234375,
+      "sentence": "Well, you know what I mean.” “"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8606965174129353,
+      "max_topic_prob": 0.6801749467849731,
+      "sentence": "I demanded to know. “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8022848719366132,
+      "max_topic_prob": 0.6659899950027466,
+      "sentence": "You don’t know that.” “"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4363368343467846,
+      "max_topic_prob": 0.6499048471450806,
+      "sentence": "I’ll tell you whatever you want to know.”"
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.48313985627418465,
+      "max_topic_prob": 0.6464869976043701,
+      "sentence": "I’m not sure.” “"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.10521466740372214,
+      "max_topic_prob": 0.6408753395080566,
+      "sentence": "How do you know that?” “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

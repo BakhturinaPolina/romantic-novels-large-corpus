@@ -1,0 +1,728 @@
+{
+  "topic_id": 241,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "charge",
+        "alfred",
+        "wasn",
+        "roarke",
+        "decided",
+        "uncle",
+        "parent",
+        "finding",
+        "fit"
+      ],
+      "KeyBERT": [
+        "insulted",
+        "insisted",
+        "behavior"
+      ],
+      "POS": [
+        "typical",
+        "stops",
+        "leads",
+        "repeat",
+        "exchange",
+        "attractive",
+        "smaller",
+        "behavior",
+        "disappointed",
+        "growl"
+      ],
+      "MMR": [
+        "insulted",
+        "pout",
+        "leads",
+        "emotionally",
+        "dealing",
+        "behavior",
+        "growl",
+        "ex",
+        "meal",
+        "wound"
+      ]
+    },
+    "stage08_snippets": [
+      "it’s the first time i’ve known it,” [person] said. “",
+      "i ’ ve asked [person] to keep watch over julie and [person].",
+      "i’ve already told this to jason, the stubborn idiot!” “"
+    ],
+    "label_public": "Calling Someone A Stubborn Idiot"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Try to focus on Jason.”",
+        "max_topic_prob": 0.7877474427223206,
+        "normalized_position": 0.14290237467018468,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He’s got to find out who killed Jason.” “",
+        "max_topic_prob": 0.7791391611099243,
+        "normalized_position": 0.13868073878627968,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Did Jason seem concerned about anything?",
+        "max_topic_prob": 0.7765320539474487,
+        "normalized_position": 0.14427440633245384,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jason is dead.",
+        "max_topic_prob": 0.764446496963501,
+        "normalized_position": 0.1395250659630607,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You can tell me about Jason’s affair.",
+        "max_topic_prob": 0.7555181980133057,
+        "normalized_position": 0.17403693931398417,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yes, I know it wasn’t one of Jason’s.",
+        "max_topic_prob": 0.7289139032363892,
+        "normalized_position": 0.17509234828496043,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Kay could go with him.",
+        "max_topic_prob": 0.4997451603412628,
+        "normalized_position": 0.1913148107635091,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He and Kay were never meant to be and, the sooner he put the whole thing behind him, the better.",
+        "max_topic_prob": 0.49046218395233154,
+        "normalized_position": 0.8173266243710348,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I was with Kay.",
+        "max_topic_prob": 0.4799642860889435,
+        "normalized_position": 0.5583023408444542,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Kay said.",
+        "max_topic_prob": 0.47704070806503296,
+        "normalized_position": 0.20072194268212645,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Kay said.",
+        "max_topic_prob": 0.47704070806503296,
+        "normalized_position": 0.2048785823670969,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Kay said.",
+        "max_topic_prob": 0.47704070806503296,
+        "normalized_position": 0.23485014220083134,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Why didn’t you tell me Chaz was going to be the one coming over?” “",
+        "max_topic_prob": 0.46224215626716614,
+        "normalized_position": 0.25858310626702996,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I guess my brother gave him a shove and tried to walk away, but Chaz took a swing and Judd hit back out of habit.",
+        "max_topic_prob": 0.4301757216453552,
+        "normalized_position": 0.6325613079019073,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I think, while Chaz might not step back, at least he realizes that Judd must be serious about you.",
+        "max_topic_prob": 0.4211285412311554,
+        "normalized_position": 0.6331062670299727,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Stupid Chaz followed him out and started telling Judd that he better not be playing with you.",
+        "max_topic_prob": 0.4131908714771271,
+        "normalized_position": 0.6322888283378747,
+        "tertile": "middle",
+        "chapter_index": 36,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "In a funny twist of fate, Chaz was cast as one of the clowns.",
+        "max_topic_prob": 0.3970288932323456,
+        "normalized_position": 0.65858310626703,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Maybe Chaz took the first swing and Judd merely defended himself.",
+        "max_topic_prob": 0.3794962763786316,
+        "normalized_position": 0.579700272479564,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Jason snapped as he was suddenly grabbed by two cops and shoved to his knees next to Trevor. “",
+        "max_topic_prob": 0.6421552300453186,
+        "normalized_position": 0.9954999021717863,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Jason nodded as he looked over his notes. “",
+        "max_topic_prob": 0.6374567151069641,
+        "normalized_position": 0.27450596752103307,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Without looking up from his notes, Danny pointed out, “Jason had to kidnap Haley to get her to marry him and even then she only did it out of pity and didn’t Zoe marry you because she lost a bet?”",
+        "max_topic_prob": 0.6166776418685913,
+        "normalized_position": 0.27235374682058305,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Not yet,” Jason pointed out. “",
+        "max_topic_prob": 0.6062989830970764,
+        "normalized_position": 0.045783603991391114,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I’m glad that you do,” he said, glad that this bullshit was over wi- “She’s definitely your future wife,” Jason said, chuckling and pissing him off. “",
+        "max_topic_prob": 0.6026799082756042,
+        "normalized_position": 0.03052240266092741,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I see,” Jason said, sounding amused. “",
+        "max_topic_prob": 0.5973480939865112,
+        "normalized_position": 0.030326746233613776,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I know Chaloner will agree.",
+        "max_topic_prob": 0.2822555899620056,
+        "normalized_position": 0.8161658574990158,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Jax crushed the thought.",
+        "max_topic_prob": 0.5003206729888916,
+        "normalized_position": 0.17366172405126917,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Jesus, Jax.",
+        "max_topic_prob": 0.4889907240867615,
+        "normalized_position": 0.4568987182709223,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Jax shut down that thought hard. “",
+        "max_topic_prob": 0.4859498143196106,
+        "normalized_position": 0.7021864790148279,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Yeah, Jax.",
+        "max_topic_prob": 0.470400333404541,
+        "normalized_position": 0.985423473234481,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "His brother was a PR master and Jax admired his confidence, but Donovan hadn’t been back at Morrow long.",
+        "max_topic_prob": 0.46779054403305054,
+        "normalized_position": 0.46644885649660717,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Jax said before anyone could move. “",
+        "max_topic_prob": 0.46339279413223267,
+        "normalized_position": 0.3862779592862528,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Strange as it seemed, the moment he met Shay, Jaylynn had gone from being his ex to someone he once knew way back when.",
+        "max_topic_prob": 0.5149425268173218,
+        "normalized_position": 0.728021978021978,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "He should have told Shay about Jaylynn being a possible threat.",
+        "max_topic_prob": 0.5121320486068726,
+        "normalized_position": 0.7277930402930403,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Jaylynn appeared on-screen.",
+        "max_topic_prob": 0.4854680299758911,
+        "normalized_position": 0.3819826007326007,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Yet Shay was the last person with whom he wanted to use that kind of manipulative bullshit.",
+        "max_topic_prob": 0.46980780363082886,
+        "normalized_position": 0.636790293040293,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "If so, Jaylynn was about to be hit with a shitload of trouble.",
+        "max_topic_prob": 0.46301698684692383,
+        "normalized_position": 0.3755723443223443,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Dear God, don’t let Shay be in there.",
+        "max_topic_prob": 0.4546656906604767,
+        "normalized_position": 0.9178113553113553,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Jase didn’t back away, though.",
+        "max_topic_prob": 0.6368103623390198,
+        "normalized_position": 0.13336331946474755,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Made Jase wonder who was there.",
+        "max_topic_prob": 0.630447268486023,
+        "normalized_position": 0.5333408298661869,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Just what Jase wanted to hear.",
+        "max_topic_prob": 0.625630259513855,
+        "normalized_position": 0.7720679185876532,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "So Jase had done what he could.",
+        "max_topic_prob": 0.6203850507736206,
+        "normalized_position": 0.8655122006072191,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But this was Jase.",
+        "max_topic_prob": 0.6163341999053955,
+        "normalized_position": 0.8908129989879681,
+        "tertile": "end",
+        "chapter_index": 60,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Or so Jase had heard during the commotion afterward.",
+        "max_topic_prob": 0.6152056455612183,
+        "normalized_position": 0.07736421904868998,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You know Jason, Neha.”",
+        "max_topic_prob": 0.719100296497345,
+        "normalized_position": 0.3650974699294898,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jason would’ve got word to us if anything was wrong.”",
+        "max_topic_prob": 0.7184832096099854,
+        "normalized_position": 0.4106180008295313,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I’m pretty sure he wants to be Jason when he grows up.",
+        "max_topic_prob": 0.7138845920562744,
+        "normalized_position": 0.09062629614267939,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Yes, I know Jason.",
+        "max_topic_prob": 0.6897114515304565,
+        "normalized_position": 0.36530485275819163,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jason made me practice that,” he said in the same cool voice as earlier. “",
+        "max_topic_prob": 0.6796794533729553,
+        "normalized_position": 0.5143094151804231,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jason got word to me before dawn this morning.” “",
+        "max_topic_prob": 0.6664808988571167,
+        "normalized_position": 0.3603276648693488,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Ace and Christian seemed to vibrate with barely leashed power.",
+        "max_topic_prob": 0.38982152938842773,
+        "normalized_position": 0.1015502134351831,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 904
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0030334728033472804,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0010978454782489364,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.003978516013526954,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.026999548124717578,
+        "n_sentences": 239
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.005635300372142478,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0022721534965917697,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0024341668510732464,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.0010347206254311336,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00011350737797956867,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0001320829480914014,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 50
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.6",
+    "taxonomy_main_name": "Character Appearance & Self-Presentation",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

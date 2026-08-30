@@ -1,0 +1,965 @@
+{
+  "topic_id": 49,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "8.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "wine",
+        "glass",
+        "sip",
+        "drink",
+        "beer",
+        "bottle",
+        "sipped",
+        "took",
+        "poured",
+        "swig"
+      ],
+      "KeyBERT": [
+        "tasted",
+        "pouring",
+        "lid",
+        "snorted",
+        "consumed",
+        "spilling",
+        "tipped",
+        "remarked",
+        "dangling",
+        "giggled"
+      ],
+      "POS": [
+        "drawled",
+        "remote",
+        "curved",
+        "amusement",
+        "actions",
+        "decision",
+        "waist",
+        "lady"
+      ],
+      "MMR": [
+        "swirled",
+        "pouring",
+        "thoughtfully",
+        "plucked",
+        "drawled",
+        "glued",
+        "dangling",
+        "snorted",
+        "nudged",
+        "hauled"
+      ]
+    },
+    "stage08_snippets": [
+      "avery lifted her own wine and swirled it in the light, her actions casual and her voice low enough so the few patrons assembled around the bar wouldn’t hear. “",
+      "he leaned against the counter and opened it, taking a long drink of the weak ale as he watched thedr�s back.",
+      "he leaned back and drained the last of the wine in his glass."
+    ],
+    "label_public": "Drinking at The Bar"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He twisted so he could keep hold of her while gulping down the rest of the wine. “",
+        "max_topic_prob": 0.7702305316925049,
+        "normalized_position": 0.6826889985086613,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Nancy asked and handed him the drink. “",
+        "max_topic_prob": 0.7545102834701538,
+        "normalized_position": 0.02122289778593553,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She handed him the wineglass. “",
+        "max_topic_prob": 0.7408786416053772,
+        "normalized_position": 0.6776413903866009,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He smiled and raised his glass to her.",
+        "max_topic_prob": 0.7276256084442139,
+        "normalized_position": 0.02030515085465183,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "The bartender plonked down glasses as soon as they walked in and sloshed amber liquor into them. “",
+        "max_topic_prob": 0.7262420654296875,
+        "normalized_position": 0.8580933807502581,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Bailey tipped his drink toward her lips and she took a sip of the scotch.",
+        "max_topic_prob": 0.7224290370941162,
+        "normalized_position": 0.20924630033268327,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She poured herself a glass of water and smiled when she heard a light tapping sound coming from the wall.",
+        "max_topic_prob": 0.6306692957878113,
+        "normalized_position": 0.4575770367243563,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Give it to him with both barrels,” Lacey said under her breath. “",
+        "max_topic_prob": 0.5366261601448059,
+        "normalized_position": 0.07091599831152386,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She giggled and took a sip of her wine. “",
+        "max_topic_prob": 0.7926214933395386,
+        "normalized_position": 0.27689873417721517,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I asked him as he reached for his wine glass and took a huge gulp. “",
+        "max_topic_prob": 0.7869107723236084,
+        "normalized_position": 0.20119279454722494,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She took one last gulp to finish her glass of champagne. “",
+        "max_topic_prob": 0.774289608001709,
+        "normalized_position": 0.5093719571567673,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He grinned at me, then took a huge gulp of beer. “",
+        "max_topic_prob": 0.753747820854187,
+        "normalized_position": 0.6056475170399221,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I giggled as I took another swig of my wine. “",
+        "max_topic_prob": 0.7408686876296997,
+        "normalized_position": 0.09907497565725414,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Luc got up from the table to grab the bottle of wine. “",
+        "max_topic_prob": 0.7260221242904663,
+        "normalized_position": 0.19741966893865628,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She sighed and stirred the top of her drink with a straw. “",
+        "max_topic_prob": 0.7541226148605347,
+        "normalized_position": 0.7020396098137748,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I picked up a glass of wine that had been poured for me already and took a sip.",
+        "max_topic_prob": 0.7476064562797546,
+        "normalized_position": 0.3062370676913982,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I picked up my beer for a gulp, then licked my lips. “",
+        "max_topic_prob": 0.7300676107406616,
+        "normalized_position": 0.19036358261897723,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Brooklyn smiled coyly, taking a sip of her drink. “",
+        "max_topic_prob": 0.7196409702301025,
+        "normalized_position": 0.1888856044930535,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Brooklyn’s hands clasped around her mug the moment it arrived on the table, held it up to her mouth, blew a bit and took a sip. “",
+        "max_topic_prob": 0.715393602848053,
+        "normalized_position": 0.6979012710611883,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "As you said,” I murmured, clinking her glass with the neck of my bottle. “",
+        "max_topic_prob": 0.7062338590621948,
+        "normalized_position": 0.19804906887378068,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He took a long and satisfying sip of his wine. “",
+        "max_topic_prob": 0.8134130239486694,
+        "normalized_position": 0.2977728897442947,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Sarah handed him a glass, and he drank in quick, greedy gulps. “",
+        "max_topic_prob": 0.7881805896759033,
+        "normalized_position": 0.8292548803959308,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "First, she took a big gulp of wine, finishing the contents of her glass, and poured another.",
+        "max_topic_prob": 0.7813080549240112,
+        "normalized_position": 0.3067088259554578,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Sarah took another sip of wine. “",
+        "max_topic_prob": 0.7744596004486084,
+        "normalized_position": 0.29914764916139674,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She picked up the wide-mouthed, round glass to take a sip, when Greg coughed a little and lifted his glass to her.",
+        "max_topic_prob": 0.7259669303894043,
+        "normalized_position": 0.2957107506186417,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He smiled and gave her glass a gentle tap with his.",
+        "max_topic_prob": 0.7160004377365112,
+        "normalized_position": 0.29612317844377234,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She walks out and hands me a glass of wine. “",
+        "max_topic_prob": 0.7111045122146606,
+        "normalized_position": 0.8631209072033221,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I pour more wine into our glasses, filling mine to the top, then place Jodi’s on the counter where she can reach it. “",
+        "max_topic_prob": 0.6493388414382935,
+        "normalized_position": 0.8659958473087366,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He wants water,” Chris calls out. “",
+        "max_topic_prob": 0.49354419112205505,
+        "normalized_position": 0.9881808017888516,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Rob starts flipping a quarter while Richie looks in the cabinet for a glass. “",
+        "max_topic_prob": 0.483342707157135,
+        "normalized_position": 0.002076345631688229,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Jodi is putting the last few glasses in the dishwasher.",
+        "max_topic_prob": 0.4179353415966034,
+        "normalized_position": 0.08528988979396263,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He stopped to pour himself a glass of dark liquid. “",
+        "max_topic_prob": 0.7155956029891968,
+        "normalized_position": 0.8015161957270848,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He saw Ty’s head perk up from where he was sitting, pouring over tablets at his console, and knew he had been listening intently.",
+        "max_topic_prob": 0.5048808455467224,
+        "normalized_position": 0.899724328049621,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I took another sip of wine. “",
+        "max_topic_prob": 0.7985552549362183,
+        "normalized_position": 0.15195520121488232,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I sipped. “",
+        "max_topic_prob": 0.7763810157775879,
+        "normalized_position": 0.44238800303720577,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She poured a heavy measure of whiskey into a glass, quickly swallowed some of the liquor before turning to face her best friend. “",
+        "max_topic_prob": 0.7472059726715088,
+        "normalized_position": 0.9338458618071375,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She took my glass and sipped.",
+        "max_topic_prob": 0.744138240814209,
+        "normalized_position": 0.6105732725892179,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Her hand clutched the whiskey, and she finally brought the tumbler to her lips. “",
+        "max_topic_prob": 0.7385334372520447,
+        "normalized_position": 0.9029043280182233,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She tapped the empty whiskey glass against the surface of the bar. “",
+        "max_topic_prob": 0.7235890626907349,
+        "normalized_position": 0.9482725892179195,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She sat in the same seat, sipping the same drink and watching James play his trumpet.",
+        "max_topic_prob": 0.5065010786056519,
+        "normalized_position": 0.24140625,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She smiled and held up her drink. “",
+        "max_topic_prob": 0.7984684705734253,
+        "normalized_position": 0.0920056648923182,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Donovan reached for his glass of wine, took a long sip and then smiled at her. “",
+        "max_topic_prob": 0.7875369787216187,
+        "normalized_position": 0.5212189285539874,
+        "tertile": "middle",
+        "chapter_index": 70,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He nodded and downed the remainder of his drink. “",
+        "max_topic_prob": 0.7603405714035034,
+        "normalized_position": 0.6093177711578844,
+        "tertile": "middle",
+        "chapter_index": 78,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "He took a swig of beer. “",
+        "max_topic_prob": 0.7535333633422852,
+        "normalized_position": 0.2694730673438492,
+        "tertile": "begin",
+        "chapter_index": 30,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Stu asked, swallowing down the drink, since she’d dismissed him. “",
+        "max_topic_prob": 0.7480856776237488,
+        "normalized_position": 0.17844410802363628,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The idea of it had him tightening his fist around the beer bottle until he finally took his hand away before the glass could fragment. “",
+        "max_topic_prob": 0.7344773411750793,
+        "normalized_position": 0.6619133662157543,
+        "tertile": "middle",
+        "chapter_index": 85,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "He took two sips and set it aside. “",
+        "max_topic_prob": 0.7696956396102905,
+        "normalized_position": 0.9477924089852827,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "He waited as she approached, his eyes drinking her in. “",
+        "max_topic_prob": 0.7682863473892212,
+        "normalized_position": 0.9714949651432998,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "He got up and pulled a drink from the fridge behind her, more from a need to get closer to her than because of any great thirst. “",
+        "max_topic_prob": 0.6560386419296265,
+        "normalized_position": 0.686289697908598,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Hoping it didn’t look too obvious, she drank him in.",
+        "max_topic_prob": 0.6442407369613647,
+        "normalized_position": 0.945158791634392,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She grabbed two bottles of water and was about to reach for her keys when her cell rang. “",
+        "max_topic_prob": 0.6198115944862366,
+        "normalized_position": 0.09403563129357087,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "She plopped a grape into her mouth, suddenly ravenous, and for the next two songs, was content to listen and eat.",
+        "max_topic_prob": 0.5571135878562927,
+        "normalized_position": 0.2345468628969791,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jack reached for the bottle and topped off his glass. “",
+        "max_topic_prob": 0.7834336757659912,
+        "normalized_position": 0.19973607314544256,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She took another swill of her drink, then downed the rest of it and placed the empty glass on a tray. “",
+        "max_topic_prob": 0.7513760328292847,
+        "normalized_position": 0.14723348100669242,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He picked up the bottle and stood. “",
+        "max_topic_prob": 0.7358289957046509,
+        "normalized_position": 0.20840795550947308,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Jack took a long, burning sip straight from the bottle. “",
+        "max_topic_prob": 0.7205490469932556,
+        "normalized_position": 0.9167687812234895,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 335
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He lowered his drink.",
+        "max_topic_prob": 0.7121176719665527,
+        "normalized_position": 0.12055801677820718,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "The waitress set down a glass of wine in front of her, and she stared at it for a second before downing half of it in one gulp.",
+        "max_topic_prob": 0.6933093667030334,
+        "normalized_position": 0.6289942501649542,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She laughed as she snatched the bottle of beer from my hand. “",
+        "max_topic_prob": 0.725553035736084,
+        "normalized_position": 0.06217384821827941,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Mel asked after I’d taken a couple of sips. “",
+        "max_topic_prob": 0.6238556504249573,
+        "normalized_position": 0.8327120918443417,
+        "tertile": "end",
+        "chapter_index": 55,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Trevor handed me another beer, saving the witch from being dropped on the floor for at least a few more minutes. “",
+        "max_topic_prob": 0.6229953765869141,
+        "normalized_position": 0.056955419710749966,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Taking a small sip, he let it run over his tongue and then spit it out, waiting for any possible ill effects.",
+        "max_topic_prob": 0.669350802898407,
+        "normalized_position": 0.14972469292672597,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She handed it back to him with a snort. \"",
+        "max_topic_prob": 0.6496431827545166,
+        "normalized_position": 0.19250317662007624,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "They arrived at the stream and Heather fell gratefully to her knees to drink.",
+        "max_topic_prob": 0.5364344716072083,
+        "normalized_position": 0.18106734434561628,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Brock stood up and shook the pine needles out of his fur, then trotted over to the stream for a drink.",
+        "max_topic_prob": 0.5092681646347046,
+        "normalized_position": 0.15586615840745446,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He shrugged and reached for his beer. \"",
+        "max_topic_prob": 0.7658190131187439,
+        "normalized_position": 0.5355980736691397,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He took a sip of his own beer and nudged her, tried to smile.",
+        "max_topic_prob": 0.7586706876754761,
+        "normalized_position": 0.3191461668619029,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She reached for the flat champagne and brought the glass to her mouth, taking a long swallow in hopes the liquid would cool her off.",
+        "max_topic_prob": 0.7450290322303772,
+        "normalized_position": 0.5493947676688793,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her mom took a small sip, watching her over the rim of the glass. \"",
+        "max_topic_prob": 0.7372103929519653,
+        "normalized_position": 0.9019914096056229,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He reached for the pitcher of beer and poured a fresh cup, glancing over at Melanie.",
+        "max_topic_prob": 0.7329285144805908,
+        "normalized_position": 0.5266172068202525,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He took a long swallow of beer, brushed the back of his hand across his mouth, and shook his head. \"",
+        "max_topic_prob": 0.7319989800453186,
+        "normalized_position": 0.5281790967070155,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 123
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.006402717888409774,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.00580511402902557,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0066155321188878236,
+        "n_sentences": 69
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.005304537273846737,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.005357142857142857,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.006379585326953748,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.005366285939346199,
+        "n_sentences": 109
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0074159907300115875,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0007830853563038371,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0008020532563362208,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0008505209440782479,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00045092439500977,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0012459118517364897,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0008536064874093043,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0006949270326615705,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "8.2",
+    "taxonomy_main_name": "Public, Travel & Leisure Spaces",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

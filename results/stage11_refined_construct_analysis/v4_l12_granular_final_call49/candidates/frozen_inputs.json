@@ -1,0 +1,30 @@
+{
+  "run_id": "v4_l12_granular_final_call49",
+  "topic_lookup": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage10_correlation_analysis/v4_l12_granular_final_call49/taxonomy_radway_eda/topic_lookup.parquet",
+  "n_audited_topics": 177,
+  "h2_topic_ids": [
+    29,
+    61,
+    62,
+    65,
+    128,
+    157,
+    167,
+    204,
+    242,
+    305
+  ],
+  "h2_n": 10,
+  "empty_leaves": [
+    "2.4",
+    "6.1a",
+    "6.7"
+  ],
+  "exhaustive_topic_ids": [
+    61,
+    167,
+    293,
+    315
+  ],
+  "integrity_ok": true
+}

@@ -1,0 +1,699 @@
+{
+  "topic_id": 175,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "mr",
+        "bingley",
+        "miss",
+        "georgiana",
+        "bennet",
+        "pemberley"
+      ],
+      "KeyBERT": [
+        "dared",
+        "kindly",
+        "concerned",
+        "affection",
+        "stumbled",
+        "injured",
+        "worrying",
+        "uncomfortably",
+        "longing",
+        "struggling"
+      ],
+      "POS": [
+        "passionate",
+        "addition",
+        "distress",
+        "value",
+        "remote",
+        "parties",
+        "warming",
+        "sized",
+        "exciting",
+        "behavior"
+      ],
+      "MMR": [
+        "kindly",
+        "uncomfortably",
+        "passionate",
+        "addition",
+        "thoughtfully",
+        "encouraged",
+        "distress",
+        "bury",
+        "warming",
+        "consumed"
+      ]
+    },
+    "stage08_snippets": [
+      "the occurrences of the day were too full of interest to leave elizabeth much attention for any of these new friends; and she could do nothing but think, and think with wonder, of mr. [person]'s civility, and, above all, of his wishing her to be acquainted with his sister.",
+      "mr. [person] placed his hand on [person]’s shoulder for support as mr. [person] barely walked out the front door.",
+      "yes, but when i fell ill, it was apparent that i could not travel all the way to calais, so mr. [person] took me to the house of a friend of his: mr. [person].”"
+    ],
+    "label_public": "Gentleman Offers Steadying Support"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "On his way to see Mistress Gwyllain to explain your…ah, unexplained arrival.”",
+        "max_topic_prob": 0.5121737718582153,
+        "normalized_position": 0.8553385416666667,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gwyllain asked.",
+        "max_topic_prob": 0.47282952070236206,
+        "normalized_position": 0.2565104166666667,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Gwyllain was furious.",
+        "max_topic_prob": 0.4353378713130951,
+        "normalized_position": 0.4178385416666667,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He had to save his climax for Gwyllain.",
+        "max_topic_prob": 0.4337175786495209,
+        "normalized_position": 0.6412760416666666,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Take his offering,” Gwyllain demanded. “",
+        "max_topic_prob": 0.4291664659976959,
+        "normalized_position": 0.6352864583333333,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Go after them,” Gwyllain ordered. “",
+        "max_topic_prob": 0.4219791293144226,
+        "normalized_position": 0.9705729166666667,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sheridan had a lot to answer for.",
+        "max_topic_prob": 0.5233566761016846,
+        "normalized_position": 0.4187192118226601,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Shit,\" grunted Sheridan, apparently immune to Owen's considerable charms. \"",
+        "max_topic_prob": 0.5131895542144775,
+        "normalized_position": 0.029967159277504107,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sheridan was stil pale and anxious looking.",
+        "max_topic_prob": 0.511609673500061,
+        "normalized_position": 0.8177339901477833,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sheridan drew away. \"",
+        "max_topic_prob": 0.5068928003311157,
+        "normalized_position": 0.7134646962233169,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sheridan wanted this.",
+        "max_topic_prob": 0.5004961490631104,
+        "normalized_position": 0.603448275862069,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Sheridan reddened.",
+        "max_topic_prob": 0.49501070380210876,
+        "normalized_position": 0.5710180623973727,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Pippen,” she called out over her shoulder, “Deputy Matthews is here for you.”",
+        "max_topic_prob": 0.4976206421852112,
+        "normalized_position": 0.22363002850807728,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Clive had done the best he could to raise Sadie up a lady.",
+        "max_topic_prob": 0.4808562994003296,
+        "normalized_position": 0.8799493189737092,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Pippen turned to the deputy. “",
+        "max_topic_prob": 0.47346413135528564,
+        "normalized_position": 0.2793791574279379,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ve got to see to Pip.",
+        "max_topic_prob": 0.43615657091140747,
+        "normalized_position": 0.1821349382324992,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Pippen had gone on and on about Tucker too.",
+        "max_topic_prob": 0.4068835377693176,
+        "normalized_position": 0.3278428888184986,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I don’t know how someone as charming as Darcy can put up with her.” “",
+        "max_topic_prob": 0.7829486131668091,
+        "normalized_position": 0.9827908716797605,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It was possible she’d stayed with Darcy.",
+        "max_topic_prob": 0.7387456893920898,
+        "normalized_position": 0.5755705200149644,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Hello, Darcy.",
+        "max_topic_prob": 0.7055941820144653,
+        "normalized_position": 0.9839132061354283,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Tomorrow she’d need to give her a call and find out what the hell was going on between her and Darcy.",
+        "max_topic_prob": 0.6781325340270996,
+        "normalized_position": 0.6763935652824542,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I mean, yes Darcy was hot and knew exactly what I wanted in bed.”",
+        "max_topic_prob": 0.662655234336853,
+        "normalized_position": 0.4663299663299663,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "And Darcy was exactly the man who would keep her smiling for years to come.",
+        "max_topic_prob": 0.6349812746047974,
+        "normalized_position": 0.9792368125701459,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Tea, on the other hand… Holmes leaned in, hesitated for a moment, and then placed a very gentle kiss upon my forehead. \"",
+        "max_topic_prob": 0.5799046754837036,
+        "normalized_position": 0.16462809917355373,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She offered us tea in the sitting room and was exceedingly glad to have “the great Sherlock Holmes” looking into her matter.",
+        "max_topic_prob": 0.5170282125473022,
+        "normalized_position": 0.8894214876033057,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Later that same month, I took Watson with me on the Brixton Road murder as an experiment, to see if he would be horrified or intrigued by the whole affair.",
+        "max_topic_prob": 0.4770711064338684,
+        "normalized_position": 0.007272727272727273,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Shall I tell you about Moran?” “",
+        "max_topic_prob": 0.4373319149017334,
+        "normalized_position": 0.663801652892562,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 546
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "John, that's Marylebone Road,\" Holmes warned, and I pulled back reluctantly, aching for him.",
+        "max_topic_prob": 0.43550610542297363,
+        "normalized_position": 0.9733884297520661,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Mycroft was very thorough, and very generous.” “",
+        "max_topic_prob": 0.3950158953666687,
+        "normalized_position": 0.6679338842975207,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 571
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Robert has offered to escort Tess back to Cambridge.",
+        "max_topic_prob": 0.479870468378067,
+        "normalized_position": 0.5710355987055016,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Therefore she was hardly enthused when her husband said his sister would be bringing her Haberdashers for tea and that the countess especially would be significant in easing Charlotte into Society.",
+        "max_topic_prob": 0.47401928901672363,
+        "normalized_position": 0.6580906148867314,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Tess had been in her room earlier, along with Mr. Bittlesworth.",
+        "max_topic_prob": 0.4710519015789032,
+        "normalized_position": 0.3766990291262136,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You were quite cloistered in Cambridge, I suppose.\" \"",
+        "max_topic_prob": 0.4603319466114044,
+        "normalized_position": 0.9187702265372168,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Quince felt a twinge of sympathy for whoever thought to cross one of the Bittlesworth siblings. * * *",
+        "max_topic_prob": 0.45464301109313965,
+        "normalized_position": 0.8949838187702266,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Who, indeed, had Lolly thought to match with the incomparable Charles Bittlesworth?",
+        "max_topic_prob": 0.4434965252876282,
+        "normalized_position": 0.1553398058252427,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "And since he had no family… Teague was distracted by Hudson’s scent. “",
+        "max_topic_prob": 0.5365005731582642,
+        "normalized_position": 0.014490927419354838,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Once again Dare studied him and Hudson, making Teague even more nervous. “",
+        "max_topic_prob": 0.5032311677932739,
+        "normalized_position": 0.4810987903225806,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Teague read the message, then met Hudson’s eyes.",
+        "max_topic_prob": 0.4979192316532135,
+        "normalized_position": 0.2501260080645161,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Dr. Ashby turned to look at Teague. “",
+        "max_topic_prob": 0.477483868598938,
+        "normalized_position": 0.7641129032258065,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "The things Teague thought about when it came to Hudson … probably best if no one else knew about that. “",
+        "max_topic_prob": 0.4700053930282593,
+        "normalized_position": 0.5006300403225806,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Hudson’s dick thickened at Teague’s words.",
+        "max_topic_prob": 0.4645460546016693,
+        "normalized_position": 0.27205141129032256,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "When Lord Courtenay realizes he’s finally found his runaway bride, he does something completely unexpected.",
+        "max_topic_prob": 0.5420166254043579,
+        "normalized_position": 0.9981467753891772,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Juliet studied Pitt’s earnest expression. “",
+        "max_topic_prob": 0.522551953792572,
+        "normalized_position": 0.27687175685693105,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You didn’t say anythin’ about him, not to mention Mr. Pitt,” Tanner said, looking put out. “",
+        "max_topic_prob": 0.5136973261833191,
+        "normalized_position": 0.31893995552260934,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Hackett and Juliet said in unison. “",
+        "max_topic_prob": 0.5077824592590332,
+        "normalized_position": 0.27928094885100074,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Tanner certainly did make a good cup of tea.",
+        "max_topic_prob": 0.49345481395721436,
+        "normalized_position": 0.27001482579688657,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m afraid we lost Private Smythe, sir,” Lieutenant Pitt replied, panting, his face smeared with blood from a dripping slash above his right eye. “",
+        "max_topic_prob": 0.4910895526409149,
+        "normalized_position": 0.17253521126760563,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 172
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0019563090968373,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0018958543983822042,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.005029806259314456,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0015082956259426848,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.01486988847583643,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0014392254350385975,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0035842293906810036,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.001590836780146357,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 47
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "5.2",
+    "taxonomy_secondary_name": "Friends, Allies & Social Circles",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

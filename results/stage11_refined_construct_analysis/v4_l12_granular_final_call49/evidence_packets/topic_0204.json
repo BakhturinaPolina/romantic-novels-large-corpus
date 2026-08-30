@@ -1,0 +1,817 @@
+{
+  "topic_id": 204,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sister",
+        "sisters",
+        "your",
+        "my",
+        "little",
+        "sis",
+        "gon",
+        "sisterly",
+        "is",
+        "says"
+      ],
+      "KeyBERT": [
+        "asks",
+        "assume",
+        "willing",
+        "uh",
+        "hi",
+        "speaking"
+      ],
+      "POS": [
+        "enthusiasm",
+        "equipment",
+        "direct",
+        "affection",
+        "latest",
+        "permission",
+        "willing"
+      ],
+      "MMR": [
+        "introduce",
+        "equipment",
+        "direct",
+        "affection",
+        "treated",
+        "spending",
+        "asks",
+        "speaking",
+        "willing",
+        "expect"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll need to finish dressing and leave a note for my sister.”",
+      "yes, and soon you’ll be my sister.",
+      "i’ll find a way to care for your mother and your sister.” “"
+    ],
+    "label_public": "Promising to Care For Her Sister"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "My sister’s still there with her husband, who’s a copper, and their three kids.",
+        "max_topic_prob": 0.47813498973846436,
+        "normalized_position": 0.5107838762457236,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You're just like my sister was.",
+        "max_topic_prob": 0.6428530812263489,
+        "normalized_position": 0.41671130155329406,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 328
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You have not been paying close attention to your sister’s problems lately, have you?” “",
+        "max_topic_prob": 0.6988585591316223,
+        "normalized_position": 0.3268938063458611,
+        "tertile": "begin",
+        "chapter_index": 24,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Your sister mentioned in passing that you are something of a recluse.” “",
+        "max_topic_prob": 0.6863555908203125,
+        "normalized_position": 0.1933028919330289,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You mock your sister, but you will admit that she has great talents.” “",
+        "max_topic_prob": 0.6856122612953186,
+        "normalized_position": 0.8284744175155134,
+        "tertile": "end",
+        "chapter_index": 60,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I realize that you are concerned for your sister’s happiness.",
+        "max_topic_prob": 0.6851698756217957,
+        "normalized_position": 0.8236740428521251,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "My sister,” Andrew said quickly.",
+        "max_topic_prob": 0.6750282049179077,
+        "normalized_position": 0.5505210162744409,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You and your sister have done so much for us.",
+        "max_topic_prob": 0.673654317855835,
+        "normalized_position": 0.982086406743941,
+        "tertile": "end",
+        "chapter_index": 72,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Your sister.",
+        "max_topic_prob": 0.768458902835846,
+        "normalized_position": 0.7630289532293987,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My sister is here?",
+        "max_topic_prob": 0.7241967916488647,
+        "normalized_position": 0.534075723830735,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You will stay away from my sister.",
+        "max_topic_prob": 0.7237259149551392,
+        "normalized_position": 0.3821826280623608,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Having an older sister is a great pain in the arse.\" \"",
+        "max_topic_prob": 0.7231989502906799,
+        "normalized_position": 0.7567928730512249,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Rescue your sister.",
+        "max_topic_prob": 0.7095543146133423,
+        "normalized_position": 0.8311804008908686,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Not until I resolve this… situation of my sister’s.\" \"",
+        "max_topic_prob": 0.6934827566146851,
+        "normalized_position": 0.30957683741648107,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I’m going to have a sister.”",
+        "max_topic_prob": 0.8378604054450989,
+        "normalized_position": 0.4328497409326425,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 447
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You have a sister?",
+        "max_topic_prob": 0.7773903608322144,
+        "normalized_position": 0.31316062176165804,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "She has a sister, you know.",
+        "max_topic_prob": 0.7672147750854492,
+        "normalized_position": 0.3682901554404145,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "She’s like a sister.” “",
+        "max_topic_prob": 0.76706862449646,
+        "normalized_position": 0.2678756476683938,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "That is, if you want your sister back.” “",
+        "max_topic_prob": 0.7637070417404175,
+        "normalized_position": 0.7569948186528498,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "And my sister?” “",
+        "max_topic_prob": 0.7549762725830078,
+        "normalized_position": 0.8378238341968912,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It’s nice to have a little sister, isn’t it?” “",
+        "max_topic_prob": 0.8020786046981812,
+        "normalized_position": 0.7627118644067796,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Well, you’re the first sister I’ve had, but I guess so.”",
+        "max_topic_prob": 0.7675668001174927,
+        "normalized_position": 0.7132024977698483,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Sisters tell each other stuff like this, right?” “",
+        "max_topic_prob": 0.7650161981582642,
+        "normalized_position": 0.7127564674397859,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "That’s what sisters do.” “",
+        "max_topic_prob": 0.7375905513763428,
+        "normalized_position": 0.7453166815343444,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "See, this is why I’m glad I have a little sister to remind me of these things.”",
+        "max_topic_prob": 0.6904308795928955,
+        "normalized_position": 0.6971454058876003,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Unfortunately, his sister followed. “",
+        "max_topic_prob": 0.6576828956604004,
+        "normalized_position": 0.3666369313113292,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Your sister included.”",
+        "max_topic_prob": 0.8108242750167847,
+        "normalized_position": 0.4690773425168604,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Your sister needs you.",
+        "max_topic_prob": 0.7491598129272461,
+        "normalized_position": 0.025398191993112353,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Just go and take care of your sister.",
+        "max_topic_prob": 0.7288047075271606,
+        "normalized_position": 0.027981058975462762,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "And you shouldn’t have to choose between a stranger and your sister.”",
+        "max_topic_prob": 0.7038552761077881,
+        "normalized_position": 0.36217534796957956,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "What ability does your sister have?”",
+        "max_topic_prob": 0.6917157769203186,
+        "normalized_position": 0.2516860381690343,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That I was not their real sister.",
+        "max_topic_prob": 0.6851165294647217,
+        "normalized_position": 0.43420863825512984,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The sister you just mentioned?” “",
+        "max_topic_prob": 0.7949362993240356,
+        "normalized_position": 0.5179845422116528,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’m so glad you got to see your sister.” “",
+        "max_topic_prob": 0.794367790222168,
+        "normalized_position": 0.8561236623067776,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Would you like to come with me now and call your sister?” “",
+        "max_topic_prob": 0.7393150329589844,
+        "normalized_position": 0.731718192627824,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I spoke to my sister.",
+        "max_topic_prob": 0.7177488803863525,
+        "normalized_position": 0.7517835909631391,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I can’t believe my baby sister is married.” “",
+        "max_topic_prob": 0.702190637588501,
+        "normalized_position": 0.9713139120095124,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Your sister and your family deserve to have you back with them.",
+        "max_topic_prob": 0.6887715458869934,
+        "normalized_position": 0.7553507728894173,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m glad you can spend this time with your sister,” he said. “",
+        "max_topic_prob": 0.7003122568130493,
+        "normalized_position": 0.023799582463465554,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’m in town staying with my sister, Amelia.”",
+        "max_topic_prob": 0.6755123138427734,
+        "normalized_position": 0.13528183716075157,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "How’s your sister?",
+        "max_topic_prob": 0.6732736825942993,
+        "normalized_position": 0.27139874739039666,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "And she told his sister as much. “",
+        "max_topic_prob": 0.6398183703422546,
+        "normalized_position": 0.8400835073068893,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I just hope your sister and the rest of your family does, too.” “",
+        "max_topic_prob": 0.6376636028289795,
+        "normalized_position": 0.28935281837160753,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Your sister gave her daughter a Western name.” “",
+        "max_topic_prob": 0.62879478931427,
+        "normalized_position": 0.3279749478079332,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 451
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I shall treat her like a sister.\" \"",
+        "max_topic_prob": 0.725926399230957,
+        "normalized_position": 0.12373013805678562,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Tell that to my sisters.\"",
+        "max_topic_prob": 0.7216007709503174,
+        "normalized_position": 0.026569419119562385,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I am delighted to have a new sister.",
+        "max_topic_prob": 0.7056056261062622,
+        "normalized_position": 0.5190153685855692,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Keeping your sister from me as if I carried the plague?",
+        "max_topic_prob": 0.700996994972229,
+        "normalized_position": 0.3480072935660328,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You are like your sister, then?",
+        "max_topic_prob": 0.6937494874000549,
+        "normalized_position": 0.6134410002604845,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 389
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Let me return the favor and introduce you to my sisters.",
+        "max_topic_prob": 0.6847398281097412,
+        "normalized_position": 0.15147173743162282,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Like a best mate’s sister.",
+        "max_topic_prob": 0.6578654646873474,
+        "normalized_position": 0.08844427823485415,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Yeah, well, there’d be no checkmate, sister.",
+        "max_topic_prob": 0.4935395121574402,
+        "normalized_position": 0.28421839940164545,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Fuck you, Sentinel.”",
+        "max_topic_prob": 0.4425472617149353,
+        "normalized_position": 0.3355459985041137,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "It’s something you’re used to—growing up with all those siblings.”",
+        "max_topic_prob": 0.6046724915504456,
+        "normalized_position": 0.7300795127727965,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Back up, sister.",
+        "max_topic_prob": 0.5701131820678711,
+        "normalized_position": 0.09719167653527322,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "My baby sister, Keren, she already has three kids and she’s twenty-four.",
+        "max_topic_prob": 0.5644554495811462,
+        "normalized_position": 0.72568093385214,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Stepmother, you mean.",
+        "max_topic_prob": 0.5062183141708374,
+        "normalized_position": 0.7586702757570631,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Told us girls to play dolls.",
+        "max_topic_prob": 0.4177735447883606,
+        "normalized_position": 0.9478091693452885,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 44
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004380253344382621,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.009615384615384616,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0027316663164530363,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.005406529423996673,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0032934131736526945,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.004941599281221923,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.00947653429602888,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004192569032817696,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00042524238816125194,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00017966223499820338,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0001497454327643007,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0002820078962210942,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 58
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.5",
+    "taxonomy_main_name": "Reconciliation, Commitments & HEA",
+    "taxonomy_secondary_id": "5.1",
+    "taxonomy_secondary_name": "Family, Kinship & Parenthood",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

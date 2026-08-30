@@ -1,0 +1,1180 @@
+{
+  "topic_id": 214,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "happened",
+        "hell",
+        "what",
+        "going",
+        "tell",
+        "happen",
+        "happening",
+        "is",
+        "fuck",
+        "here"
+      ],
+      "KeyBERT": [
+        "caused",
+        "causing",
+        "worst"
+      ],
+      "POS": [
+        "extent",
+        "worst"
+      ],
+      "MMR": [
+        "extent",
+        "precisely",
+        "honestly",
+        "causing",
+        "worst",
+        "caused",
+        "expect"
+      ]
+    },
+    "stage08_snippets": [
+      "oh my god, how did this happen?”",
+      "please, tell me precisely what is happening to you.”",
+      "and i need to know what’s going on to some extent so i don’t think the worst."
+    ],
+    "label_public": "Demanding to Know What Happened"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What's happened?\" \"",
+        "max_topic_prob": 0.8451552987098694,
+        "normalized_position": 0.30016406890894176,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What the hell happened?\"",
+        "max_topic_prob": 0.8415664434432983,
+        "normalized_position": 0.9014766201804758,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What's going on?\"",
+        "max_topic_prob": 0.7991251349449158,
+        "normalized_position": 0.16628383921246923,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What happened?\"",
+        "max_topic_prob": 0.7881448864936829,
+        "normalized_position": 0.9629204265791632,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 493
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What happened?\" \"",
+        "max_topic_prob": 0.7852932214736938,
+        "normalized_position": 0.06767842493847416,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What happened?\" \"",
+        "max_topic_prob": 0.7852932214736938,
+        "normalized_position": 0.5731747333880229,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What's going on?”",
+        "max_topic_prob": 0.8195075988769531,
+        "normalized_position": 0.9229351831779753,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.811870813369751,
+        "normalized_position": 0.48623455451983527,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Damn you…tell me what happened!”",
+        "max_topic_prob": 0.7063473463058472,
+        "normalized_position": 0.8671146759158899,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 608
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What has happened to you?”",
+        "max_topic_prob": 0.7009389996528625,
+        "normalized_position": 0.5039020160416215,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What happened then?”",
+        "max_topic_prob": 0.6951621770858765,
+        "normalized_position": 0.4899197918924778,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "What the hell has she done?”",
+        "max_topic_prob": 0.6654840111732483,
+        "normalized_position": 0.36418816388467373,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What's happened?\"",
+        "max_topic_prob": 0.8490893244743347,
+        "normalized_position": 0.7004601226993865,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What's going on?\"",
+        "max_topic_prob": 0.7991251349449158,
+        "normalized_position": 0.14708588957055216,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What happened here?\"",
+        "max_topic_prob": 0.7929767370223999,
+        "normalized_position": 0.10935582822085889,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What happened?\"",
+        "max_topic_prob": 0.7881448864936829,
+        "normalized_position": 0.28680981595092025,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What happened?\"",
+        "max_topic_prob": 0.7881448864936829,
+        "normalized_position": 0.3174846625766871,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "What happened?\"",
+        "max_topic_prob": 0.7881448864936829,
+        "normalized_position": 0.41641104294478526,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Uh, what’s going on?”",
+        "max_topic_prob": 0.7122737169265747,
+        "normalized_position": 0.035346669256166245,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "What was going on here?",
+        "max_topic_prob": 0.6928303241729736,
+        "normalized_position": 0.019227034375606914,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "What’s happening, baby?”",
+        "max_topic_prob": 0.6679741144180298,
+        "normalized_position": 0.8073412313070499,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "For God’s sake, how had this happened?",
+        "max_topic_prob": 0.6231423616409302,
+        "normalized_position": 0.6236162361623616,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "What’s wrong?”",
+        "max_topic_prob": 0.6002308130264282,
+        "normalized_position": 0.4474655272868518,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "What brought that on?” “",
+        "max_topic_prob": 0.5986340641975403,
+        "normalized_position": 0.41580889493105455,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What happened?” “",
+        "max_topic_prob": 0.8063122034072876,
+        "normalized_position": 0.6331730769230769,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042641878128052,
+        "normalized_position": 0.4033653846153846,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What’s happening?”",
+        "max_topic_prob": 0.7766329050064087,
+        "normalized_position": 0.723798076923077,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I just wanted to know what’s going on.” “",
+        "max_topic_prob": 0.7513900399208069,
+        "normalized_position": 0.60625,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What the hell had just nearly happened?",
+        "max_topic_prob": 0.723190426826477,
+        "normalized_position": 0.38798076923076924,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "What the hell was happening to him?",
+        "max_topic_prob": 0.7112435102462769,
+        "normalized_position": 0.5521634615384615,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What’s happened?”",
+        "max_topic_prob": 0.8488346934318542,
+        "normalized_position": 0.7940359596550212,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.8118706941604614,
+        "normalized_position": 0.5274082736442041,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.8118706941604614,
+        "normalized_position": 0.5753544803391317,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "What happened last night?”",
+        "max_topic_prob": 0.7438073754310608,
+        "normalized_position": 0.5569361204502266,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Dad, what happened?”",
+        "max_topic_prob": 0.6963903903961182,
+        "normalized_position": 0.23373775763777224,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Hey, what’s going on here?”",
+        "max_topic_prob": 0.6549477577209473,
+        "normalized_position": 0.5287238707791259,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "What is going on?”",
+        "max_topic_prob": 0.8260077238082886,
+        "normalized_position": 0.2041428182065958,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042640686035156,
+        "normalized_position": 0.3496865630962115,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Then what happened?” “",
+        "max_topic_prob": 0.7048446536064148,
+        "normalized_position": 0.45434723357863177,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "What have I done?”",
+        "max_topic_prob": 0.5995453596115112,
+        "normalized_position": 0.7612428454619787,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 275
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I don’t understand how this can happen.” “",
+        "max_topic_prob": 0.568906843662262,
+        "normalized_position": 0.2946306895611883,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "What happened?",
+        "max_topic_prob": 0.5550047159194946,
+        "normalized_position": 0.5854456255110384,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 272
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What’s happened?”",
+        "max_topic_prob": 0.848834753036499,
+        "normalized_position": 0.3827657915258643,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What the hell had happened, and why?",
+        "max_topic_prob": 0.7361255884170532,
+        "normalized_position": 0.37912659214972705,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I have to know what happened, even if it’s the worst.” “",
+        "max_topic_prob": 0.6105539202690125,
+        "normalized_position": 0.5640759033012738,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 513
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What did you just do?”",
+        "max_topic_prob": 0.6018021106719971,
+        "normalized_position": 0.3901741616844294,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What’s this all about?” “",
+        "max_topic_prob": 0.5786890387535095,
+        "normalized_position": 0.5445801923576813,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What’s happened recently, Sir Charles?”",
+        "max_topic_prob": 0.5703057646751404,
+        "normalized_position": 0.4118793865349623,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 423
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What happened?” “",
+        "max_topic_prob": 0.8063122034072876,
+        "normalized_position": 0.8946031100721618,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042641878128052,
+        "normalized_position": 0.026831995121455433,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042641878128052,
+        "normalized_position": 0.83789002947454,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What’s going on here?”",
+        "max_topic_prob": 0.7956311702728271,
+        "normalized_position": 0.5570688078056714,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What’s going on?” “",
+        "max_topic_prob": 0.7947449684143066,
+        "normalized_position": 0.49588372802114034,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 460
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What the hell had just happened?",
+        "max_topic_prob": 0.7843807339668274,
+        "normalized_position": 0.2317308669580242,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 681
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042641878128052,
+        "normalized_position": 0.777734221873775,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Just tell me what happened.” “",
+        "max_topic_prob": 0.7418442368507385,
+        "normalized_position": 0.7295178361426892,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What’s wrong?”",
+        "max_topic_prob": 0.6002308130264282,
+        "normalized_position": 0.41042728341826734,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "What’s wrong?”",
+        "max_topic_prob": 0.6002308130264282,
+        "normalized_position": 0.47177577420619365,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "How about you just tell me what’s going on.",
+        "max_topic_prob": 0.5858685374259949,
+        "normalized_position": 0.2951783614268914,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "So what’s wrong?”",
+        "max_topic_prob": 0.5832016468048096,
+        "normalized_position": 0.9874558996471972,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "What the hell?”",
+        "max_topic_prob": 0.5523271560668945,
+        "normalized_position": 0.400328587075575,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "What in hell has got into Deak?”",
+        "max_topic_prob": 0.44128531217575073,
+        "normalized_position": 0.07886089813800658,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.8118706941604614,
+        "normalized_position": 0.8881513441752407,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Did something happen?”",
+        "max_topic_prob": 0.6741656064987183,
+        "normalized_position": 0.8698971125124461,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "There’s definitely something going on.” “",
+        "max_topic_prob": 0.5949984788894653,
+        "normalized_position": 0.38898108197809494,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "How did it go?” “",
+        "max_topic_prob": 0.5879939794540405,
+        "normalized_position": 0.14470627281778958,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "And what’s been happening there?",
+        "max_topic_prob": 0.571778416633606,
+        "normalized_position": 0.7547295054762695,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "What it had to be.",
+        "max_topic_prob": 0.4893764853477478,
+        "normalized_position": 0.9923664122137404,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What happened?\" \"",
+        "max_topic_prob": 0.7852932214736938,
+        "normalized_position": 0.3423385979495705,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What happened next?\" \"",
+        "max_topic_prob": 0.7453255653381348,
+        "normalized_position": 0.6142975893599335,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "What went wrong?\" \"",
+        "max_topic_prob": 0.7418398261070251,
+        "normalized_position": 0.47506234413965087,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "May I ask what happened?\" \"",
+        "max_topic_prob": 0.7261327505111694,
+        "normalized_position": 0.9171515655306179,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Can you tell me about what happened to you?\" \"",
+        "max_topic_prob": 0.6555747389793396,
+        "normalized_position": 0.13591022443890274,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "So, tell me what happened after I left.\" \"",
+        "max_topic_prob": 0.6531699895858765,
+        "normalized_position": 0.6100027708506511,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.8118706941604614,
+        "normalized_position": 0.29662317728319265,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What happened?” “",
+        "max_topic_prob": 0.8063122034072876,
+        "normalized_position": 0.514006139677667,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What’s going on?”",
+        "max_topic_prob": 0.8042641878128052,
+        "normalized_position": 0.2003069838833461,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What happened to her?” “",
+        "max_topic_prob": 0.6873228549957275,
+        "normalized_position": 0.33883346124328473,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "What’s wrong?” “",
+        "max_topic_prob": 0.5885630249977112,
+        "normalized_position": 0.14792785878741366,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Nothing happened. “",
+        "max_topic_prob": 0.5743728876113892,
+        "normalized_position": 0.11473522640061397,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Tell me what happened.”",
+        "max_topic_prob": 0.7888970971107483,
+        "normalized_position": 0.6517467248908297,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I don’t know what happened.",
+        "max_topic_prob": 0.6403175592422485,
+        "normalized_position": 0.6768558951965066,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "And I’m not sure how it happened.",
+        "max_topic_prob": 0.5308801531791687,
+        "normalized_position": 0.6629366812227074,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Nothing.”",
+        "max_topic_prob": 0.5265685319900513,
+        "normalized_position": 0.7117903930131004,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "What the fuck, dude?” “",
+        "max_topic_prob": 0.5032732486724854,
+        "normalized_position": 0.5603165938864629,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "What the fuck are you doing?",
+        "max_topic_prob": 0.47954773902893066,
+        "normalized_position": 0.13100436681222707,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What the hell happened ?”",
+        "max_topic_prob": 0.8509918451309204,
+        "normalized_position": 0.767211131276467,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What’s happened?”",
+        "max_topic_prob": 0.848834753036499,
+        "normalized_position": 0.7017543859649122,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What’s happened ?”",
+        "max_topic_prob": 0.8488346338272095,
+        "normalized_position": 0.6998185117967333,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 406
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What happened now ?” “",
+        "max_topic_prob": 0.8311135768890381,
+        "normalized_position": 0.9160314579552329,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What happened now ?” “",
+        "max_topic_prob": 0.8311135768890381,
+        "normalized_position": 0.9257108287961282,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What happened?”",
+        "max_topic_prob": 0.811870813369751,
+        "normalized_position": 0.6459770114942529,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 184
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.006176413819725921,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.006110228522546743,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0066945606694560665,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0074749129633422074,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.007011605415860735,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.007927187316500293,
+        "n_sentences": 54
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.01002004008016032,
+        "n_sentences": 65
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.006016648809033215,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00267379679144385,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0030278007156619873,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0029452189279403104,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0011043622308117063,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.003289473684210526,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.003137254901960784,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0022277552090158564,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0030511060259344014,
+        "n_sentences": 28
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 92
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.3",
+    "taxonomy_main_name": "Secrets, Misunderstandings & Hidden Information",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,812 @@
+{
+  "topic_id": 223,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "matt",
+        "matthew",
+        "aidan",
+        "mattie",
+        "connor",
+        "matty",
+        "stephon",
+        "alternate",
+        "bid"
+      ],
+      "KeyBERT": [
+        "insisted",
+        "scenario",
+        "threat",
+        "willing",
+        "assistant",
+        "inevitable",
+        "spilling",
+        "partners",
+        "sir",
+        "reminds"
+      ],
+      "POS": [
+        "longest",
+        "scenario",
+        "partners",
+        "inevitable",
+        "buying",
+        "realization",
+        "options",
+        "quality",
+        "exchange",
+        "strained"
+      ],
+      "MMR": [
+        "claims",
+        "scenario",
+        "partners",
+        "spilling",
+        "options",
+        "exchange",
+        "strained",
+        "doubted",
+        "occurred",
+        "ability"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll give aidan a call, so he doesn’t send out the cavalry.”",
+      "there’ll be extra men on the gate,” [person] promised. “",
+      "but we have a gut feeling that since [person]’s been such a thorn in the side of these people, if they think they’re going to get him, he’ll pull in the other accomplices."
+    ],
+    "label_public": "Coordinating Security Against A Threat"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Maybe if I go with Matt it will teach him not to take me for granted,” Alice said. “",
+        "max_topic_prob": 0.5908232927322388,
+        "normalized_position": 0.8042838018741634,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "So you’re using Matt as a pawn in your game?”",
+        "max_topic_prob": 0.5565140247344971,
+        "normalized_position": 0.8045515394912985,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Have you met Matt Garrett?",
+        "max_topic_prob": 0.5080011487007141,
+        "normalized_position": 0.8058902275769746,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Cameron came through second on Paddy.",
+        "max_topic_prob": 0.47293275594711304,
+        "normalized_position": 0.29611780455153947,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "With time running short, the girls chalked Paddy and then left Cameron to do the clipping on his own while they brought Belladonna in from the field. “",
+        "max_topic_prob": 0.4478248953819275,
+        "normalized_position": 0.48058902275769744,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Lexington House had most of the Western boys and Matt Garrett, an Australian eventer who could be annoyingly full of himself.",
+        "max_topic_prob": 0.44260793924331665,
+        "normalized_position": 0.22838018741633198,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "What about Matt?”",
+        "max_topic_prob": 0.7441337704658508,
+        "normalized_position": 0.5140691062837148,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Matt.” “",
+        "max_topic_prob": 0.7333469390869141,
+        "normalized_position": 0.9327890363026681,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Matt backed off. “",
+        "max_topic_prob": 0.7161930203437805,
+        "normalized_position": 0.7750400933080624,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Matt was unfazed. “",
+        "max_topic_prob": 0.7149455547332764,
+        "normalized_position": 0.16926665694707682,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Matt did the same.",
+        "max_topic_prob": 0.7107282876968384,
+        "normalized_position": 0.1116780871847208,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Matt?”",
+        "max_topic_prob": 0.7103890180587769,
+        "normalized_position": 0.8093016474704767,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Damn, Ms. McAlister’s got him in her sights now.",
+        "max_topic_prob": 0.5015575885772705,
+        "normalized_position": 0.01792390587200352,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Tomas, Makenzi and Matthew are gone forever, beyond reclamation even by me.”",
+        "max_topic_prob": 0.4130516052246094,
+        "normalized_position": 0.5689655172413793,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "You can also follow Scott on Facebook and on Twitter: http://www.facebook.com/scottprussingauthor http://www.facebook.com/BreathlessFampires.",
+        "max_topic_prob": 0.324302077293396,
+        "normalized_position": 0.9978239035821895,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Remember Maverick after his accident, and how stupid he was to push me away?” “",
+        "max_topic_prob": 0.5389325618743896,
+        "normalized_position": 0.8129675810473815,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Oh, me and Maverick hung out and I just dropped him off.”",
+        "max_topic_prob": 0.523259699344635,
+        "normalized_position": 0.6751870324189526,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I drop Maverick off, thanking him for all of his help as well as putting me in my place, and drive straight to Tori’s.",
+        "max_topic_prob": 0.49718883633613586,
+        "normalized_position": 0.6679135494596842,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I love Maverick like a brother, but shit, I don’t even know what happened, so how was I going to explain it to him?",
+        "max_topic_prob": 0.49044567346572876,
+        "normalized_position": 0.054447215295095594,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Maverick and Will just stand there with smiles on their faces, like they’re enjoying the show, watching their girls get territorial.",
+        "max_topic_prob": 0.48048409819602966,
+        "normalized_position": 0.587281795511222,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "It feels good to have talked to him about all of this, now to do something about it and talk to Tori.",
+        "max_topic_prob": 0.48030886054039,
+        "normalized_position": 0.2776392352452203,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I can’t believe Dex Callahan has been hanging out in Beachwood Bay for months, and I never noticed.”",
+        "max_topic_prob": 0.47440022230148315,
+        "normalized_position": 0.8978306508047585,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "That was the look Colin had given him the day Nic had packed up his shit and moved out. “",
+        "max_topic_prob": 0.5958532691001892,
+        "normalized_position": 0.5871126616047609,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nic would have loved to see the whole ensemble together, but he had a feeling he wasn’t going to get to.",
+        "max_topic_prob": 0.5464221239089966,
+        "normalized_position": 0.8294684998973938,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "All of his old Matthew McConaughey fantasies flared to life, and Justice had to struggle not to drool.",
+        "max_topic_prob": 0.5461175441741943,
+        "normalized_position": 0.03242355838292633,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nic had never had a fuck like that in his life, not even with Colin.",
+        "max_topic_prob": 0.5413965582847595,
+        "normalized_position": 0.525343730761338,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nic was right, he’d had every opportunity to back out of this gracefully, without hurting Nic.",
+        "max_topic_prob": 0.5330069065093994,
+        "normalized_position": 0.8522470757233737,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He was the reason Nic had gone out alone.",
+        "max_topic_prob": 0.5253787040710449,
+        "normalized_position": 0.9253026882823723,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Would there be a miracle to save Sidney?",
+        "max_topic_prob": 0.4285448491573334,
+        "normalized_position": 0.6452821869488536,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "This comment came from Connor. “",
+        "max_topic_prob": 0.6033581495285034,
+        "normalized_position": 0.3628995259213947,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Connor asked.",
+        "max_topic_prob": 0.5981019735336304,
+        "normalized_position": 0.18282612020186573,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "It was just Connor, after all.",
+        "max_topic_prob": 0.5918710231781006,
+        "normalized_position": 0.9819544272824591,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Him and Connor.”",
+        "max_topic_prob": 0.5915520191192627,
+        "normalized_position": 0.42261813732986697,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 589
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Don’t say anything to Connor?” “",
+        "max_topic_prob": 0.5818337202072144,
+        "normalized_position": 0.40380792170056584,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 343
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Connor tried to talk to me, but I wasn’t ready.",
+        "max_topic_prob": 0.5778400897979736,
+        "normalized_position": 0.6890961920782994,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 396
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Especially when Declan was doing him a favor. “",
+        "max_topic_prob": 0.6172993779182434,
+        "normalized_position": 0.33016598508539813,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Declan wasn’t so sure. “",
+        "max_topic_prob": 0.6105661392211914,
+        "normalized_position": 0.7174645176810199,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Declan needed to keep him talking so he wouldn’t do anything stupid. “",
+        "max_topic_prob": 0.6071772575378418,
+        "normalized_position": 0.7862641327880683,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Declan couldn’t believe how stupid this guy was. “",
+        "max_topic_prob": 0.5944859981536865,
+        "normalized_position": 0.6962954053403897,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Declan didn’t have the energy for small talk anyway.",
+        "max_topic_prob": 0.5785613059997559,
+        "normalized_position": 0.949843637238393,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Declan.”",
+        "max_topic_prob": 0.5693171620368958,
+        "normalized_position": 0.5721674284339668,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Jamie continued.",
+        "max_topic_prob": 0.7028175592422485,
+        "normalized_position": 0.8070500927643784,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And Jamie couldn’t blame him.",
+        "max_topic_prob": 0.6786400079727173,
+        "normalized_position": 0.23376623376623376,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Jamie!”",
+        "max_topic_prob": 0.6748795509338379,
+        "normalized_position": 0.25899814471243043,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Which was why Jamie had to do it.",
+        "max_topic_prob": 0.6717473864555359,
+        "normalized_position": 0.04897959183673469,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Jamie didn’t think he’d ever spent so much time just socializing.",
+        "max_topic_prob": 0.6559234857559204,
+        "normalized_position": 0.4411873840445269,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Jamie was determined not to let that happen to him.",
+        "max_topic_prob": 0.652320146560669,
+        "normalized_position": 0.03784786641929499,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Mattie,” he said. “",
+        "max_topic_prob": 0.7189712524414062,
+        "normalized_position": 0.5150753768844221,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 451
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Mattie didn’t think he’d ever talk.”",
+        "max_topic_prob": 0.6912612915039062,
+        "normalized_position": 0.4438860971524288,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He really was going to have to sit Mattie down and have a talk with her.",
+        "max_topic_prob": 0.6889277696609497,
+        "normalized_position": 0.5269681742043552,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I told Mattie that.”",
+        "max_topic_prob": 0.6850536465644836,
+        "normalized_position": 0.5876046901172529,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Mattie asked. “",
+        "max_topic_prob": 0.6712753176689148,
+        "normalized_position": 0.5492462311557789,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Tell me what Mattie said.”",
+        "max_topic_prob": 0.6702677011489868,
+        "normalized_position": 0.583249581239531,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He got into it with Christian because of you, didn’t he?” “",
+        "max_topic_prob": 0.49384069442749023,
+        "normalized_position": 0.7406546990496304,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 563
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Rodrigo had moved out a year and a half afterward when his girlfriend had gotten pregnant, and when I got my job with Aiden, I got my own place, needing to be in Dallas instead of traveling back and forth almost an hour every day.",
+        "max_topic_prob": 0.4450136423110962,
+        "normalized_position": 0.12439281942977824,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Christian had been a creep on Thanksgiving, but it wasn’t like he’d made grabby hands at me.",
+        "max_topic_prob": 0.40330958366394043,
+        "normalized_position": 0.7098908834917282,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Every day was Leo, the last member of our group, who was waiting patiently at home.",
+        "max_topic_prob": 0.388696551322937,
+        "normalized_position": 0.9842309046110524,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 109
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.005013578441612701,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.009092439804680923,
+        "n_sentences": 54
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.006762468300929839,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0027129679869777536,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.0032235781717706653,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.016074766355140185,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.03992953611274222,
+        "n_sentences": 272
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.004755996691480562,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.000336417157275021,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00028340654669122857,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0002232142857142857,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.00014078558355624384,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00011077877478675086,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.3",
+    "taxonomy_main_name": "Risk, Danger & External Crises",
+    "taxonomy_secondary_id": "10.3",
+    "taxonomy_secondary_name": "Mystery, Suspense & Investigation",
+    "taxonomy_confidence": 0.8,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

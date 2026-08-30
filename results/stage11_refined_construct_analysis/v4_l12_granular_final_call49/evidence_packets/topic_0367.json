@@ -1,0 +1,792 @@
+{
+  "topic_id": 367,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tour",
+        "ticket",
+        "tickets",
+        "tours",
+        "concert",
+        "cancel",
+        "concerts",
+        "bought",
+        "7heaven",
+        "tomorrow"
+      ],
+      "KeyBERT": [
+        "guided",
+        "surely",
+        "announced",
+        "uh"
+      ],
+      "POS": [
+        "meantime",
+        "combination",
+        "apology",
+        "members",
+        "bigger",
+        "dozen"
+      ],
+      "MMR": [
+        "meantime",
+        "combination",
+        "apology",
+        "winked",
+        "cost",
+        "members",
+        "paid",
+        "spoken",
+        "worn",
+        "mentioned"
+      ]
+    },
+    "stage08_snippets": [
+      "i’m assuming since there are two tickets, you’ll go with me?” “",
+      "we’ll have to figure out how to get you a ticket.",
+      "[person]—” “sure, i’ll give her the five-cent tour.”"
+    ],
+    "label_public": "Sorting Out Concert Tickets"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You bought my ticket.” “",
+        "max_topic_prob": 0.7044106721878052,
+        "normalized_position": 0.279045643153527,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 288
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’ll pay for his ticket.”",
+        "max_topic_prob": 0.6726130843162537,
+        "normalized_position": 0.2551867219917012,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We’re taking our grand tour.",
+        "max_topic_prob": 0.6719747185707092,
+        "normalized_position": 0.4224066390041494,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We can’t purchase tickets.”",
+        "max_topic_prob": 0.6385709047317505,
+        "normalized_position": 0.495850622406639,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Something I learned when I took my grand tour.”",
+        "max_topic_prob": 0.5951170921325684,
+        "normalized_position": 0.312448132780083,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mrs. Schmidt told me this is the coach I should take, and I was simply trying to find out—” “How much is the ticket?”",
+        "max_topic_prob": 0.516502857208252,
+        "normalized_position": 0.2884854771784232,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "We’ve had one tour group after another this morning.",
+        "max_topic_prob": 0.5873836874961853,
+        "normalized_position": 0.26504521359526034,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "They’re probably trying to cater to the tourists.”",
+        "max_topic_prob": 0.4542618989944458,
+        "normalized_position": 0.6986799708969962,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "He took my hand and guided me through the crowd of tourists on the side walk.",
+        "max_topic_prob": 0.4346007704734802,
+        "normalized_position": 0.42511173474690783,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "We’ll continue the tour later.”",
+        "max_topic_prob": 0.7239500284194946,
+        "normalized_position": 0.21972318339100347,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "All I have to do is take the public track tour and get conveniently separated from the tourists.",
+        "max_topic_prob": 0.6144017577171326,
+        "normalized_position": 0.08846597462514418,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I hop back in the limo and rush to my second event of the night, a Q & A event with racing fans.",
+        "max_topic_prob": 0.5331385135650635,
+        "normalized_position": 0.5392156862745098,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "This cross-country publicity tour is wearing me out, and I'm so sick of smiling at people.",
+        "max_topic_prob": 0.5273420214653015,
+        "normalized_position": 0.6597462514417531,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "How can you tour the track if someone's using it?",
+        "max_topic_prob": 0.5154874324798584,
+        "normalized_position": 0.08915801614763552,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I'm one of the best young drivers in the country, and they don't invite me?",
+        "max_topic_prob": 0.5133389234542847,
+        "normalized_position": 0.07566320645905421,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "He certainly wasn’t booking in any time soon for a refresher course either. ‘",
+        "max_topic_prob": 0.4365371763706207,
+        "normalized_position": 0.6134109529969815,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I booked you, babe.”",
+        "max_topic_prob": 0.5173701047897339,
+        "normalized_position": 0.5047575894879928,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "There are seven of us going to perform on stage, plus the stripping wait staff, and dear, sweet, Bruce.",
+        "max_topic_prob": 0.4679807722568512,
+        "normalized_position": 0.9003171726325329,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Bruce points a beefy finger at the stage and says to us, “Take your places, and remember that this client is the shit.",
+        "max_topic_prob": 0.4292778968811035,
+        "normalized_position": 0.9542365201631173,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Dibs on the park passes!",
+        "max_topic_prob": 0.42234373092651367,
+        "normalized_position": 0.8106026280018124,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You’ll be on tour.",
+        "max_topic_prob": 0.718665361404419,
+        "normalized_position": 0.047505938242280284,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "The tour is over.",
+        "max_topic_prob": 0.7178871035575867,
+        "normalized_position": 0.04181962139206795,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 569
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You’ll even enjoy this tour.",
+        "max_topic_prob": 0.7107880711555481,
+        "normalized_position": 0.05931044410854387,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I don’t even want to go on this tour.",
+        "max_topic_prob": 0.708737850189209,
+        "normalized_position": 0.018066652270927807,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Probably doesn’t even know I’m on tour.",
+        "max_topic_prob": 0.6998182535171509,
+        "normalized_position": 0.27344705967033756,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "This is why I didn’t want to come back on tour.",
+        "max_topic_prob": 0.6977530121803284,
+        "normalized_position": 0.5258763406031814,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I hadn’t bothered to get a return ticket in case there was something I needed to stay for.",
+        "max_topic_prob": 0.5425929427146912,
+        "normalized_position": 0.3851722416375437,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 350
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Now let’s get this show on the road.” “",
+        "max_topic_prob": 0.5288145542144775,
+        "normalized_position": 0.7161757363954069,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I told him that I would be picking him up with my driver and we could arrive at the theater in my limo.",
+        "max_topic_prob": 0.5048527717590332,
+        "normalized_position": 0.24113829256115826,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "A European backpacking tour or something like that.”",
+        "max_topic_prob": 0.4978545010089874,
+        "normalized_position": 0.14877683474787817,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I had it booked for that weekend as well.",
+        "max_topic_prob": 0.4321945309638977,
+        "normalized_position": 0.8871692461308038,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Who would I invite?",
+        "max_topic_prob": 0.36590561270713806,
+        "normalized_position": 0.9311033449825262,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Dear God, I wish I’d had time to sell tickets to that little showdown y’all had this morning.",
+        "max_topic_prob": 0.5609397888183594,
+        "normalized_position": 0.4307238272755514,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5546
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "You’re the best blog tour hostess an author could have!",
+        "max_topic_prob": 0.5387356281280518,
+        "normalized_position": 0.9916123019571296,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 12768
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I’ll just ride with Honor and Zeke, and we’ll go to the store.",
+        "max_topic_prob": 0.4242457449436188,
+        "normalized_position": 0.2695712954333644,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 3471
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "They’ll hold a freaking ticker-tape parade and erect a statue of me in the duck park.”",
+        "max_topic_prob": 0.4043760299682617,
+        "normalized_position": 0.7451071761416589,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 9594
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I just found out about this trip I’ve won, and I’m heading out tomorrow.’ ‘",
+        "max_topic_prob": 0.624730110168457,
+        "normalized_position": 0.050563982886036564,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You won a trip!",
+        "max_topic_prob": 0.5678567290306091,
+        "normalized_position": 0.05082328536237521,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "We have to go down to the convention centre right now!’",
+        "max_topic_prob": 0.5117977857589722,
+        "normalized_position": 0.004148839621418384,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I didn’t have time for sightseeing—I spent most of my time sequestered in my hotel room so I couldn’t run into any of the other contestants.",
+        "max_topic_prob": 0.5072286128997803,
+        "normalized_position": 0.05237910022040711,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Not yet, but we would be loving to go.",
+        "max_topic_prob": 0.4930364489555359,
+        "normalized_position": 0.13055879683650978,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It’s an all-expenses-paid luxury trip!",
+        "max_topic_prob": 0.4705038070678711,
+        "normalized_position": 0.020225593154414623,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Sorry, folks, I’ve been booked for a private tour.",
+        "max_topic_prob": 0.7250438928604126,
+        "normalized_position": 0.6639217704580546,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "And don’t hesitate to call if you’d like to go touring.",
+        "max_topic_prob": 0.666297435760498,
+        "normalized_position": 0.10743695316520845,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Toured all over,” she remembered proudly. “",
+        "max_topic_prob": 0.5062264204025269,
+        "normalized_position": 0.27766340710241894,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Never have I ever flashed a random stranger to get into a concert.”",
+        "max_topic_prob": 0.5057340264320374,
+        "normalized_position": 0.850488934637159,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s a collections trip.",
+        "max_topic_prob": 0.5017407536506653,
+        "normalized_position": 0.9253731343283582,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "What big outing?” “",
+        "max_topic_prob": 0.4375225305557251,
+        "normalized_position": 0.652856407617087,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "The trip?”",
+        "max_topic_prob": 0.6076772212982178,
+        "normalized_position": 0.6275761444464709,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Well,” he said, “if you ever plan a trip, I’m quite good at all that.",
+        "max_topic_prob": 0.5120375156402588,
+        "normalized_position": 0.7289804851358745,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I only wanted to be sure you’d made the reservations.”",
+        "max_topic_prob": 0.5084296464920044,
+        "normalized_position": 0.1267554258617545,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 559
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Probably the button is located in one of those tour buses…you know, those tour buses?",
+        "max_topic_prob": 0.4548191428184509,
+        "normalized_position": 0.2717490424949845,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 1354
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I wasn’t putting on a show.",
+        "max_topic_prob": 0.4391337037086487,
+        "normalized_position": 0.2983768010213387,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 1500
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "The guests had gathered to bid the travelers farewell.",
+        "max_topic_prob": 0.36514711380004883,
+        "normalized_position": 0.16396133503556448,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 763
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’ll give you a tour tomorrow.",
+        "max_topic_prob": 0.6752355694770813,
+        "normalized_position": 0.30983050847457627,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Not even a parking ticket.",
+        "max_topic_prob": 0.4498728811740875,
+        "normalized_position": 0.2167715660866346,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1171
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.002615062761506276,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0018206645425580337,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.004288363467779323,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.017583212735166425,
+        "n_sentences": 243
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0017557060446450965,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.001685903255090131,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0017923036373220875,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.00129366106080207,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.00031362709738121374,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0001868460388639761,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00021673168617251842,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00034317089910775565,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00031466331025802394,
+        "n_sentences": 3
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 56
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.2",
+    "taxonomy_main_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_secondary_id": "8.3b",
+    "taxonomy_secondary_name": "Everyday Props & Communication Media",
+    "taxonomy_confidence": 0.65,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

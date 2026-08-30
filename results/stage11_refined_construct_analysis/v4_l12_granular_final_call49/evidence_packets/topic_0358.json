@@ -1,0 +1,963 @@
+{
+  "topic_id": 358,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "4.6",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "squeezed",
+        "squeeze",
+        "hand",
+        "gave",
+        "squeezing",
+        "shoulder",
+        "gently",
+        "arm",
+        "fingers",
+        "reassuring"
+      ],
+      "KeyBERT": [
+        "squeeze",
+        "squeezed",
+        "gripped",
+        "tightening",
+        "reassuring",
+        "trembling",
+        "calming",
+        "pouring",
+        "landed",
+        "notes"
+      ],
+      "POS": [
+        "squeeze",
+        "reassuring",
+        "notes",
+        "trembling",
+        "loose",
+        "waist"
+      ],
+      "MMR": [
+        "squeeze",
+        "calming",
+        "pouring",
+        "draped",
+        "tightening",
+        "lingering",
+        "notes",
+        "trembling",
+        "squeezed",
+        "gripped"
+      ]
+    },
+    "stage08_snippets": [
+      "she took bronte's hand and gave it a reassuring squeeze. \"",
+      "ted reached for caroline's hands and smiled at her reassuring squeeze. \"",
+      "they'll ask,” he murmured, and gave her waist a reassuring squeeze."
+    ],
+    "label_public": "Reassuring Squeeze of The Hand"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She wrapped her fingers around the door handle. \"",
+        "max_topic_prob": 0.7006040215492249,
+        "normalized_position": 0.5407485662541504,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Her fingers tightened around the receiver. \"",
+        "max_topic_prob": 0.6973546147346497,
+        "normalized_position": 0.0442197404165409,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "But my parents—\" \"Are fine,\" he interrupted, groaning when she curved her fingers as far as she could around his hardening shaft. \"",
+        "max_topic_prob": 0.5523260831832886,
+        "normalized_position": 0.9953214609115605,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "She absently crunched on the nuts.",
+        "max_topic_prob": 0.5359728336334229,
+        "normalized_position": 0.10141865378810745,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I grabbed her hand. ‘",
+        "max_topic_prob": 0.726431667804718,
+        "normalized_position": 0.22689367616400277,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Bea groaned then lifted her right hand to her brow. ‘",
+        "max_topic_prob": 0.6963702440261841,
+        "normalized_position": 0.6131341209173037,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I pressed her. ‘",
+        "max_topic_prob": 0.6962980628013611,
+        "normalized_position": 0.7642807505211953,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 385
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Beverley reached out and squeezed my hand. ‘",
+        "max_topic_prob": 0.6691112518310547,
+        "normalized_position": 0.5915218902015288,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 425
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He giggled, squeezing my hand. \"",
+        "max_topic_prob": 0.7818377017974854,
+        "normalized_position": 0.34396520478434217,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He sighed, holding onto me tighter. \"",
+        "max_topic_prob": 0.7164474725723267,
+        "normalized_position": 0.2587894164552374,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He purred, rubbing his thumb over my hand. \"",
+        "max_topic_prob": 0.6706579327583313,
+        "normalized_position": 0.3773106197897789,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Reid sighed, running his hands over my arms. \"",
+        "max_topic_prob": 0.652472972869873,
+        "normalized_position": 0.9093874592243566,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Please, yes please,\" Reid begged, thrusting his fingers in himself harder as he added a third.",
+        "max_topic_prob": 0.5752080678939819,
+        "normalized_position": 0.757883291047481,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Reid panted as I started working the toy in and out of him, pushing it in farther each time. \"",
+        "max_topic_prob": 0.5435618162155151,
+        "normalized_position": 0.42986589343965204,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I squeezed her hand. “",
+        "max_topic_prob": 0.9052038788795471,
+        "normalized_position": 0.2459287231531744,
+        "tertile": "begin",
+        "chapter_index": 28,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "M used to it,” she crunched. “",
+        "max_topic_prob": 0.5314666032791138,
+        "normalized_position": 0.789945716308709,
+        "tertile": "end",
+        "chapter_index": 66,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "D’you want to squeeze off a few?”",
+        "max_topic_prob": 0.48143669962882996,
+        "normalized_position": 0.5434269530328062,
+        "tertile": "middle",
+        "chapter_index": 52,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Matt squeezed her hand. “",
+        "max_topic_prob": 0.8637096881866455,
+        "normalized_position": 0.5315158347852824,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Matt squeezed gently. “",
+        "max_topic_prob": 0.8286152482032776,
+        "normalized_position": 0.22004714563902839,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His fingers tightened on hers. “",
+        "max_topic_prob": 0.8266679048538208,
+        "normalized_position": 0.535205493491852,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She smiled when he squeezed her shoulder.",
+        "max_topic_prob": 0.7873411178588867,
+        "normalized_position": 0.6208875678999692,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Her fingers tapped his. “",
+        "max_topic_prob": 0.7802045941352844,
+        "normalized_position": 0.9571589627959414,
+        "tertile": "end",
+        "chapter_index": 52,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Matt squeezed her shoulder as he passed.",
+        "max_topic_prob": 0.767213761806488,
+        "normalized_position": 0.18786512247617096,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Quinn squeezed his hand. “",
+        "max_topic_prob": 0.8479942679405212,
+        "normalized_position": 0.30272305909617614,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1045
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Quinn squeezed his hand. “",
+        "max_topic_prob": 0.8479942679405212,
+        "normalized_position": 0.3224217844727694,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1113
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Quinn squeezed his hand. “",
+        "max_topic_prob": 0.8479942679405212,
+        "normalized_position": 0.48638470451911936,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1679
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Quinn tightened his grip and moved his hand more quickly. “",
+        "max_topic_prob": 0.7265043258666992,
+        "normalized_position": 0.5081112398609502,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Danny gave his hand a last squeeze and let go. “",
+        "max_topic_prob": 0.7010478973388672,
+        "normalized_position": 0.3088064889918888,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1066
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He couldn’t speak, but he squeezed Maxwell’s hand and was ecstatic when he squeezed back. “",
+        "max_topic_prob": 0.6920859217643738,
+        "normalized_position": 0.7291425260718424,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 829
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He squeezed my fingers. “",
+        "max_topic_prob": 0.8372848629951477,
+        "normalized_position": 0.7352370390906571,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Nodding , she gave my hand a squeeze and let go. “",
+        "max_topic_prob": 0.790099561214447,
+        "normalized_position": 0.7865261990573884,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She held her hand out to me. “",
+        "max_topic_prob": 0.7333414554595947,
+        "normalized_position": 0.2741890767951206,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Cora loosened her grip on me. “",
+        "max_topic_prob": 0.6912451982498169,
+        "normalized_position": 0.053784308289437206,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He gave my hand a squeeze th e n let me go.",
+        "max_topic_prob": 0.6401442289352417,
+        "normalized_position": 0.24563349043526475,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Ashling gripped my hand, the flow of her Healing abilities washing through me. “",
+        "max_topic_prob": 0.6171233654022217,
+        "normalized_position": 0.7837538120321597,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She squeezed Callie’s hand. “",
+        "max_topic_prob": 0.8306764364242554,
+        "normalized_position": 0.6486343145054362,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 491
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "His other hand slid down her back, the fingers closed around her bottom and squeezed.",
+        "max_topic_prob": 0.7946667671203613,
+        "normalized_position": 0.49655263855741183,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She squirmed under his expert touch. “",
+        "max_topic_prob": 0.7834701538085938,
+        "normalized_position": 0.5787589498806682,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 332
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Kit put her cup down and squeezed Sarah’s hand. “",
+        "max_topic_prob": 0.7201608419418335,
+        "normalized_position": 0.4108989657915672,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He squeezed gently to make them hard, eliciting a soft sound from her.",
+        "max_topic_prob": 0.7132720947265625,
+        "normalized_position": 0.8821267568284274,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Kit said, tugging on him. “",
+        "max_topic_prob": 0.6873797178268433,
+        "normalized_position": 0.4253513656854946,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He gave her fingers a light squeeze. “",
+        "max_topic_prob": 0.8919774293899536,
+        "normalized_position": 0.06467661691542288,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She squeezed his hand and let it go. “",
+        "max_topic_prob": 0.8744267225265503,
+        "normalized_position": 0.43750942258404946,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She squeezed him back. “",
+        "max_topic_prob": 0.8549352288246155,
+        "normalized_position": 0.33197648123021256,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She gave him a hard squeeze and then stepped back. “",
+        "max_topic_prob": 0.8241734504699707,
+        "normalized_position": 0.734810794512287,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Her voice sounded small and unsure, so he gave her hands a squeeze. “",
+        "max_topic_prob": 0.8038641214370728,
+        "normalized_position": 0.48273782602140813,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He closed his fingers around hers. “",
+        "max_topic_prob": 0.7716158032417297,
+        "normalized_position": 0.7699381878486357,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Holding her hand tighter, he continued. “",
+        "max_topic_prob": 0.8238383531570435,
+        "normalized_position": 0.29080996884735205,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "she asked, holding him tight. “",
+        "max_topic_prob": 0.7820073366165161,
+        "normalized_position": 0.7211059190031153,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "she gasped, hand over her mouth.",
+        "max_topic_prob": 0.7252843379974365,
+        "normalized_position": 0.2911993769470405,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Sobbing softly, she held Royal tightly. “",
+        "max_topic_prob": 0.7001204490661621,
+        "normalized_position": 0.705607476635514,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Fingers trembling, she clasped them together and said another prayer.",
+        "max_topic_prob": 0.6812416315078735,
+        "normalized_position": 0.699221183800623,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Magnelli touched her hand. “",
+        "max_topic_prob": 0.6757955551147461,
+        "normalized_position": 0.7434579439252337,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He gave her hands one more squeeze. \"",
+        "max_topic_prob": 0.85248863697052,
+        "normalized_position": 0.3102145294978059,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2545
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She gently returned the pressure of his hand. \"",
+        "max_topic_prob": 0.8213059902191162,
+        "normalized_position": 0.3459288152120917,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2838
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He reached for her hand, relaxing his grip a little at her involuntary gasp of pain.",
+        "max_topic_prob": 0.8131874799728394,
+        "normalized_position": 0.5173086299366163,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 4244
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "she said, urgently tugging at him.",
+        "max_topic_prob": 0.7533924579620361,
+        "normalized_position": 0.5113359336908825,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 4195
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Raven touched her hand gently. \"",
+        "max_topic_prob": 0.7000163793563843,
+        "normalized_position": 0.07155046318868845,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Shahanna reached with an enfeebled hand to her side pouch, fumbled for a stimulant and a pain depressor.",
+        "max_topic_prob": 0.45844709873199463,
+        "normalized_position": 0.3963920039005363,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3252
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I grabbed his hand and squeezed. “",
+        "max_topic_prob": 0.8491010665893555,
+        "normalized_position": 0.04350328000920704,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He grabbed his head with both hands and squeezed. “",
+        "max_topic_prob": 0.8292140364646912,
+        "normalized_position": 0.15318218437104386,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I reached for her hands, squeezing them as I pleaded. “",
+        "max_topic_prob": 0.8151565790176392,
+        "normalized_position": 0.8996432270687076,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He squeezed her hard against his chest.",
+        "max_topic_prob": 0.8018865585327148,
+        "normalized_position": 0.3528599378524571,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She gave my shoulder a friendly squeeze. “",
+        "max_topic_prob": 0.7860511541366577,
+        "normalized_position": 0.5960409713430774,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Cassie put her hand on top of mine and squeezed. “",
+        "max_topic_prob": 0.7782779335975647,
+        "normalized_position": 0.20738865231902406,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He squeezed her hand. “",
+        "max_topic_prob": 0.9491974115371704,
+        "normalized_position": 0.966990106544901,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He laid his hand atop hers and squeezed. “",
+        "max_topic_prob": 0.917271614074707,
+        "normalized_position": 0.8031773211567732,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She squeezed his arm. “",
+        "max_topic_prob": 0.9093663096427917,
+        "normalized_position": 0.909627092846271,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He squeezed her shoulder. “",
+        "max_topic_prob": 0.8885600566864014,
+        "normalized_position": 0.807648401826484,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He nodded and squeezed her hand. “",
+        "max_topic_prob": 0.886768639087677,
+        "normalized_position": 0.3059360730593607,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She squeezed him tight, then cupped his face in her hands. “",
+        "max_topic_prob": 0.8785547018051147,
+        "normalized_position": 0.3559741248097412,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 47
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.00370070544697583,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.0026789131266743206,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.003325774754346183,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0021330489268097585,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0021636101380589326,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.002249086308687096,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0021897810218978104,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0035200938691698444,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0007413814407512665,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0007848677497841614,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0003586800573888092,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0006071645415907711,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00028127417199915616,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 71
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "4.6",
+    "taxonomy_main_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_secondary_id": "2.2",
+    "taxonomy_secondary_name": "Kissing & Non-Explicit Affection",
+    "taxonomy_confidence": 0.87,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,1088 @@
+{
+  "topic_id": 19,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "2.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "arm",
+        "arms",
+        "waist",
+        "hand",
+        "wrapped",
+        "around",
+        "hips",
+        "her",
+        "legs",
+        "neck"
+      ],
+      "KeyBERT": [
+        "wrists",
+        "heaved",
+        "cradled",
+        "gripped",
+        "ankles",
+        "cupped",
+        "loosened",
+        "ankle",
+        "grasp",
+        "pinned"
+      ],
+      "POS": [
+        "wider",
+        "ankles",
+        "wrists",
+        "elbows",
+        "ribs",
+        "thigh",
+        "reminder",
+        "fingertips",
+        "hesitation",
+        "pleased"
+      ],
+      "MMR": [
+        "ankles",
+        "wrists",
+        "elbows",
+        "draped",
+        "adjusted",
+        "braced",
+        "cradled",
+        "instinctively",
+        "crowded",
+        "nudged"
+      ]
+    },
+    "stage08_snippets": [
+      "then as her arms lifted and urged him closer, hunger overcame him, and he pulled her tightly into his arms.",
+      "she lifted her legs and wrapped them around his waist. “",
+      "his hands found her wrists, and he lifted her arms above her head."
+    ],
+    "label_public": "Legs Wrapped Around His Waist"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He let her hold his arm for balance. “",
+        "max_topic_prob": 0.8391071557998657,
+        "normalized_position": 0.3160777869076965,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1154
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She slid her hand up his thigh, leaning into his shoulder. “",
+        "max_topic_prob": 0.8313434720039368,
+        "normalized_position": 0.28375787455491647,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1036
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She slid her arms around his neck, wiggling against him as she wrapped her legs around his waist. “",
+        "max_topic_prob": 0.8285675048828125,
+        "normalized_position": 0.46863872911531085,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1711
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "His hand moved lightly over her shoulder and back, trailing his fingers over her skin. \"",
+        "max_topic_prob": 0.8236550092697144,
+        "normalized_position": 0.049027663653793484,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Collapsing against his chest, she buried her face against the side of his sweat-slick neck, and he wrapped one arm around her waist, the other hand he used to grip her ass and guide himself into her.",
+        "max_topic_prob": 0.8060857057571411,
+        "normalized_position": 0.7838948233360723,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 538
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "His hands cupped her behind, pulling her in tighter to him.",
+        "max_topic_prob": 0.8018712997436523,
+        "normalized_position": 0.4711038071761161,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 1720
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She lifted onto her tiptoes and put her arms around him.",
+        "max_topic_prob": 0.871456503868103,
+        "normalized_position": 0.832515401482719,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She grabbed his arm. “",
+        "max_topic_prob": 0.8397268056869507,
+        "normalized_position": 0.4459642894434583,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She grabbed his arm. “",
+        "max_topic_prob": 0.8397268056869507,
+        "normalized_position": 0.734467996240994,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She slipped her hand into his. “",
+        "max_topic_prob": 0.8356516361236572,
+        "normalized_position": 0.8922418293828965,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 228
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She pressed her body into his.",
+        "max_topic_prob": 0.8341102600097656,
+        "normalized_position": 0.07591103685914169,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He took her hand in his. “",
+        "max_topic_prob": 0.830315887928009,
+        "normalized_position": 0.9835021405450559,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "she pushed.",
+        "max_topic_prob": 0.7178792953491211,
+        "normalized_position": 0.15343589743589744,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 325
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "She started to turn away, but I grabbed her arm. “",
+        "max_topic_prob": 0.7093902826309204,
+        "normalized_position": 0.027487179487179488,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I grasped him by the shoulders and pulled him up so he had to face me. “",
+        "max_topic_prob": 0.6880828142166138,
+        "normalized_position": 0.34974358974358977,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1282
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Dad released her, but didn’t let go completely, sliding his fingers into hers.",
+        "max_topic_prob": 0.6167130470275879,
+        "normalized_position": 0.8767179487179487,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "He stood and lifted me into his arms, cradling my body against his chest as he carried me back to the castle.",
+        "max_topic_prob": 0.5999265313148499,
+        "normalized_position": 0.04594871794871795,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "he said, straightening his shirt with a hard yank at the shoulders, like it had suddenly become too tight. “",
+        "max_topic_prob": 0.5990766286849976,
+        "normalized_position": 0.3292307692307692,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 1182
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His hand clamped down on her arm. “",
+        "max_topic_prob": 0.838357150554657,
+        "normalized_position": 0.7899367610668133,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She tugged at his arm. “",
+        "max_topic_prob": 0.8268718719482422,
+        "normalized_position": 0.388369535331317,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He took her hand in his.",
+        "max_topic_prob": 0.8174816370010376,
+        "normalized_position": 0.5864723673357163,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His hand encircled her waist, tugging her closer.",
+        "max_topic_prob": 0.8159920573234558,
+        "normalized_position": 0.4297497937860874,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She kept struggling, and his hand went to the small of her back to pull her closer to him. “",
+        "max_topic_prob": 0.8137202262878418,
+        "normalized_position": 0.7914489964256255,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She brought her arms together and turned them around, her wrists facing him. “",
+        "max_topic_prob": 0.8086613416671753,
+        "normalized_position": 0.23645861974154522,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She brings her arm around , almost pinning me to the counter. “",
+        "max_topic_prob": 0.6784803867340088,
+        "normalized_position": 0.19265244287337457,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1526
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She hands Mia over to Drake and grabs me into her arms. “",
+        "max_topic_prob": 0.6770837306976318,
+        "normalized_position": 0.6380507511677819,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1104
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Darcie slaps my arm , bringing my attention back to her. “",
+        "max_topic_prob": 0.633982241153717,
+        "normalized_position": 0.056179775280898875,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "Reggie yanks her in his arms and holds Darcie tightly as she breaks down.",
+        "max_topic_prob": 0.6216011047363281,
+        "normalized_position": 0.9001388713546269,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1184
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I grab tightly to Presley as Drake drapes his arms around her shoulder.",
+        "max_topic_prob": 0.6182011365890503,
+        "normalized_position": 0.033834111854563816,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "He yanks up his sleeve and flashes the pin up girl with my face in my direction. “",
+        "max_topic_prob": 0.6095065474510193,
+        "normalized_position": 0.9828304507006691,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1839
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She placed a hand on his shoulder. “",
+        "max_topic_prob": 0.8422585725784302,
+        "normalized_position": 0.5411040847718339,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 339
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He pulled her into his arms and embraced her.",
+        "max_topic_prob": 0.8337435722351074,
+        "normalized_position": 0.8109724833361819,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He knelt next to her and gently eased her into his arms so he could hold her.",
+        "max_topic_prob": 0.8171794414520264,
+        "normalized_position": 0.9239446248504529,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He pulled her into his arms, and she dropped her head onto his chest.",
+        "max_topic_prob": 0.808350682258606,
+        "normalized_position": 0.5450350367458554,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She moved against his hand.",
+        "max_topic_prob": 0.8043517470359802,
+        "normalized_position": 0.3895060673389164,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She wrapped her arms around Soren’s body, clawing at him, holding him close.",
+        "max_topic_prob": 0.7970410585403442,
+        "normalized_position": 0.6921893693385746,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He pulled her back into his arms. “",
+        "max_topic_prob": 0.8633999824523926,
+        "normalized_position": 0.9243193354868482,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He grabbed her around the waist, his grip feather-light, and turned her around into his arms. “",
+        "max_topic_prob": 0.8612282276153564,
+        "normalized_position": 0.5055376095985233,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He lifted her up against him, his hands cupped around her backside.",
+        "max_topic_prob": 0.852418839931488,
+        "normalized_position": 0.6612828795569913,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "His hands went to her shoulders. “",
+        "max_topic_prob": 0.8348160982131958,
+        "normalized_position": 0.7014305491462852,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Her hands came up, pushing against his ches t, her eyes widening into his.",
+        "max_topic_prob": 0.816816508769989,
+        "normalized_position": 0.5059990770650669,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She unfolded her arms, pushing a hand out as if to hold him off. “",
+        "max_topic_prob": 0.8145581483840942,
+        "normalized_position": 0.38209506229810797,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "He pulls her toward him.",
+        "max_topic_prob": 0.7672066688537598,
+        "normalized_position": 0.8364903773298985,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She inches her body closer to his.",
+        "max_topic_prob": 0.7413618564605713,
+        "normalized_position": 0.8345203818760418,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She pulls her arm from my grip. “",
+        "max_topic_prob": 0.7327412366867065,
+        "normalized_position": 0.7495075011365359,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She places her hand on Gladys’s arm. “",
+        "max_topic_prob": 0.6579756736755371,
+        "normalized_position": 0.282618578572511,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Eileen grabs the other.",
+        "max_topic_prob": 0.46397167444229126,
+        "normalized_position": 0.9681769965146234,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "He holds me at arms length and scans me from top to toe while Mum wrings her hands in the doorway. “",
+        "max_topic_prob": 0.548568844795227,
+        "normalized_position": 0.9528249373782355,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 470
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Allow me,” he offers, moving around behind me and unfastening the hook before sliding the straps down my arms and off.",
+        "max_topic_prob": 0.5162650942802429,
+        "normalized_position": 0.2824937378235458,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He shrugged to himself and reached over to take hold of her other hand.",
+        "max_topic_prob": 0.7763516902923584,
+        "normalized_position": 0.774350821409645,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "She raised her fist.",
+        "max_topic_prob": 0.7118406295776367,
+        "normalized_position": 0.36555378908320085,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "With obvious reluctance, she lifted him from my arms.",
+        "max_topic_prob": 0.7068517208099365,
+        "normalized_position": 0.5105458399576046,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Her hands twisted in her lap. ‘",
+        "max_topic_prob": 0.6704582571983337,
+        "normalized_position": 0.9596184419713831,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Delilah clasped her hands tightly together in her lap. ‘",
+        "max_topic_prob": 0.6611737012863159,
+        "normalized_position": 0.17965023847376788,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "My fingers brushed against her arm before she was abruptly dragged away towards the still waiting vehicle. ‘",
+        "max_topic_prob": 0.6500170230865479,
+        "normalized_position": 0.7822999470058294,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She clasped her hands tight on her lap.",
+        "max_topic_prob": 0.7179197072982788,
+        "normalized_position": 0.6264090177133655,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She pushed.",
+        "max_topic_prob": 0.7178792953491211,
+        "normalized_position": 0.7059178743961353,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 514
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Her grip tightened, and I grabbed onto her gross skinny arm.",
+        "max_topic_prob": 0.6740527749061584,
+        "normalized_position": 0.5456924315619968,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "A second later, Michelle looked pissed and disgusted as all hell as he stuck out his big hands, pawing her off him. “",
+        "max_topic_prob": 0.6408721208572388,
+        "normalized_position": 0.19162640901771336,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I took her hand.",
+        "max_topic_prob": 0.6375004053115845,
+        "normalized_position": 0.11252012882447665,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She held on for the few seconds she needed.",
+        "max_topic_prob": 0.6229579448699951,
+        "normalized_position": 0.7381239935587761,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He pulled her tighter to him. “",
+        "max_topic_prob": 0.8291441202163696,
+        "normalized_position": 0.7041526953830282,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He made a sound and moved his arm, setting his hand on her hip. “",
+        "max_topic_prob": 0.813376784324646,
+        "normalized_position": 0.5483621356719113,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "he said, taking her by the arm. “",
+        "max_topic_prob": 0.8105740547180176,
+        "normalized_position": 0.4962599948413722,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "He took her head in both hands and held her. “",
+        "max_topic_prob": 0.809266209602356,
+        "normalized_position": 0.6017539334537013,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "His hand was on her back instantly. “",
+        "max_topic_prob": 0.783522367477417,
+        "normalized_position": 0.5099303585246324,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "His hands took hold of her bottom and spread her open.",
+        "max_topic_prob": 0.7830847501754761,
+        "normalized_position": 0.7498065514573123,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 541
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He gripped her calf and eased it over his shoulder. “",
+        "max_topic_prob": 0.8517473936080933,
+        "normalized_position": 0.5148073452924318,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He grabbed her waist and held her down. “",
+        "max_topic_prob": 0.8441953659057617,
+        "normalized_position": 0.6532215263772423,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He stood and lifted her into his arms. “",
+        "max_topic_prob": 0.8393163681030273,
+        "normalized_position": 0.7940770618830273,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 376
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She sat up and thought to push him away, but his rough hands cupped her backside and held her close.",
+        "max_topic_prob": 0.8209099769592285,
+        "normalized_position": 0.7849485192654707,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He held her close.",
+        "max_topic_prob": 0.8164345026016235,
+        "normalized_position": 0.5260588047977922,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He reached down, cupped her ass, and lifted her against him.",
+        "max_topic_prob": 0.8137167692184448,
+        "normalized_position": 0.7269928882284259,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He put his arm around her, pulling her close. “",
+        "max_topic_prob": 0.8768415451049805,
+        "normalized_position": 0.1142004611420046,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He tucked her under his arm and held her for a moment. “",
+        "max_topic_prob": 0.8440062999725342,
+        "normalized_position": 0.6466838464668385,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "When he was standing next to her, she wrapped her arms around his neck and pulled him close, then held him tight for a minute.",
+        "max_topic_prob": 0.8317676782608032,
+        "normalized_position": 0.6986301369863014,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He stepped behind her, raised her arms back up, reached around her and placed his hands over hers, holding her steady. “",
+        "max_topic_prob": 0.8250812292098999,
+        "normalized_position": 0.5077987250779873,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She ran her hands up and down his arm, almost like she needed the contact. “",
+        "max_topic_prob": 0.8125324845314026,
+        "normalized_position": 0.8211040282110402,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "He pushed his hips against her, rubbing the length of his body on her. “",
+        "max_topic_prob": 0.7969417572021484,
+        "normalized_position": 0.861657398616574,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Red painted claws grip his nape as his hands press against her lower back.",
+        "max_topic_prob": 0.6440997123718262,
+        "normalized_position": 0.4505588078765301,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 469
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "she teases, the hand on his thigh crawling up higher with lazy strokes.",
+        "max_topic_prob": 0.6339141130447388,
+        "normalized_position": 0.44278871740287384,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 396
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She lifts a clawed hand, aiming to strike, just as L decides to enter the common area from his bedroom.",
+        "max_topic_prob": 0.5305796265602112,
+        "normalized_position": 0.26205428419372007,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 110
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.01877368239751981,
+        "n_sentences": 109
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.013197278911564626,
+        "n_sentences": 97
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.01536,
+        "n_sentences": 144
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.01492743607463718,
+        "n_sentences": 108
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.015341701534170154,
+        "n_sentences": 66
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.027877449627380625,
+        "n_sentences": 101
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.014708972473208657,
+        "n_sentences": 140
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.02101712506486767,
+        "n_sentences": 81
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0014504765851636966,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00032017075773745996,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0013962934755013963,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0008562560205501445,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0007620789513793629,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0016276703967446592,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0002813731007315701,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 82
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "2.1",
+    "taxonomy_main_name": "Attraction & Sexual Tension",
+    "taxonomy_secondary_id": "2.3",
+    "taxonomy_secondary_name": "Explicit Sexual Acts",
+    "taxonomy_confidence": 0.87,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}
