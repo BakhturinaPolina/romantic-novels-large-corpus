@@ -566,7 +566,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -1013,7 +1013,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -1327,7 +1327,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 

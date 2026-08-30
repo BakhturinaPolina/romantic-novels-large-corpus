@@ -1,33 +1,48 @@
 # Frozen H6 narrative arc semantics prompts.
+#
+# v1.1: force codebook IDs (ARC_0–ARC_10|MIXED) via explicit JSON schemas — v1.0
+# returned free-form labels ("Conflict", "Obstacle", CELL_*) that only soft-mapped
+# via aliases, while Pass A/B were mostly UNKNOWN.
 
 hypothesis: H6
 name: arc_semantics
-version: "1.0"
+version: "1.1"
 frozen: true
 
 codes:
   - id: ARC_0
     label: off_target
+    definition: Not a narrative-arc role for the main couple (or not arc content).
   - id: ARC_1
     label: misunderstanding
+    definition: Hidden information, secret, or misunderstanding driving the arc.
   - id: ARC_2
     label: escalation_conflict
+    definition: Main-couple conflict escalation / falling action.
   - id: ARC_3
     label: separation_breakup_threat
+    definition: Separation, breakup threat, or rupture of the couple bond.
   - id: ARC_4
     label: relationship_caused_distress
+    definition: Distress caused by the relationship itself (not purely external plot).
   - id: ARC_5
     label: disclosure
+    definition: Revelation / disclosure that moves the arc toward resolution.
   - id: ARC_6
     label: repair
+    definition: Repair, reconciliation work, conflict resolution in progress.
   - id: ARC_7
     label: restored_trust
+    definition: Restored trust / reassurance after rupture.
   - id: ARC_8
     label: mutual_commitment_final_payoff
+    definition: Mutual commitment / final relational payoff (HEA-adjacent arc close).
   - id: ARC_9
     label: external_plot_conflict
+    definition: External/plot obstacle (antagonist, job, family) not main-couple conflict per se.
   - id: ARC_10
     label: unclear_arc_role
+    definition: Arc-relevant but role unclear / mixed.
 
 fields:
   - main_couple
@@ -40,6 +55,15 @@ constructs:
   REFINED_RISING: [ARC_5, ARC_6, ARC_7, ARC_8]
   EXTERNAL_PLOT_CONFLICT: [ARC_9]
 
+decision_rules: |
+  1. Prefer MOST SPECIFIC ARC_# for the main couple's narrative role.
+  2. High conflict-label fidelity ≠ main-couple conflict; use ARC_9 for external plot.
+  3. Falling cluster: ARC_1–ARC_4; rising cluster: ARC_5–ARC_8; external: ARC_9.
+  4. If not about the main couple's arc → ARC_0 (or low main_couple_prob).
+  5. If two codes compete and neither reaches ~70% share on Pass B → MIXED (or ARC_10).
+  6. Pass C must return arc_role as ARC_0–ARC_10 or MIXED — never "Conflict", "Obstacle",
+     CELL_*, or REFINED_FALLING as the code itself (those are construct buckets, not codes).
+
 pass_b_shows_position: true
 
 adjudication_actions:
@@ -50,36 +74,85 @@ adjudication_actions:
   - SPLIT
   - EXCLUDE_FROM_HYPOTHESIS
 
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+
 phrasing:
   primary:
     system: |
-      You code narrative-arc roles for romance topics with a main-couple filter.
+      You are auditing BERTopic topics for a romance-novel research study.
+      Code narrative-arc roles with a main-couple filter.
       High conflict-label fidelity is not the same as main-couple conflict.
-      Position/tertile is visible; ratings stay hidden. JSON only.
+      Position/tertile may be visible; ratings stay hidden.
+
+      VALID CODES (use these IDs only — never free-form words):
+      ARC_0 off_target | ARC_1 misunderstanding | ARC_2 escalation_conflict |
+      ARC_3 separation_breakup_threat | ARC_4 relationship_caused_distress |
+      ARC_5 disclosure | ARC_6 repair | ARC_7 restored_trust |
+      ARC_8 mutual_commitment_final_payoff | ARC_9 external_plot_conflict |
+      ARC_10 unclear_arc_role | MIXED
+
+      CRITICAL:
+      - Every consensus_code / dominant_code / arc_role MUST be ARC_0–ARC_10 or MIXED.
+      - Never return CELL_*, BOOK_*, "Conflict", "Obstacle", "FALLING", or tertile names as codes.
+      - REFINED_FALLING / REFINED_RISING / EXTERNAL_PLOT_CONFLICT are construct buckets —
+        report them separately if asked, but arc_role itself must be an ARC_# ID.
+      Respond with JSON only matching the schema.
     pass_a: |
-      Lexical arc coding for topic {topic_id}.
+      Pass A — lexical only (prompt v1.1).
+      Assign one ARC_# per keyword list (Main, KeyBERT, POS, MMR), then consensus.
+      Topic {topic_id}
       Main: {main}
       KeyBERT: {keybert}
       POS: {pos}
       MMR: {mmr}
-      JSON: per_rep, consensus_code, disagreement, rationale.
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "ARC_#", "KeyBERT": "ARC_#", "POS": "ARC_#", "MMR": "ARC_#"}},
+      "consensus_code": "ARC_#", "disagreement": bool,
+      "rationale": "cite cues that forced the ARC_# code"}}
     pass_b: |
-      Contextual arc coding for topic {topic_id} (tertile visible; cells blinded):
+      Pass B — contextual sentences (tertile visible; rating cells blinded as CELL_*; prompt v1.1).
+      For each sentence note main_couple (yes/no/unclear) and ARC_# code.
+      CELL_* and tertile labels are NOT codes. MIXED if no code >= 70%.
+      Topic {topic_id}
+      Sentences:
       {sentences_block}
-      For each sentence note main_couple (yes/no/unclear) and ARC code.
-      JSON: sentence_codes, proportions_by_tertile, dominant_code, main_couple_prob estimate, rationale.
+      Return JSON: {{"topic_id": int,
+      "sentence_codes": [{{"sid": "...", "code": "ARC_#", "main_couple": "yes|no|unclear"}}],
+      "proportions": {{"ARC_#": float}},
+      "proportions_by_tertile": {{"begin": {{"ARC_#": float}}, "middle": {{"ARC_#": float}}, "end": {{"ARC_#": float}}}},
+      "dominant_code": "ARC_#|MIXED",
+      "main_couple_prob": float,
+      "rationale": "..."}}
     pass_c: |
-      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
-      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
-      Assign arc_role and whether topic enters REFINED_FALLING / REFINED_RISING / EXTERNAL_PLOT_CONFLICT.
+      Pass C — adjudication (prompt v1.1). Taxonomy metadata is revealed. Still ignore ratings.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Resolve to a single arc_role from ARC_0–ARC_10 or MIXED. Do not invent new labels.
+      If Pass A/B used free-form words (Conflict, Obstacle, …), map them onto the nearest ARC_# now.
+      Also state which construct bucket applies (optional): REFINED_FALLING / REFINED_RISING /
+      EXTERNAL_PLOT_CONFLICT / none.
+      Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+      "arc_role": "ARC_#|MIXED",
+      "main_couple": true|false,
+      "construct_bucket": "REFINED_FALLING|REFINED_RISING|EXTERNAL_PLOT_CONFLICT|none",
+      "proposed_constructs": ["..."],
+      "manual_review_required": bool,
+      "rationale": "..."}}
 
   alternate:
     system: |
-      Arc-semantics auditor: main-couple rising/falling vs external plot conflict. JSON only.
+      Arc-semantics auditor (prompt v1.1). Codes MUST be ARC_0–ARC_10 or MIXED only.
+      Main-couple rising/falling vs external plot conflict. JSON only.
     pass_a: |
-      Keywords {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      Lexical pass v1.1 for topic {topic_id}. Assign one ARC_# per representation, then consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code (ARC_#), disagreement, rationale.
     pass_b: |
-      Sentences {topic_id} with tertiles:
+      Contextual pass v1.1 for topic {topic_id} with tertiles. Most-specific ARC_# codes;
+      never use CELL_* as codes; MIXED if none >=70%.
       {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code (ARC_#|MIXED), main_couple_prob, rationale.
     pass_c: |
-      Adjudicate {topic_id} tax={taxonomy_id}/{taxonomy_name}. Action + arc_role.
+      Adjudicate topic {topic_id} (v1.1): lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Action + arc_role (ARC_#|MIXED) required.

@@ -213,15 +213,15 @@
       "sorts",
       "crowded"
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.0,
+    "non_couple_prob":0.0,
+    "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"UNKNOWN",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -236,8 +236,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -380,26 +380,28 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Emotional Safety, Reassurance & Caretaking"
+      "Emotional Safety, Reassurance & Caretaking",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -911,26 +913,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S9",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"8.1",
     "current_taxonomy_name":"Domestic Spaces & Routines",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "housing_security"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -989,26 +991,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":"6.6",
     "secondary_name":"Material Glamour & Consumption",
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -1310,15 +1312,15 @@
       "eyeing",
       "described"
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.0,
+    "non_couple_prob":0.0,
+    "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"ANTAGONIST",
+    "arc_role":"UNKNOWN",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
@@ -1518,13 +1520,13 @@
     "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H5",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3,H5",
     "review_status":"audited",
     "current_taxonomy_id":"7.3",
     "current_taxonomy_name":"Risk, Danger & External Crises",
@@ -1534,10 +1536,10 @@
 
     ],
     "adjudication_actions":[
-
+      "H3:EXCLUDE_FROM_HYPOTHESIS"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -1634,13 +1636,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I1",
     "hea_code":"HEA_CONFIRMED",
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -1649,11 +1651,13 @@
     "proposed_constructs":[
       "Commitment declarations and HEA closure",
       "Positive emotional payoff and relief",
-      "Reconciliation and emotional resolution"
+      "Reconciliation and emotional resolution",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H2:CONFIRM"
+      "H2:CONFIRM",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -1757,13 +1761,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -1772,10 +1776,12 @@
     "proposed_constructs":[
       "Caretaking & Nurturing",
       "Emotional Safety & Reassurance",
-      "Family\/Kinship Bonds"
+      "Family\/Kinship Bonds",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -2005,27 +2011,29 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S11",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_hypotheses":"H4",
+    "lexical_context_agreement":"H1,H3",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Emotional Safety, Reassurance & Caretaking"
+      "Emotional Safety, Reassurance & Caretaking",
+      "practical_help_other"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":37,
@@ -2086,7 +2094,7 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
@@ -2160,13 +2168,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
@@ -2175,10 +2183,12 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Ongoing courtship bonding",
-      "Relational distress and support-seeking"
+      "Relational distress and support-seeking",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.95,
@@ -2406,11 +2416,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"3.2",
@@ -2421,8 +2431,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -2512,13 +2522,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"H1",
+    "mixed_hypotheses":"H4",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -2527,10 +2537,14 @@
     "proposed_constructs":[
       "Caretaking Speech Acts",
       "Emotional Safety & Reassurance",
-      "Promise & Future-Tense Commitment"
+      "Promise & Future-Tense Commitment",
+      "emotional reassurance",
+      "future-tense safety promises",
+      "verbal soothing"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -2592,13 +2606,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S3",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -2607,10 +2621,12 @@
     "proposed_constructs":[
       "Caretaking & Comfort",
       "Emotional Safety & Reassurance",
-      "Secrets, Misunderstandings & Hidden Information (secondary)"
+      "Secrets, Misunderstandings & Hidden Information (secondary)",
+      "trust"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -2754,26 +2770,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"8.2",
     "current_taxonomy_name":"Public, Travel & Leisure Spaces",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "public\/leisure space setting"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -2916,7 +2932,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -2930,10 +2946,14 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "courtship_ritual",
+      "everyday_relational_interaction",
+      "leisure_bonding"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -3037,13 +3057,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
@@ -3051,10 +3071,14 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "everyday_relational_bonding",
+      "ongoing_courtship",
+      "public_leisure_interaction"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.95,
@@ -3192,13 +3216,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"H1",
+    "mixed_hypotheses":"H4",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -3207,10 +3231,14 @@
     "proposed_constructs":[
       "Caretaking Speech Acts",
       "Emotional Safety & Reassurance",
-      "Promise & Future-Tense Commitment"
+      "Promise & Future-Tense Commitment",
+      "emotional reassurance",
+      "future-tense safety promises",
+      "verbal soothing"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.75,
@@ -3430,7 +3458,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -3443,13 +3471,14 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "family_grief_distress",
+      "parental_loss_narrative"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -3550,7 +3579,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"MIXED",
     "hea_code":"HEA_CONFIRMED",
-    "security_code":"MIXED",
+    "security_code":"S4",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -3565,11 +3594,14 @@
     "proposed_constructs":[
       "Commitment Symbols & Love Tokens (I0\/I5)",
       "Emotional Bonding via Symbolic Exchange (I5)",
-      "Reconciliation & HEA Declarations (I5)"
+      "Reconciliation & HEA Declarations (I5)",
+      "commitment_security",
+      "love_token_as_commitment_signal"
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
-      "H2:CONFIRM_HEA"
+      "H2:CONFIRM_HEA",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -3626,13 +3658,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":"UNKNOWN",
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -3640,11 +3672,15 @@
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
       "Ambivalence Toward Closure",
+      "HEA narrative closure",
       "HEA\/HFN Emotional Settlement",
-      "Reconciliation & Commitment Resolution"
+      "Reconciliation & Commitment Resolution",
+      "commitment resolution",
+      "reconciliation"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -3780,15 +3816,15 @@
       "embarrassment",
       "warned"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"{'protag': ['Alex', 'Jamie'], 'antag': [\"Alex's internal struggle\", \"Jamie's job opportunity\"], 'mentor': ['Therapist\/Counselor'], 'trickster': [\"Alex's colleague\"], 'herald': [\"News of Jamie's job opportunity\"]}",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -3803,8 +3839,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -3863,7 +3899,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":"HEA_CONFIRMED",
-    "security_code":"UNKNOWN",
+    "security_code":"S4",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -3878,11 +3914,13 @@
     "proposed_constructs":[
       "Commitment Declarations & HEA Closure",
       "Everyday Relational Bonding & Domestic Continuity",
-      "Reconciliation & Conflict Resolution"
+      "Reconciliation & Conflict Resolution",
+      "commitment_security"
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H2:PASS_C"
+      "H2:PASS_C",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -3939,15 +3977,15 @@
       "cradled",
       "hovered"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -4148,13 +4186,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -4163,10 +4201,13 @@
     "proposed_constructs":[
       "Emotional Safety & Reassurance",
       "Paranormal\/Immortal Being Caretaking",
-      "Relational Stability Without Physical Contact"
+      "Relational Stability Without Physical Contact",
+      "immortal_character_archetype",
+      "paranormal_being_identity"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -4432,27 +4473,27 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"5.1",
     "current_taxonomy_name":"Family, Kinship & Parenthood",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "family_kinship_ambivalence"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "manual_review_required":false
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "manual_review_required":true
   },
   {
     "topic_id":76,
@@ -4552,7 +4593,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -4565,13 +4606,13 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -4756,12 +4797,12 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"5.1",
@@ -4769,13 +4810,13 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "family_kinship_parenthood"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -4907,14 +4948,14 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S5",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
@@ -4922,14 +4963,16 @@
     "proposed_constructs":[
       "Caretaking",
       "Emotional Safety",
-      "Reassurance"
+      "Reassurance",
+      "practical_care_everyday"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":84,
@@ -5032,10 +5075,10 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H6",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
@@ -5104,12 +5147,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
@@ -5119,10 +5162,14 @@
     "proposed_constructs":[
       "Domestic\/logistical dialogue in ongoing courtship",
       "Everyday relational bonding through conversation",
-      "Speech-act maintenance of relationship continuity"
+      "Speech-act maintenance of relationship continuity",
+      "dialogue_delivery",
+      "everyday_courtship_interaction",
+      "speech_tags"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -5226,13 +5273,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H3,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -5241,13 +5288,15 @@
     "proposed_constructs":[
       "Affective safety-building without physical contact",
       "Caretaking in response to pain or injury",
-      "Emotional reassurance under vulnerability"
+      "Emotional reassurance under vulnerability",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -5427,15 +5476,15 @@
       "feared",
       "anxiety"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -5450,8 +5499,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -5503,12 +5552,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S2",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
@@ -5517,10 +5566,13 @@
     "secondary_name":"Everyday Props & Communication Media",
     "proposed_constructs":[
       "Everyday Props & Communication Media",
-      "Ongoing Courtship & Everyday Relational Bonding"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "belonging",
+      "relational_bonding_everyday"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -5580,11 +5632,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.4",
@@ -5595,8 +5647,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -5695,13 +5747,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -5710,10 +5762,12 @@
     "proposed_constructs":[
       "Caretaking & Comfort",
       "Distress Acknowledgment",
-      "Emotional Safety & Reassurance"
+      "Emotional Safety & Reassurance",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -6087,15 +6141,15 @@
       "instincts",
       "blurted"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"DISCLOSURE",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -6110,8 +6164,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -6290,7 +6344,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6304,10 +6358,14 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "everyday_relational_bonding",
+      "ongoing_courtship",
+      "public_leisure_interaction"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.9,
@@ -6485,11 +6543,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"OBSTACLE",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
@@ -6500,8 +6558,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -6637,26 +6695,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S15",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"6.4",
     "current_taxonomy_name":"Economic Precarity, Security & Dependency",
     "secondary_id":"6.2",
     "secondary_name":"Work & Professional Identity",
     "proposed_constructs":[
-
+      "workplace_status"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.7,
     "manual_review_required":false
   },
   {
@@ -6841,7 +6899,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6855,10 +6913,13 @@
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
       "Domestic Spaces & Routines",
-      "Ongoing Courtship & Everyday Relational Bonding"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "everyday_courtship_bonding",
+      "relational_maintenance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -6960,27 +7021,29 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S7",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Emotional Safety, Reassurance & Caretaking"
+      "Emotional Safety, Reassurance & Caretaking",
+      "physical_protection"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":120,
@@ -7083,11 +7146,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"INTRO",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.2",
@@ -7098,8 +7161,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -7477,26 +7540,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "character_appearance_self_presentation"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -7547,7 +7610,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":"UNKNOWN",
-    "security_code":"UNKNOWN",
+    "security_code":"S4",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -7562,13 +7625,15 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Positive resolution and relief",
-      "Reconciliation and relational repair"
+      "Reconciliation and relational repair",
+      "commitment_security"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.8,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -7629,11 +7694,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"3.2",
@@ -7644,8 +7709,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -7706,11 +7771,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.2",
@@ -7721,8 +7786,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -7860,15 +7925,15 @@
       "choked",
       "sidewalk"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -7883,8 +7948,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -8258,26 +8323,27 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"6.6",
     "current_taxonomy_name":"Material Glamour & Consumption",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "material_glamour_consumption",
+      "ongoing_courtship_everyday_bonding"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -8499,15 +8565,15 @@
       "emotions",
       "stretched"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Catalyst",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -8522,8 +8588,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -8809,18 +8875,18 @@
       "apology",
       "caressed"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -8832,8 +8898,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -9122,13 +9188,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":"HEA_CONDITIONAL_TRAJECTORY",
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -9136,12 +9202,16 @@
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
       "Ambivalence Toward Future Together",
+      "HEA narrative closure",
       "HEA\/HFN Domestic Consolidation",
-      "Reconciliation & Commitment Resolution"
+      "Reconciliation & Commitment Resolution",
+      "commitment resolution",
+      "reconciliation"
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
-      "H2:H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact."
+      "H2:H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact.",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -9280,13 +9350,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
@@ -9294,13 +9364,17 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "everyday_relational_bonding",
+      "ongoing_courtship",
+      "public_leisure_interaction"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.6,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -9358,14 +9432,14 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.1",
@@ -9373,14 +9447,17 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Kinship\/parental nurturing dynamics",
-      "Verbal comfort and support without physical contact"
+      "Verbal comfort and support without physical contact",
+      "non-romantic reassurance",
+      "parental\/familial emotional caretaking"
     ],
     "adjudication_actions":[
-      "H1:RETAXONOMIZE"
+      "H1:RETAXONOMIZE",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "manual_review_required":false
+    "weighted_weight":1.0,
+    "manual_review_required":true
   },
   {
     "topic_id":162,
@@ -9672,23 +9749,24 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":"HEA_PUBLIC_UNION",
-    "security_code":"UNKNOWN",
+    "security_code":"S4",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"5.3a",
     "current_taxonomy_name":"Romantic Social Rituals & Public Couple Recognition",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-
+      "commitment_security"
     ],
     "adjudication_actions":[
-      "H2:CONFIRM_HEA"
+      "H2:CONFIRM_HEA",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -9834,7 +9912,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -9847,13 +9925,13 @@
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:RETAXONOMIZE"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -9912,26 +9990,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -9990,14 +10068,14 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"MIXED",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H3",
+    "lexical_context_agreement":"H1,H3",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"7.3",
@@ -10005,14 +10083,17 @@
     "proposed_constructs":[
       "Caretaking Under External Crisis",
       "Emotional Safety & Reassurance",
-      "Relational Stability Maintenance"
+      "Relational Stability Maintenance",
+      "S1",
+      "S7"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":173,
@@ -10070,13 +10151,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"H1",
+    "mixed_hypotheses":"H4",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -10084,10 +10165,13 @@
     "secondary_name":"Time, Seasons & Temporal Framing",
     "proposed_constructs":[
       "Emotional Safety & Reassurance",
-      "Temporal Framing of Relationship Milestones"
+      "Temporal Framing of Relationship Milestones",
+      "narrative_pacing",
+      "temporal_framing"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -10149,7 +10233,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S9",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -10163,10 +10247,13 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "housing_as_relational_anchor",
+      "shared_domestic_space_in_courtship"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -10224,12 +10311,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
+    "mixed_hypotheses":"H4",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
@@ -10239,13 +10326,16 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Social\/ally network comfort-giving",
-      "Supportive relational communication"
+      "Supportive relational communication",
+      "peer_alliance",
+      "social_support_network"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -10342,11 +10432,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Hidden Information",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
@@ -10357,8 +10447,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -10447,15 +10537,15 @@
       "warmth",
       "admit"
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -10470,8 +10560,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -10979,7 +11069,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
@@ -10994,10 +11084,12 @@
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
       "Emotional Safety & Reassurance",
-      "Everyday Communication Media & Props"
+      "Everyday Communication Media & Props",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -11101,26 +11193,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-
+      "character_appearance_self_presentation"
     ],
     "adjudication_actions":[
-
+      "H3:EXCLUDE_FROM_HYPOTHESIS"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -11178,7 +11270,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
@@ -11193,10 +11285,12 @@
     "proposed_constructs":[
       "Caretaking & Nurturing",
       "Emotional Safety & Reassurance",
-      "Family\/Kinship Bonds"
+      "Family\/Kinship Bonds",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -11259,11 +11353,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"9.2",
@@ -11274,8 +11368,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -11798,13 +11892,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":"CONDITIONAL_HEA \u2014 qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA_UNCONFIRMED status.",
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -11813,11 +11907,15 @@
     "proposed_constructs":[
       "Family & Kinship Bonding (non-physical)",
       "HEA\/HFN Resolution",
-      "Reconciliation & Commitment Declarations"
+      "HEA_resolution",
+      "Reconciliation & Commitment Declarations",
+      "family_kinship_bonds",
+      "reconciliation_narrative"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H2:EVALUATE_HEA_VALIDITY"
+      "H2:EVALUATE_HEA_VALIDITY",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -12082,12 +12180,12 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
@@ -12095,13 +12193,14 @@
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "appearance_self_presentation",
+      "courtship_ritual"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -12158,11 +12257,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"5.1",
@@ -12173,8 +12272,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -12372,11 +12471,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
@@ -12387,8 +12486,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -12531,7 +12630,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -12544,13 +12643,13 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -12646,18 +12745,18 @@
       "caused",
       "memories"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Complicating Factor",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -12669,8 +12768,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -12890,13 +12989,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"",
+    "mixed_hypotheses":"H4",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -12905,10 +13004,12 @@
     "proposed_constructs":[
       "Caretaking Speech Acts",
       "Emotional Safety & Reassurance",
-      "Promise & Future-Tense Commitment"
+      "Promise & Future-Tense Commitment",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -13296,7 +13397,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -13309,10 +13410,13 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Emotional reassurance and relational caretaking in ongoing courtship"
+      "Emotional reassurance and relational caretaking in ongoing courtship",
+      "everyday_relational_bonding",
+      "ongoing_courtship"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -13539,11 +13643,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"7.1",
@@ -13554,8 +13658,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -13698,13 +13802,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -13713,10 +13817,12 @@
     "proposed_constructs":[
       "Caretaking & Comfort",
       "Emotional Safety & Reassurance",
-      "Ongoing Relational Bonding (non-contact)"
+      "Ongoing Relational Bonding (non-contact)",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -13770,7 +13876,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -13783,13 +13889,13 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "character_appearance_distress"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13848,7 +13954,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":"UNKNOWN",
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -13863,10 +13969,12 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Reconciliation after conflict or misunderstanding",
-      "Vulnerability disclosure and trust-building"
+      "Vulnerability disclosure and trust-building",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -13965,18 +14073,18 @@
       "sank",
       "memories"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict Resolution",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -13988,8 +14096,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -14156,13 +14264,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -14171,13 +14279,15 @@
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
       "Emotional Safety & Reassurance",
-      "Promise \/ Vow \/ Future-Tense Speech Acts"
+      "Promise \/ Vow \/ Future-Tense Speech Acts",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.75,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -14237,11 +14347,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"5.2",
@@ -14252,8 +14362,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -14478,7 +14588,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -14491,13 +14601,13 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -14588,11 +14698,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":null,
@@ -14603,8 +14713,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -14806,13 +14916,13 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"8.2",
     "current_taxonomy_name":"Public, Travel & Leisure Spaces",
@@ -14822,10 +14932,10 @@
 
     ],
     "adjudication_actions":[
-
+      "H3:EXCLUDE_FROM_HYPOTHESIS"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -14967,11 +15077,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":null,
@@ -14982,8 +15092,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -15045,11 +15155,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict Initiator",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.4",
@@ -15060,8 +15170,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -15193,26 +15303,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "character_appearance_self_presentation"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.8,
     "manual_review_required":false
   },
   {
@@ -15358,11 +15468,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"8.5",
@@ -15373,8 +15483,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -15430,14 +15540,14 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.2",
@@ -15445,14 +15555,17 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Interpersonal safety and comfort-seeking",
-      "Supportive relational communication"
+      "Supportive relational communication",
+      "peer_belonging",
+      "social_support_network"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":274,
@@ -15634,13 +15747,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H3",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -15649,10 +15762,13 @@
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
       "Emotional Safety & Reassurance",
-      "Promise \/ Vow \/ Future-Tense Speech Acts"
+      "Promise \/ Vow \/ Future-Tense Speech Acts",
+      "emotional_reassurance",
+      "promise_vow_future_speech"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -15871,15 +15987,15 @@
       "damp",
       "focused"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -15894,8 +16010,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -16043,15 +16159,15 @@
       "admit",
       "shock"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"EXTERNAL_PLOT_CONFLICT",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -16066,8 +16182,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -16126,11 +16242,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Instigator",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
@@ -16141,8 +16257,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -16242,7 +16358,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
@@ -16257,13 +16373,15 @@
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
       "Emotional Safety & Reassurance",
-      "Relational Security"
+      "Relational Security",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -16438,7 +16556,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
@@ -16451,13 +16569,13 @@
     "secondary_id":"4.4",
     "secondary_name":"Conflict, Distance & Breakup Threats",
     "proposed_constructs":[
-
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -16635,12 +16753,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
+    "mixed_hypotheses":"H4",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
@@ -16650,10 +16768,12 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Social\/ally network comfort-giving",
-      "Supportive relational communication"
+      "Supportive relational communication",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.3,
@@ -16709,11 +16829,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
@@ -16724,8 +16844,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -16778,19 +16898,19 @@
       "circled",
       "tipped"
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.0,
+    "non_couple_prob":0.0,
+    "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.5",
@@ -16801,8 +16921,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -16896,7 +17016,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":"UNKNOWN",
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -16911,10 +17031,12 @@
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
       "Reconciliation and repair of relational rupture",
-      "Vulnerability disclosure under distress"
+      "Vulnerability disclosure under distress",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -17016,12 +17138,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
+    "mixed_hypotheses":"H4",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
@@ -17030,10 +17152,12 @@
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
-      "Emotional Safety & Reassurance"
+      "Emotional Safety & Reassurance",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -17266,11 +17390,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Hidden Information",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
@@ -17281,8 +17405,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -17340,7 +17464,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
@@ -17353,13 +17477,13 @@
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.5,
     "manual_review_required":false
   },
   {
@@ -17421,11 +17545,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"7.1",
@@ -17436,8 +17560,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -17523,11 +17647,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"FALLING",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
@@ -17538,8 +17662,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -17640,26 +17764,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"8.2",
     "current_taxonomy_name":"Public, Travel & Leisure Spaces",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "public\/leisure space setting"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -17709,15 +17833,15 @@
       "tugged",
       "fought"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"Internal Struggle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -17732,8 +17856,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -17791,12 +17915,12 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
@@ -17804,13 +17928,13 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "character_appearance_distress"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -18177,23 +18301,25 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S5",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H1,H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Ongoing Courtship & Everyday Relational Bonding"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "practical_care_everyday"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -18248,7 +18374,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -18262,10 +18388,14 @@
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Public\/Travel\/Leisure Spaces"
+      "Public\/Travel\/Leisure Spaces",
+      "everyday_relational_bonding",
+      "ongoing_courtship",
+      "public_leisure_interaction"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -18642,26 +18772,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"8.2",
     "current_taxonomy_name":"Public, Travel & Leisure Spaces",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "public\/leisure space setting"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.75,
     "manual_review_required":false
   },
   {
@@ -18719,14 +18849,14 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H1,H3,H4",
+    "mixed_hypotheses":"H1,H4",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.1",
@@ -18734,14 +18864,17 @@
     "proposed_constructs":[
       "Caretaking & Comfort",
       "Emotional Safety & Reassurance",
-      "Family\/Kinship Support"
+      "Family\/Kinship Support",
+      "non-romantic reassurance",
+      "parental\/familial emotional caretaking"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.2,
-    "manual_review_required":false
+    "weighted_weight":0.5,
+    "manual_review_required":true
   },
   {
     "topic_id":341,
@@ -19003,11 +19136,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"7.1",
@@ -19018,8 +19151,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -19076,26 +19209,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "appearance_self_presentation"
     ],
     "adjudication_actions":[
-
+      "H3:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "weighted_weight":0.35,
     "manual_review_required":false
   },
   {
@@ -19270,7 +19403,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S2",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -19285,10 +19418,13 @@
     "proposed_constructs":[
       "Domestic\/Logistical Interaction",
       "Ongoing Courtship & Everyday Relational Bonding",
-      "Relational Maintenance"
+      "Relational Maintenance",
+      "belonging",
+      "relational_bonding"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -19475,13 +19611,13 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
@@ -19491,10 +19627,10 @@
 
     ],
     "adjudication_actions":[
-
+      "H3:EXCLUDE_FROM_HYPOTHESIS"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -19552,13 +19688,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S5",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H1",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H3,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -19567,13 +19703,15 @@
     "proposed_constructs":[
       "Caretaking Behavior",
       "Domestic Comfort as Intimacy Scaffold",
-      "Emotional Safety & Reassurance"
+      "Emotional Safety & Reassurance",
+      "practical_care_everyday"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.25,
+    "weighted_weight":0.55,
     "manual_review_required":false
   },
   {
@@ -19620,12 +19758,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S1",
     "care_protection_code":"UNKNOWN",
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H3",
     "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
@@ -19635,10 +19773,12 @@
     "proposed_constructs":[
       "Caretaking & Comfort",
       "Emotional Safety & Reassurance",
-      "Positive Resolution & Relief"
+      "Positive Resolution & Relief",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -19738,7 +19878,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S1",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
@@ -19752,10 +19892,12 @@
     "secondary_name":"Kissing & Non-Explicit Affection",
     "proposed_constructs":[
       "Caretaking Without Explicit Contact",
-      "Emotional Safety & Reassurance"
+      "Emotional Safety & Reassurance",
+      "emotional_reassurance"
     ],
     "adjudication_actions":[
-      "H1:RETAXONOMIZE"
+      "H1:RETAXONOMIZE",
+      "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -19858,11 +20000,11 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"OBSTACLE",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"unaudited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.1",
@@ -19873,8 +20015,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -19975,26 +20117,26 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S13",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"1.6",
     "current_taxonomy_name":"Character Appearance & Self-Presentation",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "appearance_grooming"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.7,
     "manual_review_required":false
   },
   {
@@ -20124,18 +20266,18 @@
       "threat",
       "memories"
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"UNKNOWN",
-    "arc_role":"INNER_CONFLICT",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -20147,8 +20289,8 @@
     "adjudication_actions":[
 
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -20197,7 +20339,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"UNKNOWN",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -20211,10 +20353,13 @@
     "secondary_name":"Everyday Props & Communication Media",
     "proposed_constructs":[
       "Everyday Props & Communication Media",
-      "Ongoing Courtship & Everyday Relational Bonding"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "everyday_relational_bonding",
+      "ongoing_courtship_ritual"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H3:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.95,
@@ -20466,12 +20611,12 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"MIXED",
+    "security_code":"S0",
     "care_protection_code":"MIXED",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3,H4",
+    "mixed_hypotheses":"H4",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
@@ -20480,13 +20625,15 @@
     "secondary_name":null,
     "proposed_constructs":[
       "Caretaking Without Physical Contact",
-      "Emotional Safety & Reassurance"
+      "Emotional Safety & Reassurance",
+      "non-security narrative content"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:REINTERPRET",
+      "H3:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.1,
+    "strict_weight":1.0,
+    "weighted_weight":0.8,
     "manual_review_required":false
   }
 ]

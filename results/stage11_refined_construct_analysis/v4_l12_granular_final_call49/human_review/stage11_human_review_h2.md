@@ -19,9 +19,9 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 ### Topic 29 — Confessing Long-Held Love {#topic-h2-29}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
+- **Mixed:** False
 - **Adjudication action:** `CONFIRM`
 
 **Stage-08 snippets**
@@ -52,7 +52,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
   - All four representations converge on H2. The lexical profile combines romantic love vocabulary (love, loved, falling, always) with conflict and emotional processing terms (hated, forgive, crushed, spite, apologize, reflection) and no resolution or HEA payoff markers. The forgive/apologize signals are present but per audit rules confession and apology alone do not constitute HEA. The piece sits in mid-arc emotional reckoning territory.
 - **Pass B — contextual:** **H2_ILY_RECIPROCAL — H2 ILY RECIPROCAL**
   - {'overall': 'Topic 29 is saturated with ILY declarations across all four books, but HEA credibility varies substantially by position and relational target. BOOK_003 and BOOK_004 show the strongest HEA structural signatures: end-tertile clustering, named romantic addressees, reciprocal or query-confirmed mutuality, and intensity markers. BOOK_001 is compromised by heavy familial framing (Mom, child) that dilutes romantic couple identification despite end-tertile placement. BOOK_005 is positionally premature (middle tertile) for HEA classification. Across all books, the dominant pattern is present-state declaration without explicit future-commitment language, meaning these passages satisfy the emotional payoff criterion but do not independently confirm durable HEA without surrounding narrative context. Familial ILY tokens (Mom-directed) are coded separately and should not be weighted toward romantic HEA scoring.', 'hea_audit_flag': 'BOOK_001 and BOOK_005 require additional context before HEA classification; BOOK_003 and BOOK_004 are provisionally HEA-eligible pending rupture-resolution confirmation'}
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
 
 ---
 
@@ -102,8 +102,8 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 ### Topic 65 — Declaring A True Partnership {#topic-h2-65}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
 - **Mixed:** False
 - **Adjudication action:** `PASS_C`
 
@@ -159,7 +159,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
   - All four representers converge on H2. The topic centers on active, mutual, ongoing dating with shared identity markers ('we', 'together', 'partners'). 'Officially', 'engaged', 'longest', and 'intend' across KeyBERT and MMR suggest a relationship moving toward or already at committed status. 'Failure' and 'forgetting' introduce reflective or conflictual texture but do not redirect the dominant signal away from an established or formalizing couple dynamic. No HEA payoff markers (proposal resolution, wedding, explicit forever-framing) are present, confirming H2 rather than H3.
 - **Pass B — contextual:** **H2_ESTABLISHED_TOGETHERNESS — H2 ESTABLISHED TOGETHERNESS**
   - Across all four books the dominant signal is established or developing togetherness, but the corpus is saturated with barriers: a stated breakup (BOOK_003), an unexplained rupture (BOOK_006), self-doubt (BOOK_004_4), and jealousy/conflict (BOOK_003_5). Future-oriented language exists in end-tertile positions (BOOK_003_3, BOOK_004_3) but remains conditional or aspirational rather than declarative. Mutuality is clearest in BOOK_004 but even there the excerpt is a statement of intent, not a confirmed relational resolution. HEA criteria — settled union, resolved rupture, forward-committed payoff — are not met by any excerpt individually or collectively.
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
 
 ---
 
@@ -209,8 +209,8 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 ### Topic 157 — Swearing to Save Him From Himself {#topic-h2-157}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY**
-- **Normalised category:** —
+- **New category:** **H2_3 — mutual commitment**
+- **Normalised category:** H2_3 — mutual commitment
 - **Mixed:** False
 - **Adjudication action:** `H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact.`
 
@@ -234,7 +234,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
   - All four representations converge on H2. KeyBERT and MMR both surface 'confessed' alongside tension markers (tense, gritted, begged, dump, worries), indicating a conflict/confession arc that is mid-story rather than resolved. POS adds desperation and dislike, reinforcing unresolved emotional stakes. Main keywords show optimism and enthusiasm but no HEA payoff language (no reunion, commitment, or relational resolution). Confession alone does not qualify as HEA per audit rules, so H2 is the correct placement.
 - **Pass B — contextual:** **H2_NAME_INVOCATION — H2 NAME INVOCATION**
   - Across all 21 sentences the signal is dominated by name-calling fragments and character-trait observations. The only relational action present is apology (BOOK_008), which per audit rules is explicitly excluded from HEA qualification without a paired acceptance/forgiveness beat. The highest-position fragment (BOOK_006_3, pos=0.97) offers an internal recognition moment but no couple-level commitment or togetherness declaration. Position patterns show high-probability scores cluster around name invocations rather than payoff language, suggesting the model is firing on character salience rather than romantic resolution content. Topic 157 does not meet HEA/HFN threshold.
-- **Pass C — adjudication:** **HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY**
+- **Pass C — adjudication:** **H2_3 — mutual commitment**
 
 ---
 
@@ -387,8 +387,8 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 ### Topic 167 — Planning A Wedding Reception {#topic-h2-167}
 
 - **Old taxonomy:** 5.3a — Romantic Social Rituals & Public Couple Recognition
-- **New category:** **HEA_PUBLIC_UNION — HEA PUBLIC UNION**
-- **Normalised category:** —
+- **New category:** **H2_5 — public union**
+- **Normalised category:** H2_5 — public union
 - **Mixed:** False
 - **Adjudication action:** `CONFIRM_HEA`
 
@@ -442,7 +442,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
   - All four representations converge on H2. The lexical field is dominated by wedding-event vocabulary (wedding, bride, groom, bridal, ceremony, bridesmaids, reception, invitation, destination, planning, preparing, arranged). This signals a wedding-planning or wedding-day context situated in the middle tertile of a romance narrative — the relational payoff is being set up or enacted but the story has not yet closed. No HEA/HFN terminus is confirmed by the lexicon alone; the wedding machinery is present but 'jitters' and preparatory terms (planning, preparing, arrange) suggest the event is imminent or in-progress rather than concluded and settled. H2 is the appropriate code: the romantic arc is advancing toward commitment but the final relational resolution has not been delivered.
 - **Pass B — contextual:** **H2_WEDDING_CEREMONY — H2 WEDDING CEREMONY**
   - All 20 sentences cluster tightly in the middle tertile (pos 0.41–0.45), forming a dense wedding-scene block. The ceremony proceeds (vows, kiss, reception) but interiority passages reveal the bride's ambivalence, the rushed/unconventional nature of the arrangement, and a 'sealed bargain' framing suggesting a marriage-of-convenience setup. Community acceptance (BOOK_001_19) and post-ceremony reception (BOOK_001_14) confirm the union is completed, but the emotional HEA resolution—genuine mutual love, not just legal marriage—almost certainly lies in the latter tertile of the book. Per audit rules, ceremony completion mid-book is a structural milestone, not a final relational payoff.
-- **Pass C — adjudication:** **HEA_PUBLIC_UNION — HEA PUBLIC UNION**
+- **Pass C — adjudication:** **H2_5 — public union**
   - H2_WEDDING_CEREMONY is a structurally definitive public couple-recognition event. Under 5.3a, a wedding ceremony constitutes the canonical HEA anchor: it is a socially ratified, witnessed, forward-looking commitment that exceeds confession, apology, forgiveness, or reunion affect alone. The secondary taxonomy 5.1 reinforces kinship formation (new family unit created), which corroborates rather than displaces the romantic payoff. No disqualifying signals present. HEA confirmed.
 
 ---
@@ -450,8 +450,8 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
 ### Topic 61 — Planning to Exchange Rings {#topic-h2-61}
 
 - **Old taxonomy:** 8.3a — Commitment Symbols & Love Tokens
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
 - **Mixed:** True
 - **Adjudication action:** `CONFIRM_HEA`
 
@@ -513,7 +513,7 @@ Run: `v4_l12_granular_final_call49` — 10 topics.
   - Topic 61 is dominated by engagement and fine jewelry lexicon across all four representations — ring, diamond, engagement, finger, gold, precious, polished, glint. KeyBERT adds 'promises' and 'engaged', strongly anchoring the topic to romantic commitment rituals. POS and Main reinforce physical jewelry descriptors. MMR's outlier terms ('commander', 'claims', 'collect') suggest a possible subplot where jewelry functions as a power or conflict object, but the overwhelming lexical mass points to H2 romantic/engagement jewelry as the primary topic signal.
 - **Pass B — contextual:** **H2_EROTIC_ADORNMENT — H2 EROTIC ADORNMENT**
   - Topic 61 clusters around jewelry/adornment as a symbolic vehicle. BOOK_002 contains the clearest HEA-proximate content: a ring placement at end-tertile pos=0.92 paired with an explicit declaration of union across a polyadic (three-person) couple (BOOK_002_1, BOOK_002_5, BOOK_002_7). This satisfies commitment-gesture and mutual-declaration criteria. However, the dominant code across the full sentence set is H2_EROTIC_ADORNMENT, driven by the volume of erotic body-jewelry references in BOOK_002 that are relational but not HEA-constitutive per audit criteria. BOOK_001's ring/bracelet imagery is metaphorically resonant but too ambiguous and hedged to confirm HEA. BOOK_003 lacks sufficient context. Overall, BOOK_002 approaches but does not fully secure HEA confirmation from these excerpts alone: the union declaration is present, but confession/apology/forgiveness framing is absent and the erotic-adornment density dilutes the relational-payoff signal. Finality is moderate, not high.
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
   - H2_EROTIC_ADORNMENT within taxonomy 8.3a signals a physical love token or adornment exchanged or bestowed as a commitment act, not merely confession or apology. The object/gesture functions as a durable, tangible symbol of relational permanence. Combined with secondary taxonomy 4.5, the narrative arc closes on a concrete commitment payoff. Adornment-as-token satisfies the HEA threshold: it is a forward-facing relational seal, not a transient emotional beat. Pass C confirms the HEA is structurally earned.
 
 ---

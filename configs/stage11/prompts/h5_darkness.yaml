@@ -1,8 +1,11 @@
 # Frozen H5 darkness vs tenderness prompts (focused boundaries).
+#
+# v1.1: force codebook IDs (D0–D6|MIXED) via explicit JSON schemas — Sonnet v1.0
+# returned free-form labels ("H5", "fear_anxiety", CELL_*, topic ids) / UNKNOWN.
 
 hypothesis: H5
 name: darkness_tenderness
-version: "1.0"
+version: "1.1"
 frozen: true
 
 dimensions:
@@ -15,18 +18,27 @@ dimensions:
 codes:
   - id: D0
     label: off_target
+    definition: >-
+      Not darkness or tenderness content. Generic plot, logistics, or unrelated affect.
   - id: D1
     label: relational_darkness
+    definition: Interpersonal / couple-level darkness (conflict, rupture, toxic dynamics).
   - id: D2
     label: partner_harm_control
+    definition: Partner-directed harm, control, or coercion.
   - id: D3
     label: external_danger_crisis
+    definition: External danger/crisis (storm, crime, accident) not partner-as-threat.
   - id: D4
     label: individual_distress
+    definition: Individual fear/anxiety/distress without clear relational harm frame.
   - id: D5
     label: tenderness_comfort
+    definition: >-
+      Valid emotional comfort/affection/tenderness — not every caretaking topic.
   - id: D6
     label: mixed_or_unclear
+    definition: Darkness and tenderness (or multiple D-codes) compete with no clear dominant.
 
 constructs:
   RAX_relational_darkness: [D1, D2]
@@ -34,6 +46,14 @@ constructs:
   RAX_external_danger_crisis: [D3]
   RAX_individual_distress: [D4]
   RAX_tenderness_core: [D5]
+
+decision_rules: |
+  1. Score darkness_domain / threat_source / distress_source independently, then pick one D#.
+  2. External danger (D3) is NOT relational darkness (D1) and NOT partner harm (D2).
+  3. Tenderness (D5) must be real comfort/affection — do not label every 4.6 care topic D5.
+  4. Prefer MOST SPECIFIC code. Use D0 when off-target for this hypothesis.
+  5. If two codes compete and neither reaches ~70% share on Pass B → MIXED (or D6).
+  6. Pass C must return darkness_code as D0–D6 or MIXED — never "H5", CELL_*, or topic ids.
 
 guidance: |
   Score dimensions independently. Do not force a single label first.
@@ -48,35 +68,81 @@ adjudication_actions:
   - SPLIT
   - EXCLUDE_FROM_HYPOTHESIS
 
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+
 phrasing:
   primary:
     system: |
-      You code darkness-domain and tenderness for romance topics.
-      Separate relational darkness, partner harm, external crisis, and individual distress.
-      JSON only. Ratings hidden.
+      You are auditing BERTopic topics for a romance-novel research study.
+      Code darkness-domain and tenderness. Separate relational darkness, partner harm,
+      external crisis, individual distress, and tenderness.
+      Do not invent plot. Do not use rating labels.
+
+      VALID CODES (use these IDs only — never free-form words or topic numbers):
+      D0 off_target | D1 relational_darkness | D2 partner_harm_control |
+      D3 external_danger_crisis | D4 individual_distress | D5 tenderness_comfort |
+      D6 mixed_or_unclear | MIXED
+
+      CRITICAL:
+      - Every consensus_code / dominant_code / darkness_code MUST be D0–D6 or MIXED.
+      - Never return CELL_*, BOOK_*, "H5", "fear_anxiety", "tenderness", or topic ids as codes.
+      - External danger → D3; partner harm → D2; couple toxic dynamics → D1; solo distress → D4.
+      Respond with JSON only matching the schema.
     pass_a: |
-      Lexical H5 coding for topic {topic_id}.
+      Pass A — lexical only (prompt v1.1).
+      Assign one D-code per keyword list (Main, KeyBERT, POS, MMR), then consensus.
+      Topic {topic_id}
       Main: {main}
       KeyBERT: {keybert}
       POS: {pos}
       MMR: {mmr}
-      JSON: per_rep, consensus_code, darkness_domain, threat_source, distress_source, rationale.
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "D#", "KeyBERT": "D#", "POS": "D#", "MMR": "D#"}},
+      "consensus_code": "D#", "disagreement": bool,
+      "darkness_domain": "relational|partner_harm|external|individual|tenderness|none",
+      "threat_source": "external|partner|self|none|unclear",
+      "distress_source": "relationship|external|individual|none|unclear",
+      "rationale": "cite cues that forced the D-code"}}
     pass_b: |
-      Contextual H5 coding for topic {topic_id}:
+      Pass B — contextual sentences (rating cells blinded as CELL_*; prompt v1.1).
+      Code each sentence with the MOST SPECIFIC D-code (D0–D6). CELL_* are cell IDs only —
+      never use them as codes. Estimate proportions; MIXED if no code >= 70%.
+      Topic {topic_id}
+      Sentences:
       {sentences_block}
-      JSON: sentence_codes, proportions, dominant_code, main_couple, dimensions, rationale.
+      Return JSON: {{"topic_id": int, "sentence_codes": [{{"sid": "...", "code": "D#"}}],
+      "proportions": {{"D#": float}}, "dominant_code": "D#|MIXED",
+      "main_couple": "yes|no|unclear",
+      "dimensions": {{"threat_source": "...", "distress_source": "...", "relational_function": "..."}},
+      "rationale": "..."}}
     pass_c: |
-      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
-      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Pass C — adjudication (prompt v1.1). Taxonomy metadata is revealed. Still ignore ratings.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Resolve to a single darkness_code from D0–D6 or MIXED. Do not invent new labels.
+      If Pass A/B used free-form words, map them onto the nearest D-code now.
+      Tenderness (D5) only with real comfort/affection evidence — not every caretaking leaf.
+      Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+      "darkness_code": "D#|MIXED",
+      "proposed_constructs": ["..."],
+      "manual_review_required": bool,
+      "rationale": "..."}}
 
   alternate:
     system: |
-      Darkness/tenderness auditor. Independent dimensions; external danger is not relational darkness.
+      Darkness/tenderness auditor (prompt v1.1). Codes MUST be D0–D6 or MIXED only.
+      External danger is not relational darkness. Tenderness requires comfort/affection evidence.
       JSON only.
     pass_a: |
-      Keywords {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      Lexical pass v1.1 for topic {topic_id}. Assign one D-code per representation, then consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code (D#), disagreement, darkness_domain, threat_source, distress_source, rationale.
     pass_b: |
-      Sentences {topic_id}:
+      Contextual pass v1.1 for topic {topic_id}. Blinded cells. Most-specific D-codes;
+      never use CELL_* as codes; MIXED if none >=70%.
       {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code (D#|MIXED), main_couple, dimensions, rationale.
     pass_c: |
-      Adjudicate {topic_id} tax={taxonomy_id}/{taxonomy_name}. Action + darkness_code.
+      Adjudicate topic {topic_id} (v1.1): lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Action + darkness_code (D#|MIXED) required.

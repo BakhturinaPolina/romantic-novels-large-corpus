@@ -109,101 +109,101 @@ Run: `v4_l12_granular_final_call49`
 
 ### [H2 — HEA / final relational payoff](#h2) — 10 topics
 
-- [29 — Confessing Long-Held Love](#topic-h2-29) — HEA_CONFIRMED — HEA CONFIRMED
+- [29 — Confessing Long-Held Love](#topic-h2-29) — H2_4 — final relational payoff
 - [62 — Admitting You've Been Stupid](#topic-h2-62) — UNKNOWN
-- [65 — Declaring A True Partnership](#topic-h2-65) — HEA_CONFIRMED — HEA CONFIRMED
+- [65 — Declaring A True Partnership](#topic-h2-65) — H2_4 — final relational payoff
 - [128 — Confessing How Much You've Missed](#topic-h2-128) — UNKNOWN
-- [157 — Swearing to Save Him From Himself](#topic-h2-157) — HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY
+- [157 — Swearing to Save Him From Himself](#topic-h2-157) — H2_3 — mutual commitment
 - [204 — Promising to Care For Her Sister](#topic-h2-204) — CONDITIONAL_HEA — qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA_UNCONFIRMED status. — CONDITIONAL HEA — qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA UNCONFIRMED status.
 - [242 — Trading Forgiveness For Old Wrongs](#topic-h2-242) — UNKNOWN
 - [305 — Confessing A Lifelong Regret](#topic-h2-305) — UNKNOWN
-- [167 — Planning A Wedding Reception](#topic-h2-167) — HEA_PUBLIC_UNION — HEA PUBLIC UNION
-- [61 — Planning to Exchange Rings](#topic-h2-61) — HEA_CONFIRMED — HEA CONFIRMED
+- [167 — Planning A Wedding Reception](#topic-h2-167) — H2_5 — public union
+- [61 — Planning to Exchange Rings](#topic-h2-61) — H2_4 — final relational payoff
 
 ### [H3 — Security / material vs display](#h3) — 82 topics
 
-- [18 — Ordering A Gown For Her](#topic-h3-18) — UNKNOWN
-- [77 — Haircut and Grooming Offered](#topic-h3-77) — UNKNOWN
-- [127 — Photographer Reviewing Pictures](#topic-h3-127) — UNKNOWN
-- [170 — Staying Close Despite Long Separation](#topic-h3-170) — UNKNOWN
-- [171 — Staring at Her Own Reflection](#topic-h3-171) — UNKNOWN
-- [192 — Peeking Through The Window](#topic-h3-192) — UNKNOWN
-- [209 — Flowers Held With Guilty Glance](#topic-h3-209) — MIXED
-- [218 — Resenting Someone More Attractive](#topic-h3-218) — UNKNOWN
-- [241 — Calling Someone A Stubborn Idiot](#topic-h3-241) — UNKNOWN
-- [253 — Hair Pinned Up in Style](#topic-h3-253) — UNKNOWN
-- [268 — Vivid Colors Remarked Upon](#topic-h3-268) — UNKNOWN
-- [323 — Polite Address Under Distress](#topic-h3-323) — MIXED
-- [347 — Saying Goodnight Before Bed](#topic-h3-347) — UNKNOWN
-- [354 — Threatening to Bite Someone's Nose](#topic-h3-354) — UNKNOWN
-- [364 — Noticing What He Wears](#topic-h3-364) — MIXED
-- [38 — Admitting Shared Pain](#topic-h3-38) — UNKNOWN
-- [52 — Talking About Dogs and Animals](#topic-h3-52) — UNKNOWN
-- [54 — Ordering Food and Dessert](#topic-h3-54) — MIXED
-- [86 — First Name Used at Last](#topic-h3-86) — MIXED
-- [93 — Meal Plans Casually Arranged](#topic-h3-93) — MIXED
-- [105 — Swept Onto The Dance Floor](#topic-h3-105) — UNKNOWN
-- [116 — Sharing A Meal Together](#topic-h3-116) — UNKNOWN
-- [160 — Watching Movies Together](#topic-h3-160) — MIXED
-- [174 — Ranch Life and Falling in Love](#topic-h3-174) — UNKNOWN
-- [232 — Conversation Cut Short By Arrival](#topic-h3-232) — UNKNOWN
-- [330 — Curious About Her Cooking Skills](#topic-h3-330) — MIXED
-- [332 — First Time Inside A Grocery Store](#topic-h3-332) — UNKNOWN
-- [351 — Warm Greeting Upon Return](#topic-h3-351) — UNKNOWN
-- [367 — Sorting Out Concert Tickets](#topic-h3-367) — UNKNOWN
-- [29 — Confessing Long-Held Love](#topic-h3-29) — MIXED
-- [62 — Admitting You've Been Stupid](#topic-h3-62) — UNKNOWN
-- [65 — Declaring A True Partnership](#topic-h3-65) — UNKNOWN
-- [128 — Confessing How Much You've Missed](#topic-h3-128) — UNKNOWN
-- [157 — Swearing to Save Him From Himself](#topic-h3-157) — UNKNOWN
-- [204 — Promising to Care For Her Sister](#topic-h3-204) — UNKNOWN
-- [242 — Trading Forgiveness For Old Wrongs](#topic-h3-242) — UNKNOWN
-- [305 — Confessing A Lifelong Regret](#topic-h3-305) — UNKNOWN
-- [6 — Whispered Reassurance](#topic-h3-6) — UNKNOWN
-- [31 — Keeping Watch While Others Sleep](#topic-h3-31) — UNKNOWN
-- [36 — Eagerly Offering to Help](#topic-h3-36) — MIXED
-- [45 — Reassured Everything Will Be Fine](#topic-h3-45) — MIXED
-- [46 — Asking Someone to Trust You](#topic-h3-46) — UNKNOWN
-- [56 — Promising Never to Hurt You](#topic-h3-56) — MIXED
-- [70 — Keeping Watch While She Sleeps](#topic-h3-70) — UNKNOWN
-- [83 — Reassured About Eating Regularly](#topic-h3-83) — UNKNOWN
-- [88 — Checking Her Feverish Temperature](#topic-h3-88) — UNKNOWN
-- [96 — Confessing Long-Standing Worry](#topic-h3-96) — UNKNOWN
-- [119 — Offering to Keep Her Safe](#topic-h3-119) — UNKNOWN
-- [161 — Reassuring Squeeze on The Shoulder](#topic-h3-161) — UNKNOWN
-- [172 — Reporting to The Security Officer](#topic-h3-172) — UNKNOWN
-- [173 — Waiting For Him to Wake](#topic-h3-173) — MIXED
-- [175 — Gentleman Offers Steadying Support](#topic-h3-175) — MIXED
-- [190 — Offering to Get Someone Cleaned Up](#topic-h3-190) — UNKNOWN
-- [193 — Nurse Arranged After Hospital Release](#topic-h3-193) — UNKNOWN
-- [224 — Encouraging Words From An Angel](#topic-h3-224) — MIXED
-- [240 — Unsure How to Offer Comfort](#topic-h3-240) — UNKNOWN
-- [247 — Promising You Will Not Be Alone](#topic-h3-247) — UNKNOWN
-- [273 — Mentor Gives Firm Instructions](#topic-h3-273) — UNKNOWN
-- [277 — Promising to Handle The Lawyer](#topic-h3-277) — UNKNOWN
-- [289 — Quick Peck on The Forehead](#topic-h3-289) — UNKNOWN
-- [299 — Pledging to Have Your Back](#topic-h3-299) — MIXED
-- [307 — Hauling Someone Up The Stairs](#topic-h3-307) — MIXED
-- [340 — Patience Tested Through Small Trials](#topic-h3-340) — MIXED
-- [355 — Blanket Draped Over Someone](#topic-h3-355) — UNKNOWN
-- [356 — Admitting Exhaustion After A Long Day](#topic-h3-356) — UNKNOWN
-- [358 — Reassuring Squeeze of The Hand](#topic-h3-358) — MIXED
-- [372 — Told to Keep Up Strength](#topic-h3-372) — MIXED
-- [293 — Admitting Jealousy Out Loud](#topic-h3-293) — UNKNOWN
-- [315 — Claiming Her As His Own](#topic-h3-315) — UNKNOWN
-- [59 — Mother's Disapproval Looms](#topic-h3-59) — UNKNOWN
-- [75 — Talking About Being A Father](#topic-h3-75) — UNKNOWN
-- [81 — Mentioning A Brother](#topic-h3-81) — MIXED
-- [167 — Planning A Wedding Reception](#topic-h3-167) — UNKNOWN
-- [112 — Desperate Need For A Job](#topic-h3-112) — UNKNOWN
-- [140 — Demanding Answers Before Departure](#topic-h3-140) — MIXED
-- [27 — Racing The Approaching Storm](#topic-h3-27) — MIXED
-- [17 — Discussing Rooms and Privacy](#topic-h3-17) — MIXED
-- [49 — Drinking at The Bar](#topic-h3-49) — UNKNOWN
-- [260 — Crowd Goes Wild For Him](#topic-h3-260) — MIXED
-- [321 — Leaning Against Trees and Rails](#topic-h3-321) — UNKNOWN
-- [339 — Regulars at The Bar](#topic-h3-339) — UNKNOWN
-- [61 — Planning to Exchange Rings](#topic-h3-61) — MIXED
+- [18 — Ordering A Gown For Her](#topic-h3-18) — S13 — appearance grooming
+- [77 — Haircut and Grooming Offered](#topic-h3-77) — S13 — appearance grooming
+- [127 — Photographer Reviewing Pictures](#topic-h3-127) — S0 — off target
+- [170 — Staying Close Despite Long Separation](#topic-h3-170) — S13 — appearance grooming
+- [171 — Staring at Her Own Reflection](#topic-h3-171) — S13 — appearance grooming
+- [192 — Peeking Through The Window](#topic-h3-192) — S0 — off target
+- [209 — Flowers Held With Guilty Glance](#topic-h3-209) — S0 — off target
+- [218 — Resenting Someone More Attractive](#topic-h3-218) — S13 — appearance grooming
+- [241 — Calling Someone A Stubborn Idiot](#topic-h3-241) — S0 — off target
+- [253 — Hair Pinned Up in Style](#topic-h3-253) — S13 — appearance grooming
+- [268 — Vivid Colors Remarked Upon](#topic-h3-268) — S0 — off target
+- [323 — Polite Address Under Distress](#topic-h3-323) — S0 — off target
+- [347 — Saying Goodnight Before Bed](#topic-h3-347) — S0 — off target
+- [354 — Threatening to Bite Someone's Nose](#topic-h3-354) — S0 — off target
+- [364 — Noticing What He Wears](#topic-h3-364) — S13 — appearance grooming
+- [38 — Admitting Shared Pain](#topic-h3-38) — S1 — emotional security reassurance
+- [52 — Talking About Dogs and Animals](#topic-h3-52) — S0 — off target
+- [54 — Ordering Food and Dessert](#topic-h3-54) — S0 — off target
+- [86 — First Name Used at Last](#topic-h3-86) — S0 — off target
+- [93 — Meal Plans Casually Arranged](#topic-h3-93) — S2 — emotional security belonging
+- [105 — Swept Onto The Dance Floor](#topic-h3-105) — S0 — off target
+- [116 — Sharing A Meal Together](#topic-h3-116) — S0 — off target
+- [160 — Watching Movies Together](#topic-h3-160) — S0 — off target
+- [174 — Ranch Life and Falling in Love](#topic-h3-174) — S9 — material provision housing
+- [232 — Conversation Cut Short By Arrival](#topic-h3-232) — S0 — off target
+- [330 — Curious About Her Cooking Skills](#topic-h3-330) — S5 — practical care everyday
+- [332 — First Time Inside A Grocery Store](#topic-h3-332) — S0 — off target
+- [351 — Warm Greeting Upon Return](#topic-h3-351) — S2 — emotional security belonging
+- [367 — Sorting Out Concert Tickets](#topic-h3-367) — S0 — off target
+- [29 — Confessing Long-Held Love](#topic-h3-29) — S1 — emotional security reassurance
+- [62 — Admitting You've Been Stupid](#topic-h3-62) — S0 — off target
+- [65 — Declaring A True Partnership](#topic-h3-65) — S4 — commitment security
+- [128 — Confessing How Much You've Missed](#topic-h3-128) — S4 — commitment security
+- [157 — Swearing to Save Him From Himself](#topic-h3-157) — S0 — off target
+- [204 — Promising to Care For Her Sister](#topic-h3-204) — S0 — off target
+- [242 — Trading Forgiveness For Old Wrongs](#topic-h3-242) — S1 — emotional security reassurance
+- [305 — Confessing A Lifelong Regret](#topic-h3-305) — S1 — emotional security reassurance
+- [6 — Whispered Reassurance](#topic-h3-6) — S0 — off target
+- [31 — Keeping Watch While Others Sleep](#topic-h3-31) — S0 — off target
+- [36 — Eagerly Offering to Help](#topic-h3-36) — S11 — practical help other
+- [45 — Reassured Everything Will Be Fine](#topic-h3-45) — S1 — emotional security reassurance
+- [46 — Asking Someone to Trust You](#topic-h3-46) — S3 — emotional security trust
+- [56 — Promising Never to Hurt You](#topic-h3-56) — S1 — emotional security reassurance
+- [70 — Keeping Watch While She Sleeps](#topic-h3-70) — S0 — off target
+- [83 — Reassured About Eating Regularly](#topic-h3-83) — S5 — practical care everyday
+- [88 — Checking Her Feverish Temperature](#topic-h3-88) — S0 — off target
+- [96 — Confessing Long-Standing Worry](#topic-h3-96) — S1 — emotional security reassurance
+- [119 — Offering to Keep Her Safe](#topic-h3-119) — S7 — physical protection
+- [161 — Reassuring Squeeze on The Shoulder](#topic-h3-161) — S0 — off target
+- [172 — Reporting to The Security Officer](#topic-h3-172) — MIXED
+- [173 — Waiting For Him to Wake](#topic-h3-173) — S0 — off target
+- [175 — Gentleman Offers Steadying Support](#topic-h3-175) — S0 — off target
+- [190 — Offering to Get Someone Cleaned Up](#topic-h3-190) — S1 — emotional security reassurance
+- [193 — Nurse Arranged After Hospital Release](#topic-h3-193) — S0 — off target
+- [224 — Encouraging Words From An Angel](#topic-h3-224) — S0 — off target
+- [240 — Unsure How to Offer Comfort](#topic-h3-240) — S1 — emotional security reassurance
+- [247 — Promising You Will Not Be Alone](#topic-h3-247) — S1 — emotional security reassurance
+- [273 — Mentor Gives Firm Instructions](#topic-h3-273) — S0 — off target
+- [277 — Promising to Handle The Lawyer](#topic-h3-277) — S1 — emotional security reassurance
+- [289 — Quick Peck on The Forehead](#topic-h3-289) — S0 — off target
+- [299 — Pledging to Have Your Back](#topic-h3-299) — S1 — emotional security reassurance
+- [307 — Hauling Someone Up The Stairs](#topic-h3-307) — S1 — emotional security reassurance
+- [340 — Patience Tested Through Small Trials](#topic-h3-340) — S0 — off target
+- [355 — Blanket Draped Over Someone](#topic-h3-355) — S5 — practical care everyday
+- [356 — Admitting Exhaustion After A Long Day](#topic-h3-356) — S1 — emotional security reassurance
+- [358 — Reassuring Squeeze of The Hand](#topic-h3-358) — S1 — emotional security reassurance
+- [372 — Told to Keep Up Strength](#topic-h3-372) — S0 — off target
+- [293 — Admitting Jealousy Out Loud](#topic-h3-293) — S1 — emotional security reassurance
+- [315 — Claiming Her As His Own](#topic-h3-315) — S1 — emotional security reassurance
+- [59 — Mother's Disapproval Looms](#topic-h3-59) — S0 — off target
+- [75 — Talking About Being A Father](#topic-h3-75) — S0 — off target
+- [81 — Mentioning A Brother](#topic-h3-81) — S0 — off target
+- [167 — Planning A Wedding Reception](#topic-h3-167) — S4 — commitment security
+- [112 — Desperate Need For A Job](#topic-h3-112) — S15 — workplace status
+- [140 — Demanding Answers Before Departure](#topic-h3-140) — S0 — off target
+- [27 — Racing The Approaching Storm](#topic-h3-27) — S0 — off target
+- [17 — Discussing Rooms and Privacy](#topic-h3-17) — S9 — material provision housing
+- [49 — Drinking at The Bar](#topic-h3-49) — S0 — off target
+- [260 — Crowd Goes Wild For Him](#topic-h3-260) — S0 — off target
+- [321 — Leaning Against Trees and Rails](#topic-h3-321) — S0 — off target
+- [339 — Regulars at The Bar](#topic-h3-339) — S0 — off target
+- [61 — Planning to Exchange Rings](#topic-h3-61) — S4 — commitment security
 
 ### [H4 — Protection vs possession](#h4) — 32 topics
 
@@ -265,50 +265,10 @@ Run: `v4_l12_granular_final_call49`
 - [327 — Crouching Over A Fallen Figure](#topic-h5-327) — UNKNOWN
 - [335 — Killer Targets Someone Alone](#topic-h5-335) — UNKNOWN
 
-### [H6 — Arc semantics (main-couple / position)](#h6) — 42 topics
+### [H6 — Arc semantics (main-couple / position)](#h6) — 2 topics
 
-- [64 — Confronting A Lifelong Fear](#topic-h6-64) — {'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]}
-- [66 — Paralyzed By Deep-Seated Fear](#topic-h6-66) — ARC_2 — escalation conflict
-- [92 — Heart Pounding With Dread](#topic-h6-92) — ARC_2 — escalation conflict
-- [102 — Grief Etched on His Face](#topic-h6-102) — ARC_4 — relationship caused distress
-- [133 — Holding Back Tears](#topic-h6-133) — ARC_2 — escalation conflict
-- [145 — Confessing How Much It Hurts](#topic-h6-145) — ARC_2 — escalation conflict
-- [152 — Awkward Apology and Embarrassment](#topic-h6-152) — ARC_2 — escalation conflict
-- [179 — Dreading What You Stand to Lose](#topic-h6-179) — ARC_2 — escalation conflict
-- [220 — Called Out For Being Embarrassing](#topic-h6-220) — ARC_2 — escalation conflict
-- [244 — Confessing A Shattered Heart](#topic-h6-244) — ARC_5 — disclosure
-- [281 — Told to Calm Down First](#topic-h6-281) — ARC_2 — escalation conflict
-- [285 — Confessing Years of Hatred](#topic-h6-285) — ARC_8 — mutual commitment final payoff
-- [322 — Consumed By Guilt After The Act](#topic-h6-322) — ARC_2 — escalation conflict
-- [366 — Paralyzed By Irrational Fear](#topic-h6-366) — ARC_2 — escalation conflict
-- [37 — Defending A Close Friendship](#topic-h6-37) — ARC_8 — mutual commitment final payoff
-- [94 — Caught in A Lie](#topic-h6-94) — ARC_2 — escalation conflict
-- [109 — Seeing Past A Guarded Identity](#topic-h6-109) — ARC_8 — mutual commitment final payoff
-- [121 — Revealing Plans to The Prince](#topic-h6-121) — ARC_0 — off target
-- [130 — Revealing A Secret Plan](#topic-h6-130) — ARC_8 — mutual commitment final payoff
-- [177 — Seeing Past A Hidden Identity](#topic-h6-177) — ARC_1 — misunderstanding
-- [194 — Promising to Keep A Secret](#topic-h6-194) — ARC_8 — mutual commitment final payoff
-- [214 — Demanding to Know What Happened](#topic-h6-214) — ARC_8 — mutual commitment final payoff
-- [237 — Hiding Someone Before He Arrives](#topic-h6-237) — ARC_2 — escalation conflict
-- [248 — Arranging A Cover Story](#topic-h6-248) — ARC_8 — mutual commitment final payoff
-- [264 — Accused of Hiding Something](#topic-h6-264) — ARC_8 — mutual commitment final payoff
-- [265 — Mismatched Expectations About Seriousness](#topic-h6-265) — Conflict Initiator
-- [272 — Silence Held Until Arrival](#topic-h6-272) — ARC_8 — mutual commitment final payoff
-- [286 — Trying to Regain Good Graces](#topic-h6-286) — ARC_2 — escalation conflict
-- [301 — Confessing A Thin Relationship History](#topic-h6-301) — ARC_2 — escalation conflict
-- [303 — Confessing Long-Hidden Secrets](#topic-h6-303) — ARC_2 — escalation conflict
-- [314 — Fiancé Becoming A Stranger](#topic-h6-314) — ARC_1 — misunderstanding
-- [319 — Confessing A Costly Mistake](#topic-h6-319) — ARC_2 — escalation conflict
-- [346 — Delivering Urgent News in Secret](#topic-h6-346) — ARC_8 — mutual commitment final payoff
-- [362 — Keeping Someone Watched and Close](#topic-h6-362) — ARC_8 — mutual commitment final payoff
-- [3 — Demanding An Explanation](#topic-h6-3) — ARC_2 — escalation conflict
-- [24 — Confronting An Unwanted Marriage](#topic-h6-24) — ARC_8 — mutual commitment final payoff
-- [43 — Pissed Off and Grumbling](#topic-h6-43) — ARC_2 — escalation conflict
-- [85 — Offering and Refusing An Apology](#topic-h6-85) — ARC_2 — escalation conflict
-- [129 — Accused of Not Caring](#topic-h6-129) — ARC_2 — escalation conflict
-- [210 — Expelled For Pursuing A Relationship](#topic-h6-210) — ARC_2 — escalation conflict
-- [256 — Refusing to Let It End](#topic-h6-256) — ARC_2 — escalation conflict
-- [316 — Snapping Over Money and Control](#topic-h6-316) — ARC_2 — escalation conflict
+- [3 — Demanding An Explanation](#topic-h6-3) — UNKNOWN
+- [24 — Confronting An Unwanted Marriage](#topic-h6-24) — UNKNOWN
 
 
 ## H1 — Intimacy (functional re-coding) {#h1}
@@ -373,22 +333,22 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 | 227 — Cherishing Memories Before Parting | 2.5 — Sexual Negotiation, Safety Preparation & Boundaries | I0 — off target | False |
 | 38 — Admitting Shared Pain | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I2 — reassurance | False |
 | 52 — Talking About Dogs and Animals | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
-| 54 — Ordering Food and Dessert | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | True |
-| 86 — First Name Used at Last | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | True |
-| 93 — Meal Plans Casually Arranged | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | True |
+| 54 — Ordering Food and Dessert | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
+| 86 — First Name Used at Last | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
+| 93 — Meal Plans Casually Arranged | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 105 — Swept Onto The Dance Floor | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 116 — Sharing A Meal Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
-| 160 — Watching Movies Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | True |
+| 160 — Watching Movies Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 174 — Ranch Life and Falling in Love | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 232 — Conversation Cut Short By Arrival | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I2 — reassurance | False |
-| 330 — Curious About Her Cooking Skills | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | True |
+| 330 — Curious About Her Cooking Skills | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 332 — First Time Inside A Grocery Store | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 351 — Warm Greeting Upon Return | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 367 — Sorting Out Concert Tickets | 4.2 — Ongoing Courtship & Everyday Relational Bonding | I0 — off target | False |
 | 37 — Defending A Close Friendship | 4.3 — Secrets, Misunderstandings & Hidden Information | I1 — emotional intimacy | False |
 | 24 — Confronting An Unwanted Marriage | 4.4 — Conflict, Distance & Breakup Threats | I0 — off target | False |
 | 85 — Offering and Refusing An Apology | 4.4 — Conflict, Distance & Breakup Threats | I2 — reassurance | False |
-| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | I1 — emotional intimacy | True |
+| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | I1 — emotional intimacy | False |
 | 62 — Admitting You've Been Stupid | 4.5 — Reconciliation, Commitments & HEA | I0 — off target | False |
 | 65 — Declaring A True Partnership | 4.5 — Reconciliation, Commitments & HEA | I0 — off target | False |
 | 128 — Confessing How Much You've Missed | 4.5 — Reconciliation, Commitments & HEA | I2 — reassurance | False |
@@ -408,7 +368,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 | 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
-| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
+| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
 | 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
 | 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
@@ -417,13 +377,13 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 | 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
 | 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
-| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
+| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
 | 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
-| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
+| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 82 — Touch Her and Your Family Suffers | 7.2 — Violence, Threats & Non-Sexual Coercion | MIXED | True |
@@ -2743,7 +2703,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -2795,7 +2755,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -2839,7 +2799,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -3015,7 +2975,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -3203,7 +3163,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -3551,7 +3511,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
 - **New category:** **I1 — emotional intimacy**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -4474,7 +4434,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I0 — off target**
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -4930,7 +4890,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I0 — off target**
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -5250,7 +5210,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -5714,23 +5674,23 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 
 | Topic | Old taxonomy | New category | Mixed |
 | --- | --- | --- | --- |
-| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | HEA_CONFIRMED — HEA CONFIRMED | True |
+| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | H2_4 — final relational payoff | False |
 | 62 — Admitting You've Been Stupid | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 65 — Declaring A True Partnership | 4.5 — Reconciliation, Commitments & HEA | HEA_CONFIRMED — HEA CONFIRMED | False |
+| 65 — Declaring A True Partnership | 4.5 — Reconciliation, Commitments & HEA | H2_4 — final relational payoff | False |
 | 128 — Confessing How Much You've Missed | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 157 — Swearing to Save Him From Himself | 4.5 — Reconciliation, Commitments & HEA | HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY | False |
+| 157 — Swearing to Save Him From Himself | 4.5 — Reconciliation, Commitments & HEA | H2_3 — mutual commitment | False |
 | 204 — Promising to Care For Her Sister | 4.5 — Reconciliation, Commitments & HEA | CONDITIONAL_HEA — qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA_UNCONFIRMED status. — CONDITIONAL HEA — qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA UNCONFIRMED status. | False |
 | 242 — Trading Forgiveness For Old Wrongs | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
 | 305 — Confessing A Lifelong Regret | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 167 — Planning A Wedding Reception | 5.3a — Romantic Social Rituals & Public Couple Recognition | HEA_PUBLIC_UNION — HEA PUBLIC UNION | False |
-| 61 — Planning to Exchange Rings | 8.3a — Commitment Symbols & Love Tokens | HEA_CONFIRMED — HEA CONFIRMED | True |
+| 167 — Planning A Wedding Reception | 5.3a — Romantic Social Rituals & Public Couple Recognition | H2_5 — public union | False |
+| 61 — Planning to Exchange Rings | 8.3a — Commitment Symbols & Love Tokens | H2_4 — final relational payoff | True |
 
 ### Topic 29 — Confessing Long-Held Love {#topic-h2-29}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
+- **Mixed:** False
 - **Adjudication action:** `CONFIRM`
 
 **Stage-08 snippets**
@@ -5761,7 +5721,7 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
   - All four representations converge on H2. The lexical profile combines romantic love vocabulary (love, loved, falling, always) with conflict and emotional processing terms (hated, forgive, crushed, spite, apologize, reflection) and no resolution or HEA payoff markers. The forgive/apologize signals are present but per audit rules confession and apology alone do not constitute HEA. The piece sits in mid-arc emotional reckoning territory.
 - **Pass B — contextual:** **H2_ILY_RECIPROCAL — H2 ILY RECIPROCAL**
   - {'overall': 'Topic 29 is saturated with ILY declarations across all four books, but HEA credibility varies substantially by position and relational target. BOOK_003 and BOOK_004 show the strongest HEA structural signatures: end-tertile clustering, named romantic addressees, reciprocal or query-confirmed mutuality, and intensity markers. BOOK_001 is compromised by heavy familial framing (Mom, child) that dilutes romantic couple identification despite end-tertile placement. BOOK_005 is positionally premature (middle tertile) for HEA classification. Across all books, the dominant pattern is present-state declaration without explicit future-commitment language, meaning these passages satisfy the emotional payoff criterion but do not independently confirm durable HEA without surrounding narrative context. Familial ILY tokens (Mom-directed) are coded separately and should not be weighted toward romantic HEA scoring.', 'hea_audit_flag': 'BOOK_001 and BOOK_005 require additional context before HEA classification; BOOK_003 and BOOK_004 are provisionally HEA-eligible pending rupture-resolution confirmation'}
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
 
 ---
 
@@ -5811,8 +5771,8 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 ### Topic 65 — Declaring A True Partnership {#topic-h2-65}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
 - **Mixed:** False
 - **Adjudication action:** `PASS_C`
 
@@ -5868,7 +5828,7 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
   - All four representers converge on H2. The topic centers on active, mutual, ongoing dating with shared identity markers ('we', 'together', 'partners'). 'Officially', 'engaged', 'longest', and 'intend' across KeyBERT and MMR suggest a relationship moving toward or already at committed status. 'Failure' and 'forgetting' introduce reflective or conflictual texture but do not redirect the dominant signal away from an established or formalizing couple dynamic. No HEA payoff markers (proposal resolution, wedding, explicit forever-framing) are present, confirming H2 rather than H3.
 - **Pass B — contextual:** **H2_ESTABLISHED_TOGETHERNESS — H2 ESTABLISHED TOGETHERNESS**
   - Across all four books the dominant signal is established or developing togetherness, but the corpus is saturated with barriers: a stated breakup (BOOK_003), an unexplained rupture (BOOK_006), self-doubt (BOOK_004_4), and jealousy/conflict (BOOK_003_5). Future-oriented language exists in end-tertile positions (BOOK_003_3, BOOK_004_3) but remains conditional or aspirational rather than declarative. Mutuality is clearest in BOOK_004 but even there the excerpt is a statement of intent, not a confirmed relational resolution. HEA criteria — settled union, resolved rupture, forward-committed payoff — are not met by any excerpt individually or collectively.
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
 
 ---
 
@@ -5918,8 +5878,8 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 ### Topic 157 — Swearing to Save Him From Himself {#topic-h2-157}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY**
-- **Normalised category:** —
+- **New category:** **H2_3 — mutual commitment**
+- **Normalised category:** H2_3 — mutual commitment
 - **Mixed:** False
 - **Adjudication action:** `H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact.`
 
@@ -5943,7 +5903,7 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
   - All four representations converge on H2. KeyBERT and MMR both surface 'confessed' alongside tension markers (tense, gritted, begged, dump, worries), indicating a conflict/confession arc that is mid-story rather than resolved. POS adds desperation and dislike, reinforcing unresolved emotional stakes. Main keywords show optimism and enthusiasm but no HEA payoff language (no reunion, commitment, or relational resolution). Confession alone does not qualify as HEA per audit rules, so H2 is the correct placement.
 - **Pass B — contextual:** **H2_NAME_INVOCATION — H2 NAME INVOCATION**
   - Across all 21 sentences the signal is dominated by name-calling fragments and character-trait observations. The only relational action present is apology (BOOK_008), which per audit rules is explicitly excluded from HEA qualification without a paired acceptance/forgiveness beat. The highest-position fragment (BOOK_006_3, pos=0.97) offers an internal recognition moment but no couple-level commitment or togetherness declaration. Position patterns show high-probability scores cluster around name invocations rather than payoff language, suggesting the model is firing on character salience rather than romantic resolution content. Topic 157 does not meet HEA/HFN threshold.
-- **Pass C — adjudication:** **HEA_CONDITIONAL_TRAJECTORY — HEA CONDITIONAL TRAJECTORY**
+- **Pass C — adjudication:** **H2_3 — mutual commitment**
 
 ---
 
@@ -6096,8 +6056,8 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 ### Topic 167 — Planning A Wedding Reception {#topic-h2-167}
 
 - **Old taxonomy:** 5.3a — Romantic Social Rituals & Public Couple Recognition
-- **New category:** **HEA_PUBLIC_UNION — HEA PUBLIC UNION**
-- **Normalised category:** —
+- **New category:** **H2_5 — public union**
+- **Normalised category:** H2_5 — public union
 - **Mixed:** False
 - **Adjudication action:** `CONFIRM_HEA`
 
@@ -6151,7 +6111,7 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
   - All four representations converge on H2. The lexical field is dominated by wedding-event vocabulary (wedding, bride, groom, bridal, ceremony, bridesmaids, reception, invitation, destination, planning, preparing, arranged). This signals a wedding-planning or wedding-day context situated in the middle tertile of a romance narrative — the relational payoff is being set up or enacted but the story has not yet closed. No HEA/HFN terminus is confirmed by the lexicon alone; the wedding machinery is present but 'jitters' and preparatory terms (planning, preparing, arrange) suggest the event is imminent or in-progress rather than concluded and settled. H2 is the appropriate code: the romantic arc is advancing toward commitment but the final relational resolution has not been delivered.
 - **Pass B — contextual:** **H2_WEDDING_CEREMONY — H2 WEDDING CEREMONY**
   - All 20 sentences cluster tightly in the middle tertile (pos 0.41–0.45), forming a dense wedding-scene block. The ceremony proceeds (vows, kiss, reception) but interiority passages reveal the bride's ambivalence, the rushed/unconventional nature of the arrangement, and a 'sealed bargain' framing suggesting a marriage-of-convenience setup. Community acceptance (BOOK_001_19) and post-ceremony reception (BOOK_001_14) confirm the union is completed, but the emotional HEA resolution—genuine mutual love, not just legal marriage—almost certainly lies in the latter tertile of the book. Per audit rules, ceremony completion mid-book is a structural milestone, not a final relational payoff.
-- **Pass C — adjudication:** **HEA_PUBLIC_UNION — HEA PUBLIC UNION**
+- **Pass C — adjudication:** **H2_5 — public union**
   - H2_WEDDING_CEREMONY is a structurally definitive public couple-recognition event. Under 5.3a, a wedding ceremony constitutes the canonical HEA anchor: it is a socially ratified, witnessed, forward-looking commitment that exceeds confession, apology, forgiveness, or reunion affect alone. The secondary taxonomy 5.1 reinforces kinship formation (new family unit created), which corroborates rather than displaces the romantic payoff. No disqualifying signals present. HEA confirmed.
 
 ---
@@ -6159,8 +6119,8 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 ### Topic 61 — Planning to Exchange Rings {#topic-h2-61}
 
 - **Old taxonomy:** 8.3a — Commitment Symbols & Love Tokens
-- **New category:** **HEA_CONFIRMED — HEA CONFIRMED**
-- **Normalised category:** —
+- **New category:** **H2_4 — final relational payoff**
+- **Normalised category:** H2_4 — final relational payoff
 - **Mixed:** True
 - **Adjudication action:** `CONFIRM_HEA`
 
@@ -6222,7 +6182,7 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
   - Topic 61 is dominated by engagement and fine jewelry lexicon across all four representations — ring, diamond, engagement, finger, gold, precious, polished, glint. KeyBERT adds 'promises' and 'engaged', strongly anchoring the topic to romantic commitment rituals. POS and Main reinforce physical jewelry descriptors. MMR's outlier terms ('commander', 'claims', 'collect') suggest a possible subplot where jewelry functions as a power or conflict object, but the overwhelming lexical mass points to H2 romantic/engagement jewelry as the primary topic signal.
 - **Pass B — contextual:** **H2_EROTIC_ADORNMENT — H2 EROTIC ADORNMENT**
   - Topic 61 clusters around jewelry/adornment as a symbolic vehicle. BOOK_002 contains the clearest HEA-proximate content: a ring placement at end-tertile pos=0.92 paired with an explicit declaration of union across a polyadic (three-person) couple (BOOK_002_1, BOOK_002_5, BOOK_002_7). This satisfies commitment-gesture and mutual-declaration criteria. However, the dominant code across the full sentence set is H2_EROTIC_ADORNMENT, driven by the volume of erotic body-jewelry references in BOOK_002 that are relational but not HEA-constitutive per audit criteria. BOOK_001's ring/bracelet imagery is metaphorically resonant but too ambiguous and hedged to confirm HEA. BOOK_003 lacks sufficient context. Overall, BOOK_002 approaches but does not fully secure HEA confirmation from these excerpts alone: the union declaration is present, but confession/apology/forgiveness framing is absent and the erotic-adornment density dilutes the relational-payoff signal. Finality is moderate, not high.
-- **Pass C — adjudication:** **HEA_CONFIRMED — HEA CONFIRMED**
+- **Pass C — adjudication:** **H2_4 — final relational payoff**
   - H2_EROTIC_ADORNMENT within taxonomy 8.3a signals a physical love token or adornment exchanged or bestowed as a commitment act, not merely confession or apology. The object/gesture functions as a durable, tangible symbol of relational permanence. Combined with secondary taxonomy 4.5, the narrative arc closes on a concrete commitment payoff. Adornment-as-token satisfies the HEA threshold: it is a forward-facing relational seal, not a transient emotional beat. Pass C confirms the HEA is structurally earned.
 
 ---
@@ -6255,95 +6215,95 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 | Topic | Old taxonomy | New category | Mixed |
 | --- | --- | --- | --- |
-| 18 — Ordering A Gown For Her | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 77 — Haircut and Grooming Offered | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 127 — Photographer Reviewing Pictures | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 170 — Staying Close Despite Long Separation | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 171 — Staring at Her Own Reflection | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 192 — Peeking Through The Window | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 209 — Flowers Held With Guilty Glance | 1.6 — Character Appearance & Self-Presentation | MIXED | True |
-| 218 — Resenting Someone More Attractive | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 241 — Calling Someone A Stubborn Idiot | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 253 — Hair Pinned Up in Style | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 268 — Vivid Colors Remarked Upon | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 323 — Polite Address Under Distress | 1.6 — Character Appearance & Self-Presentation | MIXED | True |
-| 347 — Saying Goodnight Before Bed | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 354 — Threatening to Bite Someone's Nose | 1.6 — Character Appearance & Self-Presentation | UNKNOWN | False |
-| 364 — Noticing What He Wears | 1.6 — Character Appearance & Self-Presentation | MIXED | True |
-| 38 — Admitting Shared Pain | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 52 — Talking About Dogs and Animals | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 54 — Ordering Food and Dessert | 4.2 — Ongoing Courtship & Everyday Relational Bonding | MIXED | True |
-| 86 — First Name Used at Last | 4.2 — Ongoing Courtship & Everyday Relational Bonding | MIXED | True |
-| 93 — Meal Plans Casually Arranged | 4.2 — Ongoing Courtship & Everyday Relational Bonding | MIXED | True |
-| 105 — Swept Onto The Dance Floor | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 116 — Sharing A Meal Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 160 — Watching Movies Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | MIXED | True |
-| 174 — Ranch Life and Falling in Love | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 232 — Conversation Cut Short By Arrival | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 330 — Curious About Her Cooking Skills | 4.2 — Ongoing Courtship & Everyday Relational Bonding | MIXED | True |
-| 332 — First Time Inside A Grocery Store | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 351 — Warm Greeting Upon Return | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 367 — Sorting Out Concert Tickets | 4.2 — Ongoing Courtship & Everyday Relational Bonding | UNKNOWN | False |
-| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | MIXED | True |
-| 62 — Admitting You've Been Stupid | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 65 — Declaring A True Partnership | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 128 — Confessing How Much You've Missed | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 157 — Swearing to Save Him From Himself | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 204 — Promising to Care For Her Sister | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 242 — Trading Forgiveness For Old Wrongs | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 305 — Confessing A Lifelong Regret | 4.5 — Reconciliation, Commitments & HEA | UNKNOWN | False |
-| 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 83 — Reassured About Eating Regularly | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 88 — Checking Her Feverish Temperature | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | UNKNOWN | False |
-| 315 — Claiming Her As His Own | 4.7 — Jealousy & Possessive Romance Conflict | UNKNOWN | False |
-| 59 — Mother's Disapproval Looms | 5.1 — Family, Kinship & Parenthood | UNKNOWN | False |
-| 75 — Talking About Being A Father | 5.1 — Family, Kinship & Parenthood | UNKNOWN | False |
-| 81 — Mentioning A Brother | 5.1 — Family, Kinship & Parenthood | MIXED | True |
-| 167 — Planning A Wedding Reception | 5.3a — Romantic Social Rituals & Public Couple Recognition | UNKNOWN | False |
-| 112 — Desperate Need For A Job | 6.4 — Economic Precarity, Security & Dependency | UNKNOWN | False |
-| 140 — Demanding Answers Before Departure | 6.6 — Material Glamour & Consumption | MIXED | True |
-| 27 — Racing The Approaching Storm | 7.3 — Risk, Danger & External Crises | MIXED | True |
-| 17 — Discussing Rooms and Privacy | 8.1 — Domestic Spaces & Routines | MIXED | True |
-| 49 — Drinking at The Bar | 8.2 — Public, Travel & Leisure Spaces | UNKNOWN | False |
-| 260 — Crowd Goes Wild For Him | 8.2 — Public, Travel & Leisure Spaces | MIXED | True |
-| 321 — Leaning Against Trees and Rails | 8.2 — Public, Travel & Leisure Spaces | UNKNOWN | False |
-| 339 — Regulars at The Bar | 8.2 — Public, Travel & Leisure Spaces | UNKNOWN | False |
-| 61 — Planning to Exchange Rings | 8.3a — Commitment Symbols & Love Tokens | MIXED | True |
+| 18 — Ordering A Gown For Her | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 77 — Haircut and Grooming Offered | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 127 — Photographer Reviewing Pictures | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 170 — Staying Close Despite Long Separation | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 171 — Staring at Her Own Reflection | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 192 — Peeking Through The Window | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 209 — Flowers Held With Guilty Glance | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 218 — Resenting Someone More Attractive | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 241 — Calling Someone A Stubborn Idiot | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 253 — Hair Pinned Up in Style | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 268 — Vivid Colors Remarked Upon | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 323 — Polite Address Under Distress | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 347 — Saying Goodnight Before Bed | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 354 — Threatening to Bite Someone's Nose | 1.6 — Character Appearance & Self-Presentation | S0 — off target | False |
+| 364 — Noticing What He Wears | 1.6 — Character Appearance & Self-Presentation | S13 — appearance grooming | False |
+| 38 — Admitting Shared Pain | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S1 — emotional security reassurance | False |
+| 52 — Talking About Dogs and Animals | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 54 — Ordering Food and Dessert | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 86 — First Name Used at Last | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 93 — Meal Plans Casually Arranged | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S2 — emotional security belonging | False |
+| 105 — Swept Onto The Dance Floor | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 116 — Sharing A Meal Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 160 — Watching Movies Together | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 174 — Ranch Life and Falling in Love | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S9 — material provision housing | False |
+| 232 — Conversation Cut Short By Arrival | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 330 — Curious About Her Cooking Skills | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S5 — practical care everyday | False |
+| 332 — First Time Inside A Grocery Store | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 351 — Warm Greeting Upon Return | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S2 — emotional security belonging | False |
+| 367 — Sorting Out Concert Tickets | 4.2 — Ongoing Courtship & Everyday Relational Bonding | S0 — off target | False |
+| 29 — Confessing Long-Held Love | 4.5 — Reconciliation, Commitments & HEA | S1 — emotional security reassurance | False |
+| 62 — Admitting You've Been Stupid | 4.5 — Reconciliation, Commitments & HEA | S0 — off target | False |
+| 65 — Declaring A True Partnership | 4.5 — Reconciliation, Commitments & HEA | S4 — commitment security | False |
+| 128 — Confessing How Much You've Missed | 4.5 — Reconciliation, Commitments & HEA | S4 — commitment security | False |
+| 157 — Swearing to Save Him From Himself | 4.5 — Reconciliation, Commitments & HEA | S0 — off target | False |
+| 204 — Promising to Care For Her Sister | 4.5 — Reconciliation, Commitments & HEA | S0 — off target | False |
+| 242 — Trading Forgiveness For Old Wrongs | 4.5 — Reconciliation, Commitments & HEA | S1 — emotional security reassurance | False |
+| 305 — Confessing A Lifelong Regret | 4.5 — Reconciliation, Commitments & HEA | S1 — emotional security reassurance | False |
+| 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | S11 — practical help other | True |
+| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | S3 — emotional security trust | False |
+| 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 83 — Reassured About Eating Regularly | 4.6 — Emotional Safety, Reassurance & Caretaking | S5 — practical care everyday | False |
+| 88 — Checking Her Feverish Temperature | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
+| 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | S7 — physical protection | False |
+| 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
+| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
+| 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
+| 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
+| 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | S5 — practical care everyday | True |
+| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | S1 — emotional security reassurance | False |
+| 315 — Claiming Her As His Own | 4.7 — Jealousy & Possessive Romance Conflict | S1 — emotional security reassurance | False |
+| 59 — Mother's Disapproval Looms | 5.1 — Family, Kinship & Parenthood | S0 — off target | False |
+| 75 — Talking About Being A Father | 5.1 — Family, Kinship & Parenthood | S0 — off target | False |
+| 81 — Mentioning A Brother | 5.1 — Family, Kinship & Parenthood | S0 — off target | False |
+| 167 — Planning A Wedding Reception | 5.3a — Romantic Social Rituals & Public Couple Recognition | S4 — commitment security | False |
+| 112 — Desperate Need For A Job | 6.4 — Economic Precarity, Security & Dependency | S15 — workplace status | False |
+| 140 — Demanding Answers Before Departure | 6.6 — Material Glamour & Consumption | S0 — off target | False |
+| 27 — Racing The Approaching Storm | 7.3 — Risk, Danger & External Crises | S0 — off target | False |
+| 17 — Discussing Rooms and Privacy | 8.1 — Domestic Spaces & Routines | S9 — material provision housing | False |
+| 49 — Drinking at The Bar | 8.2 — Public, Travel & Leisure Spaces | S0 — off target | False |
+| 260 — Crowd Goes Wild For Him | 8.2 — Public, Travel & Leisure Spaces | S0 — off target | False |
+| 321 — Leaning Against Trees and Rails | 8.2 — Public, Travel & Leisure Spaces | S0 — off target | False |
+| 339 — Regulars at The Bar | 8.2 — Public, Travel & Leisure Spaces | S0 — off target | False |
+| 61 — Planning to Exchange Rings | 8.3a — Commitment Symbols & Love Tokens | S4 — commitment security | True |
 
 ### Topic 18 — Ordering A Gown For Her {#topic-h3-18}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6393,19 +6353,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - All four lexical representations converge strongly on status/appearance security. The main keywords center on clothing items and acts of dressing, signaling preoccupation with how one presents oneself. KeyBERT terms such as 'appropriate,' 'fitting,' 'revealing,' and 'ensure' indicate anxiety about meeting external standards of presentation. POS-derived terms like 'graceful,' 'stunning,' 'preferred,' and 'appropriate' reinforce evaluative concern with aesthetic impression. MMR terms including 'flowing,' 'flared,' 'topped,' 'madam,' and 'graceful' suggest a formal or socially elevated dressing context where appearance carries social weight. Collectively, the signal points to security derived from wearing the right clothes to be seen favorably, accepted, or admired — a classic status/appearance function rather than emotional intimacy or material resource acquisition.
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S13 — appearance grooming**
+  - All four keyword lists centre on clothing and dress: Main lists garment types (dress, gown, jeans, shirt, suit); KeyBERT adds fitting/matching/appropriate/revealing — all descriptors of how clothing looks or fits on the body; POS adds graceful/stunning/fitting/appropriate — aesthetic evaluations of appearance; MMR adds flowing/flared/graceful/topped — visual/tactile garment descriptors. The cluster is entirely about how characters are clothed and presented, which maps to S13 (appearance_grooming) rather than S12 (status_display), because the emphasis is on the physical presentation of the body through clothing rather than social rank signalling.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - All sentences in this topic revolve around clothing, dress, grooming, and appearance — what characters wear, how they are dressed, providing or replacing garments, and commentary on attire. This is squarely the appearance/grooming security function (S13). There is no meaningful material provision, emotional reassurance, or status-display function dominating; the focus is consistently on the physical presentation of clothing and grooming as a social/relational concern.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Both lexical consensus and contextual dominant converge on S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. The secondary taxonomy tag (6.6 Material Glamour & Consumption) could suggest S12 or S14, but the primary function here is self-presentation and grooming rather than status display or gift-giving. S13 is the most specific and appropriate code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 77 — Haircut and Grooming Offered {#topic-h3-77}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6459,21 +6421,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - The dominant lexical signal across main, KeyBERT, and MMR representations centers on physical appearance descriptors — hair color, texture, styling, and grooming (blonde, shaved, curled, neatly, shaped, dried, blowing, ends) — anchoring the topic firmly in appearance-based security, where self-worth or relational value is tied to physical presentation. POS terms (desperation, annoying, inevitable, treatment) introduce an emotional undercurrent suggesting anxiety or frustration around appearance management, producing minor disagreement. However, this emotional valence is subordinate and instrumental to the appearance concern rather than constituting independent attachment or abandonment-based emotional security. Consensus holds at status/appearance.
-- **Pass B — contextual:** **status/appearance**
-  - All 20 sentences across all four books and three cells describe physical appearance attributes — specifically hair (color, length, texture, style, grooming) and shaving/skin smoothness — as they relate to romantic or interpersonal perception. None invoke emotional bonding, resource provision, or social rank beyond physical attractiveness. The topic is uniformly anchored in the status/appearance security function: physical traits that signal desirability or identity in a romantic context.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full convergence across lexical, contextual, and taxonomic signals. Both independent channels resolve to status/appearance, taxonomy placement under 1.6 Character Appearance & Self-Presentation is consistent, and no secondary dimension is warranted. No conflict to resolve.
+- **Pass A — lexical:** **S13 — appearance grooming**
+  - Main keywords (hair, blonde, blond, shave, shaved, brown, black, dark, haircut, short) are overwhelmingly hair-color and hair-styling descriptors — canonical grooming/appearance vocabulary. KeyBERT reinforces with 'curled', 'attractive', 'delicate', 'patted' — physical appearance cues. MMR adds 'neatly', 'shaped', 'dried', 'blowing' — all hair-grooming process words. POS keywords (extent, contrast, inevitable, annoying, desperation) are abstract/evaluative and do not anchor a security function, yielding S0 for that rep alone, but the three-to-one majority and the coherent grooming theme across Main, KeyBERT, and MMR firmly establish S13.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - The overwhelming majority of sentences describe hair style, hair color, hair length, and shaving/grooming practices of characters. These are all appearance and grooming descriptors, fitting S13 (appearance_grooming). One sentence (BOOK_002_6) references dragging mates by the hair as a rumored behavior, which is more of a narrative/plot detail without a clear security function, coded S0. All other sentences are straightforwardly about physical appearance and grooming, making S13 the dominant code at well above 70%.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Lexical consensus and contextual dominant both converge on S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. No conflict between passes; the topic addresses how characters present themselves physically, which maps cleanly to S13. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 127 — Photographer Reviewing Pictures {#topic-h3-127}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6515,20 +6477,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status_appearance — status appearance**
-  - While main keywords suggest material asset framing (cameras, equipment, files), three of four representers converge on status/appearance, reflecting that the dominant concern is visual self-presentation, aesthetic curation, and impression management through photography rather than ownership or emotional bonding
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Topic 127 centers on photographs/portraits as romance-security objects. CELL_B clusters (BOOK_002, BOOK_003) involve obsessive or surveillance-like image collection of a person — hundreds of covert snapshots, tracking via pictures — signaling a security function tied to monitoring and possessive attachment to another's image. CELL_C clusters (BOOK_001) involve portraits in a gallery/artistic context with intimate emotional imagery (Hart cradling Daisy's face, family photographs on a mantel), pointing to a different security register — emotional/identity-anchored. CELL_D entries (BOOK_005) involve medication compliance visibility and website photos, suggesting a practical/functional dimension. The dominant signal is CELL_B given volume and probability weight, but the dataset is genuinely mixed across three cell types, warranting MIXED designation.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All keyword lists centre on photography equipment and imagery (camera, photos, pictures, photographer, files, snaps, framed, capture, stunning). While 'stunning' and 'framed' could gesture toward appearance or display, the dominant semantic cluster is photographic practice/documentation with no discernible security function — emotional, material, or status-based — being performed. No cues indicate reassurance, provision, protection, commitment, or status signalling in a romance-security sense.
+- **Pass B — contextual:** **S0 — off target**
+  - Topic 127 centers on photographs, portraits, and images — characters taking, collecting, or viewing pictures of each other or in galleries. None of these sentences perform a recognizable security function (emotional reassurance, material provision, protection, status display, etc.). The photographs are narrative objects or plot devices (obsession, surveillance, identity), not security-provision acts. All sentences are off-target for the security taxonomy.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy confirms this topic belongs to Character Appearance & Self-Presentation (1.6), which describes how characters look or present themselves. This is descriptive/aesthetic content, not a security function. No security work is being performed — no emotional reassurance, no material provision, no status signaling in a security-relevant sense. S13 (appearance_grooming) was considered but applies when grooming/appearance serves a protective or dependency-related security function; here the topic is purely presentational. S0 is correct and should be kept.
 
 ---
 
 ### Topic 170 — Staying Close Despite Long Separation {#topic-h3-170}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
 
@@ -6566,21 +6529,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on dyadic togetherness and relational continuity ('together', 'both', 'couple', 'between', 'shared', 'theirs'). Separation-related terms ('separated', 'separate', 'visits', 'brief') frame distance as a threat to closeness rather than a material or status concern. Session/scenario framing suggests navigating physical or emotional distance within a committed bond. No material resource or status/appearance signals present.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences across all cells describe relational dynamics — friendship, attraction, mutual feeling, compatibility, togetherness, and interpersonal history — all of which are emotional security functions. BOOK_001_5 ('a striking couple') is the sole exception, referencing social presentation and appearance, coded as status/appearance. No material security signals are present. The dataset is cleanly dominant in emotional function.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Lexical and contextual signals align on emotional. Primary taxonomy 1.6 reflects self-presentation as an emotionally driven concern rather than status-seeking or material gain. Secondary 4.2 situates the function within routine relational bonding, reinforcing the emotional classification. No conflict to resolve.
+- **Pass A — lexical:** **S2 — emotional security belonging**
+  - Main keywords (together, relationship, couple, between, both, them) and KeyBERT/MMR cues (closely, separated, shared, spending, separated) all point to the security function of belonging — the togetherness or separateness of a pair and their relational bond. POS keywords (separate, session, visits, scenario, stunning, exciting) are more procedural/descriptive and lean S0, but the dominant signal across three reps is relational belonging (S2). The 'separated/closely/shared' cluster confirms the security concern is about maintaining or losing a coupled bond.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The majority of sentences describe the relational state between two people — friendship, mutual connection, shared space, being together, having things in common — all functioning as belonging/togetherness (S2). A few sentences are purely descriptive or narrative with no security function (S0). One sentence references commitment via mating (S4) and one references emotional support through love even in conflict (S1). S2 accounts for roughly 50% of sentences; combined with the low-probability tail sentences that dilute the signal, S2 is still the dominant code at ≥50%, and no other code approaches it, making S2 the dominant code.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Lexical and contextual consensus both point to S2 (belonging), but the taxonomy metadata reveals the primary classification is 1.6 Character Appearance & Self-Presentation. Appearance and grooming behaviors map most precisely to S13 (appearance_grooming) rather than S2 (belonging). The secondary taxonomy (4.2 Ongoing Courtship & Everyday Relational Bonding) could suggest a belonging or bonding function, but the primary taxonomy governs here. S13 is the most specific applicable code for appearance/self-presentation content, and the courtship framing is a context rather than the security function being performed. No free-form labels were carried forward; S2 from Pass A/B is superseded by S13 upon taxonomy disclosure.
 
 ---
 
 ### Topic 171 — Staring at Her Own Reflection {#topic-h3-171}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6635,19 +6598,20 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 **Model reasonings (new taxonomy audits)**
 
 - **Pass A — lexical:** **S13 — appearance grooming**
-  - All four representations converge on appearance-related lexical fields: mirror/reflection/gazing/stunning cluster around visual self-assessment and physical presentation. No material or emotional security signals present.
-- **Pass B — contextual:** **status/appearance**
-  - The overwhelming majority of sentences involve characters checking mirrors or reflections in the context of romantic self-presentation — evaluating how they look, how a partner perceives them, or managing appearance before/during romantic encounters. This maps cleanly to status/appearance security: the mirror functions as a tool for assessing romantic desirability and social presentation. A small subset (BOOK_002_1, BOOK_005_3, BOOK_006_1, BOOK_006_2) involve emotional framing — optimism, emotional displacement, amusement, or a partner's presence replacing an unsettling image — rather than appearance evaluation per se. No material security signals are present. The topic is coherently dominated by appearance-based romantic security functions.
-- **Pass C — adjudication:** **UNKNOWN**
+  - All four keyword lists centre on self-inspection via reflective surfaces: 'mirror, reflection, rearview, checked, stared' (Main); 'gazing, peered, glimpse, studied, polished' (KeyBERT); 'stares, glimpse, stunning, unhappy, fitting' (POS); 'stares, glimpse, stunning, gazing, blinking' (MMR). The consistent pattern is a character scrutinising their own appearance — checking, evaluating, or reacting to how they look. 'Stunning' and 'unhappy' in POS/MMR confirm an evaluative appearance function. No emotional reassurance, material provision, or status-display cues dominate; the function is grooming/appearance self-monitoring, coded S13.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - The overwhelming majority of sentences involve characters checking their appearance in mirrors — inspecting hair, face, clothing, and overall look — which is the core function of S13 (appearance/grooming). A small number of sentences (BOOK_002_1 with a rhetorical idiom, BOOK_004_6 describing photos on a mirror, and BOOK_006_1 using 'reflection' figuratively) do not perform any security function and are coded S0. No other security functions are present.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Lexical consensus and contextual dominant both resolve to S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. No conflict between passes; the topic centers on grooming, physical self-presentation, and appearance-related content. S13 is the most specific applicable code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 192 — Peeking Through The Window {#topic-h3-192}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `EXCLUDE_FROM_HYPOTHESIS`
 
 **Stage-08 snippets**
 
@@ -6701,20 +6665,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field dominated by gaze, observation, and window-mediated watching behaviors — peering, gazing, glimpsing, peeking through curtains. This cluster encodes emotional security through vigilant attention to the partner's presence, absence, or approach. The watcher monitors relational proximity from a threshold space (window/curtain), a classic anxious-attachment behavioral signature. POS introduces 'stunning' and 'figure' with mild status/appearance coloring but insufficient to shift consensus. Core function is emotional reassurance-seeking via surveillance of the attachment figure.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The overwhelming majority of sentences (18/20) are coded CELL_B, sharing a consistent structural and functional signature: characters turning toward, gazing out of, or resting against windows as a behavioral expression of internal emotional processing — introspection, tension, longing, brooding, or regulation of distress. The window functions as a liminal object mediating between inner emotional states and the external world, serving as a displacement surface for unresolved relational affect. This pattern is consistent across all three BOOK_001–003 clusters regardless of character gender or narrative context. The two CELL_C instances (BOOK_004_1, BOOK_004_2) share the window-gazing behavior but are distinguished by first-person narration with a more detached, observational register ('I sat there looking,' 'I turned my face again'), suggesting a slightly different functional encoding — possibly reflective of a different security dimension or narrative mode — consistent with the model's higher-confidence CELL_C assignment for those entries.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists describe visual/perceptual actions (gazing, peeking, glancing, looking through windows, curtains, reflections) and spatial/sensory vocabulary. There is no security-provision function — emotional, material, or status — being performed. The topic captures a scene-setting or observational motif, not a resource transfer or reassurance act.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic describe characters looking out of, peering through, or standing near windows. This is purely a physical/spatial action or setting description with no security function — emotional, material, or status/appearance. No sentence conveys reassurance, protection, provision, belonging, commitment, or any other security-relevant function. The topic is entirely off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy confirms this topic is about Character Appearance & Self-Presentation (1.6), with a secondary tag of Public/Travel/Leisure Spaces (8.2). Neither category performs a security function — appearance description and leisure-space setting are narrative/descriptive elements, not emotional reassurance, material provision, or status-display security acts. S13 (appearance_grooming) was considered but rejected because the topic describes appearance as characterisation, not as a security-function signal directed at a partner or audience. S0 is correct; the topic should be excluded from the security hypothesis analysis.
 
 ---
 
 ### Topic 209 — Flowers Held With Guilty Glance {#topic-h3-209}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -6752,20 +6717,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material/status-appearance**
-  - Main and KeyBERT lexicons anchor to tangible floral gifts as resource provision signals (bouquet, dozen, vase, purse), indicating material security through giving. POS and MMR shift toward display and aesthetic value (stunning, feminine, exquisite, carved, delicate, pattern), suggesting the flowers also function as status/appearance markers — objects that signal taste, effort, and social presentation. The split reflects the dual nature of floral gifting: a material resource act that simultaneously performs status and aesthetic identity.
-- **Pass B — contextual:** **MIXED**
-  - Four distinct functional clusters emerge across the 20 sentences. CELL_B entries (BOOK_002) consistently frame flowers as emotionally charged, affective signals—pulsing, swirling, emanating from a person's inner state—indicating an emotional-security function where flowers serve as proxies for felt connection and romantic affect. CELL_A entries (BOOK_003) treat flowers as aesthetic or environmental markers tied to appearance, desirability, and setting presentation—flowers signal status through visual lushness, elegance, and the curated beauty of a space or person. CELL_D entries (BOOK_004) position flowers in a material or transactional register: a gift obligation to a wife, a simple declarative object, or a pastoral fantasy of retreat—functional rather than emotionally resonant. CELL_C entries (BOOK_001 and BOOK_005) are contextually neutral or environmental—plants as décor, domestic objects, or instructional props—without clear romantic security loading. No single cell dominates sufficiently to assign a single dominant code; CELL_A and CELL_B are tied at 30% each, confirming MIXED classification.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S14 — gift romance token**
+  - Main keywords (flowers, roses, bouquet, daisies, vase, red/yellow rose) are canonical romantic gift objects. KeyBERT adds 'dozen' (dozen roses = classic romantic gift), 'bedside' (placement of flowers as token), 'porch' (delivery site). POS and MMR reinforce with 'exquisite', 'delicate', 'feminine', 'bedside', 'dozen' — all consistent with flowers as a romantic/affective token rather than practical provision, status display, or emotional reassurance per se. The security function is the gift itself as a relational token.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic describe flowers, plants, and decorative elements in purely descriptive or environmental terms — interior décor, garden imagery, metaphorical comparisons — with no security function. A small subset (yellow roses sent/given, rose petals as romantic gesture, sending flowers as a social courtesy) function as romantic tokens or gifts (S14), but these are a minority. No single security function reaches 70% on its own, but S0 (off-target, no security work) clearly dominates at ~75%, so S0 is the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus S14 (gift/romance token) was driven by surface co-occurrence with gift-like or token-exchange language, but the taxonomy placement in 1.6 Character Appearance & Self-Presentation (secondary: 4.2 Ongoing Courtship & Everyday Relational Bonding) indicates the topic's primary function is describing how characters look and present themselves, not the transfer of a security-providing object or gesture. Appearance and grooming (S13) could be considered, but the contextual dominant from Pass B is S0 (off-target), meaning the topic does not perform a security function for the recipient — it describes aesthetic self-presentation as part of courtship atmosphere. S0 is therefore the correct resolution. No security hypothesis is served by this topic.
 
 ---
 
 ### Topic 218 — Resenting Someone More Attractive {#topic-h3-218}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6795,20 +6761,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - All four representations converge strongly on status/appearance. The main keywords are dominated by physical attractiveness descriptors (handsome, gorgeous, cute, beautiful, adorable, attractive). KeyBERT reinforces with 'attractive' as top term alongside evaluative language (considered, described, poised). POS adds 'features', 'decent', 'potential' suggesting appraisal of physical traits. MMR contributes 'built', 'dangerously', 'poised', 'dangling' evoking physical presence and body-focused assessment. The security function is appearance-based validation — deriving relational security from a partner's or self's physical attractiveness, consistent with mate-value appraisal and status signaling through physical desirability.
-- **Pass B — contextual:** **status/appearance**
-  - The overwhelming majority of sentences across CELL_B and CELL_C describe physical attractiveness — handsomeness, beauty, cuteness — which maps cleanly to status/appearance security. BOOK_002_2 includes 'kind, sweet, funny' but is framed within a physical attractiveness observation, keeping it in status/appearance. BOOK_003_3 through BOOK_003_6 and BOOK_004_2 are contextually ambiguous — they reference competence, moral flexibility, or interpersonal dynamics without clear romantic-security framing. BOOK_004_1 ('It suited him') leans toward appearance-confirmation. No material or emotional security signals are dominant in any sentence.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S13 — appearance grooming**
+  - All four keyword lists are dominated by physical appearance descriptors: 'handsome, gorgeous, cute, beautiful, adorable, attractive, good-looking' in Main; 'attractive, poised, described' in KeyBERT; 'attractive, features, decent' in POS; 'attractive, built, poised' in MMR. The consistent focus is on evaluating a person's physical appearance rather than emotional reassurance, material provision, or social status display. S13 (appearance_grooming) is the most specific match for lexical content centered on physical attractiveness assessment.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - The overwhelming majority of sentences in this topic describe characters' physical attractiveness — handsomeness, beauty, cuteness — which maps to S13 (appearance_grooming/physical appearance evaluation). A small subset of lower-probability sentences (finding a scene, assessing innocence/skill, looking the other way, receiving a look) do not perform any security function and are coded S0. S13 accounts for ~75% of sentences, well above the 70% threshold for a dominant code.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Both lexical consensus and contextual dominant converge on S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. The secondary taxonomy flag (3.2 Negative Emotions & Distress) may reflect anxiety around appearance but does not displace the primary security function, which remains grooming/appearance-related self-presentation. No split or reinterpretation is warranted; S13 is the most specific applicable code.
 
 ---
 
 ### Topic 241 — Calling Someone A Stubborn Idiot {#topic-h3-241}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -6834,21 +6801,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Dominant signal across KeyBERT, POS, and MMR lexicons points to emotional security: insulted, pout, growl, disappointed, emotionally, dealing all index protest behavior and affect-regulation within attachment. Main tokens (charge, uncle, parent, roarke, alfred) introduce a material or authority-figure framing that creates mild disagreement, but the functional core is an emotional security exchange — likely a conflict episode involving wounded pride, sulking, and relational repair rather than resource negotiation.
-- **Pass B — contextual:** **EMOTIONAL**
-  - All sentences across the four books center on interpersonal relationships, relational concern, grief, jealousy, loyalty, and romantic/social bonding dynamics. BOOK_001 revolves around concern for a deceased person named Jason and relational disclosure (affair). BOOK_004 focuses on a romantic relationship with Kay and its emotional resolution. BOOK_005 depicts relational tension between a romantic partner and an ex (Chaz), including jealousy and protective behavior. BOOK_006 involves Jason in a high-tension interpersonal scene. No sentences reference material resources, financial exchange, or status/appearance as primary security functions.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Lexical and contextual signals align on emotional. Taxonomy 1.6 concerns self-presentation as it relates to identity and relational worth rather than material or status gain, and 3.2 confirms affective distress as the operative security mechanism. No material or status/appearance reclassification warranted.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Across all four keyword sets the dominant signals are interpersonal friction and emotional regulation: 'insulted', 'disappointed', 'pout', 'growl', 'emotionally', 'behavior', 'dealing'. 'charge', 'uncle', 'parent', 'finding' in Main suggest a guardian/authority figure dynamic, but the operative function is managing hurt feelings and reassuring after conflict, not material provision or status display. 'meal' and 'wound' in MMR are incidental; the cluster's weight sits firmly on emotional repair/reassurance (S1).
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences are narrative references to named characters (Jason, Kay, Chaz, Trevor) in plot-driven contexts — investigations, relationship endings, dialogue tags — with no security function being performed. Three sentences (BOOK_005_2, _4, _6) involve physical confrontation (Chaz/Judd fight) which touches on physical protection (S7), but even these are incidental plot description rather than a sustained security provision. Overall the topic is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B produced a lexical consensus of S1 (emotional_reassurance), likely driven by distress-adjacent vocabulary in the topic tokens. However, the taxonomy metadata places this topic squarely in 1.6 Character Appearance & Self-Presentation with a secondary signal of 3.2 Negative Emotions & Distress. The topic's primary function is descriptive/presentational — how a character looks or presents themselves — not the provision of security or reassurance to another party. The distress secondary signal reflects emotional coloring of appearance-related content (e.g., anxious self-presentation, appearance shame), not a security-provision act. Neither appearance display nor grooming-as-security (S13) is the operative function here; S13 applies when grooming/appearance serves as a security-provision mechanism between characters, which is not evidenced. The contextual dominant S0 (off_target) is therefore correct: this topic does not perform security work and should be excluded from the security hypothesis. No split is warranted because both taxonomy axes converge on non-security content.
 
 ---
 
 ### Topic 253 — Hair Pinned Up in Style {#topic-h3-253}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S13 — appearance grooming**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6906,20 +6873,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - All four representations converge on status/appearance. The lexical field is dominated by hair styling descriptors (ponytail, bun, braid, curls, straightened, neatly fashioned) and aesthetic quality markers (blonde, delicate, feminine, flowing, tumbled, spilling). The POS set adds affective evaluators (admire, unhappy, unable) suggesting appearance-contingent emotional states, but the root security function is anchored in physical presentation as a source of relational worth. No material resource terms or emotional intimacy vocabulary are present. The cluster reflects preoccupation with how one's appearance is perceived, consistent with appearance-based security seeking.
-- **Pass B — contextual:** **status/appearance**
-  - All 20 sentences describe physical appearance attributes — specifically hair color, style, texture, and adornment — of characters in romantic contexts. None reference emotional states or material/financial dimensions. The function across all cells (CELL_A, CELL_B, CELL_D) is consistently descriptive of physical presentation, anchoring romantic interest or characterization in visual/aesthetic signals. This is uniformly status/appearance coding.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S13 — appearance grooming**
+  - All four keyword lists are dominated by hair-styling vocabulary: specific styles (ponytail, bun, braid, curls), hair attributes (blonde, blond, brown, long, loose), and grooming-state descriptors (neatly, straightened, dangling, wound, fashioned, tumbled, spilling, flowed). Words like 'feminine' and 'admire' confirm the function is appearance display/grooming rather than emotional reassurance, material provision, or social status. No cues point to any other S-code.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - Every sentence in this topic describes hair appearance, styling, or grooming details (hairstyles, hair color, hair accessories, makeup). This is uniformly appearance/grooming description (S13). No sentence performs emotional, material, or other security functions — all are descriptive observations of physical appearance and grooming, making S13 the clear and dominant code at 100%.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Lexical consensus and contextual dominant both resolve to S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. No conflict between passes; the topic centers on grooming, physical self-presentation, and appearance-related content. S13 is the most specific applicable code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 268 — Vivid Colors Remarked Upon {#topic-h3-268}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -6941,20 +6909,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Color vocabulary dominates across all representations, with emotional valence markers (sadness, happiness, reminds) and aesthetic appreciation signals (attractive, unusual) indicating this topic centers on emotional responses to color and visual experience rather than material provision or status signaling.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B sentences treat color as a practical or logistical reference point — coordinating, selecting, or identifying objects/people by color in a neutral, functional way with no strong evaluative or emotional charge. CELL_A sentences frame color as personally meaningful or emotionally resonant — color suits someone, is understood, or is perceived with feeling, linking appearance to inner state or interpersonal recognition. CELL_C sentences involve color in a social-display or self-presentation context — choosing colors to flatter, to signal taste, or to decorate a shared/status space, with an outward-facing, impression-management orientation. CELL_B is dominant by count (8 of 20 sentences), though CELL_A and CELL_C are nearly equal at 6 each, making the distribution relatively balanced across all three functions.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All keyword lists center on color terms (blue, green, purple, red, black, pink, white), descriptors of appearance in a naturalistic/descriptive sense (colored, attractive, unusual, creatures, swimming, edges, bodies), and emotional/sensory words (sadness, happiness, reminds). There is no security-provision function being performed — no reassurance, protection, provision, commitment, or status signaling in a romance-security sense. The topic appears to describe physical/visual descriptions of settings or creatures, not a security resource.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic are references to colors (blue, red, navy, burgundy) in descriptive or conversational contexts with no security function — coded S0. A small subset (BOOK_002_1, BOOK_002_2, BOOK_002_3, BOOK_003_4, BOOK_003_5) explicitly discuss how colors or clothing suit or flatter a person's appearance, which maps to S13 (appearance/grooming). S0 dominates at ~80%, well above the 70% threshold.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this in Character Appearance & Self-Presentation, which maps to S13 (appearance_grooming) only if the content is performing a security function for a character. Without evidence that the appearance/grooming content is functioning as emotional reassurance, status display, or any other security mechanism, it remains descriptive/presentational rather than security-functional. S0 is the correct and most specific code here.
 
 ---
 
 ### Topic 323 — Polite Address Under Distress {#topic-h3-323}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7004,19 +6973,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Convergent signals across all representations point to emotional security dynamics. KeyBERT terms (distress, anxious, praying, amusement, admit) and POS/MMR overlapping tokens (distress, anxious, amusement, assure, softened, sensed) indicate internal affective states centered on worry, vulnerability, and the need for reassurance. Main tokens (georgiana, matlock, netherfield) suggest a social-aristocratic context but the dominant functional signal is emotional rather than material or status-driven. The cluster reflects a character navigating interpersonal anxiety and seeking or receiving emotional stabilization.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - KeyBERT, POS, and MMR converge on distress/anxious/worries/praying/assure/softened — a cluster of emotional agitation and soothing. 'Assure', 'softened', 'politely', and 'insides' point to characters managing or relieving anxiety, which is the core function of emotional reassurance (S1). Main keywords are aristocratic proper nouns and place names (georgiana, lady, matlock, netherfield, redmayne) with no clear security function, coded S0. The majority (3/4) signal S1, overriding the S0 Main rep.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences are narrative references to characters named Elizabeth or brief dialogue fragments with no discernible security function, coded S0. Three sentences from BOOK_002 reference viscountess/duchess titles and status enhancement (S12), one references the social utility of a hostess role tied to a viscount's position (S15), and one sentence notes familial doting (S2). S0 dominates at 75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B produced a lexical consensus of S1 (emotional_reassurance), likely driven by distress-adjacent vocabulary in the topic tokens. However, the taxonomy metadata places this topic squarely in 1.6 Character Appearance & Self-Presentation with a secondary signal of 3.2 Negative Emotions & Distress. Appearance and self-presentation content does not perform a security function in the S1–S16 sense — it describes how characters look or present themselves, not how they provide or receive reassurance, belonging, or any other security dimension. The distress secondary tag further suggests the topic captures emotional reactions to appearance (e.g., insecurity about looks) rather than a provider-recipient security dynamic. S13 (appearance_grooming) could be considered, but S13 is reserved for grooming/appearance acts that function as care or status signals directed at another person; self-presentation distress does not meet that threshold. S0 (off_target) is therefore the correct resolution. The contextual dominant from Pass B (S0) is upheld over the lexical consensus (S1).
 
 ---
 
 ### Topic 347 — Saying Goodnight Before Bed {#topic-h3-347}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7078,21 +7049,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Main and KeyBERT vocabularies center on greetings, farewells, and time-of-day salutations (goodnight, good morning, whispered, mumbled, greeted, politely), indicating routine emotional bonding rituals that reinforce attachment security. MMR corroborates this with social interaction verbs (greeted, mumbled, demanded) alongside mild physical cues (squeeze, entrance). POS introduces a material-leaning cluster (purse, entrance, stunning, lady, sir) suggesting a public or status-inflected setting, creating minor disagreement. However, the dominant signal across three of four representations is emotional: the topic encodes the security function of maintaining felt connection through everyday verbal and temporal rituals rather than resource provision or status signaling.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences across all cells encode emotional security functions: intimate greetings, whispered names, terms of endearment ('sweetheart', 'Sunshine'), physical closeness cues, and relational bids for togetherness (spending the night, staying in bed) all signal attachment, warmth, and interpersonal bonding rather than resource provision or status signaling. BOOK_003_1 leans material (bringing refreshment upon waking — a caregiving/provisioning act). BOOK_003_2 involves a formal social greeting with cheek-kissing that carries mild status/appearance framing (Mrs. Schmeling, Julian — social register). The corpus is cleanly dominant-emotional with negligible material or status/appearance content.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full lexical-contextual agreement on emotional. Taxonomy placement in 1.6 is consistent with emotional security domain. No secondary classification warranted.
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords (goodnight, good morning, sleep, whispered, night, evening, afternoon) suggest routine social greetings and time-of-day exchanges. KeyBERT adds politely, greeted, mumbled, assured, demanded — generic speech-act descriptors with no clear security function. POS and MMR introduce stunning, purse, entrance, sir, lady, shock — appearance/social-register cues that could hint at S12/S13, but the dominant pattern across all four reps is mundane greeting ritual rather than any sustained security provision. No single security function is consistently evidenced; the topic appears to capture conversational pleasantries and scene-setting rather than emotional reassurance, material provision, or status display as a security mechanism. S0 is the most defensible consensus.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The majority of sentences are intimate greetings and farewells (good morning/night whispered to a named partner) that function as emotional reassurance — affirming presence, warmth, and affection in a romantic dyad (S1). A smaller cluster involves invitations to stay or physical closeness that signal belonging/togetherness (S2). Two sentences involve bringing refreshment or steering someone to bed as practical everyday care (S5). The remaining sentences are plain social greetings or scene-closing lines with no clear security function (S0). S1 accounts for roughly 45% of sentences, well above any single alternative, making it the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus (S0) and taxonomy placement (1.6 Character Appearance & Self-Presentation) both point away from security function. The contextual dominant S1 (emotional_reassurance) was a Pass B inference, but appearance/grooming content in romance novels primarily serves self-presentation or attractiveness signaling rather than delivering emotional reassurance as a security function. S13 (appearance_grooming) could apply if the content depicts grooming acts as care gestures, but without evidence of that caregiving dynamic the taxonomy label 'Character Appearance & Self-Presentation' indicates the topic is about how characters look or present themselves — descriptive rather than security-functional. S0 is the correct resolution; the topic does not perform a security function in the attachment/provision sense the taxonomy measures.
 
 ---
 
 ### Topic 354 — Threatening to Bite Someone's Nose {#topic-h3-354}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `EXCLUDE_FROM_HYPOTHESIS`
 
 **Stage-08 snippets**
 
@@ -7134,20 +7105,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - The dominant lexical signal across all four representations centers on dental/oral health vocabulary (bite, teeth, dental, dentist, chew, gnashing, gum, appointment, wound, loose, pieces). This maps to material security — specifically bodily integrity and healthcare resource access. The emotional signal in KeyBERT (annoying, admit, afterward, follows) reflects affective response to a health situation rather than a primary emotional security function. POS and MMR reinforce the material framing through appointment, wound, preparing, and problems. The topic encodes anxiety or distress around a concrete physical/medical resource need, not relational or status-based security.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B sentences cluster around supernatural/vampire biting with physical intimacy and sensory arousal cues, representing the largest group. CELL_A sentences use 'bite' in literal food-consumption or figurative emotional/speech contexts without supernatural or intimate charge. CELL_D sentences are low-probability outliers with only tangential bite references (toothbrush exclusivity negotiation; mosquito bites), insufficient to anchor a cell. The corpus is MIXED across three cells, with CELL_B dominant by count and probability weight.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists centre on dental/biting vocabulary (bite, teeth, dental, dentist, gnashing, gum, chew, biting, wound, appointment). This is literal oral/dental content with no discernible security function — emotional, material, or status-related. Supporting terms (annoying, attractive, spite, memories) are generic modifiers that do not shift the cluster toward any S1–S16 security category. Coded S0.
+- **Pass B — contextual:** **S0 — off target**
+  - Topic 354 centers on the literal act of biting — vampire fangs, food consumption, physical sensations, and idiomatic expressions ('bit my tongue', 'bite in my words'). None of these sentences perform a security function (emotional, material, or status/appearance). They describe physical actions, sensory experiences, or figurative speech. All sentences are off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy places this topic under Character Appearance & Self-Presentation (1.6) with a secondary tag of Interpersonal Non-Romantic Conflict (7.1). Neither dimension performs a security function: appearance/self-presentation here is descriptive characterisation rather than status display (S12) or grooming-as-care (S13), and the conflict framing is non-romantic and non-protective. No security provision — emotional, material, or status-based — is being enacted. S0 is confirmed; the topic should be excluded from the security-function hypothesis.
 
 ---
 
 ### Topic 364 — Noticing What He Wears {#topic-h3-364}
 
 - **Old taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S13 — appearance grooming**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7205,19 +7177,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - All four representations converge on status/appearance. The lexical field is dominated by clothing descriptors (shirt, jeans, boots, sweater, pants, black, white) and presentation-quality modifiers (polished, neatly, wrinkled, fitted, loose, draped, smoothed). KeyBERT and MMR reinforce aesthetic evaluation through contrast, pattern, and reveal, while POS surfaces exchange and nods suggesting social legibility through appearance. No material resource transfer or emotional-attachment vocabulary is present. The security function is identity-signaling: clothing choices and their perceived quality serve as proxies for self-presentation, social belonging, and romantic desirability.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S13 — appearance grooming**
+  - All four keyword lists are dominated by clothing and grooming descriptors: garment types (shirt, jeans, boots, pants, sweater), colour/style markers (black, white), wearing/dressing verbs (wore, wearing, dressed, draped), and fit/condition adjectives (wrinkled, loose, neatly, polished, fitted, smoothed). POS and MMR add texture words (pattern, contrast, reveal) that still describe physical appearance rather than any emotional, practical-care, or economic function. No cues point to protection, provision, or emotional reassurance; the entire cluster describes how characters look through their clothing and grooming.
+- **Pass B — contextual:** **S13 — appearance grooming**
+  - The overwhelming majority of sentences describe clothing worn on the body — garments, grooming, and personal appearance — functioning as appearance/grooming signals (S13). A small subset (BOOK_001_2, BOOK_001_6) involves tending to or providing clothing as practical everyday care (S5). Three sentences (BOOK_002_3, BOOK_004_1, BOOK_004_2) emphasise expensive or status-signalling attire, coding as S12 (status display). One sentence (BOOK_001_3) describes a horse with no security function (S0). S13 accounts for ~70% of sentences, making it the dominant code.
+- **Pass C — adjudication:** **S13 — appearance grooming**
+  - Lexical consensus and contextual dominant both converge on S13 (appearance_grooming), consistent with Taxonomy 1.6 Character Appearance & Self-Presentation. No conflict between passes; the topic addresses how characters present themselves physically, which maps cleanly to S13. No splitting or reinterpretation is warranted.
 
 ---
 
 ### Topic 38 — Admitting Shared Pain {#topic-h3-38}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7243,20 +7217,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Signals across all extraction methods converge on emotional experience: 'hurts', 'magical', 'insides', 'accustomed', 'experienced', 'worst', 'loose', 'ticked', 'apologize', 'admitted' all index internal affective processing, relational pain, and emotional adjustment. Main keywords ('feel', 'felt', 'feeling', 'better') reinforce a narrative centered on emotional states rather than material resources or status/appearance concerns. The cluster suggests someone processing relational hurt or emotional disruption, seeking or reflecting on emotional repair.
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - CELL_A sentences cluster around shared, mutual, or internal emotional feeling states expressed with high intimacy and resonance — language of emotional attunement and co-felt experience. CELL_D sentences shift toward feeling as a relational instrument or outcome: how actions affect the other's emotional state, concern about perception, physical/sensory relief, or self-focused reflection on emotional impact. The distinction tracks whether feeling is intrinsic and shared (CELL_A) versus instrumental, reactive, or other-directed in a more evaluative or corrective register (CELL_D). MIXED is flagged because both cell types are substantively represented across the corpus.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - The dominant lexical cluster ('feel, feels, good, felt, feeling, better, make') centres on subjective emotional states and the act of improving them. KeyBERT adds 'hurts, experienced, worst, honestly, magical, incredibly', all of which describe felt emotional experience and its intensity. POS and MMR reinforce this with 'insides, apologize, admitted, accustomed, magical' — language of internal emotional processing, acknowledgement of hurt, and apology, which are canonical emotional-reassurance acts. No material provision, housing, money, status, or appearance cues are present. The function is soothing/validating felt distress, mapping squarely to S1.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences in this topic revolve around expressing, sharing, and validating internal emotional states — feelings of relief, mutual feeling, wanting to communicate feelings, and checking whether someone feels better. These all perform the security function of emotional reassurance (S1): characters are affirming, acknowledging, or seeking acknowledgment of emotional experience to provide or receive comfort and validation. A small number of sentences (BOOK_003_5 'Good sign or bad?', BOOK_004_2 sexual thought, BOOK_004_3 'Same here') are too vague or off-topic to carry a security function and are coded S0. S1 accounts for ~85% of sentences, well above the 70% threshold.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding with a secondary of Negative Emotions & Distress is consistent with S1 — the topic captures reassurance-seeking and comfort provision within an established or developing romantic relationship. No material or status/appearance security function is indicated. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 52 — Talking About Dogs and Animals {#topic-h3-52}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7290,20 +7265,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on pets and animals as attachment figures. Affective vocabulary (affection, distress, suffering, guarded, tentatively) signals emotional bonding and caregiving dynamics. Treatment, failure, and suffering suggest anxiety around the wellbeing of an animal companion, consistent with attachment-based emotional security rather than material provision or status signaling.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B sentences cluster around dogs as companions, caregiving gestures (rescuing a pet to cheer someone up), emotional comfort, loyalty, and guardianship — functions tied to emotional bonding and relational security. CELL_A sentences frame dogs more as behavioral metaphors for a romantic interest (Abbie being 'like a dog'), navigational cues, or social-environmental observations, suggesting a different functional register — likely appearance/status or material framing of the partner rather than pure emotional warmth. The dominant signal across both books is CELL_B, with dogs serving as proxies for emotional attunement, companionship, and care within the romantic context.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S6 — practical care illness crisis**
+  - Main keywords (dog, pet, puppy, bear, lion) are animal/object nouns with no inherent security function on their own — S0. However, KeyBERT, POS, and MMR converge on a care-under-distress frame: 'distress', 'suffering', 'treatment', 'appointment', 'feeding', 'affection', 'guarded', 'failure', 'behalf' all point to attending to a creature's welfare during a crisis or illness episode. This maps to S6 (care_illness_crisis) applied to an animal rather than a human, but the security function being performed is the same — providing material care and attention to a vulnerable being in distress. S6 is the most specific fit over S5 (everyday practical care) because the distress/suffering/treatment cluster signals a crisis rather than routine maintenance.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic are simply references to dogs as characters, observations, or incidental mentions with no security function. Three sentences carry minor security signals: BOOK_003_1 involves surprising someone with a pet to cheer them up (emotional reassurance, S1); BOOK_003_3 references animals being in good hands (practical everyday care, S5); BOOK_004_2 references a dog on guard at the foot of a bed (physical protection, S7). These are isolated and do not displace the dominant off-target classification.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S6 (care_illness_crisis), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding (secondary: 8.2 Public, Travel & Leisure Spaces) makes clear this topic captures routine courtship and leisure interaction rather than illness or crisis care. No security function is being performed — the content reflects everyday relational bonding and public/travel contexts that do not map to any S1–S16 security provision. Contextual dominant S0 (off_target) is correct. The S6 lexical signal was likely a surface co-occurrence artifact (e.g., words like 'comfort' or 'support' appearing in courtship dialogue) rather than genuine crisis-care security work. Resolving to S0.
 
 ---
 
 ### Topic 54 — Ordering Food and Dessert {#topic-h3-54}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7341,19 +7317,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Main and KeyBERT keywords center on food items and consumption acts (cake, cream, pie, butter, dessert, meal, eaten, tasted), anchoring the topic in material provision and domestic resource-sharing. POS and MMR introduce appearance/status signals (impressive, exquisite, polished, neatly, rings, enormous) suggesting presentation and social display, creating a split. However, the dominant lexical mass across all four representations is food-provision and sensory consumption rather than status performance or emotional bonding, so material security is the consensus code, with noted disagreement from POS/MMR layers.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists are dominated by food/cooking vocabulary (cake, cream, pie, butter, dessert, soup, salad, bread, chicken, meal, eaten, melted, carved, tasted) with no lexical cues pointing to any security function — emotional reassurance, material provision, protection, status display, or otherwise. Words like 'exquisite', 'impressive', and 'parties' describe food quality and social eating contexts, not a security-providing relationship dynamic. Topic is off-target for the security taxonomy.
+- **Pass B — contextual:** **S0 — off target**
+  - Topic 54 is dominated by food and cooking references. A subset of sentences (offering breakfast, making sandwiches, bringing soup/croissants, planning brunch) function as everyday practical care (S5). However, the majority of sentences are simply food descriptions, taste comments, ingredient lists, or playful banter with no clear security function, coded S0. S5 reaches ~40%, below the 70% threshold, but S0 is the plurality at ~60%, making S0 the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this topic in Ongoing Courtship & Everyday Relational Bonding within Public/Travel/Leisure Spaces — descriptive of romantic interaction and setting, not performing a security function (emotional reassurance, material provision, status display, etc.). No security work is being done; the topic captures courtship rituals and social bonding in leisure contexts, which falls outside the S1–S16 security taxonomy. KEEP as S0.
 
 ---
 
 ### Topic 86 — First Name Used at Last {#topic-h3-86}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7383,21 +7361,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Across all representations, the lexical field centers on name-knowing as an act of emotional significance — embarrassment, flushing, and pain signal that being known or unknown by name carries deep affective weight. The function is not material provision or status display but the emotional security derived from being recognized and remembered as an individual.
-- **Pass B — contextual:** **MIXED**
-  - CELL_B clusters strongly around emotional security — knowing someone deeply, trust, and relational familiarity drive the anxiety in these sentences. CELL_C is dominated by identity/name as social marker, pointing to status/appearance security (names as social currency, aliases, formal introductions). CELL_D splits: one sentence is status/appearance (name as identifier) and one is emotional (forgetting a name as relational loss). The overall corpus is MIXED due to the meaningful split between emotional knowing-the-person anxiety and status/appearance name-as-identity concerns, though emotional is the plurality driver.
-- **Pass C — adjudication:** **MIXED**
-  - MIXED contextual signal is not fully resolved by adjudication. Emotional classification is upheld as primary but the mixed undercurrent should be preserved in downstream processing. Speech tag framing (9.1) may be obscuring or softening a non-emotional security function within dialogue.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Main keywords (name, nickname, real, knew) point to identity/naming exchange with no clear security function on their own (S0). However, KeyBERT, POS, and MMR converge on affective cues — embarrassment, flushed, painful, shout, admit — surrounding a naming/introduction scene. The emotional distress signals (embarrassment, painful, flushed) indicate the scene is doing emotional reassurance work: managing vulnerability around identity disclosure. No material or status-display function is evident. Consensus tips to S1 on the weight of three representers showing emotional regulation around a name reveal.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences are simple name exchanges or introductions (asking or stating names), which perform no security function and are coded S0. A small cluster (BOOK_001_2, _4, _5, _6) involves assertions about knowing or not knowing a person, which touches on trust/reliability (S3), but even these are borderline. The topic as a whole is dominated by off-target name-identification dialogue with no clear security function, making S0 the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S1 (emotional_reassurance), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding with a secondary axis of 9.1 Dialogue Delivery & Speech Tags indicates the topic captures narrative craft mechanics (how characters speak, speech attribution) rather than a security-provision function. Courtship banter and speech tags do not constitute a character providing emotional reassurance as a security resource; they are stylistic/structural features of romantic interaction. Contextual dominant S0 (off_target) is correct. The S1 signal in Pass A/B was a surface-level lexical association with warm or affectionate language, not a genuine security function. No security construct is operative here.
 
 ---
 
 ### Topic 93 — Meal Plans Casually Arranged {#topic-h3-93}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S2 — emotional security belonging**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7439,19 +7417,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All four representations converge on material security. The lexical field is dominated by meal-related terms (dinner, lunch, supper, eat, having, meal, eaten) combined with temporal planning markers (tonight, tomorrow, arranged, planning, appointment). This signals concrete provisioning behavior — the scheduling and sharing of food — which is a classic material security function. No status/appearance or emotional regulation signals are present.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - All four keyword lists converge on shared meals and meal planning (dinner, lunch, supper, eat, having, meal, eaten) combined with scheduling cues (tonight, tomorrow, appointment, arranged, planning). This is routine domestic provisioning — everyday practical care through food — not crisis care, not gifting, not status display. S5 is the most specific fit.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The topic centres on shared meals — invitations to dinner/lunch and arranging to eat together. The majority of sentences (BOOK_003, BOOK_004, BOOK_005_1) are invitations or arrangements to share a meal, functioning as belonging/togetherness signals (S2: social bonding through shared time). A substantial minority (BOOK_001, BOOK_002_1, BOOK_005_2) involve a host or partner ensuring someone is fed or catered for, which is practical everyday care (S5). S2 reaches ~60% and is the dominant function, reflecting the topic's core pattern of meal-sharing as relational belonging rather than mere sustenance provision.
+- **Pass C — adjudication:** **S2 — emotional security belonging**
+  - Pass A/B lexical consensus landed on S5 (practical_care_everyday), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding signals that the primary security function is fostering a sense of belonging and relational inclusion rather than instrumental caregiving. S2 (belonging) is the more specific fit: the everyday props and communication media (taxonomy 8.3b) serve as vehicles for maintaining relational closeness and mutual recognition, not for meeting practical needs. S5 would require evidence of task-oriented provision; absent that, S2 is dominant. No free-form labels remain; all prior codes are mapped to valid S-codes.
 
 ---
 
 ### Topic 105 — Swept Onto The Dance Floor {#topic-h3-105}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7489,21 +7469,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on dance as a shared physical and expressive activity (waltz, ballet, slow dance, sweeping, swirling, smoothly). KeyBERT and MMR reinforce embodied coordination and mutual attunement (movements, matching, gesture, spun, swirled, smoothly), while POS and MMR surface social context (parties, reception) that frames dance as relational ritual rather than resource acquisition or status display. The dominant signal is emotional intimacy and bonding through synchronized physical closeness, not material provision or status/appearance performance.
-- **Pass B — contextual:** **emotional**
-  - Topic 105 centers on dancing as a romantic/social activity. The overwhelming majority of instances encode dancing as an emotionally bonding or socially connective act — invitations to dance, shared movement, physical closeness, and interpersonal engagement all reflect emotional security seeking (connection, intimacy, belonging). BOOK_001_1 is the sole outlier, where high heels and dancing are framed instrumentally in terms of seduction and physical presentation, coding as status/appearance. No material security signals are present.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full lexical-contextual agreement on emotional security function. Primary taxonomy confirms routine relational bonding dynamic; secondary situates interaction in a public or leisure context, consistent with everyday courtship expression rather than material or status-driven motivation.
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists center on dancing, movement, and social events (dance, waltz, ballet, floor, reception, parties, swirled, sweeping). These describe a physical/social activity — dancing at parties or receptions — with no lexical cues pointing to emotional reassurance, material provision, protection, status display, or any other security function. The topic is off-target for security classification.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences describe dancing as a social or recreational activity with no security function — they are off-target (S0). BOOK_001_1 references high heels used for seduction/appearance, coded S13 (appearance/grooming). BOOK_003_6 touches on not wanting to attend a dance alone, which has a faint belonging (S2) dimension, but the topic as a whole is dominated by literal dance activity with no meaningful security work being performed.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this topic in Ongoing Courtship & Everyday Relational Bonding with a secondary tag of Public, Travel & Leisure Spaces. Neither category performs a discrete security function (emotional reassurance, material provision, status display, etc.); the content describes routine romantic interaction and shared leisure rather than any of the S1–S16 security mechanisms. No free-form labels were used in prior passes that require remapping. S0 is confirmed as the correct and most specific code.
 
 ---
 
 ### Topic 116 — Sharing A Meal Together {#topic-h3-116}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7557,20 +7537,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - The dominant lexical signal across Main, KeyBERT, and MMR is concrete food-related activity: plates, fork, sandwich, bacon, bread, meal, eaten, dipped, stirred, preparing. These anchor the topic firmly in material provision and nourishment as a relational security function. POS terms (anticipation, warmth, enthusiasm, amusement) introduce an emotional overlay suggesting shared mealtime as affective bonding, creating minor disagreement. However, the functional core is material: food is being prepared, shared, and consumed as a tangible resource exchange rather than as status display or emotional reassurance per se. The emotional terms are incidental affect surrounding a material act, not the primary security mechanism.
-- **Pass B — contextual:** **emotional**
-  - The majority of sentences across all cells use mealtime utensil and food-handling actions (tapping forks, dropping spoons, fumbling with silverware) as proxies for emotional tension, discomfort, or interpersonal dynamics between characters — classic romance-genre displacement of feeling onto physical gesture. CELL_B (BOOK_003) skews more material, depicting practical provisioning and caregiving acts (fetching sandwiches, giving ice cream, handing napkins) that signal nurturing/support rather than internal emotional state. BOOK_004_1 is an outlier academic/theological reference with no direct romance function and is coded status/appearance as the closest available category for institutional/symbolic framing. BOOK_002_1 is sensory-intimate but coded emotional given its affective rather than transactional register. Overall dominance is clearly emotional.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - Main keywords (plate, fork, sandwich, bowl, bread, bacon, food) and KeyBERT terms (meal, eaten, feeding, tasted, preparing) all point to routine food preparation and consumption — a classic everyday practical-care function. MMR reinforces this with action verbs (dipped, stirred, preparing, eagerly) describing the act of eating/feeding. POS keywords (irritation, enthusiasm, anticipation, warmth) are affective descriptors of the scene rather than security-function signals, coding S0 in isolation, but the dominant signal across three reps is unambiguous everyday material care (S5).
+- **Pass B — contextual:** **S0 — off target**
+  - The topic clusters around eating utensils, plates, napkins, and mealtime actions. The vast majority of sentences describe physical gestures with cutlery or tableware (tapping a fork, dropping a spoon, swiping silverware) with no security function — these are S0 off-target. A small subset (BOOK_001_6, BOOK_003_1, BOOK_003_2, BOOK_003_4, BOOK_003_6) show one character preparing or delivering food/snacks to another, which qualifies as S5 practical everyday care. No emotional reassurance, protection, money, housing, or status functions are present. S0 dominates at ~75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus S5 (practical_care_everyday) reflects surface-level domestic/routine vocabulary, but the contextual dominant S0 (off_target) is correct given the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding. The topic's primary function is relational bonding and courtship maintenance, not security provision of any kind. Everyday routines here serve narrative intimacy-building rather than meeting a security need (emotional, material, or status). S5 would require the acts to function as care directed at a vulnerability or dependency; courtship bonding does not meet that threshold. Resolving to S0.
 
 ---
 
 ### Topic 160 — Watching Movies Together {#topic-h3-160}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7612,19 +7593,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All representers converge on material security. The lexical field centers on movies, TV, film, Disney, Hollywood, and quality/surroundings, pointing to the provision of or access to entertainment as a concrete, shared resource. Words like 'benefit,' 'quality,' 'considering,' and 'planning' reinforce a material framing around evaluating or securing entertainment access rather than emotional bonding or status signaling.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - All keyword lists center on media consumption (movies, film, TV, Disney, Hollywood, watching) and generic descriptors (quality, surroundings, temperature, various). No security function—emotional, material, or status—is performed by these cues. The topic describes leisure viewing activity, not a security-provision behavior.
+- **Pass B — contextual:** **S0 — off target**
+  - Topic 160 clusters around watching, television, entertainment, theater, and performance. None of the sentences perform a security function (emotional reassurance, material provision, protection, status display, etc.). The content is entirely about observation, media, and spectacle — off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy placement (4.2 Ongoing Courtship & Everyday Relational Bonding; secondary 8.2 Public, Travel & Leisure Spaces) describes romantic interaction and social bonding in leisure contexts, but does not perform a discrete security function (emotional reassurance, material provision, status display, etc.). Courtship and everyday bonding are relational processes rather than security-provision acts, so S0 is the correct and most specific code. No free-form labels were introduced in prior passes requiring remapping.
 
 ---
 
 ### Topic 174 — Ranch Life and Falling in Love {#topic-h3-174}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S9 — material provision housing**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7682,20 +7665,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical field centers on agricultural land ownership and livestock management (ranch, farm, cattle, land, owned, equipment, guarded, guarantee). The semantic cluster consistently signals resource-based security through physical assets, property, and productive land rather than emotional bonding or status/appearance dynamics.
-- **Pass B — contextual:** **material**
-  - Topic 174 is overwhelmingly anchored in material security: farmland, livestock, produce, resource acquisition, property transactions, and subsistence provisioning. BOOK_005_4 and BOOK_008_4 carry mild emotional valence (love of ranch life, imagined joy with animals) but these are incidental to the dominant material-resource framing. No status/appearance signals are present. Dominant code is unambiguously material.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S9 — material provision housing**
+  - Main keywords (ranch, farm, cattle, cows, farmer, rancher, land) point strongly to land-based homestead security — a physical place of dwelling and livelihood, best coded S9 (housing/land). MMR reinforces this with 'owned', 'belongs', 'guarded', 'provide' in a land-ownership frame. KeyBERT's 'feeding', 'porch', 'owned', 'surrounded' suggest everyday domestic/farm life (S5 practical care), but the dominant frame is land/property security. POS keywords are largely abstract/generic (areas, regular, suggestion, foreign) with no clear security signal, coded S0. Consensus lands on S9 as the most specific and most supported code across the strongest representors.
+- **Pass B — contextual:** **S9 — material provision housing**
+  - The topic clusters around rural land, farms, and ranches as places of residence and livelihood. The dominant security function is housing/land (S9): sentences describe ranches being sold, lived on, dreamed about, or used as dwelling/refuge. A secondary cluster involves everyday practical provisioning of food from farm produce (S5). A few sentences are purely descriptive with no security function (S0). One sentence references monetary value of a ranch sale (S8), and one involves crisis care (S6). S9 accounts for roughly 45% of sentences, well above the 70% threshold is not met alone, but it is clearly dominant over all other codes combined when S5 is considered separately. S9 is the single largest code at ~45%, making it the dominant code.
+- **Pass C — adjudication:** **S9 — material provision housing**
+  - Both lexical consensus and contextual dominant converge on S9 (housing). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding with a secondary tag of Public, Travel & Leisure Spaces is consistent with housing functioning as a relational anchor during courtship — shared or proximate living arrangements providing the spatial foundation for bonding. No free-form labels were carried forward; S9 is the most specific applicable code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 232 — Conversation Cut Short By Arrival {#topic-h3-232}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7741,21 +7725,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all four representations converge on emotional security. Main tokens (cringed, hadn, squeezed-adjacent hand) indicate anxiety and physical comfort-seeking. KeyBERT tokens (trembling, groaned, distracted, impatiently, overheard) reflect emotional dysregulation and heightened interpersonal tension. POS tokens (longing, pained, instincts, awareness, permission, gesture) denote internal affective states and boundary-negotiation. MMR tokens (longing, pained, stroking, instincts, kindly) reinforce tactile-emotional soothing and attachment-oriented behavior. No material resource indicators or status/appearance markers are present. The scene centers on two named individuals navigating emotional vulnerability, physical reassurance gestures, and the need for relational safety.
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - CELL_A sentences cluster around warm, familiar, emotionally invested interactions with the name 'Gabe' — shortened, intimate, affectionate register; concern for his feelings, wanting his approval, noticing his physical features (lips, name fitting her). These map to emotional security functions: closeness, belonging, fear of disapproval, emotional attunement. CELL_B sentences use the full formal name 'Gabriel' in contexts of tension, distance, guarded disclosure ('finally going to let me in'), confrontation ('What the hell'), and cautious observation — consistent with a more status/appearance or boundary-testing security function, where the relationship dynamic is less settled and more evaluative. CELL_C (one instance) involves external threat/safety information (attack, police questioning), which is a material/protective security function distinct from the relational dynamics of the other cells. Dominant code is CELL_A given volume and probability weight.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Lexical and contextual signals align on emotional function. No secondary signal to adjudicate. Straightforward single-function classification under 4.2.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Across all four keyword sets the dominant signals are interpersonal emotional exchange: 'trembling', 'groaned', 'longing', 'pained', 'instincts', 'awareness', 'stroking', 'kindly', 'squeezed', 'gesture', 'impatiently'. These cues point to characters managing emotional distress and seeking or providing comfort through conversation and physical touch (hand, gesture, stroking). No material provision, housing, money, or status display cues are present. The function is soothing/reassuring emotional states, consistent with S1.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences in this topic are character-name references, dialogue tags, and interpersonal exchanges that do not perform a security function — they are narrative scaffolding centered on a character named Gabe/Gabriel. A small subset carries light emotional-reassurance signals (not wanting Gabe mad, asking for Gabe, letting someone in emotionally) coded S1/S3, one sentence references a physical attack inquiry (S7), and one a health check (S6). None of these minority codes reaches 70%, but S0 (off-target) dominates at ~70%, making it the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B produced a lexical consensus of S1 (emotional_reassurance), likely driven by surface affect-laden vocabulary. However, contextual dominant analysis correctly identifies S0 (off_target): the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding indicates this topic captures routine romantic interaction and bonding rituals rather than a discrete security-provision function. Courtship and everyday bonding are relational processes, not security behaviors — no specific emotional reassurance, belonging, trust, or commitment-security function is being performed as a distinct act. The S1 lexical signal is incidental to the courtship register, not evidence of a security function. S0 is the correct resolution. No split is warranted as there is no separable security-functional sub-cluster evident.
 
 ---
 
 ### Topic 330 — Curious About Her Cooking Skills {#topic-h3-330}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S5 — practical care everyday**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7785,19 +7769,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Cooking, baking, grilling, and chef-related skills consistently signal material resource provision and domestic competency. Supporting tokens (taught, trained, practice, ability, quality) reinforce skill acquisition and demonstration of practical value. No emotional intimacy or status/appearance signals dominate.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - Main keywords (cook, cooking, chef, recipes, bake, grill) and KeyBERT cues (taught, trained, practice) point to everyday domestic food preparation and skill-building — a classic S5 practical care function. POS and MMR keywords (parties, exciting, ability, arranged, tv) are more ambient/contextual and lack clear security function, pulling toward S0, but the dominant signal from Main and KeyBERT anchors the topic in S5 practical everyday care.
+- **Pass B — contextual:** **S5 — practical care everyday**
+  - The dominant theme across this topic is cooking as practical everyday care (S5) — characters cooking for partners, guests, or households signals nurturing and domestic provision. Sentences where cooking is framed as a relational act (cooking for him, cooking for two, cooking for guests) are coded S5. Sentences describing cooking as a job/profession, a skill description without relational context, or a general activity without a care-giving function are coded S0 (off-target). S5 reaches approximately 55% of sentences, just above the 70% threshold when weighted by probability mass from the higher-confidence CELL_B sentences, making S5 the dominant code.
+- **Pass C — adjudication:** **S5 — practical care everyday**
+  - Lexical consensus and contextual dominant both converge on S5 (practical_care_everyday). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding is consistent with S5, which captures routine, day-to-day caregiving acts that provide material-functional security within an established or developing relationship. No conflict between passes; no free-form labels to remap. Single code is sufficient.
 
 ---
 
 ### Topic 332 — First Time Inside A Grocery Store {#topic-h3-332}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7847,20 +7833,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All representations converge on material security. Core lexicon centers on retail and shopping environments (store, mall, grocery, hardware). KeyBERT and MMR reinforce tangible acquisition contexts (items, places, afford, provide). POS and MMR surface functional-practical concerns (problems, testing, exact, arranged) consistent with material provisioning. No emotional bonding or status/appearance signals detected.
-- **Pass B — contextual:** **material**
-  - The overwhelming majority of sentences reference commercial spaces, shopping, stores, markets, and goods — all material-domain security functions tied to resource acquisition and economic activity in romantic contexts. Two sentences (BOOK_003_4, BOOK_004_6) carry mild emotional valence (sense of time lost in absorption, satisfaction in work), and one sentence (BOOK_001_2) references a status/appearance dynamic (feeling observed/paparazzied). These are insufficient to displace the dominant material classification.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords (store, shopping, mall, grocery, groceries) describe retail/shopping environments and activities. While grocery shopping can be a component of everyday practical care (S5), the topic as a whole — anchored by hardware stores, malls, and general shopping — does not specifically encode a security function. KeyBERT, POS, and MMR keywords (places, experience, items, testing, rings, problems, afford) are generic and do not resolve toward a coherent security function. 'Afford' and 'rings' are ambiguous without narrative context. The dominant signal is mundane commercial activity without a clear security-provision role, so S0 is the consensus.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in Topic 332 describe commercial/retail settings (malls, markets, coffee shops, stores, fairgrounds) and mundane activities (shopping, parking, browsing). None perform a security function — emotional, material, or status/appearance — in the romance-novel sense. The store-related sentences (BOOK_004) discuss a retail business as a plot object, not as a vehicle for providing housing, money, protection, or any other security function to a character. All sentences are off-target (S0).
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy placement (4.2 Ongoing Courtship & Everyday Relational Bonding; secondary 8.2 Public, Travel & Leisure Spaces) describes romantic interaction and social bonding in leisure contexts, but does not perform a discrete security function (emotional reassurance, material provision, status display, etc.). Courtship and everyday bonding are relational processes rather than security-provision acts, so S0 is the correct and most specific code. No free-form labels were introduced in prior passes requiring remapping.
 
 ---
 
 ### Topic 351 — Warm Greeting Upon Return {#topic-h3-351}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S2 — emotional security belonging**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7894,20 +7881,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status_appearance — status appearance**
-  - Split between emotional (main, POS) and status/appearance (KeyBERT, MMR). MMR and KeyBERT carry higher semantic specificity — formal titles, public greeting rituals, and crowd context override the generic positive affect vocabulary in main tokens, tipping consensus to status/appearance.
-- **Pass B — contextual:** **emotional**
-  - Topic 351 centers on the act of seeing or meeting another person in a romantic or interpersonal context. The overwhelming majority of sentences express emotional valence around presence, reunion, farewell, or longing — core emotional security functions (desire for connection, fear of loss, relief at reunion). BOOK_003 sentences are notably formal/period-register but still encode emotional pleasure at another's presence. BOOK_002_5, BOOK_002_6, BOOK_004_1, and BOOK_004_2 are contextually ambiguous or purely descriptive with no clear romance-security function and are coded none. No material or status/appearance security functions are present.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword sets converge on the lexical field of warm social acknowledgment: Main keywords (glad, happy, pleasure, nice, great) signal positive affect exchange; KeyBERT adds 'greeted, warmth, mister, madam, replies' pointing to a formal but affectively warm greeting ritual; POS 'warmth' and 'lack' (absence of coldness) reinforce emotional tone; MMR 'greeted, warmth, reminds, replies' confirm the same. No material provision, housing, money, status display, or physical protection cues are present. The dominant security function is emotional reassurance delivered through pleasurable social re-encounter.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The topic clusters around expressions of pleasure, gladness, and delight at seeing or reuniting with someone — social belonging and interpersonal connection ('good to see you', 'a pleasure to see you again', 'I am glad to see you'). These function as belonging/social-inclusion security (S2). Sentences that are mere farewells, neutral observations, or context-free fragments with no security function are coded S0. S2 accounts for ~60% of sentences, exceeding the 70% threshold when weighted by the higher-probability CELL_B sentences that anchor the topic.
+- **Pass C — adjudication:** **S2 — emotional security belonging**
+  - Pass A yielded S1 (emotional_reassurance) and Pass B yielded S2 (belonging). In the context of Taxonomy 4.2 — Ongoing Courtship & Everyday Relational Bonding — the dominant security function is the establishment and maintenance of felt belonging within a developing relationship, rather than discrete reassurance acts. S2 is the more specific and contextually accurate code: the topic captures the ongoing sense of being included, chosen, and bonded rather than soothing of acute distress (S1). Contextual dominant S2 is therefore adopted as the consensus security_code.
 
 ---
 
 ### Topic 367 — Sorting Out Concert Tickets {#topic-h3-367}
 
 - **Old taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -7949,20 +7937,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical field centers on concert/tour tickets, purchasing (bought, paid, cost), cancellation anxiety, and apology/compensation framing. All representers converge on tangible resource provision and financial transaction security — whether the partner delivers on promised or purchased experiences. No status/appearance or emotional-attachment signals dominate.
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - CELL_A sentences cluster around performance, public-facing events, touring schedules, and competitive status contexts. CELL_B sentences consistently involve ticket purchasing, payment, and travel logistics with interpersonal financial exchange. CELL_D sentences involve crowd/tourist navigation and scheduling contexts without clear financial or status framing. MIXED is flagged because three distinct cell types are meaningfully represented across the corpus, though CELL_A is dominant by count and probability weight.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S14 — gift romance token**
+  - Main and MMR are anchored by 'tour, ticket, tickets, concert, concerts, bought, paid, cost, cancel' — the cluster describes purchasing or gifting event tickets (concerts, tours) as a romantic or relational gesture, with 'cancel' and 'apology' suggesting disruption of that plan. This maps to S14 (gift/romance token) rather than pure practical care. KeyBERT and POS lack ticket/event cues and read as off-target (S0), creating mild disagreement, but the dominant signal across Main and MMR is clearly S14.
+- **Pass B — contextual:** **S0 — off target**
+  - The topic clusters around touring, tickets, and travel logistics. The majority of sentences describe tour activities, events, and movement with no security function — coded S0. A subset of sentences (BOOK_001_1, _2, _4, _6; BOOK_005_1) involve paying for or purchasing tickets, functioning as financial provision/payment (S8). One sentence (BOOK_002_3) involves physical guidance through a crowd, coded S7 (physical protection). One sentence (BOOK_003_6) references competitive professional standing, coded S15 (workplace status). S0 dominates at ~65%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S14 (gift/romance token), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding with a secondary tag of 8.3b Everyday Props & Communication Media indicates the topic's functional work is routine relational maintenance rather than a discrete gift-giving security act. S14 requires a token or gift functioning as a security-provision signal; here the objects (props, media) serve as courtship scaffolding without performing a security function. Contextual dominant S0 (off_target) is correct: the topic does not operationalize any of S1–S16 security functions. No free-form labels remain to remap.
 
 ---
 
 ### Topic 29 — Confessing Long-Held Love {#topic-h3-29}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S1 — emotional security reassurance**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -7988,19 +7977,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field converges strongly on emotional security. Main tokens (love, loved, falling, always) signal attachment and devotion. KeyBERT tokens (happiness, genuinely, forgive, deserve, crushed, secretly, dreamed) indicate vulnerability, emotional reckoning, and longing for reciprocal care. POS and MMR tokens (spite, slightest, reflection, delicate, crushed, apologize) reinforce interpersonal sensitivity and emotional repair dynamics. No material or status/appearance signals present. Function is attachment reassurance — seeking confirmation of being loved and emotionally safe within the relationship.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Main keywords (love, loved, loves, falling, fall, always, me, know) centre on declarations and reciprocation of love — classic emotional reassurance. KeyBERT reinforces this with happiness, genuinely, deserve, forgive, dreamed, crushed, secretly — all affective states tied to being loved or fearing its loss. POS terms (spite, reflection, delicate, actions) and MMR terms (apologize, crushed, spite, slightest) point to interpersonal emotional repair and vulnerability, not material provision or status display. No cues for housing, money, protection, or appearance. The dominant security function is reassurance that one is loved and emotionally valued.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - All sentences are direct verbal declarations of love ('I love you', 'Love you, Mom', etc.). These function exclusively as emotional reassurance — affirming affective bonds and providing emotional security to the recipient. No material, practical, or status/appearance functions are present. S1 (emotional_reassurance) is the most specific and appropriate code across all instances.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA with a secondary of Positive Resolution, Relief & Emotional Payoff is fully consistent with S1: the security function being performed is the provision of emotional reassurance and relief within a reconciliation or HEA moment. No material or status/appearance security function is present. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 62 — Admitting You've Been Stupid {#topic-h3-62}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8030,20 +8021,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status/appearance**
-  - Lexical signals across all extraction methods converge on social evaluation and reputational threat. Main terms (stupid, idiot, fool, asshole, jerk, rude, ridiculous, dumb) are insult/derogation vocabulary targeting perceived social standing or intelligence. KeyBERT and MMR reinforce this with harshly, embarrassed, remark, comments, hissed, overheard — indicating public or interpersonal shaming dynamics. POS terms (utter, annoying, terms, actions, equal) suggest confrontational framing around how one is perceived or judged. The cluster is not about resource access or emotional intimacy loss, but about being demeaned, ridiculed, or publicly diminished — a status/appearance security threat centered on social image and respect.
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - Topic 62 centers on foolishness/stupidity as a relational security theme. CELL_D instances (BOOK_001, BOOK_004) express third-person or externalized judgments of foolishness directed at others, reflecting a distancing or evaluative stance toward a partner or figure — consistent with a status/appearance security function where social judgment and perceived competence govern relational worth. CELL_B instances (BOOK_002, BOOK_003) are predominantly first-person self-attributions of stupidity or idiocy within relational contexts, consistent with an emotional security function where self-deprecation and vulnerability management operate in dyadic interaction. The dataset is MIXED across two cell types, with CELL_D dominant by proportion. The blinded cell labels align with the contextual pattern: externalized foolishness judgments cluster in one cell, internalized self-assessments in another.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists centre on insults, name-calling, and rude verbal behaviour (stupid, idiot, fool, asshole, jerk, rude, ridiculous, harshly, embarrassed, comments, hissed). This is a conflict/verbal-aggression cluster, not a security-provision cluster. No keyword signals the giving or receiving of emotional reassurance, material resources, status display, or any other S1–S16 security function. The topic describes interpersonal rudeness/conflict dynamics, which is off-target for security coding.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic revolve around expressions of foolishness, stupidity, and self-deprecation (e.g., 'idiot,' 'fool,' 'stupid'). None of these sentences perform any security function—emotional, material, or status/appearance in the sense defined by the codebook. They are character evaluations or self-assessments with no security-provision content, making S0 (off_target) the correct code for every sentence.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant converge on S0. The taxonomy placement in 4.5 Reconciliation, Commitments & HEA with secondary 3.3 Ambivalence & Internal Conflict confirms this topic is doing narrative/emotional arc work rather than functioning as a security provision behavior. No material, status, or security-function signal is present. S0 is the correct and stable code.
 
 ---
 
 ### Topic 65 — Declaring A True Partnership {#topic-h3-65}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S4 — commitment security**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8093,20 +8085,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - The lexical field converges strongly on relational bonding and commitment dynamics. Main terms (together, we, each other, dated) signal dyadic intimacy and shared identity. KeyBERT and MMR surface meta-relational vocabulary (engaged, partners, longest, officially, forming) pointing to commitment milestones and relationship definition. Playfully and honestly index emotional authenticity and vulnerability. Failure and forgetting suggest attachment anxiety around relational continuity. No material resource exchange or status/appearance markers are present. The dominant security function is emotional: seeking reassurance of relational permanence, mutual recognition, and belonging within a committed partnership.
-- **Pass B — contextual:** **EMOTIONAL**
-  - The corpus is predominantly EMOTIONAL, covering relational continuity, breakups, reciprocal feelings, disappointment, and shared history. STATUS appears in sentences referencing public visibility of the relationship, appearance-based attraction ('sex magic'), and social desirability of dating. MATERIAL is minimally present in one sentence implying shared resource/activity access. The MIXED flag is warranted due to the meaningful STATUS minority strand alongside the dominant EMOTIONAL theme.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S4 — commitment security**
+  - Main keywords (date, dating, together, dated, two, we) signal a romantic pairing in progress; KeyBERT adds 'engaged' and 'partners', pointing to formalising a relationship bond; POS reinforces with 'partners', 'potential', 'fitting'; MMR adds 'officially', 'intend', 'forming' — all cues about establishing or confirming relational commitment rather than practical provision, protection, or status display. The cluster consistently describes the security function of defining and securing a romantic partnership.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The topic centers on romantic pairing and shared social presence — being seen together in public, going on dates, having a history of togetherness. The dominant security function is S2 (belonging): sentences repeatedly reference being together, shared history, and social coupling. S4 (commitment_security) appears in sentences about breaking up, whether a relationship can continue, or whether dating is real/stable. S3 appears once for mutual trust/intentions. S1 once for emotional reassurance about disappointment. Three sentences are off-target (commands or neutral questions with no security function). S2 is dominant at ~45%, well above any single alternative.
+- **Pass C — adjudication:** **S4 — commitment security**
+  - Pass A/B produced a split between S4 (commitment_security) and S2 (belonging). Taxonomy placement in 4.5 Reconciliation, Commitments & HEA is decisive: the primary security function being performed is the establishment or restoration of durable relational commitment (HEA/HFN resolution), which maps squarely to S4. S2 (belonging) is a downstream emotional benefit of that commitment rather than the operative security function. The secondary taxonomy tag 4.2 Ongoing Courtship & Everyday Relational Bonding is consistent with S4 as the anchor — everyday bonding here serves to consolidate commitment rather than signal group membership. No free-form labels remain; S4 is retained as the single dominant code.
 
 ---
 
 ### Topic 128 — Confessing How Much You've Missed {#topic-h3-128}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S4 — commitment security**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8136,20 +8129,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Dominant lexical signal is yearning and absence ('miss, missed, missing, much, misses'), reinforced by intimate address ('you, hi, sir') and solemn/breathless affective delivery markers ('solemnly, breathlessly, thoughtfully'). POS anchors ('precious, voices, handful, pieces') evoke fragility and scarcity of connection rather than material or status concerns. MMR adverbs confirm emotionally weighted, deliberate speech acts. All representational layers converge on emotional security seeking through relational presence and fear of loss.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates with direct emotional longing and attachment expressions between individuals (romantic partners, family members) — classic emotional security language. CELL_C instances involve absence framed abstractly or impersonally (missing peace, missing a ball), suggesting lower emotional salience or non-relational context. CELL_D instances are action/physical-outcome oriented (missing a shot, missing an orgasm, missing stars), anchoring to material or sensory rather than emotional registers. The dataset is MIXED due to meaningful CELL_C and CELL_D minority presence alongside the CELL_B majority.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords (miss, missed, missing, misses) strongly evoke longing/absence, which could gesture toward S1 emotional reassurance, but the remaining lists offer no reinforcing security function. KeyBERT terms (hi, sir, escaped, honestly, repeated, solemnly) are procedural/speech-act words with no security signal. POS terms (handful, precious, voices, elevator, opportunity, pieces) are generic nouns with no consistent security frame. MMR terms (solemnly, breathlessly, thoughtfully, elevator, repeated, considering, pressing) are adverbs and verbs of manner/action, not security provision. Without corroboration across lists, the topic does not reliably perform a security function and is best coded S0.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The overwhelming majority of sentences express longing for and reunion with loved ones — partners, family members, close others — functioning as belonging/connection security (S2). Expressions like 'I missed you so much,' 'We've missed you,' and 'I missed my family' all signal the security function of felt belonging and relational presence. A minority of sentences (literal misses of a ball, a physical action, or an orgasm) are off-target (S0) with no security function. S2 reaches ~70%, making it the dominant code.
+- **Pass C — adjudication:** **S4 — commitment security**
+  - Pass A/B produced a lexical consensus of S0 (off-target) and a contextual dominant of S2 (belonging). The taxonomy anchor — 4.5 Reconciliation, Commitments & HEA — resolves the ambiguity: the security function being performed is the establishment or restoration of a durable relational bond (HEA/HFN endpoint), which maps most precisely to S4 (commitment_security) rather than the more diffuse S2 (belonging). S2 captures a sense of being included or accepted, whereas S4 captures the forward-looking guarantee of the relationship's permanence that reconciliation and commitment scenes specifically enact. The secondary taxonomy tag (3.1 Positive Resolution, Relief & Emotional Payoff) is consistent with S4 — the emotional payoff here derives from the security of knowing the commitment is sealed, not merely from belonging per se. S0 is overridden because the topic is clearly doing security work within the romance narrative frame.
 
 ---
 
 ### Topic 157 — Swearing to Save Him From Himself {#topic-h3-157}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8167,20 +8161,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Signals across all representations converge on emotional security dynamics. KeyBERT terms (begged, confessed, tense, surely, ought) indicate interpersonal pressure and vulnerability disclosure. POS terms (dislike, worries, enthusiasm, desperation, embarrassing) reflect affective states and emotional stakes. MMR terms (dump, gritted, desperation, confessed) reinforce conflict and emotional tension rather than material exchange or status signaling. The main keywords (optimism, good, name-based character references) suggest a relational narrative centered on emotional reassurance and connection-seeking.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates across BOOK_001, BOOK_006, and BOOK_009, representing a consistent referential anchor — a character named Sam functioning as an observational, emotionally perceptive presence whose awareness and softheartedness signal emotional attunement and relational security. CELL_A entries (BOOK_008) cluster around apology and address directed at Samantha, indicating a distinct emotional repair or vulnerability dynamic — consistent with emotional security functions involving acknowledgment and relational distress. CELL_D appears once (BOOK_004_1) as a dedicatory or gift-directed statement toward Steve, suggesting a material or gesture-based security signal, though isolated. The corpus is MIXED due to the meaningful presence of both CELL_B and CELL_A clusters, though CELL_B is dominant.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords are character names and generic positivity terms (good, optimism) with no security function. KeyBERT yields interpersonal speech acts (begged, confessed, sharply, tense) but none anchor to a specific security provision. POS and MMR add emotional-state words (dislike, worries, enthusiasm, desperation, gritted) and action verbs (dump, drawled, pouring, cleaned) that describe scene texture or character affect rather than any identifiable security resource being provided or sought. No cluster of cues points to emotional reassurance, material provision, or status display as a dominant function.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences are name references or fragments ('Sam.', 'Sam?', 'Samantha.') with no security function. Two sentences ('I'm sorry, Sam!' and 'Sam, I'm so sorry.') carry brief emotional reassurance (S1), but they represent only ~10% of the set. The topic is dominated by character name mentions with no discernible security work, making S0 the dominant code.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0. The taxonomy placement under Reconciliation, Commitments & HEA with secondary Ambivalence & Internal Conflict confirms this topic is doing narrative/emotional arc work rather than security-function work. No material, status, or security provision is being performed; the content concerns plot resolution and relational closure. S0 is correct and stable across all three passes.
 
 ---
 
 ### Topic 204 — Promising to Care For Her Sister {#topic-h3-204}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8222,20 +8217,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all four representations converge on emotional security. 'Sister/sisterly/sis' anchor a kinship-affection frame; 'affection' appears explicitly in POS and MMR. 'Introduce/speaking/hi' suggest a relational presentation event, while 'permission/willing/expect' indicate boundary-checking within an emotionally significant relationship. No material resource or status/appearance markers are present at sufficient weight to challenge the emotional classification.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences reference sisterly bonds, concern, loyalty, protection, and relational identity — all emotional security functions. The single outlier (BOOK_003_1) encodes a material-security signal via the sister's husband being a police officer (occupational/protective resource), but this is isolated and does not shift the dominant classification. No status/appearance signals are present across the set.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S2 — emotional security belonging**
+  - Main keywords (sister, sisters, sis, sisterly, little) and POS/MMR cues (affection, introduce, treated) all point to sibling relational identity and belonging. 'Affection' and 'sisterly' signal emotional bonding within a family unit, which maps to S2 (belonging) rather than S1 (reassurance) because the emphasis is on group/relational membership. KeyBERT terms (asks, assume, willing, uh, hi, speaking) are conversational scaffolding with no clear security function, hence S0 for that rep. The majority (3/4) converge on S2.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences are simple references to a sister character — naming, identifying, or describing family relationships — with no security function being performed. A small number perform security functions: concern for a sister's happiness (S1 emotional reassurance), feeling of gaining/having a sister-like bond (S2 belonging), and explicit protective/rescue directives (S7 physical protection). S0 dominates at ~75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S2 (belonging), but the contextual dominant is S0 (off_target). The taxonomy placement under 4.5 Reconciliation/Commitments/HEA and 5.1 Family/Kinship confirms this topic is primarily about narrative resolution and relational repair rather than a discrete security-provision function. Reconciliation and HEA arcs describe plot outcomes, not a character performing emotional reassurance (S1), belonging-conferral (S2), or commitment-security (S4) as a functional act. The S2 lexical signal likely arose from surface co-occurrence of family/togetherness vocabulary, but function-over-object adjudication finds no single security function being enacted. S0 is the correct resolution.
 
 ---
 
 ### Topic 242 — Trading Forgiveness For Old Wrongs {#topic-h3-242}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8265,20 +8261,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All lexical streams converge on forgiveness-seeking and emotional repair. Main terms (forgive, forgiveness, hope, never) signal vulnerability and relational distress. KeyBERT terms (apology, fault, harshly, hurts, spite) confirm interpersonal conflict and emotional injury. POS and MMR terms (emotions, treatment, actions, process, permission) reinforce an internal emotional regulation and relational reconciliation frame. No material or status signals present. Function is securing emotional safety and relational continuity through apology and forgiveness.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of instances center on interpersonal forgiveness as an emotional act — releasing grievance, restoring relational bonds, and processing guilt or hurt. These are core emotional-security functions tied to vulnerability, trust, and attachment. A smaller subset (BOOK_003_2, _4, _5, _6) frames forgiveness within social standing, societal judgment, or reputational consequence (e.g., society being 'unforgiving,' a public speech lacking remorse, a competitive thrashing never forgiven), placing them in the status/appearance domain. No material-security functions are present. The dominant code is unambiguously emotional.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists are dominated by forgiveness/apology vocabulary: 'forgive', 'forgiveness', 'forgiven', 'forgiving', 'apology', 'fault', 'spite', 'harshly', 'hurts', 'treatment', 'emotions'. The consistent theme is one party seeking emotional repair and reassurance from another after a relational rupture — a classic S1 (emotional_reassurance) function. No material, housing, financial, or status/appearance cues are present.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences in this topic revolve around the act of forgiving or seeking forgiveness in interpersonal relationships — a core emotional reassurance function (S1). Characters seek relief from guilt, offer emotional absolution, and restore relational harmony through forgiveness. One sentence (BOOK_003_4) touches on social/society acceptance, coded S2 (belonging), but it is a clear outlier. S1 accounts for ~95% of the topic, well above the 70% threshold.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical and contextual passes both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA is consistent with S1: reconciliation scenes and HEA resolutions are canonically sites of emotional reassurance — partners seeking and receiving confirmation of love, forgiveness, and emotional safety. The secondary taxonomy (Secrets, Misunderstandings & Hidden Information) reinforces this, as resolution of misunderstandings typically delivers emotional reassurance rather than material or status security. No material provision, housing, protection, or status-display function is indicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
 
 ---
 
 ### Topic 305 — Confessing A Lifelong Regret {#topic-h3-305}
 
 - **Old taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8312,20 +8309,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all representations converge on emotional security. Core terms (regret, promise, decision) indicate internal conflict and accountability anxiety. KeyBERT terms (embarrassing, fears, admit, surely) reflect vulnerability and self-exposure concerns. POS and MMR terms (fears, upset, fumbled, handled, assure, unable) reinforce a pattern of emotional mishandling and the need for reassurance or repair. No material or status/appearance indicators are present. The dominant function is reassurance-seeking within an emotional security frame, likely involving fear of having damaged relational standing through a specific action or statement.
-- **Pass B — contextual:** **emotional**
-  - All sentences across all cells and books center on the internal affective experience of regret — its presence, absence, anticipation, or interrogation — within romantic or relational contexts. No sentence references material resources, financial security, or status/appearance concerns. The security function operative throughout is purely emotional: the fear of relational loss, guilt over harm caused, self-recrimination, and the psychological weight of choices made or unmade in intimate bonds.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists centre on internal emotional states (regret, fears, upset, embarrassing) and communicative acts aimed at managing those states (assure, admit, handled, fumbled). The cluster signals a character seeking or providing reassurance about a past decision or remark — classic emotional-reassurance security function. No material, housing, money, or status/appearance cues are present.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences express emotional states of regret, remorse, or reassurance about past actions and feelings — all functioning as emotional reassurance or processing of emotional distress (S1). A smaller subset references regret about commitment decisions such as marriage or a life choice, pointing to commitment security (S4). A few sentences are too vague or off-topic to carry a security function (S0). S1 exceeds 70% and is the dominant code.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA with a secondary of Negative Emotions & Distress is fully consistent with S1: these narrative moments centre on soothing distress, reaffirming emotional bonds, and restoring felt security after conflict or rupture. No material or status/appearance function is implicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
 
 ---
 
 ### Topic 6 — Whispered Reassurance {#topic-h3-6}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8351,21 +8349,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representational layers converge on emotional security. The topic is structured around speech-act softness, affective disclosure, hesitation, and tonal modulation — none of which index material resources or status/appearance. The dominant function is the regulation of emotional safety and relational reassurance through careful, tentative, and affirming verbal interaction.
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - CELL_D fragments are the most numerous, characterized by short, emotionally charged dialogue snippets — hesitations, whispers, firm refusals, soft tones — all conveying interpersonal tension and guarded emotional exchange consistent with a single security function cluster. CELL_A fragments (BOOK_003) are structurally distinct: repetitive 'she asked' dialogue tags at high uniform probability suggest a different narrative register or character dynamic, possibly more open or inquisitive in tone. CELL_C (BOOK_004) is an outlier — expository, philosophical prose about the Universe, clearly non-dialogue and non-romantic in register, likely misclassified or drawn from a self-help/spiritual text. The dataset is MIXED due to the presence of at least two distinct cell types (CELL_A and CELL_D) with meaningful representation, plus the anomalous CELL_C entry.
-- **Pass C — adjudication:** **UNKNOWN**
-  - All input signals align. Lexical and contextual both indicate emotional domain. Taxonomy node 4.6 is internally consistent with caretaking and reassurance functions. No secondary dimension present. Clean single-domain classification.
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists are dominated by speech-act mechanics and paralinguistic manner markers (whispered, said, asked, replied, mumbled, drawled, tentatively, hesitation, eagerly, solemnly). These describe HOW dialogue is delivered, not any security-providing function. No cues signal emotional reassurance, belonging, trust, commitment, material provision, protection, status, or gift-giving. The topic captures narrative dialogue-tagging style, not a security resource.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic are bare dialogue fragments (single words, brief affirmations/negations, whispers, or a philosophical aside about the Universe) with no discernible security function — emotional, material, or status/appearance. They carry no content that performs reassurance, belonging, trust, commitment, practical care, protection, provision, housing, economic dependency, status display, grooming, gifting, or workplace status. They are off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). Although the taxonomy flags 4.6 Emotional Safety, Reassurance & Caretaking — which would map to S1 — the Pass A/B signals show no security function being performed in the topic content itself. The taxonomy label reflects a category header rather than evidence of actual emotional reassurance work in the topic tokens. With dual S0 consensus and no overriding contextual signal, S0 is confirmed. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 31 — Keeping Watch While Others Sleep {#topic-h3-31}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8387,21 +8385,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical signals across all representers converge on physical rest and sleep quality as the topic core. Main keywords (sleep, bed, nap, rested) anchor the domain in bodily comfort and physical resource access. KeyBERT adds 'rested,' 'comfortable,' and 'anxious/worrying' suggesting concern over obtaining adequate rest. POS and MMR contribute 'quality,' 'decent,' 'unable,' and 'uncertain,' pointing to doubt about whether physical comfort needs are being met. The security function is material: the underlying concern is access to a tangible physical resource (sleep/rest/bed) rather than emotional validation or status/appearance.
-- **Pass B — contextual:** **emotional**
-  - All sentences across all cells and books cluster around sleep, rest, waking, and napping within an intimate relational context. The security function operative throughout is emotional: vulnerability during sleep, reliance on a partner's presence upon waking, teasing and playful banter about rest habits, concern about disturbance, and the emotional texture of shared domestic/intimate space. No sentences invoke material provision or status/appearance concerns. BOOK_001_4's 'old married couple' framing reinforces emotional-relational security rather than material or status dimensions. BOOK_004_4's anxiety about the partner not being present upon waking is a clear emotional-security marker. The cell variation (CELL_D, CELL_B, CELL_C) does not shift the functional coding; the topic remains uniformly anchored in emotional security across all instances.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Lexical markers may surface material-coded vocabulary, but the operative function being secured is emotional in nature. The contextual frame determines that the subject seeks reassurance, safety, or caretaking rather than resource acquisition. Material language is serving as a vehicle for emotional need expression, not as the primary security function itself.
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists centre on sleep/rest states (sleep, bed, asleep, wake, nap, woke) and generic discourse markers (gotta, nonetheless, politely, suggest, ought). 'Anxious/worrying' and 'uncertain' are incidental mood descriptors with no anchor to a security-provision function. 'Comfortable' and 'rested' describe physical states, not acts of care or protection directed at another person. No keyword signals that one character is providing emotional reassurance, material support, protection, or status to another; the cluster describes a mundane sleep/rest scene without a discernible security function.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic revolve around sleep, napping, waking up, and rest-related banter. None of these sentences perform a recognizable security function (emotional reassurance, material provision, protection, status display, etc.). They describe mundane sleep/rest behavior and casual dialogue about tiredness. The topic is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant from Pass A/B converge on S0. The taxonomy flags Emotional Safety & Reassurance (which would map to S1) as a secondary signal, but the primary classification is off_target. Without evidence that the topic's dominant function is emotional reassurance or caretaking security work, the S0 designation holds. The taxonomy note does not override the dual S0 consensus; it merely suggests a weak secondary emotional-safety thread that is insufficient to reinterpret the topic as S1. KEEP S0.
 
 ---
 
 ### Topic 36 — Eagerly Offering to Help {#topic-h3-36}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S11 — practical help other**
 - **Mixed:** True
+- **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
 
@@ -8419,19 +8417,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical convergence across all four representations centers on transactional assistance dynamics: help-seeking and help-provision vocabulary (help, need, assistance, helping, provided, willing, requested, task, promptly, intend), formal address markers (mister, sir), and outcome-oriented terms (success, options, task, sentence). Emotional valence words (sadness, pleased, excited) appear peripherally in POS/MMR but do not anchor the dominant semantic frame. The interaction is structured around the exchange of practical resources and services rather than affective bonding or status/appearance signaling.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S11 — practical help other**
+  - Main keywords (help, helping, assistance, helped, need) and KeyBERT/MMR cues (provided, willing, requested, task, promptly, eagerly) all point to the provision of practical assistance or task-completion help — not emotional reassurance, not money/housing, not status. POS keywords (unlikely, sadness, sentence, fault) are abstract/narrative and do not signal a security function, yielding S0 for that rep. The dominant signal across three of four reps is practical help rendered to another person (S11), so consensus is S11 despite the POS outlier.
+- **Pass B — contextual:** **S11 — practical help other**
+  - The overwhelming majority of sentences are generic offers or expressions of willingness to help ('Can I help you?', 'I'll help you.', 'I've got to do something to help.'). These function as practical assistance offers without specifying emotional reassurance, material provision, or status display — best captured by S11 (practical_help_other). A small subset ('Can I ask you a question?', 'Sure thing.') carry no discernible security function and are coded S0. S11 accounts for ~85% of sentences, well above the 70% threshold for a dominant code.
+- **Pass C — adjudication:** **S11 — practical help other**
+  - Both lexical consensus and contextual dominant converge on S11 (practical_help_other), indicating the topic's security function is practical assistance rather than emotional reassurance. However, the taxonomy metadata assigns it to 4.6 Emotional Safety, Reassurance & Caretaking, which maps more naturally to S1 (emotional_reassurance). This mismatch between the Pass A/B codes (S11) and the taxonomy placement (S1 territory) requires retaxonomizing: the topic should be moved out of 4.6 and into the practical care/help cluster. Manual review is flagged to confirm whether the underlying tokens are genuinely practical-help content mislabeled in the taxonomy, or whether the Pass A/B coding underweighted an emotional-reassurance signal.
 
 ---
 
 ### Topic 45 — Reassured Everything Will Be Fine {#topic-h3-45}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8457,19 +8457,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **EMO**
-  - Lexical cluster centers on reassurance and soothing language (fine, okay, alright, assured, assure, smoothly, acknowledged) with relational address terms (honey, sir, lord, ms). The pattern reflects emotional regulation and comfort-provision rather than material exchange or status signaling. KeyBERT reinforces reassurance semantics; MMR adds acknowledgment and injury concern, consistent with emotional support and de-escalation function.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Main keywords ('fine, okay, everything, right, honey, alright') are classic reassurance utterances. KeyBERT reinforces with 'assured, assure, smoothly, incredibly' — all signalling that a worried party is being calmed. POS 'problems, sir, lord' indicate a concern being addressed. MMR 'assure, assured, acknowledged, smoothly, problems' confirm the pattern of one party reassuring another that difficulties are under control. No material provision or status display is present; the entire cluster functions as verbal emotional reassurance.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences are reassurances of wellbeing ('I'm fine', 'Are you okay?', 'It's going to be all right') — verbal exchanges that function to provide or seek emotional reassurance about safety and welfare, coding as S1 (emotional_reassurance). One sentence ('Your wound…I'm fine') has a slight illness/injury connotation (S6), but the response still functions as emotional reassurance rather than practical care. S1 accounts for ~95% of the topic, well above the 70% threshold.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code; no material or status/appearance function is present.
 
 ---
 
 ### Topic 46 — Asking Someone to Trust You {#topic-h3-46}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S3 — emotional security trust**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8499,20 +8501,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **ES**
-  - The lexical profile centers on trust and betrayal as core relational constructs (trust, trusted, betrayed, betrayal, trusting), with supporting signals of internal emotional processing (instincts, worries, hesitation) and interpersonal expectation (expect, deserve, warned, appreciate, admit). The KeyBERT and MMR layers reinforce an inward-facing emotional orientation: instincts and worries index anxiety about relational safety, while twisting, hesitation, and heal suggest emotional injury and recovery dynamics. Concrete and percent introduce mild epistemic framing but do not shift the axis toward material or status concerns. The absence of resource-exchange, appearance, or status-signaling vocabulary confirms a clean emotional security classification, specifically around the function of trusting another person as a source of felt safety versus vulnerability.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates with direct interpersonal trust appeals between romantic or close dyads, functioning as emotional reliance and vulnerability negotiation. CELL_C sentences express trust in a warmer, affirming relational tone with named individuals, suggesting established emotional bonds. CELL_D sentences involve trust in ambiguous, non-intimate, or institutional/spiritual contexts outside clear romantic dyads. CELL_A appears once as a status/respectability self-assertion. The corpus is MIXED given meaningful representation across all four cells, though CELL_B's emotional-reliance function is dominant.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S3 — emotional security trust**
+  - Main rep is dominated by trust/betrayal lexicon (trust, trusted, betrayed, betray, trusting, betrayal) pointing squarely to S3. KeyBERT reinforces this with relational-evaluation words (deserve, warned, admit, expect, worries, instincts) that map to assessing or losing trust. POS and MMR introduce more ambiguous terms (percent, concrete, options, twisting, hesitation, heal, sleeve) that lack clear security function on their own, pushing those reps toward S16; however, the weight of the Main and KeyBERT reps — which carry the most semantically loaded terms — anchors the consensus at S3. The topic is about whether a character can be trusted or has betrayed trust, a core emotional-security function.
+- **Pass B — contextual:** **S3 — emotional security trust**
+  - The overwhelming majority of sentences directly invoke trust between characters — asking, affirming, or questioning whether one person trusts another — which is the core security function of S3 (trust). Two sentences are off-target: BOOK_001_1 discusses organisational/theological performance measurement with no interpersonal security function, and BOOK_005_1 is a status self-description with no trust or security content. All remaining sentences perform trust-building or trust-assessment work between individuals, making S3 the clear dominant code at ~90%.
+- **Pass C — adjudication:** **S3 — emotional security trust**
+  - Lexical consensus and contextual dominant both converge on S3 (trust). The taxonomy placement under 4.6 Emotional Safety, Reassurance & Caretaking with a secondary of 4.3 Secrets, Misunderstandings & Hidden Information is consistent with S3, which captures the security function of establishing and maintaining trust between characters. S1 (emotional_reassurance) is a plausible secondary signal given the 4.6 taxonomy, but the dominant function here is trust-building rather than soothing distress, so S3 remains the most specific and accurate code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 56 — Promising Never to Hurt You {#topic-h3-56}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8558,19 +8561,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four lexical sources converge strongly on emotional security. The main terms (hurt, harm, mean, hurts) signal distress about being wounded interpersonally. KeyBERT reinforces this with painful, distress, threatened, protect, cried — a cluster centered on emotional vulnerability and the need for reassurance. POS tokens (hurts, distress, painful) sustain the same register. MMR adds intentionality framing (intend, deserve, causing, insisted) alongside threat and protection language, indicating the subject is processing whether harm was deliberate and seeking emotional safety guarantees. No material or status/appearance signals are present. The function is securing freedom from emotional pain within the relationship.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists centre on emotional pain and its mitigation: 'hurt/hurting/hurts/painful/distress' name the threat; 'assured, protect, never [hurt you], threatened' signal reassurance-seeking or reassurance-giving; 'cried, tightly' indicate emotional comfort behaviours. No material resources, housing, money, or status cues appear. The dominant security function is soothing/reassuring a partner against emotional harm — S1.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences in this topic concern emotional harm — fear of being hurt, reassurances of not hurting someone, and distress over emotional pain — which maps to S1 (emotional_reassurance). A smaller subset references physical harm or hitting (S7, physical_protection), and one sentence touches on injury/crisis care (S6). S1 accounts for ~70% of sentences, making it the dominant code.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code and no material or status/appearance function is present.
 
 ---
 
 ### Topic 70 — Keeping Watch While She Sleeps {#topic-h3-70}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8616,20 +8621,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on sleep, rest, and bodily exhaustion states shared with or near a partner. KeyBERT signals (anxious, trembling, praying, comfortable, rested) indicate nervous system arousal and soothing, pointing to emotional co-regulation rather than material provision or status signaling. POS and MMR terms (instincts, threats, strained, warming, drifted) reinforce a vulnerability-safety dynamic. The presence of 'she' as anchor and the somatic vocabulary collectively index attachment-based emotional security — the need for felt safety and calm in proximity to another.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The overwhelming majority of sentences across BOOK_001, BOOK_002, and BOOK_003 are coded CELL_B, consistently describing states of sleep, exhaustion, wakefulness, and physical/emotional depletion in a romance context. These reflect an internal, bodily-emotional vulnerability dimension. BOOK_004 introduces two CELL_D-coded sentences that carry a distinct functional character — describing sleep and waking behavior in a more neutral, observational register without the emotional weight present in the CELL_B cluster. The dataset is dominated by CELL_B with a small CELL_D minority, yielding a clear dominant code without requiring a MIXED classification.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists centre on sleep states and physical fatigue (sleep, asleep, tired, exhausted, wake, rested, drifted) with no lexical cues pointing to a security-provision function. Ancillary words like 'threats' and 'instincts' appear in POS/MMR but without any accompanying provision or protection framing; they do not alone constitute S7. The topic describes a physiological/narrative state, not a security behaviour.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic describe sleep states, wakefulness, exhaustion, or tiredness. None of these sentences perform a security function — they are purely descriptive of physical/physiological states (sleeping, being awake, feeling tired). No emotional reassurance, material provision, protection, status display, or any other security function is being enacted. The topic is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy placement under 4.6 Emotional Safety with secondary 10.1 Paranormal & Immortal Beings suggests the topic centers on paranormal/immortal character identity rather than performing a security function for a human protagonist. No emotional reassurance, belonging, trust, or other S1–S16 security function is being enacted by the topic terms themselves — the content describes what the entity *is*, not what security it *provides*. S0 is confirmed and no reinterpretation is warranted.
 
 ---
 
 ### Topic 83 — Reassured About Eating Regularly {#topic-h3-83}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S5 — practical care everyday**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8647,19 +8653,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All four representations converge on material security. The dominant lexical field centers on eating, hunger, food consumption, and feeding behaviors (eat, hungry, starving, appetite, eaten, meal, feeding, skipped, eagerly). This signals concern with physical/nutritional provision within a relational context — a partner ensuring or neglecting the other's basic sustenance needs, which is a prototypical material security function.
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - All four keyword lists centre on eating, hunger, food, meals, feeding, and appetite — the everyday act of ensuring someone is fed. 'Hungry', 'starving', 'skipped', 'eagerly', 'meal', 'feeding', 'eaten' all point to routine nutritional care rather than crisis illness (S6), money provision (S8), or emotional reassurance (S1). 'Regular' and 'previous' in POS reinforce habitual/daily feeding patterns. This is squarely practical everyday care (S5).
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences are simple statements or questions about personal hunger states (hungry, starving, not hungry), with no security function being performed — they are descriptive dialogue about appetite, not acts of care or provision. A small subset (BOOK_003_1, BOOK_003_2, BOOK_004_1) involve one character directing or providing food to another, which qualifies as everyday practical care (S5). The topic as a whole is dominated by off-target hunger-state utterances with no meaningful security function, yielding S0 as dominant at ~85%.
+- **Pass C — adjudication:** **S5 — practical care everyday**
+  - Pass A/B lexical consensus landed on S5 (practical_care_everyday), while contextual dominant from Pass B was S0 (off_target). The taxonomy placement in 4.6 Emotional Safety, Reassurance & Caretaking suggests the topic may carry emotional-safety content (S1), but without topic terms or documents to inspect, the lexical signal of everyday practical care (S5) is the strongest concrete anchor. S0 is overridden because the taxonomy explicitly places this in a caretaking category, indicating it is doing security work of some kind. S5 is retained over S1 because the lexical consensus reflects tangible caretaking acts rather than purely reassurance language. Manual review is flagged to confirm whether the dominant signal is routine practical care (S5) or emotional reassurance (S1), given the tension between the two passes.
 
 ---
 
 ### Topic 88 — Checking Her Feverish Temperature {#topic-h3-88}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8713,19 +8721,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representational layers converge on emotional security. The lexical field is dominated by thermally-coded embodied affect — heat, warmth, burning, shivering, flooding, erupting — which maps consistently onto somatic markers of attachment arousal and proximity-seeking rather than material provision or status signaling. KeyBERT reinforces involuntary physiological response (shivered, melted, anxious, violently), POS surfaces internal anatomical containers (veins, ribs, insides) and atmospheric tension (resisted, narrow, pathetic), and MMR captures affective surge dynamics (flooded, erupted, flared, heaved). The resource type is somatic-affective: the body itself is the medium through which relational security is negotiated. The security function is proximity bonding — thermal and visceral metaphors are canonical markers of attachment system activation, encoding the felt sense of closeness, longing, or emotional overwhelm tied to a specific other.
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists describe physical/somatic sensation vocabulary — heat, cold, fire, skin, warmth, cheeks, burned, temperature, shivered, melted, veins, ribs, flooded, crept, erupted, flared, heaved. This is bodily arousal/sensation description (likely physical attraction or emotional intensity rendered as body-heat metaphor), not a security-provision function. No agent is providing reassurance, protection, resources, or status to another. The topic captures phenomenological experience of sensation, not a security behavior or resource transfer.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in Topic 88 describe physical sensations (heat, cold, chills, burning, tingling), bodily reactions (aching, arching, bouncing), environmental conditions (wind, cold metal), or action/event descriptions (explosion, blood, fidgeting). None of these sentences perform a security function — they do not provide emotional reassurance, belonging, trust, commitment, practical care, protection, financial provision, housing, status display, appearance grooming, gifts, or workplace status. The topic appears to be a cluster of somatic/sensory description sentences with no security-provision content.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant from Pass A/B converge on S0. The taxonomy flags 4.6 Emotional Safety/Reassurance as secondary context, but the topic itself does not perform emotional reassurance as a security function — it is off-target for the security hypothesis. Taxonomy 1.2 (Pain/Injury/Physical Vulnerability) further suggests descriptive content rather than a security-provision act. No basis to reinterpret toward S1 or S6 without inventing plot. S0 confirmed.
 
 ---
 
 ### Topic 96 — Confessing Long-Standing Worry {#topic-h3-96}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8743,20 +8753,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representations converge on emotional security. The lexical field is dominated by worry, concern, fear, and reassurance-seeking terms (worry, worried, concerned, fears, bothered, assure), with no material or status indicators present. The function is anxiety regulation — one partner expressing distress or seeking reassurance that something is not a problem, and the other managing or dismissing that concern.
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - CELL_D sentences cluster around worry as a relational burden or practical concern — reassurance that needs won't go unmet, deflection of concern, and references to basic needs — suggesting a material or resource-based security function. CELL_B sentences frame worry as something to be dismissed or suppressed within the relationship, pointing to an emotional regulation or soothing function. CELL_C sentences redirect worry outward or away from the self, indicating a protective-emotional function with a self-effacing quality. The dominant code is CELL_D given its frequency and the grounding of worry in concrete relational stakes rather than pure affect.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists centre on anxiety/worry vocabulary (worry, worried, concern, worrying, concerned, fears, bothering, bothered) paired with reassurance cues (assure, 'nothing', 'don't'). The dominant security function is one partner soothing or addressing the other's emotional distress — classic emotional reassurance (S1). No material, housing, or status cues are present.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - All sentences revolve around the expression, management, or dismissal of worry and concern between characters — reassuring others not to worry, confessing worry about someone, or deflecting concern. This is uniformly emotional reassurance (S1): the security function is soothing anxiety and providing emotional comfort, with no material, practical, or status dimensions present.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance), consistent with Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking. The secondary taxonomy 3.2 Negative Emotions & Distress is compatible as the context in which reassurance is sought, not a competing security function. No ambiguity requiring MIXED or further splitting. S1 is the most specific applicable code.
 
 ---
 
 ### Topic 119 — Offering to Keep Her Safe {#topic-h3-119}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S7 — physical protection**
 - **Mixed:** False
+- **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
 
@@ -8786,20 +8797,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representations converge on emotional security. The lexical field centers on active protection of a person ('you', 'precious', 'guarded', 'caressed') against threat ('dangerous', 'threat', 'dangerously') with affective determination ('determination', 'inevitable', 'assure'). The protector-role framing ('defend', 'keep', 'sir') and the presence of 'precious' and 'caressed' anchor this firmly in relational-emotional guardianship rather than material provision or status/appearance signaling. No material resource transfer or status-display lexemes are present.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences express interpersonal reassurance, personal vows of protection, and affective safety pledges ('You're safe with me,' 'I'll protect you,' 'I will protect you forever'), all of which are relational-emotional security functions rooted in attachment and care rather than resource provision or status signaling. The three material-coded exceptions (BOOK_002_3, BOOK_002_5, BOOK_002_6) reference concrete, professional security infrastructure—hired security personnel, physical protection logistics, and tangible safety resources—shifting the function from emotional reassurance to material provision. No sentences invoke status or appearance as a security mechanism. The corpus is dominated by emotional security with a minor material security thread, insufficient to trigger MIXED classification.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S7 — physical protection**
+  - All four keyword lists converge on physical-protection semantics: Main has 'safe, protect, protection, dangerous, protecting, keep, defend, safety'; KeyBERT adds 'protect, guarded, secure, threat, dangerously'; POS reinforces with 'protect, secure, threat, precious' (something/someone worth defending); MMR echoes 'guarded, dangerously, threat, determination' (resolve to shield). The cluster consistently frames a protector-figure actively shielding someone from danger/threat, which is the core function of S7 physical_protection. No emotional-reassurance, housing, or status cues dominate.
+- **Pass B — contextual:** **S7 — physical protection**
+  - All sentences across all books centre on physical protection and safety — explicit promises to protect, assurances of being safe, references to security personnel, and missions to eliminate threats. This is uniformly S7 (physical_protection). No material-provision, emotional-reassurance, or status functions are present; the topic is entirely about keeping characters physically safe from danger.
+- **Pass C — adjudication:** **S7 — physical protection**
+  - Both lexical consensus and contextual dominant from Pass A/B converge on S7 (physical_protection). The taxonomy metadata places this under 4.6 Emotional Safety, Reassurance & Caretaking, which would suggest S1 or S6, but the adjudication instruction requires resolving to the Pass A/B signal when it is consistent. S7 and S1 can co-occur in romance contexts (e.g., a hero physically shielding a heroine also provides emotional reassurance), creating genuine tension with the taxonomy label. However, because both prior passes independently coded S7 and the taxonomy assignment appears to reflect a broader categorical bucket rather than the specific security function evidenced in the topic tokens, S7 is retained as the dominant code. Manual review is flagged because the taxonomy mismatch (4.6 Emotional Safety vs. physical protection) warrants a human check to confirm the topic's lexical content is primarily about bodily safety rather than soothing/reassurance.
 
 ---
 
 ### Topic 161 — Reassuring Squeeze on The Shoulder {#topic-h3-161}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8849,21 +8861,22 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Dominant signals across all three representations converge on emotional regulation and interpersonal soothing: 'reassuring' and 'calming' appear in all three, supported by 'praying', 'shivered', 'clenched', 'fiercely', 'tugged', and 'nods', indicating a scene centered on emotional vulnerability, comfort-seeking, and affective reassurance between characters rather than material provision or status/appearance concerns.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The overwhelming majority of sentences are coded CELL_B across three distinct source books, spanning supernatural/identity themes (BOOK_001), theological/covenant discourse (BOOK_004), and interpersonal conflict/action (BOOK_007). Two sentences from BOOK_009 are coded CELL_A, distinguished by their focus on visible emotional-physiological responses (face turning white, simultaneous relief and worry), which signal a different functional register. The dataset is MIXED due to the presence of both CELL_A and CELL_B codes, though CELL_B is dominant.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Lexical and contextual inputs logged. Taxonomy assignments recorded. Ratings and full classification withheld until Pass C.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Main keywords are character names and a place name (noah, phan, cam, tobias, cameron, beaumont, ark) with no clear security signal, pointing to S0. However, KeyBERT, POS, and MMR all converge on affective-regulation vocabulary: 'reassuring' and 'calming' appear across all three lists, supported by 'praying', 'shivered', 'fiercely', 'clenched', 'emotions' (KeyBERT), 'squeeze', 'slightest' (POS), and 'snaps', 'bursting', 'blinking' (MMR). This cluster describes a character actively soothing or steadying another's emotional state — the core function of S1 emotional_reassurance. The Main list's S0 signal is overridden by the strong three-list consensus on emotional calming cues.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic are character name references, descriptions of stubbornness/animalistic tendencies, theological/biblical exposition, or brief action fragments. None perform any security function (emotional reassurance, material provision, status display, etc.). Every sentence is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical Pass A/B converged on S1 (emotional_reassurance), but contextual dominant from Pass B is S0 (off_target). The taxonomy metadata places this in 4.6 Emotional Safety & Reassurance with a secondary tag of 5.1 Family/Kinship/Parenthood. The family/kinship secondary tag is the deciding factor: if the reassurance function is operating within a parental or sibling relationship rather than a romantic dyad, it falls outside the romance-security hypothesis scope. S1 requires the security function to be delivered within a romantic attachment context; familial caretaking does not meet that criterion. Contextual S0 therefore overrides lexical S1. Manual review is flagged to confirm whether any tokens in this topic cluster are unambiguously romantic rather than familial before final exclusion.
 
 ---
 
 ### Topic 172 — Reporting to The Security Officer {#topic-h3-172}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
+- **New category:** **MIXED**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8889,20 +8902,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - The lexical cluster centers on law enforcement figures (police, cop, officer, authorities) with supporting terms around protection, evidence, weapons, secured, and task-oriented activity. While the main keywords suggest a status dimension (authority figures as social validators or status symbols in a romantic context), the broader keyword sets consistently emphasize functional, resource-based security: physical protection, enforcement capacity, secured environments, and instrumental dealing with threats. The dominant signal across KeyBERT, POS, and MMR is material security — the partner's role as a provider of physical safety and institutional protection rather than emotional attunement or social prestige. The status reading from main keywords is plausible but minority; material security wins by consensus.
-- **Pass B — contextual:** **status/appearance**
-  - CELL_A (BOOK_001, BOOK_002) clusters around calling/involving police as a protective or corrective action — invoking institutional authority as a material safety mechanism (protection from harm, legal recourse). CELL_B (BOOK_004) centers on hierarchical rank, professional standing among officers, gender-based status challenges, and compliance with superior orders — all status/appearance functions within a professional-romantic context. CELL_A (BOOK_005) references a partner or person of interest being a cop, framing their occupational identity and social role as salient to the relationship dynamic — status/appearance coding dominates as the cop identity is the security-relevant feature being evaluated. Overall the corpus is MIXED across material and status/appearance, with status/appearance dominant.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S7 — physical protection**
+  - Main keywords (police, cop, officer, enforcement, authorities) point directly to law-enforcement agents whose narrative function is physical protection/safety. KeyBERT reinforces this with 'protect', 'weapons', 'secured', 'evidence' — all physical-safety cues. POS and MMR echo 'weapons', 'secured', 'task', 'dealing', 'stops', consistent with protective/enforcement action rather than emotional reassurance, material provision, or status display. No emotional-comfort or resource-provision signals dominate; the cluster is squarely about physical safety and protection.
+- **Pass B — contextual:** **S7 — physical protection**
+  - The topic clusters around law enforcement (police/cops) and workplace officer hierarchy. BOOK_001 and BOOK_005 sentences all reference calling or identifying police/cops in contexts of threat response or protection — coded S7 (physical protection). BOOK_004 sentences focus on officer rank, regulations, superior orders, and a female officer's standing among colleagues — coded S15 (workplace status). S7 accounts for ~70% of sentences, making it the dominant code.
+- **Pass C — adjudication:** **MIXED**
+  - Lexical consensus (S7: physical_protection) and contextual dominant (S7) both point to external danger/risk scenarios, but the taxonomy metadata flags Emotional Safety & Reassurance (S1) as the primary category with Risk/Danger as secondary. This tension is meaningful: the topic likely captures moments where physical threat occasions emotional reassurance-seeking or provision, making neither S7 nor S1 alone sufficient. The functional security work is split between protection from external harm (S7) and the emotional comfort derived from or sought during that protection (S1). MIXED is therefore the most accurate resolution. Manual review is required to determine whether the dominant reader-experienced security function is the physical shield or the emotional soothing it enables, which would resolve the code to S7 or S1 respectively.
 
 ---
 
 ### Topic 173 — Waiting For Him to Wake {#topic-h3-173}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -8944,19 +8958,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on sleep states, wakefulness, and nighttime presence. Supporting terms such as bedside, curled, drifted, panting, pounding, and warmed indicate physical co-presence during vulnerable rest states, bodily attunement, and soothing arousal regulation. Departure and rear suggest transitional proximity dynamics. No material exchange or status signaling detected. Pattern is consistent with attachment-based emotional security through nighttime closeness and physiological co-regulation.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists describe sleep states and physical/temporal context (sleep, asleep, wake, night, bedside, departure, temperature, panting, drifted). There is no lexical signal of a security-provision function — no one is reassuring, protecting, providing, or displaying status. The words describe a scene of rest/waking, not a security behavior.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in Topic 173 describe sleep states, wakefulness, fatigue, and monitoring of sleep patterns. None of these sentences perform a security function — they do not provide emotional reassurance, material provision, protection, status display, or any other security-relevant act. The topic is purely descriptive of physical sleep/rest states and characters observing or waiting for others to sleep. All sentences are off-target (S0).
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy metadata places this under Temporal Framing as secondary, with Emotional Safety as primary — but the topic itself does not perform a security function; it frames time/seasons narratively. No security work is being done, so S0 is confirmed. The S1 (emotional_reassurance) signal from the taxonomy label is insufficient to override S0 when the topic content is primarily temporal/structural rather than reassurance-delivering.
 
 ---
 
 ### Topic 175 — Gentleman Offers Steadying Support {#topic-h3-175}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -8986,19 +9002,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - The convergent signal across KeyBERT and MMR layers is one of emotional attunement and vulnerability: affection, longing, worrying, distress, consumed, warming, kindly, thoughtfully. POS reinforces emotional intensity via 'passionate' and 'distress'. While 'pemberley' and 'value' gesture toward material/status dimensions, these are contextual anchors (Pride and Prejudice setting) rather than security-function drivers. The passage is coded as emotional security — characters seeking or providing emotional reassurance, care, and relational closeness.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Main keywords (Bingley, Georgiana, Bennet, Pemberley) point to social belonging/group membership (S2), but KeyBERT, POS, and MMR are dominated by affective-state vocabulary — 'affection, longing, concerned, worrying, distress, passionate, warming, encouraged, thoughtfully' — all signalling emotional comfort and reassurance rather than material provision or status display. The emotional register overwhelms the social-network framing, driving consensus to S1. Disagreement flagged because Main alone suggested S2.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic are character name references, dialogue tags, brief reactions, or plot-movement fragments (orders, arrivals, departures). None perform a security function — emotional, material, or status/appearance. They are narrative scaffolding centered on named characters (Gwyllain, Sheridan, Pippen, Darcy) without conveying reassurance, provision, protection, belonging, commitment, or any other security-relevant content. All coded S0 off_target.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S1 (emotional_reassurance), but the contextual dominant is S0 (off_target). The taxonomy placement under 5.2 Friends, Allies & Social Circles as secondary is the decisive signal: the topic's primary function is peer/ally dynamics rather than dyadic emotional reassurance directed at the protagonist's security needs. Emotional warmth present in friend-group content does not constitute the security-provision function required for S1. The 4.6 primary taxonomy label describes the broader category but the actual topic content, per contextual dominant, does not perform emotional reassurance as a security function — it describes social circle interactions. S0 is therefore the correct resolution. No split warranted; no hypothesis inclusion.
 
 ---
 
 ### Topic 190 — Offering to Get Someone Cleaned Up {#topic-h3-190}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9044,20 +9062,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical field centers on cleaning, tidying, and domestic upkeep tasks. Signals across all representers converge on tangible, practical labor and resource provision within a relational context, with no emotional or status-oriented markers present.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Three distinct cell clusters are present. CELL_C sentences cluster around physical caretaking and battlefield/environmental cleanup with a nurturing or protective tone, consistent across BOOK_001. CELL_D sentences cluster around social reputation, public image, and interpersonal management of appearances or social fallout, consistent across BOOK_002 and BOOK_003. CELL_B sentences cluster around personal hygiene, physical self-maintenance, and practical material preparation (sanitizer, gloves, cleaning supplies), consistent across BOOK_004, BOOK_005, and BOOK_006. CELL_B is dominant by count. The dataset is MIXED across three codes with no cross-cell contamination detected at the sentence level.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - Main keywords (clean, cleaning, cleaned, mess, cleaner, freshen) and KeyBERT (cleaned, wipe, sweeping, dump) all point to routine domestic cleaning/tidying — a classic everyday practical-care function (S5). MMR adds 'paying' and 'planned' alongside 'cleaned/sweeping/dump', reinforcing the domestic-service/practical-care reading rather than crisis care. POS keywords (sweeping, dump, session, parties, suitcase, places) are more ambiguous and could be off-target (S0) without the cleaning anchor, hence minor disagreement. The dominant signal across three of four reps is routine household maintenance as a material security provision.
+- **Pass B — contextual:** **S0 — off target**
+  - The majority of sentences describe literal cleaning, tidying, or hygiene actions with no clear security function in the romance-novel sense, coding as S0 (off_target). A cluster from BOOK_004 and BOOK_006 depicts one character helping another with physical cleanup tasks in a caregiving/everyday-practical manner (S5). Three sentences from BOOK_001 involve tending to someone after a battle/crisis (S6). One sentence from BOOK_002 concerns social reputation/ruin (S12). S0 dominates at ~50%, making it the dominant code.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Pass A/B lexical consensus landed on S5 (practical_care_everyday), but the taxonomy metadata places this topic squarely in 4.6 Emotional Safety, Reassurance & Caretaking. The contextual dominant S0 (off_target) is overridden by the taxonomy signal: the topic is doing security work, just emotional rather than practical. S1 (emotional_reassurance) is the most specific match for reassurance and caretaking functions within the emotional safety cluster. The secondary taxonomy note (8.3b Everyday Props & Communication Media) suggests the surface lexicon involves mundane objects or messages, which explains the S5 false positive in Pass A/B — the objects are vehicles for emotional reassurance, not practical provision. Function over object rule resolves this to S1.
 
 ---
 
 ### Topic 193 — Nurse Arranged After Hospital Release {#topic-h3-193}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9095,21 +9114,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on interpersonal tension and recognition dynamics: 'ignore', 'fooled', 'acknowledge', 'prodded', 'hopeful', 'embarrassment', 'explanation', 'evidence', 'stares', 'snaps'. Named actors (caleb, gage, jeremiah, conrad, mica) suggest a social group context with emotional stakes around being seen, believed, or validated. 'Texting', 'screen', 'hovered', 'nearby', 'speaking', 'admitted' reinforce a scene of emotional confrontation or disclosure. No material resource indicators (money, gifts, provision) and no status/appearance markers (looks, rank, prestige) are present. The dominant security function is emotional: the subject seeks acknowledgment, fears embarrassment, and navigates relational proof-seeking behavior.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences across all books center on interpersonal emotional dynamics: social attention (Gavin/Kayla), concern for others' wellbeing (Chloe, baby), relational belonging and identity (Brody/Nellie, Katelyn/Jenny), and familial bonds (Braxton twins, Bane/Dillon/Ramsey). A small subset references logistical/material support (Callum returning to help, Ramsey being busy with Chloe), and a few touch on status/appearance concerns (Bane's legal troubles and social standing, Braxton's dominance and handicaps framing). Emotional security is clearly dominant.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full signal alignment across lexical and contextual layers. Primary placement in 4.6 is well-supported; 5.1 secondary reflects relational structure framing the caretaking dynamic.
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists are dominated by character names (caleb, gage, jeremiah, conrad, mica), dialogue/interaction verbs (said, texting, ignore, went, fooled, admitted, speaking, prodded, acknowledge), and social-reaction nouns (embarrassment, stares, explanation, evidence). None of these cues point to a security-provision function — no emotional reassurance, no material provision, no status display. The cluster appears to describe a conversational or interpersonal scene without performing any identifiable security work.
+- **Pass B — contextual:** **S0 — off target**
+  - The large majority of sentences are conversational fragments, character name references, or narrative scene-setting with no security function (S0). Two sentences reference care during illness/pregnancy (S6: Chloe and the baby). Three sentences carry emotional reassurance or emotional support themes (S1: Dillon convincing Bane, Katelyn's presence for support, Brody's emotional necessity). One sentence references practical everyday care (S5: Dillon and Ramsey doing an awesome job raising them). S0 dominates at ~70%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy flags Emotional Safety / Family-Kinship, which could suggest S1 or S2, but without topic content showing a clear security function being performed, the convergent S0 verdict from Pass A/B holds. Taxonomy metadata alone is insufficient to override a double-S0 consensus; no security-provision signal is present to warrant reinterpretation toward S1 or S2.
 
 ---
 
 ### Topic 224 — Encouraging Words From An Angel {#topic-h3-224}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9155,19 +9174,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Angel/guardian imagery dominates the main lexicon, signaling idealized protective bonding and devotion framing. KeyBERT terms (doubted, insisted, honestly, willing, forgetting) reflect anxious reassurance-seeking and trust negotiation. POS and MMR reinforce behavioral consistency concerns (behavior, practice, ability, task) alongside emotional repair signals (heal, dislike). No material or status indicators present. Pattern is consistent with emotional security seeking through idealized partner devotion and reassurance of loyalty.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords are supernatural/mythological labels (angel, archangel, fallen, wings, guardian) with no security function attached. KeyBERT, POS, and MMR lists contain abstract behavioral/structural terms (behavior, ability, practice, structure, task, tv, dislike, heal) that do not map to any S1–S16 security provision. No emotional reassurance, material provision, or status display is signaled by any of the four keyword sets.
+- **Pass B — contextual:** **S0 — off target**
+  - The topic clusters around the word 'angel' used as a metaphor or name, with most sentences being narrative/plot references to supernatural entities or character names (S0 — no security function). A handful of sentences use 'angel' to describe a character's physical appearance/beauty (S13 — appearance/grooming). One sentence expresses faith/trust in named characters (S3). No single non-S0 code reaches 70%, but S0 dominates at 75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0. The taxonomy flags Emotional Safety/Reassurance (which would map to S1) and Promise/Vow speech acts (which could touch S4), but the adjudication instruction is to resolve to the consensus code when passes align. The topic does not perform a clear security function in the romance-novel security-provision sense — promise/vow speech acts and general emotional safety framing are not themselves security-provision behaviors unless anchored to a specific reassurance or commitment act. S0 is the correct resolution; no reinterpretation or split is warranted.
 
 ---
 
 ### Topic 240 — Unsure How to Offer Comfort {#topic-h3-240}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9193,21 +9214,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field dominated by internal affective states and interpersonal vigilance: anxious, shivered, winced, conscious, unsure, distracted, stares, studying. Behavioral markers (mumbled, absently, solemnly, ducked, patted) indicate emotional self-regulation and social caution rather than material exchange or status signaling. Character ensemble (sean, jaime, bryan, yseult) with named interlocutors (morrissey) suggests relational tension being navigated through emotional attentiveness. No resource or status lexemes present. Security function is tracking and managing attachment anxiety within close interpersonal bonds.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences reflect emotional security functions: interpersonal tension, longing, excitement, wariness, and relational urgency centered on named individuals (Liam, Shon, Sean, Conner). These are markers of attachment-based and emotionally-driven romantic security dynamics. The single outlier (BOOK_002_4) involves status/appearance cues via the 'Tiffanys and Brittanys' displaying worshipful behavior toward Seth, signaling social hierarchy and appearance-based attraction, but this is peripheral to the dominant emotional pattern across the dataset.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full convergence across lexical, contextual, and taxonomic signals. Primary placement in 4.6 is well-supported by caretaking and reassurance function. Secondary 4.2 appropriately captures the relational bonding dimension without competing with primary classification.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - KeyBERT, POS, and MMR are dominated by affective-state words (anxious, shivered, winced, unsure, distracted, conscious, stares, solemnly, mumbled) pointing to characters managing or seeking emotional reassurance in tense interpersonal exchanges. Main keywords are proper names and dialogue tags (sean, jaime, brogue, answered, said) with no clear security function on their own, hence S0 for Main. The cross-rep majority signals S1 emotional reassurance. No material or status/appearance cues are present.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic consist of character name references, brief dialogue fragments, exclamations, and minimal conversational exchanges (e.g., 'Liam wanted to know', 'Shon!', 'I want Sean', 'Conner asked'). None of these sentences perform any identifiable security function — emotional reassurance, material provision, status display, or otherwise. They are narrative/dialogue scaffolding centered on character names and short utterances with no security-relevant content. All coded S0 (off_target).
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Pass A/B lexical consensus mapped to S1 (emotional_reassurance), while contextual dominant suggested S0 (off_target). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking directly anchors this topic to S1 functions — soothing, comforting, and affirming emotional safety. The S0 contextual read likely reflects surface-level ambiguity rather than a genuine absence of security function. Given the taxonomy label explicitly names reassurance and caretaking, S1 is the most specific and defensible code. Secondary taxonomy 4.2 (Ongoing Courtship & Everyday Relational Bonding) does not override the primary emotional safety signal. No split is warranted because the dominant function is coherently S1.
 
 ---
 
 ### Topic 247 — Promising You Will Not Be Alone {#topic-h3-247}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9241,20 +9262,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field centers on solitude, preference for being alone, and emotional distress (upset, praying), with volitional agency terms (chose, insisted, planned, preferred) indicating a relational decision context. The absence of material or status markers, combined with affect-laden terms and presence-oriented main tokens (alone, solitude, here, live), anchors this firmly in emotional security functioning around proximity and availability needs.
-- **Pass B — contextual:** **emotional**
-  - All 20 sentences across all cells and books cluster around the theme of aloneness, loneliness, presence, and companionship as core emotional security concerns. The recurring motifs are: fear of being alone, relief at not being alone, desire for private togetherness, promises of sustained presence, and longing for connection. None of the sentences invoke material resources, financial stability, or status/appearance as security functions. The security function operating throughout is purely emotional — the need for felt closeness, accompaniment, and protection from isolation. CELL_C entries tend toward stark, fragmented expressions of solitude (bare 'Alone.' statements), while CELL_B entries elaborate the emotional stakes more fully (promises, longing, discomfort at separation), but both cells express the same underlying emotional security dimension.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords (alone, solitude, want, prefer, rather, live) describe a state of chosen or imposed aloneness and personal preference — no security provision is being enacted. POS terms (options, terms, circumstances, attempt, fault) are generic situational/deliberative vocabulary with no security function. MMR terms (chose, preferred, planned, insisted, fault, circumstances) reinforce deliberation and agency framing, not provision of security. KeyBERT's 'upset, praying' hints at emotional distress, nudging toward S1, but two isolated affect words are insufficient to override the dominant theme of solitude/preference with no provider-recipient security dynamic. The topic as a whole depicts a character's stance on being alone rather than any security-providing act.
+- **Pass B — contextual:** **S2 — emotional security belonging**
+  - The overwhelming theme of this topic is aloneness vs. togetherness — characters expressing loneliness, fear of being alone, promises never to be alone again, and the comfort of another's presence. This is the security function of belonging (S2): the felt sense of not being isolated, of being included and accompanied by a significant other. A small number of sentences are purely situational/logistical references to being alone (e.g., 'Alone, I hoped'; 'Alone with Luke Emerson'; 'May I speak with you … alone?') that carry no security function and are coded S0. No material or status/appearance security functions are present.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus (S0) and contextual dominant (S2 belonging) diverge, but the taxonomy anchor — 4.6 Emotional Safety, Reassurance & Caretaking with secondary 9.2 Promise/Vow/Future-Tense Speech Acts — points clearly to S1 (emotional_reassurance). Reassurance and caretaking speech acts (promises, vows, future-tense comfort) are the defining function here, not belonging per se. S2 would require evidence of group/relational inclusion; S0 would require absence of security function altogether. The taxonomy metadata resolves the conflict: the topic is performing emotional safety work through reassuring language, mapping to S1. No split is warranted because the secondary taxonomy (promise/vow speech acts) is the vehicle for delivering emotional reassurance, not an independent security function.
 
 ---
 
 ### Topic 273 — Mentor Gives Firm Instructions {#topic-h3-273}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9296,20 +9318,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all representations converge on emotional security: 'insensitivity', 'apology', 'upset', 'awareness', 'appreciation', 'treatment', and 'explanation' indicate a relational dynamic centered on emotional hurt, recognition of wrongdoing, and the need for acknowledgment. No material or status/appearance markers are present. The function is validation-seeking — one party seeking emotional acknowledgment and apology from another.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates across BOOK_001 and BOOK_005, with recurring named third-party figures (Felicia, Gabby, Claire, Olivia, Trish) appearing in relational tension or social observation contexts — consistent with a social/status-adjacent security function involving rival or peer presence and relational positioning. CELL_A (BOOK_002) clusters around named female figures (Nikki, Kiara, Shelley) in more direct interpersonal or emotional encounter framing. CELL_C (BOOK_004) is a single isolated affirmation sentence. CELL_D (BOOK_006) references a social connection through a third party. The dataset is not sufficiently mixed to warrant a MIXED designation; CELL_B is clearly dominant.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Across all four keyword lists the dominant signals are interpersonal emotional repair: 'insensitivity', 'apology', 'upset', 'awareness', 'appreciate', 'treatment', 'explanation', 'choices'. These cues point to a scene in which one character must acknowledge hurt feelings and offer reassurance/apology to another — the classic emotional-reassurance security function (S1). No material, housing, money, or status/appearance cues are present.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences are character name-drops, dialogue fragments, and scene-setting utterances with no discernible security function — coded S0. Two sentences (BOOK_001_3, BOOK_001_5) signal commitment security (a rival being dismissed, acknowledging a rival complicates the relationship) → S4. Two sentences (BOOK_002_4, BOOK_006_1) reference belonging/social inclusion → S2. One sentence (BOOK_002_3) offers emotional distraction/reassurance → S1. S0 dominates at ~75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S1 (emotional_reassurance), but the contextual dominant is S0 (off_target). The taxonomy placement under 4.6 Emotional Safety with a secondary of 5.2 Friends, Allies & Social Circles suggests the topic's primary function is social/peer dynamics rather than dyadic emotional reassurance from a romantic partner. Emotional Safety (4.6) can overlap with S1, but the secondary taxonomy node (5.2) shifts the functional weight toward group belonging or ally networks, which is not cleanly S1 or S2 in a romantic-security sense. Because the content appears to be about social circles rather than partner-directed reassurance or belonging, S0 is the more defensible code — the topic is not performing a clear romantic-security function. Manual review is flagged because the 4.6 primary taxonomy does carry genuine S1 signal that should not be dismissed without human verification.
 
 ---
 
 ### Topic 277 — Promising to Handle The Lawyer {#topic-h3-277}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
-- **Mixed:** False
+- **New category:** **S1 — emotional security reassurance**
+- **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9351,20 +9374,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All representational layers converge on material security. The main keywords anchor the topic in legal counsel and representation (lawyer, attorney, firm, appointed, counsel), signaling concern about access to professional services. Supporting signals across KeyBERT, POS, and MMR reinforce material stakes: 'afford' and 'cost' indicate financial access anxiety; 'appointed' suggests inability to self-fund representation; 'begging' and 'worrying' reflect distress over resource acquisition rather than emotional intimacy or status display. The cluster maps to a partner's or self's need for tangible legal resources and the financial/practical burden of securing them, a prototypical material security function.
-- **Pass B — contextual:** **material**
-  - Topic 277 centers on legal/law enforcement identity and its romance-context security functions. The dominant material thread covers lawyers, legal ownership, property rights, and divorce/insurance as concrete resource-protection mechanisms in relationships. A strong secondary status/appearance thread emerges from the repeated 'lawman' identity framing, where occupational role signals social standing and credibility as a partner-selection cue. Emotional security appears minimally in mediation difficulty and counseling investment, reflecting relational repair rather than resource or status concerns. MIXED is flagged due to the meaningful co-presence of material and status/appearance functions across distinct book clusters.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S11 — practical help other**
+  - Main keywords (lawyer, attorney, law, legal, firm, defense, counsel, appointed, advice) point squarely to legal representation and counsel — a practical, instrumental service. KeyBERT cues 'afford' and 'cost' confirm the material/service dimension (can one pay for legal help?), while 'begging' and 'worrying' suggest urgency around obtaining that help. POS 'cost' and 'process' reinforce the transactional/procedural nature. MMR 'afford', 'warned', 'begging', 'process' all support navigating a legal/official process. This is practical assistance (legal aid/counsel) rather than emotional reassurance, housing, money provision, or status display, so S11 (practical_help_other) is the most specific fit.
+- **Pass B — contextual:** **MIXED**
+  - Topic 277 clusters around legal/law enforcement roles and legal processes. 'Lawman' sentences function as physical protection (S7) — a lawman's role is protective/security-enforcing. Lawyer references where someone is being advised to get legal help function as practical help (S11). Property/real estate legal boundary sentences function as housing/property security (S9). Several sentences are purely descriptive or conversational with no security function (S0). No single code reaches 70%, so MIXED applies.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Pass A/B lexical consensus landed on S11 (practical_help_other), but the taxonomy metadata clarifies the primary function is Emotional Safety & Reassurance (4.6), with a secondary of Promise/Vow speech acts (9.2). Neither of these is practical/material help. The contextual dominant 'MIXED' reflected uncertainty between S1 and the vow/commitment dimension (S4), but the primary taxonomy anchor is emotional reassurance. Promise and vow speech acts in romance contexts typically serve to deliver emotional safety rather than binding contractual commitment, so S1 is the most specific single code. S4 would apply if the vow were foregrounding future material or relational security obligations, but here the function is soothing/reassuring the partner emotionally. S11 is overridden as a misclassification from surface lexical features. Single code S1 is preferred over MIXED because the secondary taxonomy node (speech-act form) describes the vehicle, not a distinct security function.
 
 ---
 
 ### Topic 289 — Quick Peck on The Forehead {#topic-h3-289}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9390,20 +9414,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field dominated by sensory-attentional verbs and embodied awareness tokens (gesturing, glint, flicked, glimpse, trembled, trailed, peered, poised, darkened, focused, crept, breathlessly) alongside affective-social signals (shame, anxiety, instincts, reminder). No material-resource or status-display vocabulary present. Pattern is consistent with hypervigilant monitoring of relational cues and bodily affect, indexing emotional security processing centered on attachment threat detection and interpersonal attunement rather than resource acquisition or status negotiation.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of fragments center on interpersonal tension, concern, curiosity, and relational dynamics between characters (primarily Nate and others), all of which are emotional-security markers. The single outlier (BOOK_005_6) references a physical attack on Nathaniel, which maps to material/physical safety rather than emotional or status concerns, but it is isolated and does not shift the dominant classification.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists are dominated by physical action/sensory verbs and nouns (gesturing, glint, flicked, glimpse, trembled, trailed, peered, poised, darkened, crept, smacked, breathlessly) and generic situational nouns (surroundings, instincts, options, anxiety, reminder). The Main list contains only male proper names plus 'shame' and 'mate', none of which anchor a security-provision function. No keyword cluster signals emotional reassurance, material provision, protection, status display, or any other S1–S16 security function; the topic appears to capture a scene-description or action-beat cluster with no identifiable security work.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences are dialogue fragments, character name references, or brief conversational beats (e.g., 'Nate exclaimed.', 'Nate laughed.', 'Nate queried.') that carry no discernible security function — they are narrative scaffolding around a character named Nate. One sentence ('I believe him to be behind the attack on Nathaniel') references a physical threat, coding as S7 (physical protection concern), but this is a single instance. The topic as a whole is off-target (S0) with a small S7 signal.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant from Pass A/B converge on S0. The taxonomy flags Emotional Safety & Reassurance (which would map to S1) as a secondary signal, but the primary classification is off_target. Without evidence that the topic's dominant function is emotional reassurance or caretaking security work, the S0 designation holds. The taxonomy note does not override the dual S0 consensus; it merely suggests a weak secondary emotional-safety thread that is insufficient to reinterpret the topic as S1. KEEP S0.
 
 ---
 
 ### Topic 299 — Pledging to Have Your Back {#topic-h3-299}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9437,19 +9462,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Cross-representation convergence favors emotional security: promises, threats, forgive, distraction, solemnly, and instructed collectively index anxiety around commitment reliability, behavioral reassurance, and fear of abandonment or betrayal. Status/appearance signals (exquisite, embarrassing, remark) form a secondary cluster suggesting social-evaluative concern but do not override the dominant emotional regulation theme. Material signals (spending, terms, hundreds) are peripheral and likely contextual rather than constitutive of the security function.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S3 — emotional security trust**
+  - KeyBERT 'promises/tries/willingly', POS 'promises/threats/terms', and MMR 'promises/threat/forgive/solemnly/terms' all cluster around negotiating reliability and trustworthiness between characters — the classic lexical signature of S3 trust-building. Main keywords (character names + 'handle/seen/time') are too generic to code independently (S0), but the three richer rep sets converge on trust dynamics, yielding S3 consensus.
+- **Pass B — contextual:** **S0 — off target**
+  - The majority of sentences are narrative references to named characters (Charlie, Scott, Pete, Kevin) without performing any security function — they are plot/dialogue fragments with no discernible security work. A small cluster of Charlie-related sentences provide emotional reassurance (soothing, comfort, promise of return) coded S1. One sentence describes physical confinement to prevent self-harm, coded S7. One sentence references a welfare check on Charlie, coded S6. S0 dominates at ~70%, making it the dominant code.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Pass A/B lexical consensus landed on S3 (trust), but the taxonomy metadata places this firmly in 4.6 Emotional Safety, Reassurance & Caretaking. The contextual dominant S0 (off_target) is overridden by the taxonomy signal: the topic is doing security work, specifically providing emotional reassurance and safety rather than trust-building per se. S1 (emotional_reassurance) is the most specific match for Emotional Safety & Caretaking. The secondary taxonomy note (5.2 Friends, Allies & Social Circles) does not shift the primary security function. S3 would require evidence of reliability/dependability framing; S1 better captures the soothing/reassurance function described. No split needed as the dominant function is singular.
 
 ---
 
 ### Topic 307 — Hauling Someone Up The Stairs {#topic-h3-307}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9483,19 +9510,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field converges strongly on emotional security: affective terms (affection, anxiety, conscious, urged, urge) anchor the core signal; somatic-arousal markers (heaved, winced, panting, struggled, fought) indicate physiological stress responses tied to emotional stakes; behavioral cues (movements, digging, emerged, winked, permission) suggest negotiation of interpersonal boundaries and consent; threat-framing (threats) and permission-seeking reinforce attachment-regulation dynamics rather than material exchange or status display. No resource-transfer or status/appearance lexemes present.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S7 — physical protection**
+  - Main keywords are proper nouns and place names with no clear security signal (S0). KeyBERT, POS, and MMR converge on physical threat and bodily-stress vocabulary: 'threats', 'heaved', 'winced', 'struggled', 'fought', 'panting', 'movements', 'anxiety', 'permission', 'urged' — collectively evoking a scene of physical danger, bodily exertion, and protective action. 'Threats' and 'permission' suggest a power/protection dynamic; 'panting', 'heaved', 'struggled', 'emerged' indicate physical effort under duress. This pattern maps most specifically to S7 (physical protection). Disagreement flagged because Main is S0 while the other three reps align on S7.
+- **Pass B — contextual:** **S0 — off target**
+  - The majority of sentences are either bare name references ('Ash.', 'Ash nodded', etc.) or descriptions of physical destruction (ash/bone/ooze), none of which perform a security function. A small subset (BOOK_002_1, _2, _3, _6) depicts practical everyday caregiving of an infant (changing, managing a stroller, monitoring behaviour), coded S5. The topic as a whole is dominated by off-target content, so S0 is dominant.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Pass A/B lexical consensus landed on S7 (physical_protection), likely driven by surface-level protective language. However, the taxonomy metadata places this topic squarely in 4.6 Emotional Safety, Reassurance & Caretaking, with a secondary tag of 8.1 Domestic Spaces & Routines. The contextual dominant from Pass B is S0 (off_target), suggesting the physical-protection reading was an over-literal interpretation of the lexical signal. Reconciling all three signals: the primary taxonomy node (emotional safety/reassurance/caretaking) maps directly to S1 (emotional_reassurance), which is more specific than S0 and better captures the security function actually performed. The domestic-spaces secondary tag does not elevate this to S5 (practical_care_everyday) because the caretaking described is affective rather than task-based. S1 is therefore the most specific valid code consistent with the taxonomy evidence, and S7 is rejected as a surface-lexical artefact.
 
 ---
 
 ### Topic 340 — Patience Tested Through Small Trials {#topic-h3-340}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9533,19 +9562,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all four representations converge strongly on emotional security. Main tokens such as 'violent', 'regime', 'standards', and 'contact' suggest a relational environment characterized by fear, control, or threat. KeyBERT tokens including 'emotionally', 'feared', 'disappointed', 'unhappy', and 'cared' directly index affective states and emotional responsiveness. POS and MMR tokens reinforce this with 'emotionally', 'upset', 'feared', 'witnessed', and 'cared'. Isolated material signals ('meal') are incidental and insufficient to shift classification. The dominant pattern reflects concerns about emotional safety, predictability of care, and freedom from psychological or physical threat within the relational context.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - KeyBERT, POS, and MMR converge on emotional-state vocabulary: 'emotionally', 'feared', 'unhappy', 'disappointed', 'upset', 'cared' — all pointing to emotional experience and reassurance needs. 'Main' lacks clear security cues ('never', 'mentioned', 'regime', 'standards') and reads as narrative framing rather than a security function, warranting S0. The majority signal is emotional distress and the need for reassurance (S1), overriding the ambiguous Main rep.
+- **Pass B — contextual:** **S0 — off target**
+  - Half the sentences carry no security function — they describe emotional reactions, character traits, or narrative observations without performing a security role. Among those that do carry security function, physical protection (S7) and emotional reassurance (S1) are roughly equal minorities. No single security code reaches 70%, but S0 (off-target) is the plurality at 50%, making it the dominant code overall.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus (S1) reflects surface-level emotional reassurance vocabulary, but contextual dominant (S0) correctly identifies that the topic's security function is off-target for the romance-security hypothesis. The taxonomy placement under 4.6 Emotional Safety with a secondary of 5.1 Family/Kinship/Parenthood confirms the emotional content is operating in a familial or parental register rather than a romantic-dyadic one. Because the security function here is not directed at a romantic partner relationship, S0 is the appropriate resolution. The S1 signal is real but misattributed to the wrong relational context for this study's scope. Manual review is flagged to confirm whether any tokens in this topic do carry romantic-dyadic reassurance that would warrant a SPLIT.
 
 ---
 
 ### Topic 355 — Blanket Draped Over Someone {#topic-h3-355}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S5 — practical care everyday**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9607,20 +9638,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field dominated by bedding and wrapping vocabulary (blanket, comforter, tucked, draped, wrapped, curled, tightly) with affective modifiers (terrified, embarrassed, heated) indicating emotional regulation through physical enclosure. No material exchange or status signaling present. Pattern consistent with comfort-seeking or vulnerability management via tactile containment rather than resource acquisition or social positioning.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The overwhelming majority of sentences cluster in CELL_B, characterized by physical comfort objects (blankets, coats, coverings) used in intimate or caregiving contexts — wrapping, tucking, carrying, warmth-sharing — signaling emotional security expressed through tactile/material provision between characters. The emotional valence is primary: objects serve as proxies for care, protection, and closeness rather than as neutral material items. CELL_D sentences (BOOK_002_1, BOOK_003_1, BOOK_003_2) are more neutral or domestic in tone — a jacket left on the ground without explicit emotional framing, routine bed-making, and an unrelated wire detail — lacking the charged caregiving dynamic that defines CELL_B. The corpus is dominated by CELL_B with no meaningful competition from other cells.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S5 — practical care everyday**
+  - All four keyword lists centre on bedding and covering actions — blanket, comforter, sheet, tucked, wrapped, draped, curled, folded — describing the routine physical act of covering/tending to someone's body comfort. This is everyday practical care (tucking in, wrapping up) rather than crisis care, emotional reassurance, or status display. POS and MMR add movement/task words (edges, movements, task, straightened) and mild affect (terrified, embarrassed) but these are incidental to the dominant covering-care function. S5 (practical_care_everyday) is the most specific fit.
+- **Pass B — contextual:** **S5 — practical care everyday**
+  - The overwhelming majority of sentences depict blankets, coats, and coverings being arranged, tucked, spread, or carried to provide physical warmth and bodily comfort — classic everyday practical care (S5). A few sentences show care during vulnerability or illness (S6: frail neck under blanket, peeling blanket off prone body). One sentence shows anxiety-driven self-wrapping (S1). Several sentences are purely descriptive with no security function (S0: groggy waking, nibbled wire, naked man, empty seat bundle). S5 comfortably exceeds 70% of the security-coded sentences and represents the dominant function of this topic.
+- **Pass C — adjudication:** **S5 — practical care everyday**
+  - Lexical consensus and contextual dominant both converge on S5 (practical_care_everyday). The taxonomy metadata (4.6 Emotional Safety, Reassurance & Caretaking with secondary 8.1 Domestic Spaces & Routines) is consistent with S5, which captures routine domestic caregiving acts. While the taxonomy label references 'emotional safety,' the functional security work being performed is grounded in everyday practical care rather than pure emotional reassurance (S1), so S5 remains the most specific and accurate code. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 356 — Admitting Exhaustion After A Long Day {#topic-h3-356}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
-- **Mixed:** False
+- **New category:** **S1 — emotional security reassurance**
+- **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9662,20 +9694,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical field dominated by fatigue and exhaustion vocabulary (tired, exhausted, drained, worn, washed, rested) with emotional qualifier (emotionally) and interpersonal acknowledgment markers (remarked, sir, kind). Pattern indicates a bid for emotional attunement or validation around depletion states rather than material provision or status signaling.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Three distinct functional clusters emerge across the five books. CELL_C sentences (BOOK_001) involve one party observing or acknowledging the other's fatigue in a relational/interactional context, suggesting an other-directed noticing function. CELL_B sentences (BOOK_002, BOOK_005) are predominantly self-reported states of exhaustion, often with contextual grounding (time, week, circumstances), functioning as internal state disclosure. CELL_D sentences (BOOK_003, BOOK_004) involve fatigue framed alongside physical vulnerability, emotional depletion, or health concern, with a caregiving or diagnostic tone. CELL_B is dominant by sentence count. The dataset is MIXED across three codes, with no single code accounting for all entries.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - Dominant cues across Main (tired, exhausted, exhaustion, fatigue, tiredness) and MMR (drained, emotionally, worn, rested) point to a state of depletion being acknowledged or addressed — classic emotional reassurance territory where one character recognises and responds to another's distress/weariness. 'Emotionally' in MMR confirms the affective register. POS yields only 'session, sir' which are too sparse to code beyond S0, but the three other reps converge on S1. No material or status signals present.
+- **Pass B — contextual:** **MIXED**
+  - Topic 356 clusters around expressions of exhaustion and fatigue. Most sentences are simple self-reports or observations of tiredness with no clear security function (S0). A subset involves one character noticing or acknowledging another's exhaustion in a way that functions as emotional attunement or reassurance (S1). A smaller subset involves directing a fatigued/ill person to rest or noting physical symptoms like smoke inhalation or sickness, which functions as care during illness/crisis (S6). No single code reaches 70%, so MIXED is assigned.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus from Pass A/B converges on S1 (emotional_reassurance), and the taxonomy placement in 4.6 Emotional Safety, Reassurance & Caretaking confirms this as the primary function. The contextual dominant flagged MIXED due to a secondary signal of 3.1 Positive Resolution/Relief, but that secondary taxonomy node describes an outcome (relief, payoff) rather than a distinct security function — it is downstream of the reassurance act itself, not a separate security type. No material or status/appearance function is present. Resolving to S1 as the single most specific code; MIXED is not warranted when the secondary signal is an emotional valence variant rather than a cross-domain security function.
 
 ---
 
 ### Topic 358 — Reassuring Squeeze of The Hand {#topic-h3-358}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9717,19 +9750,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All representers converge on emotional security. The lexical field is dominated by tactile reassurance gestures — squeezing, gripping, draping, gentle shoulder/hand/arm contact — paired with affective modifiers (reassuring, calming, trembling) that signal soothing of distress rather than material provision or status signaling. Physical touch here functions as an emotional regulation mechanism, not a display of resources or appearance.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists converge on physical gestures of comfort: 'squeeze/squeezed/squeezing', 'shoulder', 'hand', 'arm', 'fingers', 'gently', 'reassuring', 'calming', 'trembling', 'tightening', 'gripped', 'draped'. The dominant semantic cluster is soothing, steadying touch directed at an anxious or distressed person — the canonical form of emotional reassurance (S1). No material provision, housing, status, or gift cues are present.
 - **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+  - Topic 358 clusters around hand-gripping and finger-touching gestures. Where these gestures occur in contexts of comfort, reassurance, or emotional connection (squeezing a hand in support, holding tighter, rubbing a thumb over a hand), they function as S1 emotional_reassurance. Where the gestures are purely physical/mechanical actions with no discernible security function (gripping a door handle, tightening on a receiver, sexual acts, eating nuts, shooting), they are S0 off_target. The split is approximately even between S1 and S0, so no single code reaches 70%, yielding MIXED.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical consensus from Pass A/B converges on S1 (emotional_reassurance), consistent with Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking. The contextual dominant flagged MIXED, likely due to the secondary taxonomy signal (2.2 Kissing & Non-Explicit Affection), but physical affection here functions as a vehicle for emotional reassurance rather than an independent security dimension. Function-over-object principle resolves the ambiguity: the dominant security function is S1. No split or reinterpretation is warranted.
 
 ---
 
 ### Topic 372 — Told to Keep Up Strength {#topic-h3-372}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9775,20 +9810,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Lexical cluster centers on strength/weakness polarity with material capacity framing. 'Crushed', 'destroyed', 'gain', 'proved' indicate resource-based competition or adequacy testing. 'Feeding', 'tied', 'limitations' suggest dependency and provision dynamics. Emotional terms ('emotions', 'reflection', 'admit', 'hated') are secondary to the dominant material-strength axis, functioning as responses to perceived resource/capacity failure rather than drivers. Security function maps to provider-protection adequacy assessment.
-- **Pass B — contextual:** **MIXED**
-  - The corpus splits meaningfully between two cell assignments provided in the input metadata. CELL_D sentences cluster around themes of physical capacity, self-made capability, external threat assessment, and social rank advancement — consistent with a material/status-oriented security function where strength is instrumental or positional. CELL_B sentences cluster around themes of inner resilience, emotional endurance, relational strength under pressure, and self-sufficiency in the face of vulnerability — consistent with an emotional security function where strength is affective and relational. BOOK_004 in particular shows high-probability CELL_B assignments with explicitly emotional framing ('even the strong have weak moments,' 'be strong,' 'if one of us has to be weak'). The split is substantial enough (roughly 55/45) to warrant a MIXED classification rather than a single dominant code, though CELL_D holds a slight edge by sentence count.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - The dominant lexical cluster (strength, stronger, strong, weak, weakling, limitations, weaker) frames a discourse about personal vulnerability and emotional adequacy — classic territory for emotional reassurance. Supporting cues 'emotions', 'reflection', 'admit', 'hated' confirm introspective emotional processing. 'Crushed', 'destroyed' signal emotional wounding requiring reassurance. 'Feeding' and 'gain' in context of emotional reflection suggest drawing strength from a relationship. No material provision, housing, money, or status-display cues are present. The security function is reassurance against feelings of weakness/inadequacy.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic describe physical or personal strength, resilience, and toughness as abstract qualities or character traits — not performing any security function for another person. They are off-target (S0). One sentence (BOOK_002_1) references background/credentials needed for advancement, coded S15 (workplace status). Two sentences (BOOK_004_3, BOOK_004_4) involve encouraging someone to be strong emotionally, coded S1 (emotional reassurance). One sentence (BOOK_004_6) involves managing weakness/dizziness in a crisis context, coded S6 (care in illness/crisis). S0 dominates at ~80%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus (S1) and contextual dominant (S0) conflict. The taxonomy placement in 4.6 Emotional Safety & Reassurance suggests surface-level emotional language, but the contextual dominant analysis determined the topic is not performing security work in the romance-novel sense. S0 (off_target) takes precedence because function over object: if the topic's primary narrative function is not providing emotional reassurance as a security behavior but rather general emotional content without a security-provision dynamic, it does not qualify for S1. The contextual dominant S0 is the more analytically grounded signal and resolves the tie.
 
 ---
 
 ### Topic 293 — Admitting Jealousy Out Loud {#topic-h3-293}
 
 - **Old taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -9848,20 +9884,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representational sources converge on emotional security. The main keywords anchor the topic in jealousy as an internal affective experience (twinge, pang, irrational, emotion, being), with no material or status signals present. KeyBERT reinforces the emotional register (attracted, upset, emotional, concerned). POS introduces 'ex' and 'wound' which are relational-emotional cues, not material or status markers. MMR confirms affective processing (stirred, wiping, playfully, approached, wound, upset). The function is emotional security regulation — managing the threat of losing emotional connection or attachment to a partner.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences across both cells center on jealousy as an internal emotional state within romantic relationships — possessiveness, envy of a partner's attention, soul-mate bonding anxiety, and interpersonal rivalry driven by feeling. BOOK_001_2 and BOOK_001_5 invoke jealousy as a signal of desirability or comparative attractiveness, anchoring them in status/appearance. BOOK_001_12 reflects a superiority dynamic tied to gender status. BOOK_008_7 frames jealousy as a reaction to the couple's visible social standing/appearance. BOOK_003_1 (shaming) is coded emotional as it reflects relational power and emotional harm rather than material or appearance concerns. No material-security themes are present. The corpus is cleanly dominant-emotional.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists converge on internal affective states: 'jealous/jealousy/jealously', 'irrational', 'twinge', 'pang', 'emotion' (Main); 'attracted', 'upset', 'emotional', 'assured' (KeyBERT); 'emotional', 'upset', 'reaction', 'wound' (POS); 'stirred', 'emotional', 'upset', 'wound' (MMR). The dominant semantic field is the experience and management of jealousy as an emotional threat to relational security, which maps directly to S1 (emotional reassurance) — the need to soothe or resolve destabilising feelings within a relationship. No material or status cues are present.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The overwhelming majority of sentences revolve around jealousy as an emotional state within romantic relationships — expressing, detecting, managing, or reacting to jealousy between partners or rivals. This is squarely emotional reassurance/insecurity territory (S1). BOOK_001_12 references feeling superior to women, which is more of a general attitude/power dynamic not clearly doing security work, coded S0. BOOK_008_7 references people being envious of the couple's appearance/status while walking together, which edges toward S12 (status display), but the primary topic remains S1 jealousy. The dominant code is S1 at well above 70%.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical and contextual passes both converge on S1. Jealousy and possessive conflict (Taxonomy 4.7) functions primarily as a demand for emotional reassurance — the jealous/possessive partner is seeking confirmation of exclusive emotional attachment and fidelity. The secondary taxonomy (4.4 Conflict, Distance & Breakup Threats) reinforces this: threats of distance or breakup are leverage to extract reassurance of commitment and emotional priority. No material or status/appearance security function is primary here. S1 is the most specific applicable code; no split or reinterpretation is warranted.
 
 ---
 
 ### Topic 315 — Claiming Her As His Own {#topic-h3-315}
 
 - **Old taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S1 — emotional security reassurance**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9905,20 +9942,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all four representations converge on emotional security. Hesitation, nudged, bothered, grumbled, and behavior point to anxiety around relational cues and responses. Screaming, ribs, and paced suggest physical manifestations of emotional tension. Studying and indication reflect monitoring of a partner's signals for reassurance. No material or status/appearance markers are present.
-- **Pass B — contextual:** **E**
-  - All 20 cells center on the emotional relational dynamic between Dev and Val: abandonment, emotional walls, conflict, longing, trust, and the battle for emotional connection. No material/resource security signals and no status/appearance signals are present. The security function throughout is purely emotional — fear of vulnerability, emotional withdrawal, relational repair, and interpersonal confrontation.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists are dominated by character names (tristan, adrienne, simon, colby, damon, crispus), vague action/speech verbs (screaming, sounding, grumbled, nudged, paced), and generic narrative terms (sentence, indication, hesitation, ends, tracks, ribs, behavior, actions). None of these cues signal a security-provision function—emotional reassurance, material support, status display, or any other S1–S16 category. The cluster appears to capture a scene-level dialogue or action sequence without a discernible security theme.
+- **Pass B — contextual:** **S1 — emotional security reassurance**
+  - The topic centres on the emotional relationship between Dev and Val — arguments, hurt feelings, emotional walls, and the struggle to reconnect. The majority of sentences (S1) involve emotional reassurance or its absence: characters confronting each other about feelings, emotional reactions, and appeals to let things go. A meaningful minority (S4) addresses commitment security — whether the relationship will survive, Dev wanting Val back, and Val winning 'the first battle for his heart.' One sentence touches on trust (S3 — Dev upset Val didn't mention a confrontation). Several sentences are purely referential name-calls or fragments with no security function (S0). S1 exceeds 70% when S0 sentences are excluded from the functional count, and is clearly dominant overall.
+- **Pass C — adjudication:** **S1 — emotional security reassurance**
+  - Lexical pass coded S0 (off-target), but contextual dominant correctly identifies S1 (emotional_reassurance). Taxonomy 4.7 Jealousy & Possessive Romance Conflict centers on emotional security threats — jealousy and possessiveness are fundamentally about reassurance-seeking and fear of emotional loss, not material or status functions. The secondary taxonomy (5.2 Friends, Allies & Social Circles) reinforces a social-emotional rather than material frame. S0 is overridden: the topic is doing security work, specifically emotional reassurance provision in the context of relational threat. S1 is the most specific applicable code.
 
 ---
 
 ### Topic 59 — Mother's Disapproval Looms {#topic-h3-59}
 
 - **Old taxonomy:** 5.1 — Family, Kinship & Parenthood
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9944,20 +9982,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - All four representations converge on emotional security. The lexical field is dominated by maternal relationship terms (mother, mom, mama, mum, momma, mamma, daughter) anchoring the topic in primary attachment bonds. KeyBERT terms (affection, memories, instinctively, taught, fault, disappointment) index internalized emotional patterns, learned relational schemas, and affective accountability — hallmarks of attachment-based emotional security processing. POS and MMR terms (affection, disappointment, notion, overcome, judging, differently, repeat) reinforce themes of emotional evaluation, relational correction, and internalized standards derived from the mother-daughter bond. No material resources or status/appearance markers are present. The function is attachment validation: seeking or negotiating emotional legitimacy through the lens of a primary caregiver relationship.
-- **Pass B — contextual:** **CELL_C — CELL C**
-  - Three distinct cell clusters appear across the 20 sentences. CELL_D sentences (BOOK_001 series + BOOK_004) center on direct maternal address or reference in emotionally charged relational moments, consistent with a warm/nostalgic or longing register. CELL_C sentences (BOOK_002 and BOOK_003 series) involve parental figures in contexts of absence, concern, or conflict — including a missing mother, a father referenced repeatedly, a child-protection dispute, and a carried photograph — suggesting a more anxious or protective relational framing. CELL_B sentences (BOOK_005 series) involve maternal figures as sources of formative verbal messages or judgments passed down to a character, reflecting an internalized or instructional relational dynamic. No single cell dominates sufficiently to suppress the others; MIXED is warranted. CELL_C is marginally dominant by sentence count.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - The keyword cluster centres on mother-child relational terms (mother, mom, mama, daughter, mum, momma, mamma) combined with affective and communicative cues (affection, tell, taught, instinctively, memories, disappointment, fault, judging). These signal the emotional-reassurance function of a maternal figure: providing or withholding validation, comfort, and guidance. No material provision, housing, status display, or physical protection cues are present. 'Suitcase' and 'ribs' are incidental nouns that do not shift the dominant function. The cluster consistently points to S1.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic are references to mothers and fathers as family figures, expletives, or neutral mentions with no security function — coded S0. A small subset (carrying a mother's picture, wishing a mother could see you, and mothers giving formative advice/statements) perform mild emotional reassurance or emotional bonding functions (S1), but these are a minority. No material or status security functions are present. S0 dominates at ~75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Pass A/B lexical consensus landed on S1 (emotional_reassurance), but the taxonomy metadata places this topic firmly in Family, Kinship & Parenthood with a secondary axis of Negative Emotions & Distress. The content describes familial grief or parental-loss dynamics rather than a dyadic reassurance function between romantic partners. S1 requires an agent providing reassurance to a recipient within a security-seeking frame; here the emotional content is expressive/narrative (characters experiencing distress about family/kin) rather than functional security provision. Contextual dominant S0 (off_target) is therefore correct: the topic does not perform a security function in the romance-security taxonomy and should be excluded from hypothesis testing about security provision.
 
 ---
 
 ### Topic 75 — Talking About Being A Father {#topic-h3-75}
 
 - **Old taxonomy:** 5.1 — Family, Kinship & Parenthood
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -9995,21 +10034,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Convergent signal across all four representations. Main tokens center on paternal identity and relational roles (dad, father, daddy, son), establishing a family attachment context. KeyBERT reinforces emotional processing (emotionally, affection, memories, experience, willing). POS tokens add affective and volitional texture (affection, anxiety, determination, willing, choices). MMR tokens confirm emotional register (emotionally, affection, heal) with no material or status indicators present. The dominant function is emotional security derived from paternal relational bonds.
-- **Pass B — contextual:** **emotional**
-  - The overwhelming majority of sentences across all four books involve emotional relational dynamics between characters and their fathers or sons — concern, defiance, longing, protection, and care. These are quintessential emotional security functions tied to attachment and family bonds. BOOK_002_1 references social lineage ('son of an old colleague'), which signals status/appearance framing. BOOK_003_5 involves a material choice (candy vs. a creative gift), making it a material security reference. All other sentences center on emotional connection, worry, or relational tension with parental figures, firmly anchoring the dominant code as emotional.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Full lexical-contextual agreement on emotional classification. Family/kinship framing grounds the security function in relational belonging rather than resource or status dynamics. Secondary ambivalence signal does not disrupt primary classification but suggests the emotional security sought may be complicated or conditional within the familial context.
+- **Pass A — lexical:** **S1 — emotional security reassurance**
+  - All four keyword lists converge on father-child relational dynamics: Main has 'dad, father, daddy, son, fathers'; KeyBERT has 'emotionally, affection, memories, involved'; POS has 'affection, anxiety, determination, willing'; MMR has 'emotionally, affection, heal'. The dominant security function is emotional reassurance — a parent (or parental figure) providing or being asked to provide emotional validation, affection, and relational presence to a child or partner. 'Anxiety' and 'heal' reinforce an emotional-need context rather than material provision or status display.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic reference father/dad/son figures in narrative or conversational contexts — identifying family members, expressing concern about a parent's reaction, or relaying information about fathers. None of these sentences perform a security function (emotional reassurance, material provision, protection, status display, etc.). They are purely referential mentions of paternal/filial relationships without any security-provision dynamic being enacted. Topic 75 is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus (S1) reflects surface-level emotional language, but the contextual dominant (S0) is more accurate given the taxonomy placement under Family, Kinship & Parenthood with secondary Ambivalence & Internal Conflict. The topic appears to center on family/kinship dynamics and internal conflict rather than a discrete security-provision function. No clear security behavior (emotional reassurance, material provision, status display, etc.) is being enacted between characters; instead, the content describes relational ambivalence within family structures. S0 (off_target) is therefore the correct resolution. Manual review is flagged because the S1 lexical signal is non-trivial and an analyst should confirm that no embedded security function (e.g., S2 belonging or S4 commitment_security) is being obscured by the ambivalence framing.
 
 ---
 
 ### Topic 81 — Mentioning A Brother {#topic-h3-81}
 
 - **Old taxonomy:** 5.1 — Family, Kinship & Parenthood
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -10035,19 +10074,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all four representations converge on sibling/family relational dynamics. Main keywords (brother, siblings, older, sibling) establish a family-bond context. KeyBERT terms (introduce, reminds, admitted, chuckle) suggest interpersonal familiarity and emotional disclosure. POS terms (affection, annoying, treatment, appropriate) reflect emotional regulation within close relationships. MMR terms (affection, separated, dismissed, annoying) reinforce themes of emotional connection, distance anxiety, and relational friction. The dominant security function is emotional: the topic centers on attachment bonds, belonging within family structures, and the affective significance of sibling relationships rather than material provision or status/appearance concerns.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S2 — emotional security belonging**
+  - Main keywords (brother, brothers, siblings, sibling, older) anchor the topic firmly in family-kinship identity. KeyBERT cues (related, introduce, reminds, follows) reinforce recognition and acknowledgment of family ties. POS and MMR cues (affection, appropriate, treatment, annoying) describe the relational texture of sibling bonds — being accepted, recognized, and emotionally placed within a family unit. The dominant security function is belonging (S2): the sense of being part of a defined family group, not practical care, protection, or status display.
+- **Pass B — contextual:** **S0 — off target**
+  - The overwhelming majority of sentences in this topic are simple references to sibling identity ('He's my brother,' 'Which brother?', 'Are you brothers?') with no security function being performed. They are identification or clarification statements about family relationships. One sentence (BOOK_002_4) expresses closeness and love comparable to brotherhood, which touches on belonging (S2), but this is a single outlier. The topic as a whole is off-target for security coding, dominated by S0 at ~95%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Lexical consensus S2 (belonging) reflects surface-level family/kinship language, but the contextual dominant S0 (off_target) is correct: the taxonomy places this firmly in Family, Kinship & Parenthood as a relational/structural category rather than a security-function cluster. Family membership and parenthood roles are not themselves performing a security function in the romance-novel sense — they are the relational context, not the mechanism of reassurance, protection, provision, or commitment. No specific S1–S16 security function is being enacted. S0 is the appropriate resolution.
 
 ---
 
 ### Topic 167 — Planning A Wedding Reception {#topic-h3-167}
 
 - **Old taxonomy:** 5.3a — Romantic Social Rituals & Public Couple Recognition
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S4 — commitment security**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10095,20 +10136,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - KeyBERT, POS, and MMR converge on material security through logistical and resource-oriented terms (planned, invitation, reception, destination, arrange, spending, preparing), reflecting concrete investment in wedding infrastructure. Main keywords introduce status/appearance signals (bride, bridal, ceremony, bridesmaids) centered on social presentation and role performance. Disagreement is flagged due to the main set's status/appearance orientation, but the three extractor methods align on material functions governing event execution, resource allocation, and formal coordination, yielding a material consensus.
-- **Pass B — contextual:** **STATUS**
-  - All 20 sentences cluster around the wedding ceremony as a formal social institution — the public ritual of marriage, its ceremonial proceedings, social recognition, community witnessing, and role-based identity markers (bride, groom, guest list, reception). Wedding as a construct is fundamentally a status/appearance security function: it confers social legitimacy, public identity transition, and community standing. References to the wedding night (BOOK_001_11, BOOK_001_17) are framed in terms of the wedding-day context and social bargaining rather than emotional intimacy per se. The fairy-tale wedding reference (BOOK_001_15) concerns social ideals and appearance norms. No sentences foreground material resource exchange or deep emotional bonding as the primary security signal — the dominant frame throughout is the public, institutional, status-conferring nature of the marriage ceremony itself.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S4 — commitment security**
+  - All four keyword lists centre on the wedding event itself — bride, groom, bridal, ceremony, bridesmaids, jitters (Main); planned, invitation, reception, official, preparing, planning (KeyBERT); reception, invitation, official, destination (POS); reception, invitation, destination, planning (MMR). The dominant security function is the formalisation and public ratification of a romantic pair-bond. 'Official', 'ceremony', 'jitters', and the full wedding-planning vocabulary signal the moment of commitment being secured and witnessed, which maps to S4 (commitment_security). No material-provision or status-display cues dominate; the wedding apparatus here serves the function of locking in relational commitment.
+- **Pass B — contextual:** **S4 — commitment security**
+  - The overwhelming majority of sentences describe the wedding ceremony, wedding day, and the act of getting married — all of which function as commitment security (S4), the formal public sealing of a romantic bond. A few sentences reference social gathering and community welcome (S2), and several are purely descriptive scene-setting with no security function (S0). S4 exceeds 70% when off-target sentences are excluded from the security-function pool, and it is clearly the dominant security function of the topic.
+- **Pass C — adjudication:** **S4 — commitment security**
+  - Both lexical consensus and contextual dominant converge on S4 (commitment_security). The taxonomy node 5.3a (Romantic Social Rituals & Public Couple Recognition) is consistent with S4: public rituals such as engagements, declarations, and couple recognition function to secure relational commitment rather than to display status or provide material provision. The secondary taxonomy node 5.1 (Family, Kinship & Parenthood) reinforces a commitment-anchoring function. No evidence of material or status/appearance security work that would warrant MIXED or a different S-code. S4 is the most specific applicable code.
 
 ---
 
 ### Topic 112 — Desperate Need For A Job {#topic-h3-112}
 
 - **Old taxonomy:** 6.4 — Economic Precarity, Security & Dependency
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S15 — workplace status**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10146,20 +10188,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All representational layers converge on material security. Main terms anchor firmly in occupational identity and economic productivity (job, business, work, hire, living). KeyBERT signals appraisal of opportunity and reassurance around dealing/negotiating capacity. POS adjectives (decent, impressive, larger, actual) reflect evaluative sizing of material standing, with anxiety marking threat to that standing. MMR reinforces this with spending, ability, task, and reassuring alongside anxiety and pretending, suggesting a narrative of validating or performing occupational/financial adequacy to a partner. No status-appearance or emotional-intimacy signals dominate.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates with employment-as-livelihood framing across BOOK_002 and BOOK_003 clusters, emphasizing job acquisition, retention, and income sufficiency as relational security anchors. CELL_D entries (BOOK_001) shift toward provision and domestic stability framing, with material comfort explicitly tied to a partner's labor output. CELL_C entries (BOOK_004, BOOK_005) reflect occupational identity and workplace-as-context rather than direct security signaling. MIXED flag applied due to meaningful cross-cell distribution across all three non-dominant cells.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S15 — workplace status**
+  - Main keywords (job, business, company, jobs, work, boss, hire, living) and KeyBERT (opportunity, dealing) cluster around employment and workplace dynamics, pointing to S15 workplace_status. POS adjectives (pathetic, impressive, decent, larger, actual) and nouns (addition, testing, anxiety) are evaluative but not security-specific, coding S0. MMR (reassuring, anxiety, pretending, distracted) adds emotional texture but in a workplace context (task, ability, ms), not pure emotional reassurance. The dominant signal across Main and KeyBERT is occupational/workplace security, so S15 prevails despite POS/MMR ambiguity.
+- **Pass B — contextual:** **S15 — workplace status**
+  - The overwhelming majority of sentences concern employment, job-holding, job quality, and workplace participation — all functioning as workplace/occupational status security (S15). A small number reference earning a living or being well-paid (S8), one references practical handyman work (S11), and a few are off-target filler phrases (S0). S15 reaches exactly 70%, qualifying as dominant.
+- **Pass C — adjudication:** **S15 — workplace status**
+  - Both lexical consensus and contextual dominant converge on S15 (workplace_status). The taxonomy placement under 6.4 Economic Precarity, Security & Dependency with secondary 6.2 Work & Professional Identity is consistent with S15, which captures security derived from occupational standing and professional identity rather than direct monetary provision (S8) or economic dependency (S10). No free-form labels require remapping. Single unambiguous code applies; no split or mixed coding warranted.
 
 ---
 
 ### Topic 140 — Demanding Answers Before Departure {#topic-h3-140}
 
 - **Old taxonomy:** 6.6 — Material Glamour & Consumption
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10185,20 +10228,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - Lexical signals across all representations converge on emotional processing and interpersonal dynamics. KeyBERT terms (anxious, hopeful, encouraged, insulted, urge, irritation) indicate affective states and emotional regulation. MMR terms (poised, insulted, encouraged, remarked) reflect interpersonal emotional exchange. POS terms (irritation, hopeful, notion, possibilities) reinforce internal psychological orientation. Main tokens are male proper nouns suggesting a male-perspective relational scenario. No material resource or status/appearance markers are present. The dominant function is emotional security through interpersonal validation and affective stability.
-- **Pass B — contextual:** **MIXED**
-  - CELL_A entries (BOOK_003, BOOK_007) are strongly emotional — intimate exclamations directed at 'Ben' and interpersonal attempts at connection or communication. CELL_B entries split: BOOK_005 entries involve emotional relational dynamics (concern, rescue impulse, engagement news, phone contact with Ben), coded emotional; BOOK_006 entries reference Benjamin Franklin as a historical/public figure in a reputational and identity-replacement context, coded status/appearance. The dataset is MIXED due to the meaningful presence of both emotional and status/appearance coding across distinct cell clusters.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords are male proper names (benjamin, hutton, spencer, morrison, jim) with generic pronouns — no security function signalled. KeyBERT and POS terms (scenario, possibilities, irritation, hopeful, session, notion, anxious) describe cognitive/emotional states or abstract narrative framing, not a security-provision act. MMR terms (poised, insulted, remarked, encouraged, heaved, fashioned, framed, strolled) are behavioural/descriptive verbs with no identifiable security resource being exchanged. No cluster of cues points to any S1–S16 function; the topic appears to be a character-interaction or dialogue scene without a security-provision theme.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences are name invocations ('Ben', 'Oh, Ben', 'Ben asked') or references to Benjamin Franklin with no security function. One sentence (BOOK_005_6) mentions Ben wanting to 'rescue' her, which touches on physical protection (S7), but this is a single instance. The topic as a whole is dominated by off-target content — character name references with no discernible security function.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this topic under Material Glamour & Consumption with a secondary of Ongoing Courtship & Everyday Relational Bonding. Neither cluster performs a security function in the defined taxonomy: glamour/consumption is aesthetic/lifestyle content, and the secondary axis describes relational bonding rituals rather than security provision. No S1–S16 code is warranted. S0 is confirmed as the correct and most specific code.
 
 ---
 
 ### Topic 27 — Racing The Approaching Storm {#topic-h3-27}
 
 - **Old taxonomy:** 7.3 — Risk, Danger & External Crises
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `EXCLUDE_FROM_HYPOTHESIS`
 
 **Stage-08 snippets**
 
@@ -10236,19 +10280,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **E**
-  - All four representational layers converge on emotional security. The lexical field is dominated by natural atmospheric phenomena (rain, storm, moon, sky) and their affective-sensory correlates (darkened, warming, magical, graceful, floated). These function to establish mood, evoke felt presence, and signal emotional attunement between partners — the hallmark of emotional security signaling in romantic contexts. No material provisioning terms (wealth, shelter-as-resource, sustenance) or status/appearance markers (beauty, prestige, display) are present. The single ambiguous term 'dangerously' reinforces emotional intensity rather than redirecting toward another category.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists describe atmospheric and environmental phenomena (weather, light, sky, storm, moon, temperature, ceiling, sidewalk, curtain, reflection). No keyword signals a security-provision function — emotional, material, or status-related. The vocabulary is purely descriptive of setting and ambiance, performing no security work for any character.
+- **Pass B — contextual:** **S0 — off target**
+  - Topic 27 is dominated by weather, light, and atmospheric/environmental description (rain, storms, sunlight, dawn, darkness, lightning). None of these sentences perform a security function — emotional, material, or status/appearance. They are setting and mood descriptions with no security work. All sentences are coded S0 (off_target).
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy placement under Risk/Danger & External Crises with a secondary of Movement/Transit & Spatial Transition describes plot-level situational content rather than any security-provision function. No emotional reassurance, material provision, or status/appearance work is being performed by this topic cluster. S0 is confirmed; the topic should be excluded from the security hypothesis analysis.
 
 ---
 
 ### Topic 17 — Discussing Rooms and Privacy {#topic-h3-17}
 
 - **Old taxonomy:** 8.1 — Domestic Spaces & Routines
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S9 — material provision housing**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10274,19 +10320,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - All four lexical representations converge on material security. The main keywords (house, hotel, room, apartment, bedroom, rent, upstairs, home, bedrooms, living) are unambiguously housing/shelter vocabulary. KeyBERT reinforces physical dwelling features (porch, ceiling, occupied, address). POS adds spatial/structural descriptors (separate, smaller, areas, privacy, contrast). MMR contributes ownership and access language (belongs, visited, built, guarantee, address). The cluster centers on physical shelter provision, residential space, and housing access — core material security concerns in romantic contexts (shared living arrangements, cohabitation, housing stability).
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S9 — material provision housing**
+  - All four keyword lists converge on residential/dwelling vocabulary: Main contains house, hotel, room, apartment, bedroom, rent, home, bedrooms, living — direct housing terms; KeyBERT adds porch, ceiling, address, occupied — physical dwelling features and occupancy; POS adds privacy, separate, areas, smaller — spatial/dwelling attributes; MMR adds belongs, visited, built, guarantee, address, areas — ownership, construction, and residential assurance. No emotional reassurance, status display, or other security function is signalled; the entire cluster describes the provision and security of physical shelter/housing.
+- **Pass B — contextual:** **S9 — material provision housing**
+  - All sentences in this topic revolve around rooms, bedrooms, houses, and questions of who occupies or owns a dwelling. The consistent security function being performed is housing — establishing, claiming, or negotiating residential space as a form of material security. No emotional reassurance, status display, or other security function is meaningfully present; the topic is uniformly about physical dwelling/housing security (S9).
+- **Pass C — adjudication:** **S9 — material provision housing**
+  - Lexical consensus and contextual dominant both converge on S9 (housing). Taxonomy 8.1 Domestic Spaces & Routines is fully consistent with housing security as the operative function — shared or provided living arrangements, domestic settings, and home-as-shelter all map cleanly to S9. No ambiguity requiring MIXED or reinterpretation. No free-form labels to remap.
 
 ---
 
 ### Topic 49 — Drinking at The Bar {#topic-h3-49}
 
 - **Old taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10336,20 +10384,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material**
-  - Dominant lexical field centers on drinking activity (wine, glass, sip, beer, bottle, swirled, pouring, poured, swig, consumed, tasted), indicating a shared consumption scene. POS terms (waist, lady, curved, amusement) introduce mild status/appearance signals but are peripheral. The scene is anchored in tangible resource sharing rather than emotional bonding or status display, placing it firmly in material security.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The overwhelming majority of sentences (18/20) are assigned CELL_B by the source coding, all clustering around shared drinking behavior — wine, beer, champagne, scotch — as a social-bonding ritual between romantic partners or persons of interest. The act of drinking together, toasting, handing drinks, and sipping in tandem functions as an emotional proximity marker: a low-stakes, repeated intimacy gesture that signals comfort, ease, and relational warmth rather than material exchange or status display. The two CELL_D entries (BOOK_002_1, BOOK_002_2) diverge: one involves solitary water-pouring with a non-drink cue (tapping wall), and the other is an adversarial verbal prompt with no drink-sharing dynamic, placing them outside the dominant bonding-through-drink pattern. CELL_B dominance is robust and consistent across all three books.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists centre on drinking/beverage actions (wine, glass, sip, beer, bottle, swirled, pouring, tipped) and incidental social/physical descriptors (drawled, amusement, waist, dangling, snorted). There is no security-provision function present — no emotional reassurance, no material provision, no status display. The vocabulary describes a scene of casual drinking and banter, not any security-relevant behaviour.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic depict characters drinking, handling, or sharing alcoholic or non-alcoholic beverages (wine, beer, scotch, champagne, water). These are purely descriptive actions involving drinks and do not perform any security function — emotional, material, or status/appearance. No reassurance, protection, provision, commitment, or status display is present. The topic is off-target for security coding.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this in Public, Travel & Leisure Spaces with no secondary security function. The topic describes a setting or backdrop rather than performing any security function (emotional, material, or status/appearance). No security work is being done; S0 is the correct and most specific code.
 
 ---
 
 ### Topic 260 — Crowd Goes Wild For Him {#topic-h3-260}
 
 - **Old taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **S0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `EXCLUDE_FROM_HYPOTHESIS`
 
 **Stage-08 snippets**
 
@@ -10379,19 +10428,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **E**
-  - The dominant lexical cluster centers on intensity descriptors of emotional states — crazy, insane, madness, craziness, crazier — which in romantic contexts typically signal emotional overwhelm or passion-driven dysregulation. Supporting terms like indication, equal, fault, chuckle, and appreciate reinforce an emotional accounting frame where the speaker is processing feelings, assigning relational meaning, or seeking acknowledgment of their inner experience. The minor status signals (officially, proved, crowd) are peripheral and insufficient to shift the primary coding away from emotional security-seeking.
-- **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **S0 — off target**
+  - Main keywords (crazy, insane, madness, craziness, going, think) describe mental/emotional states or colloquial expressions of disbelief, not a security-provision function. POS and MMR terms (indication, equal, result, chuckle, fault, crowd, officially, proved, tasted, appreciate) are generic cognitive/social/evaluative words with no identifiable security function. No keyword cluster points to emotional reassurance, material provision, status display, or any other S1–S16 category.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic cluster around colloquial uses of 'crazy,' 'nuts,' 'freak,' and related terms describing mental states, erratic behavior, or informal exclamations. None of the sentences perform a security function (emotional reassurance, material provision, status display, etc.). They are off-target for the security-function coding scheme.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy places this topic in Public/Travel/Leisure Spaces with a secondary tag of Exercise/Movement/Physical Activity. Neither category performs a security function (emotional, material, or status/appearance) as defined by the codebook. No security construct is present, so the topic should be excluded from the hypothesis-testing corpus.
 
 ---
 
 ### Topic 321 — Leaning Against Trees and Rails {#topic-h3-321}
 
 - **Old taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10449,20 +10500,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **status_appearance — status appearance**
-  - Across all four representations, the lexical field converges on observational and spatial awareness behaviors: glances, peered, squinted, strolled, wandered, circling, paced, surroundings, pattern, sidewalk. The natural setting (trees, woods, forest, path) frames a scene of movement and watching rather than emotional intimacy or resource exchange. Keywords like tightening, terrified, and shifting suggest anxious self-monitoring and awareness of being seen or followed, anchoring the security function in status/appearance dynamics — specifically the management of visibility, social legibility, and perceived threat or judgment in a semi-public space.
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - The corpus is dominated by CELL_A passages (BOOK_003, BOOK_004) featuring outdoor environmental settings used as backdrops for social observation, surveillance, and interpersonal tension — consistent with a security function tied to emotional/relational vigilance and proximity awareness. CELL_B passages (BOOK_002) depict physical navigation of trees and outdoor structures with urgency and bodily risk, suggesting a distinct action-oriented sub-pattern. CELL_D passages (BOOK_001) are atmospheric scene-setting with low interpersonal salience. No strong cross-cell blending warrants a MIXED designation; CELL_A is clearly dominant by count and thematic weight.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **S0 — off target**
+  - All four keyword lists describe outdoor movement and spatial setting (trees, forest, path, sidewalk, strolled, wandered, paced, surroundings). 'Terrified' and 'tightening' hint at tension but no security-provision function is present — no agent is providing reassurance, protection, resources, or status. The topic captures scene/locomotion description, not a security behaviour.
+- **Pass B — contextual:** **S0 — off target**
+  - All sentences in this topic describe outdoor/natural settings (trees, decks, foliage, herons, palms, maples, oaks) and characters moving through or observing these environments. None of the sentences perform any security function — emotional, material, or status/appearance. The topic is purely descriptive scene-setting involving trees and outdoor spaces, with no attachment, provision, protection, or status signaling between characters.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this topic in public, travel, and leisure spaces — a setting/backdrop category that does not perform any of the defined security functions (emotional, material, or status/appearance). No security work is evident, so S0 is confirmed and no further action is required.
 
 ---
 
 ### Topic 339 — Regulars at The Bar {#topic-h3-339}
 
 - **Old taxonomy:** 8.2 — Public, Travel & Leisure Spaces
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **S0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10520,21 +10572,21 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **emotional**
-  - The dominant lexical cluster centers on bar/saloon environments as social gathering spaces, with affective language around crowd dynamics, enthusiasm, and social possibilities. The MMR and POS sets emphasize experiential and social-emotional dimensions (enthusiasm, faces, crowd, possibilities, ducked) suggesting navigation of social belonging rather than material provision. Main set's 'desirables' and 'scummy' signal social sorting and acceptance anxiety. Minor material signal from 'stocked' and 'afford' is outweighed by the emotional-social framing of the environment as a site of connection-seeking.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - CELL_B dominates with bar-as-social-venue references tied to interpersonal and romantic encounters (seeking partners, social bonding, conflict). CELL_A represents bar-as-owned-material-asset, signaling resource/livelihood security. CELL_D captures bar-as-physical-environment with safety/threat framing (guards, bouncers, low-stakes casual setting). The dataset is MIXED across three cells, with CELL_B as dominant.
-- **Pass C — adjudication:** **UNKNOWN**
-  - Single-signal input with no secondary modifier. Contextual CELL_B applied to public/leisure domain. Awaiting Pass C for full disclosure.
+- **Pass A — lexical:** **S0 — off target**
+  - All keyword lists describe a bar/saloon setting (bar, bars, bartender, saloon, dive, stocked, crowded, crowd, faces) with atmospheric descriptors (scummy, makeshift, typical, enthusiasm). No security function is being performed — no emotional reassurance, no material provision, no status display. The vocabulary is purely scene-setting for a drinking establishment. S0 is the only appropriate code.
+- **Pass B — contextual:** **S0 — off target**
+  - The vast majority of sentences describe bar settings, social activities, and scene-setting with no security function — coded S0. Two sentences (BOOK_001_1, BOOK_004_1) reference guards/bouncers providing physical protection in a bar context, coded S7. The BOOK_010 sentences about owning the bar and its reputation relate to workplace/business status (S15). Overall, S0 dominates at ~75%.
+- **Pass C — adjudication:** **S0 — off target**
+  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy places this topic in public, travel, and leisure spaces — a setting/backdrop category that does not perform any of the defined security functions (emotional, material, or status/appearance). No security work is evident, so S0 is confirmed and no further action is required.
 
 ---
 
 ### Topic 61 — Planning to Exchange Rings {#topic-h3-61}
 
 - **Old taxonomy:** 8.3a — Commitment Symbols & Love Tokens
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **S4 — commitment security**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -10590,10 +10642,12 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **material_status_appearance — material status appearance**
-  - Topic 61 centers on jewelry and rings with engagement connotations. Main and POS representations emphasize tangible ownership and material value of physical objects (gold, diamond, stone), anchoring to material security. KeyBERT and MMR shift toward display, symbolic promise, and aesthetic presentation (glint, polished, stunning, precious, dangling), indicating status and appearance signaling. Engagement framing adds a commitment dimension but the dominant lexical mass concerns possession and display of luxury goods rather than emotional bonding, producing a split between material and status/appearance functions with no emotional security signal present.
+- **Pass A — lexical:** **S14 — gift romance token**
+  - All four keyword lists centre on rings, necklaces, diamonds, gold, and engagement jewellery — physical objects exchanged as romantic or commitment tokens. KeyBERT adds 'promises' and 'engaged', confirming the token/pledge function. POS and MMR retain 'precious', 'glint', 'polished', 'worn', reinforcing the object-as-gift frame. The dominant security function is the romantic/commitment token (S14), not mere status display (S12) nor practical provision.
 - **Pass B — contextual:** **MIXED**
-- **Pass C — adjudication:** **MIXED**
+  - Topic 61 centres on jewellery and body adornment in a romance context. The dominant split is between S14 (gift/romantic token — rings presented as symbols of union, ruby gifts, butt-plug described as exquisite craftsmanship with sentimental value) and S13 (appearance/grooming — wearing jewellery, nipple rings, how items look on the body). No single code reaches 70%, so MIXED is returned. One sentence (BOOK_001_2) involves a lancet prick suggesting a minor medical/ritual act (S6), and BOOK_002_14 is a bare name fragment with no security function (S0).
+- **Pass C — adjudication:** **S4 — commitment security**
+  - Pass A/B yielded a lexical consensus of S14 (gift_romance_token) and a contextual dominant of MIXED. Taxonomy 8.3a (Commitment Symbols & Love Tokens) clarifies the functional role: the tokens in this topic cluster are not primarily about the gift-giving act itself but about what the token *signals* — a binding promise, a pledge of permanence, or a reconciliation seal (secondary taxonomy 4.5). The security function being performed is therefore commitment security (S4): the object (ring, token, keepsake) serves as a material anchor for the psychological assurance that the relationship is stable and enduring. S14 captures the vehicle; S4 captures the function. Because the task requires function over object, S4 is the dominant code. MIXED is not warranted because both the lexical and contextual signals converge on commitment-assurance once the taxonomy context is applied; the apparent tension between S14 and MIXED dissolves when the token is read as a commitment symbol rather than a standalone romantic gesture.
 
 ---
 
@@ -10634,7 +10688,7 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 | 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
 | 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
 | 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
+| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
 | 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
@@ -10643,13 +10697,13 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 | 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
 | 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
 | 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
+| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
 | 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
 | 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
+| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
 | 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
 | 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | UNKNOWN | False |
@@ -11200,7 +11254,7 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -11647,7 +11701,7 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -11961,7 +12015,7 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 
@@ -12261,13 +12315,13 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `D0` | **off target** | — |
-| `D1` | **relational darkness** | — |
-| `D2` | **partner harm control** | — |
-| `D3` | **external danger crisis** | — |
-| `D4` | **individual distress** | — |
-| `D5` | **tenderness comfort** | — |
-| `D6` | **mixed or unclear** | — |
+| `D0` | **off target** | Not darkness or tenderness content. Generic plot, logistics, or unrelated affect. |
+| `D1` | **relational darkness** | Interpersonal / couple-level darkness (conflict, rupture, toxic dynamics). |
+| `D2` | **partner harm control** | Partner-directed harm, control, or coercion. |
+| `D3` | **external danger crisis** | External danger/crisis (storm, crime, accident) not partner-as-threat. |
+| `D4` | **individual distress** | Individual fear/anxiety/distress without clear relational harm frame. |
+| `D5` | **tenderness comfort** | Valid emotional comfort/affection/tenderness — not every caretaking topic. |
+| `D6` | **mixed or unclear** | Darkness and tenderness (or multiple D-codes) compete with no clear dominant. |
 
 Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded cell key (`high_tier` → HIGH-rated, `low_tier` → LOW-rated).
 
@@ -12287,7 +12341,7 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 | 285 — Confessing Years of Hatred | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
 | 322 — Consumed By Guilt After The Act | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
 | 366 — Paralyzed By Irrational Fear | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
-| 27 — Racing The Approaching Storm | 7.3 — Risk, Danger & External Crises | UNKNOWN | True |
+| 27 — Racing The Approaching Storm | 7.3 — Risk, Danger & External Crises | UNKNOWN | False |
 | 184 — Racing to Stop A Spreading Fire | 7.3 — Risk, Danger & External Crises | UNKNOWN | False |
 | 223 — Coordinating Security Against A Threat | 7.3 — Risk, Danger & External Crises | UNKNOWN | False |
 | 259 — Chained to The Forest Gate | 7.3 — Risk, Danger & External Crises | UNKNOWN | False |
@@ -13026,7 +13080,7 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 - **Old taxonomy:** 7.3 — Risk, Danger & External Crises
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 
 **Stage-08 snippets**
 
@@ -13431,1719 +13485,32 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `ARC_0` | **off target** | — |
-| `ARC_1` | **misunderstanding** | — |
-| `ARC_2` | **escalation conflict** | — |
-| `ARC_3` | **separation breakup threat** | — |
-| `ARC_4` | **relationship caused distress** | — |
-| `ARC_5` | **disclosure** | — |
-| `ARC_6` | **repair** | — |
-| `ARC_7` | **restored trust** | — |
-| `ARC_8` | **mutual commitment final payoff** | — |
-| `ARC_9` | **external plot conflict** | — |
-| `ARC_10` | **unclear arc role** | — |
+| `ARC_0` | **off target** | Not a narrative-arc role for the main couple (or not arc content). |
+| `ARC_1` | **misunderstanding** | Hidden information, secret, or misunderstanding driving the arc. |
+| `ARC_2` | **escalation conflict** | Main-couple conflict escalation / falling action. |
+| `ARC_3` | **separation breakup threat** | Separation, breakup threat, or rupture of the couple bond. |
+| `ARC_4` | **relationship caused distress** | Distress caused by the relationship itself (not purely external plot). |
+| `ARC_5` | **disclosure** | Revelation / disclosure that moves the arc toward resolution. |
+| `ARC_6` | **repair** | Repair, reconciliation work, conflict resolution in progress. |
+| `ARC_7` | **restored trust** | Restored trust / reassurance after rupture. |
+| `ARC_8` | **mutual commitment final payoff** | Mutual commitment / final relational payoff (HEA-adjacent arc close). |
+| `ARC_9` | **external plot conflict** | External/plot obstacle (antagonist, job, family) not main-couple conflict per se. |
+| `ARC_10` | **unclear arc role** | Arc-relevant but role unclear / mixed. |
 
-Topics with a non-null `arc_role`: **42**. Sentence tags use the unblinded cell key (`high_tier` → HIGH-rated, `low_tier` → LOW-rated).
+Topics with a non-null `arc_role`: **2**. Sentence tags use the unblinded cell key (`high_tier` → HIGH-rated, `low_tier` → LOW-rated).
 
 | Topic | Old taxonomy | New category | Mixed |
 | --- | --- | --- | --- |
-| 64 — Confronting A Lifelong Fear | 3.2 — Negative Emotions & Distress | {'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]} | False |
-| 66 — Paralyzed By Deep-Seated Fear | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 92 — Heart Pounding With Dread | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 102 — Grief Etched on His Face | 3.2 — Negative Emotions & Distress | ARC_4 — relationship caused distress | False |
-| 133 — Holding Back Tears | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 145 — Confessing How Much It Hurts | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 152 — Awkward Apology and Embarrassment | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 179 — Dreading What You Stand to Lose | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 220 — Called Out For Being Embarrassing | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 244 — Confessing A Shattered Heart | 3.2 — Negative Emotions & Distress | ARC_5 — disclosure | False |
-| 281 — Told to Calm Down First | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 285 — Confessing Years of Hatred | 3.2 — Negative Emotions & Distress | ARC_8 — mutual commitment final payoff | False |
-| 322 — Consumed By Guilt After The Act | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 366 — Paralyzed By Irrational Fear | 3.2 — Negative Emotions & Distress | ARC_2 — escalation conflict | False |
-| 37 — Defending A Close Friendship | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 94 — Caught in A Lie | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 109 — Seeing Past A Guarded Identity | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 121 — Revealing Plans to The Prince | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_0 — off target | False |
-| 130 — Revealing A Secret Plan | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 177 — Seeing Past A Hidden Identity | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_1 — misunderstanding | False |
-| 194 — Promising to Keep A Secret | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 214 — Demanding to Know What Happened | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 237 — Hiding Someone Before He Arrives | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 248 — Arranging A Cover Story | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 264 — Accused of Hiding Something | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 265 — Mismatched Expectations About Seriousness | 4.3 — Secrets, Misunderstandings & Hidden Information | Conflict Initiator | False |
-| 272 — Silence Held Until Arrival | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 286 — Trying to Regain Good Graces | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 301 — Confessing A Thin Relationship History | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 303 — Confessing Long-Hidden Secrets | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 314 — Fiancé Becoming A Stranger | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_1 — misunderstanding | False |
-| 319 — Confessing A Costly Mistake | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_2 — escalation conflict | False |
-| 346 — Delivering Urgent News in Secret | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 362 — Keeping Someone Watched and Close | 4.3 — Secrets, Misunderstandings & Hidden Information | ARC_8 — mutual commitment final payoff | False |
-| 3 — Demanding An Explanation | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 24 — Confronting An Unwanted Marriage | 4.4 — Conflict, Distance & Breakup Threats | ARC_8 — mutual commitment final payoff | False |
-| 43 — Pissed Off and Grumbling | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 85 — Offering and Refusing An Apology | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 129 — Accused of Not Caring | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 210 — Expelled For Pursuing A Relationship | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 256 — Refusing to Let It End | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-| 316 — Snapping Over Money and Control | 4.4 — Conflict, Distance & Breakup Threats | ARC_2 — escalation conflict | False |
-
-### Topic 64 — Confronting A Lifelong Fear {#topic-h6-64}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **{'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]}**
-- **Normalised category:** —
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> from what you’ve told me, ella, your childhood was full of worry.” “
-
-> but now you can say you’ve faced one of your fears.” “
-
-> fears i’ve had my entire life come rushing forward, radiating from those four little words.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Death Angel — Linda Howard; tertile=middle; p=0.53**
->
-> You shouldn’t have to live your life in fear,” Mrs. Pearson said, her kind gaze a little sad as she looked at Drea. “
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Nice Girls Don't Live Forever — Molly Harper; tertile=end; p=0.70**
->
-> But I was afraid of you, afraid of the things you would do.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Nice Girls Don't Live Forever — Molly Harper; tertile=middle; p=0.66**
->
-> Right now, I think you need to decide which of us scares you more.” “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · Three Daves — Nicki Elson; tertile=end; p=0.62**
->
-> I was going to tell you that I wanted to wait, and I was afraid… I was so afraid that you wouldn’t want to.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · Three Daves — Nicki Elson; tertile=end; p=0.54**
->
-> I was so afraid that if we started up again, I’d end up messing around on you.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · Three Daves — Nicki Elson; tertile=end; p=0.53**
->
-> I was so afraid to tell you… I know I was wrong.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **C**
-  - The dominant arc code is 'C' (Conflict) as most sentences involve the main couple experiencing fear or anxiety, often due to their relationship. The main couple is present in 75% of the sentences, making the main_couple_prob_estimate 0.75.
-- **Pass C — adjudication:** **{'protag': ['Alex', 'Jamie'], 'antag': ["Alex's internal struggle", "Jamie's job opportunity"], 'mentor': ['Therapist/Counselor'], 'trickster': ["Alex's colleague"], 'herald': ["News of Jamie's job opportunity"]}**
-
----
-
-### Topic 66 — Paralyzed By Deep-Seated Fear {#topic-h6-66}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> at times, she was terrified.
-
-> the idea terrified her.
-
-> even though she was in the body of a woman now, she was still a terrified little girl.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · Devil May Cry — Sherrilyn Kenyon; tertile=middle; p=0.76**
->
-> She'd approached him cautiously that day as if terrified of him. "
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · Devil May Cry — Sherrilyn Kenyon; tertile=end; p=0.74**
->
-> He actually appeared to be afraid for her. "
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · Devil May Cry — Sherrilyn Kenyon; tertile=middle; p=0.73**
->
-> His cold demeanor was such that she was afraid to even move. "
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The Agent's Secret Baby — Marie Ferrarella; tertile=begin; p=0.75**
->
-> So why had she suddenly felt so vulnerable?
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The Agent's Secret Baby — Marie Ferrarella; tertile=end; p=0.73**
->
-> And then all the self-control she’d employed, holding tightly on to her panic, her fears, dissolved.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **Fear**
-  - Based on the provided data, the dominant code is 'Fear', which appears in 12 out of 21 sentences. The main couple is involved in 14 out of 21 sentences, leading to an estimated main couple probability of 0.65.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 92 — Heart Pounding With Dread {#topic-h6-92}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> her heart pounded, not knowing what to say.
-
-> verses the preacher read trailed into a muffled slow motion speech, the whipping sounds of the makeshift paper fans faded to tiny flutters, the anxious pounding of her heart slowed to a steady beat as she stood hand in hand with her best friend.
-
-> lizzie’s heart pounded wildly as she braced herself for the assault.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · That Voodoo You Do — Jodi Redford; tertile=middle; p=0.74**
->
-> The realization constricted her throat and made her chest tighten.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · That Voodoo You Do — Jodi Redford; tertile=begin; p=0.73**
->
-> Heartbeat roaring in her ears, she considered her options.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · That Voodoo You Do — Jodi Redford; tertile=end; p=0.73**
->
-> A strong desire to surround herself with memories of her love swelled within her until she thought her heart would burst.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · That Voodoo You Do — Jodi Redford; tertile=end; p=0.72**
->
-> The sight that met her sent her heart plummeting to her knees.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · That Voodoo You Do — Jodi Redford; tertile=end; p=0.68**
->
-> Aiden’s harsh inhale ruffled her hair and she felt the rapid thud of his heartbeat against her shoulder blade.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Man For The Morning — E.C. Sheedy; tertile=end; p=0.82**
->
-> She willed her heartbeat into submission. "
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Man For The Morning — E.C. Sheedy; tertile=middle; p=0.76**
->
-> Her heart pumped, expanded to fill her chest when the next thought came.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Man For The Morning — E.C. Sheedy; tertile=end; p=0.73**
->
-> A stitch of anger pulled in her chest. "
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **MIDDLE**
-  - The dominant code is 'MIDDLE' as it appears in 36.36% of the main couple's emotional journey sentences. The main couple probability estimate is 94.44% as only 6 out of 61 sentences were not related to the main couple.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of 'Negative Emotions & Distress' in the middle of the narrative suggests a decline in the main couple's relationship, indicating a falling arc.
-
----
-
-### Topic 102 — Grief Etched on His Face {#topic-h6-102}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_4 — relationship caused distress**
-- **Normalised category:** ARC_4 — relationship caused distress
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> we’ve lost adam,’ she whispered and her fingers traced the contours of grief still etched on his face. ‘
-
-> not only did she have a cool and savvy partner actually in the game with her, the surroundings, the actions were so real that her heart pounded and adrenaline flooded her, almost as if she really was helping adam sabotage a bridge while avoiding capture by nazi soldiers.
-
-> holy hell, adam—i’ve known her long enough to realize she’s thinking about a lot more than a blowjob.” “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Katie's Art of Seduction — N.J. Walters; tertile=end; p=0.67**
->
-> Cain winced as the other man spoke bluntly. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Katie's Art of Seduction — N.J. Walters; tertile=end; p=0.66**
->
-> Cain just shook his head and crossed back to the bed. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Marrying for King's Millions — Maureen Child; tertile=end; p=0.78**
->
-> And on that thought, he said, “I talked to Adam a minute ago.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_4 — relationship caused distress**
-  - The dominant code is 'DISCLOSURE' as it appears most frequently (10 times). The main couple probability estimate is based on the proportion of sentences involving Cain and Eve (12 out of 21).
-- **Pass C — adjudication:** **ARC_4 — relationship caused distress**
-
----
-
-### Topic 133 — Holding Back Tears {#topic-h6-133}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> we’ll leave all our tears out to dry on the patio while we swan off to the acropolis!
-
-> they'll also cry foul.
-
-> they’ll tell you that i don’t do crying.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Pants on Fire — Meg Cabot; tertile=end; p=0.75**
->
-> The tears weren’t just gathering under my eyelashes now.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_002 · Eternal Rider — Larissa Ione; tertile=begin; p=0.55**
->
-> A lot of people are going to die before this is over, so dry the tears and deal.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · A Knight to Remember — Karin Tabke; tertile=end; p=0.71**
->
-> I rub at my grimy eyes, stuck shut at the corners from the excess tears I cried last night.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · A Knight to Remember — Karin Tabke; tertile=middle; p=0.70**
->
-> And then I weep again, silent tears tracing themselves down my face, plunking hollowly against my robe.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The majority of sentences (17 out of 20) involve the main couple, with 'CELL_B' being the dominant code. The proportions by tertile show a clear narrative arc, with 'begin', 'middle', and 'end' tertiles represented.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - Jealousy is a common source of conflict in romance narratives, often leading to tension and distress between the main couple, thus driving the plot forward.
-
----
-
-### Topic 145 — Confessing How Much It Hurts {#topic-h6-145}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> it still hurts so much.”
-
-> it hurts too much." "
-
-> but the rest of me hurts.” “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Love is My Sin — Julia Knight; tertile=end; p=0.73**
->
-> The pain was still there but it didn’t matter.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Love is My Sin — Julia Knight; tertile=middle; p=0.70**
->
-> The pain—it hasn’t always been this bad has it?
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Love is My Sin — Julia Knight; tertile=end; p=0.66**
->
-> It’s quite painful, but it’ll be over before long.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · A.J.'s Angel — L.A. Witt; tertile=middle; p=0.76**
->
-> Oh, come on, it doesn’t hurt that bad.” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · A.J.'s Angel — L.A. Witt; tertile=middle; p=0.69**
->
-> And those hurt more than you can imagine. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **Pain**
-  - The dominant code is 'Pain', as it appears in 14 out of 18 sentences. The main couple's conflict or romance arc is only explicitly mentioned in 3 sentences ('Conflict' code), hence the estimated probability of 0.15 for main couple-related content.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of 'Pain' in a romance narrative typically serves as a catalyst for the main couple to grow closer or overcome challenges together, thus driving the plot forward and creating a rising arc.
-
----
-
-### Topic 152 — Awkward Apology and Embarrassment {#topic-h6-152}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> one of the girls goes, “oh my god, i’m so sorry!”
-
-> oh, charlotte," [person] said, feeling genuinely sorry for the woman.
-
-> i apologize that my sister bothered you with details from my personal life,” she said, searching the conversation for the nearest exit. “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=end; p=0.76**
->
-> Then softly and in a broken voice, she added, “I’m sorry, Ben.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=end; p=0.73**
->
-> I’m sorry I couldn’t save you from that,” he said softly. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=end; p=0.72**
->
-> I’m sorry he hit you,” she said softly without moving from the grate. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=middle; p=0.70**
->
-> You’ll be sorry you did that,” he grated out. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=end; p=0.70**
->
-> I’m sorry, Your Grace,” she said, while every particle of her wanted to spit disgust into the woman’s exquisite face. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Claiming the Courtesan — Anna Campbell; tertile=middle; p=0.68**
->
-> Softly, she said, “Kylemore, I’m sorry I left without telling you.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Air Kisses — Zoe Foster; tertile=begin; p=0.65**
->
-> Oh, honey, I am so sorry…’ She held me and allowed me to just cry all over her bare, tanned shoulder. ‘
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Air Kisses — Zoe Foster; tertile=begin; p=0.62**
->
-> You’ll get over it,’ she said knowingly. ‘
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Air Kisses — Zoe Foster; tertile=begin; p=0.58**
->
-> Sorry, honey – I’ve had an absolute bastard of a day,’ she said as she kissed me and dumped her coat on the floor.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Bridesmaid Lotto — Rachel Astor; tertile=end; p=0.80**
->
-> Oh, sorry,” she said looking embarrassed. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Bridesmaid Lotto — Rachel Astor; tertile=begin; p=0.76**
->
-> She mouthed the word sorry to me as she handed me the phone. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 179 — Dreading What You Stand to Lose {#topic-h6-179}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.85 | non-couple: 0.1
-
-**Stage-08 snippets**
-
-> you’ll lose your reason, wishing yourself dead.
-
-> i am fearful we’ll still lose him.
-
-> but you’ll lose me?
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Seti's Heart — Kiernan Kelly; tertile=middle; p=0.55**
->
-> I will not risk losing Seti because you two imbeciles were impatient.” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Seti's Heart — Kiernan Kelly; tertile=begin; p=0.53**
->
-> The only thing I don’t doubt is that I’ve lost my mind.” “
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_002 · Belong to Me — Shayla Black; tertile=end; p=0.59**
->
-> I was under the impression you’d rather I get and stay lost.”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_2 — escalation conflict**
-  - Out of 13 sentences, 11 were related to the main couple, with 8 expressing conflict and 3 expressing romance.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 220 — Called Out For Being Embarrassing {#topic-h6-220}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you two are so ignorant it’s embarrassing.”
-
-> this is so embarrassing.”
-
-> [person] you are embarrassing her.”
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Meeting at Midnight — Eileen Wilks; tertile=begin; p=0.69**
->
-> This was every bit as embarrassing as I’d thought it would be. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Meeting at Midnight — Eileen Wilks; tertile=middle; p=0.58**
->
-> Me, of course, they felt free to embarrass.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Meeting at Midnight — Eileen Wilks; tertile=end; p=0.52**
->
-> Fifteen T here’s something particularly humiliating about almost being arrested by your little brother. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Meeting at Midnight — Eileen Wilks; tertile=begin; p=0.50**
->
-> That was undoubtedly a good thing, but it made me uncomfortable.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · All I Need — Susane Colasanti; tertile=middle; p=0.53**
->
-> We have a humiliation special with a side of mortified.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · All I Need — Susane Colasanti; tertile=begin; p=0.43**
->
-> But it’s kind of embarrassing how hardcore old-school this place is.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_004 · Hope for Christmas — Jennifer  Hayden; tertile=middle; p=0.63**
->
-> It was even more humiliating to be in this situation when you were twenty-eight years old.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_004 · Hope for Christmas — Jennifer  Hayden; tertile=middle; p=0.39**
->
-> When I first saw my Henry, I was upset and in denial too.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_006 · King — T.M. Frazier; tertile=end; p=0.57**
->
-> She’d thought on it all day long and the more she replayed the conversation in her head, the more embarrassed she became.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 244 — Confessing A Shattered Heart {#topic-h6-244}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_5 — disclosure**
-- **Normalised category:** ARC_5 — disclosure
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ve been heartbroken, truly shattered since leaving you behind in cleveland .
-
-> and actually it’s pretty handy you love me since i’ve already had my heart smashed around like day old potatoes once this year.”
-
-> it’s always been the way i’ve protected my heart, though i never thought about the hearts of the women i used.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Echoes at Dawn — Maya Banks; tertile=end; p=0.65**
->
-> Your soft heart would weep over some of the things I’ve done and the choices I’ve made.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Echoes at Dawn — Maya Banks; tertile=end; p=0.59**
->
-> You saved a child who would otherwise be dead right now and you risked your own life to do it because your heart is too soft for you to say no even though it might have meant your own death. “
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Echoes at Dawn — Maya Banks; tertile=begin; p=0.56**
->
-> Dear Author SWEET SURRENDER “This story ran my heart through the wringer more than once.” —
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Echoes at Dawn — Maya Banks; tertile=middle; p=0.34**
->
-> There’s not another group of men who have more heart, determination and courage.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Misfortune Cookie — Michele Gorman; tertile=end; p=0.62**
->
-> It’s what my heart, and my head, demands.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Misfortune Cookie — Michele Gorman; tertile=end; p=0.58**
->
-> Following your heart will pay off in the near future.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Misfortune Cookie — Michele Gorman; tertile=middle; p=0.58**
->
-> Following your heart will pay off in the near future.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Misfortune Cookie — Michele Gorman; tertile=end; p=0.58**
->
-> Following your heart will pay off in the near future .
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Misfortune Cookie — Michele Gorman; tertile=end; p=0.58**
->
-> Following your heart will pay off in the near future .
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_003 · Her Demonic Angel — Felicity Heaton; tertile=middle; p=0.62**
->
-> Not the best of moods for a heart to heart. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_5 — disclosure**
-
----
-
-### Topic 281 — Told to Calm Down First {#topic-h6-281}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you’ve got to calm, down first.
-
-> i've not been relieved of my post.
-
-> i've really helped relax, comfort and ease anger and rage with these guys.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Nightcap — Kathleen O'Reilly; tertile=begin; p=0.45**
->
-> The stress is starting to take its toll.” “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Nightcap — Kathleen O'Reilly; tertile=begin; p=0.35**
->
-> Not as stimulating as Cleo, but productive nonetheless.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · After the End — Bonnie Dee; tertile=middle; p=0.60**
->
-> Steady , he warned himself, before you have a goddamn panic attack .
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · After the End — Bonnie Dee; tertile=begin; p=0.57**
->
-> He still sounded as calm as if this kind of thing happened every day of the week.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · After the End — Bonnie Dee; tertile=middle; p=0.56**
->
-> Ari noted details with detached calmness.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_004 · Follow My Lead — Kate Noble; tertile=end; p=0.52**
->
-> Nor have I ever seen you as stirred up as you are after a mere few minutes in the presence of Miss Crane.”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **R**
-  - The dominant code is 'R' (Reaction) as most sentences imply a reaction or escalation in the narrative.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of 'Negative Emotions & Distress' and 'Emotional Safety, Reassurance & Caretaking' suggests a conflict or distress in the relationship, which typically causes the relationship arc to fall.
-
----
-
-### Topic 285 — Confessing Years of Hatred {#topic-h6-285}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ve hated him for years.
-
-> heath has done a wonderful job with him, but i—well, i’ve hated him for living instead of you.
-
-> ever since this cunt came here, i’ve been, uh, less than balanced, i admit, and remembering things i’ve tried to forget, reasons to hate, reasons to hate, and you’ve become a liar.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Mending Places — Denise Hunter; tertile=middle; p=0.57**
->
-> Looking back now, I can see all the hatred I had in me, but at the time it just seemed like everyone was out to get me.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Mending Places — Denise Hunter; tertile=end; p=0.48**
->
-> It had been a long time since his presence had evoked disdain.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Really Angelic — Enid Wilson; tertile=middle; p=0.62**
->
-> And I hated submitting to your licentious thoughts and advances!” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Really Angelic — Enid Wilson; tertile=end; p=0.60**
->
-> You expressed a dislike of both Himins and myself.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **MIXED**
-- **Pass B — contextual:** **HATE**
-  - The dominant code is 'HATE', indicating high conflict between the main couple. The main couple probability estimate is 0.75, as most hate-related sentences involve the main couple.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 322 — Consumed By Guilt After The Act {#topic-h6-322}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> before i fell asleep i was thinking i would wake up this morning consumed with guilt because of what we did, but it wasn’t like that at all.
-
-> he’s consumed with his guilt.
-
-> the only way victor could bury the guilt was to remind himself his actions were all to a higher purpose.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · The Cinderella Pact — Sarah Strohmeyer; tertile=end; p=0.50**
->
-> And no holding on to a grudge here and there.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · The Cinderella Pact — Sarah Strohmeyer; tertile=end; p=0.48**
->
-> Also because I feel tremendously guilty about what I wrote Belinda—a note you must have read.” “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · The Cinderella Pact — Sarah Strohmeyer; tertile=middle; p=0.41**
->
-> article about how guys who cheat on their wives often say corny stuff like this to ease their guilty feelings. “
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Dark Citadel — Cherise Sinclair; tertile=end; p=0.71**
->
-> Oddly enough, his guilt had disappeared with the anger.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Dark Citadel — Cherise Sinclair; tertile=begin; p=0.66**
->
-> Even though his grief had finally eased, the guilt had become part of him.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Dark Citadel — Cherise Sinclair; tertile=end; p=0.64**
->
-> How he felt about Kari added a different guilt.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Dark Citadel — Cherise Sinclair; tertile=middle; p=0.64**
->
-> Second, you, little nun, have guilt added into the mix.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Crossing the Bridge — Michael Baron; tertile=begin; p=0.76**
->
-> I mean can’t-get-out-of-bed kind of guilt.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Crossing the Bridge — Michael Baron; tertile=begin; p=0.64**
->
-> Except that she’s feeling insanely guilty about it.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Crossing the Bridge — Michael Baron; tertile=end; p=0.59**
->
-> I felt a combination of guilt, validation, and frustration over the events of that afternoon.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code (CELL_B) and the majority of sentences (13 out of 16) involve the main couple, indicating a strong narrative focus on their conflict and guilt. The main couple's probability estimate is calculated as the sum of 'yes' occurrences divided by the total number of sentences.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of ambivalence and internal conflict suggests that the main couple is experiencing a rising tension due to their mixed feelings, rather than a falling action or an external plot conflict.
-
----
-
-### Topic 366 — Paralyzed By Irrational Fear {#topic-h6-366}
-
-- **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> it's like a person who is irrationally terrified of insects throwing a bowl over a cricket in her living room, and then, in sheer terror, stacking a heavy dictionary on top of the bowl so the cricket can't escape.
-
-> for some reason, he was fucking terrified.
-
-> and he was terrified of what that meant.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · Master of Dragons — Angela Knight; tertile=end; p=0.60**
->
-> He can be pretty damned terrifying when it suits him." "
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · Master of Dragons — Angela Knight; tertile=middle; p=0.57**
->
-> Nightmares and prophesies notwithstanding, he simply wasn't capable of it.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Triple Dare — Candace Irvin; tertile=end; p=0.73**
->
-> It was the more that scared the hell out of him.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 37 — Defending A Close Friendship {#topic-h6-37}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i've told you -- we're just good friends.
-
-> and i’ll grant ye i’ve been a bad friend to you.
-
-> but we’ve been friends for a long time.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · It's All Relative — J.M. Snyder; tertile=middle; p=0.75**
->
-> It was only friendship, nothing more, not to me.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Got a Hold on You — Pat White; tertile=middle; p=0.63**
->
-> Good, then get out of my face and give me a minute with my friend.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Got a Hold on You — Pat White; tertile=end; p=0.61**
->
-> I’m here because I’m worried about a friend.” “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Got a Hold on You — Pat White; tertile=middle; p=0.47**
->
-> He didn’t have any life-long friends, with the exception of Butch.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Got a Hold on You — Pat White; tertile=end; p=0.46**
->
-> A friend once told me it’s okay to lean on someone,” he said. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **37**
-  - The main-couple filter focuses on the relationship dynamics between the main characters, excluding external conflicts related to fidelity. The narrative arc roles are coded based on the given keywords, with a high conflict-label fidelity to maintain the integrity of the story's tension and development.
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 94 — Caught in A Lie {#topic-h6-94}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ve known him for a long time, and i’m confident that i could tell if he was lying.”
-
-> i’ve lied, therefore i’m a liar.
-
-> i never meant to—” “how can i believe a single thing you say when you’ve already been proven a liar?”
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Fiorenza forced marriage — Melanie Milburne; tertile=middle; p=0.69**
->
-> I have no reason to lie to you about something like that,’ she said. ‘
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Fiorenza forced marriage — Melanie Milburne; tertile=middle; p=0.68**
->
-> You are such a transparent liar,’ he said. ‘
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Fiorenza forced marriage — Melanie Milburne; tertile=begin; p=0.67**
->
-> You are not a very convincing liar, Emma,’ he said. ‘
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Conquest Earth; Prince Galen — Angelique Anjou; tertile=middle; p=0.59**
->
-> Why don’t you stop being such a baby about it and lie still and I’ll go get something for you?”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Conquest Earth; Prince Galen — Angelique Anjou; tertile=middle; p=0.54**
->
-> The sinking sensation that swept over him gave the lie to his efforts to convince himself it wasn’t.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_2 — escalation conflict**
-  - All sentences involve the main couple.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 109 — Seeing Past A Guarded Identity {#topic-h6-109}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ve hardly heard a thing about you.”
-
-> anyone could’ve walked by.
-
-> even people who are close to you, who’ve known you far longer than i have, don’t know any more than what you’ve allowed them to see.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Baby, I'm Yours — Catherine Mann; tertile=middle; p=0.61**
->
-> You have to know you’re important to me, too.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Baby, I'm Yours — Catherine Mann; tertile=end; p=0.57**
->
-> Just as I know I can depend on you to be mine.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Baby, I'm Yours — Catherine Mann; tertile=middle; p=0.53**
->
-> But if you really knew me, you would realize how very much I resented your taking control of my life by calling that inspector.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Vanquished — Hope C. Tarr; tertile=end; p=0.68**
->
-> I know not only who you are but what you are.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **IDENTIFICATION**
-  - Out of 17 sentences, 14 (82.35%) involve the main couple, either directly or indirectly. The dominant arc code is 'IDENTIFICATION', with 12 out of 17 sentences (70.59%) falling into this category.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 121 — Revealing Plans to The Prince {#topic-h6-121}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_0 — off target**
-- **Normalised category:** ARC_0 — off target
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> she’ll be queen of the roost.” “
-
-> do you think he’ll really go to the king?”
-
-> if i let the prince know what is happening, instead of waiting for them to find out, they’ll know i’ve been out on my own.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Trust Me — Lesley Pearse; tertile=middle; p=0.49**
->
-> I am not Prince Charming or a shining Knight on a white horse.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Trust Me — Lesley Pearse; tertile=middle; p=0.40**
->
-> Hot as a fever, rattling bones I could just taste it, taste it If it’s not forever, if it’s just tonight Oh it’s still the greatest, the greatest, the greatest Kings of Leon Chapter Ten “You two pieces of shit are worthless you know that?”
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Trust Me — Lesley Pearse; tertile=end; p=0.38**
->
-> I WILL one day go on a vacation to Disneyland and actually hang with Belle, Beast, Briar, Winter and Ashess.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Highlander Unchained — Monica McCarty; tertile=begin; p=0.69**
->
-> Why did he need her if the king was involved?
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Highlander Unchained — Monica McCarty; tertile=end; p=0.69**
->
-> If only I’d realized what the king intended.”
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Highlander Unchained — Monica McCarty; tertile=begin; p=0.66**
->
-> Didn’t you appeal to the king for help?”
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Highlander Unchained — Monica McCarty; tertile=begin; p=0.66**
->
-> Then the king has done something about it?”
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Highlander Unchained — Monica McCarty; tertile=end; p=0.65**
->
-> I should have suspected the king’s treachery.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · d'Argent Honor: Full Circle — Ann Jacobs; tertile=end; p=0.65**
->
-> Meanwhile you must learn how best to serve your queen.”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_0 — off target**
-  - Based on the given sentences, the main couple is present in 65% of the cases, with the dominant narrative arc code being 'INTRO'.
-- **Pass C — adjudication:** **ARC_0 — off target**
-
----
-
-### Topic 130 — Revealing A Secret Plan {#topic-h6-130}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you’ve rumbled my clever plan.’ ‘
-
-> yes, i’ve got a little more planned for this evening.
-
-> we’ve had this planned for months, but i’d almost forgotten about it.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · Love Lives — Josie Lloyd; tertile=middle; p=0.54**
->
-> She would come out with mad plans and then challenge me into doing them.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The ABC's of Kissing Boys — Tina Ferraro; tertile=begin; p=0.68**
->
-> I had a real and viable plan in place now to turn things around.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The ABC's of Kissing Boys — Tina Ferraro; tertile=end; p=0.67**
->
-> And keeping with the Plan seemed like my only way there.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The ABC's of Kissing Boys — Tina Ferraro; tertile=middle; p=0.62**
->
-> This plan—it's not going to get you into any trouble at school?” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · The ABC's of Kissing Boys — Tina Ferraro; tertile=middle; p=0.57**
->
-> I just didn't plan to be around to help make it happen. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **PLANS**
-  - The dominant code is 'PLANS' as the majority of sentences (65%) discuss plans. The main couple is involved in 75% of these plan-related sentences, indicating that their plans are a significant part of the narrative arc.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 177 — Seeing Past A Hidden Identity {#topic-h6-177}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_1 — misunderstanding**
-- **Normalised category:** ARC_1 — misunderstanding
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you’ll no longer be alex.
-
-> i know they say if you want something bad enough you’ll find any excuse to believe it’s true… but there was something in alex that called to me.
-
-> tell me you understand that, or you’ll be no help to alex.”
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Three's a Crowd — Sophie McKenzie; tertile=middle; p=0.58**
->
-> In the midst of my pleasure at seeing Alejandro literally backed up against a wall, I felt a pinprick of irritation at Jonno’s inability to see Eve as she was.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Three's a Crowd — Sophie McKenzie; tertile=end; p=0.56**
->
-> I couldn’t get what she’d said about Alejandro out of my head.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Three's a Crowd — Sophie McKenzie; tertile=middle; p=0.55**
->
-> But Eve was pulling away from me, moving towards Alejandro.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Three's a Crowd — Sophie McKenzie; tertile=middle; p=0.53**
->
-> I still couldn’t believe that she had been with Alejandro last night.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_004 · After Their Vows — Michelle Reid; tertile=middle; p=0.76**
->
-> I should not have let Alex run my life for me.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_004 · After Their Vows — Michelle Reid; tertile=middle; p=0.76**
->
-> It was ironic that he should do this now, when the last person she wanted to think about was Alex. ‘
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **B**
-  - The dominant code 'B' represents conflict and tension, with a focus on the main couple (Alex and Eve) in the middle and end tertiles. The main couple is present in 6 out of 11 'B' coded sentences, indicating a probability of 0.6 for main couple conflict.
-- **Pass C — adjudication:** **ARC_1 — misunderstanding**
-
----
-
-### Topic 194 — Promising to Keep A Secret {#topic-h6-194}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ll keep it a secret,” said lucas.
-
-> i’ll be your dirty little secret,” i joked.
-
-> i’ll leave that secret for him to reveal.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Bachelorette Party — Karen McCullah Lutz; tertile=end; p=0.75**
->
-> Maybe you’ll be in charge of all my secrets from now on.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Bachelorette Party — Karen McCullah Lutz; tertile=middle; p=0.73**
->
-> Trust me, he’s not hiding any deep dark secrets.” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Bachelorette Party — Karen McCullah Lutz; tertile=end; p=0.73**
->
-> Keeping God-only-knows-what horrific secret.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · The Bachelorette Party — Karen McCullah Lutz; tertile=middle; p=0.73**
->
-> How else would I find out all of his secrets?”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Before the Witches — Karina Cooper; tertile=end; p=0.59**
->
-> If I knew that, I’d unlock a giant mystery, wouldn’t I?”
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_005 · Sold into Marriage — Maxi Shelton; tertile=middle; p=0.52**
->
-> Perhaps secret information that he has uncovered, information that would be dangerous to the French.’ ‘
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_005 · Sold into Marriage — Maxi Shelton; tertile=begin; p=0.38**
->
-> For reasons I cannot disclose I would rather you did not mention the break-in to anyone.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **S**
-  - The dominant code is 'S' (Secret Keeping) as it appears most frequently in the sentences related to the main couple. The main couple probability estimate is 0.65, as 10 out of 16 sentences directly involve the main couple or their secrets.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-  - The topic of secrets and misunderstandings (taxonomy 4.3) typically creates tension and conflict in a relationship, which can lead to a falling action in the narrative arc of the main couple. The promise or vow (secondary 9.2) adds an additional layer of tension as it is likely to be threatened or broken due to the hidden information, further driving the falling action.
-
----
-
-### Topic 214 — Demanding to Know What Happened {#topic-h6-214}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> oh my god, how did this happen?”
-
-> please, tell me precisely what is happening to you.”
-
-> and i need to know what’s going on to some extent so i don’t think the worst.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Midnight Angel — Lisa Kleypas; tertile=end; p=0.71**
->
-> Damn you…tell me what happened!”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Midnight Angel — Lisa Kleypas; tertile=middle; p=0.67**
->
-> What the hell has she done?”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Midnight Angel — Lisa Kleypas; tertile=middle; p=0.70**
->
-> What has happened to you?”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' often leads to negative emotions and distress, which can cause a falling action in the romance plot. This topic directly affects the main couple, making it a main-couple conflict.
-
----
-
-### Topic 237 — Hiding Someone Before He Arrives {#topic-h6-237}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ll call jared now.
-
-> jared was just heading off to work but is going to need his shirt so i’ll be right back.”
-
-> you can’t come because if jared catches one glimpse of you, he’ll know.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Once In A Lifetime — Gwynne Forster; tertile=end; p=0.41**
->
-> At that, several male heads popped out, one of them being Ronald, Dee’s boyfriend.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Island Song — Alan Chin; tertile=end; p=0.53**
->
-> PJ," Garrett says, "how many times are you going to make me ask you to call me Garrett?" "
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Island Song — Alan Chin; tertile=end; p=0.53**
->
-> Keep him coming," Garrett tells Madison. "
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Island Song — Alan Chin; tertile=begin; p=0.52**
->
-> Something is happening inside Garrett's head, a feeling so bizarre he can't quite place it, can't put a name to it.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Island Song — Alan Chin; tertile=begin; p=0.52**
->
-> It's a feeling Garrett can't put into words.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Island Song — Alan Chin; tertile=middle; p=0.52**
->
-> The other arm has Garrett in a headlock. "
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Blood of the Beast — Tamela Quijas; tertile=end; p=0.76**
->
-> The response appeared to placate Jared. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **High Conflict**
-  - The text contains strong emotional words (wrathfully, distress, disappointed, wound) and actions that escalate conflict (knew, heading, trailing, occurred, collapsed), with minimal mitigation or resolution attempts.
-- **Pass B — contextual:** **end**
-  - Out of 16 sentences, 15 mention the main couple, with 13 sentences having an 'end' arc code, indicating a high probability of the main couple being together or resolving their conflict.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The high conflict label and the contextual placement at the end of the story arc suggest a climax or turning point in the relationship. The topic's taxonomy of 'Secrets, Misunderstandings & Hidden Information' indicates a revelation or confrontation that could lead to a falling action in the romance plot.
-
----
-
-### Topic 248 — Arranging A Cover Story {#topic-h6-248}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i can attach myself to callie as a potential suitor, even with the distant cousin story you’ve decided to run with.
-
-> i'll just let hannah know she won't have to watch him after today.
-
-> it means you’ll probably bump into him too if you see more of hannah.’
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Picture Perfect — Bethany Brown; tertile=middle; p=0.68**
->
-> Yeah, he’s actually Hannah’s boyfriend.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Picture Perfect — Bethany Brown; tertile=begin; p=0.66**
->
-> That Hannah’s boyfriend was sleeping with apparently the whole time they were going out?
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Picture Perfect — Bethany Brown; tertile=begin; p=0.65**
->
-> On Hannah’s behalf, and on yours too, even though I didn’t know your name.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Picture Perfect — Bethany Brown; tertile=begin; p=0.64**
->
-> Hannah took me to that party as a pity thing, unfortunately.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Picture Perfect — Bethany Brown; tertile=begin; p=0.64**
->
-> Including that hot guy Hannah had started to introduce me to.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_003 · Creed — Kristen Ashley; tertile=end; p=0.45**
->
-> I would confirm the girl was there, make the deal and skedaddle then Hawk and the boys would swoop in and recover the girl.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_004 · Ciao — Bethany Lopez; tertile=middle; p=0.56**
->
-> Anyway, I was totally pissed about that, and about Jess pinching my arm, when Cassie dropped another bomb on me… She said that she is “Falling in love with Jimmy!!!!”
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_004 · Ciao — Bethany Lopez; tertile=end; p=0.56**
->
-> I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_004 · Ciao — Bethany Lopez; tertile=middle; p=0.54**
->
-> Getting all mad because of her relationship with Jimmy… Wishing that they had never started dating… Now I will never see Cassie again!
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_004 · Ciao — Bethany Lopez; tertile=middle; p=0.54**
->
-> Jess and I rode together, but Cassie said she would meet us there; she was still trying to find the perfect gift for Jimmy.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **MIDDLE**
-  - Out of 17 sentences, 9 mention the main couple or their relationship, while 8 do not. The dominant arc code is 'MIDDLE', indicating that the narrative is primarily focused on the middle stage of the story.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 264 — Accused of Hiding Something {#topic-h6-264}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> i’ve been hiding out in here, avoiding contact with the human leech.” “
-
-> i haven’t been hiding, i’ve been working.
-
-> he cut in before i could get a word out, "funny thing is i've had this gut feeling all along that you're hiding something.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Crazy Kisses — Tara Janzen; tertile=end; p=0.48**
->
-> Two shots from the same hide were enough to set his warning bells ringing.
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Crazy Kisses — Tara Janzen; tertile=middle; p=0.42**
->
-> The closet had been a great hiding place for all of two seconds for two people, but it had turned into a torture chamber.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Some Enchanted Evening — Christina Dodd; tertile=begin; p=0.70**
->
-> If we’re hiding, how will she find us?” “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 265 — Mismatched Expectations About Seriousness {#topic-h6-265}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **Conflict Initiator**
-- **Normalised category:** —
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> shit,” shane cursed, but in a way that said he was thrilled with the news, not unhappy. “
-
-> i get the impression you’ve led shane to believe you’re far more serious than you are.
-
-> i want to concentrate on my studies, and you, my gosh, shane, you’ll have so many women hitting on you the second the ferry leaves the dock—” shane jerks his hand away. “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Her Sky Cowboy — Beth Ciotta; tertile=begin; p=0.38**
->
-> As far as Tuck knew, Axel was the only one aboard who got spooked by Freaks.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **END**
-  - The main couple (Shane and Axel) is predominantly present in the 'END' tertile, with a total of 7 out of 11 sentences mentioning them. The 'BEGIN' tertile has 3 mentions, and the 'MIDDLE' tertile has none. Therefore, the dominant code is 'END', and the estimated main couple probability is 0.65.
-- **Pass C — adjudication:** **Conflict Initiator**
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' with a secondary 'Conflict, Distance & Breakup Threats' suggests a high conflict situation that could lead to a falling action in the main couple's relationship.
-
----
-
-### Topic 272 — Silence Held Until Arrival {#topic-h6-272}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> she didn’t speak a word until they got to their destination.
-
-> the high priestess had said very little to her in the day and a half leading up to her departure.
-
-> he should’ve known better than to think brenna would be content with the noncommittal answer he’d given her.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Below the Belt — Sarah Mayberry; tertile=middle; p=0.74**
->
-> She wanted to ask more questions, but she didn’t.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Below the Belt — Sarah Mayberry; tertile=begin; p=0.67**
->
-> She didn’t want to talk about the fight. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · One Season of Sunshine — Julia London; tertile=begin; p=0.70**
->
-> Unfortunately, she had nothing promising to say to him.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · One Season of Sunshine — Julia London; tertile=end; p=0.68**
->
-> She was going to the hospital, and this time, she would not take no for an answer.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_2 — escalation conflict**
-  - Out of the 16 sentences, 10 involve the main couple, either in conflict or avoidance. The dominant code is 'Conflict', with 8 out of 16 sentences showing conflict between the main couple.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 286 — Trying to Regain Good Graces {#topic-h6-286}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> oh ms. [person], you really should drop by our office more, we miss your good taste around here' blah blah blah.
-
-> i'll not have you and his grace at each other's throats before we arrive at champney court."
-
-> if what you’ve said is to be believed, how am i supposed to get back into her good graces?
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Dark Surrender — Mercy Walker; tertile=middle; p=0.58**
->
-> It shone in the moonlight with silver grace. “
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · Incidental Contact — Eden Connor; tertile=begin; p=0.53**
->
-> Widow of a respected insurance agent and former daughter-in-law of a well-known Baptist minister, she’d seemingly shunned the social position and privilege of her past to be with Colton, but this wasn’t the first time Eric had seen her slip on her high-and-mighty act like an expensive fur coat.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · Incidental Contact — Eden Connor; tertile=begin; p=0.48**
->
-> Eric needed a mentor to teach him how to be an honorable man.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · Incidental Contact — Eden Connor; tertile=begin; p=0.48**
->
-> Likely not, since Dee had already seen her with Eric.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code (CELL_B) appears more frequently and is associated with the main couple in most instances. The main couple probability estimate is calculated based on the frequency of 'yes' main_couple responses.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of secrets and misunderstandings often leads to a decline in the relationship's harmony, as it can cause distress and negative emotions.
-
----
-
-### Topic 301 — Confessing A Thin Relationship History {#topic-h6-301}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you know that because you’ve been with one other guy and had a long-term relationship?
-
-> because one way or another it has tainted every relationship i’ve had since the roller-coaster success of my first book.”
-
-> i've had sexual partners, but never a girlfriend.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Heart Thief — Robin D. Owens; tertile=end; p=0.52**
->
-> You will say anything to save your lover.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Temptation Ridge — Robyn Carr; tertile=end; p=0.70**
->
-> Can I assume you two don’t have a…relationship?”
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Temptation Ridge — Robyn Carr; tertile=middle; p=0.64**
->
-> But I’m not avoiding a good relationship.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **B**
-  - The majority of sentences (16 out of 18) are related to the main couple's relationship status or dynamics, with 12 sentences explicitly mentioning a boyfriend or lover. The dominant ARC code is 'B' (Conflict), as most sentences discuss or hint at relationship issues or uncertainty.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of 'Secrets, Misunderstandings & Hidden Information' typically creates tension and misunderstanding between the main couple, leading to a falling action in the narrative arc. The secondary topic of 'Ambivalence & Internal Conflict' further emphasizes the internal struggle of the characters, contributing to the falling action. Although the conflict label is high, the low fidelity indicates that the conflict is not directly between the main couple, but rather an external factor causing tension.
-
----
-
-### Topic 303 — Confessing Long-Hidden Secrets {#topic-h6-303}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.85 | non-couple: 0.1
-
-**Stage-08 snippets**
-
-> normally, tate would’ve finished the sentence she was working on, but the excitement in mabel’s voice jarred her completely out of the story, derailing her train of thought.
-
-> i know it might cost me tate, but if i don’t tell him then everything we’ve built will be based on half-truths.” “
-
-> tate sits down next to me, his eyes grim as he waits for me to share all the things that i've been keeping from him for so long.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · Hunting Chase — Camille Anthony; tertile=middle; p=0.70**
->
-> Damn it, he wondered if Joshua Tate knew the full extent of what he was taking on.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_003 · Hunting Chase — Camille Anthony; tertile=begin; p=0.69**
->
-> Joshua Tate tugged at his collar and cleared his throat, his prominent Adam"s apple bobbing as he swallowed audibly. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_004 · Pas de Deux — Jamie Craig; tertile=middle; p=0.45**
->
-> I went to Woodson to interview Chandra Cunningham about Tana Mayfield.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_004 · Pas de Deux — Jamie Craig; tertile=end; p=0.38**
->
-> I’m just doing some follow-up on Mayfield.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_005 · Bound By Blood — Kimberly Hoyt; tertile=middle; p=0.55**
->
-> Lady Mayfield, I believe," he said, straightening.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_005 · Bound By Blood — Kimberly Hoyt; tertile=middle; p=0.52**
->
-> You seem to have the exclusive attention of the Lady Mayfield,” Kent mentioned once greetings had been exchanged between the three. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **meet**
-  - Based on the given sentences, the main couple is present in 65% of the cases. The dominant arc code is 'meet', indicating that the narrative focuses on introductions and initial interactions between characters.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 314 — Fiancé Becoming A Stranger {#topic-h6-314}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_1 — misunderstanding**
-- **Normalised category:** ARC_1 — misunderstanding
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> macie had spent far more time praying for blake and far less time being driven by her constantly-shifting emotions.
-
-> she peeked out and verified that it was indeed blake, then promptly shut the door in his face to remove the chain. “
-
-> the blake i am engaged to is slowly disappearing in my mind, and being replaced by a complete and utter stranger.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_001 · A Heartbeat Away — Maureen Smith; tertile=middle; p=0.49**
->
-> I wondered about that when you first told me you’d be staying with Brant.
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_002 · Wild Card — Lora Leigh; tertile=end; p=0.68**
->
-> You went over the truck, didn't you, Blake?"
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_1 — misunderstanding**
-
----
-
-### Topic 319 — Confessing A Costly Mistake {#topic-h6-319}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> but you have a way of letting me know when you think i’ve made the wrong one.” “
-
-> i’ve made many mistakes and maybe i should have come back a year ago.
-
-> it was a mistake for which i’ve paid dearly.” “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · When It Happens — Susane Colasanti; tertile=middle; p=0.42**
->
-> They’re fundamental y flawed, I can’t—” “ ‘Flawed’ being the key word,” Josh points out.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Space Junque — L.K. Rigel; tertile=end; p=0.59**
->
-> Anyone who saw her as only a child was making a mistake. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **ARC_2 — escalation conflict**
-  - The dominant code is 'CONFLICT' as most sentences involve disagreements or mistakes between the main couple. The main couple probability estimate is high (0.846) as most sentences (16 out of 18) involve the main couple in some way.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 346 — Delivering Urgent News in Secret {#topic-h6-346}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> let’s go [person] i’ll drive you to it.”
-
-> i hardly think leaving a note telling my father where to find me would’ve been a good idea, but i’m not going to tell james that. “
-
-> i know this is bad, me coming here, especially after the celeb weekly article, but i’ve got some important information about [person].”
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_003 · Stars Collide — Janice  Thompson; tertile=end; p=0.56**
->
-> She pointed to James Stevens from The Scoop , who sat in the front row with Scott’s parents. “
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **{'initiator': 'admit, planning', 'responder': 'feminine, suffering, exact, strained, terms, ability'}**
-  - The consensus codes for both initiator and responder focus on conflict, with 'admit' and 'planning' being common in the initiator's role. The responder's consensus code revolves around 'feminine', 'suffering', 'exact', 'strained', 'terms', and 'ability', indicating a struggle or challenge. Disagreements in roles primarily concern the attraction arc for initiators and minor variations in conflict codes for responders.
-- **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 362 — Keeping Someone Watched and Close {#topic-h6-362}
-
-- **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> come on, i’ll get you a drink,’ rory said. ‘
-
-> they’ll expect me to keep her close, to make sure she doesn’t discover what we are,” rory answered.
-
-> and goddess willing i’ll be ready for it, thought rory as she ignored his comment to follow amber out to the sitting room.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Dragon's Dower — Catherine Archer; tertile=begin; p=0.52**
->
-> It was Kelsey he wished to see brought low.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Dragon's Dower — Catherine Archer; tertile=begin; p=0.49**
->
-> For we have seen how far Kelsey is willing to go for what he wants.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Dragon's Dower — Catherine Archer; tertile=begin; p=0.47**
->
-> He would go slowly, wisely, even though he was more resolved than ever to see Kelsey repaid for his ills against others.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Dragon's Dower — Catherine Archer; tertile=end; p=0.47**
->
-> Another of the men said, “Lord Kelsey must be told.”
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Dragon's Dower — Catherine Archer; tertile=begin; p=0.46**
->
-> Yet he’d had no time to grieve their loss, for he had immediately become embroiled in this conflict with the Earl of Kelsey.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Deeper — Megan Hart; tertile=middle; p=0.54**
->
-> Okay, so maybe I get that, but what about Kelsey?” “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Deeper — Megan Hart; tertile=end; p=0.48**
->
-> He’d want a sure thing,” Kelsey insisted.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **middle**
-  - The dominant code is 'middle' as it appears in 6 out of 18 sentences. The main couple is present in 17 out of 18 sentences, making the main couple probability estimate very high.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
+| 3 — Demanding An Explanation | 4.4 — Conflict, Distance & Breakup Threats | UNKNOWN | False |
+| 24 — Confronting An Unwanted Marriage | 4.4 — Conflict, Distance & Breakup Threats | UNKNOWN | False |
 
 ### Topic 3 — Demanding An Explanation {#topic-h6-3}
 
 - **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
+- **New category:** **UNKNOWN**
+- **Normalised category:** —
 - **Mixed:** False
-- **Main-couple prob:** 0.85 | non-couple: 0.1
+- **Main-couple prob:** 0.0 | non-couple: 0.0
 
 **Stage-08 snippets**
 
@@ -15161,20 +13528,20 @@ Topics with a non-null `arc_role`: **42**. Sentence tags use the unblinded cell 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **D**
-  - The dominant code 'D' (Tell me!) appears 3 times, indicating high conflict and main-couple interaction. The main-couple probability estimate is 0.85, as 17 out of 20 sentences involve the main couple.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
+- **Pass A — lexical:** **confrontation_demanding_explanation — confrontation demanding explanation**
+  - All four representations converge on a confrontation scene structured around the demand for and resistance to explanation. The main-couple filter holds: the epistemic and interpersonal verbs in the main rep confirm this is a dyadic clarification conflict between the central pair. The authority/military lexicon in pos and mmr (commander, sir, mister) is treated as scene-setting context rather than a competing arc, consistent with the main-couple filter instruction. The consensus code captures the shared core—a charged face-to-face moment where one party demands an explanation the other has withheld—while acknowledging that the emotional texture (reluctant confession vs. coerced admission) remains partially unresolved across representers.
+- **Pass B — contextual:** **UNKNOWN**
+- **Pass C — adjudication:** **UNKNOWN**
 
 ---
 
 ### Topic 24 — Confronting An Unwanted Marriage {#topic-h6-24}
 
 - **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_8 — mutual commitment final payoff**
-- **Normalised category:** ARC_8 — mutual commitment final payoff
+- **New category:** **UNKNOWN**
+- **Normalised category:** —
 - **Mixed:** False
-- **Main-couple prob:** 0.85 | non-couple: 0.1
+- **Main-couple prob:** 0.0 | non-couple: 0.0
 
 **Stage-08 snippets**
 
@@ -15204,309 +13571,9 @@ Topics with a non-null `arc_role`: **42**. Sentence tags use the unblinded cell 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **B**
-  - The dominant ARC code is B, indicating a focus on marriage and commitment. The main couple is mentioned in 19 out of 20 sentences, giving an estimated main couple probability of 0.95.
-- **Pass C — adjudication:** **ARC_8 — mutual commitment final payoff**
-
----
-
-### Topic 43 — Pissed Off and Grumbling {#topic-h6-43}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> this isn’t the first time i’ve pissed him off.”
-
-> we’ve irritated you, have we?” “
-
-> i’ve been pissed at him ever since. “
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_001 · Tales Of A Drama Queen — Lee Nichols; tertile=begin; p=0.62**
->
-> She doesn’t look mad so much as really disappointed. “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Confessions of a Shopaholic — Sophie Kinsella; tertile=middle; p=0.58**
->
-> Tarquin is also pissed, but not as much as me.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - The main couple is involved in 76.92% of the sentences, with 'CELL_D' being the dominant code (42.86% of sentences). The narrative arcs are distributed fairly evenly across the tertiles.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic's taxonomy of 4.4/Conflict, Distance & Breakup Threats and secondary taxonomy of 3.2/Negative Emotions & Distress suggest that the main couple is facing significant challenges that could lead to a breakup, indicating a refined falling arc role.
-
----
-
-### Topic 85 — Offering and Refusing An Apology {#topic-h6-85}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> he said he wanted to apologize.
-
-> i need to apologize to you, ruby.
-
-> oh, i'm so not gonna apologize for that."
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · One Night, Two Babies — Kathie DeNosky; tertile=middle; p=0.70**
->
-> I’m real sorry,” Pete said, his blue eyes apologetic.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · One Night, Two Babies — Kathie DeNosky; tertile=end; p=0.54**
->
-> He tried to get back in my good graces with a box of chocolates a couple of days later, but he never did apologize.” “
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · One Night, Two Babies — Kathie DeNosky; tertile=begin; p=0.54**
->
-> And you made it quite clear that you thought I was overreacting to the situation.”
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · One Night, Two Babies — Kathie DeNosky; tertile=end; p=0.53**
->
-> Between Cornelia, Emily Taylor and Helen Washburn, I’ve been apologized to every day this week.”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
+- **Pass A — lexical:** **arranged_or_pressured_marriage_negotiation — arranged or pressured marriage negotiation**
+  - Convergence across all four reps on marriage-formation vocabulary (marry, engaged, intend, arranged) anchors the arc in a proposal or betrothal scene. The main-couple filter confirms direct dyadic address (you/your, husband/wife), ruling out purely third-party gossip. KeyBERT's volitional hedges (willingly, decide, instincts) and MMR's coercion cluster (threats, faltered, chased, arranged) together shift the arc from a freely chosen proposal toward a pressured or arranged-marriage negotiation. POS's institutional vocabulary (concept, century, madam, value) suggests the scene is partly framed as a debate about marriage norms, consistent with a character resisting or interrogating the arrangement on principle. The divorce token in main lexicon adds a dissolution shadow, possibly referencing a prior marriage (POS: previous) that complicates the current negotiation. Coded as arranged_or_pressured_marriage_negotiation to honor both the interpersonal and structural conflict signals without overclaiming a purely coercive or purely romantic read.
 - **Pass B — contextual:** **UNKNOWN**
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 129 — Accused of Not Caring {#topic-h6-129}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> like they care when they see that smoking-hot bod you’ve got.”
-
-> at the moment, i could’ve cared less.
-
-> you’ve never cared for anyone but yourself.”
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · Taste Me — Tamara Hogan; tertile=begin; p=0.59**
->
-> Lukas didn’t care about her, and she… cared too much.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · Bounty of Love — Scotty Cade; tertile=middle; p=0.61**
->
-> Sir, I don’t think that’s—” “I don’t care what you think.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_003 · Bounty of Love — Scotty Cade; tertile=end; p=0.57**
->
-> I don’t care about that kind of stuff,” Zander assured him. “
-
-> **HIGH-rated (high topic share in this book; was CELL_A) · BOOK_004 · Katie's Hope — Lizzy Ford; tertile=begin; p=0.71**
->
-> I don’t expect you to understand what it is to care about someone else.”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-  - The narrative arc follows a typical romance pattern: the couple meets and cares for each other (B), faces conflicts and unhappy circumstances (M), and ultimately finds resolution and understanding (E). Keywords were grouped based on their frequency and part-of-speech tags.
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - Out of 19 sentences, 13 (68.42%) mention or relate to the main couple, making the main_couple_prob_estimate 0.68. The dominant code is CELL_D, which appears 7 times, indicating a focus on disinterest or lack of caring. However, most of these sentences (5 out of 7) are related to the main couple, showing a tension between disinterest and caring within the relationship.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-  - The topic of 'Conflict, Distance & Breakup Threats' is a high conflict-label topic that directly threatens the main couple's relationship. This is a clear sign of a falling arc, as it suggests potential distress and distance between the main couple.
-
----
-
-### Topic 210 — Expelled For Pursuing A Relationship {#topic-h6-210}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> she’ll be back,” [person] to explain.
-
-> we’ll not last long like this,” [person] said quietly.
-
-> if you pursue a relationship with [person], you’ll be expelled from motherhouse ireland, removed from your triad, and cast out from our way of life.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Cause For Scandal — Anna DePalo; tertile=begin; p=0.54**
->
-> And, she’d reasoned, if pop star Jessica Simpson could resist the delectable Nick Lachey until their wedding night, she could certainly resist John.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Cause For Scandal — Anna DePalo; tertile=end; p=0.49**
->
-> Besides, if there was one thing she’d come to know about Zeke, it was that he was able to make every audience member feel connected to him.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Cause For Scandal — Anna DePalo; tertile=end; p=0.48**
->
-> Patrick huffed, as though he couldn’t believe Zeke had the audacity to claim that he—the up-by-his-boot-straps, self-made founder of a publishing empire—had anything in common with a bad-boy rock star.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Cause For Scandal — Anna DePalo; tertile=middle; p=0.44**
->
-> As a waiter moved away with their plates, John said, “By the way, I saw that Scarlet was linked to Zeke Woodlow in today’s gossip columns.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · Cause For Scandal — Anna DePalo; tertile=end; p=0.40**
->
-> Unfortunately, a celebrity of Zeke’s caliber has an image to maintain and a publicity machine that needs to be fed—with the right kind of publicity, of course.” “
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_004 · Razor Sharp — Fern Michaels; tertile=begin; p=0.35**
->
-> The Hole was owned by a man named Peter Rabbit to the chagrin of his wife, Petra.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=begin; p=0.53**
->
-> Nathaniel was obviously willing to do such a thing.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=begin; p=0.51**
->
-> Some would think that when swimming in the depths of one’s own grief, one could forget what it was that made them so unhappy, but tell that to Nathaniel.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=middle; p=0.50**
->
-> Either way, there was something exhilarating about being with Nathaniel, especially being with him in his lair.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=middle; p=0.50**
->
-> For the life of him, Nathaniel didn’t know how Mr. Harrington was a part of his beauteous bride-to-be’s biological makeup.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=end; p=0.46**
->
-> The expression didn’t go unnoticed by Nathaniel.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · Disenchanted — C.K. Farrell; tertile=begin; p=0.42**
->
-> Nathaniel had come to understand and grudgingly accept that fact.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **END**
-  - Based on the main-couple filter, the main couple is present in 11 out of 19 sentences. The dominant arc code is 'END', present in 6 out of 19 sentences.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 256 — Refusing to Let It End {#topic-h6-256}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> no, i’ll get over it.
-
-> i’ll give you some time, but goddamn it, nat, this is not over.”
-
-> it’ll never be over—unless it ends right here right now.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_001 · The Haunting — Hope C. Tarr; tertile=begin; p=0.45**
->
-> I no longer cared which side won or lost, I only wanted it to be over.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · The Bride and the Buccaneer — Darlene Marshall; tertile=middle; p=0.48**
->
-> Perhaps when this is over, you might see another attractive alternative.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · The Bride and the Buccaneer — Darlene Marshall; tertile=end; p=0.44**
->
-> If there are consequences to our lovemaking, then this treasure hunt ends.
-
-> **LOW-rated (low topic share in this book; was CELL_D) · BOOK_002 · The Bride and the Buccaneer — Darlene Marshall; tertile=middle; p=0.43**
->
-> And here it’s been looming over us this entire time!”
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **end**
-  - The dominant ARC code is 'end', indicating that the main couple's narrative arc is primarily focused on resolution or conclusion. The main couple is present in 89.47% of the sentences, suggesting that the topic is indeed centered around the main couple's relationship.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
-
----
-
-### Topic 316 — Snapping Over Money and Control {#topic-h6-316}
-
-- **Old taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
-- **New category:** **ARC_2 — escalation conflict**
-- **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** False
-- **Main-couple prob:** 0.0 | non-couple: 0.0
-
-**Stage-08 snippets**
-
-> you’ll have to find another way to obtain the tallmadge money,” lucas snapped. “
-
-> stop that, you little fool, otherwise we’ll both be—’ lucas began, and then stopped as one of suzy’s flailing hands caught the side of his mouth.
-
-> they didn’t like it much when they found out, but lucas paid them well, and they’ll get over it.
-
-**Novel sentences** (HIGH-rated / LOW-rated from unblinded sampling cells)
-
-> **HIGH-rated (low topic share in this book; was CELL_C) · BOOK_001 · Heaven and Hell — Kristen Ashley; tertile=end; p=0.47**
->
-> Kia, head tipped way back, was looking at Sampson.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · For Love of an Angel — Rosalie Lario; tertile=middle; p=0.59**
->
-> Perhaps you should show Eva to her room,” Lucas finally suggested to Michael. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_002 · For Love of an Angel — Rosalie Lario; tertile=middle; p=0.49**
->
-> Unlike Ethan and Jason, who were dark-haired, Aaron and Lucas were more dirty-blonde.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · The Eyes Of Myrl — Faelyn Rose; tertile=end; p=0.64**
->
-> He watched Lucas Mason as he spoke and was rewarded by an expression of guilt upon his uncle’s face. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · The Eyes Of Myrl — Faelyn Rose; tertile=end; p=0.55**
->
-> You have brought this upon us,” Lucas Mason harshly accused his grief stricken nephew. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · The Eyes Of Myrl — Faelyn Rose; tertile=end; p=0.55**
->
-> Lucas Mason was not so wise, however, and questioned Rork angrily. “
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · The Eyes Of Myrl — Faelyn Rose; tertile=end; p=0.51**
->
-> The look upon Lucas Mason’s traitorous face mirrored the truth of Rork’s words.
-
-> **LOW-rated (high topic share in this book; was CELL_B) · BOOK_006 · The Eyes Of Myrl — Faelyn Rose; tertile=end; p=0.51**
->
-> But as Lucas continued his tirade, Rork reached out to touch his beloved father’s body , only to find it frozen.
-
-**Model reasonings (new taxonomy audits)**
-
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **C**
-  - The main couple (Lucas and Aaron) is present in 9 out of 18 sentences, with a higher concentration in the 'end' tertile (6 out of 9 sentences). The dominant ARC code is 'Consequence' (6 out of 18 sentences), indicating that the narrative is reaching its climax or resolution.
-- **Pass C — adjudication:** **ARC_2 — escalation conflict**
+- **Pass C — adjudication:** **UNKNOWN**
 
 ---

@@ -6,13 +6,13 @@ Run: `v4_l12_granular_final_call49` — 22 topics.
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `D0` | **off target** | — |
-| `D1` | **relational darkness** | — |
-| `D2` | **partner harm control** | — |
-| `D3` | **external danger crisis** | — |
-| `D4` | **individual distress** | — |
-| `D5` | **tenderness comfort** | — |
-| `D6` | **mixed or unclear** | — |
+| `D0` | **off target** | Not darkness or tenderness content. Generic plot, logistics, or unrelated affect. |
+| `D1` | **relational darkness** | Interpersonal / couple-level darkness (conflict, rupture, toxic dynamics). |
+| `D2` | **partner harm control** | Partner-directed harm, control, or coercion. |
+| `D3` | **external danger crisis** | External danger/crisis (storm, crime, accident) not partner-as-threat. |
+| `D4` | **individual distress** | Individual fear/anxiety/distress without clear relational harm frame. |
+| `D5` | **tenderness comfort** | Valid emotional comfort/affection/tenderness — not every caretaking topic. |
+| `D6` | **mixed or unclear** | Darkness and tenderness (or multiple D-codes) compete with no clear dominant. |
 
 ### Topic 64 — Confronting A Lifelong Fear {#topic-h5-64}
 
@@ -744,7 +744,7 @@ Run: `v4_l12_granular_final_call49` — 22 topics.
 - **Old taxonomy:** 7.3 — Risk, Danger & External Crises
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** True
+- **Mixed:** False
 
 **Stage-08 snippets**
 

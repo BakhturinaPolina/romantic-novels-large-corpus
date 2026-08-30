@@ -1,8 +1,12 @@
 # Frozen H2 HEA / final relational payoff prompts.
+#
+# v1.1: force codebook IDs (H2_0–H2_8|MIXED) via explicit JSON schemas — Sonnet v1.0
+# returned free-form HEA_* / invented H2_* tags that never mapped.
+# Code IDs are aligned to CODE_TO_RAX in analysis/constructs.py.
 
 hypothesis: H2
 name: hea_payoff
-version: "1.0"
+version: "1.1"
 frozen: true
 
 codes:
@@ -43,6 +47,16 @@ fields:
   - position
   - finality
 
+decision_rules: |
+  1. Confession, apology, forgiveness, or "I missed you" alone are NOT HEA → H2_1 (or H2_7).
+  2. Active repair without sealed closure → H2_2; mutual commitment without payoff → H2_3.
+  3. Lasting relational resolution / HEA closure → H2_4; wedding/public acknowledgement → H2_5.
+  4. Rings/proposals as symbols without full closure → H2_6.
+  5. Prefer MOST SPECIFIC code. Use H2_0 when off-target; H2_8 for non-main-couple resolution.
+  6. If two codes compete and neither reaches ~70% share on Pass B → MIXED.
+  7. Pass C must return hea_code as H2_0–H2_8 or MIXED — never HEA_CONFIRMED, invented
+     H2_* tags, or free-form prose.
+
 adjudication_actions:
   - KEEP
   - RENAME
@@ -57,40 +71,78 @@ pass_b_shows_position: true
 phrasing:
   primary:
     system: |
-      You audit romance topics for HEA / final relational payoff.
+      You are auditing BERTopic topics for a romance-novel research study.
+      Classify HEA / final relational payoff FUNCTION only.
       Confession, apology, forgiveness, or "I missed you" alone are NOT HEA.
-      Narrative position/tertile is visible because it is part of the construct; ratings stay hidden.
-      JSON only.
+      Narrative position/tertile may be visible; ratings stay hidden.
+
+      VALID CODES (use these IDs only — never free-form words):
+      H2_0 off_target | H2_1 generic_confession_apology | H2_2 repair |
+      H2_3 mutual_commitment | H2_4 final_relational_payoff | H2_5 public_union |
+      H2_6 commitment_symbols | H2_7 emotionally_intense_talk |
+      H2_8 non_main_couple_resolution | MIXED
+
+      CRITICAL:
+      - Every consensus_code / dominant_code / hea_code MUST be H2_0–H2_8 or MIXED.
+      - Never return HEA_CONFIRMED, HEA_PUBLIC_UNION, CELL_*, or invented tags like
+        H2_ILY_RECIPROCAL / H2_EROTIC_ADORNMENT as codes.
+      Respond with JSON only matching the schema.
     pass_a: |
-      Pass A lexical for topic {topic_id}.
+      Pass A — lexical only (prompt v1.1).
+      Assign one H2_# per keyword list (Main, KeyBERT, POS, MMR), then consensus.
+      Topic {topic_id}
       Main: {main}
       KeyBERT: {keybert}
       POS: {pos}
       MMR: {mmr}
-      Consensus H2 code + disagreements.
-      JSON: per_rep, consensus_code, disagreement, rationale.
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "H2_#", "KeyBERT": "H2_#", "POS": "H2_#", "MMR": "H2_#"}},
+      "consensus_code": "H2_#", "disagreement": bool,
+      "rationale": "cite cues that forced the H2_# code"}}
     pass_b: |
-      Pass B contextual (position visible; rating cells blinded).
+      Pass B — contextual sentences (position/tertile visible; rating cells blinded as CELL_*; prompt v1.1).
+      Code each sentence with the MOST SPECIFIC H2_# code. CELL_* are cell IDs only — never codes.
+      Estimate proportions; MIXED if no code >= 70%.
       Topic {topic_id}
+      Sentences:
       {sentences_block}
-      Code sentences with H2_*; estimate proportions; note position/finality patterns.
-      JSON: sentence_codes, proportions, dominant_code, main_couple, mutuality,
-      future_orientation, rupture_resolved, finality, rationale.
+      Return JSON: {{"topic_id": int, "sentence_codes": [{{"sid": "...", "code": "H2_#"}}],
+      "proportions": {{"H2_#": float}}, "dominant_code": "H2_#|MIXED",
+      "main_couple": true|false|null,
+      "mutuality": "full|partial|none|unclear",
+      "future_orientation": bool,
+      "rupture_resolved": bool|null,
+      "finality": "high|medium|low|unclear",
+      "rationale": "..."}}
     pass_c: |
-      Pass C adjudication for topic {topic_id}.
-      Lexical={lexical_consensus}; contextual={contextual_dominant}.
-      Taxonomy={taxonomy_id} {taxonomy_name}; secondary={secondary_id} {secondary_name}.
-      Action + hea_code. Ignore ratings.
+      Pass C — adjudication (prompt v1.1). Taxonomy metadata is revealed. Still ignore ratings.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Resolve to a single hea_code from H2_0–H2_8 or MIXED. Do not invent new labels.
+      If Pass A/B used free-form HEA_* words, map them onto the nearest H2_# now
+      (HEA_CONFIRMED→H2_4, wedding/public→H2_5, rings/tokens→H2_6, confession/apology→H2_1).
+      Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+      "hea_code": "H2_#|MIXED",
+      "proposed_constructs": ["..."],
+      "manual_review_required": bool,
+      "rationale": "..."}}
 
   alternate:
     system: |
-      HEA auditor: distinguish lasting relational resolution from intense relationship talk.
+      HEA auditor (prompt v1.1). Codes MUST be H2_0–H2_8 or MIXED only.
+      Distinguish lasting relational resolution from intense relationship talk.
       Position may inform finality; never use ratings. JSON only.
     pass_a: |
-      Keyword-only HEA coding for topic {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      Lexical pass v1.1 for topic {topic_id}. Assign one H2_# per representation, then consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code (H2_#), disagreement, rationale.
     pass_b: |
-      Sentence HEA coding for topic {topic_id} with tertiles shown and cells blinded:
+      Contextual pass v1.1 for topic {topic_id} with tertiles shown and cells blinded.
+      Most-specific H2_# codes; never use CELL_* as codes; MIXED if none >=70%.
       {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code (H2_#|MIXED), main_couple, mutuality,
+      future_orientation, rupture_resolved, finality, rationale.
     pass_c: |
-      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
-      tax={taxonomy_id}/{taxonomy_name}. Choose KEEP…EXCLUDE_FROM_HYPOTHESIS.
+      Adjudicate topic {topic_id} (v1.1): lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Action + hea_code (H2_#|MIXED) required.

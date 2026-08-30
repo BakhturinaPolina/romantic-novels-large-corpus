@@ -278,7 +278,7 @@ def _dry_run_pass(
     if hypothesis == "H1" and int(topic_id) in (1, 7) and pass_name.upper() in ("A", "B", "C"):
         code = "I3"
     if hypothesis == "H2" and int(topic_id) == 167:
-        code = "H2_4"
+        code = "H2_5"  # wedding / public union (prompt-aligned)
     if hypothesis == "H2" and int(topic_id) in (29, 62):
         code = "H2_1"
     if hypothesis == "H4" and int(topic_id) in (293, 315):
