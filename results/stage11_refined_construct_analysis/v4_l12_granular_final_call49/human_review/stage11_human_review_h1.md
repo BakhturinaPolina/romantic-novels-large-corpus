@@ -4060,7 +4060,7 @@ Run: `v4_l12_granular_final_call49` — 98 topics.
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
