@@ -1,50 +1,82 @@
 # Frozen H1 intimacy audit prompts (Pass A/B/C).
 # Alternate phrasing is meaning-equivalent for the stability pilot only.
+#
+# v1.2: anti-I3-collapse revision. I3 is reserved for actual affectionate contact.
+# Care/domestic/HEA talk/desire/gaze must NOT default to I3.
 
 hypothesis: H1
 name: intimacy
-version: "1.1"
+version: "1.2"
 frozen: true
 
 codes:
   - id: I0
     label: off_target
-    definition: Not about romantic intimacy, affection, sexual tension, or sexual contact.
+    definition: >-
+      Not about romantic intimacy as defined below. Includes domestic errands, meals,
+      animals, logistics, medical care, mentoring, generic plot talk, and non-romantic
+      help. Prefer I0 over stretching any intimacy code.
   - id: I1
     label: emotional_intimacy
-    definition: Disclosure, vulnerability, emotional closeness without physical contact focus.
+    definition: >-
+      Disclosure, vulnerability, shared secrets, emotional closeness WITHOUT physical
+      contact and WITHOUT reassurance-as-comfort as the main act.
   - id: I2
     label: reassurance
-    definition: Comforting, soothing, affirming the partner's worth or the bond.
+    definition: >-
+      Comforting, soothing, affirming safety/worth/the bond ("you'll be fine", "I won't
+      hurt you", fever checks, watch-while-sleeping caretalk). Not kissing/holding.
   - id: I3
     label: nonexplicit_affection
     definition: >-
-      Kissing, holding, caressing, or undressing-as-prelude. Affectionate contact that is
-      NOT genital/oral/penetrative sex. Kissing and clothes-removal alone are I3, never I6.
+      ONLY when the dominant content is affectionate physical contact that is NOT
+      genital/oral/penetrative: kissing, hugging, holding, caressing, undressing-as-prelude,
+      non-genital touch. Ban I3 if there is no such contact in keywords/sentences.
+      Kissing/clothes-removal alone are I3, never I6.
   - id: I4
     label: sexual_tension
-    definition: Desire / anticipation without consummation.
+    definition: >-
+      Desire, anticipation, charged looking/invitation WITHOUT consummation and WITHOUT
+      affectionate contact as the main act (eyes meeting, lip biting, longing, "want you").
   - id: I5
     label: erotic_escalation
-    definition: Building toward sex; heated but not yet full explicit act focus.
+    definition: >-
+      Building toward sex; heated undressing/touch progressing toward an explicit act,
+      but not yet full explicit-sex focus.
   - id: I6
     label: explicit_sex
     definition: >-
       Explicit sexual acts (genital contact, oral sex, penetration, orgasm-focused
       intercourse). Do NOT code kissing, undressing, or non-genital caressing as I6 —
-      those are I3. When I6 applies, also set explicit_act_type.
+      those are I3.
   - id: I7
     label: aftercare
-    definition: Post-sex tenderness, checking in, bonding after intimacy.
+    definition: Post-sex tenderness, checking in, bonding immediately after intimacy.
   - id: I8
     label: negotiation
-    definition: Consent talk, boundaries, preferences about intimacy.
+    definition: Consent talk, boundaries, stop-when-asked, preferences about intimacy/sex.
   - id: I9
     label: coercive_sexuality
     definition: Pressure, force, non-consent, or ambiguous consent around sex.
   - id: I10
     label: eroticized_gaze
-    definition: Objectifying / erotic looking without mutual intimacy focus.
+    definition: >-
+      Objectifying / erotic looking or appearance-focused desire without mutual intimacy
+      or affectionate contact (watching body, beauty compliments as erotic appraisal).
+
+decision_rules: |
+  1. Choose the MOST SPECIFIC applicable code. Never use I3 as a leftover/default.
+  2. I3 requires evidence of affectionate physical contact (kiss/hug/hold/caress/undress-prelude).
+     If that evidence is absent → I3 is forbidden.
+  3. Care, reassurance, safety talk, medical tending → I2 (or I0 if not romantic).
+  4. Domestic bonding (meals, movies, pets, errands) without intimacy content → I0.
+  5. Desire / charged invitation without contact → I4; erotic looking/appraisal → I10.
+  6. Consent/boundaries talk → I8; coercion → I9; post-sex tenderness → I7.
+  7. HEA confession / commitment / apology without intimate contact → I0 for H1
+     (those belong to H2, not intimacy).
+  8. If two codes compete and neither reaches ~70% share on Pass B → MIXED.
+  9. Pass C must not "fix" Pass B I0/I2/I4 into I3 unless new taxonomy evidence
+     clearly shows affectionate contact.
 
 adjudication_actions:
   - KEEP
@@ -60,55 +92,70 @@ phrasing:
   primary:
     system: |
       You are auditing BERTopic topics for a romance-novel research study.
-      Classify intimacy FUNCTION only. Do not invent plot. Do not use rating or taxonomy labels
-      (they are hidden). Prefer the most specific applicable code.
-      Critical boundary: kissing / undressing / non-genital caress = I3; only genital/oral/penetrative
-      sexual acts = I6. Respond with JSON only matching the schema.
+      Classify intimacy FUNCTION only. Do not invent plot. Do not use rating labels.
+
+      CRITICAL — anti-collapse rules:
+      - Prefer the MOST SPECIFIC code. I3 is NOT a default bucket.
+      - I3 ONLY if there is actual affectionate physical contact (kiss/hug/hold/caress/
+        undress-as-prelude). No such contact → I3 is forbidden.
+      - Reassurance/caretaking → I2; domestic/logistics/HEA talk → I0; desire without
+        contact → I4; erotic gaze → I10; consent talk → I8; coercion → I9; explicit sex → I6.
+      - Kissing/undressing/non-genital caress = I3; only genital/oral/penetrative = I6.
+      Respond with JSON only matching the schema.
     pass_a: |
-      Pass A — lexical only.
-      Interpret each keyword list independently (Main, KeyBERT, POS, MMR), then give a consensus code
-      and note disagreements.
+      Pass A — lexical only (prompt v1.2).
+      Interpret each keyword list independently (Main, KeyBERT, POS, MMR), then give a
+      consensus code. Apply anti-I3 rules: no affectionate-contact cues → do not use I3.
       Topic {topic_id}
       Main: {main}
       KeyBERT: {keybert}
       POS: {pos}
       MMR: {mmr}
       Return JSON: {{"topic_id": int, "per_rep": {{"Main": "I#", "KeyBERT": "I#", "POS": "I#", "MMR": "I#"}},
-      "consensus_code": "I#", "disagreement": bool, "rationale": "..."}}
+      "consensus_code": "I#", "disagreement": bool,
+      "i3_contact_evidence": bool,
+      "rationale": "cite which cues forced the code; if not I3 say why I3 was rejected"}}
     pass_b: |
-      Pass B — contextual sentences (rating cells are blinded as CELL_*).
-      Code each sentence, estimate code proportions, mark MIXED if no code >= 70%.
+      Pass B — contextual sentences (rating cells blinded as CELL_*; prompt v1.2).
+      Code each sentence with the MOST SPECIFIC I-code. I3 only if that sentence shows
+      affectionate physical contact. Estimate proportions; MIXED if no code >= 70%.
       Topic {topic_id}
       Sentences:
       {sentences_block}
       Return JSON: {{"topic_id": int, "sentence_codes": [{{"sid": "...", "code": "I#"}}],
-      "proportions": {{"I#": float}}, "dominant_code": "I#|MIXED", "explicit_act_type": null|string,
+      "proportions": {{"I#": float}}, "dominant_code": "I#|MIXED",
+      "i3_contact_evidence": bool,
+      "explicit_act_type": null|string,
       "rationale": "..."}}
     pass_c: |
-      Pass C — adjudication. Taxonomy metadata is now revealed. Still ignore rating effects.
+      Pass C — adjudication (prompt v1.2). Taxonomy metadata is revealed. Still ignore ratings.
       Lexical consensus: {lexical_consensus}
       Contextual dominant: {contextual_dominant}
       Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
-      Choose action and proposed construct labels.
-      Return JSON: {{"topic_id": int, "action": "KEEP|...", "intimacy_code": "I#|MIXED",
-      "proposed_constructs": ["..."], "manual_review_required": bool, "rationale": "..."}}
+      Do NOT collapse Pass B I0/I2/I4/I8/I10 into I3 unless taxonomy+evidence show affectionate contact.
+      If Pass B said I0 and evidence is domestic/care/HEA without contact, keep I0 or EXCLUDE_FROM_HYPOTHESIS.
+      Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+      "intimacy_code": "I#|MIXED",
+      "proposed_constructs": ["..."],
+      "i3_contact_evidence": bool,
+      "manual_review_required": bool,
+      "rationale": "..."}}
 
   alternate:
     system: |
-      Romance-corpus topic auditor. Your job is functional intimacy coding only.
-      Ignore popularity, ratings, and any desire to match the current taxonomy leaf.
-      Kissing and undressing are nonexplicit affection (I3), not explicit sex (I6).
-      JSON responses only.
+      Romance-corpus topic auditor for intimacy FUNCTION only (prompt v1.2).
+      Most-specific code wins. I3 requires affectionate contact evidence; otherwise forbidden.
+      Care→I2; domestic/HEA→I0; desire→I4; gaze→I10; consent→I8; coercion→I9; explicit→I6.
+      Kissing/undressing are I3, not I6. JSON only.
     pass_a: |
-      Lexical pass. Read four independent keyword representations for topic {topic_id}.
-      Assign one I-code per representation, then a single consensus.
-      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
-      JSON schema: per_rep, consensus_code, disagreement, rationale.
+      Lexical pass v1.2 for topic {topic_id}. Assign one I-code per representation, then consensus.
+      Reject I3 without contact cues. Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code, disagreement, i3_contact_evidence, rationale.
     pass_b: |
-      Contextual pass for topic {topic_id}. Sentences below carry blinded sampling cells.
-      Assign I-codes to sentences, report proportions, use MIXED when no code reaches 70%.
+      Contextual pass v1.2 for topic {topic_id}. Blinded cells. Most-specific I-codes;
+      I3 only with affectionate contact in the sentence; MIXED if none >=70%.
       {sentences_block}
     pass_c: |
-      Adjudicate topic {topic_id} given lexical={lexical_consensus}, contextual={contextual_dominant},
+      Adjudicate topic {topic_id} (v1.2): lexical={lexical_consensus}, contextual={contextual_dominant},
       taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
-      Pick KEEP/RENAME/REINTERPRET/RETAXONOMIZE/SPLIT/EXCLUDE_FROM_HYPOTHESIS. No rating reasoning.
+      Do not "rescue" off-target topics into I3. Action + intimacy_code + i3_contact_evidence.

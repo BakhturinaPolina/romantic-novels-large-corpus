@@ -1,0 +1,1132 @@
+{
+  "topic_id": 58,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "hands",
+        "your",
+        "leg",
+        "legs",
+        "knees",
+        "feet",
+        "foot",
+        "my",
+        "hand",
+        "knee"
+      ],
+      "KeyBERT": [
+        "ankle",
+        "ankles",
+        "ripping",
+        "instructions",
+        "braced",
+        "painful",
+        "holds",
+        "stumbled",
+        "hurts",
+        "struggled"
+      ],
+      "POS": [
+        "ankle",
+        "extent",
+        "activities",
+        "typical",
+        "instructions",
+        "concrete",
+        "reminder",
+        "president",
+        "combination",
+        "wider"
+      ],
+      "MMR": [
+        "ankle",
+        "permanently",
+        "extent",
+        "activities",
+        "hurts",
+        "ripping",
+        "instructions",
+        "concrete",
+        "reminder",
+        "sticking"
+      ]
+    },
+    "stage08_snippets": [
+      "if we can’t get you a flesh-and-bone arm back i promise we’ll get you a laser at least in our design.” “",
+      "i’ve been coping on my own for two months and it’ll be good to have another pair of hands.’ ‘",
+      "if you’d let go of my arm, we’ll gladly get the hell out of here.”"
+    ],
+    "label_public": "Coping With A Damaged Limb"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "So you might as well put up your hands.”",
+        "max_topic_prob": 0.718197226524353,
+        "normalized_position": 0.5978983772279862,
+        "tertile": "middle",
+        "chapter_index": 50,
+        "sentence_index": 113
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "What happened to your arm?” “",
+        "max_topic_prob": 0.5905739068984985,
+        "normalized_position": 0.789172652301144,
+        "tertile": "end",
+        "chapter_index": 62,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Ten fingers, ten toes, and a healthy set of lungs!”",
+        "max_topic_prob": 0.5287007093429565,
+        "normalized_position": 0.31072093641926046,
+        "tertile": "begin",
+        "chapter_index": 30,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "His knees might as well have been made of water as muscle and bone; If he tried to stand on his feet, like as not he’d pitch over in a swoon and get a mouthful of dirt for a bonus.",
+        "max_topic_prob": 0.4519564211368561,
+        "normalized_position": 0.8225591912742751,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I’ve only got one good arm, you know,” he said lamely.",
+        "max_topic_prob": 0.4352554678916931,
+        "normalized_position": 0.8729715349827082,
+        "tertile": "end",
+        "chapter_index": 66,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "One of the hands fished that poor gal out of the creek day before yesterday.",
+        "max_topic_prob": 0.4336657226085663,
+        "normalized_position": 0.8591380686352753,
+        "tertile": "end",
+        "chapter_index": 66,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Without warning, his hand slid up my leg.",
+        "max_topic_prob": 0.6327764987945557,
+        "normalized_position": 0.4630900395092535,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I, of course, just wanted to stretch my legs. “",
+        "max_topic_prob": 0.6242057085037231,
+        "normalized_position": 0.6702017051362029,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Your legs look pretty strong.”",
+        "max_topic_prob": 0.6220612525939941,
+        "normalized_position": 0.4223331253898939,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Once I was standing, the arms made their way to my hips and spun me around. “",
+        "max_topic_prob": 0.5781964659690857,
+        "normalized_position": 0.4944894988563111,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Suddenly long arms were stretched around my waist from behind me, lifting me up off of the ground.",
+        "max_topic_prob": 0.5670442581176758,
+        "normalized_position": 0.4942815554169266,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I extended my right leg by way of demonstration and shook it tentatively back and forth, an impromptu hokeypokey. “",
+        "max_topic_prob": 0.5576376914978027,
+        "normalized_position": 0.16947390309835725,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I can’t believe you two were able to keep your hands off one another.\"",
+        "max_topic_prob": 0.6261181831359863,
+        "normalized_position": 0.22264756730056803,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "My body has been in positions I didn’t know it could get in.\" \"",
+        "max_topic_prob": 0.57767254114151,
+        "normalized_position": 0.4715979254136824,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "It just slipped out of my hand.\"",
+        "max_topic_prob": 0.5747157335281372,
+        "normalized_position": 0.8924425784144233,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "God, that can’t be good for the boys legs when he does that.\"",
+        "max_topic_prob": 0.5241536498069763,
+        "normalized_position": 0.5012348728081008,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "No, I have an agreement with my body—I’ll never surprise it with unobtainable contortions.\"",
+        "max_topic_prob": 0.4968005120754242,
+        "normalized_position": 0.472585823660163,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Why do you pull away?",
+        "max_topic_prob": 0.4714950621128082,
+        "normalized_position": 0.420968140281551,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 466
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You've been standing for two months...how about moving those feet?”",
+        "max_topic_prob": 0.6123921871185303,
+        "normalized_position": 0.844499215774143,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "A pair of very talented hands at that.\"",
+        "max_topic_prob": 0.5661226511001587,
+        "normalized_position": 0.7194712077078198,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I have to cut the cord.",
+        "max_topic_prob": 0.3455210328102112,
+        "normalized_position": 0.11001568451714093,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I forced my hands into my lap. “",
+        "max_topic_prob": 0.6615346670150757,
+        "normalized_position": 0.8143336739162166,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "His hands slid up my legs to where they definitely shouldn’t be.",
+        "max_topic_prob": 0.6505399346351624,
+        "normalized_position": 0.6704130783827178,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "A hand grabbed my ankle and yanked me over the side.",
+        "max_topic_prob": 0.6388059854507446,
+        "normalized_position": 0.8773901620201431,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Hands came down from behind me and rested on my shoulders, holding me in place.",
+        "max_topic_prob": 0.6368359327316284,
+        "normalized_position": 0.7105532039118377,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "My fingers began slipping.",
+        "max_topic_prob": 0.6146410703659058,
+        "normalized_position": 0.8331630418916947,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It’s out of my hands.” “",
+        "max_topic_prob": 0.612756073474884,
+        "normalized_position": 0.9470150343015619,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "How am I supposed to focus when you’re holding my hands? “",
+        "max_topic_prob": 0.6004060506820679,
+        "normalized_position": 0.16966580976863754,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I believe we got off on the wrong foot this morning and I wanted to remedy that.”",
+        "max_topic_prob": 0.5014716982841492,
+        "normalized_position": 0.08876455466505369,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "It shows your arms, and classily hints at what’s underneath without being too revealing.",
+        "max_topic_prob": 0.4293597638607025,
+        "normalized_position": 0.223196733706336,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I tried to take it off, but when I touched it, my mom and brother who told me they had been kidnapped.",
+        "max_topic_prob": 0.4169442653656006,
+        "normalized_position": 0.3840919401179495,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Where are my manners?",
+        "max_topic_prob": 0.41346415877342224,
+        "normalized_position": 0.3868138515046121,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "It’s your side tapering out.",
+        "max_topic_prob": 0.3733115792274475,
+        "normalized_position": 0.5029487373355512,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Hold out your hands, wrists together.”",
+        "max_topic_prob": 0.7552823424339294,
+        "normalized_position": 0.5917095638038472,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 395
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Give me your legs.”",
+        "max_topic_prob": 0.7090479135513306,
+        "normalized_position": 0.7409916011920888,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Kindly remove your hands.",
+        "max_topic_prob": 0.6245478391647339,
+        "normalized_position": 0.5434841506366839,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "On your knees, bending over the settee.”",
+        "max_topic_prob": 0.6015743017196655,
+        "normalized_position": 0.8626388512598212,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Get on your knees,” he said sternly.",
+        "max_topic_prob": 0.5963946580886841,
+        "normalized_position": 0.8618260633974533,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Well, I still have my hand.",
+        "max_topic_prob": 0.5949550867080688,
+        "normalized_position": 0.2573828230831753,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Sorry baby but I need your hands out of the way.”",
+        "max_topic_prob": 0.6894869804382324,
+        "normalized_position": 0.6962599168870419,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Then you have to open your legs.” “",
+        "max_topic_prob": 0.6568588018417358,
+        "normalized_position": 0.4055534567434832,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Get on your hands and knees, sweetness.” “",
+        "max_topic_prob": 0.6535696387290955,
+        "normalized_position": 0.4115980355119003,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Picking up my hand he placed them on my upturned palm. “",
+        "max_topic_prob": 0.652503252029419,
+        "normalized_position": 0.6035134114091424,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Wordlessly he released my limbs and rubbed each wrist before repeating the process with my ankles.",
+        "max_topic_prob": 0.6506261825561523,
+        "normalized_position": 0.2650170003777862,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I flung my arms out to my side but had kept my legs together.",
+        "max_topic_prob": 0.6477322578430176,
+        "normalized_position": 0.40460899131091804,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I have no chains binding me anymore.",
+        "max_topic_prob": 0.4133000373840332,
+        "normalized_position": 0.28191072826938135,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "My hands went to my hips. “",
+        "max_topic_prob": 0.6954079866409302,
+        "normalized_position": 0.2971709422200911,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "My hand is available for holding.",
+        "max_topic_prob": 0.6737056970596313,
+        "normalized_position": 0.7077439462958524,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I set that ball into your palms.” “",
+        "max_topic_prob": 0.6479457020759583,
+        "normalized_position": 0.08091584751858068,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Wrap your legs around me.”",
+        "max_topic_prob": 0.6439496278762817,
+        "normalized_position": 0.3700551426516423,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 372
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "My hands flew to my mouth. “",
+        "max_topic_prob": 0.6415714621543884,
+        "normalized_position": 0.6874850155837928,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I slipped off his second shoe and rested my hands on his knees.",
+        "max_topic_prob": 0.6339867115020752,
+        "normalized_position": 0.628626228722129,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Keep your hands up.”",
+        "max_topic_prob": 0.7501039505004883,
+        "normalized_position": 0.9106348564496562,
+        "tertile": "end",
+        "chapter_index": 58,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I put my hands on my hips. “",
+        "max_topic_prob": 0.7025638222694397,
+        "normalized_position": 0.2334546434829492,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "A hand clamps down on my shoulder. “",
+        "max_topic_prob": 0.7020543813705444,
+        "normalized_position": 0.027496967246259604,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I hold up my hands. “",
+        "max_topic_prob": 0.6850388646125793,
+        "normalized_position": 0.6525138158781507,
+        "tertile": "middle",
+        "chapter_index": 42,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I hold up my hands. “",
+        "max_topic_prob": 0.6850388050079346,
+        "normalized_position": 0.6960506806847284,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "The other hand is squarely on my hip, holding me in place. “",
+        "max_topic_prob": 0.6805359125137329,
+        "normalized_position": 0.7587275913195849,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Give me your wrists.”",
+        "max_topic_prob": 0.7127313613891602,
+        "normalized_position": 0.02642189242515227,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Strong but tender hands parted my legs.",
+        "max_topic_prob": 0.6892823576927185,
+        "normalized_position": 0.7680363729947671,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I held out my wrists to Oses. “",
+        "max_topic_prob": 0.6817370653152466,
+        "normalized_position": 0.055159989705756196,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 643
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "His hands went to the backs of my knees to lend his support. “",
+        "max_topic_prob": 0.673471212387085,
+        "normalized_position": 0.6468216522261302,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I had hooked my knees over my hands, holding them bent up and out.",
+        "max_topic_prob": 0.6673853397369385,
+        "normalized_position": 0.7063566955477396,
+        "tertile": "end",
+        "chapter_index": 5,
+        "sentence_index": 864
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I can’t feel my legs.”",
+        "max_topic_prob": 0.6537654399871826,
+        "normalized_position": 0.8944840010294244,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Hands.”",
+        "max_topic_prob": 0.6461533308029175,
+        "normalized_position": 0.18505734328025833,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Need a hand?”",
+        "max_topic_prob": 0.6265289783477783,
+        "normalized_position": 0.9890880748246298,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Take my boots off .” “",
+        "max_topic_prob": 0.5645378232002258,
+        "normalized_position": 0.31544371450840664,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m more of a hands-on type of guy .” “",
+        "max_topic_prob": 0.5515298247337341,
+        "normalized_position": 0.2542033181160227,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’m hiring a manservant to rub my feet.",
+        "max_topic_prob": 0.5364980697631836,
+        "normalized_position": 0.3769068032513083,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "And on the right feet even .”",
+        "max_topic_prob": 0.5257930755615234,
+        "normalized_position": 0.06780982073265783,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Watch my feet.",
+        "max_topic_prob": 0.5863810777664185,
+        "normalized_position": 0.6221919673247107,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s something like a change of hands behind the back, where I turn, and you stay where you are.”",
+        "max_topic_prob": 0.5108386278152466,
+        "normalized_position": 0.62809167233946,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I have no bearings.”",
+        "max_topic_prob": 0.4924054741859436,
+        "normalized_position": 0.42818243703199454,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You’ll be in good hands with Dr. Walker.",
+        "max_topic_prob": 0.4788270592689514,
+        "normalized_position": 0.20739732244157022,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I linked my arm though Bev’s. “",
+        "max_topic_prob": 0.4488578140735626,
+        "normalized_position": 0.04016337644656229,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I believe that’s why Wes handled me with kid gloves during the first year.",
+        "max_topic_prob": 0.40417253971099854,
+        "normalized_position": 0.02541411390968913,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Legs spread and arms above your head.”",
+        "max_topic_prob": 0.6399587392807007,
+        "normalized_position": 0.5402342274272761,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Let me have you up on your knees in the middle.",
+        "max_topic_prob": 0.6354085206985474,
+        "normalized_position": 0.5398564412542501,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "It wants to be where my hand is.",
+        "max_topic_prob": 0.63138747215271,
+        "normalized_position": 0.8983755194559879,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "You can pull your arms free if you want, my love.",
+        "max_topic_prob": 0.616943895816803,
+        "normalized_position": 0.8084624102757839,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I flex my right hand again, thinking about the ache there.",
+        "max_topic_prob": 0.5898891687393188,
+        "normalized_position": 0.47147714393653195,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I like his hands on me.",
+        "max_topic_prob": 0.5873520970344543,
+        "normalized_position": 0.713638080846241,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "My feet are killing me already from the rocks I’ve kicked.”",
+        "max_topic_prob": 0.5873901844024658,
+        "normalized_position": 0.8445468509984639,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "The nurse said they should be able to set your fingers tonight… or, I guess, this morning now.",
+        "max_topic_prob": 0.4646014869213104,
+        "normalized_position": 0.8777265745007681,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "Pull up your bootstraps, boy.",
+        "max_topic_prob": 0.4222404956817627,
+        "normalized_position": 0.8998463901689708,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "sentence": "Right shoulder.",
+        "max_topic_prob": 0.37340137362480164,
+        "normalized_position": 0.8640552995391705,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 59
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.016151441472733587,
+        "n_sentences": 186
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.00805978898007034,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.01014354066985646,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.006411807403822889,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0056568196103079825,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.015108207431604737,
+        "n_sentences": 111
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.00545404963185165,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.01141552511415525,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0003937007874015748,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0013436345314074571,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.001597444089456869,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0012129380053908356,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0006759801712483101,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0009125475285171103,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0006173792251890724,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0009919404835709857,
+        "n_sentences": 8
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 86
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.2",
+    "taxonomy_main_name": "Pain, Injury & Physical Vulnerability",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

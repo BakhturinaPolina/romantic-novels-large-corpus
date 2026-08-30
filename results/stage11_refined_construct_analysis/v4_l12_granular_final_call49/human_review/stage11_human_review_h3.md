@@ -883,7 +883,7 @@ Run: `v4_l12_granular_final_call49` — 80 topics.
 
 - **Old taxonomy:** 2.3 — Explicit Sexual Acts
 - **New category:** **S5 — practical care everyday**
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -3167,7 +3167,7 @@ Run: `v4_l12_granular_final_call49` — 80 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **UNKNOWN**
 - **Normalised category:** —
-- **Mixed:** False
+- **Mixed:** True
 
 **Stage-08 snippets**
 

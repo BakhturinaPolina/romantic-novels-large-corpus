@@ -34,6 +34,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--hypotheses", default="H5,H6")
+    parser.add_argument(
+        "--model",
+        default="",
+        help="OpenRouter model id override (default: configs/stage11 llm.primary_model)",
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -53,6 +58,7 @@ def main(argv: list[str] | None = None) -> int:
             dry_run=args.dry_run,
             resume=not args.no_resume,
             limit=args.limit,
+            model=(args.model.strip() or None),
         )
         LOGGER.info(
             "%s done newly=%d total=%d dry_run=%s",

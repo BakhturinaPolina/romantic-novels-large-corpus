@@ -1,0 +1,1182 @@
+{
+  "topic_id": 100,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "find",
+        "meet",
+        "needs",
+        "ll",
+        "see",
+        "leave",
+        "where",
+        "her",
+        "can",
+        "here"
+      ],
+      "KeyBERT": [
+        "lingering",
+        "sir",
+        "thinks",
+        "replaced",
+        "mister",
+        "hiding",
+        "ok",
+        "urgency",
+        "dismissed",
+        "uh"
+      ],
+      "POS": [
+        "urgency",
+        "excited",
+        "screen",
+        "decision",
+        "sir"
+      ],
+      "MMR": [
+        "mister",
+        "urgency",
+        "dismissed",
+        "dealing",
+        "lingering",
+        "replaced",
+        "repeated",
+        "planning",
+        "screen",
+        "expect"
+      ]
+    },
+    "stage08_snippets": [
+      "i promise, i’ll bring her right back.”",
+      "i’ll hurry and see if i can catch her.”",
+      "i’ll look until she’s found.”"
+    ],
+    "label_public": "Promising to Find Her"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She’s out here.”",
+        "max_topic_prob": 0.781627893447876,
+        "normalized_position": 0.278197291142275,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I’ll find her, sir.” “",
+        "max_topic_prob": 0.762410044670105,
+        "normalized_position": 0.2055615486036198,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "We have to find her.",
+        "max_topic_prob": 0.7517237663269043,
+        "normalized_position": 0.4627831715210356,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I can’t just leave her out there.”",
+        "max_topic_prob": 0.7451094388961792,
+        "normalized_position": 0.25530384753685725,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I can’t wait to see her.”",
+        "max_topic_prob": 0.7229869365692139,
+        "normalized_position": 0.8849334771664868,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "What are you doing to find her?” “",
+        "max_topic_prob": 0.7220482230186462,
+        "normalized_position": 0.34460026369411484,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I found her.”",
+        "max_topic_prob": 0.7776944637298584,
+        "normalized_position": 0.9972429255286918,
+        "tertile": "end",
+        "chapter_index": 80,
+        "sentence_index": 555
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She’s right here.”",
+        "max_topic_prob": 0.7526489496231079,
+        "normalized_position": 0.7398957765254802,
+        "tertile": "end",
+        "chapter_index": 65,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "She won’t be able to leave, to rest, to pass over, whatever it is, until we find her.” “",
+        "max_topic_prob": 0.7485860586166382,
+        "normalized_position": 0.9867902805550506,
+        "tertile": "end",
+        "chapter_index": 80,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’m showing her around.” “",
+        "max_topic_prob": 0.7428485751152039,
+        "normalized_position": 0.027207174453129732,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’ll go get her.” “",
+        "max_topic_prob": 0.7384554743766785,
+        "normalized_position": 0.8409683087923407,
+        "tertile": "end",
+        "chapter_index": 71,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Here, let me have her.”",
+        "max_topic_prob": 0.7372143864631653,
+        "normalized_position": 0.5611706962370479,
+        "tertile": "middle",
+        "chapter_index": 47,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "She won’t even know we were here.",
+        "max_topic_prob": 0.6492923498153687,
+        "normalized_position": 0.894208281744394,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 808
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "When we leave here, the woman will be coming with us.”",
+        "max_topic_prob": 0.636489748954773,
+        "normalized_position": 0.9001238134543954,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 851
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Well, not unless you want her to, that is.”",
+        "max_topic_prob": 0.6343871355056763,
+        "normalized_position": 0.004814967670931352,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "I will keep nothing from her.”",
+        "max_topic_prob": 0.6214307546615601,
+        "normalized_position": 0.9675333608474344,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1341
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "She’s been in and out of consciousness since you guys left.”",
+        "max_topic_prob": 0.6146435737609863,
+        "normalized_position": 0.8902187371027651,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 779
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "All right, she’s in your hands.",
+        "max_topic_prob": 0.6125164031982422,
+        "normalized_position": 0.82184619617554,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 282
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Why in hell would I want to see her?”",
+        "max_topic_prob": 0.6572794914245605,
+        "normalized_position": 0.019940528249081685,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She’s a good receptionist and I don’t want to lose her.” “",
+        "max_topic_prob": 0.6449819803237915,
+        "normalized_position": 0.059121917089382546,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Natalie, you need to find someone like that for you.”",
+        "max_topic_prob": 0.6320567727088928,
+        "normalized_position": 0.943939128913766,
+        "tertile": "end",
+        "chapter_index": 109,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I will stay with her for as long as you need me.” “",
+        "max_topic_prob": 0.6310051083564758,
+        "normalized_position": 0.2833654014343187,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "While she’s getting ready, I will take you to get your things and then bring you back here before I leave.”",
+        "max_topic_prob": 0.6156349182128906,
+        "normalized_position": 0.28546440440790627,
+        "tertile": "begin",
+        "chapter_index": 27,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "She’s gone now, Marshall.” “",
+        "max_topic_prob": 0.6055260896682739,
+        "normalized_position": 0.5093580549239112,
+        "tertile": "middle",
+        "chapter_index": 46,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Maybe I'll tell her I'm sorry when we find her. '",
+        "max_topic_prob": 0.7319519519805908,
+        "normalized_position": 0.8934294871794872,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You mean if we find her!'",
+        "max_topic_prob": 0.6892219185829163,
+        "normalized_position": 0.8936298076923077,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She's always been there for me.",
+        "max_topic_prob": 0.642171323299408,
+        "normalized_position": 0.7229567307692307,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "She's right there.",
+        "max_topic_prob": 0.6288717985153198,
+        "normalized_position": 0.6590544871794872,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I must make some sort of noise because she hears I am still here.",
+        "max_topic_prob": 0.6135749816894531,
+        "normalized_position": 0.3840144230769231,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Her fate is now in my hands!",
+        "max_topic_prob": 0.6061872243881226,
+        "normalized_position": 0.3323317307692308,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "You’ll see, we’ll find her for you, for both of us.”",
+        "max_topic_prob": 0.7520009279251099,
+        "normalized_position": 0.28884111784248584,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I have to find her, get to her.",
+        "max_topic_prob": 0.728178858757019,
+        "normalized_position": 0.6632792651944499,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I have to find her, Sara.” “",
+        "max_topic_prob": 0.7089400887489319,
+        "normalized_position": 0.2907953879226109,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I want to find her, meet her as soon as possible.",
+        "max_topic_prob": 0.7036280035972595,
+        "normalized_position": 0.2818057455540356,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I don’t wanna sees her no more.”",
+        "max_topic_prob": 0.7018914222717285,
+        "normalized_position": 0.9851475473910495,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She’ll need to go.”",
+        "max_topic_prob": 0.6989575624465942,
+        "normalized_position": 0.3089700996677741,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "That’s why we’re here with you asking where she is.”",
+        "max_topic_prob": 0.7400265336036682,
+        "normalized_position": 0.8123500666370502,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 552
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "She’s not going to be there.” “",
+        "max_topic_prob": 0.7099615335464478,
+        "normalized_position": 0.006663705019991115,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "She’s helping me move.” “",
+        "max_topic_prob": 0.7094382047653198,
+        "normalized_position": 0.9830297645490893,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 628
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "This is kind of my way of having her here with me, even though I know she can’t be.”",
+        "max_topic_prob": 0.7023220062255859,
+        "normalized_position": 0.614749000444247,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 736
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "She’s staying here until further notice.”",
+        "max_topic_prob": 0.686870813369751,
+        "normalized_position": 0.9430475344291426,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "I have to save her, but where is she? “",
+        "max_topic_prob": 0.6698922514915466,
+        "normalized_position": 0.44175921812527763,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Come, I’ll take you to her.” “",
+        "max_topic_prob": 0.7337372899055481,
+        "normalized_position": 0.6060606060606061,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I believe she’ll be pleasantly surprised to see you.” “",
+        "max_topic_prob": 0.6596806049346924,
+        "normalized_position": 0.6046511627906976,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I warned you about pursuing this woman.",
+        "max_topic_prob": 0.5190466642379761,
+        "normalized_position": 0.9154334038054969,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "That’s my girl.”",
+        "max_topic_prob": 0.5069493651390076,
+        "normalized_position": 0.9369274136715997,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Can she… will she find him…?",
+        "max_topic_prob": 0.48333168029785156,
+        "normalized_position": 0.9996476391825229,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’ll find her.\" \"",
+        "max_topic_prob": 0.7790433764457703,
+        "normalized_position": 0.836942821129827,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 544
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I need to find her.\" \"",
+        "max_topic_prob": 0.7459664344787598,
+        "normalized_position": 0.029907184599518737,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "It's been a long time but I know she’ll see me.\" \"",
+        "max_topic_prob": 0.7109819650650024,
+        "normalized_position": 0.031855162140483555,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "They’ll probably come and see her.\"",
+        "max_topic_prob": 0.695870578289032,
+        "normalized_position": 0.05419961040449181,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 453
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "So that’s why you’re letting her stay here?\" \"",
+        "max_topic_prob": 0.6933434009552002,
+        "normalized_position": 0.18540162713418126,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 661
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’ve lost her.\"",
+        "max_topic_prob": 0.6930249929428101,
+        "normalized_position": 0.8362552996447805,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 538
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I’ll try to reach her later.” “",
+        "max_topic_prob": 0.7308276891708374,
+        "normalized_position": 0.8481987216734457,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She’s not here,” he said. “",
+        "max_topic_prob": 0.6891547441482544,
+        "normalized_position": 0.9298373038930854,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 640
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She’s gone and in the past.",
+        "max_topic_prob": 0.6683118939399719,
+        "normalized_position": 0.8941022661243463,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I expect you to keep her that way.” “",
+        "max_topic_prob": 0.6534280180931091,
+        "normalized_position": 0.9524985473561882,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She’s being a bit stubborn but she’ll be there.",
+        "max_topic_prob": 0.6481338143348694,
+        "normalized_position": 0.9305636257989541,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 645
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She would be the only one there to truly know how far I’d come.",
+        "max_topic_prob": 0.5915431976318359,
+        "normalized_position": 0.9093550261475886,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 499
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Have your subs face away from you,” she said.",
+        "max_topic_prob": 0.4547199010848999,
+        "normalized_position": 0.2706243602865916,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "But she’s got a few I’ve never been able to work out on my own.",
+        "max_topic_prob": 0.41626331210136414,
+        "normalized_position": 0.2640736949846469,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 417
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Instead of ordering her around like the big, strong man who always knows what’s best for his woman, why don’t you just try asking her to leave with you, because you want to start a life together someplace that’s safe for you both?”",
+        "max_topic_prob": 0.5794439315795898,
+        "normalized_position": 0.9810181190681622,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Either you want to be with her, or you don’t.",
+        "max_topic_prob": 0.5654048323631287,
+        "normalized_position": 0.9785865558082987,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Julie will be here to look after you.",
+        "max_topic_prob": 0.5653164386749268,
+        "normalized_position": 0.9206996627186446,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I think she’s ready to fly over here and tear Iraq apart to find her baby.”",
+        "max_topic_prob": 0.5644687414169312,
+        "normalized_position": 0.9056396580123931,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "If you’re that worried about how safe things are in Rwanda, just go get her and bring her home with you, for good.”",
+        "max_topic_prob": 0.49058297276496887,
+        "normalized_position": 0.9756843674013648,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She either loves you, and wants to be with you, or she doesn’t.",
+        "max_topic_prob": 0.4640999138355255,
+        "normalized_position": 0.9786649933328104,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We’ll find her.” “",
+        "max_topic_prob": 0.7913403511047363,
+        "normalized_position": 0.7987734128957401,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 516
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We’ll find her and bring her home.”",
+        "max_topic_prob": 0.7833144664764404,
+        "normalized_position": 0.739433117851815,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "She stays with me.” “",
+        "max_topic_prob": 0.709679901599884,
+        "normalized_position": 0.27100944803580307,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "She stays with me.” “",
+        "max_topic_prob": 0.7096797823905945,
+        "normalized_position": 0.27183822310624894,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "We’ll find her.",
+        "max_topic_prob": 0.7092760801315308,
+        "normalized_position": 0.7155643958229736,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Why do you want to see her?”",
+        "max_topic_prob": 0.7059640884399414,
+        "normalized_position": 0.0828775070445881,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "If we get you out, you’ll go right back to her, won’t you?”",
+        "max_topic_prob": 0.7032792568206787,
+        "normalized_position": 0.9297802850356295,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 714
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She can’t get to us.",
+        "max_topic_prob": 0.6880185008049011,
+        "normalized_position": 0.7229809976247031,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1367
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She’s here.",
+        "max_topic_prob": 0.672988772392273,
+        "normalized_position": 0.08966745843230403,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 604
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "When it’s just me and her she doesn’t go look ing for you.”",
+        "max_topic_prob": 0.6640746593475342,
+        "normalized_position": 0.8025534441805225,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1903
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I ask her in suspicion.",
+        "max_topic_prob": 0.6319727301597595,
+        "normalized_position": 0.5004453681710214,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2125
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I ask her.",
+        "max_topic_prob": 0.6283729076385498,
+        "normalized_position": 0.8153206650831354,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 1989
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Let’s go with her.”",
+        "max_topic_prob": 0.672497034072876,
+        "normalized_position": 0.9689667761956918,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "But I can’t stick around and reassure her.",
+        "max_topic_prob": 0.5941630601882935,
+        "normalized_position": 0.020993063161737862,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Instead, I point to right where she’s standing and say, “Wait here.",
+        "max_topic_prob": 0.5629370212554932,
+        "normalized_position": 0.9815626140927346,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "She’ll be great, in fact.",
+        "max_topic_prob": 0.5352405309677124,
+        "normalized_position": 0.9700620664476086,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "She’s a woman.” “",
+        "max_topic_prob": 0.5083261132240295,
+        "normalized_position": 0.9839357429718876,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Yeah, I know she does.",
+        "max_topic_prob": 0.5063363313674927,
+        "normalized_position": 0.4090909090909091,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I want her with me tonight.",
+        "max_topic_prob": 0.6935677528381348,
+        "normalized_position": 0.2317911847452329,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I need to talk to her.”",
+        "max_topic_prob": 0.6759907007217407,
+        "normalized_position": 0.10847139731165989,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "It’s been empty without her beside me.",
+        "max_topic_prob": 0.6694105863571167,
+        "normalized_position": 0.9180994060643951,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I want her.",
+        "max_topic_prob": 0.6690436005592346,
+        "normalized_position": 0.10284463894967177,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I’m torn that she’s not here right now.",
+        "max_topic_prob": 0.66520094871521,
+        "normalized_position": 0.7008440137542982,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I make my way back over to her. “",
+        "max_topic_prob": 0.662376344203949,
+        "normalized_position": 0.9262269459206002,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 54
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.01823671497584541,
+        "n_sentences": 151
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.01818181818181818,
+        "n_sentences": 122
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.023360816647035727,
+        "n_sentences": 119
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.01457172595359089,
+        "n_sentences": 476
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.014152850788515973,
+        "n_sentences": 70
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.013808018632507071,
+        "n_sentences": 83
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.02672115686890915,
+        "n_sentences": 170
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.009108728237057535,
+        "n_sentences": 79
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0031816295476552775,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0017686593562079944,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.000550487574709028,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0029205607476635513,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0020157595748579804,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0013183336262963614,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0034056282487901057,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.00041425020712510354,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 91
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

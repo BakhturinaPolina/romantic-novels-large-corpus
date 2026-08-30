@@ -95,31 +95,32 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":"S5",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.3",
     "current_taxonomy_name":"Explicit Sexual Acts",
     "secondary_id":"2.2",
     "secondary_name":"Kissing & Non-Explicit Affection",
     "proposed_constructs":[
-      "I3",
+      "Explicit Sexual Acts (I6): genital\/oral\/penetrative contact language",
+      "Kissing & Non-Explicit Affection (I3): kissing, undressing-as-prelude, non-genital caress",
       "S5"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET",
+      "H1:SPLIT",
       "H3:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":2,
@@ -379,7 +380,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I4",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S5",
     "care_protection_code":"H4_1",
@@ -387,15 +388,15 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "H4_1",
-      "I4"
+      "Emotional Safety, Reassurance & Caretaking",
+      "H4_1"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -460,29 +461,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.3",
     "current_taxonomy_name":"Explicit Sexual Acts",
     "secondary_id":"2.1",
     "secondary_name":"Attraction & Sexual Tension",
     "proposed_constructs":[
-      "I3"
+      "Affectionate Physical Contact (I3)",
+      "Explicit Sexual Acts (I6)"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":9,
@@ -621,7 +623,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I10",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -636,8 +638,10 @@
     "secondary_id":"1.7",
     "secondary_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "proposed_constructs":[
-      "Facial Expression",
-      "Non-Sexual Nonverbal Cues"
+      "attraction signaling",
+      "erotic gaze",
+      "non-verbal sexual tension",
+      "visual desire"
     ],
     "adjudication_actions":[
       "H1:KEEP"
@@ -1081,15 +1085,15 @@
     "secondary_id":"2.3",
     "secondary_name":"Explicit Sexual Acts",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "affectionate physical contact",
+      "kiss\/embrace as intimacy marker",
+      "non-genital caress or undressing as prelude"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.7692307692,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -1314,7 +1318,7 @@
     "main_couple_prob":0.85,
     "non_couple_prob":0.1,
     "unclear_prob":0.05,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -1322,21 +1326,23 @@
     "arc_role":"ANTAGONIST",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-      "Conflict",
-      "Distance"
+      "Breakup Threats",
+      "Conflict & Distance",
+      "HEA Resolution",
+      "Reconciliation & Commitment"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -1393,7 +1399,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -1401,22 +1407,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"2.3",
     "secondary_name":"Explicit Sexual Acts",
     "proposed_constructs":[
-      "kissing",
-      "non-genital caress",
-      "undressing"
+      "HEA\/relationship maintenance talk",
+      "domestic\/logistical interaction",
+      "non-contact relational exchange"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.6,
     "manual_review_required":false
   },
   {
@@ -1631,7 +1637,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I1",
     "hea_code":"H2_1",
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -1639,19 +1645,20 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H2",
+    "lexical_context_agreement":"H2",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.1",
     "secondary_name":"Positive Resolution, Relief & Emotional Payoff",
     "proposed_constructs":[
-      "Emotional Connection",
+      "Commitment declarations and HEA closure",
       "H2_1",
-      "Romantic Gestures"
+      "Positive emotional payoff and relief",
+      "Reconciliation and emotional resolution"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H2:KEEP"
     ],
     "strict_weight":1.0,
@@ -1754,7 +1761,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"PROTECTION",
@@ -1769,8 +1776,9 @@
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Caretaking & Nurturing",
+      "Emotional Safety & Reassurance",
+      "Family\/Kinship Bonds",
       "{'name': 'Buffering', 'description': 'Acting as a shield or barrier against external threats.'}",
       "{'name': 'Monitoring', 'description': 'Keeping watch for potential dangers and responding appropriately.'}",
       "{'name': 'Support in crisis', 'description': 'Offering assistance and reassurance during challenging times.'}"
@@ -2005,7 +2013,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -2020,8 +2028,7 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Affection",
-      "Emotional Intimacy",
+      "Emotional Safety, Reassurance & Caretaking",
       "{'name': 'External Protection', 'description': 'Acts taken to safeguard a partner from external threats or harm.'}"
     ],
     "adjudication_actions":[
@@ -2086,7 +2093,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":null,
+    "intimacy_code":"I1",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -2094,20 +2101,23 @@
     "arc_role":"Obstacle",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "Courtship complicated by undisclosed knowledge",
+      "Misunderstanding and its relational consequences",
+      "Revelation of concealed truths",
+      "Secret-keeping and hidden information dynamics"
     ],
     "adjudication_actions":[
-
+      "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -2160,7 +2170,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -2175,14 +2185,15 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-      "Caressing",
-      "Kissing"
+      "Emotional reassurance and caretaking",
+      "Ongoing courtship bonding",
+      "Relational distress and support-seeking"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.9473684211,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -2281,30 +2292,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.3",
     "current_taxonomy_name":"Explicit Sexual Acts",
     "secondary_id":"2.1",
     "secondary_name":"Attraction & Sexual Tension",
     "proposed_constructs":[
-      "Physical Affection",
-      "Romantic Interludes"
+      "Attraction & Sexual Tension (I4): tokens\/documents anchored in desire, gaze, anticipation without consummated contact",
+      "Explicit Sexual Acts (I6): tokens\/documents anchored in genital\/oral\/penetrative content"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:SPLIT"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.9090909091,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":42,
@@ -2511,7 +2522,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -2519,15 +2530,16 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-      "Emotional Safety",
-      "Reassurance",
+      "Caretaking Speech Acts",
+      "Emotional Safety & Reassurance",
+      "Promise & Future-Tense Commitment",
       "external_threat",
       "protection_means"
     ],
@@ -2536,7 +2548,7 @@
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -2593,7 +2605,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"PROTECT",
@@ -2608,8 +2620,9 @@
     "secondary_id":"4.3",
     "secondary_name":"Secrets, Misunderstandings & Hidden Information",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Physical Affection",
+      "Caretaking & Comfort",
+      "Emotional Safety & Reassurance",
+      "Secrets, Misunderstandings & Hidden Information (secondary)",
       "{'name': 'Buffering', 'description': 'Acting as a shield or barrier against external threats.'}",
       "{'name': 'Guard Duty', 'description': 'Monitoring and controlling access to the relationship.'}",
       "{'name': 'Safe Haven', 'description': 'Providing a secure and comforting environment within the relationship.'}"
@@ -2619,7 +2632,7 @@
       "H4:External Protection"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -2920,29 +2933,29 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H1,H3",
-    "lexical_context_agreement":"",
+    "mixed_hypotheses":"H3",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Romantic Gestures"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -3041,7 +3054,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -3049,22 +3062,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0526315789,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -3121,7 +3133,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I8",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -3129,18 +3141,18 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-      "Emotional Connection",
-      "Physical Intimacy"
+      "Ambivalence & Internal Conflict around Consent",
+      "Sexual Negotiation & Boundary-Setting"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -3197,7 +3209,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -3212,8 +3224,9 @@
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Caretaking Speech Acts",
+      "Emotional Safety & Reassurance",
+      "Promise & Future-Tense Commitment",
       "external_threat",
       "reassurance_statement"
     ],
@@ -3222,28 +3235,64 @@
       "H4:Reassure"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
     "topic_id":57,
     "current_topic_label":"Hands Raised in Reassuring Gesture",
     "main_keywords":[
-
+      "fists",
+      "hand",
+      "held",
+      "clenched",
+      "hands",
+      "his",
+      "sides",
+      "lifted",
+      "fist",
+      "finger"
     ],
     "keybert_keywords":[
-
+      "gesture",
+      "propped",
+      "gripped",
+      "instinctively",
+      "patted",
+      "clenched",
+      "loosened",
+      "wrists",
+      "palms",
+      "awkwardly"
     ],
     "pos_keywords":[
-
+      "elbows",
+      "loosened",
+      "hesitation",
+      "reassuring",
+      "ankles",
+      "upward",
+      "drift",
+      "gesture",
+      "instructions",
+      "palms"
     ],
     "mmr_keywords":[
-
+      "extended",
+      "instinctively",
+      "elbows",
+      "loosened",
+      "hesitation",
+      "awkwardly",
+      "ankles",
+      "gesture",
+      "strolled",
+      "snapping"
     ],
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":null,
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -3252,40 +3301,77 @@
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"1.7",
     "current_taxonomy_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-
+      "Emotional Safety & Reassurance",
+      "Facial Expression & Non-Sexual Nonverbal Cues"
     ],
     "adjudication_actions":[
-
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
     "topic_id":58,
     "current_topic_label":"Coping With A Damaged Limb",
     "main_keywords":[
-
+      "hands",
+      "your",
+      "leg",
+      "legs",
+      "knees",
+      "feet",
+      "foot",
+      "my",
+      "hand",
+      "knee"
     ],
     "keybert_keywords":[
-
+      "ankle",
+      "ankles",
+      "ripping",
+      "instructions",
+      "braced",
+      "painful",
+      "holds",
+      "stumbled",
+      "hurts",
+      "struggled"
     ],
     "pos_keywords":[
-
+      "ankle",
+      "extent",
+      "activities",
+      "typical",
+      "instructions",
+      "concrete",
+      "reminder",
+      "president",
+      "combination",
+      "wider"
     ],
     "mmr_keywords":[
-
+      "ankle",
+      "permanently",
+      "extent",
+      "activities",
+      "hurts",
+      "ripping",
+      "instructions",
+      "concrete",
+      "reminder",
+      "sticking"
     ],
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":null,
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -3293,20 +3379,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H1",
+    "review_status":"audited",
     "current_taxonomy_id":"1.2",
     "current_taxonomy_name":"Pain, Injury & Physical Vulnerability",
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-
+      "1.2 Pain, Injury & Physical Vulnerability",
+      "4.6 Emotional Safety, Reassurance & Caretaking"
     ],
     "adjudication_actions":[
-
+      "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -3447,32 +3534,33 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":"H2_6",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_hypotheses":"H1,H3",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"8.3a",
     "current_taxonomy_name":"Commitment Symbols & Love Tokens",
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-      "Caressing",
+      "Commitment Symbols & Love Tokens (I0\/I5)",
+      "Emotional Bonding via Symbolic Exchange (I5)",
       "H2_6",
-      "Kissing"
+      "Reconciliation & HEA Declarations (I5)"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:RETAXONOMIZE",
       "H2:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":62,
@@ -3523,7 +3611,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":"H2_1",
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -3531,19 +3619,20 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1,H2",
+    "lexical_context_agreement":"H2",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-      "Caressing",
+      "Ambivalence Toward Closure",
       "H2_1",
-      "Kissing"
+      "HEA\/HFN Emotional Settlement",
+      "Reconciliation & Commitment Resolution"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H2:KEEP"
     ],
     "strict_weight":1.0,
@@ -3604,7 +3693,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I6",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -3619,15 +3708,14 @@
     "secondary_id":"2.1",
     "secondary_name":"Attraction & Sexual Tension",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Attraction & Sexual Tension",
+      "Explicit Sexual Acts"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.9444444444,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -3762,7 +3850,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":"H2_2",
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -3770,16 +3858,17 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Emotional Connection",
+      "Commitment Declarations & HEA Closure",
+      "Everyday Relational Bonding & Domestic Continuity",
       "H2_2",
-      "Physical Intimacy"
+      "Reconciliation & Conflict Resolution"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -4047,7 +4136,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -4055,15 +4144,16 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"10.1",
     "secondary_name":"Paranormal & Immortal Beings",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Reassurance",
+      "Emotional Safety & Reassurance",
+      "Paranormal\/Immortal Being Caretaking",
+      "Relational Stability Without Physical Contact",
       "{'name': 'Safe Haven', 'description': 'A place of refuge and safety from external threats.'}",
       "{'name': 'Sentinel', 'description': 'A guardian or protector who stands against external threats.'}",
       "{'name': 'Shield', 'description': 'A defensive barrier that protects from external harm.'}"
@@ -4073,7 +4163,7 @@
       "H4:Protect from external threats"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -4172,7 +4262,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I10",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -4180,22 +4270,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"1.6",
     "secondary_name":"Character Appearance & Self-Presentation",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital caress",
-      "Undressing"
+      "Attraction and sexual tension through appearance",
+      "Desire without physical contact",
+      "Erotic gaze and visual appraisal"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -4694,30 +4784,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"7.2",
     "current_taxonomy_name":"Violence, Threats & Non-Sexual Coercion",
     "secondary_id":"7.4",
     "secondary_name":"Unwanted or Coercive Sexual Contact",
     "proposed_constructs":[
-      "Physical Affection",
-      "Romantic Interactions"
+      "Non-sexual coercion and threats (I9-adjacent \/ 7.2)",
+      "Unwanted or coercive sexual contact (7.4)"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":83,
@@ -4773,7 +4863,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"4.6.1",
@@ -4781,24 +4871,26 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
+      "Caretaking",
       "Coercive_Control",
-      "Emotional Intimacy",
+      "Emotional Safety",
       "External_Protection",
-      "Possessive_Claiming"
+      "Possessive_Claiming",
+      "Reassurance"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H4:Distinguish"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -4897,7 +4989,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":null,
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -4905,20 +4997,22 @@
     "arc_role":"Conflict",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"H1,H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-
+      "caretaking amid relational distance",
+      "emotional reassurance during conflict",
+      "vulnerability and support in tension moments"
     ],
     "adjudication_actions":[
-
+      "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -4970,7 +5064,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -4985,14 +5079,15 @@
     "secondary_id":"9.1",
     "secondary_name":"Dialogue Delivery & Speech Tags",
     "proposed_constructs":[
-      "Caressing",
-      "Kissing"
+      "Domestic\/logistical dialogue in ongoing courtship",
+      "Everyday relational bonding through conversation",
+      "Speech-act maintenance of relationship continuity"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -5091,7 +5186,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"P4.6.1",
@@ -5099,21 +5194,22 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1,H4",
+    "lexical_context_agreement":"H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"1.2",
     "secondary_name":"Pain, Injury & Physical Vulnerability",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Affective safety-building without physical contact",
+      "Caretaking in response to pain or injury",
+      "Emotional reassurance under vulnerability",
       "Ensure physical safety",
       "Establish safe spaces",
       "Guard against external threats"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Provide external protection"
     ],
     "strict_weight":1.0,
@@ -5371,7 +5467,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -5379,21 +5475,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.3b",
     "secondary_name":"Everyday Props & Communication Media",
     "proposed_constructs":[
-      "affectionate touch",
-      "romantic gestures"
+      "Everyday Props & Communication Media",
+      "Ongoing Courtship & Everyday Relational Bonding"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.45,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -5563,7 +5659,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"H4-4.6.1",
@@ -5578,8 +5674,9 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-      "Affection",
-      "Emotional Intimacy",
+      "Caretaking & Comfort",
+      "Distress Acknowledgment",
+      "Emotional Safety & Reassurance",
       "{'name': 'Coercive Control', 'description': 'A pattern of behavior used to harm, punish, or frighten a partner, often involving isolation, intimidation, and threats.', 'example': 'Preventing a partner from seeing friends or family, or threatening to harm them if they leave.'}",
       "{'name': 'External Protection', 'description': 'Acts taken to safeguard a partner from external threats or harm.', 'example': 'Installing a security system to protect the home from intruders.'}",
       "{'name': 'Possessive Claiming', 'description': 'Behavior that aims to control or own a partner, often driven by insecurity or jealousy.', 'example': \"Constantly checking a partner's phone or social media without their consent.\"}"
@@ -5688,7 +5785,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -5696,7 +5793,7 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
@@ -5709,8 +5806,8 @@
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.05,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -5759,21 +5856,52 @@
     "topic_id":100,
     "current_topic_label":"Promising to Find Her",
     "main_keywords":[
-
+      "find",
+      "meet",
+      "needs",
+      "ll",
+      "see",
+      "leave",
+      "where",
+      "her",
+      "can",
+      "here"
     ],
     "keybert_keywords":[
-
+      "lingering",
+      "sir",
+      "thinks",
+      "replaced",
+      "mister",
+      "hiding",
+      "ok",
+      "urgency",
+      "dismissed",
+      "uh"
     ],
     "pos_keywords":[
-
+      "urgency",
+      "excited",
+      "screen",
+      "decision",
+      "sir"
     ],
     "mmr_keywords":[
-
+      "mister",
+      "urgency",
+      "dismissed",
+      "dealing",
+      "lingering",
+      "replaced",
+      "repeated",
+      "planning",
+      "screen",
+      "expect"
     ],
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":null,
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -5781,20 +5909,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H1",
+    "review_status":"audited",
     "current_taxonomy_id":"9.2",
     "current_taxonomy_name":"Promise, Vow & Future-Tense Speech Acts",
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-
+      "Emotional Safety & Reassurance (secondary)",
+      "Future-Tense Relational Commitment",
+      "Promise & Vow Speech Acts"
     ],
     "adjudication_actions":[
-
+      "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -5857,22 +5987,23 @@
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.2",
     "current_taxonomy_name":"Kissing & Non-Explicit Affection",
     "secondary_id":"1.6",
     "secondary_name":"Character Appearance & Self-Presentation",
     "proposed_constructs":[
-      "Kissing"
+      "Kissing & Non-Explicit Affectionate Contact",
+      "Physical Appearance as Prelude to Intimacy"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.9473684211,
+    "strict_weight":0.0,
+    "weighted_weight":0.4,
     "manual_review_required":false
   },
   {
@@ -6048,7 +6179,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -6056,21 +6187,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"1.6",
     "secondary_name":"Character Appearance & Self-Presentation",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "Attraction & Sexual Tension",
+      "Erotic Desire Without Contact"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -6127,7 +6258,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -6142,15 +6273,14 @@
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital caress",
-      "Undressing"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.9,
     "manual_review_required":false
   },
   {
@@ -6679,7 +6809,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -6687,21 +6817,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Caressing",
-      "Kissing"
+      "Domestic Spaces & Routines",
+      "Ongoing Courtship & Everyday Relational Bonding"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -6798,7 +6928,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"UNKNOWN",
@@ -6813,8 +6943,7 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Affection",
-      "Emotional Intimacy",
+      "Emotional Safety, Reassurance & Caretaking",
       "{'name': 'Coercive Control', 'description': 'A pattern of behavior used to harm, punish, or gain power and control over a partner, often involving threats, intimidation, or manipulation, such as gaslighting, financial abuse, or threats of violence.'}",
       "{'name': 'External Threat', 'description': 'A real or perceived danger that is not created or manipulated by the partner, such as financial instability, health issues, or external conflicts.'}",
       "{'name': 'Possessive Claiming', 'description': 'Behavior that aims to control or dominate a partner, often driven by insecurity or jealousy, such as excessive monitoring, isolation, or demanding constant reassurance.'}"
@@ -6822,8 +6951,8 @@
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.4414,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -7099,8 +7228,8 @@
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
-      "Kissing",
-      "Non-Explicit Affection"
+      "Emotional Safety & Reassurance",
+      "Kissing & Non-Explicit Affection"
     ],
     "adjudication_actions":[
       "H1:KEEP"
@@ -7163,7 +7292,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I8",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -7171,22 +7300,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Safety Preparation",
+      "Sexual Negotiation & Boundary-Setting"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0555555556,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -7256,8 +7384,8 @@
     "secondary_id":"1.7",
     "secondary_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "proposed_constructs":[
-      "Kissing",
-      "Non-Explicit Affection"
+      "Facial Expression & Non-Sexual Nonverbal Cues",
+      "Kissing & Non-Explicit Affection"
     ],
     "adjudication_actions":[
       "H1:KEEP"
@@ -7390,7 +7518,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":"H2_2",
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -7398,17 +7526,17 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.1",
     "secondary_name":"Positive Resolution, Relief & Emotional Payoff",
     "proposed_constructs":[
+      "Emotional reassurance and caretaking",
       "H2_2",
-      "Kissing",
-      "Non-genital caress",
-      "Undressing"
+      "Positive resolution and relief",
+      "Reconciliation and relational repair"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -7819,7 +7947,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -7834,11 +7962,11 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-      "Emotional Connection",
-      "Flirting"
+      "Attraction & Sexual Tension",
+      "Unresolved Desire Without Physical Contact"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -8024,7 +8152,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I10",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -8039,14 +8167,16 @@
     "secondary_id":"1.6",
     "secondary_name":"Character Appearance & Self-Presentation",
     "proposed_constructs":[
-      "Physical Affection",
-      "Romantic Tension"
+      "attraction and sexual tension",
+      "character appearance as object of desire",
+      "erotic gaze",
+      "visual desire"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.6363636364,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -8578,29 +8708,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I8",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"2.1",
     "secondary_name":"Attraction & Sexual Tension",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "Boundary-Setting Before Intimacy",
+      "Safety Preparation & Readiness Talk",
+      "Sexual Negotiation & Consent Communication"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.857,
+    "strict_weight":0.0,
+    "weighted_weight":0.4,
     "manual_review_required":false
   },
   {
@@ -8807,7 +8938,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -8816,21 +8947,22 @@
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"4.7",
     "secondary_name":"Jealousy & Possessive Romance Conflict",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "Desire Without Contact",
+      "Possessive Attraction",
+      "Sexual Tension Under Coercive Framing"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":156,
@@ -8886,31 +9018,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"2.3",
     "secondary_name":"Explicit Sexual Acts",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Explicit Sexual Acts (I6)",
+      "Sexual Negotiation & Boundary-Setting (I8)"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.8947368421,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":157,
@@ -8964,7 +9095,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":"H2_0",
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -8972,20 +9103,20 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
+      "Ambivalence Toward Future Together",
       "H2_0",
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "HEA\/HFN Domestic Consolidation",
+      "Reconciliation & Commitment Resolution"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:RETAXONOMIZE",
       "H2:KEEP"
     ],
     "strict_weight":1.0,
@@ -9123,7 +9254,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -9131,21 +9262,21 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Romantic Gestures"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "strict_weight":0.0,
+    "weighted_weight":0.6,
     "manual_review_required":false
   },
   {
@@ -9201,7 +9332,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -9209,21 +9340,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Emotional reassurance and caretaking",
+      "Kinship\/parental nurturing dynamics",
+      "Verbal comfort and support without physical contact",
       "{'name': 'External Threat Identification', 'description': 'Ability to recognize and acknowledge external threats to the relationship.'}",
       "{'name': 'Safety Planning', 'description': 'Developing and implementing strategies to mitigate identified external threats.'}",
       "{'name': 'Support Network Engagement', 'description': 'Actively involving trusted friends, family, or professionals in protective measures.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:RETAXONOMIZE",
       "H4:Protect"
     ],
     "strict_weight":1.0,
@@ -9396,7 +9528,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -9404,24 +9536,23 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Attraction",
-      "Everyday Relational Bonding",
-      "Ongoing Courtship",
-      "Sexual Tension"
+      "Attraction awareness and longing",
+      "Sexual tension without physical contact",
+      "Unreciprocated or unacted-upon desire"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.55,
+    "manual_review_required":true
   },
   {
     "topic_id":166,
@@ -9837,7 +9968,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"MIXED",
@@ -9845,14 +9976,16 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"7.3",
     "secondary_name":"Risk, Danger & External Crises",
     "proposed_constructs":[
-      "Emotional Intimacy",
+      "Caretaking Under External Crisis",
+      "Emotional Safety & Reassurance",
+      "Relational Stability Maintenance",
       "coercive_control",
       "external_protection",
       "possessive_claiming"
@@ -9862,7 +9995,7 @@
       "H4:{'type': 'distinguish', 'target': 'external_protection', 'from': ['possessive_claiming', 'coercive_control']}"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -9919,7 +10052,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"PROTECTION",
@@ -9935,9 +10068,9 @@
     "secondary_name":"Time, Seasons & Temporal Framing",
     "proposed_constructs":[
       "Defend against harm",
-      "Emotional Intimacy",
-      "Physical Affection",
-      "Shelter from external threats"
+      "Emotional Safety & Reassurance",
+      "Shelter from external threats",
+      "Temporal Framing of Relationship Milestones"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -10001,29 +10134,29 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H1,H3",
-    "lexical_context_agreement":"",
+    "mixed_hypotheses":"H3",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Romantic Gestures"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -10076,7 +10209,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"P4.6.1",
@@ -10084,25 +10217,26 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1,H4",
+    "lexical_context_agreement":"H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Physical Affection",
+      "Emotional reassurance and caretaking",
+      "Social\/ally network comfort-giving",
+      "Supportive relational communication",
       "{'name': 'Buffering', 'description': 'Acting as a shield or barrier between the individual and the external threat.'}",
       "{'name': 'Safe Haven', 'description': 'Providing a secure and comforting space where the individual can retreat to when feeling threatened or overwhelmed.'}",
       "{'name': 'Warning System', 'description': 'Monitoring the environment for potential threats and alerting the individual when necessary.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -10834,7 +10968,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"H4.6.1",
@@ -10849,8 +10983,9 @@
     "secondary_id":"8.3b",
     "secondary_name":"Everyday Props & Communication Media",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Non-Sexual Physical Affection",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
+      "Everyday Communication Media & Props",
       "{'name': 'External Threat Detection', 'description': 'Identify and assess potential external threats to the relationship.'}",
       "{'name': 'Safety Planning', 'description': 'Develop and implement strategies to mitigate identified threats.'}",
       "{'name': 'Support Network Engagement', 'description': 'Engage with trusted friends, family, or professionals to enhance safety and provide support.'}"
@@ -10860,7 +10995,7 @@
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -11036,7 +11171,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"E",
     "care_protection_code":"4.6.193",
@@ -11044,15 +11179,16 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Caretaking & Nurturing",
+      "Emotional Safety & Reassurance",
+      "Family\/Kinship Bonds",
       "coercive_control",
       "external_protection",
       "possessive_claiming"
@@ -11062,7 +11198,7 @@
       "H4:Distinguish"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -11182,30 +11318,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "Attraction & Sexual Tension (I4)",
+      "Ongoing Courtship & Everyday Relational Bonding (I0)"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":197,
@@ -11261,30 +11397,30 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.2",
     "current_taxonomy_name":"Kissing & Non-Explicit Affection",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Kissing",
-      "Non-Explicit Affection"
+      "Kissing & Non-Explicit Affectionate Contact (I3)",
+      "Ongoing Courtship & Everyday Relational Bonding (I0\/I4)"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":198,
@@ -11381,7 +11517,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -11390,22 +11526,21 @@
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"7.4",
     "current_taxonomy_name":"Unwanted or Coercive Sexual Contact",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital caress",
-      "Undressing"
+      "domestic\/logistical interaction",
+      "non-coercive relational context"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "manual_review_required":false
+    "weighted_weight":1.0,
+    "manual_review_required":true
   },
   {
     "topic_id":200,
@@ -11587,7 +11722,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I8",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -11602,15 +11737,15 @@
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Domestic space as context for intimacy negotiation",
+      "Safety preparation and consent discourse",
+      "Sexual negotiation and boundary-setting"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -11660,7 +11795,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":"H2_7",
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -11675,16 +11810,17 @@
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Commitments",
+      "Family & Kinship Bonding (non-physical)",
       "H2_7",
-      "Reconciliation"
+      "HEA\/HFN Resolution",
+      "Reconciliation & Commitment Declarations"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H2:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -11866,30 +12002,29 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I6",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.3",
     "current_taxonomy_name":"Explicit Sexual Acts",
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Physical Affection",
-      "Romantic Interludes"
+      "Explicit Sexual Acts in Domestic Settings"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "manual_review_required":false
+    "weighted_weight":0.85,
+    "manual_review_required":true
   },
   {
     "topic_id":209,
@@ -12170,7 +12305,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I5",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -12178,21 +12313,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-      "Emotional Connection",
-      "Sexual Tension"
+      "Ambivalence and internal conflict about intimacy",
+      "Safety preparation as prelude to or condition of sexual encounter",
+      "Sexual negotiation and boundary-setting"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.9444444444,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -12752,7 +12888,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"STATUS\/APPEARANCE",
     "care_protection_code":"H4",
@@ -12767,15 +12903,15 @@
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-      "Caretaking",
-      "Emotional Safety",
-      "Reassurance",
+      "Caretaking Speech Acts",
+      "Emotional Safety & Reassurance",
+      "Promise & Future-Tense Commitment",
       "{'name': 'Coercive Control', 'description': 'Using threats, intimidation, or manipulation to maintain power and control over a partner, often involving isolation and restriction of their freedom.'}",
       "{'name': 'External Protection', 'description': 'Acts taken to safeguard a partner from real, external threats or harm.'}",
       "{'name': 'Possessive Claiming', 'description': 'Asserting ownership or control over a partner, often involving jealousy and restriction of their autonomy.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Distinguish"
     ],
     "strict_weight":1.0,
@@ -12920,7 +13056,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -12928,18 +13064,19 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.5",
     "current_taxonomy_name":"Sexual Negotiation, Safety Preparation & Boundaries",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Physical Intimacy",
-      "Romantic Gestures"
+      "Everyday relational bonding without physical contact",
+      "HEA\/future-orientation talk",
+      "Relational logistics and domestic planning"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -13040,7 +13177,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -13048,22 +13185,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.3",
     "current_taxonomy_name":"Explicit Sexual Acts",
     "secondary_id":"2.4",
     "secondary_name":"Aftercare & Post-Sex Reflection",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "anticipatory longing",
+      "erotic tension without contact",
+      "unfulfilled desire"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13161,7 +13298,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -13176,15 +13313,13 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Emotional reassurance and relational caretaking in ongoing courtship"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0526315789,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13565,7 +13700,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"H4.6.1",
@@ -13573,25 +13708,26 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Physical Affection",
+      "Caretaking & Comfort",
+      "Emotional Safety & Reassurance",
+      "Ongoing Relational Bonding (non-contact)",
       "coercive_control",
       "external_protection",
       "possessive_claiming"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13718,7 +13854,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":"H2_5",
     "security_code":"E",
     "care_protection_code":null,
@@ -13733,10 +13869,10 @@
     "secondary_id":"4.3",
     "secondary_name":"Secrets, Misunderstandings & Hidden Information",
     "proposed_constructs":[
+      "Emotional reassurance and caretaking",
       "H2_5",
-      "Kissing",
-      "Non-genital caress",
-      "Undressing"
+      "Reconciliation after conflict or misunderstanding",
+      "Vulnerability disclosure and trust-building"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -13842,7 +13978,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -13850,21 +13986,20 @@
     "arc_role":"Conflict Resolution",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H6",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-      "Commitments",
-      "Reconciliation"
+
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -13921,7 +14056,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -13929,21 +14064,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"1.7",
     "secondary_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "proposed_constructs":[
-      "Caressing",
-      "Kissing"
+      "Attraction & Sexual Tension",
+      "Facial Expression & Non-Sexual Nonverbal Cues"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.9473684211,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -14029,7 +14164,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"H4.1",
@@ -14037,15 +14172,16 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-      "Emotional Safety",
-      "Reassurance",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
+      "Promise \/ Vow \/ Future-Tense Speech Acts",
       "{'name': 'Buffering', 'description': 'Acting as a shield or barrier against external threats.'}",
       "{'name': 'Fortifying', 'description': 'Strengthening the relationship or individual against potential harm.'}"
     ],
@@ -14995,7 +15131,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -15003,21 +15139,20 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "lexical_context_agreement":"",
+    "review_status":"unaudited",
     "current_taxonomy_id":"1.7",
     "current_taxonomy_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "secondary_id":"2.1",
     "secondary_name":"Attraction & Sexual Tension",
     "proposed_constructs":[
-      "Facial Expression",
-      "Non-Sexual Nonverbal Cues"
+
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "manual_review_required":false
   },
   {
@@ -15306,7 +15441,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -15314,23 +15449,24 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Physical Affection",
+      "Emotional reassurance and caretaking",
+      "Interpersonal safety and comfort-seeking",
+      "Supportive relational communication",
       "{'name': 'External Protection', 'description': \"Actively shielding one's partner from external threats or harm.\"}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -15511,7 +15647,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MATERIAL",
     "care_protection_code":"PROTECT",
@@ -15519,15 +15655,16 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
+      "Promise \/ Vow \/ Future-Tense Speech Acts",
       "{'type': 'caretaking', 'action': 'provide_comfort'}",
       "{'type': 'reassurance', 'content': \"I'm here for you. You're safe with me.\"}"
     ],
@@ -15536,7 +15673,7 @@
       "H4:{'type': 'protect', 'target': 'partner', 'from': 'external_threat'}"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -15635,7 +15772,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I10",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -15650,8 +15787,10 @@
     "secondary_id":"1.7",
     "secondary_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "proposed_constructs":[
-      "Facial Expression",
-      "Non-Sexual Nonverbal Cues"
+      "attraction cues",
+      "erotic gaze",
+      "non-verbal sexual tension",
+      "visual desire"
     ],
     "adjudication_actions":[
       "H1:KEEP"
@@ -16119,7 +16258,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -16134,13 +16273,15 @@
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Emotional Intimacy",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
+      "Relational Security",
       "{'name': 'Coercive Control', 'description': 'A pattern of behavior used to maintain power and control over a partner, often involving isolation, intimidation, and manipulation.', 'examples': [\"Controlling a partner's access to money, resources, or support networks\", 'Using threats or violence to maintain control', 'Gaslighting, or manipulating a partner into questioning their own reality']}",
       "{'name': 'External Protection', 'description': 'Acts taken to safeguard a partner from real, external threats. It involves genuine concern for their well-being and is not motivated by control or jealousy.', 'examples': ['Helping a partner escape an abusive situation', 'Protecting a partner from known threats, such as a stalker or violent ex']}",
       "{'name': 'Possessive Claiming', 'description': \"Behavior driven by excessive jealousy or insecurity, where a partner tries to control or 'claim' the other as a possession.\", 'examples': [\"Constantly checking a partner's phone or social media\", 'Prohibiting a partner from spending time with friends or family', \"Insisting on knowing a partner's every move\"]}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Distinguish"
     ],
     "strict_weight":1.0,
@@ -16258,13 +16399,14 @@
     "secondary_id":"1.1",
     "secondary_name":"Body Parts & Physical Reactions",
     "proposed_constructs":[
+      "Body Parts & Physical Reactions",
       "Explicit Sexual Acts"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.6,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -16513,7 +16655,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"UNKNOWN",
@@ -16528,14 +16670,15 @@
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-      "Emotional Intimacy",
-      "Non-Sexual Physical Affection"
+      "Emotional reassurance and caretaking",
+      "Social\/ally network comfort-giving",
+      "Supportive relational communication"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0526315789,
+    "weighted_weight":0.3,
     "manual_review_required":false
   },
   {
@@ -16660,14 +16803,14 @@
     "main_couple_prob":0.85,
     "non_couple_prob":0.1,
     "unclear_prob":0.05,
-    "intimacy_code":"I3",
+    "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":"REFINED_FALLING",
-    "mixed_topic":true,
-    "mixed_hypotheses":"H1",
+    "mixed_topic":false,
+    "mixed_hypotheses":"",
     "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
@@ -16675,11 +16818,10 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-      "Misunderstandings",
-      "Secrets"
+
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -16774,7 +16916,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":"H2_5",
     "security_code":"{'CELL_A': 'Emotional', 'CELL_B': 'Material', 'CELL_C': 'Status\/Appearance', 'CELL_D': 'Mixed'}",
     "care_protection_code":null,
@@ -16789,10 +16931,10 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
+      "Emotional reassurance and caretaking",
       "H2_5",
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Reconciliation and repair of relational rupture",
+      "Vulnerability disclosure under distress"
     ],
     "adjudication_actions":[
       "H1:KEEP",
@@ -16896,7 +17038,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"4.6.1",
@@ -16904,25 +17046,25 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H4",
+    "lexical_context_agreement":"H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Affectionate Touch",
-      "Emotional Intimacy",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
       "{'name': 'External Threat Identification', 'description': 'Recognizing and acknowledging potential external threats to the relationship.'}",
       "{'name': 'Open Communication', 'description': 'Maintaining open and honest communication about external threats and safety measures.'}",
       "{'name': 'Safety Planning', 'description': 'Developing and implementing strategies to mitigate identified external threats.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -18061,7 +18203,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -18069,22 +18211,20 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Ongoing Courtship & Everyday Relational Bonding"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -18134,7 +18274,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":null,
@@ -18142,22 +18282,21 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.2",
     "secondary_name":"Public, Travel & Leisure Spaces",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Public\/Travel\/Leisure Spaces"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -18416,7 +18555,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I4",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -18424,22 +18563,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"2.3",
     "secondary_name":"Explicit Sexual Acts",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Attraction & Tension",
+      "Sexual Desire Without Contact"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.78,
+    "strict_weight":0.0,
+    "weighted_weight":0.45,
     "manual_review_required":false
   },
   {
@@ -18607,23 +18745,24 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":"PROTECT",
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"H3",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "Affection",
-      "Emotional Intimacy",
+      "Caretaking & Comfort",
+      "Emotional Safety & Reassurance",
+      "Family\/Kinship Support",
       "{'name': 'Coercive Control', 'description': 'A pattern of behavior used to maintain power and control over a partner, often involving intimidation, isolation, and manipulation.'}",
       "{'name': 'External Protection', 'description': \"Actively safeguarding one's partner or relationship from external threats or harm.\"}",
       "{'name': 'Possessive Claiming', 'description': \"Excessive or controlling behavior motivated by a desire to 'own' or possess one's partner.\"}"
@@ -18633,7 +18772,7 @@
       "H4:Defend against external threats"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -18813,7 +18952,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I9",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -18821,22 +18960,23 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"audited",
+    "lexical_context_agreement":"H1",
+    "review_status":"manual_review",
     "current_taxonomy_id":"7.4",
     "current_taxonomy_name":"Unwanted or Coercive Sexual Contact",
     "secondary_id":"6.4",
     "secondary_name":"Economic Precarity, Security & Dependency",
     "proposed_constructs":[
-      "Power Imbalance",
-      "Unwanted Sexual Advances"
+      "coercive sexual contact",
+      "economic vulnerability exploitation",
+      "unwanted advances under dependency"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:RETAXONOMIZE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":346,
@@ -19160,7 +19300,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -19175,14 +19315,15 @@
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Caressing",
-      "Kissing"
+      "Domestic\/Logistical Interaction",
+      "Ongoing Courtship & Everyday Relational Bonding",
+      "Relational Maintenance"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -19217,7 +19358,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -19225,21 +19366,22 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "caretaking without physical contact",
+      "emotional reassurance",
+      "relational support"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -19285,7 +19427,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I5",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -19300,14 +19442,14 @@
     "secondary_id":"9.3",
     "secondary_name":"Humor, Banter & Light Register",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "Attraction & Sexual Tension",
+      "Humor, Banter & Light Register"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":0.7647058824,
+    "strict_weight":0.0,
+    "weighted_weight":0.6,
     "manual_review_required":false
   },
   {
@@ -19440,24 +19582,25 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"S1",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
-    "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1,H4",
+    "mixed_hypotheses":"H1,H3",
+    "lexical_context_agreement":"H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"8.1",
     "secondary_name":"Domestic Spaces & Routines",
     "proposed_constructs":[
-      "Affectionate Touch",
+      "Caretaking Behavior",
       "Coercive_Control",
-      "Emotional Intimacy",
+      "Domestic Comfort as Intimacy Scaffold",
+      "Emotional Safety & Reassurance",
       "External_Protection",
       "Possessive_Claiming"
     ],
@@ -19466,7 +19609,7 @@
       "H4:Distinguish"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.875,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -19511,7 +19654,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"4.6.1",
@@ -19519,16 +19662,16 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"3.1",
     "secondary_name":"Positive Resolution, Relief & Emotional Payoff",
     "proposed_constructs":[
-      "Caretaking",
-      "Emotional Safety",
-      "Reassurance",
+      "Caretaking & Comfort",
+      "Emotional Safety & Reassurance",
+      "Positive Resolution & Relief",
       "{'name': 'External Threat', 'description': 'A perceived or real danger that comes from outside the relationship.'}",
       "{'name': 'Protection', 'description': \"Actions taken to shield one's partner from the external threat.\"}"
     ],
@@ -19537,7 +19680,7 @@
       "H4:Protect"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":1.0,
     "manual_review_required":false
   },
   {
@@ -19632,7 +19775,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I6",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"MIXED",
@@ -19640,25 +19783,26 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3,H4",
-    "lexical_context_agreement":"H4",
-    "review_status":"audited",
+    "lexical_context_agreement":"H1,H4",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"2.2",
     "secondary_name":"Kissing & Non-Explicit Affection",
     "proposed_constructs":[
-      "Sexual Intercourse",
+      "Caretaking Without Explicit Contact",
+      "Emotional Safety & Reassurance",
       "{'name': 'Coercive Control', 'description': \"Using threats, intimidation, or manipulation to dominate and control a partner's actions, thoughts, or feelings, often to maintain power and prevent them from leaving the relationship.\"}",
       "{'name': 'External Protection', 'description': \"Acts to safeguard a partner from real, external threats or harm, with the partner's consent and without controlling their behavior.\"}",
       "{'name': 'Possessive Claiming', 'description': 'Expressing ownership or control over a partner, their time, or their actions, often without their consent or respect for their autonomy.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:RETAXONOMIZE",
       "H4:{'type': 'distinguish', 'target': 'external_protection, possessive_claiming, coercive_control'}"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.2307692308,
-    "manual_review_required":false
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
+    "manual_review_required":true
   },
   {
     "topic_id":360,
@@ -19946,31 +20090,31 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"MIXED",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H1",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Ambivalence & Internal Conflict (I4\/I2 boundary)",
+      "Attraction & Sexual Tension (I4)",
+      "Reassurance & Emotional Caretaking (I2)"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "manual_review_required":true
   },
   {
     "topic_id":366,
@@ -20094,7 +20238,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I0",
     "hea_code":null,
     "security_code":"UNKNOWN",
     "care_protection_code":null,
@@ -20102,22 +20246,21 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"8.3b",
     "secondary_name":"Everyday Props & Communication Media",
     "proposed_constructs":[
-      "Kissing",
-      "Non-genital Caress",
-      "Undressing"
+      "Everyday Props & Communication Media",
+      "Ongoing Courtship & Everyday Relational Bonding"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0555555556,
+    "strict_weight":1.0,
+    "weighted_weight":0.95,
     "manual_review_required":false
   },
   {
@@ -20254,7 +20397,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I10",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
@@ -20262,21 +20405,23 @@
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"2.1",
     "current_taxonomy_name":"Attraction & Sexual Tension",
     "secondary_id":"1.6",
     "secondary_name":"Character Appearance & Self-Presentation",
     "proposed_constructs":[
-      "Attraction",
-      "Sexual Tension"
+      "attraction and sexual tension",
+      "character appearance as object of desire",
+      "erotic gaze",
+      "visual desire"
     ],
     "adjudication_actions":[
       "H1:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.315,
+    "strict_weight":1.0,
+    "weighted_weight":0.85,
     "manual_review_required":false
   },
   {
@@ -20362,7 +20507,7 @@
     "main_couple_prob":0.0,
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
-    "intimacy_code":"I3",
+    "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"MIXED",
     "care_protection_code":"4.6.1",
@@ -20370,19 +20515,20 @@
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "Emotional Intimacy",
+      "Caretaking Without Physical Contact",
+      "Emotional Safety & Reassurance",
       "{'name': 'External Threat', 'description': 'A real or perceived danger from outside the relationship that the individual is attempting to safeguard their partner from.'}",
       "{'name': 'Safety Measures', 'description': 'Actions taken to mitigate the external threat and ensure the safety and well-being of the partner.'}"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
+      "H1:REINTERPRET",
       "H4:Protect"
     ],
     "strict_weight":1.0,

@@ -1203,7 +1203,7 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **H4_5 — external protection physical**
 - **Normalised category:** H4_5 — external protection physical
-- **Mixed:** False
+- **Mixed:** True
 - **Adjudication action:** `Defend against external threats`
 
 **Stage-08 snippets**

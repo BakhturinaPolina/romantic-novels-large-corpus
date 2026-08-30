@@ -1,0 +1,1044 @@
+{
+  "topic_id": 57,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.7",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fists",
+        "hand",
+        "held",
+        "clenched",
+        "hands",
+        "his",
+        "sides",
+        "lifted",
+        "fist",
+        "finger"
+      ],
+      "KeyBERT": [
+        "gesture",
+        "propped",
+        "gripped",
+        "instinctively",
+        "patted",
+        "clenched",
+        "loosened",
+        "wrists",
+        "palms",
+        "awkwardly"
+      ],
+      "POS": [
+        "elbows",
+        "loosened",
+        "hesitation",
+        "reassuring",
+        "ankles",
+        "upward",
+        "drift",
+        "gesture",
+        "instructions",
+        "palms"
+      ],
+      "MMR": [
+        "extended",
+        "instinctively",
+        "elbows",
+        "loosened",
+        "hesitation",
+        "awkwardly",
+        "ankles",
+        "gesture",
+        "strolled",
+        "snapping"
+      ]
+    },
+    "stage08_snippets": [
+      "instinctively, i opened my mouth for him to enter. “",
+      "iain lifted his hands, palms out. “",
+      "as he slid off the bar stool he clamped a hand over his friend’s shoulder, partly to support his own leaden legs and partly in a reassuring gesture. ‘‘"
+    ],
+    "label_public": "Hands Raised in Reassuring Gesture"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Grinning, he held up his hands in a gesture of mock innocence. “",
+        "max_topic_prob": 0.7178375124931335,
+        "normalized_position": 0.28518859245630174,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Her slim fingers that gripped his arm for support shook.",
+        "max_topic_prob": 0.710763692855835,
+        "normalized_position": 0.32382704691812325,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Jake clenched his hands, then forced himself to unclench them. “",
+        "max_topic_prob": 0.6980613470077515,
+        "normalized_position": 0.7293008279668813,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Luckily a couple of the reporters made themselves useful and tackled him.",
+        "max_topic_prob": 0.334434449672699,
+        "normalized_position": 0.6177552897884084,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He brought up his hand and covered his face with it. “",
+        "max_topic_prob": 0.774390459060669,
+        "normalized_position": 0.2071695623488014,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1884
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "he griped. “",
+        "max_topic_prob": 0.7635117769241333,
+        "normalized_position": 0.4620628986144711,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 2131
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Josh put up his hands. “",
+        "max_topic_prob": 0.7386215925216675,
+        "normalized_position": 0.9045524521662635,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1281
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "he griped.",
+        "max_topic_prob": 0.7340608835220337,
+        "normalized_position": 0.3941060039586541,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1513
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He shook his head slightly and lifted an unsteady hand to his face.",
+        "max_topic_prob": 0.7261173725128174,
+        "normalized_position": 0.8207609412799648,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 519
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "he said quietly before letting his hand drop.",
+        "max_topic_prob": 0.718673825263977,
+        "normalized_position": 0.27094787772157464,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 393
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He held up both of his hands. “",
+        "max_topic_prob": 0.8715676069259644,
+        "normalized_position": 0.2599337748344371,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His fingers shook as he lifted it.",
+        "max_topic_prob": 0.7353320121765137,
+        "normalized_position": 0.4314569536423841,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He held his hands open wider, feeling his left elbow tap against the wall. “",
+        "max_topic_prob": 0.7061513662338257,
+        "normalized_position": 0.8374172185430464,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Some of the color was seeping from his face, and his fingers were clenched into tight fists. “",
+        "max_topic_prob": 0.6913976669311523,
+        "normalized_position": 0.2281456953642384,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He had his arms out and visible to the best of his ability, his palms open and facing his attacker.",
+        "max_topic_prob": 0.6747093200683594,
+        "normalized_position": 0.8248344370860927,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Morgan began to calm himself, his fingers uncurling from the fists they had been growing into. “",
+        "max_topic_prob": 0.665966272354126,
+        "normalized_position": 0.5920529801324503,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He held out his hand for me to shake. “",
+        "max_topic_prob": 0.7460880279541016,
+        "normalized_position": 0.5272295088925676,
+        "tertile": "middle",
+        "chapter_index": 71,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He holds his hands up in surrender. “",
+        "max_topic_prob": 0.7236791849136353,
+        "normalized_position": 0.02309096311388429,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Shaking my hand quickly again, he pulls back and again draws a fist against his leg. “",
+        "max_topic_prob": 0.7181602716445923,
+        "normalized_position": 0.9947366187019823,
+        "tertile": "end",
+        "chapter_index": 137,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He puts his hands up in mock surrender. “",
+        "max_topic_prob": 0.703966498374939,
+        "normalized_position": 0.6383547688781357,
+        "tertile": "middle",
+        "chapter_index": 85,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Ryan wrings his hands together. “",
+        "max_topic_prob": 0.7024059295654297,
+        "normalized_position": 0.6609363725115667,
+        "tertile": "middle",
+        "chapter_index": 88,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He stands and holds his hand out to me. “",
+        "max_topic_prob": 0.6796976327896118,
+        "normalized_position": 0.16235833439449893,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She took pity on him then and tapped a gloved hand on his bent knee. “",
+        "max_topic_prob": 0.7005499601364136,
+        "normalized_position": 0.9553484490193351,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "His fingers rested on the polished wood lightly as his head fell forward. “",
+        "max_topic_prob": 0.6624084711074829,
+        "normalized_position": 0.907636667130338,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "He stepped forward and closed the door, lifting a hand to rest upon its surface.",
+        "max_topic_prob": 0.6389518976211548,
+        "normalized_position": 0.5697593545694811,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Immediately he relaxed and loosed his hold.",
+        "max_topic_prob": 0.6387243270874023,
+        "normalized_position": 0.27987202670746975,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "His hands tightened around the edges of the paper in a death grip since his ears could not close to the sounds coming from near the sideboard. “",
+        "max_topic_prob": 0.6269550323486328,
+        "normalized_position": 0.1815273334260676,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Was he amiable enough to ask for your hand?”",
+        "max_topic_prob": 0.6210223436355591,
+        "normalized_position": 0.7622756989845597,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "He held up his arm. “",
+        "max_topic_prob": 0.855417013168335,
+        "normalized_position": 0.520273154075971,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "He motioned to Armise to unclench his fists. “",
+        "max_topic_prob": 0.7782858610153198,
+        "normalized_position": 0.20657276995305165,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "He extended a hand and clasped Grimshaw’s forearm. “",
+        "max_topic_prob": 0.7380483746528625,
+        "normalized_position": 0.15749039692701663,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I held out a shaking hand for him. “",
+        "max_topic_prob": 0.7281594276428223,
+        "normalized_position": 0.2838241570635937,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "The guard held out his hand. “",
+        "max_topic_prob": 0.7075374126434326,
+        "normalized_position": 0.017712334613743063,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Armise flexed his jaw. “",
+        "max_topic_prob": 0.6976867914199829,
+        "normalized_position": 0.7347417840375586,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I reach out to take his hand.",
+        "max_topic_prob": 0.6857137680053711,
+        "normalized_position": 0.6578245614035088,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Dax’s hand is securely attached to my elbow. “",
+        "max_topic_prob": 0.6440870761871338,
+        "normalized_position": 0.15157894736842106,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1080
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Reaching for a tissue, I wipe the rest off of his hand. “",
+        "max_topic_prob": 0.6295815706253052,
+        "normalized_position": 0.6012631578947368,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "with two last strokes, his body relaxes as he comes in the palm of his hand.",
+        "max_topic_prob": 0.6073827743530273,
+        "normalized_position": 0.600421052631579,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "He relents, allowing my freedom, as I turn around, my hands splaying against the wall.",
+        "max_topic_prob": 0.5977184772491455,
+        "normalized_position": 0.8833684210526316,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I turn to walk away, to escape what I am facing but he refuses to let my hand go. “",
+        "max_topic_prob": 0.5819870233535767,
+        "normalized_position": 0.3630877192982456,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He held out a hand. “",
+        "max_topic_prob": 0.8807528614997864,
+        "normalized_position": 0.723031740652886,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 6401
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He spread his hands. “",
+        "max_topic_prob": 0.8095068335533142,
+        "normalized_position": 0.731164576979555,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 6473
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He held up a hand and wiggled his little finger. “",
+        "max_topic_prob": 0.7965830564498901,
+        "normalized_position": 0.30317406528860275,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2684
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "His hand slowed. “",
+        "max_topic_prob": 0.7686429023742676,
+        "normalized_position": 0.6447531910086977,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5708
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The palm on his chest turned into a poking finger. “",
+        "max_topic_prob": 0.7576643228530884,
+        "normalized_position": 0.6990850559132498,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 6189
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "His fingers flexed open and shut over and over. “",
+        "max_topic_prob": 0.7468887567520142,
+        "normalized_position": 0.6485936970518469,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 5742
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He stepped forward and held out his hand. “",
+        "max_topic_prob": 0.858562171459198,
+        "normalized_position": 0.8721934369602763,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 214
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I held my hands up. “",
+        "max_topic_prob": 0.7664767503738403,
+        "normalized_position": 0.768566493955095,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He gripped my wrist, holding tight. “",
+        "max_topic_prob": 0.732181191444397,
+        "normalized_position": 0.45837651122625217,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "His hands were shaking.",
+        "max_topic_prob": 0.7317415475845337,
+        "normalized_position": 0.8072538860103627,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 578
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "He held his hand out to me again. “",
+        "max_topic_prob": 0.7224719524383545,
+        "normalized_position": 0.40310880829015544,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I offered my hand to him. “",
+        "max_topic_prob": 0.7155550122261047,
+        "normalized_position": 0.5614853195164076,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Mentally he patted himself on the back.",
+        "max_topic_prob": 0.5761747360229492,
+        "normalized_position": 0.48522895125553916,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Evan groaned and started to protest, but Reggie held up his glass and lifted his pointer finger. \"",
+        "max_topic_prob": 0.5694748759269714,
+        "normalized_position": 0.41063515509601184,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "He paused, then flung up both hands. “",
+        "max_topic_prob": 0.8085008859634399,
+        "normalized_position": 0.24394250513347024,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "He extended his hand.",
+        "max_topic_prob": 0.7991126179695129,
+        "normalized_position": 0.24969199178644763,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "He slapped his hands down on his stomach. “",
+        "max_topic_prob": 0.7696640491485596,
+        "normalized_position": 0.324435318275154,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Before realizing he was doing it, he stretched out a hand, brushing his fingers over Grant’s cheek.",
+        "max_topic_prob": 0.7266647219657898,
+        "normalized_position": 0.45297741273100617,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "He advanced toward Grant, jabbing his finger in the air toward him. “",
+        "max_topic_prob": 0.7232400178909302,
+        "normalized_position": 0.8698151950718686,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "He stood in front of him and curled his fingers under Shawn’s chin. “",
+        "max_topic_prob": 0.7192083597183228,
+        "normalized_position": 0.37700205338809034,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Then he held out his palm. “",
+        "max_topic_prob": 0.8073956966400146,
+        "normalized_position": 0.6030845336825258,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He could see the outline of his fingers as he moved his hand. “",
+        "max_topic_prob": 0.7517819404602051,
+        "normalized_position": 0.4460934089917067,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Kyle held out his hand. “",
+        "max_topic_prob": 0.7449434399604797,
+        "normalized_position": 0.26000290993743636,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 490
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Kyle held out his hand. “",
+        "max_topic_prob": 0.744943380355835,
+        "normalized_position": 0.2783355157864106,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 616
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The guy pushed off the doorframe and held out his hand. “",
+        "max_topic_prob": 0.7138014435768127,
+        "normalized_position": 0.0405936272370144,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Seth held him a little more tightly. “",
+        "max_topic_prob": 0.7036001682281494,
+        "normalized_position": 0.8504292157718609,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 419
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "He held up a hand. “",
+        "max_topic_prob": 0.8954811096191406,
+        "normalized_position": 0.6810132094643635,
+        "tertile": "end",
+        "chapter_index": 66,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "He held his hands up. “",
+        "max_topic_prob": 0.8904711008071899,
+        "normalized_position": 0.3660908695021048,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "He held his palms up. “",
+        "max_topic_prob": 0.8692201375961304,
+        "normalized_position": 0.40622731891421104,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I held my hands up. “",
+        "max_topic_prob": 0.7664767503738403,
+        "normalized_position": 0.5292495282334156,
+        "tertile": "middle",
+        "chapter_index": 49,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I held my hands up. “",
+        "max_topic_prob": 0.7664767503738403,
+        "normalized_position": 0.7354478153578168,
+        "tertile": "end",
+        "chapter_index": 70,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I held my hands up. “",
+        "max_topic_prob": 0.7664766311645508,
+        "normalized_position": 0.43649295979097114,
+        "tertile": "middle",
+        "chapter_index": 41,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He held out his hand.",
+        "max_topic_prob": 0.8576675057411194,
+        "normalized_position": 0.3640530365035194,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 179
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He held out his hand.",
+        "max_topic_prob": 0.8576675057411194,
+        "normalized_position": 0.7515141594368964,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He held his hands clasped in front of him, though. “",
+        "max_topic_prob": 0.7825760841369629,
+        "normalized_position": 0.6749058765755442,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He clasped his hands together and grinned. “",
+        "max_topic_prob": 0.7551848888397217,
+        "normalized_position": 0.3951546898019316,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Pressed his hands to the tabletop. “",
+        "max_topic_prob": 0.7526034712791443,
+        "normalized_position": 0.9541659846128663,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 519
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He held the note up, stuck to one finger. “",
+        "max_topic_prob": 0.7275406122207642,
+        "normalized_position": 0.9718448191193322,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 627
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.010041077133728891,
+        "n_sentences": 88
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.013447432762836185,
+        "n_sentences": 77
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.017695295640914977,
+        "n_sentences": 82
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.013955015596782137,
+        "n_sentences": 85
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.016506037443225877,
+        "n_sentences": 149
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.009960451149846198,
+        "n_sentences": 68
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.03046521202140799,
+        "n_sentences": 74
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.010319573901464714,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.001749818616362938,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.002938706968933669,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0026843741169821985,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.003068829460762823,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.000922722029988466,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.001483679525222552,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 78
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.7",
+    "taxonomy_main_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

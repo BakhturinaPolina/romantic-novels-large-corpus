@@ -1464,7 +1464,7 @@ Run: `v4_l12_granular_final_call49` — 42 topics.
 - **Old taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
 - **New category:** **ARC_2 — escalation conflict**
 - **Normalised category:** ARC_2 — escalation conflict
-- **Mixed:** True
+- **Mixed:** False
 - **Main-couple prob:** 0.85 | non-couple: 0.1
 
 **Stage-08 snippets**

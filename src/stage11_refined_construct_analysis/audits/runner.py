@@ -332,6 +332,7 @@ def run_pass(
     prior_notes: Optional[Mapping[str, Any]] = None,
     dry_run: bool = False,
     api_key: Optional[str] = None,
+    model: Optional[str] = None,
 ) -> Dict[str, Any]:
     hyp = str(hypothesis).upper()
     prompt = load_hypothesis_prompt(cfg, hyp)
@@ -378,8 +379,9 @@ def run_pass(
         if use_dry
         else None
     )
+    model_id = str(model or cfg.section("llm", "primary_model"))
     result = chat_json(
-        model=str(cfg.section("llm", "primary_model")),
+        model=model_id,
         system=messages["system"],
         user=messages["user"],
         temperature=float(cfg.section("llm", "temperature")),
@@ -420,6 +422,7 @@ def run_hypothesis_audit(
     resume: bool = True,
     api_key: Optional[str] = None,
     limit: int = 0,
+    model: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Run Pass A → B → C for each topic; write lexical/contextual/adjudication jsonl."""
     hyp = str(hypothesis).upper()
@@ -442,8 +445,24 @@ def run_hypothesis_audit(
     if hyp == "H5":
         LOGGER.info("H5 reuse: loaded %d H1/H4 tenderness priors", len(priors_tend))
 
-    done_c = completed_topic_ids(paths["C"]) if resume else set()
-    pending = [t for t in ids if t not in done_c]
+    model_id = str(model or cfg.section("llm", "primary_model"))
+    LOGGER.info("%s audit model: %s", hyp, model_id)
+
+    # Fresh re-run: archive prior jsonl so new prompt/model results are not mixed with old.
+    if not resume:
+        stamp = time.strftime("%Y%m%d_%H%M%S")
+        archive = out / f"archive_before_rerun_{stamp}"
+        archive.mkdir(parents=True, exist_ok=True)
+        for path in paths.values():
+            if path.exists():
+                dest = archive / path.name
+                path.replace(dest)
+                LOGGER.info("Archived %s → %s", path.name, dest.relative_to(cfg.root))
+        done_c = set()
+        pending = list(ids)
+    else:
+        done_c = completed_topic_ids(paths["C"])
+        pending = [t for t in ids if t not in done_c]
     LOGGER.info(
         "%s audit: %d topics (%d already adjudicated, %d pending)",
         hyp,
@@ -495,6 +514,7 @@ def run_hypothesis_audit(
                 api_key=api_key,
                 prior_h3=prior,
                 prior_notes=prior_notes,
+                model=model_id,
             )
             row_b = run_pass(
                 cfg,
@@ -506,6 +526,7 @@ def run_hypothesis_audit(
                 api_key=api_key,
                 prior_h3=prior,
                 prior_notes=prior_notes,
+                model=model_id,
             )
             row_c = run_pass(
                 cfg,
@@ -518,6 +539,7 @@ def run_hypothesis_audit(
                 api_key=api_key,
                 prior_h3=prior,
                 prior_notes=prior_notes,
+                model=model_id,
             )
         except Exception as exc:
             # Keep the batch alive across transient OpenRouter 504s; resume will retry.
@@ -541,7 +563,7 @@ def run_hypothesis_audit(
         "n_newly_audited": n_run,
         "n_adjudicated_total": len(completed_topic_ids(paths["C"])),
         "dry_run": bool(dry_run or not resolve_api_key(api_key)),
-        "model": str(cfg.section("llm", "primary_model")),
+        "model": model_id,
         "outputs": {k: str(v.relative_to(cfg.root)) for k, v in paths.items()},
         "n_h3_priors_reused": len(priors_h3) if hyp == "H4" else 0,
         "n_tenderness_priors": len(priors_tend) if hyp == "H5" else 0,
