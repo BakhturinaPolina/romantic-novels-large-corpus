@@ -1638,14 +1638,14 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I1",
-    "hea_code":"H2_1",
+    "hea_code":"HEA_CONFIRMED",
     "security_code":"UNKNOWN",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H2",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -1653,13 +1653,12 @@
     "secondary_name":"Positive Resolution, Relief & Emotional Payoff",
     "proposed_constructs":[
       "Commitment declarations and HEA closure",
-      "H2_1",
       "Positive emotional payoff and relief",
       "Reconciliation and emotional resolution"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H2:KEEP"
+      "H2:CONFIRM"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -3535,7 +3534,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"MIXED",
-    "hea_code":"H2_6",
+    "hea_code":"HEA_CONFIRMED",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
@@ -3551,12 +3550,11 @@
     "proposed_constructs":[
       "Commitment Symbols & Love Tokens (I0\/I5)",
       "Emotional Bonding via Symbolic Exchange (I5)",
-      "H2_6",
       "Reconciliation & HEA Declarations (I5)"
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
-      "H2:KEEP"
+      "H2:CONFIRM_HEA"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -3612,14 +3610,14 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I0",
-    "hea_code":"H2_1",
+    "hea_code":"UNKNOWN",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H3",
-    "lexical_context_agreement":"H2",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -3627,13 +3625,11 @@
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
       "Ambivalence Toward Closure",
-      "H2_1",
       "HEA\/HFN Emotional Settlement",
       "Reconciliation & Commitment Resolution"
     ],
     "adjudication_actions":[
-      "H1:REINTERPRET",
-      "H2:KEEP"
+      "H1:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -3851,7 +3847,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I0",
-    "hea_code":"H2_2",
+    "hea_code":"HEA_CONFIRMED",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
@@ -3867,12 +3863,11 @@
     "proposed_constructs":[
       "Commitment Declarations & HEA Closure",
       "Everyday Relational Bonding & Domestic Continuity",
-      "H2_2",
       "Reconciliation & Conflict Resolution"
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H2:KEEP"
+      "H2:PASS_C"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -7519,7 +7514,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I2",
-    "hea_code":"H2_2",
+    "hea_code":"UNKNOWN",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
@@ -7534,16 +7529,14 @@
     "secondary_name":"Positive Resolution, Relief & Emotional Payoff",
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
-      "H2_2",
       "Positive resolution and relief",
       "Reconciliation and relational repair"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
-      "H2:KEEP"
+      "H1:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
+    "weighted_weight":0.8,
     "manual_review_required":false
   },
   {
@@ -9096,7 +9089,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I0",
-    "hea_code":"H2_0",
+    "hea_code":"HEA_CONDITIONAL_TRAJECTORY",
     "security_code":"MIXED",
     "care_protection_code":null,
     "darkness_code":null,
@@ -9111,13 +9104,12 @@
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
       "Ambivalence Toward Future Together",
-      "H2_0",
       "HEA\/HFN Domestic Consolidation",
       "Reconciliation & Commitment Resolution"
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
-      "H2:KEEP"
+      "H2:H2_NAME_INVOCATION in the second tertile with primary taxonomy 4.5 confirms a named-character commitment anchor mid-narrative. Secondary 3.3 flags residual ambivalence still active at this position, meaning the HEA is asserted but not yet fully resolved. Confession, apology, or 'I missed you' framing must be ruled out as the sole payoff driver; the name invocation must carry forward-facing relational weight (promise, claim, or mutual re-anchoring) to qualify. If the invocation functions as a pivot that closes the ambivalence arc rather than merely acknowledging it, the HEA trajectory is intact."
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -9651,24 +9643,24 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":null,
-    "hea_code":"H2_4",
+    "hea_code":"HEA_PUBLIC_UNION",
     "security_code":"UNKNOWN",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H2",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"5.3a",
     "current_taxonomy_name":"Romantic Social Rituals & Public Couple Recognition",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-      "H2_4"
+
     ],
     "adjudication_actions":[
-      "H2:KEEP"
+      "H2:CONFIRM_HEA"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
@@ -11796,7 +11788,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I0",
-    "hea_code":"H2_7",
+    "hea_code":"CONDITIONAL_HEA \u2014 qualifies under 4.5 only if romantic commitment is narratively terminal and structurally independent of the 5.1 sibling-concern arc; if romantic resolution is contingent on or conflated with sibling repair, reclassify primary to 5.1 and downgrade 4.5 to secondary with HEA_UNCONFIRMED status.",
     "security_code":"UNKNOWN",
     "care_protection_code":null,
     "darkness_code":null,
@@ -11811,13 +11803,12 @@
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
       "Family & Kinship Bonding (non-physical)",
-      "H2_7",
       "HEA\/HFN Resolution",
       "Reconciliation & Commitment Declarations"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H2:KEEP"
+      "H2:EVALUATE_HEA_VALIDITY"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -13855,7 +13846,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I2",
-    "hea_code":"H2_5",
+    "hea_code":"UNKNOWN",
     "security_code":"E",
     "care_protection_code":null,
     "darkness_code":null,
@@ -13870,13 +13861,11 @@
     "secondary_name":"Secrets, Misunderstandings & Hidden Information",
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
-      "H2_5",
       "Reconciliation after conflict or misunderstanding",
       "Vulnerability disclosure and trust-building"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
-      "H2:KEEP"
+      "H1:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -16917,7 +16906,7 @@
     "non_couple_prob":0.0,
     "unclear_prob":1.0,
     "intimacy_code":"I2",
-    "hea_code":"H2_5",
+    "hea_code":"UNKNOWN",
     "security_code":"{'CELL_A': 'Emotional', 'CELL_B': 'Material', 'CELL_C': 'Status\/Appearance', 'CELL_D': 'Mixed'}",
     "care_protection_code":null,
     "darkness_code":null,
@@ -16932,13 +16921,11 @@
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
-      "H2_5",
       "Reconciliation and repair of relational rupture",
       "Vulnerability disclosure under distress"
     ],
     "adjudication_actions":[
-      "H1:KEEP",
-      "H2:KEEP"
+      "H1:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
