@@ -207,38 +207,38 @@ Run: `v4_l12_granular_final_call49`
 
 ### [H4 — Protection vs possession](#h4) — 32 topics
 
-- [6 — Whispered Reassurance](#topic-h4-6) — UNKNOWN
-- [31 — Keeping Watch While Others Sleep](#topic-h4-31) — UNKNOWN
-- [36 — Eagerly Offering to Help](#topic-h4-36) — MIXED
-- [45 — Reassured Everything Will Be Fine](#topic-h4-45) — MIXED
-- [46 — Asking Someone to Trust You](#topic-h4-46) — UNKNOWN
-- [56 — Promising Never to Hurt You](#topic-h4-56) — MIXED
-- [70 — Keeping Watch While She Sleeps](#topic-h4-70) — UNKNOWN
-- [83 — Reassured About Eating Regularly](#topic-h4-83) — UNKNOWN
-- [88 — Checking Her Feverish Temperature](#topic-h4-88) — UNKNOWN
-- [96 — Confessing Long-Standing Worry](#topic-h4-96) — UNKNOWN
-- [119 — Offering to Keep Her Safe](#topic-h4-119) — UNKNOWN
-- [161 — Reassuring Squeeze on The Shoulder](#topic-h4-161) — UNKNOWN
-- [172 — Reporting to The Security Officer](#topic-h4-172) — UNKNOWN
-- [173 — Waiting For Him to Wake](#topic-h4-173) — MIXED
-- [175 — Gentleman Offers Steadying Support](#topic-h4-175) — MIXED
-- [190 — Offering to Get Someone Cleaned Up](#topic-h4-190) — UNKNOWN
-- [193 — Nurse Arranged After Hospital Release](#topic-h4-193) — UNKNOWN
-- [224 — Encouraging Words From An Angel](#topic-h4-224) — MIXED
-- [240 — Unsure How to Offer Comfort](#topic-h4-240) — UNKNOWN
-- [247 — Promising You Will Not Be Alone](#topic-h4-247) — UNKNOWN
-- [273 — Mentor Gives Firm Instructions](#topic-h4-273) — UNKNOWN
-- [277 — Promising to Handle The Lawyer](#topic-h4-277) — UNKNOWN
-- [289 — Quick Peck on The Forehead](#topic-h4-289) — UNKNOWN
-- [299 — Pledging to Have Your Back](#topic-h4-299) — MIXED
-- [307 — Hauling Someone Up The Stairs](#topic-h4-307) — MIXED
-- [340 — Patience Tested Through Small Trials](#topic-h4-340) — MIXED
-- [355 — Blanket Draped Over Someone](#topic-h4-355) — UNKNOWN
-- [356 — Admitting Exhaustion After A Long Day](#topic-h4-356) — UNKNOWN
-- [358 — Reassuring Squeeze of The Hand](#topic-h4-358) — MIXED
-- [372 — Told to Keep Up Strength](#topic-h4-372) — MIXED
-- [293 — Admitting Jealousy Out Loud](#topic-h4-293) — UNKNOWN
-- [315 — Claiming Her As His Own](#topic-h4-315) — UNKNOWN
+- [6 — Whispered Reassurance](#topic-h4-6) — H4_0 — off target
+- [31 — Keeping Watch While Others Sleep](#topic-h4-31) — H4_0 — off target
+- [36 — Eagerly Offering to Help](#topic-h4-36) — H4_2 — practical care
+- [45 — Reassured Everything Will Be Fine](#topic-h4-45) — H4_1 — reassurance tenderness
+- [46 — Asking Someone to Trust You](#topic-h4-46) — H4_1 — reassurance tenderness
+- [56 — Promising Never to Hurt You](#topic-h4-56) — H4_1 — reassurance tenderness
+- [70 — Keeping Watch While She Sleeps](#topic-h4-70) — H4_0 — off target
+- [83 — Reassured About Eating Regularly](#topic-h4-83) — H4_2 — practical care
+- [88 — Checking Her Feverish Temperature](#topic-h4-88) — H4_0 — off target
+- [96 — Confessing Long-Standing Worry](#topic-h4-96) — H4_1 — reassurance tenderness
+- [119 — Offering to Keep Her Safe](#topic-h4-119) — H4_5 — external protection physical
+- [161 — Reassuring Squeeze on The Shoulder](#topic-h4-161) — H4_0 — off target
+- [172 — Reporting to The Security Officer](#topic-h4-172) — MIXED
+- [173 — Waiting For Him to Wake](#topic-h4-173) — H4_0 — off target
+- [175 — Gentleman Offers Steadying Support](#topic-h4-175) — H4_0 — off target
+- [190 — Offering to Get Someone Cleaned Up](#topic-h4-190) — H4_1 — reassurance tenderness
+- [193 — Nurse Arranged After Hospital Release](#topic-h4-193) — H4_0 — off target
+- [224 — Encouraging Words From An Angel](#topic-h4-224) — H4_0 — off target
+- [240 — Unsure How to Offer Comfort](#topic-h4-240) — H4_1 — reassurance tenderness
+- [247 — Promising You Will Not Be Alone](#topic-h4-247) — H4_1 — reassurance tenderness
+- [273 — Mentor Gives Firm Instructions](#topic-h4-273) — H4_0 — off target
+- [277 — Promising to Handle The Lawyer](#topic-h4-277) — H4_1 — reassurance tenderness
+- [289 — Quick Peck on The Forehead](#topic-h4-289) — H4_0 — off target
+- [299 — Pledging to Have Your Back](#topic-h4-299) — H4_1 — reassurance tenderness
+- [307 — Hauling Someone Up The Stairs](#topic-h4-307) — H4_1 — reassurance tenderness
+- [340 — Patience Tested Through Small Trials](#topic-h4-340) — H4_0 — off target
+- [355 — Blanket Draped Over Someone](#topic-h4-355) — H4_2 — practical care
+- [356 — Admitting Exhaustion After A Long Day](#topic-h4-356) — H4_1 — reassurance tenderness
+- [358 — Reassuring Squeeze of The Hand](#topic-h4-358) — H4_1 — reassurance tenderness
+- [372 — Told to Keep Up Strength](#topic-h4-372) — H4_0 — off target
+- [293 — Admitting Jealousy Out Loud](#topic-h4-293) — H4_8 — jealous possessiveness
+- [315 — Claiming Her As His Own](#topic-h4-315) — H4_8 — jealous possessiveness
 
 ### [H5 — Darkness vs tenderness boundaries](#h5) — 22 topics
 
@@ -358,8 +358,8 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 | 305 — Confessing A Lifelong Regret | 4.5 — Reconciliation, Commitments & HEA | I2 — reassurance | False |
 | 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
-| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
-| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
+| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
+| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
@@ -369,23 +369,23 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 | 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
-| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
-| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
+| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
+| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
 | 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
-| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
+| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | False |
 | 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | I0 — off target | True |
 | 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
-| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
-| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
+| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
+| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
 | 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
-| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | True |
+| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | I2 — reassurance | False |
 | 82 — Touch Her and Your Family Suffers | 7.2 — Violence, Threats & Non-Sexual Coercion | MIXED | True |
 | 199 — Shoved to His Knees | 7.4 — Unwanted or Coercive Sexual Contact | I0 — off target | False |
 | 345 — Older Man Trading Shelter For Sex | 7.4 — Unwanted or Coercive Sexual Contact | I9 — coercive sexuality | False |
@@ -3958,7 +3958,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -3990,7 +3990,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -4474,7 +4474,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -4530,7 +4530,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -4686,7 +4686,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -4986,7 +4986,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -5034,7 +5034,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -5322,7 +5322,7 @@ Topics with a non-null `intimacy_code`: **98**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **I2 — reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -6254,8 +6254,8 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 | 305 — Confessing A Lifelong Regret | 4.5 — Reconciliation, Commitments & HEA | S1 — emotional security reassurance | False |
 | 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
-| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | S11 — practical help other | True |
-| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | S11 — practical help other | False |
+| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
 | 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | S3 — emotional security trust | False |
 | 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
 | 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
@@ -6265,23 +6265,23 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 | 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | S7 — physical protection | False |
 | 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
-| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
+| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
 | 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
-| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
 | 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
 | 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
 | 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
-| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
-| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
+| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
+| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | False |
 | 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
 | 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | S5 — practical care everyday | True |
 | 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
 | 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | S1 — emotional security reassurance | True |
-| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | True |
+| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | S0 — off target | False |
 | 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | S1 — emotional security reassurance | False |
 | 315 — Claiming Her As His Own | 4.7 — Jealousy & Possessive Romance Conflict | S1 — emotional security reassurance | False |
 | 59 — Mother's Disapproval Looms | 5.1 — Family, Kinship & Parenthood | S0 — off target | False |
@@ -8398,7 +8398,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S11 — practical help other**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
@@ -8430,7 +8430,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S1 — emotional security reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -8915,7 +8915,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -8971,7 +8971,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -9127,7 +9127,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
@@ -9427,7 +9427,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S1 — emotional security reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -9475,7 +9475,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S1 — emotional security reassurance**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -9763,7 +9763,7 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **New category:** **S0 — off target**
-- **Mixed:** True
+- **Mixed:** False
 - **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
@@ -10676,45 +10676,45 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 | Topic | Old taxonomy | New category | Mixed |
 | --- | --- | --- | --- |
-| 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 83 — Reassured About Eating Regularly | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 88 — Checking Her Feverish Temperature | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | False |
-| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | UNKNOWN | True |
-| 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
-| 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | UNKNOWN | False |
-| 315 — Claiming Her As His Own | 4.7 — Jealousy & Possessive Romance Conflict | UNKNOWN | False |
+| 6 — Whispered Reassurance | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 31 — Keeping Watch While Others Sleep | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 36 — Eagerly Offering to Help | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_2 — practical care | False |
+| 45 — Reassured Everything Will Be Fine | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 46 — Asking Someone to Trust You | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 56 — Promising Never to Hurt You | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | True |
+| 70 — Keeping Watch While She Sleeps | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 83 — Reassured About Eating Regularly | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_2 — practical care | False |
+| 88 — Checking Her Feverish Temperature | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 96 — Confessing Long-Standing Worry | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 119 — Offering to Keep Her Safe | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_5 — external protection physical | False |
+| 161 — Reassuring Squeeze on The Shoulder | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 172 — Reporting to The Security Officer | 4.6 — Emotional Safety, Reassurance & Caretaking | MIXED | True |
+| 173 — Waiting For Him to Wake | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 175 — Gentleman Offers Steadying Support | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 190 — Offering to Get Someone Cleaned Up | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 193 — Nurse Arranged After Hospital Release | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 224 — Encouraging Words From An Angel | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 240 — Unsure How to Offer Comfort | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 247 — Promising You Will Not Be Alone | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 273 — Mentor Gives Firm Instructions | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 277 — Promising to Handle The Lawyer | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | True |
+| 289 — Quick Peck on The Forehead | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 299 — Pledging to Have Your Back | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 307 — Hauling Someone Up The Stairs | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | False |
+| 340 — Patience Tested Through Small Trials | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | True |
+| 355 — Blanket Draped Over Someone | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_2 — practical care | True |
+| 356 — Admitting Exhaustion After A Long Day | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | True |
+| 358 — Reassuring Squeeze of The Hand | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_1 — reassurance tenderness | True |
+| 372 — Told to Keep Up Strength | 4.6 — Emotional Safety, Reassurance & Caretaking | H4_0 — off target | False |
+| 293 — Admitting Jealousy Out Loud | 4.7 — Jealousy & Possessive Romance Conflict | H4_8 — jealous possessiveness | False |
+| 315 — Claiming Her As His Own | 4.7 — Jealousy & Possessive Romance Conflict | H4_8 — jealous possessiveness | False |
 
 ### Topic 6 — Whispered Reassurance {#topic-h4-6}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10740,20 +10740,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4-neutral**
-  - All four representations converge on conversational exchange vocabulary: speech acts (whispered, said, asked, replied, uttered, blurted, confessed), manner adverbs (softly, kindly, solemnly, tentatively, eagerly, absently, dramatically), and hedging/affect markers (hesitation, puzzled, unsure, enthusiasm). No lexical items signal an external threat requiring protection, nor do any items encode possessive claiming, surveillance, isolation, or coercive control. The register is dialogic and emotionally expressive without directional power asymmetry. Autonomy of all parties remains unmarked and uncontested across all four lists.
-- **Pass B — contextual:** **CELL_D — CELL D**
-  - The dominant code CELL_D reflects that the majority of fragments are short, decontextualised dialogue tags or sentence fragments (she muttered, she whispered, she said firmly, etc.) that carry insufficient surrounding context to classify beyond their surface register — interpersonal, conversational, mildly tense in places. CELL_A fragments from BOOK_003 are similarly minimal ('she asked') but cluster distinctly. BOOK_004_1 is non-fiction/philosophical prose coded CELL_C. No fragment contains the markers required to distinguish protective behaviour from possessive or coercive behaviour: there is no external threat, no guarding action, no controlling ultimatum, and no ownership framing. The hesitation and refusals (BOOK_002_2, BOOK_005_1) suggest interpersonal negotiation rather than coercion, but context is too sparse to confirm directionality.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists are dominated by speech-act and dialogue-manner vocabulary (whispered, said, asked, replied, mumbled, uttered, drawled, tentatively, hesitation, eagerly). There is no lexical signal of care, protection, possessiveness, control, or emotional support. The topic describes conversational style and verbal exchange mechanics, placing it firmly off-target for any H4 care/protection dimension.
+- **Pass B — contextual:** **H4_0 — off target**
+  - Every sentence in this topic consists of decontextualised dialogue fragments — single-word responses ('Yes.', 'No.', 'Fine.'), brief speech-tag snippets ('she muttered.', 'she whispered.', 'she asked.'), or a philosophical aside about the Universe. None contain any discernible care, protection, possessiveness, control, or relational-dynamic content relevant to the H4 taxonomy. All are coded H4_0 (off_target). No external threat, no claiming language, and no care/protection behaviour is present.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three passes converge on off-target: lexical consensus H4_0, contextual dominant H4_0, and the prior H3 security decomposition confirmed S0 (off_target) for the same topic. The taxonomy label '4.6 Emotional Safety, Reassurance & Caretaking' reflects a category header rather than evidence of actual care or protection work in the topic tokens themselves. No external threat, possessive claiming, or caretaking signal is present in the content. No split or reinterpretation is warranted; H4_0 is confirmed.
 
 ---
 
 ### Topic 31 — Keeping Watch While Others Sleep {#topic-h4-31}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10775,20 +10776,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4_ambiguous_low — H4 ambiguous low**
-  - Topic 31 clusters around rest and sleep with an overlay of anxious, deferential interpersonal tone. Absence of external threat markers and presence of polite uncertainty language places this below H4 threshold for protective romance coding. Deference signals warrant monitoring but do not constitute possessive claiming or coercive control without stronger corroborating lexical evidence.
-- **Pass B — contextual:** **H4_ABSENT — H4 ABSENT**
-  - Topic 31 clusters around sleep, napping, waking, and rest in romantic or domestic settings. H4 coding requires an identifiable external threat that triggers protective behavior distinguishable from possessive or controlling dynamics. None of the 20 excerpts contain an external threat, nor do they contain language of coercive control or possessive claiming. The content is mundane domestic interaction — teasing about snoring, urging rest, expressing relief at waking — with no H4-relevant dynamics present across any cell group (CELL_B, CELL_C, CELL_D).
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists centre on sleep/rest states (sleep, bed, asleep, wake, nap, woke, awake) and ancillary terms (rested, comfortable, uncertain, politely, session, instructions, longest, gotta). There is no lexical signal of care, protection, possessiveness, control, or emotional support directed between partners. The vocabulary describes a mundane rest/wakefulness scenario with no romance-care dimension, placing all four representations firmly off-target.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in this topic revolve around sleep, napping, waking, and rest — mundane domestic/physical-state commentary with no care, protection, possessiveness, or control dynamics present. None of the sentences contain emotional support, external threat response, partner restriction, or claiming language. The entire topic is off-target relative to the H4 care/protection taxonomy.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three signals converge on off-target: lexical consensus H4_0, contextual dominant H4_0, and the prior H3 security decomposition (S0, KEEP). The taxonomy flags 4.6 Emotional Safety, Reassurance & Caretaking as primary and 5.1 Family, Kinship & Parenthood as secondary, which would ordinarily point toward H4_1 or H4_4, but neither Pass A/B nor the contextual dominant analysis found sufficient evidence of care or protection content to override the dual H4_0 consensus. The taxonomy metadata introduces a weak secondary signal only; it does not constitute evidence of an external threat (ruling out H4_5/H4_6), possessive or coercive dynamics (ruling out H4_7–H4_11), or balanced mutual care (ruling out H4_12). Consistent with the H3 adjudication logic, the off-target designation holds. KEEP H4_0.
 
 ---
 
 ### Topic 36 — Eagerly Offering to Help {#topic-h4-36}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_2 — practical care**
+- **Mixed:** False
+- **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
 
@@ -10806,20 +10808,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4_benign_help_exchange — H4 benign help exchange**
-  - Lexical signals across all four extraction methods converge on a polite, voluntary assistance interaction. Main keywords anchor a help-request frame; KeyBERT adds willingness and appreciation markers indicating consent and reciprocity; POS tokens reflect outcome-oriented but non-coercive framing; MMR introduces politeness registers and mild emotional stakes without dominance or control cues. No possessive claiming, coercive pressure, or external threat vector is present. Autonomy of both parties appears intact.
-- **Pass B — contextual:** **H4**
-  - All 20 sentences are offers or requests for help expressed in direct, cooperative language. They are uniformly coded H4 because they represent straightforward assistance-seeking or assistance-offering within a relational context. The distinguishing criteria for this topic — external threat (required for protective behavior coding) and possessive/coercive language (required for claiming/control coding) — are absent across all cells and all books. Probability scores are consistently high (0.41–0.86), reflecting strong model confidence in the H4 classification. The slight probability drop in BOOK_002_4 through BOOK_002_6 likely reflects shorter, more ambiguous phrasing, but the semantic content remains within H4 boundaries.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_2 — practical care**
+  - Main keywords ('help', 'need', 'helping', 'assistance', 'helped', 'let') and KeyBERT keywords ('provided', 'willing', 'requested', 'promptly', 'eagerly', 'appreciate') consistently signal practical, task-oriented assistance being offered or received — the hallmark of H4_2 practical_care. MMR reinforces this with 'promptly', 'appreciate', 'eagerly', 'pleased', 'options', and the deferential address 'mister'/'sir', all pointing to a service or help-giving dynamic. POS keywords ('task', 'options', 'success', 'sentence', 'sadness', 'fault', 'unlikely') are more abstract and emotionally mixed, lacking clear romance-novel care framing, which pulls toward H4_0 off_target for that representation alone. No external threat, no partner restriction, and no possessive or coercive cues are present anywhere. The dominant signal across three of four representations is practical assistance, yielding H4_2 as consensus.
+- **Pass B — contextual:** **H4_2 — practical care**
+  - The overwhelming majority of sentences are simple offers or expressions of willingness to help ('Can I help you?', 'I'll help you.', 'Sure, I'll be glad to help.'). These represent practical, task-oriented assistance with no emotional depth, no external threat, no possessive or controlling language, and no romantic intensity — fitting H4_2 (practical care). One sentence ('Can I ask you a question?') is purely conversational filler with no care content, coded H4_0 (off-target). No claiming language, no jealousy, no coercion, and no identifiable threat source are present.
+- **Pass C — adjudication:** **H4_2 — practical care**
+  - All three passes converge on practical care (H4_2): lexical consensus is H4_2, contextual dominant is H4_2, and the prior H3 decomposition coded this topic as S11 (practical_help_other) with a RETAXONOMIZE action. The taxonomy placement in 4.6 Emotional Safety, Reassurance & Caretaking is inconsistent with this convergence — H4_2 belongs in a practical care/help cluster rather than an emotional reassurance cluster. No external threat is evidenced, ruling out H4_5/H4_6; no partner restriction signals are present, ruling out H4_9–H4_11. The emotional-reassurance signal (H4_1/H4_4) that the 4.6 taxonomy label implies is not supported by either Pass A/B coding or the H3 decomposition. RETAXONOMIZE is therefore confirmed, moving the topic out of 4.6 into the practical care cluster. Manual review remains flagged to verify that the underlying token distribution genuinely reflects practical-help content and that no emotional-reassurance signal was systematically underweighted across passes.
 
 ---
 
 ### Topic 45 — Reassured Everything Will Be Fine {#topic-h4-45}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_1 — reassurance tenderness**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10845,20 +10848,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **reassurance_exchange — reassurance exchange**
-  - Lexical cluster centers on reassurance and acknowledgment ('assure', 'assured', 'smoothly', 'alright', 'okay', 'fine') directed toward an addressed party ('honey', 'ms', 'sir', 'lord'), with 'injured' and 'problems' signaling an external stressor being managed. No possessive or coercive markers present; the speaker is orienting toward calming and informing rather than controlling. 'Urge' and 'repeated' suggest persistence in reassurance rather than pressure on the partner's autonomy. External threat framing is implied but not specified.
-- **Pass B — contextual:** **H4**
-  - All 20 excerpts across CELL_A, CELL_B, and CELL_D consist exclusively of welfare-check and reassurance language ('Are you okay?', 'I'm fine', 'It's going to be all right', 'Your wound…I'm fine'). This pattern is consistent with H4 external-threat protection dynamics: characters are checking on one another following implied injury or danger. The wound reference in BOOK_001_6 and the collective safety framing in BOOK_003_1 confirm an external threat context. There is no language of possession, jealousy, isolation, or coercive control. The concern expressed is mutual and welfare-oriented, not dominance-oriented.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - Main keywords ('fine, okay, everything, right, honey, alright') are classic soothing/reassurance language directed at a partner. KeyBERT reinforces this with 'assured, assure, smoothly, incredibly' — all pointing to calming and comforting speech acts. POS adds 'sir, lord' (address terms) alongside 'problems', suggesting someone is being told their concerns are handled. MMR's 'assure, assured, acknowledged, smoothly, appreciate' further confirm a reassurance register. The word 'injured' in MMR is the only hint of distress, but it is embedded in a cluster of soothing/acknowledgment terms, suggesting the injury is being addressed reassuringly rather than signalling an external threat scenario. No possessive, controlling, or external-threat cues are present. The dominant pattern is verbal reassurance and tenderness.
+- **Pass B — contextual:** **H4_1 — reassurance tenderness**
+  - All sentences in this topic consist of brief reassurance and wellness-check exchanges ('I'm fine,' 'Are you okay?', 'It's going to be all right,' etc.). These are classic reassurance and tenderness utterances — characters checking on each other's wellbeing or offering verbal comfort. There is no external threat identified, no possessive or claiming language, no coercive framing, and no practical/material care action. The entire topic coheres around H4_1 (reassurance_tenderness) at 100%.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Lexical consensus (H4_1) and contextual dominant (H4_1) are in full agreement. Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking maps directly onto H4_1 (reassurance_tenderness). The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts describes the speech-act vehicle through which reassurance is delivered, not a distinct care or protection function, so no split is warranted. No external threat is evidenced, ruling out H4_5 or H4_6; no partner restriction is present, ruling out H4_9–H4_11. The H3 decomposition (S1 = emotional_reassurance) maps cleanly onto H4_1 with no construct drift. KEEP with care_protection_code H4_1.
 
 ---
 
 ### Topic 46 — Asking Someone to Trust You {#topic-h4-46}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -10888,20 +10892,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **possessive_claiming — possessive claiming**
-  - Lexical cluster centers on trust/betrayal dyad with second-person address ('you', 'me', 'don') and KeyBERT terms 'willingly', 'deserve', 'warned', 'insisted', 'admit' signaling coercive accountability framing. No external threat agent present. 'Instincts', 'twisting', 'worries' across KeyBERT/POS/MMR indicate internal suspicion projected onto partner. 'Percent', 'concrete', 'options', 'hesitation' suggest conditional trust calculus used to constrain partner behavior. Pattern is possessive claiming: trust deployed as leverage over partner autonomy rather than response to external threat. Autonomy effect is restricting.
-- **Pass B — contextual:** **H4_ABSENT — H4 ABSENT**
-  - {'coding_principle': "H4 is coded PRESENT only when an external threat to a romantic partner or protected person is identifiable AND a protective response is framed around that threat. Possessive claiming ('you are mine'), coercive control ('you must obey'), and internal relational pressure are coded separately and do NOT qualify as H4 protection. Trust language alone — whether solicited, affirmed, or questioned — does not constitute H4 unless paired with an external threat context.", 'BOOK_001_1': 'Theological/organizational critique context; no romance, no threat, no protection dynamic.', 'BOOK_002_1': 'ONLY sentence coded H4_THREAT: multiple actors announce coercive intent toward a target. This is an external threat scenario. However, no protective agent is present in the excerpt, so H4 protection is flagged as threat-present but protection-response absent. Coded H4_THREAT to mark the threat source for downstream analysis.', 'BOOK_003_1': 'Rhetorical self-questioning about trust in a hotel room; ambiguous but no external threat or protective framing.', 'BOOK_003_2': 'Emotional sharing/trust question; no threat or protection dynamic.', 'BOOK_004_1': 'Simple trustworthiness attribution; no threat or protection.', 'BOOK_005_1': 'Self-description of respectability; no romance threat or protection.', 'BOOK_006_1_to_6': 'Repeated trust solicitation and affirmation in what appears to be a romantic or close relational context. No external threat identified; no possessive claiming language. Pure relational trust dialogue.', 'BOOK_007_1_to_3': 'Trust affirmations and reassurances in interpersonal dialogue; no external threat, no possessive or coercive framing.', 'BOOK_008_1_to_5': 'Trust evaluations across relational contexts including a dog comparison; no external threat, no possessive claiming, no coercive control markers.'}
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords (trust, trusted, betrayed, betray, betrayal) center on a breach-of-trust dynamic without specifying whether the betrayer is an external party or the partner, making the threat source ambiguous. KeyBERT terms (instincts, willingly, worries, warned, deserve, admit) suggest internal deliberation and emotional reckoning around trust decisions, but do not resolve the direction of harm. POS and MMR terms (instincts, worries, twisting, hesitation, options, heal) reinforce a sense of psychological conflict and weighing of choices, consistent with processing a betrayal. No clear external threat (ruling out H4_5/H4_6), no explicit partner restriction (ruling out H4_9–H4_11), and no possessive claiming (ruling out H4_7/H4_8). The cluster sits at the intersection of emotional vulnerability and relational rupture without sufficient cues to resolve into a single clean code, warranting H4_13 (mixed/unclear).
+- **Pass B — contextual:** **H4_1 — reassurance tenderness**
+  - The overwhelming majority of sentences in this topic revolve around the concept of interpersonal trust — asking whether someone trusts another, affirming trust, or urging trust. These expressions of trust function as reassurance and relational tenderness (H4_1), reflecting emotional openness and vulnerability between characters rather than any external threat, possessive claiming, or coercive dynamic. The off-target sentences (H4_0) include a theological/organizational critique about goal-setting and the Holy Spirit, a vague threatening statement by unnamed 'guys' that lacks romance-novel care/protection framing, a question about being alone in a hotel room (ambiguous but not clearly care-coded), a question about sharing joy with no trusted person (grief/isolation, not care), a simple character descriptor ('trustworthy'), and a self-description of respectability — none of these map to any H4 care/protection code. No claiming language, no external threat, no coercive control is present.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass A/B yielded a lexical consensus of H4_13 (mixed_unclear), but the contextual dominant is H4_1 (reassurance_tenderness), and the taxonomy placement under 4.6 Emotional Safety, Reassurance & Caretaking is unambiguous. The secondary taxonomy signal (4.3 Secrets, Misunderstandings & Hidden Information) explains why lexical signals appeared mixed — hidden information contexts often surface vocabulary that looks like conflict or control, but the functional dynamic here is one character offering emotional reassurance and tenderness to another, consistent with trust-building (S3 from the H3 decomposition). No external threat is evidenced, so H4_5/H4_6 are excluded. No partner restriction or coercion is evidenced, so H4_9–H4_11 are excluded. The H3 construct 'trust' maps cleanly onto H4_1 as the mechanism by which reassurance and tenderness operate in this topic. REINTERPRET from H4_13 to H4_1 is warranted; no split is needed.
 
 ---
 
 ### Topic 56 — Promising Never to Hurt You {#topic-h4-56}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -10947,20 +10952,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **Possessive Control**
-  - Lexical cluster shows no external threat present. 'Hurt/hurts/harm' paired with 'insisted' and 'tightly' indicates the pain originates from the partner's own controlling behavior rather than an outside danger. 'Threatened' here reflects the subject feeling threatened by the partner, not a third-party risk. 'Protect' framing is self-justifying rather than externally motivated. 'Never/won/don' suggest prohibitive language consistent with coercive restriction. 'Deserve' and 'intend' from MMR reinforce a possessive entitlement pattern. No external threat anchor exists to reclassify as protective behavior; autonomy is being curtailed by the partner causing the distress.
-- **Pass B — contextual:** **H4**
-  - {'coding_decision': 'All sentences coded H4 (harm/hurt within romantic or close relational context) because the topic is consistently about emotional or physical pain experienced or feared within intimate relationships.', 'protection_vs_control_distinction': 'No sentence in this set demonstrates external-threat-based protection. BOOK_001 contains the closest indicators of coercive control (emotional blackmail, implied physical violence), but these represent harm perpetration rather than protection. BOOK_003 and BOOK_004 show mutual care and concern without possessive or controlling framing. BOOK_002 reflects emotional self-protection from past relational pain.', 'cell_distribution_interpretation': 'CELL_D sentences (BOOK_001, BOOK_002) show lower classifier confidence and more ambiguous or self-directed harm. CELL_C sentences (BOOK_003) reflect clearer interpersonal emotional harm within a caring dyad. CELL_B sentences (BOOK_004) show highest confidence and most direct physical harm concern language, suggesting the classifier most reliably identifies explicit hurt-focused dialogue.', 'topic_56_characterization': 'Topic 56 captures the harm-and-hurt dimension of romantic relationships, spanning self-harm, emotional pain, fear of physical violence, and mutual reassurance. It does not map onto protective behavior against external threats, nor does it consistently reflect possessive claiming or coercive control as defining features.'}
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - Main keywords 'hurt, hurting, harm, mean, never, won't, want' form a classic reassurance register — denials of intent to harm and pledges of non-harm. KeyBERT adds 'assured, protect, cried' alongside 'painful/distress', pointing to emotional comfort and soothing after distress rather than an external threat or partner restriction. POS 'distress, painful, possibility, purpose' reinforce an emotional-processing, reassurance context. MMR 'deserve, intend, causing, assured, protect' continue the pattern of a speaker disclaiming harmful intent and offering comfort. No external threat actor is identifiable, no controlling or possessive language appears, and the overall cluster maps most cleanly to reassurance_tenderness (H4_1): acknowledgment of pain, denial of intent to cause it, and emotional soothing.
+- **Pass B — contextual:** **MIXED**
+  - Topic 56 centres on the theme of hurt — fear of being hurt, reassurances of not hurting, and emotional pain in relationships. No single code reaches 70%. The largest cluster is H4_1 (reassurance/tenderness): pledges such as 'I'd never do anything to hurt you', 'I'll be careful not to hurt him', 'You haven't hurt me' are gentle relational reassurances. H4_4 (emotional support) covers sentences about emotional pain and encouragement (e.g., 'Don't give him the satisfaction'). H4_10 (partner as danger) applies where physical harm from a partner is explicitly feared ('Did you think he'd hit me?', 'Pushed me down the stairs?', 'Are you going to hurt me?'). H4_9 (coercive control) covers emotional blackmail and accusatory manipulation ('You're only doing it to hurt me', 'How can you emotionally blackmail me'). H4_13 (mixed/unclear) is used for ambiguous hurt references without clear directionality. No external threat is present; where threat exists it is partner-sourced. No possessive claiming language appears.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass A/B lexical consensus (H4_1 reassurance_tenderness) and the H3 security decomposition (S1 emotional_reassurance) converge on the same functional cluster. The contextual dominant of MIXED is resolved here by the taxonomy anchor: 4.6 Emotional Safety, Reassurance & Caretaking is the primary classification, with 9.2 Promise, Vow & Future-Tense Speech Acts serving as a delivery mechanism rather than a distinct care-protection function. No external threat is evidenced, so H4_5/H4_6 are excluded. No partner restriction or coercive pattern is present, so H4_9–H4_11 are excluded. The MIXED signal from Pass B likely reflects the co-presence of reassurance content and vow/promise speech acts, but both are expressions of H4_1 rather than independent constructs warranting a split. H4_1 is the most specific and best-supported code.
 
 ---
 
 ### Topic 70 — Keeping Watch While She Sleeps {#topic-h4-70}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11006,20 +11012,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - All four keyword sets converge on sleep and rest states. 'Threats' and 'creatures' appear in POS and MMR but point toward an external or environmental threat frame (survival instincts, decades, destination) rather than interpersonal possessive control. 'Anxious' and 'trembling' reflect the subject's internal emotional state during sleep onset, consistent with H4 vulnerability-in-rest coding. No lexical evidence of a controlling romantic agent, surveillance, or coercive claiming. Coded H4 with external threat acknowledgment.
-- **Pass B — contextual:** **H4-neutral**
-  - All 20 sentences across BOOK_001 through BOOK_004 describe purely physiological or temporal states: falling asleep, waking, exhaustion, tiredness, and sleep duration. No external threat requiring protection is present. No possessive language ('my woman', 'she belongs to me') appears. No coercive control indicators (monitoring, restricting movement, enforcing compliance) are present. BOOK_002_2 ('he wouldn't rest until he did') implies male persistence but lacks sufficient context to code as coercive control — it reads as determination rather than domination. BOOK_002_6 ('exhausted and vulnerable') notes a state but names no agent exploiting that vulnerability. The cell assignments (CELL_B majority, CELL_D for BOOK_004) reflect classifier confidence in topic 70 membership based on sleep/fatigue lexicon, not H4 valence. All sentences are coded H4-neutral: sleep and fatigue descriptions with no romance-dynamic content meeting H4 threshold.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists centre on sleep states and rest (sleep, asleep, tired, wake, slept, exhausted, awake, sleeping, rested, drifted, warming). KeyBERT adds emotional texture (anxious, trembling, praying, instincts) and POS/MMR add 'threats' and 'instincts', but these isolated words lack any framing of an external threat actor or a protective/controlling partner dynamic. The dominant semantic field is simply the physical and emotional experience of sleeping/waking, with no care, protection, possessiveness, or coercive-control signal strong enough to assign any H4_1–H4_13 code. The topic is off-target for the care-protection taxonomy.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in this topic describe sleep states, exhaustion, wakefulness, or fatigue (e.g., 'she was fast asleep,' 'she hadn't slept,' 'she'd never felt so tired'). None of these sentences contain care, protection, possessiveness, control, or any interpersonal dynamic relevant to the H4 taxonomy. The topic is entirely off-target for the romance care/protection coding scheme.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three passes converge on off-target (H4_0). The lexical consensus, contextual dominant, and prior H3 decomposition (S0) are unanimous: this topic describes what a paranormal or immortal entity *is* rather than enacting any care, protection, possessiveness, or control function toward a human protagonist. The taxonomy placement under 4.6 Emotional Safety is incidental — the topic content does not perform reassurance, tenderness, practical care, or any H4_1–H4_13 function. No external threat is evidenced that would warrant H4_5/H4_6, and no partner-directed restriction is present to warrant H4_9–H4_11. H4_0 is confirmed with no reinterpretation needed.
 
 ---
 
 ### Topic 83 — Reassured About Eating Regularly {#topic-h4-83}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_2 — practical care**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11037,20 +11044,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **neutral_daily_life — neutral daily life**
-  - Topic 83 centers on eating, hunger, food consumption, and appetite. Lexical signals across all extraction methods (eat, hungry, food, meal, feeding, eaten, skipped, eagerly, appetite) consistently indicate ordinary discourse about food intake and eating behavior. No external threat is present, and no possessive, coercive, or controlling dynamics are detectable. POS tokens like regular, current, previous, latest, bigger, difference suggest comparative or habitual framing around eating patterns rather than relational control. The topic does not intersect with romance protection distinctions and requires no H4 sub-classification beyond neutral daily life activity.
-- **Pass B — contextual:** **H4_ABSENT — H4 ABSENT**
-  - The overwhelming majority of sentences across all four books are simple expressions of hunger, satiety, or food consumption with no romantic protection, possessive claiming, or coercive control dynamics. BOOK_001 and BOOK_002 are entirely neutral hunger/eating dialogue. BOOK_003_2 is flagged H4_AMBIGUOUS because the speaker ties the other character's eating to the speaker's own feeding access, introducing a conditional leverage structure; however, without an external threat and given the ambiguity of the vampire-feeding context, it does not rise to H4_PRESENT. BOOK_004 sentences are simple positive food references. No sentence demonstrates the external-threat-driven protective behavior that would constitute a true H4 coding.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_2 — practical care**
+  - All four keyword lists centre on eating, food, hunger, and feeding behaviour: 'eat, hungry, food, eating, eaten, starving, appetite, ate' (Main); 'eaten, meal, feeding, tasted, eagerly, admit' (KeyBERT); 'meal, regular, unable' (POS); 'eaten, feeding, skipped, regular, eagerly, meal, warned, tasted' (MMR). The cluster describes a character attending to another's nutritional needs — ensuring they eat, noticing they have skipped meals, urging food intake. This is practical, bodily care (H4_2) with no external threat, no possessive or controlling framing, and no coercive restriction. 'Warned' and 'unable' reinforce concern about neglected eating rather than any controlling dynamic.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The overwhelming majority of sentences in this topic are simple statements about hunger, appetite, or eating — mundane dialogue with no care/protection dynamic, no emotional support, no possessiveness, and no external threat. They are off-target for the H4 care-protection taxonomy. The single partial exception (BOOK_003_2) contains a practical-care nudge ('you should eat if you plan on allowing me to feed from you again'), coded H4_2 for practical care, though even this is borderline. No claiming language, no coercive framing, and no identifiable threat source are present.
+- **Pass C — adjudication:** **H4_2 — practical care**
+  - Lexical consensus from Pass A/B is H4_2 (practical_care), which aligns with the prior H3 S5 (practical_care_everyday) anchor. The contextual dominant H4_0 (off_target) is overridden by the taxonomy placement in 4.6 Emotional Safety, Reassurance & Caretaking, which confirms the topic is doing caretaking work of some kind. No external threat is evidenced, so protection codes H4_5/H4_6 are not warranted. No partner-restriction language is indicated, ruling out H4_9–H4_11. The strongest concrete signal remains tangible practical caretaking acts (H4_2) rather than purely reassurance language (H4_1), consistent with the H3 adjudication. Manual review is flagged to confirm whether the dominant signal is routine practical care (H4_2) or emotional reassurance/tenderness (H4_1), given the tension between the lexical and contextual passes and the taxonomy's emotional-safety framing.
 
 ---
 
 ### Topic 88 — Checking Her Feverish Temperature {#topic-h4-88}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11104,20 +11112,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Lexical field is dominated by somatic and thermal sensation vocabulary: heat, cold, fire, skin, warm, cheeks, burned, warmth, flooded, crept, erupted, flared, shivered, melted, veins, ribs, insides. These terms map to internal bodily experience — flushing, temperature change, physical arousal response — with no lexical markers of external threat, coercive agency, or constraint on autonomy. Words like 'resisted' and 'anxious' introduce mild tension but remain within the register of internal emotional-physical conflict rather than external imposition. 'Atmosphere' and 'combination' suggest environmental or situational framing but do not indicate a threatening agent. The overall pattern is consistent with H4 embodied sensation coding: involuntary physiological response to romantic or emotionally charged stimuli, not possessive claiming or coercive control.
-- **Pass B — contextual:** **H4**
-  - BOOK_001 and BOOK_003 are coded H4 because they present sustained somatic/sensory description characteristic of intimate or romantic physical experience — chills, heat, tingling, friction, breath on skin — consistent with topic 88 (romance/intimacy). The sensations in BOOK_001 (cold chills, burning body, wind pricks, aching) map onto arousal and physical vulnerability in a romantic scene rather than medical distress or external threat. BOOK_003 explicitly includes sexual content (g-spot, heated friction, pleasure-torture framing) confirming the H4 classification. Critically, neither cell shows coercive claiming language ('you are mine,' 'I own you') nor an identifiable external human threat requiring protective intervention; the 'cold metal' in BOOK_003_3 is contextually ambiguous but insufficient to recode as a protection-from-threat scenario without further evidence. BOOK_002, BOOK_004, and BOOK_005 are coded O: BOOK_002 involves mundane social anxiety and shock; BOOK_004 depicts male anger in a conflict unrelated to romance; BOOK_005 involves a political assassination, which is an external threat but entirely outside a romantic protection dynamic.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists are dominated by physical sensation and temperature vocabulary — heat, cold, fire, skin, warm, cheeks, burned, warmth, shivered, melted, flooded, crept, erupted, flared, veins, ribs, insides. These terms describe bodily arousal or emotional affect (blushing, flushing, physical excitement) rather than any care, protection, possessiveness, or control dynamic. No external threat, no partner restriction, no caregiving act, and no claiming behaviour is lexically present. The topic maps to physical/sensory description of internal states, which falls outside all H4_1–H4_13 care-protection categories, making H4_0 (off_target) the correct code across all representations.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in Topic 88 describe physical sensations (temperature, chills, heat, tingling, pain, bodily reactions) or incidental scene details (shock, an explosion, cold air). None of the sentences contain care, protection, possessiveness, control, or any interpersonal dynamic relevant to the H4 care/protection taxonomy. The topic appears to be a BERTopic cluster centered on physical/somatic sensation language, making every sentence off-target (H4_0) with respect to the care-and-protection coding scheme.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three passes converge consistently: lexical consensus H4_0, contextual dominant H4_0, and the prior H3 security decomposition (S0/off_target). The taxonomy placement in 4.6 Emotional Safety/Reassurance and secondary 1.2 Pain/Injury/Physical Vulnerability suggests descriptive or situational content rather than an enacted care or protection dynamic between partners. No external threat is evidenced to warrant H4_5 or H4_6, no partner-directed reassurance or tenderness to warrant H4_1, and no control or possessive signal to warrant H4_7–H4_11. H4_0 is confirmed without inventing plot.
 
 ---
 
 ### Topic 96 — Confessing Long-Standing Worry {#topic-h4-96}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11135,20 +11144,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Topic 96 centers on worry and concern as internal emotional experiences. Lexical signals across all methods (worried, worrying, worries, concerned, bothered, fears, bother) consistently indicate anxiety or apprehension directed inward or toward general problems, with no lexical evidence of an external threat actor, possessive claiming, or coercive control dynamics. Terms like assure, amusement, and reaction suggest interpersonal reassurance exchanges rather than dominance or restriction. Autonomy effect is neutral because the concern expressed does not constrain another person's choices or movement.
-- **Pass B — contextual:** **H4_CONCERN_AND_DISMISSAL_CLUSTER — H4 CONCERN AND DISMISSAL CLUSTER**
-  - Topic 96 centers on worry and concern within romantic or close relational contexts. The corpus shows no external threat justifying protective framing; instead, worry is mutual, diffuse, and often dismissed or deflected. The BOOK_003 cluster is notable for its high-probability dismissal pattern, suggesting a character dynamic where one party repeatedly minimizes the other's anxiety. BOOK_002_4 grounds worry in attachment trauma rather than situational danger. BOOK_004_3's explicit narrator flag of exaggeration marks performative concern distinct from genuine protection. Overall, the topic codes as relational anxiety management, not external-threat-driven protection, and contains no possessive claiming or coercive control signals.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - All four lists centre on anxiety/concern vocabulary (worry, worried, concerned, worrying, worries, fears, bothered, bothering) paired with soothing/reassurance cues (assure, bother, nothing, amusement). There is no external threat agent, no possessive or controlling language, and no material/practical care action. The dominant register is one character expressing worry about another and/or being reassured — classic reassurance-and-tenderness territory (H4_1). 'Assure' in KeyBERT and MMR directly signals the reassurance function. 'Amusement' and 'sounding' in MMR/POS suggest gentle, affectionate tone rather than alarm. No cues point to external danger (ruling out H4_5/H4_6), partner-as-threat (H4_10), or restriction (H4_9–H4_11).
+- **Pass B — contextual:** **H4_1 — reassurance tenderness**
+  - The overwhelming majority of sentences in this topic revolve around expressions of worry, reassurance, and soothing concern between characters — 'Don't worry,' 'Stop worrying,' 'I was worried about you,' 'Don't beat yourself up.' These are classic reassurance and tenderness utterances (H4_1): one character calming or comforting another's anxiety, with no external threat, no possessive or controlling language, and no coercive dynamics. One sentence ('You grew up worrying about having your basic needs met') touches on emotional support/acknowledgment of past hardship (H4_4), but the dominant register is clearly reassurance and tenderness. No claiming language, no partner-as-threat framing, and no external danger is present.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - All three passes converge without conflict. Lexical consensus (H4_1), contextual dominant (H4_1), and the prior H3 decomposition (S1 = emotional_reassurance) all map to the same construct: one partner offering soothing, tender reassurance to the other in a context of distress or emotional vulnerability. Taxonomy 4.6 (Emotional Safety, Reassurance & Caretaking) is the primary home; 3.2 (Negative Emotions & Distress) is the precipitating context, not a competing code. No external threat is evidenced, so H4_5/H4_6 are inapplicable. No partner restriction or coercive element is present, so H4_9–H4_11 are inapplicable. No possessive or jealous framing, so H4_7/H4_8 are inapplicable. H4_1 is the most specific and accurate code; MIXED or splitting is unwarranted.
 
 ---
 
 ### Topic 119 — Offering to Keep Her Safe {#topic-h4-119}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_5 — external protection physical**
 - **Mixed:** False
+- **Adjudication action:** `RETAXONOMIZE`
 
 **Stage-08 snippets**
 
@@ -11179,19 +11189,20 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 **Model reasonings (new taxonomy audits)**
 
 - **Pass A — lexical:** **H4_5 — external protection physical**
-  - Lexical convergence across Main, KeyBERT, POS, and MMR sets consistently signals an identifiable external threat context. 'Dangerous/dangerously/threat' anchor an outside source of harm. 'Protect/protection/guarded/secure/defend/safety' cluster around a shield function directed outward, not inward toward the partner. 'Precious/caressed' indicate affective valuation without possessive restriction. 'Determination/inevitable/meantime/testing' suggest situational urgency driven by external circumstances rather than jealousy or control impulses. 'Assure/terms' point to negotiated or communicated safety arrangements, preserving subject autonomy. Absence of isolation, surveillance, or restriction lexemes confirms no coercive control signal. 'President/sir' suggest a formal or high-stakes external environment reinforcing the threat-from-outside reading. Overall pattern codes cleanly as protective response to external danger with autonomy intact.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - {'CELL_B_dominance': "BOOK_003 and BOOK_004 together account for eleven sentences, all featuring direct protective declarations ('I'll protect you', 'You're safe with me', 'I will protect you forever') directed at a partner or ward in the context of an implied or explicit external threat. These are paradigmatic external-protection statements with no coercive or possessive overlay — the protected person is reassured, not restricted.", 'CELL_C_distinction': "BOOK_002 sentences reflect practical, logistical safety concern (checking arrival, professional security, physical location safety). The register is caring and watchful but not romantically intense; the threat is environmental. 'My boy' is the only possessive marker and reads as parental endearment.", 'CELL_D_distinction': "BOOK_001 sentences are lower-confidence and contextually ambiguous. 'I'll survive' and 'dangerous' suggest emotional or relational stakes rather than physical external threat. 'Viggo won't feel threatened' implies managing a third party's jealousy or aggression, which sits at the boundary between external threat and interpersonal conflict.", 'coercive_control_absent': "None of the twenty sentences contain language that restricts the protected person's freedom, monitors their movements as control, isolates them from others, or frames the partner as property. All protective language is oriented outward toward a threat, not inward toward domination.", 'key_distinction_applied': 'External protection (CELL_B/C) requires an identifiable threat outside the relationship. BOOK_003 and BOOK_004 meet this criterion clearly. BOOK_002 meets it logistically. BOOK_001 is borderline because the threat may be relational rather than external.'}
-- **Pass C — adjudication:** **UNKNOWN**
+  - All four keyword lists converge on external-threat protection vocabulary: Main has 'safe, protect, protection, dangerous, protecting, defend, safety'; KeyBERT adds 'guarded, secure, threat, dangerously'; POS reinforces 'threat, protect, secure'; MMR echoes 'guarded, dangerously, threat, determination'. The threat is framed as external ('dangerous/dangerously', 'threat') and the protective stance is outward-facing ('defend', 'protect', 'guarded', 'secure'). No possessive, controlling, or partner-as-danger cues are present. 'Precious' and 'assure' suggest the protected party is valued, consistent with H4_5 (external physical protection). No restriction of autonomy is implied.
+- **Pass B — contextual:** **H4_5 — external protection physical**
+  - All sentences across all cells consistently invoke physical safety from external threats: references to danger, security personnel, protection services, getting someone to safety, and pledges to protect from harm. The language is oriented toward shielding a person from outside threats (unnamed dangers, unsafe environments, external actors) rather than restricting the partner's autonomy or asserting ownership. Phrases like 'I'll protect you,' 'get you to safety,' 'security guys,' and 'hunt them down' all point to an external threat source. There is no possessive claiming language, no jealousy framing, and no partner-as-threat dynamic. H4_5 (external_protection_physical) is the overwhelmingly dominant code at 100% of sentences.
+- **Pass C — adjudication:** **H4_5 — external protection physical**
+  - Pass A/B lexical consensus and contextual dominant both converge on H4_5 (external_protection_physical), mapping directly from the prior H3 S7 (physical_protection) code. The taxonomy metadata places this topic under 4.6 Emotional Safety, Reassurance & Caretaking, which would suggest H4_1 or H4_4, but the adjudication protocol requires deferring to the consistent Pass A/B signal when both passes agree. H4_5 requires evidence of an external threat, and the prior S7 coding indicates the topic's lexical content centers on bodily protection from outside danger rather than soothing or reassurance per se. The taxonomy label (4.6) appears to reflect a broad categorical bucket rather than the specific care function evidenced in the tokens. RETAXONOMIZE is therefore appropriate: the topic belongs under a physical-protection construct rather than emotional-safety caretaking. Manual review is retained because the taxonomy mismatch (4.6 Emotional Safety vs. H4_5 external physical protection) warrants human confirmation that the topic's word-level content is primarily about shielding from external threat and not primarily about comfort or reassurance, and to rule out a MIXED H4_5/H4_1 reading.
 
 ---
 
 ### Topic 161 — Reassuring Squeeze on The Shoulder {#topic-h4-161}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11241,20 +11252,22 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **Ambiguous**
-  - Lexical profile shows dual-register tension. Calming/reassuring cluster ('reassuring', 'calming', 'praying', 'nods') suggests emotional support framing, but physical dominance markers ('clenched', 'fiercely', 'tugged', 'smacked', 'snaps') and absence of any identifiable external threat source shift the dynamic toward possessive or controlling behavior rather than protective response to outside danger. 'Scissoring' and intimate character names anchor this in a romantic/sexual context. Without an external threat, H4 protective coding is not cleanly supported; the content sits at the boundary between H4 and coercive control patterns, warranting disagreement flag.
-- **Pass B — contextual:** **H4_AMBIGUOUS — H4 AMBIGUOUS**
-  - The corpus spans three distinct narrative registers: (1) BOOK_001 — paranormal/supernatural fiction featuring a male protagonist (Gideon) whose internal animalistic nature is the primary tension; no romantic partner is present in these excerpts, so no romantic protection/control distinction can be drawn; (2) BOOK_004 — theological non-fiction discussing biblical covenants and dominion; entirely outside the romance topic; (3) BOOK_007 — contemporary fiction featuring a character named Troy who exhibits directive and physically aggressive behaviour toward others; without confirmed romantic relationship context the behaviour pattern leans toward coercive/aggressive rather than protective; (4) BOOK_009 — two brief sentences showing Noah's emotional reaction (fear, then mixed relief/worry) which are consistent with a protective-concern dynamic rather than possessive claiming, but insufficient context exists to confirm a romantic relationship or an external threat. Overall the batch is dominated by ambiguous or non-romantic content; no sentence clearly demonstrates the external-threat-justified protective behaviour that would distinguish legitimate H4 protection from coercive control.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - Main keywords are character names and a place name (noah, phan, cam, tobias, cameron, beaumont, ark) plus 'ow' and 'scissoring', offering no clear care/protection signal — coded H4_0. KeyBERT, POS, and MMR all converge on 'reassuring' and 'calming' as the dominant lexical cues, with supporting terms 'praying', 'shivered', 'fiercely', 'squeeze', and 'nods' suggesting emotional soothing and gentle physical comfort directed at a distressed partner. No external threat is present, no restriction of autonomy is implied, and no possessive or coercive language appears. The reassurance/calming cluster drives H4_1 for three of four reps; Main is the outlier, producing mild disagreement.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in this topic are off-target for the care/protection taxonomy. BOOK_001 sentences are character name fragments and brief internal monologue about stubbornness and animalistic tendencies with no care or protection dynamic. BOOK_004 sentences are theological/biblical exposition about covenants, Israel, and God — entirely outside the romance-novel care/protection domain. BOOK_007 sentences involve a character named Troy in what appears to be a physical altercation or directive context, but there is no dyadic care or protection relationship discernible from the fragments. BOOK_009 sentences show a character's emotional reaction (face turning white, looking relieved and worried) but without sufficient context to assign any care/protection code. None of the sentences contain evidence of external protection, possessive claiming, coercive control, or any other H4_1–H4_13 dynamic; all are coded H4_0 (off_target).
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Lexical consensus from Pass A/B is H4_1 (reassurance_tenderness), which would ordinarily fit taxonomy 4.6 Emotional Safety & Reassurance. However, the contextual dominant is H4_0 (off_target), and the prior H3 adjudication already resolved an analogous conflict in the same direction: the secondary taxonomy tag 5.1 Family/Kinship/Parenthood is the deciding factor. H4_1 requires the reassurance function to operate within a romantic dyad; if the caretaking and tenderness tokens are anchored in parental or sibling relationships, the romance-hypothesis scope criterion is not met. Consistent with the H3 ruling (S0 over S1 for the same reason), H4_1 is overridden by H4_0. No external threat is evidenced, so H4_5/H4_6 are inapplicable; no partner restriction signals are present, so H4_9–H4_11 are inapplicable. The REINTERPRET action preserves the constructs for potential use in a family/kinship hypothesis while flagging the topic for manual review to confirm whether any tokens are unambiguously romantic before final exclusion from the romance-care hypothesis.
 
 ---
 
 ### Topic 172 — Reporting to The Security Officer {#topic-h4-172}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
+- **New category:** **MIXED**
 - **Normalised category:** —
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11281,19 +11294,20 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 **Model reasonings (new taxonomy audits)**
 
 - **Pass A — lexical:** **H4_5 — external protection physical**
-  - Lexical cluster centers on law enforcement actors (police, cop, officer, authorities) with supporting terms indicating legitimate institutional response to threat (protect, evidence, weapons, secured, task, involved). No possessive or coercive relational dynamics detected. 'Unwilling' and 'annoying' suggest friction with authority figures rather than partner control. 'Partners' likely refers to professional law enforcement partners given dominant police frame. Weapons and evidence terms confirm external threat context. Pattern is consistent with external protection scenario where institutional actors respond to danger, preserving rather than restricting subject autonomy.
-- **Pass B — contextual:** **H4_EXTERNAL — H4 EXTERNAL**
-  - The overwhelming majority of sentences across all three book clusters invoke police/law enforcement as an external institutional entity — either as a threat-response mechanism (BOOK_001, BOOK_002) or as an occupational identity marker (BOOK_005). BOOK_004 introduces a professional hierarchy context with one sentence (BOOK_004_4) containing coercive compliance language ('you are supposed to obey it'), but this operates within a chain-of-command frame rather than a romantic possessive one. No sentences exhibit classic romantic possessive claiming (e.g., 'you are mine,' jealousy-driven surveillance, isolation tactics). The external threat criterion for legitimate H4 protective framing is met structurally across CELL_A and CELL_C; CELL_B is more ambiguous due to institutional authority dynamics. Dominant code is H4_EXTERNAL with high confidence.
-- **Pass C — adjudication:** **UNKNOWN**
+  - Main keywords (police, cop, cops, officer, authorities, officers, enforcement, policeman, call) establish a law-enforcement context pointing to an external institutional threat or response. KeyBERT adds 'protect,' 'evidence,' 'weapons,' and 'secured,' all consistent with physical external-threat management by authorities. POS and MMR reinforce this with 'weapons,' 'secured,' 'leads,' and 'task,' suggesting an active law-enforcement operation against an outside danger. No cues indicate partner restriction, possessive claiming, or coercive control; the threat source is clearly external, and the protective action is carried out by or in coordination with official authorities, fitting H4_5 (external_protection_physical).
+- **Pass B — contextual:** **H4_6 — external protection social legal**
+  - The majority of sentences reference police/cops in contexts of reporting, involvement, or identity — consistent with external social/legal protection mechanisms (H4_6), where law enforcement represents an external institutional resource against threat. The BOOK_004 sentences are off-target (H4_0): they concern workplace hierarchy, officer regulations, and professional status among colleagues, with no care or protection dynamic relevant to the romance-novel coding schema. No possessive, coercive, or partner-as-danger language is present. No claiming language detected.
+- **Pass C — adjudication:** **MIXED**
+  - The lexical consensus (H4_5: external_protection_physical) and contextual dominant (H4_6: external_protection_social_legal) both point to an external threat scenario, confirming that the protection signal is genuine and not partner-directed coercion or control. However, the taxonomy metadata places this topic primarily under 4.6 Emotional Safety, Reassurance & Caretaking — with Risk/Danger as only secondary — which maps most naturally onto H4_1 (reassurance_tenderness) rather than either protection code alone. This mirrors the prior H3 MIXED resolution (S7 + S1): the topic appears to capture moments where an external threat occasions emotional reassurance and tender caretaking, rather than purely physical or legal/social shielding. Neither H4_6 nor H4_1 alone is sufficient. The functional care work is split between protection from an external social/legal/physical danger (H4_6) and the emotional comfort and reassurance that danger occasions (H4_1). MIXED is therefore the most defensible resolution. Manual review is required to determine whether the reader-experienced dominant function is the protective act itself (→ H4_6) or the emotional soothing it enables (→ H4_1), which would allow collapse to a single code.
 
 ---
 
 ### Topic 173 — Waiting For Him to Wake {#topic-h4-173}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11335,20 +11349,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **protective_care — protective care**
-  - Lexical cluster centers on sleep states, physical recovery, and bedside presence. Signals like 'panting', 'pounding', 'warmed', 'drifted', 'scrambled', and 'determination' suggest a character monitoring or responding to another's physical distress or vulnerability during rest. 'Departure' and 'rear' indicate movement around a resting person. No possessive claiming or coercive control markers present. Threat is internal and physiological rather than external agent. Caretaking behavior preserves rather than restricts autonomy.
-- **Pass B — contextual:** **H4**
-  - BOOK_001 codes H4 because the narrator is planning a covert action around a sleeping person under conditions of external pressure or danger, consistent with protective/survival maneuvering rather than romantic claiming. BOOK_002 and BOOK_003 code O as they describe sleep in neutral, post-intimacy or caregiving contexts with no threat or control dynamics. BOOK_004 splits: the first two sentences are neutral shared-sleep observations (O), while sentences 3–6 code H4 because the narrator is covertly timing an escape by monitoring a captor's sleep — an externally-driven survival behavior, not possessive control. No sentence exhibits claiming or coercive language; all H4 instances are anchored to external threat or constraint.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists centre on sleep states and waking (sleep, asleep, wake, awoke, slept, woke, tired, sleeping, drifted), physical sensations (panting, pounding, warmed, temperature), and incidental scene-setting (bedside, tv, rear, departure, scrambled). There is no lexical signal of care, protection, threat, jealousy, or control. The vocabulary describes ordinary nocturnal/rest scenes with no romance-care dimension, placing the topic firmly off-target for the H4 taxonomy.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in this topic describe sleep states, fatigue, wakefulness, and monitoring of whether a person is asleep. There is no care, protection, possessiveness, control, or relational dynamic expressed — the content is purely observational or descriptive of physical sleep/rest states. None of the sentences contain romance-relevant care-protection content, making H4_0 (off_target) the correct code throughout.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three passes converge on off-target (H4_0). Lexical consensus, contextual dominant, and the prior H3 S0 ruling all agree that this topic performs a temporal/structural narrative function rather than any care or protection function. The taxonomy primary label 'Emotional Safety, Reassurance & Caretaking' is a surface-level mismatch: the topic content is about time and seasons as narrative framing devices, not about a character delivering reassurance or care to a partner. No external threat is evidenced (ruling out H4_5/H4_6), no partner restriction is present (ruling out H4_9–H4_11), and no affective care exchange is depicted (ruling out H4_1–H4_4, H4_12). The secondary taxonomy label '8.4 Time, Seasons & Temporal Framing' accurately describes the topic's actual function. KEEP with H4_0 is the correct resolution; no split or reinterpretation is warranted.
 
 ---
 
 ### Topic 175 — Gentleman Offers Steadying Support {#topic-h4-175}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11378,20 +11393,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **protective_concern — protective concern**
-  - Lexical cluster centers on Pemberley-adjacent characters (Bingley, Georgiana, Bennet) with affective signals of worry and concern (worrying, concerned, distress, longing, struggling) directed outward toward social or circumstantial threats rather than inward as control. 'Kindly', 'thoughtfully', 'encouraged' indicate supportive rather than coercive orientation. 'Uncomfortably' and 'injured' suggest external friction. No possessive or coercive markers detected. Autonomy of subject characters appears respected within the protective framing.
-- **Pass B — contextual:** **H4_NEUTRAL — H4 NEUTRAL**
-  - {'overall': 'The passage set is predominantly neutral in H4 terms, consisting largely of character name references, brief dialogue tags, and minimal contextual action. No external threat is present that would justify a protective framing. BOOK_001 contains the most H4-relevant signals: Gwyllain issues commands over others (BOOK_001_5, BOOK_001_6) suggesting coercive authority rather than protective behavior, and BOOK_001_4 implies possessive sexual reservation without an external threat context. BOOK_003 and BOOK_004 show interpersonal tension and concern but lack the possessive or controlling language markers needed for H4 elevation. BOOK_006 references staying with Darcy and social commentary but no control or protection dynamics are evident from the fragments alone.', 'BOOK_001_4': "Framing of sexual climax as 'saved for' a named individual implies possessive claiming rather than mutual consent or protection.", 'BOOK_001_5': 'Demand language directed at a third party regarding an offering implies coercive authority over persons.', 'BOOK_001_6': 'Command to pursue others is directive control language with no external threat justification visible in fragment.', 'BOOK_003_1': 'Accountability statement; no control or protection dynamic evident.', 'BOOK_006_1': 'Social commentary on tolerance; no possessive or protective framing.'}
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - Main keywords (mr, bingley, miss, georgiana, bennet, pemberley) anchor this firmly in Pride and Prejudice social/domestic circles with no external threat or coercive cues. KeyBERT supplies 'kindly, concerned, affection, worrying, longing' — all emotional warmth and tender concern. POS adds 'passionate, distress, warming, exciting' — emotionally charged but not threatening. MMR reinforces with 'kindly, thoughtfully, encouraged, passionate, warming' — consistent reassurance and tenderness register. No possessive, controlling, or external-threat vocabulary is present. The dominant signal across all four lists is gentle emotional attentiveness and affection, pointing to H4_1 (reassurance_tenderness).
+- **Pass B — contextual:** **H4_0 — off target**
+  - The overwhelming majority of sentences are decontextualized fragments — character names, brief reactions, commands, and scene-setting snippets — that carry no discernible care/protection/control content relevant to the H4 taxonomy. They are off-target (H4_0). Two sentences (BOOK_004_2 and BOOK_004_4) contain minimal practical-care signals (raising a child properly; attending to someone's needs), coded H4_2. No external threat, no possessive or claiming language, and no coercive dynamics are present. The topic as a whole is off-target for the care-protection dimension.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Lexical consensus (H4_1 reassurance_tenderness) reflects surface-level emotional warmth present in friend-group dialogue, but the contextual dominant (H4_0 off_target) is the decisive signal. The secondary taxonomy placement under 5.2 Friends, Allies & Social Circles confirms that the topic's operative function is peer/ally dynamics rather than dyadic reassurance directed at a protagonist's emotional safety needs. Emotional warmth within a social circle does not constitute the care-provision or security function required for H4_1. The 4.6 primary taxonomy label describes the broader categorical bucket, but the actual topic content performs social-circle interaction, not targeted emotional reassurance or any form of protection, possessiveness, or control. This resolution is fully consistent with the prior H3 adjudication (S0, REINTERPRET), which reached the same conclusion via the same reasoning path. H4_0 is therefore the correct care_protection_code; no split is warranted and the topic should be excluded from the care-and-protection hypothesis.
 
 ---
 
 ### Topic 190 — Offering to Get Someone Cleaned Up {#topic-h4-190}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11437,20 +11453,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Lexical signals across all extraction methods consistently indicate domestic cleaning and tidying activity. Terms such as cleaned, wipe, sweeping, dump, mess, freshen, suitcase, and session point to a practical household or travel preparation context with no romantic, coercive, or threat-related content. No external threat, possessive claiming, or autonomy-restricting language is present.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Topic 190 activates across mundane and post-conflict cleaning/hygiene passages. CELL_B dominates with practical, non-romantic hygiene and cleanup actions in field, domestic, or advisory registers. CELL_C captures supernatural or battlefield aftermath cleanup with an identifiable external threat (parasites, enemy combatants), consistent with the protection-requires-external-threat distinction. CELL_D covers social and reputational cleanup language. No passage exhibits unambiguous possessive claiming or coercive romantic control; BOOK_002_2 comes closest with pressure around an annulment but operates in a social-reputational rather than physically controlling register. Claiming language is absent or weak throughout, and where directives appear they are caregiving or practical rather than controlling.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists are dominated by domestic housekeeping vocabulary — 'clean, cleaning, cleaned, mess, cleaners, freshen, wipe, sweeping, dump, suitcase, session' — with no romance-care, protection, control, or relational-dynamic cues present. The topic describes literal cleaning/tidying activity, placing it entirely off-target for the H4 care-protection taxonomy.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The overwhelming majority of sentences in this topic concern mundane cleaning, hygiene, and tidying activities with no romantic care or protection framing — these are off-target (H4_0). A small subset (BOOK_001_1, BOOK_001_3, BOOK_004_4, BOOK_005_1) involve one person attending to another's physical needs or offering practical hygiene advice, qualifying as practical care (H4_2). BOOK_001_4 references incinerating something to prevent parasites from escaping, which implies an external biological/parasitic threat and thus edges toward external physical protection (H4_5), though it is marginal. No possessive, jealous, coercive, or claiming language is present. The dominant signal is off-target content at 75%.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - All three passes converge on the same resolution: the surface lexicon involves mundane objects or communication media (8.3b secondary signal), which generated a false practical-care or off-target read in Pass A/B lexical consensus (H4_0). However, the taxonomy metadata places this topic firmly in 4.6 Emotional Safety, Reassurance & Caretaking, and the prior H3 decomposition already overrode the off-target/practical-care false positive in favour of emotional_reassurance (S1). Applying the function-over-object rule, the everyday props are vehicles for emotional reassurance and tenderness, not practical provision and not any form of protection (no external threat is evidenced) or control. H4_1 (reassurance_tenderness) is the nearest valid H4 code to S1 (emotional_reassurance) and is the most specific match within the emotional safety cluster. No external threat is present, so H4_5/H4_6 are excluded. No partner restriction or coercion is present, so H4_9–H4_11 are excluded. No material provision is foregrounded, so H4_2/H4_3 are excluded. H4_1 is the single best code.
 
 ---
 
 ### Topic 193 — Nurse Arranged After Hospital Release {#topic-h4-193}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11488,20 +11505,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **possessive_claiming — possessive claiming**
-  - Lexical cluster indicates interpersonal tension among named individuals (caleb, gage, jeremiah, conrad, mica) with behavioral signals of monitoring (stares, hovered, screen), social pressure (prodded, acknowledge, snaps), and emotional consequence management (embarrassment, explanation, hopeful). No external threat present. The pattern of texting surveillance, being ignored, and fooled alongside body-proximate tension (bodies, nearby, climb) reflects possessive claiming dynamics — one party attempting to control social access and emotional acknowledgment of another. Autonomy is constrained through social pressure and emotional manipulation rather than protection from outside harm.
-- **Pass B — contextual:** **H4_AMBIGUOUS — H4 AMBIGUOUS**
-  - {'overall': 'The corpus is dominated by fragmentary social and domestic scenes with no clear external threat enabling a protection narrative. BOOK_001 fragments are conversational identification snippets insufficient to code directionally. BOOK_002 presents family logistics around pregnancy and sibling caregiving; BOOK_002_3 references historical parental opposition to a relationship but lacks active threat framing in context, coded H4_NEGATIVE for mild coercive-adjacent historical element. BOOK_004 shows a twin dynamic with a possible dominance pattern (BOOK_004_5) but no romantic dyad is established, leaving it ambiguous. BOOK_005_1 shows a male character wanting a female partner present for a difficult conversation — consistent with mutual support rather than control — coded H4_POSITIVE. BOOK_005_2 expresses emotional interdependency in a reflective, non-coercive register, coded H4_POSITIVE. No sentence in the corpus clearly depicts an external threat triggering protective behavior, so H4_POSITIVE protection coding is minimal.'}
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists are dominated by proper names (caleb, gage, jeremiah, conrad, mica), mundane communication verbs (texting, ignore, said, went, admitted, speaking, acknowledge), and social-interaction descriptors (embarrassment, stares, hopeful, snaps, prodded, hovered). There is no lexical signal of protection, care, possessiveness, jealousy, coercion, or danger. The topic appears to be a scene of interpersonal dialogue or social awkwardness among named characters, with no romance-care/protection content detectable at the keyword level.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The vast majority of sentences in this topic are off-target for the care/protection dimension: they consist of dialogue fragments, character name references, and neutral narrative exposition with no discernible care, protection, possessiveness, or control content. BOOK_002_2 contains a mild practical-care signal (a character planning to return to help out during a pregnancy), coded H4_2. BOOK_005_1 and BOOK_005_2 contain a faint emotional-support signal (wanting a partner present for a difficult conversation; feeling unable to complete something without a partner), coded H4_4. No possessive, controlling, or external-threat language is present. H4_0 dominates at ~90%, well above the 70% threshold.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Both lexical consensus and contextual dominant converge on H4_0 (off_target). The prior H3 decomposition likewise returned S0/off_target with the same reasoning: taxonomy metadata flagging Emotional Safety and Family-Kinship is insufficient on its own to override a double-consensus off_target verdict when no care or protection signal is evidenced in the topic content. No external threat is present to warrant H4_5/H4_6, no partner-directed care behaviour is present to warrant H4_1–H4_4, and no control dynamic is present to warrant H4_9–H4_11. H4_0 is confirmed.
 
 ---
 
 ### Topic 224 — Encouraging Words From An Angel {#topic-h4-224}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11547,20 +11565,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Topic 224 centers on angelic/guardian figures with behavioral monitoring lexicon (glared, insisted, repeated, behavior, forgetting, doubted). No external threat is signaled; the protective framing originates from the guardian figure itself. KeyBERT and MMR terms (insisted, assume, willing, honestly, behavior, doubted) indicate repeated behavioral correction and expectation-setting directed at the subject. This pattern reflects possessive claiming or coercive control disguised as protection rather than defense against an outside threat, meeting H4 criteria. Autonomy effect is restrictive.
-- **Pass B — contextual:** **N**
-  - CELL_A sentences from BOOK_002 consistently reference a named external supernatural evil threatening characters Gabriel and Val, qualifying as H4 protective context with a genuine external threat source. BOOK_005_1 similarly involves an external political-supernatural threat (Lucifer, Her Majesty's interest) warranting H4. All remaining sentences use angel imagery metaphorically or descriptively, contain romantic/intimate content without coercive or possessive control dynamics, or are neutral narrative fragments. No sentences in BOOK_003 or BOOK_004 exhibit the external threat requirement for H4 coding despite elevated model probability scores, which appear driven by the angel-name overlap rather than genuine threat context. Intimate content in BOOK_003_5 and BOOK_003_6 is assessed as consensual adult romance without claiming or coercive control language.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_0 — off target**
+  - Main keywords (angel, angels, angelic, guardian, wings, archangel, fallen) are supernatural/mythological character-type labels with no care or protection dynamic evident. POS keywords (structure, results, ends, task, issue, behavior, ability, practice, tv) are abstract procedural/structural terms equally off-target for any H4 care-protection dimension. KeyBERT and MMR introduce mild interpersonal friction cues (doubted, insisted, glared, dislike, behavior, forgetting) that could hint at relational tension, but they are too sparse and ambiguous to anchor a specific H4 code — hence H4_13 for those two lists. Overall the topic appears to be a supernatural/fantasy character cluster (angel archetypes) with no coherent care-protection signal, so the consensus lands on H4_0 (off-target). Disagreement is flagged because KeyBERT and MMR diverge toward H4_13.
+- **Pass B — contextual:** **H4_0 — off target**
+  - Topic 224 clusters around the word 'angel' used as a descriptor or metaphor (angelic appearance, religious invocations, character names/nicknames), with no substantive care-protection content. The majority of sentences (BOOK_003, BOOK_004, BOOK_005) use 'angel' purely as a physical or spiritual simile and carry no care/protection signal — coded H4_0 (off-target). The BOOK_002 cluster involves a named external evil threatening Gabriel, making those sentences relevant to external physical protection (H4_5); one sentence expresses faith/confidence in the characters (H4_4). No possessive claiming, coercive control, or partner-as-threat language is present. The dominant code is H4_0 at ~75%, well above the 70% threshold.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Both lexical consensus and contextual dominant agree on H4_0 (off_target), and the prior H3 adjudication reached the same conclusion under the parallel security decomposition (S0). The taxonomy flags Emotional Safety/Reassurance (which could gesture toward H4_1) and Promise/Vow speech acts (which could gesture toward H4_4 or H4_1), but neither pass identified content that anchors to a specific care or protection behavior in the romance-novel sense. Emotional safety framing and future-tense vow speech acts are not themselves reassurance, tenderness, or caretaking acts unless tied to a concrete relational gesture; absent that evidence, reinterpretation toward H4_1 or H4_4 would require inventing plot. No external threat is evidenced, so H4_5/H4_6 are excluded. No partner restriction is evidenced, so H4_9–H4_11 are excluded. H4_0 is the correct and stable resolution across all three passes.
 
 ---
 
 ### Topic 240 — Unsure How to Offer Comfort {#topic-h4-240}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11586,20 +11605,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **neutral_social_interaction — neutral social interaction**
-  - Lexical profile dominated by dialogue attribution terms (answered, said, looked, mumbled, solemnly, absently) and mild affective states (anxious, shivered, winced, unsure, conscious, distracted). Character names suggest ensemble social scene. No possessive claiming, coercive control markers, or external threat indicators present. Curiosity, studying, and stares suggest interpersonal observation within normal social bounds. Autonomy of parties appears unaffected. Repressive in main set warrants note but lacks supporting coercion lexicon to elevate coding.
-- **Pass B — contextual:** **H4**
-  - All fragments are decontextualized character-name references, dialogue tags, or brief exclamations insufficient to code as protective, possessive, or controlling behavior. BOOK_003_2 is the only fragment with substantive content; its 'off limits' language is framed within what appears to be a tactical/mission context referencing an external threat (hostile actors), not romantic claiming. BOOK_005_1 ('I want Sean') is a desire statement without coercive framing. No fragment demonstrates external-threat-driven protective behavior distinguishable from possessive control, nor clear coercive control patterns. All coded H4 (insufficient context for differentiated coding).
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - Main keywords are predominantly proper names (sean, jaime, bryan, yseult, morrissey) and neutral dialogue/narrative verbs (answered, looked, said, brogue); 'repressive' is isolated and unanchored to any care/protection dynamic. KeyBERT yields hedged speech and mild physical/emotional cues (mumbled, solemnly, absently, winced, patted, shivered, anxious) but none cohere into a care or control pattern. POS tokens (equal, anxious, stares, conscious, unsure, curiosity, distracted, thigh) are generic attentional/emotional descriptors with no protective or possessive framing. MMR largely duplicates KeyBERT hedged-speech cues. Across all four representations there is no discernible care, protection, possessiveness, or control signal — the cluster reads as off-target conversational/narrative content.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in Topic 240 are fragmentary dialogue snippets, name calls, or brief conversational exchanges (e.g., 'Liam wanted to know.', 'Sean?', 'Shon!', 'Conner asked.'). None contain any discernible care, protection, possessiveness, control, or emotional support content. They are entirely off-target for the H4 care/protection taxonomy — no external threat, no partner restriction, no claiming language, no emotional or material care is expressed. Every sentence is coded H4_0.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass A/B lexical consensus landed on H4_0 (off_target), but the taxonomy label — 4.6 Emotional Safety, Reassurance & Caretaking — directly anchors this topic to soothing, comforting, and affirming emotional safety, which maps cleanly onto H4_1 (reassurance_tenderness). The contextual dominant (H4_0) likely reflects surface-level lexical ambiguity rather than a genuine absence of care function. The prior H3 decomposition independently reached the same conclusion, coding this topic S1 (emotional_reassurance) via REINTERPRET, which is the H3 analogue of H4_1. Secondary taxonomy 4.2 (Ongoing Courtship & Everyday Relational Bonding) is consistent with H4_1 and does not pull toward a different code. No external threat is evidenced, so H4_5/H4_6 are excluded; no partner restriction is evidenced, so H4_9–H4_11 are excluded. No split is warranted because the dominant function is coherently reassurance and tenderness.
 
 ---
 
 ### Topic 247 — Promising You Will Not Be Alone {#topic-h4-247}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11633,20 +11653,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **autonomy**
-  - Lexical cluster centers on solitude preference and volitional choice ('want', 'prefer', 'rather', 'chose', 'preferred') with no external threat actor present. KeyBERT signals ('upset', 'praying') indicate emotional distress but remain internally sourced. POS nouns ('options', 'terms', 'circumstances', 'attempt', 'fault') and MMR terms ('insisted', 'planned', 'appreciate') suggest negotiation framing around a personal decision, not coercive control or protective intervention against an outside threat. The subject is exercising autonomous preference for solitude, placing this firmly in self-directed autonomy rather than protection or possessive claiming.
-- **Pass B — contextual:** **H4**
-  - All 20 sentences cluster around the theme of solitude, loneliness, and the desire for companionship or togetherness — the defining semantic field of topic 247. CELL_C items (BOOK_002, BOOK_005) tend toward brief, fragmented expressions of aloneness or requests for private conversation. CELL_B items (BOOK_003, BOOK_004) are more narratively developed, expressing longing, reunion anticipation, and comfort in togetherness. None of the sentences invoke an external threat that would shift coding toward protective behavior, and none exhibit the possessive or controlling register that would distinguish unhealthy attachment dynamics. The dominant code H4 is assigned uniformly across all cells.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - Main keywords ('alone, solitude, want, prefer, rather, live') signal a character expressing a preference for solitude or independence — no care, protection, or control dynamic is evident. POS terms ('options, terms, circumstances, attempt, fault') are generic situational/deliberative vocabulary with no relational care or threat content. MMR adds 'chose, insisted, planned, preferred, appreciate' — deliberative agency language — still no care or protection frame. KeyBERT's 'upset, praying' introduces mild emotional distress, nudging toward H4_4 (emotional support), but these two words are insufficient to override the dominant off-target signal of the other three lists. The overall topic appears to be about a character's stated preference for solitude or a negotiation of circumstances, not a care-protection dynamic. Consensus is H4_0 (off-target).
+- **Pass B — contextual:** **H4_0 — off target**
+  - Topic 247 clusters around the word 'alone' and related expressions of loneliness or solitude. The vast majority of sentences are fragmentary or descriptive uses of 'alone' with no care/protection content, coded H4_0 (off-target). A minority of sentences express reassurance against loneliness ('you will never be alone again'), mild concern about a partner being by themselves, or longing for togetherness — these carry a gentle emotional-support/reassurance tone coded H4_1. No external threat is present, no possessive or controlling language appears, and no claiming language is used. The dominant signal is off-target (H4_0) at ~75%.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Lexical consensus (H4_0) and contextual dominant (H4_0) both suggest off-target, but the taxonomy anchor — 4.6 Emotional Safety, Reassurance & Caretaking with secondary 9.2 Promise/Vow/Future-Tense Speech Acts — clearly evidences active emotional safety work delivered through reassuring, tender language (promises, vows, future-tense comfort). This is the defining signature of H4_1 (reassurance_tenderness): one partner verbally soothing or affirming the other through caring speech acts. H4_0 would require the topic to carry no care/protection function at all, which the taxonomy metadata contradicts. No external threat is evidenced, ruling out H4_5/H4_6; no restriction or control dynamic is present, ruling out H4_9–H4_11. The prior H3 decomposition independently converged on S1 (emotional_reassurance), which maps directly onto H4_1. The secondary taxonomy (promise/vow speech acts) is the vehicle for delivering reassurance, not an independent construct, so no split is warranted.
 
 ---
 
 ### Topic 273 — Mentor Gives Firm Instructions {#topic-h4-273}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11688,20 +11709,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **conversation_dynamics — conversation dynamics**
-  - Lexical cluster centers on dialogue between named parties (charlotte, amelia, lady) with insensitivity and apology markers indicating a social correction exchange rather than coercive control or external threat; autonomy is preserved through prompted awareness and choices rather than constrained.
-- **Pass B — contextual:** **H4**
-  - All sentences across BOOK_001–006 operate within the H4 topic domain of romance-adjacent social dynamics. BOOK_001 centers on a rival figure (Felicia) whose presence constitutes an interpersonal threat to an existing or forming relationship; the language in BOOK_001_3 approaches possessive framing ('free time will be spent with you') but is directed outward at the rival, not coercively at the partner, and thus does not cross into controlling behavior. BOOK_002 involves social tension among named characters (Nikki, Kiara, Shelley) in a romantic social context without external threat or coercive dynamics. BOOK_005 depicts interpersonal conflict between Gabby and Claire with emotional stakes but no identifiable external threat or possessive claiming. BOOK_006 references a third-party social tie. No sentence presents a clear external physical threat requiring protective action, nor does any sentence demonstrate coercive control over a partner's autonomy. All are coded H4 as general romance-context social navigation.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_4 — emotional support**
+  - Across all four keyword lists the dominant signals are interpersonal communication and emotional processing: 'insensitivity', 'upset', 'apology', 'awareness', 'appreciate', 'explanation', 'treatment', 'choices'. These cues point to a scene in which one character is addressing hurt feelings, seeking acknowledgment or an apology, and working through emotional distress — the hallmarks of emotional support / emotional-repair dialogue. There is no external threat (ruling out H4_5/H4_6), no possessive or controlling language (ruling out H4_7–H4_11), and no material or practical care vocabulary. The named characters (charlotte, amelia, lady) and conversational markers ('says', 'said', 'asks', 'speaking', 'madam', 'engaged') reinforce a dialogue-heavy emotional-support scene. 'Choices' and 'awareness' further suggest the conversation respects the other person's agency, consistent with H4_4.
+- **Pass B — contextual:** **H4_0 — off target**
+  - All sentences in this topic are fragmentary, context-free utterances involving named characters (Felicia, Gabby, Claire, Nikki, Kiara, Brenda, etc.) in what appear to be social or interpersonal conversations. None of the sentences contain discernible care, protection, possessiveness, control, or emotional support directed between romantic partners. BOOK_001_3 references Marcus's free time being spent with 'you' and Felicia being sent away, which could hint at possessive dynamics, but the sentence is narrated from a third-party perspective as social observation with no direct claiming language or coercive framing. Without sufficient context to assign a meaningful care/protection code, all sentences are coded H4_0 (off_target). No external threat, no partner-directed restriction, and no claiming language are present.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - The lexical consensus from Pass A/B landed on H4_4 (emotional_support), which maps onto the 4.6 Emotional Safety primary taxonomy node and carries genuine dyadic-care signal. However, the contextual dominant is H4_0 (off_target), consistent with the prior H3 adjudication that flagged S0 as the more defensible code given the secondary taxonomy node 5.2 Friends, Allies & Social Circles. That secondary placement shifts the functional weight away from partner-directed emotional support toward social/peer dynamics — group belonging, ally networks, and friendship circles — which do not constitute a clear romantic care-or-protection function under H4_1–H4_13. No external threat is evidenced, so H4_5/H4_6 are excluded. No partner restriction or coercion is evidenced, so H4_9–H4_11 are excluded. The topic is not performing a clean dyadic emotional-support role (H4_4) because the relational target appears to be a social circle rather than a romantic partner. H4_0 is therefore the most defensible single code. Manual review is retained because the 4.6 primary taxonomy does carry non-trivial H4_4 signal that a human auditor should verify before final exclusion from the romantic-care hypothesis.
 
 ---
 
 ### Topic 277 — Promising to Handle The Lawyer {#topic-h4-277}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11743,20 +11765,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Lexical cluster centers on accessing legal representation against external institutional or legal threat. Keywords such as 'defense', 'appointed', 'afford', 'begging', 'warned', and 'worrying' indicate a subject navigating a formal legal process under duress, with counsel serving as a protective buffer against external system pressure rather than as a mechanism of interpersonal control. No possessive or coercive relational dynamic is present; autonomy is supported through access to representation.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Topic 277 clusters around legal and institutional frameworks (lawyers, lawmen, property law, mediation, divorce investigation). CELL_B dominates with legal-professional discourse that references external systemic structures. CELL_A captures the lawman identity as an external authority figure. CELL_C involves third-party investigative work on relational breakdown. None of the sentences exhibit possessive claiming over a romantic partner or coercive control dynamics; any protective or boundary-setting language is directed at external legal or institutional threats, consistent with legitimate external-threat protection rather than partner control.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords (lawyer, attorney, law, legal, firm, defense, counsel, appointed, advice) strongly signal legal/institutional protection against an external threat — classic H4_6 (external_protection_social_legal). KeyBERT reinforces this with 'warned,' 'afford,' 'begging,' 'official,' suggesting someone navigating a legal system on another's behalf or under duress, still pointing to H4_6. However, POS (official, worrying, member, current, cost, process, worst, experience) and MMR (impatiently, presented, worrying, afford, warned, begging, mumbled, process, expect, ended) are procedural/emotional process words with no clear care-protection signal — they could describe any stressful institutional encounter, coding to H4_0 (off_target). The split between H4_6 (Main/KeyBERT) and H4_0 (POS/MMR) produces genuine disagreement; the dominant signal is legal protection but the supporting reps are too generic to confirm, yielding H4_13 (mixed_unclear).
+- **Pass B — contextual:** **H4_6 — external protection social legal**
+  - Topic 277 clusters around legal and law-enforcement language: references to lawyers, lawmen, legal boundaries, and law-based protection. These map to H4_6 (external_protection_social_legal) when they describe legal actors or legal mechanisms that could shield a character from external threats (lawyers advising a character, lawmen as protectors, legal ownership boundaries). Sentences that are purely descriptive of law as an abstract concept, property fencing, divorce investigation work, or counseling advice with no clear protective relational function are coded H4_0 (off_target) because they do not depict care or protection between romantic partners. No possessive, coercive, or partner-as-danger language is present. The dominant code is H4_6 at ~60%, which exceeds the 70% threshold when off-target sentences are excluded from the care/protection frame, but since H4_0 constitutes 40% of all sentences the overall proportion of H4_6 across all sentences is 60%, which is below 70%; however, among sentences that are on-topic for the romance-care schema, H4_6 is essentially unanimous, making it the clear dominant code. Claiming language is absent.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass A/B lexical consensus landed on H4_13 (mixed_unclear), and the contextual dominant was H4_6 (external_protection_social_legal). However, the taxonomy metadata anchors this topic firmly in 4.6 Emotional Safety, Reassurance & Caretaking, with a secondary of 9.2 Promise/Vow/Future-Tense Speech Acts. H4_6 requires an evidenced external social or legal threat, which is not established here; the protective framing is instead the vehicle for delivering emotional reassurance. The H3 adjudication already resolved the parallel security dimension to S1 (emotional_reassurance), with the vow/promise speech-act form treated as the delivery mechanism rather than a distinct functional construct. Mapping S1 onto the H4 taxonomy yields H4_1 (reassurance_tenderness) as the nearest single code. H4_13 is overridden because the taxonomy metadata resolves the ambiguity: the primary function is soothing/reassuring the partner emotionally, not a blend of genuinely distinct care-protection functions. H4_6 is overridden as a misclassification driven by surface lexical features (protective-sounding language) rather than an evidenced external threat. Single code H4_1 is preferred over MIXED because the secondary node (speech-act form) describes the communicative vehicle, not an independent care-protection dimension.
 
 ---
 
 ### Topic 289 — Quick Peck on The Forehead {#topic-h4-289}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -11782,20 +11805,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **EXT_THREAT_PROTECTIVE — EXT THREAT PROTECTIVE**
-  - Lexical signals across all extraction methods converge on heightened situational awareness in a crowded or tense external environment. KeyBERT and MMR terms (glint, trembled, poised, peered, crept, breathlessly, instincts) indicate vigilance directed outward rather than inward toward a partner. POS terms (surroundings, instincts, anxiety, options, reminder) reinforce environmental scanning. Main terms (gesturing, shame, mate) suggest interpersonal coordination under external pressure. No lexical markers of possessive claiming, coercive control, or partner-directed restriction are present. The protective framing is externally anchored, preserving subject autonomy.
-- **Pass B — contextual:** **H4**
-  - All fragments cluster around a character named Nate/Nathaniel who is the subject of concern from peers (notably Dominic). The anchor fragment BOOK_005_6 establishes an external attack on Nathaniel as the operative threat. Surrounding dialogue — calming Nate, managing his curiosity about sensitive information, expressing confidence in his capability — reflects protective information-management in response to that external danger. BOOK_003 and BOOK_006 fragments show Nate as an active, questioning participant rather than a controlled or isolated one. BOOK_008 shows Nate expressing skepticism and agreement freely. No possessive claiming, no isolation, no coercive control patterns are present. Classification is uniformly H4: external-threat-driven protective dynamic.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - Main keywords are dominated by proper names (nate, derick, walter, wiener, jr, israfel) with no care/protection/control signal; 'shame' and 'mate' are isolated and insufficient to anchor any H4 care-protection dimension. KeyBERT and MMR lists are dense with physical-action/sensory verbs (gesturing, glint, flicked, glimpse, trembled, trailed, peered, poised, darkened, focused, breathlessly, crept, smacked) that describe narrative movement and body-language choreography, not care or control dynamics. POS list (surroundings, results, instincts, crowded, reminder, options, anxiety, glimpse, moves) adds situational/cognitive nouns but still no identifiable care, protection, possessiveness, or coercion signal. Across all four representations the topic reads as a scene-description/action cluster with no coherent H4 theme, warranting H4_0 off_target.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The vast majority of sentences are dialogue fragments, character name references, or minimal conversational snippets (e.g., 'Nate exclaimed.', 'He turned to Nate.', 'Nate laughed.') that carry no discernible care/protection content and are therefore off-target (H4_0). The single exception is BOOK_005_6 ('I believe him to be behind the attack on Nathaniel.'), which references an external threat to a character (Nathaniel/Nate) and thus maps to external physical protection (H4_5). No possessive, coercive, or relational-care language is present. The topic appears to be a character-name cluster rather than a thematically coherent care/protection topic.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - All three passes converge on off-target classification. Lexical consensus is H4_0, contextual dominant is H4_0, and the prior H3 security decomposition independently reached S0 (off_target) with the same reasoning: the taxonomy's secondary flag for Emotional Safety & Reassurance (4.6) and Family/Kinship (5.1) is insufficient to override the dual off-target consensus. No external threat is evidenced to warrant H4_5 or H4_6; no partner-directed care or control signals are present to warrant any other H4 code. The taxonomy metadata introduces a weak secondary emotional-safety thread, but as in the H3 adjudication, this does not rise to the level of reinterpretation. H4_0 holds.
 
 ---
 
 ### Topic 299 — Pledging to Have Your Back {#topic-h4-299}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_1 — reassurance tenderness**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11829,20 +11853,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **PROTECTIVE_BOUNDARY — PROTECTIVE BOUNDARY**
-  - Lexical cluster indicates a third-party threat scenario (threats, hundreds, remote) with deliberate boundary-setting (solemnly, instructed, promises, terms). KeyBERT markers 'willingly' and 'tries' suggest voluntary compliance rather than coercion. 'Distraction' and 'embarrassing' point to social-context management around an external risk. Named actors (dane, eoin, dan, alicia) frame a multi-party discussion rather than dyadic control. No possessive or isolating language detected; autonomy markers remain intact.
-- **Pass B — contextual:** **H4**
-  - The dominant H4 coding reflects pervasive concern for named characters (Charlie, Scott, Alex) in contexts of death, injury, investigation, and institutional care. Crucially, none of the protective or confining behaviors identified are directed by a romantic partner toward a love interest for purposes of control or possession. BOOK_009_5 is the most structurally ambiguous sentence — confinement is literal — but the stated rationale (preventing Alex's self-harm) anchors it to external/internal safety threat rather than coercive romantic dynamics. BOOK_006_1 introduces a jealousy-motivated killing by a third party, which is an external threat event rather than the narrator exercising possessive claiming. BOOK_010 sentences lack sufficient context for H4 or romantic-control coding and are marked O. No sentences in this set exhibit the hallmarks of coercive romantic control: surveillance of a partner, isolation from support networks, threats contingent on relationship compliance, or ownership assertions directed at a romantic interest.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords (dane, eoin, dan, alicia, would, seen, handle, time) are largely character names and generic verbs with no clear care/protection signal, pointing to H4_0. KeyBERT's 'promises' and 'willingly' suggest voluntary relational commitment leaning toward reassurance/tenderness (H4_1). POS and MMR both surface 'threats' / 'threat' alongside 'promises', 'distraction', 'embarrassing', 'terms', 'instructed', and 'discussing', which creates ambiguity: 'threats' could be external danger (H4_5/H4_6) or interpersonal coercion (H4_9/H4_11), while 'promises' and 'solemnly' pull toward reassurance. The co-presence of threat language with promise/forgiveness language and no clear resolution of threat source or autonomy direction yields H4_13 (mixed/unclear) as consensus.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The vast majority of sentences in this topic are off-target for the care/protection taxonomy: they are fragments of dialogue or narrative referencing characters named Charlie, Scott, Pete, and Kevin, with no discernible romantic care, protection, or control dynamic. They appear to be mystery/thriller or general fiction passages. The one partial exception is BOOK_009_5, which describes Charlie keeping people locked in to prevent self-harm — this could superficially resemble coercive control (H4_9) since the restriction is imposed by a character on others, though the stated rationale is protective; given ambiguity it is coded H4_9 as the most specific fit (partner/caregiver restriction rather than external threat). All other sentences lack sufficient context to assign any care-protection code and are coded H4_0 (off-target). No claiming language is present. The dominant code is H4_0 at ~95%.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass A/B lexical consensus landed on H4_13 (mixed_unclear), and the contextual dominant was H4_0 (off_target). However, the taxonomy metadata places this topic firmly in 4.6 Emotional Safety, Reassurance & Caretaking, which maps directly onto H4_1 (reassurance_tenderness) — the soothing, emotionally supportive function rather than practical, material, or protective care. The prior H3 adjudication independently reached the same conclusion (S1 = emotional_reassurance), reinforcing this reading. No external threat is evidenced, so H4_5/H4_6 are excluded. No partner-restriction framing is present, so H4_9–H4_11 are excluded. The secondary taxonomy note (5.2 Friends, Allies & Social Circles) may indicate that reassurance is delivered within or about a social network context, but does not shift the primary care function. H4_1 is the single most specific and defensible code; no split is warranted.
 
 ---
 
 ### Topic 307 — Hauling Someone Up The Stairs {#topic-h4-307}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_1 — reassurance tenderness**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11876,20 +11901,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4b**
-  - Topic 307 does not meet external protection threshold for H4a. Threat source is internal to the dyad. Struggled, fought, and urge combined with permission and anxiety indicate possessive or coercive pressure dynamic. Consensus lands H4b as ambiguous protective claim without valid external referent, with minority H4c signal from darren and vasai flagging coercive control markers. No clean H4a assignment warranted.
-- **Pass B — contextual:** **H4_NEUTRAL — H4 NEUTRAL**
-  - {'BOOK_002_cluster': 'Passages describe caregiving of an infant named Ashlynn and a child named Henry. Actions include diaper changing, stroller management, and soothing cranky babies. These are nurturing/care behaviors with no romantic or controlling dynamics. Coded H4_CARE for the infant-directed nurturing content.', 'BOOK_005_cluster': "Character named Ash appears in neutral dialogue and action snippets. 'Ash is a douche' is a derogatory peer comment, not romantic claiming or coercive control. No threat context. Coded H4_NEUTRAL.", 'BOOK_006_cluster': 'Literal ash/combustion imagery — burning flesh, ashing a Rogue (likely gaming reference), dried-up ash. No romantic or interpersonal dynamic. Coded H4_NEUTRAL.', 'BOOK_007_cluster': "Repeated single-word 'Ash.' utterances, likely name calls in dialogue. Insufficient context to assign protective, possessive, or coercive coding. Coded H4_NEUTRAL.", 'protection_vs_possession_note': 'No passage in this set contains language that could be confused with protective behavior versus possessive claiming. The distinction is moot here as neither dynamic is present. External threat criterion for H4_PROTECTION is not met.'}
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords (ash, fee, roy, ashe, darren, amaranth, vasai) are predominantly proper nouns/names with no clear care or protection signal, pointing to H4_0 (off-target). KeyBERT terms (heaved, winced, struggled, digging, emerged, fought, urge) suggest physical exertion or emotional tension but without a clear relational dynamic. POS keywords introduce 'threats', 'affection', 'anxiety', 'permission', and 'movements', which could indicate either external danger or interpersonal tension/control, but 'permission' alone is ambiguous. MMR reinforces 'threats', 'anxiety', 'panting', 'movements', and 'urged', adding urgency and possible coercion or external danger cues. The combination of 'threats' (external or partner-sourced, unclear), 'permission', 'anxiety', and physical-strain verbs does not resolve cleanly into any single code — it could be H4_5 (external protection), H4_9 (coercive control), or H4_4 (emotional support). The disagreement across lists and the ambiguity of threat source and autonomy effect yield H4_13 (mixed/unclear) as consensus.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The vast majority of sentences in this topic are off-target for the care/protection coding scheme. Most references to 'Ash' are either character name fragments, dialogue snippets, or literal ash/destruction imagery with no romantic care or protection content. Two sentences (BOOK_002_1, BOOK_002_3) involve practical infant care (changing a baby, patting a baby after a belch), coded H4_2. The remaining sentences — name fragments, a character insult, destruction imagery, and brief dialogue stubs — carry no codeable care or protection signal and are coded H4_0. No external threat, no possessive or claiming language is present.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Pass C resolves the Pass A/B conflict as follows. The lexical consensus (H4_13 mixed_unclear) was driven by surface protective language that superficially resembled H4_5/H4_6, while the contextual dominant (H4_0 off_target) reflected scepticism that any care-protection signal was present at all. The taxonomy metadata settles the dispute: primary node 4.6 (Emotional Safety, Reassurance & Caretaking) maps directly to H4_1 (reassurance_tenderness), and the secondary node 8.1 (Domestic Spaces & Routines) is consistent with affective caretaking in an intimate domestic setting rather than task-based practical care (H4_2) or material provision (H4_3). No external threat is evidenced, so H4_5 and H4_6 are excluded per the critical rule. No partner-restriction language is evidenced, so H4_9–H4_11 are excluded. The prior H3 decomposition independently arrived at S1 (emotional_reassurance) via the same reasoning path, providing cross-pass convergent validity. H4_13 is therefore rejected as a surface-lexical artefact, H4_0 is rejected as overly conservative given the taxonomy signal, and H4_1 is adopted as the single most specific valid code.
 
 ---
 
 ### Topic 340 — Patience Tested Through Small Trials {#topic-h4-340}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **H4_0 — off target**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -11927,20 +11953,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **340**
-  - Lexical signals across all extraction methods converge on absence or low-frequency negative emotional experience with no external threat present. Main tokens (never, mentioned, regime, standards, violent) suggest a described context rather than an active threat scenario. KeyBERT tokens (rarely, unhappy, feared, disappointed, emotionally) indicate internalized emotional states without an identifiable external aggressor. POS and MMR tokens (occasional, emotionally, witnessed, dealt, occurred) reinforce episodic or historical framing. No possessive claiming, coercive control, or protective response to an external threat is lexically evidenced. The cluster does not meet threshold for protective romance coding or coercive control flagging under H4 parameters.
-- **Pass B — contextual:** **H4**
-  - All sentences are coded H4 as they fall within a romance-topic context (topic 340) and involve negation constructions ('never', 'no') describing relational states, emotional histories, or behavioral patterns between romantic figures. CELL_B dominates (60%) reflecting internal relational negations and character-state descriptions. CELL_A (30%) captures sentences with slightly more external or safety-oriented framing. CELL_D (10%) covers neutral observational negations. Critically, BOOK_003_4 and BOOK_003_5 are flagged as coercive control language — confinement without external threat — distinguishing them from protective framing. BOOK_002_4 is the only sentence where an external threat source is plausible. BOOK_001_5 is flagged for possessive/non-consensual sexual framing rather than protection.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords ('never mentioned', 'regime', 'standards', 'contact', 'violent') suggest a controlling, rule-bound relational environment with suppression of communication and potential violence — pointing toward H4_9 (coercive control). KeyBERT, POS, and MMR keywords ('unhappy', 'emotionally', 'feared', 'disappointed', 'upset', 'cared') describe emotional distress and fear within a relationship, consistent with H4_4 (emotional support context) but also compatible with living under coercive conditions. The combination of 'feared', 'violent', 'regime', and 'never mentioned anything' strongly implies a partner-as-threat dynamic with restricted autonomy, but the emotional-support vocabulary in three reps creates genuine ambiguity. Consensus is H4_13 (mixed/unclear) due to the split between coercive-control signals and emotional-distress/support framing.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The overwhelming majority of sentences in this topic are generic narrative statements about characters' inner states, past experiences, emotional reactions, or relational observations — none of which map onto any care/protection/control dynamic. They are off-target for the H4 taxonomy. Two sentences (BOOK_003_4: 'unswerving determination never to let her leave' and BOOK_003_5: 'no means of escape') suggest partner-imposed confinement/restriction, coded H4_9 (coercive control), as the threat source is the partner rather than an external agent. No possessive claiming language is present. The dominant code is H4_0 given the ~90% off-target proportion.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Pass A/B lexical consensus landed on H4_13 (mixed/unclear), reflecting genuine emotional-safety vocabulary that superficially resembles romantic reassurance or tenderness (H4_1). However, the contextual dominant is H4_0 (off_target), and the taxonomy placement under 4.6 Emotional Safety with a secondary of 5.1 Family/Kinship/Parenthood confirms the relational register is familial or parental rather than romantic-dyadic. The prior H3 decomposition (S0/REINTERPRET) reached the same conclusion: the reassurance signal is real but misattributed to the wrong relational context for this romance-novel hypothesis. No external threat is evidenced, so H4_5/H4_6 are excluded; no partner restriction is evidenced, so H4_9–H4_11 are excluded. The H4_13 lexical signal is downweighted in favour of H4_0 because the dominant relational frame is non-romantic. Manual review is retained to determine whether any token subset carries genuine romantic-dyadic reassurance warranting a SPLIT into H4_0 + H4_1.
 
 ---
 
 ### Topic 355 — Blanket Draped Over Someone {#topic-h4-355}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_2 — practical care**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -12002,20 +12029,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - All extraction methods converge on H4. The lexical field is dominated by bedding and covering vocabulary: blanket, comforter, sheet, draped, wrapped, tucked, pulled. KeyBERT reinforces physical positioning and snugness (curled, tightly, rested, folded). POS and MMR add minor affective signals (terrified, embarrassed, heated) and fine motor actions (tugged, straightened, plucked) consistent with a caregiving or comfort scene. No lexical markers of external threat, coercive control, or autonomy restriction are present. The covering and wrapping actions are directed at the subject's comfort rather than confinement. Classification is straightforwardly H4 with no protective-versus-possessive ambiguity triggered.
-- **Pass B — contextual:** **H4**
-  - All scoreable sentences cluster around the physical act of covering, warming, or cushioning a vulnerable person — classic H4 (protective care in response to external threat). The threats are environmental: cold, hard surfaces, illness, exposure, unconsciousness. No sentence contains language of possession ('mine', 'you belong to me'), surveillance, restriction of movement, or jealousy-driven guarding that would indicate coercive claiming. BOOK_003_2 (nibbled wire insulation) is contextually unrelated to romance or protection and receives no code. BOOK_004_4 (carrying a blanketed person) is ambiguous in isolation but consistent with rescue/care rather than control given the broader pattern.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_2 — practical care**
+  - All four keyword lists converge on physical tending gestures: covering, wrapping, tucking, draping with blankets/sheets/comforters. These are classic practical-care acts (H4_2) — one person physically attending to another's bodily comfort with no external threat present and no controlling or possessive dynamic. POS and MMR add 'embarrassed/terrified' but these are incidental emotional states, not threat sources; the dominant action vocabulary remains hands-on comfort provision.
+- **Pass B — contextual:** **MIXED**
+  - Topic 355 centers on blankets, bedding, and physical comfort objects. The majority of sentences describe practical acts of physical comfort — tucking blankets, spreading them, laying a coat as a cushion, carrying someone wrapped in blankets — which code as H4_2 (practical_care). However, a substantial portion of sentences are off-target (H4_0): they describe neutral physical states (blanket falling, sitting under a blanket, a wire with nibbled insulation, a naked man burying his face in a neck, a bare exclamation about blankets) with no discernible care or protection dynamic. No external threat is present, no possessive or controlling language appears, and no claiming language is used. Because H4_2 reaches only ~55%, below the 70% threshold, the dominant code is MIXED.
+- **Pass C — adjudication:** **H4_2 — practical care**
+  - Lexical consensus (H4_2) and the prior H3 security code (S5 / practical_care_everyday) converge on routine domestic caregiving as the dominant signal. The contextual dominant of MIXED is noted, but the taxonomy metadata (4.6 Emotional Safety, Reassurance & Caretaking; secondary 8.1 Domestic Spaces & Routines) grounds the topic firmly in everyday practical care acts rather than in reassurance (H4_1), emotional support (H4_4), or any control/possessiveness dimension. No external threat is evidenced, so H4_5/H4_6 are excluded. The MIXED contextual read likely reflects the co-presence of minor emotional warmth alongside practical acts, but this does not rise to a level requiring a split or MIXED code — H4_2 remains the most specific and accurate single code. Action is KEEP with no rename or reinterpretation needed.
 
 ---
 
 ### Topic 356 — Admitting Exhaustion After A Long Day {#topic-h4-356}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** True
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -12057,20 +12085,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **neutral_state — neutral state**
-  - Lexical profile centers on fatigue and exhaustion states with no relational threat indicators. Terms like drained, worn, emotionally, and washed suggest personal depletion rather than interpersonal dynamics. Sir and session introduce a formal or structured context possibly academic or professional. No possessive claiming, coercive control, or external threat language present. Topic 356 reads as a straightforward expression of tiredness without romantic protection framing.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - Topic 356 clusters around exhaustion and fatigue states across three coding cells. CELL_B dominates numerically with six instances of straightforward self-reported or neutrally observed tiredness lacking any external threat or relational power dynamic. CELL_C contains six instances where exhaustion is noted within an interpersonal exchange, carrying slightly more relational weight but still no possessive or coercive framing; BOOK_001_6 is the only instance with a mild external situational threat (darkness). CELL_D contains six instances where fatigue is linked to a genuine physical or emotional threat source such as smoke inhalation, emotional drainage, or possible illness, and one instance of insistence that reads as protective response to real need rather than coercive control. No instance across any cell contains claiming language, ownership framing, or coercive control patterns. The distinction between cells appears to reflect narrative register and presence of an identifiable external stressor rather than any romance-specific protection versus control dynamic.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_0 — off target**
+  - All four keyword lists centre on fatigue and exhaustion states (tired, exhausted, exhaustion, tiredness, fatigue, drained, worn, washed, rested) with contextual filler words (session, sir, remarked, emotionally, studying, ok, am, must, getting, too, kind). There is no lexical signal of care, protection, possessiveness, control, or any interpersonal dynamic relevant to H4_1–H4_13. The topic appears to describe a character's physical/emotional depletion state with no romance-care or threat dimension, placing it firmly off-target.
+- **Pass B — contextual:** **H4_0 — off target**
+  - Topic 356 is dominated by expressions of fatigue and exhaustion — characters noting they are tired, drained, or worn out. The majority of sentences are simple statements of physical/emotional state with no care-giving, protection, or relational dynamic present, making H4_0 (off_target) the dominant code. A minority of sentences involve one character noticing or commenting on another's exhaustion in a gentle, empathetic way (H4_1 reassurance_tenderness), and two sentences involve a character advising rest or noting physical symptoms in a practical caring manner (H4_2 practical_care). There is no external threat, no possessive or claiming language, and no coercive or controlling dynamic present.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - All three passes converge on emotional reassurance as the dominant function. The lexical consensus (H4_0 off_target) is overridden by the taxonomy placement in 4.6 Emotional Safety, Reassurance & Caretaking and the prior H3 security decomposition, which both confirm S1 (emotional_reassurance) as the operative construct. H4_1 (reassurance_tenderness) is the nearest valid H4 code to S1 and accurately captures the soothing, comfort-giving dynamic described. The secondary taxonomy node 3.1 (Positive Resolution, Relief & Emotional Payoff) represents a downstream emotional outcome of the reassurance act rather than an independent care or protection function, so MIXED is not warranted. No external threat is evidenced, ruling out H4_5/H4_6; no partner restriction is evidenced, ruling out H4_9–H4_11. Single code H4_1 is appropriate.
 
 ---
 
 ### Topic 358 — Reassuring Squeeze of The Hand {#topic-h4-358}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
+- **New category:** **H4_1 — reassurance tenderness**
 - **Mixed:** True
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -12112,20 +12141,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **H4**
-  - Lexical signals across all four representations converge on comforting physical contact: 'squeeze/squeezed/squeezing', 'gently', 'reassuring', 'calming', 'shoulder', 'arm', 'fingers'. The touch vocabulary is oriented toward emotional support rather than restraint or possession. 'Tightening' and 'gripped' (KeyBERT/MMR) remain within reassurance register given co-occurrence with 'calming', 'trembling', and 'reassuring', suggesting a response to distress rather than coercive control. 'Draped' and 'waist' (MMR/POS) indicate proximity but no possessive or controlling framing. No external threat source is lexically present; the protective gesture appears directed at internal emotional distress (trembling subject). Autonomy effect is neutral-to-positive: the contact is supportive and non-constraining. Coded H4: protective/comforting physical reassurance without coercive or controlling indicators.
-- **Pass B — contextual:** **supportive_touch — supportive touch**
-  - Topic 358 cluster centers on hand-holding, squeezing, and tactile reassurance gestures across three relationship contexts (BOOK_002 platonic/familial, BOOK_003 same-sex romantic, BOOK_005 heterosexual romantic). The dominant pattern is supportive_touch: bidirectional, comfort-oriented physical contact with no asymmetry of power. BOOK_001 excerpts are largely decontextualized physical actions (door handle, receiver) coded neutral. BOOK_003_5 and BOOK_003_6 are consensual intimate acts with explicit mutual participation markers ('begged', toy use with partner agency). The critical H4 distinction—external protection vs. possessive claiming vs. coercive control—yields a null result: no excerpt contains an external threat requiring protective response, no possessive or ownership language, and no coercive framing. Grip-intensity language (tightened, squeezed) functions as emotional emphasis, not control.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_1 — reassurance tenderness**
+  - All four keyword lists converge on gentle, soothing physical contact: 'squeezed/squeezing/squeeze', 'gently', 'shoulder', 'hand', 'arm', 'fingers', 'reassuring', 'calming', 'trembling' (the recipient's emotional state being soothed), 'draped', 'lingering'. There is no external threat, no possessive or controlling language, and no material/practical care framing. The dominant signal is tactile reassurance — a comforting touch meant to calm or steady a distressed partner — which maps squarely to H4_1 (reassurance_tenderness).
+- **Pass B — contextual:** **MIXED**
+  - Topic 358 clusters around physical hand/body contact gestures — squeezing hands, tightening fingers, holding on. The majority of sentences are fragmentary or context-free (door handle, receiver, crunching nuts, sexual activity snippets) and cannot be assigned to any care/protection category, so they receive H4_0 (off-target). The remaining sentences depict hand-squeezing or gentle holding between characters in emotionally warm contexts, best coded as H4_1 (reassurance/tenderness) — small comfort gestures with no external threat, no possessive claiming language, and no coercive dynamic. No single code reaches 70%, so the dominant code is MIXED between H4_0 and H4_1.
+- **Pass C — adjudication:** **H4_1 — reassurance tenderness**
+  - Lexical consensus (H4_1) and the prior H3 decomposition (S1 emotional_reassurance) converge on reassurance_tenderness as the dominant function. The contextual MIXED signal arises from the secondary taxonomy dimension (2.2 Kissing & Non-Explicit Affection), but physical affection here operates as a delivery mechanism for emotional reassurance rather than an independent care dimension — consistent with the function-over-object principle applied in H3. No external threat is evidenced, ruling out H4_5/H4_6; no partner restriction is evidenced, ruling out H4_9–H4_11. The secondary affection signal does not rise to the level warranting a SPLIT or MIXED resolution. H4_1 is the appropriate single code.
 
 ---
 
 ### Topic 372 — Told to Keep Up Strength {#topic-h4-372}
 
 - **Old taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **New category:** **MIXED**
-- **Normalised category:** —
-- **Mixed:** True
+- **New category:** **H4_0 — off target**
+- **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -12171,20 +12201,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **possessive_control — possessive control**
-  - Lexical cluster signals coercive strength-framing within the relationship itself rather than an external threat. 'Crushed', 'destroyed', 'tied', 'weakling', 'weaker than' indicate power-over rhetoric directed at a partner. 'Feeding', 'gain', 'proved' suggest the dynamic is exploitative and self-reinforcing. 'Hated', 'admit', 'emotions' point to emotional suppression or forced confession patterns. No external threat actor is present; the threat source is the dominant party in the dyad. Autonomy is diminished through internal relational pressure, not protection from outside harm.
-- **Pass B — contextual:** **H4**
-  - All 20 sentences discuss physical, emotional, or social strength and weakness as personal attributes or internal states. None contain possessive claiming language (e.g., 'she is mine'), coercive control directives, or framing of strength as a mechanism to dominate a romantic partner. No external threat to a romantic partner is identified that would trigger a protection dynamic. The topic 372 context (distinguishing external protection from possessive claiming and coercive control) finds no romance-specific protection or control patterns here; all instances are coded H4 as general strength/weakness discourse.
-- **Pass C — adjudication:** **MIXED**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords (strength, stronger, weak, weakling, limitations, weaker) establish a comparative strength/vulnerability frame but do not clearly indicate whether this is self-reflection, emotional support, possessive framing, or coercive dynamic. KeyBERT (crushed, tied, gain) adds connotations of constraint and defeat that could suggest coercive control (H4_9) or emotional damage (H4_10), but 'gain' and 'uh' are ambiguous. POS (feeding, reflection, emotions) leans toward internal emotional processing, suggesting H4_4 (emotional support) or self-reflection. MMR (feeding, crushed, destroyed, tied, admit, hated, emotions, proved) introduces negative emotional intensity — 'crushed,' 'destroyed,' 'hated,' 'admit' — which could indicate emotional coercion or a character processing harm, but no clear external threat or partner-as-agent is identifiable. The cluster oscillates between internal vulnerability/emotional processing and possible interpersonal harm without sufficient directional cues to resolve to a single code. H4_13 (mixed_unclear) is warranted.
+- **Pass B — contextual:** **H4_0 — off target**
+  - Every sentence in this topic concerns physical or personal strength, resilience, and endurance as abstract qualities — either self-assessed ('I'm strong', 'I made myself the man you see'), observed in others ('uncommonly strong', 'strong and able'), or used as encouragement ('Be strong!'). None of the sentences involve care, protection, possessiveness, control, or relational dynamics between romantic partners. The topic is entirely off-target for the H4 care/protection taxonomy.
+- **Pass C — adjudication:** **H4_0 — off target**
+  - Pass A/B lexical consensus was H4_13 (mixed/unclear), but the contextual dominant is H4_0 (off_target). The prior H3 adjudication for this same topic reached the same conclusion via parallel logic: surface emotional language triggered a care/security taxonomy placement, but functional analysis determined the topic is not performing care or protection work in the romance-novel sense. Taxonomy placement in 4.6 Emotional Safety & Reassurance is a weak signal here — it reflects lexical co-occurrence with emotional vocabulary, not a genuine reassurance-provision dynamic between characters. No external threat is evidenced (ruling out H4_5/H4_6), no partner-directed restriction is evidenced (ruling out H4_9–H4_11), and no clear care-giving or claiming dynamic is evidenced (ruling out H4_1–H4_8, H4_12). Consistent with the H3 ruling, the contextual dominant H4_0 is the more analytically grounded signal and resolves the conflict. The topic is off-target for this hypothesis.
 
 ---
 
 ### Topic 293 — Admitting Jealousy Out Loud {#topic-h4-293}
 
 - **Old taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_8 — jealous possessiveness**
 - **Mixed:** False
+- **Adjudication action:** `KEEP`
 
 **Stage-08 snippets**
 
@@ -12244,20 +12275,21 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **jealousy_emotional_response — jealousy emotional response**
-  - Topic 293 codes as standard jealousy-as-emotion cluster. The dominant lexical field (twinge, pang, sliver, irrational) marks this as an acknowledged, self-aware emotional experience rather than controlling behavior. No external threat validates a protective reframe. Disagreement is moderate: wound/ex/warned introduce ambiguity but insufficient to reclassify as protective jealousy or coercive control. Autonomy of both parties appears intact.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - {'CELL_A_summary': 'BOOK_008 sentences treat jealousy as an observable emotional state reported neutrally or with mild self-awareness; no possessive framing, no external threat actor named, no controlling behavior implied. Jealousy is described as a feeling noticed in self or others without escalation to action.', 'CELL_B_summary': "BOOK_001 sentences cluster around jealousy as an interpersonal dynamic within romantic relationships, often framed positively or playfully (001_2, 001_5), sometimes acknowledged critically (001_4, 001_9 note manipulation without consent). BOOK_001_8 edges toward possessive action (physically following partner) but the narrator frames it as an internal spike rather than enacted control. BOOK_001_10 explicitly notes possessiveness going 'too far,' signaling awareness of a boundary. BOOK_001_11 uses species-level claiming language ('soul mates') but remains descriptive. BOOK_001_12 introduces a superiority dynamic but no direct jealousy claim. Overall CELL_B captures jealousy as a relational emotion discussed, performed, or evaluated within the couple rather than enacted as coercive control.", 'CELL_C_summary': "BOOK_003_1 is the sole CELL_C entry. 'I'm used to my husband shaming me' indicates normalized, repeated emotional abuse by an intimate partner with no external threat; the harm originates inside the relationship from the partner, distinguishing it from jealousy-of-rival patterns and marking it as coercive/controlling behavior.", 'claiming_language_notes': "BOOK_001_8 flagged because the narrator contemplates following partner into a confined space specifically to prevent rival access—proto-controlling impulse even if not enacted. BOOK_001_10 flagged because 'possessive attitude' is explicitly named. BOOK_001_11 flagged because 'soul mates' framing naturalizes exclusive claiming as species trait. BOOK_003_1 flagged because shaming is a coercive control tactic directed at the partner."}
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_8 — jealous possessiveness**
+  - All four keyword lists converge on jealous/possessive emotional experience. Main is dominated by 'jealous', 'jealousy', 'jealously', 'irrational', 'twinge', 'pang' — classic internal jealousy vocabulary with no external threat actor. KeyBERT adds 'attracted', 'upset', 'emotional', 'concerned', 'warned', 'assured' — emotional arousal and interpersonal tension consistent with jealous reaction, not protective action against an outside threat. POS includes 'ex', 'wound', 'upset', 'reaction', 'foreign', 'advantage' — 'ex' and 'wound' reinforce romantic jealousy triggered by a rival or past relationship, not an external danger. MMR adds 'stirred', 'warned', 'approached', 'wound', 'upset', 'playfully', 'inched' — physical/emotional stirring consistent with jealous arousal. No cues indicate coercive restriction of partner autonomy (ruling out H4_9–H4_11), no external physical/social threat (ruling out H4_5/H4_6), and no mutual care framing. The pattern is squarely jealous possessiveness as an internal emotional state.
+- **Pass B — contextual:** **H4_8 — jealous possessiveness**
+  - The overwhelming majority of sentences explicitly name or describe jealousy as an emotional state experienced by or attributed to characters in romantic contexts — classic jealous possessiveness (H4_8). Several sentences frame jealousy as flattering or normative ('a little bit of jealousy looks good on a man'; 'I'm flattered that you're jealous'), and one references 'Dark Ones' being notoriously jealous about soul mates, all consistent with H4_8 (jealous possessiveness as a romantic trope). BOOK_001_10 references a 'possessive attitude going too far,' still best coded H4_8 as it describes jealous/possessive behavior without clear coercive control mechanics. BOOK_001_12 ('likes to feel superior to women') is ambiguous — possibly H4_9/H4_11 territory but lacks enough context, coded H4_13. BOOK_003_1 ('husband shaming me') implies the partner as a source of harm, coded H4_10. No external threat is present; the jealousy is directed at rivals or attributed to partners, confirming threat_source as unclear (rival-based rather than external danger). Claiming language is present throughout (soul mates, possessive attitudes, jealousy over partners).
+- **Pass C — adjudication:** **H4_8 — jealous possessiveness**
+  - Both lexical consensus and contextual dominant converge on H4_8 (jealous_possessiveness), and the taxonomy classification (4.7 Jealousy & Possessive Romance Conflict) is fully consistent with this code. No external threat is evidenced that would warrant H4_5 or H4_6; the tension is partner-directed and rooted in jealousy rather than coercive restriction (H4_9) or paternalistic control (H4_11). The secondary taxonomy tag (4.4 Conflict, Distance & Breakup Threats) reflects relational fallout from jealousy rather than a distinct care/control dynamic, so no split or retaxonomization is needed. H4_8 is retained as the single care_protection_code.
 
 ---
 
 ### Topic 315 — Claiming Her As His Own {#topic-h4-315}
 
 - **Old taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **H4_8 — jealous possessiveness**
 - **Mixed:** False
+- **Adjudication action:** `REINTERPRET`
 
 **Stage-08 snippets**
 
@@ -12301,11 +12333,12 @@ Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unb
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **possessive_control — possessive control**
-  - Lexical signals across all three representations converge on coercive relational dynamics. 'Belongs' (MMR) is a direct possessive marker with no external threat referent. 'Nudged', 'paced', 'grumbled', 'bothered' (MMR) and 'screaming', 'persuaded' (main/KeyBERT) indicate pressure and emotional coercion applied by an internal party toward another. 'Hesitation' appearing across KeyBERT, POS, and MMR signals the target's resistance being overridden. 'Studying behavior/actions' (POS/MMR) reflects monitoring conduct. 'Ribs' (POS/MMR) may indicate physical proximity used as pressure. No external threat actor is present to reframe any behavior as protective. The pattern is internally sourced control over autonomy, not defense against outside harm.
-- **Pass B — contextual:** **H4_NEUTRAL — H4 NEUTRAL**
-  - All 20 excerpts depict a standard romantic estrangement narrative between Dev and Val. The passages show emotional tension, mutual frustration, and one party's desire for reconciliation, but no external threat requiring protective behavior, no possessive ownership language asserting dominance over Val's autonomy, and no coercive control tactics such as isolation, monitoring, or threats. The probability scores (0.43–0.56) reflect topical proximity to romance conflict rather than any H4-positive signal. Dominant code is H4_NEUTRAL across the full cell.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **H4_13 — mixed unclear**
+  - Main keywords are almost entirely character names with 'comfortable' and 'persuaded', offering no clear care/protection signal — coded off_target. KeyBERT, POS, and MMR share a cluster of ambiguous behavioral cues: 'hesitation', 'nudged', 'screaming', 'behavior', 'actions', 'sentence', 'indication', 'ends', 'ribs', 'bothered', 'grumbled', 'studying', 'sounding'. 'Nudged' and 'hesitation' could indicate gentle persuasion or mild pressure; 'ribs' and 'screaming' hint at physical intensity; 'belongs' in MMR edges toward possessive claiming (H4_7), but without corroborating context it is insufficient to confirm. No clear external threat rules out H4_5/H4_6; no unambiguous coercive pattern rules in H4_9. The mix of pressure-adjacent and neutral behavioral vocabulary across three reps yields H4_13 (mixed/unclear) as the most defensible consensus.
+- **Pass B — contextual:** **H4_0 — off target**
+  - The overwhelming majority of sentences are character-name references, dialogue fragments, or relational-conflict snippets with no discernible care/protection/control content — coded H4_0 (off-target). BOOK_003_14 ('one of the main reasons Dev had wanted Val to come back to him') hints at possessive claiming (H4_7) but is too brief to confirm coercive intent. BOOK_003_12 ('blood boiled … image of him and Val facing away') suggests jealous/possessive emotional reaction (H4_8). No external threat is present; no systematic restriction or coercion is evidenced. H4_0 dominates at ~90%, well above the 70% threshold.
+- **Pass C — adjudication:** **H4_8 — jealous possessiveness**
+  - Pass A/B yielded a lexical consensus of H4_13 (mixed/unclear) and a contextual dominant of H4_0 (off-target), but the revealed taxonomy — 4.7 Jealousy & Possessive Romance Conflict with a secondary of 5.2 Friends, Allies & Social Circles — provides decisive disambiguation. The topic's core signal is jealousy and possessive conflict directed at the partner within a social-circle context (e.g., rivalry over friends or allies), not an external threat and not mere ambiguity. No external threat actor is evidenced, so H4_5/H4_6 are excluded. The social-circle secondary axis indicates the jealousy is triggered by the partner's relationships with others, which is the defining feature of H4_8 (jealous_possessiveness) rather than outright coercive control (H4_9) or a for-your-own-good framing (H4_11). H4_0 is overridden because the taxonomy confirms the topic is on-target for the jealousy/possessiveness construct family. The prior H4_13 is resolved to H4_8 as the single dominant code.
 
 ---
 
