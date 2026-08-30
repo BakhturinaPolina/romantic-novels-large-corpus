@@ -32,25 +32,43 @@ def extract_json(text: str) -> Dict[str, Any]:
 
 
 def consensus_code(payload: Mapping[str, Any], valid_codes: Sequence[str]) -> str:
+    """Extract a codebook ID from a model payload.
+
+    Free-form labels (e.g. ``emotional``, ``CELL_B``) are ignored so Pass A/B/C
+    cannot store non-codebook strings as ``code``. Prefer an explicit field only
+    when it is in ``valid_codes`` (plus MIXED); otherwise fall back to regex hits.
+    """
+    valid = {str(c) for c in valid_codes} | {"MIXED"}
+
+    def _accepted(val: object) -> Optional[str]:
+        if not isinstance(val, str):
+            return None
+        s = val.strip()
+        if not s:
+            return None
+        if s in valid:
+            return s
+        # Soft: leading codebook token inside a longer string
+        m = CODE_RE.search(s)
+        if m and m.group(1) in valid:
+            return m.group(1)
+        return None
+
     for key in (
-        "consensus_code",
-        "dominant_code",
         "intimacy_code",
         "hea_code",
         "security_code",
         "care_protection_code",
         "darkness_code",
         "arc_role",
-        "include",
         "promoted_code",
+        "consensus_code",
+        "dominant_code",
     ):
-        val = payload.get(key)
-        if isinstance(val, str) and val:
-            if key == "include":
-                continue
-            return val
+        hit = _accepted(payload.get(key))
+        if hit:
+            return hit
     blob = json.dumps(payload)
-    valid = set(valid_codes) | {"MIXED"}
     hits = [m for m in CODE_RE.findall(blob) if m in valid]
     return hits[0] if hits else "UNKNOWN"
 

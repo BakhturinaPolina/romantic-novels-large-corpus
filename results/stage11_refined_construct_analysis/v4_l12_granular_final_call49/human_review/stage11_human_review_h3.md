@@ -6,23 +6,23 @@ Run: `v4_l12_granular_final_call49` — 82 topics.
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `S0` | **off target** | — |
-| `S1` | **emotional security reassurance** | — |
-| `S2` | **emotional security belonging** | — |
-| `S3` | **emotional security trust** | — |
-| `S4` | **commitment security** | — |
-| `S5` | **practical care everyday** | — |
-| `S6` | **practical care illness crisis** | — |
-| `S7` | **physical protection** | — |
-| `S8` | **material provision money** | — |
-| `S9` | **material provision housing** | — |
-| `S10` | **economic dependency** | — |
-| `S11` | **practical help other** | — |
-| `S12` | **status display** | — |
-| `S13` | **appearance grooming** | — |
-| `S14` | **gift romance token** | — |
-| `S15` | **workplace status** | — |
-| `S16` | **mixed or unclear function** | — |
+| `S0` | **off target** | Not doing security / provision / status-display work. Generic plot, logistics, or intimacy-only content without a security function. |
+| `S1` | **emotional security reassurance** | Comforting, soothing, affirming safety/worth/the bond. |
+| `S2` | **emotional security belonging** | Belonging, acceptance, "you're one of us", home-as-attachment. |
+| `S3` | **emotional security trust** | Trust, reliability, keeping confidence, earned faith in the partner. |
+| `S4` | **commitment security** | Commitment-as-security (promises of permanence, fidelity as safety). |
+| `S5` | **practical care everyday** | Everyday practical care (meals, chores, errands) as caretaking. |
+| `S6` | **practical care illness crisis** | Care during illness, injury, crisis tending. |
+| `S7` | **physical protection** | Physical shielding from external harm (bodyguarding, rescue). |
+| `S8` | **material provision money** | Money, gifts-as-provision, paying bills, financial support. |
+| `S9` | **material provision housing** | Housing, shelter, providing a place to stay. |
+| `S10` | **economic dependency** | Dependency / control via money or resources (not mutual provision). |
+| `S11` | **practical help other** | Other practical help not covered by S5–S9 (logistics, arranging services). |
+| `S12` | **status display** | Status / wealth / prestige signalling as display (not provision-to-partner). |
+| `S13` | **appearance grooming** | Appearance, grooming, dress as presentation (function = display/craft). |
+| `S14` | **gift romance token** | Romantic gift / token (function = affection signal, not material security). |
+| `S15` | **workplace status** | Workplace rank, career prestige, professional standing. |
+| `S16` | **mixed or unclear function** | Multiple security functions compete with no clear dominant. |
 
 ### Topic 18 — Ordering A Gown For Her {#topic-h3-18}
 

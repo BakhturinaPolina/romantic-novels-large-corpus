@@ -1,49 +1,78 @@
 # Frozen H3 emotional vs material/security prompts.
+#
+# v1.1: force codebook IDs (S0–S16|MIXED) via explicit JSON schemas — Sonnet v1.0
+# returned free-form domains ("emotional", "CELL_B") that never mapped.
 
 hypothesis: H3
 name: security_material
-version: "1.0"
+version: "1.1"
 frozen: true
 
 codes:
   - id: S0
     label: off_target
+    definition: >-
+      Not doing security / provision / status-display work. Generic plot, logistics, or
+      intimacy-only content without a security function.
   - id: S1
     label: emotional_security_reassurance
+    definition: Comforting, soothing, affirming safety/worth/the bond.
   - id: S2
     label: emotional_security_belonging
+    definition: Belonging, acceptance, "you're one of us", home-as-attachment.
   - id: S3
     label: emotional_security_trust
+    definition: Trust, reliability, keeping confidence, earned faith in the partner.
   - id: S4
     label: commitment_security
+    definition: Commitment-as-security (promises of permanence, fidelity as safety).
   - id: S5
     label: practical_care_everyday
+    definition: Everyday practical care (meals, chores, errands) as caretaking.
   - id: S6
     label: practical_care_illness_crisis
+    definition: Care during illness, injury, crisis tending.
   - id: S7
     label: physical_protection
+    definition: Physical shielding from external harm (bodyguarding, rescue).
   - id: S8
     label: material_provision_money
+    definition: Money, gifts-as-provision, paying bills, financial support.
   - id: S9
     label: material_provision_housing
+    definition: Housing, shelter, providing a place to stay.
   - id: S10
     label: economic_dependency
+    definition: Dependency / control via money or resources (not mutual provision).
   - id: S11
     label: practical_help_other
+    definition: Other practical help not covered by S5–S9 (logistics, arranging services).
   - id: S12
     label: status_display
+    definition: Status / wealth / prestige signalling as display (not provision-to-partner).
   - id: S13
     label: appearance_grooming
+    definition: Appearance, grooming, dress as presentation (function = display/craft).
   - id: S14
     label: gift_romance_token
+    definition: Romantic gift / token (function = affection signal, not material security).
   - id: S15
     label: workplace_status
+    definition: Workplace rank, career prestige, professional standing.
   - id: S16
     label: mixed_or_unclear_function
+    definition: Multiple security functions compete with no clear dominant.
 
-guidance: |
-  Classify FUNCTION, not object. A gown may be appearance (S13), gift (S14), provision (S8),
-  or dependency (S10). Keep status display (S12) separate from financial security.
+decision_rules: |
+  1. Classify FUNCTION, not object. A gown may be S13 (appearance), S14 (gift), S8
+     (provision), or S10 (dependency).
+  2. Keep status display (S12/S13/S15) separate from financial security (S8/S9/S10).
+  3. Emotional reassurance/belonging/trust → S1/S2/S3; commitment-as-safety → S4.
+  4. Everyday care → S5; illness/crisis care → S6; physical shielding → S7.
+  5. Prefer MOST SPECIFIC S-code. Use S0 when the topic is not doing security work.
+  6. If two codes compete and neither reaches ~70% share on Pass B → MIXED (or S16).
+  7. Pass C must return security_code as an S# or MIXED — never free-form labels
+     like "emotional", "material", or CELL_*.
 
 adjudication_actions:
   - KEEP
@@ -53,34 +82,79 @@ adjudication_actions:
   - SPLIT
   - EXCLUDE_FROM_HYPOTHESIS
 
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+
 phrasing:
   primary:
     system: |
-      You classify romance-topic security functions (emotional vs material vs status/appearance).
-      Function over object. Ratings and taxonomy are hidden until Pass C. JSON only.
+      You are auditing BERTopic topics for a romance-novel research study.
+      Classify security FUNCTION only (emotional vs material vs status/appearance).
+      Function over object. Do not invent plot. Do not use rating labels.
+
+      VALID CODES (use these IDs only — never free-form words like "emotional"):
+      S0 off_target | S1 emotional_reassurance | S2 belonging | S3 trust |
+      S4 commitment_security | S5 practical_care_everyday | S6 care_illness_crisis |
+      S7 physical_protection | S8 money_provision | S9 housing | S10 economic_dependency |
+      S11 practical_help_other | S12 status_display | S13 appearance_grooming |
+      S14 gift_romance_token | S15 workplace_status | S16 mixed_unclear | MIXED
+
+      CRITICAL:
+      - Every consensus_code / dominant_code / security_code MUST be S0–S16 or MIXED.
+      - Never return CELL_*, BOOK_*, "emotional", "material", or "status/appearance" as codes.
+      - Prefer the MOST SPECIFIC S-code. S0 if not doing security work.
+      Respond with JSON only matching the schema.
     pass_a: |
-      Lexical security coding for topic {topic_id}.
+      Pass A — lexical only (prompt v1.1).
+      Assign one S-code per keyword list (Main, KeyBERT, POS, MMR), then consensus.
+      Topic {topic_id}
       Main: {main}
       KeyBERT: {keybert}
       POS: {pos}
       MMR: {mmr}
-      JSON: per_rep, consensus_code, disagreement, resource_type, security_function, rationale.
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "S#", "KeyBERT": "S#", "POS": "S#", "MMR": "S#"}},
+      "consensus_code": "S#", "disagreement": bool,
+      "resource_type": "emotional|material|status_appearance|none",
+      "security_function": "short label matching the S#",
+      "rationale": "cite cues that forced the S-code"}}
     pass_b: |
-      Contextual security coding for topic {topic_id} (cells blinded):
+      Pass B — contextual sentences (rating cells blinded as CELL_*; prompt v1.1).
+      Code each sentence with the MOST SPECIFIC S-code (S0–S16). CELL_* are cell IDs only —
+      never use them as codes. Estimate proportions; MIXED if no code >= 70%.
+      Topic {topic_id}
+      Sentences:
       {sentences_block}
-      JSON: sentence_codes, proportions, dominant_code, MIXED if needed, rationale.
+      Return JSON: {{"topic_id": int, "sentence_codes": [{{"sid": "...", "code": "S#"}}],
+      "proportions": {{"S#": float}}, "dominant_code": "S#|MIXED",
+      "rationale": "..."}}
     pass_c: |
-      Adjudicate {topic_id}: lexical={lexical_consensus}, contextual={contextual_dominant},
-      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Pass C — adjudication (prompt v1.1). Taxonomy metadata is revealed. Still ignore ratings.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Resolve to a single security_code from S0–S16 or MIXED. Do not invent new labels.
+      If Pass A/B used free-form words, map them onto the nearest S-code now.
+      Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+      "security_code": "S#|MIXED",
+      "proposed_constructs": ["..."],
+      "manual_review_required": bool,
+      "rationale": "..."}}
 
   alternate:
     system: |
-      Security-function auditor for romance topics. Separate emotional security, material/economic
-      provision, practical care, physical protection, and status/appearance display. JSON only.
+      Security-function auditor for romance topics (prompt v1.1).
+      Codes MUST be S0–S16 or MIXED only. Function over object.
+      Emotional→S1–S4; practical care→S5–S6; protection→S7; money/housing→S8–S10;
+      status/appearance→S12–S15; off-target→S0. JSON only.
     pass_a: |
-      Keywords for {topic_id}: Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}. Assign S-codes.
+      Lexical pass v1.1 for topic {topic_id}. Assign one S-code per representation, then consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code (S#), disagreement, resource_type, security_function, rationale.
     pass_b: |
-      Sentences for {topic_id}:
+      Contextual pass v1.1 for topic {topic_id}. Blinded cells. Most-specific S-codes;
+      never use CELL_* as codes; MIXED if none >=70%.
       {sentences_block}
+      JSON: sentence_codes, proportions, dominant_code (S#|MIXED), rationale.
     pass_c: |
-      Adjudicate {topic_id} with tax={taxonomy_id}/{taxonomy_name}. Action + security_code.
+      Adjudicate topic {topic_id} (v1.1): lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
+      Action + security_code (S#|MIXED) required.

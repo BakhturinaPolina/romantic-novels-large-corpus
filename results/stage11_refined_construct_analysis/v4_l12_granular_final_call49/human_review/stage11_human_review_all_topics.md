@@ -243,7 +243,7 @@ Run: `v4_l12_granular_final_call49`
 ### [H5 — Darkness vs tenderness boundaries](#h5) — 22 topics
 
 - [64 — Confronting A Lifelong Fear](#topic-h5-64) — UNKNOWN
-- [66 — Paralyzed By Deep-Seated Fear](#topic-h5-66) — UNKNOWN
+- [66 — Paralyzed By Deep-Seated Fear](#topic-h5-66) — D4 — individual distress
 - [92 — Heart Pounding With Dread](#topic-h5-92) — UNKNOWN
 - [102 — Grief Etched on His Face](#topic-h5-102) — UNKNOWN
 - [133 — Holding Back Tears](#topic-h5-133) — UNKNOWN
@@ -6233,23 +6233,23 @@ Topics with a non-null `hea_code`: **10**. Sentence tags use the unblinded cell 
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `S0` | **off target** | — |
-| `S1` | **emotional security reassurance** | — |
-| `S2` | **emotional security belonging** | — |
-| `S3` | **emotional security trust** | — |
-| `S4` | **commitment security** | — |
-| `S5` | **practical care everyday** | — |
-| `S6` | **practical care illness crisis** | — |
-| `S7` | **physical protection** | — |
-| `S8` | **material provision money** | — |
-| `S9` | **material provision housing** | — |
-| `S10` | **economic dependency** | — |
-| `S11` | **practical help other** | — |
-| `S12` | **status display** | — |
-| `S13` | **appearance grooming** | — |
-| `S14` | **gift romance token** | — |
-| `S15` | **workplace status** | — |
-| `S16` | **mixed or unclear function** | — |
+| `S0` | **off target** | Not doing security / provision / status-display work. Generic plot, logistics, or intimacy-only content without a security function. |
+| `S1` | **emotional security reassurance** | Comforting, soothing, affirming safety/worth/the bond. |
+| `S2` | **emotional security belonging** | Belonging, acceptance, "you're one of us", home-as-attachment. |
+| `S3` | **emotional security trust** | Trust, reliability, keeping confidence, earned faith in the partner. |
+| `S4` | **commitment security** | Commitment-as-security (promises of permanence, fidelity as safety). |
+| `S5` | **practical care everyday** | Everyday practical care (meals, chores, errands) as caretaking. |
+| `S6` | **practical care illness crisis** | Care during illness, injury, crisis tending. |
+| `S7` | **physical protection** | Physical shielding from external harm (bodyguarding, rescue). |
+| `S8` | **material provision money** | Money, gifts-as-provision, paying bills, financial support. |
+| `S9` | **material provision housing** | Housing, shelter, providing a place to stay. |
+| `S10` | **economic dependency** | Dependency / control via money or resources (not mutual provision). |
+| `S11` | **practical help other** | Other practical help not covered by S5–S9 (logistics, arranging services). |
+| `S12` | **status display** | Status / wealth / prestige signalling as display (not provision-to-partner). |
+| `S13` | **appearance grooming** | Appearance, grooming, dress as presentation (function = display/craft). |
+| `S14` | **gift romance token** | Romantic gift / token (function = affection signal, not material security). |
+| `S15` | **workplace status** | Workplace rank, career prestige, professional standing. |
+| `S16` | **mixed or unclear function** | Multiple security functions compete with no clear dominant. |
 
 Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded cell key (`high_tier` → HIGH-rated, `low_tier` → LOW-rated).
 
@@ -10603,20 +10603,20 @@ Topics with a non-null `security_code`: **82**. Sentence tags use the unblinded 
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `H4_0` | **off target** | — |
-| `H4_1` | **reassurance tenderness** | — |
-| `H4_2` | **practical care** | — |
-| `H4_3` | **material care** | — |
-| `H4_4` | **emotional support** | — |
-| `H4_5` | **external protection physical** | — |
-| `H4_6` | **external protection social legal** | — |
-| `H4_7` | **possessive claiming language** | — |
-| `H4_8` | **jealous possessiveness** | — |
-| `H4_9` | **coercive control restriction** | — |
-| `H4_10` | **partner as danger** | — |
-| `H4_11` | **for your own good control** | — |
-| `H4_12` | **mutual care balanced** | — |
-| `H4_13` | **mixed unclear** | — |
+| `H4_0` | **off target** | Not protection, possession, or care-control content. Generic plot or unrelated affect. |
+| `H4_1` | **reassurance tenderness** | Soft reassurance / tenderness without an external threat frame. |
+| `H4_2` | **practical care** | Practical everyday caretaking (not framed as protection from a threat). |
+| `H4_3` | **material care** | Material provision as care (money/goods) without threat/control framing. |
+| `H4_4` | **emotional support** | Emotional support / solidarity without external threat or claiming. |
+| `H4_5` | **external protection physical** | Physical protection from an EXTERNAL threat (rescue, bodyguarding). |
+| `H4_6` | **external protection social legal** | Social/legal protection from an EXTERNAL threat (advocate, lawyer, reputation shield). |
+| `H4_7` | **possessive claiming language** | Claiming language ("mine", "belong to me") without clear coercion. |
+| `H4_8` | **jealous possessiveness** | Jealous possessiveness toward rival/partner attention. |
+| `H4_9` | **coercive control restriction** | Restricting partner autonomy / monitoring / isolation. |
+| `H4_10` | **partner as danger** | Partner is the threat source (harm, intimidation). |
+| `H4_11` | **for your own good control** | Control framed as "for your own good" / paternalistic restriction. |
+| `H4_12` | **mutual care balanced** | Reciprocal, balanced care without dominance or threat. |
+| `H4_13` | **mixed unclear** | Protection and possession/control signals compete with no clear dominant. |
 
 Topics with a non-null `care_protection_code`: **32**. Sentence tags use the unblinded cell key (`high_tier` → HIGH-rated, `low_tier` → LOW-rated).
 
@@ -12274,7 +12274,7 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 | Topic | Old taxonomy | New category | Mixed |
 | --- | --- | --- | --- |
 | 64 — Confronting A Lifelong Fear | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
-| 66 — Paralyzed By Deep-Seated Fear | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
+| 66 — Paralyzed By Deep-Seated Fear | 3.2 — Negative Emotions & Distress | D4 — individual distress | False |
 | 92 — Heart Pounding With Dread | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
 | 102 — Grief Etched on His Face | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
 | 133 — Holding Back Tears | 3.2 — Negative Emotions & Distress | UNKNOWN | False |
@@ -12339,8 +12339,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **H5**
+  - Lexical convergence across all four representations centers on fear, terror, and anxiety as primary emotional states. Main terms establish core fear vocabulary; KeyBERT and POS add anxious, terrified, embarrassment, and scenario suggesting anticipatory dread and situational worry; MMR reinforces with terrified, feared, and anxious. No lexical signals indicate partner harm, relational conflict, or external crisis. The distress is individually experienced and internally driven, consistent with H5 fear-anxiety coding.
+- **Pass B — contextual:** **relational_darkness_individual_distress_tie — relational darkness individual distress tie**
+  - Topic 64 centers on fear as an emotional register across romance contexts. Relational darkness dominates in BOOK_002 and BOOK_003 where fear is directed at or generated by the partner, including intimidation, infidelity anxiety, and withheld truths. Individual distress is equally prominent in passages where characters experience private terror, shock, or dread not directly tied to partner behavior. External crisis appears in BOOK_001 (situational danger) and BOOK_004 (riot, social threat). BOOK_003_5 is the sole tenderness instance, where fear is reframed as protective concern. Partner harm is absent; fear here is psychological and relational rather than physical violence.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12348,8 +12350,7 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 ### Topic 66 — Paralyzed By Deep-Seated Fear {#topic-h5-66}
 
 - **Old taxonomy:** 3.2 — Negative Emotions & Distress
-- **New category:** **UNKNOWN**
-- **Normalised category:** —
+- **New category:** **D4 — individual distress**
 - **Mixed:** False
 
 **Stage-08 snippets**
@@ -12384,10 +12385,11 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code 'CELL_B' represents external crisis, with the main couple experiencing panic and fear in BOOK_002 and BOOK_003. Relational darkness is present in BOOK_001, with the character feeling afraid of her partner. Individual distress is present in BOOK_003, BOOK_004, and BOOK_005, with characters experiencing fear, anxiety, and panic. Partner harm is not present in the given data.
-- **Pass C — adjudication:** **UNKNOWN**
+- **Pass A — lexical:** **fear_anxiety — fear anxiety**
+  - Lexical signals converge strongly on fear and anxiety as the dominant emotional register across all four representations. Terms such as terrified, panicked, flinched, frantic, and anxious indicate acute fear arousal in an individual. The presence of she and anger in the main list suggests a third-party figure and possible reactive emotion, but no lexical evidence supports partner harm or relational conflict as the primary frame. Physical-action terms in MMR (scrambled, tumbled, flinched, cradled, hovered) imply a crisis moment but remain ambiguous as to source. Threat source is coded unspecified external because the fear appears directed outward rather than generated purely from within, yet no specific perpetrator or relational harm is identifiable. Distress is seated in the individual's internal emotional experience.
+- **Pass B — contextual:** **D4 — individual distress**
+  - Topic 66 is overwhelmingly characterized by individual distress in the form of fear, panic, terror, vulnerability, and anxiety experienced by characters — predominantly female protagonists — in romantic or interpersonally charged contexts. BOOK_001 sentences show fear operating within a dyadic relational frame (fear of him, fear for her, protective anger), but the emotional experience remains centered on the individual's internal state rather than relational harm or external threat. BOOK_002 sentences are pure individual distress: escalating panic, terror, vulnerability, and loss of self-control with no clear external antagonist named. BOOK_003 continues this pattern with exhaustion from chronic fear, romantic anxiety about mutual feelings, and acute panic/freak-out responses. BOOK_004 and BOOK_005 are lower-probability peripheral sentences with minimal thematic signal. The dominant code is D4 (individual distress) across all cells. A small relational_darkness component is noted because some fear is directed at or mediated by a partner figure (BOOK_001), and a minor external_crisis component reflects unnamed situational threats (BOOK_003_6). Partner harm is absent — no aggression or coercion is coded.
+- **Pass C — adjudication:** **D4 — individual distress**
 
 ---
 
@@ -12442,9 +12444,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **92**
-  - The text primarily focuses on the individual's emotional state, with no explicit mention of harm from a partner or an external crisis. The use of words like 'panic', 'trembling', 'frantic', and 'distress' indicates individual distress, while terms like 'heart', 'chest', 'beat', and 'pounding' suggest a relational darkness theme, possibly related to romantic tension or anxiety.
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **H5**
+  - Lexical field centers on cardiac and somatic panic responses — pounding, frantic, desperation, distress, anxiety — anchored to an individual's internal fear state. No relational harm, partner threat, or external crisis markers present. The 'her' anchor suggests romantic context but the dominant signal is personal physiological distress, consistent with H5 individual-distress coding.
+- **Pass B — contextual:** **D_individual — D individual**
+  - Topic 92 centers on somatic-emotional experience in romance contexts, predominantly expressed through heart and chest metaphors. The dominant code is D_individual because the majority of sentences depict internal emotional distress, tension, or overwhelm experienced by a single character — constriction, plummeting, frustration, pounding — without clear relational harm or external crisis. Tenderness codes apply where the heart imagery conveys warmth, longing, love, or joy directed toward a partner (BOOK_001_3, BOOK_001_6, BOOK_003_2, BOOK_003_4, BOOK_003_6, BOOK_005_1, BOOK_006_1, BOOK_006_5). BOOK_005_3 is neutral as it lacks emotional-somatic content. No partner harm or external crisis signals are present. The darkness dimension here is purely individual — internal emotional overwhelm rather than relational conflict or threat.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12480,9 +12483,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
+- **Pass A — lexical:** **102**
+  - Lexical signals across Main (adam, cain, penn, denver, brother, himself), KeyBERT (affection, instincts, emotional, sadness, secretly, blurted, shivered), POS (capture, glint, instincts, surroundings), and MMR (distraction, glint, loosened, pleading, blurted, reflected) converge on a relational darkness pattern involving male figures in a charged interpersonal dynamic. The brother reference (cain, adam) alongside emotional suppression markers (secretly, blurted, shivered, sadness) and tension cues (glint, pleading, loosened, capture) indicate internal relational conflict with affective undercurrents. Distress is interpersonal in origin, rooted in unspoken or erupting emotional tension between known parties rather than external crisis or individual psychological breakdown.
 - **Pass B — contextual:** **CELL_B — CELL B**
-  - {'relational_darkness': 'The dominant code (CELL_B) indicates a higher presence of relational darkness, with Cain and Adam having higher proportions than Eve.', 'individual_distress': 'The individual distress dimension is present in all characters, with Adam showing the highest levels.'}
+  - The dominant signal across the corpus is CELL_B: dialogue-driven, interpersonal tension or negotiation between partners, with named male figures (Cain, Adam) as focal points of interaction. Sentences are terse, directive, or questioning in tone, suggesting friction or urgency within a relationship but no overt harm. BOOK_003 shifts to CELL_A: physical intimacy cues (kissing Adam's apple, hoarse voice, emotional closeness with Eve/Alec) mark tender, embodied romantic connection. BOOK_005_1 is an isolated, context-poor fragment (CELL_D) referencing an apple with no relational signal. No CELL_C indicators (external threat, crisis) are present. Individual distress is mildly present in BOOK_003 (Alec upset) and BOOK_001 (Cain wincing) but does not rise to a dominant dimension.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12522,9 +12526,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **133**
-  - The text describes a romantic scenario with intense emotions, tears, and sadness, indicating a high level of distress. The use of words like 'harshly', 'begged', and 'pressure' suggests potential partner harm, while 'inevitable' and 'tracks' hint at external crisis. The majority of words, however, point to individual distress.
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **D4 — individual distress**
+  - Lexical field centers on crying, tears, and emotional release with physical descriptors (dripping, tracks, cheeks, sidewalk). KeyBERT signals sadness, emotional pressure, and frantic state alongside 'begged' and 'harshly' which hint at relational tension but insufficient to elevate to partner_harm or relational_darkness. POS and MMR reinforce somatic grief expression (pout, wipe, bursting, choked, tumbled) consistent with individual emotional distress rather than external threat or partner-sourced harm. Darkness is moderate given frantic and pressure signals but remains self-contained emotional experience.
+- **Pass B — contextual:** **ID**
+  - Topic 133 is overwhelmingly characterized by individual distress (ID), specifically first-person and close-third-person depictions of crying, tears, and grief. The passages across all four books center on solitary or internally-experienced weeping rather than relational conflict or partner harm. BOOK_004 introduces two instances of relational darkness (RD) where a partner's tears are witnessed, suggesting shared grief within a couple context, but the narrator's own distress remains the focal point. BOOK_002 diverges with external crisis (EC) framing — tears are contextualized against mass death and survival pressure, shifting the emotional register from personal grief to crisis-coping. No partner harm (PH) is present. Tenderness is low; the dominant emotional texture is raw, unmediated sorrow rather than romantic warmth.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12568,9 +12573,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code 'CELL_B' represents pain and suffering, which is the main topic discussed in the given sentences. The sentences are categorized into relational darkness (pain experienced in relationships) and individual distress (personal pain and coping mechanisms).
+- **Pass A — lexical:** **H5**
+  - Lexical signals across all extraction methods converge on internalized suffering: pain, agony, hurt, wound, pressure, biting, squeezed, insides, emotions. The prominence of 'treatment' and 'fashioned/notion' in POS/MMR suggests outdated or harsh relational dynamics causing distress, but the core coding remains individual experience of pain rather than active partner harm or external crisis. No threat vector is present; the subject is enduring rather than being targeted.
+- **Pass B — contextual:** **D4 — individual distress**
+  - Topic 145 is overwhelmingly anchored in physical and somatic pain language — raw, direct, and unadorned. The vast majority of sentences describe bodily hurt (shattered arm, heels, general pain) with no romantic framing. BOOK_002 contains dialogue suggesting one character minimizing another's pain, which edges toward relational dynamics but remains within individual distress expression. BOOK_003_5 and BOOK_003_6 shift to interpersonal irritation ('pain in the ass'), coded as relational_darkness at low intensity. No tenderness, partner harm, or external crisis signals are present.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12638,8 +12644,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **D5 — tenderness comfort**
+  - Topic 152 centers on apologetic speech acts delivered with soft, hesitant, or gentle vocal quality — sorry, whispered, mumbled, murmured, stammered — reinforced by manner adverbs kindly, politely, gracefully, and tactile warmth in caressed and wiping. The semantic field is interpersonal repair and emotional vulnerability rather than harm or threat. Distress is mild and individual, reflecting social awkwardness or remorse, not relational danger or external crisis. All four representational methods converge on tenderness.
+- **Pass B — contextual:** **CELL_B — CELL B**
+  - Topic 152 centers on apology expressions within romantic and close relational contexts. CELL_B dominates, capturing dyadic apologies between partners or close figures that carry emotional weight but remain within the relational bond — softness, regret, and interpersonal repair are the hallmarks (BOOK_001 series, BOOK_003 series, BOOK_004_2). CELL_D captures apologies embedded in external-crisis or distress contexts where a third party or broader emotional upheaval frames the sorry — BOOK_002's friend-support scene and BOOK_004_1's pain-laden whisper suggest distress beyond the immediate couple dynamic. CELL_A in BOOK_005 reflects a stripped, repeated apology with no contextual elaboration, suggesting a more abstract or archetypal romantic apology moment. No CELL_C instances appear; no apologies here are directed at external antagonists or institutions. Darkness is low-moderate (BOOK_001_3 references hitting; BOOK_001_4 carries a threat), while tenderness is moderate-high across the corpus given the softness of delivery and relational repair intent.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12675,8 +12683,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **179**
+  - Lexical cluster centers on loss and giving up within a relational context. Main terms (lose, lost, giving, loss) signal surrender or dissolution of connection. KeyBERT terms (dangerously, ripping, tries, assure) indicate escalating emotional stakes and fragility. POS terms (affection, warmth, purpose) confirm romantic attachment as the core domain. MMR terms (dangerously, ripping, afford, cared, admit) suggest the individual is processing the cost of staying or leaving, with emotional honesty under pressure. Darkness is relational dissolution driven by partner dynamics, with distress localized to the individual navigating loss of warmth and purpose within the bond.
+- **Pass B — contextual:** **ID**
+  - Topic 179 clusters around the semantic field of 'losing/loss' but the dominant emotional register is individual distress — characters grappling with personal stakes, self-doubt, and psychological fragility rather than relational rupture or tenderness per se. External crisis (supernatural antagonist, urgent stakes) provides a secondary structural frame. Tenderness appears in fear-of-losing-the-partner expressions but is not the majority signal. Relational darkness is marginal and partner harm is absent entirely.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12736,9 +12746,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **220**
-  - The topic revolves around feelings of embarrassment, shame, and upset, primarily stemming from the individual's own actions or experiences, rather than external crises or partner harm.
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **H5**
+  - Lexical signals converge strongly on shame and embarrassment as internal emotional states directed at the self ('myself', 'ashamed', 'humiliated', 'embarrassment'). KeyBERT and MMR reinforce internalized distress with terms like 'forgive', 'admit', 'honestly', and 'memories', suggesting self-directed rumination and guilt. POS features ('realization', 'result', 'attempt') indicate cognitive processing of a personal failure or social misstep. No signals of partner harm, relational conflict, or external threat source are present. Distress is individually contained, rooted in self-conscious emotion.
+- **Pass B — contextual:** **CELL_B — CELL B**
+  - Topic 220 centers on shame, embarrassment, and humiliation as internal emotional states experienced by individual characters. The dominant code is CELL_B, reflecting first-person or close-narrator expressions of personal shame and embarrassment with moderate-to-high probability. CELL_D captures more diffuse or lower-confidence instances of humiliation and mortification, often in social or situational contexts rather than deeply personal ones. CELL_C appears in two cases where the embarrassment is anticipated or replayed cognitively rather than directly expressed. No sentences indicate partner harm, couple dynamics, or external crisis; all distress is individual and self-referential. The topic is not romance-couple-specific but rather a general emotional register of social shame present across romantic narrative contexts.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12802,10 +12813,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **244**
-  - The topic revolves around emotional distress and darkness in the context of romantic relationships and individual emotional turmoil.
-- **Pass B — contextual:** **CELL_C — CELL C**
-  - The dominant code 'CELL_C' indicates a mix of relational darkness and individual distress. The tenderness signals are based on the provided H1 code 'I3' and its proposed constructs of reconciliation and commitments.
+- **Pass A — lexical:** **H5**
+  - Lexical core centers on heartbreak and shattering with high emotional intensity. KeyBERT and MMR signals confirm suffering, terrified, pieces, and glued suggesting obsessive attachment and deep grief. No partner harm or external crisis indicators. Distress is internally experienced following relational loss, with memories and healing framing unresolved emotional wound.
+- **Pass B — contextual:** **D5 — tenderness comfort**
+  - Across all four books, the dominant signal is tenderness — characters offering their hearts, following emotional instincts, and expressing deep care for others. BOOK_002 is uniformly tender, centered on heart-led agency and optimism. BOOK_004 blends tenderness with individual distress: the heart is offered freely but also broken, suggesting romantic vulnerability rather than partner harm. BOOK_001 mixes tenderness (the soft-hearted rescuer) with individual distress (guilt over past choices) and one relational darkness marker (not everything was hearts and roses). BOOK_003 is the darkest cluster, with relational darkness framing emotion as destined suffering and sentimentality as a flaw, alongside individual distress. No partner harm or external crisis codes were warranted; darkness here is internal and relational rather than violent or situational.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12853,9 +12864,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
+- **Pass A — lexical:** **H5**
+  - All representations converge on H5. The lexical field centers on physiological and emotional self-regulation: calming, relaxation, composure, conscious breathing, nerves, veins, damp, and focused awareness of surroundings. The individual is managing internal arousal or anxiety through deliberate calming techniques. No relational darkness, partner harm, or external crisis signals are present. Distress source is individual, reflecting personal tension being actively soothed rather than any interpersonal or external threat.
 - **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code is 'CELL_B' as it appears most frequently and is associated with individual distress, which is the most prevalent dimension in the given data.
+  - Topic 281 centers on the anxiety-to-calm spectrum as an individual psychological state. CELL_B sentences dominate, depicting characters actively managing panic, achieving calm, or being coached toward composure — internal regulation in a romantic or social context but without relational conflict. CELL_D sentences cluster around social anxiety, romantic agitation (stirred by Miss Crane's presence), and the effort to relax in interpersonal settings, marking moderate individual distress with a romantic tinge. CELL_C sentences (peaceful environment, attentiveness) represent low-arousal positive states. No CELL_A content appears. Individual distress is the primary dimension, with external crisis playing a minor role (situational stressors prompting panic). Partner harm and relational darkness are essentially absent; the darkness present is purely internal — panic, anxiety, the struggle for self-control.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12895,10 +12907,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **285**
-  - The text expresses strong negative feelings towards a partner ('hate', 'hated', 'hates', 'hating', 'hateful', 'dislike'), indicating relational darkness and potential partner harm ('treated'). The use of words like 'shock' suggests an external crisis, while the focus on the self ('me', 'myself', 'forever', 'liked', 'admit', 'uh', 'purpose', 'deserve', 'planning', 'breathed') indicates individual distress.
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The 'relational_darkness' dimension includes sentences expressing general dislike or hatred, while 'partner_harm' specifically targets the partner in the relationship. The other dimensions were not present in the given data.
+- **Pass A — lexical:** **H5**
+  - Lexical field centers on self-directed hate (hate, hated, hates, hating, me, myself) with permanence framing (forever) and negative self-appraisal (hateful, dislike). KeyBERT signals of admit and treated suggest internalized shame about how one has been regarded or has behaved. MMR terms deserve and safely reinforce a self-worth deficit pattern rather than external threat or relational conflict. No partner harm or external crisis indicators present. Distress is inward-facing and identity-level.
+- **Pass B — contextual:** **H5_RelationalDarkness — H5 RelationalDarkness**
+  - The dominant signal across all four books is H5_RelationalDarkness: direct expressions of hatred, loathing, and disdain aimed at a romantic or intimate partner. BOOK_001 splits between relational hatred (001_1, 001_2, 001_6) and more diffuse individual distress (001_3, 001_4, 001_5) where the narrator reflects inwardly or expresses non-targeted frustration. BOOK_002_3 is elevated to H5_PartnerHarm because 'submitting to licentious thoughts and advances' implies unwanted sexual pressure, crossing from emotional hostility into potential coercive behavior. BOOK_003 is uniformly relational — all sentences anchor hatred to a specific he/him figure in a romantic context. BOOK_004_2 ('I hate this') is coded IndividualDistress as the object of hatred is a situation, not a person.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12962,8 +12974,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **['CELL_D', 'CELL_A', 'CELL_B', 'CELL_B'] — ['CELL D', 'CELL A', 'CELL B', 'CELL B']**
+- **Pass A — lexical:** **H5**
+  - All four representations converge on H5. The lexical field is dominated by guilt, remorse, and moral weight — guilt, guilty, feel, felt, remorse, pang, weight, consumed, washed — signalling an individual processing internal emotional burden rather than relational conflict, partner harm, or external crisis. KeyBERT reinforces internalized affect via embarrassment, overcome, anxiety, and consumed. POS anchors the distress in personal agency and consequence through actions, purpose, and anxiety. MMR imagery — bury, draped, dug, tugged, fought — evokes suppression and internal struggle consistent with unresolved guilt. Darkness is individual and self-directed; no threat actor or external crisis source is present.
+- **Pass B — contextual:** **D4 — individual distress**
+  - Topic 322 centers on guilt within romantic contexts. The dominant pattern is individual_distress — characters experiencing guilt as an internal, often paralyzing emotional state (BOOK_002, BOOK_003, BOOK_004). Relational_darkness codes apply where guilt is embedded in interpersonal betrayal dynamics: infidelity (BOOK_001_2, BOOK_001_3), guilt-tripping as relational control (BOOK_004_2), or morally ambiguous encounters (BOOK_003_4, BOOK_003_5). BOOK_002_5 bridges grief and guilt, suggesting guilt as a chronic relational residue. No partner_harm or external_crisis signals are present. The corpus reflects guilt as both a private psychological burden and a relational force shaping romantic dynamics.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -12999,9 +13013,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code is CELL_B, indicating individual distress, as it appears in the majority of the sentences. Relational darkness is present in CELL_A and CELL_C, while partner harm and external crisis are not explicitly present in the given sentences.
+- **Pass A — lexical:** **H5**
+  - Lexical convergence across all four methods strongly centers on terror, fear, and anxiety as primary emotional states. KeyBERT and MMR both surface 'memories' and 'afterward' suggesting fear rooted in past experience or anticipatory dread. POS contributes 'failure', 'potential', 'determination', and 'disappointment' indicating performance-related anxiety or fear of negative outcomes. 'Cricket' in Main keywords contextualizes a specific situational trigger. No relational harm, partner dynamics, or external crisis indicators are present. The darkness is internalized psychological distress characterized by heightened fear response, possibly tied to performance pressure or past traumatic memory coloring present experience.
+- **Pass B — contextual:** **D_IND — D IND**
+  - Topic 366 centers on fear as a romance-domain darkness theme. The dominant pattern (D_IND) is protagonists experiencing fear internally — often resisting or rationalizing it — as a marker of emotional vulnerability. D_PART codes apply where the partner is explicitly the source of danger or dread. D_REL codes mark sentences where fear is triggered by the relational dynamic itself — attachment, proximity, or 'more than expected' feeling. CELL_B is the most internally focused cluster; CELL_A foregrounds partner dangerousness; CELL_C and BOOK_004 blend gut-level threat with emerging relational stakes. No external crisis signals present.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13049,9 +13064,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_C — CELL C**
-  - {'relational_darkness': 'Dark or ambiguous settings and moods.', 'partner_harm': 'No instances of partner harm were found in the given data.', 'external_crisis': "Events or situations that threaten the couple's safety or well-being from external sources.", 'individual_distress': 'Emotional or mental turmoil experienced by an individual in the couple.'}
+- **Pass A — lexical:** **H5**
+  - Topic 27 centers on weather and natural light phenomena with strong atmospheric imagery. Magical, graceful, and floated introduce a romanticized or wonder-filled register. Dangerously is the sole threat signal but is contextually tied to environmental conditions rather than relational harm or personal crisis. Darkness domain is external/environmental. No partner harm, no acute individual distress. H5 coding reflects nature/environment as primary thematic axis with mild existential undertone.
+- **Pass B — contextual:** **H5**
+  - All 20 sentences code as H5 (darkness-domain / atmospheric romance setting). The corpus is unified by weather and light/dark imagery deployed as romantic atmosphere rather than as markers of partner harm, relational conflict, or individual psychological distress. BOOK_001 uses darkness as intimate enclosure during a kiss; BOOK_002 and BOOK_003 contrast storm and sunlight as emotional registers; BOOK_004 pairs literal darkness with a luminous romantic smile metaphor. Minor external-crisis signals (angry stranger, reported loss) in BOOK_001 do not displace the dominant atmospheric-romance function. No partner harm or individual clinical distress signals are present.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13111,9 +13127,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **{'BOOK_001': 'CELL_D', 'BOOK_002': 'CELL_C', 'BOOK_005': 'CELL_B', 'BOOK_007': 'CELL_B'} — {'BOOK 001': 'CELL D', 'BOOK 002': 'CELL C', 'BOOK 005': 'CELL B', 'BOOK 007': 'CELL B'}**
-  - {'BOOK_001': "Relational darkness: 'Playing with fire' metaphor suggests danger and risk in the relationship.", 'BOOK_002': 'Partner harm: Implicitly, Ransom is trying to prevent harm to the woman, suggesting potential harm in their relationship.', 'BOOK_005': 'External crisis: Fire-related events are external crises that the characters face.', 'BOOK_007': 'External crisis: Similar to BOOK_005, fire-related events are external crises.'}
+- **Pass A — lexical:** **H5_184_fire_and_flames — H5 184 fire and flames**
+  - All four representations converge on fire as the central topic. Main keywords anchor literal fire events including firefighters and hoses, indicating emergency response context. KeyBERT captures sensory and dynamic qualities of fire behavior such as erupted, flared, hissed, and spreading. POS and MMR add structural and environmental dimensions including concrete, shed, and atmosphere, suggesting fire affecting built environments. Darkness domain is external crisis as fire represents an environmental and physical threat rather than relational harm or internal distress. Threat source is environmental fire hazard given the presence of emergency responders and spreading fire language. Distress source is physical danger and destruction to persons and structures. Warmth and magical from KeyBERT and POS suggest possible romantic or recreational fire contexts such as campfire or fireplace, but the weight of spreading, erupted, firefighters, and hoses tips consensus toward crisis framing.
+- **Pass B — contextual:** **H5**
+  - All sentences across all books cluster around the topic of fire — literal flames, heat, burning, and fire-related metaphors. BOOK_001 uses fire as romantic/tension metaphor ('playing with fire', 'sizzled with energy'). BOOK_002 mixes literal fire safety concerns with a sexual metaphor ('body on fire'). BOOK_004 uses fire idiomatically for escalating trouble. BOOK_005 and BOOK_007 depict literal fire scenes (campfires, building fires, embers). The unifying topic is fire as a concrete or figurative element, coded H5 throughout. No sustained romantic couple dynamic, no partner harm, no individual psychological distress, and no external crisis beyond incidental fire references.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13153,10 +13170,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **223**
-  - The text discusses a scenario involving multiple partners (matt, matthew, etc.) where there are threats (insisted, threat) and strain (strained) in the relationship, leading to individual distress (doubted, realization, ability).
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - {'relational_darkness': "Alice's manipulative behavior towards Matt, and the tension between Maverick and the narrator.", 'partner_harm': 'No instances of partner harm were found in the given context.', 'external_crisis': 'Ms. McAlister targeting someone, potentially causing trouble.', 'individual_distress': 'The loss of Tomas, Makenzi, and Matthew.'}
+- **Pass A — lexical:** **H5**
+  - Lexical convergence across all extraction methods signals a high-stakes relational confrontation coded H5. KeyBERT terms 'insisted,' 'threat,' 'inevitable,' 'willing,' and 'sir' indicate coercive pressure within a dyadic exchange. POS and MMR layers reinforce this with 'strained,' 'scenario,' 'partners,' 'options,' and 'exchange,' pointing to a forced negotiation or ultimatum dynamic between named parties. 'Spilling' and 'claims' suggest disclosure under duress. The darkness domain is relational with the threat source internal to the partnership, and distress arising from coercive bargaining rather than external crisis or isolated individual distress.
+- **Pass B — contextual:** **H5_relational_darkness — H5 relational darkness**
+  - Topic 223 clusters around relational tension and manipulation as its dominant register, anchored by Alice's deliberate use of Matt as leverage and the sustained conflict-laden Matt interactions in BOOK_002. Tenderness appears in BOOK_006 as a counterweight—brotherly affection and amused partnership—but does not override the darker relational tone. External crisis is minor (authority threat in BOOK_003_1) and individual distress is isolated to BOOK_005_1's irreversible loss framing. No partner harm signals are present.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13212,8 +13229,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **H5**
+  - Lexical field centers on trees and forest environment. Secondary signals suggest people gathered or surrounded in a wooded setting with physical tension cues (snaps, crouched, circled, surrounding). No romantic or relational content. Darkness if present derives from external environmental threat or physical danger in nature context, not interpersonal harm.
+- **Pass B — contextual:** **CELL_A — CELL A**
+  - Topic 259 centers on trees and natural settings as both literal and metaphorical anchors. CELL_A sentences use trees as dynamic, even threatening environmental forces tied to action and emotional urgency. CELL_C sentences treat trees and wood in an investigative/archaeological context — loss, degradation, and site integrity. CELL_D sentences use natural settings (lake, redwoods, trees) as romantic backdrops or metaphors for attraction and longing. The dominant code is CELL_A due to the highest sentence count and the most emotionally charged content. No stable romantic couple is identifiable across books. External crisis (environmental disruption, artifact loss) and individual distress (emotional pleading, unrequited longing) are the active dimensions.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13257,10 +13276,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **darkness_domain — darkness domain**
-  - The topic revolves around a sense of unease, manipulation, and emotional distress, with the primary threat coming from a partner's actions, and the individual's distress being the main source of darkness in the domain.
-- **Pass B — contextual:** **CELL_A — CELL A**
-  - The dominant code 'CELL_A' indicates a positive or neutral sentiment, suggesting that the romance topic is primarily focused on positive interactions and connections between characters. 'CELL_B' codes are present but less frequent, indicating some relational darkness and individual distress, with a single instance of partner harm and external crisis.
+- **Pass A — lexical:** **284**
+  - Lexical cluster signals a dawning moral realization within a relational dynamic. Terms like 'suckered,' 'judging,' 'gripped,' 'twisting,' and 'fading' indicate an individual processing manipulation or emotional coercion from a partner. 'Stroking,' 'fishing,' and 'heated' suggest calculated affective behavior used to maintain control. 'Escaped' and 'realization' point to an internal reckoning rather than external crisis. Darkness is relational in origin, threat is partner-sourced, and distress is individually experienced as the subject confronts the moral weight of the dynamic.
+- **Pass B — contextual:** **T2**
+  - Topic 284 centers on character name recognition and introduction — a tenderness-adjacent function of establishing relational identity. BOOK_001 revolves around affectionate, playful references to Finney (a pet or companion figure), coded T2 (light relational warmth/humor). BOOK_003 features warm social approval of Brock Donovan within a family network, coded T1 (romantic tenderness/positive regard). BOOK_006 involves character identification with mild tension, coded T2. BOOK_007 is mostly name-recognition framing (T3, social/external context) with one clear exception: BOOK_007_2 depicts a father figure physically striking Kayden, coded D2 (partner-adjacent or family violence as external crisis/harm). Overall the topic is dominated by name-salience and relational warmth rather than darkness.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13292,10 +13311,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **324**
-  - The text appears to revolve around a person searching for someone ('him') and dealing with emotional distress, suggesting a romantic context. The use of words like 'impatiently', 'panicked', and 'separated' indicate relational darkness, while 'wondering' and 'dreamed' suggest individual distress. The mention of 'address' and 'screen' could imply an external crisis, such as a communication issue or a problem with technology.
-- **Pass B — contextual:** **A**
-  - {'A': 'Questions about the whereabouts of a person, suggesting relational darkness or tension.', 'D': "Inquiries about locations and others' whereabouts, indicating an external crisis or situation.", 'B': 'Expressions of distress or worry, signifying individual distress.'}
+- **Pass A — lexical:** **H5**
+  - The lexical cluster centers on locating a missing or absent person ('find', 'where', 'him', 'search', 'locate', 'address', 'screen', 'sending'). Affective markers ('impatiently', 'panicked', 'dreamed', 'wondering') indicate heightened emotional distress driven by uncertainty about another person's whereabouts. 'Separated' and 'sits' suggest physical distance or disconnection. No indicators of partner harm, external threat, or crisis beyond the individual's internal anxiety about the relationship or person's location. Distress is self-contained and emotionally driven rather than externally imposed.
+- **Pass B — contextual:** **CELL_A — CELL A**
+  - Topic 324 centers on the anxious, urgent search for a missing male figure across multiple narrative contexts. CELL_A dominates, reflecting high emotional investment and individual distress tied to not knowing his whereabouts. CELL_D passages are more grounded and observational, suggesting a secondary narrator or calmer relational register. CELL_B contributes minor urgency with frustrated questioning. The darkness is primarily individual and relational rather than harm-based, rooted in fear of loss, separation anxiety, and crisis-driven searching.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13347,9 +13366,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **CELL_B — CELL B**
-  - The dominant code (CELL_B) represents actions of the main character (She) in response to threats or harm, indicating relational darkness and individual distress. CELL_C represents various forms of distress and harm, while CELL_D represents a less severe external crisis.
+- **Pass A — lexical:** **physical_movement_action — physical movement action**
+  - All four representational methods converge on dynamic physical movement vocabulary — jumping, falling, leaping, crouching, tumbling — consistent with action or adventure narrative context rather than romance or relational content. POS introduces mild sensory-emotional texture (amusement, growl, squeeze, cracked) suggesting playful or tense physical interaction, but no darkness indicators are present. No partner harm, relational threat, external crisis, or individual distress signals are detectable. The lexical cluster maps to H5 physical-kinetic action coding without darkness-domain activation.
+- **Pass B — contextual:** **CELL_C — CELL C**
+  - Topic 327 captures physical body movement and reactive bodily responses under conditions of surprise, threat, pain, or excitement. CELL_C dominates, reflecting scenes where characters react physically to external stimuli in social or crisis contexts — groin strikes, shock responses, sinking to knees, physical catches, and involuntary bodily reactions. CELL_B sentences cluster around a single book featuring a female protagonist in a tense, possibly threatening encounter (jumping, standing on chair to defend, flinching), suggesting individual distress and external threat rather than intimate partner dynamics. BOOK_005_3 ('bucked against her, at just the right spot') introduces a mild erotic physical interaction but remains coded CELL_C given the broader physical-reactivity pattern of that book's cluster. BOOK_003_1 is an isolated CELL_D instance — a startled jump in a non-romantic, professional/scientific context. No clear established romantic couple is identifiable across the corpus; physical interactions are largely reactive, defensive, or situational rather than tenderness-coded.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---
@@ -13397,8 +13417,10 @@ Topics with a non-null `darkness_code`: **22**. Sentence tags use the unblinded 
 
 **Model reasonings (new taxonomy audits)**
 
-- **Pass A — lexical:** **UNKNOWN**
-- **Pass B — contextual:** **UNKNOWN**
+- **Pass A — lexical:** **335**
+  - Lexical signals across KeyBERT, POS, and MMR layers converge on an emotionally charged interpersonal scene: 'pregnant' as a high-stakes disclosure, 'pressure' and 'upset' indicating emotional coercion or conflict, 'protested' and 'pounded' suggesting physical or verbal escalation, 'longing' and 'promising' reflecting unresolved relational tension. Main terms 'bisexuals' and 'cultivating' alongside 'inclined' suggest identity negotiation within the relationship. 'Elevator' and 'glued' imply confined or intense proximity. The pattern codes to partner-sourced relational darkness with individual distress centered on pregnancy disclosure and identity pressure.
+- **Pass B — contextual:** **H5_external_crisis — H5 external crisis**
+  - The corpus clusters around external-crisis framing: law enforcement confrontation, fantasy pursuit/violence, a sexualized dangerous social environment, and physical athletic conflict. Individual distress emerges as a secondary layer where characters internalize fear, grief, or protective concern. Tenderness appears briefly in BOOK_004's bar interactions (Derek's wink, Ted's smile) but is quickly overshadowed by the vulnerability of Ted's emotional history. No direct partner harm or sustained relational darkness is coded, as coercive elements (Lars/Stella) are plot-structural rather than intimate-relational in texture.
 - **Pass C — adjudication:** **UNKNOWN**
 
 ---

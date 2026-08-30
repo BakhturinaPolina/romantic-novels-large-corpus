@@ -6,20 +6,20 @@ Run: `v4_l12_granular_final_call49` — 32 topics.
 
 | Code | Category | Definition |
 | --- | --- | --- |
-| `H4_0` | **off target** | — |
-| `H4_1` | **reassurance tenderness** | — |
-| `H4_2` | **practical care** | — |
-| `H4_3` | **material care** | — |
-| `H4_4` | **emotional support** | — |
-| `H4_5` | **external protection physical** | — |
-| `H4_6` | **external protection social legal** | — |
-| `H4_7` | **possessive claiming language** | — |
-| `H4_8` | **jealous possessiveness** | — |
-| `H4_9` | **coercive control restriction** | — |
-| `H4_10` | **partner as danger** | — |
-| `H4_11` | **for your own good control** | — |
-| `H4_12` | **mutual care balanced** | — |
-| `H4_13` | **mixed unclear** | — |
+| `H4_0` | **off target** | Not protection, possession, or care-control content. Generic plot or unrelated affect. |
+| `H4_1` | **reassurance tenderness** | Soft reassurance / tenderness without an external threat frame. |
+| `H4_2` | **practical care** | Practical everyday caretaking (not framed as protection from a threat). |
+| `H4_3` | **material care** | Material provision as care (money/goods) without threat/control framing. |
+| `H4_4` | **emotional support** | Emotional support / solidarity without external threat or claiming. |
+| `H4_5` | **external protection physical** | Physical protection from an EXTERNAL threat (rescue, bodyguarding). |
+| `H4_6` | **external protection social legal** | Social/legal protection from an EXTERNAL threat (advocate, lawyer, reputation shield). |
+| `H4_7` | **possessive claiming language** | Claiming language ("mine", "belong to me") without clear coercion. |
+| `H4_8` | **jealous possessiveness** | Jealous possessiveness toward rival/partner attention. |
+| `H4_9` | **coercive control restriction** | Restricting partner autonomy / monitoring / isolation. |
+| `H4_10` | **partner as danger** | Partner is the threat source (harm, intimidation). |
+| `H4_11` | **for your own good control** | Control framed as "for your own good" / paternalistic restriction. |
+| `H4_12` | **mutual care balanced** | Reciprocal, balanced care without dominance or threat. |
+| `H4_13` | **mixed unclear** | Protection and possession/control signals compete with no clear dominant. |
 
 ### Topic 6 — Whispered Reassurance {#topic-h4-6}
 
