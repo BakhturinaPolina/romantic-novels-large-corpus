@@ -57,7 +57,7 @@ Question: Was the old negative appreciation effect generic appearance or specifi
 Question: Does broad care separate into appreciation-oriented reassurance vs reach-oriented/neutral care?
 - Stage 10 leaf: appreciation β=+0.052, reach β=+0.009 (quality only)
 - Emotional reassurance: appreciation β=+0.038, reach β=+0.059 → both_same_sign
-- Emotional security / reassurance: appreciation β=+0.017, reach β=+0.020 → neither
+- Broader emotional-security bundle: appreciation β=+0.017, reach β=+0.020 → neither
 - Interpersonal co-regulation: appreciation β=+0.046, reach β=+0.050 → both_same_sign
 - Practical care [strict]: appreciation β=+0.014, reach β=-0.044 → reach_only
 - Enacted protection: appreciation β=+0.109, reach β=-0.011 → quality_only
@@ -95,5 +95,5 @@ Question: Are work/market themes appreciation differences, reach differences, or
 ## Scientifically useful nulls
 
 - Rarefied taxonomy richness does not distinguish either channel strongly in this corpus.
-- External danger does not distinguish either channel strongly in this corpus.
-- Emotional security / reassurance does not distinguish either channel strongly in this corpus.
+- External danger shows a tier-level rating difference, but no strong adjusted two-channel association.
+- Broader emotional-security bundle does not distinguish either channel strongly in this corpus.

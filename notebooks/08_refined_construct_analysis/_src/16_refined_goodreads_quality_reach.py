@@ -303,7 +303,7 @@ COMPONENTS = [
     ("H1", "RAX_emotional_reassurance", "Emotional reassurance", "security"),
     ("H1", "RAX_explicit_sex", "Explicit sex", "intimacy"),
     ("H1", "RAX_nonexplicit_affection", "Non-explicit affection", "intimacy"),
-    ("H3", "RAX_h3_emotional_side", "Emotional security / reassurance", "security"),
+    ("H3", "RAX_h3_emotional_side", "Broader emotional-security bundle", "security"),
     ("H3", "RAX_h3_material_side", "Material provision side", "security"),
     ("H3", "RAX_appearance_grooming", "Grooming / self-presentation", "appearance"),
     ("H4", "RAX_external_protection", "Enacted protection", "protection"),
@@ -1400,6 +1400,12 @@ def _one_sentence(row) -> str:
             f"{lab} shows a trade-off: appreciation β={q:+.3f} vs reach β={r:+.3f}."
         )
     # Null / neither — still useful
+    feat = row.get("feature")
+    if feat == "RAX_external_danger_crisis":
+        return (
+            "External danger shows a tier-level rating difference, "
+            "but no strong adjusted two-channel association."
+        )
     if abs(q or 0) < 0.03 and abs(r or 0) < 0.03:
         return f"{lab} does not distinguish either channel strongly in this corpus."
     return (
