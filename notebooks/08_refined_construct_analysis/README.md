@@ -25,6 +25,7 @@ Prompts are hypothesis-specific (not one giant multi-criterion prompt). Shared e
 | `13_final_statistical_tests` | **Confirmatory final** — only reportable H1–H6 inferential results (author-cluster CIs; do not redefine constructs after running) |
 | `14_exploratory_presentation_results` | **Exploratory presentation** — reuses NB12 tables; adds thematic richness, waterfall, dose-response, residual Goodreads, genre/era heatmap, examples (does not alter NB13 verdicts) |
 | `15_emotion_embodiment_social_world_exploration` | **Post-hoc exploratory** — emotion functions, felt vs looked-at body, family/social embeddedness (survivors seed questions only; does not alter H1–H6) |
+| `16_refined_goodreads_quality_reach` | **Secondary discriminant** — refined constructs against reader appreciation vs reach/popularity (does not alter H1–H6; Stage 10 NB06 remains taxonomy baseline) |
 
 Edit `_src/*.py`, then:
 
@@ -96,7 +97,7 @@ bash scripts/stage11/apply_h3_h4_manual_freeze.sh
 
 See `human_review/post_freeze_claim_hierarchy.md` for confirmatory vs exploratory claims.
 
-**Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Notebook **15** is a separate post-hoc exploration of emotion/embodiment/social world (full-corpus candidate retrieval; rating-blind coding; provisional freeze until `frozen: true`). None of 12, 14, or 15 changes H1–H6 confirmatory verdicts.
+**Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Notebook **15** is a separate post-hoc exploration of emotion/embodiment/social world (full-corpus candidate retrieval; rating-blind coding; provisional freeze until `frozen: true`). Notebook **16** re-checks appreciation vs reach on refined Stage 11 constructs (secondary discriminant; reach never upgrades H1–H6). None of 12, 14, 15, or 16 changes H1–H6 confirmatory verdicts.
 
 ### Presentation figures (audited rebuild)
 

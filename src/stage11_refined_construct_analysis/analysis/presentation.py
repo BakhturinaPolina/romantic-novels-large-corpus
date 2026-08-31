@@ -1,4 +1,4 @@
-"""Presentation / exploratory helpers for Stage 11 notebooks 13–14.
+"""Presentation / exploratory helpers for Stage 11 notebooks 13–16.
 
 All functions here support *exploratory* or *display* analyses unless called from
 notebook 13's confirmatory battery. Residual Goodreads outcomes live only in Stage 11.
@@ -377,14 +377,26 @@ def standardized_two_channel_betas(
     quality: str = "rating_shrunk",
     reach: str = "log_n_ratings",
     controls: Optional[Sequence[str]] = None,
+    quality_weights: Optional[str] = "reliability",
+    reach_weights: Optional[str] = None,
+    cluster: Optional[str] = "author_id",
 ) -> pd.DataFrame:
-    """Standardised partial betas on quality and reach for quadrant plots."""
+    """Standardised partial betas on quality and reach for quadrant plots.
+
+    By default the quality channel uses reliability WLS (matching Stage 10
+    Notebook 06) while reach remains unweighted OLS. Pass ``quality_weights=None``
+    to recover the older unweighted behaviour.
+    """
     from src.stage10_correlation_analysis.analysis import models as mdl
 
     controls = list(controls or ["log_pages", "n_sentences", "publication_year"])
     controls = [c for c in controls if c in frame.columns]
     categorical = [c for c in ["genre_group"] if c in frame.columns]
     work = frame.copy()
+    cluster_col = cluster if cluster and cluster in work.columns else None
+    q_w = quality_weights if quality_weights and quality_weights in work.columns else None
+    r_w = reach_weights if reach_weights and reach_weights in work.columns else None
+
     # Standardise continuous columns used in the model
     for col in [quality, reach, *features, *controls]:
         if col in work.columns and pd.api.types.is_numeric_dtype(work[col]):
@@ -392,23 +404,36 @@ def standardized_two_channel_betas(
             if sd and np.isfinite(sd) and sd > 0:
                 work[f"{col}__z"] = (work[col] - mu) / sd
             else:
-                work[f"{col}__z"] = 0.0
+                work[f"{col}__z"] = np.nan
 
     rows = []
     for feat in features:
         if feat not in frame.columns:
             continue
         pred = f"{feat}__z"
+        if pred not in work.columns:
+            continue
+        # Skip zero-variance / all-missing predictors (never fabricate beta=0).
+        feat_sd = float(frame[feat].std(ddof=0)) if pd.api.types.is_numeric_dtype(frame[feat]) else 0.0
+        if not (np.isfinite(feat_sd) and feat_sd > 0):
+            continue
+        if work[pred].notna().sum() < 10:
+            continue
         ctrl_z = [f"{c}__z" for c in controls if f"{c}__z" in work.columns]
-        for outcome, label in ((f"{quality}__z", "quality"), (f"{reach}__z", "reach")):
-            if outcome not in work.columns:
+        channel_specs = (
+            (f"{quality}__z", "quality", q_w),
+            (f"{reach}__z", "reach", r_w),
+        )
+        for outcome, label, weights in channel_specs:
+            if outcome not in work.columns or work[outcome].notna().sum() < 10:
                 continue
             fit = mdl.fit_ols(
                 work.reset_index() if work.index.name else work,
                 outcome,
                 [pred, *ctrl_z],
                 categorical=categorical,
-                cluster="author_id" if "author_id" in work.columns else None,
+                cluster=cluster_col,
+                weights=weights,
                 name=f"{feat}->{label}",
             )
             row = fit.coefficients[fit.coefficients["term"] == pred]
@@ -424,12 +449,104 @@ def standardized_two_channel_betas(
                     "p": float(r0["p_value"]),
                     "ci_low": float(r0["ci_low"]),
                     "ci_high": float(r0["ci_high"]),
+                    "n_obs": int(fit.n_obs),
+                    "n_clusters": int(fit.n_clusters) if fit.n_clusters is not None else np.nan,
                 }
             )
     return pd.DataFrame(rows)
 
 
+def pivot_two_channel_betas(long: pd.DataFrame) -> pd.DataFrame:
+    """Pivot long two-channel betas to wide quality_/reach_ columns + gaps."""
+    if long is None or long.empty:
+        return pd.DataFrame()
+    parts = []
+    for channel, prefix in (("quality", "quality"), ("reach", "reach")):
+        sub = long.loc[long["channel"] == channel].copy()
+        if sub.empty:
+            continue
+        keep = {
+            "feature": "feature",
+            "beta_std": f"{prefix}_beta",
+            "se": f"{prefix}_se",
+            "p": f"{prefix}_p",
+            "ci_low": f"{prefix}_ci_low",
+            "ci_high": f"{prefix}_ci_high",
+            "n_obs": f"{prefix}_n_obs",
+            "n_clusters": f"{prefix}_n_clusters",
+        }
+        present = {k: v for k, v in keep.items() if k in sub.columns}
+        parts.append(sub[list(present)].rename(columns=present))
+    if not parts:
+        return pd.DataFrame()
+    wide = parts[0]
+    for part in parts[1:]:
+        wide = wide.merge(part, on="feature", how="outer")
+    if "quality_beta" in wide.columns and "reach_beta" in wide.columns:
+        wide["beta_gap"] = wide["quality_beta"] - wide["reach_beta"]
+        wide["abs_beta_gap"] = wide["beta_gap"].abs()
+    return wide.reset_index(drop=True)
+
+
+def flag_channel_reliability(
+    wide: pd.DataFrame,
+    *,
+    alpha: float = 0.05,
+) -> pd.DataFrame:
+    """BH-FDR within each channel + reliable flags (q < alpha and CI excludes 0).
+
+    Descriptive screening only — does not alter Notebook 13 confirmatory FDR.
+    """
+    from src.stage10_correlation_analysis.analysis import tests as tst
+
+    out = wide.copy()
+    for channel in ("quality", "reach"):
+        p_col = f"{channel}_p"
+        if p_col not in out.columns:
+            out[f"{channel}_q"] = np.nan
+            out[f"{channel}_reliable"] = False
+            continue
+        out[f"{channel}_q"] = tst.benjamini_hochberg(out[p_col].to_numpy(dtype=float))
+        ci_lo = out.get(f"{channel}_ci_low")
+        ci_hi = out.get(f"{channel}_ci_high")
+        if ci_lo is None or ci_hi is None:
+            out[f"{channel}_reliable"] = False
+            continue
+        ci_excludes_zero = np.sign(ci_lo.to_numpy(dtype=float)) == np.sign(
+            ci_hi.to_numpy(dtype=float)
+        )
+        # Treat CI that includes exact zeros / NaNs as not excluding zero.
+        finite_ci = np.isfinite(ci_lo.to_numpy(dtype=float)) & np.isfinite(
+            ci_hi.to_numpy(dtype=float)
+        )
+        touches_zero = (ci_lo.to_numpy(dtype=float) <= 0) & (ci_hi.to_numpy(dtype=float) >= 0)
+        out[f"{channel}_reliable"] = (
+            (out[f"{channel}_q"] < alpha) & finite_ci & (~touches_zero) & ci_excludes_zero
+        )
+    return out
+
+
+def classify_channel_pattern(row: Mapping[str, Any] | pd.Series) -> str:
+    """Reliability-aware quality/reach pattern (NB06-style; not raw-sign only)."""
+    q_ok = bool(row.get("quality_reliable", False))
+    r_ok = bool(row.get("reach_reliable", False))
+    q_beta = row.get("quality_beta", np.nan)
+    r_beta = row.get("reach_beta", np.nan)
+    if q_ok and r_ok:
+        if np.sign(float(q_beta)) == np.sign(float(r_beta)):
+            return "both_same_sign"
+        return "opposite_signs"
+    if q_ok:
+        return "quality_only"
+    if r_ok:
+        return "reach_only"
+    return "neither"
+
+
 def classify_quality_reach_quadrant(quality_beta: float, reach_beta: float) -> str:
+    """Legacy sign-only quadrant label (kept for NB14 callers). Prefer
+    :func:`classify_channel_pattern` for reliability-aware classification.
+    """
     q_pos = quality_beta > 0
     r_pos = reach_beta > 0
     if q_pos and not r_pos:
