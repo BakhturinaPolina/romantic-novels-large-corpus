@@ -109,7 +109,7 @@ hypotheses:
     mandatory_leaves: ["4.3", "4.4"]
     # Plus H5-flagged 3.2 topics (added after H5).
     inherit_from: ["H5"]
-    prompt: configs/stage11/prompts/h6_arc.yaml
+    prompt: configs/stage11/prompts/h6_arc_v2.yaml
     position_visible_in_pass_b: true
 
 # ---------------------------------------------------------------------------
@@ -129,6 +129,10 @@ evidence:
     tier_high: high_rate
     tier_low: low_rate
     tier_column: rating_class
+    # H6 Radway-day position design (used when sampling_design=position_x_books)
+    position_n_books: 4
+    position_sentences_per_tertile: 4
+    position_min_sentences: 6
   exhaustive:
     books_per_cell: 8
     sentences_per_book_topic: 20

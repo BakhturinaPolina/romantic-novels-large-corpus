@@ -1,0 +1,201 @@
+# H6-v2 narrative arc audit — position-aware, main-couple strict.
+# Used only for Radway-assisted new-candidate recovery (one-day H6).
+# Does not replace frozen v1.1 for the restored 29-topic baseline.
+
+hypothesis: H6
+name: arc_semantics_v2
+version: "2.0"
+frozen: true
+
+codes:
+  - id: ARC_0
+    label: off_target
+    definition: Not a narrative-arc role for the main couple (or not arc content).
+  - id: ARC_1
+    label: misunderstanding
+    definition: Hidden information, secret, or misunderstanding driving the arc.
+  - id: ARC_2
+    label: escalation_conflict
+    definition: Main-couple conflict escalation / falling action.
+  - id: ARC_3
+    label: separation_breakup_threat
+    definition: Separation, breakup threat, or rupture of the couple bond.
+  - id: ARC_4
+    label: relationship_caused_distress
+    definition: Distress caused by the relationship itself (not purely external plot).
+  - id: ARC_5
+    label: disclosure
+    definition: Revelation / disclosure that moves the arc toward resolution.
+  - id: ARC_6
+    label: repair
+    definition: Repair, reconciliation work, conflict resolution in progress.
+  - id: ARC_7
+    label: restored_trust
+    definition: Restored trust / reassurance after rupture (state change required).
+  - id: ARC_8
+    label: mutual_commitment_final_payoff
+    definition: Mutual relational commitment / final resolution (not mere intimacy tokens).
+  - id: ARC_9
+    label: external_plot_conflict
+    definition: External/plot obstacle not itself deteriorating the romantic relationship.
+  - id: ARC_10
+    label: unclear_arc_role
+    definition: Arc-relevant but role unclear / mixed.
+
+fields:
+  - main_couple
+  - arc_role
+  - relationship_state_change
+  - narrative_position
+
+constructs:
+  REFINED_FALLING: [ARC_1, ARC_2, ARC_3, ARC_4]
+  REFINED_RISING: [ARC_5, ARC_6, ARC_7, ARC_8]
+  EXTERNAL_PLOT_CONFLICT: [ARC_9]
+
+decision_rules: |
+  1. Prefer MOST SPECIFIC ARC_# for the main couple's narrative role.
+  2. ARC_7 requires evidence that trust/closeness is being restored or strengthened —
+     tenderness or reassurance alone is not enough.
+  3. ARC_8 requires evidence of mutual relational commitment/resolution —
+     love, sex, marriage, rings, or promises alone are not enough.
+  4. ARC_1–ARC_4 require the main romantic relationship to be implicated —
+     fear, anger, sadness, danger, or secrecy alone are not enough.
+  5. External danger that does not deteriorate the romantic relationship is ARC_9.
+  6. If not about the main couple's arc → ARC_0.
+  7. Estimate code proportions separately for BEGINNING, MIDDLE, and END.
+  8. If two codes compete and neither reaches ~70% share on a position → MIXED/ARC_10.
+
+pass_b_shows_position: true
+
+adjudication_actions:
+  - KEEP
+  - RENAME
+  - REINTERPRET
+  - RETAXONOMIZE
+  - SPLIT
+  - EXCLUDE_FROM_HYPOTHESIS
+
+mixed_rule: "Mark MIXED if no single code has estimated share >= 0.70."
+
+phrasing:
+  primary:
+    system: |
+      You are auditing BERTopic topics for a romance-novel research study.
+      TASK: MAIN-COUPLE NARRATIVE ARC AUDIT.
+      Determine what role this topic performs in the trajectory of the MAIN ROMANTIC
+      COUPLE and whether that function changes by narrative position.
+
+      VALID CODES (use these IDs only — never free-form words):
+      ARC_0 unrelated | ARC_1 misunderstanding/secret maintained |
+      ARC_2 disagreement/conflict escalates | ARC_3 separation/distance/breakup threat |
+      ARC_4 relationship-caused distress | ARC_5 disclosure/revelation |
+      ARC_6 apology/reconciliation/repair | ARC_7 restored trust/reassurance |
+      ARC_8 mutual commitment/final resolution | ARC_9 external plot conflict |
+      ARC_10 ambiguous | MIXED
+
+      CRITICAL RULES:
+      - A topic is not ARC_7 merely because it contains tenderness or reassurance.
+        ARC_7 requires evidence that trust/closeness is being restored or strengthened.
+      - A topic is not ARC_8 merely because it contains love, sex, marriage, rings, or promises.
+        ARC_8 requires evidence of mutual relational commitment/resolution.
+      - A topic is not ARC_1–ARC_4 merely because the protagonist experiences fear, anger,
+        sadness, danger, or secrecy. The main romantic relationship must be implicated.
+      - External danger that does not itself deteriorate the romantic relationship is ARC_9.
+      - Never return CELL_*, BOOK_*, tertile names, or free-form labels as codes.
+      Respond with JSON only matching the schema.
+    pass_a: |
+      Pass A — lexical only (prompt v2.0).
+      Assign one ARC_# per keyword list (Main, KeyBERT, POS, MMR), then consensus.
+      Topic {topic_id}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Return JSON: {{"topic_id": int, "per_rep": {{"Main": "ARC_#", "KeyBERT": "ARC_#", "POS": "ARC_#", "MMR": "ARC_#"}},
+      "consensus_code": "ARC_#", "disagreement": bool,
+      "rationale": "cite cues that forced the ARC_# code"}}
+    pass_b: |
+      Pass B — contextual sentences stratified by narrative position (prompt v2.0).
+      Ratings are hidden. Position/tertile is visible and constitutive of H6.
+
+      For every contextual sentence assign:
+        main_couple: yes | no | unclear
+        arc_role: ARC_0..ARC_10
+        relationship_state_change: worsens | improves | no_change | unclear
+
+      Estimate code proportions separately for BEGINNING, MIDDLE, and END.
+      Topic {topic_id}
+      Sentences:
+      {sentences_block}
+
+      Return JSON: {{
+        "topic_id": int,
+        "sentence_codes": [{{"sid": "...", "code": "ARC_#", "main_couple": "yes|no|unclear",
+          "relationship_state_change": "worsens|improves|no_change|unclear"}}],
+        "proportions": {{"ARC_#": float}},
+        "proportions_by_tertile": {{
+          "begin": {{"ARC_#": float}},
+          "middle": {{"ARC_#": float}},
+          "end": {{"ARC_#": float}}
+        }},
+        "dominant_code_by_position": {{"begin": "ARC_#|MIXED", "middle": "ARC_#|MIXED", "end": "ARC_#|MIXED"}},
+        "main_couple_proportion_by_position": {{"begin": float, "middle": float, "end": float}},
+        "relationship_state_change_by_position": {{
+          "begin": "worsens|improves|no_change|unclear",
+          "middle": "worsens|improves|no_change|unclear",
+          "end": "worsens|improves|no_change|unclear"
+        }},
+        "stable_function_across_positions": bool,
+        "dominant_code": "ARC_#|MIXED",
+        "main_couple_prob": float,
+        "recommended_strict_h6_inclusion": "rising|falling|external|exclude",
+        "recommended_weighted_h6": {{"ARC_#": float}},
+        "rationale": "..."
+      }}
+    pass_c: |
+      Pass C — adjudication (prompt v2.0). Metadata revealed; still ignore ratings.
+      Lexical consensus: {lexical_consensus}
+      Contextual dominant: {contextual_dominant}
+      Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
+      Radway main: {radway_main_id} {radway_main_name}
+      Radway secondary: {radway_secondary_id}
+      Radway other plausible: {radway_other_plausible}
+      Stage11 prior codes: {stage11_codes}
+
+      Do taxonomy / Radway / Stage11 labels SUPPORT or CONTRADICT the contextual judgment?
+      Resolve to a single arc_role from ARC_0–ARC_10 or MIXED.
+      Also recommend strict H6 inclusion: rising (ARC_5–8) | falling (ARC_1–4) |
+      external (ARC_9) | exclude.
+
+      Return JSON: {{
+        "topic_id": int,
+        "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
+        "arc_role": "ARC_#|MIXED",
+        "main_couple": true|false,
+        "construct_bucket": "REFINED_FALLING|REFINED_RISING|EXTERNAL_PLOT_CONFLICT|none",
+        "recommended_strict_h6_inclusion": "rising|falling|external|exclude",
+        "metadata_supports_contextual": "support|contradict|mixed|unclear",
+        "proposed_constructs": ["..."],
+        "manual_review_required": bool,
+        "rationale": "..."
+      }}
+
+  alternate:
+    system: |
+      Arc-semantics auditor (prompt v2.0). Codes MUST be ARC_0–ARC_10 or MIXED only.
+      Main-couple rising/falling vs external plot conflict. JSON only.
+    pass_a: |
+      Lexical pass v2.0 for topic {topic_id}. Assign one ARC_# per representation, then consensus.
+      Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
+      JSON: per_rep, consensus_code (ARC_#), disagreement, rationale.
+    pass_b: |
+      Contextual pass v2.0 for topic {topic_id} with tertiles. Most-specific ARC_# codes;
+      never use CELL_* as codes; MIXED if none >=70%. Position-specific proportions required.
+      {sentences_block}
+      JSON: sentence_codes, proportions, proportions_by_tertile, dominant_code (ARC_#|MIXED),
+      main_couple_prob, recommended_strict_h6_inclusion, rationale.
+    pass_c: |
+      Adjudicate topic {topic_id} (v2.0): lexical={lexical_consensus}, contextual={contextual_dominant},
+      taxonomy={taxonomy_id}/{taxonomy_name}, radway={radway_main_id}, stage11={stage11_codes}.
+      Return arc_role ARC_#|MIXED, recommended_strict_h6_inclusion, metadata_supports_contextual.

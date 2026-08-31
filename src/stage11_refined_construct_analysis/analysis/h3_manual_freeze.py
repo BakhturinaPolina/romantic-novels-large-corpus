@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Sequence, Set, Tuple
 
@@ -10,6 +11,8 @@ import pandas as pd
 
 from src.stage11_refined_construct_analysis.analysis.constructs import normalize_code
 from src.stage11_refined_construct_analysis.config import Stage11Config
+
+LOGGER = logging.getLogger("stage11.h3_manual_freeze")
 
 # Dichotomy + confounders (plan-aligned review scope — not the full H3 audit pool)
 BUCKET_ORDER: Tuple[str, ...] = (
@@ -168,6 +171,189 @@ def seed_decisions_worksheet(df: pd.DataFrame) -> Dict[str, Any]:
             "Fill decision (KEEP|REMOVE), relationship_directed (yes|no), "
             "function (emotional|material_money|material_housing|appearance_status|other), "
             "and final_code for KEEP rows. "
-            "Set frozen=true and save as h3_manual_freeze.json to apply (when wired)."
+            "Set frozen=true and save as h3_manual_freeze.json to apply."
         ),
     }
+
+
+def load_h3_manual_freeze(cfg: Stage11Config) -> Optional[Dict[str, Any]]:
+    path = default_freeze_path(cfg)
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"H3 freeze file must be a JSON object: {path}")
+    return data
+
+
+def expected_h3_freeze_ids(cfg: Stage11Config) -> List[int]:
+    """Topic IDs from the decisions worksheet (preferred) or construct coverage union."""
+    ws = decisions_worksheet_path(cfg)
+    if ws.exists():
+        data = json.loads(ws.read_text(encoding="utf-8"))
+        ids = [int(d["topic_id"]) for d in data.get("decisions") or []]
+        if ids:
+            return sorted(set(ids))
+    freeze = load_h3_manual_freeze(cfg)
+    if freeze:
+        ids = [int(d["topic_id"]) for d in freeze.get("decisions") or []]
+        if ids:
+            return sorted(set(ids))
+    return []
+
+
+def validate_h3_manual_freeze(
+    data: Mapping[str, Any],
+    *,
+    expected_ids: Optional[Sequence[int]] = None,
+    require_frozen: bool = True,
+) -> List[str]:
+    """Return list of validation errors (empty = OK)."""
+    errors: List[str] = []
+    if require_frozen and not data.get("frozen"):
+        errors.append("frozen must be true before applying")
+    decisions = data.get("decisions")
+    if not isinstance(decisions, list) or not decisions:
+        errors.append("decisions must be a non-empty list")
+        return errors
+
+    expected = set(int(x) for x in (expected_ids or []))
+    seen: Set[int] = set()
+    for i, d in enumerate(decisions):
+        if not isinstance(d, dict):
+            errors.append(f"decisions[{i}] is not an object")
+            continue
+        try:
+            tid = int(d["topic_id"])
+        except (KeyError, TypeError, ValueError):
+            errors.append(f"decisions[{i}] missing topic_id")
+            continue
+        seen.add(tid)
+        decision = str(d.get("decision") or "").strip().upper()
+        if decision not in VALID_DECISIONS:
+            errors.append(f"topic {tid}: decision must be KEEP or REMOVE (got {decision!r})")
+            continue
+        rel = str(d.get("relationship_directed") or "").strip().lower()
+        func = str(d.get("function") or "").strip().lower()
+        if rel not in VALID_YN or rel == "":
+            errors.append(f"topic {tid}: relationship_directed must be yes or no")
+        if func not in VALID_FUNCTION or func == "":
+            errors.append(f"topic {tid}: function must be set")
+        if decision == "KEEP":
+            final = normalize_code(d.get("final_code")) or str(d.get("final_code") or "").strip()
+            if not final:
+                errors.append(f"topic {tid}: KEEP requires final_code")
+            elif final == "S0":
+                errors.append(f"topic {tid}: use REMOVE instead of KEEP with S0")
+            elif final not in H3_MANUAL_FREEZE_CODES and not str(final).startswith("S"):
+                errors.append(f"topic {tid}: invalid final_code {final!r}")
+
+    if expected:
+        missing = sorted(expected - seen)
+        extra = sorted(seen - expected)
+        if missing:
+            errors.append(f"missing topic_ids: {missing}")
+        if extra:
+            errors.append(f"unexpected topic_ids: {extra}")
+    return errors
+
+
+def freeze_overrides(data: Mapping[str, Any]) -> Dict[int, Dict[str, str]]:
+    """Map topic_id → {decision, final_code, action_tag} for master application."""
+    out: Dict[int, Dict[str, str]] = {}
+    for d in data.get("decisions") or []:
+        tid = int(d["topic_id"])
+        decision = str(d.get("decision") or "").strip().upper()
+        if decision == "REMOVE":
+            out[tid] = {
+                "decision": "REMOVE",
+                "final_code": "S0",
+                "action_tag": "H3:HUMAN_REMOVE",
+            }
+        elif decision == "KEEP":
+            final = normalize_code(d.get("final_code")) or str(d.get("final_code") or "").strip()
+            out[tid] = {
+                "decision": "KEEP",
+                "final_code": final,
+                "action_tag": "H3:HUMAN_KEEP",
+            }
+    return out
+
+
+def _patch_h3_family_props(row: Mapping[str, Any], final_code: str) -> str:
+    """Rewrite H3 Pass-B proportions so W_tk admits the human final_code."""
+    raw = row.get("family_proportions_json")
+    if isinstance(raw, dict):
+        blob = dict(raw)
+    elif isinstance(raw, str) and raw.strip():
+        try:
+            blob = json.loads(raw)
+        except json.JSONDecodeError:
+            blob = {}
+    else:
+        blob = {}
+    if final_code == "S0":
+        blob["H3"] = {}
+    else:
+        blob["H3"] = {final_code: 1.0}
+    return json.dumps(blob)
+
+
+def apply_h3_manual_freeze_to_master(
+    master: pd.DataFrame,
+    cfg: Stage11Config,
+    *,
+    freeze_data: Optional[Mapping[str, Any]] = None,
+) -> pd.DataFrame:
+    """Override security_code from a frozen human decision file.
+
+    No-op if the freeze file is missing or frozen=false.
+    """
+    data = freeze_data if freeze_data is not None else load_h3_manual_freeze(cfg)
+    if not data or not data.get("frozen"):
+        return master
+
+    expected = expected_h3_freeze_ids(cfg)
+    errors = validate_h3_manual_freeze(
+        data, expected_ids=expected or None, require_frozen=True
+    )
+    if errors:
+        raise ValueError("Invalid H3 manual freeze:\n  - " + "\n  - ".join(errors))
+
+    overrides = freeze_overrides(data)
+    if not overrides:
+        return master
+
+    df = master.copy()
+    if "adjudication_actions" not in df.columns:
+        df["adjudication_actions"] = [[] for _ in range(len(df))]
+
+    n_keep = n_remove = 0
+    for idx, row in df.iterrows():
+        tid = int(row["topic_id"])
+        ov = overrides.get(tid)
+        if not ov:
+            continue
+        final = ov["final_code"]
+        df.at[idx, "security_code"] = final
+        df.at[idx, "family_proportions_json"] = _patch_h3_family_props(row, final)
+        actions = row.get("adjudication_actions")
+        if isinstance(actions, list):
+            new_actions = list(actions) + [ov["action_tag"]]
+        elif isinstance(actions, str) and actions:
+            new_actions = [actions, ov["action_tag"]]
+        else:
+            new_actions = [ov["action_tag"]]
+        df.at[idx, "adjudication_actions"] = new_actions
+        if ov["decision"] == "REMOVE":
+            n_remove += 1
+        else:
+            n_keep += 1
+
+    LOGGER.info(
+        "Applied H3 manual freeze: KEEP=%d REMOVE=%d (of %d overrides)",
+        n_keep,
+        n_remove,
+        len(overrides),
+    )
+    return df

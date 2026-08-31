@@ -1,0 +1,140 @@
+# Exploratory nested topic sets — does NOT alter confirmatory H1–H6 constructs.
+# Strict levels mirror post-freeze confirmatory membership where applicable.
+
+run_id: v4_l12_granular_final_call49
+
+inputs:
+  stage11_config: configs/stage11/refined_constructs.yaml
+  exploratory_config: configs/stage11/exploratory_security_care_appearance.yaml
+
+outputs:
+  notebook_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/12_exploratory_security_care_appearance
+
+families:
+  emotional_security:
+    strict: [29, 46, 56, 96, 242, 128, 170, 61, 65, 167]
+    moderate:
+      - 29
+      - 38
+      - 45
+      - 46
+      - 56
+      - 96
+      - 128
+      - 137
+      - 141
+      - 193
+      - 240
+      - 242
+      - 247
+      - 293
+      - 299
+      - 305
+      - 307
+      - 356
+      - 61
+      - 65
+      - 93
+      - 143
+      - 167
+      - 170
+      - 190
+      - 277
+      - 315
+      - 351
+      - 358
+    broad:
+      - 6
+      - 29
+      - 36
+      - 38
+      - 45
+      - 46
+      - 56
+      - 59
+      - 85
+      - 96
+      - 119
+      - 128
+      - 137
+      - 141
+      - 157
+      - 161
+      - 175
+      - 193
+      - 232
+      - 238
+      - 240
+      - 242
+      - 247
+      - 258
+      - 273
+      - 289
+      - 293
+      - 299
+      - 305
+      - 307
+      - 352
+      - 355
+      - 356
+      - 372
+      - 61
+      - 65
+      - 93
+      - 143
+      - 167
+      - 170
+      - 190
+      - 277
+      - 315
+      - 351
+      - 358
+
+  protective_commitment:
+    strict: []
+    moderate: [56, 119, 247, 299, 338]
+    broad: [20, 24, 73, 100, 102, 119, 148, 239, 240, 247, 299, 329, 335, 338]
+
+  enacted_protection:
+    strict: [119]
+    moderate: [119, 87, 114]
+    broad: [68, 78, 87, 107, 113, 114, 122, 119, 307, 363]
+    fractional_topics: [87, 114]
+
+  practical_care:
+    strict: [83, 330, 355, 10]
+    moderate: [10, 36, 83, 190, 330, 355, 356]
+    broad: [10, 36, 83, 190, 193, 240, 277, 307, 330, 355, 356, 363]
+
+  material_security:
+    strict: []
+    moderate: [17, 22, 112, 174, 191]
+    broad: [17, 22, 112, 140, 174, 191, 345]
+
+  appearance:
+    strict: [18, 77, 171, 218, 253, 364]
+    moderate: [18, 77, 171, 170, 218, 253, 364]
+    broad: [18, 77, 171, 170, 218, 253, 292, 364]
+
+  possessive_security:
+    strict: [293, 294, 315]
+    moderate: [181, 223, 293, 294, 315]
+    broad: [181, 223, 293, 294, 315, 329, 335]
+
+promise_types:
+  trust_reliability: [46]
+  non_harm_safety: [56]
+  emotional_reassurance: [29, 96, 242, 358]
+  belonging_presence: [128, 170, 351]
+  long_term_partnership: [61, 65, 167]
+  protective_commitment: [247, 299, 338, 100]
+  enacted_external_protection: [119]
+  practical_care: [83, 330, 355, 10, 190]
+  material_provision: [17, 22, 112, 191, 174]
+  possessive_protection: [293, 315, 294]
+
+fractional_protection:
+  protection_codes: [H4_5, H4_6]
+  candidate_topics: [68, 78, 87, 107, 113, 114, 122, 307, 363]
+
+presence_threshold: 1.0e-5

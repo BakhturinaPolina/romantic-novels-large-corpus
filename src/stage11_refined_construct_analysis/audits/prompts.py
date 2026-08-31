@@ -30,8 +30,15 @@ def prompt_path_for(cfg: Stage11Config, hypothesis: str) -> Path:
     return cfg.root / "configs" / "stage11" / "prompts" / name
 
 
-def load_hypothesis_prompt(cfg: Stage11Config, hypothesis: str) -> Dict[str, Any]:
-    path = prompt_path_for(cfg, hypothesis)
+def load_hypothesis_prompt(
+    cfg: Stage11Config,
+    hypothesis: str,
+    *,
+    prompt_path: Path | str | None = None,
+) -> Dict[str, Any]:
+    path = Path(prompt_path) if prompt_path else prompt_path_for(cfg, hypothesis)
+    if not path.is_absolute():
+        path = cfg.root / path
     data = load_prompt_yaml(path)
     if not data.get("frozen", False):
         raise ValueError(f"Prompt for {hypothesis} is not marked frozen: {path}")
@@ -89,6 +96,17 @@ def format_pass_messages(
     reveal = packet.get("pass_c_reveal", {})
     n_sent = 40 if max_sentences is None else int(max_sentences)
 
+    others = reveal.get("radway_other_plausible_ids") or reveal.get("radway_other_plausible") or []
+    if isinstance(others, list):
+        others_s = ", ".join(str(x) for x in others) if others else "(none)"
+    else:
+        others_s = str(others) if others else "(none)"
+    stage11 = reveal.get("stage11_codes") or []
+    if isinstance(stage11, list):
+        stage11_s = ", ".join(str(x) for x in stage11) if stage11 else "(none)"
+    else:
+        stage11_s = str(stage11) if stage11 else "(none)"
+
     fmt = {
         "topic_id": packet["topic_id"],
         "main": reps["main"],
@@ -104,6 +122,11 @@ def format_pass_messages(
         "taxonomy_name": reveal.get("taxonomy_main_name", "(hidden)"),
         "secondary_id": reveal.get("taxonomy_secondary_id", "(none)"),
         "secondary_name": reveal.get("taxonomy_secondary_name", "(none)"),
+        "radway_main_id": reveal.get("radway_main_id", "(none)"),
+        "radway_main_name": reveal.get("radway_main_name", "(none)"),
+        "radway_secondary_id": reveal.get("radway_secondary_id", "(none)"),
+        "radway_other_plausible": others_s,
+        "stage11_codes": stage11_s,
     }
 
     pass_key = f"pass_{pass_name.lower()}"

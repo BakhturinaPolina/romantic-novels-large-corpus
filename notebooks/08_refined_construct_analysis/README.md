@@ -21,6 +21,7 @@ Prompts are hypothesis-specific (not one giant multi-criterion prompt). Shared e
 | `09_refined_hypothesis_tests` | Re-run H1–H6 with Stage 10 stats machinery |
 | `10_contextual_validation` | Unblind cells |
 | `11_refined_robustness` | OLD \| STRICT \| WEIGHTED panel |
+| `12_exploratory_security_care_appearance` | **Exploratory only** — nested security/care/appearance definitions (does not alter H1–H6) |
 
 Edit `_src/*.py`, then:
 
@@ -70,6 +71,17 @@ Writes under `results/stage11_refined_construct_analysis/<run_id>/human_review/`
 - `stage11_human_review_all_topics.pdf`
 - `stage11_human_review_all_topics.md`
 - `stage11_human_review_h{1..6}.md`
+
+### H3 + H4 manual freeze (apply both)
+
+```bash
+.venv/bin/python scripts/stage11/export_h3_manual_freeze_pdf.py
+.venv/bin/python scripts/stage11/export_h4_manual_freeze_pdf.py
+# After filling decisions → h3_manual_freeze.json + h4_manual_freeze.json with frozen=true:
+bash scripts/stage11/apply_h3_h4_manual_freeze.sh
+```
+
+See `human_review/post_freeze_claim_hierarchy.md` for confirmatory vs exploratory claims.
 
 ### H4 manual freeze (26 atom topics)
 

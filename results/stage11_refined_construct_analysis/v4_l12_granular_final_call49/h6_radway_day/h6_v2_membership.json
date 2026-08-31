@@ -1,0 +1,966 @@
+{
+  "frozen_rule": "Strict rising = ARC_5\u20138 with main_couple evidence; falling = ARC_1\u20134 with main_couple; no criterion weakening.",
+  "n_restored_29": 29,
+  "n_new_audited": 25,
+  "strict_rising_topic_ids": [
+    3,
+    29,
+    45,
+    46,
+    56,
+    85,
+    109,
+    124,
+    126,
+    128,
+    157,
+    167,
+    175,
+    194,
+    237,
+    240,
+    242,
+    247,
+    305
+  ],
+  "strict_falling_topic_ids": [
+    37,
+    96,
+    129,
+    177,
+    214,
+    265,
+    272,
+    285,
+    293,
+    301,
+    303,
+    319
+  ],
+  "strict_external_topic_ids": [
+    78,
+    119
+  ],
+  "n_strict_rising": 19,
+  "n_strict_falling": 12,
+  "excluded_new_topic_ids": [
+    6,
+    36,
+    38,
+    100,
+    102,
+    232,
+    338
+  ],
+  "members": [
+    {
+      "topic_id": 3,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_5",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 6,
+      "source": "new_radway_day",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "EXCLUDE_FROM_HYPOTHESIS",
+      "included_strict": false
+    },
+    {
+      "topic_id": 24,
+      "source": "restored_sonnet_29",
+      "arc_role": "MIXED",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 29,
+      "source": "new_radway_day",
+      "arc_role": "ARC_8",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 36,
+      "source": "new_radway_day",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 37,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 38,
+      "source": "new_radway_day",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 43,
+      "source": "restored_sonnet_29",
+      "arc_role": "MIXED",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 45,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 46,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 56,
+      "source": "new_radway_day",
+      "arc_role": "ARC_6",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 78,
+      "source": "new_radway_day",
+      "arc_role": "ARC_9",
+      "main_couple": true,
+      "strict_side": "external",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 85,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_6",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 94,
+      "source": "restored_sonnet_29",
+      "arc_role": "MIXED",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 96,
+      "source": "new_radway_day",
+      "arc_role": "ARC_4",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 100,
+      "source": "new_radway_day",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 102,
+      "source": "new_radway_day",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 109,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_5",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 119,
+      "source": "new_radway_day",
+      "arc_role": "ARC_9",
+      "main_couple": true,
+      "strict_side": "external",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 121,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 124,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 126,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 128,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 129,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_4",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 130,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 157,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 167,
+      "source": "new_radway_day",
+      "arc_role": "ARC_8",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 175,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 177,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 194,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_5",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 210,
+      "source": "restored_sonnet_29",
+      "arc_role": "MIXED",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 214,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 232,
+      "source": "new_radway_day",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 237,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_5",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 240,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 242,
+      "source": "new_radway_day",
+      "arc_role": "ARC_6",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 247,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 248,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_10",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 256,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 264,
+      "source": "restored_sonnet_29",
+      "arc_role": "MIXED",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 265,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_4",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 272,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 285,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_2",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 286,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 293,
+      "source": "new_radway_day",
+      "arc_role": "ARC_4",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 301,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 303,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 305,
+      "source": "new_radway_day",
+      "arc_role": "ARC_7",
+      "main_couple": true,
+      "strict_side": "rising",
+      "action": "REINTERPRET",
+      "included_strict": true
+    },
+    {
+      "topic_id": 314,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    },
+    {
+      "topic_id": 316,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 319,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_1",
+      "main_couple": true,
+      "strict_side": "falling",
+      "action": "KEEP",
+      "included_strict": true
+    },
+    {
+      "topic_id": 338,
+      "source": "new_radway_day",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "EXCLUDE_FROM_HYPOTHESIS",
+      "included_strict": false
+    },
+    {
+      "topic_id": 346,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_0",
+      "main_couple": false,
+      "strict_side": "exclude",
+      "action": "REINTERPRET",
+      "included_strict": false
+    },
+    {
+      "topic_id": 362,
+      "source": "restored_sonnet_29",
+      "arc_role": "ARC_10",
+      "main_couple": true,
+      "strict_side": "exclude",
+      "action": "KEEP",
+      "included_strict": false
+    }
+  ],
+  "flagged_for_human_review": [
+    {
+      "topic_id": 6,
+      "is_new": true,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 24,
+      "is_new": false,
+      "code": "MIXED",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=MIXED"
+      ]
+    },
+    {
+      "topic_id": 29,
+      "is_new": true,
+      "code": "ARC_8",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 36,
+      "is_new": true,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 38,
+      "is_new": true,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "radway_rising_tag_but_audit=exclude/ARC_10",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 43,
+      "is_new": false,
+      "code": "MIXED",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=MIXED",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 45,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 46,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 56,
+      "is_new": true,
+      "code": "ARC_6",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 78,
+      "is_new": true,
+      "code": "ARC_9",
+      "side": "external",
+      "main_couple": true,
+      "reasons": [
+        "radway_rising_tag_but_audit=external/ARC_9"
+      ]
+    },
+    {
+      "topic_id": 94,
+      "is_new": false,
+      "code": "MIXED",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=MIXED",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 96,
+      "is_new": true,
+      "code": "ARC_4",
+      "side": "falling",
+      "main_couple": true,
+      "reasons": [
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 100,
+      "is_new": true,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 102,
+      "is_new": true,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 119,
+      "is_new": true,
+      "code": "ARC_9",
+      "side": "external",
+      "main_couple": true,
+      "reasons": [
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 121,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 124,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 126,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 128,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 130,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 157,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 167,
+      "is_new": true,
+      "code": "ARC_8",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 175,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 210,
+      "is_new": false,
+      "code": "MIXED",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=MIXED",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 232,
+      "is_new": true,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "radway_falling_tag_but_audit=exclude/ARC_10"
+      ]
+    },
+    {
+      "topic_id": 237,
+      "is_new": false,
+      "code": "ARC_5",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 240,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 242,
+      "is_new": true,
+      "code": "ARC_6",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate"
+      ]
+    },
+    {
+      "topic_id": 247,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 248,
+      "is_new": false,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 256,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 264,
+      "is_new": false,
+      "code": "MIXED",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=MIXED",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 286,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 305,
+      "is_new": true,
+      "code": "ARC_7",
+      "side": "rising",
+      "main_couple": true,
+      "reasons": [
+        "high_impact_rising_candidate",
+        "manual_review_required",
+        "metadata_contradicts_contextual"
+      ]
+    },
+    {
+      "topic_id": 314,
+      "is_new": false,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "manual_review_required"
+      ]
+    },
+    {
+      "topic_id": 316,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 338,
+      "is_new": true,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0",
+        "radway_rising_tag_but_audit=exclude/ARC_0"
+      ]
+    },
+    {
+      "topic_id": 346,
+      "is_new": false,
+      "code": "ARC_0",
+      "side": "exclude",
+      "main_couple": false,
+      "reasons": [
+        "ambiguous_code=ARC_0"
+      ]
+    },
+    {
+      "topic_id": 362,
+      "is_new": false,
+      "code": "ARC_10",
+      "side": "exclude",
+      "main_couple": true,
+      "reasons": [
+        "ambiguous_code=ARC_10",
+        "manual_review_required"
+      ]
+    }
+  ],
+  "hard_stop_threshold_rising": 3,
+  "baseline_rising_n": 2
+}

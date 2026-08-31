@@ -441,6 +441,152 @@ def test_axis(
     }
 
 
+def cliffs_delta_author_cluster_ci(
+    frame: pd.DataFrame,
+    feature: str,
+    *,
+    tier_col: str = "rating_class",
+    high: str = "high_rate",
+    low: str = "low_rate",
+    cluster: str = "author_id",
+    n_replicates: int = 400,
+    seed: int = 42,
+    ci_level: float = 0.95,
+) -> Dict[str, Any]:
+    """Cliff's δ with author-cluster bootstrap CI (final uncertainty for NB13)."""
+    from src.stage10_correlation_analysis.analysis import effects as eff
+    from src.stage10_correlation_analysis.analysis.bootstrap import (
+        cluster_bootstrap,
+        make_delta_statistic,
+    )
+
+    if feature not in frame.columns or cluster not in frame.columns:
+        return {
+            "feature": feature,
+            "cliffs_delta": float("nan"),
+            "ci_low": float("nan"),
+            "ci_high": float("nan"),
+            "status": "absent",
+        }
+    a = frame.loc[frame[tier_col] == high, feature].dropna().to_numpy(dtype=float)
+    b = frame.loc[frame[tier_col] == low, feature].dropna().to_numpy(dtype=float)
+    if a.size < 10 or b.size < 10:
+        return {
+            "feature": feature,
+            "cliffs_delta": float("nan"),
+            "ci_low": float("nan"),
+            "ci_high": float("nan"),
+            "status": "too_few",
+        }
+    delta = float(eff.cliffs_delta(a, b))
+    stat = make_delta_statistic(feature, tier_col, high, low)
+    try:
+        boot = cluster_bootstrap(
+            frame.dropna(subset=[feature, tier_col, cluster]),
+            stat,
+            cluster,
+            n_replicates=n_replicates,
+            ci_level=ci_level,
+            seed=seed,
+        )
+        return {
+            "feature": feature,
+            "cliffs_delta": delta,
+            "ci_low": float(boot["ci_low"]),
+            "ci_high": float(boot["ci_high"]),
+            "ci_excludes_zero": bool(boot["ci_excludes_zero"]),
+            "n_replicates_used": int(boot["n_replicates_used"]),
+            "n_clusters": int(boot["n_clusters"]),
+            "status": "ok",
+        }
+    except Exception as exc:
+        return {
+            "feature": feature,
+            "cliffs_delta": delta,
+            "ci_low": float("nan"),
+            "ci_high": float("nan"),
+            "status": f"bootstrap_failed:{exc}",
+        }
+
+
+def cliffs_delta_author_cluster_ci_many(
+    frame: pd.DataFrame,
+    features: Sequence[str],
+    *,
+    tier_col: str = "rating_class",
+    high: str = "high_rate",
+    low: str = "low_rate",
+    cluster: str = "author_id",
+    n_replicates: int = 400,
+    seed: int = 42,
+    ci_level: float = 0.95,
+) -> pd.DataFrame:
+    """Batch author-cluster CIs for Cliff's δ (shared resamples)."""
+    from src.stage10_correlation_analysis.analysis import effects as eff
+    from src.stage10_correlation_analysis.analysis.bootstrap import (
+        cluster_bootstrap_many,
+        make_delta_statistic,
+    )
+
+    present = [f for f in features if f in frame.columns]
+    if not present or cluster not in frame.columns:
+        return pd.DataFrame()
+    stats = {
+        f: make_delta_statistic(f, tier_col, high, low) for f in present
+    }
+    work = frame.dropna(subset=[tier_col, cluster]).copy()
+    boot = cluster_bootstrap_many(
+        work,
+        stats,
+        cluster,
+        n_replicates=n_replicates,
+        ci_level=ci_level,
+        seed=seed,
+    )
+    rows = []
+    for f in present:
+        a = work.loc[work[tier_col] == high, f].dropna().to_numpy(dtype=float)
+        b = work.loc[work[tier_col] == low, f].dropna().to_numpy(dtype=float)
+        if a.size < 10 or b.size < 10:
+            rows.append(
+                {
+                    "feature": f,
+                    "cliffs_delta": float("nan"),
+                    "ci_low": float("nan"),
+                    "ci_high": float("nan"),
+                    "status": "too_few",
+                }
+            )
+            continue
+        delta = float(eff.cliffs_delta(a, b))
+        br = boot[boot["statistic"] == f]
+        if br.empty:
+            rows.append(
+                {
+                    "feature": f,
+                    "cliffs_delta": delta,
+                    "ci_low": float("nan"),
+                    "ci_high": float("nan"),
+                    "status": "missing_boot",
+                }
+            )
+            continue
+        r0 = br.iloc[0]
+        rows.append(
+            {
+                "feature": f,
+                "cliffs_delta": delta,
+                "ci_low": float(r0["ci_low"]) if pd.notna(r0["ci_low"]) else float("nan"),
+                "ci_high": float(r0["ci_high"]) if pd.notna(r0["ci_high"]) else float("nan"),
+                "ci_excludes_zero": bool(r0.get("ci_excludes_zero")),
+                "n_replicates_used": int(r0.get("n_replicates_used") or 0),
+                "n_clusters": int(r0.get("n_clusters") or 0),
+                "status": "ok",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
 def cell_code_stability(
     cfg: Stage11Config,
     *,

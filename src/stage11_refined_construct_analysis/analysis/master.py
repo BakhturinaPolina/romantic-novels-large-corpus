@@ -22,6 +22,9 @@ from src.stage11_refined_construct_analysis.analysis.constructs import (
     OFF_TARGET_CODES,
     normalize_code,
 )
+from src.stage11_refined_construct_analysis.analysis.h3_manual_freeze import (
+    apply_h3_manual_freeze_to_master,
+)
 from src.stage11_refined_construct_analysis.analysis.h4_manual_freeze import (
     apply_h4_manual_freeze_to_master,
 )
@@ -604,6 +607,7 @@ def build_W_tkr_from_h6(cfg: Stage11Config) -> pd.DataFrame:
 def write_master_artifacts(cfg: Stage11Config) -> Dict[str, Path]:
     out_dir = cfg.output_path("constructs_dir", create=True)
     master = build_master_annotations(cfg)
+    master = apply_h3_manual_freeze_to_master(master, cfg)
     master = apply_h4_manual_freeze_to_master(master, cfg)
     master_path = out_dir / "master_annotations.parquet"
     master.to_parquet(master_path, index=False)

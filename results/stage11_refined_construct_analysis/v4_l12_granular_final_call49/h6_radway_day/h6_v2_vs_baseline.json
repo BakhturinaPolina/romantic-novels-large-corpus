@@ -1,0 +1,112 @@
+{
+  "baseline": {
+    "RARC": {
+      "cliffs_delta": 0.0070086769578465,
+      "ci_low": -0.014876293277979,
+      "ci_high": 0.0272087947755097,
+      "verdict": "thin:no reliable effect",
+      "measurement_gate": "thin"
+    },
+    "DELTA_rising": {
+      "cliffs_delta": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "verdict": "thin:no reliable effect",
+      "measurement_gate": "thin"
+    },
+    "DELTA_falling": {
+      "cliffs_delta": -0.0070086769578466,
+      "ci_low": -0.0272087947755097,
+      "ci_high": 0.014876293277979,
+      "verdict": "thin:no reliable effect",
+      "measurement_gate": "thin"
+    },
+    "strict_rising": {
+      "n_topics": 2,
+      "gate": "thin",
+      "topic_ids": [
+        102,
+        244
+      ]
+    }
+  },
+  "h6_v2": {
+    "effects": {
+      "RARC": {
+        "cliffs_delta": -0.05268257948444455,
+        "ci_low": -0.07568693244287311,
+        "ci_high": -0.02860792239893134,
+        "magnitude": "negligible"
+      },
+      "DELTA_rising": {
+        "cliffs_delta": -0.09802488113538055,
+        "ci_low": -0.12061474913491652,
+        "ci_high": -0.07619701523407776,
+        "magnitude": "negligible"
+      },
+      "DELTA_falling": {
+        "cliffs_delta": -0.08209673030188736,
+        "ci_low": -0.10562053733301134,
+        "ci_high": -0.06060240304608599,
+        "magnitude": "negligible"
+      }
+    },
+    "coverage": {
+      "RAX_arc_rising": {
+        "n_topics": 19,
+        "topic_ids": [
+          3,
+          29,
+          45,
+          46,
+          56,
+          85,
+          109,
+          124,
+          126,
+          128,
+          157,
+          167,
+          175,
+          194,
+          237,
+          240,
+          242,
+          247,
+          305
+        ],
+        "gate": "viable"
+      },
+      "RAX_arc_falling": {
+        "n_topics": 12,
+        "topic_ids": [
+          37,
+          96,
+          129,
+          177,
+          214,
+          265,
+          272,
+          285,
+          293,
+          301,
+          303,
+          319
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "W_tkr_h6_v2": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/h6_radway_day/W_tkr_h6_v2.parquet",
+    "effects_csv": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/h6_radway_day/h6_v2_hypothesis_effects.csv",
+    "master_paths": {
+      "master": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/master_annotations.parquet",
+      "W_tk_strict": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_strict.parquet",
+      "W_tk_weighted": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_weighted.parquet",
+      "W_tk_inclusive": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tk_inclusive.parquet",
+      "W_tkr": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/W_tkr.parquet",
+      "coverage": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/construct_coverage.json",
+      "freeze": "/home/polina/Documents/Cursor_Projects/romantic_novels_large_corpus/results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/dictionary_freeze.json"
+    }
+  }
+}

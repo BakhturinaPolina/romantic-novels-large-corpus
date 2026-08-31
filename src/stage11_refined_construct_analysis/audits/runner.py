@@ -333,14 +333,21 @@ def run_pass(
     dry_run: bool = False,
     api_key: Optional[str] = None,
     model: Optional[str] = None,
+    prompt_override: Optional[Path] = None,
 ) -> Dict[str, Any]:
     hyp = str(hypothesis).upper()
-    prompt = load_hypothesis_prompt(cfg, hyp)
+    prompt = load_hypothesis_prompt(cfg, hyp, prompt_path=prompt_override)
     valid = list(list_code_ids(prompt)) + ["MIXED"]
     view = llm_view(packet, pass_name=pass_name)
     max_sent = None
     if pass_name.upper() == "B":
         max_sent = int(cfg.section("llm", "pass_b_max_sentences", default=20))
+        n_pkt = len(packet.get("contextual", {}).get("sentences", []) or [])
+        design = (
+            (packet.get("contextual") or {}).get("sampling") or {}
+        ).get("design")
+        if design == "position_x_books" and n_pkt > max_sent:
+            max_sent = min(int(n_pkt), 48)
     messages = format_pass_messages(
         prompt,
         view,
@@ -423,6 +430,8 @@ def run_hypothesis_audit(
     api_key: Optional[str] = None,
     limit: int = 0,
     model: Optional[str] = None,
+    prompt_override: Optional[Path] = None,
+    archive_on_no_resume: bool = True,
 ) -> Dict[str, Any]:
     """Run Pass A → B → C for each topic; write lexical/contextual/adjudication jsonl."""
     hyp = str(hypothesis).upper()
@@ -447,9 +456,11 @@ def run_hypothesis_audit(
 
     model_id = str(model or cfg.section("llm", "primary_model"))
     LOGGER.info("%s audit model: %s", hyp, model_id)
+    if prompt_override:
+        LOGGER.info("%s prompt override: %s", hyp, prompt_override)
 
     # Fresh re-run: archive prior jsonl so new prompt/model results are not mixed with old.
-    if not resume:
+    if not resume and archive_on_no_resume:
         stamp = time.strftime("%Y%m%d_%H%M%S")
         archive = out / f"archive_before_rerun_{stamp}"
         archive.mkdir(parents=True, exist_ok=True)
@@ -460,6 +471,20 @@ def run_hypothesis_audit(
                 LOGGER.info("Archived %s → %s", path.name, dest.relative_to(cfg.root))
         done_c = set()
         pending = list(ids)
+    elif not resume:
+        # Selective re-audit: drop only the requested topic ids from existing jsonl
+        pending = list(ids)
+        drop = set(ids)
+        for path in paths.values():
+            if not path.exists():
+                continue
+            keep = [r for r in load_jsonl(path) if int(r["topic_id"]) not in drop]
+            path.write_text(
+                "\n".join(json.dumps(r, ensure_ascii=False, default=str) for r in keep)
+                + ("\n" if keep else ""),
+                encoding="utf-8",
+            )
+        done_c = set()
     else:
         done_c = completed_topic_ids(paths["C"])
         pending = [t for t in ids if t not in done_c]
@@ -515,6 +540,7 @@ def run_hypothesis_audit(
                 prior_h3=prior,
                 prior_notes=prior_notes,
                 model=model_id,
+                prompt_override=prompt_override,
             )
             row_b = run_pass(
                 cfg,
@@ -527,6 +553,7 @@ def run_hypothesis_audit(
                 prior_h3=prior,
                 prior_notes=prior_notes,
                 model=model_id,
+                prompt_override=prompt_override,
             )
             row_c = run_pass(
                 cfg,
@@ -540,6 +567,7 @@ def run_hypothesis_audit(
                 prior_h3=prior,
                 prior_notes=prior_notes,
                 model=model_id,
+                prompt_override=prompt_override,
             )
         except Exception as exc:
             # Keep the batch alive across transient OpenRouter 504s; resume will retry.

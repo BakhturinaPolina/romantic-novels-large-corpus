@@ -108,7 +108,7 @@
 ## Topic 170 — Staying Close Despite Long Separation
 
 - **Taxonomy:** 1.6 — Character Appearance & Self-Presentation
-- **Code:** S13 (norm: S13)
+- **Code:** S2 (norm: S2)
 
 > despite going months without talking to each other—their daily lives hectic enough that even living in the same city had never ensured regular visits—they were close.
 
@@ -491,6 +491,35 @@
 
 ---
 
+## Topic 27 — Racing The Approaching Storm
+
+- **Taxonomy:** 7.3 — Risk, Danger & External Crises
+- **Code:** S7 (norm: S7)
+
+> it’ll be dark before we know it.’’
+
+> i don’t know if i’ll be able to get back here before the storm hits.
+
+> it’s going to rain and we’ll be caught out in the storm.
+
+> *(CELL_D, tertile=end)* Their lips met, and an explosion of passion took them along on a tide, the darkness that surrounded them like a blanket against the rest of the world.
+
+> *(CELL_D, tertile=begin)* Just as they reached the spot a man strode angrily out of a neighbouring field, and even in the poor light his expression could be seen as thunderous.
+
+> *(CELL_D, tertile=begin)* They were still driving, the high hedges making it impossible for them to see anything but the road in front of them.
+
+### Pass A/B/C
+
+- **A lexical:** `S7`
+  - Keywords like 'rain', 'snow', 'storm', 'dark', 'dangerously' suggest protection from harsh weather conditions, which is a physical protection function.
+- **B contextual:** `S0`
+  - Most sentences describe weather conditions or lack of security-related actions, hence the dominant code is S0. The only other significant code is S1, which appears in two sentences describing emotional connection.
+- **C adjudicate:** `S7`
+  - The topic's lexical consensus of S7 (Physical Protection) aligns with the taxonomy's secondary category of 'Movement, Transit & Spatial Transition'. The dominant code S0 (off_target) is overridden as it's less specific. No manual review is required.
+- **Action:** RENAME
+
+---
+
 ## Topic 36 — Eagerly Offering to Help
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
@@ -520,6 +549,60 @@
 
 ---
 
+## Topic 38 — Admitting Shared Pain
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** S0 (norm: S0)
+
+> i’ve seen your pain.
+
+> i've never felt that way before."
+
+> will it make you feel better to know that i’ve got one, too?”
+
+> *(CELL_A, tertile=middle)* That’s what it felt like—that was the exact feeling—and I’m so happy that now you were there.
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - The dominant lexical cluster ('feel, feels, good, felt, feeling, better, make') centres on subjective emotional states and the act of improving them. KeyBERT adds 'hurts, experienced, worst, honestly, magical, incredibly', all of which describe felt emotional experience and its intensity. POS and MMR reinforce this with 'insides, apologize, admitted, accustomed, magical' — language of internal emotional processing, acknowledgement of hurt, and apology, which are canonical emotional-reassurance acts. No material provision, housing, money, status, or appearance cues are present. The function is soothing/validating felt distress, mapping squarely to S1.
+- **B contextual:** `S1`
+  - The overwhelming majority of sentences in this topic revolve around expressing, sharing, and validating internal emotional states — feelings of relief, mutual feeling, wanting to communicate feelings, and checking whether someone feels better. These all perform the security function of emotional reassurance (S1): characters are affirming, acknowledging, or seeking acknowledgment of emotional experience to provide or receive comfort and validation. A small number of sentences (BOOK_003_5 'Good sign or bad?', BOOK_004_2 sexual thought, BOOK_004_3 'Same here') are too vague or off-topic to carry a security function and are coded S0. S1 accounts for ~85% of sentences, well above the 70% threshold.
+- **C adjudicate:** `S1`
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding with a secondary of Negative Emotions & Distress is consistent with S1 — the topic captures reassurance-seeking and comfort provision within an established or developing romantic relationship. No material or status/appearance security function is indicated. No split or reinterpretation is warranted.
+- **Action:** KEEP
+
+---
+
+## Topic 45 — Reassured Everything Will Be Fine
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** S0 (norm: S0)
+
+> we’ll be ok.” “
+
+> nadines : you’ll be ok?
+
+> ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great.
+
+> *(CELL_D, tertile=middle)* I'm fine," Amber replied quietly. "
+
+> *(CELL_D, tertile=begin)* Your wound…'" "I'm fine."
+
+> *(CELL_B, tertile=middle)* Is everything okay?” “
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - Main keywords ('fine, okay, everything, right, honey, alright') are classic reassurance utterances. KeyBERT reinforces with 'assured, assure, smoothly, incredibly' — all signalling that a worried party is being calmed. POS 'problems, sir, lord' indicate a concern being addressed. MMR 'assure, assured, acknowledged, smoothly, problems' confirm the pattern of one party reassuring another that difficulties are under control. No material provision or status display is present; the entire cluster functions as verbal emotional reassurance.
+- **B contextual:** `S1`
+  - The overwhelming majority of sentences are reassurances of wellbeing ('I'm fine', 'Are you okay?', 'It's going to be all right') — verbal exchanges that function to provide or seek emotional reassurance about safety and welfare, coding as S1 (emotional_reassurance). One sentence ('Your wound…I'm fine') has a slight illness/injury connotation (S6), but the response still functions as emotional reassurance rather than practical care. S1 accounts for ~95% of the topic, well above the 70% threshold.
+- **C adjudicate:** `S1`
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code; no material or status/appearance function is present.
+- **Action:** KEEP
+
+---
+
 ## Topic 52 — Talking About Dogs and Animals
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
@@ -546,33 +629,6 @@
 - **C adjudicate:** `S0`
   - Pass A/B lexical consensus landed on S6 (care_illness_crisis), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding (secondary: 8.2 Public, Travel & Leisure Spaces) makes clear this topic captures routine courtship and leisure interaction rather than illness or crisis care. No security function is being performed — the content reflects everyday relational bonding and public/travel contexts that do not map to any S1–S16 security provision. Contextual dominant S0 (off_target) is correct. The S6 lexical signal was likely a surface co-occurrence artifact (e.g., words like 'comfort' or 'support' appearing in courtship dialogue) rather than genuine crisis-care security work. Resolving to S0.
 - **Action:** REINTERPRET
-
----
-
-## Topic 56 — Promising Never to Hurt You
-
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
-
-> you'll get hurt," he managed to say. "
-
-> you know i’ll never hurt you .”
-
-> i’ll make sure you aren’t hurt.” “
-
-> *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
-
-> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
-
-### Pass A/B/C
-
-- **A lexical:** `S1`
-  - All four keyword lists centre on emotional pain and its mitigation: 'hurt/hurting/hurts/painful/distress' name the threat; 'assured, protect, never [hurt you], threatened' signal reassurance-seeking or reassurance-giving; 'cried, tightly' indicate emotional comfort behaviours. No material resources, housing, money, or status cues appear. The dominant security function is soothing/reassuring a partner against emotional harm — S1.
-- **B contextual:** `S1`
-  - The overwhelming majority of sentences in this topic concern emotional harm — fear of being hurt, reassurances of not hurting someone, and distress over emotional pain — which maps to S1 (emotional_reassurance). A smaller subset references physical harm or hitting (S7, physical_protection), and one sentence touches on injury/crisis care (S6). S1 accounts for ~70% of sentences, making it the dominant code.
-- **C adjudicate:** `S1`
-  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code and no material or status/appearance function is present.
-- **Action:** KEEP
 
 ---
 
@@ -785,7 +841,7 @@
 ## Topic 93 — Meal Plans Casually Arranged
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** S2 (norm: S2)
+- **Code:** S0 (norm: S0)
 
 > that’ll wait ’til after supper, though.” “
 
@@ -810,6 +866,62 @@
 - **C adjudicate:** `S2`
   - Pass A/B lexical consensus landed on S5 (practical_care_everyday), but the taxonomy placement in 4.2 Ongoing Courtship & Everyday Relational Bonding signals that the primary security function is fostering a sense of belonging and relational inclusion rather than instrumental caregiving. S2 (belonging) is the more specific fit: the everyday props and communication media (taxonomy 8.3b) serve as vehicles for maintaining relational closeness and mutual recognition, not for meeting practical needs. S5 would require evidence of task-oriented provision; absent that, S2 is dominant. No free-form labels remain; all prior codes are mapped to valid S-codes.
 - **Action:** REINTERPRET
+
+---
+
+## Topic 96 — Confessing Long-Standing Worry
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** S1 (norm: S1)
+
+> i’ve been worried about you, [person].
+
+> i’ve worried about you since i was twelve.
+
+> i’ve been worried about you.” “
+
+> *(CELL_D, tertile=middle)* You grew up worrying about having your basic needs met.
+
+> *(CELL_D, tertile=middle)* Don't beat yourself up about it.
+
+> *(CELL_B, tertile=begin)* We didn’t want to worry you.”
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - All four keyword lists centre on anxiety/worry vocabulary (worry, worried, concern, worrying, concerned, fears, bothering, bothered) paired with reassurance cues (assure, 'nothing', 'don't'). The dominant security function is one partner soothing or addressing the other's emotional distress — classic emotional reassurance (S1). No material, housing, or status cues are present.
+- **B contextual:** `S1`
+  - All sentences revolve around the expression, management, or dismissal of worry and concern between characters — reassuring others not to worry, confessing worry about someone, or deflecting concern. This is uniformly emotional reassurance (S1): the security function is soothing anxiety and providing emotional comfort, with no material, practical, or status dimensions present.
+- **C adjudicate:** `S1`
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance), consistent with Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking. The secondary taxonomy 3.2 Negative Emotions & Distress is compatible as the context in which reassurance is sought, not a competing security function. No ambiguity requiring MIXED or further splitting. S1 is the most specific applicable code.
+- **Action:** KEEP
+
+---
+
+## Topic 112 — Desperate Need For A Job
+
+- **Taxonomy:** 6.4 — Economic Precarity, Security & Dependency
+- **Code:** S0 (norm: S0)
+
+> i’ve never worked in such a beautiful place and i want this job so badly.”
+
+> i've lost my job, and i'm not going to find another one in elliot or prestonsburg or probably even in auburn.
+
+> you’ve got a hell of a career ahead of you.”
+
+> *(CELL_D, tertile=begin)* I cannot speak for others, but I know that my Olaf is well paid for his work, and has a dry, comfortable place to live and sleep, and that our table groans with food.
+
+> *(CELL_B, tertile=middle)* He offered me a job in the office, you know, filing, typing, secretarial work.” “
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - Keywords like 'reassuring', 'anxiety', and 'ability' suggest emotional reassurance, outweighing the material aspect of 'job' and 'work'.
+- **B contextual:** `S8`
+  - The dominant code is S8 (money_provision) as most sentences discuss jobs, employment, and earning a living.
+- **C adjudicate:** `S8`
+  - The topic's dominant code is S8 (money_provision), which aligns with the taxonomy of Economic Precarity, Security & Dependency. No manual review is required.
+- **Action:** KEEP
 
 ---
 
@@ -878,7 +990,7 @@
 ## Topic 128 — Confessing How Much You've Missed
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** S4 (norm: S4)
+- **Code:** S2 (norm: S2)
 
 > i’ve missed most of his life already.
 
@@ -897,6 +1009,91 @@
 - **C adjudicate:** `S4`
   - Pass A/B produced a lexical consensus of S0 (off-target) and a contextual dominant of S2 (belonging). The taxonomy anchor — 4.5 Reconciliation, Commitments & HEA — resolves the ambiguity: the security function being performed is the establishment or restoration of a durable relational bond (HEA/HFN endpoint), which maps most precisely to S4 (commitment_security) rather than the more diffuse S2 (belonging). S2 captures a sense of being included or accepted, whereas S4 captures the forward-looking guarantee of the relationship's permanence that reconciliation and commitment scenes specifically enact. The secondary taxonomy tag (3.1 Positive Resolution, Relief & Emotional Payoff) is consistent with S4 — the emotional payoff here derives from the security of knowing the commitment is sealed, not merely from belonging per se. S0 is overridden because the topic is clearly doing security work within the romance narrative frame.
 - **Action:** REINTERPRET
+
+---
+
+## Topic 137 — Pitching A Career Change
+
+- **Taxonomy:** 6.2 — Work & Professional Identity
+- **Code:** S0 (norm: S0)
+
+> [person], i’ve been giving this a lot of thought, and i think it’s time i moved onto hard news.
+
+> ryan smiled in a way that told her he wasn't that dense, and said, "i'll keep digging here, but maybe not with as much enthusiasm, but if marc gets to be a bore, let me know." "
+
+> i'll come too—" [person] makes to get up from the bed. "
+
+> *(CELL_D, tertile=middle)* He was annoyed at having to repeat himself—that was obvious. “
+
+> *(CELL_D, tertile=end)* Nash ghosted a grin at the lethal sound of the words and wondered if he’d left the other man with the most dangerous of them all.
+
+> *(CELL_B, tertile=begin)* Abby moved toward him in anticipation, but he shook his head and smiled. “
+
+> *(CELL_A, tertile=begin)* Rufus was staring into Michael’s bag with a weird expression on his face. “
+
+> *(CELL_A, tertile=begin)* Rufus’s expression didn’t magically change from annoyed to turned on, so he was fairly sure he’d missed and grabbed a knee or something. “
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - The keywords 'giggled', 'willing', 'playfully', 'urged', 'blurted', 'approached', 'warmth', and 'enthusiasm' suggest emotional reassurance and connection.
+- **B contextual:** `S0`
+  - Most sentences do not explicitly show any security function, so they are coded as S0. A few sentences show belonging (S2) but do not reach the 70% threshold.
+- **C adjudicate:** `S1`
+  - The topic's lexical consensus of S1 (emotional_reassurance) aligns with the contextual dominant of S0 (off_target), indicating that the topic primarily focuses on emotional support and reassurance, which is the most specific security function in this context.
+- **Action:** KEEP
+
+---
+
+## Topic 140 — Demanding Answers Before Departure
+
+- **Taxonomy:** 6.6 — Material Glamour & Consumption
+- **Code:** S0 (norm: S0)
+
+> before [person] could growl—david at least knew him well enough to know he would—[person] touched [person] leg and said, “right now i’ll settle for some answers.”
+
+> it’s kind of amazing that a few simple words from [person] can have this effect, and [person] doesn’t think he’ll tire of it, ever.
+
+> who knows what you'll be walking into on benezet , much less how long you'll be gone."
+
+> *(CELL_B, tertile=begin)* Ben’s doleful expression said that’s exactly what he feared.
+
+> *(CELL_B, tertile=end)* She’d told Ben about her engagement, and he’d been apoplectic at first, wanting to come immediately and “rescue” her.
+
+### Pass A/B/C
+
+- **A lexical:** `S14`
+  - The keywords 'benjamin', 'hutton', 'spencer', 'morrison', 'jim' suggest different characters, and 'had' implies a past action. 'Scenario', 'strolled', 'thinks', 'asks', 'anxious', 'possibilities', 'remarked', 'poised', 'growl', 'urge' suggest a social interaction or scenario. 'Extent', 'behalf', 'irritation', 'hopeful', 'enormous', 'session', 'fashioned', 'notion' suggest a discussion or negotiation. None of these directly relate to emotional, material, or status/appearance security functions, but 'gift_romance_token' (S14) is suggested by the use of 'had' with character names, implying a past gift or token of affection.
+- **B contextual:** `S0`
+  - Most sentences are either calling out or referring to 'Ben', which does not indicate any specific security function. A few sentences hint at emotional reassurance (S1), but they do not reach the 70% threshold.
+- **C adjudicate:** `S14`
+  - The topic revolves around romantic gestures and gifts, which aligns with the 'gift_romance_token' security function.
+- **Action:** RENAME
+
+---
+
+## Topic 141 — Warned to Use His Title
+
+- **Taxonomy:** 6.3 — Shared Workplaces & Professional Interaction
+- **Code:** S0 (norm: S0)
+
+> i’ll have it my own way,” branch said to [person]’s back. “
+
+> [person] can handle himself but he looks like a tiny wee thing in comparison to us so they’ll see him as easy pickings.”
+
+> you'll call me director and you'll like it," lincoln warned [person], a wide grin covering his face.
+
+> *(CELL_B, tertile=middle)* Max i m us l oo k ed at t he coun t er t o m a k e su r e no one e l se w as t he r e be f o r e he be g an t o de m a t e ri a li z e. H e r a i sed t he paper back up t o co v er h i s f ea t u r es. “
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - Keywords like 'tickles', 'smirk', 'chuckle', 'warmth' suggest emotional reassurance.
+- **B contextual:** `S0`
+  - Most sentences are neutral or off-target (S0), with a few discussing commitment and security (S4) related to Max's mother and health.
+- **C adjudicate:** `S1`
+  - The topic's lexical consensus of S1 (emotional reassurance) is more specific and appropriate than the contextual dominant of S0 (off-target). The topic focuses on emotional support and reassurance in a workplace setting, which aligns with the taxonomy of Shared Workplaces & Professional Interaction.
+- **Action:** RENAME
 
 ---
 
@@ -994,7 +1191,7 @@
 ## Topic 190 — Offering to Get Someone Cleaned Up
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > i’ll get cleaned up here as soon as i can.
 
@@ -1021,6 +1218,78 @@
 - **C adjudicate:** `S1`
   - Pass A/B lexical consensus landed on S5 (practical_care_everyday), but the taxonomy metadata places this topic squarely in 4.6 Emotional Safety, Reassurance & Caretaking. The contextual dominant S0 (off_target) is overridden by the taxonomy signal: the topic is doing security work, just emotional rather than practical. S1 (emotional_reassurance) is the most specific match for reassurance and caretaking functions within the emotional safety cluster. The secondary taxonomy note (8.3b Everyday Props & Communication Media) suggests the surface lexicon involves mundane objects or messages, which explains the S5 false positive in Pass A/B — the objects are vehicles for emotional reassurance, not practical provision. Function over object rule resolves this to S1.
 - **Action:** REINTERPRET
+
+---
+
+## Topic 191 — Working to Pay The Bills
+
+- **Taxonomy:** 6.2 — Work & Professional Identity
+- **Code:** S0 (norm: S0)
+
+> but in all honesty, she needed every penny of the income she earned, so even if she had known, she probably wouldn’t have paid the premiums.
+
+> her job as an accountant for h & h lumber wasn't exactly exhilarating, but it paid the bills, and they treated her kindly there.
+
+> once the television shows pay her major loot, she'll retire from her day job and write from home.
+
+> *(CELL_B, tertile=middle)* She worked out of her home, which was a big bonus for those times when Jenna needed a babysitter fast.
+
+> *(CELL_B, tertile=end)* And I hope for the maid’s sake that it was a good bribe, because it just cost her her job.” “
+
+> *(CELL_B, tertile=begin)* When she’d enjoyed the adventure of a job that was never the same two days in a row.
+
+> *(CELL_B, tertile=begin)* She’d loved the job, loved the idea of travel and stupidly, had fallen in love with the boss.
+
+> *(CELL_B, tertile=middle)* Actually, she had earned a ton of money, even without any full-contact stuff.
+
+> *(CELL_B, tertile=begin)* That might help tide her over while she built her client base.
+
+> *(CELL_B, tertile=end)* She’s been here long enough to learn everything, she has an accounting background, and she has the motive.” “
+
+### Pass A/B/C
+
+- **A lexical:** `S8`
+  - All keyword lists focus on financial aspects such as 'job', 'money', 'pay', 'bills', 'business', 'paid', 'fund', 'earned', 'afford', 'claims', indicating that the topic revolves around material security through money provision.
+- **B contextual:** `S0`
+  - The dominant code is S0 (off_target) as most sentences do not explicitly mention any security function. The next most frequent codes are S4 (commitment_security) and S8 (money_provision), but they do not reach the 70% threshold.
+- **C adjudicate:** `S8`
+  - The topic's dominant code is S0 (off_target), but the lexical consensus is S8 (money_provision). Given the taxonomy's focus on economic precarity and security, renaming the topic to better reflect its financial security aspect is appropriate.
+- **Action:** RENAME
+
+---
+
+## Topic 193 — Nurse Arranged After Hospital Release
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** S0 (norm: S0)
+
+> and you’ll both stay here, at caleb’s?” “
+
+> i'll arrange for a nurse to come to the house when they release caleb.
+
+> twenty-three caleb y ou ignore me, and i’ll ignore you .
+
+> *(CELL_B, tertile=begin)* Kayla points to me, like she can't figure out who Gavin's talking about.
+
+> *(CELL_A, tertile=begin)* In any case, I’m going to need to return myself to help out because Ramsey will be busy with Chloe and the baby,” he continued. “
+
+> *(CELL_A, tertile=middle)* After numerous brushes with the law and butting heads with the parents of a young lady who didn’t want him to be a part of their daughter’s life, Dillon had convinced Bane to get his life together.
+
+> *(CELL_A, tertile=end)* This was September, and Chloe was due to deliver in November, which meant Callum would be leaving Denver a few months after that.
+
+> *(CELL_A, tertile=middle)* Dillon and Ramsey did an awesome job and I know for sure we were a handful at times, some of us more than others.”
+
+> *(CELL_A, tertile=middle)* From what Callum had heard, Bane had been only eight when his parents had been killed.
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - The keywords 'ignore', 'fooled', 'embarrassment', 'admitted', 'hopeful', and 'stares' suggest emotional tension and reassurance-seeking behaviors.
+- **B contextual:** `S0|MIXED`
+  - Most sentences do not explicitly discuss security functions, so the dominant code is S0. The other codes are assigned based on specific mentions of status display (S12), commitment security (S4), housing (S9), and gift romance token (S14).
+- **C adjudicate:** `S1`
+  - The topic's dominant code is S0, but the taxonomy and lexical consensus suggest a focus on emotional safety and reassurance. Therefore, the topic should be renamed to better reflect its emotional security function.
+- **Action:** RENAME
 
 ---
 
@@ -1093,7 +1362,7 @@
 ## Topic 240 — Unsure How to Offer Comfort
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > oh my god, sean!
 
@@ -1120,7 +1389,7 @@
 ## Topic 247 — Promising You Will Not Be Alone
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > if we make it through this alone, we’ll just be better at being alone.”
 
@@ -1184,7 +1453,7 @@
 ## Topic 277 — Promising to Handle The Lawyer
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > i’ll talk to the lawyer tomorrow.
 
@@ -1213,7 +1482,7 @@
 ## Topic 299 — Pledging to Have Your Back
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > before she’s completely out i ask, “[person], you know i’ve always got your back, right?”
 
@@ -1237,10 +1506,37 @@
 
 ---
 
+## Topic 305 — Confessing A Lifelong Regret
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** S0 (norm: S0)
+
+> i know that now, and i’ll go to my grave regretting what i did to you.” “
+
+> come on in, you’ll no doubt regret it.
+
+> you’ll regret that.’ ‘
+
+> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
+
+> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - All four keyword lists centre on internal emotional states (regret, fears, upset, embarrassing) and communicative acts aimed at managing those states (assure, admit, handled, fumbled). The cluster signals a character seeking or providing reassurance about a past decision or remark — classic emotional-reassurance security function. No material, housing, money, or status/appearance cues are present.
+- **B contextual:** `S1`
+  - The overwhelming majority of sentences express emotional states of regret, remorse, or reassurance about past actions and feelings — all functioning as emotional reassurance or processing of emotional distress (S1). A smaller subset references regret about commitment decisions such as marriage or a life choice, pointing to commitment security (S4). A few sentences are too vague or off-topic to carry a security function (S0). S1 exceeds 70% and is the dominant code.
+- **C adjudicate:** `S1`
+  - Lexical consensus and contextual dominant both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA with a secondary of Negative Emotions & Distress is fully consistent with S1: these narrative moments centre on soothing distress, reaffirming emotional bonds, and restoring felt security after conflict or rupture. No material or status/appearance function is implicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
+- **Action:** KEEP
+
+---
+
 ## Topic 307 — Hauling Someone Up The Stairs
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > [person] would hate it if she took a rake like [person] to her bed, and she would so love to rub it in joshua’s face and prove his threats could not restrain her. “
 
@@ -1273,7 +1569,7 @@
 ## Topic 315 — Claiming Her As His Own
 
 - **Taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 - **Evidence:** exhaustive packet
 
 > henri, should any ask, this woman belongs to my cousin tristan—and to me.”
@@ -1310,6 +1606,43 @@
 
 ---
 
+## Topic 316 — Snapping Over Money and Control
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** S0 (norm: S0)
+
+> you’ll have to find another way to obtain the tallmadge money,” lucas snapped. “
+
+> stop that, you little fool, otherwise we’ll both be—’ lucas began, and then stopped as one of suzy’s flailing hands caught the side of his mouth.
+
+> they didn’t like it much when they found out, but lucas paid them well, and they’ll get over it.
+
+> *(CELL_B, tertile=middle)* Perhaps you should show Eva to her room,” Lucas finally suggested to Michael. “
+
+> *(CELL_B, tertile=middle)* Unlike Ethan and Jason, who were dark-haired, Aaron and Lucas were more dirty-blonde.
+
+> *(CELL_B, tertile=end)* He watched Lucas Mason as he spoke and was rewarded by an expression of guilt upon his uncle’s face. “
+
+> *(CELL_B, tertile=end)* You have brought this upon us,” Lucas Mason harshly accused his grief stricken nephew. “
+
+> *(CELL_B, tertile=end)* Lucas Mason was not so wise, however, and questioned Rork angrily. “
+
+> *(CELL_B, tertile=end)* The look upon Lucas Mason’s traitorous face mirrored the truth of Rork’s words.
+
+> *(CELL_B, tertile=end)* But as Lucas continued his tirade, Rork reached out to touch his beloved father’s body , only to find it frozen.
+
+### Pass A/B/C
+
+- **A lexical:** `S1`
+  - The Main and KeyBERT lists suggest a focus on appearance and status (S12, S14), but the POS and MMR lists indicate emotional reassurance (S1). The consensus is emotional reassurance due to the prevalence of emotional cues like 'thoughtful', 'annoyance', 'disappointment', and 'worries'.
+- **B contextual:** `S0`
+  - Most sentences do not contain any security function, hence S0. The sentence 'Lucas shouted in panic.' (BOOK_006_1) indicates physical protection (S7), and 'Perhaps you should show Eva to her room,” Lucas finally suggested to Michael.' (BOOK_002_4) shows practical help (S11).
+- **C adjudicate:** `S0`
+  - The topic primarily revolves around conflicts and threats, which do not directly relate to emotional, material, or status/appearance security functions.
+- **Action:** RENAME
+
+---
+
 ## Topic 340 — Patience Tested Through Small Trials
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
@@ -1337,10 +1670,45 @@
 
 ---
 
+## Topic 345 — Older Man Trading Shelter For Sex
+
+- **Taxonomy:** 7.4 — Unwanted or Coercive Sexual Contact
+- **Code:** S10 (norm: S10)
+
+> [person] says and then adds, “right.
+
+> mom didn’t talk to me about it, but i’m pretty sure uncle tony would’ve rather handled it a different way, if you know what i mean.” “
+
+> [person] knew that nothing was something, but he had no claims on the boy; in fact, after hearing about jorge’s initiation into sex, it occurred to him that he might be just another older man trading off offers of shelter or a meal or booze in exchange for being fucked senseless.
+
+> *(CELL_B, tertile=end)* Instead of a malfeasant, it was Steve with a loaded pizza and a six-pack of beer—my dream man.
+
+> *(CELL_B, tertile=begin)* Steve’s job was to close Stan McClousky’s operation and get his drugs off the street.
+
+> *(CELL_B, tertile=middle)* If Sinestro had been a member of the Soprano Mafia family, he would have been whacked a long time ago.
+
+> *(CELL_B, tertile=begin)* Although I still want to know how Tony Stark fits those in-line roller skates inside his Iron Man boots, especially when the armor’s folded up and tucked away in his briefcase, which when you think about it is the source of yet another paradox, because even if you assume some ability to condense the volume of the armor into such a containment, how do you deal with the integral mass?
+
+> *(CELL_B, tertile=middle)* He contacted the rulers of the antimatter universe, the Weaponers of Qward, and made a deal to help them in their attempt to conquer the matter universe.
+
+> *(CELL_B, tertile=end)* The Villain in the Iron Mask: Dr. Doom Fantastic Four Comics #1–100 (and other issues).
+
+### Pass A/B/C
+
+- **A lexical:** `S14`
+  - Words like 'revealing', 'winked', 'straightened' suggest subtle, romantic gestures, fitting S14.
+- **B contextual:** `S3`
+  - The dominant code is S3 (trust) as many sentences revolve around characters understanding, watching, and communicating with each other, indicating a level of trust and security in their relationships.
+- **C adjudicate:** `S14`
+  - The dominant code S3 (trust) is not the most specific representation of the topic. The topic revolves around the exchange of gifts and tokens, which is more accurately represented by S14 (gift_romance_token).
+- **Action:** RENAME
+
+---
+
 ## Topic 351 — Warm Greeting Upon Return
 
 - **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** S2 (norm: S2)
+- **Code:** S0 (norm: S0)
 
 > thank god you’ve come back—and will you look at me, just in time.”
 
@@ -1406,7 +1774,7 @@
 ## Topic 356 — Admitting Exhaustion After A Long Day
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > i am kind of tired, but you’ve done enough.
 
@@ -1437,7 +1805,7 @@
 ## Topic 358 — Reassuring Squeeze of The Hand
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S1 (norm: S1)
+- **Code:** S0 (norm: S0)
 
 > she took bronte's hand and gave it a reassuring squeeze. "
 
@@ -1525,99 +1893,124 @@
 
 ---
 
-## Topic 193 — Nurse Arranged After Hospital Release
+## Topic 174 — Ranch Life and Falling in Love
 
-- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
 - **Code:** S0 (norm: S0)
 
-> and you’ll both stay here, at caleb’s?” “
+> i’ve seen your willy on numerous occasions on the ranch.
 
-> i'll arrange for a nurse to come to the house when they release caleb.
+> the ranch is doing good, and i’ve fallen in love.
 
-> twenty-three caleb y ou ignore me, and i’ll ignore you .
+> i’d take you there, but i imagine you’ve already seen enough cattle to last you a lifetime.”
 
-> *(CELL_B, tertile=begin)* Kayla points to me, like she can't figure out who Gavin's talking about.
+> *(CELL_B, tertile=end)* I’ll fetch some water, and then could you sit with him while I fetch the farmer’s wife?” “
 
-> *(CELL_A, tertile=begin)* In any case, I’m going to need to return myself to help out because Ramsey will be busy with Chloe and the baby,” he continued. “
+> *(CELL_B, tertile=end)* That’s as much as I can do—we’re busy at the farm, and the lad isn’t in danger.”
 
-> *(CELL_A, tertile=middle)* After numerous brushes with the law and butting heads with the parents of a young lady who didn’t want him to be a part of their daughter’s life, Dillon had convinced Bane to get his life together.
+> *(CELL_B, tertile=middle)* They got milk, cheese, eggs and other produce from the farm, and they would soon be easily able to grow enough herbs and vegetables for their own use.
 
-> *(CELL_A, tertile=end)* This was September, and Chloe was due to deliver in November, which meant Callum would be leaving Denver a few months after that.
+> *(CELL_B, tertile=middle)* When the resident died, the farmer, needing the money, had been glad to sell it off with some land to a couple of wealthy Gidinians in need of solitude and a place away from the bustle of the town.
 
-> *(CELL_A, tertile=middle)* Dillon and Ramsey did an awesome job and I know for sure we were a handful at times, some of us more than others.”
+> *(CELL_B, tertile=middle)* Jaime suspected he holed up in a barn or in a storeroom, possibly up at the farm.
 
-> *(CELL_A, tertile=middle)* From what Callum had heard, Bane had been only eight when his parents had been killed.
+> *(CELL_B, tertile=end)* Seve was busy preserving, drying and storing the produce from the garden and bartered meat, cheese and grain from the farm.
+
+> *(CELL_D, tertile=end)* She dreams of one day living out in Montana, enough land to have a few horses, and find a couple of cowboys of her own.
+
+> *(CELL_A, tertile=end)* This ranch is worth a fortune and we were lucky to be able to sell it for what we did.
 
 ### Pass A/B/C
 
-- **A lexical:** `S0`
-  - All four keyword lists are dominated by character names (caleb, gage, jeremiah, conrad, mica), dialogue/interaction verbs (said, texting, ignore, went, fooled, admitted, speaking, prodded, acknowledge), and social-reaction nouns (embarrassment, stares, explanation, evidence). None of these cues point to a security-provision function — no emotional reassurance, no material provision, no status display. The cluster appears to describe a conversational or interpersonal scene without performing any identifiable security work.
-- **B contextual:** `S0`
-  - The large majority of sentences are conversational fragments, character name references, or narrative scene-setting with no security function (S0). Two sentences reference care during illness/pregnancy (S6: Chloe and the baby). Three sentences carry emotional reassurance or emotional support themes (S1: Dillon convincing Bane, Katelyn's presence for support, Brody's emotional necessity). One sentence references practical everyday care (S5: Dillon and Ramsey doing an awesome job raising them). S0 dominates at ~70%.
-- **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant agree on S0 (off_target). The taxonomy flags Emotional Safety / Family-Kinship, which could suggest S1 or S2, but without topic content showing a clear security function being performed, the convergent S0 verdict from Pass A/B holds. Taxonomy metadata alone is insufficient to override a double-S0 consensus; no security-provision signal is present to warrant reinterpretation toward S1 or S2.
+- **A lexical:** `S9`
+  - Main keywords (ranch, farm, cattle, cows, farmer, rancher, land) point strongly to land-based homestead security — a physical place of dwelling and livelihood, best coded S9 (housing/land). MMR reinforces this with 'owned', 'belongs', 'guarded', 'provide' in a land-ownership frame. KeyBERT's 'feeding', 'porch', 'owned', 'surrounded' suggest everyday domestic/farm life (S5 practical care), but the dominant frame is land/property security. POS keywords are largely abstract/generic (areas, regular, suggestion, foreign) with no clear security signal, coded S0. Consensus lands on S9 as the most specific and most supported code across the strongest representors.
+- **B contextual:** `S9`
+  - The topic clusters around rural land, farms, and ranches as places of residence and livelihood. The dominant security function is housing/land (S9): sentences describe ranches being sold, lived on, dreamed about, or used as dwelling/refuge. A secondary cluster involves everyday practical provisioning of food from farm produce (S5). A few sentences are purely descriptive with no security function (S0). One sentence references monetary value of a ranch sale (S8), and one involves crisis care (S6). S9 accounts for roughly 45% of sentences, well above the 70% threshold is not met alone, but it is clearly dominant over all other codes combined when S5 is considered separately. S9 is the single largest code at ~45%, making it the dominant code.
+- **C adjudicate:** `S9`
+  - Both lexical consensus and contextual dominant converge on S9 (housing). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding with a secondary tag of Public, Travel & Leisure Spaces is consistent with housing functioning as a relational anchor during courtship — shared or proximate living arrangements providing the spatial foundation for bonding. No free-form labels were carried forward; S9 is the most specific applicable code. No split or reinterpretation is warranted.
 - **Action:** KEEP
 
 ---
 
-## Topic 27 — Racing The Approaching Storm
+## Topic 17 — Discussing Rooms and Privacy
 
-- **Taxonomy:** 7.3 — Risk, Danger & External Crises
+- **Taxonomy:** 8.1 — Domestic Spaces & Routines
 - **Code:** S0 (norm: S0)
 
-> it’ll be dark before we know it.’’
+> i’ll just go back to the dorms.”
 
-> i don’t know if i’ll be able to get back here before the storm hits.
+> i think we’ll go back upstairs and discuss that – don’t you?”
 
-> it’s going to rain and we’ll be caught out in the storm.
+> but upstairs—” “we’ll add two more bedrooms and another bath.”
 
-> *(CELL_D, tertile=end)* Their lips met, and an explosion of passion took them along on a tide, the darkness that surrounded them like a blanket against the rest of the world.
+> *(BOOK_001, CELL_B, tertile=begin)* We have the back stairway and the rooms on this side, so that’ll give us our privacy.
 
-> *(CELL_D, tertile=begin)* Just as they reached the spot a man strode angrily out of a neighbouring field, and even in the poor light his expression could be seen as thunderous.
+> *(BOOK_002, CELL_C, tertile=begin)* What was the point of a huge house with nobody to live in it?
 
-> *(CELL_D, tertile=begin)* They were still driving, the high hedges making it impossible for them to see anything but the road in front of them.
+### Pass A/B/C
+
+- **A lexical:** `S9`
+  - All four keyword lists converge on residential/dwelling vocabulary: Main contains house, hotel, room, apartment, bedroom, rent, home, bedrooms, living — direct housing terms; KeyBERT adds porch, ceiling, address, occupied — physical dwelling features and occupancy; POS adds privacy, separate, areas, smaller — spatial/dwelling attributes; MMR adds belongs, visited, built, guarantee, address, areas — ownership, construction, and residential assurance. No emotional reassurance, status display, or other security function is signalled; the entire cluster describes the provision and security of physical shelter/housing.
+- **B contextual:** `S9`
+  - All sentences in this topic revolve around rooms, bedrooms, houses, and questions of who occupies or owns a dwelling. The consistent security function being performed is housing — establishing, claiming, or negotiating residential space as a form of material security. No emotional reassurance, status display, or other security function is meaningfully present; the topic is uniformly about physical dwelling/housing security (S9).
+- **C adjudicate:** `S9`
+  - Lexical consensus and contextual dominant both converge on S9 (housing). Taxonomy 8.1 Domestic Spaces & Routines is fully consistent with housing security as the operative function — shared or provided living arrangements, domestic settings, and home-as-shelter all map cleanly to S9. No ambiguity requiring MIXED or reinterpretation. No free-form labels to remap.
+- **Action:** KEEP
+
+---
+
+## Topic 260 — Crowd Goes Wild For Him
+
+- **Taxonomy:** 8.2 — Public, Travel & Leisure Spaces
+- **Code:** S0 (norm: S0)
+
+> he played crazier than i’ve ever seen him, and from the way the crowd was going insane with cheering around me, cam played even crazier than anyone had ever seen him play, ever!
+
+> but it's a madness i've had all my life.
+
+> you see, i’ve gone and done something a little crazy.
+
+> *(CELL_B, tertile=end)* He was going to drive himself insane if he didn't get out of the apartment.
+
+> *(CELL_D, tertile=middle)* Terri swallowed thickly wondering if she really was as crazy as Joel accused her of being.
+
+> *(CELL_C, tertile=middle)* He has just enough training to make him totally freak out every single day.” “
 
 ### Pass A/B/C
 
 - **A lexical:** `S0`
-  - All four keyword lists describe atmospheric and environmental phenomena (weather, light, sky, storm, moon, temperature, ceiling, sidewalk, curtain, reflection). No keyword signals a security-provision function — emotional, material, or status-related. The vocabulary is purely descriptive of setting and ambiance, performing no security work for any character.
+  - Main keywords (crazy, insane, madness, craziness, going, think) describe mental/emotional states or colloquial expressions of disbelief, not a security-provision function. POS and MMR terms (indication, equal, result, chuckle, fault, crowd, officially, proved, tasted, appreciate) are generic cognitive/social/evaluative words with no identifiable security function. No keyword cluster points to emotional reassurance, material provision, status display, or any other S1–S16 category.
 - **B contextual:** `S0`
-  - Topic 27 is dominated by weather, light, and atmospheric/environmental description (rain, storms, sunlight, dawn, darkness, lightning). None of these sentences perform a security function — emotional, material, or status/appearance. They are setting and mood descriptions with no security work. All sentences are coded S0 (off_target).
+  - All sentences in this topic cluster around colloquial uses of 'crazy,' 'nuts,' 'freak,' and related terms describing mental states, erratic behavior, or informal exclamations. None of the sentences perform a security function (emotional reassurance, material provision, status display, etc.). They are off-target for the security-function coding scheme.
 - **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy placement under Risk/Danger & External Crises with a secondary of Movement/Transit & Spatial Transition describes plot-level situational content rather than any security-provision function. No emotional reassurance, material provision, or status/appearance work is being performed by this topic cluster. S0 is confirmed; the topic should be excluded from the security hypothesis analysis.
+  - Both lexical consensus and contextual dominant converge on S0 (off_target). The taxonomy places this topic in Public/Travel/Leisure Spaces with a secondary tag of Exercise/Movement/Physical Activity. Neither category performs a security function (emotional, material, or status/appearance) as defined by the codebook. No security construct is present, so the topic should be excluded from the hypothesis-testing corpus.
 - **Action:** EXCLUDE_FROM_HYPOTHESIS
 
 ---
 
-## Topic 224 — Encouraging Words From An Angel
+## Topic 56 — Promising Never to Hurt You
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
-- **Code:** S0 (norm: S0)
+- **Code:** S1 (norm: S1)
 
-> you’ve got this, angel, take it to the house.”
+> you'll get hurt," he managed to say. "
 
-> i’ll come back, angel.
+> you know i’ll never hurt you .”
 
-> because i’m thinking i’ll have a hard time finding another angel to handle it.”
+> i’ll make sure you aren’t hurt.” “
 
-> *(CELL_A, tertile=middle)* I most certainly do think the great evil knows about Gabriel."
+> *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
 
-> *(CELL_A, tertile=begin)* By the gods,” Val hissed as he and Gabriel came upon the creature. “
-
-> *(CELL_B, tertile=begin)* Once, as I stood on the cliffs trying to understand the power I held, trying to comprehend why I would ever want to send my voice a thousand miles away on the wind, he’d told me that I looked like an angel blessed by the Almighty.
-
-> *(CELL_B, tertile=middle)* I took a pleasant interlude of imagining myself nibbling on Evangeline’s ass.
-
-> *(CELL_B, tertile=end)* With Evangeline beneath me I now knew what I’d felt wasn’t even close.
+> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
 
 ### Pass A/B/C
 
-- **A lexical:** `S0`
-  - Main keywords are supernatural/mythological labels (angel, archangel, fallen, wings, guardian) with no security function attached. KeyBERT, POS, and MMR lists contain abstract behavioral/structural terms (behavior, ability, practice, structure, task, tv, dislike, heal) that do not map to any S1–S16 security provision. No emotional reassurance, material provision, or status display is signaled by any of the four keyword sets.
-- **B contextual:** `S0`
-  - The topic clusters around the word 'angel' used as a metaphor or name, with most sentences being narrative/plot references to supernatural entities or character names (S0 — no security function). A handful of sentences use 'angel' to describe a character's physical appearance/beauty (S13 — appearance/grooming). One sentence expresses faith/trust in named characters (S3). No single non-S0 code reaches 70%, but S0 dominates at 75%.
-- **C adjudicate:** `S0`
-  - Both lexical consensus and contextual dominant agree on S0. The taxonomy flags Emotional Safety/Reassurance (which would map to S1) and Promise/Vow speech acts (which could touch S4), but the adjudication instruction is to resolve to the consensus code when passes align. The topic does not perform a clear security function in the romance-novel security-provision sense — promise/vow speech acts and general emotional safety framing are not themselves security-provision behaviors unless anchored to a specific reassurance or commitment act. S0 is the correct resolution; no reinterpretation or split is warranted.
+- **A lexical:** `S1`
+  - All four keyword lists centre on emotional pain and its mitigation: 'hurt/hurting/hurts/painful/distress' name the threat; 'assured, protect, never [hurt you], threatened' signal reassurance-seeking or reassurance-giving; 'cried, tightly' indicate emotional comfort behaviours. No material resources, housing, money, or status cues appear. The dominant security function is soothing/reassuring a partner against emotional harm — S1.
+- **B contextual:** `S1`
+  - The overwhelming majority of sentences in this topic concern emotional harm — fear of being hurt, reassurances of not hurting someone, and distress over emotional pain — which maps to S1 (emotional_reassurance). A smaller subset references physical harm or hitting (S7, physical_protection), and one sentence touches on injury/crisis care (S6). S1 accounts for ~70% of sentences, making it the dominant code.
+- **C adjudicate:** `S1`
+  - Lexical consensus and contextual dominant both resolve to S1 (emotional_reassurance). Taxonomy 4.6 Emotional Safety, Reassurance & Caretaking confirms this primary classification. The secondary taxonomy 9.2 Promise, Vow & Future-Tense Speech Acts is a delivery mechanism for emotional reassurance rather than a distinct security function, so no split is warranted. S1 is the most specific applicable code and no material or status/appearance function is present.
 - **Action:** KEEP
 
 ---
@@ -1651,33 +2044,6 @@
 
 ---
 
-## Topic 305 — Confessing A Lifelong Regret
-
-- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** S1 (norm: S1)
-
-> i know that now, and i’ll go to my grave regretting what i did to you.” “
-
-> come on in, you’ll no doubt regret it.
-
-> you’ll regret that.’ ‘
-
-> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
-
-> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
-
-### Pass A/B/C
-
-- **A lexical:** `S1`
-  - All four keyword lists centre on internal emotional states (regret, fears, upset, embarrassing) and communicative acts aimed at managing those states (assure, admit, handled, fumbled). The cluster signals a character seeking or providing reassurance about a past decision or remark — classic emotional-reassurance security function. No material, housing, money, or status/appearance cues are present.
-- **B contextual:** `S1`
-  - The overwhelming majority of sentences express emotional states of regret, remorse, or reassurance about past actions and feelings — all functioning as emotional reassurance or processing of emotional distress (S1). A smaller subset references regret about commitment decisions such as marriage or a life choice, pointing to commitment security (S4). A few sentences are too vague or off-topic to carry a security function (S0). S1 exceeds 70% and is the dominant code.
-- **C adjudicate:** `S1`
-  - Lexical consensus and contextual dominant both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA with a secondary of Negative Emotions & Distress is fully consistent with S1: these narrative moments centre on soothing distress, reaffirming emotional bonds, and restoring felt security after conflict or rupture. No material or status/appearance function is implicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
-- **Action:** KEEP
-
----
-
 ## Topic 242 — Trading Forgiveness For Old Wrongs
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
@@ -1699,33 +2065,6 @@
   - The overwhelming majority of sentences in this topic revolve around the act of forgiving or seeking forgiveness in interpersonal relationships — a core emotional reassurance function (S1). Characters seek relief from guilt, offer emotional absolution, and restore relational harmony through forgiveness. One sentence (BOOK_003_4) touches on social/society acceptance, coded S2 (belonging), but it is a clear outlier. S1 accounts for ~95% of the topic, well above the 70% threshold.
 - **C adjudicate:** `S1`
   - Lexical and contextual passes both converge on S1 (emotional_reassurance). The taxonomy placement under Reconciliation, Commitments & HEA is consistent with S1: reconciliation scenes and HEA resolutions are canonically sites of emotional reassurance — partners seeking and receiving confirmation of love, forgiveness, and emotional safety. The secondary taxonomy (Secrets, Misunderstandings & Hidden Information) reinforces this, as resolution of misunderstandings typically delivers emotional reassurance rather than material or status security. No material provision, housing, protection, or status-display function is indicated. S1 is the most specific applicable code; no split or reinterpretation is warranted.
-- **Action:** KEEP
-
----
-
-## Topic 112 — Desperate Need For A Job
-
-- **Taxonomy:** 6.4 — Economic Precarity, Security & Dependency
-- **Code:** S15 (norm: S15)
-
-> i’ve never worked in such a beautiful place and i want this job so badly.”
-
-> i've lost my job, and i'm not going to find another one in elliot or prestonsburg or probably even in auburn.
-
-> you’ve got a hell of a career ahead of you.”
-
-> *(CELL_D, tertile=begin)* I cannot speak for others, but I know that my Olaf is well paid for his work, and has a dry, comfortable place to live and sleep, and that our table groans with food.
-
-> *(CELL_B, tertile=middle)* He offered me a job in the office, you know, filing, typing, secretarial work.” “
-
-### Pass A/B/C
-
-- **A lexical:** `S15`
-  - Main keywords (job, business, company, jobs, work, boss, hire, living) and KeyBERT (opportunity, dealing) cluster around employment and workplace dynamics, pointing to S15 workplace_status. POS adjectives (pathetic, impressive, decent, larger, actual) and nouns (addition, testing, anxiety) are evaluative but not security-specific, coding S0. MMR (reassuring, anxiety, pretending, distracted) adds emotional texture but in a workplace context (task, ability, ms), not pure emotional reassurance. The dominant signal across Main and KeyBERT is occupational/workplace security, so S15 prevails despite POS/MMR ambiguity.
-- **B contextual:** `S15`
-  - The overwhelming majority of sentences concern employment, job-holding, job quality, and workplace participation — all functioning as workplace/occupational status security (S15). A small number reference earning a living or being well-paid (S8), one references practical handyman work (S11), and a few are off-target filler phrases (S0). S15 reaches exactly 70%, qualifying as dominant.
-- **C adjudicate:** `S15`
-  - Both lexical consensus and contextual dominant converge on S15 (workplace_status). The taxonomy placement under 6.4 Economic Precarity, Security & Dependency with secondary 6.2 Work & Professional Identity is consistent with S15, which captures security derived from occupational standing and professional identity rather than direct monetary provision (S8) or economic dependency (S10). No free-form labels require remapping. Single unambiguous code applies; no split or mixed coding warranted.
 - **Action:** KEEP
 
 ---
@@ -1822,68 +2161,29 @@
 
 ---
 
-## Topic 17 — Discussing Rooms and Privacy
+## Topic 10 — Doctor Gives Medical Instructions
 
-- **Taxonomy:** 8.1 — Domestic Spaces & Routines
-- **Code:** S9 (norm: S9)
+- **Taxonomy:** 6.5 — Institutional Settings & Procedures
+- **Code:** S6 (norm: S6)
 
-> i’ll just go back to the dorms.”
+> i’ll go say good night to the girls and tell the nurses that you’re in here.”
 
-> i think we’ll go back upstairs and discuss that – don’t you?”
+> tina, why don’t you come back and we’ll get your ems going.
 
-> but upstairs—” “we’ll add two more bedrooms and another bath.”
+> but i’ll go with appendicitis anyway.
 
-> *(BOOK_001, CELL_B, tertile=begin)* We have the back stairway and the rooms on this side, so that’ll give us our privacy.
+> *(CELL_C, tertile=end)* There had been a parade of doctors in the room, but he was past the point of caring who came and went. “
 
-> *(BOOK_002, CELL_C, tertile=begin)* What was the point of a huge house with nobody to live in it?
-
-### Pass A/B/C
-
-- **A lexical:** `S9`
-  - All four keyword lists converge on residential/dwelling vocabulary: Main contains house, hotel, room, apartment, bedroom, rent, home, bedrooms, living — direct housing terms; KeyBERT adds porch, ceiling, address, occupied — physical dwelling features and occupancy; POS adds privacy, separate, areas, smaller — spatial/dwelling attributes; MMR adds belongs, visited, built, guarantee, address, areas — ownership, construction, and residential assurance. No emotional reassurance, status display, or other security function is signalled; the entire cluster describes the provision and security of physical shelter/housing.
-- **B contextual:** `S9`
-  - All sentences in this topic revolve around rooms, bedrooms, houses, and questions of who occupies or owns a dwelling. The consistent security function being performed is housing — establishing, claiming, or negotiating residential space as a form of material security. No emotional reassurance, status display, or other security function is meaningfully present; the topic is uniformly about physical dwelling/housing security (S9).
-- **C adjudicate:** `S9`
-  - Lexical consensus and contextual dominant both converge on S9 (housing). Taxonomy 8.1 Domestic Spaces & Routines is fully consistent with housing security as the operative function — shared or provided living arrangements, domestic settings, and home-as-shelter all map cleanly to S9. No ambiguity requiring MIXED or reinterpretation. No free-form labels to remap.
-- **Action:** KEEP
-
----
-
-## Topic 174 — Ranch Life and Falling in Love
-
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
-- **Code:** S9 (norm: S9)
-
-> i’ve seen your willy on numerous occasions on the ranch.
-
-> the ranch is doing good, and i’ve fallen in love.
-
-> i’d take you there, but i imagine you’ve already seen enough cattle to last you a lifetime.”
-
-> *(CELL_B, tertile=end)* I’ll fetch some water, and then could you sit with him while I fetch the farmer’s wife?” “
-
-> *(CELL_B, tertile=end)* That’s as much as I can do—we’re busy at the farm, and the lad isn’t in danger.”
-
-> *(CELL_B, tertile=middle)* They got milk, cheese, eggs and other produce from the farm, and they would soon be easily able to grow enough herbs and vegetables for their own use.
-
-> *(CELL_B, tertile=middle)* When the resident died, the farmer, needing the money, had been glad to sell it off with some land to a couple of wealthy Gidinians in need of solitude and a place away from the bustle of the town.
-
-> *(CELL_B, tertile=middle)* Jaime suspected he holed up in a barn or in a storeroom, possibly up at the farm.
-
-> *(CELL_B, tertile=end)* Seve was busy preserving, drying and storing the produce from the garden and bartered meat, cheese and grain from the farm.
-
-> *(CELL_D, tertile=end)* She dreams of one day living out in Montana, enough land to have a few horses, and find a couple of cowboys of her own.
-
-> *(CELL_A, tertile=end)* This ranch is worth a fortune and we were lucky to be able to sell it for what we did.
+> *(CELL_C, tertile=middle)* Someone must have answered that prayer—who it could have been, I do not know—because they finally stopped healing.”
 
 ### Pass A/B/C
 
-- **A lexical:** `S9`
-  - Main keywords (ranch, farm, cattle, cows, farmer, rancher, land) point strongly to land-based homestead security — a physical place of dwelling and livelihood, best coded S9 (housing/land). MMR reinforces this with 'owned', 'belongs', 'guarded', 'provide' in a land-ownership frame. KeyBERT's 'feeding', 'porch', 'owned', 'surrounded' suggest everyday domestic/farm life (S5 practical care), but the dominant frame is land/property security. POS keywords are largely abstract/generic (areas, regular, suggestion, foreign) with no clear security signal, coded S0. Consensus lands on S9 as the most specific and most supported code across the strongest representors.
-- **B contextual:** `S9`
-  - The topic clusters around rural land, farms, and ranches as places of residence and livelihood. The dominant security function is housing/land (S9): sentences describe ranches being sold, lived on, dreamed about, or used as dwelling/refuge. A secondary cluster involves everyday practical provisioning of food from farm produce (S5). A few sentences are purely descriptive with no security function (S0). One sentence references monetary value of a ranch sale (S8), and one involves crisis care (S6). S9 accounts for roughly 45% of sentences, well above the 70% threshold is not met alone, but it is clearly dominant over all other codes combined when S5 is considered separately. S9 is the single largest code at ~45%, making it the dominant code.
-- **C adjudicate:** `S9`
-  - Both lexical consensus and contextual dominant converge on S9 (housing). The taxonomy placement under Ongoing Courtship & Everyday Relational Bonding with a secondary tag of Public, Travel & Leisure Spaces is consistent with housing functioning as a relational anchor during courtship — shared or proximate living arrangements providing the spatial foundation for bonding. No free-form labels were carried forward; S9 is the most specific applicable code. No split or reinterpretation is warranted.
+- **A lexical:** `S6`
+  - The keywords 'doctor', 'hospital', 'nurse', 'heal', 'treatment', 'appointment', 'instructions' indicate a context of caring for illness or crisis.
+- **B contextual:** `S6`
+  - The dominant code is S6 (care_illness_crisis) as many sentences discuss illness, hospital visits, and medical care.
+- **C adjudicate:** `S6`
+  - The topic's lexical consensus and contextual dominant both indicate S6, care_illness_crisis, which is the most specific security function in this context.
 - **Action:** KEEP
 
 ---

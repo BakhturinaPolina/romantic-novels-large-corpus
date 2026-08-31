@@ -1,0 +1,45 @@
+# H6 Radway-assisted candidate discovery (one-day recovery).
+# Candidates only — never auto-convert Radway tags into ARC codes.
+
+rising_priority_high: [R9, R10, R11, R13]
+rising_priority_medium: [R8, R12]
+falling_priority_high: [R2, R3, R5, R6, R7]
+
+# Outcome-blind score weights
+score:
+  radway_main: 3
+  radway_secondary: 2
+  radway_other_plausible: 1
+  stage11_refined_match: 2
+  taxonomy_relevant: 1
+  radway_confidence_medium_high: 1
+
+stage11_rising_atoms:
+  - RAX_emotional_reassurance
+  - RAX_emotional_intimacy
+  - RAX_tenderness_core
+  - RAX_protective_commitment
+  - RAX_public_union
+  - RAX_mutual_commitment
+  - RAX_final_relational_payoff
+  - RAX_repair
+
+stage11_falling_atoms:
+  - RAX_relational_darkness
+  - RAX_possessive_claiming
+  - RAX_coercive_control
+  - RAX_individual_distress
+
+taxonomy_falling_leaves: ["4.3", "4.4", "3.2"]
+
+selection:
+  n_new: 25
+  min_rising_new: 12
+  prefer_rising_radway_tags: [R9, R10, R11, R13]
+
+paths:
+  taxonomy_with_radway: results/stage09_category_mapping/stage2_radway_functions/placeholder_v4_call49_rerun2/taxonomy_with_radway.json
+  topic_lookup: results/stage10_correlation_analysis/v4_l12_granular_final_call49/taxonomy_radway_eda/topic_lookup.parquet
+  construct_coverage: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs/construct_coverage.json
+  h6_audit_summary: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h6/audit_summary.json
+  day_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/h6_radway_day

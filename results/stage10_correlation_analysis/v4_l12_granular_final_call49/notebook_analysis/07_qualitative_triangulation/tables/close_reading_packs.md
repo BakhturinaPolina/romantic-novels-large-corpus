@@ -375,295 +375,311 @@
 
 ## high index high tier
 
-**Desire Unchained** — Larissa Ione (rating 4.25, 28,255 ratings, book_id 4546955)
+**Tomaree** — Debbie Robson (rating 4.09, 22 ratings, book_id 3967594)
 
-- *Topic 51 — Locked Up By A Vampire* (1.8% of sentences)
-    > I mean, what’s to stop a vamp from just leaving them for dead instead of giving them the exchange of the vamp’s own blood?” “
-    > Yeah, well, that was before I caught you in bed with two vampires.
-
-- *Topic 87 — Threatening Death As A Warning* (1.1% of sentences)
-    > I know what you heard, but I swear to you, I’m not going to kill you.” “
-
-- *Topic 113 — Knife Handed Over For Combat* (0.6% of sentences)
-    > The blade struck a glancing blow at his shoulder, slicing open his scrub top and leaving a thin red line. “
-    > The weapon skidded across the wet pavement as Wraith put the guy’s back into a wall and jammed his forearm across the human’s thick neck. “
-
-- *Topic 78 — Swearing War Before He Takes Her* (0.4% of sentences)
-    > No matter what they did to him, he wouldn’t fight back this time.
-    > Wanted to submit to a powerful male, but only after a stimulating, hardcore battle.
-
-**A Touch of Midnight** — Lara Adrian (rating 4.09, 7,816 ratings, book_id 25225704)
-
-- *Topic 113 — Knife Handed Over For Combat* (3.0% of sentences)
-    > He picked up Faulkner’s sword and drove it into Smithson’s chest.
-    > With a flex of his shoulder, he thrust the sword deep, severing throat and spinal column in one thorough strike.
-
-- *Topic 87 — Threatening Death As A Warning* (1.5% of sentences)
-    > The man I saw should be a couple of centuries dead by now.” “
-    > I thought killing Rogues would make the guilt about my brothers lessen, but it hasn’t.” “
-
-- *Topic 51 — Locked Up By A Vampire* (1.0% of sentences)
-    > Don’t tell me that’s all it takes to scare a three-hundred and seventy-two-year-old vampire.” “
-    > If Bloodlust hadn’t robbed the vampire of his wits, he might have eluded death tonight.
-
-- *Topic 114 — Guns Aimed Across The Room* (0.4% of sentences)
-    > Gideon relaxed his hold on the pistol, then stooped to set it down. “
-    > He roared, one filthy hand shooting out to the side of him, grabbing for some kind of weapon of his own.
-
-**Nearly Mended** — Devon Ashley (rating 4.11, 251 ratings, book_id 25431098)
-
-- *Topic 87 — Threatening Death As A Warning* (0.8% of sentences)
-    > I didn’t kill him last time and I won’t kill him this time, provided you agree to do what I say.”
-    > Shaking my head, I told him, “I won’t let you die for me.” “
-
-- *Topic 91 — Arguing Over Guns and Weapons* (0.7% of sentences)
-    > I’ll shoot every bullet I have before I let anyone take me again.”
-    > You had a gun,” I rebutted surprisingly, my eyes even looking up to challenge.
-
-- *Topic 294 — Accepting Whatever Punishment Is Deserved* (0.7% of sentences)
-    > But this time I didn’t fear the retribution more than the sex, so I was okay with whatever punishment my disobedience just earned.
-    > First off, if you disobey me in any way, I’m not going to punish you.
-
-- *Topic 78 — Swearing War Before He Takes Her* (0.6% of sentences)
-    > I figure if they can fight like that, there’s no reason I can’t.” “
-    > I’d like your permission to fight you in a way you’re probably not going to like.”
-
-**Endless Affinity** — Brooklyn Taylor (rating 4.28, 25 ratings, book_id 42363354)
-
-- *Topic 91 — Arguing Over Guns and Weapons* (1.9% of sentences)
-    > If fired upon, don’t hesitate to return fire with lethal force, even if you’re shot by the toy pistols these jokers are carrying.
-    > He said I just shot your little sister in the back.” * * * * *
-
-- *Topic 78 — Swearing War Before He Takes Her* (1.5% of sentences)
-    > Either join forces and together we’ll defeat Endless Night, or we’ll sit back until the fighting’s done and then take it for our own.”
-    > Every day I was aboard, I held your hand and told you to keep fighting.” “
-
-- *Topic 114 — Guns Aimed Across The Room* (1.5% of sentences)
-    > He pointed to the pistol at the Blevin’s thigh and what looked like grenades hanging from webbing over her chest. “
-    > He was about to rush out, to comfort her, then he looked down at his volley gun.
-
-- *Topic 113 — Knife Handed Over For Combat* (1.2% of sentences)
-    > Behind, she saw Turnaround wielding her sword arm like an axe, chopping the Goka away from the back of her legs.
-    > When he pulled it back, the blade was slick with blood and fur.
-
-**Scarred, Part 3** — Kylie Walker (rating 4.18, 321 ratings, book_id 45333806)
-
-- *Topic 148 — Banished From The Ranch* (4.4% of sentences)
-    > I still struggle with the fact that it took me so long to save myself from Jesse.” “
-    > But this was Jesse...her savior... “Jesse please let me explain,” she said.
-
-- *Topic 87 — Threatening Death As A Warning* (0.4% of sentences)
-    > I want to kill someone and I can’t decide who I want to get my hands on first.” “
-    > The second that she begged you to get in on my business....she killed you.”
-
-- *Topic 113 — Knife Handed Over For Combat* (0.4% of sentences)
-    > His eyes had gone wide and as he doubled over, he dropped the knife.
-    > Once in there, he grabbed a carving knife out of the block on the counter. “
+- *Topic 269 — Waiting For Lab Results* (3.2% of sentences)
+    > You can therefore discard the thought that a gene of schizophrenia is about to be discovered.
+    > A couple of decades ago, when new technologies allowed us to research the human genome, some scientists thought that the discovery of the ‘schizophrenia gene’ was just around the corner.
 
 - *Topic 249 — Threatened With Arrest and Jail* (0.4% of sentences)
-    > So, you told me that he was in prison for trying to kill you.
-    > One good thing he could say about prison was that it taught you a lot about patience.
+    > The Act is set out in such a way that detained people are provided with a full description of their rights once the section has been completed and mental health services are obliged to assist as far as possible with the process of appealing.
+    > Indeed, wider experience shows that the crimes for which people with schizophrenia are convicted are often minor, and prison becomes an alternative to decent care in hospital or the community.
+
+- *Topic 329 — Laying Down The Rules* (0.4% of sentences)
+    > If this extreme step is taken, all professionals know that any restrictions on an individual should be for the shortest time possible and that even when restrictions are applied there is an underlying principle that care and treatment must be provided in the least restrictive fashion.
+    > This regulates the activities of all nurses and midwives in the UK and issues a code of conduct that ensures nurses are able to provide their skills and knowledge to the highest possible level.
+
+- *Topic 87 — Threatening Death As A Warning* (0.2% of sentences)
+    > He told them they would be dead by the time they reached the next station.
+    > One of our principal aims is to inspire hope for all those affected by this condition and although we concluded that we could not totally avoid the topic of suicide we did not wish to add to the distress of some readers.
+
+**Captain’s Boy** — K.D. Sarge (rating 4.30, 20 ratings, book_id 24755038)
+
+- *Topic 87 — Threatening Death As A Warning* (0.8% of sentences)
+    > He knew you’d come for us, and he was afraid you’d be killed.” “
+    > I would die for you, Joss, I really would, but couldn’t you at least let my death serve a purpose?”
+
+- *Topic 114 — Guns Aimed Across The Room* (0.8% of sentences)
+    > He took the gun back, showed her how to hold it two-handed. “
+    > Finally the boy realized he was asking to get shot, and let the gun slip around his trigger finger to dangle.
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.5% of sentences)
+    > Even a good fight will only drag him away for a few minutes at a time.”
+    > Since leaving BFR, at least, and a while before— “ You didn’t get in a fight,” she said. “
+
+- *Topic 148 — Banished From The Ranch* (0.5% of sentences)
+    > Tyler talked as he walked down it, telling Zeke the disposition of loyal men that Joss didn’t know, but the situation didn’t sound good.
+    > I think Abbie only let me reach Tyler before so she could get to me first.”
+
+**Cole's Redemption: Alpha Pack Book 5** — J.D. Tyler (rating 4.13, 1,643 ratings, book_id 24953499)
+
+- *Topic 51 — Locked Up By A Vampire* (1.2% of sentences)
+    > Mmm, I almost wish I were a vampire, so I could bite right here.” “
+    > Well, I’m guessing he meant vampires, members of his coven who shouldn’t go out because they’ll get burned.
+
+- *Topic 87 — Threatening Death As A Warning* (0.9% of sentences)
+    > You scared me off, made me run so he wouldn’t slaughter me, too.” “
+    > I’m not exactly sure you could kill yourself now, at least not by overtaxing your body.”
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.5% of sentences)
+    > If you intend one of us harm, you’ll have to fight everyone.
+    > You have no emotions, so you can’t win the fight that matters the most.
+
+- *Topic 113 — Knife Handed Over For Combat* (0.5% of sentences)
+    > Grinning like a jackal, he yanked out the blade and shoved her to the floor.
+    > Zan grabbed the vampire attacking Nix, buried his fingers in the bastard’s greasy hair, and swiped the bowie knife across his throat.
+
+**Dagger's Hope** — S.E. Smith (rating 4.14, 2,004 ratings, book_id 42018698)
+
+- *Topic 113 — Knife Handed Over For Combat* (4.8% of sentences)
+    > Dagger demanded, clutching his fist around the knife in his hand. “
+    > She watched as Sword turned the body of the guard around and sliced the blade in his hand across the guard’s neck.
+
+- *Topic 114 — Guns Aimed Across The Room* (1.2% of sentences)
+    > With a cold, calmness that amazed her, Dagger raised the pistol in his hand. “
+    > Still holding her arm, he turned and strode over to where he had kicked the pistol.
+
+- *Topic 78 — Swearing War Before He Takes Her* (1.0% of sentences)
+    > If I put you in the center of the cage, he will fight anything I put in there.” “
+    > The second fight might be over, but not without its casualties.
+
+- *Topic 87 — Threatening Death As A Warning* (0.7% of sentences)
+    > They still haven’t figured out a way to kill you, have they?”
+    > I… will… kill you,” Dagger hissed out as his head fell forward.
+
+**Seraphim** — Shelby Reed (rating 4.18, 35 ratings, book_id 45242678)
+
+- *Topic 114 — Guns Aimed Across The Room* (1.3% of sentences)
+    > Alarm shoved aside her dying anger as she watched him retrieve his gun from its holster. “
+    > He placed the gun in her hands, then moved slightly behind her and repositioned her arms. “
+
+- *Topic 113 — Knife Handed Over For Combat* (0.9% of sentences)
+    > Then Joachim felt the weapon gently removed from his grasp. “
+    > The Spear was lost somewhere near Olivier’s crumpled body. “
+
+- *Topic 87 — Threatening Death As A Warning* (0.5% of sentences)
+    > He was just doing his job, trying to protect me, and you killed him right in front of me.
+    > I’m sorry to say he didn’t survive being transported from the compound.”
+
+- *Topic 82 — Touch Her and Your Family Suffers* (0.3% of sentences)
+    > And every moment I’m close to you is torture because I can’t touch you as I want, or kiss you…or desire you, and yet I do.
+    > Yet all I can do is touch you, kiss you, and having done so, ask for more.” “
 
 
 ## high index low tier
 
-**Blood Brothers** — Barbara Sheridan (rating 3.05, 93 ratings, book_id 5772204)
+**Seducing an Angel** — Mary Balogh (rating 3.77, 4,914 ratings, book_id 5529679)
 
-- *Topic 87 — Threatening Death As A Warning* (1.3% of sentences)
-    > Don’t get in my way when I kill him or I’ll take your head too.”
-    > I heard you crying in your sleep to Watts that you didn’t mean to kill him.” “
-
-- *Topic 51 — Locked Up By A Vampire* (1.3% of sentences)
-    > She’s a most unusual vampire, to be sure, and that explains the presence of the other.” “
-    > You and all those other fucking vampires or whatever the hell you are, you sick fuck!”
-
-- *Topic 113 — Knife Handed Over For Combat* (0.7% of sentences)
-    > One of the knives sliced through the air, catching him by surprise.
-    > He kicked the head across the room and stabbed the knife into the body’s heart.
-
-- *Topic 114 — Guns Aimed Across The Room* (0.6% of sentences)
-    > He pulled a revolver from inside the waistband of his pants. “
-    > he asked again, his gaze on the gun Dai tucked into his holster. “
-
-**Praefatio** — Georgia McBride (rating 3.36, 66 ratings, book_id 21883159)
-
-- *Topic 87 — Threatening Death As A Warning* (1.0% of sentences)
-    > If I could have killed him, right then and there, I would have.
-    > He’ll kill me if I let you get hurt, or worse, killed while the humans are out here hunting for … Fallen, vampires, and witches.” “
-
-- *Topic 148 — Banished From The Ranch* (0.9% of sentences)
-    > But Tyler’s disapproving nod was enough to put us both in our respective places. “
-    > Tyler lowered his head and then raised it as if he’d suddenly thought of something clever to say. “
-
-- *Topic 113 — Knife Handed Over For Combat* (0.8% of sentences)
-    > I brought the sword from behind me and started slashing at it. “
-    > I placed the sword on my belt, grabbed a black hand wrap, and began wrapping. “
-
-- *Topic 78 — Swearing War Before He Takes Her* (0.4% of sentences)
-    > And, with the most unique and revered of beings fighting with us, there’s no way we won’t win.”
-    > My mind and body betrayed one another, sparring ferociously under some very intense conditions.
-
-**The Great British Date Off** — Sheila Brady (rating 3.55, 67 ratings, book_id 27144589)
-
-- *Topic 78 — Swearing War Before He Takes Her* (3.5% of sentences)
-    > You have fought bravely; give yourselves up now to an enemy who respects your valour and will treat you well.’
-    > The general assumption had been that battles were fought for large land gains, for the holding of positions and for limiting loss of life (certainly on one’s own side).
-
-- *Topic 91 — Arguing Over Guns and Weapons* (2.8% of sentences)
-    > The M. Gun had to be abandoned in a shell hole our men being too exhausted to carry it.
-    > They came on with the infantry, ranging their little engines to the farm, and aiming with such skill the machine gun was put out of action by a short storm of high explosives.
-
-- *Topic 114 — Guns Aimed Across The Room* (0.9% of sentences)
-    > He seized a bomb in one hand and a revolver in the other, and under this threat his captors more or less cheerfully consented to becoming the captives!
-    > He found that about sixty of the enemy were holding the redoubt, and a short pause was made while rifle fire and rifle grenade fire was opened on the redoubt, before the Company charged.
-
-- *Topic 87 — Threatening Death As A Warning* (0.6% of sentences)
-    > At the same time, Lieutenant Raymond Asquith i was shot through the chest and killed as led the first half of No.
-    > The Coroner:- It was done so quickly that one can only come to the conclusion that it was impulsive.
-
-**Might's Karma** — Stephani Hecht (rating 3.68, 228 ratings, book_id 40005519)
-
-- *Topic 78 — Swearing War Before He Takes Her* (1.5% of sentences)
-    > Then, instead of running from Rand, you can stand your ground and fight the bastard.”
-    > People, be they part animal or not, will always have the tendency to make war with one another.
-
-- *Topic 87 — Threatening Death As A Warning* (1.0% of sentences)
-    > Either that or he wanted to keep me from the general population, so I didn’t kill anybody.”
-    > Why don’t you send in a couple of assassins and just off this guy?”
-
-- *Topic 91 — Arguing Over Guns and Weapons* (0.8% of sentences)
-    > Is there any particular type of gun that you would prefer?” “
-    > He was going to have to get in close enough to one of those things so he could shoot it in its weak spot.
+- *Topic 87 — Threatening Death As A Warning* (1.1% of sentences)
+    > I say we kill the murdering freak, right after we get information from it.” “
+    > They killed at least one of your crew members by dissecting him while he was still alive.”
 
 - *Topic 114 — Guns Aimed Across The Room* (0.7% of sentences)
-    > He then snatched up some ammo and put that next to the gun. “
-    > When Adan was finished with his target practice, Zaid took his gun. “
+    > He didn’t fire or adjust the weapon to aim at her, so she took a few more steps. “
+    > She used her hold on his arm to keep it pinned down as she went for the sidearm he’d holstered.
 
-**Beaumont** — Stormy Glenn (rating 3.77, 119 ratings, book_id 50644336)
+- *Topic 78 — Swearing War Before He Takes Her* (0.6% of sentences)
+    > We’re not equipped for hand-to-hand combat with that many.” “
+    > It was a fight to avoid throwing up the food she’d just gotten down.
 
-- *Topic 269 — Waiting For Lab Results* (1.2% of sentences)
-    > What were you thinking when you went to that lab by yourself?
-    > We’ll leave for the lab just as soon as we’ve gone over everything.”
+- *Topic 269 — Waiting For Lab Results* (0.4% of sentences)
+    > Some of the women had certain other requirements, if you passed the status and genetic ones.”
+    > I doubt they are aware that Earth Government took core samples twenty years ago.
 
-- *Topic 51 — Locked Up By A Vampire* (1.1% of sentences)
-    > There wasn’t a lot for a hundred-and-fifty-year-old vampire to do in the world nowadays.
-    > He thought vampires were supposed to be cold—as in, dead cold. “
+**Protecting a Wanted Mate** — Anitra Lynn McLeod (rating 3.58, 108 ratings, book_id 21812853)
 
-- *Topic 87 — Threatening Death As A Warning* (0.6% of sentences)
-    > It’s all I long for, but the scientists said I would transfer the poison to you and our union would cause both of us to die within minutes.”
-    > If he has indeed been poisoned with Ailanthus, there may be a way to save him, but I’ll need assistance.”
+- *Topic 148 — Banished From The Ranch* (4.9% of sentences)
+    > He asked only to try to help Cody get to the bottom of his twisted memory. “
+    > He hadn’t been so sure about this whole mate thing and having an instant life partner, but the thought of Cody running off made his heart hurt.
 
-- *Topic 113 — Knife Handed Over For Combat* (0.6% of sentences)
-    > Yes, that’s a knife,” he whispered when the vampire prince gasped. “
-    > The woman reached for Beau’s knife holder strapped to his arm.
+- *Topic 87 — Threatening Death As A Warning* (0.4% of sentences)
+    > You weren’t there to see what happened to the dead man on the floor.” “
+    > Yeah, I see him, but he’s dead and I can’t do anything for him but mourn him.”
+
+- *Topic 82 — Touch Her and Your Family Suffers* (0.4% of sentences)
+    > Once you have fucked me, our mating scents won’t be so strong.”
+    > If anything I ever do or say bothers you, I want you to tell me.” “
+
+- *Topic 249 — Threatened With Arrest and Jail* (0.4% of sentences)
+    > If they arrest me, the first thing they’ll do is take it away.
+    > Yeah, I’d be happy to do that if doing so didn’t put innocent people at risk.” “
+
+**Keeping You Forever** — Jaclyn Marulanda (rating 3.42, 61 ratings, book_id 26569587)
+
+- *Topic 148 — Banished From The Ranch* (3.7% of sentences)
+    > Tyler...” She thought he hung up because all she heard was silence. “
+    > Tyler’s voice was low but had a tone that said he wasn’t messing around. “
+
+- *Topic 82 — Touch Her and Your Family Suffers* (0.2% of sentences)
+    > I want to lick every inch of your body, and I think I’m going to start right here.”
+    > You do things to me and make me feel things that no other woman has made me feel.
+
+- *Topic 113 — Knife Handed Over For Combat* (0.1% of sentences)
+    > They were almost black, but with specks of brown, and cut right through her like a sharp knife to her heart.
+
+**The Wolf Within** — M.J. Scott (rating 3.23, 62 ratings, book_id 28364399)
+
+- *Topic 51 — Locked Up By A Vampire* (1.9% of sentences)
+    > They wouldn’t have to drink the blood of the vamp who bit them?” “
+    > But I keep thinking that there’s a reason vampires are turned the way they are.
+
+- *Topic 87 — Threatening Death As A Warning* (1.0% of sentences)
+    > He might have been sent to kill me but he wanted to do it his way.
+    > But I was alive, so whoever had taken me didn’t want me dead—not immediately anyway.
+
+- *Topic 269 — Waiting For Lab Results* (0.2% of sentences)
+    > I’ll just go check on your final test results,” Doctor Blair said. “
+    > I was fed and taken briefly to the lab for more prodding by Smith, this time confined to taking measurements, peeing in a cup and only one more tube of blood.
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.2% of sentences)
+    > But this wasn’t the time to go for it, not while they were expecting me to fight. “
+    > Before either of us could fight properly, we needed the manacles off.
+
+**I Wish I Could Remember You** — L.J. Epps (rating 3.64, 19 ratings, book_id 49943855)
+
+- *Topic 269 — Waiting For Lab Results* (3.1% of sentences)
+    > When your blood work returns, we might find something “wrong,” or we might not.
+    > But as it is, I must begin with a series of questions, a physical exam, and an initial panel of blood work that I might need to expand upon later depending on the results.
+
+- *Topic 329 — Laying Down The Rules* (0.2% of sentences)
+    > The second is that if we plan and work hard enough and arrange all the pieces just so and follow all the rules, then we can control the outcome.
+    > What we really need is an undoing of the rules, of the stories we’ve been told, of the world’s ridiculous expectations and the lies we’ve accumulated into overflowing garbage heaps in our minds.
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.2% of sentences)
+    > And no matter how hard you struggle and fight, it just isn’t going to be that way.
+    > In this scenario, the brain quickly assesses that we are both too weak to fight and too slow to flee so the best option is to essentially “play dead.”
+
+- *Topic 294 — Accepting Whatever Punishment Is Deserved* (0.1% of sentences)
+    > Toward the little girl who was abused and hurt and cast aside and left alone so that instead of more pain and trauma and jail time, she could live the life that was hers .
+    > Generally, when the abuse happened, I floated away somewhere outside of my body until it was over.
 
 
 ## low index high tier
 
-**Fully Automatic** — Jade C. Jamison (rating 4.30, 454 ratings, book_id 26109526)
+**Everything Is You** — Donna Hill (rating 4.35, 57 ratings, book_id 21524836)
 
-- *Topic 91 — Arguing Over Guns and Weapons* (0.1% of sentences)
-    > Bullet had been perfect—bad ass, hardcore, dangerous, and in your face.
-    > Bullet was going to make it big if it was the last thing he’d ever do. * * *
+- *Topic 269 — Waiting For Lab Results* (0.2% of sentences)
+    > I want to run some test but first, let me ask you a few questions.” * * *
+    > It’s also the floor where we can do specialized tests for blood disorders.” “
 
-- *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
-    > This time, there was no arguing, no screaming and yelling matches, no loud, obnoxious fights.
-    > Yeah, why don’t you guys have another obnoxious fight like you always do, but this time why don’t you do it in front of the whole crowd?
+- *Topic 82 — Touch Her and Your Family Suffers* (0.0% of sentences)
+    > You’re tired all the time, you barely want me to touch you, you won’t hold a real conversation… Do I need to go on?
+
+- *Topic 114 — Guns Aimed Across The Room* (0.0% of sentences)
+    > He snapped his fingers and she flinched as if a shot had been fired. “
+
+**Only Twelve Days** — Eileen Thornton (rating 4.16, 19 ratings, book_id 26541320)
+
+- *Topic 117 — Blamed and Threatened Into Compliance* (0.2% of sentences)
+    > But I really think he's going to take more notice of you and I can't say I blame him.”
+    > The only trouble was, they never allowed me to live my own life.”
 
 - *Topic 82 — Touch Her and Your Family Suffers* (0.1% of sentences)
-    > You know…a joint used to make me feel kinda peaceful, but it can’t touch shit anymore.
-    > But somehow that kind of contact nowadays felt inappropriate.
+    > I've told you before, he probably sees you as an easy touch.” “
+    > Normally he would, at the very least, have run his finger around his collar. “
 
-**Thrown** — Cat Johnson (rating 4.19, 290 ratings, book_id 40005671)
+- *Topic 329 — Laying Down The Rules* (0.1% of sentences)
+    > My principles have taken a battering lately, I've met someone and he's not unlike Bill actually, kind and considerate.
 
-- *Topic 91 — Arguing Over Guns and Weapons* (0.2% of sentences)
-    > And now, he’d be reduced to riding a barrel in the backyard. “
+**Poland** — Rebecca Ratliff (rating 4.60, 151 ratings, book_id 40153886)
 
-- *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
-    > One of the bullfighters slapped Skeeter on the back while handing him his bull rope. “
+- *Topic 82 — Touch Her and Your Family Suffers* (0.2% of sentences)
+    > Then again, you nearly ran away when I touched you this morning.” “
+    > When she starts getting all handsy, I leave.... I haven't touched her at all.
 
 - *Topic 87 — Threatening Death As A Warning* (0.1% of sentences)
-    > Do you want to write the obituary or would you like me to do it?” “
+    > But when I found out that you thought I was dead... well... I know why you said it.
+    > Well, he was out to sea, but then on my first night there, I got a knock at the door saying Tanner was dead...” “Tanner's dead!?
 
-- *Topic 114 — Guns Aimed Across The Room* (0.1% of sentences)
-    > Even so, later she’d get the shotgun from the closet and check if it was loaded.
-    > Mustang grabbed two of the ropes supporting the barrel and waited while Slade grabbed the other two. “
+- *Topic 51 — Locked Up By A Vampire* (0.0% of sentences)
+    > Morgan quickly looked at the times for the next showing of the new zombie flick, but then diverted to the rest of the shows when she thought that he would find her strange for liking horror movies so much. “
 
-**In Sickness and in Health** — Krissy V. (rating 4.57, 51 ratings, book_id 41193336)
+**Recovery** — Con Riley (rating 4.16, 298 ratings, book_id 41263132)
 
-- *Topic 87 — Threatening Death As A Warning* (0.2% of sentences)
-    > That's why I've never been able to understand how anyone would actually want to kill themselves." "
-    > Oh, Alison, of course I couldn't just let you die, if there was anything at all that I could do."
-
-- *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
-    > It's hard for me too, but I have to just keep on fighting, and so do you." "
-
-- *Topic 117 — Blamed and Threatened Into Compliance* (0.1% of sentences)
-    > It's not your responsibility to make up for everything in my life that sucks.
-
-- *Topic 269 — Waiting For Lab Results* (0.1% of sentences)
-    > Lab results show absolutely no trace of cancer remaining anywhere in your body, and considering the overwhelmingly positive results we got this time around, I'd say chances of it returning are slim enough to be almost negligible.
-
-**The Letters** — Lesley  Jones (rating 4.66, 865 ratings, book_id 49257177)
-
-- *Topic 269 — Waiting For Lab Results* (0.1% of sentences)
-    > Katherine, I’ve gone over your chart and the tests we ran on your brain.”
-    > C HAPTER 5 “Mrs. Easley, I urge you to reconsider your decision about the tests.”
-
-- *Topic 113 — Knife Handed Over For Combat* (0.1% of sentences)
-    > Katherine picked up the knife off the floor and rinsed it in the sink. “
-    > Simple, made of glossy wood, its curved handle worn in places where Leona had touched it over the years.
+- *Topic 117 — Blamed and Threatened Into Compliance* (0.2% of sentences)
+    > I mean, if I told myself that it was my fault, how the hell could I move past it?
+    > But that’s part of the fucked-up thinking that makes self-blame too easy.
 
 - *Topic 294 — Accepting Whatever Punishment Is Deserved* (0.1% of sentences)
-    > Mark’s in prison for what he’s done, but he’ll also have to face the Lord.” “
-    > That doesn’t give you the right to take your pound of flesh.” “
+    > Staying sober, on the other hand, seemed like an unfair punishment. “
+    > He’d written off the sexual-assault support group when he first went.
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
+    > This is the longest they’ve talked without fighting for days.”
+    > He reacted as if the fragile truce between them was already over. “
+
+- *Topic 269 — Waiting For Lab Results* (0.1% of sentences)
+    > Didn’t need to be a rocket scientist to connect those dots.” “
+    > The results of neurological tests were still coming in but seemed clear.
+
+**What Happens in the Alps...** — T.A.   Williams (rating 4.15, 88 ratings, book_id 49492643)
+
+- *Topic 117 — Blamed and Threatened Into Compliance* (0.1% of sentences)
+    > In a road traffic accident, it’s always the one behind who’s to blame.’
+    > If we find out you were responsible for calling us out, you could be in serious trouble.
+
+- *Topic 87 — Threatening Death As A Warning* (0.1% of sentences)
+    > Well, I reckoned if the meeting was in his office he was unlikely to be trying to kill me, so I went along.
+    > The day after the funeral I did something I knew I had to do.
 
 
 ## low index low tier
 
-**Homecoming** — Cathy Kelly (rating 3.73, 2,045 ratings, book_id 13474926)
-
-- *Topic 87 — Threatening Death As A Warning* (0.1% of sentences)
-    > Your teacher is going to kill you tomorrow, by the way,’ he added to Ella. ‘
-    > If only I’d known how hard his death was for you, Eleanor had thought.
-
-- *Topic 117 — Blamed and Threatened Into Compliance* (0.1% of sentences)
-    > If it’s all your fault, it means he chose you over me because you’re younger and he ignored all our history, all the love we had.
-
-- *Topic 294 — Accepting Whatever Punishment Is Deserved* (0.1% of sentences)
-    > She was punishing herself, doing away with the sexy, girlish creature who’d got into so much trouble.
-
-- *Topic 249 — Threatened With Arrest and Jail* (0.1% of sentences)
-    > They’ll love you in any prison you go to: usually it’s men who hit pregnant women.
-    > Not everyone thinks it’s OK to use other people’s misfortune as a get-out-of-jail-free card,’ she said. ‘
-
-**Beguiling the Boss** — Joan Hohl (rating 3.30, 58 ratings, book_id 21762358)
-
-- *Topic 269 — Waiting For Lab Results* (0.1% of sentences)
-    > I’d much rather we go upstairs and test our physical compatibility.”
-    > Another “test” to see if they would be good together in bed?
-
-- *Topic 87 — Threatening Death As A Warning* (0.0% of sentences)
-    > But I’ve been emotionally dead for so long, I don’t know how—” This time Jen cut him off. “
-
-**A Second Chance at Forever** — J.M. Stewart (rating 3.65, 171 ratings, book_id 21855483)
+**Sheet Music** — Tibby Armstrong (rating 3.62, 584 ratings, book_id 13530963)
 
 - *Topic 82 — Touch Her and Your Family Suffers* (0.2% of sentences)
-    > Did you touch yourself last night, while you were thinking of me?”
-    > It’s just...oh God you’re such a good kisser, and it’s been so long since anybody’s made me feel the way I do when you touch me, but it was only supposed to be one night.
+    > I really would enjoy watching you touch yourself,” he prompted.
+    > Don’t move your hands,” he warned, dipping both of his index fingers into her pussy at the same time to delve into the wetness there.
 
-- *Topic 91 — Arguing Over Guns and Weapons* (0.1% of sentences)
-    > The two oldest, Katie and Braden, had ganged up on the youngest, four-year-old Seth, soaking him relentlessly with huge, brightly colored plastic guns.
-    > All three of Brock’s kids—two boys and a girl—wielded squirt guns and ran circles around each other, screaming and giggling as they attempted to soak each other.
+- *Topic 249 — Threatened With Arrest and Jail* (0.1% of sentences)
+    > The photos in the article were probably enough to get them arrested in some states.
+    > They think the last of my father’s associates died in prison last month.
+
+**Merry's Christmas: a love story** — Susan Rohrer (rating 3.77, 160 ratings, book_id 21757142)
+
+- *Topic 269 — Waiting For Lab Results* (0.1% of sentences)
+    > I’m barely picked up from Thanksgiving and already they got needles all over creation.”
+
+- *Topic 113 — Knife Handed Over For Combat* (0.1% of sentences)
+    > Reaching under a bough, he jostled one of Merry’s broken china ornaments.
+
+- *Topic 114 — Guns Aimed Across The Room* (0.1% of sentences)
+    > Ollie raised an imaginary pistol, checking down the hallway as Merry slipped by him, turned the doorknob and cracked it open.
+    > Jauntily, Merry took aim and hurled a snowball smack into Ollie’s chest.
+
+**Torren Between** — J.L. Edwards (rating 3.40, 40 ratings, book_id 21837057)
+
+- *Topic 82 — Touch Her and Your Family Suffers* (0.2% of sentences)
+    > I want to show you how beautiful you are by touching every nerve in your body.”
+
+- *Topic 113 — Knife Handed Over For Combat* (0.1% of sentences)
+    > Brandon was straddling a board on top of the deck fastening something in place with a drill. “
+
+**The Game** — Camille Oster (rating 3.52, 143 ratings, book_id 24171326)
 
 - *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
-    > Clearly she waited for his rebuttal and was prepared to fight back.
+    > The fight he’d had to acquire some extraordinary architecture talent was about to pay off.
 
-**Torn** — Shawn Bailey (rating 3.19, 66 ratings, book_id 24489579)
+- *Topic 329 — Laying Down The Rules* (0.1% of sentences)
+    > The one rule was that you didn’t sleep with your direct reports, and he’d gone and done just that.
+    > Political agendas and personal interests ruled the board, but that wasn’t unusual.
 
-- *Topic 148 — Banished From The Ranch* (0.1% of sentences)
-    > Justin had been trying to include him in their activities, but it was obvious to him that Justin was in love with Sam and wanted to have a future with him.
-    > Justin felt his body react to the sight of the other young man.
+- *Topic 113 — Knife Handed Over For Combat* (0.1% of sentences)
+    > If it had been a thousand years ago, he would have a sword to her throat by now, probably would have run her through already.
+    > I know he does,” Damon said and played with the knife on the table. “
+
+**The Bucket List** — Douglas  Black (rating 3.50, 46 ratings, book_id 42392535)
+
+- *Topic 78 — Swearing War Before He Takes Her* (0.1% of sentences)
+    > I know how this makes me look, but I don’t want to fight with him anymore.
+    > Kade knew he should have said it out loud, but he didn’t want to fight. “
+
+- *Topic 87 — Threatening Death As A Warning* (0.1% of sentences)
+    > Please, God, don’t let me kill her,” he muttered to himself. “
+    > You know, if you want to buy something, they will kill it and prepare it for you.”
+
+- *Topic 117 — Blamed and Threatened Into Compliance* (0.1% of sentences)
+    > He was giving me his excuses ahead of time, and I could either change—which I never managed to do—or put up with it.
 
 
 # explicit sex — abs_leaf_2.3
@@ -986,273 +1002,249 @@
 
 ## high index high tier
 
-**Fatal Destiny** — Marie Force (rating 4.30, 4,612 ratings, book_id 15195583)
+**Lover's Leap** — Emily March (rating 4.16, 1,706 ratings, book_id 16609642)
 
-- *Topic 210 — Expelled For Pursuing A Relationship* (3.8% of sentences)
-    > Nick hoped he could get through this without embarrassing himself. “
-    > Go on back to Nick, and please keep her the hell away from him.” “
+- *Topic 24 — Confronting An Unwanted Marriage* (0.3% of sentences)
+    > You just asked me to marry you with a secondhand proposal ?”
+    > Nice to know you’d rather see me torn apart by sharks than married to someone else.” “
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.8% of sentences)
-    > I’ve never wanted anything more than to have you as my wife.
-    > How dare you speak to me like that minutes before you marry my son?” “
+- *Topic 85 — Offering and Refusing An Apology* (0.3% of sentences)
+    > I’m glad your Trix was trying to do the right thing and find a nice young man to settle down with, but I can’t say I’m sorry it’s not going to be you.
 
-- *Topic 85 — Offering and Refusing An Apology* (0.4% of sentences)
-    > I appreciate that, and I’m sorry if I was a bit of a handful.” “
+- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
+    > He meant, he didn’t care if anyone he knew was around to see it.
 
-**The Love Game & Playing for Keeps** — Emma  Hart (rating 4.09, 6 ratings, book_id 40103490)
+**Maybe Tonight** — Kim Golden (rating 4.35, 78 ratings, book_id 41108663)
+
+- *Topic 3 — Demanding An Explanation* (2.9% of sentences)
+    > You’re right, you know, I’ll tell you what I think no matter what.”
+
+- *Topic 43 — Pissed Off and Grumbling* (2.1% of sentences)
+    > But Mads…his every nerve was attuned to Laney and when she said she wanted to get some air, he took a chance.
+    > Mads was glad for the distraction, even if he knew this was the right thing to do.
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.9% of sentences)
+    > We’re encouraged not to, but there’s nothing in the contract…” “But she’s married, right?
+    > Trying to remember if you sounded this happy when you told everyone we were getting married.”
 
 - *Topic 129 — Accused of Not Caring* (0.4% of sentences)
-    > Yeah, let’s ignore the fact I thought that because I care about you, shall we?” “
+    > Shit…why the fuck do I even care when we can’t even have our little girl home with us…?” “
+    > He might be shit at showing it to you, but he cares enough to look for you, to worry.
 
-- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
-    > But I almost wish you’d just go away and get it over with.” “
-    > The moment ends too soon, and I come crashing back down to reality.
-
-**Charlie's Angel** — Shauna Allen (rating 4.21, 97 ratings, book_id 40129618)
+**Reasonable Doubt: Volume 3** — Whitney G. (rating 4.19, 20,570 ratings, book_id 41130420)
 
 - *Topic 85 — Offering and Refusing An Apology* (0.7% of sentences)
-    > So listen, I’m really sorry about the mess I brought you yesterday.
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > Well, I better go before your husband thinks I’ve won you back.”
-    > This is the first time I’m afraid it could ruin things with the man I love.”
-
-**Road to Passion** — Piper Davenport (rating 4.17, 532 ratings, book_id 45225438)
-
-- *Topic 85 — Offering and Refusing An Apology* (0.8% of sentences)
-    > I don’t mean to be a bother, but...,” I held out the gift bag, “I wanted to apologize.” “
-    > Truth be told, there’s never been a woman who brought me an apology gift to apologize for something she did do.” “
-
-- *Topic 256 — Refusing to Let It End* (0.2% of sentences)
-    > This is all going to be over soon... or so Dallas assures me.”
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.1% of sentences)
-    > I want to get married before you’re out of your first trimester.” “
-    > If you want to wait a bit to get married, we can, but I’m not sleepin’ apart from you anymore, so might as well move in.” “
-
-**Slamdunked By Love** — Jamie Wesley (rating 4.12, 66 ratings, book_id 47754168)
-
-- *Topic 3 — Demanding An Explanation* (4.9% of sentences)
-    > I’d ask you the same question, but I have a feeling I know the answer.” “
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.4% of sentences)
-    > Will you do me the honor of becoming my wife and making me the luckiest man on earth?”
-    > Okay, sure, but most married men I know say that they knew early on in their relationships with their wives that marriage was in the equation.”
-
-- *Topic 85 — Offering and Refusing An Apology* (0.4% of sentences)
-    > You need to issue a statement saying you regret your actions and that you apologize for letting the team and fans down.” “
+    > I really do, and I’m…I’m sorry for kicking you out that night.” “
+    > I still feel bad about gala night and what that guy from my past said to you,” I said. “
 
 - *Topic 256 — Refusing to Let It End* (0.4% of sentences)
-    > Okay, time to break—” “I’m not breaking shit up,” Maguire said. “
-    > I gave my all to that franchise, but because of the way things ended, I don’t know if the fans will cheer or boo.
+    > We can’t have one nice moment before we end things for good?” “
+    > When something is over, the final words—good or bad, don’t make much of a fucking difference.”
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.4% of sentences)
+    > I mean, Miss Everly , do you believe that leaving your husband in his time of need was what was best for your company?” “
+    > Of course, my own husband has been so busy this year that he probably wouldn’t even know.” “
+
+**Emerald Green** — Lindsay Marie Miller (rating 4.08, 67 ratings, book_id 45581317)
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.9% of sentences)
+    > Well, if you weren’t so high-handed I wouldn’t have married him in the first place.”
+    > I let all of my insecurities from my marriage bleed into our relationship.”
+
+- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
+    > But when it comes to us—” “It’s over,” he said, staring at the ground. “
+    > If she confirmed that it was really over, then that would shatter every shred of hope.
+
+**Daniel & Erik's Super Fab Ultimate Wedding Checklist** — K.E. Belledonne (rating 4.09, 62 ratings, book_id 48955543)
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.7% of sentences)
+    > You’re only getting married once, to me , and we won’t get a second chance at it.”
+    > Although, if you’d said no, you really didn’t want to get married, I told them all I’d call off the plan.” “
+
+- *Topic 85 — Offering and Refusing An Apology* (0.5% of sentences)
+    > So, I might need to take a break during a disagreement—” “I’m sorry—” “Just, please.
+    > I did my usual ridiculous, impulsive thing, without thinking things through at all and I made a complete error in judgment coming here and I’m so sorry to bother you.
+
+- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
+    > Let’s just tell it like it is and agree that we are ending this.” “
+    > We’ve been ignoring the fact that there’s just nothing left here to be scraped together and just, please, Erik, let’s let it go.” “
 
 
 ## high index low tier
 
-**This Charming Man** — Marian Keyes (rating 3.75, 28,638 ratings, book_id 2080189)
+**The Accidental Countess** — Melissa Schroeder (rating 3.72, 473 ratings, book_id 2214166)
 
-- *Topic 85 — Offering and Refusing An Apology* (0.5% of sentences)
-    > I’m sorry, I’m sorry, I’m sorry,’ he’d said, into my flabbergasted ears. ‘
-    > I’m just so…’ He looked disappointed, hurt, something… ‘Sorry.’
+- *Topic 24 — Confronting An Unwanted Marriage* (0.7% of sentences)
+    > I suppose we should just be thankful that my parents finally came around to the idea of our marriage, darling.” “
+    > Why don’t you want to see the man you’re supposed to marry?”
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.4% of sentences)
-    > Suddenly he declared, almost in anguish, ‘Look, I’m married!
-    > She’d wanted to get married, she always had, it was what you did, it was normal behaviour.
+- *Topic 85 — Offering and Refusing An Apology* (0.4% of sentences)
+    > It is I who must apologize to you, Your Grace, for I am deeply in my cups.”
+    > I should have warned you I was coming, but I came to apologize for my part in the duplicity played upon you at the house party.
 
-**American Diva** — Julia London (rating 3.77, 609 ratings, book_id 24220418)
+- *Topic 43 — Pissed Off and Grumbling* (0.3% of sentences)
+    > That’s why Upton was making him so blasted angry this evening. “
+    > Once we got that nonsense out of the way about her pretending to be you, she wasn’t a bit upset.
+
+**Baking Love** — Lauren  Boyd (rating 3.34, 66 ratings, book_id 24589179)
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.8% of sentences)
+    > After all, we don’t want the two of you to end up married, now do we?”
+    > Once the two of you are married, I doubt you and I will ever see each other again.” “
+
+- *Topic 85 — Offering and Refusing An Apology* (0.3% of sentences)
+    > Look, the way you feel about me—” “I know it makes you uncomfortable, and I apologize—but you don’t have to worry.
 
 - *Topic 256 — Refusing to Let It End* (0.2% of sentences)
-    > But it will be over before you know it, and you don’t need to . . .
-    > It was enough that she had to end it—to say when seemed impossible at the moment.
+    > After we lost touch, it took me a while to get over you…at least I thought I’d gotten over you.”
+    > The past is over, so there’s no need to beat yourself up about it now.”
 
-- *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
-    > You mean the world to me, and if I haven’t said it enough lately, I’m sorry.”
+**Mate to Your Soul: The Online Dating Site for all your Heart's Desires** — Charlie Bleecker (rating 3.54, 26 ratings, book_id 41827340)
 
-**Will the Real Prince Charming Please Stand Up?** — Ella Martin (rating 3.74, 224 ratings, book_id 41244597)
+- *Topic 24 — Confronting An Unwanted Marriage* (11.4% of sentences)
+    > The response I heard was, “Finally someone has given us permission not to marry.
+    > CHAPTER 4: “Why Aren’t I Married Now, and What Can I Do About It?”
 
-- *Topic 103 — Last Honest Conversation Before Parting* (0.8% of sentences)
-    > It was short-lived, though, because Jake rushed toward me. “
-    > At least if Jake was there, they could have shared the responsibility. “
+- *Topic 3 — Demanding An Explanation* (0.9% of sentences)
+    > So you could say I wasn’t fully prepared for what I encountered.
+    > This may sound simplistic to say, but it needs to be said, and you’ll see why later.
+
+- *Topic 43 — Pissed Off and Grumbling* (0.8% of sentences)
+    > During this time, anger may be experienced, and in some ways needs to be expressed.
+    > If I did something to make her mad, she’d use it against me.
+
+- *Topic 256 — Refusing to Let It End* (0.4% of sentences)
+    > The other person has to accept the fact that it is over, or they can make your life miserable.
+    > In order to grieve and move ahead, you have to accept the fact that the relationship is over.
+
+**Double Ex: A Romantic Comedy about Lost Love & Lookalikes** — Lee Daniel Bullen (rating 3.18, 11 ratings, book_id 42575226)
 
 - *Topic 85 — Offering and Refusing An Apology* (0.5% of sentences)
-    > What I needed to do was give him an opportunity to apologize.
-    > He wouldn’t have given me this if he wasn’t really sorry, Talia.” “
-
-- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
-    > Is it true that you threw up on him, and he didn’t even care?”
-    > Like anyone cares about matching part numbers, anyway,” Brady replied. “
-
-**Love’s Bounty** — Yolanda Wallace (rating 3.73, 34 ratings, book_id 42295455)
-
-- *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
-    > I just wanted to apologize for being such an ass the past few weeks.”
-    > I said a lot of mean, hurtful things while I was under the influence.
-
-- *Topic 256 — Refusing to Let It End* (0.1% of sentences)
-    > It’ll be over soon,” she said, but she had no idea when or if her exquisite torture would ever end. “
-    > The closer blew the save, costing Pete the win, but Pawtucket scored twice in the bottom of the ninth to secure the victory.
-
-**Public Relations** — Katie Heaney (rating 3.73, 789 ratings, book_id 52584398)
-
-- *Topic 85 — Offering and Refusing An Apology* (1.0% of sentences)
-    > I wanted to apologize for my rudeness last night,” he said. “
-    > I felt like I should tell him I was sorry, but I wasn’t sure what I’d be saying it for, nor did I want to admit to having done anything that required an apology.
+    > he croaked like a manically-depressed frog, ‘I’m very sorry for the intrusion.’ ‘
+    > he rebuked, ‘I should never have… I’m so sorry, I promise I’ll never…’ ‘Konrad, it’s okay!’
 
 - *Topic 256 — Refusing to Let It End* (0.3% of sentences)
-    > And in a way I should be glad, because if he hadn’t done it, I don’t really know how long I would have just kept on because I didn’t know that it was over.
-    > It didn’t matter so much if it was real or fake; it was over.
+    > Ilove always wanted to call; it’s just that things didn’t end well last time.’ ‘
 
-- *Topic 129 — Accused of Not Caring* (0.1% of sentences)
-    > But just because you care so much about what Joanna and Ryan think of you doesn’t mean I need to, too.” “
-    > I didn’t realize I was bothering you by valuing your opinion.” “
+**Never Doubt** — Mathias Harding (rating 3.66, 70 ratings, book_id 53084892)
+
+- *Topic 85 — Offering and Refusing An Apology* (0.8% of sentences)
+    > Listen,” I paused hating to have to beg, “I am really sorry.
+
+- *Topic 43 — Pissed Off and Grumbling* (0.4% of sentences)
+    > Of course, that smart mouth of his riled me up and I hadn’t that angry in such a long time.
+    > I should have just left, but I didn’t want him to think I was mad at him.
+
+- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
+    > Eventually, Micah proposed to me and we were married the following summer.
+    > If he was married before, I was certain that he wasn’t anymore.
 
 
 ## low index high tier
 
-**Shadowlife-Hybrid** — Claudy Conn (rating 4.39, 243 ratings, book_id 19119881)
+**Tracking Desire** — Elizabeth Lapthorne (rating 4.50, 2 ratings, book_id 24808676)
 
-- *Topic 3 — Demanding An Explanation* (1.9% of sentences)
-    > Oh, well as to that, you could be right, but I don’t think so.” “
-    > Now, sweet … ye would know the answer to that, wouldn’t ye?”
+- *Topic 3 — Demanding An Explanation* (1.4% of sentences)
+    > You know exactly what I mean, but I’m happy to spell it out for you.”
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > I do not wish to marry at all, but unfortunately my father discovered us … kissing … and believes that my honor is at stake, which of course it is not.
-    > No, Sir Roland, you need have no fear on that score with me, as I have already told you I cannot marry you.”
+- *Topic 43 — Pissed Off and Grumbling* (0.2% of sentences)
+    > He’s the sort of person you can be yourself with and never shock or upset him.
+    > I keep telling you that you’re working too hard,” Kelly protested, a little indignantly.
 
 - *Topic 256 — Refusing to Let It End* (0.2% of sentences)
-    > There was much hugging and congratulations, but when Roxie dove into Chase’s arms and he kissed her forehead, her nose, her chin, and then her lips, she came up for air to ask, “Is it over—is it really over?” “
-    > I had never imagined it would progress to this point, but it has, and it needs all our combined powers to bring it to a successful closure.
+    > The moment passed, however, and all too soon reality reared its ugly head.
+    > However, this was an important case, and one they all knew they were in the final stages of closing.
 
-**Dark Wolf** — Christine Feehan (rating 4.37, 7,858 ratings, book_id 24256902)
+**The Fall of Gods** — Con Template (rating 4.38, 439 ratings, book_id 25976314)
 
-- *Topic 3 — Demanding An Explanation* (1.3% of sentences)
-    > I’ve waited for you to tell me, but I figured rather than merging my mind with yours and prying, I’d just ask.”
+- *Topic 3 — Demanding An Explanation* (1.7% of sentences)
+    > I just told you that my entire body is yours and you’re not curious?”
+
+- *Topic 43 — Pissed Off and Grumbling* (0.3% of sentences)
+    > If she were angry, then she wouldn't have to deal with other tempting emotions that were waiting to consume her.
+    > He’s angry…just like I am with Ji Hoon for allowing you to cloud his judgment.
+
+- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
+    > And I care about you too…but I don’t have those feelings for you.
+    > If I didn’t know you well enough, I would’ve thought you cared about someone other than yourself.” “
 
 - *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
-    > Again, Dimitri, I must apologize for speaking as if you aren’t sitting right here, but these things must be said.”
-    > Skyler, please accept my apologies on behalf of all Lycans.”
+    > How can you sit there and apologize for taking forever to find me when it was your fault I left in the first place?"
+    > So yes, I'm sorry that it took awhile but I did the best I could."
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.1% of sentences)
-    > As a Carpathian, as a lifemate, our first duty is to see to the health and happiness of our mate.
-    > Thus expressing possession in Carpathian—“my lifemate,” “your lifemate,” “his lifemate,” “her lifemate,” etc.—involves adding a particular suffix (such as “ -am ”) to the noun stem (“ päläfertiil ”), to produce the possessive (“ päläfertiilam ”—“my lifemate”).
+**Just To Be With You** — Bella Andre (rating 4.28, 5,018 ratings, book_id 26868952)
 
-**Stealing Fire** — Susan Sloate (rating 4.48, 23 ratings, book_id 25723282)
+- *Topic 24 — Confronting An Unwanted Marriage* (0.4% of sentences)
+    > I screwed up in our marriage and I just kept screwing up afterward, too.”
+    > Marriage was the only thing that Ian had ever failed at, so badly that he’d come out of it one hundred percent certain that a wife would never—and should never—be in his future again.
 
-- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
-    > However, despite the precautions made, there was nonetheless a feeling of jubilation with the war just ended.
-    > On April 9, 1865 Secretary of War Stanton told Lincoln the most welcome news of his presidency—the Civil War was finally over.
+- *Topic 85 — Offering and Refusing An Apology* (0.4% of sentences)
+    > You’re hoping I’ll accept your apology so that you can go to her and tell her you’re not a big, fat jerk.”
+    > I feel like I should apologize to—” Ugh, what were their names? “
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > Though Lincoln did not believe in marital happiness for himself, he urged Speed to marry the lady of his choice.
-    > Three months after his wedding, Speed declared himself to be the happiest of men, and tried to persuade Lincoln that his own happiness could be greatly increased by marriage.
+- *Topic 43 — Pissed Off and Grumbling* (0.1% of sentences)
+    > All day long I’ve been trying to figure out what I feel, knowing it would be so much easier if I could stay angry with you.
 
-- *Topic 3 — Demanding An Explanation* (0.1% of sentences)
-    > Because the last time you said those same words was just before Eddie died.”
+**Breaking Her** — R.K. Lilley (rating 4.08, 5,595 ratings, book_id 47206657)
 
-- *Topic 316 — Snapping Over Money and Control* (0.1% of sentences)
-    > William Seward of New York had held presidential ambitions, but Lincoln appointed him secretary of state.
+- *Topic 24 — Confronting An Unwanted Marriage* (0.5% of sentences)
+    > Seriously though…I send you on vacation, you get married and don’t tell anyone?”
+    > I don’t like the idea of you guarding him, especially since I found out you two are fucking married .
 
-**Golden Stair** — Jennifer Blackstream (rating 4.10, 817 ratings, book_id 26650617)
+- *Topic 43 — Pissed Off and Grumbling* (0.2% of sentences)
+    > If Keibler looked angry, Thorton’s expression was positively nuclear. “
 
-- *Topic 3 — Demanding An Explanation* (2.2% of sentences)
-    > You…you have no idea what you’re asking, no idea what’s out there.”
-    > After everything that just happened, that’s the first thing you ask me?” “
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > And if it were not for you, I would not be married to Irina right now.”
-    > Ivy, my love, will you be my wife and allow me to have hundreds, thousands, of mistresses on the side?”
-
-- *Topic 85 — Offering and Refusing An Apology* (0.1% of sentences)
-    > But-but-but, you said… Didn’t you mean… You said we couldn’t, you couldn’t, I deserved…” Not a single coherent sentence could make it past the unforgiving blades of her chattering teeth.
-
-**Dominic** — Angelique Jones (rating 4.51, 121 ratings, book_id 46810869)
-
-- *Topic 85 — Offering and Refusing An Apology* (0.3% of sentences)
-    > I wasn’t sorry when I said I killed the man that raped my baby sister.
-    > I didn’t think anything could make me sorry but I was wrong.
-
-- *Topic 256 — Refusing to Let It End* (0.2% of sentences)
-    > This isn’t over,” I said, before turning around and going out of the library.
-    > Maybe Sal—” “It’s finished,” Angie decreed, effectively ending the disaster.
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > Dominic you want to marry into a family that has brutally abused you and two of our woman.
-    > I know that there’s no chance for me but the two of you might still have one,” I said, as guilt filled me.
+- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
+    > It had been one of his favorite projects for the past six months, but today he didn’t care about any of that.
 
 
 ## low index low tier
 
-**Clouds and Rain** — Zahra Owens (rating 3.57, 979 ratings, book_id 15275763)
+**Greenwood Manor** — Shannon    Leigh (rating 2.65, 34 ratings, book_id 15246406)
 
-- *Topic 3 — Demanding An Explanation* (2.0% of sentences)
-    > Why do I half-expect you to tell me you know this firsthand?” “
+- *Topic 256 — Refusing to Let It End* (0.1% of sentences)
+    > I don't know how any of this is happening, but I pray it doesn't end."
 
-- *Topic 85 — Offering and Refusing An Apology* (0.4% of sentences)
-    > I know what we did this afternoon was not very good for you and I‟m sorry.” “
-    > Sorry, boy, didn‟t bring any carrots or apples,” Gable apologized.
+**The Harvester** — Lynn Crain (rating 3.11, 17 ratings, book_id 21447002)
 
-- *Topic 129 — Accused of Not Caring* (0.1% of sentences)
-    > His parents wanted him to marry a nice Chinese girl, but we didn‟t care.
+- *Topic 43 — Pissed Off and Grumbling* (1.1% of sentences)
+    > The same anger I had felt Through my understanding of his Son.
+    > The emotions erupted from displeasure to anger; A level which only offered me even more options.
 
-- *Topic 24 — Confronting An Unwanted Marriage* (0.1% of sentences)
-    > I thought you were like me, that you‟d automatically concluded that since you‟d never marry a woman, kids wouldn‟t be possible either.” “
-    > I‟d think your wife could still use you more than that cow, Bill.” “
-
-**The Mates Who Gave Him Salvation** — Scarlet Hyacinth (rating 3.48, 67 ratings, book_id 21447115)
-
-- *Topic 3 — Demanding An Explanation* (1.6% of sentences)
-    > I didn’t…I mean we’re not—” Hewitt gave him a look full of understanding. “
-    > You must be very confused, and I assure you that soon, you’ll find out everything you need to know.
-
-- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
-    > I’m glad you think that, baby,” Roarke replied, “because this isn’t over, not by a long shot.”
-
-- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
-    > I don’t care about that,” he said, “as long as I survive this.
-    > I was building myself an army, and I did not care that my soldiers were living, breathing creatures.
-
-- *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
-    > Don’t worry, and tell Dawn I’m sorry we didn’t get to say good-bye.
-
-**Unlocking Her Innocence** — Lynne Graham (rating 3.60, 432 ratings, book_id 21518765)
-
-- *Topic 3 — Demanding An Explanation* (1.3% of sentences)
-    > Do you realise I’ve never said those words to anyone before?’ ‘
-    > You’re a calculating little tease...and you won’t take no for an answer.’ ‘
-
-- *Topic 24 — Confronting An Unwanted Marriage* (0.6% of sentences)
-    > You know, I think that’s probably the nicest thing you ever said to me but I can’t marry you.
-    > I don’t want to get married for years and years and years!’ ‘
-
-- *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
-    > I’m sorry—’ ‘No, I’m sorry I dragged you out when there’s obviously something very wrong.
-
-**Dusk** — Lois H. Gresh (rating 3.39, 51 ratings, book_id 23594715)
-
-- *Topic 3 — Demanding An Explanation* (0.4% of sentences)
-    > Therefore, it does not belong to our set, since it is a different number than any number listed.
-    > Do I have the slightest idea how they work in real-world terms?
-
-- *Topic 256 — Refusing to Let It End* (0.4% of sentences)
-    > Remember, infinity means never having to say you’re finished.
-    > It has no end because no matter how big a number we select as the biggest, we can always find a number bigger by just adding one.
+- *Topic 256 — Refusing to Let It End* (0.2% of sentences)
+    > Over time, the message was dramatically butchered And bludgeoned beyond recognition.
 
 - *Topic 85 — Offering and Refusing An Apology* (0.1% of sentences)
-    > Our apologies in advance to all mathematicians who have come to the same conclusion.
+    > I became offended by their words, But still allowed them to speak.
 
-- *Topic 316 — Snapping Over Money and Control* (0.1% of sentences)
-    > While Brainiac 2.5 enters and takes control of the brain of Lex Luthor’s daughter, Brainiac 13 upgrades Metropolis into the futuristic city portrayed by the game.
-
-**She's Going Home** — Isabelle Flynn (rating 3.48, 21 ratings, book_id 40817760)
+**The End of Summer** — Alex M. Smith (rating 3.27, 74 ratings, book_id 21518169)
 
 - *Topic 85 — Offering and Refusing An Apology* (0.3% of sentences)
-    > I mean, I’m sorry,” he hurried to amend, clearly caught off-guard by the news. “
+    > I’m sorry I can’t be there for you right now,” I sincerely said. “
 
 - *Topic 24 — Confronting An Unwanted Marriage* (0.2% of sentences)
-    > I just want to know if you knew their marriage was in trouble.”
-    > If that was a lie,” she continued quietly, “their marriage hadn’t been as solid and stable as I had always believed it to be.
+    > When I first met him, I did, but after I knew that he married me just because his family made him do it, I stopped.”
+    > So you murdered the husband to get the wife,” he said slyly. “
 
-- *Topic 129 — Accused of Not Caring* (0.2% of sentences)
-    > Mom didn’t seem to really care about much of anything after he was gone.”
-    > Feeling sucker punched, he couldn’t have cared less about what had seemed so important only minutes ago.
+- *Topic 43 — Pissed Off and Grumbling* (0.2% of sentences)
+    > For the third time today,” he replied in a disgusted tone. “
+    > A car was passing when its driver lost control and slid towards us, I swerved to avoid it and hit a tree,” he explained, and got angry. “
+
+**Howlin' For You** — Lenore (AO3) (rating 3.64, 74 ratings, book_id 23569457)
+
+- *Topic 256 — Refusing to Let It End* (0.3% of sentences)
+    > Of course that was the next full moon, and it happens all over again.
+
+- *Topic 85 — Offering and Refusing An Apology* (0.2% of sentences)
+    > First off, I want to apologise for what’s happened to you and what’s going to happen.
+    > I’m sorry, bud, but you never should have been dragged into our world.”
+
+- *Topic 43 — Pissed Off and Grumbling* (0.1% of sentences)
+    > His temper made him a man many weren’t eager to associate with. “
+    > Getting worked up over these changes,” he continued as if I hadn’t said anything, “is only going to upset you, waste your time, and, more importantly, waste mine and the hospital’s time and resources.”
+
+**The Dead Past** — Kate Aaron (rating 3.77, 53 ratings, book_id 40818693)
+
+- *Topic 43 — Pissed Off and Grumbling* (0.2% of sentences)
+    > I heard it in his voice, anger like a volcano ready to pop—anger like the powder of a cartridge right before the pin sets it off. “
 

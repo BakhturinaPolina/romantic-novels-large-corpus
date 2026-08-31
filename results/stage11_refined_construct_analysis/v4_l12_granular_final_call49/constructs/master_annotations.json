@@ -155,24 +155,24 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "disclosure"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
+    "family_proportions_json":"{\"H6\": {\"ARC_5\": 1.0}}",
     "family_strict_json":"{\"H6\": 1.0}",
     "manual_review_required":false
   },
@@ -279,15 +279,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S0",
     "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3,H4",
@@ -298,17 +298,20 @@
     "secondary_name":null,
     "proposed_constructs":[
       "Emotional Safety, Reassurance & Caretaking",
-      "off_target"
+      "emotional_safety_caretaking",
+      "off_target",
+      "tenderness_reassurance"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:EXCLUDE_FROM_HYPOTHESIS"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0, \"H4\": 0.0}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0, \"H4\": 0.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -731,7 +734,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S9",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -747,11 +750,12 @@
       "housing_security"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S9\": 1.0}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -791,7 +795,8 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -866,7 +871,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -881,7 +886,8 @@
       "protective commitment"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -953,7 +959,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S8",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -969,11 +975,12 @@
 
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.6666666667,
-    "family_proportions_json":"{\"H3\": {\"S7\": 0.047619047619047616, \"S8\": 0.6666666666666666, \"S9\": 0.1111111111111111, \"S12\": 0.047619047619047616}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -1042,11 +1049,11 @@
     "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":"ANTAGONIST",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"H1",
     "review_status":"audited",
     "current_taxonomy_id":"4.4",
@@ -1054,6 +1061,8 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
+      "ARC_2 escalation_conflict",
+      "ARC_3 separation_breakup_threat",
       "Breakup Threats",
       "Conflict & Distance",
       "HEA Resolution",
@@ -1062,12 +1071,14 @@
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H6:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H4\": {\"H4_4\": 0.6106681227684021, \"H4_5a\": 0.7397361993789673, \"H4_6\": 0.6903086304664612, \"H4_7\": 0.6767182350158691}, \"H6\": {}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.7397361994,
+    "family_proportions_json":"{\"H1\": {}, \"H4\": {}, \"H6\": {\"ARC_2\": 0.15, \"ARC_3\": 0.05, \"ARC_4\": 0.1, \"ARC_5\": 0.3, \"ARC_8\": 0.2}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H4\": 1.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -1266,15 +1277,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I1",
     "hea_code":"H2_1",
     "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_8",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H2,H3",
@@ -1288,17 +1299,22 @@
       "H2_1",
       "Positive emotional payoff and relief",
       "Reconciliation and emotional resolution",
-      "emotional_reassurance"
+      "emotional_reassurance",
+      "emotional_security_resolution",
+      "hero_commitment_demonstration",
+      "mutual_commitment_declaration"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
       "H2:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S1\": 1.0}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H2\": 1.0, \"H3\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S1\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H2\": 1.0, \"H3\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -1585,18 +1601,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S11",
     "care_protection_code":"H4_2",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3,H4",
+    "lexical_context_agreement":"H1,H3,H4,H6",
     "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -1604,18 +1620,22 @@
     "secondary_name":null,
     "proposed_constructs":[
       "Emotional Safety, Reassurance & Caretaking",
+      "caretaking",
+      "emotional_safety",
       "practical_care",
-      "practical_help_other"
+      "practical_help_other",
+      "tenderness"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:RETAXONOMIZE",
-      "H4:RETAXONOMIZE"
+      "H4:RETAXONOMIZE",
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S11\": 0.85}, \"H4\": {\"H4_2\": 0.95}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S11\": 0.85}, \"H4\": {\"H4_2\": 0.95}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 0.0}",
     "manual_review_required":true
   },
   {
@@ -1633,15 +1653,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I1",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
@@ -1654,15 +1674,18 @@
       "Courtship complicated by undisclosed knowledge",
       "Misunderstanding and its relational consequences",
       "Revelation of concealed truths",
-      "Secret-keeping and hidden information dynamics"
+      "Secret-keeping and hidden information dynamics",
+      "hidden_information_driving_tension",
+      "misunderstanding_between_main_couple"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H6\": {}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H6\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H6\": {\"ARC_1\": 0.4, \"ARC_3\": 0.15}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -1680,19 +1703,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
     "secondary_id":"3.2",
@@ -1701,17 +1724,22 @@
       "Emotional reassurance and caretaking",
       "Ongoing courtship bonding",
       "Relational distress and support-seeking",
-      "emotional_reassurance"
+      "emotional_reassurance",
+      "emotional_reassurance_ambiguous",
+      "heroine_reinterprets_hero_behaviour",
+      "ongoing_relational_bonding_unclear_valence"
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.95,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.95, \"I4\": 0.05}, \"H3\": {\"S1\": 0.85}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.95, \"I4\": 0.05}, \"H3\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":40,
@@ -1861,34 +1889,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "ARC_2 escalation_conflict",
+      "ARC_4 relationship_caused_distress"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_4\": 0.8, \"ARC_2\": 0.2}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":44,
@@ -1949,19 +1978,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"9.2",
@@ -1973,19 +2002,24 @@
       "Promise & Future-Tense Commitment",
       "Reassurance",
       "emotional reassurance",
+      "emotional_safety_and_reassurance",
       "future-tense safety promises",
+      "promise_and_future_speech_as_trust_signal",
+      "tender_caretaking_restores_closeness",
       "verbal soothing"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S1\": 0.95, \"S6\": 0.05}, \"H4\": {}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {}, \"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":46,
@@ -2002,15 +2036,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S3",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3,H4",
@@ -2023,19 +2057,24 @@
       "Caretaking & Comfort",
       "Emotional Safety & Reassurance",
       "Secrets, Misunderstandings & Hidden Information (secondary)",
+      "emotional_safety_and_reassurance",
       "reassurance",
+      "restored_closeness_through_tenderness",
       "tenderness",
-      "trust"
+      "trust",
+      "trust_reinforcement_via_caretaking"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S3\": 0.9}, \"H4\": {\"H4_1\": 0.8330554366111755}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S3\": 1.0}, \"H4\": {\"H4_1\": 0.8330554366111755}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -2460,15 +2499,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S1",
     "care_protection_code":"H4_5",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_6",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
@@ -2482,19 +2521,24 @@
       "Emotional Safety & Reassurance",
       "Physical protection from external threats",
       "Promise & Future-Tense Commitment",
+      "caretaking_as_relational_restoration",
       "emotional reassurance",
+      "emotional_repair_through_tenderness",
       "future-tense safety promises",
+      "reassurance_as_reconciliation",
       "verbal soothing"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.75,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.75, \"I9\": 0.15}, \"H3\": {\"S1\": 0.7, \"S7\": 0.25, \"S6\": 0.05}, \"H4\": {\"H4_4\": 0.2381, \"H4_5\": 0.1562, \"H4_5a\": 0.2381, \"H4_9\": 0.119}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 0.0}",
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.75, \"I9\": 0.15}, \"H3\": {\"S1\": 1.0}, \"H4\": {\"H4_4\": 0.2381, \"H4_5\": 0.1562, \"H4_5a\": 0.2381, \"H4_9\": 0.119}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 0.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -2721,11 +2765,12 @@
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
       "H2:KEEP",
-      "H3:REINTERPRET"
+      "H3:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.05, \"I3\": 0.05, \"I4\": 0.05, \"I6\": 0.3}, \"H2\": {\"H2_5\": 0.85}, \"H3\": {\"S14\": 0.55, \"S13\": 0.3, \"S6\": 0.05, \"S12\": 0.05}}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.05, \"I3\": 0.05, \"I4\": 0.05, \"I6\": 0.3}, \"H2\": {\"H2_5\": 0.85}, \"H3\": {\"S4\": 1.0}}",
     "family_strict_json":"{\"H1\": 0.0, \"H2\": 0.0, \"H3\": 0.0}",
     "manual_review_required":true
   },
@@ -2841,15 +2886,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"{'protag': ['Alex', 'Jamie'], 'antag': [\"Alex's internal struggle\", \"Jamie's job opportunity\"], 'mentor': ['Therapist\/Counselor'], 'trickster': [\"Alex's colleague\"], 'herald': [\"News of Jamie's job opportunity\"]}",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -2868,8 +2913,8 @@
     ],
     "strict_weight":1.0,
     "weighted_weight":0.9,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.9}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 0.0}",
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.9}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -2914,11 +2959,12 @@
     "adjudication_actions":[
       "H1:KEEP",
       "H2:KEEP",
-      "H3:REINTERPRET"
+      "H3:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.25,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.15}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S1\": 0.05, \"S2\": 0.45, \"S3\": 0.05, \"S4\": 0.25}}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.15}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S4\": 1.0}}",
     "family_strict_json":"{\"H1\": 0.0, \"H2\": 0.0, \"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -2937,15 +2983,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -2961,9 +3007,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.95}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.95,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.95}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -3031,7 +3077,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -3046,11 +3092,12 @@
       "Physical protection pledge"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_7\": 0.09090909090909091, \"H4_5a\": 0.09090909090909091}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -3259,7 +3306,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -3274,11 +3321,12 @@
 
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.186, \"H4_7\": 0.093}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -3450,11 +3498,12 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.95,
-    "family_proportions_json":"{\"H3\": {\"S13\": 0.95}}",
+    "family_proportions_json":"{\"H3\": {\"S13\": 1.0}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -3473,33 +3522,37 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_9",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"7.2",
     "current_taxonomy_name":"Violence, Threats & Non-Sexual Coercion",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-      "External physical protection"
+      "External physical protection",
+      "external_threat_with_protective_commitment",
+      "violence_coercion_external_danger"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.23, \"H4_7\": 0.1}}",
-    "family_strict_json":"{\"H4\": 1.0}",
+    "family_proportions_json":"{\"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H4\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -3789,15 +3842,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_6",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H6",
@@ -3808,15 +3861,19 @@
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
       "caretaking amid relational distance",
+      "conflict_resolution_initiation",
       "emotional reassurance during conflict",
+      "reconciliation_attempt",
+      "repair",
       "vulnerability and support in tension moments"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H6\": {}}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H6\": {\"ARC_6\": 0.8, \"ARC_1\": 0.05}}",
     "family_strict_json":"{\"H1\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
@@ -3891,7 +3948,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -3906,11 +3963,12 @@
       "Physical Protection"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.8636363636,
-    "family_proportions_json":"{\"H4\": {\"H4_5\": 0.8636363636363636, \"H4_6\": 0.04545454545454545, \"H4_5a\": 0.04545454545454545, \"H4_12\": 0.04545454545454545}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -4110,15 +4168,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -4135,9 +4193,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.7, \"D5\": 0.25}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.7,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.7, \"D5\": 0.25}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -4160,7 +4218,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S2",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -4180,11 +4238,12 @@
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H3:REINTERPRET"
+      "H3:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.6,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S5\": 0.4, \"S2\": 0.6}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -4203,34 +4262,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"4.4",
     "secondary_name":"Conflict, Distance & Breakup Threats",
     "proposed_constructs":[
-
+      "ARC_1",
+      "ARC_5"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_1\": 0.85, \"ARC_5\": 0.05}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":95,
@@ -4291,19 +4351,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S1",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"3.2",
@@ -4312,20 +4372,25 @@
       "Caretaking & Comfort",
       "Distress Acknowledgment",
       "Emotional Safety & Reassurance",
+      "caretaking as distress response",
       "emotional_reassurance",
       "reassurance",
-      "tenderness"
+      "relationship-caused emotional distress",
+      "tenderness",
+      "tenderness under relational strain"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S1\": 1.0}, \"H4\": {\"H4_1\": 0.8461538461538461, \"H4_2\": 0.05, \"H4_4\": 0.05, \"H4_5a\": 0.05}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S1\": 1.0}, \"H4\": {\"H4_1\": 0.8461538461538461, \"H4_2\": 0.05, \"H4_4\": 0.05, \"H4_5a\": 0.05}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":97,
@@ -4475,19 +4540,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I0",
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H4",
-    "review_status":"audited",
+    "lexical_context_agreement":"H1,H4,H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"9.2",
     "current_taxonomy_name":"Promise, Vow & Future-Tense Speech Acts",
     "secondary_id":"4.6",
@@ -4496,17 +4561,22 @@
       "Emotional Safety & Reassurance (secondary)",
       "Future-Tense Relational Commitment",
       "Promise & Vow Speech Acts",
-      "protective commitment"
+      "emotional safety and reassurance",
+      "promise\/vow speech acts",
+      "protective commitment",
+      "tender commitment expression"
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.7517237663,
-    "family_proportions_json":"{\"H1\": {}, \"H4\": {\"H4_1\": 0.07220482230186462, \"H4_4\": 0.07428485751152039, \"H4_5\": 0.06492923498153687, \"H4_5a\": 0.7517237663269043}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {}, \"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H4\": 1.0, \"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":101,
@@ -4568,36 +4638,41 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":"D4",
-    "arc_role":"DISCLOSURE",
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"audited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
+      "ambiguous_relational_valence",
       "individual_distress",
-      "protective commitment"
+      "individual_distress_within_relationship",
+      "protective commitment",
+      "tender_protective_bonding"
     ],
     "adjudication_actions":[
       "H4:KEEP",
-      "H5:REINTERPRET"
+      "H5:REINTERPRET",
+      "H6:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_4\": 0.02950938045978546, \"H4_5a\": 0.7329891920089722, \"H4_12\": 0.0681350827217102}, \"H5\": {\"D5\": 0.1, \"D4\": 0.05}, \"H6\": {}}",
-    "family_strict_json":"{\"H4\": 1.0, \"H5\": 1.0, \"H6\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H4\": {}, \"H5\": {\"D5\": 0.1, \"D4\": 0.05}, \"H6\": {}}",
+    "family_strict_json":"{\"H4\": 1.0, \"H5\": 1.0, \"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":103,
@@ -4802,7 +4877,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -4817,7 +4892,8 @@
       "Physical protection from external threats"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -4884,15 +4960,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"OBSTACLE",
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -4902,15 +4978,16 @@
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.2,
+    "family_proportions_json":"{\"H6\": {\"ARC_1\": 0.25, \"ARC_2\": 0.05, \"ARC_5\": 0.2, \"ARC_8\": 0.05}}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -5021,7 +5098,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S8",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -5037,11 +5114,12 @@
 
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.7777777778,
-    "family_proportions_json":"{\"H3\": {\"S8\": 0.7777777777777778, \"S11\": 0.05555555555555556, \"S12\": 0.05555555555555556}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -5066,7 +5144,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -5081,11 +5159,12 @@
 
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.8636363636,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.045454545454545456, \"H4_5\": 0.8636363636363636}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -5110,7 +5189,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -5125,11 +5204,12 @@
       "Physical Protection"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.9473684211,
-    "family_proportions_json":"{\"H4\": {\"H4_5\": 0.9473684210742188}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -5285,18 +5365,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S7",
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_5",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_9",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3",
+    "lexical_context_agreement":"H1,H3,H6",
     "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -5304,18 +5384,22 @@
     "secondary_name":null,
     "proposed_constructs":[
       "Emotional Safety, Reassurance & Caretaking",
+      "external_threat_with_protective_response",
+      "hero_caretaking_under_external_pressure",
       "physical_protection",
       "protective commitment"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:RETAXONOMIZE",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:KEEP",
+      "H4:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S7\": 1.0}, \"H4\": {\"H4_5a\": 0.9333333333333333}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S7\": 1.0}, \"H4\": {\"H4_5\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
     "manual_review_required":true
   },
   {
@@ -5377,34 +5461,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":"H4_6",
     "darkness_code":null,
-    "arc_role":"INTRO",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.2",
     "secondary_name":"Historical & Period Setting",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.25,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.1, \"H4_2\": 0.2, \"H4_6\": 0.25, \"H4_7\": 0.05, \"H4_9\": 0.05}, \"H6\": {}}",
+    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.1, \"H4_2\": 0.2, \"H4_6\": 0.25, \"H4_7\": 0.05, \"H4_9\": 0.05}, \"H6\": {\"ARC_9\": 0.4}}",
     "family_strict_json":"{\"H4\": 0.0, \"H6\": 0.0}",
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":122,
@@ -5427,7 +5512,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -5442,11 +5527,12 @@
       "Physical protection from external threats"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5\": 0.213, \"H4_5a\": 0.05, \"H4_6\": 0.047}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -5509,35 +5595,39 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I3",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"2.2",
     "current_taxonomy_name":"Kissing & Non-Explicit Affection",
     "secondary_id":"4.6",
     "secondary_name":"Emotional Safety, Reassurance & Caretaking",
     "proposed_constructs":[
       "Emotional Safety & Reassurance",
-      "Kissing & Non-Explicit Affection"
+      "Kissing & Non-Explicit Affection",
+      "emotional_safety_closeness_repair",
+      "non_explicit_affection_reassurance",
+      "tenderness_as_trust_restoration"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I3\": 1.0}}",
-    "family_strict_json":"{\"H1\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I3\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":125,
@@ -5599,18 +5689,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I3",
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1",
+    "lexical_context_agreement":"H1,H6",
     "review_status":"audited",
     "current_taxonomy_id":"2.2",
     "current_taxonomy_name":"Kissing & Non-Explicit Affection",
@@ -5618,15 +5708,19 @@
     "secondary_name":"Facial Expression & Non-Sexual Nonverbal Cues",
     "proposed_constructs":[
       "Facial Expression & Non-Sexual Nonverbal Cues",
-      "Kissing & Non-Explicit Affection"
+      "Kissing & Non-Explicit Affection",
+      "nonverbal_affective_reassurance",
+      "physical_closeness_repair",
+      "restored_trust_tenderness"
     ],
     "adjudication_actions":[
-      "H1:KEEP"
+      "H1:KEEP",
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I3\": 1.0}}",
-    "family_strict_json":"{\"H1\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I3\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -5688,19 +5782,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":"H2_2",
-    "security_code":"S4",
+    "security_code":"S2",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H4",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.1",
@@ -5711,20 +5805,25 @@
       "Positive resolution and relief",
       "Reconciliation and relational repair",
       "commitment_security",
+      "emotional_security_reestablished",
+      "hero_commitment_declaration",
       "reassurance",
+      "restored_trust_reassurance",
       "tenderness"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H2:KEEP",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.8,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.8, \"I4\": 0.05}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S2\": 0.7}, \"H4\": {\"H4_1\": 0.7619}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 0.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.8, \"I4\": 0.05}, \"H2\": {\"H2_1\": 0.85}, \"H3\": {\"S2\": 1.0}, \"H4\": {\"H4_1\": 0.7619}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 0.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":129,
@@ -5741,15 +5840,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -5759,14 +5858,15 @@
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "conflict_distance_breakup_threat",
+      "relationship_caused_distress"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
+    "family_proportions_json":"{\"H6\": {\"ARC_4\": 0.15}}",
     "family_strict_json":"{\"H6\": 1.0}",
     "manual_review_required":false
   },
@@ -5785,15 +5885,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -5803,15 +5903,15 @@
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -5917,15 +6017,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -5941,9 +6041,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.85, \"D3\": 0.1}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.85,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.85, \"D3\": 0.1}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -6099,7 +6199,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6116,11 +6216,12 @@
       "reassurance"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S2\": 0.45}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -6235,7 +6336,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S14",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6252,11 +6353,12 @@
       "token_of_affection"
     ],
     "adjudication_actions":[
-      "H3:RENAME"
+      "H3:RENAME",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S1\": 0.42857142857142855}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -6280,7 +6382,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6297,11 +6399,12 @@
       "reassurance"
     ],
     "adjudication_actions":[
-      "H3:RENAME"
+      "H3:RENAME",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S4\": 0.2625709772109985}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -6369,7 +6472,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S2",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -6386,11 +6489,12 @@
       "sense of belonging"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.649,
-    "family_proportions_json":"{\"H3\": {\"S2\": 0.649, \"S9\": 0.568, \"S7\": 0.497, \"S12\": 0.534, \"S3\": 0.533, \"S8\": 0.419}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -6453,15 +6557,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Catalyst",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -6477,9 +6581,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.9}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.9,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.9}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -6591,7 +6695,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -6606,11 +6710,12 @@
       "protective_commitment"
     ],
     "adjudication_actions":[
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_9\": 0.045, \"H4_5a\": 0.04, \"H4_6\": 0.039, \"H4_7\": 0.074}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -6719,18 +6824,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H5,H6",
+    "lexical_context_agreement":"H5",
     "review_status":"manual_review",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -6743,10 +6848,10 @@
     "adjudication_actions":[
       "H5:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D5\": 0.8, \"D2\": 0.1, \"D4\": 0.05}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 0.0, \"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.05,
+    "family_proportions_json":"{\"H5\": {\"D5\": 0.8, \"D2\": 0.1, \"D4\": 0.05}}",
+    "family_strict_json":"{\"H5\": 0.0}",
     "manual_review_required":true
   },
   {
@@ -6943,15 +7048,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I0",
     "hea_code":"H2_0",
     "security_code":"S0",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H3",
@@ -6969,18 +7074,22 @@
       "Reconciliation & Commitment Resolution",
       "Tenderness",
       "commitment resolution",
-      "reconciliation"
+      "emotional_reassurance",
+      "hero_commitment_declaration",
+      "reconciliation",
+      "restored_trust"
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
       "H2:KEEP",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H2\": {}, \"H3\": {\"S1\": 0.1}, \"H4\": {\"H4_2\": 0.07199017405509948, \"H4_4\": 0.07072016000747681, \"H4_5a\": 0.07877119779586791}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H2\": 0.0, \"H3\": 0.0, \"H4\": 1.0}",
+    "family_proportions_json":"{\"H1\": {}, \"H2\": {}, \"H3\": {\"S1\": 0.1}, \"H4\": {\"H4_2\": 0.07199017405509948, \"H4_4\": 0.07072016000747681, \"H4_5a\": 0.07877119779586791}, \"H6\": {\"ARC_1\": 0.021}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H2\": 0.0, \"H3\": 0.0, \"H4\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -7408,18 +7517,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":"H2_5",
     "security_code":"S4",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_8",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H2,H3",
+    "lexical_context_agreement":"H2,H3,H6",
     "review_status":"audited",
     "current_taxonomy_id":"5.3a",
     "current_taxonomy_name":"Romantic Social Rituals & Public Couple Recognition",
@@ -7427,16 +7536,21 @@
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
       "H2_5",
-      "commitment_security"
+      "commitment_security",
+      "hero_declares_commitment",
+      "mutual_commitment_public_recognition",
+      "romantic_social_ritual"
     ],
     "adjudication_actions":[
       "H2:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H6:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "family_proportions_json":"{\"H2\": {\"H2_5\": 0.85}, \"H3\": {\"S4\": 0.6, \"S2\": 0.1}}",
-    "family_strict_json":"{\"H2\": 1.0, \"H3\": 0.0}",
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H2\": {\"H2_5\": 0.85}, \"H3\": {\"S4\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H2\": 1.0, \"H3\": 0.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -7547,7 +7661,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S13",
+    "security_code":"S2",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -7563,11 +7677,12 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:RETAXONOMIZE"
+      "H3:RETAXONOMIZE",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.0,
-    "family_proportions_json":"{\"H3\": {\"S1\": 0.05, \"S2\": 0.5, \"S4\": 0.05}}",
+    "family_proportions_json":"{\"H3\": {\"S2\": 1.0}}",
     "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -7607,11 +7722,12 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.85,
-    "family_proportions_json":"{\"H3\": {\"S13\": 0.85}}",
+    "family_proportions_json":"{\"H3\": {\"S13\": 1.0}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -7735,7 +7851,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S9",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -7755,11 +7871,12 @@
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.45,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S9\": 0.45, \"S5\": 0.25, \"S8\": 0.05, \"S6\": 0.05}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -7778,25 +7895,27 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S0",
     "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
       "Emotional reassurance and caretaking",
+      "Emotional safety and tender caretaking as trust restoration",
+      "Reassurance within the romantic dyad strengthening closeness",
       "Social\/ally network comfort-giving",
       "Supportive relational communication",
       "peer_alliance",
@@ -7805,13 +7924,14 @@
     "adjudication_actions":[
       "H1:REINTERPRET",
       "H3:REINTERPRET",
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I4\": 0.1}, \"H3\": {}, \"H4\": {\"H4_2\": 0.1}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0, \"H4\": 0.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I4\": 0.1}, \"H3\": {}, \"H4\": {\"H4_2\": 0.1}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0, \"H4\": 0.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":176,
@@ -7872,15 +7992,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Hidden Information",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -7890,15 +8010,17 @@
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "misunderstanding_driven_conflict",
+      "secrets_and_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_2\": 0.45, \"ARC_3\": 0.05, \"ARC_4\": 0.05, \"ARC_7\": 0.05, \"ARC_8\": 0.05, \"ARC_9\": 0.05}}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -7960,15 +8082,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.85,
-    "non_couple_prob":0.1,
-    "unclear_prob":0.05,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -7983,10 +8105,10 @@
     "adjudication_actions":[
       "H5:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D1\": 0.2, \"D3\": 0.2, \"D4\": 0.55}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 0.0, \"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.55,
+    "family_proportions_json":"{\"H5\": {\"D1\": 0.2, \"D3\": 0.2, \"D4\": 0.55}}",
+    "family_strict_json":"{\"H5\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -8054,7 +8176,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_7",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -8069,11 +8191,12 @@
       "possessive_claiming"
     ],
     "adjudication_actions":[
-      "H4:RENAME"
+      "H4:RENAME",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5a\": 0.05555555555555555, \"H4_6\": 0.05555555555555555, \"H4_7\": 0.05555555555555555, \"H4_4\": 0.05555555555555555}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -8452,7 +8575,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_2",
     "darkness_code":null,
     "arc_role":null,
@@ -8474,11 +8597,12 @@
     "adjudication_actions":[
       "H1:KEEP",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S5\": 0.35, \"S6\": 0.1, \"S12\": 0.05}, \"H4\": {}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -8502,7 +8626,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S8",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -8519,11 +8643,12 @@
       "financial stability"
     ],
     "adjudication_actions":[
-      "H3:RENAME"
+      "H3:RENAME",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S3\": 0.05920705199241639, \"S4\": 0.1260166281449146, \"S5\": 0.1106191466189088, \"S8\": 0.1312215926148865, \"S9\": 0.05920705199241639}}",
+    "family_proportions_json":"{\"H3\": {}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -8591,7 +8716,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
@@ -8613,11 +8738,12 @@
     "adjudication_actions":[
       "H1:KEEP",
       "H3:RENAME",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S4\": 0.05263157894736842, \"S9\": 0.05263157894736842, \"S12\": 0.05263157894736842, \"S14\": 0.05263157894736842}, \"H4\": {\"H4_2\": 0.05, \"H4_4\": 0.05}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {\"H4_2\": 0.05, \"H4_4\": 0.05}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 1.0, \"H4\": 0.0}",
     "manual_review_required":false
   },
@@ -8636,32 +8762,33 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"9.2",
     "secondary_name":"Promise, Vow & Future-Tense Speech Acts",
     "proposed_constructs":[
-
+      "disclosure_of_secret_or_hidden_information",
+      "vow_or_promise_speech_act_secondary"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
+    "weighted_weight":0.85,
+    "family_proportions_json":"{\"H6\": {\"ARC_5\": 0.85, \"ARC_9\": 0.1}}",
     "family_strict_json":"{\"H6\": 1.0}",
     "manual_review_required":false
   },
@@ -9310,34 +9437,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":"5.1",
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
-
+      "ARC_3 separation_breakup_threat",
+      "ARC_6 repair"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_2\": 0.1, \"ARC_3\": 0.3, \"ARC_4\": 0.15, \"ARC_9\": 0.2}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":211,
@@ -9488,28 +9616,30 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "distress from undisclosed truth",
+      "hidden information driving misunderstanding",
+      "secret-based relational tension"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -9641,11 +9771,12 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.75,
-    "family_proportions_json":"{\"H3\": {\"S13\": 0.75}}",
+    "family_proportions_json":"{\"H3\": {\"S13\": 1.0}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -9708,18 +9839,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Complicating Factor",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H5,H6",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -9732,9 +9863,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.95}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.95,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.95}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -9846,7 +9977,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_7",
+    "care_protection_code":"H4_0",
     "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
@@ -9864,11 +9995,12 @@
     ],
     "adjudication_actions":[
       "H4:KEEP",
-      "H5:REINTERPRET"
+      "H5:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5a\": 0.09090909090909091, \"H4_7\": 0.045454545454545456}, \"H5\": {\"D1\": 0.2, \"D4\": 0.05}}",
+    "family_proportions_json":"{\"H4\": {}, \"H5\": {\"D1\": 0.2, \"D4\": 0.05}}",
     "family_strict_json":"{\"H4\": 1.0, \"H5\": 1.0}",
     "manual_review_required":true
   },
@@ -10204,18 +10336,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
     "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.2",
     "current_taxonomy_name":"Ongoing Courtship & Everyday Relational Bonding",
@@ -10223,17 +10355,19 @@
     "secondary_name":null,
     "proposed_constructs":[
       "Emotional reassurance and relational caretaking in ongoing courtship",
+      "ambiguous_hero_response",
       "everyday_relational_bonding",
       "ongoing_courtship"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H3:REINTERPRET"
+      "H3:REINTERPRET",
+      "H6:KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I4\": 0.05}, \"H3\": {\"S1\": 0.15, \"S3\": 0.05, \"S6\": 0.05, \"S7\": 0.05}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0}",
+    "family_proportions_json":"{\"H1\": {\"I4\": 0.05}, \"H3\": {\"S1\": 0.15, \"S3\": 0.05, \"S6\": 0.05, \"S7\": 0.05}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -10427,34 +10561,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_5",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "disclosure_revelation",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
     "family_proportions_json":"{\"H6\": {}}",
     "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "manual_review_required":true
   },
   {
     "topic_id":238,
@@ -10521,7 +10656,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -10536,11 +10671,12 @@
       "protective_commitment"
     ],
     "adjudication_actions":[
-      "H4:RENAME"
+      "H4:RENAME",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5a\": 0.09090909090909091}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -10559,19 +10695,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
-    "care_protection_code":"H4_5a",
+    "security_code":"S0",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"4.2",
@@ -10582,18 +10718,24 @@
       "Emotional Safety & Reassurance",
       "Ongoing Relational Bonding (non-contact)",
       "Reassurance",
-      "emotional_reassurance"
+      "emotional_reassurance",
+      "emotional_safety_caretaking",
+      "restored_trust_reassurance",
+      "tender_protective_bonding"
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
       "H3:REINTERPRET",
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H6:REINTERPRET",
+      "H3:HUMAN_REMOVE",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H3\": {}, \"H4\": {\"H4_9\": 0.09090909090909091, \"H4_7\": 0.04545454545454545}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H3\": 1.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I1\": 1.0}, \"H3\": {}, \"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":241,
@@ -10654,18 +10796,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":"H2_5",
     "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_6",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3",
+    "lexical_context_agreement":"H1,H3,H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
@@ -10676,17 +10818,22 @@
       "H2_5",
       "Reconciliation after conflict or misunderstanding",
       "Vulnerability disclosure and trust-building",
-      "emotional_reassurance"
+      "apology_reconciliation_repair",
+      "emotional_reassurance",
+      "emotional_reassurance_post_conflict",
+      "reinterpretation_of_hero_behaviour"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H2:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H6:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H2\": {\"H2_4\": 0.85}, \"H3\": {\"S1\": 0.95, \"S2\": 0.05}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 1.0}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H2\": {\"H2_4\": 0.85}, \"H3\": {\"S1\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -10748,18 +10895,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict Resolution",
+    "arc_role":null,
     "mixed_topic":true,
     "mixed_hypotheses":"H5",
-    "lexical_context_agreement":"H6",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -10773,10 +10920,10 @@
     "adjudication_actions":[
       "H5:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.35, \"D5\": 0.5}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 0.0, \"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.35,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.35, \"D5\": 0.5}}",
+    "family_strict_json":"{\"H5\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -10883,19 +11030,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_1",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
     "secondary_id":"9.2",
@@ -10904,20 +11051,25 @@
       "Caretaking Without Physical Contact",
       "Emotional Safety & Reassurance",
       "Promise \/ Vow \/ Future-Tense Speech Acts",
+      "emotional reassurance restoring closeness",
       "emotional_reassurance",
+      "future-oriented vow reinforcing relational security",
       "reassurance",
+      "tender caretaking as trust repair",
       "tenderness"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.25}, \"H3\": {\"S2\": 0.8}, \"H4\": {\"H4_5\": 0.05, \"H4_5a\": 0.15}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.25}, \"H3\": {}, \"H4\": {\"H4_5\": 0.05, \"H4_5a\": 0.15}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":248,
@@ -10934,34 +11086,34 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"audited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_4\": 0.15, \"ARC_9\": 0.4}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":249,
@@ -11175,7 +11327,8 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -11242,34 +11395,34 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.4",
     "current_taxonomy_name":"Conflict, Distance & Breakup Threats",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_3\": 0.05, \"ARC_6\": 0.25, \"ARC_9\": 0.2}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":257,
@@ -11551,34 +11704,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
-    "mixed_topic":false,
-    "mixed_hypotheses":"",
-    "lexical_context_agreement":"H6",
-    "review_status":"audited",
+    "arc_role":"MIXED",
+    "mixed_topic":true,
+    "mixed_hypotheses":"H6",
+    "lexical_context_agreement":"",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "ARC_5",
+      "ARC_9"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_9\": 1.0}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":265,
@@ -11595,15 +11749,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict Initiator",
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -11613,15 +11767,16 @@
     "secondary_id":"4.4",
     "secondary_name":"Conflict, Distance & Breakup Threats",
     "proposed_constructs":[
-
+      "relationship_caused_distress",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
     "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 0.0}",
+    "family_strict_json":"{\"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -11815,15 +11970,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -11833,14 +11988,15 @@
     "secondary_id":"8.5",
     "secondary_name":"Movement, Transit & Spatial Transition",
     "proposed_constructs":[
-
+      "misunderstanding_between_main_couple",
+      "secrets_and_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
+    "family_proportions_json":"{\"H6\": {\"ARC_9\": 0.1, \"ARC_1\": 0.05}}",
     "family_strict_json":"{\"H6\": 1.0}",
     "manual_review_required":false
   },
@@ -12046,7 +12202,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_5a",
     "darkness_code":null,
     "arc_role":null,
@@ -12069,11 +12225,12 @@
     "adjudication_actions":[
       "H1:KEEP",
       "H3:REINTERPRET",
-      "H4:RENAME"
+      "H4:RENAME",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.5833333333,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S7\": 0.3, \"S11\": 0.2, \"S9\": 0.1}, \"H4\": {\"H4_4\": 0.08333333333333333, \"H4_5a\": 0.5833333333333334, \"H4_6\": 0.16666666666666666, \"H4_7\": 0.04166666666666667, \"H4_9\": 0.04166666666666667}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {\"H4_4\": 0.08333333333333333, \"H4_5a\": 0.5833333333333334, \"H4_6\": 0.16666666666666666, \"H4_7\": 0.04166666666666667, \"H4_9\": 0.04166666666666667}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 0.0}",
     "manual_review_required":false
   },
@@ -12227,15 +12384,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Conflict",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -12251,10 +12408,10 @@
     "adjudication_actions":[
       "H5:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.35, \"D5\": 0.6}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 0.0, \"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.35,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.35, \"D5\": 0.6}}",
+    "family_strict_json":"{\"H5\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -12361,15 +12518,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"MIXED",
-    "arc_role":"EXTERNAL_PLOT_CONFLICT",
+    "arc_role":"ARC_2",
     "mixed_topic":true,
     "mixed_hypotheses":"H5",
     "lexical_context_agreement":"",
@@ -12379,15 +12536,18 @@
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
+      "escalating conflict between main couple",
       "individual_distress",
+      "negative emotional distress tied to relational tension",
       "relational_darkness"
     ],
     "adjudication_actions":[
-      "H5:REINTERPRET"
+      "H5:REINTERPRET",
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D1\": 0.7, \"D2\": 0.05, \"D4\": 0.15}, \"H6\": {}}",
+    "family_proportions_json":"{\"H5\": {\"D1\": 0.7, \"D2\": 0.05, \"D4\": 0.15}, \"H6\": {\"ARC_2\": 1.0}}",
     "family_strict_json":"{\"H5\": 0.0, \"H6\": 1.0}",
     "manual_review_required":true
   },
@@ -12406,33 +12566,33 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Instigator",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -12632,18 +12792,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_8",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_4",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3,H4",
+    "lexical_context_agreement":"H3,H4,H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.7",
     "current_taxonomy_name":"Jealousy & Possessive Romance Conflict",
@@ -12653,16 +12813,22 @@
       "Conflict and distance driven by jealousy",
       "Jealous possessiveness",
       "Possessive romantic conflict",
-      "emotional_reassurance"
+      "antagonistic_heroine_response",
+      "emotional_reassurance",
+      "jealousy_possessive_conflict",
+      "relationship_caused_distress"
     ],
     "adjudication_actions":[
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:KEEP",
+      "H3:HUMAN_REMOVE",
+      "H4:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.85,
-    "family_proportions_json":"{\"H3\": {\"S1\": 0.85, \"S12\": 0.05}, \"H4\": {\"H4_8\": 0.85, \"H4_10\": 0.05}}",
-    "family_strict_json":"{\"H3\": 1.0, \"H4\": 1.0}",
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {}, \"H4\": {\"H4_8\": 1.0}, \"H6\": {}}",
+    "family_strict_json":"{\"H3\": 1.0, \"H4\": 1.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -12701,11 +12867,12 @@
       "coercive control"
     ],
     "adjudication_actions":[
-      "H4:RENAME"
+      "H4:RENAME",
+      "H4:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.8571428571,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.14285714285714285, \"H4_9\": 0.8571428571428571}}",
+    "family_proportions_json":"{\"H4\": {\"H4_9\": 1.0}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -12817,7 +12984,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_5a",
     "darkness_code":null,
     "arc_role":null,
@@ -12839,11 +13006,12 @@
     "adjudication_actions":[
       "H1:REINTERPRET",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 0.3}, \"H3\": {\"S1\": 0.2, \"S6\": 0.05, \"S7\": 0.05}, \"H4\": {\"H4_1\": 0.08333333333333333, \"H4_4\": 0.08333333333333333, \"H4_5a\": 0.16666666666666666, \"H4_6\": 0.08333333333333333, \"H4_9\": 0.08333333333333333}}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 0.3}, \"H3\": {}, \"H4\": {\"H4_1\": 0.08333333333333333, \"H4_4\": 0.08333333333333333, \"H4_5a\": 0.16666666666666666, \"H4_6\": 0.08333333333333333, \"H4_9\": 0.08333333333333333}}",
     "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 0.0}",
     "manual_review_required":false
   },
@@ -12862,15 +13030,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -12880,15 +13048,17 @@
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "hidden information driving relational tension",
+      "internal ambivalence amplifying misread signals",
+      "misunderstanding rooted in undisclosed secret"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.45,
+    "family_proportions_json":"{\"H6\": {\"ARC_1\": 0.45, \"ARC_4\": 0.1, \"ARC_5\": 0.05}}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -12914,7 +13084,7 @@
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"REFINED_FALLING",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -12924,10 +13094,11 @@
     "secondary_id":"4.5",
     "secondary_name":"Reconciliation, Commitments & HEA",
     "proposed_constructs":[
-
+      "misunderstanding_between_main_couple",
+      "secrets_hidden_information"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
@@ -12994,19 +13165,19 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":"I2",
     "hea_code":"H2_5",
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_7",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H1,H3",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.5",
     "current_taxonomy_name":"Reconciliation, Commitments & HEA",
     "secondary_id":"3.2",
@@ -13016,18 +13187,23 @@
       "H2_5",
       "Reconciliation and repair of relational rupture",
       "Vulnerability disclosure under distress",
-      "emotional_reassurance"
+      "emotional_reassurance",
+      "emotional_reassurance_and_security",
+      "heroine_reframes_hero_wound",
+      "restored_trust_via_reinterpretation"
     ],
     "adjudication_actions":[
       "H1:KEEP",
       "H2:KEEP",
-      "H3:KEEP"
+      "H3:KEEP",
+      "H6:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H2\": {\"H2_4\": 0.85}, \"H3\": {\"S1\": 0.7, \"S4\": 0.15}}",
-    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 1.0}",
-    "manual_review_required":false
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H2\": {\"H2_4\": 0.85}, \"H3\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H2\": 0.0, \"H3\": 1.0, \"H6\": 1.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":306,
@@ -13093,8 +13269,8 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
-    "care_protection_code":"H4_5",
+    "security_code":"S0",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -13113,11 +13289,13 @@
     "adjudication_actions":[
       "H1:REINTERPRET",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S5\": 0.2}, \"H4\": {\"H4_5a\": 0.0588235294117647, \"H4_6\": 0.0588235294117647, \"H4_7\": 0.0588235294117647}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}, \"H4\": {}}",
     "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -13312,34 +13490,36 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Hidden Information",
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H6",
-    "review_status":"audited",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.3",
     "secondary_name":"Ambivalence & Internal Conflict",
     "proposed_constructs":[
-
+      "ambivalence_internal_conflict",
+      "secrets_hidden_information",
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":315,
@@ -13361,8 +13541,8 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S1",
-    "care_protection_code":"H4_8",
+    "security_code":"S0",
+    "care_protection_code":"H4_7",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -13379,11 +13559,13 @@
     ],
     "adjudication_actions":[
       "H3:REINTERPRET",
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H3:HUMAN_REMOVE",
+      "H4:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H3\": {\"S1\": 0.5, \"S3\": 0.05, \"S4\": 0.25}, \"H4\": {\"H4_7\": 0.05, \"H4_8\": 0.05}}",
+    "family_proportions_json":"{\"H3\": {}, \"H4\": {\"H4_7\": 1.0}}",
     "family_strict_json":"{\"H3\": 0.0, \"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -13402,15 +13584,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Conflict",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -13422,15 +13604,17 @@
     "proposed_constructs":[
       "Breakup Threats",
       "Conflict",
-      "Distance"
+      "Distance",
+      "off_target"
     ],
     "adjudication_actions":[
-      "H3:RENAME"
+      "H3:RENAME",
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "family_proportions_json":"{\"H3\": {\"S7\": 0.023255813953488372, \"S11\": 0.023255813953488372}, \"H6\": {}}",
-    "family_strict_json":"{\"H3\": 0.0, \"H6\": 1.0}",
+    "family_strict_json":"{\"H3\": 0.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -13492,33 +13676,35 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"FALLING",
+    "arc_role":"ARC_1",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
+    "lexical_context_agreement":"H6",
     "review_status":"audited",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "hidden_information_driving_conflict",
+      "misunderstanding_between_main_couple",
+      "negative_emotional_distress_secondary"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "strict_weight":0.0,
+    "weighted_weight":0.6,
+    "family_proportions_json":"{\"H6\": {\"ARC_1\": 0.6, \"ARC_2\": 0.15, \"ARC_6\": 0.15, \"ARC_4\": 0.05}}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -13624,15 +13810,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"Internal Struggle",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"H5",
@@ -13650,9 +13836,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D1\": 0.15, \"D4\": 0.75}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.75,
+    "family_proportions_json":"{\"H5\": {\"D1\": 0.15, \"D4\": 0.75}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -13944,7 +14130,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -13959,11 +14145,12 @@
       "protective_commitment"
     ],
     "adjudication_actions":[
-      "H4:RENAME"
+      "H4:RENAME",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_6\": 0.06857903003692627, \"H4_9\": 0.05395947098731995}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -14171,7 +14358,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":"D3",
     "arc_role":null,
     "mixed_topic":false,
@@ -14189,11 +14376,12 @@
     ],
     "adjudication_actions":[
       "H4:REINTERPRET",
-      "H5:REINTERPRET"
+      "H5:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_1\": 0.069, \"H4_4\": 0.105, \"H4_5a\": 0.046, \"H4_6\": 0.081, \"H4_7\": 0.122}, \"H5\": {\"D3\": 0.15, \"D4\": 0.05, \"D5\": 0.05}}",
+    "family_proportions_json":"{\"H4\": {}, \"H5\": {\"D3\": 0.15, \"D4\": 0.05, \"D5\": 0.05}}",
     "family_strict_json":"{\"H4\": 1.0, \"H5\": 1.0}",
     "manual_review_required":true
   },
@@ -14301,15 +14489,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5a",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
-    "arc_role":null,
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -14320,15 +14508,19 @@
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
       "Future-Tense Safety Pledge",
-      "Promise of Protection"
+      "Promise of Protection",
+      "everyday_relational_bonding",
+      "promise_vow_speech_acts"
     ],
     "adjudication_actions":[
-      "H4:KEEP"
+      "H4:KEEP",
+      "H6:EXCLUDE_FROM_HYPOTHESIS",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5a\": 0.03448275862068966, \"H4_6\": 0.03448275862068966, \"H4_7\": 0.03448275862068966, \"H4_9\": 0.1724137293034473}}",
-    "family_strict_json":"{\"H4\": 1.0}",
+    "family_proportions_json":"{\"H4\": {}, \"H6\": {}}",
+    "family_strict_json":"{\"H4\": 1.0, \"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -14577,7 +14769,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I9",
     "hea_code":null,
-    "security_code":"S14",
+    "security_code":"S10",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -14598,11 +14790,12 @@
     ],
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
-      "H3:RENAME"
+      "H3:RENAME",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S1\": 0.47764667868614197, \"S3\": 0.4956766963005066, \"S7\": 0.45069992542266846}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S10\": 1.0}}",
     "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0}",
     "manual_review_required":true
   },
@@ -14621,15 +14814,15 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.1,
+    "non_couple_prob":0.8,
+    "unclear_prob":0.1,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"Obstacle",
+    "arc_role":"ARC_0",
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
@@ -14639,15 +14832,15 @@
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "off_target"
     ],
     "adjudication_actions":[
-
+      "H6:REINTERPRET"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
     "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "family_strict_json":"{\"H6\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -14846,7 +15039,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S2",
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -14867,11 +15060,12 @@
     ],
     "adjudication_actions":[
       "H1:REINTERPRET",
-      "H3:REINTERPRET"
+      "H3:REINTERPRET",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.6,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S2\": 0.6}}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0}",
     "manual_review_required":false
   },
@@ -15079,7 +15273,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_2",
     "darkness_code":null,
     "arc_role":null,
@@ -15101,11 +15295,12 @@
     "adjudication_actions":[
       "H1:KEEP",
       "H3:REINTERPRET",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {\"S1\": 0.25, \"S6\": 0.2}, \"H4\": {\"H4_2\": 0.9473684210526315, \"H4_4\": 0.0526315789473685}}",
+    "family_proportions_json":"{\"H1\": {\"I2\": 1.0}, \"H3\": {}, \"H4\": {\"H4_2\": 0.9473684210526315, \"H4_4\": 0.0526315789473685}}",
     "family_strict_json":"{\"H1\": 1.0, \"H3\": 1.0, \"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -15173,7 +15368,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I2",
     "hea_code":null,
-    "security_code":"S1",
+    "security_code":"S0",
     "care_protection_code":"H4_5a",
     "darkness_code":null,
     "arc_role":null,
@@ -15194,11 +15389,12 @@
     "adjudication_actions":[
       "H1:RETAXONOMIZE",
       "H3:KEEP",
-      "H4:KEEP"
+      "H4:KEEP",
+      "H3:HUMAN_REMOVE"
     ],
     "strict_weight":0.0,
     "weighted_weight":0.6666666667,
-    "family_proportions_json":"{\"H1\": {\"I3\": 0.5, \"I6\": 0.15}, \"H3\": {\"S1\": 0.5}, \"H4\": {\"H4_5a\": 0.6666666666666666}}",
+    "family_proportions_json":"{\"H1\": {\"I3\": 0.5, \"I6\": 0.15}, \"H3\": {}, \"H4\": {\"H4_5a\": 0.6666666666666666}}",
     "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 0.0}",
     "manual_review_required":true
   },
@@ -15261,34 +15457,34 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.85,
+    "non_couple_prob":0.1,
+    "unclear_prob":0.05,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":null,
-    "arc_role":"OBSTACLE",
+    "arc_role":"ARC_10",
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"audited",
+    "lexical_context_agreement":"H6",
+    "review_status":"manual_review",
     "current_taxonomy_id":"4.3",
     "current_taxonomy_name":"Secrets, Misunderstandings & Hidden Information",
     "secondary_id":"10.1",
     "secondary_name":"Paranormal & Immortal Beings",
     "proposed_constructs":[
-
+      "unclear_arc_role"
     ],
     "adjudication_actions":[
-
+      "H6:KEEP"
     ],
-    "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
-    "manual_review_required":false
+    "strict_weight":0.0,
+    "weighted_weight":0.0,
+    "family_proportions_json":"{\"H6\": {\"ARC_4\": 0.2, \"ARC_9\": 0.3}}",
+    "family_strict_json":"{\"H6\": 0.0}",
+    "manual_review_required":true
   },
   {
     "topic_id":363,
@@ -15311,7 +15507,7 @@
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
-    "care_protection_code":"H4_5",
+    "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
@@ -15326,11 +15522,12 @@
       "External Protection"
     ],
     "adjudication_actions":[
-      "H4:REINTERPRET"
+      "H4:REINTERPRET",
+      "H4:HUMAN_REMOVE"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H4\": {\"H4_5a\": 0.1645466089248657}}",
+    "family_proportions_json":"{\"H4\": {}}",
     "family_strict_json":"{\"H4\": 1.0}",
     "manual_review_required":false
   },
@@ -15370,11 +15567,12 @@
       "appearance_grooming"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:KEEP",
+      "H3:HUMAN_KEEP"
     ],
     "strict_weight":1.0,
     "weighted_weight":0.7,
-    "family_proportions_json":"{\"H3\": {\"S5\": 0.1, \"S12\": 0.15, \"S13\": 0.7}}",
+    "family_proportions_json":"{\"H3\": {\"S13\": 1.0}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -15439,18 +15637,18 @@
     "mmr_keywords":[
 
     ],
-    "main_couple_prob":0.0,
-    "non_couple_prob":0.0,
-    "unclear_prob":1.0,
+    "main_couple_prob":0.33,
+    "non_couple_prob":0.33,
+    "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
     "security_code":null,
     "care_protection_code":null,
     "darkness_code":"D4",
-    "arc_role":"INNER_CONFLICT",
+    "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H5,H6",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"3.2",
     "current_taxonomy_name":"Negative Emotions & Distress",
@@ -15465,9 +15663,9 @@
       "H5:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":1.0,
-    "family_proportions_json":"{\"H5\": {\"D4\": 0.8, \"D3\": 0.15}, \"H6\": {}}",
-    "family_strict_json":"{\"H5\": 1.0, \"H6\": 1.0}",
+    "weighted_weight":0.8,
+    "family_proportions_json":"{\"H5\": {\"D4\": 0.8, \"D3\": 0.15}}",
+    "family_strict_json":"{\"H5\": 1.0}",
     "manual_review_required":false
   },
   {

@@ -1,0 +1,55 @@
+{
+  "decision": "keep_h6_v2",
+  "prose": "Strict RAX_arc_rising grew from 2 to 19 credible topics (\u22653). Retain H6-v2 as the final refined H6 operationalization.",
+  "n_strict_rising": 19,
+  "strict_rising_topic_ids": [
+    3,
+    29,
+    45,
+    46,
+    56,
+    85,
+    109,
+    124,
+    126,
+    128,
+    157,
+    167,
+    175,
+    194,
+    237,
+    240,
+    242,
+    247,
+    305
+  ],
+  "n_strict_falling": 12,
+  "baseline_RARC": {
+    "cliffs_delta": 0.0070086769578465,
+    "ci_low": -0.014876293277979,
+    "ci_high": 0.0272087947755097,
+    "verdict": "thin:no reliable effect",
+    "measurement_gate": "thin"
+  },
+  "h6_v2_effects": {
+    "RARC": {
+      "cliffs_delta": -0.05268257948444455,
+      "ci_low": -0.07568693244287311,
+      "ci_high": -0.02860792239893134,
+      "magnitude": "negligible"
+    },
+    "DELTA_rising": {
+      "cliffs_delta": -0.09802488113538055,
+      "ci_low": -0.12061474913491652,
+      "ci_high": -0.07619701523407776,
+      "magnitude": "negligible"
+    },
+    "DELTA_falling": {
+      "cliffs_delta": -0.08209673030188736,
+      "ci_low": -0.10562053733301134,
+      "ci_high": -0.06060240304608599,
+      "magnitude": "negligible"
+    }
+  },
+  "three_panel_figure": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/h6_radway_day/figures/h6_three_panel.png"
+}

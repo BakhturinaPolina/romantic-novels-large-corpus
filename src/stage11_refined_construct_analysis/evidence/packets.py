@@ -175,8 +175,13 @@ def fetch_topic_sentences(
     threads: int = 4,
     exhaustive: bool = False,
     max_sentences: Optional[int] = None,
+    per_tertile: Optional[int] = None,
 ) -> pd.DataFrame:
-    """Pull hard-assigned sentences with normalized position and tertile."""
+    """Pull hard-assigned sentences with normalized position and tertile.
+
+    If ``per_tertile`` is set, rank within (book, tertile) and keep that many
+    high-confidence sentences per position (H6 position_x_books design).
+    """
     import duckdb
 
     if not book_ids:
@@ -188,12 +193,22 @@ def fetch_topic_sentences(
     book_list = ", ".join(str(int(b)) for b in book_ids)
     tid = int(topic_id)
 
-    # Materialise hits for these books+topic, then attach book-level position.
-    # Tertiles use ntile(3) over the full book order (same rule as Stage 10).
-    limit_clause = ""
-    if exhaustive and max_sentences is not None:
-        # Soft cap after ranking; still prefer diverse books via per-book rank.
-        pass
+    if per_tertile is not None:
+        rank_sql = f"""
+                row_number() over (
+                    partition by b.book_id, p.tertile_num
+                    order by b.max_topic_prob desc, b.chapter_index, b.sentence_index
+                ) as rank_in_slot
+        """
+        where_rank = f"rank_in_slot <= {int(per_tertile)}"
+    else:
+        rank_sql = f"""
+                row_number() over (
+                    partition by b.book_id
+                    order by b.max_topic_prob desc, b.chapter_index, b.sentence_index
+                ) as rank_in_book
+        """
+        where_rank = f"rank_in_book <= {int(per_book)}"
 
     query = f"""
         with base as (
@@ -229,10 +244,7 @@ def fetch_topic_sentences(
                 b.*,
                 p.tertile_num,
                 p.normalized_position,
-                row_number() over (
-                    partition by b.book_id
-                    order by b.max_topic_prob desc, b.chapter_index, b.sentence_index
-                ) as rank_in_book
+                {rank_sql}
             from base b
             left join book_pos p
               on b.book_id = p.book_id
@@ -241,8 +253,8 @@ def fetch_topic_sentences(
         )
         select *
         from joined
-        where rank_in_book <= {int(per_book)}
-        order by book_id, rank_in_book
+        where {where_rank}
+        order by book_id, tertile_num, max_topic_prob desc
     """
     result = con.execute(query).df()
     con.close()
@@ -251,9 +263,36 @@ def fetch_topic_sentences(
         return result
 
     result["tertile"] = result["tertile_num"].map(TERTILE_MAP)
+    if "rank_in_book" not in result.columns and "rank_in_slot" in result.columns:
+        result["rank_in_book"] = result["rank_in_slot"]
     if max_sentences is not None and len(result) > max_sentences:
         result = result.head(int(max_sentences)).copy()
     return result
+
+
+def sample_position_books(
+    book_topic_counts: pd.DataFrame,
+    topic_id: int,
+    *,
+    n_books: int = 4,
+    seed: int = 42,
+    min_sentences: int = 6,
+) -> pd.DataFrame:
+    """Pick books with enough hard-assigned mass for position-stratified sampling."""
+    counts = book_topic_counts[book_topic_counts["topic_id"] == int(topic_id)].copy()
+    if counts.empty:
+        return pd.DataFrame(columns=["book_id", "share", "n_sentences", "cell_meaning"])
+    eligible = counts[counts["n_sentences"] >= int(min_sentences)].copy()
+    if eligible.empty:
+        eligible = counts[counts["n_sentences"] > 0].copy()
+    if eligible.empty:
+        return pd.DataFrame(columns=["book_id", "share", "n_sentences", "cell_meaning"])
+    take = min(int(n_books), len(eligible))
+    chosen = eligible.nlargest(take, "n_sentences").copy()
+    # Stable shuffle among top for diversity when many books tie
+    chosen = chosen.sample(n=len(chosen), random_state=seed + int(topic_id)).reset_index(drop=True)
+    chosen["cell_meaning"] = "position_sample"
+    return chosen[["book_id", "share", "n_sentences", "cell_meaning"]]
 
 
 def _anonymous_book_map(book_ids: Iterable[int]) -> Dict[int, str]:
@@ -273,8 +312,15 @@ def build_evidence_packet(
     cell_key: CellKey,
     sentence_files: Optional[Sequence[Path]] = None,
     include_contextual: bool = True,
+    sampling_design: Optional[str] = None,
+    stage11_codes: Optional[Sequence[str]] = None,
+    radway_other_plausible: Optional[Sequence[str]] = None,
 ) -> Dict[str, Any]:
-    """Build one blinded evidence packet for a topic."""
+    """Build one blinded evidence packet for a topic.
+
+    ``sampling_design='position_x_books'`` samples 3–4 books × begin/middle/end
+    sentences (H6 Radway day). Ratings stay sealed; Radway/taxonomy reveal in Pass C.
+    """
     tid = int(topic_id)
     row = lookup.loc[lookup["topic_id"] == tid]
     if row.empty:
@@ -286,6 +332,12 @@ def build_evidence_packet(
     exhaustive = leaf in exhaustive_leaves
 
     sampling_cfg = cfg.section("evidence", "sampling")
+    design = str(sampling_design or sampling_cfg.get("design") or "prevalence_x_rating")
+    position_mode = design == "position_x_books"
+    # Position mode never uses exhaustive rating×prevalence cells
+    if position_mode:
+        exhaustive = False
+
     exh_cfg = cfg.section("evidence", "exhaustive")
     books_per_cell = int(exh_cfg["books_per_cell"] if exhaustive else sampling_cfg["books_per_cell"])
     per_book = int(
@@ -294,10 +346,19 @@ def build_evidence_packet(
     max_books = int(exh_cfg["max_books_per_topic"]) if exhaustive else None
     max_sentences = int(exh_cfg["max_sentences_per_topic"]) if exhaustive else None
 
+    if position_mode:
+        n_books = int(sampling_cfg.get("position_n_books", 4))
+        per_tertile = int(sampling_cfg.get("position_sentences_per_tertile", 4))
+        books_per_cell = n_books
+        per_book = per_tertile * 3
+        max_books = n_books
+        max_sentences = n_books * per_tertile * 3
+    else:
+        per_tertile = None
+
     lexical = lexical_block(tid, metadata, representation_names=cfg.section("evidence", "representation_names"))
     stage08_snips = list(lexical.get("stage08_snippets") or [])
     rep_docs = list(representative_docs.get(tid, []))
-    # Exhaustive: keep all Stage08 + representative docs
     if exhaustive:
         seen: Set[str] = set()
         all_snips: List[str] = []
@@ -308,6 +369,7 @@ def build_evidence_packet(
                 all_snips.append(text.strip())
         stage08_snips = all_snips
 
+    others = list(radway_other_plausible or [])
     sealed_taxonomy = {
         "taxonomy_main_id": leaf,
         "taxonomy_main_name": meta_row.get("taxonomy_main_name"),
@@ -315,12 +377,19 @@ def build_evidence_packet(
         "taxonomy_secondary_name": meta_row.get("taxonomy_secondary_name"),
         "taxonomy_confidence": meta_row.get("taxonomy_confidence"),
         "label_rationale": meta_row.get("label_rationale"),
+        "radway_main_id": meta_row.get("radway_main_id"),
+        "radway_main_name": meta_row.get("radway_main_name"),
+        "radway_secondary_id": meta_row.get("radway_secondary_id"),
+        "radway_other_plausible_ids": others,
+        "radway_phase": meta_row.get("radway_phase"),
+        "radway_confidence": meta_row.get("radway_confidence"),
+        "stage11_codes": list(stage11_codes or []),
     }
 
     packet: Dict[str, Any] = {
         "topic_id": tid,
         "exhaustive": exhaustive,
-        "taxonomy_leaf_sealed": leaf,  # path for builders; stripped from LLM pass A/B views
+        "taxonomy_leaf_sealed": leaf,
         "lexical": {
             "representations": lexical["representations"],
             "stage08_snippets": stage08_snips,
@@ -330,10 +399,11 @@ def build_evidence_packet(
             "sentences": [],
             "books_sampled": [],
             "sampling": {
-                "design": sampling_cfg.get("design"),
+                "design": design,
                 "exhaustive": exhaustive,
                 "books_per_cell": books_per_cell,
                 "sentences_per_book_topic": per_book,
+                "position_sentences_per_tertile": per_tertile,
             },
         },
         "pass_c_reveal": sealed_taxonomy,
@@ -341,6 +411,7 @@ def build_evidence_packet(
             "rating_cells": "CELL_A..CELL_D",
             "position_visible": True,
             "taxonomy_hidden_until_pass_c": True,
+            "radway_hidden_until_pass_c": True,
         },
     }
 
@@ -348,19 +419,28 @@ def build_evidence_packet(
         return packet
 
     tier_column = str(sampling_cfg["tier_column"])
-    prevalence = _prevalence_frame(
-        book_topic_counts, tid, analysis_frame, tier_column=tier_column
-    )
-    sampled = sample_prevalence_rating_books(
-        prevalence,
-        tier_column=tier_column,
-        tier_high=str(sampling_cfg["tier_high"]),
-        tier_low=str(sampling_cfg["tier_low"]),
-        quantiles=list(sampling_cfg["prevalence_quantiles"]),
-        books_per_cell=books_per_cell,
-        seed=int(sampling_cfg["seed"]) + tid,
-        max_books=max_books,
-    )
+    if position_mode:
+        sampled = sample_position_books(
+            book_topic_counts,
+            tid,
+            n_books=int(sampling_cfg.get("position_n_books", 4)),
+            seed=int(sampling_cfg["seed"]) + tid,
+            min_sentences=int(sampling_cfg.get("position_min_sentences", 6)),
+        )
+    else:
+        prevalence = _prevalence_frame(
+            book_topic_counts, tid, analysis_frame, tier_column=tier_column
+        )
+        sampled = sample_prevalence_rating_books(
+            prevalence,
+            tier_column=tier_column,
+            tier_high=str(sampling_cfg["tier_high"]),
+            tier_low=str(sampling_cfg["tier_low"]),
+            quantiles=list(sampling_cfg["prevalence_quantiles"]),
+            books_per_cell=books_per_cell,
+            seed=int(sampling_cfg["seed"]) + tid,
+            max_books=max_books,
+        )
 
     if sampled.empty:
         return packet
@@ -370,14 +450,17 @@ def build_evidence_packet(
     for _, brow in sampled.iterrows():
         record = {
             "book_id_anon": anon[int(brow["book_id"])],
-            "book_id_real": int(brow["book_id"]),  # stripped from LLM view
-            "share": float(brow["share"]),
+            "book_id_real": int(brow["book_id"]),
+            "share": float(brow.get("share", 0.0) or 0.0),
             "n_sentences": int(brow["n_sentences"]),
-            "cell_meaning": str(brow["cell_meaning"]),
-            "rating_class": str(brow[tier_column]),
+            "cell_meaning": str(brow.get("cell_meaning") or "position_sample"),
+            "rating_class": str(brow[tier_column]) if tier_column in brow.index else "hidden",
         }
-        apply_cell_blind(record, cell_key)
-        # Keep real id only in sealed side channel for builders / NB10
+        if position_mode:
+            # Position packets: no rating cell; use POS_* placeholders
+            record["cell"] = f"POS_{record['book_id_anon'].split('_')[-1]}"
+        else:
+            apply_cell_blind(record, cell_key)
         books_out.append(
             {
                 "book_id_anon": record["book_id_anon"],
@@ -398,8 +481,9 @@ def build_evidence_packet(
             per_book=per_book,
             exhaustive=exhaustive,
             max_sentences=max_sentences,
+            per_tertile=per_tertile,
         )
-    except Exception as exc:  # pragma: no cover - duckdb / IO edge
+    except Exception as exc:  # pragma: no cover
         LOGGER.warning("Sentence fetch failed for topic %s: %s", tid, exc)
         sentences = pd.DataFrame()
 
@@ -408,9 +492,11 @@ def build_evidence_packet(
     if not sentences.empty:
         for _, srow in sentences.iterrows():
             bid = int(srow["book_id"])
+            tert = srow.get("tertile") or "na"
+            rank = int(srow.get("rank_in_book", srow.get("rank_in_slot", 0)) or 0)
             sent_out.append(
                 {
-                    "sid": f"{anon[bid]}_{int(srow.get('rank_in_book', 0))}",
+                    "sid": f"{anon[bid]}_{tert}_{rank}",
                     "book_id_anon": anon[bid],
                     "cell": cell_by_real.get(bid),
                     "sentence": str(srow["sentence"]),

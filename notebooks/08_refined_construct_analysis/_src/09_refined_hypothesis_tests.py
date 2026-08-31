@@ -123,6 +123,41 @@ print(
     "FDR (BH) is applied only to the six primary kw_p / quality_p values; "
     "component analyses are exploratory/unadjusted."
 )
+
+# Post-freeze claim hierarchy (H3/H4 manual freeze applied)
+CLAIM_HIERARCHY = [
+    ("confirmatory", "H3", "RAX_h3_emotional_side", "Emotional reassurance/security positively associated with rating quality"),
+    ("confirmatory", "H3", "RAX_appearance_grooming", "Appearance/grooming description negatively associated with rating quality"),
+    ("qualified", "H5", "RAX_external_danger_crisis", "External danger positively associated with ratings"),
+    ("open", "H4", "RAX_external_protection", "Is enacted protection within danger the attractive feature? (thin: 1 topic)"),
+    ("unsupported", "H4", "RAX_protective_commitment", "Generic protective promises do not distinguish high-rated romance"),
+    ("unmeasurable", "H3", "RLR_emotional_vs_material_security", "Material/economic security not cleanly captured at topic level"),
+    ("unmeasurable", "H4", "RLR_protection_vs_control", "Protective commitment atom empty; protection side thin"),
+]
+claims_rows = []
+for tier, hyp, feat, claim in CLAIM_HIERARCHY:
+    row = effects[effects["feature"] == feat]
+    delta = float(row.iloc[0]["cliffs_delta"]) if len(row) else float("nan")
+    gate = row.iloc[0]["measurement_gate"] if len(row) else "missing"
+    verdict = row.iloc[0]["verdict"] if len(row) else "missing"
+    claims_rows.append(
+        {
+            "claim_tier": tier,
+            "hypothesis": hyp,
+            "feature": feat,
+            "claim": claim,
+            "measurement_gate": gate,
+            "cliffs_delta": delta,
+            "verdict": verdict,
+        }
+    )
+claims_df = pd.DataFrame(claims_rows)
+display(claims_df.round(4))
+ctx.save_table(claims_df, "post_freeze_claim_hierarchy")
+print(
+    "H3 primary ratio and H4 protective commitment are unmeasurable after strict manual freeze; "
+    "report emotional security + appearance (H3) and possession + exploratory protection (H4)."
+)
 # Compact δ view (backward-compatible table name)
 delta_view = effects[
     [
