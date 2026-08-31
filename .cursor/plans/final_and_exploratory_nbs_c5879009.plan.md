@@ -7,16 +7,16 @@ todos:
     status: completed
   - id: nb13
     content: Write _src/13_final_statistical_tests.py (frozen definition → primary H1–H6 → components → H6 arc → reach → traffic-light → final verdict)
-    status: in_progress
+    status: completed
   - id: nb14
     content: "Write _src/14_exploratory_presentation_results.py (reuse NB12 tables; add waterfall, dose-response, conflict\times repair, residual Goodreads, genre heatmap, examples)"
-    status: pending
+    status: completed
   - id: sync-docs
     content: percent_to_notebook.py sync + README claim-boundary update
-    status: pending
+    status: completed
   - id: execute-smoke
     content: Execute NB13 then NB14; verify key tables/figures under notebook_analysis/
-    status: pending
+    status: completed
 isProject: false
 ---
 

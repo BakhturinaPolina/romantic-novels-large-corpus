@@ -53,4 +53,4 @@ Applied: `h3_manual_freeze.json` (17 KEEP / 25 REMOVE) and `h4_manual_freeze.jso
 
 ## Exploratory follow-up
 
-See notebook `12_exploratory_security_care_appearance` for nested strict/moderate/broad definitions, fractional protection weights (t87, t114), and promise-type comparisons. **Does not alter H1–H6 confirmatory verdicts.**
+See notebook `12_exploratory_security_care_appearance` for nested strict/moderate/broad definitions, fractional protection weights (t87, t114), and promise-type comparisons. Presentation figures that reuse those outputs (plus residual Goodreads, dose-response, attention waterfall) live in `14_exploratory_presentation_results`. **Neither alters H1–H6 confirmatory verdicts** (see `13_final_statistical_tests`).

@@ -22,6 +22,8 @@ Prompts are hypothesis-specific (not one giant multi-criterion prompt). Shared e
 | `10_contextual_validation` | Unblind cells |
 | `11_refined_robustness` | OLD \| STRICT \| WEIGHTED panel |
 | `12_exploratory_security_care_appearance` | **Exploratory only** — nested security/care/appearance definitions (does not alter H1–H6) |
+| `13_final_statistical_tests` | **Confirmatory final** — only reportable H1–H6 inferential results (author-cluster CIs; do not redefine constructs after running) |
+| `14_exploratory_presentation_results` | **Exploratory presentation** — reuses NB12 tables; adds waterfall, dose-response, residual Goodreads, genre/era heatmap, examples (does not alter NB13 verdicts) |
 
 Edit `_src/*.py`, then:
 
@@ -82,6 +84,8 @@ bash scripts/stage11/apply_h3_h4_manual_freeze.sh
 ```
 
 See `human_review/post_freeze_claim_hierarchy.md` for confirmatory vs exploratory claims.
+
+**Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Neither 12 nor 14 changes H1–H6 confirmatory verdicts.
 
 ### H4 manual freeze (26 atom topics)
 
