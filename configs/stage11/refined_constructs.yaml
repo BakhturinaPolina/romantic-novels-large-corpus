@@ -89,6 +89,10 @@ hypotheses:
     name: protection_possession
     # One decomposition of 4.6 feeds H4 (reuse H3 priors); exhaustive coverage for both 4.7 topics.
     mandatory_leaves: ["4.6", "4.7"]
+    # High-recall discovery leaves (primary OR secondary); Nemo-triaged before Pass A/B/C.
+    spillover_discovery_leaves: ["7.3", "7.2", "6.5", "9.2", "5.2", "4.5"]
+    # Seed from H5 D3 external-danger topics (not auto-mapped to protection codes).
+    inherit_from: ["H5_D3"]
     prompt: configs/stage11/prompts/h4_protection.yaml
     reuse_h3_for_leaves: ["4.6"]
   H5:
@@ -152,10 +156,63 @@ evidence:
 # ---------------------------------------------------------------------------
 spillover:
   prompt: configs/stage11/prompts/spillover_triage.yaml
+  h4_prompt: configs/stage11/prompts/h4_spillover_triage.yaml
   max_tokens: 400
   h1_max_candidates: 40
   h1_sexual_explicitness: [explicit, suggestive]
   h1_sexual_functions: [explicit_contact, erotic_tension, affection]
+  h4_max_candidates: 80
+  h4_mechanic_tags: [protective_care, external_threat]
+  h4_lexical_prototypes:
+    - protect
+    - safe
+    - rescue
+    - save
+    - defend
+    - stand guard
+    - watch over
+    - keep watch
+    - bodyguard
+    - escort
+    - shelter
+    - shield
+    - security
+    - police
+    - authorities
+    - threat
+    - danger
+    - missing
+    - bring her back
+    - have your back
+    - take care of you
+    - keep you safe
+    - get you out
+    - hurt you
+  h4_promise_tokens:
+    - promise
+    - i will
+    - i'll
+    - look after
+    - take care
+    - got your back
+    - never alone
+    - keep you safe
+    - bring her
+    - find her
+    - find you
+  h4_threat_tokens:
+    - threat
+    - danger
+    - police
+    - security
+    - rescue
+    - protect
+    - attacker
+    - kill
+    - weapon
+    - guard
+    - crisis
+    - hostage
 
 # ---------------------------------------------------------------------------
 # Prompt stability pilot (before full batch)

@@ -103,6 +103,7 @@ def test_h3_h4_mapping():
     assert rax_for_code("S14") == ["RAX_gift_romance_token"]
     assert rax_for_code("H4_4") == ["RAX_emotional_reassurance"]
     assert rax_for_code("H4_5") == ["RAX_external_protection"]
+    assert rax_for_code("H4_5a") == ["RAX_protective_commitment"]
     assert normalize_code("CLAIMING") == "H4_7"
     assert normalize_code("JEALOUSY") == "H4_8"
 

@@ -1,0 +1,1057 @@
+{
+  "topic_id": 238,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "tell",
+        "told",
+        "what",
+        "happened",
+        "talk",
+        "knows",
+        "did",
+        "her",
+        "wish",
+        "about"
+      ],
+      "KeyBERT": [
+        "promises",
+        "behavior",
+        "honestly",
+        "speaking",
+        "possibility"
+      ],
+      "POS": [
+        "reception",
+        "promises",
+        "arguing",
+        "president",
+        "behavior",
+        "possibility"
+      ],
+      "MMR": [
+        "reception",
+        "promises",
+        "arguing",
+        "president",
+        "gritted",
+        "acted",
+        "behavior",
+        "thousand",
+        "paid",
+        "speaking"
+      ]
+    },
+    "stage08_snippets": [
+      "yeah, i’ll tell her,” i reply, the sudden mood change taking me by surprise. “",
+      "i’ll go tell her.”",
+      "well, maybe you’ll get another chance to tell her.”"
+    ],
+    "label_public": "Relaying A Message For Her"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I can’t tell her the truth.",
+        "max_topic_prob": 0.7684628963470459,
+        "normalized_position": 0.5004459308807135,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Anyway, I told her to tell her friends.",
+        "max_topic_prob": 0.7061846256256104,
+        "normalized_position": 0.9103678929765886,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Well…” I don’t know how to tell her, but she’s been had.",
+        "max_topic_prob": 0.7041326761245728,
+        "normalized_position": 0.04537346711259755,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "But she won’t tell you what, specifically, it goes to show, unless you ask. “",
+        "max_topic_prob": 0.6928709745407104,
+        "normalized_position": 0.6346711259754738,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I forgot to tell her I found a job.",
+        "max_topic_prob": 0.6657342314720154,
+        "normalized_position": 0.32753623188405795,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "But to tell the truth it was kind of—” I look at her. “",
+        "max_topic_prob": 0.6593698263168335,
+        "normalized_position": 0.04147157190635452,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I told her I’d be here in case of an emergency.”",
+        "max_topic_prob": 0.6339893937110901,
+        "normalized_position": 0.3765443481467822,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2042
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "If I’d known that, I wouldn’t have done so much around here,” she teased.",
+        "max_topic_prob": 0.5622078776359558,
+        "normalized_position": 0.01770237875714549,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She’d have liked you.",
+        "max_topic_prob": 0.5378589630126953,
+        "normalized_position": 0.6205052553936935,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 870
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "a woman asked her companion.",
+        "max_topic_prob": 0.5316945314407349,
+        "normalized_position": 0.7352019177576987,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1492
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She said she was actually glad when the lie between her and Grandpa was over.",
+        "max_topic_prob": 0.508087158203125,
+        "normalized_position": 0.6195832565000922,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 865
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She’s flirting with me.",
+        "max_topic_prob": 0.5036958456039429,
+        "normalized_position": 0.7392587128895445,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1514
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I should've told them you were mine from the beginning.",
+        "max_topic_prob": 0.4986037015914917,
+        "normalized_position": 0.27129084092126404,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I told her you were my grandson.",
+        "max_topic_prob": 0.6415553092956543,
+        "normalized_position": 0.04116684841875681,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "You told her I was your grandson?”",
+        "max_topic_prob": 0.6356260180473328,
+        "normalized_position": 0.04198473282442748,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She told me.",
+        "max_topic_prob": 0.792904257774353,
+        "normalized_position": 0.14191346471430144,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She won’t say much more.” “",
+        "max_topic_prob": 0.6339089274406433,
+        "normalized_position": 0.6713640867554773,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "She owes you a real explanation.” “",
+        "max_topic_prob": 0.6234503984451294,
+        "normalized_position": 0.47231091049212814,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "You were threatening me with bodily harm a few weeks ago if I saw her again.” “",
+        "max_topic_prob": 0.5856113433837891,
+        "normalized_position": 0.4719806231421337,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "That I was the loser who tried to kill her abusive asshole spouse, didn’t quite manage it, then fell head over heels in love with her?",
+        "max_topic_prob": 0.5824287533760071,
+        "normalized_position": 0.5781129582736981,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "I don’t know,\" Lila admitted, but knew that she kept most of her grief private, possibly to her detriment, but there it was.",
+        "max_topic_prob": 0.5188509821891785,
+        "normalized_position": 0.9377958824177034,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She made me promise not to tell you.\"",
+        "max_topic_prob": 0.8013672828674316,
+        "normalized_position": 0.6003717472118959,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "And I wouldn't advise telling her.",
+        "max_topic_prob": 0.7189414501190186,
+        "normalized_position": 0.4340148698884758,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She said something about that after my time with her after breakfast.\" \"",
+        "max_topic_prob": 0.6493845582008362,
+        "normalized_position": 0.8025092936802974,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She know what you're up to?\" \"",
+        "max_topic_prob": 0.6356720924377441,
+        "normalized_position": 0.43308550185873607,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Don't worry, we didn't tell her,” Tyson said dryly. “",
+        "max_topic_prob": 0.6210187673568726,
+        "normalized_position": 0.7811338289962825,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Did you know she was holed up at your fishing shack?\" \"",
+        "max_topic_prob": 0.5494406223297119,
+        "normalized_position": 0.5878252788104089,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Don’t worry, she didn’t tell me.",
+        "max_topic_prob": 0.7658782005310059,
+        "normalized_position": 0.9613464325978418,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Then why in the hell didn’t she tell me?” “",
+        "max_topic_prob": 0.7546454071998596,
+        "normalized_position": 0.8394266387502013,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Tell me if I’m right and I will tell you how I know about her.” “",
+        "max_topic_prob": 0.6219942569732666,
+        "normalized_position": 0.48735706232887743,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 428
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "She should have told me about him, Colin.”",
+        "max_topic_prob": 0.5958067178726196,
+        "normalized_position": 0.8321790948622967,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You cast her aside like she was just another one of your meaningless flings, and still she protected you.”",
+        "max_topic_prob": 0.5688810348510742,
+        "normalized_position": 0.8376550169109357,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Had she done something wrong?",
+        "max_topic_prob": 0.5645692348480225,
+        "normalized_position": 0.46497020454179416,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "If there was an opportunity to tell her, you’d taken it.",
+        "max_topic_prob": 0.7228291034698486,
+        "normalized_position": 0.961859789320741,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2291
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "The whole I’d-tell-you-but-I’d-have-to-kill-you shtick ran through her mind. “",
+        "max_topic_prob": 0.6088760495185852,
+        "normalized_position": 0.7348347257537232,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 416
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "What if she said the wrong thing? “",
+        "max_topic_prob": 0.5913340449333191,
+        "normalized_position": 0.8384792347741857,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1272
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "now she’d come this far she wanted to know more.",
+        "max_topic_prob": 0.5850841999053955,
+        "normalized_position": 0.19070105339629495,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1575
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "She’d want to know what I’d bribed you with to get you to stick with me.”",
+        "max_topic_prob": 0.5736610293388367,
+        "normalized_position": 0.7603826129071316,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 627
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Had she really just said that?",
+        "max_topic_prob": 0.5370417833328247,
+        "normalized_position": 0.14638576098801306,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1209
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "But I can’t tell her that. ***",
+        "max_topic_prob": 0.7107328176498413,
+        "normalized_position": 0.37876664330763843,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Regardless if I’m glad she knows, that was for me to decide whether or not I wanted to tell her—not you.",
+        "max_topic_prob": 0.6770092844963074,
+        "normalized_position": 0.8924316748423265,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I can tell she wants to ask me about the brief conversation I just had, but I’m glad she doesn’t.",
+        "max_topic_prob": 0.6765233278274536,
+        "normalized_position": 0.43149964961457604,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I also tell her that I honestly have no idea what I’m doing but I love it anyway. “",
+        "max_topic_prob": 0.6758852601051331,
+        "normalized_position": 0.5099859845830413,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I don’t want to hear how disappointed she is in me.",
+        "max_topic_prob": 0.6749624013900757,
+        "normalized_position": 0.06464611072179398,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "After ensuring that there is no one else is in here except us, I tell her about everything...the texts, phone calls, video shoot, our date, and even the brief storage-room rendezvous.",
+        "max_topic_prob": 0.669223964214325,
+        "normalized_position": 0.5098107918710582,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Do not tell her.”",
+        "max_topic_prob": 0.759438157081604,
+        "normalized_position": 0.8481982716451981,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Now I had to figure out how to get her to admit it.",
+        "max_topic_prob": 0.6489084959030151,
+        "normalized_position": 0.35610631012555033,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I’d told her I’d be back in a couple of days, but I didn’t know when I’d see her again.",
+        "max_topic_prob": 0.6457846760749817,
+        "normalized_position": 0.9876080221751182,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Maybe she knew I’d caught her, but if she did, she didn’t confess.",
+        "max_topic_prob": 0.6311243772506714,
+        "normalized_position": 0.23088211315832383,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She needed to know that I wasn’t the enemy.",
+        "max_topic_prob": 0.6245850324630737,
+        "normalized_position": 0.6779716288928747,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I wanted to know where her head was with what I did to her.",
+        "max_topic_prob": 0.6130971312522888,
+        "normalized_position": 0.6862872982227295,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I should've told her that a long time ago.",
+        "max_topic_prob": 0.7441657185554504,
+        "normalized_position": 0.9007798960138648,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She didn't tell me that, of course, I had someone.",
+        "max_topic_prob": 0.7106995582580566,
+        "normalized_position": 0.7098497978047371,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She might have told things to you straight, but I appreciated that about her.",
+        "max_topic_prob": 0.702197790145874,
+        "normalized_position": 0.8586077411900636,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "She hadn’t said anything to me, but I could tell something was up.",
+        "max_topic_prob": 0.6716336011886597,
+        "normalized_position": 0.20595031773541306,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I knew where she was likely to be going with this, but I wanted to hear her say it. “",
+        "max_topic_prob": 0.6504818201065063,
+        "normalized_position": 0.463893703061814,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It felt weird to be telling her this.",
+        "max_topic_prob": 0.6426872611045837,
+        "normalized_position": 0.10499711149624495,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Told her what?”",
+        "max_topic_prob": 0.7977843284606934,
+        "normalized_position": 0.2731419882151682,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "No, and I didn't tell her.” “",
+        "max_topic_prob": 0.773571789264679,
+        "normalized_position": 0.1661281125261357,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I promised her I'd tell you, so I did.",
+        "max_topic_prob": 0.7456037402153015,
+        "normalized_position": 0.43318760691883673,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I have no idea if she'll know either, but I can at least tell her the good news. “",
+        "max_topic_prob": 0.6927878260612488,
+        "normalized_position": 0.9078122030032313,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You talked to her?” “",
+        "max_topic_prob": 0.6652899384498596,
+        "normalized_position": 0.4288158144839384,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Likewise,” I reply politely, though the truth is that she's told me almost nothing. “",
+        "max_topic_prob": 0.655631422996521,
+        "normalized_position": 0.06367610720395363,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "When she’s ready to tell you, she will.”",
+        "max_topic_prob": 0.659612238407135,
+        "normalized_position": 0.8096885813148789,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 451
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "What would you like to know, girl?”",
+        "max_topic_prob": 0.5587658286094666,
+        "normalized_position": 0.9192618223760092,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Her kind may know something.”",
+        "max_topic_prob": 0.5415087938308716,
+        "normalized_position": 0.8763552479815455,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I’ve never heard of them before,” she’d said. “",
+        "max_topic_prob": 0.5043449401855469,
+        "normalized_position": 0.15409457900807383,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I tell her. \"",
+        "max_topic_prob": 0.7497020363807678,
+        "normalized_position": 0.21465476749647722,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I'm not sure what to tell her.",
+        "max_topic_prob": 0.7020338177680969,
+        "normalized_position": 0.24941286989196806,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I told her we could stop.",
+        "max_topic_prob": 0.663212776184082,
+        "normalized_position": 0.6838891498356036,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I don't think I should tell her what Ethan and I were doing in the middle of the woods just a little earlier after Caleb saw us.",
+        "max_topic_prob": 0.653643012046814,
+        "normalized_position": 0.4189760450915923,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I would tell her if I could, but I just don't know what to say. \"",
+        "max_topic_prob": 0.6513010263442993,
+        "normalized_position": 0.2498825739783936,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "It was never between you and her,\" I say. \"",
+        "max_topic_prob": 0.6205440163612366,
+        "normalized_position": 0.36496007515265383,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "But she knows, oh, she knows.",
+        "max_topic_prob": 0.5460376143455505,
+        "normalized_position": 0.4620123203285421,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Because I’d already told her. “",
+        "max_topic_prob": 0.7342039942741394,
+        "normalized_position": 0.8305890341198439,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I opened my mouth to repeat all the lies I’d already told her, but something stopped me.",
+        "max_topic_prob": 0.6783676147460938,
+        "normalized_position": 0.8394160583941606,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Did I have to tell her now?",
+        "max_topic_prob": 0.6663316488265991,
+        "normalized_position": 0.8833814292989306,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’d just lied to her again.",
+        "max_topic_prob": 0.6623598337173462,
+        "normalized_position": 0.9219147852656595,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She is the woman I told you about,” he added. “",
+        "max_topic_prob": 0.6506658792495728,
+        "normalized_position": 0.17450347988456968,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Did she know the truth?",
+        "max_topic_prob": 0.6425442695617676,
+        "normalized_position": 0.8331352911220505,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 26
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.013604240282685512,
+        "n_sentences": 77
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.007048872180451127,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.007219031993437244,
+        "n_sentences": 44
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.005151983513652756,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.005161895823557016,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.007271669575334497,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.005720823798627002,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.006843168050258021,
+        "n_sentences": 61
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0009254974548819991,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0016215339711366952,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0008843687817820031,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0006863417982155113,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00026896180742334586,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0005470459518599562,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.000981474665685192,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0012962962962962963,
+        "n_sentences": 7
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 80
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

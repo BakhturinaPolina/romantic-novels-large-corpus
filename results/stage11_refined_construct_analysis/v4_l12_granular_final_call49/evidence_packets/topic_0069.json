@@ -1,0 +1,989 @@
+{
+  "topic_id": 69,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "10.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "dream",
+        "dreams",
+        "nightmares",
+        "nightmare",
+        "dreamed",
+        "dreaming",
+        "visions",
+        "true",
+        "night",
+        "dreamwright"
+      ],
+      "KeyBERT": [
+        "dreamed",
+        "memories",
+        "promises",
+        "thinks",
+        "experience",
+        "potential",
+        "expect",
+        "secretly",
+        "directed",
+        "creatures"
+      ],
+      "POS": [
+        "dump",
+        "threats",
+        "quality",
+        "visits",
+        "promises",
+        "guarantee",
+        "value",
+        "creatures",
+        "parties",
+        "example"
+      ],
+      "MMR": [
+        "dreamed",
+        "threats",
+        "promises",
+        "chased",
+        "secured",
+        "example",
+        "parties",
+        "blinking",
+        "passionate",
+        "urged"
+      ]
+    },
+    "stage08_snippets": [
+      "i want you to check with all the gargoyles to see if they’ve been having any…urr…strange...dreams.”",
+      "i’ve seen this man and his friends in my visions,” i said. “",
+      "i’ve had so many nightmares about it, and him in particular, that i wouldn’t know what was real and what was my imagination anymore."
+    ],
+    "label_public": "Visions and Nightmare Warnings"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Your dream will be fulfilled.” “",
+        "max_topic_prob": 0.6315475702285767,
+        "normalized_position": 0.16167664670658682,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Tis a dream to feel your skin against mine.”",
+        "max_topic_prob": 0.5969241857528687,
+        "normalized_position": 0.41109086175475135,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "This nightmare had to end. “",
+        "max_topic_prob": 0.7257818579673767,
+        "normalized_position": 0.6019682886823401,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "This was his worst nightmare come true.",
+        "max_topic_prob": 0.6311248540878296,
+        "normalized_position": 0.04829597229815929,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Nightmares.",
+        "max_topic_prob": 0.6215219497680664,
+        "normalized_position": 0.5341716785128485,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "In her thoughts, dreams.",
+        "max_topic_prob": 0.6013736128807068,
+        "normalized_position": 0.53398942956078,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "What else did you dream?”",
+        "max_topic_prob": 0.7223834991455078,
+        "normalized_position": 0.9929183135704874,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 387
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I try to think again of the scene in my dream. “",
+        "max_topic_prob": 0.7126275300979614,
+        "normalized_position": 0.13982213438735178,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I pretend as if the nightmares that haunt my sleep don’t exist. “",
+        "max_topic_prob": 0.6701171398162842,
+        "normalized_position": 0.01383399209486166,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "What else do you dream about?”",
+        "max_topic_prob": 0.6636710166931152,
+        "normalized_position": 0.06175889328063241,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Wondering how I’m ever going to go back to sleep after that dream, I hear Reed say, “That bad, huh?”",
+        "max_topic_prob": 0.6549748182296753,
+        "normalized_position": 0.13446969696969696,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "It occurs to me that this is just like the first dreams I began having right after I found out what Alfred had done to my uncle.",
+        "max_topic_prob": 0.6473925113677979,
+        "normalized_position": 0.5773221343873518,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 475
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Dreams she’d managed to shatter in the span of six short years.",
+        "max_topic_prob": 0.5865145921707153,
+        "normalized_position": 0.01363086731889634,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "As swiftly as his grand ideas of slowly romancing Kit had come to mind, the reality of where that would inevitably lead crashed his fanciful dreams right back down to earth.",
+        "max_topic_prob": 0.5215762853622437,
+        "normalized_position": 0.5585357810267121,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "The yearning, the want, the desire were there, vibrant and tremulous . . .",
+        "max_topic_prob": 0.4784349501132965,
+        "normalized_position": 0.7515664504781796,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 392
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "But I can say that in my wildest dreams, I couldn’t have imagined I’d be looking forward to this particular holiday season.",
+        "max_topic_prob": 0.4520099461078644,
+        "normalized_position": 0.8889743871606024,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The dream had become a nightmare.",
+        "max_topic_prob": 0.8649183511734009,
+        "normalized_position": 0.5911003084977097,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 464
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "But dreams were like that. “",
+        "max_topic_prob": 0.7980678081512451,
+        "normalized_position": 0.35748340656258765,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It was strange, but this was a dream. “",
+        "max_topic_prob": 0.7882083058357239,
+        "normalized_position": 0.06291483593530897,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It wasn’t a dream.",
+        "max_topic_prob": 0.7732330560684204,
+        "normalized_position": 0.9103486958960456,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Was it a very bad dream?”",
+        "max_topic_prob": 0.7717089653015137,
+        "normalized_position": 0.9086659811162008,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "If only I’d known I was dreaming, I’d never have awakened.",
+        "max_topic_prob": 0.766244113445282,
+        "normalized_position": 0.2535290268299523,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Exactly what I dreamed about.",
+        "max_topic_prob": 0.6495882272720337,
+        "normalized_position": 0.9197437194402293,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He often woke screaming from nightmares that he couldn’t remember.",
+        "max_topic_prob": 0.621006965637207,
+        "normalized_position": 0.6525037936267072,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Johanna banished the wispy dream.",
+        "max_topic_prob": 0.5348275899887085,
+        "normalized_position": 0.4489967964930029,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "But now… Now… Mason closed his eyes for a second and opened them again, still not completely sure this wasn’t a dream.",
+        "max_topic_prob": 0.6760830879211426,
+        "normalized_position": 0.6613756613756614,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "And then she began to dream, a bizarre barrage of anxiety dreams that put her usual stress-induced nightmares to shame.",
+        "max_topic_prob": 0.6517887115478516,
+        "normalized_position": 0.8997228521038045,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Glad all your dreams came true.”",
+        "max_topic_prob": 0.6491152048110962,
+        "normalized_position": 0.16326530612244897,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She dreamed different versions of that same terrible dream at least three times.",
+        "max_topic_prob": 0.6408663988113403,
+        "normalized_position": 0.9014865205341396,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You don’t know how many times I dreamed of you saying everything you just said to me back then.”",
+        "max_topic_prob": 0.6060371398925781,
+        "normalized_position": 0.07231040564373897,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She hadn’t had a dream that wasn’t a nightmare since she’d caught Liam cheating the first time.",
+        "max_topic_prob": 0.6047021150588989,
+        "normalized_position": 0.6245905769715293,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Kat still had nightmares about it. “",
+        "max_topic_prob": 0.5616523027420044,
+        "normalized_position": 0.09908536585365854,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "The last couple of months with Alec had been like a dream.",
+        "max_topic_prob": 0.5571917295455933,
+        "normalized_position": 0.9399136178861789,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "It would be a nightmare.",
+        "max_topic_prob": 0.5377073884010315,
+        "normalized_position": 0.27134146341463417,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Not a Kat-land dream, because there had been a disappointing lack of bubbles, but as close to perfect as it could be.",
+        "max_topic_prob": 0.43595409393310547,
+        "normalized_position": 0.9400406504065041,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He supposed there was nothing wrong with dreaming for a moment.",
+        "max_topic_prob": 0.6299049854278564,
+        "normalized_position": 0.8525091799265606,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He was the boss, so he figured he was allowed some time to dream once every four years.",
+        "max_topic_prob": 0.5795314908027649,
+        "normalized_position": 0.8301713586291309,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She dreamed of seeing you try for the Olympic team.” “",
+        "max_topic_prob": 0.5295270085334778,
+        "normalized_position": 0.9127906976744186,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Copyright Published by Dreamspinner Press 5032 Capital Circle SW Suite 2, PMB# 279 Tallahassee, FL 32305-7886 USA http://www.dreamspinnerpress.com/ This is a work of fiction.",
+        "max_topic_prob": 0.5284997224807739,
+        "normalized_position": 0.9969400244798041,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "It was shortly after seven the next night and Vince was looking through an old photo album he had of his mother, just thinking about the dreams she had for him and wondering if he could ever make them come true for her, when his cell phone rang.",
+        "max_topic_prob": 0.50794917345047,
+        "normalized_position": 0.9296205630354957,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I would never make it, and I’m not going to abandon this place to chase an empty dream.",
+        "max_topic_prob": 0.49120694398880005,
+        "normalized_position": 0.9137086903304773,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "And I had... a hell of a weird dream.”",
+        "max_topic_prob": 0.7236153483390808,
+        "normalized_position": 0.32262474367737526,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 350
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "You were having a dream.",
+        "max_topic_prob": 0.7124109268188477,
+        "normalized_position": 0.2102984734563682,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "What the hell did you dream about him?” “",
+        "max_topic_prob": 0.6876416802406311,
+        "normalized_position": 0.3269537480063796,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "I couldn’t bear to think you’d been dragged into one of my nightmares.” “",
+        "max_topic_prob": 0.68075031042099,
+        "normalized_position": 0.39804055593529275,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 270
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "So was I.” “We were both in this dream?” “",
+        "max_topic_prob": 0.6804921627044678,
+        "normalized_position": 0.3237639553429027,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "In this dream.",
+        "max_topic_prob": 0.6406922340393066,
+        "normalized_position": 0.3274094326725906,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 371
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Bad dreams again?” “",
+        "max_topic_prob": 0.7400534152984619,
+        "normalized_position": 0.1491082740473638,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "The lukewarm dreams, not the steamy ones.",
+        "max_topic_prob": 0.6187781691551208,
+        "normalized_position": 0.004482993860247539,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "In a blink, her dreams disappeared as if they’d been dipped in paint thinner.",
+        "max_topic_prob": 0.6167085766792297,
+        "normalized_position": 0.18789591657733165,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 414
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "MADDIE’S PHONE jolted her out of an unfortunately familiar dream Saturday morning.",
+        "max_topic_prob": 0.5767009258270264,
+        "normalized_position": 0.1481337101647013,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Every word licked at his hopes and dreams with a flame he couldn’t put out, until his future looked as bleak and hopeless at is had a couple of weeks ago.",
+        "max_topic_prob": 0.5196897983551025,
+        "normalized_position": 0.8266250852743398,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Second, if you think you’re gonna charm your way into my pants or my house, you can dream on, because you just proved you’re not worthy of either.",
+        "max_topic_prob": 0.4830127954483032,
+        "normalized_position": 0.1903323262839879,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "It had been a nightmare. “",
+        "max_topic_prob": 0.6828408241271973,
+        "normalized_position": 0.20422764227642276,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "How does it feel to have your dream come true, Lovelace?”",
+        "max_topic_prob": 0.639604926109314,
+        "normalized_position": 0.09853658536585366,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "This had to be the guy’s dream come true.",
+        "max_topic_prob": 0.6337935924530029,
+        "normalized_position": 0.045853658536585365,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Dream suck,” Mike whispered and arched against the wall. “",
+        "max_topic_prob": 0.631969153881073,
+        "normalized_position": 0.7278048780487805,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I dreamed of touching a man’s body, so different from a girl’s.",
+        "max_topic_prob": 0.6181851625442505,
+        "normalized_position": 0.7060162601626017,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "We’re a dream team, don’t you think?” “",
+        "max_topic_prob": 0.5912339687347412,
+        "normalized_position": 0.8887804878048781,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Who says when he moves here and he sees me in my sweats one too many times reality won’t be as good as the fantasy?”",
+        "max_topic_prob": 0.4619201719760895,
+        "normalized_position": 0.09502806736166801,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "And it’s not just a dream, big guy.”",
+        "max_topic_prob": 0.6845866441726685,
+        "normalized_position": 0.9678571428571429,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The man he took a leap of faith with and discovered happiness so complete he feared he’d wake up one day and find it was only a dream. “",
+        "max_topic_prob": 0.6106709241867065,
+        "normalized_position": 0.9673469387755103,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Quickly, Wiley committed the vision to memory, knowing a plethora of wet dreams could come from this one moment.",
+        "max_topic_prob": 0.5781687498092651,
+        "normalized_position": 0.9255102040816326,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Ever since that kiss, I can’t get you out of my head, out of my dreams.",
+        "max_topic_prob": 0.5426791310310364,
+        "normalized_position": 0.48392857142857143,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "http://www.dreamspinnerpress.com",
+        "max_topic_prob": 0.5400614738464355,
+        "normalized_position": 0.9971938775510204,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "However, that dream splattered against a brick wall, resulting in a quick death in her first writing class in college when the professor told her bluntly that she wasn’t any good at it.",
+        "max_topic_prob": 0.5047216415405273,
+        "normalized_position": 0.9915816326530612,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I had this dream—this really crazy one.” “",
+        "max_topic_prob": 0.7810457944869995,
+        "normalized_position": 0.31192330736968243,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "It all seemed as if it could be a dream and I hoped that it was.",
+        "max_topic_prob": 0.763019323348999,
+        "normalized_position": 0.461114439784302,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "If it was a dream, then let me dream forever.",
+        "max_topic_prob": 0.7587970495223999,
+        "normalized_position": 0.4522468544038346,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I didn’t even want to mention the dream that I had, which pretty much set this all in motion for me. “",
+        "max_topic_prob": 0.7465181350708008,
+        "normalized_position": 0.43690832834032356,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The dream had stressed me out and the fantasy sex had my stomach growling.",
+        "max_topic_prob": 0.7146642208099365,
+        "normalized_position": 0.3439185140802876,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I don’t remember having nightmares.” “",
+        "max_topic_prob": 0.7122433185577393,
+        "normalized_position": 0.9048532055122828,
+        "tertile": "end",
+        "chapter_index": 63,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I have a dream that it’s James Wolfe and I’m his dead wife.",
+        "max_topic_prob": 0.5739654898643494,
+        "normalized_position": 0.49448275862068963,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 717
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.014651668399659703,
+        "n_sentences": 155
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004377880184331797,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.0024925224327018943,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0039768618944323935,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.0032615786040443573,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.0023195876288659794,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0021478981282602025,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.004069175991861648,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0005092514004413513,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0007311277645768598,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0005886392622387913,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0006934812760055479,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00026202017555351765,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.00040241448692152917,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0005138746145940391,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00044508734839212194,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 73
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "10.1",
+    "taxonomy_main_name": "Paranormal & Immortal Beings",
+    "taxonomy_secondary_id": "7.3",
+    "taxonomy_secondary_name": "Risk, Danger & External Crises",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

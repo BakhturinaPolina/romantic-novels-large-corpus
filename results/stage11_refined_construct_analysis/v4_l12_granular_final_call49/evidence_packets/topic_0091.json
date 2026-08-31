@@ -1,0 +1,813 @@
+{
+  "topic_id": 91,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "gun",
+        "shot",
+        "shoot",
+        "guns",
+        "shots",
+        "bullet",
+        "shooting",
+        "bullets",
+        "weapon",
+        "pistol"
+      ],
+      "KeyBERT": [
+        "weapons",
+        "sir",
+        "fired",
+        "ought",
+        "pointing",
+        "aimed",
+        "practice",
+        "uh",
+        "squeeze",
+        "intend"
+      ],
+      "POS": [
+        "weapons",
+        "behalf",
+        "activity",
+        "areas",
+        "percent",
+        "impressive",
+        "period",
+        "backs",
+        "task",
+        "members"
+      ],
+      "MMR": [
+        "weapons",
+        "aimed",
+        "erupted",
+        "areas",
+        "guarantee",
+        "declared",
+        "arguing",
+        "grumbled",
+        "ought",
+        "cracked"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll be better armed as well.",
+      "i don’t like guns, they’re only for bad things, and all they do are hurt people, so i’ll thank you to get them away from me, now.\"",
+      "maybe i’ll get a shot with him next."
+    ],
+    "label_public": "Arguing Over Guns and Weapons"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "He took the shot for me.” “",
+        "max_topic_prob": 0.6836830377578735,
+        "normalized_position": 0.7076622008128858,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 309
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I have the gun,” Cam said shortly. “",
+        "max_topic_prob": 0.6444631814956665,
+        "normalized_position": 0.7186512118018967,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I had to take the shot when I saw it.”",
+        "max_topic_prob": 0.628551721572876,
+        "normalized_position": 0.9552912840584074,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Tell them someone was cleaning a gun, and it went off accidentally,” Sebastian said. “",
+        "max_topic_prob": 0.6199346780776978,
+        "normalized_position": 0.9580009032063826,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 370
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I thought I’d put a bullet in you,” Bullard said roughly.",
+        "max_topic_prob": 0.5899178981781006,
+        "normalized_position": 0.9459581514376035,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The boy came here the night of the shooting, ranting about having killed you.",
+        "max_topic_prob": 0.587835431098938,
+        "normalized_position": 0.8958301972000602,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I called his name and that's when I saw the gun on the ground.",
+        "max_topic_prob": 0.6386082172393799,
+        "normalized_position": 0.7257989810097267,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That sexy man has a gun.",
+        "max_topic_prob": 0.6316993832588196,
+        "normalized_position": 0.15886984715145902,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He shoots first and asks questions later, man.",
+        "max_topic_prob": 0.5597922801971436,
+        "normalized_position": 0.07040296433534043,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "the man fired back.",
+        "max_topic_prob": 0.5464134812355042,
+        "normalized_position": 0.3872163038443724,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Yeah, X had his team come after me because he was afraid someone else would get gun happy.",
+        "max_topic_prob": 0.4796745181083679,
+        "normalized_position": 0.7369152385363594,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You mean that sexy man with the gun let Raj out of his bed?",
+        "max_topic_prob": 0.46940213441848755,
+        "normalized_position": 0.15748031496062992,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You said they shot you.” “",
+        "max_topic_prob": 0.7664870619773865,
+        "normalized_position": 0.2996018579960186,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1806
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Shot me.” “",
+        "max_topic_prob": 0.7232369184494019,
+        "normalized_position": 0.1612475116124751,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 972
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "What about getting shot?” “",
+        "max_topic_prob": 0.7175314426422119,
+        "normalized_position": 0.3095554080955541,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1866
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I will take the gun.”",
+        "max_topic_prob": 0.7121537923812866,
+        "normalized_position": 0.1643994691439947,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 991
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You shot her.”",
+        "max_topic_prob": 0.7100021839141846,
+        "normalized_position": 0.12475116124751161,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 752
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Shoot.” “",
+        "max_topic_prob": 0.6899501085281372,
+        "normalized_position": 0.027538155275381553,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Shooter” was what it sounded like the man said.",
+        "max_topic_prob": 0.6870497465133667,
+        "normalized_position": 0.571320564516129,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Daddy, put the gun down.”",
+        "max_topic_prob": 0.6513029336929321,
+        "normalized_position": 0.9015877016129032,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "You wouldn’t shoot to kill if the bastards broke in.",
+        "max_topic_prob": 0.6508133411407471,
+        "normalized_position": 0.2534022177419355,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "People like that ought to be shot.”",
+        "max_topic_prob": 0.6506888270378113,
+        "normalized_position": 0.18006552419354838,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 592
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Guns and Ammo?",
+        "max_topic_prob": 0.6360180377960205,
+        "normalized_position": 0.7240423387096774,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Where did you get that gun?” “",
+        "max_topic_prob": 0.6248703002929688,
+        "normalized_position": 0.897429435483871,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Took the gun with him. '",
+        "max_topic_prob": 0.7503088712692261,
+        "normalized_position": 0.8250973345312967,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Just put the gun down.\"",
+        "max_topic_prob": 0.7275141477584839,
+        "normalized_position": 0.4749925127283618,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I had the gun in my hand.",
+        "max_topic_prob": 0.7102783918380737,
+        "normalized_position": 0.833632824198862,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 222
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Please put the gun down.\"",
+        "max_topic_prob": 0.6987185478210449,
+        "normalized_position": 0.46720575022461813,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "You had a gun?",
+        "max_topic_prob": 0.6913555860519409,
+        "normalized_position": 0.6799940101826895,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "There’s a gun pointed at the back of my head. \"",
+        "max_topic_prob": 0.6701536774635315,
+        "normalized_position": 0.46555855046421085,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Another gunshot rang out.",
+        "max_topic_prob": 0.737409770488739,
+        "normalized_position": 0.47401155042203463,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You know I don’t need a gun to kill.”",
+        "max_topic_prob": 0.6958560943603516,
+        "normalized_position": 0.10262105730786317,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 480
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Was your gun in the vehicle, too?”",
+        "max_topic_prob": 0.6831609010696411,
+        "normalized_position": 0.10188064563897527,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 475
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I dug out the bullet.",
+        "max_topic_prob": 0.6694261431694031,
+        "normalized_position": 0.6437139049311417,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 618
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "This gun is for the ones coming to save you.”",
+        "max_topic_prob": 0.6657360792160034,
+        "normalized_position": 0.6592625499777877,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’ve dug bullets out.",
+        "max_topic_prob": 0.6648784279823303,
+        "normalized_position": 0.5228787205686362,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 364
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "In that moment the gun fired.",
+        "max_topic_prob": 0.752550482749939,
+        "normalized_position": 0.9651318730442557,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "They shoot to kill here.”",
+        "max_topic_prob": 0.7076858282089233,
+        "normalized_position": 0.951721054984354,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The gunshots.",
+        "max_topic_prob": 0.688744068145752,
+        "normalized_position": 0.025122932498882432,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He just had to let him shoot. “",
+        "max_topic_prob": 0.6733130216598511,
+        "normalized_position": 0.8551631649530621,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Patrick homed in on where the shots had come from and ran that way, his gun at the ready. “",
+        "max_topic_prob": 0.6650651097297668,
+        "normalized_position": 0.011712114438980778,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "The gun didn’t go off.",
+        "max_topic_prob": 0.65999436378479,
+        "normalized_position": 0.5254358515869468,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 432
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "A hand shot up. ‘",
+        "max_topic_prob": 0.6219453811645508,
+        "normalized_position": 0.11931965723188782,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "When’s the shoot?’ ‘",
+        "max_topic_prob": 0.5856435298919678,
+        "normalized_position": 0.40495975071410023,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I’m saving my big guns for later,’ she responded. ‘",
+        "max_topic_prob": 0.555074155330658,
+        "normalized_position": 0.08854842897948585,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "We’ve been in place for a while and taken a number of shots already.",
+        "max_topic_prob": 0.48278751969337463,
+        "normalized_position": 0.508828875616723,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I love the shot with the chains.",
+        "max_topic_prob": 0.39187508821487427,
+        "normalized_position": 0.2046064047957091,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Do you want a shot in yours?”",
+        "max_topic_prob": 0.5818039178848267,
+        "normalized_position": 0.5001501501501502,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Did you get some good shots?”",
+        "max_topic_prob": 0.4955591857433319,
+        "normalized_position": 0.5940929255194957,
+        "tertile": "middle",
+        "chapter_index": 44,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "We threw one against a brick wall, chucked one off a bridge, took a baseball bat to another, and then ran over one with the car. “",
+        "max_topic_prob": 0.4014124274253845,
+        "normalized_position": 0.08895633901470931,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "We were attacked by a bortax .",
+        "max_topic_prob": 0.387727826833725,
+        "normalized_position": 0.33975240715268223,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 374
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "So, what did you shoot today?” “",
+        "max_topic_prob": 0.6965689659118652,
+        "normalized_position": 0.2654176424668228,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "What shot?”",
+        "max_topic_prob": 0.6676367521286011,
+        "normalized_position": 0.3596148842050481,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That way I can go back and forth, depending on what the shot calls for.” “",
+        "max_topic_prob": 0.5948311686515808,
+        "normalized_position": 0.19789227166276346,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Anyhow, did you still want that shot?” “",
+        "max_topic_prob": 0.5866461992263794,
+        "normalized_position": 0.3594847775175644,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Or when you shoot locally?”",
+        "max_topic_prob": 0.5830910205841064,
+        "normalized_position": 0.3823835545147021,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "If I want a great shot, I’ve got to go get it.” “",
+        "max_topic_prob": 0.5472642183303833,
+        "normalized_position": 0.2991152745251106,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 299
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.008369451502017636,
+        "n_sentences": 56
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.003038128512836093,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0026483050847457626,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.008097894547417672,
+        "n_sentences": 90
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0027881040892193307,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0025513458349279245,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.003920977228170713,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.003836530442035029,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00015124016938898973,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00023452157598499062,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00015815277558121145,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0004597701149425287,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.000525003281270508,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.1",
+    "taxonomy_main_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

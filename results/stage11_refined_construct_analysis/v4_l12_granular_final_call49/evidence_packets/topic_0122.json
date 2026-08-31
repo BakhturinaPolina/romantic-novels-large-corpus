@@ -1,0 +1,813 @@
+{
+  "topic_id": 122,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "blood",
+        "bleeding",
+        "bleed",
+        "veins",
+        "lost",
+        "drinking",
+        "everywhere",
+        "lot",
+        "need",
+        "your"
+      ],
+      "KeyBERT": [
+        "veins",
+        "wound",
+        "dripping",
+        "carved",
+        "spilled",
+        "pressure",
+        "dr",
+        "spilling",
+        "concerned",
+        "asks"
+      ],
+      "POS": [
+        "internal",
+        "veins",
+        "activity",
+        "creatures",
+        "fading",
+        "distraction",
+        "dripping",
+        "quality",
+        "drawer",
+        "circumstances"
+      ],
+      "MMR": [
+        "internal",
+        "veins",
+        "prompted",
+        "carved",
+        "activity",
+        "creatures",
+        "spilled",
+        "circumstances",
+        "sounding",
+        "paid"
+      ]
+    },
+    "stage08_snippets": [
+      "whenever innocent blood is spilt, it’ll be my father’s blood… and you’ll find me there.",
+      "offer her the meat in the sack from the palm of your hand and she’ll not draw blood.",
+      "i know head wounds bleed a lot, but you want to keep most of your blood inside your body where it’ll do you some good."
+    ],
+    "label_public": "Wound Bleeding and Blood Loss"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Blood was everywhere.’’",
+        "max_topic_prob": 0.7471514940261841,
+        "normalized_position": 0.29851526557925556,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 625
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Not my blood.",
+        "max_topic_prob": 0.7432988882064819,
+        "normalized_position": 0.8676286072772899,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "I had blood all over me and I needed to get it off.’’ ‘‘",
+        "max_topic_prob": 0.7431674003601074,
+        "normalized_position": 0.3028021748222501,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 666
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His blood churned.",
+        "max_topic_prob": 0.7304035425186157,
+        "normalized_position": 0.437892095357591,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "A lot of blood.",
+        "max_topic_prob": 0.7223055362701416,
+        "normalized_position": 0.8681514010874112,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Mark’s blood.",
+        "max_topic_prob": 0.6871558427810669,
+        "normalized_position": 0.2233375156838143,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 636
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "So much blood.",
+        "max_topic_prob": 0.7793785333633423,
+        "normalized_position": 0.9800566293241413,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "They’ve drawn first blood.",
+        "max_topic_prob": 0.6423829197883606,
+        "normalized_position": 0.7779145635848824,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His concern was that Grey would now be out for blood.",
+        "max_topic_prob": 0.624282956123352,
+        "normalized_position": 0.28893266034716236,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The blood would only serve to make the ropes more slippery if she could loosen them enough to pull a hand free.",
+        "max_topic_prob": 0.6196024417877197,
+        "normalized_position": 0.8096762279945833,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Piper winced at the comment about blood kin.",
+        "max_topic_prob": 0.5969951152801514,
+        "normalized_position": 0.6263695678936354,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Too much blood, its bitter copper scent filling her head, overloading her senses.",
+        "max_topic_prob": 0.587874174118042,
+        "normalized_position": 0.9801797365505355,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "My blood?” “",
+        "max_topic_prob": 0.7694726586341858,
+        "normalized_position": 0.4554717750152843,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Blood?",
+        "max_topic_prob": 0.7542778253555298,
+        "normalized_position": 0.3829223558182189,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Blood.",
+        "max_topic_prob": 0.7537932991981506,
+        "normalized_position": 0.33768086407173425,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 507
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Your blood feeds the death of the heart and only your blood will nourish the heart’s savior!”",
+        "max_topic_prob": 0.6817130446434021,
+        "normalized_position": 0.45914000407581007,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Whose blood?",
+        "max_topic_prob": 0.679006040096283,
+        "normalized_position": 0.38312614632158143,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "With blood shall be seen pain.",
+        "max_topic_prob": 0.6736736297607422,
+        "normalized_position": 0.7511717953943347,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 554
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "It looked like the majority of blood they’d possessed when living had already drained out of their previous grievous injuries.",
+        "max_topic_prob": 0.7130545377731323,
+        "normalized_position": 0.7073969508752117,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She wasn’t bleeding much, which was good. “",
+        "max_topic_prob": 0.6333872079849243,
+        "normalized_position": 0.5885940146809712,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 536
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She fired his blood, as she had from the beginning.",
+        "max_topic_prob": 0.5995432138442993,
+        "normalized_position": 0.381931112365895,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "In his blood.",
+        "max_topic_prob": 0.594751238822937,
+        "normalized_position": 0.5192546583850932,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 358
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Blood welled as the icy teeth sank deep.",
+        "max_topic_prob": 0.5844137072563171,
+        "normalized_position": 0.010615471485036703,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He did as she instructed, using gauze to soak up the blood that had pooled.",
+        "max_topic_prob": 0.5553535223007202,
+        "normalized_position": 0.5901750423489553,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 550
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "You know, there really can be blood your first time.",
+        "max_topic_prob": 0.726900577545166,
+        "normalized_position": 0.17100782328578001,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Not in the flesh, at least.",
+        "max_topic_prob": 0.4502732753753662,
+        "normalized_position": 0.009019788311090658,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "I don’t like needles.",
+        "max_topic_prob": 0.43120047450065613,
+        "normalized_position": 0.4651633686148182,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Problem is, I need blood.” “",
+        "max_topic_prob": 0.8091366291046143,
+        "normalized_position": 0.31794489947877885,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Blood?”",
+        "max_topic_prob": 0.7715339660644531,
+        "normalized_position": 0.741921072226359,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 299
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You need blood.” “",
+        "max_topic_prob": 0.7714344263076782,
+        "normalized_position": 0.37513030528667163,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You need blood.”",
+        "max_topic_prob": 0.7615773677825928,
+        "normalized_position": 0.3994043186895011,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Blood.",
+        "max_topic_prob": 0.7537932991981506,
+        "normalized_position": 0.9000744601638123,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "At least, he didn’t think so, blood in the wrong place.",
+        "max_topic_prob": 0.7390296459197998,
+        "normalized_position": 0.024571854058078928,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "They must be put to death; their blood will be on their own heads.\"",
+        "max_topic_prob": 0.5489177703857422,
+        "normalized_position": 0.3723404255319149,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Much to my great surprise it was blood.",
+        "max_topic_prob": 0.7602720260620117,
+        "normalized_position": 0.758563593087033,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Do you need blood?”",
+        "max_topic_prob": 0.751594066619873,
+        "normalized_position": 0.30590913794887714,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I wanted blood. “",
+        "max_topic_prob": 0.7365967631340027,
+        "normalized_position": 0.626099555003622,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He’s had my blood.",
+        "max_topic_prob": 0.7148266434669495,
+        "normalized_position": 0.4299906861223223,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I’d offer you some blood, but we don’t keep it on hand,” he said. “",
+        "max_topic_prob": 0.7070672512054443,
+        "normalized_position": 0.6308599813722446,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Because you’re blood.",
+        "max_topic_prob": 0.6896945238113403,
+        "normalized_position": 0.8033736934699369,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Blood from the last girl I helped.”",
+        "max_topic_prob": 0.7184515595436096,
+        "normalized_position": 0.1073004665237675,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 201
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "My bloodshot eyes are half the size as usual, and my skin has a distinctive greenish tint.",
+        "max_topic_prob": 0.41054093837738037,
+        "normalized_position": 0.8175513806581768,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Do you want his blood on your hands?”",
+        "max_topic_prob": 0.6720898151397705,
+        "normalized_position": 0.23879024977430033,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I don’t care if they fucking bleed to death out here, but they probably won’t, not unless I hit a main artery in his leg. “",
+        "max_topic_prob": 0.6061884164810181,
+        "normalized_position": 0.014143845922359314,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I close my eyes, and all I see behind my eyelids is her blood, and it is everywhere.",
+        "max_topic_prob": 0.6006985902786255,
+        "normalized_position": 0.31552813722539874,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "My blood runs like hot lava through my veins, his declaration making me want to snap his neck. “",
+        "max_topic_prob": 0.5895839929580688,
+        "normalized_position": 0.4521516701775504,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "I spit onto the floor, my saliva tinged with blood.",
+        "max_topic_prob": 0.5874360203742981,
+        "normalized_position": 0.4676497141137526,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Dried blood paints her face in a horrific pattern of death.",
+        "max_topic_prob": 0.5572162866592407,
+        "normalized_position": 0.3137225398736082,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Aye, it’s blood.”",
+        "max_topic_prob": 0.7755395174026489,
+        "normalized_position": 0.40258415504930295,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Blood?",
+        "max_topic_prob": 0.7542778253555298,
+        "normalized_position": 0.4026974951830443,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "That would be too foul, all that blood.",
+        "max_topic_prob": 0.7033476829528809,
+        "normalized_position": 0.9805054969964865,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 483
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Blood,” Mackenzie said.",
+        "max_topic_prob": 0.6886180639266968,
+        "normalized_position": 0.40235747478182027,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 409
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Her blood began to race.",
+        "max_topic_prob": 0.6453855037689209,
+        "normalized_position": 0.5192111526691602,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "His blood churned with the discomfort of being at odds with what his family needed of him and what he wanted.",
+        "max_topic_prob": 0.5874770879745483,
+        "normalized_position": 0.5706675733877365,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "They might as well be bleeding from their chests.",
+        "max_topic_prob": 0.5583611726760864,
+        "normalized_position": 0.6007434944237918,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "My ears are bleeding, but other than that . . .”",
+        "max_topic_prob": 0.5271949768066406,
+        "normalized_position": 0.042998760842627014,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "It may have a heart and lungs and a brain, but it is not viable.",
+        "max_topic_prob": 0.2715243101119995,
+        "normalized_position": 0.4581164807930607,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 226
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.007531254707034192,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0026054590570719605,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0019047619047619048,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.002933780385582565,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0043023970497848806,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.002268602540834846,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.002060911380810625,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.001665657177468201,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.00037313432835820896,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 9.989012086704625e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 0.0002775208140610546,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0002537749016622256,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.2",
+    "taxonomy_main_name": "Pain, Injury & Physical Vulnerability",
+    "taxonomy_secondary_id": "7.3",
+    "taxonomy_secondary_name": "Risk, Danger & External Crises",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

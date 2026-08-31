@@ -1,0 +1,50 @@
+{
+  "ts": "02:26:11",
+  "hypotheses": {
+    "H1": {
+      "n_A": 31,
+      "n_B": 31,
+      "n_C": 30,
+      "n_spillover": 28,
+      "pass_b_empty": 4,
+      "pass_b_mixed": 1,
+      "a_b_agree": 0.5862068965517241,
+      "a_c_agree": 0.9666666666666667,
+      "pass_a_top": [
+        "I3",
+        0.967741935483871
+      ],
+      "spillover_include_rate": 0.21428571428571427
+    },
+    "H2": {
+      "n_A": 0,
+      "n_B": 0,
+      "n_C": 0,
+      "n_spillover": 0,
+      "pass_b_empty": 0,
+      "pass_b_mixed": 0
+    },
+    "H3": {
+      "n_A": 0,
+      "n_B": 0,
+      "n_C": 0,
+      "n_spillover": 20,
+      "pass_b_empty": 0,
+      "pass_b_mixed": 0,
+      "spillover_include_rate": 0.05
+    },
+    "H4": {
+      "n_A": 0,
+      "n_B": 0,
+      "n_C": 0,
+      "n_spillover": 0,
+      "pass_b_empty": 0,
+      "pass_b_mixed": 0
+    }
+  },
+  "log": {
+    "http_ok": 205,
+    "openrouter_warnings": 28,
+    "tracebacks": 0
+  }
+}

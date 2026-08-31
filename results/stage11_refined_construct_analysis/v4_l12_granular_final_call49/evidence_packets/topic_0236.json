@@ -1,0 +1,857 @@
+{
+  "topic_id": 236,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "10.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fbi",
+        "agent",
+        "investigation",
+        "spy",
+        "detective",
+        "spying",
+        "undercover",
+        "agents",
+        "investigator",
+        "agency"
+      ],
+      "KeyBERT": [
+        "confessed",
+        "evidence",
+        "escaped",
+        "capture",
+        "worrying",
+        "uh",
+        "ah",
+        "president",
+        "trained",
+        "thinks"
+      ],
+      "POS": [
+        "internal",
+        "value",
+        "scenario",
+        "capture",
+        "occasional",
+        "parties",
+        "evidence",
+        "president",
+        "runs",
+        "ex"
+      ],
+      "MMR": [
+        "internal",
+        "scenario",
+        "capture",
+        "confessed",
+        "evidence",
+        "worrying",
+        "runs",
+        "ex",
+        "escaped",
+        "involved"
+      ]
+    },
+    "stage08_snippets": [
+      "like i’ve caught you spying.",
+      "he suspected he would've been released earlier in the day if not for the fbi.",
+      "you’ve been spying on me all that time?” “"
+    ],
+    "label_public": "Caught Spying By The Fbi"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He was a closer, a realist, and the reason I'd created the department in the first place. \"",
+        "max_topic_prob": 0.44658154249191284,
+        "normalized_position": 0.313261073196842,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Alert the media.\"",
+        "max_topic_prob": 0.4177672266960144,
+        "normalized_position": 0.1983139301485347,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I should stop investigating and go hide?” “",
+        "max_topic_prob": 0.7135286331176758,
+        "normalized_position": 0.6693930262591476,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 442
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You know they’ll suspect me.” “",
+        "max_topic_prob": 0.6792174577713013,
+        "normalized_position": 0.9334194288994117,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "If the CIA has nothing on him, I just look like a crazy person out for revenge.” “",
+        "max_topic_prob": 0.6677999496459961,
+        "normalized_position": 0.3888649734538671,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Spy.",
+        "max_topic_prob": 0.6449089050292969,
+        "normalized_position": 0.665518725785622,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 415
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Let them suspect.",
+        "max_topic_prob": 0.6114736795425415,
+        "normalized_position": 0.9335629215095422,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Have them do a search—we’ll stay here and try to get more of a read on our informant.” “",
+        "max_topic_prob": 0.603754997253418,
+        "normalized_position": 0.4999282536949347,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Aren’t you a private investigator?” “",
+        "max_topic_prob": 0.7685180306434631,
+        "normalized_position": 0.2673157162726008,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Private Investigator.”",
+        "max_topic_prob": 0.7431198358535767,
+        "normalized_position": 0.0627260083449235,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Well, I suppose I do have some investigative skills of my own.”",
+        "max_topic_prob": 0.6629111170768738,
+        "normalized_position": 0.9386648122392212,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Yes, he’s a private investigator.",
+        "max_topic_prob": 0.6504794359207153,
+        "normalized_position": 0.5602225312934631,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I once wanted to be a secret agent.” “",
+        "max_topic_prob": 0.6459692716598511,
+        "normalized_position": 0.42044506258692627,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "If he investigates for a living, can he tell I’m not supposed to be here? “",
+        "max_topic_prob": 0.6264910697937012,
+        "normalized_position": 0.06383866481223922,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Interfering?”",
+        "max_topic_prob": 0.4146384000778198,
+        "normalized_position": 0.5807928314015779,
+        "tertile": "middle",
+        "chapter_index": 39,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He's CIA.\"",
+        "max_topic_prob": 0.6654956936836243,
+        "normalized_position": 0.10853432282003711,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 441
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Agency?\"",
+        "max_topic_prob": 0.5988407731056213,
+        "normalized_position": 0.09461966604823747,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 381
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Rip had heard this same nonsense from the CIA agents in Miami.",
+        "max_topic_prob": 0.5644110441207886,
+        "normalized_position": 0.487012987012987,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Isn't it the CIA who has stirred everyone up?\"",
+        "max_topic_prob": 0.5597977638244629,
+        "normalized_position": 0.4893320964749536,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I wonder if the CIA knows about them.\"",
+        "max_topic_prob": 0.5530338883399963,
+        "normalized_position": 0.46915584415584416,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1996
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "His agency is picking up the tab.\" \"",
+        "max_topic_prob": 0.5351645946502686,
+        "normalized_position": 0.09438775510204081,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Podcast ) Believing in Ghosts (Free): A security expert hired to finds flaws in a Presidential candidate’s campaign system finds more than she bargained for. (",
+        "max_topic_prob": 0.38513752818107605,
+        "normalized_position": 0.7037037037037037,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Venom In The Cloud Forest : A young man suspects someone has been changing past tribal records.",
+        "max_topic_prob": 0.35870498418807983,
+        "normalized_position": 0.8935185185185185,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Podcast ) Snitch : A New Orleans pastor does redevelopment work after a hurricane, but it forced to make more and more compromises to his vision. (",
+        "max_topic_prob": 0.3062974810600281,
+        "normalized_position": 0.8703703703703703,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I knew you would come ask me for this case, so I've talked to the FBI Director, and we came to a conclusion.\" \"",
+        "max_topic_prob": 0.6692923307418823,
+        "normalized_position": 0.9893131760719406,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I need you to help me with some detective work.\" \"",
+        "max_topic_prob": 0.6673718094825745,
+        "normalized_position": 0.5815196142317216,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 915
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Since I have never worked with the FBI, I'm going to remain neutral.\" \"",
+        "max_topic_prob": 0.6638321876525879,
+        "normalized_position": 0.9970024762153004,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I've been told you can have one FBI agent to help.",
+        "max_topic_prob": 0.6456561088562012,
+        "normalized_position": 0.9940049524306008,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I've worked on the fugitive investigative strike team.",
+        "max_topic_prob": 0.6429277658462524,
+        "normalized_position": 0.643424996741822,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1390
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Let's quietly start the investigation.",
+        "max_topic_prob": 0.641973614692688,
+        "normalized_position": 0.5654893783396325,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 792
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Have you been snooping?’ ‘",
+        "max_topic_prob": 0.5922744274139404,
+        "normalized_position": 0.767111650485437,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "Sounds a bit suspect.’",
+        "max_topic_prob": 0.5540001392364502,
+        "normalized_position": 0.491626213592233,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "After several years of feeling lost and off the rails, I had finally found ‘security’ in B.L.Y. when I worked in the university holidays at Clinton Cards and he was area manager.",
+        "max_topic_prob": 0.4635576009750366,
+        "normalized_position": 0.48131067961165047,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "I could analyse anyone.’",
+        "max_topic_prob": 0.46148350834846497,
+        "normalized_position": 0.8219660194174757,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Were you supposed to be here for an undercover assignment?” “",
+        "max_topic_prob": 0.6546708345413208,
+        "normalized_position": 0.5731593662628145,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7380
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You must suck as an agent if you thought we were criminals.",
+        "max_topic_prob": 0.6395658254623413,
+        "normalized_position": 0.5740913327120224,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7392
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Doing what I’ve done for the last twenty years, I got pretty good at being a private investigator.",
+        "max_topic_prob": 0.6215569972991943,
+        "normalized_position": 0.5558403230817024,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7157
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "When I joined up with the DEA, I was an undercover operative.",
+        "max_topic_prob": 0.5980087518692017,
+        "normalized_position": 0.5684218701460081,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7319
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Well, for starters, I’m not the Special Agent in Charge here.",
+        "max_topic_prob": 0.5945454239845276,
+        "normalized_position": 0.041472506989748366,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 534
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I’m an agent with the DEA, babe.” “",
+        "max_topic_prob": 0.5793262720108032,
+        "normalized_position": 0.5543647095371234,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 7138
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Spying on us, are you?”",
+        "max_topic_prob": 0.6548715829849243,
+        "normalized_position": 0.3949579831932773,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "What makes you think you’re worth spying on?",
+        "max_topic_prob": 0.6651085019111633,
+        "normalized_position": 0.00556864424930392,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You’re one of the best spies I’ve ever seen.”",
+        "max_topic_prob": 0.6405689120292664,
+        "normalized_position": 0.008567144998929107,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Can’t you content yourself with spying on the guests instead of me?",
+        "max_topic_prob": 0.571219801902771,
+        "normalized_position": 0.004069393874491326,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "It’s obvious that someone wanted to make you a suspect.",
+        "max_topic_prob": 0.5710698366165161,
+        "normalized_position": 0.26750910259156135,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "They’ll come to investigate,” Cecilia said.",
+        "max_topic_prob": 0.5621310472488403,
+        "normalized_position": 0.24716213321910474,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "There’s a manhunt for you.” “",
+        "max_topic_prob": 0.5468211770057678,
+        "normalized_position": 0.46412508031698435,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 490
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It might help narrow down the field of possible suspects.",
+        "max_topic_prob": 0.597579300403595,
+        "normalized_position": 0.879378837125316,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I was told that there would be a Mr. Rochon here to escort me to the previous cut to review for violations.” “",
+        "max_topic_prob": 0.46008431911468506,
+        "normalized_position": 0.07620079451065366,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Apparently their investigation into the accident wasn’t going well.",
+        "max_topic_prob": 0.44888433814048767,
+        "normalized_position": 0.8519321054532322,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Up until then the sabotage could have been coincidental.",
+        "max_topic_prob": 0.40512633323669434,
+        "normalized_position": 0.6363308053448898,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Your site is cleared, Mr. Rochon,” Jinger said turning and giving him his copy of the inspection report. “",
+        "max_topic_prob": 0.39098143577575684,
+        "normalized_position": 0.12495485734922354,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Is there a reason the DNR is checking up on us?",
+        "max_topic_prob": 0.36489278078079224,
+        "normalized_position": 0.1094257854821235,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "If Jacque was the suspicious kind, and he was, he might think this was a setup, a way to get someone inside their pack in order to study their weaknesses and strengths.",
+        "max_topic_prob": 0.43740591406822205,
+        "normalized_position": 0.3352838986925117,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He definitely possessed the look of an undercover operator. “",
+        "max_topic_prob": 0.5479151010513306,
+        "normalized_position": 0.09872922776148582,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "At least no one is hacking in and stealing his intel.” “",
+        "max_topic_prob": 0.4743112623691559,
+        "normalized_position": 0.05816226783968719,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Busted again.",
+        "max_topic_prob": 0.3462648093700409,
+        "normalized_position": 0.8041055718475073,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "We’ll have to hire a private detective,” Sean said. “",
+        "max_topic_prob": 0.6641049981117249,
+        "normalized_position": 0.7185856754306437,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Before he got there, he’d thought the private detective they’d hired had found their sister, Glenna.",
+        "max_topic_prob": 0.4928833246231079,
+        "normalized_position": 0.9882139619220308,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I would pretend I was a spy, and I’d sit in the upstairs areas and snoop on the people below, taking notes.",
+        "max_topic_prob": 0.5431467294692993,
+        "normalized_position": 0.4235225955967555,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "That was a rental car agency.",
+        "max_topic_prob": 0.41734474897384644,
+        "normalized_position": 0.6952491309385863,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 156
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.011509285901124771,
+        "n_sentences": 88
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0032751091703056767,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.004312372588991689,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.007819287576020852,
+        "n_sentences": 54
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.013824884792626729,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0025174825174825175,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.004954760878931495,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.005624560581204594,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 9.188642837452908e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0003650967506389193,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0003893322951138797,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00029510131811922094,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 9.812579727210283e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0003850596842510589,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00026986911347996224,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0004897759275131628,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 61
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "10.3",
+    "taxonomy_main_name": "Mystery, Suspense & Investigation",
+    "taxonomy_secondary_id": "7.3",
+    "taxonomy_secondary_name": "Risk, Danger & External Crises",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -47,6 +47,9 @@ _CODE_ALIASES: Dict[str, str] = {
     "APPEARANCE": "S13",
     # H4
     **{f"H4_{i}": f"H4_{i}" for i in range(14)},
+    "H4_5a": "H4_5a",
+    "H4_5A": "H4_5a",
+    "PROTECTIVE_COMMITMENT": "H4_5a",
     "PROTECT": "H4_5",
     "PROTECTION": "H4_5",
     "EXTERNAL_PROTECTION": "H4_5",
@@ -120,7 +123,7 @@ def normalize_code(raw: object) -> Optional[str]:
     if s.upper() in _CODE_ALIASES:
         return _CODE_ALIASES[s.upper()]
     # Soft match: leading code token
-    m = re.match(r"^(I\d{1,2}|H2_\d|S\d{1,2}|H4_\d{1,2}|D\d|ARC_\d{1,2})\b", s, re.I)
+    m = re.match(r"^(I\d{1,2}|H2_\d|S\d{1,2}|H4_\d{1,2}a?|D\d|ARC_\d{1,2})\b", s, re.I)
     if m:
         tok = m.group(1)
         # Normalise ARC_01 → ARC_1 etc.
@@ -189,6 +192,7 @@ CODE_TO_RAX: Dict[str, List[str]] = {
     "H4_3": ["RAX_material_provision"],
     "H4_4": ["RAX_emotional_reassurance"],
     "H4_5": ["RAX_external_protection"],
+    "H4_5a": ["RAX_protective_commitment"],
     "H4_6": ["RAX_external_protection"],
     "H4_7": ["RAX_possessive_claiming"],
     "H4_8": ["RAX_possessive_claiming"],
@@ -221,9 +225,11 @@ OFF_TARGET_CODES: Set[str] = {
 }
 
 # H5 tenderness bridge: H1/H4 codes reused into RAX_tenderness_core
+# (H4_2 practical care excluded — generic caretaking ≠ tenderness)
 H5_TENDERNESS_H1_CODES: Set[str] = {"I1", "I2", "I3", "I7"}
-H5_TENDERNESS_H4_CODES: Set[str] = {"H4_1", "H4_2", "H4_4", "H4_12"}
-# Stage 09 leaves kept as relational-darkness anchors (skip_full_relabel)
+H5_TENDERNESS_H4_CODES: Set[str] = {"H4_1", "H4_4", "H4_12"}
+# Stage 09 leaves kept as interpersonal/conflict-darkness anchors (skip_full_relabel).
+# Partner-vs-external source for 7.2 was not topic-audited.
 H5_DARKNESS_ANCHOR_LEAVES: Set[str] = {"7.2", "4.4"}
 
 # Composite definitions (sums of atoms; built after atom columns exist)
@@ -255,6 +261,10 @@ COMPOSITE_DEFS: Dict[str, List[str]] = {
         "RAX_workplace_status",
     ],
     "RAX_h4_protection_side": ["RAX_external_protection"],
+    "RAX_protective_care_broad": [
+        "RAX_external_protection",
+        "RAX_protective_commitment",
+    ],
     "RAX_h4_possession_side": [
         "RAX_possessive_claiming",
         "RAX_coercive_control",

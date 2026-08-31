@@ -1,11 +1,12 @@
 # Frozen H4 protection vs possession prompts.
 #
+# v1.2: add H4_5a protective_commitment; keep H4_5/H4_6 for enacted external protection.
 # v1.1: force codebook IDs (H4_0–H4_13|MIXED) via explicit JSON schemas — Sonnet v1.0
 # returned free-form / UNKNOWN codes that never mapped.
 
 hypothesis: H4
 name: protection_possession
-version: "1.1"
+version: "1.2"
 frozen: true
 
 codes:
@@ -28,6 +29,12 @@ codes:
   - id: H4_5
     label: external_protection_physical
     definition: Physical protection from an EXTERNAL threat (rescue, bodyguarding).
+  - id: H4_5a
+    label: protective_commitment
+    definition: >-
+      Explicit responsibility for another's safety or welfare ("I'll take care of you",
+      "I've got your back", "I won't let anything happen to you", "I'll find you")
+      without a concrete external threat strong enough for H4_5/H4_6.
   - id: H4_6
     label: external_protection_social_legal
     definition: Social/legal protection from an EXTERNAL threat (advocate, lawyer, reputation shield).
@@ -54,20 +61,25 @@ codes:
     definition: Protection and possession/control signals compete with no clear dominant.
 
 decision_rules: |
-  1. Protection (H4_5/H4_6) REQUIRES an EXTERNAL threat. No external threat → not protection.
-  2. Partner-as-danger or "for their own good" restriction → H4_10 / H4_11 (control), not protection.
-  3. Claiming / jealousy without coercion → H4_7 / H4_8; coercion/restriction → H4_9–H4_11.
-  4. Soft care/reassurance without threat or claiming → H4_1–H4_4 or H4_12.
-  5. Prefer MOST SPECIFIC code. Use H4_0 when off-target for this hypothesis.
-  6. If two codes compete and neither reaches ~70% share on Pass B → MIXED (or H4_13).
-  7. Pass C must return care_protection_code as H4_# or MIXED — never free-form labels.
+  1. Protection (H4_5/H4_6) REQUIRES an EXTERNAL threat. No external threat → not H4_5/H4_6.
+  2. H4_5a = explicit safety/welfare responsibility pledge WITHOUT a concrete external threat
+     strong enough for H4_5/H4_6. Do not use H4_5a for ordinary reassurance/food/blankets.
+  3. Partner-as-danger or "for their own good" restriction → H4_10 / H4_11 (control), not protection.
+  4. Claiming / jealousy without coercion → H4_7 / H4_8; coercion/restriction → H4_9–H4_11.
+  5. Soft care/reassurance without threat, claiming, or safety-responsibility → H4_1–H4_4 or H4_12.
+  6. Prefer MOST SPECIFIC code. Use H4_0 when off-target for this hypothesis.
+  7. If two codes compete and neither reaches ~70% share on Pass B → MIXED (or H4_13).
+  8. Pass C must return care_protection_code as H4_# (including H4_5a) or MIXED — never free-form.
 
 rule: |
-  Protection requires an EXTERNAL threat. Partner-as-danger or "for their own good" restriction
-  is control/coercion, not protection.
+  Enacted external protection (H4_5/H4_6) requires an EXTERNAL threat.
+  Protective commitment (H4_5a) is an explicit safety/welfare responsibility without that threat.
+  Partner-as-danger or "for their own good" restriction is control/coercion, not protection.
 
 constructs:
   RAX_external_protection: [H4_5, H4_6]
+  RAX_protective_commitment: [H4_5a]
+  RAX_protective_care_broad: [H4_5, H4_5a, H4_6]
   RAX_possessive_claiming: [H4_7, H4_8]
   RAX_coercive_control: [H4_9, H4_10, H4_11]
 
@@ -85,23 +97,25 @@ phrasing:
   primary:
     system: |
       You are auditing BERTopic topics for a romance-novel research study.
-      Distinguish external protection from possessive claiming and coercive control.
+      Distinguish external protection, protective commitment, possessive claiming, and coercive control.
       Do not invent plot. Do not use rating labels.
 
       VALID CODES (use these IDs only — never free-form words):
       H4_0 off_target | H4_1 reassurance_tenderness | H4_2 practical_care |
       H4_3 material_care | H4_4 emotional_support | H4_5 external_protection_physical |
-      H4_6 external_protection_social_legal | H4_7 possessive_claiming |
-      H4_8 jealous_possessiveness | H4_9 coercive_control | H4_10 partner_as_danger |
-      H4_11 for_your_own_good_control | H4_12 mutual_care_balanced | H4_13 mixed_unclear | MIXED
+      H4_5a protective_commitment | H4_6 external_protection_social_legal |
+      H4_7 possessive_claiming | H4_8 jealous_possessiveness | H4_9 coercive_control |
+      H4_10 partner_as_danger | H4_11 for_your_own_good_control |
+      H4_12 mutual_care_balanced | H4_13 mixed_unclear | MIXED
 
       CRITICAL:
-      - Every consensus_code / dominant_code / care_protection_code MUST be H4_0–H4_13 or MIXED.
+      - Every consensus_code / dominant_code / care_protection_code MUST be H4_0–H4_13, H4_5a, or MIXED.
       - Never return CELL_*, BOOK_*, "protection", "jealousy", or "control" as codes.
-      - Protection (H4_5/H4_6) needs an EXTERNAL threat; partner restriction → H4_9–H4_11.
+      - H4_5/H4_6 need an EXTERNAL threat; H4_5a is responsibility without that threat;
+        partner restriction → H4_9–H4_11.
       Respond with JSON only matching the schema.
     pass_a: |
-      Pass A — lexical only (prompt v1.1).
+      Pass A — lexical only (prompt v1.2).
       Assign one H4_# code per keyword list (Main, KeyBERT, POS, MMR), then consensus.
       Topic {topic_id}
       Main: {main}
@@ -114,8 +128,8 @@ phrasing:
       "autonomy_effect": "supports|restricts|neutral|unclear",
       "rationale": "cite cues that forced the H4_# code"}}
     pass_b: |
-      Pass B — contextual sentences (rating cells blinded as CELL_*; prompt v1.1).
-      Code each sentence with the MOST SPECIFIC H4_# code. CELL_* are cell IDs only —
+      Pass B — contextual sentences (rating cells blinded as CELL_*; prompt v1.2).
+      Code each sentence with the MOST SPECIFIC H4_# code (including H4_5a). CELL_* are cell IDs only —
       never use them as codes. Estimate proportions; MIXED if no code >= 70%.
       Topic {topic_id}
       Sentences:
@@ -126,13 +140,14 @@ phrasing:
       "claiming_language": bool,
       "rationale": "..."}}
     pass_c: |
-      Pass C — adjudication (prompt v1.1). Taxonomy metadata is revealed. Still ignore ratings.
+      Pass C — adjudication (prompt v1.2). Taxonomy metadata is revealed. Still ignore ratings.
       Lexical consensus: {lexical_consensus}
       Contextual dominant: {contextual_dominant}
       Taxonomy: {taxonomy_id} {taxonomy_name} (secondary: {secondary_id} {secondary_name})
-      Resolve to a single care_protection_code from H4_0–H4_13 or MIXED. Do not invent new labels.
+      Resolve to a single care_protection_code from H4_0–H4_13, H4_5a, or MIXED. Do not invent new labels.
       If Pass A/B used free-form words, map them onto the nearest H4_# now.
-      Protection only if an external threat is evidenced; else prefer care or control codes.
+      H4_5/H4_6 only if an external threat is evidenced; else H4_5a for safety/welfare pledges,
+      or care/control codes as appropriate.
       Return JSON: {{"topic_id": int, "action": "KEEP|RENAME|REINTERPRET|RETAXONOMIZE|SPLIT|EXCLUDE_FROM_HYPOTHESIS",
       "care_protection_code": "H4_#|MIXED",
       "proposed_constructs": ["..."],
@@ -141,19 +156,20 @@ phrasing:
 
   alternate:
     system: |
-      Protection-vs-possession auditor (prompt v1.1).
-      Codes MUST be H4_0–H4_13 or MIXED only. External threat => H4_5/H4_6;
+      Protection-vs-possession auditor (prompt v1.2).
+      Codes MUST be H4_0–H4_13, H4_5a, or MIXED only. External threat => H4_5/H4_6;
+      protective commitment without threat => H4_5a;
       partner restriction => H4_9–H4_11; claiming/jealousy => H4_7/H4_8. JSON only.
     pass_a: |
-      Lexical pass v1.1 for topic {topic_id}. Assign one H4_# per representation, then consensus.
+      Lexical pass v1.2 for topic {topic_id}. Assign one H4_# per representation, then consensus.
       Main={main}; KeyBERT={keybert}; POS={pos}; MMR={mmr}.
       JSON: per_rep, consensus_code (H4_#), disagreement, threat_source, autonomy_effect, rationale.
     pass_b: |
-      Contextual pass v1.1 for topic {topic_id}. Blinded cells. Most-specific H4_# codes;
+      Contextual pass v1.2 for topic {topic_id}. Blinded cells. Most-specific H4_# codes;
       never use CELL_* as codes; MIXED if none >=70%.
       {sentences_block}
       JSON: sentence_codes, proportions, dominant_code (H4_#|MIXED), threat_source, claiming_language, rationale.
     pass_c: |
-      Adjudicate topic {topic_id} (v1.1): lexical={lexical_consensus}, contextual={contextual_dominant},
+      Adjudicate topic {topic_id} (v1.2): lexical={lexical_consensus}, contextual={contextual_dominant},
       taxonomy={taxonomy_id}/{taxonomy_name}, secondary={secondary_id}/{secondary_name}.
-      Action + care_protection_code (H4_#|MIXED) required.
+      Action + care_protection_code (H4_# including H4_5a, or MIXED) required.

@@ -249,13 +249,36 @@ def cliffs_delta_table(
     return pd.DataFrame(rows)
 
 
-def verdict(delta: float, lo: float, hi: float, gate: float = 0.11) -> str:
-    clears = abs(delta) >= gate and not (lo <= 0 <= hi)
-    if clears:
-        return "clears_gate"
-    if not (lo <= 0 <= hi):
-        return "directional_only"
-    return "null"
+def verdict(
+    delta: float,
+    lo: float,
+    hi: float,
+    expected_sign: Optional[int] = None,
+    *,
+    gate: float = 0.11,
+) -> str:
+    """Stage 10-style directional verdict; unsigned labels if expected_sign is None."""
+    import math
+
+    if not math.isfinite(delta):
+        return "no reliable effect"
+    reliable = not (lo <= 0 <= hi)
+    material = abs(delta) >= gate
+    if expected_sign is None:
+        if reliable and material:
+            return "clears_gate"
+        if reliable:
+            return "directional_only"
+        # Avoid the literal "null" (pandas read_csv treats it as NaN).
+        return "no reliable effect"
+    directional = int(np.sign(delta)) == int(np.sign(expected_sign))
+    if directional and reliable and material:
+        return "supported"
+    if directional and reliable:
+        return "directionally consistent, effect below threshold"
+    if reliable:
+        return "contradicted"
+    return "no reliable effect"
 
 
 def gated_verdict(
@@ -265,11 +288,12 @@ def gated_verdict(
     *,
     measurement_gate: str = "viable",
     effect_gate: float = 0.11,
+    expected_sign: Optional[int] = None,
 ) -> str:
     """Respect measurement gates before ordinary effect verdicts."""
     if measurement_gate == "unmeasurable":
         return "unmeasurable"
-    base = verdict(delta, lo, hi, effect_gate)
+    base = verdict(delta, lo, hi, expected_sign, gate=effect_gate)
     if measurement_gate == "thin":
         return f"thin:{base}"
     return base
@@ -295,6 +319,7 @@ def test_axis(
     seed: int = 42,
     measurement_gate: str = "viable",
     effect_gate: float = 0.11,
+    expected_sign: Optional[int] = None,
 ) -> Dict[str, Any]:
     """Stage 10-style test_axis for refined constructs (no CLR required)."""
     from src.stage10_correlation_analysis.analysis import effects as eff
@@ -389,8 +414,14 @@ def test_axis(
         "status": "tested",
         "measurement_gate": measurement_gate,
         "verdict": gated_verdict(
-            delta, lo, hi, measurement_gate=measurement_gate, effect_gate=effect_gate
+            delta,
+            lo,
+            hi,
+            measurement_gate=measurement_gate,
+            effect_gate=effect_gate,
+            expected_sign=expected_sign,
         ),
+        "expected_sign": expected_sign,
         "cliffs_delta": delta,
         "ci_low": lo,
         "ci_high": hi,

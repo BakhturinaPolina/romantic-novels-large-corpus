@@ -112,5 +112,8 @@ ctx.save_table(cov_df, "code_normalisation_coverage")
 
 print(
     "\nDictionary frozen. Do not peek at refined rating effects until notebooks 08–09.\n"
-    "Stage 09 taxonomy remains descriptive; this table is the hypothesis measurement layer."
+    "Stage 09 taxonomy remains descriptive; this table is the hypothesis measurement layer.\n"
+    "Note: RAX_relational_darkness is interpersonal/conflict darkness (7.2/4.4 anchors + D1/D2); "
+    "partner-vs-external source for 7.2 was not topic-audited. "
+    "H4_5a → RAX_protective_commitment; primary H4 contrast uses external protection only."
 )

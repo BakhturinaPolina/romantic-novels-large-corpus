@@ -41,36 +41,49 @@ usable = frame[frame["analysable"].fillna(True)].copy() if "analysable" in frame
 work = usable.reset_index()
 
 FEATURES = [
-    ("H1", "RLR_emotional_vs_explicit", "emotional vs explicit ratio"),
-    ("H1", "RAX_nonexplicit_affection", "non-explicit affection"),
-    ("H1", "RAX_explicit_sex", "explicit sex"),
-    ("H1", "RAX_emotional_reassurance", "emotional reassurance"),
-    ("H2", "RAX_h2_strict", "strict final payoff"),
-    ("H2", "RAX_h2_broad", "broad HEA/commitment"),
-    ("H2", "RAX_repair", "repair"),
-    ("H3", "RLR_emotional_vs_material_security", "emotional vs material security"),
-    ("H3", "RAX_h3_emotional_side", "emotional security side"),
-    ("H3", "RAX_h3_material_side", "material provision side"),
-    ("H3", "RAX_appearance_grooming", "appearance / grooming"),
-    ("H3", "RAX_status_display", "status display"),
-    ("H3", "RAX_workplace_status", "workplace status"),
-    ("H3", "RAX_social_presentation", "social presentation (exploratory)"),
-    ("H4", "RLR_protection_vs_control", "protection vs possession"),
-    ("H4", "RAX_h4_protection_side", "external protection"),
-    ("H4", "RAX_h4_possession_side", "possession / control"),
-    ("H5", "RLR_darkness_vs_tenderness", "darkness vs tenderness"),
-    ("H5", "RAX_relational_darkness", "relational darkness"),
-    ("H5", "RAX_tenderness_core", "tenderness core"),
-    ("H5", "RAX_external_danger_crisis", "external danger / crisis"),
-    ("H5", "RAX_individual_distress", "individual distress"),
-    ("H6", "RARC", "refined arc contrast"),
-    ("H6", "DELTA_rising", "rising Δ (end−begin)"),
-    ("H6", "DELTA_falling", "falling Δ (end−begin)"),
+    # (hyp, feature, label, expected_sign) — expected_sign only for primary hypothesis tests
+    ("H1", "RLR_emotional_vs_explicit", "emotional vs explicit ratio", +1),
+    ("H1", "RAX_nonexplicit_affection", "non-explicit affection", None),
+    ("H1", "RAX_explicit_sex", "explicit sex", None),
+    ("H1", "RAX_emotional_reassurance", "emotional reassurance", None),
+    ("H2", "RAX_h2_strict", "strict final payoff", +1),
+    ("H2", "RAX_h2_broad", "broad HEA/commitment", None),
+    ("H2", "RAX_repair", "repair", None),
+    ("H3", "RLR_emotional_vs_material_security", "emotional vs material security", +1),
+    ("H3", "RAX_h3_emotional_side", "emotional security side", None),
+    ("H3", "RAX_h3_material_side", "material provision side", None),
+    ("H3", "RAX_appearance_grooming", "appearance / grooming", None),
+    ("H3", "RAX_status_display", "status display", None),
+    ("H3", "RAX_workplace_status", "workplace status", None),
+    ("H3", "RAX_social_presentation", "social presentation (exploratory)", None),
+    ("H4", "RLR_protection_vs_control", "protection vs possession", +1),
+    ("H4", "RAX_h4_protection_side", "external protection", None),
+    ("H4", "RAX_h4_possession_side", "possession / control", None),
+    ("H4", "RAX_external_protection", "external protection (atom)", None),
+    ("H4", "RAX_protective_commitment", "protective commitment", None),
+    ("H4", "RAX_protective_care_broad", "protective care broad (exploratory)", None),
+    ("H5", "RLR_darkness_vs_tenderness", "darkness vs tenderness", +1),
+    ("H5", "RAX_relational_darkness", "interpersonal/conflict darkness", None),
+    ("H5", "RAX_tenderness_core", "tenderness core", None),
+    ("H5", "RAX_external_danger_crisis", "external danger / crisis", None),
+    ("H5", "RAX_individual_distress", "individual distress", None),
+    ("H6", "RARC", "refined arc contrast", +1),
+    ("H6", "DELTA_rising", "rising Δ (end−begin)", None),
+    ("H6", "DELTA_falling", "falling Δ (end−begin)", None),
 ]
+
+PRIMARY_FEATURES = {
+    "RLR_emotional_vs_explicit",
+    "RAX_h2_strict",
+    "RLR_emotional_vs_material_security",
+    "RLR_protection_vs_control",
+    "RLR_darkness_vs_tenderness",
+    "RARC",
+}
 
 TIERS = ("low_rate", "mid_rate", "high_rate")
 results = []
-for hyp, feat, label in FEATURES:
+for hyp, feat, label, expected_sign in FEATURES:
     mgate = nh.gate_for_feature(coverage, feat)
     results.append(
         nh.test_axis(
@@ -83,12 +96,33 @@ for hyp, feat, label in FEATURES:
             seed=42,
             measurement_gate=mgate,
             effect_gate=GATE,
+            expected_sign=expected_sign,
         )
     )
 effects = pd.DataFrame(results)
+
+# FDR (Benjamini–Hochberg) on the six primary hypothesis tests only.
+# Component / exploratory p-values remain unadjusted.
+from src.stage10_correlation_analysis.analysis import tests as tst
+
+primary_mask = effects["feature"].isin(PRIMARY_FEATURES)
+primary = effects.loc[primary_mask].copy()
+if len(primary):
+    kw_adj = tst.adjust_within_family(primary, "kw_p_value", method="fdr_bh", alpha=0.05)
+    effects.loc[primary_mask, "kw_q_value"] = kw_adj["q_value"].to_numpy()
+    if "quality_p" in primary.columns:
+        q_adj = tst.adjust_within_family(primary, "quality_p", method="fdr_bh", alpha=0.05)
+        effects.loc[primary_mask, "quality_q"] = q_adj["q_value"].to_numpy()
+
 display(effects.round(4))
 ctx.save_table(effects, "refined_hypothesis_effects")
 
+print(
+    "Primary verdicts use expected direction (supported / directionally consistent / "
+    "contradicted / no reliable effect), wrapped by measurement gates. "
+    "FDR (BH) is applied only to the six primary kw_p / quality_p values; "
+    "component analyses are exploratory/unadjusted."
+)
 # Compact δ view (backward-compatible table name)
 delta_view = effects[
     [

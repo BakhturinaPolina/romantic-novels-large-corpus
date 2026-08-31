@@ -1,0 +1,725 @@
+{
+  "topic_id": 181,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "joe",
+        "frank",
+        "uncle",
+        "franky",
+        "trader",
+        "wife",
+        "come",
+        "quicken"
+      ],
+      "KeyBERT": [
+        "afterward"
+      ],
+      "POS": [
+        "visits",
+        "identity",
+        "hopeful",
+        "regular",
+        "affection",
+        "latest",
+        "behavior",
+        "previous",
+        "dozen",
+        "crowd"
+      ],
+      "MMR": [
+        "dislike",
+        "visits",
+        "tries",
+        "confessed",
+        "stalked",
+        "bothering",
+        "affection",
+        "behavior",
+        "dozen",
+        "ex"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll leave it to [person] to continue again now”. “",
+      "i’ll get [person] to approve the field trip.” “",
+      "and i’ll be frank."
+    ],
+    "label_public": "Handing Off to Someone Else"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He was with Ferdie when your grandfather died.",
+        "max_topic_prob": 0.42902904748916626,
+        "normalized_position": 0.8659349274794198,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’ll get Frank up here on that.”",
+        "max_topic_prob": 0.5816366076469421,
+        "normalized_position": 0.15951043338683787,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 795
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Mr. Winston.” “",
+        "max_topic_prob": 0.5270262956619263,
+        "normalized_position": 0.09189406099518459,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 458
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Mr. Winston.",
+        "max_topic_prob": 0.5030763149261475,
+        "normalized_position": 0.9584670947030498,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2119
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Finally Fran had him cut off, long before he was really drunk, and when he complained she just told him it was a longwalk home for himondark roads, ifhe got obnoxious about it.",
+        "max_topic_prob": 0.4934467077255249,
+        "normalized_position": 0.5836677367576244,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Martha Everett, Mr. Winston.",
+        "max_topic_prob": 0.4674409031867981,
+        "normalized_position": 0.9572632423756019,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2113
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Gary Winston.”",
+        "max_topic_prob": 0.4514695405960083,
+        "normalized_position": 0.08968699839486356,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 447
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Ms. Dalton?” “",
+        "max_topic_prob": 0.4834972023963928,
+        "normalized_position": 0.24664377146425226,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The thought of Frank coming to the house when I wasn’t there alarmed me.",
+        "max_topic_prob": 0.6056106686592102,
+        "normalized_position": 0.7244565217391304,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "So Frank vanished.",
+        "max_topic_prob": 0.5836663246154785,
+        "normalized_position": 0.2843478260869565,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 441
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "When the son left town, so did Frank.",
+        "max_topic_prob": 0.5822596549987793,
+        "normalized_position": 0.28402173913043477,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 438
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’m Frank.”",
+        "max_topic_prob": 0.5761825442314148,
+        "normalized_position": 0.29728260869565215,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I surmise that Frank was paid off by Mr. Layton Sr.",
+        "max_topic_prob": 0.5571058988571167,
+        "normalized_position": 0.2841304347826087,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 439
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "As I said, perhaps Frank is not so clever.”",
+        "max_topic_prob": 0.5513901710510254,
+        "normalized_position": 0.2852173913043478,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I bet that Faith took the house for Zane.",
+        "max_topic_prob": 0.5042507648468018,
+        "normalized_position": 0.4050260357708852,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Zane’s age, Zane’s mother, and the lies are enough explanation, don’t you think?” “",
+        "max_topic_prob": 0.4654494524002075,
+        "normalized_position": 0.579352501697985,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Usually bringing up Zane starts a war between the two of us.",
+        "max_topic_prob": 0.46048644185066223,
+        "normalized_position": 0.393026941362916,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I tried to talk about Zane a lot so you wouldn’t feel left out.",
+        "max_topic_prob": 0.4551588296890259,
+        "normalized_position": 0.8560108671043695,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Not just about Zane.",
+        "max_topic_prob": 0.44816505908966064,
+        "normalized_position": 0.8665383744623048,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Whitt is here with his family while Dalton said he needed to be with his side of the family.",
+        "max_topic_prob": 0.4473116397857666,
+        "normalized_position": 0.9575503735567127,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "We leave with Grayson, Tony, Phil, and Ty in tow.",
+        "max_topic_prob": 0.4523979425430298,
+        "normalized_position": 0.6534653465346535,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I Shift as he calls me Lizzie, he deserves to have his real sire take care of him and his eyes light up as he stares into my big blue ones.",
+        "max_topic_prob": 0.4480721056461334,
+        "normalized_position": 0.011152839421873222,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Funny, how quickly her feelings for Joseph had faded.",
+        "max_topic_prob": 0.6319063305854797,
+        "normalized_position": 0.8950686324351804,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Not even Frank, bugging her to get back to work.",
+        "max_topic_prob": 0.6297338008880615,
+        "normalized_position": 0.5567869852567362,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Yeah, Frank.",
+        "max_topic_prob": 0.6183933615684509,
+        "normalized_position": 0.9239450940518557,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I dunno,” Frank started. “",
+        "max_topic_prob": 0.612488865852356,
+        "normalized_position": 0.6559227249618709,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Frank, please.",
+        "max_topic_prob": 0.5977263450622559,
+        "normalized_position": 0.7808845958312151,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It hadn’t been long afterward that Joseph began to call on Constance.",
+        "max_topic_prob": 0.5960403084754944,
+        "normalized_position": 0.894661921708185,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Joe?”",
+        "max_topic_prob": 0.7112674117088318,
+        "normalized_position": 0.6637350556548028,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1330
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Joe?”",
+        "max_topic_prob": 0.711267352104187,
+        "normalized_position": 0.43287068847052357,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1584
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Joe.”",
+        "max_topic_prob": 0.7032561302185059,
+        "normalized_position": 0.7618524117081215,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Joe.”",
+        "max_topic_prob": 0.7032561302185059,
+        "normalized_position": 0.9259310155283771,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1362
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Joe.",
+        "max_topic_prob": 0.6862714886665344,
+        "normalized_position": 0.7423388759104026,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Not just Joe.",
+        "max_topic_prob": 0.6738009452819824,
+        "normalized_position": 0.513260959186478,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Joseph didn’t even raise a brow at that referral. “",
+        "max_topic_prob": 0.6227580308914185,
+        "normalized_position": 0.49541634835752485,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Joseph, please!",
+        "max_topic_prob": 0.6119288206100464,
+        "normalized_position": 0.7723453017570665,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Feeling much better, Joseph.",
+        "max_topic_prob": 0.5720347166061401,
+        "normalized_position": 0.492742551566081,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Joseph has seen more than he wanted to over the years.”",
+        "max_topic_prob": 0.5719568729400635,
+        "normalized_position": 0.6191749427043545,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Jax is meeting us off the highway and will follow us down,” I tell Harlen, Everett, Z, and Mic. “",
+        "max_topic_prob": 0.44469013810157776,
+        "normalized_position": 0.8923076923076924,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Another incident like that might drive Eliza away, and that would make him angrier with the Coopers than the loss of the barn.",
+        "max_topic_prob": 0.4713807702064514,
+        "normalized_position": 0.6060215053763441,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Who could it be but the Coopers?",
+        "max_topic_prob": 0.3964134454727173,
+        "normalized_position": 0.5535483870967742,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "But it was just the kind of mischief the Cooper boys might try.",
+        "max_topic_prob": 0.3672013282775879,
+        "normalized_position": 0.3660215053763441,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Coopers.”",
+        "max_topic_prob": 0.3422071933746338,
+        "normalized_position": 0.8305376344086022,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And if it is the Coopers?”",
+        "max_topic_prob": 0.3181632161140442,
+        "normalized_position": 0.5806451612903226,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Yeees, Jones?”",
+        "max_topic_prob": 0.45370543003082275,
+        "normalized_position": 0.29613960867266,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Jones.” “",
+        "max_topic_prob": 0.44388043880462646,
+        "normalized_position": 0.585404547858276,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Mr. Jones.",
+        "max_topic_prob": 0.43696868419647217,
+        "normalized_position": 0.9814912744579588,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Didn’t quite catch that, Jones.”",
+        "max_topic_prob": 0.43670374155044556,
+        "normalized_position": 0.28688524590163933,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Jones, don’t keep repeating everything I say like a parrot.” “ ‘",
+        "max_topic_prob": 0.4302496016025543,
+        "normalized_position": 0.5848757271285034,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Of course, Jones.",
+        "max_topic_prob": 0.4110119938850403,
+        "normalized_position": 0.3794288736118456,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 34
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.001935998177884068,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.00216169476869866,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.004422048539695599,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0015414258188824663,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0018662860906795476,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.003515413737155219,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.002903359601824969,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.002840909090909091,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00022893772893772894,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00019102196752626553,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00013292569453675395,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00015715857300015716,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 50
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "topic_id": 33,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "10.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "wolves",
+        "werewolf",
+        "werewolves",
+        "pack",
+        "form",
+        "alpha",
+        "human",
+        "animal",
+        "the"
+      ],
+      "KeyBERT": [
+        "stalked",
+        "creatures",
+        "shed",
+        "rapidly",
+        "instincts",
+        "climb",
+        "ripping",
+        "heal",
+        "promises",
+        "growl"
+      ],
+      "POS": [
+        "treatment",
+        "creatures",
+        "instincts",
+        "concept",
+        "panicked",
+        "dismay",
+        "capture",
+        "threats",
+        "worries",
+        "foreign"
+      ],
+      "MMR": [
+        "ripping",
+        "crouched",
+        "paced",
+        "circling",
+        "creatures",
+        "instincts",
+        "glued",
+        "nudged",
+        "dangerously",
+        "worries"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll miss you, mr. [person].”",
+      "we’ll buy one on the way down to wolf hole.",
+      "take your woman and leave—i’ll handle the vaile wolves.”"
+    ],
+    "label_public": "Werewolf Pack Confrontation"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "A wolf is with them.”",
+        "max_topic_prob": 0.8386803865432739,
+        "normalized_position": 0.4086634808077694,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "What caused the wolf to attack her?”",
+        "max_topic_prob": 0.8042402863502502,
+        "normalized_position": 0.041775859411129955,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Where is the wolf now?”",
+        "max_topic_prob": 0.80241459608078,
+        "normalized_position": 0.3691999383382149,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "That wolf has been through enough.",
+        "max_topic_prob": 0.7675270438194275,
+        "normalized_position": 0.6821334977647603,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 445
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Seems odd that whoever is behind this would go after such a powerful wolf.” “",
+        "max_topic_prob": 0.7630438804626465,
+        "normalized_position": 0.6875289039617697,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 480
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’d seen this wolf kill another in a split second. “",
+        "max_topic_prob": 0.7620959281921387,
+        "normalized_position": 0.364575304455064,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "At least now she knew what had set Wolf off.",
+        "max_topic_prob": 0.7163512706756592,
+        "normalized_position": 0.4316596931659693,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 425
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Take it,” Wolf groused back. “",
+        "max_topic_prob": 0.6377506256103516,
+        "normalized_position": 0.423465829846583,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "But now…only her, Wolf, and Hawkings? “",
+        "max_topic_prob": 0.6213337182998657,
+        "normalized_position": 0.42573221757322177,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 391
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Wolf Hubrick.",
+        "max_topic_prob": 0.6091213226318359,
+        "normalized_position": 0.4215481171548117,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "It took all her will not to kick him in the face this time, like Wolf said.",
+        "max_topic_prob": 0.5988536477088928,
+        "normalized_position": 0.43113668061366806,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Wolf’s worship was practically a given for anyone wearing the cut, a source of open ridicule from all the members. “",
+        "max_topic_prob": 0.5580418109893799,
+        "normalized_position": 0.42416317991631797,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 382
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Lucifer clawed Furcas’ ear off.",
+        "max_topic_prob": 0.5061075091362,
+        "normalized_position": 0.5129805013927576,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 292
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Furcas snarled as they went into a turn. “",
+        "max_topic_prob": 0.5057033896446228,
+        "normalized_position": 0.5861281337047354,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1605
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The fox switched over to his human form. “",
+        "max_topic_prob": 0.4919411540031433,
+        "normalized_position": 0.871699164345404,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Furcas snapped to attention. “",
+        "max_topic_prob": 0.485392689704895,
+        "normalized_position": 0.22841225626740946,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1718
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He saw Furcas. “",
+        "max_topic_prob": 0.48306846618652344,
+        "normalized_position": 0.27615598885793874,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Furcas floored it and outpaced the Jaguar, disappearing around a corner. ***",
+        "max_topic_prob": 0.4773333668708801,
+        "normalized_position": 0.586740947075209,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 1616
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her wolf surfaced.",
+        "max_topic_prob": 0.7601830959320068,
+        "normalized_position": 0.7802120141342757,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her wolf roiled with turmoil .",
+        "max_topic_prob": 0.7572324872016907,
+        "normalized_position": 0.8489988221436985,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Victoria turned to her wolves. \"",
+        "max_topic_prob": 0.7494574785232544,
+        "normalized_position": 0.9945818610129564,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 503
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her wolf rumbled in anger.",
+        "max_topic_prob": 0.7244943976402283,
+        "normalized_position": 0.6527679623085983,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "We figured he was hunting wolves .\"",
+        "max_topic_prob": 0.6998182535171509,
+        "normalized_position": 0.5034157832744405,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Her anger burned so hot her wolf was about to burst through her self-control. \"",
+        "max_topic_prob": 0.6987055540084839,
+        "normalized_position": 0.5844522968197879,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Otherwise, he’d howl.",
+        "max_topic_prob": 0.46857231855392456,
+        "normalized_position": 0.6239004775069112,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Wolf.",
+        "max_topic_prob": 0.7790350914001465,
+        "normalized_position": 0.5348429876141624,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 595
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "His wolf.",
+        "max_topic_prob": 0.7610860466957092,
+        "normalized_position": 0.6349305642437133,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1395
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Teasing the wolf.”",
+        "max_topic_prob": 0.7528219223022461,
+        "normalized_position": 0.6241711497560365,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1309
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "His wolf lived here.",
+        "max_topic_prob": 0.738958477973938,
+        "normalized_position": 0.6141623920930814,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1229
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He roared again, in case his wolf could hear him.",
+        "max_topic_prob": 0.703506588935852,
+        "normalized_position": 0.588640060052546,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 1025
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Will the same thing work on the wolf?”",
+        "max_topic_prob": 0.7026734352111816,
+        "normalized_position": 0.5454772926310522,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 680
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "After being attacked by a large wolf while walking home alone, Mackenzie realizes something is not right.",
+        "max_topic_prob": 0.6639987826347351,
+        "normalized_position": 0.9968206157965194,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5957
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "No way was I letting you fend off the wolves alone.”",
+        "max_topic_prob": 0.6404523849487305,
+        "normalized_position": 0.7894912985274432,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 4718
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The hardest part of being a werewolf is to have no control and no memory of her time as a bloodthirsty beast.",
+        "max_topic_prob": 0.633257269859314,
+        "normalized_position": 0.9978246318607764,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5963
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Now she is running for the second time in the six months since she was bitten and turned into a Werewolf.",
+        "max_topic_prob": 0.5681928396224976,
+        "normalized_position": 0.9984939759036144,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5967
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Werewolves are real, and she's one of them.",
+        "max_topic_prob": 0.5678319931030273,
+        "normalized_position": 0.9973226238286479,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5960
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "This time, she has Geoff and Liam with her, two very hot Werewolves vying for her heart.",
+        "max_topic_prob": 0.5536525845527649,
+        "normalized_position": 0.9988286479250335,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 5969
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The beast had gotten off lightly when Yileen trapped it within the gem.",
+        "max_topic_prob": 0.4904729127883911,
+        "normalized_position": 0.5725504861630516,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "If the Elementals saw them together, she might as well slap a bull’s-eye to her head and get her will in order.",
+        "max_topic_prob": 0.46404996514320374,
+        "normalized_position": 0.6842744951383695,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Was the Wæter Elementals’ leader a whale?",
+        "max_topic_prob": 0.45678168535232544,
+        "normalized_position": 0.5976065818997757,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Never get too close to an Elemental.",
+        "max_topic_prob": 0.42428094148635864,
+        "normalized_position": 0.17370979805534778,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "This one is going with the Wæter Elemental to stand before the Sentinels.”",
+        "max_topic_prob": 0.4131849706172943,
+        "normalized_position": 0.5604899027673896,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "The other Sentinels fanned out and herded the Wyldlings like frightened sheep toward the Veil.",
+        "max_topic_prob": 0.41029947996139526,
+        "normalized_position": 0.7845923709798055,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Like he’d turned into a werewolf behind her, huffing and snarling.",
+        "max_topic_prob": 0.6488300561904907,
+        "normalized_position": 0.7794269045984901,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Your wolf did this?” “",
+        "max_topic_prob": 0.8455712795257568,
+        "normalized_position": 0.12210114557138865,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "Yeah, but not a wolf.” “",
+        "max_topic_prob": 0.8287421464920044,
+        "normalized_position": 0.5711092483934059,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 303
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He was a wolf.",
+        "max_topic_prob": 0.8128091096878052,
+        "normalized_position": 0.18860016764459347,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "It was a wolf.",
+        "max_topic_prob": 0.8126035928726196,
+        "normalized_position": 0.8147527242246437,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 549
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "He needed to let his wolf run free.",
+        "max_topic_prob": 0.7809293270111084,
+        "normalized_position": 0.9533389214864487,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "sentence": "The wolf tore out his throat before he could kill me.” “",
+        "max_topic_prob": 0.7770581245422363,
+        "normalized_position": 0.8164291701592624,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 555
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He peruses me like a hungry wolf, and the only thing I want to do is turn and run.",
+        "max_topic_prob": 0.5334659814834595,
+        "normalized_position": 0.3372478169226137,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 188
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0015186455931154733,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0017860500094002633,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.021035216260931223,
+        "n_sentences": 89
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.021966038323726438,
+        "n_sentences": 141
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.003916119252147549,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0010090817356205853,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_B",
+        "share": 0.04397759103641457,
+        "n_sentences": 157
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0014074595355383533,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 8.647526807333103e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.000151285930408472,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00012634238787113077,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 51
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "10.1",
+    "taxonomy_main_name": "Paranormal & Immortal Beings",
+    "taxonomy_secondary_id": "7.3",
+    "taxonomy_secondary_name": "Risk, Danger & External Crises",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

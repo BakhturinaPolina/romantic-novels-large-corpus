@@ -1,0 +1,865 @@
+{
+  "topic_id": 249,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "jail",
+        "arrested",
+        "prison",
+        "bail",
+        "arrest",
+        "crime",
+        "prisoner",
+        "criminal",
+        "prisoners",
+        "parole"
+      ],
+      "KeyBERT": [
+        "sentence",
+        "charged",
+        "behavior",
+        "folks",
+        "admit",
+        "opportunity",
+        "intend"
+      ],
+      "POS": [
+        "behalf",
+        "meantime",
+        "occasional",
+        "notion",
+        "folks",
+        "options",
+        "separate",
+        "television",
+        "sentence",
+        "behavior"
+      ],
+      "MMR": [
+        "behalf",
+        "charged",
+        "meantime",
+        "clinging",
+        "options",
+        "intend",
+        "behavior",
+        "afford",
+        "considering",
+        "admit"
+      ]
+    },
+    "stage08_snippets": [
+      "i'll pull you off just before we make the arrest.",
+      "do anything remotely similar to that again, and you’ll find yourself on your way to jail.”",
+      "maybe they’ll come see you in prison, though i doubt it.” “"
+    ],
+    "label_public": "Threatened With Arrest and Jail"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Can we get her arrested?”",
+        "max_topic_prob": 0.6182762384414673,
+        "normalized_position": 0.7470751536783661,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "At least he isn’t a criminal.” “",
+        "max_topic_prob": 0.6019752621650696,
+        "normalized_position": 0.7174301011302796,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 721
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yes, I’d probably arrest ’em for it, if I could.",
+        "max_topic_prob": 0.5875041484832764,
+        "normalized_position": 0.6009319849296054,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Let him file charges, too.”",
+        "max_topic_prob": 0.5863375067710876,
+        "normalized_position": 0.9086853063652588,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 329
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We may well be talking criminals here.",
+        "max_topic_prob": 0.57856285572052,
+        "normalized_position": 0.00396589331746976,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Worried about getting caught?” “",
+        "max_topic_prob": 0.5720453262329102,
+        "normalized_position": 0.1991869918699187,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I hadn’t heard the prison part.”",
+        "max_topic_prob": 0.6086441278457642,
+        "normalized_position": 0.27130171925184204,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Get rid of the prisoner.",
+        "max_topic_prob": 0.5965725183486938,
+        "normalized_position": 0.6400906858114491,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Believe it or not, high crimes aren’t my style.”",
+        "max_topic_prob": 0.5781800746917725,
+        "normalized_position": 0.06083506518042698,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "Spent time in federal prison for hacking.”",
+        "max_topic_prob": 0.5703812837600708,
+        "normalized_position": 0.27054600415643304,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "If they were caught, they would face stiff penalties, including jail time.",
+        "max_topic_prob": 0.5605428218841553,
+        "normalized_position": 0.33799357642168903,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He believes the man may have been taken prisoner or murdered by my ex-husband or a member of his personal security.”",
+        "max_topic_prob": 0.5449510812759399,
+        "normalized_position": 0.2983185339127149,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 295
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "No more getting into trouble!’ ‘",
+        "max_topic_prob": 0.5654821991920471,
+        "normalized_position": 0.10309200030388209,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Is that a crime?’",
+        "max_topic_prob": 0.547135591506958,
+        "normalized_position": 0.9213705082428018,
+        "tertile": "end",
+        "chapter_index": 58,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Yeah, aren’t you supposed to be still in rehab in LA?’",
+        "max_topic_prob": 0.4924050569534302,
+        "normalized_position": 0.10104079617108562,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "You’re not going anywhere,’ Johnny reiterates, but his conviction is waning.",
+        "max_topic_prob": 0.4778817892074585,
+        "normalized_position": 0.7825723619235736,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "It’s the drugs that keep ending me back in rehab.’ ‘",
+        "max_topic_prob": 0.42630359530448914,
+        "normalized_position": 0.4345513940591051,
+        "tertile": "middle",
+        "chapter_index": 35,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "It’s not locked.",
+        "max_topic_prob": 0.30877885222435,
+        "normalized_position": 0.7646433183924637,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Really, they’ll be beside themselves that you went to so much trouble for them.",
+        "max_topic_prob": 0.49898672103881836,
+        "normalized_position": 0.7203264094955489,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 379
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Criminal copyright infringement, including infringement without monetary gain, is investigated by the FBI and is punishable by up to 5 years in federal prison and a fine of $250,000. (",
+        "max_topic_prob": 0.40697842836380005,
+        "normalized_position": 0.0016073194856577645,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "But not if you’re in jail.” “",
+        "max_topic_prob": 0.7636576890945435,
+        "normalized_position": 0.25538748445917947,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Sure, I’m in and out of jail all the time.” “",
+        "max_topic_prob": 0.7459880113601685,
+        "normalized_position": 0.3773311230832988,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "If you arrest me, what happens?” “",
+        "max_topic_prob": 0.7315397262573242,
+        "normalized_position": 0.7955864069622877,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 584
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I’ll talk to the D.A., as long as you can guarantee I won’t be arrested.” “",
+        "max_topic_prob": 0.727837085723877,
+        "normalized_position": 0.7970368835474513,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 598
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "We could arrest you right now.”",
+        "max_topic_prob": 0.703271746635437,
+        "normalized_position": 0.7950683796104434,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 579
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I could have you arrested for that, you know.” “",
+        "max_topic_prob": 0.698825478553772,
+        "normalized_position": 0.8575424782428512,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 523
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He just got out of prison.",
+        "max_topic_prob": 0.6209805011749268,
+        "normalized_position": 0.5479872204472843,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I don’t think they’ll accept American money when I have to bail you out of jail in Tijuana.”",
+        "max_topic_prob": 0.6109803915023804,
+        "normalized_position": 0.4489456869009585,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 234
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "And hasn’t reported to his parole officer in two weeks?” “",
+        "max_topic_prob": 0.6070647239685059,
+        "normalized_position": 0.5240894568690095,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "And you’re not in trouble for it?” “",
+        "max_topic_prob": 0.5969136953353882,
+        "normalized_position": 0.5205111821086262,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I say, if you’re going to go to jail for thieving, be a man about it and rob a bank.",
+        "max_topic_prob": 0.5922724008560181,
+        "normalized_position": 0.5601277955271565,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I’m sick of being locked away like I did something wrong.",
+        "max_topic_prob": 0.5921257138252258,
+        "normalized_position": 0.6310543130990416,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "So I am essentially in a prison, and without even knowing it.”",
+        "max_topic_prob": 0.6309152841567993,
+        "normalized_position": 0.7290003800836184,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 1918
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I do understand indecent exposure and have no desire to get arrested.”",
+        "max_topic_prob": 0.5665814280509949,
+        "normalized_position": 0.21512732801216267,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 566
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You never know where to go and what to do when the Magistrate is around.”",
+        "max_topic_prob": 0.5338318943977356,
+        "normalized_position": 0.9958190801976435,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2620
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Would he lose his mates, just like the Magistrate predicted?",
+        "max_topic_prob": 0.49998682737350464,
+        "normalized_position": 0.8396047130368681,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2209
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The Magistrate frowned in their general direction, and just like that, the hands evaporated, releasing their captives.",
+        "max_topic_prob": 0.4190724194049835,
+        "normalized_position": 0.8597491448118586,
+        "tertile": "end",
+        "chapter_index": 0,
+        "sentence_index": 2262
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Criminal copyright infringement, including infringement without monetary gain, is investigated by the FBI and is punishable by up to 5 years in federal prison and a fine of $250,000.",
+        "max_topic_prob": 0.40474623441696167,
+        "normalized_position": 0.005701254275940707,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Are you jail bait?\" \"",
+        "max_topic_prob": 0.6849483251571655,
+        "normalized_position": 0.5447084233261339,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1260
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Talk about jail bait.",
+        "max_topic_prob": 0.610435962677002,
+        "normalized_position": 0.09848812095032397,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Of course he called me jail bait at first.",
+        "max_topic_prob": 0.5894917249679565,
+        "normalized_position": 0.8047516198704103,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1862
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What I really wanted to say is I wasn't innocent anymore.",
+        "max_topic_prob": 0.554681658744812,
+        "normalized_position": 0.6712742980561555,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1553
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You really are an innocent, aren't you?\" \"",
+        "max_topic_prob": 0.5380192995071411,
+        "normalized_position": 0.29892008639308854,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 691
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "He was sent to jail last year for boinking with a minor.",
+        "max_topic_prob": 0.5286694765090942,
+        "normalized_position": 0.5533477321814255,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1280
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "If I thought I had a chance with a woman like you, I’d get you drunk and order a justice of the peace from the front desk.”",
+        "max_topic_prob": 0.5549535751342773,
+        "normalized_position": 0.7294117647058823,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "It’s not a crime to have a good time, as long as you’re behaving yourself.",
+        "max_topic_prob": 0.5109386444091797,
+        "normalized_position": 0.5711522965350524,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "And no one’s going to rat anyone else out, not in this crooked little burg.” “",
+        "max_topic_prob": 0.4486094117164612,
+        "normalized_position": 0.7455278001611604,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 438
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "At the top, I’m handcuffed, unable to find a solution to the problem I need to solve.",
+        "max_topic_prob": 0.49168363213539124,
+        "normalized_position": 0.9927253832164199,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "I know people with so much money who are miserable because they feel imprisoned.",
+        "max_topic_prob": 0.4769999086856842,
+        "normalized_position": 0.2783839958430761,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Some people know if they fail, that’s it: debt, bankruptcy, putting their family in danger, they’re out on the streets.",
+        "max_topic_prob": 0.3977014720439911,
+        "normalized_position": 0.18485320862561705,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I want to press charges, and I want to do it now.”",
+        "max_topic_prob": 0.6076281666755676,
+        "normalized_position": 0.8955739972337483,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "You leave this building, and you get your disgusting ass a fucking job, or I will have you thrown in jail so fast you won’t even know how I did it.",
+        "max_topic_prob": 0.5027533173561096,
+        "normalized_position": 0.8976486860304288,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Is she going to press charges?",
+        "max_topic_prob": 0.4374457001686096,
+        "normalized_position": 0.9128630705394191,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I don't want to see you get hurt or mixed up in their criminal enterprise.\"",
+        "max_topic_prob": 0.6205294728279114,
+        "normalized_position": 0.3013163604802546,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "So anyway, I’d been hit in the shoulder, so when they arrested me, I went to the hospital.",
+        "max_topic_prob": 0.5974244475364685,
+        "normalized_position": 0.5447707218284392,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Criminal. ”",
+        "max_topic_prob": 0.5968624353408813,
+        "normalized_position": 0.23332851150007233,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "That’s when they told me how they’d found the warehouse they arrested me in.” “",
+        "max_topic_prob": 0.5899004936218262,
+        "normalized_position": 0.5459279618110806,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "On a bad day, it’s no easier than it was on the day I went to jail.",
+        "max_topic_prob": 0.5835727453231812,
+        "normalized_position": 0.015478084767828729,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Tell me we’re criminals, that we’re bastards.",
+        "max_topic_prob": 0.5627824068069458,
+        "normalized_position": 0.8267033125994503,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I thought I had just gotten myself a get-out-of-jail-free card with the poison ivy rescue.” “",
+        "max_topic_prob": 0.5708633661270142,
+        "normalized_position": 0.9498104350965878,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Our form of trouble was more in the way of broken bones and stitches than anything illegal.” “",
+        "max_topic_prob": 0.4560195803642273,
+        "normalized_position": 0.6956129265210327,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "We would’ve bailed a long time ago.” “",
+        "max_topic_prob": 0.4080362319946289,
+        "normalized_position": 0.23614370825058675,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 144
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0034707158351409977,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.002853338405934944,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.002758020031934969,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0027202072538860104,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.002294455066921606,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.005629691409507923,
+        "n_sentences": 54
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.0020761245674740486,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.002691924227318046,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.0004588910133843212,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00027260336210813266,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00048820179007323027,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00025031289111389235,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0003908285565398645,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 62
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "6.5",
+    "taxonomy_secondary_name": "Institutional Settings & Procedures",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

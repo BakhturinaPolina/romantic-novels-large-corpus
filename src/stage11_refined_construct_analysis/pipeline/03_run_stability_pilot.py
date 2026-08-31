@@ -49,7 +49,7 @@ from src.stage11_refined_construct_analysis.lookup import (  # noqa: E402
 
 LOGGER = logging.getLogger("stage11.stability")
 
-CODE_RE = re.compile(r"\b(I\d+|H2_\d+|S\d+|H4_\d+|D\d+|ARC_\d+|MIXED)\b")
+CODE_RE = re.compile(r"\b(I\d+|H2_\d+|S\d+|H4_\d+a?|D\d+|ARC_\d+|MIXED)\b")
 
 
 def _extract_json(text: str) -> Dict[str, Any]:

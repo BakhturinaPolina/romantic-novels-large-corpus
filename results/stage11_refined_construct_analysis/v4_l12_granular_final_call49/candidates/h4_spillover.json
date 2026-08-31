@@ -1,0 +1,3022 @@
+{
+  "hypothesis": "H4",
+  "n_candidates": 80,
+  "n_promoted": 39,
+  "promoted_topic_ids": [
+    20,
+    24,
+    27,
+    33,
+    51,
+    59,
+    68,
+    69,
+    73,
+    78,
+    82,
+    87,
+    91,
+    100,
+    102,
+    107,
+    113,
+    114,
+    117,
+    121,
+    122,
+    128,
+    148,
+    157,
+    181,
+    184,
+    223,
+    236,
+    238,
+    239,
+    249,
+    258,
+    282,
+    294,
+    324,
+    329,
+    335,
+    338,
+    363
+  ],
+  "rows": [
+    {
+      "hypothesis": "H4",
+      "topic_id": 69,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains keywords related to dreams, threats, and promises, suggesting a potential external threat and protective action. However, the main couple's involvement is unclear, and the protective action seems to be more about emotional reassurance than physical or social-legal protection.",
+      "candidate": {
+        "topic_id": 69,
+        "taxonomy_main_id": "10.1",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=7.3; proto:threat; threat+promise",
+        "n_signals": 4,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 69,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "dreamed",
+          "threats",
+          "promises",
+          "chased",
+          "secured"
+        ],
+        "rationale": "The topic contains keywords related to dreams, threats, and promises, suggesting a potential external threat and protective action. However, the main couple's involvement is unclear, and the protective action seems to be more about emotional reassurance than physical or social-legal protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 87,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords related to external threats (kill, killed, dead, die, murder, weapons) and protective promises (promises). However, it's unclear if the protective action is specifically for the main romantic partner.",
+      "candidate": {
+        "topic_id": 87,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; proto:threat; threat+promise",
+        "n_signals": 4,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 87,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "kill",
+          "killed",
+          "dead",
+          "die",
+          "killing",
+          "murder",
+          "weapons",
+          "threat",
+          "promise"
+        ],
+        "rationale": "The topic contains keywords related to external threats (kill, killed, dead, die, murder, weapons) and protective promises (promises). However, it's unclear if the protective action is specifically for the main romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 223,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords indicating an external threat ('threat', 'inevitable', 'spilling'), protective action ('willing', 'assistant'), and potential strain on the relationship ('strained', 'doubted'). However, it's unclear if the main couple is the primary target of protection.",
+      "candidate": {
+        "topic_id": 223,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "10.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat,protective_care; h5_d3; primary_leaf=7.3; proto:security,threat",
+        "n_signals": 4,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 223,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "threat",
+          "willing",
+          "assistant",
+          "inevitable",
+          "spilling",
+          "options",
+          "strained",
+          "doubted",
+          "ability"
+        ],
+        "rationale": "The topic contains keywords indicating an external threat ('threat', 'inevitable', 'spilling'), protective action ('willing', 'assistant'), and potential strain on the relationship ('strained', 'doubted'). However, it's unclear if the main couple is the primary target of protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 284,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains words related to judgment and realization, but there's no clear external threat or protective action mentioned. The main focus seems to be on emotional reassurance.",
+      "candidate": {
+        "topic_id": 284,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "5.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; h5_d3; primary_leaf=7.3; secondary_leaf=5.2; proto:danger",
+        "n_signals": 4,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 284,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "no",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "mechanic:external_threat"
+        ],
+        "rationale": "The topic contains words related to judgment and realization, but there's no clear external threat or protective action mentioned. The main focus seems to be on emotional reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 324,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "rescue_search|unclear",
+      "rationale": "The topic revolves around searching and finding, with keywords like 'find', 'go', 'search', 'locate', 'know', 'impatiently', and 'panicked'. However, there's no clear indication of an external threat, a protective action, or the main couple being the target. The 'mechanic:external_threat' flag suggests a potential external threat, but it's not explicitly stated in the topic's keywords. Therefore, it's unclear whether this topic should be audited for romantic protection.",
+      "candidate": {
+        "topic_id": 324,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "10.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; h5_d3; primary_leaf=7.3; proto:missing",
+        "n_signals": 4,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 324,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "unclear",
+        "function": "rescue_search|unclear",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "find",
+          "go",
+          "search",
+          "locate",
+          "know",
+          "impatiently",
+          "panicked"
+        ],
+        "rationale": "The topic revolves around searching and finding, with keywords like 'find', 'go', 'search', 'locate', 'know', 'impatiently', and 'panicked'. However, there's no clear indication of an external threat, a protective action, or the main couple being the target. The 'mechanic:external_threat' flag suggests a potential external threat, but it's not explicitly stated in the topic's keywords. Therefore, it's unclear whether this topic should be audited for romantic protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 27,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around weather elements like rain, snow, and storms, but there's no identifiable external danger or threat mentioned. The keywords 'praying' and 'magical' suggest emotional reassurance rather than a concrete protective action.",
+      "candidate": {
+        "topic_id": 27,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "8.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.3; proto:shelter",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 27,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "darkened",
+          "praying",
+          "magical"
+        ],
+        "rationale": "The topic revolves around weather elements like rain, snow, and storms, but there's no identifiable external danger or threat mentioned. The keywords 'praying' and 'magical' suggest emotional reassurance rather than a concrete protective action."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 33,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords like 'wolves', 'werewolf', 'pack', 'alpha', 'threats', and 'worries', indicating an external threat. Keywords like 'promises' suggest a protective action. However, it's unclear if the main couple is the target of this protection.",
+      "candidate": {
+        "topic_id": 33,
+        "taxonomy_main_id": "10.1",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat,protective_care; secondary_leaf=7.3; proto:threat,danger",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 33,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "wolves",
+          "werewolf",
+          "pack",
+          "alpha",
+          "threats",
+          "worries",
+          "promises"
+        ],
+        "rationale": "The topic contains keywords like 'wolves', 'werewolf', 'pack', 'alpha', 'threats', and 'worries', indicating an external threat. Keywords like 'promises' suggest a protective action. However, it's unclear if the main couple is the target of this protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 51,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords related to vampires and threats, suggesting an external threat. However, the protective action and main couple target are unclear, requiring a full audit for clarification.",
+      "candidate": {
+        "topic_id": 51,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "10.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; proto:threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 51,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "vampire",
+          "vampires",
+          "vamps",
+          "vampyre",
+          "blood",
+          "wraith",
+          "wraiths",
+          "threats",
+          "feared",
+          "mechanic:external_threat"
+        ],
+        "rationale": "The topic contains keywords related to vampires and threats, suggesting an external threat. However, the protective action and main couple target are unclear, requiring a full audit for clarification."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 78,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic explicitly mentions external threats (attacked, weapons) and protective actions (guarded, warned, insisted). The main couple is the target, as indicated by 'we'.",
+      "candidate": {
+        "topic_id": 78,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "consent_boundary",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; proto:protect",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 78,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "fought",
+          "attacked",
+          "weapons",
+          "guarded",
+          "warned",
+          "insisted"
+        ],
+        "rationale": "The topic explicitly mentions external threats (attacked, weapons) and protective actions (guarded, warned, insisted). The main couple is the target, as indicated by 'we'."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 82,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords suggesting physical contact (touch, touched, suck, dick, pussy) and negative emotions (terrified, hurt, dislike, hurts). The keyword 'warned' suggests a potential threat, but it's unclear if the action is to protect the main romantic partner. The 'mechanic:external_threat' flag also supports the presence of an external threat.",
+      "candidate": {
+        "topic_id": 82,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "7.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "consent_boundary",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; proto:threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 82,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "touch",
+          "touched",
+          "pussy",
+          "dick",
+          "terrified",
+          "warned",
+          "prodded",
+          "hurt"
+        ],
+        "rationale": "The topic contains keywords suggesting physical contact (touch, touched, suck, dick, pussy) and negative emotions (terrified, hurt, dislike, hurts). The keyword 'warned' suggests a potential threat, but it's unclear if the action is to protect the main romantic partner. The 'mechanic:external_threat' flag also supports the presence of an external threat."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 100,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "protective_commitment",
+      "rationale": "The topic contains keywords suggesting a commitment to find and protect 'her', but there's no clear external threat or action to reduce it. The main couple is targeted, and the commitment is explicit, making it a candidate for protective commitment. However, the lack of a concrete external threat makes it unclear whether it's external protection or just reassurance.",
+      "candidate": {
+        "topic_id": 100,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; primary_leaf=9.2; proto:safe,missing,bring her back",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 100,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "protective_commitment",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "find, meet, needs, ll, see, leave, where, her, can, here",
+          "lingering, sir, thinks, replaced, mister, hiding, ok, urgency, dismissed, uh"
+        ],
+        "rationale": "The topic contains keywords suggesting a commitment to find and protect 'her', but there's no clear external threat or action to reduce it. The main couple is targeted, and the commitment is explicit, making it a candidate for protective commitment. However, the lack of a concrete external threat makes it unclear whether it's external protection or just reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 122,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords suggesting an external threat (e.g., 'blood', 'bleeding', 'lost', 'need'), but it's unclear if the protective action is explicitly stated or targeted at the main couple. The topic is flagged as having an external threat, so it should be promoted for a full H4 audit.",
+      "candidate": {
+        "topic_id": 122,
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=7.3; proto:danger",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 122,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "veins",
+          "bleeding",
+          "lost",
+          "need",
+          "your"
+        ],
+        "rationale": "The topic contains keywords suggesting an external threat (e.g., 'blood', 'bleeding', 'lost', 'need'), but it's unclear if the protective action is explicitly stated or targeted at the main couple. The topic is flagged as having an external threat, so it should be promoted for a full H4 audit."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 148,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords suggesting an external threat ('snapping', 'thoughtfully', 'instructed', 'rings', 'determination', 'sidewalk', 'runs', 'fired') and protective actions ('actions', 'stilled', 'honestly', 'instructed', 'cocked', 'urge', 'fault'). However, it's unclear if the main couple is the target of these actions. The topic does not seem to involve control or ordinary practical care, and the protective actions appear to support autonomy.",
+      "candidate": {
+        "topic_id": 148,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "7.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; proto:threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 148,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "tyler, tucker, knew, rance, sean, said, cowboy, few",
+          "ty, willing, strongly, actions, stilled, honestly, instructed, cocked, urge, fault",
+          "snapping, thoughtfully, welcoming, instructed, rings, determination, sidewalk, runs, fired"
+        ],
+        "rationale": "The topic contains keywords suggesting an external threat ('snapping', 'thoughtfully', 'instructed', 'rings', 'determination', 'sidewalk', 'runs', 'fired') and protective actions ('actions', 'stilled', 'honestly', 'instructed', 'cocked', 'urge', 'fault'). However, it's unclear if the main couple is the target of these actions. The topic does not seem to involve control or ordinary practical care, and the protective actions appear to support autonomy."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 157,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "protective_commitment",
+      "rationale": "The topic contains keywords like 'confessed' and 'responsibility', suggesting a protective commitment. However, there's no clear external threat mentioned, making it 'protective commitment' rather than 'external protection'. The main couple is targeted as 'sammi' and 'jonathan' are mentioned together. The protective action is implied through keywords like 'ought' and 'deliberately'.",
+      "candidate": {
+        "topic_id": 157,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; primary_leaf=4.5; proto:rescue,save",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 157,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "protective_commitment",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "confessed",
+          "responsibility",
+          "safety",
+          "welfare"
+        ],
+        "rationale": "The topic contains keywords like 'confessed' and 'responsibility', suggesting a protective commitment. However, there's no clear external threat mentioned, making it 'protective commitment' rather than 'external protection'. The main couple is targeted as 'sammi' and 'jonathan' are mentioned together. The protective action is implied through keywords like 'ought' and 'deliberately'."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 184,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords related to fire and firefighters, indicating a potential external threat. However, it's unclear if the protective action is explicitly stated and if the main couple is the target. The topic does not seem to suggest any control or possession, maintaining autonomy.",
+      "candidate": {
+        "topic_id": 184,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "10.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; h5_d3; primary_leaf=7.3",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 184,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "fire",
+          "flames",
+          "fires",
+          "firefighters",
+          "hoses",
+          "burned"
+        ],
+        "rationale": "The topic contains keywords related to fire and firefighters, indicating a potential external threat. However, it's unclear if the protective action is explicitly stated and if the main couple is the target. The topic does not seem to suggest any control or possession, maintaining autonomy."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 239,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "protective_commitment",
+      "rationale": "The topic contains keywords like 'assume' and 'watch over' which suggest a protective commitment. However, there's no clear external threat mentioned, making it 'unclear'. The main couple is targeted as the topic revolves around 'trent', 'andrew', and 'iain'. The protective action is present as the topic discusses 'protection' and 'care'. The autonomy effect is 'neutral' as there's no indication of control or restriction.",
+      "candidate": {
+        "topic_id": 239,
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; primary_leaf=5.2; proto:watch over",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 239,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "protective_commitment",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "assume",
+          "watch over"
+        ],
+        "rationale": "The topic contains keywords like 'assume' and 'watch over' which suggest a protective commitment. However, there's no clear external threat mentioned, making it 'unclear'. The main couple is targeted as the topic revolves around 'trent', 'andrew', and 'iain'. The protective action is present as the topic discusses 'protection' and 'care'. The autonomy effect is 'neutral' as there's no indication of control or restriction."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 249,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords related to legal trouble and crime, indicating an external threat. However, it's unclear if the protective action is taken by the romantic partner and if the main couple is the target. The topic does not seem to involve physical protection or control, but rather social and legal protection.",
+      "candidate": {
+        "topic_id": 249,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "6.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; secondary_leaf=6.5; proto:threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 249,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "jail",
+          "arrested",
+          "prison",
+          "bail",
+          "crime",
+          "criminal",
+          "prisoners",
+          "parole",
+          "charged",
+          "behalf",
+          "threat"
+        ],
+        "rationale": "The topic contains keywords related to legal trouble and crime, indicating an external threat. However, it's unclear if the protective action is taken by the romantic partner and if the main couple is the target. The topic does not seem to involve physical protection or control, but rather social and legal protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 269,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "nonromantic_protection",
+      "rationale": "The topic revolves around testing and results, but there's no identifiable external danger or threat mentioned. The keywords suggest a scientific or medical context, but no protective action or commitment towards a romantic partner is evident.",
+      "candidate": {
+        "topic_id": 269,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "6.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2; secondary_leaf=6.5; proto:threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 269,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "nonromantic_protection",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "testing",
+          "results",
+          "evidence"
+        ],
+        "rationale": "The topic revolves around testing and results, but there's no identifiable external danger or threat mentioned. The keywords suggest a scientific or medical context, but no protective action or commitment towards a romantic partner is evident."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 294,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords related to external threats (rape, rapist, threatened) and protective actions (punished, punishing). However, it's unclear if the protected person is the main romantic partner.",
+      "candidate": {
+        "topic_id": 294,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat,protective_care; primary_leaf=7.2; proto:protect,threat",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 294,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "punished",
+          "raped",
+          "rape",
+          "punishing",
+          "rapist",
+          "threatened",
+          "protect"
+        ],
+        "rationale": "The topic contains keywords related to external threats (rape, rapist, threatened) and protective actions (punished, punishing). However, it's unclear if the protected person is the main romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 327,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "off_target",
+      "rationale": "The topic primarily revolves around physical actions related to jumping and falling, with no identifiable external threat, protective action, or clear target being the main romantic partner. The 'mechanic:external_threat' flag suggests a potential external threat, but the keywords and MMR do not provide concrete evidence of one.",
+      "candidate": {
+        "topic_id": 327,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "10.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; h5_d3; primary_leaf=7.3",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 327,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "off_target",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "jumped",
+          "dropped",
+          "feet",
+          "knees",
+          "leaped",
+          "jump",
+          "ground",
+          "jumping",
+          "fell",
+          "lurched"
+        ],
+        "rationale": "The topic primarily revolves around physical actions related to jumping and falling, with no identifiable external threat, protective action, or clear target being the main romantic partner. The 'mechanic:external_threat' flag suggests a potential external threat, but the keywords and MMR do not provide concrete evidence of one."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 333,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains keywords related to threats ('threatened') and protection ('stand guard'), but there's no clear external danger or action taken to reduce it. The topic seems to revolve around the general theme of witchcraft and magic, with no specific focus on protecting a romantic partner.",
+      "candidate": {
+        "topic_id": 333,
+        "taxonomy_main_id": "10.1",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=7.3; proto:stand guard",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 333,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "witch",
+          "threatened",
+          "protect",
+          "stand guard"
+        ],
+        "rationale": "The topic contains keywords related to threats ('threatened') and protection ('stand guard'), but there's no clear external danger or action taken to reduce it. The topic seems to revolve around the general theme of witchcraft and magic, with no specific focus on protecting a romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 335,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "While there's no clear external threat mentioned, the topic contains words like 'intend' and 'dealing', suggesting some form of action. The main couple is targeted as seen in names like 'mason', 'jacks', 'jimmy', 'marcy'. However, the action seems more emotional in nature (e.g., 'giggled', 'pleased', 'upset'), so it's not classified as external protection.",
+      "candidate": {
+        "topic_id": 335,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "5.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; h5_d3; primary_leaf=7.3",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 335,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "ended",
+          "giggled",
+          "intend"
+        ],
+        "rationale": "While there's no clear external threat mentioned, the topic contains words like 'intend' and 'dealing', suggesting some form of action. The main couple is targeted as seen in names like 'mason', 'jacks', 'jimmy', 'marcy'. However, the action seems more emotional in nature (e.g., 'giggled', 'pleased', 'upset'), so it's not classified as external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 338,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords indicating a concrete external threat ('dangerously', 'threat+promise') and protective action ('commander', 'bowed', 'begging'). The main couple is targeted ('yourbrother', 'your'), and the action is intended to reduce that danger, supporting physical external protection.",
+      "candidate": {
+        "topic_id": 338,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2; proto:danger; threat+promise",
+        "n_signals": 3,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 338,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "dangerously",
+          "commander",
+          "bowed",
+          "begging",
+          "threat+promise"
+        ],
+        "rationale": "The topic contains keywords indicating a concrete external threat ('dangerously', 'threat+promise') and protective action ('commander', 'bowed', 'begging'). The main couple is targeted ('yourbrother', 'your'), and the action is intended to reduce that danger, supporting physical external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 24,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains explicit references to threats and protective actions (marrying, intending to protect), with the main couple as the target.",
+      "candidate": {
+        "topic_id": 24,
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_leaf=4.5; proto:threat",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 24,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "threats",
+          "protect",
+          "marry",
+          "husband",
+          "wife"
+        ],
+        "rationale": "The topic contains explicit references to threats and protective actions (marrying, intending to protect), with the main couple as the target."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 58,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "ordinary_practical_care",
+      "rationale": "The topic revolves around physical care and instructions related to leg and foot injuries, but there's no identifiable external threat or evidence of protective commitment towards a romantic partner.",
+      "candidate": {
+        "topic_id": 58,
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; proto:missing",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 58,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "no",
+        "autonomy_effect": "neutral",
+        "function": "ordinary_practical_care",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "hands",
+          "leg",
+          "knees",
+          "feet",
+          "foot",
+          "my",
+          "hand",
+          "knee",
+          "ankle",
+          "hurts",
+          "struggled"
+        ],
+        "rationale": "The topic revolves around physical care and instructions related to leg and foot injuries, but there's no identifiable external threat or evidence of protective commitment towards a romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 61,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around jewelry, specifically rings, which symbolize engagement and promises. There's no identifiable external threat, and the protective action is implicit in the promise of commitment, not an action to reduce a specific danger. The main couple is the target, and the function is emotional reassurance.",
+      "candidate": {
+        "topic_id": 61,
+        "taxonomy_main_id": "8.3a",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "secondary_leaf=4.5; proto:threat",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 61,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "rings",
+          "engagement",
+          "promises",
+          "precious"
+        ],
+        "rationale": "The topic revolves around jewelry, specifically rings, which symbolize engagement and promises. There's no identifiable external threat, and the protective action is implicit in the promise of commitment, not an action to reduce a specific danger. The main couple is the target, and the function is emotional reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 68,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords related to threats ('threats', 'strangled') and protective actions ('promising', 'solemnly'). However, it's unclear if the main couple is the target of protection.",
+      "candidate": {
+        "topic_id": 68,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "7.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2; proto:threat",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 68,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "threats",
+          "protection",
+          "promising",
+          "solemnly"
+        ],
+        "rationale": "The topic contains keywords related to threats ('threats', 'strangled') and protective actions ('promising', 'solemnly'). However, it's unclear if the main couple is the target of protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 73,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "unclear",
+      "rationale": "The topic contains keywords like 'looked at father' and 'winked', suggesting some form of interaction or communication. However, there's no clear identifiable external danger or threat, nor a concrete action to reduce it. The keywords 'had possibilities' and 'admire' do not provide enough context to determine if the protection is for the main romantic partner or if it's a protective commitment. Therefore, it's unclear whether this topic is a candidate for a ROMANTIC PROTECTION audit.",
+      "candidate": {
+        "topic_id": 73,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=9.2",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 73,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "unclear",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "looked at father",
+          "had possibilities",
+          "winked",
+          "admire"
+        ],
+        "rationale": "The topic contains keywords like 'looked at father' and 'winked', suggesting some form of interaction or communication. However, there's no clear identifiable external danger or threat, nor a concrete action to reduce it. The keywords 'had possibilities' and 'admire' do not provide enough context to determine if the protection is for the main romantic partner or if it's a protective commitment. Therefore, it's unclear whether this topic is a candidate for a ROMANTIC PROTECTION audit."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 113,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords related to weapons and attacks, indicating an external threat. The use of 'hand' and 'sheathed' suggests a protective action, but it's unclear if the main couple is the target. The topic does not seem to involve control or possessive behavior.",
+      "candidate": {
+        "topic_id": 113,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "10.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 113,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "weapons",
+          "attacked",
+          "sword",
+          "knife",
+          "dagger",
+          "hand",
+          "mechanic:external_threat"
+        ],
+        "rationale": "The topic contains keywords related to weapons and attacks, indicating an external threat. The use of 'hand' and 'sheathed' suggests a protective action, but it's unclear if the main couple is the target. The topic does not seem to involve control or possessive behavior."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 114,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords related to weapons and actions taken with them, indicating an external threat and protective action. However, it's unclear if the main couple is the target of this protection.",
+      "candidate": {
+        "topic_id": 114,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "10.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 114,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "gun",
+          "pistol",
+          "rifle",
+          "weapon",
+          "holstered",
+          "pointed",
+          "fired",
+          "cocked",
+          "trained"
+        ],
+        "rationale": "The topic contains keywords related to weapons and actions taken with them, indicating an external threat and protective action. However, it's unclear if the main couple is the target of this protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 117,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords suggesting an external threat ('fault', 'blamed', 'harshly', 'threat') and some protective action ('confessed'), but it's unclear if the main couple is the target or if the action is specifically for their protection.",
+      "candidate": {
+        "topic_id": 117,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "4.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=7.2; proto:threat",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 117,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "fault",
+          "blamed",
+          "confessed",
+          "harshly",
+          "threat"
+        ],
+        "rationale": "The topic contains keywords suggesting an external threat ('fault', 'blamed', 'harshly', 'threat') and some protective action ('confessed'), but it's unclear if the main couple is the target or if the action is specifically for their protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 121,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords related to threats ('threats', 'enormous') and promises ('promises', 'surely', 'decision'), suggesting an external threat and a protective action. However, it's unclear if the main couple is the target of this protection. The protective action seems to be social or legal in nature, as it involves a commander and decisions.",
+      "candidate": {
+        "topic_id": 121,
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "10.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:threat; threat+promise",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 121,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "threats",
+          "promises",
+          "commander",
+          "resigned"
+        ],
+        "rationale": "The topic contains keywords related to threats ('threats', 'enormous') and promises ('promises', 'surely', 'decision'), suggesting an external threat and a protective action. However, it's unclear if the main couple is the target of this protection. The protective action seems to be social or legal in nature, as it involves a commander and decisions."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 185,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around care and appreciation for oneself, with no identifiable external threat or concrete action to reduce a danger. It's more about emotional reassurance than external protection.",
+      "candidate": {
+        "topic_id": 185,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; primary_leaf=9.2",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 185,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "take care of yourself",
+          "ensure you're okay",
+          "appreciate you"
+        ],
+        "rationale": "The topic revolves around care and appreciation for oneself, with no identifiable external threat or concrete action to reduce a danger. It's more about emotional reassurance than external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 204,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around sisters and sisterly affection, with no identifiable external threat or protective action towards a romantic partner. The keywords suggest emotional support and reassurance, but not external protection.",
+      "candidate": {
+        "topic_id": 204,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "5.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; primary_leaf=4.5",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 204,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "no",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "sister",
+          "sisters",
+          "your",
+          "my",
+          "little",
+          "sis",
+          "affection"
+        ],
+        "rationale": "The topic revolves around sisters and sisterly affection, with no identifiable external threat or protective action towards a romantic partner. The keywords suggest emotional support and reassurance, but not external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 236,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "off_target",
+      "rationale": "The topic revolves around FBI agents, investigations, and spying, but there's no clear external threat, protective action, or main couple target. The topic is more about professional activities than romantic protection.",
+      "candidate": {
+        "topic_id": 236,
+        "taxonomy_main_id": "10.3",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=7.3",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 236,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "no",
+        "autonomy_effect": "neutral",
+        "function": "off_target",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "fbi",
+          "agent",
+          "investigation",
+          "spy",
+          "detective",
+          "spying",
+          "undercover",
+          "agents",
+          "investigator",
+          "agency"
+        ],
+        "rationale": "The topic revolves around FBI agents, investigations, and spying, but there's no clear external threat, protective action, or main couple target. The topic is more about professional activities than romantic protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 238,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "protective_commitment",
+      "rationale": "The topic contains keywords like 'promises' and 'behavior', suggesting a protective commitment. However, there's no clear external threat mentioned, and it's unclear if the main couple is the target of this protection.",
+      "candidate": {
+        "topic_id": 238,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2; threat+promise",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 238,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "protective_commitment",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "promises",
+          "behavior",
+          "honestly",
+          "speaking"
+        ],
+        "rationale": "The topic contains keywords like 'promises' and 'behavior', suggesting a protective commitment. However, there's no clear external threat mentioned, and it's unclear if the main couple is the target of this protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 258,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "off_target",
+      "rationale": "The topic contains keywords indicating loud noises and shouting, suggesting an external threat. However, it's unclear if these actions are intended to protect a romantic partner or if the partner is the main target. The topic does not explicitly mention any protective action or commitment, and the keywords are more related to noise and commotion rather than romantic protection.",
+      "candidate": {
+        "topic_id": 258,
+        "taxonomy_main_id": "9.1",
+        "taxonomy_secondary_id": "7.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=7.3",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 258,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "off_target",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "screamed",
+          "shouted",
+          "screaming",
+          "heard",
+          "yelling"
+        ],
+        "rationale": "The topic contains keywords indicating loud noises and shouting, suggesting an external threat. However, it's unclear if these actions are intended to protect a romantic partner or if the partner is the main target. The topic does not explicitly mention any protective action or commitment, and the keywords are more related to noise and commotion rather than romantic protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 259,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "nonromantic_protection",
+      "rationale": "The topic revolves around trees and woods, with actions like climbing and being surrounded, but there's no identifiable external danger or threat to a romantic partner. The 'mechanic:external_threat' flag suggests a potential external threat, but it's unclear how this relates to a romantic partner in need of protection.",
+      "candidate": {
+        "topic_id": 259,
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "8.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.3",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 259,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "nonromantic_protection",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "tree",
+          "woods",
+          "branches",
+          "surrounded",
+          "climbing"
+        ],
+        "rationale": "The topic revolves around trees and woods, with actions like climbing and being surrounded, but there's no identifiable external danger or threat to a romantic partner. The 'mechanic:external_threat' flag suggests a potential external threat, but it's unclear how this relates to a romantic partner in need of protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 282,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "protective_commitment",
+      "rationale": "The topic revolves around trust and judgment, with keywords like 'guarded', 'promises', and 'assured' suggesting a protective commitment. However, there's no clear external threat mentioned, making it a protective commitment rather than external protection. The main couple is the focus, and there's no indication of control or restriction of autonomy.",
+      "candidate": {
+        "topic_id": 282,
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care; threat+promise",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 282,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "protective_commitment",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "guarded",
+          "promises",
+          "assured"
+        ],
+        "rationale": "The topic revolves around trust and judgment, with keywords like 'guarded', 'promises', and 'assured' suggesting a protective commitment. However, there's no clear external threat mentioned, making it a protective commitment rather than external protection. The main couple is the focus, and there's no indication of control or restriction of autonomy."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 329,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic discusses rules being broken, which implies an external threat. The use of 'spite' and 'protested' suggests an action taken to reduce this threat. However, it's unclear if the main couple is the target of this protection.",
+      "candidate": {
+        "topic_id": 329,
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "4.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; primary_leaf=7.2",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 329,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "rules",
+          "game",
+          "break",
+          "apply",
+          "used",
+          "spite",
+          "protested"
+        ],
+        "rationale": "The topic discusses rules being broken, which implies an external threat. The use of 'spite' and 'protested' suggests an action taken to reduce this threat. However, it's unclear if the main couple is the target of this protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 363,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "social_legal_external_protection",
+      "rationale": "The topic contains keywords related to law enforcement ('sheriff', 'deputy', 'weapons') and actions taken to ensure safety ('ensure'), suggesting an external threat and protective action. However, it's unclear if the main couple is the primary target of this protection.",
+      "candidate": {
+        "topic_id": 363,
+        "taxonomy_main_id": "10.3",
+        "taxonomy_secondary_id": "6.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat; secondary_leaf=6.5",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 363,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "social_legal_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "sheriff",
+          "deputy",
+          "county",
+          "weapons",
+          "ensure"
+        ],
+        "rationale": "The topic contains keywords related to law enforcement ('sheriff', 'deputy', 'weapons') and actions taken to ensure safety ('ensure'), suggesting an external threat and protective action. However, it's unclear if the main couple is the primary target of this protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 371,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic discusses values and an idyllic situation, but there's no identifiable external threat or concrete action to reduce it. The keyword 'concerned' suggests emotional support, but it's not directed at a specific threat.",
+      "candidate": {
+        "topic_id": 371,
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=5.2; proto:defend",
+        "n_signals": 2,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 371,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "values",
+          "idyll",
+          "concerned"
+        ],
+        "rationale": "The topic discusses values and an idyllic situation, but there's no identifiable external threat or concrete action to reduce it. The keyword 'concerned' suggests emotional support, but it's not directed at a specific threat."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 5,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around non-verbal expressions of amusement and affection, but there's no identifiable external threat or action taken to reduce it. The main couple's involvement is unclear, and the cues suggest emotional reassurance rather than external protection.",
+      "candidate": {
+        "topic_id": 5,
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "proto:threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 5,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "smile",
+          "smiled",
+          "grinned",
+          "winked",
+          "smirked",
+          "smirk"
+        ],
+        "rationale": "The topic revolves around non-verbal expressions of amusement and affection, but there's no identifiable external threat or action taken to reduce it. The main couple's involvement is unclear, and the cues suggest emotional reassurance rather than external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 9,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around movement and willingness, but there's no identifiable external threat or concrete action to reduce it. Keywords like 'come', 'go', 'willingly' suggest emotional reassurance or willingness to engage, but not external protection.",
+      "candidate": {
+        "topic_id": 9,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "8.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 9,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "come, go, ll, why, here, coming, going",
+          "willingly, willingly"
+        ],
+        "rationale": "The topic revolves around movement and willingness, but there's no identifiable external threat or concrete action to reduce it. Keywords like 'come', 'go', 'willingly' suggest emotional reassurance or willingness to engage, but not external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 10,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around medical care and treatment, which is typically not framed as protection from an external threat. The keywords suggest emotional support and care, but no concrete danger or protective action is mentioned.",
+      "candidate": {
+        "topic_id": 10,
+        "taxonomy_main_id": "6.5",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=6.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 10,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "doctor",
+          "hospital",
+          "nurse",
+          "heal",
+          "treatment"
+        ],
+        "rationale": "The topic revolves around medical care and treatment, which is typically not framed as protection from an external threat. The keywords suggest emotional support and care, but no concrete danger or protective action is mentioned."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 18,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "ordinary_practical_care",
+      "rationale": "The topic revolves around clothing and ensuring they fit well, but there's no identifiable external threat, protective action, or clear main couple target. It's ordinary practical care, not romantic protection.",
+      "candidate": {
+        "topic_id": 18,
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "6.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 18,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "ordinary_practical_care",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "dress",
+          "wear",
+          "clothes",
+          "fitting",
+          "appropriate"
+        ],
+        "rationale": "The topic revolves around clothing and ensuring they fit well, but there's no identifiable external threat, protective action, or clear main couple target. It's ordinary practical care, not romantic protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 20,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic discusses understanding and making choices, with the character insisting on something. However, there's no clear external threat or concrete action to reduce it, so it's more about emotional reassurance than external protection.",
+      "candidate": {
+        "topic_id": 20,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 20,
+        "external_threat": "unclear",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "knew, he, know, choice, understand",
+          "insisted, indication, surely, ought, intend",
+          "choices, explanation, indication, direct"
+        ],
+        "rationale": "The topic discusses understanding and making choices, with the character insisting on something. However, there's no clear external threat or concrete action to reduce it, so it's more about emotional reassurance than external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 21,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around decisions about leaving or staying, but there's no identifiable external threat or concrete action to reduce a danger. Keywords like 'leave', 'stay', 'alone', and 'can' suggest emotional reassurance or decision-making, not external protection.",
+      "candidate": {
+        "topic_id": 21,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 21,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "leave, stay, leaving, here, you, let, go, alone, staying, can"
+        ],
+        "rationale": "The topic revolves around decisions about leaving or staying, but there's no identifiable external threat or concrete action to reduce a danger. Keywords like 'leave', 'stay', 'alone', and 'can' suggest emotional reassurance or decision-making, not external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 29,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around general expressions of love and affection, with no identifiable external threat or protective action mentioned. The main couple is the focus, but the topic does not involve any protective commitment or external protection.",
+      "candidate": {
+        "topic_id": 29,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 29,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "love",
+          "loved",
+          "you",
+          "loves",
+          "always",
+          "me",
+          "know"
+        ],
+        "rationale": "The topic revolves around general expressions of love and affection, with no identifiable external threat or protective action mentioned. The main couple is the focus, but the topic does not involve any protective commitment or external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 32,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around drinking and socializing, with no identifiable external threat or protective action. The keywords suggest a social, fun atmosphere with no indication of a concrete problem or protective commitment towards a romantic partner.",
+      "candidate": {
+        "topic_id": 32,
+        "taxonomy_main_id": "8.3b",
+        "taxonomy_secondary_id": "8.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 32,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "drink",
+          "wine",
+          "drunk",
+          "parties",
+          "chuckle",
+          "willing"
+        ],
+        "rationale": "The topic revolves around drinking and socializing, with no identifiable external threat or protective action. The keywords suggest a social, fun atmosphere with no indication of a concrete problem or protective commitment towards a romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 37,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around friendship and friendly interactions, with no identifiable external threat or protective action mentioned. The keywords suggest emotional support and camaraderie, but not romantic protection.",
+      "candidate": {
+        "topic_id": 37,
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:defend",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 37,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "friends",
+          "friendship",
+          "best",
+          "your",
+          "friendships"
+        ],
+        "rationale": "The topic revolves around friendship and friendly interactions, with no identifiable external threat or protective action mentioned. The keywords suggest emotional support and camaraderie, but not romantic protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 57,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around non-verbal gestures (fists, hands, etc.) and reassurance, but there's no identifiable external threat or concrete action to reduce danger. The main couple is targeted, but the actions described are more about emotional reassurance than physical protection.",
+      "candidate": {
+        "topic_id": 57,
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "mechanic:protective_care",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 57,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "gesture",
+          "reassuring",
+          "instinctively",
+          "loosened"
+        ],
+        "rationale": "The topic revolves around non-verbal gestures (fists, hands, etc.) and reassurance, but there's no identifiable external threat or concrete action to reduce danger. The main couple is targeted, but the actions described are more about emotional reassurance than physical protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 59,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around a mother teaching her daughter, suggesting a central couple relationship. Keywords like 'affection' and 'taught' imply emotional support and guidance, but there's no clear external threat or protective action mentioned.",
+      "candidate": {
+        "topic_id": 59,
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:defend",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 59,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "mother",
+          "daughter",
+          "affection",
+          "taught"
+        ],
+        "rationale": "The topic revolves around a mother teaching her daughter, suggesting a central couple relationship. Keywords like 'affection' and 'taught' imply emotional support and guidance, but there's no clear external threat or protective action mentioned."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 62,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "off_target",
+      "rationale": "The topic revolves around insults and negative comments, but there's no identifiable external threat, protective action, or clear target as the main romantic partner. The keywords suggest criticism or mocking, not protection.",
+      "candidate": {
+        "topic_id": 62,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 62,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "off_target",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "stupid",
+          "idiot",
+          "fool",
+          "asshole",
+          "jerk",
+          "rude",
+          "ridiculous",
+          "silly",
+          "dumb",
+          "fooling"
+        ],
+        "rationale": "The topic revolves around insults and negative comments, but there's no identifiable external threat, protective action, or clear target as the main romantic partner. The keywords suggest criticism or mocking, not protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 65,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around dating and being together, with keywords like 'together', 'we', 'each', 'dates', and 'engaged'. There's no identifiable external threat, danger, or crisis mentioned. The keywords suggest emotional connection and commitment, but no concrete protective action is discussed.",
+      "candidate": {
+        "topic_id": 65,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 65,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "together",
+          "we",
+          "each",
+          "dates",
+          "engaged",
+          "partners"
+        ],
+        "rationale": "The topic revolves around dating and being together, with keywords like 'together', 'we', 'each', 'dates', and 'engaged'. There's no identifiable external threat, danger, or crisis mentioned. The keywords suggest emotional connection and commitment, but no concrete protective action is discussed."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 85,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around apologizing and forgiving, which are forms of emotional reassurance, but there's no identifiable external threat or concrete action to reduce a threat. The main couple's involvement is unclear.",
+      "candidate": {
+        "topic_id": 85,
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 85,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "apology",
+          "forgive",
+          "distress",
+          "overheard"
+        ],
+        "rationale": "The topic revolves around apologizing and forgiving, which are forms of emotional reassurance, but there's no identifiable external threat or concrete action to reduce a threat. The main couple's involvement is unclear."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 91,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic revolves around weapons and shooting, indicating an external threat. The use of words like 'aimed' and 'intend' suggests a protective action. However, it's unclear if the main couple is the target.",
+      "candidate": {
+        "topic_id": 91,
+        "taxonomy_main_id": "7.1",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 91,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "gun",
+          "shot",
+          "shoot",
+          "weapons",
+          "bullet",
+          "shooting",
+          "aimed"
+        ],
+        "rationale": "The topic revolves around weapons and shooting, indicating an external threat. The use of words like 'aimed' and 'intend' suggests a protective action. However, it's unclear if the main couple is the target."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 99,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around memories and forgetting, with no identifiable external threat or action to reduce it. The main couple's target is unclear, and the topic primarily focuses on emotional reassurance.",
+      "candidate": {
+        "topic_id": 99,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 99,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "forgetting",
+          "memories",
+          "recalled"
+        ],
+        "rationale": "The topic revolves around memories and forgetting, with no identifiable external threat or action to reduce it. The main couple's target is unclear, and the topic primarily focuses on emotional reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 102,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains keywords related to emotional states and affection, but there's no clear external threat or protective action mentioned. The 'proto:danger' flag suggests a potential threat, but it's not concrete. The topic seems to focus more on emotional reassurance.",
+      "candidate": {
+        "topic_id": 102,
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:danger",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 102,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "affection",
+          "emotional",
+          "secretly",
+          "blurted",
+          "sadness"
+        ],
+        "rationale": "The topic contains keywords related to emotional states and affection, but there's no clear external threat or protective action mentioned. The 'proto:danger' flag suggests a potential threat, but it's not concrete. The topic seems to focus more on emotional reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 107,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords suggesting physical tension and threat (e.g., 'growl', 'threats', 'tightening', 'flinched', 'clenched'), but it's unclear if these are directed at the main romantic partner or if there's a protective action taken. The 'proto:threat' flag also suggests a potential external threat.",
+      "candidate": {
+        "topic_id": 107,
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "7.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "proto:threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 107,
+        "external_threat": "yes",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "growl",
+          "threats",
+          "tightening",
+          "tensed",
+          "flinched",
+          "clenched"
+        ],
+        "rationale": "The topic contains keywords suggesting physical tension and threat (e.g., 'growl', 'threats', 'tightening', 'flinched', 'clenched'), but it's unclear if these are directed at the main romantic partner or if there's a protective action taken. The 'proto:threat' flag also suggests a potential external threat."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 110,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around work and figuring things out, with no identifiable external threat or concrete action to reduce danger. The keywords 'partners' and 'disappointment' suggest emotional distress, but there's no explicit protective action or commitment towards a romantic partner.",
+      "candidate": {
+        "topic_id": 110,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 110,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "partners",
+          "disappointment",
+          "attempt"
+        ],
+        "rationale": "The topic revolves around work and figuring things out, with no identifiable external threat or concrete action to reduce danger. The keywords 'partners' and 'disappointment' suggest emotional distress, but there's no explicit protective action or commitment towards a romantic partner."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 111,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic discusses scheduling and planning activities, but there's no identifiable external danger or threat. The use of 'permission' could imply a couple, but it's not clear if the protection is materially for the central couple.",
+      "candidate": {
+        "topic_id": 111,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "8.4",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 111,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "planned",
+          "urgency",
+          "excited",
+          "permission"
+        ],
+        "rationale": "The topic discusses scheduling and planning activities, but there's no identifiable external danger or threat. The use of 'permission' could imply a couple, but it's not clear if the protection is materially for the central couple."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 123,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around enjoying and liking experiences, with 'reassuring' as a key word, but there's no identifiable external threat, protective action, or clear main couple target. It's more about emotional reassurance than external protection.",
+      "candidate": {
+        "topic_id": 123,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "9.3",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 123,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "enjoy",
+          "like",
+          "love",
+          "reassuring"
+        ],
+        "rationale": "The topic revolves around enjoying and liking experiences, with 'reassuring' as a key word, but there's no identifiable external threat, protective action, or clear main couple target. It's more about emotional reassurance than external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 124,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around affectionate hugs and reassurance, but there's no identifiable external threat or action to reduce it. The main couple is the target, but the focus is on emotional support rather than physical or external protection.",
+      "candidate": {
+        "topic_id": 124,
+        "taxonomy_main_id": "2.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "mechanic:protective_care",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 124,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "hugged",
+          "hugging",
+          "tightly",
+          "affection",
+          "reassuring"
+        ],
+        "rationale": "The topic revolves around affectionate hugs and reassurance, but there's no identifiable external threat or action to reduce it. The main couple is the target, but the focus is on emotional support rather than physical or external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 126,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic describes affectionate gestures between romantic partners, but there's no identifiable external threat or protective action. The main target is the couple, and the gestures are non-sexual and non-possessive, serving as emotional reassurance.",
+      "candidate": {
+        "topic_id": 126,
+        "taxonomy_main_id": "2.2",
+        "taxonomy_secondary_id": "1.7",
+        "sexual_explicitness": "affection_only",
+        "sexual_function": "nonsexual_affection",
+        "heuristic_notes": "mechanic:protective_care",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 126,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "caressed",
+          "cupped",
+          "stroked",
+          "touched",
+          "hand",
+          "face"
+        ],
+        "rationale": "The topic describes affectionate gestures between romantic partners, but there's no identifiable external threat or protective action. The main target is the couple, and the gestures are non-sexual and non-possessive, serving as emotional reassurance."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 128,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains words like 'miss', 'missed', 'much', 'you', 'too', 'hi', 'sir', and 'honestly', which suggest emotional reassurance or longing, but there's no clear external threat, protective action, or main couple target mentioned.",
+      "candidate": {
+        "topic_id": 128,
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.1",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 128,
+        "external_threat": "unclear",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "missed",
+          "much",
+          "you",
+          "too",
+          "hi",
+          "sir",
+          "honestly"
+        ],
+        "rationale": "The topic contains words like 'miss', 'missed', 'much', 'you', 'too', 'hi', 'sir', and 'honestly', which suggest emotional reassurance or longing, but there's no clear external threat, protective action, or main couple target mentioned."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 134,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around general movements and intentions, with no identifiable external threat or concrete protective action. Keywords like 'going', 'you', and 'can' suggest emotional reassurance or shared plans, but not external protection.",
+      "candidate": {
+        "topic_id": 134,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 134,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "going",
+          "you",
+          "can"
+        ],
+        "rationale": "The topic revolves around general movements and intentions, with no identifiable external threat or concrete protective action. Keywords like 'going', 'you', and 'can' suggest emotional reassurance or shared plans, but not external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 135,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around anticipation and waiting, suggesting emotional reassurance, but there's no identifiable external threat or concrete protective action. The main couple's involvement is unclear, and the topic doesn't seem to support or restrict autonomy.",
+      "candidate": {
+        "topic_id": 135,
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "4.5",
+        "sexual_explicitness": "suggestive",
+        "sexual_function": "sexual_tension",
+        "heuristic_notes": "secondary_leaf=4.5",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 135,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "wait, hurry, waiting, quick, waited",
+          "anticipation, uh, um",
+          "clinging, temperature, begging, anticipation, embarrassed, pieces"
+        ],
+        "rationale": "The topic revolves around anticipation and waiting, suggesting emotional reassurance, but there's no identifiable external threat or concrete protective action. The main couple's involvement is unclear, and the topic doesn't seem to support or restrict autonomy."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 137,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains words like 'giggled', 'playfully', and 'warmth', suggesting a lighthearted, affectionate atmosphere. There's no identifiable external danger or protective action, so it's not a candidate for a ROMANTIC PROTECTION audit.",
+      "candidate": {
+        "topic_id": 137,
+        "taxonomy_main_id": "6.2",
+        "taxonomy_secondary_id": "5.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 137,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "giggled",
+          "playfully",
+          "warmth"
+        ],
+        "rationale": "The topic contains words like 'giggled', 'playfully', and 'warmth', suggesting a lighthearted, affectionate atmosphere. There's no identifiable external danger or protective action, so it's not a candidate for a ROMANTIC PROTECTION audit."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 140,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic does not explicitly mention an identifiable external danger or threat. The keywords 'anxious' and 'possibilities' suggest emotional reassurance rather than protective action. The main couple's involvement is unclear without more context.",
+      "candidate": {
+        "topic_id": 140,
+        "taxonomy_main_id": "6.6",
+        "taxonomy_secondary_id": "4.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 140,
+        "external_threat": "unclear",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "asks, anxious, possibilities",
+          "remarked, poised"
+        ],
+        "rationale": "The topic does not explicitly mention an identifiable external danger or threat. The keywords 'anxious' and 'possibilities' suggest emotional reassurance rather than protective action. The main couple's involvement is unclear without more context."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 146,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around daily routines and comfortable habits, with no identifiable external threat or protective action mentioned. Keywords like 'graceful' and 'replies' suggest emotional reassurance, but the main couple's involvement is unclear.",
+      "candidate": {
+        "topic_id": 146,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 146,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "morning",
+          "night",
+          "bedside",
+          "replies",
+          "graceful"
+        ],
+        "rationale": "The topic revolves around daily routines and comfortable habits, with no identifiable external threat or protective action mentioned. Keywords like 'graceful' and 'replies' suggest emotional reassurance, but the main couple's involvement is unclear."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 158,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic contains words like 'reassuring' and 'nods', suggesting emotional support, but there's no identifiable external threat or concrete action to reduce danger. The main couple's involvement is unclear.",
+      "candidate": {
+        "topic_id": 158,
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "6.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=5.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 158,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "told about departure",
+          "reassuring",
+          "nods",
+          "tensed",
+          "patted"
+        ],
+        "rationale": "The topic contains words like 'reassuring' and 'nods', suggesting emotional support, but there's no identifiable external threat or concrete action to reduce danger. The main couple's involvement is unclear."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 164,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around time durations (minutes, seconds) and actions like 'give' and 'ticked', suggesting a scenario or activity, but there's no identifiable external threat, protective action, or clear main couple target. The keywords 'ok' and 'ticked' imply emotional reassurance rather than physical or external protection.",
+      "candidate": {
+        "topic_id": 164,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 164,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "minutes",
+          "seconds",
+          "give",
+          "ok",
+          "ticked"
+        ],
+        "rationale": "The topic revolves around time durations (minutes, seconds) and actions like 'give' and 'ticked', suggesting a scenario or activity, but there's no identifiable external threat, protective action, or clear main couple target. The keywords 'ok' and 'ticked' imply emotional reassurance rather than physical or external protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 168,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The keywords suggest planning and coordination, but there's no identifiable external threat or concrete action to reduce it. The topic is more about emotional reassurance and coordination between the couple.",
+      "candidate": {
+        "topic_id": 168,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 168,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "ready",
+          "done",
+          "start",
+          "finish",
+          "finished",
+          "re",
+          "we",
+          "starting",
+          "are",
+          "yet"
+        ],
+        "rationale": "The keywords suggest planning and coordination, but there's no identifiable external threat or concrete action to reduce it. The topic is more about emotional reassurance and coordination between the couple."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 169,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around thinking and considering possibilities, which suggests emotional reassurance or introspection, but there's no identifiable external threat or concrete protective action mentioned.",
+      "candidate": {
+        "topic_id": 169,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 169,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "considering",
+          "possibilities",
+          "wondering"
+        ],
+        "rationale": "The topic revolves around thinking and considering possibilities, which suggests emotional reassurance or introspection, but there's no identifiable external threat or concrete protective action mentioned."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 176,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around having a good time and entertainment, with no mention of an external threat, protective action, or concrete problem. The keywords suggest emotional reassurance and enjoyment, but do not indicate a focus on protection or commitment.",
+      "candidate": {
+        "topic_id": 176,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 176,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "fun",
+          "great",
+          "having",
+          "good",
+          "we"
+        ],
+        "rationale": "The topic revolves around having a good time and entertainment, with no mention of an external threat, protective action, or concrete problem. The keywords suggest emotional reassurance and enjoyment, but do not indicate a focus on protection or commitment."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 179,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around affection and warmth, suggesting emotional reassurance rather than a response to an external threat. Keywords like 'lose', 'give', and 'want' do not explicitly indicate a protective action or a concrete problem to be solved.",
+      "candidate": {
+        "topic_id": 179,
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.6",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:protective_care",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 179,
+        "external_threat": "no",
+        "protective_action": "unclear",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "affection",
+          "warmth",
+          "cared"
+        ],
+        "rationale": "The topic revolves around affection and warmth, suggesting emotional reassurance rather than a response to an external threat. Keywords like 'lose', 'give', and 'want' do not explicitly indicate a protective action or a concrete problem to be solved."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 181,
+      "include": true,
+      "confidence": null,
+      "suggested_code_family": "physical_external_protection",
+      "rationale": "The topic contains keywords suggesting a threat ('stalked', 'bothering'), an action to reduce that threat ('come, quicken'), and evidence that the protected person is the main romantic partner ('wife').",
+      "candidate": {
+        "topic_id": 181,
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "primary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 181,
+        "external_threat": "yes",
+        "protective_action": "yes",
+        "main_couple_target": "yes",
+        "autonomy_effect": "neutral",
+        "function": "physical_external_protection",
+        "promote_to_full_H4_audit": true,
+        "supporting_cues": [
+          "joe, frank, uncle, franky, trader, wife, come, quicken",
+          "visits, identity, hopeful, regular, affection, latest, behavior, previous, dozen, crowd",
+          "dislike, visits, tries, confessed, stalked, bothering, affection, behavior, dozen, ex"
+        ],
+        "rationale": "The topic contains keywords suggesting a threat ('stalked', 'bothering'), an action to reduce that threat ('come, quicken'), and evidence that the protected person is the main romantic partner ('wife')."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 192,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around looking out windows and gazing, with no identifiable external danger or protective action mentioned. It's unclear if the main couple is the target, and the actions described are more about emotional reassurance than physical protection.",
+      "candidate": {
+        "topic_id": 192,
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "8.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "mechanic:external_threat",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 192,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "window",
+          "curtains",
+          "gazed",
+          "glimpse"
+        ],
+        "rationale": "The topic revolves around looking out windows and gazing, with no identifiable external danger or protective action mentioned. It's unclear if the main couple is the target, and the actions described are more about emotional reassurance than physical protection."
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "topic_id": 194,
+      "include": false,
+      "confidence": null,
+      "suggested_code_family": "emotional_reassurance",
+      "rationale": "The topic revolves around secrets and revealing them, but there's no identifiable external danger or threat. The protective action is more about emotional reassurance and maintaining trust within the relationship, rather than protecting from an external threat.",
+      "candidate": {
+        "topic_id": 194,
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "9.2",
+        "sexual_explicitness": "none",
+        "sexual_function": "none",
+        "heuristic_notes": "secondary_leaf=9.2",
+        "n_signals": 1,
+        "source": "h4_full_corpus_discovery"
+      },
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "dry_run": false,
+      "response": {
+        "topic_id": 194,
+        "external_threat": "no",
+        "protective_action": "no",
+        "main_couple_target": "unclear",
+        "autonomy_effect": "neutral",
+        "function": "emotional_reassurance",
+        "promote_to_full_H4_audit": false,
+        "supporting_cues": [
+          "reveal",
+          "secret",
+          "keep",
+          "embarrassing"
+        ],
+        "rationale": "The topic revolves around secrets and revealing them, but there's no identifiable external danger or threat. The protective action is more about emotional reassurance and maintaining trust within the relationship, rather than protecting from an external threat."
+      }
+    }
+  ],
+  "dry_run": false,
+  "model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "prompt_version": "1.0"
+}

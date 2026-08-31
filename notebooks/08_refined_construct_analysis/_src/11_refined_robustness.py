@@ -46,6 +46,8 @@ features = [
     "RAX_external_danger_crisis",
     "RAX_h4_protection_side",
     "RAX_external_protection",
+    "RAX_protective_commitment",
+    "RAX_protective_care_broad",
     "RAX_relational_darkness",
     "RAX_tenderness_core",
 ]

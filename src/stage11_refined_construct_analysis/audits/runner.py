@@ -190,7 +190,7 @@ def load_tenderness_priors_for_h5(cfg: Stage11Config) -> Dict[int, Dict[str, Any
     """Reuse H1 intimacy + H4 care codes for tenderness-side topics."""
     priors: Dict[int, Dict[str, Any]] = {}
     tenderness_h1 = {"I1", "I2", "I3", "I7"}
-    tenderness_h4 = {"H4_1", "H4_2", "H4_4", "H4_12"}
+    tenderness_h4 = {"H4_1", "H4_4", "H4_12"}
     for hyp, allowed in (("H1", tenderness_h1), ("H4", tenderness_h4)):
         path = audit_dir(cfg, hyp) / PASS_FILES["C"]
         if not path.exists():

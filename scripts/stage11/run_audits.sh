@@ -39,7 +39,7 @@ fi
 
 echo "== Spillover triage (H1, H3) =="
 "$PY" src/stage11_refined_construct_analysis/pipeline/04_run_spillover_triage.py \
-  --config "$CONFIG" --hypotheses H1,H3 "${DRY[@]+"${DRY[@]}"}"
+  --config "$CONFIG" --hypotheses H1,H3,H4 "${DRY[@]+"${DRY[@]}"}"
 
 echo "== Pass A/B/C (${HYPS}) =="
 "$PY" src/stage11_refined_construct_analysis/pipeline/05_run_hypothesis_audits.py \

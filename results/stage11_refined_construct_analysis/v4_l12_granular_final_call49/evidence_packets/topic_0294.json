@@ -1,0 +1,800 @@
+{
+  "topic_id": 294,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "punishment",
+        "punished",
+        "raped",
+        "rape",
+        "punish",
+        "punishing",
+        "reprimanded",
+        "rapist",
+        "shall",
+        "raping"
+      ],
+      "KeyBERT": [
+        "dismissed",
+        "behavior",
+        "sir",
+        "decide",
+        "violently",
+        "warned",
+        "madam",
+        "threatened",
+        "refused",
+        "deserve"
+      ],
+      "POS": [
+        "slightest",
+        "unusual",
+        "disbelief",
+        "behavior",
+        "pregnant",
+        "pressure",
+        "memories",
+        "fault"
+      ],
+      "MMR": [
+        "madam",
+        "dislike",
+        "dismissed",
+        "violently",
+        "slightest",
+        "unusual",
+        "behavior",
+        "warned",
+        "pregnant",
+        "dr"
+      ]
+    },
+    "stage08_snippets": [
+      "then i guess i’ll just have to accept your punishment.” “",
+      "you’ll be punished.” “",
+      "i’ll take whatever punishment i deserve, but i won’t give him up.” “"
+    ],
+    "label_public": "Accepting Whatever Punishment Is Deserved"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I’ll need somebody to heel the ladder if I come down with a victim.”",
+        "max_topic_prob": 0.49788588285446167,
+        "normalized_position": 0.01866952789699571,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He executed a high five with another guy; two others swore.",
+        "max_topic_prob": 0.4603237509727478,
+        "normalized_position": 0.07113733905579399,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Punish you?”",
+        "max_topic_prob": 0.7803017497062683,
+        "normalized_position": 0.49444444444444446,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "So you’re not going to punish me any longer?”",
+        "max_topic_prob": 0.7491039037704468,
+        "normalized_position": 0.4930555555555556,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "That was never a punishment.”",
+        "max_topic_prob": 0.6033680438995361,
+        "normalized_position": 0.49722222222222223,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "If I had known that I was going to be treated in this fashion…” “What would you have done?”",
+        "max_topic_prob": 0.44489586353302,
+        "normalized_position": 0.4388888888888889,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "But circumstances called for drastic measures. “",
+        "max_topic_prob": 0.41273462772369385,
+        "normalized_position": 0.8828078524687686,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "sentence": "Did the light spankings he gave while they were in the throws of passion count as browbeating?",
+        "max_topic_prob": 0.4113159775733948,
+        "normalized_position": 0.6515962720602816,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "That I am happy to say shall be a fitting punishment for you both.” “",
+        "max_topic_prob": 0.6738772392272949,
+        "normalized_position": 0.1076121431807884,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "And tried to date rape me. “",
+        "max_topic_prob": 0.6026849746704102,
+        "normalized_position": 0.9890122338015406,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "All this coming from the man who had decapitated my mother and tried to rape me.",
+        "max_topic_prob": 0.5406838655471802,
+        "normalized_position": 0.6668554599003171,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "You tried to freaking date rape me.",
+        "max_topic_prob": 0.5252939462661743,
+        "normalized_position": 0.6140688717716357,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Preventing me from being raped isn't in your job description.”",
+        "max_topic_prob": 0.5234283208847046,
+        "normalized_position": 0.3478704123244223,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Some people are gluttons for punishment I guess.",
+        "max_topic_prob": 0.5074101686477661,
+        "normalized_position": 0.09719075668328048,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "He deserved it for what he did to you.”",
+        "max_topic_prob": 0.5315899848937988,
+        "normalized_position": 0.9541998231653404,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I will gladly take his punishment.”",
+        "max_topic_prob": 0.7545379400253296,
+        "normalized_position": 0.15666733107434722,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 781
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You will be severely punished for this!”",
+        "max_topic_prob": 0.6897819638252258,
+        "normalized_position": 0.9691050428542954,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You seem to enjoy punishments these days.”",
+        "max_topic_prob": 0.6716117858886719,
+        "normalized_position": 0.718955551126171,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Please, before you punish me hear what I have risked to tell you.”",
+        "max_topic_prob": 0.6679255962371826,
+        "normalized_position": 0.36176998206099265,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You must not allow him to go unpunished for this.” “",
+        "max_topic_prob": 0.6353306770324707,
+        "normalized_position": 0.1516842734702013,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 756
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Punish me if you must, kill me if you must.",
+        "max_topic_prob": 0.6206852793693542,
+        "normalized_position": 0.4570460434522623,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Not all of us think you should go unpunished for this.”",
+        "max_topic_prob": 0.5728545784950256,
+        "normalized_position": 0.877681805516857,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "If I suspect you are having inappropriate relations with any of my men, the position will be forfeit immediately.” “",
+        "max_topic_prob": 0.5045586228370667,
+        "normalized_position": 0.16346243150366863,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "They threatened to execute him today.” “",
+        "max_topic_prob": 0.5016312003135681,
+        "normalized_position": 0.8869694436704746,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "There was a massacre.”",
+        "max_topic_prob": 0.47394251823425293,
+        "normalized_position": 0.21993127147766323,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Let the masses see what happens to those who dare defy me.”",
+        "max_topic_prob": 0.46922802925109863,
+        "normalized_position": 0.9290424445063621,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Ruthless.",
+        "max_topic_prob": 0.45591461658477783,
+        "normalized_position": 0.04170149530974273,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 443
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I would have kicked me to the curb ages ago.",
+        "max_topic_prob": 0.42886725068092346,
+        "normalized_position": 0.6354820308043354,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 348
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Swear to God, if we manage to pull this off without a quadruple homicide we will both deserve a fucking medal.”",
+        "max_topic_prob": 0.41607463359832764,
+        "normalized_position": 0.6746149458071877,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "What’s my punishment?”",
+        "max_topic_prob": 0.7740339040756226,
+        "normalized_position": 0.47073972116153096,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I punished you, because I wanted you.",
+        "max_topic_prob": 0.7328647375106812,
+        "normalized_position": 0.36106917680490186,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 211
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "To punish it with this.”",
+        "max_topic_prob": 0.6684808731079102,
+        "normalized_position": 0.050084361957197406,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I'd almost raped her, and she'd selflessly forgiven me.",
+        "max_topic_prob": 0.5732830166816711,
+        "normalized_position": 0.312938460172276,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Before we go, please tell me why you were torturing those people?”",
+        "max_topic_prob": 0.5402793288230896,
+        "normalized_position": 0.13062783056566912,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Not to a man who abused and killed those of the weaker sex.",
+        "max_topic_prob": 0.5336236953735352,
+        "normalized_position": 0.9201669478731906,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Anything she does is pretty much to torture us.",
+        "max_topic_prob": 0.4413437247276306,
+        "normalized_position": 0.807753637632051,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1656
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I punished her.”",
+        "max_topic_prob": 0.8076333999633789,
+        "normalized_position": 0.40582162802504657,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 338
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Punish me how?”",
+        "max_topic_prob": 0.7737259864807129,
+        "normalized_position": 0.36266711795566087,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I did not like having to punish you.” “",
+        "max_topic_prob": 0.7418702840805054,
+        "normalized_position": 0.43492976815027923,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Even if it led to punishment.",
+        "max_topic_prob": 0.6437052488327026,
+        "normalized_position": 0.7632425114232526,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 427
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "As long as you resist, I will continue to punish you,” he said.",
+        "max_topic_prob": 0.6114552021026611,
+        "normalized_position": 0.638517515654087,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Any disobedience will earn immediate and harsh punishment.”",
+        "max_topic_prob": 0.591381311416626,
+        "normalized_position": 0.36182095109155527,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "If it happened more than that, I really deserved the threat.”",
+        "max_topic_prob": 0.5456351041793823,
+        "normalized_position": 0.3871030968247746,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Once he was out of the hands of the US government, his position left him free of any punishment for his crimes.",
+        "max_topic_prob": 0.4443875551223755,
+        "normalized_position": 0.8448940269749519,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 479
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He wasn’t the one who deserved punishment.",
+        "max_topic_prob": 0.6424565315246582,
+        "normalized_position": 0.0733447488584475,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Your commander declared me guilty and banished me without a second thought. “",
+        "max_topic_prob": 0.613501787185669,
+        "normalized_position": 0.7054794520547946,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "If he is to be punished, it will be by The Order.” “",
+        "max_topic_prob": 0.607700526714325,
+        "normalized_position": 0.877283105022831,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Most deserved some sort of punishment.",
+        "max_topic_prob": 0.6063405275344849,
+        "normalized_position": 0.2895262557077626,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "So that must have registered before you inflicted lasting harm.”",
+        "max_topic_prob": 0.579465389251709,
+        "normalized_position": 0.4890125570776256,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Is this punishment, then, for not sharing your bed again?”",
+        "max_topic_prob": 0.5790344476699829,
+        "normalized_position": 0.09275114155251142,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "If you come too fast, you’ll get a punishment.",
+        "max_topic_prob": 0.6058425903320312,
+        "normalized_position": 0.7405204460966542,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 614
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Made for spanking.”",
+        "max_topic_prob": 0.4998426139354706,
+        "normalized_position": 0.7546468401486989,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 671
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "That’s just cruel.” “",
+        "max_topic_prob": 0.49690112471580505,
+        "normalized_position": 0.9405204460966543,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1421
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’m going to spank you, belleza.",
+        "max_topic_prob": 0.4832930564880371,
+        "normalized_position": 0.7489467162329616,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 648
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Tom will blacklist you.” “",
+        "max_topic_prob": 0.41860854625701904,
+        "normalized_position": 0.041635687732342004,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He didn’t deserve to be treated unfairly.",
+        "max_topic_prob": 0.4171469807624817,
+        "normalized_position": 0.8086741016109046,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 889
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0019915359721184964,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0016844469399213925,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.004154132645752757,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.0017942047187584104,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.002803083391730904,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.004215174628663188,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.006642820643842616,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0016018306636155606,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.00019634792852935403,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00023030861354214648,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0002418379685610641,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_C",
+        "share": 0.00039824771007566706,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.00010015022533800701,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00021713169037020953,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00017793594306049823,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 56
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.75,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

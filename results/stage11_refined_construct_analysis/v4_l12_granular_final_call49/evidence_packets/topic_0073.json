@@ -1,0 +1,733 @@
+{
+  "topic_id": 73,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "looked",
+        "cobey",
+        "howell",
+        "look",
+        "at",
+        "father",
+        "had"
+      ],
+      "KeyBERT": [
+        "nods",
+        "ms",
+        "ed",
+        "winked",
+        "glances",
+        "possibilities",
+        "uttered",
+        "decide",
+        "comments",
+        "motioned"
+      ],
+      "POS": [
+        "behalf",
+        "destination",
+        "contrast",
+        "possibilities",
+        "identity",
+        "meantime",
+        "exchange",
+        "hopeful",
+        "hundreds",
+        "comments"
+      ],
+      "MMR": [
+        "insulted",
+        "destination",
+        "uttered",
+        "hopeful",
+        "comments",
+        "described",
+        "admire",
+        "fears",
+        "choices",
+        "winked"
+      ]
+    },
+    "stage08_snippets": [
+      "hell, yeah, i’ll just pretend [person] is runnin’ after me to give me a kiss.”",
+      "he’ll be dead before we get there,” [person] hisses, “yeah.",
+      "we’ll try to be quick,” vincent says as he looks around at the group and then finally at michael. “"
+    ],
+    "label_public": "Quick Remarks Before Moving on"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mike said. \"",
+        "max_topic_prob": 0.777638852596283,
+        "normalized_position": 0.39369015467714213,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 449
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mike looked surprised. \"",
+        "max_topic_prob": 0.7237545251846313,
+        "normalized_position": 0.2311563957770685,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "she asked Mike. \"",
+        "max_topic_prob": 0.7212270498275757,
+        "normalized_position": 0.23778541615516818,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mike instantly paled. \"",
+        "max_topic_prob": 0.7090927362442017,
+        "normalized_position": 0.23250675178001473,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mike just walked in.",
+        "max_topic_prob": 0.7090082168579102,
+        "normalized_position": 0.38571077829609623,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Mike demanded. \"",
+        "max_topic_prob": 0.7074758410453796,
+        "normalized_position": 0.3848514608396759,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 377
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Michael.”",
+        "max_topic_prob": 0.8237251043319702,
+        "normalized_position": 0.6689385037211124,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Michael.”",
+        "max_topic_prob": 0.8237250447273254,
+        "normalized_position": 0.08476302389345867,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Michael.”",
+        "max_topic_prob": 0.8237250447273254,
+        "normalized_position": 0.09596553074813945,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Where’s Michael now?”",
+        "max_topic_prob": 0.8005003929138184,
+        "normalized_position": 0.8462201331766549,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She spoke to Michael. “",
+        "max_topic_prob": 0.800222635269165,
+        "normalized_position": 0.953779866823345,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 105
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Michael!”",
+        "max_topic_prob": 0.7879828214645386,
+        "normalized_position": 0.9441441441441442,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Mike here.”",
+        "max_topic_prob": 0.7145874500274658,
+        "normalized_position": 0.11405359780544419,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Michael, your father, coming back into our lives.",
+        "max_topic_prob": 0.6987754702568054,
+        "normalized_position": 0.6639586410635155,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 192
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Mike smiles too. “",
+        "max_topic_prob": 0.6821334362030029,
+        "normalized_position": 0.1300907364422874,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Mike looks as shocked as I feel.",
+        "max_topic_prob": 0.6801353693008423,
+        "normalized_position": 0.5800801856931842,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I was going to call him Michael and pretend that he was merely my mother’s new boyfriend.",
+        "max_topic_prob": 0.6769448518753052,
+        "normalized_position": 0.6582612365477949,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Hi, Mike.”",
+        "max_topic_prob": 0.6652146577835083,
+        "normalized_position": 0.45125553914327915,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Who Mike?”",
+        "max_topic_prob": 0.7585419416427612,
+        "normalized_position": 0.577492596248766,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 786
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Mike says. “",
+        "max_topic_prob": 0.7431319355964661,
+        "normalized_position": 0.09928077845155832,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 704
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Maybe I ’ m wrong about Mike. “",
+        "max_topic_prob": 0.7205928564071655,
+        "normalized_position": 0.14003666619658722,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Mike without question. ” “",
+        "max_topic_prob": 0.7125754356384277,
+        "normalized_position": 0.1603440981525878,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Mike talks about himself a lot.",
+        "max_topic_prob": 0.7087031602859497,
+        "normalized_position": 0.14849809617825413,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "I ’ m not sure how to respond to Mike.",
+        "max_topic_prob": 0.7011739611625671,
+        "normalized_position": 0.12085742490480891,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 857
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Silently, he walked to stand beside her and looked down to watch as she wrote: Dear Michaela, By now, you’ve likely heard of me.",
+        "max_topic_prob": 0.5191018581390381,
+        "normalized_position": 0.660385789826469,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 376
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "That was definitely not true and definitely the first time anyone had ever called Keith “man candy.”",
+        "max_topic_prob": 0.34476810693740845,
+        "normalized_position": 0.10685979775895053,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 177
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike asked.",
+        "max_topic_prob": 0.7251602411270142,
+        "normalized_position": 0.8128962424617288,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike called. “",
+        "max_topic_prob": 0.7223775386810303,
+        "normalized_position": 0.852172568424308,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike sneered. “",
+        "max_topic_prob": 0.7105271816253662,
+        "normalized_position": 0.8529457244471934,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike lived with us, you know.",
+        "max_topic_prob": 0.7078168392181396,
+        "normalized_position": 0.9302613267357353,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike!”",
+        "max_topic_prob": 0.6881799101829529,
+        "normalized_position": 0.8673264264728622,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Mike snapped, and Niles realized he’d actually lost a moment of awareness. “",
+        "max_topic_prob": 0.6705582141876221,
+        "normalized_position": 0.8589763414256997,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Mike asks. “",
+        "max_topic_prob": 0.6843053102493286,
+        "normalized_position": 0.7689611664096453,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Jesus Christ,” Mike says through gritted teeth. “",
+        "max_topic_prob": 0.655289888381958,
+        "normalized_position": 0.7696621337445675,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Mike asks incredulously. “",
+        "max_topic_prob": 0.6539583206176758,
+        "normalized_position": 0.7648955558670966,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Yeah…I get that,” Mike says in commiseration. “",
+        "max_topic_prob": 0.6365222930908203,
+        "normalized_position": 0.7706434880134586,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Ow,” Mike grumbles, rubbing his arm. “",
+        "max_topic_prob": 0.5800151824951172,
+        "normalized_position": 0.7675592317398009,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Mike was on the second line with Zack last season but then got traded to Chicago.”",
+        "max_topic_prob": 0.5764255523681641,
+        "normalized_position": 0.76405439506519,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He turned to Michael. “",
+        "max_topic_prob": 0.8105263710021973,
+        "normalized_position": 0.4552793025508557,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Michael teased. “",
+        "max_topic_prob": 0.7993912696838379,
+        "normalized_position": 0.40813690668388763,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Michael asked.",
+        "max_topic_prob": 0.772226095199585,
+        "normalized_position": 0.8107846302873749,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Michael paused. “",
+        "max_topic_prob": 0.7454956769943237,
+        "normalized_position": 0.8033580884727155,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Michael stuttered. “",
+        "max_topic_prob": 0.7429293394088745,
+        "normalized_position": 0.8153051340006457,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Michael, he’s fine.",
+        "max_topic_prob": 0.7323993444442749,
+        "normalized_position": 0.8960284145947691,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Poor Mike.\"",
+        "max_topic_prob": 0.7282462120056152,
+        "normalized_position": 0.233952575139707,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Where did Mike go?",
+        "max_topic_prob": 0.7281084656715393,
+        "normalized_position": 0.272013291043649,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Did I think about Mike once?",
+        "max_topic_prob": 0.7224164009094238,
+        "normalized_position": 0.12520767255701556,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Is Mike okay?",
+        "max_topic_prob": 0.7190998792648315,
+        "normalized_position": 0.2723153602174898,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Mike exclaims. \"",
+        "max_topic_prob": 0.7118082046508789,
+        "normalized_position": 0.2547953481347229,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "Mike.",
+        "max_topic_prob": 0.7018903493881226,
+        "normalized_position": 0.8320495393445099,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 16
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.018683651804670912,
+        "n_sentences": 132
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.014033942558746737,
+        "n_sentences": 43
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0032430908065425833,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.009416767922235723,
+        "n_sentences": 62
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.010937991816178785,
+        "n_sentences": 139
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.00359311113864453,
+        "n_sentences": 29
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005206673042184678,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0037418147801683817,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "share": 7.525586995785671e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 9.196247930844215e-05,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 50
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.62,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

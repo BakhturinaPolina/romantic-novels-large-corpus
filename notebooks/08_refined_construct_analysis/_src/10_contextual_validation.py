@@ -64,7 +64,13 @@ if not stability.empty:
             ),
             pct_differs=(
                 "meaning_differs_high_prevalence",
-                lambda s: float((s == True).mean()) if s.notna().any() else float("nan"),  # noqa: E712
+                # Comparable-only rate: n_differs / n_with_both_high_prev
+                # (NaN non-comparable cells must not count as False).
+                lambda s: (
+                    float((s == True).sum() / s.notna().sum())  # noqa: E712
+                    if s.notna().any()
+                    else float("nan")
+                ),
             ),
         )
         .reset_index()

@@ -1,0 +1,725 @@
+{
+  "topic_id": 363,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "10.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sheriff",
+        "deputy",
+        "county",
+        "deputies",
+        "sheriffs",
+        "jail",
+        "department",
+        "town",
+        "local",
+        "office"
+      ],
+      "KeyBERT": [
+        "hauled",
+        "nearby",
+        "folks",
+        "awkwardly",
+        "appreciate",
+        "weapons",
+        "motioned",
+        "thinks",
+        "planned",
+        "marked"
+      ],
+      "POS": [
+        "contrast",
+        "notion",
+        "embarrassing",
+        "weapons",
+        "folks",
+        "apology",
+        "handful",
+        "plastic",
+        "pleased",
+        "usual"
+      ],
+      "MMR": [
+        "reminds",
+        "awkwardly",
+        "hauled",
+        "ensure",
+        "paced",
+        "handful",
+        "mattered",
+        "motioned",
+        "pleased",
+        "throw"
+      ]
+    },
+    "stage08_snippets": [
+      "sheriff, if you could give us a key and point us in the right direction, we’ll be on our way.” “",
+      "i’ll do something—maybe i’ll run for sheriff.",
+      "sheriff, i appreciate your concern and i hope that means you’ll put all your energies into finding this guy."
+    ],
+    "label_public": "Asking The Sheriff For Help"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "McGraw's a petty criminal, and he thinks he's smart.",
+        "max_topic_prob": 0.4102514982223511,
+        "normalized_position": 0.7812963212505053,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Yeah, Sheriff?” “",
+        "max_topic_prob": 0.8354533910751343,
+        "normalized_position": 0.2537514229535341,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Sheriff?”",
+        "max_topic_prob": 0.8118810653686523,
+        "normalized_position": 0.6840525716651144,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "You called the sheriff’s department?”",
+        "max_topic_prob": 0.799471914768219,
+        "normalized_position": 0.4870123150160406,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Maybe he shouldn’t be sheriff, then.",
+        "max_topic_prob": 0.7718720436096191,
+        "normalized_position": 0.37793645865673187,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Sheriff needs to see Miss Craig.” “",
+        "max_topic_prob": 0.7298887968063354,
+        "normalized_position": 0.5329607782262238,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "The sheriff entrusted me with this photograph.",
+        "max_topic_prob": 0.7143274545669556,
+        "normalized_position": 0.29069647107523544,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Sheriff McGraw pauses again.",
+        "max_topic_prob": 0.6479084491729736,
+        "normalized_position": 0.1340280793168331,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 266
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Scooter McGraw is the local Sheriff.",
+        "max_topic_prob": 0.6438618898391724,
+        "normalized_position": 0.12780431321464755,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "This is so much bigger than anyone knows… The sheriff glances around nervously. “",
+        "max_topic_prob": 0.5836502313613892,
+        "normalized_position": 0.13330438558402083,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Upon closer inspection, I swear both he and Sheriff McGraw look positively white. “",
+        "max_topic_prob": 0.5511168837547302,
+        "normalized_position": 0.13171225937183384,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Nearly two hours later, after I’ve nibbled on several iced oatmeal cookies and drunk eight glasses of sweet tea, Sheriff McGraw finally waddles in through the parlor doors.",
+        "max_topic_prob": 0.5335490703582764,
+        "normalized_position": 0.13026487190620928,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Sheriff McGraw makes his way to the front of the room and waives his hands for people to hush up.",
+        "max_topic_prob": 0.46045422554016113,
+        "normalized_position": 0.13127804313214647,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Why, because he was your deputy here.’ ‘",
+        "max_topic_prob": 0.5802553296089172,
+        "normalized_position": 0.6666008685353336,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "By courtesy of the mayor, one of the civic guard’s lieutenants was despatched on horseback to deliver the message, which I had sealed on the reverse with a special seal given to me by the Stadhouder’s office for this purpose.",
+        "max_topic_prob": 0.45872730016708374,
+        "normalized_position": 0.7962889853928149,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "The clerk was most co-operative.’ ‘",
+        "max_topic_prob": 0.440119206905365,
+        "normalized_position": 0.20607974733517567,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I believe I may have been one of the few members of staff disposed to be polite to him. ‘",
+        "max_topic_prob": 0.4198192059993744,
+        "normalized_position": 0.4320963284642716,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Meanwhile,’ said the Stadhouder, ‘I will tell Pieters tomorrow evening to prepare a letter to the mayor of Haarlem telling him that I want him to send some men to help you arrest Van der Horst senior.",
+        "max_topic_prob": 0.39717018604278564,
+        "normalized_position": 0.8770232925384919,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I just hoped that the Rector had waited until the courier was far from Leiden before he gave the purse to Van Looy in case the transaction had been observed.",
+        "max_topic_prob": 0.38676196336746216,
+        "normalized_position": 0.3900513225424398,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "There’s a posse out hunting for you.” “",
+        "max_topic_prob": 0.5197191834449768,
+        "normalized_position": 0.39752622514482544,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The posse could be riding back into town right now, and if they noticed Kenny was gone someone was might decide to take a look at the old hunting cabin. “",
+        "max_topic_prob": 0.4967426359653473,
+        "normalized_position": 0.4141224361985283,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 318
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "And what about Jody’s encounter with a gun on 54th Street?",
+        "max_topic_prob": 0.4913300573825836,
+        "normalized_position": 0.6716768435885392,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Marshall might be watching the street; he might even have guards posted around the hotel area.",
+        "max_topic_prob": 0.44059693813323975,
+        "normalized_position": 0.8459370596524189,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jody Miller was a sad little boy from a shitty town in Michigan who went to a correctional facility at the age of fourteen.",
+        "max_topic_prob": 0.3974727690219879,
+        "normalized_position": 0.2927822138719274,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "What did the sheriff say?”",
+        "max_topic_prob": 0.861772358417511,
+        "normalized_position": 0.34475965327029157,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "What’s the sheriff doing about this?”",
+        "max_topic_prob": 0.8361138105392456,
+        "normalized_position": 0.5270554242185448,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I called the sheriff.”",
+        "max_topic_prob": 0.8091235160827637,
+        "normalized_position": 0.34370895718413447,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Without another thought, V called the sheriff.",
+        "max_topic_prob": 0.7518579959869385,
+        "normalized_position": 0.8242710795902285,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "If the sheriff were getting involved, that clearly meant something had happened.",
+        "max_topic_prob": 0.7122706770896912,
+        "normalized_position": 0.3475177304964539,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "He’s been emailing back and forth with Sheriff Endsley.” “",
+        "max_topic_prob": 0.697913408279419,
+        "normalized_position": 0.3335960073548726,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Where the hell’s the sheriff?” “",
+        "max_topic_prob": 0.8241183757781982,
+        "normalized_position": 0.9721342621912603,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 531
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Let’s go talk to the sheriff.”",
+        "max_topic_prob": 0.8186584711074829,
+        "normalized_position": 0.6803039898670045,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "What do you think, Sheriff?”",
+        "max_topic_prob": 0.7821483612060547,
+        "normalized_position": 0.707409753008233,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The sheriff must still have it.” “",
+        "max_topic_prob": 0.7544595003128052,
+        "normalized_position": 0.46649778340721976,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 253
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Sheriff has it.” “",
+        "max_topic_prob": 0.7468610405921936,
+        "normalized_position": 0.07903736542115262,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "And you gave it to the sheriff?”",
+        "max_topic_prob": 0.7414053678512573,
+        "normalized_position": 0.46713109563014565,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 258
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "The Chief needs me to go to Atlanta for him.",
+        "max_topic_prob": 0.41296741366386414,
+        "normalized_position": 0.12615923009623797,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 301
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Only with the help of a kind park ranger was I able to rent a car.",
+        "max_topic_prob": 0.400862455368042,
+        "normalized_position": 0.7377077865266841,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 671
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Good afternoon, Mr. Sanders,” a security guard tipped his hat. “",
+        "max_topic_prob": 0.4723440110683441,
+        "normalized_position": 0.7653040877367896,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "So if the other two guards had shown up late to the party, barking orders, he could handle them easily.",
+        "max_topic_prob": 0.49101996421813965,
+        "normalized_position": 0.933310177144842,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Sloane had one guard preoccupied in the guardhouse and Folley had the other one at the gate.",
+        "max_topic_prob": 0.34836411476135254,
+        "normalized_position": 0.9322681486627301,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "There were still sporadic calls to “Halt” and “Surrender” and Dredd distantly registered that the two prostitutes, Sloane and Folley, were being manhandled by the guards who now realized they were duped.",
+        "max_topic_prob": 0.3474205732345581,
+        "normalized_position": 0.9399096908648836,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "A few of the bodyguards turned and signaled their bosses, who in turn signaled others.",
+        "max_topic_prob": 0.37845122814178467,
+        "normalized_position": 0.9408469055374593,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Battery,” said the deputy. “",
+        "max_topic_prob": 0.585056483745575,
+        "normalized_position": 0.4794592882036118,
+        "tertile": "middle",
+        "chapter_index": 51,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He’d met with the mayor, too, who’d put him in touch with local agencies that would provide trained staff.",
+        "max_topic_prob": 0.5277618169784546,
+        "normalized_position": 0.7417889956700813,
+        "tertile": "end",
+        "chapter_index": 93,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "One of my patrol officers picked up the garden-gnome bandit.",
+        "max_topic_prob": 0.5022468566894531,
+        "normalized_position": 0.9833139719083325,
+        "tertile": "end",
+        "chapter_index": 127,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Did the mayor say who he’s planning to appoint?” “",
+        "max_topic_prob": 0.48648908734321594,
+        "normalized_position": 0.77635793994438,
+        "tertile": "end",
+        "chapter_index": 107,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Finn suspected the request had more to do with the cop who’d interviewed him after the tree fell into the diner.",
+        "max_topic_prob": 0.47772732377052307,
+        "normalized_position": 0.6807829056218537,
+        "tertile": "end",
+        "chapter_index": 85,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The park ranger told me a class had booked this area.” “",
+        "max_topic_prob": 0.47232764959335327,
+        "normalized_position": 0.3770901538353223,
+        "tertile": "middle",
+        "chapter_index": 42,
+        "sentence_index": 386
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.0011629597325192615,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0008857709750566894,
+        "n_sentences": 25
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.00291970802919708,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.0027752081406105457,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0035787321063394683,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.001055223355610271,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.0013916500994035786,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0007898894154818325,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.000135464643727987,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00010037137408411121,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.00017614937466971993,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00013109596224436288,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 49
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "10.3",
+    "taxonomy_main_name": "Mystery, Suspense & Investigation",
+    "taxonomy_secondary_id": "6.5",
+    "taxonomy_secondary_name": "Institutional Settings & Procedures",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

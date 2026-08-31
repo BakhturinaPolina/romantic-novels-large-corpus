@@ -1,0 +1,648 @@
+{
+  "topic_id": 51,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "vampire",
+        "vampires",
+        "vamp",
+        "vamps",
+        "vampyre",
+        "blood",
+        "wraith",
+        "humans",
+        "human",
+        "wraiths"
+      ],
+      "KeyBERT": [
+        "instincts",
+        "attracted",
+        "terrified",
+        "partners",
+        "creatures",
+        "feared",
+        "tasted",
+        "behavior",
+        "heal",
+        "suffering"
+      ],
+      "POS": [
+        "hundreds",
+        "creatures",
+        "feeding",
+        "dismay",
+        "increase",
+        "failure",
+        "weapons",
+        "activity",
+        "threats",
+        "unwilling"
+      ],
+      "MMR": [
+        "hundreds",
+        "creatures",
+        "feeding",
+        "visits",
+        "activity",
+        "threats",
+        "promising",
+        "wandered",
+        "chased",
+        "council"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ve kept me locked up—” “in the best room money can buy…” “i haven’t seen the outside world in two weeks—” “you’re a vampire,” he said, frowning a bit. “",
+      "they can turn me back into a vampire, and i’d binge until i’ve made up for every day i haven’t fed.",
+      "and you’ve never even considered being with a vampire?"
+    ],
+    "label_public": "Locked Up By A Vampire"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "This is a must read for any vampire fan. —",
+        "max_topic_prob": 0.730215311050415,
+        "normalized_position": 0.9826404751027866,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Of course there was a vampire story mixed in there and I love some vampire action.",
+        "max_topic_prob": 0.6439721584320068,
+        "normalized_position": 0.9725902238465053,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "A Bear on Books A neat twist on a vampire story here.",
+        "max_topic_prob": 0.5805752277374268,
+        "normalized_position": 0.9798994974874372,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "There is one short m/f scene where a woman is being sucked dry by a vampire during sex but its no big deal.",
+        "max_topic_prob": 0.5701428651809692,
+        "normalized_position": 0.9821836455002284,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Top2Bottom Reviews Reviews for THIRST say: Lisa Worrall has crafted a smart and interesting story of soul deep connection and love against a backdrop of vampires, retribution and loss.",
+        "max_topic_prob": 0.3624023199081421,
+        "normalized_position": 0.9764732754682504,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was, after all, a vampire. “",
+        "max_topic_prob": 0.8292896747589111,
+        "normalized_position": 0.37676609105180536,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "At least, I knew he or she probably wasn’t a vampire. “",
+        "max_topic_prob": 0.814210057258606,
+        "normalized_position": 0.2162480376766091,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I assume that’s not the case with vampires.”",
+        "max_topic_prob": 0.8060004711151123,
+        "normalized_position": 0.832221350078493,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was a vampire.",
+        "max_topic_prob": 0.8047683238983154,
+        "normalized_position": 0.1770015698587127,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He was a vampire.",
+        "max_topic_prob": 0.8047683238983154,
+        "normalized_position": 0.9148351648351648,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That’s quite something, coming from a vampire.”",
+        "max_topic_prob": 0.7904585599899292,
+        "normalized_position": 0.40835949764521196,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The vampire didn’t want to be a murderer, as I once suspected.",
+        "max_topic_prob": 0.7766425609588623,
+        "normalized_position": 0.38447814451382695,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "These kinds of things turn deadly in the vampire world,” she explained. “",
+        "max_topic_prob": 0.7657305002212524,
+        "normalized_position": 0.9194915254237288,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He lost it all when he became a vampire,” she explained. “",
+        "max_topic_prob": 0.7515721321105957,
+        "normalized_position": 0.37132024977698486,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "You and the vampire were born together.",
+        "max_topic_prob": 0.7486249208450317,
+        "normalized_position": 0.30575379125780555,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "My vampire was mean and rough.",
+        "max_topic_prob": 0.7463736534118652,
+        "normalized_position": 0.30374665477252455,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Well, I guess I do everything vampires do, and toss in seeing auras.” “",
+        "max_topic_prob": 0.7287718057632446,
+        "normalized_position": 0.941793041926851,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "There was a vampire close.",
+        "max_topic_prob": 0.8564016819000244,
+        "normalized_position": 0.9154602951510893,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He had to be a vampire.",
+        "max_topic_prob": 0.7879995703697205,
+        "normalized_position": 0.49226985242445537,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Why do you have to go back to hunting vampires?”",
+        "max_topic_prob": 0.7728484869003296,
+        "normalized_position": 0.7735066760365426,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 467
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Do you think there’s a vampire traveling with them?” “",
+        "max_topic_prob": 0.7694710493087769,
+        "normalized_position": 0.236964160224877,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 557
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "She had seen vampires up close.",
+        "max_topic_prob": 0.757182240486145,
+        "normalized_position": 0.18896697118763175,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 584
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "A vampire.",
+        "max_topic_prob": 0.7555606961250305,
+        "normalized_position": 0.2382290934645116,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 575
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "You’re a necromancer, Harry.”",
+        "max_topic_prob": 0.4820379614830017,
+        "normalized_position": 0.3811710677382319,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Everyone knew ghost hunters needed flashlights! “",
+        "max_topic_prob": 0.4497881531715393,
+        "normalized_position": 0.5905089934940682,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "It was a ghost,” Jon stated, after what felt like an epoch had passed. “",
+        "max_topic_prob": 0.3937475085258484,
+        "normalized_position": 0.33601224646000766,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Some ghosts are not rational,” Jon answered.",
+        "max_topic_prob": 0.36556893587112427,
+        "normalized_position": 0.4362801377726751,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Then Fiera and Bella.",
+        "max_topic_prob": 0.46254944801330566,
+        "normalized_position": 0.6352515985543509,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 126
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Be dark, brooding, and mysterious.",
+        "max_topic_prob": 0.41322389245033264,
+        "normalized_position": 0.007228245760355852,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The books focus on Gin Blanco, an assassin codenamed the Spider who can control the elements of Ice and Stone.",
+        "max_topic_prob": 0.3900895118713379,
+        "normalized_position": 0.9958298582151793,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Fandemic Piper Perez has always wanted to be a superhero.",
+        "max_topic_prob": 0.319990336894989,
+        "normalized_position": 0.0022240756185710315,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "They probably didn’t realize shifters could hear better than humans and that Aeron and Cerris were werewolves.",
+        "max_topic_prob": 0.4247024655342102,
+        "normalized_position": 0.5856770833333333,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 409
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "They were killed by shifters.",
+        "max_topic_prob": 0.40662094950675964,
+        "normalized_position": 0.8234375,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "They weren’t monsters—far from it.",
+        "max_topic_prob": 0.40540269017219543,
+        "normalized_position": 0.058333333333333334,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I hadn’t known about shifters before it happened, and I thought they were all like that, that they were killers.",
+        "max_topic_prob": 0.4008257985115051,
+        "normalized_position": 0.8260416666666667,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Shifters weren’t monsters, not all of them.",
+        "max_topic_prob": 0.37430885434150696,
+        "normalized_position": 0.24557291666666667,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 306
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "The vampire knew he was here?",
+        "max_topic_prob": 0.795731246471405,
+        "normalized_position": 0.0017407605784681307,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "What had the vampire done to him?",
+        "max_topic_prob": 0.7695788145065308,
+        "normalized_position": 0.44643813604713445,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "How did you know if another supernatural was under the glamour of a vampire?",
+        "max_topic_prob": 0.7524245381355286,
+        "normalized_position": 0.44161756829137655,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "He wasn’t with any vampire though,” he added. “",
+        "max_topic_prob": 0.7511560916900635,
+        "normalized_position": 0.38618103910016066,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Why didn’t you do your job and retrieve the vampire?” “",
+        "max_topic_prob": 0.7503637075424194,
+        "normalized_position": 0.4688002142474558,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "You don’t have a problem with a vampire taking you?”",
+        "max_topic_prob": 0.7410077452659607,
+        "normalized_position": 0.2095607927155865,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 149
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.012495587716201906,
+        "n_sentences": 177
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0013089005235602095,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.01411922904527118,
+        "n_sentences": 63
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.026014287639843644,
+        "n_sentences": 193
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.03122513922036595,
+        "n_sentences": 157
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0011220196353436186,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0015390534821085034,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0011552680221811461,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 42
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "10.1",
+    "taxonomy_secondary_name": "Paranormal & Immortal Beings",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

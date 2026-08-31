@@ -1,0 +1,909 @@
+{
+  "topic_id": 113,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sword",
+        "knife",
+        "blade",
+        "dagger",
+        "hilt",
+        "knives",
+        "swords",
+        "its",
+        "hand",
+        "sheathed"
+      ],
+      "KeyBERT": [
+        "weapons",
+        "wound",
+        "pinned",
+        "glint",
+        "plucked",
+        "attacked",
+        "snapping",
+        "swiped",
+        "flicked",
+        "edged"
+      ],
+      "POS": [
+        "sized",
+        "weapons",
+        "sweeping",
+        "blows",
+        "ribs",
+        "reflection",
+        "thigh"
+      ],
+      "MMR": [
+        "weapons",
+        "sweeping",
+        "dangerously",
+        "sticking",
+        "plucked",
+        "hauled",
+        "squinted",
+        "neatly",
+        "tumbled",
+        "snapping"
+      ]
+    },
+    "stage08_snippets": [
+      "the server’s arrival with the food lightened the mood, and with a magician’s flair he whipped out a pocket-sized flashlight along with a steak knife and handed the knife to mateo. “",
+      "if you distract him, i’ll grab those knives and kill him.”",
+      "draw your face, then i’ll show you how to use the knife.”"
+    ],
+    "label_public": "Knife Handed Over For Combat"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His hand slid down to the satisfying hilt of his knife.",
+        "max_topic_prob": 0.7896620035171509,
+        "normalized_position": 0.03113275325297358,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "His hand actually crept toward the knife at his belt. “",
+        "max_topic_prob": 0.7785311341285706,
+        "normalized_position": 0.3822942444320268,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Javier touched the knife in his scabbard. “",
+        "max_topic_prob": 0.7764865756034851,
+        "normalized_position": 0.8471301987706554,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 319
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The blade buried to the hilt in the man’s throat.",
+        "max_topic_prob": 0.7418749332427979,
+        "normalized_position": 0.07799153827732098,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Her tight sheath clamped down around him like a vise.",
+        "max_topic_prob": 0.6737271547317505,
+        "normalized_position": 0.8078550331284425,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 457
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Javier pulled his knife from his boot and began sharpening it.",
+        "max_topic_prob": 0.6712445616722107,
+        "normalized_position": 0.9055639817993135,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 424
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He reached for the bowie knife next. “",
+        "max_topic_prob": 0.6990684866905212,
+        "normalized_position": 0.08165225744476465,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Why was she out there armed to the hilt and so close to the Compound?” “",
+        "max_topic_prob": 0.652621328830719,
+        "normalized_position": 0.15638808837656099,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 314
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Visibly paled, the man grabbed the hilt, but the lance wouldn’t budge.",
+        "max_topic_prob": 0.6470601558685303,
+        "normalized_position": 0.6666666666666666,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lily pushed the lance out from her body, its bladed edge pointed right at Parr. “",
+        "max_topic_prob": 0.646216869354248,
+        "normalized_position": 0.6814601344860711,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 429
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "A crossbow was slung low across her back, as well, and a silver-plated bowie knife and sharpened stakes were tucked firmly into her boot.",
+        "max_topic_prob": 0.6202307939529419,
+        "normalized_position": 0.03707973102785783,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Smiling coldly, she quickly swept its blade within inches of Parr’s men in a deft downward pass.",
+        "max_topic_prob": 0.6166555881500244,
+        "normalized_position": 0.6822286263208454,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 433
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "He was tempted to throw it against the wall and watch it shatter into tiny fragments.",
+        "max_topic_prob": 0.4512348175048828,
+        "normalized_position": 0.3822608695652174,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She pulled down the collar of her shirt so he could see the faint scar where the knife had bit into her skin. “",
+        "max_topic_prob": 0.7145823240280151,
+        "normalized_position": 0.10984540276647681,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His smile froze in place as Declan put a knife in his back, slipping up between the ribs to pierce his black heart. “",
+        "max_topic_prob": 0.6754939556121826,
+        "normalized_position": 0.9045294277190128,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He swiped the blade quickly across his throat and moved out of the way before the spray of blood reached him.",
+        "max_topic_prob": 0.6745908260345459,
+        "normalized_position": 0.25413615405478707,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Dec brought the knife to the man’s throat, nicking it just enough for the coppery scent of blood to fill the air. “",
+        "max_topic_prob": 0.6556954383850098,
+        "normalized_position": 0.24898291293734745,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "You forgot one thing, brother,” Kane spat, the knife cutting into the skin of Declan’s neck. “",
+        "max_topic_prob": 0.6550647020339966,
+        "normalized_position": 0.9034445348521833,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "The knife gleamed once in the fading sunlight just before it was knocked out of her hand and across the room.",
+        "max_topic_prob": 0.6387895345687866,
+        "normalized_position": 0.9867100623813398,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "She felt each word as if they were knives thrust into her gut.",
+        "max_topic_prob": 0.5811563730239868,
+        "normalized_position": 0.28206356812010863,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He pulled a rapier from its sheath. “",
+        "max_topic_prob": 0.7389099597930908,
+        "normalized_position": 0.07650155796712152,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 382
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nicholas brought out a dagger he had hidden in his belt. “",
+        "max_topic_prob": 0.6593674421310425,
+        "normalized_position": 0.9448801977006555,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Within seconds, the dagger hit its destination.",
+        "max_topic_prob": 0.6580913066864014,
+        "normalized_position": 0.97002256366176,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "The blade turned in both their grasps to an unknown direction.",
+        "max_topic_prob": 0.6566840410232544,
+        "normalized_position": 0.9697002256366176,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Nicholas strode toward Fara and held up the dagger, threatening her with its blade. “",
+        "max_topic_prob": 0.6442025303840637,
+        "normalized_position": 0.9517567422370259,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Besides, it was a mere surface wound from a dagger.",
+        "max_topic_prob": 0.6409815549850464,
+        "normalized_position": 0.976576770172988,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 394
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The man pulled it from its sheath. “",
+        "max_topic_prob": 0.7572006583213806,
+        "normalized_position": 0.4502491207502931,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 605
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He picked up the sword and slid it from its scabbard.",
+        "max_topic_prob": 0.748336911201477,
+        "normalized_position": 0.2617966002344666,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He lifted his hand nearer the sword hilt.",
+        "max_topic_prob": 0.7235954999923706,
+        "normalized_position": 0.7752051582649473,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 257
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "He sheathed the sword and picked up his coat from the headstone. “",
+        "max_topic_prob": 0.7044357061386108,
+        "normalized_position": 0.2631154747948417,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 268
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Alec raised his sword. “",
+        "max_topic_prob": 0.70229172706604,
+        "normalized_position": 0.05128956623681125,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Reaching the bench, he stretched out his hand for his sword.",
+        "max_topic_prob": 0.6933205127716064,
+        "normalized_position": 0.20471864009378662,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 366
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Though I was getting sick of the daggers she was shooting at me whenever Daniel and I were touching. “",
+        "max_topic_prob": 0.5938326120376587,
+        "normalized_position": 0.7567384014601638,
+        "tertile": "end",
+        "chapter_index": 110,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Knowing that he’ll soon have me unable to think straight, I reach my arm behind me and find his weapon of mass impregnation (Hey!",
+        "max_topic_prob": 0.49241605401039124,
+        "normalized_position": 0.7468907848380661,
+        "tertile": "end",
+        "chapter_index": 105,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Checking that Zander has my back, I draw my weapon from the belt at my hip.",
+        "max_topic_prob": 0.451871782541275,
+        "normalized_position": 0.49959675707797446,
+        "tertile": "middle",
+        "chapter_index": 68,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Thor’s hammer would do more damage,” I add. “",
+        "max_topic_prob": 0.42731791734695435,
+        "normalized_position": 0.7806358504180992,
+        "tertile": "end",
+        "chapter_index": 113,
+        "sentence_index": 148
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "The technician moves the wand over Mac’s stomach and all four heads in the room are suddenly riveted on the screen in front of us.",
+        "max_topic_prob": 0.3841548562049866,
+        "normalized_position": 0.3740820917695997,
+        "tertile": "middle",
+        "chapter_index": 49,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I gripped the knife harder. “",
+        "max_topic_prob": 0.6884066462516785,
+        "normalized_position": 0.6665292662819456,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Wincing, I reached for the sword, wrapping my fingers around the cold steel.",
+        "max_topic_prob": 0.6842514872550964,
+        "normalized_position": 0.6187139323990107,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 231
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I stepped into the sword.",
+        "max_topic_prob": 0.6760236620903015,
+        "normalized_position": 0.5858752404506733,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The weight was lifted from my stomach and Dex was standing over me, the sword in his hand.",
+        "max_topic_prob": 0.657884955406189,
+        "normalized_position": 0.7291838417147568,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Then I turned the sword around and aimed it at the hollow of my throat.",
+        "max_topic_prob": 0.6546189785003662,
+        "normalized_position": 0.5776312173674086,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Before he could make another move, I leaped to the wall and grabbed the sword off of the molding.",
+        "max_topic_prob": 0.6509689092636108,
+        "normalized_position": 0.5762572135201979,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 189
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He grabbed an electric razor from his tools on the counter. “",
+        "max_topic_prob": 0.5585553646087646,
+        "normalized_position": 0.21984658070834012,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "She ripped out a patch of grass and ripped the blades to shreds, throwing them in the air like confetti.",
+        "max_topic_prob": 0.5348259210586548,
+        "normalized_position": 0.521788803655949,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Remember…she sliced her wrists open with a steak knife.",
+        "max_topic_prob": 0.5499020218849182,
+        "normalized_position": 0.42789553368660105,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He has a knife.”",
+        "max_topic_prob": 0.7245093584060669,
+        "normalized_position": 0.8209757145927359,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He pivoted the knife before her eyes once again to show her the blood suspended on the blade.",
+        "max_topic_prob": 0.7232691049575806,
+        "normalized_position": 0.7945411562432839,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "he growled as he nicked her collar bone with the knife.",
+        "max_topic_prob": 0.6996736526489258,
+        "normalized_position": 0.8016333548248442,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She said something about a knife.",
+        "max_topic_prob": 0.6992412209510803,
+        "normalized_position": 0.822909950569525,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But see,” He passed the blade before her eyes again. “",
+        "max_topic_prob": 0.6892326474189758,
+        "normalized_position": 0.7941113260262196,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He waved the knife again.",
+        "max_topic_prob": 0.6871209144592285,
+        "normalized_position": 0.799699118848055,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He picked up his knife, obviously feeling the weight of both looking expectantly at him. “",
+        "max_topic_prob": 0.6623445749282837,
+        "normalized_position": 0.8634611022907689,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "So he picked up his imaginary sword in one hand and Valentino’s hand in the other, and began his quest for peace.",
+        "max_topic_prob": 0.5853331089019775,
+        "normalized_position": 0.8448627806758903,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 251
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "The clothes were his shield and his words the sword.",
+        "max_topic_prob": 0.5724890232086182,
+        "normalized_position": 0.2049595524306343,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It was one of the most vicious knife attacks ever to take place in the area.",
+        "max_topic_prob": 0.4968283176422119,
+        "normalized_position": 0.47077946624329026,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Blue performed some sort of dolphin style squirming, trying to wriggle out of Kellan’s grip, but it was no use, the guy had iron for bones.",
+        "max_topic_prob": 0.4212372601032257,
+        "normalized_position": 0.5872079836697663,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "She found a gorgeous sheath that was perfect for her.",
+        "max_topic_prob": 0.6087708473205566,
+        "normalized_position": 0.9595405629139073,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "He might as well have sliced me open with a knife.",
+        "max_topic_prob": 0.5275346636772156,
+        "normalized_position": 0.9034561258278145,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Or a saw.” “",
+        "max_topic_prob": 0.4083070158958435,
+        "normalized_position": 0.09147350993377483,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I drew my blade and as she moved toward me again I spun around.",
+        "max_topic_prob": 0.6041868925094604,
+        "normalized_position": 0.5168343653250774,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 387
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My knife stuck upward in her throat cutting into her lower brain.",
+        "max_topic_prob": 0.5762057304382324,
+        "normalized_position": 0.5169311145510835,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She stabbed at the table top with one minuscule pointed finger.",
+        "max_topic_prob": 0.5758020281791687,
+        "normalized_position": 0.15344427244582043,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Metal clinked as his arms clanked to the floor, a metallic glint catching my eye from where there should be bone.",
+        "max_topic_prob": 0.5606206655502319,
+        "normalized_position": 0.13196594427244582,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He saw that, aroused to anger, could squash a man, the sharp horns and teeth and talons that could thrust into a man like a lance.",
+        "max_topic_prob": 0.5572617053985596,
+        "normalized_position": 0.9583010835913313,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 198
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I tried not to stare or to show the horror in my eyes as he drew a gigantic syringe, the sound of it upon his coat pocket a whisper as the metallic scraping started up again rhythmically to be followed by the click of the cane.",
+        "max_topic_prob": 0.536586582660675,
+        "normalized_position": 0.12480650154798761,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 119
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0025951557093425604,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0026495383380168605,
+        "n_sentences": 33
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.004625850340136055,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0021394534668870953,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.002269779507133593,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.006970708194289952,
+        "n_sentences": 94
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.002633767673967286,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0028935185185185184,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00037996808268105477,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0002133925141906022,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00031220730565095225,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00019047619047619048,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00032954358213873783,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00016129032258064516,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00017442874585731728,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 66
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "10.4",
+    "taxonomy_secondary_name": "Action & Weaponized Conflict",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

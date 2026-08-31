@@ -1,0 +1,1066 @@
+{
+  "topic_id": 87,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "kill",
+        "killed",
+        "dead",
+        "die",
+        "killing",
+        "alive",
+        "died",
+        "you",
+        "murder",
+        "going"
+      ],
+      "KeyBERT": [
+        "sentence",
+        "promises",
+        "admit",
+        "violently",
+        "repeat",
+        "commander",
+        "attempt",
+        "weapons",
+        "survived",
+        "handled"
+      ],
+      "POS": [
+        "commander",
+        "percent",
+        "creatures",
+        "period",
+        "promises",
+        "weapons",
+        "sentence",
+        "issue",
+        "ye",
+        "wound"
+      ],
+      "MMR": [
+        "survived",
+        "commander",
+        "witnessed",
+        "handled",
+        "weapons",
+        "attacked",
+        "intend",
+        "sentence",
+        "wound",
+        "problems"
+      ]
+    },
+    "stage08_snippets": [
+      "you’ll have to kill me first.” “",
+      "perhaps i’ll kill him right now.”",
+      "if i go and later learn you’ve gone behind my back and done exactly what i’m about to warn you not to do, i’ll kill you in a slow, unmerciful, and painful way.”"
+    ],
+    "label_public": "Threatening Death As A Warning"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "To slay whatever needs to be slayed.",
+        "max_topic_prob": 0.38236305117607117,
+        "normalized_position": 0.551357733175915,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "If we die, I’m going to kill you.”",
+        "max_topic_prob": 0.7670310139656067,
+        "normalized_position": 0.7225691347011597,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You know you can’t kill him.”",
+        "max_topic_prob": 0.7397844791412354,
+        "normalized_position": 0.775735950044603,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 400
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You killed her.”",
+        "max_topic_prob": 0.7179319858551025,
+        "normalized_position": 0.5588760035682426,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She’s going to kill me.”",
+        "max_topic_prob": 0.704562246799469,
+        "normalized_position": 0.5474576271186441,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Could you kill him should that become necessary?”",
+        "max_topic_prob": 0.6928666830062866,
+        "normalized_position": 0.3967885816235504,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "You’re going to kill her.”",
+        "max_topic_prob": 0.674663782119751,
+        "normalized_position": 0.8979482604817127,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "Then he was going to kill the three of you together.",
+        "max_topic_prob": 0.6615363359451294,
+        "normalized_position": 0.9091264412741841,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I killed her.",
+        "max_topic_prob": 0.6511003971099854,
+        "normalized_position": 0.8610513973031073,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "You’ll make my death quick?",
+        "max_topic_prob": 0.6355260610580444,
+        "normalized_position": 0.9652139925737737,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I should kill you for what you’ve done to them.",
+        "max_topic_prob": 0.6348493099212646,
+        "normalized_position": 0.24408833300762164,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "I can’t let him die.",
+        "max_topic_prob": 0.6256670951843262,
+        "normalized_position": 0.8473715067422318,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "sentence": "You came here to kill me, didn’t you?",
+        "max_topic_prob": 0.6230837106704712,
+        "normalized_position": 0.25249169435215946,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I want to kill.” “",
+        "max_topic_prob": 0.7407814264297485,
+        "normalized_position": 0.9315781645098914,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I don’t like killing.”",
+        "max_topic_prob": 0.6672393083572388,
+        "normalized_position": 0.7377658783281273,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 608
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Those men could have killed you.” “",
+        "max_topic_prob": 0.6669409275054932,
+        "normalized_position": 0.7346422727948833,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 587
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I’m not dead anymore.”",
+        "max_topic_prob": 0.6449915766716003,
+        "normalized_position": 0.9354454856462888,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He tried to kill us all.” “",
+        "max_topic_prob": 0.641835629940033,
+        "normalized_position": 0.4840101145322029,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 671
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "He saved my life and died because of it.”",
+        "max_topic_prob": 0.6313055753707886,
+        "normalized_position": 0.10397144132083891,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 333
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I hope you killed him.” “",
+        "max_topic_prob": 0.8113536834716797,
+        "normalized_position": 0.5180591025173295,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I killed him.”",
+        "max_topic_prob": 0.8043683767318726,
+        "normalized_position": 0.5073574121366897,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "So that I could kill him now for all he has done to you.”",
+        "max_topic_prob": 0.6916567087173462,
+        "normalized_position": 0.18156390611698894,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Y-y-you k-killed him.” “",
+        "max_topic_prob": 0.6890161037445068,
+        "normalized_position": 0.4951964003405083,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’ll kill anyone who tries.”",
+        "max_topic_prob": 0.6740027666091919,
+        "normalized_position": 0.5704730633588715,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 116
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Did he mean to kill us all?”",
+        "max_topic_prob": 0.630736231803894,
+        "normalized_position": 0.3110786817463213,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Kill you?” “",
+        "max_topic_prob": 0.7718374729156494,
+        "normalized_position": 0.13126224461237054,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Are you trying to kill me?” “",
+        "max_topic_prob": 0.7247860431671143,
+        "normalized_position": 0.13112230618527848,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "If he’s laid one hand on Rebecca, I’ll kill him.”",
+        "max_topic_prob": 0.5675129890441895,
+        "normalized_position": 0.4920235096557515,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I thought you said your husband was dead.” “",
+        "max_topic_prob": 0.5603717565536499,
+        "normalized_position": 0.6006157290792051,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Sure you do or you wouldn’t have skedaddled out of town after I cut you.” “",
+        "max_topic_prob": 0.5007451772689819,
+        "normalized_position": 0.75706689056815,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "What’s your poison?” “",
+        "max_topic_prob": 0.48112407326698303,
+        "normalized_position": 0.49608172404142176,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 398
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I wanted to kill him.",
+        "max_topic_prob": 0.7440996170043945,
+        "normalized_position": 0.9120171673819742,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You killed them.”",
+        "max_topic_prob": 0.7098431587219238,
+        "normalized_position": 0.9443848354792561,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You killed them!”",
+        "max_topic_prob": 0.6709702014923096,
+        "normalized_position": 0.9452789699570815,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Whoever killed them took my life too.",
+        "max_topic_prob": 0.6290972232818604,
+        "normalized_position": 0.9150572246065808,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He… he uhh, died.”",
+        "max_topic_prob": 0.6053692698478699,
+        "normalized_position": 0.5112660944206009,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "They are all dead because of what I did.”",
+        "max_topic_prob": 0.5969759225845337,
+        "normalized_position": 0.28469241773962806,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Of course, I could fire him.",
+        "max_topic_prob": 0.44258812069892883,
+        "normalized_position": 0.978626105974749,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 407
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Dat dying.",
+        "max_topic_prob": 0.40551167726516724,
+        "normalized_position": 0.6563276667660801,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 378
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I understand why he said you saved him.”",
+        "max_topic_prob": 0.5470399856567383,
+        "normalized_position": 0.49489291598023066,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "This guy could be a serial killer.”",
+        "max_topic_prob": 0.5406336784362793,
+        "normalized_position": 0.4228995057660626,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 434
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Cause of death?",
+        "max_topic_prob": 0.4555703401565552,
+        "normalized_position": 0.004118616144975288,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Getting hit by a car was no picnic but I’m not dying.",
+        "max_topic_prob": 0.4388962984085083,
+        "normalized_position": 0.9225700164744646,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Then why not kill me?” “",
+        "max_topic_prob": 0.7534503936767578,
+        "normalized_position": 0.636296623912723,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "You could have been killed.” “",
+        "max_topic_prob": 0.7074836492538452,
+        "normalized_position": 0.6719740527790063,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "I’ll kill you!”",
+        "max_topic_prob": 0.6882328987121582,
+        "normalized_position": 0.19445673006044523,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "They’ll kill you.” “",
+        "max_topic_prob": 0.6790299415588379,
+        "normalized_position": 0.27790063393778563,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 382
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "Did you…kill my people?” “",
+        "max_topic_prob": 0.6492088437080383,
+        "normalized_position": 0.32714138286893707,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "sentence": "What I killed was not a man.” “",
+        "max_topic_prob": 0.6420317888259888,
+        "normalized_position": 0.3508771929824561,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 466
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Um, I could’ve killed you.” “",
+        "max_topic_prob": 0.7564897537231445,
+        "normalized_position": 0.8617328906501017,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You were supposed to kill him.",
+        "max_topic_prob": 0.7523771524429321,
+        "normalized_position": 0.995608867944736,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I didn’t want to kill, but if I didn’t, I’d be dead.",
+        "max_topic_prob": 0.7428386807441711,
+        "normalized_position": 0.1939595159044661,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Kill me.”",
+        "max_topic_prob": 0.7102348804473877,
+        "normalized_position": 0.8994323658562707,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Which is the only reason I’m not going to kill you.”",
+        "max_topic_prob": 0.7071990966796875,
+        "normalized_position": 0.7938309949662633,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I didn’t want to kill him or wound him mortally, I just wanted to get away.",
+        "max_topic_prob": 0.6984061002731323,
+        "normalized_position": 0.26325372175216877,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I didn’t kill them.” “",
+        "max_topic_prob": 0.715214192867279,
+        "normalized_position": 0.6585690856908569,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I almost died.” “",
+        "max_topic_prob": 0.6743788719177246,
+        "normalized_position": 0.8782287822878229,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 158
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Is that why you killed them?” “",
+        "max_topic_prob": 0.6660213470458984,
+        "normalized_position": 0.6583640836408364,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I didn’t expect him to die so soon.”",
+        "max_topic_prob": 0.6502022743225098,
+        "normalized_position": 0.7555350553505535,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I’d have died.” “",
+        "max_topic_prob": 0.6484165787696838,
+        "normalized_position": 0.7084870848708487,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Please don’t tell me he’s dead.”",
+        "max_topic_prob": 0.6243295669555664,
+        "normalized_position": 0.732369823698237,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "You’re killing me here.” “",
+        "max_topic_prob": 0.5852888822555542,
+        "normalized_position": 0.3602470265324794,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "I don’t have the killer instinct.”",
+        "max_topic_prob": 0.5742164254188538,
+        "normalized_position": 0.8010064043915828,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Hey, don’t kill the messenger.",
+        "max_topic_prob": 0.45323866605758667,
+        "normalized_position": 0.006175663311985362,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "If I don’t kill him and he doesn’t set the damned ship on fire first,” Braden muttered.",
+        "max_topic_prob": 0.572296679019928,
+        "normalized_position": 0.6130268199233716,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 594
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’m pretty sure they’re already dead.”",
+        "max_topic_prob": 0.5592989921569824,
+        "normalized_position": 0.13581367211131276,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I was dead last night.",
+        "max_topic_prob": 0.5205129384994507,
+        "normalized_position": 0.3789070377092156,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 315
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Dead to the world.” “",
+        "max_topic_prob": 0.5142420530319214,
+        "normalized_position": 0.16011292599314378,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 616
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "But Master would kill me if I did anything to fuck up this evening.”",
+        "max_topic_prob": 0.5098441243171692,
+        "normalized_position": 0.9379915305505142,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’d… God, I’d stopped living.”",
+        "max_topic_prob": 0.47751063108444214,
+        "normalized_position": 0.3989715668481549,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 514
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I will kill him.”",
+        "max_topic_prob": 0.7716566324234009,
+        "normalized_position": 0.5527087316762269,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I could kill you.”",
+        "max_topic_prob": 0.7610451579093933,
+        "normalized_position": 0.8150414276609306,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Let me die here.”",
+        "max_topic_prob": 0.6671947240829468,
+        "normalized_position": 0.015041427660930529,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I want to kill him for having broken Daphne’s heart and for having known her body and… The buzz of whispers ricocheted about the club, dimly penetrating his fury.",
+        "max_topic_prob": 0.5676470994949341,
+        "normalized_position": 0.8151688973868706,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Given he is dead, I’m afraid I’ll not have the luxury of inquiring.”",
+        "max_topic_prob": 0.5664641857147217,
+        "normalized_position": 0.11293817718291906,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "You’re going to kill the man, Montfort,” Lord Guilford’s cool tones cut across the momentary haze of madness.",
+        "max_topic_prob": 0.5009630918502808,
+        "normalized_position": 0.817208413001912,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "That sangria was lethal.",
+        "max_topic_prob": 0.48521944880485535,
+        "normalized_position": 0.10796154794182894,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Instead, he signed up to head into the field and ended up being the target of a twelve-year-old suicide bomber.”",
+        "max_topic_prob": 0.44186991453170776,
+        "normalized_position": 0.6008134089228494,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 486
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Suicide is completely illogical.",
+        "max_topic_prob": 0.4352894127368927,
+        "normalized_position": 0.6978062607838305,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’ll live.",
+        "max_topic_prob": 0.39740505814552307,
+        "normalized_position": 0.8049051022923343,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 248
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.01351205275105394,
+        "n_sentences": 125
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.005768884081485488,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.00785951123664497,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_A",
+        "share": 0.00745975657636435,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_B",
+        "share": 0.007562277580071174,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.007786762503743636,
+        "n_sentences": 52
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.006308169596690796,
+        "n_sentences": 61
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.006554138983659544,
+        "n_sentences": 73
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0004951107810372571,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00020147073637554144,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.000691085003455425,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0010325245224574084,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0006621420294653203,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0011280315848843769,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0006075949367088608,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.000169061707523246,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 80
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.88,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

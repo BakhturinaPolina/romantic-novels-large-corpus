@@ -1,0 +1,790 @@
+{
+  "topic_id": 68,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "sutton",
+        "voice",
+        "said",
+        "had",
+        "nodded",
+        "prim",
+        "role",
+        "corlis",
+        "richot"
+      ],
+      "KeyBERT": [
+        "poised",
+        "invitation",
+        "emotionally",
+        "thrilled",
+        "kindly",
+        "speaking",
+        "solemnly",
+        "uncertain",
+        "ought",
+        "strangled"
+      ],
+      "POS": [
+        "extent",
+        "poised",
+        "threats",
+        "promising",
+        "areas",
+        "success",
+        "welcoming",
+        "partners",
+        "irritation",
+        "uncertain"
+      ],
+      "MMR": [
+        "kindly",
+        "extent",
+        "poised",
+        "harshly",
+        "solemnly",
+        "threats",
+        "strangled",
+        "squinted",
+        "emotionally",
+        "bothering"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll ask him about it,” [person] said, an edge of roughness to his voice, “and set him and the others straight.",
+      "we’ll have to ask [person] dubose to endorse it.” “",
+      "i'll have jack get on it.” “"
+    ],
+    "label_public": "Promising to Set Things Straight"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jack said. “",
+        "max_topic_prob": 0.8549697399139404,
+        "normalized_position": 0.64583535814948,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He needed to talk to Jack.",
+        "max_topic_prob": 0.8359625339508057,
+        "normalized_position": 0.6798522694139372,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 436
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What about Jack?” “",
+        "max_topic_prob": 0.8252757787704468,
+        "normalized_position": 0.23520264359996113,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jack was talking again. “",
+        "max_topic_prob": 0.8134260177612305,
+        "normalized_position": 0.5395082126542909,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 410
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jack.”",
+        "max_topic_prob": 0.8041977882385254,
+        "normalized_position": 0.11361648362328701,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Jack asked. “",
+        "max_topic_prob": 0.802104115486145,
+        "normalized_position": 0.6241617261152688,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How do you want to proceed with Jack?",
+        "max_topic_prob": 0.7711541652679443,
+        "normalized_position": 0.5701313044545343,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "It was Jack,” I stammered. “",
+        "max_topic_prob": 0.7474844455718994,
+        "normalized_position": 0.5583507178794944,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "He planted me right in front of Jack’s face. “",
+        "max_topic_prob": 0.7260125279426575,
+        "normalized_position": 0.5601914345318444,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jack!",
+        "max_topic_prob": 0.7083325386047363,
+        "normalized_position": 0.5573690023315744,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "No, Jack.",
+        "max_topic_prob": 0.6929937601089478,
+        "normalized_position": 0.5415388391213646,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Jack seemed to enjoy it, but I was bored.",
+        "max_topic_prob": 0.6878476738929749,
+        "normalized_position": 0.5491471346177446,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Um, Jack?”",
+        "max_topic_prob": 0.7930822968482971,
+        "normalized_position": 0.7675312199807877,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Jack?",
+        "max_topic_prob": 0.7584531307220459,
+        "normalized_position": 0.7162343900096062,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 610
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Jack raised one eyebrow.",
+        "max_topic_prob": 0.7237837314605713,
+        "normalized_position": 0.7782901056676272,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 110
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Jack shot her a look. “",
+        "max_topic_prob": 0.7174843549728394,
+        "normalized_position": 0.8121037463976946,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Jack certainly likes the ladies, huh?”",
+        "max_topic_prob": 0.7062065005302429,
+        "normalized_position": 0.5146974063400577,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 388
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "You’re sending Jack with me?",
+        "max_topic_prob": 0.6843952536582947,
+        "normalized_position": 0.7164265129682997,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 611
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Johnny thought this place could do with cosying up,’ Lena says with a knowing look at Barney.",
+        "max_topic_prob": 0.4211081266403198,
+        "normalized_position": 0.4761072703790929,
+        "tertile": "middle",
+        "chapter_index": 37,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack wanted to know.",
+        "max_topic_prob": 0.8679864406585693,
+        "normalized_position": 0.21309248947439902,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack said. ‘",
+        "max_topic_prob": 0.8612418174743652,
+        "normalized_position": 0.5399972837158766,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack said. ‘",
+        "max_topic_prob": 0.8612418174743652,
+        "normalized_position": 0.5431210104576939,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack asked. ‘",
+        "max_topic_prob": 0.8177363872528076,
+        "normalized_position": 0.5410837973652044,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack said tactfully. ‘",
+        "max_topic_prob": 0.7835231423377991,
+        "normalized_position": 0.5416270541898682,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Jack suggested. ‘",
+        "max_topic_prob": 0.7745429873466492,
+        "normalized_position": 0.5379600706233872,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "One might say a ruthless scoundrel, a notorious libertine, a horrible jackanapes.” “",
+        "max_topic_prob": 0.3415430784225464,
+        "normalized_position": 0.12417218543046357,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Jack?",
+        "max_topic_prob": 0.7584530115127563,
+        "normalized_position": 0.4315245478036176,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You said that Jack had done well earlier.",
+        "max_topic_prob": 0.7072205543518066,
+        "normalized_position": 0.4813248766737139,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "It’s very clever of Jack if you think about it.",
+        "max_topic_prob": 0.6996301412582397,
+        "normalized_position": 0.7484143763213531,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "I’m not staying over with Jack.",
+        "max_topic_prob": 0.6872748136520386,
+        "normalized_position": 0.6941508104298802,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Oh,” Todd looked at her in surprise for the second time that night, “are you and Jack together then?”",
+        "max_topic_prob": 0.6700537800788879,
+        "normalized_position": 0.6929762743716232,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "You think that…Jack and I?”",
+        "max_topic_prob": 0.6696110367774963,
+        "normalized_position": 0.6936809960065774,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Branco was supposed to be in charge of this adventure to rescue Jenkins’ little wriggly girlfriend, but his head no longer functioned correctly.",
+        "max_topic_prob": 0.5017490983009338,
+        "normalized_position": 0.45563734986439364,
+        "tertile": "middle",
+        "chapter_index": 68,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "asked Branco. “",
+        "max_topic_prob": 0.4849497079849243,
+        "normalized_position": 0.5844633862843859,
+        "tertile": "middle",
+        "chapter_index": 84,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "asked Branco. “",
+        "max_topic_prob": 0.4849497079849243,
+        "normalized_position": 0.6329910887253003,
+        "tertile": "middle",
+        "chapter_index": 90,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Branco looked up at Jenkins from his comm station. “",
+        "max_topic_prob": 0.48209500312805176,
+        "normalized_position": 0.6070321580782643,
+        "tertile": "middle",
+        "chapter_index": 88,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "said Branco. “",
+        "max_topic_prob": 0.4817250370979309,
+        "normalized_position": 0.41040294459511817,
+        "tertile": "middle",
+        "chapter_index": 65,
+        "sentence_index": 13
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Branco suggested. “",
+        "max_topic_prob": 0.4724443852901459,
+        "normalized_position": 0.5864974815962805,
+        "tertile": "middle",
+        "chapter_index": 85,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Will, it’s Bran,” the other man was saying. “",
+        "max_topic_prob": 0.521963357925415,
+        "normalized_position": 0.4992229527794381,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 2046
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "So I’m basically like Jill – of Jack and Jill fame – on crack.” “",
+        "max_topic_prob": 0.5162702798843384,
+        "normalized_position": 0.669575612671847,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 1206
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Let me call Josie,” Branson said. “",
+        "max_topic_prob": 0.49168479442596436,
+        "normalized_position": 0.5043634190077705,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 2089
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Rainey popped up like an eager jack-in-the-box, ears practically flapping. “",
+        "max_topic_prob": 0.48638907074928284,
+        "normalized_position": 0.384578601315003,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1087
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "And Will would probably have to drive Bran over there so that he could retrieve it. “",
+        "max_topic_prob": 0.46799972653388977,
+        "normalized_position": 0.6157800358637179,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 756
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Branson?”",
+        "max_topic_prob": 0.45926928520202637,
+        "normalized_position": 0.10268977884040646,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 858
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "sentence": "Dom was probably the mellowest guy in his entire family, and even he was struggling not to strangle this jackass. “",
+        "max_topic_prob": 0.4797470271587372,
+        "normalized_position": 0.14147286821705427,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s obvious she wants me there with her, but for all I know she might want Jack the Ripper there, too, if it meant he’d keep her company.”",
+        "max_topic_prob": 0.6285014748573303,
+        "normalized_position": 0.7803405572755417,
+        "tertile": "end",
+        "chapter_index": 109,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "And I’m no Jack the Ripper, but she didn’t try to get me to stay and keep her company.",
+        "max_topic_prob": 0.5834543108940125,
+        "normalized_position": 0.7810835913312694,
+        "tertile": "end",
+        "chapter_index": 109,
+        "sentence_index": 171
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Dewey.",
+        "max_topic_prob": 0.4042855501174927,
+        "normalized_position": 0.016439628482972136,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Dewey .",
+        "max_topic_prob": 0.4042855501174927,
+        "normalized_position": 0.06123839009287926,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Jack nodded his head. “",
+        "max_topic_prob": 0.7594191431999207,
+        "normalized_position": 0.354621650336442,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Looking down, she saw Jack. “",
+        "max_topic_prob": 0.7500678896903992,
+        "normalized_position": 0.9057962460158187,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 352
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "he asked her and looked to Jack to gauge his response as well.",
+        "max_topic_prob": 0.7344791889190674,
+        "normalized_position": 0.3392751741234801,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Hi, Jack.”",
+        "max_topic_prob": 0.7243704795837402,
+        "normalized_position": 0.9059142958328414,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 353
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "And you must be Jack.”",
+        "max_topic_prob": 0.6945537328720093,
+        "normalized_position": 0.3372683272340928,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Jack, becoming bashful, hid his face in Declan’s chest. “",
+        "max_topic_prob": 0.6755833625793457,
+        "normalized_position": 0.33738637705111557,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 292
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.005226894749346638,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0019020446980504042,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0008466376390904693,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.001461703371662444,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.03085995085995086,
+        "n_sentences": 314
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0024937655860349127,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005787037037037037,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.003225406277136832,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00012474271814382835,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 8.491126772522713e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 7.648183556405354e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00013908205841446454,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 55
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": "7.1",
+    "taxonomy_secondary_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

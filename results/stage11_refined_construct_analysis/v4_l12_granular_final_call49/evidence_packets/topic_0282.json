@@ -1,0 +1,813 @@
+{
+  "topic_id": 282,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "3.3",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "trust",
+        "trusted",
+        "trusting",
+        "judgment",
+        "didn",
+        "feelings",
+        "she",
+        "him",
+        "could",
+        "herself"
+      ],
+      "KeyBERT": [
+        "ensure",
+        "instincts",
+        "circumstances",
+        "assured",
+        "ability",
+        "promises",
+        "guarded",
+        "partners",
+        "deserved",
+        "advantage"
+      ],
+      "POS": [
+        "accustomed",
+        "glint",
+        "partners",
+        "instincts",
+        "ability",
+        "circumstances",
+        "promises",
+        "advantage",
+        "issue",
+        "terms"
+      ],
+      "MMR": [
+        "guarded",
+        "glint",
+        "partners",
+        "instincts",
+        "ability",
+        "promises",
+        "earned",
+        "terms",
+        "actions",
+        "assured"
+      ]
+    },
+    "stage08_snippets": [
+      "trusting someone meant allowing herself to be vulnerable to them, letting them into the inner sanctum of her most private emotional places—places she had kept guarded for so long… it was time she got up, instead of allowing her thoughts to roam such dangerous byways. ‘",
+      "her father is accustomed to calling the shots and didn't make things easy for her in the beginning, but now she's earned his trust and confidence.",
+      "despite that logic and the fact that he’d done everything he could think of to ensure her safety within the dangerous circumstances surrounding her, he couldn’t outrun the growing certainty that he was playing it wrong, taking advantage of someone who deserved better, who shouldn’t be part of his world."
+    ],
+    "label_public": "Struggling to Surrender Control"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Right then she would have given everything she possessed to have been able to tell him she loved him, that he could trust her, but it wasn’t possible.",
+        "max_topic_prob": 0.7841485738754272,
+        "normalized_position": 0.6620548877296439,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "He had once trusted someone, and they had let him down.",
+        "max_topic_prob": 0.6215168833732605,
+        "normalized_position": 0.4425039691540032,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She had been right to suspect there was a woman behind Joel’s attitude, but she could never have suspected this. ‘",
+        "max_topic_prob": 0.5722894668579102,
+        "normalized_position": 0.5259696076207757,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "To have an affair with Joel would no doubt be an incredible experience, but it would break her own rules, because if he were to be believed—and she had no reason to doubt him—there was no future in it.",
+        "max_topic_prob": 0.5627415776252747,
+        "normalized_position": 0.1301882513041506,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Only with women who can’t be trusted to do what’s in their own best interests,’ he responded as he pushed through the kitchen door.",
+        "max_topic_prob": 0.5388460755348206,
+        "normalized_position": 0.41211158992968927,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It was strange reasoning for a man who had implied his faith in women was scant because they only saw him as a money machine.",
+        "max_topic_prob": 0.4208548069000244,
+        "normalized_position": 0.44000907235200726,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She didn’t trust him.",
+        "max_topic_prob": 0.8898128271102905,
+        "normalized_position": 0.7281506518590053,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "But why couldn’t he trust her?",
+        "max_topic_prob": 0.8840359449386597,
+        "normalized_position": 0.7209077740222115,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How could he think she didn’t trust him?",
+        "max_topic_prob": 0.8778353929519653,
+        "normalized_position": 0.7182520521487205,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Did he really feel she didn’t trust him?",
+        "max_topic_prob": 0.8480700254440308,
+        "normalized_position": 0.7205456301303718,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "How could she not trust him!",
+        "max_topic_prob": 0.8427271842956543,
+        "normalized_position": 0.7146306132303235,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She’d been expecting him to be angry, yes, but trust?",
+        "max_topic_prob": 0.7671586871147156,
+        "normalized_position": 0.7181313375181072,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "Can Ella trust her heart to the man who refuses to share his secrets yet swears to protect her?",
+        "max_topic_prob": 0.699377715587616,
+        "normalized_position": 0.96867889171463,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "sentence": "With an important mission to accomplish tonight, she must make certain he did not become suspicious.",
+        "max_topic_prob": 0.6429176926612854,
+        "normalized_position": 0.14884218980056219,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 780
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She may have made a vital error in who to trust.",
+        "max_topic_prob": 0.7897074222564697,
+        "normalized_position": 0.8098583438903605,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "What he did know was he had to protect her reputation.",
+        "max_topic_prob": 0.6696232557296753,
+        "normalized_position": 0.5070828054819763,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 220
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Simple things had been asked of her to maintain this trust.",
+        "max_topic_prob": 0.6613843441009521,
+        "normalized_position": 0.95301163192445,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Why was he so insecure when it came to her caring for him?",
+        "max_topic_prob": 0.6503543853759766,
+        "normalized_position": 0.7500863756766095,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 203
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Maybe if he didn’t hear her, then he wouldn’t see her, and then she would be safe from his fake charms.",
+        "max_topic_prob": 0.5615167021751404,
+        "normalized_position": 0.9683289185765288,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "They trusted him to take care of their every need.",
+        "max_topic_prob": 0.5264604687690735,
+        "normalized_position": 0.9490959345848209,
+        "tertile": "end",
+        "chapter_index": 59,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Why should she trust it now?",
+        "max_topic_prob": 0.7659896016120911,
+        "normalized_position": 0.6547494780793319,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Why did he trust her, when he knew she stole his watch?",
+        "max_topic_prob": 0.73744136095047,
+        "normalized_position": 0.30323590814196244,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 293
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Could she really trust this man, this Night Walker?",
+        "max_topic_prob": 0.7245460748672485,
+        "normalized_position": 0.2565240083507307,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Perhaps she might believe him.",
+        "max_topic_prob": 0.6781357526779175,
+        "normalized_position": 0.2510438413361169,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "It was obvious her questions annoyed him, but as much as she wanted to trust him, she needed to understand.",
+        "max_topic_prob": 0.6757258176803589,
+        "normalized_position": 0.3011482254697286,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "He didn’t trust himself to peer inside the room.",
+        "max_topic_prob": 0.6034632921218872,
+        "normalized_position": 0.482776617954071,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She trusted her handlers to only give her targets that needed killing.",
+        "max_topic_prob": 0.6163536310195923,
+        "normalized_position": 0.009345794392523364,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "He was her client, and sleeping with him was a major violation of protocol and her professional ethics.",
+        "max_topic_prob": 0.5209278464317322,
+        "normalized_position": 0.20327102803738317,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 250
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She should have only mild interest, if any at all, in his security. “",
+        "max_topic_prob": 0.4737829566001892,
+        "normalized_position": 0.17669392523364486,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Pushka was with them as were two other security guards, but Vries knew that Leo placed the onus of his security on her.",
+        "max_topic_prob": 0.3961021304130554,
+        "normalized_position": 0.9158878504672897,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Apparently Deringer wasn’t going to be enough of a barrier, but really sleeping with a client was so unprofessional.",
+        "max_topic_prob": 0.39349210262298584,
+        "normalized_position": 0.2023948598130841,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She knew his reputation before she ever met him…but his actions did not seem to match what the gossips had said about him.",
+        "max_topic_prob": 0.6287564039230347,
+        "normalized_position": 0.9265246142542248,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She deserved his honesty at the very least, and it was something he could easily provide.",
+        "max_topic_prob": 0.6187437772750854,
+        "normalized_position": 0.5349008082292432,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Was he trying to protect her as he claimed when he’d kept her hidden behind his back?",
+        "max_topic_prob": 0.6181590557098389,
+        "normalized_position": 0.9448934606906686,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Chivalry might not be his forte, but she didn’t need chivalry in a husband.",
+        "max_topic_prob": 0.49689412117004395,
+        "normalized_position": 0.9294636296840558,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "She was surely an authority on that matter, as she believed herself to be on all others.",
+        "max_topic_prob": 0.4962530732154846,
+        "normalized_position": 0.2828802351212344,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He would trust her this once to get him down the mountain rappelling, but beyond that he couldn’t totally put his trust in anyone.",
+        "max_topic_prob": 0.7948632836341858,
+        "normalized_position": 0.12672317835431116,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She didn’t trust anyone but herself to keep her alive.",
+        "max_topic_prob": 0.7797337770462036,
+        "normalized_position": 0.019693466906413222,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "She’d trusted him that he would get her across the river.",
+        "max_topic_prob": 0.7376917004585266,
+        "normalized_position": 0.12663755458515283,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 224
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "But somewhere along the line she had to trust the Lord.",
+        "max_topic_prob": 0.7375814914703369,
+        "normalized_position": 0.4027742101207295,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 232
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He didn’t trust.",
+        "max_topic_prob": 0.7315059304237366,
+        "normalized_position": 0.5897765219624967,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "He trusted her as a partner, but to trust her with his heart was totally different.",
+        "max_topic_prob": 0.7250335216522217,
+        "normalized_position": 0.7092216799383508,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "But the whole idea of a sort of open and polyamorous relationship seemed to rely on a lot of trust and communication, and he didn’t want to be a secret. “",
+        "max_topic_prob": 0.5937033295631409,
+        "normalized_position": 0.46996344234759413,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 2057
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Like right now, when he didn’t argue after she snatched his mobile off the counter and tapped in the password she absolutely should not know. “",
+        "max_topic_prob": 0.5525182485580444,
+        "normalized_position": 0.2333761486019168,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 2233
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "But it wasn’t cheating, was it?",
+        "max_topic_prob": 0.40794438123703003,
+        "normalized_position": 0.49575140796364,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 208
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She couldn’t trust him, even if she wanted to.",
+        "max_topic_prob": 0.8780701756477356,
+        "normalized_position": 0.22217763509898342,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 323
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But what did it mean if she couldn’t trust him?",
+        "max_topic_prob": 0.8668232560157776,
+        "normalized_position": 0.7372926698769395,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 554
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She’d put her faith in him, trusted him.",
+        "max_topic_prob": 0.825288712978363,
+        "normalized_position": 0.6091492776886035,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 327
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "He didn’t trust her to know her own mind.",
+        "max_topic_prob": 0.8138139247894287,
+        "normalized_position": 0.7324772605671482,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 518
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "She loved him, with all her heart, but she didn’t know if she could trust herself to make it work.",
+        "max_topic_prob": 0.8019753694534302,
+        "normalized_position": 0.757223113964687,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 703
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Hell , she wanted to trust people again.",
+        "max_topic_prob": 0.7695964574813843,
+        "normalized_position": 0.032504012841091494,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "He did trust her.",
+        "max_topic_prob": 0.8471633195877075,
+        "normalized_position": 0.31092537313432833,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "He trusted his sister like no one else, but forming the words still wasn’t easy. “",
+        "max_topic_prob": 0.5857781171798706,
+        "normalized_position": 0.14997014925373134,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Had she cheated on him?",
+        "max_topic_prob": 0.585628867149353,
+        "normalized_position": 0.924956001407955,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Or does he know, and having an open relationship is his way of being honest with her?",
+        "max_topic_prob": 0.531664252281189,
+        "normalized_position": 0.641046116989419,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 274
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I don’t think Lisa has anything in particular against the foundation or me, so it’s unlikely she’s angling for Per to be too critical.",
+        "max_topic_prob": 0.4142133593559265,
+        "normalized_position": 0.9334198442802955,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "We can trust her.",
+        "max_topic_prob": 0.6835822463035583,
+        "normalized_position": 0.6401134617657487,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 304
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0017195426016679562,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0020953378732320588,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0018665422305179655,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0026979630379063806,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0016018306636155606,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0014692918013517484,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0026656973221858716,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.003714710252600297,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 7.085163667280714e-05,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0001188212927756654,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.00020046106043900973,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_C",
+        "share": 0.00026881720430107527,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.00014932059130954157,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.00024044241404183698,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 57
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "3.3",
+    "taxonomy_main_name": "Ambivalence & Internal Conflict",
+    "taxonomy_secondary_id": "4.6",
+    "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

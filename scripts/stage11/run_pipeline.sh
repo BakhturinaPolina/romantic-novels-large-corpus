@@ -27,8 +27,8 @@ echo "== Stage 11: evidence packets (lexical+contextual) =="
 echo "== Stage 11: stability pilot =="
 "$PY" src/stage11_refined_construct_analysis/pipeline/03_run_stability_pilot.py --config "$CONFIG" "${DRY_FLAG[@]+"${DRY_FLAG[@]}"}"
 
-echo "== Stage 11: spillover triage (H1, H3) =="
-"$PY" src/stage11_refined_construct_analysis/pipeline/04_run_spillover_triage.py --config "$CONFIG" --hypotheses H1,H3 "${DRY_FLAG[@]+"${DRY_FLAG[@]}"}"
+echo "== Stage 11: spillover triage (H1, H3, H4) =="
+"$PY" src/stage11_refined_construct_analysis/pipeline/04_run_spillover_triage.py --config "$CONFIG" --hypotheses H1,H3,H4 "${DRY_FLAG[@]+"${DRY_FLAG[@]}"}"
 
 echo "== Stage 11: Pass A/B/C audits (H1 → H3 → H4 → H2) =="
 "$PY" src/stage11_refined_construct_analysis/pipeline/05_run_hypothesis_audits.py --config "$CONFIG" --hypotheses H1,H3,H4,H2 "${DRY_FLAG[@]+"${DRY_FLAG[@]}"}"

@@ -1,0 +1,57 @@
+# Dedicated H4 spillover triage (high-recall candidate promotion).
+# Lexical + flags only; ratings/effects hidden. Full Pass A/B/C follows for promoted IDs.
+
+name: h4_spillover_triage
+hypothesis: H4
+version: "1.0"
+frozen: true
+
+phrasing:
+  primary:
+    system: |
+      You triage whether a BERTopic topic is a candidate for ROMANTIC PROTECTION audit.
+      Use only the keyword lists and heuristic flags. Do not invent plot.
+      Do not decide whether protection is attractive or desirable.
+      Do not use ratings or effect sizes.
+      Respond with JSON only.
+
+      External protection requires:
+      1. an identifiable danger, threat, aggressor, crisis, or concrete problem
+         external to the protecting romantic partner;
+      2. an action or commitment intended to reduce that danger;
+      3. evidence that the protected person is the main romantic partner,
+         or that the action materially protects the central couple.
+
+      Protective commitment is different:
+      the character explicitly assumes responsibility for another person's
+      future safety or welfare, but the current evidence may not contain
+      a concrete external threat.
+
+      Ordinary reassurance, affection, food, medical care, household help,
+      and generic promises are not protection unless responsibility for
+      safety/welfare is central.
+
+      Control by the romantic partner is not external protection.
+    user: |
+      Hypothesis: {hypothesis} ({hypothesis_name})
+      Construct focus: {construct_focus}
+      Topic {topic_id}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Flags: secondary_leaf={secondary_leaf}; sexual_explicitness={sexual_explicitness};
+      sexual_function={sexual_function}; heuristic_notes={heuristic_notes}
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "external_threat": "yes|no|unclear",
+        "protective_action": "yes|no|unclear",
+        "main_couple_target": "yes|no|unclear",
+        "autonomy_effect": "supports|neutral|restricts|unclear",
+        "function": "physical_external_protection|social_legal_external_protection|rescue_search|protective_commitment|emotional_reassurance|ordinary_practical_care|control_framed_as_protection|nonromantic_protection|off_target|unclear",
+        "promote_to_full_H4_audit": bool,
+        "supporting_cues": ["short cue strings"],
+        "rationale": "..."
+      }}

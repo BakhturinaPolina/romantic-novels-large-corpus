@@ -1,0 +1,1110 @@
+{
+  "topic_id": 107,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "jaw",
+        "teeth",
+        "gritted",
+        "growl",
+        "clenched",
+        "groaned",
+        "groan",
+        "tightened",
+        "muscle",
+        "low"
+      ],
+      "KeyBERT": [
+        "gritted",
+        "clenched",
+        "pained",
+        "groaned",
+        "trembled",
+        "flinched",
+        "grunted",
+        "moaned",
+        "tensed",
+        "hissed"
+      ],
+      "POS": [
+        "gritted",
+        "growl",
+        "threats",
+        "tightening",
+        "irritation",
+        "pained",
+        "tense",
+        "shout",
+        "twisting",
+        "realization"
+      ],
+      "MMR": [
+        "gritted",
+        "growl",
+        "tensed",
+        "twitched",
+        "flinched",
+        "clenched",
+        "uttered",
+        "hissed",
+        "pained",
+        "moaning"
+      ]
+    },
+    "stage08_snippets": [
+      "christian gritted just hoping billy’d have the balls to start the fight for once ‘stead of just running his flapper. “",
+      "chapter fourteen cerne gritted his teeth and clenched his fists.",
+      "he gritted out. \""
+    ],
+    "label_public": "Gritted Teeth and Clenched Fists"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Kevin winced in surprise, shaken from his reverie. “",
+        "max_topic_prob": 0.6638199687004089,
+        "normalized_position": 0.2773685547371095,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "William let out a groan. “",
+        "max_topic_prob": 0.6464531421661377,
+        "normalized_position": 0.14249428498856997,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Lindsey gave a grunt. “",
+        "max_topic_prob": 0.6364742517471313,
+        "normalized_position": 0.3999237998475997,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I feel on the verge of snapping,” she declared, and made a growling sound. “",
+        "max_topic_prob": 0.6158064603805542,
+        "normalized_position": 0.8676657353314706,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "He turned the page and gasped. “",
+        "max_topic_prob": 0.6008530855178833,
+        "normalized_position": 0.2442214884429769,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "The baby gurgled then let out a squeal.",
+        "max_topic_prob": 0.5593910217285156,
+        "normalized_position": 0.6049022098044196,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His jaw clenched.",
+        "max_topic_prob": 0.8521803617477417,
+        "normalized_position": 0.7120020964360587,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His breath hissed out between his clenched teeth.",
+        "max_topic_prob": 0.8332556486129761,
+        "normalized_position": 0.7218291404612159,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The thought had him clenching his jaw. “",
+        "max_topic_prob": 0.7987239360809326,
+        "normalized_position": 0.6905136268343816,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "He groaned as if in pain. “",
+        "max_topic_prob": 0.7952921390533447,
+        "normalized_position": 0.47379454926624737,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "The muscles in his jaw clenched.",
+        "max_topic_prob": 0.7786967158317566,
+        "normalized_position": 0.17269392033542977,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "His breath whistled in between clenched teeth.",
+        "max_topic_prob": 0.7676936388015747,
+        "normalized_position": 0.584643605870021,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "His jaw tensed. “",
+        "max_topic_prob": 0.858606219291687,
+        "normalized_position": 0.043994907341915405,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "His jaw tensed. “",
+        "max_topic_prob": 0.858606219291687,
+        "normalized_position": 0.3830810581411798,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "His jaw tensed. “",
+        "max_topic_prob": 0.858606219291687,
+        "normalized_position": 0.8927712547743669,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 229
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Her jaw tightened. “",
+        "max_topic_prob": 0.8048525452613831,
+        "normalized_position": 0.21417456500212195,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "His voice was hoarse, strained, as if he were speaking through clenched teeth. “",
+        "max_topic_prob": 0.8036594390869141,
+        "normalized_position": 0.5365681143018814,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "A muscle in his jaw twitched. “",
+        "max_topic_prob": 0.7982224822044373,
+        "normalized_position": 0.3310227754986561,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He groaned.",
+        "max_topic_prob": 0.7591854333877563,
+        "normalized_position": 0.7873417721518987,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 442
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He flipped it open, and his teeth clenched so hard that his jaw hurt.",
+        "max_topic_prob": 0.7465521097183228,
+        "normalized_position": 0.7531645569620253,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 701
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He groaned, and then coughed in pain.",
+        "max_topic_prob": 0.7452393770217896,
+        "normalized_position": 0.7891701828410689,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 468
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "His hands tightened against her, and he groaned.",
+        "max_topic_prob": 0.743666410446167,
+        "normalized_position": 0.5158931082981716,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "He bared his teeth.",
+        "max_topic_prob": 0.7413256168365479,
+        "normalized_position": 0.14275668073136427,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "A groan escaped his lips.",
+        "max_topic_prob": 0.7317562103271484,
+        "normalized_position": 0.17060478199718707,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He grunted.",
+        "max_topic_prob": 0.7264935970306396,
+        "normalized_position": 0.33961911874533235,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Her chin trembled. “",
+        "max_topic_prob": 0.7191106081008911,
+        "normalized_position": 0.09652725914861837,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Her chin trembled. “",
+        "max_topic_prob": 0.7191106081008911,
+        "normalized_position": 0.9129947722180732,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 634
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Carter’s jaw tightened. “",
+        "max_topic_prob": 0.7061183452606201,
+        "normalized_position": 0.01362957430918596,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He...” Her chin trembled.",
+        "max_topic_prob": 0.7022020816802979,
+        "normalized_position": 0.7195668409260643,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Carter rubbed his jaw. “",
+        "max_topic_prob": 0.701624870300293,
+        "normalized_position": 0.45911127707244215,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 118
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He groaned. “",
+        "max_topic_prob": 0.7589826583862305,
+        "normalized_position": 0.4354159142891537,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "She made some sort of whimpering sound that triggered his answering groan.",
+        "max_topic_prob": 0.7506529092788696,
+        "normalized_position": 0.626820753581317,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He grimaced.",
+        "max_topic_prob": 0.7398667335510254,
+        "normalized_position": 0.37570723486216445,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He gulped.",
+        "max_topic_prob": 0.7292642593383789,
+        "normalized_position": 0.41446972432887924,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "He gulped.",
+        "max_topic_prob": 0.7292642593383789,
+        "normalized_position": 0.4696039484771879,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "And groaned. “",
+        "max_topic_prob": 0.7202920317649841,
+        "normalized_position": 0.7894546767786205,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Now it was his turn to groan. “",
+        "max_topic_prob": 0.7585489153862,
+        "normalized_position": 0.5997140814867763,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Jack gritted his words through teeth clenched in fury. “",
+        "max_topic_prob": 0.7542405128479004,
+        "normalized_position": 0.07076483202287348,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "As a result of his outburst, Jack began to cough uncontrollably, his whole frame quaking, and his voice grew ragged and husky. “",
+        "max_topic_prob": 0.6898645162582397,
+        "normalized_position": 0.07791279485346676,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Ticked off so badly his hands clenched, Jack growled. “",
+        "max_topic_prob": 0.6888282299041748,
+        "normalized_position": 0.9703359542530379,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "the man shrieked. “",
+        "max_topic_prob": 0.6872142553329468,
+        "normalized_position": 0.7022873481057899,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Suddenly Jack’s brow furrowed, but from the trembling of his jaw and lips it was clear he was emotional. “",
+        "max_topic_prob": 0.6806187629699707,
+        "normalized_position": 0.8609721229449607,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "sentence": "My inner muscles drew so forcefully around him that he groaned as if in pain.",
+        "max_topic_prob": 0.6481980681419373,
+        "normalized_position": 0.7130584192439863,
+        "tertile": "end",
+        "chapter_index": 2,
+        "sentence_index": 408
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "His eyes tightened at the corners, and his jaw muscles twitched. “",
+        "max_topic_prob": 0.8050994873046875,
+        "normalized_position": 0.419460343417825,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Stretching his neck, he kissed the side of Rion’s jaw as he swallowed around the lump in his throat. “",
+        "max_topic_prob": 0.7065041065216064,
+        "normalized_position": 0.9569364949577541,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 300
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Hanging his head, he huffed and grumbled under his breath. “",
+        "max_topic_prob": 0.6857068538665771,
+        "normalized_position": 0.7462523848460071,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Moon snorted as he scraped his teeth down Rion’s neck and nipped at his collarbone. “",
+        "max_topic_prob": 0.6632686853408813,
+        "normalized_position": 0.42082311256473154,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Oops,” he mouthed.",
+        "max_topic_prob": 0.661011815071106,
+        "normalized_position": 0.5928045789043336,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Rion flexed his fingers around Phantom’s throat and snarled. “",
+        "max_topic_prob": 0.6600291132926941,
+        "normalized_position": 0.9160534205505587,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He groaned.",
+        "max_topic_prob": 0.7591854333877563,
+        "normalized_position": 0.7091862206689965,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He kept making small moans and groans, trying to suppress them so we wouldn’t know how badly he was feeling.",
+        "max_topic_prob": 0.6617752909660339,
+        "normalized_position": 0.7154268597104343,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I groaned.",
+        "max_topic_prob": 0.5594709515571594,
+        "normalized_position": 0.05541687468796805,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I groaned.",
+        "max_topic_prob": 0.5594709515571594,
+        "normalized_position": 0.327009485771343,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "His jaw clenched and released. “",
+        "max_topic_prob": 0.8766062259674072,
+        "normalized_position": 0.29674866678135214,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 308
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "He growled in frustration. “",
+        "max_topic_prob": 0.7435377836227417,
+        "normalized_position": 0.2934801307414416,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "She winced. “",
+        "max_topic_prob": 0.6865845322608948,
+        "normalized_position": 0.7392052296576639,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "He gritted his teeth and suffered through the rest of the parade with a smile.",
+        "max_topic_prob": 0.6395073533058167,
+        "normalized_position": 0.8923103388955789,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "Phil grimaced. “",
+        "max_topic_prob": 0.6389999389648438,
+        "normalized_position": 0.2559779803887838,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "sentence": "He knew his jaw dropped open like a cartoon character’s, but he couldn’t even make sense of the words coming out of her mouth. “",
+        "max_topic_prob": 0.5828656554222107,
+        "normalized_position": 0.7484947531395149,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Mac groaned and tried to open his eyes. ‘",
+        "max_topic_prob": 0.6710141897201538,
+        "normalized_position": 0.5546522131887985,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He looked uneasy, while Dan let out a loud yawn and even Jason’s mouth was set in a grim line.",
+        "max_topic_prob": 0.6474219560623169,
+        "normalized_position": 0.7655826558265583,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She cleared her throat and winced at the shaky sound of her voice, ‘Jason, what are you doing here?’ ‘",
+        "max_topic_prob": 0.6265798807144165,
+        "normalized_position": 0.37262872628726285,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Violet trembled and tightened her hold on Mac. ‘",
+        "max_topic_prob": 0.608352541923523,
+        "normalized_position": 0.5977115326708823,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Hi, Mac,’ he said as he wobbled slightly.",
+        "max_topic_prob": 0.5623100996017456,
+        "normalized_position": 0.6982836495031617,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Mac winced as he felt an impenetrable wall slam down between them.",
+        "max_topic_prob": 0.5563019514083862,
+        "normalized_position": 0.48449262270400484,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He groaned long and deep.",
+        "max_topic_prob": 0.7832695245742798,
+        "normalized_position": 0.5511879049676026,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "He groaned again.",
+        "max_topic_prob": 0.7469593286514282,
+        "normalized_position": 0.5421166306695464,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 216
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Zeus’s jaw clenched down hard. “",
+        "max_topic_prob": 0.7265559434890747,
+        "normalized_position": 0.09719222462203024,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Zeus’s jaw clenched. “",
+        "max_topic_prob": 0.7117974758148193,
+        "normalized_position": 0.9663066954643629,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Titus’s jaw tightened. “",
+        "max_topic_prob": 0.7041314840316772,
+        "normalized_position": 0.7092872570194384,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Panic tightened into a fist around his throat.",
+        "max_topic_prob": 0.6836951375007629,
+        "normalized_position": 0.7330453563714903,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I could hear him groan on the other end. \"",
+        "max_topic_prob": 0.7204306125640869,
+        "normalized_position": 0.5287030474840538,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He growled, or maybe I just thought he growled. \"",
+        "max_topic_prob": 0.7130619287490845,
+        "normalized_position": 0.0752421450507914,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "His words slurring together as he pounded on the door. \"",
+        "max_topic_prob": 0.6722995042800903,
+        "normalized_position": 0.19312544294826364,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "He started to say something but his tongue didn't seem to want to do anything but hang out of his mouth.",
+        "max_topic_prob": 0.6689435243606567,
+        "normalized_position": 0.1880463028584928,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I bit my tongue to keep from crying out when he hit a bad spot. \"",
+        "max_topic_prob": 0.6683657169342041,
+        "normalized_position": 0.14056224899598393,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I gritted my teeth on the rage that I felt at such a question. \"",
+        "max_topic_prob": 0.6481695175170898,
+        "normalized_position": 0.11965509095204346,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "I groan. “",
+        "max_topic_prob": 0.5784540772438049,
+        "normalized_position": 0.7924376508447305,
+        "tertile": "end",
+        "chapter_index": 7,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "the guy howled. “",
+        "max_topic_prob": 0.6840383410453796,
+        "normalized_position": 0.2522367937247212,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 286
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Mouth still gaping in horror, Kat began to nod. “",
+        "max_topic_prob": 0.6278672218322754,
+        "normalized_position": 0.22465988478980267,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He shuddered.",
+        "max_topic_prob": 0.6174746155738831,
+        "normalized_position": 0.9138374800833435,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "A groan and loud sighs spread through the room at the news. “",
+        "max_topic_prob": 0.6082620620727539,
+        "normalized_position": 0.6660129917882094,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "He kept shaking his head that he didn’t want to go in, but instead of lashing out, he crumpled as though trying to roll into a fetal ball. “",
+        "max_topic_prob": 0.544780433177948,
+        "normalized_position": 0.1231768599093026,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Tommo gulped.",
+        "max_topic_prob": 0.543645977973938,
+        "normalized_position": 0.48314744453977204,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 82
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.005587777620596973,
+        "n_sentences": 79
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.006181770353807708,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.0064563284200268,
+        "n_sentences": 53
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.005679335954565312,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.005267118133935289,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005831318446878111,
+        "n_sentences": 41
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.006812477590534241,
+        "n_sentences": 19
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.014072847682119206,
+        "n_sentences": 51
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0008084074373484236,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0009086778736937755,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0014811157738829918,
+        "n_sentences": 12
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0011873664212776064,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_D",
+        "share": 0.001386001386001386,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0017421602787456446,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.0011532547411583804,
+        "n_sentences": 9
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.001003260596940055,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 84
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.1",
+    "taxonomy_main_name": "Body Parts & Physical Reactions",
+    "taxonomy_secondary_id": "7.1",
+    "taxonomy_secondary_name": "Interpersonal Non-Romantic Conflict",
+    "taxonomy_confidence": 0.72,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

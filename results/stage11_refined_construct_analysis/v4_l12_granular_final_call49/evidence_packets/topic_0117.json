@@ -1,0 +1,842 @@
+{
+  "topic_id": 117,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fault",
+        "blame",
+        "your",
+        "wasn",
+        "blamed",
+        "not",
+        "it",
+        "my",
+        "all",
+        "don"
+      ],
+      "KeyBERT": [
+        "fault",
+        "confessed",
+        "partly",
+        "wound",
+        "harshly",
+        "hissed",
+        "acknowledged"
+      ],
+      "POS": [
+        "fault",
+        "liking",
+        "suggestion",
+        "appropriate",
+        "tracks",
+        "current",
+        "bigger",
+        "tv",
+        "squeeze"
+      ],
+      "MMR": [
+        "fault",
+        "blows",
+        "belongs",
+        "harshly",
+        "tracks",
+        "sounding",
+        "squeeze",
+        "shouted",
+        "repeated",
+        "wound"
+      ]
+    },
+    "stage08_snippets": [
+      "i feel like it’s all my fault.” “",
+      "but you’ll only have yourself to blame if i get picked up.",
+      "all this is your fault and if you don’t do exactly what i tell you…well, you know what’ll happen.”"
+    ],
+    "label_public": "Blamed and Threatened Into Compliance"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "It’s my responsibility.” “",
+        "max_topic_prob": 0.5780583620071411,
+        "normalized_position": 0.028805620608899296,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "You have only yourself to blame, Seagrave.”",
+        "max_topic_prob": 0.6330701112747192,
+        "normalized_position": 0.011045319972671374,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Dunroamin’s troubles were not his own.",
+        "max_topic_prob": 0.3712198734283447,
+        "normalized_position": 0.21475745843771352,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 380
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Not my Dunroamin.",
+        "max_topic_prob": 0.284690797328949,
+        "normalized_position": 0.03734912320655887,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "That wasn't fair.",
+        "max_topic_prob": 0.4560357332229614,
+        "normalized_position": 0.6618080576482148,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Then it happened.",
+        "max_topic_prob": 0.4435250163078308,
+        "normalized_position": 0.7823452341958729,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 296
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Not your fault -- and, trust me, hang around long enough and there will be a trail of broken dates with me due to overtime, cases getting hot, or being called away in the middle of the night because some crackhead thinks he can get off a carrying charge in exchange for telling me something.\"",
+        "max_topic_prob": 0.5479884147644043,
+        "normalized_position": 0.24840121171322788,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 390
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s not your fault.”",
+        "max_topic_prob": 0.8966623544692993,
+        "normalized_position": 0.7566101694915254,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 103
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Would it make it any better if I went and told him it was my fault?”",
+        "max_topic_prob": 0.6631520390510559,
+        "normalized_position": 0.05491525423728814,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It wasn’t his problem or his fault, because he’d done nothing wrong.",
+        "max_topic_prob": 0.6552842855453491,
+        "normalized_position": 0.8128813559322033,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "After all, it was my fault I was too ass-over-end drunk to drive in the first place.”",
+        "max_topic_prob": 0.6031399369239807,
+        "normalized_position": 0.3884745762711864,
+        "tertile": "middle",
+        "chapter_index": 3,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "That wasn’t my fault.",
+        "max_topic_prob": 0.8295133113861084,
+        "normalized_position": 0.767228433172034,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "And it’s all your fault.” “",
+        "max_topic_prob": 0.8288260698318481,
+        "normalized_position": 0.9751376606040381,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "It was his fault and that’s what I told Brittany.”",
+        "max_topic_prob": 0.6597050428390503,
+        "normalized_position": 0.693141998998832,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The thing is, the accident was his fault anyway.” “",
+        "max_topic_prob": 0.6297896504402161,
+        "normalized_position": 0.6664441848823628,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "But you didn’t do anything, it was an accident.” “",
+        "max_topic_prob": 0.6263047456741333,
+        "normalized_position": 0.7884198231269814,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Not your fault at all,” replied the man she’d sat on.",
+        "max_topic_prob": 0.6137973070144653,
+        "normalized_position": 0.06774570332054063,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "They continuously tell me how it’s not my fault.",
+        "max_topic_prob": 0.7152099609375,
+        "normalized_position": 0.6258140140661631,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "At least that’s what I say caused it.",
+        "max_topic_prob": 0.4578937292098999,
+        "normalized_position": 0.5524876269861944,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Not that I can blame him.",
+        "max_topic_prob": 0.6649980545043945,
+        "normalized_position": 0.17206982543640897,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "You've got your scapegoat, and you don't need me.",
+        "max_topic_prob": 0.5166969299316406,
+        "normalized_position": 0.7290108063175395,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Blame it on Tyson.",
+        "max_topic_prob": 0.4417852759361267,
+        "normalized_position": 0.7315045719035744,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "It wrecked my parents, wrecked Thorn...” “And wrecked you,” I expound, including him in the net of condemnation.",
+        "max_topic_prob": 0.43142277002334595,
+        "normalized_position": 0.4235245220282627,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "I did it for the same reasons they did.",
+        "max_topic_prob": 0.3311704993247986,
+        "normalized_position": 0.5918536990856192,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It is my fault.",
+        "max_topic_prob": 0.8440861701965332,
+        "normalized_position": 0.24385245901639344,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "This is my fault.” “",
+        "max_topic_prob": 0.8381312489509583,
+        "normalized_position": 0.06939890710382514,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "This isn’t his fault.” “",
+        "max_topic_prob": 0.8092925548553467,
+        "normalized_position": 0.780327868852459,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "It’s my fault.",
+        "max_topic_prob": 0.801442563533783,
+        "normalized_position": 0.08292349726775956,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "This was my fault.",
+        "max_topic_prob": 0.7969911098480225,
+        "normalized_position": 0.5956284153005464,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "And I can’t say I blame you.” “",
+        "max_topic_prob": 0.772499144077301,
+        "normalized_position": 0.9702185792349727,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Not your fault, Hen.” “",
+        "max_topic_prob": 0.7578675150871277,
+        "normalized_position": 0.8905561674008811,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "I knew none of that was your fault, but fuck if I wasn’t pissed anyway.” “",
+        "max_topic_prob": 0.6686846613883972,
+        "normalized_position": 0.2026431718061674,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "Should I have told you how bad I felt when you were already so intent on blaming me for everything?” “",
+        "max_topic_prob": 0.6286764740943909,
+        "normalized_position": 0.7122797356828194,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "It wasn’t you.",
+        "max_topic_prob": 0.4987179636955261,
+        "normalized_position": 0.7645925110132159,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 180
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "He was taking them away from me, and there was nothing I could do about it. “",
+        "max_topic_prob": 0.4548870325088501,
+        "normalized_position": 0.5366189427312775,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "This is my fault.",
+        "max_topic_prob": 0.7847859859466553,
+        "normalized_position": 0.7730340870739115,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "It’s my own fault.",
+        "max_topic_prob": 0.7837696075439453,
+        "normalized_position": 0.43714141073236584,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But then I remember it’s my own fault.",
+        "max_topic_prob": 0.7024140357971191,
+        "normalized_position": 0.5953425582180223,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 508
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I need you to know that I don’t blame you for what happened.",
+        "max_topic_prob": 0.7022460699081421,
+        "normalized_position": 0.49240634492068847,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "But again, I remind myself that it’s my fault.",
+        "max_topic_prob": 0.696992039680481,
+        "normalized_position": 0.5998143773202835,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 561
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "And whose fault is that?”",
+        "max_topic_prob": 0.6666897535324097,
+        "normalized_position": 0.744937563280459,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 455
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I didn’t realize it was my fault, then.",
+        "max_topic_prob": 0.7882350087165833,
+        "normalized_position": 0.48033309709425936,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 797
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I think it’s my fault.",
+        "max_topic_prob": 0.7745792269706726,
+        "normalized_position": 0.01754075124025514,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "His fault.",
+        "max_topic_prob": 0.7641507983207703,
+        "normalized_position": 0.893160878809355,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 1396
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Blame the owner, not me.”",
+        "max_topic_prob": 0.6810651421546936,
+        "normalized_position": 0.6984408221119773,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Alone with that dark channel of nothingness that funneled everything in his mind toward the one inevitable conclusion: It’s your fault.",
+        "max_topic_prob": 0.6406279802322388,
+        "normalized_position": 0.7101346562721474,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Everything is always your fault, Grey.",
+        "max_topic_prob": 0.633021354675293,
+        "normalized_position": 0.7104890148830617,
+        "tertile": "end",
+        "chapter_index": 6,
+        "sentence_index": 365
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It wasn't because of you,\" I said. \"",
+        "max_topic_prob": 0.5874389410018921,
+        "normalized_position": 0.571716155007549,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 2
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "It’s not your fault.",
+        "max_topic_prob": 0.8476876616477966,
+        "normalized_position": 0.779045643153527,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "It’s the fault of whoever did this.” “",
+        "max_topic_prob": 0.7068345546722412,
+        "normalized_position": 0.7792185338865837,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "If you chose to interpret it as such, that is not my fault.",
+        "max_topic_prob": 0.6114298701286316,
+        "normalized_position": 0.24239280774550484,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "If you are determined to find yourself at fault,” Dalton said with a shake of his head, “then you may as well blame yourself for not knowing someone would shoot Sommersby that night.",
+        "max_topic_prob": 0.6041101217269897,
+        "normalized_position": 0.4789073305670816,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "I cannot hold you responsible for his actions.”",
+        "max_topic_prob": 0.591910719871521,
+        "normalized_position": 0.9854771784232366,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "sentence": "Pinching the bridge of his nose, he said, “Mama, I will not go into the details with you, but rest assured that every step of the way, I was the one at fault.",
+        "max_topic_prob": 0.5674247741699219,
+        "normalized_position": 0.6600968188105117,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Tell him it was my fault.” “",
+        "max_topic_prob": 0.7477107048034668,
+        "normalized_position": 0.30557097908569314,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 305
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "This is all my fault.",
+        "max_topic_prob": 0.7409952878952026,
+        "normalized_position": 0.30501573200074034,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 302
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Partially your fault, but you were right to bring it up.” “",
+        "max_topic_prob": 0.7387367486953735,
+        "normalized_position": 0.8539700166574126,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "I don’t think it’s all his fault.",
+        "max_topic_prob": 0.6932826042175293,
+        "normalized_position": 0.9168980196187303,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "No one can blame you for that.” “",
+        "max_topic_prob": 0.6913402080535889,
+        "normalized_position": 0.643161206736998,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "This whole mess is my fault.",
+        "max_topic_prob": 0.6823747158050537,
+        "normalized_position": 0.3816398297242273,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 38
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.001966041108132261,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.002103491796381994,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.004419889502762431,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.0018585790318492862,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.0024262784621127288,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.0018447090390742915,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.002719238613188307,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_B",
+        "share": 0.0024691358024691358,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00026136957658128593,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0006939625260235947,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.000254000508001016,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.000235626767200754,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00016980811682798438,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.0003492026539401699,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0003286770747740345,
+        "n_sentences": 2
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 60
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "4.4",
+    "taxonomy_secondary_name": "Conflict, Distance & Breakup Threats",
+    "taxonomy_confidence": 0.85,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,56 +1,82 @@
 {
   "run_id": "v4_l12_granular_final_call49",
   "n_topics": 348,
-  "n_audited": 53,
-  "n_manual_review": 14,
+  "n_audited": 172,
+  "n_manual_review": 27,
   "code_coverage": {
-    "intimacy_code": 3,
+    "intimacy_code": 98,
     "hea_code": 10,
-    "security_code": 4,
-    "care_protection_code": 4,
+    "security_code": 82,
+    "care_protection_code": 71,
     "darkness_code": 22,
-    "arc_role": 29
+    "arc_role": 42
   },
   "construct_coverage": {
     "atoms": {
       "RAX_appearance_grooming": {
-        "n_topics": 1,
-        "gate": "thin",
-        "topic_ids": [
-          18
-        ]
-      },
-      "RAX_arc_falling": {
         "n_topics": 6,
         "gate": "viable",
         "topic_ids": [
-          129,
-          214,
-          265,
-          272,
-          285,
-          303
+          18,
+          77,
+          171,
+          218,
+          253,
+          364
         ]
       },
-      "RAX_arc_rising": {
-        "n_topics": 4,
+      "RAX_arc_falling": {
+        "n_topics": 25,
         "gate": "viable",
         "topic_ids": [
           3,
+          43,
+          66,
           85,
-          194,
-          237
+          92,
+          94,
+          129,
+          133,
+          145,
+          152,
+          177,
+          179,
+          210,
+          220,
+          237,
+          256,
+          281,
+          286,
+          301,
+          303,
+          314,
+          316,
+          319,
+          322,
+          366
+        ]
+      },
+      "RAX_arc_rising": {
+        "n_topics": 2,
+        "gate": "thin",
+        "topic_ids": [
+          102,
+          244
         ]
       },
       "RAX_coercive_control": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          294
+        ]
       },
       "RAX_coercive_sexuality": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          345
+        ]
       },
       "RAX_commitment_security": {
         "n_topics": 0,
@@ -68,35 +94,85 @@
         "topic_ids": []
       },
       "RAX_emotional_intimacy": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
-      },
-      "RAX_emotional_reassurance": {
         "n_topics": 2,
         "gate": "thin",
         "topic_ids": [
-          1,
-          6
+          29,
+          37
+        ]
+      },
+      "RAX_emotional_reassurance": {
+        "n_topics": 28,
+        "gate": "viable",
+        "topic_ids": [
+          6,
+          36,
+          38,
+          45,
+          46,
+          56,
+          59,
+          85,
+          96,
+          119,
+          128,
+          157,
+          161,
+          175,
+          232,
+          238,
+          242,
+          247,
+          258,
+          273,
+          289,
+          299,
+          305,
+          307,
+          352,
+          355,
+          356,
+          372
         ]
       },
       "RAX_emotional_security": {
-        "n_topics": 2,
-        "gate": "thin",
+        "n_topics": 17,
+        "gate": "viable",
         "topic_ids": [
-          1,
-          6
+          29,
+          38,
+          45,
+          46,
+          56,
+          96,
+          128,
+          157,
+          240,
+          242,
+          247,
+          258,
+          293,
+          299,
+          305,
+          307,
+          356
         ]
       },
       "RAX_erotic_escalation": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          213
+        ]
       },
       "RAX_explicit_sex": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          63,
+          208,
+          292
+        ]
       },
       "RAX_external_danger_crisis": {
         "n_topics": 5,
@@ -110,14 +186,37 @@
         ]
       },
       "RAX_external_plot_conflict": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 12,
+        "gate": "viable",
+        "topic_ids": [
+          24,
+          37,
+          109,
+          130,
+          194,
+          214,
+          248,
+          264,
+          272,
+          285,
+          346,
+          362
+        ]
       },
       "RAX_external_protection": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 9,
+        "gate": "viable",
+        "topic_ids": [
+          68,
+          78,
+          87,
+          107,
+          113,
+          114,
+          122,
+          307,
+          363
+        ]
       },
       "RAX_final_relational_payoff": {
         "n_topics": 0,
@@ -138,9 +237,11 @@
         "topic_ids": []
       },
       "RAX_housing_security": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          17
+        ]
       },
       "RAX_individual_distress": {
         "n_topics": 9,
@@ -173,11 +274,12 @@
         "topic_ids": []
       },
       "RAX_nonexplicit_affection": {
-        "n_topics": 2,
-        "gate": "thin",
+        "n_topics": 3,
+        "gate": "viable",
         "topic_ids": [
-          1,
-          7
+          19,
+          124,
+          126
         ]
       },
       "RAX_partner_harm_control": {
@@ -186,14 +288,18 @@
         "topic_ids": []
       },
       "RAX_physical_protection": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
-      },
-      "RAX_possessive_claiming": {
-        "n_topics": 2,
+        "n_topics": 1,
         "gate": "thin",
         "topic_ids": [
+          119
+        ]
+      },
+      "RAX_possessive_claiming": {
+        "n_topics": 4,
+        "gate": "viable",
+        "topic_ids": [
+          181,
+          223,
           293,
           315
         ]
@@ -204,10 +310,31 @@
         "topic_ids": []
       },
       "RAX_practical_care": {
-        "n_topics": 1,
-        "gate": "thin",
+        "n_topics": 4,
+        "gate": "viable",
         "topic_ids": [
-          1
+          36,
+          83,
+          190,
+          356
+        ]
+      },
+      "RAX_protective_commitment": {
+        "n_topics": 12,
+        "gate": "viable",
+        "topic_ids": [
+          20,
+          24,
+          73,
+          100,
+          102,
+          119,
+          148,
+          239,
+          240,
+          329,
+          335,
+          338
         ]
       },
       "RAX_public_union": {
@@ -254,14 +381,22 @@
         "topic_ids": []
       },
       "RAX_sexual_negotiation": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          55,
+          125,
+          203
+        ]
       },
       "RAX_sexual_tension": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": []
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          135,
+          155,
+          230
+        ]
       },
       "RAX_status_display": {
         "n_topics": 0,
@@ -269,30 +404,82 @@
         "topic_ids": []
       },
       "RAX_tenderness_core": {
-        "n_topics": 3,
+        "n_topics": 25,
         "gate": "viable",
         "topic_ids": [
-          1,
           6,
-          7
+          19,
+          29,
+          36,
+          37,
+          38,
+          45,
+          46,
+          56,
+          59,
+          85,
+          96,
+          119,
+          124,
+          126,
+          128,
+          161,
+          242,
+          258,
+          273,
+          289,
+          305,
+          307,
+          352,
+          356
         ]
       },
       "RAX_workplace_status": {
         "n_topics": 1,
         "gate": "thin",
         "topic_ids": [
-          17
+          112
         ]
       }
     },
     "composites": {
       "RAX_h1_emotional_side": {
-        "n_topics": 3,
+        "n_topics": 33,
         "gate": "viable",
         "topic_ids": [
-          1,
           6,
-          7
+          19,
+          29,
+          36,
+          37,
+          38,
+          45,
+          46,
+          56,
+          59,
+          85,
+          96,
+          119,
+          124,
+          126,
+          128,
+          157,
+          161,
+          175,
+          232,
+          238,
+          242,
+          247,
+          258,
+          273,
+          289,
+          299,
+          305,
+          307,
+          352,
+          355,
+          356,
+          372
         ],
         "parts": [
           "RAX_emotional_intimacy",
@@ -301,9 +488,13 @@
         ]
       },
       "RAX_h1_explicit_side": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": [],
+        "n_topics": 3,
+        "gate": "viable",
+        "topic_ids": [
+          63,
+          208,
+          292
+        ],
         "parts": [
           "RAX_explicit_sex"
         ]
@@ -327,11 +518,26 @@
         ]
       },
       "RAX_h3_emotional_side": {
-        "n_topics": 2,
-        "gate": "thin",
+        "n_topics": 17,
+        "gate": "viable",
         "topic_ids": [
-          1,
-          6
+          29,
+          38,
+          45,
+          46,
+          56,
+          96,
+          128,
+          157,
+          240,
+          242,
+          247,
+          258,
+          293,
+          299,
+          305,
+          307,
+          356
         ],
         "parts": [
           "RAX_emotional_security",
@@ -339,20 +545,27 @@
         ]
       },
       "RAX_h3_material_side": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": [],
+        "n_topics": 1,
+        "gate": "thin",
+        "topic_ids": [
+          17
+        ],
         "parts": [
           "RAX_material_provision",
           "RAX_housing_security"
         ]
       },
       "RAX_social_presentation": {
-        "n_topics": 2,
-        "gate": "thin",
+        "n_topics": 7,
+        "gate": "viable",
         "topic_ids": [
-          17,
-          18
+          18,
+          77,
+          112,
+          171,
+          218,
+          253,
+          364
         ],
         "parts": [
           "RAX_status_display",
@@ -361,18 +574,62 @@
         ]
       },
       "RAX_h4_protection_side": {
-        "n_topics": 0,
-        "gate": "unmeasurable",
-        "topic_ids": [],
+        "n_topics": 9,
+        "gate": "viable",
+        "topic_ids": [
+          68,
+          78,
+          87,
+          107,
+          113,
+          114,
+          122,
+          307,
+          363
+        ],
         "parts": [
           "RAX_external_protection"
         ]
       },
-      "RAX_h4_possession_side": {
-        "n_topics": 2,
-        "gate": "thin",
+      "RAX_protective_care_broad": {
+        "n_topics": 21,
+        "gate": "viable",
         "topic_ids": [
+          20,
+          24,
+          68,
+          73,
+          78,
+          87,
+          100,
+          102,
+          107,
+          113,
+          114,
+          119,
+          122,
+          148,
+          239,
+          240,
+          307,
+          329,
+          335,
+          338,
+          363
+        ],
+        "parts": [
+          "RAX_external_protection",
+          "RAX_protective_commitment"
+        ]
+      },
+      "RAX_h4_possession_side": {
+        "n_topics": 5,
+        "gate": "viable",
+        "topic_ids": [
+          181,
+          223,
           293,
+          294,
           315
         ],
         "parts": [
@@ -410,12 +667,34 @@
         ]
       },
       "RAX_h5_tenderness_side": {
-        "n_topics": 3,
+        "n_topics": 25,
         "gate": "viable",
         "topic_ids": [
-          1,
           6,
-          7
+          19,
+          29,
+          36,
+          37,
+          38,
+          45,
+          46,
+          56,
+          59,
+          85,
+          96,
+          119,
+          124,
+          126,
+          128,
+          161,
+          242,
+          258,
+          273,
+          289,
+          305,
+          307,
+          352,
+          356
         ],
         "parts": [
           "RAX_tenderness_core"
@@ -424,24 +703,24 @@
     },
     "ratios": {
       "RLR_emotional_vs_explicit": {
-        "gate": "unmeasurable",
-        "numerator_topics": 3,
-        "denominator_topics": 0
+        "gate": "viable",
+        "numerator_topics": 33,
+        "denominator_topics": 3
       },
       "RLR_emotional_vs_material_security": {
-        "gate": "unmeasurable",
-        "numerator_topics": 2,
-        "denominator_topics": 0
+        "gate": "thin",
+        "numerator_topics": 17,
+        "denominator_topics": 1
       },
       "RLR_protection_vs_control": {
-        "gate": "unmeasurable",
-        "numerator_topics": 0,
-        "denominator_topics": 2
+        "gate": "viable",
+        "numerator_topics": 9,
+        "denominator_topics": 5
       },
       "RLR_darkness_vs_tenderness": {
         "gate": "viable",
         "numerator_topics": 20,
-        "denominator_topics": 3
+        "denominator_topics": 25
       }
     }
   },

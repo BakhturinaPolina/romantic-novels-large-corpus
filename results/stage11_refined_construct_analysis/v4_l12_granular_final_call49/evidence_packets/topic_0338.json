@@ -1,0 +1,722 @@
+{
+  "topic_id": 338,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "turner",
+        "carley",
+        "bray",
+        "captain",
+        "psychic",
+        "suspicions",
+        "talked",
+        "val",
+        "yourbrother"
+      ],
+      "KeyBERT": [
+        "bowed",
+        "willing",
+        "commander",
+        "insisted",
+        "dangerously",
+        "begging",
+        "tightly",
+        "delicate"
+      ],
+      "POS": [
+        "commander",
+        "fishing",
+        "notion",
+        "larger",
+        "unsure",
+        "disbelief",
+        "delicate",
+        "confusion",
+        "pieces",
+        "pleased"
+      ],
+      "MMR": [
+        "dangerously",
+        "commander",
+        "squinted",
+        "fishing",
+        "smacked",
+        "notion",
+        "scrambled",
+        "revealing",
+        "choked",
+        "bowed"
+      ]
+    },
+    "stage08_snippets": [
+      "but [person], you got to promise me you’ll never do something like that again.",
+      "okay, but i'll warn you — you're making this seem dangerously like a date, [person].\" \"",
+      "i’ll have to get it approved by [person],” he said, seemingly giving in to my demands."
+    ],
+    "label_public": "Promising Never to Do That Again"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "God, if anything happened to her… “Drop your weapon, Jefferson,” Brant ordered calmly. “",
+        "max_topic_prob": 0.5136421918869019,
+        "normalized_position": 0.7699505649717514,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The resemblance between Jack and Jefferson was jarring, and so unmistakable that Brant wanted to smack his forehead.",
+        "max_topic_prob": 0.4961400628089905,
+        "normalized_position": 0.7181320621468926,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 459
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Samille assumed he’d wanted to be near his Georgetown contacts — namely Jefferson Spangler.",
+        "max_topic_prob": 0.47240519523620605,
+        "normalized_position": 0.3054378531073446,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Jefferson is one plausible suspect,” Brant agreed. “",
+        "max_topic_prob": 0.4479774236679077,
+        "normalized_position": 0.4472987288135593,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 172
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "Jefferson Spangler was everything Brant had expected.",
+        "max_topic_prob": 0.44559481739997864,
+        "normalized_position": 0.2576800847457627,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 278
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "So you came to D.C. in search of revenge,” Brant stated flatly. “",
+        "max_topic_prob": 0.44286802411079407,
+        "normalized_position": 0.9351165254237288,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 313
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "The cruel man who’d held her chains the last time, Corbin, smiled.",
+        "max_topic_prob": 0.5358335971832275,
+        "normalized_position": 0.5109020310633214,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Corbin!”",
+        "max_topic_prob": 0.5140584111213684,
+        "normalized_position": 0.526284348864994,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Corbin’s hand struck Willow’s face.",
+        "max_topic_prob": 0.5089043378829956,
+        "normalized_position": 0.5748207885304659,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 212
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’m going with my Corbin.",
+        "max_topic_prob": 0.4691036343574524,
+        "normalized_position": 0.8536439665471923,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "And Corbin would rejoice.",
+        "max_topic_prob": 0.4222290813922882,
+        "normalized_position": 0.9151732377538829,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Oh God, he’s worse than Corbin.",
+        "max_topic_prob": 0.40335988998413086,
+        "normalized_position": 0.5277777777777778,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 133
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Slade chuckled at that, and so did Boone.",
+        "max_topic_prob": 0.54988694190979,
+        "normalized_position": 0.8540023493874811,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "It’s time this town had its own police force,” Hannibal Hale blustered, as he whooshed through the doorway. “",
+        "max_topic_prob": 0.5421102046966553,
+        "normalized_position": 0.6657157241147844,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "They’re at the office, with Becky and Scamp,” Boone replied. “",
+        "max_topic_prob": 0.5355031490325928,
+        "normalized_position": 0.7910723275717402,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Boone hoped he hadn’t sounded too eager; it would be just like Hannibal Hale to prolong McQuillan’s hiring process just to spite his favorite adversary. “",
+        "max_topic_prob": 0.5237157344818115,
+        "normalized_position": 0.672931699949656,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Well,” Boone drawled, finding it extra difficult to maintain his straight face and, for that reason, not daring to glance in Becky’s direction, “I reckon that was bound to happen sooner or later.",
+        "max_topic_prob": 0.4988715946674347,
+        "normalized_position": 0.6665547910723276,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Slade’s right,” Boone agreed.",
+        "max_topic_prob": 0.49468499422073364,
+        "normalized_position": 0.9577110253398221,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Why didn’t Wyatt just shoot you and steal the house’s magic years ago?”",
+        "max_topic_prob": 0.7178321480751038,
+        "normalized_position": 0.749288906948395,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 84
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Witch,” Wyatt hissed.",
+        "max_topic_prob": 0.7157236337661743,
+        "normalized_position": 0.9020723283218204,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You were mine,” Wyatt repeated his claim in a hoarse whisper. “",
+        "max_topic_prob": 0.7080278992652893,
+        "normalized_position": 0.9118244616009752,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Hank Wyatt claimed she’d been his intended mate.",
+        "max_topic_prob": 0.6945632100105286,
+        "normalized_position": 0.023161316537992686,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 46
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "He’d had a chance once to snap Wyatt’s spine.",
+        "max_topic_prob": 0.6902062892913818,
+        "normalized_position": 0.7200325071109305,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 12
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You don’t like Hank Wyatt very well, do you?” “",
+        "max_topic_prob": 0.6816784143447876,
+        "normalized_position": 0.048760666395774074,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Dr. Wyatt takes a step back. “",
+        "max_topic_prob": 0.7529630661010742,
+        "normalized_position": 0.3840465510971027,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "How long has she loved Dr. Wyatt?”",
+        "max_topic_prob": 0.7036126255989075,
+        "normalized_position": 0.22948236149836343,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 386
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Dr. Heller, Dr. Wyatt needs to have a word with you.” “",
+        "max_topic_prob": 0.7010495662689209,
+        "normalized_position": 0.22584555703721662,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Kelly and Dr. Wyatt enter the room. “",
+        "max_topic_prob": 0.6912975907325745,
+        "normalized_position": 0.22608801066795975,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 358
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Dr. Wyatt nods, then turns to me. “",
+        "max_topic_prob": 0.6657620668411255,
+        "normalized_position": 0.3815007879742999,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "All you have to know is that I could never, ever love Dr. Wyatt.",
+        "max_topic_prob": 0.661125659942627,
+        "normalized_position": 0.35555824948478604,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 385
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Wyatt nodded. “",
+        "max_topic_prob": 0.7920446395874023,
+        "normalized_position": 0.5612368856985092,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "My husband, Wyatt.”",
+        "max_topic_prob": 0.7497576475143433,
+        "normalized_position": 0.5559359469906129,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 157
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "If he’d run into Wyatt without preparation for a second wife, his shock would have shown on his face.",
+        "max_topic_prob": 0.7028146982192993,
+        "normalized_position": 0.447929320817228,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 533
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Now, the sight of Wyatt with another woman looked wrong , and grief jabbed him in the stomach.",
+        "max_topic_prob": 0.6990492939949036,
+        "normalized_position": 0.44870237437879623,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 540
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "Wyatt Thompson.",
+        "max_topic_prob": 0.6785373687744141,
+        "normalized_position": 0.4473771397018222,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 528
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "sentence": "We could make a day of it,” Wyatt Thompson said with a thoughtful look at his wife. “",
+        "max_topic_prob": 0.6405483484268188,
+        "normalized_position": 0.5675317504141358,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 262
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Abe was a confirmed bachelor, he didn’t get worked up about women ever , and he certainly wasn’t going to start with Casey Tanner.",
+        "max_topic_prob": 0.4546482563018799,
+        "normalized_position": 0.08344686648501362,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Come on,” Ty said to the tiger, and after a moment Barnum released Cody’s hand and began to prowl toward Ty.",
+        "max_topic_prob": 0.54865562915802,
+        "normalized_position": 0.939873417721519,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 471
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "That’s it,” Cody snarled.",
+        "max_topic_prob": 0.540282130241394,
+        "normalized_position": 0.9328059071729958,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 404
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Even when he was with Becky.",
+        "max_topic_prob": 0.5108586549758911,
+        "normalized_position": 0.6221518987341772,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 1187
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Zane was able to talk about Becky more easily than he used to, though it was still rare, and he was definitely more comfortable with it than Ty was.",
+        "max_topic_prob": 0.5016305446624756,
+        "normalized_position": 0.1248945147679325,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 788
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "This is my partner, Ty Grady,” Zane said to the group of ranch hands and family. “",
+        "max_topic_prob": 0.4704054892063141,
+        "normalized_position": 0.5308016877637131,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Even when he’d been with Becky, he’d never lit up quite like he did now.",
+        "max_topic_prob": 0.46306195855140686,
+        "normalized_position": 0.5175105485232068,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 195
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Tanner was shot,” Jax says. “",
+        "max_topic_prob": 0.5370948314666748,
+        "normalized_position": 0.9064144324730644,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Tanner, help!” “",
+        "max_topic_prob": 0.48261088132858276,
+        "normalized_position": 0.8733400150338261,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Bronson had Madison killed.",
+        "max_topic_prob": 0.4613128900527954,
+        "normalized_position": 0.8998997744926084,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 207
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "If the shit ever hits the fan, Tanner is the exact man you want around.”",
+        "max_topic_prob": 0.41979295015335083,
+        "normalized_position": 0.7386619894763218,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Oh my God, Tanner, you’re hit.",
+        "max_topic_prob": 0.41122904419898987,
+        "normalized_position": 0.8684540215484841,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "sentence": "Carter’s own men attacked Tanner Hayes.",
+        "max_topic_prob": 0.3839867413043976,
+        "normalized_position": 0.8931345527436733,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 153
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_A",
+        "share": 0.0012230375806092952,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0008490766291657822,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.003575685339690107,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0013338075760270319,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0069359445124439,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.0012006603631997599,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.001827485380116959,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_B",
+        "share": 0.001007302946361118,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.00011445576284765938,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 49
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": "4.2",
+    "taxonomy_secondary_name": "Ongoing Courtship & Everyday Relational Bonding",
+    "taxonomy_confidence": 0.68,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

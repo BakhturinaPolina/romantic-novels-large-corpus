@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cheap Nemo spillover triage for H1 (secondary/sexual flags) and H3 (discovery leaves)."""
+"""Cheap Nemo spillover triage for H1, H3, and H4 (full-corpus protection discovery)."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 from src.stage11_refined_construct_analysis.audits.spillover import (  # noqa: E402
     build_h1_spillover_candidates,
     build_h3_spillover_candidates,
+    build_h4_spillover_candidates,
     run_spillover_triage,
     write_spillover_result,
 )
@@ -36,8 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--config", default=DEFAULT_CONFIG_PATH)
     parser.add_argument(
         "--hypotheses",
-        default="H1,H3",
-        help="Comma-separated (default: H1,H3)",
+        default="H1,H3,H4",
+        help="Comma-separated (default: H1,H3,H4)",
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
@@ -54,6 +55,7 @@ def main(argv: list[str] | None = None) -> int:
     builders = {
         "H1": build_h1_spillover_candidates,
         "H3": build_h3_spillover_candidates,
+        "H4": build_h4_spillover_candidates,
     }
     hyps = [h.strip().upper() for h in args.hypotheses.split(",") if h.strip()]
     for hyp in hyps:

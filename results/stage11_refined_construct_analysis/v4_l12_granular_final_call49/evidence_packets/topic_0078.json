@@ -1,0 +1,987 @@
+{
+  "topic_id": 78,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "fight",
+        "fighting",
+        "war",
+        "battle",
+        "fought",
+        "fights",
+        "fighter",
+        "win",
+        "battles",
+        "we"
+      ],
+      "KeyBERT": [
+        "fought",
+        "attacked",
+        "weapons",
+        "guarded",
+        "surely",
+        "lets",
+        "warned",
+        "insisted"
+      ],
+      "POS": [
+        "increase",
+        "accustomed",
+        "awhile",
+        "worries",
+        "edged",
+        "century",
+        "embarrassing",
+        "president",
+        "exciting",
+        "weapons"
+      ],
+      "MMR": [
+        "attacked",
+        "increase",
+        "accustomed",
+        "erupted",
+        "worries",
+        "discussing",
+        "century",
+        "exciting",
+        "weapons",
+        "terms"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll fight you off.” “",
+      "and if they do, you’ll fight them.",
+      "i’ll start a war before i let him have you,” he murmured."
+    ],
+    "label_public": "Swearing War Before He Takes Her"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "I don’t want to argue again, Anthony.",
+        "max_topic_prob": 0.46965956687927246,
+        "normalized_position": 0.30027434842249656,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "We argued.",
+        "max_topic_prob": 0.4627673029899597,
+        "normalized_position": 0.6508916323731139,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "sentence": "Could their attackers have given up?",
+        "max_topic_prob": 0.43184220790863037,
+        "normalized_position": 0.4967078189300412,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 92
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I don’t want to fight, but you’ve left me with no other choice.”",
+        "max_topic_prob": 0.7440831661224365,
+        "normalized_position": 0.2953656512978547,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’ve fought a battle that I shouldn’t have.",
+        "max_topic_prob": 0.7423039078712463,
+        "normalized_position": 0.21666469124096244,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "We will have to fight if we are to get out of here.”",
+        "max_topic_prob": 0.7122528553009033,
+        "normalized_position": 0.7249022164276402,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I think I fought them.” “",
+        "max_topic_prob": 0.6946020126342773,
+        "normalized_position": 0.17684010904349887,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 51
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "You don’t have to fight tomorrow.”",
+        "max_topic_prob": 0.6731184720993042,
+        "normalized_position": 0.8870451582315989,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "sentence": "I’m not fighting for what’s out there.”",
+        "max_topic_prob": 0.6710250377655029,
+        "normalized_position": 0.07573782150053336,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He needed to find a fight.",
+        "max_topic_prob": 0.6792865991592407,
+        "normalized_position": 0.04788242730720607,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He did what he wanted, anyway, so why fight it?",
+        "max_topic_prob": 0.6145192384719849,
+        "normalized_position": 0.09134007585335019,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Fighting against himself.",
+        "max_topic_prob": 0.6060665845870972,
+        "normalized_position": 0.06747787610619468,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 252
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He didn’t have to go in search of a fight, did he?",
+        "max_topic_prob": 0.605227530002594,
+        "normalized_position": 0.0570480404551201,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 186
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "That’s war, and you know it.” “",
+        "max_topic_prob": 0.5534070134162903,
+        "normalized_position": 0.3776864728192162,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Severin had spent his life fighting.",
+        "max_topic_prob": 0.5472398996353149,
+        "normalized_position": 0.7419405815423514,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Let’s not fight.’ ‘",
+        "max_topic_prob": 0.7923627495765686,
+        "normalized_position": 0.8961879307919539,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I don’t want to fight with you,’ he said. ‘",
+        "max_topic_prob": 0.714725136756897,
+        "normalized_position": 0.8942185961457307,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Why I’d been determined not to fight with them.",
+        "max_topic_prob": 0.7033319473266602,
+        "normalized_position": 0.2162048108032072,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I wanted to fight, I didn’t want to feel.",
+        "max_topic_prob": 0.6825622916221619,
+        "normalized_position": 0.5926290617527078,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 517
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "Maybe that was what I’d been fighting all this time.",
+        "max_topic_prob": 0.672895610332489,
+        "normalized_position": 0.960613307075538,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 243
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "And I certainly wasn’t going to fight for it any longer.",
+        "max_topic_prob": 0.6727228760719299,
+        "normalized_position": 0.9642706428470952,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "If you’re foolish enough to try to fight, well then I can make no guarantees. ”",
+        "max_topic_prob": 0.7198402881622314,
+        "normalized_position": 0.6673819742489271,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 146
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I don’t know that I want you to fight this , or t hat we should fight this.” “",
+        "max_topic_prob": 0.6922293901443481,
+        "normalized_position": 0.17725321888412018,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "You always fight for what’s right.",
+        "max_topic_prob": 0.6571457386016846,
+        "normalized_position": 0.2055793991416309,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "He had no intention of fighting.",
+        "max_topic_prob": 0.5894725322723389,
+        "normalized_position": 0.6854077253218884,
+        "tertile": "end",
+        "chapter_index": 9,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I’d never be able to understand how I could fight with the best of them, but my day-to- day coordination was atrocious. “",
+        "max_topic_prob": 0.58844393491745,
+        "normalized_position": 0.6085836909871245,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "A full-blown snowball fight had been instigated and there was no way Athen or I would ever lose.",
+        "max_topic_prob": 0.5689969062805176,
+        "normalized_position": 0.8377682403433476,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 134
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Hopefully that’ll fight off whatever it is and I won’t actually get it. ’ ‘",
+        "max_topic_prob": 0.572655439376831,
+        "normalized_position": 0.034904250984652996,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "You know call a truce or something?’ ‘",
+        "max_topic_prob": 0.5669894218444824,
+        "normalized_position": 0.9600706233872063,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Now don’t you go defending him.",
+        "max_topic_prob": 0.4165152907371521,
+        "normalized_position": 0.7211734347412739,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "The seating plan war raged on all day, and everyone went home disgruntled.",
+        "max_topic_prob": 0.3035132884979248,
+        "normalized_position": 0.10824392231427407,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Fighting is reason.”",
+        "max_topic_prob": 0.7006324529647827,
+        "normalized_position": 0.24987814784727863,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 188
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Fighting is reason.”",
+        "max_topic_prob": 0.7006324529647827,
+        "normalized_position": 0.9725426482534525,
+        "tertile": "end",
+        "chapter_index": 32,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You guys are fighting again?",
+        "max_topic_prob": 0.6894606351852417,
+        "normalized_position": 0.7262388302193339,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You have to learn how to fight—physically, emotionally, mentally.",
+        "max_topic_prob": 0.688261866569519,
+        "normalized_position": 0.24922826969943135,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "The last thing I needed was for them to fight. “",
+        "max_topic_prob": 0.6841853260993958,
+        "normalized_position": 0.4867587327376117,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 248
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Give me all you’ve got until all the fight’s left me.",
+        "max_topic_prob": 0.6810290813446045,
+        "normalized_position": 0.1478472786352559,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 342
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Major victory. “",
+        "max_topic_prob": 0.441805899143219,
+        "normalized_position": 0.5540653813914501,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "That’s what you meant about fighting his battles.” “",
+        "max_topic_prob": 0.7296633124351501,
+        "normalized_position": 0.05841726618705036,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I’ve gotten used to fighting his battles.”",
+        "max_topic_prob": 0.7040560841560364,
+        "normalized_position": 0.0339568345323741,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I can’t fight her.” “",
+        "max_topic_prob": 0.6910001635551453,
+        "normalized_position": 0.4497841726618705,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "I want to know what I’m fighting for.”",
+        "max_topic_prob": 0.6899866461753845,
+        "normalized_position": 0.6192805755395684,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Neil, we can fight later.”",
+        "max_topic_prob": 0.6572601199150085,
+        "normalized_position": 0.03251798561151079,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Otherwise, we’ll just fight about it some more.”",
+        "max_topic_prob": 0.6508532166481018,
+        "normalized_position": 0.5766906474820144,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Do not fight it.",
+        "max_topic_prob": 0.6247088313102722,
+        "normalized_position": 0.9310980103168754,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "not on this planet, unless you get into a fight with another—.” “Liar.” “",
+        "max_topic_prob": 0.6214343309402466,
+        "normalized_position": 0.40171333824613115,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 107
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "It’ll be hard to fight your father and the others, but you are capable.",
+        "max_topic_prob": 0.5809451937675476,
+        "normalized_position": 0.619933677229182,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "A battle commenced around her.",
+        "max_topic_prob": 0.5499733686447144,
+        "normalized_position": 0.9372697126013264,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "They had to continue fighting it, knowing the stakes ahead.",
+        "max_topic_prob": 0.5369162559509277,
+        "normalized_position": 0.44961311717022845,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She tried to fight it, but he was too damn strong.",
+        "max_topic_prob": 0.5355920791625977,
+        "normalized_position": 0.3208364038319823,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Don’t you want to fight for that?” “",
+        "max_topic_prob": 0.7256582975387573,
+        "normalized_position": 0.8572189664358019,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 820
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Ya two been fightin’ again?”",
+        "max_topic_prob": 0.6591135263442993,
+        "normalized_position": 0.3500266382525306,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 796
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Fight for her!”",
+        "max_topic_prob": 0.6431273221969604,
+        "normalized_position": 0.19832179009057005,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1489
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Why doesn’t he fight for her?” “",
+        "max_topic_prob": 0.6201764345169067,
+        "normalized_position": 0.5194459243473628,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "That’s how the Irish fight…with our fists.” “",
+        "max_topic_prob": 0.5889578461647034,
+        "normalized_position": 0.7557272242940863,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Oh Liam, you didn’t fight with Finn again, did you?”",
+        "max_topic_prob": 0.5761039853096008,
+        "normalized_position": 0.7553276505061268,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "They were fighting fiercely when I rode after you and Sir Francis.",
+        "max_topic_prob": 0.5826194286346436,
+        "normalized_position": 0.22668923684581746,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "With any other man, he would have settled this with a fight.",
+        "max_topic_prob": 0.5656030178070068,
+        "normalized_position": 0.8446889547185781,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 276
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "He kept me prisoner; he insisted on that fight.",
+        "max_topic_prob": 0.555675745010376,
+        "normalized_position": 0.6912117364931584,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 525
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Do you have witnesses to your fight with Sir Francis who can deny their story?’ ‘",
+        "max_topic_prob": 0.4530978798866272,
+        "normalized_position": 0.6422626604598674,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 178
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "His own blows were defensive though, no longer attacking.",
+        "max_topic_prob": 0.3665289878845215,
+        "normalized_position": 0.19452673155593173,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "sentence": "Cowards!’",
+        "max_topic_prob": 0.3618096709251404,
+        "normalized_position": 0.1162364226266046,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 176
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Hey, stop fighting!”",
+        "max_topic_prob": 0.7036299109458923,
+        "normalized_position": 0.3946210268948655,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I like you a lot, but I don't want you to be fighting all the time because of me.” “",
+        "max_topic_prob": 0.6733754277229309,
+        "normalized_position": 0.4146699266503667,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Heh, you ever even been in a fight, kitten?",
+        "max_topic_prob": 0.6523642539978027,
+        "normalized_position": 0.8210268948655257,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I've been... been trying so hard to fight it.”",
+        "max_topic_prob": 0.6506752967834473,
+        "normalized_position": 0.9667481662591687,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Please, stop fighting,” he croaked out, wincing at the sound of his voice.",
+        "max_topic_prob": 0.608287513256073,
+        "normalized_position": 0.3929095354523227,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 31
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You can roll over and die like the bastard coward you are, or you can finally take a stand for something and fight.” “",
+        "max_topic_prob": 0.5916324853897095,
+        "normalized_position": 0.6975550122249389,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 145
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Thanks to you two I’m ready for battle now.”",
+        "max_topic_prob": 0.6287719011306763,
+        "normalized_position": 0.5323764475615723,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I surrendered. “",
+        "max_topic_prob": 0.5198270678520203,
+        "normalized_position": 0.15641820257706737,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 269
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "You might have been physically able to resist, but it sounds like he had mentally bullied you for a long time prior to this, so it is no surprise that you might be too scared to fight back.",
+        "max_topic_prob": 0.3984289765357971,
+        "normalized_position": 0.1841461425542326,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "They are attacking civilization.",
+        "max_topic_prob": 0.38526567816734314,
+        "normalized_position": 0.785842440058718,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I can see I’m going to be outnumbered here.”",
+        "max_topic_prob": 0.5123690366744995,
+        "normalized_position": 0.7380336351875808,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 126
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.004428044280442804,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_A",
+        "share": 0.007602755999049656,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.0049172266841501396,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.004770164787510842,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.003493172435693871,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.005120910384068279,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0029542097488921715,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.008703220191470844,
+        "n_sentences": 30
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0004224757076468103,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0003252032520325203,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0009296272194849865,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0005541701302299807,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_D",
+        "share": 0.00041511000415110004,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_D",
+        "share": 0.0008532423208191126,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0006578947368421052,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 73
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

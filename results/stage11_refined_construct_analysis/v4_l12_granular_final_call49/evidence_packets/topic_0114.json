@@ -1,0 +1,722 @@
+{
+  "topic_id": 114,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "7.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "gun",
+        "pistol",
+        "rifle",
+        "barrel",
+        "holster",
+        "glock",
+        "weapon",
+        "guns",
+        "holstered",
+        "pointed"
+      ],
+      "KeyBERT": [
+        "weapons",
+        "aimed",
+        "pointing",
+        "flinched",
+        "motioned",
+        "choked",
+        "cocked",
+        "intently",
+        "ducked",
+        "gesturing"
+      ],
+      "POS": [
+        "partners",
+        "commander",
+        "distraction",
+        "ribs",
+        "weapons",
+        "suitcase",
+        "comfortable"
+      ],
+      "MMR": [
+        "fired",
+        "cocked",
+        "trained",
+        "sticking",
+        "bursting",
+        "gesturing",
+        "commander",
+        "playfully",
+        "instinctively",
+        "preparing"
+      ]
+    },
+    "stage08_snippets": [
+      "while [person] trussed up the englishman, caroline aimed her gun. “",
+      "barrette renewed his grip on the pistol, and aimed at lilly.",
+      "he was on his back, the chair across his legs, but his gun still aimed at [person]. “"
+    ],
+    "label_public": "Guns Aimed Across The Room"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "The weapon seemed to leap in her hand as she fired it, struck the man holding the boy between the eyes.",
+        "max_topic_prob": 0.7004640102386475,
+        "normalized_position": 0.5702346783724463,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 867
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She checked her weapon, settled it. \"",
+        "max_topic_prob": 0.6752777099609375,
+        "normalized_position": 0.13717710619618437,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1625
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "With a sealed hand, Eve turned back Mills's jacket, saw his weapon still holstered. \"",
+        "max_topic_prob": 0.6693257093429565,
+        "normalized_position": 0.28819854803309136,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 393
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She said it quickly, because she'd seen his hand tighten on his weapon. \"",
+        "max_topic_prob": 0.666796088218689,
+        "normalized_position": 0.9858179976363329,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2894
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "And the gun with it. \"",
+        "max_topic_prob": 0.6624463796615601,
+        "normalized_position": 0.9506162417693736,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2477
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "sentence": "She said it quietly, urgently, as he lifted his weapon and placed it to the pulse at his throat.",
+        "max_topic_prob": 0.6612160801887512,
+        "normalized_position": 0.9876751646125275,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2916
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lifting the weapon, she set it on its lowest setting and carefully sited it along the cut, firing off one quick burst.",
+        "max_topic_prob": 0.6589876413345337,
+        "normalized_position": 0.06626082884570358,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Coming upon him from behind, she placed the barrel of her weapon against the center of his back, directly over his heart. “",
+        "max_topic_prob": 0.6542091369628906,
+        "normalized_position": 0.1013814095059705,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She clotheslined the second with an extended arm, grabbing his weapon from his slackened grip even as he executed a flip.",
+        "max_topic_prob": 0.6469101905822754,
+        "normalized_position": 0.05104191055958792,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Lifting the weapon with an effort, she fired off several warning shots.",
+        "max_topic_prob": 0.6370183229446411,
+        "normalized_position": 0.0671973776633107,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Gasping at the wave of dizziness that washed over her, she dropped the locator to the pavement, picked up one of the weapons and smashed it with the butt.",
+        "max_topic_prob": 0.6102411150932312,
+        "normalized_position": 0.06462186841489112,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She climbed through the nearest opening and studied it, moving slowly through, her weapon at the ready.",
+        "max_topic_prob": 0.5913613438606262,
+        "normalized_position": 0.0695387497073285,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I turned and saw Jasmine holding a gun in her hands. “",
+        "max_topic_prob": 0.762588381767273,
+        "normalized_position": 0.9766265480551195,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I walked up to him and kicked his gun out of reach. “",
+        "max_topic_prob": 0.7183053493499756,
+        "normalized_position": 0.9584859584859585,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 235
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "I lowered the gun and put it back in my bag. “",
+        "max_topic_prob": 0.6831645369529724,
+        "normalized_position": 0.9630211058782487,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "Polo jerked back then looked at me in shock before his eyes rolled back in his head and he dropped the gun out of his hand.",
+        "max_topic_prob": 0.6396515369415283,
+        "normalized_position": 0.9581371009942439,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "A gunman turned and aimed his cannon at her, and thunder erupted.",
+        "max_topic_prob": 0.6014136672019958,
+        "normalized_position": 0.383743240886098,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 167
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "It was dark, and I waited in the kitchen with my gun in hand for him to come back downstairs.",
+        "max_topic_prob": 0.5847166776657104,
+        "normalized_position": 0.9506366649223792,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 190
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The gun lifted.",
+        "max_topic_prob": 0.7985397577285767,
+        "normalized_position": 0.8413717743969068,
+        "tertile": "end",
+        "chapter_index": 149,
+        "sentence_index": 435
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "A rifle was shoved in his hand then a handgun.",
+        "max_topic_prob": 0.7728154063224792,
+        "normalized_position": 0.2047743128519795,
+        "tertile": "begin",
+        "chapter_index": 37,
+        "sentence_index": 127
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "She gripped the automatic rifle she still carried in her hands. “",
+        "max_topic_prob": 0.7704033255577087,
+        "normalized_position": 0.5504917206018324,
+        "tertile": "middle",
+        "chapter_index": 98,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "The gun shook in her hand. “",
+        "max_topic_prob": 0.7696041464805603,
+        "normalized_position": 0.20739682272841892,
+        "tertile": "begin",
+        "chapter_index": 37,
+        "sentence_index": 283
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "she asked as he laid the weapon aside. “",
+        "max_topic_prob": 0.7361345291137695,
+        "normalized_position": 0.7675548457594351,
+        "tertile": "end",
+        "chapter_index": 138,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "As he brushed against her, she maneuvered her body until his hand brushed against the heavy weight of the gun she was carrying.",
+        "max_topic_prob": 0.733154833316803,
+        "normalized_position": 0.5480877532150963,
+        "tertile": "middle",
+        "chapter_index": 97,
+        "sentence_index": 168
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "she gasped, leveling the pistol at him. “",
+        "max_topic_prob": 0.7380657196044922,
+        "normalized_position": 0.6652813658317421,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "She leaned forward on her elbows, her right-hand fingers still curled around the butt of the pistol. “",
+        "max_topic_prob": 0.7226613163948059,
+        "normalized_position": 0.0932270021341121,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Considering he’d expected to see a pistol or a dagger, he was slightly relieved. “",
+        "max_topic_prob": 0.7091894149780273,
+        "normalized_position": 0.08087161630910929,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Before she could dive for the weapon again, however, he nudged her chair aside with his hip, opened the drawer, removed the pistol, and tossed it out the window. “",
+        "max_topic_prob": 0.6976691484451294,
+        "normalized_position": 0.1391665730652589,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 369
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Her heart drumming in an annoying combination of anger and alarm, she twisted to dig into the drawer where she kept her pistol.",
+        "max_topic_prob": 0.6764785051345825,
+        "normalized_position": 0.13815567786139504,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 360
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Over his shoulder the morning room door opened silently and Jenny appeared, a raised pistol in one hand. “",
+        "max_topic_prob": 0.6587832570075989,
+        "normalized_position": 0.7105470066269797,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 448
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The gun in his hand went off.",
+        "max_topic_prob": 0.8145108222961426,
+        "normalized_position": 0.8165407220822838,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 304
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She struck, knocking the gun out of the hand. “",
+        "max_topic_prob": 0.781181275844574,
+        "normalized_position": 0.7934508816120907,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Glen returned to her side, gun re-holstered. “",
+        "max_topic_prob": 0.7280781269073486,
+        "normalized_position": 0.25398824517212426,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 132
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Glen motioned for Sher to stay put, then got close enough to put his gun to the back of the guy’s head. “",
+        "max_topic_prob": 0.7043200731277466,
+        "normalized_position": 0.5146935348446684,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Slowly he pushed the door open then aimed his gun straight ahead, left, then right.",
+        "max_topic_prob": 0.698604941368103,
+        "normalized_position": 0.5100755667506297,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Behind her was a man with a gun in his hand, pointed directly at her temple. “",
+        "max_topic_prob": 0.6896146535873413,
+        "normalized_position": 0.41183879093198994,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He calmly turned the gun toward her. “",
+        "max_topic_prob": 0.8077340126037598,
+        "normalized_position": 0.8655248969235648,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Slowly, he shoved the gun in his waistband and turned to face her.",
+        "max_topic_prob": 0.7763698101043701,
+        "normalized_position": 0.8740881699968284,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "The stranger halted the forward movement by aiming the gun flat at Caleb’s chest. “",
+        "max_topic_prob": 0.7301313281059265,
+        "normalized_position": 0.8560101490643831,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 48
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "And pulled a gun out of his jacket pocket.",
+        "max_topic_prob": 0.7062329649925232,
+        "normalized_position": 0.8469711385981605,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "He calmly turned the gun back toward Caleb. “",
+        "max_topic_prob": 0.697277307510376,
+        "normalized_position": 0.8672692673644149,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "With a howl, the other man eased his grip on the gun.",
+        "max_topic_prob": 0.691100001335144,
+        "normalized_position": 0.8726609578179512,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "sentence": "I grabbed onto the fur behind his neck, and he bulleted down the mountain.",
+        "max_topic_prob": 0.5586894154548645,
+        "normalized_position": 0.21409155159291074,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He peered down the barrel of his gun, with his finger on the trigger. “",
+        "max_topic_prob": 0.8318710923194885,
+        "normalized_position": 0.7558208249615884,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He turned the gun on its side. “",
+        "max_topic_prob": 0.8100631833076477,
+        "normalized_position": 0.6552416971989127,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 432
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "The man lifted his eye from the gun. “",
+        "max_topic_prob": 0.7871456742286682,
+        "normalized_position": 0.7578300437300556,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Dexter barked as he holstered his rifle. “",
+        "max_topic_prob": 0.7169609069824219,
+        "normalized_position": 0.24926131662924003,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 14
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Dexter withdrew his pistol from his holster and brought it up to his waist, pointing it directly at Ben. “",
+        "max_topic_prob": 0.7026813626289368,
+        "normalized_position": 0.8887838316983808,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 418
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He shoved the pistol at Tobias but stopped. “",
+        "max_topic_prob": 0.6985586881637573,
+        "normalized_position": 0.6548871291809478,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 429
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.0029255589001251393,
+        "n_sentences": 173
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_A",
+        "share": 0.0027271177773990113,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.003208174904942966,
+        "n_sentences": 27
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.00282585658777817,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.004236290891974582,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.0028694404591104736,
+        "n_sentences": 18
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0023750282741461207,
+        "n_sentences": 21
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.007169970476592155,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_C",
+        "share": 0.0001095290251916758,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 49
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "7.2",
+    "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+    "taxonomy_secondary_id": "10.4",
+    "taxonomy_secondary_name": "Action & Weaponized Conflict",
+    "taxonomy_confidence": 0.9,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}
