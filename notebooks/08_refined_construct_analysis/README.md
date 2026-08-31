@@ -74,6 +74,16 @@ Writes under `results/stage11_refined_construct_analysis/<run_id>/human_review/`
 - `stage11_human_review_all_topics.md`
 - `stage11_human_review_h{1..6}.md`
 
+### Landscape survivors (Stage10 NB01 gate)
+
+38 topics with `|Cliff's delta| ≥ 0.11` and bootstrap CI excluding zero:
+
+```bash
+.venv/bin/python scripts/stage11/export_landscape_survivors_review_pdf.py
+```
+
+Writes `stage10_landscape_survivors_review.pdf` / `.md` and `landscape_survivors_decisions.json`.
+
 ### H3 + H4 manual freeze (apply both)
 
 ```bash
