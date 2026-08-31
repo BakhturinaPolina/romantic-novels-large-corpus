@@ -24,6 +24,7 @@ from .theme import (
     gate_lines,
     marker_for_gate,
     save_figure,
+    set_title_with_subtitle,
 )
 
 
@@ -31,7 +32,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
     cliffs = _read_table(paths.table("14_exploratory_presentation_results", "thematic_richness_cliffs_delta"))
     drivers = _read_table(paths.table("14_exploratory_presentation_results", "thematic_richness_vs_drivers"))
     apply_theme()
-    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.2))
+    fig, axes = plt.subplots(1, 2, figsize=(13.5, 5.6), gridspec_kw={"wspace": 0.45})
 
     # Panel A: raw vs rarefied taxonomy n_eff
     ax = axes[0]
@@ -44,10 +45,11 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
         ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.6)
         ax.scatter([r["cliffs_delta"]], [yi], color=C_POS, s=70, zorder=3)
         ax.text(
-            r["ci_high"] + 0.01,
-            yi,
+            r["cliffs_delta"],
+            yi + 0.18,
             f"δ={r['cliffs_delta']:.3f}",
-            va="center",
+            va="bottom",
+            ha="center",
             fontsize=9,
         )
     gate_lines(ax)
@@ -55,15 +57,16 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
     ax.set_yticklabels(labels)
     ax.set_xlabel("Cliff's δ (high − low)")
     ax.set_title("A. Unadjusted high–low contrast")
-    ax.set_xlim(-0.05, 0.35)
+    ax.set_xlim(-0.05, 0.32)
+    ax.set_ylim(-0.45, 1.55)
 
     # Panel B: M1 vs M2 coefficients
     ax = axes[1]
     m = drivers.loc[drivers["term"] == "taxonomy_n_eff"].copy()
     m["model_short"] = m["model"].map(
         {
-            "M1_richness_only": "M1: richness + length/year/genre",
-            "M2_richness_plus_drivers": "M2: + thematic drivers",
+            "M1_richness_only": "M1: richness +\nlength/year/genre",
+            "M2_richness_plus_drivers": "M2: + thematic\ndrivers",
         }
     )
     m = m.reset_index(drop=True)
@@ -73,10 +76,11 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
         ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.6)
         ax.scatter([r.coefficient], [yi], color=C_POS, s=70, zorder=3)
         ax.text(
-            r.ci_high + 0.0004,
-            yi,
+            r.coefficient,
+            yi + 0.18,
             f"β={r.coefficient:.4f}, p={r.p_value:.3g}",
-            va="center",
+            va="bottom",
+            ha="center",
             fontsize=9,
         )
         labels.append(r.model_short)
@@ -85,19 +89,23 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
     ax.set_yticklabels(labels)
     ax.set_xlabel("OLS coefficient on rating_shrunk (author-clustered SE)")
     ax.set_title("B. Adjusted richness (suppression in M2)")
+    xmax = float(m["ci_high"].max()) + 0.0015
+    ax.set_xlim(-0.001, xmax)
+    ax.set_ylim(-0.45, 1.55)
     fig.suptitle(
         "Thematic richness (exploratory): rarefaction weakens; drivers strengthen raw breadth",
         fontsize=13,
-        y=1.02,
+        y=0.98,
     )
     fig.text(
         0.5,
-        -0.02,
+        0.01,
         "Do not read M2 as “richness null after drivers” — coefficient increases (suppression).",
         ha="center",
         fontsize=9,
         color="#555555",
     )
+    fig.subplots_adjust(top=0.86, bottom=0.16, left=0.12, right=0.96)
     outs = save_figure(fig, paths.out_dir, "appendix_richness")
     return outs, _manifest_row(
         "appendix_richness",
@@ -120,7 +128,7 @@ def appendix_danger_protection(paths: PresentationPaths) -> Tuple[List, Dict]:
     q = quad.loc[quad["protection_index"] == spec].copy()
 
     apply_theme()
-    fig, ax = plt.subplots(figsize=(9.5, 5.5))
+    fig, ax = plt.subplots(figsize=(9.5, 6.0))
     # Two lines: higher vs lower protection across danger bins
     danger_order = ["lower_danger", "higher_danger"]
     x = np.arange(len(danger_order))
@@ -134,28 +142,27 @@ def appendix_danger_protection(paths: PresentationPaths) -> Tuple[List, Dict]:
             means.append(float(m.iloc[0]))
         ax.plot(x, means, color=color, ls=ls, marker="o", lw=2, label=prot.replace("_", " "))
         for xi, yi in zip(x, means):
-            ax.text(xi, yi + 0.002, f"{yi:.3f}", ha="center", fontsize=9, color=color)
+            ax.text(xi, yi + 0.004, f"{yi:.3f}", ha="center", fontsize=9, color=color)
 
     ax.set_xticks(x)
     ax.set_xticklabels(["Lower danger", "Higher danger"])
     ax.set_ylabel("Mean rating_shrunk")
-    ax.set_title("No reliable danger × protection interaction")
     p_int = float(row["z_danger_x_z_protection_p"])
-    ax.text(
-        0.0,
-        1.02,
+    p_strict = float(ix.loc[ix.protection_index == "strict t119 only", "z_danger_x_z_protection_p"].iloc[0])
+    p_broad = float(ix.loc[ix.protection_index == "broad enacted", "z_danger_x_z_protection_p"].iloc[0])
+    set_title_with_subtitle(
+        ax,
+        "No reliable danger × protection interaction",
         f"Exploratory · {spec} · interaction p = {p_int:.2f} "
-        f"(strict p={float(ix.loc[ix.protection_index=='strict t119 only','z_danger_x_z_protection_p'].iloc[0]):.2f}; "
-        f"broad p={float(ix.loc[ix.protection_index=='broad enacted','z_danger_x_z_protection_p'].iloc[0]):.2f})",
-        transform=ax.transAxes,
-        fontsize=9,
-        color=C_EXPL,
+        f"(strict p={p_strict:.2f}; broad p={p_broad:.2f})",
+        subtitle_color=C_EXPL,
     )
-    ax.legend(frameon=False, title="Protection")
+    ax.legend(frameon=False, title="Protection", loc="upper left")
     # Keep y-scale honest — avoid magnifying tiny rating differences
     vals = q["mean_rating"].astype(float)
     mid = float(vals.mean())
     ax.set_ylim(mid - 0.08, mid + 0.08)
+    fig.subplots_adjust(top=0.82)
     outs = save_figure(fig, paths.out_dir, "appendix_danger_protection_interaction")
     return outs, _manifest_row(
         "appendix_danger_protection",
@@ -178,20 +185,16 @@ def appendix_security_care_specificity(paths: PresentationPaths) -> Tuple[List, 
     n = len(families)
     ncols = 2
     nrows = int(np.ceil(n / ncols))
-    fig, axes = plt.subplots(nrows, ncols, figsize=(11, 3.2 * nrows), sharey=True)
+    fig, axes = plt.subplots(nrows, ncols, figsize=(12.5, 3.4 * nrows), sharey=True)
     axes = np.atleast_1d(axes).ravel()
     level_x = {"strict": 0, "moderate": 1, "broad": 2}
     for ax, fam in zip(axes, families):
         sub = traj.loc[traj["family"] == fam]
-        xs, ys, ylo, yhi = [], [], [], []
+        xmax = 0.15
         for _, r in sub.iterrows():
             if pd.isna(r["cliffs_delta"]):
-                ax.text(level_x[r["level"]], 0.0, "unmeas.", ha="center", color=C_UNMEAS, fontsize=9)
+                ax.text(0.0, level_x[r["level"]], "unmeas.", ha="center", color=C_UNMEAS, fontsize=9)
                 continue
-            xs.append(level_x[r["level"]])
-            ys.append(r["cliffs_delta"])
-            ylo.append(r["ci_low"])
-            yhi.append(r["ci_high"])
             ax.plot([r["ci_low"], r["ci_high"]], [level_x[r["level"]], level_x[r["level"]]], color=C_NEUTRAL, lw=1.3)
             face = "none" if int(r["n_topics"]) <= 1 else C_POS
             ax.scatter(
@@ -202,7 +205,15 @@ def appendix_security_care_specificity(paths: PresentationPaths) -> Tuple[List, 
                 s=60,
                 zorder=3,
             )
-            ax.text(r["ci_high"] + 0.01, level_x[r["level"]], f"n={int(r['n_topics'])}", va="center", fontsize=8)
+            ax.text(
+                r["ci_high"] + 0.012,
+                level_x[r["level"]],
+                f"n={int(r['n_topics'])}",
+                va="center",
+                fontsize=8,
+                clip_on=False,
+            )
+            xmax = max(xmax, float(r["ci_high"]) + 0.06)
         ax.axvline(0, color="#888", lw=0.8)
         ax.axvline(EFFECT_GATE, color="#666", ls="--", lw=0.8)
         ax.axvline(-EFFECT_GATE, color="#666", ls="--", lw=0.8)
@@ -210,14 +221,15 @@ def appendix_security_care_specificity(paths: PresentationPaths) -> Tuple[List, 
         ax.set_yticklabels(["strict", "moderate", "broad"])
         ax.set_title(fam.replace("_", " "))
         ax.set_xlabel("Cliff's δ")
+        ax.set_xlim(-0.28, xmax)
     for ax in axes[len(families) :]:
         ax.axis("off")
     fig.suptitle(
         "Security/care specificity (exploratory): effect by definition breadth",
         fontsize=13,
-        y=1.01,
+        y=0.995,
     )
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.97))
     outs = save_figure(fig, paths.out_dir, "appendix_security_care_specificity")
     return outs, _manifest_row(
         "appendix_security_care",
@@ -235,33 +247,27 @@ def appendix_promise_functions(paths: PresentationPaths) -> Tuple[List, Dict]:
     pr = _read_table(paths.table("14_exploratory_presentation_results", "promise_type_comparison_reused"))
     pr = pr.sort_values("cliffs_delta").reset_index(drop=True)
     apply_theme()
-    fig, ax = plt.subplots(figsize=(11, 6))
+    fig, ax = plt.subplots(figsize=(11.5, 6.6))
     y = np.arange(len(pr))
+    xmax = float(pr["ci_high"].max()) + 0.08
     for yi, r in pr.iterrows():
         ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.5)
         thin = int(r["n_topics"]) <= 2
         face = "none" if thin else C_POS
         ax.scatter([r["cliffs_delta"]], [yi], facecolors=face, edgecolors=C_POS, s=70, zorder=3)
         flag = " ⚠ few topics" if thin else ""
-        ax.text(0.28, yi, f"n={int(r['n_topics'])}{flag}", va="center", fontsize=9, color=C_THIN if thin else C_NEUTRAL)
-    gate_lines(ax)
-    ax.set_yticks(y)
-    ax.set_yticklabels(pr["promise_type"].str.replace("_", " "))
-    ax.set_xlabel("Cliff's δ")
-    ax.set_title("Promise-function effects (exploratory)")
-    ax.text(
-        0.0,
-        1.02,
-        "Open markers / flags = bundles with ≤2 topics (e.g. protective commitment n=4 still thin-ish)",
-        transform=ax.transAxes,
-        fontsize=9,
-        color=C_EXPL,
-    )
-    # Explicitly flag protective_commitment
-    for yi, r in pr.iterrows():
+        ax.text(
+            xmax - 0.01,
+            yi,
+            f"n={int(r['n_topics'])}{flag}",
+            va="center",
+            ha="right",
+            fontsize=9,
+            color=C_THIN if thin else C_NEUTRAL,
+        )
         if r["promise_type"] == "protective_commitment":
             ax.text(
-                r["ci_low"] - 0.01,
+                r["ci_low"] - 0.012,
                 yi,
                 "4-topic bundle",
                 ha="right",
@@ -269,7 +275,18 @@ def appendix_promise_functions(paths: PresentationPaths) -> Tuple[List, Dict]:
                 fontsize=8,
                 color=C_THIN,
             )
-    fig.subplots_adjust(left=0.28)
+    gate_lines(ax)
+    ax.set_yticks(y)
+    ax.set_yticklabels(pr["promise_type"].str.replace("_", " "))
+    ax.set_xlabel("Cliff's δ")
+    set_title_with_subtitle(
+        ax,
+        "Promise-function effects (exploratory)",
+        "Open markers / flags = bundles with ≤2 topics",
+        subtitle_color=C_EXPL,
+    )
+    ax.set_xlim(float(pr["ci_low"].min()) - 0.08, xmax)
+    fig.subplots_adjust(left=0.28, top=0.82, right=0.96)
     outs = save_figure(fig, paths.out_dir, "appendix_promise_functions")
     return outs, _manifest_row(
         "appendix_promise",
@@ -295,8 +312,17 @@ def appendix_quality_reach(paths: PresentationPaths) -> Tuple[List, Dict]:
         "RAX_external_protection",
         "RLR_emotional_vs_explicit",
     }
+    # Manual offsets to keep focal labels from colliding
+    offsets = {
+        "RAX_appearance_grooming": (6, 8),
+        "RAX_tenderness_core": (6, -10),
+        "RAX_emotional_reassurance": (6, 8),
+        "RAX_external_danger_crisis": (-8, -14),
+        "RAX_external_protection": (6, -8),
+        "RLR_emotional_vs_explicit": (6, 6),
+    }
     apply_theme()
-    fig, ax = plt.subplots(figsize=(8.5, 7))
+    fig, ax = plt.subplots(figsize=(9.0, 7.4))
     ax.axhline(0, color="#888", lw=0.8)
     ax.axvline(0, color="#888", lw=0.8)
     for _, r in qr.iterrows():
@@ -315,16 +341,18 @@ def appendix_quality_reach(paths: PresentationPaths) -> Tuple[List, Dict]:
             zorder=3 if is_focal else 2,
         )
         if is_focal:
+            dx, dy = offsets.get(feat, (6, 4))
             ax.annotate(
                 feat.replace("RAX_", "").replace("RLR_", ""),
                 (r["quality"], r["reach"]),
                 textcoords="offset points",
-                xytext=(6, 4),
+                xytext=(dx, dy),
                 fontsize=9,
+                ha="right" if dx < 0 else "left",
             )
     ax.set_xlabel("Standardized quality β")
     ax.set_ylabel("Standardized reach β")
-    ax.set_title("Quality vs reach (exploratory; faded = quality p≥.05)")
+    ax.set_title("Quality vs reach (exploratory; faded = quality p≥.05)", pad=12)
     outs = save_figure(fig, paths.out_dir, "appendix_quality_reach")
     return outs, _manifest_row(
         "appendix_quality_reach",
@@ -341,7 +369,7 @@ def appendix_quality_reach(paths: PresentationPaths) -> Tuple[List, Dict]:
 def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
     drift = _read_table(paths.table("10_contextual_validation", "cell_stability_by_hypothesis"))
     apply_theme()
-    fig, ax = plt.subplots(figsize=(9.5, 4.8))
+    fig, ax = plt.subplots(figsize=(10.0, 5.4))
     # Order by pct_differs desc
     d = drift.sort_values("pct_differs", ascending=True)
     y = np.arange(len(d))
@@ -351,7 +379,7 @@ def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
     ax.barh(y, drifted, left=stable, color=C_NEG, label="Drifted function")
     for yi, r in zip(y, d.itertuples()):
         ax.text(
-            101,
+            102,
             yi,
             f"{int(r.n_differs)}/{int(r.n_with_both_high_prev)} ({100 * r.pct_differs:.0f}%)",
             va="center",
@@ -359,18 +387,15 @@ def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
         )
     ax.set_yticks(y)
     ax.set_yticklabels(d["hypothesis"])
-    ax.set_xlim(0, 125)
+    ax.set_xlim(0, 130)
     ax.set_xlabel("Share of comparable topics (%)")
-    ax.set_title("Contextual function drift (methodological)")
-    ax.text(
-        0.0,
-        1.02,
+    set_title_with_subtitle(
+        ax,
+        "Contextual function drift (methodological)",
         "H2 absent from this table (insufficient comparable cells). Exploratory/appendix only.",
-        transform=ax.transAxes,
-        fontsize=9,
-        color="#555555",
     )
-    ax.legend(frameon=False, loc="lower right")
+    ax.legend(frameon=True, loc="lower left", framealpha=0.95, edgecolor="#dddddd")
+    fig.subplots_adjust(top=0.82, right=0.92)
     outs = save_figure(fig, paths.out_dir, "appendix_function_drift")
     return outs, _manifest_row(
         "appendix_function_drift",
@@ -387,11 +412,12 @@ def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
 def appendix_felt_vs_looked(paths: PresentationPaths) -> Tuple[List, Dict]:
     felt = _read_table(paths.table("15_emotion_embodiment_social_world_exploration", "felt_vs_looked_body"))
     apply_theme()
-    fig, ax = plt.subplots(figsize=(10.5, 5.8))
+    fig, ax = plt.subplots(figsize=(11.0, 6.4))
     # Put logratio first visually
     order = ["felt_vs_looked_logratio", "felt_body", "looked_at_body", "body_interoceptive", "body_vulnerable", "body_markings", "body_external_appearance", "body_grooming"]
     felt = felt.set_index("construct").loc[[c for c in order if c in set(felt["construct"])]].reset_index()
     y = np.arange(len(felt))[::-1]
+    xmax = float(felt["ci_high"].max()) + 0.06
     for yi, r in zip(y, felt.itertuples()):
         ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.5)
         status = str(r.status) if pd.notna(r.status) else "measurable"
@@ -399,22 +425,20 @@ def appendix_felt_vs_looked(paths: PresentationPaths) -> Tuple[List, Dict]:
         face = "none" if thin else C_POS
         ax.scatter([r.cliffs_delta], [yi], facecolors=face, edgecolors=C_POS, s=70, zorder=3)
         nlab = f"n={int(r.n_topics)}" if pd.notna(r.n_topics) else "ratio"
-        ax.text(0.20, yi, nlab + (" ⚠" if thin else ""), va="center", fontsize=9)
+        ax.text(xmax - 0.005, yi, nlab + (" ⚠" if thin else ""), va="center", ha="right", fontsize=9)
     gate_lines(ax)
     ax.set_yticks(y)
     ax.set_yticklabels(felt["construct"].str.replace("_", " "))
     ax.set_xlabel("Cliff's δ")
-    ax.set_title("Felt vs looked-at embodiment (exploratory / post-hoc)")
-    ax.text(
-        0.0,
-        1.02,
+    set_title_with_subtitle(
+        ax,
+        "Felt vs looked-at embodiment (exploratory / post-hoc)",
         "Exploratory — open marker = thin / one-topic construct",
-        transform=ax.transAxes,
-        fontsize=10,
-        color=C_EXPL,
-        fontweight="bold",
+        subtitle_color=C_EXPL,
+        subtitle_weight="bold",
     )
-    fig.subplots_adjust(left=0.28)
+    ax.set_xlim(float(felt["ci_low"].min()) - 0.04, xmax)
+    fig.subplots_adjust(left=0.30, top=0.82, right=0.96)
     outs = save_figure(fig, paths.out_dir, "appendix_felt_vs_looked")
     return outs, _manifest_row(
         "appendix_felt_vs_looked",
@@ -436,7 +460,7 @@ def appendix_ees_three_panel(paths: PresentationPaths) -> Tuple[List, Dict]:
     embod = embod.loc[~embod["construct"].isin(["felt_body", "looked_at_body", "felt_vs_looked_logratio"])]
 
     apply_theme()
-    fig, axes = plt.subplots(1, 3, figsize=(14.5, 6.2), sharex=True)
+    fig, axes = plt.subplots(1, 3, figsize=(16.0, 6.8), sharex=True, gridspec_kw={"wspace": 0.55})
     panels = [
         (axes[0], emotion, "Emotion regulation", "construct"),
         (axes[1], embod, "Embodiment", "construct"),
@@ -455,7 +479,14 @@ def appendix_ees_three_panel(paths: PresentationPaths) -> Tuple[List, Dict]:
             ax.scatter([r["cliffs_delta"]], [yi], facecolors=face, edgecolors=C_POS, s=55, zorder=3)
         gate_lines(ax)
         ax.set_yticks(y)
-        ax.set_yticklabels(df[col].str.replace("_", " ").str.replace("emotion ", "").str.replace("body ", ""))
+        labels = (
+            df[col]
+            .str.replace("_", " ")
+            .str.replace("emotion ", "")
+            .str.replace("body ", "")
+            .str.replace("supportive social embeddedness", "supportive\nsocial emb.")
+        )
+        ax.set_yticklabels(labels, fontsize=9)
         ax.set_title(title)
         ax.set_xlabel("Cliff's δ")
         # Highlight emotion_containment
@@ -463,8 +494,8 @@ def appendix_ees_three_panel(paths: PresentationPaths) -> Tuple[List, Dict]:
             idx = df.index[df["construct"] == "emotion_containment"][0]
             ax.get_yticklabels()[list(df.index).index(idx)].set_fontweight("bold")
 
-    fig.suptitle("Exploratory associations with higher ratings", fontsize=14, color=C_EXPL, y=1.02)
-    fig.tight_layout()
+    fig.suptitle("Exploratory associations with higher ratings", fontsize=14, color=C_EXPL, y=0.98)
+    fig.subplots_adjust(left=0.08, right=0.98, top=0.88, bottom=0.10, wspace=0.55)
     outs = save_figure(fig, paths.out_dir, "appendix_ees_three_panel")
     return outs, _manifest_row(
         "appendix_ees",
@@ -497,7 +528,7 @@ def appendix_genre_era(paths: PresentationPaths) -> Tuple[List, Dict]:
 
     comps = load_components(paths).set_index("feature")
     apply_theme()
-    fig, axes = plt.subplots(2, 2, figsize=(11.5, 8), sharex=False)
+    fig, axes = plt.subplots(2, 2, figsize=(14.5, 10.0), sharex=False)
     axes = axes.ravel()
     for ax, feat in zip(axes, focal):
         sub = ge.loc[ge["feature"] == feat].copy()
@@ -509,15 +540,20 @@ def appendix_genre_era(paths: PresentationPaths) -> Tuple[List, Dict]:
             ax.axvline(overall, color=C_POS, lw=1.5, label=f"overall δ={overall:.3f}")
         ax.axvline(0, color="#888", lw=0.8)
         ax.scatter(sub["cliffs_delta"], y, color="#666666", s=45)
-        labels = [f"{r.group_type}:{r.group} (nₕ={int(r.n_high)}, nₗ={int(r.n_low)})" for r in sub.itertuples()]
+        labels = [f"{r.group_type}:{r.group}  (nₕ={int(r.n_high)}, nₗ={int(r.n_low)})" for r in sub.itertuples()]
         ax.set_yticks(y)
         ax.set_yticklabels(labels, fontsize=8)
         ax.set_title(feat.replace("RAX_", ""))
         ax.set_xlabel("Cliff's δ")
+        ax.set_ylim(-0.6, len(sub) - 0.4)
         if pd.notna(overall):
-            ax.legend(frameon=False, fontsize=8, loc="best")
-    fig.suptitle("Genre/era subgroup stability (appendix; uncertainty via n, not formal CI)", fontsize=13)
-    fig.tight_layout()
+            ax.legend(frameon=True, fontsize=8, loc="upper left", framealpha=0.92, edgecolor="#dddddd")
+    fig.suptitle(
+        "Genre/era subgroup stability (appendix; uncertainty via n, not formal CI)",
+        fontsize=13,
+        y=0.995,
+    )
+    fig.tight_layout(rect=(0, 0, 1, 0.96), h_pad=2.2, w_pad=2.5)
     outs = save_figure(fig, paths.out_dir, "appendix_genre_era")
     return outs, _manifest_row(
         "appendix_genre_era",

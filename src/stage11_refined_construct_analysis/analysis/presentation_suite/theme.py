@@ -49,12 +49,60 @@ def apply_theme() -> None:
     )
 
 
+def set_title_with_subtitle(
+    ax,
+    title: str,
+    subtitle: str | None = None,
+    *,
+    title_size: float = 14,
+    subtitle_size: float = 10,
+    subtitle_color: str = "#555555",
+    subtitle_weight: str = "normal",
+    loc: str = "left",
+) -> None:
+    """Place title and optional subtitle without colliding.
+
+    Avoids the common bug of ``ax.set_title`` + ``ax.text(..., y=1.02)`` stacking
+    in the same band. Subtitle sits below the title (both above the axes).
+    """
+    ha = {"left": "left", "center": "center", "right": "right"}.get(loc, "left")
+    x = {"left": 0.0, "center": 0.5, "right": 1.0}.get(loc, 0.0)
+    if subtitle:
+        ax.set_title("")  # clear default title slot
+        ax.text(
+            x,
+            1.16,
+            title,
+            transform=ax.transAxes,
+            ha=ha,
+            va="bottom",
+            fontsize=title_size,
+            fontweight="bold",
+            color=C_NEUTRAL,
+            clip_on=False,
+        )
+        ax.text(
+            x,
+            1.06,
+            subtitle,
+            transform=ax.transAxes,
+            ha=ha,
+            va="bottom",
+            fontsize=subtitle_size,
+            color=subtitle_color,
+            fontweight=subtitle_weight,
+            clip_on=False,
+        )
+    else:
+        ax.set_title(title, fontsize=title_size, loc=loc if loc in ("left", "center", "right") else "center")
+
+
 def save_figure(fig: plt.Figure, out_dir: Path, stem: str) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
     for ext in ("png", "pdf"):
         p = out_dir / f"{stem}.{ext}"
-        fig.savefig(p, bbox_inches="tight", pad_inches=0.25)
+        fig.savefig(p, bbox_inches="tight", pad_inches=0.35)
         paths.append(p)
     plt.close(fig)
     return paths
