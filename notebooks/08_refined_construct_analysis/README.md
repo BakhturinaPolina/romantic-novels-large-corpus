@@ -98,6 +98,17 @@ See `human_review/post_freeze_claim_hierarchy.md` for confirmatory vs explorator
 
 **Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Notebook **15** is a separate post-hoc exploration of emotion/embodiment/social world (full-corpus candidate retrieval; rating-blind coding; provisional freeze until `frozen: true`). None of 12, 14, or 15 changes H1–H6 confirmatory verdicts.
 
+### Presentation figures (audited rebuild)
+
+Rebuild presentation/appendix figures from saved Stage 11 tables (does not re-estimate models):
+
+```bash
+.venv/bin/python scripts/stage11/build_presentation_figures.py
+```
+
+Writes `results/stage11_refined_construct_analysis/<run_id>/presentation_figures/`.  
+Guide + audit: `notebooks/08_refined_construct_analysis/presentation_figures/`.
+
 ### Notebook 15 — emotion / embodiment / social world
 
 ```bash

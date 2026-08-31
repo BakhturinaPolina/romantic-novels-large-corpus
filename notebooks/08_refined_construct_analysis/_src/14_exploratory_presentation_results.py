@@ -439,14 +439,20 @@ if len(quad):
 #   fine-grained topic \(e^H\) is larger still (δ ≈ **+.24**), with top-10 concentration
 #   lower among high-rated books.
 # - After controlling for length, year, and genre, **taxonomy** richness is only
-#   marginal; **rarefied** taxonomy richness is essentially null. So length opportunity
-#   explains much of the leaf-level association.
-# - Once reassurance, appearance, danger, and tenderness enter the regression, richness
-#   no longer carries independent information.
+#   marginal (M1 `taxonomy_n_eff` β ≈ 0.0024, p ≈ 0.065); **rarefied** taxonomy
+#   richness is essentially null (p ≈ 0.61). So length opportunity explains much of
+#   the leaf-level association.
+# - Once reassurance, appearance, danger, and tenderness enter (M2), raw
+#   `taxonomy_n_eff` **strengthens** (β ≈ 0.0066, p &lt; 0.001) — a suppression
+#   pattern, not attenuation. Richness therefore carries *more* independent
+#   predictive signal after those drivers are held constant. This remains
+#   exploratory: rarefaction still nullifies the leaf-level story, and breadth
+#   alone is not a confirmatory H1–H6 finding.
 #
-# **Presentation line:** higher-rated romance differs more in *which* themes receive
-# attention (and in security/care mixtures) than in simply containing “more themes.”
-# Breadth alone is not a confirmatory finding.
+# **Presentation line:** higher-rated romance differs in *which* themes receive
+# attention (and in security/care mixtures); raw taxonomy breadth also shows a
+# suppressed partial association after drivers, but rarefied breadth does not
+# survive, so “more themes” is not a clean confirmatory claim.
 
 # %% [markdown]
 # ## Section 3 — Where does narrative attention move?
