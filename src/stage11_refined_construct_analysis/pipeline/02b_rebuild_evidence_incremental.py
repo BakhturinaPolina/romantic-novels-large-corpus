@@ -49,34 +49,85 @@ def _write_one_packet(cfg, tid: int, packet: dict) -> Path:
     return path
 
 
-def _refresh_index(cfg, topic_ids: list[int]) -> Path:
+def _refresh_index(cfg, topic_ids: list[int] | None = None) -> Path:
+    """Refresh index for all on-disk packets (optionally ensure topic_ids are included)."""
     out_dir = cfg.output_path("evidence_packets_dir", create=True)
+    paths = sorted(out_dir.glob("topic_*.json"))
+    if topic_ids is not None:
+        wanted = {int(t) for t in topic_ids}
+        present = {
+            int(p.stem.split("_")[1]) for p in paths if p.stem.startswith("topic_")
+        }
+        missing = sorted(wanted - present)
+        if missing:
+            LOGGER.warning("Index refresh: packets still missing for %s", missing)
     index = []
-    for tid in sorted(topic_ids):
-        path = out_dir / f"topic_{int(tid):04d}.json"
-        if not path.exists():
+    for path in paths:
+        try:
+            tid = int(path.stem.split("_")[1])
+        except (IndexError, ValueError):
             continue
         packet = json.loads(path.read_text(encoding="utf-8"))
         index.append(
             {
-                "topic_id": int(tid),
+                "topic_id": tid,
                 "path": str(path.relative_to(cfg.root)),
                 "exhaustive": bool(packet.get("exhaustive")),
                 "n_sentences": len(packet.get("contextual", {}).get("sentences", [])),
                 "n_books": len(packet.get("contextual", {}).get("books_sampled", [])),
+                "design": (packet.get("contextual", {}) or {})
+                .get("sampling", {})
+                .get("design"),
             }
         )
+    index.sort(key=lambda r: r["topic_id"])
     index_path = out_dir / "index.json"
     index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
     return index_path
+
+
+def _parse_topic_ids(args: argparse.Namespace) -> list[int]:
+    ids: list[int] = []
+    if args.topic_ids:
+        for chunk in str(args.topic_ids).replace(",", " ").split():
+            if chunk.strip():
+                ids.append(int(chunk.strip()))
+    elif args.topic_ids_file:
+        ids = [
+            int(x)
+            for x in Path(args.topic_ids_file).read_text(encoding="utf-8").split()
+            if x.strip()
+        ]
+    else:
+        raise SystemExit("Provide --topic-ids or --topic-ids-file")
+    # preserve order, drop dupes
+    seen: set[int] = set()
+    out: list[int] = []
+    for tid in ids:
+        if tid not in seen:
+            seen.add(tid)
+            out.append(tid)
+    return out
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default=DEFAULT_CONFIG_PATH)
     parser.add_argument(
+        "--topic-ids",
+        default="",
+        help="Comma/space-separated topic IDs (preferred for small rebuilds)",
+    )
+    parser.add_argument(
         "--topic-ids-file",
-        default="results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/candidates/audit_topic_ids.txt",
+        default="",
+        help="Whitespace-separated topic ID file (used when --topic-ids is empty)",
+    )
+    parser.add_argument(
+        "--sampling-design",
+        default="prevalence_x_rating",
+        choices=["prevalence_x_rating", "position_x_books"],
+        help="Force packet sampling design (default: prevalence_x_rating)",
     )
     parser.add_argument("--skip-existing-with-sentences", action="store_true")
     args = parser.parse_args(argv)
@@ -85,11 +136,12 @@ def main(argv: list[str] | None = None) -> int:
     cfg = load_stage11_config(args.config)
     cfg.ensure_output_tree()
 
-    ids = [
-        int(x)
-        for x in Path(args.topic_ids_file).read_text(encoding="utf-8").split()
-        if x.strip()
-    ]
+    if not args.topic_ids and not args.topic_ids_file:
+        args.topic_ids_file = (
+            "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/"
+            "candidates/audit_topic_ids.txt"
+        )
+    ids = _parse_topic_ids(args)
     lookup = load_topic_lookup(cfg)
     metadata = load_topic_metadata(cfg)
     rep_docs = load_representative_docs(cfg)
@@ -102,6 +154,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     sentence_files = cfg.sentence_topic_files()
     out_dir = cfg.output_path("evidence_packets_dir", create=True)
+    # Preserve H6 position packets before overwriting with prevalence×rating.
+    position_backup = (
+        cfg.root
+        / "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49"
+        / "h6_radway_day/position_packets"
+    )
 
     t0 = time.time()
     done = 0
@@ -111,13 +169,41 @@ def main(argv: list[str] | None = None) -> int:
         if args.skip_existing_with_sentences and path.exists():
             existing = json.loads(path.read_text(encoding="utf-8"))
             n = len(existing.get("contextual", {}).get("sentences", []) or [])
-            if n > 0:
+            design = (
+                (existing.get("contextual") or {}).get("sampling") or {}
+            ).get("design")
+            # Do not skip position packets when forcing prevalence×rating.
+            if n > 0 and (
+                args.sampling_design == "position_x_books"
+                or design == args.sampling_design
+            ):
                 LOGGER.info("[%d/%d] skip topic %s (already %d sentences)", i, len(ids), tid, n)
                 done += 1
                 with_sents += 1
                 continue
 
-        LOGGER.info("[%d/%d] building topic %s", i, len(ids), tid)
+        if (
+            path.exists()
+            and args.sampling_design == "prevalence_x_rating"
+        ):
+            existing = json.loads(path.read_text(encoding="utf-8"))
+            design = (
+                (existing.get("contextual") or {}).get("sampling") or {}
+            ).get("design")
+            if design == "position_x_books":
+                position_backup.mkdir(parents=True, exist_ok=True)
+                bak = position_backup / path.name
+                if not bak.exists():
+                    bak.write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+                    LOGGER.info("  preserved position packet → %s", bak)
+
+        LOGGER.info(
+            "[%d/%d] building topic %s (design=%s)",
+            i,
+            len(ids),
+            tid,
+            args.sampling_design,
+        )
         packet = build_evidence_packet(
             cfg,
             int(tid),
@@ -129,6 +215,7 @@ def main(argv: list[str] | None = None) -> int:
             cell_key=cell_key,
             sentence_files=sentence_files,
             include_contextual=True,
+            sampling_design=args.sampling_design,
         )
         _write_one_packet(cfg, int(tid), packet)
         n = len(packet.get("contextual", {}).get("sentences", []) or [])
@@ -139,9 +226,10 @@ def main(argv: list[str] | None = None) -> int:
         rate = done / elapsed
         eta = (len(ids) - i) / rate if rate > 0 else -1
         LOGGER.info(
-            "  → n_sentences=%d n_books=%d elapsed=%.0fs ETA≈%.0fs (%.1f/min)",
+            "  → n_sentences=%d n_books=%d design=%s elapsed=%.0fs ETA≈%.0fs (%.1f/min)",
             n,
             len(packet.get("contextual", {}).get("books_sampled", [])),
+            (packet.get("contextual") or {}).get("sampling", {}).get("design"),
             elapsed,
             eta,
             rate * 60,
@@ -161,6 +249,7 @@ def main(argv: list[str] | None = None) -> int:
         "n_topics": len(ids),
         "n_written": done,
         "n_with_sentences": with_sents,
+        "sampling_design": args.sampling_design,
         "elapsed_s": time.time() - t0,
     }
     out_path = cfg.output_path("evidence_packets_dir") / "rebuild_summary.json"

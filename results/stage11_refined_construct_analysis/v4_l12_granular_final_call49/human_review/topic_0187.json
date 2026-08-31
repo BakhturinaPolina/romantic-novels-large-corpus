@@ -1,0 +1,156 @@
+{
+  "topic_id": 187,
+  "label": "Admitting Everything Has Gone Wrong",
+  "taxonomy_main_id": "uncertain_interpretable",
+  "taxonomy_main_name": "Interpretable but Not Axis-Safe",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "handle",
+      "fucked",
+      "screw",
+      "screwed",
+      "messed",
+      "deal",
+      "can",
+      "up",
+      "handled",
+      "don"
+    ],
+    "KeyBERT": [
+      "handled",
+      "messed",
+      "dealt",
+      "expect",
+      "holds",
+      "surely"
+    ],
+    "POS": [
+      "addition",
+      "occasional",
+      "regular",
+      "task",
+      "emotional",
+      "pregnant"
+    ],
+    "MMR": [
+      "messed",
+      "handled",
+      "addition",
+      "pinned",
+      "task",
+      "holds",
+      "emotional",
+      "em",
+      "pregnant",
+      "expect"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ve got things handled here.",
+    "it’ll be handled by then.”",
+    "we’ve messed up everything."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_middle_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.43164763458401306,
+      "max_topic_prob": 0.6398859024047852,
+      "sentence": "Don’t mess with me.” “"
+    },
+    {
+      "sid": "BOOK_001_middle_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.47949972811310493,
+      "max_topic_prob": 0.6150963306427002,
+      "sentence": "You messed up?”"
+    },
+    {
+      "sid": "BOOK_001_middle_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.47971723762914625,
+      "max_topic_prob": 0.5162887573242188,
+      "sentence": "This woman may have taken all of our ideas, which will bring in millions, and all you can say is that you messed up?”"
+    },
+    {
+      "sid": "BOOK_001_middle_6",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4920065252854812,
+      "max_topic_prob": 0.49004656076431274,
+      "sentence": "I will get through this."
+    },
+    {
+      "sid": "BOOK_001_end_3",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.6780859162588363,
+      "max_topic_prob": 0.5963705778121948,
+      "sentence": "But I’m going to fix it.” “"
+    },
+    {
+      "sid": "BOOK_001_end_5",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9414899401848831,
+      "max_topic_prob": 0.5118496417999268,
+      "sentence": "I wasn’t trying to con you.” “"
+    },
+    {
+      "sid": "BOOK_002_begin_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.09095554420030659,
+      "max_topic_prob": 0.5145384073257446,
+      "sentence": "“I’m just overly bossy and stubborn."
+    },
+    {
+      "sid": "BOOK_002_middle_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.34644864588656105,
+      "max_topic_prob": 0.5082966685295105,
+      "sentence": "I’m not letting you trick me again.”"
+    },
+    {
+      "sid": "BOOK_003_begin_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.18020417221482468,
+      "max_topic_prob": 0.5991994142532349,
+      "sentence": "And if he can’t handle that, then he isn’t worth your time.”"
+    },
+    {
+      "sid": "BOOK_003_begin_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2332445628051487,
+      "max_topic_prob": 0.5130776762962341,
+      "sentence": "Don’t settle.”"
+    },
+    {
+      "sid": "BOOK_003_middle_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4633821571238349,
+      "max_topic_prob": 0.5515204668045044,
+      "sentence": "I’m hoping that I can make up for it.” “"
+    },
+    {
+      "sid": "BOOK_003_middle_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5250776742121616,
+      "max_topic_prob": 0.5509792566299438,
+      "sentence": "You know, I can get in a lot of trouble for this?”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

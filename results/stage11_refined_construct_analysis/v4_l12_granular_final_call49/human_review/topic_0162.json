@@ -1,0 +1,164 @@
+{
+  "topic_id": 162,
+  "label": "Struggling to Catch Breath",
+  "taxonomy_main_id": "1.1",
+  "taxonomy_main_name": "Body Parts & Physical Reactions",
+  "taxonomy_secondary_id": "1.2",
+  "taxonomy_secondary_name": "Pain, Injury & Physical Vulnerability",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "breath",
+      "breathe",
+      "deep",
+      "breathing",
+      "took",
+      "exhale",
+      "sucked",
+      "inhaled",
+      "lungs",
+      "catch"
+    ],
+    "KeyBERT": [
+      "breaths",
+      "lungs",
+      "breathed",
+      "exhaled",
+      "blowing",
+      "gasp",
+      "terrified",
+      "pressure",
+      "flowed",
+      "rushed"
+    ],
+    "POS": [
+      "breaths",
+      "lungs",
+      "internal",
+      "gasp",
+      "moaning",
+      "stool",
+      "exchange",
+      "insides",
+      "sentence",
+      "damp"
+    ],
+    "MMR": [
+      "breaths",
+      "lungs",
+      "faltered",
+      "flowed",
+      "moaning",
+      "blowing",
+      "breathed",
+      "terrified",
+      "pounded",
+      "damp"
+    ]
+  },
+  "stage08_snippets": [
+    "ragged, unsteady breaths grated from my lungs.",
+    "we’ll just stop moving until you catch your breath.",
+    "you’ll have to hold your breath through the thick of it.” “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.2641405214317278,
+      "max_topic_prob": 0.8360037803649902,
+      "sentence": "I let out a breath. “"
+    },
+    {
+      "sid": "BOOK_001_begin_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.041427308882015026,
+      "max_topic_prob": 0.8360037803649902,
+      "sentence": "I let out a breath. “"
+    },
+    {
+      "sid": "BOOK_001_begin_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.10980998674326116,
+      "max_topic_prob": 0.8293684720993042,
+      "sentence": "I let out a long breath. “"
+    },
+    {
+      "sid": "BOOK_001_middle_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3827883340698188,
+      "max_topic_prob": 0.8469815254211426,
+      "sentence": "I sucked in a deep breath. “"
+    },
+    {
+      "sid": "BOOK_001_middle_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6347768448961556,
+      "max_topic_prob": 0.8405313491821289,
+      "sentence": "I sucked in a breath. “"
+    },
+    {
+      "sid": "BOOK_001_middle_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3379363676535572,
+      "max_topic_prob": 0.8360037803649902,
+      "sentence": "I let out a breath. “"
+    },
+    {
+      "sid": "BOOK_002_end_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8902392707937714,
+      "max_topic_prob": 0.6832290291786194,
+      "sentence": "I feel in need of a breath of air,’ said Anna. ‘"
+    },
+    {
+      "sid": "BOOK_002_end_2",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.9382833270034181,
+      "max_topic_prob": 0.5188455581665039,
+      "sentence": "Are you taking the air?’"
+    },
+    {
+      "sid": "BOOK_003_begin_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.1790733992712129,
+      "max_topic_prob": 0.7374168634414673,
+      "sentence": "I take a slow, deep breath."
+    },
+    {
+      "sid": "BOOK_003_begin_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.11634565330557002,
+      "max_topic_prob": 0.721407413482666,
+      "sentence": "I hold my breath."
+    },
+    {
+      "sid": "BOOK_003_begin_5",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.024466423737636647,
+      "max_topic_prob": 0.7067171335220337,
+      "sentence": "I’m not breathing right now."
+    },
+    {
+      "sid": "BOOK_003_middle_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3508589276418532,
+      "max_topic_prob": 0.7513676285743713,
+      "sentence": "I take a deep breath."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

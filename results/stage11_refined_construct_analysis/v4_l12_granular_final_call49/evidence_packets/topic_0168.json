@@ -1,0 +1,1237 @@
+{
+  "topic_id": 168,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "9.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "ready",
+        "done",
+        "start",
+        "finish",
+        "finished",
+        "re",
+        "we",
+        "starting",
+        "are",
+        "yet"
+      ],
+      "KeyBERT": [
+        "sentence",
+        "sir",
+        "shortly",
+        "fitting",
+        "planning"
+      ],
+      "POS": [
+        "fitting",
+        "sentence",
+        "sir"
+      ],
+      "MMR": [
+        "fitting",
+        "shortly",
+        "dealing",
+        "gotta",
+        "curved",
+        "sentence",
+        "planning",
+        "sir"
+      ]
+    },
+    "stage08_snippets": [
+      "but i’ll start first.",
+      "we’ll start there and see where it goes.”",
+      "we’ll let you know when we’re done,” [person] said."
+    ],
+    "label_public": "Ready to Begin When Told"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_begin_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "We haven’t started yet.” “",
+        "max_topic_prob": 0.6799430251121521,
+        "normalized_position": 0.1141888072357264,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_001_middle_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m not done yet.”",
+        "max_topic_prob": 0.7853873372077942,
+        "normalized_position": 0.4193329564725834,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_001_middle_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Are you ready?”",
+        "max_topic_prob": 0.7247362732887268,
+        "normalized_position": 0.6142453363482193,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 117
+      },
+      {
+        "sid": "BOOK_001_middle_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m almost done.”",
+        "max_topic_prob": 0.7242097854614258,
+        "normalized_position": 0.4206896551724138,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_001_middle_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Ready to give up?”",
+        "max_topic_prob": 0.6883701086044312,
+        "normalized_position": 0.5758055398530243,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_001_end_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yes, I’m done.” “",
+        "max_topic_prob": 0.7020702958106995,
+        "normalized_position": 0.7022046353872244,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 481
+      },
+      {
+        "sid": "BOOK_002_begin_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I have to get ready,” I say. “",
+        "max_topic_prob": 0.7482415437698364,
+        "normalized_position": 0.3298460091689197,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 78
+      },
+      {
+        "sid": "BOOK_002_middle_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "are you ready to do this?” “",
+        "max_topic_prob": 0.7549616098403931,
+        "normalized_position": 0.4978253203244387,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_002_middle_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I go, “Are you ready yet?”",
+        "max_topic_prob": 0.7377973794937134,
+        "normalized_position": 0.645115786998942,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 5
+      },
+      {
+        "sid": "BOOK_002_middle_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’m ready.”",
+        "max_topic_prob": 0.7163286805152893,
+        "normalized_position": 0.49829552133537086,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_002_end_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "I’m done.” “",
+        "max_topic_prob": 0.7063254117965698,
+        "normalized_position": 0.6963676971905489,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_002_end_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Yeah, but I’m done now.”",
+        "max_topic_prob": 0.6971845626831055,
+        "normalized_position": 0.6968378982014811,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_003_begin_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Are you ready for cricket?’ ‘",
+        "max_topic_prob": 0.52642822265625,
+        "normalized_position": 0.26577116814583834,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 515
+      },
+      {
+        "sid": "BOOK_003_middle_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "You leave me the details, we’ll start straight away.’",
+        "max_topic_prob": 0.6848478317260742,
+        "normalized_position": 0.3869033341328856,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 677
+      },
+      {
+        "sid": "BOOK_003_middle_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "When will you start?’ ‘",
+        "max_topic_prob": 0.6088679432868958,
+        "normalized_position": 0.38678340129527466,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 676
+      },
+      {
+        "sid": "BOOK_003_middle_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I am ready for them.",
+        "max_topic_prob": 0.6069061756134033,
+        "normalized_position": 0.4840489325977453,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 542
+      },
+      {
+        "sid": "BOOK_003_end_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Are you going to finish your strip?’",
+        "max_topic_prob": 0.5573746562004089,
+        "normalized_position": 0.7494603022307508,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 412
+      },
+      {
+        "sid": "BOOK_003_end_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I say, patting the wheel, ready to be entertained. ‘",
+        "max_topic_prob": 0.5554372072219849,
+        "normalized_position": 0.857040057567762,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 526
+      },
+      {
+        "sid": "BOOK_004_begin_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "about to step over.”",
+        "max_topic_prob": 0.5728340148925781,
+        "normalized_position": 0.00934361130576968,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_004_begin_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Consider it done!”",
+        "max_topic_prob": 0.5446960926055908,
+        "normalized_position": 0.15510394767577668,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_004_middle_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Then we’ll begin.”",
+        "max_topic_prob": 0.727266788482666,
+        "normalized_position": 0.5575800046718057,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_004_middle_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Let’s do.”",
+        "max_topic_prob": 0.5752806663513184,
+        "normalized_position": 0.4516468114926419,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_004_middle_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "So go ahead.”",
+        "max_topic_prob": 0.5497589111328125,
+        "normalized_position": 0.5735809390329363,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_004_end_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I just wish I knew where to begin.”",
+        "max_topic_prob": 0.5390170216560364,
+        "normalized_position": 0.7912870824573698,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_005_begin_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Let us begin.’",
+        "max_topic_prob": 0.7098937034606934,
+        "normalized_position": 0.14187215145494916,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_005_begin_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "So where do we start?’",
+        "max_topic_prob": 0.5923242568969727,
+        "normalized_position": 0.3155311440925558,
+        "tertile": "begin",
+        "chapter_index": 21,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_005_middle_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Are you ready?’ ‘",
+        "max_topic_prob": 0.7489123344421387,
+        "normalized_position": 0.6468388453897393,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 255
+      },
+      {
+        "sid": "BOOK_005_middle_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Do you want to begin right now?’ ‘",
+        "max_topic_prob": 0.7033827304840088,
+        "normalized_position": 0.5847843870515368,
+        "tertile": "middle",
+        "chapter_index": 31,
+        "sentence_index": 237
+      },
+      {
+        "sid": "BOOK_005_middle_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Please begin at once.’",
+        "max_topic_prob": 0.663185715675354,
+        "normalized_position": 0.5981068131354447,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_005_end_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "Er, shall we continue?’",
+        "max_topic_prob": 0.6093676686286926,
+        "normalized_position": 0.6767558723851818,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_006_begin_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Are you okay to start so soon?\"",
+        "max_topic_prob": 0.6872261762619019,
+        "normalized_position": 0.05092592592592592,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_006_begin_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I'm ready when you are.\" \"",
+        "max_topic_prob": 0.6448836922645569,
+        "normalized_position": 0.21103395061728394,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_006_middle_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "We're ready to go.\"",
+        "max_topic_prob": 0.7764219045639038,
+        "normalized_position": 0.5192901234567902,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 291
+      },
+      {
+        "sid": "BOOK_006_middle_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "You ready to go?\" \"",
+        "max_topic_prob": 0.710581362247467,
+        "normalized_position": 0.40625,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_006_middle_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I'm full.\"",
+        "max_topic_prob": 0.5251926779747009,
+        "normalized_position": 0.4737654320987654,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_006_end_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "We're finished, Pete.",
+        "max_topic_prob": 0.5873134136199951,
+        "normalized_position": 0.7550154320987654,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_007_begin_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I’m almost finished.”",
+        "max_topic_prob": 0.7467060089111328,
+        "normalized_position": 0.23180099987806366,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_007_begin_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "We are finished, before we even started.",
+        "max_topic_prob": 0.7339212894439697,
+        "normalized_position": 0.24277527130837703,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_007_middle_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Are you ready to get going?” “",
+        "max_topic_prob": 0.7688136696815491,
+        "normalized_position": 0.42397268625777346,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_007_middle_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Are you ready to get going?” “",
+        "max_topic_prob": 0.7688136696815491,
+        "normalized_position": 0.3876356541885136,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_007_middle_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Are you ready to go?”",
+        "max_topic_prob": 0.7411965131759644,
+        "normalized_position": 0.3732471649798805,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_007_middle_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Are you ready?” “",
+        "max_topic_prob": 0.7371656894683838,
+        "normalized_position": 0.4329959761004756,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_008_middle_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "You ready?”",
+        "max_topic_prob": 0.6387226581573486,
+        "normalized_position": 0.6017578125,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 446
+      },
+      {
+        "sid": "BOOK_008_middle_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m not done with you.”",
+        "max_topic_prob": 0.6357315182685852,
+        "normalized_position": 0.6125,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 501
+      },
+      {
+        "sid": "BOOK_008_end_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Are you done?",
+        "max_topic_prob": 0.6046772003173828,
+        "normalized_position": 0.9455078125,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2206
+      },
+      {
+        "sid": "BOOK_008_end_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I’m going to follow your lead.”",
+        "max_topic_prob": 0.5930323004722595,
+        "normalized_position": 0.7703125,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1309
+      },
+      {
+        "sid": "BOOK_008_end_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Please keep up.” “",
+        "max_topic_prob": 0.586746096611023,
+        "normalized_position": 0.904296875,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1995
+      },
+      {
+        "sid": "BOOK_008_end_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I finished early.",
+        "max_topic_prob": 0.5593856573104858,
+        "normalized_position": 0.996875,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2469
+      },
+      {
+        "sid": "BOOK_009_middle_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Are you ready to go?\" \"",
+        "max_topic_prob": 0.7239012718200684,
+        "normalized_position": 0.3471818710052295,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_009_middle_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You ready?\"",
+        "max_topic_prob": 0.6218212246894836,
+        "normalized_position": 0.35183033120278906,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_009_middle_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Ready?”",
+        "max_topic_prob": 0.6184338331222534,
+        "normalized_position": 0.5151074956420686,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 54
+      },
+      {
+        "sid": "BOOK_009_end_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "You ready?”",
+        "max_topic_prob": 0.6387227773666382,
+        "normalized_position": 0.6690877396862289,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_009_end_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Ready?”",
+        "max_topic_prob": 0.6184338331222534,
+        "normalized_position": 0.7780360255665311,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_009_end_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "sentence": "Ready?”",
+        "max_topic_prob": 0.6184338331222534,
+        "normalized_position": 0.8680999418942476,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_010_begin_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He was ready.",
+        "max_topic_prob": 0.5725549459457397,
+        "normalized_position": 0.320581726209295,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 290
+      },
+      {
+        "sid": "BOOK_010_begin_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Bring it on.\"",
+        "max_topic_prob": 0.5370832681655884,
+        "normalized_position": 0.25555906839498366,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_010_middle_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I'll be ready.\"",
+        "max_topic_prob": 0.6706497669219971,
+        "normalized_position": 0.4276530719780799,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 44
+      },
+      {
+        "sid": "BOOK_010_middle_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "I'm so done with that shit.\"",
+        "max_topic_prob": 0.5346651673316956,
+        "normalized_position": 0.34671725155443145,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_010_end_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Yeah, well, I'm not ready yet.\" \"",
+        "max_topic_prob": 0.7404240369796753,
+        "normalized_position": 0.9807145115396775,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_010_end_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "It's just beginning.\"",
+        "max_topic_prob": 0.6861379146575928,
+        "normalized_position": 0.6920644957319001,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_011_middle_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Get you ready.”",
+        "max_topic_prob": 0.7750970125198364,
+        "normalized_position": 0.39168195718654436,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_011_middle_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You ready for this?”",
+        "max_topic_prob": 0.7355232238769531,
+        "normalized_position": 0.43559633027522937,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_011_end_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "We ready to do this?”",
+        "max_topic_prob": 0.7619074583053589,
+        "normalized_position": 0.6743730886850153,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 29
+      },
+      {
+        "sid": "BOOK_011_end_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You’re ready for this.”",
+        "max_topic_prob": 0.7617617845535278,
+        "normalized_position": 0.8474617737003058,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 413
+      },
+      {
+        "sid": "BOOK_011_end_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I’m ready for you.” “",
+        "max_topic_prob": 0.759361743927002,
+        "normalized_position": 0.8262996941896025,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 240
+      },
+      {
+        "sid": "BOOK_011_end_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "You ready for this.” “",
+        "max_topic_prob": 0.7401913404464722,
+        "normalized_position": 0.6853822629969419,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_012_begin_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Gentlemen, if you’ll excuse me, it looks as though we’re ready to begin.”",
+        "max_topic_prob": 0.7618404626846313,
+        "normalized_position": 0.17585199610516067,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_012_begin_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "I think we’re ready to order.”",
+        "max_topic_prob": 0.6715145111083984,
+        "normalized_position": 0.052385589094449854,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 205
+      },
+      {
+        "sid": "BOOK_012_begin_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "You’re going to have to start it up for me.”",
+        "max_topic_prob": 0.6445186138153076,
+        "normalized_position": 0.08588120740019474,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_012_end_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Are you finished?”",
+        "max_topic_prob": 0.7244151830673218,
+        "normalized_position": 0.7877312560856865,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 64
+      },
+      {
+        "sid": "BOOK_012_end_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Are you finished?”",
+        "max_topic_prob": 0.7244151830673218,
+        "normalized_position": 0.8052580331061344,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_012_end_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "As ready as I will ever be.”",
+        "max_topic_prob": 0.7053765058517456,
+        "normalized_position": 0.7164556962025317,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_013_begin_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Gotta be prepared.”",
+        "max_topic_prob": 0.6282647848129272,
+        "normalized_position": 0.28871994342291374,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1633
+      },
+      {
+        "sid": "BOOK_013_middle_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I think they’re ready.”",
+        "max_topic_prob": 0.6964001059532166,
+        "normalized_position": 0.6414427157001414,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 852
+      },
+      {
+        "sid": "BOOK_013_middle_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You ready?” “",
+        "max_topic_prob": 0.6675931215286255,
+        "normalized_position": 0.3886138613861386,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2198
+      },
+      {
+        "sid": "BOOK_013_middle_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You done?”",
+        "max_topic_prob": 0.6158995628356934,
+        "normalized_position": 0.5153818953323904,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_013_end_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I get halfway through and have to start all over.” “",
+        "max_topic_prob": 0.6798617243766785,
+        "normalized_position": 0.7982673267326733,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1739
+      },
+      {
+        "sid": "BOOK_013_end_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Maybe I should start from the beginning.” “",
+        "max_topic_prob": 0.6428331136703491,
+        "normalized_position": 0.9665841584158416,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2691
+      },
+      {
+        "sid": "BOOK_014_begin_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Are you prepared to be good?”",
+        "max_topic_prob": 0.6018605828285217,
+        "normalized_position": 0.3177570093457944,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_014_middle_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Are you ready?” “",
+        "max_topic_prob": 0.7371655702590942,
+        "normalized_position": 0.6417445482866043,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 115
+      },
+      {
+        "sid": "BOOK_014_middle_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Then let’s do this.”",
+        "max_topic_prob": 0.5857023596763611,
+        "normalized_position": 0.6266874350986501,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 307
+      },
+      {
+        "sid": "BOOK_014_end_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Chapter Twenty Two “You ready?”",
+        "max_topic_prob": 0.6718204617500305,
+        "normalized_position": 0.6922377985462098,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_014_end_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Ready?”",
+        "max_topic_prob": 0.618433952331543,
+        "normalized_position": 0.892263759086189,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_014_end_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "I’m ready to wrap this up.",
+        "max_topic_prob": 0.5883955955505371,
+        "normalized_position": 0.7832294911734164,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 204
+      },
+      {
+        "sid": "BOOK_015_begin_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Be ready.",
+        "max_topic_prob": 0.6523936986923218,
+        "normalized_position": 0.228515625,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_015_middle_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Great, all I have to do is get us there in one piece, I can do that, I think.",
+        "max_topic_prob": 0.48109474778175354,
+        "normalized_position": 0.6295572916666666,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_015_middle_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "The English school summer holidays start soon so there’s nothing to stop us, if you’re up for it.”",
+        "max_topic_prob": 0.4726622998714447,
+        "normalized_position": 0.3409288194444444,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_015_end_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "We are ready to go.",
+        "max_topic_prob": 0.7253081798553467,
+        "normalized_position": 0.9557291666666666,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 124
+      },
+      {
+        "sid": "BOOK_015_end_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Coming right up.",
+        "max_topic_prob": 0.4479750692844391,
+        "normalized_position": 0.6866319444444444,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_015_end_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Are the girls up yet?",
+        "max_topic_prob": 0.4152024984359741,
+        "normalized_position": 0.90625,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_016_begin_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Not if you’re not ready.”",
+        "max_topic_prob": 0.6499561667442322,
+        "normalized_position": 0.04007588332938108,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_016_begin_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Finally she says, “I have some work to finish up.",
+        "max_topic_prob": 0.59703528881073,
+        "normalized_position": 0.20476642162674888,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_016_middle_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Aren’t we already?”",
+        "max_topic_prob": 0.595714807510376,
+        "normalized_position": 0.508655442257529,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_016_middle_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I have to pull myself together if I’m going to make it through tonight. “",
+        "max_topic_prob": 0.543519139289856,
+        "normalized_position": 0.5737491107422338,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_016_middle_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "When the first mound of water swells up behind him, he’s ready. “",
+        "max_topic_prob": 0.5429561138153076,
+        "normalized_position": 0.5372302584775906,
+        "tertile": "middle",
+        "chapter_index": 25,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_016_end_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "You ready?”",
+        "max_topic_prob": 0.6387227177619934,
+        "normalized_position": 0.8118330566753617,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 257
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.008438302555949614,
+        "n_sentences": 69
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.007423324868138308,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0057051167766090215,
+        "n_sentences": 32
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.0058132343846629565,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0057064597123944304,
+        "n_sentences": 50
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.005050505050505051,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_B",
+        "share": 0.004403992953611274,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.005706812507430745,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0015881418740074113,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0016680567139282735,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0021691973969631237,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.002399650959860384,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0023479690068091102,
+        "n_sentences": 20
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "share": 0.0020906833921338036,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.002012072434607646,
+        "n_sentences": 17
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.00180984555984556,
+        "n_sentences": 15
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "position_sentences_per_tertile": null,
+      "n_books": 16,
+      "n_sentences": 96
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "9.2",
+    "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.55,
+    "label_rationale": null,
+    "radway_main_id": "none",
+    "radway_main_name": "None of the above",
+    "radway_secondary_id": null,
+    "radway_other_plausible_ids": [],
+    "radway_phase": "NA",
+    "radway_confidence": "high",
+    "stage11_codes": []
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true,
+    "radway_hidden_until_pass_c": true
+  }
+}

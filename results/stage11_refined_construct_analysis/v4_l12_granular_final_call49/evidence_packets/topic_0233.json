@@ -1,0 +1,998 @@
+{
+  "topic_id": 233,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.7",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "blush",
+        "blushed",
+        "blushing",
+        "cheeks",
+        "prettily",
+        "embarrassed",
+        "crept",
+        "face",
+        "compliment",
+        "rising"
+      ],
+      "KeyBERT": [
+        "embarrassment",
+        "embarrassed",
+        "embarrassing",
+        "melted",
+        "precious",
+        "licked",
+        "shock",
+        "crept",
+        "flush",
+        "prompted"
+      ],
+      "POS": [
+        "remark",
+        "feminine",
+        "embarrassed",
+        "magical",
+        "embarrassing",
+        "realization",
+        "ankles",
+        "flush",
+        "embarrassment",
+        "precious"
+      ],
+      "MMR": [
+        "crept",
+        "prompted",
+        "ducked",
+        "instinctively",
+        "feminine",
+        "ankles",
+        "embarrassment",
+        "flush",
+        "precious",
+        "popped"
+      ]
+    },
+    "stage08_snippets": [
+      "so when you said i looked like bait ...' a blush crept up her cheeks and her hair fell forward with a tilt of her head to conceal the embarrassed infusion. '",
+      "she’s probably laughing at me because i’ve blushed, but it doesn’t matter. “",
+      "i don’t think i’ve ever seen her blush. “"
+    ],
+    "label_public": "Blush Creeping Up Her Cheeks"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_begin_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Brent had the grace to blush.",
+        "max_topic_prob": 0.6964688301086426,
+        "normalized_position": 0.06562922868741543,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 57
+      },
+      {
+        "sid": "BOOK_001_middle_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Brent blushed. “",
+        "max_topic_prob": 0.770285427570343,
+        "normalized_position": 0.6280446549391069,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 764
+      },
+      {
+        "sid": "BOOK_001_middle_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "It takes a lot to make me blush.”",
+        "max_topic_prob": 0.7365467548370361,
+        "normalized_position": 0.5138700947225981,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 89
+      },
+      {
+        "sid": "BOOK_001_middle_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Brent blushed at the thought of his morning wood. “",
+        "max_topic_prob": 0.7096845507621765,
+        "normalized_position": 0.513531799729364,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_001_end_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Who, uncharacteristically, blushed.",
+        "max_topic_prob": 0.7634626626968384,
+        "normalized_position": 0.982916102841678,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 320
+      },
+      {
+        "sid": "BOOK_001_end_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Nick blushed. “",
+        "max_topic_prob": 0.7515521049499512,
+        "normalized_position": 0.9769959404600812,
+        "tertile": "end",
+        "chapter_index": 18,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_002_begin_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She blushed. “",
+        "max_topic_prob": 0.8617656230926514,
+        "normalized_position": 0.23390497610345798,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 233
+      },
+      {
+        "sid": "BOOK_002_begin_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "This time she did blush.",
+        "max_topic_prob": 0.8323845267295837,
+        "normalized_position": 0.3245431543435479,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_002_begin_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "No matter how hard she tried to suppress it, he seemed to have a magical ability to make her blush. “",
+        "max_topic_prob": 0.7851158380508423,
+        "normalized_position": 0.2409895979758223,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 359
+      },
+      {
+        "sid": "BOOK_002_middle_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "The look made her blush.",
+        "max_topic_prob": 0.8480503559112549,
+        "normalized_position": 0.4580826539218443,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 351
+      },
+      {
+        "sid": "BOOK_002_middle_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Elysee blushed. “",
+        "max_topic_prob": 0.7831944823265076,
+        "normalized_position": 0.5842001686814732,
+        "tertile": "middle",
+        "chapter_index": 34,
+        "sentence_index": 130
+      },
+      {
+        "sid": "BOOK_002_end_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Elysee blushed prettily. “",
+        "max_topic_prob": 0.7950599193572998,
+        "normalized_position": 0.7753162777621592,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_003_begin_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Averting her eyes, she swiped at her knees with tense, jerky movements, but he saw the telling blush that stained her cheeks. ‘",
+        "max_topic_prob": 0.6864233016967773,
+        "normalized_position": 0.2380103405241576,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_003_middle_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Oh…’ She felt the tell-tale blush creep into her cheeks. ‘",
+        "max_topic_prob": 0.8215985298156738,
+        "normalized_position": 0.6245320021394188,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_004_begin_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Dylan blushed. “",
+        "max_topic_prob": 0.7322895526885986,
+        "normalized_position": 0.13873610955213828,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1236
+      },
+      {
+        "sid": "BOOK_004_begin_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "William caught the blush staining his cheeks and found it funny under the circumstances. “",
+        "max_topic_prob": 0.5759657621383667,
+        "normalized_position": 0.1185318217532832,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1056
+      },
+      {
+        "sid": "BOOK_004_end_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Estevan’s cheeks turned red. “",
+        "max_topic_prob": 0.6365765929222107,
+        "normalized_position": 0.991693792793804,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2204
+      },
+      {
+        "sid": "BOOK_004_end_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "When Estevan returned with her, he still had color in his cheeks. “",
+        "max_topic_prob": 0.5176718235015869,
+        "normalized_position": 0.9948366820069593,
+        "tertile": "end",
+        "chapter_index": 3,
+        "sentence_index": 2232
+      },
+      {
+        "sid": "BOOK_005_begin_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "This time it was even accompanied by what felt to be a damned blush.",
+        "max_topic_prob": 0.7308850288391113,
+        "normalized_position": 0.09242100261344738,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 59
+      },
+      {
+        "sid": "BOOK_005_begin_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "As he kneeled there behind such a perfect set of cheeks and their gorgeously awaiting hole, Matthew couldn't resist.",
+        "max_topic_prob": 0.504734456539154,
+        "normalized_position": 0.22380612972202424,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 340
+      },
+      {
+        "sid": "BOOK_006_middle_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Humiliation pinked her cheeks even as she stood before me with her head held high. “",
+        "max_topic_prob": 0.6071561574935913,
+        "normalized_position": 0.49282223579719,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_006_end_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "The guilty blush that heated her cheeks and his smug smirk provided a detailed description of what they had been doing for the past few hours. “",
+        "max_topic_prob": 0.6984786987304688,
+        "normalized_position": 0.6759315821624924,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_006_end_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He had done things to me that still made me blush.",
+        "max_topic_prob": 0.6506913304328918,
+        "normalized_position": 0.7828344532681735,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_007_middle_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "Well, I got some duty-free makeup,\" Síle told her. \"",
+        "max_topic_prob": 0.48507314920425415,
+        "normalized_position": 0.6310729393667478,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_007_end_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "sentence": "A startled Caribbean face came around the curtain. \"",
+        "max_topic_prob": 0.5056348443031311,
+        "normalized_position": 0.8543776438918087,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_008_begin_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "she demanded defensively, dropping her gaze to the white sundress with large, purple lavenders splattered all over.",
+        "max_topic_prob": 0.489073246717453,
+        "normalized_position": 0.1976911976911977,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 87
+      },
+      {
+        "sid": "BOOK_008_end_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "I blushed and giggled nervously as I made my way up to the stage.",
+        "max_topic_prob": 0.6765334606170654,
+        "normalized_position": 0.9642579642579643,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_008_end_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "But the moment I met her, I knew…” he trailed off, red-hot fury flashing behind his eyes. “",
+        "max_topic_prob": 0.5871044397354126,
+        "normalized_position": 0.7424797424797425,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_009_begin_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Izzy smiled at the sudden blush in Lillian’s cheeks. “",
+        "max_topic_prob": 0.7628624439239502,
+        "normalized_position": 0.05494046375600585,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_009_begin_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She blushed to find herself alone with the owner of the publishing house.",
+        "max_topic_prob": 0.5090182423591614,
+        "normalized_position": 0.07039899728431168,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 330
+      },
+      {
+        "sid": "BOOK_009_end_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Lillian blushed to find that he interpreted her question so accurately.",
+        "max_topic_prob": 0.7064069509506226,
+        "normalized_position": 0.6851890536870692,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_009_end_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Rachel’s cheeks were rosy from the cold, her eyes smiling with merriment.",
+        "max_topic_prob": 0.6374298334121704,
+        "normalized_position": 0.7334447461875914,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 129
+      },
+      {
+        "sid": "BOOK_009_end_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Mrs. Murphy’s cheeks were flushed a warm pink.",
+        "max_topic_prob": 0.6194037199020386,
+        "normalized_position": 0.9920618341341132,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 244
+      },
+      {
+        "sid": "BOOK_009_end_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "She laughed when Red planted a big exaggerated kiss on Izzy’s cheek as they drove off.",
+        "max_topic_prob": 0.5907278060913086,
+        "normalized_position": 0.8955504491330687,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_010_begin_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Brendon blushes, and seriously?",
+        "max_topic_prob": 0.5886187553405762,
+        "normalized_position": 0.25358094004174764,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_010_middle_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She blushes furiously and stutters on her words, making a quick exit.",
+        "max_topic_prob": 0.60877525806427,
+        "normalized_position": 0.6508313539192399,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_010_middle_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "He should be flattered. “",
+        "max_topic_prob": 0.5630528330802917,
+        "normalized_position": 0.5929604836968257,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 182
+      },
+      {
+        "sid": "BOOK_010_end_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She pales further. “",
+        "max_topic_prob": 0.6265645027160645,
+        "normalized_position": 0.9028287626862449,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 790
+      },
+      {
+        "sid": "BOOK_011_begin_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You are exquisite when you blush.” “",
+        "max_topic_prob": 0.7671656608581543,
+        "normalized_position": 0.13703167046160214,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_011_begin_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I blush because you are shameless.” “",
+        "max_topic_prob": 0.7323137521743774,
+        "normalized_position": 0.13723866694266199,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_011_begin_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Achilles turned his face away to hide the inevitable blush. “",
+        "max_topic_prob": 0.7015093564987183,
+        "normalized_position": 0.22003725936659077,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_011_begin_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "To Gaius’ delight, instead of fury or tears, the response was a faint blush and lowered eyes. “",
+        "max_topic_prob": 0.676913857460022,
+        "normalized_position": 0.07513972262471538,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_011_begin_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Achilles blushed at this shameless admission, shocked if also reassured.",
+        "max_topic_prob": 0.6594563722610474,
+        "normalized_position": 0.31401366176775,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_011_end_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Gaius was glad to see that, demurely lowered eyes notwithstanding, Achilles was smiling and blushing.",
+        "max_topic_prob": 0.6617814302444458,
+        "normalized_position": 0.8702132063754916,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 265
+      },
+      {
+        "sid": "BOOK_012_begin_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She was thankful it was dark and he couldn’t see the bright blush on her cheeks. “",
+        "max_topic_prob": 0.7955211400985718,
+        "normalized_position": 0.27994011976047906,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 280
+      },
+      {
+        "sid": "BOOK_012_middle_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She blushed. “",
+        "max_topic_prob": 0.8617656230926514,
+        "normalized_position": 0.48078842315369263,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_012_middle_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Michelle blushed. “",
+        "max_topic_prob": 0.7763406038284302,
+        "normalized_position": 0.3847305389221557,
+        "tertile": "middle",
+        "chapter_index": 6,
+        "sentence_index": 206
+      },
+      {
+        "sid": "BOOK_012_middle_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Fiona Landry blushed. “",
+        "max_topic_prob": 0.7373440265655518,
+        "normalized_position": 0.6649201596806387,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_012_end_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "She blushed. “",
+        "max_topic_prob": 0.8617656230926514,
+        "normalized_position": 0.7889221556886228,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_012_end_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Michelle blushed.",
+        "max_topic_prob": 0.7361522912979126,
+        "normalized_position": 0.6686626746506986,
+        "tertile": "end",
+        "chapter_index": 10,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_013_begin_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Sarah started to shake her head, but then blushed. “",
+        "max_topic_prob": 0.7242764234542847,
+        "normalized_position": 0.16520595968448729,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 289
+      },
+      {
+        "sid": "BOOK_013_begin_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Sarah kissed me on the cheek and walked in.",
+        "max_topic_prob": 0.5987728238105774,
+        "normalized_position": 0.29754601226993865,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_013_begin_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Her shiny, perfect hair and unctuous smile grated on my nerves. “",
+        "max_topic_prob": 0.5983589887619019,
+        "normalized_position": 0.19792579608530528,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_013_middle_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "She smiled as if she knew I couldn’t resist. “",
+        "max_topic_prob": 0.6957935094833374,
+        "normalized_position": 0.5571136430032135,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_013_middle_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But now …” I motioned to her plunging red dress, stockings, and high heels. “",
+        "max_topic_prob": 0.619137167930603,
+        "normalized_position": 0.6194858311422728,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_013_end_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Her color had returned, her cheeks now almost as pink as her shirt.",
+        "max_topic_prob": 0.5762472152709961,
+        "normalized_position": 0.8422436459246275,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_014_begin_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I even blushed.",
+        "max_topic_prob": 0.7189503908157349,
+        "normalized_position": 0.15827071156879116,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_014_begin_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I hadn’t blushed in years.",
+        "max_topic_prob": 0.6486955881118774,
+        "normalized_position": 0.15836348455329807,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_middle_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You’re blushing.”",
+        "max_topic_prob": 0.737660825252533,
+        "normalized_position": 0.5028295760274608,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_014_end_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Her beautiful brown eyes glimmered and she blushed. “",
+        "max_topic_prob": 0.8069350123405457,
+        "normalized_position": 0.7329993505891085,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_014_end_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I can see the red in your cheeks.”",
+        "max_topic_prob": 0.550308346748352,
+        "normalized_position": 0.7049819092680212,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 120
+      },
+      {
+        "sid": "BOOK_015_begin_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Another blush fanned across her cheekbones and she looked down for a second, then back up.",
+        "max_topic_prob": 0.797139048576355,
+        "normalized_position": 0.061959317278466215,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_015_begin_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "She turned her head in his direction, briefly meeting his eyes before looking away, a hint of blush tingeing her cheeks.",
+        "max_topic_prob": 0.7467969655990601,
+        "normalized_position": 0.05143792377834931,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_015_begin_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Her smile broadened even as the blush on her cheeks grew brighter, intriguing him further.",
+        "max_topic_prob": 0.7389122247695923,
+        "normalized_position": 0.05377601122281973,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_015_middle_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "But not before he saw the faintest blush tinge her cheeks. \"",
+        "max_topic_prob": 0.8135429620742798,
+        "normalized_position": 0.36310498012625675,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_015_middle_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Shelby ignored the blush that wouldn't go away and shrugged. \"",
+        "max_topic_prob": 0.6991622447967529,
+        "normalized_position": 0.44891278933832124,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_015_middle_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "His eye caught on the splash of red, brown and blue tucked behind her pillow and he smiled.",
+        "max_topic_prob": 0.6483953595161438,
+        "normalized_position": 0.54150105213935,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_016_middle_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She felt the heat of a blush climb to her face.",
+        "max_topic_prob": 0.8331023454666138,
+        "normalized_position": 0.658359638921194,
+        "tertile": "middle",
+        "chapter_index": 75,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_016_middle_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She blushed and smiled. “",
+        "max_topic_prob": 0.8144326210021973,
+        "normalized_position": 0.569308301489727,
+        "tertile": "middle",
+        "chapter_index": 64,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_016_middle_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Her cheeks flushed. “",
+        "max_topic_prob": 0.8038617372512817,
+        "normalized_position": 0.6391427147366672,
+        "tertile": "middle",
+        "chapter_index": 68,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_016_end_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She blushed. “",
+        "max_topic_prob": 0.8617656230926514,
+        "normalized_position": 0.9266766350999612,
+        "tertile": "end",
+        "chapter_index": 111,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_016_end_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "She blushed. “",
+        "max_topic_prob": 0.8617656230926514,
+        "normalized_position": 0.7755994905022983,
+        "tertile": "end",
+        "chapter_index": 88,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_016_end_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He blushed—a full, flaming blush, his cheeks and ears flooded with red. “",
+        "max_topic_prob": 0.837571918964386,
+        "normalized_position": 0.8737331782688155,
+        "tertile": "end",
+        "chapter_index": 101,
+        "sentence_index": 42
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.0025845864661654134,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.002619551889421469,
+        "n_sentences": 47
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "share": 0.001471515661130965,
+        "n_sentences": 7
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.0014779781259237363,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.0033620508510191216,
+        "n_sentences": 16
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.0032532532532532532,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.0017044486108743822,
+        "n_sentences": 10
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.0015891032917139615,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00033478406427854036,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0004662004662004662,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0004626773596545342,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0002894356005788712,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_D",
+        "share": 0.00025967281225655674,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0003582303421099767,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.00047824007651841227,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.00045167118337850043,
+        "n_sentences": 4
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "position_sentences_per_tertile": null,
+      "n_books": 16,
+      "n_sentences": 73
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.7",
+    "taxonomy_main_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null,
+    "radway_main_id": "R9",
+    "radway_main_name": "Heroine responds warmly to hero's tenderness",
+    "radway_secondary_id": "R4",
+    "radway_other_plausible_ids": [],
+    "radway_phase": "II",
+    "radway_confidence": "medium",
+    "stage11_codes": []
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true,
+    "radway_hidden_until_pass_c": true
+  }
+}

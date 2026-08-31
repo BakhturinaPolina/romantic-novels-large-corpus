@@ -1,0 +1,162 @@
+{
+  "topic_id": 226,
+  "label": "Eyes Closed on Command",
+  "taxonomy_main_id": "3.3",
+  "taxonomy_main_name": "Ambivalence & Internal Conflict",
+  "taxonomy_secondary_id": "1.7",
+  "taxonomy_secondary_name": "Facial Expression & Non-Sexual Nonverbal Cues",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "eyes",
+      "close",
+      "closed",
+      "blink",
+      "my",
+      "open",
+      "contacts",
+      "opened",
+      "eyelids",
+      "your"
+    ],
+    "KeyBERT": [
+      "blinked",
+      "blinking",
+      "terrified",
+      "cried",
+      "focusing",
+      "afterward",
+      "tentatively",
+      "wrists",
+      "rapidly",
+      "narrow"
+    ],
+    "POS": [
+      "drift",
+      "wrists",
+      "plastic",
+      "anticipation",
+      "tense",
+      "narrow",
+      "faces",
+      "closed"
+    ],
+    "MMR": [
+      "blinking",
+      "fluttered",
+      "tentatively",
+      "instructed",
+      "sinking",
+      "terrified",
+      "wrists",
+      "anticipation",
+      "faces",
+      "pounding"
+    ]
+  },
+  "stage08_snippets": [
+    "i closed my eyes as it all hit me at once.",
+    "keep your eyes closed until i tell you to do otherwise.” “",
+    "feeling tired all of a sudden, i closed my eyes."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_1",
+      "cell": "CELL_D",
+      "tertile": "begin",
+      "normalized_position": 0.01635231008825056,
+      "max_topic_prob": 0.4942590594291687,
+      "sentence": "All vision nearly gone."
+    },
+    {
+      "sid": "BOOK_001_middle_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.4157293649420315,
+      "max_topic_prob": 0.4786950349807739,
+      "sentence": "Stop wrinkling up your forehead.”"
+    },
+    {
+      "sid": "BOOK_002_middle_1",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.34786267250084146,
+      "max_topic_prob": 0.4634783864021301,
+      "sentence": "I don’t think there are any glasses in here.”"
+    },
+    {
+      "sid": "BOOK_003_middle_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3699928040297433,
+      "max_topic_prob": 0.5726728439331055,
+      "sentence": "Painfully blinking."
+    },
+    {
+      "sid": "BOOK_004_begin_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.1930477963997517,
+      "max_topic_prob": 0.8171384334564209,
+      "sentence": "i close my eyes . . ."
+    },
+    {
+      "sid": "BOOK_004_begin_3",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.28533002276019037,
+      "max_topic_prob": 0.7226343750953674,
+      "sentence": "I blink my eyes."
+    },
+    {
+      "sid": "BOOK_004_begin_5",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.2855369335816263,
+      "max_topic_prob": 0.6283937692642212,
+      "sentence": "I blink them again."
+    },
+    {
+      "sid": "BOOK_004_begin_6",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.21746327332919513,
+      "max_topic_prob": 0.6228165626525879,
+      "sentence": "I look and look, I can't take my eyes off them."
+    },
+    {
+      "sid": "BOOK_004_middle_2",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5056900475894889,
+      "max_topic_prob": 0.7776328325271606,
+      "sentence": "I open my eyes."
+    },
+    {
+      "sid": "BOOK_004_end_4",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.984067866749431,
+      "max_topic_prob": 0.7066739797592163,
+      "sentence": "Close your eyes and keep them closed,' he says seriously, and I realise what's coming."
+    },
+    {
+      "sid": "BOOK_005_end_1",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7894144144144144,
+      "max_topic_prob": 0.40935736894607544,
+      "sentence": "28 Legs crossed in a full lotus position, eyes closed, Selange meditated."
+    },
+    {
+      "sid": "BOOK_006_middle_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3629352652488899,
+      "max_topic_prob": 0.46576595306396484,
+      "sentence": "Shit, Tommy, I’m busy, you should have talked to me yesterday... He closed his eyes, feeling the protein trickle though his system."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

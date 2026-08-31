@@ -60,7 +60,7 @@
   ],
   "representative_sentences": [
     {
-      "sid": "BOOK_001_1",
+      "sid": "BOOK_001_begin_1",
       "cell": "CELL_D",
       "tertile": "begin",
       "normalized_position": 0.013067061143984222,
@@ -68,15 +68,7 @@
       "sentence": "I have a tendency to hurt myself."
     },
     {
-      "sid": "BOOK_001_2",
-      "cell": "CELL_D",
-      "tertile": "end",
-      "normalized_position": 0.9149408284023669,
-      "max_topic_prob": 0.5694024562835693,
-      "sentence": "He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things."
-    },
-    {
-      "sid": "BOOK_001_3",
+      "sid": "BOOK_001_begin_3",
       "cell": "CELL_D",
       "tertile": "begin",
       "normalized_position": 0.01232741617357002,
@@ -84,15 +76,7 @@
       "sentence": "Did you think he’d hit me?"
     },
     {
-      "sid": "BOOK_001_4",
-      "cell": "CELL_D",
-      "tertile": "middle",
-      "normalized_position": 0.5955374753451677,
-      "max_topic_prob": 0.51483154296875,
-      "sentence": "It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?"
-    },
-    {
-      "sid": "BOOK_001_5",
+      "sid": "BOOK_001_begin_5",
       "cell": "CELL_D",
       "tertile": "begin",
       "normalized_position": 0.01245069033530572,
@@ -100,7 +84,15 @@
       "sentence": "Pushed me down the stairs?’"
     },
     {
-      "sid": "BOOK_001_6",
+      "sid": "BOOK_001_middle_4",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.5955374753451677,
+      "max_topic_prob": 0.51483154296875,
+      "sentence": "It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?"
+    },
+    {
+      "sid": "BOOK_001_middle_6",
       "cell": "CELL_D",
       "tertile": "middle",
       "normalized_position": 0.528353057199211,
@@ -108,52 +100,60 @@
       "sentence": "How can you emotionally blackmail me like this?’ ‘"
     },
     {
-      "sid": "BOOK_002_1",
-      "cell": "CELL_D",
-      "tertile": "middle",
-      "normalized_position": 0.4580862533692722,
-      "max_topic_prob": 0.7752091288566589,
-      "sentence": "I don’t ever want to be that hurt again.” “"
-    },
-    {
-      "sid": "BOOK_002_2",
-      "cell": "CELL_D",
-      "tertile": "middle",
-      "normalized_position": 0.5939353099730458,
-      "max_topic_prob": 0.6231595277786255,
-      "sentence": "I just felt hurt that you hadn’t told me."
-    },
-    {
-      "sid": "BOOK_002_3",
+      "sid": "BOOK_001_end_2",
       "cell": "CELL_D",
       "tertile": "end",
-      "normalized_position": 0.8118598382749326,
-      "max_topic_prob": 0.5856382846832275,
-      "sentence": "Both of you will only get hurt."
+      "normalized_position": 0.9149408284023669,
+      "max_topic_prob": 0.5694024562835693,
+      "sentence": "He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things."
     },
     {
-      "sid": "BOOK_002_4",
+      "sid": "BOOK_002_middle_1",
       "cell": "CELL_D",
       "tertile": "middle",
-      "normalized_position": 0.3890835579514825,
-      "max_topic_prob": 0.4812518358230591,
-      "sentence": "Don’t give him the satisfaction of letting it destroy you."
+      "normalized_position": 0.6150751640906204,
+      "max_topic_prob": 0.8540725111961365,
+      "sentence": "And you didn’t hurt me.”"
     },
     {
-      "sid": "BOOK_003_1",
-      "cell": "CELL_C",
-      "tertile": "end",
-      "normalized_position": 0.7353096318177023,
-      "max_topic_prob": 0.7933428287506104,
-      "sentence": "You’re only doing it to hurt me, aren’t you?” “"
-    },
-    {
-      "sid": "BOOK_003_2",
+      "sid": "BOOK_003_begin_1",
       "cell": "CELL_C",
       "tertile": "begin",
-      "normalized_position": 0.04895031121426311,
-      "max_topic_prob": 0.7361809015274048,
-      "sentence": "I’d never, ever do anything to hurt you."
+      "normalized_position": 0.08692657390825183,
+      "max_topic_prob": 0.7904576659202576,
+      "sentence": "I’m not hurt.”"
+    },
+    {
+      "sid": "BOOK_003_begin_2",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.08678881388621022,
+      "max_topic_prob": 0.7274723052978516,
+      "sentence": "You’re hurt.” “"
+    },
+    {
+      "sid": "BOOK_003_begin_6",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.30279652844744454,
+      "max_topic_prob": 0.5059558153152466,
+      "sentence": "You didn’t hit me with a sledgehammer last night, did you?” “"
+    },
+    {
+      "sid": "BOOK_003_middle_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.3468797355007577,
+      "max_topic_prob": 0.6191062331199646,
+      "sentence": "I didn’t know why I felt hurt, but it stung not to be invited. “"
+    },
+    {
+      "sid": "BOOK_003_middle_5",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6273591403774624,
+      "max_topic_prob": 0.5662304162979126,
+      "sentence": "I don’t think it’s going to hurt anything.” “"
     }
   ],
   "classification_codes": {},

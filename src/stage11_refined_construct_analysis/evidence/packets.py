@@ -116,12 +116,16 @@ def sample_prevalence_rating_books(
     seed: int,
     max_books: Optional[int] = None,
 ) -> pd.DataFrame:
-    """2×2: topic prevalence extreme × rating tier (meanings later blinded to CELL_*)."""
+    """2×2: topic prevalence extreme × rating tier (meanings later blinded to CELL_*).
+
+    Low cells use **positive-share only** (share > 0 and n_sentences > 0) so
+    DuckDB hard-assignment fetches can return sentences. Empty cells are
+    backfilled from the same rating tier by extreme share rank.
+    """
     valid = prevalence.dropna(subset=[tier_column]).copy()
-    # Only books that ever have the topic contribute to high prevalence;
-    # low prevalence includes zeros so the contrast is real.
     low_q, high_q = list(quantiles)
-    present = valid[valid["share"] > 0]
+    # Review packets need fetchable sentences; exclude true zeros from all cells.
+    present = valid[(valid["share"] > 0) & (valid["n_sentences"] > 0)].copy()
     if present.empty:
         return pd.DataFrame(
             columns=["book_id", "share", "n_sentences", tier_column, "cell_meaning"]
@@ -132,26 +136,59 @@ def sample_prevalence_rating_books(
     # If the topic is ultra-sparse, treat any positive share as "high".
     if high_cut <= low_cut:
         high_cut = float(present["share"].min())
-        low_cut = 0.0
+        low_cut = float(present["share"].max())
 
     cells = {
-        "high_prevalence_high_tier": (valid["share"] >= high_cut) & (valid[tier_column] == tier_high),
-        "high_prevalence_low_tier": (valid["share"] >= high_cut) & (valid[tier_column] == tier_low),
-        "low_prevalence_high_tier": (valid["share"] <= low_cut) & (valid[tier_column] == tier_high),
-        "low_prevalence_low_tier": (valid["share"] <= low_cut) & (valid[tier_column] == tier_low),
+        "high_prevalence_high_tier": (present["share"] >= high_cut)
+        & (present[tier_column] == tier_high),
+        "high_prevalence_low_tier": (present["share"] >= high_cut)
+        & (present[tier_column] == tier_low),
+        "low_prevalence_high_tier": (present["share"] <= low_cut)
+        & (present[tier_column] == tier_high),
+        "low_prevalence_low_tier": (present["share"] <= low_cut)
+        & (present[tier_column] == tier_low),
+    }
+    low_meanings = {"low_prevalence_high_tier", "low_prevalence_low_tier"}
+    tier_for_meaning = {
+        "high_prevalence_high_tier": tier_high,
+        "high_prevalence_low_tier": tier_low,
+        "low_prevalence_high_tier": tier_high,
+        "low_prevalence_low_tier": tier_low,
     }
 
     rng = np.random.default_rng(seed)
     picks: List[pd.DataFrame] = []
+    used_ids: Set[int] = set()
     for meaning, mask in cells.items():
-        candidates = valid.loc[mask]
+        candidates = present.loc[mask]
         if candidates.empty:
-            continue
-        take = min(int(books_per_cell), len(candidates))
-        chosen_idx = rng.choice(len(candidates), size=take, replace=False)
-        chosen = candidates.iloc[chosen_idx].copy()
+            chosen = present.iloc[0:0].copy()
+        else:
+            take = min(int(books_per_cell), len(candidates))
+            chosen_idx = rng.choice(len(candidates), size=take, replace=False)
+            chosen = candidates.iloc[chosen_idx].copy()
         chosen["cell_meaning"] = meaning
-        picks.append(chosen)
+
+        # Backfill thin cells from same rating tier by extreme share.
+        if len(chosen) < int(books_per_cell):
+            tier = tier_for_meaning[meaning]
+            pool = present[
+                (present[tier_column] == tier)
+                & (~present["book_id"].isin(set(chosen["book_id"]).union(used_ids)))
+            ].copy()
+            if meaning in low_meanings:
+                pool = pool.sort_values(["share", "n_sentences"], ascending=[True, False])
+            else:
+                pool = pool.sort_values(["share", "n_sentences"], ascending=[False, False])
+            need = int(books_per_cell) - len(chosen)
+            extra = pool.head(need).copy()
+            if not extra.empty:
+                extra["cell_meaning"] = meaning
+                chosen = pd.concat([chosen, extra], ignore_index=True)
+
+        if not chosen.empty:
+            used_ids.update(int(b) for b in chosen["book_id"].tolist())
+            picks.append(chosen)
 
     if not picks:
         return pd.DataFrame(
@@ -324,8 +361,27 @@ def build_evidence_packet(
     tid = int(topic_id)
     row = lookup.loc[lookup["topic_id"] == tid]
     if row.empty:
-        raise KeyError(f"topic_id {tid} not in topic_lookup")
-    meta_row = row.iloc[0]
+        # Stage07-excluded / unlabeled survivors still need CELL samples for review.
+        LOGGER.warning(
+            "topic_id %s not in topic_lookup; building unlabeled stub packet", tid
+        )
+        meta_row = pd.Series(
+            {
+                "taxonomy_main_id": "unlabeled",
+                "taxonomy_main_name": None,
+                "taxonomy_secondary_id": None,
+                "taxonomy_secondary_name": None,
+                "taxonomy_confidence": None,
+                "label_rationale": None,
+                "radway_main_id": None,
+                "radway_main_name": None,
+                "radway_secondary_id": None,
+                "radway_phase": None,
+                "radway_confidence": None,
+            }
+        )
+    else:
+        meta_row = row.iloc[0]
 
     exhaustive_leaves = {str(x) for x in cfg.section("evidence", "exhaustive_leaves")}
     leaf = str(meta_row["taxonomy_main_id"])

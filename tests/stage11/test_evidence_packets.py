@@ -67,7 +67,7 @@ def test_prevalence_rating_sampler_returns_blindable_cells():
         {
             "book_id": list(range(20)),
             "share": [0.2] * 5 + [0.01] * 5 + [0.2] * 5 + [0.0] * 5,
-            "n_sentences": [10] * 20,
+            "n_sentences": [10] * 15 + [0] * 5,
             "rating_class": (
                 ["high_rate"] * 5
                 + ["high_rate"] * 5
@@ -94,6 +94,35 @@ def test_prevalence_rating_sampler_returns_blindable_cells():
             "low_prevalence_low_tier",
         }
     )
+    # Positive-share only: zero-mass books must not enter review cells.
+    assert (sampled["share"] > 0).all()
+    assert (sampled["n_sentences"] > 0).all()
+
+
+def test_prevalence_rating_sampler_backfills_thin_low_cells():
+    # Only one book at the low quantile per tier; backfill should still fill quota.
+    rows = []
+    bid = 0
+    for tier in ("high_rate", "low_rate"):
+        rows.append({"book_id": bid, "share": 0.01, "n_sentences": 3, "rating_class": tier})
+        bid += 1
+        for _ in range(6):
+            rows.append({"book_id": bid, "share": 0.2, "n_sentences": 8, "rating_class": tier})
+            bid += 1
+    frame = pd.DataFrame(rows)
+    sampled = sample_prevalence_rating_books(
+        frame,
+        tier_column="rating_class",
+        tier_high="high_rate",
+        tier_low="low_rate",
+        quantiles=(0.25, 0.75),
+        books_per_cell=3,
+        seed=7,
+    )
+    counts = sampled.groupby("cell_meaning").size()
+    assert counts.get("low_prevalence_high_tier", 0) == 3
+    assert counts.get("low_prevalence_low_tier", 0) == 3
+    assert (sampled["share"] > 0).all()
 
 
 def test_lexical_packet_has_four_representations():

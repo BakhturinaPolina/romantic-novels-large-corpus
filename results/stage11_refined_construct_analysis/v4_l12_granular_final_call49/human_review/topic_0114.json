@@ -1,0 +1,161 @@
+{
+  "topic_id": 114,
+  "label": "Guns Aimed Across The Room",
+  "taxonomy_main_id": "7.2",
+  "taxonomy_main_name": "Violence, Threats & Non-Sexual Coercion",
+  "taxonomy_secondary_id": "10.4",
+  "taxonomy_secondary_name": "Action & Weaponized Conflict",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "gun",
+      "pistol",
+      "rifle",
+      "barrel",
+      "holster",
+      "glock",
+      "weapon",
+      "guns",
+      "holstered",
+      "pointed"
+    ],
+    "KeyBERT": [
+      "weapons",
+      "aimed",
+      "pointing",
+      "flinched",
+      "motioned",
+      "choked",
+      "cocked",
+      "intently",
+      "ducked",
+      "gesturing"
+    ],
+    "POS": [
+      "partners",
+      "commander",
+      "distraction",
+      "ribs",
+      "weapons",
+      "suitcase",
+      "comfortable"
+    ],
+    "MMR": [
+      "fired",
+      "cocked",
+      "trained",
+      "sticking",
+      "bursting",
+      "gesturing",
+      "commander",
+      "playfully",
+      "instinctively",
+      "preparing"
+    ]
+  },
+  "stage08_snippets": [
+    "while [person] trussed up the englishman, caroline aimed her gun. “",
+    "barrette renewed his grip on the pistol, and aimed at lilly.",
+    "he was on his back, the chair across his legs, but his gun still aimed at [person]. “"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.13717710619618437,
+      "max_topic_prob": 0.6752777099609375,
+      "sentence": "She checked her weapon, settled it. \""
+    },
+    {
+      "sid": "BOOK_001_begin_3",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.28819854803309136,
+      "max_topic_prob": 0.6693257093429565,
+      "sentence": "With a sealed hand, Eve turned back Mills's jacket, saw his weapon still holstered. \""
+    },
+    {
+      "sid": "BOOK_001_middle_1",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5702346783724463,
+      "max_topic_prob": 0.7004640102386475,
+      "sentence": "The weapon seemed to leap in her hand as she fired it, struck the man holding the boy between the eyes."
+    },
+    {
+      "sid": "BOOK_001_end_4",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9858179976363329,
+      "max_topic_prob": 0.666796088218689,
+      "sentence": "She said it quickly, because she'd seen his hand tighten on his weapon. \""
+    },
+    {
+      "sid": "BOOK_001_end_5",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9506162417693736,
+      "max_topic_prob": 0.6624463796615601,
+      "sentence": "And the gun with it. \""
+    },
+    {
+      "sid": "BOOK_001_end_6",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9876751646125275,
+      "max_topic_prob": 0.6612160801887512,
+      "sentence": "She said it quietly, urgently, as he lifted his weapon and placed it to the pulse at his throat."
+    },
+    {
+      "sid": "BOOK_002_middle_2",
+      "cell": "CELL_D",
+      "tertile": "middle",
+      "normalized_position": 0.6525676010915406,
+      "max_topic_prob": 0.49278542399406433,
+      "sentence": "He forced his focus from her, lifted the camera and shot off a few frames in a row."
+    },
+    {
+      "sid": "BOOK_002_end_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.8051352021830811,
+      "max_topic_prob": 0.6090590953826904,
+      "sentence": "Flipping on her side, she craned to see the assailant."
+    },
+    {
+      "sid": "BOOK_003_begin_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.06626082884570358,
+      "max_topic_prob": 0.6589876413345337,
+      "sentence": "Lifting the weapon, she set it on its lowest setting and carefully sited it along the cut, firing off one quick burst."
+    },
+    {
+      "sid": "BOOK_003_begin_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.1013814095059705,
+      "max_topic_prob": 0.6542091369628906,
+      "sentence": "Coming upon him from behind, she placed the barrel of her weapon against the center of his back, directly over his heart. “"
+    },
+    {
+      "sid": "BOOK_003_begin_3",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.05104191055958792,
+      "max_topic_prob": 0.6469101905822754,
+      "sentence": "She clotheslined the second with an extended arm, grabbing his weapon from his slackened grip even as he executed a flip."
+    },
+    {
+      "sid": "BOOK_003_begin_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.0671973776633107,
+      "max_topic_prob": 0.6370183229446411,
+      "sentence": "Lifting the weapon with an effort, she fired off several warning shots."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

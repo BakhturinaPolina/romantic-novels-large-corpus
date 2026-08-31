@@ -1,0 +1,159 @@
+{
+  "topic_id": 100,
+  "label": "Promising to Find Her",
+  "taxonomy_main_id": "9.2",
+  "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+  "taxonomy_secondary_id": "4.6",
+  "taxonomy_secondary_name": "Emotional Safety, Reassurance & Caretaking",
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "find",
+      "meet",
+      "needs",
+      "ll",
+      "see",
+      "leave",
+      "where",
+      "her",
+      "can",
+      "here"
+    ],
+    "KeyBERT": [
+      "lingering",
+      "sir",
+      "thinks",
+      "replaced",
+      "mister",
+      "hiding",
+      "ok",
+      "urgency",
+      "dismissed",
+      "uh"
+    ],
+    "POS": [
+      "urgency",
+      "excited",
+      "screen",
+      "decision",
+      "sir"
+    ],
+    "MMR": [
+      "mister",
+      "urgency",
+      "dismissed",
+      "dealing",
+      "lingering",
+      "replaced",
+      "repeated",
+      "planning",
+      "screen",
+      "expect"
+    ]
+  },
+  "stage08_snippets": [
+    "i promise, i’ll bring her right back.”",
+    "i’ll hurry and see if i can catch her.”",
+    "i’ll look until she’s found.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_1",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.278197291142275,
+      "max_topic_prob": 0.781627893447876,
+      "sentence": "She’s out here.”"
+    },
+    {
+      "sid": "BOOK_001_begin_2",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.2055615486036198,
+      "max_topic_prob": 0.762410044670105,
+      "sentence": "I’ll find her, sir.” “"
+    },
+    {
+      "sid": "BOOK_001_begin_4",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.25530384753685725,
+      "max_topic_prob": 0.7451094388961792,
+      "sentence": "I can’t just leave her out there.”"
+    },
+    {
+      "sid": "BOOK_001_middle_3",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.4627831715210356,
+      "max_topic_prob": 0.7517237663269043,
+      "sentence": "We have to find her."
+    },
+    {
+      "sid": "BOOK_001_middle_6",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.34460026369411484,
+      "max_topic_prob": 0.7220482230186462,
+      "sentence": "What are you doing to find her?” “"
+    },
+    {
+      "sid": "BOOK_001_end_5",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.8849334771664868,
+      "max_topic_prob": 0.7229869365692139,
+      "sentence": "I can’t wait to see her.”"
+    },
+    {
+      "sid": "BOOK_002_begin_4",
+      "cell": "CELL_A",
+      "tertile": "begin",
+      "normalized_position": 0.027207174453129732,
+      "max_topic_prob": 0.7428485751152039,
+      "sentence": "I’m showing her around.” “"
+    },
+    {
+      "sid": "BOOK_002_middle_6",
+      "cell": "CELL_A",
+      "tertile": "middle",
+      "normalized_position": 0.5611706962370479,
+      "max_topic_prob": 0.7372143864631653,
+      "sentence": "Here, let me have her.”"
+    },
+    {
+      "sid": "BOOK_002_end_1",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9972429255286918,
+      "max_topic_prob": 0.7776944637298584,
+      "sentence": "I found her.”"
+    },
+    {
+      "sid": "BOOK_002_end_2",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.7398957765254802,
+      "max_topic_prob": 0.7526489496231079,
+      "sentence": "She’s right here.”"
+    },
+    {
+      "sid": "BOOK_002_end_3",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.9867902805550506,
+      "max_topic_prob": 0.7485860586166382,
+      "sentence": "She won’t be able to leave, to rest, to pass over, whatever it is, until we find her.” “"
+    },
+    {
+      "sid": "BOOK_002_end_5",
+      "cell": "CELL_A",
+      "tertile": "end",
+      "normalized_position": 0.8409683087923407,
+      "max_topic_prob": 0.7384554743766785,
+      "sentence": "I’ll go get her.” “"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

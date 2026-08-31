@@ -61,7 +61,7 @@
   "contextual": {
     "sentences": [
       {
-        "sid": "BOOK_001_1",
+        "sid": "BOOK_001_begin_1",
         "book_id_anon": "BOOK_001",
         "cell": "CELL_B",
         "sentence": "Hannah?”",
@@ -72,18 +72,7 @@
         "sentence_index": 357
       },
       {
-        "sid": "BOOK_001_2",
-        "book_id_anon": "BOOK_001",
-        "cell": "CELL_B",
-        "sentence": "Yeah, he’s actually Hannah’s boyfriend.”",
-        "max_topic_prob": 0.6790021657943726,
-        "normalized_position": 0.6431808817470128,
-        "tertile": "middle",
-        "chapter_index": 13,
-        "sentence_index": 445
-      },
-      {
-        "sid": "BOOK_001_3",
+        "sid": "BOOK_001_begin_3",
         "book_id_anon": "BOOK_001",
         "cell": "CELL_B",
         "sentence": "That Hannah’s boyfriend was sleeping with apparently the whole time they were going out?",
@@ -94,7 +83,7 @@
         "sentence_index": 364
       },
       {
-        "sid": "BOOK_001_4",
+        "sid": "BOOK_001_begin_4",
         "book_id_anon": "BOOK_001",
         "cell": "CELL_B",
         "sentence": "On Hannah’s behalf, and on yours too, even though I didn’t know your name.”",
@@ -105,7 +94,7 @@
         "sentence_index": 368
       },
       {
-        "sid": "BOOK_001_5",
+        "sid": "BOOK_001_begin_5",
         "book_id_anon": "BOOK_001",
         "cell": "CELL_B",
         "sentence": "Hannah took me to that party as a pity thing, unfortunately.",
@@ -116,7 +105,7 @@
         "sentence_index": 377
       },
       {
-        "sid": "BOOK_001_6",
+        "sid": "BOOK_001_begin_6",
         "book_id_anon": "BOOK_001",
         "cell": "CELL_B",
         "sentence": "Including that hot guy Hannah had started to introduce me to.",
@@ -127,30 +116,52 @@
         "sentence_index": 76
       },
       {
-        "sid": "BOOK_003_1",
-        "book_id_anon": "BOOK_003",
-        "cell": "CELL_C",
-        "sentence": "Get me the details on Amy.",
-        "max_topic_prob": 0.4810858368873596,
-        "normalized_position": 0.4633121816069354,
+        "sid": "BOOK_001_middle_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Yeah, he’s actually Hannah’s boyfriend.”",
+        "max_topic_prob": 0.6790021657943726,
+        "normalized_position": 0.6431808817470128,
         "tertile": "middle",
-        "chapter_index": 16,
-        "sentence_index": 377
+        "chapter_index": 13,
+        "sentence_index": 445
       },
       {
-        "sid": "BOOK_003_2",
+        "sid": "BOOK_002_middle_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "She’s okay with it, Jeff.” “",
+        "max_topic_prob": 0.5265567898750305,
+        "normalized_position": 0.48070220730605395,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 38
+      },
+      {
+        "sid": "BOOK_003_middle_1",
         "book_id_anon": "BOOK_003",
         "cell": "CELL_C",
-        "sentence": "I would confirm the girl was there, make the deal and skedaddle then Hawk and the boys would swoop in and recover the girl.",
-        "max_topic_prob": 0.45081067085266113,
-        "normalized_position": 0.9159889176870141,
-        "tertile": "end",
-        "chapter_index": 28,
-        "sentence_index": 159
+        "sentence": "Evan,” she says, “that day, last week, I went out to the pond, it was the day after the bear.",
+        "max_topic_prob": 0.4670599699020386,
+        "normalized_position": 0.6136675151752496,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 404
       },
       {
-        "sid": "BOOK_004_1",
+        "sid": "BOOK_004_end_1",
         "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Earlier she’d acted the same way with Dave.",
+        "max_topic_prob": 0.549205482006073,
+        "normalized_position": 0.7084569732937686,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 260
+      },
+      {
+        "sid": "BOOK_005_middle_1",
+        "book_id_anon": "BOOK_005",
         "cell": "CELL_A",
         "sentence": "Anyway, I was totally pissed about that, and about Jess pinching my arm, when Cassie dropped another bomb on me… She said that she is “Falling in love with Jimmy!!!!”",
         "max_topic_prob": 0.5599098205566406,
@@ -160,19 +171,8 @@
         "sentence_index": 15
       },
       {
-        "sid": "BOOK_004_2",
-        "book_id_anon": "BOOK_004",
-        "cell": "CELL_A",
-        "sentence": "I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “",
-        "max_topic_prob": 0.5568053126335144,
-        "normalized_position": 0.7871581450653984,
-        "tertile": "end",
-        "chapter_index": 26,
-        "sentence_index": 62
-      },
-      {
-        "sid": "BOOK_004_3",
-        "book_id_anon": "BOOK_004",
+        "sid": "BOOK_005_middle_3",
+        "book_id_anon": "BOOK_005",
         "cell": "CELL_A",
         "sentence": "Getting all mad because of her relationship with Jimmy… Wishing that they had never started dating… Now I will never see Cassie again!",
         "max_topic_prob": 0.5379259586334229,
@@ -182,8 +182,8 @@
         "sentence_index": 17
       },
       {
-        "sid": "BOOK_004_4",
-        "book_id_anon": "BOOK_004",
+        "sid": "BOOK_005_middle_4",
+        "book_id_anon": "BOOK_005",
         "cell": "CELL_A",
         "sentence": "Jess and I rode together, but Cassie said she would meet us there; she was still trying to find the perfect gift for Jimmy.",
         "max_topic_prob": 0.5356385707855225,
@@ -193,19 +193,8 @@
         "sentence_index": 2
       },
       {
-        "sid": "BOOK_004_5",
-        "book_id_anon": "BOOK_004",
-        "cell": "CELL_A",
-        "sentence": "Tell Jimmy and Jess I said “Hello,” and tell Cassie I can’t wait to meet her.",
-        "max_topic_prob": 0.529804527759552,
-        "normalized_position": 0.7015457788347206,
-        "tertile": "end",
-        "chapter_index": 24,
-        "sentence_index": 18
-      },
-      {
-        "sid": "BOOK_004_6",
-        "book_id_anon": "BOOK_004",
+        "sid": "BOOK_005_middle_6",
+        "book_id_anon": "BOOK_005",
         "cell": "CELL_A",
         "sentence": "I remembered Cassie on the last night we spent together at her house, smiling while she told me about how much she liked Jimmy.",
         "max_topic_prob": 0.5218490362167358,
@@ -215,7 +204,29 @@
         "sentence_index": 85
       },
       {
-        "sid": "BOOK_006_1",
+        "sid": "BOOK_005_end_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “",
+        "max_topic_prob": 0.5568053126335144,
+        "normalized_position": 0.7871581450653984,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_005_end_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Tell Jimmy and Jess I said “Hello,” and tell Cassie I can’t wait to meet her.",
+        "max_topic_prob": 0.529804527759552,
+        "normalized_position": 0.7015457788347206,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_006_begin_1",
         "book_id_anon": "BOOK_006",
         "cell": "CELL_A",
         "sentence": "Hannah . . .”",
@@ -226,18 +237,7 @@
         "sentence_index": 278
       },
       {
-        "sid": "BOOK_006_2",
-        "book_id_anon": "BOOK_006",
-        "cell": "CELL_A",
-        "sentence": "They’d wanted Hannah alive.”",
-        "max_topic_prob": 0.7339450716972351,
-        "normalized_position": 0.6717884581025549,
-        "tertile": "end",
-        "chapter_index": 26,
-        "sentence_index": 200
-      },
-      {
-        "sid": "BOOK_006_3",
+        "sid": "BOOK_006_begin_3",
         "book_id_anon": "BOOK_006",
         "cell": "CELL_A",
         "sentence": "Why did they want you to be Hannah?” “",
@@ -248,18 +248,7 @@
         "sentence_index": 96
       },
       {
-        "sid": "BOOK_006_4",
-        "book_id_anon": "BOOK_006",
-        "cell": "CELL_A",
-        "sentence": "Hannah was sure something special.",
-        "max_topic_prob": 0.7126144170761108,
-        "normalized_position": 0.6021082722887261,
-        "tertile": "middle",
-        "chapter_index": 24,
-        "sentence_index": 24
-      },
-      {
-        "sid": "BOOK_006_5",
+        "sid": "BOOK_006_begin_5",
         "book_id_anon": "BOOK_006",
         "cell": "CELL_A",
         "sentence": "Hannah had been a Sounder.",
@@ -270,7 +259,7 @@
         "sentence_index": 158
       },
       {
-        "sid": "BOOK_006_6",
+        "sid": "BOOK_006_begin_6",
         "book_id_anon": "BOOK_006",
         "cell": "CELL_A",
         "sentence": "Hannah was the love of Ryker’s life.",
@@ -281,7 +270,62 @@
         "sentence_index": 296
       },
       {
-        "sid": "BOOK_008_1",
+        "sid": "BOOK_006_middle_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Hannah was sure something special.",
+        "max_topic_prob": 0.7126144170761108,
+        "normalized_position": 0.6021082722887261,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_006_end_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "They’d wanted Hannah alive.”",
+        "max_topic_prob": 0.7339450716972351,
+        "normalized_position": 0.6717884581025549,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 200
+      },
+      {
+        "sid": "BOOK_007_middle_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "Yoori and— Oh God, no!",
+        "max_topic_prob": 0.40410637855529785,
+        "normalized_position": 0.5303375301366193,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 261
+      },
+      {
+        "sid": "BOOK_007_middle_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "It would only ever be Yoori. “",
+        "max_topic_prob": 0.37353307008743286,
+        "normalized_position": 0.5280605411197429,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 227
+      },
+      {
+        "sid": "BOOK_007_middle_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_C",
+        "sentence": "It would always be Yoori.",
+        "max_topic_prob": 0.3483022451400757,
+        "normalized_position": 0.5279935708545406,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_008_begin_1",
         "book_id_anon": "BOOK_008",
         "cell": "CELL_B",
         "sentence": "She suddenly regretted bring Zach into this, and exposing him to Tara.",
@@ -292,29 +336,7 @@
         "sentence_index": 1201
       },
       {
-        "sid": "BOOK_008_2",
-        "book_id_anon": "BOOK_008",
-        "cell": "CELL_B",
-        "sentence": "Tara thought of her own feelings for Zach, which were there even when she didn’t want them to be.",
-        "max_topic_prob": 0.5753716826438904,
-        "normalized_position": 0.9321606058215666,
-        "tertile": "end",
-        "chapter_index": 6,
-        "sentence_index": 1022
-      },
-      {
-        "sid": "BOOK_008_3",
-        "book_id_anon": "BOOK_008",
-        "cell": "CELL_B",
-        "sentence": "She told Zach the whole story.",
-        "max_topic_prob": 0.5692299604415894,
-        "normalized_position": 0.636428177013489,
-        "tertile": "middle",
-        "chapter_index": 5,
-        "sentence_index": 76
-      },
-      {
-        "sid": "BOOK_008_4",
+        "sid": "BOOK_008_begin_4",
         "book_id_anon": "BOOK_008",
         "cell": "CELL_B",
         "sentence": "She should have just walked up to Zach, and introduced herself.",
@@ -325,18 +347,7 @@
         "sentence_index": 157
       },
       {
-        "sid": "BOOK_008_5",
-        "book_id_anon": "BOOK_008",
-        "cell": "CELL_B",
-        "sentence": "But after a few minutes, Michelle said, \"Tara, are you still going to the prom with Zach?\"",
-        "max_topic_prob": 0.5545832514762878,
-        "normalized_position": 0.5545476059004496,
-        "tertile": "middle",
-        "chapter_index": 4,
-        "sentence_index": 839
-      },
-      {
-        "sid": "BOOK_008_6",
+        "sid": "BOOK_008_begin_6",
         "book_id_anon": "BOOK_008",
         "cell": "CELL_B",
         "sentence": "Thinking of Tara made her think of the task she'd put Vicky on.",
@@ -347,40 +358,40 @@
         "sentence_index": 340
       },
       {
-        "sid": "BOOK_009_1",
-        "book_id_anon": "BOOK_009",
-        "cell": "CELL_A",
-        "sentence": "Hannah and Shelley she basically ignored. “",
-        "max_topic_prob": 0.6856014728546143,
-        "normalized_position": 0.8058844808874954,
-        "tertile": "end",
-        "chapter_index": 44,
-        "sentence_index": 1496
+        "sid": "BOOK_008_middle_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "She told Zach the whole story.",
+        "max_topic_prob": 0.5692299604415894,
+        "normalized_position": 0.636428177013489,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 76
       },
       {
-        "sid": "BOOK_009_2",
-        "book_id_anon": "BOOK_009",
-        "cell": "CELL_A",
-        "sentence": "Natasha,” Justin repeated, because it was apparent she hadn’t heard him. “",
-        "max_topic_prob": 0.6260417699813843,
-        "normalized_position": 0.8984685879657542,
-        "tertile": "end",
-        "chapter_index": 46,
-        "sentence_index": 431
+        "sid": "BOOK_008_middle_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "But after a few minutes, Michelle said, \"Tara, are you still going to the prom with Zach?\"",
+        "max_topic_prob": 0.5545832514762878,
+        "normalized_position": 0.5545476059004496,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 839
       },
       {
-        "sid": "BOOK_009_3",
-        "book_id_anon": "BOOK_009",
-        "cell": "CELL_A",
-        "sentence": "Hannah – the bartender.",
-        "max_topic_prob": 0.624022901058197,
-        "normalized_position": 0.7760520921258893,
+        "sid": "BOOK_008_end_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "Tara thought of her own feelings for Zach, which were there even when she didn’t want them to be.",
+        "max_topic_prob": 0.5753716826438904,
+        "normalized_position": 0.9321606058215666,
         "tertile": "end",
-        "chapter_index": 44,
-        "sentence_index": 259
+        "chapter_index": 6,
+        "sentence_index": 1022
       },
       {
-        "sid": "BOOK_009_4",
+        "sid": "BOOK_009_middle_4",
         "book_id_anon": "BOOK_009",
         "cell": "CELL_A",
         "sentence": "Kathleen frowned, not quite ready to be cavalier about the harrowing situation Sadie’d found herself in with those intruders.",
@@ -391,7 +402,40 @@
         "sentence_index": 698
       },
       {
-        "sid": "BOOK_009_5",
+        "sid": "BOOK_009_end_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Hannah and Shelley she basically ignored. “",
+        "max_topic_prob": 0.6856014728546143,
+        "normalized_position": 0.8058844808874954,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 1496
+      },
+      {
+        "sid": "BOOK_009_end_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Natasha,” Justin repeated, because it was apparent she hadn’t heard him. “",
+        "max_topic_prob": 0.6260417699813843,
+        "normalized_position": 0.8984685879657542,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 431
+      },
+      {
+        "sid": "BOOK_009_end_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_A",
+        "sentence": "Hannah – the bartender.",
+        "max_topic_prob": 0.624022901058197,
+        "normalized_position": 0.7760520921258893,
+        "tertile": "end",
+        "chapter_index": 44,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_009_end_5",
         "book_id_anon": "BOOK_009",
         "cell": "CELL_A",
         "sentence": "You’re embarrassing him,” Hannah chided, leaning her platinum head toward Shelley.",
@@ -402,7 +446,7 @@
         "sentence_index": 1468
       },
       {
-        "sid": "BOOK_009_6",
+        "sid": "BOOK_009_end_6",
         "book_id_anon": "BOOK_009",
         "cell": "CELL_A",
         "sentence": "I sense that you’ve been talking with Natasha about her childhood.” “",
@@ -413,7 +457,7 @@
         "sentence_index": 621
       },
       {
-        "sid": "BOOK_010_1",
+        "sid": "BOOK_010_begin_1",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "Was Hannah going to die? “",
@@ -424,7 +468,7 @@
         "sentence_index": 132
       },
       {
-        "sid": "BOOK_010_2",
+        "sid": "BOOK_010_begin_2",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "Besides, what if Hannah needed her? “",
@@ -435,7 +479,7 @@
         "sentence_index": 52
       },
       {
-        "sid": "BOOK_010_3",
+        "sid": "BOOK_010_begin_3",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "Hannah?”",
@@ -446,7 +490,7 @@
         "sentence_index": 7
       },
       {
-        "sid": "BOOK_010_4",
+        "sid": "BOOK_010_middle_4",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "I need to go see Hannah.”",
@@ -457,7 +501,7 @@
         "sentence_index": 155
       },
       {
-        "sid": "BOOK_010_5",
+        "sid": "BOOK_010_middle_5",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "Do you know why Hannah came by to see me?”",
@@ -468,7 +512,7 @@
         "sentence_index": 127
       },
       {
-        "sid": "BOOK_010_6",
+        "sid": "BOOK_010_middle_6",
         "book_id_anon": "BOOK_010",
         "cell": "CELL_A",
         "sentence": "Last night she’d felt guilty for indirectly leading Hannah to her apartment. “",
@@ -479,7 +523,7 @@
         "sentence_index": 171
       },
       {
-        "sid": "BOOK_011_1",
+        "sid": "BOOK_011_begin_1",
         "book_id_anon": "BOOK_011",
         "cell": "CELL_B",
         "sentence": "Um, Mamaw, I'm still up in Huntington, so I'll probably be late....\" \"Well, could you pick up some milk on your way home?",
@@ -490,7 +534,7 @@
         "sentence_index": 34
       },
       {
-        "sid": "BOOK_011_2",
+        "sid": "BOOK_011_end_2",
         "book_id_anon": "BOOK_011",
         "cell": "CELL_B",
         "sentence": "Yet, despite her feelings, Kat had been kind enough to keep her opinion about Jacob to herself after her first few warnings were ignored, so it seemed catty for me to pick at Drew's behavior.",
@@ -501,7 +545,7 @@
         "sentence_index": 18
       },
       {
-        "sid": "BOOK_011_3",
+        "sid": "BOOK_011_end_3",
         "book_id_anon": "BOOK_011",
         "cell": "CELL_B",
         "sentence": "It also seemed a little unfair to say anything at all since Kat clearly didn't like my boyfriend any more than I liked hers. (",
@@ -512,18 +556,7 @@
         "sentence_index": 16
       },
       {
-        "sid": "BOOK_012_1",
-        "book_id_anon": "BOOK_012",
-        "cell": "CELL_B",
-        "sentence": "Dave felt like he’d just disappeared from her life, and as for her mom, Julia wasn’t even sure she had ever been there.",
-        "max_topic_prob": 0.6023734211921692,
-        "normalized_position": 0.8682879059898808,
-        "tertile": "end",
-        "chapter_index": 38,
-        "sentence_index": 79
-      },
-      {
-        "sid": "BOOK_012_2",
+        "sid": "BOOK_012_middle_2",
         "book_id_anon": "BOOK_012",
         "cell": "CELL_B",
         "sentence": "Gretchen being there, and Julia’s reaction to it.",
@@ -534,18 +567,7 @@
         "sentence_index": 13
       },
       {
-        "sid": "BOOK_012_3",
-        "book_id_anon": "BOOK_012",
-        "cell": "CELL_B",
-        "sentence": "Did Debbie survive this time?” “",
-        "max_topic_prob": 0.5942552089691162,
-        "normalized_position": 0.945160763832218,
-        "tertile": "end",
-        "chapter_index": 41,
-        "sentence_index": 125
-      },
-      {
-        "sid": "BOOK_012_4",
+        "sid": "BOOK_012_middle_4",
         "book_id_anon": "BOOK_012",
         "cell": "CELL_B",
         "sentence": "Julia was starting to like Gretchen, and it shouldn’t have been a problem.",
@@ -556,7 +578,7 @@
         "sentence_index": 83
       },
       {
-        "sid": "BOOK_012_5",
+        "sid": "BOOK_012_middle_5",
         "book_id_anon": "BOOK_012",
         "cell": "CELL_B",
         "sentence": "Julia loved this so much that she’d managed to ignore the fact that everything they were planning was for Gretchen.",
@@ -567,7 +589,29 @@
         "sentence_index": 101
       },
       {
-        "sid": "BOOK_012_6",
+        "sid": "BOOK_012_end_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Dave felt like he’d just disappeared from her life, and as for her mom, Julia wasn’t even sure she had ever been there.",
+        "max_topic_prob": 0.6023734211921692,
+        "normalized_position": 0.8682879059898808,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_012_end_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Did Debbie survive this time?” “",
+        "max_topic_prob": 0.5942552089691162,
+        "normalized_position": 0.945160763832218,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_012_end_6",
         "book_id_anon": "BOOK_012",
         "cell": "CELL_B",
         "sentence": "Gretchen had admitted to jealousy, but she’d insisted that she didn’t want Dave and Julia to stop being friends because of her.",
@@ -578,15 +622,48 @@
         "sentence_index": 83
       },
       {
-        "sid": "BOOK_014_1",
-        "book_id_anon": "BOOK_014",
-        "cell": "CELL_C",
-        "sentence": "The Warrior's Pet Stephanie West",
-        "max_topic_prob": 0.40628546476364136,
-        "normalized_position": 0.0,
+        "sid": "BOOK_013_begin_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Chris had asked her to help with their parents.",
+        "max_topic_prob": 0.5040662288665771,
+        "normalized_position": 0.10129449838187703,
         "tertile": "begin",
-        "chapter_index": 0,
+        "chapter_index": 3,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_014_middle_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_D",
+        "sentence": "Delilah .",
+        "max_topic_prob": 0.39745593070983887,
+        "normalized_position": 0.4355048389426549,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_015_end_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Easton “YOU THINK BROWNIE is still out there?”",
+        "max_topic_prob": 0.490784227848053,
+        "normalized_position": 0.9706040509051801,
+        "tertile": "end",
+        "chapter_index": 27,
         "sentence_index": 0
+      },
+      {
+        "sid": "BOOK_016_begin_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "Tammy, a fellow squad leader and the closest thing he had to a friend on the force, had dragged him out, insisting he celebrate the victory by getting laid.",
+        "max_topic_prob": 0.3780607283115387,
+        "normalized_position": 0.0698304118569189,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 106
       }
     ],
     "books_sampled": [
@@ -603,7 +680,7 @@
         "n_sentences": 22
       },
       {
-        "book_id_anon": "BOOK_004",
+        "book_id_anon": "BOOK_005",
         "cell": "CELL_A",
         "share": 0.013739545997610514,
         "n_sentences": 23
@@ -641,50 +718,50 @@
       {
         "book_id_anon": "BOOK_007",
         "cell": "CELL_C",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.00020323826299031232,
+        "n_sentences": 3
       },
       {
         "book_id_anon": "BOOK_016",
         "cell": "CELL_C",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.00014316392269148176,
+        "n_sentences": 1
       },
       {
-        "book_id_anon": "BOOK_014",
+        "book_id_anon": "BOOK_015",
         "cell": "CELL_C",
-        "share": 0.00016347882949158083,
+        "share": 0.00018109380659181456,
         "n_sentences": 1
       },
       {
         "book_id_anon": "BOOK_003",
         "cell": "CELL_C",
-        "share": 0.00018052170773535519,
-        "n_sentences": 2
+        "share": 0.0001976284584980237,
+        "n_sentences": 1
       },
       {
-        "book_id_anon": "BOOK_015",
+        "book_id_anon": "BOOK_014",
         "cell": "CELL_D",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.00014564520827264782,
+        "n_sentences": 1
       },
       {
         "book_id_anon": "BOOK_002",
         "cell": "CELL_D",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.00013000520020800833,
+        "n_sentences": 1
       },
       {
         "book_id_anon": "BOOK_013",
         "cell": "CELL_D",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.00016254876462938882,
+        "n_sentences": 1
       },
       {
-        "book_id_anon": "BOOK_005",
+        "book_id_anon": "BOOK_004",
         "cell": "CELL_D",
-        "share": 0.0,
-        "n_sentences": 0
+        "share": 0.0001489203276247208,
+        "n_sentences": 1
       }
     ],
     "sampling": {
@@ -692,8 +769,9 @@
       "exhaustive": false,
       "books_per_cell": 4,
       "sentences_per_book_topic": 6,
+      "position_sentences_per_tertile": null,
       "n_books": 16,
-      "n_sentences": 48
+      "n_sentences": 55
     }
   },
   "pass_c_reveal": {
@@ -702,11 +780,19 @@
     "taxonomy_secondary_id": "5.2",
     "taxonomy_secondary_name": "Friends, Allies & Social Circles",
     "taxonomy_confidence": 0.75,
-    "label_rationale": null
+    "label_rationale": null,
+    "radway_main_id": "R2",
+    "radway_main_name": "Heroine reacts antagonistically to the hero",
+    "radway_secondary_id": null,
+    "radway_other_plausible_ids": [],
+    "radway_phase": "I",
+    "radway_confidence": "low",
+    "stage11_codes": []
   },
   "blinding": {
     "rating_cells": "CELL_A..CELL_D",
     "position_visible": true,
-    "taxonomy_hidden_until_pass_c": true
+    "taxonomy_hidden_until_pass_c": true,
+    "radway_hidden_until_pass_c": true
   }
 }

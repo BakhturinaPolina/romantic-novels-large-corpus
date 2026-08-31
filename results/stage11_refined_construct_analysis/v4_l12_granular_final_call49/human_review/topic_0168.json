@@ -1,0 +1,150 @@
+{
+  "topic_id": 168,
+  "label": "Ready to Begin When Told",
+  "taxonomy_main_id": "9.2",
+  "taxonomy_main_name": "Promise, Vow & Future-Tense Speech Acts",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "ready",
+      "done",
+      "start",
+      "finish",
+      "finished",
+      "re",
+      "we",
+      "starting",
+      "are",
+      "yet"
+    ],
+    "KeyBERT": [
+      "sentence",
+      "sir",
+      "shortly",
+      "fitting",
+      "planning"
+    ],
+    "POS": [
+      "fitting",
+      "sentence",
+      "sir"
+    ],
+    "MMR": [
+      "fitting",
+      "shortly",
+      "dealing",
+      "gotta",
+      "curved",
+      "sentence",
+      "planning",
+      "sir"
+    ]
+  },
+  "stage08_snippets": [
+    "but i’ll start first.",
+    "we’ll start there and see where it goes.”",
+    "we’ll let you know when we’re done,” [person] said."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_6",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.1141888072357264,
+      "max_topic_prob": 0.6799430251121521,
+      "sentence": "We haven’t started yet.” “"
+    },
+    {
+      "sid": "BOOK_001_middle_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4193329564725834,
+      "max_topic_prob": 0.7853873372077942,
+      "sentence": "I’m not done yet.”"
+    },
+    {
+      "sid": "BOOK_001_middle_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6142453363482193,
+      "max_topic_prob": 0.7247362732887268,
+      "sentence": "Are you ready?”"
+    },
+    {
+      "sid": "BOOK_001_middle_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4206896551724138,
+      "max_topic_prob": 0.7242097854614258,
+      "sentence": "I’m almost done.”"
+    },
+    {
+      "sid": "BOOK_001_middle_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5758055398530243,
+      "max_topic_prob": 0.6883701086044312,
+      "sentence": "Ready to give up?”"
+    },
+    {
+      "sid": "BOOK_001_end_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7022046353872244,
+      "max_topic_prob": 0.7020702958106995,
+      "sentence": "Yes, I’m done.” “"
+    },
+    {
+      "sid": "BOOK_002_begin_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.3298460091689197,
+      "max_topic_prob": 0.7482415437698364,
+      "sentence": "I have to get ready,” I say. “"
+    },
+    {
+      "sid": "BOOK_002_middle_1",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4978253203244387,
+      "max_topic_prob": 0.7549616098403931,
+      "sentence": "are you ready to do this?” “"
+    },
+    {
+      "sid": "BOOK_002_middle_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.645115786998942,
+      "max_topic_prob": 0.7377973794937134,
+      "sentence": "I go, “Are you ready yet?”"
+    },
+    {
+      "sid": "BOOK_002_middle_4",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.49829552133537086,
+      "max_topic_prob": 0.7163286805152893,
+      "sentence": "I’m ready.”"
+    },
+    {
+      "sid": "BOOK_002_end_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6963676971905489,
+      "max_topic_prob": 0.7063254117965698,
+      "sentence": "I’m done.” “"
+    },
+    {
+      "sid": "BOOK_002_end_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6968378982014811,
+      "max_topic_prob": 0.6971845626831055,
+      "sentence": "Yeah, but I’m done now.”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

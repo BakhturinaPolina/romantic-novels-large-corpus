@@ -1,0 +1,162 @@
+{
+  "topic_id": 76,
+  "label": "Demanding to Be Heard",
+  "taxonomy_main_id": "9.1",
+  "taxonomy_main_name": "Dialogue Delivery & Speech Tags",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "hear",
+      "listen",
+      "listening",
+      "heard",
+      "hearing",
+      "me",
+      "you",
+      "listener",
+      "want",
+      "can"
+    ],
+    "KeyBERT": [
+      "overheard",
+      "recently",
+      "voices",
+      "latest",
+      "ye",
+      "discussing",
+      "um",
+      "sir"
+    ],
+    "POS": [
+      "fishing",
+      "folks",
+      "options",
+      "quality",
+      "exact",
+      "latest",
+      "explanation",
+      "notes",
+      "voices",
+      "emotions"
+    ],
+    "MMR": [
+      "overheard",
+      "fishing",
+      "discussing",
+      "spilling",
+      "begging",
+      "notes",
+      "voices",
+      "process",
+      "emotions",
+      "fault"
+    ]
+  },
+  "stage08_snippets": [
+    "that’s what i’ve heard.”",
+    "did you hear a word i’ve been saying?”",
+    "no, i’ve still heard nothing."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_begin_6",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.03816993464052287,
+      "max_topic_prob": 0.5749808549880981,
+      "sentence": "You heard me."
+    },
+    {
+      "sid": "BOOK_001_middle_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5951633986928104,
+      "max_topic_prob": 0.6217523217201233,
+      "sentence": "He didn’t want to hear anything else. “"
+    },
+    {
+      "sid": "BOOK_001_middle_5",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6341176470588236,
+      "max_topic_prob": 0.6205184459686279,
+      "sentence": "Now pretty much everyone was listening. “"
+    },
+    {
+      "sid": "BOOK_001_end_1",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.8577777777777778,
+      "max_topic_prob": 0.6637978553771973,
+      "sentence": "I’ve heard enough for one day.”"
+    },
+    {
+      "sid": "BOOK_001_end_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.8044444444444444,
+      "max_topic_prob": 0.6571248769760132,
+      "sentence": "I heard.”"
+    },
+    {
+      "sid": "BOOK_001_end_3",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.7462745098039215,
+      "max_topic_prob": 0.649307131767273,
+      "sentence": "I heard her, you idiot.”"
+    },
+    {
+      "sid": "BOOK_002_middle_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.4248358208955224,
+      "max_topic_prob": 0.6953550577163696,
+      "sentence": "I’m just not up to hearing it.”"
+    },
+    {
+      "sid": "BOOK_002_middle_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5164179104477612,
+      "max_topic_prob": 0.6708436012268066,
+      "sentence": "But you are going to listen.”"
+    },
+    {
+      "sid": "BOOK_002_middle_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.3391044776119403,
+      "max_topic_prob": 0.6555719375610352,
+      "sentence": "I appreciate that even if I don’t like what I’m hearing.”"
+    },
+    {
+      "sid": "BOOK_002_end_1",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8462089552238806,
+      "max_topic_prob": 0.7460178136825562,
+      "sentence": "Okay, I’m listening.” “"
+    },
+    {
+      "sid": "BOOK_002_end_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.811820895522388,
+      "max_topic_prob": 0.6892361640930176,
+      "sentence": "Haven’t you been listening?”"
+    },
+    {
+      "sid": "BOOK_002_end_4",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.7290746268656716,
+      "max_topic_prob": 0.6764439344406128,
+      "sentence": "So did you hear?”"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

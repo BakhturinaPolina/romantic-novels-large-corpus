@@ -1,0 +1,965 @@
+{
+  "topic_id": 162,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "breath",
+        "breathe",
+        "deep",
+        "breathing",
+        "took",
+        "exhale",
+        "sucked",
+        "inhaled",
+        "lungs",
+        "catch"
+      ],
+      "KeyBERT": [
+        "breaths",
+        "lungs",
+        "breathed",
+        "exhaled",
+        "blowing",
+        "gasp",
+        "terrified",
+        "pressure",
+        "flowed",
+        "rushed"
+      ],
+      "POS": [
+        "breaths",
+        "lungs",
+        "internal",
+        "gasp",
+        "moaning",
+        "stool",
+        "exchange",
+        "insides",
+        "sentence",
+        "damp"
+      ],
+      "MMR": [
+        "breaths",
+        "lungs",
+        "faltered",
+        "flowed",
+        "moaning",
+        "blowing",
+        "breathed",
+        "terrified",
+        "pounded",
+        "damp"
+      ]
+    },
+    "stage08_snippets": [
+      "ragged, unsteady breaths grated from my lungs.",
+      "we’ll just stop moving until you catch your breath.",
+      "you’ll have to hold your breath through the thick of it.” “"
+    ],
+    "label_public": "Struggling to Catch Breath"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_begin_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I let out a breath. “",
+        "max_topic_prob": 0.8360037803649902,
+        "normalized_position": 0.2641405214317278,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 230
+      },
+      {
+        "sid": "BOOK_001_begin_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I let out a breath. “",
+        "max_topic_prob": 0.8360037803649902,
+        "normalized_position": 0.041427308882015026,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_001_begin_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I let out a long breath. “",
+        "max_topic_prob": 0.8293684720993042,
+        "normalized_position": 0.10980998674326116,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_001_middle_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I sucked in a deep breath. “",
+        "max_topic_prob": 0.8469815254211426,
+        "normalized_position": 0.3827883340698188,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_001_middle_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I sucked in a breath. “",
+        "max_topic_prob": 0.8405313491821289,
+        "normalized_position": 0.6347768448961556,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 125
+      },
+      {
+        "sid": "BOOK_001_middle_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I let out a breath. “",
+        "max_topic_prob": 0.8360037803649902,
+        "normalized_position": 0.3379363676535572,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_002_end_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I feel in need of a breath of air,’ said Anna. ‘",
+        "max_topic_prob": 0.6832290291786194,
+        "normalized_position": 0.8902392707937714,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 185
+      },
+      {
+        "sid": "BOOK_002_end_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "Are you taking the air?’",
+        "max_topic_prob": 0.5188455581665039,
+        "normalized_position": 0.9382833270034181,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 191
+      },
+      {
+        "sid": "BOOK_003_begin_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I take a slow, deep breath.",
+        "max_topic_prob": 0.7374168634414673,
+        "normalized_position": 0.1790733992712129,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 652
+      },
+      {
+        "sid": "BOOK_003_begin_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I hold my breath.",
+        "max_topic_prob": 0.721407413482666,
+        "normalized_position": 0.11634565330557002,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 411
+      },
+      {
+        "sid": "BOOK_003_begin_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I’m not breathing right now.",
+        "max_topic_prob": 0.7067171335220337,
+        "normalized_position": 0.024466423737636647,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_003_middle_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I take a deep breath.",
+        "max_topic_prob": 0.7513676285743713,
+        "normalized_position": 0.3508589276418532,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 1312
+      },
+      {
+        "sid": "BOOK_003_middle_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "I can’t help letting go of the breath I’ve been holding.",
+        "max_topic_prob": 0.7229016423225403,
+        "normalized_position": 0.5520562207183759,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 2085
+      },
+      {
+        "sid": "BOOK_003_end_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "My breath has gone still and I have to concentrate to get it going again.",
+        "max_topic_prob": 0.698270320892334,
+        "normalized_position": 0.6769911504424779,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 2565
+      },
+      {
+        "sid": "BOOK_004_begin_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I felt like I was choking down there.”",
+        "max_topic_prob": 0.6480932831764221,
+        "normalized_position": 0.0911544227886057,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 174
+      },
+      {
+        "sid": "BOOK_005_middle_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "sentence": "A deep breath. “",
+        "max_topic_prob": 0.7449061870574951,
+        "normalized_position": 0.6056068811723478,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_006_begin_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Maybe if you didn’t suffocate me, I—” “Suffocate?",
+        "max_topic_prob": 0.49341267347335815,
+        "normalized_position": 0.05043060970907066,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_006_middle_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "They make me pass out.” “",
+        "max_topic_prob": 0.4871712923049927,
+        "normalized_position": 0.5687047431338104,
+        "tertile": "middle",
+        "chapter_index": 29,
+        "sentence_index": 471
+      },
+      {
+        "sid": "BOOK_006_middle_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Yully saw the next blow coming, then the next and the next.",
+        "max_topic_prob": 0.4464682936668396,
+        "normalized_position": 0.5432537812245597,
+        "tertile": "middle",
+        "chapter_index": 28,
+        "sentence_index": 403
+      },
+      {
+        "sid": "BOOK_006_end_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Now you’ll tell me it’s illegal for her to breathe the air down there.” “",
+        "max_topic_prob": 0.5226391553878784,
+        "normalized_position": 0.837825099618664,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 170
+      },
+      {
+        "sid": "BOOK_006_end_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Cough it up.”",
+        "max_topic_prob": 0.522341251373291,
+        "normalized_position": 0.9343159518402674,
+        "tertile": "end",
+        "chapter_index": 47,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_006_end_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Air?",
+        "max_topic_prob": 0.4285620450973511,
+        "normalized_position": 0.837782252881443,
+        "tertile": "end",
+        "chapter_index": 43,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_007_begin_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "My breath comes hard and fast. “",
+        "max_topic_prob": 0.7725734710693359,
+        "normalized_position": 0.03169059630060794,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_007_begin_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I breathe in deeply and exhale slowly. “",
+        "max_topic_prob": 0.7670186758041382,
+        "normalized_position": 0.27732505497348336,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_007_begin_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Breathe slowly . . .”",
+        "max_topic_prob": 0.757574737071991,
+        "normalized_position": 0.03350148751778554,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_007_begin_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I sit and hold my breath. “",
+        "max_topic_prob": 0.7527452707290649,
+        "normalized_position": 0.25184322856034147,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_007_begin_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Breathe . “",
+        "max_topic_prob": 0.752534806728363,
+        "normalized_position": 0.02224809209675333,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_007_end_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I stop and take a deep breath. “",
+        "max_topic_prob": 0.7818231582641602,
+        "normalized_position": 0.7184064157288838,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_008_begin_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I could hardly catch my breath. “",
+        "max_topic_prob": 0.8182662725448608,
+        "normalized_position": 0.10491146007350484,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 39
+      },
+      {
+        "sid": "BOOK_008_begin_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I stopped breathing in that moment.",
+        "max_topic_prob": 0.7633222341537476,
+        "normalized_position": 0.18810557968593383,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 247
+      },
+      {
+        "sid": "BOOK_008_begin_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "The breeze burned my eyes as they widened and I sucked in a sharp breath. “",
+        "max_topic_prob": 0.7361065149307251,
+        "normalized_position": 0.1814233210825259,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_008_begin_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I took another deep breath and began to tap my fingers against my knees out of nervousness. “",
+        "max_topic_prob": 0.717902660369873,
+        "normalized_position": 0.16750194899209267,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 62
+      },
+      {
+        "sid": "BOOK_008_middle_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I took a deep breath to contain them. “",
+        "max_topic_prob": 0.7896705865859985,
+        "normalized_position": 0.40828600066822585,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_008_middle_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "I inhaled a deep breath and glanced at the floor in thought for a moment. “",
+        "max_topic_prob": 0.7147795557975769,
+        "normalized_position": 0.6083082748635705,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_009_begin_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Black Jaguar, I need to breathe.”",
+        "max_topic_prob": 0.5466859340667725,
+        "normalized_position": 0.3083969465648855,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_009_end_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "How could they possibly breathe in your city of walls?",
+        "max_topic_prob": 0.48789963126182556,
+        "normalized_position": 0.7725190839694657,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_009_end_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "They even seemed to breathe like organic beings.",
+        "max_topic_prob": 0.45370668172836304,
+        "normalized_position": 0.9526717557251908,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 183
+      },
+      {
+        "sid": "BOOK_010_begin_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Are you feeling any sort of numbness or shortness of breath?” “",
+        "max_topic_prob": 0.6398009061813354,
+        "normalized_position": 0.1685754040458097,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 246
+      },
+      {
+        "sid": "BOOK_010_end_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "I let them pass out before things got too heavy.",
+        "max_topic_prob": 0.47656458616256714,
+        "normalized_position": 0.6756930322166328,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_011_begin_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "When the door was closed I breathed in deeply.",
+        "max_topic_prob": 0.6931329965591431,
+        "normalized_position": 0.3314648178197374,
+        "tertile": "begin",
+        "chapter_index": 19,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_011_middle_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "My own breaths were ragged when I pulled away.",
+        "max_topic_prob": 0.7478896975517273,
+        "normalized_position": 0.6086443428234253,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_011_middle_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "My breathing caught.",
+        "max_topic_prob": 0.74103844165802,
+        "normalized_position": 0.5987608791857206,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_011_middle_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Ragged, unsteady breaths grated from my lungs.",
+        "max_topic_prob": 0.7298851013183594,
+        "normalized_position": 0.49874612774745536,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 273
+      },
+      {
+        "sid": "BOOK_011_end_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Deep breaths were drawn into my lungs, as I contended with that potent urge to let my head fall forward.",
+        "max_topic_prob": 0.7312445640563965,
+        "normalized_position": 0.8864139253577223,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_011_end_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Time drifted as I concentrated on my breathing.",
+        "max_topic_prob": 0.6956537365913391,
+        "normalized_position": 0.8774155480159316,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_012_middle_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Breathe.”",
+        "max_topic_prob": 0.7546007633209229,
+        "normalized_position": 0.5505787414411477,
+        "tertile": "middle",
+        "chapter_index": 92,
+        "sentence_index": 114
+      },
+      {
+        "sid": "BOOK_012_middle_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "So I can appreciate what you’re doin’—” Chancey took a long, slow, steadying breath.",
+        "max_topic_prob": 0.5484448671340942,
+        "normalized_position": 0.40446690577111183,
+        "tertile": "middle",
+        "chapter_index": 69,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_012_middle_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "What would you think if I pulled you close …floating in the air like dust motes in the light?",
+        "max_topic_prob": 0.5348337292671204,
+        "normalized_position": 0.6360857515487447,
+        "tertile": "middle",
+        "chapter_index": 101,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_012_middle_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Were you just blowing air because of the situation?",
+        "max_topic_prob": 0.5276508331298828,
+        "normalized_position": 0.3912618193674601,
+        "tertile": "middle",
+        "chapter_index": 67,
+        "sentence_index": 85
+      },
+      {
+        "sid": "BOOK_012_end_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Try to hold the cough in.",
+        "max_topic_prob": 0.5592029094696045,
+        "normalized_position": 0.8338359960873818,
+        "tertile": "end",
+        "chapter_index": 124,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_012_end_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "That’s like…being gagged.” “",
+        "max_topic_prob": 0.5477946996688843,
+        "normalized_position": 0.8471225953700685,
+        "tertile": "end",
+        "chapter_index": 125,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_013_begin_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Aw man, I'm all out of breath.”",
+        "max_topic_prob": 0.707597017288208,
+        "normalized_position": 0.30319388214125054,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_013_middle_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My whole body tenses and I let out a gasp.",
+        "max_topic_prob": 0.7271985411643982,
+        "normalized_position": 0.5748987854251012,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 150
+      },
+      {
+        "sid": "BOOK_013_middle_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Stop it,” I breathe out.",
+        "max_topic_prob": 0.7150626182556152,
+        "normalized_position": 0.3945119208277103,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 310
+      },
+      {
+        "sid": "BOOK_013_end_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I can't breathe.",
+        "max_topic_prob": 0.7275876998901367,
+        "normalized_position": 0.8470535312640576,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 363
+      },
+      {
+        "sid": "BOOK_013_end_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I take a deep breath, psyching myself up.",
+        "max_topic_prob": 0.6903030872344971,
+        "normalized_position": 0.8400059979007347,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_013_end_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I can't breathe through the crushing pressure in my chest.",
+        "max_topic_prob": 0.669515073299408,
+        "normalized_position": 0.846903583745689,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 362
+      },
+      {
+        "sid": "BOOK_014_begin_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I let out a breath.",
+        "max_topic_prob": 0.8526387214660645,
+        "normalized_position": 0.2308390610815718,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_014_begin_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I blow out a breath. “",
+        "max_topic_prob": 0.8075956702232361,
+        "normalized_position": 0.21761120477240306,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_014_begin_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I huff out a breath. “",
+        "max_topic_prob": 0.7798433899879456,
+        "normalized_position": 0.0046686551679419016,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 1
+      },
+      {
+        "sid": "BOOK_014_middle_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I suck in a breath, blow it out, imagining some of the tension draining away with the exhalation. “",
+        "max_topic_prob": 0.7920036315917969,
+        "normalized_position": 0.6645052522370639,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_014_middle_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I suck in a breath. “",
+        "max_topic_prob": 0.7794595956802368,
+        "normalized_position": 0.3934638827648813,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_014_middle_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I let it fall away and blow out a breath. “",
+        "max_topic_prob": 0.7569558620452881,
+        "normalized_position": 0.6445337829075347,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_015_begin_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I exhale a slow, steadying breath.",
+        "max_topic_prob": 0.7443869709968567,
+        "normalized_position": 0.1403604587657018,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 119
+      },
+      {
+        "sid": "BOOK_015_begin_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I can’t breathe. “",
+        "max_topic_prob": 0.7391172647476196,
+        "normalized_position": 0.222464955397779,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_015_begin_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Breathe out. “",
+        "max_topic_prob": 0.7359626293182373,
+        "normalized_position": 0.2583287820862916,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 184
+      },
+      {
+        "sid": "BOOK_015_middle_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I take a deep, unsteady breath.",
+        "max_topic_prob": 0.7737425565719604,
+        "normalized_position": 0.6277079919898052,
+        "tertile": "middle",
+        "chapter_index": 20,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_middle_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I can barely breathe now.",
+        "max_topic_prob": 0.7474885582923889,
+        "normalized_position": 0.3400691789550337,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_015_middle_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Closing my eyes, I inhale a slow steady breath.",
+        "max_topic_prob": 0.7445528507232666,
+        "normalized_position": 0.5388676497360276,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 88
+      },
+      {
+        "sid": "BOOK_016_begin_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "sentence": "I’m sitting here running my mouth when you need to settle in and unwind.",
+        "max_topic_prob": 0.5356314778327942,
+        "normalized_position": 0.2729704216488357,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 105
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.008462439786486135,
+        "n_sentences": 65
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.008763921855030126,
+        "n_sentences": 48
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.012542929670001493,
+        "n_sentences": 84
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.005600121083699107,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.007775186049094746,
+        "n_sentences": 70
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.0054883512544802865,
+        "n_sentences": 49
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.013965022187418429,
+        "n_sentences": 107
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.005733646077664843,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.00038333759263991824,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.00025903380391141046,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_C",
+        "share": 0.0001577784790154623,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.00045295449866172534,
+        "n_sentences": 11
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_D",
+        "share": 0.0003194888178913738,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.000385579332947754,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00021482277121374866,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0003020235578375113,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "position_sentences_per_tertile": null,
+      "n_books": 16,
+      "n_sentences": 70
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.1",
+    "taxonomy_main_name": "Body Parts & Physical Reactions",
+    "taxonomy_secondary_id": "1.2",
+    "taxonomy_secondary_name": "Pain, Injury & Physical Vulnerability",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null,
+    "radway_main_id": "R12",
+    "radway_main_name": "Heroine responds sexually and emotionally",
+    "radway_secondary_id": null,
+    "radway_other_plausible_ids": [],
+    "radway_phase": "III",
+    "radway_confidence": "low",
+    "stage11_codes": []
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true,
+    "radway_hidden_until_pass_c": true
+  }
+}

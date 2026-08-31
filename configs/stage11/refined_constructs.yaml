@@ -30,6 +30,7 @@ inputs:
   topic_lookup: results/stage10_correlation_analysis/v4_l12_granular_final_call49/taxonomy_radway_eda/topic_lookup.parquet
   analysis_frame: results/stage10_correlation_analysis/v4_l12_granular_final_call49/book_features_hard/book_analysis_frame.parquet
   book_topic_counts: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_counts_hard/book_topic_counts.parquet
+  tertile_topic_counts: results/stage10_correlation_analysis/v4_l12_granular_final_call49/topic_counts_hard/tertile_topic_counts.parquet
   sentence_topics_glob: results/experiments/v4_l12_granular_final_call49/full_corpus_infer/sentence_topics_*.parquet
   topic_metadata: results/stage08_llm_labeling/placeholder_v4_call49/stage09_input/topic_metadata_v3_review_enriched.json
   representative_docs: results/experiments/v4_l12_granular_final_call49/final_compare/call_49/representative_docs.csv
@@ -51,6 +52,8 @@ outputs:
   constructs_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs
   book_features_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features
   notebook_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis
+  # Notebook 15 exploratory artifacts (candidates, LLM codes, freeze) — not confirmatory
+  ees_exploration_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/ees_exploration
   cell_key: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/evidence_packets/cell_key.json
   frozen_inputs: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/candidates/frozen_inputs.json
 
@@ -120,6 +123,7 @@ evidence:
   # Thin critical leaves get exhaustive / high-coverage packets.
   exhaustive_leaves: ["5.3a", "8.3a", "4.7"]
   # 2×2 prevalence × rating design (rating blinded as CELL_A…CELL_D).
+  # Low cells: positive-share only (share>0 & n_sentences>0) + tier backfill.
   sampling:
     design: prevalence_x_rating
     books_per_cell: 4

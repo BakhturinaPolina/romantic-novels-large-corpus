@@ -1,0 +1,829 @@
+{
+  "topic_id": 166,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "1.1",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "heart",
+        "my",
+        "chest",
+        "beating",
+        "stomach",
+        "pounding",
+        "racing",
+        "pulse",
+        "heartbeat",
+        "beat"
+      ],
+      "KeyBERT": [
+        "frantic",
+        "anxiety",
+        "skipped",
+        "danced",
+        "strangled",
+        "swallowed",
+        "pounding",
+        "upset",
+        "excited",
+        "chased"
+      ],
+      "POS": [
+        "veins",
+        "hopeful",
+        "frantic",
+        "ribs",
+        "excited",
+        "unable"
+      ],
+      "MMR": [
+        "pounding",
+        "fluttered",
+        "veins",
+        "strangled",
+        "chased",
+        "violently",
+        "flowing",
+        "frantic",
+        "ribs",
+        "danced"
+      ]
+    },
+    "stage08_snippets": [
+      "i silently gasped as my heart skipped several beats. “",
+      "my heart skipped a beat and i decided i wanted to hear no more.",
+      "my heart pounded wildly at the thought of baring myself in front of others. “"
+    ],
+    "label_public": "Heart Skipping With Fear"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_begin_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "Your heart monitor started beeping like you were in cardiac arrest.",
+        "max_topic_prob": 0.6886293292045593,
+        "normalized_position": 0.12606523655598,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 849
+      },
+      {
+        "sid": "BOOK_001_begin_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "sentence": "I even remember what you’ve described….the feeling of fighting death.",
+        "max_topic_prob": 0.5114144086837769,
+        "normalized_position": 0.20393770202762268,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 1379
+      },
+      {
+        "sid": "BOOK_002_begin_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "sentence": "I’m beat and starting to see double.",
+        "max_topic_prob": 0.37260836362838745,
+        "normalized_position": 0.15604791688752254,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 454
+      },
+      {
+        "sid": "BOOK_003_begin_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "So, that was what people meant when they talked about a person’s heart skipping a beat. “",
+        "max_topic_prob": 0.5976055264472961,
+        "normalized_position": 0.18046016483516483,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_004_begin_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "My heart pounded in my chest. “",
+        "max_topic_prob": 0.8333410024642944,
+        "normalized_position": 0.10108078148815297,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 426
+      },
+      {
+        "sid": "BOOK_004_begin_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "A giddy excitement bubbled in my chest, threatening to burst out in an unseemly show of gloating.",
+        "max_topic_prob": 0.6765797138214111,
+        "normalized_position": 0.16218650408757102,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 324
+      },
+      {
+        "sid": "BOOK_004_middle_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "I forced myself to calm down, using deep breathing exercises to slow my racing heartbeat.",
+        "max_topic_prob": 0.7226844429969788,
+        "normalized_position": 0.42780933906055146,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 973
+      },
+      {
+        "sid": "BOOK_004_middle_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "My stomach lurched.",
+        "max_topic_prob": 0.6612760424613953,
+        "normalized_position": 0.47824580850769016,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 706
+      },
+      {
+        "sid": "BOOK_004_middle_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "My skin tingled where we touched and my limbs were shaking but that rising feeling in my chest wasn’t desire, it was panic.",
+        "max_topic_prob": 0.6595786213874817,
+        "normalized_position": 0.4271165304142996,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 963
+      },
+      {
+        "sid": "BOOK_004_end_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "sentence": "My heart rate picked up, anticipation fizzing in my veins.",
+        "max_topic_prob": 0.770134449005127,
+        "normalized_position": 0.6987668006096716,
+        "tertile": "end",
+        "chapter_index": 16,
+        "sentence_index": 423
+      },
+      {
+        "sid": "BOOK_005_middle_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "sentence": "OMG!",
+        "max_topic_prob": 0.32609423995018005,
+        "normalized_position": 0.39385698288273874,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 111
+      },
+      {
+        "sid": "BOOK_006_middle_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My heart stopped, and I gripped my iPhone tighter. “",
+        "max_topic_prob": 0.6874286532402039,
+        "normalized_position": 0.394880402853546,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_006_middle_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "My body shook with every sob, causing my muscles to contract each time, leaving me aching from my head to my toes.",
+        "max_topic_prob": 0.6454019546508789,
+        "normalized_position": 0.5035669324381032,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 108
+      },
+      {
+        "sid": "BOOK_006_end_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "Instantly, my heart stopped.",
+        "max_topic_prob": 0.7207322120666504,
+        "normalized_position": 0.6932438103231221,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 66
+      },
+      {
+        "sid": "BOOK_006_end_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "When he got to the bag that I’d been waiting for, my heart began to beat faster than normal, and I could feel the nerves building inside of me.",
+        "max_topic_prob": 0.7100545763969421,
+        "normalized_position": 0.9639110365086025,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_006_end_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "When my eyes focus back on the entryway I can feel my heartbeat begin to quicken.",
+        "max_topic_prob": 0.6900708675384521,
+        "normalized_position": 0.9823751573646664,
+        "tertile": "end",
+        "chapter_index": 39,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_006_end_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "sentence": "I could now hear the sobs that were racking my body as I knew what was about to happen.",
+        "max_topic_prob": 0.6768192052841187,
+        "normalized_position": 0.6861099454469156,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 32
+      },
+      {
+        "sid": "BOOK_007_begin_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My blood pressure rose, and my breath came in short bursts as I clenched my fists.",
+        "max_topic_prob": 0.7030742168426514,
+        "normalized_position": 0.29796391325939414,
+        "tertile": "begin",
+        "chapter_index": 16,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_007_middle_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My heart lurched and began pounding uncomfortably in my chest.",
+        "max_topic_prob": 0.8652487397193909,
+        "normalized_position": 0.46664459526568447,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_007_end_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My heart pounded as if planning to sail from my chest.",
+        "max_topic_prob": 0.7970046997070312,
+        "normalized_position": 0.6839927164376759,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_007_end_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My heart skittered to a stop then rushed to catch up.",
+        "max_topic_prob": 0.7793213725090027,
+        "normalized_position": 0.7649395795398113,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_007_end_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "My heart pounded with fear.",
+        "max_topic_prob": 0.7480823993682861,
+        "normalized_position": 0.7103128621089224,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_007_end_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "There was an ache in my chest I thought I might never be rid of.",
+        "max_topic_prob": 0.6886284351348877,
+        "normalized_position": 0.9210395629862606,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_008_begin_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart was nearly pounding out of my chest.",
+        "max_topic_prob": 0.8654220104217529,
+        "normalized_position": 0.23552178899082568,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 718
+      },
+      {
+        "sid": "BOOK_008_begin_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart leapt into my throat and lodged there.",
+        "max_topic_prob": 0.8191169500350952,
+        "normalized_position": 0.13231077981651376,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 402
+      },
+      {
+        "sid": "BOOK_008_begin_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart was racing.",
+        "max_topic_prob": 0.8055650591850281,
+        "normalized_position": 0.25014334862385323,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 820
+      },
+      {
+        "sid": "BOOK_008_middle_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart pounded nearly out of my chest. “",
+        "max_topic_prob": 0.843409538269043,
+        "normalized_position": 0.6411983944954128,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 685
+      },
+      {
+        "sid": "BOOK_008_middle_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heart skipped several beats.",
+        "max_topic_prob": 0.8090476989746094,
+        "normalized_position": 0.41284403669724773,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_008_middle_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "sentence": "My heartbeat was faster than usual.",
+        "max_topic_prob": 0.7663201093673706,
+        "normalized_position": 0.38833142201834864,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 164
+      },
+      {
+        "sid": "BOOK_009_begin_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "17 Invalided home, Stretton has the symptoms that Deeping, as a military doctor, would have classified as mild shell-shock – ‘Slight tremor of the hands.",
+        "max_topic_prob": 0.329898476600647,
+        "normalized_position": 0.23455396031618003,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 128
+      },
+      {
+        "sid": "BOOK_010_begin_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Your heart missed two beats.”",
+        "max_topic_prob": 0.7187537550926208,
+        "normalized_position": 0.059844404548174746,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_011_begin_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart was racing in my chest.",
+        "max_topic_prob": 0.8775508403778076,
+        "normalized_position": 0.14399454049135577,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_011_middle_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart started to race and sweat climbed onto my body.",
+        "max_topic_prob": 0.8023102283477783,
+        "normalized_position": 0.6505156202608432,
+        "tertile": "middle",
+        "chapter_index": 48,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_011_middle_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart started to race and sweat climbed onto my body.",
+        "max_topic_prob": 0.8023102283477783,
+        "normalized_position": 0.6362602365787079,
+        "tertile": "middle",
+        "chapter_index": 47,
+        "sentence_index": 156
+      },
+      {
+        "sid": "BOOK_011_end_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart was pounding. “",
+        "max_topic_prob": 0.834598183631897,
+        "normalized_position": 0.728313618441007,
+        "tertile": "end",
+        "chapter_index": 53,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_011_end_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart hammered in my chest.",
+        "max_topic_prob": 0.8216760754585266,
+        "normalized_position": 0.8826205641492265,
+        "tertile": "end",
+        "chapter_index": 60,
+        "sentence_index": 267
+      },
+      {
+        "sid": "BOOK_011_end_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "My heart was hammering in my chest, worry wracking my spine.",
+        "max_topic_prob": 0.8168139457702637,
+        "normalized_position": 0.7628905065210798,
+        "tertile": "end",
+        "chapter_index": 54,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_012_begin_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Seconds tick by and my chest tightens.",
+        "max_topic_prob": 0.6526044011116028,
+        "normalized_position": 0.028410482488366397,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_012_begin_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "My finger is touching the cold metal trigger, slowly beginning to depress, when for reasons that are a mystery to me, I have a sudden change of heart.",
+        "max_topic_prob": 0.6442040801048279,
+        "normalized_position": 0.02645113886847906,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 98
+      },
+      {
+        "sid": "BOOK_012_begin_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "Cue stick in hand, he crosses swiftly to stand right in front of me and I swear I can feel my heart rise up and lodge in my throat.",
+        "max_topic_prob": 0.6255624294281006,
+        "normalized_position": 0.04653441097232427,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 45
+      },
+      {
+        "sid": "BOOK_012_middle_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "With each step my heart pounds violently in my chest.",
+        "max_topic_prob": 0.7456591129302979,
+        "normalized_position": 0.630418809698751,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 21
+      },
+      {
+        "sid": "BOOK_012_middle_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "A fresh wave of panic streams though my veins as we roll to a stop.",
+        "max_topic_prob": 0.6179795265197754,
+        "normalized_position": 0.6269899583639481,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 7
+      },
+      {
+        "sid": "BOOK_012_end_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "sentence": "A new rush of arousal tears through me.",
+        "max_topic_prob": 0.616234302520752,
+        "normalized_position": 0.6710751898114132,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_013_begin_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My heart skips a beat.",
+        "max_topic_prob": 0.7451857328414917,
+        "normalized_position": 0.2446750409612234,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 109
+      },
+      {
+        "sid": "BOOK_013_begin_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My heart warms and yet feels like it’s been crushed at the same time.",
+        "max_topic_prob": 0.7302772998809814,
+        "normalized_position": 0.2503185872929183,
+        "tertile": "begin",
+        "chapter_index": 11,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_013_middle_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My heart races in my chest, and I can feel the familiar pressure of an anxiety attack forming.",
+        "max_topic_prob": 0.7202057242393494,
+        "normalized_position": 0.5319497542326598,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 50
+      },
+      {
+        "sid": "BOOK_013_end_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I shut my eyes for a brief moment and feel the pounding of my heart in my chest.",
+        "max_topic_prob": 0.7841618061065674,
+        "normalized_position": 0.7201893318769342,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_013_end_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My heart is pounding in my ears. “",
+        "max_topic_prob": 0.7425585985183716,
+        "normalized_position": 0.8643728381576552,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_013_end_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "My heart is racing now.",
+        "max_topic_prob": 0.7206069231033325,
+        "normalized_position": 0.762060804660477,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_014_middle_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Dude, I thought you had a heart attack or something!”",
+        "max_topic_prob": 0.6588612794876099,
+        "normalized_position": 0.5475279106858054,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 53
+      },
+      {
+        "sid": "BOOK_015_begin_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "Today has been gut .” “",
+        "max_topic_prob": 0.3560620844364166,
+        "normalized_position": 0.09124356144223694,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_015_end_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "sentence": "just seconds before panic set in. “",
+        "max_topic_prob": 0.48581039905548096,
+        "normalized_position": 0.7272504292371842,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_016_begin_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My eyes close and my heart races.",
+        "max_topic_prob": 0.7471985816955566,
+        "normalized_position": 0.25961777115909657,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_016_begin_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My heart feels heavy and troubled.",
+        "max_topic_prob": 0.7410919666290283,
+        "normalized_position": 0.08476048647307025,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_016_middle_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My heart races with excitement.",
+        "max_topic_prob": 0.7520630359649658,
+        "normalized_position": 0.4339786547530405,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_016_end_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I sit straight up in bed with my heart racing in my chest.",
+        "max_topic_prob": 0.7092725038528442,
+        "normalized_position": 0.7508066517746339,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_016_end_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My chest tightens.",
+        "max_topic_prob": 0.6877245903015137,
+        "normalized_position": 0.9367088607594937,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 136
+      },
+      {
+        "sid": "BOOK_016_end_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "My heart is in my throat as I swallow hard and fight the urge to run.",
+        "max_topic_prob": 0.6826891899108887,
+        "normalized_position": 0.9520972946140481,
+        "tertile": "end",
+        "chapter_index": 42,
+        "sentence_index": 260
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.0070930811348929815,
+        "n_sentences": 57
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_A",
+        "share": 0.006416584402764067,
+        "n_sentences": 26
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.011867810845353296,
+        "n_sentences": 65
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.005176156286525296,
+        "n_sentences": 31
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_B",
+        "share": 0.0053080039111607765,
+        "n_sentences": 76
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_B",
+        "share": 0.0048656653268457795,
+        "n_sentences": 23
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.007545156619160125,
+        "n_sentences": 99
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_B",
+        "share": 0.009403935185185185,
+        "n_sentences": 65
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_C",
+        "share": 0.0002484163457955533,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.00016028209648982208,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_C",
+        "share": 0.00016074586079408456,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_C",
+        "share": 0.0002954646181119811,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.00014988009592326138,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_D",
+        "share": 0.00010651896037494674,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.00016157699143641945,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0001736714136853074,
+        "n_sentences": 1
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "position_sentences_per_tertile": null,
+      "n_books": 16,
+      "n_sentences": 58
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "1.1",
+    "taxonomy_main_name": "Body Parts & Physical Reactions",
+    "taxonomy_secondary_id": "3.2",
+    "taxonomy_secondary_name": "Negative Emotions & Distress",
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null,
+    "radway_main_id": "R1",
+    "radway_main_name": "Heroine's social identity is destroyed",
+    "radway_secondary_id": "R5",
+    "radway_other_plausible_ids": [],
+    "radway_phase": "I",
+    "radway_confidence": "medium",
+    "stage11_codes": []
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true,
+    "radway_hidden_until_pass_c": true
+  }
+}
