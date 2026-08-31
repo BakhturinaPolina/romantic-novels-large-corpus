@@ -971,9 +971,11 @@
 
 > i can protect you from crystal, but you’ll have to let me.
 
-> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
+> *(CELL_D, tertile=begin)* I’m your man for getting you to the point of passing out, if you ever want to take that risk.”
 
 > *(CELL_C, tertile=middle)* At least in LA you’d both have protection; you know my security guys are some of the best in the business.
+
+> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
 
 ### Pass A/B/C
 
@@ -998,7 +1000,9 @@
 
 > i’ve come to realize that you are the one thing in my life i don’t want to miss.
 
-> *(CELL_B, tertile=middle)* I’d missed my family so much, and now that we’d seemed to get the tears and heartache out of the way, we were having fun. “
+> *(CELL_C, tertile=middle)* The suckhead you brought back with you here tonight…I saw it all.”
+
+> *(CELL_C, tertile=end)* While I was in there, I also brought you something I thought you might be missing.”
 
 ### Pass A/B/C
 
@@ -1999,9 +2003,13 @@
 
 > i’ll make sure you aren’t hurt.” “
 
+> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+
 > *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
 
-> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+> *(CELL_C, tertile=begin)* You didn’t hit me with a sledgehammer last night, did you?” “
+
+> *(CELL_C, tertile=middle)* I didn’t know why I felt hurt, but it stung not to be invited. “
 
 ### Pass A/B/C
 

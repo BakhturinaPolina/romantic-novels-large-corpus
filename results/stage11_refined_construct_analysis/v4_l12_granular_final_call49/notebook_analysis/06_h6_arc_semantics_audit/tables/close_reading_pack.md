@@ -1,5 +1,61 @@
 # H6 arc semantics — close-reading pack
 
+## Topic 6 — Whispered Reassurance
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_0 (norm: ARC_0)
+
+> i’ll make sure of it,” he whispered.
+
+> you’ll be fine,” he whispered. “
+
+> quiet, subdued, she nodded and then, “you’ll be safe.”
+
+> *(CELL_D, tertile=end)* Ian stared right back and asked slowly, clearly, enunciating every word, “Who asked you to?”
+
+> *(CELL_D, tertile=middle)* Okay,’ she said, striving for a light tone in the heavy silence. ‘
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - All four keyword lists describe speech-act mechanics and vocal/emotional delivery cues (whispered, softly, tentatively, hesitation, drawled, solemnly, eagerly, confessed, mumbled) without anchoring to any specific relational event between a main couple. 'Confessed' and 'tentatively' could hint at disclosure or conflict, but no keyword cluster points clearly to a defined arc function—misunderstanding, conflict, repair, commitment, etc. The vocabulary is generic dialogue-texture language applicable to any scene type. ARC_10 (ambiguous) is therefore the most defensible code across all representations.
+- **B contextual:** `ARC_0`
+  - Every sentence in this topic is a decontextualized dialogue fragment consisting solely of minimal affirmative or acknowledgment tokens ('Yes,' 'Okay,' 'Oh,' 'she said,' 'she asks,' 'he replies,' etc.) with no surrounding narrative content. There is no identifiable subject matter, no relational dynamic, no character identification, and no arc-relevant content whatsoever. The topic appears to be a BERTopic artifact capturing generic dialogue punctuation and speech-tag patterns rather than any meaningful narrative unit. No sentence can be assigned to the main couple with any confidence, and no relationship state change can be inferred. The topic is uniformly ARC_0 (unrelated) across all narrative positions and should be excluded from H6 arc analyses.
+- **C adjudicate:** `ARC_0`
+  - The contextual dominant judgment (ARC_0) holds. Taxonomy label 4.6 Emotional Safety, Reassurance & Caretaking and Radway codes R8/R9/R10 (tender hero treatment, heroine's emotional response) describe a general affective register — tenderness and caretaking — rather than a specific arc function that implicates the main couple's relational trajectory. Per critical rules, ARC_7 requires evidence of trust/closeness being *restored or strengthened* (i.e., after rupture), and ARC_8 requires mutual relational commitment/resolution; neither is evidenced here. The Stage11 codes RAX_emotional_reassurance and RAX_tenderness_core confirm a warm tonal quality but do not map to a directional arc event. The taxonomy/Radway/Stage11 labels partially contradict the ARC_0 judgment by suggesting romantic couple involvement, but they do not override it because tenderness alone is insufficient to assign a rising or falling arc role. The lexical consensus of ARC_10 (ambiguous) is understandable but the contextual read of ARC_0 is more defensible: this topic captures ambient emotional texture rather than a couple-level arc beat. Recommended exclusion from H6 hypothesis testing.
+- **Action:** EXCLUDE_FROM_HYPOTHESIS
+
+---
+
+## Topic 36 — Eagerly Offering to Help
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_0 (norm: ARC_0)
+
+> of course, i’ll help you.’
+
+> then you’ll let me help,” frances said at once, her expression eager. “
+
+> sure, of course, i’ll help.”
+
+> *(CELL_B, tertile=end)* And you know I’m here to help you in any way I can.”
+
+> *(CELL_D, tertile=middle)* Well make yourself useful,” he said. “
+
+> *(CELL_B, tertile=end)* I’ve got to do something to help.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_0`
+  - All four keyword lists center on transactional assistance and task-oriented language: 'help, need, assistance, thanks, helped' (Main); 'provided, willing, appreciate, replies, eagerly, requested, task, promptly, sir' (KeyBERT); 'task, options, success, terms, sentence, pleased, excited' (POS); 'mister, promptly, appreciate, eagerly, options, success, intend, insisted, pleased' (MMR). None of these cues implicate the main romantic couple's relationship arc in any way — there is no conflict, disclosure, reconciliation, commitment, or trust dynamic present. The vocabulary is consistent with a service/assistance exchange or procedural interaction entirely unrelated to romantic relationship progression.
+- **B contextual:** `ARC_0`
+  - Topic 36 consists entirely of generic, decontextualized offers and requests for help ('Can I help you?', 'Let me help you.', 'I'll help.'). These fragments carry no identifiable speaker, recipient, or relational context. There is no evidence that the main romantic couple is implicated in any of these utterances, nor that any romantic relationship state is being changed. The topic appears to be a surface-level linguistic cluster around the word 'help' rather than a meaningful narrative arc element. It is uniformly ARC_0 (unrelated to the main couple's arc) across all three narrative positions, with no variation by tertile. Exclusion from H6 arc analyses is strongly recommended.
+- **C adjudicate:** `ARC_0`
+  - All three evidence streams — lexical consensus (ARC_0), contextual dominant (ARC_0), and the taxonomy/Radway/Stage11 labels — converge. The taxonomy places this in Emotional Safety, Reassurance & Caretaking, and the Radway codes (R8 hero treats heroine tenderly, R9, R10) describe affective texture rather than a relational arc function. Stage11 codes (RAX_emotional_reassurance, RAX_practical_care, RAX_tenderness_core) similarly capture tone and register, not a structural arc event. Critically, tenderness and caretaking alone do not satisfy ARC_7 (restored trust) or ARC_8 (mutual commitment/resolution) under the strict rules: there is no evidence of trust being repaired or a relational resolution being reached. The topic describes ambient emotional warmth that is not tied to a specific arc transition in the main couple's trajectory. Metadata fully supports the contextual judgment of ARC_0. Exclude from H6 hypothesis testing.
+- **Action:** KEEP
+
+---
+
 ## Topic 121 — Revealing Plans to The Prince
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -77,11 +133,9 @@
 
 > *(CELL_B, tertile=begin)* Including that hot guy Hannah had started to introduce me to.
 
-> *(CELL_C, tertile=end)* I would confirm the girl was there, make the deal and skedaddle then Hawk and the boys would swoop in and recover the girl.
+> *(CELL_C, tertile=middle)* Evan,” she says, “that day, last week, I went out to the pond, it was the day after the bear.
 
 > *(CELL_A, tertile=middle)* Anyway, I was totally pissed about that, and about Jess pinching my arm, when Cassie dropped another bomb on me… She said that she is “Falling in love with Jimmy!!!!”
-
-> *(CELL_A, tertile=end)* I know you and Cassie were close, and it just tears me up inside that I can’t do anything to save you and Jimmy from this pain!” “
 
 > *(CELL_A, tertile=middle)* Getting all mad because of her relationship with Jimmy… Wishing that they had never started dating… Now I will never see Cassie again!
 
@@ -192,6 +246,35 @@
 
 ---
 
+## Topic 338 — Promising Never to Do That Again
+
+- **Taxonomy:** 9.2 — Promise, Vow & Future-Tense Speech Acts
+- **Code:** ARC_0 (norm: ARC_0)
+
+> but [person], you got to promise me you’ll never do something like that again.
+
+> okay, but i'll warn you — you're making this seem dangerously like a date, [person]." "
+
+> i’ll have to get it approved by [person],” he said, seemingly giving in to my demands.
+
+> *(BOOK_001, POS_001, tertile=middle)* He turned to Wyatt. “
+
+> *(BOOK_001, POS_001, tertile=middle)* Wyatt,” he said. “
+
+> *(BOOK_001, POS_001, tertile=begin)* Now, Wyatt.” “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - The keyword sets are dominated by character names (turner, carley, bray, val), titles (captain, commander), and action/state words (suspicions, talked, yourbrother, bowed, willing, insisted, begging, tightly, delicate, fishing, notion, unsure, disbelief, confusion, pieces, pleased, dangerously, squinted, smacked, scrambled, revealing, choked). 'Suspicions' and 'revealing' could hint at disclosure or conflict, and 'begging/insisted/bowed' could suggest interpersonal tension, but there is no clear signal that the main romantic couple is implicated in any specific arc function. The presence of 'psychic,' 'captain/commander,' and 'yourbrother' suggests an external or ensemble scene. Without sufficient evidence to assign a specific arc role to the main romantic relationship, ARC_10 (ambiguous) is the appropriate consensus code.
+- **B contextual:** `ARC_0`
+  - Topic 338 is entirely composed of sentence fragments consisting solely of the name 'Wyatt' used as a speech tag, address, or attribution marker (e.g., 'Wyatt said.', 'Wyatt asked.', 'He turned to Wyatt.'). These fragments carry no relational content whatsoever — they are purely dialogic attribution snippets. There is no evidence of romantic couple interaction, relationship state change, or any arc function. The topic appears to be a character-name dialogue-tag cluster, not a narrative arc topic. It is uniformly ARC_0 (unrelated) across all positions and should be excluded from H6 arc analyses.
+- **C adjudicate:** `ARC_0`
+  - Contextual dominant (ARC_0) is the stronger signal here. The taxonomy labels — Promise/Vow/Future-Tense Speech Acts and Ongoing Courtship & Everyday Relational Bonding — describe relational texture and forward-looking language rather than a discrete arc function (no conflict, no repair, no commitment resolution). Radway R9 (heroine responds warmly to hero's tenderness) and R8 are consistent with ambient courtship bonding, not a structural arc beat. Stage11 RAX_protective_commitment could gesture toward ARC_7 or ARC_8, but without evidence of trust being restored or mutual relational resolution being reached, that label reflects tone rather than arc function. The lexical consensus of ARC_10 (ambiguous) reflects genuine indeterminacy in the word-level signal, but the contextual read — that this topic captures diffuse, ongoing relational warmth and vow-like speech rather than a narratively consequential arc moment — resolves the ambiguity toward ARC_0. The metadata is therefore mixed: Radway/Stage11 labels weakly support some romantic-couple relevance, but none of the taxonomy or Radway codes implicate a rising or falling arc beat with sufficient specificity to include in H6 hypothesis testing. Exclude.
+- **Action:** EXCLUDE_FROM_HYPOTHESIS
+
+---
+
 ## Topic 346 — Delivering Urgent News in Secret
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -242,6 +325,34 @@
 
 ---
 
+## Topic 29 — Confessing Long-Held Love
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** ARC_8 (norm: ARC_8)
+
+> i love you with everything i am, everything i’ve been, and everything i hope to be .” “
+
+> tell her i’ve always loved her.
+
+> i’ve always been in love with you.”
+
+> *(CELL_B, tertile=end)* I love you, too, sweetheart.”
+
+> *(CELL_B, tertile=end)* Oh, child, I love you, too.”
+
+> *(CELL_B, tertile=end)* You just say ‘I love you.’”
+
+### Pass A/B/C
+
+- **A lexical:** `MIXED`
+  - Main keywords ('love, loved, loves, falling, fall, always') point strongly toward mutual romantic commitment/resolution (ARC_8). KeyBERT keywords ('forgive, apologize, hated, crushed, deserve, dreamed') signal an apology/reconciliation dynamic (ARC_6), with 'forgive' and 'apologize' being the clearest repair cues. POS keywords ('spite, delicate, issue, actions, reflection') suggest ongoing relational distress or tension without clear resolution (ARC_4). MMR keywords ('apologize, spite, crushed, reflection, uttered') reinforce the reconciliation/repair reading (ARC_6) but 'spite' and 'crushed' also carry residual conflict/distress. The combination of love-declaration language alongside forgiveness, apology, spite, and crushed feelings indicates a scene where the couple moves through distress and conflict toward reconciliation and possibly commitment — no single code captures all four lists, yielding MIXED.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_8`
+  - The lexical consensus (MIXED) and contextual dominant (ARC_10) reflect surface ambiguity, but the convergent metadata strongly resolves this. Taxonomy 4.5 (Reconciliation, Commitments & HEA) with secondary 3.1 (Positive Resolution, Relief & Emotional Payoff) points directly to final relational resolution. Radway R11 ('Hero declares love and demonstrates commitment') is the canonical signal for ARC_8 mutual commitment/final resolution; R12 and R13 (typically hero's tenderness and couple's future orientation) reinforce this. Stage11 codes RAX_emotional_security and RAX_tenderness_core are consistent with post-conflict restored closeness, while RAX_generic_confession_apology suggests a prior repair moment has concluded, leaving the couple in a committed state. Critically, ARC_8 does not require the absence of tenderness or love — it requires evidence of mutual relational commitment/resolution, which R11 directly supplies. The contextual ARC_10 judgment likely arose because the topic blends emotional warmth with commitment signals without a single sharp plot marker, but the Radway and taxonomy layers collectively override that ambiguity. No split is warranted; the topic coheres around a single HEA-adjacent commitment beat. Manual review is not required given strong cross-layer convergence.
+- **Action:** REINTERPRET
+
+---
+
 ## Topic 37 — Defending A Close Friendship
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -267,6 +378,30 @@
   - Topic 37 clusters around the word 'friend' and its variants, predominantly functioning as a misunderstanding or deflection device in romance narratives — one partner insisting the relationship is 'just friendship' when the other perceives or desires more (ARC_1: misunderstanding). Several sentences (BOOK_001_1–6, BOOK_002_1–3, BOOK_003_6) reflect this friend-zone ambiguity between potential main-couple members. BOOK_003_1, BOOK_003_2, and BOOK_003_5 shift toward a separation/breakup-threat register ('We're still friends, right?', 'I'd like to stay friends with you'), coded ARC_3. Several sentences (BOOK_002_4–6, BOOK_003_3–4, BOOK_004_1–2) are clearly off-target, referring to third-party friendships with no main-couple relevance (ARC_0). ARC_1 is the plurality code at ~40%, below the 70% threshold for a single dominant code, but no other code comes close; ARC_1 is returned as dominant given its plurality. Main-couple probability is moderate (~0.50) because roughly half the sentences plausibly involve the main couple's friend-zone dynamic, while the rest are off-target or unclear.
 - **C adjudicate:** `ARC_1`
   - Lexical consensus (ARC_0 / off_target) was overridden by contextual dominant (ARC_1 / misunderstanding). The taxonomy placement in 4.3 Secrets, Misunderstandings & Hidden Information directly corroborates ARC_1: the topic captures concealed information or false impressions that generate relational tension between the main couple, not mere off-target noise. The secondary taxonomy (4.2 Ongoing Courtship) suggests the misunderstanding is embedded in an active courtship phase, consistent with a falling/tension arc rather than a repair or resolution arc. ARC_1 is therefore the correct single code. Construct bucket is REFINED_FALLING because misunderstandings typically drive the couple apart or impede bonding, placing this in the falling/conflict segment of the narrative arc. No free-form labels were carried forward; all prior Pass A/B language has been mapped to ARC_1.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 38 — Admitting Shared Pain
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** ARC_10 (norm: ARC_10)
+
+> i’ve seen your pain.
+
+> i've never felt that way before."
+
+> will it make you feel better to know that i’ve got one, too?”
+
+> *(CELL_A, tertile=middle)* That’s what it felt like—that was the exact feeling—and I’m so happy that now you were there.
+
+### Pass A/B/C
+
+- **A lexical:** `MIXED`
+  - Main keywords (feel, felt, better, make, good) are too generic to assign a specific arc function — ARC_10. KeyBERT introduces 'hurts,' 'worst,' 'experienced,' suggesting emotional pain or distress, pointing toward ARC_4 (relationship-caused distress). POS keywords ('magical,' 'accustomed,' 'problems,' 'loose') remain ambiguous — ARC_10. MMR is the most informative: 'apologize' and 'admitted' are direct repair/disclosure cues, 'hurts' and 'ticked' suggest prior conflict, and 'magical' hints at positive relational feeling — together these point to ARC_6 (apology/reconciliation/repair). The four representations split between ambiguity (Main, POS), distress (KeyBERT), and repair (MMR), producing genuine disagreement. The most semantically loaded representations (KeyBERT, MMR) suggest a moment of acknowledged hurt followed by apology, but without clear consensus the result is MIXED.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_10`
+  - The lexical consensus (MIXED) and contextual dominant (ARC_10) reflect genuine ambiguity. Taxonomy 4.2 (Ongoing Courtship & Everyday Relational Bonding) with secondary 3.2 (Negative Emotions & Distress) pulls in two directions: bonding language suggests movement toward ARC_7 (restored trust) or ARC_8 (commitment), while distress language hints at ARC_4 (relationship-caused distress) or ARC_1 (misunderstanding maintained). The Radway primary code R10 — heroine reinterprets hero's behaviour as result of previous hurt — is pivotal: this is a cognitive/emotional reframing moment, not yet a confirmed repair or disclosure. R10 does not by itself constitute ARC_5 (disclosure/revelation) because the reinterpretation is internal to the heroine, nor ARC_7 because trust restoration requires reciprocal evidence. Stage11 labels (RAX_emotional_reassurance, RAX_emotional_security, RAX_tenderness_core) are consistent with a warm relational moment but per critical rules these do not elevate the code to ARC_7 without evidence of trust being actively restored. The secondary Radway codes R8 and R9 add further ambiguity. On balance, ARC_10 (ambiguous) is the most defensible single code: the topic sits at a liminal point in the arc where reinterpretation is occurring but its relational consequence — repair, continued misunderstanding, or mere bonding — cannot be determined from available evidence. Strict H6 inclusion is 'exclude' because ambiguous topics introduce noise into both rising and falling arc hypotheses. Manual review is required to examine token-level evidence for whether the heroine's reinterpretation is communicated to the hero (which would shift toward ARC_5 or ARC_7) or remains private (which would keep it at ARC_10 or shift toward ARC_1).
 - **Action:** REINTERPRET
 
 ---
@@ -300,6 +435,90 @@
 
 ---
 
+## Topic 45 — Reassured Everything Will Be Fine
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_7 (norm: ARC_7)
+
+> we’ll be ok.” “
+
+> nadines : you’ll be ok?
+
+> ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great.
+
+> *(CELL_D, tertile=middle)* I'm fine," Amber replied quietly. "
+
+> *(CELL_D, tertile=begin)* Your wound…'" "I'm fine."
+
+> *(CELL_B, tertile=middle)* Is everything okay?” “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_7`
+  - Main keywords ('fine, okay, everything, right, honey, alright') collectively signal reassurance and calming language directed at a partner. KeyBERT reinforces this with 'assured, assure, smoothly, incredibly,' pointing to active reassurance being given. MMR adds 'assure, assured, acknowledged, appreciate,' further cementing a pattern of one party reassuring the other and trust/closeness being actively restored or strengthened — meeting the ARC_7 threshold. POS ('problems, sir, lord') is too sparse and formal to confirm a romantic context, yielding ARC_10. The three-to-one weight of Main, KeyBERT, and MMR toward reassurance/trust-restoration drives the consensus to ARC_7.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (ARC_7) and the taxonomy/Radway/Stage11 labels collectively support a restored-trust reading: Taxonomy 4.6 (Emotional Safety, Reassurance & Caretaking) maps directly onto the ARC_7 criterion of trust/closeness being strengthened; Radway R8 (hero treats heroine tenderly) and R9 (hero's inner feelings revealed) are canonical markers of the trust-restoration beat; Stage11 codes RAX_emotional_reassurance and RAX_emotional_security reinforce this. The contextual judgment of ARC_10 (ambiguous) is the outlier. Its ambiguity likely reflects that tenderness and reassurance alone do not guarantee ARC_7 — the critical rule requires evidence that trust is being *restored* rather than merely expressed. However, the secondary taxonomy (9.2 Promise, Vow & Future-Tense Speech Acts) tips the balance: future-oriented vows in a caretaking frame are a strong signal of relational repair/strengthening, not mere affection. On balance, the preponderance of evidence — lexical consensus, three independent metadata streams, and the secondary taxonomy — overrides the contextual ambiguity flag. ARC_7 is the correct resolution. Manual review is recommended to verify that the topic's tokens include explicit repair/restoration language (e.g., 'again,' 'still,' 'always,' 'safe') rather than purely first-instance tenderness, which would collapse back to ARC_10.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 46 — Asking Someone to Trust You
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_7 (norm: ARC_7)
+
+> you’ll just have to trust me.”
+
+> he’ll trust you if you promise to keep me in sight.” “
+
+> my trust that he’ll bring me to safety.
+
+> *(CELL_D, tertile=begin)* The critics wanted to prove that setting goals, drawing graphs, measuring results and evaluating the performance of individuals was nothing less than taking the place of trusting the Holy Spirit to give increase.
+
+> *(CELL_D, tertile=begin)* Trust us, all we need to do to you can be done here,” one of the other guys said.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_1`
+  - The Main keyword list is the decisive signal here: 'trust, trusted, betrayed, betray, trusting, betrayal' form a tight semantic cluster around broken or withheld trust within a relationship, with the direct-address pronouns 'me' and 'you' anchoring it interpersonally. This pattern — trust vocabulary combined with betrayal and concealment — maps most cleanly to ARC_1 (misunderstanding/secret maintained), where one or both parties are hiding something or a breach of trust is being sustained rather than resolved. There is no repair, apology, or disclosure language (which would push toward ARC_5 or ARC_6). KeyBERT, POS, and MMR lists ('instincts, worries, hesitation, twisting, options, percent, concrete') are largely abstract or procedural and do not independently implicate the romantic arc, hence ARC_10 for those three. The Main list dominates consensus given its direct relational content, yielding ARC_1 overall.
+- **B contextual:** `ARC_7`
+- **C adjudicate:** `ARC_7`
+  - The taxonomy (4.6 Emotional Safety, Reassurance & Caretaking), Radway codes (R8 hero treats heroine tenderly, R9, R10), and Stage11 prior codes (RAX_emotional_reassurance, RAX_emotional_security, RAX_tenderness_core) all converge on a pattern of trust and closeness being actively restored or reinforced between the main couple — the defining criterion for ARC_7. The lexical consensus of ARC_1 is overridden: while the secondary taxonomy flag (4.3 Secrets/Misunderstandings) might surface lexical signals of concealment, the dominant functional pattern across all contextual and metadata signals is one of emotional repair and security-building, not misunderstanding maintenance. ARC_7 requires evidence that trust/closeness is being restored or strengthened, and the Radway R8 tender-treatment code combined with the emotional-safety taxonomy and Stage11 reassurance codes collectively satisfy that criterion. No split is warranted because the secondary ARC_1 signal is subordinate and does not represent a distinct narrative function at comparable weight. Recommended for inclusion in the rising arc bucket for H6 hypothesis testing.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 56 — Promising Never to Hurt You
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_6 (norm: ARC_6)
+
+> you'll get hurt," he managed to say. "
+
+> you know i’ll never hurt you .”
+
+> i’ll make sure you aren’t hurt.” “
+
+> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+
+> *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
+
+> *(CELL_C, tertile=begin)* You didn’t hit me with a sledgehammer last night, did you?” “
+
+> *(CELL_C, tertile=middle)* I didn’t know why I felt hurt, but it stung not to be invited. “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - Across all four keyword lists the dominant lexical cluster centres on pain and harm inflicted within the relationship: 'hurt/hurting/harm/hurts/painful/distress' (Main, KeyBERT, POS, MMR) combined with relational-address terms ('you', 'want', 'don', 'never', 'won') and emotionally charged verbs ('cried', 'insisted', 'assured', 'protect', 'threatened', 'causing'). The pattern — one party causing or fearing causing pain to the other, with assurances and protests — is characteristic of relationship-caused distress (ARC_4): the romantic bond itself is the source of the emotional suffering being expressed. There is no clear evidence of a secret being maintained (ARC_1), an escalating argument (ARC_2), a separation threat (ARC_3), a disclosure (ARC_5), or repair/reconciliation (ARC_6/7/8). 'Threatened' and 'protect' could hint at external danger, but the surrounding pain/harm vocabulary keeps the focus squarely on interpersonal relational distress, not an outside plot threat.
+- **B contextual:** `ARC_6`
+- **C adjudicate:** `ARC_6`
+  - The lexical consensus (ARC_4) reflects surface-level distress vocabulary, but the contextual dominant (ARC_6) is better supported by the full evidence profile. Taxonomy label 4.6 'Emotional Safety, Reassurance & Caretaking' with secondary 9.2 'Promise, Vow & Future-Tense Speech Acts' points toward active relational repair rather than mere suffering — the caretaking and reassurance are directed at mending or stabilizing the bond, not simply expressing pain within it. Radway R8 ('Hero treats heroine tenderly') and R11 (likely hero's capitulation/emotional openness) are canonical reconciliation/repair beats in Radway's arc schema, not distress beats. Stage11 codes RAX_emotional_reassurance and RAX_emotional_security similarly index restoration of safety rather than ongoing deterioration. The combination of tender treatment, future-tense vows, and emotional security language is consistent with a post-conflict repair moment (ARC_6) rather than relationship-caused distress (ARC_4). ARC_4 would require the relationship itself to be the source of ongoing harm with no repair signal; the metadata collectively contradicts that reading. Classifying as ARC_6 (apology/reconciliation/repair) and placing in REFINED_RISING for H6 is the most defensible resolution. No manual review required given strong cross-signal convergence.
+- **Action:** REINTERPRET
+
+---
+
 ## Topic 94 — Caught in A Lie
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -329,6 +548,83 @@
 
 ---
 
+## Topic 96 — Confessing Long-Standing Worry
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_4 (norm: ARC_4)
+
+> i’ve been worried about you, [person].
+
+> i’ve worried about you since i was twelve.
+
+> i’ve been worried about you.” “
+
+> *(CELL_D, tertile=middle)* You grew up worrying about having your basic needs met.
+
+> *(CELL_D, tertile=middle)* Don't beat yourself up about it.
+
+> *(CELL_B, tertile=begin)* We didn’t want to worry you.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - All four keyword lists centre on worry, concern, fear, and being bothered ('worry, worried, concern, worrying, concerned, fears, bothering, bothered, assure, problems'). While 'assure' hints at possible reassurance, there is no lexical evidence tying these anxieties specifically to the main romantic relationship — no relational repair, no conflict between the couple, no disclosure, no commitment signal. The worry/concern vocabulary could equally apply to external threats, self-concern, or third-party issues. 'Amusement' and 'sounding' in MMR/POS add tonal ambiguity without clarifying relational function. The topic therefore cannot be confidently assigned to any specific arc stage, making ARC_10 (ambiguous) the appropriate consensus code.
+- **B contextual:** `ARC_4`
+- **C adjudicate:** `ARC_4`
+  - The lexical consensus (ARC_10) reflects surface ambiguity between warmth/tenderness and distress, but the contextual dominant (ARC_4) is better supported by the overall evidence. Taxonomy label 4.6 'Emotional Safety, Reassurance & Caretaking' with secondary 3.2 'Negative Emotions & Distress' is consistent with ARC_4: the tenderness and caretaking present in this topic are responses to relationship-caused distress rather than evidence of restored trust (ARC_7) or mutual commitment (ARC_8). Radway R8 ('Hero treats heroine tenderly') and R9 are plausible surface readings, but tenderness in the context of ongoing relational pain does not constitute trust restoration or resolution — it is better read as emotional management within a distressed relationship. Stage11 codes (RAX_emotional_reassurance, RAX_emotional_security, RAX_tenderness_core) might superficially suggest ARC_7, but per the critical rules, reassurance alone does not qualify as restored trust unless the relationship's closeness is demonstrably being rebuilt. The metadata is therefore 'mixed': taxonomy and Radway labels partially support a rising reading, but the distress secondary and contextual judgment tip the balance to ARC_4 (falling). Manual review is recommended to confirm that the tenderness here is not functioning as a genuine trust-restoration moment (which would warrant ARC_7 reclassification).
+- **Action:** REINTERPRET
+
+---
+
+## Topic 100 — Promising to Find Her
+
+- **Taxonomy:** 9.2 — Promise, Vow & Future-Tense Speech Acts
+- **Code:** ARC_10 (norm: ARC_10)
+
+> i promise, i’ll bring her right back.”
+
+> i’ll hurry and see if i can catch her.”
+
+> i’ll look until she’s found.”
+
+> *(CELL_A, tertile=end)* She won’t be able to leave, to rest, to pass over, whatever it is, until we find her.” “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - The keyword sets contain logistical/procedural language (find, meet, needs, leave, where, urgency, decision, dismissed, planning, expect) and social-register markers (sir, mister) without any clear signal of a romantic relationship arc. 'Hiding' and 'replaced' could hint at ARC_1 or ARC_3, but they are isolated cues with no corroborating romantic-couple context. 'Dismissed' and 'urgency' suggest an external or transactional scene rather than a relational one. The overall picture is too ambiguous to assign a specific arc code, making ARC_10 the appropriate consensus.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_10`
+  - Lexical and contextual consensus both land on ARC_10 (ambiguous), and the adjudication metadata is genuinely mixed rather than clarifying. The taxonomy label (9.2 Promise, Vow & Future-Tense Speech Acts) and Radway R8 (hero treats heroine tenderly) point toward ARC_7 (restored trust/reassurance) or ARC_8 (mutual commitment), but neither is confirmed without evidence that trust is being *restored* (ARC_7) or that a *relational resolution* is being reached (ARC_8). Promises and vows can appear at any narrative stage — early courtship, mid-arc reassurance, or final resolution — so future-tense speech acts alone do not anchor the arc position. The Stage11 prior code RAX_protective_commitment similarly straddles ARC_7 and ARC_8 without resolving the ambiguity. Radway R11 and R13 as secondary/plausible codes further diffuse the signal. Because the topic cannot be reliably placed in rising (ARC_5–8) or falling (ARC_1–4) without additional positional or contextual evidence, it is excluded from strict H6 hypothesis testing. Manual review is recommended to examine whether the promises/vows occur in a repair context (→ ARC_7) or a final-resolution context (→ ARC_8), which would allow reclassification.
+- **Action:** KEEP
+
+---
+
+## Topic 102 — Grief Etched on His Face
+
+- **Taxonomy:** 3.2 — Negative Emotions & Distress
+- **Code:** ARC_10 (norm: ARC_10)
+
+> we’ve lost adam,’ she whispered and her fingers traced the contours of grief still etched on his face. ‘
+
+> not only did she have a cool and savvy partner actually in the game with her, the surroundings, the actions were so real that her heart pounded and adrenaline flooded her, almost as if she really was helping adam sabotage a bridge while avoiding capture by nazi soldiers.
+
+> holy hell, adam—i’ve known her long enough to realize she’s thinking about a lot more than a blowjob.” “
+
+> *(CELL_B, tertile=end)* And on that thought, he said, “I talked to Adam a minute ago.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - Main keywords (adam, cain, penn, denver, brother) suggest a scene involving male characters—possibly brothers or rivals—but no clear romantic-relationship function is signaled. KeyBERT offers 'affection, sadness, secretly, blurted, shivered' which hint at emotional distress or concealed feeling, nudging toward ARC_4 (relationship-caused distress) or ARC_1 (secret maintained), but without a clear romantic-couple anchor these remain ambiguous. POS and MMR keywords (distraction, glint, surroundings, instincts, sweeping, pleading, blurted) are largely atmospheric/action-oriented with no definitive romantic-arc signal. The combination of male-character names, possible sibling dynamics, and scattered emotional cues does not resolve to a specific arc function for the main couple, making ARC_10 (ambiguous) the most defensible consensus despite KeyBERT's mild lean toward ARC_4.
+- **B contextual:** `ARC_10`
+  - Topic 102 is entirely composed of highly truncated sentence fragments centered on a character named 'Adam' — questions, exclamations, brief actions, and dialogue tags ('Adam asked.', 'Adam muttered.', 'Adam sighed.', etc.). These fragments provide no relational context whatsoever: there is no indication of who Adam's romantic partner is, what the relationship state is, or whether any arc-relevant event is occurring. The topic appears to be a character-name anchor topic capturing sentences that mention 'Adam' across multiple books, without any coherent narrative function. Because no romantic relationship can be identified or assessed from these fragments, all sentences are coded ARC_10 (ambiguous) with main_couple=unclear. The topic should be excluded from H6 arc analyses.
+- **C adjudicate:** `ARC_10`
+  - The lexical and contextual consensus both land on ARC_10 (ambiguous), and adjudication confirms this is the most defensible single code. The supporting metadata is internally mixed: Radway R8 (hero treats heroine tenderly) and Stage11 RAX_protective_commitment point toward a rising/repair function (ARC_7 territory), while RAX_individual_distress and the primary taxonomy label 3.2 Negative Emotions & Distress pull toward a falling arc (ARC_4 or ARC_3). Crucially, neither signal is strong enough to override the other. The tender/protective elements do not clearly evidence trust being *restored* (required for ARC_7), and the distress elements are not clearly tied to relationship deterioration caused by the couple's dynamic (required for ARC_4). The secondary taxonomy label 4.2 Ongoing Courtship & Everyday Relational Bonding further muddies the picture by suggesting routine relational texture rather than a discrete arc event. Because the topic sits at the intersection of distress and tenderness without a clear directional arc function, it cannot be reliably assigned to either the rising or falling construct bucket for H6 hypothesis testing. Manual review of representative documents is required to determine whether the distress is protagonist-internal (→ ARC_9 or ARC_0) or relationally consequential (→ ARC_4 or ARC_7), and whether the tenderness constitutes trust restoration or merely affective warmth.
+- **Action:** REINTERPRET
+
+---
+
 ## Topic 109 — Seeing Past A Guarded Identity
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -350,6 +646,90 @@
   - Topic 109 clusters around the theme of knowing/not knowing someone's true identity. The largest single code is ARC_10 (unclear arc role), assigned to sentences that are too fragmentary or context-free ('It's me.', 'That would be me.', 'Who is it that wants to know?') to map to a specific narrative arc function. Among the interpretable sentences, ARC_1 (misunderstanding) is the next most common, covering lines where one partner challenges the other's claim to know them ('You don't even know me, not really'; 'You haven't got a clue who I am'). ARC_5 (disclosure) applies where a character reveals or invites revelation of their true self. ARC_2 and ARC_8 each appear once. No single code reaches 70%, but ARC_10 is dominant at ~45%. Main-couple probability is moderate (~0.60) because many sentences are clearly between romantic partners but several are too decontextualised to confirm.
 - **C adjudicate:** `ARC_5`
   - Lexical consensus (ARC_5 disclosure) and taxonomy placement (4.3 Secrets, Misunderstandings & Hidden Information) are mutually reinforcing: the topic centers on hidden information that is surfacing or at risk of surfacing between the main couple, which is the definitional core of ARC_5. The contextual dominant ARC_10 (unclear_arc_role) reflects annotator uncertainty about narrative timing rather than a genuine absence of arc signal — the taxonomy anchor resolves that ambiguity in favor of ARC_5. Secondary taxonomy 3.3 (Ambivalence & Internal Conflict) is consistent with ARC_5: a character wrestling internally with whether/how to disclose is a standard precursor to the disclosure event itself, not a competing code. Because disclosure typically destabilizes the relationship before repair, this sits in the REFINED_FALLING construct bucket. No free-form labels were carried forward; ARC_10 is retired as the dominant in light of the stronger lexical and taxonomic evidence.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 119 — Offering to Keep Her Safe
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_9 (norm: ARC_9)
+
+> come on, i’ll protect you.”
+
+> you’ll protect me?” “
+
+> i can protect you from crystal, but you’ll have to let me.
+
+> *(CELL_D, tertile=begin)* I’m your man for getting you to the point of passing out, if you ever want to take that risk.”
+
+> *(CELL_C, tertile=middle)* At least in LA you’d both have protection; you know my security guys are some of the best in the business.
+
+> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_9`
+  - All four keyword lists converge on an external-threat/protection cluster: 'dangerous,' 'threat,' 'protect,' 'guarded,' 'secure,' 'safety,' 'defend,' 'dangerously,' 'inevitable.' The vocabulary describes physical danger and the effort to guard someone from it. There is no lexical signal of relational deterioration, misunderstanding, secret, apology, or mutual commitment between the romantic couple. 'Precious,' 'caressed,' and 'assure' add a tender register but do not implicate the romantic arc itself — they are consistent with a protector-figure responding to external peril. 'President,' 'sir,' and 'terms' reinforce an external-stakes (possibly political/power) framing. Per the rules, external danger that does not itself deteriorate the romantic relationship codes as ARC_9.
+- **B contextual:** `ARC_9`
+- **C adjudicate:** `ARC_9`
+  - Lexical and contextual consensus both land on ARC_9 (external plot conflict), and that judgment is defensible: the topic's core signal appears to be external danger or threat that prompts protective/caretaking behavior from the hero rather than a deterioration or repair of the romantic bond itself. However, the taxonomy label (4.6 Emotional Safety, Reassurance & Caretaking), the Radway codes (R8 hero treats heroine tenderly, R9, R10), and the Stage11 prior codes (RAX_emotional_reassurance, RAX_physical_protection, RAX_protective_commitment, RAX_tenderness_core) all foreground the relational texture of the interaction — tenderness, reassurance, protective commitment — which are hallmarks of ARC_7 (restored trust/reassurance) territory. This creates a genuine tension: the external threat is the precipitating context, but the hero's tender protective response is the dominant narrative content captured by the topic. Under strict ARC rules, external danger that does not itself deteriorate the romantic relationship remains ARC_9, and there is no clear evidence here that trust is being specifically restored (as opposed to simply expressed), so ARC_7 is not warranted. Nevertheless, the metadata signals are strong enough that this topic sits at the ARC_9/ARC_7 boundary and warrants manual review to confirm whether the protective-caretaking moments are purely reactive to external threat or whether they also function as relational repair/reassurance within the couple's arc. Assigned to EXTERNAL_PLOT_CONFLICT construct bucket with external H6 inclusion, pending review.
+- **Action:** KEEP
+
+---
+
+## Topic 124 — Scooped Up in A Tight Hug
+
+- **Taxonomy:** 2.2 — Kissing & Non-Explicit Affection
+- **Code:** ARC_7 (norm: ARC_7)
+
+> emma followed suit, and rebecca scooped her up in her arms and hugged her tight.
+
+> he hugged her back.
+
+> i stood up with her and hugged her. “
+
+> *(CELL_A, tertile=begin)* He pulled me into his arms, wrapping me in a tender embrace. “
+
+> *(CELL_C, tertile=begin)* She hugged Luke tightly for a moment, then rested one hand on the German Shepherd’s solid, eighty-pound body and struggled to her feet.
+
+> *(CELL_C, tertile=end)* She seemed a little surprised to see Michael, but delighted too, greeting the boy with a hug.
+
+> *(CELL_C, tertile=end)* Becky tumbled out of the wagon into Sorrel’s arms in a desperate hug.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_7`
+  - All four keyword lists converge on physical expressions of warmth and closeness between characters: 'hug/hugged/hugging/embrace/tightly/tight' (Main), 'affection/greeted/fiercely/welcoming/squeeze/patted' (KeyBERT), 'reassuring/affection/promises' (POS), and 'hugged/reassuring/welcoming/eagerly/fiercely' (MMR). The repeated co-occurrence of 'reassuring' and 'welcoming' with intense physical embrace cues ('fiercely,' 'tightly,' 'enormous') indicates that closeness or trust is being actively restored or reinforced between the couple — not merely a neutral tender moment. This satisfies the ARC_7 threshold of trust/closeness being restored or strengthened, distinguishing it from simple affection (ARC_10) or a standalone commitment gesture (ARC_8).
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_7`
+  - The contextual dominant flagged ARC_10 (ambiguous), but the full metadata array consistently contradicts that judgment. Taxonomy 2.2 (Kissing & Non-Explicit Affection) combined with 4.6 (Emotional Safety, Reassurance & Caretaking) points to affective bonding with a restorative function, not mere ambiguity. Radway R8 (hero treats heroine tenderly) and R9 together signal a moment where the hero's behavior actively rebuilds or reinforces the heroine's sense of security within the relationship — the defining criterion for ARC_7 (restored trust/reassurance). Stage11 codes RAX_tenderness_core and RAX_nonexplicit_affection further anchor this as relational repair through physical and emotional gentleness rather than neutral or unresolved affect. The lexical consensus (ARC_7) is therefore upheld over the contextual ARC_10: the weight of converging evidence from taxonomy, Radway, and Stage11 all point to trust/closeness being actively restored or strengthened, satisfying the strict ARC_7 criterion. Manual review is recommended because the contextual read did flag ambiguity — reviewers should confirm that the tenderness depicted is directed at the main couple and functions as repair rather than baseline affection.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 128 — Confessing How Much You've Missed
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** ARC_7 (norm: ARC_7)
+
+> i’ve missed most of his life already.
+
+> and, god, how i’ve missed this.”
+
+> i’ve come to realize that you are the one thing in my life i don’t want to miss.
+
+> *(CELL_C, tertile=middle)* The suckhead you brought back with you here tonight…I saw it all.”
+
+> *(CELL_C, tertile=end)* While I was in there, I also brought you something I thought you might be missing.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_7`
+  - Main keywords ('miss,' 'missed,' 'missing,' 'misses,' 'you,' 'too') strongly signal mutual longing and the acknowledgment of absence between two people, which in romance-novel context typically marks a moment of restored or strengthening closeness — characters expressing how much they have missed each other is a classic trust/closeness restoration beat (ARC_7). MMR reinforces this with 'solemnly,' 'breathlessly,' 'thoughtfully,' and 'voices,' suggesting an emotionally weighted, intimate verbal exchange, consistent with a reconciliation or reassurance scene. KeyBERT ('escaped,' 'honestly,' 'solemnly,' 'repeated') is ambiguous — 'escaped' could hint at external conflict or a secret, but without clear relational-deterioration cues it does not override the dominant signal; coded ARC_10. POS ('precious,' 'voices,' 'elevator,' 'pieces') is similarly ambiguous — 'precious' is tender but insufficient alone for ARC_7 without corroborating relational-repair cues; coded ARC_10. The dominant and convergent signal across Main and MMR is mutual emotional acknowledgment of longing/absence leading to restored closeness, supporting ARC_7 as consensus despite partial disagreement from KeyBERT and POS.
+- **B contextual:** `ARC_3`
+- **C adjudicate:** `ARC_7`
+  - The contextual dominant code ARC_3 (separation/distance/breakup threat) is contradicted by the weight of converging metadata signals. Taxonomy 4.5 (Reconciliation, Commitments & HEA), Radway R11 (hero declares love and demonstrates commitment), R10, R9, and Stage11 labels (RAX_emotional_reassurance, RAX_emotional_security, RAX_tenderness_core) all point consistently toward a restoration or strengthening of closeness rather than a threat to the relationship. The lexical consensus ARC_7 aligns with this cluster. ARC_3 may have been triggered by surface-level language of distance or longing that precedes the reassurance moment, but the dominant function of the topic — as triangulated across taxonomy, Radway stage, and prior arc codes — is trust/closeness being actively restored or confirmed, satisfying the ARC_7 criterion. ARC_8 is ruled out because the evidence emphasizes emotional reassurance and security rather than a final mutual commitment resolution. Manual review is flagged because the contextual and lexical codes diverged, suggesting the topic may straddle a transitional beat (post-separation repair) that warrants human verification of narrative position before H6 inclusion.
 - **Action:** REINTERPRET
 
 ---
@@ -377,6 +757,61 @@
   - Topic 129 clusters around the word 'care' and its negations ('don't care', 'didn't care', 'cared too much'). The vast majority of sentences are decontextualised fragments — short rhetorical dismissals or ambiguous emotional statements — that cannot be reliably assigned to a specific narrative-arc function or confirmed as main-couple interactions. Three sentences (BOOK_002_5, BOOK_004_6, BOOK_005_4) carry enough relational context to suggest emotional distress tied to a romantic relationship (ARC_4: relationship_caused_distress): Lukas not caring while she cares too much, Jade being told she will always be cared for (implying prior hurt), and a character dying believing they were not cared for. All other sentences lack sufficient context to determine arc role or couple identity, coded ARC_10. ARC_10 dominates at 85%, well above the 70% threshold, making it the dominant code.
 - **C adjudicate:** `ARC_4`
   - Lexical consensus (ARC_4: relationship_caused_distress) and taxonomy placement in 4.4 Conflict, Distance & Breakup Threats with secondary 3.2 Negative Emotions & Distress both point to emotionally driven distress arising from within the main-couple relationship. The contextual dominant ARC_10 (unclear_arc_role) reflects Pass B uncertainty, but the taxonomy metadata resolves that ambiguity: the content is not merely unclear — it is distress generated by the relationship dynamic itself, consistent with ARC_4. ARC_3 (separation/breakup threat) was considered but the taxonomy secondary tag (Negative Emotions & Distress) tips the balance toward ARC_4 as the primary signal, with breakup-threat elements as a contributing but not dominant feature. This sits firmly in the REFINED_FALLING construct bucket, representing deterioration of the main-couple bond through internally generated emotional suffering.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 157 — Swearing to Save Him From Himself
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** ARC_7 (norm: ARC_7)
+
+> and you’ll get it, i swear,” [person].
+
+> if [person] sees me like this, i'll die."
+
+> and i might be young but i guess that just makes me lucky… i do love him and whether i have your help or not, i have to save him from himself… i know [person], i know what he’ll do, now that he thinks he has lost me.”
+
+> *(CELL_B, tertile=middle)* Sam couldn’t understand it, and that bothered him.
+
+> *(CELL_B, tertile=begin)* What else had Sam witnessed?
+
+> *(CELL_B, tertile=begin)* Sam noticed stuff like that.
+
+### Pass A/B/C
+
+- **A lexical:** `MIXED`
+  - Main keywords (samantha, samara, sammi, name, optimism, jonathan) suggest character naming/identification with ambiguous relational valence — ARC_10. KeyBERT (begged, confessed, willing, tense, brief) points toward a disclosure or confession moment — ARC_5. POS (dislike, worries, desperation, embarrassing, gritted) suggests emotional distress tied to the relationship — ARC_4. MMR (confessed, dump, dislike, gritted, worries) blends disclosure cues (confessed) with conflict/threat cues (dump, dislike) — ARC_5 edges out but 'dump' introduces a breakup-threat signal. The combination of confession/disclosure language (confessed, begged, willing) with distress and potential breakup threat (dump, dislike, desperation) across reps prevents a single clean code; MIXED is warranted.
+- **B contextual:** `ARC_0`
+  - Topic 157 is a character-name topic centered entirely on the name 'Sam' appearing in minimal sentence fragments (dialogue tags, address forms, brief attributions). The sentences contain no relational content, no couple dynamics, no conflict, no disclosure, no commitment — they are purely syntactic/attribution fragments. The one marginally notable sentence ('Sam, being Sam, meant he didn't tell me') hints at a withheld secret but lacks sufficient context to confirm romantic-couple implication. Across all three narrative positions the topic functions identically as a character-name anchor with no arc function. It should be excluded from H6 arc analyses.
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (MIXED) and contextual dominant (ARC_0) are overridden by the convergent weight of the metadata signals. Taxonomy 4.5 (Reconciliation, Commitments & HEA), Radway R11 (hero declares love and demonstrates commitment), R9, and R13, together with Stage11 codes RAX_emotional_reassurance and RAX_emotional_security, all point consistently toward a trust-restoration and reassurance function within the main romantic relationship. ARC_7 (restored trust/reassurance) is the best fit: the topic captures a moment where closeness and security are being actively rebuilt or affirmed between the couple, satisfying the ARC_7 criterion that trust/closeness is being restored or strengthened — not merely that tenderness is present. ARC_8 is not warranted because the evidence emphasises reassurance and emotional security rather than a final mutual commitment or resolution. The contextual judgment of ARC_0 is contradicted by the metadata; the topic is clearly couple-centric. Recommended for inclusion in the rising arc bucket for H6 hypothesis testing.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 175 — Gentleman Offers Steadying Support
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_7 (norm: ARC_7)
+
+> the occurrences of the day were too full of interest to leave elizabeth much attention for any of these new friends; and she could do nothing but think, and think with wonder, of mr. [person]'s civility, and, above all, of his wishing her to be acquainted with his sister.
+
+> mr. [person] placed his hand on [person]’s shoulder for support as mr. [person] barely walked out the front door.
+
+> yes, but when i fell ill, it was apparent that i could not travel all the way to calais, so mr. [person] took me to the house of a friend of his: mr. [person].”
+
+> *(CELL_B, tertile=end)* On his way to see Mistress Gwyllain to explain your…ah, unexplained arrival.”
+
+> *(CELL_B, tertile=begin)* Shit," grunted Sheridan, apparently immune to Owen's considerable charms. "
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - Main keywords (mr, bingley, miss, georgiana, bennet, pemberley) point to secondary characters and social settings from Pride and Prejudice, suggesting peripheral or ensemble content with no clear romantic-arc signal — coded ARC_0. However, KeyBERT, POS, and MMR all converge on emotional distress vocabulary: 'worrying,' 'uncomfortably,' 'distress,' 'longing,' 'struggling,' 'passionate,' 'concerned,' 'injured,' and 'consumed' collectively indicate relationship-caused emotional suffering or anxiety rather than external threat, conflict escalation, or trust repair. The absence of reconciliation, disclosure, or commitment cues rules out ARC_5–ARC_8. The distress appears internally relational (longing, uncomfortably, passionate, consumed) rather than externally driven, pointing to ARC_4. Disagreement is flagged because Main alone would yield ARC_0, while the three semantic/contextual representations consistently signal ARC_4.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (ARC_4) flags relationship-caused distress, and the contextual judgment (ARC_10) flags ambiguity, but the supporting metadata strongly points away from both. Taxonomy 4.6 (Emotional Safety, Reassurance & Caretaking) combined with Radway R8 (hero treats heroine tenderly) and Stage11 RAX_emotional_reassurance collectively describe a scene in which the hero actively soothes or shelters the heroine within the romantic relationship — a pattern that satisfies the ARC_7 criterion of trust/closeness being restored or strengthened, not merely expressed. ARC_4 would require evidence that the relationship itself is the source of distress; tender caretaking is the opposite dynamic. ARC_10 is unwarranted given the convergent metadata signal. The secondary Radway R9 and plausible R3 are consistent with a repair/reassurance beat rather than an escalating conflict. The secondary taxonomy (5.2 Friends, Allies & Social Circles) introduces mild ambiguity about whether the caretaking is dyadic or social, which is the primary reason manual review is flagged — if the reassurance is directed outward to allies rather than between the couple, the code could revert to ARC_10 or ARC_0. Absent that disconfirmation, ARC_7 is the best-supported single code, and the topic belongs in the rising (ARC_5–8) bucket for H6.
 - **Action:** REINTERPRET
 
 ---
@@ -509,6 +944,61 @@
   - Topic 237 is dominated by fragmentary dialogue tags and brief action snippets (e.g., 'Jared queried', 'Jared shrugged', 'Garrett feels his face flush', 'Keep him coming') that provide no discernible narrative-arc signal. The sentences are almost entirely decontextualised speech-attribution fragments or minor physical actions. No clear main couple is identifiable across the books — BOOK_001 references a side character's boyfriend, BOOK_002 involves Garrett in unclear social interactions, BOOK_003 is pure dialogue attribution for Jared, BOOK_004 involves a trio (narrator, Daniel, Gabriel) in what appears to be a crisis/care scene but without enough context to assign a specific arc role or confirm a main couple. BOOK_005 is a single dialogue fragment. The overwhelming majority of sentences are too fragmentary to assign a meaningful arc role, making ARC_10 (unclear_arc_role) the dominant code at ~95%. One sentence (BOOK_001_1) clearly involves a side character's relationship, coded ARC_0 (off_target).
 - **C adjudicate:** `ARC_5`
   - Lexical consensus (ARC_4: relationship_caused_distress) and contextual dominant (ARC_10: unclear_arc_role) are in tension. The taxonomy anchor — 4.3 Secrets, Misunderstandings & Hidden Information — provides the decisive tiebreaker. Hidden information and secrets are the structural engine of ARC_5 (disclosure), not merely ambient distress (ARC_4) or an unresolved arc role (ARC_10). The secondary taxonomy tag (7.1 Interpersonal Non-Romantic Conflict) does not override the main-couple filter; the secrets/hidden-information frame is most plausibly directed at the main couple's dynamic. ARC_5 sits in the REFINED_FALLING construct bucket because disclosure events typically precede or precipitate conflict escalation rather than resolving it. Manual review is flagged because the ARC_10 contextual read suggests the topic's token distribution may be ambiguous enough that some passages could belong to non-romantic interpersonal conflict (ARC_9 or ARC_0), warranting human verification before finalising the main_couple=true assignment.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 240 — Unsure How to Offer Comfort
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_7 (norm: ARC_7)
+
+> oh my god, sean!
+
+> sean pursed his lips, unsure he was equal to the task of comforting [person].
+
+> sean held out his hand and added; “now if you’ll excuse me i have a beautiful woman waiting to have breakfast with me.”
+
+> *(CELL_B, tertile=begin)* Oh,” I said, thinking fast, watching as Seth started to show Liam how to use another nearby machine, while the Tiffanys and Brittanys gathered round, looking more worshipful than ever.
+
+> *(CELL_B, tertile=end)* You need to stop nipping at him and face the fact that when Shon goes under, he’s off limits, one breath away from being a hostile at our backs.” “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - The keyword sets contain character names (sean, jaime, bryan, yseult, morrissey) and dialogue/reaction cues (answered, said, looked, mumbled, solemnly, absently, winced, patted, shivered, ducked) alongside emotional/cognitive states (anxious, unsure, conscious, distracted, curious). None of these cues point clearly to a specific arc function: there is no evidence of conflict escalation, disclosure, reconciliation, commitment, separation, or trust restoration between a main romantic couple. The 'repressive' and 'brogue' terms add cultural/atmospheric color without arc specificity. The overall picture is of a scene involving interpersonal interaction and mild tension/anxiety, but the romantic arc function cannot be determined from lexical evidence alone, making ARC_10 (ambiguous) the appropriate consensus code.
+- **B contextual:** `ARC_0`
+  - Every sentence in this topic is a degenerate fragment consisting solely of a character name ('Sean') followed by a dialogue tag or brief action ('asked.', 'said,', 'shrugged.', 'met his gaze.', etc.) with no surrounding context. The topic appears to be a BERTopic artifact capturing a character-name/dialogue-attribution pattern rather than any meaningful narrative content. There is no evidence of romantic relationship dynamics, no identifiable main couple, and no relationship state change. The topic is uniformly ARC_0 (unrelated to the main couple arc) across all narrative positions and should be excluded from H6 arc analyses.
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (ARC_10) and contextual dominant (ARC_0) both suggest ambiguity or irrelevance to the main couple arc, but the full metadata package strongly contradicts that reading. Taxonomy 4.6 (Emotional Safety, Reassurance & Caretaking) with secondary 4.2 (Ongoing Courtship & Everyday Relational Bonding), Radway R8 (Hero treats heroine tenderly) and R9, and Stage11 codes RAX_emotional_security and RAX_protective_commitment all converge on a topic that is actively functioning within the romantic relationship — specifically around the restoration or reinforcement of closeness and safety between the couple. Per the critical rules, ARC_7 requires evidence that trust or closeness is being restored or strengthened, not merely that tenderness is present. However, RAX_emotional_security and RAX_protective_commitment, combined with R8/R9 and taxonomy 4.6, collectively indicate that the topic depicts the hero actively providing reassurance and safety to the heroine in a relational context — which meets the ARC_7 threshold of trust/closeness being strengthened. ARC_0 is therefore rejected: the topic is couple-facing. ARC_10 is also rejected because the metadata converges clearly enough to resolve ambiguity. The contextual dominant was likely misled by surface-level absence of explicit conflict-repair language, but the functional role is rising-arc relational reinforcement. Manual review is flagged because the lexical and contextual passes diverged significantly from the metadata-supported resolution.
+- **Action:** REINTERPRET
+
+---
+
+## Topic 247 — Promising You Will Not Be Alone
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** ARC_7 (norm: ARC_7)
+
+> if we make it through this alone, we’ll just be better at being alone.”
+
+> you’ll never be alone.
+
+> before you say no, i want you to know i’ll be alone mostly.
+
+> *(CELL_B, tertile=end)* If I went out alone, it seemed I felt surrounded by people who couldn’t speak to me.
+
+> *(CELL_B, tertile=begin)* I promise you, you will never be alone again so long as I live.”
+
+> *(CELL_B, tertile=begin)* I’ve pictured this so many times in my mind, I don’t want to wake up and find I’m alone again.” “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_3`
+  - Main keywords ('alone', 'solitude', 'rather', 'prefer', 'don', 'live here') strongly suggest a character expressing a desire for separation or withdrawal — classic separation/distance language. MMR reinforces this with 'chose', 'insisted', 'planned', 'preferred', 'circumstances', 'fault' — implying a deliberate decision about the relationship's continuation under difficult conditions, pointing to a breakup threat or distancing dynamic. KeyBERT's 'upset' and 'praying' suggest emotional distress consistent with relational strain (ARC_4), but the dominant signal across Main and MMR is one of chosen separation or threatened departure. POS terms ('options', 'terms', 'circumstances', 'attempt', 'fault') are ambiguous on their own but align with a negotiation or confrontation about the relationship's future. The weight of evidence favors ARC_3 (separation/distance/breakup threat) as the consensus, with minor disagreement from KeyBERT (ARC_4) and POS (ARC_10).
+- **B contextual:** `ARC_4`
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (ARC_3) and contextual dominant (ARC_4) both point toward distress or deterioration, but the full metadata picture contradicts that reading. Taxonomy 4.6 (Emotional Safety, Reassurance & Caretaking) with secondary 9.2 (Promise/Vow/Future-Tense Speech Acts) describes a scene in which the hero actively works to soothe and secure the heroine — not to threaten or distance. Radway R8 (hero treats heroine tenderly) is the primary Radway code, which is a canonical marker of trust restoration, not conflict escalation. Stage11 codes RAX_emotional_reassurance and RAX_emotional_security further confirm a restorative, not deteriorating, relational function. ARC_4 (relationship-caused distress) would require the relationship itself to be the source of harm; here the relationship is the vehicle of repair. ARC_3 (separation/breakup threat) is unsupported by any of the secondary labels. The convergence of tender treatment, reassurance, caretaking, and future-tense vows maps most precisely onto ARC_7 (restored trust/reassurance), where closeness is being actively rebuilt or reinforced. Manual review is flagged because the lexical signal diverges from the contextual/metadata signal, suggesting the topic may contain surface-level distress language that is functionally resolved within the same narrative moment — a potential SPLIT candidate if token-level inspection reveals a distinct distress sub-cluster.
 - **Action:** REINTERPRET
 
 ---
@@ -679,6 +1169,32 @@
 
 ---
 
+## Topic 305 — Confessing A Lifelong Regret
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** ARC_7 (norm: ARC_7)
+
+> i know that now, and i’ll go to my grave regretting what i did to you.” “
+
+> come on in, you’ll no doubt regret it.
+
+> you’ll regret that.’ ‘
+
+> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
+
+> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - Across all four keyword lists, the dominant signals are regret (regret, regretted, regrets, regretting, regrettable), emotional distress (fears, upset, embarrassing), and relational missteps (fumbled, handled, acted, remark, decision). The presence of 'promise' and 'assure' suggests the relationship is implicated — a promise or commitment has been broken or mishandled, generating distress. 'Drift,' 'ended,' and 'unable' reinforce a sense of relational damage caused by the couple's own dynamic rather than external forces. This pattern — internal regret and distress stemming from relationship-related decisions and actions — maps to ARC_4 (relationship-caused distress). There is no clear disclosure event (ARC_5), no escalating argument (ARC_2), and no repair/reconciliation (ARC_6), making ARC_4 the best fit across all representations.
+- **B contextual:** `ARC_10`
+- **C adjudicate:** `ARC_7`
+  - The lexical consensus (ARC_4) and contextual dominant (ARC_10) diverge, but the convergent weight of the supporting metadata resolves the ambiguity toward ARC_7. Radway R10 ('heroine reinterprets hero's behaviour as result of previous hurt') is a canonical trust-restoration mechanism: the heroine's cognitive reframing of the hero's past actions is precisely what ARC_7 requires — closeness and trust are being rebuilt through new understanding, not merely expressed. R11 (hero's behaviour explained/excused) and R13 (heroine accepts hero) reinforce this trajectory. Taxonomy 4.5 (Reconciliation, Commitments & HEA) places the topic firmly in the rising arc family, and Stage11 labels RAX_emotional_reassurance, RAX_emotional_security, and RAX_tenderness_core all index the restoration of relational safety rather than ongoing distress. The ARC_4 lexical signal likely reflects residual distress vocabulary (the wound being reinterpreted) rather than active relationship-caused harm; the ARC_10 contextual judgment reflects genuine surface ambiguity but is overridden by the Radway/taxonomy/Stage11 convergence. Because the adjudication pivots on interpretive inference rather than explicit textual evidence, manual review is flagged. Assigned to REFINED_RISING for H6 inclusion as rising.
+- **Action:** REINTERPRET
+
+---
+
 ## Topic 314 — Fiancé Becoming A Stranger
 
 - **Taxonomy:** 4.3 — Secrets, Misunderstandings & Hidden Information
@@ -758,6 +1274,82 @@
 
 ---
 
+## Topic 232 — Conversation Cut Short By Arrival
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** ARC_10 (norm: ARC_10)
+
+> dex had come in and gabe's conversation with her, the longest conversation that they'd had in the couple of weeks he'd been back, was over.
+
+> gabe leaned down so he wouldn’t be overheard. “
+
+> i'll tell you right now falan and gabe are the only people on my team that i'd stake my career— or my balls —on."
+
+> *(CELL_C, tertile=end)* Have Remy or the boys been out to question you again or give you more information about Joshua’s attack?”
+
+> *(CELL_A, tertile=end)* He almost told her to call him Gabe, but he knew his name would sound way too good coming from her full lips.
+
+> *(CELL_A, tertile=end)* Her name fit her, Gabe had found himself thinking one too many times.
+
+> *(CELL_A, tertile=begin)* Gabe pretended to tackle Zach as he pulled the microphone from his hand, but he instantly sobered as he turned to Chase and Chloe. “
+
+> *(CELL_A, tertile=end)* Her face got red then and she said angrily, "So, Gabe knew and didn't clue me in?
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_10`
+  - The keyword sets present a tense, emotionally charged conversation between named characters (gabe, nick, elwoods) with cues of physical tension (trembling, squeezed, cringed, groaned, pained, stroking) and emotional complexity (longing, instincts, awareness, distracted, impatiently, overheard). However, the signals are mixed: 'longing' and 'stroking' suggest intimacy or desire, while 'cringed,' 'impatiently,' 'problems,' and 'overheard' suggest friction or discomfort. There is insufficient evidence to pin this to a specific arc function—it could be a tense romantic conversation (ARC_2), a moment of withheld information (ARC_1), or simply an emotionally loaded scene without clear arc movement. The ambiguity across all four representations warrants ARC_10.
+- **B contextual:** `ARC_10`
+  - Topic 232 consists entirely of truncated dialogue attribution fragments centered on the name 'Gabe' (e.g., 'Gabe said.', 'Gabe murmured.', 'Gabe blinked.'). These are speech-tag sentence stubs with no recoverable semantic content about the romantic relationship or any arc function. The topic appears to be a BERTopic artifact capturing a character-name dialogue-attribution pattern rather than a meaningful narrative theme. No relationship state change can be inferred, no arc role can be assigned, and main-couple involvement cannot be confirmed. All sentences are coded ARC_10 (ambiguous) across all tertiles. The topic should be excluded from H6 arc analysis.
+- **C adjudicate:** `ARC_10`
+  - All metadata signals converge on ARC_10. Taxonomy 4.2 (Ongoing Courtship & Everyday Relational Bonding) describes routine relational interaction without a clear directional arc function. Radway R3 (hero responds ambiguously to heroine) is definitionally ambiguous — it neither advances nor retreats the relationship in a codeable direction. Radway R7 and R2 as secondary/plausible codes add mild reassurance and recognition flavors but do not tip the balance toward ARC_7 (restored trust) or ARC_5 (disclosure), as no trust rupture or revelation is implied. Stage11 prior code RAX_emotional_reassurance could suggest ARC_7, but ARC_7 requires evidence of trust being restored after damage; everyday tenderness or ambiguous warmth does not meet that threshold per the critical rules. Lexical and contextual consensus both land on ARC_10. No directional arc function is reliably attributable, so the topic is excluded from H6 strict inclusion buckets.
+- **Action:** KEEP
+
+---
+
+## Topic 293 — Admitting Jealousy Out Loud
+
+- **Taxonomy:** 4.7 — Jealousy & Possessive Romance Conflict
+- **Code:** ARC_4 (norm: ARC_4)
+- **Evidence:** exhaustive packet
+
+> the concept of jealousy is foreign to them.
+
+> but this jealousy of yours is gonna ruin what you’ve got with j.d.” “i know.” “
+
+> we’ve been around the markets and —’ as she enthused away, i couldn’t help but feel jealous.
+
+> should i be jealous of this cayden?”
+
+> *(CELL_B, tertile=middle)* I've always maintained that a little bit of jealousy looks good on a man. "
+
+> *(CELL_B, tertile=end)* Well, of course I'm jealous," I frowned, poking him in the chest. "
+
+> *(CELL_B, tertile=end)* She was also extremely irate over the fact that her boyfriend was using me to make her jealous—without my permission, as I've told you a couple of times.
+
+> *(CELL_B, tertile=end)* I'm flattered that you're jealous, but you should know by now that no other woman could begin to compare with you.
+
+> *(CELL_B, tertile=end)* This is not arrogance talking, this is not jealousy, it is simply a matter of facts."
+
+> *(CELL_B, tertile=middle)* I debated staying where I was, standing firm for ethical reasons, but the thought that she'd be in the closed, womb-like confines of the trailer alone with Raphael was enough to spike my jealousy count off the chart.
+
+> *(CELL_B, tertile=begin)* Not to mention you repeatedly batted your eyelashes at me in an obvious attempt to make him jealous.
+
+> *(CELL_B, tertile=middle)* I didn't mind a little bit of a possessive attitude, but he was taking things a bit too far. "
+
+> *(CELL_B, tertile=begin)* I bet you're one of those men who likes to feel superior to women," Roxy said suspiciously.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_4`
+  - All four keyword lists converge on relationship-caused emotional distress. Main keywords ('jealous', 'jealousy', 'jealously', 'irrational', 'twinge', 'pang') directly name the internal emotional pain triggered by the romantic relationship. KeyBERT adds 'attracted', 'upset', 'emotional', 'concerned', 'warned', 'assured', pointing to relational anxiety and distress rather than a rupture or conflict escalation. POS keywords ('ex', 'wound', 'upset', 'reaction', 'emotional') reinforce that a past relationship or rival is causing the protagonist relational pain. MMR keywords ('stirred', 'emotional', 'wound', 'upset', 'warned') similarly describe an emotionally stirred, distressed state. The jealousy is framed as irrational/internal (not an overt fight or breakup threat), placing this squarely in ARC_4 (relationship-caused distress) rather than ARC_2 (conflict escalates) or ARC_3 (separation threat).
+- **B contextual:** `ARC_4`
+- **C adjudicate:** `ARC_4`
+  - All convergent signals align with ARC_4. Taxonomy 4.7 (Jealousy & Possessive Romance Conflict) and secondary 4.4 (Conflict, Distance & Breakup Threats) both sit squarely within the falling arc cluster. Radway R2 (heroine reacts antagonistically to hero) is a canonical ARC_4 marker — the distress originates from within the romantic relationship itself, not from an external threat. R5 and R7 are plausible secondary colorings but do not displace the primary ARC_4 reading; R7 in particular would require evidence of trust restoration, which jealousy/possessive conflict does not supply. Stage11 prior codes RAX_emotional_security and RAX_possessive_claiming reinforce relationship-internal tension rather than external plot conflict. Lexical and contextual consensus both independently arrived at ARC_4. No contradictions exist across any metadata layer. Assign to REFINED_FALLING for H6 hypothesis testing.
+- **Action:** KEEP
+
+---
+
 ## Topic 3 — Demanding An Explanation
 
 - **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
@@ -814,6 +1406,30 @@
 
 ---
 
+## Topic 242 — Trading Forgiveness For Old Wrongs
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** ARC_6 (norm: ARC_6)
+
+> not if you’ll forgive him.” “
+
+> he’ll never forgive you.
+
+> okay, how’s this — i’ll forgive you for summer if you forgive me for kabir.” “
+
+> *(CELL_B, tertile=begin)* Any man delivering such a speech to the lady he had planned to marry—a lady who had waited faithfully for him—should have had the grace to appear remorseful, or at least apologetic.
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_6`
+  - All four keyword lists converge on apology and forgiveness as the dominant signals. Main contains 'forgive,' 'forgiveness,' 'forgiven,' 'forgiving,' and the pleading 'please, can, hope' — classic repair-seeking language. KeyBERT reinforces this with 'apology,' 'fault,' 'willing,' and 'harshly/terribly/hurts' (acknowledging harm done). POS adds 'apology,' 'treatment,' 'actions,' and 'emotions,' pointing to a reckoning with past behavior. MMR echoes 'apology,' 'fault,' 'harshly,' 'treatment,' and 'spite,' all consistent with one party acknowledging wrongdoing and seeking reconciliation. There is no evidence of trust being fully restored (which would push toward ARC_7) or of mutual commitment/resolution (ARC_8); the focus is squarely on the act of seeking and granting forgiveness, which is the defining feature of ARC_6.
+- **B contextual:** `ARC_6`
+- **C adjudicate:** `ARC_6`
+  - All converging signals point to ARC_6. The lexical and contextual consensus is reconciliation/repair. Taxonomy 4.5 (Reconciliation, Commitments & HEA) with secondary 4.3 (Secrets/Misunderstandings) is fully consistent: the couple is moving through the repair of a misunderstanding or prior hurt toward restored closeness. Radway R10 (heroine reinterprets hero's behaviour as result of previous hurt) is the canonical reconciliation beat — the heroine's revised understanding of the hero's past pain is the mechanism that enables forgiveness and repair, which is the core of ARC_6. R11 and R9 as secondary/plausible Radway codes reinforce the repair-and-reassurance dynamic without pushing toward ARC_7 (which would require trust already restored) or ARC_8 (which would require final mutual commitment). Stage11 labels RAX_emotional_reassurance, RAX_emotional_security, and RAX_tenderness_core describe the affective texture of reconciliation scenes, not yet the stable post-repair state of ARC_7. The slight ARC_7 adjacency (tenderness, reassurance) does not override the dominant repair/reinterpretation function. No contradiction exists across any metadata layer. Strict H6 inclusion as 'rising' is appropriate: ARC_6 sits squarely in the rising arc band (ARC_5–8) and represents a positive relational trajectory event.
+- **Action:** KEEP
+
+---
+
 ## Topic 85 — Offering and Refusing An Apology
 
 - **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
@@ -839,6 +1455,103 @@
   - Topic 85 is overwhelmingly characterized by apology and sorry expressions ('I'm sorry', 'I am sorry', 'Did you just apologize?', 'No harm was done'). These are canonical repair gestures following conflict, mapping clearly to ARC_6 (repair). One sentence (BOOK_001_4) references a prior accusation of overreacting, suggesting a misunderstanding context (ARC_1), and two 'Excuse me?' fragments are too ambiguous to code beyond ARC_10. BOOK_001_5 references multiple third-party apologies, suggesting non-main-couple interaction (coded ARC_6 but main_couple=no). BOOK_002 sentences cluster around a clear dyadic apology exchange likely involving the main couple. Overall ARC_6 exceeds 70%, making it the dominant code. Main couple probability is moderate (~0.55) because several sentences are ambiguous or clearly involve secondary characters.
 - **C adjudicate:** `ARC_6`
   - Both lexical consensus and contextual dominant converge on ARC_6 (repair). The primary taxonomy tag 4.4 (Conflict, Distance & Breakup Threats) might suggest a falling-arc code such as ARC_2 or ARC_3, but the secondary tag 4.5 (Reconciliation, Commitments & HEA) and the consistent Pass A/B signal indicate the topic captures the turn toward repair rather than the conflict itself. ARC_6 sits in the REFINED_RISING construct bucket: the couple is actively moving from rupture back toward connection. No free-form labels require remapping. No split is warranted because the dominant signal is repair-initiation, with the conflict/distance framing serving as contextual backdrop rather than the topic's core content. Main-couple filter confirmed positive.
+- **Action:** KEEP
+
+---
+
+## Topic 126 — Fingertips Stroking Her Cheek
+
+- **Taxonomy:** 2.2 — Kissing & Non-Explicit Affection
+- **Code:** ARC_7 (norm: ARC_7)
+
+> she lifted her chin. “
+
+> he lifted a hand and stroked a finger down her cheek. ‘
+
+> she lifted her hand and caressed his cheek. "
+
+> *(CELL_B, tertile=begin)* He reached out now, stroked his fingers down her cheek to tip her face to his.
+
+> *(CELL_B, tertile=end)* He caught her back to him, spreading his fingers over her uninjured cheek. “
+
+> *(CELL_A, tertile=middle)* His long fingers cradled her cheeks as he gave her a questioning stare. “
+
+> *(CELL_A, tertile=middle)* His face lowered over hers, and his fingertips settled on her jaw, gently adjusting the angle of her head.
+
+> *(CELL_A, tertile=middle)* His fingers slid over the hot surface of her cheek, and he gently pressed her head to his shoulder. “
+
+> *(CELL_A, tertile=middle)* He bent his head, nuzzling his jaw against the pale silk of her palm. “
+
+> *(CELL_A, tertile=end)* His mouth touched her burning forehead and followed the wing of her brow. “
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_7`
+  - Main, KeyBERT, and MMR are dominated by intimate tactile gestures directed at the face and body (cheek, chin, lifted, cupped, stroked, caressed, thumb, touched, cradled, swiped) that collectively signal tender physical closeness consistent with trust being restored or reinforced between the couple — qualifying as ARC_7 (restored trust/reassurance). POS introduces 'annoyance' and 'instructions' alongside neutral spatial/body terms, injecting ambiguity about the emotional valence of the scene, hence ARC_10 for that representation. The three-to-one majority of intimate-touch cues pointing to reassuring physical connection drives the consensus to ARC_7.
+- **B contextual:** `ARC_7`
+- **C adjudicate:** `ARC_7`
+  - All converging signals align on ARC_7. Taxonomy 2.2 (Kissing & Non-Explicit Affection) and 1.7 (Facial Expression & Non-Verbal Cues) describe the physical/expressive register through which trust and closeness are being restored — not merely expressed for the first time. Radway R8 (hero treats heroine tenderly) and R9 together indicate a relational repair or deepening dynamic rather than a neutral affective moment, and R12 further supports a reassurance/comfort function. Stage11 codes RAX_nonexplicit_affection and RAX_tenderness_core are consistent with the ARC_7 criterion: tenderness here is instrumentally tied to restoring or strengthening closeness, not simply decorative warmth. The critical-rule threshold for ARC_7 is met because the Radway and Stage11 labels collectively point to a moment where the hero's tender behavior functions to re-establish or consolidate relational trust, not merely to express affection in a stable context. No contradiction exists between lexical consensus, contextual dominant, taxonomy, Radway, and Stage11 — all support REFINED_RISING / ARC_7. No split or reinterpretation is warranted.
+- **Action:** KEEP
+
+---
+
+## Topic 167 — Planning A Wedding Reception
+
+- **Taxonomy:** 5.3a — Romantic Social Rituals & Public Couple Recognition
+- **Code:** ARC_8 (norm: ARC_8)
+- **Evidence:** exhaustive packet
+
+> it’s my dream job, but instead of shooting brides, i’ll be shooting naked women.
+
+> we'll get married next summer in the church in maine that my mother would take me to every sunday.
+
+> the ‘ceremony’ in boorowa might just be signing a few papers, but carley’s planned a wedding reception they’ll never forget.” “
+
+> on the eve of your wedding.”
+
+> *(CELL_A, tertile=middle)* There’ll be plenty to talk about, anyway, after the wedding today .” “
+
+> *(CELL_A, tertile=middle)* If the bride and groom would join hands and face each other, we’ll proceed in joining you together in holy matrimony .”
+
+> *(CELL_A, tertile=middle)* And a girl shouldn’t be so rushed and put on the spot on her wedding day.
+
+> *(CELL_A, tertile=middle)* Just because it was her wedding day didn’t mean she should start thinking about sexy things like her wedding night .
+
+> *(CELL_A, tertile=middle)* Strange to get married and not even know who was on the guest list .
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_8`
+  - All four keyword lists converge on wedding/marriage ceremony vocabulary: 'wedding, bride, groom, bridal, ceremony, bridesmaids' (Main) signal a formal marriage event; 'planned, invitation, reception, arrange, preparing, planning, official, announced, destination' (KeyBERT/POS/MMR) describe the organized, official nature of the commitment ritual. The presence of 'jitters' (Main) and 'our' suggests the couple's own wedding rather than an external event. Together these cues indicate mutual relational commitment and final resolution — the defining criterion for ARC_8 — rather than merely love or promises in isolation.
+- **B contextual:** `ARC_8`
+- **C adjudicate:** `ARC_8`
+  - All evidence streams converge on ARC_8. Lexical and contextual consensus both code this as mutual commitment/final resolution. The taxonomy label (5.3a Romantic Social Rituals & Public Couple Recognition) directly maps to the public enactment of relational resolution — a hallmark of ARC_8's requirement for mutual commitment rather than mere love or affection. The secondary taxonomy (5.1 Family, Kinship & Parenthood) reinforces a forward-looking, socially embedded union. Radway R11 (hero declares love and demonstrates commitment) is the canonical ARC_8 signal, and R13 (secondary) further supports a finalizing relational gesture. Stage11 prior code RAX_public_union is fully consistent with ARC_8's mutual resolution criterion. No contradictions exist across any metadata dimension. ARC_8 is confirmed without ambiguity; no split or reinterpretation is warranted. Recommended for inclusion in the rising arc bucket for H6 hypothesis testing.
+- **Action:** KEEP
+
+---
+
+## Topic 78 — Swearing War Before He Takes Her
+
+- **Taxonomy:** 7.2 — Violence, Threats & Non-Sexual Coercion
+- **Code:** ARC_9 (norm: ARC_9)
+
+> i’ll fight you off.” “
+
+> and if they do, you’ll fight them.
+
+> i’ll start a war before i let him have you,” he murmured.
+
+> *(CELL_D, tertile=middle)* Well, if the other man thought he was about to give him a fight over Sabina, he was wrong; Sabina was an independent woman of twenty-five, not a possession for two men to fight over as if she were the prize! ‘
+
+> *(CELL_A, tertile=begin)* I don’t want to fight, but you’ve left me with no other choice.”
+
+### Pass A/B/C
+
+- **A lexical:** `ARC_9`
+  - All four keyword lists are dominated by external conflict/combat vocabulary: 'fight, fighting, war, battle, fought, battles, fighter, win' (Main); 'attacked, weapons, guarded, warned' (KeyBERT); 'weapons, century, president' (POS); 'attacked, erupted, weapons, terms' (MMR). There is no lexical signal implicating the main romantic relationship — no relational repair, disclosure, commitment, misunderstanding, or couple-specific distress. The topic describes an external plot conflict (warfare/combat) that does not itself deteriorate or advance the romantic arc, satisfying ARC_9.
+- **B contextual:** `ARC_9`
+- **C adjudicate:** `ARC_9`
+  - All signals converge on ARC_9. Lexical and contextual consensus both code this as external plot conflict. Taxonomy 7.2 (Violence, Threats & Non-Sexual Coercion) is a canonical external-danger category that does not inherently implicate romantic-relationship deterioration. The Radway R11 label ('Hero declares love and demonstrates commitment') and Stage11 codes (RAX_external_protection, RAX_relational_darkness) might superficially suggest rising-arc content, but under the critical rules these do not qualify as ARC_7 or ARC_8 without evidence of trust restoration or mutual relational resolution — the commitment here is expressed in the context of protecting against external threat, not repairing the relationship. RAX_relational_darkness is consistent with ARC_9 (external danger casting shadow) rather than ARC_2–4 (internally generated conflict). R6 as a secondary Radway code is plausible but insufficient to override the dominant external-threat framing. The Radway/Stage11 labels therefore support rather than contradict the contextual ARC_9 judgment. No split or reinterpretation is warranted; the topic cleanly belongs in EXTERNAL_PLOT_CONFLICT and should be included in H6 analyses as an external arc element.
 - **Action:** KEEP
 
 ---

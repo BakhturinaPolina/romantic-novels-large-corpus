@@ -235,9 +235,13 @@
 
 > i’ll make sure you aren’t hurt.” “
 
+> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+
 > *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
 
-> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+> *(CELL_C, tertile=begin)* You didn’t hit me with a sledgehammer last night, did you?” “
+
+> *(CELL_C, tertile=middle)* I didn’t know why I felt hurt, but it stung not to be invited. “
 
 ### Pass A/B/C
 
@@ -374,7 +378,9 @@
 
 > i’ll start a war before i let him have you,” he murmured.
 
-> *(BOOK_001, POS_001, tertile=middle)* After everything you’ve been through you still want to fight?
+> *(CELL_D, tertile=middle)* Well, if the other man thought he was about to give him a fight over Sabina, he was wrong; Sabina was an independent woman of twenty-five, not a possession for two men to fight over as if she were the prize! ‘
+
+> *(CELL_A, tertile=begin)* I don’t want to fight, but you’ve left me with no other choice.”
 
 ### Pass A/B/C
 
@@ -486,11 +492,7 @@
 
 > i’ll look until she’s found.”
 
-> *(BOOK_001, POS_001, tertile=begin)* I didn’t know I needed her, and here she is beside me.
-
-> *(BOOK_001, POS_001, tertile=begin)* Right now, I’m going to find her.
-
-> *(BOOK_001, POS_001, tertile=middle)* Perhaps I should take her home. “
+> *(CELL_A, tertile=end)* She won’t be able to leave, to rest, to pass over, whatever it is, until we find her.” “
 
 ### Pass A/B/C
 
@@ -596,9 +598,11 @@
 
 > i can protect you from crystal, but you’ll have to let me.
 
-> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
+> *(CELL_D, tertile=begin)* I’m your man for getting you to the point of passing out, if you ever want to take that risk.”
 
 > *(CELL_C, tertile=middle)* At least in LA you’d both have protection; you know my security guys are some of the best in the business.
+
+> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
 
 ### Pass A/B/C
 
@@ -679,7 +683,9 @@
 
 > i’ve come to realize that you are the one thing in my life i don’t want to miss.
 
-> *(CELL_B, tertile=middle)* I’d missed my family so much, and now that we’d seemed to get the tears and heartache out of the way, we were having fun. “
+> *(CELL_C, tertile=middle)* The suckhead you brought back with you here tonight…I saw it all.”
+
+> *(CELL_C, tertile=end)* While I was in there, I also brought you something I thought you might be missing.”
 
 ### Pass A/B/C
 
@@ -1575,25 +1581,23 @@
 
 > he was on his back, the chair across his legs, but his gun still aimed at [person]. “
 
-> *(BOOK_001, CELL_A, tertile=middle)* The weapon seemed to leap in her hand as she fired it, struck the man holding the boy between the eyes.
+> *(CELL_A, tertile=begin)* With a sealed hand, Eve turned back Mills's jacket, saw his weapon still holstered. "
 
-> *(BOOK_001, CELL_A, tertile=begin)* With a sealed hand, Eve turned back Mills's jacket, saw his weapon still holstered. "
+> *(CELL_A, tertile=middle)* The weapon seemed to leap in her hand as she fired it, struck the man holding the boy between the eyes.
 
-> *(BOOK_001, CELL_A, tertile=end)* She said it quickly, because she'd seen his hand tighten on his weapon. "
+> *(CELL_A, tertile=end)* She said it quickly, because she'd seen his hand tighten on his weapon. "
 
-> *(BOOK_001, CELL_A, tertile=end)* She said it quietly, urgently, as he lifted his weapon and placed it to the pulse at his throat.
+> *(CELL_A, tertile=end)* She said it quietly, urgently, as he lifted his weapon and placed it to the pulse at his throat.
 
-> *(BOOK_002, CELL_B, tertile=begin)* Lifting the weapon, she set it on its lowest setting and carefully sited it along the cut, firing off one quick burst.
+> *(CELL_D, tertile=middle)* He forced his focus from her, lifted the camera and shot off a few frames in a row.
 
-> *(BOOK_002, CELL_B, tertile=begin)* Coming upon him from behind, she placed the barrel of her weapon against the center of his back, directly over his heart. “
+> *(CELL_B, tertile=begin)* Lifting the weapon, she set it on its lowest setting and carefully sited it along the cut, firing off one quick burst.
 
-> *(BOOK_002, CELL_B, tertile=begin)* She clotheslined the second with an extended arm, grabbing his weapon from his slackened grip even as he executed a flip.
+> *(CELL_B, tertile=begin)* Coming upon him from behind, she placed the barrel of her weapon against the center of his back, directly over his heart. “
 
-> *(BOOK_002, CELL_B, tertile=begin)* Lifting the weapon with an effort, she fired off several warning shots.
+> *(CELL_B, tertile=begin)* She clotheslined the second with an extended arm, grabbing his weapon from his slackened grip even as he executed a flip.
 
-> *(BOOK_002, CELL_B, tertile=begin)* Gasping at the wave of dizziness that washed over her, she dropped the locator to the pavement, picked up one of the weapons and smashed it with the butt.
-
-> *(BOOK_002, CELL_B, tertile=begin)* She climbed through the nearest opening and studied it, moving slowly through, her weapon at the ready.
+> *(CELL_B, tertile=begin)* Lifting the weapon with an effort, she fired off several warning shots.
 
 ### Pass A/B/C
 

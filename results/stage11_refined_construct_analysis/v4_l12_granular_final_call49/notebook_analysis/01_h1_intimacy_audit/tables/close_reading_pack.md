@@ -192,6 +192,31 @@
 
 ---
 
+## Topic 38 — Admitting Shared Pain
+
+- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Code:** I2 (norm: I2)
+
+> i’ve seen your pain.
+
+> i've never felt that way before."
+
+> will it make you feel better to know that i’ve got one, too?”
+
+> *(CELL_A, tertile=middle)* That’s what it felt like—that was the exact feeling—and I’m so happy that now you were there.
+
+### Pass A/B/C
+
+- **A lexical:** `I2`
+  - Main keywords (feel, feels, good, felt, feeling, better, make) point to emotional processing and reassurance/caretaking — no physical contact cues. KeyBERT adds 'hurts, experienced, worst, honestly, apologize, magical' — language of emotional disclosure, pain acknowledgment, and reassurance. POS adds 'accustomed, magical, insides, problems, loose' — internal emotional/physical sensation language consistent with emotional vulnerability or caretaking. MMR reinforces with 'hurts, apologize, admitted, experienced' — confession, apology, and emotional acknowledgment. Together these signal emotional support, reassurance, and caretaking (I2). No kissing, hugging, holding, caressing, or undressing cues are present anywhere, so I3 is rejected. No desire/gaze cues for I4/I10. No explicit sexual content for I6.
+- **B contextual:** `I2`
+  - The overwhelming majority of sentences in this topic revolve around emotional states, mutual feelings, and emotional attunement between characters — the core function of I2 (emotional reassurance/caretaking/vulnerability sharing). Phrases like 'I feel it in my bones,' 'the feeling was mutual,' 'I always want to be able to tell you what I'm feeling,' and 'feel better?' all express emotional connection and empathic attunement without any physical contact, ruling out I3. BOOK_004_2 ('fucking you senseless') expresses sexual desire without depicting an actual act, making I4 (desire without contact) the most specific code. No affectionate physical contact is described anywhere in the topic, so I3 is forbidden. No explicit sexual acts are depicted, ruling out I6.
+- **C adjudicate:** `I2`
+  - Both lexical and contextual consensus converge on I2. The taxonomy confirms primary placement in Ongoing Courtship & Everyday Relational Bonding with a secondary signal of Negative Emotions & Distress, consistent with reassurance and caretaking dynamics. No affectionate physical contact (kiss, hug, hold, caress, or undress-as-prelude) is evidenced, so I3 is forbidden per anti-collapse rules. The distress secondary signal reinforces I2 (caretaking/reassurance) rather than redirecting to I3 or any other code. No domestic/logistics/HEA content that would warrant I0. KEEP with I2 is the correct disposition.
+- **Action:** KEEP
+
+---
+
 ## Topic 41 — Gripping Her Neck and Pulling Close
 
 - **Taxonomy:** 2.3 — Explicit Sexual Acts
@@ -231,29 +256,31 @@
 
 ---
 
-## Topic 56 — Promising Never to Hurt You
+## Topic 45 — Reassured Everything Will Be Fine
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** I2 (norm: I2)
 
-> you'll get hurt," he managed to say. "
+> we’ll be ok.” “
 
-> you know i’ll never hurt you .”
+> nadines : you’ll be ok?
 
-> i’ll make sure you aren’t hurt.” “
+> ok, maybe a zero-tolerance one, but there’s no doubt about it, you’ll be great.
 
-> *(CELL_D, tertile=end)* He says that he knows it must hurt, but that whatever will be, will be, and that nothing we say or do will resolve things.
+> *(CELL_D, tertile=middle)* I'm fine," Amber replied quietly. "
 
-> *(CELL_D, tertile=middle)* It’s all well and good saying you avoid pain by avoiding relationships, but what about the wonderful things you’re avoiding as well?
+> *(CELL_D, tertile=begin)* Your wound…'" "I'm fine."
+
+> *(CELL_B, tertile=middle)* Is everything okay?” “
 
 ### Pass A/B/C
 
 - **A lexical:** `I2`
-  - All four keyword sets converge on emotional distress, reassurance, and caretaking dynamics. Main keywords ('hurt', 'hurting', 'harm', 'mean', 'hurts') signal emotional pain and conflict. KeyBERT adds 'distress', 'painful', 'threatened', 'protect', 'cried', 'assured', 'insisted' — classic reassurance/caretaking vocabulary. POS and MMR reinforce with 'distress', 'painful', 'protect', 'deserve', 'threatened', 'causing'. The word 'tightly' in KeyBERT/MMR could theoretically suggest physical holding, but it is insufficient alone to establish affectionate contact — it more plausibly modifies 'threatened' or 'insisted' (e.g., 'held tightly to a position'). No kissing, hugging, caressing, or undressing cues are present. I3 is rejected: no affectionate physical contact evidence. I2 is selected for emotional reassurance, caretaking, and distress-comfort dynamics.
+  - All four keyword sets converge on reassurance/caretaking function. Main keywords ('fine, okay, everything, right, honey, alright') are classic verbal reassurance phrases. KeyBERT ('assured, assure, smoothly, incredibly') reinforce the act of calming or reassuring someone. POS ('problems, sir, lord') suggest a formal or hierarchical caretaking/concern context. MMR ('smoothly, assure, acknowledged, injured, problems, appreciate, assured') strongly indicate someone addressing a problem or injury and offering reassurance. No affectionate physical contact cues (kiss, hug, hold, caress, undress) appear in any keyword set, so I3 is rejected. No desire, gaze, explicit, or coercion cues present, ruling out I4, I10, I6, I9. This is squarely I2: emotional support and reassurance.
 - **B contextual:** `I2`
-  - The overwhelming theme of this topic is emotional hurt, reassurance, and caretaking — characters expressing fear of being hurt, reassuring partners they won't cause harm, and processing emotional pain. These map to I2 (emotional reassurance/caretaking/vulnerability). A subset of sentences (BOOK_001_3, BOOK_001_5, BOOK_001_6) reference physical violence or emotional coercion/blackmail, mapping to I9. No affectionate physical contact is present anywhere in the topic, so I3 is forbidden. No desire, gaze, or explicit sexual content is present. I2 accounts for ~75% of sentences, making it the dominant code.
+  - Every sentence in this topic consists of reassurance or welfare-checking utterances ('I'm fine,' 'Are you okay?', 'It's going to be all right,' etc.). These are verbal expressions of concern and emotional reassurance with no affectionate physical contact, no desire, no erotic content, and no domestic/HEA logistics. I2 (reassurance/caretaking) is the most specific and uniformly applicable code across all 20 sentences.
 - **C adjudicate:** `I2`
-  - Lexical and contextual consensus both point to I2. The taxonomy metadata confirms 4.6 Emotional Safety, Reassurance & Caretaking as the dominant function, with 9.2 Promise/Vow/Future-Tense Speech Acts as secondary. There is no evidence of affectionate physical contact (no kissing, hugging, holding, caressing, or undressing-as-prelude), so I3 is forbidden. The secondary vow/promise element does not elevate this to I0 (domestic/HEA logistics) because the primary driver is emotional reassurance and caretaking rather than planning or commitment ritual. I2 is the most specific and accurate code.
+  - Lexical and contextual consensus both resolve to I2. The taxonomy metadata confirms 4.6 Emotional Safety, Reassurance & Caretaking as dominant, with 9.2 Promise/Vow/Future-Tense Speech Acts as secondary — both are non-contact intimacy functions. No affectionate physical contact (kiss, hug, hold, caress, or undress-as-prelude) is evidenced, so I3 is forbidden per anti-collapse rules. The secondary vow/promise dimension does not elevate to I0 (domestic/logistics/HEA without emotional charge) because the primary function is reassurance and caretaking rather than logistical planning. KEEP at I2 with the dual construct framing is the correct adjudication.
 - **Action:** KEEP
 
 ---
@@ -355,37 +382,6 @@
 - **C adjudicate:** `I0`
   - Pass B contextual dominant (I0) is upheld. Taxonomy 4.5 (Reconciliation, Commitments & HEA) with secondary 3.3 (Ambivalence & Internal Conflict) confirms this cluster centers on relational resolution, future-planning, and emotional settlement rather than any affectionate physical contact. Lexical consensus I7 (likely driven by surface-level emotional vocabulary) is overridden: I7 requires demonstrated vulnerability/disclosure exchange, but the taxonomy anchor is HEA logistics and commitment talk, which maps squarely to I0. No i3-qualifying contact (kiss/hug/hold/caress/undress) is evidenced. Anti-collapse rules prohibit promotion to I3. I0 is the most specific and defensible code given domestic/HEA/reconciliation framing without physical contact evidence.
 - **Action:** REINTERPRET
-
----
-
-## Topic 65 — Declaring A True Partnership
-
-- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** I0 (norm: I0)
-
-> what we’ve been though together, the way we’ve been there for each other ... we have a true partnership, a true love, and if that sounds stupid and romantic, then i don’t care.”
-
-> we’ve been together forever, and what if it takes us years?”
-
-> i’ll do that,” he said softly, “we’ve got a date.”
-
-> *(CELL_C, tertile=begin)* And if we do go out, then I have to deal with all the men swarming around wanting a taste of your sex magic! ”
-
-> *(CELL_C, tertile=begin)* Or was it just an accident that we dated and he found the schema?”
-
-> *(CELL_C, tertile=end)* This is something with pure intentions, open emotions, and a reciprocation that will never cause harm to either of us.” “
-
-> *(CELL_C, tertile=begin)* It’s just … I know I am nothing but a big disappointment to both of you.
-
-### Pass A/B/C
-
-- **A lexical:** `I0`
-  - All keyword lists point to relationship-status and logistics language: 'date/dating/dated/dates/together/we/two' (Main) describe the relational context of a couple; 'engaged/partners/longest/fitting/officially/forming/intend' (KeyBERT/POS/MMR) reinforce commitment-status and HEA/relationship-definition talk. 'Playfully/nods/honestly/admit' suggest conversational tone, not physical contact. No affectionate-contact cues (kiss, hug, hold, caress, undress) are present anywhere, so I3 is forbidden. No desire/gaze/erotic/explicit cues, so I4/I10/I6 are excluded. The dominant function is domestic/relational logistics and relationship-status definition → I0.
-- **B contextual:** `I0`
-  - The overwhelming majority of sentences concern relationship logistics, social togetherness, dating history, breakups, and going out — all domestic/relational-status talk coded I0. Three sentences (BOOK_003_4, BOOK_004_3, BOOK_004_4) express emotional vulnerability, reassurance, or open emotional reciprocation, coded I2. No sentence contains affectionate physical contact, so I3 is forbidden. No desire-without-contact, erotic gaze, or explicit acts are present. I0 exceeds 70%, making it the dominant code.
-- **C adjudicate:** `I0`
-  - Lexical and contextual consensus both converge on I0. The taxonomy placement under 4.5 Reconciliation, Commitments & HEA (with secondary 4.2 Ongoing Courtship & Everyday Relational Bonding) is consistent with domestic logistics, future-planning talk, and HEA declarations — none of which constitute affectionate physical contact. Anti-collapse rules prohibit elevation to I3 absent contact evidence, and no such evidence is present. I0 is the correct and most specific code; no reinterpretation or split is warranted.
-- **Action:** KEEP
 
 ---
 
@@ -509,6 +505,60 @@
 
 ---
 
+## Topic 96 — Confessing Long-Standing Worry
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** I2 (norm: I2)
+
+> i’ve been worried about you, [person].
+
+> i’ve worried about you since i was twelve.
+
+> i’ve been worried about you.” “
+
+> *(CELL_D, tertile=middle)* You grew up worrying about having your basic needs met.
+
+> *(CELL_D, tertile=middle)* Don't beat yourself up about it.
+
+> *(CELL_B, tertile=begin)* We didn’t want to worry you.”
+
+### Pass A/B/C
+
+- **A lexical:** `I2`
+  - All four representations center on worry, concern, fear, and reassurance ('assure', 'bothered', 'worries', 'fears', 'concerned'). These cues point to emotional caretaking and reassurance-giving (I2). There is no affectionate physical contact vocabulary (no kiss, hug, hold, caress, or undress), so I3 is rejected. No desire/gaze cues (I4/I10), no explicit content (I6), no coercion (I9), no consent negotiation (I8), and no domestic/HEA logistics (I0). The 'amusement' token is minor and does not shift the dominant function away from anxious concern and reassurance.
+- **B contextual:** `I2`
+  - Every sentence in this topic revolves around worry, concern, reassurance, and caretaking language ('Don't worry,' 'I was worried about you,' 'Don't beat yourself up'). There is no physical contact of any kind, no desire, no erotic content, and no domestic/HEA logistics. The function is purely emotional reassurance and caretaking, which maps exclusively to I2.
+- **C adjudicate:** `I2`
+  - Both lexical and contextual consensus converge on I2. The taxonomy assignment (4.6 Emotional Safety, Reassurance & Caretaking with secondary 3.2 Negative Emotions & Distress) is fully consistent with I2: the cluster captures verbal and emotional support, soothing, and caretaking behaviors in response to distress, without evidence of affectionate physical contact (kiss, hug, hold, caress, or undress-as-prelude). Anti-collapse rules confirm I3 is forbidden here. No domestic/logistics/HEA framing that would push toward I0. I2 is the most specific and accurate code.
+- **Action:** KEEP
+
+---
+
+## Topic 100 — Promising to Find Her
+
+- **Taxonomy:** 9.2 — Promise, Vow & Future-Tense Speech Acts
+- **Code:** I0 (norm: I0)
+
+> i promise, i’ll bring her right back.”
+
+> i’ll hurry and see if i can catch her.”
+
+> i’ll look until she’s found.”
+
+> *(CELL_A, tertile=end)* She won’t be able to leave, to rest, to pass over, whatever it is, until we find her.” “
+
+### Pass A/B/C
+
+- **A lexical:** `I0`
+  - All keyword lists point to logistical/transactional interaction: 'find, meet, needs, leave, where' (Main) suggest practical navigation or scheduling; 'sir, mister, dismissed, urgency, hiding, replaced' (KeyBERT) indicate formal address, workplace or social hierarchy, and tension around decisions; 'urgency, excited, screen, decision, sir' (POS) reinforce a task-oriented or professional context; 'dismissed, dealing, planning, screen, expect, lingering, replaced' (MMR) confirm procedural/logistical dynamics. No affectionate-contact cues (kiss, hug, hold, caress, undress) are present anywhere. I3 is rejected because there is zero evidence of physical affectionate contact. No desire language rules out I4; no explicit erotic content rules out I6/I10. The dominant function is domestic/logistical/social navigation, coded I0.
+- **B contextual:** `I0`
+  - All sentences in this topic revolve around locating, finding, retrieving, or managing a third-party female character. The language is logistical and situational — searching for someone, handing her over, keeping her informed, not wanting to lose her as an employee. There is no affectionate physical contact (ruling out I3), no desire or erotic gaze (ruling out I4/I10), no emotional vulnerability or caretaking (ruling out I2), and no sexual content of any kind. The dominant function is purely practical/logistical coordination, coded I0.
+- **C adjudicate:** `I0`
+  - All three passes converge on I0. The taxonomy confirms the dominant function is Promise/Vow/Future-Tense Speech Acts (9.2), with Emotional Safety/Reassurance as a secondary signal (4.6). Neither category implies affectionate physical contact; they describe verbal or declarative acts oriented toward relational commitment and HEA scaffolding. No lexical or contextual evidence of kissing, hugging, caressing, or undressing. I3 is therefore forbidden per anti-collapse rules. The secondary 4.6 signal could warrant I2 consideration, but reassurance here is embedded within forward-looking vow/promise discourse rather than active caretaking, so I0 remains the most specific and accurate code. No split or reinterpretation is warranted.
+- **Action:** KEEP
+
+---
+
 ## Topic 101 — Smoothing Loose Strands of Hair
 
 - **Taxonomy:** 2.2 — Kissing & Non-Explicit Affection
@@ -598,9 +648,11 @@
 
 > i can protect you from crystal, but you’ll have to let me.
 
-> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
+> *(CELL_D, tertile=begin)* I’m your man for getting you to the point of passing out, if you ever want to take that risk.”
 
 > *(CELL_C, tertile=middle)* At least in LA you’d both have protection; you know my security guys are some of the best in the business.
+
+> *(CELL_C, tertile=end)* I didn’t think security would leave you standing out here like this.’ ‘
 
 ### Pass A/B/C
 
@@ -610,6 +662,64 @@
   - Every sentence in this topic revolves around reassurance of safety, protection pledges, and caretaking language ('I'll protect you,' 'You're safe with me,' 'I have to get you to safety,' 'check you got there safely'). There is no affectionate physical contact described anywhere, ruling out I3. There is no desire, gaze, consent negotiation, coercion, or explicit sexual content. The function is purely emotional reassurance and caretaking, which maps squarely to I2 across all 20 sentences.
 - **C adjudicate:** `I2`
   - Lexical and contextual consensus both indicate I2. Taxonomy confirms 4.6 Emotional Safety, Reassurance & Caretaking with no secondary code suggesting physical contact. No affectionate physical contact evidence is present, so I3 is forbidden per anti-collapse rules. The signal is purely reassurance/caretaking without domestic/logistics/HEA framing that would push toward I0. I2 is the correct and most specific code. No split or reinterpretation is warranted.
+- **Action:** KEEP
+
+---
+
+## Topic 124 — Scooped Up in A Tight Hug
+
+- **Taxonomy:** 2.2 — Kissing & Non-Explicit Affection
+- **Code:** I3 (norm: I3)
+
+> emma followed suit, and rebecca scooped her up in her arms and hugged her tight.
+
+> he hugged her back.
+
+> i stood up with her and hugged her. “
+
+> *(CELL_A, tertile=begin)* He pulled me into his arms, wrapping me in a tender embrace. “
+
+> *(CELL_C, tertile=begin)* She hugged Luke tightly for a moment, then rested one hand on the German Shepherd’s solid, eighty-pound body and struggled to her feet.
+
+> *(CELL_C, tertile=end)* She seemed a little surprised to see Michael, but delighted too, greeting the boy with a hug.
+
+> *(CELL_C, tertile=end)* Becky tumbled out of the wagon into Sorrel’s arms in a desperate hug.
+
+### Pass A/B/C
+
+- **A lexical:** `I3`
+  - Main is dominated by explicit hug/embrace vocabulary ('hug', 'hugged', 'hugging', 'embrace', 'tightly', 'arms') — direct affectionate physical contact cues, clearly I3. KeyBERT reinforces with 'hugged', 'squeeze', 'patted', 'affection', 'fiercely', 'tightly' — all physical contact markers, I3. MMR confirms with 'hugged', 'draped', 'fiercely', 'welcoming' — physical contact present, I3. POS is more abstract ('reassuring', 'affection', 'promises', 'welcoming', 'crowd') with no direct contact verb, leaning I2 (reassurance/caretaking). Consensus is I3 because three of four representations contain unambiguous affectionate physical contact cues (hugging, embrace, squeeze, patted, draped), satisfying the i3_contact_evidence requirement. I3 is not rejected; it is the most specific applicable code given the explicit hug/embrace lexicon across the majority of representations.
+- **B contextual:** `I3`
+  - Every sentence in this topic depicts affectionate physical contact in the form of hugging, embracing, or holding — the canonical I3 acts. BOOK_004_6 also includes a kiss, which remains I3 (kissing is non-genital/non-penetrative contact). BOOK_005_2 includes a hug plus a directive to hold a hand, both physical contact acts. No sentence rises to explicit sexual/genital activity (I6), nor is any sentence limited to desire without contact (I4) or purely domestic/logistical talk (I0). I3 is therefore the most specific and correct code for all 20 sentences, yielding a 100% proportion.
+- **C adjudicate:** `I3`
+  - Lexical and contextual consensus both converge on I3. Taxonomy 2.2 (Kissing & Non-Explicit Affection) is the primary classification, with 4.6 (Emotional Safety, Reassurance & Caretaking) as secondary, consistent with I3 criteria requiring actual affectionate physical contact such as kissing, hugging, holding, or caressing. The secondary emotional-safety dimension does not override the primary contact evidence; it contextualizes the affective register of the contact. No evidence of genital/oral/penetrative acts that would elevate to I6, no coercion (I9), no consent negotiation (I8), no isolated erotic gaze (I10), and no purely domestic/logistical content (I0). Anti-collapse rules are satisfied: I3 is warranted by positive contact evidence, not by default.
+- **Action:** KEEP
+
+---
+
+## Topic 128 — Confessing How Much You've Missed
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** I2 (norm: I2)
+
+> i’ve missed most of his life already.
+
+> and, god, how i’ve missed this.”
+
+> i’ve come to realize that you are the one thing in my life i don’t want to miss.
+
+> *(CELL_C, tertile=middle)* The suckhead you brought back with you here tonight…I saw it all.”
+
+> *(CELL_C, tertile=end)* While I was in there, I also brought you something I thought you might be missing.”
+
+### Pass A/B/C
+
+- **A lexical:** `I2`
+  - Main keywords ('miss', 'missed', 'missing', 'misses') strongly signal emotional longing and verbal expression of absence/yearning — classic I2 (emotional reassurance/vulnerability). KeyBERT adds 'solemnly', 'honestly', 'repeated', suggesting earnest emotional declarations; 'sir' and 'hi' indicate interpersonal address without physical contact cues. POS keywords ('precious', 'voices', 'elevator', 'opportunity', 'pieces') suggest an emotionally charged conversation, possibly in a confined space, with no physical contact implied. MMR reinforces this with 'solemnly', 'breathlessly', 'thoughtfully', 'considering' — all adverbs of emotional tone during speech, not physical action. 'Pressing' could suggest urgency in speech rather than physical contact. No kissing, hugging, caressing, or undressing cues appear in any representation. I3 is rejected: zero affectionate-contact evidence across all four keyword sets. The dominant function is emotional expression of longing and earnest verbal communication, coding to I2.
+- **B contextual:** `I2`
+  - The overwhelming majority of sentences express longing, missing someone, or emotional yearning for reunion — classic I2 (emotional reassurance/caretaking/attachment expression) with no physical contact described. A few sentences use 'miss' in a non-relational/literal sense (missing a ball, missing a piece) coded I0. BOOK_006_3 references an orgasm in a conditional/instructional frame, indicating desire/anticipation without contact, coded I4. No sentence depicts actual physical contact (kiss, hug, caress), so I3 is forbidden and i3_contact_evidence is false.
+- **C adjudicate:** `I2`
+  - Both lexical consensus and contextual dominant agree on I2. The taxonomy metadata (4.5 Reconciliation, Commitments & HEA; secondary 3.1 Positive Resolution, Relief & Emotional Payoff) is fully consistent with I2: these constructs center on emotional reassurance, relational repair, and affective payoff without requiring affectionate physical contact. No evidence of kissing, hugging, holding, caressing, or undressing-as-prelude is present, so I3 is forbidden per anti-collapse rules. The content does not resolve to domestic/logistics/HEA talk alone (which would push toward I0), nor to explicit desire without contact (I4). I2 is the most specific and best-supported code.
 - **Action:** KEEP
 
 ---
@@ -1269,6 +1379,35 @@
 
 ---
 
+## Topic 247 — Promising You Will Not Be Alone
+
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
+- **Code:** I0 (norm: I0)
+
+> if we make it through this alone, we’ll just be better at being alone.”
+
+> you’ll never be alone.
+
+> before you say no, i want you to know i’ll be alone mostly.
+
+> *(CELL_B, tertile=end)* If I went out alone, it seemed I felt surrounded by people who couldn’t speak to me.
+
+> *(CELL_B, tertile=begin)* I promise you, you will never be alone again so long as I live.”
+
+> *(CELL_B, tertile=begin)* I’ve pictured this so many times in my mind, I don’t want to wake up and find I’m alone again.” “
+
+### Pass A/B/C
+
+- **A lexical:** `I0`
+  - Main keywords (alone, solitude, want, prefer, rather, live) suggest emotional withdrawal or a character expressing a preference about living situation/circumstances — no affectionate contact cues. KeyBERT (upset, praying) hints at emotional distress and supplication, leaning toward I2 (reassurance/caretaking context), but no physical contact. POS and MMR keywords (options, terms, circumstances, attempt, fault, planned, insisted, chose, preferred) are strongly logistical and negotiation-oriented, pointing to I0 (domestic/logistics/HEA talk or situational decision-making). No erotic, desire, or physical-contact cues anywhere. I3 is rejected: zero affectionate-contact evidence across all representations. Consensus lands on I0 given the dominant weight of circumstance/decision/logistics vocabulary in POS and MMR, with the emotional distress in Main/KeyBERT consistent with a difficult domestic or relational negotiation rather than caretaking intimacy.
+- **B contextual:** `I0`
+  - This topic clusters around the word 'alone' and related themes of solitude, loneliness, and the desire for companionship. The vast majority of sentences (15/20) are straightforwardly about being alone or isolated — logistical/emotional state descriptions with no intimacy function beyond noting presence or absence, coded I0. A minority (5/20) express emotional reassurance or caretaking — promises not to leave someone alone, concern about a partner being by themselves, longing for togetherness — coded I2. No sentence contains affectionate physical contact, so I3 is forbidden. No desire, gaze, or erotic content is present. I0 dominates at 75%, well above the 70% threshold.
+- **C adjudicate:** `I0`
+  - All three passes converge on I0. The taxonomy metadata confirms the dominant function is Emotional Safety, Reassurance & Caretaking (4.6) with a secondary of Promise/Vow/Future-Tense Speech Acts (9.2). Neither category implies affectionate physical contact; reassurance and caretaking without touch map to I2 only when somatic comfort is the primary vehicle, but here the lexical and contextual evidence points to verbal/relational safety-building and forward-looking commitments — squarely I0. No kiss, hug, hold, caress, or undress-as-prelude is evidenced, so I3 is forbidden. I2 is not warranted because the dominant signal is promise/vow speech acts rather than somatic caretaking. I0 is retained.
+- **Action:** KEEP
+
+---
+
 ## Topic 273 — Mentor Gives Firm Instructions
 
 - **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
@@ -1382,6 +1521,33 @@
 - **C adjudicate:** `I2`
   - Pass B produced a split between I2 (lexical consensus) and I0 (contextual dominant). Taxonomy metadata confirms the primary construct is 4.6 Emotional Safety, Reassurance & Caretaking with a secondary of 5.2 Friends, Allies & Social Circles. There is no evidence of affectionate physical contact (no kiss, hug, hold, caress, or undress-as-prelude), so I3 is forbidden. The I0 signal likely reflects domestic/logistical framing within a caretaking exchange, but the dominant intimacy function is emotional reassurance rather than pure domestic logistics or HEA planning. I2 is therefore the correct resolution: it is more specific than I0 for content whose primary function is comfort-giving and emotional safety, and it does not require physical contact. No manual review needed.
 - **Action:** REINTERPRET
+
+---
+
+## Topic 305 — Confessing A Lifelong Regret
+
+- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
+- **Code:** I2 (norm: I2)
+
+> i know that now, and i’ll go to my grave regretting what i did to you.” “
+
+> come on in, you’ll no doubt regret it.
+
+> you’ll regret that.’ ‘
+
+> *(CELL_B, tertile=middle)* You are surely not intending to imply that you are beginning to regret this marriage already?’ ‘
+
+> *(CELL_B, tertile=end)* I fear that my careless remarks must have been the cause of that outburst.
+
+### Pass A/B/C
+
+- **A lexical:** `I2`
+  - All four keyword lists center on regret, emotional distress, and interpersonal tension: 'regret/regretted/regrets', 'fears', 'upset', 'embarrassing', 'admit', 'fumbled', 'handled', 'assure'. These cues point to emotional vulnerability, reassurance-seeking, and caretaking dynamics (I2). There is no affectionate physical contact vocabulary (no kiss, hug, hold, caress, or undress), so I3 is rejected. No desire/gaze cues (I4/I10), no explicit content (I6), no coercion (I9), no consent negotiation (I8). The 'promise' and 'decision' terms suggest relational accountability talk, consistent with I2 emotional repair rather than I0 domestic logistics.
+- **B contextual:** `I2`
+  - All sentences revolve around the emotional theme of regret — expressing, denying, or processing regret within relational contexts (marriage, unkindness, past actions). This is emotional reassurance/caretaking territory (I2): characters are processing emotional vulnerability, guilt, and relational repair without any physical contact, desire, or explicit acts. No affectionate physical contact is present (I3 forbidden), no erotic gaze, no explicit sex, no coercion, and no domestic/logistics/HEA framing. I2 is the most specific applicable code across all sentences.
+- **C adjudicate:** `I2`
+  - Lexical and contextual consensus both point to I2 (reassurance/caretaking). The taxonomy placement under 4.5 Reconciliation & Commitments with secondary 3.2 Negative Emotions & Distress is consistent with emotional repair and vulnerability exchange rather than affectionate physical contact. No evidence of kissing, hugging, holding, caressing, or undressing-as-prelude is present, so I3 is forbidden per anti-collapse rules. The content does not rise to domestic/logistics/HEA talk (I0), desire without contact (I4), erotic gaze (I10), consent negotiation (I8), or explicit sex (I6). I2 is the most specific and best-supported code.
+- **Action:** KEEP
 
 ---
 
@@ -1728,41 +1894,39 @@
 
 ---
 
-## Topic 174 — Ranch Life and Falling in Love
+## Topic 173 — Waiting For Him to Wake
 
-- **Taxonomy:** 4.2 — Ongoing Courtship & Everyday Relational Bonding
+- **Taxonomy:** 4.6 — Emotional Safety, Reassurance & Caretaking
 - **Code:** I0 (norm: I0)
 
-> i’ve seen your willy on numerous occasions on the ranch.
+> it’s after him so you’ll just have to wait until he wakes up to get your answer.”
 
-> the ranch is doing good, and i’ve fallen in love.
+> it'll put him to sleep."
 
-> i’d take you there, but i imagine you’ve already seen enough cattle to last you a lifetime.”
+> yeah, i guess i’ll have to wait and see when he wakes up.
 
-> *(CELL_B, tertile=end)* I’ll fetch some water, and then could you sit with him while I fetch the farmer’s wife?” “
+> *(CELL_A, tertile=end)* Could he count on not waking him when he lifted him from that warm bed?
 
-> *(CELL_B, tertile=end)* That’s as much as I can do—we’re busy at the farm, and the lad isn’t in danger.”
+> *(CELL_A, tertile=middle)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
 
-> *(CELL_B, tertile=middle)* They got milk, cheese, eggs and other produce from the farm, and they would soon be easily able to grow enough herbs and vegetables for their own use.
+> *(CELL_A, tertile=end)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
 
-> *(CELL_B, tertile=middle)* When the resident died, the farmer, needing the money, had been glad to sell it off with some land to a couple of wealthy Gidinians in need of solitude and a place away from the bustle of the town.
+> *(CELL_A, tertile=end)* He’d awakened to this darkness, and so far he hadn’t been able to work up the nerve to move.
 
-> *(CELL_B, tertile=middle)* Jaime suspected he holed up in a barn or in a storeroom, possibly up at the farm.
+> *(CELL_D, tertile=middle)* He looked fresh, rejuvenated, as though their little fling from last night hadn't permanently affected his energy.
 
-> *(CELL_B, tertile=end)* Seve was busy preserving, drying and storing the produce from the garden and bartered meat, cheese and grain from the farm.
+> *(CELL_D, tertile=middle)* He used to jog the property's perimeter every morning, before breakfast.
 
-> *(CELL_D, tertile=end)* She dreams of one day living out in Montana, enough land to have a few horses, and find a couple of cowboys of her own.
-
-> *(CELL_A, tertile=end)* This ranch is worth a fortune and we were lucky to be able to sell it for what we did.
+> *(CELL_B, tertile=middle)* He's sleeping for longer periods of time at night now,” Jacob said. “
 
 ### Pass A/B/C
 
 - **A lexical:** `I0`
-  - All keyword lists point to rural/agricultural setting and domestic logistics: ranch, farm, cattle, cows, farmer, rancher, land, pa (Main); feeding, porch, folks, owned, areas (KeyBERT); equipment, folks, areas, regular (POS); owned, equipment, guarantee, provide (MMR). No affectionate physical contact cues, no desire, no erotic content, no emotional vulnerability or caretaking. This is setting/world-building domestic context (I0). I3 rejected: zero affectionate-contact cues present.
+  - Main keywords (sleep, asleep, wake, night, tired) describe a sleep/rest scene with no affectionate contact cues. KeyBERT adds 'bedside', 'assure', 'urge', 'wondering' suggesting caretaking/reassurance proximity, pushing toward I2, but no physical contact is indicated. POS terms (departure, activity, temperature, bedside, scrambled, tv) are domestic/logistical, pointing to I0. MMR adds 'panting', 'pounding', 'warmed', 'drifted' which could suggest mild arousal or physical awareness (I4), but these are ambiguous in a sleep context (could be post-exertion or dream state). No kissing, hugging, caressing, or undressing cues appear in any representation, so I3 is rejected. The dominant signal across all reps is a sleep/rest/bedside vigil scene, best coded I0 (domestic/logistical). The slight caretaking flavor from KeyBERT and mild arousal hints from MMR do not override the consensus.
 - **B contextual:** `I0`
-  - All sentences in this topic concern rural/agricultural settings: farms, ranches, livestock, produce, food, and domestic logistics. There is no romantic interaction, physical contact, desire, or intimacy of any kind. Every sentence is purely domestic/logistical/setting content, coded I0.
+  - All sentences in this topic revolve around sleep states, wakefulness, and monitoring whether a person is asleep. There is no affectionate physical contact, no desire, no erotic content, no consent negotiation, and no domestic/HEA planning beyond the purely logistical observation of sleep patterns. The function is entirely mundane/logistical (I0): tracking sleep schedules, waiting for someone to fall asleep, noting tiredness. No other I-code is warranted.
 - **C adjudicate:** `I0`
-  - Pass B and Pass C lexical/contextual consensus both converge on I0. Taxonomy 4.2 (Ongoing Courtship & Everyday Relational Bonding) with secondary 8.2 (Public, Travel & Leisure Spaces) is consistent with relational maintenance, shared activities, and everyday bonding without affectionate physical contact. No evidence of kissing, hugging, caressing, or undressing-as-prelude; I3 is therefore forbidden. No desire-without-contact, erotic gaze, consent talk, coercion, or explicit content is indicated. I0 is the most specific and accurate code.
+  - Both lexical and contextual consensus converge on I0. The taxonomy confirms primary coding as Emotional Safety, Reassurance & Caretaking (4.6) with a secondary temporal framing dimension (8.4). There is no evidence of affectionate physical contact (no kissing, hugging, holding, caressing, or undressing-as-prelude), so I3 is forbidden per anti-collapse rules. The content reflects domestic/care/HEA-adjacent emotional reassurance without physical intimacy, firmly placing it in I0. No split or reinterpretation is warranted.
 - **Action:** KEEP
 
 ---
@@ -1970,6 +2134,35 @@
 
 ---
 
+## Topic 85 — Offering and Refusing An Apology
+
+- **Taxonomy:** 4.4 — Conflict, Distance & Breakup Threats
+- **Code:** I2 (norm: I2)
+
+> he said he wanted to apologize.
+
+> i need to apologize to you, ruby.
+
+> oh, i'm so not gonna apologize for that."
+
+> *(CELL_D, tertile=end)* He tried to get back in my good graces with a box of chocolates a couple of days later, but he never did apologize.” “
+
+> *(CELL_D, tertile=begin)* And you made it quite clear that you thought I was overreacting to the situation.”
+
+> *(CELL_D, tertile=end)* Between Cornelia, Emily Taylor and Helen Washburn, I’ve been apologized to every day this week.”
+
+### Pass A/B/C
+
+- **A lexical:** `I2`
+  - All four keyword lists converge on an apology/reconciliation scene: 'sorry, apologize, apology, apologizing, apologized, owe, apologise' (Main); 'apology, apologize, forgive, embarrassed, distress, fault' (KeyBERT); 'apology, distress, circumstances, nerves' (POS); 'apology, overheard, behalf, distress, forgive, circumstances' (MMR). This is emotional repair and reassurance/caretaking communication — classic I2 territory. No affectionate physical contact cues (kiss, hug, hold, caress, undress) appear anywhere; I3 is therefore forbidden by anti-collapse rules. No desire, gaze, consent negotiation, or explicit content cues present.
+- **B contextual:** `I2`
+  - Every sentence in this topic revolves around apology, forgiveness-seeking, and emotional repair ('I'm sorry', 'apologize', 'no harm was done', 'excuse me'). This is classic emotional reassurance/caretaking language — characters managing relational hurt and seeking reconciliation. There is zero affectionate physical contact described, so I3 is forbidden. No desire, gaze, consent negotiation, or explicit content is present. I2 (emotional support/reassurance/caretaking) is the most specific and accurate code for the entire topic.
+- **C adjudicate:** `I2`
+  - Both lexical and contextual consensus converge on I2. The taxonomy flags Conflict/Distance as dominant with Reconciliation as secondary, consistent with reassurance and caretaking functions rather than affectionate physical contact. No evidence of kissing, hugging, holding, caressing, or undressing-as-prelude is present, so I3 is forbidden per anti-collapse rules. The emotional support and vulnerability signals fit I2 precisely. No domestic/logistics/HEA talk that would push toward I0, no desire-without-contact for I4, and no erotic gaze for I10. I2 is the most specific applicable code.
+- **Action:** KEEP
+
+---
+
 ## Topic 242 — Trading Forgiveness For Old Wrongs
 
 - **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
@@ -1995,27 +2188,33 @@
 
 ---
 
-## Topic 128 — Confessing How Much You've Missed
+## Topic 19 — Legs Wrapped Around His Waist
 
-- **Taxonomy:** 4.5 — Reconciliation, Commitments & HEA
-- **Code:** I2 (norm: I2)
+- **Taxonomy:** 2.1 — Attraction & Sexual Tension
+- **Code:** I3 (norm: I3)
 
-> i’ve missed most of his life already.
+> then as her arms lifted and urged him closer, hunger overcame him, and he pulled her tightly into his arms.
 
-> and, god, how i’ve missed this.”
+> she lifted her legs and wrapped them around his waist. “
 
-> i’ve come to realize that you are the one thing in my life i don’t want to miss.
+> his hands found her wrists, and he lifted her arms above her head.
 
-> *(CELL_B, tertile=middle)* I’d missed my family so much, and now that we’d seemed to get the tears and heartache out of the way, we were having fun. “
+> *(CELL_B, tertile=begin)* She slid her hand up his thigh, leaning into his shoulder. “
+
+> *(CELL_B, tertile=middle)* She slid her arms around his neck, wiggling against him as she wrapped her legs around his waist. “
+
+> *(CELL_B, tertile=begin)* His hand moved lightly over her shoulder and back, trailing his fingers over her skin. "
+
+> *(CELL_B, tertile=end)* Collapsing against his chest, she buried her face against the side of his sweat-slick neck, and he wrapped one arm around her waist, the other hand he used to grip her ass and guide himself into her.
 
 ### Pass A/B/C
 
-- **A lexical:** `I2`
-  - Main keywords ('miss', 'missed', 'missing', 'misses') strongly signal emotional longing and verbal expression of absence/yearning — classic I2 (emotional reassurance/vulnerability). KeyBERT adds 'solemnly', 'honestly', 'repeated', suggesting earnest emotional declarations; 'sir' and 'hi' indicate interpersonal address without physical contact cues. POS keywords ('precious', 'voices', 'elevator', 'opportunity', 'pieces') suggest an emotionally charged conversation, possibly in a confined space, with no physical contact implied. MMR reinforces this with 'solemnly', 'breathlessly', 'thoughtfully', 'considering' — all adverbs of emotional tone during speech, not physical action. 'Pressing' could suggest urgency in speech rather than physical contact. No kissing, hugging, caressing, or undressing cues appear in any representation. I3 is rejected: zero affectionate-contact evidence across all four keyword sets. The dominant function is emotional expression of longing and earnest verbal communication, coding to I2.
-- **B contextual:** `I2`
-  - The overwhelming majority of sentences express longing, missing someone, or emotional yearning for reunion — classic I2 (emotional reassurance/caretaking/attachment expression) with no physical contact described. A few sentences use 'miss' in a non-relational/literal sense (missing a ball, missing a piece) coded I0. BOOK_006_3 references an orgasm in a conditional/instructional frame, indicating desire/anticipation without contact, coded I4. No sentence depicts actual physical contact (kiss, hug, caress), so I3 is forbidden and i3_contact_evidence is false.
-- **C adjudicate:** `I2`
-  - Both lexical consensus and contextual dominant agree on I2. The taxonomy metadata (4.5 Reconciliation, Commitments & HEA; secondary 3.1 Positive Resolution, Relief & Emotional Payoff) is fully consistent with I2: these constructs center on emotional reassurance, relational repair, and affective payoff without requiring affectionate physical contact. No evidence of kissing, hugging, holding, caressing, or undressing-as-prelude is present, so I3 is forbidden per anti-collapse rules. The content does not resolve to domestic/logistics/HEA talk alone (which would push toward I0), nor to explicit desire without contact (I4). I2 is the most specific and best-supported code.
+- **A lexical:** `I3`
+  - All four keyword lists converge on non-genital physical contact involving body-part positioning and holding. Main: 'arm/arms/waist/hand/wrapped/around/hips/legs/neck' directly signals embracing/holding contact. KeyBERT: 'cradled/gripped/cupped/pinned/grasp/loosened' are tactile holding/caressing verbs applied to body parts (wrists, ankles), confirming physical contact. POS: 'fingertips/thigh/wrists/ankles/elbows/ribs' are body-part anchors consistent with non-genital caress or hold; 'hesitation' may hint at consent awareness but does not override the contact evidence. MMR: 'cradled/draped/adjusted/braced/nudged/crowded' are positional/contact verbs confirming physical holding and repositioning of bodies. No genital/oral/penetrative cues appear, so I6 is rejected. The contact is affectionate/physical (holding, cradling, wrapping) rather than purely verbal reassurance (I2) or desire-without-contact (I4). I3 is therefore the most specific applicable code.
+- **B contextual:** `I3`
+  - The overwhelming majority of sentences depict affectionate or functional physical contact — holding arms, hands, embracing, cradling, pressing bodies together, caressing skin — all qualifying as I3 (non-genital affectionate physical contact). BOOK_001_5 is the sole exception: it explicitly describes penetration ('guide himself into her') alongside the embrace, making it I6. BOOK_003_6 describes adjusting clothing with no contact directed at another person, but given the topic context and the physical adjustment gesture it is borderline; however, no affectionate contact with another person is shown, so it could be I0 — yet the sentence is ambiguous enough and the topic is clearly I3-dominant, so I3 is retained as the closest fit given the physical self-adjustment in an intimate scene context. All other sentences clearly show body-to-body contact between characters.
+- **C adjudicate:** `I3`
+  - Lexical and contextual consensus both converge on I3. The taxonomy placement under 2.1 Attraction & Sexual Tension with a secondary signal of 2.3 Explicit Sexual Acts is consistent with I3 as the dominant code: the topic captures affectionate physical contact (kissing, holding, caressing, undressing as prelude) that stops short of genital/oral/penetrative acts (which would require I6). The anti-collapse rules are satisfied — I3 contact evidence is present, not inferred from desire alone (I4) or gaze (I10), and there is no domestic/logistics/HEA content that would pull toward I0. No split is warranted because the secondary I6 signal is subordinate and does not constitute a distinct cluster. KEEP with I3 is the correct adjudication.
 - **Action:** KEEP
 
 ---
@@ -2053,66 +2252,6 @@
   - Every sentence in this topic depicts non-genital affectionate physical contact — touching/caressing cheeks, chins, jaws, foreheads, forearms, and lips-to-cheek or lips-to-lips brushes. These are all classic I3 gestures (caress, kiss, hold/press). BOOK_004_1 involves brushing a sleeve (light physical touch with affectionate/playful social framing) and BOOK_004_2 involves chin-on-hands contact, both qualifying as incidental physical contact in an intimate register. No sentence reaches genital/oral/penetrative territory (I6), no explicit desire-without-contact (I4), no erotic gaze alone (I10), and no coercion or consent negotiation. I3 is the dominant and only code at 100%.
 - **C adjudicate:** `I3`
   - Lexical and contextual consensus both converge on I3. Taxonomy 2.2 (Kissing & Non-Explicit Affection) directly maps to I3, with secondary cues from 1.7 (Facial Expression & Non-Sexual Nonverbal Cues) supporting affectionate physical contact. Anti-collapse rules are satisfied: I3 contact evidence is present (kissing/non-genital caress implied by taxonomy 2.2), and no Pass B divergence (I0/I2/I4/I8/I10) requires override. No split or reinterpretation is warranted.
-- **Action:** KEEP
-
----
-
-## Topic 124 — Scooped Up in A Tight Hug
-
-- **Taxonomy:** 2.2 — Kissing & Non-Explicit Affection
-- **Code:** I3 (norm: I3)
-
-> emma followed suit, and rebecca scooped her up in her arms and hugged her tight.
-
-> he hugged her back.
-
-> i stood up with her and hugged her. “
-
-> *(CELL_A, tertile=begin)* He pulled me into his arms, wrapping me in a tender embrace. “
-
-> *(CELL_C, tertile=middle)* Thank you … ” As he nodded solemnly, she wrapped her arms around him, and held him tightly.
-
-> *(CELL_C, tertile=begin)* By manner of reply, she gave him a quick hug, and stepped into the darkness.
-
-### Pass A/B/C
-
-- **A lexical:** `I3`
-  - Main is dominated by explicit hug/embrace vocabulary ('hug', 'hugged', 'hugging', 'embrace', 'tightly', 'arms') — direct affectionate physical contact cues, clearly I3. KeyBERT reinforces with 'hugged', 'squeeze', 'patted', 'affection', 'fiercely', 'tightly' — all physical contact markers, I3. MMR confirms with 'hugged', 'draped', 'fiercely', 'welcoming' — physical contact present, I3. POS is more abstract ('reassuring', 'affection', 'promises', 'welcoming', 'crowd') with no direct contact verb, leaning I2 (reassurance/caretaking). Consensus is I3 because three of four representations contain unambiguous affectionate physical contact cues (hugging, embrace, squeeze, patted, draped), satisfying the i3_contact_evidence requirement. I3 is not rejected; it is the most specific applicable code given the explicit hug/embrace lexicon across the majority of representations.
-- **B contextual:** `I3`
-  - Every sentence in this topic depicts affectionate physical contact in the form of hugging, embracing, or holding — the canonical I3 acts. BOOK_004_6 also includes a kiss, which remains I3 (kissing is non-genital/non-penetrative contact). BOOK_005_2 includes a hug plus a directive to hold a hand, both physical contact acts. No sentence rises to explicit sexual/genital activity (I6), nor is any sentence limited to desire without contact (I4) or purely domestic/logistical talk (I0). I3 is therefore the most specific and correct code for all 20 sentences, yielding a 100% proportion.
-- **C adjudicate:** `I3`
-  - Lexical and contextual consensus both converge on I3. Taxonomy 2.2 (Kissing & Non-Explicit Affection) is the primary classification, with 4.6 (Emotional Safety, Reassurance & Caretaking) as secondary, consistent with I3 criteria requiring actual affectionate physical contact such as kissing, hugging, holding, or caressing. The secondary emotional-safety dimension does not override the primary contact evidence; it contextualizes the affective register of the contact. No evidence of genital/oral/penetrative acts that would elevate to I6, no coercion (I9), no consent negotiation (I8), no isolated erotic gaze (I10), and no purely domestic/logistical content (I0). Anti-collapse rules are satisfied: I3 is warranted by positive contact evidence, not by default.
-- **Action:** KEEP
-
----
-
-## Topic 19 — Legs Wrapped Around His Waist
-
-- **Taxonomy:** 2.1 — Attraction & Sexual Tension
-- **Code:** I3 (norm: I3)
-
-> then as her arms lifted and urged him closer, hunger overcame him, and he pulled her tightly into his arms.
-
-> she lifted her legs and wrapped them around his waist. “
-
-> his hands found her wrists, and he lifted her arms above her head.
-
-> *(CELL_B, tertile=begin)* She slid her hand up his thigh, leaning into his shoulder. “
-
-> *(CELL_B, tertile=middle)* She slid her arms around his neck, wiggling against him as she wrapped her legs around his waist. “
-
-> *(CELL_B, tertile=begin)* His hand moved lightly over her shoulder and back, trailing his fingers over her skin. "
-
-> *(CELL_B, tertile=end)* Collapsing against his chest, she buried her face against the side of his sweat-slick neck, and he wrapped one arm around her waist, the other hand he used to grip her ass and guide himself into her.
-
-### Pass A/B/C
-
-- **A lexical:** `I3`
-  - All four keyword lists converge on non-genital physical contact involving body-part positioning and holding. Main: 'arm/arms/waist/hand/wrapped/around/hips/legs/neck' directly signals embracing/holding contact. KeyBERT: 'cradled/gripped/cupped/pinned/grasp/loosened' are tactile holding/caressing verbs applied to body parts (wrists, ankles), confirming physical contact. POS: 'fingertips/thigh/wrists/ankles/elbows/ribs' are body-part anchors consistent with non-genital caress or hold; 'hesitation' may hint at consent awareness but does not override the contact evidence. MMR: 'cradled/draped/adjusted/braced/nudged/crowded' are positional/contact verbs confirming physical holding and repositioning of bodies. No genital/oral/penetrative cues appear, so I6 is rejected. The contact is affectionate/physical (holding, cradling, wrapping) rather than purely verbal reassurance (I2) or desire-without-contact (I4). I3 is therefore the most specific applicable code.
-- **B contextual:** `I3`
-  - The overwhelming majority of sentences depict affectionate or functional physical contact — holding arms, hands, embracing, cradling, pressing bodies together, caressing skin — all qualifying as I3 (non-genital affectionate physical contact). BOOK_001_5 is the sole exception: it explicitly describes penetration ('guide himself into her') alongside the embrace, making it I6. BOOK_003_6 describes adjusting clothing with no contact directed at another person, but given the topic context and the physical adjustment gesture it is borderline; however, no affectionate contact with another person is shown, so it could be I0 — yet the sentence is ambiguous enough and the topic is clearly I3-dominant, so I3 is retained as the closest fit given the physical self-adjustment in an intimate scene context. All other sentences clearly show body-to-body contact between characters.
-- **C adjudicate:** `I3`
-  - Lexical and contextual consensus both converge on I3. The taxonomy placement under 2.1 Attraction & Sexual Tension with a secondary signal of 2.3 Explicit Sexual Acts is consistent with I3 as the dominant code: the topic captures affectionate physical contact (kissing, holding, caressing, undressing as prelude) that stops short of genital/oral/penetrative acts (which would require I6). The anti-collapse rules are satisfied — I3 contact evidence is present, not inferred from desire alone (I4) or gaze (I10), and there is no domestic/logistics/HEA content that would pull toward I0. No split is warranted because the secondary I6 signal is subordinate and does not constitute a distinct cluster. KEEP with I3 is the correct adjudication.
 - **Action:** KEEP
 
 ---
@@ -2224,6 +2363,45 @@
 
 ---
 
+## Topic 203 — Stepping Into The Bathroom
+
+- **Taxonomy:** 2.5 — Sexual Negotiation, Safety Preparation & Boundaries
+- **Code:** I8 (norm: I8)
+
+> don’t fall asleep on me,” he said as he closed the bathroom door.
+
+> when they stepped into the hallway, the bathroom door opened and shannon emerged, her skin pale.
+
+> franklin stepped obediently inside the bathroom, and closed the door behind him.
+
+> *(CELL_D, tertile=middle)* She jumps up and disappears out of the room and I'm suddenly reminded of what it was like sharing a bathroom with six other people.
+
+> *(CELL_D, tertile=middle)* Fortunately, before things get any more awkward, the door opens from the en-suite bathroom and Larry emerges from a cloud of steam, like a super-hero appearing from a swirl of dry ice.
+
+> *(CELL_D, tertile=middle)* She shut the door, and I heard her humming quietly as she headed to the bathroom.
+
+> *(CELL_B, tertile=middle)* She kicked off her shoes, walked to the bathroom and picked up the plastic bowl, holding it out to Cade. “
+
+> *(CELL_B, tertile=begin)* Excuse me,” she said, with all the dignity she could muster, and marched the two steps to the bathroom.
+
+> *(CELL_B, tertile=begin)* The best thing that could be said for the bathroom was that it had a door.
+
+> *(CELL_B, tertile=middle)* He strode to the bathroom—a man on a mission—and dug out Joey’s first-aid kit from under the sink, grabbing one of the foil packs and hurrying back to the bed.
+
+> *(CELL_B, tertile=end)* Cade whirled her toward a cleaning closet and squeezed in there with her, placing himself in front.
+
+### Pass A/B/C
+
+- **A lexical:** `I0`
+  - All four representations center on physical movement through domestic/private spaces: bathroom, toilet, restroom, stall, bedroom, bedside, curtain, door. Supporting cues (flushed, washed, exhaled, breathed, stumbled, scrambled, blurted, giggled) describe bodily functions, nervous reactions, and awkward movement rather than affectionate contact. 'Annoyance,' 'privacy,' and 'reflection' reinforce mundane or emotionally neutral domestic logistics. No kissing, hugging, caressing, or undressing-as-prelude cues are present anywhere. I3 is rejected because there is zero affectionate physical contact evidence. The scene reads as characters navigating shared or private domestic space, coded I0 (domestic/logistical).
+- **B contextual:** `I0`
+  - All sentences in this topic describe mundane domestic/logistical actions centered on bathrooms and movement through shared spaces. There is no affectionate physical contact, no desire, no erotic content, and no intimacy-related function. BOOK_003_6 involves physical proximity (squeezing into a closet) but in a clearly non-intimate, evasive context with no affectionate contact. All sentences code as I0 (domestic/logistical/non-intimate narrative).
+- **C adjudicate:** `I8`
+  - Pass B lexical and contextual consensus landed on I0 (domestic/logistics), but the revealed taxonomy primary code is 2.5 Sexual Negotiation, Safety Preparation & Boundaries. This overrides the surface-level domestic reading: the content concerns consent talk, boundary articulation, and/or safety preparation as a prelude to or negotiation around intimacy — which maps directly to I8. There is no evidence of affectionate physical contact (I3 is forbidden), no explicit erotic gaze (I10), no coercion (I9), and no explicit sexual act (I6). The domestic secondary taxonomy (8.1) explains the setting but does not define the intimacy function. Retaxonomizing to I8 is the most specific and accurate classification consistent with the anti-collapse rules.
+- **Action:** RETAXONOMIZE
+
+---
+
 ## Topic 55 — Worrying About An Unplanned Pregnancy
 
 - **Taxonomy:** 2.5 — Sexual Negotiation, Safety Preparation & Boundaries
@@ -2286,45 +2464,6 @@
   - Every sentence in this topic describes interior spaces, furniture arrangements, room layouts, and domestic settings (sofas, leather chairs, coffee tables, floors, rugs, beds, dollhouses, toys, pub interiors, etc.). There is no interpersonal interaction, no physical contact, no emotional exchange, no desire, and no intimacy of any kind. All sentences are purely descriptive domestic/spatial content, coded I0 (domestic/logistical/setting description).
 - **C adjudicate:** `I8`
   - Pass B lexical and contextual consensus landed on I0 (domestic/logistics), but the revealed taxonomy primary code is 2.5 Sexual Negotiation, Safety Preparation & Boundaries. That primary designation overrides the surface-level domestic reading: topics in this cluster concern explicit or implicit negotiation of consent, readiness, and safety conditions prior to or around intimacy — not affectionate contact itself. No physical contact evidence is present (i3_contact_evidence = false), so I3 is forbidden. The correct intimacy code is I8 (consent/negotiation talk). The secondary tag 8.1 Domestic Spaces & Routines explains why Pass B read I0, but domestic framing here is the setting for boundary/safety conversation, not the functional content. Action is RETAXONOMIZE to align the topic with its true functional cluster.
-- **Action:** RETAXONOMIZE
-
----
-
-## Topic 203 — Stepping Into The Bathroom
-
-- **Taxonomy:** 2.5 — Sexual Negotiation, Safety Preparation & Boundaries
-- **Code:** I8 (norm: I8)
-
-> don’t fall asleep on me,” he said as he closed the bathroom door.
-
-> when they stepped into the hallway, the bathroom door opened and shannon emerged, her skin pale.
-
-> franklin stepped obediently inside the bathroom, and closed the door behind him.
-
-> *(CELL_D, tertile=middle)* She jumps up and disappears out of the room and I'm suddenly reminded of what it was like sharing a bathroom with six other people.
-
-> *(CELL_D, tertile=middle)* Fortunately, before things get any more awkward, the door opens from the en-suite bathroom and Larry emerges from a cloud of steam, like a super-hero appearing from a swirl of dry ice.
-
-> *(CELL_D, tertile=middle)* She shut the door, and I heard her humming quietly as she headed to the bathroom.
-
-> *(CELL_B, tertile=middle)* She kicked off her shoes, walked to the bathroom and picked up the plastic bowl, holding it out to Cade. “
-
-> *(CELL_B, tertile=begin)* Excuse me,” she said, with all the dignity she could muster, and marched the two steps to the bathroom.
-
-> *(CELL_B, tertile=begin)* The best thing that could be said for the bathroom was that it had a door.
-
-> *(CELL_B, tertile=middle)* He strode to the bathroom—a man on a mission—and dug out Joey’s first-aid kit from under the sink, grabbing one of the foil packs and hurrying back to the bed.
-
-> *(CELL_B, tertile=end)* Cade whirled her toward a cleaning closet and squeezed in there with her, placing himself in front.
-
-### Pass A/B/C
-
-- **A lexical:** `I0`
-  - All four representations center on physical movement through domestic/private spaces: bathroom, toilet, restroom, stall, bedroom, bedside, curtain, door. Supporting cues (flushed, washed, exhaled, breathed, stumbled, scrambled, blurted, giggled) describe bodily functions, nervous reactions, and awkward movement rather than affectionate contact. 'Annoyance,' 'privacy,' and 'reflection' reinforce mundane or emotionally neutral domestic logistics. No kissing, hugging, caressing, or undressing-as-prelude cues are present anywhere. I3 is rejected because there is zero affectionate physical contact evidence. The scene reads as characters navigating shared or private domestic space, coded I0 (domestic/logistical).
-- **B contextual:** `I0`
-  - All sentences in this topic describe mundane domestic/logistical actions centered on bathrooms and movement through shared spaces. There is no affectionate physical contact, no desire, no erotic content, and no intimacy-related function. BOOK_003_6 involves physical proximity (squeezing into a closet) but in a clearly non-intimate, evasive context with no affectionate contact. All sentences code as I0 (domestic/logistical/non-intimate narrative).
-- **C adjudicate:** `I8`
-  - Pass B lexical and contextual consensus landed on I0 (domestic/logistics), but the revealed taxonomy primary code is 2.5 Sexual Negotiation, Safety Preparation & Boundaries. This overrides the surface-level domestic reading: the content concerns consent talk, boundary articulation, and/or safety preparation as a prelude to or negotiation around intimacy — which maps directly to I8. There is no evidence of affectionate physical contact (I3 is forbidden), no explicit erotic gaze (I10), no coercion (I9), and no explicit sexual act (I6). The domestic secondary taxonomy (8.1) explains the setting but does not define the intimacy function. Retaxonomizing to I8 is the most specific and accurate classification consistent with the anti-collapse rules.
 - **Action:** RETAXONOMIZE
 
 ---
