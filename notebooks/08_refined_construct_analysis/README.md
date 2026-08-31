@@ -23,7 +23,7 @@ Prompts are hypothesis-specific (not one giant multi-criterion prompt). Shared e
 | `11_refined_robustness` | OLD \| STRICT \| WEIGHTED panel |
 | `12_exploratory_security_care_appearance` | **Exploratory only** — nested security/care/appearance definitions (does not alter H1–H6) |
 | `13_final_statistical_tests` | **Confirmatory final** — only reportable H1–H6 inferential results (author-cluster CIs; do not redefine constructs after running) |
-| `14_exploratory_presentation_results` | **Exploratory presentation** — reuses NB12 tables; adds waterfall, dose-response, residual Goodreads, genre/era heatmap, examples (does not alter NB13 verdicts) |
+| `14_exploratory_presentation_results` | **Exploratory presentation** — reuses NB12 tables; adds thematic richness, waterfall, dose-response, residual Goodreads, genre/era heatmap, examples (does not alter NB13 verdicts) |
 
 Edit `_src/*.py`, then:
 

@@ -1,22 +1,22 @@
-family,level,feature,n_topics,cliffs_delta,ci_low,ci_high,verdict
-emotional_security,strict,EXP_emotional_security_strict,10,0.03768680276530745,0.016385576691045768,0.05834402133735817,directional_only
-emotional_security,moderate,EXP_emotional_security_moderate,29,0.06419333246596115,0.041177317954526005,0.08882684882554849,directional_only
-emotional_security,broad,EXP_emotional_security_broad,45,0.10152984185098513,0.0786561857885162,0.1224947474235504,directional_only
-protective_commitment,strict,EXP_protective_commitment_strict,0,0.0,0.0,0.0,no reliable effect
-protective_commitment,moderate,EXP_protective_commitment_moderate,5,0.16868477879124444,0.14872920413533722,0.18904918442317103,clears_gate
-protective_commitment,broad,EXP_protective_commitment_broad,14,0.000330773855395039,-0.020547617351930902,0.02376440404117647,no reliable effect
-enacted_protection,strict,EXP_enacted_protection_strict,1,0.1596908019693486,0.14099617585143623,0.1815888402534488,clears_gate
-enacted_protection,moderate,EXP_enacted_protection_moderate,3,0.17948035303268117,0.1595602610420858,0.20158401674169582,clears_gate
-enacted_protection,broad,EXP_enacted_protection_broad,10,0.16935198169148835,0.14722662485815508,0.19210727737507557,clears_gate
-practical_care,strict,EXP_practical_care_strict,4,0.057260544502072186,0.03531407134455669,0.07701254419530557,directional_only
-practical_care,moderate,EXP_practical_care_moderate,7,0.07692513412102708,0.055518543658099065,0.09745421978196946,directional_only
-practical_care,broad,EXP_practical_care_broad,12,0.1040944155405481,0.08299767199565507,0.12467183482877217,directional_only
-material_security,strict,EXP_material_security_strict,0,0.0,0.0,0.0,no reliable effect
-material_security,moderate,EXP_material_security_moderate,5,-0.04017322538513113,-0.06159958164732677,-0.020171576441341817,directional_only
-material_security,broad,EXP_material_security_broad,7,-0.04213305865409267,-0.06434827553571609,-0.020801026391346265,directional_only
-appearance,strict,EXP_appearance_strict,6,-0.1423947881190234,-0.16384343677319413,-0.1206884260965613,clears_gate
-appearance,moderate,EXP_appearance_moderate,7,-0.16741995006358257,-0.1903201171069335,-0.14727923453836542,clears_gate
-appearance,broad,EXP_appearance_broad,8,-0.22691772399858823,-0.24814305743038262,-0.2081225723275016,clears_gate
-possessive_security,strict,EXP_possessive_security_strict,3,0.04261914955144852,0.022289804269879653,0.06412710381256817,directional_only
-possessive_security,moderate,EXP_possessive_security_moderate,5,0.06421602619396194,0.044074454181180736,0.08398090238873011,directional_only
-possessive_security,broad,EXP_possessive_security_broad,7,0.06175963080588209,0.04279309223351306,0.0821282002990756,directional_only
+family,level,feature,n_topics,cliffs_delta,ci_low,ci_high,verdict,note
+emotional_security,strict,EXP_emotional_security_strict,10,0.03768680276530745,0.016385576691045768,0.05834402133735817,directional_only,
+emotional_security,moderate,EXP_emotional_security_moderate,29,0.06419333246596115,0.041177317954526005,0.08882684882554849,directional_only,
+emotional_security,broad,EXP_emotional_security_broad,45,0.10152984185098513,0.0786561857885162,0.1224947474235504,directional_only,
+protective_commitment,strict,EXP_protective_commitment_strict,0,,,,unmeasurable,zero topics
+protective_commitment,moderate,EXP_protective_commitment_moderate,5,0.16868477879124444,0.14872920413533722,0.18904918442317103,clears_gate,
+protective_commitment,broad,EXP_protective_commitment_broad,14,0.000330773855395039,-0.020547617351930902,0.02376440404117647,no reliable effect,
+enacted_protection,strict,EXP_enacted_protection_strict,1,0.1596908019693486,0.14099617585143623,0.1815888402534488,clears_gate,
+enacted_protection,moderate,EXP_enacted_protection_moderate,3,0.17948035303268117,0.1595602610420858,0.20158401674169582,clears_gate,
+enacted_protection,broad,EXP_enacted_protection_broad,10,0.16935198169148835,0.14722662485815508,0.19210727737507557,clears_gate,
+practical_care,strict,EXP_practical_care_strict,4,0.057260544502072186,0.03531407134455669,0.07701254419530557,directional_only,
+practical_care,moderate,EXP_practical_care_moderate,7,0.07692513412102708,0.055518543658099065,0.09745421978196946,directional_only,
+practical_care,broad,EXP_practical_care_broad,12,0.1040944155405481,0.08299767199565507,0.12467183482877217,directional_only,
+material_security,strict,EXP_material_security_strict,0,,,,unmeasurable,zero topics
+material_security,moderate,EXP_material_security_moderate,5,-0.04017322538513113,-0.06159958164732677,-0.020171576441341817,directional_only,
+material_security,broad,EXP_material_security_broad,7,-0.04213305865409267,-0.06434827553571609,-0.020801026391346265,directional_only,
+appearance,strict,EXP_appearance_strict,6,-0.1423947881190234,-0.16384343677319413,-0.1206884260965613,clears_gate,
+appearance,moderate,EXP_appearance_moderate,7,-0.16741995006358257,-0.1903201171069335,-0.14727923453836542,clears_gate,
+appearance,broad,EXP_appearance_broad,8,-0.22691772399858823,-0.24814305743038262,-0.2081225723275016,clears_gate,
+possessive_security,strict,EXP_possessive_security_strict,3,0.04261914955144852,0.022289804269879653,0.06412710381256817,directional_only,
+possessive_security,moderate,EXP_possessive_security_moderate,5,0.06421602619396194,0.044074454181180736,0.08398090238873011,directional_only,
+possessive_security,broad,EXP_possessive_security_broad,7,0.06175963080588209,0.04279309223351306,0.0821282002990756,directional_only,

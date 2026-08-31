@@ -5,8 +5,9 @@
 # from Notebook 13.**
 #
 # Builds on Notebook 12 (security/care/appearance deep-dive): overlapping tables are
-# **reused**, not recomputed. New pieces: attention waterfall, dose-response curves,
-# conflict×repair, residual Goodreads quadrants, genre/era heatmap, representative examples.
+# **reused**, not recomputed. New pieces: thematic richness, attention waterfall,
+# dose-response curves, residual Goodreads quadrants, genre/era heatmap,
+# representative examples.
 #
 # Stage 10 `06_goodreads_validation` remains the taxonomy-era baseline and is not edited.
 
@@ -27,8 +28,10 @@ for _ in range(6):
     root = root.parent
 sys.path.insert(0, str(root))
 
+from src.stage10_correlation_analysis.analysis import models as mdl
 from src.stage11_refined_construct_analysis.analysis import notebook_helpers as nh
 from src.stage11_refined_construct_analysis.analysis import presentation as pres
+from src.stage11_refined_construct_analysis.analysis import thematic_richness as tr
 
 ctx = nh.setup("14_exploratory_presentation_results")
 cfg = ctx.cfg
@@ -63,6 +66,7 @@ nb12_promise = try_load("12_exploratory_security_care_appearance", "promise_type
 nb12_forest = try_load("12_exploratory_security_care_appearance", "topic_forest_broad_families")
 nb12_presence = try_load("12_exploratory_security_care_appearance", "presence_vs_intensity")
 nb12_danger = try_load("12_exploratory_security_care_appearance", "danger_x_protection_interaction")
+nb12_danger_quad = try_load("12_exploratory_security_care_appearance", "danger_x_protection_quadrants")
 nb12_care_app = try_load("12_exploratory_security_care_appearance", "care_x_appearance_quadrants")
 nb13_effects = try_load("13_final_statistical_tests", "final_all_effects")
 nb11_stab = try_load("11_refined_robustness", "stability_summary")
@@ -118,7 +122,334 @@ ctx.save_figure(fig, "presentation_forest")
 plt.show()
 
 # %% [markdown]
-# ## Section 2 — Where does narrative attention move?
+# ## Section 2 — Are better romances simply about more things?
+#
+# **Exploratory question (not a confirmatory finding):**
+#
+# > Do higher-rated romance novels distribute narrative attention across a broader range
+# > of themes, or are they more concentrated around a few dominant themes?
+#
+# This is different from asking *which* themes differ. Here we ask how *varied* the
+# thematic composition of an entire book is.
+#
+# **Do not count non-zero topics.** Notebook 00 shows the median BERTopic topic is present
+# in ~96.5% of books; longer books also get more chances to touch topics. We instead use:
+#
+# | Measure | Richer book means |
+# | --- | --- |
+# | Shannon topic entropy \(H\) | higher |
+# | Effective number of themes \(e^H\) | higher (presentation-friendly) |
+# | Top-10 concentration | lower |
+# | Rarefied richness (same sentence budget) | higher |
+#
+# Three resolutions: **(A)** fine-grained topics, **(B)** taxonomy leaves (**primary**),
+# **(C)** renormalized presentation constructs (`ATTENTION_THEMES`).
+
+# %%
+work, richness_meta = tr.compute_all_richness(cfg, work, seed=42, length_quantile=0.10)
+print("Richness meta:", richness_meta)
+
+metric_cols = [
+    c
+    for c in (
+        "topic_H",
+        "topic_n_eff",
+        "topic_top10",
+        "taxonomy_H",
+        "taxonomy_n_eff",
+        "taxonomy_top10",
+        "construct_H",
+        "construct_n_eff",
+        "construct_top10",
+        "rare_topic_n_eff",
+        "rare_taxonomy_n_eff",
+        "rare_construct_n_eff",
+        "rarefaction_depth",
+    )
+    if c in work.columns
+]
+richness_book = work[["book_id", "rating_class", "rating_shrunk", "n_sentences"] + metric_cols].copy()
+display(richness_book[metric_cols].describe().round(3))
+ctx.save_table(richness_book, "thematic_richness_book_metrics")
+pd.Series(richness_meta).to_frame("value").to_csv(
+    ctx.tables_dir / "thematic_richness_meta.csv"
+)
+
+# %% [markdown]
+# ### Plot 1 — Effective theme number by rating tier
+#
+# Taxonomy \(e^H\) is the headline exploratory measure; topic and top-10 concentration
+# sit beside it for context.
+
+# %%
+tier_order = ["low_rate", "mid_rate", "high_rate"]
+plot_specs = [
+    ("taxonomy_n_eff", "Taxonomy effective # (primary)"),
+    ("topic_n_eff", "Topic effective #"),
+    ("taxonomy_top10", "Taxonomy top-10 concentration"),
+]
+plot_specs = [(c, t) for c, t in plot_specs if c in work.columns]
+
+fig, axes = plt.subplots(1, len(plot_specs), figsize=(4.2 * max(len(plot_specs), 1), 4.5))
+if len(plot_specs) == 1:
+    axes = [axes]
+for ax, (col, title) in zip(axes, plot_specs):
+    sub = work[["rating_class", col]].dropna()
+    sub = sub[sub["rating_class"].isin(tier_order)]
+    sns.violinplot(
+        data=sub,
+        x="rating_class",
+        y=col,
+        order=tier_order,
+        inner="box",
+        cut=0,
+        ax=ax,
+        color="steelblue",
+    )
+    ax.set_title(title, fontsize=10)
+    ax.set_xlabel("")
+    ax.set_xticklabels(["low", "mid", "high"])
+fig.suptitle("Thematic richness by rating tier (exploratory)", y=1.02)
+fig.tight_layout()
+ctx.save_figure(fig, "richness_by_rating_tier")
+plt.show()
+
+# Tier means for the slide footnote
+tier_means = (
+    work.loc[work["rating_class"].isin(tier_order)]
+    .groupby("rating_class")[
+        [c for c in ("taxonomy_n_eff", "topic_n_eff", "construct_n_eff", "taxonomy_top10") if c in work.columns]
+    ]
+    .mean()
+    .reindex(tier_order)
+)
+display(tier_means.round(2))
+ctx.save_table(tier_means.reset_index(), "thematic_richness_tier_means")
+
+# %% [markdown]
+# ### Cliff's δ (high vs low)
+#
+# Positive δ on \(n_{\mathrm{eff}}\) ⇒ a randomly chosen high-rated book tends to be more
+# thematically diverse. For top-10 concentration the interesting sign is **negative**
+# (less dominated by a few themes).
+
+# %%
+cliff_feats = [f for f in tr.RICHNESS_CLIFF_FEATURES if f in work.columns]
+rich_cliffs = nh.cliffs_delta_table(work, cliff_feats, n_boot=400, seed=42)
+rich_cliffs["note"] = rich_cliffs["feature"].map(
+    lambda f: "lower=richer" if "top10" in str(f) else "higher=richer"
+)
+display(rich_cliffs.round(4))
+ctx.save_table(rich_cliffs, "thematic_richness_cliffs_delta")
+
+# %% [markdown]
+# ### Length-controlled OLS
+#
+# Among books of comparable length, era, and genre, does thematic diversity still track
+# rating? Author-clustered SEs; reliability weights on quality.
+
+# %%
+ols_features = [
+    c
+    for c in (
+        "taxonomy_n_eff",
+        "topic_n_eff",
+        "construct_n_eff",
+        "rare_taxonomy_n_eff",
+    )
+    if c in work.columns
+]
+controls = [c for c in ("n_sentences", "publication_year") if c in work.columns]
+ols_rows = []
+for feat in ols_features:
+    fit = mdl.fit_ols(
+        work,
+        outcome="rating_shrunk",
+        predictors=[feat, *controls],
+        categorical=("genre_group",) if "genre_group" in work.columns else (),
+        cluster="author_id" if "author_id" in work.columns else None,
+        weights="reliability" if "reliability" in work.columns else None,
+        name=f"richness_{feat}",
+    )
+    coef = fit.coefficients[fit.coefficients["term"] == feat].iloc[0]
+    ols_rows.append(
+        {
+            "feature": feat,
+            "coefficient": float(coef["coefficient"]),
+            "std_error": float(coef["std_error"]),
+            "p_value": float(coef["p_value"]),
+            "ci_low": float(coef["ci_low"]),
+            "ci_high": float(coef["ci_high"]),
+            "n_obs": fit.n_obs,
+            "n_clusters": fit.n_clusters,
+            "r_squared": fit.r_squared,
+        }
+    )
+rich_ols = pd.DataFrame(ols_rows)
+display(rich_ols.round(4))
+ctx.save_table(rich_ols, "thematic_richness_ols")
+
+# %% [markdown]
+# ### Rarefaction check
+#
+# Every eligible book contributes exactly the same number of sentences
+# (10th percentile of corpus length). Does taxonomy richness still differ by tier?
+
+# %%
+if "rare_taxonomy_n_eff" in work.columns and richness_meta.get("rarefaction_depth"):
+    depth = richness_meta["rarefaction_depth"]
+    eligible = work.dropna(subset=["rare_taxonomy_n_eff"])
+    print(
+        f"Rarefaction depth={depth:,} sentences; "
+        f"N eligible={len(eligible):,} / {len(work):,}"
+    )
+    rare_tier = (
+        eligible.loc[eligible["rating_class"].isin(tier_order)]
+        .groupby("rating_class")[["taxonomy_n_eff", "rare_taxonomy_n_eff", "rare_topic_n_eff"]]
+        .mean()
+        .reindex(tier_order)
+    )
+    display(rare_tier.round(3))
+    ctx.save_table(rare_tier.reset_index(), "thematic_richness_rarefaction")
+
+    fig, ax = plt.subplots(figsize=(7, 4))
+    x = np.arange(len(tier_order))
+    wbar = 0.35
+    ax.bar(x - wbar / 2, rare_tier["taxonomy_n_eff"], width=wbar, label="full book")
+    ax.bar(x + wbar / 2, rare_tier["rare_taxonomy_n_eff"], width=wbar, label="rarefied")
+    ax.set_xticks(x)
+    ax.set_xticklabels(["low", "mid", "high"])
+    ax.set_ylabel("Mean taxonomy $e^H$")
+    ax.set_title(f"Full vs rarefied taxonomy richness (depth={depth:,})")
+    ax.legend()
+    ctx.save_figure(fig, "richness_rarefaction_by_tier")
+    plt.show()
+else:
+    print("Rarefaction metrics unavailable — skip.")
+
+# %% [markdown]
+# ### Richness vs the right combination
+#
+# Does taxonomy breadth still predict rating after the main thematic drivers enter?
+
+# %%
+drivers = [
+    c
+    for c in (
+        "RAX_h3_emotional_side",
+        "RAX_appearance_grooming",
+        "RAX_external_danger_crisis",
+        "RAX_tenderness_core",
+    )
+    if c in work.columns
+]
+driver_rows = []
+if "taxonomy_n_eff" in work.columns:
+    for name, preds in (
+        ("M1_richness_only", ["taxonomy_n_eff", *controls]),
+        ("M2_richness_plus_drivers", ["taxonomy_n_eff", *drivers, *controls]),
+    ):
+        fit = mdl.fit_ols(
+            work,
+            outcome="rating_shrunk",
+            predictors=preds,
+            categorical=("genre_group",) if "genre_group" in work.columns else (),
+            cluster="author_id" if "author_id" in work.columns else None,
+            weights="reliability" if "reliability" in work.columns else None,
+            name=name,
+        )
+        for _, coef in fit.coefficients.iterrows():
+            if coef["term"] == "const":
+                continue
+            driver_rows.append(
+                {
+                    "model": name,
+                    "term": coef["term"],
+                    "coefficient": float(coef["coefficient"]),
+                    "std_error": float(coef["std_error"]),
+                    "p_value": float(coef["p_value"]),
+                    "ci_low": float(coef["ci_low"]),
+                    "ci_high": float(coef["ci_high"]),
+                    "n_obs": fit.n_obs,
+                    "r_squared": fit.r_squared,
+                }
+            )
+rich_vs_drivers = pd.DataFrame(driver_rows)
+display(rich_vs_drivers.round(4))
+ctx.save_table(rich_vs_drivers, "thematic_richness_vs_drivers")
+
+# %% [markdown]
+# ### Nonlinear check — rating by richness decile
+#
+# Decile 1 = thematically narrowest; 10 = richest. Look for linear rise, inverted-U, or flat.
+
+# %%
+decile_tbl = tr.richness_decile_table(work, "taxonomy_n_eff", "rating_shrunk", n_bins=10)
+if "quality_resid" in work.columns:
+    decile_resid = tr.richness_decile_table(work, "taxonomy_n_eff", "quality_resid", n_bins=10)
+    decile_tbl = pd.concat([decile_tbl, decile_resid], ignore_index=True)
+display(decile_tbl.round(4))
+ctx.save_table(decile_tbl, "thematic_richness_deciles")
+
+if len(decile_tbl):
+    fig, ax = plt.subplots(figsize=(7, 4))
+    for outcome, sub in decile_tbl.groupby("outcome_col"):
+        ax.plot(sub["decile"], sub["outcome_mean"], marker="o", label=outcome)
+    ax.set_xlabel("Taxonomy richness decile (1=narrow … 10=rich)")
+    ax.set_ylabel("Mean outcome")
+    ax.set_title("Rating by thematic-richness decile (exploratory)")
+    ax.legend()
+    ctx.save_figure(fig, "richness_decile_rating")
+    plt.show()
+
+# %% [markdown]
+# ### Security × richness
+#
+# Is the pattern “good novels are richer,” or “breadth **with** sustained emotional
+# reassurance”?
+
+# %%
+quad = tr.richness_security_quadrants(
+    work,
+    richness_col="taxonomy_n_eff",
+    security_col="RAX_h3_emotional_side" if "RAX_h3_emotional_side" in work.columns else "RAX_emotional_reassurance",
+    outcome_col="rating_shrunk",
+)
+display(quad.round(4))
+ctx.save_table(quad, "richness_x_security_quadrants")
+
+if len(quad):
+    mat = quad.pivot(index="security_bin", columns="richness_bin", values="mean_rating")
+    # Prefer a readable order
+    row_order = [r for r in ("low_security", "high_security") if r in mat.index]
+    col_order = [c for c in ("low_richness", "high_richness") if c in mat.columns]
+    mat = mat.reindex(index=row_order, columns=col_order)
+    fig, ax = plt.subplots(figsize=(5.5, 4))
+    sns.heatmap(mat, annot=True, fmt=".3f", cmap="YlOrRd", ax=ax)
+    ax.set_title("Mean rating_shrunk: security × taxonomy richness")
+    ctx.save_figure(fig, "richness_x_security_heatmap")
+    plt.show()
+
+# %% [markdown]
+# ### Exploratory conclusion (thematic richness)
+#
+# From the executed numbers above (exploratory only — do **not** promote to NB13):
+#
+# - Taxonomy effective-theme number differs by rating tier (Cliff’s δ ≈ **+.14**), and
+#   fine-grained topic \(e^H\) is larger still (δ ≈ **+.24**), with top-10 concentration
+#   lower among high-rated books.
+# - After controlling for length, year, and genre, **taxonomy** richness is only
+#   marginal; **rarefied** taxonomy richness is essentially null. So length opportunity
+#   explains much of the leaf-level association.
+# - Once reassurance, appearance, danger, and tenderness enter the regression, richness
+#   no longer carries independent information.
+#
+# **Presentation line:** higher-rated romance differs more in *which* themes receive
+# attention (and in security/care mixtures) than in simply containing “more themes.”
+# Breadth alone is not a confirmatory finding.
+
+# %% [markdown]
+# ## Section 3 — Where does narrative attention move?
 #
 # Mean theme-share difference (high − low). Shares are compositional: more of one theme
 # implies less of something else. This is a **percentage-point** view, not Cliff's δ.
@@ -139,7 +470,7 @@ ctx.save_figure(fig, "attention_waterfall")
 plt.show()
 
 # %% [markdown]
-# ## Section 3 — Security and care (reuse NB12)
+# ## Section 4 — Security and care (reuse NB12)
 #
 # Promise-type comparison and topic forest from Notebook 12, plus topic cards
 # (id, label, taxonomy, words, example sentence).
@@ -170,7 +501,7 @@ display(cards)
 ctx.save_table(cards, "security_care_topic_cards")
 
 # %% [markdown]
-# ## Section 4 — Appearance
+# ## Section 5 — Appearance
 #
 # Refined appearance/grooming vs Stage 10 baseline and NB11 robustness variants.
 
@@ -219,7 +550,7 @@ display(appearance_df)
 ctx.save_table(appearance_df, "appearance_summary")
 
 # %% [markdown]
-# ## Section 5 — Strict → broad sensitivity (reuse NB12)
+# ## Section 6 — Strict → broad sensitivity (reuse NB12)
 
 # %%
 if len(nb12_traj):
@@ -238,10 +569,10 @@ if len(nb12_traj):
     ctx.save_figure(fig, "strict_moderate_broad_trajectories")
     plt.show()
 else:
-    print("NB12 trajectories missing — skip Section 5 plot.")
+    print("NB12 trajectories missing — skip Section 6 plot.")
 
 # %% [markdown]
-# ## Section 6 — Dose-response curves
+# ## Section 7 — Dose-response curves
 #
 # Decile of theme share vs residualized quality (after year/length/genre).
 
@@ -272,49 +603,36 @@ if len(dose):
     plt.show()
 
 # %% [markdown]
-# ## Section 7 — Interactions
+# ## Section 8 — Interactions
 #
-# Reuse danger×protection and care×appearance from NB12; **add** conflict×repair.
+# Reuse NB12 danger×protection (z-scored OLS + median-split 2×2) and care×appearance.
+# Conflict×repair removed: strict `RAX_repair` has no meaningful variation.
 
 # %%
 if len(nb12_danger):
-    display(nb12_danger)
+    display(nb12_danger.round(4))
     ctx.save_table(nb12_danger, "danger_x_protection_reused")
+if len(nb12_danger_quad):
+    display(nb12_danger_quad.round(4))
+    ctx.save_table(nb12_danger_quad, "danger_x_protection_quadrants_reused")
+    # Presentation heatmap: strict t119
+    sub = nb12_danger_quad[nb12_danger_quad["protection_index"] == "strict t119 only"]
+    if len(sub):
+        mat = sub.pivot(index="danger_bin", columns="protection_bin", values="mean_rating")
+        row_order = [r for r in ("lower_danger", "higher_danger") if r in mat.index]
+        col_order = [c for c in ("lower_protection", "higher_protection") if c in mat.columns]
+        mat = mat.reindex(index=row_order, columns=col_order)
+        fig, ax = plt.subplots(figsize=(5.5, 4))
+        sns.heatmap(mat, annot=True, fmt=".3f", cmap="YlOrRd", ax=ax)
+        ax.set_title("Mean rating: danger × protection (strict t119; from NB12)")
+        ctx.save_figure(fig, "danger_x_protection_heatmap_presentation")
+        plt.show()
 if len(nb12_care_app):
     display(nb12_care_app.round(4))
     ctx.save_table(nb12_care_app, "care_x_appearance_reused")
 
-cr = pres.conflict_repair_interaction(work)
-cr_df = pres.interaction_to_frame(cr, name="conflict_x_repair")
-display(cr_df.round(4))
-ctx.save_table(cr_df, "conflict_x_repair_interaction")
-
-# Simple interaction plot: repair effect at low/high conflict (median split)
-if {"RAX_relational_darkness", "RAX_repair", "rating_shrunk"} <= set(work.columns):
-    tmp = work[["RAX_relational_darkness", "RAX_repair", "rating_shrunk"]].dropna().copy()
-    tmp["conflict_hi"] = tmp["RAX_relational_darkness"] >= tmp["RAX_relational_darkness"].median()
-    try:
-        tmp["repair_bin"] = pd.qcut(tmp["RAX_repair"], q=4, duplicates="drop")
-    except ValueError:
-        tmp["repair_bin"] = pd.cut(tmp["RAX_repair"], bins=4)
-    plot_df = (
-        tmp.groupby(["conflict_hi", "repair_bin"], observed=True)["rating_shrunk"]
-        .mean()
-        .reset_index()
-    )
-    fig, ax = plt.subplots(figsize=(7, 4))
-    for flag, label in [(False, "low conflict"), (True, "high conflict")]:
-        sub = plot_df[plot_df["conflict_hi"] == flag]
-        ax.plot(sub["repair_bin"].astype(str), sub["rating_shrunk"], marker="o", label=label)
-    ax.set_xlabel("Repair quartile")
-    ax.set_ylabel("Mean rating_shrunk")
-    ax.set_title("Exploratory: conflict × repair")
-    ax.legend()
-    ctx.save_figure(fig, "conflict_x_repair_plot")
-    plt.show()
-
 # %% [markdown]
-# ## Section 8 — Quality versus reach (refined constructs)
+# ## Section 9 — Quality versus reach (refined constructs)
 #
 # Standardised betas on both channels; quadrant labels.
 
@@ -345,7 +663,7 @@ if len(betas):
     plt.show()
 
 # %% [markdown]
-# ## Section 9 — Residual Goodreads quadrants
+# ## Section 10 — Residual Goodreads quadrants
 #
 # Better/worse rated than expected × more/less reached than expected
 # (after year, length, genre).
@@ -392,7 +710,7 @@ display(contrast_df.round(4))
 ctx.save_table(contrast_df, "residual_quadrant_theme_deltas")
 
 # %% [markdown]
-# ## Section 10 — Genre / era stability heatmap
+# ## Section 11 — Genre / era stability heatmap
 
 # %%
 heat = pres.subgroup_cliffs_heatmap(work, list(pres.HEADLINE_THEMES_FOR_HEATMAP))
@@ -409,7 +727,7 @@ if len(heat):
     plt.show()
 
 # %% [markdown]
-# ## Section 11 — Representative books and sentences
+# ## Section 12 — Representative books and sentences
 #
 # Deterministic 2×2 (high/low theme × high/low rating). Sentences from evidence packets
 # for the construct's mapped topics — fixed seed, no cherry-picking.

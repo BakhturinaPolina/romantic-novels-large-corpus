@@ -120,25 +120,27 @@ Load under `notebook_analysis/12_exploratory_security_care_appearance/tables/`:
 
 1. **What differs most** — forest of final refined features (from NB13 effects table / `nh.cliffs_delta_table`), with δ, CI, coverage, strict/broad flag.
 
-2. **Narrative attention waterfall** — high−low mean share for a fixed mutually exclusive presentation theme set (refined atoms that partition narrative attention reasonably); annotate compositional caveat from NB00.
+2. **Thematic richness (exploratory)** — Shannon / \(e^H\) / top-10 concentration / rarefaction at topic, taxonomy (primary), and refined-construct resolutions; length-controlled OLS; richness vs drivers; security×richness 2×2. Not a confirmatory claim until numbers are read.
 
-3. **Security/care** — presentation layout around reused NB12 promise/topic tables; for each shown topic attach id, label, taxonomy leaf, top words, one deterministic example sentence (from evidence packets / Stage 11 audit artifacts).
+3. **Narrative attention waterfall** — high−low mean share for a fixed mutually exclusive presentation theme set (refined atoms that partition narrative attention reasonably); annotate compositional caveat from NB00.
 
-4. **Appearance** — Stage 10 leaf δ vs refined `RAX_appearance_grooming` + key NB11 robustness variants (word-weighted, singleton authors, genre/era).
+4. **Security/care** — presentation layout around reused NB12 promise/topic tables; for each shown topic attach id, label, taxonomy leaf, top words, one deterministic example sentence (from evidence packets / Stage 11 audit artifacts).
 
-5. **Strict→broad** — reuse NB12 trajectory plot/data.
+5. **Appearance** — Stage 10 leaf δ vs refined `RAX_appearance_grooming` + key NB11 robustness variants (word-weighted, singleton authors, genre/era).
 
-6. **Dose-response** — deciles × residualized quality for: reassurance, appearance, tenderness, danger, explicit sex, protection, couple conflict (where columns exist).
+6. **Strict→broad** — reuse NB12 trajectory plot/data.
 
-7. **Interactions** — reuse danger×protection + reassurance×appearance from NB12; **add** conflict×repair (`DELTA_falling`/`relational darkness` × `RAX_repair` or rising repair share — use existing frame columns) with interaction plot via `mdl.add_interaction` / `fit_ols`.
+7. **Dose-response** — deciles × residualized quality for: reassurance, appearance, tenderness, danger, explicit sex, protection, couple conflict (where columns exist).
 
-8. **Quality vs reach (refined)** — standardized betas for final constructs on both channels; quadrant scatter (presentation remake of NB06 logic on Stage 11 features).
+8. **Interactions** — reuse danger×protection + reassurance×appearance from NB12; **add** conflict×repair (`DELTA_falling`/`relational darkness` × `RAX_repair` or rising repair share — use existing frame columns) with interaction plot via `mdl.add_interaction` / `fit_ols`.
 
-9. **Residual Goodreads quadrants** — residualise outcomes on year/length/genre; median-split 2×2; theme comparisons across stars / hidden gems / popular-but-poor / low-low.
+9. **Quality vs reach (refined)** — standardized betas for final constructs on both channels; quadrant scatter (presentation remake of NB06 logic on Stage 11 features).
 
-10. **Genre/era stability heatmap** — rows = final headline refined themes; columns = `genre_group` × `year_bin` (same pattern as Stage 10 NB08 Check 8); cells = Cliff’s δ. One heatmap only.
+10. **Residual Goodreads quadrants** — residualise outcomes on year/length/genre; median-split 2×2; theme comparisons across stars / hidden gems / popular-but-poor / low-low.
 
-11. **Representative books/sentences** — deterministic 2×2 (high/low theme × high/low rating) patterned after Stage 10 [`07_qualitative_triangulation`](notebooks/07_analysis/_src/07_qualitative_triangulation.py) fixed-seed sampling; pull sentences from Stage 11 evidence packets / qualitative artifacts — no cherry-picking.
+11. **Genre/era stability heatmap** — rows = final headline refined themes; columns = `genre_group` × `year_bin` (same pattern as Stage 10 NB08 Check 8); cells = Cliff’s δ. One heatmap only.
+
+12. **Representative books/sentences** — deterministic 2×2 (high/low theme × high/low rating) patterned after Stage 10 [`07_qualitative_triangulation`](notebooks/07_analysis/_src/07_qualitative_triangulation.py) fixed-seed sampling; pull sentences from Stage 11 evidence packets / qualitative artifacts — no cherry-picking.
 
 Outputs: `notebook_analysis/14_exploratory_presentation_results/{tables,figures}/`.
 

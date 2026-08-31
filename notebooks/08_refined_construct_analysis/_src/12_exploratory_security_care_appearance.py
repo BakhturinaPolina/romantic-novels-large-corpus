@@ -83,17 +83,26 @@ trajectories = ex.trajectory_effects(work_exp, families, test_fn=_test)
 display(trajectories.round(4))
 ctx.save_table(trajectories, "strict_moderate_broad_trajectories")
 
-# Trajectory plot
+# Trajectory plot — skip unmeasurable (0-topic) points; never plot δ=0 for empty sets
 fig, ax = plt.subplots(figsize=(10, 5))
+level_order = ["strict", "moderate", "broad"]
 for family in trajectories["family"].unique():
-    sub = trajectories[trajectories["family"] == family].set_index("level").reindex(["strict", "moderate", "broad"])
-    ax.plot(sub.index, sub["cliffs_delta"], marker="o", label=family)
-    ax.fill_between(
-        range(len(sub)),
-        sub["ci_low"],
-        sub["ci_high"],
-        alpha=0.15,
-    )
+    sub = trajectories[trajectories["family"] == family].set_index("level").reindex(level_order)
+    y = sub["cliffs_delta"].astype(float)
+    if y.isna().all():
+        continue
+    ax.plot(level_order, y, marker="o", label=family)
+    mask = y.notna()
+    if mask.any():
+        lo = sub["ci_low"].astype(float)
+        hi = sub["ci_high"].astype(float)
+        xs = [i for i, m in enumerate(mask) if m]
+        ax.fill_between(
+            xs,
+            lo[mask].to_numpy(),
+            hi[mask].to_numpy(),
+            alpha=0.12,
+        )
 ax.axhline(0, color="gray", lw=1)
 ax.axhline(GATE, color="red", ls="--", lw=0.8)
 ax.axhline(-GATE, color="red", ls="--", lw=0.8)
@@ -122,6 +131,20 @@ ctx.save_table(forest_all, "topic_forest_broad_families")
 # Promise-type comparison table
 promise_rows = []
 for pname, tids in promise_types.items():
+    tids = list(tids or [])
+    if len(tids) == 0:
+        promise_rows.append(
+            {
+                "promise_type": pname,
+                "n_topics": 0,
+                "cliffs_delta": float("nan"),
+                "ci_low": float("nan"),
+                "ci_high": float("nan"),
+                "verdict": "unmeasurable",
+                "note": "zero topics",
+            }
+        )
+        continue
     col = f"EXP_promise_{pname}"
     tmp = work.copy()
     share = ex.topic_set_share(shares, tids)
@@ -135,6 +158,7 @@ for pname, tids in promise_types.items():
             "ci_low": res.get("ci_low"),
             "ci_high": res.get("ci_high"),
             "verdict": res.get("verdict"),
+            "note": "",
         }
     )
 promise_df = pd.DataFrame(promise_rows).sort_values("cliffs_delta", ascending=False)
@@ -166,6 +190,53 @@ ctx.save_figure(fig, "promise_type_forest")
 plt.show()
 
 # %% [markdown]
+# ## Protective-commitment +.210 audit (exploratory)
+#
+# The promise-type **protective_commitment** δ ≈ +.21 uses four deliberately selected
+# topics. Family-level `protective_commitment` is empty at strict (unmeasurable),
+# moderate ≈ +.17, and **broad (~14 topics) collapses to ~0**. Specific promise forms
+# matter; “promises of protection” as a broad category do not.
+#
+# Fractional enacted-protection weights come from H4 Pass-B *sampled* contextual
+# sentences — not a full-topic census. Mixed violence topics (e.g. 87) can contain
+# protective speech without being clean protection topics.
+
+# %%
+pc_tids = list(promise_types.get("protective_commitment") or [])
+pc_audit = ex.topic_level_forest(shares, work, pc_tids, master, test_fn=_test)
+pc_audit.insert(0, "bundle", "promise_protective_commitment")
+# Bundle-level δ for reference
+pc_bundle = promise_df[promise_df["promise_type"] == "protective_commitment"]
+if len(pc_bundle):
+    pc_audit["bundle_cliffs_delta"] = float(pc_bundle.iloc[0]["cliffs_delta"])
+display(pc_audit.round(4))
+ctx.save_table(pc_audit, "protective_commitment_topic_audit")
+
+# Fractional weights with Pass-B caveat
+frac_tbl = (
+    pd.Series(frac_weights, name="W_t_protection")
+    .rename_axis("topic_id")
+    .reset_index()
+    .sort_values("W_t_protection", ascending=False)
+)
+frac_tbl["note"] = "Pass-B sampled sentences; not full-topic census"
+display(frac_tbl.round(4))
+ctx.save_table(frac_tbl, "fractional_protection_weights_table")
+
+# Topic-id overlap: broad enacted protection vs RAX_external_danger_crisis
+broad_prot = list(families.get("enacted_protection", {}).get("broad") or [])
+danger_tids = ex.construct_topic_ids_from_w_tk(cfg, "RAX_external_danger_crisis")
+overlap_df = ex.protection_danger_topic_overlap(broad_prot, danger_tids)
+overlap_df["protection_topic_ids"] = ",".join(str(t) for t in sorted(broad_prot))
+overlap_df["danger_topic_ids"] = ",".join(str(t) for t in danger_tids)
+display(overlap_df)
+ctx.save_table(overlap_df, "protection_danger_topic_overlap")
+print(
+    "Conceptual caveat: even with empty topic-id overlap, mixed violence topics "
+    "receiving fractional protection weight may co-occur with danger discourse."
+)
+
+# %% [markdown]
 # ## Presence vs conditional intensity
 
 # %%
@@ -184,14 +255,21 @@ ctx.save_table(presence_df, "presence_vs_intensity")
 
 # %% [markdown]
 # ## Danger × protection interaction
+#
+# Predictors are **z-scored** so coefficients are readable. The presentation artifact
+# is the median-split 2×2 (does protection help more when danger is high?).
 
 # %%
+import seaborn as sns
+
 interaction_rows = []
-for prot_col, label in [
+quad_frames = []
+prot_specs = [
     ("EXP_enacted_protection_strict", "strict t119 only"),
     ("EXP_enacted_protection_moderate", "moderate + fractional"),
     ("EXP_enacted_protection_broad", "broad enacted"),
-]:
+]
+for prot_col, label in prot_specs:
     if prot_col not in work_exp.columns:
         continue
     tmp = work_exp.copy()
@@ -200,28 +278,44 @@ for prot_col, label in [
         tmp.set_index("book_id") if "book_id" in tmp.columns else tmp,
         protection_col=prot_col,
     )
-    interaction_rows.append({"protection_index": label, **{f"{k}_beta": v.get("beta") for k, v in inter.items()}})
+    row = {"protection_index": label, "protection_col": prot_col}
+    for term in ("z_danger", "z_protection", "z_danger_x_z_protection"):
+        payload = inter.get(term) or {}
+        row[f"{term}_beta"] = payload.get("beta")
+        row[f"{term}_se"] = payload.get("se")
+        row[f"{term}_p"] = payload.get("p")
+    interaction_rows.append(row)
+    q = ex.danger_protection_quadrants(
+        tmp,
+        protection_col=prot_col,
+        protection_label=label,
+    )
+    if len(q):
+        quad_frames.append(q)
+
 interaction_df = pd.DataFrame(interaction_rows)
 display(interaction_df.round(4))
 ctx.save_table(interaction_df, "danger_x_protection_interaction")
 
-# 2×2 median split
-for prot_col in ["EXP_enacted_protection_strict", "EXP_enacted_protection_moderate"]:
-    if prot_col not in work_exp.columns or "RAX_external_danger_crisis" not in work_exp.columns:
-        continue
-    tmp = work_exp.copy()
-    d_med = tmp["RAX_external_danger_crisis"].median()
-    p_med = tmp[prot_col].median()
-    tmp["_d_hi"] = tmp["RAX_external_danger_crisis"] >= d_med
-    tmp["_p_hi"] = tmp[prot_col] >= p_med
-    quad = (
-        tmp.groupby(["_d_hi", "_p_hi"])["rating_shrunk"]
-        .agg(["mean", "count"])
-        .reset_index()
-    )
-    quad["protection_index"] = prot_col
-    display(quad.round(4))
+quad_all = pd.concat(quad_frames, ignore_index=True) if quad_frames else pd.DataFrame()
+display(quad_all.round(4))
+ctx.save_table(quad_all, "danger_x_protection_quadrants")
 
+# Heatmaps for strict and moderate
+for label in ("strict t119 only", "moderate + fractional"):
+    sub = quad_all[quad_all["protection_index"] == label] if len(quad_all) else pd.DataFrame()
+    if sub.empty:
+        continue
+    mat = sub.pivot(index="danger_bin", columns="protection_bin", values="mean_rating")
+    row_order = [r for r in ("lower_danger", "higher_danger") if r in mat.index]
+    col_order = [c for c in ("lower_protection", "higher_protection") if c in mat.columns]
+    mat = mat.reindex(index=row_order, columns=col_order)
+    fig, ax = plt.subplots(figsize=(5.5, 4))
+    sns.heatmap(mat, annot=True, fmt=".3f", cmap="YlOrRd", ax=ax)
+    ax.set_title(f"Mean rating: danger × protection ({label})")
+    safe = label.replace(" ", "_").replace("+", "plus")
+    ctx.save_figure(fig, f"danger_x_protection_heatmap_{safe}")
+    plt.show()
 # %% [markdown]
 # ## Emotional security × appearance quadrants
 
