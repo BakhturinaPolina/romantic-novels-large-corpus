@@ -1,14 +1,23 @@
 {
   "hypothesis": "H3",
-  "n_topics": 3,
+  "n_topics": 12,
   "topic_ids": [
-    6,
-    17,
-    18
+    10,
+    22,
+    27,
+    112,
+    137,
+    140,
+    141,
+    143,
+    191,
+    193,
+    316,
+    345
   ],
-  "n_newly_audited": 3,
-  "n_adjudicated_total": 3,
-  "dry_run": true,
+  "n_newly_audited": 12,
+  "n_adjudicated_total": 90,
+  "dry_run": false,
   "model": "mistralai/Mistral-Nemo-Instruct-2407",
   "outputs": {
     "A": "results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits/h3/lexical.jsonl",

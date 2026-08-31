@@ -1,0 +1,1121 @@
+{
+  "topic_id": 22,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "6.1b",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "money",
+        "pay",
+        "owe",
+        "contract",
+        "cash",
+        "dollars",
+        "bank",
+        "debt",
+        "afford",
+        "paid"
+      ],
+      "KeyBERT": [
+        "paying",
+        "provide",
+        "afford",
+        "paid",
+        "cost",
+        "buying",
+        "begging",
+        "spending",
+        "earned",
+        "behalf"
+      ],
+      "POS": [
+        "insulted",
+        "potential",
+        "century",
+        "percent",
+        "value",
+        "dislike",
+        "unlikely",
+        "increase",
+        "behalf",
+        "decent"
+      ],
+      "MMR": [
+        "afford",
+        "insulted",
+        "earned",
+        "potential",
+        "paid",
+        "century",
+        "percent",
+        "dislike",
+        "dramatically",
+        "increase"
+      ]
+    },
+    "stage08_snippets": [
+      "but you'll be paying us less than you'd be paying at the mercantile, and we'll deliver them right to your door each morning.\" \"",
+      "you’ll get that after i’ve paid a bill or two at tattersall’s,” [person] said. “",
+      "and as soon as i finish that computer program for ted and get paid, i’ll redeem it.”"
+    ],
+    "label_public": "Negotiating Payment and Debts"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’ll pay him.” “",
+        "max_topic_prob": 0.7149182558059692,
+        "normalized_position": 0.017216117216117217,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "You offered to pay me.” “",
+        "max_topic_prob": 0.7083196043968201,
+        "normalized_position": 0.22271062271062272,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Money,” he said. “",
+        "max_topic_prob": 0.6747207045555115,
+        "normalized_position": 0.710989010989011,
+        "tertile": "end",
+        "chapter_index": 12,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I would pay you, obviously.”",
+        "max_topic_prob": 0.6458168029785156,
+        "normalized_position": 0.09633699633699634,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 236
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I have enough money,” he said absently. “",
+        "max_topic_prob": 0.6099614500999451,
+        "normalized_position": 0.8161172161172161,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 112
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’ll give you a thousand pounds to do just that.”",
+        "max_topic_prob": 0.5746312737464905,
+        "normalized_position": 0.6915750915750916,
+        "tertile": "end",
+        "chapter_index": 11,
+        "sentence_index": 169
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "And so because you want to be free of the semel-aten, the price is to help him here at the sepat and try and tempt any of the mates of the yareahs you see here beside me, is that it?”",
+        "max_topic_prob": 0.43877488374710083,
+        "normalized_position": 0.6231612730676651,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 802
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I know my value to you and to my semel.",
+        "max_topic_prob": 0.41453343629837036,
+        "normalized_position": 0.46750468039582777,
+        "tertile": "middle",
+        "chapter_index": 1,
+        "sentence_index": 1594
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Yield.”",
+        "max_topic_prob": 0.40947216749191284,
+        "normalized_position": 0.6565926718373897,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 1052
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "It was the price the priest paid for challenging him.",
+        "max_topic_prob": 0.391349732875824,
+        "normalized_position": 0.5977534100026745,
+        "tertile": "middle",
+        "chapter_index": 2,
+        "sentence_index": 612
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Crane must be shown his value, and his value must be understood by others.",
+        "max_topic_prob": 0.3107343912124634,
+        "normalized_position": 0.056432201123295,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 422
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I can’t afford to risk anything when it comes to you.’",
+        "max_topic_prob": 0.5998576283454895,
+        "normalized_position": 0.940863646032759,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1965
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Penny for your thoughts?’",
+        "max_topic_prob": 0.4852936267852783,
+        "normalized_position": 0.469474579876622,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 2207
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "What ounce of human dignity?",
+        "max_topic_prob": 0.4215965270996094,
+        "normalized_position": 0.7783450329717081,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1201
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "It’s up the bank a bit.”",
+        "max_topic_prob": 0.5744460821151733,
+        "normalized_position": 0.08491803278688524,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 226
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "If you don’t squander it.”",
+        "max_topic_prob": 0.538732647895813,
+        "normalized_position": 0.6226229508196721,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 209
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "I’ll have the contracts for signing up and a supply list for every family.”",
+        "max_topic_prob": 0.49936044216156006,
+        "normalized_position": 0.48131147540983604,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 149
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Filled out vouchers for folks bartering with eggs and milk.",
+        "max_topic_prob": 0.45871973037719727,
+        "normalized_position": 0.8154098360655738,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Not to mention his money.” “",
+        "max_topic_prob": 0.6686599254608154,
+        "normalized_position": 0.10545636576005339,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 19
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "How would you like to pay?”",
+        "max_topic_prob": 0.6439628005027771,
+        "normalized_position": 0.1193058568329718,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Family money,” he continued. “",
+        "max_topic_prob": 0.6428341269493103,
+        "normalized_position": 0.4823961288169531,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 245
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I couldn’t afford half of what I have on my salary.” “",
+        "max_topic_prob": 0.636998176574707,
+        "normalized_position": 0.10729184048056066,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 30
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I’m worth every cent.”",
+        "max_topic_prob": 0.6089487075805664,
+        "normalized_position": 0.11613549140664108,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "It’s three thousand dollars.” “",
+        "max_topic_prob": 0.6000760197639465,
+        "normalized_position": 0.11563490739195728,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 80
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "But I don’t think I can afford to pay their rate.” “",
+        "max_topic_prob": 0.6591399908065796,
+        "normalized_position": 0.5490251885584175,
+        "tertile": "middle",
+        "chapter_index": 32,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "But...can you afford his services?” “",
+        "max_topic_prob": 0.6466637253761292,
+        "normalized_position": 0.7392913049665576,
+        "tertile": "end",
+        "chapter_index": 41,
+        "sentence_index": 41
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "Has Saylor taken monetary advantage of you?”",
+        "max_topic_prob": 0.5929961204528809,
+        "normalized_position": 0.9278497224989327,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 142
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "And I’ll need that credit card back.”",
+        "max_topic_prob": 0.582879900932312,
+        "normalized_position": 0.8558417532375124,
+        "tertile": "end",
+        "chapter_index": 46,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "I don’t have any money.",
+        "max_topic_prob": 0.5405768752098083,
+        "normalized_position": 0.8982496086523409,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "sentence": "They pick up the bill for stuff like that all the time.",
+        "max_topic_prob": 0.5171237587928772,
+        "normalized_position": 0.18144300555002135,
+        "tertile": "begin",
+        "chapter_index": 13,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You'll get your money.” “",
+        "max_topic_prob": 0.7227972745895386,
+        "normalized_position": 0.3791416959426879,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 256
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "Me and you being here together…My God, if he doesn’t want the money, then…..No.” “",
+        "max_topic_prob": 0.6743756532669067,
+        "normalized_position": 0.1182062409588758,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 281
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I require the money.",
+        "max_topic_prob": 0.6708180904388428,
+        "normalized_position": 0.369980023420817,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 123
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "We got our money.” “",
+        "max_topic_prob": 0.6610525846481323,
+        "normalized_position": 0.8909554315629951,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 97
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "You can't get the money they need?”",
+        "max_topic_prob": 0.6566908359527588,
+        "normalized_position": 0.6787214989322863,
+        "tertile": "end",
+        "chapter_index": 40,
+        "sentence_index": 47
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "sentence": "I don’t know, I didn’ t think this was about money.”",
+        "max_topic_prob": 0.639005720615387,
+        "normalized_position": 0.3765929599779569,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 219
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "Our finances are stable.",
+        "max_topic_prob": 0.4896688759326935,
+        "normalized_position": 0.5454148471615721,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 345
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "His latest decision is to sell it off piece by fucking piece to raise cash.”",
+        "max_topic_prob": 0.4713665246963501,
+        "normalized_position": 0.2052401746724891,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "But once those sales were realized, the money would go right into an ever-quickening whirlpool of loss and debt.",
+        "max_topic_prob": 0.45355451107025146,
+        "normalized_position": 0.20655021834061135,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "We weren’t poor by any means and we splurged on ourselves and CJ perhaps more than we should.",
+        "max_topic_prob": 0.44401249289512634,
+        "normalized_position": 0.18078602620087336,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "What’s cost on it?” “",
+        "max_topic_prob": 0.4406891465187073,
+        "normalized_position": 0.042358078602620086,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 70
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "sentence": "It was only natural that I took care of the bills considering I was the accountant in the house.",
+        "max_topic_prob": 0.40096229314804077,
+        "normalized_position": 0.2755458515283843,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "He waves over the waitress, asks for our bill, and promptly gives her some cash to cover it.",
+        "max_topic_prob": 0.5858345031738281,
+        "normalized_position": 0.31276081704370745,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2848
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Then I move on to my thirty-three checks.",
+        "max_topic_prob": 0.4693470597267151,
+        "normalized_position": 0.16593454864924226,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 1511
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I DON’T GET VERY FAR into my leaving-the-house checks.",
+        "max_topic_prob": 0.4561581313610077,
+        "normalized_position": 0.35086755985064794,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3195
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "Leaving-the-house checks.",
+        "max_topic_prob": 0.4378155469894409,
+        "normalized_position": 0.24456402372062377,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 2227
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "And, seriously, who can say no to him when he needs a favor?”",
+        "max_topic_prob": 0.42436325550079346,
+        "normalized_position": 0.5323962222710301,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 4848
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "sentence": "I put down my Kindle and get my thirty-three checks moving.",
+        "max_topic_prob": 0.4239831566810608,
+        "normalized_position": 0.3674500329453108,
+        "tertile": "middle",
+        "chapter_index": 0,
+        "sentence_index": 3346
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Don’t talk to me as if you’re a paid to.”",
+        "max_topic_prob": 0.5766927003860474,
+        "normalized_position": 0.4916971573318323,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 55
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "He said so we both nodded, “Have you both actually got money?”",
+        "max_topic_prob": 0.5674828290939331,
+        "normalized_position": 0.26766113143822123,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 202
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "That equals five thousand, six hundred, fifty two pounds and sixteen pence.”",
+        "max_topic_prob": 0.46208274364471436,
+        "normalized_position": 0.5817618913594146,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "sentence": "Fifty percent of Mr Darryl Rhodes savings will go to Mr Nathaniel Rhodes.”",
+        "max_topic_prob": 0.41255220770835876,
+        "normalized_position": 0.5811989867717422,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "I’ll give you five hundred bucks.” “",
+        "max_topic_prob": 0.7018448710441589,
+        "normalized_position": 0.21796930763740185,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 277
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "There’s a lot of good I can do with that kind of money.” “",
+        "max_topic_prob": 0.6892825365066528,
+        "normalized_position": 0.7374197002141327,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 443
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Frankly I could use the cash more.” “",
+        "max_topic_prob": 0.6750775575637817,
+        "normalized_position": 0.21457887223411848,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 239
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You might owe him that much.”",
+        "max_topic_prob": 0.6678394675254822,
+        "normalized_position": 0.7505353319057816,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 590
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "Fucking money ?” “",
+        "max_topic_prob": 0.6441901922225952,
+        "normalized_position": 0.8700927908636689,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 100
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "sentence": "You’ll need money.”",
+        "max_topic_prob": 0.6406437754631042,
+        "normalized_position": 0.4449500356887937,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 196
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Maybe $10,000 sounds good?",
+        "max_topic_prob": 0.431967556476593,
+        "normalized_position": 0.8319878910191726,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1638
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "He doesn't look like he's buying it. \"",
+        "max_topic_prob": 0.4227543771266937,
+        "normalized_position": 0.42330978809283554,
+        "tertile": "middle",
+        "chapter_index": 4,
+        "sentence_index": 828
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Please don't think of this as bribery, but as a gesture of good will.",
+        "max_topic_prob": 0.4180448055267334,
+        "normalized_position": 0.8314833501513622,
+        "tertile": "end",
+        "chapter_index": 4,
+        "sentence_index": 1637
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Paying our bills.” “",
+        "max_topic_prob": 0.6257150173187256,
+        "normalized_position": 0.6647250299811547,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 106
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Really, fifty bucks says you do.” “",
+        "max_topic_prob": 0.6184473037719727,
+        "normalized_position": 0.5965393181428816,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 264
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "I can’t pay that and pay off all the debt we have!” “",
+        "max_topic_prob": 0.6155941486358643,
+        "normalized_position": 0.6628405002569814,
+        "tertile": "middle",
+        "chapter_index": 26,
+        "sentence_index": 95
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "It’s not big, but you know I’ve got some financial issues.”",
+        "max_topic_prob": 0.6084556579589844,
+        "normalized_position": 0.9021757752270002,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Wants you to keep paying for it.” “",
+        "max_topic_prob": 0.6073466539382935,
+        "normalized_position": 0.8442693164296727,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 82
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "sentence": "Can’t you refuse to pay them?”",
+        "max_topic_prob": 0.6015286445617676,
+        "normalized_position": 0.6724344697618639,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 8
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You’d be saving them money.” “",
+        "max_topic_prob": 0.6370748281478882,
+        "normalized_position": 0.40445936226324625,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 144
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Money?”",
+        "max_topic_prob": 0.6030606031417847,
+        "normalized_position": 0.517621673459602,
+        "tertile": "middle",
+        "chapter_index": 21,
+        "sentence_index": 94
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Care to put your money where your mouth is?” “",
+        "max_topic_prob": 0.6003272533416748,
+        "normalized_position": 0.5543035243346919,
+        "tertile": "middle",
+        "chapter_index": 23,
+        "sentence_index": 221
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "But the money is good.",
+        "max_topic_prob": 0.5623061656951904,
+        "normalized_position": 0.5951810117477823,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "It’s what I can afford.",
+        "max_topic_prob": 0.5288361310958862,
+        "normalized_position": 0.7425077918964277,
+        "tertile": "end",
+        "chapter_index": 31,
+        "sentence_index": 217
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "By the time the cashier got to me, my stall had cost me thirty-three dollars.",
+        "max_topic_prob": 0.494403600692749,
+        "normalized_position": 0.834572045073124,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Yeah, well, you need to get your money’s worth out of me.”",
+        "max_topic_prob": 0.6708952188491821,
+        "normalized_position": 0.643980343980344,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 321
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "His payment is that the three of you will be given a chance to prove your worth to me.",
+        "max_topic_prob": 0.6543242931365967,
+        "normalized_position": 0.09287469287469287,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "His payment will, of course, be the chance for your family to be rich and powerful again.” “",
+        "max_topic_prob": 0.6306076049804688,
+        "normalized_position": 0.07899262899262899,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 22
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "What about your bank accounts?”",
+        "max_topic_prob": 0.6079158782958984,
+        "normalized_position": 0.05601965601965602,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 63
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "Money my family’s made from buying and then picking apart other people’s businesses.",
+        "max_topic_prob": 0.5839647054672241,
+        "normalized_position": 0.030835380835380836,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 16
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "sentence": "I’ll find a way to pay you back if they’re ruined.” “",
+        "max_topic_prob": 0.5814563035964966,
+        "normalized_position": 0.7092137592137592,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 99
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "He’s paid for my services.’",
+        "max_topic_prob": 0.6084405183792114,
+        "normalized_position": 0.7825913355959273,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’ll ask them for money when I get home.’",
+        "max_topic_prob": 0.607040286064148,
+        "normalized_position": 0.7665202635256538,
+        "tertile": "end",
+        "chapter_index": 38,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You owe me that.’",
+        "max_topic_prob": 0.5985615253448486,
+        "normalized_position": 0.728987821920543,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 284
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "But the money they’re contributing isn’t nearly enough.’ ‘",
+        "max_topic_prob": 0.5852724313735962,
+        "normalized_position": 0.7384707526452385,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 72
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Two thousand dollars?’",
+        "max_topic_prob": 0.5782526731491089,
+        "normalized_position": 0.3137352765022959,
+        "tertile": "begin",
+        "chapter_index": 18,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "And I won’t be able to go to the pool for a few days after that because a mining magnate has paid $10 000 for me.’ ‘",
+        "max_topic_prob": 0.5725420713424683,
+        "normalized_position": 0.6041125973248154,
+        "tertile": "middle",
+        "chapter_index": 30,
+        "sentence_index": 128
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.008218903477999398,
+        "n_sentences": 82
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_A",
+        "share": 0.007890519048206139,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_A",
+        "share": 0.005719313682358117,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_A",
+        "share": 0.008283860278889962,
+        "n_sentences": 120
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_B",
+        "share": 0.006373815676141257,
+        "n_sentences": 37
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_B",
+        "share": 0.00927593659942363,
+        "n_sentences": 103
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.007043434512829113,
+        "n_sentences": 42
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.010358860525342212,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0006801795674057951,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_C",
+        "share": 0.0008838802342282621,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.001519756838905775,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0018146624727800628,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0013214403700033035,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_D",
+        "share": 0.0011328235627301047,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0006393861892583121,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_D",
+        "share": 0.0020008575103615837,
+        "n_sentences": 14
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 85
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "6.1b",
+    "taxonomy_main_name": "Generic Business / Institutional Negotiation",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

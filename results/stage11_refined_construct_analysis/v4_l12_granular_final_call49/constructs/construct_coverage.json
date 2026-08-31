@@ -123,7 +123,7 @@
       ]
     },
     "RAX_emotional_security": {
-      "n_topics": 17,
+      "n_topics": 20,
       "gate": "viable",
       "topic_ids": [
         29,
@@ -133,7 +133,10 @@
         56,
         96,
         128,
+        137,
+        141,
         157,
+        193,
         240,
         242,
         247,
@@ -219,9 +222,11 @@
       ]
     },
     "RAX_gift_romance_token": {
-      "n_topics": 0,
-      "gate": "unmeasurable",
-      "topic_ids": []
+      "n_topics": 1,
+      "gate": "thin",
+      "topic_ids": [
+        140
+      ]
     },
     "RAX_housing_security": {
       "n_topics": 1,
@@ -246,9 +251,12 @@
       ]
     },
     "RAX_material_provision": {
-      "n_topics": 0,
-      "gate": "unmeasurable",
-      "topic_ids": []
+      "n_topics": 2,
+      "gate": "thin",
+      "topic_ids": [
+        112,
+        191
+      ]
     },
     "RAX_medical_care": {
       "n_topics": 0,
@@ -275,9 +283,10 @@
       "topic_ids": []
     },
     "RAX_physical_protection": {
-      "n_topics": 1,
+      "n_topics": 2,
       "gate": "thin",
       "topic_ids": [
+        27,
         119
       ]
     },
@@ -422,11 +431,9 @@
       ]
     },
     "RAX_workplace_status": {
-      "n_topics": 1,
-      "gate": "thin",
-      "topic_ids": [
-        112
-      ]
+      "n_topics": 0,
+      "gate": "unmeasurable",
+      "topic_ids": []
     }
   },
   "composites": {
@@ -505,7 +512,7 @@
       ]
     },
     "RAX_h3_emotional_side": {
-      "n_topics": 17,
+      "n_topics": 20,
       "gate": "viable",
       "topic_ids": [
         29,
@@ -515,7 +522,10 @@
         56,
         96,
         128,
+        137,
+        141,
         157,
+        193,
         240,
         242,
         247,
@@ -532,10 +542,12 @@
       ]
     },
     "RAX_h3_material_side": {
-      "n_topics": 1,
-      "gate": "thin",
+      "n_topics": 3,
+      "gate": "viable",
       "topic_ids": [
-        17
+        17,
+        112,
+        191
       ],
       "parts": [
         "RAX_material_provision",
@@ -543,12 +555,11 @@
       ]
     },
     "RAX_social_presentation": {
-      "n_topics": 7,
+      "n_topics": 6,
       "gate": "viable",
       "topic_ids": [
         18,
         77,
-        112,
         171,
         218,
         253,
@@ -695,9 +706,9 @@
       "denominator_topics": 3
     },
     "RLR_emotional_vs_material_security": {
-      "gate": "thin",
-      "numerator_topics": 17,
-      "denominator_topics": 1
+      "gate": "viable",
+      "numerator_topics": 20,
+      "denominator_topics": 3
     },
     "RLR_protection_vs_control": {
       "gate": "viable",

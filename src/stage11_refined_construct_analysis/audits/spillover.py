@@ -39,11 +39,18 @@ H4_PROMOTE_FUNCTIONS = {
     "social_legal_external_protection",
 }
 
+H3_PROMOTE_FUNCTIONS = {
+    "money_provision",
+    "housing_provision",
+}
+
 
 def spillover_prompt_path(cfg: Stage11Config, hypothesis: Optional[str] = None) -> Path:
     hyp = str(hypothesis or "").upper()
     if hyp == "H4":
         configured = cfg.section("spillover", "h4_prompt", default=None)
+    elif hyp == "H3":
+        configured = cfg.section("spillover", "h3_prompt", default=None)
     else:
         configured = cfg.section("spillover", "prompt", default=None)
     if configured:
@@ -53,6 +60,8 @@ def spillover_prompt_path(cfg: Stage11Config, hypothesis: Optional[str] = None) 
         return path
     if hyp == "H4":
         return cfg.root / "configs" / "stage11" / "prompts" / "h4_spillover_triage.yaml"
+    if hyp == "H3":
+        return cfg.root / "configs" / "stage11" / "prompts" / "h3_spillover_triage.yaml"
     return cfg.root / "configs" / "stage11" / "prompts" / "spillover_triage.yaml"
 
 
@@ -139,40 +148,157 @@ def build_h1_spillover_candidates(
     return rows[:max_n]
 
 
+def _proto_pattern(token: str) -> re.Pattern[str]:
+    """Word-boundary regex for a lexical prototype (supports multi-word phrases)."""
+    parts = [re.escape(p) for p in str(token).lower().split() if p]
+    if not parts:
+        return re.compile(r"(?!)")
+    return re.compile(r"\b" + r"\s+".join(parts) + r"\b")
+
+
+def _lexical_hits(blob: str, prototypes: Sequence[str]) -> List[str]:
+    hits: List[str] = []
+    for p in prototypes:
+        p = str(p).strip().lower()
+        if not p:
+            continue
+        if _proto_pattern(p).search(blob):
+            hits.append(p)
+    return hits
+
+
+def _load_already_material_topic_ids(cfg: Stage11Config) -> Set[int]:
+    """Strict S8/S9 topic IDs already in construct coverage (skip LLM triage bill)."""
+    out: Set[int] = set()
+    cov_path = cfg.output_path("constructs_dir") / "construct_coverage.json"
+    if cov_path.exists():
+        try:
+            cov = json.loads(cov_path.read_text(encoding="utf-8"))
+            atoms = cov.get("atoms") or cov
+            for key in ("RAX_material_provision", "RAX_housing_security"):
+                block = atoms.get(key) or {}
+                for tid in block.get("topic_ids") or []:
+                    out.add(int(tid))
+            # Composites may nest under a different key
+            composites = cov.get("composites") or {}
+            for key in ("RAX_h3_material_side",):
+                block = composites.get(key) or {}
+                for tid in block.get("topic_ids") or []:
+                    out.add(int(tid))
+        except Exception as exc:
+            LOGGER.warning("Could not read already-material from coverage: %s", exc)
+    if not out:
+        # Fallback: master security_code in {S8, S9} with family_strict H3
+        master_path = cfg.output_path("constructs_dir") / "master_annotations.parquet"
+        if master_path.exists():
+            try:
+                cols = ["topic_id", "security_code"]
+                master = pd.read_parquet(master_path)
+                use = [c for c in cols if c in master.columns]
+                if "topic_id" in use and "security_code" in use:
+                    codes = master["security_code"].astype(str).str.upper()
+                    mask = codes.isin({"S8", "S9"})
+                    if "h3_strict" in master.columns:
+                        mask = mask & (master["h3_strict"].astype(float) >= 0.70)
+                    out.update(int(t) for t in master.loc[mask, "topic_id"].tolist())
+            except Exception as exc:
+                LOGGER.warning("Could not read already-material from master: %s", exc)
+    return out
+
+
 def build_h3_spillover_candidates(
     cfg: Stage11Config,
     lookup: pd.DataFrame,
     manifest: Mapping[str, Any],
 ) -> List[Dict[str, Any]]:
-    """Triage pool = configured spillover_discovery leaves (already lookup-derived)."""
-    discovery = _discovery_ids(manifest)
-    leaf_of = {
-        int(r.topic_id): str(r.taxonomy_main_id) for r in lookup.itertuples()
+    """Full-corpus multi-signal H3 material-provision candidate generation."""
+    discovery_leaves = {
+        str(x)
+        for x in (
+            cfg.section("hypotheses", "H3").get("spillover_discovery_leaves") or []
+        )
     }
-    rows = []
-    for tid in sorted(discovery):
-        row = lookup.loc[lookup["topic_id"] == tid]
-        if row.empty:
+    tags_want = {
+        str(x).lower()
+        for x in cfg.section(
+            "spillover",
+            "h3_mechanic_tags",
+            default=["economic_power", "domestic_care"],
+        )
+    }
+    core_protos = [
+        str(x).lower()
+        for x in cfg.section("spillover", "h3_lexical_prototypes", default=[])
+    ]
+    weak_protos = [
+        str(x).lower()
+        for x in cfg.section("spillover", "h3_weak_lexical_prototypes", default=[])
+    ]
+    max_n = int(cfg.section("spillover", "h3_max_candidates", default=40))
+    already_material = _load_already_material_topic_ids(cfg)
+
+    rows: List[Dict[str, Any]] = []
+    for r in lookup.itertuples():
+        tid = int(r.topic_id)
+        if tid < 0 or tid in already_material:
             continue
-        r = row.iloc[0]
-        secondary = r.get("taxonomy_secondary_id")
+        main = str(getattr(r, "taxonomy_main_id", "") or "")
+        secondary = getattr(r, "taxonomy_secondary_id", None)
         secondary_s = (
             str(secondary)
             if secondary is not None and str(secondary) not in ("", "None", "nan")
             else None
         )
-        rows.append(
+        reasons: List[str] = []
+        types: Set[str] = set()
+        tags = _parse_mechanic_tags(getattr(r, "taxonomy_mechanic_tags", None))
+        if tags & tags_want:
+            reasons.append("mechanic:" + ",".join(sorted(tags & tags_want)))
+            types.add("mechanic")
+        if main in discovery_leaves:
+            reasons.append(f"primary_leaf={main}")
+            types.add("leaf")
+        if secondary_s and secondary_s in discovery_leaves:
+            reasons.append(f"secondary_leaf={secondary_s}")
+            types.add("leaf")
+        blob = _lookup_text_blob(
             {
-                "topic_id": int(tid),
-                "taxonomy_main_id": leaf_of.get(tid),
-                "taxonomy_secondary_id": secondary_s,
-                "sexual_explicitness": r.get("sexual_explicitness"),
-                "sexual_function": r.get("sexual_function"),
-                "heuristic_notes": f"spillover_discovery_leaf={leaf_of.get(tid)}",
-                "source": "h3_spillover_discovery_leaves",
+                "label": getattr(r, "label", None),
+                "scene_summary": getattr(r, "scene_summary", None),
+                "all_keywords": getattr(r, "all_keywords", None),
+                "keywords": getattr(r, "keywords", None),
+                "label_rationale": getattr(r, "label_rationale", None),
             }
         )
-    return rows
+        core_hits = _lexical_hits(blob, core_protos)
+        if core_hits:
+            reasons.append("proto:" + ",".join(core_hits[:6]))
+            types.add("proto")
+        weak_hits = _lexical_hits(blob, weak_protos)
+        # Weak lexical alone does not qualify; needs another signal type.
+        if weak_hits and types:
+            reasons.append("weak_proto:" + ",".join(weak_hits[:4]))
+            types.add("weak_proto")
+        if not types:
+            continue
+        # Weak-only should never reach here; if somehow only weak_proto, drop.
+        if types == {"weak_proto"}:
+            continue
+        rows.append(
+            {
+                "topic_id": tid,
+                "taxonomy_main_id": main,
+                "taxonomy_secondary_id": secondary_s,
+                "sexual_explicitness": getattr(r, "sexual_explicitness", None),
+                "sexual_function": getattr(r, "sexual_function", None),
+                "heuristic_notes": "; ".join(reasons),
+                "n_signals": len(types),
+                "source": "h3_full_corpus_material_discovery",
+            }
+        )
+
+    rows.sort(key=lambda x: (-int(x.get("n_signals") or 0), int(x["topic_id"])))
+    return rows[:max_n]
 
 
 def _parse_mechanic_tags(raw: object) -> Set[str]:
@@ -425,6 +551,44 @@ def _dry_run_spillover(topic_id: int, hypothesis: str, flags: Mapping[str, Any])
             "rationale": f"dry-run spillover {hypothesis}",
             "dry_run": True,
         }
+    if hypothesis == "H3":
+        n_sig = int(flags.get("n_signals") or 0)
+        moneyish = any(
+            tok in notes
+            for tok in (
+                "money",
+                "bills",
+                "debt",
+                "pay for",
+                "financial",
+                "salary",
+                "shelter",
+                "housing",
+                "rent",
+                "economic_power",
+            )
+        )
+        promote = n_sig >= 2 or moneyish or "proto:" in notes
+        if promote and moneyish:
+            func = "money_provision"
+        elif promote and ("shelter" in notes or "housing" in notes):
+            func = "housing_provision"
+        elif promote:
+            func = "money_provision"
+        else:
+            func = "off_target"
+        return {
+            "topic_id": int(topic_id),
+            "relationship_directed_transfer": "unclear" if promote else "no",
+            "provision_function": func,
+            "main_couple_target": "unclear",
+            "exclude_reason": "none" if promote else "objects_no_provision",
+            "promote_to_full_H3_audit": promote,
+            "include": promote,
+            "supporting_cues": [notes[:120]] if notes else [],
+            "rationale": f"dry-run spillover {hypothesis}",
+            "dry_run": True,
+        }
     include = int(topic_id) % 2 == 1
     return {
         "topic_id": int(topic_id),
@@ -445,6 +609,15 @@ def _h4_should_promote(parsed: Mapping[str, Any]) -> bool:
     rule = (threat in {"yes", "unclear"} and action in {"yes", "unclear"}) or (
         func in H4_PROMOTE_FUNCTIONS
     )
+    return flagged or rule
+
+
+def _h3_material_should_promote(parsed: Mapping[str, Any]) -> bool:
+    """Promotion rule for dedicated H3 material-provision spillover schema."""
+    flagged = bool(parsed.get("promote_to_full_H3_audit", False))
+    transfer = str(parsed.get("relationship_directed_transfer") or "").lower()
+    func = str(parsed.get("provision_function") or "").lower()
+    rule = transfer in {"yes", "unclear"} and func in H3_PROMOTE_FUNCTIONS
     return flagged or rule
 
 
@@ -519,6 +692,8 @@ def run_spillover_triage(
         parsed = result["parsed"]
         if hyp == "H4":
             include = _h4_should_promote(parsed)
+        elif hyp == "H3":
+            include = _h3_material_should_promote(parsed)
         else:
             include = bool(parsed.get("include", False))
         row = {
@@ -527,7 +702,8 @@ def run_spillover_triage(
             "include": include,
             "confidence": parsed.get("confidence"),
             "suggested_code_family": parsed.get("suggested_code_family")
-            or parsed.get("function"),
+            or parsed.get("function")
+            or parsed.get("provision_function"),
             "rationale": parsed.get("rationale"),
             "candidate": dict(cand),
             "model": result["model"],
@@ -548,7 +724,7 @@ def run_spillover_triage(
             rate * 60,
         )
 
-    return {
+    payload: Dict[str, Any] = {
         "hypothesis": hyp,
         "n_candidates": len(candidates),
         "n_promoted": len(promoted),
@@ -558,6 +734,9 @@ def run_spillover_triage(
         "model": model,
         "prompt_version": str(prompt.get("version")),
     }
+    if hyp == "H3":
+        payload["already_material_topic_ids"] = sorted(_load_already_material_topic_ids(cfg))
+    return payload
 
 
 def write_spillover_result(cfg: Stage11Config, payload: Mapping[str, Any]) -> Path:

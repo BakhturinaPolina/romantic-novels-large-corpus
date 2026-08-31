@@ -420,28 +420,28 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S6",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H3",
+    "review_status":"audited",
     "current_taxonomy_id":"6.5",
     "current_taxonomy_name":"Institutional Settings & Procedures",
     "secondary_id":null,
     "secondary_name":null,
     "proposed_constructs":[
-
+      "care_illness_crisis"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "weighted_weight":0.4167,
+    "family_proportions_json":"{\"H3\": {\"S6\": 0.4167, \"S7\": 0.0833, \"S8\": 0.0417}}",
+    "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -953,14 +953,14 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S8",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H3",
+    "review_status":"audited",
     "current_taxonomy_id":"6.1b",
     "current_taxonomy_name":"Generic Business \/ Institutional Negotiation",
     "secondary_id":null,
@@ -969,12 +969,12 @@
 
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "weighted_weight":0.6666666667,
+    "family_proportions_json":"{\"H3\": {\"S7\": 0.047619047619047616, \"S8\": 0.6666666666666666, \"S9\": 0.1111111111111111, \"S12\": 0.047619047619047616}}",
+    "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -1180,30 +1180,31 @@
     "unclear_prob":0.34,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S0",
+    "security_code":"S7",
     "care_protection_code":"H4_5",
     "darkness_code":"D0",
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3,H5",
+    "lexical_context_agreement":"H5",
     "review_status":"audited",
     "current_taxonomy_id":"7.3",
     "current_taxonomy_name":"Risk, Danger & External Crises",
     "secondary_id":"8.5",
     "secondary_name":"Movement, Transit & Spatial Transition",
     "proposed_constructs":[
+      "Physical Protection",
       "movement_transit_spatial_transition"
     ],
     "adjudication_actions":[
-      "H3:EXCLUDE_FROM_HYPOTHESIS",
+      "H3:RENAME",
       "H4:KEEP",
       "H5:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0909090909,
-    "family_proportions_json":"{\"H3\": {}, \"H4\": {\"H4_1\": 0.09090909090909091, \"H4_5\": 0.09090909090909091, \"H4_5a\": 0.8181818181818182, \"H4_9\": 0.09090909090909091}, \"H5\": {\"D3\": 0.1, \"D5\": 0.1}}",
-    "family_strict_json":"{\"H3\": 0.0, \"H4\": 0.0, \"H5\": 0.0}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {\"S1\": 0.09090909090909091, \"S7\": 0.045454545454545456}, \"H4\": {\"H4_1\": 0.09090909090909091, \"H4_5\": 0.09090909090909091, \"H4_5a\": 0.8181818181818182, \"H4_9\": 0.09090909090909091}, \"H5\": {\"D3\": 0.1, \"D5\": 0.1}}",
+    "family_strict_json":"{\"H3\": 1.0, \"H4\": 0.0, \"H5\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -5020,27 +5021,27 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S15",
+    "security_code":"S8",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"6.4",
     "current_taxonomy_name":"Economic Precarity, Security & Dependency",
     "secondary_id":"6.2",
     "secondary_name":"Work & Professional Identity",
     "proposed_constructs":[
-      "workplace_status"
+
     ],
     "adjudication_actions":[
       "H3:KEEP"
     ],
     "strict_weight":1.0,
-    "weighted_weight":0.7,
-    "family_proportions_json":"{\"H3\": {\"S8\": 0.1, \"S11\": 0.05, \"S15\": 0.7}}",
+    "weighted_weight":0.7777777778,
+    "family_proportions_json":"{\"H3\": {\"S8\": 0.7777777777777778, \"S11\": 0.05555555555555556, \"S12\": 0.05555555555555556}}",
     "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
@@ -6098,28 +6099,29 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"6.2",
     "current_taxonomy_name":"Work & Professional Identity",
     "secondary_id":"5.2",
     "secondary_name":"Friends, Allies & Social Circles",
     "proposed_constructs":[
-
+      "emotional support",
+      "reassurance"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {\"S2\": 0.45}}",
+    "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -6233,29 +6235,29 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":"S0",
+    "security_code":"S14",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H3",
+    "lexical_context_agreement":"",
     "review_status":"audited",
     "current_taxonomy_id":"6.6",
     "current_taxonomy_name":"Material Glamour & Consumption",
     "secondary_id":"4.2",
     "secondary_name":"Ongoing Courtship & Everyday Relational Bonding",
     "proposed_constructs":[
-      "material_glamour_consumption",
-      "ongoing_courtship_everyday_bonding"
+      "romantic_gifts",
+      "token_of_affection"
     ],
     "adjudication_actions":[
-      "H3:KEEP"
+      "H3:RENAME"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{\"H3\": {\"S7\": 0.05}}",
-    "family_strict_json":"{\"H3\": 0.0}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {\"S1\": 0.42857142857142855}}",
+    "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -6278,28 +6280,29 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S1",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"6.3",
     "current_taxonomy_name":"Shared Workplaces & Professional Interaction",
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "emotional support",
+      "reassurance"
     ],
     "adjudication_actions":[
-
+      "H3:RENAME"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {\"S4\": 0.2625709772109985}}",
+    "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -6366,28 +6369,29 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S2",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "lexical_context_agreement":"H3",
+    "review_status":"audited",
     "current_taxonomy_id":"5.1",
     "current_taxonomy_name":"Family, Kinship & Parenthood",
     "secondary_id":"3.2",
     "secondary_name":"Negative Emotions & Distress",
     "proposed_constructs":[
-
+      "feeling connected",
+      "sense of belonging"
     ],
     "adjudication_actions":[
-
+      "H3:KEEP"
     ],
     "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "weighted_weight":0.649,
+    "family_proportions_json":"{\"H3\": {\"S2\": 0.649, \"S9\": 0.568, \"S7\": 0.497, \"S12\": 0.534, \"S3\": 0.533, \"S8\": 0.419}}",
+    "family_strict_json":"{\"H3\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -8498,28 +8502,29 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S8",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
     "lexical_context_agreement":"",
-    "review_status":"unaudited",
+    "review_status":"audited",
     "current_taxonomy_id":"6.2",
     "current_taxonomy_name":"Work & Professional Identity",
     "secondary_id":"6.4",
     "secondary_name":"Economic Precarity, Security & Dependency",
     "proposed_constructs":[
-
+      "financial security",
+      "financial stability"
     ],
     "adjudication_actions":[
-
+      "H3:RENAME"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{}",
-    "family_strict_json":"{}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H3\": {\"S3\": 0.05920705199241639, \"S4\": 0.1260166281449146, \"S5\": 0.1106191466189088, \"S8\": 0.1312215926148865, \"S9\": 0.05920705199241639}}",
+    "family_strict_json":"{\"H3\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -8586,13 +8591,13 @@
     "unclear_prob":1.0,
     "intimacy_code":"I0",
     "hea_code":null,
-    "security_code":"S0",
+    "security_code":"S1",
     "care_protection_code":"H4_0",
     "darkness_code":null,
     "arc_role":null,
     "mixed_topic":false,
     "mixed_hypotheses":"",
-    "lexical_context_agreement":"H1,H3,H4",
+    "lexical_context_agreement":"H1,H4",
     "review_status":"audited",
     "current_taxonomy_id":"4.6",
     "current_taxonomy_name":"Emotional Safety, Reassurance & Caretaking",
@@ -8600,19 +8605,20 @@
     "secondary_name":"Family, Kinship & Parenthood",
     "proposed_constructs":[
       "Caretaking & Nurturing",
+      "Emotional Reassurance",
       "Emotional Safety & Reassurance",
       "Family\/Kinship Bonds",
       "off_target"
     ],
     "adjudication_actions":[
       "H1:KEEP",
-      "H3:KEEP",
+      "H3:RENAME",
       "H4:KEEP"
     ],
-    "strict_weight":0.0,
-    "weighted_weight":0.0,
-    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S6\": 0.1, \"S1\": 0.15, \"S5\": 0.05}, \"H4\": {\"H4_2\": 0.05, \"H4_4\": 0.05}}",
-    "family_strict_json":"{\"H1\": 0.0, \"H3\": 0.0, \"H4\": 0.0}",
+    "strict_weight":1.0,
+    "weighted_weight":1.0,
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S4\": 0.05263157894736842, \"S9\": 0.05263157894736842, \"S12\": 0.05263157894736842, \"S14\": 0.05263157894736842}, \"H4\": {\"H4_2\": 0.05, \"H4_4\": 0.05}}",
+    "family_strict_json":"{\"H1\": 0.0, \"H3\": 1.0, \"H4\": 0.0}",
     "manual_review_required":false
   },
   {
@@ -13401,7 +13407,7 @@
     "unclear_prob":1.0,
     "intimacy_code":null,
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S0",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":"Conflict",
@@ -13414,15 +13420,17 @@
     "secondary_id":"7.1",
     "secondary_name":"Interpersonal Non-Romantic Conflict",
     "proposed_constructs":[
-
+      "Breakup Threats",
+      "Conflict",
+      "Distance"
     ],
     "adjudication_actions":[
-
+      "H3:RENAME"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H6\": {}}",
-    "family_strict_json":"{\"H6\": 1.0}",
+    "family_proportions_json":"{\"H3\": {\"S7\": 0.023255813953488372, \"S11\": 0.023255813953488372}, \"H6\": {}}",
+    "family_strict_json":"{\"H3\": 0.0, \"H6\": 1.0}",
     "manual_review_required":false
   },
   {
@@ -14569,7 +14577,7 @@
     "unclear_prob":1.0,
     "intimacy_code":"I9",
     "hea_code":null,
-    "security_code":null,
+    "security_code":"S14",
     "care_protection_code":null,
     "darkness_code":null,
     "arc_role":null,
@@ -14582,17 +14590,20 @@
     "secondary_id":"6.4",
     "secondary_name":"Economic Precarity, Security & Dependency",
     "proposed_constructs":[
+      "Gift giving",
+      "Romantic tokens",
       "coercive sexual contact",
       "economic vulnerability exploitation",
       "unwanted advances under dependency"
     ],
     "adjudication_actions":[
-      "H1:RETAXONOMIZE"
+      "H1:RETAXONOMIZE",
+      "H3:RENAME"
     ],
     "strict_weight":1.0,
     "weighted_weight":1.0,
-    "family_proportions_json":"{\"H1\": {}}",
-    "family_strict_json":"{\"H1\": 1.0}",
+    "family_proportions_json":"{\"H1\": {}, \"H3\": {\"S1\": 0.47764667868614197, \"S3\": 0.4956766963005066, \"S7\": 0.45069992542266846}}",
+    "family_strict_json":"{\"H1\": 1.0, \"H3\": 0.0}",
     "manual_review_required":true
   },
   {

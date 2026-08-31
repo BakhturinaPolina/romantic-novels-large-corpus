@@ -1,0 +1,164 @@
+{
+  "topic_id": 10,
+  "label": "Doctor Gives Medical Instructions",
+  "taxonomy_main_id": "6.5",
+  "taxonomy_main_name": "Institutional Settings & Procedures",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "doctor",
+      "hospital",
+      "nurse",
+      "doctors",
+      "doc",
+      "dr",
+      "medical",
+      "heal",
+      "healer",
+      "nurses"
+    ],
+    "KeyBERT": [
+      "bedside",
+      "dr",
+      "appointment",
+      "nods",
+      "assistant",
+      "heal",
+      "impatiently",
+      "mister",
+      "kindly",
+      "treated"
+    ],
+    "POS": [
+      "treatment",
+      "internal",
+      "appointment",
+      "benefit",
+      "meantime",
+      "instructions",
+      "session",
+      "concept",
+      "blows",
+      "scenario"
+    ],
+    "MMR": [
+      "treatment",
+      "appointment",
+      "guarantee",
+      "instructions",
+      "dr",
+      "snaps",
+      "provide",
+      "scenario",
+      "assistant",
+      "departure"
+    ]
+  },
+  "stage08_snippets": [
+    "i’ll go say good night to the girls and tell the nurses that you’re in here.”",
+    "tina, why don’t you come back and we’ll get your ems going.",
+    "but i’ll go with appendicitis anyway."
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.06941923774954628,
+      "max_topic_prob": 0.6884831786155701,
+      "sentence": "I’m not going to the doctor and that’s the end of it.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.47844827586206895,
+      "max_topic_prob": 0.6783765554428101,
+      "sentence": "She’s in the hospital.”"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.6431488203266787,
+      "max_topic_prob": 0.6755812168121338,
+      "sentence": "I made an appointment before leaving the hospital."
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.046846642468239566,
+      "max_topic_prob": 0.6627708673477173,
+      "sentence": "Who’s the doctor?"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.5788339382940109,
+      "max_topic_prob": 0.6623871326446533,
+      "sentence": "I have to get back to the hospital."
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "middle",
+      "normalized_position": 0.36637931034482757,
+      "max_topic_prob": 0.6419112682342529,
+      "sentence": "What hospital?”"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.9665574900879159,
+      "max_topic_prob": 0.6506116390228271,
+      "sentence": "I’ll doctor your wounds.”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "end",
+      "normalized_position": 0.8510601620410274,
+      "max_topic_prob": 0.632543683052063,
+      "sentence": "There had been a parade of doctors in the room, but he was past the point of caring who came and went. “"
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5738665747284951,
+      "max_topic_prob": 0.5303409099578857,
+      "sentence": "Someone must have answered that prayer—who it could have been, I do not know—because they finally stopped healing.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.2121186002413377,
+      "max_topic_prob": 0.521111786365509,
+      "sentence": "Anyway, he is healing."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.23590760213756248,
+      "max_topic_prob": 0.519778847694397,
+      "sentence": "Make sure they suffer first,” another had cackled. “"
+    },
+    {
+      "sid": "BOOK_002_6",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.11282537493535598,
+      "max_topic_prob": 0.5127303600311279,
+      "sentence": "But all too soon, disease struck her."
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

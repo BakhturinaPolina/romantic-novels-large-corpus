@@ -79,6 +79,10 @@ Lean checklist PDF for external protection + protective commitment + possession/
 .venv/bin/python scripts/stage11/export_h4_manual_freeze_pdf.py
 # After filling decisions → h4_manual_freeze.json with frozen=true:
 bash scripts/stage11/apply_h4_manual_freeze.sh
+
+# H3 emotional vs material dichotomy checklist (lean PDF):
+.venv/bin/python scripts/stage11/export_h3_manual_freeze_pdf.py
+# Outputs: stage11_h3_manual_freeze.pdf/.md + h3_manual_freeze_decisions.json
 ```
 
 Execute notebooks (outputs saved for GitHub):

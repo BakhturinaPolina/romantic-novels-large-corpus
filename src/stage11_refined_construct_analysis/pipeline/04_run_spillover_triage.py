@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cheap Nemo spillover triage for H1, H3, and H4 (full-corpus protection discovery)."""
+"""Cheap Nemo spillover triage for H1, H3 (material discovery), and H4."""
 
 from __future__ import annotations
 

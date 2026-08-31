@@ -1,0 +1,164 @@
+{
+  "topic_id": 22,
+  "label": "Negotiating Payment and Debts",
+  "taxonomy_main_id": "6.1b",
+  "taxonomy_main_name": "Generic Business / Institutional Negotiation",
+  "taxonomy_secondary_id": null,
+  "taxonomy_secondary_name": null,
+  "exhaustive": false,
+  "representations": {
+    "Main": [
+      "money",
+      "pay",
+      "owe",
+      "contract",
+      "cash",
+      "dollars",
+      "bank",
+      "debt",
+      "afford",
+      "paid"
+    ],
+    "KeyBERT": [
+      "paying",
+      "provide",
+      "afford",
+      "paid",
+      "cost",
+      "buying",
+      "begging",
+      "spending",
+      "earned",
+      "behalf"
+    ],
+    "POS": [
+      "insulted",
+      "potential",
+      "century",
+      "percent",
+      "value",
+      "dislike",
+      "unlikely",
+      "increase",
+      "behalf",
+      "decent"
+    ],
+    "MMR": [
+      "afford",
+      "insulted",
+      "earned",
+      "potential",
+      "paid",
+      "century",
+      "percent",
+      "dislike",
+      "dramatically",
+      "increase"
+    ]
+  },
+  "stage08_snippets": [
+    "but you'll be paying us less than you'd be paying at the mercantile, and we'll deliver them right to your door each morning.\" \"",
+    "you’ll get that after i’ve paid a bill or two at tattersall’s,” [person] said. “",
+    "and as soon as i finish that computer program for ted and get paid, i’ll redeem it.”"
+  ],
+  "representative_sentences": [
+    {
+      "sid": "BOOK_001_1",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.017216117216117217,
+      "max_topic_prob": 0.7149182558059692,
+      "sentence": "I’ll pay him.” “"
+    },
+    {
+      "sid": "BOOK_001_2",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.22271062271062272,
+      "max_topic_prob": 0.7083196043968201,
+      "sentence": "You offered to pay me.” “"
+    },
+    {
+      "sid": "BOOK_001_3",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.710989010989011,
+      "max_topic_prob": 0.6747207045555115,
+      "sentence": "Money,” he said. “"
+    },
+    {
+      "sid": "BOOK_001_4",
+      "cell": "CELL_B",
+      "tertile": "begin",
+      "normalized_position": 0.09633699633699634,
+      "max_topic_prob": 0.6458168029785156,
+      "sentence": "I would pay you, obviously.”"
+    },
+    {
+      "sid": "BOOK_001_5",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.8161172161172161,
+      "max_topic_prob": 0.6099614500999451,
+      "sentence": "I have enough money,” he said absently. “"
+    },
+    {
+      "sid": "BOOK_001_6",
+      "cell": "CELL_B",
+      "tertile": "end",
+      "normalized_position": 0.6915750915750916,
+      "max_topic_prob": 0.5746312737464905,
+      "sentence": "I’ll give you a thousand pounds to do just that.”"
+    },
+    {
+      "sid": "BOOK_002_1",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6231612730676651,
+      "max_topic_prob": 0.43877488374710083,
+      "sentence": "And so because you want to be free of the semel-aten, the price is to help him here at the sepat and try and tempt any of the mates of the yareahs you see here beside me, is that it?”"
+    },
+    {
+      "sid": "BOOK_002_2",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.46750468039582777,
+      "max_topic_prob": 0.41453343629837036,
+      "sentence": "I know my value to you and to my semel."
+    },
+    {
+      "sid": "BOOK_002_3",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.6565926718373897,
+      "max_topic_prob": 0.40947216749191284,
+      "sentence": "Yield.”"
+    },
+    {
+      "sid": "BOOK_002_4",
+      "cell": "CELL_C",
+      "tertile": "middle",
+      "normalized_position": 0.5977534100026745,
+      "max_topic_prob": 0.391349732875824,
+      "sentence": "It was the price the priest paid for challenging him."
+    },
+    {
+      "sid": "BOOK_002_5",
+      "cell": "CELL_C",
+      "tertile": "begin",
+      "normalized_position": 0.056432201123295,
+      "max_topic_prob": 0.3107343912124634,
+      "sentence": "Crane must be shown his value, and his value must be understood by others."
+    },
+    {
+      "sid": "BOOK_003_1",
+      "cell": "CELL_D",
+      "tertile": "end",
+      "normalized_position": 0.940863646032759,
+      "max_topic_prob": 0.5998576283454895,
+      "sentence": "I can’t afford to risk anything when it comes to you.’"
+    }
+  ],
+  "classification_codes": {},
+  "review_status": "pending"
+}

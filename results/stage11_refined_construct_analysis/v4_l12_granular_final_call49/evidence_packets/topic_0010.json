@@ -1,0 +1,1143 @@
+{
+  "topic_id": 10,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "6.5",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "doctor",
+        "hospital",
+        "nurse",
+        "doctors",
+        "doc",
+        "dr",
+        "medical",
+        "heal",
+        "healer",
+        "nurses"
+      ],
+      "KeyBERT": [
+        "bedside",
+        "dr",
+        "appointment",
+        "nods",
+        "assistant",
+        "heal",
+        "impatiently",
+        "mister",
+        "kindly",
+        "treated"
+      ],
+      "POS": [
+        "treatment",
+        "internal",
+        "appointment",
+        "benefit",
+        "meantime",
+        "instructions",
+        "session",
+        "concept",
+        "blows",
+        "scenario"
+      ],
+      "MMR": [
+        "treatment",
+        "appointment",
+        "guarantee",
+        "instructions",
+        "dr",
+        "snaps",
+        "provide",
+        "scenario",
+        "assistant",
+        "departure"
+      ]
+    },
+    "stage08_snippets": [
+      "i’ll go say good night to the girls and tell the nurses that you’re in here.”",
+      "tina, why don’t you come back and we’ll get your ems going.",
+      "but i’ll go with appendicitis anyway."
+    ],
+    "label_public": "Doctor Gives Medical Instructions"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I’m not going to the doctor and that’s the end of it.” “",
+        "max_topic_prob": 0.6884831786155701,
+        "normalized_position": 0.06941923774954628,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She’s in the hospital.”",
+        "max_topic_prob": 0.6783765554428101,
+        "normalized_position": 0.47844827586206895,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 522
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I made an appointment before leaving the hospital.",
+        "max_topic_prob": 0.6755812168121338,
+        "normalized_position": 0.6431488203266787,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 297
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "Who’s the doctor?",
+        "max_topic_prob": 0.6627708673477173,
+        "normalized_position": 0.046846642468239566,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 375
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "I have to get back to the hospital.",
+        "max_topic_prob": 0.6623871326446533,
+        "normalized_position": 0.5788339382940109,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 279
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "What hospital?”",
+        "max_topic_prob": 0.6419112682342529,
+        "normalized_position": 0.36637931034482757,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "I’ll doctor your wounds.”",
+        "max_topic_prob": 0.6506116390228271,
+        "normalized_position": 0.9665574900879159,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "There had been a parade of doctors in the room, but he was past the point of caring who came and went. “",
+        "max_topic_prob": 0.632543683052063,
+        "normalized_position": 0.8510601620410274,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Someone must have answered that prayer—who it could have been, I do not know—because they finally stopped healing.”",
+        "max_topic_prob": 0.5303409099578857,
+        "normalized_position": 0.5738665747284951,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 632
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Anyway, he is healing.",
+        "max_topic_prob": 0.521111786365509,
+        "normalized_position": 0.2121186002413377,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "Make sure they suffer first,” another had cackled. “",
+        "max_topic_prob": 0.519778847694397,
+        "normalized_position": 0.23590760213756248,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 81
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "sentence": "But all too soon, disease struck her.",
+        "max_topic_prob": 0.5127303600311279,
+        "normalized_position": 0.11282537493535598,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 334
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Or so the surgeons told him.",
+        "max_topic_prob": 0.6457535028457642,
+        "normalized_position": 0.2181857733304329,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 104
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "We took him to a surgeon in Brighton.",
+        "max_topic_prob": 0.5161387920379639,
+        "normalized_position": 0.9513813356536872,
+        "tertile": "end",
+        "chapter_index": 49,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "I suppose I must take my lumps.”",
+        "max_topic_prob": 0.5133830308914185,
+        "normalized_position": 0.9413748096584729,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "They inquired after his mother’s health as well as Daphne’s.",
+        "max_topic_prob": 0.49238449335098267,
+        "normalized_position": 0.6727213400043507,
+        "tertile": "end",
+        "chapter_index": 35,
+        "sentence_index": 20
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "sentence": "Yes, especially for the injured ones, the ones who cannot work.",
+        "max_topic_prob": 0.4467175006866455,
+        "normalized_position": 0.3474004785729824,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 242
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "A half-full bottle in the fridge or a prescription of ear drops in Danny Keller’s name from a recent infection?",
+        "max_topic_prob": 0.46161144971847534,
+        "normalized_position": 0.0950891460744448,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 213
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "But there were no complications and even the morning sickness wasn’t too bad.",
+        "max_topic_prob": 0.4127187132835388,
+        "normalized_position": 0.34845167344385364,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 135
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "sentence": "Something along the lines of slipping into a coma or having a full frontal lobotomy.",
+        "max_topic_prob": 0.370405912399292,
+        "normalized_position": 0.14388489208633093,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 152
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "He’s not even a real doctor yet.”",
+        "max_topic_prob": 0.7189980149269104,
+        "normalized_position": 0.2849501580354972,
+        "tertile": "begin",
+        "chapter_index": 32,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Didn’t you go to the hospital?”",
+        "max_topic_prob": 0.7072113752365112,
+        "normalized_position": 0.9192803306588865,
+        "tertile": "end",
+        "chapter_index": 88,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Mike, we’ve got to get over to the hospital.",
+        "max_topic_prob": 0.6585569381713867,
+        "normalized_position": 0.30756139071237537,
+        "tertile": "begin",
+        "chapter_index": 34,
+        "sentence_index": 42
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Hospitals got it so wrong.",
+        "max_topic_prob": 0.6297571063041687,
+        "normalized_position": 0.3267687819110139,
+        "tertile": "begin",
+        "chapter_index": 36,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "I don’t want her going to the wrong hospital.",
+        "max_topic_prob": 0.6246869564056396,
+        "normalized_position": 0.3070751276440554,
+        "tertile": "begin",
+        "chapter_index": 34,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "sentence": "Mike put off making a doctor’s appointment, of course.",
+        "max_topic_prob": 0.607887327671051,
+        "normalized_position": 0.27668368587405784,
+        "tertile": "begin",
+        "chapter_index": 32,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "Do you have an appointment?”",
+        "max_topic_prob": 0.5474664568901062,
+        "normalized_position": 0.20918671704116126,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 181
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "A quick call expressing my interest in a cure had gotten me the answers to every question I had.",
+        "max_topic_prob": 0.5203287601470947,
+        "normalized_position": 0.308411214953271,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 11
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "He’s a doctor, so it was more about staying safe and keeping myself protected than feelings and stuff.",
+        "max_topic_prob": 0.5111398100852966,
+        "normalized_position": 0.639093259097236,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 102
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "sentence": "She died of breast cancer a month after they admitted me.",
+        "max_topic_prob": 0.4775022864341736,
+        "normalized_position": 0.4941340226685226,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 241
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "I need a doctor.” “",
+        "max_topic_prob": 0.7364266514778137,
+        "normalized_position": 0.33923526087775474,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The nurse gave me some pointers.",
+        "max_topic_prob": 0.708678126335144,
+        "normalized_position": 0.9681672631380674,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "That’s how you got to the hospital.” “",
+        "max_topic_prob": 0.7076875567436218,
+        "normalized_position": 0.9730646072706725,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 199
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "Tell me everything you saw and heard,” the doctor said. “",
+        "max_topic_prob": 0.6815856099128723,
+        "normalized_position": 0.45771331700885287,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The doctors are taking really good care of him.” “",
+        "max_topic_prob": 0.658470094203949,
+        "normalized_position": 0.9350160105481258,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 218
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "The nurse came in. “",
+        "max_topic_prob": 0.6511717438697815,
+        "normalized_position": 0.9602561687700132,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "The first person was hospitalized.",
+        "max_topic_prob": 0.6020148992538452,
+        "normalized_position": 0.7900426309378806,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 147
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Their members’ disgust with the immorality of the infliction of pain by medical professionals and scientists who used dissection in the study of physiology led them to seek laws to end vivisection.",
+        "max_topic_prob": 0.43061548471450806,
+        "normalized_position": 0.154537149817296,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 223
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "1168 (M.D. Pa. 1993); Combined Health District v. Rittenhouse, 689 N.E.2d 1036, 1039 (Ohio Ct.",
+        "max_topic_prob": 0.37833982706069946,
+        "normalized_position": 0.07688794153471376,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 451
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "The clinic.” “",
+        "max_topic_prob": 0.6482909917831421,
+        "normalized_position": 0.5755736772235919,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 355
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Of course, the clinic,” he said, surprise and a subtle exasperation blending into his tone. “",
+        "max_topic_prob": 0.6164180040359497,
+        "normalized_position": 0.5757633225867628,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 356
+      },
+      {
+        "sid": "BOOK_009_3",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "I wouldn’t have expected you to take them on a tour of just any clinic.",
+        "max_topic_prob": 0.5382668972015381,
+        "normalized_position": 0.5759529679499337,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 357
+      },
+      {
+        "sid": "BOOK_009_4",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "But right here, in his office, was the gift to heal them both.",
+        "max_topic_prob": 0.5213299989700317,
+        "normalized_position": 0.9294519249004362,
+        "tertile": "end",
+        "chapter_index": 17,
+        "sentence_index": 162
+      },
+      {
+        "sid": "BOOK_009_5",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Not a clinic.",
+        "max_topic_prob": 0.5174672603607178,
+        "normalized_position": 0.575384031860421,
+        "tertile": "middle",
+        "chapter_index": 12,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_009_6",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "Allergic.” “",
+        "max_topic_prob": 0.3968522548675537,
+        "normalized_position": 0.7697705291105632,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 26
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "You’re going to a doctor.” “",
+        "max_topic_prob": 0.6865532398223877,
+        "normalized_position": 0.9756521739130435,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 238
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Do you need me to send in paramedics or have an ambulance dispatched?” “",
+        "max_topic_prob": 0.5786606669425964,
+        "normalized_position": 0.8314782608695652,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 90
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Her daughter didn’t need a checkup, but she wanted her on a local doctor’s patient roster just in case.",
+        "max_topic_prob": 0.5556730031967163,
+        "normalized_position": 0.6980869565217391,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 65
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Looks like you need a doc.",
+        "max_topic_prob": 0.4725443124771118,
+        "normalized_position": 0.9678260869565217,
+        "tertile": "end",
+        "chapter_index": 26,
+        "sentence_index": 193
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Clint often picked up prescriptions for them, or came here to get them take-out dinners after Ella’s health started to fail.”",
+        "max_topic_prob": 0.4406571388244629,
+        "normalized_position": 0.08069565217391304,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "But when someone calls in sick at work, other people have to fill in.",
+        "max_topic_prob": 0.4141033887863159,
+        "normalized_position": 0.7561739130434783,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Leave the diagnoses to the professionals.",
+        "max_topic_prob": 0.5884268283843994,
+        "normalized_position": 0.5960612691466083,
+        "tertile": "middle",
+        "chapter_index": 10,
+        "sentence_index": 28
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I tell this to my patients—I show them my scars—to get them to trust me.",
+        "max_topic_prob": 0.5689126253128052,
+        "normalized_position": 0.5588621444201313,
+        "tertile": "middle",
+        "chapter_index": 9,
+        "sentence_index": 166
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Even in bed,” the doctor explained, “she goes on with her gambols and summersaults.” [",
+        "max_topic_prob": 0.5566810369491577,
+        "normalized_position": 0.09059080962800875,
+        "tertile": "begin",
+        "chapter_index": 4,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "I thought I could heal myself from the outside in.”",
+        "max_topic_prob": 0.5224981307983398,
+        "normalized_position": 0.4271334792122538,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 367
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Family Physician 52, no.",
+        "max_topic_prob": 0.5204755067825317,
+        "normalized_position": 0.8969365426695842,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 594
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Sometimes I do wish I’d just gone inpatient,” C admits. “",
+        "max_topic_prob": 0.518883228302002,
+        "normalized_position": 0.4111597374179431,
+        "tertile": "middle",
+        "chapter_index": 8,
+        "sentence_index": 294
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I’ll see you at the hospital.”",
+        "max_topic_prob": 0.714482307434082,
+        "normalized_position": 0.0228734810578985,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 61
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Be good, or I’ll have to take it up with the nurses.”",
+        "max_topic_prob": 0.662086009979248,
+        "normalized_position": 0.1411722659042173,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 249
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "The doctor continued calmly, “Clean with soap and water, use antibiotic ointment, avoid too much tightness and pressure if and when using compresses—” “Yeah, yeah, I know all that, for fuck’s sake,” Jack huffed in frustration. “",
+        "max_topic_prob": 0.6184694766998291,
+        "normalized_position": 0.10686204431736955,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 153
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "I’m Dr. Edwards.”",
+        "max_topic_prob": 0.6128471493721008,
+        "normalized_position": 0.10257326661901359,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 141
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Yes, he was indeed in a hospital.",
+        "max_topic_prob": 0.6079002618789673,
+        "normalized_position": 0.0318084345961401,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 86
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "sentence": "Clearing his throat, the doctor said, “And how are we feeling today?”",
+        "max_topic_prob": 0.5830687284469604,
+        "normalized_position": 0.09899928520371694,
+        "tertile": "begin",
+        "chapter_index": 2,
+        "sentence_index": 131
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "I have to get to the hospital.” “",
+        "max_topic_prob": 0.715458869934082,
+        "normalized_position": 0.7278844805832049,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 58
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But she’s in the hospital.”",
+        "max_topic_prob": 0.6706087589263916,
+        "normalized_position": 0.6715267068554606,
+        "tertile": "end",
+        "chapter_index": 23,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "You can always call your doctor as questions arise.” “",
+        "max_topic_prob": 0.6533158421516418,
+        "normalized_position": 0.4045983457170896,
+        "tertile": "middle",
+        "chapter_index": 14,
+        "sentence_index": 254
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "But I’d like to hear what your doctor told you this afternoon, if you’re up for sharing with us.”",
+        "max_topic_prob": 0.6521028876304626,
+        "normalized_position": 0.4825459133604374,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 83
+      },
+      {
+        "sid": "BOOK_013_5",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Just trying to bribe you to make sure she gets the best possible medical care.”",
+        "max_topic_prob": 0.6506965160369873,
+        "normalized_position": 0.7984017944763774,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_013_6",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "sentence": "Yeah…well, in case you forgot, I’m an orthopedic doctor,” he says with a laugh.",
+        "max_topic_prob": 0.6354568004608154,
+        "normalized_position": 0.3600168232160381,
+        "tertile": "middle",
+        "chapter_index": 13,
+        "sentence_index": 210
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I assume you’ve been to the doctor.”",
+        "max_topic_prob": 0.7521307468414307,
+        "normalized_position": 0.39558626379292566,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 18
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "I need to check on a patient.”",
+        "max_topic_prob": 0.7378511428833008,
+        "normalized_position": 0.705269671032278,
+        "tertile": "end",
+        "chapter_index": 27,
+        "sentence_index": 49
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "You said it was an emergency, so Dr. Mason will see you right away.”",
+        "max_topic_prob": 0.6937509775161743,
+        "normalized_position": 0.11343714550892028,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 27
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "All right, we’re going to take you to the hospital now.",
+        "max_topic_prob": 0.6824455261230469,
+        "normalized_position": 0.6048262349180159,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 96
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She has a doctor’s appointment.” “",
+        "max_topic_prob": 0.6700344085693359,
+        "normalized_position": 0.969475095390327,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 155
+      },
+      {
+        "sid": "BOOK_014_6",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "sentence": "She turned to the doctor for the inevitable. “",
+        "max_topic_prob": 0.6613214015960693,
+        "normalized_position": 0.11776838197380633,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "We’re going to go to hospital and the doctors are going to make you better, all right?’",
+        "max_topic_prob": 0.7278563976287842,
+        "normalized_position": 0.32711119984028747,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 395
+      },
+      {
+        "sid": "BOOK_015_2",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "I’m sorry, I wasn’t aware that I’d ordered a psychologist.’",
+        "max_topic_prob": 0.547382116317749,
+        "normalized_position": 0.19574765422239968,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 215
+      },
+      {
+        "sid": "BOOK_015_3",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Surprisingly therapeutic,’ she observed. ‘",
+        "max_topic_prob": 0.5082167387008667,
+        "normalized_position": 0.7288880015971252,
+        "tertile": "end",
+        "chapter_index": 25,
+        "sentence_index": 341
+      },
+      {
+        "sid": "BOOK_015_4",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "That was before he got sick.’ ‘",
+        "max_topic_prob": 0.5048947930335999,
+        "normalized_position": 0.6779796366540227,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 391
+      },
+      {
+        "sid": "BOOK_015_5",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "No but he was sick.’ ‘",
+        "max_topic_prob": 0.4784323573112488,
+        "normalized_position": 0.6704931123976842,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 316
+      },
+      {
+        "sid": "BOOK_015_6",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "Well, people either get sick or they get old and their bodies don’t work properly any more.’ ‘",
+        "max_topic_prob": 0.4200632572174072,
+        "normalized_position": 0.669994010780595,
+        "tertile": "end",
+        "chapter_index": 24,
+        "sentence_index": 311
+      },
+      {
+        "sid": "BOOK_016_1",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Hospital?”",
+        "max_topic_prob": 0.6756489276885986,
+        "normalized_position": 0.8521466473709599,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_016_2",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "You’ve got it,” said the doctor promptly.",
+        "max_topic_prob": 0.6721508502960205,
+        "normalized_position": 0.575735648818138,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 93
+      },
+      {
+        "sid": "BOOK_016_3",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "So you do have the medical kit.”",
+        "max_topic_prob": 0.6144728064537048,
+        "normalized_position": 0.5918958031837916,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_016_4",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "These people must get to hospital and the sooner the better.” “",
+        "max_topic_prob": 0.6106017827987671,
+        "normalized_position": 0.8519054510371442,
+        "tertile": "end",
+        "chapter_index": 15,
+        "sentence_index": 67
+      },
+      {
+        "sid": "BOOK_016_5",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "Maybe later, or perhaps the Doc would like to fill in the gaps for you.”",
+        "max_topic_prob": 0.6018037796020508,
+        "normalized_position": 0.7436082971538832,
+        "tertile": "end",
+        "chapter_index": 13,
+        "sentence_index": 165
+      },
+      {
+        "sid": "BOOK_016_6",
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "sentence": "I’ve already looked, the medical kit has gone.” “",
+        "max_topic_prob": 0.580337405204773,
+        "normalized_position": 0.5820067534973469,
+        "tertile": "middle",
+        "chapter_index": 11,
+        "sentence_index": 119
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_A",
+        "share": 0.00533462657613967,
+        "n_sentences": 22
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.03283712784588441,
+        "n_sentences": 150
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_A",
+        "share": 0.028341793570219966,
+        "n_sentences": 201
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_A",
+        "share": 0.005692403229145104,
+        "n_sentences": 55
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.007194244604316547,
+        "n_sentences": 38
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.01042860417144167,
+        "n_sentences": 91
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_B",
+        "share": 0.008605234851201148,
+        "n_sentences": 24
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_B",
+        "share": 0.009547123623011015,
+        "n_sentences": 39
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_C",
+        "share": 0.0007979253939756633,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_C",
+        "share": 0.0011265164644714038,
+        "n_sentences": 13
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.001048767697954903,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.00045669051606028315,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_D",
+        "share": 0.0005480653293872629,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0011463507833397019,
+        "n_sentences": 6
+      },
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_D",
+        "share": 0.0009445843828715365,
+        "n_sentences": 3
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.0010028078620136383,
+        "n_sentences": 10
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 87
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "6.5",
+    "taxonomy_main_name": "Institutional Settings & Procedures",
+    "taxonomy_secondary_id": null,
+    "taxonomy_secondary_name": null,
+    "taxonomy_confidence": 0.78,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}

@@ -1,3 +1,6 @@
+<!-- h3_material_discovery_freeze_pointer -->
+> **Material discovery freeze (2026-08-31):** see [h3_material_discovery_freeze.md](h3_material_discovery_freeze.md). Credible new S8/S9 under Pass-B≥0.70: **1** (topic 112) + existing 17 → emotional-vs-material remains underpowered.
+
 # H3 — Security / material vs display
 
 Run: `v4_l12_granular_final_call49` — 82 topics.

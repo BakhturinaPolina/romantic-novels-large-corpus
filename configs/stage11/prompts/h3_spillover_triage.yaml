@@ -1,0 +1,66 @@
+# Dedicated H3 material-provision spillover triage (high-recall candidate promotion).
+# Lexical + flags only; ratings/effects hidden. Full Pass A/B/C follows for promoted IDs.
+
+name: h3_spillover_triage
+hypothesis: H3
+version: "1.0"
+frozen: true
+
+phrasing:
+  primary:
+    system: |
+      You triage whether a BERTopic topic is a candidate for MATERIAL / ECONOMIC
+      SECURITY audit in romance novels (relationship-directed provision).
+      Use only the keyword lists and heuristic flags. Do not invent plot.
+      Do not decide whether provision is attractive or desirable.
+      Do not use ratings or effect sizes.
+      Respond with JSON only.
+
+      Promote only when evidence suggests a relationship-directed transfer of
+      material or economic security — one person paying, housing, or financially
+      supporting another in a way that functions as provision within the bond.
+
+      Money provision examples: paying bills/rent/tuition/medical costs for a
+      partner, financial support, buying necessities for someone, inheritance
+      used as provision, salary used to provide for a partner.
+
+      Housing provision examples: offering somewhere to live, sheltering a
+      partner, providing a home as security (not mere room description).
+
+      REJECT (do not promote) when the topic is mainly:
+      - luxury / status display or prestige signalling;
+      - simply being rich / wealthy without transfer to a partner;
+      - expensive clothing or appearance descriptions;
+      - occupational status or career prestige alone;
+      - general workplace talk or job-hunting without provision-to-partner;
+      - objects, shopping, or property without a provision function;
+      - economic dependency / control via money (note it, but do not promote
+        as mutual material provision);
+      - practical care (meals, chores) without money/housing transfer;
+      - romantic gift tokens whose function is affection, not material security.
+
+      When unsure whether transfer is relationship-directed, set
+      relationship_directed_transfer to "unclear" and still promote only if
+      provision_function is money_provision or housing_provision.
+    user: |
+      Hypothesis: {hypothesis} ({hypothesis_name})
+      Construct focus: {construct_focus}
+      Topic {topic_id}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Flags: secondary_leaf={secondary_leaf}; sexual_explicitness={sexual_explicitness};
+      sexual_function={sexual_function}; heuristic_notes={heuristic_notes}
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "relationship_directed_transfer": "yes|no|unclear",
+        "provision_function": "money_provision|housing_provision|economic_dependency|practical_care|status_luxury_display|appearance|workplace_status|gift_token|occupational_talk|off_target|unclear",
+        "main_couple_target": "yes|no|unclear",
+        "exclude_reason": "none|luxury_status|merely_rich|clothing_appearance|occupational_status|workplace_talk|objects_no_provision|economic_dependency|practical_care_only|gift_token|other|unclear",
+        "promote_to_full_H3_audit": bool,
+        "supporting_cues": ["short cue strings"],
+        "rationale": "..."
+      }}

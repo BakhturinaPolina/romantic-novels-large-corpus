@@ -1,0 +1,1043 @@
+{
+  "topic_id": 191,
+  "exhaustive": false,
+  "taxonomy_leaf_sealed": "6.2",
+  "lexical": {
+    "representations": {
+      "Main": [
+        "job",
+        "money",
+        "pay",
+        "bills",
+        "business",
+        "paid",
+        "fund",
+        "she",
+        "career",
+        "work"
+      ],
+      "KeyBERT": [
+        "paying",
+        "paid",
+        "afford",
+        "circumstances",
+        "provide",
+        "assistant",
+        "dr",
+        "earned",
+        "claims",
+        "television"
+      ],
+      "POS": [
+        "value",
+        "activities",
+        "areas",
+        "partners",
+        "exchange",
+        "television",
+        "decent",
+        "assistant",
+        "previous"
+      ],
+      "MMR": [
+        "value",
+        "claims",
+        "earned",
+        "activities",
+        "partners",
+        "exchange",
+        "afford",
+        "fishing",
+        "bounced",
+        "assistant"
+      ]
+    },
+    "stage08_snippets": [
+      "but in all honesty, she needed every penny of the income she earned, so even if she had known, she probably wouldn’t have paid the premiums.",
+      "her job as an accountant for h & h lumber wasn't exactly exhilarating, but it paid the bills, and they treated her kindly there.",
+      "once the television shows pay her major loot, she'll retire from her day job and write from home."
+    ],
+    "label_public": "Working to Pay The Bills"
+  },
+  "contextual": {
+    "sentences": [
+      {
+        "sid": "BOOK_001_1",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "But she still wanted money.",
+        "max_topic_prob": 0.7215458154678345,
+        "normalized_position": 0.6654338549075391,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 259
+      },
+      {
+        "sid": "BOOK_001_2",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She worked out of her home, which was a big bonus for those times when Jenna needed a babysitter fast.",
+        "max_topic_prob": 0.6434928178787231,
+        "normalized_position": 0.6312944523470839,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 139
+      },
+      {
+        "sid": "BOOK_001_3",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "And I hope for the maid’s sake that it was a good bribe, because it just cost her her job.” “",
+        "max_topic_prob": 0.6202728748321533,
+        "normalized_position": 0.7061166429587482,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 76
+      },
+      {
+        "sid": "BOOK_001_4",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "When she’d enjoyed the adventure of a job that was never the same two days in a row.",
+        "max_topic_prob": 0.6179318428039551,
+        "normalized_position": 0.016216216216216217,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_001_5",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She bribed a maid.”",
+        "max_topic_prob": 0.6115341186523438,
+        "normalized_position": 0.7041251778093883,
+        "tertile": "end",
+        "chapter_index": 8,
+        "sentence_index": 69
+      },
+      {
+        "sid": "BOOK_001_6",
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "sentence": "She’d loved the job, loved the idea of travel and stupidly, had fallen in love with the boss.",
+        "max_topic_prob": 0.5920705199241638,
+        "normalized_position": 0.0068278805120910386,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 23
+      },
+      {
+        "sid": "BOOK_002_1",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "Actually, she had earned a ton of money, even without any full-contact stuff.",
+        "max_topic_prob": 0.7021937370300293,
+        "normalized_position": 0.6561397318278053,
+        "tertile": "middle",
+        "chapter_index": 17,
+        "sentence_index": 500
+      },
+      {
+        "sid": "BOOK_002_2",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "That might help tide her over while she built her client base.",
+        "max_topic_prob": 0.6539382934570312,
+        "normalized_position": 0.017290049400141144,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_002_3",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She didn’t get paid to jolly men around anymore. “",
+        "max_topic_prob": 0.6522611379623413,
+        "normalized_position": 0.26058574453069866,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_002_4",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "She’s been here long enough to learn everything, she has an accounting background, and she has the motive.” “",
+        "max_topic_prob": 0.6488983035087585,
+        "normalized_position": 0.8302752293577982,
+        "tertile": "end",
+        "chapter_index": 19,
+        "sentence_index": 427
+      },
+      {
+        "sid": "BOOK_002_5",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "If so, she’d done a good job.",
+        "max_topic_prob": 0.6469312906265259,
+        "normalized_position": 0.0019407198306280876,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 10
+      },
+      {
+        "sid": "BOOK_002_6",
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "sentence": "If so, she’d done a good job.",
+        "max_topic_prob": 0.6469312906265259,
+        "normalized_position": 0.11856033874382499,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 298
+      },
+      {
+        "sid": "BOOK_003_1",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "If only she hadn’t had to give up so much to fulfill the role.",
+        "max_topic_prob": 0.68006831407547,
+        "normalized_position": 0.007434441741011084,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 36
+      },
+      {
+        "sid": "BOOK_003_2",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "When she started with the CIA, she hadn’t anticipated having to sacrifice so much of her private life in order to do her job well.",
+        "max_topic_prob": 0.6512081027030945,
+        "normalized_position": 0.1486888348202217,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 75
+      },
+      {
+        "sid": "BOOK_003_3",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "She thought of her job and how much she had to censor from him.",
+        "max_topic_prob": 0.6442368626594543,
+        "normalized_position": 0.36739659367396593,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_003_4",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "He had assumed she had sought out employment with the CIA and that she had wanted to work deep cover.",
+        "max_topic_prob": 0.6268911361694336,
+        "normalized_position": 0.7050554203838876,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 163
+      },
+      {
+        "sid": "BOOK_003_5",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "In the back of her mind, she considered that this career wasn’t even one she had chosen for herself. “",
+        "max_topic_prob": 0.6194429397583008,
+        "normalized_position": 0.35861043525277103,
+        "tertile": "middle",
+        "chapter_index": 18,
+        "sentence_index": 56
+      },
+      {
+        "sid": "BOOK_003_6",
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "sentence": "Six months ago, this would have been her dream job.",
+        "max_topic_prob": 0.6111178398132324,
+        "normalized_position": 0.9741822114084888,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 34
+      },
+      {
+        "sid": "BOOK_004_1",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "So far, she didn’t seem to miss running a business.",
+        "max_topic_prob": 0.6925609707832336,
+        "normalized_position": 0.9852173913043478,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 2181
+      },
+      {
+        "sid": "BOOK_004_2",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "This was her chance to take the business to a whole new level, make some progress, stay caught up on her payments to Brad and fortify her faltering savings.",
+        "max_topic_prob": 0.6574083566665649,
+        "normalized_position": 0.8089130434782609,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1370
+      },
+      {
+        "sid": "BOOK_004_3",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She’d have to dip into her savings soon if she did, and not just to pay Brad.",
+        "max_topic_prob": 0.6059087514877319,
+        "normalized_position": 0.08347826086956522,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 384
+      },
+      {
+        "sid": "BOOK_004_4",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She was an independent woman, living the life she chose to live, not someone looking for an easy life married to a prosperous dentist.",
+        "max_topic_prob": 0.5869402289390564,
+        "normalized_position": 0.8002173913043479,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1330
+      },
+      {
+        "sid": "BOOK_004_5",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "She’d gotten her BA in liberal arts.",
+        "max_topic_prob": 0.5717564821243286,
+        "normalized_position": 0.2115217391304348,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 973
+      },
+      {
+        "sid": "BOOK_004_6",
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "sentence": "After all, she liked her job at the small, local firm where she’d worked since graduating from law school, but then Dan Guthrie had suddenly eloped with Holly the Waitress.",
+        "max_topic_prob": 0.5704859495162964,
+        "normalized_position": 0.9404347826086956,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1975
+      },
+      {
+        "sid": "BOOK_005_1",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "She had work to do.",
+        "max_topic_prob": 0.7522178292274475,
+        "normalized_position": 0.9471153846153846,
+        "tertile": "end",
+        "chapter_index": 33,
+        "sentence_index": 159
+      },
+      {
+        "sid": "BOOK_005_2",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "For certain, something had to happen to ease her financial situation.",
+        "max_topic_prob": 0.7521150708198547,
+        "normalized_position": 0.3918855534709193,
+        "tertile": "middle",
+        "chapter_index": 16,
+        "sentence_index": 349
+      },
+      {
+        "sid": "BOOK_005_3",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "She hadn’t really managed finances in the past.",
+        "max_topic_prob": 0.7241566777229309,
+        "normalized_position": 0.8365384615384616,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 138
+      },
+      {
+        "sid": "BOOK_005_4",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "Having a lot of money at her disposal would allow her to do good for other people.",
+        "max_topic_prob": 0.7043952345848083,
+        "normalized_position": 0.837124765478424,
+        "tertile": "end",
+        "chapter_index": 30,
+        "sentence_index": 143
+      },
+      {
+        "sid": "BOOK_005_5",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "And she couldn’t afford to do that.",
+        "max_topic_prob": 0.7035526037216187,
+        "normalized_position": 0.664282363977486,
+        "tertile": "middle",
+        "chapter_index": 24,
+        "sentence_index": 287
+      },
+      {
+        "sid": "BOOK_005_6",
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "sentence": "And she didn’t mean the money.",
+        "max_topic_prob": 0.6739729642868042,
+        "normalized_position": 0.9985928705440901,
+        "tertile": "end",
+        "chapter_index": 34,
+        "sentence_index": 354
+      },
+      {
+        "sid": "BOOK_006_1",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Because she definitely needed a job.",
+        "max_topic_prob": 0.7145110368728638,
+        "normalized_position": 0.2758662911717889,
+        "tertile": "begin",
+        "chapter_index": 22,
+        "sentence_index": 91
+      },
+      {
+        "sid": "BOOK_006_2",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Gwen needed this job, not just for the money, but for her sanity.",
+        "max_topic_prob": 0.6764466762542725,
+        "normalized_position": 0.17938043345169585,
+        "tertile": "begin",
+        "chapter_index": 17,
+        "sentence_index": 4
+      },
+      {
+        "sid": "BOOK_006_3",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "But she’d gotten a lot done.",
+        "max_topic_prob": 0.664705753326416,
+        "normalized_position": 0.098567405412024,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 3
+      },
+      {
+        "sid": "BOOK_006_4",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "What will she do for work?",
+        "max_topic_prob": 0.6584150791168213,
+        "normalized_position": 0.7044202277458063,
+        "tertile": "end",
+        "chapter_index": 51,
+        "sentence_index": 74
+      },
+      {
+        "sid": "BOOK_006_5",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "Exactly, to her boss.",
+        "max_topic_prob": 0.6350314617156982,
+        "normalized_position": 0.3733317007469083,
+        "tertile": "middle",
+        "chapter_index": 27,
+        "sentence_index": 137
+      },
+      {
+        "sid": "BOOK_006_6",
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "sentence": "That, along with her credentials, would have to heavily favor her getting the job.",
+        "max_topic_prob": 0.6327502131462097,
+        "normalized_position": 0.05828333537406637,
+        "tertile": "begin",
+        "chapter_index": 8,
+        "sentence_index": 173
+      },
+      {
+        "sid": "BOOK_007_1",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What could she do to save her job?",
+        "max_topic_prob": 0.7437952756881714,
+        "normalized_position": 0.7202513417986648,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 60
+      },
+      {
+        "sid": "BOOK_007_2",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "If she didn’t take advantage of that, did she deserve to keep her job? “",
+        "max_topic_prob": 0.7339774370193481,
+        "normalized_position": 0.7211022385128943,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 73
+      },
+      {
+        "sid": "BOOK_007_3",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "What could she do to keep her job?",
+        "max_topic_prob": 0.7333228588104248,
+        "normalized_position": 0.7174368372823668,
+        "tertile": "end",
+        "chapter_index": 36,
+        "sentence_index": 17
+      },
+      {
+        "sid": "BOOK_007_4",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She worked for it.",
+        "max_topic_prob": 0.7240233421325684,
+        "normalized_position": 0.12364183793690274,
+        "tertile": "begin",
+        "chapter_index": 9,
+        "sentence_index": 161
+      },
+      {
+        "sid": "BOOK_007_5",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "She couldn’t let him throw away everything he’d worked for, just for her.",
+        "max_topic_prob": 0.6883507370948792,
+        "normalized_position": 0.9199502552690143,
+        "tertile": "end",
+        "chapter_index": 45,
+        "sentence_index": 121
+      },
+      {
+        "sid": "BOOK_007_6",
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "sentence": "How was she going to pay for this?",
+        "max_topic_prob": 0.6796059608459473,
+        "normalized_position": 0.027097787668543004,
+        "tertile": "begin",
+        "chapter_index": 6,
+        "sentence_index": 25
+      },
+      {
+        "sid": "BOOK_008_1",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "She does, but she still owns a phone.”",
+        "max_topic_prob": 0.5515557527542114,
+        "normalized_position": 0.647848850443888,
+        "tertile": "middle",
+        "chapter_index": 7,
+        "sentence_index": 726
+      },
+      {
+        "sid": "BOOK_008_2",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "She worked for the NAACP and wanted to be arrested.",
+        "max_topic_prob": 0.5316532850265503,
+        "normalized_position": 0.257227407238789,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 2251
+      },
+      {
+        "sid": "BOOK_008_3",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "She was doing exactly what she had done every other time—like after she had found Jesus or Buddha and, once, Tony Robbins after watching too many late night infomercials.",
+        "max_topic_prob": 0.4628395140171051,
+        "normalized_position": 0.0047803323469155475,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 33
+      },
+      {
+        "sid": "BOOK_008_4",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Other people had been arrested before her, but the NAACP didn’t feel their case would hold up.",
+        "max_topic_prob": 0.44351354241371155,
+        "normalized_position": 0.2574550421124516,
+        "tertile": "begin",
+        "chapter_index": 3,
+        "sentence_index": 2253
+      },
+      {
+        "sid": "BOOK_008_5",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Ten bucks she pounds him,” Brad said once we were out of ear shot. “",
+        "max_topic_prob": 0.4419347047805786,
+        "normalized_position": 0.5470066014113362,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 2119
+      },
+      {
+        "sid": "BOOK_008_6",
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "sentence": "Yeah, Kelly’s parents grew up poor, so when they made their money, they kinda took a trip on the white trash express.”",
+        "max_topic_prob": 0.427412748336792,
+        "normalized_position": 0.5512178465740951,
+        "tertile": "middle",
+        "chapter_index": 5,
+        "sentence_index": 2156
+      },
+      {
+        "sid": "BOOK_009_1",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "She was working on her sixth one. “",
+        "max_topic_prob": 0.5807363390922546,
+        "normalized_position": 0.028102189781021896,
+        "tertile": "begin",
+        "chapter_index": 0,
+        "sentence_index": 77
+      },
+      {
+        "sid": "BOOK_009_2",
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "sentence": "She is currently working hard at her next novel.",
+        "max_topic_prob": 0.5343022346496582,
+        "normalized_position": 0.9992700729927008,
+        "tertile": "end",
+        "chapter_index": 1,
+        "sentence_index": 1401
+      },
+      {
+        "sid": "BOOK_010_1",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Maybe moving on with her life was worth more than millions.",
+        "max_topic_prob": 0.6176000237464905,
+        "normalized_position": 0.42609254498714655,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 43
+      },
+      {
+        "sid": "BOOK_010_2",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She ’ s needed for the investigation into the assault against her.”",
+        "max_topic_prob": 0.5585095882415771,
+        "normalized_position": 0.03202656383890317,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 285
+      },
+      {
+        "sid": "BOOK_010_3",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "Not only was pushing papers not up my alley, but working in close proximity to her was just another reason to hate life at the moment.",
+        "max_topic_prob": 0.5510654449462891,
+        "normalized_position": 0.03759640102827763,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 337
+      },
+      {
+        "sid": "BOOK_010_4",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "She gave it up because I did her dirty work, but now she ’ s ditched me.",
+        "max_topic_prob": 0.5406150221824646,
+        "normalized_position": 0.607433590402742,
+        "tertile": "middle",
+        "chapter_index": 19,
+        "sentence_index": 344
+      },
+      {
+        "sid": "BOOK_010_5",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "This has gone much too fucking far, and she is going to get her due.” “",
+        "max_topic_prob": 0.5324209332466125,
+        "normalized_position": 0.7238646101113967,
+        "tertile": "end",
+        "chapter_index": 22,
+        "sentence_index": 346
+      },
+      {
+        "sid": "BOOK_010_6",
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "sentence": "At first, she kept to her promise, even checking herself into rehab and completing her treatment.",
+        "max_topic_prob": 0.5223360061645508,
+        "normalized_position": 0.9844687232219366,
+        "tertile": "end",
+        "chapter_index": 29,
+        "sentence_index": 225
+      },
+      {
+        "sid": "BOOK_011_1",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Not to mention it was costing her a fortune.",
+        "max_topic_prob": 0.690037190914154,
+        "normalized_position": 0.1300334602515288,
+        "tertile": "begin",
+        "chapter_index": 7,
+        "sentence_index": 187
+      },
+      {
+        "sid": "BOOK_011_2",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Sometimes she loved her job.",
+        "max_topic_prob": 0.6788834929466248,
+        "normalized_position": 0.9705780546902042,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 175
+      },
+      {
+        "sid": "BOOK_011_3",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She hasn’t even worked for us for a week and I’m thinking about giving her a raise.” “",
+        "max_topic_prob": 0.6766082048416138,
+        "normalized_position": 0.5250951886465905,
+        "tertile": "middle",
+        "chapter_index": 15,
+        "sentence_index": 68
+      },
+      {
+        "sid": "BOOK_011_4",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She was Morgan Tremayne and she needed to raise a truckload of cash or risk a financial scandal that could destroy her family.",
+        "max_topic_prob": 0.6688615083694458,
+        "normalized_position": 0.03899850005769009,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 101
+      },
+      {
+        "sid": "BOOK_011_5",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "She needed the money in two days. “",
+        "max_topic_prob": 0.6679528951644897,
+        "normalized_position": 0.7307026652821045,
+        "tertile": "end",
+        "chapter_index": 20,
+        "sentence_index": 140
+      },
+      {
+        "sid": "BOOK_011_6",
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "sentence": "Everything she’d worked for was within her grasp, and yet— No.",
+        "max_topic_prob": 0.6678006052970886,
+        "normalized_position": 0.7625475943232952,
+        "tertile": "end",
+        "chapter_index": 21,
+        "sentence_index": 15
+      },
+      {
+        "sid": "BOOK_012_1",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She’d paid me to have sex with her.",
+        "max_topic_prob": 0.6164847612380981,
+        "normalized_position": 0.1329142857142857,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 71
+      },
+      {
+        "sid": "BOOK_012_2",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "Gianna hadn’t been pleased when we’d ixnayed her taking a job.",
+        "max_topic_prob": 0.613823652267456,
+        "normalized_position": 0.9018285714285714,
+        "tertile": "end",
+        "chapter_index": 48,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_012_3",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "I hadn’t cashed the checks she’d given me yet, mostly because I was still thinking the whole thing over, which meant I still had to fit school in around two jobs.",
+        "max_topic_prob": 0.610126793384552,
+        "normalized_position": 0.15222857142857144,
+        "tertile": "begin",
+        "chapter_index": 12,
+        "sentence_index": 9
+      },
+      {
+        "sid": "BOOK_012_4",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She had more than she should’ve.",
+        "max_topic_prob": 0.6059882640838623,
+        "normalized_position": 0.9661714285714286,
+        "tertile": "end",
+        "chapter_index": 50,
+        "sentence_index": 194
+      },
+      {
+        "sid": "BOOK_012_5",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "My job, I explained, and she didn’t push.",
+        "max_topic_prob": 0.5839107036590576,
+        "normalized_position": 0.22022857142857144,
+        "tertile": "begin",
+        "chapter_index": 15,
+        "sentence_index": 35
+      },
+      {
+        "sid": "BOOK_012_6",
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "sentence": "She hadn’t earned it yet.",
+        "max_topic_prob": 0.5771689414978027,
+        "normalized_position": 0.6068571428571429,
+        "tertile": "middle",
+        "chapter_index": 33,
+        "sentence_index": 122
+      },
+      {
+        "sid": "BOOK_013_1",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "The only reason she still has her job is because she has sex with the club owner, and the only reason she's still there is because apparently he's a good lay, I'm sorry but I rather work in a club without Ava, so she wouldn’t try to get me to party with her every night and then sleep with the boss to keep from getting fired. \"",
+        "max_topic_prob": 0.5792785882949829,
+        "normalized_position": 0.0029057700290577005,
+        "tertile": "begin",
+        "chapter_index": 1,
+        "sentence_index": 6
+      },
+      {
+        "sid": "BOOK_013_2",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "I only chose the other woman because she had a degree in business and because I needed someone else to distract me from Ms.Steele. \"",
+        "max_topic_prob": 0.5434970855712891,
+        "normalized_position": 0.1278538812785388,
+        "tertile": "begin",
+        "chapter_index": 5,
+        "sentence_index": 52
+      },
+      {
+        "sid": "BOOK_013_3",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "I don’t know man, I didn’t think they'd do her anything if where just hooking up.",
+        "max_topic_prob": 0.4931480288505554,
+        "normalized_position": 0.8410128684101287,
+        "tertile": "end",
+        "chapter_index": 28,
+        "sentence_index": 40
+      },
+      {
+        "sid": "BOOK_013_4",
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "sentence": "Apparently when he became CEO of the company he bought a house for his parents in Rome, claiming that he wanted them to have a nice retirement life but she thinks it's either because he wants them closer to her to save himself from all the stress about worrying about his parents or that he doesn't want any of his family living in America for some strange reason.",
+        "max_topic_prob": 0.44561028480529785,
+        "normalized_position": 0.22042341220423411,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 24
+      },
+      {
+        "sid": "BOOK_014_1",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Business was booming and she loved being an executive chef too much to give it up all at once for the life I’d helped Jamie create not that long ago.",
+        "max_topic_prob": 0.5826584100723267,
+        "normalized_position": 0.8645522388059701,
+        "tertile": "end",
+        "chapter_index": 37,
+        "sentence_index": 79
+      },
+      {
+        "sid": "BOOK_014_2",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "Talking over Natalie’s vision for her career had brought back the reason I’d gone into this business in the first place. “",
+        "max_topic_prob": 0.5667216181755066,
+        "normalized_position": 0.18333333333333332,
+        "tertile": "begin",
+        "chapter_index": 14,
+        "sentence_index": 37
+      },
+      {
+        "sid": "BOOK_014_3",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "She had grown up in New York’s elite society, but had always worked hard not to let her family’s money and status make her one of the obnoxious socialites she’d grown up with.",
+        "max_topic_prob": 0.5623003840446472,
+        "normalized_position": 0.4619402985074627,
+        "tertile": "middle",
+        "chapter_index": 22,
+        "sentence_index": 151
+      },
+      {
+        "sid": "BOOK_014_4",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "You would be a better source of information for her regarding career management.”",
+        "max_topic_prob": 0.5458778142929077,
+        "normalized_position": 0.09266169154228855,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 154
+      },
+      {
+        "sid": "BOOK_014_5",
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "sentence": "I know, but she’s talking to them now about the TV spots, not after the New Year.",
+        "max_topic_prob": 0.4322868883609772,
+        "normalized_position": 0.09340796019900498,
+        "tertile": "begin",
+        "chapter_index": 10,
+        "sentence_index": 160
+      },
+      {
+        "sid": "BOOK_015_1",
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "sentence": "That eventually led him to some websites, some places not far from work, some that he could actually afford.",
+        "max_topic_prob": 0.41899311542510986,
+        "normalized_position": 0.8543386534580811,
+        "tertile": "end",
+        "chapter_index": 14,
+        "sentence_index": 309
+      }
+    ],
+    "books_sampled": [
+      {
+        "book_id_anon": "BOOK_004",
+        "cell": "CELL_A",
+        "share": 0.007882636303919423,
+        "n_sentences": 36
+      },
+      {
+        "book_id_anon": "BOOK_005",
+        "cell": "CELL_A",
+        "share": 0.009787735849056603,
+        "n_sentences": 83
+      },
+      {
+        "book_id_anon": "BOOK_006",
+        "cell": "CELL_A",
+        "share": 0.007895386133728102,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_011",
+        "cell": "CELL_A",
+        "share": 0.016676384839650147,
+        "n_sentences": 143
+      },
+      {
+        "book_id_anon": "BOOK_003",
+        "cell": "CELL_B",
+        "share": 0.008689748811948405,
+        "n_sentences": 64
+      },
+      {
+        "book_id_anon": "BOOK_001",
+        "cell": "CELL_B",
+        "share": 0.00802982506452538,
+        "n_sentences": 28
+      },
+      {
+        "book_id_anon": "BOOK_007",
+        "cell": "CELL_B",
+        "share": 0.010764760269449215,
+        "n_sentences": 163
+      },
+      {
+        "book_id_anon": "BOOK_002",
+        "cell": "CELL_B",
+        "share": 0.01568627450980392,
+        "n_sentences": 88
+      },
+      {
+        "book_id_anon": "BOOK_014",
+        "cell": "CELL_C",
+        "share": 0.0006242197253433209,
+        "n_sentences": 5
+      },
+      {
+        "book_id_anon": "BOOK_012",
+        "cell": "CELL_C",
+        "share": 0.0016220600162206002,
+        "n_sentences": 14
+      },
+      {
+        "book_id_anon": "BOOK_010",
+        "cell": "CELL_C",
+        "share": 0.0016207455429497568,
+        "n_sentences": 15
+      },
+      {
+        "book_id_anon": "BOOK_008",
+        "cell": "CELL_C",
+        "share": 0.0009172208209126347,
+        "n_sentences": 8
+      },
+      {
+        "book_id_anon": "BOOK_013",
+        "cell": "CELL_D",
+        "share": 0.0016736401673640166,
+        "n_sentences": 4
+      },
+      {
+        "book_id_anon": "BOOK_015",
+        "cell": "CELL_D",
+        "share": 0.00018453589223103894,
+        "n_sentences": 1
+      },
+      {
+        "book_id_anon": "BOOK_009",
+        "cell": "CELL_D",
+        "share": 0.0007344840249724568,
+        "n_sentences": 2
+      },
+      {
+        "book_id_anon": "BOOK_016",
+        "cell": "CELL_D",
+        "share": 0.0,
+        "n_sentences": 0
+      }
+    ],
+    "sampling": {
+      "design": "prevalence_x_rating",
+      "exhaustive": false,
+      "books_per_cell": 4,
+      "sentences_per_book_topic": 6,
+      "n_books": 16,
+      "n_sentences": 78
+    }
+  },
+  "pass_c_reveal": {
+    "taxonomy_main_id": "6.2",
+    "taxonomy_main_name": "Work & Professional Identity",
+    "taxonomy_secondary_id": "6.4",
+    "taxonomy_secondary_name": "Economic Precarity, Security & Dependency",
+    "taxonomy_confidence": 0.82,
+    "label_rationale": null
+  },
+  "blinding": {
+    "rating_cells": "CELL_A..CELL_D",
+    "position_visible": true,
+    "taxonomy_hidden_until_pass_c": true
+  }
+}
