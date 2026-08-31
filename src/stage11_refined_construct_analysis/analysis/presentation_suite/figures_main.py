@@ -260,22 +260,17 @@ def fig04_stage10_stage11_transition(
     paths: PresentationPaths,
     primary: pd.DataFrame | None = None,
 ) -> Tuple[List[Path], Dict]:
+    from matplotlib.patches import ConnectionPatch
+
     primary = primary if primary is not None else load_primaries(paths)
     apply_theme()
-    fig, ax = plt.subplots(figsize=(11.5, 6.8))
-    x0, x1, x_un = 0.0, 1.0, 2.2
-    # Place unmeasurable endpoints in a status band below the δ range (not on the δ scale)
-    status_ys = {"H2": -0.22, "H3": -0.27}
-    ax.axhspan(-0.32, -0.175, color="#f3f3f3", zorder=0)
-    ax.text(
-        x_un,
-        -0.168,
-        "status change (not a δ)",
-        ha="center",
-        va="bottom",
-        fontsize=8,
-        color="#666666",
+    fig, (ax_d, ax_m) = plt.subplots(
+        1,
+        2,
+        figsize=(12.5, 6.8),
+        gridspec_kw={"width_ratios": [3.2, 1.35], "wspace": 0.08},
     )
+    x0, x1 = 0.0, 1.0
 
     # Stage-10 left labels: explicit stagger for the dense H5/H6/H2 cluster
     left_offsets: Dict[str, float] = {
@@ -290,9 +285,18 @@ def fig04_stage10_stage11_transition(
     # Stage-11 right labels: larger offsets for near-ties (H1≈H4, H5≈H6)
     right_offsets = {"H1": 0.028, "H4": -0.028, "H5": 0.022, "H6": -0.022}
 
+    # Right panel: categorical slots (independent of Cliff's δ)
+    # Ordinal category positions in axes fraction of the right panel
+    cat_frac = {"H2": 0.62, "H3": 0.38}
+    # Include Stage-10 H3 (δ≈−0.146); keep band clear of measurable Stage-11 range
+    y_lo, y_hi = -0.18, 0.22
+
+    def _frac_to_y(frac: float) -> float:
+        return y_lo + frac * (y_hi - y_lo)
+
     for r in primary.itertuples():
-        ax.scatter([x0], [r.stage10_delta], color="#999999", s=55, zorder=3)
-        ax.text(
+        ax_d.scatter([x0], [r.stage10_delta], color="#999999", s=55, zorder=3)
+        ax_d.text(
             x0 - 0.07,
             r.stage10_delta + left_offsets.get(r.hypothesis, 0.0),
             r.hypothesis,
@@ -301,28 +305,35 @@ def fig04_stage10_stage11_transition(
             fontsize=10,
         )
         if str(r.measurement_status) == "unmeasurable" or pd.isna(r.stage11_delta):
-            y_end = status_ys[r.hypothesis]
-            ax.annotate(
-                "",
-                xy=(x_un, y_end),
-                xytext=(x0, r.stage10_delta),
-                arrowprops=dict(arrowstyle="->", color=C_UNMEAS, lw=1.4, connectionstyle="arc3,rad=0.08"),
-            )
-            ax.scatter([x_un], [y_end], marker="s", color=C_UNMEAS, s=70, zorder=3)
-            ax.text(
-                x_un + 0.08,
-                y_end,
-                f"{r.hypothesis} not measurable",
+            y_cat = _frac_to_y(cat_frac[r.hypothesis])
+            ax_m.scatter([0.5], [y_cat], marker="s", color=C_UNMEAS, s=90, zorder=3)
+            ax_m.text(
+                0.58,
+                y_cat,
+                r.hypothesis,
                 va="center",
-                fontsize=9,
+                ha="left",
+                fontsize=10,
                 color=C_UNMEAS,
+                fontweight="bold",
             )
+            con = ConnectionPatch(
+                xyA=(x0, r.stage10_delta),
+                coordsA=ax_d.transData,
+                xyB=(0.5, y_cat),
+                coordsB=ax_m.transData,
+                arrowstyle="->",
+                color=C_UNMEAS,
+                lw=1.4,
+                connectionstyle="arc3,rad=0.05",
+            )
+            fig.add_artist(con)
         else:
-            ax.plot([x0, x1], [r.stage10_delta, r.stage11_delta], color="#56B4E9", lw=1.5, zorder=2)
+            ax_d.plot([x0, x1], [r.stage10_delta, r.stage11_delta], color="#56B4E9", lw=1.5, zorder=2)
             mk = marker_for_gate(str(r.measurement_status))
-            ax.scatter([x1], [r.stage11_delta], zorder=3, **mk)
+            ax_d.scatter([x1], [r.stage11_delta], zorder=3, **mk)
             dy = right_offsets.get(r.hypothesis, 0.0)
-            ax.annotate(
+            ax_d.annotate(
                 r.hypothesis,
                 xy=(x1, r.stage11_delta),
                 xytext=(x1 + 0.14, r.stage11_delta + dy),
@@ -333,13 +344,53 @@ def fig04_stage10_stage11_transition(
                 else None,
             )
 
-    gate_lines(ax, orientation="horizontal")
-    ax.set_xticks([x0, x1, x_un])
-    ax.set_xticklabels(["Stage 10\n(original δ)", "Stage 11\n(refined δ)", "Not measurable\nafter refinement"])
-    ax.set_ylabel("Cliff's δ")
-    ax.set_title("Contextual refinement changed both effect estimates and measurability", pad=12)
-    ax.set_xlim(-0.45, 3.05)
-    ax.set_ylim(-0.34, 0.22)
+    gate_lines(ax_d, orientation="horizontal")
+    ax_d.set_xticks([x0, x1])
+    ax_d.set_xticklabels(["Stage 10\n(original δ)", "Stage 11\n(refined δ)"])
+    ax_d.set_ylabel("Cliff's δ")
+    ax_d.set_xlim(-0.45, 1.55)
+    ax_d.set_ylim(y_lo, y_hi)
+    ax_d.set_title("Effect-size transition", fontsize=11, pad=8)
+
+    ax_m.set_xlim(0.0, 1.15)
+    ax_m.set_ylim(y_lo, y_hi)
+    ax_m.set_xticks([0.5])
+    ax_m.set_xticklabels(["Measurement\noutcome"])
+    ax_m.set_yticks([])
+    ax_m.spines["left"].set_visible(False)
+    ax_m.spines["right"].set_visible(False)
+    ax_m.spines["top"].set_visible(False)
+    ax_m.set_title("Measurement outcome", fontsize=11, pad=8)
+    # Category band label (not on the δ axis)
+    ax_m.text(
+        0.5,
+        _frac_to_y(0.88),
+        "Unmeasurable\nafter refinement",
+        ha="center",
+        va="center",
+        fontsize=9,
+        color=C_UNMEAS,
+        style="italic",
+    )
+    # Light band behind category markers only (right panel; not δ scale)
+    band_lo = _frac_to_y(0.28)
+    band_hi = _frac_to_y(0.72)
+    ax_m.axhspan(band_lo, band_hi, color="#f3f3f3", zorder=0)
+
+    fig.suptitle(
+        "Contextual refinement changed both effect estimates and measurability",
+        fontsize=13,
+        y=0.98,
+    )
+    fig.text(
+        0.5,
+        0.01,
+        "H2/H3 terminate in the Measurement outcome panel (categorical; not a Cliff's δ).",
+        ha="center",
+        fontsize=9,
+        color="#555555",
+    )
+    fig.subplots_adjust(top=0.88, bottom=0.12, left=0.08, right=0.96)
     outs = save_figure(fig, paths.out_dir, "fig04_stage10_stage11_transition")
     return outs, _manifest_row(
         "fig04",
@@ -348,7 +399,7 @@ def fig04_stage10_stage11_transition(
         ["stage10_vs_final_side_by_side"],
         "original_delta; refined_delta",
         "confirmatory",
-        "H2/H3 endpoint is categorical, not δ=0",
+        "H2/H3 endpoint is categorical Measurement outcome, not δ=0",
         outs,
     )
 

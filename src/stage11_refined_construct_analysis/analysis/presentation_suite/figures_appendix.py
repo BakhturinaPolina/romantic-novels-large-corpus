@@ -87,8 +87,8 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
     ax.axvline(0, color="#888888", lw=0.8)
     ax.set_yticks(y)
     ax.set_yticklabels(labels)
-    ax.set_xlabel("OLS coefficient on rating_shrunk (author-clustered SE)")
-    ax.set_title("B. Adjusted richness (suppression in M2)")
+    ax.set_xlabel("OLS β for taxonomy_n_eff (outcome: rating_shrunk; author-clustered SE)")
+    ax.set_title("B. Adjusted taxonomy richness (β for taxonomy_n_eff; suppression in M2)")
     xmax = float(m["ci_high"].max()) + 0.0015
     ax.set_xlim(-0.001, xmax)
     ax.set_ylim(-0.45, 1.55)
@@ -112,7 +112,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
         "Thematic richness two-panel",
         "appendix",
         ["thematic_richness_cliffs_delta", "thematic_richness_vs_drivers"],
-        "cliffs_delta; M1/M2 taxonomy_n_eff β",
+        "cliffs_delta; M1/M2 β(taxonomy_n_eff | rating_shrunk)",
         "exploratory",
         "Suppression — not attenuation",
         outs,
@@ -162,7 +162,15 @@ def appendix_danger_protection(paths: PresentationPaths) -> Tuple[List, Dict]:
     vals = q["mean_rating"].astype(float)
     mid = float(vals.mean())
     ax.set_ylim(mid - 0.08, mid + 0.08)
-    fig.subplots_adjust(top=0.82)
+    fig.text(
+        0.5,
+        0.02,
+        "Descriptive means; predictive CI unavailable from saved output.",
+        ha="center",
+        fontsize=9,
+        color="#555555",
+    )
+    fig.subplots_adjust(top=0.82, bottom=0.12)
     outs = save_figure(fig, paths.out_dir, "appendix_danger_protection_interaction")
     return outs, _manifest_row(
         "appendix_danger_protection",
@@ -171,7 +179,7 @@ def appendix_danger_protection(paths: PresentationPaths) -> Tuple[List, Dict]:
         ["danger_x_protection_reused", "danger_x_protection_quadrants_reused"],
         "mean_rating by quadrant; interaction p",
         "exploratory",
-        "Interaction n.s. — do not claim synergy",
+        "Descriptive means only; predictive CI unavailable; interaction n.s.",
         outs,
     )
 
@@ -549,11 +557,19 @@ def appendix_genre_era(paths: PresentationPaths) -> Tuple[List, Dict]:
         if pd.notna(overall):
             ax.legend(frameon=True, fontsize=8, loc="upper left", framealpha=0.92, edgecolor="#dddddd")
     fig.suptitle(
-        "Genre/era subgroup stability (appendix; uncertainty via n, not formal CI)",
+        "Genre/era subgroup stability (appendix; subgroup CIs unavailable)",
         fontsize=13,
         y=0.995,
     )
-    fig.tight_layout(rect=(0, 0, 1, 0.96), h_pad=2.2, w_pad=2.5)
+    fig.text(
+        0.5,
+        0.01,
+        "Subgroup CIs unavailable — do not interpret subgroup point differences as formal heterogeneity evidence.",
+        ha="center",
+        fontsize=9,
+        color="#555555",
+    )
+    fig.tight_layout(rect=(0, 0.04, 1, 0.96), h_pad=2.2, w_pad=2.5)
     outs = save_figure(fig, paths.out_dir, "appendix_genre_era")
     return outs, _manifest_row(
         "appendix_genre_era",
@@ -562,7 +578,7 @@ def appendix_genre_era(paths: PresentationPaths) -> Tuple[List, Dict]:
         ["genre_era_subgroup_deltas", "component_effects"],
         "subgroup cliffs_delta; overall reference",
         "exploratory",
-        "No formal subgroup CIs in source table",
+        "No subgroup CIs — not formal heterogeneity evidence",
         outs,
     )
 

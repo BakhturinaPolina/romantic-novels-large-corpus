@@ -296,7 +296,7 @@ CLAIM_HIERARCHY = [
     ("open", "H4", "RAX_external_protection", "Is enacted protection within danger the attractive feature? (thin: 1 topic)"),
     ("unsupported", "H4", "RAX_protective_commitment", "Generic protective promises do not distinguish high-rated romance"),
     ("unmeasurable", "H3", "RLR_emotional_vs_material_security", "Material/economic security not cleanly captured at topic level"),
-    ("unmeasurable", "H4", "RLR_protection_vs_control", "Protective commitment atom empty; protection side thin"),
+    ("open", "H4", "RLR_protection_vs_control", "Primary protection-vs-possession ratio thin/provisional (t119); directionally positive but below gate"),
 ]
 claims_rows = []
 for tier, hyp, feat, claim in CLAIM_HIERARCHY:
@@ -394,7 +394,7 @@ VERDICT_NOTES = {
     "H1": "Primary emotional-vs-explicit contrast under refined measurement.",
     "H2": "Strict HEA/final-payoff operationalisation; broad HEA remains exploratory.",
     "H3": "Primary ratio unmeasurable after material-side freeze; report emotional security (+) and appearance (−) as confirmatory components.",
-    "H4": "Primary ratio unmeasurable; protection atom thin (t119); possession viable; protection×danger is exploratory (NB14).",
+    "H4": "Primary protection-vs-possession ratio is thin/provisional (protection atom t119 only); δ≈+0.090, directionally positive but below gate → inconclusive. Possession side viable; commitment atom unmeasurable; protection×danger exploratory (NB14).",
     "H5": "Darkness-vs-tenderness primary plus qualified external-danger component.",
     "H6": "Refined arc contrast (RARC) and begin→end deltas; no mixed-effects extension.",
 }

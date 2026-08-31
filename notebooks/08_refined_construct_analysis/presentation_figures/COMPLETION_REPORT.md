@@ -11,6 +11,7 @@
 7. **Emotion containment** (δ≈+0.182, author-half stable) omitted from NB15 `integrated_summary_effects`.
 8. **Danger×protection heatmaps** visually suggest structure despite interaction p≈.51/.24/.22.
 9. **“Attention waterfall”** is a diverging bar chart (renamed in new suite).
+10. **H4 `one_sentence` said “Primary ratio unmeasurable”** while gate=`thin` with δ≈+0.090 — resolved in integrity cleanup.
 
 ## B. Notebook 14 richness resolution
 
@@ -27,9 +28,13 @@
 | --- | --- |
 | `notebooks/08_refined_construct_analysis/_src/14_exploratory_presentation_results.py` | Correct richness M2 interpretation (suppression) |
 | `notebooks/08_refined_construct_analysis/14_exploratory_presentation_results.ipynb` | Synced from `_src` |
-| `src/stage11_refined_construct_analysis/analysis/presentation_suite/*` | New reproducible figure suite |
+| `notebooks/08_refined_construct_analysis/_src/13_final_statistical_tests.py` | H4 `VERDICT_NOTES` + `CLAIM_HIERARCHY` tier wording |
+| `notebooks/08_refined_construct_analysis/13_final_statistical_tests.ipynb` | Synced H4 source cells |
+| `…/13_…/tables/final_verdict_table.{csv,md,parquet}` | Corrected H4 `one_sentence` only |
+| `…/13_…/tables/post_freeze_claim_hierarchy.{csv,parquet}` | H4 primary tier `open` + claim text |
+| `src/stage11_refined_construct_analysis/analysis/presentation_suite/*` | Figure suite + provenance validator |
 | `scripts/stage11/build_presentation_figures.py` | One-command rebuild CLI |
-| `tests/stage11/test_presentation_suite.py` | Validation tests |
+| `tests/stage11/test_presentation_suite.py` | Structural + numerical provenance tests |
 | `notebooks/08_refined_construct_analysis/presentation_figures/*` | AUDIT_NOTES, GUIDE, manifest |
 | `results/.../presentation_figures/*` | Generated PNG/PDF + canonical CSVs |
 
@@ -51,22 +56,22 @@ All under `results/stage11_refined_construct_analysis/v4_l12_granular_final_call
 
 ## E. Statistical checks
 
-- `pytest tests/stage11/test_presentation_suite.py` — **7 passed**
-- H1–H6 present; H2/H3 effect_size NaN; agreement % = n/N; CI ordering; thin flag on external protection; H1 adjusted disagreement flagged; all expected PNG/PDF present
+- `pytest tests/stage11/test_presentation_suite.py` — **10 passed**
+- Provenance: presentation δ/CI/adjusted/agreement/components/transitions match Stage 11 tables; attention `diff_pp` + richness M1/M2 locked; H4 must not say “primary ratio unmeasurable”
+- H1–H6 present; H2/H3 effect_size NaN; H4 thin with δ; agreement % = n/N; CI ordering; thin flag on external protection; H1 adjusted disagreement flagged; all expected PNG/PDF present
 
 ## F. Remaining caveats
 
-- Genre/era source table lacks formal subgroup CIs (n shown; overall δ as reference).
-- Danger×protection display uses quadrant means + reported interaction p (full predictive SE bands not in saved tables).
+- Genre/era source table lacks formal subgroup CIs (n shown; overall δ as reference) — figure states subgroup point differences are not formal heterogeneity evidence.
+- Danger×protection display uses quadrant means + reported interaction p; in-figure note: predictive CI unavailable from saved output.
 - H2 absent from function-drift table (documented on figure).
-- H4 `one_sentence` still says “Primary ratio unmeasurable” while gate=`thin` with δ present — wording inconsistency in NB13 prose left as-is (gate/δ used for figures).
 
 ## G. Presentation recommendation (main six)
 
 1. Contextual agreement (30–55%) — `fig01_contextual_agreement`
-2. Measurement status (H2/H3 unmeasurable) — `fig02_measurement_status`
+2. Measurement status (H2/H3 unmeasurable; H4 thin) — `fig02_measurement_status`
 3. H1–H6 hybrid verdicts — `fig03_primary_hypothesis_verdicts`
-4. Stage 10→11 transition (status band for unmeasurable) — `fig04_stage10_stage11_transition`
+4. Stage 10→11 transition (right-hand Measurement outcome panel for H2/H3) — `fig04_stage10_stage11_transition`
 5. Component forest + evidence matrix (H1 adj. disagreement; thin protection) — `fig05_component_effects` + `fig05b_component_evidence_matrix`
 6. Attention-shift (exploratory) — `fig06_attention_shift`
 
@@ -74,6 +79,7 @@ All under `results/stage11_refined_construct_analysis/v4_l12_granular_final_call
 
 - Broad H1–H6 confirmed
 - H2/H3 null/zero effects
+- H4 primary ratio “unmeasurable” (it is thin/inconclusive with δ≈+0.090)
 - Reliable danger × protection interaction
 - Richness null after thematic drivers
 - Components confirm parent hypotheses

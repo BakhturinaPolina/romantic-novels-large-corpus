@@ -61,11 +61,11 @@ Prespecified effect-size gate: `|δ| ≥ 0.11` (not the same as p &lt; .05).
 
 **Question.** How did Stage 10 conclusions change after Stage 11 refinement?
 
-**Result.** Measurable hypotheses change δ (e.g. H1 −0.029→+0.099; H5/H6 flip sign). H2/H3 leave the δ scale into a “not measurable” status band.
+**Result.** Measurable hypotheses change δ (e.g. H1 −0.029→+0.099; H5/H6 flip sign). H2/H3 leave the δ panel into a right-hand **Measurement outcome** column labelled “Unmeasurable after refinement.”
 
 **Interpretation.** Refinement changed both estimates and measurability.
 
-**Caveat.** The grey status band is not a δ value.
+**Caveat.** The right-hand Measurement outcome panel is categorical — not a δ value.
 
 **Spoken takeaway.** “Contextual refinement didn’t just nudge numbers — it changed what we could legitimately claim.”
 
@@ -103,15 +103,15 @@ Prespecified effect-size gate: `|δ| ≥ 0.11` (not the same as p &lt; .05).
 
 | Figure | Purpose |
 | --- | --- |
-| `appendix_richness` | Raw vs rarefied δ; M1/M2 β — **suppression**, not null after drivers |
-| `appendix_danger_protection_interaction` | Two-line plot; interaction p≈.51/.24/.22 — no reliable interaction |
+| `appendix_richness` | Raw vs rarefied δ; M1/M2 β for `taxonomy_n_eff` (outcome: `rating_shrunk`) — **suppression**, not null after drivers |
+| `appendix_danger_protection_interaction` | Two-line plot of descriptive means; interaction p≈.51/.24/.22 — predictive CI unavailable from saved output |
 | `appendix_security_care_specificity` | Strict→moderate→broad small multiples |
 | `appendix_promise_functions` | Dot-whisker + n topics; flag thin bundles |
 | `appendix_quality_reach` | Decluttered quadrants; focal labels only |
 | `appendix_function_drift` | Stable vs drifted contextual function |
 | `appendix_felt_vs_looked` | Embodiment; thin open markers |
 | `appendix_ees_three_panel` | Emotion (incl. **containment** δ≈+0.182), embodiment, social |
-| `appendix_genre_era` | Subgroup δ with overall reference |
+| `appendix_genre_era` | Subgroup δ with overall reference; subgroup CIs unavailable — not formal heterogeneity evidence |
 
 Existing NB14 assets (dose-response, residual diagnostics) remain under `notebook_analysis/14_…/figures/` for appendix use.
 

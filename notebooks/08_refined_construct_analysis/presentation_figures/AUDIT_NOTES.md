@@ -2,7 +2,7 @@
 
 Run: `v4_l12_granular_final_call49`  
 Date: 2026-09-01  
-Scope: notebooks 13–15 + upstream agreement/gates; presentation redesign only (no threshold/mapping changes).
+Scope: notebooks 13–15 + upstream agreement/gates; presentation redesign + integrity cleanup (no threshold/mapping changes).
 
 ## Authoritative sources
 
@@ -28,8 +28,17 @@ Scope: notebooks 13–15 + upstream agreement/gates; presentation redesign only 
 | Inconsistency | Conclusion said richness “no longer carries independent information” in M2; displayed/saved M2 showed larger significant β. |
 | Cause | Pre-written null template left in place after numbers showed **suppression** (M1 marginal → M2 stronger), not attenuation. |
 | Verified result | M1 `taxonomy_n_eff` β=0.00237 (p=0.065); M2 β=0.00658 (p=1.75e−6). Rarefied OLS p=0.608. Exploratory only. |
-| Fix | Prose in `_src/14_exploratory_presentation_results.py` + synced notebook. **Models not recomputed.** |
+| Fix | Prose in `_src/14_…py` + synced notebook. **Models not recomputed.** |
 | Files changed | `_src/14_…py`, `14_exploratory_presentation_results.ipynb` |
+
+## H4 wording resolution (integrity cleanup)
+
+| Item | Detail |
+| --- | --- |
+| Bug | `one_sentence` / `VERDICT_NOTES["H4"]` said “Primary ratio unmeasurable” while gate=`thin` and δ≈+0.090 exists. |
+| Authoritative | `measurement_gate=thin`, `final_bucket=inconclusive`, coverage `1/3`. |
+| Fix | Rewrote NB13 `VERDICT_NOTES` + `CLAIM_HIERARCHY` tier for `RLR_protection_vs_control` (`unmeasurable`→`open`); surgically updated CSV/parquet/md. Numbers unchanged. |
+| Presentation | `presentation_primary_results.one_sentence` now matches; figs already plotted H4 as thin. |
 
 ## Traceability (core statistics → figures)
 
@@ -57,6 +66,10 @@ Scope: notebooks 13–15 + upstream agreement/gates; presentation redesign only 
 3. External danger clears \|δ\|≥0.11 but `quality_p` n.s. — matrix must expose.
 4. External protection largest component δ but `thin` (1 topic) — open marker.
 5. Emotion containment omitted from NB15 `integrated_summary_effects` — include in appendix EES panel.
+
+## Provenance validation
+
+`assert_provenance_vs_sources` compares presentation metadata to authoritative Stage 11 tables (δ/CI/adjusted/agreement/components/transitions) and locks attention `diff_pp` + richness M1/M2 β to saved values. Run via build CLI and `pytest tests/stage11/test_presentation_suite.py`.
 
 ## Effect-size gate
 

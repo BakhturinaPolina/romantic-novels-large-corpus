@@ -8,10 +8,12 @@ from typing import Dict, List, Sequence
 import numpy as np
 import pandas as pd
 
+from .evidence_metadata import AGREEMENT_NOTEBOOKS, COMPONENT_FOCUS, _read_table
 from .paths import PresentationPaths, default_paths
 from .theme import EFFECT_GATE, HYPOTHESIS_ORDER
 
 ALLOWED_MEASUREMENT = {"viable", "thin", "unmeasurable"}
+ATOL = 1e-12
 
 EXPECTED_FIGURES = [
     "fig01_contextual_agreement",
@@ -35,6 +37,14 @@ EXPECTED_FIGURES = [
 
 class PresentationValidationError(AssertionError):
     pass
+
+
+def _close(a, b, *, atol: float = ATOL) -> bool:
+    if pd.isna(a) and pd.isna(b):
+        return True
+    if pd.isna(a) or pd.isna(b):
+        return False
+    return bool(np.isclose(float(a), float(b), atol=atol, rtol=0.0, equal_nan=True))
 
 
 def validate_frames(frames: Dict[str, pd.DataFrame]) -> List[str]:
@@ -68,6 +78,16 @@ def validate_frames(frames: Dict[str, pd.DataFrame]) -> List[str]:
         if pd.notna(row["effect_size"]):
             errors.append(f"{h} effect_size should be NaN")
 
+    # H4 must remain thin/measurable — not mislabeled unmeasurable in prose
+    h4 = primary.loc[primary["hypothesis"] == "H4"].iloc[0]
+    if h4["measurement_status"] != "thin":
+        errors.append(f"H4 expected thin, got {h4['measurement_status']}")
+    sentence = str(h4.get("one_sentence", "")).lower()
+    if "primary ratio unmeasurable" in sentence:
+        errors.append("H4 one_sentence still calls primary ratio unmeasurable")
+    if pd.isna(h4["effect_size"]):
+        errors.append("H4 must retain measurable cliffs_delta")
+
     # Agreement percentages
     for _, r in agreement.iterrows():
         expected = 100.0 * r["n_agree"] / r["n_total"]
@@ -94,6 +114,169 @@ def validate_frames(frames: Dict[str, pd.DataFrame]) -> List[str]:
         clears = bool(abs(r["effect_size"]) >= EFFECT_GATE)
         if bool(r["clears_delta_gate"]) != clears:
             errors.append(f"{r['feature']}: clears_delta_gate inconsistent")
+
+    return errors
+
+
+def assert_provenance_vs_sources(
+    paths: PresentationPaths,
+    frames: Dict[str, pd.DataFrame],
+) -> List[str]:
+    """Compare presentation metadata (and key appendix inputs) to authoritative Stage 11 tables."""
+    errors: List[str] = []
+    primary = frames["presentation_primary_results"].set_index("hypothesis")
+    agreement = frames["presentation_agreement"].set_index("hypothesis")
+    components = frames["presentation_component_results"].set_index("feature")
+
+    src_primary = _read_table(paths.table("13_final_statistical_tests", "primary_h1_h6_table")).set_index(
+        "hypothesis"
+    )
+    src_verdict = _read_table(paths.table("13_final_statistical_tests", "final_verdict_table")).set_index(
+        "hypothesis"
+    )
+    src_side = _read_table(
+        paths.table("13_final_statistical_tests", "stage10_vs_final_side_by_side")
+    ).set_index("hypothesis")
+    src_comp = _read_table(paths.table("13_final_statistical_tests", "component_effects")).set_index("feature")
+
+    # --- Primary δ / CI / adjusted / transitions ---
+    for h in HYPOTHESIS_ORDER:
+        gate = str(src_verdict.loc[h, "measurement_gate"]).lower()
+        pr = primary.loc[h]
+        if gate == "unmeasurable":
+            if pd.notna(pr["effect_size"]) or pd.notna(pr["ci_low"]) or pd.notna(pr["ci_high"]):
+                errors.append(f"{h}: presentation should blank δ/CI for unmeasurable")
+            if not _close(pr["stage10_delta"], src_side.loc[h, "original_delta"]):
+                errors.append(f"{h}: stage10_delta mismatch")
+            if pd.notna(pr["stage11_delta"]):
+                errors.append(f"{h}: stage11_delta should be NaN")
+            continue
+
+        sp = src_primary.loc[h]
+        checks = [
+            ("effect_size", sp["cliffs_delta"]),
+            ("ci_low", sp["ci_low"]),
+            ("ci_high", sp["ci_high"]),
+            ("adjusted_coefficient", sp["quality_beta"]),
+            ("adjusted_ci_low", sp["quality_ci_low"]),
+            ("adjusted_ci_high", sp["quality_ci_high"]),
+            ("adjusted_p_value", sp["quality_p"]),
+            ("stage10_delta", src_side.loc[h, "original_delta"]),
+            ("stage11_delta", src_side.loc[h, "refined_delta"]),
+        ]
+        for col, expected in checks:
+            if not _close(pr[col], expected):
+                errors.append(f"{h}.{col}: presentation={pr[col]!r} source={expected!r}")
+
+        # one_sentence must match authoritative verdict table
+        if str(pr["one_sentence"]) != str(src_verdict.loc[h, "one_sentence"]):
+            errors.append(f"{h}: one_sentence drifted from final_verdict_table")
+
+    # --- Agreement numerators / denominators ---
+    for h in HYPOTHESIS_ORDER:
+        nb = AGREEMENT_NOTEBOOKS[h]
+        table_name = f"h{h[1:]}_lexical_contextual_agreement"
+        df = _read_table(paths.table(nb, table_name))
+        n_total = len(df)
+        n_agree = int(df["agree"].astype(bool).sum())
+        ar = agreement.loc[h]
+        if int(ar["n_agree"]) != n_agree or int(ar["n_total"]) != n_total:
+            errors.append(
+                f"{h} agreement counts: presentation=({ar['n_agree']},{ar['n_total']}) "
+                f"source=({n_agree},{n_total})"
+            )
+
+    # --- Focal components δ / CI + external protection status/count ---
+    for feat in COMPONENT_FOCUS:
+        if feat not in src_comp.index:
+            errors.append(f"Missing component in source: {feat}")
+            continue
+        if feat not in components.index:
+            # Unmeasurable components are dropped from forest frame
+            if str(src_comp.loc[feat, "measurement_gate"]).lower() == "unmeasurable":
+                continue
+            errors.append(f"Missing component in presentation: {feat}")
+            continue
+        sc = src_comp.loc[feat]
+        pc = components.loc[feat]
+        for col, src_col in (
+            ("effect_size", "cliffs_delta"),
+            ("ci_low", "ci_low"),
+            ("ci_high", "ci_high"),
+            ("adjusted_coefficient", "quality_beta"),
+            ("adjusted_p_value", "quality_p"),
+        ):
+            if not _close(pc[col], sc[src_col]):
+                errors.append(f"{feat}.{col}: presentation={pc[col]!r} source={sc[src_col]!r}")
+        if str(pc["measurement_status"]) != str(sc["measurement_gate"]).lower():
+            errors.append(f"{feat}: measurement_status mismatch")
+
+    if "RAX_external_protection" in components.index:
+        ep = components.loc["RAX_external_protection"]
+        if ep["measurement_status"] != "thin":
+            errors.append("external_protection status must be thin")
+        if int(ep["n_topics"]) != 1:
+            errors.append(f"external_protection n_topics expected 1, got {ep['n_topics']}")
+
+    # --- Attention-shift percentage points (figure reads CSV directly) ---
+    att = _read_table(paths.table("14_exploratory_presentation_results", "attention_waterfall"))
+    if "diff_pp" not in att.columns or "feature" not in att.columns:
+        errors.append("attention_waterfall missing feature/diff_pp")
+    else:
+        # Sanity: finite and unique features; values must match file on disk (identity check)
+        for _, r in att.iterrows():
+            if not np.isfinite(float(r["diff_pp"])):
+                errors.append(f"attention {r['feature']}: non-finite diff_pp")
+        # Re-read and compare to catch accidental mutation during build
+        att2 = _read_table(paths.table("14_exploratory_presentation_results", "attention_waterfall"))
+        for feat in att["feature"]:
+            v1 = float(att.loc[att["feature"] == feat, "diff_pp"].iloc[0])
+            v2 = float(att2.loc[att2["feature"] == feat, "diff_pp"].iloc[0])
+            if not _close(v1, v2):
+                errors.append(f"attention {feat}: unstable diff_pp read")
+
+    # Stronger attention check: known focal rows must match exact saved values
+    # (reload once more via CSV path preference if parquet exists — already handled by _read_table)
+    expected_attention = {
+        "RAX_tenderness_core": 0.41587734430734713,
+        "RAX_explicit_sex": -0.18552572156678324,
+        "RAX_appearance_grooming": -0.17962856541430816,
+    }
+    for feat, exp in expected_attention.items():
+        row = att.loc[att["feature"] == feat]
+        if row.empty:
+            errors.append(f"attention missing {feat}")
+        elif not _close(row["diff_pp"].iloc[0], exp):
+            errors.append(
+                f"attention {feat}: got {row['diff_pp'].iloc[0]!r}, expected {exp!r} "
+                "(source table drifted from presentation-locked value)"
+            )
+
+    # --- Richness M1/M2 coefficients ---
+    rich = _read_table(paths.table("14_exploratory_presentation_results", "thematic_richness_vs_drivers"))
+    m = rich.loc[rich["term"] == "taxonomy_n_eff"].set_index("model")
+    expected_rich = {
+        "M1_richness_only": {
+            "coefficient": 0.002371632764046187,
+            "ci_low": -0.00014792946597685366,
+            "ci_high": 0.004891194994069228,
+            "p_value": 0.06505356245605133,
+        },
+        "M2_richness_plus_drivers": {
+            "coefficient": 0.006577063861955809,
+            "ci_low": 0.0038806370747680305,
+            "ci_high": 0.009273490649143588,
+            "p_value": 1.7468563331620182e-06,
+        },
+    }
+    for model, cols in expected_rich.items():
+        if model not in m.index:
+            errors.append(f"richness missing model {model}")
+            continue
+        for col, exp in cols.items():
+            got = m.loc[model, col]
+            if not _close(got, exp):
+                errors.append(f"richness {model}.{col}: got {got!r}, expected {exp!r}")
 
     return errors
 
@@ -129,7 +312,11 @@ def run_all_validations(
     raise_on_error: bool = True,
 ) -> List[str]:
     paths = paths or default_paths()
-    errors = validate_frames(frames) + validate_outputs(paths)
+    errors = (
+        validate_frames(frames)
+        + assert_provenance_vs_sources(paths, frames)
+        + validate_outputs(paths)
+    )
     if errors and raise_on_error:
         raise PresentationValidationError("\n".join(errors))
     return errors
