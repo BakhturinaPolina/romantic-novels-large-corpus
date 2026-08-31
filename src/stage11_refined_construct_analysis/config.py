@@ -100,6 +100,8 @@ class Stage11Config:
             "book_features": self.output_path("book_features_dir", create=True),
             "notebook_analysis": self.output_path("notebook_dir", create=True),
         }
+        if "ees_exploration_dir" in self.section("outputs"):
+            dirs["ees_exploration"] = self.output_path("ees_exploration_dir", create=True)
         for hyp in ("h1", "h2", "h3", "h4", "h5", "h6"):
             (dirs["audits"] / hyp).mkdir(parents=True, exist_ok=True)
         return dirs

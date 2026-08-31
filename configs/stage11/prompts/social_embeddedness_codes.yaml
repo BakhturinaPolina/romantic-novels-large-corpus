@@ -1,0 +1,78 @@
+# Single-pass social embeddedness coding (exploratory NB15).
+# Ratings hidden. Codes relationship functions, not mere family-word counts.
+
+name: social_embeddedness_codes
+family: social
+version: "1.0"
+frozen: true
+
+valid_codes:
+  - S0
+  - S1
+  - S2
+  - S3
+  - S4
+  - S5
+  - S6
+  - S7
+  - S8
+  - S9
+  - S10
+  - S11
+  - S12
+
+code_meanings:
+  S0: Off-target / generic mention
+  S1: Sibling relationship
+  S2: Parent-child relationship
+  S3: Children / parenthood
+  S4: Supportive family involvement
+  S5: Family pressure / obligation
+  S6: Family conflict
+  S7: Family caregiving
+  S8: Romantic partner entering family
+  S9: Friendship / confidante
+  S10: Allies / social support
+  S11: Community / social-group participation
+  S12: Non-romantic interpersonal conflict
+
+phrasing:
+  primary:
+    system: |
+      You assign ONE primary social-world function to a BERTopic topic from
+      romance novels. Use only keywords, representative docs, and sample sentences.
+      Do not invent plot. Do not use ratings or effect sizes.
+      Code the interpersonal function (support, pressure, conflict, kinship role),
+      not merely whether a kinship word appears.
+      Prefer S0 for generic or off-target mentions.
+      Respond with JSON only.
+    user: |
+      Family: social embeddedness
+      Topic {topic_id}
+      Label: {label}
+      Primary taxonomy: {taxonomy_main}
+      Secondary taxonomy: {taxonomy_secondary}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Representative docs: {rep_docs}
+      Sample sentences (book IDs and ratings hidden):
+      {sentences}
+
+      Valid codes: S0–S12.
+      S0 off-target; S1 sibling; S2 parent-child; S3 children/parenthood;
+      S4 supportive family; S5 family pressure; S6 family conflict; S7 caregiving;
+      S8 partner entering family; S9 friendship; S10 allies; S11 community;
+      S12 non-romantic conflict.
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "primary_code": "S0|S1|S2|S3|S4|S5|S6|S7|S8|S9|S10|S11|S12",
+        "secondary_codes": ["optional"],
+        "confidence": "high|medium|low",
+        "breadth": "strict|moderate|broad",
+        "supporting_cues": ["short cue strings"],
+        "rationale": "one or two sentences grounded in the evidence"
+      }}

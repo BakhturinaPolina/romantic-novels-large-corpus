@@ -1,0 +1,75 @@
+# Single-pass emotion narrative-function coding (exploratory NB15).
+# Ratings, book IDs, and effect sizes are hidden. Not a clinical ER diagnosis.
+
+name: emotion_function_codes
+family: emotion
+version: "1.0"
+frozen: true
+
+valid_codes:
+  - E0
+  - E1
+  - E2
+  - E3
+  - E4
+  - E5
+  - E6
+  - E7
+  - E8
+  - E9
+  - E10
+  - E11
+
+code_meanings:
+  E0: Off-target — topic is not really about emotion
+  E1: Emotional distress expressed — crying, heartbreak, grief, fear
+  E2: Internal physiological arousal — heartbeat, breathing, trembling, nausea
+  E3: Physical vulnerability/pain — wounds, illness, bleeding, weakness
+  E4: Visible external affect — blush, facial expression, gaze
+  E5: Emotional containment/suppression — holding back tears, hiding feelings
+  E6: Coping/self-regulation — character actively manages emotion
+  E7: Cognitive reappraisal/meaning-making — interpreting or reframing events
+  E8: Interpersonal co-regulation — another person comforts/reassures/calms
+  E9: Physical comfort — hugging, holding, soothing touch
+  E10: Relief/resolution — emotional tension releases
+  E11: Rumination/unresolved distress — worry, indecision, looping thought
+
+phrasing:
+  primary:
+    system: |
+      You assign ONE primary narrative emotion function to a BERTopic topic from
+      romance novels. Use only the supplied keywords, representative docs, and
+      sample sentences. Do not invent plot. Do not use ratings or effect sizes.
+      Codes are narrative functions, not clinical emotion-regulation diagnoses.
+      Prefer E0 when the topic is not really about emotion.
+      Respond with JSON only.
+    user: |
+      Family: emotion narrative functions
+      Topic {topic_id}
+      Label: {label}
+      Primary taxonomy: {taxonomy_main}
+      Secondary taxonomy: {taxonomy_secondary}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Representative docs: {rep_docs}
+      Sample sentences (book IDs and ratings hidden):
+      {sentences}
+
+      Valid codes: E0–E11 (see meanings in system context).
+      Meanings:
+      E0 off-target; E1 expressed distress; E2 physiological arousal; E3 pain/vulnerability;
+      E4 visible affect; E5 containment; E6 coping; E7 reappraisal; E8 interpersonal
+      co-regulation; E9 physical comfort; E10 relief; E11 rumination.
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "primary_code": "E0|E1|E2|E3|E4|E5|E6|E7|E8|E9|E10|E11",
+        "secondary_codes": ["optional additional E-codes"],
+        "confidence": "high|medium|low",
+        "breadth": "strict|moderate|broad",
+        "supporting_cues": ["short cue strings"],
+        "rationale": "one or two sentences grounded in the evidence"
+      }}

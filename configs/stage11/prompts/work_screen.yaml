@@ -1,0 +1,46 @@
+# Cheap work/institutional-life screen (exploratory NB15). Secondary only.
+
+name: work_screen
+family: work
+version: "1.0"
+frozen: true
+
+valid_codes:
+  - transactional_business
+  - occupational_competence
+  - shared_work
+  - institutional_setting
+  - hierarchy_power
+  - economic_pressure
+  - status_wealth
+  - generic_logistics
+
+phrasing:
+  primary:
+    system: |
+      You cheaply classify work / institutional topics in romance novels.
+      Use only keywords, docs, and sentences. No ratings.
+      Prefer generic_logistics when the topic is mere scheduling or travel talk.
+      Respond with JSON only.
+    user: |
+      Family: work screen
+      Topic {topic_id}
+      Label: {label}
+      Primary taxonomy: {taxonomy_main}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Representative docs: {rep_docs}
+      Sample sentences (hidden IDs/ratings):
+      {sentences}
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "primary_code": "transactional_business|occupational_competence|shared_work|institutional_setting|hierarchy_power|economic_pressure|status_wealth|generic_logistics",
+        "coherent_work_family": bool,
+        "confidence": "high|medium|low",
+        "supporting_cues": ["short cue strings"],
+        "rationale": "brief"
+      }}

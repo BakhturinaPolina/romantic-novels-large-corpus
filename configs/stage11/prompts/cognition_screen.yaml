@@ -1,0 +1,48 @@
+# Cheap cognition screen (exploratory NB15). Not a principal analysis family.
+# Hard rule in notebook: do not test a cognition family unless ≥3 coherent topics.
+
+name: cognition_screen
+family: cognition
+version: "1.0"
+frozen: true
+
+valid_codes:
+  - religious_spiritual
+  - self_reflection
+  - relationship_interpretation
+  - moral_reasoning
+  - rumination
+  - indecision
+  - realization_reappraisal
+  - generic_off_target
+
+phrasing:
+  primary:
+    system: |
+      You cheaply classify whether a BERTopic topic reflects reflective cognition
+      in romance novels. Use only keywords, docs, and sentences. No ratings.
+      Prefer generic_off_target when the topic is discourse filler, commands,
+      or not clearly reflective.
+      Respond with JSON only.
+    user: |
+      Family: cognition screen
+      Topic {topic_id}
+      Label: {label}
+      Primary taxonomy: {taxonomy_main}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Representative docs: {rep_docs}
+      Sample sentences (hidden IDs/ratings):
+      {sentences}
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "primary_code": "religious_spiritual|self_reflection|relationship_interpretation|moral_reasoning|rumination|indecision|realization_reappraisal|generic_off_target",
+        "coherent_cognition": bool,
+        "confidence": "high|medium|low",
+        "supporting_cues": ["short cue strings"],
+        "rationale": "brief"
+      }}

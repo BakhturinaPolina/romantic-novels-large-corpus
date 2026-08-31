@@ -1,0 +1,62 @@
+# Single-pass embodiment subtype coding (exploratory NB15).
+# Ratings hidden. Distinguishes felt body vs looked-at body.
+
+name: embodiment_codes
+family: embodiment
+version: "1.0"
+frozen: true
+
+valid_codes:
+  - B0
+  - B1
+  - B2
+  - B3
+  - B4
+  - B5
+
+code_meanings:
+  B0: Off-target — not about bodies or appearance
+  B1: External appearance — beautiful/handsome/body/hair/face as looked-at
+  B2: Grooming/clothing/self-presentation — clothes, styling, mirror, dress
+  B3: Individual body markers — tattoos, scars, distinctive marks
+  B4: Interoceptive body — heart, lungs, breath, stomach, trembling
+  B5: Vulnerable body — pain, wounds, blood, illness
+
+phrasing:
+  primary:
+    system: |
+      You assign ONE primary embodiment subtype to a BERTopic topic from romance
+      novels. Use only keywords, representative docs, and sample sentences.
+      Do not invent plot. Do not use ratings or effect sizes.
+      Distinguish body-as-lived-experience (B4/B5) from body-as-observed (B1/B2).
+      Keep tattoos/scars as B3 even when judged by others.
+      Prefer B0 when the topic is not about bodies or appearance.
+      Respond with JSON only.
+    user: |
+      Family: embodiment subtypes
+      Topic {topic_id}
+      Label: {label}
+      Primary taxonomy: {taxonomy_main}
+      Secondary taxonomy: {taxonomy_secondary}
+      Main: {main}
+      KeyBERT: {keybert}
+      POS: {pos}
+      MMR: {mmr}
+      Representative docs: {rep_docs}
+      Sample sentences (book IDs and ratings hidden):
+      {sentences}
+
+      Valid codes: B0–B5.
+      B0 off-target; B1 external appearance; B2 grooming/clothing; B3 markings
+      (tattoo/scar); B4 interoceptive; B5 vulnerable/pain.
+
+      Return JSON:
+      {{
+        "topic_id": int,
+        "primary_code": "B0|B1|B2|B3|B4|B5",
+        "secondary_codes": ["optional"],
+        "confidence": "high|medium|low",
+        "breadth": "strict|moderate|broad",
+        "supporting_cues": ["short cue strings"],
+        "rationale": "one or two sentences grounded in the evidence"
+      }}

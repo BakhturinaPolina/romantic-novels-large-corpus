@@ -1,0 +1,2222 @@
+{
+  "run_id": "v4_l12_granular_final_call49",
+  "n_mapped_topics": 348,
+  "n_unique_candidates": 179,
+  "families": {
+    "emotion_embodiment": 100,
+    "family_social": 54,
+    "cognition_screen": 40,
+    "work_screen": 26
+  },
+  "candidates": {
+    "emotion_embodiment": [
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 28,
+        "label": "Tears Spilling Down Her Cheeks",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=1.7; secondary_leaf=3.2; proto:tears",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 38,
+        "label": "Admitting Shared Pain",
+        "taxonomy_main_id": "4.2",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2; proto:pain",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 47,
+        "label": "Steadying Breath After Impact",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.1; proto:breath",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 56,
+        "label": "Promising Never to Hurt You",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "9.2",
+        "heuristic_notes": "primary_leaf=4.6; proto:hurt",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 72,
+        "label": "Complimenting Her Beauty Aloud",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.6",
+        "heuristic_notes": "secondary_leaf=1.6; proto:beautiful",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 77,
+        "label": "Haircut and Grooming Offered",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.6; proto:hair",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 92,
+        "label": "Heart Pounding With Dread",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "primary_leaf=3.2; secondary_leaf=1.1; proto:heart pounding",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 101,
+        "label": "Smoothing Loose Strands of Hair",
+        "taxonomy_main_id": "2.2",
+        "taxonomy_secondary_id": "1.6",
+        "heuristic_notes": "primary_leaf=2.2; secondary_leaf=1.6; proto:hair",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 107,
+        "label": "Gritted Teeth and Clenched Fists",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "primary_leaf=1.1; proto:pain",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 124,
+        "label": "Scooped Up in A Tight Hug",
+        "taxonomy_main_id": "2.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=2.2; secondary_leaf=4.6; proto:hug",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 132,
+        "label": "Ribs Pounding With Inner Pain",
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "primary_leaf=1.2; secondary_leaf=1.1; proto:pain",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 133,
+        "label": "Holding Back Tears",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.2; proto:crying,tears",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 145,
+        "label": "Confessing How Much It Hurts",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.2; proto:pain",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 162,
+        "label": "Struggling to Catch Breath",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "1.2",
+        "heuristic_notes": "primary_leaf=1.1; secondary_leaf=1.2; proto:breath",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 171,
+        "label": "Staring at Her Own Reflection",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.6; proto:appearance,mirror",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 202,
+        "label": "Eyes Closed in Concentration",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "uncertain_interpretable",
+        "heuristic_notes": "primary_leaf=1.7; proto:breath",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 218,
+        "label": "Resenting Someone More Attractive",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=1.6; secondary_leaf=3.2; proto:appearance",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 240,
+        "label": "Unsure How to Offer Comfort",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "4.2",
+        "heuristic_notes": "primary_leaf=4.6; proto:comfort",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 244,
+        "label": "Confessing A Shattered Heart",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.5",
+        "heuristic_notes": "primary_leaf=3.2; proto:pain",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 245,
+        "label": "Lip Biting and Nervous Pout",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.7",
+        "heuristic_notes": "secondary_leaf=1.7; proto:trembling",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 253,
+        "label": "Hair Pinned Up in Style",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.6; proto:hair",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 267,
+        "label": "Hand Raking Through His Hair",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "2.1",
+        "heuristic_notes": "primary_leaf=1.7; proto:hair",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 281,
+        "label": "Told to Calm Down First",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=3.2; secondary_leaf=4.6; proto:calm down",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 358,
+        "label": "Reassuring Squeeze of The Hand",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "2.2",
+        "heuristic_notes": "primary_leaf=4.6; secondary_leaf=2.2; proto:trembling,comfort",
+        "n_signals": 2,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 1,
+        "label": "Straps Sliding Down Her Arms",
+        "taxonomy_main_id": "2.3",
+        "taxonomy_secondary_id": "2.2",
+        "heuristic_notes": "secondary_leaf=2.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 4,
+        "label": "Refusing to Be Used",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.4",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 5,
+        "label": "Flirtatious Wink Across The Room",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 6,
+        "label": "Whispered Reassurance",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 11,
+        "label": "Eyes Meeting Across The Room",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.7",
+        "heuristic_notes": "secondary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 12,
+        "label": "A Scent That Lingers",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 14,
+        "label": "Voice Cracking With Emotion",
+        "taxonomy_main_id": "9.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 18,
+        "label": "Ordering A Gown For Her",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "6.6",
+        "heuristic_notes": "primary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 21,
+        "label": "Deciding Whether to Stay or Leave",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 23,
+        "label": "Gasping For Calming Breaths",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=1.1; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 26,
+        "label": "Held Under A Long Stare",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 29,
+        "label": "Confessing Long-Held Love",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.1",
+        "heuristic_notes": "secondary_leaf=3.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 31,
+        "label": "Keeping Watch While Others Sleep",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 34,
+        "label": "Giving Up Academic Ambitions",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 36,
+        "label": "Eagerly Offering to Help",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 42,
+        "label": "Eyebrows Raised in Amusement",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "9.3",
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 43,
+        "label": "Pissed Off and Grumbling",
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 44,
+        "label": "Admitting Something Is Hard",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 45,
+        "label": "Reassured Everything Will Be Fine",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "9.2",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 46,
+        "label": "Asking Someone to Trust You",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "4.3",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 48,
+        "label": "Voice Faltering Into Silence",
+        "taxonomy_main_id": "9.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 50,
+        "label": "Questioning What You Believe",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 55,
+        "label": "Worrying About An Unplanned Pregnancy",
+        "taxonomy_main_id": "2.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 57,
+        "label": "Hands Raised in Reassuring Gesture",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=1.7; secondary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 58,
+        "label": "Coping With A Damaged Limb",
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=1.2; secondary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 59,
+        "label": "Mother's Disapproval Looms",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 60,
+        "label": "Standing Firm on A Decision",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 62,
+        "label": "Admitting You've Been Stupid",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 64,
+        "label": "Confronting A Lifelong Fear",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=3.2; secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 66,
+        "label": "Paralyzed By Deep-Seated Fear",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 70,
+        "label": "Keeping Watch While She Sleeps",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "10.1",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 74,
+        "label": "Solemn Nod of Agreement",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 75,
+        "label": "Talking About Being A Father",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 80,
+        "label": "Declaring Exactly What You Want",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 83,
+        "label": "Reassured About Eating Regularly",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 88,
+        "label": "Checking Her Feverish Temperature",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "1.2",
+        "heuristic_notes": "primary_leaf=4.6; secondary_leaf=1.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 90,
+        "label": "Silenced By A Head Shake",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 95,
+        "label": "Acknowledging How Much Has Changed",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 96,
+        "label": "Confessing Long-Standing Worry",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=4.6; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 97,
+        "label": "Uncomfortable Silence Falls Over Group",
+        "taxonomy_main_id": "9.3",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "secondary_leaf=1.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 98,
+        "label": "Stepping Out of The Shower",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "secondary_leaf=1.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 99,
+        "label": "Promises About Forgetting",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 100,
+        "label": "Promising to Find Her",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "secondary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 102,
+        "label": "Grief Etched on His Face",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.2",
+        "heuristic_notes": "primary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 103,
+        "label": "Last Honest Conversation Before Parting",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "noise",
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 104,
+        "label": "Stepping Out of Panties and Jeans",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.6",
+        "heuristic_notes": "secondary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 109,
+        "label": "Seeing Past A Guarded Identity",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 119,
+        "label": "Offering to Keep Her Safe",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 120,
+        "label": "Suggesting Someone Take A Shower",
+        "taxonomy_main_id": "8.1",
+        "taxonomy_secondary_id": "8.3b",
+        "heuristic_notes": "proto:comfort",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 122,
+        "label": "Wound Bleeding and Blood Loss",
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "7.3",
+        "heuristic_notes": "primary_leaf=1.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 126,
+        "label": "Fingertips Stroking Her Cheek",
+        "taxonomy_main_id": "2.2",
+        "taxonomy_secondary_id": "1.7",
+        "heuristic_notes": "primary_leaf=2.2; secondary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 127,
+        "label": "Photographer Reviewing Pictures",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 128,
+        "label": "Confessing How Much You've Missed",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.1",
+        "heuristic_notes": "secondary_leaf=3.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 129,
+        "label": "Accused of Not Caring",
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 131,
+        "label": "Watching Faces For Reactions",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "4.3",
+        "heuristic_notes": "primary_leaf=1.7",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 136,
+        "label": "Declaring Nothing Else Matters",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 138,
+        "label": "Expressing Heartfelt Gratitude",
+        "taxonomy_main_id": "3.1",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.1",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 139,
+        "label": "Admiring Her Grace and Beauty",
+        "taxonomy_main_id": "2.1",
+        "taxonomy_secondary_id": "1.6",
+        "heuristic_notes": "secondary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 142,
+        "label": "Frowning With Troubled Thoughts",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=1.7; secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 143,
+        "label": "Complaining About Family Pressure",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 152,
+        "label": "Awkward Apology and Embarrassment",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "9.1",
+        "heuristic_notes": "primary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 154,
+        "label": "Heaving A Deep Sigh",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=1.1; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 157,
+        "label": "Swearing to Save Him From Himself",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 159,
+        "label": "Questioning Whether You Are Truly Happy",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 161,
+        "label": "Reassuring Squeeze on The Shoulder",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 163,
+        "label": "Scars Fading Over Time",
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=1.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 166,
+        "label": "Heart Skipping With Fear",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=1.1; secondary_leaf=3.2",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 170,
+        "label": "Staying Close Despite Long Separation",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "4.2",
+        "heuristic_notes": "primary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 172,
+        "label": "Reporting to The Security Officer",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "7.3",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 173,
+        "label": "Waiting For Him to Wake",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "8.4",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 175,
+        "label": "Gentleman Offers Steadying Support",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 177,
+        "label": "Seeing Past A Hidden Identity",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 179,
+        "label": "Dreading What You Stand to Lose",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=3.2; secondary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 185,
+        "label": "Promising to Handle It",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "secondary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 190,
+        "label": "Offering to Get Someone Cleaned Up",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "8.3b",
+        "heuristic_notes": "primary_leaf=4.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      },
+      {
+        "family": "emotion_embodiment",
+        "topic_id": 192,
+        "label": "Peeking Through The Window",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "8.2",
+        "heuristic_notes": "primary_leaf=1.6",
+        "n_signals": 1,
+        "source": "ees_emotion_embodiment_discovery"
+      }
+    ],
+    "family_social": [
+      {
+        "family": "family_social",
+        "topic_id": 59,
+        "label": "Mother's Disapproval Looms",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=5.1; proto:mother",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 75,
+        "label": "Talking About Being A Father",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=5.1; proto:father",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 81,
+        "label": "Mentioning A Brother",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=5.1; proto:brother",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 143,
+        "label": "Complaining About Family Pressure",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=5.1; proto:family,pressure",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 158,
+        "label": "Mentioning A Friend to Family",
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "primary_leaf=5.2; proto:parent,family,friend",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 161,
+        "label": "Reassuring Squeeze on The Shoulder",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1; proto:support",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 175,
+        "label": "Gentleman Offers Steadying Support",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2; proto:support",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 204,
+        "label": "Promising to Care For Her Sister",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1; proto:sister,mother,family",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 220,
+        "label": "Called Out For Being Embarrassing",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1; proto:pressure",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 243,
+        "label": "Talking About The Family Aunt",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "9.3",
+        "heuristic_notes": "primary_leaf=5.1; proto:family",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 289,
+        "label": "Quick Peck on The Forehead",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1; proto:child",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 299,
+        "label": "Pledging to Have Your Back",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2; proto:friend,support",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 335,
+        "label": "Killer Targets Someone Alone",
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1; proto:pressure",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 371,
+        "label": "Defending Someone Under Pressure",
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "4.2",
+        "heuristic_notes": "primary_leaf=5.2; proto:pressure",
+        "n_signals": 2,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 1,
+        "label": "Straps Sliding Down Her Arms",
+        "taxonomy_main_id": "2.3",
+        "taxonomy_secondary_id": "2.2",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 23,
+        "label": "Gasping For Calming Breaths",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 31,
+        "label": "Keeping Watch While Others Sleep",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 66,
+        "label": "Paralyzed By Deep-Seated Fear",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:child",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 68,
+        "label": "Promising to Set Things Straight",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 82,
+        "label": "Touch Her and Your Family Suffers",
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "7.4",
+        "heuristic_notes": "proto:family",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 91,
+        "label": "Arguing Over Guns and Weapons",
+        "taxonomy_main_id": "7.1",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 107,
+        "label": "Gritted Teeth and Clenched Fists",
+        "taxonomy_main_id": "1.1",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 132,
+        "label": "Ribs Pounding With Inner Pain",
+        "taxonomy_main_id": "1.2",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 137,
+        "label": "Pitching A Career Change",
+        "taxonomy_main_id": "6.2",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 141,
+        "label": "Warned to Use His Title",
+        "taxonomy_main_id": "6.3",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 145,
+        "label": "Confessing How Much It Hurts",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 148,
+        "label": "Banished From The Ranch",
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 167,
+        "label": "Planning A Wedding Reception",
+        "taxonomy_main_id": "5.3a",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 193,
+        "label": "Nurse Arranged After Hospital Release",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 194,
+        "label": "Promising to Keep A Secret",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "9.2",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 210,
+        "label": "Expelled For Pursuing A Relationship",
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 231,
+        "label": "Struggling to Surrender Control",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.4",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 237,
+        "label": "Hiding Someone Before He Arrives",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 239,
+        "label": "Keeping Someone Guarded and Entertained",
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 248,
+        "label": "Arranging A Cover Story",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 251,
+        "label": "Remarking on An Age Gap",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 273,
+        "label": "Mentor Gives Firm Instructions",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 284,
+        "label": "Necks on The Line Together",
+        "taxonomy_main_id": "7.3",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 285,
+        "label": "Confessing Years of Hatred",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 286,
+        "label": "Trying to Regain Good Graces",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 291,
+        "label": "Eyes Closed in Private Longing",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "proto:children",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 292,
+        "label": "Erection Straining Against His Trousers",
+        "taxonomy_main_id": "2.3",
+        "taxonomy_secondary_id": "1.1",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 294,
+        "label": "Accepting Whatever Punishment Is Deserved",
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 312,
+        "label": "Travis Brags Before The Rodeo",
+        "taxonomy_main_id": "noise",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:mother",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 313,
+        "label": "Racing to Break The Curse",
+        "taxonomy_main_id": "10.1",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 315,
+        "label": "Claiming Her As His Own",
+        "taxonomy_main_id": "4.7",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 316,
+        "label": "Snapping Over Money and Control",
+        "taxonomy_main_id": "4.4",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 326,
+        "label": "Discovering She Is Pregnant",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "4.3",
+        "heuristic_notes": "primary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 340,
+        "label": "Patience Tested Through Small Trials",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "secondary_leaf=5.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 346,
+        "label": "Delivering Urgent News in Secret",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 347,
+        "label": "Saying Goodnight Before Bed",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:pressure",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 348,
+        "label": "Tense Exchange and Held Temper",
+        "taxonomy_main_id": "7.1",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 354,
+        "label": "Threatening to Bite Someone's Nose",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "secondary_leaf=7.1",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      },
+      {
+        "family": "family_social",
+        "topic_id": 357,
+        "label": "Arguing Over The Local Club",
+        "taxonomy_main_id": "7.1",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "primary_leaf=7.1; secondary_leaf=5.2",
+        "n_signals": 1,
+        "source": "ees_family_social_discovery"
+      }
+    ],
+    "cognition_screen": [
+      {
+        "family": "cognition_screen",
+        "topic_id": 287,
+        "label": "Pleading With God Through Struggle",
+        "taxonomy_main_id": "3.4",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.4; proto:god",
+        "n_signals": 2,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 4,
+        "label": "Refusing to Be Used",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.4",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 21,
+        "label": "Deciding Whether to Stay or Leave",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 34,
+        "label": "Giving Up Academic Ambitions",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 44,
+        "label": "Admitting Something Is Hard",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 50,
+        "label": "Questioning What You Believe",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 55,
+        "label": "Worrying About An Unplanned Pregnancy",
+        "taxonomy_main_id": "2.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 60,
+        "label": "Standing Firm on A Decision",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 62,
+        "label": "Admitting You've Been Stupid",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 64,
+        "label": "Confronting A Lifelong Fear",
+        "taxonomy_main_id": "3.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 75,
+        "label": "Talking About Being A Father",
+        "taxonomy_main_id": "5.1",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 80,
+        "label": "Declaring Exactly What You Want",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=9.4; secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 95,
+        "label": "Acknowledging How Much Has Changed",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 99,
+        "label": "Promises About Forgetting",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 109,
+        "label": "Seeing Past A Guarded Identity",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 136,
+        "label": "Declaring Nothing Else Matters",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=9.4; secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 142,
+        "label": "Frowning With Troubled Thoughts",
+        "taxonomy_main_id": "1.7",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 157,
+        "label": "Swearing to Save Him From Himself",
+        "taxonomy_main_id": "4.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 159,
+        "label": "Questioning Whether You Are Truly Happy",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 169,
+        "label": "Mulling Over A Proposal",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:think",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 177,
+        "label": "Seeing Past A Hidden Identity",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 201,
+        "label": "Admitting You Are Gay",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 207,
+        "label": "Reluctant Errand Under Duress",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "9.4",
+        "heuristic_notes": "primary_leaf=3.3; secondary_leaf=9.4",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 213,
+        "label": "Choosing Sex Without Commitment",
+        "taxonomy_main_id": "2.5",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 215,
+        "label": "Confessing A Run of Bad Luck",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 226,
+        "label": "Eyes Closed on Command",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "1.7",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 231,
+        "label": "Struggling to Surrender Control",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.4",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 251,
+        "label": "Remarking on An Age Gap",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 257,
+        "label": "Withholding An Answer",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "4.3",
+        "heuristic_notes": "primary_leaf=9.4",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 262,
+        "label": "Remarking on An Unusual Situation",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=9.4",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 263,
+        "label": "Weighing A Roster of Options",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.1",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 274,
+        "label": "Pausing Unsure What to Say",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "primary_leaf=9.4; secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 276,
+        "label": "Asking For A Moment",
+        "taxonomy_main_id": "9.4",
+        "taxonomy_secondary_id": "9.1",
+        "heuristic_notes": "primary_leaf=9.4",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 278,
+        "label": "Irritation Fading Into Distraction",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.4",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 282,
+        "label": "Struggling to Surrender Control",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.6",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 291,
+        "label": "Eyes Closed in Private Longing",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "3.2",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 301,
+        "label": "Confessing A Thin Relationship History",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 306,
+        "label": "Accepting Blame For Your Own Actions",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "4.3",
+        "heuristic_notes": "primary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 311,
+        "label": "Promises About The Future",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": "3.4",
+        "heuristic_notes": "secondary_leaf=3.4",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      },
+      {
+        "family": "cognition_screen",
+        "topic_id": 313,
+        "label": "Racing to Break The Curse",
+        "taxonomy_main_id": "10.1",
+        "taxonomy_secondary_id": "3.3",
+        "heuristic_notes": "secondary_leaf=3.3",
+        "n_signals": 1,
+        "source": "ees_cognition_screen_discovery"
+      }
+    ],
+    "work_screen": [
+      {
+        "family": "work_screen",
+        "topic_id": 79,
+        "label": "Talking About Music Careers",
+        "taxonomy_main_id": "6.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.2; proto:career",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 112,
+        "label": "Desperate Need For A Job",
+        "taxonomy_main_id": "6.4",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "primary_leaf=6.4; secondary_leaf=6.2; proto:job,work",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 137,
+        "label": "Pitching A Career Change",
+        "taxonomy_main_id": "6.2",
+        "taxonomy_secondary_id": "5.2",
+        "heuristic_notes": "primary_leaf=6.2; proto:career",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 158,
+        "label": "Mentioning A Friend to Family",
+        "taxonomy_main_id": "5.2",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "secondary_leaf=6.2; proto:work",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 178,
+        "label": "Pitching A New Business Idea",
+        "taxonomy_main_id": "6.1b",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.1b; proto:business",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 191,
+        "label": "Working to Pay The Bills",
+        "taxonomy_main_id": "6.2",
+        "taxonomy_secondary_id": "6.4",
+        "heuristic_notes": "primary_leaf=6.2; secondary_leaf=6.4; proto:job",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 320,
+        "label": "Called Into Court Today",
+        "taxonomy_main_id": "6.5",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.5; proto:court",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 360,
+        "label": "Striking A Deal",
+        "taxonomy_main_id": "6.1b",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.1b; proto:deal",
+        "n_signals": 2,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 10,
+        "label": "Doctor Gives Medical Instructions",
+        "taxonomy_main_id": "6.5",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.5",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 18,
+        "label": "Ordering A Gown For Her",
+        "taxonomy_main_id": "1.6",
+        "taxonomy_secondary_id": "6.6",
+        "heuristic_notes": "secondary_leaf=6.6",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 22,
+        "label": "Negotiating Payment and Debts",
+        "taxonomy_main_id": "6.1b",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "primary_leaf=6.1b",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 34,
+        "label": "Giving Up Academic Ambitions",
+        "taxonomy_main_id": "3.3",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "secondary_leaf=6.2",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 110,
+        "label": "Promising to Figure It Out",
+        "taxonomy_main_id": "9.2",
+        "taxonomy_secondary_id": null,
+        "heuristic_notes": "proto:work",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 121,
+        "label": "Revealing Plans to The Prince",
+        "taxonomy_main_id": "4.3",
+        "taxonomy_secondary_id": "10.2",
+        "heuristic_notes": "proto:court",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 140,
+        "label": "Demanding Answers Before Departure",
+        "taxonomy_main_id": "6.6",
+        "taxonomy_secondary_id": "4.2",
+        "heuristic_notes": "primary_leaf=6.6",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 141,
+        "label": "Warned to Use His Title",
+        "taxonomy_main_id": "6.3",
+        "taxonomy_secondary_id": "7.1",
+        "heuristic_notes": "primary_leaf=6.3",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 147,
+        "label": "Painting A House to Sell",
+        "taxonomy_main_id": "6.1b",
+        "taxonomy_secondary_id": "8.2",
+        "heuristic_notes": "primary_leaf=6.1b",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 189,
+        "label": "Grateful Student Acknowledges A Mentor",
+        "taxonomy_main_id": "6.3",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "primary_leaf=6.3; secondary_leaf=6.2",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 249,
+        "label": "Threatened With Arrest and Jail",
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "6.5",
+        "heuristic_notes": "secondary_leaf=6.5",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 269,
+        "label": "Waiting For Lab Results",
+        "taxonomy_main_id": "7.2",
+        "taxonomy_secondary_id": "6.5",
+        "heuristic_notes": "secondary_leaf=6.5",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 275,
+        "label": "Joking About Military Service",
+        "taxonomy_main_id": "9.3",
+        "taxonomy_secondary_id": "6.2",
+        "heuristic_notes": "secondary_leaf=6.2",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 277,
+        "label": "Promising to Handle The Lawyer",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "9.2",
+        "heuristic_notes": "proto:deal",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 340,
+        "label": "Patience Tested Through Small Trials",
+        "taxonomy_main_id": "4.6",
+        "taxonomy_secondary_id": "5.1",
+        "heuristic_notes": "proto:work",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 345,
+        "label": "Older Man Trading Shelter For Sex",
+        "taxonomy_main_id": "7.4",
+        "taxonomy_secondary_id": "6.4",
+        "heuristic_notes": "secondary_leaf=6.4",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 363,
+        "label": "Asking The Sheriff For Help",
+        "taxonomy_main_id": "10.3",
+        "taxonomy_secondary_id": "6.5",
+        "heuristic_notes": "secondary_leaf=6.5",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      },
+      {
+        "family": "work_screen",
+        "topic_id": 367,
+        "label": "Sorting Out Concert Tickets",
+        "taxonomy_main_id": "4.2",
+        "taxonomy_secondary_id": "8.3b",
+        "heuristic_notes": "proto:work",
+        "n_signals": 1,
+        "source": "ees_work_screen_discovery"
+      }
+    ]
+  },
+  "note": "Candidates retrieved from full mapped topic set via leaf \u222a secondary \u222a lexical prototypes. Survivors are seeds for questions only."
+}

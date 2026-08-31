@@ -24,6 +24,7 @@ Prompts are hypothesis-specific (not one giant multi-criterion prompt). Shared e
 | `12_exploratory_security_care_appearance` | **Exploratory only** — nested security/care/appearance definitions (does not alter H1–H6) |
 | `13_final_statistical_tests` | **Confirmatory final** — only reportable H1–H6 inferential results (author-cluster CIs; do not redefine constructs after running) |
 | `14_exploratory_presentation_results` | **Exploratory presentation** — reuses NB12 tables; adds thematic richness, waterfall, dose-response, residual Goodreads, genre/era heatmap, examples (does not alter NB13 verdicts) |
+| `15_emotion_embodiment_social_world_exploration` | **Post-hoc exploratory** — emotion functions, felt vs looked-at body, family/social embeddedness (survivors seed questions only; does not alter H1–H6) |
 
 Edit `_src/*.py`, then:
 
@@ -95,7 +96,22 @@ bash scripts/stage11/apply_h3_h4_manual_freeze.sh
 
 See `human_review/post_freeze_claim_hierarchy.md` for confirmatory vs exploratory claims.
 
-**Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Neither 12 nor 14 changes H1–H6 confirmatory verdicts.
+**Claim boundary:** Notebook **13** decides what you can claim. Notebook **12** is the security/care deep-dive source; Notebook **14** reuses it for presentation and adds residual Goodreads / dose-response / attention figures. Notebook **15** is a separate post-hoc exploration of emotion/embodiment/social world (full-corpus candidate retrieval; rating-blind coding; provisional freeze until `frozen: true`). None of 12, 14, or 15 changes H1–H6 confirmatory verdicts.
+
+### Notebook 15 — emotion / embodiment / social world
+
+```bash
+# Candidates (leaf ∪ lexical prototypes; no embeddings)
+.venv/bin/python src/stage11_refined_construct_analysis/pipeline/09_build_ees_candidates.py
+
+# Single-pass LLM coding (rating-blind packets); use --dry-run without API key
+.venv/bin/python src/stage11_refined_construct_analysis/pipeline/10_run_ees_coding.py
+# After human freeze: edit configs/stage11/exploratory_emotion_embodiment_social_world.yaml
+# set frozen: true, then re-run the notebook.
+```
+
+Config: `configs/stage11/exploratory_emotion_embodiment_social_world.yaml`  
+Artifacts: `results/.../ees_exploration/` and `notebook_analysis/15_emotion_embodiment_social_world_exploration/`.
 
 ### H4 manual freeze (26 atom topics)
 
