@@ -71,6 +71,16 @@ Writes under `results/stage11_refined_construct_analysis/<run_id>/human_review/`
 - `stage11_human_review_all_topics.md`
 - `stage11_human_review_h{1..6}.md`
 
+### H4 manual freeze (26 atom topics)
+
+Lean checklist PDF for external protection + protective commitment + possession/control (no LLM rationales):
+
+```bash
+.venv/bin/python scripts/stage11/export_h4_manual_freeze_pdf.py
+# After filling decisions → h4_manual_freeze.json with frozen=true:
+bash scripts/stage11/apply_h4_manual_freeze.sh
+```
+
 Execute notebooks (outputs saved for GitHub):
 
 ```bash

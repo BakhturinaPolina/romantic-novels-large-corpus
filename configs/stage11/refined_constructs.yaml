@@ -46,6 +46,8 @@ outputs:
   stability_pilot_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/stability_pilot
   audits_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/audits
   human_review_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/human_review
+  # Filled after PDF review; applied on master rebuild when frozen=true
+  # (default path: <human_review_dir>/h4_manual_freeze.json)
   constructs_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/constructs
   book_features_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/book_features
   notebook_dir: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis
@@ -82,8 +84,9 @@ hypotheses:
     name: security_material
     mandatory_leaves: ["1.6", "4.6", "6.4", "6.6"]
     comparator_leaves: ["4.5", "4.2", "4.7", "5.3a", "8.3a", "8.2"]
-    # Discovery leaves are Nemo-triaged; only promoted IDs enter full Pass A/B/C.
-    spillover_discovery_leaves: ["6.5", "8.1", "5.1", "7.3"]
+    # Full-corpus multi-signal discovery (primary OR secondary); Nemo-triaged before Pass A/B/C.
+    # 1.6 excluded — appearance vs provision already settled.
+    spillover_discovery_leaves: ["6.5", "8.1", "5.1", "7.3", "6.2", "6.3", "6.4", "6.6"]
     prompt: configs/stage11/prompts/h3_security.yaml
   H4:
     name: protection_possession
@@ -156,11 +159,53 @@ evidence:
 # ---------------------------------------------------------------------------
 spillover:
   prompt: configs/stage11/prompts/spillover_triage.yaml
+  h3_prompt: configs/stage11/prompts/h3_spillover_triage.yaml
   h4_prompt: configs/stage11/prompts/h4_spillover_triage.yaml
   max_tokens: 400
   h1_max_candidates: 40
   h1_sexual_explicitness: [explicit, suggestive]
   h1_sexual_functions: [explicit_contact, erotic_tension, affection]
+  h3_max_candidates: 40
+  h3_mechanic_tags: [economic_power, domestic_care]
+  h3_lexical_prototypes:
+    - money
+    - pay for
+    - rent
+    - mortgage
+    - afford
+    - purchase
+    - bills
+    - debt
+    - inheritance
+    - salary
+    - wage
+    - wages
+    - wealthy
+    - financial
+    - tuition
+    - medical bills
+    - medical costs
+    - medical expenses
+    - provider
+    - provide for
+    - allowance
+    - paycheck
+    - housing
+    - shelter
+    - place to stay
+    - place to live
+    - roof over
+    - necessities
+    - necessity
+    - employment
+  # Weak alone is not enough; needs a second signal type to qualify.
+  h3_weak_lexical_prototypes:
+    - house
+    - home
+    - job
+    - buy
+    - pay
+    - rich
   h4_max_candidates: 80
   h4_mechanic_tags: [protective_care, external_threat]
   h4_lexical_prototypes:
@@ -259,3 +304,6 @@ stage10_delta_freeze:
 weights:
   strict_dominance: 0.70
   epsilon: 1.0e-6
+
+# Optional override path for H4 human KEEP/REMOVE (default: <human_review_dir>/h4_manual_freeze.json)
+# h4_manual_freeze_path: results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/human_review/h4_manual_freeze.json
