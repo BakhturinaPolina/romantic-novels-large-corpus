@@ -1,0 +1,24 @@
+---
+description: Presentation layer integrity rules for Stage 11 deck figures
+globs:
+  - src/stage11_refined_construct_analysis/analysis/presentation_suite/**
+  - scripts/presentation/**
+  - notebooks/09_presentation/**
+  - results/presentation/**
+---
+
+# Presentation analysis rules
+
+- Never recompute or alter statistical results solely for presentation.
+- Presentation code may select, rename, order, filter, reshape, or combine existing outputs.
+- Every presentation figure must record its source table in manifests.
+- Never represent an unmeasurable effect as zero (H2/H3 are categorical unmeasurable).
+- H2/H3 Stage 11 primary results are unmeasurable, not null.
+- |Cliff's δ| >= 0.11 is the prespecified effect-size gate, not a p-value threshold.
+- Open markers indicate thin measurement; grey/× indicates unmeasurable.
+- Exploratory EES, attention, richness and quality/reach analyses must be labeled EXPLORATORY.
+- Component effects must not be described as confirmation of parent H1–H6.
+- Export every final chart as PNG + SVG + PDF.
+- Save underlying presentation data as CSV before plotting.
+- Never hard-code raw RAX/RLR/EES feature names into audience-facing figures; use theme_dictionary.csv.
+- Danger×protection interaction is non-significant — do not use as main-slide evidence.

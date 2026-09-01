@@ -320,3 +320,115 @@ def run_all_validations(
     if errors and raise_on_error:
         raise PresentationValidationError("\n".join(errors))
     return errors
+
+
+V2_MAIN_FIGURES = [
+    "slide04_pareto_selection",
+    "slide06_context_measurement",
+    "slide07_primary_verdict_cards",
+    "slide08_component_effects",
+    "slide09_attention_shift",
+    "slide10_quality_reach_dumbbell",
+    "slide11_richness_evidence",
+    "slide12_ees_integrated",
+]
+
+V2_DATA_CSVS = [
+    "slide08_component_effects.csv",
+    "slide06_agreement.csv",
+    "slide06_measurement.csv",
+    "slide07_primary_verdicts.csv",
+    "slide10_quality_reach.csv",
+    "slide11_richness_story.csv",
+]
+
+
+def validate_v2_figures_exist(paths: PresentationPaths | None = None) -> List[str]:
+    paths = paths or default_paths()
+    errors: List[str] = []
+    for stem in V2_MAIN_FIGURES:
+        for ext in ("png", "svg", "pdf"):
+            p = paths.deck_figures / f"{stem}.{ext}"
+            if not p.exists():
+                errors.append(f"Missing v2 figure: {p}")
+            elif p.stat().st_size < 500:
+                errors.append(f"V2 figure too small: {p}")
+    return errors
+
+
+def validate_v2_data_files(paths: PresentationPaths | None = None) -> List[str]:
+    paths = paths or default_paths()
+    errors: List[str] = []
+    for name in V2_DATA_CSVS:
+        p = paths.deck_data / name
+        if not p.exists():
+            errors.append(f"Missing v2 data: {p}")
+    manifest = paths.deck_manifests / "slide_manifest.csv"
+    if not manifest.exists():
+        errors.append(f"Missing slide_manifest: {manifest}")
+    fig_manifest = paths.deck_manifests / "figure_manifest.csv"
+    if not fig_manifest.exists():
+        errors.append(f"Missing figure_manifest: {fig_manifest}")
+    return errors
+
+
+def validate_no_raw_labels_in_display(paths: PresentationPaths | None = None) -> List[str]:
+    paths = paths or default_paths()
+    errors: List[str] = []
+    comp_path = paths.deck_data / "slide08_component_effects.csv"
+    if not comp_path.exists():
+        return errors
+    df = pd.read_csv(comp_path)
+    label_col = "display_label" if "display_label" in df.columns else "label"
+    for val in df[label_col].astype(str):
+        if val.startswith("RAX_") or val.startswith("RLR_") or val.startswith("EES_"):
+            errors.append(f"Raw feature name in display label: {val}")
+    return errors
+
+
+def validate_v2_slide_data_provenance(paths: PresentationPaths | None = None) -> List[str]:
+    paths = paths or default_paths()
+    errors: List[str] = []
+    src_comp = _read_table(paths.table("13_final_statistical_tests", "component_effects")).set_index("feature")
+    slide08 = paths.deck_data / "slide08_component_effects.csv"
+    if slide08.exists():
+        df = pd.read_csv(slide08)
+        for _, r in df.iterrows():
+            feat = str(r["feature"])
+            if feat not in src_comp.index:
+                continue
+            sc = src_comp.loc[feat]
+            if not _close(r["effect_size"], sc["cliffs_delta"]):
+                errors.append(f"slide08 {feat} effect_size drift")
+            if not _close(r["ci_low"], sc["ci_low"]):
+                errors.append(f"slide08 {feat} ci_low drift")
+    primary = paths.deck_data / "slide07_primary_verdicts.csv"
+    if primary.exists():
+        df = pd.read_csv(primary)
+        for h in ("H2", "H3"):
+            row = df.loc[df["hypothesis"] == h].iloc[0]
+            if row["measurement_status"] != "unmeasurable":
+                errors.append(f"slide07 {h} must be unmeasurable")
+            if pd.notna(row.get("effect_size")) and float(row["effect_size"]) == 0.0:
+                errors.append(f"slide07 {h} unmeasurable encoded as zero")
+    return errors
+
+
+def run_v2_validations(
+    frames: Dict[str, pd.DataFrame],
+    paths: PresentationPaths | None = None,
+    *,
+    raise_on_error: bool = True,
+) -> List[str]:
+    paths = paths or default_paths()
+    errors = (
+        validate_v2_figures_exist(paths)
+        + validate_v2_data_files(paths)
+        + validate_no_raw_labels_in_display(paths)
+        + validate_v2_slide_data_provenance(paths)
+    )
+    # Also run core frame checks on upstream metadata
+    errors += validate_frames(frames)
+    if errors and raise_on_error:
+        raise PresentationValidationError("\n".join(errors))
+    return errors

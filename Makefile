@@ -1,6 +1,10 @@
 # Makefile for stage-based pipeline
 
-.PHONY: inventory contracts stage01 stage02 stage03 stage05 stage06 stage07 experiments pareto topics analysis all
+.PHONY: inventory contracts stage01 stage02 stage03 stage05 stage06 stage07 experiments pareto topics analysis all presentation
+
+presentation:
+	.venv/bin/python scripts/presentation/build_presentation_assets.py --deck all
+	.venv/bin/python scripts/presentation/build_presentation_review.py
 
 inventory:
 	@echo "Repository structure inventory"

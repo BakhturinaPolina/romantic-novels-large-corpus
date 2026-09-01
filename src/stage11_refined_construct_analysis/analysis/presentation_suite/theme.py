@@ -7,6 +7,7 @@ from typing import Iterable, Sequence
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Colorblind-safe (Tol-inspired) categorical palette
 C_POS = "#0072B2"
@@ -97,14 +98,66 @@ def set_title_with_subtitle(
         ax.set_title(title, fontsize=title_size, loc=loc if loc in ("left", "center", "right") else "center")
 
 
-def save_figure(fig: plt.Figure, out_dir: Path, stem: str) -> list[Path]:
+def format_delta(value: float | None, *, decimals: int = 2) -> str:
+    """Two-decimal presentation label for Cliff's δ."""
+    if value is None or (isinstance(value, float) and np.isnan(value)):
+        return "—"
+    sign = "+" if value > 0 else "−" if value < 0 else ""
+    return f"{sign}{abs(value):.{decimals}f}"
+
+
+def gate_band(ax, *, orientation: str = "vertical", alpha: float = 0.12) -> None:
+    """Shaded region for prespecified effect-size gate (below |δ| = 0.11)."""
+    lo, hi = -EFFECT_GATE, EFFECT_GATE
+    if orientation == "vertical":
+        ax.axvspan(lo, hi, color="#cccccc", alpha=alpha, zorder=0)
+    else:
+        ax.axhspan(lo, hi, color="#cccccc", alpha=alpha, zorder=0)
+
+
+def exploratory_tag(ax, text: str = "EXPLORATORY", *, x: float = 0.99, y: float = 0.98) -> None:
+    ax.text(
+        x,
+        y,
+        text,
+        transform=ax.transAxes,
+        ha="right",
+        va="top",
+        fontsize=8,
+        color=C_EXPL,
+        fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor=C_EXPL, linewidth=0.8),
+        clip_on=False,
+    )
+
+
+def verdict_card_style(status: str) -> dict:
+    """Return facecolor, edgecolor, text_color for verdict cards."""
+    s = (status or "").lower()
+    if s == "unmeasurable":
+        return {"facecolor": "#eeeeee", "edgecolor": C_UNMEAS, "color": C_UNMEAS}
+    if s == "thin":
+        return {"facecolor": "#fff8e6", "edgecolor": C_THIN, "color": C_NEUTRAL}
+    if s in ("contradicted", "not_supported"):
+        return {"facecolor": "#fde8e0", "edgecolor": C_NEG, "color": C_NEUTRAL}
+    return {"facecolor": "#e8f4fc", "edgecolor": C_POS, "color": C_NEUTRAL}
+
+
+def save_figure(
+    fig: plt.Figure,
+    out_dir: Path,
+    stem: str,
+    *,
+    close: bool = True,
+) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
-    for ext in ("png", "pdf"):
+    for ext in ("png", "svg", "pdf"):
         p = out_dir / f"{stem}.{ext}"
         fig.savefig(p, bbox_inches="tight", pad_inches=0.35)
         paths.append(p)
-    plt.close(fig)
+    if close:
+        plt.close(fig)
     return paths
 
 
