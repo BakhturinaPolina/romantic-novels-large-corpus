@@ -174,6 +174,8 @@ spillover:
   h1_sexual_explicitness: [explicit, suggestive]
   h1_sexual_functions: [explicit_contact, erotic_tension, affection]
   h3_max_candidates: 40
+  # Pre-discovery strict S8/S9 topics excluded from material spillover triage bill.
+  h3_already_strict_material_topic_ids: [17]
   h3_mechanic_tags: [economic_power, domestic_care]
   h3_lexical_prototypes:
     - money

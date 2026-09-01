@@ -325,11 +325,11 @@ def run_all_validations(
 V2_MAIN_FIGURES = [
     "slide04_pareto_selection",
     "slide06_context_measurement",
-    "slide07_primary_verdict_cards",
+    "slide07_primary_verdict_preview",
     "slide08_component_effects",
     "slide09_attention_shift",
     "slide10_quality_reach_dumbbell",
-    "slide11_richness_evidence",
+    "slide11_richness_preview",
     "slide12_ees_integrated",
 ]
 
@@ -414,6 +414,11 @@ def validate_v2_slide_data_provenance(paths: PresentationPaths | None = None) ->
     return errors
 
 
+def validate_categorical_axes() -> List[str]:
+    """Lightweight hook: categorical y-axis tests live in pytest (test_categorical_y_axis.py)."""
+    return []
+
+
 def run_v2_validations(
     frames: Dict[str, pd.DataFrame],
     paths: PresentationPaths | None = None,
@@ -426,6 +431,7 @@ def run_v2_validations(
         + validate_v2_data_files(paths)
         + validate_no_raw_labels_in_display(paths)
         + validate_v2_slide_data_provenance(paths)
+        + validate_categorical_axes()
     )
     # Also run core frame checks on upstream metadata
     errors += validate_frames(frames)

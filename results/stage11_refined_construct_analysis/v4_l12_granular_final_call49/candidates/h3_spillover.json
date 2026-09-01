@@ -1,19 +1,13 @@
 {
   "hypothesis": "H3",
-  "n_candidates": 40,
-  "n_promoted": 12,
+  "n_candidates": 6,
+  "n_promoted": 6,
   "promoted_topic_ids": [
-    10,
     22,
-    27,
     112,
-    137,
-    140,
-    141,
-    143,
+    190,
     191,
     193,
-    316,
     345
   ],
   "rows": [
@@ -23,7 +17,7 @@
       "include": true,
       "confidence": null,
       "suggested_code_family": "money_provision",
-      "rationale": "The topic's keywords and flags ('paying', 'provide', 'afford', 'paid', 'cost', 'buying', 'mechanic:economic_power', 'proto:money,pay for,bills') strongly suggest a relationship-directed transfer of money, making it a candidate for a material/economic security audit.",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 22,
         "taxonomy_main_id": "6.1b",
@@ -35,23 +29,20 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 22,
-        "relationship_directed_transfer": "yes",
+        "relationship_directed_transfer": "unclear",
         "provision_function": "money_provision",
         "main_couple_target": "unclear",
         "exclude_reason": "none",
         "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "paying",
-          "provide",
-          "afford",
-          "paid",
-          "cost",
-          "buying"
+          "mechanic:economic_power; proto:money,pay for,bills; weak_proto:pay"
         ],
-        "rationale": "The topic's keywords and flags ('paying', 'provide', 'afford', 'paid', 'cost', 'buying', 'mechanic:economic_power', 'proto:money,pay for,bills') strongly suggest a relationship-directed transfer of money, making it a candidate for a material/economic security audit."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     },
     {
@@ -60,7 +51,7 @@
       "include": true,
       "confidence": null,
       "suggested_code_family": "money_provision",
-      "rationale": "The topic revolves around work and employment, with keywords like 'job', 'business', 'company', 'work', 'hire', and 'living'. The keyword 'spending' and 'ability' suggest financial aspects, but it's unclear if the money is specifically used for a partner. However, the topic's main focus on couple-related keywords ('living') and the presence of 'spending' and 'ability' warrant a full audit to clarify if the financial aspects are relationship-directed.",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 112,
         "taxonomy_main_id": "6.4",
@@ -72,35 +63,29 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 112,
         "relationship_directed_transfer": "unclear",
         "provision_function": "money_provision",
-        "main_couple_target": "yes",
+        "main_couple_target": "unclear",
         "exclude_reason": "none",
         "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "job",
-          "business",
-          "company",
-          "work",
-          "hire",
-          "living",
-          "ability",
-          "task",
-          "spending"
+          "primary_leaf=6.4; secondary_leaf=6.2; proto:employment; weak_proto:job"
         ],
-        "rationale": "The topic revolves around work and employment, with keywords like 'job', 'business', 'company', 'work', 'hire', and 'living'. The keyword 'spending' and 'ability' suggest financial aspects, but it's unclear if the money is specifically used for a partner. However, the topic's main focus on couple-related keywords ('living') and the presence of 'spending' and 'ability' warrant a full audit to clarify if the financial aspects are relationship-directed."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     },
     {
       "hypothesis": "H3",
       "topic_id": 190,
-      "include": false,
+      "include": true,
       "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic primarily revolves around cleaning and maintaining a clean environment, which is a form of practical care but does not involve a transfer of material or economic security between partners. The keyword 'paying' is present, but it's not clear if it's used in the context of providing for a partner.",
+      "suggested_code_family": "money_provision",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 190,
         "taxonomy_main_id": "4.6",
@@ -112,22 +97,20 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 190,
         "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "no",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
+        "provision_function": "money_provision",
+        "main_couple_target": "unclear",
+        "exclude_reason": "none",
+        "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "clean",
-          "cleaning",
-          "cleaners",
-          "mess",
-          "freshen"
+          "mechanic:domestic_care; proto:pay for; weak_proto:pay"
         ],
-        "rationale": "The topic primarily revolves around cleaning and maintaining a clean environment, which is a form of practical care but does not involve a transfer of material or economic security between partners. The keyword 'paying' is present, but it's not clear if it's used in the context of providing for a partner."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     },
     {
@@ -136,7 +119,7 @@
       "include": true,
       "confidence": null,
       "suggested_code_family": "money_provision",
-      "rationale": "The topic's keywords ('paid', 'bills', 'fund', 'earned') suggest a transfer of financial resources, indicating a relationship-directed provision of material security.",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 191,
         "taxonomy_main_id": "6.2",
@@ -148,21 +131,20 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 191,
-        "relationship_directed_transfer": "yes",
+        "relationship_directed_transfer": "unclear",
         "provision_function": "money_provision",
-        "main_couple_target": "yes",
+        "main_couple_target": "unclear",
         "exclude_reason": "none",
         "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "paid",
-          "bills",
-          "fund",
-          "earned"
+          "primary_leaf=6.2; secondary_leaf=6.4; proto:bills; weak_proto:job,pay"
         ],
-        "rationale": "The topic's keywords ('paid', 'bills', 'fund', 'earned') suggest a transfer of financial resources, indicating a relationship-directed provision of material security."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     },
     {
@@ -170,8 +152,8 @@
       "topic_id": 193,
       "include": true,
       "confidence": null,
-      "suggested_code_family": "housing_provision",
-      "rationale": "The topic contains keywords like 'arrange', 'hovered', 'stares', and 'house', which suggest housing provision. However, it's unclear if this provision is relationship-directed. Therefore, I've set 'relationship_directed_transfer' to 'unclear' and still promote it for a full H3 audit.",
+      "suggested_code_family": "money_provision",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 193,
         "taxonomy_main_id": "4.6",
@@ -183,21 +165,20 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 193,
         "relationship_directed_transfer": "unclear",
-        "provision_function": "housing_provision",
-        "main_couple_target": "yes",
+        "provision_function": "money_provision",
+        "main_couple_target": "unclear",
         "exclude_reason": "none",
         "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "arrange",
-          "hovered",
-          "stares",
-          "house"
+          "mechanic:domestic_care; secondary_leaf=5.1; weak_proto:house"
         ],
-        "rationale": "The topic contains keywords like 'arrange', 'hovered', 'stares', and 'house', which suggest housing provision. However, it's unclear if this provision is relationship-directed. Therefore, I've set 'relationship_directed_transfer' to 'unclear' and still promote it for a full H3 audit."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     },
     {
@@ -205,8 +186,8 @@
       "topic_id": 345,
       "include": true,
       "confidence": null,
-      "suggested_code_family": "housing_provision",
-      "rationale": "The topic contains keywords suggesting a housing provision ('italian', 'informant', 'shelter', 'porch'), but it's unclear if this is relationship-directed. However, the main couple is targeted ('ilsa', 'dash'), so it's worth promoting for a full H3 audit.",
+      "suggested_code_family": "money_provision",
+      "rationale": "dry-run spillover H3",
       "candidate": {
         "topic_id": 345,
         "taxonomy_main_id": "7.4",
@@ -218,1223 +199,24 @@
         "source": "h3_full_corpus_material_discovery"
       },
       "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
+      "dry_run": true,
       "response": {
         "topic_id": 345,
         "relationship_directed_transfer": "unclear",
-        "provision_function": "housing_provision",
-        "main_couple_target": "yes",
-        "exclude_reason": "none",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "italian",
-          "informant",
-          "shelter",
-          "porch"
-        ],
-        "rationale": "The topic contains keywords suggesting a housing provision ('italian', 'informant', 'shelter', 'porch'), but it's unclear if this is relationship-directed. However, the main couple is targeted ('ilsa', 'dash'), so it's worth promoting for a full H3 audit."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 18,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "appearance",
-      "rationale": "The topic primarily revolves around clothing and appearance, with keywords like 'dress', 'wear', 'clothes', 'gown', 'suit', 'fitting', 'matching', and 'appropriate'. There's no evidence of a relationship-directed transfer of material or economic security, such as paying bills, providing housing, or financial support. The topic is more about fashion and appearance, which does not meet the criteria for a material security audit.",
-      "candidate": {
-        "topic_id": 18,
-        "taxonomy_main_id": "1.6",
-        "taxonomy_secondary_id": "6.6",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:economic_power; secondary_leaf=6.6",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 18,
-        "relationship_directed_transfer": "no",
-        "provision_function": "appearance",
-        "main_couple_target": "no",
-        "exclude_reason": "clothing_appearance",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "dress",
-          "wear",
-          "clothes",
-          "gown",
-          "suit",
-          "fitting",
-          "matching",
-          "appropriate"
-        ],
-        "rationale": "The topic primarily revolves around clothing and appearance, with keywords like 'dress', 'wear', 'clothes', 'gown', 'suit', 'fitting', 'matching', and 'appropriate'. There's no evidence of a relationship-directed transfer of material or economic security, such as paying bills, providing housing, or financial support. The topic is more about fashion and appearance, which does not meet the criteria for a material security audit."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 27,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "housing_provision",
-      "rationale": "The topic contains keywords related to housing provision such as 'shelter', 'lighting', 'curtain', and 'ceiling'. However, it's unclear if this provision is directed towards a partner in a relationship. Therefore, it's marked as 'unclear' for relationship_directed_transfer. Despite this, the topic should be promoted for a full H3 audit due to the presence of housing provision keywords.",
-      "candidate": {
-        "topic_id": 27,
-        "taxonomy_main_id": "7.3",
-        "taxonomy_secondary_id": "8.5",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=7.3; proto:shelter",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 27,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "housing_provision",
-        "main_couple_target": "no",
-        "exclude_reason": "off_target",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "proto:shelter",
-          "lighting",
-          "curtain",
-          "ceiling"
-        ],
-        "rationale": "The topic contains keywords related to housing provision such as 'shelter', 'lighting', 'curtain', and 'ceiling'. However, it's unclear if this provision is directed towards a partner in a relationship. Therefore, it's marked as 'unclear' for relationship_directed_transfer. Despite this, the topic should be promoted for a full H3 audit due to the presence of housing provision keywords."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 116,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around meal preparation and consumption, suggesting practical care, but there's no evidence of money or housing provision directed at a partner.",
-      "candidate": {
-        "topic_id": 116,
-        "taxonomy_main_id": "4.2",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care; secondary_leaf=8.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 116,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "feeding",
-          "preparing",
-          "eagerly",
-          "absently"
-        ],
-        "rationale": "The topic revolves around meal preparation and consumption, suggesting practical care, but there's no evidence of money or housing provision directed at a partner."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 153,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic primarily revolves around temperature and weather conditions, with no clear evidence of a relationship-directed transfer of material or economic security.",
-      "candidate": {
-        "topic_id": 153,
-        "taxonomy_main_id": "8.1",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=8.1; weak_proto:house",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 153,
-        "relationship_directed_transfer": "no",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "off_target",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "temperature",
-          "warmth",
-          "heated",
-          "comfortable"
-        ],
-        "rationale": "The topic primarily revolves around temperature and weather conditions, with no clear evidence of a relationship-directed transfer of material or economic security."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 182,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around serving and enjoying coffee together, which suggests practical care, but there's no evidence of money or housing provision. The 'mechanic:domestic_care' flag further supports this interpretation.",
-      "candidate": {
-        "topic_id": 182,
-        "taxonomy_main_id": "8.3b",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care; secondary_leaf=8.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 182,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "bringing coffee",
-          "invite",
-          "insisted"
-        ],
-        "rationale": "The topic revolves around serving and enjoying coffee together, which suggests practical care, but there's no evidence of money or housing provision. The 'mechanic:domestic_care' flag further supports this interpretation."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 235,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around domestic care activities like washing and cleaning, which are practical care tasks but do not involve a transfer of material or economic security between partners.",
-      "candidate": {
-        "topic_id": 235,
-        "taxonomy_main_id": "8.1",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care; primary_leaf=8.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 235,
-        "relationship_directed_transfer": "no",
-        "provision_function": "practical_care",
-        "main_couple_target": "no",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "washing",
-          "cleaning",
-          "bathroom",
-          "laundry"
-        ],
-        "rationale": "The topic revolves around domestic care activities like washing and cleaning, which are practical care tasks but do not involve a transfer of material or economic security between partners."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 289,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic's keywords and flags suggest a focus on non-verbal communication and emotional states, with no clear indication of material or economic security provision between partners.",
-      "candidate": {
-        "topic_id": 289,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": "5.1",
-        "sexual_explicitness": "affection_only",
-        "sexual_function": "nonsexual_affection",
-        "heuristic_notes": "mechanic:domestic_care; secondary_leaf=5.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 289,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "gesturing",
-          "glint",
-          "glimpse",
-          "trembled"
-        ],
-        "rationale": "The topic's keywords and flags suggest a focus on non-verbal communication and emotional states, with no clear indication of material or economic security provision between partners."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 316,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "money_provision",
-      "rationale": "The keywords 'spending', 'chose', 'disappointment', and 'failure' suggest a discussion about financial decisions and their impact on a relationship, indicating a potential transfer of material security.",
-      "candidate": {
-        "topic_id": 316,
-        "taxonomy_main_id": "4.4",
-        "taxonomy_secondary_id": "7.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:economic_power; proto:money",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 316,
-        "relationship_directed_transfer": "yes",
         "provision_function": "money_provision",
-        "main_couple_target": "yes",
-        "exclude_reason": "none",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "spending",
-          "chose",
-          "disappointment",
-          "failure"
-        ],
-        "rationale": "The keywords 'spending', 'chose', 'disappointment', and 'failure' suggest a discussion about financial decisions and their impact on a relationship, indicating a potential transfer of material security."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 340,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic mentions occasional emotional issues related to meals, suggesting practical care, but there's no clear transfer of money or housing for the partner.",
-      "candidate": {
-        "topic_id": 340,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": "5.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care; secondary_leaf=5.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 340,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "occasional, unhappy, emotionally",
-          "notes, current, issue, faces, meal, upset"
-        ],
-        "rationale": "The topic mentions occasional emotional issues related to meals, suggesting practical care, but there's no clear transfer of money or housing for the partner."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 355,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around domestic care and comfort, with keywords like 'blanket', 'comforter', 'wrapped', and 'draped'. However, there's no clear evidence of money or housing provision, making it 'practical_care_only'.",
-      "candidate": {
-        "topic_id": 355,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care; secondary_leaf=8.1",
-        "n_signals": 2,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 355,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "tucked",
-          "wrapped",
-          "lay",
-          "draped"
-        ],
-        "rationale": "The topic revolves around domestic care and comfort, with keywords like 'blanket', 'comforter', 'wrapped', and 'draped'. However, there's no clear evidence of money or housing provision, making it 'practical_care_only'."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 10,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "money_provision",
-      "rationale": "The topic revolves around medical treatment and care, which could imply financial support for a partner's medical expenses. However, it's unclear if this is directed towards a romantic partner. Therefore, 'relationship_directed_transfer' is set to 'unclear', but the topic is still promoted for a full H3 audit due to the potential 'money_provision'.",
-      "candidate": {
-        "topic_id": 10,
-        "taxonomy_main_id": "6.5",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=6.5",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 10,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "money_provision",
-        "main_couple_target": "yes",
-        "exclude_reason": "none",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "treatment",
-          "appointment",
-          "instructions",
-          "dr",
-          "provide"
-        ],
-        "rationale": "The topic revolves around medical treatment and care, which could imply financial support for a partner's medical expenses. However, it's unclear if this is directed towards a romantic partner. Therefore, 'relationship_directed_transfer' is set to 'unclear', but the topic is still promoted for a full H3 audit due to the potential 'money_provision'."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 16,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic primarily revolves around seating arrangements and body language, with no clear evidence of material or economic provision between partners.",
-      "candidate": {
-        "topic_id": 16,
-        "taxonomy_main_id": "uncertain_interpretable",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=8.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 16,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "objects_no_provision",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "sits",
-          "scooted",
-          "table",
-          "lap"
-        ],
-        "rationale": "The topic primarily revolves around seating arrangements and body language, with no clear evidence of material or economic provision between partners."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 30,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic revolves around horses and riding activities, with no clear evidence of material or economic security transfer between partners. Keywords like 'hitched', 'shed', and 'promises' do not indicate a relationship-directed provision of money or housing.",
-      "candidate": {
-        "topic_id": 30,
-        "taxonomy_main_id": "8.5",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=8.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 30,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "objects_no_provision",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "horse",
-          "mare",
-          "stallion",
-          "riding"
-        ],
-        "rationale": "The topic revolves around horses and riding activities, with no clear evidence of material or economic security transfer between partners. Keywords like 'hitched', 'shed', and 'promises' do not indicate a relationship-directed provision of money or housing."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 31,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around sleep and comfort, which could imply practical care, but there's no mention of money or housing transfer, so it's unclear if it's relationship-directed provision.",
-      "candidate": {
-        "topic_id": 31,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": "5.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 31,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "sleep",
-          "bed",
-          "asleep",
-          "wake",
-          "nap",
-          "rested",
-          "comfortable"
-        ],
-        "rationale": "The topic revolves around sleep and comfort, which could imply practical care, but there's no mention of money or housing transfer, so it's unclear if it's relationship-directed provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 33,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic revolves around werewolves and their behaviors, with no clear evidence of material or economic security provision between a couple. Keywords like 'rip', 'growl', and 'threats' suggest a focus on danger and conflict, not mutual support. The 'promises' keyword could hint at a relationship, but it's unclear if these promises involve material provision.",
-      "candidate": {
-        "topic_id": 33,
-        "taxonomy_main_id": "10.1",
-        "taxonomy_secondary_id": "7.3",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=7.3",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 33,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "wolves",
-          "werewolf",
-          "pack",
-          "alpha",
-          "human",
-          "animal"
-        ],
-        "rationale": "The topic revolves around werewolves and their behaviors, with no clear evidence of material or economic security provision between a couple. Keywords like 'rip', 'growl', and 'threats' suggest a focus on danger and conflict, not mutual support. The 'promises' keyword could hint at a relationship, but it's unclear if these promises involve material provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 34,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "unclear",
-      "rationale": "The topic revolves around education and academic activities, with keywords like 'study', 'scholarship', and 'teachers'. While there's mention of 'scholarship', it's unclear if it's used for relationship-directed provision. Therefore, it's marked as 'unclear' for both 'relationship_directed_transfer' and 'provision_function'. The topic is mainly about academic pursuits, so it's excluded due to 'occupational_talk'.",
-      "candidate": {
-        "topic_id": 34,
-        "taxonomy_main_id": "3.3",
-        "taxonomy_secondary_id": "6.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=6.2",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 34,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "unclear",
-        "main_couple_target": "no",
-        "exclude_reason": "occupational_talk",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "study",
-          "scholarship",
-          "teachers"
-        ],
-        "rationale": "The topic revolves around education and academic activities, with keywords like 'study', 'scholarship', and 'teachers'. While there's mention of 'scholarship', it's unclear if it's used for relationship-directed provision. Therefore, it's marked as 'unclear' for both 'relationship_directed_transfer' and 'provision_function'. The topic is mainly about academic pursuits, so it's excluded due to 'occupational_talk'."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 52,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around caring for animals, with keywords like 'feeding', 'treatment', 'distress', and 'affection'. However, there's no clear evidence of a relationship-directed transfer of material or economic security between humans, making it 'practical_care_only'.",
-      "candidate": {
-        "topic_id": 52,
-        "taxonomy_main_id": "4.2",
-        "taxonomy_secondary_id": "8.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 52,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "no",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "feeding",
-          "treatment",
-          "distress",
-          "affection"
-        ],
-        "rationale": "The topic revolves around caring for animals, with keywords like 'feeding', 'treatment', 'distress', and 'affection'. However, there's no clear evidence of a relationship-directed transfer of material or economic security between humans, making it 'practical_care_only'."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 59,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around a mother teaching her daughter, not a romantic couple. While there's mention of 'affection', it's not directed at a partner and doesn't involve material or housing provision.",
-      "candidate": {
-        "topic_id": 59,
-        "taxonomy_main_id": "5.1",
-        "taxonomy_secondary_id": "3.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 59,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "no",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "taught",
-          "instructed",
-          "affection"
-        ],
-        "rationale": "The topic revolves around a mother teaching her daughter, not a romantic couple. While there's mention of 'affection', it's not directed at a partner and doesn't involve material or housing provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 69,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic primarily revolves around dreams and nightmares, with no clear evidence of material or economic security provision between partners. The keywords and flags do not suggest a relationship-directed transfer of money or housing.",
-      "candidate": {
-        "topic_id": 69,
-        "taxonomy_main_id": "10.1",
-        "taxonomy_secondary_id": "7.3",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=7.3",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 69,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "no",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "dream",
-          "nightmares",
-          "visions"
-        ],
-        "rationale": "The topic primarily revolves around dreams and nightmares, with no clear evidence of material or economic security provision between partners. The keywords and flags do not suggest a relationship-directed transfer of money or housing."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 75,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "affection",
-      "rationale": "The topic revolves around fathers' involvement and affection towards their sons, with no clear evidence of money or housing provision. While it mentions 'instructions' and 'choices', these are not explicitly tied to material or economic security.",
-      "candidate": {
-        "topic_id": 75,
-        "taxonomy_main_id": "5.1",
-        "taxonomy_secondary_id": "3.3",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 75,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "affection",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "involved",
-          "affection",
-          "instructions"
-        ],
-        "rationale": "The topic revolves around fathers' involvement and affection towards their sons, with no clear evidence of money or housing provision. While it mentions 'instructions' and 'choices', these are not explicitly tied to material or economic security."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 79,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic primarily revolves around music and instruments, with keywords like 'band', 'music', 'guitar', 'piano', 'song', and 'album'. There's no evidence of a relationship-directed transfer of material or economic security.",
-      "candidate": {
-        "topic_id": 79,
-        "taxonomy_main_id": "6.2",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=6.2",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 79,
-        "relationship_directed_transfer": "no",
-        "provision_function": "off_target",
         "main_couple_target": "unclear",
-        "exclude_reason": "occupational_talk",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "band",
-          "music",
-          "guitar",
-          "piano",
-          "song",
-          "album"
-        ],
-        "rationale": "The topic primarily revolves around music and instruments, with keywords like 'band', 'music', 'guitar', 'piano', 'song', and 'album'. There's no evidence of a relationship-directed transfer of material or economic security."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 81,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "unclear",
-      "rationale": "The topic primarily revolves around siblings and affection, with no clear evidence of material or economic security transfer between romantic partners. The keywords 'brother', 'siblings', and 'affection' suggest a familial rather than romantic context.",
-      "candidate": {
-        "topic_id": 81,
-        "taxonomy_main_id": "5.1",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 81,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "unclear",
-        "main_couple_target": "no",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "brothers",
-          "siblings",
-          "affection"
-        ],
-        "rationale": "The topic primarily revolves around siblings and affection, with no clear evidence of material or economic security transfer between romantic partners. The keywords 'brother', 'siblings', and 'affection' suggest a familial rather than romantic context."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 83,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around eating and food, suggesting practical care, but there's no indication of money or housing provision between partners.",
-      "candidate": {
-        "topic_id": 83,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": null,
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "mechanic:domestic_care",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 83,
-        "relationship_directed_transfer": "no",
-        "provision_function": "practical_care",
-        "main_couple_target": "no",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "eat",
-          "hungry",
-          "food",
-          "eating",
-          "ate"
-        ],
-        "rationale": "The topic revolves around eating and food, suggesting practical care, but there's no indication of money or housing provision between partners."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 101,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around non-sexual affection and domestic care, with actions like stroking hair and tucking strands, but there's no evidence of material or housing provision.",
-      "candidate": {
-        "topic_id": 101,
-        "taxonomy_main_id": "2.2",
-        "taxonomy_secondary_id": "1.6",
-        "sexual_explicitness": "affection_only",
-        "sexual_function": "nonsexual_affection",
-        "heuristic_notes": "mechanic:domestic_care",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 101,
-        "relationship_directed_transfer": "no",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "stroked",
-          "brushed",
-          "tucked",
-          "her hand"
-        ],
-        "rationale": "The topic revolves around non-sexual affection and domestic care, with actions like stroking hair and tucking strands, but there's no evidence of material or housing provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 115,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around preparing and sharing a meal, which is a form of practical care, but there's no evidence of money or housing provision. The 'discussing' keyword suggests a couple, but the lack of explicit provision transfer makes 'relationship_directed_transfer' unclear.",
-      "candidate": {
-        "topic_id": 115,
-        "taxonomy_main_id": "8.5",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=8.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 115,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "practical_care",
-        "main_couple_target": "yes",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "meal",
-          "eaten",
-          "popped",
-          "discussing"
-        ],
-        "rationale": "The topic revolves around preparing and sharing a meal, which is a form of practical care, but there's no evidence of money or housing provision. The 'discussing' keyword suggests a couple, but the lack of explicit provision transfer makes 'relationship_directed_transfer' unclear."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 120,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "practical_care",
-      "rationale": "The topic revolves around showering and bathing, which are practical care activities, but there's no evidence of money or housing provision for a partner. The keywords 'appointment' and 'suitcase' suggest personal grooming or travel, not relationship-directed provision.",
-      "candidate": {
-        "topic_id": 120,
-        "taxonomy_main_id": "8.1",
-        "taxonomy_secondary_id": "8.3b",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=8.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 120,
-        "relationship_directed_transfer": "no",
-        "provision_function": "practical_care",
-        "main_couple_target": "unclear",
-        "exclude_reason": "practical_care_only",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "calming",
-          "privacy",
-          "hot"
-        ],
-        "rationale": "The topic revolves around showering and bathing, which are practical care activities, but there's no evidence of money or housing provision for a partner. The keywords 'appointment' and 'suitcase' suggest personal grooming or travel, not relationship-directed provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 122,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "unclear",
-      "rationale": "The topic revolves around blood, bleeding, and drinking, but there's no clear indication of a relationship-directed transfer of material or economic security. The keywords suggest a focus on physical or supernatural activities rather than material provision.",
-      "candidate": {
-        "topic_id": 122,
-        "taxonomy_main_id": "1.2",
-        "taxonomy_secondary_id": "7.3",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=7.3",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 122,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "unclear",
-        "main_couple_target": "no",
-        "exclude_reason": "off_target",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "veins",
-          "bleeding",
-          "drinking"
-        ],
-        "rationale": "The topic revolves around blood, bleeding, and drinking, but there's no clear indication of a relationship-directed transfer of material or economic security. The keywords suggest a focus on physical or supernatural activities rather than material provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 125,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "status_luxury_display",
-      "rationale": "The topic primarily describes luxurious furniture and room decor, with no clear evidence of a relationship-directed transfer of material or economic security. The use of words like 'stunning' and 'enormous' suggests a focus on status and luxury display rather than practical provision.",
-      "candidate": {
-        "topic_id": 125,
-        "taxonomy_main_id": "2.5",
-        "taxonomy_secondary_id": "8.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=8.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 125,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "status_luxury_display",
-        "main_couple_target": "no",
-        "exclude_reason": "luxury_status",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "furniture",
-          "chairs",
-          "tables",
-          "room",
-          "wood",
-          "large",
-          "stunning"
-        ],
-        "rationale": "The topic primarily describes luxurious furniture and room decor, with no clear evidence of a relationship-directed transfer of material or economic security. The use of words like 'stunning' and 'enormous' suggests a focus on status and luxury display rather than practical provision."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 137,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "unclear",
-      "rationale": "While the topic contains words like 'willing', 'urged', and 'approached', which could imply a relationship-directed transfer, there's no explicit mention of money or housing provision. Therefore, it's unclear if the transfer is relationship-directed. However, the main couple target is clear, so the topic should be promoted for a full H3 audit.",
-      "candidate": {
-        "topic_id": 137,
-        "taxonomy_main_id": "6.2",
-        "taxonomy_secondary_id": "5.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=6.2",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 137,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "unclear",
-        "main_couple_target": "yes",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "sweep",
-          "willing",
-          "urged",
-          "approached"
-        ],
-        "rationale": "While the topic contains words like 'willing', 'urged', and 'approached', which could imply a relationship-directed transfer, there's no explicit mention of money or housing provision. Therefore, it's unclear if the transfer is relationship-directed. However, the main couple target is clear, so the topic should be promoted for a full H3 audit."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 140,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "money_provision",
-      "rationale": "While the topic does not explicitly mention money transfer, keywords like 'poised', 'remark', and 'fashioned' suggest a scenario where Benjamin, a wealthy character, might be considering providing for his partner, Spencer. The uncertainty arises from the lack of explicit provision mention, hence 'unclear' for relationship_directed_transfer. However, the potential for material provision is present, warranting a full audit.",
-      "candidate": {
-        "topic_id": 140,
-        "taxonomy_main_id": "6.6",
-        "taxonomy_secondary_id": "4.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=6.6",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 140,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "money_provision",
-        "main_couple_target": "yes",
         "exclude_reason": "none",
         "promote_to_full_H3_audit": true,
+        "include": true,
         "supporting_cues": [
-          "benjamin, himself, hutton, his, spencer, morrison, jim",
-          "had",
-          "poised",
-          "remark",
-          "fashioned"
+          "mechanic:economic_power; secondary_leaf=6.4; proto:shelter"
         ],
-        "rationale": "While the topic does not explicitly mention money transfer, keywords like 'poised', 'remark', and 'fashioned' suggest a scenario where Benjamin, a wealthy character, might be considering providing for his partner, Spencer. The uncertainty arises from the lack of explicit provision mention, hence 'unclear' for relationship_directed_transfer. However, the potential for material provision is present, warranting a full audit."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 141,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "money_provision",
-      "rationale": "The topic contains keywords suggesting financial worries and tracking of money ('tracks', 'worries', 'hovering'), as well as actions related to money management ('wiping'). However, it's unclear if this money is being transferred to a partner, hence 'unclear' for relationship_directed_transfer. The main couple is targeted ('visits', 'president'), and there's no clear exclusion reason.",
-      "candidate": {
-        "topic_id": 141,
-        "taxonomy_main_id": "6.3",
-        "taxonomy_secondary_id": "7.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=6.3",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 141,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "money_provision",
-        "main_couple_target": "yes",
-        "exclude_reason": "none",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "visits",
-          "president",
-          "tracks",
-          "worries",
-          "hovering",
-          "hopped",
-          "twitched",
-          "wiping"
-        ],
-        "rationale": "The topic contains keywords suggesting financial worries and tracking of money ('tracks', 'worries', 'hovering'), as well as actions related to money management ('wiping'). However, it's unclear if this money is being transferred to a partner, hence 'unclear' for relationship_directed_transfer. The main couple is targeted ('visits', 'president'), and there's no clear exclusion reason."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 143,
-      "include": true,
-      "confidence": null,
-      "suggested_code_family": "money_provision",
-      "rationale": "The topic revolves around families dealing with financial strain and providing for each other, suggesting a potential transfer of material security. However, it's unclear if this is relationship-directed. Keywords like 'failure', 'distress', 'options', 'strained', and 'pressure' indicate financial struggles, while 'provided' and 'members' suggest support. The main couple target is likely as 'family' and 'our' are prominent.",
-      "candidate": {
-        "topic_id": 143,
-        "taxonomy_main_id": "5.1",
-        "taxonomy_secondary_id": "3.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "primary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 143,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "money_provision",
-        "main_couple_target": "yes",
-        "exclude_reason": "none",
-        "promote_to_full_H3_audit": true,
-        "supporting_cues": [
-          "dealing with financial distress",
-          "providing for family members"
-        ],
-        "rationale": "The topic revolves around families dealing with financial strain and providing for each other, suggesting a potential transfer of material security. However, it's unclear if this is relationship-directed. Keywords like 'failure', 'distress', 'options', 'strained', and 'pressure' indicate financial struggles, while 'provided' and 'members' suggest support. The main couple target is likely as 'family' and 'our' are prominent."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 158,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "status_luxury_display",
-      "rationale": "While the topic mentions 'told about' and 'had', the keywords and POS tags suggest a focus on status and appearance rather than material provision. 'Impressive', 'polished', and 'smirked' indicate luxury display, not relationship-directed transfer.",
-      "candidate": {
-        "topic_id": 158,
-        "taxonomy_main_id": "5.2",
-        "taxonomy_secondary_id": "6.2",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=6.2",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 158,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "status_luxury_display",
-        "main_couple_target": "yes",
-        "exclude_reason": "luxury_status",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "impressive",
-          "polished",
-          "smirked"
-        ],
-        "rationale": "While the topic mentions 'told about' and 'had', the keywords and POS tags suggest a focus on status and appearance rather than material provision. 'Impressive', 'polished', and 'smirked' indicate luxury display, not relationship-directed transfer."
-      }
-    },
-    {
-      "hypothesis": "H3",
-      "topic_id": 161,
-      "include": false,
-      "confidence": null,
-      "suggested_code_family": "off_target",
-      "rationale": "The topic revolves around emotional support and reassurance among characters, with no clear evidence of material or economic security provision between them. While the main couple is targeted, the provision function is emotional, not material.",
-      "candidate": {
-        "topic_id": 161,
-        "taxonomy_main_id": "4.6",
-        "taxonomy_secondary_id": "5.1",
-        "sexual_explicitness": "none",
-        "sexual_function": "none",
-        "heuristic_notes": "secondary_leaf=5.1",
-        "n_signals": 1,
-        "source": "h3_full_corpus_material_discovery"
-      },
-      "model": "mistralai/Mistral-Nemo-Instruct-2407",
-      "dry_run": false,
-      "response": {
-        "topic_id": 161,
-        "relationship_directed_transfer": "unclear",
-        "provision_function": "off_target",
-        "main_couple_target": "yes",
-        "exclude_reason": "other",
-        "promote_to_full_H3_audit": false,
-        "supporting_cues": [
-          "reassuring",
-          "calming",
-          "nods",
-          "praying"
-        ],
-        "rationale": "The topic revolves around emotional support and reassurance among characters, with no clear evidence of material or economic security provision between them. While the main couple is targeted, the provision function is emotional, not material."
+        "rationale": "dry-run spillover H3",
+        "dry_run": true
       }
     }
   ],
-  "dry_run": false,
+  "dry_run": true,
   "model": "mistralai/Mistral-Nemo-Instruct-2407",
   "prompt_version": "1.0",
   "already_material_topic_ids": [

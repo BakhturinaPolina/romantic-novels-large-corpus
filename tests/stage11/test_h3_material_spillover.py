@@ -83,10 +83,10 @@ def test_build_h3_spillover_candidates_seeds():
     cands = build_h3_spillover_candidates(CFG, lookup, man)
     ids = {c["topic_id"] for c in cands}
 
-    # Already-strict material (topic 17) must be excluded from triage bill.
+    # Already-strict material topics must be excluded from triage bill.
     already = _load_already_material_topic_ids(CFG)
-    assert 17 in already or not already  # coverage may be absent in bare CI
-    assert 17 not in ids
+    for tid in already:
+        assert tid not in ids, f"topic {tid} is already strict material and must be excluded"
 
     # Known material / economic seeds outside pure appearance.
     assert 22 in ids, "expected seed 22 (payment/debts) in H3 material spillover candidates"

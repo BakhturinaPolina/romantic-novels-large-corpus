@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Iterable, Sequence
+from typing import Iterable, Literal, Sequence
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
+
+PresentationMode = Literal["chart_only", "review"]
 
 # Colorblind-safe (Tol-inspired) categorical palette
 C_POS = "#0072B2"
@@ -19,25 +21,34 @@ C_UNMEAS = "#999999"
 C_FILL_VIABLE = "#0072B2"
 C_OPEN_EDGE = "#0072B2"
 C_EXPL = "#009E73"
+C_SELECTED = "#0072B2"
 C_BG = "white"
 
 EFFECT_GATE = 0.11
 
+# Presentation typography (projection-readable)
+PLOT_TEXT = 14
+TICK_TEXT = 13
+AXIS_LABEL = 14
+VALUE_LABEL = 13
+PANEL_TITLE = 15
+
 HYPOTHESIS_ORDER: Sequence[str] = ("H1", "H2", "H3", "H4", "H5", "H6")
 
 
-def apply_theme() -> None:
+def scientific_plot_style() -> None:
+    """Font sizes, axes, ticks — presentation-readable defaults."""
     mpl.rcParams.update(
         {
             "figure.facecolor": C_BG,
             "axes.facecolor": C_BG,
             "axes.edgecolor": "#444444",
             "axes.labelcolor": C_NEUTRAL,
-            "axes.titlesize": 14,
-            "axes.labelsize": 12,
-            "xtick.labelsize": 11,
-            "ytick.labelsize": 11,
-            "font.size": 11,
+            "axes.titlesize": PANEL_TITLE,
+            "axes.labelsize": AXIS_LABEL,
+            "xtick.labelsize": TICK_TEXT,
+            "ytick.labelsize": TICK_TEXT,
+            "font.size": PLOT_TEXT,
             "axes.spines.top": False,
             "axes.spines.right": False,
             "figure.dpi": 150,
@@ -50,26 +61,37 @@ def apply_theme() -> None:
     )
 
 
+def apply_theme() -> None:
+    """Apply presentation scientific plot style (backward-compatible alias)."""
+    scientific_plot_style()
+
+
+def resolve_output_dir(paths, mode: PresentationMode) -> Path:
+    """chart_only → deck figures; review → review/figures."""
+    if mode == "review":
+        out = paths.deck_review / "figures"
+        out.mkdir(parents=True, exist_ok=True)
+        return out
+    paths.deck_figures.mkdir(parents=True, exist_ok=True)
+    return paths.deck_figures
+
+
 def set_title_with_subtitle(
     ax,
     title: str,
     subtitle: str | None = None,
     *,
-    title_size: float = 14,
-    subtitle_size: float = 10,
+    title_size: float = PANEL_TITLE,
+    subtitle_size: float = VALUE_LABEL,
     subtitle_color: str = "#555555",
     subtitle_weight: str = "normal",
     loc: str = "left",
 ) -> None:
-    """Place title and optional subtitle without colliding.
-
-    Avoids the common bug of ``ax.set_title`` + ``ax.text(..., y=1.02)`` stacking
-    in the same band. Subtitle sits below the title (both above the axes).
-    """
+    """Place title and optional subtitle without colliding."""
     ha = {"left": "left", "center": "center", "right": "right"}.get(loc, "left")
     x = {"left": 0.0, "center": 0.5, "right": 1.0}.get(loc, 0.0)
     if subtitle:
-        ax.set_title("")  # clear default title slot
+        ax.set_title("")
         ax.text(
             x,
             1.16,
@@ -98,12 +120,35 @@ def set_title_with_subtitle(
         ax.set_title(title, fontsize=title_size, loc=loc if loc in ("left", "center", "right") else "center")
 
 
+def apply_presentation_context(
+    ax,
+    *,
+    mode: PresentationMode,
+    title: str | None = None,
+    subtitle: str | None = None,
+    exploratory: bool = False,
+) -> None:
+    """Add review-only decorators (title, subtitle, exploratory badge)."""
+    if mode == "chart_only":
+        return
+    if title:
+        set_title_with_subtitle(ax, title, subtitle)
+    if exploratory:
+        exploratory_tag(ax)
+
+
 def format_delta(value: float | None, *, decimals: int = 2) -> str:
     """Two-decimal presentation label for Cliff's δ."""
     if value is None or (isinstance(value, float) and np.isnan(value)):
         return "—"
     sign = "+" if value > 0 else "−" if value < 0 else ""
     return f"{sign}{abs(value):.{decimals}f}"
+
+
+def format_pp(value: float, *, decimals: int = 2) -> str:
+    """Signed percentage-point label for compositional shifts."""
+    sign = "+" if value > 0 else "−" if value < 0 else ""
+    return f"{sign}{abs(value):.{decimals}f} pp"
 
 
 def gate_band(ax, *, orientation: str = "vertical", alpha: float = 0.12) -> None:
@@ -123,7 +168,7 @@ def exploratory_tag(ax, text: str = "EXPLORATORY", *, x: float = 0.99, y: float 
         transform=ax.transAxes,
         ha="right",
         va="top",
-        fontsize=8,
+        fontsize=10,
         color=C_EXPL,
         fontweight="bold",
         bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor=C_EXPL, linewidth=0.8),
@@ -137,10 +182,10 @@ def verdict_card_style(status: str) -> dict:
     if s == "unmeasurable":
         return {"facecolor": "#eeeeee", "edgecolor": C_UNMEAS, "color": C_UNMEAS}
     if s == "thin":
-        return {"facecolor": "#fff8e6", "edgecolor": C_THIN, "color": C_NEUTRAL}
+        return {"facecolor": "#f5f5f5", "edgecolor": C_NEUTRAL, "color": C_NEUTRAL}
     if s in ("contradicted", "not_supported"):
         return {"facecolor": "#fde8e0", "edgecolor": C_NEG, "color": C_NEUTRAL}
-    return {"facecolor": "#e8f4fc", "edgecolor": C_POS, "color": C_NEUTRAL}
+    return {"facecolor": "#f5f5f5", "edgecolor": C_NEUTRAL, "color": C_NEUTRAL}
 
 
 def save_figure(
@@ -149,12 +194,15 @@ def save_figure(
     stem: str,
     *,
     close: bool = True,
+    fixed_canvas: bool = False,
 ) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
+    bbox = None if fixed_canvas else "tight"
+    pad = 0.0 if fixed_canvas else 0.35
     for ext in ("png", "svg", "pdf"):
         p = out_dir / f"{stem}.{ext}"
-        fig.savefig(p, bbox_inches="tight", pad_inches=0.35)
+        fig.savefig(p, bbox_inches=bbox, pad_inches=pad)
         paths.append(p)
     if close:
         plt.close(fig)

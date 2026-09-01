@@ -3,37 +3,53 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Dict, List, Literal, Optional, Sequence, Tuple
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
-from matplotlib.patches import FancyBboxPatch
 
-from .annotations import load_annotations
+from .plot_helpers import apply_categorical_y_axis, categorical_ylim, categorical_y_positions
 from .paths import PresentationPaths, default_paths
 from .theme import (
+    AXIS_LABEL,
     C_EXPL,
     C_GATE,
     C_NEG,
     C_NEUTRAL,
     C_POS,
+    C_SELECTED,
     C_THIN,
     C_UNMEAS,
     EFFECT_GATE,
     HYPOTHESIS_ORDER,
+    PANEL_TITLE,
+    PresentationMode,
+    TICK_TEXT,
+    VALUE_LABEL,
+    apply_presentation_context,
     apply_theme,
     exploratory_tag,
     format_delta,
+    format_pp,
     gate_band,
     gate_lines,
     marker_for_gate,
+    resolve_output_dir,
     save_figure,
     set_title_with_subtitle,
     status_symbol,
-    verdict_card_style,
 )
+
+FOCAL_COMPONENTS = {
+    "RAX_emotional_reassurance",
+    "RAX_tenderness_core",
+    "RAX_appearance_grooming",
+}
+
+S08_XLIM = (-0.22, 0.22)
+S08_FIGSIZE = (10.5, 6.2)
 
 
 def _manifest_row(
@@ -46,6 +62,8 @@ def _manifest_row(
     evidence: str,
     warning: str,
     paths: List[Path],
+    *,
+    render_target: str = "matplotlib",
 ) -> Dict:
     return {
         "figure_id": figure_id,
@@ -58,10 +76,29 @@ def _manifest_row(
         "statistical_measure": measure,
         "confirmatory_or_exploratory": evidence,
         "measurement_warning": warning,
+        "render_target": render_target,
         "output_path": str(paths[0]) if paths else "",
         "output_svg": str(paths[1]) if len(paths) > 1 else "",
         "output_pdf": str(paths[2]) if len(paths) > 2 else "",
     }
+
+
+def _save_both_modes(
+    fig: plt.Figure,
+    paths: PresentationPaths,
+    stem: str,
+    *,
+    fixed_canvas: bool = False,
+    close: bool = True,
+) -> Tuple[List[Path], List[Path]]:
+    """Save chart_only to deck figures and review copy to review/figures."""
+    chart_paths = save_figure(
+        fig, resolve_output_dir(paths, "chart_only"), stem, close=False, fixed_canvas=fixed_canvas
+    )
+    review_paths = save_figure(
+        fig, resolve_output_dir(paths, "review"), stem, close=close, fixed_canvas=fixed_canvas
+    )
+    return chart_paths, review_paths
 
 
 def plot_component_effects_presentation(
@@ -69,35 +106,54 @@ def plot_component_effects_presentation(
     paths: PresentationPaths,
     *,
     stem: str = "slide08_component_effects",
+    mode: PresentationMode = "review",
+    fixed_ylim: Tuple[float, float] | None = None,
+    highlight_focal: bool = True,
+    save: bool = True,
+    out_dir: Path | None = None,
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    fig, ax = plt.subplots(figsize=(10.5, 6.2))
+    n = len(df)
+    fig, ax = plt.subplots(figsize=S08_FIGSIZE, layout="constrained")
     gate_band(ax, orientation="vertical")
     gate_lines(ax, orientation="vertical")
 
-    y = np.arange(len(df))[::-1]
+    y = categorical_y_positions(n)
+    labels = df["display_label"].fillna(df["label"]).tolist()
     for yi, row in zip(y, df.itertuples()):
         est = row.effect_size
         lo, hi = row.ci_low, row.ci_high
+        is_focal = highlight_focal and str(row.feature) in FOCAL_COMPONENTS
         mk = marker_for_gate(str(row.measurement_status))
-        ax.errorbar(est, yi, xerr=[[est - lo], [hi - est]], fmt="none", color=C_NEUTRAL, capsize=3, lw=1.2, zorder=2)
-        ax.scatter([est], [yi], **mk, zorder=3)
-        ax.text(hi + 0.012, yi, format_delta(est), va="center", fontsize=10, color=C_NEUTRAL)
+        color = C_NEUTRAL if (highlight_focal and not is_focal) else C_NEUTRAL
+        ax.errorbar(est, yi, xerr=[[est - lo], [hi - est]], fmt="none", color=color, capsize=3, lw=1.2, zorder=2)
+        if is_focal and mk.get("facecolors") == C_POS:
+            mk = {**mk, "s": 110, "zorder": 4}
+        zorder = mk.pop("zorder", 3)
+        ax.scatter([est], [yi], **mk, zorder=zorder)
+        ax.text(hi + 0.012, yi, format_delta(est), va="center", fontsize=VALUE_LABEL, color=C_NEUTRAL)
 
-    labels = df["display_label"].fillna(df["label"]).tolist()
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels[::-1])
-    ax.set_xlabel("Cliff's δ (high-rated − low-rated)")
-    ax.set_xlim(-0.22, 0.22)
-    set_title_with_subtitle(
+    apply_categorical_y_axis(ax, y, labels)
+    ax.set_xlabel("Cliff's δ (high-rated − low-rated)", fontsize=AXIS_LABEL)
+    ax.set_xlim(*S08_XLIM)
+    if fixed_ylim is not None:
+        ax.set_ylim(*fixed_ylim)
+    apply_presentation_context(
         ax,
-        "Specific narrative functions reveal clearer differences",
-        "Confirmatory component effects; shaded band = below prespecified |δ| = 0.11 gate",
+        mode=mode,
+        title="Specific narrative functions reveal clearer differences",
+        subtitle="Confirmatory component effects; shaded band = below prespecified |δ| = 0.11 gate",
     )
-    ax.text(0.5, -0.12, "← lower in highly rated", transform=ax.transAxes, ha="center", fontsize=9, color="#666")
-    ax.text(0.5, -0.16, "higher in highly rated →", transform=ax.transAxes, ha="center", fontsize=9, color="#666")
-    fig.subplots_adjust(top=0.82, bottom=0.18)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    if mode == "review":
+        ax.text(0.5, -0.14, "← lower in highly rated", transform=ax.transAxes, ha="center", fontsize=11, color="#666")
+        ax.text(0.5, -0.18, "higher in highly rated →", transform=ax.transAxes, ha="center", fontsize=11, color="#666")
+
+    if not save:
+        plt.close(fig)
+        return [], _manifest_row(stem, "S08", "Component effects", "main", [], "", "", "", [])
+
+    target = out_dir or resolve_output_dir(paths, mode)
+    outs = save_figure(fig, target, stem, fixed_canvas=fixed_ylim is not None)
     return outs, _manifest_row(
         stem,
         "S08",
@@ -117,38 +173,57 @@ def plot_context_and_measurement(
     paths: PresentationPaths,
     *,
     stem: str = "slide06_context_measurement",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12.5, 5.8), gridspec_kw={"width_ratios": [1.1, 0.9]})
+    fig = plt.figure(figsize=(12.5, 5.8), layout="constrained")
+    ax1 = fig.add_subplot(1, 2, 1)
+    ax2 = fig.add_subplot(1, 2, 2)
 
-    # Left: agreement bars
-    y = np.arange(len(agreement))[::-1]
+    y = categorical_y_positions(len(agreement))
     pct = agreement["agreement_pct"].to_numpy()
-    ax1.barh(y, pct, color="#56B4E9", height=0.55, alpha=0.85)
+    ax1.barh(y, pct, color=C_POS, height=0.55, alpha=0.85)
     for yi, p in zip(y, pct):
-        ax1.text(p + 1.2, yi, f"{p:.0f}%", va="center", fontsize=10)
-    ax1.set_yticks(y)
-    ax1.set_yticklabels(agreement["hypothesis"])
+        ax1.text(p + 1.2, yi, f"{p:.0f}%", va="center", fontsize=VALUE_LABEL, fontweight="bold")
+    apply_categorical_y_axis(ax1, y, agreement["hypothesis"].tolist())
     ax1.set_xlim(0, 65)
-    ax1.set_xlabel("Lexical–contextual agreement (%)")
-    ax1.set_title("Contextual agreement", fontsize=12, loc="left", fontweight="bold")
+    ax1.set_xlabel("Lexical–contextual agreement (%)", fontsize=AXIS_LABEL)
+    ax1.set_title("Contextual agreement", fontsize=PANEL_TITLE, loc="left", fontweight="bold")
+    ax1.set_xticks([0, 25, 50])
 
-    # Right: measurement status
     ax2.axis("off")
-    ax2.set_title("Measurement after refinement", fontsize=12, loc="left", fontweight="bold", pad=12)
+    ax2.set_title("Measurement after refinement", fontsize=PANEL_TITLE, loc="left", fontweight="bold", pad=12)
     for i, h in enumerate(HYPOTHESIS_ORDER):
         row = primary.loc[primary["hypothesis"] == h].iloc[0]
         st = str(row["measurement_status"])
         sym = status_symbol(st)
         ypos = 0.88 - i * 0.14
-        color = C_UNMEAS if st == "unmeasurable" else C_THIN if st == "thin" else C_POS
-        ax2.text(0.05, ypos, h, transform=ax2.transAxes, fontsize=12, fontweight="bold", va="center")
-        ax2.text(0.22, ypos, f"{sym} {st.capitalize()}", transform=ax2.transAxes, fontsize=11, color=color, va="center")
+        emphasize = h in ("H2", "H3")
+        fw = "bold" if emphasize else "normal"
+        ax2.text(0.05, ypos, h, transform=ax2.transAxes, fontsize=TICK_TEXT, fontweight=fw, va="center")
+        ax2.text(
+            0.22,
+            ypos,
+            f"{sym} {st.capitalize()}",
+            transform=ax2.transAxes,
+            fontsize=TICK_TEXT,
+            color=C_NEUTRAL if st != "unmeasurable" else C_UNMEAS,
+            fontweight=fw,
+            va="center",
+        )
 
-    fig.suptitle("Context changed what the topics actually meant", fontsize=14, fontweight="bold", y=1.02, x=0.02, ha="left")
-    fig.text(0.5, 0.02, "Lexical similarity ≠ narrative function", ha="center", fontsize=11, fontweight="bold", color=C_NEUTRAL)
-    fig.subplots_adjust(top=0.88, bottom=0.1, wspace=0.35)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    if mode == "review":
+        fig.suptitle(
+            "Context changed what the topics actually meant",
+            fontsize=PANEL_TITLE,
+            fontweight="bold",
+            x=0.02,
+            ha="left",
+        )
+        fig.text(0.5, 0.02, "Lexical similarity ≠ narrative function", ha="center", fontsize=TICK_TEXT, color=C_NEUTRAL)
+
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S06",
@@ -166,59 +241,52 @@ def plot_primary_verdict_cards(
     primary: pd.DataFrame,
     paths: PresentationPaths,
     *,
-    stem: str = "slide07_primary_verdict_cards",
+    stem: str = "slide07_primary_verdict_preview",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
+    """Minimal text-table preview; canonical layout is Figma-native."""
     apply_theme()
-    fig, axes = plt.subplots(2, 3, figsize=(12.5, 6.5))
-    axes = axes.flatten()
-    verdict_map = {
-        "directional_only": "DIRECTIONAL",
-        "inconclusive": "THIN / INCONCLUSIVE",
-        "contradicted": "CONTRADICTED",
-        "not_supported": "NOT SUPPORTED",
-        "clears_gate": "DIRECTIONAL",
-    }
-    for ax, h in zip(axes, HYPOTHESIS_ORDER):
+    fig, ax = plt.subplots(figsize=(12.5, 4.0), layout="constrained")
+    ax.axis("off")
+    rows = []
+    for h in HYPOTHESIS_ORDER:
         row = primary.loc[primary["hypothesis"] == h].iloc[0]
         st = str(row["measurement_status"])
-        styles = verdict_card_style(st if st == "unmeasurable" else row["verdict"])
-        ax.set_xlim(0, 1)
-        ax.set_ylim(0, 1)
-        ax.axis("off")
-        rect = FancyBboxPatch(
-            (0.02, 0.02), 0.96, 0.96,
-            boxstyle="round,pad=0.02",
-            facecolor=styles["facecolor"],
-            edgecolor=styles["edgecolor"],
-            linewidth=1.5,
-        )
-        ax.add_patch(rect)
-        ax.text(0.5, 0.82, h, ha="center", fontsize=14, fontweight="bold", color=styles["color"])
-        ax.text(0.5, 0.62, str(row["label"])[:40], ha="center", fontsize=9, color="#555", wrap=True)
         if st == "unmeasurable":
-            ax.text(0.5, 0.38, "NOT MEASURABLE", ha="center", fontsize=11, fontweight="bold", color=C_UNMEAS)
+            delta = "NOT MEASURABLE"
         else:
-            vlabel = verdict_map.get(str(row["verdict"]), str(row["verdict"]).upper())
-            ax.text(0.5, 0.42, vlabel, ha="center", fontsize=10, fontweight="bold", color=styles["color"])
-            ax.text(0.5, 0.22, format_delta(row["effect_size"]), ha="center", fontsize=12, color=C_NEUTRAL)
-            if not bool(row.get("clears_delta_gate", False)):
-                ax.text(0.5, 0.08, "below gate", ha="center", fontsize=8, color="#888")
-    fig.suptitle(
-        "None of the six broad hypotheses produced a clean confirmatory win",
-        fontsize=14, fontweight="bold", y=1.02, x=0.02, ha="left",
+            delta = format_delta(row["effect_size"])
+        rows.append([h, str(row["label"])[:35], st, str(row["verdict"]), delta])
+    table = ax.table(
+        cellText=rows,
+        colLabels=["H", "Construct", "Measurement", "Verdict", "δ"],
+        loc="center",
+        cellLoc="left",
     )
-    fig.subplots_adjust(top=0.88, hspace=0.35, wspace=0.2)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    table.auto_set_font_size(False)
+    table.set_fontsize(TICK_TEXT)
+    table.scale(1.0, 1.8)
+    if mode == "review":
+        fig.suptitle(
+            "H1–H6 primary verdicts (preview — layout in Figma)",
+            fontsize=PANEL_TITLE,
+            fontweight="bold",
+            x=0.02,
+            ha="left",
+        )
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S07",
-        "H1–H6 verdict cards",
+        "H1–H6 verdict cards (preview)",
         "main",
         ["presentation_primary_results.csv"],
         "Cliff's δ; verdict; measurement_status",
         "confirmatory",
         "H2/H3 categorical unmeasurable; not null at zero",
         outs,
+        render_target="figma_native",
     )
 
 
@@ -228,46 +296,54 @@ def plot_quality_reach_dumbbell(
     paths: PresentationPaths,
     *,
     stem: str = "slide10_quality_reach_dumbbell",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    fig, ax = plt.subplots(figsize=(11, 6))
+    plot_df = df.copy()
+    if "delta_gap" not in plot_df.columns:
+        plot_df["delta_gap"] = plot_df["quality_delta"] - plot_df["reach_delta"]
+    plot_df = plot_df.sort_values("delta_gap", ascending=True).reset_index(drop=True)
+
+    fig, ax = plt.subplots(figsize=(11, 6), layout="constrained")
     n_both = int(
         (
             catalog_full.loc[catalog_full["analysis_resolution"] == "taxonomy_leaf"]["quality_gate"].astype(bool)
             & catalog_full.loc[catalog_full["analysis_resolution"] == "taxonomy_leaf"]["reach_gate"].astype(bool)
         ).sum()
     )
-    y = np.arange(len(df))[::-1]
-    for yi, row in zip(y, df.itertuples()):
-        qd = row.quality_delta
-        rd = row.reach_delta
-        ax.scatter([qd], [yi], marker="o", s=80, color=C_POS, zorder=3, label="Quality" if yi == y[0] else "")
-        ax.scatter([rd], [yi], marker="s", s=70, color=C_NEG, zorder=3, label="Reach" if yi == y[0] else "")
+    y = categorical_y_positions(len(plot_df))
+    for yi, row in zip(y, plot_df.itertuples()):
+        qd, rd = row.quality_delta, row.reach_delta
+        ax.scatter([qd], [yi], marker="o", s=80, color=C_POS, zorder=3)
+        ax.scatter([rd], [yi], marker="s", s=70, color=C_NEG, zorder=3)
         ax.plot([qd, rd], [yi, yi], color="#aaaaaa", lw=1.5, zorder=2)
     ax.axvline(0, color="#888", lw=0.8)
     ax.axvline(EFFECT_GATE, color=C_GATE, ls="--", lw=0.8, alpha=0.7)
     ax.axvline(-EFFECT_GATE, color=C_GATE, ls="--", lw=0.8, alpha=0.7)
-    labels = df["short_label"].fillna(df["label"]).tolist()
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels[::-1])
-    ax.set_xlabel("Cliff's δ (high-rated or high-reach − comparison)")
-    set_title_with_subtitle(
+    labels = plot_df["short_label"].fillna(plot_df["label"]).tolist()
+    apply_categorical_y_axis(ax, y, labels)
+    ax.set_xlabel("Cliff's δ (high-rated or high-reach − comparison)", fontsize=AXIS_LABEL)
+    apply_presentation_context(
         ax,
-        "What makes a book widely read is not what makes it highly rated",
-        "Taxonomy-leaf contrasts; squares = reach, circles = quality (rating)",
+        mode=mode,
+        title="What makes a book widely read is not what makes it highly rated",
+        subtitle="Taxonomy-leaf contrasts; ● quality  ■ reach",
+        exploratory=True,
     )
-    ax.legend(loc="lower right", frameon=False)
-    ax.text(
-        0.02, 0.02,
-        f"{n_both} leaves cleared the effect gate on both outcomes",
-        transform=ax.transAxes,
-        fontsize=10,
-        fontweight="bold",
-        bbox=dict(boxstyle="round", facecolor="#fff8e6", edgecolor=C_THIN),
-    )
-    exploratory_tag(ax)
-    fig.subplots_adjust(top=0.82)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    if mode == "chart_only":
+        ax.text(0.02, 0.98, "● QUALITY    ■ REACH", transform=ax.transAxes, fontsize=VALUE_LABEL, va="top", color=C_NEUTRAL)
+    elif mode == "review":
+        ax.text(
+            0.02,
+            0.02,
+            f"{n_both} leaves cleared the effect gate on both outcomes",
+            transform=ax.transAxes,
+            fontsize=VALUE_LABEL,
+            fontweight="bold",
+            bbox=dict(boxstyle="round", facecolor="#f5f5f5", edgecolor=C_NEUTRAL),
+        )
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S10",
@@ -285,61 +361,51 @@ def plot_richness_evidence_sequence(
     story: pd.DataFrame,
     paths: PresentationPaths,
     *,
-    stem: str = "slide11_richness_evidence",
+    stem: str = "slide11_richness_preview",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
+    """Minimal CSV preview; canonical layout is Figma-native."""
     apply_theme()
-    fig, axes = plt.subplots(1, 3, figsize=(12.5, 4.2))
-    panels = [
-        ("RAW", ["raw_taxonomy_delta", "raw_topic_delta"]),
-        ("EQUAL SENTENCE BUDGET", ["rarefied_taxonomy"]),
-        ("AFTER THEMATIC DRIVERS", ["controlled_plus_drivers"]),
-    ]
-    for ax, (title, keys) in zip(axes, panels):
-        ax.axis("off")
-        ax.text(0.5, 0.92, title, ha="center", fontsize=11, fontweight="bold", transform=ax.transAxes)
-        lines = []
-        for k in keys:
-            row = story.loc[story["analysis"] == k]
-            if row.empty:
-                continue
-            r = row.iloc[0]
-            if k.startswith("raw"):
-                lines.append(f"{r['metric']}\nδ ≈ {format_delta(r['estimate'])}")
-            elif k == "rarefied_taxonomy":
-                lines.append(f"Rarefied taxonomy richness\np ≈ {r['p_value']:.2f}")
-            else:
-                lines.append(f"Raw taxonomy richness strengthens\nβ ≈ {r['estimate']:.4f}\np < .001\n\nSUPPRESSION")
-        rect = FancyBboxPatch(
-            (0.05, 0.08), 0.9, 0.82,
-            boxstyle="round,pad=0.02",
-            facecolor="#f8f8f8",
-            edgecolor="#cccccc",
-            transform=ax.transAxes,
+    fig, ax = plt.subplots(figsize=(12.5, 3.5), layout="constrained")
+    ax.axis("off")
+    rows = []
+    for analysis in ("raw_taxonomy_delta", "raw_topic_delta", "rarefied_taxonomy", "controlled_plus_drivers"):
+        match = story.loc[story["analysis"] == analysis]
+        if match.empty:
+            continue
+        r = match.iloc[0]
+        rows.append([analysis.replace("_", " "), str(r.get("metric", "")), f"{r.get('estimate', '—')}", f"{r.get('p_value', '—')}"])
+    table = ax.table(
+        cellText=rows,
+        colLabels=["Stage", "Metric", "Estimate", "p"],
+        loc="center",
+        cellLoc="left",
+    )
+    table.auto_set_font_size(False)
+    table.set_fontsize(TICK_TEXT)
+    table.scale(1.0, 1.6)
+    if mode == "review":
+        fig.suptitle(
+            "Richness evidence sequence (preview — layout in Figma)",
+            fontsize=PANEL_TITLE,
+            fontweight="bold",
+            x=0.02,
+            ha="left",
         )
-        ax.add_patch(rect)
-        ax.text(0.5, 0.45, "\n\n".join(lines), ha="center", va="center", fontsize=10, transform=ax.transAxes, zorder=2)
-    fig.suptitle(
-        "Better-rated books are not simply \"about more things\"",
-        fontsize=14, fontweight="bold", y=1.05, x=0.02, ha="left",
-    )
-    fig.text(
-        0.5, 0.02,
-        "Which themes receive attention appears more interpretable than raw thematic breadth alone.",
-        ha="center", fontsize=10, fontweight="bold", color=C_NEUTRAL,
-    )
-    exploratory_tag(axes[-1])
-    fig.subplots_adjust(top=0.78, bottom=0.15, wspace=0.25)
-    outs = save_figure(fig, paths.deck_figures, stem)
+        exploratory_tag(ax)
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S11",
-        "Richness three-stage evidence",
+        "Richness three-stage evidence (preview)",
         "main",
         ["thematic_richness_cliffs_delta", "thematic_richness_ols", "thematic_richness_vs_drivers"],
         "Cliff's δ; OLS β",
         "exploratory",
         "Rarefaction removes raw association; suppression after drivers",
         outs,
+        render_target="figma_native",
     )
 
 
@@ -348,28 +414,36 @@ def plot_attention_shift_short(
     paths: PresentationPaths,
     *,
     stem: str = "slide09_attention_shift",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    fig, ax = plt.subplots(figsize=(10, 5.5))
-    y = np.arange(len(df))[::-1]
+    fig, ax = plt.subplots(figsize=(10, 5.5), layout="constrained")
+    y = categorical_y_positions(len(df))
     vals = df["diff_pp"].to_numpy()
     colors = [C_POS if v > 0 else C_NEG for v in vals]
     ax.barh(y, vals, color=colors, height=0.55, alpha=0.85)
     for yi, v in zip(y, vals):
-        ax.text(v + (0.02 if v >= 0 else -0.02), yi, f"{v:+.3f} pp", va="center", ha="left" if v >= 0 else "right", fontsize=9)
+        ax.text(
+            v + (0.02 if v >= 0 else -0.02),
+            yi,
+            format_pp(v),
+            va="center",
+            ha="left" if v >= 0 else "right",
+            fontsize=VALUE_LABEL,
+        )
     labels = df["display_label"].fillna(df["label"]).tolist()
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels[::-1])
+    apply_categorical_y_axis(ax, y, labels)
     ax.axvline(0, color="#888", lw=0.8)
-    ax.set_xlabel("Mean share difference (percentage points), high-rated − low-rated")
-    set_title_with_subtitle(
+    ax.set_xlabel("Mean share difference (percentage points), high-rated − low-rated", fontsize=AXIS_LABEL)
+    apply_presentation_context(
         ax,
-        "Higher-rated romances devote relatively more space to tenderness",
-        "Exploratory compositional shift — not causal",
+        mode=mode,
+        title="Higher-rated romances devote relatively more space to tenderness",
+        subtitle="Exploratory compositional shift — not causal",
+        exploratory=True,
     )
-    exploratory_tag(ax)
-    fig.subplots_adjust(top=0.82)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S09",
@@ -388,60 +462,54 @@ def plot_pareto_selection(
     paths: PresentationPaths,
     *,
     stem: str = "slide04_pareto_selection",
+    mode: PresentationMode = "review",
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    fig, ax = plt.subplots(figsize=(9, 6.5))
+    fig, ax = plt.subplots(figsize=(9, 6.5), layout="constrained")
+    invalid = trials.loc[trials.get("valid", True) == False] if "valid" in trials.columns else pd.DataFrame()
     all_pts = trials[~trials["pareto_efficient"]]
-    pareto_pts = trials[trials["pareto_efficient"]]
+    pareto_pts = trials[trials["pareto_efficient"] & ~trials["is_selected"]]
     selected = trials[trials["is_selected"]]
-    ax.scatter(
-        all_pts["topic_diversity"],
-        all_pts["coherence_c_v"],
-        s=12,
-        c="#bbbbbb",
-        alpha=0.5,
-        label="All trials",
-        zorder=1,
-    )
-    ax.scatter(
-        pareto_pts["topic_diversity"],
-        pareto_pts["coherence_c_v"],
-        s=40,
-        c=C_POS,
-        alpha=0.7,
-        label="Pareto-efficient",
-        zorder=2,
-    )
+    if not invalid.empty and "topic_diversity" in invalid.columns:
+        ax.scatter(
+            invalid["topic_diversity"],
+            invalid["coherence_c_v"],
+            s=8,
+            c="#dddddd",
+            alpha=0.3,
+            zorder=0,
+        )
+    ax.scatter(all_pts["topic_diversity"], all_pts["coherence_c_v"], s=12, c="#bbbbbb", alpha=0.5, zorder=1)
+    ax.scatter(pareto_pts["topic_diversity"], pareto_pts["coherence_c_v"], s=40, c=C_NEUTRAL, alpha=0.6, zorder=2)
     if not selected.empty:
         ax.scatter(
             selected["topic_diversity"],
             selected["coherence_c_v"],
             s=200,
             marker="*",
-            c=C_THIN,
+            c=C_SELECTED,
             edgecolors=C_NEUTRAL,
-            linewidths=1,
-            label="Selected model",
+            linewidths=1.5,
             zorder=4,
         )
         ax.annotate(
-            "Selected model",
+            "Selected",
             (selected.iloc[0]["topic_diversity"], selected.iloc[0]["coherence_c_v"]),
             xytext=(12, 12),
             textcoords="offset points",
-            fontsize=10,
+            fontsize=VALUE_LABEL,
             arrowprops=dict(arrowstyle="->", color=C_NEUTRAL),
         )
-    ax.set_xlabel("Topic diversity")
-    ax.set_ylabel("Coherence (c_v)")
-    set_title_with_subtitle(
+    ax.set_xlabel("Topic diversity", fontsize=AXIS_LABEL)
+    ax.set_ylabel("Coherence (c_v)", fontsize=AXIS_LABEL)
+    apply_presentation_context(
         ax,
-        "The final topic model was chosen as a trade-off, not by one metric",
-        f"Bayesian optimization over {len(trials)} configurations",
+        mode=mode,
+        title="The final topic model was chosen as a trade-off, not by one metric",
+        subtitle=f"Bayesian optimization over {len(trials)} configurations",
     )
-    ax.legend(loc="lower right", frameon=False, fontsize=9)
-    fig.subplots_adjust(top=0.82)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S04",
@@ -460,40 +528,81 @@ def plot_ees_integrated_short(
     paths: PresentationPaths,
     *,
     stem: str = "slide12_ees_integrated",
+    mode: PresentationMode = "review",
+    layout: Literal["integrated", "three_panel"] = "integrated",
 ) -> Tuple[List[Path], Dict]:
     apply_theme()
-    domains = ["emotion", "embodiment", "social"]
-    fig, axes = plt.subplots(1, 3, figsize=(13, 5.5), sharex=True)
-    for ax, domain in zip(axes, domains):
+    if layout == "three_panel":
+        return _plot_ees_three_panel(df, paths, stem=stem, mode=mode)
+    return _plot_ees_integrated_forest(df, paths, stem=stem, mode=mode)
+
+
+def _plot_ees_integrated_forest(
+    df: pd.DataFrame,
+    paths: PresentationPaths,
+    *,
+    stem: str,
+    mode: PresentationMode,
+) -> Tuple[List[Path], Dict]:
+    domain_order = ["emotion", "embodiment", "social"]
+    domain_labels = {"emotion": "EMOTION", "embodiment": "EMBODIMENT", "social": "SOCIAL WORLD"}
+    rows: List[pd.Series] = []
+    for domain in domain_order:
         sub = df.loc[df["domain"] == domain]
         if sub.empty:
-            ax.set_visible(False)
             continue
-        y = np.arange(len(sub))[::-1]
-        gate_band(ax, orientation="vertical")
-        gate_lines(ax, orientation="vertical")
-        for yi, row in zip(y, sub.itertuples()):
-            est, lo, hi = row.cliffs_delta, row.ci_low, row.ci_high
-            mk = marker_for_gate("thin" if str(row.status) == "thin" else "viable")
-            ax.errorbar(est, yi, xerr=[[est - lo], [hi - est]], fmt="none", color=C_NEUTRAL, capsize=2, lw=1)
-            ax.scatter([est], [yi], **mk, zorder=3)
-        labels = sub["display_label"].fillna(sub["construct"]).tolist()
-        ax.set_yticks(y)
-        ax.set_yticklabels(labels[::-1], fontsize=9)
-        ax.set_title(domain.upper(), fontsize=11, fontweight="bold", loc="left")
-        ax.set_xlim(-0.25, 0.25)
-    axes[1].set_xlabel("Cliff's δ")
-    fig.suptitle(
-        "The exploratory extension shifts the question from topics to narrative experience",
-        fontsize=13, fontweight="bold", y=1.02, x=0.02, ha="left",
+        header = pd.Series({"domain": domain, "display_label": domain_labels[domain], "is_header": True})
+        rows.append(header)
+        for _, r in sub.iterrows():
+            r = r.copy()
+            r["is_header"] = False
+            rows.append(r)
+    plot_df = pd.DataFrame(rows).reset_index(drop=True)
+    plot_rows = plot_df.loc[~plot_df.get("is_header", False)].reset_index(drop=True)
+
+    fig, ax = plt.subplots(figsize=(11, 7.5), layout="constrained")
+    gate_band(ax, orientation="vertical")
+    gate_lines(ax, orientation="vertical")
+
+    y_positions: List[float] = []
+    y_labels: List[str] = []
+    y_idx = 0
+    for _, row in plot_df.iterrows():
+        if row.get("is_header"):
+            y_positions.append(y_idx)
+            y_labels.append(str(row["display_label"]))
+            y_idx += 1.2
+            continue
+        y_positions.append(y_idx)
+        y_labels.append(str(row.get("display_label", row.get("construct", ""))))
+        est, lo, hi = row["cliffs_delta"], row["ci_low"], row["ci_high"]
+        mk = marker_for_gate("thin" if str(row.get("status", "")) == "thin" else "viable")
+        ax.errorbar(est, y_idx, xerr=[[est - lo], [hi - est]], fmt="none", color=C_NEUTRAL, capsize=2, lw=1)
+        ax.scatter([est], [y_idx], **mk, zorder=3)
+        y_idx += 1
+
+    ax.set_yticks(y_positions)
+    ax.set_yticklabels(y_labels, fontsize=TICK_TEXT)
+    for i, lbl in enumerate(ax.get_yticklabels()):
+        if lbl.get_text() in domain_labels.values():
+            lbl.set_fontweight("bold")
+            lbl.set_fontsize(PANEL_TITLE)
+    ax.invert_yaxis()
+    ax.set_xlim(-0.25, 0.25)
+    ax.set_xlabel("Cliff's δ", fontsize=AXIS_LABEL)
+    apply_presentation_context(
+        ax,
+        mode=mode,
+        title="The exploratory extension shifts the question from topics to narrative experience",
+        subtitle="Exploratory, frozen coding — does not change H1–H6 verdicts",
+        exploratory=True,
     )
-    fig.text(0.5, 0.02, "Exploratory, frozen coding — does not change H1–H6 verdicts", ha="center", fontsize=9, color=C_EXPL)
-    fig.subplots_adjust(top=0.82, bottom=0.12, wspace=0.45)
-    outs = save_figure(fig, paths.deck_figures, stem)
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, stem)
     return outs, _manifest_row(
         stem,
         "S12",
-        "EES integrated short",
+        "EES integrated forest",
         "main",
         ["emotion_effects", "embodiment_effects", "family_social_effects"],
         "Cliff's δ",
@@ -503,16 +612,69 @@ def plot_ees_integrated_short(
     )
 
 
+def _plot_ees_three_panel(
+    df: pd.DataFrame,
+    paths: PresentationPaths,
+    *,
+    stem: str,
+    mode: PresentationMode,
+) -> Tuple[List[Path], Dict]:
+    domains = ["emotion", "embodiment", "social"]
+    fig, axes = plt.subplots(1, 3, figsize=(13, 5.5), sharex=True, layout="constrained")
+    for ax, domain in zip(axes, domains):
+        sub = df.loc[df["domain"] == domain]
+        if sub.empty:
+            ax.set_visible(False)
+            continue
+        y = categorical_y_positions(len(sub))
+        gate_band(ax, orientation="vertical")
+        gate_lines(ax, orientation="vertical")
+        for yi, row in zip(y, sub.itertuples()):
+            est, lo, hi = row.cliffs_delta, row.ci_low, row.ci_high
+            mk = marker_for_gate("thin" if str(row.status) == "thin" else "viable")
+            ax.errorbar(est, yi, xerr=[[est - lo], [hi - est]], fmt="none", color=C_NEUTRAL, capsize=2, lw=1)
+            ax.scatter([est], [yi], **mk, zorder=3)
+        labels = sub["display_label"].fillna(sub["construct"]).tolist()
+        apply_categorical_y_axis(ax, y, labels)
+        ax.set_title(domain.upper(), fontsize=PANEL_TITLE, fontweight="bold", loc="left")
+        ax.set_xlim(-0.25, 0.25)
+    axes[1].set_xlabel("Cliff's δ", fontsize=AXIS_LABEL)
+    if mode == "review":
+        fig.suptitle(
+            "EES three-panel (appendix layout)",
+            fontsize=PANEL_TITLE,
+            fontweight="bold",
+            x=0.02,
+            ha="left",
+        )
+    out_dir = resolve_output_dir(paths, mode)
+    outs = save_figure(fig, out_dir, f"{stem}_three_panel")
+    return outs, _manifest_row(
+        f"{stem}_three_panel",
+        "S12",
+        "EES three-panel appendix",
+        "appendix",
+        ["emotion_effects", "embodiment_effects", "family_social_effects"],
+        "Cliff's δ",
+        "exploratory",
+        "",
+        outs,
+    )
+
+
 def export_component_animation_steps(
     df: pd.DataFrame,
     paths: PresentationPaths,
+    *,
+    mode: PresentationMode = "chart_only",
 ) -> List[Path]:
-    """Export staged slide08 SVGs for PowerPoint/Gamma build sequences."""
+    """Export staged slide08 SVGs with fixed canvas dimensions."""
     from .annotations import load_animation_sequence
 
     seq = load_animation_sequence("S08", paths)
     if seq.empty:
         return []
+    fixed_ylim = categorical_ylim(len(df))
     outputs: List[Path] = []
     features = df["feature"].tolist()
     for _, step in seq.iterrows():
@@ -522,25 +684,61 @@ def export_component_animation_steps(
         else:
             idx = features.index(el) + 1 if el in features else len(features)
             sub = df.iloc[:idx]
+        stem = f"slide08_step{int(step['step']):02d}_{el}"
         if sub.empty and el == "axes":
             apply_theme()
-            fig, ax = plt.subplots(figsize=(10.5, 6.2))
+            fig, ax = plt.subplots(figsize=S08_FIGSIZE, layout="constrained")
             gate_band(ax, orientation="vertical")
             gate_lines(ax, orientation="vertical")
-            ax.set_xlim(-0.22, 0.22)
-            ax.set_xlabel("Cliff's δ (high-rated − low-rated)")
-            set_title_with_subtitle(
+            ax.set_xlim(*S08_XLIM)
+            ax.set_ylim(*fixed_ylim)
+            ax.set_xlabel("Cliff's δ (high-rated − low-rated)", fontsize=AXIS_LABEL)
+            apply_presentation_context(
                 ax,
-                "Specific narrative functions reveal clearer differences",
-                f"Step {int(step['step'])}: axes",
+                mode=mode,
+                title="Specific narrative functions reveal clearer differences",
+                subtitle=f"Step {int(step['step'])}: axes",
             )
-            fig.subplots_adjust(top=0.82, bottom=0.18)
-            outputs.extend(save_figure(fig, paths.deck_figures, f"slide08_step{int(step['step']):02d}_{el}"))
+            out_dir = resolve_output_dir(paths, mode)
+            outputs.extend(save_figure(fig, out_dir, stem, fixed_canvas=True))
         elif not sub.empty:
             outs, _ = plot_component_effects_presentation(
-                sub, paths, stem=f"slide08_step{int(step['step']):02d}_{el}"
+                sub,
+                paths,
+                stem=stem,
+                mode=mode,
+                fixed_ylim=fixed_ylim,
+                highlight_focal=True,
             )
-            outputs.extend(outs)
+            # Re-save with fixed canvas
+            apply_theme()
+            fig, ax = plt.subplots(figsize=S08_FIGSIZE, layout="constrained")
+            gate_band(ax, orientation="vertical")
+            gate_lines(ax, orientation="vertical")
+            y = categorical_y_positions(len(sub))
+            labels = sub["display_label"].fillna(sub["label"]).tolist()
+            for yi, row in zip(y, sub.itertuples()):
+                est, lo, hi = row.effect_size, row.ci_low, row.ci_high
+                is_focal = str(row.feature) in FOCAL_COMPONENTS
+                mk = marker_for_gate(str(row.measurement_status))
+                ax.errorbar(est, yi, xerr=[[est - lo], [hi - est]], fmt="none", color=C_NEUTRAL, capsize=3, lw=1.2, zorder=2)
+                if is_focal and mk.get("facecolors") == C_POS:
+                    mk = {**mk, "s":  110}
+                zorder = mk.pop("zorder", 3) if "zorder" in mk else 3
+                ax.scatter([est], [yi], **mk, zorder=zorder)
+                ax.text(hi + 0.012, yi, format_delta(est), va="center", fontsize=VALUE_LABEL, color=C_NEUTRAL)
+            apply_categorical_y_axis(ax, y, labels)
+            ax.set_xlabel("Cliff's δ (high-rated − low-rated)", fontsize=AXIS_LABEL)
+            ax.set_xlim(*S08_XLIM)
+            ax.set_ylim(*fixed_ylim)
+            apply_presentation_context(
+                ax,
+                mode=mode,
+                title="Specific narrative functions reveal clearer differences",
+                subtitle="Confirmatory component effects; shaded band = below prespecified |δ| = 0.11 gate",
+            )
+            out_dir = resolve_output_dir(paths, mode)
+            outputs.extend(save_figure(fig, out_dir, stem, fixed_canvas=True))
     return outputs
 
 
@@ -564,37 +762,46 @@ def build_all_slide_figures(paths: PresentationPaths | None = None) -> List[Dict
     manifest: List[Dict] = []
 
     trials = prepare_pareto_points(paths)
-    outs, row = plot_pareto_selection(trials, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        _, row = plot_pareto_selection(trials, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_pareto_selection(trials, paths, mode="chart_only")[1])
 
     ctx = prepare_context_measurement(paths)
-    outs, row = plot_context_and_measurement(ctx["agreement"], ctx["primary"], paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_context_and_measurement(ctx["agreement"], ctx["primary"], paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_context_and_measurement(ctx["agreement"], ctx["primary"], paths, mode="chart_only")[1])
 
     primary = prepare_primary_verdicts(paths)
-    outs, row = plot_primary_verdict_cards(primary, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_primary_verdict_cards(primary, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_primary_verdict_cards(primary, paths, mode="chart_only")[1])
 
     comp = prepare_component_effects(paths)
-    outs, row = plot_component_effects_presentation(comp, paths)
-    manifest.append(row)
-    export_component_animation_steps(comp, paths)
+    for mode in ("chart_only", "review"):
+        plot_component_effects_presentation(comp, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_component_effects_presentation(comp, paths, mode="chart_only")[1])
+    export_component_animation_steps(comp, paths, mode="chart_only")
 
     att = prepare_attention_shift(paths)
-    outs, row = plot_attention_shift_short(att, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_attention_shift_short(att, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_attention_shift_short(att, paths, mode="chart_only")[1])
 
     qr = prepare_quality_reach_dumbbell(paths)
     catalog_full = build_quality_reach_catalog(paths)
-    outs, row = plot_quality_reach_dumbbell(qr, catalog_full, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_quality_reach_dumbbell(qr, catalog_full, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_quality_reach_dumbbell(qr, catalog_full, paths, mode="chart_only")[1])
 
     rich = prepare_richness_evidence(paths)
-    outs, row = plot_richness_evidence_sequence(rich, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_richness_evidence_sequence(rich, paths, mode=mode)  # type: ignore[arg-type]
+    manifest.append(plot_richness_evidence_sequence(rich, paths, mode="chart_only")[1])
 
     ees = prepare_ees_integrated(paths)
-    outs, row = plot_ees_integrated_short(ees, paths)
-    manifest.append(row)
+    for mode in ("chart_only", "review"):
+        plot_ees_integrated_short(ees, paths, mode=mode, layout="integrated")  # type: ignore[arg-type]
+        plot_ees_integrated_short(ees, paths, mode=mode, layout="three_panel")  # type: ignore[arg-type]
+    manifest.append(plot_ees_integrated_short(ees, paths, mode="chart_only", layout="integrated")[1])
 
     return manifest

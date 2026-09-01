@@ -170,6 +170,8 @@ def _lexical_hits(blob: str, prototypes: Sequence[str]) -> List[str]:
 def _load_already_material_topic_ids(cfg: Stage11Config) -> Set[int]:
     """Strict S8/S9 topic IDs already in construct coverage (skip LLM triage bill)."""
     out: Set[int] = set()
+    for tid in cfg.section("spillover", "h3_already_strict_material_topic_ids", default=[]) or []:
+        out.add(int(tid))
     cov_path = cfg.output_path("constructs_dir") / "construct_coverage.json"
     if cov_path.exists():
         try:
@@ -188,18 +190,14 @@ def _load_already_material_topic_ids(cfg: Stage11Config) -> Set[int]:
         except Exception as exc:
             LOGGER.warning("Could not read already-material from coverage: %s", exc)
     if not out:
-        # Fallback: master security_code in {S8, S9} with family_strict H3
+        # Fallback: master security_code in {S8, S9}
         master_path = cfg.output_path("constructs_dir") / "master_annotations.parquet"
         if master_path.exists():
             try:
-                cols = ["topic_id", "security_code"]
                 master = pd.read_parquet(master_path)
-                use = [c for c in cols if c in master.columns]
-                if "topic_id" in use and "security_code" in use:
+                if "topic_id" in master.columns and "security_code" in master.columns:
                     codes = master["security_code"].astype(str).str.upper()
                     mask = codes.isin({"S8", "S9"})
-                    if "h3_strict" in master.columns:
-                        mask = mask & (master["h3_strict"].astype(float) >= 0.70)
                     out.update(int(t) for t in master.loc[mask, "topic_id"].tolist())
             except Exception as exc:
                 LOGGER.warning("Could not read already-material from master: %s", exc)

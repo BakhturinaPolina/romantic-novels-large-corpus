@@ -12,6 +12,7 @@ from matplotlib.lines import Line2D
 from .evidence_metadata import _read_table
 from .figures_main import _manifest_row
 from .paths import PresentationPaths, default_paths
+from .plot_helpers import apply_categorical_y_axis, categorical_y_positions
 from .theme import (
     C_EXPL,
     C_NEG,
@@ -39,7 +40,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
     feats = ["taxonomy_n_eff", "rare_taxonomy_n_eff"]
     labels = ["Raw taxonomy eᴴ", "Rarefied taxonomy eᴴ"]
     sub = cliffs.set_index("feature").loc[feats]
-    y = np.arange(len(feats))[::-1]
+    y = categorical_y_positions(len(feats))
     for yi, feat in zip(y, feats):
         r = sub.loc[feat]
         ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.6)
@@ -53,8 +54,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
             fontsize=9,
         )
     gate_lines(ax)
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels)
+    apply_categorical_y_axis(ax, y, labels)
     ax.set_xlabel("Cliff's δ (high − low)")
     ax.set_title("A. Unadjusted high–low contrast")
     ax.set_xlim(-0.05, 0.32)
@@ -70,7 +70,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
         }
     )
     m = m.reset_index(drop=True)
-    y = np.arange(len(m))[::-1]
+    y = categorical_y_positions(len(m))
     labels = []
     for yi, r in zip(y, m.itertuples()):
         ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.6)
@@ -85,8 +85,7 @@ def appendix_richness(paths: PresentationPaths) -> Tuple[List, Dict]:
         )
         labels.append(r.model_short)
     ax.axvline(0, color="#888888", lw=0.8)
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels)
+    apply_categorical_y_axis(ax, y, labels)
     ax.set_xlabel("OLS β for taxonomy_n_eff (outcome: rating_shrunk; author-clustered SE)")
     ax.set_title("B. Adjusted taxonomy richness (β for taxonomy_n_eff; suppression in M2)")
     xmax = float(m["ci_high"].max()) + 0.0015
@@ -256,26 +255,26 @@ def appendix_promise_functions(paths: PresentationPaths) -> Tuple[List, Dict]:
     pr = pr.sort_values("cliffs_delta").reset_index(drop=True)
     apply_theme()
     fig, ax = plt.subplots(figsize=(11.5, 6.6))
-    y = np.arange(len(pr))
+    y = categorical_y_positions(len(pr))
     xmax = float(pr["ci_high"].max()) + 0.08
-    for yi, r in pr.iterrows():
-        ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.5)
-        thin = int(r["n_topics"]) <= 2
+    for yi, r in zip(y, pr.itertuples()):
+        ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.5)
+        thin = int(r.n_topics) <= 2
         face = "none" if thin else C_POS
-        ax.scatter([r["cliffs_delta"]], [yi], facecolors=face, edgecolors=C_POS, s=70, zorder=3)
+        ax.scatter([r.cliffs_delta], [yi], facecolors=face, edgecolors=C_POS, s=70, zorder=3)
         flag = " ⚠ few topics" if thin else ""
         ax.text(
             xmax - 0.01,
             yi,
-            f"n={int(r['n_topics'])}{flag}",
+            f"n={int(r.n_topics)}{flag}",
             va="center",
             ha="right",
             fontsize=9,
             color=C_THIN if thin else C_NEUTRAL,
         )
-        if r["promise_type"] == "protective_commitment":
+        if r.promise_type == "protective_commitment":
             ax.text(
-                r["ci_low"] - 0.012,
+                r.ci_low - 0.012,
                 yi,
                 "4-topic bundle",
                 ha="right",
@@ -284,8 +283,7 @@ def appendix_promise_functions(paths: PresentationPaths) -> Tuple[List, Dict]:
                 color=C_THIN,
             )
     gate_lines(ax)
-    ax.set_yticks(y)
-    ax.set_yticklabels(pr["promise_type"].str.replace("_", " "))
+    apply_categorical_y_axis(ax, y, pr["promise_type"].str.replace("_", " ").tolist())
     ax.set_xlabel("Cliff's δ")
     set_title_with_subtitle(
         ax,
@@ -380,7 +378,7 @@ def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
     fig, ax = plt.subplots(figsize=(10.0, 5.4))
     # Order by pct_differs desc
     d = drift.sort_values("pct_differs", ascending=True)
-    y = np.arange(len(d))
+    y = categorical_y_positions(len(d))
     drifted = d["pct_differs"] * 100
     stable = 100 - drifted
     ax.barh(y, stable, color="#CCCCCC", label="Stable function")
@@ -393,8 +391,7 @@ def appendix_function_drift(paths: PresentationPaths) -> Tuple[List, Dict]:
             va="center",
             fontsize=10,
         )
-    ax.set_yticks(y)
-    ax.set_yticklabels(d["hypothesis"])
+    apply_categorical_y_axis(ax, y, d["hypothesis"].tolist())
     ax.set_xlim(0, 130)
     ax.set_xlabel("Share of comparable topics (%)")
     set_title_with_subtitle(
@@ -424,7 +421,7 @@ def appendix_felt_vs_looked(paths: PresentationPaths) -> Tuple[List, Dict]:
     # Put logratio first visually
     order = ["felt_vs_looked_logratio", "felt_body", "looked_at_body", "body_interoceptive", "body_vulnerable", "body_markings", "body_external_appearance", "body_grooming"]
     felt = felt.set_index("construct").loc[[c for c in order if c in set(felt["construct"])]].reset_index()
-    y = np.arange(len(felt))[::-1]
+    y = categorical_y_positions(len(felt))
     xmax = float(felt["ci_high"].max()) + 0.06
     for yi, r in zip(y, felt.itertuples()):
         ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.5)
@@ -435,8 +432,7 @@ def appendix_felt_vs_looked(paths: PresentationPaths) -> Tuple[List, Dict]:
         nlab = f"n={int(r.n_topics)}" if pd.notna(r.n_topics) else "ratio"
         ax.text(xmax - 0.005, yi, nlab + (" ⚠" if thin else ""), va="center", ha="right", fontsize=9)
     gate_lines(ax)
-    ax.set_yticks(y)
-    ax.set_yticklabels(felt["construct"].str.replace("_", " "))
+    apply_categorical_y_axis(ax, y, felt["construct"].str.replace("_", " ").tolist())
     ax.set_xlabel("Cliff's δ")
     set_title_with_subtitle(
         ax,
@@ -476,31 +472,31 @@ def appendix_ees_three_panel(paths: PresentationPaths) -> Tuple[List, Dict]:
     ]
     for ax, df, title, col in panels:
         df = df.sort_values("cliffs_delta").reset_index(drop=True)
-        y = np.arange(len(df))
-        for yi, r in df.iterrows():
-            if pd.isna(r["cliffs_delta"]):
+        y = categorical_y_positions(len(df))
+        for yi, r in zip(y, df.itertuples()):
+            if pd.isna(r.cliffs_delta):
                 continue
-            ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.3)
-            status = str(r.get("status", "measurable")).lower()
-            thin = status == "thin" or (pd.notna(r.get("n_topics")) and float(r["n_topics"]) <= 1)
+            ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.3)
+            status = str(getattr(r, "status", "measurable")).lower()
+            thin = status == "thin" or (pd.notna(getattr(r, "n_topics", None)) and float(r.n_topics) <= 1)
             face = "none" if thin else C_POS
-            ax.scatter([r["cliffs_delta"]], [yi], facecolors=face, edgecolors=C_POS, s=55, zorder=3)
+            ax.scatter([r.cliffs_delta], [yi], facecolors=face, edgecolors=C_POS, s=55, zorder=3)
         gate_lines(ax)
-        ax.set_yticks(y)
         labels = (
             df[col]
             .str.replace("_", " ")
             .str.replace("emotion ", "")
             .str.replace("body ", "")
             .str.replace("supportive social embeddedness", "supportive\nsocial emb.")
+            .tolist()
         )
-        ax.set_yticklabels(labels, fontsize=9)
+        apply_categorical_y_axis(ax, y, labels)
         ax.set_title(title)
         ax.set_xlabel("Cliff's δ")
         # Highlight emotion_containment
         if title.startswith("Emotion") and "emotion_containment" in set(df["construct"]):
-            idx = df.index[df["construct"] == "emotion_containment"][0]
-            ax.get_yticklabels()[list(df.index).index(idx)].set_fontweight("bold")
+            pos = list(df["construct"]).index("emotion_containment")
+            ax.get_yticklabels()[pos].set_fontweight("bold")
 
     fig.suptitle("Exploratory associations with higher ratings", fontsize=14, color=C_EXPL, y=0.98)
     fig.subplots_adjust(left=0.08, right=0.98, top=0.88, bottom=0.10, wspace=0.55)
@@ -542,15 +538,14 @@ def appendix_genre_era(paths: PresentationPaths) -> Tuple[List, Dict]:
         sub = ge.loc[ge["feature"] == feat].copy()
         # Prefer genre_group then year bins
         sub = sub.sort_values(["group_type", "group"])
-        y = np.arange(len(sub))
+        y = categorical_y_positions(len(sub))
         overall = float(comps.loc[feat, "effect_size"]) if feat in comps.index else np.nan
         if pd.notna(overall):
             ax.axvline(overall, color=C_POS, lw=1.5, label=f"overall δ={overall:.3f}")
         ax.axvline(0, color="#888", lw=0.8)
         ax.scatter(sub["cliffs_delta"], y, color="#666666", s=45)
         labels = [f"{r.group_type}:{r.group}  (nₕ={int(r.n_high)}, nₗ={int(r.n_low)})" for r in sub.itertuples()]
-        ax.set_yticks(y)
-        ax.set_yticklabels(labels, fontsize=8)
+        apply_categorical_y_axis(ax, y, labels)
         ax.set_title(feat.replace("RAX_", ""))
         ax.set_xlabel("Cliff's δ")
         ax.set_ylim(-0.6, len(sub) - 0.4)

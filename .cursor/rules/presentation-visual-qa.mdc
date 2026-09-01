@@ -1,0 +1,51 @@
+---
+description: Presentation visual QA — inspect renders, not code; preserve statistics and baselines
+globs:
+  - src/stage11_refined_construct_analysis/analysis/presentation_suite/**
+  - scripts/presentation/**
+  - notebooks/09_presentation/**
+  - results/presentation/**
+---
+
+# Presentation visual QA
+
+For every main-deck figure:
+
+1. Never change statistical values.
+2. Open the rendered PNG after modifying the plot.
+3. Judge the rendered output, not only the code.
+
+Presentation requirements:
+
+- Figure must be understandable within ~5 seconds.
+- Use human-facing labels only.
+- Minimum tick/label text approximately 13 pt.
+- One primary visual message per figure.
+- Avoid legends when direct labels are practical.
+- Use neutral colors for supporting elements.
+- Highlight only the data relevant to the spoken takeaway.
+- Do not encode evidence status using color alone.
+- Remove decorative boxes, gridlines, borders, and labels without analytical purpose.
+- Do not put slide prose inside the chart.
+- Use common axes across figures that are meant to be compared.
+- Keep x=0 in the same visual location for related effect plots.
+- Use identical canvas dimensions for animation frames.
+- Do not accept clipped or overlapping text.
+- Do not use raw variable names.
+- Do not use fonts below the presentation threshold.
+- Do not replace an existing approved figure without visual comparison.
+
+Before replacing a figure:
+
+- generate candidate A/B/C variants in `results/presentation/final_v1/variants/`
+- make a contact sheet via `scripts/presentation/build_contact_sheet.py`
+- visually inspect all candidates (PNG contact sheet or `presentation_review.html`)
+- choose one based on the slide's intended takeaway
+- preserve the previous approved figure as the baseline until approval
+
+Workflow commands:
+
+- `make presentation` — regenerate figures and review HTML
+- `make presentation-qa` — tests, contact sheet, variants, palette check
+
+Use `chart_only` mode exports for Figma/PowerPoint; `review` mode for HTML inspection.

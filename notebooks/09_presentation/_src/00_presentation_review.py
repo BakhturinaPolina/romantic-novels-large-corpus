@@ -88,7 +88,7 @@ show_slide(
 show_slide(
     "S07", "None of the six broad hypotheses produced a clean confirmatory win",
     "CONFIRMATORY", "Broad binaries fail prespecified gate",
-    "slide07_primary_verdict_cards", "slide07_primary_verdicts.csv",
+    "slide07_primary_verdict_preview", "slide07_primary_verdicts.csv",
 )
 show_slide(
     "S08", "Specific narrative functions reveal clearer differences",
@@ -108,7 +108,7 @@ show_slide(
 show_slide(
     "S11", "Better-rated books are not simply about more things",
     "EXPLORATORY", "Rarefaction removes raw richness; suppression after drivers",
-    "slide11_richness_evidence", "slide11_richness_story.csv",
+    "slide11_richness_preview", "slide11_richness_story.csv",
 )
 show_slide(
     "S12", "The exploratory extension shifts the question from topics to narrative experience",

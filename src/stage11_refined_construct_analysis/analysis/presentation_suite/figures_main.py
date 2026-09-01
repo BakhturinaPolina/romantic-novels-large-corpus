@@ -12,6 +12,7 @@ from matplotlib.lines import Line2D
 
 from .evidence_metadata import build_all_metadata, load_agreement, load_components, load_primaries
 from .paths import PresentationPaths, default_paths
+from .plot_helpers import apply_categorical_y_axis, categorical_y_positions
 from .theme import (
     C_EXPL,
     C_NEG,
@@ -61,14 +62,13 @@ def fig01_contextual_agreement(
     agreement = agreement if agreement is not None else load_agreement(paths)
     apply_theme()
     fig, ax = plt.subplots(figsize=(9.5, 5.6))
-    y = np.arange(len(agreement))[::-1]
+    y = categorical_y_positions(len(agreement))
     pct = agreement["agreement_pct"].to_numpy()
     ax.hlines(y, 0, pct, color="#56B4E9", lw=2)
     ax.scatter(pct, y, color=C_POS, s=70, zorder=3)
     for yi, row in zip(y, agreement.itertuples()):
         ax.text(row.agreement_pct + 1.5, yi, row.label, va="center", fontsize=11, color=C_NEUTRAL)
-    ax.set_yticks(y)
-    ax.set_yticklabels(agreement["hypothesis"])
+    apply_categorical_y_axis(ax, y, agreement["hypothesis"].tolist())
     ax.set_xlim(0, 78)
     ax.set_xlabel("Lexical–contextual agreement (%)")
     set_title_with_subtitle(
@@ -184,7 +184,7 @@ def fig03_primary_verdicts(
         sharey=True,
     )
     ax_h, ax_m, ax_e, ax_v = axes
-    y = np.arange(len(primary))[::-1]
+    y = categorical_y_positions(len(primary))
 
     for ax in (ax_h, ax_m, ax_v):
         ax.set_xlim(0, 1)
@@ -219,6 +219,7 @@ def fig03_primary_verdicts(
     gate_lines(ax_e, orientation="vertical")
     ax_e.set_yticks(y)
     ax_e.set_yticklabels([])
+    ax_e.invert_yaxis()
     ax_e.set_xlim(-0.22, 0.24)
     ax_e.set_xlabel("Cliff's δ (high − low rating tiers)")
     header_y = len(primary) - 0.28
@@ -420,15 +421,14 @@ def fig05_component_effects(
 
     apply_theme()
     fig, ax = plt.subplots(figsize=(11, 7.0))
-    y = np.arange(len(df))
-    for yi, r in df.iterrows():
-        ax.plot([r["ci_low"], r["ci_high"]], [yi, yi], color=C_NEUTRAL, lw=1.5)
-        mk = marker_for_gate(str(r["measurement_status"]))
-        ax.scatter([r["effect_size"]], [yi], zorder=3, **mk)
+    y = categorical_y_positions(len(df))
+    for yi, r in zip(y, df.itertuples()):
+        ax.plot([r.ci_low, r.ci_high], [yi, yi], color=C_NEUTRAL, lw=1.5)
+        mk = marker_for_gate(str(r.measurement_status))
+        ax.scatter([r.effect_size], [yi], zorder=3, **mk)
     gate_lines(ax, orientation="vertical")
     labels = [f"{r.hypothesis}: {r.label}" for r in df.itertuples()]
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels)
+    apply_categorical_y_axis(ax, y, labels)
     ax.set_xlabel("Cliff's δ")
     set_title_with_subtitle(
         ax,
@@ -448,7 +448,6 @@ def fig05_component_effects(
         ),
     ]
     ax.legend(handles=legend, loc="lower right", frameon=True, framealpha=0.95, edgecolor="#dddddd")
-    ax.set_ylim(-0.8, len(df) - 0.2)
     fig.subplots_adjust(left=0.34, top=0.82)
     outs = save_figure(fig, paths.out_dir, "fig05_component_effects")
     return outs, _manifest_row(

@@ -1,10 +1,18 @@
 # Makefile for stage-based pipeline
 
-.PHONY: inventory contracts stage01 stage02 stage03 stage05 stage06 stage07 experiments pareto topics analysis all presentation
+.PHONY: inventory contracts stage01 stage02 stage03 stage05 stage06 stage07 experiments pareto topics analysis all presentation presentation-qa
 
 presentation:
 	.venv/bin/python scripts/presentation/build_presentation_assets.py --deck all
 	.venv/bin/python scripts/presentation/build_presentation_review.py
+
+presentation-qa:
+	$(MAKE) presentation
+	.venv/bin/pytest tests/stage11/test_categorical_y_axis.py tests/stage11/test_s08_animation_frames.py tests/stage11/test_presentation_suite.py -q
+	.venv/bin/pytest tests/stage11/test_presentation_visual_regression.py --mpl -q || true
+	.venv/bin/python scripts/presentation/build_contact_sheet.py
+	.venv/bin/python scripts/presentation/generate_plot_variants.py
+	.venv/bin/python scripts/presentation/check_palette_cvd.py
 
 inventory:
 	@echo "Repository structure inventory"
