@@ -34,18 +34,20 @@ Question 3 turned out not to be answerable in this corpus: the final model conta
 
 ## Research Hypotheses
 
-Each hypothesis was pre-registered in `configs/stage09/theory_aligned_index_schema.yaml` with a primary axis, then tested as specified. A **result** requires all three of: the predicted direction, a bootstrap confidence interval excluding zero, and |Cliff's δ| ≥ 0.11. The threshold was set before the tests ran; with ~5,000 books per tier, statistical significance alone separates almost nothing.
+Each hypothesis was pre-registered in `configs/stage09/theory_aligned_index_schema.yaml` with a primary axis, then tested as specified. A **result** requires all three of: the predicted direction, a bootstrap confidence interval excluding zero, and |Cliff's δ| ≥ 0.11. The threshold was set before the tests ran; with roughly 5,000 books per tier (low 5,389 · mid 5,524 · high 5,086; analysis frame n = 15,999 books, 8,263 authors) statistical significance alone separates almost nothing.
 
-| # | Hypothesis | As actually tested | Result |
-|---|------------|--------------------|--------|
-| H1 | **Love-over-Sex**: emotional connection beats explicit content | `AX_love_over_sex`, log-ratio `log((4.5+4.6+2.2+4.2)/2.3)` and difference form | **Contradicted** (δ = −0.029). Emotional safety *and* explicit content are both higher in well-rated books, so the trade-off does not exist as framed |
-| H2 | **HEA Index**: explicit happily-ever-after signals predict appreciation | `4.5` alone (primary); `4.5 + 0.8×5.3a + 0.5×8.3a` as the composite | **Directionally consistent, below threshold** (δ = +0.027). HEA is near-universal in the genre, so it barely discriminates |
-| H3 | **Material and social display** (reframed from Luxury × Love) | `AX_material_social_display` (1.6 + 8.2 + 5.3a + 8.3a) plus its interaction with relational payoff | **Contradicted, reliably** (δ = −0.146, the largest hypothesis-level effect). Display is *lower* in well-rated books, and display × payoff is a substitute rather than a complement |
-| H4 | **Protectiveness vs Possessiveness** | `4.6 − 4.7`, log-ratio and difference; `4.6` residualised on `4.5` | **Directionally consistent, below threshold** (δ = +0.090). Protective care carries it; `4.7` has 2 topics and contributes nothing measurable |
-| H5 | **Darkness vs Tenderness**, inverted U | `(3.2+4.4+7.2+7.3) − (3.1+2.2+4.6)`, with `3.1` thin, plus a quadratic darkness term | **No reliable effect on the composite** (δ = +0.012, CI spans zero). The inverted-U is still contradicted; component leaves (esp. `7.2`) remain informative |
-| H6 | **Narrative Arc**: repair rises, conflict falls | Within-book tertile Δ (end − begin) for rising (`4.5`, `4.6`) vs falling (`4.3`, `4.4`, `3.2`) leaves | **Partly supported** (arc index δ = +0.044). Repair rises strongly; renormalising within the relationship group leaves repair rising while misunderstanding falls |
+Stage 10 tested taxonomy-leaf composites directly. Stage 11 (17 contextual-audit notebooks in [`notebooks/08_refined_construct_analysis/`](notebooks/08_refined_construct_analysis/)) froze a dictionary of contextually validated constructs and re-tested. The **Stage 11 column is the final confirmatory source**; NB13 also publishes a [post-freeze claim hierarchy](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/post_freeze_claim_hierarchy.csv) (confirmatory / qualified / open / unmeasurable / unsupported) and a [robustness traffic light](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/robustness_traffic_light.csv) that gates the component-level claims below.
 
-Full tests, effect sizes and models: [`notebooks/07_analysis/05_hypothesis_tests.ipynb`](notebooks/07_analysis/05_hypothesis_tests.ipynb).
+| # | Hypothesis | Stage 10 (taxonomy baseline) | Stage 11 (contextually refined) |
+|---|---|---|---|
+| H1 | **Love-over-Sex** | **Contradicted** (δ = −0.029) | **Directional** (δ = +0.099), below gate |
+| H2 | **HEA Index** | **Directional** (δ = +0.027) | **Unmeasurable** after strict HEA refinement |
+| H3 | **Material display** | **Contradicted** (δ = −0.146) | **Unmeasurable** after material-side freeze |
+| H4 | **Protectiveness vs Possessiveness** | **Directional** (δ = +0.090) | **Thin / inconclusive** (δ = +0.090); protection atom is single-topic |
+| H5 | **Darkness vs Tenderness** | **No reliable effect** (δ = +0.012) | **Contradicted** (δ = −0.031) |
+| H6 | **Narrative Arc** | **Partly supported** (δ = +0.044) | **Contradicted** (δ = −0.053) |
+
+Stage 10 tests: [`notebooks/07_analysis/05_hypothesis_tests.ipynb`](notebooks/07_analysis/05_hypothesis_tests.ipynb). Stage 11 final verdicts: [`final_verdict_table.md`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/final_verdict_table.md). Side-by-side comparison: [`stage10_vs_final_side_by_side.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/stage10_vs_final_side_by_side.csv).
 
 Macro-axis notes (v2.4): Full schema in `configs/stage09/theory_aligned_index_schema.yaml`. Taxonomy v2.4 in `configs/stage09/romance_corpus_taxonomy_v2.yaml`. **Axis-bearing IDs** (narrow allowlist for Stage10 hypotheses) are separate from the full leaf taxonomy used in Stage09 classification — context labels (1.x, 6.1b, 8.x, 9.x, 10.x, `uncertain_interpretable`) are mappable but excluded from macro axes. **`3.3`** is exploratory-only (`AX_internal_ambivalence` for H5/H6). Three intimacy axes for H1 (exploratory): **`AX_everyday_intimacy_emotional_safety`** (core 4.2+4.6+2.2 only); **`AX_sexual_tension_explicit_intimacy`** (2.1+2.3+2.4+2.5); **`AX_coercion_risk_watchlist`** (7.4+7.2; manual review). Also: `AX_status_power` (6.1a+6.6+6.7), `AX_economic_dependency` (6.4), `AX_love_over_sex`, `AX_attraction` (2.1). Stage08 `axis_hint=no_hypothesis_signal` is a weak routing hint only. Design memos: `results/reports/stage09/taxonomy_v23_axis_context_design.md`, `taxonomy_v24_heuristic_hardening.md`.
 
@@ -73,6 +75,8 @@ Each cohort row includes aggregated Goodreads-style fields from the design frame
 - **`ratings_count_sum`**: median **263**, mean **~3.0k** (long-tailed; vote counts vary strongly across works)
 
 Metadata tables: `data/raw/romance_subdataset_filtered_v3/subsampling_metadata/romance_subdataset_filtered_v3_full.csv`.
+
+**Analysis frame (Stage 10 / Stage 11):** one work with a missing Goodreads rating is dropped, leaving **n = 15,999 books** and **8,263 authors** in the confirmatory frame. Tier splits are **low = 5,389 · mid = 5,524 · high = 5,086** (NB13 [`sanity_summary.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/sanity_summary.csv), [`tier_sizes.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/tier_sizes.csv)).
 
 ### On-disk layout (Stages 01–05b)
 
@@ -156,6 +160,8 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 
 **Composite indices** (Stage 10): 28 axes built from the schema, including `material_social_display` (the H3 reframe), `appearance_presentation` (1.6 + 1.7), `dark_vs_tender`, `protective_vs_possessive` and `internal_ambivalence` (3.3, exploratory). `luxury_composite` and `luxury_x_love` are retained but rest almost entirely on empty components in this model, so they are reported as unmeasurable rather than as nulls. Every axis is audited for coverage before use in `axis_coverage.parquet`; components with no topics raise rather than silently evaluating to zero.
 
+**Refined constructs** (Stage 11): The 17 contextual-audit notebooks (`notebooks/08_refined_construct_analysis/`) replaced taxonomy-leaf composites with dictionary-driven constructs validated by close reading. Topics were re-coded for contextual function (e.g. a "kiss" topic may serve emotional reassurance, not explicit sex); constructs whose topic mass could not survive the audit were frozen as **unmeasurable** (H2, H3) or **thin** (H4 protection atom). The refined dictionary and measurement gates are in `results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/07_refined_construct_dictionary/` and `08_refined_axes_validity/`.
+
 **Radway's 13 Narrative Functions** (Radway, 1984):
 - Phase I (R1–R7): Initial Conflict & Isolation
 - Phase II (R8–R10): Turning Point & Recognition
@@ -165,7 +171,7 @@ Topics are mapped to two theoretical frameworks via zero-shot classification:
 
 ### 4. Statistical Analysis
 
-Design and rationale: [`configs/stage10/final_analysis.yaml`](configs/stage10/final_analysis.yaml). Walkthrough: [`notebooks/07_analysis/`](notebooks/07_analysis/).
+Design and rationale: [`configs/stage10/final_analysis.yaml`](configs/stage10/final_analysis.yaml). Stage 10 walkthrough: [`notebooks/07_analysis/`](notebooks/07_analysis/). Stage 11 refined tests: [`notebooks/08_refined_construct_analysis/13_final_statistical_tests.ipynb`](notebooks/08_refined_construct_analysis/13_final_statistical_tests.ipynb).
 
 **Hard topic assignments, not soft probabilities.** A book's measure for a topic is the share of its sentences whose argmax topic is that topic — read directly as "3.3% of this book's sentences". Averaging 374 probabilities over ~6,000 sentences per book leaves a median per-topic coefficient of variation of 0.087; hard counts give 0.898, roughly 10× more between-book signal, at the cost of the 0.74% of sentences assigned to the outlier topic. The soft tables are retained as a robustness comparison.
 
@@ -175,9 +181,9 @@ Design and rationale: [`configs/stage10/final_analysis.yaml`](configs/stage10/fi
 - **Perceived quality** — `average_rating_weighted_mean`, Bayesian-shrunk as `(v·R + m·C)/(v + m)` with `m` = 263 (corpus median rating count) and `C` = 3.910; fit weighted by `v/(v+m)`
 - **Reach** — `log1p(ratings_count_sum)`
 
-They correlate at only r = 0.21 shrunk (0.12 raw), under 5% shared variance, which is the empirical justification for not collapsing them into one "success" variable.
+They correlate at only Pearson r = **0.206** shrunk (**0.124** raw), Spearman ρ = 0.156 shrunk — under 5% shared variance, which is the empirical justification for not collapsing them into one "success" variable (NB16 [`channel_correlations.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/channel_correlations.csv)).
 
-**Multiplicity and effect sizes.** Benjamini–Hochberg within each family separately (348 topics, ~45 leaves, ~11 main groups, 28 axes, 6 hypotheses); Holm within pairwise contrast families. Interpretation is gated on effect size and bootstrap CI, not p-values: at ~5,000 books per tier, 282 of 369 topics survive FDR while only 38 reach |Cliff's δ| ≥ 0.11. Reported as a funnel rather than a p-value list.
+**Multiplicity and effect sizes.** Benjamini–Hochberg within each family separately (348 topics, ~45 leaves, ~11 main groups, 28 axes, 6 hypotheses); Holm within pairwise contrast families. Interpretation is gated on effect size and bootstrap CI, not p-values: with 5,389 / 5,524 / 5,086 books per tier, 282 of 369 topics survive FDR while only 38 reach |Cliff's δ| ≥ 0.11. Reported as a funnel rather than a p-value list.
 
 **Author and series confounding.** 5,353 of 8,264 authors have a single book, so author fixed effects are infeasible. Cluster-robust standard errors by author, 2,000-replicate cluster bootstrap, leave-one-author-out for headline results, per-topic author-dominance flags, and series as an alternative clustering level.
 
@@ -204,6 +210,7 @@ They correlate at only r = 0.21 shrunk (0.12 raw), under 5% shared variance, whi
 | 08 LLM Labeling | `stage08_llm_labeling` | Automated topic labeling |
 | 09 Category Mapping | `stage09_category_mapping` | Zero-shot mapping of topics to taxonomy v2.4 leaves (stage 1) and Radway R1–R13 (stage 2; complete for call_49 under `placeholder_v4_call49_rerun2`) |
 | 10 Correlation Analysis | `stage10_correlation_analysis` | Hard-assignment aggregation to book/tertile/chapter, the book analysis frame, and the statistics library behind `notebooks/07_analysis/` |
+| 11 Refined Construct Analysis | `stage11_refined_construct_analysis` | Contextual audit of H1–H6 operationalizations (17 notebooks); dictionary freeze; refined hypothesis tests; post-freeze claim hierarchy; exploratory emotion/embodiment/social-world and quality-vs-reach analyses |
 
 See **`results/reports/01_stage_reports/`** for detailed methodology per stage when those files are present in your checkout.
 
@@ -212,27 +219,67 @@ See **`results/reports/01_stage_reports/`** for detailed methodology per stage w
 
 ## Key Findings
 
-From the final model (call_49, 348 mapped topics, 16,000 books), after folding in the Stage09 v2.5 + Radway re-run. Effects are Cliff's δ for the high-rated vs low-rated contrast, ~5,000 books per tier.
+From the final model (call_49, 373 modeled / 348 mapped topics, 16,000 works; analysis frame n = 15,999 books, 8,263 authors). Confirmatory effects are Cliff's δ for the high-rated vs low-rated contrast (n_low = 5,389 · n_mid = 5,524 · n_high = 5,086). The **Stage 11 refined constructs (NB13) are the confirmatory source of truth**; Stage 10 leaf effects are retained below as the motivating baseline that prompted the audit.
 
-### No hypothesis clears the bar; three unpredicted findings do
+### No broad H1–H6 hypothesis survives as a clean confirmation
 
-Two hypotheses came back reliably in the *opposite* direction (H1, H3), one has no reliable composite effect (H5), and three were directionally consistent but below the effect threshold (H2, H4, H6). In each case the composite axis cancelled out, and the leaves beneath it were more informative — so the strongest results are ones the hypothesis frame obscured.
+Under Stage 11 refined measurement, two hypotheses became unmeasurable (H2, H3), one is directionally consistent but below the effect gate (H1), one is thin/inconclusive (H4), and two are contradicted (H5, H6). Every broad axis cancelled or thinned once its topic mass was contextually validated; the confirmatory signal that persists is at the *component* level.
 
-| Finding | Effect | Robustness |
-|---|---|---|
-| **External violence and threat is the strongest theme signal** (`7.2`, 12 topics). Danger, weapons, captivity and coercion from *outside* the couple | δ = **+0.152** | Holds in every genre and era, under every specification, and among singleton authors. The most attacked and least moved result |
-| **Character appearance description is a negative marker** (`1.6`, 15 topics). Clothing, hair, physique, self-presentation | δ = **−0.147** | Negative in all nine genre and era subgroups; robust, and the mechanism is unexplained |
-| **Moral and value reflection** (`3.4`) | δ = **+0.130** | Stable across every check, but rests on a single topic |
-| Interpersonal non-romantic conflict (`7.1`) | δ = +0.104 | — |
-| Family, kinship and parenthood (`5.1`) | δ = +0.097 | — |
-| Emotional safety and caretaking (`4.6`, 30 topics) | δ = +0.092 | Partly an *authorial* rather than book-level effect. H1 and H4 both rest on this leaf |
-| Couple conflict and breakup threats (`4.4`) | δ = −0.031 | Small, and robust across specifications |
+| Hyp | Refined feature | δ (Stage 11) | Gate | Verdict |
+|---|---|---|---|---|
+| H1 | `RLR_emotional_vs_explicit` | **+0.099** | viable | Directional, below gate |
+| H2 | `RAX_h2_strict` (final payoff) | — | unmeasurable | Unmeasurable |
+| H3 | `RLR_emotional_vs_material_security` | — | unmeasurable | Unmeasurable |
+| H4 | `RLR_protection_vs_control` | **+0.090** | thin (1 topic) | Inconclusive |
+| H5 | `RLR_darkness_vs_tenderness` | **−0.031** | viable | Contradicted |
+| H6 | `RARC` (refined arc contrast) | **−0.053** | viable | Contradicted |
 
-The distinction between `7.2` and `4.4` is the substantive result: *external* threat is markedly more present in well-rated romance, while the couple quarrelling internally is slightly less present.
+Source: NB13 [`primary_h1_h6_table.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/primary_h1_h6_table.csv), [`final_verdict_table.md`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/final_verdict_table.md).
+
+### Component-level effects that clear the gate
+
+Six refined narrative-function components have |δ| ≥ 0.11 with CIs excluding zero. Interpret each as a component association, **not** as confirmation of its parent hypothesis:
+
+| Component | δ | 95% CI | Robustness | Note |
+|---|---|---|---|---|
+| Appearance / grooming (`RAX_appearance_grooming`) | **−0.142** | [−0.170, −0.114] | ✓ strong | Clothes, hair, physique, self-presentation. Negative in every genre and era subgroup |
+| External protection (`RAX_external_protection`) | **+0.160** | [+0.133, +0.188] | ⚠ thin / provisional | Enacted rescue/defence from outside danger. **One topic (t119)** — open marker |
+| Emotional reassurance (`RAX_emotional_reassurance`) | **+0.136** | [+0.105, +0.168] | ✓ strong (H1 component) | Comfort, holding, "you're safe" beats |
+| Tenderness core (`RAX_tenderness_core`) | **+0.135** | [+0.104, +0.165] | ✓ strong (H5 component) | Nuzzling, gentle touch, soft affect |
+| External danger / crisis (`RAX_external_danger_crisis`) | **+0.116** | [+0.089, +0.143] | ✓ strong (H5 component; qualified) | Threat, weapons, chases from outside the couple |
+| Explicit sex (`RAX_explicit_sex`) | −0.075 | [−0.104, −0.044] | ⚠ moderate | Directional, below gate |
+
+Source: NB13 [`component_effects.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/component_effects.csv), [`robustness_traffic_light.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/robustness_traffic_light.csv).
+
+Composite axes cancel because their components compete for the same compositional budget: H5 darkness-vs-tenderness composite δ = −0.031 hides tenderness core +0.135 *and* external danger +0.116. The composite tests the balance; the components test the components. Both are informative when reported honestly.
 
 ### Quality and reach are different questions
 
-Of 45 taxonomy leaves, 7 act on perceived quality only, 10 on reach only, 8 on both with the same sign, 6 with opposite signs, and 14 on neither. At axis level the pattern is the same: violence and coercion is quality-only (standardised β = +0.169 quality against +0.021 reach), material and social display depresses quality (β = −0.172) while barely touching reach, and explicitness is one of the few that lifts both (+0.141 and +0.192). Treating "success" as a single variable would average these apart.
+Rebuilt on 76 refined Stage 11 features against Bayesian-shrunk rating (quality) and `log1p(ratings_count_sum)` (reach). Channel pattern counts (NB16 [`channel_pattern_counts.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/channel_pattern_counts.csv)):
+
+| Pattern | n features |
+|---|---|
+| Both same sign | 22 |
+| Reach only | 22 |
+| Quality only | 14 |
+| Neither | 11 |
+| Opposite signs | 7 |
+
+**Largest trade-offs** (opposite signs — the same theme moves quality and reach in opposite directions):
+
+- Grooming / self-presentation: appreciation β = **−0.152** vs reach β = **+0.070** — the appearance signal that depresses ratings actively lifts reach
+- Non-explicit affection: appreciation β = **+0.055** vs reach β = **−0.065**
+- Body grooming (EES): appreciation β = **−0.117** vs reach β = **+0.064**
+
+**Appreciation-specific** (quality-only): enacted protection (β = **+0.109**), emotional co-regulation, body markings, felt-vs-looked-at body, cognitive rumination — all move ratings without moving reach.
+
+**Reach-specific** (reach-only): explicit sex (β = **+0.083**), relational darkness (β = **+0.088**), hierarchy/power, looked-at body — content that grows audience without lifting appreciation.
+
+**Dual-channel same sign** (economic pressure, transactional business talk, generic logistics all negative on both; emotion containment, felt body positive on both) show the coarse ceiling / floor patterns that cross both channels.
+
+Residual quadrants (after removing length/era/genre controls): 4,383 "stars" (high quality, high reach), 3,617 "hidden gems" (high quality, low reach), 3,617 "popular but poor," 4,382 "low-low" (NB16 [`residual_quadrant_counts.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/residual_quadrant_counts.csv)). Treating "success" as one variable would average these apart.
+
+Source: NB16 [`presentation_quality_reach_shortlist.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/presentation_quality_reach_shortlist.csv) and [`synthesis_quality_reach.md`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/synthesis_quality_reach.md).
 
 ### Themes explain little of the variance, and that is a finding
 
@@ -240,19 +287,72 @@ Themes add roughly 0.014 to held-out R² over length, era and genre alone — po
 
 ### Measurement findings that changed the interpretation
 
-Close reading of the headline leaves (notebook 07) found that LLM-assigned taxonomy labels are unevenly faithful, and that Stage09 confidence scores do **not** identify the bad ones:
+Close reading of the headline leaves (Stage 10 notebook 07 and Stage 11 NB01–NB06) found that LLM-assigned taxonomy labels are unevenly faithful, and that Stage 09 confidence scores do **not** identify the bad ones. Contextual agreement rates by hypothesis: **H1 55%, H2 30%, H3 53%, H4 34%, H5 50%, H6 35%** — lexical cues frequently changed meaning in context. Concrete cases:
 
-- `2.3 "Explicit Sexual Acts"` is 72% not explicit — it pools kissing, undressing and embracing with explicit acts. Rebuilt from only the four genuinely explicit topics, its effect flips from +0.027 to **−0.057**. H1's predicted trade-off does exist; it was invisible because of the label
-- `1.6 "Character Appearance"` mixes dress and grooming with emotional closeness, photography and flowers
-- `7.2` and `4.4` are faithful, which is part of why those results survive everything
+- `2.3 "Explicit Sexual Acts"` is 72% not explicit — it pools kissing, undressing and embracing with explicit acts. Rebuilt from only the four genuinely explicit topics, the leaf effect flips from +0.027 to −0.057; the Stage 11 refined `RAX_explicit_sex` (12 topics) settles at δ = −0.075
+- `1.6 "Character Appearance"` mixes dress and grooming with emotional closeness, photography and flowers; the refined `RAX_appearance_grooming` isolates the grooming/self-presentation subset (δ = −0.142)
+- `7.2 "External Threat"` and `4.4 "Couple Conflict"` are ~92–100% faithful, which is part of why those results survive everything
 
 Two sampled books turned out not to be romance novels at all (a clothing-history reference work and a WWI military history), which prompted a systematic romance-core-mass detector; restricting to books above 15% romance core changes nothing.
 
 ### An unexplained era gradient
 
-Every theme discriminates two to three times more sharply among books published 2000–2004 than among 2010–2014 books (violence: +0.351 vs +0.142; appearance: −0.236 vs −0.138). Since the corpus is 68% 2010–2014, the headline numbers sit near the weaker end of that range. Whether this reflects changing reader behaviour or the rise of noisier self-published ratings cannot be settled here.
+Every theme discriminates two to three times more sharply among books published 2000–2004 than among 2010–2014 books (Stage 10 leaves: violence +0.351 vs +0.142; appearance −0.236 vs −0.138). Since the corpus is 68% 2010–2014, the headline numbers sit near the weaker end of that range. Whether this reflects changing reader behaviour or the rise of noisier self-published ratings cannot be settled here.
 
-Full results, tables and figures: [`notebooks/07_analysis/`](notebooks/07_analysis/) and `results/stage10_correlation_analysis/v4_l12_granular_final_call49/notebook_analysis/`.
+### Stage 10 leaf baseline (motivating context)
+
+Before refinement, taxonomy-leaf effects gave the following headlines. These are retained as a historical baseline that motivated the Stage 11 audit; where a Stage 11 refined component replaces or contradicts a Stage 10 leaf, the refined value governs.
+
+| Stage 10 leaf | δ | Fate after Stage 11 |
+|---|---|---|
+| External violence and threat (`7.2`, 12 topics) | **+0.152** | Survives as refined `RAX_external_danger_crisis` (+0.116) — same signal, cleaner measurement |
+| Character appearance (`1.6`, 15 topics) | **−0.147** | Survives as refined `RAX_appearance_grooming` (−0.142) — subset that is actually grooming/self-presentation |
+| Moral and value reflection (`3.4`) | **+0.130** | Rests on a single topic; not carried into the refined dictionary |
+| Interpersonal non-romantic conflict (`7.1`) | +0.104 | Not refined as a hypothesis-linked component |
+| Family, kinship and parenthood (`5.1`) | +0.097 | Reappears in NB15 as `EES_family_presence` δ = +0.046 (exploratory) |
+| Emotional safety and caretaking (`4.6`, 30 topics) | +0.092 | Splits into `RAX_emotional_reassurance` (+0.136, strong) and neutral practical care |
+| Couple conflict and breakup threats (`4.4`) | −0.031 | Absorbed into `RAX_relational_darkness` (+0.065, directional) |
+
+Full Stage 10 results, tables and figures: [`notebooks/07_analysis/`](notebooks/07_analysis/) and `results/stage10_correlation_analysis/v4_l12_granular_final_call49/notebook_analysis/`.
+
+### Stage 11: contextual refinement changed the conclusions
+
+Stage 11 audited every hypothesis operationalization by close-reading the topics that composed each construct, re-coding them for contextual function, and freezing a validated dictionary before re-running the tests. The results differ from Stage 10 in three ways:
+
+1. **Two hypotheses became unmeasurable.** H2 (HEA) lost its topic mass under strict final-payoff operationalization. H3 (material display) lost its material side after the economic/status topics were frozen as contextually unfaithful. These are not null results — they are measurement findings about what a 373-topic model at this granularity can and cannot distinguish. Do not report them as δ = 0.
+
+2. **Three hypotheses changed direction.** H1 flipped from contradicted (δ = −0.029) to directionally positive (+0.099) once the emotional-vs-explicit ratio was rebuilt from contextually verified topics. H5 and H6 moved from near-zero / partly-supported to contradicted (−0.031 and −0.053).
+
+3. **Component-level signals persisted.** The strongest topic-level effects (external danger δ = +0.116, appearance/grooming δ = −0.142, tenderness δ = +0.135, emotional reassurance δ = +0.136) survived refinement and remain robust across specifications. These are confirmatory *component* effects, not confirmation of the parent H1–H6 hypotheses.
+
+The post-freeze claim hierarchy (confirmatory / qualified / open / unmeasurable / unsupported), robustness traffic light, and full Stage 10 vs Stage 11 side-by-side are in [`results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/).
+
+### Exploratory extensions (NB14 attention shifts, NB15 EES post-hoc)
+
+Below are **exploratory** patterns from Stage 11 auxiliary notebooks. They do not change any H1–H6 verdict and are not confirmatory.
+
+**Attention shifts (NB14, [`attention_waterfall.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/14_exploratory_presentation_results/tables/attention_waterfall.csv))** — compositional reallocation of narrative attention between the high-rated and low-rated tiers, in percentage-point units of book-share:
+
+- Tenderness core: **+0.416 pp**
+- Relational darkness / conflict: +0.148 pp
+- Emotional reassurance / security: +0.068 pp
+- Enacted protection: +0.055 pp
+- External danger: +0.030 pp
+- Appearance / grooming: **−0.180 pp**
+- Explicit sex: **−0.186 pp**
+
+**Emotion / embodiment / social-world exploration (NB15, [`integrated_summary_effects.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/15_emotion_embodiment_social_world_exploration/tables/integrated_summary_effects.csv))** — dictionary-driven post-hoc constructs; provisional pending human freeze:
+
+- **Body grooming** δ = **−0.130** (approaches gate; consistent with grooming-as-negative signal)
+- **Body markings** δ = **+0.098** (scars, tattoos as narrative-relevant embodiment)
+- **Supportive social embeddedness** δ = **+0.078** (friend-group, chosen-family beats)
+- **Felt body** δ = +0.064 vs **looked-at body** δ = −0.063 — a first-person interoceptive/vulnerable body reads positively; a third-person appraised body reads negatively
+- **Visible affect** δ = +0.070, **co-regulation** δ = +0.068, **physiological arousal** δ = +0.067 — the emotion cluster of high-rated romance is expressive and interactive
+- **Family presence** δ = +0.046 (below gate but consistent)
+
+**Thematic richness (NB14 [`thematic_richness_cliffs_delta.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/14_exploratory_presentation_results/tables/thematic_richness_cliffs_delta.csv))** shows a positive tier-level rating association for taxonomy diversity (n_eff) but very weak two-channel adjusted β = +0.009 quality / +0.043 reach — richness reads primarily as a reach signal in the adjusted model.
+
+Labelled **EXPLORATORY** because: NB15 constructs are provisional pending human freeze; NB14 attention shifts are tier-mean descriptive statistics without hypothesis pre-registration; both are excluded from confirmatory claims about H1–H6.
 
 ---
 
@@ -261,7 +361,7 @@ Full results, tables and figures: [`notebooks/07_analysis/`](notebooks/07_analys
 Stated plainly because several of them bound what the findings can mean.
 
 - **H3 as originally specified is not measurable.** The model has no usable luxury or elite-status vocabulary: one mention each of "estate", "earl" and "gown" across 348 topics, and zero of billionaire, CEO, penthouse, duke, diamond or champagne. `6.1a` and `6.7` have no topics at all and `6.6` has one, holding 0.11% of topic mass. This is a substantive measurement finding about a multi-genre romance corpus at 348 topics, not a null result about reader taste.
-- **Taxonomy labels are unevenly faithful**, and confidence scores do not flag the unfaithful ones. Only four leaves have been audited by close reading; one of the four changed sign when rebuilt from verified topics. Extending the audit is the highest-value next step.
+- **Taxonomy labels are unevenly faithful**, and confidence scores do not flag the unfaithful ones. Stage 11 audited all six hypothesis families by close reading; two hypotheses (H2, H3) became unmeasurable and one (H1) changed sign when rebuilt from verified topics. The audit is documented in `notebooks/08_refined_construct_analysis/` (NB01–NB06).
 - **Thin leaves.** `4.7`, `5.3a`, `6.4`, `6.6`, `8.3a` and `3.4` rest on one or two topics each, so any axis built on them is underpowered by construction. `2.4` (post-sex aftercare) is empty upstream at Stage08, so aftercare cannot be separated from explicit content.
 - **Composite axes have low internal reliability.** Summing taxonomy leaves that compete for the same share budget produces composites whose components often disagree; where they do, the components are believed over the composite.
 - **Author effects cannot be fully removed.** With 5,353 single-book authors, author fixed effects are infeasible. The `4.6` result in particular halves once multi-book authors are excluded.
@@ -311,6 +411,8 @@ Terragni, S., et al. (2021). OCTIS: Comparing and optimizing topic models is sim
 | Stages 03–05b (train / select / fit / test) | [`src/stage03_train/PIPELINE_OVERVIEW.md`](src/stage03_train/PIPELINE_OVERVIEW.md) |
 | Final analysis walkthrough (nine notebooks) | [`notebooks/07_analysis/README.md`](notebooks/07_analysis/README.md) |
 | Stage 10 code and design | [`src/stage10_correlation_analysis/README.md`](src/stage10_correlation_analysis/README.md) |
+| Stage 11 refined construct analysis | [`notebooks/08_refined_construct_analysis/README.md`](notebooks/08_refined_construct_analysis/README.md), [`final_verdict_table.md`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/final_verdict_table.md), [`post_freeze_claim_hierarchy.csv`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/13_final_statistical_tests/tables/post_freeze_claim_hierarchy.csv), [`synthesis_quality_reach.md`](results/stage11_refined_construct_analysis/v4_l12_granular_final_call49/notebook_analysis/16_refined_goodreads_quality_reach/tables/synthesis_quality_reach.md) |
+| Presentation deck v2 (20 main + 14 appendix slides) | [`results/presentation/final_v2/slides/`](results/presentation/final_v2/slides/), review notebook [`notebooks/09_presentation/00_presentation_review.ipynb`](notebooks/09_presentation/00_presentation_review.ipynb) |
 | Stage 09 mapping quality | `results/reports/stage09/` |
 | Stage methodology | `results/reports/01_stage_reports/` |
 | Hypothesis testing results | `results/reports/02_findings/hypothesis_testing/` |
