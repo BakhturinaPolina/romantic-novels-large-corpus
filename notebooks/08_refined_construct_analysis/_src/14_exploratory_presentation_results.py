@@ -183,10 +183,15 @@ pd.Series(richness_meta).to_frame("value").to_csv(
 
 # %%
 tier_order = ["low_rate", "mid_rate", "high_rate"]
+_RICHNESS_HUMAN = {
+    "taxonomy_n_eff": "Effective # of taxonomy themes",
+    "topic_n_eff": "Effective # of topics",
+    "taxonomy_top10": "Top-10 taxonomy concentration",
+}
 plot_specs = [
-    ("taxonomy_n_eff", "Taxonomy effective # (primary)"),
-    ("topic_n_eff", "Topic effective #"),
-    ("taxonomy_top10", "Taxonomy top-10 concentration"),
+    ("taxonomy_n_eff", _RICHNESS_HUMAN.get("taxonomy_n_eff", "Taxonomy effective # (primary)")),
+    ("topic_n_eff", _RICHNESS_HUMAN.get("topic_n_eff", "Topic effective #")),
+    ("taxonomy_top10", _RICHNESS_HUMAN.get("taxonomy_top10", "Taxonomy top-10 concentration")),
 ]
 plot_specs = [(c, t) for c, t in plot_specs if c in work.columns]
 
@@ -208,9 +213,9 @@ for ax, (col, title) in zip(axes, plot_specs):
     )
     ax.set_title(title, fontsize=10)
     ax.set_xlabel("")
-    ax.set_xticklabels(["low", "mid", "high"])
-fig.suptitle("Thematic richness by rating tier (exploratory)", y=1.02)
-fig.tight_layout()
+    ax.set_xticklabels(["Lower rated", "Mid", "Higher rated"])
+fig.suptitle("EXPLORATORY — thematic richness by rating tier", y=1.02)
+fig.tight_layout(pad=1.1)
 ctx.save_figure(fig, "richness_by_rating_tier")
 plt.show()
 
@@ -723,11 +728,26 @@ heat = pres.subgroup_cliffs_heatmap(work, list(pres.HEADLINE_THEMES_FOR_HEATMAP)
 display(heat.head(20).round(4))
 ctx.save_table(heat, "genre_era_subgroup_deltas")
 
+_HEATMAP_HUMAN = {
+    "RAX_h3_emotional_side": "Emotional security",
+    "RAX_appearance_grooming": "Appearance & grooming",
+    "RAX_external_danger_crisis": "External danger / crisis",
+    "RAX_tenderness_core": "Tenderness",
+    "RAX_explicit_sex": "Explicit sex",
+    "RAX_external_protection": "Enacted protection",
+    "RAX_h4_possession_side": "Possession / control",
+    "RAX_nonexplicit_affection": "Non-explicit affection",
+    "RARC": "Narrative arc",
+}
+
 if len(heat):
     heat["col"] = heat["group_type"].str.replace("_", " ") + ": " + heat["group"]
     mat = heat.pivot_table(index="feature", columns="col", values="cliffs_delta")
+    mat.index = [_HEATMAP_HUMAN.get(f, f.replace("_", " ").capitalize()) for f in mat.index]
     fig, ax = plt.subplots(figsize=(max(8, 0.7 * mat.shape[1]), max(4, 0.45 * mat.shape[0])))
     sns.heatmap(mat, cmap="RdBu_r", center=0, ax=ax, annot=False)
+    ax.set_xlabel("Subgroup")
+    ax.set_ylabel("Refined construct")
     ax.set_title("Cliff's δ within genre / era subgroups")
     ctx.save_figure(fig, "genre_era_stability_heatmap")
     plt.show()

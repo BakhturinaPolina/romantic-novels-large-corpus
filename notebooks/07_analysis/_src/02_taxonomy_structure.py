@@ -188,7 +188,7 @@ ctx.save_figure(fig, "main_group_effects")
 plt.show()
 
 # %% [markdown]
-# ## 3. Subgroup panels, one per main group
+# ## 3. One label, different behaviours
 #
 # Now the level most romance theory actually speaks at. Leaf shares here are **conditional**:
 # each leaf's share of a book's *interpretable* mass, excluding noise and unmapped text. That
@@ -198,6 +198,20 @@ plt.show()
 # Each panel below is one main group, showing every leaf inside it with its tier effect. The
 # tests are corrected within the 45-leaf family, and the panels are just a presentation of
 # that one corrected set — not 11 separate analyses.
+#
+# **Why this matters for what follows.** A taxonomy category can look like one concept
+# linguistically while containing topics with quite different statistical behaviour. If topics
+# inside one leaf pull in opposite directions, summing them hides the effect:
+#
+# - **9.2 Promise, Vow & Future-Tense Speech Acts** — aggregated δ ≈ +.036, but the strongest
+#   internal topic reaches ≈ +.225. Only about 16% of the signal survives aggregation.
+# - **4.6 Emotional Safety, Reassurance & Caretaking** — aggregated δ ≈ +.092 with strongest
+#   topic ≈ +.160. Roughly 57% retained: meaningful but too broad.
+# - **7.2 Violence, Threats & Non-Sexual Coercion** — aggregated δ ≈ +.152 with strongest
+#   topic ≈ +.165. About 92% retained: the category is statistically coherent.
+#
+# Semantic similarity does not guarantee statistical coherence. Section 4 quantifies this
+# for every leaf, and notebook 03 drills into the worst cases.
 
 # %%
 leaf_omnibus = tst.kruskal_wallis(frame, LEAF_COLS, TIER_COL, TIERS)
@@ -233,7 +247,7 @@ panel_groups = [
 ]
 n_cols = 2
 n_rows = int(np.ceil(len(panel_groups) / n_cols))
-fig, axes = plt.subplots(n_rows, n_cols, figsize=(14, 2.2 * n_rows + 2))
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(16, 2.4 * n_rows + 2))
 axes = np.atleast_1d(axes).ravel()
 
 for ax, group in zip(axes, panel_groups):
@@ -246,7 +260,7 @@ for ax, group in zip(axes, panel_groups):
                       subset["ci_high"] - subset["cliffs_delta"]],
                 fmt="none", ecolor="#333333", elinewidth=0.8, capsize=1.5)
     ax.set_yticks(y)
-    ax.set_yticklabels([f"{r.leaf_id} {str(r.leaf_name)[:26]}" for r in subset.itertuples()],
+    ax.set_yticklabels([f"{r.leaf_id} {str(r.leaf_name)}" for r in subset.itertuples()],
                        fontsize=7)
     ax.axvline(0, color="black", lw=0.8)
     for gate_value in (GATE, -GATE):
@@ -258,7 +272,8 @@ for ax in axes[len(panel_groups):]:
     ax.axis("off")
 fig.suptitle("Subgroup panels: every taxonomy leaf, grouped by main group\n"
              "positive = more prominent in high-rated books", y=1.005)
-fig.tight_layout()
+fig.tight_layout(pad=1.1, w_pad=1.4, h_pad=1.4)
+fig.subplots_adjust(wspace=0.55, hspace=0.7)
 ctx.save_figure(fig, "subgroup_panels")
 plt.show()
 

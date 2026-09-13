@@ -418,10 +418,15 @@ show_cell(results["explicit sex"]["pack"], "high_index_low_tier", max_books=2)
 # foreplay and affection. Section 7 puts a number on that, and it changes how H1 should be read.
 
 # %% [markdown]
-# ### What the low-explicitness books do instead
+# ### What the low-explicitness books do instead — "If not sex, then what?"
 #
 # Because shares are compositional, a book low on explicit sex must be high on something else.
 # Naming that something else is more informative than reading the low cell's sparse sex scenes.
+#
+# The biggest replacements in low-explicitness books include movement/transit/spatial transition,
+# ambivalence/internal conflict, and emotional safety/reassurance/care. This means lower
+# explicitness **reallocates narrative space** rather than simply removing content. It is an
+# interpretive/exploratory observation, not a causal claim.
 
 # %%
 explicit_col = "abs_leaf_2.3"
@@ -452,18 +457,18 @@ display(displacement.head(8)[["label", "low_explicit_mean_pct",
                               "high_explicit_mean_pct", "difference_pp"]].round(3))
 
 # %%
-fig, ax = plt.subplots(figsize=(9, 6))
+fig, ax = plt.subplots(figsize=(10, 6.5))
 plot_data = pd.concat([displacement.head(8), displacement.tail(6)])
 positions = np.arange(len(plot_data))
 ax.barh(positions, plot_data["difference_pp"],
         color=np.where(plot_data["difference_pp"] > 0, "#4f81bd", "#c0504d"))
 ax.set_yticks(positions)
-ax.set_yticklabels([str(s).split(" — ")[-1][:44] for s in plot_data["label"]], fontsize=8)
+ax.set_yticklabels([str(s).split(" — ")[-1] for s in plot_data["label"]], fontsize=8)
 ax.invert_yaxis()
 ax.axvline(0, color="#555555", lw=1)
-ax.set_xlabel("percentage points more of the book (low-explicitness minus high-explicitness)")
+ax.set_xlabel("Δ share of book sentences (low − high explicitness, pp)")
 ax.set_title("What replaces explicit sex when a romance has little of it")
-fig.tight_layout()
+fig.tight_layout(pad=1.1)
 ctx.save_figure(fig, "explicitness_displacement")
 plt.show()
 

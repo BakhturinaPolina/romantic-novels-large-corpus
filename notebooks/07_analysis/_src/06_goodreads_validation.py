@@ -354,6 +354,22 @@ view = axis_channels[[
 view["label"] = view["label"].str.replace("AX_", "", regex=False)
 display(view.round(4).head(30))
 
+# %% [markdown]
+# ### How to read the quadrant plot
+#
+# Each point is one theoretical axis (the composite variables from notebook 04). The plot asks:
+# does a theme help a book get *found* (reach), help readers *like* it (appreciation), do both,
+# or do neither? The four quadrants are:
+#
+# - **upper-right** — both channels benefit
+# - **upper-left** — higher appreciation, lower reach
+# - **lower-right** — higher reach, lower appreciation
+# - **lower-left** — lower on both
+#
+# Stage 11 produces better function-level versions of this comparison, but the axis-level
+# picture already shows two things: (1) the two outcome channels separate clearly, and
+# (2) the strongest effects are quality-only.
+
 # %%
 fig, ax = plt.subplots(figsize=(9.5, 8))
 colours = {
@@ -373,18 +389,37 @@ limit = float(np.nanmax(np.abs(
 ax.plot([-limit, limit], [-limit, limit], color="#aaaaaa", ls=":", lw=1,
         label="equal effect on both", zorder=1)
 
+_AXIS_HUMAN_Q = {
+    "violence_coercion": "Violence / coercion",
+    "coercion_risk_watchlist": "Coercion risk",
+    "explicitness_ratio": "Explicitness ratio",
+    "explicitness": "Explicitness",
+    "sexual_tension_explicit_intimacy": "Sexual tension / intimacy",
+    "love_over_sex": "Love over sex",
+    "material_social_display": "Material / social display",
+    "economic_dependency": "Economic dependency",
+    "luxury_composite": "Luxury composite",
+    "external_crisis": "External crisis",
+    "payoff_safety": "Payoff / safety",
+    "hea_index": "HEA index",
+}
 notable = axis_channels.reindex(
     axis_channels[["quality_beta", "reach_beta"]].abs().max(axis=1).nlargest(12).index
 )
+_used_offsets = {}
 for row in notable.itertuples():
-    ax.annotate(row.label.replace("AX_", ""),
-                (row.reach_beta, row.quality_beta),
-                textcoords="offset points", xytext=(6, 4), fontsize=7.5)
+    raw = row.label.replace("AX_", "")
+    human = _AXIS_HUMAN_Q.get(raw, raw.replace("_", " ").capitalize())
+    yt = 4
+    if raw == "coercion_risk_watchlist":
+        yt = -8
+    ax.annotate(human, (row.reach_beta, row.quality_beta),
+                textcoords="offset points", xytext=(6, yt), fontsize=7.5)
 
 ax.set_xlim(-limit, limit)
 ax.set_ylim(-limit, limit)
-ax.set_xlabel("standardised beta on reach (log ratings count)")
-ax.set_ylabel("standardised beta on quality (shrunk rating)")
+ax.set_xlabel("Standardised β on reach (log Goodreads ratings)")
+ax.set_ylabel("Standardised β on reader appreciation (shrunk rating)")
 ax.set_title("Do themes act on liking, on finding, or on both?\n"
              "each point is one axis, controlled for length, era and genre")
 ax.legend(fontsize=8, loc="upper left")

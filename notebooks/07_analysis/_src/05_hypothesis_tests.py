@@ -566,12 +566,12 @@ ax.plot(grid + quad_frame[dark_col].mean(), predicted, color="#c0504d", ls="--",
 if vertex is not None and inside:
     ax.axvline(vertex + quad_frame[dark_col].mean(), color="#7030a0", ls=":", lw=1.4,
                label="turning point")
-ax.set_xlabel("dark minus tender (CLR units)")
-ax.set_ylabel("shrunk average rating")
+ax.set_xlabel("Dark − tender attention (CLR units)")
+ax.set_ylabel("Shrunk average Goodreads rating")
 ax.set_title("H5: is the darkness-rating relationship an inverted U?\n"
              f"quadratic coefficient {quad_beta:+.5f} — "
              f"{'concave' if quad_beta < 0 else 'convex, the opposite of the prediction'}")
-ax.legend(fontsize=8)
+ax.legend(loc="upper left", frameon=False, fontsize=8)
 ctx.save_figure(fig, "H5_darkness_curve")
 plt.show()
 ctx.save_table(profile, "H5_darkness_profile")
@@ -617,6 +617,13 @@ ctx.save_table(profile, "H5_darkness_profile")
 #
 # The test is a Wilcoxon signed-rank on the within-book difference, which asks: does a book's
 # end differ from its own beginning? Then whether that difference relates to rating.
+#
+# **Key finding (below).** In practice, *all six categories rise toward the ending*, including
+# those predicted to fall. Only three of six move in the predicted direction. The better
+# interpretation is: **romance endings intensify relationship-relevant material of all kinds
+# rather than simply replacing conflict with harmony**. Reconciliation/commitment rises
+# particularly clearly (+0.43 pp; about 72% of books show an increase), and care/reassurance
+# also rises.
 
 # %%
 tertile_counts = nbh.load_hard_counts(cfg, "tertile_topic_counts")
@@ -697,26 +704,39 @@ profile = arc_mod.tertile_profile_by_group(
     leaf_tertiles, frame.set_index("book_id")[TIER_COL],
     rising_available + falling_available,
 )
+_H6_LEAF_LABELS = {
+    "3.1": "Positive Affect, Relief & Relational Payoff",
+    "3.2": "Negative Emotions & Distress",
+    "4.3": "Secrets, Misunderstandings & Hidden Information",
+    "4.4": "Conflict, Distance & Breakup Threats",
+    "4.5": "Reconciliation, Commitments & HEA",
+    "4.6": "Emotional Safety, Reassurance & Caretaking",
+}
 panel = rising_available + falling_available
 n_cols = 3
 n_rows = int(np.ceil(len(panel) / n_cols))
 fig, axes = plt.subplots(n_rows, n_cols, figsize=(5 * n_cols, 3.4 * n_rows), squeeze=False)
+_legend_handles = []
 for ax, leaf in zip(axes.ravel(), panel):
     subset = profile[profile["feature"] == leaf]
     for tier in TIERS:
         tier_rows = subset[subset["group"] == tier].sort_values("tertile")
-        ax.plot(range(len(tier_rows)), tier_rows["mean"] * 100, marker="o",
-                color=PALETTE[tier], label=cfg.section("tiers", "labels")[tier])
+        h, = ax.plot(range(len(tier_rows)), tier_rows["mean"] * 100, marker="o",
+                     color=PALETTE[tier], label=cfg.section("tiers", "labels")[tier])
+        if not _legend_handles or len(_legend_handles) < len(TIERS):
+            _legend_handles.append(h)
     ax.set_xticks(range(3))
     ax.set_xticklabels(["beginning", "middle", "end"], fontsize=8)
-    expected = "rises" if leaf in rising_available else "falls"
-    ax.set_title(f"leaf {leaf} — predicted to {expected}", fontsize=9)
-    ax.set_ylabel("% of tertile sentences", fontsize=8)
-    ax.legend(fontsize=7)
+    expected = "rise" if leaf in rising_available else "fall"
+    human = _H6_LEAF_LABELS.get(leaf, leaf)
+    ax.set_title(f"leaf {leaf} — {human}\n(predicted to {expected})", fontsize=8.5)
+    ax.set_ylabel("% of position-tercile sentences", fontsize=8)
 for ax in axes.ravel()[len(panel):]:
     ax.axis("off")
 fig.suptitle("H6: how themes move through a book, by rating tier")
-fig.tight_layout()
+fig.legend(_legend_handles, [cfg.section("tiers", "labels")[t] for t in TIERS],
+           loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.02), fontsize=8, frameon=False)
+fig.tight_layout(pad=1.1, w_pad=1.4, h_pad=1.4)
 ctx.save_figure(fig, "H6_arc_profiles")
 plt.show()
 ctx.save_table(profile, "H6_tertile_profiles")

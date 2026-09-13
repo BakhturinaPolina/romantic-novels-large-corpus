@@ -494,7 +494,7 @@ ctx.save_table(axis_definitions, "axis_definitions")
 #
 # Goodreads gives two signals, and they measure different things:
 #
-# - **quality** — the average star rating, i.e. how much readers who read it liked it
+# - **quality (appreciation)** — the average star rating, i.e. how much readers who read it liked it
 # - **reach** — how many people rated it at all, i.e. how far the book travelled
 #
 # They correlate at r ≈ 0.12 in this corpus, which is the empirical reason they are analysed
@@ -504,6 +504,15 @@ ctx.save_table(axis_definitions, "axis_definitions")
 # The quality channel also needs a correction. A book with 3 ratings averaging 4.9 is not
 # better than one with 3,000 averaging 4.3, but a raw mean says it is. The shrunk rating pulls
 # thin books toward the corpus mean in proportion to how little evidence they have.
+#
+# ### How to read: reach vs appreciation
+#
+# The right-hand panel below shows the central empirical motivation: the raw correlation
+# between how widely read a book is and how well readers liked it is only r ≈ 0.12 — roughly
+# 1.5% shared variance. Even the shrunk rating correlates at only r ≈ 0.21 (about 4% shared
+# variance, partly inflated mechanically because shrinkage pulls low-reach books toward the
+# mean). In practical terms, **"popular" and "loved" are largely different outcomes**, and
+# every subsequent analysis separates them.
 
 # %%
 r_quality_reach = float(frame["avg_rating"].corr(frame["log_n_ratings"]))
@@ -522,27 +531,30 @@ print(
 )
 
 # %%
-fig, axes = plt.subplots(1, 3, figsize=(16, 4.2))
+fig, axes = plt.subplots(1, 3, figsize=(16.5, 4.6))
 
 sns.histplot(frame["avg_rating"], bins=50, ax=axes[0], color="#4f81bd", label="raw")
 sns.histplot(frame["rating_shrunk"], bins=50, ax=axes[0], color="#c0504d", alpha=0.6, label="shrunk")
 axes[0].set_title("Star rating, before and after shrinkage")
-axes[0].set_xlabel("rating")
-axes[0].legend()
+axes[0].set_xlabel("Goodreads rating")
+axes[0].legend(loc="upper left", frameon=False)
 
 axes[1].scatter(frame["log_n_ratings"], frame["avg_rating"] - frame["rating_shrunk"],
                 s=3, alpha=0.15, color="#4f81bd")
 axes[1].axhline(0, color="black", lw=0.8)
-axes[1].set_xlabel("log(1 + number of ratings)")
-axes[1].set_ylabel("raw minus shrunk")
+axes[1].set_xlabel("log(1 + Goodreads ratings)")
+axes[1].set_ylabel("raw − shrunk (rating units)")
 axes[1].set_title("Shrinkage acts on thinly rated books")
 
 axes[2].scatter(frame["log_n_ratings"], frame["avg_rating"], s=3, alpha=0.15, color="#4f81bd")
-axes[2].set_xlabel("log(1 + number of ratings)")
-axes[2].set_ylabel("average rating")
+axes[2].set_xlabel("log(1 + Goodreads ratings)")
+axes[2].set_ylabel("average Goodreads rating")
 axes[2].set_title(f"Quality vs reach (r = {r_quality_reach:.3f})")
+axes[2].text(0.97, 0.05, f"r = {r_quality_reach:.3f}\n≈ {r_quality_reach**2:.1%} shared variance",
+             transform=axes[2].transAxes, ha="right", va="bottom", fontsize=8,
+             bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="0.7", alpha=0.85))
 
-fig.tight_layout()
+fig.tight_layout(pad=1.1, w_pad=1.4)
 ctx.save_figure(fig, "outcome_channels")
 plt.show()
 
@@ -554,6 +566,10 @@ plt.show()
 # differences far too small to matter still clear p < 0.05. Interpretation is therefore gated
 # on effect size and its bootstrap confidence interval, and the p-value is reported as a
 # footnote.
+#
+# The near-equal tier sizes mean that any tiny difference can be significant; this is a feature,
+# not a bug, of a large corpus — but it means the analysis must gate on **effect size** (here
+# |Cliff's δ| ≥ 0.11) rather than p-values to distinguish real from trivial differences.
 
 # %%
 tier_profile = frame.groupby(TIER_COL, observed=True).agg(
@@ -576,9 +592,14 @@ for tier in TIERS:
     sns.kdeplot(frame.loc[frame[TIER_COL] == tier, "avg_rating"],
                 ax=ax, label=cfg.section("tiers", "labels")[tier],
                 color=PALETTE[tier], fill=True, alpha=0.25)
-ax.set_xlabel("average rating")
-ax.set_title("The three rating tiers")
-ax.legend()
+ax.set_xlabel("average Goodreads rating")
+ax.set_title("The three analytical rating tiers")
+ax.legend(loc="upper left", frameon=False)
+for tier in TIERS:
+    n = int(tier_profile.loc[tier, "n_books"])
+    mode_rating = float(frame.loc[frame[TIER_COL] == tier, "avg_rating"].mode().iloc[0])
+    ax.annotate(f"n = {n:,}", xy=(mode_rating, 0), xytext=(0, -18),
+                textcoords="offset points", ha="center", fontsize=7.5, color=PALETTE[tier])
 ctx.save_figure(fig, "tier_definition")
 plt.show()
 

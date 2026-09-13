@@ -220,8 +220,21 @@ ctx.save_table(presence_emotion, "emotion_presence_intensity")
 
 # %% [markdown]
 # ### Emotion over narrative position (begin | middle | end)
+#
+# The question shifts from "how much emotion" to "where each emotional function appears."
+# Read rising vs falling lines across begin → middle → end. If a function intensifies toward
+# the ending in higher-rated books specifically, it suggests that better-rated romance
+# concentrates that emotional function more narrowly at the climax / resolution.
 
 # %%
+_EMOTION_HUMAN = {
+    "emotion_distress_expressed": "Expressed distress",
+    "emotion_containment": "Emotional containment",
+    "emotion_coregulation": "Emotional co-regulation",
+    "emotion_relief_joy": "Relief / joy",
+    "emotion_overwhelm": "Emotional overwhelm",
+    "emotion_anger_frustration": "Anger / frustration",
+}
 pos_names = list(ees_cfg.get("position_constructs") or [])
 pos_constructs = {
     name: constructs.get(name, [])
@@ -238,14 +251,23 @@ display(pos_effects.round(4))
 ctx.save_table(pos_effects, "emotion_position_effects")
 ctx.save_table(traj, "emotion_position_trajectories")
 
-fig, axes = plt.subplots(2, 3, figsize=(12, 7), sharex=True)
+fig, axes = plt.subplots(2, 3, figsize=(13, 7.5), sharex=True)
 axes = axes.ravel()
+_legend_handles = []
 for i, feat in enumerate(list(pos_constructs)[:6]):
-    ees.trajectory_plot(traj, feature=feat, ax=axes[i], title=feat.replace("emotion_", ""))
+    human = _EMOTION_HUMAN.get(feat, feat.replace("emotion_", "").replace("_", " ").capitalize())
+    ees.trajectory_plot(traj, feature=feat, ax=axes[i], title=human)
+    axes[i].get_legend().remove()
+    if i == 0:
+        for h in axes[i].get_lines():
+            _legend_handles.append(h)
+    axes[i].set_ylabel("Mean share of tercile sentences" if i % 3 == 0 else "")
 for j in range(i + 1, len(axes)):
     axes[j].axis("off")
 fig.suptitle("Emotion functions across narrative position (exploratory)")
-fig.tight_layout()
+fig.legend(_legend_handles, [h.get_label() for h in _legend_handles],
+           loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.03), fontsize=8, frameon=False)
+fig.tight_layout(pad=1.1, w_pad=1.4, h_pad=1.4)
 ctx.save_figure(fig, "emotion_trajectories")
 plt.show()
 
@@ -582,7 +604,28 @@ ctx.save_table(breadth, "strict_moderate_broad_robustness")
 # **outward** into family/social stakes, while giving less attention to generic
 # visual attractiveness.
 
+# %% [markdown]
+# ## Integrated summary
+#
+# The bar chart below brings together the headline results from all three domains explored in
+# this notebook. The interpretive pattern: **higher-rated romance emphasises felt, expressive,
+# relationally regulated experience more than externally appraised appearance**. The negative
+# grooming / appearance result connects with the robust finding in Stage 10 — external
+# description of characters is less prevalent in well-rated books.
+
 # %%
+_INTEGRATED_HUMAN = {
+    "emotion_containment": "Emotional containment",
+    "emotion_coregulation": "Co-regulation",
+    "felt_body": "Felt body (interoception)",
+    "supportive_social_embeddedness": "Supportive social world",
+    "body_grooming": "Body grooming / appearance",
+    "body_markings": "Body markings (tattoos, scars)",
+    "body_external_appearance": "External body appearance",
+    "looked_at_body": "Looked-at body",
+    "body_interoceptive": "Interoceptive / felt body",
+    "body_vulnerable": "Pain / physical vulnerability",
+}
 summary_constructs = [
     "emotion_distress_expressed",
     "emotion_physiological_arousal",
@@ -606,6 +649,9 @@ for src in (emotion_eff, embodiment_eff, family_social_eff):
         parts.append(src[["construct", "cliffs_delta", "ci_low", "ci_high"]].copy())
 integrated = pd.concat(parts, ignore_index=True)
 integrated = integrated[integrated["construct"].isin(summary_constructs)].drop_duplicates("construct")
+integrated["construct"] = integrated["construct"].map(
+    lambda c: _INTEGRATED_HUMAN.get(c, c.replace("_", " ").capitalize())
+)
 display(integrated.round(4))
 ctx.save_table(integrated, "integrated_summary_effects")
 

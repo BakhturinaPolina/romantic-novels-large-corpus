@@ -757,15 +757,15 @@ display(consistency.round(3))
 ctx.save_table(consistency, "subgroup_consistency")
 
 # %%
-fig, ax = plt.subplots(figsize=(11, 6))
+fig, ax = plt.subplots(figsize=(12, 6.5))
 heat_leaves = [leaf for leaf in HEADLINE_LEAVES if leaf in subgroup_wide.index]
 matrix = subgroup_wide.loc[heat_leaves, ["baseline", *numeric_cols]].astype(float)
 limit = float(np.nanmax(np.abs(matrix.to_numpy())))
 image = ax.imshow(matrix.to_numpy(), cmap="RdBu_r", vmin=-limit, vmax=limit, aspect="auto")
 ax.set_xticks(np.arange(matrix.shape[1]))
-ax.set_xticklabels(matrix.columns, rotation=40, ha="right", fontsize=8)
+ax.set_xticklabels(matrix.columns, rotation=35, ha="right", fontsize=8)
 ax.set_yticks(np.arange(len(heat_leaves)))
-ax.set_yticklabels([f"{leaf} {str(leaf_names.get(leaf, ''))[:28]}" for leaf in heat_leaves],
+ax.set_yticklabels([f"{leaf} {str(leaf_names.get(leaf, ''))}" for leaf in heat_leaves],
                    fontsize=8)
 for i in range(matrix.shape[0]):
     for j in range(matrix.shape[1]):
@@ -773,9 +773,9 @@ for i in range(matrix.shape[0]):
         if np.isfinite(value):
             ax.text(j, i, f"{value:+.2f}", ha="center", va="center", fontsize=7,
                     color="white" if abs(value) > limit * 0.55 else "#222222")
-fig.colorbar(image, ax=ax, label="Cliff's delta")
+fig.colorbar(image, ax=ax, label="Cliff's δ")
 ax.set_title("Every headline leaf, within every genre and era")
-fig.tight_layout()
+fig.tight_layout(pad=1.1)
 ctx.save_figure(fig, "subgroup_heatmap")
 plt.show()
 
@@ -1041,7 +1041,7 @@ print(
 )
 
 # %%
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(10.5, 6))
 plot_leaves = robustness["leaf"].tolist()
 positions = np.arange(len(plot_leaves))
 for position, leaf in zip(positions, plot_leaves):
@@ -1056,14 +1056,14 @@ for level in (GATE, -GATE):
 ax.axvline(0, color="#555555", lw=1)
 ax.set_yticks(positions)
 ax.set_yticklabels(
-    [f"{leaf} {str(leaf_names.get(leaf, ''))[:32]}" for leaf in plot_leaves], fontsize=8
+    [f"{leaf} {str(leaf_names.get(leaf, ''))}" for leaf in plot_leaves], fontsize=8
 )
 ax.invert_yaxis()
-ax.set_xlabel("Cliff's delta, high vs low rating tier")
+ax.set_xlabel("Cliff's δ (high- vs low-rated books)")
 ax.set_title("Every headline claim under every specification\n"
              "grey points are alternative specifications, red diamonds the reported baseline")
-ax.legend(fontsize=8, loc="lower right")
-fig.tight_layout()
+ax.legend(fontsize=8, loc="lower right", frameon=True)
+fig.tight_layout(pad=1.1)
 ctx.save_figure(fig, "robustness_matrix")
 plt.show()
 

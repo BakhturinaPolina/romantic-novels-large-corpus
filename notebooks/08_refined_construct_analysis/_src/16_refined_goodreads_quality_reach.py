@@ -938,8 +938,15 @@ ctx.save_table(crosswalk, "stage10_stage11_channel_crosswalk")
 display(crosswalk.round(4))
 
 # %%
-# Figure 6 — refinement arrows for major concepts
-fig, ax = plt.subplots(figsize=(10, 8))
+_HIGHLIGHT_CONCEPTS = {
+    "RAX_external_protection": "Enacted protection",
+    "RAX_emotional_reassurance": "Emotional reassurance",
+    "RAX_external_danger_crisis": "External danger",
+    "RAX_nonexplicit_affection": "Non-explicit affection",
+    "RAX_appearance_grooming": "Appearance & grooming",
+    "RAX_explicit_sex": "Explicit sex",
+}
+fig, ax = plt.subplots(figsize=(10.5, 8))
 arrow_concepts = ["appearance", "emotional_safety_care", "violence_danger", "sexuality", "family_social"]
 cmap = plt.cm.tab10
 for i, concept in enumerate(arrow_concepts):
@@ -962,28 +969,40 @@ for i, concept in enumerate(arrow_concepts):
                 xytext=(s10_r, s10_q),
                 arrowprops=dict(arrowstyle="->", color=color, lw=1.2, alpha=0.7),
             )
-        ax.scatter(
-            row["stage11_reach_beta"],
-            row["stage11_quality_beta"],
-            s=55,
-            color=color,
-            alpha=0.85,
-            zorder=3,
-        )
-        ax.annotate(
-            str(row["stage11_label"])[:28],
-            (row["stage11_reach_beta"], row["stage11_quality_beta"]),
-            textcoords="offset points",
-            xytext=(4, -8),
-            fontsize=6.5,
-            color=color,
-        )
+        feat = row.get("stage11_feature", "")
+        if feat in _HIGHLIGHT_CONCEPTS:
+            ax.scatter(
+                row["stage11_reach_beta"],
+                row["stage11_quality_beta"],
+                s=70,
+                color=color,
+                alpha=0.95,
+                zorder=3,
+            )
+            ax.annotate(
+                _HIGHLIGHT_CONCEPTS[feat],
+                (row["stage11_reach_beta"], row["stage11_quality_beta"]),
+                textcoords="offset points",
+                xytext=(5, -9),
+                fontsize=7,
+                color=color,
+                arrowprops=dict(arrowstyle="-", lw=0.4, color=color),
+            )
+        else:
+            ax.scatter(
+                row["stage11_reach_beta"],
+                row["stage11_quality_beta"],
+                s=40,
+                color=color,
+                alpha=0.5,
+                zorder=2,
+            )
 ax.axhline(0, color="#555", lw=1)
 ax.axvline(0, color="#555", lw=1)
-ax.set_xlabel("Standardised beta on reach")
-ax.set_ylabel("Standardised beta on reader appreciation")
+ax.set_xlabel("Standardised β on reach (log Goodreads ratings)")
+ax.set_ylabel("Standardised β on reader appreciation (shrunk rating)")
 ax.set_title("Semantic refinement moves concepts in appreciation × reach space\n(squares = Stage 10 leaves; arrows → Stage 11 components)")
-ax.legend(fontsize=7, loc="best")
+ax.legend(fontsize=7, loc="best", frameon=True)
 ctx.save_figure(fig, "06_stage10_stage11_refinement_comparison")
 plt.show()
 
@@ -1088,19 +1107,25 @@ for level in (GATE, -GATE):
     ax.axvline(level, color="#c0504d", ls="--", lw=0.9)
 ax.axhline(0, color="#555", lw=1)
 ax.axvline(0, color="#555", lw=1)
+_SELECTIVE_LABELS_04 = {
+    "RAX_appearance_grooming", "RAX_nonexplicit_affection", "RAX_explicit_sex",
+    "RAX_external_protection", "RAX_external_danger_crisis", "RAX_emotional_reassurance",
+}
 for row in channel_deltas.reindex(
     channel_deltas[["delta_rating", "delta_reach"]].abs().max(axis=1).nlargest(12).index
 ).itertuples():
-    ax.annotate(
-        str(row.display_label)[:32],
-        (row.delta_reach, row.delta_rating),
-        textcoords="offset points",
-        xytext=(6, 4),
-        fontsize=7.5,
-    )
-ax.set_xlabel("Cliff's δ, high vs low REACH tier")
-ax.set_ylabel("Cliff's δ, high vs low RATING tier")
-ax.set_title("Refined features under two tierings\ndashed lines = small-effect gate 0.11")
+    if hasattr(row, "feature") and row.feature in _SELECTIVE_LABELS_04:
+        ax.annotate(
+            str(row.display_label)[:40],
+            (row.delta_reach, row.delta_rating),
+            textcoords="offset points",
+            xytext=(6, 4),
+            fontsize=7.5,
+        )
+ax.set_xlabel("Cliff's δ (high- vs low-reach books)")
+ax.set_ylabel("Cliff's δ (high- vs low-rated books)")
+ax.set_title("What gets read is not what gets loved — features by outcome channel\n"
+             "dashed lines = small-effect gate ±0.11")
 ax.legend(fontsize=8, loc="upper left")
 ctx.save_figure(fig, "04_rating_vs_reach_deltas")
 plt.show()
@@ -1133,11 +1158,18 @@ mat = quad_means.set_index("quadrant")[heat_feats]
 mat_z = mat.apply(lambda s: (s - s.mean()) / s.std(ddof=0) if s.std(ddof=0) > 0 else s * 0, axis=0)
 mat_z = mat_z.rename(columns=label_map)
 order = [q for q in ("stars", "hidden_gems", "popular_but_poor", "low_low") if q in mat_z.index]
+_QUAD_LABELS = {
+    "stars": "Stars",
+    "hidden_gems": "Hidden gems",
+    "popular_but_poor": "Popular but less appreciated",
+    "low_low": "Low-low",
+}
 mat_z = mat_z.reindex(order)
+mat_z.index = [_QUAD_LABELS.get(q, q) for q in mat_z.index]
 
 fig, ax = plt.subplots(figsize=(11, 5.5))
-sns.heatmap(mat_z.T, cmap="RdBu_r", center=0, annot=True, fmt=".2f", ax=ax, cbar_kws={"label": "z across quadrants"})
-ax.set_title("Theme prevalence by residual Goodreads quadrant\n(standardised within theme)")
+sns.heatmap(mat_z.T, cmap="RdBu_r", center=0, annot=True, fmt=".2f", ax=ax, cbar_kws={"label": "standardised within theme"})
+ax.set_title("Theme prevalence by residual Goodreads quadrant\n(z-scored within theme across quadrants)")
 ax.set_xlabel("")
 ctx.save_figure(fig, "05_residual_quadrant_theme_heatmap")
 plt.show()
@@ -1264,10 +1296,10 @@ for i, row in enumerate(rich_wide.itertuples()):
 ax.axvline(0, color="#555", lw=1)
 ax.set_yticks(y)
 ax.set_yticklabels(rich_wide["display_label"].tolist(), fontsize=9)
-ax.set_xlabel("Standardised beta (controls: length, year, genre)")
-ax.set_title("Thematic richness vs appreciation and reach")
-ax.legend(fontsize=8)
-fig.tight_layout()
+ax.set_xlabel("Standardised β (controls: length, year, genre)")
+ax.set_title("Thematic richness vs appreciation and reach\n(dumbbell: purple = appreciation, orange = reach)")
+ax.legend(fontsize=8, frameon=False)
+fig.tight_layout(pad=1.1)
 ctx.save_figure(fig, "07_richness_quality_vs_reach")
 plt.show()
 

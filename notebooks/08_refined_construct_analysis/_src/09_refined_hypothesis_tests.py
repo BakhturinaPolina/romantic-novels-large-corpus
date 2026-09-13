@@ -209,11 +209,68 @@ side_df = pd.DataFrame(side)
 display(side_df)
 ctx.save_table(side_df, "stage10_vs_stage11_side_by_side")
 
+# %% [markdown]
+# ## Forest plot — refined constructs vs rating tier
+#
+# Each bar shows Cliff's δ between high- and low-rated books. Positive means more prevalent
+# in higher-rated books; negative means more prevalent in lower-rated books. The ±0.11 dashed
+# lines mark the pre-specified small-effect gate. Red bars indicate thin measurement
+# (construct rests on very few topics). Unmeasurable axes (H2/H3 primary ratios) are excluded.
+#
+# | Code | Presentation label |
+# |---|---|
+# | `RLR_emotional_vs_explicit` | Emotional intimacy vs explicit sex |
+# | `RAX_emotional_reassurance` | Emotional reassurance |
+# | `RAX_nonexplicit_affection` | Non-explicit affection |
+# | `RAX_explicit_sex` | Explicit sex |
+# | `RLR_protection_vs_control` | Protection vs possessiveness |
+# | `RAX_external_protection` | Enacted protection |
+# | `RAX_h4_possession_side` | Possession / control |
+# | `RLR_darkness_vs_tenderness` | Darkness vs tenderness |
+# | `RAX_tenderness_core` | Tenderness |
+# | `RAX_external_danger_crisis` | External danger / crisis |
+# | `RAX_individual_distress` | Individual distress |
+# | `RAX_relational_darkness` | Relationship conflict / darkness |
+# | `RAX_appearance_grooming` | Appearance & grooming |
+# | `RAX_social_presentation` | Social presentation |
+# | `RARC` | Narrative arc: repair vs conflict |
+
 # %%
+_REFINED_HUMAN = {
+    "RLR_emotional_vs_explicit": "Emotional intimacy vs explicit sex",
+    "RAX_emotional_reassurance": "Emotional reassurance",
+    "RAX_nonexplicit_affection": "Non-explicit affection",
+    "RAX_explicit_sex": "Explicit sex",
+    "RLR_emotional_vs_material_security": "Emotional vs material security",
+    "RAX_h3_emotional_side": "Emotional security side",
+    "RAX_h3_material_side": "Material provision",
+    "RAX_appearance_grooming": "Appearance & grooming",
+    "RAX_social_presentation": "Social presentation",
+    "RLR_protection_vs_control": "Protection vs possessiveness",
+    "RAX_h4_protection_side": "External protection (broad)",
+    "RAX_h4_possession_side": "Possession / control",
+    "RAX_external_protection": "Enacted protection",
+    "RAX_protective_commitment": "Protective commitment",
+    "RAX_protective_care_broad": "Protective care (broad)",
+    "RLR_darkness_vs_tenderness": "Darkness vs tenderness",
+    "RAX_relational_darkness": "Relationship conflict / darkness",
+    "RAX_tenderness_core": "Tenderness",
+    "RAX_external_danger_crisis": "External danger / crisis",
+    "RAX_individual_distress": "Individual distress",
+    "RARC": "Narrative arc: repair vs conflict",
+    "DELTA_rising": "Rising Δ (end−begin)",
+    "DELTA_falling": "Falling Δ (end−begin)",
+    "RAX_h2_strict": "Strict final payoff",
+    "RAX_h2_broad": "Broad HEA / commitment",
+    "RAX_repair": "Repair",
+    "RAX_status_display": "Status display",
+    "RAX_workplace_status": "Workplace status",
+}
+
 plot_df = effects.dropna(subset=["cliffs_delta"]).copy()
 plot_df = plot_df[plot_df["measurement_gate"] != "unmeasurable"]
 plot_df = plot_df.sort_values("cliffs_delta")
-fig, ax = plt.subplots(figsize=(9, 7))
+fig, ax = plt.subplots(figsize=(9.5, 7.5))
 y = np.arange(len(plot_df))
 colors = [
     "#c44e52" if g == "thin" else "steelblue" for g in plot_df["measurement_gate"]
@@ -235,10 +292,18 @@ ax.axvline(GATE, color="red", ls="--", lw=0.8)
 ax.axvline(-GATE, color="red", ls="--", lw=0.8)
 ax.set_yticks(y)
 ax.set_yticklabels(
-    [f"{r.hypothesis}:{r.feature}" for r in plot_df.itertuples()], fontsize=8
+    [f"{_REFINED_HUMAN.get(r.feature, r.feature)}  [{r.hypothesis}]"
+     for r in plot_df.itertuples()], fontsize=8
 )
-ax.set_xlabel("Cliff's δ (high vs low rated)")
-ax.set_title("Stage 11 refined measures (red = thin measurement)")
+ax.set_xlabel("Cliff's δ (high- vs low-rated books)")
+ax.set_title("Refined constructs: high- vs low-rated books (red = thin measurement)")
+ax.legend(
+    handles=[
+        plt.Line2D([0], [0], color="steelblue", lw=6, alpha=0.85, label="adequate measurement"),
+        plt.Line2D([0], [0], color="#c44e52", lw=6, alpha=0.85, label="thin measurement"),
+    ],
+    fontsize=7.5, loc="lower right", frameon=True,
+)
 ctx.save_figure(fig, "refined_effects_forest")
 plt.show()
 

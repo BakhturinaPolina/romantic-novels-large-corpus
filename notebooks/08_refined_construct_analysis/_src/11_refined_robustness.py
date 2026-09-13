@@ -108,7 +108,15 @@ print(
 )
 
 # %% [markdown]
-# ## OLD | REFINED STRICT | REFINED WEIGHTED
+# ## Old taxonomy | Refined strict | Refined weighted
+#
+# This figure compares the original broad taxonomy measurement with the contextually validated
+# replacements. The old and refined δ values measure somewhat different constructs, so they
+# are **not directly commensurable** — the figure shows how *conclusions* change, not how
+# effect sizes replicate.
+#
+# Key shifts: H1 moves from −0.029 to +0.099; H5 from +0.012 to −0.031; H6 from +0.044 to
+# −0.053. H2 and H3 become unmeasurable under strict semantic refinement.
 
 # %%
 hyp_map = {
@@ -161,21 +169,39 @@ display(comp_panel.round(4))
 ctx.save_table(comp_panel, "headline_component_effects")
 
 # %%
-fig, ax = plt.subplots(figsize=(9, 4.5))
+_H_LABELS = {
+    "H1": "H1\nemotional vs\nexplicit",
+    "H2": "H2\npayoff\n(unmeasurable)",
+    "H3": "H3\nsecurity vs\nmaterial\n(unmeasurable)",
+    "H4": "H4\nprotection vs\ncontrol",
+    "H5": "H5\ndark vs\ntender",
+    "H6": "H6\nrepair vs\nconflict",
+}
+fig, ax = plt.subplots(figsize=(10, 5))
 hyps = list(hyp_map.keys())
 x = np.arange(len(hyps))
 width = 0.25
 for i, spec in enumerate(["old_taxonomy", "refined_strict", "refined_weighted"]):
     vals = [wide.loc[h, spec] if h in wide.index and spec in wide.columns else np.nan for h in hyps]
-    ax.bar(x + (i - 1) * width, vals, width, label=spec)
+    label = spec.replace("_", " ").capitalize()
+    bars = ax.bar(x + (i - 1) * width, vals, width, label=label)
+    for h_idx, hyp in enumerate(hyps):
+        mgate = compare.loc[
+            (compare["hypothesis"] == hyp) & (compare["spec"] == spec), "measurement_gate"
+        ]
+        if len(mgate) and str(mgate.iloc[0]) in ("unmeasurable", "missing"):
+            b = bars[h_idx]
+            b.set_hatch("///")
+            b.set_facecolor("#cccccc")
+            b.set_edgecolor("#888888")
 ax.axhline(0, color="gray", lw=1)
 ax.axhline(GATE, color="red", ls="--", lw=0.8)
 ax.axhline(-GATE, color="red", ls="--", lw=0.8)
 ax.set_xticks(x)
-ax.set_xticklabels(hyps)
-ax.set_ylabel("Cliff's δ")
-ax.set_title("OLD TAXONOMY | REFINED STRICT | REFINED WEIGHTED")
-ax.legend()
+ax.set_xticklabels([_H_LABELS.get(h, h) for h in hyps], fontsize=8)
+ax.set_ylabel("Cliff's δ (high- vs low-rated books)")
+ax.set_title("Old Taxonomy | Refined Strict | Refined Weighted")
+ax.legend(loc="upper right", frameon=False, fontsize=8)
 ctx.save_figure(fig, "old_vs_refined_bars")
 plt.show()
 

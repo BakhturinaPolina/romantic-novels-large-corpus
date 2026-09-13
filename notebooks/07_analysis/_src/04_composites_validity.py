@@ -328,20 +328,37 @@ print("rather than jointly, and says so in the results table.")
 # negative end of `AX_love_over_sex` is explicitly sexual relative to its emotional content,
 # not merely low on something. Worth looking at before the tests, so no result later comes as
 # a distributional surprise.
+#
+# **This is a measurement check, not a results plot.** Each panel asks whether the theoretical
+# measure actually varies across books. For contrast axes, zero represents balance between the
+# two sides. Positive values mean the book contains relatively more of one side; negative
+# values mean relatively more of the other. A variable that collapses to a spike at zero
+# cannot test any hypothesis regardless of how clever the model is.
 
 # %%
+_AXIS_HUMAN = {
+    "explicitness": "Explicitness",
+    "miscommunication": "Miscommunication",
+    "protective_care": "Protective care",
+    "dark_vs_tender": "Dark vs tender",
+    "hea_index": "HEA index",
+    "love_over_sex": "Love over sex",
+}
 panel = confirmatory_axes[:6]
 fig, axes = plt.subplots(2, 3, figsize=(15, 7))
 for ax, col in zip(axes.ravel(), panel):
     sns.histplot(frame[col], bins=60, ax=ax, color="#4f81bd")
-    ax.axvline(float(frame[col].mean()), color="#c0504d", ls="--", lw=1, label="mean")
-    ax.set_title(col.removeprefix("AX_"), fontsize=9)
+    m = float(frame[col].mean())
+    ax.axvline(m, color="#c0504d", ls="--", lw=1)
+    ax.text(0.97, 0.92, f"mean = {m:.3f}", transform=ax.transAxes, ha="right",
+            fontsize=7.5, color="#c0504d")
+    raw = col.removeprefix("AX_")
+    ax.set_title(_AXIS_HUMAN.get(raw, raw.replace("_", " ").capitalize()), fontsize=9)
     ax.set_xlabel("axis value (share units)", fontsize=8)
-    ax.legend(fontsize=7)
 for ax in axes.ravel()[len(panel):]:
     ax.axis("off")
 fig.suptitle("Confirmatory axis distributions — contrast axes straddle zero by design")
-fig.tight_layout()
+fig.tight_layout(pad=1.1, w_pad=1.4, h_pad=1.4)
 ctx.save_figure(fig, "confirmatory_axis_distributions")
 plt.show()
 
@@ -363,6 +380,12 @@ ctx.save_table(axis_stats.reset_index().rename(columns={"index": "axis"}), "axis
 # unaffected by the rest of the composition. The difference form is kept alongside it because
 # it is easier to read in percentage points; both are reported in notebook 05, and agreement
 # between them is itself a robustness check.
+#
+# If both approaches rank books similarly, the operationalisation is reasonably robust. If they
+# disagree, conclusions depend on how the balance was mathematically encoded. The result below
+# shows that **love-over-sex** is robust (Spearman ρ ≈ 0.895), while **protection-vs-possessiveness**
+# is very measurement-sensitive (ρ ≈ 0.338): two reasonable encodings give substantially
+# different book orderings.
 
 # %%
 for col in LOG_RATIO_COLS:
@@ -373,18 +396,28 @@ pairs = [("LR_H1_love_over_sex", "AX_love_over_sex"),
          ("LR_H4_protective_versus_possessive", "AX_protective_vs_possessive")]
 pairs = [(lr, ax) for lr, ax in pairs if lr in frame.columns and ax in frame.columns]
 
+_PAIR_LABELS = {
+    "LR_H1_love_over_sex": ("Difference: emotional − explicit",
+                             "Log-ratio: log(emotional / explicit)"),
+    "LR_H4_protective_versus_possessive": ("Difference: protection − possessiveness",
+                                            "Log-ratio: log(protection / possessiveness)"),
+}
+
 fig, axes = plt.subplots(1, len(pairs), figsize=(6.5 * len(pairs), 4.6))
 axes = np.atleast_1d(axes)
 agreement_rows = []
 for ax, (lr_col, ax_col) in zip(axes, pairs):
     rho = float(frame[lr_col].corr(frame[ax_col], method="spearman"))
     ax.scatter(frame[ax_col], frame[lr_col], s=4, alpha=0.12, color="#4f81bd")
-    ax.set_xlabel(f"{ax_col.removeprefix('AX_')} (difference form)")
-    ax.set_ylabel(f"{lr_col} (log-ratio form)")
-    ax.set_title(f"Spearman rho = {rho:.3f}", fontsize=10)
+    xlbl, ylbl = _PAIR_LABELS.get(lr_col, (ax_col, lr_col))
+    ax.set_xlabel(xlbl)
+    ax.set_ylabel(ylbl)
+    ax.text(0.03, 0.95, f"Spearman ρ = {rho:.3f}", transform=ax.transAxes,
+            ha="left", va="top", fontsize=10,
+            bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="0.7", alpha=0.85))
     agreement_rows.append({"log_ratio": lr_col, "difference_axis": ax_col, "spearman_rho": rho})
-fig.suptitle("Two ways of writing the same balance: do they order books the same way?")
-fig.tight_layout()
+fig.suptitle("Two ways of writing the same balance: do they order books the same way?", y=1.02)
+fig.tight_layout(pad=1.2)
 ctx.save_figure(fig, "log_ratio_vs_difference")
 plt.show()
 

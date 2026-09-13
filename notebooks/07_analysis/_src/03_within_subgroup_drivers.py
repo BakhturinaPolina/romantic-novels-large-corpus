@@ -227,6 +227,20 @@ ctx.save_table(merged, "structure_and_coherence")
 # effect, sorted so drivers appear first and opponents last. `mass_pp` is the topic's mean
 # share of a book's sentences in percentage points, so a large delta on a tiny topic is
 # visibly distinguishable from a large delta on a substantial one.
+#
+# ### Failure, partial failure, success
+#
+# The six panels below give a visual pattern that recurs throughout the analysis:
+#
+# - **9.2 Promise, Vow & Future-Tense Speech Acts** — topics scatter widely around zero; the
+#   leaf total collapses to near zero. Aggregation **failed**: only ~16% of the strongest
+#   internal signal survives.
+# - **4.6 Emotional Safety, Reassurance & Caretaking** — predominantly positive topics, but
+#   some drag the leaf toward zero. About 57% of the strongest topic survives. The concept
+#   is **meaningful but too broad**.
+# - **7.2 Violence, Threats & Non-Sexual Coercion** — nearly all topics pull the same way;
+#   the leaf total closely tracks the strongest individual topic (~92% retained).
+#   Aggregation **succeeded** because the category is statistically coherent.
 
 # %%
 detail_frames = []
@@ -254,13 +268,16 @@ drivers = pd.concat(detail_frames, ignore_index=True)
 ctx.save_table(drivers, "within_leaf_topic_detail")
 
 # %%
+import textwrap as _tw
+
 n_panels = min(6, len(concentration))
 panel_leaves = concentration.reindex(
     concentration["n_topics"].sort_values(ascending=False).index
 ).head(n_panels)
 
-fig, axes = plt.subplots(2, 3, figsize=(16, 9))
+fig, axes = plt.subplots(2, 3, figsize=(18, 12))
 axes = axes.ravel()
+_shared_handles = None
 for ax, row in zip(axes, panel_leaves.itertuples()):
     members = topic_effects[topic_effects["leaf_id"] == row.leaf_id].copy()
     members = members.reindex(members["cliffs_delta"].sort_values().index)
@@ -272,21 +289,25 @@ for ax, row in zip(axes, panel_leaves.itertuples()):
                       members["ci_high"] - members["cliffs_delta"]],
                 fmt="none", ecolor="#333333", elinewidth=0.7, capsize=1.2)
     ax.set_yticks(y)
-    ax.set_yticklabels([str(v)[:34] for v in members["label"]], fontsize=6.5)
+    ax.set_yticklabels([_tw.shorten(str(v), 42, placeholder="…") for v in members["label"]],
+                       fontsize=7)
     ax.axvline(0, color="black", lw=0.8)
-    ax.axvline(row.leaf_delta, color="#7030a0", ls="-", lw=1.6, label="leaf total")
+    lh = ax.axvline(row.leaf_delta, color="#7030a0", ls="-", lw=1.6, label="leaf total")
     for gate_value in (GATE, -GATE):
         ax.axvline(gate_value, color="#888888", ls=":", lw=0.8)
     ax.set_title(f"{row.leaf_id} {str(row.leaf_name)[:30]}\nagreement {row.agreement:.2f}",
                  fontsize=8.5)
     ax.tick_params(axis="x", labelsize=7)
-    ax.legend(fontsize=6.5, loc="lower right")
+    if _shared_handles is None:
+        _shared_handles = [lh]
 
 for ax in axes[len(panel_leaves):]:
     ax.axis("off")
 fig.suptitle("Inside the biggest categories: purple line is the leaf total, bars are its topics\n"
              "where bars straddle zero, the leaf total is a cancellation artefact", y=1.0)
-fig.tight_layout()
+fig.legend(_shared_handles, ["leaf total"], loc="lower center", ncol=1,
+           bbox_to_anchor=(0.5, -0.01), fontsize=8, frameon=False)
+fig.tight_layout(pad=1.1, w_pad=1.4, h_pad=1.4)
 ctx.save_figure(fig, "within_leaf_forest_panels")
 plt.show()
 
@@ -364,6 +385,14 @@ else:
 # Worth one section on its own. `9.2 Promise, Vow & Future-Tense Speech Acts` has the largest
 # topic-level effect anywhere in this analysis and almost none of it survives aggregation. The
 # breakdown below is the clearest single illustration of why this chapter exists.
+#
+# The taxonomy grouped together different kinds of "future-oriented language." Some may
+# represent meaningful commitment; some may be promises about unrelated actions, threats of
+# leaving, procedural future tense, etc. When all of those are counted as one thing, the
+# strong narrative function disappears. The taxonomy itself already distinguishes formal
+# promise wording from actual relationship commitment: real commitment/reconciliation belongs
+# under **4.5**, whereas 9.2 is primarily a discourse-form category. That distinction is the
+# seed of the contextual refinement carried out in Stage 11.
 
 # %%
 strongest_row = topic_effects.reindex(
@@ -387,7 +416,7 @@ siblings = siblings.reindex(siblings["cliffs_delta"].sort_values(ascending=False
 display(siblings[["label", "mass_pp", "cliffs_delta", "ci_low", "ci_high", "magnitude"]]
         .round(4).reset_index(drop=True))
 
-fig, ax = plt.subplots(figsize=(9, 0.3 * len(siblings) + 1.6))
+fig, ax = plt.subplots(figsize=(11, 0.3 * len(siblings) + 2))
 y = np.arange(len(siblings))[::-1]
 colours = [PALETTE[HIGH] if d > 0 else PALETTE[LOW] for d in siblings["cliffs_delta"]]
 ax.barh(y, siblings["cliffs_delta"], color=colours)
@@ -402,7 +431,7 @@ if len(host):
     ax.axvline(float(host.iloc[0]["cliffs_delta"]), color="#7030a0", lw=1.8,
                label="leaf total")
     ax.legend(fontsize=8)
-ax.set_xlabel("Cliff's delta  (positive = more in high-rated books)")
+ax.set_xlabel("Cliff's δ (positive = more in high-rated books)")
 ax.set_title(f"Leaf {host_leaf}: promises and vows\n"
              "one topic is the strongest effect in the corpus; the category total is near zero")
 ctx.save_figure(fig, "strongest_topic_in_context")

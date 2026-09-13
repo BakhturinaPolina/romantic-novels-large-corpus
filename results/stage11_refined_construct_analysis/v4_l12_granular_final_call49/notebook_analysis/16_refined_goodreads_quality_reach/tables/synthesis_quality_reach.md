@@ -2,10 +2,10 @@
 
 ## A. Appreciation-specific
 
-- Enacted protection (exploratory) [broad] is primarily associated with reader appreciation (β=+0.149), with little corresponding reach signal.
-- Enacted protection (exploratory) [moderate] is primarily associated with reader appreciation (β=+0.144), with little corresponding reach signal.
 - Enacted protection (exploratory) [strict] is primarily associated with reader appreciation (β=+0.109), with little corresponding reach signal.
+- Enacted protection (exploratory) [moderate] is primarily associated with reader appreciation (β=+0.109), with little corresponding reach signal.
 - Enacted protection is primarily associated with reader appreciation (β=+0.109), with little corresponding reach signal.
+- Enacted protection (exploratory) [broad] is primarily associated with reader appreciation (β=+0.109), with little corresponding reach signal.
 - Body markings is primarily associated with reader appreciation (β=+0.101), with little corresponding reach signal.
 - Felt vs looked-at body is primarily associated with reader appreciation (β=+0.087), with little corresponding reach signal.
 - Cognition: rumination is primarily associated with reader appreciation (β=+0.096), with little corresponding reach signal.
@@ -13,25 +13,25 @@
 
 ## B. Reach-specific
 
-- Cognition: religious spiritual is associated more strongly with Goodreads reach (β=-0.039) than with appreciation.
 - Hierarchy / power is associated more strongly with Goodreads reach (β=-0.062) than with appreciation.
-- Explicit sex is associated more strongly with Goodreads reach (β=+0.083) than with appreciation.
 - Looked-at body is associated more strongly with Goodreads reach (β=+0.052) than with appreciation.
 - Practical care [moderate] is associated more strongly with Goodreads reach (β=-0.048) than with appreciation.
 - Protection vs possession is associated more strongly with Goodreads reach (β=-0.036) than with appreciation.
-- Darkness vs tenderness is associated more strongly with Goodreads reach (β=+0.033) than with appreciation.
 - Practical care [strict] is associated more strongly with Goodreads reach (β=-0.044) than with appreciation.
+- Relational darkness is associated more strongly with Goodreads reach (β=+0.088) than with appreciation.
+- Physical comfort is associated more strongly with Goodreads reach (β=-0.037) than with appreciation.
+- Cognition: relationship interpretation is associated more strongly with Goodreads reach (β=-0.062) than with appreciation.
 
 ## C. Dual-channel
 
 - Economic pressure moves with both appreciation (β=-0.163) and reach (β=-0.042) in the same direction.
 - Transactional business talk moves with both appreciation (β=-0.107) and reach (β=-0.024) in the same direction.
-- Emotional vs explicit ratio moves with both appreciation (β=-0.066) and reach (β=-0.136) in the same direction.
 - Generic logistics moves with both appreciation (β=-0.093) and reach (β=-0.029) in the same direction.
+- Emotional reassurance moves with both appreciation (β=+0.075) and reach (β=+0.137) in the same direction.
 - Material security (exploratory) [moderate] moves with both appreciation (β=-0.118) and reach (β=-0.056) in the same direction.
+- Broader emotional-security bundle moves with both appreciation (β=+0.070) and reach (β=+0.129) in the same direction.
 - Emotion containment moves with both appreciation (β=+0.106) and reach (β=+0.059) in the same direction.
-- Felt body moves with both appreciation (β=+0.103) and reach (β=+0.062) in the same direction.
-- Material security (exploratory) [broad] moves with both appreciation (β=-0.090) and reach (β=-0.051) in the same direction.
+- Tenderness moves with both appreciation (β=+0.092) and reach (β=+0.133) in the same direction.
 
 ## D. Trade-offs
 
@@ -40,7 +40,7 @@
 - Appearance (exploratory family) [broad] shows a trade-off: appreciation β=-0.151 vs reach β=+0.032.
 - Body grooming shows a trade-off: appreciation β=-0.117 vs reach β=+0.064.
 - Appearance (exploratory family) [moderate] shows a trade-off: appreciation β=-0.153 vs reach β=+0.027.
-- Non-explicit affection shows a trade-off: appreciation β=+0.055 vs reach β=-0.065.
+- Cognition: religious spiritual shows a trade-off: appreciation β=+0.045 vs reach β=-0.039.
 - Practical care [broad] shows a trade-off: appreciation β=+0.044 vs reach β=-0.032.
 
 ## E. What changed after Stage 11 semantic refinement?
@@ -56,8 +56,8 @@ Question: Was the old negative appreciation effect generic appearance or specifi
 ### Emotional Safety Care
 Question: Does broad care separate into appreciation-oriented reassurance vs reach-oriented/neutral care?
 - Stage 10 leaf: appreciation β=+0.052, reach β=+0.009 (quality only)
-- Emotional reassurance: appreciation β=+0.038, reach β=+0.059 → both_same_sign
-- Broader emotional-security bundle: appreciation β=+0.017, reach β=+0.020 → neither
+- Emotional reassurance: appreciation β=+0.075, reach β=+0.137 → both_same_sign
+- Broader emotional-security bundle: appreciation β=+0.070, reach β=+0.129 → both_same_sign
 - Interpersonal co-regulation: appreciation β=+0.046, reach β=+0.050 → both_same_sign
 - Practical care [strict]: appreciation β=+0.014, reach β=-0.044 → reach_only
 - Enacted protection: appreciation β=+0.109, reach β=-0.011 → quality_only
@@ -73,9 +73,9 @@ Question: Is the old violence signal external stakes, enacted protection, relati
 ### Sexuality
 Question: Does the Stage-10 reach signal for explicit sex survive refinement while appreciation stays weaker?
 - Stage 10 leaf: appreciation β=+0.103, reach β=+0.154 (both, same sign)
-- Explicit sex: appreciation β=+0.010, reach β=+0.083 → reach_only
-- Non-explicit affection: appreciation β=+0.055, reach β=-0.065 → opposite_signs
-- Emotional vs explicit ratio: appreciation β=-0.066, reach β=-0.136 → both_same_sign
+- Explicit sex: unmeasurable/absent (unmeasurable)
+- Non-explicit affection: appreciation β=+0.092, reach β=+0.133 → both_same_sign
+- Emotional vs explicit ratio: unmeasurable/absent (unmeasurable)
 
 ### Family Social
 Question: Is reach associated with family presence generally, or with particular social functions?
@@ -96,4 +96,3 @@ Question: Are work/market themes appreciation differences, reach differences, or
 
 - Rarefied taxonomy richness does not distinguish either channel strongly in this corpus.
 - External danger shows a tier-level rating difference, but no strong adjusted two-channel association.
-- Broader emotional-security bundle does not distinguish either channel strongly in this corpus.

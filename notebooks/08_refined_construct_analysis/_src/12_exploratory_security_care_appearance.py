@@ -84,6 +84,14 @@ display(trajectories.round(4))
 ctx.save_table(trajectories, "strict_moderate_broad_trajectories")
 
 # Trajectory plot — skip unmeasurable (0-topic) points; never plot δ=0 for empty sets
+_FAMILY_HUMAN = {
+    "enacted_protection": "Enacted protection",
+    "emotional_security": "Emotional security",
+    "appearance": "Appearance / grooming",
+    "protective_commitment": "Protective commitment",
+    "protective_care_broad": "Protective care (broad)",
+}
+
 fig, ax = plt.subplots(figsize=(10, 5))
 level_order = ["strict", "moderate", "broad"]
 for family in trajectories["family"].unique():
@@ -91,7 +99,7 @@ for family in trajectories["family"].unique():
     y = sub["cliffs_delta"].astype(float)
     if y.isna().all():
         continue
-    ax.plot(level_order, y, marker="o", label=family)
+    ax.plot(level_order, y, marker="o", label=_FAMILY_HUMAN.get(family, family.replace("_", " ").capitalize()))
     mask = y.notna()
     if mask.any():
         lo = sub["ci_low"].astype(float)
@@ -106,9 +114,13 @@ for family in trajectories["family"].unique():
 ax.axhline(0, color="gray", lw=1)
 ax.axhline(GATE, color="red", ls="--", lw=0.8)
 ax.axhline(-GATE, color="red", ls="--", lw=0.8)
-ax.set_ylabel("Cliff's δ (high vs low rated)")
-ax.set_title("Exploratory: strict → moderate → broad trajectories")
+ax.set_xlabel("Definition scope")
+ax.set_ylabel("Cliff's δ (high- vs low-rated books)")
+ax.set_title("EXPLORATORY — strict → moderate → broad definition trajectories")
 ax.legend(fontsize=8, bbox_to_anchor=(1.02, 1), loc="upper left")
+ax.annotate("strict definitions → fewer books, broad → dilutes the concept",
+            xy=(0.5, 0.02), xycoords="axes fraction", ha="center", fontsize=7.5,
+            color="#666666", style="italic")
 plt.tight_layout()
 ctx.save_figure(fig, "trajectory_plot")
 plt.show()
@@ -165,7 +177,15 @@ promise_df = pd.DataFrame(promise_rows).sort_values("cliffs_delta", ascending=Fa
 display(promise_df.round(4))
 ctx.save_table(promise_df, "promise_type_comparison")
 
-fig, ax = plt.subplots(figsize=(8, 5))
+_PROMISE_HUMAN = {
+    "protective_commitment": "Protective commitment",
+    "enacted_external_protection": "Enacted external protection",
+    "emotional_reassurance": "Emotional reassurance",
+    "generic_safety_promise": "Generic safety promise",
+    "possessive_guarding": "Possessive guarding",
+}
+
+fig, ax = plt.subplots(figsize=(8.5, 5))
 plot_p = promise_df.dropna(subset=["cliffs_delta"]).sort_values("cliffs_delta")
 y = np.arange(len(plot_p))
 ax.barh(y, plot_p["cliffs_delta"], color="steelblue", alpha=0.85)
@@ -181,10 +201,13 @@ ax.errorbar(
     capsize=2,
 )
 ax.set_yticks(y)
-ax.set_yticklabels(plot_p["promise_type"], fontsize=9)
+ax.set_yticklabels(
+    [_PROMISE_HUMAN.get(str(v), str(v).replace("_", " ").capitalize()) for v in plot_p["promise_type"]],
+    fontsize=9,
+)
 ax.axvline(0, color="gray")
-ax.set_xlabel("Cliff's δ")
-ax.set_title("Exploratory: promise/function types vs rating")
+ax.set_xlabel("Cliff's δ (high- vs low-rated books)")
+ax.set_title("EXPLORATORY — promise/function types vs rating")
 plt.tight_layout()
 ctx.save_figure(fig, "promise_type_forest")
 plt.show()
@@ -302,6 +325,9 @@ display(quad_all.round(4))
 ctx.save_table(quad_all, "danger_x_protection_quadrants")
 
 # Heatmaps for strict and moderate
+_DANGER_LABELS = {"lower_danger": "Lower danger", "higher_danger": "Higher danger"}
+_PROT_LABELS = {"lower_protection": "Lower protection", "higher_protection": "Higher protection"}
+
 for label in ("strict t119 only", "moderate + fractional"):
     sub = quad_all[quad_all["protection_index"] == label] if len(quad_all) else pd.DataFrame()
     if sub.empty:
@@ -310,9 +336,13 @@ for label in ("strict t119 only", "moderate + fractional"):
     row_order = [r for r in ("lower_danger", "higher_danger") if r in mat.index]
     col_order = [c for c in ("lower_protection", "higher_protection") if c in mat.columns]
     mat = mat.reindex(index=row_order, columns=col_order)
+    mat.index = [_DANGER_LABELS.get(r, r) for r in mat.index]
+    mat.columns = [_PROT_LABELS.get(c, c) for c in mat.columns]
     fig, ax = plt.subplots(figsize=(5.5, 4))
-    sns.heatmap(mat, annot=True, fmt=".3f", cmap="YlOrRd", ax=ax)
-    ax.set_title(f"Mean rating: danger × protection ({label})")
+    sns.heatmap(mat, annot=True, fmt=".3f", cmap="YlOrRd", ax=ax, cbar_kws={"label": "Mean shrunk rating"})
+    ax.set_xlabel("Enacted protection level")
+    ax.set_ylabel("Danger level")
+    ax.set_title(f"EXPLORATORY — mean rating: danger × protection ({label})")
     safe = label.replace(" ", "_").replace("+", "plus")
     ctx.save_figure(fig, f"danger_x_protection_heatmap_{safe}")
     plt.show()
